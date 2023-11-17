@@ -21,7 +21,7 @@
     </li>
 </ul>
 <h1 id="h_01H46H66JXMC7F1T7HK985D237">How to Enable Game Overlay</h1>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">If you experience lag, game crashing, or any other issues while the Game Overlay is enabled we recommend disabling Game Overlay for that specific game.</span></h3>
+<h3 id="h_01HFD9GKHG3CGWQ4909FVPEDHB"><span style="color: #434343;" data-darkreader-inline-color="">If you experience lag, game crashing, or any other issues while the Game Overlay is enabled we recommend disabling Game Overlay for that specific game.</span></h3>
 <p>1. Open up your <strong>User Settings</strong> by tapping on the cogwheel next to your Username.</p>
 <p>2. Press the <strong>Overlay</strong> tab and enable in-game overlay.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491628055" alt="game_overlay_settings.gif" width="647" height="364"></p>
@@ -30,7 +30,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519292311" alt="registered_games_settings.gif"></p>
 <h1 id="h_01H46H9S9A1PWQ994GT79QBBZH">Customizing the Game Overlay</h1>
 <h2 id="h_01H46H9XCTVFKWEBTXG0K9D24X">Text</h2>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">If a server, DM, or group message is currently muted or you have Streamer Mode turned on, messages will not be displayed.</span></h3>
+<h3 id="h_01HFD9GKHGC1MB8BTYF4FSFYES"><span style="color: #434343;" data-darkreader-inline-color="">If a server, DM, or group message is currently muted or you have Streamer Mode turned on, messages will not be displayed.</span></h3>
 <p>Adventuring through Azeroth and worried you might miss a new message from your friend? Try turning on Text Chat notifications! </p>
 <p>If you want to see messages displayed through the Game Overlay, go to  <strong>User Settings</strong> &gt; <strong>Game Overlay</strong> and make sure that <strong>Show Text Chat Notifications</strong> is enabled.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491637527" alt="show_text_chat_notifications.png"></p>
@@ -56,7 +56,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491653911" alt="game_voice_chat_no_display_name.gif"></p>
 <p><strong>Display Users</strong></p>
 <p>Finally, you can change how a user is displayed. They can be shown always, or only while speaking.</p>
-<p class="wysiwyg-text-align-center"><strong><img style="height: 124px; width: 624px;" src="https://lh4.googleusercontent.com/aTwBsKQzHOcEDovS38uDRLY3yVyO1M9dGNhPNZGEmFtOJOSqG-PY4uFgo0da4OJy-O9DbcK6mBp0xs7y_DykGlowx8NkJPor2ujr0WbRBUjUbX8z_zZUC1Zvppa807apSwJYQy0o7rYkNZ0BJtsUH04"></strong></p>
+<p class="wysiwyg-text-align-center"><strong><img style="height: 124px; width: 624px;" src="https://support.discord.com/hc/article_attachments/19132000367895"></strong></p>
 <p><strong>Always</strong> - Selected users will only be displayed as long as they are in the voice call or voice channel. If a user is also muted or deafened, an icon will be displayed next to their name.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519320087" alt="game_voice_chat_example_shown.gif"></p>
 <p><strong>Only While Speaking</strong> - Users will only be displayed when they are actively talking or any audio is being picked up from their microphone.</p>
@@ -67,7 +67,7 @@
 <h2 id="h_01H46HA9MPYS0VCSNS1ZE62Z6S">Pinning</h2>
 <p>If you’re worried you’ll miss a message while battling monsters in a game, you can always pin a specific channel, direct message, or group message.</p>
 <p>You’ll need to make sure you have a keybinding for <strong>Toggle Overlay Lock</strong>. You can set this by going to <strong>User Settings</strong> &gt; <strong>Game Overlay</strong> and then setting your own custom keybinding, or use the default one.</p>
-<p class="wysiwyg-text-align-center"><strong><img style="height: 100px; width: 350px;" src="https://lh4.googleusercontent.com/pK03OYsNxW3JBl9AmOBFoLWXHNI4xJkFGTGnGWyKvQQBz1oY7uj58HCrcqIku1VYIyosz_GXR-b_BennX7SQG-eZ0k63--0YiMFm11rkeglfKBxyIE1V-siX5aunDQIXqCdF3ko_zf5kjD9F_r-vlAo"></strong></p>
+<p class="wysiwyg-text-align-center"><strong><img style="height: 100px; width: 350px;" src="https://support.discord.com/hc/article_attachments/19131992017175"></strong></p>
 <p>1. Once you’ve set your own keybinding make sure the game overlay is turned on and go ahead and open a game of your voice. </p>
 <p>2. Press on your keybinding that you set (default is SHIFT+`) and that will pull up Discord. </p>
 <p>3. Navigate to your channel, DM, or group message of choice and press on the <strong>Pin </strong>icon to the left of the Search bar.</p>
@@ -86,6 +86,7 @@
 <p>(the ***highest-number*** refers to the latest version of Discord. Your path will have different text here.)</p>
 <p>You can allowlist files with that path with no problem.</p>
 <h2 id="h_01H46HAME1PG4G7HRB32JGJW5S">Less Compatible Games</h2>
+<h3 id="h_01HFD9KPJQ0DCDDSJS9YNAR6ME"><span id="docs-internal-guid-f90a2c40-7fff-61de-ef96-145e0dad233b" style="color: #434343;">We’re currently experimenting with the Discord Game Overlay! If you are using the overlay while playing Baldur’s Gate 3, Roblox, or Counter-Strike 2 and you’re experiencing issues, try changing your game display settings to either windowed or borderless windowed. This temporary experiment should only impact a small group of Discord users!</span></h3>
 <p>There are some games that we know that do not work with the Discord Game Overlay. Unfortunately, if the overlay is not working with these games, there is nothing that we can do on our end and this is working as intended. Here is a list of known games: </p>
 <div>
     <table style="width: 100%;">
@@ -143,7 +144,7 @@
         </tbody>
     </table>
 </div>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">There are a few other cases that overlay will not work with. The overlay is currently not supported for Mac, games with Vulkan support, and generally older games.</span></h3>
+<h3 id="h_01HFD9GKHJ4JA01NAFRNJYRHRZ"><span style="color: #434343;" data-darkreader-inline-color="">There are a few other cases that overlay will not work with. The overlay is currently not supported for Mac, games with Vulkan support, and generally older games.</span></h3>
 <p>If you do experience a game crashing while you have the overlay enabled, please grab this log:</p>
 <p>%appdata%\discord\0.0.***highest-number***\modules\discord_hook\hook </p>
 <p>And then submit a ticket to our <a href="https://dis.gd/support"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Support team</span></a> along with what the issue is and what game this happened with, so they can take a closer look.</p>
