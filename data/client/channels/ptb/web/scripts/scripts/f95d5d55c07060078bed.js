@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67615"], {
+    ["27201"], {
         273215: function(e, t, n) {
             "use strict";
             e.exports = n.p + "63900a1ba1f23d305c53.png"
@@ -8175,6 +8175,24 @@
                                     }), (0, T.trackScanningTimedOut)({
                                         channelId: l.channel_id,
                                         messageId: l.id,
+                                        embedIds: a,
+                                        attachmentIds: i
+                                    });
+                                    return
+                                }
+                                let d = o.default.getMessage(e.channel_id, e.id),
+                                    {
+                                        attachmentIds: c,
+                                        embedIds: E
+                                    } = y(d.message);
+                                if (null != d.message && d.state === o.ReferencedMessageState.LOADED && (c.length > 0 || E.length > 0)) {
+                                    r.default.dispatch({
+                                        type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
+                                        messageId: d.message.id,
+                                        channelId: d.message.channel_id
+                                    }), (0, T.trackScanningTimedOut)({
+                                        channelId: d.message.channel_id,
+                                        messageId: d.message.id,
                                         embedIds: a,
                                         attachmentIds: i
                                     });
@@ -33813,4 +33831,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ee30dd2bdb7da50ececc.js.map
+//# sourceMappingURL=f95d5d55c07060078bed.js.map
