@@ -163,7 +163,7 @@
 <h2 id="h_01HFFJ28PJ2BY2WHE38TTRXQ3P">Go Live: Pop Out</h2>
 <p>We also included a <strong>Pop Out</strong> feature to suit your browsing needs. With the<strong> Pop Out</strong> feature, you'll be able to open the stream to a separate window.</p>
 <p>The <strong>Pop Out</strong> icon looks like this:</p>
-<h3 id="h_01HFFJ28PJ4ZNTNXF3H9PT17NS" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525756055" width="103" height="82"></span></h3>
+<p id="h_01HFFJ28PJ4ZNTNXF3H9PT17NS" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525756055" width="103" height="82"></span></p>
 <p>The <strong>Pop Out</strong> window can be resized to whatever size you’d like it to be.</p>
 <p class="wysiwyg-text-align-center"><br><img src="https://support.discord.com/hc/article_attachments/19155525760535" width="624" height="419"></p>
 <p>If you want to pin the <strong>Pop Out</strong> window so that it stays above all other windows, you can use the <strong>Stay On Top</strong> button. To unpin the window, use the <strong>Remove From Top</strong> button. </p>
