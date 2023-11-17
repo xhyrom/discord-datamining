@@ -232,7 +232,7 @@
                     let {
                         status: e
                     } = t;
-                    l = e === r.HangStatusTypes.NONE ? null : e, i = null, u = null
+                    l = e, i = null, u = null
                 },
                 UPDATE_HANG_STATUS_CUSTOM: function(t) {
                     let {
@@ -633,4 +633,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27fe1d4e2a0b723f25ee.js.map
+//# sourceMappingURL=703e6ebf759ec4911d43.js.map

@@ -100,7 +100,7 @@
                     return w
                 },
                 default: function() {
-                    return H
+                    return V
                 }
             }), l("222007"), l("70102");
             var n = l("37983"),
@@ -434,7 +434,7 @@
             }
             let Y = (0, T.default)(B);
 
-            function H(e) {
+            function V(e) {
                 return (0, f.useStateFromStores)([v.default], () => {
                     var t;
                     return v.default.getGuildVersion(null === (t = e.guild) || void 0 === t ? void 0 : t.id)
@@ -1572,15 +1572,15 @@
                             isEmbedded: B = !1
                         } = e,
                         Y = (0, g.default)(),
-                        H = (0, u.useStateFromStores)([E.default], () => {
+                        V = (0, u.useStateFromStores)([E.default], () => {
                             let e = E.default.getCurrentUser();
                             return r(null != e, "UserActivityActions: currentUser cannot be undefined"), e
                         }),
-                        V = G === _.Types.PROFILE || G === _.Types.PROFILE_V2,
+                        H = G === _.Types.PROFILE || G === _.Types.PROFILE_V2,
                         W = G === _.Types.STREAM_PREVIEW || null != i,
                         K = (0, S.default)(l),
                         z = (0, m.isStageActivity)(l),
-                        Z = V ? T.default.Align.END : T.default.Align.STRETCH,
+                        Z = H ? T.default.Align.END : T.default.Align.STRETCH,
                         X = K || W ? T.default.Direction.HORIZONTAL : T.default.Direction.VERTICAL,
                         J = (null == l ? void 0 : l.type) === P.ActivityTypes.HANG_STATUS,
                         Q = (0, u.useStateFromStores)([h.default, p.default], () => {
@@ -1624,11 +1624,11 @@
                             channelId: e.channelId,
                             color: F,
                             look: w,
-                            isProfile: V
+                            isProfile: H
                         }, e.channelId)])
                     } else if (W) {
                         let e = (0, n.jsx)(L.default, {
-                            isCurrentUser: H.id === a.id,
+                            isCurrentUser: V.id === a.id,
                             color: F,
                             look: w,
                             applicationStream: i
@@ -1651,7 +1651,7 @@
                                 activity: l,
                                 currentEmbeddedApplication: Y,
                                 user: a,
-                                isCurrentUser: H.id === a.id,
+                                isCurrentUser: V.id === a.id,
                                 color: F,
                                 look: w,
                                 channelId: j,
@@ -1851,14 +1851,14 @@
                     color: k,
                     look: B,
                     hover: Y,
-                    user: H,
-                    channelId: V,
+                    user: V,
+                    channelId: H,
                     isEmbedded: W = !1
                 } = e, {
                     analyticsLocations: K
                 } = (0, c.default)(), [z, Z] = a.useState(!1), X = (0, L.default)({
-                    channelId: V,
-                    userId: H.id,
+                    channelId: H,
+                    userId: V.id,
                     activity: t
                 }), J = (0, s.useStateFromStores)([A.default], () => A.default.getCurrentUser()), Q = (0, s.useStateFromStores)([_.default, m.default, N.default, E.default], () => W || (null == t ? void 0 : t.application_id) != null && (0, y.isLaunchable)({
                     LibraryApplicationStore: _.default,
@@ -1873,7 +1873,7 @@
                     } = e;
                     return l === (null == t ? void 0 : t.application_id) && n === X
                 })), $ = (0, s.useStateFromStores)([C.default], () => null != t && null != t.application_id && C.default.getState(t.application_id, F.ActivityActionTypes.JOIN) === F.ActivityActionStates.LOADING), [ee] = (0, f.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), et = (0, s.useStateFromStores)([p.default, T.default, h.default, I.default, g.default, v.default, S.default], () => (0, R.default)({
-                    user: H,
+                    user: V,
                     activity: t,
                     application: ee,
                     channelId: X,
@@ -1925,10 +1925,10 @@
                         })
                     }
                     if (!e) {
-                        et && er(H, t), Z(!0);
+                        et && er(V, t), Z(!0);
                         let e = await r.default.sendActivityInviteUser({
                             type: F.ActivityActionTypes.JOIN_REQUEST,
-                            userId: H.id,
+                            userId: V.id,
                             activity: t,
                             location: F.AnalyticsLocations.PROFILE_POPOUT
                         });
@@ -4873,8 +4873,8 @@
                     closePopout: k,
                     setPopoutRef: B,
                     disableUserProfileLink: Y = __OVERLAY__,
-                    analyticsParams: H = {}
-                } = e, V = a.useRef(null), W = (0, O.default)(l.id, s), K = (0, d.default)(V), z = (0, r.useStateFromStores)([M.default], () => {
+                    analyticsParams: V = {}
+                } = e, H = a.useRef(null), W = (0, O.default)(l.id, s), K = (0, d.default)(H), z = (0, r.useStateFromStores)([M.default], () => {
                     var e;
                     return null === (e = M.default.getUserProfile(l.id)) || void 0 === e ? void 0 : e.application
                 }), {
@@ -4914,8 +4914,8 @@
                 (0, c.default)(() => eu(!0), er.shouldShow ? 250 : null);
                 let [ed] = (0, _.default)([null !== (t = null == q ? void 0 : q.application_id) && void 0 !== t ? t : ""]);
                 return a.useEffect(() => {
-                    null == B || B(null == V ? void 0 : V.current)
-                }, [V, B]), a.useEffect(() => {
+                    null == B || B(null == H ? void 0 : H.current)
+                }, [H, B]), a.useEffect(() => {
                     if (!en)((null == q ? void 0 : q.application_id) == null || null != ed) && (null == s || (null == J ? void 0 : J.fullProfileLoadedTimestamp) != null) && (function() {
                         var e;
                         let t, n, a;
@@ -4956,14 +4956,14 @@
                             profile_has_theme_animation: (null == W ? void 0 : W.popoutAnimationParticleType) != null,
                             ...o,
                             ...u,
-                            ...H
+                            ...V
                         })
                     }(), ea(!0))
                 }, [J, null == q ? void 0 : q.application_id, ed, en, s]), (0, n.jsx)(Z, {
                     children: (0, n.jsx)(u.default, {
                         section: U.AnalyticsSections.PROFILE_POPOUT,
                         children: (0, n.jsx)(o.Dialog, {
-                            ref: V,
+                            ref: H,
                             "aria-label": l.username,
                             onClick: G,
                             onContextMenu: G,
@@ -5072,8 +5072,8 @@
                 k = l("577172"),
                 B = l("465215"),
                 Y = l("301998"),
-                H = l("379657"),
-                V = l("853780"),
+                V = l("379657"),
+                H = l("853780"),
                 W = l("574191"),
                 K = l("491250"),
                 z = l("49111"),
@@ -5230,7 +5230,7 @@
                                     guild: et,
                                     channelId: en,
                                     onClose: ea
-                                }), (null == ed ? void 0 : ed.popularApplicationCommandIds) != null && null != eE ? (0, n.jsx)(H.default, {
+                                }), (null == ed ? void 0 : ed.popularApplicationCommandIds) != null && null != eE ? (0, n.jsx)(V.default, {
                                     applicationId: ed.id,
                                     commandIds: ed.popularApplicationCommandIds,
                                     channel: eE,
@@ -5250,7 +5250,7 @@
                                     guild: et,
                                     onClose: ea,
                                     theme: eT
-                                }), null != ed && void 0 !== en && (0, n.jsx)(V.default, {
+                                }), null != ed && void 0 !== en && (0, n.jsx)(H.default, {
                                     channelId: en,
                                     applicationId: ed.id
                                 }), (0, n.jsx)(Y.default, {
@@ -6763,7 +6763,7 @@
                     }
                 });
 
-            function H(e) {
+            function V(e) {
                 let t, {
                         activity: l
                     } = e,
@@ -6776,7 +6776,7 @@
                     className: G.platformIcon
                 })
             }
-            class V extends i.PureComponent {
+            class H extends i.PureComponent {
                 get activity() {
                     let {
                         activity: e,
@@ -6797,63 +6797,65 @@
                     return (0, g.default)(this.activity) && "ActivityFeed" === this.props.type
                 }
                 renderHeader(e) {
-                    var t, l, n;
-                    let a;
+                    let t;
                     let {
-                        hideHeader: i,
-                        activityGuild: r,
-                        channel: u,
-                        renderHeaderAccessory: d,
-                        type: c
-                    } = this.props, m = this.activity;
-                    if (i || null == m) return null;
+                        hideHeader: l,
+                        activityGuild: n,
+                        channel: a,
+                        renderHeaderAccessory: i,
+                        type: r
+                    } = this.props, u = this.activity;
+                    if (l || null == u) return null;
                     let {
-                        name: p
-                    } = m;
-                    switch (m.type) {
+                        name: d
+                    } = u;
+                    switch (u.type) {
                         case U.ActivityTypes.STREAMING:
-                            a = w.default.Messages.USER_ACTIVITY_HEADER_LIVE_ON_PLATFORM.format({
-                                platform: [U.PlatformTypes.TWITCH, U.PlatformTypes.YOUTUBE].includes(p.toLowerCase()) ? p : E.default.get(U.PlatformTypes.TWITCH).name
+                            t = w.default.Messages.USER_ACTIVITY_HEADER_LIVE_ON_PLATFORM.format({
+                                platform: [U.PlatformTypes.TWITCH, U.PlatformTypes.YOUTUBE].includes(d.toLowerCase()) ? d : E.default.get(U.PlatformTypes.TWITCH).name
                             });
                             break;
                         case U.ActivityTypes.LISTENING:
-                            a = w.default.Messages.USER_ACTIVITY_HEADER_LISTENING.format({
-                                name: p
+                            t = w.default.Messages.USER_ACTIVITY_HEADER_LISTENING.format({
+                                name: d
                             });
                             break;
                         case U.ActivityTypes.WATCHING:
-                            a = w.default.Messages.USER_ACTIVITY_HEADER_WATCHING.format({
-                                name: p
+                            t = w.default.Messages.USER_ACTIVITY_HEADER_WATCHING.format({
+                                name: d
                             });
                             break;
                         case U.ActivityTypes.PLAYING:
-                            a = (0, h.default)(m);
+                            t = (0, h.default)(u);
                             break;
                         case U.ActivityTypes.COMPETING:
-                            a = w.default.Messages.USER_ACTIVITY_HEADER_COMPETING.format({
-                                name: p
+                            t = w.default.Messages.USER_ACTIVITY_HEADER_COMPETING.format({
+                                name: d
                             })
                     }
-                    null != r && (a = (0, y.hasFlag)(null !== (t = null == m ? void 0 : m.flags) && void 0 !== t ? t : 0, U.ActivityFlags.EMBEDDED) ? m.type === U.ActivityTypes.WATCHING ? w.default.Messages.EMBEDDED_ACTIVITIES_WATCHING_IN_GUILD.format({
-                        guildName: r.name
-                    }) : w.default.Messages.EMBEDDED_ACTIVITIES_PLAYING_IN_GUILD.format({
-                        guildName: r.name
-                    }) : w.default.Messages.USER_ACTIVITY_HEADER_STREAMING_TO_GUILD.format({
-                        server: r.name
-                    })), (null == m ? void 0 : m.type) === U.ActivityTypes.HANG_STATUS && (a = null !== (n = null === (l = (0, v.getHangStatusDetails)(m)) || void 0 === l ? void 0 : l.leadIn) && void 0 !== n ? n : w.default.Messages.STATUS_LEAD_IN_JUST);
-                    let T = (0, A.getChannelIconComponent)(u, r);
-                    return null != u && (a = u.name), (0, s.jsxs)("div", {
+                    if (null != n) {
+                        var c;
+                        t = (0, y.hasFlag)(null !== (c = null == u ? void 0 : u.flags) && void 0 !== c ? c : 0, U.ActivityFlags.EMBEDDED) ? u.type === U.ActivityTypes.WATCHING ? w.default.Messages.EMBEDDED_ACTIVITIES_WATCHING_IN_GUILD.format({
+                            guildName: n.name
+                        }) : w.default.Messages.EMBEDDED_ACTIVITIES_PLAYING_IN_GUILD.format({
+                            guildName: n.name
+                        }) : w.default.Messages.USER_ACTIVITY_HEADER_STREAMING_TO_GUILD.format({
+                            server: n.name
+                        })
+                    }(null == u ? void 0 : u.type) === U.ActivityTypes.HANG_STATUS && (t = w.default.Messages.STATUS_LEAD_IN_JUST);
+                    let m = (0, A.getChannelIconComponent)(a, n);
+                    return null != a && (t = a.name), (0, s.jsxs)("div", {
                         className: G.headerContainer,
-                        children: [null != u && null !== T ? (0, s.jsx)(T, {
+                        children: [null != a && null !== m ? (0, s.jsx)(m, {
                             className: o(G.icon)
                         }) : null, (0, s.jsx)(f.Heading, {
                             className: (0, O.getClass)(G, "headerText", e ? "EmptyBody" : "Normal"),
                             variant: "heading-deprecated-12/semibold",
-                            color: "ProfileV2" === c ? "header-primary" : void 0,
+                            color: "ProfileV2" === r ? "header-primary" : void 0,
                             children: (0, s.jsx)(P.default, {
-                                children: a
+                                children: t
                             })
-                        }), null == d ? void 0 : d()]
+                        }), null == i ? void 0 : i()]
                     })
                 }
                 renderXboxImage() {
@@ -7142,7 +7144,7 @@
                                 className: o((0, O.getClass)(G, "content", f ? "GameImage" : null != e ? "Images" : "NoImages", t)),
                                 children: [m, p, E, h, r || c ? null : _, d ? T : null]
                             }), u ? T : null]
-                        }), r ? _ : null, r || c ? T : null, (0, s.jsx)(H, {
+                        }), r ? _ : null, r || c ? T : null, (0, s.jsx)(V, {
                             activity: i
                         })]
                     })
@@ -7171,8 +7173,8 @@
                     }
                 }
             }
-            V.Types = n;
-            var W = V
+            H.Types = n;
+            var W = H
         },
         547620: function(e, t, l) {
             "use strict";
@@ -7830,4 +7832,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2bc32cc11cf6b8c5c71c.js.map
+//# sourceMappingURL=1127b94614ea078ac012.js.map
