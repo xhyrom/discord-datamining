@@ -2601,6 +2601,8 @@
   "_LOGIN_STAGE": "\"Listen In\"",
   "REGISTER": "\"Register\"",
   "ENTER_PHONE_OR_EMAIL": "\"Enter phone or email\"",
+  "ENTER_YOUR_PHONE": "\"Enter your phone number\"",
+  "ENTER_YOUR_EMAIL": "\"Enter your email\"",
   "ENTER_EMAIL": "\"Enter email\"",
   "REGISTER_USERNAME_HINT": "\"You can always change this later!\"",
   "REGISTER_LOGIN_PRIVACY_NOTICE": "\"[View our Privacy Policy]({privacyURL})\"",
