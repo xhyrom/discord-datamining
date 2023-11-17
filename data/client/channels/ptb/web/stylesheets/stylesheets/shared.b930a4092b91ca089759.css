@@ -5723,6 +5723,11 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     color: var(--text-muted)
 }
 
+.show-redesigned-icons .caret_ce50ce {
+    width: 16px;
+    height: 16px
+}
+
 .disabled_a32bfe {
     cursor: pointer;
     pointer-events: none;
@@ -26407,4 +26412,4 @@ button.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.52d9520089ae820788ba.css.map*/
+/*# sourceMappingURL=shared.b930a4092b91ca089759.css.map*/

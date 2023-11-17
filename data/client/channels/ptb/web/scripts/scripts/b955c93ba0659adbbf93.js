@@ -3640,7 +3640,9 @@
                             fill: r
                         })
                     })
-                }, l.PencilIcon)
+                }, l.PencilIcon, void 0, {
+                    size: 16
+                })
         },
         155207: function(e, t, n) {
             "use strict";
@@ -4276,4 +4278,4 @@
         }
     }
 ]);
-//# sourceMappingURL=38e1fd4b6116a5c621e4.js.map
+//# sourceMappingURL=b955c93ba0659adbbf93.js.map

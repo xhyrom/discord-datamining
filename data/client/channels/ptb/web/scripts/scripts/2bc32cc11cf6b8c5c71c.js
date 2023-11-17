@@ -7515,7 +7515,9 @@
                             fill: s
                         })
                     })
-                }, s.SendMessageIcon)
+                }, s.SendMessageIcon, void 0, {
+                    size: 16
+                })
         },
         483093: function(e, t, l) {
             "use strict";
@@ -7828,4 +7830,4 @@
         }
     }
 ]);
-//# sourceMappingURL=36fc4960d3520aa53403.js.map
+//# sourceMappingURL=2bc32cc11cf6b8c5c71c.js.map
