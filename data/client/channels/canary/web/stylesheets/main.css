@@ -19465,8 +19465,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -27612,6 +27612,10 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     max-width: 100%;
     -o-object-fit: contain;
     object-fit: contain
+}
+
+.clickableMedia__12a0b {
+    cursor: pointer
 }
 
 .spoiler_b634f3 {
@@ -36917,8 +36921,7 @@ html .progress__4ef76 {
     flex-direction: column;
     box-sizing: border-box;
     position: relative;
-    z-index: 0;
-    overflow-y: scroll
+    z-index: 0
 }
 
 .headerText_f2a29e {
@@ -123641,4 +123644,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.02e31f3972ecd2b81947.css.map*/
+/*# sourceMappingURL=app.054ac8e5c5a38057893e.css.map*/
