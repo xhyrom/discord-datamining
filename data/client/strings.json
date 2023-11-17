@@ -4139,6 +4139,7 @@
   "MOBILE_AUTOMATIC_THEME_SHORT": "\"Automatic\"",
   "SYNC_ACROSS_CLIENTS_TEXT_HELP": "\"\\nTurning this on will overwrite text & image settings on all other clients including desktop and browser.\\n  \"",
   "SYNC_ACROSS_CLIENTS_APPEARANCE_HELP": "\"\\nTurning this on will overwrite the above appearance settings on all other clients including desktop and browser.\\n  \"",
+  "SYNC_ACROSS_CLIENTS_APPEARANCE_HELP_NO_WHITESPACE": "\"Turning this on will overwrite the above appearance settings on all other clients including desktop and browser.\"",
   "SETTINGS_TITLE_NEW_LAYOUT": "\"New Layout\"",
   "NEW_LAYOUT_TOGGLE_TEXT": "\"Show New Layout\"",
   "NEW_LAYOUT_FEEDBACK_TEXT": "\"Give us Feedback\"",
