@@ -8190,7 +8190,7 @@
                     })) && void 0 !== u ? u : [];
                 return {
                     attachmentIds: c.map(e => e.id).filter(Boolean),
-                    embedIds: _.map(e => e.reference_id).filter(Boolean)
+                    embedIds: _.map((e, t) => "embed_".concat(t)).filter(Boolean)
                 }
             }
 
@@ -33503,4 +33503,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e400a33456b78cd3c0ea.js.map
+//# sourceMappingURL=772fb8f82b14648b2c3b.js.map
