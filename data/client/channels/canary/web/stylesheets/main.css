@@ -12422,13 +12422,12 @@
 
 .countdown__6ba9d {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
     right: 0;
-    height: 56px;
-    width: 56px;
-    top: 0;
+    bottom: 0;
+    left: -8px;
+    height: 40px;
+    width: 40px;
+    top: -8px;
     pointer-events: none
 }
 
@@ -19466,8 +19465,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -123639,4 +123638,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ea408f72c4cdc0630d2d.css.map*/
+/*# sourceMappingURL=app.48e481a4d80a82fe6983.css.map*/
