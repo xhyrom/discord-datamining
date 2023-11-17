@@ -2111,7 +2111,7 @@
                 BuiltInCommandFilter: function() {
                     return l
                 }
-            }), (a = i || (i = {}))[a.NONE = 0] = "NONE", a[a.APPLICATION_ONLY = 1] = "APPLICATION_ONLY", a[a.COMMAND_ONLY = 2] = "COMMAND_ONLY", a[a.COMMAND_OR_APPLICATION = 3] = "COMMAND_OR_APPLICATION", (s = l || (l = {}))[s.ALLOW = 0] = "ALLOW", s[s.ONLY_TEXT = 1] = "ONLY_TEXT", s[s.DENY = 2] = "DENY"
+            }), (a = i || (i = {})).NONE = "none", a.APPLICATION_ONLY = "application_only", a.COMMAND_ONLY = "command_only", a.COMMAND_OR_APPLICATION = "command_or_application", (s = l || (l = {})).ALLOW = "allow", s.ONLY_TEXT = "only_text", s.DENY = "deny"
         },
         216193: function(e, t, n) {
             "use strict";
@@ -3203,13 +3203,13 @@
                     return i
                 },
                 hasAccess: function() {
-                    return _
+                    return I
                 },
                 computeAllowedForChannel: function() {
-                    return C
+                    return A
                 },
                 computeAllowedForUser: function() {
-                    return A
+                    return E
                 }
             }), n("222007");
             var i, l, a = n("627445"),
@@ -3221,19 +3221,20 @@
                 c = n("524768"),
                 p = n("389153"),
                 f = n("123373"),
-                m = n("49111");
+                m = n("317041"),
+                _ = n("49111");
 
-            function _(e, t, n, i) {
+            function I(e, t, n, i) {
                 let {
                     context: l,
                     commandType: a,
                     commandContextType: r,
                     allowNsfw: c,
-                    computedPermissions: _,
-                    userId: I,
-                    roleIds: T,
-                    isImpersonating: E,
-                    hasBaseAccessPermissions: N
+                    computedPermissions: I,
+                    userId: T,
+                    roleIds: C,
+                    isImpersonating: N,
+                    hasBaseAccessPermissions: S
                 } = t;
                 if (e.type !== a) return 2;
                 if (e.nsfw && !c) return 1;
@@ -3245,12 +3246,13 @@
                             guild: t
                         })) return 3
                 }
-                let S = (0, f.getContextGuildId)(l);
-                if (null == S || o.default.has(_, m.Permissions.ADMINISTRATOR)) return 0;
-                if (!N) return 5;
+                if (e.applicationId === m.BuiltInSectionId.BUILT_IN) return 0;
+                let g = (0, f.getContextGuildId)(l);
+                if (null == g || o.default.has(I, _.Permissions.ADMINISTRATOR)) return 0;
+                if (!S) return 5;
                 if (l instanceof u.ChannelRecordBase) {
                     s(void 0 !== i, "missing applicationAllowedForChannel");
-                    let t = C(e.permissions, l.id, S);
+                    let t = A(e.permissions, l.id, g);
                     if (function(e) {
                             return !1 === e
                         }(t) || ! function(e) {
@@ -3259,25 +3261,25 @@
                             return !1 === e
                         }(i)) return 6
                 }
-                let g = A(e.permissions, S, I, T, E);
+                let M = E(e.permissions, g, T, C, N);
                 return function(e) {
                     return !0 === e
-                }(g) ? 0 : function(e) {
+                }(M) ? 0 : function(e) {
                     return !1 === e
-                }(g) ? 7 : function(e) {
+                }(M) ? 7 : function(e) {
                     return !1 === e
-                }(n) || null != e.defaultMemberPermissions && !(!o.default.equals(e.defaultMemberPermissions, p.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && o.default.has(_, e.defaultMemberPermissions)) ? 7 : 0
-            }
-
-            function I(e) {
-                return !0 === e
+                }(n) || null != e.defaultMemberPermissions && !(!o.default.equals(e.defaultMemberPermissions, p.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && o.default.has(I, e.defaultMemberPermissions)) ? 7 : 0
             }
 
             function T(e) {
+                return !0 === e
+            }
+
+            function C(e) {
                 return !1 === e
             }
 
-            function C(e, t, n) {
+            function A(e, t, n) {
                 if (null == e) return null;
                 let i = e[(0, r.toPermissionKey)(t, c.ApplicationCommandPermissionType.CHANNEL)];
                 if (null != i) return i.permission;
@@ -3285,7 +3287,7 @@
                 return null != l ? l.permission : null
             }
 
-            function A(e, t, n, i, l) {
+            function E(e, t, n, i, l) {
                 if (null == e) return null;
                 if (!l) {
                     let t = e[(0, r.toPermissionKey)(n, c.ApplicationCommandPermissionType.USER)];
@@ -4200,4 +4202,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4ed5ae3ab68c9e945826.js.map
+//# sourceMappingURL=a686a01619286e813df9.js.map
