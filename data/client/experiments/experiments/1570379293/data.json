@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-09_user_apps_guild",
+    "label": "Allow user app commands",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Allow user app commands"
+    ],
+    "hash": 1570379293,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "userAppsTreatment"
+    ]
+  }
+}
