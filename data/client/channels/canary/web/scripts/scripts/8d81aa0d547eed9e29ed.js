@@ -8141,23 +8141,43 @@
                             ! function(e) {
                                 e.forEach(e => {
                                     let t = m(e);
-                                    clearTimeout(S[t]);
+                                    clearTimeout(S[t]), delete S[t];
                                     let n = c.default.getMessage(e.channel_id, e.id),
-                                        i = T.default.getMessage(e.id, e.channel_id),
                                         {
-                                            attachmentIds: a,
-                                            embedIds: l
-                                        } = N(null != n ? n : i);
-                                    (a.length > 0 || l.length > 0) && (r.default.dispatch({
-                                        type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
-                                        messageId: e.id,
-                                        channelId: e.channel_id
-                                    }), (0, p.trackScanningTimedOut)({
-                                        channelId: e.channel_id,
-                                        messageId: e.id,
-                                        embedIds: l,
-                                        attachmentIds: a
-                                    })), delete S[t]
+                                            attachmentIds: i,
+                                            embedIds: a
+                                        } = N(n);
+                                    if (null != n && (i.length > 0 || a.length > 0)) {
+                                        r.default.dispatch({
+                                            type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
+                                            messageId: n.id,
+                                            channelId: n.channel_id
+                                        }), (0, p.trackScanningTimedOut)({
+                                            channelId: n.channel_id,
+                                            messageId: n.id,
+                                            embedIds: a,
+                                            attachmentIds: i
+                                        });
+                                        return
+                                    }
+                                    let l = T.default.getMessage(e.id, e.channel_id),
+                                        {
+                                            attachmentIds: s,
+                                            embedIds: u
+                                        } = N(l);
+                                    if (null != l && (s.length > 0 || u.length > 0)) {
+                                        r.default.dispatch({
+                                            type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
+                                            messageId: l.id,
+                                            channelId: l.channel_id
+                                        }), (0, p.trackScanningTimedOut)({
+                                            channelId: l.channel_id,
+                                            messageId: l.id,
+                                            embedIds: a,
+                                            attachmentIds: i
+                                        });
+                                        return
+                                    }
                                 })
                             }(e)
                         }, C)
@@ -33503,4 +33523,4 @@
         }
     }
 ]);
-//# sourceMappingURL=772fb8f82b14648b2c3b.js.map
+//# sourceMappingURL=8d81aa0d547eed9e29ed.js.map
