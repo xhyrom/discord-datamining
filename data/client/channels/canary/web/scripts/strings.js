@@ -2606,6 +2606,8 @@
                 _LOGIN_STAGE: "Listen In",
                 REGISTER: "Register",
                 ENTER_PHONE_OR_EMAIL: "Enter phone or email",
+                ENTER_YOUR_PHONE: "Enter your phone number",
+                ENTER_YOUR_EMAIL: "Enter your email",
                 ENTER_EMAIL: "Enter email",
                 REGISTER_USERNAME_HINT: "You can always change this later!",
                 REGISTER_LOGIN_PRIVACY_NOTICE: "[View our Privacy Policy]({privacyURL})",
@@ -18181,7 +18183,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246867", ", Version Hash: ").concat("13557649cc2f1b4018b41f6c949767195ed4bfaf")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246872", ", Version Hash: ").concat("e805247b32f0f121fed421a595fa7bf14f52bccc")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20463,8 +20465,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "246867", "246867"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246867")), _ = 0), _
+                let _ = parseInt((e = "246872", "246872"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246872")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36305,4 +36307,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6e8f81177ac7b4fa0414.js.map
+//# sourceMappingURL=b9371b8f623d3c269532.js.map
