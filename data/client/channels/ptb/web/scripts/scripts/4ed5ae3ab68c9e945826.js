@@ -168,45 +168,45 @@
                 m = n("884351"),
                 _ = n("252862"),
                 I = n("730498"),
-                C = n("300322"),
-                T = n("845579"),
+                T = n("300322"),
+                C = n("845579"),
                 A = n("42203"),
                 E = n("957255"),
                 N = n("697218"),
                 S = n("158998"),
-                M = n("524768"),
-                g = n("317041"),
+                g = n("524768"),
+                M = n("317041"),
                 O = n("49111"),
                 h = n("903639"),
                 v = n("782340");
-            let D = n("150692").default,
-                y = (e, t) => {
+            let y = n("150692").default,
+                D = (e, t) => {
                     var n;
                     return null === (n = e.find(e => e.name === t)) || void 0 === n ? void 0 : n.value
                 },
                 R = {
-                    [g.BuiltInSectionId.BUILT_IN]: {
-                        id: g.BuiltInSectionId.BUILT_IN,
-                        type: M.ApplicationCommandSectionType.BUILT_IN,
+                    [M.BuiltInSectionId.BUILT_IN]: {
+                        id: M.BuiltInSectionId.BUILT_IN,
+                        type: g.ApplicationCommandSectionType.BUILT_IN,
                         get name() {
                             return v.default.Messages.COMMAND_SECTION_BUILT_IN_NAME
                         }
                     },
-                    [g.BuiltInSectionId.FRECENCY]: {
-                        id: g.BuiltInSectionId.FRECENCY,
-                        type: M.ApplicationCommandSectionType.BUILT_IN,
+                    [M.BuiltInSectionId.FRECENCY]: {
+                        id: M.BuiltInSectionId.FRECENCY,
+                        type: g.ApplicationCommandSectionType.BUILT_IN,
                         get name() {
                             return v.default.Messages.FREQUENTLY_USED
                         }
                     }
                 },
-                P = [...D, {
+                P = [...y, {
                     id: "-1",
                     name: "shrug",
                     displayName: "shrug",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN_TEXT,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN_TEXT,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_SHRUG_DESCRIPTION
                     },
@@ -226,7 +226,7 @@
                     }],
                     execute: e => {
                         var t;
-                        let n = null !== (t = y(e, "message")) && void 0 !== t ? t : "";
+                        let n = null !== (t = D(e, "message")) && void 0 !== t ? t : "";
                         return {
                             content: "".concat(n, " \xaf\\_(ツ)_/\xaf").trim()
                         }
@@ -236,8 +236,8 @@
                     name: "tableflip",
                     displayName: "tableflip",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN_TEXT,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN_TEXT,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_TABLEFLIP_DESCRIPTION
                     },
@@ -257,7 +257,7 @@
                     }],
                     execute: e => {
                         var t;
-                        let n = null !== (t = y(e, "message")) && void 0 !== t ? t : "";
+                        let n = null !== (t = D(e, "message")) && void 0 !== t ? t : "";
                         return {
                             content: "".concat(n, " (╯\xb0□\xb0)╯︵ ┻━┻").trim()
                         }
@@ -267,8 +267,8 @@
                     name: "unflip",
                     displayName: "unflip",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN_TEXT,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN_TEXT,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_TABLEUNFLIP_DESCRIPTION
                     },
@@ -288,7 +288,7 @@
                     }],
                     execute: e => {
                         var t;
-                        let n = null !== (t = y(e, "message")) && void 0 !== t ? t : "";
+                        let n = null !== (t = D(e, "message")) && void 0 !== t ? t : "";
                         return {
                             content: "".concat(n, " ┬─┬ノ( \xba _ \xbaノ)").trim()
                         }
@@ -298,8 +298,8 @@
                     name: "tts",
                     displayName: "tts",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN_TEXT,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN_TEXT,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_TTS_DESCRIPTION
                     },
@@ -322,11 +322,11 @@
                         let {
                             channel: t
                         } = e;
-                        return !t.isPrivate() && T.EnableTTSCommand.getSetting() && E.default.can(O.Permissions.SEND_TTS_MESSAGES, t)
+                        return !t.isPrivate() && C.EnableTTSCommand.getSetting() && E.default.can(O.Permissions.SEND_TTS_MESSAGES, t)
                     },
                     execute: e => {
                         var t;
-                        let n = null !== (t = y(e, "message")) && void 0 !== t ? t : "";
+                        let n = null !== (t = D(e, "message")) && void 0 !== t ? t : "";
                         return {
                             content: n,
                             tts: !0
@@ -337,8 +337,8 @@
                     name: "me",
                     displayName: "me",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN_TEXT,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN_TEXT,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_ME_DESCRIPTION
                     },
@@ -359,7 +359,7 @@
                     }],
                     execute: e => {
                         var t;
-                        let n = null !== (t = y(e, "message")) && void 0 !== t ? t : "";
+                        let n = null !== (t = D(e, "message")) && void 0 !== t ? t : "";
                         return {
                             content: "_".concat(n, "_")
                         }
@@ -369,8 +369,8 @@
                     name: "spoiler",
                     displayName: "spoiler",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN_TEXT,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN_TEXT,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_SPOILER_DESCRIPTION
                     },
@@ -391,7 +391,7 @@
                     }],
                     execute: e => {
                         var t;
-                        let n = null !== (t = y(e, "message")) && void 0 !== t ? t : "";
+                        let n = null !== (t = D(e, "message")) && void 0 !== t ? t : "";
                         return {
                             content: (0, O.MARKDOWN_SPOILER_WRAPPER)(n).trim()
                         }
@@ -401,8 +401,8 @@
                     name: "nick",
                     displayName: "nick",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_NICK_DESCRIPTION
                     },
@@ -433,7 +433,7 @@
                             channel: l
                         } = t;
                         if (null == i) return;
-                        let a = null !== (n = y(e, "new_nick")) && void 0 !== n ? n : "";
+                        let a = null !== (n = D(e, "new_nick")) && void 0 !== n ? n : "";
                         r.default.changeNickname(i.id, l.id, O.ME, a || "")
                     }
                 }, {
@@ -441,8 +441,8 @@
                     name: "thread",
                     displayName: "thread",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_THREAD_DESCRIPTION
                     },
@@ -476,13 +476,13 @@
                         let {
                             channel: t
                         } = e;
-                        return (0, C.computeCanStartPublicThread)(t)
+                        return (0, T.computeCanStartPublicThread)(t)
                     },
                     execute: async (e, t) => {
                         var n, i;
                         let {
                             channel: l
-                        } = t, a = null !== (n = y(e, "name")) && void 0 !== n ? n : "", s = null !== (i = y(e, "message")) && void 0 !== i ? i : "", r = await (0, I.createThread)(l, a, o.ChannelTypes.PUBLIC_THREAD, (0, _.getAutoArchiveDuration)(l, null), "Slash Command");
+                        } = t, a = null !== (n = D(e, "name")) && void 0 !== n ? n : "", s = null !== (i = D(e, "message")) && void 0 !== i ? i : "", r = await (0, I.createThread)(l, a, o.ChannelTypes.PUBLIC_THREAD, (0, _.getAutoArchiveDuration)(l, null), "Slash Command");
                         c.default.sendMessage(r.id, m.default.parse(r, s))
                     }
                 }, {
@@ -490,8 +490,8 @@
                     name: "kick",
                     displayName: "kick",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_KICK_DESCRIPTION
                     },
@@ -534,7 +534,7 @@
                             channel: l
                         } = t;
                         if (null == i) return;
-                        let a = null !== (n = y(e, "user")) && void 0 !== n ? n : "";
+                        let a = null !== (n = D(e, "user")) && void 0 !== n ? n : "";
                         if (!E.default.canManageUser(O.Permissions.KICK_MEMBERS, a, i)) {
                             c.default.sendBotMessage(l.id, v.default.Messages.COMMAND_KICK_UNABLE);
                             return
@@ -543,7 +543,7 @@
                             var t;
                             let n = N.default.getUser(a);
                             if (null == n) throw Error();
-                            await d.default.kickUser(i.id, a, null !== (t = y(e, "reason")) && void 0 !== t ? t : ""), c.default.sendBotMessage(l.id, v.default.Messages.COMMAND_KICK_CONFIRMATION.format({
+                            await d.default.kickUser(i.id, a, null !== (t = D(e, "reason")) && void 0 !== t ? t : ""), c.default.sendBotMessage(l.id, v.default.Messages.COMMAND_KICK_CONFIRMATION.format({
                                 user: S.default.getUserTag(n)
                             }))
                         };
@@ -556,8 +556,8 @@
                     name: "ban",
                     displayName: "ban",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_BAN_DESCRIPTION
                     },
@@ -642,7 +642,7 @@
                             channel: l
                         } = t;
                         if (null == i) return;
-                        let a = null !== (n = y(e, "user")) && void 0 !== n ? n : "";
+                        let a = null !== (n = D(e, "user")) && void 0 !== n ? n : "";
                         if (!E.default.canManageUser(O.Permissions.BAN_MEMBERS, a, i)) {
                             c.default.sendBotMessage(l.id, v.default.Messages.COMMAND_BAN_UNABLE);
                             return
@@ -650,8 +650,8 @@
                         let s = async () => {
                             var t, n;
                             if ("" === a) throw Error();
-                            let s = null !== (t = y(e, "delete_messages")) && void 0 !== t ? t : 0,
-                                o = null !== (n = y(e, "reason")) && void 0 !== n ? n : "",
+                            let s = null !== (t = D(e, "delete_messages")) && void 0 !== t ? t : 0,
+                                o = null !== (n = D(e, "reason")) && void 0 !== n ? n : "",
                                 r = N.default.getUser(a);
                             await d.default.banUser(i.id, a, s, o), c.default.sendBotMessage(l.id, v.default.Messages.COMMAND_BAN_CONFIRMATION.format({
                                 user: null != r ? S.default.getUserTag(r) : a
@@ -666,8 +666,8 @@
                     name: "timeout",
                     displayName: "timeout",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_TIMEOUT_DESCRIPTION
                     },
@@ -727,15 +727,15 @@
                             channel: i
                         } = t;
                         if (null == n) return;
-                        let l = y(e, "user");
+                        let l = D(e, "user");
                         if (!(0, f.canToggleCommunicationDisableOnUser)(n.id, l)) {
                             c.default.sendBotMessage(i.id, v.default.Messages.COMMAND_TIMEOUT_UNABLE);
                             return
                         }
                         let a = async () => {
                             var t, a;
-                            let o = null !== (t = y(e, "duration")) && void 0 !== t ? t : "",
-                                r = null !== (a = y(e, "reason")) && void 0 !== a ? a : "",
+                            let o = null !== (t = D(e, "duration")) && void 0 !== t ? t : "",
+                                r = null !== (a = D(e, "reason")) && void 0 !== a ? a : "",
                                 u = N.default.getUser(l);
                             if (null == u) throw Error();
                             await d.default.setCommunicationDisabledUntil({
@@ -758,8 +758,8 @@
                     name: "msg",
                     displayName: "msg",
                     type: p.ApplicationCommandType.CHAT,
-                    inputType: M.ApplicationCommandInputType.BUILT_IN,
-                    applicationId: g.BuiltInSectionId.BUILT_IN,
+                    inputType: g.ApplicationCommandInputType.BUILT_IN,
+                    applicationId: M.BuiltInSectionId.BUILT_IN,
                     get description() {
                         return v.default.Messages.COMMAND_MSG_DESCRIPTION
                     },
@@ -793,7 +793,7 @@
                         var n;
                         let {
                             channel: i
-                        } = t, a = y(e, "user"), s = null !== (n = y(e, "message")) && void 0 !== n ? n : "", o = async () => {
+                        } = t, a = D(e, "user"), s = null !== (n = D(e, "message")) && void 0 !== n ? n : "", o = async () => {
                             await u.default.openPrivateChannel(a).then(e => {
                                 let t = A.default.getChannel(e);
                                 l(null != t, "Newly created PrivateChannel is null"), c.default.sendMessage(t.id, m.default.parse(t, s))
@@ -807,7 +807,7 @@
                 L = P.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.name)),
                 U = (e, t, n) => {
                     let i = t ? P : L;
-                    return i = i.filter(t => t.type === e && (!n || t.inputType === M.ApplicationCommandInputType.BUILT_IN_TEXT || t.inputType === M.ApplicationCommandInputType.BUILT_IN_INTEGRATION))
+                    return i = i.filter(t => t.type === e && (!n || t.inputType === g.ApplicationCommandInputType.BUILT_IN_TEXT || t.inputType === g.ApplicationCommandInputType.BUILT_IN_INTEGRATION))
                 }
         },
         369010: function(e, t, n) {
@@ -899,7 +899,7 @@
                 return 0 > Number(t.id) ? t.id : null != e.guild && null != t.guildId ? "".concat(t.id, ":").concat(e.guild.id) : t.id
             }
 
-            function C() {
+            function T() {
                 var e, t;
                 let n = u.default.frecencyWithoutFetchingLatest,
                     i = null !== (t = null === (e = n.applicationCommandFrecency) || void 0 === e ? void 0 : e.applicationCommands) && void 0 !== t ? t : {};
@@ -908,9 +908,9 @@
                     recentUses: e.recentUses.map(Number).filter(e => e > 0)
                 })), p.pendingUsages)
             }
-            class T extends a.default.PersistedStore {
+            class C extends a.default.PersistedStore {
                 initialize(e) {
-                    null != e && (p = e), this.syncWith([u.default], C)
+                    null != e && (p = e), this.syncWith([u.default], T)
                 }
                 getState() {
                     return p
@@ -929,8 +929,8 @@
                     return f.frequently
                 }
             }
-            T.displayName = "ApplicationCommandFrecencyStore", T.persistKey = "ApplicationCommandFrecencyV2";
-            var A = new T(s.default, {
+            C.displayName = "ApplicationCommandFrecencyStore", C.persistKey = "ApplicationCommandFrecencyV2";
+            var A = new C(s.default, {
                 APPLICATION_COMMAND_USED: function(e) {
                     let {
                         command: t,
@@ -1029,16 +1029,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return K
+                    return q
                 },
                 useContextIndexState: function() {
-                    return j
+                    return K
                 },
                 useUserIndexState: function() {
-                    return z
+                    return j
                 },
                 useDiscoveryState: function() {
-                    return X
+                    return z
                 },
                 useQueryState: function() {
                     return Q
@@ -1047,83 +1047,82 @@
             var i, l, a = n("884691"),
                 s = n("627445"),
                 o = n.n(s),
-                r = n("917351"),
-                u = n.n(r),
-                d = n("811022"),
-                c = n("446674"),
-                p = n("913144"),
-                f = n("851387"),
-                m = n("892692"),
-                _ = n("915639"),
-                I = n("872173"),
-                C = n("42203"),
+                r = n("811022"),
+                u = n("446674"),
+                d = n("913144"),
+                c = n("851387"),
+                p = n("605393"),
+                f = n("892692"),
+                m = n("915639"),
+                _ = n("872173"),
+                I = n("42203"),
                 T = n("305961"),
-                A = n("697218"),
-                E = n("599110"),
-                N = n("589777"),
-                S = n("369010"),
-                M = n("342564"),
+                C = n("697218"),
+                A = n("599110"),
+                E = n("589777"),
+                N = n("369010"),
+                S = n("342564"),
                 g = n("9566"),
-                O = n("972620"),
-                h = n("524768"),
-                v = n("389153"),
-                D = n("123373"),
+                M = n("972620"),
+                O = n("524768"),
+                h = n("389153"),
+                v = n("123373"),
                 y = n("217946"),
-                R = n("317041"),
-                P = n("49111");
-            let L = new d.default("ApplicationCommandIndexStore"),
-                U = Symbol("currentUser"),
-                B = Symbol("stale"),
-                b = Symbol("current"),
-                H = Object.freeze({
+                D = n("317041"),
+                R = n("49111");
+            let P = new r.default("ApplicationCommandIndexStore"),
+                L = Symbol("currentUser"),
+                U = Symbol("stale"),
+                B = Symbol("current"),
+                F = Object.freeze({
                     descriptors: [],
                     commands: [],
                     sectionedCommands: [],
                     loading: !0
                 }),
-                F = Object.freeze({
-                    serverVersion: b,
+                b = Object.freeze({
+                    serverVersion: B,
                     fetchState: {
                         fetching: !1
                     },
                     result: {
                         sections: {},
                         sectionIdsByBotId: {},
-                        version: b,
+                        version: B,
                         commandTypeCount: {}
                     }
                 }),
-                w = Object.freeze({
-                    serverVersion: B,
+                H = Object.freeze({
+                    serverVersion: U,
                     fetchState: {
                         fetching: !1
                     }
                 }),
-                G = {
+                w = {
                     sensitivity: "accent",
                     numeric: !0
                 };
 
-            function x(e) {
+            function G(e) {
                 switch (e.type) {
                     case "guild":
                         return e.guildId;
                     case "channel":
                         return e.channelId;
                     case "user":
-                        return U
+                        return L
                 }
             }
 
-            function Y(e, t) {
+            function x(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                    i = x(e),
+                    i = G(e),
                     l = V.indices[i];
                 return null != l ? ("fetchState" in t && l.fetchState.fetching && l.fetchState.abort.abort(), V.indices[i] = {
                     ...l,
                     ...t
                 }) : n && (V.indices[i] = {
-                    serverVersion: B,
+                    serverVersion: U,
                     fetchState: {
                         fetching: !1
                     },
@@ -1132,21 +1131,21 @@
             }
 
             function W(e) {
-                let t = x(e),
+                let t = G(e),
                     n = V.indices[t];
                 (null == n ? void 0 : n.fetchState.fetching) && n.fetchState.abort.abort(), delete V.indices[t]
             }
 
-            function k() {
+            function Y() {
                 for (let e of Object.values(V.indices)) e.fetchState.fetching && e.fetchState.abort.abort();
                 V.indices = {}
             }
-            class q extends c.default.Store {
+            class k extends u.default.Store {
                 initialize() {
-                    this.waitFor(_.default), this.syncWith([_.default], () => {
+                    this.waitFor(m.default), this.syncWith([m.default], () => {
                         ! function() {
-                            let e = _.default.locale;
-                            e !== V.oldLocale && (k(), V.collator = new Intl.Collator(e, {
+                            let e = m.default.locale;
+                            e !== V.oldLocale && (Y(), V.collator = new Intl.Collator(e, {
                                 sensitivity: "accent",
                                 numeric: !0
                             }), V.oldLocale = e)
@@ -1155,27 +1154,27 @@
                 }
                 getContextState(e) {
                     var t, n;
-                    return null != e && J(e) ? null !== (n = this.indices[null !== (t = e.guild_id) && void 0 !== t ? t : e.id]) && void 0 !== n ? n : w : F
+                    return null != e && J(e) ? null !== (n = this.indices[null !== (t = e.guild_id) && void 0 !== t ? t : e.id]) && void 0 !== n ? n : H : b
                 }
                 getUserState() {
                     var e;
-                    return (0, v.isInUserAppExperiment)({
+                    return (0, h.isInUserAppExperiment)({
                         location: "getUserState"
                     }, {
                         autoTrackExposure: !1
-                    }) ? null !== (e = this.indices[U]) && void 0 !== e ? e : w : F
+                    }) ? null !== (e = this.indices[L]) && void 0 !== e ? e : H : b
                 }
                 query(e, t, n) {
-                    let i = A.default.getCurrentUser();
-                    if (null == i) return H;
+                    let i = C.default.getCurrentUser();
+                    if (null == i) return F;
                     let l = this.getContextState(e),
                         a = this.getUserState(),
-                        s = (0, D.buildPermissionContext)(e, t.commandType),
+                        s = (0, v.buildPermissionContext)(e, t.commandType),
                         o = !1 !== t.applicationCommands && s.hasBaseAccessPermissions,
                         r = !1;
                     if (n.allowFetch) {
                         let t = o && J(e);
-                        t && (E.default.track(P.AnalyticEvents.APPLICATION_COMMAND_CACHE_FETCH, {
+                        t && (A.default.track(R.AnalyticEvents.APPLICATION_COMMAND_CACHE_FETCH, {
                             miss: null == l.result,
                             size: Object.keys(V.indices).length
                         }), ee(l) && (null != e.guild_id ? (0, g.requestApplicationCommandIndex)({
@@ -1184,7 +1183,7 @@
                         }) : (0, g.requestApplicationCommandIndex)({
                             type: "channel",
                             channelId: e.id
-                        }), r = !0)), (0, v.isInUserAppExperiment)({
+                        }), r = !0)), (0, h.isInUserAppExperiment)({
                             location: "query"
                         }) && ee(a) && ((0, g.requestApplicationCommandIndex)({
                             type: "user"
@@ -1203,22 +1202,22 @@
                     return u.loading = u.loading || r, u
                 }
                 constructor(...e) {
-                    super(...e), this.indices = {}, this.oldLocale = _.default.locale, this.collator = new Intl.Collator(_.default.locale, G)
+                    super(...e), this.indices = {}, this.oldLocale = m.default.locale, this.collator = new Intl.Collator(m.default.locale, w)
                 }
             }
-            q.displayName = "ApplicationCommandIndexStore";
-            let V = new q(p.default, {
-                LOGOUT: k,
-                CONNECTION_OPEN: k,
+            k.displayName = "ApplicationCommandIndexStore";
+            let V = new k(d.default, {
+                LOGOUT: Y,
+                CONNECTION_OPEN: Y,
                 APPLICATION_COMMAND_INDEX_FETCH_REQUEST: function(e) {
                     var t;
                     let {
                         target: n,
                         start: i
                     } = e;
-                    if (ee(null !== (t = V.indices[x(n)]) && void 0 !== t ? t : w)) {
+                    if (ee(null !== (t = V.indices[G(n)]) && void 0 !== t ? t : H)) {
                         let e = new AbortController;
-                        Y(n, {
+                        x(n, {
                             fetchState: {
                                 fetching: !0,
                                 abort: e
@@ -1231,7 +1230,7 @@
                     let {
                         target: l,
                         index: a
-                    } = e, s = null === (t = A.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                    } = e, s = null === (t = C.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
                     if (null == s) return !1;
                     let o = {},
                         r = {},
@@ -1239,12 +1238,12 @@
                     for (let e of a.applications) {
                         if (null == e.bot && null != e.bot_id) {
                             r[e.bot_id] = e.id;
-                            let t = A.default.getUser(e.bot_id);
+                            let t = C.default.getUser(e.bot_id);
                             null != t ? e.bot = t : u.add(e.bot_id)
                         } else null != e.bot && (r[e.bot.id] = e.id);
                         let t = {
                             descriptor: {
-                                ...(0, v.getApplicationCommandSection)(function(e) {
+                                ...(0, h.getApplicationCommandSection)(function(e) {
                                     return {
                                         description: e.description,
                                         icon: e.icon,
@@ -1253,16 +1252,16 @@
                                         bot: e.bot
                                     }
                                 }(e)),
-                                permissions: null != e.permissions ? (0, m.keyPermissions)(ei(e.permissions, s)) : void 0,
+                                permissions: null != e.permissions ? (0, f.keyPermissions)(ei(e.permissions, s)) : void 0,
                                 botId: e.bot_id
                             },
                             commands: {}
                         };
                         o[e.id] = t
                     }
-                    "guild" === l.type && u.size > 0 && f.default.requestMembersById(l.guildId, [...u]);
+                    "guild" === l.type && u.size > 0 && c.default.requestMembersById(l.guildId, [...u]);
                     let d = {};
-                    for (let e of (0, v.buildApplicationCommands)(a.application_commands.map(e => (function(e, t) {
+                    for (let e of (0, h.buildApplicationCommands)(a.application_commands.map(e => (function(e, t) {
                             var n, i, l, a, s;
                             let o = {
                                 ...e,
@@ -1276,18 +1275,18 @@
                         })(e, s)), !0)) {
                         let t = o[e.applicationId];
                         if (null == t) {
-                            L.error("Command has no matching application");
+                            P.error("Command has no matching application");
                             continue
                         }
                         t.commands[e.id] = e, d[e.type] = (null !== (n = d[e.type]) && void 0 !== n ? n : 0) + 1
                     }
-                    let c = null !== (i = a.version) && void 0 !== i ? i : b;
-                    Y(l, {
-                        serverVersion: c,
+                    let p = null !== (i = a.version) && void 0 !== i ? i : B;
+                    x(l, {
+                        serverVersion: p,
                         result: {
                             sections: o,
                             sectionIdsByBotId: r,
-                            version: c,
+                            version: p,
                             commandTypeCount: d
                         },
                         fetchState: {
@@ -1299,7 +1298,7 @@
                     let {
                         target: t
                     } = e;
-                    Y(t, {
+                    x(t, {
                         fetchState: {
                             fetching: !1,
                             retryAfter: Date.now() + 5e3
@@ -1311,14 +1310,14 @@
                         channelId: n,
                         guildId: i
                     } = e;
-                    Y(t = null != i ? {
+                    x(t = null != i ? {
                         type: "guild",
                         guildId: i
                     } : {
                         type: "channel",
                         channelId: n
                     }, {
-                        serverVersion: B
+                        serverVersion: U
                     })
                 },
                 CHANNEL_DELETE: function(e) {
@@ -1344,20 +1343,20 @@
                     let {
                         guildId: n,
                         version: i
-                    } = e, l = Y({
+                    } = e, l = x({
                         type: "guild",
                         guildId: n
                     }, {
-                        serverVersion: null != i ? i : B
+                        serverVersion: null != i ? i : U
                     }), a = null == l ? void 0 : null === (t = l.result) || void 0 === t ? void 0 : t.sectionIdsByBotId;
                     if (null != a)
                         for (let e in a) {
-                            let t = C.default.getDMFromUserId(e);
-                            null != t && Y({
+                            let t = I.default.getDMFromUserId(e);
+                            null != t && x({
                                 type: "channel",
                                 channelId: t
                             }, {
-                                serverVersion: B
+                                serverVersion: U
                             })
                         }
                 },
@@ -1366,7 +1365,7 @@
                     let {
                         guildId: n,
                         members: i
-                    } = e, l = x({
+                    } = e, l = G({
                         type: "guild",
                         guildId: n
                     }), a = null === (t = V.indices[l]) || void 0 === t ? void 0 : t.result;
@@ -1378,20 +1377,20 @@
                             let n = a.sections[t];
                             o(null != n, "Bot has no matching index section"), o(null != n.descriptor.application, "Bot's index section has no application info");
                             let i = n.descriptor.application;
-                            i.bot = e.user, n.descriptor = (0, v.getApplicationCommandSection)(i), s = !0
+                            i.bot = e.user, n.descriptor = (0, h.getApplicationCommandSection)(i), s = !0
                         }
                     }), s
                 }
             });
-            var K = V;
+            var q = V;
 
-            function j(e, t, n) {
-                let [i, l] = a.useState(!0), s = (0, c.useStateFromStoresObject)([V], () => V.getContextState(e));
+            function K(e, t, n) {
+                let [i, l] = a.useState(!0), s = (0, u.useStateFromStoresObject)([V], () => V.getContextState(e));
                 return a.useEffect(() => {
                     if (i && null != e) {
                         if (n) {
                             let n = t && J(e);
-                            n && (E.default.track(P.AnalyticEvents.APPLICATION_COMMAND_CACHE_FETCH, {
+                            n && (A.default.track(R.AnalyticEvents.APPLICATION_COMMAND_CACHE_FETCH, {
                                 miss: null == s.result,
                                 size: Object.keys(V.indices).length
                             }), ee(s) && (null != e.guild_id ? (0, g.requestApplicationCommandIndex)({
@@ -1407,8 +1406,8 @@
                 }, [s, n, e, t, i]), s
             }
 
-            function z(e, t) {
-                let [n, i] = a.useState(!0), l = (0, c.useStateFromStoresObject)([V], () => V.getUserState()), s = (0, v.useIsInUserAppExperiment)({
+            function j(e, t) {
+                let [n, i] = a.useState(!0), l = (0, u.useStateFromStoresObject)([V], () => V.getUserState()), s = (0, h.useIsInUserAppExperiment)({
                     location: "useUserIndexState"
                 });
                 return a.useEffect(() => {
@@ -1418,13 +1417,13 @@
                 }, [l, t, e, s, n]), l
             }
 
-            function X(e, t, n, i) {
+            function z(e, t, n, i) {
                 let {
                     descriptors: l,
                     commands: s,
                     sectionedCommands: o,
                     loading: r
-                } = Q(e, n, i), u = (0, S.useTopCommands)({
+                } = Q(e, n, i), u = (0, N.useTopCommands)({
                     channel: e,
                     guild: t
                 });
@@ -1440,32 +1439,42 @@
                             guild: t
                         },
                         a = s.filter(e => u.includes(e.id)).sort((e, t) => {
-                            let i = M.default.getScoreWithoutLoadingLatest(n, e),
-                                l = M.default.getScoreWithoutLoadingLatest(n, t);
+                            let i = S.default.getScoreWithoutLoadingLatest(n, e),
+                                l = S.default.getScoreWithoutLoadingLatest(n, t);
                             return l - i
-                        }).splice(0, R.DISCOVERY_COMMANDS_FRECENCY_LIMIT);
+                        }).splice(0, D.DISCOVERY_COMMANDS_FRECENCY_LIMIT);
                     return 0 === a.length ? {
                         descriptors: l,
                         commands: s,
                         sectionedCommands: o,
                         loading: r
                     } : {
-                        descriptors: [N.BUILT_IN_SECTIONS[R.BuiltInSectionId.FRECENCY], ...l],
+                        descriptors: [E.BUILT_IN_SECTIONS[D.BuiltInSectionId.FRECENCY], ...l],
                         commands: a.concat(s),
                         sectionedCommands: [{
-                            section: N.BUILT_IN_SECTIONS[R.BuiltInSectionId.FRECENCY],
+                            section: E.BUILT_IN_SECTIONS[D.BuiltInSectionId.FRECENCY],
                             data: a
                         }, ...o],
                         loading: r
                     }
                 }, [r, i.includeFrecency, u, e, t, s, l, o])
             }
+            let X = Object.freeze({
+                applications: {
+                    useFrecency: !1,
+                    useScore: !1
+                },
+                commands: {
+                    useFrecency: !0,
+                    useScore: !0
+                }
+            });
 
             function Q(e, t, n) {
-                let i = (0, D.usePermissionContext)(e, t.commandType),
+                let i = (0, v.usePermissionContext)(e, t.commandType),
                     l = !1 !== t.applicationCommands && i.hasBaseAccessPermissions,
-                    s = j(e, l, n.allowFetch),
-                    o = z(l, n.allowFetch);
+                    s = K(e, l, n.allowFetch),
+                    o = j(l, n.allowFetch);
                 return a.useMemo(() => Z({
                     permissionContext: i,
                     text: t.text,
@@ -1474,8 +1483,9 @@
                     scoreMethod: n.scoreMethod,
                     allowEmptySections: n.allowEmptySections,
                     contextState: s,
-                    userState: o
-                }), [i, t.text, t.builtIns, l, n.scoreMethod, n.allowEmptySections, s, o])
+                    userState: o,
+                    sortOptions: n.sortOptions
+                }), [i, t.text, t.builtIns, l, n.scoreMethod, n.allowEmptySections, n.sortOptions, s, o])
             }
 
             function Z(e) {
@@ -1484,23 +1494,24 @@
                     contextState: n,
                     userState: i,
                     text: l,
-                    builtIns: a = O.BuiltInCommandFilter.ALLOW,
+                    builtIns: a = M.BuiltInCommandFilter.ALLOW,
                     allowApplicationCommands: s = !0,
                     allowEmptySections: r = !1,
-                    scoreMethod: d = O.ScoreMethod.NONE
+                    scoreMethod: u = M.ScoreMethod.NONE,
+                    sortOptions: d = X
                 } = e, {
                     commandType: c
-                } = t, p = null == l ? void 0 : l.toLowerCase(), f = null == p ? void 0 : p.split(" "), m = a === O.BuiltInCommandFilter.ONLY_TEXT, _ = a !== O.BuiltInCommandFilter.DENY ? (0, N.getBuiltInCommands)(c, !0, m) : [], C = [], A = {
+                } = t, f = null == l ? void 0 : l.toLowerCase(), m = null == f ? void 0 : f.split(" "), I = a === M.BuiltInCommandFilter.ONLY_TEXT, C = a !== M.BuiltInCommandFilter.DENY ? (0, E.getBuiltInCommands)(c, !0, I) : [], A = [], N = {
                     permissionContext: t,
-                    query: p,
-                    splitQuery: f,
+                    query: f,
+                    splitQuery: m,
                     allowEmptySections: r,
-                    scoreMethod: d
+                    scoreMethod: u
                 };
                 if (s) {
-                    var E, S, g, h;
-                    let e = null !== (g = null === (E = n.result) || void 0 === E ? void 0 : E.sections) && void 0 !== g ? g : {},
-                        t = null !== (h = null === (S = i.result) || void 0 === S ? void 0 : S.sections) && void 0 !== h ? h : {},
+                    var g, O, h, v;
+                    let e = null !== (h = null === (g = n.result) || void 0 === g ? void 0 : g.sections) && void 0 !== h ? h : {},
+                        t = null !== (v = null === (O = i.result) || void 0 === O ? void 0 : O.sections) && void 0 !== v ? v : {},
                         l = [...Object.keys(e), ...Object.keys(t).filter(t => !(t in e))];
                     for (let n of l) {
                         let i, l;
@@ -1518,39 +1529,60 @@
                                 }
                         } else null != a ? (i = a.descriptor, l = Object.values(a.commands)) : null != s && (i = s.descriptor, l = Object.values(s.commands));
                         o(null != i, "Failed to select application descriptor"), o(null != l, "Failed to select list of application commands");
-                        let r = $(i, l, A);
-                        null != r && C.push(r)
+                        let r = $(i, l, N);
+                        null != r && A.push(r)
                     }
-                    C.sort((e, t) => el(e.section.name, t.section.name))
+                    d.applications.useFrecency && _.FrecencyUserSettingsActionCreators.loadIfNecessary(), A.sort((e, t) => {
+                        if (d.applications.useScore && u === M.ScoreMethod.APPLICATION_ONLY) {
+                            var n, i, l, a;
+                            let s = null !== (l = null === (n = e.data[0]) || void 0 === n ? void 0 : n.score) && void 0 !== l ? l : Number.MAX_VALUE,
+                                o = null !== (a = null === (i = t.data[0]) || void 0 === i ? void 0 : i.score) && void 0 !== a ? a : Number.MAX_VALUE;
+                            if (s !== o) return s - o
+                        }
+                        if (d.applications.useFrecency) {
+                            let n = p.default.getScoreWithoutLoadingLatest(e.section.id),
+                                i = p.default.getScoreWithoutLoadingLatest(t.section.id);
+                            if (n !== i) return i - n
+                        }
+                        return el(e.section.name, t.section.name)
+                    })
                 }
-                if (_.length > 0 || !0 === r) {
-                    let e = $(N.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN], _, A);
-                    null != e && C.push(e)
+                if (C.length > 0 || !0 === r) {
+                    let e = $(E.BUILT_IN_SECTIONS[D.BuiltInSectionId.BUILT_IN], C, N);
+                    null != e && A.push(e)
                 }
-                let v = u.flatMap(C, e => e.data);
-                if (d === O.ScoreMethod.COMMAND_ONLY || d === O.ScoreMethod.COMMAND_OR_APPLICATION) {
+                let y = A.flatMap(e => e.data.map(t => ({
+                    ...t,
+                    section: e.section
+                })));
+                if (u === M.ScoreMethod.COMMAND_ONLY || u === M.ScoreMethod.COMMAND_OR_APPLICATION) {
                     let e = t.context,
                         n = T.default.getGuild(t.context.guild_id);
-                    I.FrecencyUserSettingsActionCreators.loadIfNecessary(), v.sort((t, i) => {
-                        var l, a;
-                        let s = null !== (l = t.score) && void 0 !== l ? l : 0,
-                            o = null !== (a = i.score) && void 0 !== a ? a : 0;
-                        if (s !== o) return s - o;
-                        let r = M.default.getScoreWithoutLoadingLatest({
-                                channel: e,
-                                guild: n
-                            }, t),
-                            u = M.default.getScoreWithoutLoadingLatest({
-                                channel: e,
-                                guild: n
-                            }, i);
-                        return r !== u ? u - r : el(t.displayName, i.displayName)
+                    d.commands.useFrecency && _.FrecencyUserSettingsActionCreators.loadIfNecessary(), y.sort((t, i) => {
+                        if (d.commands.useScore) {
+                            var l, a;
+                            let e = null !== (l = t.score) && void 0 !== l ? l : 0,
+                                n = null !== (a = i.score) && void 0 !== a ? a : 0;
+                            if (e !== n) return e - n
+                        }
+                        if (d.commands.useFrecency) {
+                            let l = S.default.getScoreWithoutLoadingLatest({
+                                    channel: e,
+                                    guild: n
+                                }, t),
+                                a = S.default.getScoreWithoutLoadingLatest({
+                                    channel: e,
+                                    guild: n
+                                }, i);
+                            if (l !== a) return a - l
+                        }
+                        return el(t.displayName, i.displayName)
                     })
                 }
                 return {
-                    commands: v,
-                    descriptors: C.map(e => e.section),
-                    sectionedCommands: C,
+                    commands: y,
+                    descriptors: A.map(e => e.section),
+                    sectionedCommands: A,
                     loading: (null == n ? void 0 : n.fetchState.fetching) === !0 || (null == i ? void 0 : i.fetchState.fetching) === !0
                 }
             }
@@ -1573,10 +1605,10 @@
                     m = null != u.guild_id ? y.computeAllowedForChannel(e.permissions, u.id, u.guild_id) : null,
                     _ = [];
                 for (let e of t) y.hasAccess(e, r, f, m) === y.HasAccessResult.ALLOWED && _.push(e);
-                return 0 !== (i = (o === O.ScoreMethod.COMMAND_ONLY || o === O.ScoreMethod.COMMAND_OR_APPLICATION) && null != l && null != a ? function(e, t, n, i, l) {
+                return 0 !== (i = o !== M.ScoreMethod.NONE && null != l && null != a ? function(e, t, n, i, l) {
                     let a;
                     let s = [];
-                    if (l === O.ScoreMethod.APPLICATION_ONLY || l === O.ScoreMethod.COMMAND_OR_APPLICATION) {
+                    if (l === M.ScoreMethod.APPLICATION_ONLY || l === M.ScoreMethod.COMMAND_OR_APPLICATION) {
                         let t = i.name.toLocaleLowerCase();
                         t.startsWith(e) ? a = 5 : t.includes(e) && (a = 6)
                     }
@@ -1584,7 +1616,7 @@
                         r = t.slice(1).join(" ");
                     for (let t of n) {
                         let n;
-                        if (l === O.ScoreMethod.COMMAND_ONLY || l === O.ScoreMethod.COMMAND_OR_APPLICATION) {
+                        if (l === M.ScoreMethod.COMMAND_ONLY || l === M.ScoreMethod.COMMAND_OR_APPLICATION) {
                             var u;
                             n = null !== (u = function(e, t, n, i) {
                                 var l;
@@ -1618,7 +1650,7 @@
                         })
                     }
                     return s
-                }(l, a, _, e, o) : _).length || s ? ((o === O.ScoreMethod.NONE || o === O.ScoreMethod.APPLICATION_ONLY) && i.sort((e, t) => el(e.displayName, t.displayName)), {
+                }(l, a, _, e, o) : _).length || s ? ((o === M.ScoreMethod.NONE || o === M.ScoreMethod.APPLICATION_ONLY) && i.sort((e, t) => el(e.displayName, t.displayName)), {
                     section: e,
                     data: i
                 }) : null
@@ -1626,7 +1658,7 @@
 
             function J(e) {
                 var t;
-                return null != e.guild_id || e.type === P.ChannelTypes.DM && (null === (t = A.default.getUser(e.getRecipientId())) || void 0 === t ? void 0 : t.bot) === !0
+                return null != e.guild_id || e.type === R.ChannelTypes.DM && (null === (t = C.default.getUser(e.getRecipientId())) || void 0 === t ? void 0 : t.bot) === !0
             }
 
             function ee(e) {
@@ -1660,18 +1692,18 @@
             function ei(e, t) {
                 let n = [];
                 if (null != e.user && n.push({
-                        type: h.ApplicationCommandPermissionType.USER,
+                        type: O.ApplicationCommandPermissionType.USER,
                         id: t,
                         permission: e.user
                     }), null != e.channels)
                     for (let [t, i] of Object.entries(e.channels)) n.push({
-                        type: h.ApplicationCommandPermissionType.CHANNEL,
+                        type: O.ApplicationCommandPermissionType.CHANNEL,
                         id: t,
                         permission: i
                     });
                 if (null != e.roles)
                     for (let [t, i] of Object.entries(e.roles)) n.push({
-                        type: h.ApplicationCommandPermissionType.ROLE,
+                        type: O.ApplicationCommandPermissionType.ROLE,
                         id: t,
                         permission: i
                     });
@@ -1686,7 +1718,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 getCachedCommand: function() {
-                    return T
+                    return C
                 },
                 getCachedApplicationSection: function() {
                     return A
@@ -1701,10 +1733,10 @@
                     return S
                 },
                 executeQuery: function() {
-                    return M
+                    return g
                 },
                 useQuery: function() {
-                    return g
+                    return M
                 },
                 useCommand: function() {
                     return O
@@ -1716,10 +1748,10 @@
                     return v
                 },
                 useSearchOpenState: function() {
-                    return D
+                    return y
                 },
                 isInIndexExperiment: function() {
-                    return y
+                    return D
                 }
             }), n("222007"), n("424973");
             var i = n("884691"),
@@ -1736,15 +1768,15 @@
                 m = n("166004"),
                 _ = n("524768"),
                 I = n("317041"),
-                C = n("49111");
+                T = n("49111");
 
-            function T(e, t) {
+            function C(e, t) {
                 var n, i, l, a;
                 if (null == t) return {
                     application: void 0,
                     command: void 0
                 };
-                if (!y({
+                if (!D({
                         location: "getCachedCommand"
                     })) {
                     let e = f.default.getCommand(t),
@@ -1772,7 +1804,7 @@
 
             function A(e, t, n) {
                 var i, l, a, s, o, r;
-                if (!y({
+                if (!D({
                         location: "getCachedApplicationSection"
                     })) return null === (o = m.default.getApplicationSections(e.id, t)) || void 0 === o ? void 0 : o.find(e => e.id === n);
                 let u = c.default.getUserState(),
@@ -1782,7 +1814,7 @@
             }
 
             function E(e, t, n) {
-                if (!y({
+                if (!D({
                         location: "getCachedResults"
                     })) {
                     var i, l;
@@ -1805,7 +1837,7 @@
             }
 
             function N(e, t, n) {
-                if (!y({
+                if (!D({
                         location: "getChangeKeys"
                     }, {
                         autoTrackExposure: !1
@@ -1830,18 +1862,18 @@
                         descriptors: d,
                         commands: f,
                         sectionedCommands: _,
-                        loading: T
+                        loading: C
                     } = (0, c.useDiscoveryState)(e, r, t, {
                         ...n,
                         allowFetch: !0
                     }),
                     [A, E] = i.useState(null),
                     N = i.useRef(!1);
-                N.current = T;
+                N.current = C;
                 let S = i.useMemo(() => {
                     let e = [];
                     if (null != n.placeholderCount)
-                        for (let i = 0; i < n.placeholderCount; i++) e.push(P(i, t.commandType));
+                        for (let i = 0; i < n.placeholderCount; i++) e.push(L(i, t.commandType));
                     return e
                 }, [t.commandType, n.placeholderCount]);
                 return i.useMemo(() => {
@@ -1852,18 +1884,18 @@
                         commandsByActiveSection: _,
                         filteredSectionId: A,
                         hasMoreAfter: !1,
-                        placeholders: T ? S : [],
+                        placeholders: C ? S : [],
                         sectionDescriptors: d,
                         filterSection: e => {
                             E(e)
                         },
-                        scrollDown: C.NOOP
+                        scrollDown: T.NOOP
                     };
                     if (null != A) {
                         let t = _.find(e => e.section.id === A);
                         e.activeSections = null != t ? [t.section] : [], e.commandsByActiveSection = null != t ? [t] : []
                     }
-                    if (T) {
+                    if (C) {
                         let t = _[0];
                         if (null != t) e.commandsByActiveSection = [{
                             section: t.section,
@@ -1879,11 +1911,11 @@
                         e.commands = [...f, ...S]
                     }
                     return e
-                }, [f, d, A, _, T, S])
+                }, [f, d, A, _, C, S])
             }
 
-            function M(e, t, n) {
-                if (!y({
+            function g(e, t, n) {
+                if (!D({
                         location: "executeQuery"
                     })) {
                     var i, l, s, o, d;
@@ -1899,16 +1931,16 @@
                     descriptors: p,
                     commands: f,
                     loading: _
-                } = c.default.query(e, t, n), C = [];
+                } = c.default.query(e, t, n), T = [];
                 if (null != n.placeholderCount && _)
-                    for (let e = 0; e < n.placeholderCount; e++) C.push(P(e, t.commandType));
+                    for (let e = 0; e < n.placeholderCount; e++) T.push(L(e, t.commandType));
                 return {
-                    commands: _ ? [...f, ...C] : f,
+                    commands: _ ? [...f, ...T] : f,
                     sections: _ && 0 === p.length ? [u.BUILT_IN_SECTIONS[I.BuiltInSectionId.BUILT_IN]] : p
                 }
             }
 
-            function g(e, t, n) {
+            function M(e, t, n) {
                 if (!R({
                         location: "useQuery"
                     })) {
@@ -1925,13 +1957,13 @@
                 }), d = i.useMemo(() => {
                     let e = [];
                     if (null != n.placeholderCount)
-                        for (let i = 0; i < n.placeholderCount; i++) e.push(P(i, t.commandType));
+                        for (let i = 0; i < n.placeholderCount; i++) e.push(L(i, t.commandType));
                     return e
                 }, [t.commandType, n.placeholderCount]);
                 return i.useMemo(() => ({
                     commands: r ? [...o, ...d] : o,
                     sections: r && 0 === s.length ? [u.BUILT_IN_SECTIONS[I.BuiltInSectionId.BUILT_IN]] : s,
-                    scrollDown: C.NOOP
+                    scrollDown: T.NOOP
                 }), [r, o, s, d])
             }
 
@@ -2021,7 +2053,7 @@
 
             function v(e, t, n) {
                 var i, l, s, o, r, u;
-                if (!y({
+                if (!D({
                         location: "getCommandTypeCount"
                     })) {
                     if (e.isPrivate()) return null;
@@ -2035,22 +2067,27 @@
                 return (null !== (r = null === (i = d.result) || void 0 === i ? void 0 : i.commandTypeCount[t]) && void 0 !== r ? r : 0) + (null !== (u = null === (l = p.result) || void 0 === l ? void 0 : l.commandTypeCount[t]) && void 0 !== u ? u : 0)
             }
 
-            function D() {
+            function y() {
                 !R({
                     location: "useSearchOpenState"
                 }) && (0, m.useSearchStoreOpenState)()
             }
 
-            function y(e, t) {
+            function D(e, t) {
                 return d.default.getCurrentConfig(e, t).enabled
             }
 
             function R(e, t) {
-                let [n] = i.useState(y(e, t));
+                let [n] = i.useState(D(e, t));
                 return n
             }
+            let P = {
+                id: "placeholder-section",
+                type: _.ApplicationCommandSectionType.APPLICATION,
+                name: ""
+            };
 
-            function P(e, t) {
+            function L(e, t) {
                 return {
                     type: t,
                     inputType: _.ApplicationCommandInputType.PLACEHOLDER,
@@ -2059,7 +2096,8 @@
                     displayName: "",
                     description: "",
                     displayDescription: "",
-                    applicationId: ""
+                    applicationId: "",
+                    section: P
                 }
             }
         },
@@ -2096,8 +2134,8 @@
                 m = n("166004"),
                 _ = n("389153");
             let I = new Map,
-                C = new Set,
                 T = new Set,
+                C = new Set,
                 A = new s({
                     max: 1e4
                 }),
@@ -2114,7 +2152,7 @@
                     return (0, m.search)(n, i).then(e => {
                         var i;
                         if (null == e) return;
-                        if (null != t && l && C.add(t), 0 === e.applicationCommands.length && (null == e.applications || 0 === e.applications.length)) return;
+                        if (null != t && l && T.add(t), 0 === e.applicationCommands.length && (null == e.applications || 0 === e.applications.length)) return;
                         let a = (0, _.buildApplicationCommands)(e.applicationCommands);
                         f.updateRegistry(a, null !== (i = e.applications) && void 0 !== i ? i : [], n)
                     })
@@ -2137,7 +2175,7 @@
                         }
                     })
                 }, 250),
-                M = l.debounce((e, t, n, i) => {
+                g = l.debounce((e, t, n, i) => {
                     let l = [...n].filter(_.isSnowflake);
                     if (0 === l.length) return;
                     let a = c.default.getChannel(t);
@@ -2156,10 +2194,10 @@
                             limit: 0
                         }
                     }).then(() => {
-                        o.length > 0 && M(e, t, new Set(o), i)
+                        o.length > 0 && g(e, t, new Set(o), i)
                     })
                 }, 250);
-            class g extends o.default.Store {
+            class M extends o.default.Store {
                 hasCommand(e) {
                     return null != e && A.has(e)
                 }
@@ -2176,8 +2214,8 @@
                     }, [])
                 }
             }
-            g.displayName = "ApplicationCommandRegistryStore";
-            let O = new g(r.default, {
+            M.displayName = "ApplicationCommandRegistryStore";
+            let O = new M(r.default, {
                 APPLICATION_COMMAND_FETCH: function(e) {
                     let {
                         channelId: t,
@@ -2185,9 +2223,9 @@
                         guildId: i
                     } = e;
                     if (A.has(n)) return;
-                    T.add(n);
-                    let l = null != i && !C.has(i);
-                    M(i, t, T, l)
+                    C.add(n);
+                    let l = null != i && !T.has(i);
+                    g(i, t, C, l)
                 },
                 APPLICATION_COMMANDS_FETCH: function(e) {
                     let {
@@ -2197,10 +2235,10 @@
                     } = e;
                     n.forEach(e => {
                         var n;
-                        (null === (n = E.get(e)) || void 0 === n ? void 0 : n.channelId) !== t && T.add(e)
+                        (null === (n = E.get(e)) || void 0 === n ? void 0 : n.channelId) !== t && C.add(e)
                     });
-                    let l = null != i && !C.has(i);
-                    M(i, t, T, l)
+                    let l = null != i && !T.has(i);
+                    g(i, t, C, l)
                 },
                 APPLICATION_COMMANDS_FETCH_FOR_APPLICATION: function(e) {
                     let {
@@ -2219,7 +2257,7 @@
                     let {
                         guildId: t
                     } = e;
-                    C.delete(t)
+                    T.delete(t)
                 },
                 APPLICATION_COMMAND_REGISTRY_UPDATE: function(e) {
                     let {
@@ -2228,7 +2266,7 @@
                         channelId: i
                     } = e;
                     for (let e of t) I.set(e.id, e);
-                    for (let e of n) T.delete(e.id), A.set(e.id, e), E.set(e.id, {
+                    for (let e of n) C.delete(e.id), A.set(e.id, e), E.set(e.id, {
                         channelId: i,
                         command: e
                     })
@@ -2252,7 +2290,7 @@
                     }))
                 },
                 LOGOUT: function() {
-                    I.clear(), C.clear(), T.clear(), A.reset(), E.reset()
+                    I.clear(), T.clear(), C.clear(), A.reset(), E.reset()
                 }
             });
             var h = O
@@ -2290,19 +2328,19 @@
                 m = n("252063"),
                 _ = n("140596"),
                 I = n("685841"),
-                C = n("872173"),
-                T = n("374363"),
+                T = n("872173"),
+                C = n("374363"),
                 A = n("42203"),
                 E = n("923959"),
                 N = n("305961"),
                 S = n("957255"),
-                M = n("18494"),
-                g = n("599110"),
+                g = n("18494"),
+                M = n("599110"),
                 O = n("589777"),
                 h = n("369010"),
                 v = n("342564"),
-                D = n("524768"),
-                y = n("389153"),
+                y = n("524768"),
+                D = n("389153"),
                 R = n("317041"),
                 P = n("49111");
 
@@ -2329,7 +2367,7 @@
                     var i, s, o;
                     if (null == t.start) return;
                     let r = performance.now() - t.start;
-                    g.default.track(P.AnalyticEvents.APPLICATION_COMMAND_PERFORMANCE, {
+                    M.default.track(P.AnalyticEvents.APPLICATION_COMMAND_PERFORMANCE, {
                         duration_ms: r,
                         aborted: null !== (i = null == n ? void 0 : n.signal.aborted) && void 0 !== i && i,
                         error: e,
@@ -2368,20 +2406,20 @@
             function B(e, t) {
                 if (0 === t.length) return e;
                 let n = [...e],
-                    i = (0, y.buildApplicationCommands)(t).filter(e => {
+                    i = (0, D.buildApplicationCommands)(t).filter(e => {
                         let t = n.findIndex(t => t.id === e.id);
                         return !(t >= 0) || (n[t] = e, !1)
                     });
                 return [...n, ...i]
             }
 
-            function b(e) {
-                let t = e.map(y.getApplicationCommandSection);
+            function F(e) {
+                let t = e.map(D.getApplicationCommandSection);
                 return t.concat(O.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN])
             }
-            let H = (e, t) => ({
+            let b = (e, t) => ({
                     type: t,
-                    inputType: D.ApplicationCommandInputType.PLACEHOLDER,
+                    inputType: y.ApplicationCommandInputType.PLACEHOLDER,
                     id: "placeholder-".concat(e),
                     name: "",
                     displayName: "",
@@ -2389,21 +2427,21 @@
                     displayDescription: "",
                     applicationId: ""
                 }),
-                F = [O.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN]];
+                H = [O.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN]];
             class w extends r.default.Store {
                 initialize() {
-                    this.waitFor(T.default), this.syncWith([S.default], () => {
+                    this.waitFor(C.default), this.syncWith([S.default], () => {
                         this.shouldResetAll = !0
-                    }), this.syncWith([T.default], W)
+                    }), this.syncWith([C.default], Y)
                 }
                 getChannelState(e, t) {
                     var n;
-                    return null === (n = V.channelStates.get(e)) || void 0 === n ? void 0 : n[t]
+                    return null === (n = q.channelStates.get(e)) || void 0 === n ? void 0 : n[t]
                 }
                 getOrInsertChannelState(e, t) {
-                    let n = V.channelStates,
+                    let n = q.channelStates,
                         i = n.has(e);
-                    if (g.default.track(P.AnalyticEvents.APPLICATION_COMMAND_CACHE_FETCH, {
+                    if (M.default.track(P.AnalyticEvents.APPLICATION_COMMAND_CACHE_FETCH, {
                             miss: !i,
                             size: n.length
                         }), !i) {
@@ -2430,7 +2468,7 @@
                 }
                 getApplicationSections(e, t) {
                     var n, i;
-                    return null !== (i = null === (n = this.getChannelState(e, t)) || void 0 === n ? void 0 : n.applicationSections) && void 0 !== i ? i : F
+                    return null !== (i = null === (n = this.getChannelState(e, t)) || void 0 === n ? void 0 : n.applicationSections) && void 0 !== i ? i : H
                 }
                 getQueryCommands(e, t, n) {
                     var i, l, a;
@@ -2452,54 +2490,54 @@
                 var t;
                 let {
                     guildId: n
-                } = e, i = M.default.getChannelId();
-                return null != i && (null === (t = A.default.getChannel(i)) || void 0 === t ? void 0 : t.guild_id) !== n ? x(n) : V.componentIsOpen ? (V.shouldResetGuild = n, !1) : x(n)
+                } = e, i = g.default.getChannelId();
+                return null != i && (null === (t = A.default.getChannel(i)) || void 0 === t ? void 0 : t.guild_id) !== n ? x(n) : q.componentIsOpen ? (q.shouldResetGuild = n, !1) : x(n)
             }
 
             function x(e) {
                 let t = E.default.getChannels(e),
                     n = t[0, E.GUILD_SELECTABLE_CHANNELS_KEY].concat(t[E.GUILD_VOCAL_CHANNELS_KEY]),
-                    i = V.channelStates.length;
-                for (let e of n) V.channelStates.del(e.channel.id);
-                return V.channelStates.length !== i
-            }
-
-            function Y() {
-                let e = V.channelStates.length;
-                return V.channelStates.keys().forEach(e => {
-                    var t;
-                    (null === (t = A.default.getChannel(e)) || void 0 === t ? void 0 : t.isPrivate()) && V.channelStates.del(e)
-                }), V.channelStates.length !== e
+                    i = q.channelStates.length;
+                for (let e of n) q.channelStates.del(e.channel.id);
+                return q.channelStates.length !== i
             }
 
             function W() {
+                let e = q.channelStates.length;
+                return q.channelStates.keys().forEach(e => {
+                    var t;
+                    (null === (t = A.default.getChannel(e)) || void 0 === t ? void 0 : t.isPrivate()) && q.channelStates.del(e)
+                }), q.channelStates.length !== e
+            }
+
+            function Y() {
                 var e, t, n;
-                let i = null !== (n = null === (t = T.default.settings.textAndImages) || void 0 === t ? void 0 : null === (e = t.viewNsfwCommands) || void 0 === e ? void 0 : e.value) && void 0 !== n && n,
-                    l = i !== V.viewNsfwCommands;
+                let i = null !== (n = null === (t = C.default.settings.textAndImages) || void 0 === t ? void 0 : null === (e = t.viewNsfwCommands) || void 0 === e ? void 0 : e.value) && void 0 !== n && n,
+                    l = i !== q.viewNsfwCommands;
                 if (l) {
-                    if (V.viewNsfwCommands = i, !V.componentIsOpen) return Y();
-                    V.shouldResetDMs = !0
+                    if (q.viewNsfwCommands = i, !q.componentIsOpen) return W();
+                    q.shouldResetDMs = !0
                 }
                 return !1
             }
 
             function k(e) {
-                return !!V.channelStates.has(e) && (V.channelStates.del(e), !0)
+                return !!q.channelStates.has(e) && (q.channelStates.del(e), !0)
             }
 
-            function q() {
-                V.shouldResetAll = !1, V.shouldResetGuild = null, V.shouldResetDMs = !1, V.componentIsOpen = !1, V.channelStates.reset()
+            function V() {
+                q.shouldResetAll = !1, q.shouldResetGuild = null, q.shouldResetDMs = !1, q.componentIsOpen = !1, q.channelStates.reset()
             }
             w.displayName = "ApplicationCommandSearchStore";
-            let V = new w(d.default, {
-                LOGOUT: q,
-                CONNECTION_OPEN: q,
+            let q = new w(d.default, {
+                LOGOUT: V,
+                CONNECTION_OPEN: V,
                 APPLICATION_COMMAND_SEARCH_STORE_UPDATE: e => {
                     let {
                         channelId: t,
                         commandType: n,
                         state: i
-                    } = e, l = V.channelStates.get(t);
+                    } = e, l = q.channelStates.get(t);
                     if (null == l) return;
                     let a = l[n],
                         s = {
@@ -2561,12 +2599,12 @@
                     let {
                         isOpen: t
                     } = e;
-                    if (V.componentIsOpen = t, V.shouldResetAll) {
-                        q();
+                    if (q.componentIsOpen = t, q.shouldResetAll) {
+                        V();
                         return
                     }
                     let n = !1;
-                    return null != V.shouldResetGuild && (n = x(V.shouldResetGuild), V.shouldResetGuild = null), V.shouldResetDMs && (n = Y() || n, V.shouldResetDMs = !1), n
+                    return null != q.shouldResetGuild && (n = x(q.shouldResetGuild), q.shouldResetGuild = null), q.shouldResetDMs && (n = W() || n, q.shouldResetDMs = !1), n
                 },
                 PRIVATE_CHANNEL_INTEGRATION_CREATE(e) {
                     let {
@@ -2593,7 +2631,7 @@
                     return k(t)
                 }
             });
-            var K = V;
+            var K = q;
             let j = e => {
                 if (null == e) return;
                 let t = f.default.getViewingRoles(e);
@@ -2624,9 +2662,9 @@
                     scrollDownCursor: c,
                     applicationSections: f,
                     applicationCommands: I,
-                    filteredSectionId: C,
-                    sawFrecencySection: T
-                } = (0, r.useStateFromStores)([V], () => V.getOrInsertChannelState(e.id, t), [e.id, t]), A = i.useCallback(n => {
+                    filteredSectionId: T,
+                    sawFrecencySection: C
+                } = (0, r.useStateFromStores)([q], () => q.getOrInsertChannelState(e.id, t), [e.id, t]), A = i.useCallback(n => {
                     d.default.dispatch({
                         type: "APPLICATION_COMMAND_SEARCH_STORE_UPDATE",
                         channelId: e.id,
@@ -2638,8 +2676,8 @@
                     channelId: e.id
                 });
                 let E = i.useRef(!1),
-                    M = (0, p.default)(),
-                    g = i.useCallback(function(n, i) {
+                    g = (0, p.default)(),
+                    M = i.useCallback(function(n, i) {
                         let l = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                         if (E.current) return;
                         E.current = !0;
@@ -2650,18 +2688,18 @@
                             ...n
                         }, {
                             abortable: l,
-                            signal: M
+                            signal: g
                         }).then(e => {
                             E.current = !1, i(e)
                         })
-                    }, [e.id, e.guild_id, t, M]),
-                    D = i.useMemo(() => ({
+                    }, [e.id, e.guild_id, t, g]),
+                    y = i.useMemo(() => ({
                         channel: e,
                         guild: null != e.guild_id ? N.default.getGuild(e.guild_id) : null
                     }), [e]),
-                    P = (0, h.useTopCommands)(D),
-                    F = (0, h.useTopRealCommands)(D),
-                    w = (0, r.useStateFromStores)([S.default, _.default], () => (0, y.canUseApplicationCommands)(S.default, _.default, null != a && a, e), [a, e]);
+                    P = (0, h.useTopCommands)(y),
+                    H = (0, h.useTopRealCommands)(y),
+                    w = (0, r.useStateFromStores)([S.default, _.default], () => (0, D.canUseApplicationCommands)(S.default, _.default, null != a && a, e), [a, e]);
                 i.useEffect(() => {
                     if (o) return;
                     if (A({
@@ -2669,10 +2707,10 @@
                         }), !w || null != I && I.length > 0) return;
                     let t = e.isPrivate() ? {} : {
                         limit: l,
-                        commandIds: o ? void 0 : F,
+                        commandIds: o ? void 0 : H,
                         cursor: null != u ? u : void 0
                     };
-                    g({
+                    M({
                         ...t,
                         includeApplications: null == f
                     }, e => {
@@ -2685,13 +2723,13 @@
                             };
                         if (null != e.applications) {
                             var i;
-                            n.applicationSections = b(null !== (i = e.applications) && void 0 !== i ? i : [])
+                            n.applicationSections = F(null !== (i = e.applications) && void 0 !== i ? i : [])
                         }
                         A(n)
                     }, !1)
-                }, [I, e, l, w, f, o, u, g, F, A]);
+                }, [I, e, l, w, f, o, u, M, H, A]);
                 let G = i.useCallback(() => {
-                        null != c && g({
+                        null != c && M({
                             limit: l,
                             cursor: c
                         }, e => {
@@ -2702,9 +2740,9 @@
                                 scrollDownCursor: e.nextCursor
                             })
                         })
-                    }, [l, g, c, I, A]),
+                    }, [l, M, c, I, A]),
                     x = i.useCallback(t => {
-                        if (!E.current && t !== C) {
+                        if (!E.current && t !== T) {
                             if (null == t) {
                                 e.isPrivate() ? A({
                                     filteredSectionId: null,
@@ -2715,7 +2753,7 @@
                                     discoveryInitialized: !1
                                 });
                                 return
-                            }!(t in O.BUILT_IN_SECTIONS || e.isPrivate()) && g({
+                            }!(t in O.BUILT_IN_SECTIONS || e.isPrivate()) && M({
                                 applicationId: t
                             }, e => {
                                 null != e && A({
@@ -2726,38 +2764,38 @@
                                 scrollDownCursor: null
                             })
                         }
-                    }, [e, g, A, C]);
+                    }, [e, M, A, T]);
                 z(), i.useEffect(() => () => {
                     var n;
-                    (null === (n = V.channelStates.get(e.id)) || void 0 === n ? void 0 : n[t].filteredSectionId) != null && x(null)
+                    (null === (n = q.channelStates.get(e.id)) || void 0 === n ? void 0 : n[t].filteredSectionId) != null && x(null)
                 }, []);
-                let Y = i.useMemo(() => U(D, t, a), [D, t, a]),
-                    W = i.useMemo(() => {
+                let W = i.useMemo(() => U(y, t, a), [y, t, a]),
+                    Y = i.useMemo(() => {
                         if (!s) return [];
-                        let e = (w && null != I ? I : []).concat(Y);
+                        let e = (w && null != I ? I : []).concat(W);
                         return e.filter(e => P.includes(e.id)).sort((e, t) => {
-                            let n = v.default.getScoreWithoutLoadingLatest(D, e),
-                                i = v.default.getScoreWithoutLoadingLatest(D, t);
+                            let n = v.default.getScoreWithoutLoadingLatest(y, e),
+                                i = v.default.getScoreWithoutLoadingLatest(y, t);
                             return i - n
                         }).slice(0, R.DISCOVERY_COMMANDS_FRECENCY_LIMIT)
-                    }, [s, P, w, I, Y, D]);
+                    }, [s, P, w, I, W, y]);
                 i.useEffect(() => {
-                    !T && W.length > 0 && A({
+                    !C && Y.length > 0 && A({
                         sawFrecencySection: !0
                     })
-                }, [A, W, T]);
+                }, [A, Y, C]);
                 let k = i.useMemo(() => {
                         var e;
                         let t = [];
-                        return (W.length > 0 || T) && (t = t.concat(O.BUILT_IN_SECTIONS[R.BuiltInSectionId.FRECENCY])), w && null != f && (t = t.concat(f)), (null === (e = t[t.length - 1]) || void 0 === e ? void 0 : e.id) !== R.BuiltInSectionId.BUILT_IN && (t = t.concat(O.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN])), t
-                    }, [w, f, W, T]),
-                    q = w && (!o || E.current || null != c),
+                        return (Y.length > 0 || C) && (t = t.concat(O.BUILT_IN_SECTIONS[R.BuiltInSectionId.FRECENCY])), w && null != f && (t = t.concat(f)), (null === (e = t[t.length - 1]) || void 0 === e ? void 0 : e.id) !== R.BuiltInSectionId.BUILT_IN && (t = t.concat(O.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN])), t
+                    }, [w, f, Y, C]),
+                    V = w && (!o || E.current || null != c),
                     K = i.useMemo(() => {
-                        if (!q) return [];
+                        if (!V) return [];
                         let e = [];
-                        for (let i = 0; i < n; i++) e.push(H(i, t));
+                        for (let i = 0; i < n; i++) e.push(b(i, t));
                         return e
-                    }, [q, n, t]),
+                    }, [V, n, t]),
                     {
                         activeSections: X,
                         commandsByActiveSection: Q
@@ -2766,7 +2804,7 @@
                             t = [];
                         return k.forEach(n => {
                             let i;
-                            (null == C || n.id === C) && ((i = n.id === R.BuiltInSectionId.BUILT_IN ? q ? [] : [...Y] : n.id === R.BuiltInSectionId.FRECENCY ? [...W] : (null != I ? I : []).filter(e => e.applicationId === n.id)).length > 0 || n.id === C) && (e.push(n), t.push({
+                            (null == T || n.id === T) && ((i = n.id === R.BuiltInSectionId.BUILT_IN ? V ? [] : [...W] : n.id === R.BuiltInSectionId.FRECENCY ? [...Y] : (null != I ? I : []).filter(e => e.applicationId === n.id)).length > 0 || n.id === T) && (e.push(n), t.push({
                                 section: n,
                                 data: i
                             }))
@@ -2774,17 +2812,17 @@
                             activeSections: e,
                             commandsByActiveSection: t
                         }
-                    }, [k, W, I, Y, K, q, C]),
+                    }, [k, Y, I, W, K, V, T]),
                     Z = i.useMemo(() => {
                         let e = [];
-                        return e = e.concat(W), w && null != I && (e = e.concat(I)), e = e.concat(Y)
-                    }, [w, W, I, Y]);
+                        return e = e.concat(Y), w && null != I && (e = e.concat(I)), e = e.concat(W)
+                    }, [w, Y, I, W]);
                 return {
                     filterSection: x,
                     scrollDown: G,
                     loading: E,
-                    filteredSectionId: C,
-                    hasMoreAfter: q,
+                    filteredSectionId: T,
+                    hasMoreAfter: V,
                     commands: Z,
                     sectionDescriptors: k,
                     activeSections: X,
@@ -2805,30 +2843,30 @@
                         applications: u,
                         applicationId: d = null
                     } = e,
-                    c = V.getOrInsertChannelState(n.channel.id, i);
+                    c = q.getOrInsertChannelState(n.channel.id, i);
                 if (c.queriedApplicationId !== d) c.queries.clear(), c.pendingQueries.clear(), c.queriedApplicationId = d;
                 else if (c.queries.has(l)) return !0;
-                if (null != u && (c.applicationSections = b(u)), s) t = [];
+                if (null != u && (c.applicationSections = F(u)), s) t = [];
                 else {
                     var p;
                     t = n.channel.isPrivate() ? null !== (p = c.applicationCommands) && void 0 !== p ? p : [] : B([], null != o ? o : [])
                 }
                 let f = U(n, i, s),
-                    m = (0, y.canUseApplicationCommands)(S.default, _.default, s, n.channel) && (n.channel.isPrivate() ? null == c.applicationCommands : null == o),
+                    m = (0, D.canUseApplicationCommands)(S.default, _.default, s, n.channel) && (n.channel.isPrivate() ? null == c.applicationCommands : null == o),
                     I = [],
-                    T = !1;
+                    C = !1;
                 if (m)
                     for (let e = l.length - 1; e > 0; e -= 1) {
                         let n = l.slice(0, e),
                             i = c.queries.get(n);
                         if (null != i) {
-                            T = i.done, i.commands.forEach(e => {
+                            C = i.done, i.commands.forEach(e => {
                                 null == t.find(t => t.id === e.id) && null == f.find(t => t.id === e.id) && I.push(e)
                             });
                             break
                         }
                     }
-                T && (m = !1);
+                C && (m = !1);
                 let A = [],
                     E = l.split(" ");
                 if ([...t, ...I, ...f].forEach(e => {
@@ -2839,14 +2877,14 @@
                             ...e,
                             score: i
                         })
-                    }), C.FrecencyUserSettingsActionCreators.loadIfNecessary(), A.sort((e, t) => {
+                    }), T.FrecencyUserSettingsActionCreators.loadIfNecessary(), A.sort((e, t) => {
                         if (e.score !== t.score) return t.score - e.score;
                         let i = v.default.getScoreWithoutLoadingLatest(n, e),
                             l = v.default.getScoreWithoutLoadingLatest(n, t);
                         return i !== l ? l - i : e.displayName.localeCompare(t.displayName)
                     }), m || null != r)
                     for (let e = 0; e < 4; e += 1) A.push({
-                        ...H(e, i),
+                        ...b(e, i),
                         score: 0
                     });
                 return m ? (c.pendingQueries.set(l, {
@@ -2856,9 +2894,9 @@
                     commands: A
                 }), c.queries.delete(l)) : (c.pendingQueries.delete(l), c.queries.set(l, {
                     commands: A,
-                    done: T || null == r,
+                    done: C || null == r,
                     scrollDownCursor: r
-                })), T
+                })), C
             }
             let Z = a(e => {
                     var t;
@@ -2869,8 +2907,8 @@
                         limit: a,
                         applicationId: s
                     } = e;
-                    if (!(0, y.canUseApplicationCommands)(S.default, _.default, !1, n.channel)) return;
-                    let o = V.getOrInsertChannelState(n.channel.id, i);
+                    if (!(0, D.canUseApplicationCommands)(S.default, _.default, !1, n.channel)) return;
+                    let o = q.getOrInsertChannelState(n.channel.id, i);
                     if (n.channel.isPrivate()) {
                         !o.discoveryInitialized && null == o.applicationCommands && L(n.channel.id, {
                             type: i,
@@ -2881,7 +2919,7 @@
                             let l = {
                                 applicationCommands: B([], null !== (t = e.applicationCommands) && void 0 !== t ? t : [])
                             };
-                            null != e.applications && (l.applicationSections = b(e.applications)), d.default.dispatch({
+                            null != e.applications && (l.applicationSections = F(e.applications)), d.default.dispatch({
                                 type: "APPLICATION_COMMAND_SEARCH_STORE_UPDATE",
                                 channelId: n.channel.id,
                                 commandType: i,
@@ -2897,7 +2935,7 @@
                         applicationId: s,
                         includeApplications: !o.discoveryInitialized && null == o.applicationSections
                     }).then(e => {
-                        if (null != e) V.channelStates.has(n.channel.id) && (Q({
+                        if (null != e) q.channelStates.has(n.channel.id) && (Q({
                             context: n,
                             commandType: i,
                             query: l,
@@ -2907,7 +2945,7 @@
                             scrollDownCursor: e.nextCursor,
                             applications: e.applications,
                             applicationId: s
-                        }), V.emitChange())
+                        }), q.emitChange())
                     })
                 }, 250, {
                     leading: !0,
@@ -2922,8 +2960,8 @@
                         query: a,
                         limit: s
                     } = e;
-                    if (!(0, y.canUseApplicationCommands)(S.default, _.default, !1, i.channel) || i.channel.isPrivate()) return;
-                    let o = V.getOrInsertChannelState(i.channel.id, l),
+                    if (!(0, D.canUseApplicationCommands)(S.default, _.default, !1, i.channel) || i.channel.isPrivate()) return;
+                    let o = q.getOrInsertChannelState(i.channel.id, l),
                         r = null === (n = o.queries.get(a)) || void 0 === n ? void 0 : n.scrollDownCursor;
                     null != r && await L(i.channel.id, {
                         type: l,
@@ -2937,8 +2975,8 @@
                         signal: t
                     }).then(e => {
                         var t, n;
-                        if (null == e || !V.channelStates.has(i.channel.id)) return;
-                        let s = null !== (n = null === (t = o.queries.get(a)) || void 0 === t ? void 0 : t.commands.filter(e => e.inputType !== D.ApplicationCommandInputType.PLACEHOLDER)) && void 0 !== n ? n : [],
+                        if (null == e || !q.channelStates.has(i.channel.id)) return;
+                        let s = null !== (n = null === (t = o.queries.get(a)) || void 0 === t ? void 0 : t.commands.filter(e => e.inputType !== y.ApplicationCommandInputType.PLACEHOLDER)) && void 0 !== n ? n : [],
                             r = B([], e.applicationCommands),
                             u = [],
                             d = a.split(" ");
@@ -2951,7 +2989,7 @@
                                 ...e,
                                 score: i
                             })
-                        }), C.FrecencyUserSettingsActionCreators.loadIfNecessary(), u.sort((e, t) => {
+                        }), T.FrecencyUserSettingsActionCreators.loadIfNecessary(), u.sort((e, t) => {
                             if (e.score !== t.score) return t.score - e.score;
                             let n = v.default.getScoreWithoutLoadingLatest(i, e),
                                 l = v.default.getScoreWithoutLoadingLatest(i, t);
@@ -2960,14 +2998,14 @@
                         let c = e.nextCursor;
                         if (null != c)
                             for (let e = 0; e < 4; e += 1) u.push({
-                                ...H(e, l),
+                                ...b(e, l),
                                 score: 0
                             });
                         o.queries.set(a, {
                             commands: e.repaired ? u : [...s, ...u],
                             done: !0,
                             scrollDownCursor: c
-                        }), V.emitChange()
+                        }), q.emitChange()
                     })
                 };
 
@@ -2977,13 +3015,13 @@
                     {
                         commands: s,
                         applicationSections: o
-                    } = (0, r.useStateFromStoresObject)([V], () => {
+                    } = (0, r.useStateFromStoresObject)([q], () => {
                         var i, l, a;
                         let {
                             queries: s,
                             pendingQueries: o,
                             applicationSections: r
-                        } = V.getOrInsertChannelState(e.id, t);
+                        } = q.getOrInsertChannelState(e.id, t);
                         return {
                             applicationSections: r,
                             commands: null !== (a = null === (i = s.get(n)) || void 0 === i ? void 0 : i.commands) && void 0 !== a ? a : null === (l = o.get(n)) || void 0 === l ? void 0 : l.commands
@@ -3016,7 +3054,7 @@
                     }, [t, e, n, a, l]);
                 return {
                     commands: s,
-                    sections: null != o ? o : F,
+                    sections: null != o ? o : H,
                     scrollDown: c
                 }
             }
@@ -3086,7 +3124,7 @@
                     {
                         computedPermissions: N,
                         hasBaseAccessPermissions: S
-                    } = T(e);
+                    } = C(e);
                 return {
                     context: e,
                     userId: p,
@@ -3096,7 +3134,7 @@
                     commandContextType: A(e),
                     computedPermissions: N,
                     hasBaseAccessPermissions: S,
-                    allowNsfw: C(e, m, u)
+                    allowNsfw: T(e, m, u)
                 }
             }
 
@@ -3117,7 +3155,7 @@
                     let {
                         computedPermissions: n,
                         hasBaseAccessPermissions: i
-                    } = T(e);
+                    } = C(e);
                     return {
                         context: e,
                         userId: s,
@@ -3127,16 +3165,16 @@
                         commandContextType: A(e),
                         computedPermissions: n,
                         hasBaseAccessPermissions: i,
-                        allowNsfw: C(e, u, l)
+                        allowNsfw: T(e, u, l)
                     }
                 }, [t, e, m, p, s, u, l])
             }
 
-            function C(e, t, n) {
+            function T(e, t, n) {
                 return !!t && (!(e instanceof u.ChannelRecordBase) || (null != e.guild_id ? e.nsfw : n))
             }
 
-            function T(e) {
+            function C(e) {
                 let t;
                 if (e instanceof u.ChannelRecordBase && e.isPrivate()) return {
                     computedPermissions: l.default.deserialize(0),
@@ -3168,7 +3206,7 @@
                     return _
                 },
                 computeAllowedForChannel: function() {
-                    return T
+                    return C
                 },
                 computeAllowedForUser: function() {
                     return A
@@ -3193,7 +3231,7 @@
                     allowNsfw: c,
                     computedPermissions: _,
                     userId: I,
-                    roleIds: C,
+                    roleIds: T,
                     isImpersonating: E,
                     hasBaseAccessPermissions: N
                 } = t;
@@ -3212,7 +3250,7 @@
                 if (!N) return 5;
                 if (l instanceof u.ChannelRecordBase) {
                     s(void 0 !== i, "missing applicationAllowedForChannel");
-                    let t = T(e.permissions, l.id, S);
+                    let t = C(e.permissions, l.id, S);
                     if (function(e) {
                             return !1 === e
                         }(t) || ! function(e) {
@@ -3221,12 +3259,12 @@
                             return !1 === e
                         }(i)) return 6
                 }
-                let M = A(e.permissions, S, I, C, E);
+                let g = A(e.permissions, S, I, T, E);
                 return function(e) {
                     return !0 === e
-                }(M) ? 0 : function(e) {
+                }(g) ? 0 : function(e) {
                     return !1 === e
-                }(M) ? 7 : function(e) {
+                }(g) ? 7 : function(e) {
                     return !1 === e
                 }(n) || null != e.defaultMemberPermissions && !(!o.default.equals(e.defaultMemberPermissions, p.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && o.default.has(_, e.defaultMemberPermissions)) ? 7 : 0
             }
@@ -3235,11 +3273,11 @@
                 return !0 === e
             }
 
-            function C(e) {
+            function T(e) {
                 return !1 === e
             }
 
-            function T(e, t, n) {
+            function C(e, t, n) {
                 if (null == e) return null;
                 let i = e[(0, r.toPermissionKey)(t, c.ApplicationCommandPermissionType.CHANNEL)];
                 if (null != i) return i.permission;
@@ -3289,7 +3327,7 @@
                 _ = n("49111"),
                 I = n("782340");
 
-            function C(e) {
+            function T(e) {
                 switch (e) {
                     case _.ChannelTextAreaIntegrations.GIF.title:
                     case _.ChannelTextAreaIntegrations.TENOR.title:
@@ -3298,7 +3336,7 @@
                         return ""
                 }
             }
-            let T = [...a(_.ChannelTextAreaIntegrations).values().map(e => ({
+            let C = [...a(_.ChannelTextAreaIntegrations).values().map(e => ({
                 id: e.commandId,
                 name: e.command,
                 displayName: e.command,
@@ -3306,10 +3344,10 @@
                 inputType: f.ApplicationCommandInputType.BUILT_IN_INTEGRATION,
                 applicationId: m.BuiltInSectionId.BUILT_IN,
                 get description() {
-                    return C(e.title)
+                    return T(e.title)
                 },
                 get displayDescription() {
-                    return C(e.title)
+                    return T(e.title)
                 },
                 options: e.type === _.ChannelTextAreaIntegrationTypes.GIF ? [{
                     name: "query",
@@ -3365,7 +3403,7 @@
                     }), m = I.default.Messages.LEAVE_GROUP_DM_BODY.format({
                         name: u
                     }), _ = null !== (l = null === (n = e.find(e => "silent" === e.name)) || void 0 === n ? void 0 : n.value) && void 0 !== l && l;
-                    async function C() {
+                    async function T() {
                         try {
                             await o.default.closePrivateChannel(a.id, void 0, _)
                         } catch (e) {
@@ -3380,7 +3418,7 @@
                         header: f,
                         confirmText: I.default.Messages.LEAVE_GROUP_DM,
                         cancelText: I.default.Messages.CANCEL,
-                        onConfirm: C,
+                        onConfirm: T,
                         ...e,
                         children: (0, i.jsx)(s.Text, {
                             variant: "text-md/normal",
@@ -3389,14 +3427,108 @@
                     }))
                 }
             }];
-            var A = T
+            var A = C
+        },
+        605393: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                FREQUENCY_ITEM_LIMIT: function() {
+                    return c
+                },
+                default: function() {
+                    return T
+                }
+            }), n("424973");
+            var i = n("917351"),
+                l = n.n(i),
+                a = n("446674"),
+                s = n("913144"),
+                o = n("798609"),
+                r = n("80507"),
+                u = n("374363"),
+                d = n("397336");
+            let c = 250,
+                p = {
+                    pendingUsages: []
+                },
+                f = new r.default({
+                    computeBonus: () => 100,
+                    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 0,
+                    lookupKey: e => e,
+                    afterCompute: () => {},
+                    numFrequentlyItems: c
+                });
+
+            function m(e) {
+                p.pendingUsages.push({
+                    key: e,
+                    timestamp: Date.now()
+                }), f.track(e), f.compute()
+            }
+
+            function _() {
+                var e, t;
+                let n = u.default.frecencyWithoutFetchingLatest,
+                    i = null !== (t = null === (e = n.applicationFrecency) || void 0 === e ? void 0 : e.applications) && void 0 !== t ? t : {};
+                f.overwriteHistory(l.mapValues(i, e => ({
+                    ...e,
+                    recentUses: e.recentUses.map(Number).filter(e => e > 0)
+                })), p.pendingUsages)
+            }
+            class I extends a.default.PersistedStore {
+                initialize(e) {
+                    null != e && (p = e), this.syncWith([u.default], _)
+                }
+                getState() {
+                    return p
+                }
+                hasPendingUsage() {
+                    return p.pendingUsages.length > 0
+                }
+                getApplicationFrecencyWithoutLoadingLatest() {
+                    return f
+                }
+                getScoreWithoutLoadingLatest(e) {
+                    var t;
+                    return null !== (t = f.getScore(e)) && void 0 !== t ? t : 0
+                }
+                getTopApplicationsWithoutLoadingLatest() {
+                    return f.frequently
+                }
+            }
+            I.displayName = "ApplicationFrecencyStore", I.persistKey = "ApplicationFrecency";
+            var T = new I(s.default, {
+                APPLICATION_COMMAND_USED: function(e) {
+                    let {
+                        command: t
+                    } = e;
+                    if (t.type !== o.ApplicationCommandType.CHAT) return !1;
+                    m(t.applicationId)
+                },
+                EMBEDDED_ACTIVITY_OPEN: function(e) {
+                    let {
+                        embeddedActivity: t
+                    } = e;
+                    m(t.application_id)
+                },
+                USER_SETTINGS_PROTO_UPDATE: function(e) {
+                    let {
+                        settings: {
+                            type: t
+                        },
+                        wasSaved: n
+                    } = e;
+                    if (t !== d.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
+                    p.pendingUsages = []
+                }
+            })
         },
         670902: function(e, t, n) {
             "use strict";
             let i;
             n.r(t), n.d(t, {
                 computeThreadIdsSnapshot: function() {
-                    return b
+                    return F
                 },
                 default: function() {
                     return w
@@ -3415,19 +3547,19 @@
                 m = n("660478"),
                 _ = n("18494"),
                 I = n("449008"),
-                C = n("786742");
-            let T = [],
+                T = n("786742");
+            let C = [],
                 A = null,
                 E = null,
                 N = new Set,
                 S = s.ThreadSortOrder.LATEST_ACTIVITY,
-                M = 0,
-                g = [],
+                g = 0,
+                M = [],
                 O = !1,
                 h = [],
-                v = a.chain(T),
-                D = a.chain(T),
-                y = new Set,
+                v = a.chain(C),
+                y = a.chain(C),
+                D = new Set,
                 R = new Set;
 
             function P(e) {
@@ -3437,27 +3569,27 @@
 
             function L(e) {
                 return function(t, n) {
-                    if ((0, C.isForumPostPinned)(t)) return -1;
-                    if ((0, C.isForumPostPinned)(n)) return 1;
+                    if ((0, T.isForumPostPinned)(t)) return -1;
+                    if ((0, T.isForumPostPinned)(n)) return 1;
                     if (e === s.ThreadSortOrder.LATEST_ACTIVITY) return o.default.compare(P(n), P(t));
                     else return o.default.compare(n, t)
                 }
             }
 
             function U() {
-                g = [], i = null, E = null, N = new Set, S = s.ThreadSortOrder.LATEST_ACTIVITY, M = 0, h = [], v = a.chain(T), D = a.chain(T), R.clear(), y.clear()
+                M = [], i = null, E = null, N = new Set, S = s.ThreadSortOrder.LATEST_ACTIVITY, g = 0, h = [], v = a.chain(C), y = a.chain(C), R.clear(), D.clear()
             }
 
             function B() {
                 var e;
                 let t = _.default.getChannelId();
                 if (null == t || !(null === (e = f.default.getChannel(t)) || void 0 === e ? void 0 : e.isForumLikeChannel())) return U(), !1;
-                H({
+                b({
                     refreshThreadIds: !0
                 })
             }
 
-            function b(e) {
+            function F(e) {
                 let t = f.default.getChannel(e);
                 return null == t ? [] : Object.values(d.default.getThreadsForParent(t.guild_id, t.id)).map(e => {
                     let {
@@ -3467,7 +3599,7 @@
                 }).sort(L(S))
             }
 
-            function H(e) {
+            function b(e) {
                 var t;
                 let n = f.default.getChannel(E);
                 if (null == n) return;
@@ -3476,26 +3608,26 @@
                         id: t
                     } = e;
                     return t
-                }), M = 0, O = !0), 0 !== y.size && (h = h.filter(e => !y.has(e)), y.clear()), 0 !== R.size && (h = Array.from(new Set([...h, ...R])), R.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (D = a.chain(h).sort(L(s.ThreadSortOrder.LATEST_ACTIVITY)), v = a.chain(h).sort(L(s.ThreadSortOrder.CREATION_DATE)));
-                let l = S === s.ThreadSortOrder.LATEST_ACTIVITY ? D : v,
+                }), g = 0, O = !0), 0 !== D.size && (h = h.filter(e => !D.has(e)), D.clear()), 0 !== R.size && (h = Array.from(new Set([...h, ...R])), R.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (y = a.chain(h).sort(L(s.ThreadSortOrder.LATEST_ACTIVITY)), v = a.chain(h).sort(L(s.ThreadSortOrder.CREATION_DATE)));
+                let l = S === s.ThreadSortOrder.LATEST_ACTIVITY ? y : v,
                     o = l.value();
-                g = 0 === N.size ? o : o.filter((t = N, function(e) {
+                M = 0 === N.size ? o : o.filter((t = N, function(e) {
                     var n;
                     let i = null === (n = f.default.getChannel(e)) || void 0 === n ? void 0 : n.appliedTags;
                     return null != i && 0 !== i.length && i.some(e => t.has(e))
                 }));
-                let r = g.find(e => (function(e) {
+                let r = M.find(e => (function(e) {
                     let t = c.default.getCount(e);
                     return null === t || 0 === t
                 })(e));
                 i = null == r ? null : r
             }
-            class F extends r.default.Store {
+            class H extends r.default.Store {
                 initialize() {
                     this.waitFor(f.default, d.default, _.default, m.default)
                 }
                 getNewThreadCount() {
-                    return M
+                    return g
                 }
                 getCanAckThreads() {
                     return O
@@ -3504,14 +3636,14 @@
                     let i = e !== E,
                         l = !(0, I.areSetsEqual)(n, N),
                         a = t !== S;
-                    return E = e, N = n, S = t, i ? H({
+                    return E = e, N = n, S = t, i ? b({
                         refreshThreadIds: !0
-                    }) : a ? H({
+                    }) : a ? b({
                         sortThreadIds: !0
-                    }) : l && H(), g
+                    }) : l && b(), M
                 }
                 getCurrentThreadIds() {
-                    return g
+                    return M
                 }
                 getAndDeleteMostRecentUserCreatedThreadId() {
                     let e = A;
@@ -3521,8 +3653,8 @@
                     return i
                 }
             }
-            F.displayName = "ForumActivePostStore";
-            var w = new F(u.default, {
+            H.displayName = "ForumActivePostStore";
+            var w = new H(u.default, {
                 CONNECTION_OPEN: B,
                 OVERLAY_INITIALIZE: B,
                 GUILD_CREATE: B,
@@ -3540,7 +3672,7 @@
                         guildId: n
                     } = e;
                     if (null == E || n !== (null === (t = f.default.getChannel(E)) || void 0 === t ? void 0 : t.guild_id)) return !1;
-                    H({
+                    b({
                         refreshThreadIds: !0
                     })
                 },
@@ -3550,21 +3682,21 @@
                         isNewlyCreated: n
                     } = e;
                     if (null == t.parent_id || t.parent_id !== E || !n) return !1;
-                    t.ownerId !== p.default.getId() ? M++ : A = t.id
+                    t.ownerId !== p.default.getId() ? g++ : A = t.id
                 },
                 THREAD_UPDATE: function(e) {
                     let {
                         channel: t
                     } = e;
                     if (null == t.parent_id || t.parent_id !== E) return !1;
-                    let n = (0, C.isForumPostPinned)(t.id),
+                    let n = (0, T.isForumPostPinned)(t.id),
                         i = R.has(t.id);
-                    if (n && !i) R.add(t.id), H({
+                    if (n && !i) R.add(t.id), b({
                         sortThreadIds: !0
                     });
                     else {
                         if (n || !i) return !1;
-                        R.delete(t.id), H({
+                        R.delete(t.id), b({
                             sortThreadIds: !0
                         })
                     }
@@ -3574,7 +3706,7 @@
                         channel: t
                     } = e;
                     if (null == t.parent_id || t.parent_id !== E) return !1;
-                    y.add(t.id), H({
+                    D.add(t.id), b({
                         sortThreadIds: !0
                     })
                 },
@@ -3583,7 +3715,7 @@
                         channelId: t
                     } = e;
                     if (null == t || t !== E) return !1;
-                    H({
+                    b({
                         refreshThreadIds: !0
                     })
                 },
@@ -3822,10 +3954,10 @@
                     return v
                 },
                 getIsPrivate: function() {
-                    return D
+                    return y
                 },
                 getDefaultThreadName: function() {
-                    return y
+                    return D
                 },
                 useCreateThreadCommon: function() {
                     return R
@@ -3849,14 +3981,14 @@
                 m = n("884351"),
                 _ = n("804888"),
                 I = n("42203"),
-                C = n("474643"),
-                T = n("377253"),
+                T = n("474643"),
+                C = n("377253"),
                 A = n("401848"),
                 E = n("568734"),
                 N = n("252862"),
                 S = n("300322"),
-                M = n("24337"),
-                g = n("648564"),
+                g = n("24337"),
+                M = n("648564"),
                 O = n("49111"),
                 h = n("782340");
 
@@ -3866,20 +3998,20 @@
                 return n ? t ? 2 : 3 : 1
             }
 
-            function D(e, t) {
+            function y(e, t) {
                 var n;
                 if (3 === t) return !0;
                 return null !== (n = e.isPrivate) && void 0 !== n && n
             }
 
-            function y(e, t) {
+            function D(e, t) {
                 var n, i, l, a;
-                let s = null == t ? null : T.default.getMessage(e.id, t),
+                let s = null == t ? null : C.default.getMessage(e.id, t),
                     o = null !== (l = null == s ? void 0 : null === (i = s.embeds) || void 0 === i ? void 0 : null === (n = i[0]) || void 0 === n ? void 0 : n.rawTitle) && void 0 !== l ? l : "";
                 if ("" !== o) return o.length > 40 ? o.substring(0, 40) + "..." : o;
                 {
                     let t = m.default.unparse(null !== (a = null == s ? void 0 : s.content) && void 0 !== a ? a : "", e.id, !0),
-                        n = (0, M.default)(t.split("\n")[0], !0),
+                        n = (0, g.default)(t.split("\n")[0], !0),
                         i = [];
                     for (;;) {
                         let e = n.match(/(?:\s|[!@#$%^&*()_\-+={}[\]:";'<>?,./])+/);
@@ -3911,16 +4043,16 @@
                     uploadHandler: f
                 } = e;
                 return a.useCallback(async (e, a, _) => {
-                    var T;
+                    var C;
                     let A = null == n,
-                        E = D(i, l),
-                        S = null !== (T = i.name) && void 0 !== T ? T : "";
+                        E = y(i, l),
+                        S = null !== (C = i.name) && void 0 !== C ? C : "";
                     if ("" === S && p) {
-                        let e = y(t, n);
+                        let e = D(t, n);
                         S = "" !== e ? e : h.default.Messages.THREAD
                     }
-                    let M = (0, N.getAutoArchiveDuration)(t),
-                        g = I.default.getChannel(n),
+                    let g = (0, N.getAutoArchiveDuration)(t),
+                        M = I.default.getChannel(n),
                         v = await U(t, () => {
                             let e = null != n ? O.Endpoints.CHANNEL_MESSAGE_THREADS(t.id, n) : O.Endpoints.CHANNEL_THREADS(t.id);
                             return s.default.post({
@@ -3928,16 +4060,16 @@
                                 body: {
                                     name: S,
                                     type: E ? O.ChannelTypes.PRIVATE_THREAD : t.type === O.ChannelTypes.GUILD_ANNOUNCEMENT ? O.ChannelTypes.ANNOUNCEMENT_THREAD : O.ChannelTypes.PUBLIC_THREAD,
-                                    auto_archive_duration: M,
+                                    auto_archive_duration: g,
                                     location: o
                                 }
                             })
                         });
-                    v !== g && (u.default.clearDraft(t.id, C.DraftType.ThreadSettings), u.default.clearDraft(t.id, C.DraftType.FirstThreadMessage), null == r || r(v), (A || e.length > 0 || null != a && a.length > 0 || null != _ && _.length > 0) && function(e, t, n, i, l) {
+                    v !== M && (u.default.clearDraft(t.id, T.DraftType.ThreadSettings), u.default.clearDraft(t.id, T.DraftType.FirstThreadMessage), null == r || r(v), (A || e.length > 0 || null != a && a.length > 0 || null != _ && _.length > 0) && function(e, t, n, i, l) {
                         if (null != l && null != i && i.length > 0) l(e, i, t, n);
                         else if (null != n && n.length > 0) d.default.sendStickers(e.id, n, t);
                         else d.default.sendMessage(e.id, m.default.parse(e, t))
-                    }(v, e, a, _, f)), c.default.clearAll(t.id, C.DraftType.FirstThreadMessage)
+                    }(v, e, a, _, f)), c.default.clearAll(t.id, T.DraftType.FirstThreadMessage)
                 }, [t, n, i, r, l, o, p, f])
             }
 
@@ -3966,7 +4098,7 @@
                         [p, m] = (0, _.default)(e);
                     p && (e = m, d = (0, E.addFlag)(d, O.MessageFlags.SUPPRESS_NOTIFICATIONS));
                     let I = (0, N.getAutoArchiveDuration)(t, null),
-                        T = O.Endpoints.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
+                        C = O.Endpoints.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
                         A = {
                             name: n,
                             auto_archive_duration: I,
@@ -3977,11 +4109,11 @@
                                 flags: 0 !== d ? d : void 0
                             }
                         },
-                        S = await U(t, () => null != r && r.length > 0 ? o(T, A, r) : s.default.post({
-                            url: T,
+                        S = await U(t, () => null != r && r.length > 0 ? o(C, A, r) : s.default.post({
+                            url: C,
                             body: A
                         }));
-                    return u.default.clearDraft(t.id, C.DraftType.ThreadSettings), u.default.clearDraft(t.id, C.DraftType.FirstThreadMessage), c.default.clearAll(t.id, C.DraftType.FirstThreadMessage), (0, f.trackForumPostCreated)({
+                    return u.default.clearDraft(t.id, T.DraftType.ThreadSettings), u.default.clearDraft(t.id, T.DraftType.FirstThreadMessage), c.default.clearAll(t.id, T.DraftType.FirstThreadMessage), (0, f.trackForumPostCreated)({
                         guildId: t.guild_id,
                         channelId: t.id,
                         postId: S.id
@@ -4025,9 +4157,9 @@
                         title: i ? h.default.Messages.CANNOT_CREATE_FORUM_POST : h.default.Messages.CANNOT_CREATE_THREAD,
                         body: h.default.Messages.RATE_LIMITED
                     });
-                    else if (g.FORUM_POST_CREATION_AUTOMOD_ERRORS.has(null === (u = t.body) || void 0 === u ? void 0 : u.code)) throw t;
+                    else if (M.FORUM_POST_CREATION_AUTOMOD_ERRORS.has(null === (u = t.body) || void 0 === u ? void 0 : u.code)) throw t;
                     else {
-                        if (g.FORUM_POST_CREATION_UPLOAD_ERRORS.has(null === (d = t.body) || void 0 === d ? void 0 : d.code)) return new Promise((e, n) => {
+                        if (M.FORUM_POST_CREATION_UPLOAD_ERRORS.has(null === (d = t.body) || void 0 === d ? void 0 : d.code)) return new Promise((e, n) => {
                             null == t.body && n(), p.default.addConditionalChangeListener(() => {
                                 let t = p.default.getAndDeleteMostRecentUserCreatedThreadId();
                                 if (null != t) {
@@ -4068,4 +4200,4 @@
         }
     }
 ]);
-//# sourceMappingURL=058fecdc6256ae1e97d9.js.map
+//# sourceMappingURL=4ed5ae3ab68c9e945826.js.map

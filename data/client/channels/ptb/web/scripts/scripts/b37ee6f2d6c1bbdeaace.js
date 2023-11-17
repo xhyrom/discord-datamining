@@ -489,6 +489,7 @@
                 APP_LAUNCHER_ALL_COMMANDS_HEADER: "All Commands",
                 APP_LAUNCHER_NO_REQUIRED_OPTIONS_CALLOUT: "Nothing required. You can send the command or add an option below",
                 APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER: "Select an option below",
+                APP_LAUNCHER_SEARCH_PLACEHOLDER: "Search Apps & Commands",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -18177,7 +18178,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246790", ", Version Hash: ").concat("ab4546004021fce89c41138d40c933e118fcac65")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246800", ", Version Hash: ").concat("723124a4eaf71ef4b470b45539a362d75cb0b5fb")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19799,100 +19800,6 @@
                 }
             }), (n = t || (t = {}))[n.GAME = 1] = "GAME", n[n.TICKETED_EVENTS = 3] = "TICKETED_EVENTS", n[n.GUILD_ROLE_SUBSCRIPTIONS = 4] = "GUILD_ROLE_SUBSCRIPTIONS", (r = o || (o = {}))[r.BOT = 0] = "BOT", r[r.SERVER = 1] = "SERVER", r[r.SYSTEM_DM = 2] = "SYSTEM_DM", r[r.OFFICIAL = 3] = "OFFICIAL", r[r.STAFF_ONLY_DM = 4] = "STAFF_ONLY_DM", r[r.ORIGINAL_POSTER = 5] = "ORIGINAL_POSTER", r[r.AI = 6] = "AI", r[r.REMIX = 7] = "REMIX"
         },
-        605393: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                FREQUENCY_ITEM_LIMIT: function() {
-                    return T
-                },
-                default: function() {
-                    return l
-                }
-            }), E("424973");
-            var t = E("917351"),
-                o = E.n(t),
-                n = E("446674"),
-                r = E("913144"),
-                a = E("798609"),
-                i = E("80507"),
-                I = E("374363"),
-                s = E("397336");
-            let T = 250,
-                S = {
-                    pendingUsages: []
-                },
-                N = new i.default({
-                    computeBonus: () => 100,
-                    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 0,
-                    lookupKey: e => e,
-                    afterCompute: () => {},
-                    numFrequentlyItems: T
-                });
-
-            function O(e) {
-                S.pendingUsages.push({
-                    key: e,
-                    timestamp: Date.now()
-                }), N.track(e), N.compute()
-            }
-
-            function A() {
-                var e, _;
-                let E = I.default.frecencyWithoutFetchingLatest,
-                    t = null !== (_ = null === (e = E.applicationFrecency) || void 0 === e ? void 0 : e.applications) && void 0 !== _ ? _ : {};
-                N.overwriteHistory(o.mapValues(t, e => ({
-                    ...e,
-                    recentUses: e.recentUses.map(Number).filter(e => e > 0)
-                })), S.pendingUsages)
-            }
-            class R extends n.default.PersistedStore {
-                initialize(e) {
-                    null != e && (S = e), this.syncWith([I.default], A)
-                }
-                getState() {
-                    return S
-                }
-                hasPendingUsage() {
-                    return S.pendingUsages.length > 0
-                }
-                getApplicationFrecencyWithoutLoadingLatest() {
-                    return N
-                }
-                getScoreWithoutLoadingLatest(e) {
-                    var _;
-                    return null !== (_ = N.getScore(e)) && void 0 !== _ ? _ : 0
-                }
-                getTopApplicationsWithoutLoadingLatest() {
-                    return N.frequently
-                }
-            }
-            R.displayName = "ApplicationFrecencyStore", R.persistKey = "ApplicationFrecency";
-            var l = new R(r.default, {
-                APPLICATION_COMMAND_USED: function(e) {
-                    let {
-                        command: _
-                    } = e;
-                    if (_.type !== a.ApplicationCommandType.CHAT) return !1;
-                    O(_.applicationId)
-                },
-                EMBEDDED_ACTIVITY_OPEN: function(e) {
-                    let {
-                        embeddedActivity: _
-                    } = e;
-                    O(_.application_id)
-                },
-                USER_SETTINGS_PROTO_UPDATE: function(e) {
-                    let {
-                        settings: {
-                            type: _
-                        },
-                        wasSaved: E
-                    } = e;
-                    if (_ !== s.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS || !E) return !1;
-                    S.pendingUsages = []
-                }
-            })
-        },
         56676: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -20553,8 +20460,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "246790", "246790"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246790")), _ = 0), _
+                let _ = parseInt((e = "246800", "246800"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246800")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36392,4 +36299,4 @@
         }
     }
 ]);
-//# sourceMappingURL=be63e4780108b08092af.js.map
+//# sourceMappingURL=b37ee6f2d6c1bbdeaace.js.map

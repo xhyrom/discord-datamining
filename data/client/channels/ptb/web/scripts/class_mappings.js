@@ -4994,6 +4994,7 @@
                 archive: "archive__2249d",
                 attachmentItemSmall: "attachmentItemSmall__2cb8c",
                 audio: "audio__4fc0c",
+                clickableMedia: "clickableMedia__12a0b",
                 code: "code_d3dfc7",
                 document: "document__49623",
                 filename: "filename__7ce23",
