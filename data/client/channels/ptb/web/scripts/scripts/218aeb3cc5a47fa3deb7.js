@@ -139,7 +139,7 @@
                         } = (0, l.useInventoryGuildPacksUserExperiment)({
                             autoTrackExposure: !1
                         }),
-                        h = (0, r.useStateFromStores)([a.default], () => a.default.getDisambiguatedEmojiContext(i)),
+                        h = (0, r.useStateFromStores)([a.default], () => a.default.getDisambiguatedEmojiContext(i), [i]),
                         M = (0, r.useStateFromStores)([c.default], () => {
                             var e;
                             return null === (e = c.default.getGuild(i)) || void 0 === e ? void 0 : e.name
@@ -716,4 +716,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e351b88b824dbec88711.js.map
+//# sourceMappingURL=218aeb3cc5a47fa3deb7.js.map
