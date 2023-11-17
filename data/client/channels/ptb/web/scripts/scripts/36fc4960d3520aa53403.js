@@ -100,7 +100,7 @@
                     return w
                 },
                 default: function() {
-                    return V
+                    return H
                 }
             }), l("222007"), l("70102");
             var n = l("37983"),
@@ -434,7 +434,7 @@
             }
             let Y = (0, T.default)(B);
 
-            function V(e) {
+            function H(e) {
                 return (0, f.useStateFromStores)([v.default], () => {
                     var t;
                     return v.default.getGuildVersion(null === (t = e.guild) || void 0 === t ? void 0 : t.id)
@@ -1572,15 +1572,15 @@
                             isEmbedded: B = !1
                         } = e,
                         Y = (0, g.default)(),
-                        V = (0, u.useStateFromStores)([E.default], () => {
+                        H = (0, u.useStateFromStores)([E.default], () => {
                             let e = E.default.getCurrentUser();
                             return r(null != e, "UserActivityActions: currentUser cannot be undefined"), e
                         }),
-                        H = G === _.Types.PROFILE || G === _.Types.PROFILE_V2,
+                        V = G === _.Types.PROFILE || G === _.Types.PROFILE_V2,
                         W = G === _.Types.STREAM_PREVIEW || null != i,
                         K = (0, S.default)(l),
                         z = (0, m.isStageActivity)(l),
-                        Z = H ? T.default.Align.END : T.default.Align.STRETCH,
+                        Z = V ? T.default.Align.END : T.default.Align.STRETCH,
                         X = K || W ? T.default.Direction.HORIZONTAL : T.default.Direction.VERTICAL,
                         J = (null == l ? void 0 : l.type) === P.ActivityTypes.HANG_STATUS,
                         Q = (0, u.useStateFromStores)([h.default, p.default], () => {
@@ -1624,11 +1624,11 @@
                             channelId: e.channelId,
                             color: F,
                             look: w,
-                            isProfile: H
+                            isProfile: V
                         }, e.channelId)])
                     } else if (W) {
                         let e = (0, n.jsx)(L.default, {
-                            isCurrentUser: V.id === a.id,
+                            isCurrentUser: H.id === a.id,
                             color: F,
                             look: w,
                             applicationStream: i
@@ -1651,7 +1651,7 @@
                                 activity: l,
                                 currentEmbeddedApplication: Y,
                                 user: a,
-                                isCurrentUser: V.id === a.id,
+                                isCurrentUser: H.id === a.id,
                                 color: F,
                                 look: w,
                                 channelId: j,
@@ -1851,14 +1851,14 @@
                     color: k,
                     look: B,
                     hover: Y,
-                    user: V,
-                    channelId: H,
+                    user: H,
+                    channelId: V,
                     isEmbedded: W = !1
                 } = e, {
                     analyticsLocations: K
                 } = (0, c.default)(), [z, Z] = a.useState(!1), X = (0, L.default)({
-                    channelId: H,
-                    userId: V.id,
+                    channelId: V,
+                    userId: H.id,
                     activity: t
                 }), J = (0, s.useStateFromStores)([A.default], () => A.default.getCurrentUser()), Q = (0, s.useStateFromStores)([_.default, m.default, N.default, E.default], () => W || (null == t ? void 0 : t.application_id) != null && (0, y.isLaunchable)({
                     LibraryApplicationStore: _.default,
@@ -1873,7 +1873,7 @@
                     } = e;
                     return l === (null == t ? void 0 : t.application_id) && n === X
                 })), $ = (0, s.useStateFromStores)([C.default], () => null != t && null != t.application_id && C.default.getState(t.application_id, F.ActivityActionTypes.JOIN) === F.ActivityActionStates.LOADING), [ee] = (0, f.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), et = (0, s.useStateFromStores)([p.default, T.default, h.default, I.default, g.default, v.default, S.default], () => (0, R.default)({
-                    user: V,
+                    user: H,
                     activity: t,
                     application: ee,
                     channelId: X,
@@ -1925,10 +1925,10 @@
                         })
                     }
                     if (!e) {
-                        et && er(V, t), Z(!0);
+                        et && er(H, t), Z(!0);
                         let e = await r.default.sendActivityInviteUser({
                             type: F.ActivityActionTypes.JOIN_REQUEST,
-                            userId: V.id,
+                            userId: H.id,
                             activity: t,
                             location: F.AnalyticsLocations.PROFILE_POPOUT
                         });
@@ -4873,8 +4873,8 @@
                     closePopout: k,
                     setPopoutRef: B,
                     disableUserProfileLink: Y = __OVERLAY__,
-                    analyticsParams: V = {}
-                } = e, H = a.useRef(null), W = (0, O.default)(l.id, s), K = (0, d.default)(H), z = (0, r.useStateFromStores)([M.default], () => {
+                    analyticsParams: H = {}
+                } = e, V = a.useRef(null), W = (0, O.default)(l.id, s), K = (0, d.default)(V), z = (0, r.useStateFromStores)([M.default], () => {
                     var e;
                     return null === (e = M.default.getUserProfile(l.id)) || void 0 === e ? void 0 : e.application
                 }), {
@@ -4914,8 +4914,8 @@
                 (0, c.default)(() => eu(!0), er.shouldShow ? 250 : null);
                 let [ed] = (0, _.default)([null !== (t = null == q ? void 0 : q.application_id) && void 0 !== t ? t : ""]);
                 return a.useEffect(() => {
-                    null == B || B(null == H ? void 0 : H.current)
-                }, [H, B]), a.useEffect(() => {
+                    null == B || B(null == V ? void 0 : V.current)
+                }, [V, B]), a.useEffect(() => {
                     if (!en)((null == q ? void 0 : q.application_id) == null || null != ed) && (null == s || (null == J ? void 0 : J.fullProfileLoadedTimestamp) != null) && (function() {
                         var e;
                         let t, n, a;
@@ -4956,14 +4956,14 @@
                             profile_has_theme_animation: (null == W ? void 0 : W.popoutAnimationParticleType) != null,
                             ...o,
                             ...u,
-                            ...V
+                            ...H
                         })
                     }(), ea(!0))
                 }, [J, null == q ? void 0 : q.application_id, ed, en, s]), (0, n.jsx)(Z, {
                     children: (0, n.jsx)(u.default, {
                         section: U.AnalyticsSections.PROFILE_POPOUT,
                         children: (0, n.jsx)(o.Dialog, {
-                            ref: H,
+                            ref: V,
                             "aria-label": l.username,
                             onClick: G,
                             onContextMenu: G,
@@ -5072,8 +5072,8 @@
                 k = l("577172"),
                 B = l("465215"),
                 Y = l("301998"),
-                V = l("379657"),
-                H = l("853780"),
+                H = l("379657"),
+                V = l("853780"),
                 W = l("574191"),
                 K = l("491250"),
                 z = l("49111"),
@@ -5230,7 +5230,7 @@
                                     guild: et,
                                     channelId: en,
                                     onClose: ea
-                                }), (null == ed ? void 0 : ed.popularApplicationCommandIds) != null && null != eE ? (0, n.jsx)(V.default, {
+                                }), (null == ed ? void 0 : ed.popularApplicationCommandIds) != null && null != eE ? (0, n.jsx)(H.default, {
                                     applicationId: ed.id,
                                     commandIds: ed.popularApplicationCommandIds,
                                     channel: eE,
@@ -5250,7 +5250,7 @@
                                     guild: et,
                                     onClose: ea,
                                     theme: eT
-                                }), null != ed && void 0 !== en && (0, n.jsx)(H.default, {
+                                }), null != ed && void 0 !== en && (0, n.jsx)(V.default, {
                                     channelId: en,
                                     applicationId: ed.id
                                 }), (0, n.jsx)(Y.default, {
@@ -6098,7 +6098,7 @@
                     g = S && null != T && null == T.profileEffectID && (null == _ ? void 0 : _.profileEffectID) != null,
                     [A, v] = (0, f.useDismissibleContentGroup)(I || g ? [r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL] : [], void 0, !0);
                 return {
-                    shouldShow: null != A,
+                    shouldShow: A === r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL,
                     canShowAvatarDecorationUpsell: I,
                     canShowProfileEffectUpsell: g,
                     onDismiss: v
@@ -6763,7 +6763,7 @@
                     }
                 });
 
-            function V(e) {
+            function H(e) {
                 let t, {
                         activity: l
                     } = e,
@@ -6776,7 +6776,7 @@
                     className: G.platformIcon
                 })
             }
-            class H extends i.PureComponent {
+            class V extends i.PureComponent {
                 get activity() {
                     let {
                         activity: e,
@@ -7142,7 +7142,7 @@
                                 className: o((0, O.getClass)(G, "content", f ? "GameImage" : null != e ? "Images" : "NoImages", t)),
                                 children: [m, p, E, h, r || c ? null : _, d ? T : null]
                             }), u ? T : null]
-                        }), r ? _ : null, r || c ? T : null, (0, s.jsx)(V, {
+                        }), r ? _ : null, r || c ? T : null, (0, s.jsx)(H, {
                             activity: i
                         })]
                     })
@@ -7171,8 +7171,8 @@
                     }
                 }
             }
-            H.Types = n;
-            var W = H
+            V.Types = n;
+            var W = V
         },
         547620: function(e, t, l) {
             "use strict";
@@ -7828,4 +7828,4 @@
         }
     }
 ]);
-//# sourceMappingURL=da47f2576d7e129fa9bf.js.map
+//# sourceMappingURL=36fc4960d3520aa53403.js.map
