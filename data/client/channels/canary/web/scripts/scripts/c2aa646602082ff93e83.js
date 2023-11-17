@@ -449,6 +449,9 @@
                 },
                 NUM_RECENTLY_HEARD_SOUNDS: function() {
                     return d
+                },
+                NUM_FREQUENTLY_PLAYED_SOUNDS: function() {
+                    return c
                 }
             }), n("222007");
             let u = 32,
@@ -463,13 +466,14 @@
                 a = "ctrl+`",
                 o = [],
                 E = "0",
-                d = 6
+                d = 6,
+                c = 6
         },
         235004: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return G
+                    return M
                 }
             }), n("222007"), n("424973"), n("834022");
             var i, l, u = n("917351"),
@@ -490,9 +494,9 @@
                 L = new Set,
                 O = 0,
                 S = 0,
-                f = new Set,
-                g = new Map,
-                U = !1;
+                U = new Set,
+                f = new Map,
+                g = !1;
 
             function C(e) {
                 let {
@@ -521,7 +525,7 @@
                 getOverlaySerializedState() {
                     return {
                         soundboardSounds: Object.fromEntries(A),
-                        favoritedSoundIds: Array.from(f),
+                        favoritedSoundIds: Array.from(U),
                         localSoundboardMutes: Array.from(L)
                     }
                 }
@@ -556,32 +560,32 @@
                     return 2 === O
                 }
                 isUserPlayingSounds(e) {
-                    let t = g.get(e);
+                    let t = f.get(e);
                     return null != t && t > 0
                 }
                 isPlayingSound(e) {
                     return null != D.get(e)
                 }
                 isFavoriteSound(e) {
-                    return f.has(e)
+                    return U.has(e)
                 }
                 getFavorites() {
-                    return f
+                    return U
                 }
                 isLocalSoundboardMuted(e) {
                     return L.has(e)
                 }
                 hasHadOtherUserPlaySoundInSession() {
-                    return U
+                    return g
                 }
                 hasFetchedAllSounds() {
                     return 2 === S && 2 === O
                 }
             }
             p.displayName = "SoundboardStore";
-            var G = new p(_.default, {
+            var M = new p(_.default, {
                 LOGOUT: function() {
-                    A.clear(), D.clear(), g.clear(), U = !1, S = 0, O = 0
+                    A.clear(), D.clear(), f.clear(), g = !1, S = 0, O = 0
                 },
                 GUILD_SOUNDBOARD_FETCH: function() {
                     S = 1
@@ -603,16 +607,16 @@
                     let {
                         soundId: l,
                         userId: u
-                    } = e, r = (null !== (n = D.get(l)) && void 0 !== n ? n : 0) + 1, s = (null !== (i = g.get(u)) && void 0 !== i ? i : 0) + 1;
-                    D.set(l, r), g.set(u, s), u !== (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (U = !0)
+                    } = e, r = (null !== (n = D.get(l)) && void 0 !== n ? n : 0) + 1, s = (null !== (i = f.get(u)) && void 0 !== i ? i : 0) + 1;
+                    D.set(l, r), f.set(u, s), u !== (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (g = !0)
                 },
                 GUILD_SOUNDBOARD_SOUND_PLAY_END: function(e) {
                     var t, n;
                     let {
                         soundId: i,
                         userId: l
-                    } = e, u = (null !== (t = D.get(i)) && void 0 !== t ? t : 0) - 1, r = (null !== (n = g.get(l)) && void 0 !== n ? n : 0) - 1;
-                    u <= 0 ? D.delete(i) : D.set(i, u), r <= 0 ? g.delete(l) : g.set(l, r)
+                    } = e, u = (null !== (t = D.get(i)) && void 0 !== t ? t : 0) - 1, r = (null !== (n = f.get(l)) && void 0 !== n ? n : 0) - 1;
+                    u <= 0 ? D.delete(i) : D.set(i, u), r <= 0 ? f.delete(l) : f.set(l, r)
                 },
                 USER_SOUNDBOARD_SET_VOLUME: function(e) {
                     let {
@@ -621,7 +625,7 @@
                     h(t)
                 },
                 VOICE_CHANNEL_SELECT: function() {
-                    D.clear(), g.clear()
+                    D.clear(), f.clear()
                 },
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     let {
@@ -632,7 +636,7 @@
                     } = t;
                     if (n === T.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
                         var l, u;
-                        f = new Set(null !== (u = null == i ? void 0 : null === (l = i.favoriteSoundboardSounds) || void 0 === l ? void 0 : l.soundIds) && void 0 !== u ? u : [])
+                        U = new Set(null !== (u = null == i ? void 0 : null === (l = i.favoriteSoundboardSounds) || void 0 === l ? void 0 : l.soundIds) && void 0 !== u ? u : [])
                     } else n === T.UserSettingsTypes.PRELOADED_USER_SETTINGS && R(i)
                 },
                 SOUNDBOARD_FETCH_DEFAULT_SOUNDS: function() {
@@ -672,7 +676,7 @@
                     let {
                         soundboardStoreState: t
                     } = e;
-                    A = new Map(Object.entries(t.soundboardSounds)), f = new Set(t.favoritedSoundIds), L = new Set(t.localSoundboardMutes)
+                    A = new Map(Object.entries(t.soundboardSounds)), U = new Set(t.favoritedSoundIds), L = new Set(t.localSoundboardMutes)
                 },
                 GUILD_SOUNDBOARD_SOUNDS_UPDATE: function(e) {
                     let {
@@ -782,4 +786,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ef7fab730fc37d0f37b4.js.map
+//# sourceMappingURL=c2aa646602082ff93e83.js.map
