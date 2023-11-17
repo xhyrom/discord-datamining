@@ -26,9 +26,9 @@
                 M = n("619443"),
                 p = n("582415"),
                 T = n("600798"),
-                C = n("569808"),
-                A = n("9294"),
-                I = n("52393"),
+                A = n("569808"),
+                I = n("9294"),
+                C = n("52393"),
                 L = n("143291"),
                 D = n("379534"),
                 O = n("40566"),
@@ -40,12 +40,12 @@
                 G = n("28007"),
                 U = n("880731"),
                 P = n("793277"),
-                w = n("256572"),
-                k = n("364685"),
+                k = n("256572"),
+                w = n("364685"),
                 B = n("804888"),
                 F = n("263024"),
-                H = n("410912"),
-                V = n("373469"),
+                V = n("410912"),
+                H = n("373469"),
                 x = n("271938"),
                 K = n("42203"),
                 W = n("305961"),
@@ -53,8 +53,8 @@
                 j = n("377253"),
                 X = n("957255"),
                 J = n("824563"),
-                z = n("660478"),
-                q = n("27618"),
+                q = n("660478"),
+                z = n("27618"),
                 Q = n("18494"),
                 Z = n("162771"),
                 $ = n("401848"),
@@ -90,7 +90,7 @@
                     location: s,
                     suggested: l = null,
                     overrideProperties: i = {}
-                } = e, r = (0, A.parseExtraDataFromInviteKey)(t), d = K.default.getChannel(n);
+                } = e, r = (0, I.parseExtraDataFromInviteKey)(t), d = K.default.getChannel(n);
                 if (null != d) {
                     let e = null;
                     d.isMultiUserDM() ? e = ed.LoggingInviteTypes.GDM_INVITE : !d.isPrivate() && (e = ed.LoggingInviteTypes.SERVER_INVITE);
@@ -100,7 +100,7 @@
                         var o;
                         let t = c.channel;
                         n.invite_channel_id = t.id, n.invite_guild_id = null === (o = c.guild) || void 0 === o ? void 0 : o.id, n.invite_channel_type = t.type, null != c.inviter && (n.invite_inviter_id = c.inviter.id);
-                        let a = V.default.getLastActiveStream();
+                        let a = H.default.getLastActiveStream();
                         if (null != a && a.channelId === t.id) {
                             e = ed.LoggingInviteTypes.STREAM, n.destination_user_id = a.ownerId;
                             let t = (0, p.getStreamerApplication)(a, J.default);
@@ -187,10 +187,10 @@
                         if (null != s) {
                             if (a === ed.AbortCodes.EXPLICIT_CONTENT) {
                                 if (s.isDM()) t = ec.default.Messages.BOT_DM_EXPLICIT_CONTENT.format({
-                                    name: (0, f.computeChannelName)(s, ee.default, q.default)
+                                    name: (0, f.computeChannelName)(s, ee.default, z.default)
                                 }), n = "BOT_DM_EXPLICIT_CONTENT";
                                 else if (s.isMultiUserDM()) t = ec.default.Messages.BOT_GDM_EXPLICIT_CONTENT.format({
-                                    name: (0, f.computeChannelName)(s, ee.default, q.default)
+                                    name: (0, f.computeChannelName)(s, ee.default, z.default)
                                 }), n = "BOT_GDM_EXPLICIT_CONTENT";
                                 else {
                                     let e = W.default.getGuild(s.getGuildId());
@@ -317,7 +317,7 @@
                                 focus: u,
                                 truncate: E
                             })) return;
-                        H.default.fetchMessages.recordStart();
+                        V.default.fetchMessages.recordStart();
                         let m = null != d ? d : void 0;
                         null == m && null != u && (m = {
                             ...u
@@ -328,8 +328,8 @@
                             type: "LOAD_MESSAGES"
                         });
                         let T = null == m ? void 0 : m.messageId,
-                            C = new eg;
-                        return !c && this.fetchLocalMessages(t, n, a, l, C), s.default.get({
+                            A = new eg;
+                        return !c && this.fetchLocalMessages(t, n, a, l, A), s.default.get({
                             url: ed.Endpoints.MESSAGES(t),
                             query: {
                                 before: n,
@@ -340,7 +340,7 @@
                             },
                             retries: 2,
                             oldFormErrors: !0
-                        }).then(e => (H.default.fetchMessages.recordEnd(), H.default.dispatchMessages.measure(() => {
+                        }).then(e => (V.default.fetchMessages.recordEnd(), V.default.dispatchMessages.measure(() => {
                             var s;
                             let r = e.body,
                                 u = null != n,
@@ -358,14 +358,14 @@
                                     })].filter((e, t, n) => n.indexOf(e) === t).sort(ei.default.compare),
                                     a = n.indexOf(T);
                                 if (a < e && (m = !1), r.length - a < e && (S = !1), S && r.length > 0) {
-                                    let e = z.default.lastMessageId(t);
+                                    let e = q.default.lastMessageId(t);
                                     r[0].id === e && (S = !1)
                                 }
                             }
-                            eE.log("Fetched ".concat(r.length, " messages for ").concat(t, " isBefore:").concat(u, " isAfter:").concat(o)), C.markComplete();
+                            eE.log("Fetched ".concat(r.length, " messages for ").concat(t, " isBefore:").concat(u, " isAfter:").concat(o)), A.markComplete();
                             let p = (0, b.isChannelHighlightsEnabledForGuild)(null !== (s = null == f ? void 0 : f.guild_id) && void 0 !== s ? s : "");
                             if (p && (null == d ? void 0 : d.isHighlight)) {
-                                let e = (0, _.getUnreadChannelHighlights)(t, z.default.ackMessageId(t));
+                                let e = (0, _.getUnreadChannelHighlights)(t, q.default.ackMessageId(t));
                                 if (e.length >= 0) {
                                     let n = e[0];
                                     if (null == r.find(e => e.id === n)) return eS.jumpToMessage({
@@ -399,19 +399,19 @@
                             d = r.default.getOrCreate(e),
                             u = o.default.database();
                         if (null == u || null == l || null != t || null != n) {
-                            H.default.addLocalMessages(e, -1);
+                            V.default.addLocalMessages(e, -1);
                             return
                         }
                         if (d.ready && !d.cached) {
-                            H.default.addLocalMessages(e, -2);
+                            V.default.addLocalMessages(e, -2);
                             return
                         }
                         let f = await (0, c.tryLoadAsync)(() => E.default.load(u, e, a));
                         if (null == f) {
-                            H.default.addLocalMessages(e, -3);
+                            V.default.addLocalMessages(e, -3);
                             return
                         }
-                        if (eE.log("fetched ".concat(f.messages.length, " messages from local database (channel_id: ").concat(e, ", remote_fetch_completed: ").concat(s.completed, ")")), H.default.addLocalMessages(e, f.messages.length), !s.completed && f.messages.length > 0) {
+                        if (eE.log("fetched ".concat(f.messages.length, " messages from local database (channel_id: ").concat(e, ", remote_fetch_completed: ").concat(s.completed, ")")), V.default.addLocalMessages(e, f.messages.length), !s.completed && f.messages.length > 0) {
                             let t = f.messages.length >= a && f.connectionId === M.default.lastTimeConnectedChanged();
                             i.default.dispatch({
                                 type: "LOCAL_MESSAGES_LOADED",
@@ -541,7 +541,7 @@
                         }
                     },
                     sendInvite: (e, t, n, a) => eS._sendMessage(e, {
-                        content: (0, I.default)(t),
+                        content: (0, C.default)(t),
                         tts: !1,
                         validNonShortcutEmojis: [],
                         invalidEmojis: []
@@ -635,27 +635,27 @@
                                 location: S,
                                 suggestedInvite: M,
                                 stickerIds: p,
-                                messageReference: A,
-                                allowedMentions: I,
+                                messageReference: I,
+                                allowedMentions: C,
                                 poll: L
                             } = n,
                             D = null !== (s = n.flags) && void 0 !== s ? s : 0,
                             [N, b] = (0, B.default)(o);
                         if (N && (o = b, D = (0, en.addFlag)(D, ed.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === o && null == _ && null == p && null == L) return Promise.reject(Error("not sending empty message"));
-                        let w = null != A ? ed.MessageTypes.REPLY : ed.MessageTypes.DEFAULT,
+                        let k = null != I ? ed.MessageTypes.REPLY : ed.MessageTypes.DEFAULT,
                             F = null !== (l = n.nonce) && void 0 !== l ? l : (0, y.createNonce)();
                         if (!1 !== n.eagerDispatch) {
                             let t = (0, y.default)({
                                 channelId: e,
                                 content: o,
                                 tts: f,
-                                type: w,
-                                messageReference: A,
-                                allowedMentions: I,
+                                type: k,
+                                messageReference: I,
+                                allowedMentions: C,
                                 flags: 0 !== D ? D : void 0,
                                 nonce: F
                             });
-                            (0, G.updateComboOnMessageSend)(e, t.id), null != p && (t.sticker_items = p.map(e => k.default.getStickerById(e)).filter(e => null != e)), eS.receiveMessage(e, t, !0, n)
+                            (0, G.updateComboOnMessageSend)(e, t.id), null != p && (t.sticker_items = p.map(e => w.default.getStickerById(e)).filter(e => null != e)), eS.receiveMessage(e, t, !0, n)
                         }
                         if (!e_ && null != c && c.length > 0) {
                             let t, n;
@@ -665,15 +665,15 @@
                                 channelId: e
                             }) ? (t = ec.default.Messages.INVALID_EXTERNAL_EMOJI_BODY_UPGRADE, n = "INVALID_EXTERNAL_EMOJI_BODY_UPGRADE") : (t = ec.default.Messages.INVALID_EXTERNAL_EMOJI_BODY, n = "INVALID_EXTERNAL_EMOJI_BODY"), eS.sendBotMessage(e, t, n)
                         }
-                        let H = {
+                        let V = {
                             type: d.MessageDataType.SEND,
                             message: {
                                 channelId: e,
                                 content: o,
                                 nonce: F,
                                 tts: f,
-                                message_reference: A,
-                                allowed_mentions: I,
+                                message_reference: I,
+                                allowed_mentions: C,
                                 flags: D
                             }
                         };
@@ -687,14 +687,14 @@
                                     {
                                         activity: n
                                     } = _;
-                                null != n.party && null != n.party.id && (t.party_id = n.party.id), H.message.application_id = n.application_id, H.message.activity = t
+                                null != n.party && null != n.party.id && (t.party_id = n.party.id), V.message.application_id = n.application_id, V.message.activity = t
                             }
                         }
-                        return null != L && (H.message.poll = L), null != p && (H.message.sticker_ids = p), U.default.isEnabled() && (H.message.has_poggermode_enabled = !0), (0, g.default)(e) && (H.message.allow_proactive_clyde_reply = !0), new Promise((t, s) => {
+                        return null != L && (V.message.poll = L), null != p && (V.message.sticker_ids = p), U.default.isEnabled() && (V.message.has_poggermode_enabled = !0), (0, g.default)(e) && (V.message.allow_proactive_clyde_reply = !0), new Promise((t, s) => {
                             let l = Date.now(),
                                 r = d.default.length,
                                 c = Math.floor(1e4 * Math.random());
-                            ef.info("Queueing message to be sent LogId:".concat(c)), d.default.enqueue(H, d => {
+                            ef.info("Queueing message to be sent LogId:".concat(c)), d.default.enqueue(V, d => {
                                 let c = Date.now() - l;
                                 if (d.ok) v.default.donateSentMessage(o, e), eS.receiveMessage(e, d.body, !0, {
                                     sendAnalytics: {
@@ -734,7 +734,7 @@
                                             overrideProperties: r
                                         });
                                         else if (t === h.CodedLinkType.TEMPLATE) {
-                                            let e = C.default.getGuildTemplate(d);
+                                            let e = A.default.getGuildTemplate(d);
                                             if (null == e || e.state === eo.GuildTemplateStates.RESOLVING) return;
                                             u.default.trackWithMetadata(ed.AnalyticEvents.GUILD_TEMPLATE_LINK_SENT, {
                                                 guild_template_code: d,
@@ -799,7 +799,7 @@
                                             })
                                         } else T.AUTOMOD_ERROR_CODES.has(d.body.code) ? i.default.dispatch({
                                             type: "MESSAGE_SEND_FAILED_AUTOMOD",
-                                            messageData: H,
+                                            messageData: V,
                                             errorResponseBody: {
                                                 code: d.body.code,
                                                 message: d.body.message
@@ -855,8 +855,8 @@
                         let s = function(e, t) {
                                 let n = j.default.getMessage(e, t);
                                 if (null == n || n.type !== ed.MessageTypes.REPLY) return;
-                                let a = w.default.getMessageByReference(n.messageReference);
-                                if (a.state === w.ReferencedMessageState.LOADED) {
+                                let a = k.default.getMessageByReference(n.messageReference);
+                                if (a.state === k.ReferencedMessageState.LOADED) {
                                     if (!n.mentions.includes(a.message.author.id)) return {
                                         parse: Object.values(ed.AllowedMentionTypes),
                                         replied_user: !1
@@ -1143,7 +1143,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return C
+                    return A
                 }
             }), n("222007");
             var a = n("446674"),
@@ -1243,7 +1243,7 @@
                     a = r.default.getChannelId();
                 n && t === a && M.recordChannel(t), !n && M.deleteChannel(t)
             }
-            var C = new M(s.default, {
+            var A = new M(s.default, {
                 CACHE_LOADED_LAZY_NO_CACHE: function(e) {
                     S = !0
                 },
@@ -2753,274 +2753,6 @@
                 return null == t ? null : a.default.ensurePrivateChannel(t.recipients)
             }
         },
-        256572: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ReferencedMessageState: function() {
-                    return a
-                },
-                default: function() {
-                    return v
-                }
-            }), n("222007"), n("424973");
-            var a, s, l = n("693566"),
-                i = n.n(l),
-                r = n("446674"),
-                d = n("913144"),
-                u = n("793441"),
-                o = n("560208"),
-                c = n("692038"),
-                E = n("42203"),
-                f = n("377253"),
-                _ = n("49111");
-            (s = a || (a = {}))[s.LOADED = 0] = "LOADED", s[s.NOT_LOADED = 1] = "NOT_LOADED", s[s.DELETED = 2] = "DELETED";
-            let g = Object.freeze({
-                    state: 1
-                }),
-                h = new Set;
-            class m {
-                handleCacheDisposed(e, t) {
-                    this._cachedMessageIds.has(e) && (this._cachedMessageIds = new Set(this._cachedMessageIds), this._cachedMessageIds.delete(e))
-                }
-                set(e, t) {
-                    this._cachedMessages.set(e, t), !this._cachedMessageIds.has(e) && (this._cachedMessageIds = new Set(this._cachedMessageIds), this._cachedMessageIds.add(e))
-                }
-                has(e) {
-                    return this._cachedMessageIds.has(e)
-                }
-                get(e) {
-                    return this._cachedMessages.get(e)
-                }
-                getCachedMessageIds() {
-                    return this._cachedMessageIds
-                }
-                constructor() {
-                    this._cachedMessages = new i({
-                        max: 100,
-                        dispose: (e, t) => this.handleCacheDisposed(e, t)
-                    }), this._cachedMessageIds = new Set
-                }
-            }
-            let S = new class e {
-                has(e, t) {
-                    var n, a;
-                    return null !== (a = null === (n = this._channelCaches.get(e)) || void 0 === n ? void 0 : n.has(t)) && void 0 !== a && a
-                }
-                get(e, t) {
-                    var n;
-                    return null === (n = this._channelCaches.get(e)) || void 0 === n ? void 0 : n.get(t)
-                }
-                set(e, t, n) {
-                    let a = this._channelCaches.get(e);
-                    null == a && (a = new m, this._channelCaches.set(e, a)), a.set(t, n)
-                }
-                updateExistingMessageIfCached(e) {
-                    let t = this._channelCaches.get(e.channel_id);
-                    return !!(null != t && t.has(e.id)) && (t.set(e.id, {
-                        state: 0,
-                        message: (0, c.createMessageRecord)(e)
-                    }), !0)
-                }
-                deleteChannelCache(e) {
-                    return this._channelCaches.delete(e)
-                }
-                retainWhere(e) {
-                    let t = [];
-                    for (let [n] of this._channelCaches) !e(n) && t.push(n);
-                    for (let e of t) this.deleteChannelCache(e);
-                    return t.length
-                }
-                getCachedMessageIdsForChannel(e) {
-                    let t = this._channelCaches.get(e);
-                    return null == t ? null : t.getCachedMessageIds()
-                }
-                clear() {
-                    this._channelCaches.clear()
-                }
-                constructor() {
-                    this._channelCaches = new Map
-                }
-            };
-
-            function M(e) {
-                let t = !1;
-                if (S.updateExistingMessageIfCached(e) && (t = !0), _.MessageTypesWithLazyLoadedReferences.has(e.type)) {
-                    let n = e.message_reference;
-                    if (null == n) return t;
-                    let a = n.message_id;
-                    if (null == a) return t;
-                    if ("referenced_message" in e) {
-                        let t = e.referenced_message;
-                        null != t ? (S.set(t.channel_id, t.id, {
-                            state: 0,
-                            message: (0, c.createMessageRecord)(t)
-                        }), e.type === _.MessageTypes.THREAD_STARTER_MESSAGE && M(t)) : S.set(e.channel_id, a, {
-                            state: 2
-                        })
-                    } else {
-                        let e = f.default.getMessage(n.channel_id, a);
-                        null != e ? S.set(n.channel_id, a, {
-                            state: 0,
-                            message: e
-                        }) : S.set(n.channel_id, a, g)
-                    }
-                    t = !0
-                }
-                return t
-            }
-
-            function p(e, t) {
-                let n = !1;
-                for (let a of e) n = !1 !== t(a) || n;
-                return n
-            }
-
-            function T(e) {
-                let {
-                    messages: t
-                } = e;
-                return p(t, e => M(e))
-            }
-
-            function C(e) {
-                return S.deleteChannelCache(e.channel.id)
-            }
-
-            function A(e, t) {
-                if (!S.has(e, t)) return !1;
-                S.set(e, t, {
-                    state: 2
-                })
-            }
-
-            function I() {
-                S.clear()
-            }
-
-            function L(e) {
-                let {
-                    firstMessages: t
-                } = e;
-                return null != t && p(t, e => M(e))
-            }
-            class D extends r.default.Store {
-                initialize() {
-                    this.waitFor(f.default, E.default)
-                }
-                getMessageByReference(e) {
-                    let t;
-                    return null != e && (t = S.get(e.channel_id, e.message_id)), null != t ? t : g
-                }
-                getMessage(e, t) {
-                    var n;
-                    return null !== (n = S.get(e, t)) && void 0 !== n ? n : g
-                }
-                getReplyIdsForChannel(e) {
-                    let t;
-                    return null != e && (t = S.getCachedMessageIdsForChannel(e)), null != t ? t : h
-                }
-            }
-            D.displayName = "ReferencedMessageStore";
-            let O = new D(d.default, {
-                CACHE_LOADED: function(e) {
-                    let {
-                        messages: t
-                    } = e;
-                    return p(Object.values(t), e => p(Object.values(e), e => M(e)))
-                },
-                LOCAL_MESSAGES_LOADED: T,
-                LOAD_MESSAGES_SUCCESS: T,
-                LOAD_MESSAGES_AROUND_SUCCESS: T,
-                SEARCH_FINISH: function(e) {
-                    let {
-                        messages: t
-                    } = e;
-                    return p(t, e => p(e, e => M(e)))
-                },
-                GUILD_FEED_FETCH_SUCCESS: function(e) {
-                    let {
-                        data: t
-                    } = e, n = (0, o.getMessagesFromGuildFeedFetch)(t);
-                    return p(n, e => M(e))
-                },
-                LOAD_THREADS_SUCCESS: L,
-                LOAD_ARCHIVED_THREADS_SUCCESS: L,
-                MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function(e) {
-                    let {
-                        messageId: t,
-                        channelId: n
-                    } = e;
-                    if (!S.has(n, t)) return !1;
-                    let a = S.get(n, t);
-                    if (null == a || 0 !== a.state) return !1;
-                    S.set(n, t, {
-                        state: 0,
-                        message: (0, u.handleExplicitMediaScanTimeoutForMessage)(a.message)
-                    })
-                },
-                LOAD_FORUM_POSTS: function(e) {
-                    let {
-                        threads: t
-                    } = e;
-                    return p(Object.values(t), e => {
-                        let {
-                            first_message: t
-                        } = e;
-                        return null != t && M(t)
-                    })
-                },
-                MESSAGE_CREATE: function(e) {
-                    let {
-                        message: t
-                    } = e;
-                    return !!f.default.getMessages(t.channel_id).ready && M(t)
-                },
-                MESSAGE_UPDATE: function(e) {
-                    let {
-                        message: t
-                    } = e, n = t.id, a = t.channel_id;
-                    if (!S.has(a, n)) return !1;
-                    let s = S.get(a, n);
-                    if (null == s || 0 !== s.state) return !1;
-                    S.set(a, n, {
-                        state: 0,
-                        message: (0, c.updateMessageRecord)(s.message, t)
-                    })
-                },
-                MESSAGE_DELETE: function(e) {
-                    let {
-                        id: t,
-                        channelId: n
-                    } = e;
-                    return A(n, t)
-                },
-                MESSAGE_DELETE_BULK: function(e) {
-                    let {
-                        ids: t,
-                        channelId: n
-                    } = e;
-                    return p(t, e => A(n, e))
-                },
-                CREATE_PENDING_REPLY: function(e) {
-                    let {
-                        message: t
-                    } = e;
-                    S.set(t.channel_id, t.id, {
-                        state: 0,
-                        message: t
-                    })
-                },
-                CHANNEL_DELETE: C,
-                THREAD_DELETE: C,
-                GUILD_DELETE: function() {
-                    let e = S.retainWhere(e => null != E.default.getChannel(e));
-                    if (0 === e) return !1
-                },
-                CONNECTION_OPEN: I,
-                LOGOUT: I
-            });
-            var v = O
-        },
         401848: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -3136,4 +2868,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34b863c834328bef0727.js.map
+//# sourceMappingURL=e204d0726fd22d47ba21.js.map
