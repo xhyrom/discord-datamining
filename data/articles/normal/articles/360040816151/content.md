@@ -49,15 +49,13 @@
 <p>4. Tap the "Go Live" button at the bottom of the window when you are ready to share your stream. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19155525627415" alt="screen_share.gif"></p>
 <h3 id="h_01HFFJ28PJT8QWQQXA55W29PFD">
-    <span style="color: #104c32;" data-darkreader-inline-color="">- At this time, audio sharing is available when sharing an application window on Windows 10 or MacOS version 10.13 or later. You can enable MacOS audio sharing following this guide </span><a href="https://support.discord.com/hc/en-us/articles/1500006741102" target="_blank" rel="noopener noreferrer">here</a><span style="color: #104c32;" data-darkreader-inline-color="">. </span>
+    <span style="color: #104c32;" data-darkreader-inline-color="">- At this time, audio sharing is available when sharing an application window on Windows 10 or MacOS version 10.13 or later. You can enable MacOS audio sharing following this guide </span><a href="https://support.discord.com/hc/en-us/articles/1500006741102" target="_blank" rel="noopener noreferrer">here</a><span style="color: #104c32;" data-darkreader-inline-color="">. <br></span><span style="color: #104c32;" data-darkreader-inline-color="">- Unfortunately, audio sharing is unavailable on Linux.</span>
 </h3>
-<h3 id="h_01HFFJ28PJ17E1W6TM5663JR6K"><span style="color: #104c32;" data-darkreader-inline-color="">- Unfortunately, audio sharing is unavailable on Linux.</span></h3>
 <h1 id="h_01HFFJ28PJAY9AHGRQ85XRSF8G">How do I Share my Game?</h1>
 <p>To share your game it needs to be recognized by our built-in game detection system. </p>
 <h3 id="h_01HFFJ28PJQ6A2QYCFEQGGBYQH">
-    <span style="color: #434343;" data-darkreader-inline-color="">If the game does not appear, try manually adding your game by going to </span><strong><span style="color: #434343;" data-darkreader-inline-color="">User Settings</span></strong><span style="color: #434343;" data-darkreader-inline-color=""> &gt; </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Game Activity</span></strong><span style="color: #434343;" data-darkreader-inline-color=""> &gt; </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Add it</span></strong><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">If the game does not appear, try manually adding your game by going to </span><strong><span style="color: #434343;" data-darkreader-inline-color="">User Settings</span></strong><span style="color: #434343;" data-darkreader-inline-color=""> &gt; </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Game Activity</span></strong><span style="color: #434343;" data-darkreader-inline-color=""> &gt; </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Add it</span></strong><span style="color: #434343;" data-darkreader-inline-color="">.<br></span><span style="color: #434343;" data-darkreader-inline-color="">Unfortunately, if your game is not recognized by Game Detection, or through the process of manually adding it, then you will not be able to stream the game.</span>
 </h3>
-<h3 id="h_01HFFJ28PJF7PZKFPX62R47Y72"><span style="color: #434343;" data-darkreader-inline-color="">Unfortunately, if your game is not recognized by Game Detection, or through the process of manually adding it, then you will not be able to stream the game.</span></h3>
 <p><strong>Option 1</strong></p>
 <p>1. Join a voice channel in your server that you have permissions to screen share in.</p>
 <p>2. Tap on the Screen streaming icon in the voice status panel (near the bottom left corner) and a new window will pop out.</p>
@@ -70,53 +68,53 @@
 <p>2. Here you can pick the Voice Channel you want to stream to (if you’re not already in one) and change any of the stream settings (quality and framerate) and tap on <strong>Go Live</strong> to stream</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19155525642007" width="624" height="351"></p>
 <p>You should see a small Picture-in-Picture (PiP) window of the game you're sharing so you can view how it looks. Hovering over the PiP will give you options to adjust the stream’s settings or end the stream.</p>
-<h3 id="h_01HFFJ28PJ5BRDRMPFBRFG1QTN" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525649559" width="624" height="352"></span></h3>
+<p id="h_01HFFJ28PJ5BRDRMPFBRFG1QTN" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525649559" width="624" height="352"></span></p>
 <h3 id="h_01HFFJ28PJTEEAZZ85JEJ53G5S"><span style="color: #434343;" data-darkreader-inline-color="">The PiP window will be automatically paused once you have the game in focus.</span></h3>
 <h2 id="h_01HFFJ28PJTSNBKEPFGMSM8CNJ">Sharing Your Game Using Overlay</h2>
 <p>You can also share your game through the Discord overlay.</p>
 <p>1. While your game is open, toggle your Discord overlay by tapping on the hot key (shift+` for default).</p>
 <p>2. Then tap on <strong>Stream </strong>and choose what settings you’d like to use</p>
 <p>3. Finally, tap on <strong>Go Live</strong> to start the stream</p>
-<h3 id="h_01HFFJ28PJJ3ZY4DK77ZETDGKR" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525653911" width="624" height="351"></span></h3>
+<p id="h_01HFFJ28PJJ3ZY4DK77ZETDGKR" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525653911" width="624" height="351"></span></p>
 <p>If someone is watching your stream, you’ll see a little eyeball icon 👁 next to their name in the overlay.</p>
-<h3 id="h_01HFFJ28PJ7YRREZ4MSE472VD6" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525656087" width="274" height="239"></span></h3>
+<p id="h_01HFFJ28PJ7YRREZ4MSE472VD6" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525656087" width="274" height="239"></span></p>
 <h2 id="h_01HFFJ28PJ0KS0XE3DCV4EWDA4">How do I share my screen in a Direct Message? </h2>
 <p>To share your screen in a Direct Message (DM), you'll want to start a call first. You can do this by tapping the phone or video icon in the top header while viewing a DM.</p>
-<h3 id="h_01HFFJ28PJHGW8S64Q5TWDGQMC" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155533345559" width="467" height="39"></span></h3>
+<p id="h_01HFFJ28PJHGW8S64Q5TWDGQMC" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155533345559" width="467" height="39"></span></p>
 <p>1. Tap on the <strong>Share Your Screen</strong> icon to start streaming in a DM.</p>
 <p>2. Next, pick either the <strong>Application </strong>you want to stream or what <strong>Screen </strong>you’d like to share. To pick, tap on what you’d like to share.</p>
 <p>3. Finally, you can pick what settings you’d like to stream with. Tap on <strong>Go Live</strong> when you’re ready to stream.</p>
-<h3 id="h_01HFFJ28PJW34044ZYYY9SK2XT" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155533353367" width="624" height="351"></span></h3>
+<p id="h_01HFFJ28PJW34044ZYYY9SK2XT" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155533353367" width="624" height="351"></span></p>
 <h3 id="h_01HFFJ28PJQ6K18R8NQ0JMC59J"><span style="color: #434343;" data-darkreader-inline-color="">If you want to swap from one app window to another, you’ll be able to easily swap by selecting the "Change Window" option!</span></h3>
 <h1 id="h_01HFFJ28PJ0F9PHJ9SKK6DWC2E">Stream Quality Settings</h1>
-<h3 id="h_01HFFJ28PJVT5Z43MHX560Q0B7"><span style="color: #434343;" data-darkreader-inline-color="">- All users can stream up to 720p/30fps.</span></h3>
-<h3 id="h_01HFFJ28PJNQ7P64PPD77YXTBP"><span style="color: #434343;" data-darkreader-inline-color="">- Nitro Classic subscribers have access to 1080p/60fps.</span></h3>
-<h3 id="h_01HFFJ28PJH3DK7QWTC17G4Z7X"><span style="color: #434343;" data-darkreader-inline-color="">- And <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> subscribers can go all the way up to 4k/60fps.</span></h3>
+<h3 id="h_01HFFJ28PJVT5Z43MHX560Q0B7">
+    <span style="color: #434343;" data-darkreader-inline-color="">- All users can stream up to 720p/30fps. <br>- </span><span style="color: #434343;" data-darkreader-inline-color="">Nitro Classic subscribers have access to 1080p/60fps. <br>- </span><span style="color: #434343;" data-darkreader-inline-color="">And <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> subscribers can go all the way up to 4k/60fps.</span>
+</h3>
 <p>The frame rate and resolution of your stream can be adjusted from multiple different places.</p>
 <p>Regardless if you're sharing your screen in a Direct Message or a server voice channel, you can always change your Stream Quality by selecting the "Screen" button above your status bar. </p>
-<h3 id="h_01HFFJ28PJQX9ZZ4RVBH6GFYZM" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525675799" width="365" height="569"></span></h3>
+<p id="h_01HFFJ28PJQX9ZZ4RVBH6GFYZM" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525675799" width="365" height="569"></span></p>
 <h3 id="h_01HFFJ28PJX2VTDYHRVM3AZJH8"><span style="color: #434343;" data-darkreader-inline-color="">When streaming through browser, you can not adjust the stream’s quality.</span></h3>
 <h2 id="h_01HFFJ28PJ0M35H8PM3PMFYWPE">Stream Quality Settings For Go Live</h2>
 <p>While streaming, you can adjust the stream quality at any time. </p>
 <p>1. While sharing your screen in a server’s voice channel hover over your PiP and tap on the gear icon</p>
 <p>2. Next, select <strong>Stream Quality</strong></p>
 <p>3. Here you can change the Frame Rate and Resolution.</p>
-<h3 id="h_01HFFJ28PJHSNHPFDTHYJAN4EK" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://lh7-us.googleusercontent.com/1rnbR3G7CxlbrbVZBRltNFgIpOZDtnNfdHDl7RF8NA0hs9lBBYNjwyTKoGMtU4ssjSwabR-G0lFlyLVBzt92FFZoE9rZpNu0Th7FcIoQyBCXkEKKsGREFgmMZEMZ6rriR7UJKs2CKTpO55wBphYGviM" width="624" height="351"></span></h3>
+<p id="h_01HFFJ28PJHSNHPFDTHYJAN4EK" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://lh7-us.googleusercontent.com/1rnbR3G7CxlbrbVZBRltNFgIpOZDtnNfdHDl7RF8NA0hs9lBBYNjwyTKoGMtU4ssjSwabR-G0lFlyLVBzt92FFZoE9rZpNu0Th7FcIoQyBCXkEKKsGREFgmMZEMZ6rriR7UJKs2CKTpO55wBphYGviM" width="624" height="351"></span></p>
 <h2 id="h_01HFFJ28PJF9VT9WJ853CA4762">Stream Quality Settings For Direct Messages </h2>
 <p>Here is how to edit your stream quality while streaming through a Direct Message.</p>
 <p>1. While streaming in a Direct Message tap on the down arrow. </p>
 <p>2. Next, tap on <strong>Stream Quality</strong>.</p>
 <p>3. Now you can adjust your <strong>Frame Rate</strong> and <strong>Resolution</strong>. </p>
-<h3 id="h_01HFFJ28PJPXXCMGZ063FAR0X8" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155533359767" width="624" height="351"></span></h3>
+<p id="h_01HFFJ28PJPXXCMGZ063FAR0X8" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155533359767" width="624" height="351"></span></p>
 <h2 id="h_01HFFJ28PJV2A3A3M3YER8CH3Y">View Modes</h2>
 <p><strong><span style="color: #ae6607;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525681815" alt="grid_view_icon__2_.png" width="19" height="19"></span></strong> <strong><span style="color: #2e3338;" data-darkreader-inline-color="">Grid View</span></strong><span style="color: #2e3338;" data-darkreader-inline-color=""> </span></p>
 <p>All calls will automatically start in this view. This is the perfect view to see all the videos/screenshares within your chat at once.</p>
-<h3 id="h_01HFFJ28PJ2R25BFNCYJ3QVEC9" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525685911" width="624" height="336"></span></h3>
+<p id="h_01HFFJ28PJ2R25BFNCYJ3QVEC9" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155525685911" width="624" height="336"></span></p>
 <p><img src="https://support.discord.com/hc/article_attachments/19155525693847" alt="vertical-focus-view-icon.png" width="23" height="23"><strong>Focus View</strong></p>
 <p>If you’d like to focus on one specific person, you can then use this view to make their screen the center of attention. The focused screen will show as the largest screen while everyone else’s screen will show up as smaller screens at the bottom.</p>
 <p>You can also hide the streams of the other Server Video Members (by tapping on the <img src="https://support.discord.com/hc/article_attachments/19155533381655" alt="vertical-hide-member-button.png" width="15" height="15"> <img src="https://support.discord.com/hc/article_attachments/19155533388055" alt="member_s_list_icon.png" width="19" height="15"> Hide Members button within the focused stream) while in the Focus View to only show the main screen you’re focusing on. That way, you won’t get distracted by anyone else’s screen.</p>
 <p>If you want to change which screen you’re focusing on, you can tap on the <img src="https://support.discord.com/hc/article_attachments/19155525706263" alt="vertical-show-member-button.png" width="15" height="15"> <img src="https://support.discord.com/hc/article_attachments/19155533394327" alt="member_s_list_icon.png" width="19" height="15"> Show Members to show all the smaller streams once more and then select the other person’s screen.</p>
-<p><strong><img src="https://support.discord.com/hc/article_attachments/19155533396631" width="624" height="405"></strong></p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/19155533396631" width="624" height="405"></strong></p>
 <h2 id="h_01HFFJ28PJS00NX4CMYT1R1V30">Window Modes</h2>
 <p><img src="https://support.discord.com/hc/article_attachments/19155533402007" alt="popout_window_icon__1_.png" width="18" height="18"> <strong> Pop Out Views</strong></p>
 <p>To have the video chat all appear in a separate window, tap the <strong>Pop Out View</strong> button to be able to move that window anywhere on your screen.</p>
@@ -169,7 +167,7 @@
 <p>The <strong>Pop Out</strong> window can be resized to whatever size you’d like it to be.</p>
 <p class="wysiwyg-text-align-center"><br><img src="https://support.discord.com/hc/article_attachments/19155525760535" width="624" height="419"></p>
 <p>If you want to pin the <strong>Pop Out</strong> window so that it stays above all other windows, you can use the <strong>Stay On Top</strong> button. To unpin the window, use the <strong>Remove From Top</strong> button. </p>
-<h3 id="h_01HFFJ28PJXXPFHEZ12TRRAE1Z" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155533454231" width="624" height="511"></span></h3>
+<p id="h_01HFFJ28PJXXPFHEZ12TRRAE1Z" class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19155533454231" width="624" height="511"></span></p>
 <h3 id="h_01HFFJ28PJ4N450QW4FBPRZTRW">
     <span style="color: #2e3338;" data-darkreader-inline-color="">We hope you enjoy Go Live - Screen Share and if you have any suggestions on how to improve the feature, please share your ideas here: </span><a href="https://dis.gd/feedback" target="_blank" rel="noopener noreferrer">https://dis.gd/feedback</a><span style="color: #2e3338;" data-darkreader-inline-color=""> </span>
 </h3>
