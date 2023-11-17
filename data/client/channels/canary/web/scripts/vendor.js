@@ -26,8 +26,8 @@
                 L = l("239380"),
                 I = l("271938"),
                 T = l("42203"),
-                D = l("383173"),
-                G = l("923959"),
+                G = l("383173"),
+                D = l("923959"),
                 h = l("305961"),
                 U = l("18494"),
                 y = l("162771"),
@@ -410,7 +410,7 @@
                     })
                 },
                 toggleGuildFolderExpand(e) {
-                    let t = D.default.isFolderExpanded(e);
+                    let t = G.default.isFolderExpanded(e);
                     A.default.track(O.AnalyticEvents.GUILD_FOLDER_CLICKED, {
                         source: "sidebar",
                         action: t ? "collapsed" : "expanded"
@@ -455,11 +455,11 @@
                         (0, f.transitionTo)(O.Routes.FRIENDS);
                         return
                     }
-                    let t = G.default.getDefaultChannel(e);
+                    let t = D.default.getDefaultChannel(e);
                     null == t || t.isNSFW() ? (0, f.transitionTo)(O.Routes.FRIENDS) : (0, f.transitionTo)(O.Routes.CHANNEL(e, t.id))
                 },
                 escapeToDefaultChannel(e) {
-                    let t = G.default.getDefaultChannel(e);
+                    let t = D.default.getDefaultChannel(e);
                     null != t ? (0, f.transitionTo)(O.Routes.CHANNEL(e, t.id)) : (0, f.transitionTo)(O.Routes.FRIENDS)
                 },
                 async fetchApplications(e, t) {
@@ -829,7 +829,9 @@
 
             function c(e) {}
 
-            function _(e) {
+            function _(e) {}
+
+            function p(e) {
                 return !1
             }
             l.r(t), l.d(t, {
@@ -860,11 +862,14 @@
                 coerceChannelRoute: function() {
                     return E
                 },
-                coerceModalRoute: function() {
+                coerceGuildsRoute: function() {
                     return c
                 },
-                useIsModalOpen: function() {
+                coerceModalRoute: function() {
                     return _
+                },
+                useIsModalOpen: function() {
+                    return p
                 }
             })
         },
@@ -1004,4 +1009,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ba60ecac374ac0077c25.js.map
+//# sourceMappingURL=2d1ee5c3d0c67befe6c9.js.map

@@ -4173,9 +4173,9 @@
         },
         204653: function(e, t, n) {
             "use strict";
-            var l, a;
+            var l, a, s, i;
 
-            function s(e, t) {
+            function r(e, t) {
                 return {
                     id: e.id,
                     topic: e.topic,
@@ -4185,7 +4185,8 @@
                     endId: e.end_id,
                     count: e.count,
                     channelId: t,
-                    source: e.source
+                    source: e.source,
+                    type: e.type
                 }
             }
             n.r(t), n.d(t, {
@@ -4193,9 +4194,9 @@
                     return l
                 },
                 createSummaryFromServer: function() {
-                    return s
+                    return r
                 }
-            }), n("222007"), (a = l || (l = {}))[a.SOURCE_0 = 0] = "SOURCE_0", a[a.SOURCE_1 = 1] = "SOURCE_1"
+            }), n("222007"), (s = l || (l = {}))[s.SOURCE_0 = 0] = "SOURCE_0", s[s.SOURCE_1 = 1] = "SOURCE_1", (i = a || (a = {}))[i.UNSET = 0] = "UNSET", i[i.SOURCE_1 = 1] = "SOURCE_1", i[i.SOURCE_2 = 2] = "SOURCE_2"
         },
         793237: function(e, t, n) {
             "use strict";
@@ -4966,7 +4967,8 @@
                     guild_id: n,
                     channel_id: i,
                     summary_id: t.id,
-                    summary_source: t.source
+                    summary_source: t.source,
+                    summary_type: t.type
                 })
             }
         },
@@ -10695,4 +10697,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4985cbcce24b683610ad.js.map
+//# sourceMappingURL=d284a831c490b913cf65.js.map

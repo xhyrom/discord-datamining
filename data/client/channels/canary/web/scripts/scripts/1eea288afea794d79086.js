@@ -1518,25 +1518,27 @@
             "use strict";
             i.r(t), i.d(t, {
                 default: function() {
-                    return r
+                    return d
                 },
                 useGetOrFetchApplication: function() {
-                    return d
+                    return o
                 }
             });
             var n = i("884691"),
                 l = i("446674"),
-                a = i("651057"),
-                u = i("299285");
-
-            function r(e) {
-                return n.useEffect(() => {
-                    a.default.fetchApplications(e, !1)
-                }, e), (0, l.useStateFromStoresArray)([u.default], () => e.map(e => u.default.getApplication(e)), e)
-            }
+                a = i("233736"),
+                u = i("651057"),
+                r = i("299285");
 
             function d(e) {
-                return r(null != e ? [e] : [])[0]
+                let t = n.useRef([]);
+                return n.useEffect(() => {
+                    !(0, a.areArraysShallowEqual)(e, t.current) && (u.default.fetchApplications(e, !1), t.current = e)
+                }, [e]), (0, l.useStateFromStoresArray)([r.default], () => e.map(e => r.default.getApplication(e)))
+            }
+
+            function o(e) {
+                return d(null != e ? [e] : [])[0]
             }
         },
         242740: function(e, t, i) {
@@ -2158,4 +2160,4 @@
         }
     }
 ]);
-//# sourceMappingURL=96ecb347fa52f52688e3.js.map
+//# sourceMappingURL=1eea288afea794d79086.js.map
