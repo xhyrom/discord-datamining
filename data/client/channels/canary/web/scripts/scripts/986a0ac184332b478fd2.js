@@ -24596,7 +24596,7 @@
             var i, r, s, a, o = n("561467");
             (i = s || (s = {})).BLACK_SCREEN = "BLACK_SCREEN", i.BLURRY = "BLURRY", i.LAGGING = "LAGGING", i.OUT_OF_SYNC = "OUT_OF_SYNC", i.AUDIO_MISSING = "AUDIO_MISSING", i.AUDIO_POOR = "AUDIO_POOR", i.GAME_ISSUE = "GAME_ISSUE", i.STREAM_STOPPED = "STREAM_STOPPED", i.NO_ISSUE = "NO_ISSUE", i.OTHER = "OTHER";
             let l = ">=19.0.0",
-                u = ">=21.6.0",
+                u = ">=22.0.0",
                 c = ">=10.0.17763",
                 d = ">=10.0.22000";
             (r = a || (a = {})).GUILD = "guild", r.CALL = "call";
@@ -49507,7 +49507,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "247107"
+                                build_number: "247110"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62758,4 +62758,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f99ba435de4de5cc1541.js.map
+//# sourceMappingURL=986a0ac184332b478fd2.js.map
