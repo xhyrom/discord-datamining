@@ -1,39 +1,40 @@
 <p id="docs-internal-guid-6074669e-7fff-d94b-ffa0-4fe796f828f0">Starting from <strong>October 31, 2023 (5pm PST)</strong> to <strong>January 31, 2024 (11:59pm PST)</strong>,<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a> members can redeem <strong>3 months</strong> of <strong>Xbox Game Pass for PC</strong>.Read more below about the promotion below.</p>
-<p class="wysiwyg-text-align-center"><img style="height: 325px; width: 624px;" src="https://lh7-us.googleusercontent.com/lB73CPRCiFWfujXT10wgS5ldjQiLsHEmCW2iESdKNA4kL87JkYsMwmwpI_SnFuKlYi_9VzqQRbon4pHx4QIm-1wH2j568IOZ0ToBCX31-JJjKhY8wDhRO372lNyw0Iik7fcLctTHknEe1rdWU8amt4w"></p>
+<p class="wysiwyg-text-align-center"><img style="height: 325px; width: 624px;" src="https://support.discord.com/hc/article_attachments/19157216277399"></p>
 <p><strong>Promotion Summary</strong></p>
 <p><strong>Offer Details:</strong> 3 months of Xbox Game Pass for<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a> members</p>
 <p><strong>Who is Eligible: To claim through Discord,</strong> you must be a current Nitro member. </p>
+<p id="docs-internal-guid-91fcd622-7fff-b638-f362-6fea2f1fc7a2">This does not include Nitro trial users, Nitro Basic, Nitro Classic, or Server Boost-only members. </p>
 <p><strong>Requirements:</strong></p>
 <p>Claim through Discord Gift Inventory from <strong>October 31, 2023 (5pm PST)</strong> to <strong>January 31, 2024 (11:59pm PST)</strong>, and redeem in your Microsoft account by  <strong>February 28, 2024</strong>.</p>
 <p><strong>Subscription:</strong></p>
 <p>After the 3 month trial period, your Xbox Game Pass will convert to a monthly or yearly recurring subscription, and Microsoft will bill your payment method unless you cancel the subscription.</p>
 <p id="h_01HE3W5FZ3ST90GN4MGBJCNMA9"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01HE3W5FZ3ST90GN4MGBJCNMA9">What is Discord Nitro?</a></li>
-    <li><a href="#h_01HE3W5FZ3X2RN5BJAPEW7NNK0">What is Xbox Game Pass for PC?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ3ST90GN4MGBJCNMA9">What is Discord Nitro?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ3X2RN5BJAPEW7NNK0">What is Xbox Game Pass for PC?</a></li>
     <li>
-        <a href="#h_01HE3W5FZ35H6RYWDCJP1WB7DG">How do I claim the Xbox Game Pass for PC Code in Discord?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ35H6RYWDCJP1WB7DG">How do I claim the Xbox Game Pass for PC Code in Discord?</a>
         <ul>
-            <li><a href="#h_01HE3W5FZ391BV7KTQV7AAZS9D">Eligibility for Claiming this Promotion in Discord</a></li>
-            <li><a href="#h_01HE3W5FZ4DBWTE2WV7RGQP24Q">Step By Step Claim Instructions </a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ391BV7KTQV7AAZS9D">Eligibility for Claiming this Promotion in Discord</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4DBWTE2WV7RGQP24Q">Step By Step Claim Instructions </a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01HE3W5FZ4GBHD4WEMZGQ2MS12">How do I Redeem this Xbox Game Pass for PC Code to my Microsoft Account? </a>
+        <a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4GBHD4WEMZGQ2MS12">How do I Redeem this Xbox Game Pass for PC Code to my Microsoft Account? </a>
         <ul>
-            <li><a href="#h_01HE3W5FZ4HQMX9D8C692H2FP4">Eligibility for Redeeming the Xbox Code on your Microsoft Account</a></li>
-            <li><a href="#h_01HE3W5FZ4H243XHHD425F28MT">Step By Step Claim Instructions </a></li>
-            <li><a href="#h_01HE3W5FZ4B5R8A650QANSPFAT">How do I share the Xbox Code with a Friend?</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4HQMX9D8C692H2FP4">Eligibility for Redeeming the Xbox Code on your Microsoft Account</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4H243XHHD425F28MT">Step By Step Claim Instructions </a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4B5R8A650QANSPFAT">How do I share the Xbox Code with a Friend?</a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01HE3W5FZ4HN2QXA12KJDF9KB7">Frequently Asked Questions</a>
+        <a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4HN2QXA12KJDF9KB7">Frequently Asked Questions</a>
         <ul>
-            <li><a href="#h_01HE3W5FZ4NHSXRAY8KA2TAME5">Promotion Details</a></li>
-            <li><a href="#h_01HE3W5FZ43GBV90J18HG7C4CP">Eligibility for Promotion</a></li>
-            <li><a href="#h_01HE3W5FZ48JVB4EX9KTJE4AWJ">Claiming and Redemption Process</a></li>
-            <li><a href="#h_01HE3W5FZ4C1Q2H4WJRCPNP6HG">Potential Errors and Other Issues</a></li>
-            <li><a href="#h_01HE3W5FZ4AF69AZDAR24349F6">Legal</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4NHSXRAY8KA2TAME5">Promotion Details</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ43GBV90J18HG7C4CP">Eligibility for Promotion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ48JVB4EX9KTJE4AWJ">Claiming and Redemption Process</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4C1Q2H4WJRCPNP6HG">Potential Errors and Other Issues</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4AF69AZDAR24349F6">Legal</a></li>
         </ul>
     </li>
 </ul>
@@ -62,7 +63,7 @@
         </ul>
     </li>
 </ul>
-<p>Unfortunately, if you are a <strong>Nitro Basic, Nitro Classic, or Server Boosting</strong> member, you'll need to become a Nitro member in order to claim this promotion.</p>
+<p id="docs-internal-guid-1542ec94-7fff-2400-4d6c-8fd69cfd0273">Unfortunately, if you are a <strong>Nitro trial member, Nitro Basic, Nitro Classic, or Server Boosting</strong> <strong>member</strong>, you are ineligible to claim this promotion.</p>
 <h3 id="h_01HE3W5FZ40RFXJGZ4T6A5QNP2"><span style="color: #434343;">Note: If you claimed your Nitro membership from the Xbox Game Pass promotion, you will not be eligible to redeem a Xbox Game Pass for PC Code in your Gift Inventory!</span></h3>
 <h2 id="h_01HE3W5FZ4DBWTE2WV7RGQP24Q"><strong>Step By Step Claim Instructions </strong></h2>
 <p><strong>1) Log into Your Discord account and head to the Gift Inventory tab. </strong></p>
@@ -70,13 +71,13 @@
 <p>You may notice a notification bar at the top of your browser/desktop app, and you can press the "<strong>Take me there" button</strong> in the notification bar to be redirected to your Gift Inventory. </p>
 <p>You can also directly head to your <strong>User Settings</strong>, and then select the <strong>Gift Inventory tab</strong>.</p>
 <p>You may notice a notification bar at the top of your client! Once you’ve selected <strong>Claim</strong> in the notification bar, you’ll see a Gift magically appear in your Gift Inventory.</p>
-<p class="wysiwyg-text-align-center"><img style="height: 135px; width: 624px;" src="https://lh7-us.googleusercontent.com/9xaDMBb9f_73uCmR3tZUoX7HY3kP_0aHh4RMIR7a6Etk8IvvEXkt9U7nkA309RlqXNLRZcLhadLpSPvj5j6ojRLYCncX1dJdlj3OD5iSsGONPsj57XyVV9f9DMKfPo_gDMXbRhx9hp9I12UG7NLHs9I"></p>
+<p class="wysiwyg-text-align-center"><img style="height: 135px; width: 624px;" src="https://support.discord.com/hc/article_attachments/19157216285463"></p>
 <p><strong>2) Select the Claim button for the Xbox Game Pass code for PC</strong></p>
 <p>Once you press <strong>Claim </strong>on the 3 months of Xbox Game Pass for PC in the Gift Inventory and you'll then see a new pop-up with your 12 character code for this promotion.</p>
 <p>If you want to redeem your code later, you can press the <strong>Maybe Later</strong> button, and then redeem the code before <strong>February 28, 2024</strong>.</p>
-<p class="wysiwyg-text-align-center"><img style="height: 360px; width: 624px;" src="https://lh7-us.googleusercontent.com/nmeAIEmlRy7mkdjC-E5PvDCi7Co8qnUF3SACrFQlgETk4oUY_fZSRpU79hcvq2c7VxE7-nlcNN449DHTp9w1n_Ahg3kVEokpr4_KdwXoQ6RnMGtQLLanc-wThKrwi_UkrtwBiUIkYv8Pmjw2SMktMu8"></p>
+<p class="wysiwyg-text-align-center"><img style="height: 360px; width: 624px;" src="https://support.discord.com/hc/article_attachments/19157216289943"></p>
 <p>We’ll also email you with a copy of your code as well - so if you’re eating pizza and need to redeem it later, we got you! Just search for “Your Xbox Game Pass for PC Redemption Code” in your Inbox. </p>
-<p class="wysiwyg-text-align-center"><img style="height: 450px; width: 503px;" src="https://lh7-us.googleusercontent.com/h0dbMIJ7l2rqkNimQNCmcO_IJles5GinKgNpUPTR8jUd7jFty8KuTkNSyjU2-laJ99YvGNdmFXYoDIJGd2WY2JepDy84KwvjLxT0I0befIk8DMPQguzJFmiXKcK9qCu6gK0pVpStD1BFAu_MwIJvyPE"></p>
+<p class="wysiwyg-text-align-center"><img style="height: 450px; width: 503px;" src="https://support.discord.com/hc/article_attachments/19157216295703"></p>
 <h1 id="h_01HE3W5FZ4GBHD4WEMZGQ2MS12"><strong>How do I Redeem this Xbox Game Pass Code to my Microsoft Account? </strong></h1>
 <p>Once you have redeemed the code in the Gift Inventory, you'll now need to officially redeem this code on your Microsoft account (or share this Xbox Game Pass for PC code with a friend)! </p>
 <h2 id="h_01HE3W5FZ4HQMX9D8C692H2FP4"><strong>Eligibility for Redeeming the Xbox Code on your Microsoft Account</strong></h2>
@@ -85,7 +86,7 @@
 <p>However, while you won't be able to claim this Xbox Game Pass for PC promotion on your own Microsoft account, you can copy and paste the 25 character code and share with a friend!</p>
 <h2 id="h_01HE3W5FZ4H243XHHD425F28MT"><strong>Step By Step Claim Instructions </strong></h2>
 <h3 id="h_01HE3W5FZ4YJD51SV1F6GTN2BS">Note: Make sure you are redeeming this Xbox Game Pass for PC on the correct Microsoft account! Discord cannot transfer the Game Pass for PC from one Microsoft account to another!</h3>
-<p class="wysiwyg-text-align-center"><img style="height: 331px; width: 624px;" src="https://lh7-us.googleusercontent.com/h_0KIdVg85fHNLnY0wFRUf-LXbRLyOiiOPi2SqizXPp5IH4jtqCFm1gQKDWtCP9W34YkeYGfSDj68VFJqmT5G5Ta0HxzkKOr0dQ4U2bpiW9yoZ2XZ_va2U5D1tgxAKzJH2MT1Sy4fo63vDRFkgnUI2k"></p>
+<p class="wysiwyg-text-align-center"><img style="height: 331px; width: 624px;" src="https://support.discord.com/hc/article_attachments/19157216299799"></p>
 <p>In order to redeem the Xbox Game Pass for PC promotion on your Microsoft account, you'll need to copy that code from Discord and head over to<a href="https://redeem.microsoft.com/" target="_blank" rel="noopener noreferrer"> redeem.microsoft.com!</a></p>
 <p>Once you're at<a href="https://redeem.microsoft.com/" target="_blank" rel="noopener noreferrer"> redeem.microsoft.com</a>, you'll then need to follow these steps below:</p>
 <ol>
@@ -103,11 +104,11 @@
 <h1 id="h_01HE3W5FZ4HN2QXA12KJDF9KB7"><strong>Frequently Asked Questions</strong></h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
 <ul>
-    <li><a href="#h_01HE3W5FZ4NHSXRAY8KA2TAME5"><strong>Promotion Details</strong></a></li>
-    <li><a href="#h_01HE3W5FZ43GBV90J18HG7C4CP"><strong>Eligibility for Promotion</strong></a></li>
-    <li><a href="#h_01HE3W5FZ48JVB4EX9KTJE4AWJ"><strong>Claiming and Redemption Process</strong></a></li>
-    <li><a href="#h_01HE3W5FZ4C1Q2H4WJRCPNP6HG"><strong>Potential Errors and Other Issues</strong></a></li>
-    <li><a href="#h_01HE3W5FZ4AF69AZDAR24349F6"><strong>Legal</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4NHSXRAY8KA2TAME5"><strong>Promotion Details</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ43GBV90J18HG7C4CP"><strong>Eligibility for Promotion</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ48JVB4EX9KTJE4AWJ"><strong>Claiming and Redemption Process</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4C1Q2H4WJRCPNP6HG"><strong>Potential Errors and Other Issues</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4AF69AZDAR24349F6"><strong>Legal</strong></a></li>
 </ul>
 <h2 id="h_01HE3W5FZ4NHSXRAY8KA2TAME5"><strong>Promotion Details</strong></h2>
 <p><strong>Q: How long does this promotion for Nitro members run for?</strong></p>
@@ -119,10 +120,10 @@
 <h2 id="h_01HE3W5FZ43GBV90J18HG7C4CP"><strong>Eligibility for Promotion</strong></h2>
 <p><strong>Q: Who can claim this Xbox Game Pass for PC promotion in Discord?</strong></p>
 <p><strong>A:</strong>  All current and new Nitro members are eligible for this perk. </p>
-<p>This does not include Nitro Basic, Nitro Classic, or Server Boost-only members.</p>
+<p id="docs-internal-guid-91fcd622-7fff-b638-f362-6fea2f1fc7a2">This does not include Nitro trial users, Nitro Basic, Nitro Classic, or Server Boost-only members. </p>
 <p><strong>Q: Who can redeem this Xbox Game Pass for PC code to their Microsoft account?</strong></p>
 <p><strong>A: </strong>This trial is valid for new Xbox Game Pass members only.</p>
-<p>A valid payment method is required. Unless you cancel, you will be charged the then-current regular membership rate when the promotional period ends. Limit: 1 per person/account. Subject to the Microsoft Services Agreement, Game Pass terms and system requirements at:<a href="http://xbox.com/subscriptionterms" target="_blank" rel="noopener noreferrer"> xbox.com/subscriptionterms</a>. Available in certain regions only. Claim by <strong>January 31, 2024</strong> <strong>(11:59pm PST)</strong>. Redeem by<strong> February 28, 2024</strong>. You can find more information regarding the eligibility requirements <a href="#h_01HE3W5FZ4HQMX9D8C692H2FP4">here</a>. </p>
+<p>A valid payment method is required. Unless you cancel, you will be charged the then-current regular membership rate when the promotional period ends. Limit: 1 per person/account. Subject to the Microsoft Services Agreement, Game Pass terms and system requirements at:<a href="http://xbox.com/subscriptionterms" target="_blank" rel="noopener noreferrer"> xbox.com/subscriptionterms</a>. Available in certain regions only. Claim by <strong>January 31, 2024</strong> <strong>(11:59pm PST)</strong>. Redeem by<strong> February 28, 2024</strong>. You can find more information regarding the eligibility requirements <a href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4HQMX9D8C692H2FP4">here</a>. </p>
 <h2 id="h_01HE3W5FZ48JVB4EX9KTJE4AWJ"><strong>Claiming and Redemption Process</strong></h2>
 <p><strong>Q: What if I already have an Xbox Game Pass for PC subscription tied to my Microsoft account?</strong></p>
 <p><strong>A:</strong> If you were previously subscribed or currently subscribed to Xbox Game Pass for PC, or currently have an Xbox Game Pass Ultimate subscription, you will not be able to redeem the three month trial for Xbox Game Pass for PC!</p>
