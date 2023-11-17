@@ -22374,7 +22374,6 @@
                     global_panels: "Use global panels for chat",
                     panels_navigator: "Use panels navigator",
                     cozy_header: "Cozy header",
-                    disable_search_preview: "Disable new search previews",
                     enable_file_link_redesign: "Enables the new file and links in search",
                     enable_channel_emojis: "Enables channel emoji UI components"
                 },
@@ -49502,7 +49501,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "246705"
+                                build_number: "246715"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62753,4 +62752,4 @@
         }
     }
 ]);
-//# sourceMappingURL=aa476d77da32fd8ce8ff.js.map
+//# sourceMappingURL=afb819b175aada336528.js.map
