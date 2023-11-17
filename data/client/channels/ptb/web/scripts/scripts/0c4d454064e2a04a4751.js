@@ -1012,7 +1012,7 @@
                 messageContainsGifOrVideo: function() {
                     return T
                 }
-            }), n("702976"), n("222007"), n("808653");
+            }), n("702976"), n("511434"), n("313619"), n("654714"), n("287168"), n("956660"), n("222007"), n("808653");
             var l, a, s = n("884691"),
                 i = n("651693"),
                 r = n("610730"),
@@ -1070,9 +1070,14 @@
                         } = e;
                         if (null == r || null == o) return null;
                         let c = (0, i.isVideoFile)(u),
-                            f = null != e.flags && (0, m.hasFlag)(e.flags, h.MessageAttachmentFlags.IS_THUMBNAIL);
+                            f = null != e.flags && (0, m.hasFlag)(e.flags, h.MessageAttachmentFlags.IS_THUMBNAIL),
+                            p = null != t ? t : n;
+                        if (c) {
+                            let e = new URL(t);
+                            e.searchParams.append("format", "jpeg"), p = e.toString()
+                        }
                         return {
-                            src: c ? "".concat(t, "?format=jpeg") : null != t ? t : n,
+                            src: p,
                             width: r,
                             height: o,
                             spoiler: null != a && a,
@@ -10697,4 +10702,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d284a831c490b913cf65.js.map
+//# sourceMappingURL=0c4d454064e2a04a4751.js.map
