@@ -22806,8 +22806,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .name__8d1ec {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -123715,4 +123715,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6ccc7fef02281a1c7c60.css.map*/
+/*# sourceMappingURL=app.39e8250c1f7dddf4c829.css.map*/
