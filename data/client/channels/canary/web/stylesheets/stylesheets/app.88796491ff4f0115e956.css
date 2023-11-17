@@ -62852,6 +62852,96 @@ html .progress__4ef76 {
     color: var(--brand-500)
 }
 
+.mainLoginContainer_e6f422 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: start
+}
+
+.title_ac4639 {
+    text-align: center;
+    width: 100%
+}
+
+.subtitle_ae0baf {
+    padding: 0 20px;
+    margin-bottom: 10px
+}
+
+.loginForm__0ed46 {
+    margin-top: 16px
+}
+
+.paddingResetLeft_c55610 {
+    padding-left: 0
+}
+
+.needAccount_a2e62d {
+    font-size: 14px;
+    line-height: 16px
+}
+
+.navRow_bb8efc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary-700);
+    border-radius: 0 0 5px 5px;
+    align-items: center
+}
+
+.navRow_bb8efc[data-theme=light] {
+    background-color: var(--background-tertiary)
+}
+
+.navRow_bb8efc[data-theme=dark] {
+    background-color: var(--primary-700)
+}
+
+.continueButton__26181,
+.backButton__5a734 {
+    width: auto;
+    margin: 16px
+}
+
+.backButton__5a734[data-theme=light] {
+    color: var(--interactive-normal)
+}
+
+.backButton__5a734[data-theme=light]:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-color: var(--interactive-normal)
+}
+
+.backButton__5a734[data-theme=dark] {
+    color: var(--primary-300)
+}
+
+.backButton__5a734[data-theme=dark]:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-300)
+}
+
+.modal__8a0f3 {
+    display: flex;
+    flex-direction: row;
+    width: 480px;
+    min-height: 300px
+}
+
+.card__28b25 {
+    flex-shrink: 0;
+    width: 480px;
+    background-color: var(--primary-630);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px 5px 0 0;
+    padding: 24px 16px
+}
+
 .list__4e6aa {
     display: flex;
     flex-direction: column;
@@ -108058,96 +108148,6 @@ html .invoiceCancelRow_a8669b {
     flex-direction: column
 }
 
-.mainLoginContainer_e6f422 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: start
-}
-
-.title_ac4639 {
-    text-align: center;
-    width: 100%
-}
-
-.subtitle_ae0baf {
-    padding: 0 20px;
-    margin-bottom: 10px
-}
-
-.loginForm__0ed46 {
-    margin-top: 16px
-}
-
-.paddingResetLeft_c55610 {
-    padding-left: 0
-}
-
-.needAccount_a2e62d {
-    font-size: 14px;
-    line-height: 16px
-}
-
-.navRow_bb8efc {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--primary-700);
-    border-radius: 0 0 5px 5px;
-    align-items: center
-}
-
-.navRow_bb8efc[data-theme=light] {
-    background-color: var(--background-tertiary)
-}
-
-.navRow_bb8efc[data-theme=dark] {
-    background-color: var(--primary-700)
-}
-
-.continueButton__26181,
-.backButton__5a734 {
-    width: auto;
-    margin: 16px
-}
-
-.backButton__5a734[data-theme=light] {
-    color: var(--interactive-normal)
-}
-
-.backButton__5a734[data-theme=light]:hover {
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-    text-decoration-color: var(--interactive-normal)
-}
-
-.backButton__5a734[data-theme=dark] {
-    color: var(--primary-300)
-}
-
-.backButton__5a734[data-theme=dark]:hover {
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-    text-decoration-color: var(--primary-300)
-}
-
-.modal__8a0f3 {
-    display: flex;
-    flex-direction: row;
-    width: 480px;
-    min-height: 300px
-}
-
-.card__28b25 {
-    flex-shrink: 0;
-    width: 480px;
-    background-color: var(--primary-630);
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px 5px 0 0;
-    padding: 24px 16px
-}
-
 .modal__20db0 {
     position: relative
 }
@@ -119579,18 +119579,6 @@ div.nagbar_c731ff {
     height: 24px
 }
 
-.uploadIconOption__973d0 {
-    width: 16px
-}
-
-.blurOptionIcon__4040e {
-    width: 24px
-}
-
-.noneOptionIcon_be7732 {
-    width: 18px
-}
-
 .backgroundOptions_e72ce2 {
     margin-top: 16px;
     display: grid;
@@ -123644,4 +123632,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.054ac8e5c5a38057893e.css.map*/
+/*# sourceMappingURL=app.88796491ff4f0115e956.css.map*/

@@ -1,39 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     ["62597"], {
-        2662: function(e, t, s) {
-            "use strict";
-            s.r(t), s.d(t, {
-                RefreshIcon: function() {
-                    return r
-                }
-            });
-            var a = s("37983");
-            s("884691");
-            var i = s("669491"),
-                n = s("75196");
-            let r = e => {
-                let {
-                    width: t = 24,
-                    height: s = 24,
-                    color: r = i.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: l = "",
-                    ...d
-                } = e;
-                return (0, a.jsx)("svg", {
-                    ...(0, n.default)(d),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: s,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, a.jsx)("path", {
-                        fill: "string" == typeof r ? r : r.css,
-                        d: "M21 2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.93A7.997 7.997 0 0 0 12 4a7.962 7.962 0 0 0-5.028 1.777 1 1 0 0 1-1.258-1.554A9.962 9.962 0 0 1 12 2a9.985 9.985 0 0 1 8 4V3a1 1 0 0 1 1-1ZM3 22a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H5.07A7.997 7.997 0 0 0 12 20a7.963 7.963 0 0 0 5.028-1.777 1 1 0 1 1 1.258 1.554A9.963 9.963 0 0 1 12 22a9.985 9.985 0 0 1-8-4v3a1 1 0 0 1-1 1Z",
-                        className: l
-                    })
-                })
-            }
-        },
         44771: function(e, t, s) {
             "use strict";
             s.r(t), s.d(t, {
@@ -269,10 +235,10 @@
                     return S
                 },
                 DefaultThemeSelection: function() {
-                    return v
+                    return P
                 },
                 GradientThemeSelection: function() {
-                    return x
+                    return C
                 }
             }), s("794252");
             var a = s("37983");
@@ -336,7 +302,7 @@
                 })
             }
 
-            function v(e) {
+            function P(e) {
                 let {
                     theme: t,
                     isSelected: s,
@@ -349,15 +315,15 @@
                     systemPrefersColorScheme: I.ThemeTypes.LIGHT
                 }, () => f.lightIcon).with({
                     theme: I.ThemeTypes.LIGHT
-                }, () => f.lightIcon).otherwise(() => f.darkIcon), v = (0, r.match)(t).with(I.ThemeTypes.LIGHT, () => _.default.Messages.THEME_LIGHT).with(I.ThemeTypes.DARK, () => _.default.Messages.THEME_DARK).with("system", () => _.default.Messages.THEME_SYSTEM).exhaustive(), x = (0, o.useRedesignIconContext)().enabled;
+                }, () => f.lightIcon).otherwise(() => f.darkIcon), P = (0, r.match)(t).with(I.ThemeTypes.LIGHT, () => _.default.Messages.THEME_LIGHT).with(I.ThemeTypes.DARK, () => _.default.Messages.THEME_DARK).with("system", () => _.default.Messages.THEME_SYSTEM).exhaustive(), C = (0, o.useRedesignIconContext)().enabled;
                 return (0, a.jsx)(N, {
                     onSelect: i,
                     isSelected: s,
-                    name: v,
+                    name: P,
                     className: n(f.defaultThemeSelection, S),
                     children: "system" === t && (0, a.jsx)("div", {
                         className: f.iconWrapper,
-                        children: x ? (0, a.jsx)(u.RefreshIcon, {
+                        children: C ? (0, a.jsx)(u.RefreshIcon, {
                             color: E(m)
                         }) : (0, a.jsx)(h.default, {
                             fill: E(m)
@@ -366,7 +332,7 @@
                 })
             }
 
-            function x(e) {
+            function C(e) {
                 let {
                     preset: t,
                     isSelected: s,
@@ -422,23 +388,23 @@
                 f = s("626301"),
                 S = s("917247"),
                 N = s("956597"),
-                v = s("891653"),
-                x = s("505093"),
-                P = s("161778"),
+                P = s("891653"),
+                C = s("505093"),
+                x = s("161778"),
                 R = s("168973"),
-                C = s("491605"),
-                g = s("476765"),
-                p = s("599110"),
-                A = s("32531"),
-                O = s("714657"),
+                v = s("491605"),
+                p = s("476765"),
+                g = s("599110"),
+                O = s("32531"),
+                A = s("714657"),
                 D = s("164546"),
                 M = s("941719"),
                 j = s("49111"),
                 y = s("646718"),
                 G = s("116319"),
                 k = s("397336"),
-                w = s("843455"),
-                b = s("782340"),
+                b = s("843455"),
+                w = s("782340"),
                 H = s("809404");
             (i = a || (a = {})).EDITOR = "EDITOR", i.SETTINGS = "SETTINGS";
             let L = Object.freeze({
@@ -452,7 +418,7 @@
                         themeName: s,
                         analyticsLocations: a
                     } = e;
-                    p.default.track(j.AnalyticEvents.CLIENT_THEME_UPDATED, {
+                    g.default.track(j.AnalyticEvents.CLIENT_THEME_UPDATED, {
                         feature_name: y.AnalyticsPremiumFeatureNames.CLIENT_THEME,
                         theme_name: s,
                         is_persisted: t,
@@ -472,17 +438,17 @@
                         type: "EDITOR",
                         isCoachmark: !0,
                         isPreview: !0
-                    }, () => b.default.Messages.CLIENT_THEMES_EDITOR_PREVIEW_A_THEME_HEADER).with({
+                    }, () => w.default.Messages.CLIENT_THEMES_EDITOR_PREVIEW_A_THEME_HEADER).with({
                         type: "EDITOR",
                         isCoachmark: !0
-                    }, () => b.default.Messages.CLIENT_THEMES_EDITOR_PICK_A_THEME_HEADER).otherwise(() => b.default.Messages.USER_SETTINGS_APPEARANCE_GRADIENT_THEME_TITLE);
+                    }, () => w.default.Messages.CLIENT_THEMES_EDITOR_PICK_A_THEME_HEADER).otherwise(() => w.default.Messages.USER_SETTINGS_APPEARANCE_GRADIENT_THEME_TITLE);
                     return (0, n.jsxs)("div", {
                         className: H.title,
                         children: [(0, n.jsx)(m.Heading, {
                             "aria-label": i,
                             variant: "text-md/medium",
                             children: i
-                        }), (0, n.jsx)(v.default, {
+                        }), (0, n.jsx)(P.default, {
                             className: H.premiumIcon
                         })]
                     })
@@ -502,19 +468,19 @@
                     }).with({
                         type: "EDITOR",
                         isPreview: !0
-                    }, () => b.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_PREVIEW_WITH_LINK.format({
+                    }, () => w.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_PREVIEW_WITH_LINK.format({
                         onPremiumClick: f.navigateToPremiumMarketingPage
                     })).with({
                         type: "EDITOR",
                         isCoachmark: !0
-                    }, () => b.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_COACHMARK).with({
+                    }, () => w.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_COACHMARK).with({
                         type: "EDITOR",
                         isPreview: !1
-                    }, () => b.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION).with({
+                    }, () => w.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION).with({
                         isPreview: !0
-                    }, () => b.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_WITH_LINK.format({
+                    }, () => w.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_WITH_LINK.format({
                         onPremiumClick: f.navigateToPremiumMarketingPage
-                    })).otherwise(() => b.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_SETTINGS);
+                    })).otherwise(() => w.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_SETTINGS);
                     return (0, n.jsx)(m.Heading, {
                         variant: "text-sm/normal",
                         children: d
@@ -524,7 +490,7 @@
                     let {
                         type: t,
                         children: s
-                    } = e, a = (0, g.useUID)(), i = (0, m.useRadioGroup)({
+                    } = e, a = (0, p.useUID)(), i = (0, m.useRadioGroup)({
                         orientation: "horizontal",
                         labelledBy: a
                     }), l = r.useMemo(() => ({
@@ -547,8 +513,8 @@
                     delay: s
                 } = r.useContext(U), {
                     analyticsLocations: a
-                } = (0, _.default)(I.default.CLIENT_THEMES_THEME_SELECTOR), [i, l, u] = (0, c.useStateFromStoresArray)([P.default, R.default, O.default], () => [P.default.theme, null == O.default.gradientPreset, R.default.useSystemTheme === G.SystemThemeState.ON]), o = e => {
-                    (0, A.resetBackgroundGradientPreset)(), B({
+                } = (0, _.default)(I.default.CLIENT_THEMES_THEME_SELECTOR), [i, l, u] = (0, c.useStateFromStoresArray)([x.default, R.default, A.default], () => [x.default.theme, null == A.default.gradientPreset, R.default.useSystemTheme === G.SystemThemeState.ON]), o = e => {
+                    (0, O.resetBackgroundGradientPreset)(), B({
                         isPersisted: !0,
                         analyticsLocations: a,
                         themeName: "default ".concat(e)
@@ -559,13 +525,13 @@
                 return (0, n.jsxs)("section", {
                     className: d(H.presets, t),
                     children: [(0, n.jsx)(D.DefaultThemeSelection, {
-                        theme: w.ThemeTypes.LIGHT,
+                        theme: b.ThemeTypes.LIGHT,
                         isSelected: l && !u && (0, T.isThemeLight)(i),
-                        onSelect: () => o(w.ThemeTypes.LIGHT)
+                        onSelect: () => o(b.ThemeTypes.LIGHT)
                     }), (0, n.jsx)(D.DefaultThemeSelection, {
-                        theme: w.ThemeTypes.DARK,
+                        theme: b.ThemeTypes.DARK,
                         isSelected: l && !u && (0, T.isThemeDark)(i),
-                        onSelect: () => o(w.ThemeTypes.DARK)
+                        onSelect: () => o(b.ThemeTypes.DARK)
                     }), (0, n.jsx)(D.DefaultThemeSelection, {
                         theme: "system",
                         isSelected: l && u,
@@ -583,27 +549,27 @@
                     delay: T
                 } = r.useContext(U), {
                     analyticsLocations: m
-                } = (0, _.default)(I.default.CLIENT_THEMES_THEME_SELECTOR), [v, P, R] = (0, c.useStateFromStoresArray)([O.default], () => {
+                } = (0, _.default)(I.default.CLIENT_THEMES_THEME_SELECTOR), [P, x, R] = (0, c.useStateFromStoresArray)([A.default], () => {
                     var e;
-                    return [O.default.isPreview, O.default.isCoachmark, null === (e = O.default.gradientPreset) || void 0 === e ? void 0 : e.id]
-                }), [g, p] = r.useState(!1), [j, k] = r.useState(-1), w = (0, c.useStateFromStores)([h.default], () => h.default.useReducedMotion), L = (null === (a = (0, S.usePremiumTrialOffer)()) || void 0 === a ? void 0 : null === (t = a.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === y.PremiumSubscriptionSKUs.TIER_2;
+                    return [A.default.isPreview, A.default.isCoachmark, null === (e = A.default.gradientPreset) || void 0 === e ? void 0 : e.id]
+                }), [p, g] = r.useState(!1), [j, k] = r.useState(-1), b = (0, c.useStateFromStores)([h.default], () => h.default.useReducedMotion), L = (null === (a = (0, S.usePremiumTrialOffer)()) || void 0 === a ? void 0 : null === (t = a.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === y.PremiumSubscriptionSKUs.TIER_2;
                 r.useEffect(() => {
-                    (j === M.BACKGROUND_GRADIENT_PRESETS.length - 2 && "EDITOR" === u || R === o.BackgroundGradientPresetId.EASTER_EGG) && p(!0)
+                    (j === M.BACKGROUND_GRADIENT_PRESETS.length - 2 && "EDITOR" === u || R === o.BackgroundGradientPresetId.EASTER_EGG) && g(!0)
                 }, [j, u, R]);
                 let W = (e, t) => {
-                    if ((0, A.updateBackgroundGradientPreset)(e.id), B({
-                            isPersisted: !v,
+                    if ((0, O.updateBackgroundGradientPreset)(e.id), B({
+                            isPersisted: !P,
                             analyticsLocations: m,
                             themeName: o.BackgroundGradientPresetId[e.id]
-                        }), v) {
-                        (0, x.setUseSystemTheme)(G.SystemThemeState.OFF);
+                        }), P) {
+                        (0, C.setUseSystemTheme)(G.SystemThemeState.OFF);
                         return
                     }
                     if ((0, E.saveClientTheme)({
                             backgroundGradientPresetId: e.id,
                             theme: e.theme
                         }, T), null != t) {
-                        if (g && p(!1), t <= j || 0 === t) {
+                        if (p && g(!1), t <= j || 0 === t) {
                             k(0);
                             return
                         }
@@ -612,10 +578,10 @@
                 };
                 return (0, n.jsxs)("section", {
                     className: i,
-                    children: ["EDITOR" === u && v && L ? (0, n.jsx)(N.default, {
+                    children: ["EDITOR" === u && P && L ? (0, n.jsx)(N.default, {
                         type: y.PremiumUpsellTypes.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
                         subscriptionTier: y.PremiumSubscriptionSKUs.TIER_2,
-                        children: b.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_PREVIEW_WITH_LINK.format({
+                        children: w.default.Messages.CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_PREVIEW_WITH_LINK.format({
                             onPremiumClick: f.navigateToPremiumMarketingPage
                         })
                     }) : (0, n.jsxs)("div", {
@@ -624,12 +590,12 @@
                             className: H.headings,
                             children: [(0, n.jsx)(K, {
                                 type: u,
-                                isPreview: v,
-                                isCoachmark: P
+                                isPreview: P,
+                                isCoachmark: x
                             }), (0, n.jsx)(F, {
                                 type: u,
-                                isPreview: v,
-                                isCoachmark: P
+                                isPreview: P,
+                                isCoachmark: x
                             })]
                         }), null == l ? void 0 : l()]
                     }), (0, n.jsxs)("div", {
@@ -646,7 +612,7 @@
                             disabled: d,
                             tabIndex: 0 !== t || d ? void 0 : 0
                         }, e.id)), (() => {
-                            if (!g) return null;
+                            if (!p) return null;
                             let e = M.BACKGROUND_GRADIENT_PRESETS_MAP[o.BackgroundGradientPresetId.EASTER_EGG];
                             if (null == e) return null;
                             async function t() {
@@ -661,9 +627,9 @@
                                     preset: e,
                                     isSelected: R === o.BackgroundGradientPresetId.EASTER_EGG,
                                     onSelect: () => W(e)
-                                }), (0, n.jsx)(C.default, {
+                                }), (0, n.jsx)(v.default, {
                                     importData: t,
-                                    shouldAnimate: !w,
+                                    shouldAnimate: !b,
                                     className: H.sparkles
                                 })]
                             })
@@ -716,4 +682,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84112e944bd8e0af2d10.js.map
+//# sourceMappingURL=f2e52435130001da88ba.js.map

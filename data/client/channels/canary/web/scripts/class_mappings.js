@@ -24565,22 +24565,19 @@
                 backgroundOptions: "backgroundOptions_e72ce2",
                 backgroundOptionsLarge: "backgroundOptionsLarge_af0f26 backgroundOptions_e72ce2",
                 backgroundOptionsSmall: "backgroundOptionsSmall__1a2d8 backgroundOptions_e72ce2",
-                blurOptionIcon: "blurOptionIcon__4040e",
                 cameraPreviewTitle: "cameraPreviewTitle__3104c",
                 customBackgroundTooltip: "customBackgroundTooltip_cd7a3c",
                 customBackgroundTooltipIcon: "customBackgroundTooltipIcon__45ce5",
                 imageInput: "imageInput_b5def2",
                 newBackgroundTooltipContainer: "newBackgroundTooltipContainer_ab64e1",
                 newTextBadge: "newTextBadge_da2cca",
-                noneOptionIcon: "noneOptionIcon_be7732",
                 overflowEllipsis: "overflowEllipsis__78e39",
                 permissionWarning: "permissionWarning__768f3",
                 playIcon: "playIcon_af44c5",
                 previewToggle: "previewToggle_dcb6b1",
                 selector: "selector__097b2",
                 selectorNoHeader: "selectorNoHeader__26379",
-                spacingTop24: "spacingTop24__04a8d",
-                uploadIconOption: "uploadIconOption__973d0"
+                spacingTop24: "spacingTop24__04a8d"
             }
         },
         38064: function(e, t, o) {
