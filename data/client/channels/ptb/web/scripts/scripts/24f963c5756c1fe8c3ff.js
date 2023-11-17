@@ -31347,25 +31347,22 @@
                     case C.GiftCodeModalStates.ERROR:
                         return Z(i, a, l, s, r);
                     case C.GiftCodeModalStates.SUCCESS:
-                        if (null != u) {
-                            if (null != u.premiumSubscriptionType) {
-                                if (u.premiumSubscriptionType === S.PremiumTypes.TIER_2) {
-                                    let e = u.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_MONTHLY : m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_YEARLY;
-                                    return e.format({
-                                        intervalCount: u.intervalCount
-                                    })
-                                }
-                                let e = u.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_MONTHLY : m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_YEARLY;
-                                return e.format({
-                                    intervalCount: u.intervalCount
+                        if (null != u) return function(e, t) {
+                            if (null != e.premiumSubscriptionType) {
+                                if (e.premiumSubscriptionType === S.PremiumTypes.TIER_2) return e.interval === S.SubscriptionIntervalTypes.MONTH || e.interval === S.SubscriptionIntervalTypes.YEAR ? m.default.Messages.NITRO_FEATURES.format({
+                                    timeInterval: e.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH : m.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR
+                                }) : m.default.Messages.NITRO_FEATURES_GENERIC;
+                                let t = e.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_MONTHLY : m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_YEARLY;
+                                return t.format({
+                                    intervalCount: e.intervalCount
                                 })
                             }
-                            let e = u.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_MONTHLY : m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_YEARLY;
-                            return e.format({
-                                skuName: n.name,
-                                intervalCount: u.intervalCount
+                            let n = e.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_MONTHLY : m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_YEARLY;
+                            return n.format({
+                                skuName: t.name,
+                                intervalCount: e.intervalCount
                             })
-                        }
+                        }(u, n);
                         return m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS.format({
                             skuName: n.name
                         });
@@ -33816,4 +33813,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ecf6a005b33dc1c37318.js.map
+//# sourceMappingURL=24f963c5756c1fe8c3ff.js.map
