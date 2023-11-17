@@ -15263,12 +15263,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -121265,6 +121265,7 @@ div.nagbar_c731ff {
 
 .theme-dark {
     --activity-card-background: var(--primary-700);
+    --alert-bg: var(--primary-600);
     --android-navigation-bar-background: var(--primary-830);
     --android-navigation-scrim-background: hsl(var(--primary-830-hsl) / 0.5);
     --android-ripple: hsl(var(--white-500-hsl) / 0.07);
@@ -121545,6 +121546,7 @@ div.nagbar_c731ff {
     --text-warning: var(--yellow-300);
     --textbox-markdown-syntax: var(--primary-360);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+    --toast-bg: var(--primary-800);
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -121553,6 +121555,7 @@ div.nagbar_c731ff {
 
 .theme-light {
     --activity-card-background: var(--white-500);
+    --alert-bg: var(--white-500);
     --android-navigation-bar-background: var(--primary-100);
     --android-navigation-scrim-background: hsl(var(--primary-100-hsl) / 0.5);
     --android-ripple: hsl(var(--black-500-hsl) / 0.12);
@@ -121833,6 +121836,7 @@ div.nagbar_c731ff {
     --text-warning: var(--yellow-430);
     --textbox-markdown-syntax: var(--primary-530);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+    --toast-bg: var(--white-500);
     --user-profile-header-overflow-background: hsl(var(--white-200-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -121841,6 +121845,7 @@ div.nagbar_c731ff {
 
 .theme-amoled {
     --activity-card-background: var(--primary-700);
+    --alert-bg: var(--black-500);
     --android-navigation-bar-background: var(--plum-24);
     --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
     --android-ripple: hsl(var(--white-500-hsl) / 0.07);
@@ -122121,6 +122126,7 @@ div.nagbar_c731ff {
     --text-warning: var(--yellow-300);
     --textbox-markdown-syntax: var(--plum-9);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+    --toast-bg: var(--plum-19);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -122129,6 +122135,7 @@ div.nagbar_c731ff {
 
 .theme-darker {
     --activity-card-background: var(--primary-700);
+    --alert-bg: var(--plum-20);
     --android-navigation-bar-background: var(--plum-24);
     --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
     --android-ripple: hsl(var(--white-500-hsl) / 0.07);
@@ -122409,6 +122416,7 @@ div.nagbar_c731ff {
     --text-warning: var(--yellow-300);
     --textbox-markdown-syntax: var(--plum-9);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+    --toast-bg: var(--plum-17);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -123707,4 +123715,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d64d1b80720bc1aa9e6e.css.map*/
+/*# sourceMappingURL=app.6ccc7fef02281a1c7c60.css.map*/
