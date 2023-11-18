@@ -24580,27 +24580,31 @@
                 DARWIN_SCKIT_VERSION: function() {
                     return u
                 },
-                WINDOWS_SOUNDSHARE_VERSION: function() {
+                DARWIN_SCKIT_AUDIO_VERSION: function() {
                     return c
                 },
-                WINDOWS_GRAPHICS_CAPTURE_VERSION: function() {
+                WINDOWS_SOUNDSHARE_VERSION: function() {
                     return d
+                },
+                WINDOWS_GRAPHICS_CAPTURE_VERSION: function() {
+                    return f
                 },
                 StreamTypes: function() {
                     return a
                 },
                 STREAM_NOTIFY_GUILD_MAX_SIZE: function() {
-                    return f
+                    return h
                 }
             });
             var i, r, s, a, o = n("561467");
             (i = s || (s = {})).BLACK_SCREEN = "BLACK_SCREEN", i.BLURRY = "BLURRY", i.LAGGING = "LAGGING", i.OUT_OF_SYNC = "OUT_OF_SYNC", i.AUDIO_MISSING = "AUDIO_MISSING", i.AUDIO_POOR = "AUDIO_POOR", i.GAME_ISSUE = "GAME_ISSUE", i.STREAM_STOPPED = "STREAM_STOPPED", i.NO_ISSUE = "NO_ISSUE", i.OTHER = "OTHER";
             let l = ">=19.0.0",
                 u = ">=22.0.0",
-                c = ">=10.0.17763",
-                d = ">=10.0.22000";
+                c = ">=22.0.0",
+                d = ">=10.0.17763",
+                f = ">=10.0.22000";
             (r = a || (a = {})).GUILD = "guild", r.CALL = "call";
-            let f = o.Notifications.StreamNotificationsGuildMaxSize
+            let h = o.Notifications.StreamNotificationsGuildMaxSize
         },
         374014: function(e, t, n) {
             "use strict";
@@ -38545,7 +38549,10 @@
                     return eW
                 }
                 supportsEnableSoundshare() {
-                    return (0, X.isMac)() && eg.supports(eh.Features.SOUNDSHARE) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ec.DARWIN_SOUNDSHARE_VERSION)
+                    return (0, X.isMac)() && eg.supports(eh.Features.SOUNDSHARE) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ec.DARWIN_SOUNDSHARE_VERSION) && !(_.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ec.DARWIN_SCKIT_AUDIO_VERSION) && e8(!1))
+                }
+                supportsScreenSoundshare() {
+                    return (0, X.isMac)() && eg.supports(eh.Features.SOUNDSHARE) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ec.DARWIN_SCKIT_AUDIO_VERSION) && e8(!1)
                 }
                 getVideoStreamParameters() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eh.MediaEngineContextTypes.DEFAULT,
@@ -49507,7 +49514,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "247126"
+                                build_number: "247179"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62758,4 +62765,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6f5b9bfbdd37c491f285.js.map
+//# sourceMappingURL=59476094cba58dc58b83.js.map
