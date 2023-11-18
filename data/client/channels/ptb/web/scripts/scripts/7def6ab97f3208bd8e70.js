@@ -35764,16 +35764,23 @@
                     let n;
                     return null != e ? (null == (n = N[t = e]) && (n = x(t)), n) : L
                 }
+                getFirstChannelOfType(e, t, n) {
+                    let i = this.getChannels(e)[n],
+                        r = i.find(t);
+                    return null != r ? r.channel : null
+                }
                 getFirstChannel(e, t) {
-                    let n = this.getChannels(e)[v],
-                        i = n.find(t);
-                    return null != i ? i.channel : null
+                    var n;
+                    let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+                    return null !== (n = this.getFirstChannelOfType(e, t, v)) && void 0 !== n ? n : i ? this.getFirstChannelOfType(e, t, A) : null
                 }
                 getDefaultChannel(e) {
-                    return this.getFirstChannel(e, e => m.default.can(I.Permissions.VIEW_CHANNEL, e.channel))
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                    return this.getFirstChannel(e, e => m.default.can(I.Permissions.VIEW_CHANNEL, e.channel), t)
                 }
                 getSFWDefaultChannel(e) {
-                    return this.getFirstChannel(e, e => m.default.can(I.Permissions.VIEW_CHANNEL, e.channel) && !e.channel.nsfw)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                    return this.getFirstChannel(e, e => m.default.can(I.Permissions.VIEW_CHANNEL, e.channel) && !e.channel.nsfw, t)
                 }
                 getSelectableChannelIds(e) {
                     return this.getChannels(e)[v].map(e => {
@@ -49514,7 +49521,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "247179"
+                                build_number: "247231"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62765,4 +62772,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59476094cba58dc58b83.js.map
+//# sourceMappingURL=7def6ab97f3208bd8e70.js.map

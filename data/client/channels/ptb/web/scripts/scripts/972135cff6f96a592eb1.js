@@ -721,7 +721,7 @@
                     if ((null == n ? void 0 : n.targetType) === z.InviteTargetTypes.ROLE_SUBSCRIPTIONS_PURCHASE) return j.StaticChannelRoute.ROLE_SUBSCRIPTIONS;
                     if ((null == n ? void 0 : n.targetType) == null && !M.GUILD_VOCAL_CHANNEL_TYPES.has(t.type) && ((0, p.canSeeGuildHome)(e) || (0, S.canSeeOnboardingHome)(e))) return j.StaticChannelRoute.GUILD_HOME;
                     let l = D.default.getChannel(t.id);
-                    return F.default.can(K.Permissions.VIEW_CHANNEL, l) ? t.id : null !== (a = null === (i = U.default.getDefaultChannel(e)) || void 0 === i ? void 0 : i.id) && void 0 !== a ? a : t.id
+                    return F.default.can(K.Permissions.VIEW_CHANNEL, l) ? t.id : null !== (a = null === (i = U.default.getDefaultChannel(e, !0)) || void 0 === i ? void 0 : i.id) && void 0 !== a ? a : t.id
                 }(t, i, a), {
                     targetUserId: u,
                     targetType: o,
@@ -33867,4 +33867,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d896e8f1d6b13cbca4d1.js.map
+//# sourceMappingURL=972135cff6f96a592eb1.js.map
