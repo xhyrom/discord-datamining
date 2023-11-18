@@ -19465,8 +19465,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -121563,6 +121563,7 @@ div.nagbar_c731ff {
     --textbox-markdown-syntax: var(--primary-360);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
     --toast-bg: var(--primary-800);
+    --typing-indicator-bg: var(--primary-630);
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -121853,6 +121854,7 @@ div.nagbar_c731ff {
     --textbox-markdown-syntax: var(--primary-530);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
     --toast-bg: var(--white-500);
+    --typing-indicator-bg: var(--primary-130);
     --user-profile-header-overflow-background: hsl(var(--white-200-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -122143,6 +122145,7 @@ div.nagbar_c731ff {
     --textbox-markdown-syntax: var(--plum-9);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
     --toast-bg: var(--plum-19);
+    --typing-indicator-bg: var(--black-500);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -122433,6 +122436,7 @@ div.nagbar_c731ff {
     --textbox-markdown-syntax: var(--plum-9);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
     --toast-bg: var(--plum-17);
+    --typing-indicator-bg: var(--plum-20);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -123731,4 +123735,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.afdb11102fb38f16ce57.css.map*/
+/*# sourceMappingURL=app.239b63c92415bdb4711f.css.map*/
