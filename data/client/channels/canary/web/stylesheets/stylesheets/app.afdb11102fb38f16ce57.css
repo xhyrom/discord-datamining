@@ -53996,27 +53996,6 @@ html .progress__4ef76 {
     height: 231px
 }
 
-.loading_b968ad {
-    opacity: 0;
-    pointer-events: none
-}
-
-.shopArt__1605a {
-    margin-top: -86px;
-    margin-bottom: -8px
-}
-
-.shopArt__1605a img {
-    height: 176px;
-    width: 213;
-    -o-object-fit: contain;
-    object-fit: contain
-}
-
-.imageLoader_faf230 {
-    display: none
-}
-
 .header__2cd0f {
     margin-top: 8px;
     display: flex;
@@ -70537,6 +70516,10 @@ html .progress__4ef76 {
 .blockedText_e375ba {
     font-size: 12px;
     font-weight: 400
+}
+
+.coachmark__0e6e3 {
+    width: 296px
 }
 
 .checkbox__0fbd2 {
@@ -123748,4 +123731,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2015f350ee07e0cfe53c.css.map*/
+/*# sourceMappingURL=app.afdb11102fb38f16ce57.css.map*/
