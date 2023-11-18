@@ -53768,11 +53768,69 @@ html .progress__4ef76 {
     flex-shrink: 0
 }
 
+.collectiblesList_b551dd {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 8px;
+    justify-items: center;
+    padding-top: 2px
+}
+
+.item_ecbedf {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-floating);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px;
+    border: 2px solid transparent;
+    box-sizing: border-box
+}
+
+.selectedAvatarDecorationItem_aa358a {
+    border-color: var(--brand-500)
+}
+
+.selectedProfileEffectItem__83a5c {
+    box-shadow: 0 0 0 2px var(--brand-500);
+    border-radius: 4px
+}
+
+.avatarDecorationItem_c53626 {
+    height: 100%;
+    width: 100%
+}
+
+.loading__3f327 {
+    height: 100%
+}
+
+.presetEffectImg_b4d9ed {
+    position: absolute;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top
+}
+
+.presetEffectBackground__58a7d {
+    position: absolute;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px
+}
+
 .container__0ec3c {
     background: var(--background-secondary);
     margin-left: 4px;
     border-radius: var(--radius-sm);
-    width: 312px;
+    width: 324px;
     box-shadow: var(--shadow-high);
     display: flex;
     flex-direction: column;
@@ -53816,42 +53874,17 @@ html .progress__4ef76 {
     height: 16px
 }
 
-.listWrapper_f538db {
-    margin: 0 16px
+.listContainer_c0b21e {
+    margin: 0 24px
 }
 
-.collectiblesList_af2701 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    grid-gap: 8px;
-    justify-items: center
+.segmentControl__626aa {
+    padding: 4px;
+    margin: 20px 0 0
 }
 
-.item_cb31c7 {
-    width: 80px;
-    height: 80px;
-    border-radius: var(--radius-sm);
-    background-color: var(--background-floating);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 6px;
-    border: 2px solid transparent;
-    box-sizing: border-box
-}
-
-.selectedItem__7494b {
-    border-color: var(--brand-500)
-}
-
-.avatarDecorationItem__3799e {
-    height: 100%;
-    width: 100%
-}
-
-.loading_cb78e1 {
-    height: 100%
+.segmentControlOption__79596 {
+    border-radius: 4px
 }
 
 .clearStatusIcon_f08a92 {
@@ -123715,4 +123748,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6ccc7fef02281a1c7c60.css.map*/
+/*# sourceMappingURL=app.2015f350ee07e0cfe53c.css.map*/
