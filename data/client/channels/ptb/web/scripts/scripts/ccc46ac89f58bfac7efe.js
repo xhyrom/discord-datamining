@@ -1159,8 +1159,10 @@
                             fill: l
                         })
                     })
-                }, a.ScreenXIcon)
+                }, a.ScreenXIcon, void 0, {
+                    size: 24
+                })
         }
     }
 ]);
-//# sourceMappingURL=5c5cb6ac79f645f579f7.js.map
+//# sourceMappingURL=ccc46ac89f58bfac7efe.js.map

@@ -807,8 +807,10 @@
                             d: "M20 10.9378H14.2199H8.06628L10.502 8.50202L9 7L4 12L9 17L10.502 15.498L8.06628 13.0622H20V10.9378Z"
                         })
                     })
-                }, i.ArrowSmallLeftIcon)
+                }, i.ArrowSmallLeftIcon, void 0, {
+                    size: 24
+                })
         }
     }
 ]);
-//# sourceMappingURL=20be2ddfb93f9b9f270f.js.map
+//# sourceMappingURL=f76be1d4b4998a8405f1.js.map

@@ -765,9 +765,9 @@
                 c = t("697218"),
                 u = t("290182"),
                 d = t("116320"),
-                C = t("437825"),
-                f = t("972894"),
-                o = t("446685"),
+                o = t("437825"),
+                C = t("972894"),
+                f = t("446685"),
                 h = t("978499"),
                 v = t("617559"),
                 L = t("213523"),
@@ -797,55 +797,55 @@
                 G = t("468507"),
                 P = t("228427"),
                 F = t("697468"),
-                W = t("547896"),
-                k = t("619911"),
-                X = t("959097"),
-                Y = t("656038"),
-                b = t("724210"),
-                z = t("49111"),
+                z = t("547896"),
+                W = t("619911"),
+                k = t("959097"),
+                X = t("656038"),
+                Y = t("724210"),
+                b = t("49111"),
                 K = t("782340");
 
             function q(e, l, t, a) {
                 if (null == e) return null;
                 if (e.id === (null == l ? void 0 : l.rulesChannelId)) return K.default.Messages.CHANNEL_TOOLTIP_RULES;
                 switch (e.type) {
-                    case z.ChannelTypes.GUILD_TEXT:
+                    case b.ChannelTypes.GUILD_TEXT:
                         if (a) return K.default.Messages.CHANNEL_TOOLTIP_TEXT_ACTIVE_THREADS;
                         if (e.isNSFW()) return K.default.Messages.CHANNEL_TOOLTIP_TEXT_NSFW;
-                        if ((0, Y.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_TEXT_LIMITED;
+                        if ((0, X.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_TEXT_LIMITED;
                         return K.default.Messages.CHANNEL_TOOLTIP_TEXT;
-                    case z.ChannelTypes.GUILD_FORUM:
+                    case b.ChannelTypes.GUILD_FORUM:
                         let n = e.isMediaChannel();
                         if (e.isNSFW()) return n ? K.default.Messages.CHANNEL_TOOLTIP_MEDIA_NSFW : K.default.Messages.CHANNEL_TOOLTIP_FORUM_NSFW;
-                        if ((0, Y.default)(e)) return n ? K.default.Messages.CHANNEL_TOOLTIP_MEDIA_LIMITED : K.default.Messages.CHANNEL_TOOLTIP_FORUM_LIMITED;
+                        if ((0, X.default)(e)) return n ? K.default.Messages.CHANNEL_TOOLTIP_MEDIA_LIMITED : K.default.Messages.CHANNEL_TOOLTIP_FORUM_LIMITED;
                         return n ? K.default.Messages.MEDIA_CHANNEL : K.default.Messages.FORUM;
-                    case z.ChannelTypes.GUILD_MEDIA:
+                    case b.ChannelTypes.GUILD_MEDIA:
                         if (e.isNSFW()) return K.default.Messages.CHANNEL_TOOLTIP_MEDIA_NSFW;
-                        if ((0, Y.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_MEDIA_LIMITED;
+                        if ((0, X.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_MEDIA_LIMITED;
                         return K.default.Messages.MEDIA_CHANNEL;
-                    case z.ChannelTypes.GUILD_STAGE_VOICE:
+                    case b.ChannelTypes.GUILD_STAGE_VOICE:
                         if (t) return K.default.Messages.CHANNEL_TOOLTIP_STAGE_LOCKED;
-                        if ((0, Y.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_STAGE_LIMITED;
+                        if ((0, X.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_STAGE_LIMITED;
                         return K.default.Messages.CHANNEL_TOOLTIP_STAGE;
-                    case z.ChannelTypes.GUILD_VOICE:
+                    case b.ChannelTypes.GUILD_VOICE:
                         if (t) return K.default.Messages.CHANNEL_TOOLTIP_VOICE_LOCKED;
-                        if ((0, Y.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_VOICE_LIMITED;
+                        if ((0, X.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_VOICE_LIMITED;
                         return K.default.Messages.CHANNEL_TOOLTIP_VOICE;
-                    case z.ChannelTypes.GUILD_ANNOUNCEMENT:
+                    case b.ChannelTypes.GUILD_ANNOUNCEMENT:
                         if (e.isNSFW()) return K.default.Messages.CHANNEL_TOOLTIP_ANNOUNCEMENTS_NSFW;
-                        if ((0, Y.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_ANNOUNCEMENTS_LIMITED;
+                        if ((0, X.default)(e)) return K.default.Messages.CHANNEL_TOOLTIP_ANNOUNCEMENTS_LIMITED;
                         return K.default.Messages.CHANNEL_TOOLTIP_ANNOUNCEMENTS;
-                    case z.ChannelTypes.GUILD_STORE:
+                    case b.ChannelTypes.GUILD_STORE:
                         return K.default.Messages.CHANNEL_TOOLTIP_STORE;
-                    case z.ChannelTypes.DM:
+                    case b.ChannelTypes.DM:
                         return K.default.Messages.DM;
-                    case z.ChannelTypes.GROUP_DM:
+                    case b.ChannelTypes.GROUP_DM:
                         return K.default.Messages.GROUP_DM;
-                    case z.ChannelTypes.GUILD_DIRECTORY:
+                    case b.ChannelTypes.GUILD_DIRECTORY:
                         return K.default.Messages.CHANNEL_TOOLTIP_DIRECTORY;
-                    case z.ChannelTypes.PUBLIC_THREAD:
+                    case b.ChannelTypes.PUBLIC_THREAD:
                         return K.default.Messages.THREAD;
-                    case z.ChannelTypes.PRIVATE_THREAD:
+                    case b.ChannelTypes.PRIVATE_THREAD:
                         return K.default.Messages.PRIVATE_THREAD;
                     default:
                         return null
@@ -867,72 +867,72 @@
                     el = null != l && (0, a.canSeeGuildHome)(null == l ? void 0 : l.id);
                 if ((null == e ? void 0 : e.id) === (null == l ? void 0 : l.rulesChannelId)) return L.default;
                 switch (e.type) {
-                    case z.ChannelTypes.GUILD_ANNOUNCEMENT:
+                    case b.ChannelTypes.GUILD_ANNOUNCEMENT:
                         if (Q) {
                             if (e.isNSFW()) return _.default;
-                            if ((0, Y.default)(e)) return y.default;
+                            if ((0, X.default)(e)) return y.default;
                             else return u.default
                         }
                         if (e.isNSFW()) return A.default;
-                        if ((0, Y.default)(e)) return j.default;
+                        if ((0, X.default)(e)) return j.default;
                         return E.default;
-                    case z.ChannelTypes.GUILD_STORE:
-                        return W.default;
-                    case z.ChannelTypes.DM:
-                    case z.ChannelTypes.GROUP_DM:
+                    case b.ChannelTypes.GUILD_STORE:
+                        return z.default;
+                    case b.ChannelTypes.DM:
+                    case b.ChannelTypes.GROUP_DM:
                         return d.default;
-                    case z.ChannelTypes.PRIVATE_THREAD:
+                    case b.ChannelTypes.PRIVATE_THREAD:
                         return D.default;
-                    case z.ChannelTypes.ANNOUNCEMENT_THREAD:
-                    case z.ChannelTypes.PUBLIC_THREAD:
+                    case b.ChannelTypes.ANNOUNCEMENT_THREAD:
+                    case b.ChannelTypes.PUBLIC_THREAD:
                         if (e.isNSFW()) return O.default;
                         if (e.isForumPost()) return I.default;
-                        else return X.default;
-                    case z.ChannelTypes.GUILD_TEXT:
+                        else return k.default;
+                    case b.ChannelTypes.GUILD_TEXT:
                         if (Q) {
                             if (e.isNSFW()) return O.default;
-                            if ((0, Y.default)(e)) return D.default;
-                            else return X.default
+                            if ((0, X.default)(e)) return D.default;
+                            else return k.default
                         }
                         if (e.isNSFW()) return H.default;
-                        if ((0, Y.default)(e)) return M.default;
+                        if ((0, X.default)(e)) return M.default;
                         return p.default;
-                    case z.ChannelTypes.GUILD_FORUM:
+                    case b.ChannelTypes.GUILD_FORUM:
                         let et = e.isMediaChannel();
                         if (e.isNSFW()) return et ? R.default : x.default;
-                        if ((0, Y.default)(e)) return et ? m.default : g.default;
+                        if ((0, X.default)(e)) return et ? m.default : g.default;
                         else return et ? Z.default : N.default;
-                    case z.ChannelTypes.GUILD_MEDIA:
+                    case b.ChannelTypes.GUILD_MEDIA:
                         if (e.isNSFW()) return R.default;
-                        if ((0, Y.default)(e)) return m.default;
+                        if ((0, X.default)(e)) return m.default;
                         else return Z.default;
-                    case z.ChannelTypes.GUILD_STAGE_VOICE:
-                        if (ee) return (0, Y.default)(e) ? w.default : F.default;
+                    case b.ChannelTypes.GUILD_STAGE_VOICE:
+                        if (ee) return (0, X.default)(e) ? w.default : F.default;
                         if (K) return w.default;
-                        if ((0, Y.default)(e)) return F.default;
+                        if ((0, X.default)(e)) return F.default;
                         else return P.default;
-                    case z.ChannelTypes.GUILD_VOICE:
+                    case b.ChannelTypes.GUILD_VOICE:
                         if ($) return V.default;
                         if (e.isNSFW()) return G.default;
-                        if (J) return k.default;
+                        if (J) return W.default;
                         if (ee) {
-                            if ((0, Y.default)(e)) return w.default;
-                            return q ? f.default : S.default
+                            if ((0, X.default)(e)) return w.default;
+                            return q ? C.default : S.default
                         }
                         if (K) return w.default;
-                        if ((0, Y.default)(e)) return q ? f.default : S.default;
-                        else return q ? C.default : B.default;
-                    case z.ChannelTypes.GUILD_DIRECTORY:
+                        if ((0, X.default)(e)) return q ? C.default : S.default;
+                        else return q ? o.default : B.default;
+                    case b.ChannelTypes.GUILD_DIRECTORY:
                         return v.default;
-                    case z.ChannelTypes.GUILD_CATEGORY:
+                    case b.ChannelTypes.GUILD_CATEGORY:
                         return h.default;
                     default:
-                        if (b.StaticChannelIds.has(e.id)) {
-                            if (e.id === b.StaticChannelId.GUILD_HOME || e.id === b.StaticChannelId.SERVER_GUIDE) {
+                        if (Y.StaticChannelIds.has(e.id)) {
+                            if (e.id === Y.StaticChannelId.GUILD_HOME || e.id === Y.StaticChannelId.SERVER_GUIDE) {
                                 if (el) return T.default;
                                 return U.default
                             }
-                            if (e.id === b.StaticChannelId.CHANNEL_BROWSER || e.id === b.StaticChannelId.CUSTOMIZE_COMMUNITY) return o.default
+                            if (e.id === Y.StaticChannelId.CHANNEL_BROWSER || e.id === Y.StaticChannelId.CUSTOMIZE_COMMUNITY) return f.default
                         }
                         return null
                 }
@@ -940,27 +940,27 @@
 
             function Q(e) {
                 switch (e) {
-                    case z.ChannelTypes.GUILD_ANNOUNCEMENT:
+                    case b.ChannelTypes.GUILD_ANNOUNCEMENT:
                         return E.default;
-                    case z.ChannelTypes.GUILD_STORE:
-                        return W.default;
-                    case z.ChannelTypes.DM:
-                    case z.ChannelTypes.GROUP_DM:
+                    case b.ChannelTypes.GUILD_STORE:
+                        return z.default;
+                    case b.ChannelTypes.DM:
+                    case b.ChannelTypes.GROUP_DM:
                         return d.default;
-                    case z.ChannelTypes.PRIVATE_THREAD:
+                    case b.ChannelTypes.PRIVATE_THREAD:
                         return D.default;
-                    case z.ChannelTypes.ANNOUNCEMENT_THREAD:
-                    case z.ChannelTypes.PUBLIC_THREAD:
-                        return X.default;
-                    case z.ChannelTypes.GUILD_TEXT:
-                    case z.ChannelTypes.GUILD_FORUM:
-                    case z.ChannelTypes.GUILD_MEDIA:
+                    case b.ChannelTypes.ANNOUNCEMENT_THREAD:
+                    case b.ChannelTypes.PUBLIC_THREAD:
+                        return k.default;
+                    case b.ChannelTypes.GUILD_TEXT:
+                    case b.ChannelTypes.GUILD_FORUM:
+                    case b.ChannelTypes.GUILD_MEDIA:
                         return p.default;
-                    case z.ChannelTypes.GUILD_STAGE_VOICE:
+                    case b.ChannelTypes.GUILD_STAGE_VOICE:
                         return P.default;
-                    case z.ChannelTypes.GUILD_VOICE:
+                    case b.ChannelTypes.GUILD_VOICE:
                         return B.default;
-                    case z.ChannelTypes.GUILD_CATEGORY:
+                    case b.ChannelTypes.GUILD_CATEGORY:
                         return h.default;
                     default:
                         return null
@@ -1007,7 +1007,9 @@
                             d: "M12.48 13.92C12.48 13.3898 12.9098 12.96 13.44 12.96H22.56C23.0901 12.96 23.52 13.3898 23.52 13.92V20.2213C23.52 20.7514 23.0901 21.1813 22.56 21.1813H18.1294C17.8916 21.1813 17.6623 21.2695 17.4858 21.4289L15.0408 23.6378C14.8865 23.7772 14.64 23.6677 14.64 23.4597V21.4213C14.64 21.2887 14.5325 21.1813 14.4 21.1813H13.44C12.9098 21.1813 12.48 20.7514 12.48 20.2213V13.92Z"
                         })]
                     })
-                }, s.AnnouncementsIcon)
+                }, s.AnnouncementsIcon, void 0, {
+                    size: 24
+                })
         },
         116320: function(e, l, t) {
             "use strict";
@@ -1040,7 +1042,9 @@
                             d: "M12 2C6.486 2 2 6.486 2 12C2 17.515 6.486 22 12 22C14.039 22 15.993 21.398 17.652 20.259L16.521 18.611C15.195 19.519 13.633 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12V12.782C20 14.17 19.402 15 18.4 15L18.398 15.018C18.338 15.005 18.273 15 18.209 15H18C17.437 15 16.6 14.182 16.6 13.631V12C16.6 9.464 14.537 7.4 12 7.4C9.463 7.4 7.4 9.463 7.4 12C7.4 14.537 9.463 16.6 12 16.6C13.234 16.6 14.35 16.106 15.177 15.313C15.826 16.269 16.93 17 18 17L18.002 16.981C18.064 16.994 18.129 17 18.195 17H18.4C20.552 17 22 15.306 22 12.782V12C22 6.486 17.514 2 12 2ZM12 14.599C10.566 14.599 9.4 13.433 9.4 11.999C9.4 10.565 10.566 9.399 12 9.399C13.434 9.399 14.6 10.565 14.6 11.999C14.6 13.433 13.434 14.599 12 14.599Z"
                         })
                     })
-                }, s.AtIcon)
+                }, s.AtIcon, void 0, {
+                    size: 24
+                })
         },
         437825: function(e, l, t) {
             "use strict";
@@ -1073,7 +1077,9 @@
                             d: "M21.526 8.149C21.231 7.966 20.862 7.951 20.553 8.105L18 9.382V7C18 5.897 17.103 5 16 5H4C2.897 5 2 5.897 2 7V17C2 18.104 2.897 19 4 19H16C17.103 19 18 18.104 18 17V14.618L20.553 15.894C20.694 15.965 20.847 16 21 16C21.183 16 21.365 15.949 21.526 15.851C21.82 15.668 22 15.347 22 15V9C22 8.653 21.82 8.332 21.526 8.149Z"
                         })
                     })
-                }, s.VideoIcon)
+                }, s.VideoIcon, void 0, {
+                    size: 24
+                })
         },
         972894: function(e, l, t) {
             "use strict";
@@ -1116,7 +1122,9 @@
                             })]
                         })
                     })
-                }, s.VideoLockIcon)
+                }, s.VideoLockIcon, void 0, {
+                    size: 16
+                })
         },
         978499: function(e, l, t) {
             "use strict";
@@ -1151,7 +1159,9 @@
                             d: "M4,0 L4,3 L0,3 L0,0 L4,0 Z M12,4 L12,7 L8,7 L8,4 L12,4 Z M8,9 L12,9 L12,12 L8,12 L8,9.33333333 L8,9 Z M7,7 L3,7 L3,10 L7,10 L7,12 L3,12 L1,12 L1,4 L3,4 L3,5 L7,5 L7,7 Z"
                         })
                     })
-                }, s.FolderIcon)
+                }, s.FolderIcon, void 0, {
+                    size: 16
+                })
         },
         617559: function(e, l, t) {
             "use strict";
@@ -1207,7 +1217,9 @@
                             d: "M4.5 22C3.11929 22 2 20.8807 2 19.5C2 18.1193 3.11929 17 4.5 17C5.88071 17 7 18.1193 7 19.5C7 20.8807 5.88071 22 4.5 22Z"
                         })]
                     })
-                }, s.HubIcon)
+                }, s.HubIcon, void 0, {
+                    size: 24
+                })
         },
         213523: function(e, l, t) {
             "use strict";
@@ -1242,7 +1254,9 @@
                             d: "M33 34.5833V7.49998H35V36.6666H9C6.791 36.6666 5 34.801 5 32.5V7.49998C5 5.19894 6.791 3.33331 9 3.33331H31V30.4166H9C7.8955 30.4166 7 31.3485 7 32.5C7 33.6515 7.8955 34.5833 9 34.5833H33ZM23.9718 9.99998L15.8889 17.9915L12.7086 14.8441L10 17.5058L15.8885 23.3333L26.6667 12.6669L23.9718 9.99998Z"
                         })
                     })
-                }, s.BookCheckIcon)
+                }, s.BookCheckIcon, void 0, {
+                    size: 24
+                })
         },
         361777: function(e, l, t) {
             "use strict";
@@ -1279,7 +1293,9 @@
                             d: "M21.025 5V4C21.025 2.88 20.05 2 19 2C17.95 2 17 2.88 17 4V5C16.4477 5 16 5.44772 16 6V9C16 9.55228 16.4477 10 17 10H19H21C21.5523 10 22 9.55228 22 9V5.975C22 5.43652 21.5635 5 21.025 5ZM20 5H18V4C18 3.42857 18.4667 3 19 3C19.5333 3 20 3.42857 20 4V5Z"
                         })]
                     })
-                }, s.TextLockIcon)
+                }, s.TextLockIcon, void 0, {
+                    size: 24
+                })
         },
         497757: function(e, l, t) {
             "use strict";
@@ -1318,7 +1334,9 @@
                             d: "M19.8914 3.80204L22.2438 8.55654C22.5726 9.22119 22.0891 9.99999 21.3475 10L16.6179 10C15.8745 10 15.391 9.21769 15.7235 8.55279L18.1007 3.79829C18.4701 3.05951 19.5251 3.06172 19.8914 3.80204ZM18.4998 5H19.4999V7.5H18.4999L18.4998 5ZM18.4998 8.49887C18.4998 8.77589 18.7238 9 18.9998 9C19.2759 9 19.4999 8.77589 19.4999 8.49887C19.4999 8.22224 19.2759 7.99773 18.9998 7.99773C18.7238 7.99773 18.4998 8.22224 18.4998 8.49887Z"
                         })]
                     })
-                }, s.TextWarningIcon)
+                }, s.TextWarningIcon, void 0, {
+                    size: 24
+                })
         },
         393621: function(e, l, t) {
             "use strict";
@@ -1358,7 +1376,9 @@
                             clipRule: "evenodd"
                         })]
                     })
-                }, s.ForumLockIcon)
+                }, s.ForumLockIcon, void 0, {
+                    size: 24
+                })
         },
         905999: function(e, l, t) {
             "use strict";
@@ -1398,7 +1418,9 @@
                             clipRule: "evenodd"
                         })]
                     })
-                }, s.ForumWarningIcon)
+                }, s.ForumWarningIcon, void 0, {
+                    size: 24
+                })
         },
         223383: function(e, l, t) {
             "use strict";
@@ -1432,7 +1454,9 @@
                             fill: n
                         })
                     })
-                }, s.HomeIcon)
+                }, s.HomeIcon, void 0, {
+                    size: 24
+                })
         },
         190986: function(e, l, t) {
             "use strict";
@@ -1486,7 +1510,9 @@
                             })
                         })]
                     })
-                }, s.ImageLockIcon)
+                }, s.ImageLockIcon, void 0, {
+                    size: 24
+                })
         },
         721618: function(e, l, t) {
             "use strict";
@@ -1530,7 +1556,9 @@
                             transform: "translate(1.5, 1)"
                         })]
                     })
-                }, s.ImageWarningIcon)
+                }, s.ImageWarningIcon, void 0, {
+                    size: 24
+                })
         },
         733160: function(e, l, t) {
             "use strict";
@@ -1567,7 +1595,9 @@
                             className: s
                         })]
                     })
-                }, s.AnnouncementsIcon)
+                }, s.AnnouncementsIcon, void 0, {
+                    size: 16
+                })
         },
         990864: function(e, l, t) {
             "use strict";
@@ -1610,7 +1640,9 @@
                             fill: n
                         })]
                     })
-                }, s.AnnouncementsLockIcon)
+                }, s.AnnouncementsLockIcon, void 0, {
+                    size: 16
+                })
         },
         274652: function(e, l, t) {
             "use strict";
@@ -1654,7 +1686,9 @@
                             fill: n
                         })]
                     })
-                }, s.AnnouncementsWarningIcon)
+                }, s.AnnouncementsWarningIcon, void 0, {
+                    size: 16
+                })
         },
         357077: function(e, l, t) {
             "use strict";
@@ -1702,7 +1736,9 @@
                             d: "M13.44 12.96C12.9098 12.96 12.48 13.3898 12.48 13.92V20.2213C12.48 20.7515 12.9098 21.1813 13.44 21.1813H14.4C14.5325 21.1813 14.64 21.2887 14.64 21.4213V23.4597C14.64 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6623 21.2695 17.8916 21.1813 18.1294 21.1813H22.56C23.0901 21.1813 23.52 20.7515 23.52 20.2213V13.92C23.52 13.3898 23.0901 12.96 22.56 12.96H13.44Z"
                         })]
                     })
-                }, s.AnnouncementsWarningIcon)
+                }, s.AnnouncementsWarningIcon, void 0, {
+                    size: 24
+                })
         },
         922744: function(e, l, t) {
             "use strict";
@@ -1746,7 +1782,9 @@
                             d: "M22.8093 8.55658L20.4681 3.80208C20.1036 3.06176 19.0536 3.05954 18.686 3.79833L16.3201 8.55283C15.9893 9.21773 16.4705 10 17.2103 10L21.9173 10C22.6553 10 23.1365 9.22122 22.8093 8.55658ZM20.0785 5.00004H19.0832L19.0833 7.50004H20.0785V5.00004ZM19.5808 9.00004C19.3061 9.00004 19.0832 8.77593 19.0832 8.49891C19.0832 8.22228 19.3061 7.99777 19.5808 7.99777C19.8555 7.99777 20.0785 8.22228 20.0785 8.49891C20.0785 8.77593 19.8555 9.00004 19.5808 9.00004Z"
                         })]
                     })
-                }, s.TextWarningIcon)
+                }, s.TextWarningIcon, void 0, {
+                    size: 24
+                })
         },
         841307: function(e, l, t) {
             "use strict";
@@ -1794,7 +1832,9 @@
                             d: "M13.44 12.96C12.9098 12.96 12.48 13.3898 12.48 13.92V20.2213C12.48 20.7515 12.9098 21.1813 13.44 21.1813H14.4C14.5326 21.1813 14.64 21.2887 14.64 21.4213V23.4597C14.64 23.6677 14.8866 23.7773 15.0409 23.6378L17.4859 21.4289C17.6623 21.2695 17.8917 21.1813 18.1294 21.1813H22.56C23.0902 21.1813 23.52 20.7515 23.52 20.2213V13.92C23.52 13.3898 23.0902 12.96 22.56 12.96H13.44Z"
                         })]
                     })
-                }, s.AnnouncementsLockIcon)
+                }, s.AnnouncementsLockIcon, void 0, {
+                    size: 24
+                })
         },
         745183: function(e, l, t) {
             "use strict";
@@ -1838,7 +1878,9 @@
                             d: "M13.44 12.9599C12.9098 12.9599 12.48 13.3897 12.48 13.9199V20.2212C12.48 20.7514 12.9098 21.1812 13.44 21.1812H14.4C14.5326 21.1812 14.64 21.2886 14.64 21.4212V23.4597C14.64 23.6677 14.8866 23.7772 15.0409 23.6377L17.4859 21.4289C17.6623 21.2694 17.8917 21.1812 18.1294 21.1812H22.56C23.0902 21.1812 23.52 20.7514 23.52 20.2212V13.9199C23.52 13.3897 23.0902 12.9599 22.56 12.9599H13.44Z"
                         })]
                     })
-                }, s.TextLockIcon)
+                }, s.TextLockIcon, void 0, {
+                    size: 24
+                })
         },
         944633: function(e, l, t) {
             "use strict";
@@ -1877,7 +1919,9 @@
                             d: "M21.025 5V4C21.025 2.88 20.05 2 19 2C17.95 2 17 2.88 17 4V5C16.4477 5 16 5.44772 16 6V9C16 9.55228 16.4477 10 17 10H19H21C21.5523 10 22 9.55228 22 9V5.975C22 5.43652 21.5635 5 21.025 5ZM20 5H18V4C18 3.42857 18.4667 3 19 3C19.5333 3 20 3.42857 20 4V5Z"
                         })]
                     })
-                }, s.VoiceLockIcon)
+                }, s.VoiceLockIcon, void 0, {
+                    size: 24
+                })
         },
         468507: function(e, l, t) {
             "use strict";
@@ -1918,7 +1962,9 @@
                             d: "M19.8916 3.80204L22.2439 8.55654C22.5728 9.22119 22.0892 9.99999 21.3476 10L16.618 10C15.8746 10 15.3912 9.21769 15.7236 8.55279L18.1008 3.79829C18.4702 3.05951 19.5253 3.06172 19.8916 3.80204ZM18.4999 5H19.5V7.5H18.5L18.4999 5ZM18.4999 8.49887C18.4999 8.77589 18.724 9 19 9C19.276 9 19.5 8.77589 19.5 8.49887C19.5 8.22224 19.276 7.99773 19 7.99773C18.724 7.99773 18.4999 8.22224 18.4999 8.49887Z"
                         })]
                     })
-                }, s.VoiceWarningIcon)
+                }, s.VoiceWarningIcon, void 0, {
+                    size: 24
+                })
         },
         697468: function(e, l, t) {
             "use strict";
@@ -1967,7 +2013,9 @@
                             fill: n
                         })]
                     })
-                }, s.StageLockIcon)
+                }, s.StageLockIcon, void 0, {
+                    size: 32
+                })
         },
         547896: function(e, l, t) {
             "use strict";
@@ -2000,8 +2048,10 @@
                             d: "M21.707 13.293l-11-11C10.519 2.105 10.266 2 10 2H3c-.553 0-1 .447-1 1v7c0 .266.105.519.293.707l11 11c.195.195.451.293.707.293s.512-.098.707-.293l7-7c.391-.391.391-1.023 0-1.414zM7 9c-1.106 0-2-.896-2-2 0-1.106.894-2 2-2 1.104 0 2 .894 2 2 0 1.104-.896 2-2 2z"
                         })
                     })
-                }, s.TagIcon)
+                }, s.TagIcon, void 0, {
+                    size: 24
+                })
         }
     }
 ]);
-//# sourceMappingURL=3ba791d5b2a97ee0a4ca.js.map
+//# sourceMappingURL=c25018b5062b1a633ab9.js.map

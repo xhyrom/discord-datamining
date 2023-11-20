@@ -201,7 +201,7 @@
                         ...g
                     } = t, {
                         analyticsLocations: A
-                    } = (0, o.default)(), R = (0, u.useAppContext)(), y = R === C.AppContext.POPOUT, [v, P] = a.useState(!1), w = null != h ? Math.max((0, c.getNumberOfAppliedBoostsNeededForTier)(r, h), 1) : 1, x = (0, c.generateBlockGuildSubscriptionPurchasesNode)(), N = async () => {
+                    } = (0, o.default)(), R = (0, u.useAppContext)(), v = R === C.AppContext.POPOUT, [y, P] = a.useState(!1), w = null != h ? Math.max((0, c.getNumberOfAppliedBoostsNeededForTier)(r, h), 1) : 1, x = (0, c.generateBlockGuildSubscriptionPurchasesNode)(), N = async () => {
                         P(!0), await (0, f.addAppliedGuildBoosts)({
                             analyticsLocations: A,
                             analyticsLocation: e,
@@ -210,7 +210,7 @@
                             numberOfBoostsToAdd: w,
                             onClose: m,
                             closeLayer: I,
-                            inPopout: y,
+                            inPopout: v,
                             applicationId: L,
                             handleSubscribeModalClose: T
                         }), P(!1)
@@ -232,7 +232,7 @@
                         className: i(g.className, {
                             [_.buttonHighlighted]: E
                         }),
-                        submitting: v,
+                        submitting: y,
                         onClick: N,
                         pauseAnimation: S,
                         children: null != M ? M : p.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_SUBSCRIBE_THIS_SERVER
@@ -273,9 +273,9 @@
                     disablePremiumUpsell: E,
                     inPopout: g,
                     applicationId: A
-                } = t, R = g ? a.POPOUT_MODAL_CONTEXT : a.DEFAULT_MODAL_CONTEXT, y = u.default.getCurrentUser();
-                if (null == y) return;
-                if (!y.verified) {
+                } = t, R = g ? a.POPOUT_MODAL_CONTEXT : a.DEFAULT_MODAL_CONTEXT, v = u.default.getCurrentUser();
+                if (null == v) return;
+                if (!v.verified) {
                     (0, a.openModalLazy)(async () => {
                         let {
                             default: t
@@ -295,8 +295,8 @@
                     });
                     return
                 }
-                let v = [];
-                !d.default.isLoadedForPremiumSKUs() && v.push((0, s.fetchPremiumSubscriptionPlans)()), !o.default.hasFetched && (v.push(r.fetchSubscriptions()), v.push((0, i.fetchGuildBoostSlots)())), v.length > 0 && await Promise.allSettled(v);
+                let y = [];
+                !d.default.isLoadedForPremiumSKUs() && y.push((0, s.fetchPremiumSubscriptionPlans)()), !o.default.hasFetched && (y.push(r.fetchSubscriptions()), y.push((0, i.fetchGuildBoostSlots)())), y.length > 0 && await Promise.allSettled(y);
                 let P = (0, f.getAvailableGuildBoostSlots)(o.default.boostSlots),
                     w = P.length,
                     x = t => {
@@ -501,7 +501,9 @@
                             d: "M12 2C6.477 2 2 6.477 2 12C2 17.522 6.477 22 12 22C17.523 22 22 17.522 22 12C22 6.477 17.523 2 12 2ZM8 6C9.104 6 10 6.896 10 8C10 9.105 9.104 10 8 10C6.896 10 6 9.105 6 8C6 6.896 6.896 6 8 6ZM18 14C18 16.617 15.14 19 12 19C8.86 19 6 16.617 6 14V13H18V14ZM16 10C14.896 10 14 9.105 14 8C14 6.896 14.896 6 16 6C17.104 6 18 6.896 18 8C18 9.105 17.104 10 16 10Z"
                         })
                     })
-                }, r.ReactionIcon)
+                }, r.ReactionIcon, void 0, {
+                    size: 24
+                })
         },
         642032: function(t, e, l) {
             "use strict";
@@ -541,4 +543,4 @@
         }
     }
 ]);
-//# sourceMappingURL=345ae7315741c5558539.js.map
+//# sourceMappingURL=1e03ea72739fa2ea607c.js.map

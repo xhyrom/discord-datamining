@@ -2410,7 +2410,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-833985a1d05c9d6bcc9e895de3b824bab04cd937",
+                    release: "discord_web-50bea94baad821a1d1bc49d8b1f91e807afdad99",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2428,7 +2428,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "247568", "247568")), a.setTag("builtAt", String("1700522367945"));
+                }), a.setTag("buildNumber", (e = "247569", "247569")), a.setTag("builtAt", String("1700522432253"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -4541,7 +4541,9 @@
                             d: "M21.1169 1.11603L22.8839 2.88403L19.7679 6.00003L22.8839 9.11603L21.1169 10.884L17.9999 7.76803L14.8839 10.884L13.1169 9.11603L16.2329 6.00003L13.1169 2.88403L14.8839 1.11603L17.9999 4.23203L21.1169 1.11603ZM18 22H13C6.925 22 2 17.075 2 11V6C2 5.447 2.448 5 3 5H7C7.553 5 8 5.447 8 6V10C8 10.553 7.553 11 7 11H6C6.063 14.938 9 18 13 18V17C13 16.447 13.447 16 14 16H18C18.553 16 19 16.447 19 17V21C19 21.553 18.553 22 18 22Z"
                         })
                     })
-                }, s.PhoneHangUpIcon)
+                }, s.PhoneHangUpIcon, void 0, {
+                    size: 24
+                })
         },
         142303: function(e, t, n) {
             "use strict";
@@ -4582,7 +4584,9 @@
                             fill: r
                         })]
                     })
-                }, s.VideoSlashIcon)
+                }, s.VideoSlashIcon, void 0, {
+                    size: 24
+                })
         },
         270227: function(e, t, n) {
             "use strict";
@@ -4663,7 +4667,9 @@
                             d: "M18 2H7C5.897 2 5 2.898 5 4V11H12.59L10.293 8.708L11.706 7.292L16.414 11.991L11.708 16.706L10.292 15.294L12.582 13H5V20C5 21.103 5.897 22 7 22H18C19.103 22 20 21.103 20 20V4C20 2.898 19.103 2 18 2Z"
                         })
                     })
-                }, s.DoorExitIcon)
+                }, s.DoorExitIcon, void 0, {
+                    size: 16
+                })
         },
         356553: function(e, t, n) {
             "use strict";
@@ -4704,7 +4710,9 @@
                             fill: r
                         })]
                     })
-                }, s.ScreenXIcon)
+                }, s.ScreenXIcon, void 0, {
+                    size: 24
+                })
         },
         940277: function(e, t, n) {
             "use strict";
@@ -4976,4 +4984,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4e26a693ef157f002f80.js.map
+//# sourceMappingURL=7cf25f73d29d14df644b.js.map

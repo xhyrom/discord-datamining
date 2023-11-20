@@ -1544,10 +1544,10 @@
                         }),
                         H = G === _.Types.PROFILE || G === _.Types.PROFILE_V2,
                         W = G === _.Types.STREAM_PREVIEW || null != i,
-                        K = (0, S.default)(l),
-                        z = (0, m.isStageActivity)(l),
+                        z = (0, S.default)(l),
+                        K = (0, m.isStageActivity)(l),
                         Z = H ? h.default.Align.END : h.default.Align.STRETCH,
-                        X = K || W ? h.default.Direction.HORIZONTAL : h.default.Direction.VERTICAL,
+                        X = z || W ? h.default.Direction.HORIZONTAL : h.default.Direction.VERTICAL,
                         J = (null == l ? void 0 : l.type) === P.ActivityTypes.HANG_STATUS,
                         Q = (0, u.useStateFromStores)([T.default, p.default], () => {
                             var e;
@@ -1563,7 +1563,7 @@
                         color: F,
                         platform: f.default.get(P.PlatformTypes.PLAYSTATION)
                     }, "ConnectPlatformActivityButton")];
-                    else if (K) {
+                    else if (z) {
                         let e = (0, n.jsx)(x.default, {
                                 activity: l,
                                 user: a,
@@ -1583,7 +1583,7 @@
                                 source: U
                             }, "spotify-activity-play-button");
                         t = [s, e]
-                    } else if (z) {
+                    } else if (K) {
                         let e = (0, m.unpackStageChannelParty)(l);
                         null != e && (t = [(0, n.jsx)(y.default, {
                             guildId: e.guildId,
@@ -1821,8 +1821,8 @@
                     channelId: H,
                     isEmbedded: W = !1
                 } = e, {
-                    analyticsLocations: K
-                } = (0, c.default)(), [z, Z] = a.useState(!1), X = (0, L.default)({
+                    analyticsLocations: z
+                } = (0, c.default)(), [K, Z] = a.useState(!1), X = (0, L.default)({
                     channelId: H,
                     userId: V.id,
                     activity: t
@@ -1854,7 +1854,7 @@
                     PermissionStore: S.default
                 })), el = (0, d.useAnalyticsContext)(), en = !y.isPlatformEmbedded, ea = (0, P.default)(t, F.ActivityFlags.JOIN) || W;
                 if (null == t || !ea || null == t.application_id) return null;
-                let es = !G && (en || Q) && !z && !q && (!W || et),
+                let es = !G && (en || Q) && !K && !q && (!W || et),
                     ei = null;
                 G ? ei = w.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF : !en && !Q && (ei = w.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
                     name: t.name
@@ -1875,7 +1875,7 @@
                         applicationId: t.application_id,
                         partyId: null === (l = t.party) || void 0 === l ? void 0 : l.id,
                         locationObject: el.location,
-                        analyticsLocations: K
+                        analyticsLocations: z
                     }))
                 }, eo = async () => {
                     let e = !1;
@@ -1887,7 +1887,7 @@
                             activityChannelId: X,
                             locationObject: el.location,
                             embeddedActivitiesManager: D.default,
-                            analyticsLocations: K
+                            analyticsLocations: z
                         })
                     }
                     if (!e) {
@@ -4776,7 +4776,7 @@
                     setPopoutRef: B,
                     disableUserProfileLink: Y = __OVERLAY__,
                     analyticsParams: V = {}
-                } = e, H = a.useRef(null), W = (0, O.default)(l.id, s), K = (0, d.default)(H), z = (0, r.useStateFromStores)([y.default], () => {
+                } = e, H = a.useRef(null), W = (0, O.default)(l.id, s), z = (0, d.default)(H), K = (0, r.useStateFromStores)([y.default], () => {
                     var e;
                     return null === (e = y.default.getUserProfile(l.id)) || void 0 === e ? void 0 : e.application
                 }), {
@@ -4830,8 +4830,8 @@
                                 has_guild_member_banner: !!(null == W ? void 0 : W.isUsingGuildMemberBanner()),
                                 has_guild_member_bio: !!(null == W ? void 0 : W.isUsingGuildMemberBio())
                             } : {},
-                            u = null != z ? {
-                                other_application_id: null == z ? void 0 : z.id,
+                            u = null != K ? {
+                                other_application_id: null == K ? void 0 : K.id,
                                 other_application_name: l.toString()
                             } : {};
                         N.default.track(U.AnalyticEvents.OPEN_POPOUT, {
@@ -4888,7 +4888,7 @@
                                     isStreaming: (0, p.default)(q),
                                     status: ee,
                                     disableUserProfileLink: Y,
-                                    isHovering: K,
+                                    isHovering: z,
                                     upsell: er.shouldShow ? (0, n.jsx)(P.default, {
                                         user: l,
                                         onClose: k,
@@ -4977,8 +4977,8 @@
                 V = l("379657"),
                 H = l("853780"),
                 W = l("574191"),
-                K = l("491250"),
-                z = l("49111"),
+                z = l("491250"),
+                K = l("49111"),
                 Z = l("782340"),
                 X = l("956330"),
                 J = l("398664");
@@ -5001,7 +5001,7 @@
                 } = e, eu = (0, r.useStateFromStores)([v.default], () => v.default.hidePersonalInformation), ed = (0, r.useStateFromStores)([O.default], () => {
                     var e;
                     return null === (e = O.default.getUserProfile($.id)) || void 0 === e ? void 0 : e.application
-                }), [ec, ef] = a.useState(!1), [em, ep] = a.useState(!1), eE = (0, r.useStateFromStores)([S.default], () => S.default.getChannel(en)), eT = (0, r.useStateFromStores)([g.default], () => g.default.can(z.Permissions.USE_CLYDE_AI, eE)), {
+                }), [ec, ef] = a.useState(!1), [em, ep] = a.useState(!1), eE = (0, r.useStateFromStores)([S.default], () => S.default.getChannel(en)), eT = (0, r.useStateFromStores)([g.default], () => g.default.can(K.Permissions.USE_CLYDE_AI, eE)), {
                     profileTheme: eh
                 } = (0, x.default)($, ee), e_ = a.useRef(null), [eS, eI] = a.useState(!0), eg = a.useCallback(() => {
                     let {
@@ -5020,7 +5020,7 @@
                 }, []);
                 let eN = (0, r.useStateFromStores)([A.default], () => A.default.getRelationshipType($.id)),
                     ey = $.isNonUserBot() && !$.isClyde() || $.isClyde() && ev || !ei,
-                    eM = !$.bot && !$.isClyde() && eN !== z.RelationshipTypes.BLOCKED,
+                    eM = !$.bot && !$.isClyde() && eN !== K.RelationshipTypes.BLOCKED,
                     {
                         moreAddFriend: eO,
                         messageButton: ex
@@ -5030,10 +5030,10 @@
                         disable: !eM,
                         autoTrackExposure: !0
                     }),
-                    eR = eO && eN !== z.RelationshipTypes.FRIEND,
+                    eR = eO && eN !== K.RelationshipTypes.FRIEND,
                     eL = ex && !ey;
                 if ($.isSystemUser()) return null;
-                if ($.isNonUserBot() && !$.isClyde()) return (0, n.jsx)(K.default, {
+                if ($.isNonUserBot() && !$.isClyde()) return (0, n.jsx)(z.default, {
                     user: $,
                     nickname: null,
                     pronouns: null,
@@ -5042,7 +5042,7 @@
                 });
                 let eP = null !== (t = y.default.getNickname(null == et ? void 0 : et.id, en, $)) && void 0 !== t ? t : M.default.getName($);
                 return (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsx)(K.default, {
+                    children: [(0, n.jsx)(z.default, {
                         className: X.usernameSection,
                         user: $,
                         nickname: eP,
@@ -7122,7 +7122,9 @@
                             })]
                         })
                     })
-                }, s.UnknownGameIcon)
+                }, s.UnknownGameIcon, void 0, {
+                    size: 24
+                })
         },
         30672: function(e, t, l) {
             "use strict";
@@ -7180,7 +7182,9 @@
                             })
                         })]
                     })
-                }, r.EyePlusIcon)
+                }, r.EyePlusIcon, void 0, {
+                    size: 16
+                })
         },
         907566: function(e, t, l) {
             "use strict";
@@ -7214,7 +7218,9 @@
                             d: "M20 6.00201H14V3.00201C14 2.45001 13.553 2.00201 13 2.00201H4C3.447 2.00201 3 2.45001 3 3.00201V22.002H5V14.002H10.586L8.293 16.295C8.007 16.581 7.922 17.011 8.076 17.385C8.23 17.759 8.596 18.002 9 18.002H20C20.553 18.002 21 17.554 21 17.002V7.00201C21 6.45001 20.553 6.00201 20 6.00201Z"
                         })
                     })
-                }, s.FlagIcon)
+                }, s.FlagIcon, void 0, {
+                    size: 16
+                })
         },
         758710: function(e, t, l) {
             "use strict";
@@ -7251,7 +7257,9 @@
                             d: "M21 2.99902H14V4.99902H17.586L9.29297 13.292L10.707 14.706L19 6.41302V9.99902H21V2.99902Z"
                         })]
                     })
-                }, s.WindowLaunchIcon)
+                }, s.WindowLaunchIcon, void 0, {
+                    size: 24
+                })
         },
         616225: function(e, t, l) {
             "use strict";
@@ -7284,7 +7292,9 @@
                             d: "M11.8 14a6.1 6.1 0 0 0 0 6H3v-2c0-2.7 5.3-4 8-4h.8zm-.8-2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm6 1c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm-1 6.2l3-2.2-3-2.2v4.4z"
                         })
                     })
-                }, s.UserPlayIcon)
+                }, s.UserPlayIcon, void 0, {
+                    size: 16
+                })
         },
         936629: function(e, t, l) {
             "use strict";
@@ -7671,4 +7681,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5ac69e7e2056255db442.js.map
+//# sourceMappingURL=fd027f17dca07f20ba5a.js.map

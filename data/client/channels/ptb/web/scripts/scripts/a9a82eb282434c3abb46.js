@@ -4106,9 +4106,10 @@
                         let e = {
                             ...s
                         };
-                        for (let [t, r] of Object.entries(n = null != n ? n : {
+                        for (let [t, r] of Object.entries(n = {
                                 foreground: "colorClass",
-                                color: "color"
+                                color: "color",
+                                ...null != n ? n : {}
                             })) {
                             let n = s[t];
                             if (null == n && "color" === t && (n = l ? "yellow" : "currentColor"), "remove" === r) {
@@ -31838,7 +31839,9 @@
                             d: "M16.59 8.59003L12 13.17L7.41 8.59003L6 10L12 16L18 10L16.59 8.59003Z"
                         })
                     })
-                }, s.ChevronSmallDownIcon)
+                }, s.ChevronSmallDownIcon, void 0, {
+                    size: 24
+                })
         },
         425190: function(e, t, n) {
             "use strict";
@@ -31871,7 +31874,9 @@
                             d: "M7.41 16.0001L12 11.4201L16.59 16.0001L18 14.5901L12 8.59006L6 14.5901L7.41 16.0001Z"
                         })
                     })
-                }, s.ChevronSmallUpIcon)
+                }, s.ChevronSmallUpIcon, void 0, {
+                    size: 24
+                })
         },
         943232: function(e, t, n) {
             "use strict";
@@ -31911,7 +31916,9 @@
                             })]
                         })
                     })
-                }, s.CalendarIcon)
+                }, s.CalendarIcon, void 0, {
+                    size: 24
+                })
         },
         36562: function(e, t, n) {
             "use strict";
@@ -32023,7 +32030,9 @@
                             d: "M8.99991 16.17L4.82991 12L3.40991 13.41L8.99991 19L20.9999 7.00003L19.5899 5.59003L8.99991 16.17Z"
                         })
                     })
-                }, s.CheckmarkLargeIcon)
+                }, s.CheckmarkLargeIcon, void 0, {
+                    size: 24
+                })
         },
         578706: function(e, t, n) {
             "use strict";
@@ -32072,6 +32081,8 @@
                     foreground: "colorClass",
                     className: "className",
                     color: "color"
+                }, {
+                    size: 24
                 })
         },
         522049: function(e, t, n) {
@@ -32108,7 +32119,9 @@
                             d: "M25.4655 8.13686L24.0851 2.98525C23.5134 0.851387 21.32 -0.414947 19.1862 0.156821L3.73134 4.29792C1.59748 4.86969 0.331147 7.06304 0.902914 9.19691L2.01124 13.3332L1.9999 15.9999L1.9999 23.3332C1.9999 25.5424 3.79077 27.3332 5.99991 27.3332L21.9999 27.3332C24.209 27.3332 25.9999 25.5424 25.9999 23.3332V15.3333H5.99991L6.07237 13.3332L25.4655 8.13686ZM14.609 8.28512L10.8245 9.29916L10.7552 5.17663L14.5396 4.1626L14.609 8.28512ZM17.264 7.5737L22.1995 6.25124L21.5093 3.67543C21.3187 2.96415 20.5876 2.54204 19.8763 2.73263L17.1947 3.45117L17.264 7.5737ZM8.10009 5.88806L8.16944 10.0106L4.1689 11.0825L3.47872 8.50672C3.28813 7.79543 3.71024 7.06432 4.42153 6.87373L8.10009 5.88806Z"
                         })
                     })
-                }, s.ClipsIcon)
+                }, s.ClipsIcon, void 0, {
+                    size: 16
+                })
         },
         984678: function(e, t, n) {
             "use strict";
@@ -32138,7 +32151,9 @@
                             d: "M18.4 1.879L22.121 5.6l-6.4 6.4 6.4 6.4-3.721 3.721-6.4-6.4-6.4 6.4L1.879 18.4l6.4-6.4-6.4-6.4L5.6 1.879l6.4 6.4 6.4-6.4z"
                         })
                     })
-                }, s.CloseLargeIcon)
+                }, s.CloseLargeIcon, void 0, {
+                    size: 24
+                })
         },
         980428: function(e, t, n) {
             "use strict";
@@ -32178,7 +32193,9 @@
                             })]
                         })
                     })
-                }, s.ChevronSmallLeftIcon)
+                }, s.ChevronSmallLeftIcon, void 0, {
+                    size: 24
+                })
         },
         904276: function(e, t, n) {
             "use strict";
@@ -32293,7 +32310,9 @@
                             })]
                         })
                     })
-                }, s.ChevronSmallRightIcon)
+                }, s.ChevronSmallRightIcon, void 0, {
+                    size: 24
+                })
         },
         229915: function(e, t, n) {
             "use strict";
@@ -32326,7 +32345,9 @@
                             d: "M21.707 20.293L16.314 14.9C17.403 13.504 18 11.799 18 10C18 7.863 17.167 5.854 15.656 4.344C14.146 2.832 12.137 2 10 2C7.863 2 5.854 2.832 4.344 4.344C2.833 5.854 2 7.863 2 10C2 12.137 2.833 14.146 4.344 15.656C5.854 17.168 7.863 18 10 18C11.799 18 13.504 17.404 14.9 16.314L20.293 21.706L21.707 20.293ZM10 16C8.397 16 6.891 15.376 5.758 14.243C4.624 13.11 4 11.603 4 10C4 8.398 4.624 6.891 5.758 5.758C6.891 4.624 8.397 4 10 4C11.603 4 13.109 4.624 14.242 5.758C15.376 6.891 16 8.398 16 10C16 11.603 15.376 13.11 14.242 14.243C13.109 15.376 11.603 16 10 16Z"
                         })
                     })
-                }, s.MagnifyingGlassIcon)
+                }, s.MagnifyingGlassIcon, void 0, {
+                    size: 24
+                })
         },
         830031: function(e, t, n) {
             "use strict";
@@ -32359,7 +32380,9 @@
                             d: "M9.00043 14.0492L19.5904 3.46924L23.1212 7.00006L8.99993 21.1214L1.28485 13.4063L4.83367 9.88248L9.00043 14.0492Z"
                         })
                     })
-                }, s.CheckmarkLargeIcon)
+                }, s.CheckmarkLargeIcon, void 0, {
+                    size: 24
+                })
         },
         423487: function(e, t, n) {
             "use strict";
@@ -32394,7 +32417,9 @@
                             fill: i
                         })
                     })
-                }, s.CircleExclamationPointIcon)
+                }, s.CircleExclamationPointIcon, void 0, {
+                    size: 20
+                })
         },
         983782: function(e, t, n) {
             "use strict";
@@ -41501,4 +41526,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4d3096957a96be258e18.js.map
+//# sourceMappingURL=a9a82eb282434c3abb46.js.map
