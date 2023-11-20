@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -14812,11 +14812,14 @@
                 KRUNKER_STRIKE_APPLICATION_ID: function() {
                     return X
                 },
-                ImageSizes: function() {
+                COLONIST_APPLICATION_ID: function() {
                     return q
                 },
-                STAFF_RELEASE_PHASES: function() {
+                ImageSizes: function() {
                     return J
+                },
+                STAFF_RELEASE_PHASES: function() {
+                    return Q
                 },
                 ActivityFeedbackReasons: function() {
                     return r
@@ -14840,13 +14843,13 @@
                     return c
                 },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return Q
-                },
-                APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
                     return $
                 },
-                APPLICATIONS_WITH_NO_REFFERER: function() {
+                APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
                     return ee
+                },
+                APPLICATIONS_WITH_NO_REFFERER: function() {
+                    return et
                 },
                 WhatsNewSection: function() {
                     return d
@@ -14858,10 +14861,10 @@
                     return _
                 },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return en
+                    return er
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return er
+                    return ei
                 }
             }), n("222007");
             var r, i, s, a, l, o, u, c, d, E, _, f, p, h, T, S, I, m, g, A, C, R, v = n("798609"),
@@ -14889,35 +14892,36 @@
                 z = "1037680572660727838",
                 Z = "945737671223947305",
                 X = "1011683823555199066",
-                q = {
+                q = "1106787098452832296",
+                J = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                J = ["in_development", "activities_team", "employee_release"];
+                Q = ["in_development", "activities_team", "employee_release"];
             (f = r || (r = {})).FAILED_LOAD = "FAILED_LOAD", f.LAGGING = "LAGGING", f.CONFUSING = "CONFUSING", f.NOT_FUN = "NOT_FUN", f.OTHER = "OTHER", (p = i || (i = {}))[p.PLAY = 0] = "PLAY", p[p.SPECTATE = 1] = "SPECTATE", (h = s || (s = {})).DESKTOP = "desktop", h.MOBILE = "mobile", (T = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", T.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", T.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", T.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (S = l || (l = {}))[S.UNLOCKED = 0] = "UNLOCKED", S[S.NEEDS_NITRO = 1] = "NEEDS_NITRO", (I = o || (o = {}))[I.NO_UPDATE = 0] = "NO_UPDATE", I[I.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", I[I.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", I[I.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", I[I.USER_JOINED = 4] = "USER_JOINED", I[I.USER_LEFT = 5] = "USER_LEFT", I[I.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (m = u || (u = {}))[m.UNLOCKED = 1] = "UNLOCKED", m[m.PORTRAIT = 2] = "PORTRAIT", m[m.LANDSCAPE = 3] = "LANDSCAPE", (g = c || (c = {}))[g.DIRECTORY = 0] = "DIRECTORY", g[g.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", g[g.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let Q = "activity-shelf",
-                $ = new Set(["755600276941176913", L, P, k]),
-                ee = new Set([L, P, k]);
+            let $ = "activity-shelf",
+                ee = new Set(["755600276941176913", L, P, k]),
+                et = new Set([L, P, k]);
             (A = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", A.GDM_ACTIVITIES = "GDM_ACTIVITIES", A.PUTT_PARTY = "PUTT_PARTY", A.JAMSPACE_OLD = "JAMSPACE", A.JAMSPACE = "JAMSPACE2", A.POKER = "POKER", A.FREE = "FREE", (C = E || (E = {}))[C.PORTRAIT = 0] = "PORTRAIT", C[C.LANDSCAPE = 1] = "LANDSCAPE", (R = _ || (_ = {}))[R.FOCUSED = 0] = "FOCUSED", R[R.PIP = 1] = "PIP", R[R.GRID = 2] = "GRID";
-            let et = {
+            let en = {
                     label_type: v.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                en = {
+                er = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
                     supported_platforms: [v.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [v.EmbeddedActivitySupportedPlatforms.WEB]: et,
-                        [v.EmbeddedActivitySupportedPlatforms.IOS]: et,
-                        [v.EmbeddedActivitySupportedPlatforms.ANDROID]: et
+                        [v.EmbeddedActivitySupportedPlatforms.WEB]: en,
+                        [v.EmbeddedActivitySupportedPlatforms.IOS]: en,
+                        [v.EmbeddedActivitySupportedPlatforms.ANDROID]: en
                     },
                     has_csp_exception: !1
                 },
-                er = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
+                ei = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
         },
         586391: function(e, t, n) {
             "use strict";
@@ -41497,4 +41501,4 @@
         }
     }
 ]);
-//# sourceMappingURL=159090cc9bc354dfb9a4.js.map
+//# sourceMappingURL=4d3096957a96be258e18.js.map
