@@ -14666,6 +14666,7 @@
   "GUILD_SETTINGS_ACTION_FILTER_CLYDE_AI_PROFIE_UPDATE": "\"Update Clyde AI Profile\"",
   "GUILD_SETTINGS_SOUNDBOARD_DELETE_SOUND_TITLE": "\"Delete '!!{soundName}!!'\"",
   "GUILD_SETTINGS_SOUNDBOARD_DELETE_SOUND_BODY": "\"Are you sure you want to delete **!!{soundName}!!**? This action cannot be undone.\"",
+  "RECENTLY_HEARD": "\"Recently Heard\"",
   "SHARE_TITLE": "\"Send To\"",
   "SHARE_MESSAGE_PLACEHOLDER": "\"Add a message\"",
   "NEW_MESSAGE_COMPOSER_SEARCH_EMPTY_TITLE": "\"Unfortunately, no results were found.\"",
