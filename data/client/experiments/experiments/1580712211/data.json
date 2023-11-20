@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-11_totally_benign_and_non_controversial_notification_tweaks",
+    "label": "Notification Changes",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Use the unfinished, not ready, and totally benign notification tweaks"
+    ],
+    "hash": 1580712211,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
