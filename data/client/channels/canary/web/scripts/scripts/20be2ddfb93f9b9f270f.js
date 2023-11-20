@@ -153,7 +153,14 @@
             }
             class g extends i.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(r.default, s.default), null != e && (_ = e), this.syncWith([d.default], m)
+                    if (this.waitFor(r.default, s.default), null != e) {
+                        var n;
+                        _ = {
+                            ...e,
+                            playedEventsPendingFlush: null !== (n = e.playedEventsPendingFlush) && void 0 !== n ? n : []
+                        }
+                    }
+                    this.syncWith([d.default], m)
                 }
                 getState() {
                     return _
@@ -225,10 +232,10 @@
                     return N
                 },
                 playSound: function() {
-                    return D
+                    return v
                 },
                 maybePlayCustomJoinSound: function() {
-                    return v
+                    return D
                 },
                 useSoundBoardDismissContentTypes: function() {
                     return O
@@ -260,8 +267,8 @@
                 m = t("305122"),
                 g = t("235004"),
                 A = t("389480"),
-                I = t("245463"),
-                y = t("675961"),
+                y = t("245463"),
+                I = t("675961"),
                 h = t("846325"),
                 p = t("49111");
 
@@ -290,14 +297,14 @@
                 return S.default.canUseCustomCallSounds(e) && t
             }
 
-            function D(e, n, t) {
+            function v(e, n, t) {
                 (0, m.playSoundLocally)(n, e), (0, s.sendVoiceChannelSoundboardEffect)(n, e, __OVERLAY__, t)
             }
-            async function v(e) {
+            async function D(e) {
                 let n = _.default.getCurrentUser(),
                     t = (0, o.default)(),
-                    u = (0, y.getCustomJoinSound)(e);
-                if (null == t || c.SILENT_JOIN_LEAVE_CHANNEL_TYPES.has(t.type) || null == u || !N(n) || !(0, I.canSelectedVoiceChannelUseSoundboard)()) return;
+                    u = (0, I.getCustomJoinSound)(e);
+                if (null == t || c.SILENT_JOIN_LEAVE_CHANNEL_TYPES.has(t.type) || null == u || !N(n) || !(0, y.canSelectedVoiceChannelUseSoundboard)()) return;
                 await (0, m.maybeFetchSoundboardSounds)();
                 let l = u.guildId === h.CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID ? h.DEFAULT_SOUND_GUILD_ID : u.guildId,
                     i = g.default.getSound(l, u.soundId);
@@ -439,11 +446,11 @@
                     m = l.default.getMediaSessionId(),
                     g = l.default.getRTCConnectionId(),
                     A = null === (f = i.default.getCurrentGameForAnalytics()) || void 0 === f ? void 0 : f.name,
-                    I = C !== t.guildId && t.guildId !== d.DEFAULT_SOUND_GUILD_ID;
-                let y = (_ = t, E = I, _.guildId === d.DEFAULT_SOUND_GUILD_ID ? "default" : E ? "custom-external" : "custom");
+                    y = C !== t.guildId && t.guildId !== d.DEFAULT_SOUND_GUILD_ID;
+                let I = (_ = t, E = y, _.guildId === d.DEFAULT_SOUND_GUILD_ID ? "default" : E ? "custom-external" : "custom");
                 a.default.track(r.AnalyticEvents.PREMIUM_FEATURE_USAGE, {
                     feature_name: s.AnalyticsPremiumFeatureNames.SOUNDBOARD_PLAY,
-                    feature_tier: I ? s.AnalyticsPremiumFeatureTiers.PREMIUM_STANDARD : s.AnalyticsPremiumFeatureTiers.FREE,
+                    feature_tier: y ? s.AnalyticsPremiumFeatureTiers.PREMIUM_STANDARD : s.AnalyticsPremiumFeatureTiers.FREE,
                     guild_id: C,
                     location_stack: e,
                     rtc_connection_id: g,
@@ -451,7 +458,7 @@
                     in_overlay: n,
                     application_name: A,
                     emoji_count: null != t.emojiId || null != t.emojiName ? 1 : 0,
-                    feature_selection: y,
+                    feature_selection: I,
                     feature_selection_id: t.soundId,
                     sound_type: c,
                     is_broadcast: null != S && S.isBroadcastChannel()
@@ -531,9 +538,9 @@
                 m = t("397485"),
                 g = t("626334"),
                 A = t("49111"),
-                I = t("846325");
+                y = t("846325");
 
-            function y(e) {
+            function I(e) {
                 let n = new AbortController,
                     t = (0, i.throttle)(t => {
                         _.default.getVoiceChannelId() !== e && n.abort()
@@ -549,7 +556,7 @@
                 let {
                     abortController: l,
                     onRequestProgress: i
-                } = y(e), a = null !== (u = S.default.getState().animationType) && void 0 !== u ? u : g.VoiceChannelEffectAnimationType.BASIC, r = {
+                } = I(e), a = null !== (u = S.default.getState().animationType) && void 0 !== u ? u : g.VoiceChannelEffectAnimationType.BASIC, r = {
                     animation_type: a,
                     animation_id: (0, m.sampleAnimationId)(a, m.CUSTOM_CALL_SOUND_ANIMATION_RANGE)
                 };
@@ -569,13 +576,13 @@
                     {
                         abortController: d,
                         onRequestProgress: r
-                    } = y(e),
+                    } = I(e),
                     _ = {
                         sound_id: n.soundId,
                         emoji_id: n.emojiId,
                         emoji_name: null !== (i = n.emojiName) && void 0 !== i ? i : null == a ? void 0 : a.name
                     };
-                n.guildId !== I.DEFAULT_SOUND_GUILD_ID && (_.source_guild_id = n.guildId), o.default.post({
+                n.guildId !== y.DEFAULT_SOUND_GUILD_ID && (_.source_guild_id = n.guildId), o.default.post({
                     url: A.Endpoints.SEND_SOUNDBOARD_SOUND(e),
                     body: _,
                     signal: d.signal,
@@ -804,4 +811,4 @@
         }
     }
 ]);
-//# sourceMappingURL=697586ff22454303b348.js.map
+//# sourceMappingURL=20be2ddfb93f9b9f270f.js.map
