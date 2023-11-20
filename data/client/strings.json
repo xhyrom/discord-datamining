@@ -14083,7 +14083,7 @@
   "VOICE_CHANNEL_BAR_ACTIVE": "\"{count} in Voice\"",
   "GO_LIVE_SUBTITLE": "\"Screensharing\"",
   "UNREAD_SETTINGS": "\"Unread Settings\"",
-  "HIGHLIGHTS_AND_MENTIONS": "\"Highlights and Mentions\"",
+  "HIGHLIGHTS_AND_MENTIONS": "\"Mentions\"",
   "FORM_LABEL_UNREAD_SETTINGS_OPT_IN": "\"Configure Unread Settings\"",
   "FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE": "\"More granular settings to control when channels should appear as unread.\"",
   "NEW_GUILD_EVENTS_ACCESSIBILITY_LABEL": "\"New Events\"",
