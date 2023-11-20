@@ -135,7 +135,7 @@
                     },
                     lookupKey: e => s.default.getSoundById(e),
                     afterCompute: () => {},
-                    numFrequentlyItems: c.NUM_FREQUENTLY_PLAYED_SOUNDS
+                    numFrequentlyItems: c.NUM_FREQUENTLY_USED_SOUNDS
                 });
 
             function C(e) {
@@ -149,7 +149,7 @@
                 var e, n;
                 let t = null === (e = d.default.frecencyWithoutFetchingLatest.heardSoundFrecency) || void 0 === e ? void 0 : e.heardSounds,
                     u = null === (n = d.default.frecencyWithoutFetchingLatest.playedSoundFrecency) || void 0 === n ? void 0 : n.playedSounds;
-                null != t && E.overwriteHistory(C(t), _.heardEventsPendingFlush), null != u && S.overwriteHistory(C(u), _.playedEventsPendingFlush)
+                E.overwriteHistory(C(null != t ? t : {}), _.heardEventsPendingFlush), S.overwriteHistory(C(null != u ? u : {}), _.playedEventsPendingFlush)
             }
             class g extends i.default.PersistedStore {
                 initialize(e) {
@@ -171,7 +171,7 @@
                     return E.frequently
                 }
                 get frecentlyPlayedSounds() {
-                    return E.frequently
+                    return S.frequently
                 }
             }
             g.displayName = "SoundboardEventStore", g.persistKey = "SoundboardEventStore";
@@ -804,4 +804,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e5abb1a3111237a2ee2a.js.map
+//# sourceMappingURL=697586ff22454303b348.js.map
