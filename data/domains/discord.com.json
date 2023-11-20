@@ -1,4 +1,6 @@
 {
-  "subdomain_count": 0,
-  "subdomains": []
+  "subdomain_count": 1,
+  "subdomains": [
+    "email.creators"
+  ]
 }
