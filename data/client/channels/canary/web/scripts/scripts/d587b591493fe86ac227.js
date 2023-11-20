@@ -28111,57 +28111,77 @@
         132522: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                isRedesignToggleIgnored: function() {
-                    return o
-                },
                 useRedesignToggleIgnored: function() {
-                    return l
+                    return s
+                },
+                isRedesignToggleIgnored: function() {
+                    return a
                 }
             });
             var i = n("862205");
+            n("934306");
             let r = (0, i.createExperiment)({
-                    kind: "user",
-                    id: "2023-09_mobile_redesign_toggle",
-                    label: "Tabs V2 - manual toggles",
-                    defaultConfig: {
+                kind: "user",
+                id: "2023-09_mobile_redesign_override_toggles",
+                label: "Tabs V2 - redesign opt-out/in for all",
+                defaultConfig: {
+                    hide: !1,
+                    ignore: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "control",
+                    config: {
                         hide: !1,
                         ignore: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "control",
-                        config: {
-                            hide: !1,
-                            ignore: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "hide toggles",
-                        config: {
-                            hide: !0,
-                            ignore: !1
-                        }
-                    }, {
-                        id: 3,
-                        label: "hide & ignore toggles",
-                        config: {
-                            hide: !0,
-                            ignore: !0
-                        }
-                    }]
-                }),
-                s = () => r.useExperiment({
+                    }
+                }, {
+                    id: 2,
+                    label: "hide toggles",
+                    config: {
+                        hide: !0,
+                        ignore: !1
+                    }
+                }, {
+                    id: 3,
+                    label: "hide & ignore toggles",
+                    config: {
+                        hide: !0,
+                        ignore: !0
+                    }
+                }]
+            });
+            (0, i.createExperiment)({
+                kind: "user",
+                id: "2023-09_mobile_redesign_override_toggles_t2",
+                label: "Tabs V2 - redesign opt-out for T2",
+                defaultConfig: {
+                    hide: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "show",
+                    config: {
+                        hide: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "hide",
+                    config: {
+                        hide: !0
+                    }
+                }]
+            });
+            let s = () => r.useExperiment({
                     location: "x"
                 }, {
                     autoTrackExposure: !1
-                }),
+                }).ignore,
                 a = () => r.getCurrentConfig({
                     location: "x"
                 }, {
                     autoTrackExposure: !1
-                }),
-                o = () => a().ignore,
-                l = () => s().ignore
+                }).ignore
         },
         693051: function(e, t, n) {
             "use strict";
@@ -49521,7 +49541,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "247341"
+                                build_number: "247347"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62772,4 +62792,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9058f4f26da0abcacaf6.js.map
+//# sourceMappingURL=d587b591493fe86ac227.js.map
