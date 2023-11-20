@@ -14979,6 +14979,20 @@
                 COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT: "{sender} gifted you a profile effect!",
                 COLLECTIBLES_ACCEPT_GIFT: "Accept gift",
                 COLLECTIBLES_FROM_SENDER: "From {sender}",
+                COLLECTIBLES_GIFT_DETAILS: "Gifted by {sender} on {date}",
+                COLLECTIBLES_GIFT_COACHMARK_HEADING: "Give the gift of style",
+                COLLECTIBLES_GIFT_COACHMARK_DESC: "Check out the latest profile styles and surprise your friend with a fresh new look.",
+                COLLECTIBLES_GIFT_SEND_ERROR_OWNED: "Hey! Your friend already has this. Try sending something else.",
+                COLLECTIBLES_GIFT_DISCLAIMER: "This purchase is non-refundable. Once you complete your purchase, the item will be sent to the recipient and can be accessed in their User Profile settings.",
+                COLLECTIBLES_PRICE_WITH_PREMIUM_TIER: "!!{price}!! with Nitro.",
+                COLLECTIBLES_SUBSCRIBE_NOW: "Subscribe now",
+                COLLECTIBLES_GIFT_RECIPIENT_PLACEHOLDER: "Select a friend",
+                COLLECTIBLES_GIFT_MSG_PLACEHOLDER: "Add a message...",
+                COLLECTIBLES_GIFT_LABEL: "Your gift",
+                COLLECTIBLES_PREVIEW_GIFT_PROFILE: "Preview on your friend's profile",
+                COLLECTIBLES_GENERIC_GIFTED_YOU_DECORATION: "You've been gifted an avatar decoration!",
+                COLLECTIBLES_GENERIC_GIFTED_YOU_EFFECT: "You've been gifted a profile effect!",
+                COLLECTIBLES_GIFT_CLAIM: "Claim gift",
                 MOBILE_TIME_REMAINING_DAYS: "{days} days remaining",
                 MOBILE_TIME_REMAINING_HOURS_MINUTES_SECONDS: "{hours}:{minutes}:{seconds} remaining",
                 DIRECTORY_CATEGORY_TOWN_HALL_1: "Staff Picks",
@@ -16447,6 +16461,8 @@
                 MEMBER_SAFETY_INTEGRATION_TYPE_TWITCH: "Twitch",
                 MEMBER_SAFETY_INTEGRATION_TYPE_YOUTUBE: "YouTube",
                 MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION: "Server Subscription",
+                MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP: "Engaged in suspected spam activity",
+                MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "Quarantined for unallowed content in user profile",
                 BAN_MULTIPLE_CONFIRM_TITLE: "Would you like to ban {count, plural, one {1 member} other {{count} members}}?",
                 BAN_MULTIPLE_SUCCESS_TOAST: "Mass ban succesful",
                 BAN_MULTIPLE_FAILED_TOAST: "Mass ban failed",
@@ -18202,7 +18218,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247483", ", Version Hash: ").concat("d26e85a3256ba0c12a073c3c7988b91d4512c10a")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247492", ", Version Hash: ").concat("6f2022cf274cf8c56bb5a309ff952798c8f23d3d")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20479,8 +20495,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "247483", "247483"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247483")), _ = 0), _
+                let _ = parseInt((e = "247492", "247492"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247492")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36317,4 +36333,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0e82624c89994f0847ab.js.map
+//# sourceMappingURL=3fdf93c009d0484959e6.js.map
