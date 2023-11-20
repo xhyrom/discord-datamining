@@ -16622,7 +16622,9 @@
                 POLL_SUBMIT_VOTE_EDIT: "Update Vote",
                 POLL_VOTES_COUNT: "{count, plural, one {1 vote} other {{count} votes}}",
                 POLL_ALREADY_VOTED: "Voted",
-                POLL_ANSWER_SELECTED_ARIA: "You selected this answer",
+                POLL_EDIT_VOTE: "Edit Vote",
+                POLL_ANSWER_VOTED_ARIA: "You voted for this answer",
+                POLL_OPTIONS_ARIA: "Poll options",
                 CREATE_POLL: "Create Poll",
                 CREATE_POLL_EXPIRATION: "Poll will be live for 24 hours",
                 CREATE_POLL_QUESTION_PLACEHOLDER: "What question do you want to ask?",
@@ -17480,18 +17482,19 @@
                     return n
                 },
                 default: function() {
-                    return S
+                    return N
                 }
             });
             var o, n, r, a = E("446674"),
                 i = E("120082"),
                 I = E("95410"),
-                s = E("9503");
+                s = E("286235"),
+                T = E("9503");
             (o = n || (n = {}))[o.Early = 0] = "Early", o[o.Database = 1] = "Database", o[o.Default = 2] = "Default", t = new i.ActionLogger({
-                persist: null !== (r = I.default.get(s.STORAGE_KEY_LOG_DISPATCHES)) && void 0 !== r && r
+                persist: null !== (r = I.default.get(T.STORAGE_KEY_LOG_DISPATCHES)) && void 0 !== r && r
             });
-            let T = new a.Dispatcher(2, t);
-            var S = T
+            let S = new a.Dispatcher(2, t, s.default);
+            var N = S
         },
         717811: function(e, _, E) {
             "use strict";
@@ -18218,7 +18221,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247569", ", Version Hash: ").concat("50bea94baad821a1d1bc49d8b1f91e807afdad99")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247576", ", Version Hash: ").concat("745f3a94d40f7ea2242c367602f5c41ed3441a5a")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20495,8 +20498,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "247569", "247569"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247569")), _ = 0), _
+                let _ = parseInt((e = "247576", "247576"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247576")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -29957,9 +29960,18 @@
                 flushWaitQueue() {
                     if (!this._processingWaitQueue) try {
                         this._processingWaitQueue = !0, I.default.isDispatching = !0;
-                        let e = 0;
+                        let _ = 0;
                         for (; this._waitQueue.length > 0;) {
-                            if (++e > 100) throw N.error("LastFewActions", s.serialize()), Error("Dispatch loop detected, aborting");
+                            if (++_ > 100) {
+                                var e;
+                                let _ = s.serialize();
+                                throw N.error("LastFewActions", _), null === (e = this._sentryUtils) || void 0 === e || e.addBreadcrumb({
+                                    message: "Dispatcher: Dispatch loop detected",
+                                    data: {
+                                        lastFewActions: _
+                                    }
+                                }), Error("Dispatch loop detected, aborting")
+                            }
                             for (; this._waitQueue.length > 0;) {
                                 let e = this._waitQueue.shift();
                                 e()
@@ -30027,8 +30039,8 @@
                 addDependencies(e, _) {
                     this._actionHandlers.addDependencies(e, _)
                 }
-                constructor(e = 0, _) {
-                    this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._defaultBand = e, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
+                constructor(e = 0, _, E) {
+                    this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._sentryUtils = void 0, this._defaultBand = e, this._sentryUtils = E, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
                         r.default.isTracing && E >= 10 && r.default.mark("\uD83E\uDDA5", _, E)
                     })
                 }
@@ -36335,4 +36347,4 @@
         }
     }
 ]);
-//# sourceMappingURL=084c9ed3bec97210d200.js.map
+//# sourceMappingURL=f8d9ce7aff5333e81704.js.map
