@@ -899,11 +899,8 @@
         641078: function(e, t, r) {
             "use strict";
             r.r(t), r.d(t, {
-                isUserIneligibleBasedOnCurrentOrPreviousSubs: function() {
-                    return U
-                },
                 useIsEligibleForBogoPromotion: function() {
-                    return h
+                    return L
                 },
                 maybeFetchActiveBogoPromotion: function() {
                     return N
@@ -940,7 +937,7 @@
                 g = r("49111"),
                 x = r("782340");
 
-            function U(e) {
+            function h(e) {
                 var t, r, n;
                 let {
                     experimentEnabled: l,
@@ -963,7 +960,7 @@
                 return !l || a || u
             }
 
-            function h() {
+            function L() {
                 var e;
                 let {
                     paymentsBlocked: t
@@ -983,7 +980,7 @@
                     premiumSubscription: f.default.getPremiumTypeSubscription()
                 })), s = (0, O.usePremiumTrialOffer)(), d = new Date(null !== (e = null == r ? void 0 : r.endDate) && void 0 !== e ? e : 0).valueOf();
                 (0, a.default)(d, 1e3, void 0, d + 2e3 < Date.now());
-                let c = !U({
+                let c = !h({
                         experimentEnabled: n,
                         premiumSubscription: o,
                         mostRecentSubscription: i
@@ -1000,7 +997,7 @@
                     });
                 return !(_ > d) && E
             }
-            async function L() {
+            async function U() {
                 var e;
                 let t = m.default.getCurrentUser(),
                     r = !(null == t ? void 0 : t.isClaimed()),
@@ -1033,14 +1030,14 @@
                 !f.default.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = m.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasHadSKU(M.PremiumSubscriptionSKUs.TIER_2)) && await (0, s.fetchMostRecentSubscription)(), !f.default.hasFetchedSubscriptions() && await (0, s.fetchSubscriptions)();
                 let a = f.default.getMostRecentPremiumTypeSubscription(),
                     d = f.default.getPremiumTypeSubscription();
-                return !U({
+                return !h({
                     experimentEnabled: i,
                     premiumSubscription: d,
                     mostRecentSubscription: a
                 })
             }
             async function N() {
-                let e = await L();
+                let e = await U();
                 if (!e) return;
                 let t = S.default.bogoPromotion;
                 if (null != t) {
@@ -1053,7 +1050,7 @@
                 let e = S.default.bogoPromotion,
                     t = null != e && new Date(e.endDate).valueOf() >= Date.now() && new Date(e.startDate).valueOf() <= Date.now(),
                     r = (0, d.isDismissibleContentDismissed)(o.DismissibleContent.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL),
-                    n = await L(),
+                    n = await U(),
                     {
                         enabled: i
                     } = P.BogoPromotionExperiment.getCurrentConfig({
@@ -1137,9 +1134,9 @@
                 M = r("286235"),
                 g = r("626301"),
                 x = r("917247"),
-                U = r("635956"),
-                h = r("400307"),
-                L = r("646718"),
+                h = r("635956"),
+                L = r("400307"),
+                U = r("646718"),
                 N = r("49111"),
                 v = r("782340"),
                 A = r("670714"),
@@ -1172,20 +1169,20 @@
                     withBottomMargin: a,
                     discountOffer: u,
                     trialOffer: d
-                } = e, c = null !== (t = null == d ? void 0 : d.expires_at) && void 0 !== t ? t : null == u ? void 0 : u.expires_at, m = null == d ? void 0 : d.subscription_trial, f = null !== (i = null !== (r = e.subscriptionTier) && void 0 !== r ? r : null == m ? void 0 : m.sku_id) && void 0 !== i ? i : L.PremiumSubscriptionSKUs.TIER_2;
+                } = e, c = null !== (t = null == d ? void 0 : d.expires_at) && void 0 !== t ? t : null == u ? void 0 : u.expires_at, m = null == d ? void 0 : d.subscription_trial, f = null !== (i = null !== (r = e.subscriptionTier) && void 0 !== r ? r : null == m ? void 0 : m.sku_id) && void 0 !== i ? i : U.PremiumSubscriptionSKUs.TIER_2;
                 return (0, n.jsxs)("div", {
                     className: o(l, A.gradientUpsellWrapper, {
-                        [A.gradientUpsellWrapperTier0]: f === L.PremiumSubscriptionSKUs.TIER_0,
-                        [A.gradientUpsellWrapperTier2]: f === L.PremiumSubscriptionSKUs.TIER_2,
+                        [A.gradientUpsellWrapperTier0]: f === U.PremiumSubscriptionSKUs.TIER_0,
+                        [A.gradientUpsellWrapperTier2]: f === U.PremiumSubscriptionSKUs.TIER_2,
                         [A.gradientUpsellWrapperWithBottomMargin]: a
                     }),
                     children: [(0, n.jsxs)("div", {
                         className: A.logo,
                         children: [(0, n.jsx)(C.default, {
                             className: A.logoIcon
-                        }), f === L.PremiumSubscriptionSKUs.TIER_0 && (0, n.jsx)(R.default, {
+                        }), f === U.PremiumSubscriptionSKUs.TIER_0 && (0, n.jsx)(R.default, {
                             className: A.logoWordmark
-                        }), f === L.PremiumSubscriptionSKUs.TIER_2 && (0, n.jsx)(O.default, {
+                        }), f === U.PremiumSubscriptionSKUs.TIER_2 && (0, n.jsx)(O.default, {
                             className: A.logoWordmark
                         })]
                     }), (0, n.jsx)(_.Text, {
@@ -1193,11 +1190,11 @@
                         className: A.copy,
                         color: "none",
                         children: s
-                    }), (0, n.jsx)(h.PremiumPillWithSparkles, {
+                    }), (0, n.jsx)(L.PremiumPillWithSparkles, {
                         text: null != u ? v.default.Messages.PREMIUM_DISCOUNT_AMOUNT_OFF_BADGE.format({
                             percent: u.discount.amount
                         }) : v.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
-                        colorOptions: f === L.PremiumSubscriptionSKUs.TIER_0 ? h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_0_WHITE_FILL : h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_WHITE_FILL
+                        colorOptions: f === U.PremiumSubscriptionSKUs.TIER_0 ? L.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_0_WHITE_FILL : L.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_WHITE_FILL
                     }), (0, n.jsx)(_.Text, {
                         variant: "eyebrow",
                         className: A.countdownText,
@@ -1221,7 +1218,7 @@
                     intervalType: null == u ? void 0 : null === (t = u.subscription_trial) || void 0 === t ? void 0 : t.interval,
                     intervalCount: null == u ? void 0 : null === (r = u.subscription_trial) || void 0 === r ? void 0 : r.interval_count
                 });
-                return (0, n.jsx)(U.default, {
+                return (0, n.jsx)(h.default, {
                     className: l,
                     subscriptionTier: s,
                     trialId: null == u ? void 0 : u.trial_id,
@@ -1242,12 +1239,12 @@
             function F(e) {
                 var t, r;
                 let i = null === (t = (0, x.usePremiumTrialOffer)()) || void 0 === t ? void 0 : t.subscription_trial,
-                    l = null !== (r = null == i ? void 0 : i.sku_id) && void 0 !== r ? r : L.PremiumSubscriptionSKUs.TIER_2;
+                    l = null !== (r = null == i ? void 0 : i.sku_id) && void 0 !== r ? r : U.PremiumSubscriptionSKUs.TIER_2;
                 return (0, n.jsx)(_.Text, {
                     variant: "text-xs/bold",
                     className: o(A.trialBadge, e.className, {
-                        [A.trialBadgeGradientTier0]: l === L.PremiumSubscriptionSKUs.TIER_0,
-                        [A.trialBadgeGradientTier2]: l === L.PremiumSubscriptionSKUs.TIER_2
+                        [A.trialBadgeGradientTier0]: l === U.PremiumSubscriptionSKUs.TIER_0,
+                        [A.trialBadgeGradientTier2]: l === U.PremiumSubscriptionSKUs.TIER_2
                     }),
                     color: "none",
                     children: (0, S.formatTrialOfferIntervalDuration)({
@@ -1291,10 +1288,10 @@
                 } = e, i = (0, x.usePremiumTrialOffer)();
                 return (0, n.jsxs)("div", {
                     className: A.tryOutUpsellContainer,
-                    children: [(0, n.jsx)(h.PremiumPillWithSparkles, {
+                    children: [(0, n.jsx)(L.PremiumPillWithSparkles, {
                         className: A.topRimPill,
                         text: v.default.Messages.PREMIUM_FREE_NITRO_TRIAL_TEXT,
-                        colorOptions: h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+                        colorOptions: L.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_NEW_GRADIENT_FILL
                     }), (0, n.jsx)(_.Heading, {
                         variant: "heading-md/semibold",
                         color: "text-normal",
@@ -1304,7 +1301,7 @@
                     }), (0, n.jsx)(y, {
                         trialOffer: i,
                         className: A.subscribeButtonWide,
-                        subscriptionTier: L.PremiumSubscriptionSKUs.TIER_2,
+                        subscriptionTier: U.PremiumSubscriptionSKUs.TIER_2,
                         analyticsLocationObject: r,
                         onClose: t
                     }), (0, n.jsx)(_.Text, {
@@ -1353,7 +1350,7 @@
                     discountOffer: C
                 } = e, g = (0, c.useStateFromStores)([T.default], () => T.default.useReducedMotion), x = (0, E.default)();
                 switch (u) {
-                    case L.PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL:
+                    case U.PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL:
                         return (0, n.jsxs)(n.Fragment, {
                             children: [(0, n.jsx)(_.Clickable, {
                                 className: A.upsellClose,
@@ -1388,7 +1385,7 @@
                                 discountOffer: C
                             })]
                         });
-                    case L.PremiumUpsellTypes.STICKER_PICKER_UPSELL:
+                    case U.PremiumUpsellTypes.STICKER_PICKER_UPSELL:
                         return a(null != l, "You must specify children for this upsell type"), (0, n.jsxs)(n.Fragment, {
                             children: [(0, n.jsxs)("div", {
                                 className: A.contentContainer,
@@ -1419,16 +1416,16 @@
                                 discountOffer: C
                             })]
                         });
-                    case L.PremiumUpsellTypes.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI:
+                    case U.PremiumUpsellTypes.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI:
                         a(null != l, "You must specify children for this upsell type");
-                        let U = (0, f.isThemeLight)(x) ? r("602291") : r("609708");
+                        let h = (0, f.isThemeLight)(x) ? r("602291") : r("609708");
                         return (0, n.jsxs)(n.Fragment, {
                             children: [(0, n.jsxs)("div", {
                                 className: A.contentContainer,
                                 children: [(0, n.jsx)("img", {
                                     alt: "",
                                     className: A.upsellImage,
-                                    src: U
+                                    src: h
                                 }), (0, n.jsx)(_.Heading, {
                                     variant: "heading-xl/bold",
                                     color: "header-primary",
@@ -1452,45 +1449,45 @@
                                 discountOffer: C
                             })]
                         });
-                    case L.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL:
-                    case L.PremiumUpsellTypes.BURST_REACTION_UPSELL:
-                    case L.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
-                    case L.PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL:
-                        let h;
+                    case U.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL:
+                    case U.PremiumUpsellTypes.BURST_REACTION_UPSELL:
+                    case U.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
+                    case U.PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL:
+                        let L;
                         switch (u) {
-                            case L.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL:
-                                h = v.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_WITH_SIZE_AND_ACTION_V2.format({
+                            case U.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL:
+                                L = v.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_WITH_SIZE_AND_ACTION_V2.format({
                                     planName: (0, S.getDisplayNameFromSku)(d),
-                                    premiumMaxSize: d === L.PremiumSubscriptionSKUs.TIER_0 ? v.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_0_CORRECTED : v.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_2_INCREASE,
+                                    premiumMaxSize: d === U.PremiumSubscriptionSKUs.TIER_0 ? v.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_0_CORRECTED : v.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_2_INCREASE,
                                     onClick: () => {
                                         (0, p.transitionTo)(N.Routes.APPLICATION_STORE), null == s || s()
                                     }
                                 });
                                 break;
-                            case L.PremiumUpsellTypes.BURST_REACTION_UPSELL:
-                                h = v.default.Messages.SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION_CLICK_V2.format({
+                            case U.PremiumUpsellTypes.BURST_REACTION_UPSELL:
+                                L = v.default.Messages.SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION_CLICK_V2.format({
                                     planName: (0, S.getDisplayNameFromSku)(d),
                                     onClick: () => {
                                         (0, p.transitionTo)(N.Routes.APPLICATION_STORE), null == s || s()
                                     }
                                 });
                                 break;
-                            case L.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
-                                h = v.default.Messages.STREAM_PREMIUM_UPSELL_WITH_ACTION.format({
+                            case U.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
+                                L = v.default.Messages.STREAM_PREMIUM_UPSELL_WITH_ACTION.format({
                                     onClick: () => {
                                         (0, p.transitionTo)(N.Routes.APPLICATION_STORE), null == s || s(), (0, m.closeAllModals)()
                                     }
                                 });
                                 break;
-                            case L.PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL:
-                                h = v.default.Messages.PREMIUM_CHAT_PERKS_MAX_MESSAGE_LENGTH_UPSELL.format({
+                            case U.PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL:
+                                L = v.default.Messages.PREMIUM_CHAT_PERKS_MAX_MESSAGE_LENGTH_UPSELL.format({
                                     premiumMaxMessageLength: N.MAX_MESSAGE_LENGTH_PREMIUM,
                                     onClick: () => {
                                         (0, p.transitionTo)(N.Routes.APPLICATION_STORE), null == s || s()
                                     }
                                 })
                         }
-                        return a(null != h, "There must be some upsell context"), (0, n.jsx)(n.Fragment, {
+                        return a(null != L, "There must be some upsell context"), (0, n.jsx)(n.Fragment, {
                             children: (0, n.jsxs)("div", {
                                 className: A.contentContainer,
                                 children: [(0, n.jsx)(_.Heading, {
@@ -1503,11 +1500,11 @@
                                 }), (0, n.jsx)(j, {
                                     trialOffer: R,
                                     discountOffer: C,
-                                    children: h
+                                    children: L
                                 })]
                             })
                         });
-                    case L.PremiumUpsellTypes.BURST_REACTION_QUICK_ACTION_UPSELL:
+                    case U.PremiumUpsellTypes.BURST_REACTION_QUICK_ACTION_UPSELL:
                         return (0, n.jsxs)("div", {
                             className: A.contentContainer,
                             children: [(0, n.jsx)(_.Heading, {
@@ -1533,7 +1530,7 @@
                                 discountOffer: C
                             })]
                         });
-                    case L.PremiumUpsellTypes.PREMIUM_CLIENT_THEME_TRY_IT_OUT:
+                    case U.PremiumUpsellTypes.PREMIUM_CLIENT_THEME_TRY_IT_OUT:
                         return a(null != l, "You must specify children for this upsell type"), (0, n.jsx)(j, {
                             trialOffer: R,
                             discountOffer: C,
@@ -1543,7 +1540,7 @@
                                 }
                             })
                         });
-                    case L.PremiumUpsellTypes.MESSAGE_LENGTH_IN_EDITOR_UPSELL:
+                    case U.PremiumUpsellTypes.MESSAGE_LENGTH_IN_EDITOR_UPSELL:
                         return (0, n.jsxs)("div", {
                             className: o(A.messageLengthUpsellContainer, {
                                 [A.messageLengthUpsellAppearAnimation]: !g
@@ -1578,16 +1575,16 @@
                                 discountOffer: C
                             })]
                         });
-                    case L.PremiumUpsellTypes.CUSTOM_PROFILE_TRY_OUT_UPSELL:
-                    case L.PremiumUpsellTypes.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL:
+                    case U.PremiumUpsellTypes.CUSTOM_PROFILE_TRY_OUT_UPSELL:
+                    case U.PremiumUpsellTypes.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL:
                         return (0, n.jsx)(B, {});
-                    case L.PremiumUpsellTypes.GUILD_CAP_MODAL_UPSELL:
-                    case L.PremiumUpsellTypes.PREMIUM_GUILD_IDENTITY_MODAL:
-                    case L.PremiumUpsellTypes.CUSTOM_PROFILE_UPSELL:
-                    case L.PremiumUpsellTypes.VIDEO_BACKGROUNDS_MODAL:
-                    case L.PremiumUpsellTypes.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED:
-                    case L.PremiumUpsellTypes.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED:
-                    case L.PremiumUpsellTypes.EMOJI_PICKER_EMOJI_CLICKED:
+                    case U.PremiumUpsellTypes.GUILD_CAP_MODAL_UPSELL:
+                    case U.PremiumUpsellTypes.PREMIUM_GUILD_IDENTITY_MODAL:
+                    case U.PremiumUpsellTypes.CUSTOM_PROFILE_UPSELL:
+                    case U.PremiumUpsellTypes.VIDEO_BACKGROUNDS_MODAL:
+                    case U.PremiumUpsellTypes.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED:
+                    case U.PremiumUpsellTypes.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED:
+                    case U.PremiumUpsellTypes.EMOJI_PICKER_EMOJI_CLICKED:
                         return (0, n.jsx)(G, {
                             trialOffer: R,
                             discountOffer: C,
@@ -1650,9 +1647,9 @@
                 M = r("915639"),
                 g = r("697218"),
                 x = r("521012"),
-                U = r("594098"),
-                h = r("491614"),
-                L = r("716589"),
+                h = r("594098"),
+                L = r("491614"),
+                U = r("716589"),
                 N = r("46829"),
                 v = r("118503"),
                 A = r("41250"),
@@ -1972,7 +1969,7 @@
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
                     }), e ? (0, u.jsx)(ei, {
-                        Icon: h.default,
+                        Icon: L.default,
                         text: t ? Y.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED : Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
                             weeklyReactionsNumber: S.BurstRefillTierAmounts.TIER_0
                         })
@@ -2010,7 +2007,7 @@
                         className: z.newCircleIcon
                     }), r ? (0, u.jsx)("div", {
                         className: z.wumpusImageContainer,
-                        children: (0, u.jsx)(U.default, {
+                        children: (0, u.jsx)(h.default, {
                             src: X,
                             mediaLayoutType: Z.MediaLayoutType.RESPONSIVE,
                             width: 270,
@@ -2083,7 +2080,7 @@
                         Icon: j.default,
                         text: Y.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
                     }), (0, u.jsx)(ei, {
-                        Icon: L.default,
+                        Icon: U.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_PROFILE_ITEM
                     })]
                 });
@@ -2099,7 +2096,7 @@
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
                     }), r ? (0, u.jsx)(ei, {
-                        Icon: h.default,
+                        Icon: L.default,
                         text: n ? Y.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED : Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
                             weeklyReactionsNumber: S.BurstRefillTierAmounts.TIER_2
                         })
@@ -2110,7 +2107,7 @@
                         Icon: v.default,
                         text: Y.default.Messages.PREMIUM_TIER_SERVER_BOOST_ITEM
                     }), (0, u.jsx)(ei, {
-                        Icon: L.default,
+                        Icon: U.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_PROFILE_ITEM
                     })]
                 })
@@ -2167,7 +2164,7 @@
                         })]
                     }), i ? (0, u.jsx)("div", {
                         className: z.wumpusImageContainer,
-                        children: (0, u.jsx)(U.default, {
+                        children: (0, u.jsx)(h.default, {
                             src: J,
                             mediaLayoutType: Z.MediaLayoutType.RESPONSIVE,
                             width: 270,
@@ -2424,4 +2421,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5eb9df9f3469437f278d.js.map
+//# sourceMappingURL=247c7c9950ec67e3fca2.js.map
