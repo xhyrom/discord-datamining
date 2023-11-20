@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_mobile_redesign_override_toggles_t2",
+    "label": "Tabs V2 - redesign opt-out for T2",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show",
+      "Treatment 2: hide"
+    ],
+    "hash": 134161945,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

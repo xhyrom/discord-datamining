@@ -1,8 +1,8 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-09_mobile_redesign_toggle",
-    "label": "Tabs V2 - manual toggles",
+    "id": "2023-09_mobile_redesign_override_toggles",
+    "label": "Tabs V2 - redesign opt-out/in for all",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -10,7 +10,7 @@
       "Treatment 2: hide toggles",
       "Treatment 3: hide & ignore toggles"
     ],
-    "hash": 1727919676,
+    "hash": 1855953905,
     "buckets": [
       -1,
       0,

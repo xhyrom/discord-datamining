@@ -312,6 +312,8 @@ id,hash,label
 2023-09_limited_time_custom_app_icons,4133484951,Limited-time icons
 2023-09_member_safety_release_coachmark,1865413295,Members Safety Release Coachmark Experiment
 2023-09_mobile_redesign_hfu,3033100557,Tabs V2 - HFU Iteration
+2023-09_mobile_redesign_override_toggles,1855953905,Tabs V2 - redesign opt-out/in for all
+2023-09_mobile_redesign_override_toggles_t2,134161945,Tabs V2 - redesign opt-out for T2
 2023-09_mobile_redesign_panels,985588111,Tabs V2 - Panels
 2023-09_mobile_redesign_panels_existing_users,2137061112,Tabs V2 - Panels - Existing Users
 2023-09_mobile_redesign_panels_new_users,1258152564,Tabs V2 - Panels - New Users
