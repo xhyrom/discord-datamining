@@ -9659,6 +9659,38 @@
       "config_keys": [
         "userAppsTreatment"
       ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "872892246494691338",
+          "847184799365857331"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
