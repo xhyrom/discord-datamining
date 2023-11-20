@@ -701,7 +701,7 @@
             let s;
             l.r(t), l.d(t, {
                 default: function() {
-                    return B
+                    return Y
                 }
             }), l("424973"), l("222007"), l("843762"), l("808653");
             var u = l("917351"),
@@ -712,57 +712,58 @@
                 o = l("123225"),
                 h = l("681643"),
                 d = l("934306"),
-                c = l("401690"),
-                p = l("161778"),
-                _ = l("271938"),
-                f = l("42203"),
-                R = l("474643"),
-                y = l("923959"),
-                E = l("26989"),
-                C = l("305961"),
-                T = l("957255"),
-                m = l("660478"),
-                g = l("18494"),
-                A = l("162771"),
-                I = l("282109"),
-                U = l("25292"),
-                N = l("449008"),
-                S = l("49111"),
-                v = l("782340");
-            let L = "seenQSTutorial",
-                O = [o.AutocompleterResultTypes.USER, o.AutocompleterResultTypes.GROUP_DM, o.AutocompleterResultTypes.TEXT_CHANNEL, o.AutocompleterResultTypes.GUILD, o.AutocompleterResultTypes.APPLICATION, o.AutocompleterResultTypes.LINK],
-                D = 0,
-                M = !1,
+                c = l("615387"),
+                p = l("401690"),
+                _ = l("161778"),
+                f = l("271938"),
+                R = l("42203"),
+                y = l("474643"),
+                E = l("923959"),
+                C = l("26989"),
+                T = l("305961"),
+                m = l("957255"),
+                g = l("660478"),
+                A = l("18494"),
+                I = l("162771"),
+                U = l("282109"),
+                N = l("25292"),
+                S = l("449008"),
+                v = l("49111"),
+                L = l("782340");
+            let O = "seenQSTutorial",
+                D = [o.AutocompleterResultTypes.USER, o.AutocompleterResultTypes.GROUP_DM, o.AutocompleterResultTypes.TEXT_CHANNEL, o.AutocompleterResultTypes.GUILD, o.AutocompleterResultTypes.APPLICATION, o.AutocompleterResultTypes.LINK],
+                M = 0,
                 b = !1,
-                H = null,
-                k = [],
-                G = null,
+                H = !1,
+                k = null,
+                G = [],
+                P = null,
                 Q = 0,
-                P = [],
-                q = [];
+                q = [],
+                w = [];
 
-            function w() {
-                b = C.default.getGuildCount() >= 3 || i.size(f.default.getMutablePrivateChannels()) >= 20, P = []
-            }
-
-            function x(e) {
-                let t = (0, h.default)(e);
-                return null == t || null != H && H !== t.type ? null : t
+            function x() {
+                H = T.default.getGuildCount() >= 3 || i.size(R.default.getMutablePrivateChannels()) >= 20, q = []
             }
 
             function W(e) {
+                let t = (0, h.default)(e);
+                return null == t || null != k && k !== t.type ? null : t
+            }
+
+            function K(e) {
                 var t;
                 let {
                     query: l,
                     queryMode: u
-                } = e, i = (0, d.isSplitMessagesTabAndOnMessagesTab)() ? void 0 : null !== (t = A.default.getGuildId()) && void 0 !== t ? t : void 0, n = new Set(["user:".concat(_.default.getId())]);
-                null != i && n.add("guild:".concat(i)), s = null != s ? s : new o.default(K, O, null != u ? 100 : 5, {
+                } = e, i = (0, d.isSplitMessagesTabAndOnMessagesTab)() ? void 0 : null !== (t = I.default.getGuildId()) && void 0 !== t ? t : void 0, n = new Set(["user:".concat(f.default.getId())]);
+                null != i && n.add("guild:".concat(i)), s = null != s ? s : new o.default(z, D, null != u ? 100 : 5, {
                     frecencyBoosters: !0,
                     blacklist: n
-                }), G = null, Q = l.length, H = u, s.search(l)
+                }), P = null, Q = l.length, k = u, s.search(l)
             }
 
-            function K(e, t) {
+            function z(e, t) {
                 ! function(e, t) {
                     if (e.length !== t.length) return !1;
                     for (let l = 0; l < e.length; l++) {
@@ -773,12 +774,12 @@
                     return !0
                 }(e = "" === (t = t.trim()).trim() ? function() {
                     var e, t;
-                    let l = null !== (e = A.default.getGuildId()) && void 0 !== e ? e : void 0,
-                        s = null !== (t = g.default.getChannelId()) && void 0 !== t ? t : void 0;
-                    switch (H) {
+                    let l = null !== (e = I.default.getGuildId()) && void 0 !== e ? e : void 0,
+                        s = null !== (t = A.default.getChannelId()) && void 0 !== t ? t : void 0;
+                    switch (k) {
                         case o.AutocompleterResultTypes.USER: {
-                            let e = _.default.getId();
-                            return U.default.getRecentlyTalked(s, 100).filter(t => {
+                            let e = f.default.getId();
+                            return N.default.getRecentlyTalked(s, 100).filter(t => {
                                 let {
                                     record: l
                                 } = t;
@@ -786,111 +787,111 @@
                             })
                         }
                         case o.AutocompleterResultTypes.APPLICATION:
-                            return U.default.queryApplications({
+                            return N.default.queryApplications({
                                 query: "",
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.GUILD:
-                            return U.default.queryGuilds({
+                            return N.default.queryGuilds({
                                 query: "",
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.TEXT_CHANNEL:
-                            return U.default.queryChannels({
+                            return N.default.queryChannels({
                                 query: "",
-                                guildId: A.default.getGuildId(),
+                                guildId: I.default.getGuildId(),
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.VOICE_CHANNEL:
-                            return U.default.queryChannels({
+                            return N.default.queryChannels({
                                 query: "",
-                                guildId: A.default.getGuildId(),
+                                guildId: I.default.getGuildId(),
                                 limit: 100,
                                 fuzzy: !0,
                                 filter: () => !0,
-                                type: y.GUILD_VOCAL_CHANNELS_KEY
+                                type: E.GUILD_VOCAL_CHANNELS_KEY
                             })
                     }
                     let u = [],
                         n = [];
-                    for (let e = 1; e < q.length; e += 1) {
-                        let t = x(q[e]);
-                        if (null != t)(t.type !== o.AutocompleterResultTypes.TEXT_CHANNEL && t.type !== o.AutocompleterResultTypes.VOICE_CHANNEL || T.default.can(S.Permissions.VIEW_CHANNEL, t.record)) && n.push(t)
+                    for (let e = 1; e < w.length; e += 1) {
+                        let t = W(w[e]);
+                        if (null != t)(t.type !== o.AutocompleterResultTypes.TEXT_CHANNEL && t.type !== o.AutocompleterResultTypes.VOICE_CHANNEL || m.default.can(v.Permissions.VIEW_CHANNEL, t.record)) && n.push(t)
                     }
-                    n.length > 0 && u.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_LAST_CHANNEL), ...n);
+                    n.length > 0 && u.push((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_LAST_CHANNEL), ...n);
                     let r = function(e) {
                         let t = [];
-                        return R.default.getRecentlyEditedDrafts(R.DraftType.ChannelMessage).forEach(l => {
+                        return y.default.getRecentlyEditedDrafts(y.DraftType.ChannelMessage).forEach(l => {
                             let {
                                 channelId: s
                             } = l;
                             if (e(s)) return;
-                            let u = x(s);
+                            let u = W(s);
                             null != u && t.push(u)
                         }), t
-                    }(e => e === s || q.includes(e));
-                    r.length > 0 && u.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_DRAFTS), ...r);
-                    let a = m.default.getMentionChannelIds().filter(e => e !== s && !q.includes(e)).map(e => x(e)).filter(N.isNotNullish).reverse();
-                    if (a.length > 0 && (u.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_MENTIONS)), u = u.concat(a)), null != l) {
-                        let e = y.default.getSelectableChannelIds(l).filter(e => {
-                            let t = f.default.getChannel(e);
-                            return !(null == t || e === s || q.includes(e) || I.default.isChannelMuted(t.guild_id, e) || null != t.parent_id && I.default.isChannelMuted(t.guild_id, t.parent_id)) && m.default.hasRelevantUnread(t)
-                        }).map(e => x(e)).filter(e => e);
-                        Object.values(c.default.getActiveJoinedUnreadThreadsForGuild(l)).forEach(t => {
+                    }(e => e === s || w.includes(e));
+                    r.length > 0 && u.push((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_DRAFTS), ...r);
+                    let a = g.default.getMentionChannelIds().filter(e => e !== s && !w.includes(e)).map(e => W(e)).filter(S.isNotNullish).reverse();
+                    if (a.length > 0 && (u.push((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_MENTIONS)), u = u.concat(a)), null != l) {
+                        let e = E.default.getSelectableChannelIds(l).filter(e => {
+                            let t = R.default.getChannel(e);
+                            return !(null == t || e === s || w.includes(e) || U.default.isChannelMuted(t.guild_id, e) || null != t.parent_id && U.default.isChannelMuted(t.guild_id, t.parent_id)) && (0, c.getHasImportantUnread)(t)
+                        }).map(e => W(e)).filter(e => e);
+                        Object.values(p.default.getActiveJoinedUnreadThreadsForGuild(l)).forEach(t => {
                             for (let l in t) {
-                                let t = x(l);
+                                let t = W(l);
                                 null != t && e.push(t)
                             }
-                        }), e.length > 0 && (u.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_UNREAD_CHANNELS)), u = u.concat(e))
+                        }), e.length > 0 && (u.push((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_UNREAD_CHANNELS)), u = u.concat(e))
                     }
                     return i(u).uniqBy(e => e.record.id).value()
-                }() : e, P) && (P = e, ! function(e, t) {
-                    switch (H) {
+                }() : e, q) && (q = e, ! function(e, t) {
+                    switch (k) {
                         case o.AutocompleterResultTypes.USER: {
-                            let t = C.default.getGuild(A.default.getGuildId());
-                            e.unshift((0, o.createHeaderResult)(null != t ? v.default.Messages.QUICKSWITCHER_QUERYMODE_USERS_IN_GUILD.format({
+                            let t = T.default.getGuild(I.default.getGuildId());
+                            e.unshift((0, o.createHeaderResult)(null != t ? L.default.Messages.QUICKSWITCHER_QUERYMODE_USERS_IN_GUILD.format({
                                 name: t.name
-                            }) : v.default.Messages.QUICKSWITCHER_QUERYMODE_USERS)), k = e;
+                            }) : L.default.Messages.QUICKSWITCHER_QUERYMODE_USERS)), G = e;
                             break
                         }
                         case o.AutocompleterResultTypes.TEXT_CHANNEL:
-                            e.unshift((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_QUERYMODE_TEXT_CHANNELS)), k = e;
+                            e.unshift((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_QUERYMODE_TEXT_CHANNELS)), G = e;
                             break;
                         case o.AutocompleterResultTypes.VOICE_CHANNEL:
-                            e.unshift((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_QUERYMODE_VOICE_CHANNELS)), k = e;
+                            e.unshift((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_QUERYMODE_VOICE_CHANNELS)), G = e;
                             break;
                         case o.AutocompleterResultTypes.GUILD:
-                            e.unshift((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_QUERYMODE_GUILDS)), k = e;
+                            e.unshift((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_QUERYMODE_GUILDS)), G = e;
                             break;
                         case o.AutocompleterResultTypes.APPLICATION:
-                            e.unshift((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_QUERYMODE_APPLICATIONS)), k = e;
+                            e.unshift((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_QUERYMODE_APPLICATIONS)), G = e;
                             break;
                         default:
-                            k = e
+                            G = e
                     }
-                    if (t !== G) G = t, Q = Math.max(t.length, Q), D = (0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, -1, k);
+                    if (t !== P) P = t, Q = Math.max(t.length, Q), M = (0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, -1, G);
                     else {
-                        let e = k[D];
-                        null != e && e.type === o.AutocompleterResultTypes.HEADER && (D = (0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, D, k))
+                        let e = G[M];
+                        null != e && e.type === o.AutocompleterResultTypes.HEADER && (M = (0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, M, G))
                     }
-                    F.emitChange()
+                    B.emitChange()
                 }(e, t))
             }
 
-            function z() {
-                G = null, Q = 0, P = [], null != s && (s.destroy(), s = null)
+            function V() {
+                P = null, Q = 0, q = [], null != s && (s.destroy(), s = null)
             }
-            class V extends n.default.PersistedStore {
+            class F extends n.default.PersistedStore {
                 initialize(e) {
                     var t;
-                    this.waitFor(E.default, C.default, f.default), this.syncWith([p.default], () => !0), M = r.default.get(L) || !1, q = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
+                    this.waitFor(C.default, T.default, R.default), this.syncWith([_.default], () => !0), b = r.default.get(O) || !1, w = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
                 }
                 getState() {
                     return {
-                        channelHistory: q
+                        channelHistory: w
                     }
                 }
                 isOpen() {
@@ -900,8 +901,8 @@
                     return null == s ? 0 : null == e ? s.results.reduce((e, t) => t.type !== o.AutocompleterResultTypes.HEADER ? e + 1 : e, 0) : s.results.reduce((t, l) => l.type === e ? t + 1 : t, 0)
                 }
                 channelNoticePredicate(e, t) {
-                    let l = Date.now() - t >= S.CHANNEL_NOTICE_SHOW_DELAY;
-                    return b && l
+                    let l = Date.now() - t >= v.CHANNEL_NOTICE_SHOW_DELAY;
+                    return H && l
                 }
                 getFrequentGuilds() {
                     return null != s ? s.queryGuilds("", 100) : null
@@ -910,29 +911,29 @@
                     return null != s ? s.queryGuilds("", 100).length : 0
                 }
                 getChannelHistory() {
-                    return q
+                    return w
                 }
                 getProps() {
                     return {
-                        theme: p.default.theme,
+                        theme: _.default.theme,
                         query: null != s ? s.query : "",
-                        queryMode: H,
-                        results: k,
-                        selectedIndex: D,
-                        seenTutorial: M,
+                        queryMode: k,
+                        results: G,
+                        selectedIndex: M,
+                        seenTutorial: b,
                         maxQueryLength: Q
                     }
                 }
             }
-            V.displayName = "QuickSwitcherStore", V.persistKey = "QuickSwitcherStore";
-            let F = new V(a.default, {
-                CONNECTION_OPEN: w,
-                CONNECTION_OPEN_SUPPLEMENTAL: w,
-                QUICKSWITCHER_SHOW: W,
-                SHOW_ACTION_SHEET_QUICK_SWITCHER: W,
-                QUICKSWITCHER_HIDE: z,
-                OVERLAY_SET_INPUT_LOCKED: z,
-                HIDE_ACTION_SHEET_QUICK_SWITCHER: z,
+            F.displayName = "QuickSwitcherStore", F.persistKey = "QuickSwitcherStore";
+            let B = new F(a.default, {
+                CONNECTION_OPEN: x,
+                CONNECTION_OPEN_SUPPLEMENTAL: x,
+                QUICKSWITCHER_SHOW: K,
+                SHOW_ACTION_SHEET_QUICK_SWITCHER: K,
+                QUICKSWITCHER_HIDE: V,
+                OVERLAY_SET_INPUT_LOCKED: V,
+                HIDE_ACTION_SHEET_QUICK_SWITCHER: V,
                 QUICKSWITCHER_SEARCH: function(e) {
                     var t, l;
                     let {
@@ -940,10 +941,10 @@
                         queryMode: i
                     } = e;
                     if (null == s) return !1;
-                    let n = null !== (t = A.default.getGuildId()) && void 0 !== t ? t : null;
-                    if (H !== i) {
-                        s.setResultTypes(null != i ? [i] : O), s.setLimit(null != i ? 100 : 5);
-                        let e = null !== (l = A.default.getGuildId()) && void 0 !== l ? l : void 0;
+                    let n = null !== (t = I.default.getGuildId()) && void 0 !== t ? t : null;
+                    if (k !== i) {
+                        s.setResultTypes(null != i ? [i] : D), s.setLimit(null != i ? 100 : 5);
+                        let e = null !== (l = I.default.getGuildId()) && void 0 !== l ? l : void 0;
                         i === o.AutocompleterResultTypes.USER && null != e ? s.setOptions({
                             userFilters: {
                                 guild: e,
@@ -956,24 +957,39 @@
                             voiceChannelGuildFilter: void 0
                         }, !0)
                     }
-                    H = i, s.search(u, H === o.AutocompleterResultTypes.USER ? n : void 0)
+                    k = i, s.search(u, k === o.AutocompleterResultTypes.USER ? n : void 0)
                 },
                 QUICKSWITCHER_SELECT: function(e) {
-                    D = e.selectedIndex
+                    M = e.selectedIndex
                 },
                 QUICKSWITCHER_SWITCH_TO: function() {
-                    if (M) return !1;
-                    M = !0, r.default.set(L, !0)
+                    if (b) return !1;
+                    b = !0, r.default.set(O, !0)
                 },
                 CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
                     } = e;
                     if (null == t) return !1;
-                    (q = q.filter(e => e !== t)).unshift(t), q.length > 4 && (q.length = 4)
+                    (w = w.filter(e => e !== t)).unshift(t), w.length > 4 && (w.length = 4)
                 }
             });
-            var B = F
+            var Y = B
+        },
+        615387: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                getHasImportantUnread: function() {
+                    return n
+                }
+            }), l("446674");
+            var s = l("660478"),
+                u = l("282109"),
+                i = l("133335");
+
+            function n(e) {
+                return s.default.hasUnread(e.id) && u.default.getChannelUnreadMode(e) === i.UnreadMode.IMPORTANT
+            }
         },
         741347: function(e, t, l) {
             "use strict";
@@ -1079,4 +1095,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bec9d4b88f67814ada9b.js.map
+//# sourceMappingURL=0754801f9ce389728091.js.map

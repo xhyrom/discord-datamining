@@ -3431,7 +3431,7 @@
                     channel_is_muted: n,
                     channel_muted_until: null != i && null != i.end_time ? new Date(i.end_time).getTime() : null,
                     channel_message_notification_settings: c[u.default.getChannelMessageNotifications(e, t)],
-                    channel_flags: u.default.getGuildChannelFlags(e, t)
+                    channel_flags: u.default.getChannelIdFlags(e, t)
                 }
             }
 
@@ -3451,4 +3451,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2d2fb338c4ce133c5cac.js.map
+//# sourceMappingURL=d9300213127d7f9bc704.js.map

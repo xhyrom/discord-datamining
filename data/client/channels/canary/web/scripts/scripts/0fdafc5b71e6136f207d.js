@@ -2909,23 +2909,20 @@
                 NewMessagesBar: function() {
                     return el
                 },
-                NewMessagesPill: function() {
+                NewTopicsBar: function() {
                     return ea
                 },
-                NewTopicsBar: function() {
-                    return es
-                },
                 TopicsPill: function() {
-                    return er
+                    return ei
                 },
                 renderClickableTooltipNode: function() {
-                    return eo
+                    return er
                 },
                 MessagePopoutContent: function() {
-                    return eu
+                    return eo
                 },
                 PopoutLoadingAnimation: function() {
-                    return ed
+                    return eu
                 }
             }), n("222007");
             var l, a, s = n("37983"),
@@ -3267,52 +3264,6 @@
             }
 
             function ea(e) {
-                let {
-                    content: t,
-                    channelId: n,
-                    hasNoticeAbove: l
-                } = e, {
-                    disableInteractions: a
-                } = i.useContext(L.MessagesInteractionContext), r = i.useCallback(() => {
-                    let e = T.default.ackMessageId(n);
-                    null != e ? h.default.jumpToMessage({
-                        channelId: n,
-                        messageId: e,
-                        offset: 1,
-                        context: "Mark As Read"
-                    }) : h.default.jumpToMessage({
-                        channelId: n,
-                        messageId: n,
-                        offset: 1,
-                        context: "Mark As Read"
-                    })
-                }, [n]), u = i.useCallback(() => {
-                    (0, p.ack)(n)
-                }, [n]);
-                return a ? null : (0, s.jsxs)("div", {
-                    className: o(z.newMessagesPillContainer, {
-                        [z.containerMarginTop]: l
-                    }),
-                    children: [(0, s.jsx)(f.Clickable, {
-                        className: z.newMessagesPill,
-                        "aria-label": W.default.Messages.JUMP_TO_LAST_UNREAD_MESSAGE,
-                        onClick: r,
-                        children: (0, s.jsx)(f.Text, {
-                            variant: "text-sm/medium",
-                            children: t
-                        })
-                    }), (0, s.jsx)(f.Clickable, {
-                        className: z.newMessagesClear,
-                        "aria-label": W.default.Messages.MARK_AS_READ,
-                        onClick: u,
-                        children: (0, s.jsx)(P.default, {
-                            className: z.newMessagesClearIcon
-                        })
-                    })]
-                })
-            }
-
-            function es(e) {
                 var t, n, l;
                 let {
                     channel: a,
@@ -3345,7 +3296,7 @@
                                 return null !== (t = A.default.getUser(e)) && void 0 !== t ? t : null
                             }).filter(k.isNotNullish)
                         })) && void 0 !== e ? e : []
-                    }, [b], ei),
+                    }, [b], es),
                     H = null !== (n = (0, m.useStateFromStores)([_.default], () => _.default.visibleSummaryIndex())) && void 0 !== n ? n : -1,
                     Y = null == b ? void 0 : null === (t = b[H]) || void 0 === t ? void 0 : t.topic;
                 null == Y && null == E && (null == b ? void 0 : b.length) >= 1 && (Y = null === (l = b[0]) || void 0 === l ? void 0 : l.topic);
@@ -3457,8 +3408,8 @@
                     ea = i.useCallback(() => {
                         (0, p.ack)(a.id)
                     }, [a.id]),
-                    es = W.default.Messages.SUMMARIES_NO_SUMMARIES;
-                return b.length > 0 && (es = "" === Y || null == Y ? W.default.Messages.SUMMARIES_VIEW_ALL : Y), g ? null : (0, s.jsxs)("div", {
+                    ei = W.default.Messages.SUMMARIES_NO_SUMMARIES;
+                return b.length > 0 && (ei = "" === Y || null == Y ? W.default.Messages.SUMMARIES_VIEW_ALL : Y), g ? null : (0, s.jsxs)("div", {
                     ref: M,
                     className: o(z.newTopicsBarContainer, z.containerMarginTop),
                     children: [(0, s.jsx)("div", {
@@ -3479,7 +3430,7 @@
                                 }), (0, s.jsx)(f.Text, {
                                     variant: "text-sm/medium",
                                     className: o(z.newTopicsBarCompact, z.newTopicsBarText),
-                                    children: es
+                                    children: ei
                                 }), (0, s.jsx)(O.default, {
                                     width: 16,
                                     height: 16,
@@ -3535,14 +3486,14 @@
                 })
             }
 
-            function ei(e, t) {
+            function es(e, t) {
                 return null != t && e.length === t.length && !e.some((e, n) => {
                     var l, a;
                     return l = e, null == (a = t[n]) || l.length !== a.length || !!l.some((e, t) => a[t] !== e)
                 })
             }
 
-            function er(e) {
+            function ei(e) {
                 var t, n, l;
                 let {
                     channel: a,
@@ -3574,7 +3525,7 @@
                                 return null !== (t = A.default.getUser(e)) && void 0 !== t ? t : null
                             }).filter(k.isNotNullish)
                         })) && void 0 !== e ? e : []
-                    }, [j], ei),
+                    }, [j], es),
                     b = null !== (n = (0, m.useStateFromStores)([_.default], () => _.default.visibleSummaryIndex())) && void 0 !== n ? n : -1,
                     D = null == j ? void 0 : null === (t = j[b]) || void 0 === t ? void 0 : t.topic;
                 null == D && null == p && (null == j ? void 0 : j.length) >= 1 && (D = null === (l = j[0]) || void 0 === l ? void 0 : l.topic);
@@ -3768,7 +3719,7 @@
                     })]
                 })
             }
-            let eo = function(e) {
+            let er = function(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                     return (0, s.jsxs)("div", {
                         className: z.tooltip,
@@ -3784,7 +3735,7 @@
                         })]
                     })
                 },
-                eu = e => {
+                eo = e => {
                     let {
                         children: t,
                         className: n
@@ -3794,11 +3745,11 @@
                         children: t
                     })
                 },
-                ed = e => {
+                eu = e => {
                     let {
                         className: t
                     } = e;
-                    return (0, s.jsx)(eu, {
+                    return (0, s.jsx)(eo, {
                         className: t,
                         children: (0, s.jsx)("div", {
                             className: z.popoutLoadingBackground,
@@ -10702,4 +10653,4 @@
         }
     }
 ]);
-//# sourceMappingURL=89c3e6df9bc31b1ca7be.js.map
+//# sourceMappingURL=0fdafc5b71e6136f207d.js.map

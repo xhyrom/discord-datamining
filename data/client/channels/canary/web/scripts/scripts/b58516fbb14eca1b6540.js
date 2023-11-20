@@ -3381,52 +3381,49 @@
         },
         894488: function(e, t, n) {
             "use strict";
+            var i, r, o, s;
             n.r(t), n.d(t, {
                 MESSAGE_GROUP_SPACING: function() {
-                    return a
+                    return l
                 },
                 DEFAULT_COZY_SPACING: function() {
-                    return u
+                    return a
                 },
                 DEFAULT_COMPACT_SPACING: function() {
-                    return c
+                    return u
                 },
                 DEFAULT_POPOUTS: function() {
-                    return d
+                    return c
                 },
                 MESSAGE_PADDING: function() {
-                    return _
+                    return d
                 },
                 PLACEHOLDER_BUFFER: function() {
-                    return f
+                    return _
                 },
                 NEW_MESSAGE_BAR_BUFFER: function() {
-                    return E
+                    return f
                 },
                 NEW_MESSAGE_BAR_BUFFER_LARGE: function() {
-                    return S
+                    return E
                 },
                 NEW_MESSAGE_BAR_ID: function() {
-                    return g
+                    return S
                 },
                 SPOILER_ATTACHMENT_PREFIX: function() {
-                    return h
+                    return g
                 },
                 FileUploadErrorTypes: function() {
-                    return o
+                    return i
                 },
                 DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE: function() {
-                    return m
-                },
-                isChannelStreamMessage: function() {
-                    return p
+                    return h
                 }
-            });
-            var i, r, o, s, l = n("49111");
-            let a = [0, 4, 8, 16, 24],
-                u = 16,
-                c = 0,
-                d = Object.freeze({
+            }), n("49111");
+            let l = [0, 4, 8, 16, 24],
+                a = 16,
+                u = 0,
+                c = Object.freeze({
                     referencedAvatarProfile: !1,
                     referencedUsernameProfile: !1,
                     interactionAvatarProfile: !1,
@@ -3439,18 +3436,14 @@
                     moreUtilities: !1,
                     contextMenu: !1
                 }),
+                d = 16,
                 _ = 16,
-                f = 16,
-                E = 32,
-                S = 64,
-                g = "---new-messages-bar",
-                h = "SPOILER_";
-            (i = o || (o = {})).ERROR_SOURCE_UNKNOWN = "ERROR_SOURCE_UNKNOWN", i.PRECOMPRESSION_SUM_TOO_LARGE = "PRECOMPRESSION_SUM_TOO_LARGE", i.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", i.POSTCOMPRESSION_SUM_TOO_LARGE = "POSTCOMPRESSION_SUM_TOO_LARGE", i.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", i.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR = "UPLOAD_MESSAGE_ATTACHMENT_MAX_SIZE_ERROR", (r = s || (s = {})).SYSTEM_DM_TAG_SYSTEM_TYPE = "a", r.BOT_TAG_SERVER_TYPE = "b", r.AI_TAG_TYPE = "c", r.BOT_TAG_BOT_TYPE = "d", r.REMIXING_TYPE = "e";
-            let m = 209715200;
-
-            function p(e) {
-                return e.type === l.ChannelStreamTypes.MESSAGE
-            }
+                f = 32,
+                E = 64,
+                S = "---new-messages-bar",
+                g = "SPOILER_";
+            (o = i || (i = {})).ERROR_SOURCE_UNKNOWN = "ERROR_SOURCE_UNKNOWN", o.PRECOMPRESSION_SUM_TOO_LARGE = "PRECOMPRESSION_SUM_TOO_LARGE", o.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.POSTCOMPRESSION_SUM_TOO_LARGE = "POSTCOMPRESSION_SUM_TOO_LARGE", o.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR = "UPLOAD_MESSAGE_ATTACHMENT_MAX_SIZE_ERROR", (s = r || (r = {})).SYSTEM_DM_TAG_SYSTEM_TYPE = "a", s.BOT_TAG_SERVER_TYPE = "b", s.AI_TAG_TYPE = "c", s.BOT_TAG_BOT_TYPE = "d", s.REMIXING_TYPE = "e";
+            let h = 209715200
         },
         560241: function(e, t, n) {
             "use strict";
@@ -5287,7 +5280,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "247361", "247361"), 10);
+                let o = parseInt((n = "247369", "247369"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5529,4 +5522,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fb103dc22e3df98699d7.js.map
+//# sourceMappingURL=b58516fbb14eca1b6540.js.map
