@@ -143,11 +143,15 @@
                 }
             }
             async function E(t) {
-                let e = Date.now(),
-                    n = c.default.getApplicationFetchState(t),
-                    i = c.default.getApplicationLastFetchTime(t);
-                if (n !== c.FetchState.FETCHING) {
-                    if (null == i || !(i + 6e5 > e)) {
+                let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+                    n = Date.now(),
+                    i = c.default.getApplicationFetchState(t),
+                    u = c.default.getApplicationLastFetchTime(t),
+                    {
+                        dontRefetchMs: r
+                    } = e;
+                if (i !== c.FetchState.FETCHING) {
+                    if (!(null != u && u + (null != r ? r : 6e5) > n)) {
                         a.default.dispatch({
                             type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
                             applicationId: t
@@ -1159,4 +1163,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bbf702ad6ca7df9145d8.js.map
+//# sourceMappingURL=5c5cb6ac79f645f579f7.js.map
