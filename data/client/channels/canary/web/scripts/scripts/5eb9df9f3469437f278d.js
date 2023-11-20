@@ -1671,8 +1671,8 @@
                 W = r("646718"),
                 Z = r("719347"),
                 Y = r("782340"),
-                X = r("205988"),
-                z = r("939784"),
+                z = r("205988"),
+                X = r("939784"),
                 J = r("769015");
             let q = "premium_new_tier_2_gradient",
                 Q = "premium_old_tier_2_gradient";
@@ -1740,21 +1740,21 @@
                 return (0, u.jsxs)(u.Fragment, {
                     children: [!n && (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)("div", {
-                            className: c(X.rimGlowVertical, {
-                                [X.rimGlowVerticalTier0]: t === W.PremiumTypes.TIER_0,
-                                [X.rimGlowVerticalTier2]: t === W.PremiumTypes.TIER_2
+                            className: c(z.rimGlowVertical, {
+                                [z.rimGlowVerticalTier0]: t === W.PremiumTypes.TIER_0,
+                                [z.rimGlowVerticalTier2]: t === W.PremiumTypes.TIER_2
                             })
                         }), (0, u.jsx)($, {
-                            foreground: X.buttonSparkleStar1
+                            foreground: z.buttonSparkleStar1
                         })]
                     }), (0, u.jsx)($, {
-                        foreground: X.buttonSparkleStar2
+                        foreground: z.buttonSparkleStar2
                     }), (0, u.jsx)($, {
-                        foreground: X.buttonSparkleStar3
+                        foreground: z.buttonSparkleStar3
                     }), (0, u.jsx)($, {
-                        foreground: X.buttonSparkleStar4
+                        foreground: z.buttonSparkleStar4
                     }), (0, u.jsx)($, {
-                        foreground: X.buttonSparkleStar5
+                        foreground: z.buttonSparkleStar5
                     })]
                 })
             }
@@ -1766,17 +1766,17 @@
                     colorOptions: n = 2
                 } = e;
                 return (0, u.jsx)("div", {
-                    className: c(r, X.freeTrialPill, {
-                        [X.freeTrialPillTier0GradientFill]: 1 === n,
-                        [X.freeTrialPillTier2GradientFill]: 3 === n,
-                        [X.freeTrialPillTier2OldGradientFill]: 4 === n
+                    className: c(r, z.freeTrialPill, {
+                        [z.freeTrialPillTier0GradientFill]: 1 === n,
+                        [z.freeTrialPillTier2GradientFill]: 3 === n,
+                        [z.freeTrialPillTier2OldGradientFill]: 4 === n
                     }),
                     children: (0, u.jsx)(I.Text, {
                         variant: "text-xs/bold",
-                        className: c(X.freeTrialPillText, {
-                            [X.freeTrialPillTextInverted]: 0 !== n && 2 !== n,
-                            [X.freeTrialPillTextTier0]: 0 === n,
-                            [X.freeTrialPillTextTier2]: 2 === n
+                        className: c(z.freeTrialPillText, {
+                            [z.freeTrialPillTextInverted]: 0 !== n && 2 !== n,
+                            [z.freeTrialPillTextTier0]: 0 === n,
+                            [z.freeTrialPillTextTier2]: 2 === n
                         }),
                         children: t
                     })
@@ -1803,24 +1803,24 @@
                         t = "white"
                 }
                 return (0, u.jsxs)("div", {
-                    className: c(n, X.freeTrialPillWithSparkles),
+                    className: c(n, z.freeTrialPillWithSparkles),
                     children: [(0, u.jsx)($, {
-                        foreground: X.sparkleStar1,
+                        foreground: z.sparkleStar1,
                         color: t
                     }), (0, u.jsx)($, {
-                        foreground: X.sparkleStar2,
+                        foreground: z.sparkleStar2,
                         color: t
                     }), (0, u.jsx)($, {
-                        foreground: X.sparkleStar3,
+                        foreground: z.sparkleStar3,
                         color: t
                     }), (0, u.jsx)(et, {
                         text: r,
                         colorOptions: i
                     }), (0, u.jsx)($, {
-                        foreground: X.sparkleStar4,
+                        foreground: z.sparkleStar4,
                         color: t
                     }), (0, u.jsx)($, {
-                        foreground: X.sparkleStar5,
+                        foreground: z.sparkleStar5,
                         color: t
                     })]
                 })
@@ -1877,15 +1877,15 @@
                     isNew: n = !1
                 } = e;
                 return (0, u.jsxs)("div", {
-                    className: X.item,
+                    className: z.item,
                     children: [(0, u.jsx)(t, {
-                        className: X.icon
+                        className: z.icon
                     }), (0, u.jsx)(I.Text, {
                         variant: "text-md/normal",
                         color: "always-white",
                         children: r
                     }), n ? (0, u.jsx)(C.default, {
-                        className: X.newTagItem,
+                        className: z.newTagItem,
                         forceUseColorForSparkles: !0,
                         shouldInheritBackgroundColor: !0,
                         shouldInheritTextColor: !0
@@ -1909,7 +1909,7 @@
                         children: (0, u.jsx)(I.Heading, {
                             variant: "heading-md/normal",
                             color: "always-white",
-                            className: X.trialHeader,
+                            className: z.trialHeader,
                             children: 0 === i ? Y.default.Messages.PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION.format({
                                 remainingTime: e,
                                 price: r
@@ -1926,7 +1926,7 @@
                     return (0, u.jsx)(I.Heading, {
                         variant: "heading-md/normal",
                         color: "always-white",
-                        className: X.trialHeader,
+                        className: z.trialHeader,
                         children: 0 === i ? Y.default.Messages.PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW.format({
                             planName: (0, w.getTierDisplayName)(null !== (p = W.PREMIUM_SKU_TO_MONTHLY_PLAN[null !== (T = null == E ? void 0 : E.sku_id) && void 0 !== T ? T : W.PremiumSubscriptionSKUs.NONE]) && void 0 !== p ? p : W.SubscriptionPlans.PREMIUM_MONTH_TIER_2),
                             duration: (0, w.formatIntervalDuration)({
@@ -1945,12 +1945,12 @@
                     children: [(0, u.jsx)(V.default, {
                         subscriptionTier: d,
                         isGift: t,
-                        className: X.price
+                        className: z.price
                     }), l && (0, u.jsx)(V.default, {
                         subscriptionTier: d,
                         interval: W.SubscriptionIntervalTypes.YEAR,
                         isGift: t,
-                        className: X.price
+                        className: z.price
                     })]
                 })
             }
@@ -1994,24 +1994,24 @@
                     isGift: s = !1
                 } = e, a = (0, _.useStateFromStores)([x.default], () => x.default.getPremiumTypeSubscription()), d = (0, _.useStateFromStores)([g.default], () => g.default.getCurrentUser()), m = (0, k.usePremiumTrialOffer)(), f = null == m ? void 0 : null === (t = m.subscription_trial) || void 0 === t ? void 0 : t.sku_id, E = (null == a ? void 0 : a.trialId) != null, T = (null == a ? void 0 : a.trialId) != null ? null == d ? void 0 : d.premiumType : null, I = null != f || E;
                 return (0, u.jsxs)("div", {
-                    className: c(X.tier0, X.card, o, {
-                        [X.withTier0Rim]: !s && I,
-                        [X.withCardHover]: !s && I
+                    className: c(z.tier0, z.card, o, {
+                        [z.withTier0Rim]: !s && I,
+                        [z.withCardHover]: !s && I
                     }),
                     children: [f === W.PremiumSubscriptionSKUs.TIER_0 ? (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
-                            className: X.topRimPill,
+                            className: z.topRimPill,
                             colorOptions: 0
                         }), (0, u.jsx)("div", {
-                            className: X.rimGlowTier0
+                            className: z.rimGlowTier0
                         })]
                     }) : null, n && (0, u.jsx)(en, {
-                        className: X.newCircleIcon
+                        className: z.newCircleIcon
                     }), r ? (0, u.jsx)("div", {
-                        className: X.wumpusImageContainer,
+                        className: z.wumpusImageContainer,
                         children: (0, u.jsx)(U.default, {
-                            src: z,
+                            src: X,
                             mediaLayoutType: Z.MediaLayoutType.RESPONSIVE,
                             width: 270,
                             height: 242,
@@ -2020,26 +2020,26 @@
                     }) : null, s || f !== W.PremiumSubscriptionSKUs.TIER_0 ? null : (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
-                            className: X.topRimPill,
+                            className: z.topRimPill,
                             colorOptions: 0
                         }), (0, u.jsx)("div", {
-                            className: X.rimGlowTier0
+                            className: z.rimGlowTier0
                         })]
                     }), s || T !== W.PremiumTypes.TIER_0 ? null : (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.PREMIUM_TIER_CARD_TRIAL_ACTIVATED,
-                            className: X.topRimPill,
+                            className: z.topRimPill,
                             colorOptions: 0
                         }), (0, u.jsx)("div", {
-                            className: X.rimGlowTier0
+                            className: z.rimGlowTier0
                         })]
                     }), (0, u.jsx)("div", {
                         children: (0, u.jsxs)("div", {
-                            className: X.body,
+                            className: z.body,
                             children: [(0, u.jsx)("div", {
-                                className: X.tier0LogoContainer,
+                                className: z.tier0LogoContainer,
                                 children: (0, u.jsx)(b.default, {
-                                    className: c(X.tier0Title, X.title)
+                                    className: c(z.tier0Title, z.title)
                                 })
                             }), (0, u.jsx)(el, {
                                 isGift: s,
@@ -2127,46 +2127,46 @@
                     isGift: d = !1
                 } = e, m = (0, _.useStateFromStores)([x.default], () => x.default.getPremiumTypeSubscription()), f = (0, _.useStateFromStores)([g.default], () => g.default.getCurrentUser()), E = (0, k.usePremiumTrialOffer)(), T = null == E ? void 0 : null === (t = E.subscription_trial) || void 0 === t ? void 0 : t.sku_id, p = (null == m ? void 0 : m.trialId) != null ? null == f ? void 0 : f.premiumType : null, P = (0, G.useIsInPremiumOfferExperience)(), O = (0, H.usePremiumDiscountOffer)(), R = (0, G.useHasDiscountApplied)(), C = null != T || null != p ? 0 : null != O || R ? 1 : null, S = (0, K.useIsEligibleForBogoPromotion)(), M = (0, K.getBOGOPillCopy)();
                 return (0, u.jsxs)("div", {
-                    className: c(X.tier2, X.card, a, {
-                        [X.withTier2Rim]: !d && P,
-                        [X.withCardHover]: !d && P
+                    className: c(z.tier2, z.card, a, {
+                        [z.withTier2Rim]: !d && P,
+                        [z.withCardHover]: !d && P
                     }),
                     children: [!d && null != O && (0, H.discountOfferHasTier)(O, W.PremiumSubscriptionSKUs.TIER_2) && (null === (r = O.discount) || void 0 === r ? void 0 : r.amount) !== void 0 ? (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.PREMIUM_DISCOUNT_AMOUNT_OFF_BADGE.format({
                                 percent: null === (n = O.discount) || void 0 === n ? void 0 : n.amount
                             }),
-                            className: X.topRimPill,
+                            className: z.topRimPill,
                             colorOptions: 2
                         }), (0, u.jsx)("div", {
-                            className: X.rimGlowTier2
+                            className: z.rimGlowTier2
                         })]
                     }) : null, d || T !== W.PremiumSubscriptionSKUs.TIER_2 ? null : (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
-                            className: X.topRimPill,
+                            className: z.topRimPill,
                             colorOptions: 2
                         }), (0, u.jsx)("div", {
-                            className: X.rimGlowTier2
+                            className: z.rimGlowTier2
                         })]
                     }), d || p !== W.PremiumTypes.TIER_2 ? null : (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.PREMIUM_TIER_CARD_TRIAL_ACTIVATED,
-                            className: X.topRimPill,
+                            className: z.topRimPill,
                             colorOptions: 2
                         }), (0, u.jsx)("div", {
-                            className: X.rimGlowTier2
+                            className: z.rimGlowTier2
                         })]
                     }), !d && R && (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_APPLIED,
-                            className: X.topRimPill,
+                            className: z.topRimPill,
                             colorOptions: 2
                         }), (0, u.jsx)("div", {
-                            className: X.rimGlowTier2
+                            className: z.rimGlowTier2
                         })]
                     }), i ? (0, u.jsx)("div", {
-                        className: X.wumpusImageContainer,
+                        className: z.wumpusImageContainer,
                         children: (0, u.jsx)(U.default, {
                             src: J,
                             mediaLayoutType: Z.MediaLayoutType.RESPONSIVE,
@@ -2176,10 +2176,10 @@
                         })
                     }) : null, (0, u.jsxs)("div", {
                         children: [(0, u.jsx)(A.default, {
-                            className: c(X.tier2Title, X.title)
+                            className: c(z.tier2Title, z.title)
                         }), !d && T !== W.PremiumSubscriptionSKUs.TIER_2 && S && (0, u.jsx)(I.Text, {
                             variant: "text-xs/bold",
-                            className: X.freeTrialPillInline,
+                            className: z.freeTrialPillInline,
                             children: M
                         }), (0, u.jsx)(el, {
                             isGift: d,
@@ -2208,7 +2208,7 @@
                 } = (0, R.default)(O.default.PREMIUM_MARKETING_TIER_CARD);
                 return (0, u.jsx)(o, {
                     children: (0, u.jsxs)("div", {
-                        className: c(X.premiumCards, l),
+                        className: c(z.premiumCards, l),
                         children: [(0, u.jsx)(es, {
                             showWumpus: t,
                             showBadge: r,
@@ -2293,7 +2293,9 @@
                             fill: i
                         })
                     })
-                }, l.SuperReactionIcon)
+                }, l.SuperReactionIcon, void 0, {
+                    size: 18
+                })
         },
         716589: function(e, t, r) {
             "use strict";
@@ -2340,7 +2342,9 @@
                             })
                         })]
                     })
-                }, l.UserSquareIcon)
+                }, l.UserSquareIcon, void 0, {
+                    size: 25
+                })
         },
         619911: function(e, t, r) {
             "use strict";
@@ -2377,7 +2381,9 @@
                             fill: i
                         })]
                     })
-                }, l.ScreenArrowIcon)
+                }, l.ScreenArrowIcon, void 0, {
+                    size: 24
+                })
         },
         698015: function(e, t, r) {
             "use strict";
@@ -2412,8 +2418,10 @@
                             d: "M11.2137 2.00088L2.27111 13.3826C1.9299 13.8168 2.00535 14.4455 2.43963 14.7867C2.61581 14.9251 2.83338 15.0004 3.05744 15.0004H7V21.0004C7 21.5527 7.44772 22.0004 8 22.0004H16C16.5523 22.0004 17 21.5527 17 21.0004V15.0004H20.9425C21.4948 15.0004 21.9425 14.5527 21.9425 14.0004C21.9425 13.7763 21.8673 13.5588 21.7289 13.3826L12.7863 2.00088C12.4451 1.56661 11.8165 1.49116 11.3822 1.83237C11.3195 1.88162 11.2629 1.93819 11.2137 2.00088Z"
                         })
                     })
-                }, l.UploadIcon)
+                }, l.UploadIcon, void 0, {
+                    size: 24
+                })
         }
     }
 ]);
-//# sourceMappingURL=c9dc017d68c2325c0431.js.map
+//# sourceMappingURL=5eb9df9f3469437f278d.js.map

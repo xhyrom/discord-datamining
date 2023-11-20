@@ -680,10 +680,10 @@
                         G = null != k && k.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
                         V = null == k || G,
                         K = null == k || U.length > 1,
-                        W = null != T || w.length > 0,
-                        z = D && G,
-                        Z = null != P && null != R && V && K && (W || D) && !z;
-                    V ? W ? z && null != P && (n = C.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
+                        z = null != T || w.length > 0,
+                        W = D && G,
+                        Z = null != P && null != R && V && K && (z || D) && !W;
+                    V ? z ? W && null != P && (n = C.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
                         tierName: P.name
                     })) : n = C.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = C.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
                         F && null != O && B && o.default.wait(() => {
@@ -714,12 +714,12 @@
                                 forcesTransitionToGuild: L
                             })
                         };
-                        !W && D ? (0, _.confirmNoSharedServerSubscribeWarningModal)({
+                        !z && D ? (0, _.confirmNoSharedServerSubscribeWarningModal)({
                             application: R,
                             onConfirm: e,
                             onCancel: () => {}
                         }) : e()
-                    }, [F, l, b, U, R, T, W, D, j, A, H, v, w, N, L]);
+                    }, [F, l, b, U, R, T, z, D, j, A, H, v, w, N, L]);
                     return {
                         openModal: Q,
                         canOpenModal: Z,
@@ -1426,7 +1426,9 @@
                             d: "M17 11V7C17 4.243 14.756 2 12 2C9.242 2 7 4.243 7 7V11C5.897 11 5 11.896 5 13V20C5 21.103 5.897 22 7 22H17C18.103 22 19 21.103 19 20V13C19 11.896 18.103 11 17 11ZM12 18C11.172 18 10.5 17.328 10.5 16.5C10.5 15.672 11.172 15 12 15C12.828 15 13.5 15.672 13.5 16.5C13.5 17.328 12.828 18 12 18ZM15 11H9V7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7V11Z"
                         })
                     })
-                }, l.LockIcon)
+                }, l.LockIcon, void 0, {
+                    size: 24
+                })
         },
         8161: function(e, t, n) {
             "use strict";
@@ -1459,7 +1461,9 @@
                             d: "M23 10V4H1V10C2.1 10 3 10.9 3 12C3 13.1 2.1 14 1 14V20H23V14C21.9 14 21 13.1 21 12C21 10.9 21.9 10 23 10ZM13 16V18H11V16H9V14H13C13.27 14 13.5 13.83 13.5 13.62C13.5 12.58 8.5 13.62 8.5 10.37C8.5 9.07 9.62 8 11 8V6H13V8H15V10H11C10.73 10 10.5 10.17 10.5 10.38C10.5 11.42 15.5 10.38 15.5 13.63C15.5 14.93 14.38 16 13 16Z"
                         })
                     })
-                }, l.TicketIcon)
+                }, l.TicketIcon, void 0, {
+                    size: 24
+                })
         },
         613676: function(e, t, n) {
             "use strict";
@@ -1519,4 +1523,4 @@
         }
     }
 ]);
-//# sourceMappingURL=791091759747aaf574e8.js.map
+//# sourceMappingURL=3fa96f227706fe0a6ea8.js.map

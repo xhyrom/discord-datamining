@@ -159,8 +159,10 @@
                             })]
                         })
                     })
-                }, N.LinkIcon)
+                }, N.LinkIcon, void 0, {
+                    size: 24
+                })
         }
     }
 ]);
-//# sourceMappingURL=e82d8d0fc947a278e60f.js.map
+//# sourceMappingURL=22dcb4488c171f5f21d0.js.map
