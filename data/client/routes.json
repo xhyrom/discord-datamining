@@ -3955,6 +3955,10 @@
       "PATCH"
     ]
   },
+  "ACCOUNT_NOTIFICATION_SETTINGS": {
+    "url": "/users/@me/notification-settings",
+    "allowed_methods": null
+  },
   "VIDEO_FILTER_ASSETS": {
     "url": "/users/@me/video-filters/assets",
     "allowed_methods": [
