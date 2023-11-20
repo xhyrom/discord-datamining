@@ -122,7 +122,7 @@
           {
             "type": "guild_in_range_by_hash",
             "hash_key": 386483746,
-            "target": 5000
+            "target": 10000
           }
         ]
       },
