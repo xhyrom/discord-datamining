@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2022-11_automod_non_community_guilds_release",
-    "label": "Automod Non-Community Guilds Release",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Automod Non-Community Guilds Release"
-    ],
-    "hash": 2608013421,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 2608013421
   },
   "rollout": {
     "populations": [
