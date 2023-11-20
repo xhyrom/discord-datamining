@@ -19465,8 +19465,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -27405,7 +27405,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .image_f4d883 {
     position: absolute;
-    top: -62px
+    width: 200px;
+    bottom: 148px
 }
 
 .dmButtonContainer__06f1f {
@@ -123292,4 +123293,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4899efc19f9382749fb2.css.map*/
+/*# sourceMappingURL=app.85d4ee7d1de07eafc67a.css.map*/
