@@ -148,6 +148,37 @@
       },
       {
         "buckets": {
+          "2": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 1000
+              },
+              {
+                "start": 1000,
+                "end": 2000
+              },
+              {
+                "start": 2000,
+                "end": 6000
+              },
+              {
+                "start": 6000,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 386483746,
+            "target": 2500
+          }
+        ]
+      },
+      {
+        "buckets": {
           "none": {
             "rollout": [
               {
