@@ -1494,6 +1494,7 @@
                     GUILD_PRODUCT_ATTACHMENT_DOWNLOAD: (_, E, I) => "/guilds/".concat(_, "/products/listings/").concat(E, "/attachments/").concat(I, "/download"),
                     TENOR_ASSET_PATH: "/tenor",
                     EMAIL_SETTINGS: "/users/@me/email-settings",
+                    ACCOUNT_NOTIFICATION_SETTINGS: "/users/@me/notification-settings",
                     VIDEO_FILTER_ASSETS: "/users/@me/video-filters/assets",
                     VIDEO_FILTER_ASSET: _ => "/users/@me/video-filters/assets/".concat(_),
                     VIDEO_FILTER_ASSET_LAST_USED: _ => "/users/@me/video-filters/assets/".concat(_, "/last-used"),
@@ -2625,12 +2626,12 @@
                     OPT_IN_ENABLED: 4096,
                     FAVORITED: 2048,
                     UNREADS_ALL_MESSAGES: 1024,
-                    UNREADS_MENTIONS_AND_HIGHLIGHTS: 512
+                    UNREADS_ONLY_MENTIONS: 512
                 },
                 d = {
                     OPT_IN_CHANNELS_ON: 16384,
                     OPT_IN_CHANNELS_OFF: 8192,
-                    UNREADS_MENTIONS_AND_HIGHLIGHTS: 4096,
+                    UNREADS_ONLY_MENTIONS: 4096,
                     UNREADS_ALL_MESSAGES: 2048
                 };
             (n = r || (r = {})).USER = "user", n.STREAM = "stream"
@@ -12894,4 +12895,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0375f70f4a9eba287cd5.js.map
+//# sourceMappingURL=a467c81450824fa4d0ec.js.map
