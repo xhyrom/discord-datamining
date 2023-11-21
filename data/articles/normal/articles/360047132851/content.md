@@ -81,13 +81,7 @@
         </ul>
     </li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/208866998" target="_self" rel="undefined">Non-expiring Links:</a>
-        <ul>
-            <li>A server invite link that is permanent and never expires (unless deleted). </li>
-        </ul>
-    </li>
-    <li>
-        <a href="https://support.discord.com/hc/en-us/articles/11074987197975" target="_self" rel="undefined">Community Onboarding:</a>
+        <a href="https://support.discord.com/hc/en-us/articles/11074987197975" target="_self" rel="undefined"><strong>Community Onboarding</strong>:</a>
         <ul>
             <li>With Community Onboarding, new members get to pick out their own roles and channels and enjoy a personalized channel list in your server by answering a few simple questions.</li>
         </ul>
@@ -113,7 +107,7 @@
     <li>Change your server’s Primary Language</li>
 </ul>
 <p class="wysiwyg-text-align-center"><img style="height: 420px; width: 613px;" src="https://support.discord.com/hc/article_attachments/14997821600279"></p>
-<h3>
+<h3 id="h_01HFSNTWX32PEXH4C2E8ZZQND1">
     <span style="color: #434343;" data-darkreader-inline-color="">If you’d like to learn more on how to keep your server safe, please check out our articles on </span><a href="https://support.discord.com/hc/en-us/articles/1500000466882"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">rules screening </span></a><span style="color: #434343;" data-darkreader-inline-color="">and </span><a href="https://support.discord.com/hc/en-us/articles/10989121220631-How-to-Protect-Your-Server-from-Raids-101"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">raid prevention</span></a><span style="color: #434343;" data-darkreader-inline-color="">. </span>
 </h3>
 <h1 id="h_01H1W33P1D6M5AD7RVVAE7QFVY">How to Disable Your Community Server? </h1>
