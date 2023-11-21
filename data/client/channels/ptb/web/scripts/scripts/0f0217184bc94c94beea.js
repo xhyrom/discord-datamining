@@ -6747,7 +6747,7 @@
                         className: G.assets,
                         children: (0, s.jsx)(C.default, {
                             hangStatusActivity: e,
-                            className: this.getTypeClass("assetsSmallImage", "WithoutLargeImage")
+                            className: o(G.assetsHangStatus, this.getTypeClass("assetsSmallImage", "WithoutLargeImage"))
                         })
                     });
                     let {
@@ -7681,4 +7681,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fd027f17dca07f20ba5a.js.map
+//# sourceMappingURL=0f0217184bc94c94beea.js.map

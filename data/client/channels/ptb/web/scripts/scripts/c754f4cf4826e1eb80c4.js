@@ -2705,6 +2705,7 @@
                 activityUserPopoutV2: "activityUserPopoutV2__32328",
                 activityVoiceChannel: "activityVoiceChannel_e4ac9b",
                 assets: "assets__5bee0",
+                assetsHangStatus: "assetsHangStatus__0a328",
                 assetsLargeImage: "assetsLargeImage_b88a59",
                 assetsLargeImageActivityFeed: "assetsLargeImageActivityFeed_e92ab7 assetsLargeImage_b88a59",
                 assetsLargeImageActivityFeedTwitch: "assetsLargeImageActivityFeedTwitch__1c589 assetsLargeImage_b88a59",
