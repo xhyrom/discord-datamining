@@ -1,5 +1,5 @@
 <h3 id="docs-internal-guid-ebd176ce-7fff-e7d7-6bd9-e751d437ffe6">
-    <span style="color: #434343;">Packs will be deactivated in the near future. On </span><strong><span style="color: #434343;">November 26, 2023</span></strong><span style="color: #434343;">, Non-Nitro users will no longer be able to collect or use a free pack.<br></span><span style="color: #434343;">Thank you for your support &amp; feedback - we are constantly working on bringing you new features and experiences!</span>
+    <span style="color: #434343;">Packs will be deactivated in the near future. On </span><strong><span style="color: #434343;">November 20, 2023</span></strong><span style="color: #434343;">, Non-Nitro users will no longer be able to collect or use a free pack.<br></span><span style="color: #434343;">Thank you for your support &amp; feedback - we are constantly working on bringing you new features and experiences!</span>
 </h3>
 <p id="docs-internal-guid-f591c205-7fff-a578-42c5-4f94b31b7ff9">Have you ever wondered how to get that same awesome cat emoji your friend posted five seconds ago? With <strong>packs</strong>, you can press any emoji and add all the cat emojis within the pack to your emoji picker! </p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
