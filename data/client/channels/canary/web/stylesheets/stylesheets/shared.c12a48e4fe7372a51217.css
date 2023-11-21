@@ -12300,7 +12300,8 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     width: 1rem;
     height: 1rem;
     vertical-align: middle;
-    margin-bottom: .2rem
+    margin-bottom: .2rem;
+    margin-right: var(--spacing-4)
 }
 
 .name__48cc7 {
@@ -26417,4 +26418,4 @@ button.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.11164b166af9152a30e6.css.map*/
+/*# sourceMappingURL=shared.c12a48e4fe7372a51217.css.map*/
