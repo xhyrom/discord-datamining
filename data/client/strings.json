@@ -16103,7 +16103,7 @@
   "CREATE_EVENT_RECUR_WEEKDAYS": "\"Every weekday (Monday to Friday)\"",
   "GUILD_SCHEDULED_EVENT_VIEW_MORE_RECURRENCES": "\"View future events\"",
   "GUILD_SCHEDULED_EVENT_RECURRENCE_RULE": "\"Repeats {recurrenceRule}\"",
-  "GUILD_SCHEDULED_EVENT_REPEATS": "\"Repeats on\"",
+  "GUILD_SCHEDULED_EVENT_REPEATS": "\"Future events in series\"",
   "GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY": "\"Repeats every {weekday}\"",
   "GUILD_SCHEDULED_EVENT_REPEATS_YEARLY": "\"Repeats every {date}\"",
   "GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS": "\"Repeats every weekday (Monday to Friday)\"",
