@@ -6096,7 +6096,7 @@
                         opacity: 1
                     },
                     [a.LIGHT]: {
-                        raw: "YELLOW_430",
+                        raw: "YELLOW_300",
                         opacity: 1
                     },
                     [a.AMOLED]: {
@@ -6150,7 +6150,7 @@
                         opacity: 1
                     },
                     [a.LIGHT]: {
-                        raw: "GREEN_430",
+                        raw: "GREEN_330",
                         opacity: 1
                     },
                     [a.AMOLED]: {
@@ -13003,4 +13003,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6193a103e5546653a8ee.js.map
+//# sourceMappingURL=0909d59426dd6ffd8a56.js.map

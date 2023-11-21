@@ -19465,8 +19465,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -31277,7 +31277,7 @@ html .progress__4ef76 {
     --custom-poll-style-opacity: 1;
     --custom-poll-style-border: var(--background-tertiary);
     --custom-poll-style-border-width: 0;
-    --custom-poll-style-fill: var(--background-secondary);
+    --custom-poll-style-fill: var(--background-primary);
     --custom-poll-style-label: var(--text-normal);
     --custom-poll-style-shadow: var(--shadow-low)
 }
@@ -31358,7 +31358,7 @@ html .progress__4ef76 {
     opacity: var(--custom-poll-style-opacity)
 }
 
-.media_c99808 {
+.attachment__02b3f {
     position: absolute;
     border-radius: var(--radius-md);
     width: 100%;
@@ -31431,7 +31431,8 @@ html .progress__4ef76 {
     width: 42px
 }
 
-.media_a7fe08 {
+.attachment_b6d123 {
+    height: 100%;
     border-top-left-radius: var(--radius-md);
     border-bottom-left-radius: var(--radius-md)
 }
@@ -33564,6 +33565,10 @@ html .progress__4ef76 {
 .referralContainer_f44a73 {
     width: 100%;
     justify-content: space-between
+}
+
+.pollContainer__95d4b {
+    margin: 4px 0
 }
 
 .confirmText__3ac23 {
@@ -121316,10 +121321,10 @@ div.nagbar_c731ff {
     --navigator-header-tint: var(--primary-500);
     --panel-bg: var(--white-500);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
-    --polls-victor-border: var(--yellow-430);
+    --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
     --polls-victor-label: var(--primary-600);
-    --polls-voted-border: var(--green-430);
+    --polls-voted-border: var(--green-330);
     --polls-voted-fill: var(--green-160);
     --polls-voted-label: var(--primary-600);
     --profile-gradient-card-background: hsl(var(--white-500-hsl) / 0.7);
@@ -123314,4 +123319,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5a7521e0fa4ca7356635.css.map*/
+/*# sourceMappingURL=app.60345ce3b5a846e63ccb.css.map*/
