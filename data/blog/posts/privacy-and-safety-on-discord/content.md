@@ -13,7 +13,6 @@
                 <li>Scans all files for Child Sexual Abuse Material and immediately reports any content and perpetrators to the National Center for Missing &amp; Exploited Children (NCMEC) in the United States, which works with local law enforcement to take appropriate action.&nbsp;</li>
                 <li>Provides users and <a href="https://discord.com/safety/360044103531-role-of-administrators-and-moderators-on-discord">administrators</a> with tools, including optional filters, to help them avoid unwanted content and undesirable behavior.&nbsp;</li>
             </ul>
-            <p>Starting today, new invite links for Friend Servers will expire at a maximum of 30 days. Any previously created non-expiring links will remain active and will still not expire.</p>
             <h3><strong>Community Server</strong>&nbsp;</h3>
             <p><a href="https://support.discord.com/hc/en-us/articles/360035969312-Community-Server-Guidelines">Community Servers</a> are invite-only spaces designed for people to talk, connect and learn from others who share a common interest. A server’s administrators must opt-in for their server to become a Community Server. In Community Servers with more than 200 members, we take a more proactive and automated approach to safety in line with our <a href="https://discord.com/terms">Terms of Service</a> and <a href="https://discord.com/privacy">Privacy Policy</a>. In these spaces, Discord follows the same core procedures as those for Friend Servers and also:</p>
             <ul role="list">
