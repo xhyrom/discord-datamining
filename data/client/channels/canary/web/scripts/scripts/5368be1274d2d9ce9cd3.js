@@ -21948,6 +21948,9 @@
                 LegacyPricingCountries: function() {
                     return eF
                 },
+                LegacySeasonalGiftStyles: function() {
+                    return eB
+                },
                 SeasonalGiftStyles2023: function() {
                     return eH
                 },
@@ -41543,4 +41546,4 @@
         }
     }
 ]);
-//# sourceMappingURL=93746f81b0cbdee3e056.js.map
+//# sourceMappingURL=5368be1274d2d9ce9cd3.js.map
