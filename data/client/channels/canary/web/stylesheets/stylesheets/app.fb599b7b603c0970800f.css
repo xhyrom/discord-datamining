@@ -16645,6 +16645,10 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--red-400)
 }
 
+.show-redesigned-icons .localMuteStrikethrough__29b8f {
+    color: currentColor
+}
+
 .liveIndicator__9f164 {
     margin-left: 8px
 }
@@ -123355,4 +123359,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4c1f31119278560ebcbf.css.map*/
+/*# sourceMappingURL=app.fb599b7b603c0970800f.css.map*/
