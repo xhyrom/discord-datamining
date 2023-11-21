@@ -15178,6 +15178,7 @@
             "use strict";
             e.exports = {
                 closeButton: "closeButton__918af",
+                closeIcon: "closeIcon__5392c",
                 customInput: "customInput_ac30ac",
                 customInputGroup: "customInputGroup__0040e",
                 emoji: "emoji__8b920",
@@ -15202,16 +15203,23 @@
         492013: function(e, t, o) {
             "use strict";
             e.exports = {
+                comingSoonIcon: "comingSoonIcon_d5180a",
+                customIcon: "customIcon_a37db4",
                 defaultIcon: "defaultIcon__8ffba",
+                deleteOption: "deleteOption_c9549f",
+                disabledWidget: "disabledWidget_a64d38",
                 divider: "divider__26943",
                 editIcon: "editIcon__562b8",
                 editOption: "editOption_fbe509",
+                icon: "icon__7eecf",
                 iconWidget: "iconWidget_db0821",
                 iconsContainer: "iconsContainer__44b35",
                 optionIcon: "optionIcon__4e55f",
                 popoutOption: "popoutOption__8c8cf",
                 popoutTitle: "popoutTitle__00ba8",
                 popoutWrapper: "popoutWrapper__16db8",
+                recentIcon: "recentIcon__43beb",
+                selectedWidget: "selectedWidget__1e288",
                 statusButtonRegion: "statusButtonRegion__47ea7",
                 statusWidget: "statusWidget__878ca"
             }
@@ -15220,7 +15228,6 @@
             "use strict";
             e.exports = {
                 iconWidget: "iconWidget_b2ac71",
-                iconWidgetIcon: "iconWidgetIcon__4c03a",
                 statusGroup: "statusGroup__7809a",
                 statusIcon: "statusIcon__87cd6",
                 statusText: "statusText__40040"

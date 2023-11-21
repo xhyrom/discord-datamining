@@ -25753,13 +25753,13 @@
                 });
                 let y = _.default.getCurrentHangStatus();
                 if (null != y) {
-                    var v, M;
+                    let t = _.default.getCustomHangStatus();
                     e.push({
                         type: m.ActivityTypes.HANG_STATUS,
                         name: "Hang Status",
                         state: y,
-                        details: null !== (v = _.default.getCustomHangStatus()) && void 0 !== v ? v : void 0,
-                        emoji: null !== (M = _.default.getCustomHangStatusEmoji()) && void 0 !== M ? M : void 0
+                        details: null == t ? void 0 : t.status,
+                        emoji: null == t ? void 0 : t.emoji
                     })
                 }!a(g, e) && (g = e)
             }
@@ -33668,4 +33668,4 @@
         }
     }
 ]);
-//# sourceMappingURL=575cabb3799fe24eb84b.js.map
+//# sourceMappingURL=29011dd72dd402f2f7dc.js.map
