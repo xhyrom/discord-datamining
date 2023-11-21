@@ -946,7 +946,7 @@
                         range: {
                             gte: Date.now()
                         }
-                    }), Object.keys(u).length > 0 && (n.or_query.safety_signals = u);
+                    }), Object.keys(u).length > 0 && (n.and_query.safety_signals = u);
                     let {
                         selectedRoleIds: o
                     } = e;
@@ -1879,4 +1879,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47a38e481a7712a70ef9.js.map
+//# sourceMappingURL=015026a673277a268bfd.js.map
