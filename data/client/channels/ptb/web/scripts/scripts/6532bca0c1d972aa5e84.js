@@ -3795,7 +3795,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return c
                 }
             });
             var i = n("446674"),
@@ -3830,7 +3830,7 @@
                 }
             }
             d.displayName = "PendingReplyStore";
-            let c = new d(l.default, {
+            var c = new d(l.default, {
                 CREATE_PENDING_REPLY: function(e) {
                     let {
                         channel: t,
@@ -3904,8 +3904,7 @@
                     } = e;
                     r(t)
                 }
-            });
-            var p = c
+            })
         },
         812809: function(e, t, n) {
             "use strict";
@@ -4222,4 +4221,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6f2bd85b2228568e873d.js.map
+//# sourceMappingURL=6532bca0c1d972aa5e84.js.map
