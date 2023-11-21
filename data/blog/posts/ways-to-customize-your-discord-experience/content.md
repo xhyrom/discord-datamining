@@ -19,7 +19,7 @@
                 <li><strong>Avatar</strong>: You! Or a bird. Or your new OC, or your favorite food… whatever best reflects yourself or your current mood.</li>
                 <li><strong>Pronouns</strong>: A small text field that lets everyone know how to refer to you.</li>
                 <li><strong>About Me</strong>: A longer bio where you can explain what you’re all about. Use bold, italics, bullet lists, and emoji to format it just the right way!</li>
-                <li><strong>Connected Accounts</strong>: Let others find you outside of Discord. Certain accounts even unlock special Discord features! Learn more about those here.</li>
+                <li><strong>Connected Accounts</strong>: Let others find you outside of Discord. Certain accounts even unlock special Discord features! Learn more about those <a href="https://discord.com/blog/ways-to-customize-your-discord-experience#heading-5">here</a>.</li>
             </ul>
         </div>
     </div>
@@ -83,7 +83,7 @@
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd2a72161f30e5ab469fb_99nOnTzlvQy-POBTwSgll-ktPt59PerAReyeE0GqPGAMBM9IOiBdf-lE5bgAVceeb50aQ4sykzlH9QyBxbPfQHrRqP_xn8JxZqMbRWhlEowa1eKH1s-z3wT81ZjfO7c6mw_XssjQ4iVdrqqA13wloRw.png" alt="A user named “Phibi” using three different profiles in three different servers."></div>
             </figure>
-            <p>Everyone can set the profile customization options mentioned here. Nitro members can set those same customization options on different servers. Tailor your presence depending on the people that you’re spending time with, and yes… they can be different on <em>every single server</em> you’re in.</p>
+            <p>Everyone can set the profile customization options mentioned <a href="https://discord.com/blog/ways-to-customize-your-discord-experience#heading-2">here</a>. Nitro members can set those same customization options on different servers. Tailor your presence depending on the people that you’re spending time with, and yes… they can be different on <em>every single server</em> you’re in.</p>
         </div>
     </div>
     <div id="heading-8" class="rich-wrapper">
