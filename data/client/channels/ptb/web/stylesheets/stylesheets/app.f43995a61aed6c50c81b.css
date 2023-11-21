@@ -29803,10 +29803,6 @@ html .progress__4ef76 {
     background-image: url(/assets/abb37025036befe38e64.svg)
 }
 
-.theme-light .customGiftEmbedWrapper__1b187 {
-    background: var(--primary-100)
-}
-
 .theme-dark .libraryLink_c20b2b {
     color: hsl(var(--white-500-hsl)/.6)
 }
@@ -29820,32 +29816,19 @@ html .progress__4ef76 {
     color: var(--primary-400)
 }
 
-.theme-dark .customGiftEmbedWrapper__1b187 {
-    background: var(--background-tertiary)
-}
-
-.seasonalGiftEmbedWrapper_e15b35 {
-    margin: 0;
-    overflow: hidden;
-    position: relative;
+.legacySeasonalGiftEmbedWrapper__40672 {
     background: linear-gradient(102.85deg, #26569e 2.16%, #3584d5 46.11%, #5dbace 99.42%);
-    background-position: 50%50%;
-    height: 128px
+    background-position: 50%50%
 }
 
 .customGiftEmbedWrapper__1b187 {
     margin: 0;
     overflow: hidden;
     position: relative;
-    background-position: 50%50%;
     height: 128px
 }
 
 .giftEmbedWrapperHorizontal__2bc4f {
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-    background-position: 50%50%;
     height: 100%;
     flex: 1
 }
@@ -29860,16 +29843,26 @@ html .progress__4ef76 {
     pointer-events: none
 }
 
-.seasonalGiftEmbedBox_d42394 {
+.legacySeasonalGiftEmbedBox__251f9 {
     position: absolute;
     height: 110%;
     right: -8px;
-    bottom: -24px;
+    bottom: -18px;
     z-index: 1
+}
+
+.legacySeasonalGiftEmbedBoxHorizontal__1b670 {
+    bottom: -24px
 }
 
 .customGiftEmbedBox_a3693f {
     position: absolute;
+    width: 174px;
+    bottom: 18px;
+    left: 33px
+}
+
+.customGiftEmbedBoxHorizontal__5eb39 {
     width: 234px;
     bottom: 24px;
     left: 36px
@@ -123359,4 +123352,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.13f6623e116fed661f5d.css.map*/
+/*# sourceMappingURL=app.f43995a61aed6c50c81b.css.map*/
