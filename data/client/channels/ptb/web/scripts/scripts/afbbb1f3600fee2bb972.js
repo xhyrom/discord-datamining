@@ -771,69 +771,70 @@
                     allowEdit: N = !0,
                     showPremiumBadgeUpsell: b = !0,
                     isHovering: B,
-                    animateOnHover: M
-                } = e, [D, X] = n.useState((null == s ? void 0 : s.banner) == null ? 2 : 0), Z = (0, d.useStateFromStores)([m.default], () => m.default.getGuild(P)), J = (0, d.useStateFromStores)([I.default], () => I.default.getId()), Q = J === i.id && N || i.isClyde() && null != Z && (0, _.canEditClydeAIProfile)(Z), $ = F.default.isPremiumAtLeast(null == s ? void 0 : s.premiumType, z.PremiumTypes.TIER_2), [ee, et] = n.useState(!1), er = (0, d.useStateFromStores)([v.default], () => v.default.isFocused()), el = L.GifAutoPlay.getSetting(), ei = (0, f.useToken)(c.default.unsafe_rawColors.PRIMARY_800).hex(), eo = (0, f.getAvatarSize)(f.AvatarSizes.SIZE_80), en = (0, u.hex2int)((0, T.default)(i.getAvatarURL(P, eo), ei, !1)), es = (0, O.default)(null !== (t = null == s ? void 0 : s.primaryColor) && void 0 !== t ? t : en).hsl, ea = (0, k.getUserBannerSize)(A), eu = null != E ? E : null == s ? void 0 : s.getBannerURL({
-                    size: ea,
-                    canAnimate: M || !el ? ee : er
-                }), ed = null != eu, ec = (0, d.useStateFromStores)([H.default], () => H.default.getUserProfile(i.id)), ef = y.default.getChannel(U.default.getChannelId()), {
-                    appsInGDMEnabled: eE,
-                    availableApplications: ep
+                    animateOnHover: M,
+                    overrideHasProfileEffect: D
+                } = e, [X, Z] = n.useState((null == s ? void 0 : s.banner) == null ? 2 : 0), J = (0, d.useStateFromStores)([m.default], () => m.default.getGuild(P)), Q = (0, d.useStateFromStores)([I.default], () => I.default.getId()), $ = Q === i.id && N || i.isClyde() && null != J && (0, _.canEditClydeAIProfile)(J), ee = F.default.isPremiumAtLeast(null == s ? void 0 : s.premiumType, z.PremiumTypes.TIER_2), [et, er] = n.useState(!1), el = (0, d.useStateFromStores)([v.default], () => v.default.isFocused()), ei = L.GifAutoPlay.getSetting(), eo = (0, f.useToken)(c.default.unsafe_rawColors.PRIMARY_800).hex(), en = (0, f.getAvatarSize)(f.AvatarSizes.SIZE_80), es = (0, u.hex2int)((0, T.default)(i.getAvatarURL(P, en), eo, !1)), ea = (0, O.default)(null !== (t = null == s ? void 0 : s.primaryColor) && void 0 !== t ? t : es).hsl, eu = (0, k.getUserBannerSize)(A), ed = null != E ? E : null == s ? void 0 : s.getBannerURL({
+                    size: eu,
+                    canAnimate: M || !ei ? et : el
+                }), ec = null != ed, ef = (0, d.useStateFromStores)([H.default], () => H.default.getUserProfile(i.id)), eE = y.default.getChannel(U.default.getChannelId()), {
+                    appsInGDMEnabled: ep,
+                    availableApplications: eP
                 } = (0, S.usePrivateChannelIntegrationState)({
-                    channelId: null !== (r = null == ef ? void 0 : ef.id) && void 0 !== r ? r : ""
-                }), eP = null == ec ? void 0 : ec.application, eT = eE && null != ep.find(e => e.id === (null == eP ? void 0 : eP.id));
-                if (ed && ($ || i.isClyde()) && 0 === D) {
-                    X(1);
+                    channelId: null !== (r = null == eE ? void 0 : eE.id) && void 0 !== r ? r : ""
+                }), eT = null == ef ? void 0 : ef.application, e_ = ep && null != eP.find(e => e.id === (null == eT ? void 0 : eT.id));
+                if (ec && (ee || i.isClyde()) && 0 === X) {
+                    Z(1);
                     let e = new Image;
-                    e.src = eu, e.onload = () => X(2)
+                    e.src = ed, e.onload = () => Z(2)
                 }
                 n.useEffect(() => {
-                    if (el || !$) return;
+                    if (ei || !ee) return;
                     let e = null != E ? E : null == s ? void 0 : s.getBannerURL({
-                        size: ea,
+                        size: eu,
                         canAnimate: !0
                     });
                     if (null == e) return;
                     let t = new Image;
                     t.src = e
-                }, [el, $, E, s, ea]);
-                let e_ = (0, h.default)({
+                }, [ei, ee, E, s, eu]);
+                let eC = (0, h.default)({
                         analyticsLocation: {
                             page: W.AnalyticsPages.USER_POPOUT,
                             section: W.AnalyticsSections.PROFILE_POPOUT
                         }
                     }),
-                    eC = (null == s ? void 0 : s.profileEffectID) != null;
+                    eO = D || (null == s ? void 0 : s.profileEffectID) != null;
                 return (0, o.jsx)(x.default, {
-                    isPremium: $,
+                    isPremium: ee,
                     hasThemeColors: null !== (l = null == s ? void 0 : s.canEditThemes) && void 0 !== l && l,
                     profileType: A,
-                    hasBanner: ed,
-                    hasProfileEffect: eC,
+                    hasBanner: ec,
+                    hasProfileEffect: eO,
                     children: (0, o.jsxs)("div", {
                         className: a(Y.banner, (0, k.getUserBannerStyles)({
                             profileType: A,
                             user: {
-                                hasBanner: ed,
-                                isPremium: $,
-                                hasProfileEffect: eC
+                                hasBanner: ec,
+                                isPremium: ee,
+                                hasProfileEffect: eO
                             }
                         }), {
-                            [Y.reducedMotion]: !el
+                            [Y.reducedMotion]: !ei
                         }),
-                        onMouseMove: () => et(!0),
-                        onMouseLeave: () => et(!1),
+                        onMouseMove: () => er(!0),
+                        onMouseLeave: () => er(!1),
                         style: {
-                            backgroundImage: ed && $ ? "url(".concat(eu, ")") : void 0,
-                            backgroundColor: 2 !== D ? c.default.unsafe_rawColors.PRIMARY_800.css : es
+                            backgroundImage: ec && ee ? "url(".concat(ed, ")") : void 0,
+                            backgroundColor: 2 !== X ? c.default.unsafe_rawColors.PRIMARY_800.css : ea
                         },
-                        children: [Q ? null != Z || i.isClyde() ? null != Z && i.isClyde() && (0, _.canEditClydeAIProfile)(Z) ? (0, o.jsx)(q, {
+                        children: [$ ? null != J || i.isClyde() ? null != J && i.isClyde() && (0, _.canEditClydeAIProfile)(J) ? (0, o.jsx)(q, {
                             profileType: A,
                             profileLabel: V.default.Messages.CLYDE_SETTINGS,
                             icon: "gear",
                             onClick: () => {
-                                null == p || p(), (0, C.default)(Z.id)
+                                null == p || p(), (0, C.default)(J.id)
                             }
-                        }) : null == Z ? null : (0, o.jsx)(f.Popout, {
+                        }) : null == J ? null : (0, o.jsx)(f.Popout, {
                             spacing: 6,
                             position: "bottom",
                             renderPopout: e => {
@@ -843,32 +844,32 @@
                                 return (0, o.jsx)(G.default, {
                                     onClose: t,
                                     onSelect: p,
-                                    guild: Z
+                                    guild: J
                                 })
                             },
                             children: e => (0, o.jsx)(q, {
-                                darkenOnHover: eC && B,
+                                darkenOnHover: eO && B,
                                 profileLabel: V.default.Messages.EDIT_PROFILE,
                                 icon: "pencil",
                                 ...e,
                                 profileType: A
                             })
                         }) : (0, o.jsx)(q, {
-                            darkenOnHover: eC && B,
+                            darkenOnHover: eO && B,
                             profileType: A,
                             profileLabel: V.default.Messages.EDIT_PROFILE,
                             icon: "pencil",
                             onClick: () => {
-                                null == p || p(), e_()
+                                null == p || p(), eC()
                             }
                         }) : (() => {
-                            let e = b && ed && A !== j.UserProfileTypes.SETTINGS;
+                            let e = b && ec && A !== j.UserProfileTypes.SETTINGS;
                             return e ? (0, o.jsx)(K, {
                                 type: A,
-                                shown: void 0 === B ? ee : B,
+                                shown: void 0 === B ? et : B,
                                 onClick: p
                             }) : null
-                        })(), eT ? A !== j.UserProfileTypes.MODAL ? null : (0, o.jsx)(f.Clickable, {
+                        })(), e_ ? A !== j.UserProfileTypes.MODAL ? null : (0, o.jsx)(f.Clickable, {
                             onClick: p,
                             "aria-label": V.default.Messages.BACK,
                             className: Y.pencilContainer,
@@ -880,7 +881,7 @@
                                     color: "white"
                                 })
                             })
-                        }) : null, !el && (0, w.isAnimatedImageURL)(eu) && (0, o.jsx)(g.default, {
+                        }) : null, !ei && (0, w.isAnimatedImageURL)(ed) && (0, o.jsx)(g.default, {
                             className: Y.gifTag
                         })]
                     })
@@ -1321,4 +1322,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ba3b5bf51029226c1b1b.js.map
+//# sourceMappingURL=afbbb1f3600fee2bb972.js.map
