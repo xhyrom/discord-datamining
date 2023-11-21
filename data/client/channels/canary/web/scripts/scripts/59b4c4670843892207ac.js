@@ -5640,12 +5640,6 @@
                 zoomin: "zoomin_fa2e9f"
             }
         },
-        31879: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                typePill: "typePill_eaf8d6"
-            }
-        },
         312595: function(e, t, o) {
             "use strict";
             e.exports = {
