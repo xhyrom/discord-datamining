@@ -2283,17 +2283,27 @@
                         null === (n = this._connection) || void 0 === n || n.setBandwidthEstimationExperiments(t)
                     }
                 }
+                _trackSecureFrameTransition(e, t) {
+                    y.default.track(W.AnalyticEvents.SECURE_FRAMES_TRANSITION, {
+                        ...this._getAnalyticsProperties(),
+                        media_session_id: this.getMediaSessionId(),
+                        parent_media_session_id: this.parentMediaSessionId,
+                        sender_user_id: this.userId,
+                        transition_id: e,
+                        protocol_version: t
+                    })
+                }
                 _handleSecureFramesInit(e) {
                     var t;
                     e > 0 && this.logger.info("Secure frames init with protocol version: ".concat(e)), null === (t = this._connection) || void 0 === t || t.prepareSecureFramesTransition(0, e, () => {
-                        var e;
-                        null === (e = this._connection) || void 0 === e || e.executeSecureFramesTransition(0)
+                        var t;
+                        e > 0 && this._trackSecureFrameTransition(0, e), null === (t = this._connection) || void 0 === t || t.executeSecureFramesTransition(0)
                     })
                 }
                 _handleSecureFramesPrepareTransition(e, t, n) {
                     var i;
                     this.logger.info("Preparing secure frames transition: ".concat(t, ", protocol version: ").concat(n)), null === (i = this._connection) || void 0 === i || i.prepareSecureFramesTransition(t, n, () => {
-                        this.logger.info("Sending secure frames ready for transition: ".concat(t)), e.secureFramesReadyForTransition(t)
+                        this.logger.info("Sending secure frames ready for transition: ".concat(t)), e.secureFramesReadyForTransition(t), this._trackSecureFrameTransition(t, n)
                     })
                 }
                 _handleSecureFramesExecuteTransition(e) {
@@ -4647,25 +4657,26 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClipsExperiment: function() {
-                    return o
+                    return r
                 },
                 areClipsEnabled: function() {
-                    return l
-                },
-                useEnableClips: function() {
                     return u
                 },
-                useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock: function() {
+                useEnableClips: function() {
                     return d
                 },
-                useShouldSeeClipsPremiumEarlyAccessAnnouncementCoachmark: function() {
+                useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock: function() {
                     return c
+                },
+                useShouldSeeClipsPremiumEarlyAccessAnnouncementCoachmark: function() {
+                    return h
                 }
             });
             var i = n("862205"),
                 s = n("584687"),
-                a = n("18346");
-            let o = (0, i.createExperiment)({
+                a = n("42887"),
+                o = n("18346");
+            let r = (0, i.createExperiment)({
                     kind: "user",
                     id: "2022-11_clips_experiment",
                     label: "Clips Experiment",
@@ -4696,7 +4707,7 @@
                         }
                     }]
                 }),
-                r = (0, i.createExperiment)({
+                l = (0, i.createExperiment)({
                     kind: "user",
                     id: "2023-09_clips_nitro_early_access",
                     label: "Clips (Nitro EA)",
@@ -4724,17 +4735,17 @@
                     }]
                 });
 
-            function l() {
-                if (!(0, a.default)()) return !1;
+            function u() {
+                if (!(0, o.default)(a.default)) return !1;
                 let {
                     enableClips: e
-                } = r.getCurrentConfig({
+                } = l.getCurrentConfig({
                     location: "areClipsEnabled"
                 }, {
                     autoTrackExposure: !1
                 }), {
                     enableClips: t
-                } = o.getCurrentConfig({
+                } = r.getCurrentConfig({
                     location: "areClipsEnabled"
                 }, {
                     autoTrackExposure: !1
@@ -4748,18 +4759,18 @@
                 return e || t || n
             }
 
-            function u() {
-                let e = (0, a.default)(),
+            function d() {
+                let e = (0, o.default)(a.default),
                     {
                         enableClips: t
-                    } = r.useExperiment({
+                    } = l.useExperiment({
                         location: "useEnableClips"
                     }, {
                         autoTrackExposure: !1
                     }),
                     {
                         enableClips: n
-                    } = o.useExperiment({
+                    } = r.useExperiment({
                         location: "useEnableClips"
                     }, {
                         autoTrackExposure: !1
@@ -4773,24 +4784,24 @@
                     });
                 return (n || t || i) && e
             }
-            let d = e => {
+            let c = e => {
                     let {
                         autoTrackExposure: t
-                    } = e, n = (0, a.default)(), {
+                    } = e, n = (0, o.default)(a.default), {
                         enablePremiumEarlyAccessGoLiveRoadblock: i
-                    } = r.useExperiment({
+                    } = l.useExperiment({
                         location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"
                     }, {
                         autoTrackExposure: t && n
                     });
                     return !!n && i
                 },
-                c = e => {
+                h = e => {
                     let {
                         autoTrackExposure: t
-                    } = e, n = (0, a.default)(), {
+                    } = e, n = (0, o.default)(a.default), {
                         enablePremiumEarlyAccessAnnouncementCoachmark: i
-                    } = r.useExperiment({
+                    } = l.useExperiment({
                         location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"
                     }, {
                         autoTrackExposure: t && n
@@ -5090,23 +5101,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return r
+                    return o
                 }
             });
-            var i = n("42887"),
-                s = n("773336"),
-                a = n("56947"),
-                o = n("353927");
+            var i = n("773336"),
+                s = n("56947"),
+                a = n("353927");
 
-            function r() {
+            function o(e) {
                 let {
-                    ignorePlatformRestriction: e
-                } = a.ClipsExperiment.getCurrentConfig({
+                    ignorePlatformRestriction: t
+                } = s.ClipsExperiment.getCurrentConfig({
                     location: "isClipsClientCapable"
                 }, {
                     autoTrackExposure: !1
                 });
-                return e || s.isDesktop() && i.default.getMediaEngine().supports(o.Features.CLIPS)
+                return t || i.isDesktop() && e.getMediaEngine().supports(a.Features.CLIPS)
             }
         },
         691898: function(e, t, n) {
@@ -9827,7 +9837,7 @@
                         }, {
                             autoTrackExposure: !0
                         });
-                        if (r && e_.setHasFullbandPerformance((0, O.hasPerformanceForKrispFullband)()), (0, N.default)() && A.default.getSettings().clipsEnabled) {
+                        if (r && e_.setHasFullbandPerformance((0, O.hasPerformanceForKrispFullband)()), (0, N.default)(i) && A.default.getSettings().clipsEnabled) {
                             e.setExperimentFlag(ep.ExperimentFlags.STREAMER_CLIP, !0);
                             let {
                                 enableViewerClipping: t
@@ -10077,9 +10087,9 @@
                                 let e = e$();
                                 e_.setAudioInputDevice(e.inputDeviceId), e_.setAudioOutputDevice(e.outputDeviceId), e3(), e_.setInputVolume(e.inputVolume), e_.setOutputVolume(e.outputVolume), e_.setH264Enabled(e.openH264), e_.setAv1Enabled(e.av1Enabled), e_.setAecDump(e.aecDumpEnabled)
                             }()
-                    }(), ((0, z.isMac)() || (0, z.isWindows)() || (0, z.isLinux)()) && !__OVERLAY__ && !eG && !eH ? (eG = !0, tc()) : (0, z.isWeb)() && e_.supports(ep.Features.NOISE_CANCELLATION) ? (eH = !0, i.emitChange()) : (0, z.isWeb)() && te({
+                    }(), !(0, z.isDesktop)() || __OVERLAY__ || eG || eH ? (0, z.isWeb)() && e_.supports(ep.Features.NOISE_CANCELLATION) ? (eH = !0, i.emitChange()) : (0, z.isWeb)() && te({
                         noiseCancellation: !1
-                    }), (0, z.isMac)() && e_.supports(ep.Features.SOUNDSHARE) ? e_.getSoundshareStatus().then(e => {
+                    }) : (eG = !0, tc()), (0, z.isMac)() && e_.supports(ep.Features.SOUNDSHARE) ? e_.getSoundshareStatus().then(e => {
                         tp(e)
                     }).catch(e => {
                         eE.warn("Failed to check if soundshare is enabled: ".concat(e))
@@ -14558,7 +14568,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "247591"
+                                build_number: "247620"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21372,4 +21382,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1a761de39ebc0fb22cca.js.map
+//# sourceMappingURL=d60ab351411a2888a351.js.map

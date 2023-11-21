@@ -120947,6 +120947,7 @@ div.nagbar_c731ff {
     --channels-default: var(--primary-360);
     --channeltextarea-background: var(--primary-560);
     --chat-background: var(--primary-600);
+    --chat-banner-bg: var(--primary-630);
     --chat-border: var(--primary-700);
     --chat-input-container-background: var(--primary-600);
     --chat-swipe-to-reply-background: var(--primary-660);
@@ -120972,9 +120973,12 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
     --divider-strong: hsl(var(--white-500-hsl) / 0.16);
     --divider-subtle: hsl(var(--white-500-hsl) / 0.08);
+    --expression-picker-bg: var(--primary-630);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl) / 0.8);
     --forum-post-tag-background: hsl(var(--primary-660-hsl) / 0.9);
+    --guild-icon-inactive-bg: var(--primary-630);
+    --guild-icon-inactive-nested-bg: var(--primary-600);
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
     --header-muted: var(--primary-360);
     --header-primary: var(--primary-130);
@@ -121238,6 +121242,7 @@ div.nagbar_c731ff {
     --channels-default: var(--primary-460);
     --channeltextarea-background: var(--primary-160);
     --chat-background: var(--white-500);
+    --chat-banner-bg: var(--primary-130);
     --chat-border: var(--primary-200);
     --chat-input-container-background: var(--white-500);
     --chat-swipe-to-reply-background: var(--primary-160);
@@ -121263,9 +121268,12 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--white-200-hsl) / 0.5);
     --divider-strong: hsl(var(--black-500-hsl) / 0.16);
     --divider-subtle: hsl(var(--black-500-hsl) / 0.08);
+    --expression-picker-bg: var(--primary-130);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-160-hsl) / 0.8);
     --forum-post-tag-background: hsl(var(--primary-160-hsl) / 0.9);
+    --guild-icon-inactive-bg: var(--primary-130);
+    --guild-icon-inactive-nested-bg: var(--white-500);
     --guild-notifications-bottom-sheet-pill-background: var(--white-500);
     --header-muted: var(--primary-460);
     --header-primary: var(--primary-860);
@@ -121529,6 +121537,7 @@ div.nagbar_c731ff {
     --channels-default: var(--plum-9);
     --channeltextarea-background: var(--plum-23);
     --chat-background: var(--black-500);
+    --chat-banner-bg: var(--black-500);
     --chat-border: var(--plum-20);
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
@@ -121554,9 +121563,12 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --divider-strong: hsl(var(--plum-11-hsl) / 0.2);
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
+    --expression-picker-bg: var(--black-500);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--plum-19-hsl) / 0.8);
     --forum-post-tag-background: hsl(var(--plum-19-hsl) / 0.9);
+    --guild-icon-inactive-bg: var(--black-500);
+    --guild-icon-inactive-nested-bg: var(--black-500);
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
     --header-muted: var(--plum-10);
     --header-primary: var(--plum-2);
@@ -121820,6 +121832,7 @@ div.nagbar_c731ff {
     --channels-default: var(--plum-9);
     --channeltextarea-background: var(--plum-15);
     --chat-background: var(--plum-16);
+    --chat-banner-bg: var(--plum-20);
     --chat-border: var(--plum-20);
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
@@ -121845,9 +121858,12 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --divider-strong: hsl(var(--plum-11-hsl) / 0.18);
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
+    --expression-picker-bg: var(--plum-20);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--plum-19-hsl) / 0.8);
     --forum-post-tag-background: hsl(var(--plum-19-hsl) / 0.9);
+    --guild-icon-inactive-bg: var(--plum-20);
+    --guild-icon-inactive-nested-bg: var(--plum-20);
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
     --header-muted: var(--plum-10);
     --header-primary: var(--plum-1);
@@ -123298,4 +123314,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.bb591e05c90ef305c898.css.map*/
+/*# sourceMappingURL=app.5a7521e0fa4ca7356635.css.map*/
