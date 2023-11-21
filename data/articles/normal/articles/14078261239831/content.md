@@ -10,7 +10,7 @@
 <p><em>What are the types of servers </em></p>
 <ul>
     <li>
-        <strong>Friend Server</strong>: Friend Servers are invite-only spaces designed to discuss, connect, and share with your friends or smaller groups. Invite links in Friend Servers will expire at a maximum of 30 days, though previously created non-expiring links will remain active and functional. 
+        <strong>Friend Server</strong>: Friend Servers are invite-only spaces designed to discuss, connect, and share with your friends or smaller groups.
     </li>
     <li>
         <strong>Community Server: </strong>Community Servers are invite-only spaces designed for people to share, connect, and learn from others all over the world who share common interests. Moderators in Community Servers have access to tools like Server Insights, Raid Protection, Rules and Onboarding.
@@ -35,5 +35,3 @@
 <p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">A: Community, Partnered and Verified servers will have badges and tooltips that display the server type.</span></p>
 <p><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Q: Will Friend Servers be labeled/ badged? </span></strong></p>
 <p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">A: We may consider adding a badge to Friend Servers in a future rollout. </span></p>
-<p><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Q: Why are new invite-links capped at 30 days for Friend Servers?</span></strong></p>
-<p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">A: Our research and user feedback found different use cases of invite links for Friends Servers and Community Servers. Typically for Community Servers intending to grow, admins leave up invite links on third-party websites to allow more people to join. However, Friends Servers are more intimate and enclosed spaces where users generate new invite links to send to friends. We found that nearly 100% of links were clicked within 30 days, reducing the likelihood of a negative impact on Friends Servers.</span></p>
