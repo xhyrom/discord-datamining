@@ -409,10 +409,9 @@
                 p = n("782340");
 
             function m(e) {
-                var t;
                 let {
-                    sourceName: n,
-                    sourceApplicationId: m
+                    sourceName: t,
+                    sourceApplicationId: n
                 } = function(e) {
                     var t, n;
                     if (null != e) {
@@ -434,12 +433,12 @@
                         sourceName: null !== (t = null == u ? void 0 : u.sourceName) && void 0 !== t ? t : null == o ? void 0 : o.name,
                         sourceApplicationId: null !== (n = null == u ? void 0 : u.id) && void 0 !== n ? n : null == o ? void 0 : o.id
                     }
-                }(e), _ = Object.keys(r.default.getVoiceStatesForChannel(null !== (t = u.default.getChannelId()) && void 0 !== t ? t : ""));
-                return {
+                }(e), m = u.default.getChannelId(), _ = [s.default.getId()];
+                return null != m && (_ = Object.keys(r.default.getVoiceStatesForChannel(m))), {
                     id: o.default.fromTimestamp(Date.now()),
                     version: c.CURRENT_CLIP_METADATA_VERSION,
-                    applicationName: null != n ? n : p.default.Messages.CLIPS_UNKNOWN_SOURCE,
-                    applicationId: m,
+                    applicationName: null != t ? t : p.default.Messages.CLIPS_UNKNOWN_SOURCE,
+                    applicationId: n,
                     users: _,
                     clipMethod: "manual",
                     length: 0,
@@ -2690,4 +2689,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0460104c1ac8c4ffb8af.js.map
+//# sourceMappingURL=2e350e4a01b1f62e58ce.js.map
