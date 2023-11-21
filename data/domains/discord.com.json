@@ -1,6 +1,11 @@
 {
-  "subdomain_count": 1,
+  "subdomain_count": 6,
   "subdomains": [
-    "email.creators"
+    "email.creators",
+    "ptb",
+    "events",
+    "crawl-35-237-4-214.ptr",
+    "crawl-35-196-132-85.ptr",
+    "crawl-35-227-62-178.ptr"
   ]
 }
