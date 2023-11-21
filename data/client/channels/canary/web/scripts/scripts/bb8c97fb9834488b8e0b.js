@@ -16857,6 +16857,7 @@
                 giftCodeContainer: "giftCodeContainer__7fa01",
                 nitroBadgeSvg: "nitroBadgeSvg__19819",
                 nitroFileSizeUpsell: "nitroFileSizeUpsell__5c7fc",
+                pollContainer: "pollContainer__95d4b",
                 referralContainer: "referralContainer_f44a73",
                 threadRoleMentionFailure: "threadRoleMentionFailure__45369"
             }
@@ -19095,8 +19096,8 @@
             e.exports = {
                 answer: "answer_be6c2e",
                 answersContainer: "answersContainer_fd091b",
+                attachment: "attachment__02b3f",
                 emoji: "emoji__27dab",
-                media: "media_c99808",
                 mediaMissing: "mediaMissing__2a6d1",
                 selectedIcon: "selectedIcon__1a872",
                 votesData: "votesData_e545ce"
@@ -19116,9 +19117,9 @@
                 answer: "answer__07489",
                 answerContent: "answerContent_f678a4",
                 answersContainer: "answersContainer__97393",
+                attachment: "attachment_b6d123",
                 avatarForSelected: "avatarForSelected_db7f86",
                 label: "label_f6dfd2",
-                media: "media_a7fe08",
                 mediaContainer: "mediaContainer__32ff8",
                 votePercentageBar: "votePercentageBar__4c440",
                 votesData: "votesData__4d275"
