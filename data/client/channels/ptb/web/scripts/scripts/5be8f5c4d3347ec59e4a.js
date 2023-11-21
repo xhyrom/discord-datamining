@@ -496,7 +496,7 @@
                     return f
                 },
                 getEventTimeData: function() {
-                    return R
+                    return T
                 },
                 getScheduleFromEventData: function() {
                     return S
@@ -519,11 +519,14 @@
                 getNextRecurrenceIdInEvent: function() {
                     return I
                 },
+                isValidRecurrence: function() {
+                    return U
+                },
                 recurrenceOptionToRecurrenceRule: function() {
-                    return C
+                    return G
                 },
                 recurrenceRuleToOption: function() {
-                    return G
+                    return w
                 }
             }), n("222007"), n("424973");
             var u = n("917351"),
@@ -551,7 +554,7 @@
                     return n > 1 ? p(e, t) : e.calendar(t)
                 };
 
-            function R(e, t, n) {
+            function T(e, t, n) {
                 null == n && (n = r());
                 let u = r(e),
                     l = null != t && "" !== t ? r(t) : void 0,
@@ -566,7 +569,7 @@
                 }
             }
 
-            function T(e, t) {
+            function R(e, t) {
                 let n;
                 return null != e && (n = {
                     startDate: r(e),
@@ -575,11 +578,11 @@
             }
 
             function S(e) {
-                return T(e.scheduledStartTime, e.scheduledEndTime)
+                return R(e.scheduledStartTime, e.scheduledEndTime)
             }
 
             function D(e) {
-                return T(e.scheduled_start_time, e.scheduled_end_time)
+                return R(e.scheduled_start_time, e.scheduled_end_time)
             }
 
             function m(e, t) {
@@ -629,15 +632,24 @@
                 return null != t ? i.default.fromTimestamp(Math.floor(t.getTime() / a.default.Millis.SECOND) * a.default.Millis.SECOND) : null
             }
 
-            function U(e) {
+            function U(e, t) {
+                if (null == t || null == e) return !1;
+                let n = g(e),
+                    u = i.default.extractTimestamp(t),
+                    l = new Date(u),
+                    r = n.after(l, !0);
+                return l.getTime() === (null == r ? void 0 : r.getTime())
+            }
+
+            function C(e) {
                 let t = new d.Weekday(e.toDate().getDay()),
                     n = new d.Weekday(e.toDate().getUTCDay());
                 return n.weekday - t.weekday > 0 ? v : n.weekday - t.weekday < 0 ? y : _
             }
 
-            function C(e, t) {
+            function G(e, t) {
                 let n = function(e, t) {
-                    let n = U(t),
+                    let n = C(t),
                         u = t.toDate();
                     switch (u.setMilliseconds(0), e) {
                         case c.RecurrenceOptions.NONE:
@@ -685,7 +697,7 @@
                 }
             }
 
-            function G(e, t) {
+            function w(e, t) {
                 if (null == t) return c.RecurrenceOptions.NONE;
                 let n = g(t);
                 switch (n.options.freq) {
@@ -694,7 +706,7 @@
                     case d.RRule.YEARLY:
                         return c.RecurrenceOptions.YEARLY;
                     case d.RRule.DAILY:
-                        if (!(0, u.isEqual)(n.options.byweekday, U(e))) return c.RecurrenceOptions.NONE;
+                        if (!(0, u.isEqual)(n.options.byweekday, C(e))) return c.RecurrenceOptions.NONE;
                         return c.RecurrenceOptions.WEEKDAY_ONLY;
                     default:
                         return c.RecurrenceOptions.NONE
@@ -703,4 +715,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8dac239e96f8217c8b7f.js.map
+//# sourceMappingURL=5be8f5c4d3347ec59e4a.js.map
