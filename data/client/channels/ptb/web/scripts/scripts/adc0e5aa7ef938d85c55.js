@@ -3369,15 +3369,15 @@
         },
         357626: function(e, t, n) {
             "use strict";
-            var i, r, o, s, l, a, u, c;
+            var i, r, o, s, l, a;
             n.r(t), n.d(t, {
-                ChannelListLayoutSettings: function() {
-                    return r
+                ChannelListLayoutTypes: function() {
+                    return i
                 },
                 MessagePreviewSettings: function() {
-                    return s
+                    return o
                 }
-            }), (l = i || (i = {})).COZY = "cozy", l.COMPACT = "compact", l.MINIMAL = "minimal", (a = r || (r = {})).HYBRID = "hybrid", a.COZY = "cozy", a.COMPACT = "compact", a.MINIMAL = "minimal", (u = o || (o = {})).UNREADS = "unreads", u.ALL = "all", u.NONE = "none", (c = s || (s = {})).DEFAULT = "default", c.ALL = "all", c.UNREADS = "unreads", c.NONE = "none"
+            }), (s = i || (i = {})).COZY = "cozy", s.COMPACT = "compact", s.MINIMAL = "minimal", (l = r || (r = {})).UNREADS = "unreads", l.ALL = "all", l.NONE = "none", (a = o || (o = {})).DEFAULT = "default", a.ALL = "all", a.UNREADS = "unreads", a.NONE = "none"
         },
         894488: function(e, t, n) {
             "use strict";
@@ -4156,8 +4156,8 @@
                     value: null != e ? e : 0
                 }));
             (0, l.defineProtoSetting)("appearance", "mobileRedesignDisabled", e => null != e && e, e => e);
-            let ef = new Set([s.ChannelListLayoutSettings.HYBRID, s.ChannelListLayoutSettings.COZY, s.ChannelListLayoutSettings.COMPACT, s.ChannelListLayoutSettings.MINIMAL]);
-            (0, l.defineProtoSetting)("appearance", "channelListLayout", e => null != e && ef.has(e.value) ? e.value : s.ChannelListLayoutSettings.HYBRID, e => o.StringValue.create({
+            let ef = new Set([s.ChannelListLayoutTypes.COZY, s.ChannelListLayoutTypes.COMPACT]);
+            (0, l.defineProtoSetting)("appearance", "channelListLayout", e => null != e && ef.has(e.value) ? e.value : s.ChannelListLayoutTypes.COZY, e => o.StringValue.create({
                 value: e
             }));
             let eE = new Set([s.MessagePreviewSettings.DEFAULT, s.MessagePreviewSettings.ALL, s.MessagePreviewSettings.UNREADS, s.MessagePreviewSettings.NONE]);
@@ -5280,7 +5280,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "247986", "247986"), 10);
+                let o = parseInt((n = "247991", "247991"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5522,4 +5522,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4c0cf99e8de49e3e5d7b.js.map
+//# sourceMappingURL=adc0e5aa7ef938d85c55.js.map
