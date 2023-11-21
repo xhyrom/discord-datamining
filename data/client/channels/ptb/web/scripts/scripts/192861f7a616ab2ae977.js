@@ -9312,6 +9312,8 @@
                 ACTIVITY_PANEL_GO_LIVE_TOOLTIP_NO_PERMISSION_IN_GUILD: "You can’t stream into this server.",
                 ACTIVITY_PANEL_GO_LIVE_TOOLTIP_NOT_IN_GUILD: "Navigate to a server to start streaming.",
                 GO_LIVE_MODAL_TITLE: "Screen Share",
+                GO_LIVE_MODAL_CAPTURE: "Capture Devices",
+                GO_LIVE_MODAL_DESCRIPTION_GENERIC: "Set up your stream and have your friends grab a seat!",
                 GO_LIVE_MODAL_DESCRIPTION_SELECT_SOURCE: "Select something to stream and have your friends grab a seat!",
                 GO_LIVE_MODAL_APPLICATIONS: "Applications",
                 GO_LIVE_MODAL_SCREENS: "Screens",
@@ -9322,6 +9324,10 @@
                 GO_LIVE_MODAL_OVERFLOW_TWO_USERS: "!!{nickname0}!! and !!{nickname1}!!",
                 GO_LIVE_MODAL_OVERFLOW_THREE_USERS: "!!{nickname0}!!, !!{nickname1}!!, and !!{nickname2}!!",
                 GO_LIVE_MODAL_OVERFLOW_FOUR_OR_MORE_USERS: "!!{nickname0}!!, !!{nickname1}!!, and !!{remainingCount}!! others",
+                GO_LIVE_MODAL_CAPTURE_DESCRIPTION: "Pick your video device and the matching audio device.",
+                GO_LIVE_FORM_LABEL_AUDIO_DEVICE: "Audio Device",
+                GO_LIVE_FORM_LABEL_VIDEO_DEVICE: "Video Device",
+                GO_LIVE_FORM_BUTTON_CAMERA_READY: "Looks Good!",
                 GO_LIVE_HEY: "Hey!",
                 GO_LIVE_LOOK: "Look!",
                 GO_LIVE_LISTEN: "Listen!",
@@ -16065,7 +16071,6 @@
                 DEFAULT_CONFIRMATION_MODAL_HEADER: "Are you sure?",
                 DISAPPROVAL: "ಠ_ಠ",
                 ENGLISH_LANGUAGE: "English",
-                GO_LIVE_MODAL_DESCRIPTION_GENERIC: "Set up your stream and have your friends grab a seat!",
                 GO_LIVE_MODAL_SELECT_GUILD_FORM_TITLE: "Select a server for your stream",
                 GO_LIVE_MODAL_GUILD_FORM_TITLE: "Where you're streaming",
                 OVERLAY_NEWS_GO_LIVE_BODY_NO_VOICE_CHANNEL: "Stream {game} to your friends!",
@@ -16589,11 +16594,6 @@
                 CUSTOM_HANG_STATUS_PLACEHOLDER: "Eating a potato",
                 XBOX: "Xbox",
                 PLAYSTATION: "PlayStation",
-                GO_LIVE_MODAL_CAPTURE: "Capture Devices",
-                GO_LIVE_MODAL_CAPTURE_DESCRIPTION: "Pick your video device and the matching audio device.",
-                GO_LIVE_FORM_LABEL_AUDIO_DEVICE: "Audio Device",
-                GO_LIVE_FORM_LABEL_VIDEO_DEVICE: "Video Device",
-                GO_LIVE_FORM_BUTTON_CAMERA_READY: "Looks Good!",
                 SAFETY_HUB_CLASSIFICATIONS_TABLE_HEADER: "Lorem, ipsum",
                 SAFETY_HUB_CLASSIFICATIONS_TABLE_EMPTY_TEXT: "Lorem, ipsum dolor",
                 SAFETY_HUB_CLASSIFICATIONS_TABLE_COLUMN_HEADER_DATE: "DATE",
@@ -18221,7 +18221,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247591", ", Version Hash: ").concat("47631391cf536b275c1776f04b5fd8f192f86acd")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247620", ", Version Hash: ").concat("91e535a1a1b1f28515be193cb259863f086fac44")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20498,8 +20498,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "247591", "247591"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247591")), _ = 0), _
+                let _ = parseInt((e = "247620", "247620"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247620")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -20874,20 +20874,21 @@
                 i = E("374014"),
                 I = E("103979"),
                 s = E("271938"),
-                T = E("945956"),
-                S = E("205817"),
-                N = E("599110"),
-                O = E("773336"),
-                A = E("56947"),
-                R = E("386045"),
-                l = E("30591"),
-                u = E("18346"),
-                L = E("80028"),
-                C = E("49111"),
-                c = E("706530");
+                T = E("42887"),
+                S = E("945956"),
+                N = E("205817"),
+                O = E("599110"),
+                A = E("773336"),
+                R = E("56947"),
+                l = E("386045"),
+                u = E("30591"),
+                L = E("18346"),
+                C = E("80028"),
+                c = E("49111"),
+                D = E("706530");
             t = class extends r.default {
                 handleVoiceStateUpdates(e) {
-                    for (let _ of e.voiceStates) T.default.getChannelId() === _.channelId && this.maybeShowClipsWarning(_.userId)
+                    for (let _ of e.voiceStates) S.default.getChannelId() === _.channelId && this.maybeShowClipsWarning(_.userId)
                 }
                 handleRTCConnectionFlags(e) {
                     let {
@@ -20898,8 +20899,8 @@
                     } = e;
                     if (E === o.MediaEngineContextTypes.DEFAULT) this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
                     else if (E === o.MediaEngineContextTypes.STREAM) {
-                        let e = S.default.getRTCConnection(i.encodeStreamKey({
-                            streamType: null != n ? c.StreamTypes.GUILD : c.StreamTypes.CALL,
+                        let e = N.default.getRTCConnection(i.encodeStreamKey({
+                            streamType: null != n ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
                             ownerId: _,
                             channelId: t,
                             guildId: n
@@ -20920,23 +20921,23 @@
                         applicationName: _,
                         errMsg: E
                     } = e;
-                    N.default.track(C.AnalyticEvents.CLIPS_INIT_FAILURE, {
+                    O.default.track(c.AnalyticEvents.CLIPS_INIT_FAILURE, {
                         application_name: _,
                         error_message: E
                     })
                 }
                 maybeShowClipsWarning(e) {
-                    let _ = T.default.getChannelId();
-                    if (!(null == _ || R.default.getClipsWarningShown(_)) && e !== s.default.getId()) R.default.isClipsEnabledForUser(e) && (n.default.dispatch({
+                    let _ = S.default.getChannelId();
+                    if (!(null == _ || l.default.getClipsWarningShown(_)) && e !== s.default.getId()) l.default.isClipsEnabledForUser(e) && (n.default.dispatch({
                         type: "CLIPS_SHOW_CALL_WARNING",
                         channelId: _
                     }), this.showClipsToast())
                 }
                 handlePostConnectionOpen() {
-                    if (!(0, u.default)()) return;
+                    if (!(0, L.default)(T.default)) return;
                     this.applyNativeClipsSettings();
-                    let e = (0, A.areClipsEnabled)();
-                    if (!!e)(null == R.default.getHardwareClassification() || null == R.default.getHardwareClassificationForDecoupled() || R.default.getHardwareClassificationVersion() !== L.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
+                    let e = (0, R.areClipsEnabled)();
+                    if (!!e)(null == l.default.getHardwareClassification() || null == l.default.getHardwareClassificationForDecoupled() || l.default.getHardwareClassificationVersion() !== C.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
                         n.default.dispatch({
                             type: "CLIPS_CLASSIFY_HARDWARE",
                             classification: e
@@ -20950,9 +20951,9 @@
                         channelId: t,
                         guildId: n
                     } = e;
-                    if (E !== o.MediaEngineContextTypes.STREAM || _ === s.default.getId() || !(0, u.default)()) return;
-                    let r = S.default.getRTCConnection(i.encodeStreamKey({
-                        streamType: null != n ? c.StreamTypes.GUILD : c.StreamTypes.CALL,
+                    if (E !== o.MediaEngineContextTypes.STREAM || _ === s.default.getId() || !(0, L.default)(T.default)) return;
+                    let r = N.default.getRTCConnection(i.encodeStreamKey({
+                        streamType: null != n ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
                         ownerId: _,
                         channelId: t,
                         guildId: n
@@ -20963,9 +20964,9 @@
                     try {
                         let e = await a.default.processUtils.getSystemInfo(),
                             _ = this.classifyHardware(e);
-                        return N.default.track(C.AnalyticEvents.CLIPS_HARDWARE_CLASSIFICATION, {
+                        return O.default.track(c.AnalyticEvents.CLIPS_HARDWARE_CLASSIFICATION, {
                             classification: _,
-                            version: L.CLIPS_HARDWARE_CLASSIFICATION_VERSION,
+                            version: C.CLIPS_HARDWARE_CLASSIFICATION_VERSION,
                             gpu_models: e.gpus.map(e => {
                                 let {
                                     model: _
@@ -20974,45 +20975,45 @@
                             })
                         }), _
                     } catch (e) {
-                        return l.ClipsHardwareClassification.UNKNOWN
+                        return u.ClipsHardwareClassification.UNKNOWN
                     }
                 }
                 classifyHardware(e) {
-                    if ((0, O.isWindows)()) {
+                    if ((0, A.isWindows)()) {
                         let _ = e.gpus.some(e => {
                                 let {
                                     model: _
                                 } = e;
-                                return L.WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX.test(_)
+                                return C.WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX.test(_)
                             }),
                             E = e.gpus.some(e => {
                                 let {
                                     model: _
                                 } = e;
-                                return L.WINDOWS_HARDWARE_MINIMUM_GPU_REGEX.test(_)
+                                return C.WINDOWS_HARDWARE_MINIMUM_GPU_REGEX.test(_)
                             });
-                        return _ ? l.ClipsHardwareClassification.MEETS_AUTO_ENABLE : E ? l.ClipsHardwareClassification.MEETS_MINIMUM : l.ClipsHardwareClassification.BELOW_MINIMUM
+                        return _ ? u.ClipsHardwareClassification.MEETS_AUTO_ENABLE : E ? u.ClipsHardwareClassification.MEETS_MINIMUM : u.ClipsHardwareClassification.BELOW_MINIMUM
                     }
-                    if ((0, O.isMac)()) {
+                    if ((0, A.isMac)()) {
                         let _ = e.gpus.some(e => {
                             let {
                                 model: _
                             } = e;
-                            return L.OSX_HARDWARE_AUTO_ENABLE_GPU_REGEX.test(_)
+                            return C.OSX_HARDWARE_AUTO_ENABLE_GPU_REGEX.test(_)
                         });
-                        return _ ? l.ClipsHardwareClassification.MEETS_AUTO_ENABLE : l.ClipsHardwareClassification.MEETS_MINIMUM
+                        return _ ? u.ClipsHardwareClassification.MEETS_AUTO_ENABLE : u.ClipsHardwareClassification.MEETS_MINIMUM
                     }
-                    return l.ClipsHardwareClassification.UNKNOWN
+                    return u.ClipsHardwareClassification.UNKNOWN
                 }
                 applySSRCRecording(e, _) {
-                    if (!(0, u.default)() || e === s.default.getId()) return;
-                    let E = T.default.getRTCConnection();
+                    if (!(0, L.default)(T.default) || e === s.default.getId()) return;
+                    let E = S.default.getRTCConnection();
                     if (null == E) return;
-                    let t = R.default.isVoiceRecordingAllowedForUser(e);
+                    let t = l.default.isVoiceRecordingAllowedForUser(e);
                     null == E || E.setClipRecordSSRC(e, "audio", "inbound", t, _)
                 }
                 recordInboundStream(e, _) {
-                    if (!(0, u.default)() || e === s.default.getId()) return;
+                    if (!(0, L.default)(T.default) || e === s.default.getId()) return;
                     let {
                         enableViewerClipping: E,
                         ignoreSenderPreference: t
@@ -21020,7 +21021,7 @@
                         location: "ClipsManager:recordInboundStream"
                     });
                     if (!E) return;
-                    let o = t || R.default.isViewerClippingAllowedForUser(e);
+                    let o = t || l.default.isViewerClippingAllowedForUser(e);
                     this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", o), _.setClipRecordSSRC(e, "video", "inbound", o)
                 }
                 constructor(...e) {
@@ -21071,14 +21072,14 @@
                     })
                 }
                 applyNativeClipsSettings(e) {
-                    if (!(0, T.default)()) return;
+                    if (!(0, T.default)(r.default)) return;
                     let _ = (0, i.areClipsEnabled)(),
                         E = s.default.getSettings(),
                         t = (E.clipsEnabled || E.decoupledClipsEnabled) && _;
                     r.default.getMediaEngine().setClipBufferLength(t ? E.clipsLength / 1e3 : 0), (null == e ? void 0 : e.settings.decoupledClipsEnabled) && this.fireClipsInitEvent()
                 }
                 fireClipsInitEvent() {
-                    if (!(0, T.default)()) return;
+                    if (!(0, T.default)(r.default)) return;
                     let e = (0, i.areClipsEnabled)(),
                         _ = s.default.getSettings(),
                         E = _.clipsEnabled && e;
@@ -36347,4 +36348,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d2f4716602f7baf9e5e1.js.map
+//# sourceMappingURL=192861f7a616ab2ae977.js.map
