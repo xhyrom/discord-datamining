@@ -4,10 +4,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 saveClydeProfile: function() {
-                    return f
+                    return c
                 },
                 addClydeGuildMember: function() {
-                    return c
+                    return f
                 },
                 generatePersonality: function() {
                     return d
@@ -53,11 +53,11 @@
                 o = n("473591"),
                 a = n("680894"),
                 s = n("49111");
-            async function f(e, t) {
+            async function c(e, t) {
                 let n = await E(e, t);
                 return n
             }
-            async function c(e) {
+            async function f(e) {
                 return await r.default.put({
                     url: s.Endpoints.GUILD_CLYDE_ADD_MEMBER(e),
                     oldFormErrors: !0
@@ -84,7 +84,7 @@
                 });
                 let n = null != t.personality && o.default.getGeneratedPersonality() === o.default.getPendingPersonality();
                 try {
-                    var l, f;
+                    var l, c;
                     let o = await r.default.patch({
                         url: s.Endpoints.GUILD_CLYDE_SETTINGS(e),
                         oldFormErrors: !0,
@@ -108,7 +108,7 @@
                     }), o.body.settings;
                     return i.default.dispatch({
                         type: "CLYDE_GUILD_SETTINGS_SAVE_FAIL",
-                        errors: null !== (f = null === (l = o.body) || void 0 === l ? void 0 : l.errors) && void 0 !== f ? f : {}
+                        errors: null !== (c = null === (l = o.body) || void 0 === l ? void 0 : l.errors) && void 0 !== c ? c : {}
                     }), u.default.track(s.AnalyticEvents.CLYDE_AI_PROFILE_UPDATE_FAILED, {
                         guild_id: e,
                         clyde_profile_id: t.clyde_profile_id
@@ -259,14 +259,14 @@
             let o = [],
                 a = !1;
             let s = o,
-                f = {},
-                c = null,
+                c = {},
+                f = null,
                 d = e => {
                     s = (0, i.cloneDeep)(e);
                     let t = {};
                     s.forEach(e => {
                         t[e.id] = e
-                    }), f = t
+                    }), c = t
                 };
             class E extends l.default.Store {
                 get isFetching() {
@@ -279,10 +279,10 @@
                     return s
                 }
                 get tryItOutId() {
-                    return c
+                    return f
                 }
                 getProfileEffectById(e) {
-                    return f[e]
+                    return null != e ? c[e] : void 0
                 }
             }
             E.displayName = "ProfileEffectStore";
@@ -306,10 +306,10 @@
                     let {
                         id: t
                     } = e;
-                    c = t
+                    f = t
                 },
                 LOGOUT: e => {
-                    a = !1, d(o), c = null
+                    a = !1, d(o), f = null
                 }
             })
         },
@@ -473,8 +473,8 @@
                 o = n("446674"),
                 a = n("206230"),
                 s = n("845962"),
-                f = n("662286"),
-                c = n("76047"),
+                c = n("662286"),
+                f = n("76047"),
                 d = n("859498"),
                 E = n("687682"),
                 _ = n("525808"),
@@ -489,11 +489,11 @@
                         isHovering: o = !1,
                         useOpacityOnHover: a = !0,
                         autoPlay: s = !0,
-                        restartMethod: f,
+                        restartMethod: c,
                         urlQueryString: p,
                         profileEffectConfig: y,
                         noBorderRadius: I = !1,
-                        introDelay: C = c.ENTRY_DELAY
+                        introDelay: C = f.ENTRY_DELAY
                     } = e, A = i.useRef(null), [L, m] = i.useState([]);
                     (0, T.default)(y);
                     let [D, R] = i.useState(0), [h, P] = i.useState(0), {
@@ -517,8 +517,8 @@
                     }, [P, L]);
                     let [Y, G] = i.useState(!1);
                     return i.useEffect(() => {
-                        !0 !== s && !o && (v(), N(0)), !o && Y && U.current && (v(), N(0)), l && o && !U.current && (b(), y.animationType === d.AnimationTypes.PERSISTENT ? N(f === d.RestartMethod.FromStart ? 0 : D) : N(0))
-                    }, [o, Y, D, l, v, b, U, y.animationType, s, f]), (0, r.jsx)("div", {
+                        !0 !== s && !o && (v(), N(0)), !o && Y && U.current && (v(), N(0)), l && o && !U.current && (b(), y.animationType === d.AnimationTypes.PERSISTENT ? N(c === d.RestartMethod.FromStart ? 0 : D) : N(0))
+                    }, [o, Y, D, l, v, b, U, y.animationType, s, c]), (0, r.jsx)("div", {
                         ref: A,
                         className: u(S.profileEffects, {
                             [S.hovered]: o && a
@@ -526,16 +526,16 @@
                         children: (0, r.jsx)("div", {
                             className: I ? S.innerNoRadius : S.inner,
                             children: L.map((e, i) => {
-                                var l, u, o, a, f, E, _, T;
+                                var l, u, o, a, c, E, _, T;
                                 if (!U.current) {
-                                    if (y.animationType === d.AnimationTypes.PERSISTENT && 0 === i && !0 === s) {
+                                    if (y.animationType === d.AnimationTypes.PERSISTENT && null != y.staticFrameSrc && 0 === i && !0 === s) {
                                         let {
                                             staticFrameSrc: n
                                         } = y;
                                         return (0, r.jsx)("img", {
                                             className: S.effect,
                                             style: {
-                                                top: null !== (f = null === (o = e.position) || void 0 === o ? void 0 : o.y) && void 0 !== f ? f : 0 - t,
+                                                top: null !== (c = null === (o = e.position) || void 0 === o ? void 0 : o.y) && void 0 !== c ? c : 0 - t,
                                                 left: null !== (E = null === (a = e.position) || void 0 === a ? void 0 : a.x) && void 0 !== E ? E : 0
                                             },
                                             src: n,
@@ -543,19 +543,19 @@
                                         }, e.src + i)
                                     }
                                     return (0, r.jsx)("img", {
-                                        src: c.RESET,
+                                        src: f.RESET,
                                         alt: g
                                     }, e.src + i)
                                 }
                                 if (F < e.start || !e.loop && F > e.duration + e.start) return (0, r.jsx)("img", {
-                                    src: c.RESET,
+                                    src: f.RESET,
                                     alt: g
                                 }, e.src + i);
                                 if (y.animationType === d.AnimationTypes.PERSISTENT && !Y && null != n && F >= h && G(!0), e.loop && void 0 !== e.loopDelay && e.loopDelay > 0) {
                                     let t = e.duration + e.loopDelay,
                                         l = Math.floor((F - e.start) / t);
                                     if (F - e.start - l * t > e.duration) return y.animationType === d.AnimationTypes.INTERMITTENT && !Y && null != n && l >= n && G(!0), (0, r.jsx)("img", {
-                                        src: c.RESET,
+                                        src: f.RESET,
                                         alt: g
                                     }, e.src + i)
                                 }
@@ -600,18 +600,18 @@
                 };
             var C = e => {
                 var t;
-                let n = (0, f.useCanUseProfileEffects)({
+                let n = (0, c.useCanUseProfileEffects)({
                         location: "WebWrappedProfileEffect"
                     }),
                     l = null != e.profileEffectID ? null === (t = s.default.getProfileEffectById(e.profileEffectID)) || void 0 === t ? void 0 : t.config : null,
                     u = (0, o.useStateFromStores)([a.default], () => a.default.useReducedMotion),
-                    [c, d] = i.useState(!1);
+                    [f, d] = i.useState(!1);
                 return n && null != l ? u || !1 === e.autoPlay && !1 === e.isHovering ? (0, r.jsx)(I, {
                     useThumbnail: e.useThumbnail,
                     config: l,
                     bannerAdjustment: e.bannerAdjustment,
                     noBorderRadius: e.noBorderRadius
-                }) : c ? (0, r.jsx)(y, {
+                }) : f ? (0, r.jsx)(y, {
                     profileEffectConfig: l,
                     ...e
                 }) : (0, r.jsx)(p.default, {
@@ -680,4 +680,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d3d33196ec4fb72a32e7.js.map
+//# sourceMappingURL=7105d83fb6dfbed18bba.js.map
