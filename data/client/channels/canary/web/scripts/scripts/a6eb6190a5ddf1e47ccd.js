@@ -5531,15 +5531,17 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return r
                 }
             });
             var i = n("37983");
             n("884691");
-            var a = n("77078"),
-                l = {
+            var a = n("95410"),
+                l = n("77078"),
+                s = n("773336"),
+                r = {
                     show(e) {
-                        (0, a.openModalLazy)(async () => {
+                        (0, l.openModalLazy)(async () => {
                             let {
                                 default: t
                             } = await n.el("745705").then(n.bind(n, "745705"));
@@ -5548,6 +5550,16 @@
                                 url: e
                             })
                         })
+                    },
+                    getBlockedDomains() {
+                        if ((0, s.isDesktop)()) {
+                            let e = a.default.get("BlockedDomainsV2");
+                            return Promise.resolve(null == e ? [] : e.split("\n"))
+                        }
+                        return Promise.resolve([])
+                    },
+                    saveBlockedDomains(e) {
+                        (0, s.isDesktop)() && a.default.set("BlockedDomainsV2", e.join("\n"))
                     }
                 }
         },
@@ -5556,7 +5568,7 @@
             let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return f
                 }
             }), n("222007");
             var a = n("446674"),
@@ -5564,51 +5576,48 @@
                 s = n("913144"),
                 r = n("48703"),
                 u = n("599110"),
-                o = n("49111");
-            let d = null;
-            class c extends a.default.Store {
+                o = n("195052"),
+                d = n("49111");
+            let c = "BlockedDomainStore",
+                _ = "BlockedDomainRevision",
+                E = null;
+            class h extends a.default.Store {
                 initialize() {
-                    i = null
+                    i = null, l.default.get(c) && (l.default.remove(_), l.default.remove(c))
                 }
                 getCurrentRevision() {
                     if (null == i) {
                         var e;
-                        i = null !== (e = l.default.get("BlockedDomainRevision")) && void 0 !== e ? e : null
+                        i = null !== (e = l.default.get(_)) && void 0 !== e ? e : null
                     }
                     return i
                 }
-                getBlockedDomainList() {
-                    if (null == d) {
-                        var e, t;
-                        d = new Set(null !== (t = null === (e = l.default.get("BlockedDomainStore")) || void 0 === e ? void 0 : e._state) && void 0 !== t ? t : [])
-                    }
-                    return d
+                async getBlockedDomainList() {
+                    return null == E && (E = new Set(await o.default.getBlockedDomains())), E
                 }
                 isBlockedDomain(e) {
                     let t = n("874749");
-                    this.getBlockedDomainList();
+                    if (null == E) return this.getBlockedDomainList(), null;
                     let i = (0, r.getHostname)(e),
                         a = new t.hash.sha256,
                         l = t.codec.hex.fromBits(a.update(i).finalize()),
                         s = "";
-                    d.has(l) && (s = i);
-                    let c = i.indexOf(".");
-                    for (; - 1 !== c && "" === s;) i = i.substring(c + 1), a.reset(), l = t.codec.hex.fromBits(a.update(i).finalize()), d.has(l) && (s = i), c = i.indexOf(".");
-                    return "" !== s ? (u.default.track(o.AnalyticEvents.LINK_SECURITY_CHECK_BLOCKED, {
+                    E.has(l) && (s = i);
+                    let o = i.indexOf(".");
+                    for (; - 1 !== o && "" === s;) i = i.substring(o + 1), a.reset(), l = t.codec.hex.fromBits(a.update(i).finalize()), E.has(l) && (s = i), o = i.indexOf(".");
+                    return "" !== s ? (u.default.track(d.AnalyticEvents.LINK_SECURITY_CHECK_BLOCKED, {
                         blocked_domain: s
                     }), s) : null
                 }
             }
-            c.displayName = "BlockedDomainStore", c.persistKey = "BlockedDomainStore";
-            var _ = new c(s.default, {
+            h.displayName = "BlockedDomainStore";
+            var f = new h(s.default, {
                 BLOCKED_DOMAIN_LIST_FETCHED: function(e) {
                     let {
                         list: t,
                         revision: n
                     } = e;
-                    d = null, i = null, l.default.set("BlockedDomainStore", {
-                        _state: t
-                    }), l.default.set("BlockedDomainRevision", n)
+                    E = null, i = null, o.default.saveBlockedDomains(t), l.default.set("BlockedDomainRevision", n)
                 }
             })
         },
@@ -33538,4 +33547,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31c468a5685c03166b10.js.map
+//# sourceMappingURL=a6eb6190a5ddf1e47ccd.js.map
