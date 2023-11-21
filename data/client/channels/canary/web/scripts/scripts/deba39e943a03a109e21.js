@@ -16,16 +16,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 fetchAllStoreListingsForApplication: function() {
-                    return d
+                    return c
                 },
                 fetchStoreListingForSku: function() {
                     return f
                 },
                 fetchStoreListingById: function() {
-                    return p
+                    return h
                 },
                 fetchStoreListingForApplication: function() {
-                    return h
+                    return p
                 },
                 matureAgree: function() {
                     return S
@@ -34,10 +34,10 @@
                     return m
                 },
                 joinPublishedStoreListingSkuGuild: function() {
-                    return I
+                    return _
                 },
                 goToSKUStoreListing: function() {
-                    return _
+                    return I
                 },
                 goToApplicationStoreListing: function() {
                     return g
@@ -50,13 +50,13 @@
             var a = n("393414"),
                 s = n("552712");
             n("698041");
-            var o = n("167726"),
-                u = n("271560"),
-                c = n("49111");
+            var u = n("167726"),
+                o = n("271560"),
+                d = n("49111");
 
-            function d(e) {
-                return (0, u.httpGetWithCountryCodeQuery)({
-                    url: c.Endpoints.STORE_PUBLISHED_LISTINGS_SKUS,
+            function c(e) {
+                return (0, o.httpGetWithCountryCodeQuery)({
+                    url: d.Endpoints.STORE_PUBLISHED_LISTINGS_SKUS,
                     query: {
                         application_id: e
                     },
@@ -69,8 +69,8 @@
 
             function f(e) {
                 let t = s.default.get(e),
-                    n = null != t && (o.default.inTestModeForApplication(t.applicationId) || l.default.inDevModeForApplication(t.applicationId));
-                return (0, u.httpGetWithCountryCodeQuery)(n ? c.Endpoints.STORE_LISTINGS_SKU(e) : c.Endpoints.STORE_PUBLISHED_LISTINGS_SKU(e)).then(e => {
+                    n = null != t && (u.default.inTestModeForApplication(t.applicationId) || l.default.inDevModeForApplication(t.applicationId));
+                return (0, o.httpGetWithCountryCodeQuery)(n ? d.Endpoints.STORE_LISTINGS_SKU(e) : d.Endpoints.STORE_PUBLISHED_LISTINGS_SKU(e)).then(e => {
                     n ? r.default.dispatch({
                         type: "STORE_LISTINGS_FETCH_SUCCESS",
                         storeListings: e.body
@@ -81,8 +81,8 @@
                 })
             }
 
-            function p(e) {
-                return (0, u.httpGetWithCountryCodeQuery)(c.Endpoints.STORE_LISTING(e)).then(e => {
+            function h(e) {
+                return (0, o.httpGetWithCountryCodeQuery)(d.Endpoints.STORE_LISTING(e)).then(e => {
                     r.default.dispatch({
                         type: "STORE_LISTING_FETCH_SUCCESS",
                         storeListing: e.body
@@ -90,8 +90,8 @@
                 })
             }
 
-            function h(e) {
-                return (0, u.httpGetWithCountryCodeQuery)(c.Endpoints.STORE_PUBLISHED_LISTINGS_APPLICATION(e)).then(e => {
+            function p(e) {
+                return (0, o.httpGetWithCountryCodeQuery)(d.Endpoints.STORE_PUBLISHED_LISTINGS_APPLICATION(e)).then(e => {
                     r.default.dispatch({
                         type: "STORE_LISTING_FETCH_SUCCESS",
                         storeListing: e.body
@@ -106,21 +106,21 @@
             }
 
             function m() {
-                (0, a.transitionTo)(c.Routes.APPLICATION_STORE)
+                (0, a.transitionTo)(d.Routes.APPLICATION_STORE)
             }
 
-            function I(e) {
+            function _(e) {
                 return i.default.post({
-                    url: c.Endpoints.STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD(e),
+                    url: d.Endpoints.STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD(e),
                     oldFormErrors: !0
                 })
             }
 
-            function _(e, t) {
+            function I(e, t) {
                 let {
                     pathname: n,
                     ...i
-                } = (0, u.getStoreListingLocation)(e, t);
+                } = (0, o.getStoreListingLocation)(e, t);
                 (0, a.transitionTo)(n, i)
             }
 
@@ -128,7 +128,7 @@
                 let {
                     pathname: n,
                     ...i
-                } = (0, u.getApplicationStoreListingLocation)(e, t);
+                } = (0, o.getApplicationStoreListingLocation)(e, t);
                 (0, a.transitionTo)(n, i)
             }
         },
@@ -185,10 +185,10 @@
                     height: n = 24,
                     color: a = r.default.colors.INTERACTIVE_NORMAL,
                     colorClass: s = "",
-                    ...o
+                    ...u
                 } = e;
                 return (0, i.jsx)("svg", {
-                    ...(0, l.default)(o),
+                    ...(0, l.default)(u),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
@@ -241,19 +241,19 @@
             "use strict";
             n.r(t), n.d(t, {
                 ApplicationBenefitsModalIcon: function() {
-                    return c
+                    return d
                 },
                 ApplicationBenefitsModalHeading: function() {
-                    return d
+                    return c
                 },
                 ApplicationBenefitsModalDivider: function() {
                     return f
                 },
                 ApplicationBenefitsModalDescription: function() {
-                    return p
+                    return h
                 },
                 ApplicationBenefitsModalBenefits: function() {
-                    return h
+                    return p
                 },
                 ApplicationBenefitsModalContent: function() {
                     return S
@@ -265,9 +265,9 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("850644"),
-                o = n("899604"),
-                u = n("114067");
-            let c = e => {
+                u = n("899604"),
+                o = n("114067");
+            let d = e => {
                     let {
                         application: t,
                         asset: n,
@@ -282,7 +282,7 @@
                         ...l
                     })
                 },
-                d = e => {
+                c = e => {
                     let {
                         children: t,
                         className: n,
@@ -290,7 +290,7 @@
                         ...s
                     } = e;
                     return (0, i.jsx)(a.Heading, {
-                        className: l(u.header, n),
+                        className: l(o.header, n),
                         variant: "heading-xl/extrabold",
                         id: r,
                         ...s,
@@ -300,10 +300,10 @@
 
             function f() {
                 return (0, i.jsx)("hr", {
-                    className: u.divider
+                    className: o.divider
                 })
             }
-            let p = e => {
+            let h = e => {
                     let {
                         className: t,
                         title: n,
@@ -324,19 +324,19 @@
                         })]
                     })
                 },
-                h = e => {
+                p = e => {
                     let {
                         benefits: t,
                         className: n,
                         ...r
                     } = e;
                     return (0, i.jsx)("div", {
-                        className: l(u.benefitsContainer, n),
+                        className: l(o.benefitsContainer, n),
                         ...r,
                         children: t.map(e => {
                             var t, n;
-                            return (0, i.jsx)(o.default, {
-                                className: u.benefit,
+                            return (0, i.jsx)(u.default, {
+                                className: o.benefit,
                                 benefit: e
                             }, "".concat(e.ref_type, "-").concat(null === (t = e.emoji) || void 0 === t ? void 0 : t.id, "-").concat(null === (n = e.emoji) || void 0 === n ? void 0 : n.name))
                         })
@@ -349,7 +349,7 @@
                         ...r
                     } = e;
                     return (0, i.jsx)("div", {
-                        className: l(u.container, n),
+                        className: l(o.container, n),
                         ...r,
                         children: t
                     })
@@ -369,13 +369,13 @@
             n("884691");
             var a = n("414456"),
                 s = n.n(a),
-                o = n("315102"),
-                u = n("271560"),
-                c = n("969850");
+                u = n("315102"),
+                o = n("271560"),
+                d = n("969850");
             (i = r || (r = {}))[i.SMALL = 40] = "SMALL", i[i.MEDIUM = 66] = "MEDIUM";
-            let d = {
-                40: c.small,
-                66: c.medium
+            let c = {
+                40: d.small,
+                66: d.medium
             };
             var f = e => {
                 let t, {
@@ -384,14 +384,14 @@
                     asset: r,
                     className: a
                 } = e;
-                return t = null != r ? (0, u.getAssetURL)(n.id, r, i) : o.default.getApplicationIconURL({
+                return t = null != r ? (0, o.getAssetURL)(n.id, r, i) : u.default.getApplicationIconURL({
                     id: n.id,
                     icon: n.icon,
                     size: i
                 }), (0, l.jsx)("img", {
                     alt: "",
                     src: t,
-                    className: s(c.icon, d[i], a)
+                    className: s(d.icon, c[i], a)
                 })
             }
         },
@@ -399,7 +399,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return u
                 }
             });
             var i = n("37983");
@@ -409,15 +409,15 @@
                 a = n("77078"),
                 s = n("396671");
 
-            function o(e) {
+            function u(e) {
                 let {
                     children: t,
                     className: n,
                     size: r = a.Button.Sizes.SMALL,
-                    ...o
+                    ...u
                 } = e;
                 return (0, i.jsx)(a.Button, {
-                    ...o,
+                    ...u,
                     size: r,
                     className: l(s.button, n),
                     children: t
@@ -431,10 +431,10 @@
                     return m
                 },
                 BenefitsConfirmation: function() {
-                    return I
+                    return _
                 },
                 PurchaseConfirmation: function() {
-                    return _
+                    return I
                 }
             });
             var i = n("37983");
@@ -443,40 +443,40 @@
                 l = n("834897"),
                 a = n("85336"),
                 s = n("159149"),
-                o = n("650484"),
-                u = n("945330"),
-                c = n("829805"),
-                d = n("425480"),
+                u = n("650484"),
+                o = n("945330"),
+                d = n("829805"),
+                c = n("425480"),
                 f = n("782340"),
-                p = n("370184"),
-                h = n("137852"),
+                h = n("370184"),
+                p = n("137852"),
                 S = n("511117");
             let m = e => {
                     let {
                         step: t,
                         onClose: n
-                    } = e, s = (0, l.default)(d.RESPONSIVE_MOBILE_HEIGHT_SMALL_QUERY);
+                    } = e, s = (0, l.default)(c.RESPONSIVE_MOBILE_HEIGHT_SMALL_QUERY);
                     return t === a.Step.CONFIRM || t === a.Step.BENEFITS ? (0, i.jsx)("div", {}) : (0, i.jsxs)("div", {
-                        className: p.headerContainer,
+                        className: h.headerContainer,
                         children: [!s && (0, i.jsx)("div", {
-                            className: p.headerImageContainer,
+                            className: h.headerImageContainer,
                             "aria-hidden": "true",
                             children: (0, i.jsx)("img", {
                                 src: S,
                                 alt: "",
-                                className: p.headerImage
+                                className: h.headerImage
                             })
                         }), (0, i.jsx)(r.Clickable, {
-                            className: p.closeContainer,
+                            className: h.closeContainer,
                             onClick: () => n(),
                             "aria-label": f.default.Messages.CLOSE,
-                            children: (0, i.jsx)(u.default, {
-                                className: p.closeIcon
+                            children: (0, i.jsx)(o.default, {
+                                className: h.closeIcon
                             })
                         })]
                     })
                 },
-                I = e => {
+                _ = e => {
                     let {
                         listing: t,
                         application: n,
@@ -485,51 +485,51 @@
                         description: a
                     } = e;
                     return null == n ? null : (0, i.jsx)("div", {
-                        className: p.confirmationContainer,
-                        children: (0, i.jsxs)(c.ApplicationBenefitsModalContent, {
-                            children: [(0, i.jsx)(c.ApplicationBenefitsModalIcon, {
+                        className: h.confirmationContainer,
+                        children: (0, i.jsxs)(d.ApplicationBenefitsModalContent, {
+                            children: [(0, i.jsx)(d.ApplicationBenefitsModalIcon, {
                                 application: n,
                                 asset: t.image_asset
-                            }), (0, i.jsx)(c.ApplicationBenefitsModalHeading, {
+                            }), (0, i.jsx)(d.ApplicationBenefitsModalHeading, {
                                 children: r
-                            }), (0, i.jsx)(c.ApplicationBenefitsModalDivider, {}), (0, i.jsx)(c.ApplicationBenefitsModalDescription, {
+                            }), (0, i.jsx)(d.ApplicationBenefitsModalDivider, {}), (0, i.jsx)(d.ApplicationBenefitsModalDescription, {
                                 title: l,
                                 description: a
-                            }), (0, i.jsx)(c.ApplicationBenefitsModalBenefits, {
+                            }), (0, i.jsx)(d.ApplicationBenefitsModalBenefits, {
                                 benefits: t.sku_benefits.benefits
                             })]
                         })
                     })
                 };
 
-            function _(e) {
+            function I(e) {
                 let {
                     listing: t,
                     onConfirm: n,
                     subscription: l
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: p.purchaseConfirmation,
+                    className: h.purchaseConfirmation,
                     children: [(0, i.jsx)("img", {
-                        src: h,
+                        src: p,
                         alt: "",
                         width: 300,
                         height: 126
                     }), (0, i.jsx)(r.Heading, {
-                        className: p.confirmationTitle,
+                        className: h.confirmationTitle,
                         variant: "heading-xl/extrabold",
                         color: "header-primary",
                         children: f.default.Messages.APPLICATION_SUBSCRIPTION_PURCHASE_CONFIRMATION_TITLE.format({
                             tier: t.name
                         })
                     }), (0, i.jsx)(r.Text, {
-                        className: p.confirmationSubtitle,
+                        className: h.confirmationSubtitle,
                         variant: "text-md/medium",
                         color: "header-secondary",
                         children: f.default.Messages.APPLICATION_SUBSCRIPTION_PURCHASE_CONFIRMATION_SUBTITLE.format({
                             timestamp: null == l ? void 0 : l.currentPeriodEnd
                         })
-                    }), (0, i.jsx)(o.PaymentPortalFooter, {
+                    }), (0, i.jsx)(u.PaymentPortalFooter, {
                         children: (0, i.jsx)(s.default, {
                             onPrimary: n,
                             primaryCTA: s.CTAType.CONTINUE,
@@ -543,7 +543,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return o
                 }
             });
             var i = n("37983");
@@ -552,34 +552,34 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("430568"),
-                o = n("888266");
+                u = n("888266");
 
-            function u(e) {
+            function o(e) {
                 let {
                     benefit: t,
                     className: n,
                     emojiContainerClassName: r,
-                    showsDescription: u = !0,
-                    nameTextVariant: c = "text-md/medium",
-                    nameTextColor: d = "header-primary"
+                    showsDescription: o = !0,
+                    nameTextVariant: d = "text-md/medium",
+                    nameTextColor: c = "header-primary"
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: l(o.container, n),
+                    className: l(u.container, n),
                     children: [null != t.emoji && (0, i.jsx)("div", {
-                        className: l(o.emojiContainer, r),
+                        className: l(u.emojiContainer, r),
                         children: (0, i.jsx)(s.default, {
                             emojiId: t.emoji.id,
                             emojiName: t.emoji.name,
                             animated: t.emoji.animated
                         })
                     }), (0, i.jsxs)("div", {
-                        className: o.infoContainer,
+                        className: u.infoContainer,
                         children: [(0, i.jsx)(a.Text, {
-                            variant: c,
-                            color: d,
-                            className: o.name,
+                            variant: d,
+                            color: c,
+                            className: u.name,
                             children: t.name
-                        }), u && (0, i.jsx)(a.Text, {
+                        }), o && (0, i.jsx)(a.Text, {
                             color: "interactive-normal",
                             variant: "text-sm/normal",
                             children: t.description
@@ -624,7 +624,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return E
                 }
             });
             var i = n("37983"),
@@ -632,94 +632,94 @@
                 l = n("627445"),
                 a = n.n(l),
                 s = n("446674"),
-                o = n("913144"),
-                u = n("775433"),
-                c = n("685665"),
-                d = n("598981"),
+                u = n("913144"),
+                o = n("775433"),
+                d = n("685665"),
+                c = n("598981"),
                 f = n("846286"),
-                p = n("697218"),
-                h = n("10514"),
+                h = n("697218"),
+                p = n("10514"),
                 S = n("650509"),
                 m = n("90592"),
-                I = n("333955"),
-                _ = n("599733"),
+                _ = n("333955"),
+                I = n("599733"),
                 g = n("49111"),
                 C = n("782340"),
-                T = e => {
+                E = e => {
                     var t;
                     let n, {
                             listing: l,
-                            guildId: T,
-                            groupListingId: E,
-                            analyticsLocation: A,
-                            showBenefitsFirst: v,
-                            onComplete: N,
-                            forcesTransitionToGuild: L
+                            guildId: E,
+                            groupListingId: A,
+                            analyticsLocation: T,
+                            showBenefitsFirst: b,
+                            onComplete: v,
+                            forcesTransitionToGuild: N
                         } = e,
-                        b = null == l ? void 0 : l.subscription_plans[0],
+                        L = null == l ? void 0 : l.subscription_plans[0],
                         x = null == l ? void 0 : l.application_id,
-                        y = null == b ? void 0 : b.id,
-                        F = (null == l ? void 0 : l.published) === !0,
-                        O = null == b ? void 0 : b.sku_id,
-                        P = (0, s.useStateFromStores)([h.default], () => null != y ? h.default.get(y) : null),
-                        R = (0, S.useApplication)(x),
-                        M = (0, S.useSubscriptionListingsForGroup)(E, {
+                        P = null == L ? void 0 : L.id,
+                        y = (null == l ? void 0 : l.published) === !0,
+                        O = null == L ? void 0 : L.sku_id,
+                        F = (0, s.useStateFromStores)([p.default], () => null != P ? p.default.get(P) : null),
+                        k = (0, S.useApplication)(x),
+                        R = (0, S.useSubscriptionListingsForGroup)(A, {
                             includeSoftDeleted: !0
                         }),
-                        U = M.map(e => e.subscription_plans[0].id),
+                        G = R.map(e => e.subscription_plans[0].id),
                         {
-                            analyticsLocations: j
-                        } = (0, c.default)(),
+                            analyticsLocations: M
+                        } = (0, d.default)(),
                         {
-                            activeSubscription: H,
-                            activeEntitlement: k
-                        } = (0, S.useActiveSubscriptionListingForApplication)(x, T),
-                        w = (0, S.useEligibleApplicationSubscriptionGuilds)(x, T),
-                        B = (0, d.default)(),
-                        D = null != l && (0, m.isApplicationUserSubscription)(l.sku_flags),
-                        G = null != k && k.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
-                        V = null == k || G,
-                        K = null == k || U.length > 1,
-                        z = null != T || w.length > 0,
-                        W = D && G,
-                        Z = null != P && null != R && V && K && (z || D) && !W;
-                    V ? z ? W && null != P && (n = C.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
-                        tierName: P.name
+                            activeSubscription: w,
+                            activeEntitlement: U
+                        } = (0, S.useActiveSubscriptionListingForApplication)(x, E),
+                        D = (0, S.useEligibleApplicationSubscriptionGuilds)(x, E),
+                        j = (0, c.default)(),
+                        H = null != l && (0, m.isApplicationUserSubscription)(l.sku_flags),
+                        B = null != U && U.userId === (null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
+                        V = null == U || B,
+                        K = null == U || G.length > 1,
+                        W = null != E || D.length > 0,
+                        z = H && B,
+                        Z = null != F && null != k && V && K && (W || H) && !z;
+                    V ? W ? z && null != F && (n = C.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
+                        tierName: F.name
                     })) : n = C.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = C.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
-                        F && null != O && B && o.default.wait(() => {
-                            (0, u.fetchSubscriptionPlansForSKU)(O)
+                        y && null != O && j && u.default.wait(() => {
+                            (0, o.fetchSubscriptionPlansForSKU)(O)
                         })
-                    }, [F, O, B]);
+                    }, [y, O, j]);
                     let Q = r.useCallback(() => {
-                        a(null != l, "No subscription listing"), a(null != R, "No application"), a(null != b, "No subscription plan"), a(F, "Cannot purchase this unpublished plan");
+                        a(null != l, "No subscription listing"), a(null != k, "No application"), a(null != L, "No subscription plan"), a(y, "Cannot purchase this unpublished plan");
                         let e = () => {
                             (0, f.openApplicationSubscriptionPaymentModal)({
-                                activeSubscription: H,
+                                activeSubscription: w,
                                 analyticsSubscriptionType: g.SubscriptionTypes.APPLICATION,
-                                analyticsLocations: j,
-                                analyticsLocation: A,
-                                renderHeader: (e, t, n) => (0, i.jsx)(I.PurchaseHeader, {
+                                analyticsLocations: M,
+                                analyticsLocation: T,
+                                renderHeader: (e, t, n) => (0, i.jsx)(_.PurchaseHeader, {
                                     step: n,
                                     onClose: () => t(!1)
                                 }),
-                                initialPlanId: b.id,
-                                skuId: b.sku_id,
-                                guildId: T,
-                                eligibleApplicationSubscriptionGuilds: w,
-                                planGroup: U,
+                                initialPlanId: L.id,
+                                skuId: L.sku_id,
+                                guildId: E,
+                                eligibleApplicationSubscriptionGuilds: D,
+                                planGroup: G,
                                 listing: l,
-                                application: R,
-                                showBenefitsFirst: v,
-                                onComplete: N,
-                                forcesTransitionToGuild: L
+                                application: k,
+                                showBenefitsFirst: b,
+                                onComplete: v,
+                                forcesTransitionToGuild: N
                             })
                         };
-                        !z && D ? (0, _.confirmNoSharedServerSubscribeWarningModal)({
-                            application: R,
+                        !W && H ? (0, I.confirmNoSharedServerSubscribeWarningModal)({
+                            application: k,
                             onConfirm: e,
                             onCancel: () => {}
                         }) : e()
-                    }, [F, l, b, U, R, T, z, D, j, A, H, v, w, N, L]);
+                    }, [y, l, L, G, k, E, W, H, M, T, w, b, D, v, N]);
                     return {
                         openModal: Q,
                         canOpenModal: Z,
@@ -792,14 +792,84 @@
                 }
             })
         },
+        635357: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                GiftContextProvider: function() {
+                    return _
+                },
+                useGiftContext: function() {
+                    return S
+                }
+            }), n("222007");
+            var i = n("37983"),
+                r = n("884691"),
+                l = n("210721"),
+                a = n("78345"),
+                s = n("53253"),
+                u = n("105097"),
+                o = n("659632"),
+                d = n("642906"),
+                c = n("782340");
+            let f = a.PremiumGiftStyles.STANDARD_BOX,
+                h = void 0,
+                [p, S, m] = (0, u.default)();
+
+            function _(e) {
+                let {
+                    isGift: t = !1,
+                    giftRecipient: n,
+                    giftMessage: u,
+                    children: S
+                } = e, {
+                    selectedSkuId: m
+                } = (0, d.usePaymentContext)(), _ = (0, o.shouldShowCustomGiftExperience)(n), I = (0, s.useIsSeasonalGiftingActive)(), {
+                    enabled: g
+                } = s.default.useExperiment({
+                    location: "PaymentContextProvider"
+                }, {
+                    autoTrackExposure: _ && I
+                }), [C, E] = r.useState(_ ? g && I ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : h), [A, T] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(n)) ? c.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : void 0), [b, v] = r.useState(void 0), [N, L] = r.useState(void 0), x = (0, o.useGetGiftCode)(m, t), [P, y] = r.useState(!1), [O, F] = r.useState(!1), [k, R] = r.useState(), G = r.useCallback(e => {
+                    let {
+                        onSubscriptionConfirmation: t
+                    } = e;
+                    return F(!0), (0, l.sendGiftMessage)(n, x).then(() => {
+                        F(!1), null == t || t(), y(!0)
+                    }).catch(e => {
+                        F(!1), R(e), y(!0)
+                    })
+                }, [n, x, F, y, R]);
+                return (0, i.jsx)(p.Provider, {
+                    value: {
+                        isGift: t,
+                        giftCode: x,
+                        giftMessage: u,
+                        giftRecipient: n,
+                        soundEffect: b,
+                        setSoundEffect: v,
+                        emojiConfetti: N,
+                        setEmojiConfetti: L,
+                        customGiftMessage: A,
+                        setCustomGiftMessage: T,
+                        selectedGiftStyle: C,
+                        setSelectedGiftStyle: E,
+                        sendGiftMessage: G,
+                        hasSentMessage: P,
+                        isSendingMessage: O,
+                        giftMessageError: k
+                    },
+                    children: S
+                })
+            }
+        },
         846286: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 openApplicationSubscriptionPaymentModal: function() {
-                    return S
+                    return m
                 },
                 openActivityApplicationPaymentModal: function() {
-                    return g
+                    return C
                 }
             });
             var i = n("37983");
@@ -808,92 +878,95 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("251472"),
-                o = n("55620"),
-                u = n("524503"),
-                c = n("186211"),
-                d = n("90592"),
+                u = n("55620"),
+                o = n("524503"),
+                d = n("186211"),
+                c = n("90592"),
                 f = n("651057"),
-                p = n("299285"),
-                h = n("49111");
+                h = n("299285"),
+                p = n("635357"),
+                S = n("49111");
 
-            function S(e) {
+            function m(e) {
                 let {
                     initialPlanId: t,
                     activeSubscription: r,
                     analyticsObject: l,
                     analyticsLocation: s,
-                    analyticsLocations: o,
-                    analyticsSubscriptionType: u,
-                    renderHeader: c,
-                    planGroup: d,
+                    analyticsLocations: u,
+                    analyticsSubscriptionType: o,
+                    renderHeader: d,
+                    planGroup: c,
                     skuId: f,
-                    guildId: p,
-                    reviewWarningMessage: S,
-                    listing: m,
+                    guildId: h,
+                    reviewWarningMessage: m,
+                    listing: _,
                     application: I,
-                    showBenefitsFirst: _,
-                    eligibleApplicationSubscriptionGuilds: g,
-                    onComplete: C,
-                    forcesTransitionToGuild: T
+                    showBenefitsFirst: g,
+                    eligibleApplicationSubscriptionGuilds: C,
+                    onComplete: E,
+                    forcesTransitionToGuild: A
                 } = e;
                 (0, a.openModalLazy)(async () => {
                     let {
                         PaymentContextProvider: e
                     } = await n.el("642906").then(n.bind(n, "642906")), a = (await n.el("452113").then(n.bind(n, "452113"))).default, {
-                        getApplicationSubscriptionPaymentSteps: h
-                    } = await n.el("590749").then(n.bind(n, "590749")), E = h({
-                        guildId: p,
+                        getApplicationSubscriptionPaymentSteps: S
+                    } = await n.el("590749").then(n.bind(n, "590749")), T = S({
+                        guildId: h,
                         application: I,
-                        listing: m,
-                        showBenefitsFirst: _,
-                        eligibleApplicationSubscriptionGuilds: g
+                        listing: _,
+                        showBenefitsFirst: g,
+                        eligibleApplicationSubscriptionGuilds: C
                     });
                     return n => (0, i.jsx)(e, {
                         applicationId: I.id,
                         activeSubscription: r,
-                        stepConfigs: E,
+                        stepConfigs: T,
                         skuIDs: [f],
-                        children: (0, i.jsx)(a, {
-                            ...n,
-                            initialPlanId: t,
-                            skuId: f,
-                            analyticsLocations: o,
-                            analyticsObject: l,
-                            analyticsLocation: s,
-                            analyticsSubscriptionType: u,
-                            renderHeader: c,
-                            planGroup: d,
-                            reviewWarningMessage: S,
-                            applicationId: I.id,
-                            guildId: null != p ? p : void 0,
-                            onComplete: C,
-                            forcesTransitionToGuild: T
+                        children: (0, i.jsx)(p.GiftContextProvider, {
+                            children: (0, i.jsx)(a, {
+                                ...n,
+                                initialPlanId: t,
+                                skuId: f,
+                                analyticsLocations: u,
+                                analyticsObject: l,
+                                analyticsLocation: s,
+                                analyticsSubscriptionType: o,
+                                renderHeader: d,
+                                planGroup: c,
+                                reviewWarningMessage: m,
+                                applicationId: I.id,
+                                guildId: null != h ? h : void 0,
+                                onComplete: E,
+                                forcesTransitionToGuild: A
+                            })
                         })
                     })
                 }, {
-                    onCloseRequest: h.NOOP
+                    onCloseRequest: S.NOOP
                 })
             }
-            let m = async e => {
-                let t = p.default.getApplication(e);
+            let _ = async e => {
+                let t = h.default.getApplication(e);
                 if (null != t) return t;
                 await f.default.fetchApplications([e], !1);
-                let n = p.default.getApplication(e);
+                let n = h.default.getApplication(e);
                 return l(null != n, "Failed to find application with ID %s", e), n
             }, I = async e => {
-                let t = c.default.getSubscriptionGroupListingForApplication(e);
+                let t = d.default.getSubscriptionGroupListingForApplication(e);
                 if (null != t) return t;
-                let n = await (0, o.fetchAllStoreListingsForApplication)(e),
-                    i = n.find(e => e.sku.type === h.SKUTypes.SUBSCRIPTION_GROUP);
-                l(null != i, "Failed to find subscription store listing"), await (0, u.fetchAllSubscriptionListingsDataForApplication)(e, null == i ? void 0 : i.id);
-                let r = c.default.getSubscriptionGroupListingForApplication(e);
+                let n = await (0, u.fetchAllStoreListingsForApplication)(e),
+                    i = n.find(e => e.sku.type === S.SKUTypes.SUBSCRIPTION_GROUP);
+                l(null != i, "Failed to find subscription store listing"), await (0, o.fetchAllSubscriptionListingsDataForApplication)(e, null == i ? void 0 : i.id);
+                let r = d.default.getSubscriptionGroupListingForApplication(e);
                 return l(null != r, "Failed to find subscription group listing"), r
-            }, _ = async (e, t) => {
+            }, g = async (e, t) => {
                 let n = await (0, s.fetchUserEntitlementsForApplication)(e),
                     i = n.find(e => e.sku_id === t);
                 l(null == i, "User already has an active subscription to this SKU")
             };
-            async function g(e) {
+            async function C(e) {
                 let {
                     applicationId: t,
                     skuId: n,
@@ -901,26 +974,26 @@
                     analyticsLocationObject: r,
                     analyticsLocations: a,
                     renderHeader: s
-                } = e, o = await m(t), u = await I(t), c = (0, d.getPayableSubscriptionListing)(u);
-                l(null != c, "Failed to find subscription listing");
-                let f = (0, d.isApplicationUserSubscription)(c.sku_flags);
-                l(f, "Guild application subscriptions unsupported!"), l(c.published, "Subscription listing not published"), await _(t, n);
-                let p = {
-                    initialPlanId: null != i ? i : null == c ? void 0 : c.subscription_plans[0].id,
+                } = e, u = await _(t), o = await I(t), d = (0, c.getPayableSubscriptionListing)(o);
+                l(null != d, "Failed to find subscription listing");
+                let f = (0, c.isApplicationUserSubscription)(d.sku_flags);
+                l(f, "Guild application subscriptions unsupported!"), l(d.published, "Subscription listing not published"), await g(t, n);
+                let h = {
+                    initialPlanId: null != i ? i : null == d ? void 0 : d.subscription_plans[0].id,
                     activeSubscription: null,
                     analyticsLocations: a,
                     analyticsLocationObject: r,
-                    analyticsSubscriptionType: h.SubscriptionTypes.APPLICATION,
+                    analyticsSubscriptionType: S.SubscriptionTypes.APPLICATION,
                     renderHeader: s,
-                    planGroup: u.subscription_listings_ids,
+                    planGroup: o.subscription_listings_ids,
                     skuId: n,
                     guildId: null,
                     eligibleApplicationSubscriptionGuilds: [],
                     showBenefitsFirst: !1,
-                    application: o,
-                    listing: c
+                    application: u,
+                    listing: d
                 };
-                S(p)
+                m(h)
             }
         },
         159149: function(e, t, n) {
@@ -930,17 +1003,17 @@
                     return r
                 },
                 default: function() {
-                    return p
+                    return h
                 }
             });
             var i, r, l = n("37983");
             n("884691");
             var a = n("77078"),
                 s = n("145131"),
-                o = n("181114"),
-                u = n("376641"),
-                c = n("782340"),
-                d = n("198699");
+                u = n("181114"),
+                o = n("376641"),
+                d = n("782340"),
+                c = n("198699");
             (i = r || (r = {}))[i.CONTINUE = 0] = "CONTINUE", i[i.UPGRADE = 1] = "UPGRADE", i[i.PURCHASE = 2] = "PURCHASE";
             let f = e => {
                 let {
@@ -949,65 +1022,65 @@
                     primaryIcon: i,
                     primaryCTA: r,
                     primaryType: f,
-                    primaryText: p,
-                    primaryTooltip: h,
+                    primaryText: h,
+                    primaryTooltip: p,
                     primaryDisabled: S,
                     primarySubmitting: m,
-                    onPrimary: I,
-                    secondaryText: _,
+                    onPrimary: _,
+                    secondaryText: I,
                     onSecondary: g
                 } = e;
                 return (0, l.jsxs)(a.ModalFooter, {
                     justify: s.default.Justify.BETWEEN,
                     align: s.default.Align.CENTER,
                     children: [(() => {
-                        if (null == r || null == p) return null;
-                        let e = 2 === r ? o.default : a.Button,
+                        if (null == r || null == h) return null;
+                        let e = 2 === r ? u.default : a.Button,
                             t = {
-                                innerClassName: d.button,
+                                innerClassName: c.button,
                                 type: f,
                                 disabled: S,
                                 submitting: m,
                                 color: 0 === r ? a.Button.Colors.BRAND : a.Button.Colors.GREEN,
-                                onClick: I
+                                onClick: _
                             };
-                        return null != h ? (0, l.jsx)(a.Tooltip, {
-                            text: h,
+                        return null != p ? (0, l.jsx)(a.Tooltip, {
+                            text: p,
                             children: n => (0, l.jsxs)(e, {
                                 ...n,
                                 ...t,
                                 children: [null == i ? null : (0, l.jsx)(i, {
-                                    className: d.primaryIcon
-                                }), p]
+                                    className: c.primaryIcon
+                                }), h]
                             })
                         }) : (0, l.jsxs)(e, {
                             ...t,
                             children: [null == i ? null : (0, l.jsx)(i, {
-                                className: d.primaryIcon
-                            }), p]
+                                className: c.primaryIcon
+                            }), h]
                         })
-                    })(), null == _ ? null : (0, l.jsx)(a.Button, {
+                    })(), null == I ? null : (0, l.jsx)(a.Button, {
                         color: a.Button.Colors.PRIMARY,
                         look: a.Button.Looks.LINK,
                         onClick: g,
-                        children: _
-                    }), (0, l.jsx)(u.default, {}), null == t ? null : (0, l.jsx)(a.Button, {
-                        className: d.back,
+                        children: I
+                    }), (0, l.jsx)(o.default, {}), null == t ? null : (0, l.jsx)(a.Button, {
+                        className: c.back,
                         color: a.Button.Colors.PRIMARY,
                         look: a.Button.Looks.LINK,
                         onClick: t,
-                        children: null != n ? n : c.default.Messages.BACK
+                        children: null != n ? n : d.default.Messages.BACK
                     })]
                 })
             };
             f.CTAType = r;
-            var p = f
+            var h = f
         },
         376641: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return c
                 }
             });
             var i = n("37983");
@@ -1016,35 +1089,385 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("600785"),
-                o = n("782340"),
-                u = n("980638"),
-                c = n("173791");
+                u = n("782340"),
+                o = n("980638"),
+                d = n("173791");
 
-            function d() {
+            function c() {
                 return (0, i.jsxs)("div", {
-                    className: l(u.paymentModalLockIcon, c.flex, c.alignCenter),
+                    className: l(o.paymentModalLockIcon, d.flex, d.alignCenter),
                     children: [(0, i.jsx)(s.default, {
-                        className: u.lockIcon,
+                        className: o.lockIcon,
                         width: 18,
                         height: 18
                     }), (0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
-                        children: o.default.Messages.BILLING_SECURE
+                        children: u.default.Messages.BILLING_SECURE
                     })]
                 })
             }
+        },
+        210721: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                AnimationState: function() {
+                    return i
+                },
+                getGiftAnimationData: function() {
+                    return h
+                },
+                sendGiftMessage: function() {
+                    return p
+                }
+            }), n("70102");
+            var i, r, l = n("627445"),
+                a = n.n(l),
+                s = n("450911"),
+                u = n("819689"),
+                o = n("884351"),
+                d = n("42203"),
+                c = n("659632"),
+                f = n("78345");
+            (r = i || (i = {})).ACTION = "action", r.LOOP = "loop", r.IDLE = "idle";
+            let h = (e, t) => {
+                    let i;
+                    switch (e) {
+                        case f.PremiumGiftStyles.SNOWGLOBE:
+                            i = () => n.el("452661").then(n.t.bind(n, "452661", 19)).then(e => {
+                                let {
+                                    default: t
+                                } = e;
+                                return t
+                            });
+                            break;
+                        case f.PremiumGiftStyles.BOX:
+                            i = () => n.el("726871").then(n.t.bind(n, "726871", 19)).then(e => {
+                                let {
+                                    default: t
+                                } = e;
+                                return t
+                            });
+                            break;
+                        case f.PremiumGiftStyles.CUP:
+                            i = () => n.el("544929").then(n.t.bind(n, "544929", 19)).then(e => {
+                                let {
+                                    default: t
+                                } = e;
+                                return t
+                            });
+                            break;
+                        case f.PremiumGiftStyles.STANDARD_BOX:
+                            switch (t) {
+                                case "idle":
+                                    i = () => n.el("973372").then(n.t.bind(n, "973372", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                case "loop":
+                                    i = () => n.el("353540").then(n.t.bind(n, "353540", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                default:
+                                    i = () => n.el("303473").then(n.t.bind(n, "303473", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    })
+                            }
+                            break;
+                        case f.PremiumGiftStyles.CAKE:
+                            switch (t) {
+                                case "idle":
+                                    i = () => n.el("127891").then(n.t.bind(n, "127891", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                case "loop":
+                                    i = () => n.el("953820").then(n.t.bind(n, "953820", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                default:
+                                    i = () => n.el("311972").then(n.t.bind(n, "311972", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    })
+                            }
+                            break;
+                        case f.PremiumGiftStyles.CHEST:
+                            switch (t) {
+                                case "idle":
+                                    i = () => n.el("269055").then(n.t.bind(n, "269055", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                case "loop":
+                                    i = () => n.el("120467").then(n.t.bind(n, "120467", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                default:
+                                    i = () => n.el("451680").then(n.t.bind(n, "451680", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    })
+                            }
+                            break;
+                        case f.PremiumGiftStyles.COFFEE:
+                            switch (t) {
+                                case "idle":
+                                    i = () => n.el("863089").then(n.t.bind(n, "863089", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                case "loop":
+                                    i = () => n.el("949233").then(n.t.bind(n, "949233", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                default:
+                                    i = () => n.el("361896").then(n.t.bind(n, "361896", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    })
+                            }
+                            break;
+                        case f.PremiumGiftStyles.SEASONAL_STANDARD_BOX:
+                            switch (t) {
+                                case "idle":
+                                    i = () => n.el("158302").then(n.t.bind(n, "158302", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                case "loop":
+                                    i = () => n.el("610146").then(n.t.bind(n, "610146", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                default:
+                                    i = () => n.el("294569").then(n.t.bind(n, "294569", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    })
+                            }
+                            break;
+                        case f.PremiumGiftStyles.SEASONAL_CAKE:
+                            switch (t) {
+                                case "idle":
+                                    i = () => n.el("124416").then(n.t.bind(n, "124416", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                case "loop":
+                                    i = () => n.el("335900").then(n.t.bind(n, "335900", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                default:
+                                    i = () => n.el("566748").then(n.t.bind(n, "566748", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    })
+                            }
+                            break;
+                        case f.PremiumGiftStyles.SEASONAL_CHEST:
+                            switch (t) {
+                                case "idle":
+                                    i = () => n.el("846577").then(n.t.bind(n, "846577", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                case "loop":
+                                    i = () => n.el("355472").then(n.t.bind(n, "355472", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                default:
+                                    i = () => n.el("262001").then(n.t.bind(n, "262001", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    })
+                            }
+                            break;
+                        case f.PremiumGiftStyles.SEASONAL_COFFEE:
+                            switch (t) {
+                                case "idle":
+                                    i = () => n.el("836477").then(n.t.bind(n, "836477", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                case "loop":
+                                    i = () => n.el("737995").then(n.t.bind(n, "737995", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    });
+                                    break;
+                                default:
+                                    i = () => n.el("433750").then(n.t.bind(n, "433750", 19)).then(e => {
+                                        let {
+                                            default: t
+                                        } = e;
+                                        return t
+                                    })
+                            }
+                            break;
+                        default:
+                            i = () => Promise.resolve("Error: Invalid giftStyle")
+                    }
+                    return i
+                },
+                p = async (e, t) => {
+                    if (null == t) throw Error("giftCode must be defined");
+                    if (null == e) throw Error("Recipient must be defined");
+                    let n = await s.default.openPrivateChannel(e.id).then(e => {
+                            let t = d.default.getChannel(e);
+                            if (a(null != t, "PrivateChannel is null"), null == t) throw Error("Channel must be defined");
+                            return t
+                        }),
+                        i = (0, c.getGiftCodeURL)(t);
+                    return u.default.sendMessage(n.id, o.default.parse(n, i), void 0, {
+                        isGiftLinkSentOnBehalfOfUser: !0
+                    })
+                }
+        },
+        53253: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                SeasonalGiftingMarketingExperiment: function() {
+                    return c
+                },
+                useIsSeasonalGiftingActive: function() {
+                    return f
+                },
+                default: function() {
+                    return h
+                }
+            }), n("222007");
+            var i = n("884691"),
+                r = n("866227"),
+                l = n.n(r),
+                a = n("862337"),
+                s = n("296892");
+            let u = new Date("2024-01-01T07:59:59.000Z"),
+                o = l(u),
+                d = (0, s.default)({
+                    id: "2023-11_seasonal_gifting",
+                    label: "Seasonal Gifting 2023",
+                    kind: "user",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                c = (0, s.default)({
+                    id: "2023-11_seasonal_gifting_marketing_2023",
+                    label: "Seasonal Gifting Marketing 2023",
+                    kind: "user",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                });
+
+            function f() {
+                let [e, t] = i.useState(() => o.isAfter(Date.now()));
+                return i.useEffect(() => {
+                    let n = new a.Timeout,
+                        i = () => {
+                            let e = o.diff(Date.now(), "millisecond");
+                            null == n || n.start(e, () => {
+                                o.isBefore(Date.now()) ? t(!1) : i()
+                            })
+                        };
+                    return e && i(), () => n.stop()
+                }), e
+            }
+            var h = d
         },
         970755: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 fetchApplicationsShelf: function() {
-                    return o
-                },
-                fetchPrivateChannelIntegrations: function() {
                     return u
                 },
+                fetchPrivateChannelIntegrations: function() {
+                    return o
+                },
                 deletePrivateChannelIntegration: function() {
-                    return c
+                    return d
                 }
             }), n("70102"), n("746379");
             var i = n("981980"),
@@ -1055,7 +1478,7 @@
                 s = n("49111");
             n("843455"), n("782340");
 
-            function o() {
+            function u() {
                 a.default.getApplicationsShelfFetchState() === a.FetchState.NOT_FETCHED && (l.default.dispatch({
                     type: "APPLICATIONS_SHELF_FETCH_START"
                 }), r.default.get(s.Endpoints.APPLICATIONS_SHELF).then(e => l.default.dispatch({
@@ -1066,7 +1489,7 @@
                 })))
             }
 
-            function u(e) {
+            function o(e) {
                 let t = new i.default(1e3, 5e3);
                 l.default.dispatch({
                     type: "FETCH_PRIVATE_CHANNEL_INTEGRATIONS_START",
@@ -1089,7 +1512,7 @@
                 })
             }
 
-            function c(e, t) {
+            function d(e, t) {
                 return r.default.delete(s.Endpoints.CHANNEL_INTEGRATION(e, t)).then(e => {
                     var t;
                     if (null === (t = e.body) || void 0 === t ? void 0 : t.message) throw Error(e.body.message)
@@ -1100,7 +1523,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 usePrivateChannelIntegrationState: function() {
-                    return u
+                    return o
                 }
             }), n("222007");
             var i = n("884691"),
@@ -1108,35 +1531,35 @@
                 l = n("201155"),
                 a = n("21121"),
                 s = n("970755"),
-                o = n("140596");
+                u = n("140596");
 
-            function u(e) {
+            function o(e) {
                 let {
                     channelId: t
                 } = e;
                 (0, a.useInMainTabsExperiment)();
                 let n = (0, l.useShowApplicationInGDM)(t),
                     {
-                        installedIntegrations: u,
-                        applicationsShelf: c,
-                        integrationsFetchState: d,
+                        installedIntegrations: o,
+                        applicationsShelf: d,
+                        integrationsFetchState: c,
                         applicationsShelfFetchState: f
-                    } = (0, r.useStateFromStoresObject)([o.default], () => ({
-                        installedIntegrations: o.default.getIntegrations(t),
-                        applicationsShelf: o.default.getApplicationsShelf(),
-                        integrationsFetchState: o.default.getIntegrationsFetchState(t),
-                        applicationsShelfFetchState: o.default.getApplicationsShelfFetchState()
+                    } = (0, r.useStateFromStoresObject)([u.default], () => ({
+                        installedIntegrations: u.default.getIntegrations(t),
+                        applicationsShelf: u.default.getApplicationsShelf(),
+                        integrationsFetchState: u.default.getIntegrationsFetchState(t),
+                        applicationsShelfFetchState: u.default.getApplicationsShelfFetchState()
                     }));
                 i.useEffect(() => {
-                    n && ((d === o.FetchState.NOT_FETCHED || d === o.FetchState.FETCH_FAILED) && (0, s.fetchPrivateChannelIntegrations)(t), (f === o.FetchState.NOT_FETCHED || f === o.FetchState.FETCH_FAILED) && (0, s.fetchApplicationsShelf)())
-                }, [n, t, d, f]);
-                let p = new Set(u.map(e => e.application.id)),
-                    h = c.filter(e => !p.has(e.id));
+                    n && ((c === u.FetchState.NOT_FETCHED || c === u.FetchState.FETCH_FAILED) && (0, s.fetchPrivateChannelIntegrations)(t), (f === u.FetchState.NOT_FETCHED || f === u.FetchState.FETCH_FAILED) && (0, s.fetchApplicationsShelf)())
+                }, [n, t, c, f]);
+                let h = new Set(o.map(e => e.application.id)),
+                    p = d.filter(e => !h.has(e.id));
                 return {
-                    installedIntegrations: u,
-                    availableApplications: h,
-                    applicationsShelf: c,
-                    fetched: d !== o.FetchState.NOT_FETCHED && d !== o.FetchState.FETCHING && f !== o.FetchState.NOT_FETCHED && f !== o.FetchState.FETCHING,
+                    installedIntegrations: o,
+                    availableApplications: p,
+                    applicationsShelf: d,
+                    fetched: c !== u.FetchState.NOT_FETCHED && c !== u.FetchState.FETCHING && f !== u.FetchState.NOT_FETCHED && f !== u.FetchState.FETCHING,
                     appsInGDMEnabled: n
                 }
             }
@@ -1210,21 +1633,21 @@
                 l = n("913144"),
                 a = n("915639"),
                 s = n("928460"),
-                o = n("449008");
-            let u = {},
-                c = {},
+                u = n("449008");
+            let o = {},
                 d = {},
+                c = {},
                 f = {};
 
-            function p(e) {
+            function h(e) {
                 let t = e.id,
                     n = e.sku.id,
-                    i = u[t],
+                    i = o[t],
                     r = s.default.createFromServer(e);
-                !(null != i && !i.isSlimDirectoryVersion() && r.isSlimDirectoryVersion()) && (!1 === e.published ? (null == d[n] && (d[n] = new Set), d[n].add(t)) : f[n] = t, u[t] = r)
+                !(null != i && !i.isSlimDirectoryVersion() && r.isSlimDirectoryVersion()) && (!1 === e.published ? (null == c[n] && (c[n] = new Set), c[n].add(t)) : f[n] = t, o[t] = r)
             }
 
-            function h(e, t) {
+            function p(e, t) {
                 return "".concat(e, ":").concat(t)
             }
 
@@ -1232,34 +1655,34 @@
                 let {
                     storeListings: t
                 } = e;
-                for (let e of t) p(e)
+                for (let e of t) h(e)
             }
 
             function m() {
-                u = {}, f = {}, d = {}, c = {}
+                o = {}, f = {}, c = {}, d = {}
             }
 
-            function I() {
+            function _() {
                 if (i === a.default.locale) return !1;
                 m(), i = a.default.locale
             }
-            class _ extends r.default.Store {
+            class I extends r.default.Store {
                 initialize() {
-                    this.waitFor(a.default), this.syncWith([a.default], I), i = a.default.locale
+                    this.waitFor(a.default), this.syncWith([a.default], _), i = a.default.locale
                 }
                 get(e) {
-                    return u[e]
+                    return o[e]
                 }
                 getForSKU(e, t) {
                     let n = f[e];
-                    return null != t ? c[h(t, e)] : null != n ? u[n] : null
+                    return null != t ? d[p(t, e)] : null != n ? o[n] : null
                 }
                 getUnpublishedForSKU(e) {
-                    let t = d[e];
-                    return null == t ? [] : Array.from(t).map(e => u[e]).filter(o.isNotNullish)
+                    let t = c[e];
+                    return null == t ? [] : Array.from(t).map(e => o[e]).filter(u.isNotNullish)
                 }
                 getForChannel(e, t) {
-                    return c[h(e, t)]
+                    return d[p(e, t)]
                 }
                 getStoreListing(e) {
                     let {
@@ -1281,8 +1704,8 @@
                     return null
                 }
             }
-            _.displayName = "StoreListingStore";
-            var g = new _(l.default, {
+            I.displayName = "StoreListingStore";
+            var g = new I(l.default, {
                 STORE_LISTINGS_FETCH_SUCCESS: S,
                 APPLICATION_STORE_DIRECTORY_FETCH_SUCCESS: S,
                 STORE_LISTING_FETCH_SUCCESS: function(e) {
@@ -1292,17 +1715,17 @@
                     } = e;
                     if (null != n) {
                         let e = s.default.createFromServer(t);
-                        c[h(n, e.skuId)] = e, f[e.skuId] = e.id
-                    } else p(t)
+                        d[p(n, e.skuId)] = e, f[e.skuId] = e.id
+                    } else h(t)
                 },
-                USER_SETTINGS_PROTO_UPDATE: I,
+                USER_SETTINGS_PROTO_UPDATE: _,
                 APPLICATION_STORE_CLEAR_DATA: m,
                 GIFT_CODE_RESOLVE_SUCCESS: function(e) {
                     let {
                         giftCode: t
                     } = e;
                     if (null == t.store_listing) return !1;
-                    p(t.store_listing)
+                    h(t.store_listing)
                 }
             })
         },
@@ -1337,52 +1760,52 @@
                     return i
                 },
                 default: function() {
-                    return d
+                    return c
                 }
             }), n("70102");
             var i, r, l = n("37983");
             n("884691");
             var a = n("414456"),
                 s = n.n(a),
-                o = n("75196"),
-                u = n("741460");
+                u = n("75196"),
+                o = n("741460");
             (r = i || (i = {})).LEFT = "LEFT", r.RIGHT = "RIGHT", r.UP = "UP", r.DOWN = "DOWN", r.UP_LEFT = "UP_LEFT", r.DOWN_RIGHT = "DOWN_RIGHT";
-            let c = e => {
+            let d = e => {
                 let {
                     width: t = 24,
                     height: n = 24,
                     color: i = "currentColor",
                     direction: r,
                     foreground: a,
-                    className: c,
-                    title: d,
+                    className: d,
+                    title: c,
                     ...f
                 } = e;
                 return (0, l.jsxs)("svg", {
-                    ...(0, o.default)(f),
+                    ...(0, u.default)(f),
                     width: t,
                     height: n,
-                    className: s(c, function(e) {
+                    className: s(d, function(e) {
                         switch (e) {
                             case "LEFT":
-                                return u.left;
+                                return o.left;
                             case "RIGHT":
-                                return u.right;
+                                return o.right;
                             case "UP":
                                 return null;
                             case "DOWN":
-                                return u.down;
+                                return o.down;
                             case "UP_LEFT":
-                                return u.upLeft;
+                                return o.upLeft;
                             case "DOWN_RIGHT":
-                                return u.downRight;
+                                return o.downRight;
                             default:
                                 throw Error("Invalid Direction ".concat(e))
                         }
                     }(r)),
                     viewBox: "0 0 24 24",
-                    children: [null != d ? (0, l.jsx)("title", {
-                        children: d
+                    children: [null != c ? (0, l.jsx)("title", {
+                        children: c
                     }) : null, (0, l.jsx)("polygon", {
                         className: a,
                         fill: i,
@@ -1391,8 +1814,8 @@
                     })]
                 })
             };
-            c.Directions = i;
-            var d = c
+            d.Directions = i;
+            var c = d
         },
         600785: function(e, t, n) {
             "use strict";
@@ -1469,10 +1892,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 canInstallApplication: function() {
-                    return u
+                    return o
                 },
                 installApplication: function() {
-                    return c
+                    return d
                 }
             });
             var i = n("394846"),
@@ -1480,47 +1903,47 @@
                 l = n("33942"),
                 a = n("599110"),
                 s = n("128259"),
-                o = n("49111");
+                u = n("49111");
 
-            function u(e, t, n) {
+            function o(e, t, n) {
                 return null != t || null != n
             }
 
-            function c(e) {
+            function d(e) {
                 let {
                     applicationId: t,
                     customInstallUrl: n,
-                    installParams: u,
-                    guildId: c,
-                    channelId: d,
+                    installParams: o,
+                    guildId: d,
+                    channelId: c,
                     disableGuildSelect: f,
-                    source: p
+                    source: h
                 } = e;
-                if (null != n) return a.default.track(o.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                if (null != n) return a.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
                     application_id: t,
-                    guild_id: c,
+                    guild_id: d,
                     auth_type: "custom_url",
-                    source: p,
+                    source: h,
                     device_platform: i.isMobile ? "mobile_web" : "desktop_web"
                 }), (0, s.handleClick)({
                     href: n
                 });
-                null != u && (a.default.track(o.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                null != o && (a.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
                     application_id: t,
-                    guild_id: c,
+                    guild_id: d,
                     auth_type: "in_app",
-                    source: p,
+                    source: h,
                     device_platform: i.isMobile ? "mobile_web" : "desktop_web"
                 }), (0, l.openOAuth2Modal)({
-                    guildId: c,
+                    guildId: d,
                     clientId: t,
-                    scopes: u.scopes,
-                    channelId: d,
+                    scopes: o.scopes,
+                    channelId: c,
                     disableGuildSelect: f,
-                    permissions: null != u.permissions ? r.default.deserialize(u.permissions) : void 0
+                    permissions: null != o.permissions ? r.default.deserialize(o.permissions) : void 0
                 }))
             }
         }
     }
 ]);
-//# sourceMappingURL=3fa96f227706fe0a6ea8.js.map
+//# sourceMappingURL=deba39e943a03a109e21.js.map
