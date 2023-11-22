@@ -83864,6 +83864,68 @@ input::-webkit-inner-spin-button {
     margin-right: 2px
 }
 
+.modal_afddb7 {
+    border-radius: var(--radius-sm)
+}
+
+.modalContent__75434 {
+    display: flex;
+    top: -20px;
+    z-index: 1000;
+    flex-direction: row;
+    gap: 24px;
+    align-items: top;
+    border: none;
+    max-height: 480px
+}
+
+.header__91604 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: top;
+    border: none;
+    height: 120px;
+    background-image: url(/assets/dd4a336fd444ced6dd81.jpg)
+}
+
+.headerTitle__85106 {
+    display: flex;
+    margin: 0 30px
+}
+
+.headerSubtitle_e764a1 {
+    white-space: pre-line;
+    text-align: center
+}
+
+.checkItOutButton__8e57a {
+    padding: 0 30px
+}
+
+.closeButton__92830 {
+    z-index: 1000;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: var(--white-500)
+}
+
+.previewBody_a50037 {
+    padding-bottom: 12px !important
+}
+
+.listContainer_c178e5 {
+    margin: 0;
+    width: 256px
+}
+
+.title_febf25 {
+    padding-bottom: 8px
+}
+
 .giftButton_bb2551 {
     padding: 0 7px
 }
@@ -123496,4 +123558,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ddff7b40ac3b0f6c495d.css.map*/
+/*# sourceMappingURL=app.5d5cbb313d3963ac9375.css.map*/
