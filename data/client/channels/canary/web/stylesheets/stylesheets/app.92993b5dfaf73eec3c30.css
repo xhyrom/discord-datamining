@@ -103690,6 +103690,33 @@ html .invoiceCancelRow_a8669b {
     gap: 8px
 }
 
+.warningNotice__049bd {
+    margin-bottom: 20px;
+    padding: 20px
+}
+
+.userSettingsOverlayField_e88a0c {
+    margin-bottom: 20px
+}
+
+.enableOverlaySection__67fb9 {
+    display: flex;
+    gap: 20px
+}
+
+.enableOverlayItem__236f6 {
+    flex-basis: 50%
+}
+
+.enableSwitch_d9c054 {
+    margin-bottom: 20px;
+    margin-top: 16px
+}
+
+.notificationSection__179c3 {
+    margin-top: 40px
+}
+
 .notificationSettings__5d985 {
     max-width: 75%
 }
@@ -123460,4 +123487,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.30cf287129c0c061dade.css.map*/
+/*# sourceMappingURL=app.92993b5dfaf73eec3c30.css.map*/
