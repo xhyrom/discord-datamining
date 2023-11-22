@@ -53782,6 +53782,10 @@ html .progress__4ef76 {
     height: 80px
 }
 
+.theme-light .item_ecbedf {
+    background-color: var(--background-tertiary)
+}
+
 .container__0ec3c {
     background: var(--background-secondary);
     margin-left: 4px;
@@ -83922,8 +83926,7 @@ input::-webkit-inner-spin-button {
     background-size: cover;
     background-position: top;
     border: none;
-    height: 120px;
-    background-image: url(/assets/dd4a336fd444ced6dd81.jpg)
+    height: 120px
 }
 
 .headerTitle__85106 {
@@ -83940,12 +83943,15 @@ input::-webkit-inner-spin-button {
     padding: 0 30px
 }
 
+.checkItOutButtonText__67f24 {
+    color: white
+}
+
 .closeButton__92830 {
     z-index: 1000;
     position: absolute;
-    top: 12px;
-    right: 12px;
-    color: var(--white-500)
+    top: 20px;
+    right: 20px
 }
 
 .previewBody_a50037 {
@@ -83959,6 +83965,18 @@ input::-webkit-inner-spin-button {
 
 .title_febf25 {
     padding-bottom: 8px
+}
+
+.theme-dark .header__91604 {
+    background-image: url(/assets/dd4a336fd444ced6dd81.jpg)
+}
+
+.theme-light .header__91604 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #fff), url(/assets/dd4a336fd444ced6dd81.jpg)
+}
+
+.theme-light .closeButton__92830 {
+    color: var(--black-500)
 }
 
 .giftButton_bb2551 {
@@ -123613,4 +123631,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.96c2e27f1af3c70cad5b.css.map*/
+/*# sourceMappingURL=app.f4e71538c961fca0795e.css.map*/
