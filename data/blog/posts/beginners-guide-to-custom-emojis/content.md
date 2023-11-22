@@ -104,16 +104,6 @@
         </div>
     </div>
     <div id="heading-10" class="rich-wrapper">
-        <div class="blog-post-content w-richtext">
-            <h2><strong>What’s an “emoji pack?”</strong></h2>
-            <p>So, this is a relatively new feature that some larger servers on Discord have access to right now. You know those “emoji servers” we mentioned right above?&nbsp;</p>
-            <p>Imagine: instead of people having to join a community to use its emojis, those communities could bundle them up into a “pack” and allow them to be added by anyone, without having to join their server! Their lovely creations would be free to explore the universe — pretty rad, right? Well, now they can do that!&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6555101df8871d8c8fa94a26_yJHpIcFPL65vdBGj8FSrc0TR7CgOUkGLlHXjZO_dctwDkuKeT0t9E6ev-0Pg3dmONIJ_-yvKqCEO0EKl0aWpIqYvVW6mkCVStzjLRolqpI11Lih__L7hZXjBiJ3F-xR_xVBEtfywoFsJzI9hjse-9YQ.png" alt="A set of emojis in Discord. A prominent button says &quot;Add Pack&quot; under the preview of emojis."></div>
-            </figure>
-            <p>See an emoji you like? Next time, try clicking on it and look for a button that says “<strong>Add Pack</strong>!” That’ll let you “collect” the emoji without having to join the server. If their emojis truly speak to you, you can always press the “Join Server” button and see what the community behind those tiny icons is all about.&nbsp;&nbsp;</p>
-            <p>Not every server can have its emojis collected, and servers that qualify can still opt out of being collectible for non-members. Because sometimes, that emoji of your friend’s face in an embarrassing expression is best kept for your friends. <em>Sometimes.</em></p>
-            <p>Everyone can add one emoji pack they really connect with to their repertoire, while Nitro members can collect up to 100 packs from servers they aren’t a part of.&nbsp;</p>
-        </div>
+        <div class="blog-post-content w-dyn-bind-empty w-richtext"></div>
     </div>
 </div>
