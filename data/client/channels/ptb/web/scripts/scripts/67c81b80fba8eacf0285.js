@@ -22,10 +22,10 @@
                     return f
                 },
                 fetchStoreListingById: function() {
-                    return h
+                    return p
                 },
                 fetchStoreListingForApplication: function() {
-                    return p
+                    return h
                 },
                 matureAgree: function() {
                     return S
@@ -81,7 +81,7 @@
                 })
             }
 
-            function h(e) {
+            function p(e) {
                 return (0, o.httpGetWithCountryCodeQuery)(d.Endpoints.STORE_LISTING(e)).then(e => {
                     r.default.dispatch({
                         type: "STORE_LISTING_FETCH_SUCCESS",
@@ -90,7 +90,7 @@
                 })
             }
 
-            function p(e) {
+            function h(e) {
                 return (0, o.httpGetWithCountryCodeQuery)(d.Endpoints.STORE_PUBLISHED_LISTINGS_APPLICATION(e)).then(e => {
                     r.default.dispatch({
                         type: "STORE_LISTING_FETCH_SUCCESS",
@@ -250,10 +250,10 @@
                     return f
                 },
                 ApplicationBenefitsModalDescription: function() {
-                    return h
+                    return p
                 },
                 ApplicationBenefitsModalBenefits: function() {
-                    return p
+                    return h
                 },
                 ApplicationBenefitsModalContent: function() {
                     return S
@@ -303,7 +303,7 @@
                     className: o.divider
                 })
             }
-            let h = e => {
+            let p = e => {
                     let {
                         className: t,
                         title: n,
@@ -324,7 +324,7 @@
                         })]
                     })
                 },
-                p = e => {
+                h = e => {
                     let {
                         benefits: t,
                         className: n,
@@ -448,8 +448,8 @@
                 d = n("829805"),
                 c = n("425480"),
                 f = n("782340"),
-                h = n("370184"),
-                p = n("137852"),
+                p = n("370184"),
+                h = n("137852"),
                 S = n("511117");
             let m = e => {
                     let {
@@ -457,21 +457,21 @@
                         onClose: n
                     } = e, s = (0, l.default)(c.RESPONSIVE_MOBILE_HEIGHT_SMALL_QUERY);
                     return t === a.Step.CONFIRM || t === a.Step.BENEFITS ? (0, i.jsx)("div", {}) : (0, i.jsxs)("div", {
-                        className: h.headerContainer,
+                        className: p.headerContainer,
                         children: [!s && (0, i.jsx)("div", {
-                            className: h.headerImageContainer,
+                            className: p.headerImageContainer,
                             "aria-hidden": "true",
                             children: (0, i.jsx)("img", {
                                 src: S,
                                 alt: "",
-                                className: h.headerImage
+                                className: p.headerImage
                             })
                         }), (0, i.jsx)(r.Clickable, {
-                            className: h.closeContainer,
+                            className: p.closeContainer,
                             onClick: () => n(),
                             "aria-label": f.default.Messages.CLOSE,
                             children: (0, i.jsx)(o.default, {
-                                className: h.closeIcon
+                                className: p.closeIcon
                             })
                         })]
                     })
@@ -485,7 +485,7 @@
                         description: a
                     } = e;
                     return null == n ? null : (0, i.jsx)("div", {
-                        className: h.confirmationContainer,
+                        className: p.confirmationContainer,
                         children: (0, i.jsxs)(d.ApplicationBenefitsModalContent, {
                             children: [(0, i.jsx)(d.ApplicationBenefitsModalIcon, {
                                 application: n,
@@ -509,21 +509,21 @@
                     subscription: l
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: h.purchaseConfirmation,
+                    className: p.purchaseConfirmation,
                     children: [(0, i.jsx)("img", {
-                        src: p,
+                        src: h,
                         alt: "",
                         width: 300,
                         height: 126
                     }), (0, i.jsx)(r.Heading, {
-                        className: h.confirmationTitle,
+                        className: p.confirmationTitle,
                         variant: "heading-xl/extrabold",
                         color: "header-primary",
                         children: f.default.Messages.APPLICATION_SUBSCRIPTION_PURCHASE_CONFIRMATION_TITLE.format({
                             tier: t.name
                         })
                     }), (0, i.jsx)(r.Text, {
-                        className: h.confirmationSubtitle,
+                        className: p.confirmationSubtitle,
                         variant: "text-md/medium",
                         color: "header-secondary",
                         children: f.default.Messages.APPLICATION_SUBSCRIPTION_PURCHASE_CONFIRMATION_SUBTITLE.format({
@@ -637,8 +637,8 @@
                 d = n("685665"),
                 c = n("598981"),
                 f = n("846286"),
-                h = n("697218"),
-                p = n("10514"),
+                p = n("697218"),
+                h = n("10514"),
                 S = n("650509"),
                 m = n("90592"),
                 _ = n("333955"),
@@ -661,7 +661,7 @@
                         P = null == L ? void 0 : L.id,
                         y = (null == l ? void 0 : l.published) === !0,
                         O = null == L ? void 0 : L.sku_id,
-                        F = (0, s.useStateFromStores)([p.default], () => null != P ? p.default.get(P) : null),
+                        F = (0, s.useStateFromStores)([h.default], () => null != P ? h.default.get(P) : null),
                         k = (0, S.useApplication)(x),
                         R = (0, S.useSubscriptionListingsForGroup)(A, {
                             includeSoftDeleted: !0
@@ -677,7 +677,7 @@
                         D = (0, S.useEligibleApplicationSubscriptionGuilds)(x, E),
                         j = (0, c.default)(),
                         H = null != l && (0, m.isApplicationUserSubscription)(l.sku_flags),
-                        B = null != U && U.userId === (null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
+                        B = null != U && U.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
                         V = null == U || B,
                         K = null == U || G.length > 1,
                         W = null != E || D.length > 0,
@@ -812,8 +812,8 @@
                 d = n("642906"),
                 c = n("782340");
             let f = a.PremiumGiftStyles.STANDARD_BOX,
-                h = void 0,
-                [p, S, m] = (0, u.default)();
+                p = void 0,
+                [h, S, m] = (0, u.default)();
 
             function _(e) {
                 let {
@@ -823,40 +823,41 @@
                     children: S
                 } = e, {
                     selectedSkuId: m
-                } = (0, d.usePaymentContext)(), _ = (0, o.shouldShowCustomGiftExperience)(n), I = (0, s.useIsSeasonalGiftingActive)(), {
-                    enabled: g
+                } = (0, d.usePaymentContext)(), [_, I] = r.useState(n), g = (0, o.shouldShowCustomGiftExperience)(_), C = (0, s.useIsSeasonalGiftingActive)(), {
+                    enabled: E
                 } = s.default.useExperiment({
                     location: "PaymentContextProvider"
                 }, {
-                    autoTrackExposure: _ && I
-                }), [C, E] = r.useState(_ ? g && I ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : h), [A, T] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(n)) ? c.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : void 0), [b, v] = r.useState(void 0), [N, L] = r.useState(void 0), x = (0, o.useGetGiftCode)(m, t), [P, y] = r.useState(!1), [O, F] = r.useState(!1), [k, R] = r.useState(), G = r.useCallback(e => {
+                    autoTrackExposure: g && C
+                }), [A, T] = r.useState(g ? E && C ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [b, v] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(_)) ? c.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [N, L] = r.useState(void 0), [x, P] = r.useState(void 0), y = (0, o.useGetGiftCode)(m, t), [O, F] = r.useState(!1), [k, R] = r.useState(!1), [G, M] = r.useState(), w = r.useCallback(e => {
                     let {
                         onSubscriptionConfirmation: t
                     } = e;
-                    return F(!0), (0, l.sendGiftMessage)(n, x).then(() => {
-                        F(!1), null == t || t(), y(!0)
+                    return R(!0), (0, l.sendGiftMessage)(_, y).then(() => {
+                        R(!1), null == t || t(), F(!0)
                     }).catch(e => {
-                        F(!1), R(e), y(!0)
+                        R(!1), M(e), F(!0)
                     })
-                }, [n, x, F, y, R]);
-                return (0, i.jsx)(p.Provider, {
+                }, [_, y, R, F, M]);
+                return (0, i.jsx)(h.Provider, {
                     value: {
                         isGift: t,
-                        giftCode: x,
+                        giftCode: y,
                         giftMessage: u,
-                        giftRecipient: n,
-                        soundEffect: b,
-                        setSoundEffect: v,
-                        emojiConfetti: N,
-                        setEmojiConfetti: L,
-                        customGiftMessage: A,
-                        setCustomGiftMessage: T,
-                        selectedGiftStyle: C,
-                        setSelectedGiftStyle: E,
-                        sendGiftMessage: G,
-                        hasSentMessage: P,
-                        isSendingMessage: O,
-                        giftMessageError: k
+                        giftRecipient: _,
+                        setGiftRecipient: I,
+                        soundEffect: N,
+                        setSoundEffect: L,
+                        emojiConfetti: x,
+                        setEmojiConfetti: P,
+                        customGiftMessage: b,
+                        setCustomGiftMessage: v,
+                        selectedGiftStyle: A,
+                        setSelectedGiftStyle: T,
+                        sendGiftMessage: w,
+                        hasSentMessage: O,
+                        isSendingMessage: k,
+                        giftMessageError: G
                     },
                     children: S
                 })
@@ -883,8 +884,8 @@
                 d = n("186211"),
                 c = n("90592"),
                 f = n("651057"),
-                h = n("299285"),
-                p = n("635357"),
+                p = n("299285"),
+                h = n("635357"),
                 S = n("49111");
 
             function m(e) {
@@ -898,7 +899,7 @@
                     renderHeader: d,
                     planGroup: c,
                     skuId: f,
-                    guildId: h,
+                    guildId: p,
                     reviewWarningMessage: m,
                     listing: _,
                     application: I,
@@ -913,7 +914,7 @@
                     } = await n.el("642906").then(n.bind(n, "642906")), a = (await n.el("452113").then(n.bind(n, "452113"))).default, {
                         getApplicationSubscriptionPaymentSteps: S
                     } = await n.el("590749").then(n.bind(n, "590749")), T = S({
-                        guildId: h,
+                        guildId: p,
                         application: I,
                         listing: _,
                         showBenefitsFirst: g,
@@ -924,7 +925,7 @@
                         activeSubscription: r,
                         stepConfigs: T,
                         skuIDs: [f],
-                        children: (0, i.jsx)(p.GiftContextProvider, {
+                        children: (0, i.jsx)(h.GiftContextProvider, {
                             children: (0, i.jsx)(a, {
                                 ...n,
                                 initialPlanId: t,
@@ -937,7 +938,7 @@
                                 planGroup: c,
                                 reviewWarningMessage: m,
                                 applicationId: I.id,
-                                guildId: null != h ? h : void 0,
+                                guildId: null != p ? p : void 0,
                                 onComplete: E,
                                 forcesTransitionToGuild: A
                             })
@@ -948,10 +949,10 @@
                 })
             }
             let _ = async e => {
-                let t = h.default.getApplication(e);
+                let t = p.default.getApplication(e);
                 if (null != t) return t;
                 await f.default.fetchApplications([e], !1);
-                let n = h.default.getApplication(e);
+                let n = p.default.getApplication(e);
                 return l(null != n, "Failed to find application with ID %s", e), n
             }, I = async e => {
                 let t = d.default.getSubscriptionGroupListingForApplication(e);
@@ -978,7 +979,7 @@
                 l(null != d, "Failed to find subscription listing");
                 let f = (0, c.isApplicationUserSubscription)(d.sku_flags);
                 l(f, "Guild application subscriptions unsupported!"), l(d.published, "Subscription listing not published"), await g(t, n);
-                let h = {
+                let p = {
                     initialPlanId: null != i ? i : null == d ? void 0 : d.subscription_plans[0].id,
                     activeSubscription: null,
                     analyticsLocations: a,
@@ -993,7 +994,7 @@
                     application: u,
                     listing: d
                 };
-                m(h)
+                m(p)
             }
         },
         159149: function(e, t, n) {
@@ -1003,7 +1004,7 @@
                     return r
                 },
                 default: function() {
-                    return h
+                    return p
                 }
             });
             var i, r, l = n("37983");
@@ -1022,8 +1023,8 @@
                     primaryIcon: i,
                     primaryCTA: r,
                     primaryType: f,
-                    primaryText: h,
-                    primaryTooltip: p,
+                    primaryText: p,
+                    primaryTooltip: h,
                     primaryDisabled: S,
                     primarySubmitting: m,
                     onPrimary: _,
@@ -1034,7 +1035,7 @@
                     justify: s.default.Justify.BETWEEN,
                     align: s.default.Align.CENTER,
                     children: [(() => {
-                        if (null == r || null == h) return null;
+                        if (null == r || null == p) return null;
                         let e = 2 === r ? u.default : a.Button,
                             t = {
                                 innerClassName: c.button,
@@ -1044,20 +1045,20 @@
                                 color: 0 === r ? a.Button.Colors.BRAND : a.Button.Colors.GREEN,
                                 onClick: _
                             };
-                        return null != p ? (0, l.jsx)(a.Tooltip, {
-                            text: p,
+                        return null != h ? (0, l.jsx)(a.Tooltip, {
+                            text: h,
                             children: n => (0, l.jsxs)(e, {
                                 ...n,
                                 ...t,
                                 children: [null == i ? null : (0, l.jsx)(i, {
                                     className: c.primaryIcon
-                                }), h]
+                                }), p]
                             })
                         }) : (0, l.jsxs)(e, {
                             ...t,
                             children: [null == i ? null : (0, l.jsx)(i, {
                                 className: c.primaryIcon
-                            }), h]
+                            }), p]
                         })
                     })(), null == I ? null : (0, l.jsx)(a.Button, {
                         color: a.Button.Colors.PRIMARY,
@@ -1074,7 +1075,7 @@
                 })
             };
             f.CTAType = r;
-            var h = f
+            var p = f
         },
         376641: function(e, t, n) {
             "use strict";
@@ -1114,10 +1115,10 @@
                     return i
                 },
                 getGiftAnimationData: function() {
-                    return h
+                    return p
                 },
                 sendGiftMessage: function() {
-                    return p
+                    return h
                 }
             }), n("70102");
             var i, r, l = n("627445"),
@@ -1129,7 +1130,7 @@
                 c = n("659632"),
                 f = n("78345");
             (r = i || (i = {})).ACTION = "action", r.LOOP = "loop", r.IDLE = "idle";
-            let h = (e, t) => {
+            let p = (e, t) => {
                     let i;
                     switch (e) {
                         case f.PremiumGiftStyles.SNOWGLOBE:
@@ -1377,7 +1378,7 @@
                     }
                     return i
                 },
-                p = async (e, t) => {
+                h = async (e, t) => {
                     if (null == t) throw Error("giftCode must be defined");
                     if (null == e) throw Error("Recipient must be defined");
                     let n = await s.default.openPrivateChannel(e.id).then(e => {
@@ -1401,7 +1402,7 @@
                     return f
                 },
                 default: function() {
-                    return h
+                    return p
                 }
             }), n("222007");
             var i = n("884691"),
@@ -1455,7 +1456,7 @@
                     return e && i(), () => n.stop()
                 }), e
             }
-            var h = d
+            var p = d
         },
         970755: function(e, t, n) {
             "use strict";
@@ -1553,11 +1554,11 @@
                 i.useEffect(() => {
                     n && ((c === u.FetchState.NOT_FETCHED || c === u.FetchState.FETCH_FAILED) && (0, s.fetchPrivateChannelIntegrations)(t), (f === u.FetchState.NOT_FETCHED || f === u.FetchState.FETCH_FAILED) && (0, s.fetchApplicationsShelf)())
                 }, [n, t, c, f]);
-                let h = new Set(o.map(e => e.application.id)),
-                    p = d.filter(e => !h.has(e.id));
+                let p = new Set(o.map(e => e.application.id)),
+                    h = d.filter(e => !p.has(e.id));
                 return {
                     installedIntegrations: o,
-                    availableApplications: p,
+                    availableApplications: h,
                     applicationsShelf: d,
                     fetched: c !== u.FetchState.NOT_FETCHED && c !== u.FetchState.FETCHING && f !== u.FetchState.NOT_FETCHED && f !== u.FetchState.FETCHING,
                     appsInGDMEnabled: n
@@ -1639,7 +1640,7 @@
                 c = {},
                 f = {};
 
-            function h(e) {
+            function p(e) {
                 let t = e.id,
                     n = e.sku.id,
                     i = o[t],
@@ -1647,7 +1648,7 @@
                 !(null != i && !i.isSlimDirectoryVersion() && r.isSlimDirectoryVersion()) && (!1 === e.published ? (null == c[n] && (c[n] = new Set), c[n].add(t)) : f[n] = t, o[t] = r)
             }
 
-            function p(e, t) {
+            function h(e, t) {
                 return "".concat(e, ":").concat(t)
             }
 
@@ -1655,7 +1656,7 @@
                 let {
                     storeListings: t
                 } = e;
-                for (let e of t) h(e)
+                for (let e of t) p(e)
             }
 
             function m() {
@@ -1675,14 +1676,14 @@
                 }
                 getForSKU(e, t) {
                     let n = f[e];
-                    return null != t ? d[p(t, e)] : null != n ? o[n] : null
+                    return null != t ? d[h(t, e)] : null != n ? o[n] : null
                 }
                 getUnpublishedForSKU(e) {
                     let t = c[e];
                     return null == t ? [] : Array.from(t).map(e => o[e]).filter(u.isNotNullish)
                 }
                 getForChannel(e, t) {
-                    return d[p(e, t)]
+                    return d[h(e, t)]
                 }
                 getStoreListing(e) {
                     let {
@@ -1715,8 +1716,8 @@
                     } = e;
                     if (null != n) {
                         let e = s.default.createFromServer(t);
-                        d[p(n, e.skuId)] = e, f[e.skuId] = e.id
-                    } else h(t)
+                        d[h(n, e.skuId)] = e, f[e.skuId] = e.id
+                    } else p(t)
                 },
                 USER_SETTINGS_PROTO_UPDATE: _,
                 APPLICATION_STORE_CLEAR_DATA: m,
@@ -1725,7 +1726,7 @@
                         giftCode: t
                     } = e;
                     if (null == t.store_listing) return !1;
-                    h(t.store_listing)
+                    p(t.store_listing)
                 }
             })
         },
@@ -1917,13 +1918,13 @@
                     guildId: d,
                     channelId: c,
                     disableGuildSelect: f,
-                    source: h
+                    source: p
                 } = e;
                 if (null != n) return a.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
                     application_id: t,
                     guild_id: d,
                     auth_type: "custom_url",
-                    source: h,
+                    source: p,
                     device_platform: i.isMobile ? "mobile_web" : "desktop_web"
                 }), (0, s.handleClick)({
                     href: n
@@ -1932,7 +1933,7 @@
                     application_id: t,
                     guild_id: d,
                     auth_type: "in_app",
-                    source: h,
+                    source: p,
                     device_platform: i.isMobile ? "mobile_web" : "desktop_web"
                 }), (0, l.openOAuth2Modal)({
                     guildId: d,
@@ -1946,4 +1947,4 @@
         }
     }
 ]);
-//# sourceMappingURL=deba39e943a03a109e21.js.map
+//# sourceMappingURL=67c81b80fba8eacf0285.js.map
