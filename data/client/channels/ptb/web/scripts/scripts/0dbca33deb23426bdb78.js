@@ -10414,6 +10414,10 @@
                 movedTable: "movedTable__31aca",
                 noResultsContainer: "noResultsContainer_bebecd",
                 page: "page__6780f",
+                settingsColumn: "settingsColumn__23153 " + o("241372").customColumn,
+                settingsContainer: "settingsContainer__21422 " + o("241372").customContainer,
+                settingsContent: "settingsContent_cd9872 " + o("241372").contentColumnDefault + " settingsColumn__23153 " + o("241372").customColumn,
+                settingsScroller: "settingsScroller_ac87dd " + o("241372").customScroller + " " + o("241372").contentRegionScroller,
                 tableContainer: "tableContainer__62f2f"
             }
         },
@@ -10646,6 +10650,7 @@
                 button: "button_fb10b9",
                 code: "code__342bf",
                 communicationDisabledTooltip: "communicationDisabledTooltip__61d8d",
+                compact: "compact__3f738",
                 disabledActionTooltip: "disabledActionTooltip__7442a",
                 "display-lg": "display-lg__4f537",
                 "display-md": "display-md_b9aaaf",

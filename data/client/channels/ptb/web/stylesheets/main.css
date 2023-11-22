@@ -94196,6 +94196,10 @@ html .invoiceCancelRow_a8669b {
     background: var(--background-modifier-accent)
 }
 
+.memberRowContainer_f0d0e5 .compact__3f738 {
+    padding: 4px
+}
+
 .memberRowContainer_f0d0e5:hover td:after {
     opacity: 0
 }
@@ -95054,6 +95058,15 @@ html .invoiceCancelRow_a8669b {
     background-color: var(--background-modifier-active)
 }
 
+.settingsColumn__23153 {
+    max-width: 1200px
+}
+
+.settingsContent_cd9872 {
+    margin-right: 55px;
+    padding-bottom: 60px
+}
+
 .page__6780f {
     display: flex;
     flex-direction: column;
@@ -95073,22 +95086,13 @@ html .invoiceCancelRow_a8669b {
     padding: 8px
 }
 
-.mainTableContainer_ea650e {
-    display: flex;
-    flex-direction: column;
-    border-radius: var(--radius-md);
-    min-width: 860px;
-    background-color: var(--background-secondary);
-    box-shadow: var(--elevation-high)
-}
-
+.mainTableContainer_ea650e,
 .movedTable__31aca {
     display: flex;
     flex-direction: column;
     border-radius: var(--radius-md);
     min-width: 860px;
-    background-color: var(--background-secondary);
-    box-shadow: none
+    background-color: var(--background-secondary)
 }
 
 .noResultsContainer_bebecd {
@@ -123352,4 +123356,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f43995a61aed6c50c81b.css.map*/
+/*# sourceMappingURL=app.197d4cbd00ed92523bba.css.map*/
