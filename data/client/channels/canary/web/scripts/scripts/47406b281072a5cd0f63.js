@@ -305,8 +305,8 @@
                     innerClassName: R,
                     onClick: O,
                     onDoubleClick: L,
-                    onMouseDown: D,
-                    onMouseUp: y,
+                    onMouseDown: y,
+                    onMouseUp: D,
                     onMouseEnter: P,
                     onMouseLeave: M,
                     onKeyDown: U,
@@ -344,8 +344,8 @@
                         ref: G,
                         onClick: V ? e => e.preventDefault() : O,
                         onDoubleClick: V ? e => e.preventDefault() : L,
-                        onMouseUp: I ? void 0 : y,
-                        onMouseDown: I ? void 0 : D,
+                        onMouseUp: I ? void 0 : D,
+                        onMouseDown: I ? void 0 : y,
                         onMouseEnter: P,
                         onMouseLeave: M,
                         onKeyDown: I ? void 0 : U,
@@ -702,8 +702,8 @@
                         renderSection: R,
                         renderRow: O,
                         renderFooter: L,
-                        renderSidebar: D,
-                        renderListHeader: y,
+                        renderSidebar: y,
+                        renderListHeader: D,
                         wrapSection: P,
                         getAnchorId: M,
                         paddingTop: U,
@@ -884,7 +884,7 @@
                                     return a(c)
                                 }({
                                     items: en,
-                                    renderListHeader: y,
+                                    renderListHeader: D,
                                     renderSection: R,
                                     renderRow: O,
                                     renderFooter: L,
@@ -892,7 +892,7 @@
                                     spacerTop: ee
                                 })
                             })
-                        }), [B, x, H, V, W, Y, z, et, en, R, O, L, y, P, ee]), r.useMemo(() => (function(e) {
+                        }), [B, x, H, V, W, Y, z, et, en, R, O, L, D, P, ee]), r.useMemo(() => (function(e) {
                             let {
                                 renderSidebar: t,
                                 sidebarHeight: n,
@@ -902,10 +902,10 @@
                             return null == n || null == t ? null : t(r, i)
                         })({
                             isSidebarVisible: ei,
-                            renderSidebar: D,
+                            renderSidebar: y,
                             sidebarHeight: N,
                             isListVisible: 0 !== en.length
-                        }), [ei, D, N, en.length])]
+                        }), [ei, y, N, en.length])]
                     })
                 })
             }
@@ -1118,10 +1118,10 @@
                     return L
                 },
                 ModalContent: function() {
-                    return D
+                    return y
                 },
                 ModalFooter: function() {
-                    return y
+                    return D
                 },
                 ModalCloseButton: function() {
                     return P
@@ -1183,11 +1183,11 @@
                         clamp: !0
                     },
                     onRest: p
-                }), D = s.createRef();
-                (0, S.useFocusLock)(D, {
+                }), y = s.createRef();
+                (0, S.useFocusLock)(y, {
                     returnRef: I
                 });
-                let y = s.useRef(null),
+                let D = s.useRef(null),
                     P = null != T["aria-label"],
                     M = null != T["aria-labelledby"],
                     U = s.useId(),
@@ -1210,10 +1210,10 @@
                                 [C.fullscreenOnMobile]: h,
                                 [C.rootWithShadow]: !m
                             }),
-                            ref: y,
+                            ref: D,
                             style: L,
                             children: (0, o.jsx)(g.FocusRingScope, {
-                                containerRef: y,
+                                containerRef: D,
                                 children: i
                             })
                         })
@@ -1242,7 +1242,7 @@
                 })
             }
 
-            function D(e) {
+            function y(e) {
                 let {
                     className: t,
                     children: n,
@@ -1269,7 +1269,7 @@
                 })
             }
 
-            function y(e) {
+            function D(e) {
                 var t, n, i, r, s;
                 return (0, o.jsx)(I.default, {
                     grow: 0,
@@ -3369,15 +3369,15 @@
         },
         357626: function(e, t, n) {
             "use strict";
-            var i, r, o, s, l, a;
+            var i, r, o, s;
             n.r(t), n.d(t, {
                 ChannelListLayoutTypes: function() {
                     return i
                 },
-                MessagePreviewSettings: function() {
-                    return o
+                MessagePreviewTypes: function() {
+                    return r
                 }
-            }), (s = i || (i = {})).COZY = "cozy", s.COMPACT = "compact", s.MINIMAL = "minimal", (l = r || (r = {})).UNREADS = "unreads", l.ALL = "all", l.NONE = "none", (a = o || (o = {})).DEFAULT = "default", a.ALL = "all", a.UNREADS = "unreads", a.NONE = "none"
+            }), (o = i || (i = {})).COZY = "cozy", o.COMPACT = "compact", o.MINIMAL = "minimal", (s = r || (r = {})).ALL = "all", s.UNREADS = "unreads", s.NONE = "none"
         },
         894488: function(e, t, n) {
             "use strict";
@@ -3730,10 +3730,10 @@
                     return L
                 },
                 InstallShortcutDesktop: function() {
-                    return D
+                    return y
                 },
                 InstallShortcutStartMenu: function() {
-                    return y
+                    return D
                 },
                 AllowActivityPartyPrivacyFriends: function() {
                     return P
@@ -3955,13 +3955,13 @@
                 }, e => o.BoolValue.create({
                     value: e
                 })),
-                D = (0, l.defineProtoSetting)("gameLibrary", "installShortcutDesktop", e => {
+                y = (0, l.defineProtoSetting)("gameLibrary", "installShortcutDesktop", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => o.BoolValue.create({
                     value: e
                 })),
-                y = (0, l.defineProtoSetting)("gameLibrary", "installShortcutStartMenu", e => {
+                D = (0, l.defineProtoSetting)("gameLibrary", "installShortcutStartMenu", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => o.BoolValue.create({
@@ -4160,8 +4160,8 @@
             (0, l.defineProtoSetting)("appearance", "channelListLayout", e => null != e && ef.has(e.value) ? e.value : s.ChannelListLayoutTypes.COZY, e => o.StringValue.create({
                 value: e
             }));
-            let eE = new Set([s.MessagePreviewSettings.DEFAULT, s.MessagePreviewSettings.ALL, s.MessagePreviewSettings.UNREADS, s.MessagePreviewSettings.NONE]);
-            (0, l.defineProtoSetting)("appearance", "messagePreviews", e => null != e && eE.has(e.value) ? e.value : s.MessagePreviewSettings.DEFAULT, e => o.StringValue.create({
+            let eE = new Set([s.MessagePreviewTypes.ALL, s.MessagePreviewTypes.UNREADS, s.MessagePreviewTypes.NONE]);
+            (0, l.defineProtoSetting)("appearance", "messagePreviews", e => null != e && eE.has(e.value) ? e.value : s.MessagePreviewTypes.ALL, e => o.StringValue.create({
                 value: e
             }));
             let eS = (0, l.wrapSettingWithSelectiveSyncing)((0, l.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
@@ -5196,7 +5196,7 @@
                 }
             }
 
-            function D(e) {
+            function y(e) {
                 return null != v[e] && v[e] > Date.now()
             }
             if (null == i) try {
@@ -5269,18 +5269,18 @@
                 i = {}
             }
 
-            function y(e) {
+            function D(e) {
                 i = {
                     ...i,
                     ...e
                 }, r = (0, h.default)(i)
             }
-            y(function() {
+            D(function() {
                 var e, t, n;
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "248414", "248414"), 10);
+                let o = parseInt((n = "248424", "248424"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5304,7 +5304,7 @@
                     if (null != a) {
                         if ("throttlePeriod" in a) {
                             let t = [e, ...a.throttleKeys(s)].join("_");
-                            if (D(t)) return Promise.resolve();
+                            if (y(t)) return Promise.resolve();
                             if (a.deduplicate) {
                                 let e = A[t];
                                 if (l(e, s)) return Promise.resolve();
@@ -5319,11 +5319,11 @@
                 }
             };
             var M = {
-                isThrottled: D,
+                isThrottled: y,
                 encodeProperties: h.default,
                 getSuperProperties: () => i,
                 getSuperPropertiesBase64: () => r,
-                extendSuperProperties: y
+                extendSuperProperties: D
             }
         },
         660516: function(e, t, n) {
@@ -5522,4 +5522,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b624e49fcbfe1d513451.js.map
+//# sourceMappingURL=47406b281072a5cd0f63.js.map
