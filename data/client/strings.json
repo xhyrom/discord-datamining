@@ -7727,6 +7727,7 @@
   "GUILD_SETTINGS_SPLASH_DESCRIPTION": "\"This image will display in server invite embeds, invite in browser, and invite confirmation modal.\"",
   "GUILD_SETTINGS_SPLASH_INFO": "\"This image will display when users receive an invite to the server.\"",
   "UPLOAD_IMAGE": "\"Upload Image\"",
+  "REPLACE_IMAGE": "\"Replace Image\"",
   "UPLOAD_BACKGROUND": "\"Upload Background\"",
   "GUILD_SETTINGS_DEFAULT_NOTIFICATION_SETTINGS_INTRO": "\"This will determine whether members who have not explicitly set their notification settings receive a notification for every message sent in this server or not.\"",
   "GUILD_SETTINGS_DEFAULT_NOTIFICATION_SETTINGS_TIP": "\"We highly recommend setting this to only @mentions for a Community Server.\"",
