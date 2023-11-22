@@ -16619,6 +16619,7 @@
   "CREATE_POLL_ANSWER_PLACEHOLDER": "\"Add an answer\"",
   "CREATE_POLL_MULTIPLE_ANSWERS": "\"Allow Multiple Answers\"",
   "CREATE_POLL_POST": "\"Post\"",
+  "POLL_EXPRESSION_PICKER_BUTTON_ARIA": "\"Select media\"",
   "POLL_EXPIRY_DAYS_REMAINING": "\"{days, plural, other {{days}D Left}}\"",
   "POLL_EXPIRY_HOURS_REMAINING": "\"{hours, plural, other {{hours}H Left}}\"",
   "POLL_EXPIRY_MINUTES_REMAINING": "\"{minutes, plural, other {{minutes}M Left}}\"",
