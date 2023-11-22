@@ -11972,10 +11972,10 @@
                 "navigator-header-tint": [A.Color.WHITE_500, A.Color.PRIMARY_500, A.Color.WHITE_500, A.Color.WHITE_500],
                 "panel-bg": [A.Color.PRIMARY_600, A.Color.WHITE_500, A.Color.PLUM_24, A.Color.PLUM_20],
                 "polls-image-normal-border": [A.Color.BLACK_430, A.Color.BLACK_430, A.Color.BLACK_430, A.Color.BLACK_430],
-                "polls-victor-border": [A.Color.YELLOW_300, A.Color.YELLOW_430, A.Color.YELLOW_300, A.Color.YELLOW_300],
+                "polls-victor-border": [A.Color.YELLOW_300, A.Color.YELLOW_300, A.Color.YELLOW_300, A.Color.YELLOW_300],
                 "polls-victor-fill": [A.Color.YELLOW_200, A.Color.YELLOW_200, A.Color.YELLOW_200, A.Color.YELLOW_200],
                 "polls-victor-label": [A.Color.PRIMARY_600, A.Color.PRIMARY_600, A.Color.PRIMARY_600, A.Color.PRIMARY_600],
-                "polls-voted-border": [A.Color.GREEN_330, A.Color.GREEN_430, A.Color.GREEN_330, A.Color.GREEN_330],
+                "polls-voted-border": [A.Color.GREEN_330, A.Color.GREEN_330, A.Color.GREEN_330, A.Color.GREEN_330],
                 "polls-voted-fill": [A.Color.GREEN_160, A.Color.GREEN_160, A.Color.GREEN_160, A.Color.GREEN_160],
                 "polls-voted-label": [A.Color.PRIMARY_600, A.Color.PRIMARY_600, A.Color.PRIMARY_600, A.Color.PRIMARY_600],
                 "profile-gradient-card-background": [A.Color.BLACK_500, A.Color.WHITE_500, A.Color.BLACK_500, A.Color.BLACK_500],
@@ -13003,4 +13003,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3ded57281c95ef649580.js.map
+//# sourceMappingURL=e7ba27339a825372cb00.js.map
