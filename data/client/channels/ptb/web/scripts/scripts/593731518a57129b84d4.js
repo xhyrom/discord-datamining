@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["70137"], {
+    ["67615"], {
         273215: function(e, t, n) {
             "use strict";
             e.exports = n.p + "63900a1ba1f23d305c53.png"
@@ -3899,16 +3899,16 @@
             }
 
             function G(e, t, n, i) {
-                var a, l;
-                let s = (0, E.default)(n.application_id);
-                if (null == s) return;
-                let d = u.default.getBasicChannel(t),
-                    c = null != d && o.default.canBasicChannel(p.BasicPermissions.CONNECT, d) || (null == d ? void 0 : d.type) === p.ChannelTypes.DM || (null == d ? void 0 : d.type) === p.ChannelTypes.GROUP_DM;
+                var a, s, d;
+                let c = (0, E.default)(n.application_id);
+                if (null == c) return;
+                let _ = u.default.getBasicChannel(t),
+                    h = null != _ && o.default.canBasicChannel(p.BasicPermissions.CONNECT, _) || (null == _ ? void 0 : _.type) === p.ChannelTypes.DM || (null == _ ? void 0 : _.type) === p.ChannelTypes.GROUP_DM;
                 if (function(e, t) {
                         var n;
                         C.usersHavePlayedByApp.set(e, new Set([...null !== (n = C.usersHavePlayedByApp.get(e)) && void 0 !== n ? n : [], ...t.map(e => e.user_id)]))
-                    }(n.application_id, i), !c) return;
-                let _ = function(e, t, n, i, a) {
+                    }(n.application_id, i), !h) return;
+                let f = function(e, t, n, i, a) {
                         var l, s;
                         let r = new Map;
                         return t.forEach(e => {
@@ -3922,24 +3922,28 @@
                             guildId: i,
                             channelId: a
                         }
-                    }(n, i, s, e, t),
-                    h = r.default.getId(),
-                    f = m.get(_.application_id);
-                i.some(e => e.user_id === h) && null != f && m.set(f.application_id, {
-                    ...f,
-                    ..._
-                });
-                let S = null !== (a = g.get(t)) && void 0 !== a ? a : [],
-                    A = S.filter(e => {
+                    }(n, i, c, e, t),
+                    S = r.default.getId(),
+                    A = m.get(f.application_id);
+                i.some(e => e.user_id === S) && null != A && (m.set(A.application_id, {
+                    ...A,
+                    ...f
+                }), l.default.dispatch({
+                    type: "EMBEDDED_ACTIVITY_INSTANCE_CHANGE",
+                    channelId: t,
+                    instanceId: null !== (a = f.activity_id) && void 0 !== a ? a : null
+                }));
+                let N = null !== (s = g.get(t)) && void 0 !== s ? s : [],
+                    O = N.filter(e => {
                         let {
                             application_id: t
                         } = e;
                         return t !== n.application_id
                     }),
-                    N = b(e),
-                    O = null !== (l = I.get(N)) && void 0 !== l ? l : [],
-                    R = O.filter(e => !(e.application_id === n.application_id && e.channelId === t));
-                0 !== i.length && (A.push(_), R.push(_)), g.set(t, A), I.set(N, R)
+                    R = b(e),
+                    y = null !== (d = I.get(R)) && void 0 !== d ? d : [],
+                    v = y.filter(e => !(e.application_id === n.application_id && e.channelId === t));
+                0 !== i.length && (O.push(f), v.push(f)), g.set(t, O), I.set(R, v)
             }
 
             function w(e) {
@@ -33684,4 +33688,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9795199cda1f4e0abad9.js.map
+//# sourceMappingURL=593731518a57129b84d4.js.map
