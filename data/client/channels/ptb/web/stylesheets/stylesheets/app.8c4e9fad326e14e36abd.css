@@ -83829,6 +83829,19 @@ input::-webkit-inner-spin-button {
     margin-right: 2px
 }
 
+.giftButton_bb2551 {
+    padding: 0 7px
+}
+
+.giftButton_bb2551:hover {
+    opacity: .8
+}
+
+.giftButtonInner__4d3b4 {
+    max-width: 24px;
+    max-height: 24px
+}
+
 .shopCard__112c2 {
     border-radius: var(--radius-xxl);
     border: 2px solid transparent;
@@ -83891,19 +83904,16 @@ input::-webkit-inner-spin-button {
     gap: 8px
 }
 
-.previewButton_d97700,
-.giftButton_e57d96 {
+.previewButton_d97700 {
     padding: 0 7px
 }
 
 .purchaseButton_e05b73:hover,
-.previewButton_d97700:hover,
-.giftButton_e57d96:hover {
+.previewButton_d97700:hover {
     opacity: .8
 }
 
-.previewButtonInner__42555,
-.giftButtonInner__1690d {
+.previewButtonInner__42555 {
     max-width: 24px;
     max-height: 24px
 }
@@ -84499,6 +84509,12 @@ input::-webkit-inner-spin-button {
 .buttonsContainer_f3c32a {
     display: flex;
     flex-direction: column;
+    gap: 8px
+}
+
+.primaryButtons_a62ae3 {
+    display: flex;
+    flex-direction: row;
     gap: 8px
 }
 
@@ -123408,4 +123424,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.561652792b77f0f0ec6b.css.map*/
+/*# sourceMappingURL=app.8c4e9fad326e14e36abd.css.map*/
