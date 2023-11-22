@@ -19075,6 +19075,7 @@
             e.exports = {
                 defaultContainer: "defaultContainer__91554",
                 defaultTextInput: "defaultTextInput__91909",
+                emoji: "emoji__01f0a",
                 emojiIcon: "emojiIcon_ae6565",
                 imageOnlyContainer: "imageOnlyContainer__04301",
                 imageUploadIcon: "imageUploadIcon__48563"
