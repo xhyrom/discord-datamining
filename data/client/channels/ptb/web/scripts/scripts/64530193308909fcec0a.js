@@ -403,7 +403,7 @@
                 COLLECTIBLES_SHOP_OPEN: e => {
                     var t, r;
                     d = null !== (t = e.analyticsLocations) && void 0 !== t ? t : u, c = null !== (r = e.analyticsSource) && void 0 !== r ? r : null, l = e.initialItem, (0, s.markDismissibleContentAsDismissed)(o.DismissibleContent.COLLECTIBLES_SHOP_FOR_ALL_INTERACTIVE_MODAL_UPSELL, {
-                        dismissAction: a.ContentDismissActionType.AUTO
+                        dismissAction: a.ContentDismissActionType.AUTO_DISMISS
                     })
                 },
                 COLLECTIBLES_SHOP_CLOSE: f,
@@ -1328,4 +1328,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e90e87c357e877046cf3.js.map
+//# sourceMappingURL=64530193308909fcec0a.js.map
