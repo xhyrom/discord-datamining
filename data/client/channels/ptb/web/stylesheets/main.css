@@ -26119,12 +26119,17 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .imageOnlyContainer__04301 {
     border-radius: var(--radius-lg);
     background-color: var(--background-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 48%;
     height: 158px;
     cursor: pointer
+}
+
+.imageExpressionPickerButton_bfd5b8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
 }
 
 .imageUploadIcon__48563 {
@@ -123558,4 +123563,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.166a8a7a5f178b10ef54.css.map*/
+/*# sourceMappingURL=app.ce82ee68e1517229e1d1.css.map*/

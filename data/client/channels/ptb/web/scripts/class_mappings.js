@@ -19093,6 +19093,7 @@
                 defaultTextInput: "defaultTextInput__91909",
                 emoji: "emoji__01f0a",
                 emojiIcon: "emojiIcon_ae6565",
+                imageExpressionPickerButton: "imageExpressionPickerButton_bfd5b8",
                 imageOnlyContainer: "imageOnlyContainer__04301",
                 imageUploadIcon: "imageUploadIcon__48563"
             }

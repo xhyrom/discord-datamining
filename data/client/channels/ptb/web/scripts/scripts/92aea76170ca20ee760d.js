@@ -2332,7 +2332,7 @@
                     return a
                 },
                 ChatInputTypes: function() {
-                    return S
+                    return I
                 }
             });
             var n, a, s = l("394846"),
@@ -2606,6 +2606,26 @@
                     uploadLongMessages: !0
                 },
                 E = {
+                    analyticsName: "create_poll",
+                    attachments: !0,
+                    drafts: {
+                        type: i.DraftType.ChannelMessage
+                    },
+                    emojis: {
+                        button: !0
+                    },
+                    gifs: {
+                        allowSending: !0
+                    },
+                    permissions: {
+                        requireSendMessages: !0
+                    },
+                    submit: {
+                        useDisabledStylesOnSubmit: !0,
+                        disableEnterToSubmit: !0
+                    }
+                },
+                T = {
                     analyticsName: "profile_bio_input",
                     drafts: {
                         type: i.DraftType.ChannelMessage
@@ -2623,7 +2643,7 @@
                     disableAutoFocus: !0,
                     showCharacterCount: !0
                 },
-                T = {
+                h = {
                     analyticsName: "custom_gift_type",
                     drafts: {
                         type: i.DraftType.ChannelMessage
@@ -2639,7 +2659,7 @@
                     disableAutoFocus: !0,
                     showCharacterCount: !0
                 },
-                h = {
+                _ = {
                     analyticsName: "rules_input",
                     drafts: {
                         type: i.DraftType.ChannelMessage
@@ -2653,7 +2673,7 @@
                     },
                     showCharacterCount: !0
                 },
-                _ = {
+                S = {
                     analyticsName: "forum_channel_guidelines",
                     drafts: {
                         type: i.DraftType.ChannelMessage
@@ -2672,7 +2692,7 @@
                     showCharacterCount: !0,
                     toolbarType: 1
                 },
-                S = {
+                I = {
                     NORMAL: r,
                     OVERLAY: o,
                     SIDEBAR: u,
@@ -2680,11 +2700,12 @@
                     FORM: c,
                     VOICE_CHANNEL_STATUS: f,
                     THREAD_CREATION: m,
-                    PROFILE_BIO_INPUT: E,
-                    CUSTOM_GIFT: T,
-                    RULES_INPUT: h,
+                    PROFILE_BIO_INPUT: T,
+                    CUSTOM_GIFT: h,
+                    RULES_INPUT: _,
                     CREATE_FORUM_POST: p,
-                    FORUM_CHANNEL_GUIDELINES: _
+                    CREATE_POLL: E,
+                    FORUM_CHANNEL_GUIDELINES: S
                 }
         },
         235275: function(e, t, l) {
@@ -7694,4 +7715,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27893ea7e862b3b6186d.js.map
+//# sourceMappingURL=92aea76170ca20ee760d.js.map
