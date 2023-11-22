@@ -16626,6 +16626,8 @@
   "APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_TITLE": "\"Something went wrong...\"",
   "APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_BODY": "\"We were unable to run the command. Please try again later.\"",
   "APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER": "\"Start typing...\"",
+  "APP_LAUNCHER_COMMAND_NOT_FOUND_TITLE": "\"No command found\"",
+  "APP_LAUNCHER_COMMAND_NOT_FOUND_BODY": "\"This command is not available\"",
   "PROBLEMATIC_GPU_DRIVER_DETECTED": "\"There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).\"",
   "CHANGE_LANGUAGE_MODAL_TITLE_SPANISH": "\"\\xbfCambiar idioma?\"",
   "CHANGE_LANGUAGE_MODAL_SUBTITLE_SPANISH": "\"\\xbfTe gustar\\xeda configurar Discord en Espa\\xf1ol?\"",
