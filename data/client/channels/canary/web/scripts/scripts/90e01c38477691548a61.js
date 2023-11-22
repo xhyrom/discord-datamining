@@ -36,66 +36,69 @@
             "use strict";
             a.r(t), a.d(t, {
                 ActivityEmoji: function() {
-                    return p
+                    return A
                 },
                 default: function() {
-                    return N
+                    return h
                 }
             }), a("222007");
             var l = a("37983"),
                 s = a("884691"),
                 n = a("414456"),
                 i = a.n(n),
-                r = a("77078"),
-                u = a("430568"),
-                o = a("309570"),
-                d = a("29088"),
-                c = a("867805"),
-                f = a("699209"),
-                m = a("342845"),
-                T = a("845579"),
-                S = a("137783"),
-                g = a("49111"),
-                C = a("205341");
+                r = a("446674"),
+                u = a("77078"),
+                o = a("430568"),
+                d = a("309570"),
+                c = a("29088"),
+                f = a("867805"),
+                m = a("699209"),
+                T = a("342845"),
+                S = a("845579"),
+                g = a("42203"),
+                C = a("800762"),
+                p = a("137783"),
+                v = a("49111"),
+                N = a("205341");
 
-            function p(e) {
+            function A(e) {
                 let {
                     emoji: t,
                     className: a,
                     animate: s = !0,
                     hideTooltip: n
-                } = e, o = T.AnimateEmoji.useSetting(), d = null != t.id ? ":".concat(t.name, ":") : c.default.translateSurrogatesToInlineEmoji(t.name), f = {
-                    className: i(C.emoji, a),
+                } = e, r = S.AnimateEmoji.useSetting(), d = null != t.id ? ":".concat(t.name, ":") : f.default.translateSurrogatesToInlineEmoji(t.name), c = {
+                    className: i(N.emoji, a),
                     emojiId: t.id,
                     emojiName: t.name,
                     autoplay: !0,
-                    animated: !!(t.animated && o && s)
+                    animated: !!(t.animated && r && s)
                 };
-                return n ? (0, l.jsx)(u.default, {
-                    ...f
-                }) : (0, l.jsx)(r.Tooltip, {
+                return n ? (0, l.jsx)(o.default, {
+                    ...c
+                }) : (0, l.jsx)(u.Tooltip, {
                     text: d,
-                    children: e => (0, l.jsx)(u.default, {
+                    children: e => (0, l.jsx)(o.default, {
                         ...e,
-                        ...f
+                        ...c
                     })
                 })
             }
-            let v = e => {
+            let E = e => {
                 let {
                     className: t,
                     text: a
-                } = e, n = s.useRef(null), u = s.useRef(null), [o, d] = s.useState(!1);
+                } = e, n = s.useRef(null), r = s.useRef(null), [o, d] = s.useState(!1);
                 return s.useLayoutEffect(() => {
                     let {
                         current: e
                     } = n, {
                         current: t
-                    } = u;
+                    } = r;
                     if (null == e || null == t) return;
                     let a = e.clientWidth < t.clientWidth && e.clientHeight <= t.clientHeight;
                     d(!a)
-                }, [a]), (0, l.jsx)(r.Tooltip, {
+                }, [a]), (0, l.jsx)(u.Tooltip, {
                     text: o || null == a || "" === a ? null : a,
                     delay: 150,
                     "aria-label": !1,
@@ -106,49 +109,55 @@
                             ref: n,
                             children: a
                         }), (0, l.jsx)("div", {
-                            className: i(C.textRuler, t),
-                            ref: u,
+                            className: i(N.textRuler, t),
+                            ref: r,
                             "aria-hidden": !0,
                             children: a
                         })]
                     })
                 })
             };
-            var N = e => {
+            var h = e => {
+                var t;
                 let {
-                    activities: t,
-                    applicationStream: a,
-                    className: s,
-                    textClassName: n,
-                    emojiClassName: i,
-                    animate: r = !0,
-                    hideTooltip: u = !1,
-                    hideEmoji: c = !1
-                } = e, {
-                    enableHangStatus: T
-                } = f.HangStatusExperiment.useExperiment({
+                    activities: a,
+                    applicationStream: s,
+                    className: n,
+                    textClassName: i,
+                    emojiClassName: u,
+                    animate: o = !0,
+                    hideTooltip: f = !1,
+                    hideEmoji: S = !1,
+                    user: h
+                } = e, _ = null != a ? a.find(e => e.type === v.ActivityTypes.CUSTOM_STATUS) : null, x = null != a ? a.find(e => e.type === v.ActivityTypes.HANG_STATUS) : null, M = (0, r.useStateFromStores)([C.default, g.default], () => {
+                    var e;
+                    return null != x && null != h ? g.default.getChannel(null === (e = C.default.getVoiceStateForUser(h.id)) || void 0 === e ? void 0 : e.channelId) : null
+                }), {
+                    enableHangStatus: I
+                } = m.HangStatusExperiment.useExperiment({
+                    guildId: null !== (t = null == M ? void 0 : M.guild_id) && void 0 !== t ? t : "",
                     location: "ActivityStatus"
-                }), N = null != t ? t.find(e => e.type === g.ActivityTypes.CUSTOM_STATUS) : null, A = T && null != t ? t.find(e => e.type === g.ActivityTypes.HANG_STATUS) : null, E = null;
-                null != A ? E = (0, l.jsx)(m.default, {
-                    className: i,
-                    hangStatusActivity: A
-                }) : null != N && null != N.emoji && !c && (E = (0, l.jsx)(p, {
-                    emoji: N.emoji,
-                    animate: r,
-                    hideTooltip: u,
-                    className: i
+                }), U = null;
+                I && null != x ? U = (0, l.jsx)(T.default, {
+                    className: u,
+                    hangStatusActivity: x
+                }) : null != _ && null != _.emoji && !S && (U = (0, l.jsx)(A, {
+                    emoji: _.emoji,
+                    animate: o,
+                    hideTooltip: f,
+                    className: u
                 }));
-                let h = (0, d.default)(t, a, void 0, T),
-                    _ = null != h && h.length > 0;
-                return null != E || _ ? (0, l.jsxs)("div", {
-                    className: s,
-                    children: [E, (0, l.jsx)(v, {
-                        text: h,
-                        className: n
-                    }), null != t && t.some(o.default) ? (0, l.jsx)(S.default, {
+                let y = (0, c.default)(a, s, void 0, I),
+                    j = null != y && y.length > 0;
+                return null != U || j ? (0, l.jsxs)("div", {
+                    className: n,
+                    children: [U, (0, l.jsx)(E, {
+                        text: y,
+                        className: i
+                    }), null != a && a.some(d.default) ? (0, l.jsx)(p.default, {
                         width: 16,
                         height: 16,
-                        className: C.icon
+                        className: N.icon
                     }) : null]
                 }) : null
             }
@@ -345,7 +354,7 @@
             });
             var l = a("862205");
             let s = (0, l.createExperiment)({
-                kind: "user",
+                kind: "guild",
                 id: "2023-11_enable_hang_status",
                 label: "Hang Statuses",
                 defaultConfig: {
@@ -809,7 +818,7 @@
                     return w
                 },
                 UserPopoutAvatar: function() {
-                    return F
+                    return k
                 },
                 default: function() {
                     return z
@@ -878,9 +887,9 @@
                     })]
                 })
             }
-            let k = h.default.getEnableHardwareAcceleration() ? d.AnimatedAvatar : d.Avatar;
+            let F = h.default.getEnableHardwareAcceleration() ? d.AnimatedAvatar : d.Avatar;
 
-            function F(e) {
+            function k(e) {
                 let {
                     user: t,
                     displayProfile: a,
@@ -897,7 +906,7 @@
                     hasProfileEffect: M
                 } = e, U = (0, u.useStateFromStores)([p.default], () => p.default.getCurrentUser()), {
                     profileTheme: w
-                } = s.useContext(y.UserProfileContext), F = s.useContext(A.AnalyticsContext), z = t.isNonUserBot() && !t.isClyde(), W = E.default.isPremiumAtLeast(null == a ? void 0 : a.premiumType, L.PremiumTypes.TIER_2), Y = s.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, g), [t, g]), Z = v || t.isClyde(), {
+                } = s.useContext(y.UserProfileContext), k = s.useContext(A.AnalyticsContext), z = t.isNonUserBot() && !t.isClyde(), W = E.default.isPremiumAtLeast(null == a ? void 0 : a.premiumType, L.PremiumTypes.TIER_2), Y = s.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, g), [t, g]), Z = v || t.isClyde(), {
                     avatarDecorationSrc: V,
                     avatarSrc: K,
                     eventHandlers: Q,
@@ -917,7 +926,7 @@
                 }), J = (0, l.jsxs)("div", {
                     className: G.avatarHoverTarget,
                     ...Q,
-                    children: [(0, l.jsx)(k, {
+                    children: [(0, l.jsx)(F, {
                         src: null != n ? n : K,
                         avatarDecoration: null != q ? null : V,
                         size: H,
@@ -928,7 +937,7 @@
                         statusTooltip: !0
                     }), null != q && (0, l.jsx)(O.default, {
                         initTranslate3d: "translate3d(-20px, -120px, 0)",
-                        children: (0, l.jsx)(k, {
+                        children: (0, l.jsx)(F, {
                             src: D,
                             avatarDecoration: q,
                             size: H,
@@ -962,7 +971,7 @@
                                 userId: t.id,
                                 guildId: null != S ? S : void 0,
                                 channelId: null != g ? g : void 0,
-                                analyticsLocation: F.location
+                                analyticsLocation: k.location
                             }), null == C || C()
                         },
                         children: [J, !Z && function() {
@@ -1016,7 +1025,7 @@
                         profileEffectID: A,
                         bannerAdjustment: 0,
                         isHovering: f
-                    }), (0, l.jsx)(F, {
+                    }), (0, l.jsx)(k, {
                         user: t,
                         displayProfile: a,
                         status: o ? R.StatusTypes.STREAMING : d,
@@ -1395,4 +1404,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e618571a1c8b790bd9e5.js.map
+//# sourceMappingURL=90e01c38477691548a61.js.map
