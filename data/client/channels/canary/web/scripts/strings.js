@@ -16586,18 +16586,19 @@
                 START_BROADCAST_NOTIFICATION_CTA: "Open a Party",
                 STATUS_POPOUT_CUSTOM_TITLE: "Customs",
                 STATUS_POPOUT_SET_CUSTOM: "Set Custom Activity",
+                STATUS_POPOUT_EDIT_CUSTOM: "Edit Custom Activity",
                 STATUS_POPOUT_CLEAR_STATUS: "Clear Status",
                 SET_STATUS_MODAL_TITLE: "Set Custom Voice Activity",
                 SET_STATUS_MODAL_SUBTITLE: "Get unique with letting everyone know what you're doing.",
                 SET_STATUS_MODAL_CTA: "Confirm",
-                STATUS_LEAD_IN_JUST: "Right now, I'm just -",
+                STATUS_LEAD_IN_JUST: "Right now, I'm -",
                 STATUS_CHILLING: "Chilling tbh",
                 STATUS_GAMING: "GAMING",
-                STATUS_FOCUSING: "Locked In",
+                STATUS_FOCUSING: "In the zone",
                 STATUS_BRB: "Gonna BRB",
                 STATUS_EATING: "Grubbin",
                 STATUS_IN_TRANSIT: "Wandering IRL",
-                STATUS_COMING_SOON: "Coming Soon!",
+                STATUS_COMING_SOON: "Coming soon!",
                 STATUS_NONE: "No status",
                 HANG_STATUS: "Hang Status",
                 HANG_STATUS_LOCATION: "in !!{guildName}!!",
@@ -18234,7 +18235,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248179", ", Version Hash: ").concat("c31244207e060e6b6af8d368eaac2d125026ae14")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248188", ", Version Hash: ").concat("2d19400a1a8c64f12e6d6d5fbb49df34bc6af655")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20522,8 +20523,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "248179", "248179"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248179")), _ = 0), _
+                let _ = parseInt((e = "248188", "248188"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248188")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36372,4 +36373,4 @@
         }
     }
 ]);
-//# sourceMappingURL=26defb91331032199040.js.map
+//# sourceMappingURL=2406a5a7d695d30d453b.js.map

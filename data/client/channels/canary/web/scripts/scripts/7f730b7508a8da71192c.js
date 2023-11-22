@@ -5258,7 +5258,6 @@
                     fullscreen_panels: "Fullscreen panels",
                     disable_theme_key: "Disable reloading the entire app when the theme changes",
                     theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
-                    is_new_search_tab_bar: "Enables the design systems version of the search tab bar",
                     global_panels: "Use global panels for chat",
                     panels_navigator: "Use panels navigator",
                     cozy_header: "Cozy header",
@@ -14493,7 +14492,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "248179"
+                                build_number: "248188"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21307,4 +21306,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ffe291b8ef1ea52fa859.js.map
+//# sourceMappingURL=7f730b7508a8da71192c.js.map

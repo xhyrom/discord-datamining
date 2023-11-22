@@ -19469,8 +19469,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -22832,6 +22832,10 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-top: -4px;
     left: -8px;
     background-color: var(--channels-default)
+}
+
+.unread__48cf4.unreadWithHangStatus_bbb809 {
+    top: 25%
 }
 
 .children_a486f8 {
@@ -40180,8 +40184,8 @@ html .progress__4ef76 {
 }
 
 .recentIcon__43beb {
-    height: 16px;
-    width: 16px;
+    height: 14px;
+    width: 14px;
     margin-right: 4px
 }
 
@@ -40205,12 +40209,12 @@ html .progress__4ef76 {
 }
 
 .iconWidget_db0821.disabledWidget_a64d38 {
-    opacity: .6;
+    opacity: .5;
     cursor: default
 }
 
 .iconWidget_db0821.selectedWidget__1e288 {
-    background-color: var(--background-modifier-selected)
+    background-color: var(--background-accent)
 }
 
 .icon__7eecf {
@@ -40268,6 +40272,14 @@ html .progress__4ef76 {
     color: var(--interactive-normal)
 }
 
+.theme-dark .selectedWidget__1e288 {
+    border: 1px solid rgba(255, 255, 255, .2)
+}
+
+.theme-light .selectedWidget__1e288 {
+    border: 1px solid var(--interactive-active)
+}
+
 .wrapper__139c2 {
     background-color: var(--background-secondary-alt);
     padding: 16px;
@@ -40305,13 +40317,27 @@ html .progress__4ef76 {
     width: 40px
 }
 
+.avatarWrapper__9a9a0 {
+    position: relative
+}
+
 .avatar__3547f {
+    border-radius: 50%
+}
+
+.outline__8f17a {
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 50%;
-    border: 2px solid rgba(var(--white), .2)
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-sizing: border-box
 }
 
 .cta__86081 {
-    margin-top: 12px
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 8px 12px
 }
 
 .draggable__081c0 {
@@ -104212,10 +104238,14 @@ html .invoiceCancelRow_a8669b {
     margin-bottom: 24px
 }
 
+.modal__20262 {
+    border-radius: 12px
+}
+
 .closeButton__918af {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 20px;
+    right: 24px;
     height: 12px;
     width: 12px
 }
@@ -104235,10 +104265,10 @@ html .invoiceCancelRow_a8669b {
     align-items: center
 }
 
-.pickerBackground_ad736b {
+.emojiButton__15a10 {
     border-radius: 8px;
     background-color: var(--background-modifier-hover);
-    padding: 16px;
+    padding: 32px;
     background-image: radial-gradient(rgba(255, 255, 255, 5%)20%, transparent 20%), radial-gradient(rgba(255, 255, 255, 5%)20%, transparent 20%);
     background-position: 0 0, 4px 4px;
     background-size: 8px 8px;
@@ -104246,24 +104276,28 @@ html .invoiceCancelRow_a8669b {
     height: 32px;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    margin-right: 16px
+}
+
+.emojiButton__15a10>div {
+    scale: 1.4
 }
 
 .customInputGroup__0040e {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    margin-left: 16px
+    flex: 1
+}
+
+.leadInText_a2e5d5 {
+    text-transform: uppercase
 }
 
 .customInput_ac30ac {
     flex: 1;
     margin-top: 8px;
     width: 460px
-}
-
-.emojiButton__15a10 {
-    scale: 1.4
 }
 
 .emoji__8b920 {
@@ -104276,7 +104310,9 @@ html .invoiceCancelRow_a8669b {
     align-items: center;
     justify-content: space-between;
     padding: 24px;
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px
 }
 
 .formHeaderContainer__6f476 {
@@ -123424,4 +123460,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e11fb111e2f974f7a7e9.css.map*/
+/*# sourceMappingURL=app.30cf287129c0c061dade.css.map*/
