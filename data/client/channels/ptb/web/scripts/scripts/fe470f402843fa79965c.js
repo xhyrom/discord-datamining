@@ -1410,7 +1410,7 @@
                 l = n.n(r),
                 a = n("862337"),
                 s = n("296892");
-            let u = new Date("2024-01-01T07:59:59.000Z"),
+            let u = new Date("2024-01-04T07:59:59.000Z"),
                 o = l(u),
                 d = (0, s.default)({
                     id: "2023-11_seasonal_gifting",
@@ -1947,4 +1947,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67c81b80fba8eacf0285.js.map
+//# sourceMappingURL=fe470f402843fa79965c.js.map
