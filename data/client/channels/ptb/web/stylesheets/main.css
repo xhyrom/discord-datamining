@@ -26132,6 +26132,11 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--interactive-active)
 }
 
+.emoji__01f0a {
+    padding-left: 14px;
+    cursor: pointer
+}
+
 .container_e78017 {
     border-radius: 8px;
     box-shadow: var(--elevation-stroke), var(--elevation-high);
@@ -75587,7 +75592,7 @@ html .tabBadge__002b3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -123487,4 +123492,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a2e7cba3ea24e2b1613d.css.map*/
+/*# sourceMappingURL=app.9c1f8625eab6e9cc913f.css.map*/
