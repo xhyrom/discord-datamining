@@ -1030,7 +1030,7 @@
                 B = r.omit(D, ["codeBlock", "br", "blockQuote"]),
                 q = r.omit(D, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline"]),
                 W = r.omit(D, ["codeBlock", "blockQuote", "br"]),
-                H = r.omit(D, ["channelOrMessageUrl", "codeBlock", "inlineCode"]);
+                H = r.omit(D, ["codeBlock", "br", "inlineCode"]);
 
             function $(e, t) {
                 return 0 === e.length || 0 === t || "" === e.charAt(t - 1).trim()
@@ -1811,4 +1811,4 @@
         }
     }
 ]);
-//# sourceMappingURL=11c94edae9045639c544.js.map
+//# sourceMappingURL=6171ccd6f64857b72358.js.map
