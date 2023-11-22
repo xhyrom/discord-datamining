@@ -4949,7 +4949,7 @@
                     hardwareClassificationForDecoupled: null !== (t = e.hardwareClassificationForDecoupled) && void 0 !== t ? t : null
                 }
             }, e => {
-                let t = l.default.getHardwareH264();
+                let t = null != l.default && l.default.getHardwareH264();
                 return {
                     ...e,
                     clipsSettings: {
@@ -14492,7 +14492,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "248386"
+                                build_number: "248391"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21306,4 +21306,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8b67656aea09ab3ec885.js.map
+//# sourceMappingURL=6dd39691ac05e46cc266.js.map
