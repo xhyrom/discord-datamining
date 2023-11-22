@@ -5716,8 +5716,6 @@
                 defaultPreviewButtonColor: "defaultPreviewButtonColor__78b22",
                 description: "description_fe9f93",
                 detailsWrapper: "detailsWrapper__886fe",
-                giftButton: "giftButton_e57d96",
-                giftButtonInner: "giftButtonInner__1690d",
                 hoverUpsellContainer: "hoverUpsellContainer__16f55",
                 innerBlur: "innerBlur_d49d8a",
                 innerHover: "innerHover_a6fa92",
@@ -5753,6 +5751,13 @@
             "use strict";
             e.exports = {
                 coachmark: "coachmark__0e6e3"
+            }
+        },
+        436752: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                giftButton: "giftButton_bb2551",
+                giftButtonInner: "giftButtonInner__4d3b4"
             }
         },
         98881: function(e, t, o) {
@@ -5811,6 +5816,7 @@
                 premiumIcon: "premiumIcon_fdaf41",
                 previewsContainerInner: "previewsContainerInner__0209d",
                 priceTag: "priceTag_ff491e",
+                primaryButtons: "primaryButtons_a62ae3",
                 profileCustomizationBody: "profileCustomizationBody__54bc4",
                 profileEffectPreviewsContainerInner: "profileEffectPreviewsContainerInner__6a362 previewsContainerInner__0209d",
                 titleContainer: "titleContainer_faa17e",
