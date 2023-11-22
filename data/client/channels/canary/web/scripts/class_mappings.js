@@ -19076,9 +19076,8 @@
         944313: function(e, t, o) {
             "use strict";
             e.exports = {
-                defaultNotVotedMixinStyles: "defaultNotVotedMixinStyles__762b9",
                 imageVotedAndVictorMixinStyles: "imageVotedAndVictorMixinStyles_ae3068",
-                loserMixinStyles: "loserMixinStyles__72af9",
+                mutedMixinStyles: "mutedMixinStyles__4d4fa",
                 normalStylesDefault: "normalStylesDefault_b8063d",
                 normalStylesImageOnlyAnswers: "normalStylesImageOnlyAnswers__10b2a",
                 selectedMixinStyles: "selectedMixinStyles__6dfd9",
@@ -19170,6 +19169,7 @@
                 answersContainer: "answersContainer__97393",
                 attachment: "attachment_b6d123",
                 avatarForSelected: "avatarForSelected_db7f86",
+                emoji: "emoji__320b7",
                 label: "label_f6dfd2",
                 mediaContainer: "mediaContainer__32ff8",
                 votePercentageBar: "votePercentageBar__4c440",
