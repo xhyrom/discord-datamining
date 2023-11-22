@@ -681,39 +681,41 @@
             }
             let g = T.default.Types;
             var A = function(e) {
+                var t;
                 let {
-                    activity: t,
-                    user: l,
-                    useStoreStream: s = !0,
-                    showActions: r = !0,
-                    hideHeader: o = !1,
-                    ...h
-                } = e, {
-                    enableHangStatus: S
-                } = d.HangStatusExperiment.useExperiment({
-                    location: "UserActivityContainer"
-                }), g = (0, a.useStateFromStores)([f.default], () => s ? f.default.getAnyStreamForUser(l.id) : null), A = (0, a.useStateFromStores)([E.default, m.default], () => {
+                    activity: l,
+                    user: s,
+                    useStoreStream: r = !0,
+                    showActions: o = !0,
+                    hideHeader: h = !1,
+                    ...S
+                } = e, g = (0, a.useStateFromStores)([E.default, m.default], () => {
                     var e;
-                    return S && (null == t ? void 0 : t.type) === _.ActivityTypes.HANG_STATUS ? m.default.getChannel(null === (e = E.default.getVoiceStateForUser(l.id)) || void 0 === e ? void 0 : e.channelId) : null
-                }), v = (0, a.useStateFromStores)([p.default, E.default, m.default], () => {
-                    var e, n;
-                    return (0, i.default)(t, _.ActivityFlags.EMBEDDED) ? p.default.getGuild(null === (e = m.default.getChannel(null === (n = E.default.getVoiceStateForSession(l.id, null == t ? void 0 : t.session_id)) || void 0 === n ? void 0 : n.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != A ? p.default.getGuild(A.getGuildId()) : null
-                }), C = (0, a.useStateFromStores)([p.default], () => null != g ? p.default.getGuild(g.guildId) : null), N = (0, a.useStateFromStores)([u.default], () => {
-                    if (null != t) return null != t.application_id ? u.default.getApplication(t.application_id) : u.default.getApplicationByName(t.name);
+                    return m.default.getChannel(null === (e = E.default.getVoiceStateForUser(s.id)) || void 0 === e ? void 0 : e.channelId)
+                }), {
+                    enableHangStatus: A
+                } = d.HangStatusExperiment.useExperiment({
+                    guildId: null !== (t = null == g ? void 0 : g.guild_id) && void 0 !== t ? t : "",
+                    location: "UserActivityContainer"
+                }), v = (0, a.useStateFromStores)([f.default], () => r ? f.default.getAnyStreamForUser(s.id) : null), C = A && (null == l ? void 0 : l.type) === _.ActivityTypes.HANG_STATUS ? g : null, N = (0, a.useStateFromStores)([p.default, E.default, m.default], () => {
+                    var e, t;
+                    return (0, i.default)(l, _.ActivityFlags.EMBEDDED) ? p.default.getGuild(null === (e = m.default.getChannel(null === (t = E.default.getVoiceStateForSession(s.id, null == l ? void 0 : l.session_id)) || void 0 === t ? void 0 : t.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != C ? p.default.getGuild(C.getGuildId()) : null
+                }), y = (0, a.useStateFromStores)([p.default], () => null != v ? p.default.getGuild(v.guildId) : null), M = (0, a.useStateFromStores)([u.default], () => {
+                    if (null != l) return null != l.application_id ? u.default.getApplication(l.application_id) : u.default.getApplicationByName(l.name);
                     return null
                 });
-                return S || (null == t ? void 0 : t.type) !== _.ActivityTypes.HANG_STATUS ? (0, n.jsx)(T.default, {
-                    ...h,
-                    activity: t,
-                    user: l,
-                    application: N,
-                    hideHeader: o,
-                    activityGuild: null != v ? v : C,
-                    renderActions: r ? () => (0, n.jsx)(I, {
-                        ...h,
-                        applicationStream: g,
-                        activity: t,
-                        user: l
+                return A || (null == l ? void 0 : l.type) !== _.ActivityTypes.HANG_STATUS ? (0, n.jsx)(T.default, {
+                    ...S,
+                    activity: l,
+                    user: s,
+                    application: M,
+                    hideHeader: h,
+                    activityGuild: null != N ? N : y,
+                    renderActions: o ? () => (0, n.jsx)(I, {
+                        ...S,
+                        applicationStream: v,
+                        activity: l,
+                        user: s
                     }) : null,
                     onOpenSpotifyTrack: c.openTrack,
                     onOpenSpotifyArtist: c.openArtist,
@@ -7715,4 +7717,4 @@
         }
     }
 ]);
-//# sourceMappingURL=92aea76170ca20ee760d.js.map
+//# sourceMappingURL=852ddb34ec717b69c056.js.map
