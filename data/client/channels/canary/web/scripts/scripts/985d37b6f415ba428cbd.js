@@ -592,10 +592,10 @@
                     return L
                 },
                 useActiveSubscriptionListingForApplication: function() {
-                    return h
+                    return F
                 },
                 useUnseenEndedApplicationSubscriptionEntitlements: function() {
-                    return F
+                    return h
                 },
                 useFetchListingsForSubscriptions: function() {
                     return m
@@ -695,7 +695,7 @@
                 M = [],
                 O = [];
 
-            function h(t, e) {
+            function F(t, e) {
                 let n = (0, l.useStateFromStores)([E.default], () => E.default.getSubscriptions()),
                     {
                         subscriptionGroupListing: u,
@@ -745,7 +745,7 @@
                 }
             }
 
-            function F(t) {
+            function h(t) {
                 var e;
                 let n = null !== (e = null == t ? void 0 : t.id) && void 0 !== e ? e : "",
                     u = (0, l.useStateFromStores)([S.default], () => S.default.can(P.Permissions.ADMINISTRATOR, t)),
@@ -822,7 +822,7 @@
                     loggedIn: i
                 }), {
                     subscriptionGroupListing: s
-                } = h(e, u);
+                } = F(e, u);
                 return {
                     applicationSubscriptionListingsShown: null != e && null != n && (null == u || l) && (!i || a) && r && null != s && (0, C.hasPayableSubscriptionPlan)(s)
                 }
@@ -1275,8 +1275,8 @@
                 L = n("383802"),
                 M = n("334702"),
                 O = n("775325"),
-                h = n("403293"),
-                F = n("523591"),
+                F = n("403293"),
+                h = n("523591"),
                 m = n("49111"),
                 y = n("646718");
             let [g, G, D] = (0, f.default)();
@@ -1295,8 +1295,8 @@
                     purchaseType: w = m.PurchaseTypes.SUBSCRIPTION,
                     applicationId: Y,
                     referralCode: W
-                } = t, k = (0, h.default)(), V = (0, S.useBlockedPaymentsConfig)(), x = (0, C.default)(), {
-                    paymentSources: Z,
+                } = t, k = (0, F.default)(), V = (0, S.useBlockedPaymentsConfig)(), Z = (0, C.default)(), {
+                    paymentSources: x,
                     hasPaymentSources: J,
                     paymentSourceId: Q,
                     setPaymentSourceId: X,
@@ -1343,7 +1343,7 @@
                     selectedPlan: tp,
                     setSelectedSkuId: tC,
                     setSelectedPlanId: tP
-                } = (0, A.default)(), [tN, tR] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tU, tL] = (0, o.useStateFromStoresArray)([F.default], () => [F.default.browserCheckoutState, F.default.loadId]), [tM, tO] = i.useState(null), [th, tF] = i.useState(null), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tv] = i.useState(void 0), [tb, tK] = i.useState([]), tw = i.useMemo(() => null == tp || (0, T.isPremiumSubscriptionPlan)(tp.id), [tp]), tY = i.useRef(null != G ? G.planId : null);
+                } = (0, A.default)(), [tN, tR] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tU, tL] = (0, o.useStateFromStoresArray)([h.default], () => [h.default.browserCheckoutState, h.default.loadId]), [tM, tO] = i.useState(null), [tF, th] = i.useState(null), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tv] = i.useState(void 0), [tb, tK] = i.useState([]), tw = i.useMemo(() => null == tp || (0, T.isPremiumSubscriptionPlan)(tp.id), [tp]), tY = i.useRef(null != G ? G.planId : null);
                 i.useEffect(() => {
                     null == tY.current && null != G && (tY.current = G.planId)
                 }, [G]);
@@ -1355,13 +1355,13 @@
                     applicationId: null != Y ? Y : y.PREMIUM_SUBSCRIPTION_APPLICATION,
                     skuIDs: H,
                     currentPaymentSourceId: Q
-                }), tx = i.useMemo(() => {
+                }), tZ = i.useMemo(() => {
                     if (null == tA) return null;
                     let t = tV[tA];
                     if (null == t) return null;
                     let e = null != Q ? Q : E.NO_PAYMENT_SOURCE;
                     return t[e]
-                }, [tA, tV, Q]), tZ = (0, c.useApplication)(Y), tJ = (0, _.hasFlag)(null !== (e = null == tZ ? void 0 : tZ.flags) && void 0 !== e ? e : 0, m.ApplicationFlags.EMBEDDED) && (0, _.hasFlag)(null !== (n = null == tZ ? void 0 : tZ.flags) && void 0 !== n ? n : 0, m.ApplicationFlags.EMBEDDED_IAP), tQ = (0, o.useStateFromStores)([s.default], () => Array.from(s.default.getSelfEmbeddedActivities().values()).find(t => {
+                }, [tA, tV, Q]), tx = (0, c.useApplication)(Y), tJ = (0, _.hasFlag)(null !== (e = null == tx ? void 0 : tx.flags) && void 0 !== e ? e : 0, m.ApplicationFlags.EMBEDDED) && (0, _.hasFlag)(null !== (n = null == tx ? void 0 : tx.flags) && void 0 !== n ? n : 0, m.ApplicationFlags.EMBEDDED_IAP), tQ = (0, o.useStateFromStores)([s.default], () => Array.from(s.default.getSelfEmbeddedActivities().values()).find(t => {
                     let {
                         application_id: e
                     } = t;
@@ -1373,14 +1373,14 @@
                         contextMetadata: tI,
                         blockedPayments: V,
                         activeSubscription: G,
-                        hasFetchedSubscriptions: x,
+                        hasFetchedSubscriptions: Z,
                         hasFetchedSubscriptionPlans: z,
                         updatedSubscription: tg,
                         setUpdatedSubscription: tG,
                         subscriptionMetadataRequest: tD,
                         setSubscriptionMetadataRequest: tB,
                         hasFetchedPaymentSources: j,
-                        paymentSources: Z,
+                        paymentSources: x,
                         hasPaymentSources: J,
                         paymentSourceId: Q,
                         setPaymentSourceId: X,
@@ -1409,8 +1409,8 @@
                         browserCheckoutStateLoadId: tL,
                         bodyNode: tM,
                         setBodyNode: tO,
-                        footerNode: th,
-                        setFooterNode: tF,
+                        footerNode: tF,
+                        setFooterNode: th,
                         modalOverlayNode: tm,
                         setModalOverlayNode: ty,
                         selectedSkuId: tA,
@@ -1426,8 +1426,8 @@
                         hasFetchedSkus: tk,
                         skusById: tW,
                         skuPricePreviewsById: tV,
-                        selectedSkuPricePreview: tx,
-                        application: tZ,
+                        selectedSkuPricePreview: tZ,
+                        application: tx,
                         purchaseType: w,
                         isEmbeddedIAP: tJ,
                         activitySessionId: tX,
@@ -1469,7 +1469,7 @@
                 s = n("286350"),
                 c = n("782340");
             let S = new a.default("PaymentSteps");
-            (i = u || (u = {})).PAYMENT_TYPE = "payment_type", i.CREDIT_CARD_INFORMATION = "credit_card_information", i.PAYPAL_INFORMATION = "paypal_information", i.VENMO_INFORMATION = "venmo_information", i.SOFORT_INFORMATION = "sofort_information", i.PRZELEWY24_INFORMATION = "przelewy24_information", i.EPS_INFORMATION = "eps_information", i.IDEAL_INFORMATION = "ideal_information", i.CASH_APP_INFORMATION = "cash_app_information", i.PAYMENT_REQUEST_INFORMATION = "payment_request_information", i.ADDRESS = "address", i.AWAITING_AUTHENTICATION = "awaiting_authentication", i.SKU_SELECT = "sku_select", i.PLAN_SELECT = "plan_select", i.PREMIUM_UPSELL = "premium_upsell", i.PREMIUM_GUILD_UPSELL = "premium_guild_upsell", i.REVIEW = "review", i.CONFIRM = "confirm", i.CLAIM_FREE_SKU = "claim_free_sku", i.SKU_PREVIEW = "sku_preview", i.LOADING_PAYMENT_SOURCES = "loading_payment_sources", i.SHOP = "shop", i.PROMOTION_INFO = "promotion_info", i.AWAITING_PURCHASE_TOKEN_AUTH = "awaiting_purchase_token_auth", i.BENEFITS = "benefits", i.WHAT_YOU_LOSE = "what_you_lose", i.ADD_PAYMENT_STEPS = "add_payment_steps", i.AWAITING_BROWSER_CHECKOUT = "awaiting_browser_checkout";
+            (i = u || (u = {})).PAYMENT_TYPE = "payment_type", i.CREDIT_CARD_INFORMATION = "credit_card_information", i.PAYPAL_INFORMATION = "paypal_information", i.VENMO_INFORMATION = "venmo_information", i.SOFORT_INFORMATION = "sofort_information", i.PRZELEWY24_INFORMATION = "przelewy24_information", i.EPS_INFORMATION = "eps_information", i.IDEAL_INFORMATION = "ideal_information", i.CASH_APP_INFORMATION = "cash_app_information", i.PAYMENT_REQUEST_INFORMATION = "payment_request_information", i.ADDRESS = "address", i.AWAITING_AUTHENTICATION = "awaiting_authentication", i.SKU_SELECT = "sku_select", i.PLAN_SELECT = "plan_select", i.PREMIUM_UPSELL = "premium_upsell", i.PREMIUM_GUILD_UPSELL = "premium_guild_upsell", i.REVIEW = "review", i.CONFIRM = "confirm", i.CLAIM_FREE_SKU = "claim_free_sku", i.SKU_PREVIEW = "sku_preview", i.LOADING_PAYMENT_SOURCES = "loading_payment_sources", i.SHOP = "shop", i.PROMOTION_INFO = "promotion_info", i.AWAITING_PURCHASE_TOKEN_AUTH = "awaiting_purchase_token_auth", i.BENEFITS = "benefits", i.WHAT_YOU_LOSE = "what_you_lose", i.ADD_PAYMENT_STEPS = "add_payment_steps", i.AWAITING_BROWSER_CHECKOUT = "awaiting_browser_checkout", i.GIFT_CUSTOMIZATION = "gift_customization";
             let d = new Set(["credit_card_information", "payment_request_information", "paypal_information", "venmo_information", "cash_app_information", "address", "claim_free_sku", "sku_preview", "premium_upsell", "sofort_information", "przelewy24_information"]);
 
             function E(t) {
@@ -1499,7 +1499,9 @@
                     case "przelewy24_information":
                         return c.default.Messages.PAYMENT_SOURCE_PRZELEWY24_INFO;
                     case "cash_app_information":
-                        return c.default.Messages.PAYMENT_SOURCE_CASH_APP_PAY_DETAILS
+                        return c.default.Messages.PAYMENT_SOURCE_CASH_APP_PAY_DETAILS;
+                    case "gift_customization":
+                        return c.default.Messages.COLLECTIBLES_GIFT_RECIPIENT_PLACEHOLDER
                 }
                 throw Error("Unexpected step: ".concat(t))
             }
@@ -1945,13 +1947,13 @@
                 P = null
             }
 
-            function h(t) {
+            function F(t) {
                 let {
                     error: e
                 } = t;
                 P = e
             }
-            class F extends u.default.Store {
+            class h extends u.default.Store {
                 get stripePaymentMethod() {
                     return s
                 }
@@ -2003,8 +2005,8 @@
                     return P
                 }
             }
-            F.displayName = "NewPaymentSourceStore";
-            var m = new F(i.default, {
+            h.displayName = "NewPaymentSourceStore";
+            var m = new h(i.default, {
                 NEW_PAYMENT_SOURCE_STRIPE_PAYMENT_REQUEST_UPDATE: function(t) {
                     let {
                         stripePaymentMethod: e
@@ -2063,8 +2065,8 @@
                 BILLING_PAYMENT_SOURCE_CREATE_START: O,
                 MODAL_POP: O,
                 NEW_PAYMENT_SOURCE_CLEAR_ERROR: O,
-                BILLING_PAYMENT_SOURCE_CREATE_FAIL: h,
-                STRIPE_TOKEN_FAILURE: h,
+                BILLING_PAYMENT_SOURCE_CREATE_FAIL: F,
+                STRIPE_TOKEN_FAILURE: F,
                 BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: L,
                 LOGOUT: L,
                 BILLING_POPUP_BRIDGE_CALLBACK: function(t) {
@@ -2776,4 +2778,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c19380821ab1c811c231.js.map
+//# sourceMappingURL=985d37b6f415ba428cbd.js.map
