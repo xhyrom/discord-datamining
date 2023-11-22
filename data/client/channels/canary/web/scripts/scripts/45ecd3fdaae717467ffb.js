@@ -2410,7 +2410,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-df0ec4b8b1778cf9c40b5d9ae945a7e9ab14d669",
+                    release: "discord_web-078ad115ece23afef8dd24d21f2354a66a9c48cb",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2428,7 +2428,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "248337", "248337")), a.setTag("builtAt", String("1700687352158"));
+                }), a.setTag("buildNumber", (e = "248343", "248343")), a.setTag("builtAt", String("1700687962313"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2571,42 +2571,45 @@
             var a = n("913144"),
                 r = n("699209");
 
-            function s(e, t) {
+            function s(e, t, n) {
                 let {
-                    enableHangStatus: n
+                    enableHangStatus: s
                 } = r.HangStatusExperiment.getCurrentConfig({
                     location: t
                 });
-                if (!n || null == e) {
-                    l();
+                if (!s || null == e) {
+                    l(n);
                     return
                 }
                 a.default.dispatch({
                     type: "UPDATE_HANG_STATUS",
-                    status: e
+                    status: e,
+                    saveAsDefault: n
                 })
             }
 
-            function i(e, t, n) {
+            function i(e, t, n, s) {
                 let {
-                    enableHangStatus: s
+                    enableHangStatus: i
                 } = r.HangStatusExperiment.getCurrentConfig({
                     location: n
                 });
-                if (!s || "" === e) {
-                    l();
+                if (!i || "" === e) {
+                    l(s);
                     return
                 }
                 a.default.dispatch({
                     type: "UPDATE_HANG_STATUS_CUSTOM",
                     emoji: t,
-                    status: e
+                    status: e,
+                    saveAsDefault: s
                 })
             }
 
-            function l() {
+            function l(e) {
                 a.default.dispatch({
-                    type: "CLEAR_HANG_STATUS"
+                    type: "CLEAR_HANG_STATUS",
+                    saveAsDefault: e
                 })
             }
         },
@@ -4960,4 +4963,4 @@
         }
     }
 ]);
-//# sourceMappingURL=aa38a05c71a42e08d284.js.map
+//# sourceMappingURL=45ecd3fdaae717467ffb.js.map
