@@ -17,5 +17,30 @@
     "config_keys": [
       "enableHangStatus"
     ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "1151305620369199144",
+        "840296607785287763"
+      ]
+    },
+    "overrides_formatted": []
   }
 }
