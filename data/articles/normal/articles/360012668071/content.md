@@ -8,13 +8,18 @@
             <li style="font-weight: 400;" aria-level="1"><a href="#h_01GXCJQJ0K5KHEW9ZRF417PJTB">Paysafecards</a></li>
         </ul>
     </li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#h_01GK7AZN1G2Z1KFESNVJXYB654">Nitro and Server Boosts </a></li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#h_01GK7AZXHKZ2ZBNHCQZ2QHEDHF">Gifts </a></li>
+    <li style="font-weight: 400;" aria-level="1">
+        <a href="#h_01GK7AZN1G2Z1KFESNVJXYB654">Nitro and Server Boosts </a>
+        <ul>
+            <li style="font-weight: 400;" aria-level="1"><a href="#h_01HFVZATFQPKY1TMZ5N7BWGMFN">Exceptions</a></li>
+        </ul>
+    </li>
+    <li style="font-weight: 400;" aria-level="1"><a href="#h_01HFVZBQKY520AFFDWY3VPS5JT">Nitro Gifts </a></li>
     <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-839a2ff5-7fff-1184-b2a3-2917c400b5c9">DLC, Profile Cosmetics and In-App</a></li>
     <li style="font-weight: 400;" aria-level="1">
         <a href="#h_01GK7B03KHCFEWTYRE0W0HCZR5">Purchases from Users and Developers</a>
         <ul>
-            <li style="font-weight: 400;" aria-level="1"><a href="#h_01GXCJSPYGF70RVXXD32EQ4S4M">Server Subscription Refunds</a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Subscription Refunds</a></li>
             <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Shop Purchase Refunds</a></li>
             <li style="font-weight: 400;" aria-level="1"><a href="#h_01GXCJT1K30JVPCNX51X4DY8EF">Premium App Subscription Refunds</a></li>
         </ul>
@@ -31,11 +36,17 @@
 <h1 id="h_01GK7AZN1G2Z1KFESNVJXYB654"><strong>Nitro and Server Boosts</strong></h1>
 <p><span style="font-weight: 400;">If you would like to request a refund for any Nitro or Server Boost purchase you’ve made, you must reach out to our Support Team and provide all requested information associated with your purchase within </span><strong>5 days</strong><span style="font-weight: 400;"> of your initial purchase at </span><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a><span style="font-weight: 400;">. Our Support Team will review your request and notify you of the outcome of your request. </span></p>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-42853b36-7fff-5086-5ded-bfe4ff3f1918">If you purchased any profile cosmetics within 5 days of your Nitro subscription renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro subscription refund.</span></span></p>
-<h1 id="h_01GK7AZXHKZ2ZBNHCQZ2QHEDHF"><strong>Gifts</strong></h1>
-<p><span style="font-weight: 400;">We are </span><strong>unable</strong><span style="font-weight: 400;"> to provide a refund for a gift purchase once the gift </span><strong>has been claimed</strong><span style="font-weight: 400;"> by either you or another user. (Yes, you can give gifts to yourself! Treat Yourself Day can be every day!)</span></p>
-<p><span style="font-weight: 400;">However, for </span><strong>unclaimed gifts </strong><span style="font-weight: 400;">purchased on Discord on </span><strong>desktop/web/Android</strong><span style="font-weight: 400;">, you will have</span><strong> 5 days</strong><span style="font-weight: 400;"> from the initial purchase date to request a refund with our </span><a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612" target="_blank" rel="noopener noreferrer">Support Team</a><span style="font-weight: 400;">. </span></p>
+<h2 id="h_01HFVZATFQPKY1TMZ5N7BWGMFN">Exceptions</h2>
+<p><strong>Profile Cosmetics</strong></p>
+<p>If you purchased any profile cosmetics within 5 days of your Nitro membership renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro membership refund. </p>
+<p><strong>Subscriber Promotions</strong></p>
+<p>If you have redeemed or received any promotional items from Discord or from a Discord partner promotion (ex. Free Xbox Game Pass) within 5 days of your Nitro membership renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro membership refund. </p>
+<h2 id="h_01HFVZBQKY520AFFDWY3VPS5JT">Nitro Gifts</h2>
+<h3 id="h_01HFVZBQKYAY1WHEJ2K3V41J9G"><span style="color: #434343;" data-darkreader-inline-color="">If the Nitro gift you purchased was self-claimed (claimed on the same account you purchased the gift from), you can request a refund. The refund counts towards the one-time refund for Nitro purchases and follows the same refund policy.</span></h3>
+<p>We are <strong>unable</strong> to provide a refund for a Nitro gift purchase once the gift <strong>has been claimed</strong> by another user. </p>
+<p>However, for <strong>unclaimed Nitro gifts </strong>purchased on Discord on <strong>desktop/web/Android</strong>, you will have<strong> 5 days</strong> from the initial purchase date to request a refund with our<a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Support Team</span></a>. </p>
 <h1 id="docs-internal-guid-839a2ff5-7fff-1184-b2a3-2917c400b5c9"><strong>DLC, <span id="docs-internal-guid-4ab750f2-7fff-8663-d87a-05171c6853fa">Profile Cosmetics</span> and In-App Purchases</strong></h1>
-<p><span id="docs-internal-guid-40f00bae-7fff-b06c-dfd5-05d576ae865b">We are unable to provide refunds or exchanges for purchases for downloadable content (DLC), profile cosmetics like avatar decorations and profile effects, and in-app purchases (IAP) within any Activity.</span></p>
+<p>We are unable to provide refunds or exchanges for purchases of downloadable content (DLC), profile cosmetics like avatar decorations and profile effects, and in-app purchases (IAP) within any Activity, including any gift purchases of these items.</p>
 <h1 id="h_01GK7B03KHCFEWTYRE0W0HCZR5"><strong>Purchases from Users and Developers</strong></h1>
 <p><span style="font-weight: 400;">With some Discord features, we allow you to purchase server subscriptions, premium apps, and other offerings from other users and developers on Discord. While these users and developers are responsible for these offerings, we may offer refunds in our sole discretion in the situations outlined below.     </span></p>
 <h2 id="h_01GXCJSPYGF70RVXXD32EQ4S4M"><span style="font-weight: 400;">Server Subscription Refunds</span></h2>
