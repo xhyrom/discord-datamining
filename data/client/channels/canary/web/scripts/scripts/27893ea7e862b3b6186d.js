@@ -626,10 +626,10 @@
             "use strict";
             l.r(t), l.d(t, {
                 UserActivityTypes: function() {
-                    return I
+                    return g
                 },
                 default: function() {
-                    return g
+                    return A
                 }
             });
             var n = l("37983");
@@ -640,17 +640,18 @@
                 r = l("152311"),
                 o = l("532602"),
                 u = l("299285"),
-                d = l("769791"),
-                c = l("373469"),
-                f = l("42203"),
-                m = l("305961"),
-                p = l("800762"),
-                E = l("313873"),
-                T = l("474293"),
-                h = l("49111"),
-                _ = l("804354");
+                d = l("699209"),
+                c = l("769791"),
+                f = l("373469"),
+                m = l("42203"),
+                p = l("305961"),
+                E = l("800762"),
+                T = l("313873"),
+                h = l("474293"),
+                _ = l("49111"),
+                S = l("804354");
 
-            function S(e) {
+            function I(e) {
                 let {
                     type: t,
                     source: l,
@@ -664,7 +665,7 @@
                     actionColor: p
                 } = e;
                 return (0, n.jsx)(o.default, {
-                    className: (0, T.getClass)(_, "actions", t),
+                    className: (0, h.getClass)(S, "actions", t),
                     type: t,
                     source: l,
                     activity: a,
@@ -678,42 +679,46 @@
                     isEmbedded: m
                 })
             }
-            let I = E.default.Types;
-            var g = function(e) {
+            let g = T.default.Types;
+            var A = function(e) {
                 let {
                     activity: t,
                     user: l,
                     useStoreStream: s = !0,
                     showActions: r = !0,
                     hideHeader: o = !1,
-                    ...T
-                } = e, _ = (0, a.useStateFromStores)([c.default], () => s ? c.default.getAnyStreamForUser(l.id) : null), I = (0, a.useStateFromStores)([p.default, f.default], () => {
+                    ...h
+                } = e, {
+                    enableHangStatus: S
+                } = d.HangStatusExperiment.useExperiment({
+                    location: "UserActivityContainer"
+                }), g = (0, a.useStateFromStores)([f.default], () => s ? f.default.getAnyStreamForUser(l.id) : null), A = (0, a.useStateFromStores)([E.default, m.default], () => {
                     var e;
-                    return (null == t ? void 0 : t.type) === h.ActivityTypes.HANG_STATUS ? f.default.getChannel(null === (e = p.default.getVoiceStateForUser(l.id)) || void 0 === e ? void 0 : e.channelId) : null
-                }), g = (0, a.useStateFromStores)([m.default, p.default, f.default], () => {
+                    return S && (null == t ? void 0 : t.type) === _.ActivityTypes.HANG_STATUS ? m.default.getChannel(null === (e = E.default.getVoiceStateForUser(l.id)) || void 0 === e ? void 0 : e.channelId) : null
+                }), v = (0, a.useStateFromStores)([p.default, E.default, m.default], () => {
                     var e, n;
-                    return (0, i.default)(t, h.ActivityFlags.EMBEDDED) ? m.default.getGuild(null === (e = f.default.getChannel(null === (n = p.default.getVoiceStateForSession(l.id, null == t ? void 0 : t.session_id)) || void 0 === n ? void 0 : n.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != I ? m.default.getGuild(I.getGuildId()) : null
-                }), A = (0, a.useStateFromStores)([m.default], () => null != _ ? m.default.getGuild(_.guildId) : null), v = (0, a.useStateFromStores)([u.default], () => {
+                    return (0, i.default)(t, _.ActivityFlags.EMBEDDED) ? p.default.getGuild(null === (e = m.default.getChannel(null === (n = E.default.getVoiceStateForSession(l.id, null == t ? void 0 : t.session_id)) || void 0 === n ? void 0 : n.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != A ? p.default.getGuild(A.getGuildId()) : null
+                }), C = (0, a.useStateFromStores)([p.default], () => null != g ? p.default.getGuild(g.guildId) : null), N = (0, a.useStateFromStores)([u.default], () => {
                     if (null != t) return null != t.application_id ? u.default.getApplication(t.application_id) : u.default.getApplicationByName(t.name);
                     return null
                 });
-                return (0, n.jsx)(E.default, {
-                    ...T,
+                return S || (null == t ? void 0 : t.type) !== _.ActivityTypes.HANG_STATUS ? (0, n.jsx)(T.default, {
+                    ...h,
                     activity: t,
                     user: l,
-                    application: v,
+                    application: N,
                     hideHeader: o,
-                    activityGuild: null != g ? g : A,
-                    renderActions: r ? () => (0, n.jsx)(S, {
-                        ...T,
-                        applicationStream: _,
+                    activityGuild: null != v ? v : C,
+                    renderActions: r ? () => (0, n.jsx)(I, {
+                        ...h,
+                        applicationStream: g,
                         activity: t,
                         user: l
                     }) : null,
-                    onOpenSpotifyTrack: d.openTrack,
-                    onOpenSpotifyArtist: d.openArtist,
-                    onOpenSpotifyAlbum: d.openAlbum
-                })
+                    onOpenSpotifyTrack: c.openTrack,
+                    onOpenSpotifyArtist: c.openArtist,
+                    onOpenSpotifyAlbum: c.openAlbum
+                }) : null
             }
         },
         487311: function(e, t, l) {
@@ -7689,4 +7694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=460208a2e6df26d62b4f.js.map
+//# sourceMappingURL=27893ea7e862b3b6186d.js.map
