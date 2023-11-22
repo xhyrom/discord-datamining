@@ -44,40 +44,47 @@
             "use strict";
             n.r(e), n.d(e, {
                 default: function() {
-                    return _
+                    return s
                 }
             }), n("222007");
             var r = n("884691"),
                 i = n("446674"),
                 u = n("206230"),
                 o = n("91653"),
-                l = n("471671"),
-                a = n("315102"),
-                E = n("53708"),
-                _ = t => {
+                l = n("697218"),
+                a = n("471671"),
+                E = n("315102"),
+                _ = n("53708"),
+                s = t => {
                     let {
                         user: e,
                         size: n,
-                        animateOnHover: _ = !1,
-                        showPending: s = !1,
-                        showTryItOut: c = !1,
-                        avatarDecorationOverride: T
-                    } = t, [d, S] = r.useState(!1), A = (0, i.useStateFromStores)([u.default], () => u.default.useReducedMotion), I = (0, i.useStateFromStores)([l.default], () => l.default.isFocused()), {
-                        pendingAvatarDecoration: f
+                        animateOnHover: s = !1,
+                        showPending: c = !1,
+                        showTryItOut: T = !1,
+                        avatarDecorationOverride: d
+                    } = t, [S, A] = r.useState(!1), I = (0, i.useStateFromStores)([u.default], () => u.default.useReducedMotion), f = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), C = (0, i.useStateFromStores)([l.default], () => {
+                        var t;
+                        return null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id
+                    }), R = (0, i.useStateFromStores)([l.default], () => {
+                        var t;
+                        return null === (t = l.default.getUser(null == e ? void 0 : e.id)) || void 0 === t ? void 0 : t.avatarDecoration
+                    }), {
+                        pendingAvatarDecoration: N
                     } = (0, o.default)({
-                        isTryItOut: c
-                    }), C = I && (d || !A && !_), R = s && void 0 !== f ? f : null == e ? void 0 : e.avatarDecoration, N = r.useMemo(() => (0, a.getAvatarDecorationURL)({
-                        avatarDecoration: void 0 !== T ? T : R,
-                        canAnimate: C,
+                        isTryItOut: T
+                    }), v = f && (S || !I && !s), O = c && void 0 !== N && void 0 !== C && C === (null == e ? void 0 : e.id) ? N : null != R ? R : null == e ? void 0 : e.avatarDecoration, g = r.useMemo(() => (0, E.getAvatarDecorationURL)({
+                        avatarDecoration: void 0 !== d ? d : O,
+                        canAnimate: v,
                         size: n
-                    }), [R, C, n, T]), O = r.useCallback(() => S(!0), []), v = r.useCallback(() => S(!1), []);
+                    }), [O, v, n, d]), D = r.useCallback(() => A(!0), []), L = r.useCallback(() => A(!1), []);
                     return {
-                        avatarPlaceholderSrc: E,
-                        avatarDecorationSrc: N,
-                        isAvatarDecorationAnimating: C,
+                        avatarPlaceholderSrc: _,
+                        avatarDecorationSrc: g,
+                        isAvatarDecorationAnimating: v,
                         eventHandlers: {
-                            onMouseEnter: O,
-                            onMouseLeave: v
+                            onMouseEnter: D,
+                            onMouseLeave: L
                         }
                     }
                 }
@@ -404,10 +411,10 @@
                     return N
                 },
                 getProfileEffectsFromCategories: function() {
-                    return O
+                    return v
                 },
                 groupProfileEffects: function() {
-                    return v
+                    return O
                 },
                 sortProfileEffectsByPopularity: function() {
                     return U
@@ -473,10 +480,10 @@
                     return "".concat(location.protocol).concat(i).concat(a, "?size=").concat(u)
                 },
                 N = t => A(t, u.CollectiblesItemType.PROFILE_EFFECT),
-                O = t => I(t, u.CollectiblesItemType.PROFILE_EFFECT),
-                v = (t, e) => {
+                v = t => I(t, u.CollectiblesItemType.PROFILE_EFFECT),
+                O = (t, e) => {
                     let n = N(e),
-                        r = O(t).filter(t => {
+                        r = v(t).filter(t => {
                             let {
                                 id: e
                             } = t;
@@ -654,10 +661,10 @@
                     return N
                 },
                 MAX_GUILD_BANNER_OVERLAY_HEIGHT: function() {
-                    return O
+                    return v
                 },
                 MAX_SCHEDULED_EVENT_IMAGE_OVERLAY_HEIGHT: function() {
-                    return v
+                    return O
                 },
                 MAX_HOME_HEADER_OVERLAY_HEIGHT: function() {
                     return g
@@ -688,8 +695,8 @@
                 C = 2.5,
                 R = 4,
                 N = a / I,
-                O = a / f,
-                v = a / C,
+                v = a / f,
+                O = a / C,
                 g = a / R,
                 D = l.BACKGROUND_REPLACEMENT_SIZE.width / l.BACKGROUND_REPLACEMENT_SIZE.height,
                 L = a / D;
@@ -946,13 +953,13 @@
                 } = (0, E.default)({}), R = (0, i.useStateFromStores)([l.default], () => null != n && null != e ? l.default.getMember(n, e.id) : null), N = r.useMemo(() => null != e ? (0, o.getPreviewAvatar)(s ? null != T ? T : C : void 0, R, e, {
                     canAnimate: f,
                     size: _
-                }) : void 0, [s, C, R, e, f, _, T]), O = r.useCallback(() => S(!0), []), v = r.useCallback(() => S(!1), []);
+                }) : void 0, [s, C, R, e, f, _, T]), v = r.useCallback(() => S(!0), []), O = r.useCallback(() => S(!1), []);
                 return {
                     avatarSrc: N,
                     isAvatarAnimating: f,
                     eventHandlers: {
-                        onMouseEnter: O,
-                        onMouseLeave: v
+                        onMouseEnter: v,
+                        onMouseLeave: O
                     }
                 }
             }
@@ -970,19 +977,19 @@
                 C = n("913144"),
                 R = n("49111");
             let N = R.FormStates.CLOSED,
-                O = {},
-                v = !1;
+                v = {},
+                O = !1;
 
             function g() {
-                N = R.FormStates.OPEN, O = {}
+                N = R.FormStates.OPEN, v = {}
             }
 
             function D() {
-                N = R.FormStates.CLOSED, O = {}
+                N = R.FormStates.CLOSED, v = {}
             }
 
             function L() {
-                P(), U(), O = {}
+                P(), U(), v = {}
             }
 
             function P() {
@@ -1001,7 +1008,7 @@
                     return N
                 }
                 getErrors() {
-                    return O
+                    return v
                 }
                 showNotice() {
                     return void 0 !== r || void 0 !== l || void 0 !== a || void 0 !== E || void 0 !== _ || void 0 !== s || void 0 !== u || void 0 !== o || void 0 !== i
@@ -1071,7 +1078,7 @@
                     }
                 }
                 getIsDisableSubmit() {
-                    return v
+                    return O
                 }
             }
             m.displayName = "UserSettingsAccountStore";
@@ -1090,12 +1097,12 @@
                     L(), F(), D()
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT: function() {
-                    N = R.FormStates.SUBMITTING, O = {}
+                    N = R.FormStates.SUBMITTING, v = {}
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: function(t) {
                     var e;
                     if (N !== R.FormStates.SUBMITTING) return !1;
-                    N = R.FormStates.OPEN, O = null !== (e = t.errors) && void 0 !== e ? e : {}
+                    N = R.FormStates.OPEN, v = null !== (e = t.errors) && void 0 !== e ? e : {}
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: function(t) {
                     let {
@@ -1188,7 +1195,7 @@
                     c = e
                 },
                 USER_SETTINGS_CLEAR_ERRORS: function() {
-                    O = {}
+                    v = {}
                 },
                 USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: P,
                 USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: U,
@@ -1204,7 +1211,7 @@
                     let {
                         disable: e
                     } = t;
-                    v = e
+                    O = e
                 }
             })
         },
@@ -1234,4 +1241,4 @@
         }
     }
 ]);
-//# sourceMappingURL=779806ead22854edb242.js.map
+//# sourceMappingURL=354de5ec5a0ac73e08ab.js.map

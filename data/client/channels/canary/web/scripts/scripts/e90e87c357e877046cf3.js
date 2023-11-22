@@ -787,12 +787,13 @@
                 } = (0, S.usePrivateChannelIntegrationState)({
                     channelId: null !== (r = null == eE ? void 0 : eE.id) && void 0 !== r ? r : ""
                 }), eT = null == ef ? void 0 : ef.application, e_ = ep && null != eP.find(e => e.id === (null == eT ? void 0 : eT.id));
-                if (ec && (ee || i.isClyde()) && 0 === X) {
-                    Z(1);
-                    let e = new Image;
-                    e.src = ed, e.onload = () => Z(2)
-                }
-                n.useEffect(() => {
+                (0, n.useEffect)(() => {
+                    if (ec && (ee || i.isClyde()) && 0 === X) {
+                        Z(1);
+                        let e = new Image;
+                        e.src = ed, e.onload = () => Z(2)
+                    }
+                }, [i, ec, ee, ed, X]), n.useEffect(() => {
                     if (ei || !ee) return;
                     let e = null != E ? E : null == s ? void 0 : s.getBannerURL({
                         size: eu,
@@ -1327,4 +1328,4 @@
         }
     }
 ]);
-//# sourceMappingURL=860d3a9542e6af5c0562.js.map
+//# sourceMappingURL=e90e87c357e877046cf3.js.map
