@@ -3957,7 +3957,10 @@
   },
   "ACCOUNT_NOTIFICATION_SETTINGS": {
     "url": "/users/@me/notification-settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "VIDEO_FILTER_ASSETS": {
     "url": "/users/@me/video-filters/assets",
