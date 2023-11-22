@@ -33,7 +33,7 @@
 <p>Sync across clients will sync your Discord theme across all apps (desktop, mobile, and browser) when enabled.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15334645365655" alt="mobile_themes_select.png" width="302" height="654"></p>
 <h1 id="docs-internal-guid-51f77910-7fff-794e-2a41-ffedc9935412">How to Change the Message Display</h1>
-<p class="wysiwyg-text-align-left">While in Appearance, you can scroll down to find <strong>Message Display</strong>. There are two different Message Display options to choose from! options below that. <strong>Cozy </strong>is a beautiful, modern version that’s more spaced out and displays user icons in the chat window. <strong>Compact</strong> view removes user icons and ensures a tight chat window for more messages.</p>
+<p class="wysiwyg-text-align-left">While in Appearance, you can scroll down to find <strong>Message Display</strong>. There are two different Message Display options to choose from! <strong>Cozy </strong>is a beautiful, modern version that’s more spaced out and displays user icons in the chat window. <strong>Compact</strong> view removes user icons and ensures a tight chat window for more messages.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19212887905687" alt="image6.png"></p>
 <p id="docs-internal-guid-4cd86e93-7fff-0e05-6590-d10fd909bfcb"><strong>DARK &amp; COZY</strong></p>
 <p><strong><img src="https://support.discord.com/hc/article_attachments/19212887908119" alt="image3.png"></strong></p>
@@ -43,7 +43,7 @@
 <h3 id="h_01HFQGZ52J7EV8Y9V22N76BY19"><span style="color: #434343;">Note: These steps may appear slightly different on mobile. </span></h3>
 <h1 id="h_01GVKPE217FV5H5NQZV564RRAR"><span id="docs-internal-guid-d2c361b2-7fff-edc2-4fdc-4548db814019">Can I use a color for my theme?</span></h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19212872430871" alt="image11.png"></p>
-<p id="docs-internal-guid-4c8edfb7-7fff-7349-ce32-65ceeb541321">With a <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> membership, you’ll be able to choose from additional themes for your Discord app on all platforms! </p>
+<p id="docs-internal-guid-4c8edfb7-7fff-7349-ce32-65ceeb541321">With a <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> membership, you’ll be able to choose from additional themes for your Discord app on all platforms!</p>
 <p>Navigate to your <strong>User Settings</strong> and go to the <strong>Appearance</strong> tab in the left-hand menu panel to see all themes.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19212872435607" alt="image9.png"></p>
 <p class="wysiwyg-text-align-left"><span id="docs-internal-guid-1365b38c-7fff-be36-4b71-ff3e082928cf">You can also preview what any theme looks like regardless of if you have Nitro or not.  To preview any theme, press the  </span><strong>Preview Theme</strong> button, which will take you back into your Discord app with a preview sidebar. From here, you can select different themes to see how they look.</p>
