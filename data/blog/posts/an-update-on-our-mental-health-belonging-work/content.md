@@ -1,8 +1,10 @@
 <div class="w-layout-grid grid-branding">
     <div id="w-node-_682ba5bf-e04f-2536-35cb-8e92dc53082e-d9fcf1f6" class="title-wrapper">
         <div class="safetie-author-wrapper">
-            <div class="safetie-author-photo-wrapper"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2.png" loading="lazy" alt="" sizes="100vw" srcset="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2-p-500.png 500w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2-p-800.png 800w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2.png 810w" class="safetie-author-image">
+            <div class="safetie-author-photo-wrapper"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2.png" loading="lazy" alt="" sizes="(max-width: 479px) 60px, (max-width: 991px) 70px, 90px" srcset="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2-p-500.png 500w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2-p-800.png 800w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2.png 810w" class="safetie-author-image">
                 <div class="safetie-author-title">Liz Hegarty</div>
+                <div class="w-dyn-bind-empty"></div>
+                <div class="padding-32px"></div>
             </div>
             <div>
                 <div class="link-blue-16px safetie w-dyn-bind-empty"></div>
