@@ -35,6 +35,7 @@ export class Scripts implements Module {
     routes: File | null;
     strings: File | null;
     mainScript: File;
+    html: string;
   };
   #build?: Build;
   #webBuild: WebBuild;
@@ -90,6 +91,11 @@ export class Scripts implements Module {
         null,
         2
       )
+    );
+
+    await writeFile(
+      join(this.baseDir, "index.html"),
+      beautify(files.html, "html")
     );
 
     for (const file of files.scripts ?? []) {
@@ -223,6 +229,7 @@ export class Scripts implements Module {
       routes: routesScript ?? null,
       strings: stringsScript ?? null, // contains all strings
       mainScript: mainScript!, // contains build info
+      html: res,
     };
 
     return this.#files;
