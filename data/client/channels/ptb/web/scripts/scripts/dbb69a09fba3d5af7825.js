@@ -16639,6 +16639,7 @@
                 POLL_ANSWER_VOTED_ARIA: "You voted for this answer",
                 POLL_OPTIONS_ARIA: "Poll options",
                 CREATE_POLL: "Create Poll",
+                CREATE_POLL_HEADING: "Create a Poll",
                 CREATE_POLL_EXPIRATION: "Poll will be live for 24 hours",
                 CREATE_POLL_QUESTION_PLACEHOLDER: "What question do you want to ask?",
                 CREATE_POLL_LAYOUT_DEFAULT: "Default layout",
@@ -18219,9 +18220,9 @@
             E.r(_), E("190709"), E("996763");
             var t = E("286235");
             E("792736"), E("279295"), E("455209"), E("619106"), E("271938"), E("760190"), E("407117"), E("668528"), E("322876");
-            var o = E("817736"),
-                n = E("171718"),
-                r = E("404073"),
+            var o = E("171718"),
+                n = E("404073"),
+                r = E("503586"),
                 a = E("446674"),
                 i = E("429030"),
                 I = E("688817"),
@@ -18235,9 +18236,9 @@
                 R = E("648387"),
                 l = E("49111"),
                 u = E("782340");
-            (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
+            (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248463", ", Version Hash: ").concat("c4c4b6cb1014bbf39c12755997245164aa87c36c")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248493", ", Version Hash: ").concat("3e353845e4cfd3f50fe3b29964fbf417a5c31704")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20525,8 +20526,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "248463", "248463"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248463")), _ = 0), _
+                let _ = parseInt((e = "248493", "248493"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248493")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36299,6 +36300,19 @@
                 }
             })
         },
+        503586: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                batchUpdates: function() {
+                    return o
+                }
+            });
+            var t = E("817736");
+
+            function o(e) {
+                (0, t.unstable_batchedUpdates)(e)
+            }
+        },
         435660: function(e, _, E) {
             "use strict";
             var t;
@@ -36387,4 +36401,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4033adcc2071af6d31d9.js.map
+//# sourceMappingURL=dbb69a09fba3d5af7825.js.map
