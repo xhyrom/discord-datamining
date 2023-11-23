@@ -19107,22 +19107,22 @@
                 innerBadge: "innerBadge__2f562"
             }
         },
-        415973: function(e, t, o) {
+        877055: function(e, t, o) {
             "use strict";
             e.exports = {
-                answerInputsContainer: "answerInputsContainer__7160e",
-                closeIcon: "closeIcon_af678b",
-                container: "container_e78017",
-                defaultContainer: "defaultContainer_bf47e3",
-                footer: "footer__9fa48",
-                form: "form__15f72",
-                formInput: "formInput_f4ef33",
-                header: "header_b229ef",
-                headerText: "headerText_a04687",
-                imageOnlyContainer: "imageOnlyContainer__87813",
-                postButton: "postButton__42d75",
-                postButtonInner: "postButtonInner__8d85f",
-                postIcon: "postIcon__8b0b3"
+                answerInputsContainer: "answerInputsContainer__22676",
+                closeIcon: "closeIcon_f53e1e",
+                container: "container__1b71e",
+                content: "content__808b1",
+                defaultContainer: "defaultContainer__28189",
+                footer: "footer__1028f",
+                formInput: "formInput_c28524",
+                header: "header__96d08",
+                headerText: "headerText__35f81",
+                imageOnlyContainer: "imageOnlyContainer__036ec",
+                postButton: "postButton_bf09d5",
+                postButtonInner: "postButtonInner_bb4fbb",
+                postIcon: "postIcon_a3224d"
             }
         },
         105335: function(e, t, o) {
