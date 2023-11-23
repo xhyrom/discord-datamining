@@ -16610,6 +16610,7 @@
   "POLL_ANSWER_VOTED_ARIA": "\"You voted for this answer\"",
   "POLL_OPTIONS_ARIA": "\"Poll options\"",
   "CREATE_POLL": "\"Create Poll\"",
+  "CREATE_POLL_HEADING": "\"Create a Poll\"",
   "CREATE_POLL_EXPIRATION": "\"Poll will be live for 24 hours\"",
   "CREATE_POLL_QUESTION_PLACEHOLDER": "\"What question do you want to ask?\"",
   "CREATE_POLL_LAYOUT_DEFAULT": "\"Default layout\"",
