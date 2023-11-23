@@ -3,6 +3,8 @@
         <div class="safetie-author-wrapper">
             <div class="safetie-author-photo-wrapper"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af2f03d63855d32c69dfdf_6439dcd332308112d6b8d587_headshot_square(1).png" loading="lazy" alt="" class="safetie-author-image">
                 <div class="safetie-author-title">Clint Smith</div>
+                <div class="w-dyn-bind-empty"></div>
+                <div class="padding-32px"></div>
             </div>
             <div>
                 <div class="link-blue-16px safetie w-dyn-bind-empty"></div>
