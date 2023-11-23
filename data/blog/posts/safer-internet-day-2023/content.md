@@ -3,6 +3,8 @@
         <div class="safetie-author-wrapper">
             <div class="safetie-author-photo-wrapper w-condition-invisible"><img src="" loading="lazy" alt="" class="safetie-author-image w-dyn-bind-empty">
                 <div class="safetie-author-title w-dyn-bind-empty"></div>
+                <div class="w-dyn-bind-empty"></div>
+                <div class="padding-32px"></div>
             </div>
             <div>
                 <div class="link-blue-16px safetie">Parents &amp; Educators</div>
