@@ -1,13 +1,237 @@
 [
   {
-    "id": "1096190356233670716",
-    "name": "Collectibles",
+    "id": "356869127241072640",
+    "name": "League of Legends",
+    "icon": "5a15a24a3931880801709a32accd0a1d",
+    "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
+    "summary": "",
+    "type": 1,
+    "splash": "9915146539e20aceff096bd4e856aab3",
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "League of Legends (TW)"
+    ],
+    "guild_id": "417825368062558219",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      }
+    ],
+    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
+    "publishers": [
+      {
+        "id": "521816780168232961",
+        "name": "Riot Games, Inc"
+      },
+      {
+        "id": "521816780168232960",
+        "name": "Riot Games"
+      }
+    ],
+    "developers": [
+      {
+        "id": "521816780168232960",
+        "name": "Riot Games"
+      }
+    ],
+    "flags": 0
+  },
+  {
+    "id": "426537812993638400",
+    "name": "Bloxlink",
+    "icon": "746124a5a40305b92d6dc4e983fd1de2",
+    "description": "Bring over Roblox to your Discord server!\n\nUse /help for help. \n\nDisclaimer: Bloxlink is not affiliated with Roblox.",
+    "summary": "",
+    "type": 1,
+    "primary_sku_id": "1022656689784225922",
+    "hook": true,
+    "slug": "bloxlink",
+    "guild_id": "372036754078826496",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.iubenda.com/terms-and-conditions/11935974",
+    "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
+    "custom_install_url": "https://discord.com/oauth2/authorize?scope=bot%20applications.commands&client_id=426537812993638400&permissions=1007021144",
+    "verify_key": "2c91576649e2fa33c00395c1b71dec6b61dc25cc0c8c4b552383cda8bfac5ac7",
+    "flags": 10797056,
+    "tags": [
+      "binds",
+      "moderation",
+      "roblox",
+      "rover",
+      "verification"
+    ]
+  },
+  {
+    "id": "1042836142560645130",
+    "name": "Solana",
+    "icon": "555fde45979c3cb3485d4674d051f16f",
+    "description": "Verify your Solana wallet. \n\nLink your wallet to your Discord profile to provide metadata like:\n\n- Wallet Age (based on date of first transaction)\n- Recently Active Wallet (based on date of most recent transaction)\n- Funded Wallet (does wallet have at least 0.1 Sol?)\n- Bonfida Shortname (if applicable)\n\nServer admins can use this data to create \"verified roles\" and gate channels on those roles.",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "910194960941338677",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://realms.today/terms",
+    "privacy_policy_url": "https://realms.today/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "bot",
+        "applications.commands"
+      ],
+      "permissions": "2147483648"
+    },
+    "verify_key": "44f303108eabcaf6c098da389049d8c52225d0dc3b5c11ce7daa009b31edecac",
+    "flags": 10485760,
+    "tags": [
+      "crypto",
+      "solana",
+      "verified roles"
+    ]
+  },
+  {
+    "id": "296023718839451649",
+    "name": "Charlemagne",
+    "icon": "ef0816821b254e4605f5a75408192ba3",
+    "description": "The Destiny 2 Discord warmind.\n\nSupercharge  your server at https://warmind.io/subscribe/uncommon for unlimited autoroles, clan admin ops, and priority notifications!",
+    "summary": "",
+    "type": null,
+    "primary_sku_id": "1168932216332623912",
+    "hook": true,
+    "slug": "charlemagne",
+    "guild_id": "291026626647425025",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://warmind.io/tos",
+    "privacy_policy_url": "https://warmind.io/privacy",
+    "custom_install_url": "https://warmind.io/add_me",
+    "verify_key": "df9b87f00a126f2ffc458c8dca7ce69f47dfa7ad690e23b0a95150817ce56e34",
+    "flags": 10506240,
+    "tags": [
+      "Destiny",
+      "Destiny 2",
+      "Events",
+      "LFG",
+      "Video Games"
+    ]
+  },
+  {
+    "id": "979802510766268446",
+    "name": "DeviantArt",
+    "icon": "0339b2bf25ba003ad1b406211b146811",
+    "description": "DeviantArt integration",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "745658456052203571",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.deviantart.com/about/policy/service/",
+    "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
+    "install_params": {
+      "scopes": [
+        "applications.commands",
+        "bot"
+      ],
+      "permissions": "2415921154"
+    },
+    "verify_key": "fa8c8fe05873f1a1aa68e331b44396d1deadbe430ec38b4c66814db5453b18c1",
+    "flags": 10485760,
+    "tags": [
+      "art",
+      "community",
+      "deviantart",
+      "drawing",
+      "painting"
+    ]
+  },
+  {
+    "id": "1031611223235637258",
+    "name": "JEFIT",
+    "icon": "92dccdc75139cf9f5aaf4d9dafa290d5",
+    "description": "Share your workout routine with friends with Jefit.  With a robust mobile app for workout planning and tracking you can easily track your progress and then share each workout with your friends!  Just sync your Jefit and Discord accounts and type /jefit to show everyone what exercises you're doing, the amount of weight, number of reps, number of sets, and what your full workout looks like.",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "1044369086370562108",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.jefit.com/terms-of-use",
+    "privacy_policy_url": "https://www.jefit.com/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "bot",
+        "applications.commands"
+      ],
+      "permissions": "8"
+    },
+    "verify_key": "e52b8d7af9a41c33b81e47b0e438a5bb6fa18105685038280a174b0adf9e75bb",
+    "flags": 10485760,
+    "tags": [
+      "exercise",
+      "fitness",
+      "gym",
+      "tracker",
+      "workout"
+    ]
+  },
+  {
+    "id": "512333785338216465",
+    "name": "Captcha.bot",
+    "icon": "f43bfe6b62b3c38002b3c1cb5100a11a",
+    "description": "Verification for your online communities done right.\n**Only official site:** https://captcha.bot\n\nBy using Captcha.bot you agree to: https://captcha.bot/legal",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "855215899392081971",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://captcha.bot/legal",
+    "privacy_policy_url": "https://captcha.bot/legal",
+    "custom_install_url": "https://captcha.bot/invite",
+    "verify_key": "4ea8d61df50440e5963c355534243a64dd728a034516af5b38d2fc27cf1d4e73",
+    "flags": 10797056,
+    "tags": [
+      "Alt accounts",
+      "Captcha",
+      "Phishing",
+      "Spam",
+      "Verification"
+    ]
+  },
+  {
+    "id": "834488117758001152",
+    "name": "Stage Channels",
     "icon": null,
     "description": "",
     "summary": "",
     "type": null,
     "hook": true,
-    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
+    "verify_key": "04223c3b4feb0c92673002d9d98b122ac7d05e7e5761273580435461aac3304c",
     "flags": 0
   },
   {
@@ -150,7 +374,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -160,7 +384,7 @@
           "label_until": null,
           "release_phase": "in_development"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -205,17 +429,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 2,
+          "label_until": "2023-10-24T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
         },
         "android": {
-          "label_type": 2,
-          "label_until": "2023-10-24T00:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
@@ -260,17 +484,17 @@
       "free_period_starts_at": "2023-05-15T16:30:00+00:00",
       "free_period_ends_at": "2023-06-16T07:00:00+00:00",
       "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -315,17 +539,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        },
         "ios": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
         "web": {
+          "label_type": 1,
+          "label_until": "2023-07-13T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
@@ -368,12 +592,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -484,12 +708,12 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -534,12 +758,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -590,12 +814,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -646,17 +870,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -706,12 +930,12 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -756,17 +980,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -821,12 +1045,12 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -872,17 +1096,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -927,17 +1151,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1092,6 +1316,11 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-11-21T09:00:00+00:00",
+          "release_phase": "global_launch"
+        },
         "android": {
           "label_type": 1,
           "label_until": "2023-11-21T01:00:00+00:00",
@@ -1100,11 +1329,6 @@
         "web": {
           "label_type": 1,
           "label_until": "2023-11-20T09:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-11-21T09:00:00+00:00",
           "release_phase": "global_launch"
         }
       },
@@ -1121,7 +1345,7 @@
   {
     "id": "1106787098452832296",
     "name": "Colonist.io",
-    "icon": "19afbe4b0494b686252b89856a6fe00e",
+    "icon": "2f15038b8c83e221182c3c6fb6ea0814",
     "description": "Colonist.io is a web based, free online alternative to the challenging social and strategy based board game Settlers of Catan. You take on the role of a Colonist by building a civilization and expanding your territory. Colonist combines extremely simple rules with tremendously deep gameplay. Utilize strategy, planning, and cunning negotiation to win.",
     "summary": "",
     "type": null,
@@ -1153,15 +1377,15 @@
           "label_until": null,
           "release_phase": "in_development"
         },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "soft_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "soft_launch"
         }
       },
       "shelf_rank": 2,
@@ -1240,6 +1464,17 @@
     "flags": 0
   },
   {
+    "id": "1096190356233670716",
+    "name": "Collectibles",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
+    "flags": 0
+  },
+  {
     "id": "710982414301790216",
     "name": "Stickers",
     "icon": null,
@@ -1248,241 +1483,6 @@
     "type": null,
     "hook": true,
     "verify_key": "4be0b338ea2e6b55ca654be7d08534b99260888d08b7f2636cca1a962a5cd21b",
-    "flags": 0
-  },
-  {
-    "id": "356869127241072640",
-    "name": "League of Legends",
-    "icon": "5a15a24a3931880801709a32accd0a1d",
-    "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
-    "summary": "",
-    "type": 1,
-    "splash": "9915146539e20aceff096bd4e856aab3",
-    "overlay": true,
-    "hook": true,
-    "aliases": [
-      "League of Legends (TW)"
-    ],
-    "guild_id": "417825368062558219",
-    "executables": [
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      }
-    ],
-    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
-    "publishers": [
-      {
-        "id": "521816780168232961",
-        "name": "Riot Games, Inc"
-      },
-      {
-        "id": "521816780168232960",
-        "name": "Riot Games"
-      }
-    ],
-    "developers": [
-      {
-        "id": "521816780168232960",
-        "name": "Riot Games"
-      }
-    ],
-    "flags": 0
-  },
-  {
-    "id": "426537812993638400",
-    "name": "Bloxlink",
-    "icon": "746124a5a40305b92d6dc4e983fd1de2",
-    "description": "Bring over Roblox to your Discord server!\n\nUse /help for help. \n\nDisclaimer: Bloxlink is not affiliated with Roblox.",
-    "summary": "",
-    "type": 1,
-    "primary_sku_id": "1022656689784225922",
-    "hook": true,
-    "slug": "bloxlink",
-    "guild_id": "372036754078826496",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://www.iubenda.com/terms-and-conditions/11935974",
-    "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
-    "custom_install_url": "https://discord.com/oauth2/authorize?scope=bot%20applications.commands&client_id=426537812993638400&permissions=1007021144",
-    "verify_key": "2c91576649e2fa33c00395c1b71dec6b61dc25cc0c8c4b552383cda8bfac5ac7",
-    "flags": 10797056,
-    "tags": [
-      "binds",
-      "moderation",
-      "roblox",
-      "rover",
-      "verification"
-    ]
-  },
-  {
-    "id": "1042836142560645130",
-    "name": "Solana",
-    "icon": "555fde45979c3cb3485d4674d051f16f",
-    "description": "Verify your Solana wallet. \n\nLink your wallet to your Discord profile to provide metadata like:\n\n- Wallet Age (based on date of first transaction)\n- Recently Active Wallet (based on date of most recent transaction)\n- Funded Wallet (does wallet have at least 0.1 Sol?)\n- Bonfida Shortname (if applicable)\n\nServer admins can use this data to create \"verified roles\" and gate channels on those roles.",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "910194960941338677",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://realms.today/terms",
-    "privacy_policy_url": "https://realms.today/privacy-policy",
-    "install_params": {
-      "scopes": [
-        "applications.commands",
-        "bot"
-      ],
-      "permissions": "2147483648"
-    },
-    "verify_key": "44f303108eabcaf6c098da389049d8c52225d0dc3b5c11ce7daa009b31edecac",
-    "flags": 10485760,
-    "tags": [
-      "crypto",
-      "solana",
-      "verified roles"
-    ]
-  },
-  {
-    "id": "296023718839451649",
-    "name": "Charlemagne",
-    "icon": "ef0816821b254e4605f5a75408192ba3",
-    "description": "The Destiny 2 Discord warmind.\n\nSupercharge  your server at https://warmind.io/subscribe/uncommon for unlimited autoroles, clan admin ops, and priority notifications!",
-    "summary": "",
-    "type": null,
-    "primary_sku_id": "1168932216332623912",
-    "hook": true,
-    "slug": "charlemagne",
-    "guild_id": "291026626647425025",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://warmind.io/tos",
-    "privacy_policy_url": "https://warmind.io/privacy",
-    "custom_install_url": "https://warmind.io/add_me",
-    "verify_key": "df9b87f00a126f2ffc458c8dca7ce69f47dfa7ad690e23b0a95150817ce56e34",
-    "flags": 10506240,
-    "tags": [
-      "Destiny",
-      "Destiny 2",
-      "Events",
-      "LFG",
-      "Video Games"
-    ]
-  },
-  {
-    "id": "979802510766268446",
-    "name": "DeviantArt",
-    "icon": "0339b2bf25ba003ad1b406211b146811",
-    "description": "DeviantArt integration",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "745658456052203571",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://www.deviantart.com/about/policy/service/",
-    "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
-    "install_params": {
-      "scopes": [
-        "applications.commands",
-        "bot"
-      ],
-      "permissions": "2415921154"
-    },
-    "verify_key": "fa8c8fe05873f1a1aa68e331b44396d1deadbe430ec38b4c66814db5453b18c1",
-    "flags": 10485760,
-    "tags": [
-      "art",
-      "community",
-      "deviantart",
-      "drawing",
-      "painting"
-    ]
-  },
-  {
-    "id": "1031611223235637258",
-    "name": "JEFIT",
-    "icon": "92dccdc75139cf9f5aaf4d9dafa290d5",
-    "description": "Share your workout routine with friends with Jefit.  With a robust mobile app for workout planning and tracking you can easily track your progress and then share each workout with your friends!  Just sync your Jefit and Discord accounts and type /jefit to show everyone what exercises you're doing, the amount of weight, number of reps, number of sets, and what your full workout looks like.",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "1044369086370562108",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://www.jefit.com/terms-of-use",
-    "privacy_policy_url": "https://www.jefit.com/privacy-policy",
-    "install_params": {
-      "scopes": [
-        "applications.commands",
-        "bot"
-      ],
-      "permissions": "8"
-    },
-    "verify_key": "e52b8d7af9a41c33b81e47b0e438a5bb6fa18105685038280a174b0adf9e75bb",
-    "flags": 10485760,
-    "tags": [
-      "exercise",
-      "fitness",
-      "gym",
-      "tracker",
-      "workout"
-    ]
-  },
-  {
-    "id": "512333785338216465",
-    "name": "Captcha.bot",
-    "icon": "f43bfe6b62b3c38002b3c1cb5100a11a",
-    "description": "Verification for your online communities done right.\n**Only official site:** https://captcha.bot\n\nBy using Captcha.bot you agree to: https://captcha.bot/legal",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "855215899392081971",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://captcha.bot/legal",
-    "privacy_policy_url": "https://captcha.bot/legal",
-    "custom_install_url": "https://captcha.bot/invite",
-    "verify_key": "4ea8d61df50440e5963c355534243a64dd728a034516af5b38d2fc27cf1d4e73",
-    "flags": 10797056,
-    "tags": [
-      "Alt accounts",
-      "Captcha",
-      "Phishing",
-      "Spam",
-      "Verification"
-    ]
-  },
-  {
-    "id": "834488117758001152",
-    "name": "Stage Channels",
-    "icon": null,
-    "description": "",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "verify_key": "04223c3b4feb0c92673002d9d98b122ac7d05e7e5761273580435461aac3304c",
     "flags": 0
   }
 ]
