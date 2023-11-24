@@ -2,7 +2,7 @@
     <div id="w-node-e3246c00-6cef-7ff7-987c-bc455633a33a-d9fcf1f8" class="transparenty-content">
         <h1 class="new-h1 font-white safety grey-font">Transparency Reports</h1>
         <div class="p-400-16-white grey-f6">Transparency is one of our core values of safety. This Transparency Center is our commitment to provide insight into the enormous effort that goes into keeping a safe place for all.</div>
-        <div class="paddong-16px"></div>
+        <div class="padding-16px"></div>
         <div class="p-400-16-white grey-f7 text-bolt">Select the report date:</div>
         <div class="padding-24px"></div>
         <div class="dropdown_wrapper">
