@@ -83,7 +83,9 @@ export class Applications implements Module {
       "📱 Applications were updated",
       `${formatNumber(applications.length)} valid, ${formatNumber(
         invalidIds.length
-      )} invalid`
+      )} invalid`,
+      "",
+      "Co-Authored-By: Happy enderman <66224387+happyendermangit@users.noreply.github.com>"
     );
   }
 
