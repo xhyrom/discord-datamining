@@ -2081,10 +2081,7 @@
         4
       ],
       "config_keys": [
-        "enabled",
-        "hasTabUI",
-        "hasInfinite",
-        "hasFreeBursts"
+        "enabled"
       ]
     },
     "rollout": {
