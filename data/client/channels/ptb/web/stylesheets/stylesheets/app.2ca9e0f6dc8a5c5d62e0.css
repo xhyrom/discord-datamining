@@ -53690,7 +53690,13 @@ html .progress__4ef76 {
 }
 
 .segmentControlOption__79596 {
-    border-radius: 4px
+    border-radius: 4px;
+    color: var(--header-secondary)
+}
+
+.segmentControlOptionSelected_fa6c0e {
+    box-shadow: var(--shadow-low);
+    color: var(--interactive-active)
 }
 
 .clearStatusIcon_f08a92 {
@@ -123672,4 +123678,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.9bb311de8fde35829c50.css.map*/
+/*# sourceMappingURL=app.2ca9e0f6dc8a5c5d62e0.css.map*/

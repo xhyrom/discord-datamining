@@ -5617,6 +5617,7 @@
                 listContainer: "listContainer_c0b21e",
                 segmentControl: "segmentControl__626aa",
                 segmentControlOption: "segmentControlOption__79596",
+                segmentControlOptionSelected: "segmentControlOptionSelected_fa6c0e",
                 title: "title_f462e1"
             }
         },
