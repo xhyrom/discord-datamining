@@ -115,10 +115,12 @@
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1e3,
                     r = arguments.length > 2 ? arguments[2] : void 0,
                     o = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-                    s = (0, n.useForceUpdate)();
+                    s = (0, i.diffAsUnits)(Date.now(), e),
+                    a = (0, n.useForceUpdate)();
                 return (0, l.default)(() => {
-                    o || s(), null != r && r()
-                }, o ? null : t), (0, i.diffAsUnits)(Date.now(), e)
+                    let e = 0 === s.days && 0 === s.hours && 0 === s.minutes && 0 === s.seconds;
+                    !e && !o && (a(), null == r || r())
+                }, o ? null : t), s
             }
         },
         149638: function(e, t, r) {
@@ -2421,4 +2423,4 @@
         }
     }
 ]);
-//# sourceMappingURL=247c7c9950ec67e3fca2.js.map
+//# sourceMappingURL=0acee052fc9def9f05d1.js.map

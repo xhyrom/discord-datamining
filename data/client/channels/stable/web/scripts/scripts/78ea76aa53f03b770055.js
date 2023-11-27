@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["48449"], {
+    ["89163"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -4949,7 +4949,7 @@
                     hardwareClassificationForDecoupled: null !== (t = e.hardwareClassificationForDecoupled) && void 0 !== t ? t : null
                 }
             }, e => {
-                let t = l.default.getHardwareH264();
+                let t = null != l.default && l.default.getHardwareH264();
                 return {
                     ...e,
                     clipsSettings: {
@@ -5258,11 +5258,10 @@
                     fullscreen_panels: "Fullscreen panels",
                     disable_theme_key: "Disable reloading the entire app when the theme changes",
                     theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
-                    is_new_search_tab_bar: "Enables the design systems version of the search tab bar",
                     global_panels: "Use global panels for chat",
                     panels_navigator: "Use panels navigator",
                     cozy_header: "Cozy header",
-                    enable_file_link_redesign: "Enables the new file and links in search",
+                    disable_file_link_redesign: "Disables the new file and links in search",
                     enable_channel_emojis: "Enables channel emoji UI components"
                 },
                 o = {};
@@ -5941,15 +5940,13 @@
         126198: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                isRecentChannelsEnabled: function() {
-                    return l
+                getCombinedCurryExperimentValue: function() {
+                    return r
                 }
-            }), n("884691"), n("95410");
-            var i = n("650033");
-            n("362391");
-            var s = n("862205");
+            }), n("884691"), n("95410"), n("650033");
+            var i = n("862205");
             n("789563");
-            let a = [{
+            let s = [{
                     id: 2,
                     label: "App Navbar Always Visible",
                     config: {
@@ -5990,7 +5987,7 @@
                         launchIntoLastChannel: !1
                     }
                 }],
-                o = (0, s.createExperiment)({
+                a = (0, i.createExperiment)({
                     kind: "user",
                     id: "2023-06_mobile_redesign_curry_existing_users",
                     label: "Tabs V2 - Curry Existing Users",
@@ -5999,9 +5996,9 @@
                         recentChannels: !1,
                         launchIntoLastChannel: !1
                     },
-                    treatments: a
+                    treatments: s
                 }),
-                r = (0, s.createExperiment)({
+                o = (0, i.createExperiment)({
                     kind: "user",
                     id: "2023-06_mobile_redesign_curry_new_users",
                     label: "Tabs V2 - Curry New Users",
@@ -6010,17 +6007,15 @@
                         recentChannels: !1,
                         launchIntoLastChannel: !1
                     },
-                    treatments: a
+                    treatments: s
                 });
 
-            function l() {
-                var e;
-                if (i.default.get("enable_recently_active")) return !0;
-                return e = "recentChannels", !!o.getCurrentConfig({
+            function r(e) {
+                return !!a.getCurrentConfig({
                     location: "bcf97c_3"
                 }, {
                     autoTrackExposure: !1
-                })[e] || !!r.getCurrentConfig({
+                })[e] || !!o.getCurrentConfig({
                     location: "bcf97c_4"
                 }, {
                     autoTrackExposure: !1
@@ -6708,76 +6703,105 @@
             "use strict";
             n.r(t), n.d(t, {
                 isOnNewPanels: function() {
-                    return c
-                },
-                isSplitMessagesTab: function() {
                     return h
                 },
-                isSplitMessagesTabAndOnMessagesTab: function() {
+                useOnNewPanels: function() {
                     return p
                 },
-                shouldHandleNewPanelsRoute: function() {
+                isSplitMessagesTab: function() {
                     return f
+                },
+                isSplitMessagesTabAndOnMessagesTab: function() {
+                    return E
+                },
+                shouldHandleNewPanelsRoute: function() {
+                    return m
                 }
             });
-            var i = n("650033");
-            n("362391");
-            var s = n("21121"),
-                a = n("699145"),
-                o = n("102425"),
-                r = n("18108"),
-                l = n("446411"),
-                u = n("491246"),
-                d = n("49111");
-
-            function c() {
-                return (0, s.isInMainTabsExperiment)() ? !!(0, l.isOnGlobalPanels)() || (i.default.get("new_panels") || o.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showNewPanels || o.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showNewPanels || a.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showPanels || a.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showPanels ? ((0, r.updateIsInNewPanels)(!0), !0) : ((0, r.updateIsInNewPanels)(!1), !1)) : ((0, r.updateIsInNewPanels)(!1), !1)
-            }
+            var i = n("650033"),
+                s = n("362391"),
+                a = n("21121"),
+                o = n("699145"),
+                r = n("102425"),
+                l = n("18108"),
+                u = n("446411"),
+                d = n("491246"),
+                c = n("49111");
 
             function h() {
-                return !!(0, s.isInMainTabsExperiment)() && (!!(!c() || (0, l.isOnGlobalPanels)() || i.default.get("panels_split_messages_tab")) || !!o.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
+                return (0, a.isInMainTabsExperiment)() ? !!(0, u.isOnGlobalPanels)() || (i.default.get("new_panels") || r.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
+                    location: "isOnNewPanels"
+                }, {
+                    autoTrackExposure: !1
+                }).showNewPanels || r.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig({
+                    location: "isOnNewPanels"
+                }, {
+                    autoTrackExposure: !1
+                }).showNewPanels || o.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig({
+                    location: "isOnNewPanels"
+                }, {
+                    autoTrackExposure: !1
+                }).showPanels || o.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig({
+                    location: "isOnNewPanels"
+                }, {
+                    autoTrackExposure: !1
+                }).showPanels ? ((0, l.updateIsInNewPanels)(!0), !0) : ((0, l.updateIsInNewPanels)(!1), !1)) : ((0, l.updateIsInNewPanels)(!1), !1)
+            }
+
+            function p() {
+                let e = (0, a.useInMainTabsExperiment)(),
+                    t = (0, s.default)("new_panels"),
+                    n = r.MainTabsV2PanelsExperimentExistingUsers.useExperiment({
+                        location: "useOnNewPanels"
+                    }, {
+                        autoTrackExposure: !1
+                    }).showNewPanels,
+                    i = r.MainTabsV2PanelsExperimentNewUsers.useExperiment({
+                        location: "useOnNewPanels"
+                    }, {
+                        autoTrackExposure: !1
+                    }).showNewPanels,
+                    l = o.MainTabsV2OnePercentExperimentExistingUsers.useExperiment({
+                        location: "useOnNewPanels"
+                    }, {
+                        autoTrackExposure: !1
+                    }).showPanels,
+                    u = o.MainTabsV2OnePercentExperimentNewUsers.useExperiment({
+                        location: "useOnNewPanels"
+                    }, {
+                        autoTrackExposure: !1
+                    }).showPanels;
+                return e && (t || n || i || l || u)
+            }
+
+            function f() {
+                return !!(0, a.isInMainTabsExperiment)() && (!!(!h() || (0, u.isOnGlobalPanels)() || i.default.get("panels_split_messages_tab")) || !!r.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
-                }).isSplitMessagesTab || !!o.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig({
+                }).isSplitMessagesTab || !!r.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
-                }).isSplitMessagesTab || !!a.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig({
+                }).isSplitMessagesTab || !!o.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
-                }).showPanels || !!a.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig({
+                }).showPanels || !!o.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
                 }).showPanels || !1)
             }
 
-            function p() {
-                if (!h()) return !1;
-                let e = (0, u.default)();
+            function E() {
+                if (!f()) return !1;
+                let e = (0, d.default)();
                 return (null == e ? void 0 : e.name) === "messages"
             }
 
-            function f(e) {
-                return !(!c() || (0, l.isOnGlobalPanels)()) && (!h() || null != e && e !== d.ME)
+            function m(e) {
+                return !(!h() || (0, u.isOnGlobalPanels)()) && (!f() || null != e && e !== c.ME)
             }
         },
         491246: function(e, t, n) {
@@ -14468,7 +14492,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "247929"
+                                build_number: "248677"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21282,4 +21306,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cae0e971910e8ac7318b.js.map
+//# sourceMappingURL=78ea76aa53f03b770055.js.map

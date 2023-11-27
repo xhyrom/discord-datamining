@@ -1694,18 +1694,18 @@
                     compact: m = !1,
                     disableInteraction: _ = !1,
                     maxVisibleUsers: v = 3
-                } = e, [I, L] = r.useState(!1), D = r.useRef(new d.DelayedCall(150, () => L(!1))), x = (0, o.useStateFromStoresArray)([h.default, p.default], () => {
+                } = e, [I, L] = r.useState(!1), D = r.useRef(new d.DelayedCall(150, () => L(!1))), y = (0, o.useStateFromStoresArray)([h.default, p.default], () => {
                     if (l.type === g.ParticipantTypes.STREAM) {
                         let e = h.default.getViewerIds(l.id);
                         return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(C.isNotNullish) : N
                     }
                     return l.type === g.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(C.isNotNullish) : N : N
-                }, [l]), y = r.useCallback(() => {
+                }, [l]), x = r.useCallback(() => {
                     D.current.cancel(), L(!0)
                 }, []), R = r.useCallback(() => {
                     D.current.delay()
                 }, []), P = r.useCallback((e, t) => {
-                    y(), (0, f.openContextMenuLazy)(e, async () => {
+                    x(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await n.el("406784").then(n.bind(n, "406784"));
@@ -1716,29 +1716,29 @@
                     }, {
                         onClose: R
                     })
-                }, [R, y]);
-                if (0 === x.length) return null;
+                }, [R, x]);
+                if (0 === y.length) return null;
                 if (m) return (0, a.jsx)(O, {
                     maxVisibleUsers: v,
-                    users: x,
+                    users: y,
                     guildId: s,
                     channelId: t,
                     className: S,
                     participantType: l.type
                 });
-                let b = u(x).take(v).map(e => (0, a.jsx)(c.Avatar, {
+                let b = u(y).take(v).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: A.viewer
                 }, e.id)).value();
-                return x.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
+                return y.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
                     className: A.overflow,
-                    children: ["+", x.length - v + 1]
+                    children: ["+", y.length - v + 1]
                 }, "overflow")), (0, a.jsx)(E.default, {
                     section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
-                        onMouseEnter: y,
+                        onMouseEnter: x,
                         onMouseLeave: R,
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
@@ -1746,7 +1746,7 @@
                                 handleUserContextMenu: P,
                                 guildId: s,
                                 channelId: t,
-                                users: x,
+                                users: y,
                                 disableInteraction: _
                             }),
                             shouldShow: I,
@@ -2410,7 +2410,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-393c68021a9ed838231ebbcdcd0e2e82209a9dfb",
+                    release: "discord_web-b40993f8201b80064d50b3ddcc6fe4ecbb462acf",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2428,7 +2428,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "247929", "247929")), a.setTag("builtAt", String("1700604422836"));
+                }), a.setTag("buildNumber", (e = "248677", "248677")), a.setTag("builtAt", String("1701112923226"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2559,80 +2559,48 @@
             "use strict";
             n.r(t), n.d(t, {
                 updateHangStatus: function() {
-                    return s
+                    return r
                 },
                 updateCustomHangStatus: function() {
-                    return i
+                    return s
                 },
                 clearHangStatus: function() {
-                    return l
+                    return i
                 }
             });
-            var a = n("913144"),
-                r = n("699209");
+            var a = n("913144");
 
-            function s(e, t) {
-                let {
-                    enableHangStatus: n
-                } = r.HangStatusExperiment.getCurrentConfig({
-                    location: t
-                });
-                if (!n || null == e) {
-                    l();
+            function r(e, t) {
+                if (null == e) {
+                    i(t);
                     return
                 }
                 a.default.dispatch({
                     type: "UPDATE_HANG_STATUS",
-                    status: e
+                    status: e,
+                    saveAsDefault: t
                 })
             }
 
-            function i(e, t, n) {
-                let {
-                    enableHangStatus: s
-                } = r.HangStatusExperiment.getCurrentConfig({
-                    location: n
-                });
-                if (!s || "" === e) {
-                    l();
+            function s(e, t, n) {
+                if ("" === e) {
+                    i(n);
                     return
                 }
                 a.default.dispatch({
                     type: "UPDATE_HANG_STATUS_CUSTOM",
                     emoji: t,
-                    status: e
+                    status: e,
+                    saveAsDefault: n
                 })
             }
 
-            function l() {
+            function i(e) {
                 a.default.dispatch({
-                    type: "CLEAR_HANG_STATUS"
+                    type: "CLEAR_HANG_STATUS",
+                    saveAsDefault: e
                 })
             }
-        },
-        699209: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                HangStatusExperiment: function() {
-                    return r
-                }
-            });
-            var a = n("862205");
-            let r = (0, a.createExperiment)({
-                kind: "user",
-                id: "2023-11_enable_hang_status",
-                label: "Hang Statuses",
-                defaultConfig: {
-                    enableHangStatus: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "enable hang statuses",
-                    config: {
-                        enableHangStatus: !0
-                    }
-                }]
-            })
         },
         984519: function(e, t, n) {
             "use strict";
@@ -3310,7 +3278,7 @@
                     onClose: A,
                     onSelect: I,
                     appContext: M = _.AppContext.APP
-                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = v(n, r, l), D = (0, o.default)(N, M), x = (0, u.default)(N, M, _.NOOP_NULL), y = null == N ? (0, a.jsx)(s.MenuItem, {
+                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = v(n, r, l), D = (0, o.default)(N, M), y = (0, u.default)(N, M, _.NOOP_NULL), x = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: h.default,
@@ -3320,7 +3288,7 @@
                         id: "stream-settings",
                         label: T.default.Messages.SCREENSHARE_STREAM_QUALITY,
                         children: D
-                    }) : null, E ? x : null, O ? (0, a.jsx)(s.MenuItem, {
+                    }) : null, E ? y : null, O ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
                         label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
                         icon: h.default,
@@ -3354,7 +3322,7 @@
                                     action: () => (0, d.default)(t)
                                 }, "manage-stream-menu".concat(t.ownerId))
                             })
-                        }), c ? null : y]
+                        }), c ? null : x]
                     })
                 })
             }
@@ -4984,4 +4952,4 @@
         }
     }
 ]);
-//# sourceMappingURL=11b9a23059321bc0cd8b.js.map
+//# sourceMappingURL=ee5efe793118742ba9b1.js.map
