@@ -83713,6 +83713,51 @@ input::-webkit-inner-spin-button {
     margin: 0 auto
 }
 
+.avatarDecoration__9affd {
+    width: 48px;
+    height: 48px
+}
+
+.profileEffectContainer_dd2b9f {
+    position: relative;
+    width: 48px;
+    height: 60px
+}
+
+.profileEffect__8c12b {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top
+}
+
+.profileEffectBackground_c9a6c7 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px
+}
+
+.previewContainer_d611ef {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px solid var(--brand-500);
+    padding: 16px
+}
+
+.previewTextContainer__2fa3a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4px;
+    padding-left: 16px
+}
+
 .priceTagsContainer__56f89 {
     display: inline-flex;
     align-items: flex-end
@@ -123627,4 +123672,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.068e540c73de5c3c2adb.css.map*/
+/*# sourceMappingURL=app.2b7c4173a1e58079e4af.css.map*/
