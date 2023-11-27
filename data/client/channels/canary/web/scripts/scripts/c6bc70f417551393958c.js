@@ -5673,17 +5673,6 @@
                 badge: "badge__38d19"
             }
         },
-        477517: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                fullPrice: "fullPrice__7129e",
-                premiumIcon: "premiumIcon__7552e",
-                price: "price_f23b9d",
-                priceTag: "priceTag__6412e",
-                priceTagsContainer: "priceTagsContainer__56f89",
-                strikedPrice: "strikedPrice__3d62a"
-            }
-        },
         451594: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -5737,7 +5726,7 @@
                 premiumWheelTooltipContent: "premiumWheelTooltipContent_b77409",
                 previewButton: "previewButton_d97700",
                 previewButtonInner: "previewButtonInner__42555",
-                price: "price__420be",
+                priceTag: "priceTag_bc0599",
                 productName: "productName_c5d6c9",
                 profileEffectCheckmarkWrapper: "profileEffectCheckmarkWrapper_bd92bc checkmarkWrapper__00d04",
                 profileEffectShopPreview: "profileEffectShopPreview_b30d2e",
@@ -5817,6 +5806,22 @@
                 subscribeButton: "subscribeButton__04c7f"
             }
         },
+        173046: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                fullPrice: "fullPrice__60740",
+                premiumIcon: "premiumIcon_a11fa9",
+                priceTagsContainer: "priceTagsContainer_ec48ba",
+                strikedPrice: "strikedPrice__8ff25"
+            }
+        },
+        846367: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                heading: "heading__1a617",
+                price: "price_ed9315"
+            }
+        },
         483622: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -5842,11 +5847,15 @@
                 nonPremiumContainer: "nonPremiumContainer__1e8d5",
                 nonPremiumPrice: "nonPremiumPrice__59933",
                 premiumIcon: "premiumIcon_fdaf41",
+                premiumPriceTag: "premiumPriceTag__689f7",
+                premiumPriceTagIcon: "premiumPriceTagIcon__89d85",
                 previewsContainerInner: "previewsContainerInner__0209d",
                 priceTag: "priceTag_ff491e",
+                priceTagContainer: "priceTagContainer_d7594f",
                 primaryButtons: "primaryButtons_a62ae3",
                 profileCustomizationBody: "profileCustomizationBody__54bc4",
                 profileEffectPreviewsContainerInner: "profileEffectPreviewsContainerInner__6a362 previewsContainerInner__0209d",
+                subscribeNow: "subscribeNow_c2dbf4",
                 titleContainer: "titleContainer_faa17e",
                 titleImage: "titleImage__09f75",
                 tooltip: "tooltip__1a014",
