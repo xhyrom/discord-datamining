@@ -17233,16 +17233,23 @@
                         if (null == i) return null;
                         p.notifCenterLocalItems = [...p.notifCenterLocalItems, (0, E.incomingFriendRequestLocalItem)(i, n)]
                     }
-                    e.relationship.type === h.RelationshipTypes.FRIEND && (p.notifCenterLocalItems = p.notifCenterLocalItems.map(t => g(t, _.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, e.relationship.user.id) ? {
-                        ...t,
-                        acked: !0,
-                        forceUnacked: !1,
-                        local_id: "incoming_friend_requests_accepted_".concat(e.relationship.user.id, "_").concat(t.id),
-                        type: _.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED,
-                        body: f.default.Messages.NOTIFICATION_CENTER_INCOMING_FRIEND_REQUEST_ACCEPTED.format({
-                            username: "**".concat(e.relationship.user.username, "**")
-                        })
-                    } : t))
+                    e.relationship.type === h.RelationshipTypes.FRIEND && (p.notifCenterLocalItems = p.notifCenterLocalItems.map(t => {
+                        if (g(t, _.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, e.relationship.user.id)) {
+                            var n;
+                            let i = o.default.getUser(e.relationship.user.id);
+                            return {
+                                ...t,
+                                acked: !0,
+                                forceUnacked: !1,
+                                local_id: "incoming_friend_requests_accepted_".concat(e.relationship.user.id, "_").concat(t.id),
+                                type: _.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED,
+                                body: f.default.Messages.NOTIFICATION_CENTER_INCOMING_FRIEND_REQUEST_ACCEPTED.format({
+                                    username: "**".concat(null !== (n = null == i ? void 0 : i.globalName) && void 0 !== n ? n : e.relationship.user.username, "**")
+                                })
+                            }
+                        }
+                        return t
+                    }))
                 },
                 RELATIONSHIP_REMOVE: function(e) {
                     p.notifCenterLocalItems = p.notifCenterLocalItems.filter(t => !(g(t, _.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, e.relationship.id) || g(t, _.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id)) && !0)
@@ -17322,18 +17329,19 @@
                 d = (e, t) => e.acked || t !== a.NOTIFICATION_CENTER_ACKED_BEFORE_ID_UNSET && i.default.compare(t, e.id) >= 0;
 
             function c(e, t) {
-                let n = i.default.fromTimestamp(new Date(t).getTime());
+                var n;
+                let a = i.default.fromTimestamp(new Date(t).getTime());
                 return {
                     acked: !1,
                     forceUnacked: !0,
                     other_user: e,
                     kind: "notification-center-item",
-                    local_id: "incoming_friend_requests_".concat(e.id, "_").concat(n),
+                    local_id: "incoming_friend_requests_".concat(e.id, "_").concat(a),
                     deeplink: "https://discord.com/users/".concat(e.id),
                     type: s.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS,
-                    id: n,
+                    id: a,
                     body: u.default.Messages.NOTIFICATION_CENTER_INCOMING_FRIEND_REQUEST.format({
-                        username: "**".concat(e.username, "**")
+                        username: "**".concat(null !== (n = e.globalName) && void 0 !== n ? n : e.username, "**")
                     })
                 }
             }
@@ -33656,4 +33664,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9d7f2a9b15ef19cf558a.js.map
+//# sourceMappingURL=8888341c2566dcfa9cd1.js.map

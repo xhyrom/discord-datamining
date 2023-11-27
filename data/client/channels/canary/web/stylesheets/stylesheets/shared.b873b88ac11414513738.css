@@ -22933,7 +22933,8 @@ strong {
     right: 0
 }
 
-button.button__4f306 {
+button.button__4f306,
+span.button__4f306 {
     line-height: 0;
     width: 32px;
     height: 32px;
@@ -22945,12 +22946,14 @@ button.button__4f306 {
     color: var(--interactive-normal)
 }
 
-button.button__4f306.enabled__470f0:hover {
+button.button__4f306.enabled__470f0:hover,
+span.button__4f306.enabled__470f0:hover {
     color: var(--interactive-hover);
     background-color: var(--background-modifier-selected)
 }
 
-button.button__4f306.disabled_dc5630 {
+button.button__4f306.disabled_dc5630,
+span.button__4f306.disabled_dc5630 {
     opacity: .4
 }
 
@@ -26418,4 +26421,4 @@ button.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.c12a48e4fe7372a51217.css.map*/
+/*# sourceMappingURL=shared.b873b88ac11414513738.css.map*/
