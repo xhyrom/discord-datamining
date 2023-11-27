@@ -5764,12 +5764,6 @@
                 title: "title_febf25"
             }
         },
-        247629: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                coachmark: "coachmark__0e6e3"
-            }
-        },
         436752: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -5873,6 +5867,12 @@
                 cardTitle: "cardTitle__05039",
                 placeholderPulse: "placeholderPulse__86815",
                 skeleton: "skeleton__5ac25"
+            }
+        },
+        85174: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                art: "art__562f2"
             }
         },
         601664: function(e, t, o) {
@@ -7598,6 +7598,7 @@
                 button: "button__2c788",
                 buttonContainerHorizontal: "buttonContainerHorizontal__6dfc0",
                 buttonContainerVertical: "buttonContainerVertical__4e562",
+                centerLeftPointer: "centerLeftPointer_e91d1b",
                 confirmButton: "confirmButton_d80bfe",
                 content: "content__73f32",
                 contentNoArt: "contentNoArt__36baa",
@@ -7608,9 +7609,9 @@
                 gifTag: "gifTag__42f4e",
                 header: "header__7f549",
                 headerWithPremiumIcon: "headerWithPremiumIcon__17fee header__7f549",
-                leftPointer: "leftPointer__95323",
                 pointer: "pointer_cb5370",
                 premiumIcon: "premiumIcon_aca97a",
+                topLeftPointer: "topLeftPointer_f6f72a",
                 tryButton: "tryButton_bca111"
             }
         },

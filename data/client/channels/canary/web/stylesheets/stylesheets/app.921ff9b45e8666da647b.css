@@ -19469,8 +19469,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -49755,8 +49755,16 @@ html .progress__4ef76 {
     border-top-color: var(--brand-experiment)
 }
 
-.leftPointer__95323 {
+.centerLeftPointer_e91d1b {
     top: 50%;
+    left: -6px;
+    margin-top: -6px;
+    border-left: 0;
+    border-right: 6px solid var(--brand-experiment)
+}
+
+.topLeftPointer_f6f72a {
+    top: 22px;
     left: -6px;
     margin-top: -6px;
     border-left: 0;
@@ -70334,8 +70342,14 @@ html .progress__4ef76 {
     font-weight: 400
 }
 
-.coachmark__0e6e3 {
-    width: 296px
+.art__562f2 {
+    margin: 0 auto;
+    background-color: green;
+    width: 208px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .checkbox__0fbd2 {
@@ -123703,4 +123717,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.154113e94c31dd3d3533.css.map*/
+/*# sourceMappingURL=app.921ff9b45e8666da647b.css.map*/
