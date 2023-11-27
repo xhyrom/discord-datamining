@@ -385,7 +385,7 @@
                 get analyticsSource() {
                     return a
                 }
-                get initialItem() {
+                get initialProductSkuId() {
                     return l
                 }
                 getAnalytics() {
@@ -399,11 +399,11 @@
             var c = new d(o.default, {
                 COLLECTIBLES_SHOP_OPEN: e => {
                     var t, r;
-                    s = null !== (t = e.analyticsLocations) && void 0 !== t ? t : n, a = null !== (r = e.analyticsSource) && void 0 !== r ? r : null, l = e.initialItem
+                    s = null !== (t = e.analyticsLocations) && void 0 !== t ? t : n, a = null !== (r = e.analyticsSource) && void 0 !== r ? r : null, l = e.initialProductSkuId
                 },
                 COLLECTIBLES_SHOP_CLOSE: u,
                 COLLECTIBLES_PRODUCT_DETAILS_OPEN: e => {
-                    e.item.skuId === (null == l ? void 0 : l.skuId) && (l = void 0)
+                    e.item.skuId === l && (l = void 0)
                 },
                 LOGOUT: u
             })
@@ -1323,4 +1323,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3e0e66db7b3f24c3771f.js.map
+//# sourceMappingURL=44861421c4d872e50018.js.map

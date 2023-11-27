@@ -168,7 +168,7 @@
                                 numRoles: t.length
                             })
                         })]
-                    }), (0, n.jsx)(k, {
+                    }), (0, n.jsx)(B, {
                         ...a,
                         wrap: !0,
                         userRoles: t
@@ -204,8 +204,8 @@
                             label: D.default.Messages.COPY_ID_ROLE
                         })
                     })
-                }, [g.id]), U = (0, p.useToken)(m.default.unsafe_rawColors.PRIMARY_300).hsl(), F = null !== (r = g.colorString) && void 0 !== r ? r : U, w = null !== (o = (0, c.hex2rgb)(F, .6)) && void 0 !== o ? o : void 0, G = m.default.unsafe_rawColors.WHITE_500.css, B = (0, c.hex2int)(F);
-                null != B && .3 > (0, c.getDarkness)(B) && (G = m.default.unsafe_rawColors.PRIMARY_630.css), u = P ? (0, n.jsx)(S.default, {
+                }, [g.id]), U = (0, p.useToken)(m.default.unsafe_rawColors.PRIMARY_300).hsl(), F = null !== (r = g.colorString) && void 0 !== r ? r : U, w = null !== (o = (0, c.hex2rgb)(F, .6)) && void 0 !== o ? o : void 0, G = m.default.unsafe_rawColors.WHITE_500.css, k = (0, c.hex2int)(F);
+                null != k && .3 > (0, c.getDarkness)(k) && (G = m.default.unsafe_rawColors.PRIMARY_630.css), u = P ? (0, n.jsx)(S.default, {
                     className: j.roleFlowerStar,
                     iconClassName: T ? j.roleVerifiedIcon : void 0,
                     color: F,
@@ -218,7 +218,7 @@
                 }) : (0, n.jsx)(p.RoleCircle, {
                     color: F
                 });
-                let k = a.useMemo(() => {
+                let B = a.useMemo(() => {
                     var t;
                     return {
                         borderColor: C ? void 0 : w,
@@ -229,7 +229,7 @@
                     children: (0, n.jsxs)("div", {
                         ref: t,
                         className: i(j.role, h),
-                        style: k,
+                        style: B,
                         onContextMenu: b,
                         onMouseDown: N,
                         "aria-label": g.name,
@@ -297,7 +297,7 @@
                 })
             }
 
-            function B(e) {
+            function k(e) {
                 let {
                     guild: t,
                     user: l,
@@ -335,7 +335,7 @@
                 })
             }
 
-            function k(e) {
+            function B(e) {
                 let t;
                 let {
                     user: l,
@@ -390,7 +390,7 @@
                         scrollToEnd: U,
                         wrap: !0
                     }),
-                    k = y.map(e => {
+                    B = y.map(e => {
                         var t;
                         return (0, n.jsx)(w, {
                             className: E,
@@ -408,7 +408,7 @@
                 return null != A && 0 !== M ? t = (0, n.jsx)(G, {
                     ...e,
                     numRolesHidden: M
-                }) : R && (t = (0, n.jsx)(B, {
+                }) : R && (t = (0, n.jsx)(k, {
                     ...e,
                     handleAddRole: I
                 })), (0, n.jsx)(d.ListNavigatorProvider, {
@@ -426,13 +426,13 @@
                                 }),
                                 ref: l,
                                 ...a,
-                                children: [k, t]
+                                children: [B, t]
                             })
                         }
                     })
                 })
             }
-            let Y = (0, h.default)(k);
+            let Y = (0, h.default)(B);
 
             function V(e) {
                 return (0, f.useStateFromStores)([v.default], () => {
@@ -440,7 +440,7 @@
                     return v.default.getGuildVersion(null === (t = e.guild) || void 0 === t ? void 0 : t.id)
                 }), !1 === e.wrap ? (0, n.jsx)(Y, {
                     ...e
-                }) : (0, n.jsx)(k, {
+                }) : (0, n.jsx)(B, {
                     ...e
                 })
             }
@@ -1541,8 +1541,8 @@
                             color: F = d.Button.Colors.WHITE,
                             look: w = d.Button.Looks.OUTLINED,
                             type: G,
-                            onAction: B,
-                            isEmbedded: k = !1
+                            onAction: k,
+                            isEmbedded: B = !1
                         } = e,
                         Y = (0, g.default)(),
                         V = (0, u.useStateFromStores)([E.default], () => {
@@ -1628,7 +1628,7 @@
                                 color: F,
                                 look: w,
                                 channelId: j,
-                                isEmbedded: k
+                                isEmbedded: B
                             }, "join-activity-button"),
                             i = (0, n.jsx)(M.default, {
                                 activity: l,
@@ -1653,7 +1653,7 @@
                         wrap: q ? h.default.Wrap.WRAP : h.default.Wrap.NO_WRAP,
                         className: s(c, b.buttonsWrapper, q ? b.vertical : b.horizontal),
                         onClick: function(e) {
-                            (0, o.isElement)(e.target) && "BUTTON" === e.target.nodeName && (null == B || B())
+                            (0, o.isElement)(e.target) && "BUTTON" === e.target.nodeName && (null == k || k())
                         },
                         children: t
                     })
@@ -1821,8 +1821,8 @@
                     activity: t,
                     currentEmbeddedApplication: l,
                     isCurrentUser: G,
-                    color: B,
-                    look: k,
+                    color: k,
+                    look: B,
                     hover: Y,
                     user: V,
                     channelId: H,
@@ -1919,8 +1919,8 @@
                             onClick: eo,
                             onMouseEnter: t,
                             onMouseLeave: l,
-                            color: B,
-                            look: k,
+                            color: k,
+                            look: B,
                             hover: Y,
                             disabled: !es,
                             submitting: $,
@@ -4749,7 +4749,7 @@
             "use strict";
             l.r(t), l.d(t, {
                 default: function() {
-                    return k
+                    return B
                 }
             }), l("222007");
             var n = l("37983"),
@@ -4793,15 +4793,15 @@
                 e.stopPropagation()
             }
 
-            function B(e) {
+            function k(e) {
                 var t;
                 let {
                     user: l,
                     guildId: s,
                     channelId: i,
                     setNote: C,
-                    closePopout: B,
-                    setPopoutRef: k,
+                    closePopout: k,
+                    setPopoutRef: B,
                     disableUserProfileLink: Y = __OVERLAY__,
                     analyticsParams: V = {}
                 } = e, H = a.useRef(null), W = (0, O.default)(l.id, s), z = (0, d.default)(H), K = (0, r.useStateFromStores)([y.default], () => {
@@ -4844,8 +4844,8 @@
                 (0, c.default)(() => eu(!0), er.shouldShow ? 250 : null);
                 let [ed] = (0, _.default)([null !== (t = null == q ? void 0 : q.application_id) && void 0 !== t ? t : ""]);
                 return a.useEffect(() => {
-                    null == k || k(null == H ? void 0 : H.current)
-                }, [H, k]), a.useEffect(() => {
+                    null == B || B(null == H ? void 0 : H.current)
+                }, [H, B]), a.useEffect(() => {
                     if (!en)((null == q ? void 0 : q.application_id) == null || null != ed) && (null == s || (null == J ? void 0 : J.fullProfileLoadedTimestamp) != null) && (function() {
                         var e;
                         let t, n, a;
@@ -4911,7 +4911,7 @@
                                     displayProfile: W,
                                     guildId: s,
                                     channelId: i,
-                                    onClose: () => null == B ? void 0 : B(),
+                                    onClose: () => null == k ? void 0 : k(),
                                     isMobile: et,
                                     isStreaming: (0, p.default)(q),
                                     status: ee,
@@ -4920,12 +4920,12 @@
                                     upsell: er.shouldShow ? (0, n.jsx)(P.default, {
                                         user: l,
                                         displayProfile: W,
-                                        onClose: B,
+                                        onClose: k,
                                         ...er
                                     }) : void 0
                                 }), (0, n.jsxs)(x.default.Inner, {
                                     children: [(0, n.jsx)(R.default, {
-                                        onTooltipClose: B
+                                        onTooltipClose: k
                                     }), (0, n.jsx)(L.default, {
                                         activity: q,
                                         customStatusActivity: $,
@@ -4934,7 +4934,7 @@
                                         guild: X,
                                         guildMember: J,
                                         channelId: i,
-                                        onClose: B,
+                                        onClose: k,
                                         setNote: C,
                                         canDM: ei
                                     })]
@@ -4944,13 +4944,13 @@
                     })
                 })
             }
-            var k = a.memo(function(e) {
+            var B = a.memo(function(e) {
                 let {
                     userId: t,
                     user: l,
                     ...a
                 } = e, s = (0, r.useStateFromStores)([C.default], () => C.default.getUser(t), [t]), o = null != l ? l : s;
-                return i(null != o, "Unexpected missing user"), (0, n.jsx)(B, {
+                return i(null != o, "Unexpected missing user"), (0, n.jsx)(k, {
                     user: o,
                     ...a
                 })
@@ -5000,8 +5000,8 @@
                 F = l("972595"),
                 w = l("316095"),
                 G = l("802279"),
-                B = l("577172"),
-                k = l("465215"),
+                k = l("577172"),
+                B = l("465215"),
                 Y = l("301998"),
                 V = l("379657"),
                 H = l("853780"),
@@ -5151,7 +5151,7 @@
                                 guild: et,
                                 hidePersonalInformation: eu
                             }), $.isClyde() ? (0, n.jsx)(F.default, {}) : (0, n.jsxs)(n.Fragment, {
-                                children: [(0, n.jsx)(k.default, {
+                                children: [(0, n.jsx)(B.default, {
                                     userId: $.id,
                                     guild: et,
                                     guildMember: el
@@ -5191,7 +5191,7 @@
                                     lastSection: !ei,
                                     hideNote: eu || er
                                 })]
-                            }), eL ? null : (0, n.jsx)(B.default, {
+                            }), eL ? null : (0, n.jsx)(k.default, {
                                 user: $,
                                 setNote: es,
                                 canDM: ei,
@@ -5311,44 +5311,47 @@
                     })
                 };
             var L = e => {
+                var t;
                 let {
-                    user: t,
-                    displayProfile: l,
-                    onClose: s,
-                    onDismiss: p,
-                    isInSidebar: E = !1,
-                    canShowAvatarDecorationUpsell: g = !1,
-                    canShowProfileEffectUpsell: y = !1
+                    user: l,
+                    displayProfile: s,
+                    onClose: p,
+                    onDismiss: E,
+                    isInSidebar: g = !1,
+                    canShowAvatarDecorationUpsell: y = !1,
+                    canShowProfileEffectUpsell: L = !1
                 } = e, {
-                    analyticsLocations: L
-                } = (0, m.default)(f.default.COLLECTIBLES_USER_POPOUT_UPSELL), P = (0, o.default)([c.default], () => c.default.useReducedMotion), {
-                    ref: b,
-                    height: D
-                } = (0, d.default)(), j = a.useMemo(() => ({
-                    top: "-".concat((null != D ? D : O) + 6, "px")
-                }), [D]), U = (0, o.default)([I.default], () => I.default.getCurrentUser()), F = A.default.canUseCollectibles(U), w = (0, o.default)([S.default], () => S.default.getProfileEffectById(null == l ? void 0 : l.profileEffectID)), [G, B] = (0, o.useStateFromStoresArray)([h.default], () => {
+                    analyticsLocations: P
+                } = (0, m.default)(f.default.COLLECTIBLES_USER_POPOUT_UPSELL), b = (0, o.default)([c.default], () => c.default.useReducedMotion), {
+                    ref: D,
+                    height: j
+                } = (0, d.default)(), U = a.useMemo(() => ({
+                    top: "-".concat((null != j ? j : O) + 6, "px")
+                }), [j]), F = (0, o.default)([I.default], () => I.default.getCurrentUser()), w = A.default.canUseCollectibles(F), G = (0, o.default)([S.default], () => S.default.getProfileEffectById(null == s ? void 0 : s.profileEffectID)), [k, B] = (0, o.useStateFromStoresArray)([h.default], () => {
                     var e;
-                    return [(0, _.isPremiumCollectiblesCategory)(h.default.getCategoryForProduct(null === (e = t.avatarDecoration) || void 0 === e ? void 0 : e.skuId)), (0, _.isPremiumCollectiblesCategory)(h.default.getCategoryForProduct(null == w ? void 0 : w.skuId))]
-                }), k = a.useCallback(() => {
-                    null == p || p(v.ContentDismissActionType.PRIMARY), null == s || s(), (0, T.openCollectiblesShop)({
-                        analyticsLocations: L,
-                        analyticsSource: f.default.COLLECTIBLES_USER_POPOUT_UPSELL
+                    return [(0, _.isPremiumCollectiblesCategory)(h.default.getCategoryForProduct(null === (e = l.avatarDecoration) || void 0 === e ? void 0 : e.skuId)), (0, _.isPremiumCollectiblesCategory)(h.default.getCategoryForProduct(null == G ? void 0 : G.skuId))]
+                }), Y = a.useCallback(() => {
+                    var e, t, n, a;
+                    null == E || E(v.ContentDismissActionType.PRIMARY), null == p || p(), (0, T.openCollectiblesShop)({
+                        analyticsLocations: P,
+                        analyticsSource: f.default.COLLECTIBLES_USER_POPOUT_UPSELL,
+                        initialProductSkuId: k ? null !== (n = null == G ? void 0 : G.skuId) && void 0 !== n ? n : null === (e = l.avatarDecoration) || void 0 === e ? void 0 : e.skuId : null !== (a = null === (t = l.avatarDecoration) || void 0 === t ? void 0 : t.skuId) && void 0 !== a ? a : null == G ? void 0 : G.skuId
                     })
-                }, [p, s, L]), Y = a.useCallback(() => {
-                    null == p || p(v.ContentDismissActionType.DISMISS)
-                }, [p]);
-                if (!g && !y) return null;
-                let V = (0, r.match)([g, y]).with([!0, !0], () => G && B && F ? C.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO.format({
+                }, [E, p, P, null == G ? void 0 : G.skuId, null === (t = l.avatarDecoration) || void 0 === t ? void 0 : t.skuId, k]), V = a.useCallback(() => {
+                    null == E || E(v.ContentDismissActionType.DISMISS)
+                }, [E]);
+                if (!y && !L) return null;
+                let H = (0, r.match)([y, L]).with([!0, !0], () => k && B && w ? C.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO.format({
                     openShop: R
-                }) : G && B ? C.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NON_NITRO.format({
+                }) : k && B ? C.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NON_NITRO.format({
                     openShop: R
                 }) : C.default.Messages.COMBINED_COLLECTIBLES_SOCIAL_UPSELL.format({
                     openShop: R
-                })).with([!0, !1], () => G && F ? C.default.Messages.STARTER_AVATAR_DECORATIONS_SOCIAL_UPSELL_NITRO.format({
+                })).with([!0, !1], () => k && w ? C.default.Messages.STARTER_AVATAR_DECORATIONS_SOCIAL_UPSELL_NITRO.format({
                     openShop: R
                 }) : C.default.Messages.AVATAR_DECORATIONS_SOCIAL_UPSELL.format({
                     openShop: R
-                })).with([!1, !0], () => B && F ? C.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NITRO.format({
+                })).with([!1, !0], () => B && w ? C.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NITRO.format({
                     openShop: R
                 }) : (B && C.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO.format({
                     openShop: R
@@ -5356,31 +5359,31 @@
                     openShop: R
                 }))).otherwise(() => null);
                 return (0, n.jsx)("div", {
-                    style: j,
+                    style: U,
                     className: i(N.containerWrapper, {
-                        [N.animation]: !P,
-                        [N.inSidebar]: E
+                        [N.animation]: !b,
+                        [N.inSidebar]: g
                     }),
-                    ref: b,
+                    ref: D,
                     children: (0, n.jsxs)("div", {
                         className: N.container,
-                        children: [g && (0, n.jsx)(x, {
-                            user: t,
-                            onClick: k
+                        children: [y && (0, n.jsx)(x, {
+                            user: l,
+                            onClick: Y
                         }), (0, n.jsx)(u.Clickable, {
-                            className: g ? N.contentWithAvatar : N.content,
-                            onClick: k,
+                            className: y ? N.contentWithAvatar : N.content,
+                            onClick: Y,
                             "aria-label": C.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
                             children: (0, n.jsx)(u.Text, {
                                 variant: "text-sm/normal",
                                 color: "text-normal",
                                 tag: "span",
-                                children: V
+                                children: H
                             })
                         }), (0, n.jsx)("div", {
                             className: N.buttons,
                             children: (0, n.jsx)(M, {
-                                onClick: Y
+                                onClick: V
                             })
                         })]
                     })
@@ -6650,7 +6653,7 @@
                 w = l("782340"),
                 G = l("843616");
             (a = n || (n = {})).USER_POPOUT = "UserPopout", a.USER_POPOUT_V2 = "UserPopoutV2", a.ACTIVITY_FEED = "ActivityFeed", a.PROFILE = "Profile", a.PROFILE_V2 = "ProfileV2", a.STREAM_PREVIEW = "StreamPreview", a.VOICE_CHANNEL = "VoiceChannel";
-            let B = {
+            let k = {
                     StreamPreview: [108, 60],
                     UserPopout: [108, 60],
                     UserPopoutV2: [108, 60],
@@ -6660,7 +6663,7 @@
                     ActivityFeed: [900, 500]
                 },
                 {
-                    getAssetImage: k
+                    getAssetImage: B
                 } = l("550368"),
                 Y = (0, m.default)(class extends i.PureComponent {
                     render() {
@@ -6793,11 +6796,11 @@
                         application_id: c
                     } = e;
                     if (null == d || null == d.large_image && null == d.small_image) return null;
-                    (0, g.default)(e) && (a = B[u]);
+                    (0, g.default)(e) && (a = k[u]);
                     let m = (0, S.default)(e),
                         p = null != d.large_image ? (0, s.jsx)("img", {
                             alt: null !== (t = d.large_text) && void 0 !== t ? t : "",
-                            src: k(c, d.large_image, null != a ? a : [F.ImageSizes.LARGE, F.ImageSizes.LARGE]),
+                            src: B(c, d.large_image, null != a ? a : [F.ImageSizes.LARGE, F.ImageSizes.LARGE]),
                             className: o(this.getTypeClass("assetsLargeImage", this.isStreamerOnTypeProfile() || this.isStreamerOnTypeActivityFeed() ? U.PlatformTypes.TWITCH : ""), {
                                 [null !== (l = this.getTypeClass("assetsLargeMask")) && void 0 !== l ? l : ""]: null != d.small_image
                             }, {
@@ -6851,7 +6854,7 @@
                             var t;
                             return (0, s.jsx)("img", {
                                 alt: null !== (t = d.small_text) && void 0 !== t ? t : "",
-                                src: k(c, d.small_image, [F.ImageSizes.SMALL, F.ImageSizes.SMALL]),
+                                src: B(c, d.small_image, [F.ImageSizes.SMALL, F.ImageSizes.SMALL]),
                                 className: this.getTypeClass("assetsSmallImage", null == p ? "WithoutLargeImage" : void 0),
                                 ...e
                             })
@@ -7717,4 +7720,4 @@
         }
     }
 ]);
-//# sourceMappingURL=852ddb34ec717b69c056.js.map
+//# sourceMappingURL=00173ffe6a17f813c779.js.map
