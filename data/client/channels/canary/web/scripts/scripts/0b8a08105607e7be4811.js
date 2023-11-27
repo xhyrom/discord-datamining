@@ -5642,6 +5642,17 @@
                 zoomin: "zoomin_fa2e9f"
             }
         },
+        416465: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                avatarDecoration: "avatarDecoration__9affd",
+                previewContainer: "previewContainer_d611ef",
+                previewTextContainer: "previewTextContainer__2fa3a",
+                profileEffect: "profileEffect__8c12b",
+                profileEffectBackground: "profileEffectBackground_c9a6c7",
+                profileEffectContainer: "profileEffectContainer_dd2b9f"
+            }
+        },
         312595: function(e, t, o) {
             "use strict";
             e.exports = {
