@@ -14908,6 +14908,7 @@
   "COLLECTIBLES_SUBSCRIPTION_TOOLTIP_TEXT": "\"{price} monthly Nitro subscription\"",
   "COLLECTIBLES_PREMIUM_DISCOUNT_TOOLTIP_TEXT": "\"Nitro subscribers get a discount on this decoration\"",
   "COLLECTIBLES_NON_PREMIUM_PRICE": "\"{price} with Nitro\"",
+  "COLLECTIBLES_NON_PREMIUM_PRICE_SUBSCRIBE_NOW": "\"{price} with Nitro. $[Subscribe now](subscribeNowHook)\"",
   "COLLECTIBLES_COACHMARK_HEADER": "\"Add style to your avatar\"",
   "COLLECTIBLES_COACHMARK_HEADER_PREMIUM": "\"Ready for a new look?\"",
   "COLLECTIBLES_COACHMARK_DESC": "\"Explore and collect the newest avatar decorations, plus a bonus, with Nitro.\"",
