@@ -17,41 +17,5 @@
     "config_keys": [
       "canUseEventsAutoStartToggle"
     ]
-  },
-  "rollout": {
-    "populations": [
-      {
-        "buckets": {
-          "1": {
-            "rollout": [
-              {
-                "start": 100,
-                "end": 200
-              },
-              {
-                "start": 600,
-                "end": 1000
-              },
-              {
-                "start": 5500,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": []
-      }
-    ],
-    "revision": 1,
-    "overrides": {
-      "1": [
-        "281683040739262465",
-        "1095810146761973830",
-        "1103771563066658828",
-        "1096492110254964809",
-        "689949103198961671"
-      ]
-    },
-    "overrides_formatted": []
   }
 }
