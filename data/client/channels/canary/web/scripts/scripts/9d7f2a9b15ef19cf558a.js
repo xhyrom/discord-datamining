@@ -2005,62 +2005,58 @@
         225664: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
+                useBurstReactionsExperiment: function() {
                     return s
                 },
-                useBurstReactionsExperiment: function() {
+                BurstReactionsUserExperiment: function() {
                     return r
                 },
-                BurstReactionsUserExperiment: function() {
-                    return u
-                },
                 useBurstReactionsUserExperiment: function() {
-                    return o
+                    return u
                 }
             });
             var i = n("862205"),
                 a = n("162771");
             let l = (0, i.createExperiment)({
-                kind: "guild",
-                id: "2023-02_burst_reaction_guild_experiment",
-                label: "Burst Reactions",
-                defaultConfig: {
-                    enabled: !1,
-                    hasTabUI: !1,
-                    hasInfinite: !1,
-                    hasFreeBursts: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        enabled: !0,
+                    kind: "guild",
+                    id: "2023-02_burst_reaction_guild_experiment",
+                    label: "Burst Reactions",
+                    defaultConfig: {
+                        enabled: !1,
                         hasTabUI: !1,
                         hasInfinite: !1,
-                        hasFreeBursts: !0
-                    }
-                }, {
-                    id: 2,
-                    label: "Tab UI",
-                    config: {
-                        enabled: !0,
-                        hasTabUI: !0,
-                        hasInfinite: !1,
                         hasFreeBursts: !1
-                    }
-                }, {
-                    id: 4,
-                    label: "Free Bursts",
-                    config: {
-                        enabled: !0,
-                        hasTabUI: !0,
-                        hasInfinite: !1,
-                        hasFreeBursts: !0
-                    }
-                }]
-            });
-            var s = l;
-            let r = function(e) {
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enabled",
+                        config: {
+                            enabled: !0,
+                            hasTabUI: !1,
+                            hasInfinite: !1,
+                            hasFreeBursts: !0
+                        }
+                    }, {
+                        id: 2,
+                        label: "Tab UI",
+                        config: {
+                            enabled: !0,
+                            hasTabUI: !0,
+                            hasInfinite: !1,
+                            hasFreeBursts: !1
+                        }
+                    }, {
+                        id: 4,
+                        label: "Free Bursts",
+                        config: {
+                            enabled: !0,
+                            hasTabUI: !0,
+                            hasInfinite: !1,
+                            hasFreeBursts: !0
+                        }
+                    }]
+                }),
+                s = function(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                         n = null != e ? e : a.default.getGuildId(),
                         i = l.useExperiment({
@@ -2069,7 +2065,7 @@
                         }, {
                             autoTrackExposure: t
                         }),
-                        s = u.useExperiment({
+                        s = r.useExperiment({
                             location: "169958_2"
                         }, {
                             autoTrackExposure: !0
@@ -2089,7 +2085,7 @@
                         hasBurstToggle: s.hasBurstToggle
                     }
                 },
-                u = (0, i.createExperiment)({
+                r = (0, i.createExperiment)({
                     kind: "user",
                     id: "2022-09_burst_reactions",
                     label: "Burst Reactions User Experiment",
@@ -2210,8 +2206,8 @@
                         }
                     }]
                 }),
-                o = () => {
-                    let e = u.useExperiment({
+                u = () => {
+                    let e = r.useExperiment({
                         location: "169958_3"
                     }, {
                         autoTrackExposure: !0
@@ -16484,62 +16480,60 @@
             "use strict";
             n.r(t), n.d(t, {
                 createMessageRecord: function() {
-                    return g
+                    return m
                 },
                 updateServerMessage: function() {
-                    return A
+                    return I
                 },
                 updateMessageRecord: function() {
-                    return N
+                    return g
                 },
                 canEditMessageWithStickers: function() {
-                    return M
+                    return y
                 }
             }), n("702976");
             var i = n("866227"),
                 a = n.n(i),
-                l = n("225664"),
-                s = n("312016");
+                l = n("312016");
             n("584375");
-            var r = n("552310"),
-                u = n("24373"),
-                o = n("459018"),
-                d = n("719926"),
-                c = n("766274"),
-                _ = n("271938"),
-                E = n("42203"),
-                h = n("27618"),
-                f = n("697218"),
-                p = n("240873"),
-                T = n("659632");
+            var s = n("552310"),
+                r = n("24373"),
+                u = n("459018"),
+                o = n("719926"),
+                d = n("766274"),
+                c = n("271938"),
+                _ = n("27618"),
+                E = n("697218"),
+                h = n("240873"),
+                f = n("659632");
             n("773336"), n("158998");
-            var C = n("406297");
+            var p = n("406297");
             n("574073");
-            var S = n("894488"),
-                m = n("49111");
+            var T = n("894488"),
+                C = n("49111");
             n("782340");
-            let I = new c.default({
+            let S = new d.default({
                 id: "???",
                 username: "???"
             });
 
-            function g(e) {
-                var t, n, i, l, u, E, p, S, g;
+            function m(e) {
+                var t, n, i, r, h, T, m, I, g;
                 let {
-                    reactions: A,
-                    interactionData: N
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, M = null !== (l = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== l ? l : [], L = null !== (u = e.mention_roles) && void 0 !== u ? u : [], D = null !== (E = e.mention_channels) && void 0 !== E ? E : [], U = e.message_reference, P = a(new Date(e.timestamp)), b = e.type === m.MessageTypes.THREAD_CREATED ? [] : (0, s.default)(e.content);
-                let G = null == (S = e).author ? I : null != S.webhook_id ? new c.default(S.author) : null !== (g = f.default.getUser(S.author.id)) && void 0 !== g ? g : new c.default(S.author),
+                    reactions: y,
+                    interactionData: v
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, M = null !== (r = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== r ? r : [], L = null !== (h = e.mention_roles) && void 0 !== h ? h : [], D = null !== (T = e.mention_channels) && void 0 !== T ? T : [], U = e.message_reference, P = a(new Date(e.timestamp)), b = e.type === C.MessageTypes.THREAD_CREATED ? [] : (0, l.default)(e.content);
+                let G = null == (I = e).author ? S : null != I.webhook_id ? new d.default(I.author) : null !== (g = E.default.getUser(I.author.id)) && void 0 !== g ? g : new d.default(I.author),
                     w = null == e ? void 0 : e.gift_info,
-                    F = null != e.interaction ? o.default.createFromServer(e.interaction) : null,
-                    k = e.type === m.MessageTypes.THREAD_STARTER_MESSAGE ? null === (i = e.referenced_message) || void 0 === i ? void 0 : null === (n = i.author) || void 0 === n ? void 0 : n.id : void 0,
-                    H = e.type === m.MessageTypes.PREMIUM_REFERRAL ? e.content : void 0,
+                    F = null != e.interaction ? u.default.createFromServer(e.interaction) : null,
+                    k = e.type === C.MessageTypes.THREAD_STARTER_MESSAGE ? null === (i = e.referenced_message) || void 0 === i ? void 0 : null === (n = i.author) || void 0 === n ? void 0 : n.id : void 0,
+                    H = e.type === C.MessageTypes.PREMIUM_REFERRAL ? e.content : void 0,
                     V = e.content;
-                return e.type === m.MessageTypes.PREMIUM_REFERRAL && (V = ""), new d.default({
+                return e.type === C.MessageTypes.PREMIUM_REFERRAL && (V = ""), new o.default({
                     ...e,
                     author: G,
                     webhookId: e.webhook_id,
-                    blocked: h.default.isBlocked(G.id) || null != k && h.default.isBlocked(k),
+                    blocked: _.default.isBlocked(G.id) || null != k && _.default.isBlocked(k),
                     timestamp: P,
                     editedTimestamp: null != e.edited_timestamp ? a(new Date(e.edited_timestamp)) : null,
                     mentionEveryone: e.mention_everyone,
@@ -16547,31 +16541,31 @@
                     mentionRoles: L,
                     mentionChannels: D,
                     messageReference: U,
-                    mentioned: (0, C.isMentioned)({
-                        userId: _.default.getId(),
+                    mentioned: (0, p.isMentioned)({
+                        userId: c.default.getId(),
                         channelId: e.channel_id,
-                        mentionEveryone: null !== (p = e.mention_everyone) && void 0 !== p && p,
+                        mentionEveryone: null !== (m = e.mention_everyone) && void 0 !== m && m,
                         mentionUsers: M,
                         mentionRoles: L
                     }),
-                    attachments: O(e),
-                    embeds: y(e),
+                    attachments: A(e),
+                    embeds: O(e),
                     codedLinks: b,
-                    giftCodes: (0, T.isGiftCodeEmbed)(e) ? (0, T.findGiftCodes)((null == e ? void 0 : e.embeds[0]).url) : (0, T.findGiftCodes)(e.content),
+                    giftCodes: (0, f.isGiftCodeEmbed)(e) ? (0, f.findGiftCodes)((null == e ? void 0 : e.embeds[0]).url) : (0, f.findGiftCodes)(e.content),
                     content: V,
                     referralTrialOfferId: H,
-                    call: R(e.call, P),
-                    reactions: v(e.channel_id, null != A ? A : e.reactions),
+                    call: N(e.call, P),
+                    reactions: R(null != y ? y : e.reactions),
                     interaction: F,
-                    interactionData: null != N ? N : e.interaction_data,
+                    interactionData: null != v ? v : e.interaction_data,
                     roleSubscriptionData: e.role_subscription_data,
                     purchaseNotification: e.purchase_notification,
-                    poll: null == e.poll ? void 0 : (0, r.default)(e.poll),
+                    poll: null == e.poll ? void 0 : (0, s.default)(e.poll),
                     giftInfo: null == w ? void 0 : w
                 })
             }
 
-            function A(e, t) {
+            function I(e, t) {
                 return null != t.edited_timestamp ? {
                     ...t,
                     reactions: e.reactions,
@@ -16582,27 +16576,27 @@
                 }
             }
 
-            function N(e, t) {
-                if (null != t.edited_timestamp) return g(t, {
+            function g(e, t) {
+                if (null != t.edited_timestamp) return m(t, {
                     reactions: e.reactions,
                     interactionData: e.interactionData
                 });
                 let n = e;
-                if (null != t.call && (n = n.set("call", R(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", O(t))), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", y(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new c.default(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", t.components)), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
+                if (null != t.call && (n = n.set("call", N(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", A(t))), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", O(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.default(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", t.components)), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
                     var i;
-                    n = n.set("reactions", v(e.channel_id, null !== (i = e.reactions) && void 0 !== i ? i : t.reactions))
+                    n = n.set("reactions", R(null !== (i = e.reactions) && void 0 !== i ? i : t.reactions))
                 }
                 return n
             }
 
-            function O(e) {
+            function A(e) {
                 return null == e.attachments ? [] : e.attachments.map(e => ({
                     ...e,
-                    spoiler: e.filename.startsWith(S.SPOILER_ATTACHMENT_PREFIX)
+                    spoiler: e.filename.startsWith(T.SPOILER_ATTACHMENT_PREFIX)
                 }))
             }
 
-            function R(e, t) {
+            function N(e, t) {
                 if (null != e) {
                     let n = null != e.ended_timestamp ? a(new Date(e.ended_timestamp)) : null,
                         i = null != n ? a.duration(n.diff(t)) : null;
@@ -16615,31 +16609,14 @@
                 return null
             }
 
-            function y(e) {
+            function O(e) {
                 if (null == e.embeds) return [];
-                let t = e.embeds.map(t => (0, p.sanitizeEmbed)(e.channel_id, e.id, t));
-                return (0, p.mergeEmbedsOnURL)(t)
+                let t = e.embeds.map(t => (0, h.sanitizeEmbed)(e.channel_id, e.id, t));
+                return (0, h.mergeEmbedsOnURL)(t)
             }
 
-            function v(e, t) {
-                var n;
-                if (null == t) return [];
-                let i = E.default.getChannel(e),
-                    {
-                        enabled: a
-                    } = l.default.getCurrentConfig({
-                        guildId: null !== (n = null == i ? void 0 : i.getGuildId()) && void 0 !== n ? n : "",
-                        location: "812691_1"
-                    }),
-                    {
-                        enabled: s
-                    } = l.BurstReactionsUserExperiment.getCurrentConfig({
-                        location: "812691_2"
-                    }, {
-                        autoTrackExposure: !1
-                    }),
-                    r = a || s;
-                return t.filter(e => {
+            function R(e) {
+                return null == e ? [] : e.map(e => {
                     let t = {
                         ...e
                     };
@@ -16647,20 +16624,11 @@
                         var n, i;
                         t.burst_count = null !== (n = t.count_details.burst) && void 0 !== n ? n : 0, t.count = null !== (i = t.count_details.normal) && void 0 !== i ? i : 0
                     }
-                    return (!(t.burst_count > 0) || !(t.count < 1) || !!r) && !0
-                }).map(e => {
-                    let t = {
-                        ...e
-                    };
-                    if ((null == t ? void 0 : t.count_details) != null) {
-                        var n, i;
-                        t.burst_count = null !== (n = t.count_details.burst) && void 0 !== n ? n : 0, t.count = null !== (i = t.count_details.normal) && void 0 !== i ? i : 0
-                    }
-                    return t.count < 0 && (t.count = 0), (t.burst_count < 0 || !a && !s) && (t.burst_count = 0), t
+                    return t.count < 0 && (t.count = 0), t.burst_count < 0 && (t.burst_count = 0), t
                 })
             }
-            let M = e => {
-                let t = (0, u.getMessageStickers)(e);
+            let y = e => {
+                let t = (0, r.getMessageStickers)(e);
                 return 0 === t.length || "" !== e.content
             }
         },
@@ -33688,4 +33656,4 @@
         }
     }
 ]);
-//# sourceMappingURL=593731518a57129b84d4.js.map
+//# sourceMappingURL=9d7f2a9b15ef19cf558a.js.map
