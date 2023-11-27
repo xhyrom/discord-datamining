@@ -12779,7 +12779,6 @@
                 FORUM_CHANNEL_SORT_AND_VIEW: "Sort & View",
                 FORUM_CHANNEL_SORT_AND_VIEW_A11Y_LABEL: "Change the sort and layout for Forum Posts",
                 FORUM_CHANNEL_TAGS: "Tags",
-                FORUM_CHANNEL_FILTER_BY_TAGS: "Filter by tags",
                 FORUM_CHANNEL_TAGS_REMAINING: "{count} remaining",
                 FORUM_CHANNEL_SETTINGS_DEFAULT_LAYOUT: "Default Layout",
                 FORUM_CHANNEL_SETTINGS_DEFAULT_LAYOUT_BEHAVIOR_DESCRIPTION: "All posts will be displayed by the specified option by default. Members will still be able to toggle between these options.",
@@ -18234,7 +18233,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248790", ", Version Hash: ").concat("e62278393a997d82d7474e2dc98be7e79c5943b5")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248812", ", Version Hash: ").concat("58c80785b260657ad23f9b6955ddcb15a0fdbfc4")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20522,8 +20521,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "248790", "248790"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248790")), _ = 0), _
+                let _ = parseInt((e = "248812", "248812"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248812")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36421,4 +36420,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e26d44d8454a177d8be9.js.map
+//# sourceMappingURL=9262ff2ad83cc38f2740.js.map
