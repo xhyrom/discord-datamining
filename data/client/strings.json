@@ -12763,7 +12763,6 @@
   "FORUM_CHANNEL_SORT_AND_VIEW": "\"Sort & View\"",
   "FORUM_CHANNEL_SORT_AND_VIEW_A11Y_LABEL": "\"Change the sort and layout for Forum Posts\"",
   "FORUM_CHANNEL_TAGS": "\"Tags\"",
-  "FORUM_CHANNEL_FILTER_BY_TAGS": "\"Filter by tags\"",
   "FORUM_CHANNEL_TAGS_REMAINING": "\"{count} remaining\"",
   "FORUM_CHANNEL_SETTINGS_DEFAULT_LAYOUT": "\"Default Layout\"",
   "FORUM_CHANNEL_SETTINGS_DEFAULT_LAYOUT_BEHAVIOR_DESCRIPTION": "\"All posts will be displayed by the specified option by default. Members will still be able to toggle between these options.\"",
