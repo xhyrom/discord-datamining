@@ -410,8 +410,8 @@
                 A = l("599110"),
                 I = l("773336"),
                 S = l("50885"),
-                N = l("13798"),
-                f = l("860957"),
+                f = l("13798"),
+                N = l("860957"),
                 L = l("49111"),
                 C = l("80028"),
                 D = l("846325"),
@@ -455,7 +455,7 @@
                     else {
                         U(e);
                         let i = o(new a(document));
-                        n.keyup && i.bindGlobal((0, N.toString)(t), () => l(!1), "keyup"), n.keydown && i.bindGlobal((0, N.toString)(t), () => l(!0), "keydown"), R[e] = i
+                        n.keyup && i.bindGlobal((0, f.toString)(t), () => l(!1), "keyup"), n.keydown && i.bindGlobal((0, f.toString)(t), () => l(!0), "keydown"), R[e] = i
                     }
                 }(i, t, e => (function(e, t) {
                     let l = p[e];
@@ -466,7 +466,7 @@
                     keydown: !1,
                     keyup: !1,
                     ...d
-                }), s.default.validateKeybind((0, N.toString)(e.shortcut))
+                }), s.default.validateKeybind((0, f.toString)(e.shortcut))
             }
 
             function m(e) {
@@ -503,9 +503,9 @@
                     keybind_is_bound: !0,
                     keybind_has_shortcut: t.shortcut.length > 0
                 }), t.action === L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? A.default.track(L.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
-                    hotkey: t.action === L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? (0, N.toString)(t.shortcut) : null
+                    hotkey: t.action === L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? (0, f.toString)(t.shortcut) : null
                 }) : t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && A.default.track(L.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
-                    text_activation_hotkey: t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, N.toString)(t.shortcut) : null
+                    text_activation_hotkey: t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, f.toString)(t.shortcut) : null
                 })), b(t)
             }
 
@@ -515,7 +515,7 @@
                 return null == n && (b(m({
                     action: e,
                     enabled: !0,
-                    shortcut: (0, N.toCombo)(t),
+                    shortcut: (0, f.toCombo)(t),
                     managed: !0,
                     params: {}
                 })), !0)
@@ -539,7 +539,7 @@
                         Y({
                             keybind: {
                                 ...n,
-                                shortcut: "string" == typeof t ? (0, N.toCombo)(t) : t,
+                                shortcut: "string" == typeof t ? (0, f.toCombo)(t) : t,
                                 context: l
                             }
                         })
@@ -547,9 +547,9 @@
                     return !0
                 }, !1)
             }, function() {
-                return !!f.default.enabled && H(L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, "shift+`")
+                return !!N.default.enabled && H(L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, "shift+`")
             }, function() {
-                return !!f.default.enabled && H(L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
+                return !!N.default.enabled && H(L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
             }, function() {
                 return H(L.GlobalKeybindActions.SOUNDBOARD_HOLD, D.DEFAULT_KEYBIND, !1)
             }, function() {
@@ -561,12 +561,12 @@
             }
             s.default.setGetKeybindList(() => {
                 let e = [];
-                for (let t in p) p.hasOwnProperty(t) && e.push((0, N.toString)(p[t].shortcut));
+                for (let t in p) p.hasOwnProperty(t) && e.push((0, f.toString)(p[t].shortcut));
                 return e
             });
             class W extends _.default.DeviceSettingsStore {
                 initialize(e) {
-                    !__OVERLAY__ && this.waitFor(T.default, f.default), p = null != e ? e : {}
+                    !__OVERLAY__ && this.waitFor(T.default, N.default), p = null != e ? e : {}
                 }
                 getUserAgnosticState() {
                     return p
@@ -603,7 +603,7 @@
                     } = e;
                 return u.reduce(l, (e, l, n) => {
                     let a = parseInt(l.id, 10);
-                    return isNaN(a) || l.id !== n ? e : ((null == t || t < 2) && ("string" == typeof l.shortcut ? (l.shortcut = l.shortcut.replace("escape", "esc").replace("capslock", "caps lock").replace("numlock", "num lock").replace("pageup", "page up").replace("pagedown", "page down"), l.shortcut = (0, N.toCombo)(l.shortcut)) : l.shortcut = l.shortcut.map(e => e.length < 3 ? [...e, (0, N.getEnv)()] : e)), e[n] = l, e)
+                    return isNaN(a) || l.id !== n ? e : ((null == t || t < 2) && ("string" == typeof l.shortcut ? (l.shortcut = l.shortcut.replace("escape", "esc").replace("capslock", "caps lock").replace("numlock", "num lock").replace("pageup", "page up").replace("pagedown", "page down"), l.shortcut = (0, f.toCombo)(l.shortcut)) : l.shortcut = l.shortcut.map(e => e.length < 3 ? [...e, (0, f.getEnv)()] : e)), e[n] = l, e)
                 }, {})
             }, e => e, e => {
                 let {
@@ -612,7 +612,7 @@
                 return u.reduce(t, (e, t, l) => {
                     if ((0, I.isLinux)() && t.action === L.GlobalKeybindActions.SOUNDBOARD_HOLD) {
                         let l = t.shortcut.map(e => e[1]),
-                            n = (0, N.toCombo)("`").map(e => e[1]);
+                            n = (0, f.toCombo)("`").map(e => e[1]);
                         if (r(l, n)) return e
                     }
                     return {
@@ -707,8 +707,8 @@
                 A = l("6193"),
                 I = l("121338"),
                 S = l("605250"),
-                N = l("32128"),
-                f = l("127080"),
+                f = l("32128"),
+                N = l("127080"),
                 L = l("116949"),
                 C = l("271938"),
                 D = l("546463"),
@@ -862,11 +862,11 @@
                                     var e;
                                     ei(O), null === T.default || void 0 === T.default || null === (e = T.default.globalOverlay) || void 0 === e || e.showOverlay()
                                 },
-                                N = () => {
+                                f = () => {
                                     var e;
                                     ei(0), null === T.default || void 0 === T.default || null === (e = T.default.globalOverlay) || void 0 === e || e.hideOverlay()
                                 },
-                                f = () => {
+                                N = () => {
                                     var e;
                                     null === T.default || void 0 === T.default || null === (e = T.default.globalOverlay) || void 0 === e || e.hideOverlay()
                                 },
@@ -882,7 +882,7 @@
                                     var e, t, l, n;
                                     await (null === T.default || void 0 === T.default ? void 0 : null === (t = T.default.globalOverlay) || void 0 === t ? void 0 : null === (e = t.closeOverlay) || void 0 === e ? void 0 : e.call(t)), null === (l = (n = g.default.getDiscordUtils()).globalOverlayClearTrackedGame) || void 0 === l || l.call(n), W = null
                                 }
-                            }, null === (o = (d = g.default.getDiscordUtils()).globalOverlaySetTrackedGame) || void 0 === o || o.call(d, s.pid, s.windowHandle, S, N, f, L);
+                            }, null === (o = (d = g.default.getDiscordUtils()).globalOverlaySetTrackedGame) || void 0 === o || o.call(d, s.pid, s.windowHandle, S, f, N, L);
                             break;
                         case G.OverlayMethod.Hook:
                             !b.has(s.pid) && await Z(s.pid), U[s.pid] = {
@@ -935,7 +935,7 @@
             }
             let ea = Q("setOverlayEnabled", async e => {
                 if (!G.OVERLAY_SUPPORTED || H === e) return;
-                H = e, N.OverlayStoredSettings.update({
+                H = e, f.OverlayStoredSettings.update({
                     enabled: e
                 }), eA.emitChange();
                 let t = await el();
@@ -1026,7 +1026,7 @@
                     case P.OverlayEventTypes.CONNECT:
                         let t = C.default.getToken();
                         if (null == t) break;
-                        (0, c.createLayout)(h.OVERLAY_LAYOUT_ID, y.default.getDefaultLayout(h.OVERLAY_LAYOUT_ID)), Promise.all([(0, f.default)(t, e.pid), r.default.PersistedStore.getAllStates()]).then(t => {
+                        (0, c.createLayout)(h.OVERLAY_LAYOUT_ID, y.default.getDefaultLayout(h.OVERLAY_LAYOUT_ID)), Promise.all([(0, N.default)(t, e.pid), r.default.PersistedStore.getAllStates()]).then(t => {
                             let [l, n] = t, {
                                 pid: a,
                                 token: i
@@ -1056,7 +1056,7 @@
             }
             class eT extends r.default.Store {
                 initialize() {
-                    !(!G.OVERLAY_SUPPORTED || __OVERLAY__) && (Y.add(G.OverlayMethod.Hook), this.waitFor(v.default, C.default), I.setReceiveCommandHandler(eO, es), C.default.addChangeListener(ed), ea(N.OverlayStoredSettings.enabled), E.default.addInterceptor(e_))
+                    !(!G.OVERLAY_SUPPORTED || __OVERLAY__) && (Y.add(G.OverlayMethod.Hook), this.waitFor(v.default, C.default), I.setReceiveCommandHandler(eO, es), C.default.addChangeListener(ed), ea(f.OverlayStoredSettings.enabled), E.default.addInterceptor(e_))
                 }
                 isInputLocked(e) {
                     return !K.has(e)
@@ -1130,7 +1130,7 @@
                     } = e, l = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...l));
                     let a = new URLSearchParams;
-                    a.append("build_id", "4dbf40995dd477b7c81e2a3ed4d74b4c4c193989"), a.append("rpc", String(t)), a.append("rpc_auth_token", k), n = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(a.toString())
+                    a.append("build_id", "ada6d1606abde312f61fcc56b839fca430fa2a36"), a.append("rpc", String(t)), a.append("rpc_auth_token", k), n = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(a.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1222,4 +1222,4 @@
         }
     }
 ]);
-//# sourceMappingURL=da3aca8f6abbccd8da9d.js.map
+//# sourceMappingURL=902b4450f154b6e26326.js.map

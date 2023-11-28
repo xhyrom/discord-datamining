@@ -18835,7 +18835,6 @@
                 errorBlock: "errorBlock__3b86d",
                 fineprint: "fineprint__99591",
                 giftMainAnimation: "giftMainAnimation__338ff",
-                giftMainAnimationWrapper: "giftMainAnimationWrapper__52513",
                 invoice: "invoice_e9fa87",
                 invoiceSpinner: "invoiceSpinner_cdcb1c",
                 paymentSourceWrapper: "paymentSourceWrapper_e2260a",
@@ -18843,6 +18842,15 @@
                 skuHeadingText: "skuHeadingText__3d971",
                 stepBody: "stepBody_b5dbd7",
                 subscriptionCostRow: "subscriptionCostRow_fccd69"
+            }
+        },
+        433264: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                avatar: "avatar_bec51e",
+                giftMainAnimationWrapper: "giftMainAnimationWrapper_c49cce",
+                profileEffectBackground: "profileEffectBackground__46f4e",
+                profileEffectContainer: "profileEffectContainer_f4fc55"
             }
         },
         383485: function(e, t, o) {
