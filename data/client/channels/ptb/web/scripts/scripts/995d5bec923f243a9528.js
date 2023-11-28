@@ -5906,6 +5906,7 @@
                 mainColumn: "mainColumn_f44fc2",
                 marketingPage: "marketingPage_f11849",
                 shopForAllBackgroundImage: "shopForAllBackgroundImage__009d9",
+                shopForAllWinterBackground: "shopForAllWinterBackground__34a14",
                 textBody: "textBody__282cf",
                 title: "title__5fd27"
             }

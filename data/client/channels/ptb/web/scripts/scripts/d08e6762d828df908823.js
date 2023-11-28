@@ -919,6 +919,7 @@
                 }), {
                     avatarDecorationSrc: q
                 } = (0, f.default)({
+                    user: t,
                     size: H,
                     animateOnHover: !X,
                     showPending: t.id === (null == U ? void 0 : U.id),
@@ -1404,4 +1405,4 @@
         }
     }
 ]);
-//# sourceMappingURL=db90529cd3ed8daf19e6.js.map
+//# sourceMappingURL=d08e6762d828df908823.js.map

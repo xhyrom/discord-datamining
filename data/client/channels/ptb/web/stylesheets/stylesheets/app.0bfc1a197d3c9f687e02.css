@@ -48485,7 +48485,11 @@ html .progress__4ef76 {
 .mainColumn_f44fc2 {
     flex: 1;
     padding: 16px 4px;
-    margin: auto 0 auto
+    margin: auto 0 auto;
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
 
 .title__5fd27 {
@@ -48523,6 +48527,10 @@ html .progress__4ef76 {
 
 .shopForAllBackgroundImage__009d9 {
     background-image: url(/assets/de0896237eebfc178931.png)
+}
+
+.shopForAllWinterBackground__34a14 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/assets/db36f11a654acc0fdc8c.jpg)
 }
 
 .buttonsContainer__90115 {
@@ -123717,4 +123725,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2847d82e3c9bae274ca4.css.map*/
+/*# sourceMappingURL=app.0bfc1a197d3c9f687e02.css.map*/
