@@ -10046,27 +10046,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-10_poll_users",
-      "label": "Polls User Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables poll messages"
-      ],
-      "hash": 3497865233,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-10_premium_tier_2_trial_offer_expiring_notice",
       "label": "Premium Tier 2 Trial Offer Expiring Notice",
       "description": [
@@ -10501,6 +10480,27 @@
       "config_keys": [
         "showRedesign",
         "showPanels"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-10_poll_users",
+      "label": "Polls User Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables poll messages"
+      ],
+      "hash": 3497865233,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
       ]
     }
   },
