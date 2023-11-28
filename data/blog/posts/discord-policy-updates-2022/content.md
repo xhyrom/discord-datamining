@@ -3,7 +3,7 @@
         <div class="safetie-author-wrapper">
             <div class="safetie-author-photo-wrapper"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri.jpeg" loading="lazy" alt="" sizes="(max-width: 479px) 60px, (max-width: 991px) 70px, 90px" srcset="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri-p-500.jpeg 500w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri.jpeg 800w" class="safetie-author-image">
                 <div class="safetie-author-title">Bri Riggio</div>
-                <div class="w-dyn-bind-empty"></div>
+                <div>December 5, 2022</div>
                 <div class="padding-32px"></div>
             </div>
             <div>
