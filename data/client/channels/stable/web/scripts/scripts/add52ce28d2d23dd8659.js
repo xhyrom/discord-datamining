@@ -6992,7 +6992,7 @@
                 },
                 getMediaEngineExperiments(e) {
                     let t = e.split("/");
-                    return 3 !== t.length || "bandwidth_estimation" !== t[0] ? null : t[1].split(",")
+                    return 3 !== t.length || "bandwidth_estimation" !== t[0] ? null : t[1].split(",").filter(e => 0 !== e.length)
                 }
             }
         },
@@ -14548,7 +14548,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "248714"
+                                build_number: "248955"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21362,4 +21362,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4cdac46c564245f5af6f.js.map
+//# sourceMappingURL=add52ce28d2d23dd8659.js.map

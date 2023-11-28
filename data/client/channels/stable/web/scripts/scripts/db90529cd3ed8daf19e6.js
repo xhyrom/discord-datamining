@@ -859,8 +859,8 @@
                 b = a("782340"),
                 G = a("524466"),
                 D = a("231185");
-            let H = d.AvatarSizes.SIZE_80,
-                B = (0, c.getDecorationSizeForAvatarSize)(H);
+            let B = d.AvatarSizes.SIZE_80,
+                H = (0, c.getDecorationSizeForAvatarSize)(B);
 
             function w(e) {
                 let {
@@ -914,12 +914,12 @@
                 } = (0, x.default)({
                     user: t,
                     guildId: S,
-                    size: H,
+                    size: B,
                     animateOnHover: _
                 }), {
                     avatarDecorationSrc: q
                 } = (0, f.default)({
-                    size: B,
+                    size: H,
                     animateOnHover: !X,
                     showPending: t.id === (null == U ? void 0 : U.id),
                     showTryItOut: t.id === (null == U ? void 0 : U.id)
@@ -929,7 +929,7 @@
                     children: [(0, l.jsx)(F, {
                         src: null != n ? n : K,
                         avatarDecoration: null != q ? null : V,
-                        size: H,
+                        size: B,
                         "aria-label": t.username,
                         status: Y ? R.StatusTypes.UNKNOWN : c,
                         statusBackdropColor: null != w && W && !Y ? (0, d.getStatusBackdropColor)(w) : void 0,
@@ -940,7 +940,7 @@
                         children: (0, l.jsx)(F, {
                             src: D,
                             avatarDecoration: q,
-                            size: H,
+                            size: B,
                             status: R.StatusTypes.UNKNOWN,
                             isMobile: m,
                             className: G.tryingOutAvatarDecoration,
@@ -976,7 +976,7 @@
                         },
                         children: [J, !Z && function() {
                             let e = null != V,
-                                t = e ? B : (0, d.getAvatarSize)(H);
+                                t = e ? H : (0, d.getAvatarSize)(B);
                             return (0, l.jsx)(N.default, {
                                 mask: null == c || c === R.StatusTypes.UNKNOWN || Y ? N.default.Masks.AVATAR_DEFAULT : (0, r.match)([e, m]).with([!0, !0], () => N.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => N.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => N.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => N.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
                                 className: e ? G.avatarDecorationHint : G.avatarHint,
@@ -1008,10 +1008,10 @@
                     disableUserProfileLink: c,
                     isHovering: f,
                     showPremiumBadgeUpsell: m = !0,
-                    showCollectiblesUpsell: T = !1,
+                    showCollectiblesTryItOut: T = !1,
                     upsell: g
-                } = e, v = (0, u.useStateFromStores)([p.default], () => p.default.getCurrentUser()), N = (0, u.useStateFromStores)([C.default], () => C.default.getTryItOutProfileEffectID()), A = null;
-                return T && t.id === (null == v ? void 0 : v.id) && null != N && (A = N), null === A && (A = null == a ? void 0 : a.profileEffectID), (0, l.jsxs)(l.Fragment, {
+                } = e, v = (0, u.useStateFromStores)([p.default], () => p.default.getCurrentUser()), N = (0, u.useStateFromStores)([C.default], () => C.default.getTryItOutProfileEffectID()), A = T && t.id === (null == v ? void 0 : v.id) && null != N ? N : null == a ? void 0 : a.profileEffectID;
+                return (0, l.jsxs)(l.Fragment, {
                     children: [g, (0, l.jsx)(M.default, {
                         user: t,
                         displayProfile: a,
@@ -1020,7 +1020,7 @@
                         profileType: P.UserProfileTypes.POPOUT,
                         showPremiumBadgeUpsell: m,
                         isHovering: f,
-                        overrideHasProfileEffect: T
+                        hasProfileEffect: T || (null == a ? void 0 : a.profileEffectID) != null
                     }), null != A && (0, l.jsx)(S.default, {
                         profileEffectID: A,
                         bannerAdjustment: 0,
@@ -1404,4 +1404,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90e01c38477691548a61.js.map
+//# sourceMappingURL=db90529cd3ed8daf19e6.js.map

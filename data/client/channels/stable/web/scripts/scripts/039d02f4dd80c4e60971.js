@@ -805,7 +805,9 @@
                     ...n,
                     ...t
                 };
-                await m.default.getMediaEngine().updateClipMetadata(i.filepath, JSON.stringify(i)), E.default.track(N.AnalyticEvents.CLIP_EDITED), a.default.dispatch({
+                await m.default.getMediaEngine().updateClipMetadata(i.filepath, JSON.stringify(i)), E.default.track(N.AnalyticEvents.CLIP_EDITED, {
+                    clip_id: i.id
+                }), a.default.dispatch({
                     type: "CLIPS_UPDATE_METADATA",
                     clip: i
                 })
@@ -2689,4 +2691,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2e350e4a01b1f62e58ce.js.map
+//# sourceMappingURL=039d02f4dd80c4e60971.js.map
