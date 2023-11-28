@@ -53588,15 +53588,21 @@ html .progress__4ef76 {
 
 .collectiblesList_b551dd {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    grid-gap: 8px;
     justify-items: center;
     padding-top: 2px
 }
 
+.accountSwitcherCollectiblesList_a18629 {
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr))
+}
+
+.interactiveModalCollectiblesList__53412 {
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr))
+}
+
 .item_ecbedf {
-    width: 80px;
-    height: 80px;
     border-radius: var(--radius-sm);
     background-color: var(--background-floating);
     display: flex;
@@ -53608,6 +53614,16 @@ html .progress__4ef76 {
     box-sizing: border-box
 }
 
+.accountSwitcherItem_b16f56 {
+    width: 80px;
+    height: 80px
+}
+
+.interactiveModalItem_fb9b00 {
+    width: 72px;
+    height: 72px
+}
+
 .selectedAvatarDecorationItem_aa358a {
     border-color: var(--brand-500)
 }
@@ -53617,7 +53633,12 @@ html .progress__4ef76 {
     border-radius: 4px
 }
 
+.avatarDecorationPlaceholder__697ae {
+    position: absolute
+}
+
 .avatarDecorationItem_c53626 {
+    position: relative;
     height: 100%;
     width: 100%
 }
@@ -53629,19 +53650,35 @@ html .progress__4ef76 {
 .presetEffectImg_b4d9ed {
     position: absolute;
     border-radius: 4px;
-    width: 80px;
-    height: 80px;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: top;
     object-position: top
 }
 
-.presetEffectBackground__58a7d {
-    position: absolute;
-    border-radius: 4px;
+.accountSwitcherPresetEffectImg_ea77e6 {
     width: 80px;
     height: 80px
+}
+
+.interactiveModaPresetEffectImg__5d703 {
+    width: 72px;
+    height: 72px
+}
+
+.presetEffectBackground__58a7d {
+    position: absolute;
+    border-radius: 4px
+}
+
+.accountSwitcherPresetEffectBackground_d412ef {
+    width: 80px;
+    height: 80px
+}
+
+.interactiveModalPresetEffectBackground__7510f {
+    width: 72px;
+    height: 72px
 }
 
 .theme-light .item_ecbedf {
@@ -70350,7 +70387,7 @@ html .progress__4ef76 {
     font-weight: 400
 }
 
-.art__562f2 {
+.art_f8934e {
     margin: 0 auto;
     background-color: green;
     width: 208px;
@@ -70358,6 +70395,27 @@ html .progress__4ef76 {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.coachmark_db913c {
+    width: 296px;
+    margin-top: 8px
+}
+
+.loading__9320e {
+    opacity: 0;
+    pointer-events: none
+}
+
+.shopArt_acfdd5 img {
+    height: 120px;
+    width: 208px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.imageLoader__0a236 {
+    display: none
 }
 
 .checkbox__0fbd2 {
@@ -83669,7 +83727,7 @@ input::-webkit-inner-spin-button {
 
 .listContainer_c178e5 {
     margin: 0;
-    width: 256px
+    width: 240px
 }
 
 .title_febf25 {
@@ -123725,4 +123783,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.0bfc1a197d3c9f687e02.css.map*/
+/*# sourceMappingURL=app.e3e28f74237f1bf232f8.css.map*/

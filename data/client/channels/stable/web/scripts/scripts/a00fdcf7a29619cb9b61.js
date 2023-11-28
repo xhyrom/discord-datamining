@@ -493,6 +493,7 @@
                 APP_LAUNCHER_NO_REQUIRED_OPTIONS_CALLOUT: "Nothing required. You can send the command or add an option below",
                 APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER: "Select an option below",
                 APP_LAUNCHER_SEARCH_PLACEHOLDER: "Search Apps & Commands",
+                APP_LAUNCHER_HOME_EMPTY_STATE_BODY: "No apps have been installed in this server yet",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -2824,6 +2825,7 @@
                 NOTICE_VOICE_CONNECTED_LAST_SESSION: "You were in a voice channel last time you left Discord.",
                 NOTICE_UNCLAIMED_ACCOUNT: "This is an unclaimed account. Claim it before it's lost.",
                 NOTICE_UNVERIFIED_ACCOUNT: "Please check your email and follow the instructions to verify your account.",
+                NOTICE_UNVERIFIED_ACCOUNT_UU: "Please check your email to verify your account and keep your current username.",
                 NOTICE_NATIVE_APPS_2020_06: "Want to take full advantage of Discord with better performance, in-game overlay, and more? Get the desktop app!",
                 NOTICE_SCHEDULED_MAINTENANCE: "Discord will be undergoing scheduled maintenance on **{start, date, long}** at **{start, time, short}**.",
                 NOTICE_NO_INPUT_DETECTED: "\nWell, it looks like Discord is not detecting any input from your mic. Let's fix that... together.\n",
@@ -18236,7 +18238,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249031", ", Version Hash: ").concat("602b89ef9519fe4b7026655b8780d5c0bc4a912d")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249171", ", Version Hash: ").concat("d5d872f1387a21afd5e339ba0e42343a7781af17")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20524,8 +20526,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "249031", "249031"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249031")), _ = 0), _
+                let _ = parseInt((e = "249171", "249171"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249171")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25050,12 +25052,11 @@
                             guildId: null != E ? E : "",
                             location: "HangStatusManager"
                         });
-                        if (!t) return;
                         if (null == E && null == _) {
                             this.handleDisconnectFromVoiceChannel(), this.previousVoiceChannelId = _;
                             return
                         }
-                        if (_ === this.previousVoiceChannelId) return;
+                        if (!t || _ === this.previousVoiceChannelId) return;
                         if (this.previousVoiceChannelId = _, null == E || null == _) return;
                         let I = o.default.getChannel(_);
                         if (null == I || I.type !== i.ChannelTypes.GUILD_VOICE) return;
@@ -36436,4 +36437,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0f67bd16724b21b9b418.js.map
+//# sourceMappingURL=a00fdcf7a29619cb9b61.js.map

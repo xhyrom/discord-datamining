@@ -5654,11 +5654,26 @@
                 profileEffectContainer: "profileEffectContainer_dd2b9f"
             }
         },
+        608284: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                art: "art_f8934e"
+            }
+        },
         312595: function(e, t, o) {
             "use strict";
             e.exports = {
+                accountSwitcherCollectiblesList: "accountSwitcherCollectiblesList_a18629 collectiblesList_b551dd",
+                accountSwitcherItem: "accountSwitcherItem_b16f56 item_ecbedf",
+                accountSwitcherPresetEffectBackground: "accountSwitcherPresetEffectBackground_d412ef presetEffectBackground__58a7d",
+                accountSwitcherPresetEffectImg: "accountSwitcherPresetEffectImg_ea77e6 presetEffectImg_b4d9ed",
                 avatarDecorationItem: "avatarDecorationItem_c53626",
+                avatarDecorationPlaceholder: "avatarDecorationPlaceholder__697ae",
                 collectiblesList: "collectiblesList_b551dd",
+                interactiveModaPresetEffectImg: "interactiveModaPresetEffectImg__5d703 presetEffectImg_b4d9ed",
+                interactiveModalCollectiblesList: "interactiveModalCollectiblesList__53412 collectiblesList_b551dd",
+                interactiveModalItem: "interactiveModalItem_fb9b00 item_ecbedf",
+                interactiveModalPresetEffectBackground: "interactiveModalPresetEffectBackground__7510f presetEffectBackground__58a7d",
                 item: "item_ecbedf",
                 loading: "loading__3f327",
                 presetEffectBackground: "presetEffectBackground__58a7d",
@@ -5869,10 +5884,13 @@
                 skeleton: "skeleton__5ac25"
             }
         },
-        85174: function(e, t, o) {
+        322853: function(e, t, o) {
             "use strict";
             e.exports = {
-                art: "art__562f2"
+                coachmark: "coachmark_db913c",
+                imageLoader: "imageLoader__0a236",
+                loading: "loading__9320e",
+                shopArt: "shopArt_acfdd5"
             }
         },
         601664: function(e, t, o) {
