@@ -1292,6 +1292,7 @@
                     BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX: (_, E, I) => "/billing/popup-bridge/".concat(_, "/callback/").concat(E, "/").concat(null != I ? I : ""),
                     BILLING_SUBSCRIPTIONS: "/users/@me/billing/subscriptions",
                     BILLING_PERKS_RELEVANCE: "/users/@me/billing/perks-relevance",
+                    BILLING_NITRO_AFFINITY: "/users/@me/billing/nitro-affinity",
                     BILLING_SUBSCRIPTIONS_PREVIEW: "/users/@me/billing/subscriptions/preview",
                     BILLING_APPLY_APPLE_RECEIPT: "/billing/apple/apply-receipt",
                     BILLING_APPLE_SUBSCRIPTION: _ => "/billing/apple/subscriptions/".concat(_),
@@ -13098,4 +13099,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3b2bed4b4a4ff1a6b0b8.js.map
+//# sourceMappingURL=d34ca26df33566386ccf.js.map
