@@ -19132,11 +19132,9 @@
             e.exports = {
                 defaultContainer: "defaultContainer__91554",
                 defaultTextInput: "defaultTextInput__91909",
-                emoji: "emoji__01f0a",
-                emojiIcon: "emojiIcon_ae6565",
+                expressionPickerButtonImage: "expressionPickerButtonImage__5366d",
                 imageExpressionPickerButton: "imageExpressionPickerButton_bfd5b8",
-                imageOnlyContainer: "imageOnlyContainer__04301",
-                imageUploadIcon: "imageUploadIcon__48563"
+                imageOnlyContainer: "imageOnlyContainer__04301"
             }
         },
         301893: function(e, t, o) {

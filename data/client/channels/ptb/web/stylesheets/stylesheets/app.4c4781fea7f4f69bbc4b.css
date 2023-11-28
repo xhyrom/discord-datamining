@@ -110223,14 +110223,6 @@ html .invoiceCancelRow_a8669b {
     background-color: var(--input-background)
 }
 
-.emojiIcon_ae6565 {
-    width: 20px;
-    cursor: pointer;
-    color: var(--interactive-active);
-    padding-right: 8px;
-    padding-left: 20px
-}
-
 .defaultTextInput__91909 {
     flex: 1
 }
@@ -110251,13 +110243,11 @@ html .invoiceCancelRow_a8669b {
     height: 100%
 }
 
-.imageUploadIcon__48563 {
+.expressionPickerButtonImage__5366d {
     width: 24px;
-    color: var(--interactive-active)
-}
-
-.emoji__01f0a {
-    padding-left: 14px;
+    padding-left: 20px;
+    padding-right: 16px;
+    color: var(--interactive-active);
     cursor: pointer
 }
 
@@ -123783,4 +123773,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e3e28f74237f1bf232f8.css.map*/
+/*# sourceMappingURL=app.4c4781fea7f4f69bbc4b.css.map*/
