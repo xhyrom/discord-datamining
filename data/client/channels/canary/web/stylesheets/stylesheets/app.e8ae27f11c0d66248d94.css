@@ -72824,7 +72824,7 @@ html .tabBadge__002b3 {
 .table_e130b5 {
     background-color: var(--background-secondary);
     border-radius: 4px;
-    padding: 16px
+    padding: 12px
 }
 
 .header_d1aa3d {
@@ -77121,7 +77121,7 @@ input::-webkit-inner-spin-button {
 }
 
 .content__5fb50 {
-    margin-bottom: 30px
+    margin: 24px 0
 }
 
 .giftRecipientName__755be,
@@ -77428,6 +77428,30 @@ input::-webkit-inner-spin-button {
     margin: 0
 }
 
+.profileEffectContainer_f4fc55 {
+    height: 296px;
+    width: 200px;
+    position: relative;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin: 16px auto 0
+}
+
+.profileEffectBackground__46f4e {
+    position: absolute;
+    width: 100%
+}
+
+.giftMainAnimationWrapper_c49cce {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.avatar_bec51e {
+    margin-top: 24px
+}
+
 .stepBody_b5dbd7 {
     padding-top: 16px
 }
@@ -77470,12 +77494,6 @@ input::-webkit-inner-spin-button {
 
 .skuHeadingText__3d971 {
     align-self: center
-}
-
-.giftMainAnimationWrapper__52513 {
-    display: flex;
-    align-items: center;
-    justify-content: center
 }
 
 .giftMainAnimation__338ff {
@@ -123769,4 +123787,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.84061f451b20eb39571c.css.map*/
+/*# sourceMappingURL=app.e8ae27f11c0d66248d94.css.map*/
