@@ -615,8 +615,9 @@
             }
 
             function L(e) {
-                return new d.RRule({
-                    dtstart: new Date(e.start),
+                let t = new Date(e.start);
+                return t.setMilliseconds(0), new d.RRule({
+                    dtstart: t,
                     until: null != e.end ? new Date(e.end) : null,
                     freq: e.frequency,
                     interval: e.interval,
@@ -638,19 +639,15 @@
                 for (let e = 0; e < i && r < d; e++) {
                     let n = t.after(r);
                     if (null == n) break;
-                    r = new Date(n), n.setMilliseconds(0), (!l || e > 0) && u.push(n)
+                    r = new Date(n), (!l || e > 0) && u.push(n)
                 }
                 return u
             }
 
             function U(e) {
-                let t = function(e) {
-                    var t;
-                    if (null == e.recurrence_rule) return null;
-                    let n = L(e.recurrence_rule);
-                    return null !== (t = I(1, n, new Date)[0]) && void 0 !== t ? t : null
-                }(e);
-                return null != t ? i.default.fromTimestamp(Math.floor(t.getTime() / a.default.Millis.SECOND) * a.default.Millis.SECOND) : null
+                var t;
+                let n = null == (t = e).recurrence_rule ? null : new Date(t.scheduled_start_time);
+                return null != n ? i.default.fromTimestamp(Math.floor(n.getTime() / a.default.Millis.SECOND) * a.default.Millis.SECOND) : null
             }
 
             function C(e, t) {
@@ -736,4 +733,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9e9846439c03b27aec8a.js.map
+//# sourceMappingURL=29ddaf24d0d9a653701f.js.map

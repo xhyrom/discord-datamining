@@ -626,10 +626,10 @@
             "use strict";
             l.r(t), l.d(t, {
                 UserActivityTypes: function() {
-                    return g
+                    return A
                 },
                 default: function() {
-                    return A
+                    return v
                 }
             });
             var n = l("37983");
@@ -645,13 +645,14 @@
                 f = l("373469"),
                 m = l("42203"),
                 p = l("305961"),
-                E = l("800762"),
-                T = l("313873"),
-                h = l("474293"),
-                _ = l("49111"),
-                S = l("804354");
+                E = l("957255"),
+                T = l("800762"),
+                h = l("313873"),
+                _ = l("474293"),
+                S = l("49111"),
+                I = l("804354");
 
-            function I(e) {
+            function g(e) {
                 let {
                     type: t,
                     source: l,
@@ -665,7 +666,7 @@
                     actionColor: p
                 } = e;
                 return (0, n.jsx)(o.default, {
-                    className: (0, h.getClass)(S, "actions", t),
+                    className: (0, _.getClass)(I, "actions", t),
                     type: t,
                     source: l,
                     activity: a,
@@ -679,41 +680,41 @@
                     isEmbedded: m
                 })
             }
-            let g = T.default.Types;
-            var A = function(e) {
+            let A = h.default.Types;
+            var v = function(e) {
                 var t;
                 let {
                     activity: l,
                     user: s,
                     useStoreStream: r = !0,
                     showActions: o = !0,
-                    hideHeader: h = !1,
-                    ...S
-                } = e, g = (0, a.useStateFromStores)([E.default, m.default], () => {
+                    hideHeader: _ = !1,
+                    ...I
+                } = e, A = (0, a.useStateFromStores)([T.default, m.default], () => {
                     var e;
-                    return m.default.getChannel(null === (e = E.default.getVoiceStateForUser(s.id)) || void 0 === e ? void 0 : e.channelId)
+                    return m.default.getChannel(null === (e = T.default.getVoiceStateForUser(s.id)) || void 0 === e ? void 0 : e.channelId)
                 }), {
-                    enableHangStatus: A
+                    enableHangStatus: v
                 } = d.HangStatusExperiment.useExperiment({
-                    guildId: null !== (t = null == g ? void 0 : g.guild_id) && void 0 !== t ? t : "",
+                    guildId: null !== (t = null == A ? void 0 : A.guild_id) && void 0 !== t ? t : "",
                     location: "UserActivityContainer"
-                }), v = (0, a.useStateFromStores)([f.default], () => r ? f.default.getAnyStreamForUser(s.id) : null), C = A && (null == l ? void 0 : l.type) === _.ActivityTypes.HANG_STATUS ? g : null, N = (0, a.useStateFromStores)([p.default, E.default, m.default], () => {
+                }), C = (0, a.useStateFromStores)([f.default], () => r ? f.default.getAnyStreamForUser(s.id) : null), N = v && E.default.can(S.Permissions.CONNECT, A), y = (null == l ? void 0 : l.type) === S.ActivityTypes.HANG_STATUS && N ? A : null, M = (0, a.useStateFromStores)([p.default, T.default, m.default], () => {
                     var e, t;
-                    return (0, i.default)(l, _.ActivityFlags.EMBEDDED) ? p.default.getGuild(null === (e = m.default.getChannel(null === (t = E.default.getVoiceStateForSession(s.id, null == l ? void 0 : l.session_id)) || void 0 === t ? void 0 : t.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != C ? p.default.getGuild(C.getGuildId()) : null
-                }), y = (0, a.useStateFromStores)([p.default], () => null != v ? p.default.getGuild(v.guildId) : null), M = (0, a.useStateFromStores)([u.default], () => {
+                    return (0, i.default)(l, S.ActivityFlags.EMBEDDED) ? p.default.getGuild(null === (e = m.default.getChannel(null === (t = T.default.getVoiceStateForSession(s.id, null == l ? void 0 : l.session_id)) || void 0 === t ? void 0 : t.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != y ? p.default.getGuild(y.getGuildId()) : null
+                }), O = (0, a.useStateFromStores)([p.default], () => null != C ? p.default.getGuild(C.guildId) : null), R = (0, a.useStateFromStores)([u.default], () => {
                     if (null != l) return null != l.application_id ? u.default.getApplication(l.application_id) : u.default.getApplicationByName(l.name);
                     return null
                 });
-                return A || (null == l ? void 0 : l.type) !== _.ActivityTypes.HANG_STATUS ? (0, n.jsx)(T.default, {
-                    ...S,
+                return (null == l ? void 0 : l.type) !== S.ActivityTypes.HANG_STATUS || N ? (0, n.jsx)(h.default, {
+                    ...I,
                     activity: l,
                     user: s,
-                    application: M,
-                    hideHeader: h,
-                    activityGuild: null != N ? N : y,
-                    renderActions: o ? () => (0, n.jsx)(I, {
-                        ...S,
-                        applicationStream: v,
+                    application: R,
+                    hideHeader: _,
+                    activityGuild: null != M ? M : O,
+                    renderActions: o ? () => (0, n.jsx)(g, {
+                        ...I,
+                        applicationStream: C,
                         activity: l,
                         user: s
                     }) : null,
@@ -7720,4 +7721,4 @@
         }
     }
 ]);
-//# sourceMappingURL=00173ffe6a17f813c779.js.map
+//# sourceMappingURL=b3a86096c2cbfd661f14.js.map

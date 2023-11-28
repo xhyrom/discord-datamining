@@ -23080,7 +23080,7 @@
                 default: function() {
                     return eu
                 }
-            }), n("222007"), n("581081"), n("424973"), n("808653");
+            }), n("222007"), n("581081"), n("424973"), n("686130"), n("781738"), n("808653");
             var i = n("917351"),
                 r = n.n(i),
                 o = n("866227"),
@@ -23533,11 +23533,11 @@
                         matchComparator: f
                     } = e;
                     Q();
-                    let _ = i.toLowerCase(),
+                    let _ = i.toLowerCase().replaceAll("_", ""),
                         d = S.default.escape(_);
                     if (null == f) {
                         let e = RegExp("".concat(d), "i");
-                        s = e.test.bind(e)
+                        s = s => e.test(s.replaceAll("_", ""))
                     } else s = f;
                     let u = null != n ? n.getGuildId() : null,
                         g = ee.get(u).nameMatchesChain(s).reduce((e, s) => {
@@ -25162,4 +25162,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1588a10dcb7ca3c73c84.js.map
+//# sourceMappingURL=c2ef546e05afb1fc662b.js.map

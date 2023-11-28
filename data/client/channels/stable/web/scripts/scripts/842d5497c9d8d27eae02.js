@@ -5665,21 +5665,17 @@
             e.exports = {
                 accountSwitcherCollectiblesList: "accountSwitcherCollectiblesList_a18629 collectiblesList_b551dd",
                 accountSwitcherItem: "accountSwitcherItem_b16f56 item_ecbedf",
-                accountSwitcherPresetEffectBackground: "accountSwitcherPresetEffectBackground_d412ef presetEffectBackground__58a7d",
-                accountSwitcherPresetEffectImg: "accountSwitcherPresetEffectImg_ea77e6 presetEffectImg_b4d9ed",
+                avatarDecoration: "avatarDecoration__30377",
                 avatarDecorationItem: "avatarDecorationItem_c53626",
                 avatarDecorationPlaceholder: "avatarDecorationPlaceholder__697ae",
                 collectiblesList: "collectiblesList_b551dd",
-                interactiveModaPresetEffectImg: "interactiveModaPresetEffectImg__5d703 presetEffectImg_b4d9ed",
                 interactiveModalCollectiblesList: "interactiveModalCollectiblesList__53412 collectiblesList_b551dd",
                 interactiveModalItem: "interactiveModalItem_fb9b00 item_ecbedf",
-                interactiveModalPresetEffectBackground: "interactiveModalPresetEffectBackground__7510f presetEffectBackground__58a7d",
                 item: "item_ecbedf",
                 loading: "loading__3f327",
                 presetEffectBackground: "presetEffectBackground__58a7d",
                 presetEffectImg: "presetEffectImg_b4d9ed",
-                selectedAvatarDecorationItem: "selectedAvatarDecorationItem_aa358a",
-                selectedProfileEffectItem: "selectedProfileEffectItem__83a5c"
+                selectedItem: "selectedItem_adfa83"
             }
         },
         224609: function(e, t, o) {
@@ -5755,12 +5751,6 @@
                 heading1: "heading1__9e25a",
                 reload: "reload__6fe99",
                 wrapper: "wrapper__9f283"
-            }
-        },
-        672651: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                art: "art_eaee27"
             }
         },
         95194: function(e, t, o) {
@@ -18845,7 +18835,6 @@
                 errorBlock: "errorBlock__3b86d",
                 fineprint: "fineprint__99591",
                 giftMainAnimation: "giftMainAnimation__338ff",
-                giftMainAnimationWrapper: "giftMainAnimationWrapper__52513",
                 invoice: "invoice_e9fa87",
                 invoiceSpinner: "invoiceSpinner_cdcb1c",
                 paymentSourceWrapper: "paymentSourceWrapper_e2260a",
@@ -18853,6 +18842,15 @@
                 skuHeadingText: "skuHeadingText__3d971",
                 stepBody: "stepBody_b5dbd7",
                 subscriptionCostRow: "subscriptionCostRow_fccd69"
+            }
+        },
+        433264: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                avatar: "avatar_bec51e",
+                giftMainAnimationWrapper: "giftMainAnimationWrapper_c49cce",
+                profileEffectBackground: "profileEffectBackground__46f4e",
+                profileEffectContainer: "profileEffectContainer_f4fc55"
             }
         },
         383485: function(e, t, o) {
@@ -19132,11 +19130,9 @@
             e.exports = {
                 defaultContainer: "defaultContainer__91554",
                 defaultTextInput: "defaultTextInput__91909",
-                emoji: "emoji__01f0a",
-                emojiIcon: "emojiIcon_ae6565",
+                expressionPickerButtonImage: "expressionPickerButtonImage__5366d",
                 imageExpressionPickerButton: "imageExpressionPickerButton_bfd5b8",
-                imageOnlyContainer: "imageOnlyContainer__04301",
-                imageUploadIcon: "imageUploadIcon__48563"
+                imageOnlyContainer: "imageOnlyContainer__04301"
             }
         },
         301893: function(e, t, o) {
