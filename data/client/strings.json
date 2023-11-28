@@ -2819,6 +2819,7 @@
   "NOTICE_VOICE_CONNECTED_LAST_SESSION": "\"You were in a voice channel last time you left Discord.\"",
   "NOTICE_UNCLAIMED_ACCOUNT": "\"This is an unclaimed account. Claim it before it's lost.\"",
   "NOTICE_UNVERIFIED_ACCOUNT": "\"Please check your email and follow the instructions to verify your account.\"",
+  "NOTICE_UNVERIFIED_ACCOUNT_UU": "\"Please check your email to verify your account and keep your current username.\"",
   "NOTICE_NATIVE_APPS_2020_06": "\"Want to take full advantage of Discord with better performance, in-game overlay, and more? Get the desktop app!\"",
   "NOTICE_SCHEDULED_MAINTENANCE": "\"Discord will be undergoing scheduled maintenance on **{start, date, long}** at **{start, time, short}**.\"",
   "NOTICE_NO_INPUT_DETECTED": "\"\\nWell, it looks like Discord is not detecting any input from your mic. Let's fix that... together.\\n\"",
