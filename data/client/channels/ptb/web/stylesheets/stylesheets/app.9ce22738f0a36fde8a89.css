@@ -19469,8 +19469,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -70398,8 +70398,7 @@ html .progress__4ef76 {
 }
 
 .coachmark_db913c {
-    width: 296px;
-    margin-top: 8px
+    width: 296px
 }
 
 .loading__9320e {
@@ -123773,4 +123772,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4c4781fea7f4f69bbc4b.css.map*/
+/*# sourceMappingURL=app.9ce22738f0a36fde8a89.css.map*/
