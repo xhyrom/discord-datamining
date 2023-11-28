@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-08_windows_graphics_capture",
+    "label": "Windows Graphics Capture",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Graphics Captrue Enabled"
+    ],
+    "hash": 231858385,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "graphicsCaptureEnabled"
+    ]
+  }
+}
