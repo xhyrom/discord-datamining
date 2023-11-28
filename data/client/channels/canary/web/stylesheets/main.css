@@ -83708,8 +83708,9 @@ input::-webkit-inner-spin-button {
 .closeButton__92830 {
     z-index: 1000;
     position: absolute;
-    top: 20px;
-    right: 20px
+    top: 12px;
+    right: 12px;
+    opacity: 1
 }
 
 .previewBody_a50037 {
@@ -83729,8 +83730,12 @@ input::-webkit-inner-spin-button {
     background-image: url(/assets/dd4a336fd444ced6dd81.jpg)
 }
 
+.theme-dark .closeButton__92830 {
+    color: var(--white-500)
+}
+
 .theme-light .header__91604 {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), #fff), url(/assets/dd4a336fd444ced6dd81.jpg)
+    background-image: url(/assets/4afee995f6783932a280.jpg)
 }
 
 .theme-light .closeButton__92830 {
@@ -123764,4 +123769,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.70120c29698e1ae2deb9.css.map*/
+/*# sourceMappingURL=app.84061f451b20eb39571c.css.map*/
