@@ -18996,34 +18996,51 @@
         498139: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                useFavoritesServerExperiment: function() {
+                    return s
+                },
                 default: function() {
-                    return r
+                    return a
                 }
             });
-            var r = (0, n("862205").createExperiment)({
-                kind: "user",
-                id: "2021-09_favorites_server",
-                label: "Enable fancy super-alpha favorites server.",
-                defaultConfig: {
-                    favoritesEnabled: !1,
-                    canShow: !0
-                },
-                treatments: [{
-                    id: 1,
-                    label: "It is on.",
-                    config: {
-                        favoritesEnabled: !0,
-                        canShow: !0
-                    }
-                }, {
-                    id: 2,
-                    label: "It is forced off",
-                    config: {
+            var r = n("862205");
+            let i = (0, r.createExperiment)({
+                    kind: "user",
+                    id: "2021-09_favorites_server",
+                    label: "Enable fancy super-alpha favorites server.",
+                    defaultConfig: {
                         favoritesEnabled: !1,
-                        canShow: !1
-                    }
-                }]
-            })
+                        canShow: !0
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Favorites v1 - On",
+                        config: {
+                            favoritesEnabled: !0,
+                            canShow: !0
+                        }
+                    }, {
+                        id: 2,
+                        label: "Favorites v1 - Forced Off",
+                        config: {
+                            favoritesEnabled: !1,
+                            canShow: !1
+                        }
+                    }, {
+                        id: 3,
+                        label: "Favorites v2",
+                        config: {
+                            favoritesEnabled: !0,
+                            canShow: !0
+                        }
+                    }]
+                }),
+                s = e => i.useExperiment({
+                    location: e
+                }, {
+                    autoTrackExposure: !0
+                });
+            var a = i
         },
         106682: function(e, t, n) {
             "use strict";
@@ -19078,11 +19095,7 @@
             function E() {
                 let {
                     canShow: e
-                } = u.default.useExperiment({
-                    location: "7993a7_2"
-                }, {
-                    autoTrackExposure: !1
-                }), t = (0, s.useStateFromStores)([o.default, a.default, l.default], () => e && d(o.default, a.default, l.default));
+                } = (0, u.useFavoritesServerExperiment)("7993a7_2"), t = (0, s.useStateFromStores)([o.default, a.default, l.default], () => e && d(o.default, a.default, l.default));
                 return t
             }
         },
@@ -41549,4 +41562,4 @@
         }
     }
 ]);
-//# sourceMappingURL=69d84d427ca2ee2c4521.js.map
+//# sourceMappingURL=ab1a96e0417b9ba19469.js.map
