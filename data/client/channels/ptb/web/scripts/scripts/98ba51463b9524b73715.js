@@ -7987,7 +7987,7 @@
                     return I
                 },
                 default: function() {
-                    return V
+                    return x
                 }
             }), n("222007");
             var i = n("345570"),
@@ -8211,7 +8211,7 @@
                 } = e;
                 if (null == t || !(0, p.isEligibleForExplicitMediaRedaction)()) return !1;
                 let n = t === E.default.getChannelId();
-                return !!n && k(t)
+                return !!n && H(t)
             }
 
             function F(e) {
@@ -8221,10 +8221,18 @@
                 } = e;
                 if (!(0, p.isEligibleForExplicitMediaRedaction)() || !n || t.type !== m.UserSettingsTypes.PRELOADED_USER_SETTINGS) return !1;
                 let i = E.default.getChannelId();
-                return null != i && k(i)
+                return null != i && H(i)
             }
 
             function k(e) {
+                let {
+                    channelId: t,
+                    chatOpen: n
+                } = e;
+                return !!(0, p.isEligibleForExplicitMediaRedaction)() && !!n && H(t)
+            }
+
+            function H(e) {
                 let t = _.default.getMessages(e);
                 if (0 === t.length) return !1;
                 let n = function(e) {
@@ -8241,7 +8249,7 @@
                 }(t);
                 return !!(n.length > 0) && (O(n), !0)
             }
-            class H extends o.default {
+            class V extends o.default {
                 constructor(...e) {
                     super(...e), this.actions = {
                         LOAD_MESSAGES_SUCCESS: U,
@@ -8253,11 +8261,12 @@
                         SEARCH_FINISH: P,
                         CHANNEL_SELECT: w,
                         LOAD_PINNED_MESSAGES_SUCCESS: P,
-                        USER_SETTINGS_PROTO_UPDATE: F
+                        USER_SETTINGS_PROTO_UPDATE: F,
+                        CHANNEL_RTC_UPDATE_CHAT_OPEN: k
                     }
                 }
             }
-            var V = new H
+            var x = new V
         },
         695681: function(e, t, n) {
             "use strict";
@@ -33685,4 +33694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=762395fdc5bd79605655.js.map
+//# sourceMappingURL=98ba51463b9524b73715.js.map
