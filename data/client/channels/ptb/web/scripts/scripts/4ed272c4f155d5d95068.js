@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["89163"], {
+    ["48449"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -7490,7 +7490,7 @@
             });
             var i = (0, n("862205").createExperiment)({
                 kind: "user",
-                id: "2023-11_video_quality_measurement_hwdec_v1",
+                id: "2023-11_video_quality_measurement_hwdec",
                 label: "Video Quality Measurement Hardware Decoding",
                 defaultConfig: {
                     enabled: !1
@@ -14636,7 +14636,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "249327"
+                                build_number: "249372"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21450,4 +21450,4 @@
         }
     }
 ]);
-//# sourceMappingURL=766a9e1601af6fbee428.js.map
+//# sourceMappingURL=4ed272c4f155d5d95068.js.map
