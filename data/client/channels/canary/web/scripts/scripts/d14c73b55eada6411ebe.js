@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -21115,11 +21115,12 @@
                     maxWidth: s,
                     maxHeight: a,
                     ratio: o = 1,
-                    format: u = null
-                } = e, d = n, E = r;
-                o < 1 && (d = Math.round(n * o), E = Math.round(r * o)), null != s && (d = Math.min(d, s)), null != a && (E = Math.min(E, a));
-                let _ = (0, c.default)();
-                return d *= _,
+                    format: u = null,
+                    quality: d = null
+                } = e, E = n, _ = r;
+                o < 1 && (E = Math.round(n * o), _ = Math.round(r * o)), null != s && (E = Math.min(E, s)), null != a && (_ = Math.min(_, a));
+                let f = (0, c.default)();
+                return E *= f,
                     function(e) {
                         let {
                             src: t,
@@ -21127,19 +21128,21 @@
                             sourceHeight: r,
                             targetWidth: s,
                             targetHeight: a,
-                            format: o = null
-                        } = e, [u, c] = function(e) {
+                            format: o = null,
+                            quality: u = null
+                        } = e, [c, d] = function(e) {
                             let [t, n] = e.split("?");
                             return [t, l.parse(n)]
                         }(t);
-                        return null != o && (c.format = o), (s !== n || a !== r) && (c.width = 0 | s, c.height = 0 | a), !i.isEmpty(c) && (u += "?" + l.stringify(c)), u
+                        return null != o && (d.format = o), null != u && (d.quality = u), (s !== n || a !== r) && (d.width = 0 | s, d.height = 0 | a), !i.isEmpty(d) && (c += "?" + l.stringify(d)), c
                     }({
                         src: t,
                         sourceWidth: n,
                         sourceHeight: r,
-                        targetWidth: d,
-                        targetHeight: E *= _,
-                        format: u
+                        targetWidth: E,
+                        targetHeight: _ *= f,
+                        format: u,
+                        quality: d
                     })
             }
         },
@@ -41546,4 +41549,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5368be1274d2d9ce9cd3.js.map
+//# sourceMappingURL=d14c73b55eada6411ebe.js.map

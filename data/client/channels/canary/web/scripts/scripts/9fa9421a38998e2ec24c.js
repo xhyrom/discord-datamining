@@ -6565,7 +6565,8 @@
                 f = n("594098"),
                 h = n("719347"),
                 p = n("49111");
-            let g = /\.gif($|\?|#)/i;
+            let g = /\.gif($|\?|#)/i,
+                C = /\.png($|\?|#)/i;
             (l = class e extends i.Component {
                 static isAnimated(e) {
                     let {
@@ -6574,6 +6575,12 @@
                         animated: l
                     } = e;
                     return l || g.test(null != n && "" !== n ? n : t)
+                }
+                static isSrcPNG(e) {
+                    let {
+                        src: t
+                    } = e;
+                    return C.test(t)
                 }
                 componentDidMount() {
                     let {
@@ -6599,15 +6606,17 @@
                             maxHeight: r,
                             mediaLayoutType: o
                         } = this.props,
-                        c = null;
-                    return d.SUPPORTS_WEBP && (n || !e.isAnimated(this.props)) ? c = "webp" : n && (c = "png"), (0, u.getImageSrc)({
+                        c = null,
+                        m = null;
+                    return d.SUPPORTS_WEBP && (n || !e.isAnimated(this.props)) ? (c = "webp", e.isSrcPNG(this.props) && (m = "lossless")) : n && (c = "png"), (0, u.getImageSrc)({
                         src: l,
                         width: a,
                         height: s,
                         ratio: t,
                         maxWidth: o === h.MediaLayoutType.MOSAIC ? i : void 0,
                         maxHeight: o === h.MediaLayoutType.MOSAIC ? r : void 0,
-                        format: c
+                        format: c,
+                        quality: m
                     })
                 }
                 getRatio() {
@@ -10755,4 +10764,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67311e38d3355e7762dd.js.map
+//# sourceMappingURL=9fa9421a38998e2ec24c.js.map
