@@ -53603,15 +53603,15 @@ html .progress__4ef76 {
 }
 
 .item_ecbedf {
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-xs);
+    overflow: hidden;
     background-color: var(--background-floating);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 6px;
-    border: 2px solid transparent;
-    box-sizing: border-box
+    box-sizing: border-box;
+    position: relative
 }
 
 .accountSwitcherItem_b16f56 {
@@ -53624,23 +53624,37 @@ html .progress__4ef76 {
     height: 72px
 }
 
-.selectedAvatarDecorationItem_aa358a {
-    border-color: var(--brand-500)
-}
-
-.selectedProfileEffectItem__83a5c {
-    box-shadow: 0 0 0 2px var(--brand-500);
-    border-radius: 4px
+.selectedItem_adfa83 {
+    box-shadow: 0 0 0 2px var(--brand-500)
 }
 
 .avatarDecorationPlaceholder__697ae {
     position: absolute
 }
 
-.avatarDecorationItem_c53626 {
+.avatarDecoration__30377 {
     position: relative;
     height: 100%;
-    width: 100%
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box
+}
+
+.avatarDecorationItem_c53626:before {
+    content: "";
+    position: absolute;
+    background: url(/assets/f6c7b8245d3a54cf98b2.png);
+    background-size: contain
+}
+
+.accountSwitcherItem_b16f56:before {
+    width: 56px;
+    height: 56px
+}
+
+.interactiveModalItem_fb9b00:before {
+    width: 48px;
+    height: 48px
 }
 
 .loading__3f327 {
@@ -53653,32 +53667,16 @@ html .progress__4ef76 {
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: top;
-    object-position: top
-}
-
-.accountSwitcherPresetEffectImg_ea77e6 {
-    width: 80px;
-    height: 80px
-}
-
-.interactiveModaPresetEffectImg__5d703 {
-    width: 72px;
-    height: 72px
+    object-position: top;
+    width: 100%;
+    height: 100%
 }
 
 .presetEffectBackground__58a7d {
     position: absolute;
-    border-radius: 4px
-}
-
-.accountSwitcherPresetEffectBackground_d412ef {
-    width: 80px;
-    height: 80px
-}
-
-.interactiveModalPresetEffectBackground__7510f {
-    width: 72px;
-    height: 72px
+    border-radius: 4px;
+    width: 100%;
+    height: 100%
 }
 
 .theme-light .item_ecbedf {
@@ -123772,4 +123770,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.dd7b5e156d84fe932cdc.css.map*/
+/*# sourceMappingURL=app.2966f1558a7bcc583e6c.css.map*/
