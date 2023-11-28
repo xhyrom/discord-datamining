@@ -53433,12 +53433,6 @@ html .progress__4ef76 {
     margin-left: -2px
 }
 
-.art_eaee27 {
-    width: 213px;
-    height: 176px;
-    margin-top: -83px
-}
-
 .container__9432b {
     width: 285px;
     background-color: var(--brand-500);
@@ -77306,8 +77300,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -77354,8 +77348,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .loader_acb69b {
@@ -123770,4 +123764,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c501cccb43e2f684a993.css.map*/
+/*# sourceMappingURL=app.70120c29698e1ae2deb9.css.map*/
