@@ -2410,7 +2410,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-6a820562c45c449ac41c2b715c8ec2ca10a91ddb",
+                    release: "discord_web-d0c7051e112e7b6d75d57fb5a924f4e4c299c7a9",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2428,7 +2428,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "249307", "249307")), a.setTag("builtAt", String("1701205842313"));
+                }), a.setTag("buildNumber", (e = "249313", "249313")), a.setTag("builtAt", String("1701206244460"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -3886,16 +3886,17 @@
                         onCameraUnavailable: d,
                         hasPermission: c,
                         children: f,
-                        channelLimitReached: E = !1
+                        channelLimitReached: E = !1,
+                        join: h
                     } = e,
-                    h = (0, i.useAppContext)(),
-                    p = r ? () => d() : () => s(!e.enabled, h);
+                    p = (0, i.useAppContext)(),
+                    S = r ? () => d() : () => s(!e.enabled, p);
                 return (0, a.jsx)(a.Fragment, {
                     children: f({
-                        onClick: p,
+                        onClick: S,
                         active: n,
                         disabled: !n && (!c || E),
-                        iconComponent: n ? u.default : o.default,
+                        iconComponent: h || n ? u.default : o.default,
                         label: t,
                         unavailable: r
                     })
@@ -4952,4 +4953,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f9033a623254c596d99c.js.map
+//# sourceMappingURL=1d6fdb8808ba63511405.js.map
