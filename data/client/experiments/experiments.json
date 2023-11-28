@@ -1239,15 +1239,17 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: It is on.",
-        "Treatment 2: It is forced off"
+        "Treatment 1: Favorites v1 - On",
+        "Treatment 2: Favorites v1 - Forced Off",
+        "Treatment 3: Favorites v2"
       ],
       "hash": 1134868932,
       "buckets": [
         -1,
         0,
         1,
-        2
+        2,
+        3
       ],
       "config_keys": [
         "favoritesEnabled",
