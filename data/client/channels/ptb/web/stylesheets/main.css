@@ -70350,7 +70350,7 @@ html .progress__4ef76 {
     font-weight: 400
 }
 
-.art__562f2 {
+.art_f8934e {
     margin: 0 auto;
     background-color: green;
     width: 208px;
@@ -70358,6 +70358,27 @@ html .progress__4ef76 {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.coachmark_db913c {
+    width: 296px;
+    margin-top: 8px
+}
+
+.loading__9320e {
+    opacity: 0;
+    pointer-events: none
+}
+
+.shopArt_acfdd5 img {
+    height: 120px;
+    width: 208px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.imageLoader__0a236 {
+    display: none
 }
 
 .checkbox__0fbd2 {
@@ -123725,4 +123746,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.0bfc1a197d3c9f687e02.css.map*/
+/*# sourceMappingURL=app.566a953fc4fc522b7840.css.map*/
