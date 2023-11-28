@@ -5663,8 +5663,17 @@
         312595: function(e, t, o) {
             "use strict";
             e.exports = {
+                accountSwitcherCollectiblesList: "accountSwitcherCollectiblesList_a18629 collectiblesList_b551dd",
+                accountSwitcherItem: "accountSwitcherItem_b16f56 item_ecbedf",
+                accountSwitcherPresetEffectBackground: "accountSwitcherPresetEffectBackground_d412ef presetEffectBackground__58a7d",
+                accountSwitcherPresetEffectImg: "accountSwitcherPresetEffectImg_ea77e6 presetEffectImg_b4d9ed",
                 avatarDecorationItem: "avatarDecorationItem_c53626",
+                avatarDecorationPlaceholder: "avatarDecorationPlaceholder__697ae",
                 collectiblesList: "collectiblesList_b551dd",
+                interactiveModaPresetEffectImg: "interactiveModaPresetEffectImg__5d703 presetEffectImg_b4d9ed",
+                interactiveModalCollectiblesList: "interactiveModalCollectiblesList__53412 collectiblesList_b551dd",
+                interactiveModalItem: "interactiveModalItem_fb9b00 item_ecbedf",
+                interactiveModalPresetEffectBackground: "interactiveModalPresetEffectBackground__7510f presetEffectBackground__58a7d",
                 item: "item_ecbedf",
                 loading: "loading__3f327",
                 presetEffectBackground: "presetEffectBackground__58a7d",
