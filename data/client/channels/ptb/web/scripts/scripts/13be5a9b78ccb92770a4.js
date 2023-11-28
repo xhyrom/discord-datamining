@@ -1608,8 +1608,8 @@
                 V = n("422791"),
                 M = n("642099"),
                 U = n("417040"),
-                F = n("716380"),
-                x = n("157547"),
+                x = n("716380"),
+                F = n("157547"),
                 B = n("88313"),
                 G = n("531748"),
                 H = n("760406"),
@@ -1617,11 +1617,6 @@
                 K = n("49111"),
                 Y = n("353927");
             let Q = /^https/.test((i = "https:", "https:")) ? "wss:" : "ws:";
-
-            function q() {
-                var e;
-                return null !== (e = (0, c.v4)()) && void 0 !== e ? e : "null"
-            }
             s = class extends p.default {
                 get quality() {
                     let e = this.getLastPing();
@@ -1651,7 +1646,7 @@
                         endpoint: n,
                         token: i
                     } = this;
-                    if (this.endpoint = e, this.token = t, (n !== this.endpoint || i !== t) && (this._cleanupSocket(), this._mediaSessionId = null, null != n && (this._rtcConnectionId = q(), E.default.dispatch({
+                    if (this.endpoint = e, this.token = t, (n !== this.endpoint || i !== t) && (this._cleanupSocket(), this._mediaSessionId = null, null != n && (this._rtcConnectionId = (0, c.v4)(), E.default.dispatch({
                             type: "RTC_CONNECTION_UPDATE_ID",
                             connection: this
                         }))), null == this.endpoint) {
@@ -2409,22 +2404,23 @@
                                 channel_id: this.channelId,
                                 rtc_connection_id: this.getRTCConnectionId(),
                                 hostname: this.hostname,
-                                connect_count: this._connectCount
+                                connect_count: this._connectCount,
+                                context: this.context
                             })
-                        }, this.context = s, this.logger = new S.default("RTCConnection(".concat(null !== (r = null != a ? a : n) && void 0 !== r ? r : i, ", ").concat(this.context, ")")), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = i, this.channelIds = new Set([i]), this.rtcServerId = a, this.parentMediaSessionId = o, this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = K.RTCConnectionStates.AWAITING_ENDPOINT, this.stateHistory = new M.StateHistory(this.state), this._socket = null, this._backoff = new h.default(1e3, 1e4), this._destroyed = !1, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = !1, this._outboundLossRate = null, this._createdTime = (0, m.now)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = q(), this._connectCount = 0, this._connected = !1, this._connecting = !1, this._encountered_socket_failure = !1, this._inputDetected = !1, this._selectedExperiments = [], s === Y.MediaEngineContextTypes.DEFAULT) {
+                        }, this.context = s, this.logger = new S.default("RTCConnection(".concat(null !== (r = null != a ? a : n) && void 0 !== r ? r : i, ", ").concat(this.context, ")")), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = i, this.channelIds = new Set([i]), this.rtcServerId = a, this.parentMediaSessionId = o, this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = K.RTCConnectionStates.AWAITING_ENDPOINT, this.stateHistory = new M.StateHistory(this.state), this._socket = null, this._backoff = new h.default(1e3, 1e4), this._destroyed = !1, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = !1, this._outboundLossRate = null, this._createdTime = (0, m.now)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, c.v4)(), this._connectCount = 0, this._connected = !1, this._connecting = !1, this._encountered_socket_failure = !1, this._inputDetected = !1, this._selectedExperiments = [], s === Y.MediaEngineContextTypes.DEFAULT) {
                         let t = O.default.supports(Y.Features.FIRST_FRAME_CALLBACK) && O.default.supports(Y.Features.REMOTE_USER_MULTI_STREAM),
                             n = (null === (l = D.default.getChannel(this.channelId)) || void 0 === l ? void 0 : l.type) === K.ChannelTypes.GUILD_STAGE_VOICE;
-                        this._localMediaSinkWantsManager = new F.default(e, n, t), this._localMediaSinkWantsManager.on(F.RTCMediaSinkWantsManagerEvent.Update, e => {
+                        this._localMediaSinkWantsManager = new x.default(e, n, t), this._localMediaSinkWantsManager.on(x.RTCMediaSinkWantsManagerEvent.Update, e => {
                             if (this.state === K.RTCConnectionStates.RTC_CONNECTED && null != this._socket) {
                                 var t;
                                 this.logger.info("Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null === (t = this._connection) || void 0 === t || t.setLocalVideoSinkWants(e)
                             }
-                        }), this._localMediaSinkWantsManager.on(F.RTCMediaSinkWantsManagerEvent.UserSSRCUpdate, (e, t, n) => {
+                        }), this._localMediaSinkWantsManager.on(x.RTCMediaSinkWantsManagerEvent.UserSSRCUpdate, (e, t, n) => {
                             var i;
                             null === (i = this._connection) || void 0 === i || i.createUser(e, t, n)
                         })
                     }
-                    this._remoteVideoSinkWants = F.DEFAULT_WANTS_FULL, R.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, g.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new x.default, P.default.addOnlineCallback(this._handleNetworkOnline), P.default.addOfflineCallback(this._handleNetworkOffline), (0, L.isDesktop)() && (this.powerMonitorListener = k.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, O.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+                    this._remoteVideoSinkWants = x.DEFAULT_WANTS_FULL, R.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, g.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new F.default, P.default.addOnlineCallback(this._handleNetworkOnline), P.default.addOfflineCallback(this._handleNetworkOffline), (0, L.isDesktop)() && (this.powerMonitorListener = k.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, O.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
                         this._supportedBandwidthEstimationExperiments = e
                     })
                 }
@@ -9488,8 +9484,8 @@
                 V = n("981699"),
                 M = n("140622"),
                 U = n("16001"),
-                F = n("631508"),
-                x = n("368765"),
+                x = n("631508"),
+                F = n("368765"),
                 B = n("403770"),
                 G = n("940146"),
                 H = n("353500"),
@@ -9602,8 +9598,8 @@
                 eV = !1,
                 eM = !1,
                 eU = !1,
-                eF = null,
-                ex = !1,
+                ex = null,
+                eF = !1,
                 eB = !1,
                 eG = !1,
                 eH = !1,
@@ -9668,7 +9664,7 @@
                     if (null != o.desktopSource) {
                         let {
                             useQuartzCapturer: t
-                        } = F.default.getCurrentConfig({
+                        } = x.default.getCurrentConfig({
                             location: "f627ab_1"
                         }, {
                             autoTrackExposure: !1
@@ -9745,7 +9741,7 @@
             }
 
             function e9(e) {
-                return !!((0, J.isMac)() && ev.supports(ef.Features.SCREEN_CAPTURE_KIT) && E.satisfies(null === T.default || void 0 === T.default ? void 0 : T.default.os.release, ec.DARWIN_SCKIT_VERSION)) && x.default.getCurrentConfig({
+                return !!((0, J.isMac)() && ev.supports(ef.Features.SCREEN_CAPTURE_KIT) && E.satisfies(null === T.default || void 0 === T.default ? void 0 : T.default.os.release, ec.DARWIN_SCKIT_VERSION)) && F.default.getCurrentConfig({
                     location: "screenCaptureKitEnabled"
                 }, {
                     autoTrackExposure: e
@@ -9763,7 +9759,7 @@
                 }
                 update() {
                     let e = e0();
-                    !ex && er.default.getState() === ed.RTCConnectionStates.RTC_CONNECTED && e.mode === ed.InputModes.VOICE_ACTIVITY && e.silenceWarning ? this.start() : this.stop()
+                    !eF && er.default.getState() === ed.RTCConnectionStates.RTC_CONNECTED && e.mode === ed.InputModes.VOICE_ACTIVITY && e.silenceWarning ? this.start() : this.stop()
                 }
                 reset() {
                     this.stop(), this.update()
@@ -10486,7 +10482,7 @@
                     }
                 }
                 getInputDetected() {
-                    return eF
+                    return ex
                 }
                 getNoInputDetectedNotice() {
                     return eB
@@ -10604,7 +10600,7 @@
                             tt();
                             break;
                         case ed.RTCConnectionStates.RTC_CONNECTING:
-                            ex = !1, eB = !1;
+                            eF = !1, eB = !1;
                             break;
                         case ed.RTCConnectionStates.RTC_CONNECTED:
                             e6();
@@ -10901,7 +10897,7 @@
                     let {
                         inputDetected: t
                     } = e;
-                    eF = t, !ex && eF && (ex = !0, e8.update())
+                    ex = t, !eF && ex && (eF = !0, e8.update())
                 },
                 AUDIO_SET_SUBSYSTEM: function(e) {
                     ev.setAudioSubsystem(e.subsystem)
@@ -11181,7 +11177,7 @@
                     null != o && o.desktopSource.id !== c.desktopSource.id && (ev.setClipsSource(null), (0, J.isWindows)() && null != o.desktopSource.soundshareId && I.cancelAttachToProcess(o.desktopSource.soundshareId)), null != r && tr(r, l), o = c;
                     let {
                         useQuartzCapturer: h
-                    } = F.default.getCurrentConfig({
+                    } = x.default.getCurrentConfig({
                         location: "f627ab_11"
                     }, {
                         autoTrackExposure: !1
@@ -11928,8 +11924,8 @@
                 V = [],
                 M = [],
                 U = null,
-                F = [],
-                x = {},
+                x = [],
+                F = {},
                 B = {},
                 G = {
                     gamesSeen: [],
@@ -12067,7 +12063,7 @@
                         let {
                             fullExecutablePath: o
                         } = a, r = o.replace(/\\/g, "/").toLowerCase();
-                        x[r] = i.id, t.push({
+                        F[r] = i.id, t.push({
                             id: i.id,
                             name: i.name,
                             exePath: r,
@@ -12155,7 +12151,7 @@
                     let n = [],
                         s = {};
                     e = e.filter(e => (e.distributor = function(e) {
-                        if (null != x[e.exePath]) return O.Distributors.DISCORD;
+                        if (null != F[e.exePath]) return O.Distributors.DISCORD;
                         if (/steamapps/.test(e.cmdLine)) return O.Distributors.STEAM;
                         if (/-epicapp/.test(e.cmdLine)) return O.Distributors.EPIC;
                         return e.distributor
@@ -12179,7 +12175,7 @@
                     a !== K && (K = a, h.default.dispatch({
                         type: "RUNNING_STREAMER_TOOLS_CHANGE",
                         count: K
-                    })), M = e, F = n, i = s, J()
+                    })), M = e, x = n, i = s, J()
                 }), ea()
             });
             class el extends d.default.Store {
@@ -12208,7 +12204,7 @@
                 }
                 getRunningDiscordApplicationIds() {
                     let e = [];
-                    for (let t of M) null != x[t.exePath] && e.push(x[t.exePath]);
+                    for (let t of M) null != F[t.exePath] && e.push(F[t.exePath]);
                     return e
                 }
                 getRunningVerifiedApplicationIds() {
@@ -12256,7 +12252,7 @@
                     return G.gamesSeen.find(t => null != t.name && t.name.toLowerCase() === e.toLowerCase())
                 }
                 isObservedAppRunning(e) {
-                    return F.some(t => t.name === e)
+                    return x.some(t => t.name === e)
                 }
                 getOverrides() {
                     return Object.values(G.gameOverrides)
@@ -12271,7 +12267,7 @@
                 }
                 getObservedAppNameForWindow(e) {
                     var t, n;
-                    return null !== (n = null === (t = F.find(t => (0, g.default)(e, t.windowHandle))) || void 0 === t ? void 0 : t.name) && void 0 !== n ? n : null
+                    return null !== (n = null === (t = x.find(t => (0, g.default)(e, t.windowHandle))) || void 0 === t ? void 0 : t.name) && void 0 !== n ? n : null
                 }
                 get canShowAdminWarning() {
                     return L
@@ -12450,7 +12446,7 @@
                 return null == n ? void 0 : n.id
             }
 
-            function F() {
+            function x() {
                 let e = !1,
                     t = A.default.getGuilds();
                 return c.each(y, (t, n) => {
@@ -12463,7 +12459,7 @@
                 }), null != l && Date.now() - l >= 3e5 && (r = null, e = !0), e
             }
 
-            function x(e, t) {
+            function F(e, t) {
                 if (k.delete(e), null == t) {
                     let n = D.default.getGuildId();
                     y[String(n)] === e && (t = n)
@@ -12480,7 +12476,7 @@
                         guild_id: n
                     }
                 } = e;
-                x(t, n)
+                F(t, n)
             }
             class G extends h.default.Store {
                 initialize() {
@@ -12530,11 +12526,11 @@
             var H = new G(f.default, {
                 CONNECTION_OPEN: function(e) {
                     i = e.sessionId, null != r && null == T.default.getChannel(r) && (r = null);
-                    let t = F();
+                    let t = x();
                     t && w()
                 },
                 OVERLAY_INITIALIZE: function(e) {
-                    i = e.sessionId, r = e.selectedVoiceChannelId, y = {}, P = {}, a = e.selectedChannelId, y[e.selectedGuildId] = e.selectedChannelId, M(e.selectedGuildId, a), F()
+                    i = e.sessionId, r = e.selectedVoiceChannelId, y = {}, P = {}, a = e.selectedChannelId, y[e.selectedGuildId] = e.selectedChannelId, M(e.selectedGuildId, a), x()
                 },
                 CONNECTION_CLOSED: function() {
                     i = null
@@ -12564,7 +12560,7 @@
                     let {
                         channels: t
                     } = e;
-                    for (let e of t) e.isScheduledForDeletion() && x(e.id, e.guild_id)
+                    for (let e of t) e.isScheduledForDeletion() && F(e.id, e.guild_id)
                 },
                 THREAD_DELETE: B,
                 GUILD_CREATE: function(e) {
@@ -14017,14 +14013,14 @@
                 M(t, n)
             }
 
-            function F(e) {
+            function x(e) {
                 let {
                     applicationId: t,
                     branchId: n
                 } = e, i = (0, E.getComboId)(t, n), s = A.indexOf(i); - 1 !== s && A.splice(s, 1)
             }
 
-            function x() {
+            function F() {
                 let e = p.default.getToken(),
                     t = p.default.getId();
                 null != e && g.default.setCredentials(t, e)
@@ -14088,7 +14084,7 @@
                     V(t, n, i, "Patch")
                 },
                 DISPATCH_APPLICATION_UNINSTALL: function(e) {
-                    U(e), F(e)
+                    U(e), x(e)
                 },
                 DISPATCH_APPLICATION_CANCEL: U,
                 DISPATCH_APPLICATION_REPAIR: function(e) {
@@ -14106,7 +14102,7 @@
                     if (i < 1) return !1;
                     I.splice(0, 0, I.splice(i, 1)[0]), k(), N && g.default.resume(), L()
                 },
-                DISPATCH_APPLICATION_REMOVE_FINISHED: F,
+                DISPATCH_APPLICATION_REMOVE_FINISHED: x,
                 DISPATCH_APPLICATION_STATE_UPDATE: function(e) {
                     let {
                         state: t
@@ -14146,7 +14142,7 @@
                         code: n
                     } = t;
                     if (null != n) {
-                        if (C.includes(n)) x();
+                        if (C.includes(n)) F();
                         else if (n === v.DispatchErrorCodes.APPLICATION_NOT_FOUND) {
                             let {
                                 context: e
@@ -14162,7 +14158,7 @@
                     }
                 },
                 CONNECTION_OPEN: function() {
-                    (0, S.isDesktop)() && x()
+                    (0, S.isDesktop)() && F()
                 },
                 LOGOUT: function() {
                     d.default.remove(T), (0, S.isDesktop)() && g.default.pause()
@@ -14640,7 +14636,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "249254"
+                                build_number: "249261"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -15338,10 +15334,10 @@
                     return N
                 },
                 DEFAULT_VOLUME: function() {
-                    return F
+                    return x
                 },
                 DEFAULT_STREAM_VOLUME: function() {
-                    return x
+                    return F
                 },
                 DEFAULT_VOICE_BITRATE: function() {
                     return B
@@ -15430,8 +15426,8 @@
             });
             var i, s, a, o, r, l, u, d, c, h, p, f, m, E, g, S, _, v, C, T, I, A, N, D, O, R, b, y, P, L, k, w, V, M, U = n("771281");
             (i = v || (v = {})).DEFAULT = "default", i.STREAM = "stream", (s = C || (C = {})).AUDIO_INPUT = "audioinput", s.AUDIO_OUTPUT = "audiooutput", s.VIDEO_INPUT = "videoinput", (a = T || (T = {})).PUSH_TO_TALK = "PUSH_TO_TALK", a.VOICE_ACTIVITY = "VOICE_ACTIVITY", (o = I || (I = {})).DISCONNECTED = "DISCONNECTED", o.CONNECTING = "CONNECTING", o.CONNECTED = "CONNECTED", o.NO_ROUTE = "NO_ROUTE", o.ICE_CHECKING = "ICE_CHECKING", o.DTLS_CONNECTING = "DTLS_CONNECTING", (r = A || (A = {}))[r.TRANSPORT = 1] = "TRANSPORT", r[r.OUTBOUND = 2] = "OUTBOUND", r[r.INBOUND = 4] = "INBOUND", r[r.ALL = 7] = "ALL", (l = N || (N = {})).MANUAL_DISABLE = "video_manual_disable", l.MANUAL_ENABLE = "video_manual_enable", l.MANUAL_REENABLE = "video_manual_reenable", l.AUTO_DISABLE = "video_auto_disable", l.AUTO_ENABLE = "video_auto_enable", l.AUTO_DOWNGRADE = "video_auto_downgrade", l.AUTO_UPGRADE = "video_auto_upgrade,";
-            let F = 100,
-                x = 18,
+            let x = 100,
+                F = 18,
                 B = 64e3,
                 G = 128e3,
                 H = "default",
@@ -21454,4 +21450,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e1d63a1d5d22acd4830e.js.map
+//# sourceMappingURL=13be5a9b78ccb92770a4.js.map
