@@ -88,10 +88,10 @@
                     return h
                 },
                 getBlindIds: function() {
-                    return b
+                    return E
                 },
                 uploadCallscopeLogs: function() {
-                    return E
+                    return b
                 },
                 uploadCallscopeLogFiles: function() {
                     return L
@@ -122,7 +122,7 @@
                     return null == e || e.length < 2 || null == e[1] ? "unknown" : e[1]
                 }
             }
-            async function b(t, e, n) {
+            async function E(t, e, n) {
                 let o = new a.BlindID(n),
                     l = await o.blind(t),
                     r = await o.blind(e);
@@ -131,7 +131,7 @@
                     blindUserId: r
                 }
             }
-            async function E(t, e, n, o) {
+            async function b(t, e, n, o) {
                 var a;
                 if (!__OVERLAY__) {
                     if ((null === l.default || void 0 === l.default ? void 0 : null === (a = l.default.fileManager) || void 0 === a ? void 0 : a.getCallscopeLogFiles) == null) {
@@ -146,7 +146,7 @@
                         let {
                             blindChannelId: a,
                             blindUserId: r
-                        } = await b(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
+                        } = await E(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
                         f.info("uploadCallscopeLogs: Uploading callscope logs for context: ".concat(o, ", ").concat(i));
                         let c = await l.default.fileManager.getCallscopeLogFiles(a);
                         await L(r, c)
@@ -247,8 +247,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "249094",
-                    versionHash: "d2b87e42a8b40050d8a85cba3bfcabe26911f06e"
+                    buildNumber: "249100",
+                    versionHash: "75b43dcb3d0664d5e86b89933816b329d765cc34"
                 }
             }
             n.r(e), n.d(e, {
@@ -357,4 +357,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e9502d636dfafa406448.js.map
+//# sourceMappingURL=1ea04d6e631d0e1eab12.js.map
