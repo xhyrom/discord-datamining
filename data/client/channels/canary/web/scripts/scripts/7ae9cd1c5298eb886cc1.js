@@ -33446,6 +33446,10 @@
                 [_.AnalyticEvents.CHANNEL_LIST_END_REACHED]: {
                     throttlePeriod: 9e5,
                     throttleKeys: e => [e.guild_id]
+                },
+                [_.AnalyticEvents.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
+                    throttlePeriod: 6e4,
+                    throttleKeys: e => [e.guild_id, e.channel_id]
                 }
             };
 
@@ -41590,4 +41594,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4734f81af10a6155e53e.js.map
+//# sourceMappingURL=7ae9cd1c5298eb886cc1.js.map
