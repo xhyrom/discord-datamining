@@ -10,8 +10,8 @@
             </div>
             <p><strong>‍<br>Forum Channels</strong> create dedicated spaces for each new topic of discussion. You’ll be able to see everything people are chatting about before you jump in, allowing you to engage in an existing discussion —or start a new one — without worrying about breaking up or getting in the way of other ongoing conversations.<br>‍</p>
             <h2><strong>How Can I Participate in Forum Channels?</strong></h2>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/631bbacdccd158c00d78af9a_CeVG8iITXnqmWlku4g6aBoTp5L7BQSPd-oH--bJw26-JLOigd4eihfnVBNh8IgJrD-QkhWcbkV9LKNIPjB5DPFJoQLGRg6EelV8gWbDKUyCfHQK3d9Dq64kqoR3oQ2o1ncpGIhNV4dtZmQG4jiPHwiXpX88dr4IShqYBaf5oiBOW3VlhkyxsseIgHQ.jpeg" alt="A Forum channel within Discord. There are different unique conversations shown that can be opened up from within the Forum channel. "></div>
+            <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6567ad1a4079a63f4ca5ab04_Forums%20-%20Example.png" loading="lazy" alt="A Forum channel within Discord. There are different unique conversations shown that can be opened up from within the Forum channel. "></div>
             </figure>
             <p><strong>Forums are a place designed for focused discussions, </strong>not just free-range chatting. When you explore a Forum Channel, you’ll see a list of posts that start new conversations, complete with big bolded titles and relevant tags. You can hop into one of them and join in, use the search bar to find more posts in the archives, or even create your own—complete with a helpful, descriptive image that will display for anyone scrolling by.</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
