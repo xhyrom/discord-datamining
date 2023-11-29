@@ -1080,6 +1080,7 @@
                     COLLECTIBLES_CLAIM: "/users/@me/claim-premium-collectibles-product",
                     COLLECTIBLES_PURCHASES: "/users/@me/collectibles-purchases",
                     COLLECTIBLES_PRODUCTS: _ => "/collectibles-products/".concat(_),
+                    COLLECTIBLES_VALID_GIFT_RECIPIENT: "/users/@me/valid-collectibles-gift-recipient",
                     GUILD_MEMBER_BANNER: function(_, E, I) {
                         let R = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "png";
                         return "/guilds/".concat(_, "/users/").concat(E, "/banners/").concat(I, ".").concat(R)
@@ -13132,4 +13133,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78378199d5f85de4afb0.js.map
+//# sourceMappingURL=3c72d2a4cc3711e62a1d.js.map

@@ -823,41 +823,45 @@
                     children: S
                 } = e, {
                     selectedSkuId: m
-                } = (0, d.usePaymentContext)(), [C, _] = r.useState(n), I = (0, o.shouldShowCustomGiftExperience)(C), g = (0, s.useIsSeasonalGiftingActive)(), {
-                    enabled: E
+                } = (0, d.usePaymentContext)(), [C, _] = r.useState(n), [I, g] = r.useState(), [E, T] = r.useState(!1), A = (0, o.shouldShowCustomGiftExperience)(C), b = (0, s.useIsSeasonalGiftingActive)(), {
+                    enabled: v
                 } = s.default.useExperiment({
                     location: "PaymentContextProvider"
                 }, {
-                    autoTrackExposure: I && g
-                }), [T, A] = r.useState(I ? E && g ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [b, v] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(C)) ? c.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [N, L] = r.useState(void 0), [x, P] = r.useState(void 0), y = (0, o.useGetGiftCode)(m, t), [O, F] = r.useState(!1), [k, R] = r.useState(!1), [G, M] = r.useState(), w = r.useCallback(e => {
+                    autoTrackExposure: A && b
+                }), [N, L] = r.useState(A ? v && b ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [x, P] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(C)) ? c.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [y, O] = r.useState(void 0), [F, k] = r.useState(void 0), R = (0, o.useGetGiftCode)(m, t), [G, M] = r.useState(!1), [w, U] = r.useState(!1), [D, j] = r.useState(), H = r.useCallback(e => {
                     let {
                         onSubscriptionConfirmation: t
                     } = e;
-                    return R(!0), (0, l.sendGiftMessage)(C, y).then(() => {
-                        R(!1), null == t || t(), F(!0)
+                    return U(!0), (0, l.sendGiftMessage)(C, R).then(() => {
+                        U(!1), null == t || t(), M(!0)
                     }).catch(e => {
-                        R(!1), M(e), F(!0)
+                        U(!1), j(e), M(!0)
                     })
-                }, [C, y, R, F, M]);
+                }, [C, R, U, M, j]);
                 return (0, i.jsx)(h.Provider, {
                     value: {
                         isGift: t,
-                        giftCode: y,
+                        giftCode: R,
                         giftMessage: u,
                         giftRecipient: C,
                         setGiftRecipient: _,
-                        soundEffect: N,
-                        setSoundEffect: L,
-                        emojiConfetti: x,
-                        setEmojiConfetti: P,
-                        customGiftMessage: b,
-                        setCustomGiftMessage: v,
-                        selectedGiftStyle: T,
-                        setSelectedGiftStyle: A,
-                        sendGiftMessage: w,
-                        hasSentMessage: O,
-                        isSendingMessage: k,
-                        giftMessageError: G
+                        giftRecipientError: I,
+                        setGiftRecipientError: g,
+                        validatingGiftRecipient: E,
+                        setValidatingGiftRecipient: T,
+                        soundEffect: y,
+                        setSoundEffect: O,
+                        emojiConfetti: F,
+                        setEmojiConfetti: k,
+                        customGiftMessage: x,
+                        setCustomGiftMessage: P,
+                        selectedGiftStyle: N,
+                        setSelectedGiftStyle: L,
+                        sendGiftMessage: H,
+                        hasSentMessage: G,
+                        isSendingMessage: w,
+                        giftMessageError: D
                     },
                     children: S
                 })
@@ -1947,4 +1951,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0b5a82ca8bffccd971f1.js.map
+//# sourceMappingURL=7b650df1a5ac439484ca.js.map
