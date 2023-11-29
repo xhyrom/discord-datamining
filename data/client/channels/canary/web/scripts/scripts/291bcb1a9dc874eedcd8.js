@@ -4350,12 +4350,14 @@
                 let {
                     width: t = 24,
                     height: n = 24,
-                    color: a = i.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: l = "",
-                    ...o
+                    secondaryColor: a = "transparent",
+                    secondaryColorClass: l = "",
+                    color: o = i.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: u = "",
+                    ...c
                 } = e;
                 return (0, r.jsxs)("svg", {
-                    ...(0, s.default)(o),
+                    ...(0, s.default)(c),
                     width: t,
                     height: n,
                     viewBox: "0 0 24 24",
@@ -4365,13 +4367,14 @@
                         cx: "12",
                         cy: "12",
                         r: "10",
-                        fill: "black"
+                        fill: "string" == typeof a ? a : a.css,
+                        className: l
                     }), (0, r.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM17.7071 9.70711C18.0976 9.31658 18.0976 8.68342 17.7071 8.29289C17.3166 7.90237 16.6834 7.90237 16.2929 8.29289L10 14.5858L7.70711 12.2929C7.31658 11.9024 6.68342 11.9024 6.29289 12.2929C5.90237 12.6834 5.90237 13.3166 6.29289 13.7071L9.29289 16.7071C9.68342 17.0976 10.3166 17.0976 10.7071 16.7071L17.7071 9.70711Z",
-                        fill: "string" == typeof a ? a : a.css,
-                        className: l
+                        fill: "string" == typeof o ? o : o.css,
+                        className: u
                     })]
                 })
             }
@@ -4391,12 +4394,14 @@
                 let {
                     width: t = 24,
                     height: n = 24,
-                    color: a = i.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: l = "",
-                    ...o
+                    secondaryColor: a = "transparent",
+                    secondaryColorClass: l = "",
+                    color: o = i.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: u = "",
+                    ...c
                 } = e;
                 return (0, r.jsxs)("svg", {
-                    ...(0, s.default)(o),
+                    ...(0, s.default)(c),
                     width: t,
                     height: n,
                     viewBox: "0 0 24 24",
@@ -4406,13 +4411,14 @@
                         cx: "12",
                         cy: "12",
                         r: "10",
-                        fill: "black"
+                        fill: "string" == typeof a ? a : a.css,
+                        className: l
                     }), (0, r.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM13.4414 7.05547L13.0555 14.0015C13.0243 14.5617 12.561 15 12 15C11.439 15 10.9757 14.5617 10.9445 14.0015L10.5586 7.05547C10.5268 6.48227 10.983 6 11.5571 6H12.4429C13.017 6 13.4732 6.48227 13.4414 7.05547ZM13.25 17.75C13.25 18.4404 12.6904 19 12 19C11.3096 19 10.75 18.4404 10.75 17.75C10.75 17.0596 11.3096 16.5 12 16.5C12.6904 16.5 13.25 17.0596 13.25 17.75Z",
-                        fill: "string" == typeof a ? a : a.css,
-                        className: l
+                        fill: "string" == typeof o ? o : o.css,
+                        className: u
                     })]
                 })
             }
@@ -41582,4 +41588,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b4031e20e3f1066e8ac9.js.map
+//# sourceMappingURL=291bcb1a9dc874eedcd8.js.map

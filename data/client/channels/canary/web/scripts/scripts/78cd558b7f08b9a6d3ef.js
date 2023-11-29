@@ -11,8 +11,8 @@
                 l = r("884691"),
                 i = r("132710"),
                 a = r.n(i),
-                u = r("77078"),
-                s = r("812204"),
+                s = r("77078"),
+                u = r("812204"),
                 d = r("685665"),
                 o = r("128259"),
                 c = l.memo(function(e) {
@@ -27,10 +27,10 @@
                         ...C
                     } = e, {
                         analyticsLocations: h
-                    } = (0, d.default)(s.default.MASKED_LINK), E = l.useCallback(t => (0, o.handleClick)(e, t, h), [h, e]), I = l.useCallback(e => {
+                    } = (0, d.default)(u.default.MASKED_LINK), E = l.useCallback(t => (0, o.handleClick)(e, t, h), [h, e]), I = l.useCallback(e => {
                         1 === e.button && E(e)
                     }, [E]), R = a.sanitizeUrl(c);
-                    return (0, n.jsx)(u.Anchor, {
+                    return (0, n.jsx)(s.Anchor, {
                         ...C,
                         title: i,
                         target: "_blank",
@@ -57,12 +57,14 @@
                 let {
                     width: t = 24,
                     height: r = 24,
-                    color: a = l.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: u = "",
-                    ...s
+                    secondaryColor: a = "transparent",
+                    secondaryColorClass: s = "",
+                    color: u = l.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: d = "",
+                    ...o
                 } = e;
                 return (0, n.jsxs)("svg", {
-                    ...(0, i.default)(s),
+                    ...(0, i.default)(o),
                     width: t,
                     height: r,
                     viewBox: "0 0 24 24",
@@ -72,13 +74,14 @@
                         cx: "12",
                         cy: "12",
                         r: "10",
-                        fill: "black"
+                        fill: "string" == typeof a ? a : a.css,
+                        className: s
                     }), (0, n.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM13.5 7.25C13.5 7.94036 12.9404 8.5 12.25 8.5C11.5596 8.5 11 7.94036 11 7.25C11 6.55964 11.5596 6 12.25 6C12.9404 6 13.5 6.55964 13.5 7.25ZM12.7278 11.2095C12.8435 10.6695 12.4996 10.1379 11.9595 10.0222C11.4195 9.90648 10.8879 10.2504 10.7722 10.7905L9.72984 15.6548C9.36091 17.3765 10.6734 19 12.4342 19C13.0106 19 13.5726 18.8199 14.0417 18.4848L14.2812 18.3137C14.7307 17.9927 14.8347 17.3682 14.5137 16.9188C14.1927 16.4693 13.5682 16.3653 13.1188 16.6863L12.8792 16.8574C12.7493 16.9501 12.5937 17 12.4342 17C11.9467 17 11.5833 16.5505 11.6854 16.0739L12.7278 11.2095Z",
-                        fill: "string" == typeof a ? a : a.css,
-                        className: u
+                        fill: "string" == typeof u ? u : u.css,
+                        className: d
                     })]
                 })
             }
@@ -103,16 +106,16 @@
             var l = r("872717"),
                 i = r("271938"),
                 a = r("922932"),
-                u = r("355025");
-            let s = "/__development/build_overrides";
+                s = r("355025");
+            let u = "/__development/build_overrides";
             async function d(e) {
                 try {
                     var t;
                     let r = await l.default.put({
-                        url: (0, u.getAPIEndpoint)(s),
+                        url: (0, s.getAPIEndpoint)(u),
                         body: {
                             overrides: e,
-                            version: u.APP_VERSION
+                            version: s.APP_VERSION
                         },
                         headers: {
                             Authorization: null !== (t = i.default.getToken()) && void 0 !== t ? t : ""
@@ -127,11 +130,11 @@
             async function o(e) {
                 try {
                     let t = await l.default.put({
-                        url: (0, u.getAPIEndpoint)("/__development/link"),
+                        url: (0, s.getAPIEndpoint)("/__development/link"),
                         body: {
                             payload: e,
                             token: i.default.getToken(),
-                            version: u.APP_VERSION
+                            version: s.APP_VERSION
                         },
                         oldFormErrors: !0
                     });
@@ -142,7 +145,7 @@
             }
             async function c() {
                 let e = await l.default.delete({
-                    url: (0, u.getAPIEndpoint)(s),
+                    url: (0, s.getAPIEndpoint)(u),
                     oldFormErrors: !0
                 });
                 return await n(e), e
@@ -151,7 +154,7 @@
             function f(e) {
                 var t;
                 return l.default.post({
-                    url: (0, u.getAPIEndpoint)("/__development/create_build_override_link"),
+                    url: (0, s.getAPIEndpoint)("/__development/create_build_override_link"),
                     body: e,
                     headers: {
                         Authorization: null !== (t = i.default.getToken()) && void 0 !== t ? t : ""
@@ -186,27 +189,27 @@
             });
             var n, l, i = r("446674"),
                 a = r("913144"),
-                u = r("355025");
+                s = r("355025");
             (n = l || (l = {}))[n.NotResolved = 0] = "NotResolved", n[n.Resolving = 1] = "Resolving", n[n.Resolved = 2] = "Resolved", n[n.Invalid = 3] = "Invalid";
-            let s = 0,
+            let u = 0,
                 d = null,
                 o = {};
             class c extends i.default.Store {
                 getCurrentBuildOverride() {
-                    return 0 === s && (s = 1, (0, u.getBuildOverride)().then(e => {
+                    return 0 === u && (u = 1, (0, s.getBuildOverride)().then(e => {
                         a.default.dispatch({
                             type: "CURRENT_BUILD_OVERRIDE_RESOLVED",
                             overrides: e
                         })
                     })), {
-                        state: s,
+                        state: u,
                         overrides: d
                     }
                 }
                 getBuildOverride(e) {
                     return ! function(e) {
                         if (e in o) return;
-                        let t = (0, u.validateURL)(e);
+                        let t = (0, s.validateURL)(e);
                         if (null == t) {
                             o = {
                                 ...o,
@@ -226,7 +229,7 @@
                                 state: 1
                             }
                         };
-                        (0, u.getBuildOverrideMeta)(t.url).then(t => {
+                        (0, s.getBuildOverrideMeta)(t.url).then(t => {
                             a.default.dispatch({
                                 type: "BUILD_OVERRIDE_RESOLVED",
                                 url: e,
@@ -259,7 +262,7 @@
                     let {
                         overrides: t
                     } = e;
-                    s = 2, d = t
+                    u = 2, d = t
                 }
             })
         },
@@ -274,13 +277,13 @@
                 l = r.n(n),
                 i = r("271938"),
                 a = r("180855"),
-                u = r("49111"),
-                s = r("782340");
+                s = r("49111"),
+                u = r("782340");
 
             function d(e, t, r) {
                 if (null == e || null == t) return {
                     valid: !1,
-                    reason: s.default.Messages.BUILD_OVERRIDE_INVALID
+                    reason: u.default.Messages.BUILD_OVERRIDE_INVALID
                 };
                 let {
                     releaseChannel: n,
@@ -291,7 +294,7 @@
                 } = e, v = Object.keys(f);
                 if (0 === l.intersection(v, t).length) return {
                     valid: !1,
-                    reason: s.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_TARGETS.format({
+                    reason: u.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_TARGETS.format({
                         requestedTargets: v.map(e => {
                             var t;
                             return null !== (t = a.BUILD_OVERRIDE_TARGET_NAMES[e]) && void 0 !== t ? t : "unknown"
@@ -299,27 +302,27 @@
                     })
                 };
                 if (null != n && n !== window.GLOBAL_ENV.RELEASE_CHANNEL) {
-                    let e = n === u.PublicReleaseChannels.PTB ? n.toUpperCase() : "".concat(n.charAt(0).toUpperCase()).concat(n.slice(1));
+                    let e = n === s.PublicReleaseChannels.PTB ? n.toUpperCase() : "".concat(n.charAt(0).toUpperCase()).concat(n.slice(1));
                     return {
                         valid: !1,
-                        reason: s.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_CLIENT.format({
+                        reason: u.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_CLIENT.format({
                             releaseChannel: e
                         })
                     }
                 }
                 if (null != c && (null == r || !c.includes(r))) return {
                     valid: !1,
-                    reason: s.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_CLIENT.format({
+                    reason: u.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_CLIENT.format({
                         releaseChannel: c.join(", ")
                     })
                 };
                 let g = null != d ? new Date(d).getTime() : null;
                 return null != g && g < Date.now() ? {
                     valid: !1,
-                    reason: s.default.Messages.BUILD_OVERRIDE_EXPIRED
+                    reason: u.default.Messages.BUILD_OVERRIDE_EXPIRED
                 } : o.length > 0 && !o.includes(i.default.getId()) ? {
                     valid: !1,
-                    reason: s.default.Messages.BUILD_OVERRIDE_INVALID_USER
+                    reason: u.default.Messages.BUILD_OVERRIDE_INVALID_USER
                 } : {
                     valid: !0
                 }
@@ -336,8 +339,8 @@
                 l = r("884691"),
                 i = r("414456"),
                 a = r.n(i),
-                u = r("627445"),
-                s = r.n(u),
+                s = r("627445"),
+                u = r.n(s),
                 d = r("77078"),
                 o = r("68238"),
                 c = r("83900"),
@@ -352,12 +355,12 @@
             function R(e) {
                 let {
                     url: t
-                } = e, [r, i] = l.useState(!1), u = l.useRef(void 0), s = l.useCallback(() => {
-                    !r && ((0, v.copy)(t) && i(!0), u.current = setTimeout(() => i(!1), 2e3))
+                } = e, [r, i] = l.useState(!1), s = l.useRef(void 0), u = l.useCallback(() => {
+                    !r && ((0, v.copy)(t) && i(!0), s.current = setTimeout(() => i(!1), 2e3))
                 }, [t, r]);
-                return l.useEffect(() => () => clearTimeout(u.current), []), v.SUPPORTS_COPY ? (0, n.jsxs)(d.Clickable, {
+                return l.useEffect(() => () => clearTimeout(s.current), []), v.SUPPORTS_COPY ? (0, n.jsxs)(d.Clickable, {
                     className: a(I.copyLink, r ? I.copied : null),
-                    onClick: s,
+                    onClick: u,
                     children: [(0, n.jsx)(c.default, {
                         className: I.copyLinkIcon
                     }), r ? E.default.Messages.BUILD_OVERRIDE_LINK_COPIED : E.default.Messages.BUILD_OVERRIDE_LINK_COPY]
@@ -369,8 +372,8 @@
                     subHead: t,
                     buildDetails: r,
                     buttonColor: i,
-                    buttonClick: u,
-                    buttonText: s,
+                    buttonClick: s,
+                    buttonText: u,
                     disabled: o = !1,
                     submitting: c = !1
                 } = e;
@@ -388,31 +391,31 @@
                     }), (0, n.jsx)(d.Button, {
                         submitting: c,
                         color: i,
-                        onClick: u,
+                        onClick: s,
                         className: a(I.button, o ? I.disabledButtonOverride : null),
                         size: I.buttonSize,
                         disabled: o,
-                        children: s
+                        children: u
                     })]
                 })
             }
             var L = e => {
                 var t, r, i;
                 let {
-                    loading: u = !1,
+                    loading: s = !1,
                     currentOverrides: c,
                     linkMeta: v,
                     url: L,
-                    applyBuildOverride: _,
-                    clearBuildOverride: m
-                } = e, [O, B] = l.useState(!1), b = l.useCallback(() => {
-                    !O && (B(!0), _().catch(() => B(!1)))
-                }, [_, O]), D = l.useCallback(() => {
+                    applyBuildOverride: m,
+                    clearBuildOverride: _
+                } = e, [O, B] = l.useState(!1), D = l.useCallback(() => {
                     !O && (B(!0), m().catch(() => B(!1)))
-                }, [m, O]);
+                }, [m, O]), b = l.useCallback(() => {
+                    !O && (B(!0), _().catch(() => B(!1)))
+                }, [_, O]);
                 return (0, n.jsxs)("div", {
                     className: I.wrapper,
-                    children: [(t = v, r = L, i = u, (0, n.jsxs)(d.Text, {
+                    children: [(t = v, r = L, i = s, (0, n.jsxs)(d.Text, {
                         variant: "text-xs/normal",
                         className: I.titleRegion,
                         children: [(0, n.jsx)("strong", {
@@ -434,7 +437,7 @@
                         className: I.content,
                         children: [(0, n.jsx)(f.default, {
                             className: I.icon
-                        }), u ? (0, n.jsxs)(l.Fragment, {
+                        }), s ? (0, n.jsxs)(l.Fragment, {
                             children: [(0, n.jsxs)("div", {
                                 className: I.buildInfo,
                                 children: [(0, n.jsx)("div", {
@@ -449,12 +452,12 @@
                             var t, r;
                             let n, l, i, {
                                     currentOverrides: a,
-                                    linkMeta: u,
+                                    linkMeta: s,
                                     applyBuildOverride: o,
                                     clearBuildOverride: c,
                                     submitting: f
                                 } = e,
-                                v = (0, C.default)(u, ["discord_web"]);
+                                v = (0, C.default)(s, ["discord_web"]);
                             if (!v.valid) return function(e) {
                                 return p({
                                     subHead: E.default.Messages.BUILD_OVERRIDE_ISNT_AVAILABLE,
@@ -464,11 +467,11 @@
                                     disabled: !0
                                 })
                             }(v.reason);
-                            s(null != u, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
+                            u(null != s, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
                             let {
                                 discord_web: g
-                            } = u.targetBuildOverride;
-                            if (s(null != g, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web should never be null if resolved"), t = g, null == (r = a) || null == r.discord_web ? 1 : t.id !== r.discord_web.id || t.type !== r.discord_web.type) l = E.default.Messages.BUILD_OVERRIDE_APPLY, n = o, i = d.Button.Colors.GREEN;
+                            } = s.targetBuildOverride;
+                            if (u(null != g, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web should never be null if resolved"), t = g, null == (r = a) || null == r.discord_web ? 1 : t.id !== r.discord_web.id || t.type !== r.discord_web.type) l = E.default.Messages.BUILD_OVERRIDE_APPLY, n = o, i = d.Button.Colors.GREEN;
                             else l = E.default.Messages.BUILD_OVERRIDE_CLEAR, n = c, i = d.Button.Colors.RED;
                             return p({
                                 subHead: E.default.Messages.BUILD_OVERRIDE_ID,
@@ -481,8 +484,8 @@
                         }({
                             currentOverrides: c,
                             linkMeta: v,
-                            applyBuildOverride: b,
-                            clearBuildOverride: D,
+                            applyBuildOverride: D,
+                            clearBuildOverride: b,
                             submitting: O
                         })]
                     })]
@@ -500,8 +503,8 @@
                 l = r("884691"),
                 i = r("446674"),
                 a = r("960460"),
-                u = r("489740"),
-                s = r("451540"),
+                s = r("489740"),
+                u = r("451540"),
                 d = r("425916");
             async function o(e) {
                 let t = await (0, a.applyPublicBuildOverride)(e);
@@ -514,11 +517,11 @@
             var f = l.memo(function(e) {
                 let {
                     url: t
-                } = e, r = (0, i.useStateFromStoresObject)([u.default], () => u.default.getCurrentBuildOverride()), a = (0, i.useStateFromStores)([u.default], () => u.default.getBuildOverride(t)), {
+                } = e, r = (0, i.useStateFromStoresObject)([s.default], () => s.default.getCurrentBuildOverride()), a = (0, i.useStateFromStores)([s.default], () => s.default.getBuildOverride(t)), {
                     payload: f,
                     validatedURL: v
-                } = a, g = r.state === u.State.Resolving || a.state === u.State.Resolving, C = l.useCallback(() => null == f ? Promise.reject(Error("Invalid override payload")) : ((0, d.addRecentBuildOverride)(a.override, f), o(f)), [f, a]);
-                return null != v ? (0, n.jsx)(s.default, {
+                } = a, g = r.state === s.State.Resolving || a.state === s.State.Resolving, C = l.useCallback(() => null == f ? Promise.reject(Error("Invalid override payload")) : ((0, d.addRecentBuildOverride)(a.override, f), o(f)), [f, a]);
+                return null != v ? (0, n.jsx)(u.default, {
                     loading: g,
                     linkMeta: a.override,
                     currentOverrides: r.overrides,
@@ -555,8 +558,8 @@
                         exp: Date.parse(e.expiresAt)
                     },
                     a = i(),
-                    u = [r, ...a.filter(e => r.id !== e.id)].slice(0, 5);
-                n.default.set(l, u)
+                    s = [r, ...a.filter(e => r.id !== e.id)].slice(0, 5);
+                n.default.set(l, s)
             }
         },
         758926: function(e, t, r) {
@@ -584,16 +587,16 @@
                 l = r("884691"),
                 i = r("176309"),
                 a = r("340616"),
-                u = r("355025"),
-                s = r("198700"),
+                s = r("355025"),
+                u = r("198700"),
                 d = r("128259"),
                 o = r("758926");
 
             function c(e) {
                 return {
                     react(t, r, c) {
-                        if (e.enableBuildOverrides && (0, u.isBuildOverrideLink)(t.target)) return (0, n.jsx)(l.Fragment, {
-                            children: (0, n.jsx)(s.default, {
+                        if (e.enableBuildOverrides && (0, s.isBuildOverrideLink)(t.target)) return (0, n.jsx)(l.Fragment, {
+                            children: (0, n.jsx)(u.default, {
                                 url: t.target
                             }, t.target)
                         }, c.key);
@@ -630,7 +633,7 @@
             "use strict";
             r.r(t), r.d(t, {
                 default: function() {
-                    return u
+                    return s
                 }
             });
             var n = r("37983");
@@ -638,16 +641,16 @@
             var l = r("469563"),
                 i = r("225389"),
                 a = r("75196"),
-                u = (0, l.replaceIcon)(function(e) {
+                s = (0, l.replaceIcon)(function(e) {
                     let {
                         width: t = 16,
                         height: r = 16,
                         color: l = "currentColor",
                         foreground: i,
-                        ...u
+                        ...s
                     } = e;
                     return (0, n.jsx)("svg", {
-                        ...(0, a.default)(u),
+                        ...(0, a.default)(s),
                         width: t,
                         height: r,
                         viewBox: "0 0 12 12",
@@ -786,7 +789,7 @@
             "use strict";
             r.r(t), r.d(t, {
                 default: function() {
-                    return u
+                    return s
                 }
             });
             var n = r("132710"),
@@ -800,7 +803,7 @@
                     ...n
                 }), a = (0, i.flattenAst)(a), a = (0, i.constrainAst)(a), null != l && (a = l(a, r)), a
             }
-            var u = {
+            var s = {
                 reactParserFor(e) {
                     let t = l.parserFor(e),
                         r = l.reactFor(l.ruleOutput(e, "react"));
@@ -826,4 +829,4 @@
         }
     }
 ]);
-//# sourceMappingURL=92ff822b2b81febf7b4a.js.map
+//# sourceMappingURL=78cd558b7f08b9a6d3ef.js.map
