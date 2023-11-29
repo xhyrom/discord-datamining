@@ -16273,6 +16273,8 @@
   "LAUNCH_PAD_HISTORY": "\"Recent Channels\"",
   "LAUNCH_PAD_STUFF_TO_CATCH_UP_ON": "\"Stuff To Catch Up On\"",
   "LAUNCH_PAD_RECENT_SERVERS": "\"Recent Servers\"",
+  "REPORT_SECOND_LOOK_SUCCESS_TITLE": "\"We have received your request.\"",
+  "REPORT_SECOND_LOOK_FAILURE_TITLE": "\"You have already submitted a review request for this report.\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
   "DISAPPROVAL": "\"ಠ_ಠ\"",
