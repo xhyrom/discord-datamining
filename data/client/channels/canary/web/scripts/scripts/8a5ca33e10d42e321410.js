@@ -35,7 +35,6 @@
                 uk: () => n.el("66271").then(n.t.bind(n, "66271", 19)),
                 vi: () => n.el("984210").then(n.t.bind(n, "984210", 19)),
                 "zh-CN": () => n.el("923933").then(n.t.bind(n, "923933", 19)),
-                "zh-TW": () => Promise.resolve({}),
                 hi: () => n.el("479160").then(n.t.bind(n, "479160", 19))
             }
         },
@@ -23035,7 +23034,7 @@
             let r = new i.default(function(e) {
                 {
                     let s = n("952110").emojiTermsImporter[e];
-                    return void 0 !== s ? s() : Promise.resolve({})
+                    return void 0 !== s ? s().then(e => e.default) : Promise.resolve({})
                 }
             });
             var o = {
@@ -25162,4 +25161,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c2ef546e05afb1fc662b.js.map
+//# sourceMappingURL=8a5ca33e10d42e321410.js.map
