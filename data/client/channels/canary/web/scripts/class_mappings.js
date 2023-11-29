@@ -5798,13 +5798,29 @@
                 premiumBadgeText: "premiumBadgeText__2492a",
                 premiumBadgeWrapper: "premiumBadgeWrapper__58187",
                 shopForAllHeroBanner: "shopForAllHeroBanner__734b9",
-                shopLogo: "shopLogo__05413",
-                shopLogoText: "shopLogoText__6da15",
                 smallLeftSparkle: "smallLeftSparkle__78868",
                 smallRightSparkle: "smallRightSparkle_a14288",
                 smallSparkle: "smallSparkle__84935",
                 smallTopSparkle: "smallTopSparkle__0026e",
                 subscribeButton: "subscribeButton__04c7f"
+            }
+        },
+        60109: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                bannerArt: "bannerArt__63594",
+                bannerGrid: "bannerGrid_c6a4a0",
+                bannerGridMedium: "bannerGridMedium__86b6f",
+                bannerGridSmol: "bannerGridSmol_af8290",
+                bannerHand: "bannerHand__22b18",
+                bannerTitle: "bannerTitle_faef60",
+                heroBanner: "heroBanner_d3ffc9",
+                heroBannerFullScreen: "heroBannerFullScreen_ee783c",
+                heroBannerWithSidebar: "heroBannerWithSidebar_e6b2f9",
+                heroDescription: "heroDescription__4f6a2",
+                heroSubtitle: "heroSubtitle_aefcb1",
+                shopLogo: "shopLogo_f8bf08",
+                shopLogoText: "shopLogoText_b52465"
             }
         },
         173046: function(e, t, o) {

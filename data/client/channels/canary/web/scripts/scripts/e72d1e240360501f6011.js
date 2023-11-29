@@ -514,16 +514,16 @@
                     return N
                 },
                 getRRule: function() {
-                    return L
-                },
-                generateNextRecurrences: function() {
-                    return I
-                },
-                getNextRecurrenceIdInEvent: function() {
                     return U
                 },
-                isValidRecurrence: function() {
+                generateNextRecurrences: function() {
+                    return L
+                },
+                getNextRecurrenceIdInEvent: function() {
                     return C
+                },
+                isValidRecurrence: function() {
+                    return I
                 },
                 recurrenceOptionToRecurrenceRule: function() {
                     return w
@@ -614,7 +614,7 @@
                 return null == e || null == t ? null == e && null == t : g(e.startDate, t.startDate) && g(e.endDate, t.endDate)
             }
 
-            function L(e) {
+            function U(e) {
                 let t = new Date(e.start);
                 return t.setMilliseconds(0), new d.RRule({
                     dtstart: t,
@@ -629,7 +629,7 @@
                 })
             }
 
-            function I(e, t, n) {
+            function L(e, t, n) {
                 let u = [],
                     l = null == n,
                     r = null != n ? n : new Date,
@@ -644,19 +644,26 @@
                 return u
             }
 
-            function U(e) {
+            function C(e) {
                 var t;
                 let n = null == (t = e).recurrence_rule ? null : new Date(t.scheduled_start_time);
                 return null != n ? i.default.fromTimestamp(Math.floor(n.getTime() / a.default.Millis.SECOND) * a.default.Millis.SECOND) : null
             }
 
-            function C(e, t) {
+            function I(e, t) {
                 if (null == t || null == e) return !1;
-                let n = L(e),
+                let n = new Date(e.start),
                     u = i.default.extractTimestamp(t),
-                    l = new Date(u),
-                    r = n.after(l, !0);
-                return l.getTime() === (null == r ? void 0 : r.getTime())
+                    l = new Date(u);
+                if (n.getUTCHours() !== l.getUTCHours() || n.getUTCMinutes() !== l.getUTCMinutes() || n.getUTCSeconds() !== l.getUTCSeconds()) return !1;
+                switch (e.frequency) {
+                    case d.RRule.WEEKLY:
+                        return n.getUTCDay() === l.getUTCDate();
+                    case d.RRule.YEARLY:
+                        return n.getUTCDay() === l.getUTCDay();
+                    default:
+                        return !0
+                }
             }
 
             function G(e) {
@@ -717,7 +724,7 @@
 
             function b(e, t) {
                 if (null == t) return c.RecurrenceOptions.NONE;
-                let n = L(t);
+                let n = U(t);
                 switch (n.options.freq) {
                     case d.RRule.WEEKLY:
                         return c.RecurrenceOptions.WEEKLY;
@@ -733,4 +740,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29ddaf24d0d9a653701f.js.map
+//# sourceMappingURL=e72d1e240360501f6011.js.map
