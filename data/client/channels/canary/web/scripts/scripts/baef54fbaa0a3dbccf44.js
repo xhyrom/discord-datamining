@@ -7987,7 +7987,7 @@
                     return I
                 },
                 default: function() {
-                    return x
+                    return B
                 }
             }), n("222007");
             var i = n("345570"),
@@ -8095,9 +8095,9 @@
             }
             let R = e => null == e.content_scan_version || e.content_scan_version < 1,
                 y = e => {
-                    var t;
-                    let n = null != (t = e).content_scan_version ? t.content_scan_version : null != t.contentScanVersion ? t.contentScanVersion : null;
-                    return null == n || n < 1
+                    var t, n, i, a, l, s, r, o;
+                    let u = null != (o = e).content_scan_version ? o.content_scan_version : null != o.contentScanVersion ? o.contentScanVersion : null;
+                    return !((null === (t = e.video) || void 0 === t ? void 0 : t.width) === 0 && (null === (n = e.video) || void 0 === n ? void 0 : n.height) === 0 || (null === (i = e.thumbnail) || void 0 === i ? void 0 : i.width) === 0 && (null === (a = e.thumbnail) || void 0 === a ? void 0 : a.height) === 0 || (null === (l = e.image) || void 0 === l ? void 0 : l.width) === 0 && (null === (s = e.image) || void 0 === s ? void 0 : s.height) === 0 || "images" in e && (null === (r = e.images) || void 0 === r ? void 0 : r.some(e => 0 === e.width && 0 === e.height))) && (null == u || u < 1)
                 };
 
             function v(e) {
@@ -8137,6 +8137,22 @@
             function D(e) {
                 var t;
                 let {
+                    message: n
+                } = e;
+                if (!(0, p.isEligibleForExplicitMediaRedaction)() || null == n.channel_id || null == n.id || (null === (t = n.author) || void 0 === t ? void 0 : t.id) === d.default.getId() || null == n.embeds && null == n.attachments) return !1;
+                let i = E.default.getChannelId(),
+                    a = c.default.getCurrentSidebarChannelId(i),
+                    l = n.channel_id === i || n.channel_id === a;
+                if (l && v(n) && (0, T.shouldRedactExplicitContent)(n)) {
+                    let e = _.default.getMessage(n.channel_id, n.id);
+                    return null != e && (O([e]), !0)
+                }
+                return !1
+            }
+
+            function U(e) {
+                var t;
+                let {
                     channelId: n,
                     message: i,
                     optimistic: a,
@@ -8149,7 +8165,7 @@
                 return !!(o && v(i) && (0, T.shouldRedactExplicitContent)(i)) && (O([i]), !0)
             }
 
-            function U(e) {
+            function P(e) {
                 let {
                     channelId: t,
                     messages: n
@@ -8165,7 +8181,7 @@
                 return !1
             }
 
-            function P(e) {
+            function b(e) {
                 let {
                     messages: t
                 } = e;
@@ -8176,7 +8192,7 @@
                 return !!(l.length > 0) && (O(l, !0), !0)
             }
 
-            function b(e) {
+            function G(e) {
                 let {
                     guildId: t,
                     threads: n
@@ -8191,7 +8207,7 @@
                 return !1
             }
 
-            function G(e) {
+            function w(e) {
                 let {
                     guildId: t,
                     firstMessages: n
@@ -8205,34 +8221,34 @@
                 return !1
             }
 
-            function w(e) {
+            function F(e) {
                 let {
                     channelId: t
                 } = e;
                 if (null == t || !(0, p.isEligibleForExplicitMediaRedaction)()) return !1;
                 let n = t === E.default.getChannelId();
-                return !!n && H(t)
+                return !!n && V(t)
             }
 
-            function F(e) {
+            function k(e) {
                 let {
                     settings: t,
                     local: n
                 } = e;
                 if (!(0, p.isEligibleForExplicitMediaRedaction)() || !n || t.type !== m.UserSettingsTypes.PRELOADED_USER_SETTINGS) return !1;
                 let i = E.default.getChannelId();
-                return null != i && H(i)
+                return null != i && V(i)
             }
 
-            function k(e) {
+            function H(e) {
                 let {
                     channelId: t,
                     chatOpen: n
                 } = e;
-                return !!(0, p.isEligibleForExplicitMediaRedaction)() && !!n && H(t)
+                return !!(0, p.isEligibleForExplicitMediaRedaction)() && !!n && V(t)
             }
 
-            function H(e) {
+            function V(e) {
                 let t = _.default.getMessages(e);
                 if (0 === t.length) return !1;
                 let n = function(e) {
@@ -8249,24 +8265,25 @@
                 }(t);
                 return !!(n.length > 0) && (O(n), !0)
             }
-            class V extends o.default {
+            class x extends o.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        LOAD_MESSAGES_SUCCESS: U,
-                        LOAD_FORUM_POSTS: b,
-                        LOAD_THREADS_SUCCESS: G,
-                        LOAD_ARCHIVED_THREADS_SUCCESS: G,
-                        MESSAGE_CREATE: D,
+                        LOAD_MESSAGES_SUCCESS: P,
+                        LOAD_FORUM_POSTS: G,
+                        LOAD_THREADS_SUCCESS: w,
+                        LOAD_ARCHIVED_THREADS_SUCCESS: w,
+                        MESSAGE_CREATE: U,
+                        MESSAGE_UPDATE: D,
                         LOGOUT: N,
-                        SEARCH_FINISH: P,
-                        CHANNEL_SELECT: w,
-                        LOAD_PINNED_MESSAGES_SUCCESS: P,
-                        USER_SETTINGS_PROTO_UPDATE: F,
-                        CHANNEL_RTC_UPDATE_CHAT_OPEN: k
+                        SEARCH_FINISH: b,
+                        CHANNEL_SELECT: F,
+                        LOAD_PINNED_MESSAGES_SUCCESS: b,
+                        USER_SETTINGS_PROTO_UPDATE: k,
+                        CHANNEL_RTC_UPDATE_CHAT_OPEN: H
                     }
                 }
             }
-            var x = new V
+            var B = new x
         },
         695681: function(e, t, n) {
             "use strict";
@@ -33694,4 +33711,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c14455c1e67322e864c6.js.map
+//# sourceMappingURL=baef54fbaa0a3dbccf44.js.map
