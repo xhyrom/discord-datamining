@@ -491,6 +491,7 @@
   "APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER": "\"Select an option below\"",
   "APP_LAUNCHER_SEARCH_PLACEHOLDER": "\"Search Apps & Commands\"",
   "APP_LAUNCHER_HOME_EMPTY_STATE_BODY": "\"No apps have been installed in this server yet\"",
+  "APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY": "\"No apps or commands match your search\"",
   "READY": "\"Ready\"",
   "CONNECTING": "\"Connecting…\"",
   "CONNECTING_PROBLEMS_CTA": "\"Connection problems? Let us know!\"",
