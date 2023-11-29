@@ -16154,6 +16154,7 @@
   "SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_HEADER": "\"Learn about our {classificationDescription} policy.\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_SUBTEXT": "\"Discord's rules apply to everyone\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT": "\"Go to account standing\"",
+  "SAFETY_HUB_CLASSIFICATION_DETAIL_APPEAL_STATUS": "\"You requested a review of this violation.\"",
   "SAFETY_HUB_ERROR_MESSAGE": "\"Something went wrong...\"",
   "SAFETY_HUB_ERROR_ACTION_BUTTON": "\"Retry\"",
   "SAFETY_HUB_VIOLATIONS_CONTAINER_HEADER_ACTIVE": "\"ACTIVE VIOLATIONS — {count}\"",
