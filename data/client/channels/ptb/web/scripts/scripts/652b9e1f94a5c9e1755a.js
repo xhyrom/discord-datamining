@@ -63,7 +63,7 @@
                         showPending: c = !1,
                         showTryItOut: T = !1,
                         avatarDecorationOverride: d
-                    } = e, [A, S] = r.useState(!1), I = (0, i.useStateFromStores)([u.default], () => u.default.useReducedMotion), f = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), C = (0, i.useStateFromStores)([l.default], () => {
+                    } = e, [S, A] = r.useState(!1), I = (0, i.useStateFromStores)([u.default], () => u.default.useReducedMotion), f = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), C = (0, i.useStateFromStores)([l.default], () => {
                         var e;
                         return null === (e = l.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
                     }), R = (0, i.useStateFromStores)([l.default], () => {
@@ -73,11 +73,11 @@
                         pendingAvatarDecoration: N
                     } = (0, o.default)({
                         isTryItOut: T
-                    }), O = f && (A || !I && !_), v = c && void 0 !== N && void 0 !== C && C === (null == t ? void 0 : t.id) ? N : null != R ? R : null == t ? void 0 : t.avatarDecoration, g = r.useMemo(() => (0, E.getAvatarDecorationURL)({
+                    }), O = f && (S || !I && !_), v = c && void 0 !== N && void 0 !== C && C === (null == t ? void 0 : t.id) ? N : null != R ? R : null == t ? void 0 : t.avatarDecoration, g = r.useMemo(() => (0, E.getAvatarDecorationURL)({
                         avatarDecoration: void 0 !== d ? d : v,
                         canAnimate: O,
                         size: n
-                    }), [v, O, n, d]), D = r.useCallback(() => S(!0), []), L = r.useCallback(() => S(!1), []);
+                    }), [v, O, n, d]), D = r.useCallback(() => A(!0), []), L = r.useCallback(() => A(!1), []);
                     return {
                         avatarPlaceholderSrc: s,
                         avatarDecorationSrc: g,
@@ -103,8 +103,8 @@
                 c = !1,
                 T = null,
                 d = {},
-                A = {},
                 S = {},
+                A = {},
                 I = {};
 
             function f() {
@@ -112,7 +112,7 @@
             }
             class C extends E.default.Store {
                 getSettings(e) {
-                    if (null != e) return S[e]
+                    if (null != e) return A[e]
                 }
                 getProfile(e) {
                     return null == e ? null : d[e]
@@ -159,7 +159,7 @@
                 }
                 isFetchingProfile(e) {
                     var t;
-                    return null === (t = A[e]) || void 0 === t ? void 0 : t.isFetching
+                    return null === (t = S[e]) || void 0 === t ? void 0 : t.isFetching
                 }
                 isEditingClydeProfile() {
                     return c
@@ -184,7 +184,7 @@
                     I[t] = {
                         isFetching: !1,
                         lastFetchTimestampMs: Date.now()
-                    }, S[t] = n
+                    }, A[t] = n
                 },
                 CLYDE_GUILD_SETTINGS_FETCH_FAIL: function(e) {
                     let {
@@ -233,7 +233,7 @@
                     let {
                         settings: t
                     } = e;
-                    _ = !1, S[t.guild_id] = t, f()
+                    _ = !1, A[t.guild_id] = t, f()
                 },
                 CLYDE_GUILD_SETTINGS_SAVE_FAIL: function(e) {
                     _ = !1, T = e.errors
@@ -242,8 +242,8 @@
                 CLYDE_PROFILE_FETCH_START: function(e) {
                     let {
                         clydeProfileId: t
-                    } = e, n = A[t];
-                    A[t] = {
+                    } = e, n = S[t];
+                    S[t] = {
                         isFetching: !0,
                         lastFetchTimestampMs: null == n ? void 0 : n.lastFetchTimestampMs
                     }
@@ -252,7 +252,7 @@
                     let {
                         profile: t
                     } = e;
-                    A[t.clyde_profile_id] = {
+                    S[t.clyde_profile_id] = {
                         isFetching: !1,
                         lastFetchTimestampMs: Date.now()
                     }, d[t.clyde_profile_id] = t
@@ -260,8 +260,8 @@
                 CLYDE_PROFILE_FETCH_FAIL: function(e) {
                     let {
                         clydeProfileId: t
-                    } = e, n = A[t];
-                    A[t] = {
+                    } = e, n = S[t];
+                    S[t] = {
                         isFetching: !1,
                         lastFetchTimestampMs: null == n ? void 0 : n.lastFetchTimestampMs
                     }
@@ -298,8 +298,8 @@
                 c = {},
                 T = new Map,
                 d = s,
-                A = _,
-                S = c,
+                S = _,
+                A = c,
                 I = T,
                 f = !1;
             class C extends l.default.Store {
@@ -316,10 +316,10 @@
                     return d
                 }
                 get products() {
-                    return A
+                    return S
                 }
                 get categorySkuIdsByProductSkuId() {
-                    return S
+                    return A
                 }
                 get productsByItemTypeAndCategory() {
                     return I
@@ -328,10 +328,10 @@
                     return null != e ? d.get(e) : void 0
                 }
                 getProduct(e) {
-                    return null != e ? A.get(e) : void 0
+                    return null != e ? S.get(e) : void 0
                 }
                 getCategoryForProduct(e) {
-                    return null != e ? this.getCategory(S[e]) : void 0
+                    return null != e ? this.getCategory(A[e]) : void 0
                 }
                 getProductsByItemType(e) {
                     return null != e && o.CollectiblesCategorySkuIdSets.ALL.has(e) ? I.get(e) : void 0
@@ -343,7 +343,7 @@
                     f = !0, r = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
-                    0 === e.categories.length ? (d = s, A = _, S = c, I = T) : !(0, u.isEqual)([...d.values()], e.categories) && (d = new Map(e.categories.map(e => [e.skuId, e])), A = new Map((0, E.getProductsFromCategories)(d).map(e => [e.skuId, e])), S = e.categories.reduce((e, t) => (t.products.forEach(n => {
+                    0 === e.categories.length ? (d = s, S = _, A = c, I = T) : !(0, u.isEqual)([...d.values()], e.categories) && (d = new Map(e.categories.map(e => [e.skuId, e])), S = new Map((0, E.getProductsFromCategories)(d).map(e => [e.skuId, e])), A = e.categories.reduce((e, t) => (t.products.forEach(n => {
                         e[n.skuId] = t.skuId
                     }), e), {}), e.categories.forEach(e => {
                         let t = e.products.reduce((e, t) => {
@@ -361,13 +361,13 @@
                     let {
                         error: t
                     } = e;
-                    d = s, A = _, S = c, I = T, f = !1, r = t
+                    d = s, S = _, A = c, I = T, f = !1, r = t
                 },
                 COLLECTIBLES_PRODUCT_FETCH: e => {
                     f = !0, r = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: e => {
-                    A.set(e.product.skuId, e.product), f = !1, r = void 0
+                    S.set(e.product.skuId, e.product), f = !1, r = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: e => {
                     let {
@@ -376,7 +376,7 @@
                     f = !1, r = t
                 },
                 LOGOUT: e => {
-                    d = s, A = _, S = c, I = T, i = void 0, f = !1, r = void 0
+                    d = s, S = _, A = c, I = T, i = void 0, f = !1, r = void 0
                 }
             })
         },
@@ -393,10 +393,10 @@
                     return d
                 },
                 extractPriceByPurchaseTypes: function() {
-                    return A
+                    return S
                 },
                 getProductsFromCategories: function() {
-                    return S
+                    return A
                 },
                 getAvatarDecorationsFromPurchases: function() {
                     return C
@@ -438,15 +438,15 @@
             let c = e => (null == e ? void 0 : e.skuId) === i.CollectiblesCategorySkuId.DISXCORE,
                 T = e => (null == e ? void 0 : e.purchaseType) === _.EntitlementTypes.PREMIUM_PURCHASE,
                 d = (e, t) => {
-                    let n = A(e, t ? _.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : _.PriceSetAssignmentPurchaseTypes.DEFAULT);
+                    let n = S(e, t ? _.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : _.PriceSetAssignmentPurchaseTypes.DEFAULT);
                     return null == n ? "" : (0, l.formatPrice)(null == n ? void 0 : n.amount, null == n ? void 0 : n.currency)
                 },
-                A = (e, t) => {
+                S = (e, t) => {
                     var n, r, i;
                     let u = null !== (i = e.prices[t]) && void 0 !== i ? i : null;
                     return null == u ? null : null === (r = u.countryPrices) || void 0 === r ? void 0 : null === (n = r.prices) || void 0 === n ? void 0 : n[0]
                 },
-                S = e => {
+                A = e => {
                     let t = (0, r.flatMap)([...e.values()], "products");
                     return (0, r.uniqBy)(t, "storeListingId")
                 },
@@ -461,7 +461,7 @@
                     }
                 },
                 f = (e, t) => {
-                    let n = S(e);
+                    let n = A(e);
                     if (t === u.CollectiblesItemType.AVATAR_DECORATION) {
                         let e = (0, r.flatMap)(n, "items").filter(E.isAvatarDecorationRecord);
                         return (0, r.uniqBy)(e, "id")
@@ -657,10 +657,10 @@
                     return d
                 },
                 HOME_HEADER_MAX_WIDTH: function() {
-                    return A
+                    return S
                 },
                 HOME_HEADER_MAX_HEIGHT: function() {
-                    return S
+                    return A
                 },
                 BANNER_ASPECT_RATIO: function() {
                     return I
@@ -705,8 +705,8 @@
                 c = 1350,
                 T = 2400,
                 d = 960,
-                A = 2400,
-                S = 600,
+                S = 2400,
+                A = 600,
                 I = 17 / 6,
                 f = 16 / 9,
                 C = 2.5,
@@ -762,10 +762,10 @@
                     return d
                 },
                 showFileSizeErrorModal: function() {
-                    return A
+                    return S
                 },
                 getPreviewAvatar: function() {
-                    return S
+                    return A
                 },
                 getPreviewNickname: function() {
                     return I
@@ -813,7 +813,7 @@
                 })
             }
 
-            function A() {
+            function S() {
                 (0, o.openUploadError)({
                     title: T.default.Messages.UPLOAD_AREA_TOO_LARGE_TITLE,
                     help: T.default.Messages.UPLOAD_AREA_TOO_LARGE_HELP.format({
@@ -822,7 +822,7 @@
                 })
             }
 
-            function S(e, t, n) {
+            function A(e, t, n) {
                 let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
                 if (null != e) return e;
                 let {
@@ -869,14 +869,14 @@
                     } = (0, i.useStateFromStoresObject)([l.default], () => ({
                         pendingAvatar: t ? l.default.getTryItOutAvatar() : l.default.getPendingAvatar(),
                         pendingAvatarDecoration: t ? l.default.getTryItOutAvatarDecoration() : l.default.getPendingAvatarDecoration()
-                    })), d = (0, r.useCallback)(e => (0, o.setNewPendingAvatar)(e, null == s ? void 0 : s.avatar), [null == s ? void 0 : s.avatar]), A = (0, r.useCallback)(e => {
+                    })), d = (0, r.useCallback)(e => (0, o.setNewPendingAvatar)(e, null == s ? void 0 : s.avatar), [null == s ? void 0 : s.avatar]), S = (0, r.useCallback)(e => {
                         (0, o.setNewPendingAvatarDecoration)(e, null == s ? void 0 : s.avatarDecoration), null != e && _(e)
                     }, [null == s ? void 0 : s.avatarDecoration, _]);
                     return {
                         pendingAvatar: c,
                         pendingAvatarDecoration: T,
                         setPendingAvatar: t ? E.setTryItOutAvatar : d,
-                        setPendingAvatarDecoration: t ? E.setTryItOutAvatarDecoration : A
+                        setPendingAvatarDecoration: t ? E.setTryItOutAvatarDecoration : S
                     }
                 }
         },
@@ -905,8 +905,8 @@
                     avatarOverride: T
                 } = e, {
                     avatarSrc: d,
-                    isAvatarAnimating: A,
-                    eventHandlers: S
+                    isAvatarAnimating: S,
+                    eventHandlers: A
                 } = (0, l.useAnimatedAvatarSrc)({
                     user: t,
                     guildId: n,
@@ -926,15 +926,15 @@
                     avatarDecorationOverride: c,
                     showTryItOut: s
                 }), R = r.useCallback(() => {
-                    S.onMouseEnter(), C.onMouseEnter()
-                }, [S, C]), N = r.useCallback(() => {
-                    S.onMouseLeave(), C.onMouseLeave()
-                }, [S, C]);
+                    A.onMouseEnter(), C.onMouseEnter()
+                }, [A, C]), N = r.useCallback(() => {
+                    A.onMouseLeave(), C.onMouseLeave()
+                }, [A, C]);
                 return {
                     avatarPlaceholderSrc: I,
                     avatarDecorationSrc: f,
                     avatarSrc: d,
-                    isAnimating: A,
+                    isAnimating: S,
                     eventHandlers: {
                         onMouseEnter: R,
                         onMouseLeave: N
@@ -965,12 +965,12 @@
                     showPending: _ = !1,
                     animateOnHover: c = !1,
                     avatarOverride: T
-                } = e, [d, A] = r.useState(!1), S = (0, i.useStateFromStores)([u.default], () => u.default.useReducedMotion), I = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), f = I && (d || !S && !c), {
+                } = e, [d, S] = r.useState(!1), A = (0, i.useStateFromStores)([u.default], () => u.default.useReducedMotion), I = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), f = I && (d || !A && !c), {
                     pendingAvatar: C
                 } = (0, E.default)({}), R = (0, i.useStateFromStores)([l.default], () => null != n && null != t ? l.default.getMember(n, t.id) : null), N = r.useMemo(() => null != t ? (0, o.getPreviewAvatar)(_ ? null != T ? T : C : void 0, R, t, {
                     canAnimate: f,
                     size: s
-                }) : void 0, [_, C, R, t, f, s, T]), O = r.useCallback(() => A(!0), []), v = r.useCallback(() => A(!1), []);
+                }) : void 0, [_, C, R, t, f, s, T]), O = r.useCallback(() => S(!0), []), v = r.useCallback(() => S(!1), []);
                 return {
                     avatarSrc: N,
                     isAvatarAnimating: f,
@@ -983,7 +983,7 @@
         },
         790618: function(e, t, n) {
             "use strict";
-            let r, i, u, o, l, a, E, s, _, c, T, d, A, S;
+            let r, i, u, o, l, a, E, s, _, c, T, d, S, A;
             n.r(t), n.d(t, {
                 default: function() {
                     return p
@@ -1018,7 +1018,7 @@
             }
 
             function F() {
-                T = void 0, d = void 0, A = void 0, S = void 0, c = void 0
+                T = void 0, d = void 0, S = void 0, A = void 0, c = void 0
             }
             class m extends f.default.Store {
                 getFormState() {
@@ -1080,18 +1080,18 @@
                     return d
                 }
                 getTryItOutProfileEffectID() {
-                    return A
+                    return S
                 }
                 getTryItOutBanner() {
-                    return S
+                    return A
                 }
                 getAllTryItOut() {
                     return {
                         tryItOutThemeColors: c,
                         tryItOutAvatar: T,
                         tryItOutAvatarDecoration: d,
-                        tryItOutProfileEffectID: A,
-                        tryItOutBanner: S
+                        tryItOutProfileEffectID: S,
+                        tryItOutBanner: A
                     }
                 }
                 getIsDisableSubmit() {
@@ -1143,7 +1143,7 @@
                     let {
                         item: t
                     } = e;
-                    (null == t ? void 0 : t.type) === I.CollectiblesItemType.PROFILE_EFFECT ? (d = null, A = null == t ? void 0 : t.id) : (A = null, d = t)
+                    (null == t ? void 0 : t.type) === I.CollectiblesItemType.PROFILE_EFFECT ? (d = null, S = null == t ? void 0 : t.id) : (S = null, d = t)
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: function(e) {
                     let {
@@ -1197,13 +1197,13 @@
                     let {
                         profileEffectID: t
                     } = e;
-                    A = t
+                    S = t
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: function(e) {
                     let {
                         banner: t
                     } = e;
-                    S = t
+                    A = t
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: function(e) {
                     let {
@@ -1242,9 +1242,9 @@
                 CollectiblesCategorySkuIdSets: function() {
                     return u
                 }
-            }), n("222007"), (i = r || (r = {})).FANTASY = "1144003461608906824", i.ANIME = "1144302037593497701", i.BREAKFAST = "1144054000099012659", i.DISXCORE = "1144058340327047249", i.HALLOWEEN = "1157410718711304313", i.FALL = "1157406994873991284", i.WINTER = "1174459301239197856";
+            }), n("222007"), (i = r || (r = {})).FANTASY = "1144003461608906824", i.ANIME = "1144302037593497701", i.BREAKFAST = "1144054000099012659", i.DISXCORE = "1144058340327047249", i.HALLOWEEN = "1157410718711304313", i.FALL = "1157406994873991284", i.WINTER = "1174459301239197856", i.MONSTERS = "1179493515038818325";
             let u = {
-                ALL: new Set(["1144003461608906824", "1144054000099012659", "1144058340327047249", "1144302037593497701", "1157406994873991284", "1157410718711304313", "1174459301239197856"])
+                ALL: new Set(["1144003461608906824", "1144054000099012659", "1144058340327047249", "1144302037593497701", "1157406994873991284", "1157410718711304313", "1174459301239197856", "1179493515038818325"])
             }
         },
         265586: function(e, t, n) {
@@ -1258,4 +1258,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9f42a9dac4a0c58034a6.js.map
+//# sourceMappingURL=652b9e1f94a5c9e1755a.js.map
