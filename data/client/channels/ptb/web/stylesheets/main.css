@@ -82858,6 +82858,10 @@ input::-webkit-inner-spin-button {
     padding: 16px
 }
 
+.previewContainerError_ad9d71 {
+    border: 2px solid var(--status-danger-background)
+}
+
 .previewTextContainer__2fa3a {
     display: flex;
     flex-direction: column;
@@ -82875,6 +82879,10 @@ input::-webkit-inner-spin-button {
 
 .previewTitle_bb7c50 {
     margin-bottom: 0
+}
+
+.recipientError__8767d {
+    margin-top: 8px
 }
 
 .avatarDecorationPreview__2f195 {
@@ -123934,4 +123942,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8c3e259edb8e3cd0e900.css.map*/
+/*# sourceMappingURL=app.fda58a11beb9c1ac8b33.css.map*/
