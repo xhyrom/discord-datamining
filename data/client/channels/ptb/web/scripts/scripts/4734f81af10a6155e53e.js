@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -17791,7 +17791,9 @@
                 l = n("718517");
             let o = {
                     [s.DismissibleContent.MJ_NEW_USER_CHAT_BAR]: 0,
-                    [s.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER]: 0
+                    [s.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER]: 0,
+                    [s.DismissibleContent.SEEN_LAUNCH_WELCOME]: 0,
+                    [s.DismissibleContent.SEEN_OLD_DESIGN]: 0
                 },
                 u = l.default.Millis.DAY;
 
@@ -41588,4 +41590,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43bc44bc984b11139342.js.map
+//# sourceMappingURL=4734f81af10a6155e53e.js.map

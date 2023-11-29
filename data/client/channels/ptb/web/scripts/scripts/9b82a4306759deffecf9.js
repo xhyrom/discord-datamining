@@ -658,9 +658,9 @@
                 if (n.getUTCHours() !== l.getUTCHours() || n.getUTCMinutes() !== l.getUTCMinutes() || n.getUTCSeconds() !== l.getUTCSeconds()) return !1;
                 switch (e.frequency) {
                     case d.RRule.WEEKLY:
-                        return n.getUTCDay() === l.getUTCDate();
-                    case d.RRule.YEARLY:
                         return n.getUTCDay() === l.getUTCDay();
+                    case d.RRule.YEARLY:
+                        return n.getUTCDate() === l.getUTCDate();
                     default:
                         return !0
                 }
@@ -740,4 +740,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e72d1e240360501f6011.js.map
+//# sourceMappingURL=9b82a4306759deffecf9.js.map
