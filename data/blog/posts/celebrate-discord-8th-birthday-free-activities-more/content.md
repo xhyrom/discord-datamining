@@ -19,8 +19,8 @@
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf229fcb1fb19dd5b04ce_8a4f7021.png" alt="Alt-text: Key artwork for Discord’s Eighth Birthday. In bold, stylised lettering reads “Activities are free for all through June 15th.”"></div>
             </figure>
             <p>Between May 15–June 15, <strong>ALL </strong><a href="https://discord.com/blog/server-activities-games-voice-watch-together"><strong>ACTIVITIES</strong></a><strong> ARE FREE</strong>. Yes, you read that right: Sketch Heads? Sketch your heart out for free. Putt Party? More like FREE Party. Bobble League? Enter the big leagues for the low price of FREE — just click the rocketship (🚀) button and get playin’!</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600px">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf22944ae3f6daaf6396d_93cb3382.png" alt=""></div>
+            <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6567c28eedfe018ab2439f66_8th%20Bday%20-%20Activities.png" loading="lazy" alt="Two users playing an Activity in a Discord server. The Activity button is circled in the screenshot."></div>
             </figure>
             <p><strong>For a whole month starting on our birthday, everyone is invited to enjoy any of our Activities for free, even if you aren’t currently a Nitro member.</strong> Because what’s better than celebrating by playing games with your friends over Discord? Oh, ya’know, playing them when they’re <strong><em>free</em></strong>.</p>
             <figure class="w-richtext-figure-type-video w-richtext-align-fullwidth" style="padding-bottom:56.206088992974244%">
