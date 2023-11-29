@@ -2,18 +2,18 @@
 <p><span class="wysiwyg-font-size-large"><strong><span style="color: #2e3338;" data-darkreader-inline-color="">What this article covers:</span></strong></span></p>
 <ul>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ">What is Subscription Credit?</a>
+        <a href="#h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ">What is Subscription Credit?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ3J7BMS27AGTS47B3R">What are the limitations of Subscription Credit? </a></li>
+            <li><a href="#h_01H9RC8CQ3J7BMS27AGTS47B3R">What are the limitations of Subscription Credit? </a></li>
         </ul>
     </li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ4Q9XH0ASXF963K1T1">How do I activate my Subscription Credit?</a>
+        <a href="#h_01H9RC8CQ4Q9XH0ASXF963K1T1">How do I activate my Subscription Credit?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ49VY8YPRM95SVPWD8">What if I have an active Subscription?</a></li>
+            <li><a href="#h_01H9RC8CQ49VY8YPRM95SVPWD8">What if I have an active Subscription?</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ402FWZ8HKZQJGZFYC">What happens if I cancel my Subscription?</a></li>
+    <li><a href="#h_01H9RC8CQ402FWZ8HKZQJGZFYC">What happens if I cancel my Subscription?</a></li>
 </ul>
 <h1 id="h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ"><span style="color: #2e3338;" data-darkreader-inline-color="">What is Subscription Credit?</span></h1>
 <p>Instead of gifted subscription time being automatically added onto your already existing subscription, gifted subscription time will become Subscription Credit!</p>
