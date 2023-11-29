@@ -82784,7 +82784,8 @@ input::-webkit-inner-spin-button {
 .bannerContainer__7814d {
     position: relative;
     height: 228px;
-    overflow: hidden
+    overflow: hidden;
+    background-color: var(--background-secondary)
 }
 
 .collectedInfoContainer_d8324a {
@@ -82874,6 +82875,15 @@ input::-webkit-inner-spin-button {
 
 .previewTitle_bb7c50 {
     margin-bottom: 0
+}
+
+.avatarDecorationPreview__2f195 {
+    padding: 16px 0 32px
+}
+
+.profileEffectPreview__7a288 {
+    scale: .9;
+    position: relative
 }
 
 .giftButton_bb2551 {
@@ -123920,4 +123930,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2b4e30e966014fe15235.css.map*/
+/*# sourceMappingURL=app.eeac574d3e8ae9ace023.css.map*/
