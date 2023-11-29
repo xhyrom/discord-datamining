@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-05_automod_user_profile_ab",
-    "label": "Automod on User Profile A/B",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Automod on User Profile enabled"
-    ],
-    "hash": 4261225962,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 4261225962
   },
   "rollout": {
     "populations": [

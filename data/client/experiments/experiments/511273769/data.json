@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-02_automod_custom_message",
-    "label": "Automod Custom Message",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Automod Custom Message"
-    ],
-    "hash": 511273769,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 511273769
   },
   "rollout": {
     "populations": [
