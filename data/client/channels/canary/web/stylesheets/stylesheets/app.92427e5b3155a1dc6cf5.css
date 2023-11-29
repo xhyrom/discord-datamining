@@ -82878,11 +82878,8 @@ input::-webkit-inner-spin-button {
 
 .heading__1a617 {
     display: inline-flex;
-    align-items: center
-}
-
-.price_ed9315 {
-    font-weight: 600
+    align-items: center;
+    white-space: pre-wrap
 }
 
 .priceTagsContainer_ec48ba {
@@ -123798,4 +123795,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1d769f2d1c321c41d691.css.map*/
+/*# sourceMappingURL=app.92427e5b3155a1dc6cf5.css.map*/

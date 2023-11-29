@@ -5819,8 +5819,7 @@
         846367: function(e, t, o) {
             "use strict";
             e.exports = {
-                heading: "heading__1a617",
-                price: "price_ed9315"
+                heading: "heading__1a617"
             }
         },
         483622: function(e, t, o) {
