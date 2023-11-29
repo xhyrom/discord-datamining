@@ -19469,8 +19469,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -121942,6 +121942,7 @@ div.nagbar_c731ff {
     --polls-embed-border: var(--primary-660);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
     --polls-normal-border: var(--primary-260);
+    --polls-normal-confetti: var(--brand-500);
     --polls-normal-fill: var(--white-500);
     --polls-normal-label: var(--primary-600);
     --polls-victor-border: var(--yellow-300);
@@ -122243,6 +122244,7 @@ div.nagbar_c731ff {
     --polls-embed-border: var(--primary-200);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
     --polls-normal-border: var(--primary-260);
+    --polls-normal-confetti: var(--brand-500);
     --polls-normal-fill: var(--white-500);
     --polls-normal-label: var(--primary-600);
     --polls-victor-border: var(--yellow-300);
@@ -122544,6 +122546,7 @@ div.nagbar_c731ff {
     --polls-embed-border: hsl(var(--primary-630-hsl) / 0.5);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
     --polls-normal-border: var(--primary-260);
+    --polls-normal-confetti: var(--brand-500);
     --polls-normal-fill: var(--white-500);
     --polls-normal-label: var(--primary-600);
     --polls-victor-border: var(--yellow-300);
@@ -122845,6 +122848,7 @@ div.nagbar_c731ff {
     --polls-embed-border: hsl(var(--primary-630-hsl) / 0.5);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
     --polls-normal-border: var(--primary-260);
+    --polls-normal-confetti: var(--brand-500);
     --polls-normal-fill: var(--white-500);
     --polls-normal-label: var(--primary-600);
     --polls-victor-border: var(--yellow-300);
@@ -124255,4 +124259,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.77d10499c3e9f5cd8847.css.map*/
+/*# sourceMappingURL=app.cbddcb6d63fbb856e13f.css.map*/
