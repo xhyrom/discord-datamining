@@ -20913,7 +20913,8 @@
                 profileEffectsModalCustomizationPreviewWithoutTheme: "profileEffectsModalCustomizationPreviewWithoutTheme__41d37 profileCustomizationPreview_ccc6a9",
                 status: "status_be3f03",
                 statusDot: "statusDot__468f8",
-                statusDotBackground: "statusDotBackground__56e10"
+                statusDotBackground: "statusDotBackground__56e10",
+                tryingOutAvatarDecoration: "tryingOutAvatarDecoration_f526bf"
             }
         },
         792841: function(e, t, o) {
