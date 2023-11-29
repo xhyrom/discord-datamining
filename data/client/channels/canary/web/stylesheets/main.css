@@ -102909,6 +102909,10 @@ html .invoiceCancelRow_a8669b {
     margin-bottom: 20px
 }
 
+.userSettingsOverlayField_e88a0c:last-child {
+    margin-bottom: 0
+}
+
 .enableOverlaySection__67fb9 {
     display: flex;
     gap: 20px
@@ -124250,4 +124254,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.dfece68a7524d2a47225.css.map*/
+/*# sourceMappingURL=app.56f7befd77514d5e5eba.css.map*/
