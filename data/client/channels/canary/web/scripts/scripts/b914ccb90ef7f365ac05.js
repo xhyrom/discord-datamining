@@ -53,20 +53,20 @@
                 } = t;
                 return (0, i.jsxs)("svg", {
                     ...(0, a.default)(u),
-                    xmlns: "http://www.w3.org/2000/svg",
                     width: e,
                     height: n,
-                    fill: "none",
                     viewBox: "0 0 24 24",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
                     children: [(0, i.jsx)("path", {
-                        fill: "string" == typeof s ? s : s.css,
                         fillRule: "evenodd",
-                        d: "M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm6.293.293a1 1 0 0 1 1.414 0L12 7.586l2.293-2.293a1 1 0 1 1 1.414 1.414L13.414 9l2.293 2.293a1 1 0 0 1-1.414 1.414L12 10.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L10.586 9 8.293 6.707a1 1 0 0 1 0-1.414Z",
                         clipRule: "evenodd",
+                        d: "M2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V13C22 14.6569 20.6569 16 19 16H5C3.34315 16 2 14.6569 2 13V5ZM8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L12 7.58579L14.2929 5.29289C14.6834 4.90237 15.3166 4.90237 15.7071 5.29289C16.0976 5.68342 16.0976 6.31658 15.7071 6.70711L13.4142 9L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071C15.3166 13.0976 14.6834 13.0976 14.2929 12.7071L12 10.4142L9.70711 12.7071C9.31658 13.0976 8.68342 13.0976 8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L10.5858 9L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289Z",
+                        fill: "string" == typeof s ? s : s.css,
                         className: c
                     }), (0, i.jsx)("path", {
+                        d: "M13 19.5C13 19.7761 13.2239 20 13.5 20H15C15.5523 20 16 20.4477 16 21C16 21.5523 15.5523 22 15 22H9C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20H10.5C10.7761 20 11 19.7761 11 19.5V17.5C11 17.2239 11.2239 17 11.5 17H12.5C12.7761 17 13 17.2239 13 17.5V19.5Z",
                         fill: "string" == typeof s ? s : s.css,
-                        d: "M13 19.5a.5.5 0 0 0 .5.5H15a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2Z",
                         className: c
                     })]
                 })
@@ -76,7 +76,7 @@
             "use strict";
             n.r(e), n.d(e, {
                 getEmbedApplication: function() {
-                    return C
+                    return f
                 },
                 getApplication: function() {
                     return E
@@ -108,13 +108,13 @@
                 o = n("388647"),
                 I = n("506061"),
                 T = n("49111");
-            let f = new Map;
-            async function C(t) {
+            let C = new Map;
+            async function f(t) {
                 var e;
                 let n = Date.now(),
-                    s = null !== (e = f.get(t)) && void 0 !== e ? e : 0;
+                    s = null !== (e = C.get(t)) && void 0 !== e ? e : 0;
                 if (c.default.getApplicationFetchState(t) === c.FetchState.FETCHING || c.default.isInvalidApplication(t) || n < s + 6e5) return;
-                f.set(t, n), a.default.dispatch({
+                C.set(t, n), a.default.dispatch({
                     type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
                     applicationId: t
                 });
@@ -256,21 +256,21 @@
                 } = t, {
                     page: r,
                     categoryId: o
-                } = null != c ? c : {}, I = Date.now(), f = d.default.getFetchState({
+                } = null != c ? c : {}, I = Date.now(), C = d.default.getFetchState({
                     query: n,
                     guildId: i,
                     page: r,
                     categoryId: o
                 }), {
-                    lastFetchTimeMs: C
+                    lastFetchTimeMs: f
                 } = null !== (e = d.default.getSearchResults({
                     query: n,
                     guildId: i,
                     page: r,
                     categoryId: o
                 })) && void 0 !== e ? e : {};
-                if (f !== d.FetchState.FETCHING) {
-                    if (null == C || !(C + 6e5 > I)) {
+                if (C !== d.FetchState.FETCHING) {
+                    if (null == f || !(f + 6e5 > I)) {
                         a.default.dispatch({
                             type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
                             query: n,
@@ -418,7 +418,7 @@
                     return l
                 },
                 default: function() {
-                    return f
+                    return C
                 }
             });
             var i, l, a = n("917351"),
@@ -462,7 +462,7 @@
                     })]
                 }
             }
-            var f = new T(u.default, {
+            var C = new T(u.default, {
                 APPLICATION_DIRECTORY_FETCH_COLLECTIONS: function(t) {
                     let {
                         includesInactive: e
@@ -854,10 +854,10 @@
                     return T
                 },
                 sendGamingStatsMessage: function() {
-                    return f
+                    return C
                 },
                 updateGamingStats: function() {
-                    return C
+                    return f
                 }
             });
             var i = n("872717"),
@@ -888,7 +888,7 @@
                     }
                 })
             }
-            async function f(t, e, n) {
+            async function C(t, e, n) {
                 await i.default.post({
                     url: o.Endpoints.SEND_GAMING_STATS(e),
                     body: {
@@ -900,7 +900,7 @@
                     }
                 }), E(e)
             }
-            async function C(t) {
+            async function f(t) {
                 let e = await i.default.patch({
                     url: o.Endpoints.UPDATE_GAMING_STATS(t.channel_id, t.id)
                 });
@@ -1165,4 +1165,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ccc46ac89f58bfac7efe.js.map
+//# sourceMappingURL=b914ccb90ef7f365ac05.js.map

@@ -21,14 +21,14 @@
                 } = e;
                 return (0, l.jsx)("svg", {
                     ...(0, i.default)(d),
-                    xmlns: "http://www.w3.org/2000/svg",
                     width: n,
                     height: t,
-                    fill: "none",
                     viewBox: "0 0 24 24",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
                     children: (0, l.jsx)("path", {
+                        d: "M3.29289 11.2929C2.90237 11.6834 2.90237 12.3166 3.29289 12.7071L8.29289 17.7071C8.68342 18.0976 9.31658 18.0976 9.70711 17.7071C10.0976 17.3166 10.0976 16.6834 9.70711 16.2929L6.41421 13L20 13C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11L6.41421 11L9.70711 7.70711C10.0976 7.31658 10.0976 6.68342 9.70711 6.29289C9.31658 5.90237 8.68342 5.90237 8.29289 6.29289L3.29289 11.2929Z",
                         fill: "string" == typeof o ? o : o.css,
-                        d: "M3.293 11.293a1 1 0 0 0 0 1.414l5 5a1 1 0 0 0 1.414-1.414L6.414 13H20a1 1 0 1 0 0-2H6.414l3.293-3.293a1 1 0 0 0-1.414-1.414l-5 5Z",
                         className: a
                     })
                 })
@@ -100,7 +100,7 @@
             "use strict";
             t.r(n), t.d(n, {
                 default: function() {
-                    return I
+                    return L
                 }
             }), t("424973"), t("222007");
             var l = t("917351"),
@@ -112,77 +112,85 @@
                 r = t("80507"),
                 s = t("374363"),
                 c = t("697218"),
-                f = t("235004"),
-                _ = t("846325"),
-                E = t("397336");
-            let C = [],
-                S = new o({
-                    max: _.NUM_RECENTLY_HEARD_SOUNDS
+                _ = t("235004"),
+                f = t("389480"),
+                E = t("846325"),
+                C = t("397336");
+            let S = [],
+                m = new o({
+                    max: E.NUM_RECENTLY_HEARD_SOUNDS
                 }),
-                m = new r.default({
+                A = new r.default({
                     computeBonus: () => 100,
                     computeWeight: e => {
                         let n = 0;
                         return e <= 3 ? n = 100 : e <= 15 ? n = 70 : e <= 30 ? n = 50 : e <= 45 ? n = 30 : e <= 80 && (n = 10), n
                     },
-                    lookupKey: e => f.default.getSoundById(e),
+                    lookupKey: e => _.default.getSoundById(e),
                     afterCompute: () => {},
-                    numFrequentlyItems: _.NUM_FREQUENTLY_USED_SOUNDS
+                    numFrequentlyItems: E.NUM_FREQUENTLY_USED_SOUNDS
                 });
 
-            function A() {
+            function g() {
                 var e, n;
                 let t = null === (e = s.default.frecencyWithoutFetchingLatest.playedSoundFrecency) || void 0 === e ? void 0 : e.playedSounds;
-                m.overwriteHistory((n = null != t ? t : {}, u.mapValues(n, e => ({
+                A.overwriteHistory((n = null != t ? t : {}, u.mapValues(n, e => ({
                     ...e,
                     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-                }))), C)
+                }))), S)
             }
-            class g extends a.default.PersistedStore {
+            class I extends a.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(c.default, f.default), (null == e ? void 0 : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (C = e.playedEventsPendingFlush), this.syncWith([s.default], A)
+                    this.waitFor(c.default, _.default), (null == e ? void 0 : e.recentlyHeardCache) != null && m.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (S = e.playedEventsPendingFlush), this.syncWith([s.default], g)
                 }
                 getState() {
                     return {
-                        recentlyHeardCache: S.dump(),
-                        playedEventsPendingFlush: C
+                        recentlyHeardCache: m.dump(),
+                        playedEventsPendingFlush: S
                     }
                 }
                 hasPendingUsage() {
-                    return C.length > 0
+                    return S.length > 0
                 }
                 get playedSoundHistory() {
-                    return m.usageHistory
+                    return A.usageHistory
                 }
                 get recentlyHeardSoundIds() {
-                    return S.values()
+                    return m.values()
                 }
                 get frecentlyPlayedSounds() {
-                    return m.frequently
+                    return A.frequently
                 }
             }
-            g.displayName = "SoundboardEventStore", g.persistKey = "SoundboardEventStore";
-            var I = new g(d.default, {
+            I.displayName = "SoundboardEventStore", I.persistKey = "SoundboardEventStore";
+            var L = new I(d.default, {
+                GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: function(e) {
+                    let {
+                        sound: n,
+                        trigger: t
+                    } = e, l = n.soundId.toString();
+                    t === f.LocalSoundTrigger.SOUNDBOARD && function(e) {
+                        A.track(e), S.push({
+                            key: e,
+                            timestamp: Date.now()
+                        }), A.compute()
+                    }(l)
+                },
                 GUILD_SOUNDBOARD_SOUND_PLAY_START: function(e) {
                     var n;
                     let {
                         soundId: t,
                         userId: l
                     } = e, u = t.toString(), i = null === (n = c.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
-                    l === i ? function(e) {
-                        m.track(e), C.push({
-                            key: e,
-                            timestamp: Date.now()
-                        }), m.compute()
-                    }(u) : function(e) {
-                        let n = f.default.getSounds();
+                    l !== i && function(e) {
+                        let n = _.default.getSounds();
                         for (let t of n.values()) {
                             let n = t.find(n => n.soundId.toString() === e);
                             if (null != n) return !0
                         }
                         return !1
                     }(u) && function(e) {
-                        S.set(e, e)
+                        m.set(e, e)
                     }(u)
                 },
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
@@ -192,7 +200,7 @@
                         },
                         wasSaved: t
                     } = e;
-                    n === E.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS && t && (C = [])
+                    n === C.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS && t && (S = [])
                 }
             })
         },
@@ -200,19 +208,19 @@
             "use strict";
             t.r(n), t.d(n, {
                 getAmplitudinalSoundboardVolume: function() {
-                    return L
+                    return N
                 },
                 canUseSoundboardSound: function() {
-                    return p
+                    return y
                 },
                 canUseCustomCallSounds: function() {
-                    return D
+                    return p
                 },
                 playSound: function() {
-                    return h
+                    return O
                 },
                 maybePlayCustomJoinSound: function() {
-                    return O
+                    return h
                 },
                 useSoundBoardDismissContentTypes: function() {
                     return v
@@ -224,7 +232,7 @@
                     return V
                 },
                 trackCustomCallSoundExternallyDeleted: function() {
-                    return R
+                    return b
                 }
             }), t("424973");
             var l = t("65597"),
@@ -236,8 +244,8 @@
                 r = t("374363"),
                 s = t("229502"),
                 c = t("233069"),
-                f = t("957255"),
-                _ = t("697218"),
+                _ = t("957255"),
+                f = t("697218"),
                 E = t("599110"),
                 C = t("719923"),
                 S = t("158998"),
@@ -245,26 +253,26 @@
                 A = t("235004"),
                 g = t("389480"),
                 I = t("245463"),
-                T = t("675961"),
+                L = t("675961"),
                 U = t("846325"),
-                y = t("49111");
+                T = t("49111");
 
-            function L() {
+            function N() {
                 var e;
                 let n = a.SoundboardSettings.getSetting();
                 return null !== (e = null == n ? void 0 : n.volume) && void 0 !== e ? e : 100
             }
 
-            function N(e, n) {
-                return (null == n ? void 0 : n.guild_id) == null || f.default.can(y.Permissions.USE_EXTERNAL_SOUNDS, n) || e.guildId === U.DEFAULT_SOUND_GUILD_ID || e.guildId === (null == n ? void 0 : n.guild_id)
+            function D(e, n) {
+                return (null == n ? void 0 : n.guild_id) == null || _.default.can(T.Permissions.USE_EXTERNAL_SOUNDS, n) || e.guildId === U.DEFAULT_SOUND_GUILD_ID || e.guildId === (null == n ? void 0 : n.guild_id)
             }
 
-            function p(e, n, t) {
+            function y(e, n, t) {
                 let l = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
-                return (C.default.canUseSoundboardEverywhere(e) || n.guildId === (null == t ? void 0 : t.guild_id) || n.guildId === U.DEFAULT_SOUND_GUILD_ID) && N(n, t) && (!l || n.available)
+                return (C.default.canUseSoundboardEverywhere(e) || n.guildId === (null == t ? void 0 : t.guild_id) || n.guildId === U.DEFAULT_SOUND_GUILD_ID) && D(n, t) && (!l || n.available)
             }
 
-            function D(e) {
+            function p(e) {
                 let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                     t = i.default.getCurrentConfig({
                         location: "65e71d_1"
@@ -274,28 +282,28 @@
                 return C.default.canUseCustomCallSounds(e) && t
             }
 
-            function h(e, n, t) {
-                (0, m.playSoundLocally)(n, e), (0, s.sendVoiceChannelSoundboardEffect)(n, e, __OVERLAY__, t)
+            function O(e, n, t) {
+                (0, m.playSoundLocally)(n, e, g.LocalSoundTrigger.SOUNDBOARD), (0, s.sendVoiceChannelSoundboardEffect)(n, e, __OVERLAY__, t)
             }
-            async function O(e) {
-                let n = _.default.getCurrentUser(),
+            async function h(e) {
+                let n = f.default.getCurrentUser(),
                     t = (0, o.default)(),
-                    l = (0, T.getCustomJoinSound)(e);
-                if (null == t || c.SILENT_JOIN_LEAVE_CHANNEL_TYPES.has(t.type) || null == l || !D(n) || !(0, I.canSelectedVoiceChannelUseSoundboard)()) return;
+                    l = (0, L.getCustomJoinSound)(e);
+                if (null == t || c.SILENT_JOIN_LEAVE_CHANNEL_TYPES.has(t.type) || null == l || !p(n) || !(0, I.canSelectedVoiceChannelUseSoundboard)()) return;
                 await (0, m.maybeFetchSoundboardSounds)();
                 let u = l.guildId === U.CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID ? U.DEFAULT_SOUND_GUILD_ID : l.guildId,
                     i = A.default.getSound(u, l.soundId);
                 if (null != i) {
                     var a, d;
-                    if (!N(i, t) || !p(n, i, t, !0)) return null;
-                    a = i, d = t.id, (0, m.playSoundLocally)(d, a), (0, s.sendVoiceChannelCustomCallSoundEffect)(d, a, __OVERLAY__)
+                    if (!D(i, t) || !y(n, i, t, !0)) return null;
+                    a = i, d = t.id, (0, m.playSoundLocally)(d, a, g.LocalSoundTrigger.JOINED_VOICE_CHANNEL), (0, s.sendVoiceChannelCustomCallSoundEffect)(d, a, __OVERLAY__)
                 }
             }
 
             function v(e) {
                 let {
                     isSoundboardButtonDisabled: n = !1
-                } = e, t = (0, l.default)([_.default], () => _.default.getCurrentUser()), o = [u.DismissibleContent.SOUNDBOARD_EDUCATION], {
+                } = e, t = (0, l.default)([f.default], () => f.default.getCurrentUser()), o = [u.DismissibleContent.SOUNDBOARD_EDUCATION], {
                     enabled: a,
                     showVoiceChannelCoachmark: d
                 } = i.default.useExperiment({
@@ -318,7 +326,7 @@
 
             function F(e, n) {
                 (0, d.updateUserGuildSettings)(e, t => {
-                    t.joinSound = void 0, b({
+                    t.joinSound = void 0, R({
                         guildId: e,
                         changeType: g.AnalyticsChangeType.REMOVED,
                         soundType: g.AnalyticsSoundType.ENTRY,
@@ -335,7 +343,7 @@
                     l.joinSound = {
                         soundId: n.soundId,
                         guildId: u ? U.CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID : n.guildId
-                    }, b({
+                    }, R({
                         guildId: e,
                         changeType: o,
                         soundSource: i,
@@ -345,7 +353,7 @@
                 }, d.UserSettingsDelay.INFREQUENT_USER_ACTION)
             }
 
-            function b(e) {
+            function R(e) {
                 let {
                     guildId: n,
                     changeType: t,
@@ -353,7 +361,7 @@
                     soundSource: u,
                     location: i
                 } = e;
-                E.default.track(y.AnalyticEvents.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
+                E.default.track(T.AnalyticEvents.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
                     location_stack: i,
                     guild_id: "" === n ? 0 : Number(n),
                     change_type: t,
@@ -362,11 +370,11 @@
                 })
             }
 
-            function R(e) {
+            function b(e) {
                 let {
                     location: n
                 } = e;
-                E.default.track(y.AnalyticEvents.USER_CUSTOM_CALL_SOUND_SETTING_GUILD_REMOVED, {
+                E.default.track(T.AnalyticEvents.USER_CUSTOM_CALL_SOUND_SETTING_GUILD_REMOVED, {
                     location_stack: n
                 })
             }
@@ -417,14 +425,14 @@
                 s = t("646718");
 
             function c(e, n, t, c) {
-                var f, _, E;
+                var _, f, E;
                 let C = l.default.getChannel(o.default.getVoiceChannelId()),
                     S = null == C ? void 0 : C.getGuildId(),
                     m = u.default.getMediaSessionId(),
                     A = u.default.getRTCConnectionId(),
-                    g = null === (f = i.default.getCurrentGameForAnalytics()) || void 0 === f ? void 0 : f.name,
+                    g = null === (_ = i.default.getCurrentGameForAnalytics()) || void 0 === _ ? void 0 : _.name,
                     I = S !== t.guildId && t.guildId !== d.DEFAULT_SOUND_GUILD_ID;
-                let T = (_ = t, E = I, _.guildId === d.DEFAULT_SOUND_GUILD_ID ? "default" : E ? "custom-external" : "custom");
+                let L = (f = t, E = I, f.guildId === d.DEFAULT_SOUND_GUILD_ID ? "default" : E ? "custom-external" : "custom");
                 a.default.track(r.AnalyticEvents.PREMIUM_FEATURE_USAGE, {
                     feature_name: s.AnalyticsPremiumFeatureNames.SOUNDBOARD_PLAY,
                     feature_tier: I ? s.AnalyticsPremiumFeatureTiers.PREMIUM_STANDARD : s.AnalyticsPremiumFeatureTiers.FREE,
@@ -435,7 +443,7 @@
                     in_overlay: n,
                     application_name: g,
                     emoji_count: null != t.emojiId || null != t.emojiName ? 1 : 0,
-                    feature_selection: T,
+                    feature_selection: L,
                     feature_selection_id: t.soundId,
                     sound_type: c,
                     is_broadcast: null != C && C.isBroadcastChannel()
@@ -494,10 +502,10 @@
                     return U
                 },
                 sendVoiceChannelSoundboardEffect: function() {
-                    return y
+                    return T
                 },
                 sendVoiceChannelEffect: function() {
-                    return L
+                    return N
                 }
             });
             var l, u, i = t("917351"),
@@ -507,8 +515,8 @@
                 r = t("716241"),
                 s = t("385976"),
                 c = t("389480"),
-                f = t("454614"),
-                _ = t("18494"),
+                _ = t("454614"),
+                f = t("18494"),
                 E = t("402671"),
                 C = t("82230"),
                 S = t("568088"),
@@ -517,10 +525,10 @@
                 g = t("49111"),
                 I = t("846325");
 
-            function T(e) {
+            function L(e) {
                 let n = new AbortController,
                     t = (0, i.throttle)(t => {
-                        _.default.getVoiceChannelId() !== e && n.abort()
+                        f.default.getVoiceChannelId() !== e && n.abort()
                     }, 1e3);
                 return {
                     abortController: n,
@@ -533,7 +541,7 @@
                 let {
                     abortController: u,
                     onRequestProgress: i
-                } = T(e), a = null !== (l = C.default.getState().animationType) && void 0 !== l ? l : A.VoiceChannelEffectAnimationType.BASIC, r = {
+                } = L(e), a = null !== (l = C.default.getState().animationType) && void 0 !== l ? l : A.VoiceChannelEffectAnimationType.BASIC, r = {
                     animation_type: a,
                     animation_id: (0, m.sampleAnimationId)(a, m.CUSTOM_CALL_SOUND_ANIMATION_RANGE)
                 };
@@ -544,31 +552,31 @@
                     onRequestProgress: i
                 }).then(g.NOOP_NULL, () => {
                     if (u.signal.aborted) return
-                }), (0, f.default)([d.default.CHANNEL_CALL], t, n, c.AnalyticsSoundType.ENTRY)
+                }), (0, _.default)([d.default.CHANNEL_CALL], t, n, c.AnalyticsSoundType.ENTRY)
             }
 
-            function y(e, n, t, l) {
+            function T(e, n, t, l) {
                 var u, i;
                 let a = s.default.getCustomEmojiById(null !== (u = n.emojiId) && void 0 !== u ? u : ""),
                     {
                         abortController: d,
                         onRequestProgress: r
-                    } = T(e),
-                    _ = {
+                    } = L(e),
+                    f = {
                         sound_id: n.soundId,
                         emoji_id: n.emojiId,
                         emoji_name: null !== (i = n.emojiName) && void 0 !== i ? i : null == a ? void 0 : a.name
                     };
-                n.guildId !== I.DEFAULT_SOUND_GUILD_ID && (_.source_guild_id = n.guildId), o.default.post({
+                n.guildId !== I.DEFAULT_SOUND_GUILD_ID && (f.source_guild_id = n.guildId), o.default.post({
                     url: g.Endpoints.SEND_SOUNDBOARD_SOUND(e),
-                    body: _,
+                    body: f,
                     signal: d.signal,
                     onRequestProgress: r
                 }).then(g.NOOP_NULL, () => {
                     if (d.signal.aborted) return
-                }), (0, f.default)(null != l ? l : [], t, n, c.AnalyticsSoundType.DEFAULT)
+                }), (0, _.default)(null != l ? l : [], t, n, c.AnalyticsSoundType.DEFAULT)
             }(l = u || (u = {})).EMOJI_PICKER = "emoji_picker", l.EFFECT_BAR = "effect_bar";
-            let L = async e => {
+            let N = async e => {
                 let {
                     channel: n,
                     emoji: t,
@@ -594,7 +602,7 @@
                     await o.default.post({
                         url: g.Endpoints.VOICE_CHANNEL_EFFECTS(n.id),
                         body: e
-                    }), p(n, t, l, r), a.default.dispatch({
+                    }), y(n, t, l, r), a.default.dispatch({
                         type: "VOICE_CHANNEL_EFFECT_SENT_LOCAL"
                     })
                 } catch (e) {
@@ -606,10 +614,10 @@
                         })
                     }
                 }
-            }, N = {
+            }, D = {
                 [A.VoiceChannelEffectAnimationType.BASIC]: "Basic",
                 [A.VoiceChannelEffectAnimationType.PREMIUM]: "Premium"
-            }, p = (e, n, t, l) => {
+            }, y = (e, n, t, l) => {
                 let {
                     unicode: u,
                     custom: i,
@@ -617,7 +625,7 @@
                     managed: a,
                     managedExternal: d,
                     animated: s
-                } = (0, E.countEmoji)([n], e.getGuildId()), c = N[l];
+                } = (0, E.countEmoji)([n], e.getGuildId()), c = D[l];
                 r.default.trackWithMetadata(g.AnalyticEvents.VOICE_CHANNEL_EFFECT_SENT, {
                     channel_id: e.id,
                     guild_id: e.getGuildId(),
@@ -667,7 +675,7 @@
             let l;
             t.r(n), t.d(n, {
                 clearVoiceChannelEffectForUser: function() {
-                    return _
+                    return f
                 },
                 default: function() {
                     return m
@@ -681,8 +689,8 @@
                 r = t("99795");
             let s = [],
                 c = {},
-                f = [],
-                _ = e => {
+                _ = [],
+                f = e => {
                     null != e && a.default.dispatch({
                         type: "VOICE_CHANNEL_EFFECT_CLEAR",
                         userId: e
@@ -690,8 +698,8 @@
                 },
                 E = [],
                 C = (0, u.debounce)(() => {
-                    let e = (0, d.getEffectAnnouncement)(f);
-                    o.AccessibilityAnnouncer.announce(e, "polite"), f = []
+                    let e = (0, d.getEffectAnnouncement)(_);
+                    o.AccessibilityAnnouncer.announce(e, "polite"), _ = []
                 }, 500);
             class S extends i.default.Store {
                 get recentlyUsedEmojis() {
@@ -731,7 +739,7 @@
                         emoji: n,
                         sentAt: Date.now(),
                         animationType: l
-                    }, f = [...f, {
+                    }, _ = [..._, {
                         emojiName: n.name,
                         userId: t
                     }], C())
@@ -790,4 +798,4 @@
         }
     }
 ]);
-//# sourceMappingURL=622f6c3a2fc2c356a1c1.js.map
+//# sourceMappingURL=f9797a5bd4f325809104.js.map

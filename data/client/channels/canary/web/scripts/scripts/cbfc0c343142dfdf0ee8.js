@@ -21,16 +21,16 @@
                 } = e;
                 return (0, r.jsx)("svg", {
                     ...(0, a.default)(i),
-                    xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
-                    fill: "none",
                     viewBox: "0 0 24 24",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
                     children: (0, r.jsx)("path", {
-                        fill: "string" == typeof u ? u : u.css,
                         fillRule: "evenodd",
-                        d: "M4 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm8 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z",
                         clipRule: "evenodd",
+                        d: "M4 14C5.10457 14 6 13.1046 6 12C6 10.8954 5.10457 10 4 10C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14ZM14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12ZM22 12C22 13.1046 21.1046 14 20 14C18.8954 14 18 13.1046 18 12C18 10.8954 18.8954 10 20 10C21.1046 10 22 10.8954 22 12Z",
+                        fill: "string" == typeof u ? u : u.css,
                         className: o
                     })
                 })
@@ -253,24 +253,24 @@
                 return new Set(c.weekdays().map(e => e.toLowerCase()))
             }
 
-            function y() {
+            function C() {
                 let e = new Date().getFullYear();
                 return new Set(i.range(2015, e + 1).map(e => e.toString()))
             }
 
-            function C(e, t) {
+            function y(e, t) {
                 return [e, e.clone().add(1, t)]
             }
 
             function M(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
                     n = c().startOf(e).add(t, e);
-                return C(n, e)
+                return y(n, e)
             }
 
             function L(e, t, n) {
                 let r = c(e, t).local();
-                return C(r, n)
+                return y(r, n)
             }
 
             function v() {
@@ -304,7 +304,7 @@
                 let n, r;
                 let l = e.getFullMatch().trim().toLowerCase(),
                     a = v()[l];
-                null != a ? [n, r] = a() : I().has(l) ? [n, r] = L(l, "MMMM", "month") : m().has(l) ? [n, r] = L(l, "dddd", "day") : y().has(l) ? [n, r] = L(l, "YYYY", "year") : [n, r] = L(l, g.SEARCH_DATE_FORMAT, "day");
+                null != a ? [n, r] = a() : I().has(l) ? [n, r] = L(l, "MMMM", "month") : m().has(l) ? [n, r] = L(l, "dddd", "day") : C().has(l) ? [n, r] = L(l, "YYYY", "year") : [n, r] = L(l, g.SEARCH_DATE_FORMAT, "day");
                 let u = n.isValid() && r.isValid();
                 return !!u && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
             }
@@ -340,7 +340,7 @@
             }
 
             function G() {
-                return [...Array.from(I()), ...Array.from(m()), ...Array.from(y()), ...Object.keys(v())]
+                return [...Array.from(I()), ...Array.from(m()), ...Array.from(C()), ...Object.keys(v())]
             }
 
             function W() {
@@ -820,12 +820,12 @@
                 return N.getState()[e]
             }
 
-            function y(e) {
+            function C(e) {
                 let t = m(e);
                 return null == t && I(e, t = g(1)), t
             }
 
-            function C(e) {
+            function y(e) {
                 let t = m(e);
                 null != t && I(e, {
                     requestState: 3,
@@ -849,7 +849,7 @@
                 let a = R.default.getSearchStateByGuildId(e),
                     u = R.default.getPaginationStateByGuildId(e),
                     o = A(e),
-                    c = y(o),
+                    c = C(o),
                     [d, g] = function(e, t, n) {
                         var r, l, a, u, o, i;
                         let s = function(e, t) {
@@ -870,7 +870,7 @@
                                     }
                                 }(t), {
                                     previousPagination: u
-                                } = y(A(e)), o = t.currentPage, i = null !== (n = null == u ? void 0 : u.currentPage) && void 0 !== n ? n : 0, s = R.default.getElasticSearchPaginationByGuildId(e);
+                                } = C(A(e)), o = t.currentPage, i = null !== (n = null == u ? void 0 : u.currentPage) && void 0 !== n ? n : 0, s = R.default.getElasticSearchPaginationByGuildId(e);
                                 switch (!0) {
                                     case null == s:
                                     case r === a && 0 === r:
@@ -958,7 +958,7 @@
                     ...n
                 });
                 if (function(e, t) {
-                        let n = y(e);
+                        let n = C(e);
                         return i(n.query, t)
                     }(o, N) && (0, s.isEqual)(d, c.cursor)) return;
                 let M = function(e, t, n, r) {
@@ -997,7 +997,7 @@
                     }(o);
                     return
                 }
-                C(o)
+                y(o)
             }
 
             function v(e) {
@@ -1048,7 +1048,7 @@
                 let {
                     guildId: t
                 } = e, n = A(t);
-                C(n)
+                y(n)
             }
 
             function U(e) {
@@ -1263,10 +1263,10 @@
                     return m
                 },
                 isSettingsValid: function() {
-                    return y
+                    return C
                 },
                 isChannelValidForResourceChannel: function() {
-                    return C
+                    return y
                 },
                 isChannelValidForNewMemberAction: function() {
                     return M
@@ -1398,12 +1398,12 @@
                 return null == e || !!I(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
             }
 
-            function y(e) {
+            function C(e) {
                 var t, n;
                 return null != e && (!!m(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < s) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
             }
 
-            function C(e) {
+            function y(e) {
                 return e.type === i.ChannelTypes.GUILD_TEXT && !o.default.canEveryoneRole(i.Permissions.SEND_MESSAGES, e) && o.default.canEveryoneRole(i.Permissions.VIEW_CHANNEL, e)
             }
 
@@ -1674,10 +1674,10 @@
                     return m
                 },
                 filterHasAnswer: function() {
-                    return y
+                    return C
                 },
                 refreshSearchTokens: function() {
-                    return C
+                    return y
                 }
             }), n("222007"), n("808653");
             var r = n("917351"),
@@ -1865,12 +1865,12 @@
                 return null != e ? _[e] : null
             }
 
-            function y(e, t) {
+            function C(e, t) {
                 let n = c.IS_SEARCH_FILTER_TOKEN.test(e.type);
                 return (null != t || !n) && (null == t || !n || !!c.IS_SEARCH_ANSWER_TOKEN.test(t.type)) && !0
             }
 
-            function C() {
+            function y() {
                 (0, u.refreshSearchTokens)(), g.reset(), l(u.default).forOwn((e, t) => g.addRule({
                     type: t,
                     ...e
@@ -1879,4 +1879,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47a38e481a7712a70ef9.js.map
+//# sourceMappingURL=cbfc0c343142dfdf0ee8.js.map

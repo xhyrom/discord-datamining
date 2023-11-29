@@ -11,8 +11,8 @@
                 l = r("884691"),
                 i = r("132710"),
                 a = r.n(i),
-                s = r("77078"),
-                u = r("812204"),
+                u = r("77078"),
+                s = r("812204"),
                 d = r("685665"),
                 o = r("128259"),
                 c = l.memo(function(e) {
@@ -24,19 +24,19 @@
                         children: f,
                         messageId: v,
                         channelId: g,
-                        ...h
+                        ...C
                     } = e, {
-                        analyticsLocations: E
-                    } = (0, d.default)(u.default.MASKED_LINK), C = l.useCallback(t => (0, o.handleClick)(e, t, E), [E, e]), I = l.useCallback(e => {
-                        1 === e.button && C(e)
-                    }, [C]), R = a.sanitizeUrl(c);
-                    return (0, n.jsx)(s.Anchor, {
-                        ...h,
+                        analyticsLocations: h
+                    } = (0, d.default)(s.default.MASKED_LINK), E = l.useCallback(t => (0, o.handleClick)(e, t, h), [h, e]), I = l.useCallback(e => {
+                        1 === e.button && E(e)
+                    }, [E]), R = a.sanitizeUrl(c);
+                    return (0, n.jsx)(u.Anchor, {
+                        ...C,
                         title: i,
                         target: "_blank",
                         rel: "noreferrer noopener",
                         href: R,
-                        onClick: C,
+                        onClick: E,
                         onAuxClick: I,
                         children: null != f ? f : i
                     })
@@ -57,31 +57,28 @@
                 let {
                     width: t = 24,
                     height: r = 24,
-                    secondaryColor: a = "transparent",
-                    secondaryColorClass: s = "",
-                    color: u = l.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: d = "",
-                    ...o
+                    color: a = l.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: u = "",
+                    ...s
                 } = e;
                 return (0, n.jsxs)("svg", {
-                    ...(0, i.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
+                    ...(0, i.default)(s),
                     width: t,
                     height: r,
-                    fill: "none",
                     viewBox: "0 0 24 24",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
                     children: [(0, n.jsx)("circle", {
                         cx: "12",
                         cy: "12",
                         r: "10",
-                        fill: "string" == typeof a ? a : a.css,
-                        className: s
+                        fill: "black"
                     }), (0, n.jsx)("path", {
-                        fill: "string" == typeof u ? u : u.css,
                         fillRule: "evenodd",
-                        d: "M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11Zm-9.5-4.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm-.772 3.96a1 1 0 1 0-1.956-.42L9.73 15.655a2.766 2.766 0 0 0 4.312 2.83l.24-.171a1 1 0 1 0-1.163-1.628l-.24.171a.766.766 0 0 1-1.194-.783l1.043-4.865Z",
                         clipRule: "evenodd",
-                        className: d
+                        d: "M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM13.5 7.25C13.5 7.94036 12.9404 8.5 12.25 8.5C11.5596 8.5 11 7.94036 11 7.25C11 6.55964 11.5596 6 12.25 6C12.9404 6 13.5 6.55964 13.5 7.25ZM12.7278 11.2095C12.8435 10.6695 12.4996 10.1379 11.9595 10.0222C11.4195 9.90648 10.8879 10.2504 10.7722 10.7905L9.72984 15.6548C9.36091 17.3765 10.6734 19 12.4342 19C13.0106 19 13.5726 18.8199 14.0417 18.4848L14.2812 18.3137C14.7307 17.9927 14.8347 17.3682 14.5137 16.9188C14.1927 16.4693 13.5682 16.3653 13.1188 16.6863L12.8792 16.8574C12.7493 16.9501 12.5937 17 12.4342 17C11.9467 17 11.5833 16.5505 11.6854 16.0739L12.7278 11.2095Z",
+                        fill: "string" == typeof a ? a : a.css,
+                        className: u
                     })]
                 })
             }
@@ -106,16 +103,16 @@
             var l = r("872717"),
                 i = r("271938"),
                 a = r("922932"),
-                s = r("355025");
-            let u = "/__development/build_overrides";
+                u = r("355025");
+            let s = "/__development/build_overrides";
             async function d(e) {
                 try {
                     var t;
                     let r = await l.default.put({
-                        url: (0, s.getAPIEndpoint)(u),
+                        url: (0, u.getAPIEndpoint)(s),
                         body: {
                             overrides: e,
-                            version: s.APP_VERSION
+                            version: u.APP_VERSION
                         },
                         headers: {
                             Authorization: null !== (t = i.default.getToken()) && void 0 !== t ? t : ""
@@ -130,11 +127,11 @@
             async function o(e) {
                 try {
                     let t = await l.default.put({
-                        url: (0, s.getAPIEndpoint)("/__development/link"),
+                        url: (0, u.getAPIEndpoint)("/__development/link"),
                         body: {
                             payload: e,
                             token: i.default.getToken(),
-                            version: s.APP_VERSION
+                            version: u.APP_VERSION
                         },
                         oldFormErrors: !0
                     });
@@ -145,7 +142,7 @@
             }
             async function c() {
                 let e = await l.default.delete({
-                    url: (0, s.getAPIEndpoint)(u),
+                    url: (0, u.getAPIEndpoint)(s),
                     oldFormErrors: !0
                 });
                 return await n(e), e
@@ -154,7 +151,7 @@
             function f(e) {
                 var t;
                 return l.default.post({
-                    url: (0, s.getAPIEndpoint)("/__development/create_build_override_link"),
+                    url: (0, u.getAPIEndpoint)("/__development/create_build_override_link"),
                     body: e,
                     headers: {
                         Authorization: null !== (t = i.default.getToken()) && void 0 !== t ? t : ""
@@ -189,27 +186,27 @@
             });
             var n, l, i = r("446674"),
                 a = r("913144"),
-                s = r("355025");
+                u = r("355025");
             (n = l || (l = {}))[n.NotResolved = 0] = "NotResolved", n[n.Resolving = 1] = "Resolving", n[n.Resolved = 2] = "Resolved", n[n.Invalid = 3] = "Invalid";
-            let u = 0,
+            let s = 0,
                 d = null,
                 o = {};
             class c extends i.default.Store {
                 getCurrentBuildOverride() {
-                    return 0 === u && (u = 1, (0, s.getBuildOverride)().then(e => {
+                    return 0 === s && (s = 1, (0, u.getBuildOverride)().then(e => {
                         a.default.dispatch({
                             type: "CURRENT_BUILD_OVERRIDE_RESOLVED",
                             overrides: e
                         })
                     })), {
-                        state: u,
+                        state: s,
                         overrides: d
                     }
                 }
                 getBuildOverride(e) {
                     return ! function(e) {
                         if (e in o) return;
-                        let t = (0, s.validateURL)(e);
+                        let t = (0, u.validateURL)(e);
                         if (null == t) {
                             o = {
                                 ...o,
@@ -229,7 +226,7 @@
                                 state: 1
                             }
                         };
-                        (0, s.getBuildOverrideMeta)(t.url).then(t => {
+                        (0, u.getBuildOverrideMeta)(t.url).then(t => {
                             a.default.dispatch({
                                 type: "BUILD_OVERRIDE_RESOLVED",
                                 url: e,
@@ -262,7 +259,7 @@
                     let {
                         overrides: t
                     } = e;
-                    u = 2, d = t
+                    s = 2, d = t
                 }
             })
         },
@@ -277,13 +274,13 @@
                 l = r.n(n),
                 i = r("271938"),
                 a = r("180855"),
-                s = r("49111"),
-                u = r("782340");
+                u = r("49111"),
+                s = r("782340");
 
             function d(e, t, r) {
                 if (null == e || null == t) return {
                     valid: !1,
-                    reason: u.default.Messages.BUILD_OVERRIDE_INVALID
+                    reason: s.default.Messages.BUILD_OVERRIDE_INVALID
                 };
                 let {
                     releaseChannel: n,
@@ -294,7 +291,7 @@
                 } = e, v = Object.keys(f);
                 if (0 === l.intersection(v, t).length) return {
                     valid: !1,
-                    reason: u.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_TARGETS.format({
+                    reason: s.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_TARGETS.format({
                         requestedTargets: v.map(e => {
                             var t;
                             return null !== (t = a.BUILD_OVERRIDE_TARGET_NAMES[e]) && void 0 !== t ? t : "unknown"
@@ -302,27 +299,27 @@
                     })
                 };
                 if (null != n && n !== window.GLOBAL_ENV.RELEASE_CHANNEL) {
-                    let e = n === s.PublicReleaseChannels.PTB ? n.toUpperCase() : "".concat(n.charAt(0).toUpperCase()).concat(n.slice(1));
+                    let e = n === u.PublicReleaseChannels.PTB ? n.toUpperCase() : "".concat(n.charAt(0).toUpperCase()).concat(n.slice(1));
                     return {
                         valid: !1,
-                        reason: u.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_CLIENT.format({
+                        reason: s.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_CLIENT.format({
                             releaseChannel: e
                         })
                     }
                 }
                 if (null != c && (null == r || !c.includes(r))) return {
                     valid: !1,
-                    reason: u.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_CLIENT.format({
+                    reason: s.default.Messages.BUILD_OVERRIDE_INCOMPATIBLE_CLIENT.format({
                         releaseChannel: c.join(", ")
                     })
                 };
                 let g = null != d ? new Date(d).getTime() : null;
                 return null != g && g < Date.now() ? {
                     valid: !1,
-                    reason: u.default.Messages.BUILD_OVERRIDE_EXPIRED
+                    reason: s.default.Messages.BUILD_OVERRIDE_EXPIRED
                 } : o.length > 0 && !o.includes(i.default.getId()) ? {
                     valid: !1,
-                    reason: u.default.Messages.BUILD_OVERRIDE_INVALID_USER
+                    reason: s.default.Messages.BUILD_OVERRIDE_INVALID_USER
                 } : {
                     valid: !0
                 }
@@ -332,38 +329,38 @@
             "use strict";
             r.r(t), r.d(t, {
                 default: function() {
-                    return m
+                    return L
                 }
             }), r("222007");
             var n = r("37983"),
                 l = r("884691"),
                 i = r("414456"),
                 a = r.n(i),
-                s = r("627445"),
-                u = r.n(s),
+                u = r("627445"),
+                s = r.n(u),
                 d = r("77078"),
                 o = r("68238"),
                 c = r("83900"),
                 f = r("626820"),
                 v = r("306160"),
                 g = r("701909"),
-                h = r("161449"),
-                E = r("49111"),
-                C = r("782340"),
+                C = r("161449"),
+                h = r("49111"),
+                E = r("782340"),
                 I = r("939848");
 
             function R(e) {
                 let {
                     url: t
-                } = e, [r, i] = l.useState(!1), s = l.useRef(void 0), u = l.useCallback(() => {
-                    !r && ((0, v.copy)(t) && i(!0), s.current = setTimeout(() => i(!1), 2e3))
+                } = e, [r, i] = l.useState(!1), u = l.useRef(void 0), s = l.useCallback(() => {
+                    !r && ((0, v.copy)(t) && i(!0), u.current = setTimeout(() => i(!1), 2e3))
                 }, [t, r]);
-                return l.useEffect(() => () => clearTimeout(s.current), []), v.SUPPORTS_COPY ? (0, n.jsxs)(d.Clickable, {
+                return l.useEffect(() => () => clearTimeout(u.current), []), v.SUPPORTS_COPY ? (0, n.jsxs)(d.Clickable, {
                     className: a(I.copyLink, r ? I.copied : null),
-                    onClick: u,
+                    onClick: s,
                     children: [(0, n.jsx)(c.default, {
                         className: I.copyLinkIcon
-                    }), r ? C.default.Messages.BUILD_OVERRIDE_LINK_COPIED : C.default.Messages.BUILD_OVERRIDE_LINK_COPY]
+                    }), r ? E.default.Messages.BUILD_OVERRIDE_LINK_COPIED : E.default.Messages.BUILD_OVERRIDE_LINK_COPY]
                 }) : null
             }
 
@@ -372,8 +369,8 @@
                     subHead: t,
                     buildDetails: r,
                     buttonColor: i,
-                    buttonClick: s,
-                    buttonText: u,
+                    buttonClick: u,
+                    buttonText: s,
                     disabled: o = !1,
                     submitting: c = !1
                 } = e;
@@ -391,41 +388,41 @@
                     }), (0, n.jsx)(d.Button, {
                         submitting: c,
                         color: i,
-                        onClick: s,
+                        onClick: u,
                         className: a(I.button, o ? I.disabledButtonOverride : null),
                         size: I.buttonSize,
                         disabled: o,
-                        children: u
+                        children: s
                     })]
                 })
             }
-            var m = e => {
+            var L = e => {
                 var t, r, i;
                 let {
-                    loading: s = !1,
+                    loading: u = !1,
                     currentOverrides: c,
                     linkMeta: v,
-                    url: m,
-                    applyBuildOverride: L,
-                    clearBuildOverride: _
-                } = e, [O, B] = l.useState(!1), D = l.useCallback(() => {
-                    !O && (B(!0), L().catch(() => B(!1)))
-                }, [L, O]), b = l.useCallback(() => {
+                    url: L,
+                    applyBuildOverride: _,
+                    clearBuildOverride: m
+                } = e, [O, B] = l.useState(!1), b = l.useCallback(() => {
                     !O && (B(!0), _().catch(() => B(!1)))
-                }, [_, O]);
+                }, [_, O]), D = l.useCallback(() => {
+                    !O && (B(!0), m().catch(() => B(!1)))
+                }, [m, O]);
                 return (0, n.jsxs)("div", {
                     className: I.wrapper,
-                    children: [(t = v, r = m, i = s, (0, n.jsxs)(d.Text, {
+                    children: [(t = v, r = L, i = u, (0, n.jsxs)(d.Text, {
                         variant: "text-xs/normal",
                         className: I.titleRegion,
                         children: [(0, n.jsx)("strong", {
                             className: I.title,
-                            children: null != t && null != t.releaseChannel ? C.default.Messages.BUILD_OVERRIDE_FOR.format({
+                            children: null != t && null != t.releaseChannel ? E.default.Messages.BUILD_OVERRIDE_FOR.format({
                                 releaseChannel: t.releaseChannel
-                            }) : C.default.Messages.BUILD_OVERRIDE
+                            }) : E.default.Messages.BUILD_OVERRIDE
                         }), (0, n.jsx)(d.Anchor, {
                             className: I.infoLink,
-                            href: g.default.getArticleURL(E.HelpdeskArticles.BUILD_OVERRIDE_EMBED),
+                            href: g.default.getArticleURL(h.HelpdeskArticles.BUILD_OVERRIDE_EMBED),
                             target: "_blank",
                             children: (0, n.jsx)(o.default, {
                                 className: I.infoIcon
@@ -437,7 +434,7 @@
                         className: I.content,
                         children: [(0, n.jsx)(f.default, {
                             className: I.icon
-                        }), s ? (0, n.jsxs)(l.Fragment, {
+                        }), u ? (0, n.jsxs)(l.Fragment, {
                             children: [(0, n.jsxs)("div", {
                                 className: I.buildInfo,
                                 children: [(0, n.jsx)("div", {
@@ -452,29 +449,29 @@
                             var t, r;
                             let n, l, i, {
                                     currentOverrides: a,
-                                    linkMeta: s,
+                                    linkMeta: u,
                                     applyBuildOverride: o,
                                     clearBuildOverride: c,
                                     submitting: f
                                 } = e,
-                                v = (0, h.default)(s, ["discord_web"]);
+                                v = (0, C.default)(u, ["discord_web"]);
                             if (!v.valid) return function(e) {
                                 return p({
-                                    subHead: C.default.Messages.BUILD_OVERRIDE_ISNT_AVAILABLE,
+                                    subHead: E.default.Messages.BUILD_OVERRIDE_ISNT_AVAILABLE,
                                     buttonColor: d.Button.Colors.TRANSPARENT,
                                     buttonText: "Invalid",
                                     buildDetails: e,
                                     disabled: !0
                                 })
                             }(v.reason);
-                            u(null != s, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
+                            s(null != u, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
                             let {
                                 discord_web: g
-                            } = s.targetBuildOverride;
-                            if (u(null != g, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web should never be null if resolved"), t = g, null == (r = a) || null == r.discord_web ? 1 : t.id !== r.discord_web.id || t.type !== r.discord_web.type) l = C.default.Messages.BUILD_OVERRIDE_APPLY, n = o, i = d.Button.Colors.GREEN;
-                            else l = C.default.Messages.BUILD_OVERRIDE_CLEAR, n = c, i = d.Button.Colors.RED;
+                            } = u.targetBuildOverride;
+                            if (s(null != g, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web should never be null if resolved"), t = g, null == (r = a) || null == r.discord_web ? 1 : t.id !== r.discord_web.id || t.type !== r.discord_web.type) l = E.default.Messages.BUILD_OVERRIDE_APPLY, n = o, i = d.Button.Colors.GREEN;
+                            else l = E.default.Messages.BUILD_OVERRIDE_CLEAR, n = c, i = d.Button.Colors.RED;
                             return p({
-                                subHead: C.default.Messages.BUILD_OVERRIDE_ID,
+                                subHead: E.default.Messages.BUILD_OVERRIDE_ID,
                                 buildDetails: g.id,
                                 buttonClick: n,
                                 buttonText: l,
@@ -484,8 +481,8 @@
                         }({
                             currentOverrides: c,
                             linkMeta: v,
-                            applyBuildOverride: D,
-                            clearBuildOverride: b,
+                            applyBuildOverride: b,
+                            clearBuildOverride: D,
                             submitting: O
                         })]
                     })]
@@ -503,8 +500,8 @@
                 l = r("884691"),
                 i = r("446674"),
                 a = r("960460"),
-                s = r("489740"),
-                u = r("451540"),
+                u = r("489740"),
+                s = r("451540"),
                 d = r("425916");
             async function o(e) {
                 let t = await (0, a.applyPublicBuildOverride)(e);
@@ -517,15 +514,15 @@
             var f = l.memo(function(e) {
                 let {
                     url: t
-                } = e, r = (0, i.useStateFromStoresObject)([s.default], () => s.default.getCurrentBuildOverride()), a = (0, i.useStateFromStores)([s.default], () => s.default.getBuildOverride(t)), {
+                } = e, r = (0, i.useStateFromStoresObject)([u.default], () => u.default.getCurrentBuildOverride()), a = (0, i.useStateFromStores)([u.default], () => u.default.getBuildOverride(t)), {
                     payload: f,
                     validatedURL: v
-                } = a, g = r.state === s.State.Resolving || a.state === s.State.Resolving, h = l.useCallback(() => null == f ? Promise.reject(Error("Invalid override payload")) : ((0, d.addRecentBuildOverride)(a.override, f), o(f)), [f, a]);
-                return null != v ? (0, n.jsx)(u.default, {
+                } = a, g = r.state === u.State.Resolving || a.state === u.State.Resolving, C = l.useCallback(() => null == f ? Promise.reject(Error("Invalid override payload")) : ((0, d.addRecentBuildOverride)(a.override, f), o(f)), [f, a]);
+                return null != v ? (0, n.jsx)(s.default, {
                     loading: g,
                     linkMeta: a.override,
                     currentOverrides: r.overrides,
-                    applyBuildOverride: h,
+                    applyBuildOverride: C,
                     clearBuildOverride: c,
                     url: v
                 }) : null
@@ -558,8 +555,8 @@
                         exp: Date.parse(e.expiresAt)
                     },
                     a = i(),
-                    s = [r, ...a.filter(e => r.id !== e.id)].slice(0, 5);
-                n.default.set(l, s)
+                    u = [r, ...a.filter(e => r.id !== e.id)].slice(0, 5);
+                n.default.set(l, u)
             }
         },
         758926: function(e, t, r) {
@@ -587,16 +584,16 @@
                 l = r("884691"),
                 i = r("176309"),
                 a = r("340616"),
-                s = r("355025"),
-                u = r("198700"),
+                u = r("355025"),
+                s = r("198700"),
                 d = r("128259"),
                 o = r("758926");
 
             function c(e) {
                 return {
                     react(t, r, c) {
-                        if (e.enableBuildOverrides && (0, s.isBuildOverrideLink)(t.target)) return (0, n.jsx)(l.Fragment, {
-                            children: (0, n.jsx)(u.default, {
+                        if (e.enableBuildOverrides && (0, u.isBuildOverrideLink)(t.target)) return (0, n.jsx)(l.Fragment, {
+                            children: (0, n.jsx)(s.default, {
                                 url: t.target
                             }, t.target)
                         }, c.key);
@@ -633,7 +630,7 @@
             "use strict";
             r.r(t), r.d(t, {
                 default: function() {
-                    return s
+                    return u
                 }
             });
             var n = r("37983");
@@ -641,16 +638,16 @@
             var l = r("469563"),
                 i = r("225389"),
                 a = r("75196"),
-                s = (0, l.replaceIcon)(function(e) {
+                u = (0, l.replaceIcon)(function(e) {
                     let {
                         width: t = 16,
                         height: r = 16,
                         color: l = "currentColor",
                         foreground: i,
-                        ...s
+                        ...u
                     } = e;
                     return (0, n.jsx)("svg", {
-                        ...(0, a.default)(s),
+                        ...(0, a.default)(u),
                         width: t,
                         height: r,
                         viewBox: "0 0 12 12",
@@ -789,7 +786,7 @@
             "use strict";
             r.r(t), r.d(t, {
                 default: function() {
-                    return s
+                    return u
                 }
             });
             var n = r("132710"),
@@ -803,7 +800,7 @@
                     ...n
                 }), a = (0, i.flattenAst)(a), a = (0, i.constrainAst)(a), null != l && (a = l(a, r)), a
             }
-            var s = {
+            var u = {
                 reactParserFor(e) {
                     let t = l.parserFor(e),
                         r = l.reactFor(l.ruleOutput(e, "react"));
@@ -829,4 +826,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7297849048ddd74b7f4f.js.map
+//# sourceMappingURL=92ff822b2b81febf7b4a.js.map

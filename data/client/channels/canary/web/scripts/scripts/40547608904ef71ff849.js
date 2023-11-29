@@ -21,24 +21,24 @@
                 } = e;
                 return (0, r.jsxs)("svg", {
                     ...(0, a.default)(l),
-                    xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: i,
-                    fill: "none",
                     viewBox: "0 0 24 24",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
                     children: [(0, r.jsx)("path", {
+                        d: "M9 12C9.55228 12 10 12.4477 10 13V15C10 15.5523 9.55228 16 9 16C8.44772 16 8 15.5523 8 15V13C8 12.4477 8.44772 12 9 12Z",
                         fill: "string" == typeof u ? u : u.css,
-                        d: "M9 12a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Z",
                         className: s
                     }), (0, r.jsx)("path", {
-                        fill: "string" == typeof u ? u : u.css,
                         fillRule: "evenodd",
-                        d: "M2.75 3.015A2.995 2.995 0 0 1 5 2h10a3 3 0 0 1 3 3v7.645c0 .432-.547.694-.952.543a3 3 0 0 0-3.17 4.933l.026.025a.5.5 0 0 1-.354.854h-.05a.5.5 0 0 0-.5.5c0 1.887-2.011 3.094-3.677 2.206L3.53 18.614A3 3 0 0 1 2 16V5c.001-.76.285-1.456.751-1.985Zm1.301 1.951A.037.037 0 0 0 4 5v11a1 1 0 0 0 .488.86l5.777 3.08A.5.5 0 0 0 11 19.5V8.024a.5.5 0 0 0-.318-.466L4.051 4.966Z",
                         clipRule: "evenodd",
+                        d: "M2.75026 3.01535C3.29851 2.3942 4.10384 2 5 2H15C16.6569 2 18 3.34315 18 5V12.6445C18 13.0769 17.4528 13.3388 17.0476 13.1881C15.9816 12.7917 14.7355 13.0219 13.8787 13.8787C12.7071 15.0503 12.7071 16.9497 13.8787 18.1213L13.9038 18.1464C14.2188 18.4614 13.9957 19 13.5503 19H13.4998C13.2237 19 13 19.2237 13 19.4998C13 21.3872 10.9886 22.5939 9.32334 21.7055L3.52933 18.6147C3.51922 18.6094 3.5092 18.6038 3.49927 18.598C2.60518 18.0808 2 17.1117 2 16V5C2 4.23985 2.28402 3.5436 2.75026 3.01535ZM4.05096 4.96617C4.02656 4.95663 4 4.9738 4 5V16C4 16.3638 4.19381 16.6836 4.48843 16.8596L10.2647 19.9409C10.5977 20.1186 11 19.8772 11 19.4998V8.02415C11 7.81827 10.8738 7.63343 10.682 7.55847L4.05096 4.96617Z",
+                        fill: "string" == typeof u ? u : u.css,
                         className: s
                     }), (0, r.jsx)("path", {
+                        d: "M15.2934 16.7076C14.9029 16.3171 14.9024 15.6834 15.2929 15.2929C15.6834 14.9024 16.3166 14.9024 16.7071 15.2929L21 19.5858V16C21 15.4477 21.4477 15 22 15C22.5523 15 23 15.4477 23 16V22C23 22.5523 22.5523 23 22 23H16C15.4477 23 15 22.5523 15 22C15 21.4477 15.4477 21 16 21H19.5858L15.2934 16.7076Z",
                         fill: "string" == typeof u ? u : u.css,
-                        d: "M15.293 16.708a1 1 0 0 1 1.414-1.415L21 19.586V16a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.586l-4.293-4.292Z",
                         className: s
                     })]
                 })
@@ -59,8 +59,8 @@
                 s = i("407846"),
                 l = i("654017"),
                 o = i("26989"),
-                h = i("697218"),
-                d = i("490931"),
+                d = i("697218"),
+                h = i("490931"),
                 m = i("159132");
             let c = Date.now();
 
@@ -95,7 +95,7 @@
                             inviterId: l,
                             integrationType: o
                         } = this._computeMemberSupplementals(e.userId, e.unusualDMActivityUntil),
-                        d = h.default.getUser(e.userId),
+                        h = d.default.getUser(e.userId),
                         m = {
                             hasUnusualDmActivity: n,
                             hasSpammerUserFlag: a,
@@ -106,7 +106,7 @@
                             ...e,
                             isCurrentGuildMemberByTimestamp: r <= this.newMemberTimestamp,
                             isIncludedInSearchResults: !1,
-                            user: d,
+                            user: h,
                             joinedAtTimestamp: r,
                             ...t
                         };
@@ -129,7 +129,7 @@
                         hasUnusualDmActivity: function(e) {
                             if (null == e) return !1;
                             let t = new Date(e).getTime();
-                            return t >= c - d.UNUSUAL_DM_COMPARISON_DELTA
+                            return t >= c - h.UNUSUAL_DM_COMPARISON_DELTA
                         }(t),
                         hasSpammerUserFlag: (0, l.isSpammer)(e)
                     }
@@ -151,11 +151,11 @@
                             sourceInviteCode: s,
                             hasUnusualDmActivity: l,
                             hasSpammerUserFlag: o,
-                            joinSourceType: h,
-                            inviterId: d,
+                            joinSourceType: d,
+                            inviterId: h,
                             integrationType: m
                         } = this._computeMemberSupplementals(r.userId, null !== (i = n.unusualDMActivityUntil) && void 0 !== i ? i : r.unusualDMActivityUntil);
-                    for (let e in r.sourceInviteCode !== s && (n.sourceInviteCode = s), r.hasUnusualDmActivity !== l && (n.hasUnusualDmActivity = l), r.hasSpammerUserFlag !== o && (n.hasSpammerUserFlag = o), r.joinSourceType !== h && (n.joinSourceType = h), r.inviterId !== d && (n.inviterId = d), r.integrationType !== m && (n.integrationType = m), n) {
+                    for (let e in r.sourceInviteCode !== s && (n.sourceInviteCode = s), r.hasUnusualDmActivity !== l && (n.hasUnusualDmActivity = l), r.hasSpammerUserFlag !== o && (n.hasSpammerUserFlag = o), r.joinSourceType !== d && (n.joinSourceType = d), r.inviterId !== h && (n.inviterId = h), r.integrationType !== m && (n.integrationType = m), n) {
                         let t = n[e],
                             i = r[e];
                         !u(t, i) && (r[e] = t, a = !0)
@@ -428,10 +428,10 @@
                     return o
                 },
                 createDefaultMemberSafetyPaginationState: function() {
-                    return h
+                    return d
                 },
                 GuildMemberSafetyPagination: function() {
-                    return d
+                    return h
                 }
             }), i("808653"), i("424973"), i("222007");
             var r, n, a = i("525065"),
@@ -440,16 +440,16 @@
             let l = 250,
                 o = [12, 25, 50, 100];
 
-            function h() {
+            function d() {
                 return {
                     pageSize: o[0],
                     currentPage: 1,
                     continuationToken: null
                 }
             }(n = r || (r = {}))[n.FORWARD = 1] = "FORWARD", n[n.BACKWARD = -1] = "BACKWARD";
-            class d {
+            class h {
                 reset() {
-                    this._paginationState = h(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
+                    this._paginationState = d(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
                 }
                 _initPaginationFromRawMembers(e) {
                     let t = [],
@@ -470,10 +470,10 @@
                         s = this._sortedMemberIds[u],
                         l = Math.min(this.searchChunkSize, u);
                     let o = null != (r = e).totalResultsCount ? r.totalResultsCount : r.currentPage * r.pageSize,
-                        h = null !== (i = this._sortedMemberIds[o - 1]) && void 0 !== i ? i : s;
-                    if (null == this._paginationState.continuationToken) return o < l ? this._paginationState.continuationToken : h;
-                    let d = this._sortedMemberIds.findIndex(e => e === this._paginationState.continuationToken);
-                    return -1 === d ? h : o > n ? s : d - o >= 0 ? this._paginationState.continuationToken : Math.ceil(o / l) > Math.ceil(d / l) ? h : this._paginationState.continuationToken
+                        d = null !== (i = this._sortedMemberIds[o - 1]) && void 0 !== i ? i : s;
+                    if (null == this._paginationState.continuationToken) return o < l ? this._paginationState.continuationToken : d;
+                    let h = this._sortedMemberIds.findIndex(e => e === this._paginationState.continuationToken);
+                    return -1 === h ? d : o > n ? s : h - o >= 0 ? this._paginationState.continuationToken : Math.ceil(o / l) > Math.ceil(h / l) ? d : this._paginationState.continuationToken
                 }
                 getPaginationState() {
                     return this._paginationState
@@ -543,7 +543,7 @@
                     this.searchChunkSize = l, this._reduceMemberIdsToPaginationChunks = (e, t, i) => {
                         let r = Math.floor(i / this._paginationState.pageSize) + 1;
                         return null == e[r] && (e[r] = []), e[r].push(t), e
-                    }, this.guildId = e, this._paginationState = h(), this._version = 0;
+                    }, this.guildId = e, this._paginationState = d(), this._version = 0;
                     let [i, r] = this._initPaginationFromRawMembers(t);
                     this._sortedMemberIds = i, this._cachedPaginationChunks = r, this._version += 1
                 }
@@ -574,9 +574,9 @@
                     selectedRoleIds: new Set
                 }
             }
-            let h = Object.freeze(o());
+            let d = Object.freeze(o());
 
-            function d(e, t) {
+            function h(e, t) {
                 return null != e && (!!(e.toLowerCase().includes(t.toLowerCase()) || n(e.toLowerCase(), t.toLowerCase())) || !1)
             }
             class m {
@@ -590,7 +590,7 @@
                     return this._searchState = {
                         ...this._searchState,
                         ...e
-                    }, this.hasDefaultQuery = u(this._searchState, h), !0
+                    }, this.hasDefaultQuery = u(this._searchState, d), !0
                 }
                 resetSearchState() {
                     return !this.hasDefaultQuery && (this._searchState = o(), this.hasDefaultQuery = !0, !0)
@@ -611,16 +611,16 @@
                             for (let t of r)
                                 if (e.userId === t) return !0;
                             for (let t of i)
-                                if (d(e.nick, t)) return !0;
+                                if (h(e.nick, t)) return !0;
                             if (null == e.user) return !1;
                             let {
                                 globalName: n,
                                 username: a
                             } = e.user;
                             for (let e of i)
-                                if (d(a, e)) return !0;
+                                if (h(a, e)) return !0;
                             for (let e of i)
-                                if (d(n, e)) return !0;
+                                if (h(n, e)) return !0;
                             return !1
                         }(e, t)) return !1;
                     if (n.size > 0) {
@@ -688,14 +688,14 @@
                 s = i("305961"),
                 l = i("697218"),
                 o = i("449008"),
-                h = i("637240"),
-                d = i("159132"),
+                d = i("637240"),
+                h = i("159132"),
                 m = i("835257");
             let c = !1,
                 _ = {};
 
             function M(e) {
-                return null == _[e] && (_[e] = new h.GuildMemberSafetyPageStore(e)), _[e]
+                return null == _[e] && (_[e] = new d.GuildMemberSafetyPageStore(e)), _[e]
             }
 
             function f(e) {
@@ -985,7 +985,7 @@
                     let {
                         guildId: t,
                         memberSupplementals: i
-                    } = e, r = (0, d.syncMemberSupplemental)(t, i);
+                    } = e, r = (0, h.syncMemberSupplemental)(t, i);
                     if (r) {
                         let e = M(t);
                         e.updateMembersByMemberIds(i.map(e => e.userId))
@@ -1016,7 +1016,7 @@
                     }, {
                         memberIds: [],
                         memberSupplementals: []
-                    }), s = (0, d.syncMemberSupplemental)(t, u);
+                    }), s = (0, h.syncMemberSupplemental)(t, u);
                     (0, m.registerFetchedSupplementals)(t, a);
                     let l = n.updateSearchedMembersByMemberIds(a),
                         [o] = n.updatePaginationState({
@@ -1059,46 +1059,46 @@
                 s = i("536999"),
                 l = i("466818"),
                 o = i("95429"),
-                h = i("447038"),
-                d = i("49111"),
+                d = i("447038"),
+                h = i("49111"),
                 m = i("724210");
             async function c(e) {
                 let t = (0, s.isInMembersSearchV2Experiment)(e, {
                     autoTrackExposure: !0,
                     location: r.default.MEMBER_SAFETY_PAGE
                 });
-                return t ? await (0, h.initializeMemberSafetyStoreV2)(e) : await (0, o.initializeMemberSafetyStoreV1)(e)
+                return t ? await (0, d.initializeMemberSafetyStoreV2)(e) : await (0, o.initializeMemberSafetyStoreV1)(e)
             }
 
             function _(e) {
                 let t = (0, s.isInMembersSearchV2Experiment)(e);
-                return t ? (0, h.refreshMemberSafetyTimestampV2)(e) : (0, o.refreshMemberSafetyTimestampV1)(e)
+                return t ? (0, d.refreshMemberSafetyTimestampV2)(e) : (0, o.refreshMemberSafetyTimestampV1)(e)
             }
 
             function M(e, t) {
                 let i = (0, s.isInMembersSearchV2Experiment)(e);
-                return i ? (0, h.updateMemberSafetyTablePaginationV2)(e, t) : (0, o.updateMemberSafetyTablePaginationV1)(e, t)
+                return i ? (0, d.updateMemberSafetyTablePaginationV2)(e, t) : (0, o.updateMemberSafetyTablePaginationV1)(e, t)
             }
 
             function f(e, t) {
                 let i = (0, s.isInMembersSearchV2Experiment)(e);
-                return i ? (0, h.requestNewPaginationChunkV2)(e, t) : (0, o.requestNewPaginationChunkV1)(e, t)
+                return i ? (0, d.requestNewPaginationChunkV2)(e, t) : (0, o.requestNewPaginationChunkV1)(e, t)
             }
 
             function S(e, t) {
                 let i = (0, s.isInMembersSearchV2Experiment)(e);
-                return i ? (0, h.updateSearchStateV2)(e, t) : (0, o.updateSearchStateV1)(e, t)
+                return i ? (0, d.updateSearchStateV2)(e, t) : (0, o.updateSearchStateV1)(e, t)
             }
 
             function p(e, t) {
                 let i = (0, s.isInMembersSearchV2Experiment)(e);
-                return i ? (0, h.getMemberSupplementalV2)(e, t) : (0, o.getMemberSupplementalV1)(e, t)
+                return i ? (0, d.getMemberSupplementalV2)(e, t) : (0, o.getMemberSupplementalV1)(e, t)
             }
 
             function b(e) {
                 let t = (0, l.canAccessMemberSafetyPage)(e),
                     i = u.default.getGuild(e);
-                return !!t && null != i && (i.hasFeature(d.GuildFeatures.COMMUNITY) || i.hasFeature(d.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? ((0, a.transitionTo)(d.Routes.CHANNEL(e, m.StaticChannelRoute.MEMBER_SAFETY)), !0) : (n.default.open(i.id, d.GuildSettingsSections.MEMBERS), !0))
+                return !!t && null != i && (i.hasFeature(h.GuildFeatures.COMMUNITY) || i.hasFeature(h.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? ((0, a.transitionTo)(h.Routes.CHANNEL(e, m.StaticChannelRoute.MEMBER_SAFETY)), !0) : (n.default.open(i.id, h.GuildSettingsSections.MEMBERS), !0))
             }
         },
         95429: function(e, t, i) {
@@ -1111,10 +1111,10 @@
                     return o
                 },
                 updateMemberSafetyTablePaginationV1: function() {
-                    return h
+                    return d
                 },
                 requestNewPaginationChunkV1: function() {
-                    return d
+                    return h
                 },
                 updateSearchStateV1: function() {
                     return m
@@ -1149,7 +1149,7 @@
                 })
             }
 
-            function h(e, t) {
+            function d(e, t) {
                 let {
                     continuationToken: i,
                     ...n
@@ -1160,7 +1160,7 @@
                     pagination: n
                 })
             }
-            async function d(e, t) {
+            async function h(e, t) {
                 var i, a;
                 let {
                     query: u,
@@ -1204,10 +1204,10 @@
                     return o
                 },
                 requestNewPaginationChunkV2: function() {
-                    return h
+                    return d
                 },
                 updateSearchStateV2: function() {
-                    return d
+                    return h
                 },
                 getMemberSupplementalV2: function() {
                     return m
@@ -1247,7 +1247,7 @@
                     pagination: r
                 })
             }
-            async function h(e, t) {
+            async function d(e, t) {
                 var i, r;
                 let {
                     continuationToken: a
@@ -1264,7 +1264,7 @@
                     continuationToken: r
                 }), await Promise.resolve()
             }
-            async function d(e, t) {
+            async function h(e, t) {
                 u.info("JANK updateSearchStateV2", {
                     guildId: e,
                     searchState: t
@@ -1304,15 +1304,15 @@
                 if (0 === t.length) return !1;
                 let i = a(e);
                 return t.forEach(e => {
-                    var t, n, a, u, s, l, o, h;
-                    let d = i[e.userId],
-                        m = null !== (n = null !== (t = e.joinSourceType) && void 0 !== t ? t : null == d ? void 0 : d.joinSourceType) && void 0 !== n ? n : null;
+                    var t, n, a, u, s, l, o, d;
+                    let h = i[e.userId],
+                        m = null !== (n = null !== (t = e.joinSourceType) && void 0 !== t ? t : null == h ? void 0 : h.joinSourceType) && void 0 !== n ? n : null;
                     (null == m || m === r.JoinSourceType.UNSPECIFIED) && null != e.sourceInviteCode && (m = r.JoinSourceType.INVITE), i[e.userId] = {
                         userId: e.userId,
-                        sourceInviteCode: null !== (u = null !== (a = e.sourceInviteCode) && void 0 !== a ? a : null == d ? void 0 : d.sourceInviteCode) && void 0 !== u ? u : null,
+                        sourceInviteCode: null !== (u = null !== (a = e.sourceInviteCode) && void 0 !== a ? a : null == h ? void 0 : h.sourceInviteCode) && void 0 !== u ? u : null,
                         joinSourceType: m,
-                        inviterId: null !== (l = null !== (s = e.inviterId) && void 0 !== s ? s : null == d ? void 0 : d.inviterId) && void 0 !== l ? l : null,
-                        integrationType: null !== (h = null !== (o = e.integrationType) && void 0 !== o ? o : null == d ? void 0 : d.integrationType) && void 0 !== h ? h : null
+                        inviterId: null !== (l = null !== (s = e.inviterId) && void 0 !== s ? s : null == h ? void 0 : h.inviterId) && void 0 !== l ? l : null,
+                        integrationType: null !== (d = null !== (o = e.integrationType) && void 0 !== o ? o : null == h ? void 0 : h.integrationType) && void 0 !== d ? d : null
                     }
                 }), !0
             }
@@ -1334,16 +1334,16 @@
                 }
             });
             var r, n, a, u, s, l, o = i("872717"),
-                h = i("49111");
+                d = i("49111");
             (r = u || (u = {}))[r.FAILED = 0] = "FAILED", r[r.UNFETCHED = 1] = "UNFETCHED", r[r.PENDING = 2] = "PENDING", r[r.SUCCEEDED = 3] = "SUCCEEDED", (n = s || (s = {}))[n.UNSPECIFIED = 0] = "UNSPECIFIED", n[n.BOT = 1] = "BOT", n[n.INTEGRATION = 2] = "INTEGRATION", n[n.DISCOVERY = 3] = "DISCOVERY", n[n.HUB = 4] = "HUB", n[n.INVITE = 5] = "INVITE", n[n.VANITY_URL = 6] = "VANITY_URL", (a = l || (l = {})).DISCORD = "discord", a.TWITCH = "twitch", a.YOUTUBE = "youtube", a.GUILD_SUBSCRIPTION = "guild_subscription";
-            let d = {};
+            let h = {};
 
             function m(e, t) {
                 return e + t
             }
 
             function c(e, t, i) {
-                d[e + t] = i
+                h[e + t] = i
             }
 
             function _(e, t) {
@@ -1362,13 +1362,13 @@
             async function f(e, t) {
                 let i = t.filter(t => 1 >= function(e, t) {
                     let i = e + t;
-                    return null == d[i] && (d[i] = 1), d[i]
+                    return null == h[i] && (h[i] = 1), h[i]
                 }(e, t));
                 if (0 === i.length) return [];
                 i.forEach(t => c(e, t, 2));
                 try {
                     let t = await o.default.post({
-                        url: h.Endpoints.MEMBER_SAFETY_SUPPLEMENTAL(e),
+                        url: d.Endpoints.MEMBER_SAFETY_SUPPLEMENTAL(e),
                         body: {
                             user_ids: i
                         }
@@ -1402,4 +1402,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d4a9b50354120eb527b3.js.map
+//# sourceMappingURL=40547608904ef71ff849.js.map
