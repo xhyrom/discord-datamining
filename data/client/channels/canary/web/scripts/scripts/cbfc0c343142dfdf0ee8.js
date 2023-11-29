@@ -1,51 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["45346"], {
-        811513: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                GroupIcon: function() {
-                    return u
-                }
-            });
-            var r = n("37983");
-            n("884691");
-            var l = n("669491"),
-                a = n("75196");
-            let u = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: u = l.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: o = "",
-                    ...s
-                } = e;
-                return (0, r.jsxs)("svg", {
-                    ...(0, a.default)(s),
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 24 24",
-                    fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    children: [(0, r.jsx)("path", {
-                        d: "M14.5 8C16.1569 8 17.5 6.65685 17.5 5C17.5 3.34315 16.1569 2 14.5 2C13.3114 2 12.2843 2.69119 11.7986 3.69355C11.5972 4.10932 11.8557 4.56448 12.2419 4.81816C13.3081 5.51868 14.0904 6.61601 14.3786 7.90013C14.3915 7.95754 14.4412 8 14.5 8Z",
-                        fill: "string" == typeof u ? u : u.css,
-                        className: o
-                    }), (0, r.jsx)("path", {
-                        d: "M18.4373 17.2714C18.5906 17.6957 18.9807 18 19.4319 18H20.5C21.3284 18 22 17.3284 22 16.5C22 12.6961 19.1681 9.55362 15.4976 9.06577C14.9501 8.993 14.5104 9.45209 14.4013 9.99348C14.3406 10.2944 14.253 10.5855 14.1409 10.8641C13.9082 11.4429 14.0871 12.1554 14.6125 12.4916C16.3621 13.6108 17.7205 15.2876 18.4373 17.2714Z",
-                        fill: "string" == typeof u ? u : u.css,
-                        className: o
-                    }), (0, r.jsx)("path", {
-                        d: "M12.5 9C12.5 10.6569 11.1569 12 9.5 12C7.84315 12 6.5 10.6569 6.5 9C6.5 7.34315 7.84315 6 9.5 6C11.1569 6 12.5 7.34315 12.5 9Z",
-                        fill: "string" == typeof u ? u : u.css,
-                        className: o
-                    }), (0, r.jsx)("path", {
-                        d: "M2 20.5C2 16.3579 5.35786 13 9.5 13C13.6421 13 17 16.3579 17 20.5C17 21.3284 16.3284 22 15.5 22C15.4055 22 15.3242 21.9334 15.3038 21.841C15.0908 20.8768 14.7383 19.9711 14.42 19.2977C14.3117 19.0685 14 19.149 14 19.4026V21.5C14 21.7761 13.7761 22 13.5 22H5.5C5.22386 22 5 21.7761 5 21.5V19.4026C5 19.149 4.6883 19.0685 4.57996 19.2977C4.26174 19.9711 3.90923 20.8768 3.69619 21.841C3.6758 21.9334 3.59454 22 3.5 22C2.67157 22 2 21.3284 2 20.5Z",
-                        fill: "string" == typeof u ? u : u.css,
-                        className: o
-                    })]
-                })
-            }
-        },
+    ["59459"], {
         304983: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -63,10 +17,10 @@
                     height: n = 24,
                     color: u = l.default.colors.INTERACTIVE_NORMAL,
                     colorClass: o = "",
-                    ...s
+                    ...i
                 } = e;
                 return (0, r.jsx)("svg", {
-                    ...(0, a.default)(s),
+                    ...(0, a.default)(i),
                     width: t,
                     height: n,
                     viewBox: "0 0 24 24",
@@ -115,27 +69,6 @@
                 }]
             })
         },
-        206625: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return l
-                }
-            });
-            var r = n("884691");
-
-            function l(e, t) {
-                let n = r.useRef(e);
-                return r.useEffect(() => {
-                    function e(e) {
-                        null != n.current && !n.current.contains(e.target) && t()
-                    }
-                    return document.addEventListener("mousedown", e), () => {
-                        document.removeEventListener("mousedown", e)
-                    }
-                }, [n, t]), n
-            }
-        },
         76385: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -143,10 +76,10 @@
                     return l
                 },
                 Token: function() {
-                    return s
+                    return i
                 },
                 default: function() {
-                    return i
+                    return s
                 }
             }), n("222007"), n("702976"), n("424973");
             let r = /.+/g,
@@ -162,8 +95,8 @@
                         let {
                             cache: e
                         } = a;
-                        if (null != e && null != (l = e.get(o[0])) && ((l = new s(l)).start = o.index), null == l) {
-                            if (l = new s(o, a.type), null != a.validator && !a.validator(l)) continue;
+                        if (null != e && null != (l = e.get(o[0])) && ((l = new i(l)).start = o.index), null == l) {
+                            if (l = new i(o, a.type), null != a.validator && !a.validator(l)) continue;
                             null != e && !(null == e ? void 0 : e.has(o[0])) && e.set(o[0], l)
                         }
                         return l
@@ -215,9 +148,9 @@
                         o = [];
                     for (; n.length > 0;) {
                         let e = this._getMatch(n, t, a + l.length);
-                        null != e ? (null != l && "" !== l && o.push(new s(u(l.match(r), a), this._nonTokenType)), t = e, o.push(e), a += t.length + l.length, n = n.substring(t.length), l = "") : (l += n[0], n = n.substring(1))
+                        null != e ? (null != l && "" !== l && o.push(new i(u(l.match(r), a), this._nonTokenType)), t = e, o.push(e), a += t.length + l.length, n = n.substring(t.length), l = "") : (l += n[0], n = n.substring(1))
                     }
-                    return null != l && "" !== l && o.push(new s(u(l.match(r), a), this._nonTokenType)), o
+                    return null != l && "" !== l && o.push(new i(u(l.match(r), a), this._nonTokenType)), o
                 }
                 clearCache() {
                     for (let e in this._rules.forEach(e => {
@@ -240,7 +173,7 @@
                     this._rules = [], this._followers = {}, this._nonTokenType = l, this.reset(t), e.forEach(e => this.addRule(e))
                 }
             }
-            class s {
+            class i {
                 get end() {
                     return this.start + this.length
                 }
@@ -264,30 +197,30 @@
                     if (null != this._data) return this._data.get(e)
                 }
                 constructor(e, t) {
-                    if (e instanceof s) this.match = [...e.match], this.start = e.start, this.type = e.type, null != e._data && (this._data = e._data);
+                    if (e instanceof i) this.match = [...e.match], this.start = e.start, this.type = e.type, null != e._data && (this._data = e._data);
                     else if (null != e) {
                         var n;
                         this.match = [...e], this.start = "string" == typeof e ? 0 : null !== (n = e.index) && void 0 !== n ? n : 0, this.type = t
                     } else this.match = [], this.start = 0, this.type = t
                 }
             }
-            o.NON_TOKEN_TYPE = l, o.Token = s;
-            var i = o
+            o.NON_TOKEN_TYPE = l, o.Token = i;
+            var s = o
         },
         955513: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 getRandomDateShortcut: function() {
-                    return G
+                    return W
                 },
                 ComponentTypes: function() {
                     return r
                 },
                 refreshSearchTokens: function() {
-                    return Z
+                    return V
                 },
                 getFilterAutocompletions: function() {
-                    return Y
+                    return X
                 },
                 default: function() {
                     return z
@@ -296,21 +229,21 @@
             var r, l, a = n("448105"),
                 u = n.n(a),
                 o = n("917351"),
-                s = n.n(o),
-                i = n("866227"),
-                c = n.n(i),
+                i = n.n(o),
+                s = n("866227"),
+                c = n.n(s),
                 d = n("923959"),
                 E = n("27618"),
-                f = n("744983"),
-                _ = n("18494"),
-                h = n("162771"),
-                T = n("102985"),
-                S = n("697218"),
-                p = n("25292"),
-                R = n("655518"),
-                g = n("158998"),
-                A = n("49111"),
-                C = n("782340");
+                _ = n("744983"),
+                f = n("18494"),
+                T = n("162771"),
+                S = n("102985"),
+                h = n("697218"),
+                R = n("25292"),
+                p = n("655518"),
+                A = n("158998"),
+                g = n("49111"),
+                N = n("782340");
 
             function I() {
                 return new Set(c.months().map(e => e.toLowerCase()))
@@ -320,9 +253,9 @@
                 return new Set(c.weekdays().map(e => e.toLowerCase()))
             }
 
-            function N() {
+            function C() {
                 let e = new Date().getFullYear();
-                return new Set(s.range(2015, e + 1).map(e => e.toString()))
+                return new Set(i.range(2015, e + 1).map(e => e.toString()))
             }
 
             function y(e, t) {
@@ -335,18 +268,18 @@
                 return y(n, e)
             }
 
-            function v(e, t, n) {
+            function L(e, t, n) {
                 let r = c(e, t).local();
                 return y(r, n)
             }
 
-            function L() {
+            function v() {
                 return {
-                    [C.default.Messages.SEARCH_SHORTCUT_TODAY]: () => M("day"),
-                    [C.default.Messages.SEARCH_SHORTCUT_YESTERDAY]: () => M("day", -1),
-                    [C.default.Messages.SEARCH_SHORTCUT_WEEK]: () => M("week"),
-                    [C.default.Messages.SEARCH_SHORTCUT_MONTH]: () => M("month"),
-                    [C.default.Messages.SEARCH_SHORTCUT_YEAR]: () => M("year")
+                    [N.default.Messages.SEARCH_SHORTCUT_TODAY]: () => M("day"),
+                    [N.default.Messages.SEARCH_SHORTCUT_YESTERDAY]: () => M("day", -1),
+                    [N.default.Messages.SEARCH_SHORTCUT_WEEK]: () => M("week"),
+                    [N.default.Messages.SEARCH_SHORTCUT_MONTH]: () => M("month"),
+                    [N.default.Messages.SEARCH_SHORTCUT_YEAR]: () => M("year")
                 }
             }
             let F = RegExp("(?:\\s*(".concat("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", "|").concat("([0-9]{4})-([0-9]{1,2})", "|").concat("\\d{4}", "|").concat("([^\\d\\s]+)", "))"), "i"),
@@ -356,32 +289,32 @@
                 return "".concat(e, ":")
             }
 
-            function w(e) {
+            function D(e) {
                 return RegExp(O(e), "i")
             }
 
-            function D(e) {
+            function k(e) {
                 let t;
                 let n = e.getMatch(1),
                     r = e => null != e ? null == e ? void 0 : e.id : null;
-                return null != (t = A.ID_REGEX.test(n) ? n : n === A.ME ? r(S.default.getCurrentUser()) : null != e.getMatch(4) ? r(S.default.findByTag(e.getMatch(4))) : r(S.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
+                return null != (t = g.ID_REGEX.test(n) ? n : n === g.ME ? r(h.default.getCurrentUser()) : null != e.getMatch(4) ? r(h.default.findByTag(e.getMatch(4))) : r(h.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
             }
 
-            function U(e, t) {
+            function w(e, t) {
                 let n, r;
                 let l = e.getFullMatch().trim().toLowerCase(),
-                    a = L()[l];
-                null != a ? [n, r] = a() : I().has(l) ? [n, r] = v(l, "MMMM", "month") : m().has(l) ? [n, r] = v(l, "dddd", "day") : N().has(l) ? [n, r] = v(l, "YYYY", "year") : [n, r] = v(l, A.SEARCH_DATE_FORMAT, "day");
+                    a = v()[l];
+                null != a ? [n, r] = a() : I().has(l) ? [n, r] = L(l, "MMMM", "month") : m().has(l) ? [n, r] = L(l, "dddd", "day") : C().has(l) ? [n, r] = L(l, "YYYY", "year") : [n, r] = L(l, g.SEARCH_DATE_FORMAT, "day");
                 let u = n.isValid() && r.isValid();
                 return !!u && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
             }
 
-            function k(e) {
+            function U(e) {
                 let t = e.getMatch(1),
-                    n = h.default.getGuildId(),
+                    n = T.default.getGuildId(),
                     r = d.default.getChannels(n)[d.GUILD_SELECTABLE_CHANNELS_KEY].concat(d.default.getChannels(n)[d.GUILD_VOCAL_CHANNELS_KEY]),
                     l = d.default.getTextChannelNameDisambiguations(n),
-                    a = s.chain(r).map(e => {
+                    a = i.chain(r).map(e => {
                         let {
                             channel: t
                         } = e;
@@ -395,44 +328,44 @@
 
             function b(e) {
                 let t = {
-                    [C.default.Messages.SEARCH_ANSWER_HAS_LINK]: "link",
-                    [C.default.Messages.SEARCH_ANSWER_HAS_EMBED]: "embed",
-                    [C.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT]: "file",
-                    [C.default.Messages.SEARCH_ANSWER_HAS_VIDEO]: "video",
-                    [C.default.Messages.SEARCH_ANSWER_HAS_IMAGE]: "image",
-                    [C.default.Messages.SEARCH_ANSWER_HAS_SOUND]: "sound",
-                    [C.default.Messages.SEARCH_ANSWER_HAS_STICKER]: "sticker"
+                    [N.default.Messages.SEARCH_ANSWER_HAS_LINK]: "link",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_EMBED]: "embed",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT]: "file",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_VIDEO]: "video",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_IMAGE]: "image",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_SOUND]: "sound",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_STICKER]: "sticker"
                 } [e.getMatch(1)];
                 return null != t && "" !== t && (e.setData("has", t), !0)
             }
 
-            function x() {
-                return [...Array.from(I()), ...Array.from(m()), ...Array.from(N()), ...Object.keys(L())]
+            function G() {
+                return [...Array.from(I()), ...Array.from(m()), ...Array.from(C()), ...Object.keys(v())]
             }
 
-            function G() {
-                return s.sample(x())
+            function W() {
+                return i.sample(G())
             }
 
             function P(e, t, n) {
-                return W(e, t, x()).map(e => ({
+                return x(e, t, G()).map(e => ({
                     ...e,
                     group: n,
                     key: "".concat(n, "-").concat(e.text)
                 }))
             }
 
-            function W(e, t, n) {
+            function x(e, t, n) {
                 let r = e.toLocaleLowerCase();
-                return s(n).filter(e => u(r, e.toLocaleLowerCase())).take(t).map(e => ({
+                return i(n).filter(e => u(r, e.toLocaleLowerCase())).take(t).map(e => ({
                     text: e
                 })).value()
             }
 
-            function j(e, t) {
+            function K(e, t) {
                 let n, r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 10,
                     l = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-                    a = f.default.getSearchType(t);
+                    a = _.default.getSearchType(t);
                 e = e.split("#")[0];
                 let u = {
                     query: e,
@@ -440,20 +373,20 @@
                     request: l
                 };
                 switch (a) {
-                    case A.SearchTypes.GUILD:
-                        n = p.default.queryGuildUsers({
+                    case g.SearchTypes.GUILD:
+                        n = R.default.queryGuildUsers({
                             ...u,
                             guildId: t
                         });
                         break;
-                    case A.SearchTypes.CHANNEL:
-                        n = p.default.queryChannelUsers({
+                    case g.SearchTypes.CHANNEL:
+                        n = R.default.queryChannelUsers({
                             ...u,
                             channelId: t
                         });
                         break;
-                    case A.SearchTypes.DMS:
-                        n = p.default.queryUsers(e, r, !0, l, () => !0);
+                    case g.SearchTypes.DMS:
+                        n = R.default.queryUsers(e, r, !0, l, () => !0);
                         break;
                     default:
                         return []
@@ -468,146 +401,146 @@
                         record: t
                     } = e;
                     return {
-                        text: g.default.getUserTag(t),
+                        text: A.default.getUserTag(t),
                         user: t
                     }
                 })
             }
 
-            function K() {
-                return f.default.getSearchType() === A.SearchTypes.GUILD
-            }
-
             function B() {
-                return !T.default.hidePersonalInformation
+                return _.default.getSearchType() === g.SearchTypes.GUILD
             }
-            let V = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
-            (l = r || (r = {})).FILTER = "FILTER", l.ANSWER = "ANSWER";
-            let q = {};
 
-            function Z() {
-                Object.assign(q, function() {
-                    let e = [C.default.Messages.SEARCH_ANSWER_HAS_LINK, C.default.Messages.SEARCH_ANSWER_HAS_EMBED, C.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT, C.default.Messages.SEARCH_ANSWER_HAS_VIDEO, C.default.Messages.SEARCH_ANSWER_HAS_IMAGE, C.default.Messages.SEARCH_ANSWER_HAS_SOUND, C.default.Messages.SEARCH_ANSWER_HAS_STICKER];
+            function j() {
+                return !S.default.hidePersonalInformation
+            }
+            let q = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
+            (l = r || (r = {})).FILTER = "FILTER", l.ANSWER = "ANSWER";
+            let Y = {};
+
+            function V() {
+                Object.assign(Y, function() {
+                    let e = [N.default.Messages.SEARCH_ANSWER_HAS_LINK, N.default.Messages.SEARCH_ANSWER_HAS_EMBED, N.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT, N.default.Messages.SEARCH_ANSWER_HAS_VIDEO, N.default.Messages.SEARCH_ANSWER_HAS_IMAGE, N.default.Messages.SEARCH_ANSWER_HAS_SOUND, N.default.Messages.SEARCH_ANSWER_HAS_STICKER];
                     return {
-                        [A.SearchTokenTypes.FILTER_FROM]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_FROM),
+                        [g.SearchTokenTypes.FILTER_FROM]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_FROM),
                             componentType: "FILTER",
-                            key: O(C.default.Messages.SEARCH_FILTER_FROM),
-                            validator: B,
-                            getAutocompletions: j
+                            key: O(N.default.Messages.SEARCH_FILTER_FROM),
+                            validator: j,
+                            getAutocompletions: K
                         },
-                        [A.SearchTokenTypes.ANSWER_USERNAME_FROM]: {
-                            follows: [A.SearchTokenTypes.FILTER_FROM],
-                            regex: V,
-                            validator: D,
+                        [g.SearchTokenTypes.ANSWER_USERNAME_FROM]: {
+                            follows: [g.SearchTokenTypes.FILTER_FROM],
+                            regex: q,
+                            validator: k,
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "author_id"
                         },
-                        [A.SearchTokenTypes.FILTER_MENTIONS]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_MENTIONS),
+                        [g.SearchTokenTypes.FILTER_MENTIONS]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_MENTIONS),
                             componentType: "FILTER",
-                            key: O(C.default.Messages.SEARCH_FILTER_MENTIONS),
-                            validator: B,
-                            getAutocompletions: j
+                            key: O(N.default.Messages.SEARCH_FILTER_MENTIONS),
+                            validator: j,
+                            getAutocompletions: K
                         },
-                        [A.SearchTokenTypes.ANSWER_USERNAME_MENTIONS]: {
-                            follows: [A.SearchTokenTypes.FILTER_MENTIONS],
-                            regex: V,
-                            validator: D,
+                        [g.SearchTokenTypes.ANSWER_USERNAME_MENTIONS]: {
+                            follows: [g.SearchTokenTypes.FILTER_MENTIONS],
+                            regex: q,
+                            validator: k,
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "mentions"
                         },
-                        [A.SearchTokenTypes.FILTER_HAS]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_HAS),
+                        [g.SearchTokenTypes.FILTER_HAS]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_HAS),
                             componentType: "FILTER",
-                            key: O(C.default.Messages.SEARCH_FILTER_HAS),
-                            getAutocompletions: (t, n, r) => W(t, r, e)
+                            key: O(N.default.Messages.SEARCH_FILTER_HAS),
+                            getAutocompletions: (t, n, r) => x(t, r, e)
                         },
-                        [A.SearchTokenTypes.ANSWER_HAS]: {
-                            regex: RegExp("(?:\\s*-?(".concat(e.map(e => R.default.escape(e)).join("|"), "))"), "i"),
-                            follows: [A.SearchTokenTypes.FILTER_HAS],
+                        [g.SearchTokenTypes.ANSWER_HAS]: {
+                            regex: RegExp("(?:\\s*-?(".concat(e.map(e => p.default.escape(e)).join("|"), "))"), "i"),
+                            follows: [g.SearchTokenTypes.FILTER_HAS],
                             validator: b,
                             componentType: "ANSWER",
                             queryKey: "has"
                         },
-                        [A.SearchTokenTypes.FILTER_FILE_TYPE]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_FILE_TYPE),
-                            key: O(C.default.Messages.SEARCH_FILTER_FILE_TYPE),
+                        [g.SearchTokenTypes.FILTER_FILE_TYPE]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_FILE_TYPE),
+                            key: O(N.default.Messages.SEARCH_FILTER_FILE_TYPE),
                             componentType: "FILTER"
                         },
-                        [A.SearchTokenTypes.ANSWER_FILE_TYPE]: {
+                        [g.SearchTokenTypes.ANSWER_FILE_TYPE]: {
                             regex: /(?:\s*([^\s]+))/,
-                            follows: [A.SearchTokenTypes.FILTER_FILE_TYPE],
+                            follows: [g.SearchTokenTypes.FILTER_FILE_TYPE],
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "attachment_extensions"
                         },
-                        [A.SearchTokenTypes.FILTER_FILE_NAME]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_FILE_NAME),
-                            key: O(C.default.Messages.SEARCH_FILTER_FILE_NAME),
+                        [g.SearchTokenTypes.FILTER_FILE_NAME]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_FILE_NAME),
+                            key: O(N.default.Messages.SEARCH_FILTER_FILE_NAME),
                             componentType: "FILTER"
                         },
-                        [A.SearchTokenTypes.ANSWER_FILE_NAME]: {
+                        [g.SearchTokenTypes.ANSWER_FILE_NAME]: {
                             regex: /(?:\s*([^\s]+)(?=\s))/,
-                            follows: [A.SearchTokenTypes.FILTER_FILE_NAME],
+                            follows: [g.SearchTokenTypes.FILTER_FILE_NAME],
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "attachment_filename"
                         },
-                        [A.SearchTokenTypes.FILTER_BEFORE]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_BEFORE),
+                        [g.SearchTokenTypes.FILTER_BEFORE]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_BEFORE),
                             componentType: "FILTER",
-                            key: O(C.default.Messages.SEARCH_FILTER_BEFORE),
-                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_BEFORE)
+                            key: O(N.default.Messages.SEARCH_FILTER_BEFORE),
+                            getAutocompletions: (e, t, n) => P(e, n, g.SearchTokenTypes.FILTER_BEFORE)
                         },
-                        [A.SearchTokenTypes.FILTER_ON]: {
-                            regex: w("(".concat(C.default.Messages.SEARCH_FILTER_ON, "|").concat(C.default.Messages.SEARCH_FILTER_DURING, ")")),
+                        [g.SearchTokenTypes.FILTER_ON]: {
+                            regex: D("(".concat(N.default.Messages.SEARCH_FILTER_ON, "|").concat(N.default.Messages.SEARCH_FILTER_DURING, ")")),
                             componentType: "FILTER",
-                            key: O(C.default.Messages.SEARCH_FILTER_DURING),
-                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_ON)
+                            key: O(N.default.Messages.SEARCH_FILTER_DURING),
+                            getAutocompletions: (e, t, n) => P(e, n, g.SearchTokenTypes.FILTER_ON)
                         },
-                        [A.SearchTokenTypes.FILTER_AFTER]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_AFTER),
+                        [g.SearchTokenTypes.FILTER_AFTER]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_AFTER),
                             componentType: "FILTER",
-                            key: O(C.default.Messages.SEARCH_FILTER_AFTER),
-                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_AFTER)
+                            key: O(N.default.Messages.SEARCH_FILTER_AFTER),
+                            getAutocompletions: (e, t, n) => P(e, n, g.SearchTokenTypes.FILTER_AFTER)
                         },
-                        [A.SearchTokenTypes.ANSWER_BEFORE]: {
+                        [g.SearchTokenTypes.ANSWER_BEFORE]: {
                             regex: F,
-                            follows: [A.SearchTokenTypes.FILTER_BEFORE],
+                            follows: [g.SearchTokenTypes.FILTER_BEFORE],
                             componentType: "ANSWER",
                             mutable: !0,
-                            validator: e => U(e, "before")
+                            validator: e => w(e, "before")
                         },
-                        [A.SearchTokenTypes.ANSWER_ON]: {
+                        [g.SearchTokenTypes.ANSWER_ON]: {
                             regex: F,
-                            follows: [A.SearchTokenTypes.FILTER_ON],
+                            follows: [g.SearchTokenTypes.FILTER_ON],
                             componentType: "ANSWER",
                             mutable: !0,
-                            validator: e => U(e, "on")
+                            validator: e => w(e, "on")
                         },
-                        [A.SearchTokenTypes.ANSWER_AFTER]: {
+                        [g.SearchTokenTypes.ANSWER_AFTER]: {
                             regex: F,
-                            follows: [A.SearchTokenTypes.FILTER_AFTER],
+                            follows: [g.SearchTokenTypes.FILTER_AFTER],
                             componentType: "ANSWER",
                             mutable: !0,
-                            validator: e => U(e, "after")
+                            validator: e => w(e, "after")
                         },
-                        [A.SearchTokenTypes.FILTER_IN]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_IN),
+                        [g.SearchTokenTypes.FILTER_IN]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_IN),
                             componentType: "FILTER",
-                            key: O(C.default.Messages.SEARCH_FILTER_IN),
-                            validator: K,
+                            key: O(N.default.Messages.SEARCH_FILTER_IN),
+                            validator: B,
                             getAutocompletions(e, t, n) {
                                 "#" === e[0] && (e = e.substring(1));
-                                let r = p.default.queryChannels({
+                                let r = R.default.queryChannels({
                                     query: e,
                                     type: d.GUILD_SELECTABLE_CHANNELS_KEY,
                                     guildId: t,
                                     limit: 1 / 0
-                                }).concat(p.default.queryChannels({
+                                }).concat(R.default.queryChannels({
                                     query: e,
                                     type: d.GUILD_VOCAL_CHANNELS_KEY,
                                     guildId: t,
@@ -619,12 +552,12 @@
                                     return t
                                 }).filter(e => !e.isThread());
                                 if ("" === e.trim()) {
-                                    let e = _.default.getChannelId(t),
+                                    let e = f.default.getChannelId(t),
                                         n = r.find(t => t.id === e);
                                     null != n && (r.splice(r.indexOf(n), 1), r.unshift(n))
                                 }
                                 let l = d.default.getTextChannelNameDisambiguations(t);
-                                return s(r).take(n).map(e => {
+                                return i(r).take(n).map(e => {
                                     var t, n;
                                     return {
                                         text: "".concat(null !== (n = null === (t = l[e.id]) || void 0 === t ? void 0 : t.name) && void 0 !== n ? n : e.name),
@@ -633,28 +566,28 @@
                                 }).value()
                             }
                         },
-                        [A.SearchTokenTypes.ANSWER_IN]: {
+                        [g.SearchTokenTypes.ANSWER_IN]: {
                             regex: /(?:\s*#?([^ ]+))/i,
                             mutable: !0,
-                            follows: [A.SearchTokenTypes.FILTER_IN],
+                            follows: [g.SearchTokenTypes.FILTER_IN],
                             componentType: "ANSWER",
-                            validator: k,
+                            validator: U,
                             queryKey: "channel_id"
                         },
-                        [A.SearchTokenTypes.FILTER_PINNED]: {
-                            regex: w(C.default.Messages.SEARCH_FILTER_PINNED),
+                        [g.SearchTokenTypes.FILTER_PINNED]: {
+                            regex: D(N.default.Messages.SEARCH_FILTER_PINNED),
                             componentType: "FILTER",
-                            key: O(C.default.Messages.SEARCH_FILTER_PINNED),
+                            key: O(N.default.Messages.SEARCH_FILTER_PINNED),
                             getAutocompletions: () => [{
                                 text: "true"
                             }, {
                                 text: "false"
                             }]
                         },
-                        [A.SearchTokenTypes.ANSWER_PINNED]: {
+                        [g.SearchTokenTypes.ANSWER_PINNED]: {
                             regex: H,
                             componentType: "ANSWER",
-                            follows: [A.SearchTokenTypes.FILTER_PINNED],
+                            follows: [g.SearchTokenTypes.FILTER_PINNED],
                             queryKey: "pinned",
                             validator: e => {
                                 let t = e.getMatch(1);
@@ -665,11 +598,11 @@
                 }())
             }
 
-            function Y(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(q).length;
-                return s(q).keys().filter(e => A.IS_SEARCH_FILTER_TOKEN.test(e)).filter(e => null != q[e].key).map(e => ({
+            function X(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(Y).length;
+                return i(Y).keys().filter(e => g.IS_SEARCH_FILTER_TOKEN.test(e)).filter(e => null != Y[e].key).map(e => ({
                     token: e,
-                    text: q[e].key
+                    text: Y[e].key
                 })).filter(t => {
                     let {
                         text: n
@@ -677,7 +610,7 @@
                     return u(e.toLowerCase(), n)
                 }).take(t).value()
             }
-            var z = q
+            var z = Y
         },
         578899: function(e, t, n) {
             "use strict";
@@ -724,8 +657,8 @@
                 a = n("913144"),
                 u = n("448993"),
                 o = n("828434"),
-                s = n("49111");
-            let i = new r.default("MemberSafetyElasticSearch");
+                i = n("49111");
+            let s = new r.default("MemberSafetyElasticSearch");
             async function c(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                     r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
@@ -735,13 +668,13 @@
                     signal: E
                 } = n;
                 try {
-                    var f;
+                    var _;
                     let u = await l.default.post({
-                        url: s.Endpoints.GUILD_MEMBER_SEARCH(e),
+                        url: i.Endpoints.GUILD_MEMBER_SEARCH(e),
                         body: t,
                         signal: E
                     });
-                    if (i.info("JANK searchAllGuildMembers", {
+                    if (s.info("JANK searchAllGuildMembers", {
                             response: u
                         }), u.status === o.INDEXING_RESPONSE_CODE) {
                         if (null == u.body.retry_after) throw Error("Indexing response did not include retry_after");
@@ -754,15 +687,15 @@
                     return {
                         type: o.GuildMemberSearchResponseType.SUCCESSFUL_QUERY,
                         body: {
-                            guild_id: (f = u.body).guild_id,
-                            members: f.members,
-                            page_result_count: f.page_result_count,
-                            total_result_count: f.total_result_count
+                            guild_id: (_ = u.body).guild_id,
+                            members: _.members,
+                            page_result_count: _.page_result_count,
+                            total_result_count: _.total_result_count
                         }
                     }
                 } catch (t) {
                     let e = new u.APIError(t);
-                    return i.info("JANK searchAllGuildMembers error", {
+                    return s.info("JANK searchAllGuildMembers error", {
                         error: e
                     }), {
                         type: o.GuildMemberSearchResponseType.ERROR,
@@ -789,7 +722,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 searchGuildMembers: function() {
-                    return s
+                    return i
                 }
             });
             var r = n("811022"),
@@ -797,20 +730,20 @@
                 a = n("127421"),
                 u = n("828434");
             let o = new r.default("MemberSafetyGuildMemberSearchActionCreators");
-            async function s(e, t, n) {
+            async function i(e, t, n) {
                 let r = await (0, a.searchAllGuildMembers)(e, t, n);
                 if (r.type === u.GuildMemberSearchResponseType.ERROR) throw r.body;
                 let {
-                    body: s
+                    body: i
                 } = r;
                 o.info("JANK searchGuildMembers success", {
-                    body: s
+                    body: i
                 }), l.default.dispatch({
                     type: "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS",
                     guildId: e,
-                    members: s.members,
-                    page_result_count: s.page_result_count,
-                    total_result_count: s.total_result_count
+                    members: i.members,
+                    page_result_count: i.page_result_count,
+                    total_result_count: i.total_result_count
                 })
             }
         },
@@ -818,7 +751,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 useIsMakingRequestV2: function() {
-                    return L
+                    return v
                 },
                 useIsStillIndexingV2: function() {
                     return F
@@ -830,37 +763,37 @@
                     return O
                 },
                 handleSearchStateUpdateV2: function() {
-                    return w
-                },
-                handlePaginationUpdateV2: function() {
                     return D
                 },
+                handlePaginationUpdateV2: function() {
+                    return k
+                },
                 handleGuildMemberSearchSuccessV2: function() {
-                    return U
+                    return w
                 },
                 handleGuildMemberSearchStillIndexingV2: function() {
-                    return k
+                    return U
                 }
             }), n("222007"), n("70102");
             var r, l, a, u, o = n("714617"),
-                s = n.n(o),
-                i = n("917351"),
+                i = n.n(o),
+                s = n("917351"),
                 c = n("308503"),
                 d = n("811022"),
                 E = n("249654"),
-                f = n("449008"),
-                _ = n("691386"),
-                h = n("770115"),
-                T = n("490931"),
-                S = n("225982"),
-                p = n("178406");
-            let R = new d.default("MemberSafetySearchManagerV2");
+                _ = n("449008"),
+                f = n("691386"),
+                T = n("770115"),
+                S = n("490931"),
+                h = n("225982"),
+                R = n("178406");
+            let p = new d.default("MemberSafetySearchManagerV2");
 
-            function g(e) {
+            function A(e) {
                 return "guild_".concat(e)
             }
 
-            function A(e) {
+            function g(e) {
                 return {
                     requestState: e,
                     abortController: null,
@@ -870,26 +803,26 @@
                     previousPagination: null
                 }
             }(a = r || (r = {}))[a.FAILED = 0] = "FAILED", a[a.UNFETCHED = 1] = "UNFETCHED", a[a.PENDING = 2] = "PENDING", a[a.SUCCEEDED = 3] = "SUCCEEDED", a[a.STILL_INDEXING = 4] = "STILL_INDEXING";
-            let C = (0, c.default)(e => ({}));
+            let N = (0, c.default)(e => ({}));
 
             function I(e, t) {
-                let n = C.getState()[e];
-                return null == n && (n = A(1)), n = {
+                let n = N.getState()[e];
+                return null == n && (n = g(1)), n = {
                     ...n,
                     ...t
-                }, C.setState(t => ({
+                }, N.setState(t => ({
                     ...t,
                     [e]: n
                 })), n
             }
 
             function m(e) {
-                return C.getState()[e]
+                return N.getState()[e]
             }
 
-            function N(e) {
+            function C(e) {
                 let t = m(e);
-                return null == t && I(e, t = A(1)), t
+                return null == t && I(e, t = g(1)), t
             }
 
             function y(e) {
@@ -903,23 +836,23 @@
 
             function M(e) {
                 var t;
-                let n = g(e);
-                t = n, C.setState(e => {
+                let n = A(e);
+                t = n, N.setState(e => {
                     let n = {
                         ...e
                     };
                     return delete n[t], n
                 })
             }(u = l || (l = {}))[u.FIRST_PAGE_CHUNK = 0] = "FIRST_PAGE_CHUNK", u[u.CURRENT_SEARCH_CHUNK = 1] = "CURRENT_SEARCH_CHUNK", u[u.NEXT_SEARCH_CHUNK = 2] = "NEXT_SEARCH_CHUNK", u[u.PREVIOUS_SEARCH_CHUNK = 3] = "PREVIOUS_SEARCH_CHUNK";
-            async function v(e) {
+            async function L(e) {
                 var t, n, r, l;
-                let a = p.default.getSearchStateByGuildId(e),
-                    u = p.default.getPaginationStateByGuildId(e),
-                    o = g(e),
-                    c = N(o),
-                    [d, A] = function(e, t, n) {
-                        var r, l, a, u, o, s;
-                        let i = function(e, t) {
+                let a = R.default.getSearchStateByGuildId(e),
+                    u = R.default.getPaginationStateByGuildId(e),
+                    o = A(e),
+                    c = C(o),
+                    [d, g] = function(e, t, n) {
+                        var r, l, a, u, o, i;
+                        let s = function(e, t) {
                                 var n;
                                 let {
                                     currentPageChunkNumber: r,
@@ -927,9 +860,9 @@
                                     nextPageChunkNumber: a
                                 } = function(e) {
                                     let t = e.pageSize * e.currentPage,
-                                        n = Math.floor(t / _.DEFAULT_SEARCH_CHUNK_LIMIT),
-                                        r = Math.floor(e.pageSize * (e.currentPage - 1) / _.DEFAULT_SEARCH_CHUNK_LIMIT),
-                                        l = Math.floor(e.pageSize * (e.currentPage + 1) / _.DEFAULT_SEARCH_CHUNK_LIMIT);
+                                        n = Math.floor(t / f.DEFAULT_SEARCH_CHUNK_LIMIT),
+                                        r = Math.floor(e.pageSize * (e.currentPage - 1) / f.DEFAULT_SEARCH_CHUNK_LIMIT),
+                                        l = Math.floor(e.pageSize * (e.currentPage + 1) / f.DEFAULT_SEARCH_CHUNK_LIMIT);
                                     return {
                                         currentPageChunkNumber: n,
                                         previousPageChunkNumber: r,
@@ -937,28 +870,28 @@
                                     }
                                 }(t), {
                                     previousPagination: u
-                                } = N(g(e)), o = t.currentPage, s = null !== (n = null == u ? void 0 : u.currentPage) && void 0 !== n ? n : 0, i = p.default.getElasticSearchPaginationByGuildId(e);
+                                } = C(A(e)), o = t.currentPage, i = null !== (n = null == u ? void 0 : u.currentPage) && void 0 !== n ? n : 0, s = R.default.getElasticSearchPaginationByGuildId(e);
                                 switch (!0) {
-                                    case null == i:
+                                    case null == s:
                                     case r === a && 0 === r:
                                         return 0;
                                     case r === a && r === l:
                                         return 1;
-                                    case s < o && r < a:
+                                    case i < o && r < a:
                                         return 2;
-                                    case s > o && r >= l:
+                                    case i > o && r >= l:
                                         if (0 < r) return 3;
                                         return 0;
                                     default:
                                         return 1
                                 }
                             }(e, n),
-                            c = p.default.getElasticSearchPaginationByGuildId(e);
-                        switch (i) {
+                            c = R.default.getElasticSearchPaginationByGuildId(e);
+                        switch (s) {
                             case 0: {
-                                let t = p.default.getLastCursorTimestamp(e);
+                                let t = R.default.getLastCursorTimestamp(e);
                                 return [null, {
-                                    limit: _.DEFAULT_SEARCH_CHUNK_LIMIT,
+                                    limit: f.DEFAULT_SEARCH_CHUNK_LIMIT,
                                     after: {
                                         guild_joined_at: t,
                                         user_id: E.default.fromTimestamp(t)
@@ -967,24 +900,24 @@
                             }
                             case 1:
                                 return [null !== (r = t.cursor) && void 0 !== r ? r : null, {
-                                    limit: _.DEFAULT_SEARCH_CHUNK_LIMIT,
+                                    limit: f.DEFAULT_SEARCH_CHUNK_LIMIT,
                                     after: null !== (l = t.cursor) && void 0 !== l ? l : void 0
                                 }];
                             case 2:
                                 return [null !== (a = null == c ? void 0 : c.after) && void 0 !== a ? a : null, {
-                                    limit: _.DEFAULT_SEARCH_CHUNK_LIMIT,
+                                    limit: f.DEFAULT_SEARCH_CHUNK_LIMIT,
                                     after: null !== (u = null == c ? void 0 : c.after) && void 0 !== u ? u : void 0
                                 }];
                             case 3:
                                 return [null !== (o = null == c ? void 0 : c.before) && void 0 !== o ? o : null, {
-                                    limit: _.DEFAULT_SEARCH_CHUNK_LIMIT,
-                                    before: null !== (s = null == c ? void 0 : c.before) && void 0 !== s ? s : void 0
+                                    limit: f.DEFAULT_SEARCH_CHUNK_LIMIT,
+                                    before: null !== (i = null == c ? void 0 : c.before) && void 0 !== i ? i : void 0
                                 }];
                             default:
-                                (0, f.assertNever)(i)
+                                (0, _.assertNever)(s)
                         }
                     }(e, c, u);
-                let C = (t = function(e) {
+                let N = (t = function(e) {
                     var t;
                     let n = {
                             or_query: {},
@@ -994,7 +927,7 @@
                             query: r
                         } = e;
                     if (null != (t = r) && t.length > 1) {
-                        let [e, t] = (0, h.splitQuery)(r);
+                        let [e, t] = (0, T.splitQuery)(r);
                         e.length > 0 && (n.and_query.usernames = {
                             or_query: e
                         }), t.length > 0 && (n.and_query.user_id = {
@@ -1007,7 +940,7 @@
                     } = e, u = {};
                     l && (u.unusual_dm_activity_until = {
                         range: {
-                            gte: Date.now() - T.UNUSUAL_DM_COMPARISON_DELTA
+                            gte: Date.now() - S.UNUSUAL_DM_COMPARISON_DELTA
                         }
                     }), a && (u.communication_disabled_until = {
                         range: {
@@ -1020,14 +953,14 @@
                     return o.size > 0 && (n.and_query.role_ids = {
                         and_query: Array.from(o)
                     }), n
-                }(a), null == (n = A) ? t : {
+                }(a), null == (n = g) ? t : {
                     ...t,
                     ...n
                 });
                 if (function(e, t) {
-                        let n = N(e);
-                        return s(n.query, t)
-                    }(o, C) && (0, i.isEqual)(d, c.cursor)) return;
+                        let n = C(e);
+                        return i(n.query, t)
+                    }(o, N) && (0, s.isEqual)(d, c.cursor)) return;
                 let M = function(e, t, n, r) {
                     let l = m(e);
                     if ((null == l ? void 0 : l.requestState) === 2) {
@@ -1042,14 +975,14 @@
                         cursor: n,
                         previousPagination: r
                     })
-                }(o, C, d, u);
+                }(o, N, d, u);
                 try {
                     ;
-                    if (R.info("Making member search request", {
+                    if (p.info("Making member search request", {
                             query: M.query,
                             guildId: e
                         }), null == M.query) throw Error("Query is null");
-                    await (0, S.searchGuildMembers)(e, M.query, {
+                    await (0, h.searchGuildMembers)(e, M.query, {
                         signal: null !== (l = null === (r = M.abortController) || void 0 === r ? void 0 : r.signal) && void 0 !== l ? l : void 0
                     })
                 } catch (e) {
@@ -1067,18 +1000,18 @@
                 y(o)
             }
 
-            function L(e) {
-                return C(t => {
+            function v(e) {
+                return N(t => {
                     var n;
-                    let r = g(e);
+                    let r = A(e);
                     return (null === (n = t[r]) || void 0 === n ? void 0 : n.requestState) === 2
                 })
             }
 
             function F(e) {
-                return C(t => {
+                return N(t => {
                     var n;
-                    let r = g(e);
+                    let r = A(e);
                     return (null === (n = t[r]) || void 0 === n ? void 0 : n.requestState) === 4
                 })
             }
@@ -1087,7 +1020,7 @@
                 let {
                     guildId: t
                 } = e;
-                M(t), v(t)
+                M(t), L(t)
             }
 
             function O(e) {
@@ -1097,31 +1030,31 @@
                 M(t.id)
             }
 
-            function w(e) {
-                let {
-                    guildId: t
-                } = e;
-                v(t)
-            }
-
             function D(e) {
                 let {
                     guildId: t
                 } = e;
-                v(t)
-            }
-
-            function U(e) {
-                let {
-                    guildId: t
-                } = e, n = g(t);
-                y(n)
+                L(t)
             }
 
             function k(e) {
                 let {
                     guildId: t
-                } = e, n = g(t);
+                } = e;
+                L(t)
+            }
+
+            function w(e) {
+                let {
+                    guildId: t
+                } = e, n = A(t);
+                y(n)
+            }
+
+            function U(e) {
+                let {
+                    guildId: t
+                } = e, n = A(t);
                 I(n, {
                     requestState: 4,
                     abortController: null,
@@ -1133,22 +1066,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 fetchGuildHomeSettings: function() {
-                    return T
-                },
-                fetchNewMemberActions: function() {
                     return S
                 },
-                selectHomeResourceChannel: function() {
-                    return p
+                fetchNewMemberActions: function() {
+                    return h
                 },
-                selectNewMemberActionChannel: function() {
+                selectHomeResourceChannel: function() {
                     return R
                 },
+                selectNewMemberActionChannel: function() {
+                    return p
+                },
                 completeNewMemberAction: function() {
-                    return g
+                    return A
                 },
                 getBlockForChannelDeletion: function() {
-                    return A
+                    return g
                 }
             }), n("808653");
             var r = n("872717"),
@@ -1156,22 +1089,22 @@
                 a = n("819689"),
                 u = n("115718"),
                 o = n("38654"),
-                s = n("144491"),
-                i = n("42203"),
+                i = n("144491"),
+                s = n("42203"),
                 c = n("599110"),
                 d = n("698882"),
                 E = n("129092"),
-                f = n("675305"),
-                _ = n("290886"),
-                h = n("49111");
-            let T = async e => {
+                _ = n("675305"),
+                f = n("290886"),
+                T = n("49111");
+            let S = async e => {
                 l.default.dispatch({
                     type: "GUILD_HOME_SETTINGS_FETCH_START",
                     guildId: e
                 });
                 try {
                     let t = await r.default.get({
-                            url: h.Endpoints.GUILD_HOME_SETTINGS(e),
+                            url: T.Endpoints.GUILD_HOME_SETTINGS(e),
                             oldFormErrors: !0
                         }),
                         n = (0, E.settingsFromServer)(t.body);
@@ -1186,7 +1119,7 @@
                         guildId: e
                     })
                 }
-            }, S = async e => {
+            }, h = async e => {
                 if (!o.default.isFullServerPreview(e)) {
                     l.default.dispatch({
                         type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",
@@ -1194,7 +1127,7 @@
                     });
                     try {
                         let t = await r.default.get({
-                                url: h.Endpoints.GUILD_MEMBER_ACTIONS(e),
+                                url: T.Endpoints.GUILD_MEMBER_ACTIONS(e),
                                 oldFormErrors: !0
                             }),
                             n = (0, E.actionsFromServer)(t.body);
@@ -1210,53 +1143,53 @@
                         })
                     }
                 }
-            }, p = function(e, t) {
+            }, R = function(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                 if (l.default.dispatch({
                         type: "SELECT_HOME_RESOURCE_CHANNEL",
                         guildId: e,
                         channelId: t
                     }), null == t) return;
-                let r = i.default.getChannel(t),
+                let r = s.default.getChannel(t),
                     E = d.default.getResourceForChannel(e, t);
-                null != e && !o.default.isFullServerPreview(e) && null != r && null != E && c.default.track(h.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
+                null != e && !o.default.isFullServerPreview(e) && null != r && null != E && c.default.track(T.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
                     guild_id: e,
                     channel_id: r.id,
                     server_guide_channel_type: "resource",
                     channel_action_type: -1
-                }), n && (0, s.transitionToChannel)(t), a.default.jumpToMessage({
+                }), n && (0, i.transitionToChannel)(t), a.default.jumpToMessage({
                     channelId: t,
                     messageId: t,
                     flash: !1,
                     jumpType: u.JumpTypes.INSTANT
                 })
-            }, R = (e, t) => {
+            }, p = (e, t) => {
                 l.default.dispatch({
                     type: "SELECT_NEW_MEMBER_ACTION_CHANNEL",
                     guildId: e,
                     channelId: t
                 });
-                let n = i.default.getChannel(t),
+                let n = s.default.getChannel(t),
                     r = d.default.getActionForChannel(e, t);
-                null != e && !o.default.isFullServerPreview(e) && null != n && null != r && c.default.track(h.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
+                null != e && !o.default.isFullServerPreview(e) && null != n && null != r && c.default.track(T.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
                     guild_id: e,
                     channel_id: n.id,
                     server_guide_channel_type: "member action",
                     channel_action_type: r.actionType
-                }), (0, s.transitionToChannel)(t)
-            }, g = (e, t) => {
+                }), (0, i.transitionToChannel)(t)
+            }, A = (e, t) => {
                 if (l.default.dispatch({
                         type: "COMPLETE_NEW_MEMBER_ACTION",
                         guildId: e,
                         channelId: t
                     }), o.default.isFullServerPreview(e)) return;
-                let n = i.default.getChannel(t),
+                let n = s.default.getChannel(t),
                     a = d.default.getActionForChannel(e, t);
                 if (null != n && null != a) {
-                    var u, s;
-                    let t = Object.keys(null !== (u = f.default.getCompletedActions(e)) && void 0 !== u ? u : {}),
-                        r = null !== (s = d.default.getNewMemberActions(e)) && void 0 !== s ? s : [];
-                    c.default.track(h.AnalyticEvents.SERVER_GUIDE_ACTION_COMPLETED, {
+                    var u, i;
+                    let t = Object.keys(null !== (u = _.default.getCompletedActions(e)) && void 0 !== u ? u : {}),
+                        r = null !== (i = d.default.getNewMemberActions(e)) && void 0 !== i ? i : [];
+                    c.default.track(T.AnalyticEvents.SERVER_GUIDE_ACTION_COMPLETED, {
                         guild_id: n.guild_id,
                         channel_id: n.id,
                         channel_action_type: a.actionType,
@@ -1264,22 +1197,22 @@
                     })
                 }
                 r.default.post({
-                    url: h.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, t)
+                    url: T.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, t)
                 })
             };
-            async function A(e, t) {
+            async function g(e, t) {
                 if (null == e) return !1;
-                let n = (0, _.canSeeOnboardingHome)(e);
+                let n = (0, f.canSeeOnboardingHome)(e);
                 if (!n) return !1;
                 let r = d.default.getSettings(e);
-                return r === d.NO_SETTINGS && (await T(e), r = d.default.getSettings(e)), r !== d.NO_SETTINGS && null != r && (null != r.newMemberActions && null != r.newMemberActions.find(e => e.channelId === t) ? "todo" : null != r.resourceChannels && null != r.resourceChannels.find(e => e.channelId === t) && "resource")
+                return r === d.NO_SETTINGS && (await S(e), r = d.default.getSettings(e)), r !== d.NO_SETTINGS && null != r && (null != r.newMemberActions && null != r.newMemberActions.find(e => e.channelId === t) ? "todo" : null != r.resourceChannels && null != r.resourceChannels.find(e => e.channelId === t) && "resource")
             }
         },
         129092: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 WELCOME_MESSAGE_MIN_LENGTH: function() {
-                    return i
+                    return s
                 },
                 WELCOME_MESSAGE_MAX_LENGTH: function() {
                     return c
@@ -1291,37 +1224,37 @@
                     return E
                 },
                 NEW_MEMBER_ACTION_MAX: function() {
-                    return f
-                },
-                RESOURCE_CHANNEL_TITLE_MIN_LENGTH: function() {
                     return _
                 },
-                RESOURCE_CHANNEL_TITLE_MAX_LENGTH: function() {
-                    return h
+                RESOURCE_CHANNEL_TITLE_MIN_LENGTH: function() {
+                    return f
                 },
-                RESOURCE_CHANNEL_DESCRIPTION_MAX_LENGTH: function() {
+                RESOURCE_CHANNEL_TITLE_MAX_LENGTH: function() {
                     return T
                 },
-                RESOURCE_CHANNEL_MAX: function() {
+                RESOURCE_CHANNEL_DESCRIPTION_MAX_LENGTH: function() {
                     return S
+                },
+                RESOURCE_CHANNEL_MAX: function() {
+                    return h
                 },
                 NewMemberActionTypes: function() {
                     return l
                 },
                 newMemberActionFromServer: function() {
-                    return p
-                },
-                resourceChannelFromServer: function() {
                     return R
                 },
-                settingsFromServer: function() {
-                    return g
+                resourceChannelFromServer: function() {
+                    return p
                 },
-                settingsToServer: function() {
+                settingsFromServer: function() {
                     return A
                 },
+                settingsToServer: function() {
+                    return g
+                },
                 actionsFromServer: function() {
-                    return C
+                    return N
                 },
                 isWelcomeMessageEmpty: function() {
                     return I
@@ -1330,7 +1263,7 @@
                     return m
                 },
                 isSettingsValid: function() {
-                    return N
+                    return C
                 },
                 isChannelValidForResourceChannel: function() {
                     return y
@@ -1342,18 +1275,18 @@
             var r, l, a = n("42203"),
                 u = n("449008"),
                 o = n("991170"),
-                s = n("49111");
-            let i = 7,
+                i = n("49111");
+            let s = 7,
                 c = 300,
                 d = 7,
                 E = 60,
-                f = 5,
-                _ = 1,
-                h = 30,
-                T = 200,
-                S = 7;
+                _ = 5,
+                f = 1,
+                T = 30,
+                S = 200,
+                h = 7;
 
-            function p(e) {
+            function R(e) {
                 var t;
                 return {
                     channelId: e.channel_id,
@@ -1369,7 +1302,7 @@
                 }
             }
 
-            function R(e) {
+            function p(e) {
                 var t, n;
                 return {
                     channelId: e.channel_id,
@@ -1384,7 +1317,7 @@
                 }
             }
 
-            function g(e) {
+            function A(e) {
                 if (null == e) return null;
                 let {
                     welcome_message: t,
@@ -1394,23 +1327,23 @@
                 } = e, o = {
                     authorIds: t.author_ids,
                     message: t.message
-                }, s = n.filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channel_id))).map(p), i = r.filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channel_id))).map(R);
+                }, i = n.filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channel_id))).map(R), s = r.filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channel_id))).map(p);
                 return {
                     welcomeMessage: o,
-                    newMemberActions: s,
-                    resourceChannels: i,
+                    newMemberActions: i,
+                    resourceChannels: s,
                     enabled: l
                 }
             }
 
-            function A(e, t) {
+            function g(e, t) {
                 var n, r;
                 if (null == t) return null;
                 let {
                     welcomeMessage: l,
                     newMemberActions: o,
-                    resourceChannels: s,
-                    enabled: i
+                    resourceChannels: i,
+                    enabled: s
                 } = t, c = {
                     author_ids: null !== (n = null == l ? void 0 : l.authorIds) && void 0 !== n ? n : [],
                     message: null !== (r = null == l ? void 0 : l.message) && void 0 !== r ? r : ""
@@ -1428,7 +1361,7 @@
                         },
                         icon: null !== (o = e.icon) && void 0 !== o ? o : void 0
                     }
-                }), E = (null != s ? s : []).filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channelId))).map(e => {
+                }), E = (null != i ? i : []).filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channelId))).map(e => {
                     var t, n, r, l, a, u, o;
                     return {
                         channel_id: e.channelId,
@@ -1447,10 +1380,10 @@
                     welcome_message: c,
                     new_member_actions: d,
                     resource_channels: E,
-                    enabled: i
+                    enabled: s
                 }
             }(r = l || (l = {}))[r.VIEW = 0] = "VIEW", r[r.CHAT = 1] = "CHAT";
-            let C = e => {
+            let N = e => {
                 if (null == e) return null;
                 let t = {};
                 for (let n in e.channel_actions) t[n] = e.channel_actions[n].completed;
@@ -1465,22 +1398,22 @@
                 return null == e || !!I(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
             }
 
-            function N(e) {
+            function C(e) {
                 var t, n;
-                return null != e && (!!m(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < i) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
+                return null != e && (!!m(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < s) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
             }
 
             function y(e) {
-                return e.type === s.ChannelTypes.GUILD_TEXT && !o.default.canEveryoneRole(s.Permissions.SEND_MESSAGES, e) && o.default.canEveryoneRole(s.Permissions.VIEW_CHANNEL, e)
+                return e.type === i.ChannelTypes.GUILD_TEXT && !o.default.canEveryoneRole(i.Permissions.SEND_MESSAGES, e) && o.default.canEveryoneRole(i.Permissions.VIEW_CHANNEL, e)
             }
 
             function M(e) {
                 switch (e.type) {
-                    case s.ChannelTypes.GUILD_TEXT:
-                    case s.ChannelTypes.GUILD_ANNOUNCEMENT:
-                    case s.ChannelTypes.GUILD_FORUM:
-                    case s.ChannelTypes.GUILD_MEDIA:
-                        return o.default.canEveryoneRole(s.Permissions.VIEW_CHANNEL, e);
+                    case i.ChannelTypes.GUILD_TEXT:
+                    case i.ChannelTypes.GUILD_ANNOUNCEMENT:
+                    case i.ChannelTypes.GUILD_FORUM:
+                    case i.ChannelTypes.GUILD_MEDIA:
+                        return o.default.canEveryoneRole(i.Permissions.VIEW_CHANNEL, e);
                     default:
                         return !1
                 }
@@ -1490,7 +1423,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return i
+                    return s
                 }
             }), n("222007");
             var r = n("446674"),
@@ -1498,7 +1431,7 @@
             let a = {},
                 u = {},
                 o = new Set;
-            class s extends r.default.Store {
+            class i extends r.default.Store {
                 getCompletedActions(e) {
                     return null == e ? null : u[e]
                 }
@@ -1513,8 +1446,8 @@
                     }
                 }
             }
-            s.displayName = "GuildOnboardingMemberActionStore";
-            var i = new s(l.default, {
+            i.displayName = "GuildOnboardingMemberActionStore";
+            var s = new i(l.default, {
                 GUILD_NEW_MEMBER_ACTIONS_FETCH_START: function(e) {
                     let {
                         guildId: t
@@ -1566,131 +1499,6 @@
                     delete u[t.id]
                 }
             })
-        },
-        597517: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                hideHotspot: function() {
-                    return u
-                },
-                setHotspotOverride: function() {
-                    return o
-                },
-                clearHotspotOverride: function() {
-                    return s
-                }
-            });
-            var r = n("913144"),
-                l = n("599110"),
-                a = n("49111");
-
-            function u(e) {
-                l.default.track(a.AnalyticEvents.HOTSPOT_HIDDEN, {
-                    hotspot_location: e
-                }), r.default.wait(() => {
-                    r.default.dispatch({
-                        type: "HOTSPOT_HIDE",
-                        location: e
-                    })
-                })
-            }
-
-            function o(e, t) {
-                r.default.dispatch({
-                    type: "HOTSPOT_OVERRIDE_SET",
-                    location: e,
-                    enabled: t
-                })
-            }
-
-            function s(e) {
-                r.default.dispatch({
-                    type: "HOTSPOT_OVERRIDE_CLEAR",
-                    location: e
-                })
-            }
-        },
-        269596: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return c
-                }
-            }), n("222007");
-            var r = n("446674"),
-                l = n("913144"),
-                a = n("197881"),
-                u = n("492397");
-            let o = new Set,
-                s = {};
-            class i extends r.default.PersistedStore {
-                initialize(e) {
-                    null != e && (Array.isArray(e.hiddenHotspots) && (o = new Set(e.hiddenHotspots)), null != e.hotspotOverrides && (s = e.hotspotOverrides))
-                }
-                hasHotspot(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                        n = !t && s[e];
-                    return !(u.CONFERENCE_MODE_ENABLED || a.ProcessArgs.isDisallowPopupsSet()) && (n || !o.has(e))
-                }
-                hasHiddenHotspot(e) {
-                    return o.has(e)
-                }
-                getHotspotOverride(e) {
-                    return s[e]
-                }
-                getState() {
-                    return {
-                        hiddenHotspots: o,
-                        hotspotOverrides: s
-                    }
-                }
-            }
-            i.displayName = "HotspotStore", i.persistKey = "hotspots", i.migrations = [e => ({
-                hiddenHotspots: null != e ? e : [],
-                hotspotOverrides: {}
-            })];
-            var c = new i(l.default, {
-                OVERLAY_INITIALIZE: function(e) {
-                    let {
-                        hiddenHotspots: t
-                    } = e;
-                    o = new Set(t)
-                },
-                HOTSPOT_HIDE: function(e) {
-                    let {
-                        location: t
-                    } = e;
-                    if (o.has(t)) return !1;
-                    o.add(t)
-                },
-                HOTSPOT_OVERRIDE_SET: function(e) {
-                    let {
-                        location: t,
-                        enabled: n
-                    } = e;
-                    s[t] = n
-                },
-                HOTSPOT_OVERRIDE_CLEAR: function(e) {
-                    let {
-                        location: t
-                    } = e;
-                    if (null == s[t]) return !1;
-                    delete s[t]
-                }
-            })
-        },
-        139321: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                HotspotStore: function() {
-                    return a.default
-                }
-            });
-            var r = n("533613");
-            n.es(r, t);
-            var l = n("597517");
-            n.es(l, t);
-            var a = n("269596")
         },
         654017: function(e, t, n) {
             "use strict";
@@ -1758,326 +1566,14 @@
                     size: 24
                 })
         },
-        155207: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return o
-                }
-            });
-            var r = n("37983");
-            n("884691");
-            var l = n("469563"),
-                a = n("811513"),
-                u = n("75196"),
-                o = (0, l.replaceIcon)(function(e) {
-                    let {
-                        width: t = 24,
-                        height: n = 24,
-                        color: l = "currentColor",
-                        foreground: a,
-                        ...o
-                    } = e;
-                    return (0, r.jsxs)("svg", {
-                        ...(0, u.default)(o),
-                        width: t,
-                        height: n,
-                        viewBox: "0 0 24 24",
-                        children: [(0, r.jsx)("path", {
-                            className: a,
-                            fill: l,
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z"
-                        }), (0, r.jsx)("path", {
-                            className: a,
-                            fill: l,
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z"
-                        }), (0, r.jsx)("path", {
-                            className: a,
-                            fill: l,
-                            d: "M20.0001 20.006H22.0001V19.006C22.0001 16.4433 20.2697 14.4415 17.5213 13.5352C19.0621 14.9127 20.0001 16.8059 20.0001 19.006V20.006Z"
-                        }), (0, r.jsx)("path", {
-                            className: a,
-                            fill: l,
-                            d: "M14.8834 11.9077C16.6657 11.5044 18.0001 9.9077 18.0001 8.00598C18.0001 5.96916 16.4693 4.28218 14.4971 4.0367C15.4322 5.09511 16.0001 6.48524 16.0001 8.00598C16.0001 9.44888 15.4889 10.7742 14.6378 11.8102C14.7203 11.8418 14.8022 11.8743 14.8834 11.9077Z"
-                        })]
-                    })
-                }, a.GroupIcon, void 0, {
-                    size: 24
-                })
-        },
-        713573: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return d
-                }
-            });
-            var r = n("37983");
-            n("884691");
-            var l = n("414456"),
-                a = n.n(l),
-                u = n("77078"),
-                o = n("254686"),
-                s = n("851706");
-            let i = Object.freeze({
-                    SIZE_10: s.size10,
-                    SIZE_12: s.size12,
-                    SIZE_14: s.size14,
-                    SIZE_16: s.size16,
-                    SIZE_20: s.size20,
-                    SIZE_24: s.size24,
-                    SIZE_32: s.size32
-                }),
-                c = e => {
-                    let {
-                        id: t,
-                        muted: n = !1,
-                        className: l = o.wrapper,
-                        size: s = i.SIZE_14,
-                        selectable: c = !1,
-                        children: d,
-                        color: E,
-                        onClick: f,
-                        onContextMenu: _,
-                        style: h,
-                        title: T,
-                        uppercase: S
-                    } = e;
-                    return (0, r.jsx)(u.H, {
-                        role: null != f ? "button" : void 0,
-                        onClick: f,
-                        onContextMenu: _,
-                        id: t,
-                        className: a(l, {
-                            [o.base]: !0,
-                            [s]: !0,
-                            [o.selectable]: c,
-                            [o.muted]: n,
-                            [o.uppercase]: S
-                        }),
-                        title: T,
-                        style: null != E ? {
-                            ...h,
-                            color: E
-                        } : h,
-                        children: d
-                    })
-                };
-            c.Sizes = i;
-            var d = c
-        },
-        811305: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                Sizes: function() {
-                    return p
-                },
-                default: function() {
-                    return A
-                }
-            }), n("424973"), n("222007");
-            var r = n("37983"),
-                l = n("884691"),
-                a = n("414456"),
-                u = n.n(a),
-                o = n("627445"),
-                s = n.n(o),
-                i = n("77078"),
-                c = n("506885"),
-                d = n("981601"),
-                E = n("766274"),
-                f = n("697218"),
-                _ = n("368121"),
-                h = n("523096"),
-                T = n("587974"),
-                S = n("494101");
-            let p = {
-                SIZE_16: 16,
-                SIZE_24: 24,
-                SIZE_32: 32,
-                SIZE_56: 56
-            };
-
-            function R(e, t) {
-                let n = e instanceof E.default ? e : null != e ? e.user : null;
-                return null != n ? n.id : "user-".concat(t)
-            }
-            class g extends l.PureComponent {
-                renderUsers() {
-                    let {
-                        users: e,
-                        max: t,
-                        renderUser: n = this.defaultRenderUser,
-                        size: l,
-                        extraDetail: a
-                    } = this.props, u = [], o = e.length === t ? e.length : t - 1, s = this.renderMoreUsers(o), i = 0;
-                    for (; i < o && i < e.length;) {
-                        var c;
-                        let t = null == s && null == a && i === e.length - 1,
-                            o = n(e[i], t, i);
-                        u.push(t ? (0, r.jsx)("div", {
-                            className: S.avatarContainer,
-                            children: o
-                        }, R(null !== (c = e[i]) && void 0 !== c ? c : null, i)) : (0, r.jsx)(T.default, {
-                            className: S.avatarContainerMasked,
-                            height: l,
-                            width: l,
-                            mask: T.default.Masks.VOICE_USER_SUMMARY_ITEM,
-                            children: o
-                        }, R(e[i], i))), i++
-                    }
-                    return null != a ? u.push(a) : null != s && u.push(s), u
-                }
-                renderMoreUsers(e) {
-                    let {
-                        max: t,
-                        count: n,
-                        hideMoreUsers: a,
-                        renderMoreUsers: u,
-                        users: o
-                    } = this.props, s = Math.min(e, o.length);
-                    if (!a) {
-                        if (null != n) {
-                            if (n >= t) return (0, r.jsx)(l.Fragment, {
-                                children: u("".concat(t, "+"), t)
-                            }, "more-users");
-                            if (n > o.length) {
-                                let e = n - o.length;
-                                return (0, r.jsx)(l.Fragment, {
-                                    children: u("+".concat(e), e)
-                                }, "more-users")
-                            }
-                        } else if (s < o.length) {
-                            let e = Math.min(o.length - s, 99);
-                            return (0, r.jsx)(l.Fragment, {
-                                children: u("+".concat(e), e)
-                            }, "more-users")
-                        }
-                    }
-                }
-                renderIcon() {
-                    return this.props.renderIcon ? (0, r.jsx)(_.default, {
-                        foreground: S.foreground,
-                        className: S.icon
-                    }) : null
-                }
-                render() {
-                    let {
-                        className: e,
-                        size: t,
-                        users: n,
-                        guildId: l,
-                        showUserPopout: a,
-                        useFallbackUserForPopout: o
-                    } = this.props, {
-                        popoutUserId: E
-                    } = this.state, _ = n.find(e => null != e && e.id === E), h = o && null == f.default.getUser(E);
-                    return (0, r.jsx)(i.Popout, {
-                        position: "right",
-                        preload: null == _ ? void 0 : () => (0, c.default)(_.id, _.getAvatarURL(l, 80), {
-                            guildId: l
-                        }),
-                        shouldShow: !0 === a && null != E,
-                        fixed: !0,
-                        renderPopout: e => (s(null != E, "UserSummaryItem.render - renderPopout: popoutUserId cannot be null"), (0, r.jsx)(d.default, {
-                            ...this.props,
-                            user: h && null != _ ? _ : void 0,
-                            ...e,
-                            userId: E,
-                            guildId: this.props.guildId
-                        })),
-                        onRequestClose: () => this.setState({
-                            popoutUserId: null
-                        }),
-                        children: n => (0, r.jsxs)("div", {
-                            className: u(e, S.container, function() {
-                                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p.SIZE_24;
-                                switch (e) {
-                                    case p.SIZE_16:
-                                        return S.size16;
-                                    case p.SIZE_24:
-                                        return S.size24;
-                                    case p.SIZE_32:
-                                        return S.size32;
-                                    case p.SIZE_56:
-                                        return S.size56;
-                                    default:
-                                        return S.size24
-                                }
-                            }(t)),
-                            ref: this._ref,
-                            ...n,
-                            children: [this.renderIcon(), this.renderUsers()]
-                        })
-                    })
-                }
-                constructor(...e) {
-                    super(...e), this.state = {
-                        popoutUserId: null
-                    }, this._ref = l.createRef(), this.defaultRenderUser = (e, t, n) => {
-                        let {
-                            showUserPopout: l,
-                            guildId: a,
-                            size: u
-                        } = this.props;
-                        if (null == e) {
-                            if (!this.props.showDefaultAvatarsForNullUsers) return (0, r.jsx)("div", {
-                                className: S.emptyUser
-                            });
-                            {
-                                let e = (null != n ? n : 0) % h.default.DEFAULT_AVATARS.length,
-                                    t = h.default.DEFAULT_AVATARS[e];
-                                return (0, r.jsx)("img", {
-                                    src: t,
-                                    alt: "",
-                                    className: S.avatar
-                                })
-                            }
-                        }
-                        let o = (0, r.jsx)("img", {
-                            src: e.getAvatarURL(a, u),
-                            alt: e.username,
-                            className: S.avatar
-                        }, e.id);
-                        return l ? (0, r.jsx)(i.Clickable, {
-                            className: S.clickableAvatar,
-                            onClick: () => {
-                                null != this._ref.current && null != e && this.setState({
-                                    popoutUserId: e.id
-                                })
-                            },
-                            tabIndex: -1,
-                            children: o
-                        }, e.id) : o
-                    }
-                }
-            }
-            g.defaultProps = {
-                max: 10,
-                renderMoreUsers: function(e) {
-                    return (0, r.jsx)("div", {
-                        className: S.moreUsers,
-                        children: e
-                    })
-                },
-                renderIcon: !1,
-                showDefaultAvatarsForNullUsers: !1,
-                size: p.SIZE_24
-            };
-            var A = g
-        },
         746574: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 moveItemFromTo: function() {
-                    return s
+                    return i
                 },
                 default: function() {
-                    return i
+                    return s
                 }
             }), n("424973"), n("222007");
             var r = n("917351"),
@@ -2094,31 +1590,31 @@
                     ascending: a = !0
                 } = e, o = n.length;
                 if (t.length !== o) return u.warn("Arrays are not of the same length!", t, n), [];
-                let s = t.map(r).sort().join(":"),
-                    i = n.map(r).sort().join(":");
-                if (s !== i) return u.warn("Object IDs in the old ordering and the new ordering are not the same.", s, i), [];
+                let i = t.map(r).sort().join(":"),
+                    s = n.map(r).sort().join(":");
+                if (i !== s) return u.warn("Object IDs in the old ordering and the new ordering are not the same.", i, s), [];
                 let c = {};
                 for (let e = 0; e < o; e++) c[r(t[e])] = l(t[e]);
                 let d = [];
                 for (let e = 0; e < o; e++) {
                     let t = r(n[e]),
                         u = c[t],
-                        s = a ? e : o - 1 - e;
-                    (u !== s || l(n[e]) !== s) && d.push({
+                        i = a ? e : o - 1 - e;
+                    (u !== i || l(n[e]) !== i) && d.push({
                         id: t,
-                        position: s
+                        position: i
                     })
                 }
                 return !a && d.reverse(), d
             }
 
-            function s(e, t, n) {
+            function i(e, t, n) {
                 let r = e[t],
                     l = [...e];
                 return l.splice(t, 1), l.splice(n, 0, r), l
             }
-            var i = {
-                moveItemFromTo: s,
+            var s = {
+                moveItemFromTo: i,
                 calculatePositionDeltas: o,
                 getPositionUpdates: function(e) {
                     let {
@@ -2127,16 +1623,16 @@
                         toPosition: r,
                         idGetter: a,
                         existingPositionGetter: u,
-                        ascending: i = !0
+                        ascending: s = !0
                     } = e;
                     !Array.isArray(t) && (t = l.values(t));
-                    let c = s(t, n, r);
+                    let c = i(t, n, r);
                     return o({
                         oldOrdering: t,
                         newOrdering: c,
                         idGetter: a,
                         existingPositionGetter: u,
-                        ascending: i
+                        ascending: s
                     })
                 }
             }
@@ -2148,28 +1644,28 @@
                     return E
                 },
                 setIncludeNSFW: function() {
-                    return _
+                    return f
                 },
                 getSearchQueryFromTokens: function() {
-                    return h
-                },
-                getSelectionScope: function() {
                     return T
                 },
-                getAutocompleteMode: function() {
+                getSelectionScope: function() {
                     return S
                 },
-                getFlattenedStringArray: function() {
-                    return p
+                getAutocompleteMode: function() {
+                    return h
                 },
-                getTotalResults: function() {
+                getFlattenedStringArray: function() {
                     return R
                 },
+                getTotalResults: function() {
+                    return p
+                },
                 getQueryFromTokens: function() {
-                    return g
+                    return A
                 },
                 tokenizeQuery: function() {
-                    return C
+                    return N
                 },
                 clearTokenCache: function() {
                     return I
@@ -2178,7 +1674,7 @@
                     return m
                 },
                 filterHasAnswer: function() {
-                    return N
+                    return C
                 },
                 refreshSearchTokens: function() {
                     return y
@@ -2189,8 +1685,8 @@
                 a = n("76385"),
                 u = n("955513"),
                 o = n("247013"),
-                s = n("697218"),
-                i = n("299039"),
+                i = n("697218"),
+                s = n("299039"),
                 c = n("49111"),
                 d = n("782340");
 
@@ -2216,20 +1712,20 @@
                         return d.default.Messages.SEARCH_ANSWER_BOOLEAN
                 }
             }
-            let f = {
+            let _ = {
                 [c.SearchTokenTypes.FILTER_BEFORE]: !0,
                 [c.SearchTokenTypes.FILTER_AFTER]: !0,
                 [c.SearchTokenTypes.FILTER_ON]: !0
             };
 
-            function _(e, t) {
+            function f(e, t) {
                 if (o.default.didAgree(t)) {
-                    let t = s.default.getCurrentUser();
+                    let t = i.default.getCurrentUser();
                     null != t && (e.include_nsfw = null == t.nsfwAllowed || t.nsfwAllowed)
                 }
             }
 
-            function h(e) {
+            function T(e) {
                 let t = {};
                 for (let [n, r] of(e.forEach(e => {
                         let {
@@ -2242,7 +1738,7 @@
                             case c.SearchTokenTypes.ANSWER_AFTER:
                                 let r = e.getData("start"),
                                     l = e.getData("end");
-                                r && (t.min_id = i.default.fromTimestamp(r)), l && (t.max_id = i.default.fromTimestamp(l));
+                                r && (t.min_id = s.default.fromTimestamp(r)), l && (t.max_id = s.default.fromTimestamp(l));
                                 return
                         }
                         let a = function(e) {
@@ -2277,7 +1773,7 @@
                 return t.content && (t.content = t.content.join(" ").trim(), !t.content && delete t.content), t
             }
 
-            function T(e, t, n) {
+            function S(e, t, n) {
                 let r, l;
                 let a = e.find((a, u) => t >= a.start && t <= a.end && n >= a.start && n <= a.end ? (null != e[u + 1] && (l = e[u + 1]), !0) : (r = a, !1));
                 return null == a ? null : {
@@ -2289,7 +1785,7 @@
                 }
             }
 
-            function S(e, t) {
+            function h(e, t) {
                 let n;
                 e = null != e ? e : {};
                 let {
@@ -2330,7 +1826,7 @@
                 })
             }
 
-            function p(e, t) {
+            function R(e, t) {
                 let n = [];
                 return l(e).forEach(e => {
                     if (null == e || 0 === e.results.length) return;
@@ -2348,34 +1844,34 @@
                 }), n.filter(e => e)
             }
 
-            function R(e) {
+            function p(e) {
                 return e.reduce((e, t) => null == t ? e : t.results.length + e, 0)
             }
 
-            function g(e) {
+            function A(e) {
                 return null == e ? "" : e.map(e => e.getFullMatch()).join("")
             }
-            let A = new a.default;
+            let g = new a.default;
 
-            function C(e) {
-                return A.tokenize(e)
+            function N(e) {
+                return g.tokenize(e)
             }
 
             function I() {
-                return A.clearCache()
+                return g.clearCache()
             }
 
             function m(e) {
-                return null != e ? f[e] : null
+                return null != e ? _[e] : null
             }
 
-            function N(e, t) {
+            function C(e, t) {
                 let n = c.IS_SEARCH_FILTER_TOKEN.test(e.type);
                 return (null != t || !n) && (null == t || !n || !!c.IS_SEARCH_ANSWER_TOKEN.test(t.type)) && !0
             }
 
             function y() {
-                (0, u.refreshSearchTokens)(), A.reset(), l(u.default).forOwn((e, t) => A.addRule({
+                (0, u.refreshSearchTokens)(), g.reset(), l(u.default).forOwn((e, t) => g.addRule({
                     type: t,
                     ...e
                 }))
@@ -2383,4 +1879,4 @@
         }
     }
 ]);
-//# sourceMappingURL=289e42524d7fb6b4efcf.js.map
+//# sourceMappingURL=cbfc0c343142dfdf0ee8.js.map
