@@ -19469,8 +19469,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -112198,7 +112198,8 @@ html .tabBadge__002b3 {
 }
 
 .modal_a32edf {
-    z-index: 0
+    z-index: 0;
+    max-height: 100%
 }
 
 .features_c2c4bf {
@@ -124254,4 +124255,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.56f7befd77514d5e5eba.css.map*/
+/*# sourceMappingURL=app.77d10499c3e9f5cd8847.css.map*/
