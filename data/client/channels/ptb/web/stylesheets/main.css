@@ -51212,6 +51212,11 @@ html .progress__4ef76 {
     margin-top: 30px
 }
 
+.tryingOutAvatarDecoration_f526bf {
+    position: absolute;
+    bottom: 0
+}
+
 .enable-forced-colors .banner_b7f1fb {
     border: 2px solid ButtonText;
     forced-color-adjust: none;
@@ -123907,4 +123912,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.30312dd220b47ac95bb8.css.map*/
+/*# sourceMappingURL=app.046826c2d546d8ba95e9.css.map*/
