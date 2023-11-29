@@ -5649,6 +5649,8 @@
                 avatarDecoration: "avatarDecoration__9affd",
                 previewContainer: "previewContainer_d611ef",
                 previewTextContainer: "previewTextContainer__2fa3a",
+                previewTitle: "previewTitle_bb7c50",
+                previewTitleContainer: "previewTitleContainer__89aa4",
                 profileEffect: "profileEffect__8c12b",
                 profileEffectBackground: "profileEffectBackground_c9a6c7",
                 profileEffectContainer: "profileEffectContainer_dd2b9f"
@@ -5796,13 +5798,29 @@
                 premiumBadgeText: "premiumBadgeText__2492a",
                 premiumBadgeWrapper: "premiumBadgeWrapper__58187",
                 shopForAllHeroBanner: "shopForAllHeroBanner__734b9",
-                shopLogo: "shopLogo__05413",
-                shopLogoText: "shopLogoText__6da15",
                 smallLeftSparkle: "smallLeftSparkle__78868",
                 smallRightSparkle: "smallRightSparkle_a14288",
                 smallSparkle: "smallSparkle__84935",
                 smallTopSparkle: "smallTopSparkle__0026e",
                 subscribeButton: "subscribeButton__04c7f"
+            }
+        },
+        60109: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                bannerArt: "bannerArt__63594",
+                bannerGrid: "bannerGrid_c6a4a0",
+                bannerGridMedium: "bannerGridMedium__86b6f",
+                bannerGridSmol: "bannerGridSmol_af8290",
+                bannerHand: "bannerHand__22b18",
+                bannerTitle: "bannerTitle_faef60",
+                heroBanner: "heroBanner_d3ffc9",
+                heroBannerFullScreen: "heroBannerFullScreen_ee783c",
+                heroBannerWithSidebar: "heroBannerWithSidebar_e6b2f9",
+                heroDescription: "heroDescription__4f6a2",
+                heroSubtitle: "heroSubtitle_aefcb1",
+                shopLogo: "shopLogo_f8bf08",
+                shopLogoText: "shopLogoText_b52465"
             }
         },
         173046: function(e, t, o) {
@@ -5817,8 +5835,7 @@
         846367: function(e, t, o) {
             "use strict";
             e.exports = {
-                heading: "heading__1a617",
-                price: "price_ed9315"
+                heading: "heading__1a617"
             }
         },
         483622: function(e, t, o) {
@@ -5858,7 +5875,8 @@
                 titleContainer: "titleContainer_faa17e",
                 titleImage: "titleImage__09f75",
                 tooltip: "tooltip__1a014",
-                unlockDiscountButton: "unlockDiscountButton__10cd2"
+                unlockDiscountButton: "unlockDiscountButton__10cd2",
+                winterCategoryBanner: "winterCategoryBanner_d13ac3 categoryBanner_f3b247"
             }
         },
         492666: function(e, t, o) {
@@ -20895,7 +20913,8 @@
                 profileEffectsModalCustomizationPreviewWithoutTheme: "profileEffectsModalCustomizationPreviewWithoutTheme__41d37 profileCustomizationPreview_ccc6a9",
                 status: "status_be3f03",
                 statusDot: "statusDot__468f8",
-                statusDotBackground: "statusDotBackground__56e10"
+                statusDotBackground: "statusDotBackground__56e10",
+                tryingOutAvatarDecoration: "tryingOutAvatarDecoration_f526bf"
             }
         },
         792841: function(e, t, o) {
