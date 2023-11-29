@@ -2812,10 +2812,10 @@
                     guildId: e.guild_id,
                     location: "useCanPostPollsInChannel"
                 });
-                return !!(d.ChannelTypesSets.POLLS.has(e.type) && s.default.can(d.Permissions.SEND_MESSAGES, e)) && (e.isPrivate() ? e.recipients.every(e => {
+                return !!d.ChannelTypesSets.POLLS.has(e.type) && (e.isPrivate() ? e.recipients.every(e => {
                     let t = i.default.getUser(e);
-                    return null == t ? void 0 : t.isStaff()
-                }) : t)
+                    return (null == t ? void 0 : t.isStaff()) === !0
+                }) : t && s.default.can(d.Permissions.SEND_MESSAGES, e))
             }
 
             function E(e, t) {
@@ -2994,4 +2994,4 @@
         }
     }
 ]);
-//# sourceMappingURL=be6130b9062a2cc46dc6.js.map
+//# sourceMappingURL=5241a8e32c18d6fbacd9.js.map
