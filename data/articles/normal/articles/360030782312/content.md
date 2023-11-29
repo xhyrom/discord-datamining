@@ -21,7 +21,8 @@
 <p>You will not be charged and you will receive an email confirming renewal at $0.</p>
 <p>To view your Subscription Credit:</p>
 <p>1. Start by logging into your Discord account on the desktop or browser version of the app.</p>
-<p>2. Tap on the cog wheel icon next to your username to open up <strong>User Settings.</strong>3. Then tap on the <strong>Subscriptions</strong> tab in the left side bar.</p>
+<p>2. Tap on the cog wheel icon next to your username to open up <strong>User Settings.</strong></p>
+<p>3. Then tap on the <strong>Subscriptions</strong> tab in the left side bar.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17353099028631" alt="subscription_credit.png"></p>
 <h2 id="h_01H9RC8CQ3J7BMS27AGTS47B3R">What are the limitations of Subscription Credit?</h2>
 <h3 id="h_01H9RC8CQ4VTDWQV46KKA5DBDH"><span style="color: #434343;" data-darkreader-inline-color="">Subscription credit can only be consumed and redeemed for matching Nitro subscriptions. Nitro for Nitro, Nitro Basic for Nitro Basic, and Nitro Classic for Nitro Classic.</span></h3>
