@@ -898,7 +898,7 @@
                 SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES: 32,
                 SUPPRESS_CHANNEL_PROMPT_DEADCHAT: 128
             });
-            (IP = G || (G = {})).DISCONNECTED = "DISCONNECTED", IP.AWAITING_ENDPOINT = "AWAITING_ENDPOINT", IP.AUTHENTICATING = "AUTHENTICATING", IP.CONNECTING = "CONNECTING", IP.RTC_DISCONNECTED = "RTC_DISCONNECTED", IP.RTC_CONNECTING = "RTC_CONNECTING", IP.RTC_CONNECTED = "RTC_CONNECTED", IP.NO_ROUTE = "NO_ROUTE", IP.ICE_CHECKING = "ICE_CHECKING", IP.DTLS_CONNECTING = "DTLS_CONNECTING", (IM = u || (u = {})).UNKNOWN = "unknown", IM.BAD = "bad", IM.AVERAGE = "average", IM.FINE = "fine", (IU = p || (p = {})).CONNECTED = "connected", IU.CONNECTING = "connecting", IU.ERROR = "error", (Id = B || (B = {})).MANUAL_ENABLED = "MANUAL_ENABLED", Id.AUTO_PROBING = "AUTO_PROBING", Id.AUTO_ENABLED = "AUTO_ENABLED", Id.DISABLED = "DISABLED", Id.NONE = "NONE", (IG = f || (f = {})).LOGIN = "Login", IG.REGISTER = "Register", IG.INVITE = "Accept Invite Page", IG.VERIFY = "Verify Email", IG.DISABLE_EMAIL_NOTIFICATIONS = "Disable Email Notifications", IG.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS = "Disable Server Highlight Notifications", IG.AUTHORIZE_IP = "Authorize Ip", IG.REJECT_IP = "Reject Ip", IG.REJECT_MFA = "Reject MFA", IG.REPORT = "Report Illegal Content", IG.AUTHORIZE_PAYMENT = "Authorize Payment", IG.RESET = "Reset", IG.HANDOFF = "Handoff", IG.UNKNOWN = "Unknown", IG.LANDING = "Landing", (Iu = H || (H = {})).SENT = "SENT", Iu.SENDING = "SENDING", Iu.SEND_FAILED = "SEND_FAILED";
+            (IP = G || (G = {})).DISCONNECTED = "DISCONNECTED", IP.AWAITING_ENDPOINT = "AWAITING_ENDPOINT", IP.AUTHENTICATING = "AUTHENTICATING", IP.CONNECTING = "CONNECTING", IP.RTC_DISCONNECTED = "RTC_DISCONNECTED", IP.RTC_CONNECTING = "RTC_CONNECTING", IP.RTC_CONNECTED = "RTC_CONNECTED", IP.NO_ROUTE = "NO_ROUTE", IP.ICE_CHECKING = "ICE_CHECKING", IP.DTLS_CONNECTING = "DTLS_CONNECTING", (IM = u || (u = {})).UNKNOWN = "unknown", IM.BAD = "bad", IM.AVERAGE = "average", IM.FINE = "fine", (IU = p || (p = {})).CONNECTED = "connected", IU.CONNECTING = "connecting", IU.ERROR = "error", (Id = B || (B = {})).MANUAL_ENABLED = "MANUAL_ENABLED", Id.AUTO_PROBING = "AUTO_PROBING", Id.AUTO_ENABLED = "AUTO_ENABLED", Id.DISABLED = "DISABLED", Id.NONE = "NONE", (IG = f || (f = {})).LOGIN = "Login", IG.REGISTER = "Register", IG.INVITE = "Accept Invite Page", IG.VERIFY = "Verify Email", IG.DISABLE_EMAIL_NOTIFICATIONS = "Disable Email Notifications", IG.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS = "Disable Server Highlight Notifications", IG.AUTHORIZE_IP = "Authorize Ip", IG.REJECT_IP = "Reject Ip", IG.REJECT_MFA = "Reject MFA", IG.REPORT = "Report Illegal Content", IG.REPORT_SECOND_LOOK = "Report Second Look", IG.AUTHORIZE_PAYMENT = "Authorize Payment", IG.RESET = "Reset", IG.HANDOFF = "Handoff", IG.UNKNOWN = "Unknown", IG.LANDING = "Landing", (Iu = H || (H = {})).SENT = "SENT", Iu.SENDING = "SENDING", Iu.SEND_FAILED = "SEND_FAILED";
             let A7 = new Set([A$.MessageTypes.REPLY, A$.MessageTypes.THREAD_STARTER_MESSAGE]),
                 A9 = Object.freeze({
                     [A$.MessageTypes.DEFAULT]: !0,
@@ -1411,6 +1411,7 @@
                     SUBMIT_UNAUTHENTICATED_REPORT_MENU: _ => "/reporting/unauthenticated/".concat(_),
                     SEND_UNAUTHENTICATED_REPORT_PINCODE: _ => "/reporting/unauthenticated/".concat(_, "/code"),
                     VERIFY_UNAUTHENTICATED_REPORT: _ => "/reporting/unauthenticated/".concat(_, "/verify"),
+                    SUBMIT_REPORT_SECOND_LOOK: "/reporting/review",
                     STAGE_INSTANCES: "/stage-instances",
                     STAGE_INSTANCES_EXTRA: "/stage-instances/extra",
                     STAGE_INSTANCE: _ => "/stage-instances/".concat(_),
@@ -1704,6 +1705,7 @@
                     SERVER_SHOP: _ => "/channels/".concat(_, "/shop"),
                     GUILD_PRODUCT: (_, E) => "/channels/".concat(_, "/shop/").concat(E),
                     REPORT: "/report",
+                    REPORT_SECOND_LOOK: "/report-review",
                     COLLECTIBLES_SHOP: "/shop",
                     COLLECTIBLES_SHOP_FULLSCREEN: "/shop/fullscreen",
                     COLLECTIBLES_SHOP_PRODUCT_DETAIL: _ => "/shop/product/".concat(_)
@@ -13099,4 +13101,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d34ca26df33566386ccf.js.map
+//# sourceMappingURL=39c6090d8b218416cf50.js.map
