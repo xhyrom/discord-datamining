@@ -661,20 +661,15 @@
                     r = null == a ? void 0 : a.getGuildId(),
                     c = d.default.getCurrentUser();
                 if (null == a || null == t || null == r && !a.isPrivate() || null == c) return !1;
-                let f = o.ActivitiesInTextExperiment.getCurrentConfig({
-                        location: "joinEmbeddedActivity"
-                    }, {
-                        autoTrackExposure: !1
-                    }).isActivitiesInTextEnabled,
-                    v = (0, _.default)(a.id),
-                    S = T.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(a.type);
-                if (v) {
+                let f = (0, _.default)(a.id),
+                    v = T.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(a.type);
+                if (f) {
                     let e = await (0, E.default)({
                         channelId: a.id,
                         bypassChangeModal: l
                     });
                     if (!e) return !1
-                } else if (!f || !S) return !1;
+                } else if (!(0, o.isActivitiesInTextEnabled)(a, "joinEmbeddedActivity") || !v) return !1;
                 return (0, I.default)(r, t), (0, s.startEmbeddedActivity)(t, {
                     application_id: e.application_id
                 }, n), (0, A.default)({
@@ -943,20 +938,15 @@
                     bypassChangeVcModal: d
                 } = e, _ = r.default.getCurrentUser(), E = l.default.getChannel(t);
                 if (null == _ || null == E) return !1;
-                let A = o.ActivitiesInTextExperiment.getCurrentConfig({
-                        location: "handleStartEmbeddedActivity"
-                    }, {
-                        autoTrackExposure: !1
-                    }).isActivitiesInTextEnabled,
-                    S = (0, I.default)(t),
-                    y = p.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(E.type);
-                if (S) {
+                let A = (0, I.default)(t),
+                    S = p.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(E.type);
+                if (A) {
                     let e = await (0, T.default)({
                         channelId: t,
                         bypassChangeModal: d
                     });
                     if (!e) return !1
-                } else if (!A || !y) return !1;
+                } else if (!(0, o.isActivitiesInTextEnabled)(E, "handleStartEmbeddedActivity") || !S) return !1;
                 return f.startEmbeddedActivity(t, {
                     application_id: a.id,
                     name: a.name
@@ -2160,4 +2150,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1eea288afea794d79086.js.map
+//# sourceMappingURL=a754b912638afe0e837f.js.map
