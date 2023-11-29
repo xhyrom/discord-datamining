@@ -19227,8 +19227,11 @@
                 defaultContainer: "defaultContainer__91554",
                 defaultTextInput: "defaultTextInput__91909",
                 expressionPickerButtonImage: "expressionPickerButtonImage__5366d",
+                gifDefault: "gifDefault_a0c5fa",
+                gifJumbo: "gifJumbo__8044e",
                 imageExpressionPickerButton: "imageExpressionPickerButton_bfd5b8",
-                imageOnlyContainer: "imageOnlyContainer__04301"
+                imageOnlyContainer: "imageOnlyContainer__04301",
+                spinnerWrapper: "spinnerWrapper__6bb67"
             }
         },
         301893: function(e, t, o) {

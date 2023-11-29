@@ -22595,6 +22595,10 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-left: 8px
 }
 
+.icon_eff5d4 {
+    color: var(--channel-icon)
+}
+
 .typeThread__2f91c.wrapper__7bcde {
     margin-left: 36px
 }
@@ -22618,9 +22622,33 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     flex: 0 0 auto
 }
 
+.iconWithGuildIcon__4461b {
+    background: var(--background-accent);
+    border-radius: var(--radius-round);
+    color: var(--text-secondary);
+    height: 12px;
+    margin-left: 12px;
+    margin-top: -15px;
+    overflow: visible;
+    padding: 4px;
+    position: relative;
+    width: 12px
+}
+
+.channelGuildIcon_c8b7d4 {
+    border-radius: var(--radius-sm);
+    height: 24px;
+    width: 24px
+}
+
 .iconContainer__3f9b0 {
     position: relative;
     margin-right: 6px
+}
+
+.iconContainerWithGuildIcon_ddf865 {
+    margin-top: -2px;
+    margin-bottom: -2px
 }
 
 .favoritesSuggestion__4f872 {
@@ -22724,13 +22752,20 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     background: var(--bg-overlay-active, var(--background-modifier-active))
 }
 
+.modeUnreadImportant_efb53e .iconWithGuildIcon__4461b,
+.modeUnreadImportant_efb53e:hover .iconWithGuildIcon__4461b {
+    color: var(--text-secondary)
+}
+
+.modeSelected__487d6 .iconWithGuildIcon__4461b,
+.modeSelected__487d6:hover .iconWithGuildIcon__4461b {
+    background: var(--interactive-normal);
+    color: var(--background-secondary)
+}
+
 .modeSelected__487d6 .link__95dc0,
 .modeSelected__487d6:hover .link__95dc0 {
     background: var(--bg-overlay-selected, var(--background-modifier-selected))
-}
-
-.icon_eff5d4 {
-    color: var(--channel-icon)
 }
 
 .name__8d1ec {
@@ -67482,6 +67517,10 @@ input::-webkit-inner-spin-button {
     margin-bottom: 8px
 }
 
+.threadListWithGuildIcon__81019 {
+    left: 10px
+}
+
 .newChannel_f99b92 {
     color: var(--brand-560)
 }
@@ -109376,8 +109415,10 @@ html .invoiceCancelRow_a8669b {
 
 .defaultContainer__91554 {
     display: flex;
+    height: 48px;
     align-items: center;
-    background-color: var(--input-background)
+    background-color: var(--input-background);
+    overflow: hidden
 }
 
 .defaultTextInput__91909 {
@@ -109389,7 +109430,8 @@ html .invoiceCancelRow_a8669b {
     background-color: var(--background-primary);
     width: 48%;
     height: 158px;
-    cursor: pointer
+    cursor: pointer;
+    overflow: hidden
 }
 
 .imageExpressionPickerButton_bfd5b8 {
@@ -109406,6 +109448,25 @@ html .invoiceCancelRow_a8669b {
     padding-right: 16px;
     color: var(--interactive-active);
     cursor: pointer
+}
+
+.gifJumbo__8044e {
+    width: 100%;
+    height: 100%
+}
+
+.gifDefault_a0c5fa {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px
+}
+
+.spinnerWrapper__6bb67 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    cursor: default
 }
 
 .container__1b71e {
@@ -124189,4 +124250,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b20ef468dc095041c8d9.css.map*/
+/*# sourceMappingURL=app.dfece68a7524d2a47225.css.map*/
