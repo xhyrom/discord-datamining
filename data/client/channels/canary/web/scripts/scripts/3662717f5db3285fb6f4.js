@@ -1,6 +1,6 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["7704"], {
-        440540: function(i, x, t) {
+    ["97146"], {
+        440540: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -309,7 +309,7 @@
                 markers: []
             }
         },
-        811217: function(i, x, t) {
+        811217: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -2058,7 +2058,7 @@
                 markers: []
             }
         },
-        504936: function(i, x, t) {
+        504936: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -3807,7 +3807,7 @@
                 markers: []
             }
         },
-        988078: function(i, x, t) {
+        988078: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -6115,7 +6115,7 @@
                 markers: []
             }
         },
-        939118: function(i, x, t) {
+        939118: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -7864,7 +7864,7 @@
                 markers: []
             }
         },
-        101559: function(i, x, t) {
+        101559: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -9613,7 +9613,7 @@
                 markers: []
             }
         },
-        326209: function(i, x, t) {
+        326209: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -10259,7 +10259,7 @@
                 markers: []
             }
         },
-        610237: function(i, x, t) {
+        610237: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -10905,7 +10905,7 @@
                 markers: []
             }
         },
-        733261: function(i, x, t) {
+        733261: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -11551,7 +11551,7 @@
                 markers: []
             }
         },
-        596926: function(i, x, t) {
+        596926: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -12197,7 +12197,7 @@
                 markers: []
             }
         },
-        761999: function(i, x, t) {
+        761999: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -12843,7 +12843,7 @@
                 markers: []
             }
         },
-        189580: function(i, x, t) {
+        189580: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -14763,7 +14763,7 @@
                 markers: []
             }
         },
-        679126: function(i, x, t) {
+        679126: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -16683,7 +16683,7 @@
                 markers: []
             }
         },
-        101593: function(i, x, t) {
+        101593: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -18603,7 +18603,7 @@
                 markers: []
             }
         },
-        414668: function(i, x, t) {
+        414668: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -20523,7 +20523,7 @@
                 markers: []
             }
         },
-        97656: function(i, x, t) {
+        97656: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -22443,7 +22443,7 @@
                 markers: []
             }
         },
-        812007: function(i, x, t) {
+        812007: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -24363,7 +24363,7 @@
                 markers: []
             }
         },
-        721336: function(i, x, t) {
+        721336: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -24720,7 +24720,7 @@
                 markers: []
             }
         },
-        954877: function(i, x, t) {
+        954877: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -25077,7 +25077,7 @@
                 markers: []
             }
         },
-        662151: function(i, x, t) {
+        662151: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -25434,7 +25434,7 @@
                 markers: []
             }
         },
-        155232: function(i, x, t) {
+        155232: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -25791,7 +25791,7 @@
                 markers: []
             }
         },
-        843093: function(i, x, t) {
+        843093: function(i, t, x) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -26262,9 +26262,781 @@
                 markers: []
             }
         },
-        529805: function(i, x, t) {
+        721698: function(i, t, x) {
             "use strict";
-            t.r(x), t.d(x, {
+            x.r(t), x.d(t, {
+                getEmbedApplication: function() {
+                    return l
+                },
+                getApplication: function() {
+                    return _
+                },
+                getCategories: function() {
+                    return I
+                },
+                getSimilarApplications: function() {
+                    return f
+                },
+                search: function() {
+                    return u
+                },
+                getCollections: function() {
+                    return h
+                },
+                fetchIntegrationApplicationIdsForMyGuilds: function() {
+                    return w
+                }
+            }), x("222007");
+            var s = x("981980"),
+                a = x("872717"),
+                o = x("913144"),
+                y = x("915639"),
+                d = x("349503"),
+                k = x("831109"),
+                p = x("810047"),
+                r = x("856894"),
+                e = x("388647"),
+                n = x("506061"),
+                m = x("49111");
+            let c = new Map;
+            async function l(i) {
+                var t;
+                let x = Date.now(),
+                    y = null !== (t = c.get(i)) && void 0 !== t ? t : 0;
+                if (d.default.getApplicationFetchState(i) === d.FetchState.FETCHING || d.default.isInvalidApplication(i) || x < y + 6e5) return;
+                c.set(i, x), o.default.dispatch({
+                    type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
+                    applicationId: i
+                });
+                let k = new s.default(1e3, 5e3),
+                    p = (i, t) => 429 === i.status && !!(k.fails < 10) && (k.fail(() => {
+                        t(void 0, p)
+                    }), !0);
+                try {
+                    let t = await a.default.get({
+                            url: m.Endpoints.APPLICATION_DIRECTORY_EMBED_APPLICATION(i),
+                            backoff: k,
+                            retries: 10,
+                            interceptResponse: p
+                        }),
+                        x = t.body;
+                    o.default.dispatch({
+                        type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS",
+                        application: x
+                    })
+                } catch (t) {
+                    o.default.dispatch({
+                        type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE",
+                        applicationId: i,
+                        isInvalidApplication: !0
+                    })
+                }
+            }
+            async function _(i) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+                    x = Date.now(),
+                    s = d.default.getApplicationFetchState(i),
+                    k = d.default.getApplicationLastFetchTime(i),
+                    {
+                        dontRefetchMs: p
+                    } = t;
+                if (s !== d.FetchState.FETCHING) {
+                    if (!(null != k && k + (null != p ? p : 6e5) > x)) {
+                        o.default.dispatch({
+                            type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
+                            applicationId: i
+                        });
+                        try {
+                            let t = await a.default.get({
+                                url: m.Endpoints.APPLICATION_DIRECTORY_APPLICATION(i),
+                                query: {
+                                    locale: y.default.locale
+                                }
+                            });
+                            o.default.dispatch({
+                                type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS",
+                                application: t.body
+                            })
+                        } catch (t) {
+                            o.default.dispatch({
+                                type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE",
+                                applicationId: i,
+                                isInvalidApplication: !0
+                            })
+                        }
+                    }
+                }
+            }
+            async function I() {
+                let i = Date.now(),
+                    t = k.default.getLastFetchTimeMs();
+                if (null != t && t + 6e5 > i) return;
+                let x = await a.default.get({
+                    url: m.Endpoints.APPLICATION_DIRECTORY_CATEGORIES,
+                    query: {
+                        locale: y.default.locale
+                    }
+                });
+                o.default.dispatch({
+                    type: "APPLICATION_DIRECTORY_FETCH_CATEGORIES_SUCCESS",
+                    categories: x.body
+                })
+            }
+            async function f(i) {
+                var t;
+                let {
+                    applicationId: x,
+                    guildId: s,
+                    options: d
+                } = i, {
+                    page: k
+                } = null != d ? d : {}, p = Date.now(), r = e.default.getFetchState({
+                    applicationId: x,
+                    guildId: s
+                }), {
+                    lastFetchTimeMs: n
+                } = null !== (t = e.default.getSimilarApplications({
+                    applicationId: x,
+                    guildId: s
+                })) && void 0 !== t ? t : {};
+                if (r !== e.FetchState.FETCHING) {
+                    if (null == n || !(n + 6e5 > p)) {
+                        o.default.dispatch({
+                            type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS",
+                            applicationId: x,
+                            guildId: s,
+                            page: k
+                        });
+                        try {
+                            let i = await a.default.get({
+                                url: m.Endpoints.APPLICATION_DIRECTORY_SIMILAR(x),
+                                query: {
+                                    guild_id: s,
+                                    page: k,
+                                    locale: y.default.locale
+                                }
+                            });
+                            o.default.dispatch({
+                                type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS",
+                                applicationId: x,
+                                guildId: s,
+                                similarApplications: i.body.applications,
+                                loadId: i.body.load_id,
+                                page: k,
+                                totalPages: i.body.num_pages
+                            })
+                        } catch (i) {
+                            o.default.dispatch({
+                                type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE",
+                                applicationId: x,
+                                guildId: s,
+                                page: k
+                            })
+                        }
+                    }
+                }
+            }
+            async function u(i) {
+                var t;
+                let {
+                    query: x,
+                    guildId: s,
+                    options: d,
+                    onSuccessCallback: k
+                } = i, {
+                    page: p,
+                    categoryId: e
+                } = null != d ? d : {}, n = Date.now(), c = r.default.getFetchState({
+                    query: x,
+                    guildId: s,
+                    page: p,
+                    categoryId: e
+                }), {
+                    lastFetchTimeMs: l
+                } = null !== (t = r.default.getSearchResults({
+                    query: x,
+                    guildId: s,
+                    page: p,
+                    categoryId: e
+                })) && void 0 !== t ? t : {};
+                if (c !== r.FetchState.FETCHING) {
+                    if (null == l || !(l + 6e5 > n)) {
+                        o.default.dispatch({
+                            type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
+                            query: x,
+                            guildId: s,
+                            page: p,
+                            categoryId: e
+                        });
+                        try {
+                            let i = await a.default.get({
+                                url: m.Endpoints.APPLICATION_DIRECTORY_SEARCH,
+                                query: {
+                                    query: x,
+                                    guild_id: s,
+                                    page: p,
+                                    category_id: e,
+                                    locale: y.default.locale
+                                }
+                            });
+                            o.default.dispatch({
+                                type: "APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS",
+                                query: x,
+                                guildId: s,
+                                page: p,
+                                categoryId: e,
+                                result: {
+                                    results: i.body.results,
+                                    countsByCategory: i.body.counts_by_category,
+                                    totalCount: i.body.result_count,
+                                    totalPages: i.body.num_pages,
+                                    type: i.body.type,
+                                    loadId: i.body.load_id
+                                }
+                            }), null == k || k(i.body.result_count)
+                        } catch (i) {
+                            o.default.dispatch({
+                                type: "APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE",
+                                query: x,
+                                guildId: s,
+                                page: p,
+                                categoryId: e
+                            })
+                        }
+                    }
+                }
+            }
+            async function h() {
+                let {
+                    includesInactive: i = !1
+                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = Date.now(), x = p.default.getFetchState({
+                    includesInactive: i
+                }), s = p.default.getLastFetchTimeMs({
+                    includesInactive: i
+                });
+                if (x !== p.FetchState.FETCHING) {
+                    if (null == s || !(s + 6e5 > t)) {
+                        o.default.dispatch({
+                            type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS",
+                            includesInactive: i
+                        });
+                        try {
+                            let t = await a.default.get({
+                                url: m.Endpoints.APPLICATION_DIRECTORY_COLLECTIONS,
+                                query: {
+                                    includes_inactive: i,
+                                    locale: y.default.locale
+                                }
+                            });
+                            o.default.dispatch({
+                                type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS",
+                                collections: t.body,
+                                includesInactive: i
+                            })
+                        } catch (t) {
+                            o.default.dispatch({
+                                type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE",
+                                includesInactive: i
+                            })
+                        }
+                    }
+                }
+            }
+            async function w() {
+                let i = Date.now(),
+                    t = n.default.getFetchState(),
+                    x = n.default.getLastFetchTimeMs(),
+                    s = n.default.getNextFetchRetryTimeMs();
+                if (t !== n.FetchState.FETCHING && (null == x || !(x + 864e5 > i))) {
+                    if (null == s || !(i < s)) {
+                        o.default.dispatch({
+                            type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS"
+                        });
+                        try {
+                            let i = await a.default.get({
+                                url: m.Endpoints.INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS
+                            });
+                            o.default.dispatch({
+                                type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_SUCCESS",
+                                guildIdToApplicationIds: i.body
+                            })
+                        } catch (t) {
+                            var y;
+                            let i = (null == t ? void 0 : t.status) === 429;
+                            o.default.dispatch({
+                                type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_FAILURE",
+                                retryAfterSeconds: i ? null == t ? void 0 : null === (y = t.body) || void 0 === y ? void 0 : y.retry_after : void 0
+                            })
+                        }
+                    }
+                }
+            }
+        },
+        831109: function(i, t, x) {
+            "use strict";
+            x.r(t), x.d(t, {
+                default: function() {
+                    return k
+                }
+            });
+            var s = x("446674"),
+                a = x("913144");
+            let o = [],
+                y = null;
+            class d extends s.default.Store {
+                getLastFetchTimeMs() {
+                    return y
+                }
+                getCategories() {
+                    return o
+                }
+            }
+            d.displayName = "ApplicationDirectoryCategoriesStore";
+            var k = new d(a.default, {
+                APPLICATION_DIRECTORY_FETCH_CATEGORIES_SUCCESS: function(i) {
+                    let {
+                        categories: t
+                    } = i;
+                    o = t, y = Date.now()
+                }
+            })
+        },
+        810047: function(i, t, x) {
+            "use strict";
+            x.r(t), x.d(t, {
+                FetchState: function() {
+                    return a
+                },
+                default: function() {
+                    return c
+                }
+            });
+            var s, a, o = x("917351"),
+                y = x.n(o),
+                d = x("446674"),
+                k = x("913144");
+            (s = a || (a = {}))[s.FETCHING = 0] = "FETCHING", s[s.FETCHED = 1] = "FETCHED", s[s.ERROR = 2] = "ERROR";
+            let p = {},
+                r = {},
+                e = {};
+
+            function n(i) {
+                let {
+                    includesInactive: t
+                } = i;
+                return "includes_inactive:".concat(t)
+            }
+            class m extends d.default.Store {
+                getLastFetchTimeMs(i) {
+                    let {
+                        includesInactive: t
+                    } = i;
+                    return e[n({
+                        includesInactive: t
+                    })]
+                }
+                getFetchState(i) {
+                    let {
+                        includesInactive: t
+                    } = i;
+                    return r[n({
+                        includesInactive: t
+                    })]
+                }
+                getCollections(i) {
+                    let {
+                        includesInactive: t
+                    } = i;
+                    return p[n({
+                        includesInactive: t
+                    })]
+                }
+            }
+            var c = new m(k.default, {
+                APPLICATION_DIRECTORY_FETCH_COLLECTIONS: function(i) {
+                    let {
+                        includesInactive: t
+                    } = i;
+                    r = {
+                        ...r,
+                        [n({
+                            includesInactive: t
+                        })]: 0
+                    }
+                },
+                APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS: function(i) {
+                    var t;
+                    let {
+                        collections: x,
+                        includesInactive: s
+                    } = i, a = n({
+                        includesInactive: s
+                    });
+                    let o = (t = x.map(i => {
+                        var t;
+                        return i.application_directory_collection_items = (t = i.application_directory_collection_items, y.sortBy(t, ["position", "id"])), i
+                    }), y.sortBy(t, ["position", "id"]));
+                    p = {
+                        ...p,
+                        [a]: o
+                    }, r = {
+                        ...r,
+                        [a]: 1
+                    };
+                    let d = Date.now();
+                    e = {
+                        ...e,
+                        [a]: d
+                    }
+                },
+                APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE: function(i) {
+                    let {
+                        includesInactive: t
+                    } = i;
+                    r = {
+                        ...r,
+                        [n({
+                            includesInactive: t
+                        })]: 2
+                    }
+                }
+            })
+        },
+        856894: function(i, t, x) {
+            "use strict";
+            x.r(t), x.d(t, {
+                FetchState: function() {
+                    return a
+                },
+                default: function() {
+                    return m
+                }
+            });
+            var s, a, o = x("693566"),
+                y = x.n(o),
+                d = x("446674"),
+                k = x("913144");
+
+            function p(i) {
+                let {
+                    query: t,
+                    guildId: x,
+                    page: s,
+                    categoryId: a
+                } = i;
+                return "query:'".concat(t, "' guildId:").concat(x, " page:").concat(s, " categoryId:").concat(a)
+            }(s = a || (a = {}))[s.FETCHING = 0] = "FETCHING", s[s.FETCHED = 1] = "FETCHED", s[s.ERROR = 2] = "ERROR";
+            let r = new y({
+                    max: 20
+                }),
+                e = {};
+            class n extends d.default.Store {
+                getSearchResults(i) {
+                    let {
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    } = i, o = p({
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    });
+                    return r.get(o)
+                }
+                getFetchState(i) {
+                    let {
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    } = i, o = p({
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    });
+                    return e[o]
+                }
+            }
+            n.displayName = "ApplicationDirectorySearchStore";
+            var m = new n(k.default, {
+                APPLICATION_DIRECTORY_FETCH_SEARCH: function(i) {
+                    let {
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    } = i, o = p({
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    });
+                    e = {
+                        ...e,
+                        [o]: 0
+                    }
+                },
+                APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS: function(i) {
+                    let {
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a,
+                        result: o
+                    } = i, y = p({
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    });
+                    r.set(y, {
+                        lastFetchTimeMs: Date.now(),
+                        ...o
+                    }), e = {
+                        ...e,
+                        [y]: 1
+                    }
+                },
+                APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE: function(i) {
+                    let {
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    } = i, o = p({
+                        query: t,
+                        guildId: x,
+                        page: s,
+                        categoryId: a
+                    });
+                    e = {
+                        ...e,
+                        [o]: 2
+                    }
+                }
+            })
+        },
+        388647: function(i, t, x) {
+            "use strict";
+            x.r(t), x.d(t, {
+                FetchState: function() {
+                    return a
+                },
+                default: function() {
+                    return m
+                }
+            });
+            var s, a, o = x("693566"),
+                y = x.n(o),
+                d = x("446674"),
+                k = x("913144");
+
+            function p(i) {
+                let {
+                    applicationId: t,
+                    guildId: x,
+                    page: s
+                } = i;
+                return "applicationId:".concat(t, " guildId:").concat(x, " page:").concat(s)
+            }(s = a || (a = {}))[s.NOT_FETCHED = 0] = "NOT_FETCHED", s[s.FETCHING = 1] = "FETCHING", s[s.FETCHED = 2] = "FETCHED", s[s.ERROR = 3] = "ERROR";
+            let r = new y({
+                    max: 20
+                }),
+                e = {};
+            class n extends d.default.Store {
+                getSimilarApplications(i) {
+                    let {
+                        applicationId: t,
+                        guildId: x,
+                        page: s
+                    } = i;
+                    if (null == t) return;
+                    let a = p({
+                        applicationId: t,
+                        guildId: x,
+                        page: s
+                    });
+                    return r.get(a)
+                }
+                getFetchState(i) {
+                    let {
+                        applicationId: t,
+                        guildId: x,
+                        page: s
+                    } = i;
+                    if (null == t) return;
+                    let a = p({
+                        applicationId: t,
+                        guildId: x,
+                        page: s
+                    });
+                    return e[a]
+                }
+            }
+            n.displayName = "ApplicationDirectorySimilarApplicationsStore";
+            var m = new n(k.default, {
+                APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: function(i) {
+                    let {
+                        applicationId: t,
+                        guildId: x,
+                        page: s
+                    } = i, a = p({
+                        applicationId: t,
+                        guildId: x,
+                        page: s
+                    });
+                    e = {
+                        ...e,
+                        [a]: 1
+                    }
+                },
+                APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: function(i) {
+                    let {
+                        applicationId: t,
+                        guildId: x,
+                        similarApplications: s,
+                        loadId: a,
+                        page: o,
+                        totalPages: y
+                    } = i, d = p({
+                        applicationId: t,
+                        guildId: x,
+                        page: o
+                    });
+                    r.set(d, {
+                        lastFetchTimeMs: Date.now(),
+                        applications: s,
+                        loadId: a,
+                        page: o,
+                        totalPages: y
+                    }), e = {
+                        ...e,
+                        [d]: 2
+                    }
+                },
+                APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: function(i) {
+                    let {
+                        applicationId: t,
+                        guildId: x,
+                        page: s
+                    } = i, a = p({
+                        applicationId: t,
+                        guildId: x,
+                        page: s
+                    });
+                    e = {
+                        ...e,
+                        [a]: 3
+                    }
+                }
+            })
+        },
+        506061: function(i, t, x) {
+            "use strict";
+            x.r(t), x.d(t, {
+                FetchState: function() {
+                    return s
+                },
+                default: function() {
+                    return r
+                }
+            }), x("222007");
+            var s, a, o = x("446674"),
+                y = x("913144");
+            (a = s || (s = {}))[a.NOT_FETCHED = 0] = "NOT_FETCHED", a[a.FETCHING = 1] = "FETCHING", a[a.FETCHED = 2] = "FETCHED", a[a.ERROR = 3] = "ERROR";
+            let d = {
+                applicationIdToGuildIds: {},
+                lastFetchTimeMs: null,
+                nextFetchRetryTimeMs: null,
+                fetchState: 0
+            };
+
+            function k(i) {
+                let {
+                    applicationId: t,
+                    guildId: x
+                } = i;
+                null == d.applicationIdToGuildIds[t] && (d.applicationIdToGuildIds[t] = new Set), d.applicationIdToGuildIds[t].add(x), d.applicationIdToGuildIds[t] = new Set(d.applicationIdToGuildIds[t])
+            }
+            class p extends o.default.PersistedStore {
+                initialize(i) {
+                    if (null != i)
+                        for (let t in d.lastFetchTimeMs = i.lastFetchTimeMs, d.nextFetchRetryTimeMs = i.nextFetchRetryTimeMs, d.fetchState = i.fetchState, i.applicationIdToGuildIds) d.applicationIdToGuildIds[t] = new Set(i.applicationIdToGuildIds[t])
+                }
+                getState() {
+                    return d
+                }
+                getGuildIdsForApplication(i) {
+                    if (null != i) return d.applicationIdToGuildIds[i]
+                }
+                getLastFetchTimeMs() {
+                    return d.lastFetchTimeMs
+                }
+                getNextFetchRetryTimeMs() {
+                    return d.nextFetchRetryTimeMs
+                }
+                getFetchState() {
+                    return d.fetchState
+                }
+            }
+            p.displayName = "MyGuildApplicationsStore", p.persistKey = "MyGuildApplicationsStore";
+            var r = new p(y.default, {
+                LOGOUT: function() {
+                    d.applicationIdToGuildIds = {}, d.lastFetchTimeMs = null, d.nextFetchRetryTimeMs = null, d.fetchState = 0
+                },
+                FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS: function() {
+                    d.fetchState = 1
+                },
+                FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_SUCCESS: function(i) {
+                    let {
+                        guildIdToApplicationIds: t
+                    } = i;
+                    for (let i in d.fetchState = 2, d.lastFetchTimeMs = Date.now(), d.applicationIdToGuildIds = {}, d.nextFetchRetryTimeMs = null, t)
+                        for (let x of t[i]) k({
+                            applicationId: x,
+                            guildId: i
+                        })
+                },
+                FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_FAILURE: function(i) {
+                    let {
+                        retryAfterSeconds: t
+                    } = i;
+                    d.fetchState = 3, null != t && (d.nextFetchRetryTimeMs = Date.now() + 1e3 * t)
+                },
+                INTEGRATION_CREATE: function(i) {
+                    let {
+                        application: t,
+                        guildId: x
+                    } = i;
+                    null != t && k({
+                        applicationId: t.id,
+                        guildId: x
+                    })
+                },
+                INTEGRATION_DELETE: function(i) {
+                    let {
+                        applicationId: t,
+                        guildId: x
+                    } = i;
+                    null != t && ! function(i) {
+                        let {
+                            applicationId: t,
+                            guildId: x
+                        } = i;
+                        null != d.applicationIdToGuildIds[t] && (d.applicationIdToGuildIds[t].delete(x), d.applicationIdToGuildIds[t] = new Set(d.applicationIdToGuildIds[t]))
+                    }({
+                        applicationId: t,
+                        guildId: x
+                    })
+                }
+            })
+        },
+        529805: function(i, t, x) {
+            "use strict";
+            x.r(t), x.d(t, {
                 createPendingReply: function() {
                     return a
                 },
@@ -26275,29 +27047,29 @@
                     return y
                 }
             });
-            var s = t("913144");
+            var s = x("913144");
 
             function a(i) {
                 let {
-                    message: x,
-                    channel: t,
+                    message: t,
+                    channel: x,
                     shouldMention: a,
                     showMentionToggle: o
                 } = i;
                 s.default.dispatch({
                     type: "CREATE_PENDING_REPLY",
-                    message: x,
-                    channel: t,
+                    message: t,
+                    channel: x,
                     shouldMention: a,
                     showMentionToggle: o
                 })
             }
 
-            function o(i, x) {
+            function o(i, t) {
                 s.default.dispatch({
                     type: "SET_PENDING_REPLY_SHOULD_MENTION",
                     channelId: i,
-                    shouldMention: x
+                    shouldMention: t
                 })
             }
 
@@ -26308,10 +27080,10 @@
                 })
             }
         },
-        626334: function(i, x, t) {
+        626334: function(i, t, x) {
             "use strict";
             var s, a;
-            t.r(x), t.d(x, {
+            x.r(t), x.d(t, {
                 VoiceChannelEffectAnimationType: function() {
                     return s
                 },
@@ -26321,138 +27093,138 @@
             }), (a = s || (s = {}))[a.PREMIUM = 0] = "PREMIUM", a[a.BASIC = 1] = "BASIC";
             let o = 32
         },
-        397485: function(i, x, t) {
+        397485: function(i, t, x) {
             "use strict";
-            t.r(x), t.d(x, {
+            x.r(t), x.d(t, {
                 CUSTOM_CALL_SOUND_ANIMATION_RANGE: function() {
-                    return C
-                },
-                AnimationTypeToAnimations: function() {
-                    return T
-                },
-                getResizedEmojiData: function() {
-                    return R
-                },
-                sampleAnimationId: function() {
                     return P
                 },
+                AnimationTypeToAnimations: function() {
+                    return v
+                },
+                getResizedEmojiData: function() {
+                    return M
+                },
+                sampleAnimationId: function() {
+                    return H
+                },
                 getEffectUrl: function() {
-                    return D
+                    return G
                 },
                 getEffectAnnouncement: function() {
                     return Y
                 }
             });
-            var s = t("917351"),
-                a = t.n(s),
-                o = t("440540"),
-                y = t("811217"),
-                k = t("504936"),
-                d = t("988078"),
-                p = t("939118"),
-                r = t("101559"),
-                e = t("326209"),
-                m = t("610237"),
-                n = t("733261"),
-                c = t("596926"),
-                l = t("761999"),
-                _ = t("189580"),
-                f = t("679126"),
-                h = t("101593"),
-                I = t("414668"),
-                w = t("97656"),
-                b = t("812007"),
-                u = t("721336"),
-                g = t("954877"),
-                E = t("662151"),
-                A = t("155232"),
-                F = t("843093"),
-                N = t("867805"),
-                v = t("407063"),
-                L = t("697218"),
-                O = t("315102"),
-                M = t("402671"),
-                S = t("626334"),
-                U = t("782340");
-            let C = {
+            var s = x("917351"),
+                a = x.n(s),
+                o = x("440540"),
+                y = x("811217"),
+                d = x("504936"),
+                k = x("988078"),
+                p = x("939118"),
+                r = x("101559"),
+                e = x("326209"),
+                n = x("610237"),
+                m = x("733261"),
+                c = x("596926"),
+                l = x("761999"),
+                _ = x("189580"),
+                I = x("679126"),
+                f = x("101593"),
+                u = x("414668"),
+                h = x("97656"),
+                w = x("812007"),
+                b = x("721336"),
+                E = x("954877"),
+                T = x("662151"),
+                C = x("155232"),
+                A = x("843093"),
+                F = x("867805"),
+                O = x("407063"),
+                g = x("697218"),
+                R = x("315102"),
+                S = x("402671"),
+                N = x("626334"),
+                L = x("782340");
+            let P = {
                     start: 10,
                     end: 15
                 },
-                B = {
+                D = {
                     BASIC: [o],
-                    PREMIUM: [y, k, d, p, r, e, m, n, c, l, _, f, h, I, w, b, u, g, E, A, F]
+                    PREMIUM: [y, d, k, p, r, e, n, m, c, l, _, I, f, u, h, w, b, E, T, C, A]
                 },
-                T = {
-                    [S.VoiceChannelEffectAnimationType.BASIC]: B.BASIC,
-                    [S.VoiceChannelEffectAnimationType.PREMIUM]: B.PREMIUM
+                v = {
+                    [N.VoiceChannelEffectAnimationType.BASIC]: D.BASIC,
+                    [N.VoiceChannelEffectAnimationType.PREMIUM]: D.PREMIUM
                 },
-                R = a.memoize(i => new Promise(x => {
-                    let t = new Image;
-                    t.src = i, t.crossOrigin = "Anonymous", t.onload = () => {
-                        let s = S.EMOJI_SIZE * (0, v.getDevicePixelRatio)();
-                        if (t.width === s && t.height === s) x(i);
+                M = a.memoize(i => new Promise(t => {
+                    let x = new Image;
+                    x.src = i, x.crossOrigin = "Anonymous", x.onload = () => {
+                        let s = N.EMOJI_SIZE * (0, O.getDevicePixelRatio)();
+                        if (x.width === s && x.height === s) t(i);
                         else {
                             var a;
                             let i = document.createElement("canvas");
-                            i.width = s, i.height = s, null === (a = i.getContext("2d")) || void 0 === a || a.drawImage(t, 0, 0), x(i.toDataURL("image/png"))
+                            i.width = s, i.height = s, null === (a = i.getContext("2d")) || void 0 === a || a.drawImage(x, 0, 0), t(i.toDataURL("image/png"))
                         }
                     }
                 })),
-                P = (i, x) => {
-                    let t = T[i];
-                    if (null != x && i === S.VoiceChannelEffectAnimationType.PREMIUM) {
-                        let i = x.end + 1;
-                        return Math.floor(Math.random() * (x.start - i) + i)
+                H = (i, t) => {
+                    let x = v[i];
+                    if (null != t && i === N.VoiceChannelEffectAnimationType.PREMIUM) {
+                        let i = t.end + 1;
+                        return Math.floor(Math.random() * (t.start - i) + i)
                     }
-                    return Math.floor(Math.random() * t.length)
+                    return Math.floor(Math.random() * x.length)
                 };
 
-            function D(i) {
-                let x = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : S.EMOJI_SIZE;
+            function G(i) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : N.EMOJI_SIZE;
                 if (null != i.id) {
-                    var t;
-                    return O.default.getEmojiURL({
+                    var x;
+                    return R.default.getEmojiURL({
                         id: i.id,
-                        animated: null !== (t = i.animated) && void 0 !== t && t,
-                        size: x
+                        animated: null !== (x = i.animated) && void 0 !== x && x,
+                        size: t
                     })
                 }
-                let s = N.default.convertSurrogateToName(i.name, !1),
-                    a = N.default.getByName(s);
-                return null != a ? M.default.getURL(a.surrogates) : ""
+                let s = F.default.convertSurrogateToName(i.name, !1),
+                    a = F.default.getByName(s);
+                return null != a ? S.default.getURL(a.surrogates) : ""
             }
 
-            function V(i, x) {
+            function U(i, t) {
                 return a(i).map(i => {
-                    var t;
-                    return null !== (t = i[x]) && void 0 !== t ? t : null
+                    var x;
+                    return null !== (x = i[t]) && void 0 !== x ? x : null
                 }).filter(i => null != i).uniq().value()
             }
 
             function Y(i) {
-                var x, t, s, a, o, y;
+                var t, x, s, a, o, y;
                 if (i.length < 1) return "";
-                let k = V(i, "userId"),
-                    d = V(i, "emojiName"),
-                    p = d.length < 2 ? null !== (x = null == d ? void 0 : d[0]) && void 0 !== x ? x : "" : d.join(", ");
-                if (k.length < 1) return "";
-                if (1 === k.length) return U.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_SINGLE.format({
-                    firstUsername: null === (t = L.default.getUser(k[0])) || void 0 === t ? void 0 : t.username,
+                let d = U(i, "userId"),
+                    k = U(i, "emojiName"),
+                    p = k.length < 2 ? null !== (t = null == k ? void 0 : k[0]) && void 0 !== t ? t : "" : k.join(", ");
+                if (d.length < 1) return "";
+                if (1 === d.length) return L.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_SINGLE.format({
+                    firstUsername: null === (x = g.default.getUser(d[0])) || void 0 === x ? void 0 : x.username,
                     emojiNames: p
                 });
-                if (2 === k.length) return U.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_DOUBLE.format({
-                    firstUsername: null === (s = L.default.getUser(k[0])) || void 0 === s ? void 0 : s.username,
-                    secondUsername: null === (a = L.default.getUser(k[1])) || void 0 === a ? void 0 : a.username,
+                if (2 === d.length) return L.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_DOUBLE.format({
+                    firstUsername: null === (s = g.default.getUser(d[0])) || void 0 === s ? void 0 : s.username,
+                    secondUsername: null === (a = g.default.getUser(d[1])) || void 0 === a ? void 0 : a.username,
                     emojiNames: p
                 });
-                else return U.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_MULTIPLE.format({
-                    firstUsername: null === (o = L.default.getUser(k[0])) || void 0 === o ? void 0 : o.username,
-                    secondUsername: null === (y = L.default.getUser(k[1])) || void 0 === y ? void 0 : y.username,
-                    count: k.length - 2,
+                else return L.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_MULTIPLE.format({
+                    firstUsername: null === (o = g.default.getUser(d[0])) || void 0 === o ? void 0 : o.username,
+                    secondUsername: null === (y = g.default.getUser(d[1])) || void 0 === y ? void 0 : y.username,
+                    count: d.length - 2,
                     emojiNames: p
                 })
             }
         }
     }
 ]);
-//# sourceMappingURL=74e28e8dc215bf8e128b.js.map
+//# sourceMappingURL=3662717f5db3285fb6f4.js.map

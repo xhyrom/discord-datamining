@@ -23228,6 +23228,40 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--primary-400)
 }
 
+.activityButton__14226 {
+    max-height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.rocket__4ebd3 {
+    width: 32px;
+    height: 32px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    color: var(--interactive-normal)
+}
+
+.rocket__4ebd3>* {
+    fill: currentColor
+}
+
+.rocketHovered__5b88f {
+    color: var(--interactive-hover)
+}
+
+.rocketHovered__5b88f>* {
+    fill: currentColor
+}
+
+.buttonContainer__8ae8b {
+    display: flex;
+    position: relative;
+    margin-left: -8px
+}
+
 .mask__5b6df {
     display: block
 }
@@ -23521,6 +23555,247 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     width: 0;
     height: 0;
     pointer-events: none
+}
+
+.container__825bd {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-base-primary);
+    overflow-y: auto;
+    max-width: min(750px, 100%);
+    width: 750px
+}
+
+@media(min-width:1490px) {
+    .container__825bd {
+        width: 400px
+    }
+}
+
+.headerWhenSideCard__73e27 {
+    height: 58px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.headerCloseButton__478d5 {
+    margin-right: var(--spacing-16);
+    z-index: 1;
+    cursor: pointer
+}
+
+.contentContainer_eceb96 {
+    padding: 0 var(--spacing-16)var(--spacing-16)
+}
+
+.appIcon__8fccd {
+    margin-top: -40px;
+    margin-bottom: var(--spacing-4)
+}
+
+.appIconBorderThingy__86bde {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -76px;
+    margin-left: -4px;
+    background-color: var(--bg-base-primary);
+    box-shadow: var(--elevation-low)
+}
+
+.appName_eaaeed {
+    margin-bottom: var(--spacing-8)
+}
+
+.commandListHeader__4cfb2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing-24)
+}
+
+.sortSelector__17b3c {
+    display: flex;
+    align-items: center
+}
+
+.command_d22f9c {
+    padding: 8px 12px;
+    border-radius: var(--radius-sm)
+}
+
+.command_d22f9c:hover {
+    cursor: pointer;
+    background-color: var(--bg-mod-subtle)
+}
+
+.commandName_f2967b {
+    margin-bottom: var(--spacing-4)
+}
+
+.commandListHeading__16d25 {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-4);
+    text-transform: uppercase
+}
+
+.commandListHeadingIcon__56ad0 {
+    margin-right: var(--spacing-4)
+}
+
+.commandList__441e9 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-8)
+}
+
+.command__88971 {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 24px 8px 8px;
+    background-color: var(--bg-base-primary);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--elevation-medium)
+}
+
+.command__88971:hover {
+    cursor: pointer;
+    background-color: var(--bg-mod-faint)
+}
+
+.applicationIcon_eb275a {
+    height: 36px;
+    width: 36px;
+    margin-right: var(--spacing-8)
+}
+
+.listHeading_f3ef9b {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-4);
+    text-transform: uppercase
+}
+
+.listHeadingIcon_d76add {
+    margin-right: var(--spacing-4)
+}
+
+.applicationList__20f46 {
+    display: flex;
+    flex-direction: column
+}
+
+.application__91e8f {
+    display: flex;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm)
+}
+
+.application__91e8f:hover {
+    cursor: pointer;
+    background-color: var(--bg-mod-subtle)
+}
+
+.applicationIcon__9d1af {
+    margin-right: var(--spacing-12)
+}
+
+.applicationDetails__0a1da {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden
+}
+
+.applicationDescription__1b870 {
+    overflow: hidden;
+    max-width: 650px
+}
+
+.container__07c69 {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    max-width: min(750px, 100%)
+}
+
+.appDetailVisible_a479fb {
+    display: none
+}
+
+@media(min-width:1490px) {
+    .appDetailVisible_a479fb {
+        display: flex
+    }
+}
+
+.searchBarContainer__05dce {
+    flex-grow: 0;
+    padding: var(--spacing-16)
+}
+
+.scrollableContent_fc6d9c {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-16);
+    overflow-y: auto;
+    padding: 0 var(--spacing-16)var(--spacing-16)
+}
+
+.positionLayer__23a7f {
+    pointer-events: none;
+    z-index: 0;
+    right: var(--spacing-16)
+}
+
+.positionContainer_eba320 {
+    pointer-events: none;
+    width: 100%;
+    height: 500px;
+    display: flex
+}
+
+.drawerSizingWrapper__1bb13 {
+    pointer-events: all;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    max-width: 100%
+}
+
+.contentWrapper_b6ca57 {
+    display: flex;
+    background-color: var(--bg-base-secondary);
+    border-radius: var(--spacing-8);
+    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1
+}
+
+.resizeHandle__7fb30 {
+    cursor: ew-resize;
+    height: 100%;
+    right: -2px;
+    position: absolute;
+    top: 0;
+    width: 4px;
+    z-index: 2
+}
+
+.enable-forced-colors .resizeHandle__7fb30 {
+    background-color: ButtonText
+}
+
+.enable-forced-colors .contentWrapper_b6ca57 {
+    border: 3px solid CanvasText
 }
 
 .option__32fd1 {
@@ -27069,34 +27344,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     white-space: nowrap;
     margin-left: 8px;
     margin-right: 8px
-}
-
-.activityButton__14226 {
-    max-height: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.rocket__4ebd3 {
-    width: 32px;
-    height: 32px;
-    margin-right: 2px;
-    margin-bottom: 2px;
-    color: var(--interactive-normal)
-}
-
-.rocket__4ebd3>* {
-    fill: currentColor
-}
-
-.rocketHovered__5b88f {
-    color: var(--interactive-hover)
-}
-
-.rocketHovered__5b88f>* {
-    fill: currentColor
 }
 
 .buttonContainer_c96d16 {
@@ -123942,4 +124189,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.fda58a11beb9c1ac8b33.css.map*/
+/*# sourceMappingURL=app.b20ef468dc095041c8d9.css.map*/

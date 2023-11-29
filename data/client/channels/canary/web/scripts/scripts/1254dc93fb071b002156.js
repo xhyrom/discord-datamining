@@ -1369,17 +1369,27 @@
             "use strict";
             n.r(t), n.d(t, {
                 parseBioReact: function() {
-                    return o
+                    return d
+                },
+                parseBioReactWithoutScrolling: function() {
+                    return c
                 }
             });
-            var l = n("176309"),
-                a = n("52140"),
-                s = n("888198"),
-                i = n("788554");
-            let r = (0, i.default)([s.default.PROFILE_BIO_RULES, (0, a.default)({
+            var l = n("917351"),
+                a = n.n(l),
+                s = n("176309"),
+                i = n("52140"),
+                r = n("888198"),
+                o = n("788554");
+            let u = (0, o.default)([r.default.PROFILE_BIO_RULES, (0, i.default)({
                     enableBuildOverrides: !1
                 })]),
-                o = l.reactParserFor(r)
+                d = s.reactParserFor(u),
+                c = s.reactParserFor((0, o.default)([a.omit(u, ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"]), {
+                    emoji: {
+                        react: () => null
+                    }
+                }]))
         },
         52140: function(e, t, n) {
             "use strict";
@@ -10825,4 +10835,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5d0b9a769ba73cdf9175.js.map
+//# sourceMappingURL=1254dc93fb071b002156.js.map
