@@ -3442,7 +3442,7 @@
                 E = 64,
                 S = "---new-messages-bar",
                 g = "SPOILER_";
-            (o = i || (i = {})).ERROR_SOURCE_UNKNOWN = "ERROR_SOURCE_UNKNOWN", o.PRECOMPRESSION_SUM_TOO_LARGE = "PRECOMPRESSION_SUM_TOO_LARGE", o.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.POSTCOMPRESSION_SUM_TOO_LARGE = "POSTCOMPRESSION_SUM_TOO_LARGE", o.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR = "UPLOAD_MESSAGE_ATTACHMENT_MAX_SIZE_ERROR", (s = r || (r = {})).SYSTEM_DM_TAG_SYSTEM_TYPE = "a", s.BOT_TAG_SERVER_TYPE = "b", s.AI_TAG_TYPE = "c", s.BOT_TAG_BOT_TYPE = "d", s.REMIXING_TYPE = "e";
+            (o = i || (i = {})).ERROR_SOURCE_UNKNOWN = "ERROR_SOURCE_UNKNOWN", o.PRECOMPRESSION_SUM_TOO_LARGE = "PRECOMPRESSION_SUM_TOO_LARGE", o.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.POSTCOMPRESSION_SUM_TOO_LARGE = "POSTCOMPRESSION_SUM_TOO_LARGE", o.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR = "UPLOAD_MESSAGE_ATTACHMENT_MAX_SIZE_ERROR", (s = r || (r = {})).SYSTEM_DM_TAG_SYSTEM_TYPE = "a", s.BOT_TAG_SERVER_TYPE = "b", s.AI_TAG_TYPE = "c", s.BOT_TAG_BOT_TYPE = "d", s.REMIXING_TYPE = "e", s.POLL_TYPE = "g";
             let h = 209715200
         },
         560241: function(e, t, n) {
@@ -5280,7 +5280,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "249794", "249794"), 10);
+                let o = parseInt((n = "249797", "249797"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5522,4 +5522,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f4982c387cde149f95ee.js.map
+//# sourceMappingURL=c2640e0af6de95b2f3b9.js.map
