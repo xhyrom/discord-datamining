@@ -3303,6 +3303,10 @@
       "POST"
     ]
   },
+  "SUBMIT_REPORT_SECOND_LOOK": {
+    "url": "/reporting/review",
+    "allowed_methods": null
+  },
   "STAGE_INSTANCES": {
     "url": "/stage-instances",
     "allowed_methods": [
