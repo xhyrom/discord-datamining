@@ -14521,7 +14521,7 @@
                     return n => (0, i.jsx)(e, {
                         guildScheduledEventId: t,
                         parentGuildId: l,
-                        recurrenceId: s,
+                        initialRecurrenceId: s,
                         ...n
                     })
                 })
@@ -33694,4 +33694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98ba51463b9524b73715.js.map
+//# sourceMappingURL=c14455c1e67322e864c6.js.map
