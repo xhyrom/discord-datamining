@@ -121439,6 +121439,7 @@ div.nagbar_c731ff {
 }
 
 .theme-dark {
+    --action-sheet-gradient-bg: var(--primary-630);
     --activity-card-background: var(--primary-700);
     --alert-bg: var(--primary-600);
     --android-navigation-bar-background: var(--primary-830);
@@ -121739,6 +121740,7 @@ div.nagbar_c731ff {
 }
 
 .theme-light {
+    --action-sheet-gradient-bg: var(--primary-130);
     --activity-card-background: var(--white-500);
     --alert-bg: var(--white-500);
     --android-navigation-bar-background: var(--primary-100);
@@ -122039,6 +122041,7 @@ div.nagbar_c731ff {
 }
 
 .theme-amoled {
+    --action-sheet-gradient-bg: var(--black-500);
     --activity-card-background: var(--primary-700);
     --alert-bg: var(--black-500);
     --android-navigation-bar-background: var(--plum-24);
@@ -122339,6 +122342,7 @@ div.nagbar_c731ff {
 }
 
 .theme-darker {
+    --action-sheet-gradient-bg: var(--plum-20);
     --activity-card-background: var(--primary-700);
     --alert-bg: var(--plum-20);
     --android-navigation-bar-background: var(--plum-24);
@@ -123930,4 +123934,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.eeac574d3e8ae9ace023.css.map*/
+/*# sourceMappingURL=app.8c3e259edb8e3cd0e900.css.map*/

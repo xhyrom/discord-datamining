@@ -531,6 +531,7 @@
                     guildId: b,
                     channelId: P
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+                if ("" === e) return;
                 null != i && (0, r.maybeFetchColors)(i), null != b && !p && (p = !0), null != b && (m = null !== (c = null === (l = (0, u.getVisibleConnectionsRole)({
                     guildMember: d.default.getMember(b, e),
                     channel: o.default.getChannel(P)
@@ -545,9 +546,7 @@
                 if (null != b) {
                     let i = s.default.getGuildMemberProfile(e, b);
                     F = null == i
-                }
-                if (!U && !F && (I || Date.now() - (null !== (f = null == S ? void 0 : S.lastFetched) && void 0 !== f ? f : 0) < 6e4)) return Promise.resolve();
-                v ? await t.default.wait(() => (0, n.fetchProfile)(e, {
+                }!(!U && !F && (I || Date.now() - (null !== (f = null == S ? void 0 : S.lastFetched) && void 0 !== f ? f : 0) < 6e4)) && (v ? await t.default.wait(() => (0, n.fetchProfile)(e, {
                     withMutualGuilds: p,
                     withMutualFriendsCount: _,
                     friendToken: g,
@@ -559,7 +558,7 @@
                     friendToken: g,
                     guildId: b,
                     connectionsRoleId: m
-                }, T)
+                }, T))
             }
         },
         386714: function(e, i, l) {
@@ -614,4 +613,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7f43433916d6d96572c4.js.map
+//# sourceMappingURL=0d3b5ea245cf4bcd0d0b.js.map
