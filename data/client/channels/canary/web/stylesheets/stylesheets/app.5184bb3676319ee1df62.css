@@ -19469,8 +19469,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83444,6 +83444,10 @@ input::-webkit-inner-spin-button {
     background-position: right
 }
 
+.winterCategoryBanner_d13ac3 {
+    background-position: center
+}
+
 .collectiblePreviewsContainerNoChat__8a50e {
     padding: 0 40px
 }
@@ -123795,4 +123799,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.92427e5b3155a1dc6cf5.css.map*/
+/*# sourceMappingURL=app.5184bb3676319ee1df62.css.map*/
