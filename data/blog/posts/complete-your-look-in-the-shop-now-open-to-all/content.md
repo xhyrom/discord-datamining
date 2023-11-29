@@ -5,7 +5,7 @@
             <p><strong>Starting this week, everyone will be able to make purchases from the Shop on the desktop or web apps and start their collection of Avatar Decorations and Profile Effects</strong>, with support for purchasing items on mobile coming in the works.</p>
             <p><strong>When you purchase something from the Shop, it’s yours to keep.</strong> Nitro members get special member pricing on Shop purchases and an exclusive set only available for Nitro members to use with an active membership.</p>
             <div class="w-embed">
-                <div class="btn-wrapper"><a data-track="https://canary.discord.com/shop/fullscreen" href="https://canary.discord.com/shop/fullscreen" class="btn-blog w-button" target="_blank">Explore the Shop</a></div>
+                <div class="btn-wrapper"><a data-track="https://discord.com/shop/fullscreen" href="https://discord.com/shop/fullscreen" class="btn-blog w-button" target="_blank">Explore the Shop</a></div>
             </div>
             <p>Ready to shop around? Read on to see how to see what sorts of items are available in the shop and how to grab ‘em below:</p>
         </div>
