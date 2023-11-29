@@ -9477,6 +9477,25 @@
               ]
             }
           ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_count": 0,
+              "max_count": 200
+            }
+          ]
         }
       ],
       "revision": 0,
