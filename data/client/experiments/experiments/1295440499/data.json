@@ -2,7 +2,7 @@
   "data": {
     "kind": "user",
     "id": "2023-08_activities_in_text",
-    "label": "Activities in Text",
+    "label": "Activities in Text User",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -15,7 +15,7 @@
       1
     ],
     "config_keys": [
-      "isActivitiesInTextEnabled"
+      "enabled"
     ]
   }
 }
