@@ -2431,6 +2431,10 @@
       "OPTIONS"
     ]
   },
+  "BILLING_NITRO_AFFINITY": {
+    "url": "/users/@me/billing/nitro-affinity",
+    "allowed_methods": null
+  },
   "BILLING_SUBSCRIPTIONS_PREVIEW": {
     "url": "/users/@me/billing/subscriptions/preview",
     "allowed_methods": [
