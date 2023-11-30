@@ -323,6 +323,7 @@
             }
 
             function s(e) {
+                var t, n;
                 return null == e ? null : {
                     start: e.start,
                     end: e.end,
@@ -330,7 +331,7 @@
                     interval: e.interval,
                     by_weekday: e.byWeekday,
                     by_month: e.byMonth,
-                    by_month_day: e.byMonthDay,
+                    by_month_day: (null !== (n = null === (t = e.byMonthDay) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0) > 0 ? e.byMonthDay : null,
                     by_year_day: e.byYearDay,
                     count: e.count
                 }
@@ -338,8 +339,8 @@
 
             function E(e) {
                 return null == e ? null : {
-                    start: e.start,
-                    end: e.end,
+                    start: new Date(e.start).toISOString(),
+                    end: null != e.end ? new Date(e.end).toISOString() : null,
                     frequency: e.frequency,
                     interval: e.interval,
                     byWeekday: e.by_weekday,
@@ -499,7 +500,7 @@
                     return T
                 },
                 getBaseScheduleForRecurrence: function() {
-                    return D
+                    return R
                 },
                 getScheduleForRecurrenceWithException: function() {
                     return S
@@ -520,10 +521,10 @@
                     return L
                 },
                 getNextRecurrenceIdInEvent: function() {
-                    return C
+                    return I
                 },
                 isValidRecurrence: function() {
-                    return I
+                    return C
                 },
                 recurrenceOptionToRecurrenceRule: function() {
                     return w
@@ -572,7 +573,7 @@
                 }
             }
 
-            function R(e, t) {
+            function D(e, t) {
                 let n;
                 return null != e && (n = {
                     startDate: r(e),
@@ -580,9 +581,9 @@
                 }, null != t && (n.endDate = r(t))), n
             }
 
-            function D(e, t) {
+            function R(e, t) {
                 let n = function(e) {
-                        return R(e.scheduled_start_time, e.scheduled_end_time)
+                        return D(e.scheduled_start_time, e.scheduled_end_time)
                     }(t),
                     u = r(i.default.extractTimestamp(e)),
                     l = (null == n ? void 0 : n.endDate) != null ? u.clone().add(n.endDate.diff(n.startDate)) : void 0;
@@ -603,7 +604,7 @@
             }
 
             function m(e) {
-                return R(e.scheduledStartTime, e.scheduledEndTime)
+                return D(e.scheduledStartTime, e.scheduledEndTime)
             }
 
             function g(e, t) {
@@ -644,13 +645,13 @@
                 return u
             }
 
-            function C(e) {
+            function I(e) {
                 var t;
                 let n = null == (t = e).recurrence_rule ? null : new Date(t.scheduled_start_time);
                 return null != n ? i.default.fromTimestamp(Math.floor(n.getTime() / a.default.Millis.SECOND) * a.default.Millis.SECOND) : null
             }
 
-            function I(e, t) {
+            function C(e, t) {
                 if (null == t || null == e) return !1;
                 let n = new Date(e.start),
                     u = i.default.extractTimestamp(t),
@@ -673,7 +674,8 @@
             }
 
             function w(e, t) {
-                let n = function(e, t) {
+                var n;
+                let u = function(e, t) {
                     let n = G(t),
                         u = t.toDate();
                     switch (u.setMilliseconds(0), e) {
@@ -697,28 +699,28 @@
                             })
                     }
                 }(e, t);
-                if (null == n) return null;
+                if (null == u) return null;
                 let {
-                    dtstart: u,
-                    until: l,
-                    freq: r,
-                    interval: i,
-                    byweekday: a,
-                    bymonth: o,
-                    bymonthday: s,
-                    byyearday: E,
-                    count: _
-                } = n.options;
+                    dtstart: l,
+                    until: r,
+                    freq: i,
+                    interval: a,
+                    byweekday: o,
+                    bymonth: s,
+                    bymonthday: E,
+                    byyearday: _,
+                    count: y
+                } = u.options;
                 return {
-                    start: u.toISOString(),
-                    end: null == l ? void 0 : l.toISOString(),
-                    frequency: r,
-                    interval: i,
-                    byWeekday: null != a ? new Set(a) : null,
-                    byMonth: null != o ? new Set(o) : null,
-                    byMonthDay: null != s ? new Set(s) : null,
-                    byYearDay: null != E ? new Set(E) : null,
-                    count: _
+                    start: l.toISOString(),
+                    end: null !== (n = null == r ? void 0 : r.toISOString()) && void 0 !== n ? n : null,
+                    frequency: i,
+                    interval: a,
+                    byWeekday: null != o ? o : null,
+                    byMonth: null != s ? s : null,
+                    byMonthDay: null != E ? E : null,
+                    byYearDay: null != _ ? _ : null,
+                    count: y
                 }
             }
 
@@ -740,4 +742,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9b82a4306759deffecf9.js.map
+//# sourceMappingURL=395a4eeaf83aaea8d65e.js.map
