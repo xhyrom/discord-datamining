@@ -10626,6 +10626,15 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     line-height: 18px
 }
 
+.clickableDetails__97080 {
+    cursor: pointer
+}
+
+.clickableDetails__97080:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
 .activityActivityFeed__76436 .name_b6124d {
     display: none
 }
@@ -26421,4 +26430,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.be7fc5e3d7520de1e175.css.map*/
+/*# sourceMappingURL=shared.b7fadacb16ddeaabaa11.css.map*/

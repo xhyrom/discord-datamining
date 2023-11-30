@@ -6385,6 +6385,7 @@
                 GUILD_BOOSTING_USER_SETTINGS_PUBLIC_SERVER_CTA: "Explore servers",
                 GUILD_BOOSTING_USER_SETTINGS_UNAPPLIED_GUILD_BOOST_DESCRIPTION: "Looks like this Boost could use a new home!",
                 GUILD_BOOSTING_USER_SETTINGS_NO_AVAILABLE_GUILD_BOOST_SLOTS: "Oh no! You don't have any available Boosts.",
+                GUILD_BOOSTING_USER_SETTINGS_APPLIED_GUILD_BOOST_UNKNOWN_GUILD: "Unknown Server",
                 GUILD_BOOSTING_USER_SETTINGS_PERK_TEMPLATE: "This Boost helped unlock **{perk}** for everyone",
                 GUILD_BOOSTING_USER_SETTINGS_PERK_EMOJI_SLOTS: "{numEmojiSlots} emoji slots",
                 GUILD_BOOSTING_USER_SETTINGS_PERK_STICKER_SLOTS: "{numStickerSlots} sticker slots",
@@ -16132,6 +16133,7 @@
                 CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE: "Allow viewers to capture clips",
                 CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE_DESCRIPTION: "If this is on, viewers can take clips of your stream.",
                 CLIPS_SETTINGS_HW_ENCODING_MUST_BE_ENABLED_INFOBOX: "To use Clips, enable hardware encoding. Find it in [Voice & Video settings](onClick).",
+                CLIPS_PROCESSING_BADGE: "Processing...",
                 SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
                 CUSTOM_SOUNDS: "Custom Sounds",
                 ENABLE_PHONE_INTEGRATION: "Enable integration with the Phone app to experience this.",
@@ -18247,7 +18249,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250146", ", Version Hash: ").concat("d4aa4171bb41a27418fe8abb35be1f04c661a655")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250233", ", Version Hash: ").concat("cdcad9c2ab98940e02a2677fb91cce9830e09bdf")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20541,8 +20543,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "250146", "250146"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250146")), _ = 0), _
+                let _ = parseInt((e = "250233", "250233"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250233")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36582,4 +36584,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6b1b862aa760436aafe1.js.map
+//# sourceMappingURL=830fdae9ada5e81d0657.js.map

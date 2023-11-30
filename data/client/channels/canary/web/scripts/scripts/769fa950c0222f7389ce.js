@@ -717,8 +717,8 @@
                 h = n("599110"),
                 E = n("773336"),
                 S = n("709681"),
-                v = n("386045"),
-                C = n("13136"),
+                C = n("386045"),
+                v = n("13136"),
                 T = n("881095"),
                 I = n("997942"),
                 A = n("310238"),
@@ -835,7 +835,7 @@
                     frames_encoded_during_clip: t.framesEncodedDuringClip,
                     frames_dropped: t.framesDropped,
                     frames_dropped_during_clip: t.framesDroppedDuringClip,
-                    clip_duration_setting: v.default.getSettings().clipsLength,
+                    clip_duration_setting: C.default.getSettings().clipsLength,
                     clip_duration: t.clipDuration,
                     clip_resolution_width: t.clipResolutionWidth,
                     clip_resolution_height: t.clipResolutionHeight,
@@ -850,13 +850,13 @@
             async function P(e) {
                 var t, n;
                 let i;
-                let a = v.default.getSettings(),
-                    l = a.storageLocation,
-                    r = (0, T.default)(e),
-                    d = "".concat((0, C.default)(r.applicationName.substring(0, 20)), "_").concat(r.id, ".mp4"),
-                    o = s.default.fileManager.join(l, d),
-                    c = m.default.getMediaEngine(),
-                    _ = JSON.stringify(r);
+                let l = C.default.getSettings(),
+                    r = l.storageLocation,
+                    d = (0, T.default)(e),
+                    o = "".concat((0, v.default)(d.applicationName.substring(0, 20)), "_").concat(d.id, ".mp4"),
+                    c = s.default.fileManager.join(r, o),
+                    _ = m.default.getMediaEngine(),
+                    E = JSON.stringify(d);
                 if (null != e) {
                     let n = g.default.getRTCConnection(e);
                     if (null == n) throw Error("could not find RTC connection");
@@ -865,9 +865,9 @@
                     } = (0, u.decodeStreamKey)(e), [s, l] = null !== (t = n.getSSRCsForUser(a)) && void 0 !== t ? t : [];
                     if (null == s || null == l) throw Error("Could not find target SSRCs");
                     let r = s[0];
-                    i = c.saveClipForSSRC.bind(c, r, l, o, _)
-                } else i = c.saveClip.bind(c, o, _);
-                let E = function(e) {
+                    i = _.saveClipForSSRC.bind(_, r, l, c, E)
+                } else i = _.saveClip.bind(_, c, E);
+                let S = function(e) {
                     var t;
                     let n, i, a;
                     if (null != e) {
@@ -890,22 +890,32 @@
                         application_name: null == s ? void 0 : s.name
                     }
                 }(e);
+                null != e && a.default.dispatch({
+                    type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
+                    clip: {
+                        ...d,
+                        filepath: c
+                    }
+                });
                 try {
                     let {
                         duration: e,
                         thumbnail: t,
                         clipStats: a
-                    } = await i(), l = w(E, a);
+                    } = await i(), l = w(S, a);
                     l.clip_save_time_ms = a.clipSaveTimeMs, l.clip_size_bytes = a.clipSizeBytes, null != a.viewerDecodeFps && (l.decode_fps_during_clip = a.viewerDecodeFps, l.encode_fps_during_clip = a.viewerEncodeFps, l.target_fps = null), h.default.track(y.AnalyticEvents.CLIP_SAVED, l);
-                    let u = await (null != s.default.clips.getClipProtocolURLFromPath ? (0, b.createThumbnailFromVideo)(s.default.clips.getClipProtocolURLFromPath(o), 0) : (0, b.createThumbnail)(t));
-                    return r.thumbnail = u, r.length = e, N.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (n = null == u ? void 0 : u.length) && void 0 !== n ? n : 0, " bytes thumbnail.")), await c.updateClipMetadata(o, JSON.stringify(r)), {
-                        ...r,
-                        filepath: o
+                    let u = await (null != s.default.clips.getClipProtocolURLFromPath ? (0, b.createThumbnailFromVideo)(s.default.clips.getClipProtocolURLFromPath(c), 0) : (0, b.createThumbnail)(t));
+                    return d.thumbnail = u, d.length = e, N.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (n = null == u ? void 0 : u.length) && void 0 !== n ? n : 0, " bytes thumbnail.")), await _.updateClipMetadata(c, JSON.stringify(d)), {
+                        ...d,
+                        filepath: c
                     }
-                } catch (t) {
-                    if (!("errorMessage" in t)) throw h.default.track(y.AnalyticEvents.CLIP_SAVE_FAILURE, E), t;
-                    let e = w(E, t);
-                    throw e.error_at = t.errorAt, e.error_message = t.errorMessage, h.default.track(y.AnalyticEvents.CLIP_SAVE_FAILURE, e), t.errorMessage
+                } catch (n) {
+                    if (null != e && a.default.dispatch({
+                            type: "CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR",
+                            clipId: d.id
+                        }), !("errorMessage" in n)) throw h.default.track(y.AnalyticEvents.CLIP_SAVE_FAILURE, S), n;
+                    let t = w(S, n);
+                    throw t.error_at = n.errorAt, t.error_message = n.errorMessage, h.default.track(y.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
                 }
             }
             async function U(e) {
@@ -923,9 +933,9 @@
                 }, {
                     autoTrackExposure: !1
                 });
-                if (v.default.getIsAtMaxSaveClipOperations()) return;
-                let s = v.default.getSettings().clipsEnabled && null != f.default.getCurrentUserActiveStream(),
-                    l = n && v.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null,
+                if (C.default.getIsAtMaxSaveClipOperations()) return;
+                let s = C.default.getSettings().clipsEnabled && null != f.default.getCurrentUserActiveStream(),
+                    l = n && C.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null,
                     u = null != e && null != f.default.getActiveStreamForStreamKey(e) && i;
                 if (!s && !l && !u) return;
                 a.default.dispatch({
@@ -944,10 +954,10 @@
                         type: "CLIPS_SAVE_CLIP_ERROR"
                     })
                 }
-                N.ClipsLogger.info("".concat(v.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - c), "ms"))
+                N.ClipsLogger.info("".concat(C.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - c), "ms"))
             }
             async function G(e, t) {
-                let n = v.default.getClips().find(t => t.id === e);
+                let n = C.default.getClips().find(t => t.id === e);
                 if (null == n) return;
                 let i = {
                     ...n,
@@ -1233,7 +1243,7 @@
                     return S
                 },
                 useMostRecentForumMessage: function() {
-                    return v
+                    return C
                 },
                 preloadForumThreads: function() {
                     return T
@@ -1328,7 +1338,7 @@
                 }
             }
 
-            function v(e, t) {
+            function C(e, t) {
                 let {
                     loaded: n,
                     message: i
@@ -1339,7 +1349,7 @@
                 }
             }
 
-            function C(e, t) {
+            function v(e, t) {
                 let n = !1;
                 t.forEach(t => {
                     var i, a;
@@ -1352,7 +1362,7 @@
             }
 
             function T(e) {
-                C(e, (0, d.computeThreadIdsSnapshot)(e.id).slice(0, 10))
+                v(e, (0, d.computeThreadIdsSnapshot)(e.id).slice(0, 10))
             }
 
             function I(e, t) {
@@ -1360,7 +1370,7 @@
                 let n = (0, d.computeThreadIdsSnapshot)(e.id),
                     i = n.findIndex(e => e === t),
                     a = n.slice(i, i + 5).filter(t => !_.hasRequested(e.id, t));
-                C(e, a)
+                v(e, a)
             }
             async function A() {
                 try {
@@ -1619,10 +1629,10 @@
                 if (-1 === E) return !1;
                 let S = null == h || h > g[E];
                 if (!S) return !1;
-                let v = _.find(e => !(0, u.isDismissibleContentDismissed)(e)) === t;
-                if (!v) return !1;
+                let C = _.find(e => !(0, u.isDismissibleContentDismissed)(e)) === t;
+                if (!C) return !1;
                 let {
-                    showLifecycleUpsells: C
+                    showLifecycleUpsells: v
                 } = c.default.getCurrentConfig({
                     guildId: e,
                     location: "7f5b67_1"
@@ -1630,7 +1640,7 @@
                     disable: s || !(0, f.isGuildOnboardingSettingsAvailable)(e),
                     autoTrackExposure: !0
                 });
-                return C
+                return v
             }
 
             function E(e, t) {
@@ -1749,7 +1759,7 @@
                     return E
                 },
                 fetchAndUpdateSavedMessages: function() {
-                    return C
+                    return v
                 }
             });
             var i = n("872717"),
@@ -1769,7 +1779,7 @@
                     skipped: !1,
                     reason: "adding",
                     rating: "".concat(c.default.getMessageReminders().length)
-                }), v([{
+                }), C([{
                     messageId: e.id,
                     channelId: e.channel_id,
                     savedAt: new Date,
@@ -1807,7 +1817,7 @@
                 });
                 let n = c.default.getMessageReminders(),
                     i = n.find(t => t.messageId === e);
-                null != i && v([{
+                null != i && C([{
                     ...i,
                     savedAt: new Date,
                     dueAt: t
@@ -1833,7 +1843,7 @@
                     rating: "".concat(c.default.getMessageReminders().length)
                 });
                 let t = c.default.getMessageReminders();
-                v([], t.filter(t => t.messageId === e))
+                C([], t.filter(t => t.messageId === e))
             }
 
             function E() {
@@ -1843,7 +1853,7 @@
                     rating: "".concat(c.default.getMessageReminders().length)
                 });
                 let e = c.default.getMessageReminders();
-                e.some(e => e.complete) && v([], e.filter(e => e.complete))
+                e.some(e => e.complete) && C([], e.filter(e => e.complete))
             }
 
             function S(e) {
@@ -1857,7 +1867,7 @@
                 })
             }
 
-            function v(e, t) {
+            function C(e, t) {
                 (0 !== e.length || 0 !== t.length) && i.default.post({
                     url: p.Endpoints.SAVED_MESSAGES,
                     body: {
@@ -1869,7 +1879,7 @@
                 })
             }
 
-            function C() {
+            function v() {
                 return c.default.recentlyFetched() ? Promise.resolve() : i.default.get({
                     url: p.Endpoints.SAVED_MESSAGES
                 }).then(e => {
@@ -2133,8 +2143,8 @@
                 h = n("42203"),
                 E = n("305961"),
                 S = n("660478"),
-                v = n("18494"),
-                C = n("162771"),
+                C = n("18494"),
+                v = n("162771"),
                 T = n("49111"),
                 I = n("724210"),
                 A = n("782340");
@@ -2172,8 +2182,8 @@
                 }), f.default.commit(g)), null != g.focusTargetId && null == a && (g = g.mutate({
                     focusTargetId: null
                 }), f.default.commit(g));
-                let v = s;
-                if (!u || p.default.isConnected() || g.loadingMore ? g.loadingMore || g.ready && !g.cached ? null != a ? v = !0 : m && b.log("Skipping fetch because no other conditions matched") : null == t || null != E.default.getGuild(t) ? v = !0 : m && b.log("Skipping fetch we are connected and have loaded messages") : v = !0, v) {
+                let C = s;
+                if (!u || p.default.isConnected() || g.loadingMore ? g.loadingMore || g.ready && !g.cached ? null != a ? C = !0 : m && b.log("Skipping fetch because no other conditions matched") : null == t || null != E.default.getGuild(t) ? C = !0 : m && b.log("Skipping fetch we are connected and have loaded messages") : C = !0, C) {
                     if (f.default.commit(g.mutate({
                             loadingMore: !0
                         })), null != a) d.default.jumpToMessage({
@@ -2232,7 +2242,7 @@
             let y = "viewedThreadIds";
 
             function D() {
-                let e = v.default.getChannelId();
+                let e = C.default.getChannelId();
                 if (null != e) {
                     let n = h.default.getChannel(e);
                     if (null != n) {
@@ -2255,7 +2265,7 @@
                     isPreload: e,
                     skipLocalFetch: t,
                     logFailures: n
-                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, i = v.default.getChannelId();
+                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, i = C.default.getChannelId();
                 if (null != i) {
                     let a = h.default.getChannel(i);
                     null != a ? ((0, _.isTextChannel)(a.type) ? N({
@@ -2306,8 +2316,8 @@
             }
 
             function x() {
-                let e = v.default.getChannelId(),
-                    t = C.default.getGuildId();
+                let e = C.default.getChannelId(),
+                    t = v.default.getGuildId();
                 if (null == t || null == e) return;
                 let n = g.default.getSidebarState(e);
                 (null == n ? void 0 : n.type) !== m.SidebarType.VIEW_CHANNEL && R(t, e)
@@ -2330,7 +2340,7 @@
                     channel: t,
                     messageId: n
                 } = e, i = t.guild_id;
-                null != i && v.default.getChannelId(i) === t.id && N({
+                null != i && C.default.getChannelId(i) === t.id && N({
                     guildId: i,
                     channelId: t.id,
                     messageId: n
@@ -2376,7 +2386,7 @@
                 let l = null !== (t = k[n]) && void 0 !== t ? t : 0;
                 if (Date.now() - l < 1e4) return;
                 k[n] = Date.now();
-                let u = v.default.getChannelId(),
+                let u = C.default.getChannelId(),
                     r = g.default.getCurrentSidebarChannelId(u),
                     o = n === u || n === r;
                 a && p.default.isConnected() && o && d.default.fetchMessages({
@@ -2403,7 +2413,7 @@
                     state: t
                 } = e;
                 if ("active" !== t) return !1;
-                let n = v.default.getChannelId();
+                let n = C.default.getChannelId();
                 if (null == n) return !1;
                 d.default.fetchNewLocalMessages(n, T.MAX_MESSAGES_PER_CHANNEL)
             }
@@ -3082,4 +3092,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ed0bac3e9f8fa134844d.js.map
+//# sourceMappingURL=769fa950c0222f7389ce.js.map

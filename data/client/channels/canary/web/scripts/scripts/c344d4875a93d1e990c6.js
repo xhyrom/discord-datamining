@@ -5447,9 +5447,11 @@
                 clipMetadata: "clipMetadata_a529e8",
                 clipName: "clipName__63511",
                 clipNewBadge: "clipNewBadge_b3a814 clipBadge_fbf333",
+                clipProcessingBadge: "clipProcessingBadge__44df6 clipBadge_fbf333",
                 clipThumb: "clipThumb__90837",
                 clipThumbContainer: "clipThumbContainer_f469a2",
                 clipTitle: "clipTitle__779d0",
+                disabled: "disabled__29897",
                 miniIcon: "miniIcon_d6c101",
                 newIcon: "newIcon__98982",
                 usersAndDelete: "usersAndDelete__3b16f"
@@ -5768,8 +5770,13 @@
             "use strict";
             e.exports = {
                 cardsContainer: "cardsContainer__52d9f",
+                categoryWrapper: "categoryWrapper__042a8",
                 close: "close__354a2",
                 closeWrapper: "closeWrapper__1e132",
+                easterEggAnimation: "easterEggAnimation__36472",
+                easterEggAnimationReverse: "easterEggAnimationReverse_ff37f4",
+                hiddenWumpus: "hiddenWumpus__3cb90",
+                hiddenWumpusEnabled: "hiddenWumpusEnabled__72e7a",
                 itemTypeTitle: "itemTypeTitle_ff8328",
                 itemTypeTitleContainer: "itemTypeTitleContainer__58a10",
                 logo: "logo_b80583",
@@ -5953,8 +5960,7 @@
                 titleContainer: "titleContainer_faa17e",
                 titleImage: "titleImage__09f75",
                 tooltip: "tooltip__1a014",
-                unlockDiscountButton: "unlockDiscountButton__10cd2",
-                winterCategoryBanner: "winterCategoryBanner_d13ac3 categoryBanner_f3b247"
+                unlockDiscountButton: "unlockDiscountButton__10cd2"
             }
         },
         492666: function(e, t, o) {
@@ -15329,13 +15335,6 @@
             "use strict";
             e.exports = {
                 pendingIcon: "pendingIcon__93eae"
-            }
-        },
-        36553: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                container: "container_dc9894",
-                emoji: "emoji_a0e68f"
             }
         },
         645897: function(e, t, o) {
