@@ -275,7 +275,7 @@
                         emoji: n
                     };
                     let s = [...c.recentCustomStatuses],
-                        r = s.findIndex(t => t.status === e && a.isEqual(t.emoji, n)); - 1 !== r ? s.splice(r, 1) : 4 === s.length && s.splice(3, 1), c.recentCustomStatuses = [u, ...s], i && (c.currentDefaultStatus = {
+                        r = s.findIndex(t => t.status === e && a.isEqual(t.emoji, n)); - 1 !== r ? s.splice(r, 1) : 8 === s.length && s.splice(7, 1), c.recentCustomStatuses = [u, ...s], i && (c.currentDefaultStatus = {
                         status: l,
                         customHangStatus: u,
                         expiresAt: Date.now() + 288e5
@@ -676,4 +676,4 @@
         }
     }
 ]);
-//# sourceMappingURL=00fb0f84aa5ede0c7e17.js.map
+//# sourceMappingURL=2c6d9990696f7a846690.js.map
