@@ -19195,8 +19195,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .planInfo_cd8cba {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -19508,8 +19508,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -34388,6 +34388,11 @@ html .progress__4ef76 {
 
 .container__03455:hover:not(.canceled__5c690) {
     background-color: var(--background-secondary)
+}
+
+.container__03455.active_fcec01,
+.container__03455:hover.active_fcec01 {
+    background-color: var(--background-tertiary)
 }
 
 .timeStatus_b84727 {
@@ -124335,4 +124340,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.327863785a536106bbef.css.map*/
+/*# sourceMappingURL=app.081769f9f449015d00ad.css.map*/
