@@ -19469,8 +19469,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -41962,11 +41962,12 @@ html .progress__4ef76 {
 
 .statusButtonRegion__47ea7 {
     z-index: 1;
-    margin-top: 4px
+    margin-top: 4px;
+    margin-left: 24px
 }
 
 .statusButtonRegion__47ea7 .statusWidget__878ca {
-    padding: 4px 4px 4px 26px;
+    padding: 4px;
     border-top: 1px solid var(--background-modifier-active);
     border-radius: 0
 }
@@ -124259,4 +124260,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c8197476691f2431274c.css.map*/
+/*# sourceMappingURL=app.4f392af9919b3120684e.css.map*/
