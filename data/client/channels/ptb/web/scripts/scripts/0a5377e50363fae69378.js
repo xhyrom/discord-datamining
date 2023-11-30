@@ -2752,6 +2752,7 @@
                 bodyAlignCenter: "bodyAlignCenter__21cc3 body__7d340",
                 bodyLink: "bodyLink__0ab7c activityName__47e51",
                 bodyNormal: "bodyNormal_c70dfd body__7d340",
+                clickableDetails: "clickableDetails__97080 ellipsis__427eb textRow__4750e",
                 content: "content_d7cb7f",
                 contentGameImageProfile: "contentGameImageProfile__1490f content_d7cb7f",
                 contentGameImageProfileV2: "contentGameImageProfileV2_b96741 content_d7cb7f",

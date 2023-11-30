@@ -19089,28 +19089,31 @@
                 c = n("843455");
 
             function d(e, t, n) {
-                let r = e.getFavoriteChannels();
-                if (i.isEmpty(r)) return !1;
                 let {
-                    canShow: s
+                    canShow: r,
+                    isFavoritesPerk: s
                 } = u.default.getCurrentConfig({
                     location: "7993a7_1"
                 }, {
                     autoTrackExposure: !1
                 });
-                if (!s) return !1;
-                let a = Object.keys(r).filter(e => {
+                if (s) return !0;
+                if (!r) return !1;
+                let a = e.getFavoriteChannels();
+                if (i.isEmpty(a)) return !1;
+                let l = Object.keys(a).filter(e => {
                     let r = t.getChannel(e);
                     return null != r && (!!r.isPrivate() || n.can(c.Permissions.VIEW_CHANNEL, r))
                 });
-                return !i.isEmpty(a) && !0
+                return !i.isEmpty(l) && !0
             }
 
             function E() {
                 let {
-                    canShow: e
-                } = (0, u.useFavoritesServerExperiment)("7993a7_2"), t = (0, s.useStateFromStores)([o.default, a.default, l.default], () => e && d(o.default, a.default, l.default));
-                return t
+                    canShow: e,
+                    isFavoritesPerk: t
+                } = (0, u.useFavoritesServerExperiment)("7993a7_2"), n = (0, s.useStateFromStores)([o.default, a.default, l.default], () => e && d(o.default, a.default, l.default));
+                return !!t || n
             }
         },
         681937: function(e, t, n) {
@@ -41594,4 +41597,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0f98c3f8ba7730071720.js.map
+//# sourceMappingURL=bbdf502a2e49b76c168a.js.map

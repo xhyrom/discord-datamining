@@ -57,12 +57,12 @@
                 E = n("945956"),
                 v = n("18494"),
                 p = n("162771"),
-                I = n("800762"),
-                T = n("599110"),
-                h = n("991170"),
-                A = n("761932"),
-                m = n("49111"),
-                y = n("724210");
+                T = n("800762"),
+                I = n("599110"),
+                A = n("991170"),
+                h = n("761932"),
+                y = n("49111"),
+                m = n("724210");
 
             function N(t) {
                 let e = 0;
@@ -80,7 +80,7 @@
                     i = d.default.getChannels(t),
                     a = i[d.GUILD_SELECTABLE_CHANNELS_KEY].length,
                     r = i[d.GUILD_VOCAL_CHANNELS_KEY].length,
-                    _ = I.default.getVoiceStates(t);
+                    _ = T.default.getVoiceStates(t);
                 return {
                     guild_id: n.id,
                     guild_size_total: c.default.getMemberCount(t),
@@ -89,8 +89,8 @@
                     guild_num_voice_channels: r,
                     guild_num_roles: N(n.roles),
                     guild_member_num_roles: null != u ? u.roles.length : 0,
-                    guild_member_perms: String(null !== (e = g.default.getGuildPermissions(n)) && void 0 !== e ? e : h.default.NONE),
-                    guild_is_vip: n.hasFeature(m.GuildFeatures.VIP_REGIONS),
+                    guild_member_perms: String(null !== (e = g.default.getGuildPermissions(n)) && void 0 !== e ? e : A.default.NONE),
+                    guild_is_vip: n.hasFeature(y.GuildFeatures.VIP_REGIONS),
                     is_member: null != u,
                     num_voice_channels_active: N(_)
                 }
@@ -111,7 +111,7 @@
                     let e = t => {
                         if (null == t) return !1;
                         let e = t.permissionOverwrites[l];
-                        return null != e && i.default.has(e.deny, m.Permissions.VIEW_CHANNEL)
+                        return null != e && i.default.has(e.deny, y.Permissions.VIEW_CHANNEL)
                     };
                     n = a.THREAD_CHANNEL_TYPES.has(t.type) && null != t.parent_id ? e(r.default.getChannel(t.parent_id)) : e(t)
                 }
@@ -119,7 +119,7 @@
                     channel_id: t.id,
                     channel_type: t.type,
                     channel_size_total: t.isPrivate() ? t.recipients.length : 0,
-                    channel_member_perms: String(null != l && null !== (e = g.default.getChannelPermissions(t)) && void 0 !== e ? e : h.default.NONE),
+                    channel_member_perms: String(null != l && null !== (e = g.default.getChannelPermissions(t)) && void 0 !== e ? e : A.default.NONE),
                     channel_hidden: n
                 }
             }
@@ -136,7 +136,7 @@
                     guild_id: e.getGuildId(),
                     media_session_id: l,
                     ...D(e.getGuildId(), e.id, n),
-                    ...(0, A.getVoiceAnalyticsMetadataAdditional)()
+                    ...(0, h.getVoiceAnalyticsMetadataAdditional)()
                 }
             }
 
@@ -144,8 +144,8 @@
                 var e, n, l, u, i;
                 let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                     s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                if (T.default.isThrottled(t)) return;
-                let d = !("location" in a) || a.location !== m.AnalyticsLocations.GUILD_CREATE_INVITE_SUGGESTION,
+                if (I.default.isThrottled(t)) return;
+                let d = !("location" in a) || a.location !== y.AnalyticsLocations.GUILD_CREATE_INVITE_SUGGESTION,
                     c = "guild_id" in a ? a.guild_id : d ? p.default.getGuildId() : null,
                     o = "channel_id" in a ? a.channel_id : d ? v.default.getChannelId(c) : null,
                     f = r.default.getChannel(o);
@@ -153,12 +153,12 @@
                 let g = {
                     ...a,
                     ...C(_),
-                    ...null != c && null != o && (0, y.isStaticChannelRoute)(o) ? (i = 0, {
+                    ...null != c && null != o && (0, m.isStaticChannelRoute)(o) ? (i = 0, {
                         channel_static_route: o,
                         channel_hidden: !1
                     }) : L(f)
                 };
-                T.default.track(t, g, {
+                I.default.track(t, g, {
                     flush: s
                 })
             }
@@ -169,7 +169,7 @@
                     video_stream_count: 0,
                     video_enabled: n
                 };
-                return u(I.default.getVoiceStates(t)).filter(t => t.channelId === e).filter(t => t.userId !== s.default.getId()).forEach(t => {
+                return u(T.default.getVoiceStates(t)).filter(t => t.channelId === e).filter(t => t.userId !== s.default.getId()).forEach(t => {
                     l.voice_state_count++, (t.selfVideo || t.selfStream) && l.video_stream_count++
                 }), l
             }
@@ -178,8 +178,8 @@
                 let n = {
                     custom_status_count: 0
                 };
-                return u(I.default.getVoiceStates(t)).forEach(t => {
-                    t.channelId === e && null != S.default.findActivity(t.userId, t => t.type === m.ActivityTypes.CUSTOM_STATUS) && n.custom_status_count++
+                return u(T.default.getVoiceStates(t)).forEach(t => {
+                    t.channelId === e && null != S.default.findActivity(t.userId, t => t.type === y.ActivityTypes.CUSTOM_STATUS) && n.custom_status_count++
                 }), n
             }
             var G = {
@@ -216,7 +216,7 @@
                 a = n.n(i),
                 s = n("446674"),
                 r = n("913144"),
-                d = n("843455");
+                d = n("49111");
             let c = o();
 
             function o() {
@@ -246,6 +246,15 @@
                 }
                 getCurrentDefaultStatus() {
                     return c.currentDefaultStatus
+                }
+                getHangStatusActivity() {
+                    return null == l ? null : {
+                        type: d.ActivityTypes.HANG_STATUS,
+                        name: "Hang Status",
+                        state: l,
+                        details: null == u ? void 0 : u.status,
+                        emoji: null == u ? void 0 : u.emoji
+                    }
                 }
             }
             f.displayName = "HangStatusStore", f.persistKey = "HangStatusStore";
@@ -312,13 +321,13 @@
                 E = {},
                 v = {},
                 p = {},
-                I = {};
+                T = {};
 
-            function T(t, e) {
+            function I(t, e) {
                 let n = S[t];
                 return null != n ? n[e] : null
             }
-            let h = t => {
+            let A = t => {
                     switch (t.type) {
                         case _.ActivityTypes.CUSTOM_STATUS:
                             return 4;
@@ -332,14 +341,14 @@
                             return 0
                     }
                 },
-                A = t => (0, d.default)(t) ? 1 : 0;
+                h = t => (0, d.default)(t) ? 1 : 0;
 
-            function m(t, e) {
+            function y(t, e) {
                 var n, l, u, i, a;
-                return n = t, h(e) - h(n) || (l = t, A(e) - A(l)) || (u = t, (null !== (i = e.created_at) && void 0 !== i ? i : 0) - (null !== (a = u.created_at) && void 0 !== a ? a : 0))
+                return n = t, A(e) - A(n) || (l = t, h(e) - h(l)) || (u = t, (null !== (i = e.created_at) && void 0 !== i ? i : 0) - (null !== (a = u.created_at) && void 0 !== a ? a : 0))
             }
 
-            function y(t) {
+            function m(t) {
                 if (delete E[t], delete v[t], delete p[t], null == S[t]) return;
                 let [e] = a.sortBy(S[t], t => -t.timestamp);
                 e.status !== _.StatusTypes.OFFLINE ? (E[t] = e.status, v[t] = e.activities, null != e.clientStatus && (p[t] = e.clientStatus)) : a.every(S[t], t => t.status === _.StatusTypes.OFFLINE) && delete S[t]
@@ -373,7 +382,7 @@
                     timestamp: Date.now()
                 };
                 else {
-                    let t = a.length > 1 ? [...a].sort(m) : a,
+                    let t = a.length > 1 ? [...a].sort(y) : a,
                         n = s[e];
                     a = null != n && u(n.activities, t) ? n.activities : t, s[e] = {
                         status: l,
@@ -382,7 +391,7 @@
                         timestamp: Date.now()
                     }
                 }
-                return delete I[n], y(n), !0
+                return delete T[n], m(n), !0
             }
 
             function O(t) {
@@ -407,7 +416,7 @@
                     timestamp: Date.now()
                 };
                 else {
-                    let t = i.length > 1 ? [...i].sort(m) : i;
+                    let t = i.length > 1 ? [...i].sort(y) : i;
                     s[e] = {
                         status: l,
                         clientStatus: u,
@@ -421,7 +430,7 @@
                 if (e === o.default.getId()) return !1;
                 let n = S[e];
                 if (null == n || null == n[t]) return !1;
-                delete n[t], 0 === Object.keys(n).length && delete S[e], y(e)
+                delete n[t], 0 === Object.keys(n).length && delete S[e], m(e)
             }
 
             function M(t) {
@@ -441,7 +450,7 @@
                         i = f.default.getUser(t);
                     if (null != i && i.hasFlag(_.UserFlags.BOT_HTTP_INTERACTIONS) && (u = _.StatusTypes.UNKNOWN), null == i ? void 0 : i.isClyde()) return _.StatusTypes.ONLINE;
                     if (null == l) return null !== (e = E[t]) && void 0 !== e ? e : u;
-                    let a = T(t, l);
+                    let a = I(t, l);
                     return null !== (n = null == a ? void 0 : a.status) && void 0 !== n ? n : u
                 }
                 getActivities(t) {
@@ -450,7 +459,7 @@
                         var n;
                         return null !== (n = v[t]) && void 0 !== n ? n : g
                     }
-                    let l = T(t, e);
+                    let l = I(t, e);
                     return null == l || null == l.activities ? g : l.activities
                 }
                 getPrimaryActivity(t) {
@@ -478,7 +487,7 @@
                     return this.getActivities(t, n).find(e)
                 }
                 getActivityMetadata(t) {
-                    return I[t]
+                    return T[t]
                 }
                 getUserIds() {
                     return Object.keys(v)
@@ -492,7 +501,7 @@
                         presencesForGuilds: S,
                         statuses: E,
                         activities: v,
-                        activityMetadata: I,
+                        activityMetadata: T,
                         clientStatuses: p
                     }
                 }
@@ -507,7 +516,7 @@
                         guilds: e,
                         presences: n
                     } = t, l = o.default.getId();
-                    S = {}, I = {}, E = {
+                    S = {}, T = {}, E = {
                         [l]: E[l]
                     }, v = {
                         [l]: v[l]
@@ -554,7 +563,7 @@
                     let {
                         presences: e
                     } = t;
-                    S = e.presencesForGuilds, E = e.statuses, v = e.activities, I = e.activityMetadata
+                    S = e.presencesForGuilds, E = e.statuses, v = e.activities, T = e.activityMetadata
                 },
                 GUILD_CREATE: function(t) {
                     let {
@@ -635,7 +644,7 @@
                         userId: e,
                         metadata: n
                     } = t;
-                    return I[e] = n, !1
+                    return T[e] = n, !1
                 },
                 THREAD_MEMBER_LIST_UPDATE: function(t) {
                     let {
@@ -670,10 +679,10 @@
                 SELF_PRESENCE_STORE_UPDATE: function(t) {
                     let e = o.default.getId();
                     if (E[e] === t.status && v[e] === t.activities) return !1;
-                    E[e] = t.status, v[e] = t.activities, delete I[e]
+                    E[e] = t.status, v[e] = t.activities, delete T[e]
                 }
             })
         }
     }
 ]);
-//# sourceMappingURL=2c6d9990696f7a846690.js.map
+//# sourceMappingURL=cb0cdfb38973b18b884b.js.map

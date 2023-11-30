@@ -70528,16 +70528,6 @@ input::-webkit-inner-spin-button {
     left: 128px
 }
 
-.container_dc9894 {
-    display: flex;
-    flex-direction: row;
-    align-items: center
-}
-
-.emoji_a0e68f {
-    flex-shrink: 0
-}
-
 .collectiblesList_b551dd {
     display: grid;
     justify-items: center;
@@ -81893,6 +81883,10 @@ input::-webkit-inner-spin-button {
     filter: var(--shadow-low-filter)
 }
 
+.clipItem__03b69.disabled__29897 {
+    cursor: wait
+}
+
 .clipItem__03b69:hover {
     background: var(--background-modifier-selected);
     filter: var(--shadow-low-hover-filter)
@@ -81933,6 +81927,10 @@ input::-webkit-inner-spin-button {
 .clipDurationBadge_ba0f00 {
     background: var(--black-500);
     gap: 4px
+}
+
+.clipProcessingBadge__44df6 {
+    background: var(--black-500)
 }
 
 .clipDurationEditIcon_a81a23 {
@@ -83798,6 +83796,45 @@ input::-webkit-inner-spin-button {
     margin-left: -6px
 }
 
+.categoryWrapper__042a8 {
+    position: relative
+}
+
+@keyframes easterEggAnimation__36472 {
+    0% {
+        transform: translatey(10px)
+    }
+
+    to {
+        transform: translatey(-30px)
+    }
+}
+
+@keyframes easterEggAnimationReverse_ff37f4 {
+    0% {
+        transform: translatey(-30px)
+    }
+
+    to {
+        transform: translatey(10px)
+    }
+}
+
+.hiddenWumpus__3cb90 {
+    width: 50px;
+    left: 30px;
+    position: absolute;
+    animation-name: easterEggAnimation__36472;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+    transition: ease-in-out;
+    animation-fill-mode: forwards
+}
+
+.hiddenWumpusEnabled__72e7a {
+    animation-name: easterEggAnimationReverse_ff37f4
+}
+
 @media(max-width:1124px) {
     .close__354a2 {
         position: fixed
@@ -83865,12 +83902,7 @@ input::-webkit-inner-spin-button {
 .categoryBanner_f3b247 {
     z-index: 0;
     position: absolute;
-    top: 0;
     right: 0;
-    background-position: right
-}
-
-.winterCategoryBanner_d13ac3 {
     background-position: center
 }
 
@@ -124260,4 +124292,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4f392af9919b3120684e.css.map*/
+/*# sourceMappingURL=app.38c20746a91a06849f87.css.map*/
