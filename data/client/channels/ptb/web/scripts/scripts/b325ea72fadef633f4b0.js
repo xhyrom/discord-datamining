@@ -4,7 +4,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return C
+                    return g
                 }
             }), n("222007");
             var a = n("37983"),
@@ -12,21 +12,22 @@
                 i = n("446674"),
                 o = n("600965"),
                 r = n("191225"),
-                s = n("697517"),
-                d = n("292687"),
-                u = n("161778"),
-                c = n("875268"),
-                p = n("42203"),
-                f = n("449501"),
-                m = n("471671"),
-                h = n("457112"),
-                v = n("49111"),
-                P = n("272505");
-            let I = {
-                [v.PictureInPictureComponents.VIDEO]: c.default,
-                [v.PictureInPictureComponents.EMBED_IFRAME]: s.default
+                s = n("420444"),
+                d = n("697517"),
+                u = n("292687"),
+                c = n("161778"),
+                p = n("875268"),
+                f = n("42203"),
+                m = n("449501"),
+                h = n("471671"),
+                v = n("457112"),
+                P = n("49111"),
+                I = n("272505");
+            let S = {
+                [P.PictureInPictureComponents.VIDEO]: p.default,
+                [P.PictureInPictureComponents.EMBED_IFRAME]: d.default
             };
-            class S extends l.PureComponent {
+            class C extends l.PureComponent {
                 render() {
                     let {
                         selectedPIPWindow: e,
@@ -38,8 +39,8 @@
                         appContext: r,
                         roundCorners: s
                     } = this.props;
-                    return (0, a.jsx)(h.default, {
-                        pictureInPictureComponents: I,
+                    return (0, a.jsx)(v.default, {
+                        pictureInPictureComponents: S,
                         selectedPIPWindow: e,
                         pipWindows: t,
                         maxX: n,
@@ -57,34 +58,38 @@
                     }
                 }
             }
-            var C = i.default.connectStores([f.default, d.default, m.default, u.default, r.default, p.default], e => {
-                var t;
-                let n;
-                let {
-                    showInPopoutWindow: a = !1,
-                    disallowTextActivity: l = !1
-                } = e, i = d.default.getWindowOpen(v.PopoutWindowKeys.CHANNEL_CALL_POPOUT), o = r.default.getCurrentEmbeddedActivity(), s = (null === (t = p.default.getChannel(null == o ? void 0 : o.channelId)) || void 0 === t ? void 0 : t.type) === v.ChannelTypes.GUILD_TEXT, c = r.default.getActivityPanelMode(), h = null != o && s && c === P.ActivityPanelModes.PANEL, I = m.default.windowSize();
-                if (i && (l && h || !h)) {
-                    let e = d.default.getWindow(v.PopoutWindowKeys.CHANNEL_CALL_POPOUT);
-                    I = null == e ? I : {
+            var g = i.default.connectStores([m.default, u.default, r.default, h.default, c.default, f.default], e => {
+                let t, {
+                        showInPopoutWindow: n = !1,
+                        disallowTextActivity: a = !1
+                    } = e,
+                    l = u.default.getWindowOpen(P.PopoutWindowKeys.CHANNEL_CALL_POPOUT),
+                    i = r.default.getCurrentEmbeddedActivity(),
+                    o = null != i && !(0, s.default)(i.channelId, f.default),
+                    d = r.default.getActivityPanelMode(),
+                    p = null != i && o && d === I.ActivityPanelModes.PANEL,
+                    v = h.default.windowSize();
+                if (l && (a && p || !p)) {
+                    let e = u.default.getWindow(P.PopoutWindowKeys.CHANNEL_CALL_POPOUT);
+                    v = null == e ? v : {
                         width: e.innerWidth,
                         height: e.innerHeight
                     }
                 }
-                let S = f.default.pipWindows,
+                let S = m.default.pipWindows,
                     C = null;
-                C = h ? l ? null : f.default.pipWindow : i && !a ? null : f.default.pipWindow;
-                return !l && h ? n = v.AppContext.APP : a && (n = v.AppContext.POPOUT), {
+                C = p ? a ? null : m.default.pipWindow : l && !n ? null : m.default.pipWindow;
+                return !a && p ? t = P.AppContext.APP : n && (t = P.AppContext.POPOUT), {
                     selectedPIPWindow: C,
                     pipWindows: S,
-                    maxX: I.width,
-                    maxY: I.height,
-                    theme: u.default.theme,
-                    dockedRect: null != C ? f.default.getDockedRect(C.id) : null,
-                    appContext: n,
+                    maxX: v.width,
+                    maxY: v.height,
+                    theme: c.default.theme,
+                    dockedRect: null != C ? m.default.getDockedRect(C.id) : null,
+                    appContext: t,
                     roundCorners: !0
                 }
-            })(S)
+            })(C)
         },
         827560: function(e, t, n) {
             "use strict";
@@ -281,20 +286,20 @@
                     queryParams: S,
                     allowPopups: C = !1,
                     referrerPolicy: g = "origin"
-                } = e, y = (0, d.useStateFromStores)([u.default], () => u.default.getWindow(P.PopoutWindowKeys.CHANNEL_CALL_POPOUT)), T = (0, r.useMemoOne)(() => (0, s.v4)(), [t]), E = l.useRef(null), x = (0, m.default)(E, I, null == y ? window : y), A = {
+                } = e, y = (0, d.useStateFromStores)([u.default], () => u.default.getWindow(P.PopoutWindowKeys.CHANNEL_CALL_POPOUT)), E = (0, r.useMemoOne)(() => (0, s.v4)(), [t]), T = l.useRef(null), x = (0, m.default)(T, I, null == y ? window : y), A = {
                     ...S,
-                    frame_id: T,
+                    frame_id: E,
                     platform: v.ActivityPlatform.DESKTOP
                 }, [N, _] = l.useState(!1), j = p.default.theme, M = {
                     ...i
                 };
                 return j === P.ThemeTypes.LIGHT ? M.colorScheme = "light" : M.colorScheme = "dark", l.useEffect(() => (f.ComponentDispatch.dispatch(P.ComponentActions.IFRAME_MOUNT, {
-                    id: T
+                    id: E
                 }), () => {
                     f.ComponentDispatch.dispatch(P.ComponentActions.IFRAME_UNMOUNT, {
-                        id: T
+                        id: E
                     })
-                }), [T]), f.ComponentDispatch.subscribe(P.ComponentActions.MANUAL_IFRAME_RESIZING, e => {
+                }), [E]), f.ComponentDispatch.subscribe(P.ComponentActions.MANUAL_IFRAME_RESIZING, e => {
                     let {
                         resizing: t
                     } = e;
@@ -305,7 +310,7 @@
                     referrerPolicy: g,
                     onLoad: function(e) {
                         var n;
-                        null == o || o(e.target), E.current = e.target, x(!0), null === (n = e.target.contentWindow) || void 0 === n || n.postMessage([c.default.HELLO, A], null != t ? t : "")
+                        null == o || o(e.target), T.current = e.target, x(!0), null === (n = e.target.contentWindow) || void 0 === n || n.postMessage([c.default.HELLO, A], null != t ? t : "")
                     },
                     sandbox: (0, h.default)({
                         allowPopups: C
@@ -362,8 +367,8 @@
                 C = n("697218"),
                 g = n("550766"),
                 y = n("191225"),
-                T = n("420444"),
-                E = n("817477"),
+                E = n("420444"),
+                T = n("817477"),
                 x = n("386568"),
                 A = n("965135"),
                 N = n("954016"),
@@ -394,7 +399,7 @@
                     activityParticipant: null != b ? f.default.getParticipant(t.id, b.application_id) : null,
                     selectedParticipant: f.default.getSelectedParticipant(t.id),
                     participantsOpen: f.default.getParticipantsOpen(t.id)
-                })), H = R || null != W, G = (0, T.default)(t.id), Y = G && (null == V ? void 0 : V.type) !== M.ParticipantTypes.ACTIVITY, J = !G && O === _.ActivityPanelModes.PIP, z = (!H || H && (Y || J) && null == F) && !U;
+                })), H = R || null != W, G = (0, E.default)(t.id), Y = G && (null == V ? void 0 : V.type) !== M.ParticipantTypes.ACTIVITY, J = !G && O === _.ActivityPanelModes.PIP, z = (!H || H && (Y || J) && null == F) && !U;
 
                 function K() {
                     var e;
@@ -417,7 +422,7 @@
                         })
                     }
                 }, [null == b ? void 0 : b.application_id, z]);
-                if (null == b || null == D || null == k && (0, T.default)(t.id)) return null;
+                if (null == b || null == D || null == k && (0, E.default)(t.id)) return null;
                 let Z = Array.from(b.connections.values()).map(e => C.default.getUser(e.user_id)).filter(e => null != e),
                     q = {
                         instance_id: D,
@@ -487,7 +492,7 @@
                                     [L.pipModeShort]: z && !i,
                                     [L.pipModeTall]: z && i
                                 })
-                            }) : (0, a.jsx)(E.EmbedIFrameWithLoadingBackground, {
+                            }) : (0, a.jsx)(T.EmbedIFrameWithLoadingBackground, {
                                 allowPopups: N.APPLICATIONS_WITH_ALLOWED_POPUPS.has(b.application_id),
                                 referrerPolicy: N.APPLICATIONS_WITH_NO_REFFERER.has(b.application_id) ? "no-referrer" : "origin",
                                 url: b.url,
@@ -558,8 +563,8 @@
                 C = n("109489"),
                 g = n("116439"),
                 y = n("42887"),
-                T = n("145131"),
-                E = n("256170"),
+                E = n("145131"),
+                T = n("256170"),
                 x = n("433487"),
                 A = n("811305"),
                 N = n("735890"),
@@ -579,7 +584,7 @@
                         [L.arrowIconExpanded]: n
                     }),
                     onClick: t,
-                    iconComponent: E.default,
+                    iconComponent: T.default,
                     label: n ? M.default.Messages.PICTURE_IN_PICTURE_COLLAPSE : M.default.Messages.PICTURE_IN_PICTURE_EXPAND
                 })
             }
@@ -592,7 +597,7 @@
                     onMouseDown: r,
                     onMouseMove: P,
                     onMouseLeave: C,
-                    onJumpToChannel: E,
+                    onJumpToChannel: T,
                     idle: x,
                     selectedParticipant: A
                 } = e, M = (0, d.useAppContext)(), b = M === _.AppContext.POPOUT, O = (0, o.useStateFromStores)([y.default], () => y.default.isVideoEnabled()), D = (0, o.useStateFromStores)([y.default], () => Object.values(y.default.getVideoDevices())[0]), R = null === (t = null == D ? void 0 : D.disabled) || void 0 === t || t, F = !1 === R, U = (0, u.default)([i])[0], W = (0, f.default)(l), k = e => {
@@ -608,16 +613,16 @@
                         children: (0, a.jsx)(v.PictureInPictureHeader, {
                             idle: x,
                             title: null !== (n = null == U ? void 0 : U.name) && void 0 !== n ? n : l.name,
-                            onJumpToChannel: E,
+                            onJumpToChannel: T,
                             preventIdleComponent: h.default
                         })
                     }), (0, a.jsxs)("div", {
                         className: w.bottomControls,
-                        children: [(0, a.jsxs)(T.default, {
+                        children: [(0, a.jsxs)(E.default, {
                             grow: 0,
                             shrink: 1,
                             basis: "50%",
-                            align: T.default.Align.CENTER,
+                            align: E.default.Align.CENTER,
                             children: [(0, a.jsx)(g.default, {
                                 className: L.leftPipIcon,
                                 enabled: O,
@@ -636,12 +641,12 @@
                                     compact: !0
                                 })
                             })]
-                        }), (0, a.jsxs)(T.default, {
+                        }), (0, a.jsxs)(E.default, {
                             grow: 0,
                             shrink: 1,
-                            justify: T.default.Justify.END,
+                            justify: E.default.Justify.END,
                             basis: "50%",
-                            align: T.default.Align.CENTER,
+                            align: E.default.Align.CENTER,
                             children: [b ? null : (0, a.jsx)(S.default, {
                                 className: L.rightPipIcon,
                                 popoutOpen: !1,
@@ -1014,8 +1019,8 @@
                 C = n("679653"),
                 g = n("374014"),
                 y = n("479788"),
-                T = n("430951"),
-                E = n("16916"),
+                E = n("430951"),
+                T = n("16916"),
                 x = n("383294"),
                 A = n("393414"),
                 N = n("908583"),
@@ -1087,7 +1092,7 @@
                     } = this.props;
                     if (!(0, et.isStreamParticipant)(e)) return null;
                     let n = this.activeStreamForSelectedParticipant;
-                    return null == n ? null : (0, T.default)(n, e.user, e.user.id === t, this.streamerPaused)
+                    return null == n ? null : (0, E.default)(n, e.user, e.user.id === t, this.streamerPaused)
                 }
                 isEmptyBroadcast() {
                     var e;
@@ -1222,7 +1227,7 @@
                             participantOnScreen: e,
                             isSelfBroadcasting: t
                         } = this.props;
-                        o((0, et.isStreamParticipant)(e), "cannot stop stream for non streamer"), t ? (0, v.openStopBroadcastConfirmModal)(() => (0, E.default)(e.stream)) : (0, E.default)(e.stream)
+                        o((0, et.isStreamParticipant)(e), "cannot stop stream for non streamer"), t ? (0, v.openStopBroadcastConfirmModal)(() => (0, T.default)(e.stream)) : (0, T.default)(e.stream)
                     }, this.handleOpenPopout = () => {
                         let {
                             channel: e
@@ -1579,7 +1584,7 @@
                 g = n("782340"),
                 y = n("978461");
 
-            function T(e) {
+            function E(e) {
                 let {
                     className: t
                 } = e;
@@ -1588,7 +1593,7 @@
                 })
             }
 
-            function E(e) {
+            function T(e) {
                 let {
                     className: t
                 } = e;
@@ -1596,7 +1601,7 @@
                     children: [(0, a.jsx)(h.default, {
                         className: t,
                         mask: h.default.Masks.HEADER_BAR_BADGE,
-                        children: (0, a.jsx)(T, {})
+                        children: (0, a.jsx)(E, {})
                     }), (0, a.jsx)(m.default, {
                         className: y.badgeUpgrade
                     })]
@@ -1612,8 +1617,8 @@
                     null != h && (0, u.default)(h.getGuildId(), h.id, S.AnalyticsSections.STREAM_SETTINGS)
                 }, [h]);
                 if (null == n || null == h) return null;
-                let N = T;
-                return !t && !m && (N = E), (0, a.jsx)(o.Popout, {
+                let N = E;
+                return !t && !m && (N = T), (0, a.jsx)(o.Popout, {
                     position: "top",
                     renderPopout: e => {
                         let {
@@ -1905,4 +1910,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5206c26656de7a005e80.js.map
+//# sourceMappingURL=b325ea72fadef633f4b0.js.map
