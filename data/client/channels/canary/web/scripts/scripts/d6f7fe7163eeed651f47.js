@@ -500,16 +500,16 @@
                     return T
                 },
                 getBaseScheduleForRecurrence: function() {
-                    return R
+                    return D
                 },
                 getScheduleForRecurrenceWithException: function() {
                     return S
                 },
                 getScheduleFromEventData: function() {
-                    return m
+                    return g
                 },
                 areDatesIdentical: function() {
-                    return g
+                    return m
                 },
                 areSchedulesIdentical: function() {
                     return N
@@ -527,10 +527,10 @@
                     return C
                 },
                 recurrenceOptionToRecurrenceRule: function() {
-                    return w
+                    return b
                 },
                 recurrenceRuleToOption: function() {
-                    return b
+                    return w
                 }
             }), n("222007"), n("424973");
             var u = n("917351"),
@@ -573,7 +573,7 @@
                 }
             }
 
-            function D(e, t) {
+            function R(e, t) {
                 let n;
                 return null != e && (n = {
                     startDate: r(e),
@@ -581,9 +581,9 @@
                 }, null != t && (n.endDate = r(t))), n
             }
 
-            function R(e, t) {
+            function D(e, t) {
                 let n = function(e) {
-                        return D(e.scheduled_start_time, e.scheduled_end_time)
+                        return R(e.scheduled_start_time, e.scheduled_end_time)
                     }(t),
                     u = r(i.default.extractTimestamp(e)),
                     l = (null == n ? void 0 : n.endDate) != null ? u.clone().add(n.endDate.diff(n.startDate)) : void 0;
@@ -603,16 +603,16 @@
                 }
             }
 
-            function m(e) {
-                return D(e.scheduledStartTime, e.scheduledEndTime)
+            function g(e) {
+                return R(e.scheduledStartTime, e.scheduledEndTime)
             }
 
-            function g(e, t) {
+            function m(e, t) {
                 return null == e || null == t ? null == e && null == t : e.isSame(t)
             }
 
             function N(e, t) {
-                return null == e || null == t ? null == e && null == t : g(e.startDate, t.startDate) && g(e.endDate, t.endDate)
+                return null == e || null == t ? null == e && null == t : m(e.startDate, t.startDate) && m(e.endDate, t.endDate)
             }
 
             function U(e) {
@@ -631,18 +631,18 @@
             }
 
             function L(e, t, n) {
-                let u = [],
-                    l = null == n,
-                    r = null != n ? n : new Date,
-                    d = new Date;
+                let u = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+                    l = [],
+                    r = n;
+                r.setMilliseconds(0);
+                let d = new Date;
                 d.setFullYear(d.getFullYear() + E);
-                let i = l ? e + 1 : e;
-                for (let e = 0; e < i && r < d; e++) {
-                    let n = t.after(r);
-                    if (null == n) break;
-                    r = new Date(n), (!l || e > 0) && u.push(n)
+                for (let n = 0; n < e && r < d; n++) {
+                    let e = t.after(r, 0 === n && !u);
+                    if (null == e) break;
+                    r = e, l.push(e)
                 }
-                return u
+                return l
             }
 
             function I(e) {
@@ -673,7 +673,7 @@
                 return n.weekday - t.weekday > 0 ? v : n.weekday - t.weekday < 0 ? y : _
             }
 
-            function w(e, t) {
+            function b(e, t) {
                 var n;
                 let u = function(e, t) {
                     let n = G(t),
@@ -724,7 +724,7 @@
                 }
             }
 
-            function b(e, t) {
+            function w(e, t) {
                 if (null == t) return c.RecurrenceOptions.NONE;
                 let n = U(t);
                 switch (n.options.freq) {
@@ -742,4 +742,4 @@
         }
     }
 ]);
-//# sourceMappingURL=395a4eeaf83aaea8d65e.js.map
+//# sourceMappingURL=d6f7fe7163eeed651f47.js.map
