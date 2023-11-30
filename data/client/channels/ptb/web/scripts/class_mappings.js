@@ -23359,7 +23359,8 @@
             "use strict";
             e.exports = {
                 actionColor: "actionColor__21cca",
-                userProfileActivity: "userProfileActivity__68b33"
+                userProfileActivity: "userProfileActivity__68b33",
+                voiceActivity: "voiceActivity__1135b"
             }
         },
         825507: function(e, t, o) {
@@ -23732,6 +23733,17 @@
                 userTagUsernameNoNickname: "userTagUsernameNoNickname_d6e61f userTagUsernameBase__75fb1",
                 userTagWithNickname: "userTagWithNickname__1eba9 userTag_cf17d3",
                 userText: "userText__3e8b7"
+            }
+        },
+        293773: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                iconContainer: "iconContainer_ca6f37",
+                mask: "mask_ef706b",
+                speakerIcon: "speakerIcon_bb0f27",
+                speakerIconContainer: "speakerIconContainer__94fb2",
+                voiceChannelInfo: "voiceChannelInfo__41ce2",
+                voiceDisplayContainer: "voiceDisplayContainer_ca3736"
             }
         },
         305502: function(e, t, o) {

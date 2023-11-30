@@ -8223,6 +8223,45 @@
     line-height: 15px
 }
 
+.voiceDisplayContainer_ca3736 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: var(--spacing-8)0 var(--spacing-8)
+}
+
+.voiceChannelInfo__41ce2 {
+    margin-left: var(--spacing-8)
+}
+
+.iconContainer_ca6f37 {
+    position: relative
+}
+
+.speakerIconContainer__94fb2 {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-500);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.speakerIcon_bb0f27 {
+    width: 12px;
+    height: 12px;
+    color: var(--white-500)
+}
+
+.mask_ef706b {
+    position: relative;
+    overflow: visible
+}
+
 .usernameSection__53868,
 .customStatusSection_ce6c27 {
     padding-top: 12px;
@@ -117910,6 +117949,10 @@ html .invoiceCancelRow_c1bfe7 {
     padding: 16px
 }
 
+.voiceActivity__1135b {
+    padding: 0 16px 16px
+}
+
 .actionColor__21cca {
     background-color: var(--profile-gradient-button-color);
     color: var(--white-500);
@@ -124292,4 +124335,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.38c20746a91a06849f87.css.map*/
+/*# sourceMappingURL=app.885490d6642388216103.css.map*/
