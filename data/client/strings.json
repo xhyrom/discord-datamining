@@ -12510,6 +12510,7 @@
   "INVITE_PERMISSION_MODAL_TEXT": "\"To add a friend to this server, ask someone with invite permissions for help.\"",
   "DISABLE_INVITES": "\"Pause Invites\"",
   "ENABLE_INVITES": "\"Enable Invites\"",
+  "INVITES_PERMANENTLY_DISABLED_TIP": "\"Invites to this server are currently permanently disabled.\"",
   "INVITES_DISABLED_TIP": "\"Invites to this server are currently paused.\"",
   "INVITES_DISABLED_DESCRIPTION": "\"Invite links, embeds, and vanity urls will still be visible, but their usage will be paused. New users will no longer be able to join this server. Managing invites will still work. [Learn More]({helpArticleUrl})\"",
   "INVITES_DISABLED_DESCRIPTION_MOBILE": "\"Invite links, embeds, and vanity urls will still be visible, but new users will no longer be able to join this server. [Learn More]({helpArticleUrl})\"",
