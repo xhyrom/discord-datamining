@@ -18760,6 +18760,7 @@
             e.exports = {
                 bodyColumnMiddle: "bodyColumnMiddle_f4bcdf",
                 bodyColumnRight: "bodyColumnRight__94a69",
+                customGiftMessage: "customGiftMessage_de4b5e",
                 stepBody: "stepBody__0162f"
             }
         },

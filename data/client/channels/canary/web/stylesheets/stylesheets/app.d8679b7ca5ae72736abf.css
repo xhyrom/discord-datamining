@@ -109331,6 +109331,10 @@ html .invoiceCancelRow_a8669b {
     width: 50%
 }
 
+.customGiftMessage_de4b5e {
+    background-color: var(--background-tertiary)
+}
+
 .headerContainer__1a9fc {
     width: 100%;
     height: 146px;
@@ -124248,4 +124252,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ce583afa6f8916e8fa9b.css.map*/
+/*# sourceMappingURL=app.d8679b7ca5ae72736abf.css.map*/
