@@ -27,11 +27,19 @@
     "populations": [
       {
         "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 9900,
+                "end": 10000
+              }
+            ]
+          },
           "none": {
             "rollout": [
               {
                 "start": 0,
-                "end": 10000
+                "end": 9800
               }
             ]
           }
