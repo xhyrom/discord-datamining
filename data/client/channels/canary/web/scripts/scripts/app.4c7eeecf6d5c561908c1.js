@@ -7200,7 +7200,6 @@
                 header: "header__55964",
                 inspector: "inspector__17331",
                 isBurstReactionPicker: "isBurstReactionPicker__63df0",
-                isBurstReactionUnlimited: "isBurstReactionUnlimited_ef651a",
                 searchBar: "searchBar__8f956",
                 searchBarFullRow: "searchBarFullRow_e95c25",
                 wrapper: "wrapper__66cd5"
@@ -7351,15 +7350,6 @@
             "use strict";
             e.exports = {
                 emojiSpriteImage: "emojiSpriteImage__6363e"
-            }
-        },
-        167671: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                art: "art__34ddc",
-                button: "button__35cc6",
-                header: "header_eda564",
-                root: "root__6943c"
             }
         },
         469744: function(e, t, o) {
