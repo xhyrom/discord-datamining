@@ -13870,24 +13870,11 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .wrapper__66cd5.isBurstReactionPicker__63df0 {
-    box-shadow: 0 0 0 2px var(--premium-tier-2-purple-for-gradients-2);
-    border-radius: var(--custom-emoji-picker-border-radius)
-}
-
-.wrapper__66cd5.isBurstReactionPicker__63df0:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    box-shadow: 0 0 16px var(--premium-tier-2-pink-for-gradients);
-    pointer-events: none
-}
-
-.wrapper__66cd5.isBurstReactionUnlimited_ef651a {
+    border-radius: var(--custom-emoji-picker-border-radius);
     box-shadow: 0 0 0 2px var(--brand-500)
 }
 
-.wrapper__66cd5.isBurstReactionUnlimited_ef651a:before {
+.wrapper__66cd5.isBurstReactionPicker__63df0:before {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -14536,37 +14523,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .premiumUpsellTopOfList_ce5874 {
     margin-top: 0;
     height: 50px
-}
-
-.art__34ddc {
-    width: 168px;
-    height: 140px
-}
-
-.root__6943c {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 101;
-    opacity: .98;
-    background-color: var(--background-secondary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px
-}
-
-.header_eda564 {
-    margin-top: 12px;
-    margin-bottom: 16px
-}
-
-.button__35cc6 {
-    margin: 16px auto 0
 }
 
 .premiumRetentionNotice__7e7c4 {
@@ -22731,8 +22687,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .name__8d1ec {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -61003,8 +60959,8 @@ input::-webkit-inner-spin-button {
 .errorState_b806b1 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -61066,7 +61022,7 @@ input::-webkit-inner-spin-button {
 
 .confirmChannelName_c49514 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -61074,7 +61030,7 @@ input::-webkit-inner-spin-button {
 .lastActiveTimestamp__56cd7 {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -124285,4 +124241,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f20375740ae7f069ca7e.css.map*/
+/*# sourceMappingURL=app.41e8155aab80ebba072e.css.map*/
