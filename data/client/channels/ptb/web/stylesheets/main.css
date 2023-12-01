@@ -19464,8 +19464,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -27683,6 +27683,11 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     width: 20px !important;
     height: 20px !important;
     padding-top: 2px
+}
+
+.show-redesigned-icons .sendIcon__461ff {
+    padding-top: 0;
+    padding-top: 0
 }
 
 .innerButton_debeee {
@@ -124243,4 +124248,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.48960a21abc78658cec5.css.map*/
+/*# sourceMappingURL=app.ce583afa6f8916e8fa9b.css.map*/
