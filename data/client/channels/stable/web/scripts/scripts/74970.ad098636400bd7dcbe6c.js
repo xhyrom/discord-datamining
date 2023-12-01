@@ -439,7 +439,7 @@
                     null != this._worker && (this._worker.terminate(), this._worker = null)
                 }
                 rebootWebworker() {
-                    null != this._worker && (this._worker.terminate(), this._worker = null), this._worker = new Worker(new URL(l.p + l.u("88243"), l.b))
+                    null != this._worker && (this._worker.terminate(), this._worker = null), this._worker = new Worker(new URL(l.p + l.u("76730"), l.b))
                 }
                 updateUsers(e) {
                     let {
@@ -730,29 +730,29 @@
                 A = l("18494"),
                 U = l("162771"),
                 I = l("282109"),
-                S = l("25292"),
-                N = l("449008"),
+                N = l("25292"),
+                S = l("449008"),
                 v = l("49111"),
                 L = l("782340");
             let D = "seenQSTutorial",
                 M = [o.AutocompleterResultTypes.USER, o.AutocompleterResultTypes.GROUP_DM, o.AutocompleterResultTypes.TEXT_CHANNEL, o.AutocompleterResultTypes.GUILD, o.AutocompleterResultTypes.APPLICATION, o.AutocompleterResultTypes.LINK],
                 O = 0,
                 b = !1,
-                k = !1,
-                H = null,
+                H = !1,
+                k = null,
                 G = [],
                 P = null,
                 Q = 0,
-                w = [],
-                q = [];
+                q = [],
+                w = [];
 
             function x() {
-                k = g.default.getGuildCount() >= 3 || i.size(R.default.getMutablePrivateChannels()) >= 20, w = []
+                H = g.default.getGuildCount() >= 3 || i.size(R.default.getMutablePrivateChannels()) >= 20, q = []
             }
 
             function W(e) {
                 let t = (0, h.default)(e);
-                return null == t || null != H && H !== t.type ? null : t
+                return null == t || null != k && k !== t.type ? null : t
             }
 
             function F(e) {
@@ -764,7 +764,7 @@
                 null != i && n.add("guild:".concat(i)), s = null != s ? s : new o.default(K, M, null != u ? 100 : 5, {
                     frecencyBoosters: !0,
                     blacklist: n
-                }), P = null, Q = l.length, H = u, s.search(l)
+                }), P = null, Q = l.length, k = u, s.search(l)
             }
 
             function K(e, t) {
@@ -780,10 +780,10 @@
                     var e, t;
                     let l = null !== (e = U.default.getGuildId()) && void 0 !== e ? e : void 0,
                         s = null !== (t = A.default.getChannelId()) && void 0 !== t ? t : void 0;
-                    switch (H) {
+                    switch (k) {
                         case o.AutocompleterResultTypes.USER: {
                             let e = f.default.getId();
-                            return S.default.getRecentlyTalked(s, 100).filter(t => {
+                            return N.default.getRecentlyTalked(s, 100).filter(t => {
                                 let {
                                     record: l
                                 } = t;
@@ -791,26 +791,26 @@
                             })
                         }
                         case o.AutocompleterResultTypes.APPLICATION:
-                            return S.default.queryApplications({
+                            return N.default.queryApplications({
                                 query: "",
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.GUILD:
-                            return S.default.queryGuilds({
+                            return N.default.queryGuilds({
                                 query: "",
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.TEXT_CHANNEL:
-                            return S.default.queryChannels({
+                            return N.default.queryChannels({
                                 query: "",
                                 guildId: U.default.getGuildId(),
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.VOICE_CHANNEL:
-                            return S.default.queryChannels({
+                            return N.default.queryChannels({
                                 query: "",
                                 guildId: U.default.getGuildId(),
                                 limit: 100,
@@ -821,8 +821,8 @@
                     }
                     let u = [],
                         n = [];
-                    for (let e = 1; e < q.length; e += 1) {
-                        let t = W(q[e]);
+                    for (let e = 1; e < w.length; e += 1) {
+                        let t = W(w[e]);
                         if (null != t)(t.type !== o.AutocompleterResultTypes.TEXT_CHANNEL && t.type !== o.AutocompleterResultTypes.VOICE_CHANNEL || T.default.can(v.Permissions.VIEW_CHANNEL, t.record)) && n.push(t)
                     }
                     n.length > 0 && u.push((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_LAST_CHANNEL), ...n);
@@ -836,13 +836,13 @@
                             let u = W(s);
                             null != u && t.push(u)
                         }), t
-                    }(e => e === s || q.includes(e));
+                    }(e => e === s || w.includes(e));
                     r.length > 0 && u.push((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_DRAFTS), ...r);
-                    let a = m.default.getMentionChannelIds().filter(e => e !== s && !q.includes(e)).map(e => W(e)).filter(N.isNotNullish).reverse();
+                    let a = m.default.getMentionChannelIds().filter(e => e !== s && !w.includes(e)).map(e => W(e)).filter(S.isNotNullish).reverse();
                     if (a.length > 0 && (u.push((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_MENTIONS)), u = u.concat(a)), null != l) {
                         let e = E.default.getSelectableChannelIds(l).filter(e => {
                             let t = R.default.getChannel(e);
-                            return !(null == t || e === s || q.includes(e) || I.default.isChannelMuted(t.guild_id, e) || null != t.parent_id && I.default.isChannelMuted(t.guild_id, t.parent_id)) && (0, c.getHasImportantUnread)(t)
+                            return !(null == t || e === s || w.includes(e) || I.default.isChannelMuted(t.guild_id, e) || null != t.parent_id && I.default.isChannelMuted(t.guild_id, t.parent_id)) && (0, c.getHasImportantUnread)(t)
                         }).map(e => W(e)).filter(e => e);
                         Object.values(p.default.getActiveJoinedUnreadThreadsForGuild(l)).forEach(t => {
                             for (let l in t) {
@@ -852,8 +852,8 @@
                         }), e.length > 0 && (u.push((0, o.createHeaderResult)(L.default.Messages.QUICKSWITCHER_UNREAD_CHANNELS)), u = u.concat(e))
                     }
                     return i(u).uniqBy(e => e.record.id).value()
-                }() : e, w) && (w = e, ! function(e, t) {
-                    switch (H) {
+                }() : e, q) && (q = e, ! function(e, t) {
+                    switch (k) {
                         case o.AutocompleterResultTypes.USER: {
                             let t = g.default.getGuild(U.default.getGuildId());
                             e.unshift((0, o.createHeaderResult)(null != t ? L.default.Messages.QUICKSWITCHER_QUERYMODE_USERS_IN_GUILD.format({
@@ -886,16 +886,16 @@
             }
 
             function z() {
-                P = null, Q = 0, w = [], null != s && (s.destroy(), s = null)
+                P = null, Q = 0, q = [], null != s && (s.destroy(), s = null)
             }
             class V extends n.default.PersistedStore {
                 initialize(e) {
                     var t;
-                    this.waitFor(C.default, g.default, R.default), this.syncWith([_.default], () => !0), b = r.default.get(D) || !1, q = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
+                    this.waitFor(C.default, g.default, R.default), this.syncWith([_.default], () => !0), b = r.default.get(D) || !1, w = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
                 }
                 getState() {
                     return {
-                        channelHistory: q
+                        channelHistory: w
                     }
                 }
                 isOpen() {
@@ -906,7 +906,7 @@
                 }
                 channelNoticePredicate(e, t) {
                     let l = Date.now() - t >= v.CHANNEL_NOTICE_SHOW_DELAY;
-                    return k && l
+                    return H && l
                 }
                 getFrequentGuilds() {
                     return null != s ? s.queryGuilds("", 100) : null
@@ -915,13 +915,13 @@
                     return null != s ? s.queryGuilds("", 100).length : 0
                 }
                 getChannelHistory() {
-                    return q
+                    return w
                 }
                 getProps() {
                     return {
                         theme: _.default.theme,
                         query: null != s ? s.query : "",
-                        queryMode: H,
+                        queryMode: k,
                         results: G,
                         selectedIndex: O,
                         seenTutorial: b,
@@ -946,7 +946,7 @@
                     } = e;
                     if (null == s) return !1;
                     let n = null !== (t = U.default.getGuildId()) && void 0 !== t ? t : null;
-                    if (H !== i) {
+                    if (k !== i) {
                         s.setResultTypes(null != i ? [i] : M), s.setLimit(null != i ? 100 : 5);
                         let e = null !== (l = U.default.getGuildId()) && void 0 !== l ? l : void 0;
                         i === o.AutocompleterResultTypes.USER && null != e ? s.setOptions({
@@ -961,7 +961,7 @@
                             voiceChannelGuildFilter: void 0
                         }, !0)
                     }
-                    H = i, s.search(u, H === o.AutocompleterResultTypes.USER ? n : void 0)
+                    k = i, s.search(u, k === o.AutocompleterResultTypes.USER ? n : void 0)
                 },
                 QUICKSWITCHER_SELECT: function(e) {
                     O = e.selectedIndex
@@ -975,7 +975,7 @@
                         channelId: t
                     } = e;
                     if (null == t) return !1;
-                    (q = q.filter(e => e !== t)).unshift(t), q.length > 4 && (q.length = 4)
+                    (w = w.filter(e => e !== t)).unshift(t), w.length > 4 && (w.length = 4)
                 }
             });
             var Y = B
@@ -1032,11 +1032,11 @@
                 n = l("913144"),
                 r = l("80507"),
                 a = l("374363"),
-                o = l("159885"),
-                h = l("42203"),
-                d = l("305961"),
-                c = l("18494"),
-                p = l("162771"),
+                o = l("42203"),
+                h = l("305961"),
+                d = l("18494"),
+                c = l("162771"),
+                p = l("49111"),
                 _ = l("397336");
             let f = 100,
                 R = new r.default({
@@ -1047,7 +1047,7 @@
                     },
                     lookupKey: e => {
                         var t, l;
-                        return null !== (l = null !== (t = d.default.getGuild(e)) && void 0 !== t ? t : h.default.getChannel(e)) && void 0 !== l ? l : h.default.getChannel(h.default.getDMFromUserId(e))
+                        return null !== (l = null !== (t = h.default.getGuild(e)) && void 0 !== t ? t : o.default.getChannel(e)) && void 0 !== l ? l : o.default.getChannel(o.default.getDMFromUserId(e))
                     },
                     afterCompute: () => {},
                     numFrequentlyItems: f,
@@ -1061,10 +1061,10 @@
                     guildId: t,
                     channelId: l
                 } = e, s = !1;
-                return l !== y && (y = null != l ? l : null, null != l && (0, o.isProbablySnowflake)(l) && (s = !0, R.track(l), T.pendingUsages.push({
+                return l !== y && (y = null != l ? l : null, null != l && p.ID_REGEX.test(l) && (s = !0, R.track(l), T.pendingUsages.push({
                     key: l,
                     timestamp: Date.now()
-                }))), t !== E && (E = null != t ? t : null, null != t && (0, o.isProbablySnowflake)(t) && (s = !0, R.track(t), T.pendingUsages.push({
+                }))), t !== E && (E = null != t ? t : null, null != t && p.ID_REGEX.test(t) && (s = !0, R.track(t), T.pendingUsages.push({
                     key: t,
                     timestamp: Date.now()
                 }))), s
@@ -1084,7 +1084,7 @@
             };
             class m extends i.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(p.default, c.default), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && (0, o.isProbablySnowflake)(e.key)), T = e), this.syncWith([a.default], g)
+                    this.waitFor(c.default, d.default), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.ID_REGEX.test(e.key)), T = e), this.syncWith([a.default], g)
                 }
                 getState() {
                     return T
@@ -1103,7 +1103,7 @@
                     return null !== (t = R.getFrecency(e)) && void 0 !== t ? t : 0
                 }
                 getScoreForDMWithoutFetchingLatest(e) {
-                    let t = h.default.getDMFromUserId(e);
+                    let t = o.default.getDMFromUserId(e);
                     return null != t ? this.getScoreWithoutFetchingLatest(t) : 0
                 }
                 getMaxScore() {
@@ -1130,4 +1130,4 @@
         }
     }
 ]);
-//# sourceMappingURL=74970.31d55a7c618812766e5a.js.map
+//# sourceMappingURL=74970.ad098636400bd7dcbe6c.js.map
