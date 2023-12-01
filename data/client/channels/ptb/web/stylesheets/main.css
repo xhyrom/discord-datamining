@@ -19464,8 +19464,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -82969,11 +82969,18 @@ input::-webkit-inner-spin-button {
     }
 }
 
-.modalContentOverrides_c63b7e {
-    padding: 0
+.modalRoot_fd87ec {
+    border-radius: var(--radius-sm);
+    background-color: transparent
 }
 
-.modalContentOverrides_c63b7e::-webkit-scrollbar {
+.modalContent__613a4 {
+    display: flex;
+    padding: 0;
+    border-radius: inherit
+}
+
+.modalContent__613a4::-webkit-scrollbar {
     width: 0;
     height: 0
 }
@@ -110337,13 +110344,8 @@ html .invoiceCancelRow_a8669b {
 }
 
 .art_f8934e {
-    margin: 0 auto;
-    background-color: green;
-    width: 208px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center
+    margin-top: -60px;
+    height: 120px
 }
 
 .coachmark_db913c {
@@ -110356,8 +110358,9 @@ html .invoiceCancelRow_a8669b {
 }
 
 .shopArt_acfdd5 img {
-    height: 120px;
-    width: 208px;
+    margin-top: -80px;
+    height: 150px;
+    width: 250px;
     -o-object-fit: contain;
     object-fit: contain
 }
@@ -124252,4 +124255,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d8679b7ca5ae72736abf.css.map*/
+/*# sourceMappingURL=app.23e144dd625f43a6b55d.css.map*/

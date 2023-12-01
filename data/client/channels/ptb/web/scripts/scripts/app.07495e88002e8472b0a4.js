@@ -5698,8 +5698,9 @@
                 confettiCanvas: "confettiCanvas__125ed",
                 decorationBanner: "decorationBanner_d5fe2e",
                 modalCloseButton: "modalCloseButton_a426a9",
-                modalContentOverrides: "modalContentOverrides_c63b7e",
+                modalContent: "modalContent__613a4",
                 modalInner: "modalInner__0113c",
+                modalRoot: "modalRoot_fd87ec",
                 profileEffectShopPreview: "profileEffectShopPreview__9dbc6",
                 zoomin: "zoomin_fa2e9f"
             }
