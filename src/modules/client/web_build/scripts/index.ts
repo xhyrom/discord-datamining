@@ -154,7 +154,7 @@ export class Scripts implements Module {
     ).text();
 
     const scripts = res
-      .match(/<script src="\/assets\/[a-z0-9]+\.js"[^>]+><\/script>/g)
+      .match(/<script src="\/assets\/[a-z0-9.]+\.js"[^>]+><\/script>/g)
       ?.map((s) => s.match(/src="[^"]+"/g)?.[0].slice(13, -1))
       ?.map((s) => new File(s!))!;
 
