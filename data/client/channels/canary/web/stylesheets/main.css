@@ -19508,8 +19508,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -114283,6 +114283,22 @@ html .invoiceCancelRow_c1bfe7 {
     text-decoration: underline
 }
 
+.classificationEvidenceContainer__91a8a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px
+}
+
+.classificationEvidenceCard__1b7da {
+    margin-top: 14px;
+    background: var(--background-secondary);
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: row
+}
+
 .classificationContainer_ee7986 {
     display: flex;
     flex-direction: column;
@@ -124269,4 +124285,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.976c3949f7080e3d81d5.css.map*/
+/*# sourceMappingURL=app.3113fc6d6a7a09d4f0dc.css.map*/
