@@ -19464,8 +19464,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83702,8 +83702,15 @@ input::-webkit-inner-spin-button {
 .cardsContainer__52d9f {
     display: grid;
     grid-gap: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
     overflow: visible
+}
+
+.regularShopCard__06c2e {
+    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr))
+}
+
+.tallerShopCard__60f20 {
+    grid-template-columns: repeat(auto-fill, minmax(242px, 1fr))
 }
 
 .shop_b31ed2 {
@@ -84108,6 +84115,196 @@ input::-webkit-inner-spin-button {
     background-color: var(--background-primary);
     margin-top: auto;
     margin-bottom: 16px
+}
+
+.shopCard_f7822b {
+    border-radius: var(--radius-xxl);
+    border: 2px solid transparent;
+    grid-column: auto;
+    width: 100%;
+    transition: transform 1s, box-shadow.5s;
+    padding: 40px 32px 32px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.shopCard_f7822b:hover,
+.shopCard_f7822b:focus-within {
+    transform: translatey(-4px)
+}
+
+.avatar_f6650d {
+    margin: 0 auto
+}
+
+.avatarPurchased_eeb4c2 {
+    opacity: .5;
+    transition: opacity.5s
+}
+
+.cardText_e9b824 {
+    margin-top: 32px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.cardText_e9b824.cardTextProfileEffect_dab239:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, .8))
+}
+
+.description__92b55 {
+    margin-top: 4px;
+    word-wrap: break-word
+}
+
+.priceTag__76b4b {
+    margin-top: 16px
+}
+
+.buttonsContainer_d7f186 {
+    width: 100%;
+    display: flex;
+    gap: 8px
+}
+
+.previewButton_c4b5ef {
+    padding: 0 7px
+}
+
+.purchaseButton__63193:hover,
+.previewButton_c4b5ef:hover {
+    opacity: .8
+}
+
+.previewButtonInner_f775c4 {
+    max-width: 24px;
+    max-height: 24px
+}
+
+.defaultPreviewButtonColor__6cdf9 {
+    background-color: var(--background-accent)
+}
+
+.premiumWheelTooltipContent__189f4 {
+    text-align: center
+}
+
+.premiumWheelBadge__2c9f2 {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 0 4px;
+    background: var(--custom-premium-colors-premium-gradient-tier-2-diagonal);
+    z-index: 2
+}
+
+.premiumWheel__02495 {
+    color: var(--white-500);
+    width: 16px;
+    height: 16px
+}
+
+.detailsWrapper_b31a7f {
+    display: flex;
+    position: relative;
+    flex: 1
+}
+
+.hoverUpsellContainer__425f0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px
+}
+
+.innerHover__54e25 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    transition: all.5s;
+    transform: translatey(20%)
+}
+
+.innerBlur_ed9e8f {
+    opacity: 1;
+    transition: opacity.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1
+}
+
+.checkmarkWrapper_f2dab8 {
+    position: absolute;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 80px
+}
+
+.profileEffectCheckmarkWrapper_e65762 {
+    top: 110px
+}
+
+.checkmark__2ccd6 {
+    width: 100%;
+    color: white;
+    transition: opacity.5s;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2))
+}
+
+.limitedTimeBadge__19a7e {
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.shopCard_f7822b:hover .innerHover__54e25,
+.shopCard_f7822b:focus-within .innerHover__54e25 {
+    opacity: 1;
+    transform: translatey(0%)
+}
+
+.shopCard_f7822b:hover .innerBlur_ed9e8f,
+.shopCard_f7822b:focus-within .innerBlur_ed9e8f {
+    opacity: 0
+}
+
+.shopCard_f7822b:hover .checkmark__2ccd6,
+.shopCard_f7822b:focus-within .checkmark__2ccd6 {
+    opacity: 0
+}
+
+.shopCard_f7822b:hover .avatarPurchased_eeb4c2,
+.shopCard_f7822b:focus-within .avatarPurchased_eeb4c2 {
+    opacity: 1
+}
+
+.profileEffectShopPreview_b8d693 {
+    position: relative;
+    height: 120px;
+    width: 200px;
+    top: -10px;
+    margin: 0 auto
+}
+
+.productName_ece1e1 {
+    position: relative
 }
 
 .bannerCard_b27f26 {
@@ -124255,4 +124452,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.23e144dd625f43a6b55d.css.map*/
+/*# sourceMappingURL=app.ad3a75612bf585781196.css.map*/
