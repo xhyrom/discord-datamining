@@ -2437,7 +2437,11 @@
   },
   "BILLING_NITRO_AFFINITY": {
     "url": "/users/@me/billing/nitro-affinity",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_SUBSCRIPTIONS_PREVIEW": {
     "url": "/users/@me/billing/subscriptions/preview",
