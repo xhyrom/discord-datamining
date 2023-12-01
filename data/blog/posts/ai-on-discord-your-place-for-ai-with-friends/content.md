@@ -67,8 +67,8 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Whiteboard with AI&nbsp;Preview</strong></h2>
             <p>We know a lot of you have been asking for a shared whiteboard on Discord for a long time (like a <em>really</em> long time). Well, soon it could be here!&nbsp; We’re exploring a shared visual space to collaborate with friends and colleagues that includes an AI-powered text-to-image generator you can iterate and experiment with together.</p>
-            <figure style="max-width:1200px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6567a88fc27fa379f36a05c6_AI%20with%20Friends.gif" loading="lazy" alt=""></div>
+            <figure style="max-width:804px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65692dc1909a0e0da4dd9410_AI%20Friends%20-%20Art%20Gen%20(1).gif" loading="lazy" alt=""></div>
             </figure>
             <p>But wait, there’s more! <br>‍</p>
         </div>
