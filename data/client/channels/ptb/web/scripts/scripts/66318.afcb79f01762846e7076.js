@@ -498,6 +498,11 @@
                 APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY: "No apps or commands match your search",
                 APP_LAUNCHER_BUILT_IN_SECTION_NAME: "Discord Built-In",
                 APP_LAUNCHER_BUILT_IN_SECTION_DESCRIPTION: "Built-in commands for everyday use",
+                APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_TITLE: "Something went wrong...",
+                APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_BODY: "We were unable to run the command. Please try again later.",
+                APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER: "Start typing...",
+                APP_LAUNCHER_COMMAND_NOT_FOUND_TITLE: "No command found",
+                APP_LAUNCHER_COMMAND_NOT_FOUND_BODY: "This command is not available",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -16660,11 +16665,6 @@
                 POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}H Left}}",
                 POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}M Left}}",
                 POLL_EXPIRED: "Poll Closed",
-                APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_TITLE: "Something went wrong...",
-                APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_BODY: "We were unable to run the command. Please try again later.",
-                APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER: "Start typing...",
-                APP_LAUNCHER_COMMAND_NOT_FOUND_TITLE: "No command found",
-                APP_LAUNCHER_COMMAND_NOT_FOUND_BODY: "This command is not available",
                 FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
                 PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink})."
             })
@@ -18252,7 +18252,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250590", ", Version Hash: ").concat("992c211fb4783c62a335863b76f7ce5f5d795219")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250597", ", Version Hash: ").concat("9f6f5e92490001b5ff3c5dee81bf90c4dc6d98cf")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20546,8 +20546,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "250590", "250590"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250590")), _ = 0), _
+                let _ = parseInt((e = "250597", "250597"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250597")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36605,4 +36605,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.f15eb0197ae9d65b4160.js.map
+//# sourceMappingURL=66318.afcb79f01762846e7076.js.map
