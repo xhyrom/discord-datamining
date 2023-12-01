@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-11_voice_activity_in_profile",
+    "label": "Voice Activity in Profile",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Voice activity displayed in user profile"
+    ],
+    "hash": 435681572,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "showVoiceActivityInProfile"
+    ]
+  }
+}

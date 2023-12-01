@@ -22,6 +22,8 @@
       4,
       5
     ],
+    "holdout": {},
+    "aa_mode": false,
     "config_keys": [
       "enableSendingVoiceStats",
       "percentageOfCalls"

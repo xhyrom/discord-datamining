@@ -18,9 +18,12 @@
       2,
       3
     ],
+    "holdout": {},
+    "aa_mode": false,
     "config_keys": [
       "favoritesEnabled",
-      "canShow"
+      "canShow",
+      "isFavoritesPerk"
     ]
   }
 }

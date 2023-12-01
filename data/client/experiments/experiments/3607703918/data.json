@@ -12,6 +12,11 @@
       -1,
       0
     ],
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false,
     "config_keys": [
       "enabled"
     ]

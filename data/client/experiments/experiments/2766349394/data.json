@@ -14,6 +14,11 @@
       0,
       1
     ],
+    "holdout": {
+      "name": "2023-10_event_experiments_holdout",
+      "bucket": 0
+    },
+    "aa_mode": false,
     "config_keys": [
       "canSeeUpcomingEventsNotices"
     ]

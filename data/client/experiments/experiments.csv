@@ -205,6 +205,7 @@ id,hash,label
 2023-05_safety_user_sentiment,1344378364,Safety User Sentiment Feedback Eligible
 2023-06_activity_shelf_banner_color_together,1426851414,Activity Shelf Banner Color Together
 2023-06_activity_shelf_to_detail_page,2451628514,Activity Shelf to Detail Page
+2023-06_app_launcher_mobile,2212455371,App Launcher - Mobile
 2023-06_birthday_goodbye,2205929113,Activities Free Forever
 2023-06_bogo_announcement_modal,2338915282,BOGO Announcement Modal
 2023-06_bogo_promotion_gate,680908968,BOGO Promotion Manager
@@ -372,6 +373,7 @@ id,hash,label
 2023-10_wgc_stale_frame_timeout,4008174795,Windows Graphics Capture Stale Frame Timeout
 2023-11_activities_in_text_guild,1689901851,Activities in Text Guild
 2023-11_adyen_auth_without_capture,1511378616,Adyen auth without capture rollout
+2023-11_app_launcher_desktop,822676134,App Launcher - Desktop
 2023-11_attachment_link_markup,1894288113,Attachment Link Config User Experiment
 2023-11_clyde_ai_aa,1485389700,ClydeAI
 2023-11_collectibles_gifting,538840187,Collectibles Gifting
@@ -390,3 +392,4 @@ id,hash,label
 2023-11_uu_one_click,3151821390,Unique Username one click
 2023-11_video_quality_measurement_hwdec,2446445026,Video Quality Measurement Hardware Decoding
 2023-11_video_quality_measurement_hwdec_v1,622606997,Video Quality Measurement Hardware Decoding
+2023-11_voice_activity_in_profile,435681572,Voice Activity in Profile

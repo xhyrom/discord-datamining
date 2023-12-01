@@ -1,24 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-02_voice_channel_statuses",
-    "label": "Voice Channel Status Guild Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-      "Treatment 2: A/A test, identical to treatment 1"
-    ],
     "hash": 2809294122,
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false
   },
   "rollout": {
     "populations": [

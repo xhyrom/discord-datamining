@@ -1,7 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2080490321
+    "hash": 2080490321,
+    "holdout": {
+      "name": "2023-06_server_subscriptions_tier_templates_holdout",
+      "bucket": 0
+    },
+    "aa_mode": false
   },
   "rollout": {
     "populations": [

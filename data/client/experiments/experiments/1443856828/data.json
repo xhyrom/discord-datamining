@@ -32,6 +32,8 @@
       10,
       11
     ],
+    "holdout": {},
+    "aa_mode": false,
     "config_keys": [
       "enabled",
       "hasTabUI",

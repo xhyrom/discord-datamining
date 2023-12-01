@@ -14,6 +14,8 @@
       0,
       1
     ],
+    "holdout": {},
+    "aa_mode": false,
     "config_keys": [
       "enableRoleSubscriptionsForUser"
     ]

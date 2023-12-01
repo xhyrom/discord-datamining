@@ -14,6 +14,8 @@
       0,
       3
     ],
+    "holdout": {},
+    "aa_mode": false,
     "config_keys": [
       "allowPlayStationStaging"
     ]

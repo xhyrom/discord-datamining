@@ -18,6 +18,8 @@
       2,
       99
     ],
+    "holdout": {},
+    "aa_mode": false,
     "config_keys": [
       "enableClips",
       "ignorePlatformRestriction"

@@ -14,6 +14,11 @@
       0,
       1
     ],
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false,
     "config_keys": [
       "enableFastMonetizationOnboardingForGuild"
     ]

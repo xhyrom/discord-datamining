@@ -12,7 +12,8 @@
       "Treatment 4: Mobile/desktop view/use/collect, and show Try Packs Modal",
       "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)",
       "Treatment 6: Non-nitro same as bucket 4 + auto-unfurl reactions",
-      "Treatment 7: Nitro same as bucket 4 + auto-unfurl reactions"
+      "Treatment 7: Nitro same as bucket 4 + auto-unfurl reactions",
+      "Treatment 8: Collection off everywhere"
     ],
     "hash": 1473329304,
     "buckets": [
@@ -24,8 +25,11 @@
       4,
       5,
       6,
-      7
+      7,
+      8
     ],
+    "holdout": {},
+    "aa_mode": false,
     "config_keys": [
       "enabled"
     ]

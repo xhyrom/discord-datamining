@@ -1,7 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2104400771
+    "hash": 2104400771,
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false
   },
   "rollout": {
     "populations": [
