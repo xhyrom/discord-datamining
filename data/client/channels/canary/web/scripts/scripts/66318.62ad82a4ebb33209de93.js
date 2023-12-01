@@ -18252,7 +18252,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250541", ", Version Hash: ").concat("dd33b14addf49f293ea4c20ffffc9afb9ee9e924")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250547", ", Version Hash: ").concat("b535840864254ab065401bcc75ed6a7bcc7296a3")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -18690,23 +18690,23 @@
                         let {
                             openMFAModal: o
                         } = E;
-                        return o(e.body.mfa, _, t)
-                    }).catch(t), !0) : ((0, a.isLimitedAccessErrorCode)(e.statusCode, null === (s = e.body) || void 0 === s ? void 0 : s.code) ? E.el("258158").then(E.bind(E, "258158")).then(e => {
+                        o(e.body.mfa, _, t)
+                    }).catch(t), !0) : (0, a.isLimitedAccessErrorCode)(e.statusCode, null === (s = e.body) || void 0 === s ? void 0 : s.code) ? (E.el("258158").then(E.bind(E, "258158")).then(e => {
                         let {
                             default: _
                         } = e;
                         _()
-                    }) : (0, n.isLimitedAccessErrorCode)(e.statusCode, null === (S = e.body) || void 0 === S ? void 0 : S.code) ? E.el("772545").then(E.bind(E, "772545")).then(_ => {
+                    }), !1) : (0, n.isLimitedAccessErrorCode)(e.statusCode, null === (S = e.body) || void 0 === S ? void 0 : S.code) ? (E.el("772545").then(E.bind(E, "772545")).then(_ => {
                         var E;
                         let {
                             default: t
                         } = _;
                         t(null === (E = e.body) || void 0 === E ? void 0 : E.guild_id)
-                    }) : (0, r.isBlockedByProxyErrorCode)(e) && E.el("499946").then(E.bind(E, "499946")).then(e => {
+                    }), !1) : ((0, r.isBlockedByProxyErrorCode)(e) && E.el("499946").then(E.bind(E, "499946")).then(e => {
                         let {
                             handleBlockedByProxy: _
                         } = e;
-                        return _(), !1
+                        _()
                     }), !1)
                 }
             }), (0, t.setAwaitOnline)(async e => {
@@ -20546,8 +20546,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "250541", "250541"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250541")), _ = 0), _
+                let _ = parseInt((e = "250547", "250547"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250547")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -31058,7 +31058,8 @@
                         status: o.status
                     };
                     N(_, O);
-                    let A = (o, n) => {
+                    let A = !1,
+                        R = (o, n) => {
                             let a = {
                                 ..._,
                                 headers: {
@@ -31067,17 +31068,17 @@
                                 },
                                 interceptResponse: n
                             };
-                            T(e, a, E, t, r)
+                            A = !0, T(e, a, E, t, r)
                         },
-                        R = e => {
-                            t(e), null == r || r({
+                        l = e => {
+                            !A && (t(e), null == r || r({
                                 ok: !1,
                                 hasErr: !0,
                                 err: e
-                            })
+                            }))
                         };
-                    if ((null == _ ? void 0 : null === (n = _.interceptResponse) || void 0 === n ? void 0 : n.call(_, o, A, R)) !== !0) {
-                        if ((null == c ? void 0 : null === (I = c.interceptResponse) || void 0 === I ? void 0 : I.call(c, o, A, R)) !== !0) {
+                    if ((null == _ ? void 0 : null === (n = _.interceptResponse) || void 0 === n ? void 0 : n.call(_, o, R, l)) !== !0) {
+                        if ((null == c ? void 0 : null === (I = c.interceptResponse) || void 0 === I ? void 0 : I.call(c, o, R, l)) !== !0) {
                             if (o.ok) E(O);
                             else {
                                 if (_.oldFormErrors && (null == O ? void 0 : null === (S = O.body) || void 0 === S ? void 0 : S.code) === a.INVALID_FORM_BODY_ERROR_CODE) {
@@ -36604,4 +36605,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.44f4359a3a39a527cae3.js.map
+//# sourceMappingURL=66318.62ad82a4ebb33209de93.js.map
