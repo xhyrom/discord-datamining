@@ -55965,6 +55965,8 @@ html .progress__4ef76 {
     background-size: 36px 36px;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    align-items: center;
     justify-content: center
 }
 
@@ -63601,12 +63603,6 @@ input::-webkit-inner-spin-button {
     margin-bottom: 16px
 }
 
-.icon__388ab {
-    width: 24px;
-    height: 24px;
-    background-image: url(/assets/f2f07ab12b7f080c25e7.svg)
-}
-
 .header_ffc801 {
     margin-bottom: 16px
 }
@@ -70734,12 +70730,6 @@ input::-webkit-inner-spin-button {
     text-decoration: underline
 }
 
-.debugButton__0c12a .launchIcon__4fc49 {
-    margin-left: 4px;
-    display: inline-block;
-    vertical-align: bottom
-}
-
 .copyStatsButton__3e018 {
     font-size: 12px;
     cursor: pointer;
@@ -70755,28 +70745,22 @@ input::-webkit-inner-spin-button {
     text-decoration: underline
 }
 
-.copyStatsButton__3e018 .copyIcon__2bc94 {
-    margin-left: 4px;
-    display: inline-block;
-    vertical-align: bottom
+.textWithIcon__28467 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4)
 }
 
 .secured__615be {
     font-size: 12px;
     font-weight: 500;
     flex: 1;
-    color: var(--text-positive)
+    color: var(--text-positive);
+    display: flex
 }
 
-.secured__615be:before {
-    content: " ";
-    background: url(/assets/02705764250e5f57361c.svg)center center no-repeat;
-    width: 9px;
-    height: 12px;
-    background-size: 9px 12px;
-    display: inline-block;
-    margin-right: 4px;
-    vertical-align: bottom
+.secured__615be .lockIcon__58b8f {
+    margin-right: 4px
 }
 
 .enable-forced-colors .container__0810b {
@@ -71621,7 +71605,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--background-nested-floating);
+    background-color: var(--background-accent);
     border-radius: 50%;
     flex-shrink: 0;
     margin-right: 8px
@@ -71773,6 +71757,11 @@ input::-webkit-inner-spin-button {
 .chatCheckIcon__92b57 {
     margin-top: -3px;
     margin-right: -3px
+}
+
+.show-redesigned-icons .chatCheckIcon__92b57 {
+    margin-top: 0;
+    margin-right: 0
 }
 
 .actionButton__90c1a {
@@ -82655,6 +82644,10 @@ input::-webkit-inner-spin-button {
     transform: rotate(90deg)
 }
 
+.show-redesigned-icons .notAllowedIcon__15e26 {
+    transform: none
+}
+
 .presetDecorationImg__1fea2 {
     height: 64px;
     width: 64px
@@ -82728,6 +82721,10 @@ input::-webkit-inner-spin-button {
     align-items: center;
     justify-content: center;
     gap: 2px
+}
+
+.show-redesigned-icons .newBadgeText__40f0a {
+    gap: var(--spacing-4)
 }
 
 .spinner_d83582 {
@@ -120201,10 +120198,15 @@ div.nagbar_c731ff {
 .playIcon_af44c5 {
     background-color: rgba(0, 0, 0, .4);
     color: var(--white-500);
-    border-radius: 16px;
+    border-radius: 50%;
     position: absolute;
     top: 4px;
-    right: 4px
+    right: 4px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .newTextBadge_da2cca {
@@ -124241,4 +124243,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.41e8155aab80ebba072e.css.map*/
+/*# sourceMappingURL=app.c1fbebf4c78e58cb367d.css.map*/
