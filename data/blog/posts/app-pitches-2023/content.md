@@ -116,8 +116,8 @@
             <div class="w-embed">
                 <div class="btn-wrapper"><a data-track="https://discord.com/terms/app-pitches-2023" href="https://discord.com/terms/app-pitches-2023" class="btn-blog w-button" target="_blank">App Pitches Terms &amp; Conditions</a></div>
             </div>
-            <p>We’ll be sharing the top submissions that will be receiving funding in this very blog<strong> </strong>— bookmark this page and keep an eye out for the next batch of incredible Discord apps from our thriving Developer community. Maybe you’ll find a new app you’ll want to use on your server, too!&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:608px">
+            <p>We’ll be sharing the top submissions that will be receiving funding in this very blog<strong> </strong>— bookmark this page and keep an eye out for the next batch of incredible Discord apps from our <a href="https://dis.gd/ddevs-250k-members">thriving Developer community</a>. Maybe you’ll find a new app you’ll want to use on your server, too!&nbsp;</p>
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:608pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/650b813dd52ad4201bd92080_pvrp6I-E3ztbsDsx4Sy6VCqf18ENWSaNbd_Fnc2vJMWb4Um7RW82VtMtd6bw7jpVPXutHFZrMDCkrtNGlKhWfvPQuphyfX8XyEXtQ9BZ_-5Zjs_uZNHXEt6voUY1NXpMMtlfiT_gkrvYrnzRgxZuhDE.png" alt=""></div>
             </figure>
             <h2><strong>Build Apps, Create App-better World</strong></h2>
