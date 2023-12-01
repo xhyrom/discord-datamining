@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=3" name="viewport">
+
+    <!-- section:seometa -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Discord">
+    <meta property="og:title" content="Discord - A New Way to Chat with Friends &amp; Communities">
+    <meta property="og:description" content="Discord is the easiest way to communicate over voice, video, and text.  Chat, hang out, and stay close with your friends and communities.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@discord">
+    <meta name="twitter:creator" content="@discord">
+    <!-- endsection -->
+    <script nonce="NTksMTI2LDEyMCwxMDcsMjM2LDIsMjMxLDIz">
+        window.GLOBAL_ENV = {
+            API_ENDPOINT: '//discord.com/api',
+            API_VERSION: 9,
+            GATEWAY_ENDPOINT: 'wss://gateway.discord.gg',
+            WEBAPP_ENDPOINT: '//discord.com',
+            CDN_HOST: 'cdn.discordapp.com',
+            ASSET_ENDPOINT: '//discord.com',
+            MEDIA_PROXY_ENDPOINT: '//media.discordapp.net',
+            WIDGET_ENDPOINT: '//discord.com/widget',
+            INVITE_HOST: 'discord.gg',
+            GUILD_TEMPLATE_HOST: 'discord.new',
+            GIFT_CODE_HOST: 'discord.gift',
+            RELEASE_CHANNEL: 'stable',
+            DEVELOPERS_ENDPOINT: '//discord.com',
+            MARKETING_ENDPOINT: '//discord.com',
+            BRAINTREE_KEY: 'production_ktzp8hfp_49pp2rp4phym7387',
+            STRIPE_KEY: 'pk_live_CUQtlpQUF0vufWpnpUmQvcdi',
+            ADYEN_KEY: 'live_E3OQ33V6GVGTXOVQZEAFQJ6DJIDVG6SY',
+            NETWORKING_ENDPOINT: '//router.discordapp.net',
+            RTC_LATENCY_ENDPOINT: '//latency.discord.media/rtc',
+            ACTIVITY_APPLICATION_HOST: 'discordsays.com',
+            PROJECT_ENV: 'production',
+            REMOTE_AUTH_ENDPOINT: '//remote-auth-gateway.discord.gg',
+            SENTRY_TAGS: {
+                "buildId": "94562294382a41d947d76b401cc6c9fda846dcfe",
+                "buildType": "normal"
+            },
+            MIGRATION_SOURCE_ORIGIN: 'https://discordapp.com',
+            MIGRATION_DESTINATION_ORIGIN: 'https://discord.com',
+            HTML_TIMESTAMP: Date.now(),
+            ALGOLIA_KEY: 'aca0d7082e4e63af5ba5917d5e96bed0',
+            PUBLIC_PATH: '/assets/'
+        };
+    </script>
+    <script nonce="NTksMTI2LDEyMCwxMDcsMjM2LDIsMjMxLDIz">
+        ! function() {
+            if (null != window.WebSocket) {
+                if (function(n) {
+                        try {
+                            var e = localStorage.getItem(n);
+                            return null == e ? null : JSON.parse(e)
+                        } catch (n) {
+                            return null
+                        }
+                    }("token") && !window.__OVERLAY__) {
+                    var n = null != window.DiscordNative || null != window.require ? "etf" : "json",
+                        e = window.GLOBAL_ENV.GATEWAY_ENDPOINT + "/?encoding=" + n + "&v=" + window.GLOBAL_ENV.API_VERSION + "&compress=zlib-stream";
+                    console.log("[FAST CONNECT] connecting to: " + e);
+                    var o = new WebSocket(e);
+                    o.binaryType = "arraybuffer";
+                    var t = Date.now(),
+                        i = {
+                            open: !1,
+                            identify: !1,
+                            gateway: e,
+                            messages: []
+                        };
+                    o.onopen = function() {
+                        console.log("[FAST CONNECT] connected in " + (Date.now() - t) + "ms"), i.open = !0
+                    }, o.onclose = o.onerror = function() {
+                        window._ws = null
+                    }, o.onmessage = function(n) {
+                        i.messages.push(n)
+                    }, window._ws = {
+                        ws: o,
+                        state: i
+                    }
+                }
+            }
+        }()
+    </script> <!-- section:title -->
+    <title>Discord</title>
+    <!-- endsection -->
+    <link rel="icon" href="/assets/images/favicon.ico" />
+</head>
+
+<body>
+    <div id="app-mount"></div>
+    <script nonce="NTksMTI2LDEyMCwxMDcsMjM2LDIsMjMxLDIz">
+        window.__OVERLAY__ = /overlay/.test(location.pathname)
+    </script>
+    <script nonce="NTksMTI2LDEyMCwxMDcsMjM2LDIsMjMxLDIz">
+        window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname)
+    </script>
+
+    <script src="/assets/0a5377e50363fae69378.js" defer></script>
+    <link href="/assets/shared.b7fadacb16ddeaabaa11.css" rel="stylesheet" />
+    <script src="/assets/e8cd715b155db65dbe41.js" defer></script>
+    <link href="/assets/app.2edab2748c16ed4218f9.css" rel="stylesheet" />
+    <script src="/assets/6e0f2743425529ec9a3e.js" defer></script>
+    <script src="/assets/e92bcd49a35176c74689.js" defer></script>
+    <script src="/assets/275913a14b80649f7304.js" defer></script>
+    <script src="/assets/e8cd1912d9ab669b5640.js" defer></script>
+    <script src="/assets/8add1db2a97e7a1b803a.js" defer></script>
+    <script src="/assets/860941194c36a08ad18e.js" defer></script>
+    <script src="/assets/a76236d61f3388b9edb0.js" defer></script>
+    <script src="/assets/d13babb482ba16a6291d.js" defer></script>
+    <script src="/assets/1c7604029adcff18465c.js" defer></script>
+    <script src="/assets/ee177b1b42fe5f17b75c.js" defer></script>
+    <script src="/assets/cd52d4230f2ee3c11e98.js" defer></script>
+    <script src="/assets/8008dff0e97e29f17606.js" defer></script>
+    <script src="/assets/d179fa5fdde237bd188f.js" defer></script>
+    <script src="/assets/f9b6bf3e8b29f0f8437f.js" defer></script>
+    <script src="/assets/f761fa611daf84d1dd89.js" defer></script>
+    <script src="/assets/40fad28f01da56375e6a.js" defer></script>
+    <script src="/assets/10e39c882223d2a5f274.js" defer></script>
+    <script src="/assets/94f1ed816761b6c86276.js" defer></script>
+    <script src="/assets/bfd4701fcb8772780564.js" defer></script>
+    <script src="/assets/25b5e8687935019950ef.js" defer></script>
+    <script src="/assets/edc45ace92bb9a62c3c3.js" defer></script>
+    <script src="/assets/1970a2549561cf89cefa.js" defer></script>
+    <script src="/assets/7c1dc3a41650229f2417.js" defer></script>
+    <script src="/assets/b3d9afb1de73361444d9.js" defer></script>
+    <script src="/assets/dc63d2e5a0b1e1a03c50.js" defer></script>
+    <script src="/assets/5241a8e32c18d6fbacd9.js" defer></script>
+    <script src="/assets/7d007ca50c3976f4a860.js" defer></script>
+    <script src="/assets/885a01187990460e739d.js" defer></script>
+    <script src="/assets/2a95edb859e1d456cbe9.js" defer></script>
+    <script src="/assets/218aeb3cc5a47fa3deb7.js" defer></script>
+    <script src="/assets/48d21634838d5069ac06.js" defer></script>
+    <script src="/assets/0b01de389e338575db6d.js" defer></script>
+    <script src="/assets/caceccb05ff1808b4296.js" defer></script>
+    <script src="/assets/1f70c6eb3686a39a7854.js" defer></script>
+    <script src="/assets/eaf0d1eff5b79dc3c6d3.js" defer></script>
+    <script src="/assets/db5980710ac12e567cc9.js" defer></script>
+    <script src="/assets/76ce3c1701b64d925597.js" defer></script>
+    <script src="/assets/d9300213127d7f9bc704.js" defer></script>
+    <script src="/assets/3338382dff3c62f24172.js" defer></script>
+    <script src="/assets/2d1ee5c3d0c67befe6c9.js" defer></script>
+    <script src="/assets/75b020ce48e3bfec06e9.js" defer></script>
+    <script src="/assets/25dc10f313478679d26b.js" defer></script>
+    <script src="/assets/c889c0722312213a62b8.js" defer></script>
+    <script src="/assets/a754b912638afe0e837f.js" defer></script>
+    <script src="/assets/8a5ca33e10d42e321410.js" defer></script>
+    <script src="/assets/63ffba8e93a7f7585df3.js" defer></script>
+    <script src="/assets/6006328c5f4130fc6984.js" defer></script>
+    <script src="/assets/25f4465a5663faa10637.js" defer></script>
+    <script src="/assets/1d6a6ae7f430e1005959.js" defer></script>
+    <script src="/assets/652b9e1f94a5c9e1755a.js" defer></script>
+    <script src="/assets/919135beac2ba698218a.js" defer></script>
+    <script src="/assets/631462826643175a32e4.js" defer></script>
+    <script src="/assets/7e8a54042b494fcbf9fc.js" defer></script>
+    <script src="/assets/bf74e4df46cb00bbdcce.js" defer></script>
+    <script src="/assets/ae678e5a8ee46cc7311d.js" defer></script>
+    <script src="/assets/22e5d3fb0e1c07f17064.js" defer></script>
+    <script src="/assets/78cd558b7f08b9a6d3ef.js" defer></script>
+    <script src="/assets/03116aebc54b89009a30.js" defer></script>
+    <script src="/assets/7105d83fb6dfbed18bba.js" defer></script>
+    <script src="/assets/0d3b5ea245cf4bcd0d0b.js" defer></script>
+    <script src="/assets/cb0cdfb38973b18b884b.js" defer></script>
+    <script src="/assets/aaed5add3627f0f4509b.js" defer></script>
+    <script src="/assets/835c8a646dfbf4da9e65.js" defer></script>
+    <script src="/assets/985d37b6f415ba428cbd.js" defer></script>
+    <script src="/assets/dac25ad7e04e5fb34c3d.js" defer></script>
+    <script src="/assets/64155ff4f27459bc3229.js" defer></script>
+    <script src="/assets/7b650df1a5ac439484ca.js" defer></script>
+    <script src="/assets/023c0b85f8bf8ccc5a95.js" defer></script>
+    <script src="/assets/48ded73a11058e68607c.js" defer></script>
+    <script src="/assets/9ffc23460888d3048a77.js" defer></script>
+    <script src="/assets/d80e58c6681893b13d0d.js" defer></script>
+    <script src="/assets/012db74d01ad6541b0db.js" defer></script>
+    <script src="/assets/3662717f5db3285fb6f4.js" defer></script>
+    <script src="/assets/0bdc288614d03f7695dc.js" defer></script>
+    <script src="/assets/587e3f4a405d796eda69.js" defer></script>
+    <script src="/assets/bfd5d7c50c9ecabf2937.js" defer></script>
+    <script src="/assets/d6f7fe7163eeed651f47.js" defer></script>
+    <script src="/assets/11e0ae849b521f288679.js" defer></script>
+    <script src="/assets/1ab1972edeac2174253e.js" defer></script>
+    <script src="/assets/3229901073f7f5246652.js" defer></script>
+    <script src="/assets/8858d069d24489466c4d.js" defer></script>
+    <script src="/assets/8ce2fd2658552c79ffca.js" defer></script>
+    <script src="/assets/5816c03bb7375e536dca.js" defer></script>
+    <script src="/assets/05742b63f3a02e10537f.js" defer></script>
+    <script src="/assets/8b06bb738d5b281f1af5.js" defer></script>
+    <script src="/assets/ef5527d941d5ea0ade34.js" defer></script>
+    <script src="/assets/c9230c8c4dc8356c8960.js" defer></script>
+    <script src="/assets/652810fe62b532600c6f.js" defer></script>
+    <script src="/assets/0d63e593eac025fbf42b.js" defer></script>
+    <script src="/assets/f2e52435130001da88ba.js" defer></script>
+    <script src="/assets/bc682dbd7e06417e3e0c.js" defer></script>
+    <script src="/assets/769fa950c0222f7389ce.js" defer></script>
+    <script src="/assets/13fdba74ced434ba07e2.js" defer></script>
+    <script src="/assets/b325ea72fadef633f4b0.js" defer></script>
+    <script src="/assets/e77bbe169a32a9840736.js" defer></script>
+    <script src="/assets/611eaef8ae5e8ad23266.js" defer></script>
+    <script nonce="NTksMTI2LDEyMCwxMDcsMjM2LDIsMjMxLDIz">
+        (function() {
+            var js = "window['__CF$cv$params']={r:'82e7623db8c39459',t:'MTcwMTM5MjMyNy4zMzIwMDA='};_cpo=document.createElement('script');_cpo.nonce='NTksMTI2LDEyMCwxMDcsMjM2LDIsMjMxLDIz',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
+            var _0xh = document.createElement('iframe');
+            _0xh.height = 1;
+            _0xh.width = 1;
+            _0xh.style.position = 'absolute';
+            _0xh.style.top = 0;
+            _0xh.style.left = 0;
+            _0xh.style.border = 'none';
+            _0xh.style.visibility = 'hidden';
+            document.body.appendChild(_0xh);
+
+            function handler() {
+                var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
+                if (_0xi) {
+                    var _0xj = _0xi.createElement('script');
+                    _0xj.nonce = 'NTksMTI2LDEyMCwxMDcsMjM2LDIsMjMxLDIz';
+                    _0xj.innerHTML = js;
+                    _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
+                }
+            }
+            if (document.readyState !== 'loading') {
+                handler();
+            } else if (window.addEventListener) {
+                document.addEventListener('DOMContentLoaded', handler);
+            } else {
+                var prev = document.onreadystatechange || function() {};
+                document.onreadystatechange = function(e) {
+                    prev(e);
+                    if (document.readyState !== 'loading') {
+                        document.onreadystatechange = prev;
+                        handler();
+                    }
+                };
+            }
+        })();
+    </script>
+</body>
+
+</html>

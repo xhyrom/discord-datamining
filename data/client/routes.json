@@ -2431,6 +2431,10 @@
       "OPTIONS"
     ]
   },
+  "BILLING_NITRO_AFFINITY": {
+    "url": "/users/@me/billing/nitro-affinity",
+    "allowed_methods": null
+  },
   "BILLING_SUBSCRIPTIONS_PREVIEW": {
     "url": "/users/@me/billing/subscriptions/preview",
     "allowed_methods": [
@@ -3298,6 +3302,10 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "SUBMIT_REPORT_SECOND_LOOK": {
+    "url": "/reporting/review",
+    "allowed_methods": null
   },
   "STAGE_INSTANCES": {
     "url": "/stage-instances",

@@ -1,0 +1,48 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-11_secure_frames_encryption_guilds",
+    "label": "Allowing testing secure frames for voice/video (Guilds)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Can support secure frames for voice/video"
+    ],
+    "hash": 2916044329,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "canSupportSecureFrames"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "674359793908973569",
+        "822219052402606132",
+        "281683040739262465",
+        "997637077099364383"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

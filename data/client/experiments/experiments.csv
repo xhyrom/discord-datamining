@@ -58,6 +58,7 @@ id,hash,label
 2022-08_home_drawer_autoclose,75117039,Auto close home drawer
 2022-08_message_todos_staff_only,4170652702,Message TODO list
 2022-08_rtc_minimum_jitter_buffer_level,1077571921,Minimum Jitter Buffer Level
+2022-08_windows_graphics_capture,231858385,Windows Graphics Capture
 2022-09_burst_reactions,1443856828,Burst Reactions User Experiment
 2022-09_creator_monetization_raven,3723449866,Creator Monetization Onboarding v2
 2022-09_creator_monetization_raven_users,2539540256,Creator Monetization Onboarding v2 Users
@@ -243,7 +244,7 @@ id,hash,label
 2023-07_server_guide_post_onboarding_new_member_action,4076788897,Add onboarding new member action to server guide
 2023-07_server_guide_trigger,2104400771,server guide guild experiment for triggering purposes
 2023-07_suggested_contacts_on_messages_tab,3350915613,Suggested Contacts Rows on Messages Tab
-2023-08_activities_in_text,1295440499,Activities in Text
+2023-08_activities_in_text,1295440499,Activities in Text User
 2023-08_clips_public_test,3779532009,Clips (Public Test)
 2023-08_collectiblesnitroavatardecoiap,2588597280,Collectible Nitro Avatar Decorations IAP
 2023-08_custom_app_icons,2089092680,Custom App Icons
@@ -369,17 +370,23 @@ id,hash,label
 2023-10_video_hook_stale_frame_timeout,1821813006,Video Hook Stale Frame Timeout
 2023-10_viewer_clipping,3351049965,Test viewer side clipping
 2023-10_wgc_stale_frame_timeout,4008174795,Windows Graphics Capture Stale Frame Timeout
+2023-11_activities_in_text_guild,1689901851,Activities in Text Guild
 2023-11_adyen_auth_without_capture,1511378616,Adyen auth without capture rollout
 2023-11_attachment_link_markup,1894288113,Attachment Link Config User Experiment
 2023-11_clyde_ai_aa,1485389700,ClydeAI
+2023-11_collectibles_gifting,538840187,Collectibles Gifting
 2023-11_colonist_minishelf_banner,2188337804,Actvity Colonist Mini-Shelf Banner
 2023-11_enable_hang_status,1033614739,Hang Statuses
 2023-11_expanded_gifting_revamp_experiment,2053162821,Expanded Gifting Revamp Experiment
+2023-11_midjourney_onboarding,1881851350,Midjourney Onboarding
 2023-11_nitro_tab_holdout,2005511838,Nitro Tab Holdout
 2023-11_no_manage_subscriptions_section,4037560221,No Manage Subscriptions Section
 2023-11_seasonal_gifting,3338888279,Seasonal Gifting 2023
 2023-11_seasonal_gifting_marketing_2023,3863309922,Seasonal Gifting Marketing 2023
+2023-11_secure_frames_encryption_guilds,2916044329,Allowing testing secure frames for voice/video (Guilds)
 2023-11_shop_for_all_full_launch_nitro_user_upsell,4212844827,Shop For All Full Launch Nitro User Upsell Experiment
 2023-11_soundboard_recently_heard_frequently_played,3577312222,Soundboard Recently Heard & Frequently Played
 2023-11_totally_benign_and_non_controversial_notification_tweaks,1580712211,Notification Changes
 2023-11_uu_one_click,3151821390,Unique Username one click
+2023-11_video_quality_measurement_hwdec,2446445026,Video Quality Measurement Hardware Decoding
+2023-11_video_quality_measurement_hwdec_v1,622606997,Video Quality Measurement Hardware Decoding

@@ -16,9 +16,8 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>How to Share Your Video &amp; Screen in Stage Channels</strong></h2>
             <p>The next time you hop on a Stage for your community, you’ll notice two new buttons you may be familiar with already: video and screen share. They function just like they do in the Voice channels and DM conversations you’re used to: use the video button to turn on your camera for your audience to see, or share your screen when it’s time for your community’s monthly joke-slideshow event.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/63ea51f518330d1ce697c16d_-6HO7YfrHkKOyTXP5mPl0C8iM0C66t7TBBU7tse0YUN-mkjTzQ_9PnMe0dd7T4QgGqxXcBhUgXEQhV8jGm8i1U5yKbthZmBuioDWnin-MCuYo5JD6ppgpRPnFLZUNW6WvaTpjZBGk86WG1FnYkaZgnE.png" alt="A side-by-side example of an upgraded Stage experience on both mobile and desktop.&nbsp;"></div>
-                <figcaption>Video, screen share and text chat for Stages can be enjoyed on both desktop and mobile.&nbsp;</figcaption>
+            <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6567a9ab0d00a103ceaec762_Discriminator%20Audit%20Replacement.png" loading="lazy" alt=""></div>
             </figure>
             <p>Stages are meant to share smaller, intimate conversations with a wider audience — this means there are some limitations to how many people can turn on their cameras or share their content.&nbsp;</p>
             <p>Notably, <strong>up to five members can use video while on a Stage</strong> and <strong>one screen share is supported on a Stage channel at a time</strong>. The presenter sharing their screen can be different than the five others using video, and audience members won’t have their own audio or video feeds broadcast to the community without their permission — unless they willingly take to the Stage, of course.&nbsp;</p>

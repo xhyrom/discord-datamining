@@ -3,7 +3,7 @@
         <div class="safetie-author-wrapper">
             <div class="safetie-author-photo-wrapper"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2.png" loading="lazy" alt="" sizes="(max-width: 479px) 60px, (max-width: 991px) 70px, 90px" srcset="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2-p-500.png 500w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2-p-800.png 800w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af30d32e7d98b2fd95f649_61de10ffd7997806f5bcc5f6_image2.png 810w" class="safetie-author-image">
                 <div class="safetie-author-title">Liz Hegarty</div>
-                <div class="w-dyn-bind-empty"></div>
+                <div>September 12, 2022</div>
                 <div class="padding-32px"></div>
             </div>
             <div>

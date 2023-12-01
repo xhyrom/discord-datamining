@@ -1,0 +1,26 @@
+{
+  "id": 18859311755287,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/18859311755287.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/18859311755287-Free-Trial-of-Midjourney-for-Nitro-Subscribers",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000457731,
+  "created_at": "2023-11-06T17:42:13Z",
+  "name": "Free Trial of Midjourney for Nitro Subscribers",
+  "title": "Free Trial of Midjourney for Nitro Subscribers",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-11-27T18:36:55Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "midjourney"
+  ]
+}

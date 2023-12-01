@@ -2,18 +2,18 @@
 <p><span class="wysiwyg-font-size-large"><strong><span style="color: #2e3338;" data-darkreader-inline-color="">What this article covers:</span></strong></span></p>
 <ul>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ">What is Subscription Credit?</a>
+        <a href="#h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ">What is Subscription Credit?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ3J7BMS27AGTS47B3R">What are the limitations of Subscription Credit? </a></li>
+            <li><a href="#h_01H9RC8CQ3J7BMS27AGTS47B3R">What are the limitations of Subscription Credit? </a></li>
         </ul>
     </li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ4Q9XH0ASXF963K1T1">How do I activate my Subscription Credit?</a>
+        <a href="#h_01H9RC8CQ4Q9XH0ASXF963K1T1">How do I activate my Subscription Credit?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ49VY8YPRM95SVPWD8">What if I have an active Subscription?</a></li>
+            <li><a href="#h_01H9RC8CQ49VY8YPRM95SVPWD8">What if I have an active Subscription?</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/360030782312#h_01H9RC8CQ402FWZ8HKZQJGZFYC">What happens if I cancel my Subscription?</a></li>
+    <li><a href="#h_01H9RC8CQ402FWZ8HKZQJGZFYC">What happens if I cancel my Subscription?</a></li>
 </ul>
 <h1 id="h_01H9RC8CQ3ZGQR4DB3V1SN9ZGJ"><span style="color: #2e3338;" data-darkreader-inline-color="">What is Subscription Credit?</span></h1>
 <p>Instead of gifted subscription time being automatically added onto your already existing subscription, gifted subscription time will become Subscription Credit!</p>
@@ -21,7 +21,8 @@
 <p>You will not be charged and you will receive an email confirming renewal at $0.</p>
 <p>To view your Subscription Credit:</p>
 <p>1. Start by logging into your Discord account on the desktop or browser version of the app.</p>
-<p>2. Tap on the cog wheel icon next to your username to open up <strong>User Settings.</strong>3. Then tap on the <strong>Subscriptions</strong> tab in the left side bar.</p>
+<p>2. Tap on the cog wheel icon next to your username to open up <strong>User Settings.</strong></p>
+<p>3. Then tap on the <strong>Subscriptions</strong> tab in the left side bar.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17353099028631" alt="subscription_credit.png"></p>
 <h2 id="h_01H9RC8CQ3J7BMS27AGTS47B3R">What are the limitations of Subscription Credit?</h2>
 <h3 id="h_01H9RC8CQ4VTDWQV46KKA5DBDH"><span style="color: #434343;" data-darkreader-inline-color="">Subscription credit can only be consumed and redeemed for matching Nitro subscriptions. Nitro for Nitro, Nitro Basic for Nitro Basic, and Nitro Classic for Nitro Classic.</span></h3>

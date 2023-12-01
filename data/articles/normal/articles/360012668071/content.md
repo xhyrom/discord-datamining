@@ -38,12 +38,12 @@
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-42853b36-7fff-5086-5ded-bfe4ff3f1918">If you purchased any profile cosmetics within 5 days of your Nitro subscription renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro subscription refund.</span></span></p>
 <h2 id="h_01HFVZATFQPKY1TMZ5N7BWGMFN">Exceptions</h2>
 <p><strong>Profile Cosmetics</strong></p>
-<p>If you purchased any profile cosmetics within 5 days of your Nitro membership renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro membership refund. </p>
+<p>If you purchased any profile cosmetics like avatar decorations or profile effects within 5 days of your Nitro membership renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro membership refund. </p>
 <p><strong>Subscriber Promotions</strong></p>
 <p>If you have redeemed or received any promotional items from Discord or from a Discord partner promotion (ex. Free Xbox Game Pass) within 5 days of your Nitro membership renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro membership refund. </p>
 <h2 id="h_01HFVZBQKY520AFFDWY3VPS5JT">Nitro Gifts</h2>
 <h3 id="h_01HFVZBQKYAY1WHEJ2K3V41J9G"><span style="color: #434343;" data-darkreader-inline-color="">If the Nitro gift you purchased was self-claimed (claimed on the same account you purchased the gift from), you can request a refund. The refund counts towards the one-time refund for Nitro purchases and follows the same refund policy.</span></h3>
-<p>We are <strong>unable</strong> to provide a refund for a Nitro gift purchase once the gift <strong>has been claimed</strong> by another user. </p>
+<p>We are <strong>unable</strong> to provide a refund for a Nitro gift purchase once the gift <strong>has been claimed by another user. </strong></p>
 <p>However, for <strong>unclaimed Nitro gifts </strong>purchased on Discord on <strong>desktop/web/Android</strong>, you will have<strong> 5 days</strong> from the initial purchase date to request a refund with our<a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Support Team</span></a>. </p>
 <h1 id="docs-internal-guid-839a2ff5-7fff-1184-b2a3-2917c400b5c9"><strong>DLC, <span id="docs-internal-guid-4ab750f2-7fff-8663-d87a-05171c6853fa">Profile Cosmetics</span> and In-App Purchases</strong></h1>
 <p>We are unable to provide refunds or exchanges for purchases of downloadable content (DLC), profile cosmetics like avatar decorations and profile effects, and in-app purchases (IAP) within any Activity, including any gift purchases of these items.</p>
