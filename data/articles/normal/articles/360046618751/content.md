@@ -43,7 +43,8 @@
     <li><strong><em>a password</em></strong></li>
 </ul>
 <p>4. Once you’ve finished entering this account information, you can then select “<strong>Create an account</strong>” to start using Discord. </p>
-<h3 id="h_01HEP8F32Q4KAP0WTMDWYN0GSJ"><span style="color: #434343;" data-darkreader-inline-color="">Remember to head into your email to verify your email address. By verifying your email address, you’ll be able to recover your account if you ever forget your password. <br></span></h3>
+<h3 id="h_01HEP8F32Q4KAP0WTMDWYN0GSJ"><span style="color: #434343;" data-darkreader-inline-color="">Remember to head into your email to verify your email address. By verifying your email address, you’ll be able to recover your account if you ever forget your password.</span></h3>
+<h3 id="h_01HGKNRTH0G9R1Z3P4ER19JSGA"><span style="color: #434343;" data-darkreader-inline-color="">If your new account is not verified, your username will be given a random 5 digits to the end of your username after 7 days from account creation.</span></h3>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-7381b1d5-7fff-ac43-f1cb-8a8033574eed"><img src="https://support.discord.com/hc/article_attachments/18913621065879" alt="register.jpeg" width="205" height="429"> <img src="https://support.discord.com/hc/article_attachments/18913633987479" alt="register2.jpeg" width="206" height="428"></span>  <img src="https://support.discord.com/hc/article_attachments/18913633998359" alt="register3.jpeg" width="203" height="423"> </p>
 <h1 id="docs-internal-guid-d4f7f35e-7fff-3364-1d71-76f4c6f60a9d">Setting up an Account</h1>
 <p>To set up your account, tap on your profile icon in the bottom right hand corner. This will take you to your <strong>User Settings</strong> where you can select various options to personalize your account.</p>

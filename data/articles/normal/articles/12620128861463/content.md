@@ -1,4 +1,4 @@
-<h3>Read <a href="https://discord.com/blog/usernames" target="_blank" rel="noopener noreferrer">a message from our co-founder</a> about why we are making this change!</h3>
+<h3 id="h_01HGKNKSPTS60PG32HQBP59TPA">Read <a href="https://discord.com/blog/usernames" target="_blank" rel="noopener noreferrer">a message from our co-founder</a> about why we are making this change!</h3>
 <p id="docs-internal-guid-6d45fc83-7fff-615f-70c5-c17129451b8f">We are changing our username system to make it easier for you to connect with your friends and to give you more control over your identity on Discord! </p>
 <p>Since 2015, every Discord username has been cAsE sEnSitIvE and had a number attached to it called <span id="docs-internal-guid-383e0115-7fff-1218-426e-7d4c3cb1d95d">a Discord tag or sometimes known as</span> a discriminator (e.g., #0001). This lets you have the same username as someone else as long as you have different discriminators or different case letters. However, this also means you have to remember a set of 4-digit numbers and account for case sensitivity to connect with your friends. </p>
 <p>We wanted to make it easier for you to identify and add your friends while preserving your ability to use your preferred name across Discord. So, <span class="wysiwyg-underline">we are removing tags/discriminators and introducing new, unique usernames and display names.</span></p>
@@ -27,6 +27,7 @@
 </ul>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/14484974734871" alt="final-profile-card.png"></p>
 <h1 id="h_01GXPQAGG6W477HSC5SR053QG1">New Usernames</h1>
+<h3 id="h_01HGKNM2TX3AYHKM6E5TRZPPA7"><span style="color: #434343;" data-darkreader-inline-color="">If your new account is not verified, your username will be given a random 5 digits to the end of your username after 7 days from account creation.</span></h3>
 <p id="docs-internal-guid-bd0d3045-7fff-fe16-06ce-29d7f55beedb">Over the coming weeks, every user will become eligible to change their username from their old username with the Discord tag/discriminators (#0000) to <strong>a new username without discriminators</strong>. All users will eventually be required to pick a new, unique username to use Discord.</p>
 <p>Because they will be unique to each user, new usernames will make it easier to identify and connect with your friends. Your new username will be unique to you, so share it with your friends when you want them to connect with you.</p>
 <p>New usernames are <strong>lowercase, alphanumeric, limited to certain special characters</strong>, <strong>and do not have discriminators</strong>, making them easier to remember, read, type, and share.</p>
@@ -101,7 +102,7 @@
 <p id="docs-internal-guid-8ea146ab-7fff-f4a3-1c79-c3718f4cfeb9">We are rolling out this change over the coming months. You will be notified in the app when you are eligible to pick a new username and set a display name. This app notification will walk you through each step of the change. </p>
 <p>In terms of rollout, we’re starting with access to owners of partner and verified servers, then to all users based on the age of their account in the coming months, starting with 2015. Current Nitro subscribers paying for the ability to customize their <span id="docs-internal-guid-1324de68-7fff-80f7-582e-731213977fb4">Discord tag/</span>discriminator that were registered on or before March 1, 2023 will also be given early access. This includes users that were on a Nitro or Nitro Classic plan on March 1, 2023, and remained active on either of those plans throughout the months leading to the new username rollout.</p>
 <h1 id="h_01GZHKGNP2FYNFSAJB3DW2E4PN">How to Change Your Username and Set a Display Name</h1>
-<h3><span style="color: #434343;">Note: Your Discord account must be verified by email or phone number in order to claim a new username. Learn more about account verification <a href="https://support.discord.com/hc/en-us/articles/6181726888215" target="_blank" rel="noopener noreferrer">here</a>.</span></h3>
+<h3 id="h_01HGKNKSPTNN9W3M60DAM3SMYV"><span style="color: #434343;" data-darkreader-inline-color="">Note: Your Discord account must be verified by email or phone number in order to claim a new username. Learn more about account verification <a href="https://support.discord.com/hc/en-us/articles/6181726888215" target="_blank" rel="noopener noreferrer">here</a>.</span></h3>
 <p><span id="docs-internal-guid-b29a0f33-7fff-2aa7-b2d3-87dc30bc4e40">When you are eligible to change your username, you will be notified in the app by a full-screen notification titled </span><strong>“Please update your username.”</strong> This takeover will walk you through each step of the change, which you can reference below.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/14484943310871" alt="final-username-change-flow.png"></p>
 <p id="docs-internal-guid-5d57cf5f-7fff-7185-1167-e596bf327b25"><span id="docs-internal-guid-70400203-7fff-ac0f-df01-6f5ffc98a8c1">If you do not change your username at this time, you can always start the change later in your </span><strong>User Settings</strong>.</p>
@@ -219,7 +220,7 @@
     <li>Open the bottom menu by swiping right.</li>
     <li>Select your user icon &gt; select Manage Nitro &gt; choose either Switch Plans or Cancel.</li>
 </ol>
-<p>To cancel your plan on iOS, see <a href="https://support.apple.com/en-us/HT202039"><span class="wysiwyg-underline" style="color: #1155cc;">here</span></a>.</p>
+<p>To cancel your plan on iOS, see <a href="https://support.apple.com/en-us/HT202039"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">here</span></a>.</p>
 <p><strong>Q. How do I turn off the new username badge?</strong></p>
 <p>A. If you do not want your old username visible in your profile or as an alias, you can turn off this feature from your settings <span style="color: #2e3338; background-color: #ffffff;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">both</span> <span style="color: #2e3338; background-color: #ffffff;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">on the Desktop/Browser app and the Mobile app:</span></p>
 <ul>
