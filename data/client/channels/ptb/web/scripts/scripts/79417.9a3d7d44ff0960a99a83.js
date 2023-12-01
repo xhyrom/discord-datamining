@@ -58,10 +58,10 @@
                     return V
                 },
                 createPaymentSourceToken: function() {
-                    return K
+                    return H
                 },
                 fetchPaymentSources: function() {
-                    return H
+                    return K
                 },
                 fetchPayment: function() {
                     return x
@@ -775,10 +775,10 @@
                 return E.id
             }
 
-            function K(e) {
+            function H(e) {
                 return f.VAULTABLE_PAYMENT_SOURCES.has(e.type) ? null : R.ADYEN_PAYMENT_SOURCES.has(e.type) ? h(e) : V(e)
             }
-            async function H() {
+            async function K() {
                 try {
                     let e = o.default.get({
                         url: f.Endpoints.BILLING_PAYMENT_SOURCES,
@@ -875,7 +875,11 @@
             }
             async function X() {
                 try {
-                    await o.default.get(f.Endpoints.BILLING_NITRO_AFFINITY)
+                    let e = await o.default.get(f.Endpoints.BILLING_NITRO_AFFINITY);
+                    l.default.dispatch({
+                        type: "BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED",
+                        res: e.body
+                    })
                 } finally {
                     l.default.dispatch({
                         type: "BILLING_NITRO_AFFINITY_FETCHED"
@@ -948,7 +952,7 @@
                                 }
                             }),
                             payment_source_id: null != n ? n.id : null,
-                            payment_source_token: null != n ? await K(n) : null,
+                            payment_source_token: null != n ? await H(n) : null,
                             trial_id: r,
                             return_url: y,
                             code: a,
@@ -989,7 +993,7 @@
                         url: f.Endpoints.BILLING_INVOICE_MANUAL_PAYMENT(e.id, t),
                         body: {
                             payment_source_id: null != n ? n.id : null,
-                            payment_source_token: null != n ? await K(n) : null,
+                            payment_source_token: null != n ? await H(n) : null,
                             return_url: a,
                             currency: r
                         },
@@ -1228,7 +1232,7 @@
                     let i = {
                         status: t.status,
                         payment_source_id: null === (a = t.paymentSource) || void 0 === a ? void 0 : a.id,
-                        payment_source_token: null != t.paymentSource ? await K(t.paymentSource) : null,
+                        payment_source_token: null != t.paymentSource ? await H(t.paymentSource) : null,
                         currency: t.currency,
                         gateway_checkout_context: await (0, E.createGatewayCheckoutContext)(t.paymentSource)
                     };
@@ -1914,4 +1918,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79417.f8d1c587c47f423c4b11.js.map
+//# sourceMappingURL=79417.9a3d7d44ff0960a99a83.js.map
