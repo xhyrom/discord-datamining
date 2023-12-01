@@ -227,7 +227,7 @@
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-6ce9186fee07b43a315915e9001f496997751616",
+                        release: "discord_web-4716026624ef316456568b0c78583acc9c666d03",
                         beforeSend: t => {
                             var e, n;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !u() && !("Aborted" === (n = t).message || "cancel captcha" === n.message) && c() ? t : null
@@ -245,7 +245,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (t = "250524", "250524")), r.setTag("builtAt", String("1701454960324"));
+                    }), r.setTag("buildNumber", (t = "250523", "250523")), r.setTag("builtAt", String("1701454935952"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) r.setTag(t, e[t]);
@@ -347,9 +347,9 @@
             n = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
         n.forEach(e.bind(null, 0)), n.push = e.bind(null, n.push.bind(n))
     }();
-    var o = r.O(void 0, ["58409", "3341", "47470", "22843", "94288", "25653", "7273"], function() {
+    var o = r.O(void 0, ["58409", "3341", "22843", "18731", "47470", "72880", "14826", "7273"], function() {
         return r("93629")
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.53ab097a5f7813bd4bd7.js.map
+//# sourceMappingURL=sentry.a0e015ae6d5da1c5afa2.js.map

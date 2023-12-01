@@ -6320,7 +6320,10 @@
             "use strict";
             E.r(u), E.d(u, {
                 isNullOrEmpty: function() {
-                    return F
+                    return B
+                },
+                isProbablySnowflake: function() {
+                    return A
                 },
                 upperCaseFirstChar: function() {
                     return C.upperCaseFirstChar
@@ -6341,10 +6344,15 @@
                     return C.normalize
                 }
             });
-            var C = E("617258");
+            var C = E("617258"),
+                F = E("49111");
 
-            function F(D) {
+            function B(D) {
                 return null == D || 0 === D.length
+            }
+
+            function A(D) {
+                return F.ID_REGEX.test(D)
             }
         },
         617258: function(D, u, E) {
@@ -6399,4 +6407,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27043.105ce50242094adf158e.js.map
+//# sourceMappingURL=27043.a482c6fee3b551f66bc0.js.map
