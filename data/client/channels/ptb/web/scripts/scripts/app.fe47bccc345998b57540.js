@@ -8903,19 +8903,6 @@
                 centerContainer: "centerContainer__45523"
             }
         },
-        325223: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                card: "card_a7a837",
-                container: "container__89544",
-                content: "content__2d13c",
-                message: "message__1b914",
-                name: "name__61c76",
-                nameText: "nameText_da4580",
-                shield: "shield__3bf8b",
-                spoiler: "spoiler__58a46"
-            }
-        },
         678576: function(e, t, o) {
             "use strict";
             e.exports = {
