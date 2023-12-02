@@ -903,7 +903,11 @@
   },
   "COLLECTIBLES_VALID_GIFT_RECIPIENT": {
     "url": "/users/@me/valid-collectibles-gift-recipient",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
