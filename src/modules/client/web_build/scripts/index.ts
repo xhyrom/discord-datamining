@@ -201,7 +201,7 @@ export class Scripts implements Module {
         continue;
       }
 
-      if (content.match(/\s+(\d*):\s*"[\d\w]*.js",/g)) {
+      if (content.match(/(?<!\w)(\d*):(?<!\w)"[\d\w.]*.js",/g)) {
         chunkLoaderScript = script;
         continue;
       }
