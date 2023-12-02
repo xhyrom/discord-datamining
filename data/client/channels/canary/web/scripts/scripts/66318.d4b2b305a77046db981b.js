@@ -8089,8 +8089,10 @@
                 AUTH_SESSIONS_OTHERS: "Other Devices",
                 AUTH_SESSIONS_LINK_NEW_DEVICE: "Link New Device",
                 AUTH_SESSIONS_OTHERS_LOG_OUT_TITLE: "Log out of all known devices",
+                AUTH_SESSIONS_OTHERS_LOG_OUT_SELECTED_TITLE: "Log out of selected devices",
                 AUTH_SESSIONS_OTHERS_LOG_OUT_DESCRIPTION: "You'll have to log back in on all logged out devices.",
                 AUTH_SESSIONS_OTHERS_LOG_OUT_ACTION: "Log Out All Known Devices",
+                AUTH_SESSIONS_OTHERS_LOG_OUT_SELECTED_ACTION: "Log Out {count, plural, =1 {# Device} other {# Devices}}",
                 AUTH_SESSIONS_ACTIVE_RECENTLY: "less than an hour ago",
                 AUTH_SESSIONS_SESSION_LOG_OUT: "Log Out of Device",
                 AUTH_SESSIONS_OS_UNKNOWN: "Unknown",
@@ -18257,7 +18259,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250806", ", Version Hash: ").concat("4901e215bad4369ac864c6ff8f65c877509c2873")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250817", ", Version Hash: ").concat("a6bc58e6b80f5476388f2d57b1dc654ac5859a7c")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20551,8 +20553,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "250806", "250806"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250806")), _ = 0), _
+                let _ = parseInt((e = "250817", "250817"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250817")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36610,4 +36612,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.6f36fccb27e7141d6404.js.map
+//# sourceMappingURL=66318.d4b2b305a77046db981b.js.map

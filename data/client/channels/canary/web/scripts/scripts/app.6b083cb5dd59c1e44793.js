@@ -24259,6 +24259,7 @@
                 logOutAllButton: "logOutAllButton__88677",
                 otherSessions: "otherSessions_aad582",
                 session: "session_f56359",
+                sessionCheckbox: "sessionCheckbox__4e811",
                 sessionIcon: "sessionIcon__540be",
                 sessionInfo: "sessionInfo__9bc47",
                 sessionInfoRow: "sessionInfoRow_f3c7fd",
