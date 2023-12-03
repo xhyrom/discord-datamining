@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -28434,12 +28434,15 @@
                         canViewAuditLogV2: this.can(R.Permissions.VIEW_AUDIT_LOG, e),
                         canManageWebhooks: this.can(R.Permissions.MANAGE_WEBHOOKS, e),
                         canViewGuildAnalytics: this.can(R.Permissions.VIEW_GUILD_ANALYTICS, e),
-                        canAccessMembersPage: this.can(v.MemberSafetyPagePermissions, e),
+                        canAccessMembersPage: this.canAccessMemberSafetyPage(e),
                         isGuildAdmin: this.can(R.Permissions.ADMINISTRATOR, e),
                         isOwner: null != t && e.isOwner(t),
                         isOwnerWithRequiredMfaLevel: null != t && e.isOwnerWithRequiredMfaLevel(t),
                         guild: e
                     }
+                }
+                canAccessMemberSafetyPage(e) {
+                    return s.default.hasAny(M(e.id), v.MemberSafetyPagePermissions)
                 }
                 canAccessGuildSettings(e) {
                     return s.default.hasAny(M(e.id), S.default.VIEW_GUILD_SETTINGS)
@@ -41602,4 +41605,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.8db19ae56ec4e7599c3d.js.map
+//# sourceMappingURL=24364.e8be85e45ddf2c8a1feb.js.map
