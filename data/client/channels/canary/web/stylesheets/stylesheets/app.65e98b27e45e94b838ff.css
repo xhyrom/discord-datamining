@@ -63983,8 +63983,8 @@ input::-webkit-inner-spin-button {
 }
 
 .memberCount_d3ce07 {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     display: flex;
     align-items: center
 }
@@ -124392,4 +124392,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.49b8a65f86965b272d6a.css.map*/
+/*# sourceMappingURL=app.65e98b27e45e94b838ff.css.map*/
