@@ -3482,7 +3482,7 @@
                         opacity: 1
                     },
                     [a.AMOLED]: {
-                        raw: "PLUM_24",
+                        raw: "PLUM_23",
                         opacity: 1
                     },
                     [a.DARKER]: {
@@ -4554,7 +4554,7 @@
                         opacity: 1
                     },
                     [a.AMOLED]: {
-                        raw: "PLUM_24",
+                        raw: "PLUM_23",
                         opacity: 1
                     },
                     [a.DARKER]: {
@@ -5770,7 +5770,7 @@
                     },
                     [a.DARKER]: {
                         raw: "PLUM_24",
-                        opacity: .65
+                        opacity: .85
                     },
                     gradient: {
                         light: {
@@ -6859,7 +6859,7 @@
                         opacity: 1
                     },
                     [a.AMOLED]: {
-                        raw: "BRAND_430",
+                        raw: "BRAND_400",
                         opacity: 1
                     },
                     [a.DARKER]: {
@@ -7021,7 +7021,7 @@
                         opacity: 1
                     },
                     [a.AMOLED]: {
-                        raw: "BRAND_430",
+                        raw: "BRAND_400",
                         opacity: 1
                     },
                     [a.DARKER]: {
@@ -7959,7 +7959,7 @@
                         opacity: 1
                     },
                     [a.AMOLED]: {
-                        raw: "BRAND_430",
+                        raw: "BRAND_400",
                         opacity: 1
                     },
                     [a.DARKER]: {
@@ -11976,7 +11976,7 @@
                 "bg-mod-subtle": [A.Color.PRIMARY_500, A.Color.PRIMARY_400, A.Color.PLUM_11, A.Color.PLUM_11],
                 "bg-surface-overlay": [A.Color.PRIMARY_800, A.Color.WHITE_500, A.Color.PLUM_19, A.Color.PLUM_17],
                 "bg-surface-overlay-tmp": [A.Color.PRIMARY_800, A.Color.PRIMARY_130, A.Color.PLUM_21, A.Color.PLUM_17],
-                "bg-surface-raised": [A.Color.PRIMARY_600, A.Color.WHITE_500, A.Color.PLUM_24, A.Color.PLUM_18],
+                "bg-surface-raised": [A.Color.PRIMARY_600, A.Color.WHITE_500, A.Color.PLUM_23, A.Color.PLUM_18],
                 black: [A.Color.BLACK_500, A.Color.BLACK_500, A.Color.BLACK_500, A.Color.BLACK_500],
                 "blur-fallback": [A.Color.PRIMARY_700, A.Color.PRIMARY_530, A.Color.PLUM_19, A.Color.PLUM_17],
                 "blur-fallback-pressed": [A.Color.PRIMARY_730, A.Color.PRIMARY_560, A.Color.PLUM_20, A.Color.PLUM_18],
@@ -12035,7 +12035,7 @@
                 "button-secondary-background-hover": [A.Color.PRIMARY_430, A.Color.PRIMARY_500, A.Color.PLUM_11, A.Color.PLUM_11],
                 "card-gradient-bg": [A.Color.BLACK_500, A.Color.WHITE_500, A.Color.BLACK_500, A.Color.BLACK_500],
                 "card-gradient-pressed-bg": [A.Color.BLACK_500, A.Color.WHITE_500, A.Color.BLACK_500, A.Color.BLACK_500],
-                "card-primary-bg": [A.Color.PRIMARY_560, A.Color.WHITE_500, A.Color.PLUM_24, A.Color.PLUM_18],
+                "card-primary-bg": [A.Color.PRIMARY_560, A.Color.WHITE_500, A.Color.PLUM_23, A.Color.PLUM_18],
                 "card-primary-pressed-bg": [A.Color.PRIMARY_645, A.Color.PRIMARY_160, A.Color.PLUM_25, A.Color.PLUM_19],
                 "card-secondary-bg": [A.Color.PRIMARY_560, A.Color.WHITE_500, A.Color.PLUM_25, A.Color.PLUM_19],
                 "card-secondary-pressed-bg": [A.Color.PRIMARY_645, A.Color.PRIMARY_160, A.Color.PLUM_26, A.Color.PLUM_21],
@@ -12157,7 +12157,7 @@
                 "redesign-button-positive-pressed-background": [A.Color.GREEN_460, A.Color.GREEN_460, A.Color.GREEN_460, A.Color.GREEN_460],
                 "redesign-button-positive-text": [A.Color.WHITE_500, A.Color.WHITE_500, A.Color.WHITE_500, A.Color.WHITE_500],
                 "redesign-button-primary-alt-background": [A.Color.BRAND_500, A.Color.BRAND_500, A.Color.BRAND_500, A.Color.BRAND_500],
-                "redesign-button-primary-alt-border": [A.Color.BRAND_360, A.Color.BRAND_500, A.Color.BRAND_430, A.Color.BRAND_360],
+                "redesign-button-primary-alt-border": [A.Color.BRAND_360, A.Color.BRAND_500, A.Color.BRAND_400, A.Color.BRAND_360],
                 "redesign-button-primary-alt-on-blurple-background": [A.Color.BRAND_530, A.Color.BRAND_530, A.Color.BRAND_530, A.Color.BRAND_530],
                 "redesign-button-primary-alt-on-blurple-border": [A.Color.WHITE_500, A.Color.WHITE_500, A.Color.WHITE_500, A.Color.WHITE_500],
                 "redesign-button-primary-alt-on-blurple-pressed-background": [A.Color.BRAND_530, A.Color.BRAND_530, A.Color.BRAND_530, A.Color.BRAND_530],
@@ -12166,7 +12166,7 @@
                 "redesign-button-primary-alt-pressed-background": [A.Color.BRAND_700, A.Color.BRAND_500, A.Color.BRAND_700, A.Color.BRAND_700],
                 "redesign-button-primary-alt-pressed-border": [A.Color.BRAND_400, A.Color.BRAND_330, A.Color.BRAND_400, A.Color.BRAND_400],
                 "redesign-button-primary-alt-pressed-text": [A.Color.BRAND_360, A.Color.BRAND_560, A.Color.BRAND_360, A.Color.BRAND_360],
-                "redesign-button-primary-alt-text": [A.Color.BRAND_360, A.Color.BRAND_500, A.Color.BRAND_430, A.Color.BRAND_360],
+                "redesign-button-primary-alt-text": [A.Color.BRAND_360, A.Color.BRAND_500, A.Color.BRAND_400, A.Color.BRAND_360],
                 "redesign-button-primary-background": [A.Color.BRAND_500, A.Color.BRAND_500, A.Color.BRAND_500, A.Color.BRAND_500],
                 "redesign-button-primary-on-blurple-background": [A.Color.WHITE_500, A.Color.WHITE_500, A.Color.WHITE_500, A.Color.WHITE_500],
                 "redesign-button-primary-on-blurple-pressed-background": [A.Color.BRAND_200, A.Color.BRAND_200, A.Color.BRAND_200, A.Color.BRAND_200],
@@ -12217,7 +12217,7 @@
                 "status-warning": [A.Color.YELLOW_300, A.Color.YELLOW_400, A.Color.YELLOW_300, A.Color.YELLOW_300],
                 "status-warning-background": [A.Color.YELLOW_300, A.Color.YELLOW_400, A.Color.YELLOW_300, A.Color.YELLOW_300],
                 "status-warning-text": [A.Color.BLACK_500, A.Color.WHITE_500, A.Color.BLACK_500, A.Color.BLACK_500],
-                "text-brand": [A.Color.BRAND_360, A.Color.BRAND_500, A.Color.BRAND_430, A.Color.BRAND_360],
+                "text-brand": [A.Color.BRAND_360, A.Color.BRAND_500, A.Color.BRAND_400, A.Color.BRAND_360],
                 "text-danger": [A.Color.RED_345, A.Color.RED_500, A.Color.RED_345, A.Color.RED_345],
                 "text-link": [A.Color.BLUE_345, A.Color.BLUE_430, A.Color.BLUE_345, A.Color.BLUE_345],
                 "text-link-low-saturation": [A.Color.BLUE_330, A.Color.BLUE_430, A.Color.BLUE_330, A.Color.BLUE_330],
@@ -13155,4 +13155,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.fde16498afb14bd07b25.js.map
+//# sourceMappingURL=7273.35b74594d0b39ca3ca44.js.map

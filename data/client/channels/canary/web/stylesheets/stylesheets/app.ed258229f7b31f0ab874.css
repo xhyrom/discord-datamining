@@ -19464,8 +19464,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -122515,7 +122515,7 @@ div.nagbar_c731ff {
     --bg-mod-subtle: hsl(var(--plum-11-hsl) / 0.12);
     --bg-surface-overlay: var(--plum-19);
     --bg-surface-overlay-tmp: var(--plum-21);
-    --bg-surface-raised: var(--plum-24);
+    --bg-surface-raised: var(--plum-23);
     --black: var(--black-500);
     --blur-fallback: hsl(var(--plum-19-hsl) / 0.96);
     --blur-fallback-pressed: hsl(var(--plum-20-hsl) / 0.96);
@@ -122574,7 +122574,7 @@ div.nagbar_c731ff {
     --button-secondary-background-hover: var(--plum-11);
     --card-gradient-bg: hsl(var(--black-500-hsl) / 0.4);
     --card-gradient-pressed-bg: hsl(var(--black-500-hsl) / 0.5);
-    --card-primary-bg: var(--plum-24);
+    --card-primary-bg: var(--plum-23);
     --card-primary-pressed-bg: var(--plum-25);
     --card-secondary-bg: var(--plum-25);
     --card-secondary-pressed-bg: var(--plum-26);
@@ -122696,7 +122696,7 @@ div.nagbar_c731ff {
     --redesign-button-positive-pressed-background: var(--green-460);
     --redesign-button-positive-text: var(--white-500);
     --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
-    --redesign-button-primary-alt-border: var(--brand-430);
+    --redesign-button-primary-alt-border: var(--brand-400);
     --redesign-button-primary-alt-on-blurple-background: hsl(var(--brand-530-hsl) / 0);
     --redesign-button-primary-alt-on-blurple-border: var(--white-500);
     --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
@@ -122705,7 +122705,7 @@ div.nagbar_c731ff {
     --redesign-button-primary-alt-pressed-background: hsl(var(--brand-700-hsl) / 0.16);
     --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl) / 0.5);
     --redesign-button-primary-alt-pressed-text: var(--brand-360);
-    --redesign-button-primary-alt-text: var(--brand-430);
+    --redesign-button-primary-alt-text: var(--brand-400);
     --redesign-button-primary-background: var(--brand-500);
     --redesign-button-primary-on-blurple-background: var(--white-500);
     --redesign-button-primary-on-blurple-pressed-background: var(--brand-200);
@@ -122756,7 +122756,7 @@ div.nagbar_c731ff {
     --status-warning: var(--yellow-300);
     --status-warning-background: var(--yellow-300);
     --status-warning-text: var(--black-500);
-    --text-brand: var(--brand-430);
+    --text-brand: var(--brand-400);
     --text-danger: var(--red-345);
     --text-link: var(--blue-345);
     --text-link-low-saturation: var(--blue-330);
@@ -122940,7 +122940,7 @@ div.nagbar_c731ff {
     --info-warning-background: hsl(var(--yellow-300-hsl) / 0.1);
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
-    --input-background: hsl(var(--plum-24-hsl) / 0.65);
+    --input-background: hsl(var(--plum-24-hsl) / 0.85);
     --input-placeholder-text: var(--plum-9);
     --interactive-active: var(--plum-1);
     --interactive-hover: var(--plum-4);
@@ -124373,4 +124373,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.bab278e403e6211f00fd.css.map*/
+/*# sourceMappingURL=app.ed258229f7b31f0ab874.css.map*/
