@@ -1,0 +1,28 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-11_nitro_affinities",
+    "label": "Nitro Affinities",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Nitro Affinities for Marketing Page",
+      "Treatment 2: Enable Nitro Affinities for Plan Selection Page",
+      "Treatment 3: Enable Nitro Affinities for Both Marketing Page and Plan Selection Page"
+    ],
+    "hash": 1617769333,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "marketingEnabled",
+      "planSelectionEnabled"
+    ]
+  }
+}
