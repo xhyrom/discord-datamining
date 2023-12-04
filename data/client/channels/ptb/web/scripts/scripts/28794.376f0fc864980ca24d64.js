@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["74783"], {
+    ["28794"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -167,10 +167,10 @@
                     return C
                 },
                 requestHarvest: function() {
-                    return N
+                    return v
                 },
                 setPendingAvatar: function() {
-                    return v
+                    return N
                 },
                 setPendingGlobalNameName: function() {
                     return g
@@ -331,14 +331,14 @@
                 })
             }
 
-            function N() {
+            function v() {
                 return i.default.post({
                     url: f.Endpoints.USER_HARVEST,
                     oldFormErrors: !0
                 })
             }
 
-            function v(e) {
+            function N(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
                     avatar: e
@@ -1274,10 +1274,10 @@
                     return C
                 },
                 clearErrors: function() {
-                    return N
+                    return v
                 },
                 setDisableSubmit: function() {
-                    return v
+                    return N
                 }
             }), n("70102");
             var i = n("872717"),
@@ -1405,13 +1405,13 @@
                 })
             }
 
-            function N() {
+            function v() {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
                 })
             }
 
-            function v(e) {
+            function N(e) {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_DISABLE_SUBMIT",
                     disable: e
@@ -1438,17 +1438,17 @@
             }
 
             function S() {
-                C(), N(), p = {}, I = _.FormStates.OPEN
+                C(), v(), p = {}, I = _.FormStates.OPEN
             }
 
             function C() {
                 i = void 0, u = void 0
             }
 
-            function N() {
+            function v() {
                 l = void 0, r = void 0, o = void 0, s = void 0
             }
-            class v extends f.default.Store {
+            class N extends f.default.Store {
                 getFormState() {
                     return I
                 }
@@ -1502,8 +1502,8 @@
                     return T
                 }
             }
-            v.displayName = "GuildIdentitySettingsStore";
-            var g = new v(E.default, {
+            N.displayName = "GuildIdentitySettingsStore";
+            var g = new N(E.default, {
                 GUILD_IDENTITY_SETTINGS_INIT: function(e) {
                     a = e.guild, I = _.FormStates.OPEN, p = {}, c = e.source, d = e.analyticsLocations
                 },
@@ -1562,7 +1562,7 @@
                     s = t
                 },
                 GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: C,
-                GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: N,
+                GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: v,
                 GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: S,
                 GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: S,
                 GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: function() {
@@ -2349,12 +2349,12 @@
                     stepConfigs: h,
                     setBodyNode: S,
                     setFooterNode: C,
-                    setModalOverlayNode: N,
-                    setReadySlideId: v
+                    setModalOverlayNode: v,
+                    setReadySlideId: N
                 } = (0, f.usePaymentContext)(), g = h.find(e => e.key === T);
                 l.useEffect(() => {
-                    N(null)
-                }, [T, N]), s(null != g, "Unknown step for current payment flow.");
+                    v(null)
+                }, [T, v]), s(null != g, "Unknown step for current payment flow.");
                 let A = null !== (a = null == g ? void 0 : null === (t = g.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== a && a,
                     m = null == g ? void 0 : null === (n = g.options) || void 0 === n ? void 0 : n.bodyClassName,
                     R = void 0 !== I && I ? E.sliderBodyLarge : null == g ? void 0 : null === (r = g.options) || void 0 === r ? void 0 : r.sliderBodyClassName;
@@ -2365,7 +2365,7 @@
                             children: (0, i.jsx)(d.Slides, {
                                 activeSlide: T,
                                 centered: !1,
-                                onSlideReady: e => v(e),
+                                onSlideReady: e => N(e),
                                 children: h.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
                                     id: e.key,
                                     children: (0, i.jsx)("form", {
@@ -2378,7 +2378,7 @@
                         }), (0, i.jsx)("div", {
                             ref: e => C(e)
                         }), (0, i.jsx)("div", {
-                            ref: e => N(e)
+                            ref: e => v(e)
                         })]
                     })]
                 })
@@ -2432,8 +2432,8 @@
                     analyticsObject: h,
                     analyticsLocation: S,
                     analyticsSourceLocation: C,
-                    isGift: N = !1,
-                    giftMessage: v,
+                    isGift: v = !1,
+                    giftMessage: N,
                     subscriptionTier: g,
                     trialId: A,
                     postSuccessGuild: m,
@@ -2457,8 +2457,8 @@
                             loadId: M,
                             subscriptionTier: g,
                             skuId: g,
-                            isGift: N,
-                            giftMessage: v,
+                            isGift: v,
+                            giftMessage: N,
                             giftRecipient: O,
                             initialPlanId: t,
                             followupSKUInfo: E,
@@ -2466,7 +2466,7 @@
                                 l(), null == _ || _(e), e && (null == p || p())
                             },
                             onComplete: () => {
-                                y = !0, null == I || I(), !N && ((0, s.setIsPersistentHelperHidden)(!0), (0, s.setCanPlayWowMoment)(!0))
+                                y = !0, null == I || I(), !v && ((0, s.setIsPersistentHelperHidden)(!0), (0, s.setCanPlayWowMoment)(!0))
                             },
                             onSubscriptionConfirmation: p,
                             analyticsLocations: T,
@@ -2491,11 +2491,11 @@
                             location: null != S ? S : h,
                             source: C,
                             subscription_type: d.SubscriptionTypes.PREMIUM,
-                            is_gift: N,
+                            is_gift: v,
                             eligible_for_trial: null != A,
                             application_id: U,
                             location_stack: T
-                        }), (0, o.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == _ || _(y), y && (!N && c.ComponentDispatch.dispatch(d.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED), null == p || p())
+                        }), (0, o.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == _ || _(y), y && (!v && c.ComponentDispatch.dispatch(d.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED), null == p || p())
                     },
                     onCloseRequest: d.NOOP
                 })
@@ -3014,10 +3014,10 @@
                     return C
                 },
                 setTryItOutAvatar: function() {
-                    return N
+                    return v
                 },
                 setTryItOutAvatarDecoration: function() {
-                    return v
+                    return N
                 },
                 setTryItOutProfileEffect: function() {
                     return g
@@ -3134,14 +3134,14 @@
                 })
             }
 
-            function N(e) {
+            function v(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR",
                     avatar: e
                 }), f(d.AnalyticsPremiumFeatureNames.ANIMATED_AVATAR)
             }
 
-            function v(e) {
+            function N(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION",
                     avatarDecoration: e
@@ -3357,6 +3357,34 @@
                 })
             }
             n("884691")
+        },
+        476765: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                uid: function() {
+                    return o
+                },
+                useUID: function() {
+                    return u
+                },
+                UID: function() {
+                    return s
+                }
+            });
+            var i = n("995008"),
+                l = n.n(i),
+                r = n("775560");
+            let o = function() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
+                    return l(e)
+                },
+                u = () => (0, r.useLazyValue)(() => o()),
+                s = e => {
+                    let {
+                        children: t
+                    } = e;
+                    return t(u())
+                }
         },
         109264: function(e, t, n) {
             "use strict";
@@ -3965,7 +3993,7 @@
                     return h
                 },
                 default: function() {
-                    return N
+                    return v
                 }
             }), n("424973"), n("222007");
             var i = n("37983"),
@@ -4156,7 +4184,7 @@
                 showDefaultAvatarsForNullUsers: !1,
                 size: h.SIZE_24
             };
-            var N = C
+            var v = C
         },
         866190: function(e, t, n) {
             "use strict";
@@ -4313,4 +4341,4 @@
         }
     }
 ]);
-//# sourceMappingURL=74783.9766f66696add51f457a.js.map
+//# sourceMappingURL=28794.376f0fc864980ca24d64.js.map
