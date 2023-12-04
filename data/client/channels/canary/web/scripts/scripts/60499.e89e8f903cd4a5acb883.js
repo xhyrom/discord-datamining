@@ -24,19 +24,19 @@
                         children: f,
                         messageId: v,
                         channelId: g,
-                        ...C
+                        ...h
                     } = e, {
-                        analyticsLocations: h
-                    } = (0, d.default)(u.default.MASKED_LINK), E = l.useCallback(t => (0, o.handleClick)(e, t, h), [h, e]), I = l.useCallback(e => {
-                        1 === e.button && E(e)
-                    }, [E]), R = a.sanitizeUrl(c);
+                        analyticsLocations: E
+                    } = (0, d.default)(u.default.MASKED_LINK), C = l.useCallback(t => (0, o.handleClick)(e, t, E), [E, e]), I = l.useCallback(e => {
+                        1 === e.button && C(e)
+                    }, [C]), R = a.sanitizeUrl(c);
                     return (0, n.jsx)(s.Anchor, {
-                        ...C,
+                        ...h,
                         title: i,
                         target: "_blank",
                         rel: "noreferrer noopener",
                         href: R,
-                        onClick: E,
+                        onClick: C,
                         onAuxClick: I,
                         children: null != f ? f : i
                     })
@@ -65,11 +65,11 @@
                 } = e;
                 return (0, n.jsxs)("svg", {
                     ...(0, i.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: r,
-                    viewBox: "0 0 24 24",
                     fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 24 24",
                     children: [(0, n.jsx)("circle", {
                         cx: "12",
                         cy: "12",
@@ -77,10 +77,10 @@
                         fill: "string" == typeof a ? a : a.css,
                         className: s
                     }), (0, n.jsx)("path", {
-                        fillRule: "evenodd",
-                        clipRule: "evenodd",
-                        d: "M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM13.5 7.25C13.5 7.94036 12.9404 8.5 12.25 8.5C11.5596 8.5 11 7.94036 11 7.25C11 6.55964 11.5596 6 12.25 6C12.9404 6 13.5 6.55964 13.5 7.25ZM12.7278 11.2095C12.8435 10.6695 12.4996 10.1379 11.9595 10.0222C11.4195 9.90648 10.8879 10.2504 10.7722 10.7905L9.72984 15.6548C9.36091 17.3765 10.6734 19 12.4342 19C13.0106 19 13.5726 18.8199 14.0417 18.4848L14.2812 18.3137C14.7307 17.9927 14.8347 17.3682 14.5137 16.9188C14.1927 16.4693 13.5682 16.3653 13.1188 16.6863L12.8792 16.8574C12.7493 16.9501 12.5937 17 12.4342 17C11.9467 17 11.5833 16.5505 11.6854 16.0739L12.7278 11.2095Z",
                         fill: "string" == typeof u ? u : u.css,
+                        fillRule: "evenodd",
+                        d: "M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0Zm-9.5-4.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm-.77 3.96a1 1 0 1 0-1.96-.42l-1.04 4.86a2.77 2.77 0 0 0 4.31 2.83l.24-.17a1 1 0 1 0-1.16-1.62l-.24.17a.77.77 0 0 1-1.2-.79l1.05-4.86Z",
+                        clipRule: "evenodd",
                         className: d
                     })]
                 })
@@ -332,7 +332,7 @@
             "use strict";
             r.r(t), r.d(t, {
                 default: function() {
-                    return L
+                    return m
                 }
             }), r("222007");
             var n = r("37983"),
@@ -347,9 +347,9 @@
                 f = r("626820"),
                 v = r("306160"),
                 g = r("701909"),
-                C = r("161449"),
-                h = r("49111"),
-                E = r("782340"),
+                h = r("161449"),
+                E = r("49111"),
+                C = r("782340"),
                 I = r("939848");
 
             function R(e) {
@@ -363,7 +363,7 @@
                     onClick: u,
                     children: [(0, n.jsx)(c.default, {
                         className: I.copyLinkIcon
-                    }), r ? E.default.Messages.BUILD_OVERRIDE_LINK_COPIED : E.default.Messages.BUILD_OVERRIDE_LINK_COPY]
+                    }), r ? C.default.Messages.BUILD_OVERRIDE_LINK_COPIED : C.default.Messages.BUILD_OVERRIDE_LINK_COPY]
                 }) : null
             }
 
@@ -399,33 +399,33 @@
                     })]
                 })
             }
-            var L = e => {
+            var m = e => {
                 var t, r, i;
                 let {
                     loading: s = !1,
                     currentOverrides: c,
                     linkMeta: v,
-                    url: L,
-                    applyBuildOverride: m,
+                    url: m,
+                    applyBuildOverride: L,
                     clearBuildOverride: _
                 } = e, [O, B] = l.useState(!1), D = l.useCallback(() => {
-                    !O && (B(!0), m().catch(() => B(!1)))
-                }, [m, O]), b = l.useCallback(() => {
+                    !O && (B(!0), L().catch(() => B(!1)))
+                }, [L, O]), b = l.useCallback(() => {
                     !O && (B(!0), _().catch(() => B(!1)))
                 }, [_, O]);
                 return (0, n.jsxs)("div", {
                     className: I.wrapper,
-                    children: [(t = v, r = L, i = s, (0, n.jsxs)(d.Text, {
+                    children: [(t = v, r = m, i = s, (0, n.jsxs)(d.Text, {
                         variant: "text-xs/normal",
                         className: I.titleRegion,
                         children: [(0, n.jsx)("strong", {
                             className: I.title,
-                            children: null != t && null != t.releaseChannel ? E.default.Messages.BUILD_OVERRIDE_FOR.format({
+                            children: null != t && null != t.releaseChannel ? C.default.Messages.BUILD_OVERRIDE_FOR.format({
                                 releaseChannel: t.releaseChannel
-                            }) : E.default.Messages.BUILD_OVERRIDE
+                            }) : C.default.Messages.BUILD_OVERRIDE
                         }), (0, n.jsx)(d.Anchor, {
                             className: I.infoLink,
-                            href: g.default.getArticleURL(h.HelpdeskArticles.BUILD_OVERRIDE_EMBED),
+                            href: g.default.getArticleURL(E.HelpdeskArticles.BUILD_OVERRIDE_EMBED),
                             target: "_blank",
                             children: (0, n.jsx)(o.default, {
                                 className: I.infoIcon
@@ -457,10 +457,10 @@
                                     clearBuildOverride: c,
                                     submitting: f
                                 } = e,
-                                v = (0, C.default)(s, ["discord_web"]);
+                                v = (0, h.default)(s, ["discord_web"]);
                             if (!v.valid) return function(e) {
                                 return p({
-                                    subHead: E.default.Messages.BUILD_OVERRIDE_ISNT_AVAILABLE,
+                                    subHead: C.default.Messages.BUILD_OVERRIDE_ISNT_AVAILABLE,
                                     buttonColor: d.Button.Colors.TRANSPARENT,
                                     buttonText: "Invalid",
                                     buildDetails: e,
@@ -471,10 +471,10 @@
                             let {
                                 discord_web: g
                             } = s.targetBuildOverride;
-                            if (u(null != g, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web should never be null if resolved"), t = g, null == (r = a) || null == r.discord_web ? 1 : t.id !== r.discord_web.id || t.type !== r.discord_web.type) l = E.default.Messages.BUILD_OVERRIDE_APPLY, n = o, i = d.Button.Colors.GREEN;
-                            else l = E.default.Messages.BUILD_OVERRIDE_CLEAR, n = c, i = d.Button.Colors.RED;
+                            if (u(null != g, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web should never be null if resolved"), t = g, null == (r = a) || null == r.discord_web ? 1 : t.id !== r.discord_web.id || t.type !== r.discord_web.type) l = C.default.Messages.BUILD_OVERRIDE_APPLY, n = o, i = d.Button.Colors.GREEN;
+                            else l = C.default.Messages.BUILD_OVERRIDE_CLEAR, n = c, i = d.Button.Colors.RED;
                             return p({
-                                subHead: E.default.Messages.BUILD_OVERRIDE_ID,
+                                subHead: C.default.Messages.BUILD_OVERRIDE_ID,
                                 buildDetails: g.id,
                                 buttonClick: n,
                                 buttonText: l,
@@ -520,12 +520,12 @@
                 } = e, r = (0, i.useStateFromStoresObject)([s.default], () => s.default.getCurrentBuildOverride()), a = (0, i.useStateFromStores)([s.default], () => s.default.getBuildOverride(t)), {
                     payload: f,
                     validatedURL: v
-                } = a, g = r.state === s.State.Resolving || a.state === s.State.Resolving, C = l.useCallback(() => null == f ? Promise.reject(Error("Invalid override payload")) : ((0, d.addRecentBuildOverride)(a.override, f), o(f)), [f, a]);
+                } = a, g = r.state === s.State.Resolving || a.state === s.State.Resolving, h = l.useCallback(() => null == f ? Promise.reject(Error("Invalid override payload")) : ((0, d.addRecentBuildOverride)(a.override, f), o(f)), [f, a]);
                 return null != v ? (0, n.jsx)(u.default, {
                     loading: g,
                     linkMeta: a.override,
                     currentOverrides: r.overrides,
-                    applyBuildOverride: C,
+                    applyBuildOverride: h,
                     clearBuildOverride: c,
                     url: v
                 }) : null
@@ -829,4 +829,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60499.9be9ce6effddbb435838.js.map
+//# sourceMappingURL=60499.e89e8f903cd4a5acb883.js.map

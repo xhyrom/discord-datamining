@@ -21,16 +21,16 @@
                 } = e;
                 return (0, r.jsx)("svg", {
                     ...(0, a.default)(i),
+                    xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
-                    viewBox: "0 0 24 24",
                     fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 24 24",
                     children: (0, r.jsx)("path", {
-                        fillRule: "evenodd",
-                        clipRule: "evenodd",
-                        d: "M4 14C5.10457 14 6 13.1046 6 12C6 10.8954 5.10457 10 4 10C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14ZM14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12ZM22 12C22 13.1046 21.1046 14 20 14C18.8954 14 18 13.1046 18 12C18 10.8954 18.8954 10 20 10C21.1046 10 22 10.8954 22 12Z",
                         fill: "string" == typeof u ? u : u.css,
+                        fillRule: "evenodd",
+                        d: "M4 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm8 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z",
+                        clipRule: "evenodd",
                         className: o
                     })
                 })
@@ -1884,4 +1884,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59459.f0458a563c6692b50b6e.js.map
+//# sourceMappingURL=59459.d05112a821254d7fe77b.js.map

@@ -1,78 +1,74 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     ["41831"], {
-        400033: function(e, C, L) {
+        400033: function(e, l, C) {
             "use strict";
-            L.r(C), L.d(C, {
+            C.r(l), C.d(l, {
                 StaffBadgeIcon: function() {
-                    return r
+                    return a
                 }
             });
-            var t = L("37983");
-            L("884691");
-            var s = L("669491"),
-                l = L("75196");
-            let r = e => {
+            var t = C("37983");
+            C("884691");
+            var L = C("669491"),
+                s = C("75196");
+            let a = e => {
                 let {
-                    width: C = 24,
-                    height: L = 24,
-                    color: r = s.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: d = "",
-                    ...a
+                    width: l = 24,
+                    height: C = 24,
+                    color: a = L.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...d
                 } = e;
                 return (0, t.jsxs)("svg", {
-                    ...(0, l.default)(a),
-                    width: C,
-                    height: L,
-                    viewBox: "0 0 24 24",
-                    fill: "none",
+                    ...(0, s.default)(d),
                     xmlns: "http://www.w3.org/2000/svg",
+                    width: l,
+                    height: C,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
                     children: [(0, t.jsx)("path", {
-                        d: "M2 20.5858V19.4142C2 19.149 2.10536 18.8947 2.29289 18.7071L4.70711 16.2929C4.89464 16.1054 5.149 16 5.41421 16H6L15 7.00001L14.1451 6.14515C14.0494 6.04939 13.9741 5.93518 13.9238 5.80944L12.4333 2.08324C12.27 1.67508 12.6751 1.27004 13.0832 1.4333L16.8094 2.92378C16.9352 2.97408 17.0494 3.04939 17.1451 3.14515L17.7929 3.79289C18.1834 3.40237 18.8166 3.40237 19.2071 3.79289L20.2071 4.79289C20.5976 5.18342 20.5976 5.81658 20.2071 6.20711L21.7929 7.79291C22.1834 8.18343 22.1834 8.8166 21.7929 9.20712L20.2071 10.7929C19.8166 11.1834 19.1834 11.1834 18.7929 10.7929L17 9.00001L8 18V18.5858C8 18.851 7.89464 19.1054 7.70711 19.2929L5.29289 21.7071C5.10536 21.8947 4.851 22 4.58579 22H3.41421C3.149 22 2.89464 21.8947 2.70711 21.7071L2.29289 21.2929C2.10536 21.1054 2 20.851 2 20.5858Z",
-                        fill: "string" == typeof r ? r : r.css,
-                        className: d
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M2 20.59V19.4a1 1 0 0 1 .3-.7l2.4-2.42a1 1 0 0 1 .71-.29H6l9-9-.85-.85a1 1 0 0 1-.23-.34l-1.49-3.73a.5.5 0 0 1 .65-.65l3.73 1.5a1 1 0 0 1 .34.22l.64.64a1 1 0 0 1 1.42 0l1 1a1 1 0 0 1 0 1.42l1.58 1.58a1 1 0 0 1 0 1.42l-1.58 1.58a1 1 0 0 1-1.42 0L17 9l-9 9v.59a1 1 0 0 1-.3.7l-2.4 2.42a1 1 0 0 1-.71.29H3.4a1 1 0 0 1-.7-.3l-.42-.4a1 1 0 0 1-.29-.71Z",
+                        className: r
                     }), (0, t.jsx)("path", {
-                        d: "M8.23223 10.2322C8.42749 10.4275 8.74408 10.4275 8.93934 10.2322L10.2322 8.93935C10.4275 8.74409 10.4275 8.42751 10.2322 8.23225L6.49999 4.50001L6.79288 4.20711C7.18341 3.81659 7.18341 3.18342 6.79288 2.7929L6.29288 2.2929C6.10535 2.10536 5.84843 2.0024 5.59542 2.08194C5.16917 2.21595 4.43086 2.56914 3.49999 3.50001C2.56912 4.43087 2.21593 5.16918 2.08192 5.59544C2.00238 5.84844 2.10535 6.10536 2.29288 6.2929L2.79288 6.7929C3.18341 7.18342 3.81657 7.18342 4.2071 6.7929L4.49999 6.50001L8.23223 10.2322Z",
-                        fill: "string" == typeof r ? r : r.css,
-                        className: d
-                    }), (0, t.jsx)("path", {
-                        d: "M13.7678 15.0607C13.5725 15.2559 13.5725 15.5725 13.7678 15.7678L15.5 17.5L16.9367 19.8944C16.9787 19.9646 17.0292 20.0292 17.087 20.0871L18.8232 21.8232C18.9208 21.9209 19.0791 21.9209 19.1768 21.8232L21.8232 19.1768C21.9208 19.0792 21.9208 18.9209 21.8232 18.8232L20.087 17.0871C20.0292 17.0292 19.9645 16.9787 19.8944 16.9367L17.5 15.5L15.7678 13.7678C15.5725 13.5725 15.2559 13.5725 15.0607 13.7678L13.7678 15.0607Z",
-                        fill: "string" == typeof r ? r : r.css,
-                        className: d
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M8.23 10.23c.2.2.51.2.7 0l1.3-1.3a.5.5 0 0 0 0-.7L6.5 4.5l.3-.3a1 1 0 0 0 0-1.4l-.5-.5c-.2-.2-.45-.3-.7-.22-.43.14-1.17.49-2.1 1.42a5.37 5.37 0 0 0-1.42 2.1c-.08.25.03.5.21.7l.5.5a1 1 0 0 0 1.42 0l.29-.3 3.73 3.73ZM13.77 15.06a.5.5 0 0 0 0 .7l1.73 1.74 1.44 2.4a1 1 0 0 0 .15.19l1.73 1.73c.1.1.26.1.36 0l2.64-2.64c.1-.1.1-.26 0-.36L20.1 17.1a1 1 0 0 0-.2-.15L17.5 15.5l-1.73-1.73a.5.5 0 0 0-.7 0l-1.3 1.3Z",
+                        className: r
                     })]
                 })
             }
         },
-        580357: function(e, C, L) {
+        580357: function(e, l, C) {
             "use strict";
-            L.r(C), L.d(C, {
+            C.r(l), C.d(l, {
                 default: function() {
                     return x
                 }
-            }), L("222007");
-            var t, s, l = L("37983"),
-                r = L("884691"),
-                d = L("414456"),
-                a = L.n(d),
-                i = L("77078"),
-                n = L("449008"),
-                u = L("931138"),
-                f = L("928564"),
-                c = L("888978"),
-                o = L("390864"),
-                h = L("486952"),
-                E = L("49111"),
-                R = L("782340"),
-                p = L("465835");
-            (s = t || (t = {}))[s.PARTNERED = 0] = "PARTNERED", s[s.STAFF = 1] = "STAFF", s[s.VERIFIED = 2] = "VERIFIED", s[s.VERIFIED_AND_PARTNERED = 3] = "VERIFIED_AND_PARTNERED", s[s.VERIFIED_AND_HUB = 4] = "VERIFIED_AND_HUB", s[s.HUB = 5] = "HUB", s[s.NONE = 6] = "NONE";
-            class v extends r.PureComponent {
-                renderBadge(e, C, L) {
+            }), C("222007");
+            var t, L, s = C("37983"),
+                a = C("884691"),
+                r = C("414456"),
+                d = C.n(r),
+                i = C("77078"),
+                n = C("449008"),
+                u = C("931138"),
+                c = C("928564"),
+                f = C("888978"),
+                o = C("390864"),
+                h = C("486952"),
+                E = C("49111"),
+                R = C("782340"),
+                p = C("465835");
+            (L = t || (t = {}))[L.PARTNERED = 0] = "PARTNERED", L[L.STAFF = 1] = "STAFF", L[L.VERIFIED = 2] = "VERIFIED", L[L.VERIFIED_AND_PARTNERED = 3] = "VERIFIED_AND_PARTNERED", L[L.VERIFIED_AND_HUB = 4] = "VERIFIED_AND_HUB", L[L.HUB = 5] = "HUB", L[L.NONE = 6] = "NONE";
+            class v extends a.PureComponent {
+                renderBadge(e, l, C) {
                     let {
                         className: t,
-                        badgeStrokeColor: s,
-                        tooltipColor: r = i.Tooltip.Colors.BRAND,
-                        tooltipPosition: d,
-                        size: f = 16,
-                        badgeColor: c,
+                        badgeStrokeColor: L,
+                        tooltipColor: a = i.Tooltip.Colors.BRAND,
+                        tooltipPosition: r,
+                        size: c = 16,
+                        badgeColor: f,
                         iconClassName: o,
                         flowerStarClassName: h
                     } = this.props, E = function(e) {
@@ -95,29 +91,29 @@
                                 (0, n.assertNever)(e)
                         }
                     }(e);
-                    return (0, l.jsx)(i.Tooltip, {
-                        color: r,
-                        position: d,
+                    return (0, s.jsx)(i.Tooltip, {
+                        color: a,
+                        position: r,
                         text: E,
-                        children: r => 5 === e || 4 === e ? (0, l.jsx)("div", {
-                            ...r,
-                            className: a(L, t),
+                        children: a => 5 === e || 4 === e ? (0, s.jsx)("div", {
+                            ...a,
+                            className: d(C, t),
                             style: {
-                                width: f,
-                                height: f
+                                width: c,
+                                height: c
                             },
-                            children: (0, l.jsx)(C, {
-                                className: a(p.icon, o)
+                            children: (0, s.jsx)(l, {
+                                className: d(p.icon, o)
                             })
-                        }) : (0, l.jsx)(u.default, {
-                            ...r,
-                            className: a(L, t),
+                        }) : (0, s.jsx)(u.default, {
+                            ...a,
+                            className: d(C, t),
                             flowerStarClassName: h,
-                            color: c,
-                            stroke: s,
-                            size: f,
-                            children: (0, l.jsx)(C, {
-                                className: a(p.icon, o)
+                            color: f,
+                            stroke: L,
+                            size: c,
+                            children: (0, s.jsx)(l, {
+                                className: d(p.icon, o)
                             })
                         })
                     })
@@ -125,34 +121,34 @@
                 render() {
                     let {
                         guild: e
-                    } = this.props, C = new Set(e.features);
-                    return C.has(E.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, o.default, p.staff) : C.has(E.GuildFeatures.VERIFIED) && C.has(E.GuildFeatures.HUB) ? this.renderBadge(4, f.default, p.verifiedHub) : C.has(E.GuildFeatures.HUB) ? this.renderBadge(5, f.default, p.hub) : C.has(E.GuildFeatures.VERIFIED) && C.has(E.GuildFeatures.PARTNERED) ? this.renderBadge(3, h.default, p.verified) : C.has(E.GuildFeatures.VERIFIED) ? this.renderBadge(2, h.default, p.verified) : C.has(E.GuildFeatures.PARTNERED) ? this.renderBadge(0, c.default, p.partnered) : null
+                    } = this.props, l = new Set(e.features);
+                    return l.has(E.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, o.default, p.staff) : l.has(E.GuildFeatures.VERIFIED) && l.has(E.GuildFeatures.HUB) ? this.renderBadge(4, c.default, p.verifiedHub) : l.has(E.GuildFeatures.HUB) ? this.renderBadge(5, c.default, p.hub) : l.has(E.GuildFeatures.VERIFIED) && l.has(E.GuildFeatures.PARTNERED) ? this.renderBadge(3, h.default, p.verified) : l.has(E.GuildFeatures.VERIFIED) ? this.renderBadge(2, h.default, p.verified) : l.has(E.GuildFeatures.PARTNERED) ? this.renderBadge(0, f.default, p.partnered) : null
                 }
             }
             var x = v
         },
-        928564: function(e, C, L) {
+        928564: function(e, l, C) {
             "use strict";
-            L.r(C), L.d(C, {
+            C.r(l), C.d(l, {
                 default: function() {
-                    return l
+                    return s
                 }
             });
-            var t = L("37983");
-            L("884691");
-            var s = L("75196");
+            var t = C("37983");
+            C("884691");
+            var L = C("75196");
 
-            function l(e) {
+            function s(e) {
                 let {
-                    width: C = 16,
-                    height: L = 16,
-                    color: l = "currentColor",
-                    ...r
+                    width: l = 16,
+                    height: C = 16,
+                    color: s = "currentColor",
+                    ...a
                 } = e;
                 return (0, t.jsxs)("svg", {
-                    ...(0, s.default)(r),
-                    width: C,
-                    height: L,
+                    ...(0, L.default)(a),
+                    width: l,
+                    height: C,
                     viewBox: "0 0 16 16",
                     children: [(0, t.jsx)("circle", {
                         cx: "8",
@@ -160,41 +156,41 @@
                         r: "8"
                     }), (0, t.jsx)("path", {
                         d: "M4.66666 12.6667C3.93028 12.6667 3.33333 12.0697 3.33333 11.3333C3.33333 10.5969 3.93028 9.99999 4.66666 9.99999C5.40304 9.99999 5.99999 10.5969 5.99999 11.3333C5.99999 12.0697 5.40304 12.6667 4.66666 12.6667Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M4.66666 12C4.29847 12 3.99999 11.7015 3.99999 11.3333C3.99999 10.9651 4.29847 10.6667 4.66666 10.6667C5.03485 10.6667 5.33333 10.9651 5.33333 11.3333C5.33333 11.7015 5.03485 12 4.66666 12ZM3.33333 11.3333C3.33333 12.0697 3.93028 12.6667 4.66666 12.6667C5.40304 12.6667 5.99999 12.0697 5.99999 11.3333C5.99999 10.5969 5.40304 9.99999 4.66666 9.99999C3.93028 9.99999 3.33333 10.5969 3.33333 11.3333Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         d: "M8 12.6667C7.26362 12.6667 6.66666 12.0697 6.66666 11.3333C6.66666 10.5969 7.26362 9.99999 8 9.99999C8.73637 9.99999 9.33333 10.5969 9.33333 11.3333C9.33333 12.0697 8.73637 12.6667 8 12.6667Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M8 12C7.63181 12 7.33333 11.7015 7.33333 11.3333C7.33333 10.9651 7.63181 10.6667 8 10.6667C8.36819 10.6667 8.66666 10.9651 8.66666 11.3333C8.66666 11.7015 8.36819 12 8 12ZM6.66666 11.3333C6.66666 12.0697 7.26362 12.6667 8 12.6667C8.73637 12.6667 9.33333 12.0697 9.33333 11.3333C9.33333 10.5969 8.73637 9.99999 8 9.99999C7.26362 9.99999 6.66666 10.5969 6.66666 11.3333Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         d: "M8 6C7.26362 6 6.66666 5.40304 6.66666 4.66666C6.66666 3.93028 7.26362 3.33333 8 3.33333C8.73637 3.33333 9.33333 3.93028 9.33333 4.66666C9.33333 5.40304 8.73637 6 8 6Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M8 5.33333C7.63181 5.33333 7.33333 5.03485 7.33333 4.66666C7.33333 4.29847 7.63181 3.99999 8 3.99999C8.36819 3.99999 8.66666 4.29847 8.66666 4.66666C8.66666 5.03485 8.36819 5.33333 8 5.33333ZM6.66666 4.66666C6.66666 5.40304 7.26362 6 8 6C8.73637 6 9.33333 5.40304 9.33333 4.66666C9.33333 3.93028 8.73637 3.33333 8 3.33333C7.26362 3.33333 6.66666 3.93028 6.66666 4.66666Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         d: "M11.3333 12.6667C10.5969 12.6667 9.99999 12.0697 9.99999 11.3333C9.99999 10.5969 10.5969 9.99999 11.3333 9.99999C12.0697 9.99999 12.6667 10.5969 12.6667 11.3333C12.6667 12.0697 12.0697 12.6667 11.3333 12.6667Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M11.3333 12C10.9651 12 10.6667 11.7015 10.6667 11.3333C10.6667 10.9651 10.9651 10.6667 11.3333 10.6667C11.7015 10.6667 12 10.9651 12 11.3333C12 11.7015 11.7015 12 11.3333 12ZM9.99999 11.3333C9.99999 12.0697 10.5969 12.6667 11.3333 12.6667C12.0697 12.6667 12.6667 12.0697 12.6667 11.3333C12.6667 10.5969 12.0697 9.99999 11.3333 9.99999C10.5969 9.99999 9.99999 10.5969 9.99999 11.3333Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M5.99999 8.49999C5.53976 8.49999 5.16666 8.87309 5.16666 9.33333V10.6667H4.16666V9.33333C4.16666 8.32081 4.98747 7.49999 5.99999 7.49999H9.99999C11.0125 7.49999 11.8333 8.32081 11.8333 9.33333V10.6667H10.8333V9.33333C10.8333 8.87309 10.4602 8.49999 9.99999 8.49999H5.99999Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         fillRule: "evenodd",
                         clipRule: "evenodd",
@@ -204,51 +200,51 @@
                 })
             }
         },
-        888978: function(e, C, L) {
+        888978: function(e, l, C) {
             "use strict";
-            L.r(C), L.d(C, {
+            C.r(l), C.d(l, {
                 default: function() {
-                    return l
+                    return s
                 }
             });
-            var t = L("37983");
-            L("884691");
-            var s = L("75196");
+            var t = C("37983");
+            C("884691");
+            var L = C("75196");
 
-            function l(e) {
+            function s(e) {
                 let {
-                    width: C = 16,
-                    height: L = 16,
-                    color: l = "currentColor",
-                    ...r
+                    width: l = 16,
+                    height: C = 16,
+                    color: s = "currentColor",
+                    ...a
                 } = e;
                 return (0, t.jsxs)("svg", {
-                    ...(0, s.default)(r),
-                    width: C,
-                    height: L,
+                    ...(0, L.default)(a),
+                    width: l,
+                    height: C,
                     viewBox: "0 0 16 16",
                     children: [(0, t.jsx)("path", {
                         d: "M10.5906 6.39993L9.19223 7.29993C8.99246 7.39993 8.89258 7.39993 8.69281 7.29993C8.59293 7.19993 8.39317 7.09993 8.29328 6.99993C7.89375 6.89993 7.5941 6.99993 7.29445 7.19993L6.79504 7.49993L4.29797 9.19993C3.69867 9.49993 2.99949 9.39993 2.69984 8.79993C2.30031 8.29993 2.50008 7.59993 2.99949 7.19993L5.99598 5.19993C6.79504 4.69993 7.79387 4.49993 8.69281 4.69993C9.49188 4.89993 10.0912 5.29993 10.5906 5.89993C10.7904 6.09993 10.6905 6.29993 10.5906 6.39993Z",
-                        fill: l
+                        fill: s
                     }), (0, t.jsx)("path", {
                         d: "M13.4871 7.79985C13.4871 8.19985 13.2874 8.59985 12.9877 8.79985L9.89135 10.7999C9.29206 11.1999 8.69276 11.3999 7.99358 11.3999C7.69393 11.3999 7.49417 11.3999 7.19452 11.2999C6.39545 11.0999 5.79616 10.6999 5.29674 10.0999C5.19686 9.89985 5.29674 9.69985 5.39663 9.59985L6.79499 8.69985C6.89487 8.59985 7.09463 8.59985 7.19452 8.69985C7.39428 8.79985 7.59405 8.89985 7.69393 8.99985C8.09346 8.99985 8.39311 8.99985 8.69276 8.79985L9.39194 8.39985L11.3896 6.99985L11.6892 6.79985C12.1887 6.49985 12.9877 6.59985 13.2874 7.09985C13.4871 7.39985 13.4871 7.59985 13.4871 7.79985Z",
-                        fill: l
+                        fill: s
                     })]
                 })
             }
         },
-        390864: function(e, C, L) {
+        390864: function(e, l, C) {
             "use strict";
-            L.r(C), L.d(C, {
+            C.r(l), C.d(l, {
                 default: function() {
-                    return r
+                    return a
                 }
             });
-            var t = L("37983");
-            L("884691");
-            var s = L("469563"),
-                l = L("400033"),
-                r = (0, s.replaceIcon)(function(e) {
+            var t = C("37983");
+            C("884691");
+            var L = C("469563"),
+                s = C("400033"),
+                a = (0, L.replaceIcon)(function(e) {
                     return (0, t.jsx)("svg", {
                         ...e,
                         xmlns: "http://www.w3.org/2000/svg",
@@ -265,8 +261,8 @@
                             })]
                         })
                     })
-                }, l.StaffBadgeIcon)
+                }, s.StaffBadgeIcon)
         }
     }
 ]);
-//# sourceMappingURL=41831.a3f3aaadb22451db89d8.js.map
+//# sourceMappingURL=41831.ad048c0163425aea4d2e.js.map

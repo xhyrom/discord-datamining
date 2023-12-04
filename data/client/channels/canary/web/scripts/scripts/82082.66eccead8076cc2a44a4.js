@@ -21,14 +21,14 @@
                 } = e;
                 return (0, l.jsx)("svg", {
                     ...(0, i.default)(r),
+                    xmlns: "http://www.w3.org/2000/svg",
                     width: n,
                     height: t,
-                    viewBox: "0 0 24 24",
                     fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 24 24",
                     children: (0, l.jsx)("path", {
-                        d: "M3.29289 11.2929C2.90237 11.6834 2.90237 12.3166 3.29289 12.7071L8.29289 17.7071C8.68342 18.0976 9.31658 18.0976 9.70711 17.7071C10.0976 17.3166 10.0976 16.6834 9.70711 16.2929L6.41421 13L20 13C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11L6.41421 11L9.70711 7.70711C10.0976 7.31658 10.0976 6.68342 9.70711 6.29289C9.31658 5.90237 8.68342 5.90237 8.29289 6.29289L3.29289 11.2929Z",
                         fill: "string" == typeof o ? o : o.css,
+                        d: "M3.3 11.3a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4-1.4L6.42 13H20a1 1 0 1 0 0-2H6.41l3.3-3.3a1 1 0 0 0-1.42-1.4l-5 5Z",
                         className: a
                     })
                 })
@@ -167,7 +167,7 @@
             "use strict";
             t.r(n), t.d(n, {
                 default: function() {
-                    return U
+                    return T
                 }
             }), t("424973"), t("222007");
             var l = t("917351"),
@@ -215,7 +215,7 @@
                     autoTrackExposure: !1
                 }).canSeeFrequentlyPlayed
             }
-            class L extends a.default.PersistedStore {
+            class U extends a.default.PersistedStore {
                 initialize(e) {
                     this.waitFor(c.default, _.default), (null == e ? void 0 : e.recentlyHeardCache) != null && y.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (m = e.playedEventsPendingFlush), this.syncWith([s.default], A)
                 }
@@ -238,8 +238,8 @@
                     return g.frequently
                 }
             }
-            L.displayName = "SoundboardEventStore", L.persistKey = "SoundboardEventStore";
-            var U = new L(r.default, {
+            U.displayName = "SoundboardEventStore", U.persistKey = "SoundboardEventStore";
+            var T = new U(r.default, {
                 GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: function(e) {
                     let {
                         sound: n,
@@ -294,7 +294,7 @@
             "use strict";
             t.r(n), t.d(n, {
                 getAmplitudinalSoundboardVolume: function() {
-                    return T
+                    return L
                 },
                 canUseSoundboardSound: function() {
                     return N
@@ -340,22 +340,22 @@
                 g = t("389480"),
                 A = t("245463"),
                 I = t("675961"),
-                L = t("846325"),
-                U = t("49111");
+                U = t("846325"),
+                T = t("49111");
 
-            function T() {
+            function L() {
                 var e;
                 let n = a.SoundboardSettings.getSetting();
                 return null !== (e = null == n ? void 0 : n.volume) && void 0 !== e ? e : 100
             }
 
             function p(e, n) {
-                return (null == n ? void 0 : n.guild_id) == null || f.default.can(U.Permissions.USE_EXTERNAL_SOUNDS, n) || e.guildId === L.DEFAULT_SOUND_GUILD_ID || e.guildId === (null == n ? void 0 : n.guild_id)
+                return (null == n ? void 0 : n.guild_id) == null || f.default.can(T.Permissions.USE_EXTERNAL_SOUNDS, n) || e.guildId === U.DEFAULT_SOUND_GUILD_ID || e.guildId === (null == n ? void 0 : n.guild_id)
             }
 
             function N(e, n, t) {
                 let l = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
-                return (S.default.canUseSoundboardEverywhere(e) || n.guildId === (null == t ? void 0 : t.guild_id) || n.guildId === L.DEFAULT_SOUND_GUILD_ID) && p(n, t) && (!l || n.available)
+                return (S.default.canUseSoundboardEverywhere(e) || n.guildId === (null == t ? void 0 : t.guild_id) || n.guildId === U.DEFAULT_SOUND_GUILD_ID) && p(n, t) && (!l || n.available)
             }
 
             function D(e) {
@@ -377,7 +377,7 @@
                     l = (0, I.getCustomJoinSound)(e);
                 if (null == t || c.SILENT_JOIN_LEAVE_CHANNEL_TYPES.has(t.type) || null == l || !D(n) || !(0, A.canSelectedVoiceChannelUseSoundboard)()) return;
                 await (0, m.maybeFetchSoundboardSounds)();
-                let u = l.guildId === L.CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID ? L.DEFAULT_SOUND_GUILD_ID : l.guildId,
+                let u = l.guildId === U.CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID ? U.DEFAULT_SOUND_GUILD_ID : l.guildId,
                     i = y.default.getSound(u, l.soundId);
                 if (null != i) {
                     var a, r;
@@ -423,12 +423,12 @@
 
             function R(e, n, t) {
                 (0, r.updateUserGuildSettings)(e, l => {
-                    let u = n.guildId === L.DEFAULT_SOUND_GUILD_ID,
+                    let u = n.guildId === U.DEFAULT_SOUND_GUILD_ID,
                         i = u ? g.AnalyticsSoundSource.DEFAULT : g.AnalyticsSoundSource.CUSTOM,
                         o = null != l.joinSound ? g.AnalyticsChangeType.UPDATED : g.AnalyticsChangeType.ADDED;
                     l.joinSound = {
                         soundId: n.soundId,
-                        guildId: u ? L.CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID : n.guildId
+                        guildId: u ? U.CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID : n.guildId
                     }, b({
                         guildId: e,
                         changeType: o,
@@ -447,7 +447,7 @@
                     soundSource: u,
                     location: i
                 } = e;
-                E.default.track(U.AnalyticEvents.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
+                E.default.track(T.AnalyticEvents.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
                     location_stack: i,
                     guild_id: "" === n ? 0 : Number(n),
                     change_type: t,
@@ -460,7 +460,7 @@
                 let {
                     location: n
                 } = e;
-                E.default.track(U.AnalyticEvents.USER_CUSTOM_CALL_SOUND_SETTING_GUILD_REMOVED, {
+                E.default.track(T.AnalyticEvents.USER_CUSTOM_CALL_SOUND_SETTING_GUILD_REMOVED, {
                     location_stack: n
                 })
             }
@@ -585,13 +585,13 @@
                     return u
                 },
                 sendVoiceChannelCustomCallSoundEffect: function() {
-                    return L
-                },
-                sendVoiceChannelSoundboardEffect: function() {
                     return U
                 },
-                sendVoiceChannelEffect: function() {
+                sendVoiceChannelSoundboardEffect: function() {
                     return T
+                },
+                sendVoiceChannelEffect: function() {
+                    return L
                 }
             });
             var l, u, i = t("917351"),
@@ -622,7 +622,7 @@
                 }
             }
 
-            function L(e, n, t) {
+            function U(e, n, t) {
                 var l;
                 let {
                     abortController: u,
@@ -641,7 +641,7 @@
                 }), (0, f.default)([r.default.CHANNEL_CALL], t, n, c.AnalyticsSoundType.ENTRY)
             }
 
-            function U(e, n, t, l) {
+            function T(e, n, t, l) {
                 var u, i;
                 let a = s.default.getCustomEmojiById(null !== (u = n.emojiId) && void 0 !== u ? u : ""),
                     {
@@ -662,7 +662,7 @@
                     if (r.signal.aborted) return
                 }), (0, f.default)(null != l ? l : [], t, n, c.AnalyticsSoundType.DEFAULT)
             }(l = u || (u = {})).EMOJI_PICKER = "emoji_picker", l.EFFECT_BAR = "effect_bar";
-            let T = async e => {
+            let L = async e => {
                 let {
                     channel: n,
                     emoji: t,
@@ -884,4 +884,4 @@
         }
     }
 ]);
-//# sourceMappingURL=82082.947fcc1e623381abadfd.js.map
+//# sourceMappingURL=82082.66eccead8076cc2a44a4.js.map
