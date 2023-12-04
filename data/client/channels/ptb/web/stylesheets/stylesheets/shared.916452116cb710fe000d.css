@@ -12694,8 +12694,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     padding-right: 16px;
     line-height: 1.25em;
     color: inherit;
-    display: inline;
-    display: -webkit-inline-box
+    display: inline
 }
 
 .markup_a7e664 h1 {
@@ -13553,14 +13552,15 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .repliedTextPreview__90311 .repliedTextContent__75526 {
+    display: -webkit-inline-box !important;
     -webkit-line-clamp: 1;
-    display: -webkit-box;
     -webkit-box-orient: vertical;
     width: 100%
 }
 
 .repliedTextPreview__90311 {
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    display: flex
 }
 
 .repliedTextPreview__90311 .emoji {
@@ -26552,4 +26552,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.bfa0aac3246aef31d602.css.map*/
+/*# sourceMappingURL=shared.916452116cb710fe000d.css.map*/
