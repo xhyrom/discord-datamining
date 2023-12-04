@@ -2489,24 +2489,32 @@
                 CACHE_STORE_LAZY_KEY: function() {
                     return _o
                 },
-                CACHE_STORE_CHANNELS_LAZY_KEY: function() {
+                CACHE_STORE_LAZY_FILE_KEY: function() {
                     return _t
                 },
-                CACHE_STORE_KEY: function() {
+                CACHE_STORE_CHANNELS_LAZY_KEY: function() {
                     return _T
+                },
+                CACHE_STORE_KEY: function() {
+                    return _r
+                },
+                CACHE_STORE_FILE_KEY: function() {
+                    return _N
                 },
                 ModalAnimation: function() {
                     return u
                 },
                 Gradients: function() {
-                    return _r
+                    return _O
                 }
             }), I("222007");
             var R, a, A, e, o, t, T, r, N, O, i, L, c, n, D, S, C, l, s, P, M, U, d, G, u, p, B, f, H, g, h, Y, y, w, K, b, m, V, F, W, v, k, x, X, Q, J, Z, j, z, q, $, __, _E, _I, _R, _a, _A, _e = I("854588");
             (h = R || (R = {})).CHANNELS = "CHANNELS", h.MEMBERS = "MEMBERS", (Y = a || (a = {})).CHAT = "CHAT", Y.FRIENDS = "FRIENDS", Y.QUICKSWITCHER = "QUICKSWITCHER", Y.NOTIFICATIONS = "NOTIFICATIONS", Y.MENTIONS_AND_QUICKSWITCHER = "MENTIONS_AND_QUICKSWITCHER", Y.USER_SETTINGS = "USER_SETTINGS", Y.STAGE_DISCOVERY = "STAGE_DISCOVERY", Y.SERVER_DISCOVERY = "SERVER_DISCOVERY", Y.PENDING_INCOMING_FRIEND_REQUESTS = "PENDING_INCOMING_FRIEND_REQUESTS", (y = A || (A = {})).BACK_BUTTON = "Back Button", y.SWIPE = "Swipe", y.MUTUAL_GUILD_ITEM = "Mutual Guild Item", y.MEMBER_LIST_ICON = "Member List Icon", y.CHANNEL_DRAWER_ICON = "Channel Drawer Icon", y.CHANNEL_TITLE = "Channel Title", y.PREMIUM_GUILD_SUBSCRIPTION_GUILD_LIST_UPSELL = "Premium Guild Subscription Guild List Upsell", (w = e || (e = {})).INACTIVE = "inactive", w.BACKGROUND = "background", w.ACTIVE = "active", (K = o || (o = {})).WELCOME = "WELCOME", K.LOGIN = "LOGIN", K.REGISTER = "REGISTER", K.REGISTER_IDENTITY = "REGISTER_IDENTITY", K.REGISTER_DISPLAY_NAME = "REGISTER_DISPLAY_NAME", K.REGISTER_ACCOUNT_INFORMATION = "REGISTER_ACCOUNT_INFORMATION", K.VERIFY_PHONE = "VERIFY_PHONE", K.MFA = "MFA", K.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED = "ACCOUNT_DISABLED_OR_DELETION_SCHEDULED", K.AGE_GATE_UNDERAGE = "AGE_GATE_UNDERAGE", K.AGE_GATE = "AGE_GATE", K.COUNTRY_SELECT = "COUNTRY_SELECT", K.EXTERNAL_LINK = "EXTERNAL_LINK", (b = t || (t = {})).DEFAULT = "default", b.DARK = "dark", b.LIGHT = "light", (m = T || (T = {})).CAMERA = "camera", m.PHOTO = "photo", (V = r || (r = {}))[V.BLURRED_NO_QUERY = 0] = "BLURRED_NO_QUERY", V[V.BLURRED_WITH_QUERY = 1] = "BLURRED_WITH_QUERY", V[V.FOCUSED_NO_QUERY = 2] = "FOCUSED_NO_QUERY", V[V.FOCUSED_WITH_QUERY = 3] = "FOCUSED_WITH_QUERY", (F = N || (N = {}))[F.GENERAL = 0] = "GENERAL", F[F.TEXT = 1] = "TEXT", F[F.VOICE = 2] = "VOICE", (W = O || (O = {})).LANDING = "LANDING", W.NAME = "NAME", (v = i || (i = {}))[v.SAFARI = 0] = "SAFARI", v[v.IN_APP = 1] = "IN_APP", v[v.CHROME = 2] = "CHROME", (k = L || (L = {})).SOLVED = "solved", k.EXPIRED = "expired", (c || (c = {})).MENTIONS = "mentions", (x = n || (n = {})).OVERVIEW = "OVERVIEW", x.RESEND_EMAIL = "RESEND_EMAIL", x.CONFIRM_EMAIL_CHANGE_START = "CONFIRM_EMAIL_CHANGE_START", x.CONFIRM_EMAIL_CHANGE_CODE = "CONFIRM_EMAIL_CHANGE_CODE", x.ENTER_EMAIL = "ENTER_EMAIL", x.ADD_PHONE = "ADD_PHONE", x.VERIFY_PHONE = "VERIFY_PHONE", x.VERIFY_PASSWORD = "VERIFY_PASSWORD", x.PHONE_THEN_EMAIL_INTERSTITIAL = "PHONE_THEN_EMAIL_INTERSTITIAL", (X = D || (D = {})).VOICE = "VOICE", X.VIDEO = "VIDEO", X.STREAM = "STREAM", (Q = S || (S = {})).LANDING = "LANDING", Q.SYNCING = "SYNCING", Q.RESULTS = "RESULTS", Q.NO_RESULTS = "NO_RESULTS", Q.ADD_PHONE = "ADD_PHONE", Q.VERIFY_PHONE = "VERIFY_PHONE", (C || (C = {})).LANDING = "LANDING", (l || (l = {})).ADVANCED = "ADVANCED", (J = s || (s = {})).USER = "USER", J.ACTION = "ACTION", (Z = P || (P = {})).OVERVIEW = "OVERVIEW", Z.ADD_OVERRIDE = "ADD_OVERRIDE", Z.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE", (j = M || (M = {})).INVITE = "invite", j.GUILD_TEMPLATE = "guild-template", j.CHANNEL = "channel", j.GIFT_CODE = "gift-code", j.MESSAGE = "message", j.OAUTH2_AUTHORIZE = "oauth2-authorize", j.APP_DIRECTORY_PROFILE = "app-directory-profile", j.PROMOTIONS = "promotions", j.NONE = "none", j.REMOTE_AUTH = "remote-auth", j.USER_PROFILE = "user-profile", j.BUILD_OVERRIDE = "build-override", j.CONTACT_SYNC = "contact-sync", j.ADD_FRIENDS = "add-friends", j.COMPOSE_MESSAGE = "compose-message", j.GUILD_EVENT_DETAILS = "guild-event-details", j.FRIENDS = "friends", j.EDIT_PROFILE = "edit-profile", j.MOBILE_WEB_HANDOFF = "mobile-web-handoff", j.VOICE_CHANNEL = "voice-channel", j.GUILD_HOME = "guild-home", j.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback", j.SESSION_MANAGEMENT = "session-management", j.CONNECTIONS = "connections", j.GUILD_SETTINGS = "guild-settings", j.GUILD_SETTINGS_PICKER = "guild-settings-picker", j.ACTIVATE_DEVICE = "activate-device", j.FAMILY_CENTER = "family-center", j.SHARE = "share", j.CREATE_VOICE_INVITE = "create_voice_invite", j.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave";
             let _o = "CacheStoreLazy",
-                _t = "CacheStoreChannelsLazy",
-                _T = "CacheStore";
+                _t = "CacheStoreLazyv2",
+                _T = "CacheStoreChannelsLazy",
+                _r = "CacheStore",
+                _N = "CacheStorev2";
             (z = U || (U = {})).UPLOAD = "upload", z.GLOBAL_EMOJI = "global-emoji", z.EMOJI_AUTOCOMPLETE = "emoji-autocomplete", z.BADGE = "badge", z.ANIMATED_EMOJI = "animated-emoji", z.ANIMATED_AVATAR = "animated-avatar", z.CUSTOM_PROFILES = "custom-profiles", z.GLOBAL_STICKER = "global-sticker", z.PREMIUM_GUILD_PROFILE = "premium-guild-profile", z.LONGER_MESSAGE = "longer-message", z.GUILD_CAP = "guild-cap", z.ACTIVITIES = "activities", z.APP_ICONS = "app-icons", (q = d || (d = {})).UNKNOWN = "ESKERRORDOMAIN0", q.CLIENT_INVALID = "ESKERRORDOMAIN1", q.PAYMENT_CANCELED = "ESKERRORDOMAIN2", q.PAYMENT_INVALID = "ESKERRORDOMAIN3", q.PAYMENT_NOT_ALLOWED = "ESKERRORDOMAIN4", q.STORE_PRODUCT_NOT_AVAILABLE = "ESKERRORDOMAIN5", q.CLOUD_SERVICE_PERMISSION_DENIED = "ESKERRORDOMAIN6", q.CLOUD_SERVICE_NETWORK_CONNECTION_FAILED = "ESKERRORDOMAIN7", q.CLOUD_SERVICE_REVOKED = "ESKERRORDOMAIN8", q.PRIVACY_ACKNOWLEDGEMENT_REQUIRED = "ESKERRORDOMAIN9", q.UNAUTHORIZED_REQUEST_DATA = "ESKERRORDOMAIN10", q.INVALID_OFFER_IDENTIFIER = "ESKERRORDOMAIN11", q.INVALID_SIGNATURE = "ESKERRORDOMAIN12", q.MISSING_OFFER_PARAMS = "ESKERRORDOMAIN13", q.INVALID_OFFER_PRICE = "ESKERRORDOMAIN14", q.OVERLAY_CANCELLED = "ESKERRORDOMAIN15", q.OVERLAY_INVALID_CONFIGURATION = "ESKERRORDOMAIN16", q.OVERLAY_TIMEOUT = "ESKERRORDOMAIN17", q.INELIGIBLE_FOR_OFFER = "ESKERRORDOMAIN18", q.UNSUPPORTED_PLATFORM = "ESKERRORDOMAIN19", ($ = G || (G = {})).LOGOUT_TIMESTAMP_KEY = "logout_timestamp_key", $.ACKNOWLEDGED_TOOLTIPS_KEY = "acknowledged_tooltips_key", $.KRISP_ONBOARD = "krisp_onboard", $.SCREENSHARE_ONBOARD = "screenshare_onboard", (__ = u || (u = {})).NONE = "none", __.SLIDE_UP = "slide-up", __.SLIDE_IN = "slide-in", __.SLIDE_OUT = "slide-out", __.SLIDE_IN_OUT = "slide-in-out", __.SLIDE_IN_OUT_REVERSE = "slide-in-out-reverse", __.FADE = "fade", Object.freeze({
                 START: {
                     x: 0,
@@ -2526,7 +2534,7 @@
                     y: 1
                 }
             });
-            let _r = {
+            let _O = {
                 PREMIUM_TIER_0: [_e.default.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, _e.default.unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS],
                 PREMIUM_TIER_1: [_e.default.unsafe_rawColors.PREMIUM_TIER_1_DARK_BLUE_FOR_GRADIENTS, _e.default.unsafe_rawColors.PREMIUM_TIER_1_BLUE_FOR_GRADIENTS],
                 PREMIUM_TIER_2: [_e.default.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS, _e.default.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS],
@@ -13155,4 +13163,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.35b74594d0b39ca3ca44.js.map
+//# sourceMappingURL=7273.2f94bd0017bcc9ee610b.js.map
