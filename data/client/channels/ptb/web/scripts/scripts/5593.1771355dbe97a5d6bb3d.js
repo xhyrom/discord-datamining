@@ -1700,12 +1700,12 @@
                         return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(C.isNotNullish) : N
                     }
                     return l.type === g.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(C.isNotNullish) : N : N
-                }, [l]), x = r.useCallback(() => {
+                }, [l]), R = r.useCallback(() => {
                     D.current.cancel(), L(!0)
-                }, []), R = r.useCallback(() => {
+                }, []), x = r.useCallback(() => {
                     D.current.delay()
                 }, []), P = r.useCallback((e, t) => {
-                    x(), (0, f.openContextMenuLazy)(e, async () => {
+                    R(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await n.el("406784").then(n.bind(n, "406784"));
@@ -1714,9 +1714,9 @@
                             user: t
                         })
                     }, {
-                        onClose: R
+                        onClose: x
                     })
-                }, [R, x]);
+                }, [x, R]);
                 if (0 === y.length) return null;
                 if (m) return (0, a.jsx)(O, {
                     maxVisibleUsers: v,
@@ -1738,8 +1738,8 @@
                 }, "overflow")), (0, a.jsx)(E.default, {
                     section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
-                        onMouseEnter: x,
-                        onMouseLeave: R,
+                        onMouseEnter: R,
+                        onMouseLeave: x,
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
                                 participantType: l.type,
@@ -1918,41 +1918,6 @@
                         label: m.default.Messages.STREAM_RESOLUTION,
                         children: L
                     })]
-                })
-            }
-        },
-        736626: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return s
-                }
-            });
-            var a = n("862205");
-            let r = (0, a.createExperiment)({
-                kind: "user",
-                id: "2023-10_client_themes_mobile_tokens",
-                label: "Client Themes Mobile Tokens",
-                defaultConfig: {
-                    canUseGradientTokens: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Client Themes Mobile Tokens",
-                    config: {
-                        canUseGradientTokens: !0
-                    }
-                }]
-            });
-            var s = e => {
-                let {
-                    location: t,
-                    autoTrackExposure: n = !1
-                } = e;
-                return r.useExperiment({
-                    location: t
-                }, {
-                    autoTrackExposure: n
                 })
             }
         },
@@ -2410,7 +2375,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-66683d42354bc1aef3f51e2bc748ec7ba319ad41",
+                    release: "discord_web-8b6783c075c6746fa4210740335ce98fda7e1bb0",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2428,7 +2393,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "251157", "251157")), a.setTag("builtAt", String("1701730990672"));
+                }), a.setTag("buildNumber", (e = "251165", "251165")), a.setTag("builtAt", String("1701731392679"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2995,7 +2960,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return f
                 }
             });
             var a = n("37983");
@@ -3003,24 +2968,19 @@
             var r = n("446674"),
                 s = n("819855"),
                 i = n("714657"),
-                l = n("736626"),
-                u = n("21121"),
-                o = n("161778"),
-                d = n("168973"),
-                c = n("559980"),
-                f = n("843455");
+                l = n("21121"),
+                u = n("161778"),
+                o = n("168973"),
+                d = n("559980"),
+                c = n("843455");
 
-            function E(e) {
+            function f(e) {
                 let {
                     children: t
-                } = e, n = (0, r.useStateFromStores)([o.default], () => o.default.theme), E = (0, r.useStateFromStores)([d.default], () => d.default.useAMOLEDTheme === c.AMOLEDThemeState.ON), h = (0, u.useInMainTabsExperiment)(), {
-                    canUseGradientTokens: p
-                } = (0, l.default)({
-                    location: "RootThemeContextProvider"
-                }), S = (0, r.useStateFromStores)([i.default], () => i.default.gradientPreset), m = 0;
-                return E && (m = (0, s.setThemeFlag)(m, s.ThemeContextFlags.MOBILE_LEGACY_AMOLED_MODE_ENABLED)), h && (m = (0, s.setThemeFlag)(m, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED)), null != S && p && (m = S.theme === f.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(m, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(m, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), (0, a.jsx)(s.RootThemeContextProvider, {
+                } = e, n = (0, r.useStateFromStores)([u.default], () => u.default.theme), f = (0, r.useStateFromStores)([o.default], () => o.default.useAMOLEDTheme === d.AMOLEDThemeState.ON), E = (0, l.useInMainTabsExperiment)(), h = (0, r.useStateFromStores)([i.default], () => i.default.gradientPreset), p = 0;
+                return f && (p = (0, s.setThemeFlag)(p, s.ThemeContextFlags.MOBILE_LEGACY_AMOLED_MODE_ENABLED)), E && (p = (0, s.setThemeFlag)(p, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED)), null != h && E && (p = h.theme === c.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(p, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(p, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), (0, a.jsx)(s.RootThemeContextProvider, {
                     theme: n,
-                    flags: m,
+                    flags: p,
                     children: t
                 })
             }
@@ -3278,7 +3238,7 @@
                     onClose: A,
                     onSelect: I,
                     appContext: M = _.AppContext.APP
-                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = v(n, r, l), D = (0, o.default)(N, M), y = (0, u.default)(N, M, _.NOOP_NULL), x = null == N ? (0, a.jsx)(s.MenuItem, {
+                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = v(n, r, l), D = (0, o.default)(N, M), y = (0, u.default)(N, M, _.NOOP_NULL), R = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: h.default,
@@ -3322,7 +3282,7 @@
                                     action: () => (0, d.default)(t)
                                 }, "manage-stream-menu".concat(t.ownerId))
                             })
-                        }), c ? null : x]
+                        }), c ? null : R]
                     })
                 })
             }
@@ -4953,4 +4913,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5593.cc5d0be3937b9058a947.js.map
+//# sourceMappingURL=5593.1771355dbe97a5d6bb3d.js.map
