@@ -10950,6 +10950,9 @@
                 CONTACT_SYNC_DONT_SHOW_AGAIN: "Don't show me this again",
                 CONTACT_SYNC_SUGGESTIONS_TITLE: "Add Friends",
                 REDESIGN_CONTACT_SYNC_SUGGESTIONS_TITLE: "Add friends",
+                CONTACT_SYNC_CONTACT_INVITE_TITLE: "Invite friends",
+                CONTACT_SYNC_CONTACT_INVITE_SUBTITLE_INCENTIVIZED: "Get a free month of Nitro, the premium Discord experience, when these friends sign up.",
+                CONTACT_SYNC_CONTACT_INVITE_SUBTITLE_NON_INCENTIVIZED: "Invite your friends to to join you on Discord for more fun!",
                 CONTACT_SYNC_SUGGESTIONS_CTA: "Add Friends",
                 CONTACT_SYNC_FRIEND_FINDER_TITLE: "You have {count, plural, one {1 friend} other {{count} friends}} on Discord",
                 CONTACT_SYNC_FRIEND_FINDER_SUBTITLE: "Discord can connect you with your friends and help them find you. Enable access to your contacts to find out who they are.",
@@ -15074,6 +15077,8 @@
                 INVENTORY_EMOJI_COLLECTED_DESCRIPTION_V2: "{number, plural, one {**{number}** person has} other {**{number}** people have}} added your server’s emoji.",
                 INVENTORY_NEW_SETTING: "New Emoji Setting",
                 INVENTORY_NEW_SETTING_DESCRIPTION_SOON_V2: "Starting soon, users outside of your server will be able to access your server's emoji and use them throughout Discord. You can change this setting at any time.",
+                INVENTORY_CHANGE_IN_SETTINGS: "Change in your Emoji Settings",
+                INVENTORY_NEW_SETTING_ROLLBACK_DESRIPTION: "In the coming weeks, we're removing the Setting allowing non-server members to collect and use your server's emoji anywhere on Discord.\n\nUsers will only be able to access your server's emoji if they join your server.",
                 INVENTORY_VIEW_SETTING: "View Setting",
                 INVENTORY_DISABLE_SETTING_TITLE_V2: "Are you sure you want to turn off external access to your server’s emoji?",
                 INVENTORY_DISABLE_SETTING_TITLE_MOBILE: "Disable Pack Collection",
@@ -18257,7 +18262,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251062", ", Version Hash: ").concat("1be8a46e59ea1d3ed3ca7acea57bc7032e869eab")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251074", ", Version Hash: ").concat("31e507ce4a2e079fa53c4daac2028c1028243465")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20551,8 +20556,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "251062", "251062"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251062")), _ = 0), _
+                let _ = parseInt((e = "251074", "251074"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251074")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36610,4 +36615,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.beef7790e013605abfd7.js.map
+//# sourceMappingURL=66318.08f6b0332d64a2aef8eb.js.map

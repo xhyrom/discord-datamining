@@ -8023,68 +8023,65 @@
             }
 
             function O(e, t) {
-                e.forEach(t => {
-                    let n = A(t);
-                    g[n] = setTimeout(() => {
-                        ! function(e) {
-                            e.forEach(e => {
-                                let t = A(e);
-                                clearTimeout(g[t]), delete g[t];
-                                let n = _.default.getMessage(e.channel_id, e.id),
-                                    {
-                                        attachmentIds: i,
-                                        embedIds: a
-                                    } = D(n);
-                                if (null != n && (i.length > 0 || a.length > 0)) {
-                                    r.default.dispatch({
-                                        type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
-                                        messageId: n.id,
-                                        channelId: n.channel_id
-                                    }), (0, T.trackScanningTimedOut)({
-                                        channelId: n.channel_id,
-                                        messageId: n.id,
-                                        embedIds: a,
-                                        attachmentIds: i
-                                    });
-                                    return
-                                }
-                                let l = C.default.getMessage(e.id, e.channel_id),
-                                    {
-                                        attachmentIds: s,
-                                        embedIds: u
-                                    } = D(l);
-                                if (null != l && (s.length > 0 || u.length > 0)) {
-                                    r.default.dispatch({
-                                        type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
-                                        messageId: l.id,
-                                        channelId: l.channel_id
-                                    }), (0, T.trackScanningTimedOut)({
-                                        channelId: l.channel_id,
-                                        messageId: l.id,
-                                        embedIds: a,
-                                        attachmentIds: i
-                                    });
-                                    return
-                                }
-                                let d = o.default.getMessage(e.channel_id, e.id),
-                                    {
-                                        attachmentIds: c,
-                                        embedIds: E
-                                    } = D(d.message);
-                                if (null != d.message && d.state === o.ReferencedMessageState.LOADED && (c.length > 0 || E.length > 0)) {
-                                    r.default.dispatch({
-                                        type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
-                                        messageId: d.message.id,
-                                        channelId: d.message.channel_id
-                                    }), (0, T.trackScanningTimedOut)({
-                                        channelId: d.message.channel_id,
-                                        messageId: d.message.id,
-                                        embedIds: a,
-                                        attachmentIds: i
-                                    });
-                                    return
-                                }
-                            })
+                e.forEach(e => {
+                    let t = A(e);
+                    g[t] = setTimeout(() => {
+                        null != g[t] && ! function(e) {
+                            let t = A(e);
+                            clearTimeout(g[t]), delete g[t];
+                            let n = _.default.getMessage(e.channel_id, e.id),
+                                {
+                                    attachmentIds: i,
+                                    embedIds: a
+                                } = D(n);
+                            if (null != n && (i.length > 0 || a.length > 0)) {
+                                r.default.dispatch({
+                                    type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
+                                    messageId: n.id,
+                                    channelId: n.channel_id
+                                }), (0, T.trackScanningTimedOut)({
+                                    channelId: n.channel_id,
+                                    messageId: n.id,
+                                    embedIds: a,
+                                    attachmentIds: i
+                                });
+                                return
+                            }
+                            let l = C.default.getMessage(e.id, e.channel_id),
+                                {
+                                    attachmentIds: s,
+                                    embedIds: u
+                                } = D(l);
+                            if (null != l && (s.length > 0 || u.length > 0)) {
+                                r.default.dispatch({
+                                    type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
+                                    messageId: l.id,
+                                    channelId: l.channel_id
+                                }), (0, T.trackScanningTimedOut)({
+                                    channelId: l.channel_id,
+                                    messageId: l.id,
+                                    embedIds: a,
+                                    attachmentIds: i
+                                });
+                                return
+                            }
+                            let d = o.default.getMessage(e.channel_id, e.id),
+                                {
+                                    attachmentIds: c,
+                                    embedIds: E
+                                } = D(d.message);
+                            if (null != d.message && d.state === o.ReferencedMessageState.LOADED && (c.length > 0 || E.length > 0)) {
+                                r.default.dispatch({
+                                    type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
+                                    messageId: d.message.id,
+                                    channelId: d.message.channel_id
+                                }), (0, T.trackScanningTimedOut)({
+                                    channelId: d.message.channel_id,
+                                    messageId: d.message.id,
+                                    embedIds: a,
+                                    attachmentIds: i
+                                });
+                            }
                         }(e)
                     }, I)
                 });
@@ -33901,4 +33898,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.0c82e8a6ed43f5c2cd78.js.map
+//# sourceMappingURL=67615.409ef1981b8a43b1e5eb.js.map

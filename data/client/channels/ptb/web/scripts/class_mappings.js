@@ -20485,6 +20485,14 @@
                 nitroIcon: "nitroIcon_bd3594"
             }
         },
+        659972: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                icon: "icon__3a061",
+                iconContainer: "iconContainer_e97d42",
+                text: "text_f933cd"
+            }
+        },
         265921: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -20585,6 +20593,7 @@
         30126: function(e, t, o) {
             "use strict";
             e.exports = {
+                affinityDescription: "affinityDescription__4a412",
                 button: "button_bbafbd",
                 buttonContainer: "buttonContainer_e04816",
                 container: "container__1e26b",
