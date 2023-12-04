@@ -15014,6 +15014,7 @@
   "COLLECTIBLES_GIFT_CLAIM": "\"Claim gift\"",
   "COLLECTIBLES_SHOP_GIFT_MODAL_SELECT_HEADER": "\"Send a gift\"",
   "COLLECTIBLES_SHOP_GIFT_MODAL_REVIEW_HEADER": "\"Review your gift\"",
+  "COLLECTIBLES_GIFT_CODE_MODAL_UPSELL": "\"You can also send gifts to your friends from the Shop! $[Check it out](checkItOut).\"",
   "MOBILE_TIME_REMAINING_DAYS": "\"{days} days remaining\"",
   "MOBILE_TIME_REMAINING_HOURS_MINUTES_SECONDS": "\"{hours}:{minutes}:{seconds} remaining\"",
   "DIRECTORY_CATEGORY_TOWN_HALL_1": "\"Staff Picks\"",
