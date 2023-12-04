@@ -10917,6 +10917,8 @@
   "FRIEND_FINDER_PEOPLE_YOU_MAY_KNOW_HEADER_NEW_USER": "\"People you may know — {count}\"",
   "FRIEND_FINDER_SEARCH_ROW_NOT_FOUND": "\"No exact username matches found\"",
   "FRIEND_FINDER_SHOW_ALL": "\"Show All ({count})\"",
+  "FRIEND_FINDER_HIDE_CONTACTS_FROM_NOTIFICATIONS_TITLE": "\"Hide Contacts\"",
+  "FRIEND_FINDER_HIDE_CONTACTS_FROM_NOTIFICATIONS_BODY": "\"Are you sure you want to hide this section? You will no longer see your contacts in Notifications.\"",
   "CONTACT_SYNC_TITLE": "\"Find your friends\"",
   "CONTACT_SYNC_LANDING_TITLE": "\"Find your friends\"",
   "CONTACT_SYNC_LANDING_SUBTITLE_REDESIGN": "\"Let's see which of your contacts is already on Discord!\"",
