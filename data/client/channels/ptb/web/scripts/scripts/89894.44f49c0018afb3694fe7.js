@@ -94,7 +94,7 @@
                             newPassword: p,
                             discriminator: f
                         } = e, {
-                            close: O
+                            close: h
                         } = t;
                         return (0, d.default)(e => {
                             let t = {
@@ -146,7 +146,7 @@
                             }), null != _ && null != p && i.default.dispatch({
                                 type: "PASSWORD_UPDATED",
                                 userId: t.id
-                            }), O ? this.close() : this.submitComplete(), e
+                            }), h ? this.close() : this.submitComplete(), e
                         }, e => (i.default.dispatch({
                             type: "USER_SETTINGS_MODAL_SUBMIT_FAILURE",
                             errors: e.body
@@ -175,16 +175,16 @@
                 } = e;
                 return (0, l.jsx)("svg", {
                     ...(0, i.default)(s),
+                    xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
-                    viewBox: "0 0 24 24",
                     fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 24 24",
                     children: (0, l.jsx)("path", {
-                        fillRule: "evenodd",
-                        clipRule: "evenodd",
-                        d: "M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM18.8426 17.8466C20.1877 16.2738 21 14.2318 21 12C21 8.08134 18.4956 4.74763 15 3.51212V4C15 5.65685 13.6569 7 12 7H11.2308C11.1033 7 11 7.10332 11 7.23077C11 8.76017 9.76017 10 8.23077 10C8.10332 10 8 10.1033 8 10.2308V11.75C8 11.8881 8.11193 12 8.25 12H13C14.6569 12 16 13.3431 16 15V15.7692C16 15.8967 16.1033 16 16.2308 16C17.4367 16 18.4625 16.7708 18.8426 17.8466ZM3.18342 10.1834C3.06316 10.7702 3 11.3777 3 12C3 16.6326 6.50005 20.4476 11 20.9451V18.2308C11 18.1033 10.8967 18 10.7692 18H10.1213C8.94975 18 8 17.0503 8 15.8787C8 15.3161 7.7765 14.7765 7.37868 14.3787L3.18342 10.1834Z",
                         fill: "string" == typeof u ? u : u.css,
+                        fillRule: "evenodd",
+                        d: "M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0Zm-4.16 5.85A9 9 0 0 0 15 3.52V4a3 3 0 0 1-3 3h-.77c-.13 0-.23.1-.23.23A2.77 2.77 0 0 1 8.23 10c-.13 0-.23.1-.23.23v1.52c0 .14.11.25.25.25H13a3 3 0 0 1 3 3v.77c0 .13.1.23.23.23 1.2 0 2.23.77 2.61 1.85ZM3.18 10.18A9 9 0 0 0 11 20.94v-2.7c0-.14-.1-.24-.23-.24h-.65A2.12 2.12 0 0 1 8 15.88c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z",
+                        clipRule: "evenodd",
                         className: r
                     })
                 })
@@ -300,7 +300,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return A
+                    return C
                 }
             }), n("222007"), n("70102");
             var l = n("627445"),
@@ -318,13 +318,13 @@
             let T = {},
                 p = {},
                 f = {},
-                O = {},
                 h = {},
-                C = new Set,
-                R = () => N.emitChange(),
-                I = u.debounce(R, 150);
+                O = {},
+                R = new Set,
+                I = () => N.emitChange(),
+                U = u.debounce(I, 150);
 
-            function U(e) {
+            function v(e) {
                 let t = f[e];
                 null != t && !t.closed && (T[e] = {
                     x: t.screenX,
@@ -337,15 +337,15 @@
 
             function P(e) {
                 let t = f[e];
-                null != t && (!t.closed && U(e), t.close(), ! function(e) {
+                null != t && (!t.closed && v(e), t.close(), ! function(e) {
                     let t = f[e];
-                    o(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", R), t.removeEventListener("blur", R), t.removeEventListener("resize", I);
-                    let n = O[e];
-                    o(null != n, "Window root was null while unmounting"), n.unmount(), delete f[e], delete p[e], delete h[e], delete O[e]
+                    o(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", I), t.removeEventListener("blur", I), t.removeEventListener("resize", U);
+                    let n = h[e];
+                    o(null != n, "Window root was null while unmounting"), n.unmount(), delete f[e], delete p[e], delete O[e], delete h[e]
                 }(e), N.emitChange())
             }
 
-            function v(e) {
+            function g(e) {
                 let {
                     data: t
                 } = e;
@@ -354,15 +354,15 @@
                 if (null != n.key) switch (n.type) {
                     case _.PopoutEventTypes.LOADED:
                         var l;
-                        return l = n.key, void(C.has(l) && (! function(e) {
+                        return l = n.key, void(R.has(l) && (! function(e) {
                             let t = f[e],
-                                n = h[e];
+                                n = O[e];
                             if (null == t) {
                                 new(0, d.default)("PopoutWindowStore").warn("Failed to open window", e);
                                 return
                             }
                             let l = t.document;
-                            (0, E.subscribeDocumentToFullScreenChange)(l, R), t.addEventListener("focus", R), t.addEventListener("blur", R), t.addEventListener("resize", I), ! function(e, t) {
+                            (0, E.subscribeDocumentToFullScreenChange)(l, I), t.addEventListener("focus", I), t.addEventListener("blur", I), t.addEventListener("resize", U), ! function(e, t) {
                                 let n = t.document,
                                     l = document.querySelectorAll('link[rel="stylesheet"]'),
                                     i = "".concat(window.location.protocol, "//").concat(window.location.host);
@@ -373,14 +373,14 @@
                                 }
                             }(0, t);
                             let i = (0, r.createRoot)(l.getElementById("app-mount"));
-                            o(null != i, "No render target for popout!"), O[e] = i, i.render(n(e))
-                        }(l), C.delete(l), N.emitChange()));
+                            o(null != i, "No render target for popout!"), h[e] = i, i.render(n(e))
+                        }(l), R.delete(l), N.emitChange()));
                     case _.PopoutEventTypes.UNLOADED:
                         return P(n.key)
                 }
             }
 
-            function g() {
+            function A() {
                 for (let e of Object.keys(f)) {
                     let t = f[e];
                     null != t && t.close()
@@ -388,7 +388,7 @@
             }
             class m extends s.default.PersistedStore {
                 initialize(e) {
-                    window.addEventListener("message", v), window.addEventListener("beforeunload", g), T = null != e ? e : {}
+                    window.addEventListener("message", g), window.addEventListener("beforeunload", A), T = null != e ? e : {}
                 }
                 getWindow(e) {
                     return f[e]
@@ -451,7 +451,7 @@
                             ...a
                         }
                     }
-                    let O = window.open(_.Routes.POPOUT_WINDOW, t, function(e) {
+                    let h = window.open(_.Routes.POPOUT_WINDOW, t, function(e) {
                         let t = "";
                         for (let n of Object.keys(e)) {
                             let l = e[n];
@@ -459,13 +459,13 @@
                         }
                         return t
                     }(a));
-                    O.windowKey = t, null == O || O.focus(), f[t] = O, h[t] = l, c.isPlatformEmbedded && (S.default.setAlwaysOnTop(t, d), p[t] = d, S.default.isAlwaysOnTop(t).then(e => p[t] = e)), C.add(t)
+                    h.windowKey = t, null == h || h.focus(), f[t] = h, O[t] = l, c.isPlatformEmbedded && (S.default.setAlwaysOnTop(t, d), p[t] = d, S.default.isAlwaysOnTop(t).then(e => p[t] = e)), R.add(t)
                 },
                 POPOUT_WINDOW_CLOSE: function(e) {
                     let {
                         key: t
                     } = e, n = f[t];
-                    null != n && !n.closed && (U(t), n.close())
+                    null != n && !n.closed && (v(t), n.close())
                 },
                 POPOUT_WINDOW_SET_ALWAYS_ON_TOP: function(e) {
                     let {
@@ -474,9 +474,9 @@
                     } = e;
                     c.isPlatformEmbedded && (S.default.setAlwaysOnTop(t, n), p[t] = n, S.default.isAlwaysOnTop(t).then(e => p[t] = e))
                 },
-                LOGOUT: g
+                LOGOUT: A
             });
-            var A = N
+            var C = N
         },
         191349: function(e, t, n) {
             "use strict";
@@ -524,7 +524,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return A
+                    return C
                 }
             });
             var l = n("917351"),
@@ -542,19 +542,19 @@
                 T = null,
                 p = null,
                 f = !1,
-                O = !1,
-                h = null,
-                C = null,
+                h = !1,
+                O = null,
                 R = null,
-                I = [],
-                U = null,
+                I = null,
+                U = [],
+                v = null,
                 P = null;
 
-            function v(e) {
+            function g(e) {
                 var t, n, l, o, i, u;
                 let d = r.default.getCurrentUser();
-                if (null == d) return g();
-                c = null !== (t = e.section) && void 0 !== t ? t : c, U = null !== (n = e.section) && void 0 !== n ? n : c, null != e.subsection && null != c && (S[c] = e.subsection), null != e.scrollPosition && null != c && (E[c] = e.scrollPosition), O = !!e.openWithoutBackstack, a = s.FormStates.OPEN, _ = {}, p = {
+                if (null == d) return A();
+                c = null !== (t = e.section) && void 0 !== t ? t : c, v = null !== (n = e.section) && void 0 !== n ? n : c, null != e.subsection && null != c && (S[c] = e.subsection), null != e.scrollPosition && null != c && (E[c] = e.scrollPosition), h = !!e.openWithoutBackstack, a = s.FormStates.OPEN, _ = {}, p = {
                     ...T = {
                         [s.UserSettingsSections.ACCOUNT]: {
                             userId: d.id,
@@ -567,11 +567,11 @@
                             claimed: d.isClaimed()
                         }
                     }
-                }, C = null !== (l = e.onClose) && void 0 !== l ? l : null, R = null !== (o = e.analyticsLocation) && void 0 !== o ? o : null, I = null !== (i = e.analyticsLocations) && void 0 !== i ? i : [], P = null !== (u = e.impressionSource) && void 0 !== u ? u : null
+                }, R = null !== (l = e.onClose) && void 0 !== l ? l : null, I = null !== (o = e.analyticsLocation) && void 0 !== o ? o : null, U = null !== (i = e.analyticsLocations) && void 0 !== i ? i : [], P = null !== (u = e.impressionSource) && void 0 !== u ? u : null
             }
 
-            function g() {
-                a = s.FormStates.CLOSED, f = !1, T = null, U = null, p = null, d = null, c = null, S = {}, E = {}, C = null, R = null, I = [], P = null
+            function A() {
+                a = s.FormStates.CLOSED, f = !1, T = null, v = null, p = null, d = null, c = null, S = {}, E = {}, R = null, I = null, U = [], P = null
             }
 
             function m() {
@@ -582,7 +582,7 @@
                     this.waitFor(r.default)
                 }
                 hasChanges() {
-                    return null != p && null != T && (!!this.isOpen() || h === s.DrawerTabTypes.USER_SETTINGS) && !o.isEqual(p, T)
+                    return null != p && null != T && (!!this.isOpen() || O === s.DrawerTabTypes.USER_SETTINGS) && !o.isEqual(p, T)
                 }
                 isOpen() {
                     return f
@@ -600,7 +600,7 @@
                     return null != c ? E[c] : null
                 }
                 shouldOpenWithoutBackstack() {
-                    return O
+                    return h
                 }
                 getProps() {
                     return {
@@ -611,25 +611,25 @@
                         settings: p,
                         errors: _,
                         hasChanges: this.hasChanges(),
-                        openWithoutBackstack: O,
-                        analyticsLocation: R,
-                        analyticsLocations: I,
-                        initialSection: U,
+                        openWithoutBackstack: h,
+                        analyticsLocation: I,
+                        analyticsLocations: U,
+                        initialSection: v,
                         impressionSource: P
                     }
                 }
                 get onClose() {
-                    return C
+                    return R
                 }
             }
             N.displayName = "UserSettingsModalStore";
-            var A = new N(u.default, {
+            var C = new N(u.default, {
                 USER_SETTINGS_MODAL_OPEN: function(e) {
-                    f = !0, v(e)
+                    f = !0, g(e)
                 },
-                USER_SETTINGS_MODAL_INIT: v,
-                USER_SETTINGS_MODAL_CLOSE: g,
-                LOGOUT: g,
+                USER_SETTINGS_MODAL_INIT: g,
+                USER_SETTINGS_MODAL_CLOSE: A,
+                LOGOUT: A,
                 USER_SETTINGS_MODAL_SUBMIT: function() {
                     a = s.FormStates.SUBMITTING
                 },
@@ -640,7 +640,7 @@
                 },
                 USER_SETTINGS_MODAL_SET_SECTION: function(e) {
                     var t;
-                    d = c, c = e.section, R = null, I = null !== (t = e.analyticsLocations) && void 0 !== t ? t : [], null != e.subsection && (S[c] = e.subsection)
+                    d = c, c = e.section, I = null, U = null !== (t = e.analyticsLocations) && void 0 !== t ? t : [], null != e.subsection && (S[c] = e.subsection)
                 },
                 USER_SETTINGS_MODAL_CLEAR_SUBSECTION: function(e) {
                     let {
@@ -684,7 +684,7 @@
                     })
                 },
                 DRAWER_SELECT_TAB: function(e) {
-                    return h = e.tab, null == c && h === s.DrawerTabTypes.USER_SETTINGS && v({
+                    return O = e.tab, null == c && O === s.DrawerTabTypes.USER_SETTINGS && g({
                         type: "USER_SETTINGS_MODAL_INIT",
                         section: null,
                         subsection: null,
@@ -696,4 +696,4 @@
         }
     }
 ]);
-//# sourceMappingURL=89894.42fbeac85a824b63dae7.js.map
+//# sourceMappingURL=89894.44f49c0018afb3694fe7.js.map

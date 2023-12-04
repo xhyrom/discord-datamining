@@ -21,16 +21,16 @@
                 } = t;
                 return (0, n.jsx)("svg", {
                     ...(0, r.default)(u),
+                    xmlns: "http://www.w3.org/2000/svg",
                     width: e,
                     height: l,
-                    viewBox: "0 0 24 24",
                     fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 24 24",
                     children: (0, n.jsx)("path", {
-                        fillRule: "evenodd",
-                        clipRule: "evenodd",
-                        d: "M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM6.5 13C7.32843 13 8 12.3284 8 11.5C8 10.6716 7.32843 10 6.5 10C5.67157 10 5 10.6716 5 11.5C5 12.3284 5.67157 13 6.5 13ZM17.5 13C18.3284 13 19 12.3284 19 11.5C19 10.6716 18.3284 10 17.5 10C16.6716 10 16 10.6716 16 11.5C16 12.3284 16.6716 13 17.5 13ZM7.70147 14.169C8.16042 13.8618 8.78152 13.9848 9.08874 14.4438C9.7183 15.3843 10.7874 16 11.9999 16C13.2125 16 14.2816 15.3843 14.9111 14.4438C15.2184 13.9848 15.8395 13.8618 16.2984 14.169C16.7574 14.4762 16.8804 15.0973 16.5732 15.5563C15.5882 17.0277 13.9078 18 11.9999 18C10.0921 18 8.4117 17.0277 7.42673 15.5563C7.11951 15.0973 7.24252 14.4762 7.70147 14.169Z",
                         fill: "string" == typeof i ? i : i.css,
+                        fillRule: "evenodd",
+                        d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22ZM6.5 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-9.8 1.17a1 1 0 0 1 1.39.27 3.5 3.5 0 0 0 5.82 0 1 1 0 0 1 1.66 1.12 5.5 5.5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z",
+                        clipRule: "evenodd",
                         className: s
                     })
                 })
@@ -55,22 +55,18 @@
                     colorClass: s = "",
                     ...u
                 } = t;
-                return (0, n.jsxs)("svg", {
+                return (0, n.jsx)("svg", {
                     ...(0, r.default)(u),
+                    xmlns: "http://www.w3.org/2000/svg",
                     width: e,
                     height: l,
-                    viewBox: "0 0 24 24",
                     fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    children: [(0, n.jsx)("path", {
-                        d: "M13 16V5.41421L16.2929 8.70711C16.6834 9.09763 17.3166 9.09763 17.7071 8.70711C18.0976 8.31658 18.0976 7.68342 17.7071 7.29289L12.7078 2.29361L12.7005 2.2864C12.5201 2.10925 12.2728 2 12 2C11.8644 2 11.7351 2.02699 11.6172 2.07588C11.502 2.12357 11.3938 2.19374 11.2995 2.2864L11.2922 2.29361L6.29289 7.29289C5.90237 7.68342 5.90237 8.31658 6.29289 8.70711C6.68342 9.09763 7.31658 9.09763 7.70711 8.70711L11 5.41421V16C11 16.5523 11.4477 17 12 17C12.5523 17 13 16.5523 13 16Z",
+                    viewBox: "0 0 24 24",
+                    children: (0, n.jsx)("path", {
                         fill: "string" == typeof i ? i : i.css,
+                        d: "M13 16V5.41l3.3 3.3a1 1 0 1 0 1.4-1.42l-5-5a1 1 0 0 0-1.4 0l-5 5a1 1 0 0 0 1.4 1.42L11 5.4V16a1 1 0 1 0 2 0ZM3 20a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3Z",
                         className: s
-                    }), (0, n.jsx)("path", {
-                        d: "M3 20C2.44772 20 2 20.4477 2 21C2 21.5523 2.44772 22 3 22H21C21.5523 22 22 21.5523 22 21C22 20.4477 21.5523 20 21 20H3Z",
-                        fill: "string" == typeof i ? i : i.css,
-                        className: s
-                    })]
+                    })
                 })
             }
         },
@@ -81,7 +77,7 @@
                     return c
                 },
                 default: function() {
-                    return C
+                    return f
                 }
             });
             var n = l("37983");
@@ -111,7 +107,7 @@
                 })
             }
 
-            function C(t) {
+            function f(t) {
                 let {
                     className: e,
                     forceUseColorForSparkles: l = !1,
@@ -185,8 +181,8 @@
                 o = l("685665"),
                 d = l("181114"),
                 c = l("427459"),
-                C = l("954296"),
-                f = l("49111"),
+                f = l("954296"),
+                C = l("49111"),
                 p = l("782340"),
                 _ = l("500924"),
                 M = t => {
@@ -196,25 +192,25 @@
                         guild: r,
                         buttonText: M,
                         targetBoostedGuildTier: h,
-                        onClose: L = () => {},
-                        closeLayer: m = () => {},
-                        pauseAnimation: I = !1,
+                        onClose: m = () => {},
+                        closeLayer: I = () => {},
+                        pauseAnimation: L = !1,
                         applicationId: S,
                         handleSubscribeModalClose: T,
-                        withHighlight: g = !1,
-                        ...E
+                        withHighlight: E = !1,
+                        ...g
                     } = t, {
                         analyticsLocations: A
-                    } = (0, o.default)(), R = (0, u.useAppContext)(), y = R === f.AppContext.POPOUT, [v, P] = a.useState(!1), w = null != h ? Math.max((0, c.getNumberOfAppliedBoostsNeededForTier)(r, h), 1) : 1, x = (0, c.generateBlockGuildSubscriptionPurchasesNode)(), N = async () => {
-                        P(!0), await (0, C.addAppliedGuildBoosts)({
+                    } = (0, o.default)(), R = (0, u.useAppContext)(), v = R === C.AppContext.POPOUT, [y, P] = a.useState(!1), w = null != h ? Math.max((0, c.getNumberOfAppliedBoostsNeededForTier)(r, h), 1) : 1, x = (0, c.generateBlockGuildSubscriptionPurchasesNode)(), N = async () => {
+                        P(!0), await (0, f.addAppliedGuildBoosts)({
                             analyticsLocations: A,
                             analyticsLocation: e,
                             analyticsSourceLocation: l,
                             guild: r,
                             numberOfBoostsToAdd: w,
-                            onClose: L,
-                            closeLayer: m,
-                            inPopout: y,
+                            onClose: m,
+                            closeLayer: I,
+                            inPopout: v,
                             applicationId: S,
                             handleSubscribeModalClose: T
                         }), P(!1)
@@ -226,19 +222,19 @@
                             ...t,
                             disabled: !0,
                             size: s.Button.Sizes.SMALL,
-                            pauseAnimation: I,
-                            ...E,
+                            pauseAnimation: L,
+                            ...g,
                             children: null != M ? M : p.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_SUBSCRIBE_THIS_SERVER
                         })
                     }) : (0, n.jsx)(d.default, {
                         size: s.Button.Sizes.SMALL,
-                        ...E,
-                        className: i(E.className, {
-                            [_.buttonHighlighted]: g
+                        ...g,
+                        className: i(g.className, {
+                            [_.buttonHighlighted]: E
                         }),
-                        submitting: v,
+                        submitting: y,
                         onClick: N,
-                        pauseAnimation: I,
+                        pauseAnimation: L,
                         children: null != M ? M : p.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_SUBSCRIBE_THIS_SERVER
                     })
                 }
@@ -260,8 +256,8 @@
                 o = l("625634"),
                 d = l("10514"),
                 c = l("599110"),
-                C = l("427459"),
-                f = l("163732"),
+                f = l("427459"),
+                C = l("163732"),
                 p = l("49111");
             async function _(t) {
                 let {
@@ -269,17 +265,17 @@
                     analyticsLocation: _,
                     analyticsSourceLocation: M,
                     numberOfBoostsToAdd: h,
-                    onClose: L,
-                    closeLayer: m,
-                    onSubscriptionConfirmation: I,
+                    onClose: m,
+                    closeLayer: I,
+                    onSubscriptionConfirmation: L,
                     guild: S,
                     handleSubscribeModalClose: T,
-                    disablePremiumUpsell: g,
-                    inPopout: E,
+                    disablePremiumUpsell: E,
+                    inPopout: g,
                     applicationId: A
-                } = t, R = E ? a.POPOUT_MODAL_CONTEXT : a.DEFAULT_MODAL_CONTEXT, y = u.default.getCurrentUser();
-                if (null == y) return;
-                if (!y.verified) {
+                } = t, R = g ? a.POPOUT_MODAL_CONTEXT : a.DEFAULT_MODAL_CONTEXT, v = u.default.getCurrentUser();
+                if (null == v) return;
+                if (!v.verified) {
                     (0, a.openModalLazy)(async () => {
                         let {
                             default: t
@@ -299,12 +295,12 @@
                     });
                     return
                 }
-                let v = [];
-                !d.default.isLoadedForPremiumSKUs() && v.push((0, s.fetchPremiumSubscriptionPlans)()), !o.default.hasFetched && (v.push(r.fetchSubscriptions()), v.push((0, i.fetchGuildBoostSlots)())), v.length > 0 && await Promise.allSettled(v);
-                let P = (0, C.getAvailableGuildBoostSlots)(o.default.boostSlots),
+                let y = [];
+                !d.default.isLoadedForPremiumSKUs() && y.push((0, s.fetchPremiumSubscriptionPlans)()), !o.default.hasFetched && (y.push(r.fetchSubscriptions()), y.push((0, i.fetchGuildBoostSlots)())), y.length > 0 && await Promise.allSettled(y);
+                let P = (0, f.getAvailableGuildBoostSlots)(o.default.boostSlots),
                     w = P.length,
                     x = t => {
-                        null == L || L(), null == T || T(t)
+                        null == m || m(), null == T || T(t)
                     };
                 if (w > 0 && (null == h || w >= h)) {
                     let t;
@@ -334,22 +330,22 @@
                         },
                         contextKey: R
                     })
-                } else(0, f.default)({
+                } else(0, C.default)({
                     analyticsLocations: e,
                     analyticsLocation: _,
                     analyticsSourceLocation: M,
                     guildId: S.id,
                     closeLayer: () => {
-                        null == L || L(), null == m || m(), c.default.track(p.AnalyticEvents.MODAL_DISMISSED, {
+                        null == m || m(), null == I || I(), c.default.track(p.AnalyticEvents.MODAL_DISMISSED, {
                             type: p.AnalyticsPages.PREMIUM_GUILD_USER_MODAL,
                             location_section: _.section
                         })
                     },
                     totalNumberOfSlotsToAssign: null != h ? h : 1,
                     onCloseModal: x,
-                    disablePremiumUpsell: g,
-                    onSubscriptionConfirmation: I,
-                    inPopout: E,
+                    disablePremiumUpsell: E,
+                    onSubscriptionConfirmation: L,
+                    inPopout: g,
                     applicationId: A
                 })
             }
@@ -358,7 +354,7 @@
             "use strict";
             l.r(e), l.d(e, {
                 default: function() {
-                    return f
+                    return C
                 }
             }), l("222007");
             var n = l("37983");
@@ -371,29 +367,29 @@
                 o = l("599110"),
                 d = l("719923"),
                 c = l("49111"),
-                C = l("782340");
-            async function f(t) {
+                f = l("782340");
+            async function C(t) {
                 let {
                     analyticsLocations: e,
-                    analyticsLocation: f,
+                    analyticsLocation: C,
                     analyticsSourceLocation: p,
                     guildId: _,
                     closeLayer: M,
                     onCloseModal: h,
-                    totalNumberOfSlotsToAssign: L = 1,
-                    disablePremiumUpsell: m,
-                    onSubscriptionConfirmation: I,
+                    totalNumberOfSlotsToAssign: m = 1,
+                    disablePremiumUpsell: I,
+                    onSubscriptionConfirmation: L,
                     inPopout: S,
                     applicationId: T
-                } = t, g = S ? a.POPOUT_MODAL_CONTEXT : a.DEFAULT_MODAL_CONTEXT, E = u.default.getPremiumTypeSubscription();
-                if (null != E && E.isPurchasedExternally && null != E.paymentGateway) {
+                } = t, E = S ? a.POPOUT_MODAL_CONTEXT : a.DEFAULT_MODAL_CONTEXT, g = u.default.getPremiumTypeSubscription();
+                if (null != g && g.isPurchasedExternally && null != g.paymentGateway) {
                     null != M && M(), r.default.show({
-                        title: C.default.Messages.BILLING_MANAGED_BY_PAYMENT_GATEWAY.format({
-                            paymentGatewayName: c.PaymentGatewayToFriendlyName[E.paymentGateway]
+                        title: f.default.Messages.BILLING_MANAGED_BY_PAYMENT_GATEWAY.format({
+                            paymentGatewayName: c.PaymentGatewayToFriendlyName[g.paymentGateway]
                         }),
-                        body: C.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_UPGRADE_TO_PREMIUM_EXTERNAL_ERROR.format({
-                            paymentGatewayName: c.PaymentGatewayToFriendlyName[E.paymentGateway],
-                            subscriptionManagementLink: (0, d.getExternalSubscriptionMethodUrl)(E.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
+                        body: f.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_UPGRADE_TO_PREMIUM_EXTERNAL_ERROR.format({
+                            paymentGatewayName: c.PaymentGatewayToFriendlyName[g.paymentGateway],
+                            subscriptionManagementLink: (0, d.getExternalSubscriptionMethodUrl)(g.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
                         })
                     });
                     return
@@ -414,13 +410,13 @@
                                 r(), null == h || h(t)
                             },
                             analyticsLocations: e,
-                            analyticsLocation: f,
-                            analyticsSourceLocation: null != p ? p : f,
+                            analyticsLocation: C,
+                            analyticsSourceLocation: null != p ? p : C,
                             guildId: _,
-                            totalNumberOfSlotsToAssign: L,
+                            totalNumberOfSlotsToAssign: m,
                             closeGuildPerksModal: M,
-                            disablePremiumUpsell: m,
-                            onSubscriptionConfirmation: I,
+                            disablePremiumUpsell: I,
+                            onSubscriptionConfirmation: L,
                             applicationId: T
                         })
                     }
@@ -428,13 +424,13 @@
                     onCloseCallback: () => {
                         o.default.track(c.AnalyticEvents.MODAL_DISMISSED, {
                             type: c.AnalyticsSections.PREMIUM_GUILD_PURCHASE_MODAL,
-                            location: f
+                            location: C
                         })
                     },
                     onCloseRequest: () => {
                         null != A && (0, a.closeModal)(A), null == h || h(!1)
                     },
-                    contextKey: g
+                    contextKey: E
                 })
             }
         },
@@ -547,4 +543,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27057.deae7e48af1346e56b16.js.map
+//# sourceMappingURL=27057.ee8f9d6f6f76cab31011.js.map
