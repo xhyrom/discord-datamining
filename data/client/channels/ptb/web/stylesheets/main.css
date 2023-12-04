@@ -19464,8 +19464,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83326,7 +83326,8 @@ input::-webkit-inner-spin-button {
 }
 
 .hiddenWumpusEnabled__72e7a {
-    animation-name: easterEggAnimationReverse_ff37f4
+    animation-name: easterEggAnimationReverse_ff37f4;
+    animation-duration: .5s
 }
 
 @media(max-width:1124px) {
@@ -124004,4 +124005,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.bb50f5c0bc0a6bca14a1.css.map*/
+/*# sourceMappingURL=app.2e2ed65b936f096b007e.css.map*/
