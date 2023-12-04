@@ -74068,455 +74068,6 @@ input::-webkit-inner-spin-button {
     background-color: transparent
 }
 
-.alternativeSkus__21ba4 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -4px
-}
-
-.alternativeSku_d53cbd {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 8px;
-    font-size: 12px;
-    line-height: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 4px 4px 0 0
-}
-
-.selectedIcon_dad6e0 {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-    flex-shrink: 0
-}
-
-.theme-dark .alternativeSku_d53cbd,
-.theme-light .alternativeSku_d53cbd {
-    color: var(--white-500)
-}
-
-.theme-dark .alternativeSkuSelected__35d70,
-.theme-light .alternativeSkuSelected__35d70 {
-    background-color: var(--brand-experiment)
-}
-
-.theme-dark .alternativeSkuDefault_cb466a,
-.theme-light .alternativeSkuDefault_cb466a {
-    background-color: var(--primary-500)
-}
-
-.theme-dark .alternativeSkuDefault_cb466a:hover,
-.theme-light .alternativeSkuDefault_cb466a:hover {
-    background-color: var(--primary-660)
-}
-
-.info__087e0 {
-    margin-left: 5px
-}
-
-.details_b84485 {
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    user-select: text;
-    font-size: 15px;
-    font-weight: 500
-}
-
-.row__7bad4 {
-    margin-top: 8px;
-    line-height: 1.2
-}
-
-.theme-light h3.contentHeader_ffdcab {
-    color: var(--primary-200)
-}
-
-.theme-light .label__8394d,
-.theme-dark .label__8394d {
-    color: var(--primary-400)
-}
-
-.theme-light .info__087e0,
-.theme-dark .info__087e0 {
-    color: var(--primary-200)
-}
-
-.warning__077d4 {
-    padding: 20px;
-    border-radius: 3px;
-    border: 1px solid
-}
-
-.warning__077d4:not(:first-child) {
-    margin-top: 20px
-}
-
-.title__30974 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2
-}
-
-.description__6acfd {
-    font-size: 15px;
-    line-height: 1.33;
-    color: var(--primary-300);
-    margin-top: 8px
-}
-
-.description__6acfd .link__1ef3a,
-.description__6acfd a {
-    color: var(--text-link)
-}
-
-.description__6acfd .link__1ef3a:hover,
-.description__6acfd a:hover {
-    -webkit-text-decoration: underline;
-    text-decoration: underline
-}
-
-.theme-dark .red__680c7,
-.theme-light .red__680c7 {
-    border-color: var(--status-danger)
-}
-
-.theme-dark .red__680c7 .title__30974,
-.theme-light .red__680c7 .title__30974 {
-    color: var(--status-danger)
-}
-
-.theme-dark .yellow__4d6f4,
-.theme-light .yellow__4d6f4 {
-    border-color: var(--status-warning)
-}
-
-.theme-dark .yellow__4d6f4 .title__30974,
-.theme-light .yellow__4d6f4 .title__30974 {
-    color: var(--text-warning)
-}
-
-.blurb__41902 {
-    margin-top: 10px;
-    font-size: 16px;
-    line-height: 1.44;
-    text-align: center;
-    max-width: 360px
-}
-
-.divider__8cf9c {
-    width: 100%;
-    height: 1px;
-    margin: 20px 0
-}
-
-.installSelector_b45fd3,
-.storeTerms__1aed4 {
-    width: 100%
-}
-
-.icon__7fde2,
-.header_d454ec,
-.confirmButton_ec2b85,
-.storeTerms__1aed4 {
-    margin-top: 20px
-}
-
-.blurb__41902 {
-    color: var(--header-secondary)
-}
-
-.storeTerms__1aed4,
-.subtext_d97997 {
-    color: var(--channels-default)
-}
-
-.divider__8cf9c {
-    background-color: var(--background-modifier-accent)
-}
-
-.title_a81dd3 {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.14;
-    text-transform: uppercase;
-    padding-top: 20px;
-    margin-bottom: 12px
-}
-
-.title_a81dd3:first-child {
-    padding-top: 0
-}
-
-.sku_e2d34f {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 0;
-    cursor: pointer
-}
-
-.skuNormal__1aa9d {
-    border-bottom: 1px solid transparent
-}
-
-.name__71fd4 {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.24
-}
-
-.price_afc9b2 {
-    font-size: 14px;
-    line-height: 1.71;
-    padding: 2px 8px;
-    margin-left: 20px;
-    border-radius: 3px
-}
-
-.collapseButton_ddd83b {
-    margin-top: 20px
-}
-
-.theme-dark .title_a81dd3,
-.theme-light .title_a81dd3 {
-    color: var(--primary-100)
-}
-
-.theme-dark .skuNormal__1aa9d,
-.theme-light .skuNormal__1aa9d {
-    border-bottom-color: var(--primary-600)
-}
-
-.theme-dark .sku_e2d34f:hover .name__71fd4,
-.theme-light .sku_e2d34f:hover .name__71fd4 {
-    color: var(--primary-100)
-}
-
-.theme-dark .name__71fd4,
-.theme-light .name__71fd4 {
-    color: var(--primary-300)
-}
-
-.theme-dark .price_afc9b2,
-.theme-light .price_afc9b2 {
-    color: var(--primary-100);
-    background-color: var(--primary-500)
-}
-
-.section__2e34f:first-child {
-    border-radius: 3px 3px 0 0
-}
-
-.section__2e34f:last-child {
-    border-radius: 0 0 3px 3px
-}
-
-.header__4798d {
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 3px 3px 0 0
-}
-
-.header__4798d+.bodySection_ae0d90 {
-    border-top: none
-}
-
-.entitledHeader__408e5 {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    cursor: pointer
-}
-
-.entitledHeaderIcon_e1c7f3 {
-    margin-right: 10px
-}
-
-.exclusiveHeader_ef7e35 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px
-}
-
-.exclusiveHeaderExclusive_a84987 {
-    font-size: 8px;
-    font-weight: 500;
-    text-transform: uppercase
-}
-
-.exclusiveHeaderIcon_da4034 {
-    width: auto;
-    height: 24px
-}
-
-.premiumHeader__2fb80 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px
-}
-
-.premiumHeaderIcon__5a80d {
-    width: auto;
-    height: 18px;
-    padding: 4px 2px
-}
-
-.premiumHeaderPrice_a3d92b {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.7;
-    padding: 0 8px;
-    border-radius: 3px
-}
-
-.bodySection_ae0d90 {
-    box-sizing: border-box;
-    padding: 20px;
-    border-top: 1px solid
-}
-
-.bodySection_ae0d90:first-child {
-    border-top: none
-}
-
-.bodySection_ae0d90:empty {
-    padding: 0;
-    border-top: none
-}
-
-.alternativeSkus__0f1f1 {
-    margin: 10px 0
-}
-
-.countdownSection__4639b {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid
-}
-
-.headerBar_ebd96b {
-    margin-bottom: 4px
-}
-
-.actionText__1ae94 {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    text-transform: uppercase
-}
-
-.countdownHeader_b9f146 {
-    margin-bottom: 8px
-}
-
-.releaseDate__053d2 {
-    margin-top: 12px;
-    font-size: 14px;
-    line-height: 18px
-}
-
-.price_f6c36e {
-    margin-bottom: 16px
-}
-
-.priceRow__12d89 {
-    align-items: center;
-    display: flex
-}
-
-.priceSalePercentage__564c0 {
-    border-radius: 3px;
-    color: var(--white-500);
-    font-size: 16px;
-    background-color: var(--green-360);
-    padding: 4px 6px;
-    margin-left: 10px
-}
-
-.priceOriginalAmount__168a9 {
-    -webkit-text-decoration: line-through;
-    text-decoration: line-through;
-    font-size: 15px;
-    color: var(--primary-300)
-}
-
-.warning__0df85 {
-    margin-top: 20px
-}
-
-.dlcSection__61215 {
-    margin-top: 40px
-}
-
-.purchaseError__33eae {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 8px
-}
-
-.secondaryBuyButton__67210 {
-    margin-top: 8px
-}
-
-.theme-light .entitledHeader__408e5,
-.theme-dark .entitledHeader__408e5 {
-    background-color: var(--primary-500);
-    color: var(--primary-200)
-}
-
-.theme-light .entitledHeader__408e5:hover,
-.theme-dark .entitledHeader__408e5:hover {
-    color: var(--white-500)
-}
-
-.theme-light .purchaseError__33eae,
-.theme-dark .purchaseError__33eae {
-    color: var(--status-danger)
-}
-
-.theme-light .headerFancy__4a1d2,
-.theme-dark .headerFancy__4a1d2 {
-    background-image: url(/assets/dd39b32edbe4bb411793.svg), linear-gradient(to left, var(--premium-tier-1-purple), var(--premium-tier-1-blue));
-    color: var(--white-500)
-}
-
-.theme-light .premiumHeaderPrice_a3d92b,
-.theme-dark .premiumHeaderPrice_a3d92b {
-    color: var(--brand-experiment);
-    background-color: var(--white-500)
-}
-
-.theme-light .bodySection_ae0d90,
-.theme-dark .bodySection_ae0d90 {
-    background-color: var(--primary-700);
-    border-top-color: hsl(var(--primary-630-hsl)/.6)
-}
-
-.theme-light .countdownSection__4639b,
-.theme-dark .countdownSection__4639b {
-    border-bottom-color: var(--primary-600)
-}
-
-.theme-light .actionText__1ae94,
-.theme-dark .actionText__1ae94 {
-    color: var(--primary-200)
-}
-
-.theme-light .price_f6c36e,
-.theme-dark .price_f6c36e {
-    color: var(--primary-100)
-}
-
-.theme-light .releaseDate__053d2,
-.theme-dark .releaseDate__053d2 {
-    color: var(--primary-300)
-}
-
 .recommendationActivity_fdac10 {
     display: flex
 }
@@ -74741,6 +74292,45 @@ input::-webkit-inner-spin-button {
 
 .theme-light .breadcrumb__3c15c:hover {
     color: var(--primary-400)
+}
+
+.blurb__41902 {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.44;
+    text-align: center;
+    max-width: 360px
+}
+
+.divider__8cf9c {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0
+}
+
+.installSelector_b45fd3,
+.storeTerms__1aed4 {
+    width: 100%
+}
+
+.icon__7fde2,
+.header_d454ec,
+.confirmButton_ec2b85,
+.storeTerms__1aed4 {
+    margin-top: 20px
+}
+
+.blurb__41902 {
+    color: var(--header-secondary)
+}
+
+.storeTerms__1aed4,
+.subtext_d97997 {
+    color: var(--channels-default)
+}
+
+.divider__8cf9c {
+    background-color: var(--background-modifier-accent)
 }
 
 .modalSize_d9e04d {
@@ -124414,4 +124004,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.419fcbb553a75122ebc8.css.map*/
+/*# sourceMappingURL=app.bb50f5c0bc0a6bca14a1.css.map*/
