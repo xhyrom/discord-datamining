@@ -19464,8 +19464,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -53284,6 +53284,22 @@ html .progress__4ef76 {
     stop-color: var(--premium-tier-0-header-gradient-5)
 }
 
+.iconContainer_e97d42 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1)50%, rgba(255, 255, 255, 0));
+    height: 50px
+}
+
+.icon__3a061+.icon__3a061 {
+    margin-left: -8px
+}
+
+.text_f933cd {
+    margin-left: 9px
+}
+
 .descriptionContainer__342b3 {
     margin-top: 24px
 }
@@ -53419,6 +53435,11 @@ html .progress__4ef76 {
 .description_c815c5 {
     margin-top: 24px;
     margin-bottom: 32px
+}
+
+.affinityDescription__4a412 {
+    margin-top: 22px;
+    margin-bottom: 35px
 }
 
 .buttonContainer_e04816 {
@@ -124392,4 +124413,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.49b8a65f86965b272d6a.css.map*/
+/*# sourceMappingURL=app.3ad23a559110a79aa917.css.map*/
