@@ -21843,8 +21843,8 @@ h6.title__7a3bb {
 
 .title_cb085d {
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase
 }
 
@@ -21950,8 +21950,8 @@ h6.title__7a3bb {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 1rem;
-    line-height: 1.125rem;
+    font-size: 16px;
+    line-height: 18px;
     padding: 16px
 }
 
@@ -26491,4 +26491,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.ac116ce522b6a2cc417b.css.map*/
+/*# sourceMappingURL=shared.35a148614b88c40614b8.css.map*/
