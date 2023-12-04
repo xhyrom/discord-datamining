@@ -15054,6 +15054,8 @@
   "INVENTORY_EMOJI_COLLECTED_DESCRIPTION_V2": "\"{number, plural, one {**{number}** person has} other {**{number}** people have}} added your server’s emoji.\"",
   "INVENTORY_NEW_SETTING": "\"New Emoji Setting\"",
   "INVENTORY_NEW_SETTING_DESCRIPTION_SOON_V2": "\"Starting soon, users outside of your server will be able to access your server's emoji and use them throughout Discord. You can change this setting at any time.\"",
+  "INVENTORY_CHANGE_IN_SETTINGS": "\"Change in your Emoji Settings\"",
+  "INVENTORY_NEW_SETTING_ROLLBACK_DESRIPTION": "\"In the coming weeks, we're removing the Setting allowing non-server members to collect and use your server's emoji anywhere on Discord.\\n\\nUsers will only be able to access your server's emoji if they join your server.\"",
   "INVENTORY_VIEW_SETTING": "\"View Setting\"",
   "INVENTORY_DISABLE_SETTING_TITLE_V2": "\"Are you sure you want to turn off external access to your server’s emoji?\"",
   "INVENTORY_DISABLE_SETTING_TITLE_MOBILE": "\"Disable Pack Collection\"",
