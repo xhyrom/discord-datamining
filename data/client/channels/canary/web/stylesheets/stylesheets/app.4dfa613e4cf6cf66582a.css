@@ -83627,7 +83627,7 @@ input::-webkit-inner-spin-button {
 }
 
 .tallerShopCard__60f20 {
-    grid-template-columns: repeat(auto-fill, minmax(242px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(246px, 1fr))
 }
 
 .shop_b31ed2 {
@@ -84039,8 +84039,8 @@ input::-webkit-inner-spin-button {
     border: 2px solid transparent;
     grid-column: auto;
     width: 100%;
+    height: 420px;
     transition: transform 1s, box-shadow.5s;
-    padding: 40px 32px 32px;
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -84058,27 +84058,48 @@ input::-webkit-inner-spin-button {
     margin: 0 auto
 }
 
+.avatarContainer_f8f7ab {
+    width: 100%;
+    height: 252px;
+    display: flex;
+    align-items: center
+}
+
 .avatarPurchased_eeb4c2 {
     opacity: .5;
     transition: opacity.5s
 }
 
 .cardText_e9b824 {
-    margin-top: 32px;
+    height: 168px;
+    width: 100%;
+    padding: 23px;
+    box-sizing: border-box;
     z-index: 1;
     display: flex;
     flex-direction: column;
-    flex: 1
+    position: absolute;
+    bottom: 0
 }
 
-.cardText_e9b824.cardTextProfileEffect_dab239:before {
-    content: "";
+.cardBackground_af6852 {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, .8))
+    top: 0;
+    left: 0
+}
+
+.cardLowOpacity_f1be3f {
+    opacity: .6
+}
+
+.darkCardBackground__82a32 {
+    background-color: var(--background-tertiary)
+}
+
+.lightCardBackground_da94ab {
+    background: var(--background-primary)
 }
 
 .description__92b55 {
@@ -84136,7 +84157,10 @@ input::-webkit-inner-spin-button {
 .detailsWrapper_b31a7f {
     display: flex;
     position: relative;
-    flex: 1
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
 }
 
 .hoverUpsellContainer__425f0 {
@@ -84158,12 +84182,7 @@ input::-webkit-inner-spin-button {
 
 .innerBlur_ed9e8f {
     opacity: 1;
-    transition: opacity.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    flex: 1
+    transition: opacity.5s
 }
 
 .checkmarkWrapper_f2dab8 {
@@ -124373,4 +124392,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.87ac807fb11ec6acf758.css.map*/
+/*# sourceMappingURL=app.4dfa613e4cf6cf66582a.css.map*/
