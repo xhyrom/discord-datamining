@@ -82796,7 +82796,8 @@ input::-webkit-inner-spin-button {
     gap: 24px;
     align-items: top;
     border: none;
-    max-height: 480px
+    max-height: 480px;
+    padding-bottom: 20px
 }
 
 .header__91604 {
@@ -124413,4 +124414,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3ad23a559110a79aa917.css.map*/
+/*# sourceMappingURL=app.419fcbb553a75122ebc8.css.map*/
