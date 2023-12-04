@@ -28,7 +28,7 @@
 <p>Head over to the <a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a> article and the <a href="https://support.discord.com/hc/en-us/articles/17828465914263" target="_blank" rel="noopener noreferrer">Profile Effects</a> article to find steps on how to apply your collection and customize your profile! </p>
 <h1 id="h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions </h1>
 <p id="docs-internal-guid-19fc1892-7fff-8091-9662-2453d7666148"><strong>Q: Who can currently access the Shop and buy and use profile effects?</strong></p>
-<p>A:  The Shop is available to all Discord users. If you are also a Nitro member, you will have special member pricing on all purchases within the Shop!  </p>
+<p><span id="docs-internal-guid-8176b005-7fff-8d4a-a425-2648f79d552f"></span>A: The Shop is available to all Discord users. If you are also a Nitro member, you will have special member pricing on all purchases within the Shop!</p>
 <p><strong>Q: How do I get a discount on items in the Shop?</strong></p>
 <p>A: Only Nitro members have access to special member pricing in the Shop. You can find more information about Nitro <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <p><strong>Q: What is your refund policy for Shop purchases?</strong></p>
