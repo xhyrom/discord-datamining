@@ -39,7 +39,7 @@
 <p class="wysiwyg-text-align-left"><em><strong>✨Level 1✨ - 2 Server Boosts</strong></em></p>
 <p class="wysiwyg-text-align-left"><em><strong>✨Level 2✨ - 7 Server Boosts</strong></em></p>
 <p class="wysiwyg-text-align-left"><em><strong>✨Level 3✨ - 14 Server Boosts</strong></em></p>
-<p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/360029035292/mceclip5.png"></p>
+<p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/360029035292"></p>
 <ul class="wysiwyg-text-align-left">
     <li><span style="font-weight: 400;">+50 Emoji Slots (for a total of 100 emojis)</span></li>
     <li><span style="font-weight: 400;">128 Kbps Audio Quality</span></li>
@@ -48,7 +48,7 @@
     <li><span style="font-weight: 400;">Animated Server Icon</span></li>
     <li><span style="font-weight: 400;">15 custom sticker slots</span></li>
 </ul>
-<p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/360029035032/mceclip3.png" width="503" height="62"></p>
+<p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/360029035032" width="503" height="62"></p>
 <ul class="wysiwyg-text-align-left">
     <li><strong><em>Everything in Level 1 and…..</em></strong></li>
     <li><span style="font-weight: 400;">+50 Emoji Slots (for a total of 150 emojis)</span></li>
@@ -60,7 +60,7 @@
     <li>Custom Role Icons</li>
     <li>Audience capacity for Stage Channels with Video/Go Live: 150</li>
 </ul>
-<p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/360029034411/mceclip4.png"></p>
+<p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/360029034411"></p>
 <ul class="wysiwyg-text-align-left">
     <li><strong><em>Everything in Level 1 AND Level 2 AND…..</em></strong></li>
     <li><span style="font-weight: 400;">+100 Emoji Slots (for a total of 250 emojis)</span></li>
@@ -198,6 +198,6 @@
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">Once you've confirmed the un-cancellation, you'll see this confirmation of your resurrected <span class="wysiwyg-color-pink"><strong>Server Boost</strong></span>! </span></p>
 <h1 id="h_6f516aba-9185-4ef1-9de4-fd3f683142c4" class="wysiwyg-text-align-left"><span style="font-weight: 400;">What Happens if I Cancel my Server Boost?</span></h1>
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">If all of your Server Boosts subscriptions are canceled at any point, that extra shiny Server Boost badge will sadly be removed from your profile, </span><span style="font-weight: 400;">but not all is lost! Y</span><span style="font-weight: 400;">ou’ll have a grace period of 3 days to resubscribe and reapply your Server Boost to the server!</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360029033111/nitro_tank_gif.gif" alt="nitro_tank_gif.gif"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360029033111" alt="nitro_tank_gif.gif"></p>
 <h1 class="wysiwyg-text-align-left">EVEN MORE BOOSTS SOON™?</h1>
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">Want to see different perks added to this in the future? We're definitely still experimenting, researching and science-ing the current Server Boosts system and looking into potential booster packs to add later! We'd love to hear all your feedback and suggestions over at <a href="http://dis.gd/feedback" target="_blank" rel="noopener noreferrer">http://dis.gd/feedback</a>! </span></p>
