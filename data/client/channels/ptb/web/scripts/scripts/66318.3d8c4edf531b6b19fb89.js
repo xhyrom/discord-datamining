@@ -6640,7 +6640,7 @@
                 SEASONAL_GIFTING_INFO_TOOLTIP: "Your friend will see this image when they receive their gift.",
                 SEASONAL_GIFTING_POPUP_HEADER: "Looking for a holiday gift?",
                 SEASONAL_GIFTING_DM_POPUP_HEADER: "Gift Nitro for the holidays.",
-                SEASONAL_GIFTING_DM_POPUP_BODY: "Send a personalized Nitro gift to spread holiday cheer and chaos!",
+                SEASONAL_GIFTING_DM_POPUP_BODY: "Send a personalized Nitro gift to spread holiday cheer!",
                 SEASONAL_GIFTING_DM_POPUP_CTA: "Try it out",
                 SEASONAL_GIFTING_MAKE_SOMEONES_DAY_TOOLTIP: "Make someone's day when you send some sweet Nitro their way.",
                 SEASONAL_GIFTING_SEND_GIFT_CTA: "Send gift",
@@ -18263,7 +18263,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251148", ", Version Hash: ").concat("a3855287139f691843922a963708a4f9ed1016f7")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251157", ", Version Hash: ").concat("66683d42354bc1aef3f51e2bc748ec7ba319ad41")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20557,8 +20557,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "251148", "251148"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251148")), _ = 0), _
+                let _ = parseInt((e = "251157", "251157"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251157")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36616,4 +36616,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.2687953cf63942f865f8.js.map
+//# sourceMappingURL=66318.3d8c4edf531b6b19fb89.js.map
