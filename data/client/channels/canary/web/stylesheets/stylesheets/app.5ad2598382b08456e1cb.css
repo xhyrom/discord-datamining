@@ -19464,8 +19464,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -81874,8 +81874,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -81922,8 +81922,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -124024,4 +124024,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a5b622c5cb3afb76cf4f.css.map*/
+/*# sourceMappingURL=app.5ad2598382b08456e1cb.css.map*/
