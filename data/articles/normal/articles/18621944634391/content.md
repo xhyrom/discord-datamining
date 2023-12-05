@@ -6,14 +6,3 @@
 <h1 id="docs-internal-guid-362803d9-7fff-89d5-1104-cef49c463326">Frequently Asked Questions</h1>
 <p><strong>Q: How do I check my NVIDIA GPU driver version?</strong></p>
 <p>A: On your Windows device, you can run a DirectX Diagnostic or a DX Diag to find your GPU information along with the driver version under the Display tab of your DX Diag. You can check out this article <a href="https://support.discord.com/hc/articles/223276128" target="_blank" rel="noopener noreferrer">here</a> for how to run a DX Diag.</p>
-<p id="docs-internal-guid-5a634b7b-7fff-25b1-eed1-4fbd42fbaaab"><strong>Q: How do I install a previous driver version? </strong></p>
-<p>A: Follow the steps below:</p>
-<ul>
-    <li>Download a previous version from NVIDIA’s <a href="https://www.nvidia.com/Download/Find.aspx" target="_blank" rel="noopener noreferrer">driver archive</a>
-    </li>
-    <li>Right click over driver installation file and select <strong>Run as administrator</strong>
-    </li>
-    <li>Press <strong>Custom</strong> in install dialog</li>
-    <li>Select <strong>Perform clean install</strong>
-    </li>
-</ul>
