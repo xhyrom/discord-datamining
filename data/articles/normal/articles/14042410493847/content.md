@@ -5,21 +5,22 @@
     <li>
         <a href="#h_01H06K2B6AWB50WXP92VRM8JN4" target="_self">How to Use Jamspace Whiteboard</a>
         <ul>
-            <li><a href="#h_01HCZ9W3XM1FN0R3BE42DN9EAC">Create &amp; Find Saved Boards</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HCZ9W3XM1FN0R3BE42DN9EAC">Create &amp; Find Saved Boards</a></li>
             <li><a href="#h_01H06K2M958PF5NWPZFKBEF3YT" target="_self">Drawing</a></li>
-            <li><a href="#h_01H969Y74DAJAX99BFZWAXYA0S">Sticky Notes</a></li>
-            <li><a href="#01H96A0T74R12RMM76JJF1M5MK">GIFs &amp; Stickers</a></li>
-            <li><a href="#01H96A0ZYE7XSGWYBMS903EGMT">Shapes</a></li>
-            <li><a href="#01H96A17F8EVATHM4AHPE7TMFA">Writing</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01H969Y74DAJAX99BFZWAXYA0S">Sticky Notes</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#01H96A0T74R12RMM76JJF1M5MK">GIFs &amp; Stickers</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGVMF2X2QPKV23FE6PWTBFVC">Upload Images &amp; GIFs</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#01H96A0ZYE7XSGWYBMS903EGMT">Shapes</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#01H96A17F8EVATHM4AHPE7TMFA">Writing</a></li>
         </ul>
     </li>
-    <li><a href="#docs-internal-guid-27de6b05-7fff-3891-fc10-575955691904">Board Access</a></li>
-    <li><a href="#docs-internal-guid-ce80db1e-7fff-b7a4-ff31-a29f31ab034e">How to Share an Image of a Board</a></li>
-    <li><a href="#h_01H06K43MWNF3VQSMC4X7ZSSZT">Keyboard Shortcuts</a></li>
-    <li><a href="#docs-internal-guid-40b80999-7fff-1d75-999c-9f170bdbeca2">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#docs-internal-guid-27de6b05-7fff-3891-fc10-575955691904">Board Access</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#docs-internal-guid-ce80db1e-7fff-b7a4-ff31-a29f31ab034e">How to Share an Image of a Board</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01H06K43MWNF3VQSMC4X7ZSSZT">Keyboard Shortcuts</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#docs-internal-guid-40b80999-7fff-1d75-999c-9f170bdbeca2">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01H06K20Y2YFFCDD8B0FTGVJSJ">What Is Jamspace Whiteboard?</h1>
-<p id="docs-internal-guid-97463eac-7fff-f9ab-d7d0-97032dd86953"><span style="color: #2e3338;" data-darkreader-inline-color=""><strong>Jamspace Whiteboard</strong> is a collaborative whiteboard right inside Discord. You can use tools to draw, write text, add shapes, and search for and post GIFs and Stickers! Boards are saved automatically, so you can come back to your creations over and over again over multiple sessions. It’s not just what you create, it’s the fun of creating it together!</span></p>
+<p id="docs-internal-guid-97463eac-7fff-f9ab-d7d0-97032dd86953"><span style="color: #2e3338;" data-darkreader-inline-color=""><strong>Jamspace Whiteboard</strong> is a collaborative whiteboard right inside Discord. You can use tools to draw, write text, add images, upload images, add shapes, and search for and post GIFs and Stickers! Boards are saved automatically, so you can come back to your creations over and over again over multiple sessions. It’s not just what you create, it’s the fun of creating it together!</span></p>
 <h1 id="h_01H06K25VR16Q6MAJ0DW5Y2MA8">Starting Jamspace Whiteboard in Discord</h1>
 <p id="docs-internal-guid-7ecc1701-7fff-5280-4f89-525ec6c473b4"><span style="color: #2e3338;" data-darkreader-inline-color="">There are many different ways you can launch Jamspace Whiteboard in the Discord app for you and your friends! Whether in a server’s voice channel or in a direct message, you can check out </span><a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord" target="_blank" rel="noopener noreferrer">Activities on Discord</a><span style="color: #2e3338;" data-darkreader-inline-color=""> for instructions on how to start any Activity.</span></p>
 <h3 id="h_01HCZ9JSBRSQ3MME0Z83M5VNQP"><strong><span style="color: #434343;" data-darkreader-inline-color="">Before starting any Discord Activity on Desktop, please make sure to turn on Hardware Acceleration in User Settings &gt; Advanced.</span></strong></h3>
@@ -48,6 +49,12 @@
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the GIF icon.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Press the Sticker tab or the GIF tab, search in the text field.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Choose the Sticker or GIF you want, it will be placed on the board.</span></p>
+<h2 id="01HGXNKYRTNX8W4GW68CVXA17F">Upload Images &amp; GIFs</h2>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><span id="docs-internal-guid-25041afa-7fff-a156-6dd2-c8d6609fcced" style="color: #ff0000;"><img src="https://support.discord.com/hc/article_attachments/19584910004631" width="600" height="337"></span></span></p>
+<p>1. Bring up the toolbar at the bottom of the screen.</p>
+<p>2. Select the Image icon (looks like an image with a “+”)</p>
+<p>3. Select an image or GIF from your device’s files / photos (accepted file formats are: .png, .jpeg, .jpg, and .gif)</p>
+<p>4. The image or GIF will automatically be placed on the board.</p>
 <h2 id="01H96A0ZYE7XSGWYBMS903EGMT">Shapes</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181486103" alt="FilledandhollowShapesHelpCenter.gif" width="513" height="460"></p>
 <p id="docs-internal-guid-f32afb6c-7fff-b650-4b87-0168c106f313"><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
@@ -148,16 +155,17 @@
 <p><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Q: What GIFs and Stickers can be used in Jamspace Whiteboard?</span></strong></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">A: Jamspace Whiteboard has a built-in GIF &amp; Sticker library that you can search from inside the Activity.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">To provide an enjoyable experience for the widest range of Discord users, we may use certain content filters so some GIFs &amp; Stickers may not appear in the search results. </span>Your “favorite” GIFs and Stickers from Discord will not populate in Jamspace Whiteboard.</p>
+<p><strong>Q: Why is my image failing to upload?</strong> <br>A: There are many reasons why an image upload might fail, such as incorrect file type or we've detected a possible <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a> violation. If you are experiencing an unexpected problem please report a bug to us.</p>
 <p><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Q: How can I see who placed an object in Jamspace Whiteboard?</span></strong></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">A: Desktop: Press on any object to open a menu, you will see options to edit the selection, and the username and avatar of who placed it.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">Mobile: Tap any object to open a menu, you will see options to edit the selection, and the username and avatar of who placed it.</span></p>
 <p><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Q: How do I report abusive content from Jamspace Whiteboard?</span></strong></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">A: I</span>f you encounter a violation of our <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> or <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a> inside of Jamspace Whiteboard we ask that you report this behavior to us.</p>
 <h4 id="h_01HCZA8HABYAFZ3ZJNBFP7W2NS">If the violation happened within a server (rather than DM or group chat), you can also reach out to the server’s moderators, who may be able to respond immediately and help resolve your concerns. </h4>
-<p>To report an object (text, drawing, sticky note, sticker, or GIF) on the Jamspace Whiteboard:</p>
+<p>To report an object (image, text, drawing, sticky note, sticker, or GIF) on the Jamspace Whiteboard:</p>
 <ol>
     <li>Select on the object or multiple objects in violation (multi-select is only available on desktop.)</li>
-    <li>Press on the “...” button on the toolbar menu at the bottom</li>
+    <li>Press on the “<strong>...</strong>” button on the toolbar menu at the bottom</li>
     <li>Select <strong>Report</strong> and fill out the report with the reasons for reporting the object.</li>
     <li>Optional: You can check the checkbox to hide that object from your personal view of the board – it will continue to show for all others that have not reported and chosen to hide it.</li>
 </ol>
