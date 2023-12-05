@@ -14895,7 +14895,7 @@
                     return g({
                         user_id: i,
                         guild_scheduled_event_id: a,
-                        guild_member: null != c ? c : {
+                        member: null != c ? c : {
                             guildId: l
                         },
                         guild_scheduled_event_exception_id: s,
@@ -33907,4 +33907,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.c4700eaff456385025ce.js.map
+//# sourceMappingURL=67615.4af99944310de30b61d8.js.map

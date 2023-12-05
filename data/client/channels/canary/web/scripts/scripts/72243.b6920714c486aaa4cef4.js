@@ -30097,7 +30097,7 @@
                     t.forEach(e => {
                         let {
                             user: t,
-                            guild_member: r
+                            member: r
                         } = e;
                         if (null == t) return;
                         A(t);
@@ -41556,4 +41556,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.9b2245d76c1f7a8dc7c4.js.map
+//# sourceMappingURL=72243.b6920714c486aaa4cef4.js.map
