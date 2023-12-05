@@ -9210,6 +9210,21 @@
     height: 22px
 }
 
+.container__99df7 {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1)50%, rgba(255, 255, 255, 0));
+    height: 36px
+}
+
+.text__9a30e {
+    margin-left: 6px
+}
+
+.textWithAD__170eb {
+    margin-left: 9px
+}
+
 .premiumCards__1b3a9 {
     display: flex;
     gap: 24px;
@@ -124020,4 +124035,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.475b1d94d64eaa53db04.css.map*/
+/*# sourceMappingURL=app.2fe511b2d25b2be6466d.css.map*/
