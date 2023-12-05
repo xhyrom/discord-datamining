@@ -19464,8 +19464,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83483,6 +83483,10 @@ input::-webkit-inner-spin-button {
     max-height: 18px
 }
 
+.winterTitleImage__1732f {
+    max-height: 25px
+}
+
 .collectionText__817ba {
     border: 1px solid white;
     color: white;
@@ -124020,4 +124024,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.68bd71430653c391efe3.css.map*/
+/*# sourceMappingURL=app.a5b622c5cb3afb76cf4f.css.map*/
