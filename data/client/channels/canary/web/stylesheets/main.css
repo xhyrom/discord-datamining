@@ -53296,7 +53296,7 @@ html .progress__4ef76 {
     stop-color: var(--premium-tier-0-header-gradient-5)
 }
 
-.iconContainer_e97d42 {
+.container__79b26 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53304,12 +53304,17 @@ html .progress__4ef76 {
     height: 50px
 }
 
+.iconContainer_e97d42 {
+    display: flex
+}
+
 .icon__3a061+.icon__3a061 {
     margin-left: -8px
 }
 
-.text_f933cd {
-    margin-left: 9px
+.textContainer__02ecb {
+    margin-left: 9px;
+    text-align: left
 }
 
 .descriptionContainer__342b3 {
@@ -124035,4 +124040,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2fe511b2d25b2be6466d.css.map*/
+/*# sourceMappingURL=app.7fed34e5b6fcb7cd8903.css.map*/
