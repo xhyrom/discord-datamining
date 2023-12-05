@@ -1,7 +1,7 @@
 <p>Want to share some extra special perks with your favorite community? With Server Boosts, you and your community will now be able to work together to unlock some fresh new and improved collective perks for a server of your choice each month. By using your Server Boosts every month, you can unlock some epic perks to the rest of your server community! </p>
 <p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19576232968855" width="624" height="281"></span></p>
 <h4 id="h_01HGX7DJ33H4R7S6A31PSZZGCH"><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Start your engines and get ready to ✨B  O  O  S  T✨!</span></strong></h4>
-<p><strong>What this article covers: </strong></p>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33W4WY3FYVPRZ2CK02">What are the levels and perks for Server Boosting? </a>

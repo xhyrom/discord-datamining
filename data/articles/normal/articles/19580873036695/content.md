@@ -1,4 +1,4 @@
-<p><strong>What this article covers: </strong></p>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13YPGXWD5Y2RPFXT6P">How do I Cancel my Nitro or Nitro Basic subscription?</a>
