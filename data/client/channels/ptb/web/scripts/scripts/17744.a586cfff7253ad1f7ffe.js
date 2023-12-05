@@ -1172,24 +1172,25 @@
                     profileType: P,
                     className: T,
                     pendingThemeColors: _,
-                    useDefaultClientTheme: C,
-                    children: O,
-                    forceShowPremium: S = !1,
-                    showOutOfBoundaryComponents: L = !1
-                } = e, h = i.useRef(null), I = (0, a.default)(o.id, p), {
-                    profileTheme: y
-                } = (0, u.default)(o, I, {
-                    themeElementRef: h,
+                    pendingProfileEffectId: C,
+                    useDefaultClientTheme: O,
+                    children: S,
+                    forceShowPremium: L = !1,
+                    showOutOfBoundaryComponents: h = !1
+                } = e, I = i.useRef(null), y = (0, a.default)(o.id, p), {
+                    profileTheme: m
+                } = (0, u.default)(o, y, {
+                    themeElementRef: I,
                     pendingThemeColors: _,
-                    isPreview: S,
-                    useDefaultClientTheme: C
-                }), m = (null == I ? void 0 : I.canEditThemes) || S, U = i.useMemo(() => ({
+                    isPreview: L,
+                    useDefaultClientTheme: O
+                }), U = (null == y ? void 0 : y.canEditThemes) || L, A = i.useMemo(() => ({
                     profileType: P,
-                    profileTheme: y
-                }), [P, y]);
+                    profileTheme: m
+                }), [P, m]);
                 return (0, l.jsx)("div", {
-                    ref: h,
-                    className: n((t = P, (0, s.match)(t).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutOuter).with(d.UserProfileTypes.MODAL, () => f.userProfileModalOuter).with(d.UserProfileTypes.PANEL, () => f.userPanelOuter).with(d.UserProfileTypes.CARD, () => f.userCardOuter).exhaustive()), m ? f.userProfileOuterThemed : f.userProfileOuterUnthemed, c.profileColors, L ? f.showOutOfBoundaryComponents : void 0, "theme-".concat(y), T),
+                    ref: I,
+                    className: n((t = P, (0, s.match)(t).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutOuter).with(d.UserProfileTypes.MODAL, () => f.userProfileModalOuter).with(d.UserProfileTypes.PANEL, () => f.userPanelOuter).with(d.UserProfileTypes.CARD, () => f.userCardOuter).exhaustive()), U ? f.userProfileOuterThemed : f.userProfileOuterUnthemed, c.profileColors, h ? f.showOutOfBoundaryComponents : void 0, "theme-".concat(m), T),
                     children: (0, l.jsx)("div", {
                         className: n((r = P, (0, s.match)(r).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutInner).with(d.UserProfileTypes.MODAL, () => f.userProfileModalInner).with(d.UserProfileTypes.PANEL, () => f.userPanelInner).with(d.UserProfileTypes.CARD, () => f.userCardInner).exhaustive()), function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
@@ -1207,10 +1208,10 @@
                             }, () => f.userProfileInnerThemedWithBanner).with({
                                 canUsePremiumProfileCustomization: !0
                             }, () => f.userProfileInnerThemedPremiumWithoutBanner).otherwise(() => f.userProfileInnerThemedNonPremium)
-                        }((null == I ? void 0 : I.canUsePremiumProfileCustomization) || S, (null == I ? void 0 : I.banner) != null, P)),
+                        }((null == y ? void 0 : y.canUsePremiumProfileCustomization) || L, null !== C && ((null == y ? void 0 : y.banner) != null || void 0 !== C), P)),
                         children: (0, l.jsx)(E.Provider, {
-                            value: U,
-                            children: O
+                            value: A,
+                            children: S
                         })
                     })
                 })
@@ -1338,4 +1339,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17744.5de535b845b1936a62e7.js.map
+//# sourceMappingURL=17744.a586cfff7253ad1f7ffe.js.map

@@ -20415,9 +20415,10 @@
         659972: function(e, t, o) {
             "use strict";
             e.exports = {
+                container: "container__79b26",
                 icon: "icon__3a061",
                 iconContainer: "iconContainer_e97d42",
-                text: "text_f933cd"
+                textContainer: "textContainer__02ecb"
             }
         },
         760068: function(e, t, o) {
