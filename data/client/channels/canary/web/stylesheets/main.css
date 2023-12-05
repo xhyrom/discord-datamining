@@ -83727,6 +83727,11 @@ input::-webkit-inner-spin-button {
     bottom: 0
 }
 
+.cardTextBlur_e2acf1 {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px)
+}
+
 .cardBackground_af6852 {
     position: absolute;
     width: 100%;
@@ -124040,4 +124045,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7fed34e5b6fcb7cd8903.css.map*/
+/*# sourceMappingURL=app.29cbe764fcd8a4c9c7e8.css.map*/
