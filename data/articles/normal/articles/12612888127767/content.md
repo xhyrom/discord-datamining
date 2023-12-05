@@ -72,7 +72,7 @@
 <p>You can access this list by tapping on the Soundboard icon while in a voice channel or call and then tapping on the up arrow icon.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19591326501271" width="526" height="290"></p>
 <h3 id="h_01HGXYZ2NPS0QKC7XH1A9RG6FH">
-    <span style="color: #434343;" data-darkreader-inline-color="">If a sound in the Soundboard is grayed out, that means you do not have access to that sound. In order to use sounds cross-server, you will need </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">If a sound in the Soundboard is faded out, that means you do not have access to that sound. In order to use sounds cross-server, you will need </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <h1 id="h_01GTYZSTZQV1GXSRVX1A420WPX">As a Server Admin, how can I manage Soundboard?</h1>
 <h2 id="docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36">How to Give or Remove Soundboard permissions</h2>
