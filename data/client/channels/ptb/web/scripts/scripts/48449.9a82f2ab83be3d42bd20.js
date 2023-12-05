@@ -4820,32 +4820,35 @@
                 MIN_CLIP_DURATION_SECONDS: function() {
                     return v
                 },
-                CLIP_NAME_MIN_CHAR_LENGTH: function() {
+                CLIP_PLAYING_DEBOUNCE_MS: function() {
                     return C
                 },
-                CLIP_NAME_MAX_CHAR_LENGTH: function() {
+                CLIP_NAME_MIN_CHAR_LENGTH: function() {
                     return T
                 },
-                CLIPS_EDIT_MODAL_KEY: function() {
+                CLIP_NAME_MAX_CHAR_LENGTH: function() {
                     return I
                 },
-                CLIPS_GALLERY_MODAL_KEY: function() {
+                CLIPS_EDIT_MODAL_KEY: function() {
                     return A
                 },
-                CLIPS_THUMBNAIL_MAX_WIDTH: function() {
+                CLIPS_GALLERY_MODAL_KEY: function() {
                     return N
                 },
-                CLIPS_THUMBNAIL_MAX_HEIGHT: function() {
+                CLIPS_THUMBNAIL_MAX_WIDTH: function() {
                     return O
                 },
-                CLIPS_MAX_PARTICIPANTS: function() {
+                CLIPS_THUMBNAIL_MAX_HEIGHT: function() {
                     return D
                 },
-                CLIP_NAME_TEMPLATE: function() {
+                CLIPS_MAX_PARTICIPANTS: function() {
                     return R
                 },
-                MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: function() {
+                CLIP_NAME_TEMPLATE: function() {
                     return b
+                },
+                MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: function() {
+                    return P
                 }
             });
             var i, s, a, o, r, l, u = n("605250"),
@@ -4861,15 +4864,16 @@
                 S = /(NVIDIA GeForce (RTX (20|30|40).*))|(.*Radeon RX (57|58|59|6|7).*)/,
                 _ = /(Apple M[12].*)/,
                 v = .1,
-                C = 0,
-                T = 200,
-                I = "clips-edit",
-                A = "clips-gallery",
-                N = 640,
-                O = 360,
-                D = 100,
-                R = e => "Clip - ".concat(new Date(e).toLocaleString()),
-                b = 15
+                C = 25,
+                T = 0,
+                I = 200,
+                A = "clips-edit",
+                N = "clips-gallery",
+                O = 640,
+                D = 360,
+                R = 100,
+                b = e => "Clip - ".concat(new Date(e).toLocaleString()),
+                P = 15
         },
         56947: function(e, t, n) {
             "use strict";
@@ -14889,7 +14893,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "251339"
+                                build_number: "251342"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21819,4 +21823,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48449.98dff3d5d933dc329d16.js.map
+//# sourceMappingURL=48449.9a82f2ab83be3d42bd20.js.map
