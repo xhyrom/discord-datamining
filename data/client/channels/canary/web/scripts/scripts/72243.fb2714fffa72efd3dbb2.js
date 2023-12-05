@@ -16211,9 +16211,15 @@
                         l = null === (i = c.default.getAppearanceSettings()) || void 0 === i ? void 0 : null === (n = i.clientThemeSettings) || void 0 === n ? void 0 : n.backgroundGradientAngle;
                     null != a && (r = S.BACKGROUND_GRADIENT_PRESETS_MAP[a]), null != l && (s = l)
                 };
-            class N extends a.default.Store {
-                initialize() {
-                    this.waitFor(f.default, d.default, _.default, c.default), this.syncWith([f.default], R), this.syncWith([c.default], v)
+            class N extends a.default.PersistedStore {
+                initialize(e) {
+                    null != e && (r = e.gradientPreset, s = e.gradientAngle), this.waitFor(f.default, d.default, _.default, c.default), this.syncWith([f.default], R), this.syncWith([c.default], v)
+                }
+                getState() {
+                    return {
+                        gradientPreset: r,
+                        gradientAngle: s
+                    }
                 }
                 get gradientPreset() {
                     return r
@@ -16241,7 +16247,7 @@
                     return i
                 }
             }
-            N.displayName = "ClientThemesBackgroundStore";
+            N.displayName = "ClientThemesBackgroundStore", N.persistKey = "ClientThemesBackgroundStore";
             var O = new N(o.default, {
                 UPDATE_BACKGROUND_GRADIENT_PRESET: e => {
                     let {
@@ -41552,4 +41558,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.23f296536cf0e1a57886.js.map
+//# sourceMappingURL=72243.fb2714fffa72efd3dbb2.js.map
