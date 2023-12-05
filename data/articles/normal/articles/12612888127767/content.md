@@ -17,6 +17,13 @@
         </ul>
     </li>
     <li>
+        <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01HGXYYQ32RA9GVZB24HT5GX2F">Recently Heard and Frequently Used Sounds</a>
+        <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01HGXYYQ32TMMCSQ6MTGY0AVR2">What is Recently Heard?</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01HGXYYQ32T42569NMXC1HDSNX">What is Frequently Used Sounds?</a></li>
+        </ul>
+    </li>
+    <li>
         <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSTZQV1GXSRVX1A420WPX">As a Server Admin, how can I manage Soundboard?</a>
         <ul>
             <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36">How to give/remove Soundboard permissions</a></li>
@@ -53,6 +60,20 @@
 <p>To upload new sounds press on the <strong>Add Sound</strong> button with the Soundboard panel open.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931070997527" alt="image3.png"></p>
 <p>Please keep in mind that it’s your responsibility to ensure that any sounds you upload respect our <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service </a>and <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>, including ensuring that any sounds you upload respect the intellectual property rights of others.</p>
+<h1 id="h_01HGXYYQ32RA9GVZB24HT5GX2F">Recently Heard and Frequently Used Sounds</h1>
+<h3 id="h_01HGXYYQ3277YQA7NXH6W4H6TY"><span style="color: #434343;" data-darkreader-inline-color="">This is currently an experiment and only available to a limited number of users.</span></h3>
+<h3 id="h_01HGXYYQ32B0X6HTFEGA3VJN9K"><span style="color: #434343;" data-darkreader-inline-color="">Frequently used sounds are synced between devices, but recently heard are device-specific.</span></h3>
+<h2 id="h_01HGXYYQ32TMMCSQ6MTGY0AVR2">What is Recently Heard?</h2>
+<p>A Recently Heard sound is a sound that has been recently been played by someone else  through the Soundboard. </p>
+<p>You can access this list by tapping on the Soundboard icon while in a voice channel or call and then tapping on the clock icon.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19591326452887" width="526" height="344"></p>
+<h2 id="h_01HGXYYQ32T42569NMXC1HDSNX">What is Frequently Used Sounds?</h2>
+<p>Frequently Used is any sound in the Soundboard that you have frequently played while in a voice channel or call.  The list will get updated as you continue to play more sounds.</p>
+<p>You can access this list by tapping on the Soundboard icon while in a voice channel or call and then tapping on the up arrow icon.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19591326501271" width="526" height="290"></p>
+<h3 id="h_01HGXYZ2NPS0QKC7XH1A9RG6FH">
+    <span style="color: #434343;" data-darkreader-inline-color="">If a sound in the Soundboard is grayed out, that means you do not have access to that sound. In order to use sounds cross-server, you will need </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+</h3>
 <h1 id="h_01GTYZSTZQV1GXSRVX1A420WPX">As a Server Admin, how can I manage Soundboard?</h1>
 <h2 id="docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36">How to Give or Remove Soundboard permissions</h2>
 <p>To manage who can use Soundboard in your server, you can enable or disable the <strong>Use Soundboard </strong>permission for specific roles or server members.</p>
