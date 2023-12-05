@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["90438"], {
+    ["48449"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -14882,7 +14882,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "251317"
+                                build_number: "251324"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21801,4 +21801,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90438.133b37462319d34e4c9c.js.map
+//# sourceMappingURL=48449.e04fc1f6f0bee80f0068.js.map
