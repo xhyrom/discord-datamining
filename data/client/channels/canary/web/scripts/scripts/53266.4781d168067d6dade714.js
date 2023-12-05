@@ -915,21 +915,19 @@
                 if ("string" != typeof n) throw Error("Thumbnail creation failed");
                 return n
             }
-
-            function s(e, t) {
-                return new Promise(async n => {
-                    let a = document.createElement("video");
-                    a.muted = !0, a.src = e, a.currentTime = t, await a.play();
-                    let s = i.CLIPS_THUMBNAIL_MAX_WIDTH / a.videoWidth,
-                        l = i.CLIPS_THUMBNAIL_MAX_HEIGHT / a.videoHeight,
-                        u = Math.min(s, l),
-                        d = a.videoWidth * u,
-                        r = a.videoHeight * u,
-                        o = document.createElement("canvas");
-                    o.width = d, o.height = r;
-                    let c = o.getContext("2d");
-                    null != c && (c.drawImage(a, 0, 0, a.videoWidth, a.videoHeight, 0, 0, d, r), n(o.toDataURL("image/jpeg", .9)))
-                })
+            async function s(e, t) {
+                let n = document.createElement("video");
+                n.muted = !0, n.src = e, n.currentTime = t, await n.play(), n.pause();
+                let a = i.CLIPS_THUMBNAIL_MAX_WIDTH / n.videoWidth,
+                    s = i.CLIPS_THUMBNAIL_MAX_HEIGHT / n.videoHeight,
+                    l = Math.min(a, s),
+                    u = n.videoWidth * l,
+                    d = n.videoHeight * l,
+                    r = document.createElement("canvas");
+                r.width = u, r.height = d;
+                let o = r.getContext("2d");
+                if (null == o) throw Error("Could not create canvas context");
+                return o.drawImage(n, 0, 0, n.videoWidth, n.videoHeight, 0, 0, u, d), r.toDataURL("image/jpeg", .9)
             }
         },
         370492: function(e, t, n) {
@@ -2589,4 +2587,4 @@
         }
     }
 ]);
-//# sourceMappingURL=53266.b3e4c9bae3792b2e8114.js.map
+//# sourceMappingURL=53266.4781d168067d6dade714.js.map
