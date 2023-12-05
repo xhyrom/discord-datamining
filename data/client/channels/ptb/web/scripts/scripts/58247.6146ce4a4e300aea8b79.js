@@ -6095,9 +6095,9 @@
                 let {
                     voiceGuild: t,
                     voiceChannel: l,
-                    onClose: a,
-                    color: r
-                } = e, o = (null == l ? void 0 : l.isGuildStageVoice()) ? T.default.Messages.STAGE_CHANNEL_JOIN_BUTTON : T.default.Messages.PROFILE_JOIN_VOICE_CHANNEL;
+                    onClose: r,
+                    color: o
+                } = e, u = (0, a.useStateFromStores)([d.default], () => d.default.getChannelId() === l.id), c = u ? T.default.Messages.PROFILE_OPEN_VOICE_CHANNEL : l.isGuildStageVoice() ? T.default.Messages.STAGE_CHANNEL_JOIN_BUTTON : T.default.Messages.PROFILE_JOIN_VOICE_CHANNEL;
                 return (0, n.jsxs)(p.default, {
                     children: [(0, n.jsx)(s.Heading, {
                         variant: "eyebrow",
@@ -6134,12 +6134,12 @@
                                 channel: l,
                                 connected: d.default.getChannelId() === l.id,
                                 needSubscriptionToAccess: !1
-                            }), null == a || a())
+                            }), null == r || r())
                         },
-                        color: null != r ? r : s.Button.Colors.PRIMARY,
+                        color: null != o ? o : s.Button.Colors.PRIMARY,
                         size: s.Button.Sizes.SMALL,
                         fullWidth: !0,
-                        children: o
+                        children: c
                     })]
                 })
             }
@@ -7916,4 +7916,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58247.96f5d7d1963e62315630.js.map
+//# sourceMappingURL=58247.6146ce4a4e300aea8b79.js.map
