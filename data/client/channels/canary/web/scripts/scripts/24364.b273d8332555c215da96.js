@@ -36354,7 +36354,7 @@
             }
 
             function ed(e) {
-                return e === N.SubscriptionStatusTypes.PAST_DUE || e === N.SubscriptionStatusTypes.ACCOUNT_HOLD
+                return e === N.SubscriptionStatusTypes.PAST_DUE || e === N.SubscriptionStatusTypes.ACCOUNT_HOLD || e === N.SubscriptionStatusTypes.BILLING_RETRY
             }
 
             function eE(e, t, n, r) {
@@ -41551,4 +41551,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.72f775092a212c95ba8f.js.map
+//# sourceMappingURL=24364.b273d8332555c215da96.js.map

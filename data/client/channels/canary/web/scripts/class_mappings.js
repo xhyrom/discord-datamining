@@ -4298,7 +4298,6 @@
         447365: function(e, t, o) {
             "use strict";
             e.exports = {
-                betaTag: "betaTag_e4d227",
                 button: "button__93d68",
                 closeButton: "closeButton_d35106",
                 error: "error__890e8",

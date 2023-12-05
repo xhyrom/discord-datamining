@@ -23532,7 +23532,7 @@
                         matchComparator: f
                     } = e;
                     Q();
-                    let _ = i.toLowerCase().replaceAll("_", ""),
+                    let _ = i.toLowerCase().replaceAll(/[ _]/g, ""),
                         d = S.default.escape(_);
                     if (null == f) {
                         let e = RegExp("".concat(d), "i");
@@ -25161,4 +25161,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98086.7cde3916a7cd7866ba4e.js.map
+//# sourceMappingURL=98086.fe288551eed7d36ff5d9.js.map
