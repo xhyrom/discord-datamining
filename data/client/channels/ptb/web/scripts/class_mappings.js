@@ -5921,6 +5921,7 @@
                 cardBackground: "cardBackground_af6852",
                 cardLowOpacity: "cardLowOpacity_f1be3f",
                 cardText: "cardText_e9b824",
+                cardTextBlur: "cardTextBlur_e2acf1",
                 checkmark: "checkmark__2ccd6",
                 checkmarkWrapper: "checkmarkWrapper_f2dab8",
                 darkCardBackground: "darkCardBackground__82a32",
