@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -17157,7 +17157,8 @@
                     use_topic_dividers_in_chat: "Use summary topics as divider content in chat instead of string formatted dates.",
                     highlight_redesigned_icons: "Highlight redesigned icons",
                     alt_clips_1: "Use alt clip icon 1",
-                    alt_clips_2: "Use alt clip icon 2"
+                    alt_clips_2: "Use alt clip icon 2",
+                    profile_effect_debug_controls: "Scrolls through profile effects with arrow up / down. Restart with R"
                 },
                 a = {};
             class l extends r.default.DeviceSettingsStore {
@@ -25783,9 +25784,6 @@
                         };
                         return null != e.retryAfter && (t.retry_after = e.retryAfter), t
                     }(t)).date_of_birth ? C.LoginStates.LOGIN_AGE_GATE : C.LoginStates.NONE
-                },
-                LOGIN_MFA_WEBAUTHN: function() {
-                    w = C.LoginStates.LOGGING_IN_MFA_WEBAUTHN
                 },
                 LOGIN_MFA_STEP: function(e) {
                     let {
@@ -41558,4 +41556,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.fb2714fffa72efd3dbb2.js.map
+//# sourceMappingURL=24364.37e78295b6c25c954794.js.map
