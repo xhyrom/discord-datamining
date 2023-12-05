@@ -15378,7 +15378,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .grandfatheredMessage_b731ea {
     border-radius: 3px;
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.25;
     padding: 8px 16px 8px 8px;
     display: flex;
@@ -15414,8 +15414,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--white-500);
     display: flex;
     align-items: flex-start;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     padding: 16px;
     position: relative
 }
@@ -15463,7 +15463,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .sectionDescription__93f73 {
     color: var(--text-normal);
-    line-height: 1.25rem;
+    line-height: 20px;
     margin-bottom: 16px;
     margin-top: 0
 }
@@ -15549,8 +15549,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .billingInformation_ed226c {
     color: var(--text-normal);
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .finePrint_a624a3 {
@@ -15564,9 +15564,9 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .noItemsCard__4a2f1 {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.25rem;
+    line-height: 20px;
     margin-top: 16px;
     padding: 16px 19px;
     border: none;
@@ -83815,10 +83815,6 @@ input::-webkit-inner-spin-button {
     align-items: center;
     left: 0;
     right: 0;
-    top: 80px
-}
-
-.profileEffectCheckmarkWrapper_e65762 {
     top: 110px
 }
 
@@ -124024,4 +124020,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.0551831930882c073828.css.map*/
+/*# sourceMappingURL=app.475b1d94d64eaa53db04.css.map*/

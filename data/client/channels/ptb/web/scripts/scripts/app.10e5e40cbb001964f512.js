@@ -5939,7 +5939,6 @@
                 previewButtonInner: "previewButtonInner_f775c4",
                 priceTag: "priceTag__76b4b",
                 productName: "productName_ece1e1",
-                profileEffectCheckmarkWrapper: "profileEffectCheckmarkWrapper_e65762 checkmarkWrapper_f2dab8",
                 profileEffectShopPreview: "profileEffectShopPreview_b8d693",
                 purchaseButton: "purchaseButton__63193",
                 shopCard: "shopCard_f7822b"
