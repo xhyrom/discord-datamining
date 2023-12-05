@@ -27675,15 +27675,20 @@
                     if ((null == d ? void 0 : d.isReady()) === !0) {
                         let e = d.getCurrentRoute(),
                             n = T.default.getChatOpen(r.channelId);
-                        n ? t = r.channelId : (null == e ? void 0 : e.name) === "channel" && (t = e.params.channelId)
+                        if (n) t = r.channelId;
+                        else if ((null == e ? void 0 : e.name) === "channel") t = e.params.channelId;
+                        else if ((null == e ? void 0 : e.name) === "guilds") {
+                            var c;
+                            t = null === (c = e.params) || void 0 === c ? void 0 : c.channelId
+                        }
                     } else null == d && (t = J.default.getChannelId(), n = B.default.getCurrentSidebarChannelId(t));
-                    let c = t === a || n === a;
-                    if (c && ey(r) && !s || null != i && i.isInstanceFocused() && c && i.isInstanceUILocked() && i.isPinned(en.OverlayWidgets.TEXT)) return r.ack({
+                    let _ = t === a || n === a;
+                    if (_ && ey(r) && !s || null != i && i.isInstanceFocused() && _ && i.isInstanceUILocked() && i.isPinned(en.OverlayWidgets.TEXT)) return r.ack({
                         messageId: l.id
                     });
                     (null == r.oldestUnreadMessageId || r.oldestUnreadMessageIdStale) && (r.oldestUnreadMessageId = l.id), r.unreadCount++;
-                    let _ = null != l.author && Z.default.isBlocked(l.author.id) || l.type === en.MessageTypes.RECIPIENT_REMOVE && (null == o ? void 0 : o.type) === en.ChannelTypes.GROUP_DM;
-                    !_ && (null != u && (0, O.isRawMessageMentioned)({
+                    let E = null != l.author && Z.default.isBlocked(l.author.id) || l.type === en.MessageTypes.RECIPIENT_REMOVE && (null == o ? void 0 : o.type) === en.ChannelTypes.GROUP_DM;
+                    !E && (null != u && (0, O.isRawMessageMentioned)({
                         rawMessage: l,
                         userId: u.id,
                         suppressEveryone: $.default.isSuppressEveryoneEnabled(r.guildId),
@@ -33902,4 +33907,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.8112f42f53e838a506a9.js.map
+//# sourceMappingURL=67615.2335f50e327877cbfc4c.js.map
