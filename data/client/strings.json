@@ -9463,6 +9463,7 @@
   "USER_PROFILE_MUTUAL_GUILDS_PLACEHOLDER": "\"Mutual Servers\"",
   "PROFILE_JOIN_VOICE_CHANNEL": "\"Join Voice Channel\"",
   "PROFILE_IN_VOICE_CALL": "\"In a voice call\"",
+  "PROFILE_OPEN_VOICE_CHANNEL": "\"Open Voice Channel\"",
   "IOS_PROFILE_IN_VOICE_CALL": "\"In a voice call\"",
   "IOS_PROFILE_OPEN_VOICE_CHANNEL": "\"Open Voice Channel\"",
   "USER_PROFILE_INCOMING_FRIEND_REQUEST_DIALOG_BODY": "\"Accept this friend request?\"",
