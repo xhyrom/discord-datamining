@@ -106,7 +106,7 @@
 <p><span id="docs-internal-guid-eab3f62f-7fff-bf83-66f8-74abcef4bd3b">If you want to switch to another Activity, you can just select another Activity from the Shelf by pressing the rocket ship icon. Joining a new Activity will automatically remove you from the old Activity, so you can do this while you’re still in an Activity.</span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120306613655" alt="desktop-activities-button-in-VC.png"></p>
 <h4 id="h_01HASQ4N82647RD63H86518XAA" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://lh7-us.googleusercontent.com/bABvF6gPiav35aly3VhZ-iMM64E176dJlAUKBHcs34q464DXUCaNl9e6PBdxaJWflmDqn1uY7RL-RLe2Kwoy-VCNagqHTvX6lG8bd9T3FwsPzxH8dunZcMxDjaRN2hjRANxhPgNgDC81HdQ4u2RXlgY" width="290" height="626"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580100224023" width="290" height="626"></p>
 <h4 id="h_01HASQ4N820V3EVWVY3NXZCPGB" class="wysiwyg-text-align-center">Mobile App</h4>
 <h2 id="h_01GSX5TWD8JMMWBMSRZWYRJADT">Can I restrict access to Activities in my server?</h2>
 <p>Admins can revoke the ability to use Activities in their server through the “Use Activities” permission. This can be done by role, channel, or channel category. This permission is granted to everyone by default. When it is revoked, users in the selected role, channel, or category will lose the ability to start new Activities or join existing ones.</p>
