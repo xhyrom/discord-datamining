@@ -5,13 +5,13 @@
     <li>
         <a href="#h_01H06K2B6AWB50WXP92VRM8JN4" target="_self">How to Use Jamspace Whiteboard</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HCZ9W3XM1FN0R3BE42DN9EAC">Create &amp; Find Saved Boards</a></li>
-            <li><a href="#h_01H06K2M958PF5NWPZFKBEF3YT" target="_self">Drawing</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01H969Y74DAJAX99BFZWAXYA0S">Sticky Notes</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#01H96A0T74R12RMM76JJF1M5MK">GIFs &amp; Stickers</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGVMF2X2QPKV23FE6PWTBFVC">Upload Images &amp; GIFs</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#01H96A0ZYE7XSGWYBMS903EGMT">Shapes</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#01H96A17F8EVATHM4AHPE7TMFA">Writing</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGXNR96EKBAH8QHJ3Q9NFJMA">Create &amp; Find Saved Boards</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGXNRSDNWT3ZAAHXQJBNHW3J">Drawing</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGXNSA63KBKH97KRMQRTJX0G">Sticky Notes</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGXNSRG5CPB6RFWVB8VSF0SY">GIFs &amp; Stickers</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGXNTDYYDYQ3XC1PGW72WRRV">Upload Images &amp; GIFs</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGXNTMVBG4ADPCGG12TPW2G8">Shapes</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01HGXNTV8C8C160S920W01C5ZN">Writing</a></li>
         </ul>
     </li>
     <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#docs-internal-guid-27de6b05-7fff-3891-fc10-575955691904">Board Access</a></li>
@@ -26,7 +26,7 @@
 <h3 id="h_01HCZ9JSBRSQ3MME0Z83M5VNQP"><strong><span style="color: #434343;" data-darkreader-inline-color="">Before starting any Discord Activity on Desktop, please make sure to turn on Hardware Acceleration in User Settings &gt; Advanced.</span></strong></h3>
 <h1 id="h_01H06K2B6AWB50WXP92VRM8JN4">How to Use Jamspace Whiteboard</h1>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">You can use Jamspace Whiteboard to create anything you like, from drawings to diagrams to fun birthday cards, but here are some hot tips!</span></p>
-<h2 id="h_01HCZ9W3XM1FN0R3BE42DN9EAC"><span style="color: #2e3338;" data-darkreader-inline-color="">Create &amp; Find Saved Boards</span></h2>
+<h2 id="h_01HGXNR96EKBAH8QHJ3Q9NFJMA"><span style="color: #2e3338;" data-darkreader-inline-color="">Create &amp; Find Saved Boards</span></h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18339775596695" alt="image5.gif"></p>
 <p id="docs-internal-guid-e53fc468-7fff-62d5-5e96-058e95b4a1fa"><span style="color: #2e3338;" data-darkreader-inline-color="">When you open Jamspace Whiteboard, you’ll land on the board that was most recently updated within the channel. If you’d like to use a different board, you can create a new one or navigate to an existing board</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Tap the hamburger icon (also known as the menu icon) in the top left corner of the board.</span></p>
@@ -34,34 +34,34 @@
 <p class="wysiwyg-text-align-left"><span style="color: #2e3338;" data-darkreader-inline-color="">2. </span><span style="color: #2e3338;" data-darkreader-inline-color="">Browse the boards that are stored in the channel.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Tap to open a board, or create a new one. </span></p>
 <h3 id="docs-internal-guid-7e6b485f-7fff-4f63-2ad6-bee01e9c3f31"><strong><span style="color: #434343;" data-darkreader-inline-color="">Your boards are automatically saved to the channel or group message that it was created in. You can create, and view all boards in that space, from the board menu. If a board is not active for 90 days it will expire.</span></strong></h3>
-<h2 id="h_01H06K2SRD7EAWQ8MJKX35DKYQ">Drawing</h2>
+<h2 id="h_01HGXP1TNZTP48BGJ6WBNDDHXH"><span style="color: #434343;" data-darkreader-inline-color="">Drawing</span></h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18339775619223" alt="image2.gif"></p>
 <p>1. Bring up the toolbar at the bottom of the screen.<br>2. Select the icon that looks like a pencil.<br>3. Choose a default color or one from the color picker.<br>4. Create a masterpiece!</p>
-<h2 id="h_01HCZ9YAJHYKRGHFRDS0GWA2GW">Sticky Notes</h2>
+<h2 id="h_01HGXNSA63KBKH97KRMQRTJX0G">Sticky Notes</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18339775630359" alt="image7.gif"></p>
 <p id="docs-internal-guid-a15945be-7fff-4461-0aa5-484f34aa661b"><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the icon that looks like a paper sticky note.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Change color or font.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Press on the board to place the Sticky Note, and write on it!</span></p>
-<h2 id="01H96A0T74R12RMM76JJF1M5MK">GIFs &amp; Stickers</h2>
+<h2 id="h_01HGXNSRG5CPB6RFWVB8VSF0SY"><span style="color: #2e3338;" data-darkreader-inline-color="">GIFs &amp; Stickers</span></h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18339775638295" alt="image8.gif"></p>
 <p id="docs-internal-guid-1c9382a2-7fff-6c0b-0734-8951b142e4ce"><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the GIF icon.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Press the Sticker tab or the GIF tab, search in the text field.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Choose the Sticker or GIF you want, it will be placed on the board.</span></p>
-<h2 id="01HGXNKYRTNX8W4GW68CVXA17F">Upload Images &amp; GIFs</h2>
-<p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><span id="docs-internal-guid-25041afa-7fff-a156-6dd2-c8d6609fcced" style="color: #ff0000;"><img src="https://support.discord.com/hc/article_attachments/19584910004631" width="600" height="337"></span></span></p>
+<h2 id="h_01HGXNTDYYDYQ3XC1PGW72WRRV"><span style="color: #2e3338;" data-darkreader-inline-color="">Upload Images &amp; GIFs</span></h2>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><span id="docs-internal-guid-25041afa-7fff-a156-6dd2-c8d6609fcced" style="color: #ff0000;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19584910004631" width="600" height="337"></span></span></p>
 <p>1. Bring up the toolbar at the bottom of the screen.</p>
 <p>2. Select the Image icon (looks like an image with a “+”)</p>
 <p>3. Select an image or GIF from your device’s files / photos (accepted file formats are: .png, .jpeg, .jpg, and .gif)</p>
 <p>4. The image or GIF will automatically be placed on the board.</p>
-<h2 id="01H96A0ZYE7XSGWYBMS903EGMT">Shapes</h2>
+<h2 id="h_01HGXNTMVBG4ADPCGG12TPW2G8">Shapes</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181486103" alt="FilledandhollowShapesHelpCenter.gif" width="513" height="460"></p>
 <p id="docs-internal-guid-f32afb6c-7fff-b650-4b87-0168c106f313"><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the Shape icon.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Choose a shape, color, and whether it is filled or hollow.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Place a shape on the board by either tapping to place, or selecting and dragging.</span></p>
-<h2 id="01H96A17F8EVATHM4AHPE7TMFA">Writing</h2>
+<h2 id="h_01HGXNTV8C8C160S920W01C5ZN"><span style="color: #2e3338;" data-darkreader-inline-color="">Writing</span></h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181494807" alt="JamspaceTextHelpCenter.gif"></p>
 <p id="docs-internal-guid-3f80b064-7fff-f5da-a6df-b65d6c7b0a46"><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the Tt icon.</span></p>

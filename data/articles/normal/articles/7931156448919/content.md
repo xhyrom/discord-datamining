@@ -1,41 +1,46 @@
-<p><span style="font-weight: 400;">On Discord, you can automatically update your activity status to show the game you’re playing, an activity you’re doing that supports rich presence (like listening to Spotify), or if you’re attending a public Stage. </span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/7933525649559" alt="activity-status-example-user-icon.png"></p>
-<p><span style="font-weight: 400;">You can customize where and how your activity status shows up. Here’s a guide: </span></p>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
-    <li><a href="#h_01G9ZXP8R9CSNVDBCVTNM3H16S" target="_self"><span style="font-weight: 400;">Global Settings</span></a></li>
-    <li><a href="#h_01G9ZXPF3ZHMSYMQ3T161A1JA7" target="_self"><span style="font-weight: 400;">Server Settings</span></a></li>
-</ul>
-<h1><span style="font-weight: 400;">Activity Status Settings </span></h1>
-<h2 id="h_01G9ZXP8R9CSNVDBCVTNM3H16S"><span style="font-weight: 400;">Global Settings</span></h2>
-<p><span style="font-weight: 400;">These settings let you control how Activity Status shows up everywhere on Discord. </span></p>
-<ul>
-    <li style="font-weight: 400;" aria-level="1">
-        <p><span style="font-weight: 400;">Go to <strong>User Settings &gt; Activity Privacy</strong></span></p>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-        <p><span style="font-weight: 400;">You will see two toggles: </span></p>
+    <li><a href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HGXNM713J5VYHFGNKFD3180C">What is Activity Status?</a></li>
+    <li>
+        <a href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HGXNM713BPH879KGNHEC1DQZ">Activity Status Settings</a> 
+        <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HGXNM713HF96AEKDPXZ77G49">Global Settings</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HGXNM714M3XYM3DP2NJZ9KEX">Server Settings</a></li>
+        </ul>
     </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/7933528055063" alt="activity-status-global-settings-options.png"></p>
+<h1 id="h_01HGXNM713J5VYHFGNKFD3180C">What is Activity Status?</h1>
+<p>An activity status is automatically displayed when you’re participating in an activity that supports rich presence (like listening to <a href="https://support.discord.com/hc/en-us/articles/360000167212-" target="_blank" rel="noopener noreferrer">Spotify</a>), playing a game, or if you’re attending a public Stage. This will display both as your status in a server, but also in your profile and mini profile. </p>
+<p>Here are just some of the products that can be displayed through your activity status:</p>
 <ul>
-    <li style="font-weight: 400;" aria-level="1">
-        <strong>Display current activity as a status message:</strong><span style="font-weight: 400;"> This toggle controls whether or not anyone on Discord can see your activity status. If this setting is toggled on, your activity status will automatically be displayed in servers you are in and to your friends. You can control whether your activity status is shared in a particular server using that server’s “Activity Status” setting, as described below.</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-        <strong style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">Share your activity status by default when joining large servers:</strong><span style="font-weight: 400;">  When you join a new server with over 200 members, this toggle determines whether your “Activity Status” setting for that server defaults to on. If this toggle is on, your activity status will automatically be displayed when you join new servers.</span>
-    </li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360003953831-" target="_blank" rel="noopener noreferrer">Xbox</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919" target="_blank" rel="noopener noreferrer">PlayStation</a></li>
+    <li><a href="https://support.discord.com/hc/articles/9929188048023" target="_blank" rel="noopener noreferrer">Crunchyroll</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360000167212" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+    <li>And more!</li>
 </ul>
-<h3><span style="font-weight: 400;">If you do not want to automatically display your activity status when joining new servers with over 200 members, toggle this off. </span></h3>
-<p><em><span style="font-weight: 400;">In certain countries and certain situations, this setting might be defaulted OFF for you. You can always change your settings by following the instructions above. </span></em></p>
-<h2 id="h_01G9ZXPF3ZHMSYMQ3T161A1JA7"><span style="font-weight: 400;">Server Settings </span></h2>
-<p><span style="font-weight: 400;">These settings let you control how Activity Status shows up in individual servers. </span></p>
+<p>You can learn more about these through our connections article <a href="https://support.discord.com/hc/en-us/articles/8063233404823" target="_blank" rel="noopener noreferrer">here</a>. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19585065434903" width="453" height="514"></p>
+<p>You can customize where and how your activity status shows up. Which we’ll go over more below.</p>
+<h1 id="h_01HGXNM713BPH879KGNHEC1DQZ">Activity Status Settings </h1>
+<h2 id="h_01HGXNM713HF96AEKDPXZ77G49">Global Settings</h2>
+<p>These settings let you control how Activity Status shows up everywhere on Discord. Here’s how to access these settings and what each setting does.</p>
+<p>1. Tap on <strong>cogwheel</strong> [<img src="https://support.discord.com/hc/article_attachments/19585065455895" width="20" height="20">] next to your Discord username to access your <strong>User Settings</strong>.</p>
+<p>2. Then head to <strong>Activity Settings </strong>and tap on the<strong> Activity Privacy </strong>tab.</p>
+<p>3. Here you can enable or disable your activity status. If enabled, you’ll see a check mark. If disabled, you’ll see an x instead.</p>
+<p><strong>Display current activity as a status message</strong></p>
+<p>This toggle controls whether or not anyone on Discord can see your activity status. </p>
+<p><strong>Share your activity status by default when joining large servers</strong></p>
+<p>If you turn on ‘Display current activity as a status message’, your activity status will automatically be displayed in servers you join. </p>
 <ul>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Within a server, go to the server settings dropdown menu &gt; Privacy Settings </span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">You will see the below: </span></li>
+    <li>If you would not like to automatically display your activity status in new servers, toggle this off.  </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/8036882957591" alt="unknown__6_.png" width="606" height="138"></p>
-<ul>
-    <li style="font-weight: 400;" aria-level="1">
-        <strong>Share your activity status in this server:</strong><span style="font-weight: 400;"> This toggle controls whether or not everyone in a server can see your activity status. </span>
-    </li>
-</ul>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19585065467159" width="624" height="209"></p>
+<h3 id="h_01HGXNM7135DFZ11SFZGY21H7K"><span style="color: #434343;" data-darkreader-inline-color="">In certain countries and certain situations, this setting might be disabled by default for you. You can always change your settings by following the instructions <a href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HGXNM713HF96AEKDPXZ77G49">above</a>. </span></h3>
+<h2 id="h_01HGXNM714M3XYM3DP2NJZ9KEX">Server Settings </h2>
+<h3 id="h_01HGXNM714Z437FFR8EK9PJWDX"><span style="color: #434343;" data-darkreader-inline-color="">Although the Activity Status may be turned off for a specific server, you’ll still see the status on your end unless you have it fully turned off.</span></h3>
+<p>If you want to control which servers can and can not see your activity status, you can disable or enable the setting per server. Here’s how:</p>
+<p>1. Navigate to the server that you want to enable or disable the activity status on.</p>
+<p>2. Right-click on the server icon and then tap on <strong>Privacy Settings</strong>. </p>
+<p>3. Your activity status is enabled by default, unless you turn it off under your <a href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HGXNM713HF96AEKDPXZ77G49">Global Settings</a>. If enabled, you’ll see a check mark. If disabled, you’ll see an x instead.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19585089071895" width="433" height="102"></p>
