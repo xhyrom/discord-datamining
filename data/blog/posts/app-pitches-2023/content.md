@@ -64,7 +64,7 @@
             <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a6888d7df7c62af4fc2d8_90RsJpLSAFEZzo7FMAwJsnuOSfejYruQA8O6DR_lpQxBLe1z8lzyEzj0H0I63sEDx0BA95hHEuMIo1OpahdTrRGYf0P1qP_hB8WxRpEiQhC7TCqkkbFZ8qQ2-uQzs0o2mUz3ouguC-xg_fFe5GIFCJ0.jpeg" alt="The words “Paper, Paper AI, AI,” and the phrase “Create your story” on a gradient background."></div>
             </figure>
-            <p>One trait that doesn’t need to be added to this story: professionalism, because developer Georgiana’s already got that in spades. Judge Ann-Marie, Discord’s Director of Game Development, was extremely impressed by Georgina's professional pitch (she included a whole pitch deck for the judges to review!) and believes that she’ll go far, no matter what she does in life, which is part of why her entry is worthy of the <a href="https://discord.com/blog/app-pitches-2023#heading-9">Wildcard</a> award.</p>
+            <p>One trait that doesn’t need to be added to this story: professionalism, because developer Georgiana’s already got that in spades. Judge Ann-Marie, Discord’s Director of Game Development, was extremely impressed by Georgiana's professional pitch (she included a whole pitch deck for the judges to review!) and believes that she’ll go far, no matter what she does in life, which is part of why her entry is worthy of the <a href="https://discord.com/blog/app-pitches-2023#heading-9">Wildcard</a> award.</p>
         </div>
     </div>
     <div id="heading-7" class="rich-wrapper">
