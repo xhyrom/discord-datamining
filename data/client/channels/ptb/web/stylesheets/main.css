@@ -58602,7 +58602,7 @@ html .progress__4ef76 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -92899,6 +92899,13 @@ html .invoiceCancelRow_a8669b {
     cursor: pointer
 }
 
+.memberNameText__731e2 {
+    display: block;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
 .memberName__747da {
     display: flex;
     flex-direction: row;
@@ -124003,4 +124010,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.aa0791e095aec7125ed3.css.map*/
+/*# sourceMappingURL=app.bdcd9fff5a7a4896b257.css.map*/

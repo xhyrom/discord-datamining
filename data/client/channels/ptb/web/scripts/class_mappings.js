@@ -10775,6 +10775,7 @@
                 memberAvatar: "memberAvatar__0cf3a",
                 memberName: "memberName__747da",
                 memberNameContainer: "memberNameContainer__43e33",
+                memberNameText: "memberNameText__731e2",
                 memberRowContainer: "memberRowContainer_f0d0e5",
                 otherRoles: "otherRoles_a19529",
                 "redesign/channel-title/bold": "redesign-channel-title-bold_c9d07b",
