@@ -34,7 +34,7 @@
 <p class="wysiwyg-text-align-left"><span style="color: #2e3338;" data-darkreader-inline-color="">2. </span><span style="color: #2e3338;" data-darkreader-inline-color="">Browse the boards that are stored in the channel.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Tap to open a board, or create a new one. </span></p>
 <h3 id="docs-internal-guid-7e6b485f-7fff-4f63-2ad6-bee01e9c3f31"><strong><span style="color: #434343;" data-darkreader-inline-color="">Your boards are automatically saved to the channel or group message that it was created in. You can create, and view all boards in that space, from the board menu. If a board is not active for 90 days it will expire.</span></strong></h3>
-<h2 id="h_01HGXP1TNZTP48BGJ6WBNDDHXH"><span style="color: #434343;" data-darkreader-inline-color="">Drawing</span></h2>
+<h2 id="h_01HGXP1TNZTP48BGJ6WBNDDHXH">Drawing</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18339775619223" alt="image2.gif"></p>
 <p>1. Bring up the toolbar at the bottom of the screen.<br>2. Select the icon that looks like a pencil.<br>3. Choose a default color or one from the color picker.<br>4. Create a masterpiece!</p>
 <h2 id="h_01HGXNSA63KBKH97KRMQRTJX0G">Sticky Notes</h2>
@@ -155,7 +155,7 @@
 <p><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Q: What GIFs and Stickers can be used in Jamspace Whiteboard?</span></strong></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">A: Jamspace Whiteboard has a built-in GIF &amp; Sticker library that you can search from inside the Activity.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">To provide an enjoyable experience for the widest range of Discord users, we may use certain content filters so some GIFs &amp; Stickers may not appear in the search results. </span>Your “favorite” GIFs and Stickers from Discord will not populate in Jamspace Whiteboard.</p>
-<p><strong>Q: Why is my image failing to upload?</strong> <br>A: There are many reasons why an image upload might fail, such as incorrect file type or we've detected a possible <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a> violation. If you are experiencing an unexpected problem please report a bug to us.</p>
+<p><strong>Q: Why is my image failing to upload?</strong><br>A: There are many reasons why an image upload might fail, such as incorrect file type or we've detected a possible <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a> violation. If you are experiencing an unexpected problem please report a bug to us.</p>
 <p><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Q: How can I see who placed an object in Jamspace Whiteboard?</span></strong></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">A: Desktop: Press on any object to open a menu, you will see options to edit the selection, and the username and avatar of who placed it.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">Mobile: Tap any object to open a menu, you will see options to edit the selection, and the username and avatar of who placed it.</span></p>
