@@ -2574,16 +2574,6 @@
                 scroller: "scroller_e89578"
             }
         },
-        682165: function(e, t, a) {
-            "use strict";
-            e.exports = {
-                paused: "paused__0a1f1",
-                sparkle: "sparkle__48f5f",
-                sparkleContainer: "sparkleContainer__1ac4a",
-                sparklePlus: "sparklePlus__4ac14",
-                sparkleStar: "sparkleStar__4b23f"
-            }
-        },
         747287: function(e, t, a) {
             "use strict";
             e.exports = {
