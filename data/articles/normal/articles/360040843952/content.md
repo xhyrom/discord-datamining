@@ -33,15 +33,15 @@
 <h2 id="h_01HDEGBA68Z5V9DVYZG02YG8J8">Mobile</h2>
 <p>There are also 2 ways to enable Krisp through the mobile app.</p>
 <p><strong>Option 1</strong></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18496908700055" alt="krisp_mobile_setting.gif" width="502" height="1027"></p>
-<p>1. While connected to a voice channel, swipe up on your screen to pull up an additional menu.</p>
-<p>2. Next, you should see an option that says <strong>Noise Suppression</strong> tap to the right of it to enable it. </p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/19580010761495" width="360" height="778"></strong></p>
+<p>1. While connected to a voice channel, tap on the channel name in the top left corner.</p>
+<p>2. Next, scroll down until you see an option that says <strong>Noise Suppression</strong> and tap to the right of <strong>Krisp</strong> to enable it. </p>
 <p>3. After enabling or disabling, swipe back down to close the menu.</p>
 <p><strong>Option 2</strong></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18496921370519" alt="mobile_krisp.png" width="453" height="880"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580036898839" width="370" height="801"></p>
 <p>1. To enable Krisp, tap on your avatar in the bottom right corner and then tap on the cogwheel in the upper right to open <strong>User Settings.</strong></p>
 <p>2. Next scroll down to <strong>App Settings</strong> and tap on <strong>Voice.</strong> </p>
-<p>3. Scroll to <strong>Noise Suppression</strong> and here you can enable <strong>Krisp</strong> by tapping on it. </p>
+<p>3. Scroll to <strong>Noise Suppression</strong> and here you can enable <strong>Krisp</strong> by tapping on it.</p>
 <h1 id="h_01HDEGBA68ZFRKXF078FTWKRFY"><strong>Frequently Asked Questions</strong></h1>
 <p><strong>Q: How much does it cost?</strong></p>
 <p>A: Krisp is free when you use it with Discord. If you want to use it outside of Discord in other apps, you can check out their pricing <a href="https://api.krisp.ai/v2/resource/link/discord" target="_blank" rel="noopener noreferrer">here</a>.</p>

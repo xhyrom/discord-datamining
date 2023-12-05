@@ -1,37 +1,55 @@
-<p><span style="font-weight: 400;">Hey, we've all been there. Passwords are supposed to be difficult! When it’s time to set up a new password, you can check out this article for how to do so.</span></p>
-<p><span style="font-weight: 400;"><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></span></p>
+<p>Hey, we've all been there. Passwords are supposed to be difficult! Whether it’s time to set up a new password or you forget your old one, this guide will help you with navigating all things password-related.</p>
+<p><strong>What this article covers:</strong></p>
 <ul>
-    <li><a href="#h_01G0JRRM3D9AFP9J3CFRFF9V92" target="_self"><span style="font-weight: 400;">Password requirements</span></a></li>
-    <li><span style="font-weight: 400;"><a href="#h_01G0JRRX38XT37BV9MCZYFMVR8" target="_self">Where to reset your password</a><br></span></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93YCX2JB199SXJXY20G">Password Requirements</a></li>
+    <li>
+        <a href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93Y5XVH4NWKAAJSV7SS">How to change your password</a>
+        <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93YC2MXAG2ZVPM5KS9R">Desktop/Browser</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93ZK80XN4N92334FJPN">Mobile</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93YTS0XV71J7EQGVCYD">How to reset your password</a>
+        <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93ZCXMSCH791AR6QFVK">Desktop/Browser</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93ZK80XN4N92334FJPN">Mobile</a></li>
+        </ul>
+    </li>
 </ul>
-<h1 id="h_01G0JRRM3D9AFP9J3CFRFF9V92"><span style="font-weight: 400;">Password Requirements</span></h1>
-<h3><span style="font-weight: 400;">Note: This is currently part of an experiment to a small group of users.</span></h3>
-<p><span style="font-weight: 400;">When making your password for your Discord account, it must be </span><strong>a minimum of 8 characters</strong><span style="font-weight: 400;">. We will not accept passwords that are less than 8 characters.</span></p>
-<p><span style="font-weight: 400;">Be sure to use a secure password that you don't use anywhere else. Longer passwords are usually more secure than passwords with more symbols, numbers, or cases of letters. Using a password manager is a great way to generate, secure, and use strong passwords for each site you log in to.</span></p>
-<p><span style="font-weight: 400;">Depending on your region, additional password requirements may apply.</span></p>
-<h1 id="h_01G0JRRX38XT37BV9MCZYFMVR8"><span style="font-weight: 400;">Where to reset your password</span></h1>
-<p><span style="font-weight: 400;">If you want to change your password and you know your current password, you can reset the password in your User Settings.</span></p>
-<h2><span style="font-weight: 400;">Desktop and Browser clients</span></h2>
-<p><span style="font-weight: 400;">Press on the <strong>cog wheel</strong> in the bottom left corner of the client to open <strong>User Settings</strong>. In the <strong>My Account </strong>page, press the <strong>Change Password </strong>button and follow the prompts.</span></p>
-<h2><span style="font-weight: 400;">Mobile clients</span></h2>
-<p><strong>For iOS:</strong></p>
-<p><span style="font-weight: 400;">Press on your user avatar in the bottom right corner to open <strong>User Settings. </strong>Next, select <strong>Account </strong>then choose <strong>Password </strong>and follow the instructions.</span></p>
-<p><strong>For Android:</strong></p>
-<p><span style="font-weight: 400;">Press on your user avatar in the bottom right corner to open <strong>User Settings</strong>. Choose <strong>My Account</strong> then <strong>Change Password</strong> and follow the instructions. </span></p>
-<p> </p>
-<p><span style="font-weight: 400;">Alternatively, if you need to reset your password and you're not logged into your account, you can find a "Forgot Password" link in one of two places:<br></span></p>
-<h2>Discord's Website</h2>
-<p><span style="font-weight: 400;">Check if you’re logged into your account on the browser client by going to the Discord website by pressing </span><strong>Open Discord </strong><span style="font-weight: 400;">or </span><strong>Open Discord in a browser</strong><span style="font-weight: 400;">. If you are not logged in, then go to </span><a href="https://discordapp.com/login"><span style="font-weight: 400;">https://discord.com/login</span></a><span style="font-weight: 400;">. You'll find the forgot password link right under the password space:</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/5440366270487" alt="forgot-your-password-link-desktop-and-browser-client-login-page.png"></span></p>
-<p><span style="font-weight: 400;">Click the link, and you'll get an email with the rest of the steps to reset your password.</span></p>
-<h2>Inside the App</h2>
-<p><span style="font-weight: 400;">If you've already downloaded the desktop app on Windows or macOS, you'll find the link in the same place if you aren’t logged into the desired account:</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/5440366270487" alt="forgot-your-password-link-desktop-and-browser-client-login-page.png"></span></p>
-<p><em>Doesn't this window look the same? Well, that's because it is. Crazy.</em></p>
-<h2>Forgetting your Password on the go</h2>
-<p><span style="font-weight: 400;">If you're away from your computer (I know that's weird. But it happens to some of us.) and you want to log onto your mobile app, both the iOS and Android apps have the same link, but in slightly different spots:</span></p>
-<p><span class="wysiwyg-underline"><strong>For iOS:</strong></span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/5440351166103" alt="discord-login-forget-password-ios-client.png" width="482" height="1043"></p>
-<p><span class="wysiwyg-underline"><strong>For Android:</strong></span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/5440366191383" alt="Android-login-page-forgot-password.png" width="488" height="1193"></p>
-<h3>And that's that, easy ways to reset your password if you ever become forgetful! :)</h3>
+<h1 id="h_01HGXDF93YCX2JB199SXJXY20G">Password Requirements</h1>
+<p>When making your password for your Discord account, it must be a minimum of 8 characters. We will not accept passwords that are less than 8 characters.</p>
+<p>Be sure to use a secure password that you don't use anywhere else. Longer passwords are usually more secure than passwords with more symbols, numbers, or cases of letters. Using a password manager is a great way to generate, secure, and use strong passwords for each site you log in to.</p>
+<p>Depending on your region, additional password requirements may apply.</p>
+<h1 id="h_01HGXDF93Y5XVH4NWKAAJSV7SS">How to change your password</h1>
+<h3 id="h_01HGXDF93YM3Q2RR57BXQ582Q4">
+    <span style="color: #434343;" data-darkreader-inline-color="">If you have </span><a href="https://support.discord.com/hc/en-us/articles/219576828"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">2FA enabled</span></a><span style="color: #434343;" data-darkreader-inline-color=""> on your account, you’ll be prompted to enter your code before being able to change your password.</span>
+</h3>
+<p>If you want to change your password and you know your current password, you can reset the password under your <strong>User Settings</strong>. Let’s go over exactly how.</p>
+<h2 id="h_01HGXDF93YC2MXAG2ZVPM5KS9R">Desktop/Browser</h2>
+<p>1. Tap on <strong>cog wheel</strong> [<img src="https://support.discord.com/hc/article_attachments/19580052066583" width="20" height="20">] next to your Discord username to access your <strong>User Settings</strong>.</p>
+<p>2. Under the <strong>My Account </strong>tab, tap on <strong>Change Password</strong> to change your password.</p>
+<p>3. Type in your current password and the password you want to change to. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580052076951" width="577" height="532"></p>
+<h2 id="h_01HGXDF93YAF8Z74JME2FEERP8">Mobile </h2>
+<p>1. Tap on your avatar in the bottom right corner.</p>
+<p>2. Then tap on the <strong>cog wheel</strong> [<img src="https://support.discord.com/hc/article_attachments/19580052066583" width="20" height="20">] in the top right corner.</p>
+<p>3. Next, tap on<strong> Account</strong> under <strong>Account Settings</strong>. </p>
+<p>4. Finally, tap on <strong>Password</strong> and then enter your current password and new password. Tap on <strong>Change Password</strong> when you’re ready to change it.</p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19580008449815" width="342" height="742"></span></p>
+<h1 id="h_01HGXDF93YTS0XV71J7EQGVCYD">How to reset your password</h1>
+<h3 id="h_01HGXDF93Y8GE7EFMCS0QGYVT0">
+    <span style="color: #434343;" data-darkreader-inline-color="">If you have </span><a href="https://support.discord.com/hc/en-us/articles/219576828" target="_blank" rel="noopener noreferrer">2FA enabled</a><span style="color: #434343;" data-darkreader-inline-color=""> on your account, you’ll be prompted to enter your code before being able to reset your password.</span>
+</h3>
+<p>If you have forgotten what you set your password to, you can request to reset your password. Here’s how.</p>
+<h2 id="h_01HGXDF93ZCXMSCH791AR6QFVK">Desktop/Browser</h2>
+<p>1. Head to the login page in the app or head to <a href="http://discord.com/login" target="_blank" rel="noopener noreferrer">http://discord.com/login</a>.</p>
+<p>2. After entering the email address tied to your Discord account, tap on <strong>Forgot your password?</strong></p>
+<p>3. You’ll receive an email to the email address tied to your Discord account with instructions on how to reset your password. Follow the instructions in the email to reset your password.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580008452119" width="549" height="513"></p>
+<h2 id="h_01HGXDF93ZK80XN4N92334FJPN">Mobile</h2>
+<p>1. Head to the login page in the app or head to <a href="http://discord.com/login" target="_blank" rel="noopener noreferrer">http://discord.com/login</a> in your mobile device’s browser.</p>
+<p>2. After entering the email address tied to your Discord account, tap on <strong>Forgot your password?</strong></p>
+<p>3. You’ll receive an email to the email address tied to your Discord account with instructions on how to reset your password. Follow the instructions in the email to reset your password.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580052100503" width="338" height="734"></p>
+<h3 id="h_01HGXDF93ZXFRE81YB5XSCQY31"><span style="color: #434343;" data-darkreader-inline-color="">The Discord Support team cannot reset your password for you, however, if you run into any other issues with your password please reach out to the team through the support form: <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer">https://dis.gd/contact</a> </span></h3>

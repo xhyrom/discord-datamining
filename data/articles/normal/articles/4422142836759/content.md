@@ -60,23 +60,25 @@
 <h2 id="h_01GSX69W2WZT0BK92VH98H8R5D"><span id="docs-internal-guid-5413d2d3-7fff-f501-4277-0afe4e18d5e4">On Mobile</span></h2>
 <p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group direct message (GDM).</p>
 <p>2. To start an Activity, all you need to do is press on the Activity Launcher rocket ship icon</p>
-<h4 id="h_01HASQ4N82J4NQP460MMKYE6VN" class="wysiwyg-text-align-center"><img style="height: 332px; width: 152px;" src="https://support.discord.com/hc/article_attachments/14555066040215"></h4>
-<h4 id="h_01HASQ4N82ERHG6BV5K6YYT9SY" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color="">The Activity Rocket ship icon appears on the bottom left-hand side, or the one that appears when in focused view, while in a voice channel.</span></h4>
-<h4 id="h_01HASQ4N82YM5FA5DJZZ8AV2A2" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color=""><img style="height: 369px; width: 195px;" src="https://support.discord.com/hc/article_attachments/14555066039575"></span></h4>
-<h4 id="h_01HASQ4N829MY4BJE834P6B21R" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color="">While in a DM or GDM the Activity Launcher rocket ship icon appears while the DM or GDM call is open.</span></h4>
+<p><br><br></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024039959" width="321" height="692"></p>
+<h4 id="h_01HGXDC1ND0054W93GCNCPE8EK"><span style="color: #666666;" data-darkreader-inline-color="">The Activity Rocket ship icon appears on the bottom left-hand side, or the one that appears when in focused view, while in a voice channel.</span></h4>
+<p> </p>
+<h4 id="h_01HGXDC1NDNCJXG56TF9YVX0RQ" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19580024050583" width="354" height="766"></span></h4>
+<h4 id="h_01HGXDC1ND5DACGGSZ2RK3Z5MG"><span style="color: #666666;" data-darkreader-inline-color="">While in a DM or GDM the Activity Launcher rocket ship icon appears while the DM or GDM call is open.</span></h4>
 <p>3. Select the Activity you want to play from the Activity Shelf menu. You will need to provide authorization if you’ve never played your chosen Activity before.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120309834519" alt="mobile-Activities-shelf.png" width="218" height="472"></p>
-<p>4. (Optional) Have your friends join the Activity. To play, they need to be in the same Voice Channel as you and join the Activity you started. <span id="docs-internal-guid-5e8f48f2-7fff-e06a-4a49-652c4c37a84f">Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</span></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024057879" width="335" height="725"></p>
+<p>4. (Optional) Have your friends join the Activity. To play, they need to be in the same Voice Channel as you and join the Activity you started. Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</p>
 <h2 id="docs-internal-guid-a870a266-7fff-31f3-e3dd-0d66737259ce"><span class="wysiwyg-font-size-large"><strong>My mobile device gets really warm while playing Activities. How do I fix it?</strong></span></h2>
 <p>If your mobile device becomes warm to the touch while you’re playing an Activity, we recommend that you try the following:</p>
 <ul>
     <li>If you have our picture-in-picture feature engaged while playing an Activity, please minimize/close the picture-in-picture feature and keep the Activity in focus.</li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120311457303" alt="mobile-Activities-pip-example.png" width="219" height="474"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024062231" width="321" height="697"></p>
 <ul>
     <li>If you have your Video enabled while playing an Activity, please disable your mobile device camera by pressing on the Video camera icon and keep the Activity in focus.</li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120310167447" alt="mobile-turn-off-camera-for-activities.png" width="239" height="517"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026697879" width="343" height="743"></p>
 <ul>
     <li>If you have any apps opened in the background, please close out those apps.</li>
 </ul>
@@ -88,23 +90,23 @@
 <p class="wysiwyg-text-align-left"><span id="docs-internal-guid-6027255a-7fff-ac65-2001-950a5d69f256">Fellow server members can also simply join a voice channel with an ongoing Activity and press or tap the </span><strong>Join Activity </strong>button on the Activity tile in the focused voice channel view.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275384343" alt="desktop-join-activity-in-VC.png"></p>
 <h4 id="h_01HASQ4N82K41DEKBM79CKTY4Y" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120309984023" alt="mobile-join-activity-in-VC.png" width="219" height="474"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026701079" width="341" height="739"></p>
 <h4 id="h_01HASQ4N82CHW2MYD7ZSBB2CHZ" class="wysiwyg-text-align-center">Mobile App</h4>
 <p class="wysiwyg-text-align-left"><span id="docs-internal-guid-7e3dc4a7-7fff-41da-7072-351f45f43527">If you have “</span><strong>Display current activity as a status message</strong>” toggled on in your user settings, then friends who can join your current Voice Channel can also join your Activity by viewing your status or your profile.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275538583" alt="desktop-profile-status-invite-to-activity.png" width="270" height="484"></p>
 <h4 id="h_01HASQ4N825453MPCP7637BW2V" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120310118679" alt="mobile-profile-status-join-activity.png" width="280" height="606"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026705559" width="368" height="797"></p>
 <h4 id="h_01HASQ4N82EXSKBVZY7TAZKE5W" class="wysiwyg-text-align-center">Mobile App</h4>
 <h2 id="h_01GSX5TN2992T3KWK0FG44QXMG">How do I end or change an Activity?</h2>
 <p><span id="docs-internal-guid-7567de62-7fff-9bff-50f5-adf0cfa86397">To leave an Activity, select the Activity exit icon in the Voice Channel controls. Leaving the Voice Channel will also do the trick!</span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275526679" alt="desktop-leave-activity-buttons.png"></p>
 <h4 id="h_01HASQ4N82NB6DE116YXAMNX80" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120311773463" alt="mobile-leave-activity-buton-or-choose-new-activity.png" width="242" height="524"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024091543" width="365" height="789"></p>
 <h4 id="h_01HASQ4N820RD5RTKQXRQX4MD3" class="wysiwyg-text-align-center">Mobile App</h4>
 <p><span id="docs-internal-guid-eab3f62f-7fff-bf83-66f8-74abcef4bd3b">If you want to switch to another Activity, you can just select another Activity from the Shelf by pressing the rocket ship icon. Joining a new Activity will automatically remove you from the old Activity, so you can do this while you’re still in an Activity.</span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120306613655" alt="desktop-activities-button-in-VC.png"></p>
 <h4 id="h_01HASQ4N82647RD63H86518XAA" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120309837463" alt="mobile-choose-new-activity-button.png" width="239" height="518"></p>
+<p class="wysiwyg-text-align-center"><img src="https://lh7-us.googleusercontent.com/bABvF6gPiav35aly3VhZ-iMM64E176dJlAUKBHcs34q464DXUCaNl9e6PBdxaJWflmDqn1uY7RL-RLe2Kwoy-VCNagqHTvX6lG8bd9T3FwsPzxH8dunZcMxDjaRN2hjRANxhPgNgDC81HdQ4u2RXlgY" width="290" height="626"></p>
 <h4 id="h_01HASQ4N820V3EVWVY3NXZCPGB" class="wysiwyg-text-align-center">Mobile App</h4>
 <h2 id="h_01GSX5TWD8JMMWBMSRZWYRJADT">Can I restrict access to Activities in my server?</h2>
 <p>Admins can revoke the ability to use Activities in their server through the “Use Activities” permission. This can be done by role, channel, or channel category. This permission is granted to everyone by default. When it is revoked, users in the selected role, channel, or category will lose the ability to start new Activities or join existing ones.</p>
