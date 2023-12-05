@@ -67010,13 +67010,14 @@ input::-webkit-inner-spin-button {
 
 .name_c08dbc {
     flex: 1;
-    z-index: 1
+    z-index: 1;
+    display: flex;
+    align-items: center
 }
 
-.favoritesInfo__34e00 {
-    margin-top: 2px;
-    margin-left: 4px;
-    margin-bottom: -2px
+.favoritesIcon__95de7 {
+    margin-right: 8px;
+    margin-bottom: 2px
 }
 
 .enable-forced-colors .container__7c79d {
@@ -124045,4 +124046,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5e05a4849219756671e4.css.map*/
+/*# sourceMappingURL=app.f16a0eb965cbad0e25d8.css.map*/
