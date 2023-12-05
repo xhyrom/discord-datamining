@@ -14773,7 +14773,7 @@
                 communityInfoVisible: "communityInfoVisible_b0482d",
                 container: "container__7c79d",
                 dropdown: "dropdown_cd99f3",
-                favoritesInfo: "favoritesInfo__34e00",
+                favoritesIcon: "favoritesIcon__95de7",
                 hasBanner: "hasBanner_e78601",
                 hasSubheader: "hasSubheader__2064b",
                 header: "header__104ca",
