@@ -26,7 +26,7 @@
 <h3 id="h_01HCZ9JSBRSQ3MME0Z83M5VNQP"><strong><span style="color: #434343;" data-darkreader-inline-color="">Before starting any Discord Activity on Desktop, please make sure to turn on Hardware Acceleration in User Settings &gt; Advanced.</span></strong></h3>
 <h1 id="h_01H06K2B6AWB50WXP92VRM8JN4">How to Use Jamspace Whiteboard</h1>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">You can use Jamspace Whiteboard to create anything you like, from drawings to diagrams to fun birthday cards, but here are some hot tips!</span></p>
-<h2 id="h_01HGXNR96EKBAH8QHJ3Q9NFJMA"><span style="color: #2e3338;" data-darkreader-inline-color="">Create &amp; Find Saved Boards</span></h2>
+<h2 id="h_01HGXNR96EKBAH8QHJ3Q9NFJMA">Create &amp; Find Saved Boards</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18339775596695" alt="image5.gif"></p>
 <p id="docs-internal-guid-e53fc468-7fff-62d5-5e96-058e95b4a1fa"><span style="color: #2e3338;" data-darkreader-inline-color="">When you open Jamspace Whiteboard, you’ll land on the board that was most recently updated within the channel. If you’d like to use a different board, you can create a new one or navigate to an existing board</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Tap the hamburger icon (also known as the menu icon) in the top left corner of the board.</span></p>
@@ -43,13 +43,13 @@
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the icon that looks like a paper sticky note.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Change color or font.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Press on the board to place the Sticky Note, and write on it!</span></p>
-<h2 id="h_01HGXNSRG5CPB6RFWVB8VSF0SY"><span style="color: #2e3338;" data-darkreader-inline-color="">GIFs &amp; Stickers</span></h2>
+<h2 id="h_01HGXNSRG5CPB6RFWVB8VSF0SY">GIFs &amp; Stickers</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18339775638295" alt="image8.gif"></p>
 <p id="docs-internal-guid-1c9382a2-7fff-6c0b-0734-8951b142e4ce"><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the GIF icon.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Press the Sticker tab or the GIF tab, search in the text field.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Choose the Sticker or GIF you want, it will be placed on the board.</span></p>
-<h2 id="h_01HGXNTDYYDYQ3XC1PGW72WRRV"><span style="color: #2e3338;" data-darkreader-inline-color="">Upload Images &amp; GIFs</span></h2>
+<h2 id="h_01HGXNTDYYDYQ3XC1PGW72WRRV">Upload Images &amp; GIFs</h2>
 <p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><span id="docs-internal-guid-25041afa-7fff-a156-6dd2-c8d6609fcced" style="color: #ff0000;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19584910004631" width="600" height="337"></span></span></p>
 <p>1. Bring up the toolbar at the bottom of the screen.</p>
 <p>2. Select the Image icon (looks like an image with a “+”)</p>
@@ -61,7 +61,7 @@
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the Shape icon.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Choose a shape, color, and whether it is filled or hollow.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Place a shape on the board by either tapping to place, or selecting and dragging.</span></p>
-<h2 id="h_01HGXNTV8C8C160S920W01C5ZN"><span style="color: #2e3338;" data-darkreader-inline-color="">Writing</span></h2>
+<h2 id="h_01HGXNTV8C8C160S920W01C5ZN">Writing</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181494807" alt="JamspaceTextHelpCenter.gif"></p>
 <p id="docs-internal-guid-3f80b064-7fff-f5da-a6df-b65d6c7b0a46"><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the Tt icon.</span></p>
