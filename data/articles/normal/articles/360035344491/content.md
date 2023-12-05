@@ -64,7 +64,9 @@
     </li>
 </ul>
 <p id="docs-internal-guid-1542ec94-7fff-2400-4d6c-8fd69cfd0273">Unfortunately, if you are a <strong>Nitro trial member, Nitro Basic, Nitro Classic, or Server Boosting</strong> <strong>member</strong>, you are ineligible to claim this promotion.</p>
-<h3 id="h_01HE3W5FZ40RFXJGZ4T6A5QNP2"><span style="color: #434343;">Note: If you claimed your Nitro membership from the Xbox Game Pass promotion, you will not be eligible to redeem a Xbox Game Pass for PC Code in your Gift Inventory!</span></h3>
+<h3 id="docs-internal-guid-73f54c41-7fff-74c3-8d71-f9dcacbaaefb">
+    <span style="color: #434343;">Note: Xbox Game Pass for PC is only available to new Xbox Game Pass subscribers and Nitro members within eligible regions. If you have claimed your Nitro membership from the </span><a href="https://support.discord.com/hc/en-us/articles/360047412672" target="_blank" rel="noopener noreferrer">Xbox Game Pass promotion</a><span style="color: #434343;">, you will not be eligible to redeem a Xbox Game Pass for PC Code in your Gift Inventory!</span>
+</h3>
 <h2 id="h_01HE3W5FZ4DBWTE2WV7RGQP24Q"><strong>Step By Step Claim Instructions </strong></h2>
 <p><strong>1) Log into Your Discord account and head to the Gift Inventory tab. </strong></p>
 <p>If you’re a <strong>Discord Nitro member,</strong> start by logging into your Discord account. </p>
