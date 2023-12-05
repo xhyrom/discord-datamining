@@ -1,23 +1,23 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13YPGXWD5Y2RPFXT6P">How do I Cancel my Nitro or Nitro Basic subscription?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13YPGXWD5Y2RPFXT6P">How do I Cancel my Nitro or Nitro Basic subscription?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13Z8V328JEPDSFM21N">Desktop/Browser</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13NGS5M7VESTFQTYT0">Mobile</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13Z8V328JEPDSFM21N">Desktop/Browser</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13NGS5M7VESTFQTYT0">Mobile</a></li>
         </ul>
     </li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13GJJ2MQ080K8P5XAG">How do I Cancel my Server Boost subscription?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13GJJ2MQ080K8P5XAG">How do I Cancel my Server Boost subscription?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13YMX447P5J0JYGRRH">Desktop/Browser</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13D6WYJQMXYV850W2E">Mobile</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13YMX447P5J0JYGRRH">Desktop/Browser</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13D6WYJQMXYV850W2E">Mobile</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG130EZKGQQ03A3ZHFEY">How do I Cancel my Server subscription?</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13G0RWJRW9H0NW53EF">How do I Cancel my Premium App subscription?</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG13S2Y2NKK1H1YJBB8A">How do I Re-subscribe after canceling my subscription?</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HGXEYG139RRPM6W0K67RWS8N">What if I can’t access my Discord and need to cancel?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG130EZKGQQ03A3ZHFEY">How do I Cancel my Server subscription?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13G0RWJRW9H0NW53EF">How do I Cancel my Premium App subscription?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG130B6SFP2DWZTYQAEJ">How do I Re-subscribe after canceling my subscription?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG139RRPM6W0K67RWS8N">What if I can’t access my Discord and need to cancel?</a></li>
 </ul>
 <p>You can cancel any of your Discord subscriptions at any time. Once canceled, your subscription will end at the end of your current billing period. </p>
 <p>Subscriptions need to be canceled on the same device type where the purchase was originally made. For example, if you purchased Nitro through the desktop app, you must cancel it through the desktop app or browser. If you purchased through a mobile device, you can only cancel through a mobile device.</p>
