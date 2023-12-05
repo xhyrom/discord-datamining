@@ -1,0 +1,31 @@
+{
+  "id": 19580873036695,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/19580873036695.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/19580873036695-How-to-cancel-your-Nitro-Server-Boosting-or-other-Discord-subscriptions",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360002436411,
+  "created_at": "2023-12-05T17:07:59Z",
+  "name": "How to cancel your Nitro, Server Boosting, or other Discord subscriptions",
+  "title": "How to cancel your Nitro, Server Boosting, or other Discord subscriptions",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-12-05T17:08:06Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "server boost",
+    "nitro",
+    "nitro basic",
+    "how to cancel",
+    "discord subscriptions",
+    "cancel"
+  ]
+}
