@@ -113406,18 +113406,24 @@ html .invoiceCancelRow_c1bfe7 {
 }
 
 .featureCardImg__0f747 {
-    padding: 24px 16px 0
+    padding: 24px 16px 0;
+    width: 179px;
+    height: 125px
 }
 
 .featureCardImg__0f747.wideStyle__37e4e {
     padding: 0 16px;
-    width: 88px
+    width: 88px;
+    height: 111px
 }
 
 .featureCardTextGroup_e7ad7d {
     display: flex;
     flex-direction: column;
-    padding: 12px
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px
 }
 
 .featureCardTextHeader_e1d32c {
@@ -124142,4 +124148,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.74e0401acdec993cde56.css.map*/
+/*# sourceMappingURL=app.85888170f0e8de2826d8.css.map*/
