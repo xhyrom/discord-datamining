@@ -52,7 +52,9 @@
     </li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><strong>Color <a href="https://support.discord.com/hc/en-us/articles/207260127" target="_blank" rel="noopener noreferrer">Themes</a> for your Discord app:</strong> Add your vibe to the app with unique themes only available to Nitro subscribers.   </span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><a href="https://support.discord.com/hc/en-us/articles/12612888127767"><strong><span style="color: #1155cc;" data-darkreader-inline-color="">Soundboard</span></strong></a><strong> anywhere:</strong> Use any Soundboard from a server you’re in, anywhere you have permissions to use them in.</span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><strong><span id="docs-internal-guid-ff9f9823-7fff-279d-5208-614f1ee83c60">Special </span></strong><a href="https://support.discord.com/hc/articles/17162747936663" target="_blank" rel="noopener noreferrer">Shop</a><strong> Perks</strong>: Get special member pricing on all Shop purchases and Nitro exclusive items in the Shop.</span></li>
+    <li style="font-weight: 400;" aria-level="1">
+        <strong><span id="docs-internal-guid-8469ce58-7fff-9f29-f26f-227d7dcb2cce">Special </span></strong><a href="https://support.discord.com/hc/en-us/articles/17162747936663" target="_blank" rel="noopener noreferrer">Shop</a><strong> Perks</strong>: Get special member pricing on all Shop purchases and Nitro exclusive items in the Shop.
+    </li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><strong><span id="docs-internal-guid-f1768d34-7fff-bc91-0e13-762712352a41">Unlimited </span><span id="docs-internal-guid-f1768d34-7fff-bc91-0e13-762712352a41"></span></strong><a href="https://support.discord.com/hc/en-us/articles/12102061808663"><strong>Super Reactions</strong></a><strong>:</strong> Bring an extra burst of energy and hype up chat with animated reactions.</span></li>
 </ol>
 <h2 id="h_01GFV3P6JCBPK991K73KW8C70B"><strong>Nitro Basic</strong></h2>
@@ -115,6 +117,8 @@
 <p><span style="font-weight: 400;">A: Server Boosts are a way to show support for your favorite communities. Each Boost that you give to a server helps collectively unlock perks for everyone in the server to enjoy. You can learn more about </span><a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer">Server Boosting here</a><span style="font-weight: 400;">! </span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: I’m having issues with my payment method when I try to buy a Nitro or Nitro Basic subscription.</strong></span></p>
 <p><span style="font-weight: 400;">A: If you’re having trouble with your payment method or if you have any questions about how Discord billing works, you can check out this article </span><a href="https://support.discord.com/hc/en-us/articles/360017693772" target="_blank" rel="noopener noreferrer">here</a><span style="font-weight: 400;">.</span></p>
+<p id="docs-internal-guid-58cf7475-7fff-01d4-ff85-6b1f2433dbac"><span class="wysiwyg-font-size-large"><strong>Q: Can I gift Nitro to a friend?</strong></span></p>
+<p><span style="font-weight: 400;">A: Yes! Check out this <a href="https://support.discord.com/hc/articles/360020877112" target="_blank" rel="noopener noreferrer">support article on how to gift Discord Nitro to a friend</a>.</span></p>
 <h2 id="h_01HBCK2APPN2Y15C13HGT52NWZ"><strong>Classic</strong></h2>
 <p><span class="wysiwyg-font-size-large"><strong>Q: I have a Nitro Classic subscription, but I no longer see Nitro Classic in the UI. Can I still subscribe to Nitro Classic?</strong></span></p>
 <p><span style="font-weight: 400;">A: If you have an active Nitro Classic subscription, you can keep your current plan. Please note that if you cancel your subscription, you will not be able to re-subscribe to Classic. </span></p>
@@ -141,7 +145,7 @@
 <p><span class="wysiwyg-font-size-large"><strong>Q: Do you offer Nitro and Nitro Basic in my local currency?</strong></span></p>
 <p><span style="font-weight: 400;">A: We are constantly working to expand the availability of accepted currencies for Nitro and Nitro Basic. Check </span><a href="https://support.discord.com/hc/en-us/articles/4407269525911" target="_blank" rel="noopener noreferrer">this article</a><span style="font-weight: 400;"> for information on localized pricing.</span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: Can I gift Nitro Basic to a friend? </strong></span></p>
-<p><span style="font-weight: 400;">A: As of December 16, 2022, gifting Nitro Basic is now available on the desktop/browser clients and the mobile clients!<br></span></p>
+<p><span style="font-weight: 400;">A: <span id="docs-internal-guid-3ca05bc3-7fff-fe7a-993e-3d2cedafcf64">A: Gifting Nitro Basic is available on the desktop/browser clients and the mobile clients. To gift Nitro Basic, you must go to the </span><strong>Nitro</strong> page which you can find by pressing the Discord logo in your desktop or browser app or you can go to the Nitro page in your <strong>User Settings.</strong> Learn more about <a href="https://support.discord.com/hc/articles/360020877112" target="_blank" rel="noopener noreferrer">Nitro Gifting here</a>.<br></span></p>
 <p> </p>
 <p> </p>
 <p> </p>
