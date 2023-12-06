@@ -11,7 +11,7 @@
 <h1 id="h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</h1>
 <p id="docs-internal-guid-06d82dee-7fff-3f1f-f01d-d16bf0924909">Once you enter the Shop, you will be able to preview and purchase available avatar decorations and profile effects! Nitro members can also claim any Nitro exclusive items while in the Shop! </p>
 <h3 id="h_01HDMK5TEP5B8G32PSB4RX24MG">Selections available for purchase in the Shop will change periodically and may be available for a limited time. However, any purchased items are yours to keep and can be used at any time.</h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18566301157527" alt="image1.png"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-cc44709e-7fff-de9d-20e9-c2ebcbe2461e"><img src="https://support.discord.com/hc/article_attachments/19612054117399" width="624" height="452"></span></p>
 <p>You can learn more about customizing your profile by heading over to our Custom Profiles article <a href="https://support.discord.com/hc/en-us/articles/4403147417623" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
 <h3 id="h_01HDMK6AQ36K30F267HFT18CV1">At this time, you can only access the Shop on the desktop app or your browser.</h3>
