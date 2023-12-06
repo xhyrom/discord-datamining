@@ -26409,7 +26409,8 @@
                         reason: i
                     } = e, a = r.default.getOrCreate(t);
                     if (null == a || !a.has(n)) return !1;
-                    a = a.update(n, e => ((e = e.set("state", M.MessageStates.SEND_FAILED)).isCommandType() && (e = (e = e.set("interactionError", null != i ? i : "")).set("flags", (0, T.addFlag)(e.flags, M.MessageFlags.EPHEMERAL))), e)), r.default.commit(a)
+                    let l = a.get(n, !0);
+                    a = (null == l ? void 0 : l.isPoll()) === !0 ? a.remove(n) : a.update(n, e => ((e = e.set("state", M.MessageStates.SEND_FAILED)).isCommandType() && (e = (e = e.set("interactionError", null != i ? i : "")).set("flags", (0, T.addFlag)(e.flags, M.MessageFlags.EPHEMERAL))), e)), r.default.commit(a)
                 },
                 MESSAGE_SEND_FAILED_AUTOMOD: k,
                 MESSAGE_EDIT_FAILED_AUTOMOD: k,
@@ -33909,4 +33910,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.a273954e5f09d9765c05.js.map
+//# sourceMappingURL=67615.dc45b27578c5ca7ba5b3.js.map
