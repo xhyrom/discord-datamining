@@ -55,7 +55,7 @@
 <h2 id="h_01H93M0X2JH7F0M2VBG87VN3HH">Mobile</h2>
 <p>1. Navigate to a server and join your intended voice channel.</p>
 <p>2. While in the voice channel, tap on the screen to reveal a toolbar at the bottom of the screen.  From there, drag the toolbar upwards and tap the <strong>Soundboard</strong> option at the top of the menu.3. After tapping the <strong>Soundboard</strong> option, you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
-<p id="h_01HEK3NJK5AACF9745AR7DD5HX" class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580023679511" width="288" height="624"></p>
+<p id="h_01HEK3NJK5AACF9745AR7DD5HX" class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19613173405975" alt="soundboard_mobile_how_to_send.gif" width="299" height="646"></p>
 <h2 id="h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</h2>
 <p>To upload new sounds press on the <strong>Add Sound</strong> button with the Soundboard panel open.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931070997527" alt="image3.png"></p>
