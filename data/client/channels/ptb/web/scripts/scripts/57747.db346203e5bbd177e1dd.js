@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["48449"], {
+    ["57747"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -6841,6 +6841,111 @@
                     autoTrackExposure: !1
                 }).ignore
         },
+        98443: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useNavPeekExperiment: function() {
+                    return c
+                },
+                getNavPeekExperimentConfig: function() {
+                    return h
+                }
+            });
+            var i = n("884691"),
+                s = n("917351"),
+                a = n("862205");
+            let o = {
+                    removePeek: !1,
+                    removePeekSubtle: !1,
+                    removePeekRoundRight: !1,
+                    removePeekEdge: !1,
+                    removeForwardSwipe: !1,
+                    showNewPanels: !1
+                },
+                r = [{
+                    id: 0,
+                    label: "Control",
+                    config: {
+                        ...o,
+                        showNewPanels: !0
+                    }
+                }, {
+                    id: 1,
+                    label: "Remove peek",
+                    config: {
+                        ...o,
+                        showNewPanels: !0,
+                        removePeek: !0
+                    }
+                }, {
+                    id: 2,
+                    label: "Remove peek (subtle peek}",
+                    config: {
+                        ...o,
+                        showNewPanels: !0,
+                        removePeek: !0,
+                        removePeekSubtle: !0
+                    }
+                }, {
+                    id: 3,
+                    label: "Remove peek (round right corner)",
+                    config: {
+                        ...o,
+                        showNewPanels: !0,
+                        removePeek: !0,
+                        removePeekRoundRight: !0
+                    }
+                }, {
+                    id: 4,
+                    label: "Remove peek + flush right edge",
+                    config: {
+                        ...o,
+                        showNewPanels: !0,
+                        removePeek: !0,
+                        removePeekEdge: !0
+                    }
+                }, {
+                    id: 5,
+                    label: "Remove peek + flush right edge + remove forward swipe",
+                    config: {
+                        ...o,
+                        showNewPanels: !0,
+                        removePeek: !0,
+                        removePeekEdge: !0,
+                        removeForwardSwipe: !0
+                    }
+                }],
+                l = (0, a.createExperiment)({
+                    kind: "user",
+                    id: "2023-12_mobile_redesign_nav_peek_existing_users",
+                    label: "Mobile Redesign - Nav Experiment: Peek - Existing Users",
+                    defaultConfig: o,
+                    treatments: r
+                }),
+                u = (0, a.createExperiment)({
+                    kind: "user",
+                    id: "2023-12_mobile_redesign_nav_peek_new_users",
+                    label: "Mobile Redesign - Nav Experiment: Peek - New Users",
+                    defaultConfig: o,
+                    treatments: r
+                });
+
+            function d(e, t) {
+                return (0, s.mergeWith)({}, e, t, (e, t) => e || t)
+            }
+
+            function c(e, t) {
+                let n = l.useExperiment(e, t),
+                    s = u.useExperiment(e, t);
+                return i.useMemo(() => d(n, s), [n, s])
+            }
+
+            function h(e, t) {
+                let n = l.getCurrentConfig(e, t),
+                    i = u.getCurrentConfig(e, t);
+                return d(n, i)
+            }
+        },
         693051: function(e, t, n) {
             "use strict";
 
@@ -6954,19 +7059,19 @@
             let i;
             n.r(t), n.d(t, {
                 isOnNewPanels: function() {
-                    return m
-                },
-                useOnNewPanels: function() {
                     return S
                 },
-                isSplitMessagesTab: function() {
+                useOnNewPanels: function() {
                     return g
                 },
-                isSplitMessagesTabAndOnMessagesTab: function() {
+                isSplitMessagesTab: function() {
                     return _
                 },
-                shouldHandleNewPanelsRoute: function() {
+                isSplitMessagesTabAndOnMessagesTab: function() {
                     return v
+                },
+                shouldHandleNewPanelsRoute: function() {
+                    return C
                 }
             });
             var s = n("95410"),
@@ -6976,17 +7081,18 @@
                 l = n("21121"),
                 u = n("699145"),
                 d = n("102425"),
-                c = n("18108"),
-                h = n("446411"),
-                p = n("491246"),
-                f = n("49111");
+                c = n("98443"),
+                h = n("18108"),
+                p = n("446411"),
+                f = n("491246"),
+                E = n("49111");
 
-            function E(e) {
-                (0, c.updateIsInNewPanels)(e), i !== e && (s.default.set("isOnNewPanels", e), i = e)
+            function m(e) {
+                (0, h.updateIsInNewPanels)(e), i !== e && (s.default.set("isOnNewPanels", e), i = e)
             }
 
-            function m() {
-                return (0, l.isInMainTabsExperiment)() ? !!(0, h.isOnGlobalPanels)() || (a.default.get("new_panels") ? (E(!0), !0) : r.default.hasLoadedExperiments || void 0 === i ? d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
+            function S() {
+                return (0, l.isInMainTabsExperiment)() ? !!(0, p.isOnGlobalPanels)() || (a.default.get("new_panels") ? (m(!0), !0) : r.default.hasLoadedExperiments || void 0 === i ? d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
                     location: "isOnNewPanels"
                 }, {
                     autoTrackExposure: !1
@@ -7002,37 +7108,54 @@
                     location: "isOnNewPanels"
                 }, {
                     autoTrackExposure: !1
-                }).showPanels ? (E(!0), !0) : (E(!1), !1) : i) : (E(!1), !1)
+                }).showPanels || (0, c.getNavPeekExperimentConfig)({
+                    location: "isOnNewPanels"
+                }, {
+                    autoTrackExposure: !1
+                }).showNewPanels ? (m(!0), !0) : (m(!1), !1) : i) : (m(!1), !1)
             }
 
-            function S() {
+            function g() {
                 let e = (0, l.useInMainTabsExperiment)(),
                     t = (0, o.default)("new_panels"),
-                    n = d.MainTabsV2PanelsExperimentExistingUsers.useExperiment({
+                    n = (0, c.useNavPeekExperiment)({
                         location: "useOnNewPanels"
                     }, {
                         autoTrackExposure: !1
                     }).showNewPanels,
-                    i = d.MainTabsV2PanelsExperimentNewUsers.useExperiment({
+                    i = d.MainTabsV2PanelsExperimentExistingUsers.useExperiment({
                         location: "useOnNewPanels"
                     }, {
                         autoTrackExposure: !1
                     }).showNewPanels,
-                    s = u.MainTabsV2OnePercentExperimentExistingUsers.useExperiment({
+                    s = d.MainTabsV2PanelsExperimentNewUsers.useExperiment({
+                        location: "useOnNewPanels"
+                    }, {
+                        autoTrackExposure: !1
+                    }).showNewPanels,
+                    a = u.MainTabsV2OnePercentExperimentExistingUsers.useExperiment({
                         location: "useOnNewPanels"
                     }, {
                         autoTrackExposure: !1
                     }).showPanels,
-                    a = u.MainTabsV2OnePercentExperimentNewUsers.useExperiment({
+                    r = u.MainTabsV2OnePercentExperimentNewUsers.useExperiment({
                         location: "useOnNewPanels"
                     }, {
                         autoTrackExposure: !1
                     }).showPanels;
-                return e && (t || n || i || s || a)
+                return e && (t || n || i || s || a || r)
             }
 
-            function g() {
-                return !!(0, l.isInMainTabsExperiment)() && (!!(!m() || (0, h.isOnGlobalPanels)() || a.default.get("panels_split_messages_tab")) || !!d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
+            function _() {
+                if (!(0, l.isInMainTabsExperiment)()) return !1;
+                let {
+                    showNewPanels: e
+                } = (0, c.getNavPeekExperimentConfig)({
+                    location: "isSplitMessagesTab"
+                }, {
+                    autoTrackExposure: !1
+                });
+                return !!(e || !S() || (0, p.isOnGlobalPanels)() || a.default.get("panels_split_messages_tab")) || !!d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
@@ -7048,17 +7171,17 @@
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
-                }).showPanels || !1)
+                }).showPanels || !1
             }
 
-            function _() {
-                if (!g()) return !1;
-                let e = (0, p.default)();
+            function v() {
+                if (!_()) return !1;
+                let e = (0, f.default)();
                 return (null == e ? void 0 : e.name) === "messages"
             }
 
-            function v(e) {
-                return !(!m() || (0, h.isOnGlobalPanels)()) && (!g() || null != e && e !== f.ME)
+            function C(e) {
+                return !(!S() || (0, p.isOnGlobalPanels)()) && (!_() || null != e && e !== E.ME)
             }
         },
         491246: function(e, t, n) {
@@ -14963,7 +15086,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "251682"
+                                build_number: "251687"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21897,4 +22020,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48449.7c25df79355d1fb654ed.js.map
+//# sourceMappingURL=57747.db346203e5bbd177e1dd.js.map
