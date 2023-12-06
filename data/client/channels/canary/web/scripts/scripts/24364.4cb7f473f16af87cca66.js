@@ -21836,10 +21836,10 @@
                 NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: function() {
                     return en
                 },
-                DEFAULT_MAX_INVOICE_PAYMENT_DAYS: function() {
+                DEFAULT_MAX_GRACE_PERIOD_DAYS: function() {
                     return er
                 },
-                PAID_SUBSCRIPTION_MAX_INVOICE_PAYMENT_DAYS: function() {
+                PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS: function() {
                     return ei
                 },
                 MAX_ACCOUNT_HOLD_DAYS: function() {
@@ -36280,8 +36280,8 @@
                         n = c(e.metadata.google_original_expires_date);
                     return c.duration(t.diff(n)).days()
                 }
-                if (e.isPurchasedExternally || null == e.paymentSourceId) return y.DEFAULT_MAX_INVOICE_PAYMENT_DAYS;
-                return y.PAID_SUBSCRIPTION_MAX_INVOICE_PAYMENT_DAYS
+                if (e.isPurchasedExternally || null == e.paymentSourceId) return y.DEFAULT_MAX_GRACE_PERIOD_DAYS;
+                return y.PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS
             }
 
             function es(e) {
@@ -41559,4 +41559,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.b5336e9dbe7d415e2d15.js.map
+//# sourceMappingURL=24364.4cb7f473f16af87cca66.js.map

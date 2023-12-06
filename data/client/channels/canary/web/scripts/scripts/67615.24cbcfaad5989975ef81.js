@@ -17023,24 +17023,25 @@
             "use strict";
             n.r(t), n.d(t, {
                 isMidjourneyOnboardingFlow: function() {
-                    return r
+                    return s
                 },
                 shouldRedirectToMidjourneyDM: function() {
-                    return u
+                    return r
                 }
             }), n("446674");
             var i = n("305961"),
-                a = n("697218"),
-                l = n("256896"),
-                s = n("760797");
+                a = n("256896"),
+                l = n("760797");
 
-            function r(e) {
-                let t = a.default.getCurrentUser();
-                return null != t && null == t.email && 1 === i.default.getGuildCount() && null != i.default.getGuild(s.MIDJOURNEY_GUILD_ID) && (0, l.isEligibleForMidjourneyOnboarding)(e)
+            function s(e) {
+                let {
+                    guildStore: t
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = null != t ? t : i.default;
+                return 1 === n.getGuildCount() && null != n.getGuild(l.MIDJOURNEY_GUILD_ID) && (0, a.isEligibleForMidjourneyOnboarding)(e)
             }
 
-            function u(e) {
-                return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === s.MIDJOURNEY_BOT_ID && r("app")
+            function r(e) {
+                return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === l.MIDJOURNEY_BOT_ID && s("app")
             }
         },
         155084: function(e, t, n) {
@@ -33907,4 +33908,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.4af99944310de30b61d8.js.map
+//# sourceMappingURL=67615.24cbcfaad5989975ef81.js.map
