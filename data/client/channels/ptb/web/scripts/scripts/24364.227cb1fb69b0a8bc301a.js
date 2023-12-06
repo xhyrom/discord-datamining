@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -41141,23 +41141,23 @@
             "use strict";
             n.r(t), n.d(t, {
                 isTablet: function() {
-                    return h
+                    return S
                 },
                 isMobile: function() {
-                    return T
+                    return I
                 },
                 isIOSWeb: function() {
-                    return S
+                    return m
                 }
             }), n("222007");
-            var r, i, s, a, l, o, u, c, d = n("383536"),
-                E = n.n(d);
-            let _ = new Set(["iPad", "Kindle", "Kindle Fire", "Nook", "PlayBook"]),
-                f = new Set(["Android", "iOS", "Windows Phone"]),
-                p = (null === (i = window) || void 0 === i ? void 0 : null === (r = i.navigator) || void 0 === r ? void 0 : r.platform) === "MacIntel" && void 0 !== (null === (a = window) || void 0 === a ? void 0 : null === (s = a.navigator) || void 0 === s ? void 0 : s.standalone),
-                h = _.has(null !== (u = E.product) && void 0 !== u ? u : "") || p,
-                T = !h && f.has(null !== (c = null == E ? void 0 : null === (l = E.os) || void 0 === l ? void 0 : l.family) && void 0 !== c ? c : ""),
-                S = (null == E ? void 0 : null === (o = E.os) || void 0 === o ? void 0 : o.family) === "iOS"
+            var r, i, s, a, l, o, u, c, d, E, _ = n("383536"),
+                f = n.n(_);
+            let p = new Set(["iPad", "Kindle", "Kindle Fire", "Nook", "PlayBook"]),
+                h = new Set(["Android", "iOS", "Windows Phone"]),
+                T = (null === (i = window) || void 0 === i ? void 0 : null === (r = i.navigator) || void 0 === r ? void 0 : r.platform) === "MacIntel" && void 0 !== (null === (a = window) || void 0 === a ? void 0 : null === (s = a.navigator) || void 0 === s ? void 0 : s.standalone) && (null === (o = window) || void 0 === o ? void 0 : null === (l = o.navigator) || void 0 === l ? void 0 : l.maxTouchPoints) > 1,
+                S = p.has(null !== (d = f.product) && void 0 !== d ? d : "") || T,
+                I = !S && h.has(null !== (E = null == f ? void 0 : null === (u = f.os) || void 0 === u ? void 0 : u.family) && void 0 !== E ? E : ""),
+                m = (null == f ? void 0 : null === (c = f.os) || void 0 === c ? void 0 : c.family) === "iOS"
         },
         171718: function(e, t, n) {
             "use strict";
@@ -41559,4 +41559,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.5b833e0632b100f30416.js.map
+//# sourceMappingURL=24364.227cb1fb69b0a8bc301a.js.map
