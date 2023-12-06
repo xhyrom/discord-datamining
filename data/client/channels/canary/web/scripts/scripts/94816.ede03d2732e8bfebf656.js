@@ -1234,7 +1234,9 @@
             V.displayName = "ApplicationCommandIndexStore";
             let q = new V(d.default, {
                 LOGOUT: k,
-                CONNECTION_OPEN: k,
+                CONNECTION_OPEN: function() {
+                    for (let e of Object.values(q.indices)) e.serverVersion = B
+                },
                 APPLICATION_COMMAND_INDEX_FETCH_REQUEST: function(e) {
                     var t;
                     let {
@@ -4237,4 +4239,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94816.890d7b1dbae597f6aa4f.js.map
+//# sourceMappingURL=94816.ede03d2732e8bfebf656.js.map
