@@ -82759,10 +82759,10 @@ input::-webkit-inner-spin-button {
 }
 
 .previewTitleContainer__89aa4 {
-    height: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    margin-bottom: 8px
 }
 
 .previewTitle_bb7c50 {
@@ -109217,8 +109217,21 @@ html .invoiceCancelRow_a8669b {
     width: 50%
 }
 
+.sendTo__27b60 {
+    margin-top: 24px
+}
+
+.customGiftMessageWrapper_b062eb {
+    margin-top: 24px;
+    margin-bottom: 24px
+}
+
 .customGiftMessage_de4b5e {
     background-color: var(--background-tertiary)
+}
+
+.giftPreview_a0da10 {
+    margin-bottom: 24px
 }
 
 .headerContainer__1a9fc {
@@ -124162,4 +124175,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.fa1f302fc93b85a96a06.css.map*/
+/*# sourceMappingURL=app.69b27a27dee7eabf1def.css.map*/
