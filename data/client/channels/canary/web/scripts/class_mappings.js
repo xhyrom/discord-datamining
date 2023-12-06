@@ -5925,7 +5925,6 @@
                 checkmark: "checkmark__2ccd6",
                 checkmarkWrapper: "checkmarkWrapper_f2dab8",
                 darkCardBackground: "darkCardBackground__82a32",
-                defaultPreviewButtonColor: "defaultPreviewButtonColor__6cdf9",
                 description: "description__92b55",
                 detailsWrapper: "detailsWrapper_b31a7f",
                 hoverUpsellContainer: "hoverUpsellContainer__425f0",
