@@ -2118,13 +2118,13 @@
                             enabled: e,
                             measurement: t
                         } = T.default.getConfig(!0), {
-                            enabled: n
+                            extraOptions: n
                         } = A.default.getCurrentConfig({
                             location: "handleReady"
                         }, {
                             autoTrackExposure: !0
                         });
-                        e && d.setVideoQualityMeasurement(t + (n ? ",hwdec" : ""))
+                        e && d.setVideoQualityMeasurement(t + n)
                     }
                     let c = ["unk"];
                     if (D.default.supports(Y.Features.AMD_EXPERIMENTAL_RATE_CONTROL)) {
@@ -7747,19 +7747,43 @@
                 id: "2023-11_video_quality_measurement_hwdec",
                 label: "Video Quality Measurement Hardware Decoding",
                 defaultConfig: {
-                    enabled: !1
+                    extraOptions: ""
                 },
                 treatments: [{
                     id: 0,
                     label: "Control",
                     config: {
-                        enabled: !1
+                        extraOptions: ""
                     }
                 }, {
                     id: 1,
-                    label: "Enabled",
+                    label: "Enabled, default 500ms buffer",
                     config: {
-                        enabled: !0
+                        extraOptions: ",hwdec"
+                    }
+                }, {
+                    id: 2,
+                    label: "Enabled, 750ms buffer",
+                    config: {
+                        extraOptions: ",hwdec,staleFrameThresholdMs:750"
+                    }
+                }, {
+                    id: 3,
+                    label: "Enabled, 1s buffer",
+                    config: {
+                        extraOptions: ",hwdec,staleFrameThresholdMs:1000"
+                    }
+                }, {
+                    id: 4,
+                    label: "Disabled, 750ms buffer",
+                    config: {
+                        extraOptions: ",staleFrameThresholdMs:750"
+                    }
+                }, {
+                    id: 5,
+                    label: "Disabled, 1s buffer",
+                    config: {
+                        extraOptions: ",staleFrameThresholdMs:1000"
                     }
                 }]
             })
@@ -14939,7 +14963,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "251671"
+                                build_number: "251682"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -21873,4 +21897,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48449.01cf8b15159db1d54668.js.map
+//# sourceMappingURL=48449.7c25df79355d1fb654ed.js.map
