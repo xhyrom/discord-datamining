@@ -27043,6 +27043,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     padding: 0 !important
 }
 
+.textAreaCustomGift_eafd3f[role=textbox] {
+    position: absolute !important;
+    height: 100%;
+    box-sizing: border-box
+}
+
 @media all and (-webkit-max-device-pixel-ratio:1) {
     .theme-light .textArea__74543 {
         font-weight: 500
@@ -81053,6 +81059,10 @@ input::-webkit-inner-spin-button {
     height: 100%
 }
 
+.editorTextArea__5ee78 {
+    height: 136px
+}
+
 .theme-dark .textArea__771cd *>span {
     color: var(--white-100)
 }
@@ -124175,4 +124185,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.69b27a27dee7eabf1def.css.map*/
+/*# sourceMappingURL=app.6605606ce080620e980d.css.map*/
