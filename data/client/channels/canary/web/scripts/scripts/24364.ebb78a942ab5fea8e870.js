@@ -1727,7 +1727,6 @@
                             className: h.svg,
                             overflow: "visible",
                             children: (0, i.jsx)("foreignObject", {
-                                mask: "url(#".concat(E, ")"),
                                 x: 0,
                                 y: 0,
                                 className: n,
@@ -41559,4 +41558,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.227cb1fb69b0a8bc301a.js.map
+//# sourceMappingURL=24364.ebb78a942ab5fea8e870.js.map
