@@ -7985,10 +7985,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 MESSAGE_SCAN_TIMEOUT: function() {
-                    return I
+                    return g
                 },
                 default: function() {
-                    return K
+                    return W
                 }
             }), n("222007"), n("808653");
             var i = n("345570"),
@@ -7997,116 +7997,98 @@
                 s = n.n(l),
                 r = n("913144"),
                 u = n("689988"),
-                o = n("256572"),
-                d = n("271938"),
-                c = n("982108"),
-                _ = n("377253"),
-                E = n("18494"),
-                h = n("162771"),
-                f = n("695681"),
-                p = n("457971"),
-                T = n("447435"),
-                C = n("574933"),
-                m = n("49111"),
-                S = n("397336");
-            let I = 3e3,
-                g = {};
+                o = n("692038"),
+                d = n("256572"),
+                c = n("271938"),
+                _ = n("982108"),
+                E = n("377253"),
+                h = n("18494"),
+                f = n("162771"),
+                p = n("695681"),
+                T = n("457971"),
+                C = n("447435"),
+                m = n("574933"),
+                S = n("49111"),
+                I = n("397336");
+            let g = 3e3,
+                A = {};
 
-            function A(e) {
+            function N(e) {
                 return "".concat(e.channel_id, ":").concat(e.id)
             }
 
-            function N() {
-                Object.values(g).forEach(e => {
-                    clearTimeout(e)
-                }), g = {}
+            function O() {
+                Object.values(A).forEach(e => {
+                    let {
+                        timeout: t
+                    } = e;
+                    clearTimeout(t)
+                }), A = {}
             }
 
-            function O(e, t) {
+            function R(e, t) {
+                if (null == e.id || null == e.channel_id) return;
+                let n = N(e);
+                if (null != A[n]) {
+                    let {
+                        setAt: e,
+                        timeout: i
+                    } = A[n];
+                    return (0, C.trackScanTiming)(e, t), clearTimeout(i), delete A[n], !0
+                }
+                return !1
+            }
+
+            function y(e, t) {
                 e.forEach(e => {
-                    let t = A(e);
-                    g[t] = setTimeout(() => {
-                        null != g[t] && ! function(e) {
-                            let t = A(e);
-                            clearTimeout(g[t]), delete g[t];
-                            let n = _.default.getMessage(e.channel_id, e.id),
-                                {
-                                    attachmentIds: i,
-                                    embedIds: a
-                                } = D(n);
-                            if (null != n && (i.length > 0 || a.length > 0)) {
-                                r.default.dispatch({
-                                    type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
-                                    messageId: n.id,
-                                    channelId: n.channel_id
-                                }), (0, T.trackScanningTimedOut)({
-                                    channelId: n.channel_id,
-                                    messageId: n.id,
-                                    embedIds: a,
-                                    attachmentIds: i
-                                });
-                                return
-                            }
-                            let l = C.default.getMessage(e.id, e.channel_id),
-                                {
-                                    attachmentIds: s,
-                                    embedIds: u
-                                } = D(l);
-                            if (null != l && (s.length > 0 || u.length > 0)) {
-                                r.default.dispatch({
-                                    type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
-                                    messageId: l.id,
-                                    channelId: l.channel_id
-                                }), (0, T.trackScanningTimedOut)({
-                                    channelId: l.channel_id,
-                                    messageId: l.id,
-                                    embedIds: a,
-                                    attachmentIds: i
-                                });
-                                return
-                            }
-                            let d = o.default.getMessage(e.channel_id, e.id),
-                                {
-                                    attachmentIds: c,
-                                    embedIds: E
-                                } = D(d.message);
-                            if (null != d.message && d.state === o.ReferencedMessageState.LOADED && (c.length > 0 || E.length > 0)) {
-                                r.default.dispatch({
-                                    type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
-                                    messageId: d.message.id,
-                                    channelId: d.message.channel_id
-                                }), (0, T.trackScanningTimedOut)({
-                                    channelId: d.message.channel_id,
-                                    messageId: d.message.id,
-                                    embedIds: a,
-                                    attachmentIds: i
-                                });
-                            }
-                        }(e)
-                    }, I)
+                    let t = N(e);
+                    A[t] = {
+                        setAt: Date.now(),
+                        timeout: setTimeout(() => {
+                            ! function(e) {
+                                if (R(e, "timeout")) {
+                                    let t = E.default.getMessage(e.channel_id, e.id),
+                                        {
+                                            attachmentIds: n,
+                                            embedIds: i
+                                        } = P(t);
+                                    (0, C.trackScanningTimedOut)({
+                                        channelId: e.channel_id,
+                                        messageId: e.id,
+                                        attachmentIds: n,
+                                        embedIds: i
+                                    }), r.default.dispatch({
+                                        type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
+                                        messageId: e.id,
+                                        channelId: e.channel_id
+                                    })
+                                }
+                            }(e)
+                        }, g)
+                    }
                 });
                 let n = t || new Set(e.map(e => e.channel_id)).size > 1;
                 if (n) {
-                    (0, f.sendMultiChannelMessagesForScanning)(e);
+                    (0, p.sendMultiChannelMessagesForScanning)(e);
                     return
-                }(0, f.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
+                }(0, p.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
             }
-            let R = e => null == e.content_scan_version || e.content_scan_version < 1,
-                y = e => {
+            let v = e => null == e.content_scan_version || e.content_scan_version < 1,
+                M = e => {
                     var t, n, i, a, l, s, r, u;
                     let o = null != (u = e).content_scan_version ? u.content_scan_version : null != u.contentScanVersion ? u.contentScanVersion : null;
                     return !((null === (t = e.video) || void 0 === t ? void 0 : t.width) === 0 && (null === (n = e.video) || void 0 === n ? void 0 : n.height) === 0 || (null === (i = e.thumbnail) || void 0 === i ? void 0 : i.width) === 0 && (null === (a = e.thumbnail) || void 0 === a ? void 0 : a.height) === 0 || (null === (l = e.image) || void 0 === l ? void 0 : l.width) === 0 && (null === (s = e.image) || void 0 === s ? void 0 : s.height) === 0 || "images" in e && (null === (r = e.images) || void 0 === r ? void 0 : r.some(e => 0 === e.width && 0 === e.height))) && (null == o || o < 1)
                 };
 
-            function v(e) {
+            function L(e) {
                 let {
                     attachmentIds: t,
                     embedIds: n
-                } = D(e);
+                } = P(e);
                 return t.length > 0 || n.length > 0
             }
 
-            function M(e) {
+            function D(e) {
                 let t = e.reduce((e, t) => {
                     var n, i, a, l, s, r, u, o;
                     null == e[t.channel_id] && (e[t.channel_id] = {
@@ -8116,7 +8098,7 @@
                         numOfEmbedsPendingScan: 0
                     });
                     let d = e[t.channel_id];
-                    return d.numOfAttachments += null !== (s = null === (n = t.attachments) || void 0 === n ? void 0 : n.length) && void 0 !== s ? s : 0, d.numOfEmbeds += null !== (r = null === (i = t.embeds) || void 0 === i ? void 0 : i.length) && void 0 !== r ? r : 0, d.numOfAttachmentsPendingScan += null !== (u = null === (a = t.attachments) || void 0 === a ? void 0 : a.filter(R).length) && void 0 !== u ? u : 0, d.numOfEmbedsPendingScan += null !== (o = null == t ? void 0 : null === (l = t.embeds) || void 0 === l ? void 0 : l.filter(y).length) && void 0 !== o ? o : 0, {
+                    return d.numOfAttachments += null !== (s = null === (n = t.attachments) || void 0 === n ? void 0 : n.length) && void 0 !== s ? s : 0, d.numOfEmbeds += null !== (r = null === (i = t.embeds) || void 0 === i ? void 0 : i.length) && void 0 !== r ? r : 0, d.numOfAttachmentsPendingScan += null !== (u = null === (a = t.attachments) || void 0 === a ? void 0 : a.filter(v).length) && void 0 !== u ? u : 0, d.numOfEmbedsPendingScan += null !== (o = null == t ? void 0 : null === (l = t.embeds) || void 0 === l ? void 0 : l.filter(M).length) && void 0 !== o ? o : 0, {
                         ...e,
                         [t.channel_id]: d
                     }
@@ -8124,11 +8106,11 @@
                 return t
             }
 
-            function L(e) {
+            function U(e) {
                 return null != e.attachments && e.attachments.length > 0 || null != e.embeds && e.embeds.length > 0
             }
 
-            function D(e) {
+            function P(e) {
                 var t, n, i, a, l, s, r, u;
                 let o = null !== (l = null == e ? void 0 : null === (t = e.attachments) || void 0 === t ? void 0 : t.length) && void 0 !== l ? l : 0,
                     d = null !== (s = null == e ? void 0 : null === (n = e.embeds) || void 0 === n ? void 0 : n.length) && void 0 !== s ? s : 0;
@@ -8136,60 +8118,64 @@
                     attachmentIds: [],
                     embedIds: []
                 };
-                let c = null !== (r = null == e ? void 0 : null === (i = e.attachments) || void 0 === i ? void 0 : i.filter(R)) && void 0 !== r ? r : [],
-                    _ = null !== (u = null == e ? void 0 : null === (a = e.embeds) || void 0 === a ? void 0 : a.filter(y)) && void 0 !== u ? u : [];
+                let c = null !== (r = null == e ? void 0 : null === (i = e.attachments) || void 0 === i ? void 0 : i.filter(v)) && void 0 !== r ? r : [],
+                    _ = null !== (u = null == e ? void 0 : null === (a = e.embeds) || void 0 === a ? void 0 : a.filter(M)) && void 0 !== u ? u : [];
                 return {
                     attachmentIds: c.map(e => e.id).filter(Boolean),
                     embedIds: _.map((e, t) => "embed_".concat(t)).filter(Boolean)
                 }
             }
 
-            function U(e, t) {
+            function b(e, t) {
                 let {
                     messagesPendingScan: n,
                     attributesByChannelId: i
                 } = function(e) {
-                    let t = e.filter(e => L(e) && (0, T.shouldRedactExplicitContent)(e)),
+                    let t = e.filter(e => U(e) && (0, C.shouldRedactExplicitContent)(e)),
                         n = e.map(e => {
-                            if ("referenced_message" in e && null != e.referenced_message && L(e.referenced_message)) return e.referenced_message
+                            if ("referenced_message" in e && null != e.referenced_message && U(e.referenced_message)) return e.referenced_message
                         }).filter(function(e) {
                             return null != e
                         });
                     n.length > 0 && (t = [...t, ...n]);
                     let i = s(t, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
-                        a = i.filter(e => v(e));
+                        a = i.filter(e => L(e));
                     return {
                         messagesPendingScan: a,
-                        attributesByChannelId: M(i)
+                        attributesByChannelId: D(i)
                     }
                 }(e);
                 return Object.entries(i).forEach(e => {
                     let [t, n] = e;
-                    (0, T.trackExplicitMediaRedactableMessagedLoaded)({
+                    (0, C.trackExplicitMediaRedactableMessagedLoaded)({
                         channelId: t,
                         numOfAttachments: n.numOfAttachments,
                         numOfAttachmentsPendingScan: n.numOfAttachmentsPendingScan,
                         numOfEmbeds: n.numOfEmbeds,
                         numOfEmbedsPendingScan: n.numOfEmbedsPendingScan
                     })
-                }), !!(n.length > 0) && (O(n, t), !0)
+                }), !!(n.length > 0) && (y(n, t), !0)
             }
 
-            function P(e) {
-                var t;
+            function G(e) {
+                var t, n, i, a;
                 let {
-                    message: n
+                    message: l
                 } = e;
-                if (!(0, p.isEligibleForExplicitMediaRedaction)() || null == n.channel_id || null == n.id || (null === (t = n.author) || void 0 === t ? void 0 : t.id) === d.default.getId() || null == n.embeds && null == n.attachments) return !1;
-                let i = E.default.getChannelId(),
-                    a = c.default.getCurrentSidebarChannelId(i),
-                    l = n.channel_id === i || n.channel_id === a;
-                if (!l) return !1;
-                let s = _.default.getMessage(n.channel_id, n.id);
-                return null != s && U([s])
+                if (!(0, T.isEligibleForExplicitMediaRedaction)() || null == l.channel_id || null == l.id || (null === (t = l.author) || void 0 === t ? void 0 : t.id) === c.default.getId() || null == l.embeds && null == l.attachments) return !1;
+                if (!L(l)) {
+                    let e = null !== (a = null !== (i = E.default.getMessage(l.channel_id, l.id)) && void 0 !== i ? i : m.default.getMessage(l.id, l.channel_id)) && void 0 !== a ? a : null === (n = d.default.getMessage(l.channel_id, l.id)) || void 0 === n ? void 0 : n.message;
+                    null != e && !L((0, o.updateMessageRecord)(e, l)) && R(e, "update")
+                }
+                let s = h.default.getChannelId(),
+                    r = _.default.getCurrentSidebarChannelId(s),
+                    u = l.channel_id === s || l.channel_id === r;
+                if (!u) return !1;
+                let f = E.default.getMessage(l.channel_id, l.id);
+                return null != f && b([f])
             }
 
-            function b(e) {
+            function w(e) {
                 var t;
                 let {
                     channelId: n,
@@ -8197,139 +8183,139 @@
                     optimistic: a,
                     isPushNotification: l
                 } = e;
-                if (!(0, p.isEligibleForExplicitMediaRedaction)() || a || l || null == n || (null === (t = i.author) || void 0 === t ? void 0 : t.id) === d.default.getId()) return !1;
-                let s = E.default.getChannelId(),
-                    r = c.default.getCurrentSidebarChannelId(s),
+                if (!(0, T.isEligibleForExplicitMediaRedaction)() || a || l || null == n || (null === (t = i.author) || void 0 === t ? void 0 : t.id) === c.default.getId()) return !1;
+                let s = h.default.getChannelId(),
+                    r = _.default.getCurrentSidebarChannelId(s),
                     u = n === s || n === r;
-                return !!u && U([i])
-            }
-
-            function G(e) {
-                let {
-                    channelId: t,
-                    messages: n
-                } = e;
-                if (!(0, p.isEligibleForExplicitMediaRedaction)() || null == t || null == n) return !1;
-                let i = E.default.getChannelId(),
-                    a = c.default.getCurrentSidebarChannelId(i),
-                    l = t === i || t === a;
-                return !!l && U(n)
-            }
-
-            function w(e) {
-                let {
-                    messages: t
-                } = e;
-                if (!(0, p.isEligibleForExplicitMediaRedaction)() || null == t) return !1;
-                let n = a(t),
-                    i = s(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id);
-                return U(i)
+                return !!u && b([i])
             }
 
             function F(e) {
                 let {
-                    guildId: t,
-                    threads: n
+                    channelId: t,
+                    messages: n
                 } = e;
-                if (null == n || !(0, p.isEligibleForExplicitMediaRedaction)()) return !1;
-                let i = h.default.getGuildId() === t;
-                if (!i) return !1;
-                let a = Object.keys(n).map(e => n[e].first_message);
-                return U(a)
+                if (!(0, T.isEligibleForExplicitMediaRedaction)() || null == t || null == n) return !1;
+                let i = h.default.getChannelId(),
+                    a = _.default.getCurrentSidebarChannelId(i),
+                    l = t === i || t === a;
+                return !!l && b(n)
             }
 
             function k(e) {
                 let {
-                    guildId: t,
-                    firstMessages: n
+                    messages: t
                 } = e;
-                if (null == n || !(0, p.isEligibleForExplicitMediaRedaction)()) return !1;
-                let i = h.default.getGuildId() === t;
-                return !!i && U(n, !0)
+                if (!(0, T.isEligibleForExplicitMediaRedaction)() || null == t) return !1;
+                let n = a(t),
+                    i = s(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id);
+                return b(i)
             }
 
             function H(e) {
                 let {
-                    channelId: t
+                    guildId: t,
+                    threads: n
                 } = e;
-                if (null == t || !(0, p.isEligibleForExplicitMediaRedaction)()) return !1;
-                let n = t === E.default.getChannelId();
-                return !!n && B(t)
+                if (null == n || !(0, T.isEligibleForExplicitMediaRedaction)()) return !1;
+                let i = f.default.getGuildId() === t;
+                if (!i) return !1;
+                let a = Object.keys(n).map(e => n[e].first_message);
+                return b(a)
             }
 
             function V(e) {
                 let {
-                    settings: t,
-                    local: n
+                    guildId: t,
+                    firstMessages: n
                 } = e;
-                if (!(0, p.isEligibleForExplicitMediaRedaction)() || !n || t.type !== S.UserSettingsTypes.PRELOADED_USER_SETTINGS) return !1;
-                let i = E.default.getChannelId();
-                return null != i && B(i)
+                if (null == n || !(0, T.isEligibleForExplicitMediaRedaction)()) return !1;
+                let i = f.default.getGuildId() === t;
+                return !!i && b(n, !0)
             }
 
             function x(e) {
                 let {
-                    channelId: t,
-                    chatOpen: n
+                    channelId: t
                 } = e;
-                return !!(0, p.isEligibleForExplicitMediaRedaction)() && !!n && B(t)
+                if (null == t || !(0, T.isEligibleForExplicitMediaRedaction)()) return !1;
+                let n = t === h.default.getChannelId();
+                return !!n && K(t)
             }
 
             function B(e) {
-                let t = _.default.getMessages(e);
+                let {
+                    settings: t,
+                    local: n
+                } = e;
+                if (!(0, T.isEligibleForExplicitMediaRedaction)() || !n || t.type !== I.UserSettingsTypes.PRELOADED_USER_SETTINGS) return !1;
+                let i = h.default.getChannelId();
+                return null != i && K(i)
+            }
+
+            function Y(e) {
+                let {
+                    channelId: t,
+                    chatOpen: n
+                } = e;
+                return !!(0, T.isEligibleForExplicitMediaRedaction)() && !!n && K(t)
+            }
+
+            function K(e) {
+                let t = E.default.getMessages(e);
                 return 0 !== t.length && function(e) {
                     let {
                         messagesPendingScan: t,
                         attributesByChannelId: n
                     } = function(e) {
-                        let t = e.filter(e => L(e) && (0, T.shouldRedactExplicitContent)(e)),
+                        let t = e.filter(e => U(e) && (0, C.shouldRedactExplicitContent)(e)),
                             n = e.map(e => {
-                                if (m.MessageTypesWithLazyLoadedReferences.has(e.type) && null != e.messageReference) {
-                                    let t = o.default.getMessageByReference(e.messageReference);
-                                    if (t.state === o.ReferencedMessageState.LOADED && null != t.message && L(t.message)) return t.message
+                                if (S.MessageTypesWithLazyLoadedReferences.has(e.type) && null != e.messageReference) {
+                                    let t = d.default.getMessageByReference(e.messageReference);
+                                    if (t.state === d.ReferencedMessageState.LOADED && null != t.message && U(t.message)) return t.message
                                 }
                             }).filter(function(e) {
                                 return null != e
                             });
                         n.length > 0 && (t = [...t, ...n]);
                         let i = s(t, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
-                            a = i.filter(e => v(e));
+                            a = i.filter(e => L(e));
                         return {
                             messagesPendingScan: a,
-                            attributesByChannelId: M(i)
+                            attributesByChannelId: D(i)
                         }
                     }(e);
                     return Object.entries(n).forEach(e => {
                         let [t, n] = e;
-                        (0, T.trackExplicitMediaRedactableMessagedLoaded)({
+                        (0, C.trackExplicitMediaRedactableMessagedLoaded)({
                             channelId: t,
                             numOfAttachments: n.numOfAttachments,
                             numOfAttachmentsPendingScan: n.numOfAttachmentsPendingScan,
                             numOfEmbeds: n.numOfEmbeds,
                             numOfEmbedsPendingScan: n.numOfEmbedsPendingScan
                         })
-                    }), !!(t.length > 0) && (O(t), !0)
+                    }), !!(t.length > 0) && (y(t), !0)
                 }(t)
             }
-            class Y extends u.default {
+            class j extends u.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        LOAD_MESSAGES_SUCCESS: G,
-                        LOAD_FORUM_POSTS: F,
-                        LOAD_THREADS_SUCCESS: k,
-                        LOAD_ARCHIVED_THREADS_SUCCESS: k,
-                        MESSAGE_CREATE: b,
-                        MESSAGE_UPDATE: P,
-                        LOGOUT: N,
-                        SEARCH_FINISH: w,
-                        CHANNEL_SELECT: H,
-                        LOAD_PINNED_MESSAGES_SUCCESS: w,
-                        USER_SETTINGS_PROTO_UPDATE: V,
-                        CHANNEL_RTC_UPDATE_CHAT_OPEN: x
+                        LOAD_MESSAGES_SUCCESS: F,
+                        LOAD_FORUM_POSTS: H,
+                        LOAD_THREADS_SUCCESS: V,
+                        LOAD_ARCHIVED_THREADS_SUCCESS: V,
+                        MESSAGE_CREATE: w,
+                        MESSAGE_UPDATE: G,
+                        LOGOUT: O,
+                        SEARCH_FINISH: k,
+                        CHANNEL_SELECT: x,
+                        LOAD_PINNED_MESSAGES_SUCCESS: k,
+                        USER_SETTINGS_PROTO_UPDATE: B,
+                        CHANNEL_RTC_UPDATE_CHAT_OPEN: Y
                     }
                 }
             }
-            var K = new Y
+            var W = new j
         },
         695681: function(e, t, n) {
             "use strict";
@@ -8493,14 +8479,17 @@
                 trackMediaRedactionAction: function() {
                     return D
                 },
-                trackScanningTimedOut: function() {
+                trackScanTiming: function() {
                     return U
                 },
-                trackExplicitMediaRedactableMessagedLoaded: function() {
+                trackScanningTimedOut: function() {
                     return P
                 },
-                handleExplicitMediaScanTimeoutForMessage: function() {
+                trackExplicitMediaRedactableMessagedLoaded: function() {
                     return b
+                },
+                handleExplicitMediaScanTimeoutForMessage: function() {
+                    return G
                 }
             }), n("702976");
             var i, a, l, s, r = n("432710"),
@@ -8617,7 +8606,15 @@
                 })
             }
 
-            function U(e) {
+            function U(e, t) {
+                let n = Date.now() - e;
+                d.default.increment({
+                    name: r.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING,
+                    tags: ["timingBucket:".concat(Math.min(Math.floor(n / 1e3), 3)), "source".concat(t)]
+                })
+            }
+
+            function P(e) {
                 let {
                     channelId: t,
                     messageId: n,
@@ -8639,7 +8636,7 @@
                 })
             }
 
-            function P(e) {
+            function b(e) {
                 let {
                     channelId: t,
                     numOfAttachments: n,
@@ -8659,7 +8656,7 @@
                 })
             }
 
-            function b(e) {
+            function G(e) {
                 let t = e.attachments.map(e => (null == e.content_scan_version && (e.content_scan_version = -1), e));
                 e = e.set("attachments", t);
                 let n = e.embeds.map(e => (null == e.contentScanVersion && (e.contentScanVersion = -1), e));
@@ -17023,24 +17020,25 @@
             "use strict";
             n.r(t), n.d(t, {
                 isMidjourneyOnboardingFlow: function() {
-                    return r
+                    return s
                 },
                 shouldRedirectToMidjourneyDM: function() {
-                    return u
+                    return r
                 }
             }), n("446674");
             var i = n("305961"),
-                a = n("697218"),
-                l = n("256896"),
-                s = n("760797");
+                a = n("256896"),
+                l = n("760797");
 
-            function r(e) {
-                let t = a.default.getCurrentUser();
-                return null != t && null == t.email && 1 === i.default.getGuildCount() && null != i.default.getGuild(s.MIDJOURNEY_GUILD_ID) && (0, l.isEligibleForMidjourneyOnboarding)(e)
+            function s(e) {
+                let {
+                    guildStore: t
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = null != t ? t : i.default;
+                return 1 === n.getGuildCount() && null != n.getGuild(l.MIDJOURNEY_GUILD_ID) && (0, a.isEligibleForMidjourneyOnboarding)(e)
             }
 
-            function u(e) {
-                return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === s.MIDJOURNEY_BOT_ID && r("app")
+            function r(e) {
+                return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === l.MIDJOURNEY_BOT_ID && s("app")
             }
         },
         155084: function(e, t, n) {
@@ -19621,7 +19619,11 @@
             }
 
             function C(e, t) {
-                return null != t.id ? t.id === e.id : null == e.id && t.name === e.name
+                if (null != t.id) {
+                    let n = null != e.id ? "".concat(e.id) : e.id;
+                    return "".concat(t.id) === n
+                }
+                return null == e.id && t.name === e.name
             }
 
             function m() {
@@ -33887,7 +33889,7 @@
                 MetricEvents: function() {
                     return i
                 }
-            }), n("222007"), (a = i || (i = {})).APP_CRASHED = "app_crashed", a.SOCKET_CRASHED = "socket_crashed", a.MESSAGE_REQUEST_VIEW = "message_request_view", a.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", a.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", a.FAMILY_CENTER_VIEW = "family_center_view", a.SAFETY_HUB_VIEW = "safety_hub_view", a.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", a.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", a.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", a.AFK_NOT_IDLE = "afk_not_idle", a.CAPTCHA_EVENT = "captcha_event", a.SAFETY_WARNING_VIEW = "safety_warning_view", a.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", a.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", a.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", a.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", a.OTA_UPDATE_CHECK = "ota_update_check", a.OTA_ASSET_DOWNLOAD = "ota_asset_download"
+            }), n("222007"), (a = i || (i = {})).APP_CRASHED = "app_crashed", a.SOCKET_CRASHED = "socket_crashed", a.MESSAGE_REQUEST_VIEW = "message_request_view", a.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", a.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", a.FAMILY_CENTER_VIEW = "family_center_view", a.SAFETY_HUB_VIEW = "safety_hub_view", a.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", a.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", a.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", a.AFK_NOT_IDLE = "afk_not_idle", a.CAPTCHA_EVENT = "captcha_event", a.SAFETY_WARNING_VIEW = "safety_warning_view", a.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", a.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", a.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", a.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", a.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", a.OTA_UPDATE_CHECK = "ota_update_check", a.OTA_ASSET_DOWNLOAD = "ota_asset_download"
         },
         615361: function(e, t, n) {
             "use strict";
@@ -33907,4 +33909,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.4af99944310de30b61d8.js.map
+//# sourceMappingURL=67615.a273954e5f09d9765c05.js.map
