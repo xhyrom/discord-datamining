@@ -124,6 +124,15 @@
                             body: r
                         })
                     },
+                    async fetchGuildEvent(e, t) {
+                        let {
+                            body: n
+                        } = await (0, a.httpGetWithCountryCodeQuery)(_.Endpoints.GUILD_EVENT(e, t));
+                        return l.default.dispatch({
+                            type: "FETCH_GUILD_EVENT",
+                            guildScheduledEvent: n
+                        }), n
+                    },
                     async fetchGuildEventsForGuild(e) {
                         let t = {
                                 url: _.Endpoints.GUILD_EVENTS_FOR_GUILD(e)
@@ -500,7 +509,7 @@
                     return T
                 },
                 getBaseScheduleForRecurrence: function() {
-                    return D
+                    return R
                 },
                 getScheduleForRecurrenceWithException: function() {
                     return S
@@ -573,7 +582,7 @@
                 }
             }
 
-            function R(e, t) {
+            function D(e, t) {
                 let n;
                 return null != e && (n = {
                     startDate: r(e),
@@ -581,9 +590,9 @@
                 }, null != t && (n.endDate = r(t))), n
             }
 
-            function D(e, t) {
+            function R(e, t) {
                 let n = function(e) {
-                        return R(e.scheduled_start_time, e.scheduled_end_time)
+                        return D(e.scheduled_start_time, e.scheduled_end_time)
                     }(t),
                     u = r(i.default.extractTimestamp(e)),
                     l = (null == n ? void 0 : n.endDate) != null ? u.clone().add(n.endDate.diff(n.startDate)) : void 0;
@@ -604,7 +613,7 @@
             }
 
             function g(e) {
-                return R(e.scheduledStartTime, e.scheduledEndTime)
+                return D(e.scheduledStartTime, e.scheduledEndTime)
             }
 
             function m(e, t) {
@@ -742,4 +751,4 @@
         }
     }
 ]);
-//# sourceMappingURL=81161.6dc5fd721981813137d3.js.map
+//# sourceMappingURL=81161.abe9578e4d66ca1934cd.js.map

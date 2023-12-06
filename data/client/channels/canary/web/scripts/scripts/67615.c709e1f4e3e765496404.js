@@ -14860,6 +14860,12 @@
                     } = e;
                     return O(t.id, !0), !0
                 },
+                FETCH_GUILD_EVENT: function(e) {
+                    let {
+                        guildScheduledEvent: t
+                    } = e;
+                    m(t)
+                },
                 FETCH_GUILD_EVENTS_FOR_GUILD: function(e) {
                     let {
                         guildId: t,
@@ -33910,4 +33916,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.dc45b27578c5ca7ba5b3.js.map
+//# sourceMappingURL=67615.c709e1f4e3e765496404.js.map

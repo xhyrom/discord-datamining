@@ -19156,10 +19156,13 @@
             e.exports = {
                 defaultContainer: "defaultContainer__91554",
                 defaultTextInput: "defaultTextInput__91909",
-                expressionPickerButtonImage: "expressionPickerButtonImage__5366d",
+                emojiDefault: "emojiDefault_a6c36f",
+                expressionPickerButtonDefault: "expressionPickerButtonDefault_eda6e6",
+                expressionPickerButtonImageOnly: "expressionPickerButtonImageOnly__42a53",
+                expressionPickerIconDefault: "expressionPickerIconDefault__286f7",
+                expressionPickerIconImageOnly: "expressionPickerIconImageOnly_b5541a",
                 gifDefault: "gifDefault_a0c5fa",
                 gifJumbo: "gifJumbo__8044e",
-                imageExpressionPickerButton: "imageExpressionPickerButton_bfd5b8",
                 imageOnlyContainer: "imageOnlyContainer__04301",
                 spinnerWrapper: "spinnerWrapper__6bb67"
             }
@@ -19187,8 +19190,8 @@
                 headerText: "headerText__35f81",
                 imageOnlyContainer: "imageOnlyContainer__036ec",
                 postButton: "postButton_bf09d5",
-                postButtonInner: "postButtonInner_bb4fbb",
-                postIcon: "postIcon_a3224d"
+                postButtonText: "postButtonText__4aa81",
+                questionInput: "questionInput_ac682b formInput_c28524"
             }
         },
         105335: function(e, t, o) {
@@ -19196,7 +19199,6 @@
             e.exports = {
                 container: "container_d9f390",
                 icon: "icon__60715",
-                iconSelected: "iconSelected__362aa",
                 option: "option_aec314",
                 optionSelected: "optionSelected_ebb40c"
             }
