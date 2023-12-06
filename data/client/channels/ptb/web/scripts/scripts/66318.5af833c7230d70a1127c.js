@@ -2381,6 +2381,7 @@
                 FORM_LABEL_MUTE_SERVER_DESCRIPTION_NEW: "Muting a server suppresses notifications but unread indicators will still be visible if you're mentioned.",
                 FORM_LABEL_MOBILE_PUSH_NOTIFICATIONS: "Mobile Push Notifications",
                 FORM_LABEL_ALL_MESSAGES: "All Messages",
+                FORM_LABEL_ALL_ACTIVITY: "All Activity",
                 FORM_LABEL_ONLY_MENTIONS: "Only **@mentions**",
                 FORM_LABEL_ONLY_MENTIONS_PLAIN: "Only @mentions",
                 FORM_LABEL_NOTHING: "Nothing",
@@ -18281,7 +18282,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251849", ", Version Hash: ").concat("4df4292c20eba651bea9eb47e3d413dc2a082eea")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251864", ", Version Hash: ").concat("f771f09a2fb2dc99bbe8b1ffec3aff40202989c2")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20575,8 +20576,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "251849", "251849"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251849")), _ = 0), _
+                let _ = parseInt((e = "251864", "251864"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251864")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36640,4 +36641,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.dff45714d788f21ba3ca.js.map
+//# sourceMappingURL=66318.5af833c7230d70a1127c.js.map
