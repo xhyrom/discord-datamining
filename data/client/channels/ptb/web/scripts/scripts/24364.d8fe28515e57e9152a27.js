@@ -33456,6 +33456,10 @@
                 [_.AnalyticEvents.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
                     throttlePeriod: 6e4,
                     throttleKeys: e => [e.guild_id, e.channel_id]
+                },
+                [_.AnalyticEvents.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
+                    throttlePeriod: 36e5,
+                    throttleKeys: () => []
                 }
             };
 
@@ -41558,4 +41562,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.ebb78a942ab5fea8e870.js.map
+//# sourceMappingURL=24364.d8fe28515e57e9152a27.js.map

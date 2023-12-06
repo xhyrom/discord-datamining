@@ -664,7 +664,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return Q
+                    return V
                 }
             }), n("781738"), n("424973"), n("222007");
             var l = n("917351"),
@@ -1035,7 +1035,7 @@
             function $(e, t) {
                 return 0 === e.length || 0 === t || "" === e.charAt(t - 1).trim()
             }
-            let V = (0, R.default)([{
+            let Q = (0, R.default)([{
                 highlightWord: {
                     order: -1,
                     match(e, t) {
@@ -1060,7 +1060,17 @@
                     }
                 }
             }, r.omit(D, ["url"])]);
-            var Q = {
+            r.omit((0, R.default)([D, {
+                mention: {
+                    match(e, t, n) {
+                        let l = D.codeBlock.match(e, t, n);
+                        if (null != l) return l;
+                        let r = D.inlineCode.match(e, t, n);
+                        if (null != r) return r
+                    }
+                }
+            }]), ["inlineCode", "codeBlock", "br", "blockQuote", "url", "attachmentLink", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink"]);
+            var V = {
                 RULES: D,
                 CHANNEL_TOPIC_RULES: F,
                 VOICE_CHANNEL_STATUS_RULES: G,
@@ -1069,7 +1079,7 @@
                 GUILD_VERIFICATION_FORM_RULES: B,
                 GUILD_EVENT_RULES: W,
                 PROFILE_BIO_RULES: q,
-                AUTO_MODERATION_SYSTEM_MESSAGE_RULES: V,
+                AUTO_MODERATION_SYSTEM_MESSAGE_RULES: Q,
                 NATIVE_SEARCH_RESULT_LINK_RULES: H
             }
         },
@@ -1277,7 +1287,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return Q
+                    return V
                 }
             }), n("222007"), n("808653"), n("424973"), n("881410");
             var l = n("917351"),
@@ -1712,10 +1722,10 @@
                 return b
             }
 
-            function V(e) {
+            function Q(e) {
                 return e
             }
-            var Q = {
+            var V = {
                 parse(e, t) {
                     var n, l, r;
                     let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : void 0,
@@ -1744,7 +1754,7 @@
                         a = null != l ? l.getGuildId() : null,
                         u = null != a ? x.default.getGuild(a) : null,
                         o = n ? B : r.omit(B, ["spoiler", "timestamp"]),
-                        d = n ? V : c.default.translateSurrogatesToInlineEmoji,
+                        d = n ? Q : c.default.translateSurrogatesToInlineEmoji,
                         s = i.parserFor(o),
                         f = {
                             inline: !0,
@@ -1811,4 +1821,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48590.91e049a0d7e2ba0511cf.js.map
+//# sourceMappingURL=48590.30373425cc01194cd313.js.map
