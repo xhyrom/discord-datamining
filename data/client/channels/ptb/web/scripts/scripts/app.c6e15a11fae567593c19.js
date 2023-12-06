@@ -4886,6 +4886,7 @@
                 stickerButtonWithNotification: "stickerButtonWithNotification__51ade",
                 stickerIcon: "stickerIcon_ff97e4",
                 textArea: "textArea__74543",
+                textAreaCustomGift: "textAreaCustomGift_eafd3f",
                 textAreaDisabled: "textAreaDisabled__60cc6 textArea__74543",
                 textAreaForPostCreation: "textAreaForPostCreation_d82a1b",
                 textAreaMobileThemed: "textAreaMobileThemed_f77964",
@@ -20203,6 +20204,7 @@
             "use strict";
             e.exports = {
                 body: "body__834d2",
+                editorTextArea: "editorTextArea__5ee78",
                 textArea: "textArea__771cd"
             }
         },
