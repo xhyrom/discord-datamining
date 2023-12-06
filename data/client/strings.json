@@ -14436,7 +14436,7 @@
   "GUILD_SETTINGS_AUDIT_LOG_HOME_SETTINGS_RESOURCE_CHANNEL_REMOVED": "\"Removed resource **!!{name}!!**\"",
   "APPLICATION_DIRECTORY_PROFILE_TOOLTIP_PREMIUM": "\"This app has premium features!\"",
   "APPLICATION_DIRECTORY_LISTING_TOOLTIP_PREMIUM": "\"Premium Features Available\"",
-  "INTERACTION_PREMIUM_UPSELL_MOBILE": "\"This command requires !!{appName}!! Premium, which isn't available to purchase on mobile. You can learn more on desktop or web.\"",
+  "INTERACTION_PREMIUM_UPSELL_MOBILE": "\"This command requires !!{appName}!! Premium, which isn't available to purchase on mobile.\"",
   "NITRODUCTION_ONBOARDING_HEADING_PROFILE_CUSTOMIZATION_AVATAR": "\"Animate your avatar\"",
   "NITRODUCTION_ONBOARDING_HEADING_PROFILE_CUSTOMIZATION_AVATAR_DECORATIONS": "\"Deck out your avatar\"",
   "NITRODUCTION_ONBOARDING_HEADING_PROFILE_CUSTOMIZATION_BANNER": "\"Express yourself!\"",
