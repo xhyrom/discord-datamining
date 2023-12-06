@@ -124,7 +124,7 @@
             <div class="w-embed">
                 <div class="btn-wrapper"><a data-track="https://discord.com/mobile?utm_source=blog&amp;utm_medium=website&amp;utm_campaign=2023-12_mobile&amp;utm_content=--t%3Apm" href="https://discord.com/mobile?utm_source=blog&amp;utm_medium=website&amp;utm_campaign=2023-12_mobile&amp;utm_content=--t%3Apm" class="btn-blog w-button" target="_blank">See What's New with Mobile </a></div>
             </div>
-            <p>And just because the ✨ sparkle emoji shortcut is gone doesn’t mean you can’t help give us another spark of inspiration — if you want to give any feedback or ideas and prefer trying it out on your desktop, hop on over to our <a href="https://support.discord.com/hc/en-us/community/topics">Feedback Forum</a> or send us a “post” on the platform formally known as <a href="https://twitter.com/discord">Twitter</a>.</p>
+            <p>And just because the ✨ sparkle emoji shortcut is gone doesn’t mean you can’t help give us another spark of inspiration — if you want to give any feedback or ideas and prefer trying it out on your desktop, hop on over to our <a href="https://support.discord.com/hc/en-us/community/topics">Feedback Forum</a> or send us a “post” on the platform formerly known as <a href="https://twitter.com/discord">Twitter</a>.</p>
         </div>
     </div>
     <div id="heading-8" class="rich-wrapper">
