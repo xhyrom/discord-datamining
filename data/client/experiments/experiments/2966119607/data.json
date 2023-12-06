@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-11_voice_activity_notification_user",
+    "label": "Voice Activity Notifications for User",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Voice Activity Notifications are enabled for user"
+    ],
+    "hash": 2966119607,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

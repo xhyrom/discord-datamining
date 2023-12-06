@@ -394,6 +394,8 @@ id,hash,label
 2023-11_video_quality_measurement_hwdec,2446445026,Video Quality Measurement Hardware Decoding
 2023-11_video_quality_measurement_hwdec_v1,622606997,Video Quality Measurement Hardware Decoding
 2023-11_voice_activity_in_profile,435681572,Voice Activity in Profile
+2023-11_voice_activity_notification_guild,3997016690,General Voice Channel Notifications for Guild
+2023-11_voice_activity_notification_user,2966119607,Voice Activity Notifications for User
 2023-11_xbox_game_invites,4094597383,Xbox Game Invites Experiment
 2023-12_marketing_automation_experiment,2969274422,Marketing Automation
 2023-12_mobile_redesign_nav_peek_existing_users,918744516,Mobile Redesign - Nav Experiment: Peek - Existing Users

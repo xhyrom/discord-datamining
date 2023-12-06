@@ -1,12 +1,31 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2023-11_voice_activity_notification_guild",
+    "label": "General Voice Channel Notifications for Guild",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Deadchat notifs enabled, voice channel activity notifs disabled",
+      "Treatment 2: Deadchat notifs disabled, voice channel activity notifs enabled",
+      "Treatment 3: Deadchat notifs enabled, voice channel activity notifs enabled"
+    ],
     "hash": 3997016690,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
