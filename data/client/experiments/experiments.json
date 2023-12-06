@@ -11628,18 +11628,26 @@
       "description": [
         "Not Eligible",
         "Treatment 0: Control",
-        "Treatment 1: Enabled"
+        "Treatment 1: Enabled, default 500ms buffer",
+        "Treatment 2: Enabled, 750ms buffer",
+        "Treatment 3: Enabled, 1s buffer",
+        "Treatment 4: Disabled, 750ms buffer",
+        "Treatment 5: Disabled, 1s buffer"
       ],
       "hash": 2446445026,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2,
+        3,
+        4,
+        5
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "extraOptions"
       ]
     }
   },
