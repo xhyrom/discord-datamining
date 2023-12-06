@@ -717,8 +717,8 @@
                     } = (0, u.decodeStreamKey)(e), [s, l] = null !== (t = n.getSSRCsForUser(a)) && void 0 !== t ? t : [];
                     if (null == s || null == l) throw Error("Could not find target SSRCs");
                     let d = s[0];
-                    i = _.saveClipForSSRC.bind(_, d, l, c, S)
-                } else i = _.saveClip.bind(_, c, S);
+                    i = _.saveClipForSSRC.bind(_, a, d, l)
+                } else i = _.saveClip.bind(_);
                 let h = function(e) {
                     var t;
                     let n, i, a;
@@ -754,7 +754,7 @@
                         duration: e,
                         thumbnail: t,
                         clipStats: a
-                    } = await i(), l = w(h, a);
+                    } = await i(c, S), l = w(h, a);
                     l.clip_save_time_ms = a.clipSaveTimeMs, l.clip_size_bytes = a.clipSizeBytes, null != a.viewerDecodeFps && (l.decode_fps_during_clip = a.viewerDecodeFps, l.encode_fps_during_clip = a.viewerEncodeFps, l.target_fps = null), E.default.track(N.AnalyticEvents.CLIP_SAVED, l);
                     let u = await (null != s.default.clips.getClipProtocolURLFromPath ? (0, b.createThumbnailFromVideo)(s.default.clips.getClipProtocolURLFromPath(c), 0) : (0, b.createThumbnail)(t));
                     return r.thumbnail = u, r.length = e, y.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (n = null == u ? void 0 : u.length) && void 0 !== n ? n : 0, " bytes thumbnail.")), await _.updateClipMetadata(c, JSON.stringify(r)), {
@@ -2587,4 +2587,4 @@
         }
     }
 ]);
-//# sourceMappingURL=53266.4781d168067d6dade714.js.map
+//# sourceMappingURL=53266.284b268cf97ce28124dc.js.map
