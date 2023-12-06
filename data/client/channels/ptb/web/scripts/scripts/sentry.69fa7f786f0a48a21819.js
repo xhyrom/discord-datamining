@@ -227,7 +227,7 @@
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-2f54d6e5d38d9190c113ab85a93820954b5395c1",
+                        release: "discord_web-e088429c61210ef0dcc1648c3a4eef85e79bfe05",
                         beforeSend: t => {
                             var e, n;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !u() && !("Aborted" === (n = t).message || "cancel captcha" === n.message) && c() ? t : null
@@ -245,7 +245,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (t = "252019", "252019")), r.setTag("builtAt", String("1701904978878"));
+                    }), r.setTag("buildNumber", (t = "252026", "252026")), r.setTag("builtAt", String("1701905669929"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) r.setTag(t, e[t]);
@@ -352,4 +352,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.1664ed6a74750ab0f82e.js.map
+//# sourceMappingURL=sentry.69fa7f786f0a48a21819.js.map

@@ -2559,11 +2559,10 @@
                     location: "planSelection"
                 }, {
                     autoTrackExposure: !1
-                });
-                n && !i && s.length > 0 && G.default.trackExposure({
+                }), d = n && !i && s.length > 0;
+                d && G.default.trackExposure({
                     location: "planSelection"
                 });
-                let d = o && s.length > 0 && n && !i;
                 if (1 === t) return (0, u.jsxs)(u.Fragment, {
                     children: [(0, u.jsx)(es, {
                         Icon: x.default,
@@ -2614,7 +2613,7 @@
                     }), (0, u.jsx)(es, {
                         Icon: N.default,
                         text: J.default.Messages.PREMIUM_TIER_CUSTOM_PROFILE_ITEM
-                    }), d && (0, u.jsx)(Z.default, {})]
+                    }), o && d && (0, u.jsx)(Z.default, {})]
                 })
             }
 
@@ -3479,4 +3478,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47387.1dd82d8d56a51a99708f.js.map
+//# sourceMappingURL=47387.031abc93d0e248febf9c.js.map
