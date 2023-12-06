@@ -109280,43 +109280,66 @@ html .invoiceCancelRow_a8669b {
 }
 
 .defaultTextInput__91909 {
-    flex: 1
+    flex: 1;
+    background-color: transparent
 }
 
 .imageOnlyContainer__04301 {
     border-radius: var(--radius-lg);
-    background-color: var(--background-primary);
-    width: 48%;
-    height: 158px;
+    background-color: var(--background-secondary-alt);
+    border: 5px solid var(--background-floating);
+    height: 175px;
     cursor: pointer;
-    overflow: hidden
+    overflow: hidden;
+    box-sizing: border-box
 }
 
-.imageExpressionPickerButton_bfd5b8 {
+.expressionPickerButtonDefault_eda6e6 {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer
+}
+
+.expressionPickerButtonImageOnly__42a53 {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%
+    cursor: pointer
 }
 
-.expressionPickerButtonImage__5366d {
-    width: 24px;
-    padding-left: 20px;
-    padding-right: 16px;
-    color: var(--interactive-active);
+.expressionPickerIconDefault__286f7 {
+    color: var(--interactive-normal);
+    margin-right: 6px
+}
+
+.expressionPickerIconImageOnly_b5541a {
+    width: 36px;
+    height: 36px;
+    color: var(--text-muted);
     cursor: pointer
+}
+
+.emojiDefault_a6c36f {
+    margin-right: 6px
 }
 
 .gifJumbo__8044e {
     width: 100%;
-    height: 100%
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .gifDefault_a0c5fa {
     width: 48px;
     height: 48px;
-    margin-right: 12px
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .spinnerWrapper__6bb67 {
@@ -109329,15 +109352,13 @@ html .invoiceCancelRow_a8669b {
 
 .container__1b71e {
     border-radius: 8px;
-    background-color: var(--background-secondary);
-    width: 377px
+    background-color: var(--background-secondary)
 }
 
 .header__96d08 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    border-bottom: 1px solid var(--background-modifier-hover)
+    align-items: center
 }
 
 .headerText__35f81 {
@@ -109354,8 +109375,8 @@ html .invoiceCancelRow_a8669b {
 .content__808b1 {
     display: flex;
     flex-direction: column;
-    padding: 20px 15px;
-    row-gap: 12px
+    row-gap: 12px;
+    padding: 0 15px 20px
 }
 
 .answerInputsContainer__22676 {
@@ -109368,39 +109389,35 @@ html .invoiceCancelRow_a8669b {
 }
 
 .imageOnlyContainer__036ec {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    -moz-column-gap: 12px;
-    column-gap: 12px
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px
 }
 
 .formInput_c28524 {
     border-radius: var(--radius-lg)
 }
 
+.questionInput_ac682b {
+    padding: 20px;
+    height: 48px
+}
+
 .footer__1028f {
     display: flex;
     flex-direction: row;
-    padding: 25px 0 15px;
-    margin: 0 15px;
-    border-top: 1px solid var(--background-modifier-hover)
+    padding: 15px 20px;
+    margin: 0;
+    background: var(--background-secondary-alt)
 }
 
 .postButton_bf09d5 {
-    background-color: var(--redesign-button-primary-background);
-    border-radius: 48px
+    min-height: var(--custom-button-button-lg-height);
+    background-color: var(--redesign-button-primary-background)
 }
 
-.postButtonInner_bb4fbb {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px
-}
-
-.postIcon_a3224d {
-    width: 12px
+.postButtonText__4aa81 {
+    color: inherit
 }
 
 .container_d9f390 {
@@ -109410,26 +109427,27 @@ html .invoiceCancelRow_a8669b {
 
 .option_aec314 {
     border-radius: 25px;
-    background-color: var(--bg-base-primary);
-    box-shadow: var(--shadow-low);
+    background-color: var(--background-secondary-alt);
     padding: 8px 20px;
     display: inline-flex;
     align-items: center;
     margin-right: 8px;
     cursor: pointer;
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    transition: background-color.2s var(--custom-button-transition-duration)ease, border-color var(--custom-button-transition-duration)ease
+}
+
+.option_aec314:hover {
+    background-color: var(--background-floating)
 }
 
 .optionSelected_ebb40c {
+    background-color: var(--background-floating);
     border: 2px solid var(--brand-500)
 }
 
 .icon__60715 {
     width: 16px;
-    color: var(--interactive-muted)
-}
-
-.iconSelected__362aa {
     color: var(--interactive-normal)
 }
 
@@ -124144,4 +124162,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8fdea67ad0d20cacf277.css.map*/
+/*# sourceMappingURL=app.fa1f302fc93b85a96a06.css.map*/
