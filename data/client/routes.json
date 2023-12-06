@@ -4670,5 +4670,9 @@
       "OPTIONS",
       "PUT"
     ]
+  },
+  "PREMIUM_MARKETING": {
+    "url": "/premium-marketing",
+    "allowed_methods": null
   }
 }
