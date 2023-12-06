@@ -397,6 +397,7 @@ id,hash,label
 2023-11_voice_activity_notification_guild,3997016690,General Voice Channel Notifications for Guild
 2023-11_voice_activity_notification_user,2966119607,Voice Activity Notifications for User
 2023-11_xbox_game_invites,4094597383,Xbox Game Invites Experiment
+2023-12_guild_members_table_safety_signal_filters,1004673763,Guild Members Table Safety Signals
 2023-12_marketing_automation_experiment,2969274422,Marketing Automation
 2023-12_mobile_redesign_nav_peek_existing_users,918744516,Mobile Redesign - Nav Experiment: Peek - Existing Users
 2023-12_mobile_redesign_nav_peek_new_users,1979408598,Mobile Redesign - Nav Experiment: Peek - New Users
