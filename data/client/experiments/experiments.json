@@ -9439,6 +9439,26 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
             "none": {
               "rollout": [
                 {
