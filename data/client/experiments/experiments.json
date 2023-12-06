@@ -9746,8 +9746,8 @@
         1
       ],
       "holdout": {
-        "name": "2023-10_event_experiments_holdout",
-        "bucket": 0
+        "name": null,
+        "bucket": null
       },
       "aa_mode": false,
       "config_keys": [
