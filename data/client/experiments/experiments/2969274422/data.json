@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-12_marketing_automation_experiment",
+    "label": "Marketing Automation",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Ask server for marketing content for rendering"
+    ],
+    "hash": 2969274422,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
