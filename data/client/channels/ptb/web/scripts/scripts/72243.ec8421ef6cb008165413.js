@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -23477,18 +23477,18 @@
                 var e, t;
                 if (__OVERLAY__) return S.ThemeTypes.DARK;
                 if (u.default.syncForcedColors && "active" === u.default.systemForcedColors && null != r) return r;
-                let n = p.default.useSystemTheme;
-                if (n === T.SystemThemeState.ON && null != r) return r;
-                let i = null !== (t = null === (e = f.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme) && void 0 !== t ? t : g,
-                    s = !1;
+                let n = !1;
                 try {
-                    s = (0, d.isInMainTabsExperiment)()
+                    n = (0, d.isInMainTabsExperiment)()
                 } catch {}
-                if (s) {
+                let i = p.default.useSystemTheme;
+                if (i === T.SystemThemeState.ON && null != r) return r;
+                let s = null !== (t = null === (e = f.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme) && void 0 !== t ? t : g;
+                if (n) {
                     if (p.default.useAMOLEDTheme === m.AMOLEDThemeState.ON) return S.ThemeTypes.AMOLED;
-                    if (i === S.ThemeTypes.DARK) return S.ThemeTypes.DARKER
+                    if (s === S.ThemeTypes.DARK) return S.ThemeTypes.DARKER
                 }
-                return i
+                return s
             }
 
             function N() {
@@ -41562,4 +41562,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.d8fe28515e57e9152a27.js.map
+//# sourceMappingURL=72243.ec8421ef6cb008165413.js.map
