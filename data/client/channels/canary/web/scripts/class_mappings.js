@@ -20538,6 +20538,7 @@
             "use strict";
             e.exports = {
                 affinityDescription: "affinityDescription__4a412",
+                affinityHeight: "affinityHeight__33e1e",
                 button: "button_bbafbd",
                 buttonContainer: "buttonContainer_e04816",
                 container: "container__1e26b",
