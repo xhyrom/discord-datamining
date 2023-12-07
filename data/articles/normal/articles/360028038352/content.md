@@ -121,6 +121,6 @@
     <li>And how many more Boosts you need before your server reaches the next level</li>
 </ul>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19576232999191" width="624" height="488"></p>
-<p>If your server is running low on Server Boosts and loses a level, the server will be able to keep the perks for a grace period of 3 days. After 3 days, the perks (such as the server banner and extra emojis) will not be fully removed from the server, but will become temporarily invalid until the level is regained.</p>
-<p>However, the Custom Invite Link will be lost and become available to other servers after 3 days. </p>
+<p>If your server is running low on Server Boosts and loses a level, the server will be able to keep the perks for a grace period of 72 hours. After 72 hours, the perks (such as the server banner and extra emojis) will not be fully removed from the server, but will become temporarily invalid until the level is regained.</p>
+<p>However, the Custom Invite Link will be lost and become available to other servers after 72 hours. </p>
 <p>Want to see different perks added to this in the future? We'd love to hear all your feedback and suggestions over at <a href="http://dis.gd/feedback" target="_blank" rel="noopener noreferrer">http://dis.gd/feedback</a>!</p>
