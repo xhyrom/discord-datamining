@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -32790,7 +32790,7 @@ html .progress__4ef76 {
     text-align: center;
     border-radius: 3px;
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     padding: 12px 0;
     margin-top: 16px;
     color: var(--white-500);
@@ -124349,4 +124349,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.88bdf03f9bf7cd31d510.css.map*/
+/*# sourceMappingURL=app.f0391e7e7c5211402644.css.map*/

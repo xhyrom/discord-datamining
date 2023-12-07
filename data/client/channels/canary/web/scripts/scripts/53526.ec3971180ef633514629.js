@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["53266"], {
+    ["53526"], {
         89400: function(e, t, n) {
             var i = {
                 "./activities-rocket-time.mp3": "329160",
@@ -72,10 +72,10 @@
             };
 
             function a(e) {
-                return n(s(e))
+                return n(l(e))
             }
 
-            function s(e) {
+            function l(e) {
                 if (!n.o(i, e)) {
                     var t = Error("Cannot find module '" + e + "'");
                     throw t.code = "MODULE_NOT_FOUND", t
@@ -84,7 +84,7 @@
             }
             a.id = '"89400"', a.keys = function() {
                 return Object.keys(i)
-            }, a.resolve = s, e.exports = a
+            }, a.resolve = l, e.exports = a
         },
         329160: function(e, t, n) {
             "use strict";
@@ -398,8 +398,8 @@
             });
             var i = n("374014"),
                 a = n("373469"),
-                s = n("271938"),
-                l = n("824563"),
+                l = n("271938"),
+                s = n("824563"),
                 u = n("945956"),
                 d = n("568307"),
                 r = n("800762"),
@@ -418,8 +418,8 @@
                         let {
                             ownerId: t
                         } = i.decodeStreamKey(e);
-                        if (t !== s.default.getId()) {
-                            let e = l.default.getActivities(t).find(e => e.type === f.ActivityTypes.PLAYING);
+                        if (t !== l.default.getId()) {
+                            let e = s.default.getActivities(t).find(e => e.type === f.ActivityTypes.PLAYING);
                             return {
                                 sourceName: null == e ? void 0 : e.name,
                                 sourceApplicationId: null == e ? void 0 : e.application_id
@@ -433,7 +433,7 @@
                         sourceName: null !== (t = null == u ? void 0 : u.sourceName) && void 0 !== t ? t : null == o ? void 0 : o.name,
                         sourceApplicationId: null !== (n = null == u ? void 0 : u.id) && void 0 !== n ? n : null == o ? void 0 : o.id
                     }
-                }(e), m = u.default.getChannelId(), _ = [s.default.getId()];
+                }(e), m = u.default.getChannelId(), _ = [l.default.getId()];
                 return null != m && (_ = Object.keys(r.default.getVoiceStatesForChannel(m))), {
                     id: o.default.fromTimestamp(Date.now()),
                     version: c.CURRENT_CLIP_METADATA_VERSION,
@@ -450,7 +450,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 validateClipMetadata: function() {
-                    return l
+                    return s
                 }
             }), n("222007"), n("808653");
             var i = n("80028");
@@ -470,11 +470,11 @@
                     };
                     return t
                 }],
-                s = null;
-            async function l(e) {
+                l = null;
+            async function s(e) {
                 var t;
-                let l = (await n.el("990599").then(n.t.bind(n, "990599", 23))).default;
-                let u = (t = l, null != s ? s : s = t.object({
+                let s = (await n.el("990599").then(n.t.bind(n, "990599", 23))).default;
+                let u = (t = s, null != l ? l : l = t.object({
                     id: t.string().required(),
                     version: t.number().positive().integer().min(0).max(i.CURRENT_CLIP_METADATA_VERSION).optional(),
                     name: t.string(),
@@ -502,7 +502,7 @@
                     clipMethod: t.string().allow("auto", "manual").required()
                 }).required());
                 try {
-                    l.assert(e, u);
+                    s.assert(e, u);
                     return null == e.version && (e.version = 0), a.slice(e.version).reduce((e, t) => t(e), e)
                 } catch (e) {
                     return null
@@ -554,8 +554,8 @@
             }), n("222007"), n("70102"), n("424973");
             var i = n("750028"),
                 a = n("913144"),
-                s = n("49671"),
-                l = n("44642"),
+                l = n("49671"),
+                s = n("44642"),
                 u = n("374014"),
                 d = n("584687"),
                 r = n("103979"),
@@ -567,14 +567,14 @@
                 _ = n("568307"),
                 g = n("205817"),
                 E = n("599110"),
-                S = n("773336"),
-                h = n("709681"),
+                h = n("773336"),
+                S = n("709681"),
                 v = n("386045"),
                 C = n("13136"),
                 A = n("881095"),
                 I = n("997942"),
-                T = n("310238"),
-                b = n("99366"),
+                b = n("310238"),
+                T = n("99366"),
                 y = n("80028"),
                 N = n("49111");
 
@@ -662,25 +662,25 @@
             }
 
             function w(e, t) {
-                var n, i, a, s, u, d, r, o, f, p;
+                var n, i, a, l, u, d, r, o, f, p;
                 let m = new Map;
                 for (let e in t.framesEncodedByEncoder) {
                     let i = t.framesEncodedByEncoder[e],
-                        a = (0, l.parseEncoder)(e),
-                        s = null !== (n = m.get(a)) && void 0 !== n ? n : 0;
-                    m.set(a, s + i)
+                        a = (0, s.parseEncoder)(e),
+                        l = null !== (n = m.get(a)) && void 0 !== n ? n : 0;
+                    m.set(a, l + i)
                 }
                 return {
                     ...e,
-                    frames_encoded_nvidia_cuda: null !== (i = m.get(l.Encoders.NVIDIA_CUDA)) && void 0 !== i ? i : 0,
-                    frames_encoded_nvidia_direct3d: null !== (a = m.get(l.Encoders.NVIDIA_DIRECT_3D)) && void 0 !== a ? a : 0,
-                    frames_encoded_openh264: null !== (s = m.get(l.Encoders.OPENH264)) && void 0 !== s ? s : 0,
-                    frames_encoded_videotoolbox: null !== (u = m.get(l.Encoders.VIDEOTOOLBOX)) && void 0 !== u ? u : 0,
-                    frames_encoded_amd_direct3d: null !== (d = m.get(l.Encoders.AMD_DIRECT_3D)) && void 0 !== d ? d : 0,
-                    frames_encoded_intel: null !== (r = m.get(l.Encoders.INTEL)) && void 0 !== r ? r : 0,
-                    frames_encoded_intel_direct3d: null !== (o = m.get(l.Encoders.INTEL_DIRECT_3D)) && void 0 !== o ? o : 0,
-                    frames_encoded_uncategorized: null !== (f = m.get(l.Encoders.UNCATEGORIZED)) && void 0 !== f ? f : 0,
-                    frames_encoded_unknown: null !== (p = m.get(l.Encoders.UNKNOWN)) && void 0 !== p ? p : 0,
+                    frames_encoded_nvidia_cuda: null !== (i = m.get(s.Encoders.NVIDIA_CUDA)) && void 0 !== i ? i : 0,
+                    frames_encoded_nvidia_direct3d: null !== (a = m.get(s.Encoders.NVIDIA_DIRECT_3D)) && void 0 !== a ? a : 0,
+                    frames_encoded_openh264: null !== (l = m.get(s.Encoders.OPENH264)) && void 0 !== l ? l : 0,
+                    frames_encoded_videotoolbox: null !== (u = m.get(s.Encoders.VIDEOTOOLBOX)) && void 0 !== u ? u : 0,
+                    frames_encoded_amd_direct3d: null !== (d = m.get(s.Encoders.AMD_DIRECT_3D)) && void 0 !== d ? d : 0,
+                    frames_encoded_intel: null !== (r = m.get(s.Encoders.INTEL)) && void 0 !== r ? r : 0,
+                    frames_encoded_intel_direct3d: null !== (o = m.get(s.Encoders.INTEL_DIRECT_3D)) && void 0 !== o ? o : 0,
+                    frames_encoded_uncategorized: null !== (f = m.get(s.Encoders.UNCATEGORIZED)) && void 0 !== f ? f : 0,
+                    frames_encoded_unknown: null !== (p = m.get(s.Encoders.UNKNOWN)) && void 0 !== p ? p : 0,
                     frames_submitted: t.framesSubmitted,
                     frames_submitted_during_clip: t.framesSubmittedDuringClip,
                     frames_encoded: t.framesEncoded,
@@ -702,24 +702,24 @@
             async function P(e) {
                 var t, n;
                 let i;
-                let l = v.default.getSettings(),
-                    d = l.storageLocation,
+                let s = v.default.getSettings(),
+                    d = s.storageLocation,
                     r = (0, A.default)(e),
                     o = "".concat((0, C.default)(r.applicationName.substring(0, 20)), "_").concat(r.id, ".mp4"),
-                    c = s.default.fileManager.join(d, o),
+                    c = l.default.fileManager.join(d, o),
                     _ = m.default.getMediaEngine(),
-                    S = JSON.stringify(r);
+                    h = JSON.stringify(r);
                 if (null != e) {
                     let n = g.default.getRTCConnection(e);
                     if (null == n) throw Error("could not find RTC connection");
                     let {
                         ownerId: a
-                    } = (0, u.decodeStreamKey)(e), [s, l] = null !== (t = n.getSSRCsForUser(a)) && void 0 !== t ? t : [];
-                    if (null == s || null == l) throw Error("Could not find target SSRCs");
-                    let d = s[0];
-                    i = _.saveClipForSSRC.bind(_, a, d, l)
+                    } = (0, u.decodeStreamKey)(e), [l, s] = null !== (t = n.getSSRCsForUser(a)) && void 0 !== t ? t : [];
+                    if (null == l || null == s) throw Error("Could not find target SSRCs");
+                    let d = l[0];
+                    i = _.saveClipForSSRC.bind(_, a, d, s)
                 } else i = _.saveClip.bind(_);
-                let h = function(e) {
+                let S = function(e) {
                     var t;
                     let n, i, a;
                     if (null != e) {
@@ -731,15 +731,15 @@
                             t = f.default.getActiveStreamForUser(e, null);
                         n = null != t ? g.default.getRTCConnection((0, u.encodeStreamKey)(t)) : null, i = null == t ? void 0 : t.guildId, a = null == t ? void 0 : t.channelId
                     }
-                    let s = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
+                    let l = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
                     return {
                         rtc_connection_id: null == n ? void 0 : n.getRTCConnectionId(),
                         media_session_id: null == n ? void 0 : n.getMediaSessionId(),
                         parent_media_session_id: null == n ? void 0 : n.parentMediaSessionId,
                         guild_id: i,
                         channel_id: a,
-                        application_id: null == s ? void 0 : s.id,
-                        application_name: null == s ? void 0 : s.name
+                        application_id: null == l ? void 0 : l.id,
+                        application_name: null == l ? void 0 : l.name
                     }
                 }(e);
                 null != e && a.default.dispatch({
@@ -754,9 +754,9 @@
                         duration: e,
                         thumbnail: t,
                         clipStats: a
-                    } = await i(c, S), l = w(h, a);
-                    l.clip_save_time_ms = a.clipSaveTimeMs, l.clip_size_bytes = a.clipSizeBytes, null != a.viewerDecodeFps && (l.decode_fps_during_clip = a.viewerDecodeFps, l.encode_fps_during_clip = a.viewerEncodeFps, l.target_fps = null), E.default.track(N.AnalyticEvents.CLIP_SAVED, l);
-                    let u = await (null != s.default.clips.getClipProtocolURLFromPath ? (0, b.createThumbnailFromVideo)(s.default.clips.getClipProtocolURLFromPath(c), 0) : (0, b.createThumbnail)(t));
+                    } = await i(c, h), s = w(S, a);
+                    s.clip_save_time_ms = a.clipSaveTimeMs, s.clip_size_bytes = a.clipSizeBytes, null != a.viewerDecodeFps && (s.decode_fps_during_clip = a.viewerDecodeFps, s.encode_fps_during_clip = a.viewerEncodeFps, s.target_fps = null), E.default.track(N.AnalyticEvents.CLIP_SAVED, s);
+                    let u = await (null != l.default.clips.getClipProtocolURLFromPath ? (0, T.createThumbnailFromVideo)(l.default.clips.getClipProtocolURLFromPath(c), 0) : (0, T.createThumbnail)(t));
                     return r.thumbnail = u, r.length = e, y.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (n = null == u ? void 0 : u.length) && void 0 !== n ? n : 0, " bytes thumbnail.")), await _.updateClipMetadata(c, JSON.stringify(r)), {
                         ...r,
                         filepath: c
@@ -765,8 +765,8 @@
                     if (null != e && a.default.dispatch({
                             type: "CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR",
                             clipId: r.id
-                        }), !("errorMessage" in n)) throw E.default.track(N.AnalyticEvents.CLIP_SAVE_FAILURE, h), n;
-                    let t = w(h, n);
+                        }), !("errorMessage" in n)) throw E.default.track(N.AnalyticEvents.CLIP_SAVE_FAILURE, S), n;
+                    let t = w(S, n);
                     throw t.error_at = n.errorAt, t.error_message = n.errorMessage, E.default.track(N.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
                 }
             }
@@ -786,14 +786,14 @@
                     autoTrackExposure: !1
                 });
                 if (v.default.getIsAtMaxSaveClipOperations()) return;
-                let s = v.default.getSettings().clipsEnabled && null != f.default.getCurrentUserActiveStream(),
-                    l = n && v.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null,
+                let l = v.default.getSettings().clipsEnabled && null != f.default.getCurrentUserActiveStream(),
+                    s = n && v.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null,
                     u = null != e && null != f.default.getActiveStreamForStreamKey(e) && i;
-                if (!s && !l && !u) return;
+                if (!l && !s && !u) return;
                 a.default.dispatch({
                     type: "CLIPS_SAVE_CLIP_START"
                 });
-                let o = (0, h.playSound)("clip_save", .5),
+                let o = (0, S.playSound)("clip_save", .5),
                     c = performance.now();
                 try {
                     let t = await P(e);
@@ -802,7 +802,7 @@
                         clip: t
                     })
                 } catch (e) {
-                    y.ClipsLogger.error("Clip Failed to Save", e), null == o || o.stop(), (0, h.playSound)("clip_error", .5), a.default.dispatch({
+                    y.ClipsLogger.error("Clip Failed to Save", e), null == o || o.stop(), (0, S.playSound)("clip_error", .5), a.default.dispatch({
                         type: "CLIPS_SAVE_CLIP_ERROR"
                     })
                 }
@@ -836,8 +836,8 @@
             }
             async function V(e) {
                 var t;
-                if (!(0, S.isDesktop)() || (null === (t = s.default.clips) || void 0 === t ? void 0 : t.loadClipsDirectory) == null) return;
-                let n = await s.default.clips.loadClipsDirectory(e),
+                if (!(0, h.isDesktop)() || (null === (t = l.default.clips) || void 0 === t ? void 0 : t.loadClipsDirectory) == null) return;
+                let n = await l.default.clips.loadClipsDirectory(e),
                     i = [];
                 for (let e of n) {
                     let t = await (0, I.validateClipMetadata)({
@@ -853,7 +853,7 @@
             }
             async function H(e) {
                 var t;
-                (0, S.isDesktop)() && (null === (t = s.default.clips) || void 0 === t ? void 0 : t.deleteClip) != null && (await s.default.clips.deleteClip(e), a.default.dispatch({
+                (0, h.isDesktop)() && (null === (t = l.default.clips) || void 0 === t ? void 0 : t.deleteClip) != null && (await l.default.clips.deleteClip(e), a.default.dispatch({
                     type: "CLIPS_DELETE_CLIP",
                     filepath: e
                 }))
@@ -861,7 +861,7 @@
             async function B(e, t) {
                 let n = m.default.getMediaEngine(),
                     i = await n.exportClip(e.filepath, t);
-                return (0, T.default)(i)
+                return (0, b.default)(i)
             }
         },
         310238: function(e, t, n) {
@@ -873,16 +873,16 @@
             }), n("222007"), n("311790"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341");
             var i = n("627445"),
                 a = n.n(i),
-                s = n("547757"),
-                l = n.n(s);
+                l = n("547757"),
+                s = n.n(l);
             async function u(e) {
                 let t;
-                let n = l.createFile(!1),
+                let n = s.createFile(!1),
                     i = new Promise(e => {
                         n.onReady = e
                     }),
-                    s = await e.arrayBuffer();
-                for (let e of (s.fileStart = 0, n.appendBuffer(s), n.flush(), await i, a(null != n.boxes, "mp4boxInputFile.boxes should not be null after parsing"), n.boxes)) "uuid" === e.type && (t = e.start);
+                    l = await e.arrayBuffer();
+                for (let e of (l.fileStart = 0, n.appendBuffer(l), n.flush(), await i, a(null != n.boxes, "mp4boxInputFile.boxes should not be null after parsing"), n.boxes)) "uuid" === e.type && (t = e.start);
                 let u = e.slice(0, t, e.type),
                     d = e.slice(t + 4, t + 8 + 16, e.type);
                 return new Blob([u, new Uint8Array([0, 0, 0, 24]), d], {
@@ -897,7 +897,7 @@
                     return a
                 },
                 createThumbnailFromVideo: function() {
-                    return s
+                    return l
                 }
             }), n("70102");
             var i = n("80028");
@@ -915,14 +915,14 @@
                 if ("string" != typeof n) throw Error("Thumbnail creation failed");
                 return n
             }
-            async function s(e, t) {
+            async function l(e, t) {
                 let n = document.createElement("video");
                 n.muted = !0, n.src = e, n.currentTime = t, await n.play(), n.pause();
                 let a = i.CLIPS_THUMBNAIL_MAX_WIDTH / n.videoWidth,
-                    s = i.CLIPS_THUMBNAIL_MAX_HEIGHT / n.videoHeight,
-                    l = Math.min(a, s),
-                    u = n.videoWidth * l,
-                    d = n.videoHeight * l,
+                    l = i.CLIPS_THUMBNAIL_MAX_HEIGHT / n.videoHeight,
+                    s = Math.min(a, l),
+                    u = n.videoWidth * s,
+                    d = n.videoHeight * s,
                     r = document.createElement("canvas");
                 r.width = u, r.height = d;
                 let o = r.getContext("2d");
@@ -934,10 +934,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 updateDevToolsSettings: function() {
-                    return s
+                    return l
                 },
                 toggleDisplayDevTools: function() {
-                    return l
+                    return s
                 },
                 clearAnalyticsLog: function() {
                     return u
@@ -946,15 +946,15 @@
             var i = n("913144"),
                 a = n("584369");
 
-            function s(e) {
+            function l(e) {
                 i.default.dispatch({
                     type: "DEV_TOOLS_SETTINGS_UPDATE",
                     settings: e
                 })
             }
 
-            function l() {
-                s({
+            function s() {
+                l({
                     displayTools: !a.default.displayTools
                 })
             }
@@ -977,8 +977,8 @@
             });
             var i = n("446674"),
                 a = n("95410"),
-                s = n("913144"),
-                l = n("9503");
+                l = n("913144"),
+                s = n("9503");
             let u = 360,
                 d = {
                     devToolsEnabled: !1,
@@ -993,7 +993,7 @@
                 };
             class r extends i.default.DeviceSettingsStore {
                 initialize(e) {
-                    d = null != e ? e : d, s.default.actionLogger.persist = this.devToolsEnabled
+                    d = null != e ? e : d, l.default.actionLogger.persist = this.devToolsEnabled
                 }
                 getUserAgnosticState() {
                     return d
@@ -1019,9 +1019,9 @@
                 }
             }
             r.displayName = "DevToolsSettingsStore", r.persistKey = "DevToolsSettingsStore";
-            var o = new r(s.default, {
+            var o = new r(l.default, {
                 DEV_TOOLS_SETTINGS_UPDATE: function(e) {
-                    (d.devToolsEnabled || e.settings.devToolsEnabled) && (null != e.settings.devToolsEnabled && (s.default.actionLogger.persist = e.settings.devToolsEnabled, a.default.set(l.STORAGE_KEY_LOG_DISPATCHES, e.settings.devToolsEnabled)), d = {
+                    (d.devToolsEnabled || e.settings.devToolsEnabled) && (null != e.settings.devToolsEnabled && (l.default.actionLogger.persist = e.settings.devToolsEnabled, a.default.set(s.STORAGE_KEY_LOG_DISPATCHES, e.settings.devToolsEnabled)), d = {
                         ...d,
                         ...e.settings
                     })
@@ -1032,7 +1032,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 useFirstForumPostMessage: function() {
-                    return h
+                    return S
                 },
                 useMostRecentForumMessage: function() {
                     return v
@@ -1043,8 +1043,8 @@
             }), n("222007");
             var i = n("917351"),
                 a = n.n(i),
-                s = n("446674"),
-                l = n("872717"),
+                l = n("446674"),
+                s = n("872717"),
                 u = n("913144"),
                 d = n("42203"),
                 r = n("670902"),
@@ -1113,17 +1113,17 @@
                 return !1
             }
 
-            function S(e, t) {
+            function h(e, t) {
                 return !e && null == t
             }
 
-            function h(e) {
+            function S(e) {
                 var t, n;
                 let {
                     loaded: i,
                     firstMessage: a
-                } = (0, s.useStateFromStoresObject)([c.default], () => c.default.getMessage(e.id)), l = (0, s.useStateFromStores)([d.default], () => d.default.getChannel(e.parent_id));
-                if (null != l && (t = i, n = a, !t && null == n)) I(l, e.id);
+                } = (0, l.useStateFromStoresObject)([c.default], () => c.default.getMessage(e.id)), s = (0, l.useStateFromStores)([d.default], () => d.default.getChannel(e.parent_id));
+                if (null != s && (t = i, n = a, !t && null == n)) I(s, e.id);
                 return {
                     loaded: i,
                     firstMessage: a
@@ -1134,7 +1134,7 @@
                 let {
                     loaded: n,
                     message: i
-                } = (0, s.useStateFromStoresObject)([f.default], () => f.default.getMessageState(t.id));
+                } = (0, l.useStateFromStoresObject)([f.default], () => f.default.getMessageState(t.id));
                 return null != e && E(t.guild_id, t.id) && I(e, t.id), {
                     loaded: n,
                     mostRecentMessage: i
@@ -1146,11 +1146,11 @@
                 t.forEach(t => {
                     var i, a;
                     let {
-                        loaded: s,
-                        firstMessage: l
+                        loaded: l,
+                        firstMessage: s
                     } = c.default.getMessage(t);
-                    if (i = s, a = l, !i && null == a || E(e.guild_id, t)) _.request(e.id, t), n = !0
-                }), n && null == g && (g = setTimeout(T, 0))
+                    if (i = l, a = s, !i && null == a || E(e.guild_id, t)) _.request(e.id, t), n = !0
+                }), n && null == g && (g = setTimeout(b, 0))
             }
 
             function A(e) {
@@ -1164,14 +1164,14 @@
                     a = n.slice(i, i + 5).filter(t => !_.hasRequested(e.id, t));
                 C(e, a)
             }
-            async function T() {
+            async function b() {
                 try {
-                    for (; _.hasNext();) await b(_.next())
+                    for (; _.hasNext();) await T(_.next())
                 } finally {
                     g = null
                 }
             }
-            async function b(e) {
+            async function T(e) {
                 let t = _.getNextBatch(e, 10);
                 try {
                     var n;
@@ -1182,7 +1182,7 @@
                         body: {
                             threads: a
                         }
-                    } = await l.default.post({
+                    } = await s.default.post({
                         url: p.Endpoints.FORUM_POSTS(e),
                         body: {
                             thread_ids: t
@@ -1207,8 +1207,8 @@
             });
             var i = n("446674"),
                 a = n("913144"),
-                s = n("692038"),
-                l = n("42203"),
+                l = n("692038"),
+                s = n("42203"),
                 u = n("697218"),
                 d = n("449008"),
                 r = n("299039");
@@ -1216,14 +1216,14 @@
 
             function c(e) {
                 var t;
-                let n = l.default.getChannel(null == e ? void 0 : e.channel_id);
+                let n = s.default.getChannel(null == e ? void 0 : e.channel_id);
                 if (null == n || !n.isForumPost()) return !1;
                 let i = o[n.id];
                 return r.default.compare(null == e ? void 0 : e.id, null == i ? void 0 : null === (t = i.message) || void 0 === t ? void 0 : t.id) > -1
             }
 
             function f(e, t) {
-                let n = null == t ? null : (0, s.createMessageRecord)(t);
+                let n = null == t ? null : (0, l.createMessageRecord)(t);
                 return o[e] = {
                     loaded: !0,
                     message: n
@@ -1250,7 +1250,7 @@
             }
             class g extends i.default.Store {
                 initialize() {
-                    this.waitFor(l.default, u.default)
+                    this.waitFor(s.default, u.default)
                 }
                 getMessageState(e) {
                     return !(e in o) && (o[e] = {
@@ -1277,7 +1277,7 @@
                             i = m(e);
                         null != n && null != i && (o[e] = {
                             ...n,
-                            message: (0, s.updateMessageRecord)(i, t)
+                            message: (0, l.updateMessageRecord)(i, t)
                         })
                     }(e.message.channel_id, e.message)
                 },
@@ -1306,23 +1306,23 @@
             }), n("222007");
             var i = n("913144"),
                 a = n("689988"),
-                s = n("26989"),
-                l = n("697218"),
+                l = n("26989"),
+                s = n("697218"),
                 u = n("509");
             let d = null,
                 r = () => {
-                    let e = s.default.getCommunicationDisabledUserMap();
+                    let e = l.default.getCommunicationDisabledUserMap();
                     Object.keys(e).forEach(t => {
-                        let n = (0, s.getGuildIdFromCommunicationDisabledUserKey)(t),
-                            i = (0, s.getUserIdFromCommunicationDisabledUserKey)(t),
+                        let n = (0, l.getGuildIdFromCommunicationDisabledUserKey)(t),
+                            i = (0, l.getUserIdFromCommunicationDisabledUserKey)(t),
                             a = e[t];
                         !(0, u.isCommunicationDisabled)(a) && o(n, i)
                     })
                 },
                 o = (e, t) => {
                     var n, a, d, r, o, c;
-                    let f = s.default.getMember(e, t),
-                        p = l.default.getUser(t);
+                    let f = l.default.getMember(e, t),
+                        p = s.default.getUser(t);
                     if (null == f || null == p || (0, u.isMemberCommunicationDisabled)(f)) return;
                     let m = {
                         ...f,
@@ -1360,7 +1360,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return s
+                    return l
                 }
             });
             var i = n("862205");
@@ -1379,7 +1379,7 @@
                     }
                 }]
             });
-            var s = a
+            var l = a
         },
         179803: function(e, t, n) {
             "use strict";
@@ -1388,13 +1388,13 @@
                     return E
                 },
                 dismissedGuildOnboardingUpsell: function() {
-                    return S
+                    return h
                 }
             }), n("222007");
             var i = n("866227"),
                 a = n.n(i),
-                s = n("151426"),
-                l = n("801340"),
+                l = n("151426"),
+                s = n("801340"),
                 u = n("10641"),
                 d = n("872173"),
                 r = n("374363"),
@@ -1403,24 +1403,24 @@
                 f = n("380710"),
                 p = n("49111"),
                 m = n("994428");
-            let _ = [s.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL_V2, s.DismissibleContent.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE, s.DismissibleContent.GUILD_ONBOARDING_UPSELL_NAGBAR],
+            let _ = [l.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL_V2, l.DismissibleContent.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE, l.DismissibleContent.GUILD_ONBOARDING_UPSELL_NAGBAR],
                 g = [0, 1, 7];
 
             function E(e, t) {
                 var n;
                 let i = o.default.getGuilds(),
-                    s = Object.entries(i).some(e => {
+                    l = Object.entries(i).some(e => {
                         let [t, n] = e, i = (0, f.isGuildOnboardingSettingsAvailable)(t), a = n.hasFeature(p.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED);
                         return i && a
                     });
-                if (s || !(0, f.isGuildOnboardingSettingsAvailable)(e)) return !1;
+                if (l || !(0, f.isGuildOnboardingSettingsAvailable)(e)) return !1;
                 let d = null === (n = r.default.settings.userContent) || void 0 === n ? void 0 : n.guildOnboardingUpsellDismissedAt,
-                    m = null != d ? l.Timestamp.toDate(d) : void 0,
+                    m = null != d ? s.Timestamp.toDate(d) : void 0,
                     E = null != m ? a().diff(m, "days") : null,
-                    S = _.indexOf(t);
-                if (-1 === S) return !1;
-                let h = null == E || E > g[S];
-                if (!h) return !1;
+                    h = _.indexOf(t);
+                if (-1 === h) return !1;
+                let S = null == E || E > g[h];
+                if (!S) return !1;
                 let v = _.find(e => !(0, u.isDismissibleContentDismissed)(e)) === t;
                 if (!v) return !1;
                 let {
@@ -1429,14 +1429,14 @@
                     guildId: e,
                     location: "7f5b67_1"
                 }, {
-                    disable: s || !(0, f.isGuildOnboardingSettingsAvailable)(e),
+                    disable: l || !(0, f.isGuildOnboardingSettingsAvailable)(e),
                     autoTrackExposure: !0
                 });
                 return C
             }
 
-            function S(e, t) {
-                let n = l.Timestamp.now();
+            function h(e, t) {
+                let n = s.Timestamp.now();
                 d.PreloadedUserSettingsActionCreators.updateAsync("userContent", e => {
                     e.guildOnboardingUpsellDismissedAt = n
                 }, d.UserSettingsDelay.INFREQUENT_USER_ACTION), null != t && (0, u.markDismissibleContentAsDismissed)(t, {
@@ -1462,7 +1462,7 @@
                     return E
                 },
                 cleanupMessageReminders: function() {
-                    return S
+                    return h
                 },
                 fetchAndUpdateSavedMessages: function() {
                     return C
@@ -1470,8 +1470,8 @@
             });
             var i = n("872717"),
                 a = n("913144"),
-                s = n("679653"),
-                l = n("42203"),
+                l = n("679653"),
+                s = n("42203"),
                 u = n("305961"),
                 d = n("27618"),
                 r = n("697218"),
@@ -1491,16 +1491,16 @@
                     savedAt: new Date,
                     dueAt: t,
                     ... function(e) {
-                        let t = l.default.getChannel(e.channel_id);
+                        let t = s.default.getChannel(e.channel_id);
                         if (null == t) return null;
                         let n = u.default.getGuild(t.guild_id),
                             i = "",
-                            a = (0, s.computeChannelName)(t, r.default, d.default, !0);
+                            a = (0, l.computeChannelName)(t, r.default, d.default, !0);
                         if (t.isPrivate()) i = a;
                         else if (t.isThread()) {
-                            let e = l.default.getChannel(t.parent_id);
+                            let e = s.default.getChannel(t.parent_id);
                             if (null == e) return null;
-                            let n = (0, s.computeChannelName)(e, r.default, d.default, !0);
+                            let n = (0, l.computeChannelName)(e, r.default, d.default, !0);
                             i = "".concat(n, " > ").concat(a)
                         } else i = a;
                         let o = "".concat(e.content.length > 0 ? e.content : "".concat(e.attachments.length, " attachments"));
@@ -1552,7 +1552,7 @@
                 v([], t.filter(t => t.messageId === e))
             }
 
-            function S() {
+            function h() {
                 o.default.track(p.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "clearing",
@@ -1562,7 +1562,7 @@
                 e.some(e => e.complete) && v([], e.filter(e => e.complete))
             }
 
-            function h(e) {
+            function S(e) {
                 o.default.track(p.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "updated_from_server",
@@ -1581,7 +1581,7 @@
                         removed: t.map(f.savedMessageToServer)
                     }
                 }).then(e => {
-                    h(e.body.saved_messages.map(f.savedMessageToClient))
+                    S(e.body.saved_messages.map(f.savedMessageToClient))
                 })
             }
 
@@ -1591,7 +1591,7 @@
                 }).then(e => {
                     let t = e.body.saved_messages,
                         n = t.map(f.savedMessageToClient);
-                    h(n)
+                    S(n)
                 })
             }
         },
@@ -1599,7 +1599,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return s
+                    return l
                 }
             });
             var i = n("862205");
@@ -1618,7 +1618,7 @@
                     }
                 }]
             });
-            var s = a
+            var l = a
         },
         520899: function(e, t, n) {
             "use strict";
@@ -1629,35 +1629,35 @@
             }), n("222007");
             var i = n("446674"),
                 a = n("913144"),
-                s = n("718517");
-            let l = [],
+                l = n("718517");
+            let s = [],
                 u = new Set,
                 d = 0;
             class r extends i.default.Store {
                 initialize() {
                     setInterval(() => {
                         this.emitChange()
-                    }, 1 * s.default.Millis.MINUTE)
+                    }, 1 * l.default.Millis.MINUTE)
                 }
                 getMessageReminders() {
-                    return l
+                    return s
                 }
                 isMessageReminder(e) {
-                    let t = l.find(t => t.messageId === e);
+                    let t = s.find(t => t.messageId === e);
                     return null != t && !t.complete
                 }
                 getOverdueMessageReminderCount() {
-                    return l.filter(e => null == e.dueAt || new Date > e.dueAt).length
+                    return s.filter(e => null == e.dueAt || new Date > e.dueAt).length
                 }
                 recentlyFetched() {
-                    return new Date().getTime() - d < 1 * s.default.Millis.MINUTE
+                    return new Date().getTime() - d < 1 * l.default.Millis.MINUTE
                 }
                 hasSentNotification(e) {
                     return u.has(e)
                 }
                 getState() {
                     return {
-                        messages: l
+                        messages: s
                     }
                 }
             }
@@ -1667,7 +1667,7 @@
                     let {
                         messages: t
                     } = e;
-                    d = new Date().getTime(), l = t.map(e => ({
+                    d = new Date().getTime(), s = t.map(e => ({
                         ...e,
                         complete: !1
                     })), t.forEach(e => {
@@ -1678,10 +1678,10 @@
                     let {
                         messageId: t,
                         complete: n
-                    } = e, i = l.findIndex(e => e.messageId === t);
+                    } = e, i = s.findIndex(e => e.messageId === t);
                     if (-1 === i) return !1;
-                    l[i] = {
-                        ...l[i],
+                    s[i] = {
+                        ...s[i],
                         complete: n
                     }
                 },
@@ -1697,10 +1697,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 savedMessageToServer: function() {
-                    return s
+                    return l
                 },
                 savedMessageToClient: function() {
-                    return l
+                    return s
                 },
                 savedMessageHasMetadata: function() {
                     return u
@@ -1712,7 +1712,7 @@
             var i = n("718517"),
                 a = n("782340");
 
-            function s(e) {
+            function l(e) {
                 var t;
                 return {
                     channel_id: e.channelId,
@@ -1728,7 +1728,7 @@
                 }
             }
 
-            function l(e) {
+            function s(e) {
                 return {
                     channelId: e.channel_id,
                     messageId: e.message_id,
@@ -1772,8 +1772,8 @@
                 }
             }), n("222007");
             var a = n("803182"),
-                s = n("811022"),
-                l = n("95410"),
+                l = n("811022"),
+                s = n("95410"),
                 u = n("913144"),
                 d = n("404118"),
                 r = n("819689"),
@@ -1785,37 +1785,37 @@
                 _ = n("233069"),
                 g = n("982108"),
                 E = n("42203"),
-                S = n("305961"),
-                h = n("660478"),
+                h = n("305961"),
+                S = n("660478"),
                 v = n("18494"),
                 C = n("162771"),
                 A = n("49111"),
                 I = n("724210"),
-                T = n("782340");
-            let b = new s.default("MessageManager");
+                b = n("782340");
+            let T = new l.default("MessageManager");
 
             function y(e) {
                 let {
                     guildId: t,
                     channelId: n,
                     messageId: a,
-                    forceFetch: s,
+                    forceFetch: l,
                     isPreload: u,
                     jumpType: d,
                     skipLocalFetch: c,
                     logFailures: m
                 } = e;
                 if (null == n) {
-                    m && b.log("Skipping fetch because channelId is null");
+                    m && T.log("Skipping fetch because channelId is null");
                     return
                 }
                 if ((0, I.isStaticChannelRoute)(n)) {
-                    m && b.log("Skipping fetch because channelId is a static route");
+                    m && T.log("Skipping fetch because channelId is a static route");
                     return
                 }
                 let _ = E.default.getChannel(n);
                 if ((null == _ ? void 0 : _.type) === A.ChannelTypes.GUILD_STORE || (null == _ ? void 0 : _.type) != null && A.ChannelTypesSets.GUILD_THREADS_ONLY.has(_.type)) {
-                    m && b.log("Skipping fetch because channel is a forum/store");
+                    m && T.log("Skipping fetch because channel is a forum/store");
                     return
                 }
                 let g = f.default.getOrCreate(n);
@@ -1826,8 +1826,8 @@
                 }), f.default.commit(g)), null != g.focusTargetId && null == a && (g = g.mutate({
                     focusTargetId: null
                 }), f.default.commit(g));
-                let v = s;
-                if (!u || p.default.isConnected() || g.loadingMore ? g.loadingMore || g.ready && !g.cached ? null != a ? v = !0 : m && b.log("Skipping fetch because no other conditions matched") : null == t || null != S.default.getGuild(t) ? v = !0 : m && b.log("Skipping fetch we are connected and have loaded messages") : v = !0, v) {
+                let v = l;
+                if (!u || p.default.isConnected() || g.loadingMore ? g.loadingMore || g.ready && !g.cached ? null != a ? v = !0 : m && T.log("Skipping fetch because no other conditions matched") : null == t || null != h.default.getGuild(t) ? v = !0 : m && T.log("Skipping fetch we are connected and have loaded messages") : v = !0, v) {
                     if (f.default.commit(g.mutate({
                             loadingMore: !0
                         })), null != a) r.default.jumpToMessage({
@@ -1839,17 +1839,17 @@
                         jumpType: d
                     });
                     else if ((null == _ ? void 0 : _.isThread()) && function(e) {
-                            if (h.default.hasOpenedThread(e)) return !1;
+                            if (S.default.hasOpenedThread(e)) return !1;
                             if (null == i) {
                                 var t;
-                                i = null !== (t = l.default.get(N, {})) && void 0 !== t ? t : {}
+                                i = null !== (t = s.default.get(N, {})) && void 0 !== t ? t : {}
                             }
                             if (e in i) return !1;
                             i[e] = Date.now();
                             let n = Date.now() - 7776e6;
                             for (let e in i) i[e] < n && delete i[e];
-                            return l.default.set(N, i), !0
-                        }(n)) b.log("Jumping to start of thread ".concat(_.id)), r.default.fetchMessages({
+                            return s.default.set(N, i), !0
+                        }(n)) T.log("Jumping to start of thread ".concat(_.id)), r.default.fetchMessages({
                         channelId: n,
                         limit: A.MAX_MESSAGES_PER_CHANNEL,
                         jump: {
@@ -1859,9 +1859,9 @@
                         isPreload: u,
                         skipLocalFetch: c
                     });
-                    else if ((null == _ ? void 0 : _.isThread()) && h.default.hasTrackedUnread(_.id) && !g.ready) {
-                        let e = h.default.getTrackedAckMessageId(_.id);
-                        b.log("Jumping to most recent message in thread ".concat(_.id, " - ").concat(e)), r.default.fetchMessages({
+                    else if ((null == _ ? void 0 : _.isThread()) && S.default.hasTrackedUnread(_.id) && !g.ready) {
+                        let e = S.default.getTrackedAckMessageId(_.id);
+                        T.log("Jumping to most recent message in thread ".concat(_.id, " - ").concat(e)), r.default.fetchMessages({
                             channelId: n,
                             limit: A.MAX_MESSAGES_PER_CHANNEL,
                             jump: {
@@ -1918,8 +1918,8 @@
                         isPreload: e,
                         skipLocalFetch: t,
                         logFailures: n
-                    }) : n && b.log("Skipping fetch because the selected channel is not a text channel"), R(a.getGuildId(), a.id)) : n && b.log("Skipping fetch because channel is null")
-                } else n && b.log("Skipping fetch because there is no selected channel")
+                    }) : n && T.log("Skipping fetch because the selected channel is not a text channel"), R(a.getGuildId(), a.id)) : n && T.log("Skipping fetch because channel is null")
+                } else n && T.log("Skipping fetch because there is no selected channel")
             }
 
             function M(e) {
@@ -2009,8 +2009,8 @@
                 if (t.body.code === A.AbortCodes.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
                     let e = t.body.retry_after;
                     null != e && d.default.show({
-                        title: T.default.Messages.RATE_LIMITED,
-                        body: T.default.Messages.ANNOUNCEMENT_EDIT_RATE_LIMIT.format({
+                        title: b.default.Messages.RATE_LIMITED,
+                        body: b.default.Messages.ANNOUNCEMENT_EDIT_RATE_LIMIT.format({
                             retryAfterMinutes: Math.ceil(e / 60)
                         })
                     })
@@ -2024,11 +2024,11 @@
                     channelId: n,
                     jump: i,
                     isStale: a,
-                    isPreview: s = !1
+                    isPreview: l = !1
                 } = e;
-                if (s) return;
-                let l = null !== (t = G[n]) && void 0 !== t ? t : 0;
-                if (Date.now() - l < 1e4) return;
+                if (l) return;
+                let s = null !== (t = G[n]) && void 0 !== t ? t : 0;
+                if (Date.now() - s < 1e4) return;
                 G[n] = Date.now();
                 let u = v.default.getChannelId(),
                     d = g.default.getCurrentSidebarChannelId(u),
@@ -2090,6 +2090,86 @@
             }
             var j = new B
         },
+        721281: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                VoiceActivityNotificationGuildExperiment: function() {
+                    return s
+                },
+                useVoiceActivityNotificationSettingsExperiment: function() {
+                    return u
+                }
+            });
+            var i = n("862205"),
+                a = n("49111");
+            let l = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2023-11_voice_activity_notification_user",
+                    label: "Voice Activity Notifications for User",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Voice Activity Notifications are enabled for user",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                s = (0, i.createExperiment)({
+                    kind: "guild",
+                    id: "2023-11_voice_activity_notification_guild",
+                    label: "General Voice Channel Notifications for Guild",
+                    defaultConfig: {
+                        deadchatNotifsEnabled: !1,
+                        voiceChannelActivityNotifsEnabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Deadchat notifs enabled, voice channel activity notifs disabled",
+                        config: {
+                            deadchatNotifsEnabled: !0,
+                            voiceChannelActivityNotifsEnabled: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Deadchat notifs disabled, voice channel activity notifs enabled",
+                        config: {
+                            deadchatNotifsEnabled: !1,
+                            voiceChannelActivityNotifsEnabled: !0
+                        }
+                    }, {
+                        id: 3,
+                        label: "Deadchat notifs enabled, voice channel activity notifs enabled",
+                        config: {
+                            deadchatNotifsEnabled: !0,
+                            voiceChannelActivityNotifsEnabled: !0
+                        }
+                    }]
+                });
+
+            function u(e) {
+                var t;
+                let {
+                    voiceChannelActivityNotifsEnabled: n
+                } = s.useExperiment({
+                    location: "useVoiceActivityNotificationSettingsExperiment",
+                    guildId: null !== (t = e.getGuildId()) && void 0 !== t ? t : ""
+                }, {
+                    disable: e.type !== a.ChannelTypes.GUILD_VOICE,
+                    autoTrackExposure: !1
+                }), {
+                    enabled: i
+                } = l.useExperiment({
+                    location: "useVoiceActivityNotificationSettingsExperiment"
+                }, {
+                    disable: e.type !== a.ChannelTypes.GUILD_VOICE || !n,
+                    autoTrackExposure: !0
+                });
+                return e.type === a.ChannelTypes.GUILD_VOICE && n && i
+            }
+        },
         553257: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -2097,10 +2177,10 @@
                     return a
                 },
                 usePomeloEligibility: function() {
-                    return s
+                    return l
                 },
                 getPomeloEligibility: function() {
-                    return l
+                    return s
                 }
             });
             var i = n("862205");
@@ -2119,7 +2199,7 @@
                         }
                     }]
                 }),
-                s = () => {
+                l = () => {
                     let {
                         enabled: e
                     } = a.useExperiment({
@@ -2129,7 +2209,7 @@
                     });
                     return e
                 },
-                l = () => {
+                s = () => {
                     let {
                         enabled: e
                     } = a.getCurrentConfig({
@@ -2170,18 +2250,18 @@
                     return a
                 },
                 getSoundpackOptionsAprilFools2023: function() {
-                    return l
+                    return s
                 }
             });
-            var i, a, s = n("782340");
+            var i, a, l = n("782340");
 
-            function l() {
+            function s() {
                 return [{
                     value: "classic",
-                    label: s.default.Messages.SOUNDPACK_CLASSIC_LABEL
+                    label: l.default.Messages.SOUNDPACK_CLASSIC_LABEL
                 }, {
                     value: "detune",
-                    label: s.default.Messages.SOUNDPACK_DETUNE_LABEL
+                    label: l.default.Messages.SOUNDPACK_DETUNE_LABEL
                 }]
             }(i = a || (a = {})).CLASSIC = "classic", i.DETUNE = "detune"
         },
@@ -2194,14 +2274,14 @@
             });
             var i = n("446674"),
                 a = n("913144"),
-                s = n("168067"),
-                l = n("157246");
+                l = n("168067"),
+                s = n("157246");
             let u = {
-                soundpack: l.Soundpacks.CLASSIC
+                soundpack: s.Soundpacks.CLASSIC
             };
             class d extends i.default.PersistedStore {
                 initialize(e) {
-                    s.default.subscribe({
+                    l.default.subscribe({
                         location: "1"
                     }, () => this.emitChange()), null != e && (u = e)
                 }
@@ -2212,12 +2292,12 @@
                     var e;
                     let {
                         allowAprilFoolsSoundpack: t
-                    } = s.default.getCurrentConfig({
+                    } = l.default.getCurrentConfig({
                         location: "37bac2_1"
                     }, {
                         autoTrackExposure: !1
                     });
-                    return t && (e = u.soundpack, Object.values(l.Soundpacks).includes(e)) ? u.soundpack : l.Soundpacks.CLASSIC
+                    return t && (e = u.soundpack, Object.values(s.Soundpacks).includes(e)) ? u.soundpack : s.Soundpacks.CLASSIC
                 }
             }
             d.displayName = "SoundpackStore", d.persistKey = "SoundpackStore";
@@ -2236,7 +2316,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return s
+                    return l
                 }
             });
             var i = n("157246");
@@ -2287,7 +2367,7 @@
                 }
             };
 
-            function s(e) {
+            function l(e) {
                 return a[e]
             }
         },
@@ -2300,11 +2380,11 @@
             });
             var i = n("446674"),
                 a = n("913144"),
-                s = n("599110"),
-                l = n("773336"),
+                l = n("599110"),
+                s = n("773336"),
                 u = n("49111");
             let d = {
-                    desktopType: l.isPlatformEmbedded ? u.DesktopNotificationTypes.ALL : u.DesktopNotificationTypes.NEVER,
+                    desktopType: s.isPlatformEmbedded ? u.DesktopNotificationTypes.ALL : u.DesktopNotificationTypes.NEVER,
                     disableAllSounds: !1,
                     disabledSounds: [],
                     ttsType: u.TTSNotificationTypes.NEVER,
@@ -2315,7 +2395,7 @@
                 r = d;
 
             function o(e, t) {
-                !__OVERLAY__ && s.default.track(e, t)
+                !__OVERLAY__ && l.default.track(e, t)
             }
 
             function c(e) {
@@ -2365,7 +2445,7 @@
                 let t = {
                     ...e
                 };
-                return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || !1, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || u.TTSNotificationTypes.NEVER, null == t.desktopType && (t.desktopType = l.isPlatformEmbedded ? u.DesktopNotificationTypes.ALL : u.DesktopNotificationTypes.NEVER), t
+                return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || !1, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || u.TTSNotificationTypes.NEVER, null == t.desktopType && (t.desktopType = s.isPlatformEmbedded ? u.DesktopNotificationTypes.ALL : u.DesktopNotificationTypes.NEVER), t
             }];
             var p = new f(a.default, {
                 NOTIFICATIONS_SET_DESKTOP_TYPE: c,
@@ -2422,31 +2502,31 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return s
+                    return l
                 }
             });
             var i = n("37983");
             n("884691");
             var a = n("75196");
 
-            function s(e) {
+            function l(e) {
                 let {
                     width: t = 24,
                     height: n = 24,
-                    color: s = "currentColor",
-                    className: l,
+                    color: l = "currentColor",
+                    className: s,
                     foreground: u,
                     ...d
                 } = e;
                 return (0, i.jsx)("svg", {
                     ...(0, a.default)(d),
-                    className: l,
+                    className: s,
                     width: t,
                     height: n,
                     viewBox: "0 0 24 24",
                     children: (0, i.jsx)("path", {
                         className: u,
-                        fill: s,
+                        fill: l,
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M2 11C2 6.02944 6.02944 2 11 2H13C17.9706 2 22 6.02944 22 11V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V11ZM5.88 5.82497C4.71048 6.55593 4 7.83781 4 9.21697V18.7192C4 19.3698 4.61139 19.8471 5.24254 19.6893L10.9558 18.261C11.5695 18.1076 12 17.5562 12 16.9236V9.21697C12 6.07522 8.5442 4.15985 5.88 5.82497ZM10 12C10 11.4477 9.55228 11 9 11C8.44772 11 8 11.4477 8 12V14C8 14.5523 8.44772 15 9 15C9.55228 15 10 14.5523 10 14V12ZM17.6832 9.47564C17.4485 8.84145 16.5515 8.84145 16.3168 9.47564L16.1387 9.95707C15.9361 10.5045 15.5045 10.9361 14.9571 11.1387L14.4756 11.3168C13.8415 11.5515 13.8415 12.4485 14.4756 12.6832L14.9571 12.8613C15.5045 13.0639 15.9361 13.4955 16.1387 14.0429L16.3168 14.5244C16.5515 15.1585 17.4485 15.1585 17.6832 14.5244L17.8613 14.0429C18.0639 13.4955 18.4955 13.0639 19.0429 12.8613L19.5244 12.6832C20.1585 12.4485 20.1585 11.5515 19.5244 11.3168L19.0429 11.1387C18.4955 10.9361 18.0639 10.5045 17.8613 9.95707L17.6832 9.47564ZM14.1584 5.23782C14.2758 4.92073 14.7242 4.92073 14.8416 5.23782C14.9994 5.66433 15.3357 6.0006 15.7622 6.15842C16.0793 6.27576 16.0793 6.72424 15.7622 6.84158C15.3357 6.9994 14.9994 7.33567 14.8416 7.76218C14.7242 8.07927 14.2758 8.07927 14.1584 7.76218C14.0006 7.33567 13.6643 6.9994 13.2378 6.84158C12.9207 6.72424 12.9207 6.27576 13.2378 6.15842C13.6643 6.0006 14.0006 5.66433 14.1584 5.23782ZM18.8416 16.2378C18.7242 15.9207 18.2758 15.9207 18.1584 16.2378C18.0006 16.6643 17.6643 17.0006 17.2378 17.1584C16.9207 17.2758 16.9207 17.7242 17.2378 17.8416C17.6643 17.9994 18.0006 18.3357 18.1584 18.7622C18.2758 19.0793 18.7242 19.0793 18.8416 18.7622C18.9994 18.3357 19.3357 17.9994 19.7622 17.8416C20.0793 17.7242 20.0793 17.2758 19.7622 17.1584C19.3357 17.0006 18.9994 16.6643 18.8416 16.2378Z"
@@ -2469,13 +2549,13 @@
                 }
             });
             var a = n("870696"),
-                s = n("319291"),
-                l = n("102985");
+                l = n("319291"),
+                s = n("102985");
 
             function u(e, t) {
                 var n;
                 let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
-                    a = (0, s.default)(t);
+                    a = (0, l.default)(t);
                 return d(null !== (n = a[e]) && void 0 !== n ? n : e, e, i)
             }
 
@@ -2488,8 +2568,8 @@
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
                     i = arguments.length > 2 ? arguments[2] : void 0;
-                if (l.default.disableSounds) return;
-                let u = (0, s.default)(a.default.getSoundpack()),
+                if (s.default.disableSounds) return;
+                let u = (0, l.default)(a.default.getSoundpack()),
                     r = d(null !== (t = u[e]) && void 0 !== t ? t : e, e, n);
                 return null != i ? r.playWithListener().then(e => {
                     e && i()
@@ -2509,16 +2589,16 @@
             }), n("70102");
             var i = n("917351"),
                 a = n.n(i),
-                s = n("520497"),
-                l = n("812809"),
+                l = n("520497"),
+                s = n("812809"),
                 u = n("42887"),
                 d = n("773336");
             let r = "default",
                 o = r;
 
             function c(e, t) {
-                let n = new Audio((0, s.default)(e));
-                n.volume = (0, l.default)(t), n.play()
+                let n = new Audio((0, l.default)(e));
+                n.volume = (0, s.default)(t), n.play()
             }
 
             function f() {
@@ -2526,9 +2606,9 @@
                     let t = u.default.getOutputDevices(),
                         n = a(t).sortBy(e => e.index).findIndex(e => e.id === u.default.getOutputDeviceId()),
                         i = t[u.default.getOutputDeviceId()],
-                        s = e.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
-                        l = s[n];
-                    null != i && (null == l || l.label !== i.name) && (l = s.find(e => e.label === i.name)), o = null != l ? l.deviceId : r
+                        l = e.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
+                        s = l[n];
+                    null != i && (null == s || s.label !== i.name) && (s = l.find(e => e.label === i.name)), o = null != s ? s.deviceId : r
                 }).catch(() => {
                     o = r
                 })
@@ -2587,4 +2667,4 @@
         }
     }
 ]);
-//# sourceMappingURL=53266.284b268cf97ce28124dc.js.map
+//# sourceMappingURL=53526.ec3971180ef633514629.js.map
