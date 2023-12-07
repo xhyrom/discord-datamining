@@ -1,9 +1,9 @@
 <p id="docs-internal-guid-caa37f7c-7fff-e8d4-d95a-cee86575f377">Discord safety alerts are part of our Teen Safety Assist initiative to help make Discord a safer and more private place for teens to hang out online. These safety alerts are default enabled for teens globally. No action is needed to turn safety alerts on for teens. </p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
-    <li><a href="#h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</a></li>
-    <li><a href="#h_01HD4T7W175WSNRAA92JG3GMBG">Future safety alerts</a></li>
-    <li><a href="#h_01HD4T7W17V4WYW74FVP5B9GQ9">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18210977897239#h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18210977897239#h_01HD4T7W175WSNRAA92JG3GMBG">Future safety alerts</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18210977897239#h_01HD4T7W17V4WYW74FVP5B9GQ9">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</h1>
 <p>1. When a teen receives direct messages (DMs) from a sender for the first time, Discord will detect if a safety alert should be sent to the teen for this DM. If detected, Discord will notify the teen with a safety alert encouraging them to double check if they want to reply, and will provide links to block the user or view more safety tips to safeguard themselves. </p>
