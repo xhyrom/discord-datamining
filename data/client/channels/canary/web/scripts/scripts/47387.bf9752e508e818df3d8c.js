@@ -2788,15 +2788,14 @@
                 let e = (0, s.useStateFromStores)([d.default], () => d.default.affinities.slice(0, 3)),
                     t = e[0],
                     {
-                        avatarDecorationSrc: n,
-                        avatarSrc: l,
-                        eventHandlers: f
+                        avatarSrc: n,
+                        eventHandlers: l
                     } = (0, u.default)({
                         user: t,
                         size: o.AvatarSizes.SIZE_24,
                         animateOnHover: !0
                     }),
-                    m = r.useMemo(() => e.length >= 2 ? c.default.Messages.AFFINITIES_MARKETING_HEADER_3.format({
+                    f = r.useMemo(() => e.length >= 2 ? c.default.Messages.AFFINITIES_MARKETING_HEADER_3.format({
                         username: e[0].globalName
                     }) : 1 === e.length ? c.default.Messages.AFFINITIES_MARKETING_HEADER_1.format({
                         username: e[0].globalName
@@ -2805,18 +2804,15 @@
                     className: _.container,
                     children: [(0, i.jsx)(o.Avatar, {
                         className: _.icon,
-                        src: l,
+                        src: n,
                         "aria-label": t.username,
                         size: o.AvatarSizes.SIZE_24,
-                        avatarDecoration: n,
-                        ...f
+                        ...l
                     }), (0, i.jsx)(o.Text, {
-                        className: a(_.text, {
-                            [_.textWithAD]: null != n
-                        }),
+                        className: a(_.text),
                         variant: "text-sm/normal",
                         color: "always-white",
-                        children: m
+                        children: f
                     })]
                 })
             }
@@ -3478,4 +3474,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47387.031abc93d0e248febf9c.js.map
+//# sourceMappingURL=47387.bf9752e508e818df3d8c.js.map

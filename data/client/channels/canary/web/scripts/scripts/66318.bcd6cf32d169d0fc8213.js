@@ -14098,6 +14098,9 @@
                 ADD_FAVORITE: "Favorite",
                 REMOVE_FAVORITE: "Unfavorite",
                 REMOVE_FAVORITE_SUGGESTION: "Remove Suggestion",
+                PINNED_CHANNELS: "Pinned Channels",
+                PIN_CHANNEL_TO_TOP: "Pin Channel to Top",
+                UNPIN_CHANNEL: "Unpin Channel",
                 OPT_IN_CHANNEL_NOTICE: "This channel is not on your channel list.",
                 OPT_IN_CHANNEL_NOTICE_VOICE: "This voice channel is not on your channel list.",
                 OPT_IN_CHANNEL_NOTICE_CTA: "Add to Channel List",
@@ -18286,7 +18289,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252035", ", Version Hash: ").concat("9871fb623f6b326770d7fb6d6dc9526af05f1d47")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252058", ", Version Hash: ").concat("acf455121c275005fd9fbb945781af4af5ed8cb8")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20580,8 +20583,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "252035", "252035"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252035")), _ = 0), _
+                let _ = parseInt((e = "252058", "252058"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252058")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21019,7 +21022,11 @@
                     if (!(0, L.default)(T.default)) return;
                     this.applyNativeClipsSettings();
                     let e = (0, R.areClipsEnabled)();
-                    if (!!e)(null == l.default.getHardwareClassification() || null == l.default.getHardwareClassificationForDecoupled() || l.default.getHardwareClassificationVersion() !== C.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
+                    if (!e) {
+                        let e = l.default.getSettings();
+                        e.clipsEnabled && this.disableClips();
+                        return
+                    }(null == l.default.getHardwareClassification() || null == l.default.getHardwareClassificationForDecoupled() || l.default.getHardwareClassificationVersion() !== C.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
                         n.default.dispatch({
                             type: "CLIPS_CLASSIFY_HARDWARE",
                             classification: e
@@ -21106,6 +21113,7 @@
                     let o = t || l.default.isViewerClippingAllowedForUser(e);
                     this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", o), _.setClipRecordSSRC(e, "video", "inbound", o)
                 }
+                disableClips() {}
                 constructor(...e) {
                     super(...e), this.actions = {
                         POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
@@ -21191,6 +21199,12 @@
                             clipsEnabled: !1
                         })
                     }
+                }
+                disableClips() {
+                    S.updateClipsEnabled({
+                        clipsEnabled: !1,
+                        trackAnalytics: !1
+                    })
                 }
             }
             var R = new A
@@ -36645,4 +36659,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.33ee98f962bda0d914bd.js.map
+//# sourceMappingURL=66318.bcd6cf32d169d0fc8213.js.map
