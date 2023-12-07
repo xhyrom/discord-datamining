@@ -18416,7 +18416,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-top: 16px;
     font-weight: 600;
     color: var(--interactive-active);
-    font-size: 24px
+    font-size: 1.5rem
 }
 
 .tierPeriod__90c6f {
@@ -18691,8 +18691,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase
 }
 
@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -124212,4 +124212,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.df3aa0d27cadce59990e.css.map*/
+/*# sourceMappingURL=app.59fd989714b823217c26.css.map*/
