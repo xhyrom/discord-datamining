@@ -84111,6 +84111,105 @@ input::-webkit-inner-spin-button {
     text-decoration: underline
 }
 
+.snowflake__3643b {
+    color: var(--white-500);
+    font-size: 16px;
+    text-shadow: 0 0 5px var(--black-500);
+    position: fixed;
+    top: -10%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-fall__21238, snowflakes-shake_ab86ff;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+@keyframes snowflakes-fall__21238 {
+    0% {
+        top: -10%
+    }
+
+    to {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake_ab86ff {
+
+    0%,
+    to {
+        transform: translatex(0)
+    }
+
+    50% {
+        transform: translatex(80px)
+    }
+}
+
+.snowflake__3643b:nth-of-type() {
+    left: 1%;
+    animation-delay: 0s, 0s
+}
+
+.snowflake__3643b:first-of-type {
+    left: 10%;
+    animation-delay: 1s, 1s
+}
+
+.snowflake__3643b:nth-of-type(2) {
+    left: 20%;
+    animation-delay: 6s, .5s
+}
+
+.snowflake__3643b:nth-of-type(3) {
+    left: 30%;
+    animation-delay: 4s, 2s
+}
+
+.snowflake__3643b:nth-of-type(4) {
+    left: 40%;
+    animation-delay: 2s, 2s
+}
+
+.snowflake__3643b:nth-of-type(5) {
+    left: 50%;
+    animation-delay: 8s, 3s
+}
+
+.snowflake__3643b:nth-of-type(6) {
+    left: 60%;
+    animation-delay: 6s, 2s
+}
+
+.snowflake__3643b:nth-of-type(7) {
+    left: 70%;
+    animation-delay: 2.5s, 1s
+}
+
+.snowflake__3643b:nth-of-type(8) {
+    left: 80%;
+    animation-delay: 1s, 0s
+}
+
+.snowflake__3643b:nth-of-type(9) {
+    left: 90%;
+    animation-delay: 3s, 1.5s
+}
+
+.snowflake__3643b:nth-of-type(10) {
+    left: 25%;
+    animation-delay: 2s, 0s
+}
+
+.snowflake__3643b:nth-of-type(11) {
+    left: 65%;
+    animation-delay: 4s, 2.5s
+}
+
 .container__18937 {
     width: 472px;
     min-height: 184px
@@ -113418,7 +113517,9 @@ html .invoiceCancelRow_c1bfe7 {
 .video__98255 {
     border-radius: 8px;
     margin-top: 16px;
-    margin-bottom: 14px
+    margin-bottom: 14px;
+    width: 540px;
+    height: 303px
 }
 
 .content_d40ad4 {
@@ -113598,6 +113699,38 @@ html .invoiceCancelRow_c1bfe7 {
 
 .header__78150 {
     width: 85%
+}
+
+.buttonWide_bc8401 {
+    margin-top: 7px;
+    min-height: 40px;
+    min-width: 315px
+}
+
+.innerButton_bce5f8 {
+    align-items: center;
+    display: flex
+}
+
+.nitroIconSubHeader_d58016 {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px
+}
+
+.termsApplyBodyText__64e4c {
+    text-align: center;
+    max-width: 500px;
+    padding-top: 8px;
+    color: var(--text-normal);
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-underline-offset: 2px
+}
+
+.termsApplyAnchor__07721:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none
 }
 
 .root__89ffb {
@@ -124212,4 +124345,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.987a19f2ab214e96e055.css.map*/
+/*# sourceMappingURL=app.3ba58ad1eb3506ab11a9.css.map*/
