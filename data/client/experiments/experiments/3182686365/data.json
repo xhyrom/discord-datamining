@@ -1,0 +1,49 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 3182686365,
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "37711544032690177",
+        "48250781844901888",
+        "680537436412969111",
+        "881066542639484958",
+        "1151305620369199144",
+        "1136423398608744588",
+        "1176291441597743186",
+        "1162447812324237313"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}
