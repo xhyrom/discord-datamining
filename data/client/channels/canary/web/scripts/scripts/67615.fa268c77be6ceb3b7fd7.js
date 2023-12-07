@@ -8627,10 +8627,10 @@
                     channel_id: t,
                     guild_id: null == l ? void 0 : l.guild_id,
                     message_id: n,
-                    attachment_ids: null == i ? void 0 : i.map(e => parseInt(e, 10)),
                     embed_ids: a,
                     user_is_underage: (0, c.isCurrentUserTeen)(),
-                    scan_timeout_duration: C.MESSAGE_SCAN_TIMEOUT
+                    scan_timeout_duration: C.MESSAGE_SCAN_TIMEOUT,
+                    attachment_ids_v2: i
                 }), d.default.increment({
                     name: r.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT
                 })
@@ -33931,4 +33931,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.353f4cd950a1efc99f5e.js.map
+//# sourceMappingURL=67615.fa268c77be6ceb3b7fd7.js.map
