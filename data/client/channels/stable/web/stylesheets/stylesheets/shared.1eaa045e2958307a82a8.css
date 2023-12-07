@@ -15709,8 +15709,8 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     border-radius: 2px
 }
 
-.noBottomBorderRadius__8af42,
-.noBottomBorderRadius__8af42 video {
+.noBorderBottomRadius__1dde7,
+.noBorderBottomRadius__1dde7 video {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0
 }
@@ -16526,6 +16526,10 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .hidden__576d2 {
     display: none
+}
+
+.noBoxShadow_d45938 {
+    box-shadow: none
 }
 
 html,
@@ -18991,7 +18995,8 @@ html.disable-forced-colors * {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative
+    position: relative;
+    border-radius: 4px 4px 0 0
 }
 
 .closeButton_bf11e4 {
@@ -26440,4 +26445,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.2ef1c49b333b99c09f5d.css.map*/
+/*# sourceMappingURL=shared.1eaa045e2958307a82a8.css.map*/

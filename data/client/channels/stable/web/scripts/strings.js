@@ -884,6 +884,10 @@
                 EMBEDDED_ACTIVITIES_IAP_NON_REFUNDABLE_SUBSCRIPTION_RATE_AND_RENEWAL: "Hey! This purchase is for a recurring subscription, which will renew for **{rate}** on **{renewalDate, date, medium}**. You may cancel anytime under User Settings > Subscriptions, and previous charges won’t be refunded unless required by law. This purchase is being offered to you by the developer of this Activity and can be accessed and used only when you’re in this Activity.",
                 EMBEDDED_ACTIVITIES_MINIMIZE_A11Y_LABEL: "Minimize activity",
                 EMBEDDED_ACTIVITIES_EXPAND_A11Y_LABEL: "Expand activity",
+                KRUNKER_STRIKE_COACHMARK_TITLE: "New Activity! Krunker Strike FRVR",
+                KRUNKER_STRIKE_COACHMARK_DESCRIPTION: "Squad up with friends or other players around the world and battle your way to victory in this first person shooter game",
+                KRUNKER_STRIKE_COACHMARK_BUTTON_CANCEL: "Maybe later",
+                KRUNKER_STRIKE_COACHMARK_BUTTON_ACCEPT: "Try it out",
                 ACTIVITY_REPORT_POST_ACTIVITY_HEADER: "How'd !!{applicationName}!! go?",
                 ACTIVITY_REPORT_POST_ACTIVITY_PROBLEM_TITLE: "What could have gone better?",
                 ACTIVITY_REPORTED_POSITIVE: "Thanks for sharing! Feedback like yours helps us improve Activities.",
@@ -1681,6 +1685,7 @@
                 GUILD_SETTINGS_COMMUNITY_UPSELL_HEADER: "Your server is now a Community Server!",
                 GUILD_SETTINGS_COMMUNITY_UPSELL_BODY: "You now have access to additional tools that can help you moderate, run, and grow your server. Check out some of them to get started!",
                 GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_WELCOME_SCREEN: "Set up Welcome Screen",
+                GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_ONBOARDING: "Set up Onboarding",
                 GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_ADMIN_SERVER: "Join Discord's Admin Server",
                 GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_DISCOVERY: "Apply for Discovery",
                 GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_ANALYTICS: "Check Server Insights",
@@ -2377,7 +2382,9 @@
                 FORM_LABEL_MUTE_SERVER_DESCRIPTION_NEW: "Muting a server suppresses notifications but unread indicators will still be visible if you're mentioned.",
                 FORM_LABEL_MOBILE_PUSH_NOTIFICATIONS: "Mobile Push Notifications",
                 FORM_LABEL_ALL_MESSAGES: "All Messages",
+                FORM_LABEL_ALL_VOICE_ACTIVITY: "All Voice Activity",
                 FORM_LABEL_ONLY_MENTIONS: "Only **@mentions**",
+                FORM_LABEL_ONLY_TEXT_MENTIONS: "Only Text **@mentions**",
                 FORM_LABEL_ONLY_MENTIONS_PLAIN: "Only @mentions",
                 FORM_LABEL_NOTHING: "Nothing",
                 FORM_LABEL_ALL_MESSAGES_SHORT: "All",
@@ -4135,8 +4142,11 @@
                 NEW_MESSAGE: "New Message",
                 EXPIRES_IN: "Expires in:",
                 DELETE_CHANNEL_BODY: "Are you sure you want to delete **!!{channelName}!!**? This cannot be undone.",
-                DELETE_CHANNEL_BODY_FAVORITES: "Are you sure you want to delete **!!{channelName}!!** from your Favorites? This cannot be undone.",
-                DELETE_CATEGORY_BODY_FAVORITES: "Are you sure you want to delete **!!{channelName}!!** from your Favorites? This cannot be undone. Conversations under this category will be uncategorized.",
+                DELETE_FAVORITES_CHANNEL_TITLE: "Remove from Favorites",
+                DELETE_FAVORITES_CHANNEL_BODY: "Are you sure you want to remove **!!{channelName}!!** from Favorites? You can add **!!{channelName}!!** back into Favorites at any time.",
+                DELETE_FAVORITES_CHANNEL_CONFIRM: "Remove Channel",
+                DELETE_FAVORITES_CATEGORY_BODY: "Are you sure you want to delete **!!{channelName}!!** from Favorites? Conversations under this category will be uncategorized.",
+                DELETE_FAVORITES_CATEGORY_CONFIRM: "Remove Category",
                 SERVERS: "Servers",
                 USERS: "Users",
                 USER: "User",
@@ -6769,7 +6779,7 @@
                 PREMIUM_MARKETING_WHATS_NEW_SPECIAL_SHOP_PERKS_SUBTITLE: "Enjoy member pricing plus Nitro exclusive items in the Shop.",
                 COMING_SOON: "Coming Soon!",
                 NEW_DROP: "New Drop",
-                VISIT_THE_SHOP_CTA: "Visit the shop",
+                VISIT_THE_SHOP_CTA: "Visit the Shop",
                 SUBSCRIBER_NITRO_HOME_TITLE: "Welcome to\n\nYour Nitro Home",
                 SUBSCRIBER_NITRO_HOME_TITLE_ONE_LINE: "Welcome to Your Nitro Home",
                 SUBSCRIBER_NITRO_HOME_SUBTITLE: "Share the magic of Nitro.",
@@ -9879,6 +9889,7 @@
                 LAUNCH_WELCOME_NUX_SUBTITLE: "Tap anywhere to dismiss.",
                 LAUNCH_WELCOME_CHOOSE_A_THEME: "Choose a theme",
                 APP_THEME: "App Theme",
+                CHANNEL_PREVIEW_A11Y_LABEL: "App preview, with your theme applied",
                 THEME_PICKER_MESSAGE_AUTHOR_1: "Nelly",
                 THEME_PICKER_MESSAGE_PREVIEW_1: "Enjoy your trip to spain!",
                 THEME_PICKER_MESSAGE_AUTHOR_2: "bio study group",
@@ -14092,6 +14103,9 @@
                 ADD_FAVORITE: "Favorite",
                 REMOVE_FAVORITE: "Unfavorite",
                 REMOVE_FAVORITE_SUGGESTION: "Remove Suggestion",
+                PINNED_CHANNELS: "Pinned Channels",
+                PIN_CHANNEL_TO_TOP: "Pin Channel to Top",
+                UNPIN_CHANNEL: "Unpin Channel",
                 OPT_IN_CHANNEL_NOTICE: "This channel is not on your channel list.",
                 OPT_IN_CHANNEL_NOTICE_VOICE: "This voice channel is not on your channel list.",
                 OPT_IN_CHANNEL_NOTICE_CTA: "Add to Channel List",
@@ -15088,7 +15102,8 @@
                 INVENTORY_NEW_SETTING: "New Emoji Setting",
                 INVENTORY_NEW_SETTING_DESCRIPTION_SOON_V2: "Starting soon, users outside of your server will be able to access your server's emoji and use them throughout Discord. You can change this setting at any time.",
                 INVENTORY_CHANGE_IN_SETTINGS: "Change in your Emoji Settings",
-                INVENTORY_NEW_SETTING_ROLLBACK_DESRIPTION: "In the coming weeks, we're removing the Setting allowing non-server members to collect and use your server's emoji anywhere on Discord.\n\nUsers will only be able to access your server's emoji if they join your server.",
+                INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_1: "In the coming weeks, we're removing the Setting allowing non-server members to collect and use your server's emoji anywhere on Discord.",
+                INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_2: "Users will only be able to access your server's emoji if they join your server.",
                 INVENTORY_VIEW_SETTING: "View Setting",
                 INVENTORY_DISABLE_SETTING_TITLE_V2: "Are you sure you want to turn off external access to your server’s emoji?",
                 INVENTORY_DISABLE_SETTING_TITLE_MOBILE: "Disable Pack Collection",
@@ -16687,12 +16702,15 @@
                 CREATE_POLL_ANSWER_INPUT_LABEL: "Answer {answerNumber}",
                 CREATE_POLL_MULTIPLE_ANSWERS: "Allow Multiple Answers",
                 CREATE_POLL_POST: "Post",
-                CREATE_POLL_REMOVE_ANSWER: "Remove answer {answerNumber}",
+                CREATE_POLL_REMOVE_ANSWER_A11Y: "Remove answer {answerNumber}",
+                CREATE_POLL_REMOVE_ANSWER: "Remove answer",
+                CREATE_POLL_REPLACE_IMAGE: "Replace image",
+                CREATE_POLL_EDIT_ALT_TEXT: "Edit alt / descriptive text",
                 POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
-                POLL_EXPIRY_DAYS_REMAINING: "{days, plural, other {{days}D Left}}",
-                POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}H Left}}",
-                POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}M Left}}",
-                POLL_EXPIRED: "Poll Closed",
+                POLL_EXPIRY_DAYS_REMAINING: "{days, plural, other {{days}d left}}",
+                POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}h left}}",
+                POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}m left}}",
+                POLL_EXPIRED: "Poll closed",
                 FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
                 PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink})."
             })
@@ -18276,7 +18294,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251818", ", Version Hash: ").concat("f71d50a5f0b68377724d8ad503cfc876262faa89")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252431", ", Version Hash: ").concat("8fa54394c96b2e39fa5518a9a9a4be098ff73c57")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19795,6 +19813,10 @@
                     actions: ["CHANNEL_UPDATES", "VOICE_STATE_UPDATES"],
                     inlineRequire: () => E("783252").default
                 },
+                VoiceChannelNotificationsManager: {
+                    actions: ["VOICE_CHANNEL_SELECT"],
+                    inlineRequire: () => E("778727").default
+                },
                 VoicePermissionManager: {
                     actions: ["VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATES"],
                     inlineRequire: () => E("310045").default
@@ -20570,8 +20592,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "251818", "251818"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251818")), _ = 0), _
+                let _ = parseInt((e = "252431", "252431"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252431")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21009,7 +21031,11 @@
                     if (!(0, L.default)(T.default)) return;
                     this.applyNativeClipsSettings();
                     let e = (0, R.areClipsEnabled)();
-                    if (!!e)(null == l.default.getHardwareClassification() || null == l.default.getHardwareClassificationForDecoupled() || l.default.getHardwareClassificationVersion() !== C.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
+                    if (!e) {
+                        let e = l.default.getSettings();
+                        e.clipsEnabled && this.disableClips();
+                        return
+                    }(null == l.default.getHardwareClassification() || null == l.default.getHardwareClassificationForDecoupled() || l.default.getHardwareClassificationVersion() !== C.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
                         n.default.dispatch({
                             type: "CLIPS_CLASSIFY_HARDWARE",
                             classification: e
@@ -21096,6 +21122,7 @@
                     let o = t || l.default.isViewerClippingAllowedForUser(e);
                     this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", o), _.setClipRecordSSRC(e, "video", "inbound", o)
                 }
+                disableClips() {}
                 constructor(...e) {
                     super(...e), this.actions = {
                         POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
@@ -21181,6 +21208,12 @@
                             clipsEnabled: !1
                         })
                     }
+                }
+                disableClips() {
+                    S.updateClipsEnabled({
+                        clipsEnabled: !1,
+                        trackAnalytics: !1
+                    })
                 }
             }
             var R = new A
@@ -27912,6 +27945,68 @@
                 }
             })
         },
+        818766: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                sendVoiceChannelActivityNotification: function() {
+                    return n
+                }
+            });
+            var t = E("872717"),
+                o = E("49111");
+
+            function n(e, _) {
+                t.default.post({
+                    url: o.Endpoints.VOICE_CHANNEL_NOTIFICATIONS(e),
+                    query: {
+                        first_user: _
+                    }
+                })
+            }
+        },
+        778727: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return s
+                }
+            }), E("222007");
+            var t = E("689988"),
+                o = E("191145"),
+                n = E("721281"),
+                r = E("42203"),
+                i = E("800762"),
+                a = E("818766");
+            class I extends t.default {
+                handleVoiceChannelSelect(e) {
+                    var _;
+                    let {
+                        channelId: E,
+                        guildId: t
+                    } = e;
+                    if (null == E || null == t) return;
+                    let I = r.default.getChannel(E),
+                        {
+                            voiceChannelActivityNotifsEnabled: s
+                        } = n.VoiceActivityNotificationGuildExperiment.getCurrentConfig({
+                            guildId: null !== (_ = null == I ? void 0 : I.getGuildId()) && void 0 !== _ ? _ : "",
+                            location: "voiceChannelNotificationsManager"
+                        });
+                    if (s && (null == I ? void 0 : I.isGuildVoice())) {
+                        let e = o.default.getParticipants(E).length,
+                            _ = i.default.isInChannel(E),
+                            t = e === (_ ? 1 : 0);
+                        t ? a.sendVoiceChannelActivityNotification(E, t) : e === (_ ? 2 : 1) && a.sendVoiceChannelActivityNotification(E, t)
+                    }
+                }
+                constructor(...e) {
+                    super(...e), this.actions = {
+                        VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect
+                    }
+                }
+            }
+            var s = new I
+        },
         517763: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -28240,68 +28335,81 @@
         },
         449501: function(e, _, E) {
             "use strict";
-            let t;
+            let t, o;
             E.r(_), E.d(_, {
                 default: function() {
-                    return N
+                    return O
                 }
             }), E("222007");
-            var o = E("446674"),
-                n = E("95410"),
-                r = E("913144"),
-                i = E("49111");
-            let a = "PictureInPictureLocation",
-                I = new Map,
-                s = i.PictureInPicturePositions.BOTTOM_RIGHT,
-                T = {};
-            class S extends o.default.Store {
+            var n = E("446674"),
+                r = E("95410"),
+                i = E("913144"),
+                a = E("49111");
+            let I = "PictureInPictureLocation",
+                s = new Map,
+                T = a.PictureInPicturePositions.BOTTOM_RIGHT,
+                S = {};
+            class N extends n.default.Store {
                 initialize() {
-                    s = n.default.get(a, i.PictureInPicturePositions.BOTTOM_RIGHT)
+                    T = r.default.get(I, a.PictureInPicturePositions.BOTTOM_RIGHT)
                 }
                 get pipWindow() {
-                    return null == t ? null : I.get(t)
+                    var e;
+                    return null == t && null == o ? null : s.get(null !== (e = null != t ? t : o) && void 0 !== e ? e : "")
+                }
+                get pipVideoWindow() {
+                    return null == t ? null : s.get(t)
+                }
+                get pipActivityWindow() {
+                    return null == o ? null : s.get(o)
                 }
                 get pipWindows() {
-                    return I
+                    return s
                 }
                 isEmbeddedActivityHidden() {
-                    var e;
-                    return null == t || (null === (e = I.get(t)) || void 0 === e ? void 0 : e.component) !== i.PictureInPictureComponents.EMBED_IFRAME
+                    return null == o
                 }
                 getDockedRect(e) {
-                    return T[e]
+                    return S[e]
                 }
                 isOpen(e) {
-                    return null != e && I.has(e)
+                    return null != e && s.has(e)
                 }
             }
-            S.displayName = "PictureInPictureStore";
-            var N = new S(r.default, {
+            N.displayName = "PictureInPictureStore";
+            var O = new N(i.default, {
                 PICTURE_IN_PICTURE_OPEN: function(e) {
                     var _, E;
                     let {
-                        id: o,
-                        component: n,
-                        props: r
-                    } = e, i = I.get(o);
-                    if (null != i) return;
-                    let a = {
-                        id: o,
-                        component: n,
-                        position: null !== (_ = r.position) && void 0 !== _ ? _ : s,
-                        props: r,
-                        docked: null !== (E = r.docked) && void 0 !== E && E
+                        id: n,
+                        component: r,
+                        props: i
+                    } = e, I = s.get(n);
+                    if (null != I) return;
+                    let S = {
+                        id: n,
+                        component: r,
+                        position: null !== (_ = i.position) && void 0 !== _ ? _ : T,
+                        props: i,
+                        docked: null !== (E = i.docked) && void 0 !== E && E
                     };
-                    I.set(o, a), null == t && (t = o)
+                    s.set(n, S), r === a.PictureInPictureComponents.VIDEO ? null == t && (t = n) : r === a.PictureInPictureComponents.EMBED_IFRAME && null == o && (o = n)
                 },
                 PICTURE_IN_PICTURE_CLOSE: function(e) {
                     let {
                         id: _
                     } = e;
-                    if (!I.has(_)) return !1;
-                    if (I.delete(_), t === _) {
-                        let e = Array.from(I.keys());
-                        t = 0 === e.length ? null : e[0]
+                    if (!s.has(_)) return !1;
+                    {
+                        s.delete(_);
+                        let e = Array.from(s.keys());
+                        t === _ ? t = e.find(e => {
+                            let _ = s.get(e);
+                            return null != _ && _.component === a.PictureInPictureComponents.VIDEO
+                        }) : o === _ && (o = e.find(e => {
+                            let _ = s.get(e);
+                            return null != _ && _.component === a.PictureInPictureComponents.EMBED_IFRAME
+                        }))
                     }
                 },
                 PICTURE_IN_PICTURE_MOVE: function(e) {
@@ -28309,26 +28417,26 @@
                         id: _,
                         position: E
                     } = e;
-                    if (null == t || t !== _) return !1;
+                    if (null == _ || t !== _ && o !== _) return !1;
                     {
                         let e = new Map;
-                        I.forEach((_, t) => {
+                        s.forEach((_, t) => {
                             e.set(t, {
                                 ..._,
                                 position: E
                             })
-                        }), I = e, s = E, n.default.set(a, E)
+                        }), s = e, T = E, r.default.set(I, E)
                     }
                 },
                 PICTURE_IN_PICTURE_HIDE: function(e) {
                     let {
                         id: _
                     } = e;
-                    if (t !== _) return !1;
+                    if (t !== _ && o !== _) return !1;
                     {
-                        let e = I.get(_);
+                        let e = s.get(_);
                         if (null == e) return !1;
-                        I.set(_, {
+                        s.set(_, {
                             ...e,
                             hidden: !0
                         })
@@ -28338,11 +28446,11 @@
                     let {
                         id: _
                     } = e;
-                    if (t !== _) return !1;
+                    if (t !== _ && o !== _) return !1;
                     {
-                        let e = I.get(_);
+                        let e = s.get(_);
                         if (null == e) return !1;
-                        I.set(_, {
+                        s.set(_, {
                             ...e,
                             hidden: !1
                         })
@@ -28353,16 +28461,16 @@
                         id: _,
                         rect: E
                     } = e;
-                    T[_] = E
+                    S[_] = E
                 },
                 PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: function(e) {
                     let {
                         id: _
-                    } = e;
-                    t = _
+                    } = e, E = s.get(_);
+                    null != E && (E.component === a.PictureInPictureComponents.VIDEO ? t = _ : E.component === a.PictureInPictureComponents.EMBED_IFRAME && (o = _))
                 },
                 LOGOUT: function() {
-                    t = null, I = new Map
+                    t = null, o = null, s = new Map
                 }
             })
         },
@@ -36635,4 +36743,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.7ba41c8d667e50a1a1e3.js.map
+//# sourceMappingURL=66318.217602411884a64bcda1.js.map

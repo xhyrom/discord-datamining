@@ -23477,18 +23477,18 @@
                 var e, t;
                 if (__OVERLAY__) return S.ThemeTypes.DARK;
                 if (u.default.syncForcedColors && "active" === u.default.systemForcedColors && null != r) return r;
-                let n = p.default.useSystemTheme;
-                if (n === T.SystemThemeState.ON && null != r) return r;
-                let i = null !== (t = null === (e = f.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme) && void 0 !== t ? t : g,
-                    s = !1;
+                let n = !1;
                 try {
-                    s = (0, d.isInMainTabsExperiment)()
+                    n = (0, d.isInMainTabsExperiment)()
                 } catch {}
-                if (s) {
+                let i = p.default.useSystemTheme;
+                if (i === T.SystemThemeState.ON && null != r) return r;
+                let s = null !== (t = null === (e = f.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme) && void 0 !== t ? t : g;
+                if (n) {
                     if (p.default.useAMOLEDTheme === m.AMOLEDThemeState.ON) return S.ThemeTypes.AMOLED;
-                    if (i === S.ThemeTypes.DARK) return S.ThemeTypes.DARKER
+                    if (s === S.ThemeTypes.DARK) return S.ThemeTypes.DARKER
                 }
-                return i
+                return s
             }
 
             function N() {
@@ -33456,6 +33456,10 @@
                 [_.AnalyticEvents.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
                     throttlePeriod: 6e4,
                     throttleKeys: e => [e.guild_id, e.channel_id]
+                },
+                [_.AnalyticEvents.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
+                    throttlePeriod: 36e5,
+                    throttleKeys: () => []
                 }
             };
 
@@ -41558,4 +41562,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.ebb78a942ab5fea8e870.js.map
+//# sourceMappingURL=24364.78ae586433a49e0a288b.js.map

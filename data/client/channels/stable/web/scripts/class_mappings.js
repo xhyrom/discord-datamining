@@ -2882,6 +2882,7 @@
                 clickShield: "clickShield_ef8ee6",
                 hidden: "hidden_bbd1c9",
                 iframe: "iframe__214b3",
+                multiPIPMode: "multiPIPMode__0d121",
                 pipMode: "pipMode_f1c701",
                 pipModeShort: "pipModeShort__2888b",
                 pipModeTall: "pipModeTall_bc08d1",
@@ -4886,6 +4887,7 @@
                 stickerButtonWithNotification: "stickerButtonWithNotification__51ade",
                 stickerIcon: "stickerIcon_ff97e4",
                 textArea: "textArea__74543",
+                textAreaCustomGift: "textAreaCustomGift_eafd3f",
                 textAreaDisabled: "textAreaDisabled__60cc6 textArea__74543",
                 textAreaForPostCreation: "textAreaForPostCreation_d82a1b",
                 textAreaMobileThemed: "textAreaMobileThemed_f77964",
@@ -5925,7 +5927,6 @@
                 checkmark: "checkmark__2ccd6",
                 checkmarkWrapper: "checkmarkWrapper_f2dab8",
                 darkCardBackground: "darkCardBackground__82a32",
-                defaultPreviewButtonColor: "defaultPreviewButtonColor__6cdf9",
                 description: "description__92b55",
                 detailsWrapper: "detailsWrapper_b31a7f",
                 hoverUpsellContainer: "hoverUpsellContainer__425f0",
@@ -5979,6 +5980,14 @@
                 shopForAllWinterBackground: "shopForAllWinterBackground__34a14",
                 textBody: "textBody__282cf",
                 title: "title__5fd27"
+            }
+        },
+        4881: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                snowflake: "snowflake__3643b",
+                "snowflakes-fall": "snowflakes-fall__21238",
+                "snowflakes-shake": "snowflakes-shake_ab86ff"
             }
         },
         807181: function(e, t, o) {
@@ -14873,10 +14882,11 @@
                 container: "container__30406"
             }
         },
-        147070: function(e, t, o) {
+        502081: function(e, t, o) {
             "use strict";
             e.exports = {
-                tooltipImage: "tooltipImage__2062b"
+                description: "description_c25756",
+                tooltipImage: "tooltipImage__2e87b"
             }
         },
         168986: function(e, t, o) {
@@ -18684,6 +18694,14 @@
                 headerContainerGift: "headerContainerGift__108ba"
             }
         },
+        526380: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                container: "container_cf921f",
+                image: "image_f8d345",
+                link: "link_bb6ae8"
+            }
+        },
         322859: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -18698,6 +18716,9 @@
                 bodyColumnMiddle: "bodyColumnMiddle_f4bcdf",
                 bodyColumnRight: "bodyColumnRight__94a69",
                 customGiftMessage: "customGiftMessage_de4b5e",
+                customGiftMessageWrapper: "customGiftMessageWrapper_b062eb",
+                giftPreview: "giftPreview_a0da10",
+                sendTo: "sendTo__27b60",
                 stepBody: "stepBody__0162f"
             }
         },
@@ -19157,10 +19178,13 @@
             e.exports = {
                 defaultContainer: "defaultContainer__91554",
                 defaultTextInput: "defaultTextInput__91909",
-                expressionPickerButtonImage: "expressionPickerButtonImage__5366d",
+                emojiDefault: "emojiDefault_a6c36f",
+                expressionPickerButtonDefault: "expressionPickerButtonDefault_eda6e6",
+                expressionPickerButtonImageOnly: "expressionPickerButtonImageOnly__42a53",
+                expressionPickerIconDefault: "expressionPickerIconDefault__286f7",
+                expressionPickerIconImageOnly: "expressionPickerIconImageOnly_b5541a",
                 gifDefault: "gifDefault_a0c5fa",
                 gifJumbo: "gifJumbo__8044e",
-                imageExpressionPickerButton: "imageExpressionPickerButton_bfd5b8",
                 imageOnlyContainer: "imageOnlyContainer__04301",
                 spinnerWrapper: "spinnerWrapper__6bb67"
             }
@@ -19188,8 +19212,8 @@
                 headerText: "headerText__35f81",
                 imageOnlyContainer: "imageOnlyContainer__036ec",
                 postButton: "postButton_bf09d5",
-                postButtonInner: "postButtonInner_bb4fbb",
-                postIcon: "postIcon_a3224d"
+                postButtonText: "postButtonText__4aa81",
+                questionInput: "questionInput_ac682b formInput_c28524"
             }
         },
         105335: function(e, t, o) {
@@ -19197,7 +19221,6 @@
             e.exports = {
                 container: "container_d9f390",
                 icon: "icon__60715",
-                iconSelected: "iconSelected__362aa",
                 option: "option_aec314",
                 optionSelected: "optionSelected_ebb40c"
             }
@@ -19240,6 +19263,7 @@
                 emoji: "emoji__320b7",
                 label: "label_f6dfd2",
                 mediaContainer: "mediaContainer__32ff8",
+                voteDataLine: "voteDataLine_efaced",
                 votePercentageBar: "votePercentageBar__4c440",
                 votesData: "votesData__4d275"
             }
@@ -19452,6 +19476,16 @@
                 termsApplyBodyText: "termsApplyBodyText_f45b74",
                 trialPill: "trialPill_d04c59",
                 video: "video__47ab5"
+            }
+        },
+        334873: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                buttonWide: "buttonWide_bc8401",
+                innerButton: "innerButton_bce5f8",
+                nitroIconSubHeader: "nitroIconSubHeader_d58016",
+                termsApplyAnchor: "termsApplyAnchor__07721",
+                termsApplyBodyText: "termsApplyBodyText__64e4c"
             }
         },
         212942: function(e, t, o) {
@@ -20199,6 +20233,7 @@
             "use strict";
             e.exports = {
                 body: "body__834d2",
+                editorTextArea: "editorTextArea__5ee78",
                 textArea: "textArea__771cd"
             }
         },
@@ -20419,6 +20454,7 @@
                 container: "container__79b26",
                 icon: "icon__3a061",
                 iconContainer: "iconContainer_e97d42",
+                mask: "mask_b6df54",
                 textContainer: "textContainer__02ecb"
             }
         },
@@ -20531,6 +20567,7 @@
             "use strict";
             e.exports = {
                 affinityDescription: "affinityDescription__4a412",
+                affinityHeight: "affinityHeight__33e1e",
                 button: "button_bbafbd",
                 buttonContainer: "buttonContainer_e04816",
                 container: "container__1e26b",
@@ -20540,6 +20577,7 @@
                 fullscreenSparkleStar3: "fullscreenSparkleStar3__85621 sparkleStar_dbaf1b",
                 fullscreenSparkleStar4: "fullscreenSparkleStar4_edb2d0 sparkleStar_dbaf1b",
                 fullscreenTextContainer: "fullscreenTextContainer__751a0",
+                settingsContainer: "settingsContainer__7e9ad",
                 settingsSparkleStar1: "settingsSparkleStar1__2b784 sparkleStar_dbaf1b",
                 settingsSparkleStar2: "settingsSparkleStar2__9eccb sparkleStar_dbaf1b",
                 settingsSparkleStar3: "settingsSparkleStar3_b42d7b sparkleStar_dbaf1b",
@@ -20788,7 +20826,6 @@
                 premiumTierCardsContainer: "premiumTierCardsContainer_e3c13b",
                 premiumTierCardsContainerFullscreen: "premiumTierCardsContainerFullscreen__90547 premiumTierCardsContainer_e3c13b",
                 premiumTierCardsContainerSettings: "premiumTierCardsContainerSettings_f346a8 premiumTierCardsContainer_e3c13b",
-                settingsHero: "settingsHero__55ff3",
                 settingsHeroBogoHeight: "settingsHeroBogoHeight__39203",
                 settingsHeroBogoMarginFullscreen: "settingsHeroBogoMarginFullscreen__9f6a6",
                 settingsHeroNoBackground: "settingsHeroNoBackground__0cfbe",
@@ -24019,8 +24056,10 @@
                 guildIcon: "guildIcon__87f0f",
                 infoBox: "infoBox_f47bb6",
                 integration: "integration_d2f026",
+                integrationError: "integrationError_f2285e",
                 integrationInner: "integrationInner__97d80",
                 integrationRevoked: "integrationRevoked_c56f1d",
+                integrationWrapper: "integrationWrapper__04dd5",
                 integrationsWrapper: "integrationsWrapper_c767a9",
                 metadataContainer: "metadataContainer__7b316",
                 metadataItem: "metadataItem_cd687b",

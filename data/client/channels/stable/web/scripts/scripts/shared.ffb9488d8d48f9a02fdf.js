@@ -2308,6 +2308,7 @@
             e.exports = {
                 borderRadius: "borderRadius__3965c",
                 hidden: "hidden__576d2",
+                noBoxShadow: "noBoxShadow_d45938",
                 pictureInPicture: "pictureInPicture__48d51",
                 pictureInPictureWindow: "pictureInPictureWindow_dc49a8",
                 pictureInPictureWindowOverflow: "pictureInPictureWindowOverflow__3abe4"
@@ -3388,7 +3389,7 @@
                 messageAttachmentFullWidth: "messageAttachmentFullWidth__89ab6",
                 messageAttachmentMediaMosaic: "messageAttachmentMediaMosaic__65bfc",
                 messageAttachmentNoJustify: "messageAttachmentNoJustify__922b7",
-                noBottomBorderRadius: "noBottomBorderRadius__8af42",
+                noBorderBottomRadius: "noBorderBottomRadius__1dde7",
                 nonMediaAttachment: "nonMediaAttachment__30665",
                 obscureVideo: "obscureVideo_efdb7b",
                 obscured: "obscured_dd8869",
