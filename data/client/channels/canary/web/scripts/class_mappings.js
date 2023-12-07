@@ -19255,6 +19255,7 @@
                 emoji: "emoji__320b7",
                 label: "label_f6dfd2",
                 mediaContainer: "mediaContainer__32ff8",
+                voteDataLine: "voteDataLine_efaced",
                 votePercentageBar: "votePercentageBar__4c440",
                 votesData: "votesData__4d275"
             }
