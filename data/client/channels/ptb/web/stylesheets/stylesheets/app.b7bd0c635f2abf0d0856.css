@@ -53560,6 +53560,10 @@ html .progress__4ef76 {
     background: linear-gradient(192.85deg, var(--premium-tier-0-header-gradient-1)42.31%, var(--premium-tier-0-header-gradient-2)72.74%, var(--premium-tier-0-header-gradient-3)86.45%, var(--premium-tier-0-header-gradient-4)98.78%, var(--premium-tier-0-header-gradient-5)123.01%), linear-gradient(180deg, var(--primary-700)26.55%, var(--primary-660)71.14%, var(--primary-630)100%)
 }
 
+.affinityHeight__33e1e {
+    height: 395px
+}
+
 .fullscreenTextContainer__751a0 {
     max-width: 650px
 }
@@ -124196,4 +124200,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4be8a96c0b574cc53072.css.map*/
+/*# sourceMappingURL=app.b7bd0c635f2abf0d0856.css.map*/
