@@ -1680,6 +1680,7 @@
   "GUILD_SETTINGS_COMMUNITY_UPSELL_HEADER": "\"Your server is now a Community Server!\"",
   "GUILD_SETTINGS_COMMUNITY_UPSELL_BODY": "\"You now have access to additional tools that can help you moderate, run, and grow your server. Check out some of them to get started!\"",
   "GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_WELCOME_SCREEN": "\"Set up Welcome Screen\"",
+  "GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_ONBOARDING": "\"Set up Onboarding\"",
   "GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_ADMIN_SERVER": "\"Join Discord's Admin Server\"",
   "GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_DISCOVERY": "\"Apply for Discovery\"",
   "GUILD_SETTINGS_COMMUNITY_UPSELL_BUTTON_ANALYTICS": "\"Check Server Insights\"",
