@@ -18416,7 +18416,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-top: 16px;
     font-weight: 600;
     color: var(--interactive-active);
-    font-size: 1.5rem
+    font-size: 24px
 }
 
 .tierPeriod__90c6f {
@@ -18691,8 +18691,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     text-transform: uppercase
 }
 
@@ -124212,4 +124212,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.59fd989714b823217c26.css.map*/
+/*# sourceMappingURL=app.987a19f2ab214e96e055.css.map*/

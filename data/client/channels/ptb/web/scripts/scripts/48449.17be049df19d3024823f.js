@@ -10511,7 +10511,7 @@
                             }, {
                                 autoTrackExposure: !1
                             });
-                            e.setViewerSideClip(n && t.viewerClipsEnabled)
+                            e.setViewerSideClip(n), e.setClipsKeyFrameInterval(n && t.viewerClipsEnabled ? ef.VIEWERSIDE_CLIP_KFI_MS : 0)
                         }
                         for (let t of (n = e0(e.context), e.setPostponeDecodeLevel(100), Object.keys(n.localMutes))) t !== et.default.getId() && e.setLocalMute(t, n.localMutes[t]);
                         for (let t of Object.keys(n.localVolumes)) t !== et.default.getId() && e.setLocalVolume(t, n.localVolumes[t]);
@@ -11702,7 +11702,7 @@
                     let {
                         settings: t
                     } = e;
-                    void 0 !== t.viewerClipsEnabled && ev.eachConnection(e => e.setViewerSideClip(A.default.getSettings().viewerClipsEnabled), ef.MediaEngineContextTypes.STREAM)
+                    void 0 !== t.viewerClipsEnabled && ev.eachConnection(e => e.setClipsKeyFrameInterval(A.default.getSettings().viewerClipsEnabled ? ef.VIEWERSIDE_CLIP_KFI_MS : 0), ef.MediaEngineContextTypes.STREAM)
                 }
             })
         },
@@ -15134,7 +15134,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "252322"
+                                build_number: "252327"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -15722,6 +15722,7 @@
                     return 0
                 }
                 setViewerSideClip(e) {}
+                setClipsKeyFrameInterval(e) {}
                 getStreamParameters() {
                     return a.cloneDeep(this.videoStreamParameters)
                 }
@@ -16768,11 +16769,15 @@
                         null != this.conn.setClipRecordUser ? this.conn.setClipRecordUser(e, (this.context === g.MediaEngineContextTypes.STREAM ? "application" : "user").concat("audio" === n ? "Audio" : "Video"), s) : null != this.conn.setClipRecordSsrc2 ? null === (a = (o = this.conn).setClipRecordSsrc2) || void 0 === a || a.call(o, t, this.context === g.MediaEngineContextTypes.STREAM ? "application" : "user", s) : null != this.conn.setClipRecordSsrc && (null === (r = (l = this.conn).setClipRecordSsrc) || void 0 === r || r.call(l, t, n, i, s))
                     }
                 }
-                setViewerSideClip(e) {
-                    this.context === g.MediaEngineContextTypes.STREAM && (this.clipsKeyFrameInterval = e ? S.VIEWERSIDE_CLIP_KFI_MS : 0, this.conn.setTransportOptions({
-                        keyframeInterval: this.getKeyFrameInterval(),
-                        enableViewerSideClip: e
+                setClipsKeyFrameInterval(e) {
+                    this.context === g.MediaEngineContextTypes.STREAM && (this.clipsKeyFrameInterval = e, this.conn.setTransportOptions({
+                        keyframeInterval: this.getKeyFrameInterval()
                     }))
+                }
+                setViewerSideClip(e) {
+                    this.context === g.MediaEngineContextTypes.STREAM && this.conn.setTransportOptions({
+                        enableViewerSideClip: e
+                    })
                 }
                 getLocalVolume(e) {
                     var t;
@@ -22068,4 +22073,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48449.b52bb1aec4332dc94d2b.js.map
+//# sourceMappingURL=48449.17be049df19d3024823f.js.map
