@@ -8042,7 +8042,7 @@
             function y(e, t) {
                 e.forEach(e => {
                     let t = N(e);
-                    A[t] = {
+                    null == A[t] && (A[t] = {
                         setAt: Date.now(),
                         timeout: setTimeout(() => {
                             ! function(e) {
@@ -8065,7 +8065,7 @@
                                 }
                             }(e)
                         }, g)
-                    }
+                    })
                 });
                 let n = t || new Set(e.map(e => e.channel_id)).size > 1;
                 if (n) {
@@ -33931,4 +33931,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.fa268c77be6ceb3b7fd7.js.map
+//# sourceMappingURL=67615.322692ac1e4ebf3628de.js.map
