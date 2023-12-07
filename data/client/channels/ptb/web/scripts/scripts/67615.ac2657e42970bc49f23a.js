@@ -569,7 +569,11 @@
                             type: "USER_CONNECTIONS_INTEGRATION_JOINING",
                             integrationId: e,
                             joining: !1
-                        }), !n.ok && (null == t || t())
+                        }), !n.ok && (s.default.dispatch({
+                            type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR",
+                            integrationId: e,
+                            error: n.hasErr ? void 0 : n.body.message
+                        }), null == t || t())
                     })
                 },
                 async refreshAccessToken(e, t) {
@@ -24661,7 +24665,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return C
+                    return m
                 }
             }), n("222007");
             var i = n("446674"),
@@ -24677,12 +24681,16 @@
                 E = [],
                 h = {},
                 f = {},
-                p = e => {
+                p = {},
+                T = e => {
                     _ = e.filter(e => !d.has(e.type) && s.default.isSupported(e.type)), E = e.filter(e => d.has(e.type)), c = !1
                 };
-            class T extends i.default.Store {
+            class C extends i.default.Store {
                 isJoining(e) {
                     return h[e] || !1
+                }
+                joinErrorMessage(e) {
+                    return p[e]
                 }
                 isFetching() {
                     return c
@@ -24703,11 +24711,11 @@
                     return f[e] || !1
                 }
             }
-            T.displayName = "ConnectedAccountsStore";
-            var C = new T(a.default, {
+            C.displayName = "ConnectedAccountsStore";
+            var m = new C(a.default, {
                 CONNECTION_OPEN: function(e) {
                     let t = e.connectedAccounts.map(e => new r.default(e));
-                    p(t)
+                    T(t)
                 },
                 USER_CONNECTIONS_UPDATE: function(e) {
                     if (e.local && null != e.accounts) {
@@ -24718,7 +24726,7 @@
                                 guild: new u.default(e.guild)
                             }))
                         }));
-                        p(t)
+                        T(t)
                     } else l.default.fetch()
                 },
                 USER_CONNECTIONS_INTEGRATION_JOINING: function(e) {
@@ -24733,6 +24741,9 @@
                     } = e, l = _.find(e => e.id === n && e.type === t);
                     if (null == l) return !1;
                     null != i && (l.revoked = i), null != a && (l.accessToken = a)
+                },
+                USER_CONNECTIONS_INTEGRATION_JOINING_ERROR: function(e) {
+                    p[e.integrationId] = void 0 !== e.error ? e.error : ""
                 }
             })
         },
@@ -33931,4 +33942,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.322692ac1e4ebf3628de.js.map
+//# sourceMappingURL=67615.ac2657e42970bc49f23a.js.map

@@ -56186,11 +56186,14 @@ html .progress__4ef76 {
     color: var(--text-normal)
 }
 
-.integration_d2f026 {
+.integrationWrapper__04dd5 {
     margin-top: 8px;
     border-radius: var(--radius-sm);
     background: var(--background-secondary-alt);
-    padding: 16px;
+    padding: 16px
+}
+
+.integration_d2f026 {
     display: flex;
     justify-content: space-between;
     align-items: center
@@ -56198,6 +56201,11 @@ html .progress__4ef76 {
 
 .integration_d2f026 .guildIcon__87f0f {
     margin-right: 8px
+}
+
+.integrationError_f2285e {
+    display: flex;
+    justify-content: center
 }
 
 .integrationInner__97d80 {
@@ -124204,4 +124212,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.09a9f92934b55751032a.css.map*/
+/*# sourceMappingURL=app.df3aa0d27cadce59990e.css.map*/
