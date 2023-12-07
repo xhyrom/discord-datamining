@@ -18995,7 +18995,8 @@ html.disable-forced-colors * {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative
+    position: relative;
+    border-radius: 4px 4px 0 0
 }
 
 .closeButton_bf11e4 {
@@ -26444,4 +26445,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.53d94715b28e9162fc92.css.map*/
+/*# sourceMappingURL=shared.1eaa045e2958307a82a8.css.map*/

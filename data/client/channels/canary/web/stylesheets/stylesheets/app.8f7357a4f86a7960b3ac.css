@@ -15393,7 +15393,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .grandfatheredMessage_b731ea {
     border-radius: 3px;
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.25;
     padding: 8px 16px 8px 8px;
     display: flex;
@@ -15429,8 +15429,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--white-500);
     display: flex;
     align-items: flex-start;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     padding: 16px;
     position: relative
 }
@@ -15478,7 +15478,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .sectionDescription__93f73 {
     color: var(--text-normal);
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-bottom: 16px;
     margin-top: 0
 }
@@ -15564,8 +15564,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .billingInformation_ed226c {
     color: var(--text-normal);
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .finePrint_a624a3 {
@@ -15579,9 +15579,9 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .noItemsCard__4a2f1 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-top: 16px;
     padding: 16px 19px;
     border: none;
@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -112778,6 +112778,29 @@ html .invoiceCancelRow_c1bfe7 {
     text-align: center
 }
 
+.container_cf921f {
+    position: absolute;
+    top: 100%;
+    background-color: var(--background-tertiary);
+    display: flex;
+    align-items: center;
+    padding: 16px 12px;
+    gap: 12px;
+    border-radius: 0 0 4px 4px;
+    transition-timing-function: ease-in-out
+}
+
+.image_f8d345 {
+    width: 105px
+}
+
+.link_bb6ae8 {
+    display: inline;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    cursor: pointer
+}
+
 .modal__3a6bf {
     max-height: 750px
 }
@@ -124354,4 +124377,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.25638da4aee122891ace.css.map*/
+/*# sourceMappingURL=app.8f7357a4f86a7960b3ac.css.map*/
