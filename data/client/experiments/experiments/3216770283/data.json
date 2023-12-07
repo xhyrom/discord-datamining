@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-12_nv_relaxed_rate_control",
+    "label": "Alternative rate control proposal for Nvidia encoder",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: 250 ms",
+      "Treatment 2: 500 ms",
+      "Treatment 3: 1000 ms"
+    ],
+    "hash": 3216770283,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "nvMediumVbvSizeMs"
+    ]
+  }
+}
