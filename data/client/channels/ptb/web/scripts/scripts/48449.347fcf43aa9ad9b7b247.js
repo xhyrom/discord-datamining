@@ -7072,19 +7072,19 @@
             let i;
             n.r(t), n.d(t, {
                 isOnNewPanels: function() {
-                    return S
-                },
-                useOnNewPanels: function() {
                     return g
                 },
-                isSplitMessagesTab: function() {
+                useOnNewPanels: function() {
                     return _
                 },
-                isSplitMessagesTabAndOnMessagesTab: function() {
+                isSplitMessagesTab: function() {
                     return v
                 },
-                shouldHandleNewPanelsRoute: function() {
+                isSplitMessagesTabAndOnMessagesTab: function() {
                     return C
+                },
+                shouldHandleNewPanelsRoute: function() {
+                    return I
                 }
             });
             var s = n("95410"),
@@ -7095,17 +7095,18 @@
                 u = n("699145"),
                 d = n("102425"),
                 c = n("98443"),
-                h = n("18108"),
-                p = n("446411"),
-                f = n("491246"),
-                E = n("49111");
+                h = n("264325"),
+                p = n("18108"),
+                f = n("446411"),
+                E = n("491246"),
+                m = n("49111");
 
-            function m(e) {
-                (0, h.updateIsInNewPanels)(e), i !== e && (s.default.set("isOnNewPanels", e), i = e)
+            function S(e) {
+                (0, p.updateIsInNewPanels)(e), i !== e && (s.default.set("isOnNewPanels", e), i = e)
             }
 
-            function S() {
-                return (0, l.isInMainTabsExperiment)() ? !!(0, p.isOnGlobalPanels)() || (a.default.get("new_panels") ? (m(!0), !0) : r.default.hasLoadedExperiments || void 0 === i ? d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
+            function g() {
+                return (0, l.isInMainTabsExperiment)() ? !!(0, f.isOnGlobalPanels)() || (a.default.get("new_panels") ? (S(!0), !0) : r.default.hasLoadedExperiments || void 0 === i ? d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
                     location: "isOnNewPanels"
                 }, {
                     autoTrackExposure: !1
@@ -7125,10 +7126,10 @@
                     location: "isOnNewPanels"
                 }, {
                     autoTrackExposure: !1
-                }).showNewPanels ? (m(!0), !0) : (m(!1), !1) : i) : (m(!1), !1)
+                }).showNewPanels || (0, h.isTabsUIEnabledManually)() ? (S(!0), !0) : (S(!1), !1) : i) : (S(!1), !1)
             }
 
-            function g() {
+            function _() {
                 let e = (0, l.useInMainTabsExperiment)(),
                     t = (0, o.default)("new_panels"),
                     n = (0, c.useNavPeekExperiment)({
@@ -7155,11 +7156,12 @@
                         location: "useOnNewPanels"
                     }, {
                         autoTrackExposure: !1
-                    }).showPanels;
-                return e && (t || n || i || s || a || r)
+                    }).showPanels,
+                    p = (0, h.useIsTabsUIEnabledManually)();
+                return e && (t || n || i || s || a || r || p)
             }
 
-            function _() {
+            function v() {
                 if (!(0, l.isInMainTabsExperiment)()) return !1;
                 let {
                     showNewPanels: e
@@ -7168,33 +7170,33 @@
                 }, {
                     autoTrackExposure: !1
                 });
-                return !!(e || !S() || (0, p.isOnGlobalPanels)() || a.default.get("panels_split_messages_tab")) || !!d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
+                return !!(e || !g() || (0, f.isOnGlobalPanels)() || a.default.get("panels_split_messages_tab") || d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
-                }).isSplitMessagesTab || !!d.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig({
+                }).isSplitMessagesTab || d.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
-                }).isSplitMessagesTab || !!u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig({
+                }).isSplitMessagesTab || u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
-                }).showPanels || !!u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig({
+                }).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig({
                     location: "isSplitMessagesTab"
                 }, {
                     autoTrackExposure: !1
-                }).showPanels || !1
+                }).showPanels || (0, h.isTabsUIEnabledManually)()) || !1
             }
 
-            function v() {
-                if (!_()) return !1;
-                let e = (0, f.default)();
+            function C() {
+                if (!v()) return !1;
+                let e = (0, E.default)();
                 return (null == e ? void 0 : e.name) === "messages"
             }
 
-            function C(e) {
-                return !(!S() || (0, p.isOnGlobalPanels)()) && (!_() || null != e && e !== E.ME)
+            function I(e) {
+                return !(!g() || (0, f.isOnGlobalPanels)()) && (!v() || null != e && e !== m.ME)
             }
         },
         491246: function(e, t, n) {
@@ -15134,7 +15136,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "252384"
+                                build_number: "252392"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -22073,4 +22075,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48449.f093303d92734317dcb1.js.map
+//# sourceMappingURL=48449.347fcf43aa9ad9b7b247.js.map
