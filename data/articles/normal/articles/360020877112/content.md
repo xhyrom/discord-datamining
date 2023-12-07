@@ -8,7 +8,7 @@
 </ul>
 <h1 id="docs-internal-guid-95151cf2-7fff-f4bb-06a8-0a3efdeb7f58">How to Purchase a Nitro Gift in Discord</h1>
 <p><strong>Discord Nitro gifts</strong> can be purchased within <strong>direct messages (DMs)</strong>,<strong> group chats</strong>, <strong>server channels</strong>, and the <strong>Nitro page</strong>.</p>
-<h3 id="h_01HGBW65QX0JFS12HPP6QKN553"><span style="color: #434343;">Gifts purchased within a DM on desktop or browser will allow you to customize your gift by selecting a card design, adding a personal note, a soundboard effect, and emoji confetti. You will not be able to customize your gift with these personal touches within GDMs and server channels.   </span></h3>
+<h3 id="h_01HGBW65QX0JFS12HPP6QKN553"><span style="color: #434343;">Gifts purchased within a DM on desktop or browser will allow you to customize your gift by selecting a card design, adding a personal note, a soundboard effect, and emoji confetti. You will not be able to customize your gift with these personal touches within group chats and server channels.   </span></h3>
 <p>1. To get started, open up the Discord app and head over to where you would like to send your gift.</p>
 <p>2. While there, select the <strong>gift</strong> <strong>icon</strong> to the right of the textbox.  </p>
 <p>3. Once the <strong>Gift Nitro </strong>window appears, select the gift you would like to send and press <strong>Next</strong> when you’re ready to proceed.</p>
