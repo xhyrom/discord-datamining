@@ -14873,10 +14873,11 @@
                 container: "container__30406"
             }
         },
-        147070: function(e, t, o) {
+        502081: function(e, t, o) {
             "use strict";
             e.exports = {
-                tooltipImage: "tooltipImage__2062b"
+                description: "description_c25756",
+                tooltipImage: "tooltipImage__2e87b"
             }
         },
         168986: function(e, t, o) {
