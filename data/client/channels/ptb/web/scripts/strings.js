@@ -6774,7 +6774,7 @@
                 PREMIUM_MARKETING_WHATS_NEW_SPECIAL_SHOP_PERKS_SUBTITLE: "Enjoy member pricing plus Nitro exclusive items in the Shop.",
                 COMING_SOON: "Coming Soon!",
                 NEW_DROP: "New Drop",
-                VISIT_THE_SHOP_CTA: "Visit the shop",
+                VISIT_THE_SHOP_CTA: "Visit the Shop",
                 SUBSCRIBER_NITRO_HOME_TITLE: "Welcome to\n\nYour Nitro Home",
                 SUBSCRIBER_NITRO_HOME_TITLE_ONE_LINE: "Welcome to Your Nitro Home",
                 SUBSCRIBER_NITRO_HOME_SUBTITLE: "Share the magic of Nitro.",
@@ -18289,7 +18289,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252272", ", Version Hash: ").concat("ce751b157ffa5ef462d89ba839a240fccb27fc6f")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252296", ", Version Hash: ").concat("342d772f4ee9332de9403706fc4f7fc92862df80")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20583,8 +20583,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "252272", "252272"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252272")), _ = 0), _
+                let _ = parseInt((e = "252296", "252296"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252296")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36659,4 +36659,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.0232f5e94bc26eb3f5d8.js.map
+//# sourceMappingURL=66318.9f13ae0fe1049d88adad.js.map
