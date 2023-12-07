@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -31825,7 +31825,12 @@ html .progress__4ef76 {
     margin-left: auto;
     margin-right: 12px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: flex-end
+}
+
+.voteDataLine_efaced {
+    white-space: nowrap
 }
 
 .container__3ca24 {
@@ -124349,4 +124354,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f0391e7e7c5211402644.css.map*/
+/*# sourceMappingURL=app.1a7b7ae3c119b26d57e2.css.map*/
