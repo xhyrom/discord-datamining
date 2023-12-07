@@ -18,7 +18,11 @@
       "Treatment 10: Worker: Trendline Window Size + Robust Estimator",
       "Treatment 11: Sender + Worker: Trendline Window Size",
       "Treatment 12: Sender + Worker: Trendline Window Size + Robust Estimator",
-      "Treatment 13: Sender + Worker: Loss-Based-BWE V2 + Trendline Window Size + Robust Estimator"
+      "Treatment 13: Sender + Worker: Loss-Based-BWE V2 + Trendline Window Size + Robust Estimator",
+      "Treatment 14: Sender + Worker: Trendline Window Duration 50ms + Robust Estimator",
+      "Treatment 15: Sender + Worker: Trendline Window Duration 100ms + Robust Estimator",
+      "Treatment 16: Sender + Worker: Trendline Window Duration 250ms + Robust Estimator",
+      "Treatment 17: Sender + Worker: Trendline Window Duration 500ms + Robust Estimator"
     ],
     "hash": 834206369,
     "buckets": [
@@ -36,7 +40,11 @@
       10,
       11,
       12,
-      13
+      13,
+      14,
+      15,
+      16,
+      17
     ],
     "holdout": {},
     "aa_mode": false,
