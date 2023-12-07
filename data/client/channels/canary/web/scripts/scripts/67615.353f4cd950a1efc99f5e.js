@@ -8610,7 +8610,7 @@
                 let n = Date.now() - e;
                 d.default.increment({
                     name: r.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING,
-                    tags: ["timingBucket:".concat(Math.min(Math.floor(n / 1e3), 3)), "source".concat(t)]
+                    tags: ["timingBucket:".concat(Math.min(Math.floor(n / 1e3), 3)), "source:".concat(t)]
                 })
             }
 
@@ -33931,4 +33931,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.d84559b69ff23f5a2c84.js.map
+//# sourceMappingURL=67615.353f4cd950a1efc99f5e.js.map
