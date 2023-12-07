@@ -4673,6 +4673,10 @@
   },
   "PREMIUM_MARKETING": {
     "url": "/premium-marketing",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   }
 }
