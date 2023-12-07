@@ -5981,6 +5981,14 @@
                 title: "title__5fd27"
             }
         },
+        4881: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                snowflake: "snowflake__3643b",
+                "snowflakes-fall": "snowflakes-fall__21238",
+                "snowflakes-shake": "snowflakes-shake_ab86ff"
+            }
+        },
         807181: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -19458,6 +19466,16 @@
                 termsApplyBodyText: "termsApplyBodyText_f45b74",
                 trialPill: "trialPill_d04c59",
                 video: "video__47ab5"
+            }
+        },
+        334873: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                buttonWide: "buttonWide_bc8401",
+                innerButton: "innerButton_bce5f8",
+                nitroIconSubHeader: "nitroIconSubHeader_d58016",
+                termsApplyAnchor: "termsApplyAnchor__07721",
+                termsApplyBodyText: "termsApplyBodyText__64e4c"
             }
         },
         212942: function(e, t, o) {
