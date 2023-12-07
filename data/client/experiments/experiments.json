@@ -13541,9 +13541,48 @@
               ]
             }
           ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 9500,
+                  "end": 10000
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 2500
+                },
+                {
+                  "start": 2500,
+                  "end": 5000
+                },
+                {
+                  "start": 5000,
+                  "end": 7000
+                },
+                {
+                  "start": 7500,
+                  "end": 9500
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_count": 2,
+              "max_count": 30
+            }
+          ]
         }
       ],
-      "revision": 0,
+      "revision": 1,
       "overrides": {
         "1": [
           "37711544032690177",
