@@ -13180,7 +13180,8 @@
       },
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "deadchatNotifsEnabled",
+        "voiceChannelActivityNotifsEnabled"
       ]
     },
     "rollout": {
