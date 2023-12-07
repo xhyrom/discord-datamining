@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -20714,34 +20714,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     right: 0
 }
 
-.listItemWrapper__1f93b:active {
-    transform: translatey(1px)translatez(0)
-}
-
-.listItemTooltip__7fa38 {
-    max-width: 196px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 600;
-    word-wrap: break-word
-}
-
-.enable-forced-colors .listItemWrapper__1f93b {
-    background-color: ButtonFace;
-    border: 1px solid CanvasText;
-    border-radius: 4px
-}
-
-.enable-forced-colors .listItemWrapper__1f93b:hover {
-    border-color: ButtonText
-}
-
-.enable-forced-colors .listItemWrapper__1f93b.selected_ad2d13 {
-    background-color: HighlightText;
-    border-color: Highlight;
-    outline: 2px solid Highlight
-}
-
 .listItem_fa7b36 {
     position: relative;
     margin: 0 0 8px;
@@ -20774,6 +20746,34 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .serverEmoji__740eb {
     width: 16px;
     height: 16px
+}
+
+.listItemWrapper__1f93b:active {
+    transform: translatey(1px)translatez(0)
+}
+
+.listItemTooltip__7fa38 {
+    max-width: 196px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.enable-forced-colors .listItemWrapper__1f93b {
+    background-color: ButtonFace;
+    border: 1px solid CanvasText;
+    border-radius: 4px
+}
+
+.enable-forced-colors .listItemWrapper__1f93b:hover {
+    border-color: ButtonText
+}
+
+.enable-forced-colors .listItemWrapper__1f93b.selected_ad2d13 {
+    background-color: HighlightText;
+    border-color: Highlight;
+    outline: 2px solid Highlight
 }
 
 .effect__50f2a {
@@ -124377,4 +124377,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.40dfe724d17214e5b8cf.css.map*/
+/*# sourceMappingURL=app.a4a2d5894ba0609c2749.css.map*/
