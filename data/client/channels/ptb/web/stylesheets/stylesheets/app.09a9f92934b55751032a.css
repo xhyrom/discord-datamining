@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -67301,7 +67301,11 @@ input::-webkit-inner-spin-button {
     margin-bottom: 4px
 }
 
-.tooltipImage__2062b {
+.description_c25756 {
+    margin-bottom: 16px
+}
+
+.tooltipImage__2e87b {
     height: 100px;
     width: auto;
     margin: 0 auto 16px;
@@ -118076,7 +118080,7 @@ html .invoiceCancelRow_c1bfe7 {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: .875rem
+    font-size: 14px
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -124200,4 +124204,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c0e7dc9d5f913f029c5e.css.map*/
+/*# sourceMappingURL=app.09a9f92934b55751032a.css.map*/
