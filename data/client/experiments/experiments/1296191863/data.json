@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-12_krunker_strike_coachmark",
+    "label": "Krunker Strike Coachmark",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show Coachmark"
+    ],
+    "hash": 1296191863,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
