@@ -15393,7 +15393,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .grandfatheredMessage_b731ea {
     border-radius: 3px;
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.25;
     padding: 8px 16px 8px 8px;
     display: flex;
@@ -15429,8 +15429,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--white-500);
     display: flex;
     align-items: flex-start;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     padding: 16px;
     position: relative
 }
@@ -15478,7 +15478,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .sectionDescription__93f73 {
     color: var(--text-normal);
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-bottom: 16px;
     margin-top: 0
 }
@@ -15564,8 +15564,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .billingInformation_ed226c {
     color: var(--text-normal);
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .finePrint_a624a3 {
@@ -15579,9 +15579,9 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .noItemsCard__4a2f1 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-top: 16px;
     padding: 16px 19px;
     border: none;
@@ -19166,8 +19166,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .planInfo_cd8cba {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -124462,4 +124462,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7a411652e2170f5bb968.css.map*/
+/*# sourceMappingURL=app.5817366b79b757444911.css.map*/

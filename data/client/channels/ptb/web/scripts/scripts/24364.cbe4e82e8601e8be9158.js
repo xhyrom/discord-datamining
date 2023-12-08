@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -16182,7 +16182,7 @@
                 default: function() {
                     return O
                 }
-            });
+            }), n("222007");
             var a = n("35092"),
                 l = n("151426"),
                 o = n("913144"),
@@ -16218,11 +16218,11 @@
                 };
             class N extends a.default.PersistedStore {
                 initialize(e) {
-                    null != e && (r = e.gradientPreset, s = e.gradientAngle), this.waitFor(f.default, d.default, _.default, c.default), this.syncWith([f.default], R), this.syncWith([c.default], v)
+                    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? S.BACKGROUND_GRADIENT_PRESETS_MAP[e.gradientPresetId] : void 0, s = e.gradientAngle), this.waitFor(f.default, d.default, _.default, c.default), this.syncWith([f.default], R), this.syncWith([c.default], v)
                 }
                 getState() {
                     return {
-                        gradientPreset: r,
+                        gradientPresetId: null == r ? void 0 : r.id,
                         gradientAngle: s
                     }
                 }
@@ -16250,6 +16250,15 @@
                 }
                 get mobilePendingThemeIndex() {
                     return i
+                }
+                constructor(...e) {
+                    super(...e), this.migrations = [e => {
+                        var t;
+                        return {
+                            gradientPresetId: null == e ? void 0 : null === (t = e.gradientPreset) || void 0 === t ? void 0 : t.id,
+                            gradientAngle: null == e ? void 0 : e.gradientAngle
+                        }
+                    }]
                 }
             }
             N.displayName = "ClientThemesBackgroundStore", N.persistKey = "ClientThemesBackgroundStore";
@@ -41577,4 +41586,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.b3ed802f83fa1007a663.js.map
+//# sourceMappingURL=24364.cbe4e82e8601e8be9158.js.map
