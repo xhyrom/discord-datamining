@@ -5716,6 +5716,7 @@
                 newItemTypeBadge: "newItemTypeBadge__7e6f7",
                 page: "page_be1421",
                 pageWrapper: "pageWrapper__582b9",
+                pageWrapperBackgroundPrimary: "pageWrapperBackgroundPrimary__74f14",
                 pageWrapperFullscreen: "pageWrapperFullscreen__7f748",
                 regularShopCard: "regularShopCard__06c2e",
                 shop: "shop_b31ed2",

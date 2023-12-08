@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83467,6 +83467,10 @@ input::-webkit-inner-spin-button {
     left: 20px
 }
 
+.pageWrapperBackgroundPrimary__74f14 {
+    background-color: var(--background-primary)
+}
+
 .pageWrapper__582b9 {
     display: flex;
     align-items: stretch;
@@ -124399,4 +124403,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.223a0ce29fdbb760e72c.css.map*/
+/*# sourceMappingURL=app.876610dd0b5370c534bc.css.map*/
