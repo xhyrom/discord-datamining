@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -109464,19 +109464,48 @@ html .invoiceCancelRow_a8669b {
     overflow: hidden
 }
 
+.answerRow__9fc86 {
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    grid-gap: 12px;
+    gap: 12px;
+    align-items: center
+}
+
 .defaultTextInput__91909 {
     flex: 1;
     background-color: transparent
 }
 
 .imageOnlyContainer__04301 {
+    position: relative
+}
+
+.imageOnlyContainer__04301:hover .imageOnlyAnswerActionBar__14c4f,
+.imageOnlyContainer__04301:focus-within .imageOnlyAnswerActionBar__14c4f {
+    opacity: 1
+}
+
+.imageOnlyAnswerActionBar__14c4f {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    background: var(--background-tertiary);
+    border-radius: var(--radius-xs);
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration)ease;
+    box-shadow: var(--shadow-low)
+}
+
+.imagePreviewContainer__19776 {
     border-radius: var(--radius-lg);
     background-color: var(--background-secondary-alt);
     border: 5px solid var(--background-floating);
     height: 175px;
+    box-sizing: border-box;
     cursor: pointer;
-    overflow: hidden;
-    box-sizing: border-box
+    overflow: hidden
 }
 
 .expressionPickerButtonDefault_eda6e6 {
@@ -109535,6 +109564,22 @@ html .invoiceCancelRow_a8669b {
     cursor: default
 }
 
+.removeAnswerButtonDefault_f2d25e {
+    padding: 8px 0;
+    cursor: pointer
+}
+
+.removeAnswerButtonDefault_f2d25e:hover .trashIcon_ebf95d {
+    color: var(--button-danger-background-hover)
+}
+
+.trashIcon_ebf95d {
+    width: 24px;
+    height: 24px;
+    color: var(--button-danger-background);
+    transition: color var(--custom-button-transition-duration)ease
+}
+
 .container__1b71e {
     border-radius: 8px;
     background-color: var(--background-secondary)
@@ -109543,7 +109588,8 @@ html .invoiceCancelRow_a8669b {
 .header__96d08 {
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center;
+    padding-bottom: 12px
 }
 
 .headerText__35f81 {
@@ -109561,7 +109607,7 @@ html .invoiceCancelRow_a8669b {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
-    padding: 0 15px 20px
+    padding: 4px 15px 20px
 }
 
 .answerInputsContainer__22676 {
@@ -109605,7 +109651,7 @@ html .invoiceCancelRow_a8669b {
 .addAnswerButtonDefault_f6a374 {
     justify-content: flex-start;
     gap: 14px;
-    width: 100%;
+    margin-right: 36px;
     height: 48px;
     padding: 0 20px 0 16px
 }
@@ -124462,4 +124508,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c71075b9e6e32c39dbd7.css.map*/
+/*# sourceMappingURL=app.3a367675ebe7906ea405.css.map*/
