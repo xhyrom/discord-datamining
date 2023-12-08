@@ -18301,7 +18301,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252705", ", Version Hash: ").concat("3ceee3e95f63dced2753324d6490cb09547c49eb")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252703", ", Version Hash: ").concat("eba7ca2f9437b33c9e5803dcb9aa6404179605c8")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -18546,7 +18546,7 @@
                     return t
                 }
             }), E("222007");
-            var t, o = E("301165");
+            var t, o = E("907002");
 
             function n(e, _) {
                 let E = e.findIndex(_);
@@ -18611,7 +18611,7 @@
                     return n
                 }
             });
-            var t = E("301165"),
+            var t = E("907002"),
                 o = E("102535");
             let n = new o.default;
             t.Globals.assign({
@@ -20599,8 +20599,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "252705", "252705"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252705")), _ = 0), _
+                let _ = parseInt((e = "252703", "252703"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252703")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36750,4 +36750,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.9f067e10955a0a1e79d9.js.map
+//# sourceMappingURL=66318.d3e067c383afc924acd7.js.map
