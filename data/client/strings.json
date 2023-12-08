@@ -10133,6 +10133,8 @@
   "VOICE_PANEL_BAD_CONNECTION_CTA_SUB_LABEL": "\"Some participants will be audio only.\"",
   "VOICE_PANEL_FOR_DEVELOPERS": "\"For Developers\"",
   "VOICE_PANEL_SCREENSHARE_SHORTCUTS": "\"Screen Share Shortcuts\"",
+  "VOICE_PANEL_HIDE_DRAWER": "\"Hide Drawer\"",
+  "VOICE_PANEL_SHOW_DRAWER": "\"Show Settings Drawer\"",
   "NUF_DESKTOP_TEMPLATES_TITLE": "\"Create your first Discord server\"",
   "NUF_DESKTOP_TEMPLATES_SUBTITLE": "\"Your server is where you and your friends hang out.\\n  Make yours and start talking.\"",
   "TOO_MANY_USER_GUILDS_TITLE_2": "\"You are at the {quantity, number} server limit.\"",
