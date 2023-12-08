@@ -19186,6 +19186,7 @@
         177037: function(e, t, o) {
             "use strict";
             e.exports = {
+                answerRow: "answerRow__9fc86",
                 defaultContainer: "defaultContainer__91554",
                 defaultTextInput: "defaultTextInput__91909",
                 emojiDefault: "emojiDefault_a6c36f",
@@ -19195,8 +19196,12 @@
                 expressionPickerIconImageOnly: "expressionPickerIconImageOnly_b5541a",
                 gifDefault: "gifDefault_a0c5fa",
                 gifJumbo: "gifJumbo__8044e",
+                imageOnlyAnswerActionBar: "imageOnlyAnswerActionBar__14c4f",
                 imageOnlyContainer: "imageOnlyContainer__04301",
-                spinnerWrapper: "spinnerWrapper__6bb67"
+                imagePreviewContainer: "imagePreviewContainer__19776",
+                removeAnswerButtonDefault: "removeAnswerButtonDefault_f2d25e",
+                spinnerWrapper: "spinnerWrapper__6bb67",
+                trashIcon: "trashIcon_ebf95d"
             }
         },
         301893: function(e, t, o) {
