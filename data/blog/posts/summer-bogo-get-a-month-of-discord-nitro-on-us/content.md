@@ -1,6 +1,10 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
+            <p><strong>Update: This promotion has ended. You can still read on to see what it was all about! </strong></p>
+            <div class="w-embed">
+                <hr class="hr-style">
+            </div>
             <p>It’s time to enjoy the summer heat with a Nitro BOGO treat!&nbsp;&nbsp;</p>
             <p><strong>From July 25th, 2023 to August 1st, 2023, new and returning users who buy either a monthly or yearly Discord Nitro membership will receive an additional month of Nitro for free.&nbsp;</strong></p>
             <p>Purchase a month of Nitro and you’ll get a month extra; start a yearly membership and you’ll be stacked with a whopping thirteen months total. Currently a Nitro Basic or Classic member? We got you covered, too: upgrade to Nitro and you’ll also qualify for an extra month on us!</p>

@@ -1,6 +1,10 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
+            <p><strong>Update:&nbsp;This promotion has ended. You can still read on to see what it was all about! </strong></p>
+            <div class="w-embed">
+                <hr class="hr-style">
+            </div>
             <p>Say this out loud: “I’ve got <em>Nitro</em>.” Sounds good, right? But we can do better… <br><br>Now say this: “<strong>Nitro for <em>EVERYONE</em> (<em>who is a new subscriber or hasn’t had Nitro in the last 30 days</em>), for two whole weeks (t<em>erms and conditions apply)</em>.</strong>” Now that, aside from the extra words our Legal team put in, sounds even <em>better</em>.&nbsp;</p>
             <p>You heard us right — <strong>between now and November 13th, 2023, anyone who is not currently a Nitro member can try it for 2 weeks, on us!</strong> You’re about to see a whoooole lot more animated icons, decked-out profiles, and Super Reactions in your DMs and chats over the coming weeks.&nbsp;</p>
             <p>If you qualify for a two-week trial for Discord Nitro, you’ll see a message in <strong>User Settings &gt; Nitro</strong> letting you know!&nbsp;</p>
