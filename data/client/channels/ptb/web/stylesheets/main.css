@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -109596,6 +109596,46 @@ html .invoiceCancelRow_a8669b {
     height: 48px
 }
 
+.addAnswerButton__0db97 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: background-color var(--custom-button-transition-duration)ease
+}
+
+.addAnswerButton__0db97:hover {
+    background-color: var(--background-floating)
+}
+
+.addAnswerButtonDefault_f6a374 {
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+    height: 48px;
+    padding: 0 20px 0 16px
+}
+
+.addAnswerButtonImageOnly__73d3e {
+    justify-content: center;
+    height: 175px;
+    padding: 0
+}
+
+.addAnswerIconDefault_a45ed2 {
+    width: 30px;
+    height: 30px;
+    color: var(--text-muted)
+}
+
+.addAnswerIconImageOnly__048af {
+    width: 48px;
+    height: 48px;
+    color: var(--interactive-muted)
+}
+
 .footer__1028f {
     display: flex;
     flex-direction: row;
@@ -124430,4 +124470,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.441cf5e107b4a3080faf.css.map*/
+/*# sourceMappingURL=app.7f373d01d6a20383026a.css.map*/

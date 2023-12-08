@@ -19212,6 +19212,11 @@
         877055: function(e, t, o) {
             "use strict";
             e.exports = {
+                addAnswerButton: "addAnswerButton__0db97",
+                addAnswerButtonDefault: "addAnswerButtonDefault_f6a374 addAnswerButton__0db97",
+                addAnswerButtonImageOnly: "addAnswerButtonImageOnly__73d3e addAnswerButton__0db97",
+                addAnswerIconDefault: "addAnswerIconDefault_a45ed2",
+                addAnswerIconImageOnly: "addAnswerIconImageOnly__048af",
                 answerInputsContainer: "answerInputsContainer__22676",
                 closeIcon: "closeIcon_f53e1e",
                 container: "container__1b71e",
