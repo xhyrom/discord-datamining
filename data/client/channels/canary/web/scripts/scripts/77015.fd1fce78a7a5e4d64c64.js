@@ -456,7 +456,7 @@
                 }
             }
 
-            function b(e) {
+            function U(e) {
                 if (!g || __OVERLAY__) return;
                 let {
                     shortcut: t,
@@ -489,7 +489,7 @@
                 }), c.default.validateKeybind((0, f.toString)(e.shortcut))
             }
 
-            function U(e) {
+            function b(e) {
                 let t = {
                     id: h.toString(),
                     enabled: !0,
@@ -526,13 +526,13 @@
                     hotkey: t.action === L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? (0, f.toString)(t.shortcut) : null
                 }) : t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && A.default.track(L.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
                     text_activation_hotkey: t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, f.toString)(t.shortcut) : null
-                })), b(t)
+                })), U(t)
             }
 
             function w(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                     l = u.find(v, t => t.action === e && (!n || t.managed === n));
-                return null == l && (b(U({
+                return null == l && (U(b({
                     action: e,
                     enabled: !0,
                     shortcut: (0, f.toCombo)(t),
@@ -546,7 +546,7 @@
                     t.action === L.GlobalKeybindActions.PUSH_TO_TALK && !0 === t.managed && (null == t.context || null == e[t.context]) && M(t)
                 }), u.reduce(T.default.getShortcuts(), (e, t, n) => {
                     let l = u.find(v, e => e.action === L.GlobalKeybindActions.PUSH_TO_TALK && !0 === e.managed && e.context === n);
-                    if (null == l) b(U({
+                    if (null == l) U(b({
                         action: L.GlobalKeybindActions.PUSH_TO_TALK,
                         enabled: !0,
                         shortcut: t,
@@ -667,8 +667,8 @@
                 KEYBINDS_ADD_KEYBIND: function(e) {
                     let {
                         keybind: t
-                    } = e, n = U(t);
-                    b(n)
+                    } = e, n = b(t);
+                    U(n)
                 },
                 KEYBINDS_DELETE_KEYBIND: function(e) {
                     let {
@@ -685,7 +685,7 @@
                     let {
                         enable: t
                     } = e;
-                    g = t, t ? (c.default.enable(), u.forEach(v, b)) : (c.default.disable(), u.forEach(v, e => m(e.id)))
+                    g = t, t ? (c.default.enable(), u.forEach(v, U)) : (c.default.disable(), u.forEach(v, e => m(e.id)))
                 },
                 KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS: function(e) {
                     let {
@@ -696,7 +696,7 @@
                     n.length !== G.length && V(), u.forEach(v, e => {
                         h = Math.max(parseInt(e.id, 10), h) + 1;
                         try {
-                            b(e)
+                            U(e)
                         } catch (t) {
                             p.error("Failed to register keybind", e, t)
                         }
@@ -742,8 +742,8 @@
                 G = n("49111"),
                 m = n("6791");
             (o = i || (i = {})).ATTACHING = "ATTACHING", o.CONNECTING = "CONNECTING", o.CONNECTED = "CONNECTED", o.READY = "READY", o.CRASHED = "CRASHED", o.CONNECT_FAILED = "CONNECT_FAILED", o.HOOK_FAILED = "HOOK_FAILED";
-            let b = {},
-                U = new Map,
+            let U = {},
+                b = new Map,
                 M = !1,
                 Y = new Set,
                 w = new Set,
@@ -777,9 +777,9 @@
 
             function Z(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-                    l = U.get(e);
+                    l = b.get(e);
                 if ((null === n || l === n) && l !== t) {
-                    if (null == t ? U.delete(e) : U.set(e, t), null == t || "CRASHED" === t) {
+                    if (null == t ? b.delete(e) : b.set(e, t), null == t || "CRASHED" === t) {
                         var a;
                         W = null;
                         let e = null === T.default || void 0 === T.default ? void 0 : null === (a = T.default.fileManager) || void 0 === a ? void 0 : a.uploadDiscordHookCrashes;
@@ -802,12 +802,12 @@
                                 }
                         })
                     }
-                    K.delete(e), X.info("pid=".concat(e, " status transition ").concat(null != l ? l : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), U), M = Array.from(U.values()).some(e => "READY" === e)
+                    K.delete(e), X.info("pid=".concat(e, " status transition ").concat(null != l ? l : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), b), M = Array.from(b.values()).some(e => "READY" === e)
                 }
             }
             async function j(e) {
                 if (g.default.supportsFeature(G.NativeFeatures.CREATE_HOST_ON_ATTACH)) {
-                    if (U.size > 0) {
+                    if (b.size > 0) {
                         let t = await et();
                         e.createHostProcess(t, eu, eE)
                     } else e.destroyHostProcess()
@@ -818,7 +818,7 @@
             }
             async function q(e) {
                 !z.isMutexHeld() && X.error("_attachPIDMustBeLocked: overlayMutex is not held.", e);
-                let t = U.get(e);
+                let t = b.get(e);
                 if (null != t) {
                     X.warn("Trying to attach to pid=".concat(e, ", that is already in status: ").concat(t));
                     return
@@ -829,7 +829,7 @@
                 null == l ? (Z(e, "CONNECTING", "ATTACHING"), await j(n), n.connectProcess(e)) : (Z(e, "HOOK_FAILED", "ATTACHING"), X.warn("Could not hook to pid=".concat(e, ", error=").concat(l)))
             }
             async function J(e) {
-                if (!z.isMutexHeld() && X.error("_detachPIDMustBeLocked: overlayMutex is not held.", e), !U.has(e)) {
+                if (!z.isMutexHeld() && X.error("_detachPIDMustBeLocked: overlayMutex is not held.", e), !b.has(e)) {
                     X.warn("Trying to detach from pid ".concat(e, ", which is in an unknown state"));
                     return
                 }
@@ -846,12 +846,12 @@
                     return
                 }
                 async function l(t) {
-                    if (!(t in b)) {
-                        X.error("Unexpected. ".concat(t, " is not a tracked game?"), b, e);
+                    if (!(t in U)) {
+                        X.error("Unexpected. ".concat(t, " is not a tracked game?"), U, e);
                         return
                     }
-                    let n = b[t];
-                    delete b[t];
+                    let n = U[t];
+                    delete U[t];
                     try {
                         await n.deconstructor()
                     } catch (e) {
@@ -859,17 +859,17 @@
                     }
                 }
                 if (null == e || !H) {
-                    X.verbose("updateIntendedOverlayPIDs: Removing all.", b, e);
-                    let t = Object.keys(b);
+                    X.verbose("updateIntendedOverlayPIDs: Removing all.", U, e);
+                    let t = Object.keys(U);
                     for (let e of t) await l(Number(e));
                     return
                 }
                 for (let n of null !== (t = e.added) && void 0 !== t ? t : []) {
                     let t = p.default.getGameOverlayStatus(n);
-                    if (X.verbose("updateIntendedOverlayPIDs: newGame", n, t), null != t && t.enabled) switch (n.pid in b && X.error("Unexpected. ".concat(n.pid, " is being added twice?"), b, e), t.overlayMethod) {
+                    if (X.verbose("updateIntendedOverlayPIDs: newGame", n, t), null != t && t.enabled) switch (n.pid in U && X.error("Unexpected. ".concat(n.pid, " is being added twice?"), U, e), t.overlayMethod) {
                         case m.OverlayMethod.OutOfProcess:
                             let l = await eo();
-                            l.trackGame(n.pid), b[n.pid] = {
+                            l.trackGame(n.pid), U[n.pid] = {
                                 method: t.overlayMethod,
                                 deconstructor: async () => {
                                     let e = await eo();
@@ -878,7 +878,7 @@
                             };
                             break;
                         case m.OverlayMethod.Hook:
-                            !U.has(n.pid) && await q(n.pid), b[n.pid] = {
+                            !b.has(n.pid) && await q(n.pid), U[n.pid] = {
                                 method: t.overlayMethod,
                                 deconstructor: async () => {
                                     await J(n.pid)
@@ -979,7 +979,7 @@
             function eE(e) {
                 if (0 === e) {
                     var t, n;
-                    let e = null !== (n = null === (t = b[null != W ? W : 0]) || void 0 === t ? void 0 : t.method) && void 0 !== n ? n : m.OverlayMethod.Disabled;
+                    let e = null !== (n = null === (t = U[null != W ? W : 0]) || void 0 === t ? void 0 : t.method) && void 0 !== n ? n : m.OverlayMethod.Disabled;
                     if (e === m.OverlayMethod.OutOfProcess) return
                 }
                 c.default.setFocusedPID(0 === e ? null : e)
@@ -1133,10 +1133,10 @@
                     return W
                 }
                 isReady(e) {
-                    return "READY" === U.get(e)
+                    return "READY" === b.get(e)
                 }
                 isCrashed(e) {
-                    return "CRASHED" === U.get(e)
+                    return "CRASHED" === b.get(e)
                 }
             }
             eL.displayName = "OverlayBridgeStore";
@@ -1179,7 +1179,7 @@
                     let {
                         locked: t,
                         pid: n
-                    } = e, l = U.get(n);
+                    } = e, l = b.get(n);
                     if (t || "READY" === l || "CRASHED" === l) {
                         if (t ? K.delete(n) : K.add(n), B.clear(), null != eO && (clearTimeout(eO), eO = null, t)) return;
                         t ? ec(t) : eO = setTimeout(() => {
@@ -1202,7 +1202,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...n));
                     let a = new URLSearchParams;
-                    a.append("build_id", "81f484bb33b2e01e2b291ea7b96fb259c6c3b9b4"), a.append("rpc", String(t)), a.append("rpc_auth_token", k), l = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(a.toString())
+                    a.append("build_id", "6dbb3063306e865edb1d346632b4bf143f59ec06"), a.append("rpc", String(t)), a.append("rpc_auth_token", k), l = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(a.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1328,4 +1328,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77015.08643af77070fbd18a44.js.map
+//# sourceMappingURL=77015.fd1fce78a7a5e4d64c64.js.map
