@@ -8,7 +8,8 @@
       "Control Bucket",
       "Treatment 1: Show settings toggle, but collection is not allowed.",
       "Treatment 2: Show settings toggle, and collection is allowed sometime in August.",
-      "Treatment 3: Show settings toggle, and collection is allowed in late August."
+      "Treatment 3: Show settings toggle, and collection is allowed in late August.",
+      "Treatment 4: Show settings toggle, allow collection for guild setting, and show rollback admin coachmark"
     ],
     "hash": 3883768363,
     "buckets": [
@@ -16,7 +17,8 @@
       0,
       1,
       2,
-      3
+      3,
+      4
     ],
     "holdout": {
       "name": null,
