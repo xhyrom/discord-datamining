@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["48449"], {
+    ["89163"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -7366,6 +7366,34 @@
                     config: {
                         enabled: !0,
                         fullname: "bandwidth_estimation/loss-based-bwe-v2,trendline-window-size,robust-estimator/loss-based-bwe-v2,trendline-window-size,robust-estimator"
+                    }
+                }, {
+                    id: 14,
+                    label: "Sender + Worker: Trendline Window Duration 50ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-50,robust-estimator/trendline-window-duration-50,robust-estimator"
+                    }
+                }, {
+                    id: 15,
+                    label: "Sender + Worker: Trendline Window Duration 100ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-100,robust-estimator/trendline-window-duration-100,robust-estimator"
+                    }
+                }, {
+                    id: 16,
+                    label: "Sender + Worker: Trendline Window Duration 250ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-250,robust-estimator/trendline-window-duration-250,robust-estimator"
+                    }
+                }, {
+                    id: 17,
+                    label: "Sender + Worker: Trendline Window Duration 500ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-500,robust-estimator/trendline-window-duration-500,robust-estimator"
                     }
                 }]
             });
@@ -15136,7 +15164,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "252437"
+                                build_number: "252471"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -22075,4 +22103,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48449.1e5eb0f039a342abef5b.js.map
+//# sourceMappingURL=89163.0bf9f9278e5b3b113710.js.map
