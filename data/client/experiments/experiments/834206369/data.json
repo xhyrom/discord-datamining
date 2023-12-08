@@ -22,7 +22,13 @@
       "Treatment 14: Sender + Worker: Trendline Window Duration 50ms + Robust Estimator",
       "Treatment 15: Sender + Worker: Trendline Window Duration 100ms + Robust Estimator",
       "Treatment 16: Sender + Worker: Trendline Window Duration 250ms + Robust Estimator",
-      "Treatment 17: Sender + Worker: Trendline Window Duration 500ms + Robust Estimator"
+      "Treatment 17: Sender + Worker: Trendline Window Duration 500ms + Robust Estimator",
+      "Treatment 18: Sender + Worker: Trendline Window Duration 1000ms + Robust Estimator",
+      "Treatment 19: Sender + Worker: Trendline Window Duration 2500ms + Robust Estimator",
+      "Treatment 20: Sender + Worker: Trendline Window Duration 3750ms + Robust Estimator",
+      "Treatment 21: Sender + Worker: Trendline Window Duration 5000ms + Robust Estimator",
+      "Treatment 22: Sender + Worker: Trendline Window Duration 6250ms + Robust Estimator",
+      "Treatment 23: Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator"
     ],
     "hash": 834206369,
     "buckets": [
@@ -44,7 +50,13 @@
       14,
       15,
       16,
-      17
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
     ],
     "holdout": {},
     "aa_mode": false,
