@@ -1,0 +1,10 @@
+{
+  "id": "pytest-daemon-10x-local-test-iteration-speed",
+  "title": "pytest daemon: 10X Local Test Iteration Speed",
+  "link": "https://discord.com/blog/pytest-daemon-10x-local-test-iteration-speed",
+  "guid": "https://discord.com/blog/pytest-daemon-10x-local-test-iteration-speed",
+  "description": "At Discord, we utilize a Python monolith to power our API. But recently, it took a whopping 13 seconds to run a single test! Join engineer Ruby Feinstein as he tackles this situation and makes the process better for everyone on his team. ",
+  "pubDate": "Fri, 08 Dec 2023 00:00:00 GMT",
+  "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6555194328bacbf541b78da4_Engineering%20-%202%20(1).png",
+  "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6555194328bacbf541b78da4_Engineering%20-%202%20(1).png"
+}
