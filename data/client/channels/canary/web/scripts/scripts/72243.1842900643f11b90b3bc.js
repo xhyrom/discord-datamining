@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -24713,10 +24713,10 @@
                     return this.set("joinedAt", "string" == typeof e ? new Date(e) : e)
                 }
                 constructor(e) {
-                    var t, n, r, i;
+                    var t, n, r;
                     super();
-                    let s = new Set(Array.from(e.features || []));
-                    this.id = e.id, this.name = e.name || "", this.description = e.description || null, this.ownerId = e.ownerId || null, this.icon = e.icon || null, this.splash = e.splash || null, this.banner = e.banner || null, this.homeHeader = e.homeHeader || null, this.features = s, this.preferredLocale = e.preferredLocale || "en-US", this.roles = e.roles || {}, this.afkChannelId = e.afkChannelId || null, this.afkTimeout = e.afkTimeout, this.systemChannelId = e.systemChannelId || null, this.verificationLevel = e.verificationLevel || u.VerificationLevels.NONE, this.joinedAt = null != e.joinedAt ? new Date(e.joinedAt) : e.joinedAt, this.defaultMessageNotifications = e.defaultMessageNotifications || u.UserNotificationSettings.ALL_MESSAGES, this.mfaLevel = e.mfaLevel || u.MFALevels.NONE, this.application_id = e.application_id || null, this.explicitContentFilter = e.explicitContentFilter || u.GuildExplicitContentFilterTypes.DISABLED, this.vanityURLCode = e.vanityURLCode || void 0, this.premiumTier = e.premiumTier || u.BoostedGuildTiers.NONE, this.premiumSubscriberCount = e.premiumSubscriberCount || 0, this.premiumProgressBarEnabled = e.premiumProgressBarEnabled || !1, this.systemChannelFlags = e.systemChannelFlags, this.discoverySplash = e.discoverySplash || null, this.rulesChannelId = e.rulesChannelId || null, this.safetyAlertsChannelId = e.safetyAlertsChannelId || null, this.publicUpdatesChannelId = e.publicUpdatesChannelId || null, this.maxStageVideoChannelUsers = e.maxStageVideoChannelUsers || -1, this.maxVideoChannelUsers = e.maxVideoChannelUsers || -1, this.maxMembers = e.maxMembers || -1, this.nsfwLevel = null !== (t = e.nsfwLevel) && void 0 !== t ? t : u.GuildNSFWContentLevel.DEFAULT, this.applicationCommandCounts = null !== (n = e.applicationCommandCounts) && void 0 !== n ? n : {}, this.hubType = e.hubType, this.latestOnboardingQuestionId = null !== (r = e.latestOnboardingQuestionId) && void 0 !== r ? r : null, this.inventorySettings = null !== (i = e.inventorySettings) && void 0 !== i ? i : null
+                    let i = new Set(Array.from(e.features || []));
+                    this.id = e.id, this.name = e.name || "", this.description = e.description || null, this.ownerId = e.ownerId || null, this.icon = e.icon || null, this.splash = e.splash || null, this.banner = e.banner || null, this.homeHeader = e.homeHeader || null, this.features = i, this.preferredLocale = e.preferredLocale || "en-US", this.roles = e.roles || {}, this.afkChannelId = e.afkChannelId || null, this.afkTimeout = e.afkTimeout, this.systemChannelId = e.systemChannelId || null, this.verificationLevel = e.verificationLevel || u.VerificationLevels.NONE, this.joinedAt = null != e.joinedAt ? new Date(e.joinedAt) : e.joinedAt, this.defaultMessageNotifications = e.defaultMessageNotifications || u.UserNotificationSettings.ALL_MESSAGES, this.mfaLevel = e.mfaLevel || u.MFALevels.NONE, this.application_id = e.application_id || null, this.explicitContentFilter = e.explicitContentFilter || u.GuildExplicitContentFilterTypes.DISABLED, this.vanityURLCode = e.vanityURLCode || void 0, this.premiumTier = e.premiumTier || u.BoostedGuildTiers.NONE, this.premiumSubscriberCount = e.premiumSubscriberCount || 0, this.premiumProgressBarEnabled = e.premiumProgressBarEnabled || !1, this.systemChannelFlags = e.systemChannelFlags, this.discoverySplash = e.discoverySplash || null, this.rulesChannelId = e.rulesChannelId || null, this.safetyAlertsChannelId = e.safetyAlertsChannelId || null, this.publicUpdatesChannelId = e.publicUpdatesChannelId || null, this.maxStageVideoChannelUsers = e.maxStageVideoChannelUsers || -1, this.maxVideoChannelUsers = e.maxVideoChannelUsers || -1, this.maxMembers = e.maxMembers || -1, this.nsfwLevel = null !== (t = e.nsfwLevel) && void 0 !== t ? t : u.GuildNSFWContentLevel.DEFAULT, this.hubType = e.hubType, this.latestOnboardingQuestionId = null !== (n = e.latestOnboardingQuestionId) && void 0 !== n ? n : null, this.inventorySettings = null !== (r = e.inventorySettings) && void 0 !== r ? r : null
                 }
             }
         },
@@ -28228,19 +28228,6 @@
                     f = {
                         ...f,
                         [t]: s.updateJoinedAt(a)
-                    }
-                },
-                GUILD_APPLICATION_COMMAND_INDEX_UPDATE: function(e) {
-                    let {
-                        guildId: t,
-                        applicationCommandCounts: n
-                    } = e, r = f[t];
-                    if (null == r) return !1;
-                    f = {
-                        ...f,
-                        [r.id]: r.merge({
-                            applicationCommandCounts: n
-                        })
                     }
                 },
                 GUILD_SETTINGS_SUBMIT_SUCCESS: function() {
@@ -34763,8 +34750,8 @@
                 l = n("49111");
 
             function o(e, t) {
-                var n, o, u, c, d, E, _, f, p, h, T, S, I, m;
-                let g = {
+                var n, o, u, c, d, E, _, f, p, h, T, S, I;
+                let m = {
                     id: e.id,
                     name: null !== (n = e.properties.name) && void 0 !== n ? n : "",
                     description: e.properties.description,
@@ -34798,12 +34785,11 @@
                     maxVideoChannelUsers: null !== (T = e.properties.max_video_channel_users) && void 0 !== T ? T : -1,
                     maxMembers: null !== (S = e.properties.max_members) && void 0 !== S ? S : -1,
                     nsfwLevel: null !== (I = e.properties.nsfw_level) && void 0 !== I ? I : l.GuildNSFWContentLevel.DEFAULT,
-                    applicationCommandCounts: null !== (m = e.application_command_counts) && void 0 !== m ? m : {},
                     hubType: e.properties.hub_type,
                     latestOnboardingQuestionId: e.properties.latest_onboarding_question_id,
                     inventorySettings: (0, i.guildInventorySettingsFromServer)(e.properties.inventory_settings)
                 };
-                return null == t ? (0, r.dangerouslyCast)(g, s.default) : t.merge(g)
+                return null == t ? (0, r.dangerouslyCast)(m, s.default) : t.merge(m)
             }
 
             function u(e, t) {
@@ -41562,4 +41548,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.78ae586433a49e0a288b.js.map
+//# sourceMappingURL=72243.1842900643f11b90b3bc.js.map
