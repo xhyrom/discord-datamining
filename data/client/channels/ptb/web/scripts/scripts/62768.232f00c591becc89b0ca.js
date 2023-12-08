@@ -40,7 +40,7 @@
                     return I
                 },
                 goToApplicationStoreListing: function() {
-                    return g
+                    return E
                 }
             });
             var i = n("872717"),
@@ -124,7 +124,7 @@
                 (0, a.transitionTo)(n, i)
             }
 
-            function g(e, t) {
+            function E(e, t) {
                 let {
                     pathname: n,
                     ...i
@@ -624,7 +624,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return T
                 }
             });
             var i = n("37983"),
@@ -643,60 +643,60 @@
                 m = n("90592"),
                 _ = n("333955"),
                 I = n("599733"),
-                g = n("49111"),
+                E = n("49111"),
                 C = n("782340"),
-                E = e => {
+                T = e => {
                     var t;
                     let n, {
                             listing: l,
-                            guildId: E,
-                            groupListingId: T,
+                            guildId: T,
+                            groupListingId: g,
                             analyticsLocation: A,
-                            showBenefitsFirst: b,
+                            showBenefitsFirst: N,
                             onComplete: v,
-                            forcesTransitionToGuild: N
+                            forcesTransitionToGuild: b
                         } = e,
                         L = null == l ? void 0 : l.subscription_plans[0],
-                        x = null == l ? void 0 : l.application_id,
-                        P = null == L ? void 0 : L.id,
-                        y = (null == l ? void 0 : l.published) === !0,
-                        O = null == L ? void 0 : L.sku_id,
-                        F = (0, s.useStateFromStores)([h.default], () => null != P ? h.default.get(P) : null),
-                        k = (0, S.useApplication)(x),
-                        R = (0, S.useSubscriptionListingsForGroup)(T, {
+                        P = null == l ? void 0 : l.application_id,
+                        O = null == L ? void 0 : L.id,
+                        F = (null == l ? void 0 : l.published) === !0,
+                        x = null == L ? void 0 : L.sku_id,
+                        R = (0, s.useStateFromStores)([h.default], () => null != O ? h.default.get(O) : null),
+                        y = (0, S.useApplication)(P),
+                        k = (0, S.useSubscriptionListingsForGroup)(g, {
                             includeSoftDeleted: !0
                         }),
-                        G = R.map(e => e.subscription_plans[0].id),
+                        G = k.map(e => e.subscription_plans[0].id),
                         {
-                            analyticsLocations: M
+                            analyticsLocations: H
                         } = (0, d.default)(),
                         {
-                            activeSubscription: w,
-                            activeEntitlement: U
-                        } = (0, S.useActiveSubscriptionListingForApplication)(x, E),
-                        D = (0, S.useEligibleApplicationSubscriptionGuilds)(x, E),
-                        j = (0, c.default)(),
-                        H = null != l && (0, m.isApplicationUserSubscription)(l.sku_flags),
-                        B = null != U && U.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
-                        V = null == U || B,
-                        K = null == U || G.length > 1,
-                        W = null != E || D.length > 0,
-                        z = H && B,
-                        Z = null != F && null != k && V && K && (W || H) && !z;
-                    V ? W ? z && null != F && (n = C.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
-                        tierName: F.name
+                            activeSubscription: M,
+                            activeEntitlement: w
+                        } = (0, S.useActiveSubscriptionListingForApplication)(P, T),
+                        D = (0, S.useEligibleApplicationSubscriptionGuilds)(P, T),
+                        U = (0, c.default)(),
+                        j = null != l && (0, m.isApplicationUserSubscription)(l.sku_flags),
+                        B = null != w && w.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
+                        V = null == w || B,
+                        K = null == w || G.length > 1,
+                        W = null != T || D.length > 0,
+                        z = j && B,
+                        Z = null != R && null != y && V && K && (W || j) && !z;
+                    V ? W ? z && null != R && (n = C.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
+                        tierName: R.name
                     })) : n = C.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = C.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
-                        y && null != O && j && u.default.wait(() => {
-                            (0, o.fetchSubscriptionPlansForSKU)(O)
+                        F && null != x && U && u.default.wait(() => {
+                            (0, o.fetchSubscriptionPlansForSKU)(x)
                         })
-                    }, [y, O, j]);
+                    }, [F, x, U]);
                     let Q = r.useCallback(() => {
-                        a(null != l, "No subscription listing"), a(null != k, "No application"), a(null != L, "No subscription plan"), a(y, "Cannot purchase this unpublished plan");
+                        a(null != l, "No subscription listing"), a(null != y, "No application"), a(null != L, "No subscription plan"), a(F, "Cannot purchase this unpublished plan");
                         let e = () => {
                             (0, f.openApplicationSubscriptionPaymentModal)({
-                                activeSubscription: w,
-                                analyticsSubscriptionType: g.SubscriptionTypes.APPLICATION,
-                                analyticsLocations: M,
+                                activeSubscription: M,
+                                analyticsSubscriptionType: E.SubscriptionTypes.APPLICATION,
+                                analyticsLocations: H,
                                 analyticsLocation: A,
                                 renderHeader: (e, t, n) => (0, i.jsx)(_.PurchaseHeader, {
                                     step: n,
@@ -704,22 +704,22 @@
                                 }),
                                 initialPlanId: L.id,
                                 skuId: L.sku_id,
-                                guildId: E,
+                                guildId: T,
                                 eligibleApplicationSubscriptionGuilds: D,
                                 planGroup: G,
                                 listing: l,
-                                application: k,
-                                showBenefitsFirst: b,
+                                application: y,
+                                showBenefitsFirst: N,
                                 onComplete: v,
-                                forcesTransitionToGuild: N
+                                forcesTransitionToGuild: b
                             })
                         };
-                        !W && H ? (0, I.confirmNoSharedServerSubscribeWarningModal)({
-                            application: k,
+                        !W && j ? (0, I.confirmNoSharedServerSubscribeWarningModal)({
+                            application: y,
                             onConfirm: e,
                             onCancel: () => {}
                         }) : e()
-                    }, [y, l, L, G, k, E, W, H, M, A, w, b, D, v, N]);
+                    }, [F, l, L, G, y, T, W, j, H, A, M, N, D, v, b]);
                     return {
                         openModal: Q,
                         canOpenModal: Z,
@@ -823,44 +823,44 @@
                     children: S
                 } = e, {
                     selectedSkuId: m
-                } = (0, d.usePaymentContext)(), [_, I] = r.useState(n), [g, C] = r.useState(), [E, T] = r.useState(!1), A = (0, o.shouldShowCustomGiftExperience)(_), b = (0, s.useIsSeasonalGiftingActive)(), {
+                } = (0, d.usePaymentContext)(), [_, I] = r.useState(n), [E, C] = r.useState(), [T, g] = r.useState(!1), A = (0, o.shouldShowCustomGiftExperience)(_), N = (0, s.useIsSeasonalGiftingActive)(), {
                     enabled: v
                 } = s.default.useExperiment({
                     location: "PaymentContextProvider"
                 }, {
-                    autoTrackExposure: A && b
-                }), [N, L] = r.useState(A ? v && b ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [x, P] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(_)) ? c.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [y, O] = r.useState(void 0), [F, k] = r.useState(void 0), R = (0, o.useGetGiftCode)(m, t), [G, M] = r.useState(!1), [w, U] = r.useState(!1), [D, j] = r.useState(), H = r.useCallback(e => {
+                    autoTrackExposure: A && N
+                }), [b, L] = r.useState(A ? v && N ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [P, O] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(_)) ? c.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [F, x] = r.useState(void 0), [R, y] = r.useState(void 0), k = (0, o.useGetGiftCode)(m, t), [G, H] = r.useState(!1), [M, w] = r.useState(!1), [D, U] = r.useState(), j = r.useCallback(e => {
                     let {
                         onSubscriptionConfirmation: t
                     } = e;
-                    return U(!0), (0, l.sendGiftMessage)(_, R).then(() => {
-                        U(!1), null == t || t(), M(!0)
+                    return w(!0), (0, l.sendGiftMessage)(_, k).then(() => {
+                        w(!1), null == t || t(), H(!0)
                     }).catch(e => {
-                        U(!1), j(e), M(!0)
+                        w(!1), U(e), H(!0)
                     })
-                }, [_, R, U, M, j]);
+                }, [_, k, w, H, U]);
                 return (0, i.jsx)(h.Provider, {
                     value: {
                         isGift: t,
-                        giftCode: R,
+                        giftCode: k,
                         giftMessage: u,
                         giftRecipient: _,
                         setGiftRecipient: I,
-                        giftRecipientError: g,
+                        giftRecipientError: E,
                         setGiftRecipientError: C,
-                        validatingGiftRecipient: E,
-                        setValidatingGiftRecipient: T,
-                        soundEffect: y,
-                        setSoundEffect: O,
-                        emojiConfetti: F,
-                        setEmojiConfetti: k,
-                        customGiftMessage: x,
-                        setCustomGiftMessage: P,
-                        selectedGiftStyle: N,
+                        validatingGiftRecipient: T,
+                        setValidatingGiftRecipient: g,
+                        soundEffect: F,
+                        setSoundEffect: x,
+                        emojiConfetti: R,
+                        setEmojiConfetti: y,
+                        customGiftMessage: P,
+                        setCustomGiftMessage: O,
+                        selectedGiftStyle: b,
                         setSelectedGiftStyle: L,
-                        sendGiftMessage: H,
+                        sendGiftMessage: j,
                         hasSentMessage: G,
-                        isSendingMessage: w,
+                        isSendingMessage: M,
                         giftMessageError: D
                     },
                     children: S
@@ -907,10 +907,10 @@
                     reviewWarningMessage: m,
                     listing: _,
                     application: I,
-                    showBenefitsFirst: g,
+                    showBenefitsFirst: E,
                     eligibleApplicationSubscriptionGuilds: C,
-                    onComplete: E,
-                    forcesTransitionToGuild: T
+                    onComplete: T,
+                    forcesTransitionToGuild: g
                 } = e;
                 (0, a.openModalLazy)(async () => {
                     let {
@@ -921,7 +921,7 @@
                         guildId: p,
                         application: I,
                         listing: _,
-                        showBenefitsFirst: g,
+                        showBenefitsFirst: E,
                         eligibleApplicationSubscriptionGuilds: C
                     });
                     return n => (0, i.jsx)(e, {
@@ -943,8 +943,8 @@
                                 reviewWarningMessage: m,
                                 applicationId: I.id,
                                 guildId: null != p ? p : void 0,
-                                onComplete: E,
-                                forcesTransitionToGuild: T
+                                onComplete: T,
+                                forcesTransitionToGuild: g
                             })
                         })
                     })
@@ -966,7 +966,7 @@
                 l(null != i, "Failed to find subscription store listing"), await (0, o.fetchAllSubscriptionListingsDataForApplication)(e, null == i ? void 0 : i.id);
                 let r = d.default.getSubscriptionGroupListingForApplication(e);
                 return l(null != r, "Failed to find subscription group listing"), r
-            }, g = async (e, t) => {
+            }, E = async (e, t) => {
                 let n = await (0, s.fetchUserEntitlementsForApplication)(e),
                     i = n.find(e => e.sku_id === t);
                 l(null == i, "User already has an active subscription to this SKU")
@@ -982,7 +982,7 @@
                 } = e, u = await _(t), o = await I(t), d = (0, c.getPayableSubscriptionListing)(o);
                 l(null != d, "Failed to find subscription listing");
                 let f = (0, c.isApplicationUserSubscription)(d.sku_flags);
-                l(f, "Guild application subscriptions unsupported!"), l(d.published, "Subscription listing not published"), await g(t, n);
+                l(f, "Guild application subscriptions unsupported!"), l(d.published, "Subscription listing not published"), await E(t, n);
                 let p = {
                     initialPlanId: null != i ? i : null == d ? void 0 : d.subscription_plans[0].id,
                     activeSubscription: null,
@@ -1033,7 +1033,7 @@
                     primarySubmitting: m,
                     onPrimary: _,
                     secondaryText: I,
-                    onSecondary: g
+                    onSecondary: E
                 } = e;
                 return (0, l.jsxs)(a.ModalFooter, {
                     justify: s.default.Justify.BETWEEN,
@@ -1067,7 +1067,7 @@
                     })(), null == I ? null : (0, l.jsx)(a.Button, {
                         color: a.Button.Colors.PRIMARY,
                         look: a.Button.Looks.LINK,
-                        onClick: g,
+                        onClick: E,
                         children: I
                     }), (0, l.jsx)(o.default, {}), null == t ? null : (0, l.jsx)(a.Button, {
                         className: c.back,
@@ -1569,6 +1569,132 @@
                 }
             }
         },
+        140596: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                FetchState: function() {
+                    return i
+                },
+                default: function() {
+                    return _
+                }
+            }), n("222007"), n("424973");
+            var i, r, l = n("446674"),
+                a = n("913144"),
+                s = n("653047"),
+                u = n("946028");
+            (r = i || (i = {}))[r.NOT_FETCHED = 0] = "NOT_FETCHED", r[r.FETCHING = 1] = "FETCHING", r[r.FETCHED = 2] = "FETCHED", r[r.FETCH_FAILED = 3] = "FETCH_FAILED";
+            let o = new Map,
+                d = new Map,
+                c = [],
+                f = 0,
+                p = [];
+            class h extends l.default.Store {
+                getIntegrations(e) {
+                    var t;
+                    return null !== (t = o.get(e)) && void 0 !== t ? t : p
+                }
+                getIntegration(e, t) {
+                    var n;
+                    return null === (n = o.get(e)) || void 0 === n ? void 0 : n.find(e => e.application.id === t)
+                }
+                getAllIntegrations() {
+                    return o
+                }
+                getIntegrationsFetchState(e) {
+                    var t;
+                    return null !== (t = d.get(e)) && void 0 !== t ? t : 0
+                }
+                getApplicationsShelfFetchState() {
+                    return f
+                }
+                getApplicationsShelf() {
+                    return c
+                }
+            }
+
+            function S(e) {
+                return e.sort((e, t) => e.application.name.localeCompare(t.application.name))
+            }
+            h.displayName = "PrivateChannelIntegrationStore";
+            let m = new h(a.default, {
+                LOGOUT() {
+                    o.clear()
+                },
+                CONNECTION_OPEN() {
+                    o.clear(), d.clear()
+                },
+                CHANNEL_SELECT(e) {
+                    let {
+                        channelId: t
+                    } = e;
+                    if (null == t || 3 !== d.get(t)) return !1;
+                    d.set(t, 0)
+                },
+                APPLICATIONS_SHELF_FETCH_START() {
+                    f = 1
+                },
+                APPLICATIONS_SHELF_FETCH_SUCCESS(e) {
+                    let {
+                        applications: t
+                    } = e;
+                    c = t.map(s.default.createFromServer).sort((e, t) => e.name.localeCompare(t.name)), f = 2
+                },
+                APPLICATIONS_SHELF_FETCH_FAIL() {
+                    f = 3
+                },
+                FETCH_PRIVATE_CHANNEL_INTEGRATIONS_START(e) {
+                    let {
+                        channelId: t
+                    } = e;
+                    o.set(t, null), d.set(t, 1)
+                },
+                FETCH_PRIVATE_CHANNEL_INTEGRATIONS_SUCCESS(e) {
+                    let {
+                        channelId: t,
+                        integrations: n
+                    } = e;
+                    o.set(t, S(n.map(u.createPrivateChannelIntegration))), d.set(t, 2)
+                },
+                FETCH_PRIVATE_CHANNEL_INTEGRATIONS_FAIL(e) {
+                    let {
+                        channelId: t
+                    } = e;
+                    d.set(t, 3)
+                },
+                PRIVATE_CHANNEL_INTEGRATION_CREATE(e) {
+                    let {
+                        integration: t
+                    } = e, n = o.get(t.channel_id);
+                    if (null == n) return !1;
+                    o.set(t.channel_id, S([...n, (0, u.createPrivateChannelIntegration)(t)]))
+                },
+                PRIVATE_CHANNEL_INTEGRATION_UPDATE(e) {
+                    let {
+                        integration: t
+                    } = e, n = o.get(t.channel_id);
+                    if (null == n) return !1;
+                    let i = (0, u.createPrivateChannelIntegration)(t),
+                        r = n.findIndex(e => e.application.id === i.application.id),
+                        l = [...n]; - 1 === r ? l.push(i) : l[r] = i, o.set(i.channel_id, S(l))
+                },
+                PRIVATE_CHANNEL_INTEGRATION_DELETE(e) {
+                    let {
+                        channelId: t,
+                        applicationId: n
+                    } = e, i = o.get(t);
+                    if (null == i) return !1;
+                    o.set(t, i.filter(e => e.application.id !== n))
+                },
+                CHANNEL_DELETE(e) {
+                    let {
+                        channel: t
+                    } = e;
+                    return o.delete(t.id)
+                }
+            });
+            var _ = m
+        },
         928460: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1631,7 +1757,7 @@
             let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return g
+                    return E
                 }
             }), n("222007"), n("70102");
             var r = n("446674"),
@@ -1710,7 +1836,7 @@
                 }
             }
             I.displayName = "StoreListingStore";
-            var g = new I(l.default, {
+            var E = new I(l.default, {
                 STORE_LISTINGS_FETCH_SUCCESS: S,
                 APPLICATION_STORE_DIRECTORY_FETCH_SUCCESS: S,
                 STORE_LISTING_FETCH_SUCCESS: function(e) {
@@ -1951,4 +2077,4 @@
         }
     }
 ]);
-//# sourceMappingURL=62768.146d3dfb2867d9f763ac.js.map
+//# sourceMappingURL=62768.232f00c591becc89b0ca.js.map
