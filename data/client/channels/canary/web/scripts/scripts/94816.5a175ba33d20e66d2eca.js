@@ -175,7 +175,7 @@
                     return R
                 },
                 getBuiltInCommands: function() {
-                    return U
+                    return B
                 }
             }), n("222007"), n("70102");
             var i = n("627445"),
@@ -811,7 +811,11 @@
                         get displayDescription() {
                             return v.default.Messages.COMMAND_MSG_MESSAGE_DESCRIPTION
                         },
-                        required: !0
+                        required: !0,
+                        get maxLength() {
+                            var L;
+                            return (null === (L = N.default.getCurrentUser()) || void 0 === L ? void 0 : L.premiumType) ? O.MAX_MESSAGE_LENGTH_PREMIUM : O.MAX_MESSAGE_LENGTH
+                        }
                     }],
                     execute: (e, t) => {
                         var n;
@@ -828,9 +832,9 @@
                         })
                     }
                 }],
-                L = P.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.name)),
-                U = (e, t, n) => {
-                    let i = t ? P : L;
+                U = P.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.name)),
+                B = (e, t, n) => {
+                    let i = t ? P : U;
                     return i = i.filter(t => t.type === e && (!n || t.inputType === g.ApplicationCommandInputType.BUILT_IN_TEXT || t.inputType === g.ApplicationCommandInputType.BUILT_IN_INTEGRATION))
                 }
         },
@@ -4216,4 +4220,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94816.566c23db02070c15d0ab.js.map
+//# sourceMappingURL=94816.5a175ba33d20e66d2eca.js.map
