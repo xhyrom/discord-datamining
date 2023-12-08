@@ -10704,11 +10704,13 @@
                 checkboxLabel: "checkboxLabel_bdff37",
                 filterIcon: "filterIcon__59a93",
                 filterIconButton: "filterIconButton_ca66e2",
+                quarantinedLabelIcon: "quarantinedLabelIcon__3938b",
                 tableHeaderCell: "tableHeaderCell__9a3d7",
                 tableHeaderCellContainer: "tableHeaderCellContainer__6a919",
                 tableHeaderCellWithFilter: "tableHeaderCellWithFilter_db48ef",
                 tableHeaderRow: "tableHeaderRow__89a36",
                 timeoutLabelIcon: "timeoutLabelIcon_a2ca7c",
+                unusualAccountActivityLabelIcon: "unusualAccountActivityLabelIcon_b1ddbf",
                 unusualDMLabelIcon: "unusualDMLabelIcon_c136d4"
             }
         },

@@ -13827,13 +13827,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 useIsBulkBanningExperimentEnabled: function() {
-                    return s
-                },
-                isInMembersSearchV2Experiment: function() {
                     return r
                 },
-                useMembersSearchV2Experiment: function() {
+                isInMembersSearchV2Experiment: function() {
                     return u
+                },
+                useMembersSearchV2Experiment: function() {
+                    return o
+                },
+                isInMembersTableSafetySignalsExperiment: function() {
+                    return d
                 }
             });
             var i = n("862205");
@@ -13872,23 +13875,23 @@
                             enabled: !0
                         }
                     }]
-                });
-            (0, i.createExperiment)({
-                kind: "guild",
-                id: "2023-12_guild_members_table_safety_signal_filters",
-                label: "Guild Members Table Safety Signals",
-                defaultConfig: {
-                    enabled: !0
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Safety Signals Enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-            let s = function(e) {
+                }),
+                s = (0, i.createExperiment)({
+                    kind: "guild",
+                    id: "2023-12_guild_members_table_safety_signal_filters",
+                    label: "Guild Members Table Safety Signals",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Safety Signals Enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
@@ -13904,7 +13907,7 @@
                     });
                     return l
                 },
-                r = function(e) {
+                u = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
@@ -13920,7 +13923,7 @@
                     });
                     return a
                 },
-                u = function(e) {
+                o = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
@@ -13928,6 +13931,22 @@
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
                         enabled: a
                     } = l.useExperiment({
+                        guildId: e,
+                        location: i
+                    }, {
+                        autoTrackExposure: t,
+                        disable: n
+                    });
+                    return a
+                },
+                d = function(e) {
+                    let {
+                        autoTrackExposure: t = !1,
+                        disable: n = !1,
+                        location: i = "f03bed_9"
+                    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
+                        enabled: a
+                    } = s.getCurrentConfig({
                         guildId: e,
                         location: i
                     }, {
@@ -33889,4 +33908,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.841aa8d87c9a4368922a.js.map
+//# sourceMappingURL=67615.922a44ffa9c61ed78b7c.js.map

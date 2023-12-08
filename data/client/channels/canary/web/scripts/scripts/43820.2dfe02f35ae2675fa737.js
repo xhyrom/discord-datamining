@@ -61,8 +61,8 @@
                 o = i("26989"),
                 d = i("697218"),
                 h = i("490931"),
-                m = i("159132");
-            let c = Date.now();
+                c = i("159132");
+            let m = Date.now();
 
             function _(e) {
                 let t = [e.isCurrentGuildMemberByTimestamp ? "CURRENT_GUILD_MEMBER" : "NEW_GUILD_MEMBER"];
@@ -89,16 +89,16 @@
                         n = i.getTime(),
                         {
                             hasUnusualDmActivity: r,
-                            hasSpammerUserFlag: a,
+                            hasUnusualAccountActivity: a,
                             sourceInviteCode: u,
                             joinSourceType: s,
                             inviterId: l,
                             integrationType: o
                         } = this._computeMemberSupplementals(e.userId, e.unusualDMActivityUntil),
                         h = d.default.getUser(e.userId),
-                        m = {
+                        c = {
                             hasUnusualDmActivity: r,
-                            hasSpammerUserFlag: a,
+                            hasUnusualAccountActivity: a,
                             sourceInviteCode: u,
                             joinSourceType: s,
                             inviterId: l,
@@ -110,11 +110,11 @@
                             joinedAtTimestamp: n,
                             ...t
                         };
-                    return m
+                    return c
                 }
                 _computeMemberSupplementals(e, t) {
                     var i;
-                    let n = (0, m.getMemberSupplementalByGuildId)(this.guildId),
+                    let n = (0, c.getMemberSupplementalByGuildId)(this.guildId),
                         {
                             sourceInviteCode: r,
                             joinSourceType: a,
@@ -129,9 +129,9 @@
                         hasUnusualDmActivity: function(e) {
                             if (null == e) return !1;
                             let t = new Date(e).getTime();
-                            return t >= c - h.UNUSUAL_DM_COMPARISON_DELTA
+                            return t >= m - h.UNUSUAL_DM_COMPARISON_DELTA
                         }(t),
-                        hasSpammerUserFlag: (0, l.isSpammer)(e)
+                        hasUnusualAccountActivity: (0, l.isSpammer)(e)
                     }
                 }
                 createMember(e) {
@@ -150,12 +150,12 @@
                         {
                             sourceInviteCode: s,
                             hasUnusualDmActivity: l,
-                            hasSpammerUserFlag: o,
+                            hasUnusualAccountActivity: o,
                             joinSourceType: d,
                             inviterId: h,
-                            integrationType: m
+                            integrationType: c
                         } = this._computeMemberSupplementals(n.userId, null !== (i = r.unusualDMActivityUntil) && void 0 !== i ? i : n.unusualDMActivityUntil);
-                    for (let e in n.sourceInviteCode !== s && (r.sourceInviteCode = s), n.hasUnusualDmActivity !== l && (r.hasUnusualDmActivity = l), n.hasSpammerUserFlag !== o && (r.hasSpammerUserFlag = o), n.joinSourceType !== d && (r.joinSourceType = d), n.inviterId !== h && (r.inviterId = h), n.integrationType !== m && (r.integrationType = m), r) {
+                    for (let e in n.sourceInviteCode !== s && (r.sourceInviteCode = s), n.hasUnusualDmActivity !== l && (r.hasUnusualDmActivity = l), n.hasUnusualAccountActivity !== o && (r.hasUnusualAccountActivity = o), n.joinSourceType !== d && (r.joinSourceType = d), n.inviterId !== h && (r.inviterId = h), n.integrationType !== c && (r.integrationType = c), r) {
                         let t = r[e],
                             i = n[e];
                         !u(t, i) && (n[e] = t, a = !0)
@@ -434,7 +434,7 @@
                     return h
                 },
                 GuildMemberSafetyPagination: function() {
-                    return m
+                    return c
                 }
             }), i("808653"), i("424973"), i("222007");
             var n, r, a = i("525065"),
@@ -454,7 +454,7 @@
             function h(e) {
                 return Math.max(5 * e.pageSize, 250)
             }
-            class m {
+            class c {
                 reset() {
                     this._paginationState = d(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
                 }
@@ -479,8 +479,8 @@
                     let o = null != (n = e).totalResultsCount ? n.totalResultsCount : n.currentPage * n.pageSize,
                         d = null !== (i = this._sortedMemberIds[o - 1]) && void 0 !== i ? i : s;
                     if (null == this._paginationState.continuationToken) return o < l ? this._paginationState.continuationToken : d;
-                    let m = this._sortedMemberIds.findIndex(e => e === this._paginationState.continuationToken);
-                    return -1 === m ? d : o > r ? s : m - o >= 0 ? this._paginationState.continuationToken : Math.ceil(o / l) > Math.ceil(m / l) ? d : this._paginationState.continuationToken
+                    let c = this._sortedMemberIds.findIndex(e => e === this._paginationState.continuationToken);
+                    return -1 === c ? d : o > r ? s : c - o >= 0 ? this._paginationState.continuationToken : Math.ceil(o / l) > Math.ceil(c / l) ? d : this._paginationState.continuationToken
                 }
                 getPaginationState() {
                     return this._paginationState
@@ -560,7 +560,7 @@
             "use strict";
             i.r(t), i.d(t, {
                 getDefaultSearchState: function() {
-                    return o
+                    return d
                 },
                 GuildMemberSafetySearch: function() {
                     return m
@@ -570,20 +570,23 @@
                 r = i.n(n),
                 a = i("969176"),
                 u = i.n(a),
-                s = i("509"),
-                l = i("770115");
+                s = i("681937"),
+                l = i("509"),
+                o = i("770115");
 
-            function o() {
+            function d() {
                 return {
                     query: "",
                     requireUnusualDmActivity: !1,
                     requireCommunicationDisabled: !1,
+                    requireUnusualAccountActivity: !1,
+                    requireUsernameQuarantined: !1,
                     selectedRoleIds: new Set
                 }
             }
-            let d = Object.freeze(o());
+            let h = Object.freeze(d());
 
-            function h(e, t) {
+            function c(e, t) {
                 return null != e && (!!(e.toLowerCase().includes(t.toLowerCase()) || r(e.toLowerCase(), t.toLowerCase())) || !1)
             }
             class m {
@@ -591,16 +594,16 @@
                     return this._searchState.query.trim().length > 0
                 }
                 reset() {
-                    this._searchState = o(), this.hasDefaultQuery = !0
+                    this._searchState = d(), this.hasDefaultQuery = !0
                 }
                 updateSearchState(e) {
                     return this._searchState = {
                         ...this._searchState,
                         ...e
-                    }, this.hasDefaultQuery = u(this._searchState, d), !0
+                    }, this.hasDefaultQuery = u(this._searchState, h), !0
                 }
                 resetSearchState() {
-                    return !this.hasDefaultQuery && (this._searchState = o(), this.hasDefaultQuery = !0, !0)
+                    return !this.hasDefaultQuery && (this._searchState = d(), this.hasDefaultQuery = !0, !0)
                 }
                 getSearchState() {
                     return this._searchState
@@ -610,35 +613,37 @@
                         query: t,
                         requireUnusualDmActivity: i,
                         requireCommunicationDisabled: n,
-                        selectedRoleIds: r
+                        requireUnusualAccountActivity: r,
+                        requireUsernameQuarantined: a,
+                        selectedRoleIds: u
                     } = this._searchState;
                     if (t.length > 0 && ! function(e, t) {
                             if ("" === t.trim()) return !1;
-                            let [i, n] = (0, l.splitQuery)(t);
+                            let [i, n] = (0, o.splitQuery)(t);
                             for (let t of n)
                                 if (e.userId === t) return !0;
                             for (let t of i)
-                                if (h(e.nick, t)) return !0;
+                                if (c(e.nick, t)) return !0;
                             if (null == e.user) return !1;
                             let {
                                 globalName: r,
                                 username: a
                             } = e.user;
                             for (let e of i)
-                                if (h(a, e)) return !0;
+                                if (c(a, e)) return !0;
                             for (let e of i)
-                                if (h(r, e)) return !0;
+                                if (c(r, e)) return !0;
                             return !1
                         }(e, t)) return !1;
-                    if (r.size > 0) {
-                        var a, u;
-                        if (a = e, !(0 !== (u = r).size && Array.from(u).every(e => a.roles.includes(e)))) return !1
+                    if (u.size > 0) {
+                        var d, h;
+                        if (d = e, !(0 !== (h = u).size && Array.from(h).every(e => d.roles.includes(e)))) return !1
                     }
-                    if (i || n) return !!(i && e.hasUnusualDmActivity || n && (0, s.isMemberCommunicationDisabled)(e)) || !1;
+                    if (i || n || r || a) return !!(i && e.hasUnusualDmActivity || n && (0, l.isMemberCommunicationDisabled)(e) || r && e.hasUnusualAccountActivity || a && (0, s.hasAutomodQuarantinedProfile)(e)) || !1;
                     return !0
                 }
                 constructor(e) {
-                    this.guildId = e, this._searchState = o(), this.hasDefaultQuery = !0
+                    this.guildId = e, this._searchState = d(), this.hasDefaultQuery = !0
                 }
             }
         },
@@ -697,8 +702,8 @@
                 o = i("449008"),
                 d = i("637240"),
                 h = i("159132"),
-                m = i("835257");
-            let c = !1,
+                c = i("835257");
+            let m = !1,
                 _ = {};
 
             function M(e) {
@@ -744,7 +749,7 @@
                     t = r.updateServerMembers(n) || t
                 }), t
             }
-            class g extends n.default.Store {
+            class I extends n.default.Store {
                 initialize() {
                     this.waitFor(a.default, u.default, l.default)
                 }
@@ -816,10 +821,10 @@
                     return t.lastCursorTimestamp
                 }
             }
-            g.displayName = "MemberSafetyStore";
-            let I = new g(r.default, {
+            I.displayName = "MemberSafetyStore";
+            let g = new I(r.default, {
                 CONNECTION_OPEN: function(e) {
-                    return c ? c = !1 : ! function() {
+                    return m ? m = !1 : ! function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                         for (let t in _) f(t, e)
                     }(!0), E(e)
@@ -833,7 +838,7 @@
                         members: i
                     } = e;
                     if (null == t || null == s.default.getGuild(t)) return !1;
-                    c = !0;
+                    m = !0;
                     let n = M(t),
                         r = [];
                     for (let e of i) {
@@ -846,7 +851,7 @@
                     let {
                         guildMembers: t
                     } = e, i = !1;
-                    return c = !0, Object.entries(t).forEach(e => {
+                    return m = !0, Object.entries(t).forEach(e => {
                         let [t, n] = e, r = M(t);
                         i = r.updateClientMembers(Object.values(n)) || i
                     }), i
@@ -1024,7 +1029,7 @@
                         memberIds: [],
                         memberSupplementals: []
                     }), s = (0, h.syncMemberSupplemental)(t, u);
-                    (0, m.registerFetchedSupplementals)(t, a);
+                    (0, c.registerFetchedSupplementals)(t, a);
                     let l = r.updateSearchedMembersByMemberIds(a),
                         [o] = r.updatePaginationState({
                             totalResultsCount: n
@@ -1032,13 +1037,13 @@
                     return s || l || o
                 }
             });
-            var T = I
+            var T = g
         },
         645266: function(e, t, i) {
             "use strict";
             i.r(t), i.d(t, {
                 initializeMemberSafetyStore: function() {
-                    return c
+                    return m
                 },
                 refreshMemberSafetyTimestamp: function() {
                     return _
@@ -1068,8 +1073,8 @@
                 o = i("95429"),
                 d = i("447038"),
                 h = i("49111"),
-                m = i("724210");
-            async function c(e) {
+                c = i("724210");
+            async function m(e) {
                 let t = (0, s.isInMembersSearchV2Experiment)(e, {
                     autoTrackExposure: !0,
                     location: n.default.MEMBER_SAFETY_PAGE
@@ -1105,7 +1110,7 @@
             function b(e) {
                 let t = (0, l.canAccessMemberSafetyPage)(e),
                     i = u.default.getGuild(e);
-                return !!t && null != i && (i.hasFeature(h.GuildFeatures.COMMUNITY) || i.hasFeature(h.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? ((0, a.transitionTo)(h.Routes.CHANNEL(e, m.StaticChannelRoute.MEMBER_SAFETY)), !0) : (r.default.open(i.id, h.GuildSettingsSections.MEMBERS), !0))
+                return !!t && null != i && (i.hasFeature(h.GuildFeatures.COMMUNITY) || i.hasFeature(h.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? ((0, a.transitionTo)(h.Routes.CHANNEL(e, c.StaticChannelRoute.MEMBER_SAFETY)), !0) : (r.default.open(i.id, h.GuildSettingsSections.MEMBERS), !0))
             }
         },
         95429: function(e, t, i) {
@@ -1124,10 +1129,10 @@
                     return h
                 },
                 updateSearchStateV1: function() {
-                    return m
+                    return c
                 },
                 getMemberSupplementalV1: function() {
-                    return c
+                    return m
                 }
             });
             var n = i("913144"),
@@ -1182,14 +1187,14 @@
                     continuationToken: null != s ? s : void 0
                 })
             }
-            async function m(e, t) {
+            async function c(e, t) {
                 await n.default.dispatch({
                     type: "MEMBER_SAFETY_SEARCH_STATE_UPDATE",
                     guildId: e,
                     searchState: t
                 })
             }
-            async function c(e, t) {
+            async function m(e, t) {
                 let i = await (0, s.fetchMemberSupplemental)(e, t);
                 return 0 === i.length ? [] : (await n.default.dispatch({
                     type: "FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS",
@@ -1217,7 +1222,7 @@
                     return h
                 },
                 getMemberSupplementalV2: function() {
-                    return m
+                    return c
                 }
             });
             var n = i("811022"),
@@ -1281,7 +1286,7 @@
                     searchState: t
                 })
             }
-            async function m(e, t) {
+            async function c(e, t) {
                 let i = await (0, a.fetchMemberSupplemental)(e, t);
                 return 0 === i.length ? [] : (await r.default.dispatch({
                     type: "FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS",
@@ -1313,11 +1318,11 @@
                 return t.forEach(e => {
                     var t, r, a, u, s, l, o, d;
                     let h = i[e.userId],
-                        m = null !== (r = null !== (t = e.joinSourceType) && void 0 !== t ? t : null == h ? void 0 : h.joinSourceType) && void 0 !== r ? r : null;
-                    (null == m || m === n.JoinSourceType.UNSPECIFIED) && null != e.sourceInviteCode && (m = n.JoinSourceType.INVITE), i[e.userId] = {
+                        c = null !== (r = null !== (t = e.joinSourceType) && void 0 !== t ? t : null == h ? void 0 : h.joinSourceType) && void 0 !== r ? r : null;
+                    (null == c || c === n.JoinSourceType.UNSPECIFIED) && null != e.sourceInviteCode && (c = n.JoinSourceType.INVITE), i[e.userId] = {
                         userId: e.userId,
                         sourceInviteCode: null !== (u = null !== (a = e.sourceInviteCode) && void 0 !== a ? a : null == h ? void 0 : h.sourceInviteCode) && void 0 !== u ? u : null,
-                        joinSourceType: m,
+                        joinSourceType: c,
                         inviterId: null !== (l = null !== (s = e.inviterId) && void 0 !== s ? s : null == h ? void 0 : h.inviterId) && void 0 !== l ? l : null,
                         integrationType: null !== (d = null !== (o = e.integrationType) && void 0 !== o ? o : null == h ? void 0 : h.integrationType) && void 0 !== d ? d : null
                     }
@@ -1345,16 +1350,16 @@
             (n = u || (u = {}))[n.FAILED = 0] = "FAILED", n[n.UNFETCHED = 1] = "UNFETCHED", n[n.PENDING = 2] = "PENDING", n[n.SUCCEEDED = 3] = "SUCCEEDED", (r = s || (s = {}))[r.UNSPECIFIED = 0] = "UNSPECIFIED", r[r.BOT = 1] = "BOT", r[r.INTEGRATION = 2] = "INTEGRATION", r[r.DISCOVERY = 3] = "DISCOVERY", r[r.HUB = 4] = "HUB", r[r.INVITE = 5] = "INVITE", r[r.VANITY_URL = 6] = "VANITY_URL", (a = l || (l = {})).DISCORD = "discord", a.TWITCH = "twitch", a.YOUTUBE = "youtube", a.GUILD_SUBSCRIPTION = "guild_subscription";
             let h = {};
 
-            function m(e, t) {
+            function c(e, t) {
                 return e + t
             }
 
-            function c(e, t, i) {
+            function m(e, t, i) {
                 h[e + t] = i
             }
 
             function _(e, t) {
-                t.forEach(t => c(e, t, 3))
+                t.forEach(t => m(e, t, 3))
             }
 
             function M(e) {
@@ -1372,7 +1377,7 @@
                     return null == h[i] && (h[i] = 1), h[i]
                 }(e, t));
                 if (0 === i.length) return [];
-                i.forEach(t => c(e, t, 2));
+                i.forEach(t => m(e, t, 2));
                 try {
                     let t = await o.default.post({
                         url: d.Endpoints.MEMBER_SAFETY_SUPPLEMENTAL(e),
@@ -1386,10 +1391,10 @@
                         let {
                             userId: i
                         } = t;
-                        return c(e, i, 3)
+                        return m(e, i, 3)
                     }), n
                 } catch (t) {
-                    i.forEach(t => c(e, t, 0))
+                    i.forEach(t => m(e, t, 0))
                 }
                 return []
             }
@@ -1409,4 +1414,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43820.04c69168198289b34800.js.map
+//# sourceMappingURL=43820.2dfe02f35ae2675fa737.js.map

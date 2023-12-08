@@ -93387,10 +93387,17 @@ html .invoiceCancelRow_a8669b {
     color: var(--text-muted)
 }
 
-.timeoutLabelIcon_a2ca7c {
+.timeoutLabelIcon_a2ca7c,
+.unusualAccountActivityLabelIcon_b1ddbf {
     width: 16px;
     height: 16px;
     color: var(--text-danger)
+}
+
+.quarantinedLabelIcon__3938b {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted)
 }
 
 .newMembersNotice__282a0 {
@@ -124405,4 +124412,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.25bbc55e11cfa1936c76.css.map*/
+/*# sourceMappingURL=app.8ce9c9076370dbea3519.css.map*/

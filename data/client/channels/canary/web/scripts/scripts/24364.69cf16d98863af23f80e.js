@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -26138,7 +26138,7 @@
             }
 
             function W() {
-                D = {}, R = {}, v = {}, L = {}, N = {}, y = {}, b = new Set
+                D = {}, R = {}, v = {}, L = {}, N = {}, U = {}, y = {}, b = new Set
             }
 
             function Z(e) {
@@ -26327,7 +26327,7 @@
                 },
                 CONNECTION_OPEN: function(e) {
                     let t = v;
-                    for (let n of (D = {}, R = {}, v = {}, y = {}, L = {}, b = new Set, O = e.initialPrivateChannels, e.initialPrivateChannels.forEach(j), e.guilds)) "partial" === n.dataMode && i.forEach(t[n.id], K), z(n);
+                    for (let n of (D = {}, R = {}, v = {}, y = {}, L = {}, U = {}, b = new Set, O = e.initialPrivateChannels, e.initialPrivateChannels.forEach(j), e.guilds)) "partial" === n.dataMode && i.forEach(t[n.id], K), z(n);
                     et()
                 },
                 GUILD_CREATE: function(e) {
@@ -41553,4 +41553,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.3afdf189c67dd0fbf220.js.map
+//# sourceMappingURL=24364.69cf16d98863af23f80e.js.map
