@@ -10,24 +10,24 @@
 <p>After the 1 month free period, your Midjourney Basic Plan subscription will not automatically renew. Plans may be continued by purchasing a monthly or annual subscription following the free month period. Images generated will be retained even if the subscription is not renewed.</p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
-    <li><a href="#h_01HG8TXMQ2P4AX0AAPEJVXCE9G"><strong>What is Discord Nitro?</strong></a></li>
-    <li><a href="#h_01HG8TXMQ2W263TFNNGGF1Z8ZA"><strong>What is Midjourney? </strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2P4AX0AAPEJVXCE9G"><strong>What is Discord Nitro?</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2W263TFNNGGF1Z8ZA"><strong>What is Midjourney? </strong></a></li>
     <li>
-        <a href="#h_01HG8TXMQ2XGQ2XSW8VKY1J6CN"><strong>How do I claim the month-long Midjourney Basic Plan Subscription in Discord?</strong></a>
+        <a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2XGQ2XSW8VKY1J6CN"><strong>How do I claim the month-long Midjourney Basic Plan Subscription in Discord?</strong></a>
         <ul>
-            <li><a href="#h_01HG8TXMQ2AACS12YBCPW2VPRE">Eligibility for Claiming this Promotion in Discord</a></li>
-            <li><a href="#h_01HG8TXMQ22F0TGEZWX6J8PPXG">Step By Step Claim Instructions</a></li>
-            <li><a href="#h_01HG8TXMQ2AMJ4G4YNH02JQ3KJ">Eligibility for Redeeming the Midjourney Basic Plan free month </a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2AACS12YBCPW2VPRE">Eligibility for Claiming this Promotion in Discord</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ22F0TGEZWX6J8PPXG">Step By Step Claim Instructions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2AMJ4G4YNH02JQ3KJ">Eligibility for Redeeming the Midjourney Basic Plan free month </a></li>
         </ul>
     </li>
-    <li><a href="#h_01HG8TXMQ2N4KD1B6FTRZ4C30T"><strong>How do I redeem the Midjourney Basic Plan Subscription on my Midjourney Account?</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2N4KD1B6FTRZ4C30T"><strong>How do I redeem the Midjourney Basic Plan Subscription on my Midjourney Account?</strong></a></li>
     <li>
-        <a href="#h_01HG8TXMQ2SQ737XC2WR5X160B"><strong>Frequently Asked Questions</strong></a>
+        <a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2SQ737XC2WR5X160B"><strong>Frequently Asked Questions</strong></a>
         <ul>
-            <li><a href="#h_01HG8TXMQ260NB3X3ZVS1CFMR3">Promotion Details</a></li>
-            <li><a href="#h_01HG8TXMQ2SFWWXG1PE1VQ2VX3">Eligibility for the Promotion</a></li>
-            <li><a href="#h_01HG8TXMQ28TMAM8J44M9X7NT3">Claiming and Redemption Process</a></li>
-            <li><a href="#h_01HG8TXMQ2KD6GMBZ62ZXATQ0W">Potential Errors and Other Issues</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ260NB3X3ZVS1CFMR3">Promotion Details</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2SFWWXG1PE1VQ2VX3">Eligibility for the Promotion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ28TMAM8J44M9X7NT3">Claiming and Redemption Process</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18859311755287#h_01HG8TXMQ2KD6GMBZ62ZXATQ0W">Potential Errors and Other Issues</a></li>
         </ul>
     </li>
 </ul>
@@ -101,7 +101,7 @@
 <p><strong>Q: Who can redeem this Midjourney Basic Plan Subscription to their Midjourney account?</strong></p>
 <p><strong>A: </strong>This offer is open to users who do not have an active Midjourney subscription.</p>
 <p><strong>Q: Can I redeem the Midjourney Basic Plan Subscription to my Midjourney account in my region? </strong></p>
-<p><strong>A:</strong> All users outside of Cuba, Iran, North Korea, Syria, and the Crimea, Donetsk, and Luhansk Regions may claim this promotion. These restrictions are placed by Midjourney’s payment processor and may be read in detail <a href="https://stripe.com/legal/restricted-businesses" target="_blank" rel="noopener noreferrer">here</a>. </p>
+<p><strong>A:</strong> All users outside of Cuba, Iran, North Korea, Syria, Ukraine, Russia and the Crimea, Donetsk, and Luhansk Regions may claim this promotion. These restrictions are placed by Midjourney’s payment processor and may be read in detail <a href="https://stripe.com/legal/restricted-businesses" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h2 id="h_01HG8TXMQ28TMAM8J44M9X7NT3">Claiming and Redemption Process</h2>
 <p><strong>Q: On which Discord platforms can I claim this promotion?</strong></p>
 <p><strong>A:</strong> You'll be able to claim the promo on the mobile, browser, and desktop version of the Discord app. </p>
