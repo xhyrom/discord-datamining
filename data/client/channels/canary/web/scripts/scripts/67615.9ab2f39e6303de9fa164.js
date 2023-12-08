@@ -3022,7 +3022,7 @@
                         if (200 === a.status) e(a);
                         else if (202 === a.status) {
                             var i;
-                            this.query.attempts = (null !== (i = this.query.attempts) && void 0 !== i ? i : 0) + 1;
+                            if (this.query.attempts = (null !== (i = this.query.attempts) && void 0 !== i ? i : 0) + 1, this.query.attempts > 5) return;
                             let l = 1e3 * a.body.retry_after;
                             this.retryDelay = isNaN(l) || 0 === l ? 5e3 : l, this.retryLater(e, t, n), t(a)
                         }
@@ -33908,4 +33908,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.922a44ffa9c61ed78b7c.js.map
+//# sourceMappingURL=67615.9ab2f39e6303de9fa164.js.map
