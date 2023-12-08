@@ -10157,6 +10157,7 @@
   "APPLICATION_COMMAND_AUTOCOMPLETE_NO_OPTIONS": "\"No options match your search\"",
   "APPLICATION_COMMAND_AUTOCOMPLETE_FAILED": "\"Loading options failed\"",
   "APPLICATION_COMMAND_NO_PERMISSIONS": "\"You don't have permission to use any commands from **!!{applicationName}!!**\"",
+  "APPLICATION_COMMAND_NO_COMMANDS": "\"No Commands Available\"",
   "APPLICATION_COMMAND_EDUCATION": "\"Try slash commands! A new way to use bots by typing slash. [Dismiss](dismissOnClick)\"",
   "APPLICATION_COMMAND_FILE_ATTACHMENT": "\"Please attach a file\"",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "\"Clear message?\"",
