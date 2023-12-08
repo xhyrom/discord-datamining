@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -84047,7 +84047,9 @@ input::-webkit-inner-spin-button {
     position: relative;
     height: 100%;
     width: 100%;
-    margin: 0 auto
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 30px
 }
 
 .productName_ece1e1 {
@@ -124403,4 +124405,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.42cea6d0427ea8c21df8.css.map*/
+/*# sourceMappingURL=app.25bbc55e11cfa1936c76.css.map*/
