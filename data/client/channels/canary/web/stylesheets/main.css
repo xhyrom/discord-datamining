@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -20748,6 +20748,31 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     height: 16px
 }
 
+.effect__50f2a {
+    position: absolute;
+    pointer-events: none;
+    bottom: 0;
+    overflow: hidden
+}
+
+.effectsWrapper__9fe42 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    z-index: 1
+}
+
+.pill_f4ac2f {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.favoriteIcon_adf80e {
+    display: block
+}
+
 .listItemWrapper__1f93b:active {
     transform: translatey(1px)translatez(0)
 }
@@ -20774,21 +20799,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     background-color: HighlightText;
     border-color: Highlight;
     outline: 2px solid Highlight
-}
-
-.effect__50f2a {
-    position: absolute;
-    pointer-events: none;
-    bottom: 0;
-    overflow: hidden
-}
-
-.effectsWrapper__9fe42 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    z-index: 1
 }
 
 .pill__357e7 {
@@ -21209,16 +21219,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .enable-forced-colors .centerTarget_dffece.dragOver__84b73:before {
     background-color: Highlight;
     outline: 2px solid Canvas
-}
-
-.pill__66ac8 {
-    position: absolute;
-    top: 0;
-    left: 0
-}
-
-.favoriteIcon__91c06 {
-    display: block
 }
 
 .DraftEditor-editorContainer,
@@ -124412,4 +124412,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8ce9c9076370dbea3519.css.map*/
+/*# sourceMappingURL=app.ee5ac7cf32f0889e5598.css.map*/
