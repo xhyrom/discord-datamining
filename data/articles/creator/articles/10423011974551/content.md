@@ -2,7 +2,7 @@
     <strong><span style="color: #104c32;" data-darkreader-inline-color="">Note: Server monetization tools are currently only available for US-based servers. To stay in the loop on international expansion, </span></strong><a href="https://share.hsforms.com/1lyeXVPncR_CYxaE-61u6yw2bach" target="_blank" rel="noopener noreferrer">click here</a><strong><span style="color: #104c32;" data-darkreader-inline-color=""> to join the waitlist.</span></strong>
 </h3>
 <p><span style="color: #4f545c;" data-darkreader-inline-color="">Server Monetization is a way for servers to earn money on Discord. Read on to learn what you need to know as a server admin. If you’re not a server admin but have questions related to Server Subscriptions or Server Products (currently in beta), you can</span><a href="https://support.discord.com/hc/en-us/articles/4415163187607" target="_blank" rel="noopener noreferrer"> visit this help page for more information.</a></p>
-<p class="wysiwyg-text-align-center"><span class="wysiwyg-underline"><img src="https://lh4.googleusercontent.com/DWACs2vxQZUEb5ZJI52Pa0jK2wtzG6rKPrcavBnNwFOG0M1u7D1bcKG8hB2Ad0nJxyGalEQf7DzGEmibKAgZbVTF8qoMvgAmKVn-ymAogGGDLfeT4BZ6IT-wmfnHGAFtxq4yOKh7ImQQA7kWqcxL9rU"></span></p>
+<p class="wysiwyg-text-align-center"><span class="wysiwyg-underline"><img src="https://creator-support.discord.com/hc/article_attachments/19675406727191"></span></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
     <li>
@@ -112,7 +112,7 @@
 <p id="docs-internal-guid-31c4da80-7fff-0e28-f190-7fb1b4c7c8ee"><strong>Server Subscription</strong>s give you the ability to create subscription tiers for paying members, offering them premium experiences with unlockable servers and channels.</p>
 <p>If you’re not a server admin but have questions related to your subscription to a server, you can<a href="https://support.discord.com/hc/en-us/articles/4415163187607" target="_blank" rel="noopener noreferrer"> visit this help page for more information.</a></p>
 <h2 id="docs-internal-guid-7ea45ef6-7fff-4d23-d71c-deb388bc250b"><strong>HOW DO I CREATE SERVER SUBSCRIPTIONS?</strong></h2>
-<p><img src="https://lh4.googleusercontent.com/hyXdKst6ZiqrYyx9vCkLeoiQL8CSbtTMtVEw0wPJKCh4vKiUJnhMsUQBgpJ48HI6EzbWzKcoIiOvX6IjUd_FQATEC3nWwww9HOeQt0WX1pTGGesOHSVPxu4dxN1cRVW_SeFQwOHghZ8IQ1h6__cqmX4"></p>
+<p><img src="https://creator-support.discord.com/hc/article_attachments/19675393796759"></p>
 <p id="docs-internal-guid-0f56165f-7fff-7661-4a48-ac43051e8350">1. Once the server owner has enabled <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQW0QJK9C2V1NH629SX">monetization</a>, navigate to the <strong>Server Subscriptions </strong>tab in your Server Settings.</p>
 <p>2. Under <strong>Basic Info</strong>, select whether you want to make some channels exclusive (our most popular, flexible option) or make your entire server exclusive, which means that every user will need to pay to access it.</p>
 <p>3. Under <strong>Tiers</strong>, choose to create between 1-3 paid tiers. Need help deciding? <a href="https://discord.com/creators/server-subs-102-to-tier-or-not-to-tier" target="_blank" rel="noopener noreferrer">Click here</a> to review your options and decide what’s best for you.</p>
@@ -140,7 +140,7 @@
 <p>Make sure they select <strong>Billing</strong> in the first dropdown menu and <strong>Server Subscription</strong> from the <strong>Type of Billing Issue</strong> dropdown menu to navigate to the refund request form.</p>
 <h1 id="h_01H96DVJP1H6EN2S61NK3T7ETQ">SERVER SUBSCRIPTIONS FREE TRIALS</h1>
 <p>Free Trials allow you to give access to Server Subscription membership benefits for free during the trial window. This lets your community get a sense of the experience so they can decide if they’d like to continue subscribing!</p>
-<p class="wysiwyg-text-align-center"><img src="https://lh3.googleusercontent.com/sI3zlE-DfI_QGQ5VYOYovI8Mb15KmGzFNt2LcrGngoNPlgKXwU3AgHehlQXilUcYTRjlBJ6AmFuse74eheUie9EbTW7xoxzfbvZxQ9i0EqAsJxHLRmk7f5YmdRo-rOHcqP-PLmDMFLtaCoUX0YZFVrU"></p>
+<p class="wysiwyg-text-align-center"><img src="https://creator-support.discord.com/hc/article_attachments/19675406743703"></p>
 <h2 id="docs-internal-guid-6c3f1cf3-7fff-99dc-4074-581a98241dab"><strong>HOW DO I ENABLE FREE TRIALS? </strong></h2>
 <p>Free Trials are enabled on a tier-by-tier basis, so to enable them for an existing tier you must “edit''  the tier and enable the “Free Trials for this tier” toggle. This will only enable free trials for the tier you are editing. </p>
 <p>Remember that you are responsible for ensuring your offering and any promotions are promoted in compliance with applicable laws, including applicable advertising laws. </p>
@@ -158,7 +158,7 @@
 <p>Adding exclusive Emoji is a great way to add value to your Server Subscription tiers. You can add up to 25 additional custom emoji that only your Server Subscribers can use. </p>
 <h3 id="h_01H96GNKBMHVRNG1KBP07DGJ3E">Note: Animated emoji can be used by all Server Subscribers even without Nitro. However, only Server Subscribers with Nitro can use premium emoji outside of the subscribed server.  </h3>
 <p>To get started you can access the Premium Emoji tab in the Server Subscriptions settings.</p>
-<p class="wysiwyg-text-align-center"><img src="https://lh3.googleusercontent.com/BrXwC8WDl_zCC-wN8ljyRDtBDgRUF6TaopCxZicyHkgqg5SLPZo_Lg0Gr91cAkvfWSLHlkcEvL0aEX1fZADj7rJIH5fxagpLXb-EplAI04ur5EAQeg1H1TpcS-9JaoYxJ_wTTFUvvOvIK7wuhxbwvjc"></p>
+<p class="wysiwyg-text-align-center"><img src="https://creator-support.discord.com/hc/article_attachments/19675406753047"></p>
 <h1 id="docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1"><strong>SERVER PRODUCTS</strong></h1>
 <h3 id="h_01H96GP5Y3H53CYZADK9WW3XA5">
     <span style="color: #434343;" data-darkreader-inline-color="">NOTE: Server Products are currently in Beta testing and only available to a select group of servers. </span><a href="https://share.hsforms.com/1u00PIv3XT0mIJjgWMTeesw2bach" target="_blank" rel="noopener noreferrer">Click here</a><span style="color: #434343;" data-darkreader-inline-color=""> to join the waitlist.</span>
@@ -223,4 +223,6 @@
 <p>A: We’re working on it! We don’t have any timing to share at this point but we are actively working to bring Server Subscriptions to Android mobile devices.</p>
 <p id="docs-internal-guid-8e7ecc26-7fff-29ff-1e8f-7c7e2a708118"><strong>Q: Why am I unable to see Server Products when using the mobile app? </strong></p>
 <p>A: Server Products is currently a limited experiment that’s only available on desktop and web within the United States. If you are still unable to see this feature while on desktop and web, please be sure to join our waitlist <a href="https://share.hsforms.com/1lyeXVPncR_CYxaE-61u6yw2bach" target="_blank" rel="noopener noreferrer">here</a>. </p>
+<p><strong>Q: Do my server members get a grace period for Server Subscription payments?</strong></p>
+<p>A: Your members with a Server Subscription through the iOS App Store will have a grace period of 28 days to correct the payment issue if their auto-renewal payment fails. If the payment issue is fixed within that 28 day period, the subscription will continue. However, if a successful payment is not made within the 28 days, the subscription and features associated with it will end.</p>
 <p> </p>
