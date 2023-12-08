@@ -844,7 +844,10 @@
   },
   "VOICE_CHANNEL_NOTIFICATIONS": {
     "url": "/channels/:param/voice-push",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PARTNER_REQUIREMENTS": {
     "url": "/partners/:param/requirements",
