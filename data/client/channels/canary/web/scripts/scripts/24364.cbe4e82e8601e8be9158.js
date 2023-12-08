@@ -9,6 +9,7 @@
                 "./el.png": "954635",
                 "./en-GB.png": "883638",
                 "./en-US.png": "969851",
+                "./es-419.png": "359765",
                 "./es-ES.png": "98918",
                 "./fi.png": "110775",
                 "./fr.png": "128393",
@@ -168,6 +169,10 @@
         969851: function(e, t, n) {
             "use strict";
             e.exports = n.p + "c69f95beeb3b959480c7.png"
+        },
+        359765: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "ae1172ee75120f6470db.png"
         },
         98918: function(e, t, n) {
             "use strict";
@@ -41581,4 +41586,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.7ffc5e9cea453e476984.js.map
+//# sourceMappingURL=24364.cbe4e82e8601e8be9158.js.map
