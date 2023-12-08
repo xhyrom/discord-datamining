@@ -3886,8 +3886,6 @@
   "LANGUAGE": "\"Language\"",
   "LANGUAGE_SELECT": "\"Select a Language\"",
   "LANGUAGE_UPDATED": "\"Language has been Updated.\"",
-  "ESLATAM_LANGUAGE_LAUNCH_NOTICE": "\"Discord now supports Latin American Spanish.\"",
-  "ESLATAM_LANGUAGE_LAUNCH_NOTICE_CTA": "\"Change Language\"",
   "CHECKING_FOR_UPDATES": "\"Checking For Updates\"",
   "UPDATE_AVAILABLE": "\"Downloading Update\"",
   "UPDATE_DOWNLOADED": "\"Update Ready!\"",
