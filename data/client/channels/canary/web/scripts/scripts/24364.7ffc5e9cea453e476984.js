@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         20860: function(e, t, n) {
             var r = {
                 "./bg.png": "585337",
@@ -41581,4 +41581,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.a35269f99cefd7e46af1.js.map
+//# sourceMappingURL=24364.7ffc5e9cea453e476984.js.map
