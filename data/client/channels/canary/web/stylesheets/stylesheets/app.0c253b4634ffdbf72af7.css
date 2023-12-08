@@ -109644,6 +109644,24 @@ html .invoiceCancelRow_a8669b {
     color: var(--interactive-normal)
 }
 
+.content__33f77 {
+    padding: 16px;
+    max-width: 760px
+}
+
+.header_cf90da {
+    display: flex;
+    align-items: center
+}
+
+.warningIcon__17017 {
+    color: var(--status-warning)
+}
+
+.dangerIcon__836bc {
+    color: var(--status-danger)
+}
+
 .heading-sm-normal__4a449 {
     font-family: var(--font-display);
     font-size: 14px;
@@ -124412,4 +124430,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ee5ac7cf32f0889e5598.css.map*/
+/*# sourceMappingURL=app.0c253b4634ffdbf72af7.css.map*/
