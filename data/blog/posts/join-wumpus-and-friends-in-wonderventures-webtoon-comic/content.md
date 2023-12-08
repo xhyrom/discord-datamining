@@ -1,6 +1,10 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
+            <p><strong>Update: Our Nitro x WEBTOON&nbsp;promotion has ended, but you can still read the Wumpus&nbsp;Wonderventures comic linked in this article! </strong><br></p>
+            <div class="w-embed">
+                <hr class="hr-style">
+            </div>
             <p>Get ready for your next journey! Join Wumpus, Locke, Graggle, Mallow, and plenty more as they explore the world together, make new friends, and discover alternate universes in <strong>Wumpus Wonderventures</strong>: our new comic to experience over at WEBTOON.&nbsp;</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64595cfc233cf5efd8581091_fbdc15e1.png" alt="Key artwork for the Wumpus Wonderventure comic series.&nbsp;"></div>

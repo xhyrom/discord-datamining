@@ -1,6 +1,10 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
+            <p><strong>Update: This promotion has ended. You can still read on to see what it was all about! </strong></p>
+            <div class="w-embed">
+                <hr class="hr-style">
+            </div>
             <p>If you’re a brave beast-stalker in the market for some new hunting threads, we’ve got nothing but good news for you. As part of Discord’s proud partnership with Capcom, we’re bringing a festive fall-themed layered armor set from Sunbreak, the new Monster Hunter Rise DLC, to players who stream their gameplay on Discord.&nbsp;</p>
             <p>If this is your first time snagging a freebie in Discord, you may need more context. Read on!<br>‍</p>
             <h2><strong>Screen Share in Discord to Get the Fall Fashion Set drop</strong></h2>
