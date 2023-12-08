@@ -26019,7 +26019,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return en
+                    return er
                 }
             }), n("222007"), n("581081"), n("70102");
             var r = n("917351"),
@@ -26053,10 +26053,11 @@
                 L = {},
                 P = {},
                 b = new Set,
-                U = 0,
-                G = 0;
+                U = {},
+                G = 0,
+                x = 0;
 
-            function x(e, t, n) {
+            function w(e, t, n) {
                 if (null == e || !b.has(e) || 0 === t && E.default.hasGuild(e)) return;
                 A.verbose("hydrating guild (guild: ".concat(e, ", trace: ").concat(n, ")"));
                 let r = u.default.database(),
@@ -26066,45 +26067,45 @@
                     return
                 }
                 let [a, l] = i;
-                for (let n of ((0, _.default)(a), 0 !== t && (G += 1), b.delete(e), E.default.restored(e), s.default.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), l), a)) !Object.hasOwn(R, n.id) && Y((0, T.castChannelRecord)(n));
-                A.verbose("hydration complete (guild: ".concat(e, ", channels: ").concat(a.length, ", guilds_loaded: ").concat(G, ")"))
+                for (let n of ((0, _.default)(a), 0 !== t && (x += 1), b.delete(e), E.default.restored(e), s.default.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), l), a)) !Object.hasOwn(R, n.id) && K((0, T.castChannelRecord)(n));
+                A.verbose("hydration complete (guild: ".concat(e, ", channels: ").concat(a.length, ", guilds_loaded: ").concat(x, ")"))
             }
 
-            function w(e, t, n) {
+            function k(e, t, n) {
                 if (b.size > 0 && !Object.hasOwn(R, e) && !Object.hasOwn(N, e) && !Object.hasOwn(y, e) && !Object.hasOwn(P, e) && 1 === t) {
                     let r = E.default.getBasicChannel(e);
-                    (null == r ? void 0 : r.guild_id) != null && x(r.guild_id, t, n)
+                    (null == r ? void 0 : r.guild_id) != null && w(r.guild_id, t, n)
                 }
             }
 
-            function k(e) {
+            function F(e) {
                 if (null != v[e]) {
                     for (let t of Object.keys(v[e])) delete R[t];
                     delete v[e]
                 }
             }
 
-            function F(e) {
-                var t, n, r, i;
-                return w(e, 0, "getBasicChannel"), null !== (i = null !== (r = null !== (n = null !== (t = R[e]) && void 0 !== t ? t : N[e]) && void 0 !== n ? n : y[e]) && void 0 !== r ? r : P[e]) && void 0 !== i ? i : E.default.getBasicChannel(e)
-            }
-
             function B(e) {
-                var t, n, r;
-                return w(e, 1, "getChannel"), null !== (r = null !== (n = null !== (t = R[e]) && void 0 !== t ? t : N[e]) && void 0 !== n ? n : y[e]) && void 0 !== r ? r : P[e]
+                var t, n, r, i;
+                return k(e, 0, "getBasicChannel"), null !== (i = null !== (r = null !== (n = null !== (t = R[e]) && void 0 !== t ? t : N[e]) && void 0 !== n ? n : y[e]) && void 0 !== r ? r : P[e]) && void 0 !== i ? i : E.default.getBasicChannel(e)
             }
 
             function H(e) {
-                e.isPrivate() ? V(e) : e.isThread() ? j(e) : T.GUILD_CHANNEL_TYPES.has(e.type) && function(e) {
-                    Y(e)
-                }(e)
+                var t, n, r, i;
+                return k(e, 1, "getChannel"), null !== (i = null !== (r = null !== (n = null !== (t = R[e]) && void 0 !== t ? t : N[e]) && void 0 !== n ? n : y[e]) && void 0 !== r ? r : P[e]) && void 0 !== i ? i : U[e]
             }
 
             function V(e) {
-                N[e.id] = e, e.type === g.ChannelTypes.DM && (D[e.getRecipientId()] = e.id), M += 1
+                e.isPrivate() ? (delete U[e.id], j(e)) : e.isThread() ? Y(e) : T.GUILD_CHANNEL_TYPES.has(e.type) && function(e) {
+                    K(e)
+                }(e)
             }
 
             function j(e) {
+                N[e.id] = e, e.type === g.ChannelTypes.DM && (D[e.getRecipientId()] = e.id), M += 1
+            }
+
+            function Y(e) {
                 let t = R[e.parent_id];
                 y[e.id] = e.merge({
                     nsfw: (null == t ? void 0 : t.nsfw) === !0,
@@ -26115,7 +26116,7 @@
                 })
             }
 
-            function Y(e) {
+            function K(e) {
                 var t, n;
                 let {
                     id: r,
@@ -26124,30 +26125,30 @@
                 R[r] = e, v[i] = null !== (t = v[i]) && void 0 !== t ? t : {}, v[i][r] = e, L[i] = (null !== (n = L[i]) && void 0 !== n ? n : 0) + 1
             }
 
-            function K(e) {
+            function z(e) {
                 if (b.add(e.id), null != e.channels)
-                    for (let t of (k(e.id), b.delete(e.id), E.default.restored(e.id), e.channels)) Y(t);
+                    for (let t of (F(e.id), b.delete(e.id), E.default.restored(e.id), e.channels)) K(t);
                 if (null != e.channelUpdates) {
                     let t = e.channelUpdates;
-                    for (let n of ((t.writes.length > 0 || t.deletes.length > 0) && E.default.invalidate(e.id), t.deletes)) q(R[n]);
-                    for (let e of t.writes) Y(e)
+                    for (let n of ((t.writes.length > 0 || t.deletes.length > 0) && E.default.invalidate(e.id), t.deletes)) J(R[n]);
+                    for (let e of t.writes) K(e)
                 }
                 if (null != e.threads)
-                    for (let t of e.threads) j(t)
+                    for (let t of e.threads) Y(t)
             }
 
-            function z() {
+            function W() {
                 D = {}, R = {}, v = {}, L = {}, N = {}, y = {}, b = new Set
             }
 
-            function W(e) {
-                for (let t of (z(), e.channels)) H((0, _.deserializeChannel)((0, T.castChannelRecord)(t)));
+            function Z(e) {
+                for (let t of (W(), e.channels)) V((0, _.deserializeChannel)((0, T.castChannelRecord)(t)));
                 b = new Set(e.guilds.map(e => e.id))
             }
 
-            function Z(e) {
+            function X(e) {
                 if (!T.ALL_CHANNEL_TYPES.has(e.channel.type)) return !1;
-                let t = B(e.channel.id);
+                let t = H(e.channel.id);
                 if (null == t) t = e.channel;
                 else {
                     var n;
@@ -26156,19 +26157,19 @@
                         bitrate: null !== (n = e.channel.bitrate) && void 0 !== n ? n : t.bitrate
                     })
                 }
-                H(t)
+                V(t)
             }
 
-            function X(e) {
+            function q(e) {
                 let {
                     threads: t
                 } = e;
                 t.forEach(e => {
-                    T.ALL_CHANNEL_TYPES.has(e.type) && H((0, T.createChannelRecordFromServer)(e))
+                    T.ALL_CHANNEL_TYPES.has(e.type) && V((0, T.createChannelRecordFromServer)(e))
                 })
             }
 
-            function q(e) {
+            function J(e) {
                 if (null == e) return;
                 let t = e.guild_id;
                 e.id in N && delete N[e.id], e.id in R && delete R[e.id], e.id in y && delete y[e.id], null != t && null != v[t] && e.id in v[t] && delete v[t][e.id], ! function(e) {
@@ -26180,13 +26181,13 @@
                 }(e)
             }
 
-            function J(e) {
+            function Q(e) {
                 var t, n;
                 let {
                     channel: r
                 } = e, i = null !== (n = null !== (t = R[r.id]) && void 0 !== t ? t : N[r.id]) && void 0 !== n ? n : y[r.id];
                 if (null == i) return !1;
-                q(i), ! function(e) {
+                J(i), ! function(e) {
                     if ("basicPermissions" in e || e.type !== g.ChannelTypes.DM) return;
                     let t = e.getRecipientId(),
                         n = D[t];
@@ -26194,38 +26195,38 @@
                 }(i)
             }
 
-            function Q(e) {
+            function $(e) {
                 let {
                     messages: t
                 } = e;
-                for (let e of t) null != e.thread && !(e.thread.id in y) && T.ALL_CHANNEL_TYPES.has(e.thread.type) && j((0, T.createChannelRecordFromServer)(e.thread))
+                for (let e of t) null != e.thread && !(e.thread.id in y) && T.ALL_CHANNEL_TYPES.has(e.thread.type) && Y((0, T.createChannelRecordFromServer)(e.thread))
             }
 
-            function $(e) {
-                null != e && !(e.id in y) && T.ALL_CHANNEL_TYPES.has(e.type) && j((0, T.createChannelRecordFromServer)(e))
+            function ee(e) {
+                null != e && !(e.id in y) && T.ALL_CHANNEL_TYPES.has(e.type) && Y((0, T.createChannelRecordFromServer)(e))
             }
 
-            function ee() {
+            function et() {
                 for (let e in P = {}, p.default.getFavoriteChannels()) {
                     let t = p.default.getCategoryRecord(e);
                     null != t && (P[e] = t)
                 }
             }
-            class et extends l.default.Store {
+            class en extends l.default.Store {
                 initialize() {
-                    this.waitFor(E.default, m.default, I.default, p.default), this.syncWith([p.default], ee)
+                    this.waitFor(E.default, m.default, I.default, p.default), this.syncWith([p.default], et)
                 }
                 hasChannel(e) {
-                    return null != F(e)
+                    return null != B(e)
                 }
                 getBasicChannel(e) {
-                    if (null != e) return F(e)
-                }
-                getChannel(e) {
                     if (null != e) return B(e)
                 }
+                getChannel(e) {
+                    if (null != e) return H(e)
+                }
                 loadAllGuildAndPrivateChannelsFromDisk() {
-                    for (let e of I.default.getGuildIds()) x(e, 1, "loadAllGuildAndPrivateChannelsFromDisk");
+                    for (let e of I.default.getGuildIds()) w(e, 1, "loadAllGuildAndPrivateChannelsFromDisk");
                     return {
                         ...R,
                         ...N
@@ -26233,18 +26234,18 @@
                 }
                 getChannelIds(e) {
                     var t, n;
-                    return (x(e, 0, "getChannelIds"), null == e) ? Object.keys(N) : Object.keys(null !== (n = null !== (t = E.default.getGuildBasicChannels(e)) && void 0 !== t ? t : v[e]) && void 0 !== n ? n : C)
+                    return (w(e, 0, "getChannelIds"), null == e) ? Object.keys(N) : Object.keys(null !== (n = null !== (t = E.default.getGuildBasicChannels(e)) && void 0 !== t ? t : v[e]) && void 0 !== n ? n : C)
                 }
                 getMutablePrivateChannels() {
                     return N
                 }
                 getMutableBasicGuildChannelsForGuild(e) {
                     var t, n;
-                    return x(e, 0, "getMutableBasicGuildChannelsForGuild"), null !== (n = null !== (t = E.default.getGuildBasicChannels(e)) && void 0 !== t ? t : v[e]) && void 0 !== n ? n : C
+                    return w(e, 0, "getMutableBasicGuildChannelsForGuild"), null !== (n = null !== (t = E.default.getGuildBasicChannels(e)) && void 0 !== t ? t : v[e]) && void 0 !== n ? n : C
                 }
                 getMutableGuildChannelsForGuild(e) {
                     var t;
-                    return x(e, 1, "getMutableGuildChannelsForGuild"), null !== (t = v[e]) && void 0 !== t ? t : C
+                    return w(e, 1, "getMutableGuildChannelsForGuild"), null !== (t = v[e]) && void 0 !== t ? t : C
                 }
                 getSortedPrivateChannels() {
                     return i(N).values().sort((e, t) => a.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
@@ -26273,83 +26274,83 @@
                     }
                 }
             }
-            et.displayName = "ChannelStore";
-            var en = new et(o.default, {
+            en.displayName = "ChannelStore";
+            var er = new en(o.default, {
                 BACKGROUND_SYNC: function(e) {
                     let {
                         guilds: t
                     } = e, n = v;
                     R = {}, v = {}, L = {}, t.forEach(e => {
-                        if ("unavailable" === e.data_mode) i.forEach(n[e.id], Y);
+                        if ("unavailable" === e.data_mode) i.forEach(n[e.id], K);
                         else if ("partial" === e.data_mode) {
                             var t, r;
-                            i.forEach(n[e.id], Y);
+                            i.forEach(n[e.id], K);
                             let s = null !== (r = e.partial_updates.deleted_channel_ids) && void 0 !== r ? r : [];
-                            s.length > 0 && (x(e.id, 1, "handleBackgroundSync"), s.forEach(e => q(R[e]))), null === (t = e.partial_updates.channels) || void 0 === t || t.forEach(t => Y((0, T.createChannelRecordFromServer)(t, e.id)))
-                        } else k(e.id), b.delete(e.id), E.default.restored(e.id), e.channels.forEach(t => Y((0, T.createChannelRecordFromServer)(t, e.id)))
+                            s.length > 0 && (w(e.id, 1, "handleBackgroundSync"), s.forEach(e => J(R[e]))), null === (t = e.partial_updates.channels) || void 0 === t || t.forEach(t => K((0, T.createChannelRecordFromServer)(t, e.id)))
+                        } else F(e.id), b.delete(e.id), E.default.restored(e.id), e.channels.forEach(t => K((0, T.createChannelRecordFromServer)(t, e.id)))
                     })
                 },
                 CACHE_LOADED_LAZY: function(e) {
                     if (null != e.privateChannels)
-                        for (let t of e.privateChannels) H((0, T.castChannelRecord)(t));
+                        for (let t of e.privateChannels) V((0, T.castChannelRecord)(t));
                     for (let [t, n] of e.guildChannels)
-                        for (let e of n) H((0, T.castChannelRecord)(e));
+                        for (let e of n) V((0, T.castChannelRecord)(e));
                     e.guilds.length, b = new Set(e.guilds.map(e => e.id))
                 },
-                CACHE_LOADED: W,
+                CACHE_LOADED: Z,
                 CHANNEL_CREATE: function(e) {
-                    H(e.channel)
+                    V(e.channel)
                 },
-                CHANNEL_DELETE: J,
+                CHANNEL_DELETE: Q,
                 CHANNEL_RECIPIENT_ADD: function(e) {
-                    let t = B(e.channelId),
+                    let t = H(e.channelId),
                         n = S.default.getId();
-                    return (null == t ? !!void 0 : !!t.isPrivate()) && (H(t.addRecipient(e.user.id, e.nick, n)), !0)
+                    return (null == t ? !!void 0 : !!t.isPrivate()) && (V(t.addRecipient(e.user.id, e.nick, n)), !0)
                 },
                 CHANNEL_RECIPIENT_REMOVE: function(e) {
-                    let t = B(e.channelId);
-                    return (null == t ? !!void 0 : !!t.isPrivate()) && (H(t.removeRecipient(e.user.id)), !0)
+                    let t = H(e.channelId);
+                    return (null == t ? !!void 0 : !!t.isPrivate()) && (V(t.removeRecipient(e.user.id)), !0)
                 },
                 CHANNEL_UPDATES: function(e) {
                     let t = e.channels.some(e => {
-                        let t = B(e.id);
+                        let t = H(e.id);
                         return e.nsfw !== (null == t ? void 0 : t.nsfw) || e.type !== (null == t ? void 0 : t.type)
                     });
-                    for (let t of e.channels) H(t);
-                    t && Object.values(y).forEach(e => H(e))
+                    for (let t of e.channels) V(t);
+                    t && Object.values(y).forEach(e => V(e))
                 },
                 CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
                     let {
                         lazyPrivateChannels: t
                     } = e;
-                    null != O && (N = {}, O.forEach(V)), t.forEach(V)
+                    null != O && (N = {}, O.forEach(j)), t.forEach(j)
                 },
                 CONNECTION_OPEN: function(e) {
                     let t = v;
-                    for (let n of (D = {}, R = {}, v = {}, y = {}, L = {}, b = new Set, O = e.initialPrivateChannels, e.initialPrivateChannels.forEach(V), e.guilds)) "partial" === n.dataMode && i.forEach(t[n.id], Y), K(n);
-                    ee()
+                    for (let n of (D = {}, R = {}, v = {}, y = {}, L = {}, b = new Set, O = e.initialPrivateChannels, e.initialPrivateChannels.forEach(j), e.guilds)) "partial" === n.dataMode && i.forEach(t[n.id], K), z(n);
+                    et()
                 },
                 GUILD_CREATE: function(e) {
-                    K(e.guild)
+                    z(e.guild)
                 },
                 GUILD_DELETE: function(e) {
-                    k(e.guild.id), b.delete(e.guild.id), E.default.invalidate(e.guild.id)
+                    F(e.guild.id), b.delete(e.guild.id), E.default.invalidate(e.guild.id)
                 },
                 GUILD_FEED_FETCH_SUCCESS: function(e) {
                     let {
                         data: t
                     } = e, n = !1, r = (0, h.getThreadsFromGuildFeedFetch)(t);
-                    for (let e of r) !(e.id in y) && T.ALL_CHANNEL_TYPES.has(e.type) && (j((0, T.createChannelRecordFromServer)(e)), n = !0);
+                    for (let e of r) !(e.id in y) && T.ALL_CHANNEL_TYPES.has(e.type) && (Y((0, T.createChannelRecordFromServer)(e)), n = !0);
                     return n
                 },
-                LOAD_ARCHIVED_THREADS_SUCCESS: X,
-                LOAD_MESSAGES_AROUND_SUCCESS: Q,
-                LOAD_MESSAGES_SUCCESS: Q,
-                LOAD_THREADS_SUCCESS: X,
+                LOAD_ARCHIVED_THREADS_SUCCESS: q,
+                LOAD_MESSAGES_AROUND_SUCCESS: $,
+                LOAD_MESSAGES_SUCCESS: $,
+                LOAD_THREADS_SUCCESS: q,
                 LOGOUT: function() {
-                    z()
+                    W()
                 },
-                OVERLAY_INITIALIZE: W,
+                OVERLAY_INITIALIZE: Z,
                 SEARCH_FINISH: function(e) {
                     let {
                         messages: t,
@@ -26357,22 +26358,24 @@
                         channels: r
                     } = e;
                     for (let e of t)
-                        for (let t of e) $(t.thread);
-                    n.forEach($), null == r || r.forEach(e => {
-                        H((0, T.createChannelRecordFromServer)(e))
+                        for (let t of e) ee(t.thread);
+                    n.forEach(ee), null == r || r.forEach(e => {
+                        let t = (0, T.createChannelRecordFromServer)(e),
+                            n = null == H(e.id) || null != U[t.id];
+                        t.isPrivate() && n ? U[t.id] = t : V(t)
                     })
                 },
-                THREAD_CREATE: Z,
-                THREAD_DELETE: J,
+                THREAD_CREATE: X,
+                THREAD_DELETE: Q,
                 THREAD_LIST_SYNC: function(e) {
                     let {
                         threads: t
                     } = e;
                     t.forEach(e => {
-                        T.ALL_CHANNEL_TYPES.has(e.type) && H(e)
+                        T.ALL_CHANNEL_TYPES.has(e.type) && V(e)
                     })
                 },
-                THREAD_UPDATE: Z
+                THREAD_UPDATE: X
             })
         },
         313915: function(e, t, n) {
@@ -41550,4 +41553,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.f0b12cc4fade09e56824.js.map
+//# sourceMappingURL=72243.3afdf189c67dd0fbf220.js.map
