@@ -7645,6 +7645,13 @@
                 reset: "reset__2fa7b"
             }
         },
+        308611: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                favoriteIcon: "favoriteIcon_adf80e",
+                pill: "pill_f4ac2f"
+            }
+        },
         171684: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -15190,13 +15197,6 @@
                 circleIconButton: "circleIconButton_d8df29",
                 pill: "pill__13f64",
                 selected: "selected__5250e"
-            }
-        },
-        818789: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                favoriteIcon: "favoriteIcon__91c06",
-                pill: "pill__66ac8"
             }
         },
         54965: function(e, t, o) {
