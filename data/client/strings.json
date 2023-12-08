@@ -13260,6 +13260,8 @@
   "MEMBER_SAFETY_TABLE_OVERFLOW_TOOLTIP": "\"More Options\"",
   "MEMBER_SAFETY_UNUSUAL_DM_ACTIVITY": "\"Unusual DM Activity\"",
   "MEMBER_SAFETY_COMMUNICATION_DISABLED": "\"Timed Out\"",
+  "MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY": "\"Unusual Account Activity\"",
+  "MEMBER_SAFETY_USERNAME_QUARANTINED": "\"Quarantined\"",
   "MEMBER_SAFETY_COMMUNICATION_DISABLED_TOOLTIP": "\"Timed out for\"",
   "MEMBER_SAFETY_UNUSUAL_DM_ACTIVITY_TOOLTIP": "\"Sent excessive DMs to non-friend server members in last 24 hrs\"",
   "MEMBER_SAFETY_MEMBER_ROW_ARIA_LABEL": "\"Member {name}\"",
