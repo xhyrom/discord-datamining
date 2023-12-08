@@ -1,12 +1,12 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["56072"], {
+    ["13942"], {
         969176: function(t, e, i) {
             var s = i("354069");
             t.exports = function(t, e) {
                 return s(t, e)
             }
         },
-        547757: function(t, e, i) {
+        469520: function(t, e, i) {
             i("424973"), i("311790"), i("477657"), i("811875"), i("90301"), i("652153"), i("28797"), i("817884"), i("597349"), i("667536"), i("690341"), i("477315"), i("990131"), i("527135"), i("453061"), i("659510"), i("667500"), i("370692"), i("511434"), i("313619"), i("654714"), i("287168"), i("956660"), i("222007"), i("702976"), i("781738");
             var s, r, n = (s = new Date, r = 4, {
                 setLogLevel: function(t) {
@@ -855,7 +855,7 @@
                     size: s.size
                 })
             }, p.Box.prototype.parse = function(t) {
-                this.data = t.readUint8Array(this.size - this.hdr_size)
+                "mdat" != this.type ? this.data = t.readUint8Array(this.size - this.hdr_size) : 0 === this.size ? t.seek(t.getEndPosition()) : t.seek(this.start + this.size)
             }, p.Box.prototype.parseDataAndRewind = function(t) {
                 this.data = t.readUint8Array(this.size - this.hdr_size), t.position -= this.size - this.hdr_size
             }, p.FullBox.prototype.parseDataAndRewind = function(t) {
@@ -2435,4 +2435,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56072.d168431912c986199ba7.js.map
+//# sourceMappingURL=13942.42b3309fce7f57e5eb63.js.map
