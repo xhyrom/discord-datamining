@@ -26848,12 +26848,14 @@
                     return null !== (n = this.getFirstChannelOfType(e, t, C)) && void 0 !== n ? n : r ? this.getFirstChannelOfType(e, t, R) : null
                 }
                 getDefaultChannel(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                    return this.getFirstChannel(e, e => S.default.can(g.Permissions.VIEW_CHANNEL, e.channel), t)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.Permissions.VIEW_CHANNEL;
+                    return this.getFirstChannel(e, e => S.default.can(n, e.channel), t)
                 }
                 getSFWDefaultChannel(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                    return this.getFirstChannel(e, e => S.default.can(g.Permissions.VIEW_CHANNEL, e.channel) && !e.channel.nsfw, t)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.Permissions.VIEW_CHANNEL;
+                    return this.getFirstChannel(e, e => S.default.can(n, e.channel) && !e.channel.nsfw, t)
                 }
                 getSelectableChannelIds(e) {
                     return this.getChannels(e)[C].map(e => {
@@ -41548,4 +41550,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.751237dabc11889d8479.js.map
+//# sourceMappingURL=24364.f0de8628215268599fd6.js.map
