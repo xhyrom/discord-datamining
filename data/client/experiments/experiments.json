@@ -14267,11 +14267,38 @@
         0,
         1
       ],
-      "holdout": {},
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
       "aa_mode": false,
       "config_keys": [
         "enabled"
       ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "435572461912719360"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
