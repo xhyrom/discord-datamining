@@ -535,9 +535,8 @@
         135898: function(e, t, o) {
             "use strict";
             e.exports = {
-                warnBlock: "warnBlock_cb8a97",
-                warnIcon: "warnIcon_e73325",
-                warnText: "warnText_b76858"
+                container: "container__470ea",
+                icon: "icon__6f065"
             }
         },
         116523: function(e, t, o) {

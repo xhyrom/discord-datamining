@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -52055,23 +52055,14 @@ html .progress__4ef76 {
     background-color: var(--background-modifier-accent)
 }
 
-.warnBlock_cb8a97 {
-    position: relative;
+.container__470ea {
+    margin-top: 8px;
     display: flex;
-    align-items: center;
-    padding-top: 10px
+    gap: 8px
 }
 
-.warnIcon_e73325 {
-    background-image: url(/assets/21776a8b4fe8087b0bdc.svg);
-    position: absolute;
-    top: 12px;
-    width: 24px;
-    height: 24px
-}
-
-.warnText_b76858 {
-    margin-left: 34px
+.icon__6f065 {
+    flex-shrink: 0
 }
 
 .notice__36353 {
@@ -124470,4 +124461,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8a5c7b92eeaee57cd5a0.css.map*/
+/*# sourceMappingURL=app.8a742bc387b0f18d34b2.css.map*/
