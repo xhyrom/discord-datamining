@@ -16502,7 +16502,7 @@
   "MEMBER_SAFETY_INTEGRATION_TYPE_YOUTUBE": "\"YouTube\"",
   "MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION": "\"Server Subscription\"",
   "MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP": "\"Engaged in suspected spam activity\"",
-  "MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP": "\"Quarantined for unallowed content in user profile\"",
+  "MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP": "\"User can't talk in server until they change their member name\"",
   "BAN_MULTIPLE_CONFIRM_TITLE": "\"Would you like to ban {count, plural, one {1 member} other {{count} members}}?\"",
   "BAN_MULTIPLE_SUCCESS_TOAST": "\"Mass ban succesful\"",
   "BAN_MULTIPLE_FAILED_TOAST": "\"Mass ban failed\"",
