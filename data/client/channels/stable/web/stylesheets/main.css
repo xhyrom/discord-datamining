@@ -20748,6 +20748,31 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     height: 16px
 }
 
+.effect__50f2a {
+    position: absolute;
+    pointer-events: none;
+    bottom: 0;
+    overflow: hidden
+}
+
+.effectsWrapper__9fe42 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    z-index: 1
+}
+
+.pill_f4ac2f {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.favoriteIcon_adf80e {
+    display: block
+}
+
 .listItemWrapper__1f93b:active {
     transform: translatey(1px)translatez(0)
 }
@@ -20774,21 +20799,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     background-color: HighlightText;
     border-color: Highlight;
     outline: 2px solid Highlight
-}
-
-.effect__50f2a {
-    position: absolute;
-    pointer-events: none;
-    bottom: 0;
-    overflow: hidden
-}
-
-.effectsWrapper__9fe42 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    z-index: 1
 }
 
 .pill__357e7 {
@@ -21209,16 +21219,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .enable-forced-colors .centerTarget_dffece.dragOver__84b73:before {
     background-color: Highlight;
     outline: 2px solid Canvas
-}
-
-.pill__66ac8 {
-    position: absolute;
-    top: 0;
-    left: 0
-}
-
-.favoriteIcon__91c06 {
-    display: block
 }
 
 .DraftEditor-editorContainer,
@@ -81061,6 +81061,67 @@ input::-webkit-inner-spin-button {
     padding-left: .5rem
 }
 
+.header_dfdcae {
+    background-image: url(/assets/a1d5e876c5e7b9b34836.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 132px
+}
+
+.animation__3a863 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.headerTitle_a39b9c {
+    background-image: url(/assets/57ff574d8430697c11c7.svg);
+    height: 28px;
+    width: 60px
+}
+
+.header_dfdcae .closeButton_eec3b4 {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--white-500);
+    opacity: .8
+}
+
+.header_dfdcae .closeButton_eec3b4:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .header_dfdcae .closeButton_eec3b4 {
+    opacity: 1
+}
+
+.container_dc0bc1 {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px
+}
+
+.iconBackground_c5c678 {
+    background-color: var(--button-secondary-background);
+    border-radius: var(--radius-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px
+}
+
+.link__2ad53 {
+    display: inline;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    cursor: pointer
+}
+
 .pricePerInterval_b4509b {
     color: var(--interactive-normal);
     font-size: 16px;
@@ -81590,45 +81651,6 @@ input::-webkit-inner-spin-button {
 
 .subscriptionAddedInvoiceItem__5877e {
     color: var(--text-positive)
-}
-
-.header_dfdcae {
-    background-image: url(/assets/a1d5e876c5e7b9b34836.svg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    height: 132px
-}
-
-.animation__3a863 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0
-}
-
-.headerTitle_a39b9c {
-    background-image: url(/assets/57ff574d8430697c11c7.svg);
-    height: 28px;
-    width: 60px
-}
-
-.header_dfdcae .closeButton_eec3b4 {
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    color: var(--white-500);
-    opacity: .8
-}
-
-.header_dfdcae .closeButton_eec3b4:hover {
-    opacity: 1
-}
-
-.enable-forced-colors .header_dfdcae .closeButton_eec3b4 {
-    opacity: 1
 }
 
 .container_b6a0e3 {
@@ -83445,6 +83467,10 @@ input::-webkit-inner-spin-button {
     left: 20px
 }
 
+.pageWrapperBackgroundPrimary__74f14 {
+    background-color: var(--background-primary)
+}
+
 .pageWrapper__582b9 {
     display: flex;
     align-items: stretch;
@@ -84021,7 +84047,9 @@ input::-webkit-inner-spin-button {
     position: relative;
     height: 100%;
     width: 100%;
-    margin: 0 auto
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 30px
 }
 
 .productName_ece1e1 {
@@ -93359,10 +93387,17 @@ html .invoiceCancelRow_a8669b {
     color: var(--text-muted)
 }
 
-.timeoutLabelIcon_a2ca7c {
+.timeoutLabelIcon_a2ca7c,
+.unusualAccountActivityLabelIcon_b1ddbf {
     width: 16px;
     height: 16px;
     color: var(--text-danger)
+}
+
+.quarantinedLabelIcon__3938b {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted)
 }
 
 .newMembersNotice__282a0 {
@@ -109561,6 +109596,46 @@ html .invoiceCancelRow_a8669b {
     height: 48px
 }
 
+.addAnswerButton__0db97 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: background-color var(--custom-button-transition-duration)ease
+}
+
+.addAnswerButton__0db97:hover {
+    background-color: var(--background-floating)
+}
+
+.addAnswerButtonDefault_f6a374 {
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+    height: 48px;
+    padding: 0 20px 0 16px
+}
+
+.addAnswerButtonImageOnly__73d3e {
+    justify-content: center;
+    height: 175px;
+    padding: 0
+}
+
+.addAnswerIconDefault_a45ed2 {
+    width: 30px;
+    height: 30px;
+    color: var(--text-muted)
+}
+
+.addAnswerIconImageOnly__048af {
+    width: 48px;
+    height: 48px;
+    color: var(--interactive-muted)
+}
+
 .footer__1028f {
     display: flex;
     flex-direction: row;
@@ -109607,6 +109682,24 @@ html .invoiceCancelRow_a8669b {
 .icon__60715 {
     width: 16px;
     color: var(--interactive-normal)
+}
+
+.content__33f77 {
+    padding: 16px;
+    max-width: 760px
+}
+
+.header_cf90da {
+    display: flex;
+    align-items: center
+}
+
+.warningIcon__17017 {
+    color: var(--status-warning)
+}
+
+.dangerIcon__836bc {
+    color: var(--status-danger)
 }
 
 .heading-sm-normal__4a449 {
@@ -124377,4 +124470,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.49acf816f204c563e7e3.css.map*/
+/*# sourceMappingURL=app.7f373d01d6a20383026a.css.map*/

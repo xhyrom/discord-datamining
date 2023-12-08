@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["89163"], {
+    ["48449"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -566,7 +566,7 @@
                     return R
                 },
                 completeInstall: function() {
-                    return P
+                    return b
                 }
             }), n("70102");
             var i = n("872717"),
@@ -728,7 +728,7 @@
                 null != n && h.default.createShortcuts(r.InstallShortcutDesktop.getSetting(), r.InstallShortcutStartMenu.getSetting(), n.name, n.id, t.installPath)
             }
 
-            function P(e, t) {
+            function b(e, t) {
                 let s = a.default.getApplication(e);
                 i.default.post({
                     url: E.Endpoints.LIBRARY_APPLICATION_INSTALLED(e, e),
@@ -1743,8 +1743,8 @@
             var O = n("901946"),
                 D = n("42203"),
                 R = n("42887"),
-                P = n("661919"),
-                b = n("590401"),
+                b = n("661919"),
+                P = n("590401"),
                 y = n("599110"),
                 L = n("35468"),
                 k = n("773336"),
@@ -1990,7 +1990,7 @@
                                         sender_user_id: this.userId,
                                         reason: i,
                                         participant_type: "sender",
-                                        guild_region: b.default.getRegion(this.hostname),
+                                        guild_region: P.default.getRegion(this.hostname),
                                         hostname: this.hostname,
                                         ...t,
                                         ...e.getNetworkStats(),
@@ -2011,7 +2011,7 @@
                                     sender_user_id: t,
                                     reason: i,
                                     participant_type: "receiver",
-                                    guild_region: b.default.getRegion(this.hostname),
+                                    guild_region: P.default.getRegion(this.hostname),
                                     hostname: this.hostname,
                                     ...s,
                                     ...e.getNetworkStats(),
@@ -2019,7 +2019,7 @@
                                 })
                             })
                         }
-                        let t = b.default.shouldIncludePreferredRegion() ? b.default.getPreferredRegion() : null,
+                        let t = P.default.shouldIncludePreferredRegion() ? P.default.getPreferredRegion() : null,
                             n = R.default.getSettings(),
                             s = D.default.getChannel(this.channelId);
                         y.default.track(Y.AnalyticEvents.VOICE_DISCONNECT, {
@@ -2191,7 +2191,7 @@
                         })
                     }), d.on(f.BaseConnectionEvent.Error, t => {
                         if (e !== this._socket) return;
-                        let n = b.default.shouldIncludePreferredRegion() ? b.default.getPreferredRegion() : null;
+                        let n = P.default.shouldIncludePreferredRegion() ? P.default.getPreferredRegion() : null;
                         this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), y.default.track(Y.AnalyticEvents.VOICE_CONNECTION_FAILURE, {
                             ...this._getAnalyticsProperties(),
                             hostname: this.hostname,
@@ -2225,7 +2225,7 @@
                         }
                         if (n === Y.RTCConnectionStates.RTC_CONNECTING && this.state === Y.RTCConnectionStates.RTC_DISCONNECTED ? this.reconnect() : this.state === Y.RTCConnectionStates.NO_ROUTE && this._backoff.fail(this.reconnect), this.state === Y.RTCConnectionStates.RTC_CONNECTED) {
                             var i;
-                            let e = b.default.shouldIncludePreferredRegion() ? b.default.getPreferredRegion() : null;
+                            let e = P.default.shouldIncludePreferredRegion() ? P.default.getPreferredRegion() : null;
                             this._connecting && y.default.track(Y.AnalyticEvents.VOICE_CONNECTION_SUCCESS, {
                                 ...this._getAnalyticsProperties(),
                                 hostname: this.hostname,
@@ -2379,7 +2379,7 @@
                             sender_user_id: e,
                             reason: "User disconnected",
                             participant_type: "receiver",
-                            guild_region: b.default.getRegion(this.hostname),
+                            guild_region: P.default.getRegion(this.hostname),
                             hostname: this.hostname,
                             ...t,
                             ...s.getNetworkStats(),
@@ -2569,7 +2569,7 @@
                             null === (i = this._connection) || void 0 === i || i.createUser(e, t, n)
                         })
                     }
-                    this._remoteVideoSinkWants = x.DEFAULT_WANTS_FULL, P.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, S.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new G.default, L.default.addOnlineCallback(this._handleNetworkOnline), L.default.addOfflineCallback(this._handleNetworkOffline), (0, k.isDesktop)() && (this.powerMonitorListener = w.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, R.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+                    this._remoteVideoSinkWants = x.DEFAULT_WANTS_FULL, b.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, S.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new G.default, L.default.addOnlineCallback(this._handleNetworkOnline), L.default.addOfflineCallback(this._handleNetworkOffline), (0, k.isDesktop)() && (this.powerMonitorListener = w.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, R.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
                         this._supportedBandwidthEstimationExperiments = e
                     })
                 }
@@ -4857,10 +4857,10 @@
                     return R
                 },
                 CLIP_NAME_TEMPLATE: function() {
-                    return P
+                    return b
                 },
                 MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: function() {
-                    return b
+                    return P
                 },
                 CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY: function() {
                     return y
@@ -4887,8 +4887,8 @@
                 O = 640,
                 D = 360,
                 R = 100,
-                P = e => "Clip - ".concat(new Date(e).toLocaleString()),
-                b = 15,
+                b = e => "Clip - ".concat(new Date(e).toLocaleString()),
+                P = 15,
                 y = 15e3
         },
         56947: function(e, t, n) {
@@ -7395,6 +7395,48 @@
                         enabled: !0,
                         fullname: "bandwidth_estimation/trendline-window-duration-500,robust-estimator/trendline-window-duration-500,robust-estimator"
                     }
+                }, {
+                    id: 18,
+                    label: "Sender + Worker: Trendline Window Duration 1000ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-1000,robust-estimator/trendline-window-duration-1000,robust-estimator"
+                    }
+                }, {
+                    id: 19,
+                    label: "Sender + Worker: Trendline Window Duration 2500ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-2500,robust-estimator/trendline-window-duration-2500,robust-estimator"
+                    }
+                }, {
+                    id: 20,
+                    label: "Sender + Worker: Trendline Window Duration 3750ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator"
+                    }
+                }, {
+                    id: 21,
+                    label: "Sender + Worker: Trendline Window Duration 5000ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-5000,robust-estimator/trendline-window-duration-5000,robust-estimator"
+                    }
+                }, {
+                    id: 22,
+                    label: "Sender + Worker: Trendline Window Duration 6250ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-6250,robust-estimator/trendline-window-duration-6250,robust-estimator"
+                    }
+                }, {
+                    id: 23,
+                    label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-7500,robust-estimator/trendline-window-duration-7500,robust-estimator"
+                    }
                 }]
             });
             var a = {
@@ -9773,7 +9815,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return P
+                    return b
                 }
             }), n("222007"), n("702976"), n("860677");
             var i = n("917351"),
@@ -9909,7 +9951,7 @@
                 }
             }
             R.displayName = "LibraryApplicationStore";
-            var P = new R(r.default, {
+            var b = new R(r.default, {
                 LOGOUT: function() {
                     E = !1
                 },
@@ -9991,8 +10033,8 @@
                 O = n("605250"),
                 D = n("808122"),
                 R = n("733589"),
-                P = n("933034"),
-                b = n("746800"),
+                b = n("933034"),
+                P = n("746800"),
                 y = n("584687"),
                 L = n("647114");
             n("334280");
@@ -10107,8 +10149,8 @@
                 eR = {
                     [ef.DEFAULT_DEVICE_ID]: tn(eE.default.Messages.NO_VIDEO_DEVICES)
                 },
-                eP = !1,
                 eb = !1,
+                eP = !1,
                 ey = !1,
                 eL = !1,
                 ek = !1,
@@ -10166,7 +10208,7 @@
             function e3(e) {
                 let t = e0(e.context),
                     n = !eT || t.mute || t.deaf;
-                e.context === ef.MediaEngineContextTypes.DEFAULT && (n = n || eP || eb || ey || !Q.default.didHavePermission(eh.NativePermissionTypes.AUDIO)), e.setSelfMute(n), e.setSelfDeaf(t.deaf)
+                e.context === ef.MediaEngineContextTypes.DEFAULT && (n = n || eb || eP || ey || !Q.default.didHavePermission(eh.NativePermissionTypes.AUDIO)), e.setSelfMute(n), e.setSelfDeaf(t.deaf)
             }
 
             function e4() {
@@ -10241,7 +10283,7 @@
                     soundshare_failure_code: t,
                     soundshare_failure_reason: n,
                     soundshare_failure_will_retry: i,
-                    ...(0, P.default)(e)
+                    ...(0, b.default)(e)
                 })
             }
 
@@ -10518,7 +10560,7 @@
                         }
                         let {
                             signalAV1Support: o
-                        } = b.default.getCurrentConfig({
+                        } = P.default.getCurrentConfig({
                             location: "f627ab_10"
                         }, {
                             autoTrackExposure: !0
@@ -10567,7 +10609,7 @@
                                 }
                             })
                         }), e.on(g.BaseConnectionEvent.SoundshareAttached, () => {
-                            (null == a ? void 0 : a.desktopSource) != null && z.default.track(ed.AnalyticEvents.SOUNDSHARE_ATTACHED, (0, P.default)(null == a ? void 0 : a.desktopSource))
+                            (null == a ? void 0 : a.desktopSource) != null && z.default.track(ed.AnalyticEvents.SOUNDSHARE_ATTACHED, (0, b.default)(null == a ? void 0 : a.desktopSource))
                         }), e.on(g.BaseConnectionEvent.SoundshareFailed, e => {
                             let {
                                 failureCode: t,
@@ -10576,7 +10618,7 @@
                             } = e;
                             e6(null == a ? void 0 : a.desktopSource, t, n, i)
                         }), e.on(g.BaseConnectionEvent.SoundshareSpeaking, () => {
-                            (null == a ? void 0 : a.desktopSource) != null && (z.default.track(ed.AnalyticEvents.SOUNDSHARE_TRANSMITTING, (0, P.default)(null == a ? void 0 : a.desktopSource)), null != eo.default.getHookError(ed.MediaEngineHookTypes.SOUND) && C.default.wait(() => C.default.dispatch({
+                            (null == a ? void 0 : a.desktopSource) != null && (z.default.track(ed.AnalyticEvents.SOUNDSHARE_TRANSMITTING, (0, b.default)(null == a ? void 0 : a.desktopSource)), null != eo.default.getHookError(ed.MediaEngineHookTypes.SOUND) && C.default.wait(() => C.default.dispatch({
                                 type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
                             })))
                         });
@@ -10619,7 +10661,7 @@
                                 sample_count: i,
                                 success: s,
                                 reinitialization: o,
-                                ...(0, P.default)(null == a ? void 0 : a.desktopSource)
+                                ...(0, b.default)(null == a ? void 0 : a.desktopSource)
                             })
                         }), e.on(g.BaseConnectionEvent.NoiseCancellationError, e => {
                             em.warn("noisecancellererror event: ".concat(e)), eY = !0, z.default.track(ed.AnalyticEvents.VOICE_PROCESSING, {
@@ -10800,7 +10842,7 @@
                     return eT
                 }
                 isMute() {
-                    return this.isSelfMute() || eP
+                    return this.isSelfMute() || eb
                 }
                 isDeaf() {
                     return this.isSelfDeaf() || eL
@@ -10810,7 +10852,7 @@
                 }
                 isSelfMutedTemporarily() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
-                    return e === ef.MediaEngineContextTypes.DEFAULT && eb
+                    return e === ef.MediaEngineContextTypes.DEFAULT && eP
                 }
                 isSelfMute() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
@@ -11099,7 +11141,7 @@
                     } = e;
                     return t.reduce((e, t) => {
                         if (s === t.sessionId) {
-                            eP = t.mute || t.suppress, eL = t.deaf, ev.eachConnection(e3);
+                            eb = t.mute || t.suppress, eL = t.deaf, ev.eachConnection(e3);
                             let e = null != t.guildId && null != t.channelId && null != eK && eK !== t.channelId,
                                 n = !e && ek;
                             return e4(n), eK = t.channelId, !0
@@ -11108,7 +11150,7 @@
                     }, !1)
                 },
                 CONNECTION_OPEN: function(e) {
-                    s = e.sessionId, eP = !1, eL = !1, (0, q.shouldReadWriteAudioSettings)() && ta()
+                    s = e.sessionId, eb = !1, eL = !1, (0, q.shouldReadWriteAudioSettings)() && ta()
                 },
                 CONNECTION_CLOSED: function() {
                     s = null
@@ -11144,7 +11186,7 @@
                     let {
                         mute: t
                     } = e;
-                    eb = t, ev.eachConnection(e3)
+                    eP = t, ev.eachConnection(e3)
                 },
                 AUDIO_TOGGLE_SELF_MUTE: function(e) {
                     let {
@@ -11778,7 +11820,7 @@
             let i, s;
             n.r(t), n.d(t, {
                 default: function() {
-                    return P
+                    return b
                 }
             }), n("70102"), n("808653");
             var a = n("446674"),
@@ -12046,7 +12088,7 @@
                     e.client_rtc_state = R.getState()
                 })
             });
-            var P = R
+            var b = R
         },
         661919: function(e, t, n) {
             "use strict";
@@ -12366,8 +12408,8 @@
                 O = n("686470"),
                 D = n("535974"),
                 R = n("49111"),
-                P = n("6791");
-            let b = new E.default("RunningGameStore"),
+                b = n("6791");
+            let P = new E.default("RunningGameStore"),
                 y = "RunningGameStore",
                 L = [{
                     executables: [{
@@ -12488,7 +12530,7 @@
                 for (let t of U) !(t.pid in j) && (j[t.pid] = t, e.push(t));
                 let t = [];
                 for (let e of Object.values(j)) !U.some(t => t.pid === e.pid) && (t.push(e), delete j[e.pid]);
-                b.info("games", {
+                P.info("games", {
                     runningGames: U,
                     added: e,
                     removed: t,
@@ -12515,7 +12557,7 @@
                 if (e.isLauncher) return {
                     source: "LAUNCHER",
                     enabled: !1,
-                    overlayMethod: P.OverlayMethod.Disabled
+                    overlayMethod: b.OverlayMethod.Disabled
                 };
                 let t = N.default.getGameByName(e.name);
                 if (null != t) {
@@ -12523,18 +12565,18 @@
                     if (null != e) return {
                         source: "LIBRARY_APPLICATION",
                         enabled: e.isOverlayEnabled(),
-                        overlayMethod: P.OverlayMethod.Disabled
+                        overlayMethod: b.OverlayMethod.Disabled
                     }
                 }
                 let n = m.isOOPExperimentEnabled() && (0, A.isOutOfProcessOverlaySupported)(),
                     i = null == e.id ? null : K[e.id],
                     s = n && null != i && i.supportsOutOfProcessOverlay,
-                    a = s ? P.OverlayMethod.OutOfProcess : P.OverlayMethod.Hook,
+                    a = s ? b.OverlayMethod.OutOfProcess : b.OverlayMethod.Hook,
                     o = g.OverlayStoredSettings.methodOverride;
-                if (null != o && o !== P.OverlayMethod.Disabled) {
-                    let t = P.OverlayMethod[a],
-                        n = P.OverlayMethod[o];
-                    b.info("getOverlayGameStatus: overlay method overriden ".concat(t, " -> ").concat(n, " (").concat(e.name, ")")), a = o
+                if (null != o && o !== b.OverlayMethod.Disabled) {
+                    let t = b.OverlayMethod[a],
+                        n = b.OverlayMethod[o];
+                    P.info("getOverlayGameStatus: overlay method overriden ".concat(t, " -> ").concat(n, " (").concat(e.name, ")")), a = o
                 }
                 let r = H.enableOverlay[$(e)];
                 return null != r ? {
@@ -12548,7 +12590,7 @@
                 } : {
                     source: "DEFAULT",
                     enabled: !1,
-                    overlayMethod: P.OverlayMethod.Hook
+                    overlayMethod: b.OverlayMethod.Hook
                 }
             }(a = s || (s = {})).LAUNCHER = "LAUNCHER", a.LIBRARY_APPLICATION = "LIBRARY_APPLICATION", a.USER_OVERRIDE = "USER_OVERRIDE", a.DATABASE = "DATABASE", a.DEFAULT = "DEFAULT";
 
@@ -12787,7 +12829,7 @@
                     return H.gameOverrides[$(e)]
                 }
                 getGameOverlayStatus(e) {
-                    if (e.hidden || e.isLauncher || e.elevated || e.sandboxed) return b.verbose("getGameOverlayStatus: Overlay not supported.", e), null;
+                    if (e.hidden || e.isLauncher || e.elevated || e.sandboxed) return P.verbose("getGameOverlayStatus: Overlay not supported.", e), null;
                     let t = et(e);
                     return t.enabled ? t : null
                 }
@@ -12930,21 +12972,21 @@
                 O = n("162771"),
                 D = n("49111"),
                 R = n("724210");
-            let P = "SelectedChannelStore",
-                b = {},
+            let b = "SelectedChannelStore",
+                P = {},
                 y = {},
                 L = {},
                 k = new Set;
 
             function w() {
-                !__OVERLAY__ && p.default.set(P, {
+                !__OVERLAY__ && p.default.set(b, {
                     selectedChannelId: a,
                     selectedVoiceChannelId: r,
                     lastChannelFollowingDestination: o,
                     lastConnectedTime: l,
-                    selectedChannelIds: b,
+                    selectedChannelIds: P,
                     mostRecentSelectedTextChannelIds: L,
-                    knownThreadIds: c(b).values().concat(c.values(L)).filter(v.isNotNullish).uniq().filter(e => {
+                    knownThreadIds: c(P).values().concat(c.values(L)).filter(v.isNotNullish).uniq().filter(e => {
                         let t = I.default.getBasicChannel(e);
                         return k.has(e) || null != t && _.THREAD_CHANNEL_TYPES.has(t.type)
                     }).value()
@@ -12975,12 +13017,12 @@
             function F() {
                 let e = !1,
                     t = A.default.getGuilds();
-                return c.each(b, (t, n) => {
-                    (null == t || !I.default.hasChannel(t) && t !== a && !k.has(t) && !(0, R.isGuildHomeChannel)(t)) && (delete b[n], delete y[n], e = !0)
+                return c.each(P, (t, n) => {
+                    (null == t || !I.default.hasChannel(t) && t !== a && !k.has(t) && !(0, R.isGuildHomeChannel)(t)) && (delete P[n], delete y[n], e = !0)
                 }), c.each(L, (t, n) => {
                     (null == t || !I.default.hasChannel(t) && !k.has(t)) && (delete L[n], e = !0)
                 }), c.each(t, e => {
-                    let t = b[e.id];
+                    let t = P[e.id];
                     null == L[e.id] && M(e.id, t)
                 }), null != l && Date.now() - l >= 3e5 && (r = null, e = !0), e
             }
@@ -12988,11 +13030,11 @@
             function x(e, t) {
                 if (k.delete(e), null == t) {
                     let n = O.default.getGuildId();
-                    b[String(n)] === e && (t = n)
+                    P[String(n)] === e && (t = n)
                 }
                 let n = null != A.default.getGuild(t) ? t : null,
                     i = !1;
-                r === e && (r = null, i = !0), !(0, E.isInMainTabsExperiment)() && (b[String(n)] === e && (b[String(n)] = V(String(n)), O.default.getGuildId() === n && (0, g.replaceWith)(D.Routes.CHANNEL(t, b[String(n)])), i = !0), null != n && L[n] === e && (delete L[n], i = !0)), i && w()
+                r === e && (r = null, i = !0), !(0, E.isInMainTabsExperiment)() && (P[String(n)] === e && (P[String(n)] = V(String(n)), O.default.getGuildId() === n && (0, g.replaceWith)(D.Routes.CHANNEL(t, P[String(n)])), i = !0), null != n && L[n] === e && (delete L[n], i = !0)), i && w()
             }
 
             function G(e) {
@@ -13008,15 +13050,15 @@
                 initialize() {
                     if (!__OVERLAY__) {
                         var e, t;
-                        let n = null !== (e = p.default.get(P)) && void 0 !== e ? e : {
+                        let n = null !== (e = p.default.get(b)) && void 0 !== e ? e : {
                             selectedChannelId: a,
                             selectedVoiceChannelId: r,
                             lastChannelFollowingDestination: o,
                             lastConnectedTime: l,
-                            selectedChannelIds: b,
+                            selectedChannelIds: P,
                             mostRecentSelectedTextChannelIds: L
                         };
-                        null != n.knownThreadIds && (k = new Set(n.knownThreadIds)), r = n.selectedVoiceChannelId, o = n.lastChannelFollowingDestination, l = n.lastConnectedTime, L = null !== (t = n.mostRecentSelectedTextChannelIds) && void 0 !== t ? t : {}, null != n.selectedChannelIds && (b = {
+                        null != n.knownThreadIds && (k = new Set(n.knownThreadIds)), r = n.selectedVoiceChannelId, o = n.lastChannelFollowingDestination, l = n.lastConnectedTime, L = null !== (t = n.mostRecentSelectedTextChannelIds) && void 0 !== t ? t : {}, null != n.selectedChannelIds && (P = {
                             ...n.selectedChannelIds,
                             null: null
                         })
@@ -13026,7 +13068,7 @@
                 getChannelId(e) {
                     var t, n;
                     let i = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-                    return e = String(e === D.ME ? null : null !== (t = null != e ? e : O.default.getGuildId()) && void 0 !== t ? t : null), i ? null !== (n = b[e]) && void 0 !== n ? n : V(e) : b[e]
+                    return e = String(e === D.ME ? null : null !== (t = null != e ? e : O.default.getGuildId()) && void 0 !== t ? t : null), i ? null !== (n = P[e]) && void 0 !== n ? n : V(e) : P[e]
                 }
                 getVoiceChannelId() {
                     return N.default.isSupported() ? r : null
@@ -13036,7 +13078,7 @@
                     return null == e ? null : null !== (t = L[e]) && void 0 !== t ? t : null
                 }
                 getCurrentlySelectedChannelId(e) {
-                    return null != e ? b[e] : a
+                    return null != e ? P[e] : a
                 }
                 getLastSelectedChannelId(e) {
                     return null != e ? y[e] : s
@@ -13056,7 +13098,7 @@
                     t && w()
                 },
                 OVERLAY_INITIALIZE: function(e) {
-                    i = e.sessionId, r = e.selectedVoiceChannelId, b = {}, y = {}, a = e.selectedChannelId, b[e.selectedGuildId] = e.selectedChannelId, M(e.selectedGuildId, a), F()
+                    i = e.sessionId, r = e.selectedVoiceChannelId, P = {}, y = {}, a = e.selectedChannelId, P[e.selectedGuildId] = e.selectedChannelId, M(e.selectedGuildId, a), F()
                 },
                 CONNECTION_CLOSED: function() {
                     i = null
@@ -13067,7 +13109,7 @@
                         channelId: n
                     } = e;
                     if (void 0 === t) return !1;
-                    null == n && (!(0, E.isInMainTabsExperiment)() || (0, S.shouldHandleNewPanelsRoute)(t) || (0, m.isOnGlobalPanels)()) && (n = V(t)), null != a && n !== a && (s = a), a = n, M(t, n), b[String(t)] !== n && (y[String(t)] = b[String(t)], b[String(t)] = a), w()
+                    null == n && (!(0, E.isInMainTabsExperiment)() || (0, S.shouldHandleNewPanelsRoute)(t) || (0, m.isOnGlobalPanels)()) && (n = V(t)), null != a && n !== a && (s = a), a = n, M(t, n), P[String(t)] !== n && (y[String(t)] = P[String(t)], P[String(t)] = a), w()
                 },
                 CHANNEL_CREATE: function(e) {
                     let {
@@ -13077,7 +13119,7 @@
                         case D.ChannelTypes.GUILD_ANNOUNCEMENT:
                         case D.ChannelTypes.GUILD_TEXT:
                             let n = t.guild_id;
-                            if (null != n && null == L[n] && (L[n] = t.id), null != n && null == b[n]) return b[n] = V(n), !0
+                            if (null != n && null == L[n] && (L[n] = t.id), null != n && null == P[n]) return P[n] = V(n), !0
                     }
                     return !1
                 },
@@ -13093,9 +13135,9 @@
                     let {
                         guild: t
                     } = e;
-                    if (null == b[t.id]) {
+                    if (null == P[t.id]) {
                         let e = V(t.id);
-                        b[t.id] = e, M(t.id, e), w()
+                        P[t.id] = e, M(t.id, e), w()
                     }
                 },
                 GUILD_DELETE: function(e) {
@@ -13105,8 +13147,8 @@
                             unavailable: n
                         }
                     } = e;
-                    if (r === b[t] && (r = null), n) return !1;
-                    delete L[t], delete b[t], w()
+                    if (r === P[t] && (r = null), n) return !1;
+                    delete L[t], delete P[t], w()
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
@@ -13115,7 +13157,7 @@
                     if (null == t) {
                         let e = I.default.getChannel(r),
                             t = null == e ? void 0 : e.guild_id;
-                        null != t && t !== O.default.getGuildId() && b[t] === r && (b[t] = V(t))
+                        null != t && t !== O.default.getGuildId() && P[t] === r && (P[t] = V(t))
                     }
                     r = t, w()
                 },
@@ -13152,7 +13194,7 @@
                     }, w())
                 },
                 LOGOUT: function() {
-                    b = {}, a = null, s = void 0, L = {}, o = {}, r = null, p.default.remove(P)
+                    P = {}, a = null, s = void 0, L = {}, o = {}, r = null, p.default.remove(b)
                 }
             })
         },
@@ -13533,7 +13575,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return P
+                    return b
                 }
             }), n("222007"), n("424973");
             var i = n("917351"),
@@ -13610,7 +13652,7 @@
                 }
             }
             R.displayName = "ApplicationBuildStore";
-            var P = new R(r.default, {
+            var b = new R(r.default, {
                 CONNECTION_OPEN: function() {
                     return A(216e5), N()
                 },
@@ -14176,11 +14218,11 @@
                 D = [],
                 R = !1;
 
-            function P(e) {
+            function b(e) {
                 return e.type === g.LocalDispatchApplicationStates.INSTALLING || e.type === g.LocalDispatchApplicationStates.UPDATING || e.type === g.LocalDispatchApplicationStates.REPAIRING ? e.networkProgress : null
             }
 
-            function b(e) {
+            function P(e) {
                 return e.type === g.LocalDispatchApplicationStates.INSTALLING || e.type === g.LocalDispatchApplicationStates.UPDATING || e.type === g.LocalDispatchApplicationStates.REPAIRING ? e.diskProgress : null
             }
 
@@ -14407,9 +14449,9 @@
                                     }
                                     throw Error("Invalid Dispatch State. state=".concat(e.state.type))
                                 }(i[e][t]), null != _[d]) {
-                                let e = V(n, d, P);
+                                let e = V(n, d, b);
                                 e > 0 && L(I += e);
-                                let i = V(n, d, b);
+                                let i = V(n, d, P);
                                 i > 0 && w(T += i);
                                 let a = V(n, d, y);
                                 if (a > 0 && k(A += a), s === t) {
@@ -14476,8 +14518,8 @@
                 O = !1,
                 D = null,
                 R = null,
-                P = !1,
-                b = new Map,
+                b = !1,
+                P = new Map,
                 y = !1,
                 L = null;
 
@@ -14485,7 +14527,7 @@
                 let e = {
                     queue: A,
                     paused: O,
-                    userActions: Array.from(b)
+                    userActions: Array.from(P)
                 };
                 d.default.set(T, e)
             }
@@ -14570,7 +14612,7 @@
                         comboId: e,
                         action: "Patch"
                     } : e);
-                    null != t.paused && (O = t.paused), null != t.userActions && (b = new Map(Array.from(t.userActions))), this.waitFor(_.default, f.default), this.syncWith([f.default], B), this.waitFor(_.default)
+                    null != t.paused && (O = t.paused), null != t.userActions && (P = new Map(Array.from(t.userActions))), this.waitFor(_.default, f.default), this.syncWith([f.default], B), this.waitFor(_.default)
                 }
                 get activeItems() {
                     return A.map(e => {
@@ -14600,7 +14642,7 @@
                         applicationId: t,
                         branchId: n
                     } = e;
-                    b.set((0, m.getComboId)(t, n), "Install"), M(t, n, !1, "Patch")
+                    P.set((0, m.getComboId)(t, n), "Install"), M(t, n, !1, "Patch")
                 },
                 DISPATCH_APPLICATION_UPDATE: function(e) {
                     let {
@@ -14619,7 +14661,7 @@
                         applicationId: t,
                         branchId: n
                     } = e;
-                    b.set((0, m.getComboId)(t, n), "Repair"), M(t, n, !1, "Repair")
+                    P.set((0, m.getComboId)(t, n), "Repair"), M(t, n, !1, "Repair")
                 },
                 DISPATCH_APPLICATION_MOVE_UP: function(e) {
                     let {
@@ -14634,7 +14676,7 @@
                     let {
                         state: t
                     } = e;
-                    !P && (P = !0, w(), !O && S.default.resume());
+                    !b && (b = !0, w(), !O && S.default.resume());
                     let n = O;
                     O = t.paused, D = t.currentTask, R = t.nextTask;
                     let i = !1;
@@ -14646,8 +14688,8 @@
                             branchId: s
                         } = (0, m.convertComboId)(t), a = _.default.getState(n, s), o = E.default.getTargetBuildId(n, s), r = E.default.getTargetManifests(n, s);
                         if (null != a && a.type === v.LocalDispatchApplicationStates.UP_TO_DATE && a.buildId === a.targetBuildId && a.buildId === o && l.isEqual(a.manifestIds, a.targetManifestIds) && l.isEqual(a.manifestIds, r)) {
-                            if (N.push(t), b.has(t)) {
-                                let e = b.get(t);
+                            if (N.push(t), P.has(t)) {
+                                let e = P.get(t);
                                 switch (e) {
                                     case "Install":
                                         h.completeInstall(n, a);
@@ -14655,7 +14697,7 @@
                                     case "Repair":
                                         h.completeRepair(n, a)
                                 }
-                                b.delete(t)
+                                P.delete(t)
                             }
                             return i = !0, !1
                         }
@@ -15164,7 +15206,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "252471"
+                                build_number: "252770"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -16041,10 +16083,10 @@
                     return R
                 },
                 Codecs: function() {
-                    return P
+                    return b
                 },
                 SpeakingFlags: function() {
-                    return b
+                    return P
                 },
                 MediaTypes: function() {
                     return y
@@ -16062,7 +16104,7 @@
                     return M
                 }
             });
-            var i, s, a, o, r, l, u, d, c, h, p, f, E, m, S, g, _, v, C, I, T, A, N, O, D, R, P, b, y, L, k, w, V, M, U = n("771281");
+            var i, s, a, o, r, l, u, d, c, h, p, f, E, m, S, g, _, v, C, I, T, A, N, O, D, R, b, P, y, L, k, w, V, M, U = n("771281");
             (i = v || (v = {})).DEFAULT = "default", i.STREAM = "stream", (s = C || (C = {})).AUDIO_INPUT = "audioinput", s.AUDIO_OUTPUT = "audiooutput", s.VIDEO_INPUT = "videoinput", (a = I || (I = {})).PUSH_TO_TALK = "PUSH_TO_TALK", a.VOICE_ACTIVITY = "VOICE_ACTIVITY", (o = T || (T = {})).DISCONNECTED = "DISCONNECTED", o.CONNECTING = "CONNECTING", o.CONNECTED = "CONNECTED", o.NO_ROUTE = "NO_ROUTE", o.ICE_CHECKING = "ICE_CHECKING", o.DTLS_CONNECTING = "DTLS_CONNECTING", (r = A || (A = {}))[r.TRANSPORT = 1] = "TRANSPORT", r[r.OUTBOUND = 2] = "OUTBOUND", r[r.INBOUND = 4] = "INBOUND", r[r.ALL = 7] = "ALL", (l = N || (N = {})).MANUAL_DISABLE = "video_manual_disable", l.MANUAL_ENABLE = "video_manual_enable", l.MANUAL_REENABLE = "video_manual_reenable", l.AUTO_DISABLE = "video_auto_disable", l.AUTO_ENABLE = "video_auto_enable", l.AUTO_DOWNGRADE = "video_auto_downgrade", l.AUTO_UPGRADE = "video_auto_upgrade,";
             let F = 100,
                 x = 18,
@@ -16112,7 +16154,7 @@
                     backoffTimeSec: 15
                 },
                 es = 6e4;
-            (u = O || (O = {})).AUTO_ENABLE = "AUTO_ENABLE", u.ATTENUATION = "ATTENUATION", u.AUDIO_INPUT_DEVICE = "AUDIO_INPUT_DEVICE", u.AUDIO_OUTPUT_DEVICE = "AUDIO_OUTPUT_DEVICE", u.VOICE_PROCESSING = "VOICE_PROCESSING", u.QOS = "QOS", u.NATIVE_PING = "NATIVE_PING", u.LEGACY_AUDIO_SUBSYSTEM = "LEGACY_AUDIO_SUBSYSTEM", u.EXPERIMENTAL_AUDIO_SUBSYSTEM = "EXPERIMENTAL_AUDIO_SUBSYSTEM", u.DEBUG_LOGGING = "DEBUG_LOGGING", u.AUTOMATIC_VAD = "AUTOMATIC_VAD", u.VOICE_PANNING = "VOICE_PANNING", u.DIAGNOSTICS = "DIAGNOSTICS", u.VIDEO = "VIDEO", u.DESKTOP_CAPTURE = "DESKTOP_CAPTURE", u.DESKTOP_CAPTURE_FORMAT = "DESKTOP_CAPTURE_FORMAT", u.DESKTOP_CAPTURE_APPLICATIONS = "DESKTOP_CAPTURE_APPLICATIONS", u.SOUNDSHARE = "SOUNDSHARE", u.LOOPBACK = "LOOPBACK", u.VIDEO_HOOK = "VIDEO_HOOK", u.EXPERIMENTAL_SOUNDSHARE = "EXPERIMENTAL_SOUNDSHARE", u.WUMPUS_VIDEO = "WUMPUS_VIDEO", u.ELEVATED_HOOK = "ELEVATED_HOOK", u.HYBRID_VIDEO = "HYBRID_VIDEO", u.OPEN_H264 = "OPEN_H264", u.EXPERIMENTAL_ENCODERS = "EXPERIMENTAL_ENCODERS", u.REMOTE_LOCUS_NETWORK_CONTROL = "REMOTE_LOCUS_NETWORK_CONTROL", u.SCREEN_PREVIEWS = "SCREEN_PREVIEWS", u.WINDOW_PREVIEWS = "WINDOW_PREVIEWS", u.AUDIO_DEBUG_STATE = "AUDIO_DEBUG_STATE", u.AEC_DUMP = "AEC_DUMP", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.CONNECTION_REPLAY = "CONNECTION_REPLAY", u.SIMULCAST = "SIMULCAST", u.RTC_REGION_RANKING = "RTC_REGION_RANKING", u.DIRECT_VIDEO = "DIRECT_VIDEO", u.ELECTRON_VIDEO = "ELECTRON_VIDEO", u.MEDIAPIPE = "MEDIAPIPE", u.FIXED_KEYFRAME_INTERVAL = "FIXED_KEYFRAME_INTERVAL", u.SAMPLE_PLAYBACK = "SAMPLE_PLAYBACK", u.FIRST_FRAME_CALLBACK = "FIRST_FRAME_CALLBACK", u.REMOTE_USER_MULTI_STREAM = "REMOTE_USER_MULTI_STREAM", u.NOISE_SUPPRESSION = "NOISE_SUPPRESSION", u.NOISE_CANCELLATION = "NOISE_CANCELLATION", u.AUTOMATIC_GAIN_CONTROL = "AUTOMATIC_GAIN_CONTROL", u.CLIPS = "CLIPS", u.SPEED_TEST = "SPEED_TEST", u.IMAGE_QUALITY_MEASUREMENT = "IMAGE_QUALITY_MEASUREMENT", u.AMD_EXPERIMENTAL_RATE_CONTROL = "AMD_EXPERIMENTAL_RATE_CONTROL", u.GO_LIVE_HARDWARE = "GO_LIVE_HARDWARE", u.SCREEN_CAPTURE_KIT = "SCREEN_CAPTURE_KIT", u.CAPTURE_TIMEOUT_EXPERIMENTS = "CAPTURE_TIMEOUT_EXPERIMENTS", (d = D || (D = {})).NATIVE = "NATIVE", d.WEBRTC = "WEBRTC", d.DUMMY = "DUMMY", (c = R || (R = {})).LEGACY = "legacy", c.STANDARD = "standard", c.EXPERIMENTAL = "experimental", (h = P || (P = {})).OPUS = "opus", h.VP8 = "VP8", h.VP9 = "VP9", h.H264 = "H264", h.RTX = "rtx", h.TEST = "TEST", (p = b || (b = {}))[p.NONE = 0] = "NONE", p[p.VOICE = 1] = "VOICE", p[p.SOUNDSHARE = 2] = "SOUNDSHARE", p[p.PRIORITY = 4] = "PRIORITY", (f = y || (y = {})).AUDIO = "audio", f.VIDEO = "video", f.SCREEN = "screen", f.TEST = "test", (E = L || (L = {})).PLAYING = "playing", E.PAUSED = "paused", (m = k || (k = {})).FIXED = "fixed", m.SOURCE = "source", (S = w || (w = {})).VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", S.SIGNAL_H265_SUPPORT = "signal_h265_support", S.SIGNAL_AV1_SUPPORT = "signal_av1_support", S.STREAMER_CLIP = "streamer_clip", S.VIEWER_CLIP = "viewer_clip", (g = V || (V = {}))[g.AUTO = 1] = "AUTO", g[g.FULL = 2] = "FULL", (_ = M || (M = {}))[_.CPU_OVERUSE = 1] = "CPU_OVERUSE", _[_.FAILED = 2] = "FAILED", _[_.VAD_CPU_OVERUSE = 3] = "VAD_CPU_OVERUSE", _[_.INITIALIZED = 4] = "INITIALIZED"
+            (u = O || (O = {})).AUTO_ENABLE = "AUTO_ENABLE", u.ATTENUATION = "ATTENUATION", u.AUDIO_INPUT_DEVICE = "AUDIO_INPUT_DEVICE", u.AUDIO_OUTPUT_DEVICE = "AUDIO_OUTPUT_DEVICE", u.VOICE_PROCESSING = "VOICE_PROCESSING", u.QOS = "QOS", u.NATIVE_PING = "NATIVE_PING", u.LEGACY_AUDIO_SUBSYSTEM = "LEGACY_AUDIO_SUBSYSTEM", u.EXPERIMENTAL_AUDIO_SUBSYSTEM = "EXPERIMENTAL_AUDIO_SUBSYSTEM", u.DEBUG_LOGGING = "DEBUG_LOGGING", u.AUTOMATIC_VAD = "AUTOMATIC_VAD", u.VOICE_PANNING = "VOICE_PANNING", u.DIAGNOSTICS = "DIAGNOSTICS", u.VIDEO = "VIDEO", u.DESKTOP_CAPTURE = "DESKTOP_CAPTURE", u.DESKTOP_CAPTURE_FORMAT = "DESKTOP_CAPTURE_FORMAT", u.DESKTOP_CAPTURE_APPLICATIONS = "DESKTOP_CAPTURE_APPLICATIONS", u.SOUNDSHARE = "SOUNDSHARE", u.LOOPBACK = "LOOPBACK", u.VIDEO_HOOK = "VIDEO_HOOK", u.EXPERIMENTAL_SOUNDSHARE = "EXPERIMENTAL_SOUNDSHARE", u.WUMPUS_VIDEO = "WUMPUS_VIDEO", u.ELEVATED_HOOK = "ELEVATED_HOOK", u.HYBRID_VIDEO = "HYBRID_VIDEO", u.OPEN_H264 = "OPEN_H264", u.EXPERIMENTAL_ENCODERS = "EXPERIMENTAL_ENCODERS", u.REMOTE_LOCUS_NETWORK_CONTROL = "REMOTE_LOCUS_NETWORK_CONTROL", u.SCREEN_PREVIEWS = "SCREEN_PREVIEWS", u.WINDOW_PREVIEWS = "WINDOW_PREVIEWS", u.AUDIO_DEBUG_STATE = "AUDIO_DEBUG_STATE", u.AEC_DUMP = "AEC_DUMP", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.CONNECTION_REPLAY = "CONNECTION_REPLAY", u.SIMULCAST = "SIMULCAST", u.RTC_REGION_RANKING = "RTC_REGION_RANKING", u.DIRECT_VIDEO = "DIRECT_VIDEO", u.ELECTRON_VIDEO = "ELECTRON_VIDEO", u.MEDIAPIPE = "MEDIAPIPE", u.FIXED_KEYFRAME_INTERVAL = "FIXED_KEYFRAME_INTERVAL", u.SAMPLE_PLAYBACK = "SAMPLE_PLAYBACK", u.FIRST_FRAME_CALLBACK = "FIRST_FRAME_CALLBACK", u.REMOTE_USER_MULTI_STREAM = "REMOTE_USER_MULTI_STREAM", u.NOISE_SUPPRESSION = "NOISE_SUPPRESSION", u.NOISE_CANCELLATION = "NOISE_CANCELLATION", u.AUTOMATIC_GAIN_CONTROL = "AUTOMATIC_GAIN_CONTROL", u.CLIPS = "CLIPS", u.SPEED_TEST = "SPEED_TEST", u.IMAGE_QUALITY_MEASUREMENT = "IMAGE_QUALITY_MEASUREMENT", u.AMD_EXPERIMENTAL_RATE_CONTROL = "AMD_EXPERIMENTAL_RATE_CONTROL", u.GO_LIVE_HARDWARE = "GO_LIVE_HARDWARE", u.SCREEN_CAPTURE_KIT = "SCREEN_CAPTURE_KIT", u.CAPTURE_TIMEOUT_EXPERIMENTS = "CAPTURE_TIMEOUT_EXPERIMENTS", (d = D || (D = {})).NATIVE = "NATIVE", d.WEBRTC = "WEBRTC", d.DUMMY = "DUMMY", (c = R || (R = {})).LEGACY = "legacy", c.STANDARD = "standard", c.EXPERIMENTAL = "experimental", (h = b || (b = {})).OPUS = "opus", h.VP8 = "VP8", h.VP9 = "VP9", h.H264 = "H264", h.RTX = "rtx", h.TEST = "TEST", (p = P || (P = {}))[p.NONE = 0] = "NONE", p[p.VOICE = 1] = "VOICE", p[p.SOUNDSHARE = 2] = "SOUNDSHARE", p[p.PRIORITY = 4] = "PRIORITY", (f = y || (y = {})).AUDIO = "audio", f.VIDEO = "video", f.SCREEN = "screen", f.TEST = "test", (E = L || (L = {})).PLAYING = "playing", E.PAUSED = "paused", (m = k || (k = {})).FIXED = "fixed", m.SOURCE = "source", (S = w || (w = {})).VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", S.SIGNAL_H265_SUPPORT = "signal_h265_support", S.SIGNAL_AV1_SUPPORT = "signal_av1_support", S.STREAMER_CLIP = "streamer_clip", S.VIEWER_CLIP = "viewer_clip", (g = V || (V = {}))[g.AUTO = 1] = "AUTO", g[g.FULL = 2] = "FULL", (_ = M || (M = {}))[_.CPU_OVERUSE = 1] = "CPU_OVERUSE", _[_.FAILED = 2] = "FAILED", _[_.VAD_CPU_OVERUSE = 3] = "VAD_CPU_OVERUSE", _[_.INITIALIZED = 4] = "INITIALIZED"
         },
         870630: function(e, t, n) {
             "use strict";
@@ -22103,4 +22145,4 @@
         }
     }
 ]);
-//# sourceMappingURL=89163.0bf9f9278e5b3b113710.js.map
+//# sourceMappingURL=48449.2788ab92622b70146c50.js.map

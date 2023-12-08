@@ -941,22 +941,24 @@
                     }
                     let {
                         requireUnusualDmActivity: l,
-                        requireCommunicationDisabled: a
-                    } = e, u = {};
-                    l && (u.unusual_dm_activity_until = {
+                        requireCommunicationDisabled: a,
+                        requireUnusualAccountActivity: u,
+                        requireUsernameQuarantined: o
+                    } = e, i = {};
+                    l && (i.unusual_dm_activity_until = {
                         range: {
                             gte: Date.now() - S.UNUSUAL_DM_COMPARISON_DELTA
                         }
-                    }), a && (u.communication_disabled_until = {
+                    }), a && (i.communication_disabled_until = {
                         range: {
                             gte: Date.now()
                         }
-                    }), Object.keys(u).length > 0 && (n.or_query.safety_signals = u);
+                    }), u && (i.unusual_account_activity = u), o && (i.automod_quarantined_username = o), Object.keys(i).length > 0 && (n.or_query.safety_signals = i);
                     let {
-                        selectedRoleIds: o
+                        selectedRoleIds: s
                     } = e;
-                    return o.size > 0 && (n.and_query.role_ids = {
-                        and_query: Array.from(o)
+                    return s.size > 0 && (n.and_query.role_ids = {
+                        and_query: Array.from(s)
                     }), n
                 }(a), null == (n = A) ? t : {
                     ...t,
@@ -1884,4 +1886,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59459.d05112a821254d7fe77b.js.map
+//# sourceMappingURL=59459.805f1d37a012735e4e89.js.map

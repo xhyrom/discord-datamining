@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["28794"], {
+    ["74783"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -2263,8 +2263,8 @@
                         config: {
                             showSettingsToggle: !0,
                             allowCollection: !1,
-                            getNewSettingsDescriptionLine1: () => u.default.Messages.INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_1,
-                            getNewSettingsDescriptionLine2: () => u.default.Messages.INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_2
+                            getNewSettingsDescriptionLine1: () => null,
+                            getNewSettingsDescriptionLine2: () => null
                         }
                     }, {
                         id: 2,
@@ -2272,12 +2272,21 @@
                         config: {
                             showSettingsToggle: !0,
                             allowCollection: !0,
-                            getNewSettingsDescriptionLine1: () => u.default.Messages.INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_1,
-                            getNewSettingsDescriptionLine2: () => u.default.Messages.INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_2
+                            getNewSettingsDescriptionLine1: () => null,
+                            getNewSettingsDescriptionLine2: () => null
                         }
                     }, {
                         id: 3,
                         label: "Show settings toggle, and collection is allowed in late August.",
+                        config: {
+                            showSettingsToggle: !0,
+                            allowCollection: !0,
+                            getNewSettingsDescriptionLine1: () => null,
+                            getNewSettingsDescriptionLine2: () => null
+                        }
+                    }, {
+                        id: 4,
+                        label: "Show settings toggle, allow collection for guild setting, and show rollback admin coachmark",
                         config: {
                             showSettingsToggle: !0,
                             allowCollection: !0,
@@ -3363,34 +3372,6 @@
             }
             n("884691")
         },
-        476765: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                uid: function() {
-                    return o
-                },
-                useUID: function() {
-                    return u
-                },
-                UID: function() {
-                    return s
-                }
-            });
-            var i = n("995008"),
-                l = n.n(i),
-                r = n("775560");
-            let o = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
-                    return l(e)
-                },
-                u = () => (0, r.useLazyValue)(() => o()),
-                s = e => {
-                    let {
-                        children: t
-                    } = e;
-                    return t(u())
-                }
-        },
         109264: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -4346,4 +4327,4 @@
         }
     }
 ]);
-//# sourceMappingURL=28794.e7bc833e74871b93f6f7.js.map
+//# sourceMappingURL=74783.f757e19ccddf8f692dc9.js.map

@@ -175,7 +175,7 @@
                     return R
                 },
                 getBuiltInCommands: function() {
-                    return U
+                    return B
                 }
             }), n("222007"), n("70102");
             var i = n("627445"),
@@ -811,7 +811,11 @@
                         get displayDescription() {
                             return v.default.Messages.COMMAND_MSG_MESSAGE_DESCRIPTION
                         },
-                        required: !0
+                        required: !0,
+                        get maxLength() {
+                            var L;
+                            return (null === (L = N.default.getCurrentUser()) || void 0 === L ? void 0 : L.premiumType) ? O.MAX_MESSAGE_LENGTH_PREMIUM : O.MAX_MESSAGE_LENGTH
+                        }
                     }],
                     execute: (e, t) => {
                         var n;
@@ -828,9 +832,9 @@
                         })
                     }
                 }],
-                L = P.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.name)),
-                U = (e, t, n) => {
-                    let i = t ? P : L;
+                U = P.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.name)),
+                B = (e, t, n) => {
+                    let i = t ? P : U;
                     return i = i.filter(t => t.type === e && (!n || t.inputType === g.ApplicationCommandInputType.BUILT_IN_TEXT || t.inputType === g.ApplicationCommandInputType.BUILT_IN_INTEGRATION))
                 }
         },
@@ -1113,8 +1117,7 @@
                     result: {
                         sections: {},
                         sectionIdsByBotId: {},
-                        version: F,
-                        commandTypeCount: {}
+                        version: F
                     }
                 }),
                 w = Object.freeze({
@@ -1254,21 +1257,21 @@
                     }
                 },
                 APPLICATION_COMMAND_INDEX_FETCH_SUCCESS: function(e) {
-                    var t, n, i;
+                    var t, n;
                     let {
-                        target: l,
-                        index: a
-                    } = e, s = null === (t = A.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
-                    if (null == s) return !1;
-                    let o = {},
-                        r = {},
-                        u = new Set;
-                    for (let e of a.applications) {
+                        target: i,
+                        index: l
+                    } = e, a = null === (t = A.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                    if (null == a) return !1;
+                    let s = {},
+                        o = {},
+                        r = new Set;
+                    for (let e of l.applications) {
                         if (null == e.bot && null != e.bot_id) {
-                            r[e.bot_id] = e.id;
+                            o[e.bot_id] = e.id;
                             let t = A.default.getUser(e.bot_id);
-                            null != t ? e.bot = t : u.add(e.bot_id)
-                        } else null != e.bot && (r[e.bot.id] = e.id);
+                            null != t ? e.bot = t : r.add(e.bot_id)
+                        } else null != e.bot && (o[e.bot.id] = e.id);
                         let t = {
                             descriptor: {
                                 ...(0, v.getApplicationCommandSection)(function(e) {
@@ -1280,16 +1283,14 @@
                                         bot: e.bot
                                     }
                                 }(e)),
-                                permissions: null != e.permissions ? (0, f.keyPermissions)(el(e.permissions, s)) : void 0,
+                                permissions: null != e.permissions ? (0, f.keyPermissions)(el(e.permissions, a)) : void 0,
                                 botId: e.bot_id
                             },
                             commands: {}
                         };
-                        o[e.id] = t
+                        s[e.id] = t
                     }
-                    "guild" === l.type && u.size > 0 && c.default.requestMembersById(l.guildId, [...u]);
-                    let d = {};
-                    for (let e of (0, v.buildApplicationCommands)(a.application_commands.map(e => (function(e, t) {
+                    for (let e of ("guild" === i.type && r.size > 0 && c.default.requestMembersById(i.guildId, [...r]), (0, v.buildApplicationCommands)(l.application_commands.map(e => (function(e, t) {
                             var n, i, l, a, s;
                             let o = {
                                 ...e,
@@ -1300,22 +1301,21 @@
                                 permissions: null != e.permissions ? el(e.permissions, t) : void 0
                             };
                             return e.description !== e.description_default && (o.description_localized = e.description), e.name !== e.name_default && (o.name_localized = e.name), o
-                        })(e, s)), !0)) {
-                        let t = o[e.applicationId];
+                        })(e, a)), !0))) {
+                        let t = s[e.applicationId];
                         if (null == t) {
                             L.error("Command has no matching application");
                             continue
                         }
-                        t.commands[e.id] = e, d[e.type] = (null !== (n = d[e.type]) && void 0 !== n ? n : 0) + 1
+                        t.commands[e.id] = e
                     }
-                    let p = null !== (i = a.version) && void 0 !== i ? i : F;
-                    W(l, {
-                        serverVersion: p,
+                    let u = null !== (n = l.version) && void 0 !== n ? n : F;
+                    W(i, {
+                        serverVersion: u,
                         result: {
-                            sections: o,
-                            sectionIdsByBotId: r,
-                            version: p,
-                            commandTypeCount: d
+                            sections: s,
+                            sectionIdsByBotId: o,
+                            version: u
                         },
                         fetchState: {
                             fetching: !1
@@ -1775,14 +1775,11 @@
                 useCommandsForApplication: function() {
                     return v
                 },
-                getCommandTypeCount: function() {
+                useSearchOpenState: function() {
                     return y
                 },
-                useSearchOpenState: function() {
-                    return D
-                },
                 isInIndexExperiment: function() {
-                    return R
+                    return D
                 }
             }), n("222007"), n("424973");
             var i = n("884691"),
@@ -1808,7 +1805,7 @@
                     application: void 0,
                     command: void 0
                 };
-                if (!R({
+                if (!D({
                         location: "getCachedCommand"
                     })) {
                     let e = m.default.getCommand(t),
@@ -1836,7 +1833,7 @@
 
             function E(e, t, n) {
                 var i, l, a, s, o, r;
-                if (!R({
+                if (!D({
                         location: "getCachedApplicationSection"
                     })) return null === (o = _.default.getApplicationSections(e.id, t)) || void 0 === o ? void 0 : o.find(e => e.id === n);
                 let u = p.default.getUserState(),
@@ -1846,7 +1843,7 @@
             }
 
             function N(e, t, n) {
-                if (!R({
+                if (!D({
                         location: "getCachedResults"
                     })) {
                     var i, l;
@@ -1869,7 +1866,7 @@
             }
 
             function S(e, t, n) {
-                if (!R({
+                if (!D({
                         location: "getChangeKeys"
                     }, {
                         autoTrackExposure: !1
@@ -1880,7 +1877,7 @@
             }
 
             function g(e, t, n) {
-                if (!P({
+                if (!R({
                         location: "useDiscovery"
                     })) {
                     var a, o;
@@ -1905,7 +1902,7 @@
                 let S = i.useMemo(() => {
                     let e = [];
                     if (null != n.placeholderCount)
-                        for (let i = 0; i < n.placeholderCount; i++) e.push(U(i, t.commandType));
+                        for (let i = 0; i < n.placeholderCount; i++) e.push(L(i, t.commandType));
                     return e
                 }, [t.commandType, n.placeholderCount]);
                 return i.useMemo(() => {
@@ -1947,7 +1944,7 @@
             }
 
             function M(e, t, n) {
-                if (!R({
+                if (!D({
                         location: "executeQuery"
                     })) {
                     var i, l, s, o, r;
@@ -1962,7 +1959,7 @@
                     loading: m
                 } = p.default.query(e, t, n), I = [];
                 if (null != n.placeholderCount && m)
-                    for (let e = 0; e < n.placeholderCount; e++) I.push(U(e, t.commandType));
+                    for (let e = 0; e < n.placeholderCount; e++) I.push(L(e, t.commandType));
                 return {
                     commands: m ? [...f, ...I] : f,
                     sections: m && 0 === c.length ? [d.BUILT_IN_SECTIONS[C.BuiltInSectionId.BUILT_IN]] : c
@@ -1970,7 +1967,7 @@
             }
 
             function O(e, t, n) {
-                if (!P({
+                if (!R({
                         location: "useQuery"
                     })) {
                     var l, a;
@@ -1986,7 +1983,7 @@
                 }), u = i.useMemo(() => {
                     let e = [];
                     if (null != n.placeholderCount)
-                        for (let i = 0; i < n.placeholderCount; i++) e.push(U(i, t.commandType));
+                        for (let i = 0; i < n.placeholderCount; i++) e.push(L(i, t.commandType));
                     return e
                 }, [t.commandType, n.placeholderCount]);
                 return i.useMemo(() => ({
@@ -1997,7 +1994,7 @@
             }
 
             function h(e, t) {
-                if (!P({
+                if (!R({
                         location: "useCommand"
                     })) {
                     var n;
@@ -2056,7 +2053,7 @@
             }
 
             function v(e, t, n) {
-                if (!P({
+                if (!R({
                         location: "useCommandsForApplication"
                     })) return i.useEffect(() => {
                     u.fetchCommands(e.guild_id, e.id, n)
@@ -2080,43 +2077,27 @@
                 }, [null == a ? void 0 : a.result, null == s ? void 0 : s.result, t, n])
             }
 
-            function y(e, t, n) {
-                var i, l, a, o, r, u;
-                if (!R({
-                        location: "getCommandTypeCount"
-                    })) {
-                    if (e.isPrivate()) return null;
-                    {
-                        let i = null != n ? n : null === (a = s.default.getGuild(e.guild_id)) || void 0 === a ? void 0 : a.applicationCommandCounts;
-                        return null !== (o = null == i ? void 0 : i[t]) && void 0 !== o ? o : 0
-                    }
-                }
-                let d = p.default.getUserState(),
-                    c = p.default.getContextState(e);
-                return (null !== (r = null === (i = d.result) || void 0 === i ? void 0 : i.commandTypeCount[t]) && void 0 !== r ? r : 0) + (null !== (u = null === (l = c.result) || void 0 === l ? void 0 : l.commandTypeCount[t]) && void 0 !== u ? u : 0)
-            }
-
-            function D() {
-                !P({
+            function y() {
+                !R({
                     location: "useSearchOpenState"
                 }) && (0, _.useSearchStoreOpenState)()
             }
 
-            function R(e, t) {
+            function D(e, t) {
                 return c.default.getCurrentConfig(e, t).enabled
             }
 
-            function P(e, t) {
-                let [n] = i.useState(R(e, t));
+            function R(e, t) {
+                let [n] = i.useState(D(e, t));
                 return n
             }
-            let L = {
+            let P = {
                 id: "placeholder-section",
                 type: I.ApplicationCommandSectionType.APPLICATION,
                 name: ""
             };
 
-            function U(e, t) {
+            function L(e, t) {
                 return {
                     type: t,
                     inputType: I.ApplicationCommandInputType.PLACEHOLDER,
@@ -2126,7 +2107,7 @@
                     description: "",
                     displayDescription: "",
                     applicationId: "",
-                    section: L
+                    section: P
                 }
             }
         },
@@ -4239,4 +4220,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94816.ede03d2732e8bfebf656.js.map
+//# sourceMappingURL=94816.5a175ba33d20e66d2eca.js.map
