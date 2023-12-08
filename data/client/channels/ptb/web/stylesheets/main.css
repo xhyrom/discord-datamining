@@ -81061,6 +81061,67 @@ input::-webkit-inner-spin-button {
     padding-left: .5rem
 }
 
+.header_dfdcae {
+    background-image: url(/assets/a1d5e876c5e7b9b34836.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 132px
+}
+
+.animation__3a863 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.headerTitle_a39b9c {
+    background-image: url(/assets/57ff574d8430697c11c7.svg);
+    height: 28px;
+    width: 60px
+}
+
+.header_dfdcae .closeButton_eec3b4 {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--white-500);
+    opacity: .8
+}
+
+.header_dfdcae .closeButton_eec3b4:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .header_dfdcae .closeButton_eec3b4 {
+    opacity: 1
+}
+
+.container_dc0bc1 {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px
+}
+
+.iconBackground_c5c678 {
+    background-color: var(--button-secondary-background);
+    border-radius: var(--radius-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px
+}
+
+.link__2ad53 {
+    display: inline;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    cursor: pointer
+}
+
 .pricePerInterval_b4509b {
     color: var(--interactive-normal);
     font-size: 16px;
@@ -81590,45 +81651,6 @@ input::-webkit-inner-spin-button {
 
 .subscriptionAddedInvoiceItem__5877e {
     color: var(--text-positive)
-}
-
-.header_dfdcae {
-    background-image: url(/assets/a1d5e876c5e7b9b34836.svg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    height: 132px
-}
-
-.animation__3a863 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0
-}
-
-.headerTitle_a39b9c {
-    background-image: url(/assets/57ff574d8430697c11c7.svg);
-    height: 28px;
-    width: 60px
-}
-
-.header_dfdcae .closeButton_eec3b4 {
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    color: var(--white-500);
-    opacity: .8
-}
-
-.header_dfdcae .closeButton_eec3b4:hover {
-    opacity: 1
-}
-
-.enable-forced-colors .header_dfdcae .closeButton_eec3b4 {
-    opacity: 1
 }
 
 .container_b6a0e3 {
@@ -124377,4 +124399,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.49acf816f204c563e7e3.css.map*/
+/*# sourceMappingURL=app.223a0ce29fdbb760e72c.css.map*/
