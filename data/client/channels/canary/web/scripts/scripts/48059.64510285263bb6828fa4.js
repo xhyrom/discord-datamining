@@ -4166,28 +4166,15 @@
             }));
             let eS = (0, l.wrapSettingWithSelectiveSyncing)((0, l.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
                 eg = (0, l.defineProtoSetting)("appearance", "clientThemeSettings", e => {
-                    let {
-                        backgroundGradientPresetId: t,
-                        backgroundGradientAngle: n
-                    } = null != e ? e : {};
+                    var t;
                     return {
-                        backgroundGradientPresetId: null == t ? void 0 : t.value,
-                        backgroundGradientAngle: null == n ? void 0 : n.value
+                        backgroundGradientPresetId: null == e ? void 0 : null === (t = e.backgroundGradientPresetId) || void 0 === t ? void 0 : t.value
                     }
-                }, e => {
-                    let {
-                        backgroundGradientPresetId: t,
-                        backgroundGradientAngle: n
-                    } = e;
-                    return {
-                        backgroundGradientPresetId: null != t ? o.UInt32Value.create({
-                            value: t
-                        }) : void 0,
-                        backgroundGradientAngle: null != n ? o.FloatValue.create({
-                            value: n
-                        }) : void 0
-                    }
-                }),
+                }, e => ({
+                    backgroundGradientPresetId: null != e.backgroundGradientPresetId ? o.UInt32Value.create({
+                        value: e.backgroundGradientPresetId
+                    }) : void 0
+                })),
                 eh = (0, l.wrapSettingWithOverride)((0, l.wrapSettingWithSelectiveSyncing)((0, l.defineProtoSetting)("textAndImages", "gifAutoPlay", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
@@ -5280,7 +5267,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "252898", "252898"), 10);
+                let o = parseInt((n = "252926", "252926"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5522,4 +5509,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.3b65dbefe90e6518d86f.js.map
+//# sourceMappingURL=48059.64510285263bb6828fa4.js.map

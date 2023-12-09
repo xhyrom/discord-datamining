@@ -3892,8 +3892,6 @@
                 LANGUAGE: "Language",
                 LANGUAGE_SELECT: "Select a Language",
                 LANGUAGE_UPDATED: "Language has been Updated.",
-                ESLATAM_LANGUAGE_LAUNCH_NOTICE: "Discord now supports Latin American Spanish.",
-                ESLATAM_LANGUAGE_LAUNCH_NOTICE_CTA: "Change Language",
                 CHECKING_FOR_UPDATES: "Checking For Updates",
                 UPDATE_AVAILABLE: "Downloading Update",
                 UPDATE_DOWNLOADED: "Update Ready!",
@@ -9463,7 +9461,6 @@
                 ru: "Russian",
                 it: "Italian",
                 "es-ES": "Spanish",
-                "es-419": "Spanish, LATAM",
                 ko: "Korean",
                 nl: "Dutch",
                 "sv-SE": "Swedish",
@@ -15433,11 +15430,11 @@
                 GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_SELECT_TEAM_LABEL: "Select team",
                 GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_LABEL: "Enter 2FA verification code",
                 GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_PLACEHOLDER: "MFA Code",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_SECTION_TITLE: "Disable Server Subscriptions",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "Disable server subscriptions for **!!{guildName}!!**. There should be no remaining payouts and all tiers must be deleted in order to complete this action.",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_CTA: "Disable Server Subscriptions",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_MODAL_HEADER: "Disable Server Subscriptions",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_MODAL_DESCRIPTION: "Disable server subscriptions for **!!{guildName}!!**. To delete your payment team you will need to do so in the [Developer Portal]({url}).",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_TITLE: "Disable Monetization",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "This will disable both server subscriptions **and** products for **!!{guildName}!!**. There should be no remaining payouts, and all tiers and product listings must be deleted in order to complete this action.",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_CTA: "Disable Monetization",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_HEADER: "Disable Monetization",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_DESCRIPTION: "Disable server subscriptions and products for **!!{guildName}!!**. To delete your payment team you will need to do so in the [Developer Portal]({url}).",
                 GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_HEADER: "Select Premium Emoji",
                 GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_DESCRIPTION: "Want to upload new emoji? You can do so from the [Manage Premium Emoji](transitionToManageEmoji) page.",
                 GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_SAVE_BUTTON: "Add {totalEmoji, plural, =1 {1 Emoji} other {{totalEmoji} Emoji}}",
@@ -16754,7 +16751,6 @@
                 "./de.jsona": "293151",
                 "./el.jsona": "195418",
                 "./en-GB.jsona": "777640",
-                "./es-419.jsona": "523730",
                 "./es-ES.jsona": "291795",
                 "./fi.jsona": "164426",
                 "./fr.jsona": "289264",
@@ -17469,12 +17465,6 @@
                 name: "Espa\xf1ol",
                 englishName: "Spanish",
                 code: "es-ES",
-                postgresLang: "spanish",
-                enabled: !0
-            }, {
-                name: "Espa\xf1ol, LATAM",
-                englishName: "Spanish, LATAM",
-                code: "es-419",
                 postgresLang: "spanish",
                 enabled: !0
             }, {
@@ -18321,7 +18311,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252898", ", Version Hash: ").concat("cb95be5d3b2d3207631053be27a1db020f7b341f")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252926", ", Version Hash: ").concat("47394fa064f6578633e312b346902f70032958d7")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -18403,9 +18393,8 @@
                 de: () => E.el("640841").then(E.bind(E, "640841")),
                 el: () => E.el("295194").then(E.bind(E, "295194")),
                 "en-GB": () => E.el("796137").then(E.bind(E, "796137")),
-                "en-US": () => E.el("437757").then(E.bind(E, "437757")),
                 "es-ES": () => E.el("442177").then(E.bind(E, "442177")),
-                "es-419": () => E.el("442177").then(E.bind(E, "442177")),
+                "en-US": () => E.el("437757").then(E.bind(E, "437757")),
                 fi: () => E.el("465431").then(E.bind(E, "465431")),
                 fr: () => E.el("754192").then(E.bind(E, "754192")),
                 hr: () => E.el("497688").then(E.bind(E, "497688")),
@@ -20620,8 +20609,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "252898", "252898"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252898")), _ = 0), _
+                let _ = parseInt((e = "252926", "252926"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252926")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -34876,46 +34865,27 @@
                         n = e.pos + _;
                     for (; e.pos < n;) {
                         let [_, t] = e.tag();
-                        switch (_) {
-                            case 1:
-                                o.primaryColor = h.UInt64Value.internalBinaryRead(e, e.uint32(), E, o.primaryColor);
-                                break;
-                            case 2:
-                                o.backgroundGradientPresetId = h.UInt32Value.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientPresetId);
-                                break;
-                            case 3:
-                                o.backgroundGradientAngle = h.FloatValue.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientAngle);
-                                break;
-                            default:
-                                let n = E.readUnknownField;
-                                if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
-                                let r = e.skip(t);
-                                !1 !== n && (!0 === n ? M.UnknownFieldHandler.onRead : n)(this.typeName, o, _, t, r)
+                        if (2 === _) o.backgroundGradientPresetId = h.UInt32Value.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientPresetId);
+                        else {
+                            let n = E.readUnknownField;
+                            if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
+                            let r = e.skip(t);
+                            !1 !== n && (!0 === n ? M.UnknownFieldHandler.onRead : n)(this.typeName, o, _, t, r)
                         }
                     }
                     return o
                 }
                 internalBinaryWrite(e, _, E) {
-                    e.primaryColor && h.UInt64Value.internalBinaryWrite(e.primaryColor, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.backgroundGradientPresetId && h.UInt32Value.internalBinaryWrite(e.backgroundGradientPresetId, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.backgroundGradientAngle && h.FloatValue.internalBinaryWrite(e.backgroundGradientAngle, _.tag(3, M.WireType.LengthDelimited).fork(), E).join();
+                    e.backgroundGradientPresetId && h.UInt32Value.internalBinaryWrite(e.backgroundGradientPresetId, _.tag(2, M.WireType.LengthDelimited).fork(), E).join();
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
                 constructor() {
                     super("discord_protos.discord_users.v1.ClientThemeSettings", [{
-                        no: 1,
-                        name: "primary_color",
-                        kind: "message",
-                        T: () => h.UInt64Value
-                    }, {
                         no: 2,
                         name: "background_gradient_preset_id",
                         kind: "message",
                         T: () => h.UInt32Value
-                    }, {
-                        no: 3,
-                        name: "background_gradient_angle",
-                        kind: "message",
-                        T: () => h.FloatValue
                     }])
                 }
             }
@@ -35791,26 +35761,23 @@
         750028: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
-                FloatValue: function() {
-                    return r
-                },
                 Int64Value: function() {
-                    return a
+                    return i
                 },
                 UInt64Value: function() {
-                    return s
+                    return I
                 },
                 Int32Value: function() {
-                    return S
+                    return T
                 },
                 UInt32Value: function() {
-                    return O
+                    return N
                 },
                 BoolValue: function() {
-                    return R
+                    return A
                 },
                 StringValue: function() {
-                    return u
+                    return l
                 }
             }), E("222007"), E("70102"), E("311790"), E("477657"), E("811875"), E("90301"), E("652153"), E("28797"), E("817884"), E("597349"), E("667536"), E("690341");
             var t = E("849266");
@@ -35905,8 +35872,8 @@
                     }])
                 }
             }
-            let r = new n;
-            class i extends t.MessageType {
+            new n;
+            class r extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(t.ScalarType.INT64, e.value, "value", !1, !0)
                 }
@@ -35951,8 +35918,8 @@
                     }])
                 }
             }
-            let a = new i;
-            class I extends t.MessageType {
+            let i = new r;
+            class a extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(t.ScalarType.UINT64, e.value, "value", !1, !0)
                 }
@@ -35997,8 +35964,8 @@
                     }])
                 }
             }
-            let s = new I;
-            class T extends t.MessageType {
+            let I = new a;
+            class s extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(5, e.value, "value", !1, !0)
                 }
@@ -36043,8 +36010,8 @@
                     }])
                 }
             }
-            let S = new T;
-            class N extends t.MessageType {
+            let T = new s;
+            class S extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(13, e.value, "value", !1, !0)
                 }
@@ -36089,8 +36056,8 @@
                     }])
                 }
             }
-            let O = new N;
-            class A extends t.MessageType {
+            let N = new S;
+            class O extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return e.value
                 }
@@ -36135,8 +36102,8 @@
                     }])
                 }
             }
-            let R = new A;
-            class l extends t.MessageType {
+            let A = new O;
+            class R extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return e.value
                 }
@@ -36181,8 +36148,8 @@
                     }])
                 }
             }
-            let u = new l;
-            class L extends t.MessageType {
+            let l = new R;
+            class u extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(12, e.value, "value", !1, !0)
                 }
@@ -36227,7 +36194,7 @@
                     }])
                 }
             }
-            new L
+            new u
         },
         233736: function(e, _, E) {
             "use strict";
@@ -36771,4 +36738,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.2ee1d2c85124465ce3a2.js.map
+//# sourceMappingURL=66318.8d52da2fc3a2dc904f4c.js.map

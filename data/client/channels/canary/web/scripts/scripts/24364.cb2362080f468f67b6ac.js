@@ -9,7 +9,6 @@
                 "./el.png": "954635",
                 "./en-GB.png": "883638",
                 "./en-US.png": "969851",
-                "./es-419.png": "359765",
                 "./es-ES.png": "98918",
                 "./fi.png": "110775",
                 "./fr.png": "128393",
@@ -169,10 +168,6 @@
         969851: function(e, t, n) {
             "use strict";
             e.exports = n.p + "c69f95beeb3b959480c7.png"
-        },
-        359765: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "ae1172ee75120f6470db.png"
         },
         98918: function(e, t, n) {
             "use strict";
@@ -16177,76 +16172,67 @@
         },
         714657: function(e, t, n) {
             "use strict";
-            let r, i, s;
+            let r, i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return N
                 }
             }), n("222007");
-            var a = n("35092"),
-                l = n("151426"),
-                o = n("913144"),
-                u = n("10641"),
-                c = n("737292"),
-                d = n("161778"),
-                E = n("233069"),
-                _ = n("42203"),
-                f = n("697218"),
-                p = n("719923"),
-                h = n("158998"),
-                T = n("253539"),
-                S = n("941719");
-            let I = !1,
-                m = !0,
-                g = !1;
+            var s = n("35092"),
+                a = n("151426"),
+                l = n("913144"),
+                o = n("10641"),
+                u = n("737292"),
+                c = n("161778"),
+                d = n("233069"),
+                E = n("42203"),
+                _ = n("697218"),
+                f = n("719923"),
+                p = n("158998"),
+                h = n("253539"),
+                T = n("941719");
+            let S = !1,
+                I = !0,
+                m = !1;
+
+            function g() {
+                S = !0
+            }
 
             function A() {
-                I = !0
+                I && (r = void 0), m = !1, S = !1
             }
-
-            function C() {
-                m && (r = void 0, s = void 0), g = !1, I = !1
-            }
-            let R = () => {
-                    m = !p.default.canUseClientThemes(f.default.getCurrentUser())
+            let C = () => {
+                    I = !f.default.canUseClientThemes(_.default.getCurrentUser())
                 },
-                v = () => {
-                    var e, t, n, i;
-                    let a = null === (t = c.default.getAppearanceSettings()) || void 0 === t ? void 0 : null === (e = t.clientThemeSettings) || void 0 === e ? void 0 : e.backgroundGradientPresetId,
-                        l = null === (i = c.default.getAppearanceSettings()) || void 0 === i ? void 0 : null === (n = i.clientThemeSettings) || void 0 === n ? void 0 : n.backgroundGradientAngle;
-                    null != a && (r = S.BACKGROUND_GRADIENT_PRESETS_MAP[a]), null != l && (s = l)
+                R = () => {
+                    var e, t;
+                    let n = null === (t = u.default.getAppearanceSettings()) || void 0 === t ? void 0 : null === (e = t.clientThemeSettings) || void 0 === e ? void 0 : e.backgroundGradientPresetId;
+                    null != n && (r = T.BACKGROUND_GRADIENT_PRESETS_MAP[n])
                 };
-            class N extends a.default.PersistedStore {
+            class v extends s.default.PersistedStore {
                 initialize(e) {
-                    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? S.BACKGROUND_GRADIENT_PRESETS_MAP[e.gradientPresetId] : void 0, s = e.gradientAngle), this.waitFor(f.default, d.default, _.default, c.default), this.syncWith([f.default], R), this.syncWith([c.default], v)
+                    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? T.BACKGROUND_GRADIENT_PRESETS_MAP[e.gradientPresetId] : void 0), this.waitFor(_.default, c.default, E.default, u.default), this.syncWith([_.default], C), this.syncWith([u.default], R)
                 }
                 getState() {
                     return {
-                        gradientPresetId: null == r ? void 0 : r.id,
-                        gradientAngle: s
+                        gradientPresetId: null == r ? void 0 : r.id
                     }
                 }
                 get gradientPreset() {
                     return r
                 }
-                get gradientAngle() {
-                    return s
-                }
                 getLinearGradient() {
-                    var e;
-                    return null == this.gradientPreset ? null : (0, T.getLinearGradientForBackgroundGradient)({
-                        colors: this.gradientPreset.colors,
-                        angle: null !== (e = this.gradientAngle) && void 0 !== e ? e : this.gradientPreset.angle
-                    })
+                    return null == this.gradientPreset ? null : (0, h.getLinearGradientForBackgroundGradient)(this.gradientPreset)
                 }
                 get isEditorOpen() {
-                    return I
+                    return S
                 }
                 get isPreview() {
-                    return m
+                    return I
                 }
                 get isCoachmark() {
-                    return g
+                    return m
                 }
                 get mobilePendingThemeIndex() {
                     return i
@@ -16261,8 +16247,8 @@
                     }]
                 }
             }
-            N.displayName = "ClientThemesBackgroundStore", N.persistKey = "ClientThemesBackgroundStore";
-            var O = new N(o.default, {
+            v.displayName = "ClientThemesBackgroundStore", v.persistKey = "ClientThemesBackgroundStore";
+            var N = new v(l.default, {
                 UPDATE_BACKGROUND_GRADIENT_PRESET: e => {
                     let {
                         presetId: t
@@ -16271,7 +16257,7 @@
                         r = void 0;
                         return
                     }
-                    r = S.BACKGROUND_GRADIENT_PRESETS_MAP[t], s = void 0
+                    r = T.BACKGROUND_GRADIENT_PRESETS_MAP[t]
                 },
                 UPDATE_MOBILE_PENDING_THEME_INDEX: e => {
                     let {
@@ -16283,40 +16269,30 @@
                     }
                     i = t
                 },
-                UPDATE_BACKGROUND_GRADIENT_ANGLE: e => {
-                    let {
-                        angle: t
-                    } = e;
-                    if (null == t) {
-                        s = void 0;
-                        return
-                    }
-                    s = t
-                },
                 CLIENT_THEMES_EDITOR_OPEN: e => {
                     (function() {
-                        I = !0
+                        S = !0
                     })()
                 },
                 CLIENT_THEMES_EDITOR_CLOSE: e => {
-                    C()
+                    A()
                 },
                 RESET_PREVIEW_CLIENT_THEME: e => {
-                    r = void 0, s = void 0
+                    r = void 0
                 },
                 CHANNEL_SELECT: e => {
                     let {
                         channelId: t,
                         guildId: n
-                    } = e, r = f.default.getCurrentUser();
-                    if (null == t || null == n || (0, u.isDismissibleContentDismissed)(l.DismissibleContent.CLIENT_THEMES_COACHMARK) || !(0, h.ageEligibleForPremiumUpsell)(r)) return;
-                    let i = _.default.getChannel(t);
-                    null != i && (0, E.isGuildTextChannelType)(i.type) && (g = !0, function() {
-                        I = !0
+                    } = e, r = _.default.getCurrentUser();
+                    if (null == t || null == n || (0, o.isDismissibleContentDismissed)(a.DismissibleContent.CLIENT_THEMES_COACHMARK) || !(0, p.ageEligibleForPremiumUpsell)(r)) return;
+                    let i = E.default.getChannel(t);
+                    null != i && (0, d.isGuildTextChannelType)(i.type) && (m = !0, function() {
+                        S = !0
                     }())
                 },
                 LOGOUT: e => {
-                    C()
+                    A()
                 }
             })
         },
@@ -41586,4 +41562,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.cbe4e82e8601e8be9158.js.map
+//# sourceMappingURL=24364.cb2362080f468f67b6ac.js.map
