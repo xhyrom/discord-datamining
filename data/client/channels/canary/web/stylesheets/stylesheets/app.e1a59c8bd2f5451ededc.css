@@ -27679,6 +27679,10 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     display: flex
 }
 
+.noPointerEvents__16aad {
+    pointer-events: none
+}
+
 .disabled__74c03 {
     cursor: not-allowed
 }
@@ -124611,4 +124615,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.83f01b3df65cd0fa3bb9.css.map*/
+/*# sourceMappingURL=app.e1a59c8bd2f5451ededc.css.map*/

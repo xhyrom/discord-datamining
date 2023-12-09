@@ -4811,7 +4811,8 @@
         426068: function(e, t, o) {
             "use strict";
             e.exports = {
-                container: "container__5eb17"
+                container: "container__5eb17",
+                noPointerEvents: "noPointerEvents__16aad"
             }
         },
         67046: function(e, t, o) {
