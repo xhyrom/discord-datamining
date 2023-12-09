@@ -82749,6 +82749,10 @@ input::-webkit-inner-spin-button {
     padding: 24px 48px 32px
 }
 
+.collectedInfoContainer_d8324a.default__48f1b {
+    background-color: var(--modal-background)
+}
+
 .collectedTextContainer__3e39d {
     display: flex;
     flex-direction: column;
@@ -124615,4 +124619,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e1a59c8bd2f5451ededc.css.map*/
+/*# sourceMappingURL=app.eb2ee95443ed93e52d2a.css.map*/
