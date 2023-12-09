@@ -19,7 +19,7 @@
 import { join } from "node:path";
 
 import type { Module } from "../../index.ts";
-import { pushToGit, readFile } from "../../../utils.ts";
+import { numberPad, pushToGit, readFile } from "../../../utils.ts";
 import { ChannelType, type Channel } from "../Channel.ts";
 import { Scripts } from "./scripts/index.ts";
 import { Stylesheets } from "./stylesheets/index.ts";
@@ -79,7 +79,11 @@ export class WebBuild implements Module {
       [
         `Build Number: ${build.buildNumber}`,
         `Version Hash: ${build.versionHash}`,
-        `Build At: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} (${date.getTime()})`,
+        `Build At: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${numberPad(
+          date.getHours()
+        )}:${numberPad(date.getMinutes())}:${numberPad(
+          date.getSeconds()
+        )} (${numberPad(date.getTime())})`,
       ].join("\n"),
       `Scripts (${scriptFiles.scripts.length}):\n${scriptFiles.scripts
         .map((script) =>

@@ -226,3 +226,11 @@ export const chunk = <T>(array: T[], size: number): T[][] => {
   }
   return result;
 };
+
+export const numberPad = (num: number): string => {
+  if (num < 10) {
+    return `0${num}`;
+  }
+
+  return num.toString();
+};
