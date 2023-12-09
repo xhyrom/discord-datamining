@@ -7072,19 +7072,19 @@
             let i;
             n.r(t), n.d(t, {
                 isOnNewPanels: function() {
-                    return g
+                    return I
                 },
                 useOnNewPanels: function() {
-                    return _
+                    return T
                 },
                 isSplitMessagesTab: function() {
-                    return v
+                    return A
                 },
                 isSplitMessagesTabAndOnMessagesTab: function() {
-                    return C
+                    return N
                 },
                 shouldHandleNewPanelsRoute: function() {
-                    return I
+                    return O
                 }
             });
             var s = n("95410"),
@@ -7100,103 +7100,55 @@
                 f = n("446411"),
                 E = n("491246"),
                 m = n("49111");
+            let S = {
+                    autoTrackExposure: !1
+                },
+                g = {
+                    location: "isSplitMessagesTab"
+                },
+                _ = {
+                    location: "isOnNewPanels"
+                },
+                v = {
+                    location: "useOnNewPanels"
+                };
 
-            function S(e) {
+            function C(e) {
                 (0, p.updateIsInNewPanels)(e), i !== e && (s.default.set("isOnNewPanels", e), i = e)
             }
 
-            function g() {
-                return (0, l.isInMainTabsExperiment)() ? !!(0, f.isOnGlobalPanels)() || (a.default.get("new_panels") ? (S(!0), !0) : r.default.hasLoadedExperiments || void 0 === i ? d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showNewPanels || d.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showNewPanels || u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showPanels || (0, c.getNavPeekExperimentConfig)({
-                    location: "isOnNewPanels"
-                }, {
-                    autoTrackExposure: !1
-                }).showNewPanels || (0, h.isTabsUIEnabledManually)() ? (S(!0), !0) : (S(!1), !1) : i) : (S(!1), !1)
+            function I() {
+                return (0, l.isInMainTabsExperiment)() ? !!(0, f.isOnGlobalPanels)() || (a.default.get("new_panels") ? (C(!0), !0) : r.default.hasLoadedExperiments || void 0 === i ? d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig(_, S).showNewPanels || d.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig(_, S).showNewPanels || u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig(_, S).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig(_, S).showPanels || (0, c.getNavPeekExperimentConfig)(_, S).showNewPanels || (0, h.isTabsUIEnabledManually)() ? (C(!0), !0) : (C(!1), !1) : i) : (C(!1), !1)
             }
 
-            function _() {
+            function T() {
                 let e = (0, l.useInMainTabsExperiment)(),
                     t = (0, o.default)("new_panels"),
-                    n = (0, c.useNavPeekExperiment)({
-                        location: "useOnNewPanels"
-                    }, {
-                        autoTrackExposure: !1
-                    }).showNewPanels,
-                    i = d.MainTabsV2PanelsExperimentExistingUsers.useExperiment({
-                        location: "useOnNewPanels"
-                    }, {
-                        autoTrackExposure: !1
-                    }).showNewPanels,
-                    s = d.MainTabsV2PanelsExperimentNewUsers.useExperiment({
-                        location: "useOnNewPanels"
-                    }, {
-                        autoTrackExposure: !1
-                    }).showNewPanels,
-                    a = u.MainTabsV2OnePercentExperimentExistingUsers.useExperiment({
-                        location: "useOnNewPanels"
-                    }, {
-                        autoTrackExposure: !1
-                    }).showPanels,
-                    r = u.MainTabsV2OnePercentExperimentNewUsers.useExperiment({
-                        location: "useOnNewPanels"
-                    }, {
-                        autoTrackExposure: !1
-                    }).showPanels,
+                    n = (0, c.useNavPeekExperiment)(v, S).showNewPanels,
+                    i = d.MainTabsV2PanelsExperimentExistingUsers.useExperiment(v, S).showNewPanels,
+                    s = d.MainTabsV2PanelsExperimentNewUsers.useExperiment(v, S).showNewPanels,
+                    a = u.MainTabsV2OnePercentExperimentExistingUsers.useExperiment(v, S).showPanels,
+                    r = u.MainTabsV2OnePercentExperimentNewUsers.useExperiment(v, S).showPanels,
                     p = (0, h.useIsTabsUIEnabledManually)();
                 return e && (t || n || i || s || a || r || p)
             }
 
-            function v() {
+            function A() {
                 if (!(0, l.isInMainTabsExperiment)()) return !1;
                 let {
                     showNewPanels: e
-                } = (0, c.getNavPeekExperimentConfig)({
-                    location: "isSplitMessagesTab"
-                }, {
-                    autoTrackExposure: !1
-                });
-                return !!(e || !g() || (0, f.isOnGlobalPanels)() || a.default.get("panels_split_messages_tab") || d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig({
-                    location: "isSplitMessagesTab"
-                }, {
-                    autoTrackExposure: !1
-                }).isSplitMessagesTab || d.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig({
-                    location: "isSplitMessagesTab"
-                }, {
-                    autoTrackExposure: !1
-                }).isSplitMessagesTab || u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig({
-                    location: "isSplitMessagesTab"
-                }, {
-                    autoTrackExposure: !1
-                }).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig({
-                    location: "isSplitMessagesTab"
-                }, {
-                    autoTrackExposure: !1
-                }).showPanels || (0, h.isTabsUIEnabledManually)()) || !1
+                } = (0, c.getNavPeekExperimentConfig)(g, S);
+                return !!(e || !I() || (0, f.isOnGlobalPanels)() || a.default.get("panels_split_messages_tab") || d.MainTabsV2PanelsExperimentExistingUsers.getCurrentConfig(g, S).isSplitMessagesTab || d.MainTabsV2PanelsExperimentNewUsers.getCurrentConfig(g, S).isSplitMessagesTab || u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig(g, S).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig(g, S).showPanels || (0, h.isTabsUIEnabledManually)()) || !1
             }
 
-            function C() {
-                if (!v()) return !1;
+            function N() {
+                if (!A()) return !1;
                 let e = (0, E.default)();
                 return (null == e ? void 0 : e.name) === "messages"
             }
 
-            function I(e) {
-                return !(!g() || (0, f.isOnGlobalPanels)()) && (!v() || null != e && e !== m.ME)
+            function O(e) {
+                return !(!I() || (0, f.isOnGlobalPanels)()) && (!A() || null != e && e !== m.ME)
             }
         },
         491246: function(e, t, n) {
@@ -15206,7 +15158,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "252770"
+                                build_number: "252966"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (c.user_id = h.id, c.user_name = h.tag, null != h.email && (c.email = h.email));
@@ -22145,4 +22097,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48449.2788ab92622b70146c50.js.map
+//# sourceMappingURL=48449.255f5bbd30481bc03d50.js.map

@@ -492,6 +492,7 @@
                 APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_ALPHABETICAL: "Alphabetical",
                 APP_LAUNCHER_ALL_COMMANDS_HEADER: "All Commands",
                 APP_LAUNCHER_NO_REQUIRED_OPTIONS_CALLOUT: "Nothing required. You can send the command or add an option below",
+                APP_LAUNCHER_NO_OPTIONS_CALLOUT: "This command has no options. Send it!",
                 APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER: "Select an option below",
                 APP_LAUNCHER_SEARCH_PLACEHOLDER: "Search Apps & Commands",
                 APP_LAUNCHER_HOME_EMPTY_STATE_BODY: "No apps have been installed in this server yet",
@@ -3902,6 +3903,8 @@
                 UPDATE_DURING_CALL_TITLE: "Briefly leave voice?",
                 UPDATE_DURING_CALL_BODY: "Updating Discord while in a voice channel will cause you to leave briefly. You're probably going to update anyway but, you know, just warning you.",
                 UPDATE_DURING_CALL_CONTINUE: "Update anyway!",
+                TAB_BADGE_A11Y_LABEL: "{count, plural, =0 {} =1 {, # new} other {, # new}},",
+                SERVERS_TAB_BADGE_A11Y_LABEL: "{count, plural, =0 {} =1 {, # mention} other {, # mentions}},",
                 YOU_TAB_ONBOARDING_AVATAR_TITLE: "Add an avatar",
                 YOU_TAB_ONBOARDING_AVATAR_DESCRIPTION: "Show off your personality and help others online know they’re talking to the right person!",
                 YOU_TAB_ONBOARDING_ABOUT_ME_TITLE: "Add a bio",
@@ -8248,6 +8251,7 @@
                 USER_ACTIVITY_ACTION_DOWNLOAD_APP: "Download",
                 USER_ACTIVITY_CANNOT_JOIN_SELF: "You can't join yourself",
                 USER_ACTIVITY_NOT_DETECTED: "{name} is not detected",
+                USER_ACTIVITY_LISTENING: "Listening",
                 USER_ACTIVITY_LISTEN_ALONG: "Listen Along",
                 USER_ACTIVITY_WATCH_ALONG: "Watch Along",
                 USER_ACTIVITY_PLAY_ON_PLATFORM: "Play on {platform}",
@@ -10142,6 +10146,8 @@
                 VOICE_PANEL_BAD_CONNECTION_CTA_SUB_LABEL: "Some participants will be audio only.",
                 VOICE_PANEL_FOR_DEVELOPERS: "For Developers",
                 VOICE_PANEL_SCREENSHARE_SHORTCUTS: "Screen Share Shortcuts",
+                VOICE_PANEL_HIDE_DRAWER: "Hide Drawer",
+                VOICE_PANEL_SHOW_DRAWER: "Show Settings Drawer",
                 NUF_DESKTOP_TEMPLATES_TITLE: "Create your first Discord server",
                 NUF_DESKTOP_TEMPLATES_SUBTITLE: "Your server is where you and your friends hang out.\n  Make yours and start talking.",
                 TOO_MANY_USER_GUILDS_TITLE_2: "You are at the {quantity, number} server limit.",
@@ -15424,11 +15430,11 @@
                 GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_SELECT_TEAM_LABEL: "Select team",
                 GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_LABEL: "Enter 2FA verification code",
                 GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_PLACEHOLDER: "MFA Code",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_SECTION_TITLE: "Disable Server Subscriptions",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "Disable server subscriptions for **!!{guildName}!!**. There should be no remaining payouts and all tiers must be deleted in order to complete this action.",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_CTA: "Disable Server Subscriptions",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_MODAL_HEADER: "Disable Server Subscriptions",
-                GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_MODAL_DESCRIPTION: "Disable server subscriptions for **!!{guildName}!!**. To delete your payment team you will need to do so in the [Developer Portal]({url}).",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_TITLE: "Disable Monetization",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "This will disable both server subscriptions **and** products for **!!{guildName}!!**. There should be no remaining payouts, and all tiers and product listings must be deleted in order to complete this action.",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_CTA: "Disable Monetization",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_HEADER: "Disable Monetization",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_DESCRIPTION: "Disable server subscriptions and products for **!!{guildName}!!**. To delete your payment team you will need to do so in the [Developer Portal]({url}).",
                 GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_HEADER: "Select Premium Emoji",
                 GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_DESCRIPTION: "Want to upload new emoji? You can do so from the [Manage Premium Emoji](transitionToManageEmoji) page.",
                 GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_SAVE_BUTTON: "Add {totalEmoji, plural, =1 {1 Emoji} other {{totalEmoji} Emoji}}",
@@ -16711,12 +16717,15 @@
                 CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_BODY: "Are you sure you want to exit? Any changes made will be lost if you exit now.",
                 CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_CTA_EXIT: "Exit",
                 CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_BACK_TO_EDITING: "Back to editing",
-                CREATE_POLL_REMOVE_ANSWER: "Remove Answer",
-                CREATE_POLL_REPLACE_IMAGE: "Replace Image",
-                CREATE_POLL_EDIT_ALT_TEXT: "Edit Image Description (Alt Text)",
+                CREATE_POLL_REMOVE_ANSWER: "Remove answer",
+                CREATE_POLL_REPLACE_IMAGE: "Replace image",
                 CREATE_POLL_POLL_ANSWER: "Poll Answer",
+                CREATE_POLL_EDIT_ALT_TEXT: "Edit Image Description (Alt Text)",
+                CREATE_POLL_EDIT_IMAGE_DESCRIPTION: "Edit Image Description",
+                CREATE_POLL_ADD_ALT_ARIA_LABEL: "Add alt text, answer {answerNumber}",
+                CREATE_POLL_EDIT_ALT_ARIA_LABEL: "Edit alt text, answer {answerNumber}",
                 CREATE_POLL_ALT_TEXT_LABEL: "Image Description (Alt Text)",
-                CREATE_POLL_EDIT_ALT_TEXT_CLOSE: "Close",
+                CREATE_POLL_ALT_TEXT_SCREEN_READER_HINT: "Alt text:",
                 POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
                 POLL_EXPIRY_DAYS_REMAINING: "{days, plural, other {{days}d left}}",
                 POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}h left}}",
@@ -18305,7 +18314,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252770", ", Version Hash: ").concat("0ae2393febd108139c1c029fecea83da38a37b81")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252966", ", Version Hash: ").concat("b583bea4d95d6d9a9d174b625d6dc9cbf29b9e59")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20603,8 +20612,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "252770", "252770"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252770")), _ = 0), _
+                let _ = parseInt((e = "252966", "252966"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252966")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -34859,46 +34868,27 @@
                         n = e.pos + _;
                     for (; e.pos < n;) {
                         let [_, t] = e.tag();
-                        switch (_) {
-                            case 1:
-                                o.primaryColor = h.UInt64Value.internalBinaryRead(e, e.uint32(), E, o.primaryColor);
-                                break;
-                            case 2:
-                                o.backgroundGradientPresetId = h.UInt32Value.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientPresetId);
-                                break;
-                            case 3:
-                                o.backgroundGradientAngle = h.FloatValue.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientAngle);
-                                break;
-                            default:
-                                let n = E.readUnknownField;
-                                if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
-                                let r = e.skip(t);
-                                !1 !== n && (!0 === n ? M.UnknownFieldHandler.onRead : n)(this.typeName, o, _, t, r)
+                        if (2 === _) o.backgroundGradientPresetId = h.UInt32Value.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientPresetId);
+                        else {
+                            let n = E.readUnknownField;
+                            if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
+                            let r = e.skip(t);
+                            !1 !== n && (!0 === n ? M.UnknownFieldHandler.onRead : n)(this.typeName, o, _, t, r)
                         }
                     }
                     return o
                 }
                 internalBinaryWrite(e, _, E) {
-                    e.primaryColor && h.UInt64Value.internalBinaryWrite(e.primaryColor, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.backgroundGradientPresetId && h.UInt32Value.internalBinaryWrite(e.backgroundGradientPresetId, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.backgroundGradientAngle && h.FloatValue.internalBinaryWrite(e.backgroundGradientAngle, _.tag(3, M.WireType.LengthDelimited).fork(), E).join();
+                    e.backgroundGradientPresetId && h.UInt32Value.internalBinaryWrite(e.backgroundGradientPresetId, _.tag(2, M.WireType.LengthDelimited).fork(), E).join();
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
                 constructor() {
                     super("discord_protos.discord_users.v1.ClientThemeSettings", [{
-                        no: 1,
-                        name: "primary_color",
-                        kind: "message",
-                        T: () => h.UInt64Value
-                    }, {
                         no: 2,
                         name: "background_gradient_preset_id",
                         kind: "message",
                         T: () => h.UInt32Value
-                    }, {
-                        no: 3,
-                        name: "background_gradient_angle",
-                        kind: "message",
-                        T: () => h.FloatValue
                     }])
                 }
             }
@@ -35774,26 +35764,23 @@
         750028: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
-                FloatValue: function() {
-                    return r
-                },
                 Int64Value: function() {
-                    return a
+                    return i
                 },
                 UInt64Value: function() {
-                    return s
+                    return I
                 },
                 Int32Value: function() {
-                    return S
+                    return T
                 },
                 UInt32Value: function() {
-                    return O
+                    return N
                 },
                 BoolValue: function() {
-                    return R
+                    return A
                 },
                 StringValue: function() {
-                    return u
+                    return l
                 }
             }), E("222007"), E("70102"), E("311790"), E("477657"), E("811875"), E("90301"), E("652153"), E("28797"), E("817884"), E("597349"), E("667536"), E("690341");
             var t = E("849266");
@@ -35888,8 +35875,8 @@
                     }])
                 }
             }
-            let r = new n;
-            class i extends t.MessageType {
+            new n;
+            class r extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(t.ScalarType.INT64, e.value, "value", !1, !0)
                 }
@@ -35934,8 +35921,8 @@
                     }])
                 }
             }
-            let a = new i;
-            class I extends t.MessageType {
+            let i = new r;
+            class a extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(t.ScalarType.UINT64, e.value, "value", !1, !0)
                 }
@@ -35980,8 +35967,8 @@
                     }])
                 }
             }
-            let s = new I;
-            class T extends t.MessageType {
+            let I = new a;
+            class s extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(5, e.value, "value", !1, !0)
                 }
@@ -36026,8 +36013,8 @@
                     }])
                 }
             }
-            let S = new T;
-            class N extends t.MessageType {
+            let T = new s;
+            class S extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(13, e.value, "value", !1, !0)
                 }
@@ -36072,8 +36059,8 @@
                     }])
                 }
             }
-            let O = new N;
-            class A extends t.MessageType {
+            let N = new S;
+            class O extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return e.value
                 }
@@ -36118,8 +36105,8 @@
                     }])
                 }
             }
-            let R = new A;
-            class l extends t.MessageType {
+            let A = new O;
+            class R extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return e.value
                 }
@@ -36164,8 +36151,8 @@
                     }])
                 }
             }
-            let u = new l;
-            class L extends t.MessageType {
+            let l = new R;
+            class u extends t.MessageType {
                 internalJsonWrite(e, _) {
                     return this.refJsonWriter.scalar(12, e.value, "value", !1, !0)
                 }
@@ -36210,7 +36197,7 @@
                     }])
                 }
             }
-            new L
+            new u
         },
         233736: function(e, _, E) {
             "use strict";
@@ -36754,4 +36741,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.49ad9a28148237e7f53c.js.map
+//# sourceMappingURL=66318.3e13ea80eda74e3ed337.js.map

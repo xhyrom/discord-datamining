@@ -2773,19 +2773,22 @@
                 generateUploadId: function() {
                     return o
                 },
-                useCanPostPollsInChannel: function() {
+                filterOutUUID: function() {
                     return c
                 },
-                isAnswerFilled: function() {
+                useCanPostPollsInChannel: function() {
                     return E
                 },
-                isIncompleteAnswer: function() {
+                isAnswerFilled: function() {
                     return f
                 },
-                createPollServerDataFromCreateRequest: function() {
+                isIncompleteAnswer: function() {
                     return _
+                },
+                createPollServerDataFromCreateRequest: function() {
+                    return g
                 }
-            });
+            }), n("781738");
             var a = n("748820"),
                 l = n("418009"),
                 s = n("957255"),
@@ -2806,6 +2809,10 @@
             }
 
             function c(e) {
+                return e.replace(/\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i, "")
+            }
+
+            function E(e) {
                 let {
                     enabled: t
                 } = r.PollsExperiment.useExperiment({
@@ -2818,15 +2825,15 @@
                 }) : t && s.default.can(d.Permissions.SEND_MESSAGES, e))
             }
 
-            function E(e, t) {
+            function f(e, t) {
                 return t === l.PollLayoutTypes.IMAGE_ONLY_ANSWERS ? null != e.image : null != e.text && e.text.length > 0
             }
 
-            function f(e, t) {
+            function _(e, t) {
                 return t === l.PollLayoutTypes.DEFAULT && null != e.image && (null == e.text || 0 === e.text.length)
             }
 
-            function _(e) {
+            function g(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "0";
                 if (null == e) return;
@@ -2994,4 +3001,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.3a43eb30b9802be446a5.js.map
+//# sourceMappingURL=31717.600d5111130648c4f7c5.js.map
