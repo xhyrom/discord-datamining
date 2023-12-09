@@ -947,7 +947,64 @@
                         label: e,
                         status: (0, _.humanizeStatus)(t, n)
                     }) : e
-                }(m, A, C), M = O.size * h.DECORATION_TO_AVATAR_RATIO, L = null != v && (0, r.jsx)("svg", {
+                }(m, A, C), M = O.size * h.DECORATION_TO_AVATAR_RATIO, L = function(e, t, n, r) {
+                    if (null == e) return null;
+                    if (r) switch (t) {
+                        case f.AvatarSizes.SIZE_16:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_16;
+                        case f.AvatarSizes.SIZE_20:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_20;
+                        case f.AvatarSizes.SIZE_24:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_24;
+                        case f.AvatarSizes.SIZE_32:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_32;
+                        case f.AvatarSizes.SIZE_40:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_40;
+                        case f.AvatarSizes.SIZE_56:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_56;
+                        case f.AvatarSizes.SIZE_80:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_80;
+                        case f.AvatarSizes.SIZE_120:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_120
+                    }
+                    if (n) switch (t) {
+                        case f.AvatarSizes.SIZE_16:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_16;
+                        case f.AvatarSizes.SIZE_20:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_20;
+                        case f.AvatarSizes.SIZE_24:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_24;
+                        case f.AvatarSizes.SIZE_32:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_32;
+                        case f.AvatarSizes.SIZE_40:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_40;
+                        case f.AvatarSizes.SIZE_56:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_56;
+                        case f.AvatarSizes.SIZE_80:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_80;
+                        case f.AvatarSizes.SIZE_120:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_120
+                    }
+                    switch (t) {
+                        case f.AvatarSizes.SIZE_16:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_16;
+                        case f.AvatarSizes.SIZE_20:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_20;
+                        case f.AvatarSizes.SIZE_24:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_24;
+                        case f.AvatarSizes.SIZE_32:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_32;
+                        case f.AvatarSizes.SIZE_40:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_40;
+                        case f.AvatarSizes.SIZE_56:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_56;
+                        case f.AvatarSizes.SIZE_80:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_80;
+                        case f.AvatarSizes.SIZE_120:
+                            return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_120
+                    }
+                    return null
+                }(A, n, C, R), P = null != v && (0, r.jsx)("svg", {
                     width: M + N,
                     height: M,
                     viewBox: "0 0 ".concat(M + N, " ").concat(M),
@@ -958,63 +1015,7 @@
                         y: 0,
                         width: M,
                         height: M,
-                        mask: "url(#".concat(function(e, t, n, r) {
-                            if (null == e) return "";
-                            if (r) switch (t) {
-                                case f.AvatarSizes.SIZE_16:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_16;
-                                case f.AvatarSizes.SIZE_20:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_20;
-                                case f.AvatarSizes.SIZE_24:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_24;
-                                case f.AvatarSizes.SIZE_32:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_32;
-                                case f.AvatarSizes.SIZE_40:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_40;
-                                case f.AvatarSizes.SIZE_56:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_56;
-                                case f.AvatarSizes.SIZE_80:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_80;
-                                case f.AvatarSizes.SIZE_120:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_TYPING_120
-                            }
-                            if (n) switch (t) {
-                                case f.AvatarSizes.SIZE_16:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_16;
-                                case f.AvatarSizes.SIZE_20:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_20;
-                                case f.AvatarSizes.SIZE_24:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_24;
-                                case f.AvatarSizes.SIZE_32:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_32;
-                                case f.AvatarSizes.SIZE_40:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_40;
-                                case f.AvatarSizes.SIZE_56:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_56;
-                                case f.AvatarSizes.SIZE_80:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_80;
-                                case f.AvatarSizes.SIZE_120:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_MOBILE_120
-                            }
-                            switch (t) {
-                                case f.AvatarSizes.SIZE_16:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_16;
-                                case f.AvatarSizes.SIZE_20:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_20;
-                                case f.AvatarSizes.SIZE_24:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_24;
-                                case f.AvatarSizes.SIZE_32:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_32;
-                                case f.AvatarSizes.SIZE_40:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_40;
-                                case f.AvatarSizes.SIZE_56:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_56;
-                                case f.AvatarSizes.SIZE_80:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_80;
-                                case f.AvatarSizes.SIZE_120:
-                                    return E.MaskIDs.AVATAR_DECORATION_STATUS_ROUND_120
-                            }
-                        }(A, n, C, R), ")"),
+                        mask: null != L ? "url(#".concat(L, ")") : void 0,
                         children: (0, r.jsx)("div", {
                             className: S.avatarStack,
                             children: (0, r.jsx)("img", {
@@ -1038,7 +1039,7 @@
                     onMouseLeave: null != d ? d : void 0,
                     "aria-label": D,
                     "aria-hidden": g,
-                    children: [t, L]
+                    children: [t, P]
                 }) : (0, r.jsxs)("div", {
                     className: a(S.wrapper, p),
                     style: y,
@@ -1048,7 +1049,7 @@
                     role: "img",
                     "aria-label": D,
                     "aria-hidden": g,
-                    children: [t, L]
+                    children: [t, P]
                 })
             }
 
@@ -41562,4 +41563,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.cc13b3b956b0b0f6993e.js.map
+//# sourceMappingURL=72243.fd97ea76672332fed74e.js.map
