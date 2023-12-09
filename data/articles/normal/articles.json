@@ -1,5 +1,33 @@
 [
   {
+    "id": 19685981263127,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/19685981263127.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/19685981263127--Resolved-Attachments-Broken-on-Android",
+    "author_id": 12415876668,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 360007875111,
+    "created_at": "2023-12-09T00:47:47Z",
+    "name": "[Resolved] Attachments Broken on Android",
+    "title": "[Resolved] Attachments Broken on Android",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2023-12-09T00:55:21Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720952,
+    "content_tag_ids": [],
+    "label_names": [
+      "image",
+      "bug",
+      "android"
+    ],
+    "body": "<p>As of <strong>December 9th 1:30AM PST</strong>, our team has found the root cause and resolved this issue with Android image attachments. </p>\n<h3 id=\"h_01HH612NQN37E0ASV9FW7XF8S0\">\n<strong>Note</strong>: If you are still experiencing issues with attachments, please check for app updates for Discord on your Android device and restart your application. </h3>\n<p>For more information, check out this link here: <a class=\"anchor_c8ddc0 anchorUnderlineOnHover__78236\" tabindex=\"0\" title=\"https://discordstatus.com/incidents/7hkq2t87qhqx\" role=\"button\" href=\"https://discordstatus.com/incidents/7hkq2t87qhqx\" target=\"_blank\" rel=\"noreferrer noopener\">https://discordstatus.com/incidents/7hkq2t87qhqx</a></p>"
+  },
+  {
     "id": 19583625604887,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/19583625604887.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/19583625604887-Voice-Channels-FAQs",
