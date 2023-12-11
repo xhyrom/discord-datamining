@@ -339,6 +339,7 @@
                     frequency: e.frequency,
                     interval: e.interval,
                     by_weekday: e.byWeekday,
+                    by_n_weekday: e.byNWeekday,
                     by_month: e.byMonth,
                     by_month_day: (null !== (n = null === (t = e.byMonthDay) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0) > 0 ? e.byMonthDay : null,
                     by_year_day: e.byYearDay,
@@ -353,6 +354,7 @@
                     frequency: e.frequency,
                     interval: e.interval,
                     byWeekday: e.by_weekday,
+                    byNWeekday: e.by_n_weekday,
                     byMonth: e.by_month,
                     byMonthDay: e.by_month_day,
                     byYearDay: e.by_year_day,
@@ -372,7 +374,7 @@
                     entityMetadata: _,
                     image: y,
                     recurrenceRule: v,
-                    eventExceptions: f
+                    eventExceptions: h
                 } = e;
                 return {
                     id: null != n ? n : a.FAKE_EVENT_ID,
@@ -389,7 +391,7 @@
                     creator_id: r.default.getId(),
                     status: a.GuildScheduledEventStatus.SCHEDULED,
                     recurrence_rule: s(v),
-                    guild_scheduled_event_exceptions: f.map(e => ({
+                    guild_scheduled_event_exceptions: h.map(e => ({
                         event_exception_id: e.eventExceptionId,
                         event_id: e.eventId,
                         guild_id: e.guildId,
@@ -401,8 +403,8 @@
             }
 
             function y(e, t, n) {
-                var u, l, r, o, s, _, y, v, f;
-                let h = {
+                var u, l, r, o, s, _, y, v, h;
+                let f = {
                     name: null !== (u = null == t ? void 0 : t.name) && void 0 !== u ? u : "",
                     privacyLevel: null !== (l = null == t ? void 0 : t.privacy_level) && void 0 !== l ? l : a.GuildScheduledEventPrivacyLevel.GUILD_ONLY,
                     description: null !== (r = null == t ? void 0 : t.description) && void 0 !== r ? r : "",
@@ -424,13 +426,13 @@
                         isCanceled: e.is_canceled
                     }))
                 };
-                if (null != (f = t) && "id" in f && (null == t ? void 0 : t.entity_type) === a.GuildScheduledEventEntityTypes.EXTERNAL) {
+                if (null != (h = t) && "id" in h && (null == t ? void 0 : t.entity_type) === a.GuildScheduledEventEntityTypes.EXTERNAL) {
                     let e = (0, d.getLocationFromEvent)(t);
-                    null != e && (h.entityMetadata = {
+                    null != e && (f.entityMetadata = {
                         location: e
                     })
-                } else null == h.channelId && null != n && (h.channelId = n.id, n.isGuildStageVoice() ? h.entityType = a.GuildScheduledEventEntityTypes.STAGE_INSTANCE : n.isGuildVoice() && (h.entityType = a.GuildScheduledEventEntityTypes.VOICE));
-                return h
+                } else null == f.channelId && null != n && (f.channelId = n.id, n.isGuildStageVoice() ? f.entityType = a.GuildScheduledEventEntityTypes.STAGE_INSTANCE : n.isGuildVoice() && (f.entityType = a.GuildScheduledEventEntityTypes.VOICE));
+                return f
             }
         },
         841363: function(e, t, n) {
@@ -503,13 +505,13 @@
                     return E
                 },
                 getInitialEventStartDate: function() {
-                    return f
+                    return h
                 },
                 getEventTimeData: function() {
                     return T
                 },
                 getBaseScheduleForRecurrence: function() {
-                    return R
+                    return D
                 },
                 getScheduleForRecurrenceWithException: function() {
                     return S
@@ -524,10 +526,10 @@
                     return N
                 },
                 getRRule: function() {
-                    return U
+                    return L
                 },
                 generateNextRecurrences: function() {
-                    return L
+                    return U
                 },
                 getNextRecurrenceIdInEvent: function() {
                     return I
@@ -556,15 +558,15 @@
                 _ = [d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday],
                 y = [d.RRule.SU.weekday, d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday],
                 v = [d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday, d.RRule.SA.weekday],
-                f = () => {
+                h = () => {
                     let e = r().add(1, "hour"),
                         t = e.hour();
                     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
                 },
-                h = (e, t) => e.format(e.get("years") === t.get("years") ? "ddd MMM Do \xb7 LT" : "ddd MMM Do, YYYY \xb7 LT"),
+                f = (e, t) => e.format(e.get("years") === t.get("years") ? "ddd MMM Do \xb7 LT" : "ddd MMM Do, YYYY \xb7 LT"),
                 p = (e, t) => {
                     let n = e.diff(t, "days");
-                    return n > 1 ? h(e, t) : e.calendar(t)
+                    return n > 1 ? f(e, t) : e.calendar(t)
                 };
 
             function T(e, t, n) {
@@ -574,7 +576,7 @@
                     d = null != t && u.isSame(l, "day");
                 return {
                     startDateTimeString: p(u, n),
-                    endDateTimeString: null != l ? d ? l.format("LT") : h(l, n) : void 0,
+                    endDateTimeString: null != l ? d ? l.format("LT") : f(l, n) : void 0,
                     currentOrPastEvent: u <= n,
                     upcomingEvent: u <= r().add(1, "hour"),
                     withinStartWindow: u <= r().add(15, "minute"),
@@ -582,7 +584,7 @@
                 }
             }
 
-            function D(e, t) {
+            function R(e, t) {
                 let n;
                 return null != e && (n = {
                     startDate: r(e),
@@ -590,9 +592,9 @@
                 }, null != t && (n.endDate = r(t))), n
             }
 
-            function R(e, t) {
+            function D(e, t) {
                 let n = function(e) {
-                        return D(e.scheduled_start_time, e.scheduled_end_time)
+                        return R(e.scheduled_start_time, e.scheduled_end_time)
                     }(t),
                     u = r(i.default.extractTimestamp(e)),
                     l = (null == n ? void 0 : n.endDate) != null ? u.clone().add(n.endDate.diff(n.startDate)) : void 0;
@@ -613,7 +615,7 @@
             }
 
             function g(e) {
-                return D(e.scheduledStartTime, e.scheduledEndTime)
+                return R(e.scheduledStartTime, e.scheduledEndTime)
             }
 
             function m(e, t) {
@@ -624,14 +626,17 @@
                 return null == e || null == t ? null == e && null == t : m(e.startDate, t.startDate) && m(e.endDate, t.endDate)
             }
 
-            function U(e) {
-                let t = new Date(e.start);
-                return t.setMilliseconds(0), new d.RRule({
-                    dtstart: t,
+            function L(e) {
+                var t;
+                let n = null != e.byWeekday ? [...e.byWeekday] : null,
+                    u = null === (t = e.byNWeekday) || void 0 === t ? void 0 : t.map(e => new(0, d.Weekday)(e.day).nth(e.n)),
+                    l = new Date(e.start);
+                return l.setMilliseconds(0), new d.RRule({
+                    dtstart: l,
                     until: null != e.end ? new Date(e.end) : null,
                     freq: e.frequency,
                     interval: e.interval,
-                    byweekday: null != e.byWeekday ? [...e.byWeekday] : null,
+                    byweekday: null != n ? n : u,
                     bymonth: null != e.byMonth ? [...e.byMonth] : null,
                     bymonthday: null != e.byMonthDay ? [...e.byMonthDay] : null,
                     byyearday: null != e.byYearDay ? [...e.byYearDay] : null,
@@ -639,7 +644,7 @@
                 })
             }
 
-            function L(e, t, n) {
+            function U(e, t, n) {
                 let u = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
                     l = [],
                     r = n;
@@ -683,64 +688,78 @@
             }
 
             function b(e, t) {
-                var n;
-                let u = function(e, t) {
+                let n = function(e, t) {
                     let n = G(t),
-                        u = t.toDate();
-                    switch (u.setMilliseconds(0), e) {
+                        u = new d.Weekday(t.toDate().getDay()),
+                        l = Math.ceil(t.toDate().getDate() / 7),
+                        r = t.toDate();
+                    switch (r.setMilliseconds(0), e) {
                         case c.RecurrenceOptions.NONE:
                             return null;
                         case c.RecurrenceOptions.WEEKLY:
                             return new d.RRule({
-                                dtstart: u,
+                                dtstart: r,
                                 freq: d.RRule.WEEKLY
+                            });
+                        case c.RecurrenceOptions.MONTHLY:
+                            return new d.RRule({
+                                dtstart: r,
+                                freq: d.RRule.MONTHLY,
+                                byweekday: [u.nth(l)]
                             });
                         case c.RecurrenceOptions.YEARLY:
                             return new d.RRule({
-                                dtstart: u,
+                                dtstart: r,
                                 freq: d.RRule.YEARLY
                             });
                         case c.RecurrenceOptions.WEEKDAY_ONLY:
                             return new d.RRule({
-                                dtstart: u,
+                                dtstart: r,
                                 freq: d.RRule.DAILY,
                                 byweekday: n
                             })
                     }
                 }(e, t);
-                if (null == u) return null;
+                if (null == n) return null;
                 let {
-                    dtstart: l,
-                    until: r,
-                    freq: i,
-                    interval: a,
-                    byweekday: o,
+                    dtstart: u,
+                    until: l,
+                    freq: r,
+                    interval: i,
+                    byweekday: a,
+                    bynweekday: o,
                     bymonth: s,
                     bymonthday: E,
                     byyearday: _,
                     count: y
-                } = u.options;
+                } = n.options, v = null == o ? void 0 : o.map(e => ({
+                    n: e[1],
+                    day: e[0]
+                }));
                 return {
-                    start: l.toISOString(),
-                    end: null !== (n = null == r ? void 0 : r.toISOString()) && void 0 !== n ? n : null,
-                    frequency: i,
-                    interval: a,
-                    byWeekday: null != o ? o : null,
-                    byMonth: null != s ? s : null,
-                    byMonthDay: null != E ? E : null,
-                    byYearDay: null != _ ? _ : null,
+                    start: u.toISOString(),
+                    end: null == l ? void 0 : l.toISOString(),
+                    frequency: r,
+                    interval: i,
+                    byWeekday: a,
+                    byNWeekday: v,
+                    byMonth: s,
+                    byMonthDay: E,
+                    byYearDay: _,
                     count: y
                 }
             }
 
             function w(e, t) {
                 if (null == t) return c.RecurrenceOptions.NONE;
-                let n = U(t);
+                let n = L(t);
                 switch (n.options.freq) {
                     case d.RRule.WEEKLY:
                         return c.RecurrenceOptions.WEEKLY;
                     case d.RRule.YEARLY:
                         return c.RecurrenceOptions.YEARLY;
+                    case d.RRule.MONTHLY:
+                        return c.RecurrenceOptions.MONTHLY;
                     case d.RRule.DAILY:
                         if (!(0, u.isEqual)(n.options.byweekday, G(e))) return c.RecurrenceOptions.NONE;
                         return c.RecurrenceOptions.WEEKDAY_ONLY;
@@ -751,4 +770,4 @@
         }
     }
 ]);
-//# sourceMappingURL=81161.abe9578e4d66ca1934cd.js.map
+//# sourceMappingURL=81161.0cb2ceb24cdeb831a7d4.js.map
