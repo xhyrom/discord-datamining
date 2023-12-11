@@ -19423,8 +19423,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -122013,10 +122013,10 @@ div.nagbar_c731ff {
     --polls-embed-background: var(--primary-630);
     --polls-embed-border: var(--primary-660);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
-    --polls-normal-border: var(--primary-260);
+    --polls-normal-border: var(--primary-700);
     --polls-normal-confetti: var(--brand-500);
-    --polls-normal-fill: var(--white-500);
-    --polls-normal-label: var(--primary-600);
+    --polls-normal-fill: var(--primary-530);
+    --polls-normal-label: var(--white-500);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
     --polls-victor-label: var(--primary-600);
@@ -122617,10 +122617,10 @@ div.nagbar_c731ff {
     --polls-embed-background: hsl(var(--brand-360-hsl) / 0.08);
     --polls-embed-border: hsl(var(--primary-630-hsl) / 0.5);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
-    --polls-normal-border: var(--primary-260);
+    --polls-normal-border: var(--primary-700);
     --polls-normal-confetti: var(--brand-500);
-    --polls-normal-fill: var(--white-500);
-    --polls-normal-label: var(--primary-600);
+    --polls-normal-fill: var(--primary-530);
+    --polls-normal-label: var(--white-500);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
     --polls-victor-label: var(--primary-600);
@@ -122919,10 +122919,10 @@ div.nagbar_c731ff {
     --polls-embed-background: hsl(var(--brand-360-hsl) / 0.08);
     --polls-embed-border: hsl(var(--primary-630-hsl) / 0.5);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
-    --polls-normal-border: var(--primary-260);
+    --polls-normal-border: var(--primary-700);
     --polls-normal-confetti: var(--brand-500);
-    --polls-normal-fill: var(--white-500);
-    --polls-normal-label: var(--primary-600);
+    --polls-normal-fill: var(--primary-530);
+    --polls-normal-label: var(--white-500);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
     --polls-victor-label: var(--primary-600);
@@ -124331,4 +124331,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3e0ba3168187129f37cd.css.map*/
+/*# sourceMappingURL=app.dd53b14dc885ceafc644.css.map*/
