@@ -106565,6 +106565,10 @@ html .invoiceCancelRow_a8669b {
     min-height: 80px
 }
 
+.previewTextArea_ef8120 {
+    overflow-y: scroll
+}
+
 .channelTextAreaInner__33239 {
     background: transparent;
     border-radius: 0;
@@ -106802,7 +106806,8 @@ html .invoiceCancelRow_a8669b {
 
 .previewModeIndicator_c9ec62 {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    padding-top: 4px
 }
 
 .focusTarget_b668ef {
@@ -118495,7 +118500,7 @@ html .invoiceCancelRow_c1bfe7 {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: 14px
+    font-size: .875rem
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -124619,4 +124624,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.eb2ee95443ed93e52d2a.css.map*/
+/*# sourceMappingURL=app.c7a3f7601d61fb45af58.css.map*/
