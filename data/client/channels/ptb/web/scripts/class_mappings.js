@@ -14829,12 +14829,6 @@
                 tierTooltipTitle: "tierTooltipTitle__5ca9a"
             }
         },
-        480260: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                boostingMenuItemHighlight: "boostingMenuItemHighlight_dcd927"
-            }
-        },
         374407: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -20045,98 +20039,6 @@
                 upsellClose: "upsellClose__1abdf",
                 upsellImage: "upsellImage__714bb",
                 zoomInFromBottomRight: "zoomInFromBottomRight_edd5d4"
-            }
-        },
-        693447: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                boostTutorialImg: "boostTutorialImg_d4bd48",
-                cancelButtonColor: "cancelButtonColor_fed90e",
-                closeHelperLink: "closeHelperLink_d1575c",
-                collapsedCoachmarkContainer: "collapsedCoachmarkContainer_d7741e",
-                collapsedCoachmarkExpandButton: "collapsedCoachmarkExpandButton_c083d4",
-                collapsedCoachmarkHeading: "collapsedCoachmarkHeading__79255",
-                collapsedCoachmarkImage: "collapsedCoachmarkImage__798c3",
-                emojiTutorialImg: "emojiTutorialImg__59c46",
-                expandedCoachmarkBannerBranding: "expandedCoachmarkBannerBranding_fa5520",
-                expandedCoachmarkBannerContainer: "expandedCoachmarkBannerContainer__96f94",
-                expandedCoachmarkBannerImage: "expandedCoachmarkBannerImage__45035",
-                expandedCoachmarkCelebrationBannerImage: "expandedCoachmarkCelebrationBannerImage_cdc997",
-                expandedCoachmarkCollapseButton: "expandedCoachmarkCollapseButton__7ee64",
-                expandedCoachmarkCollapseButtonContainer: "expandedCoachmarkCollapseButtonContainer_f5da85",
-                expandedCoachmarkContent: "expandedCoachmarkContent__20dad",
-                expandedCoachmarkContentContainer: "expandedCoachmarkContentContainer_f2e3d6",
-                expandedCoachmarkFooterContent: "expandedCoachmarkFooterContent__16cc0",
-                expandedCoachmarkHeader: "expandedCoachmarkHeader__0155d",
-                expandedCoachmarkSubheader: "expandedCoachmarkSubheader__8c1f9",
-                rightCaretContainer: "rightCaretContainer_c2c983",
-                seeAllPerksLink: "seeAllPerksLink_aca836",
-                slideInFromBottom: "slideInFromBottom__5e436",
-                slideInFromBottomAnimation: "slideInFromBottomAnimation_f095d1",
-                tooltipText: "tooltipText__51aae",
-                tutorialCheckmark: "tutorialCheckmark_cfc3a7",
-                tutorialCheckmarkDisabled: "tutorialCheckmarkDisabled__36334",
-                tutorialCheckmarkEnabled: "tutorialCheckmarkEnabled_e8005a",
-                tutorialDismissConfirmationSeparator: "tutorialDismissConfirmationSeparator_eba4b9",
-                tutorialLink: "tutorialLink__9cf8a",
-                tutorialLinkBackground: "tutorialLinkBackground_a8c620",
-                tutorialLinkDisabled: "tutorialLinkDisabled__8462e",
-                tutorialLinkEnabled: "tutorialLinkEnabled__83788",
-                tutorialLinkImageContainer: "tutorialLinkImageContainer__2e257",
-                tutorialLinkImageContainerDisabled: "tutorialLinkImageContainerDisabled__18772",
-                tutorialLinkSeparator: "tutorialLinkSeparator__7b32d",
-                tutorialLinkcontainer: "tutorialLinkcontainer__04367",
-                tutorialLinkcontainerEnabled: "tutorialLinkcontainerEnabled_bed8e9",
-                tutorialRightCaret: "tutorialRightCaret__51129",
-                tutorialRightCaretDisabled: "tutorialRightCaretDisabled__64a07",
-                tutorialRightCaretEnabled: "tutorialRightCaretEnabled_ab90c4",
-                tutorialStepsContainer: "tutorialStepsContainer__70089"
-            }
-        },
-        506653: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                emojiSparkle: "emojiSparkle__6f6d3",
-                fileUploadSparkle: "fileUploadSparkle__0656b",
-                stickerSparkle: "stickerSparkle_bae233",
-                tooltipText: "tooltipText__18696"
-            }
-        },
-        901194: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                guidedTooltip: "guidedTooltip_c45913"
-            }
-        },
-        41943: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                children: "children__5d045",
-                guildBoostMarketingpageHighlightAccent: "guildBoostMarketingpageHighlightAccent__02f9d highlightRing__4d698",
-                guildBostMarketingPageHighlightBase: "guildBostMarketingPageHighlightBase__1346e highlightRing__4d698",
-                highlight: "highlight_dabdce",
-                highlightAccent: "highlightAccent_bc3e31 highlightRing__4d698",
-                highlightBase: "highlightBase__63baf highlightRing__4d698",
-                highlightRing: "highlightRing__4d698",
-                wrapper: "wrapper_ce6c5c"
-            }
-        },
-        461024: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                backButton: "backButton_bcf1aa",
-                closeButton: "closeButton__7b2f1",
-                guidedTutorialActions: "guidedTutorialActions_b204f0",
-                guidedTutorialBody: "guidedTutorialBody__79202",
-                guidedTutorialHeading: "guidedTutorialHeading_c161f8",
-                guidedTutorialImage: "guidedTutorialImage__5853f",
-                guidedTutorialWrapper: "guidedTutorialWrapper__5b814",
-                premiumGradient: "premiumGradient__99249",
-                primaryCta: "primaryCta__5e7c9 premiumGradient__99249",
-                progressBarContainer: "progressBarContainer_db221b",
-                progressBarCount: "progressBarCount_e20949",
-                progressBarInner: "progressBarInner_c938f9 premiumGradient__99249",
-                progressBarOuter: "progressBarOuter__9b077"
             }
         },
         552033: function(e, t, o) {
