@@ -85,17 +85,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "activities_team"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
         },
         "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "activities_team"
-        },
-        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
@@ -139,17 +139,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
         },
         "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -194,17 +194,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
-          "label_type": 2,
-          "label_until": "2023-10-24T00:00:00+00:00",
-          "release_phase": "global_launch"
-        },
         "ios": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
         },
         "web": {
+          "label_type": 2,
+          "label_until": "2023-10-24T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
@@ -249,17 +249,17 @@
       "free_period_starts_at": "2023-05-15T16:30:00+00:00",
       "free_period_ends_at": "2023-06-16T07:00:00+00:00",
       "client_platform_config": {
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -304,7 +304,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
@@ -314,7 +314,7 @@
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
@@ -412,17 +412,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -468,17 +468,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -528,12 +528,12 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -579,17 +579,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -635,12 +635,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -690,12 +690,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -745,7 +745,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -755,7 +755,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -805,17 +805,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -861,17 +861,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -916,12 +916,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -971,17 +971,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
         },
         "web": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
@@ -1026,17 +1026,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1081,9 +1081,9 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 1,
-          "label_until": "2023-11-21T09:00:00+00:00",
+          "label_until": "2023-11-20T09:00:00+00:00",
           "release_phase": "global_launch"
         },
         "android": {
@@ -1091,9 +1091,9 @@
           "label_until": "2023-11-21T01:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 1,
-          "label_until": "2023-11-20T09:00:00+00:00",
+          "label_until": "2023-11-21T09:00:00+00:00",
           "release_phase": "global_launch"
         }
       },
@@ -1137,17 +1137,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
         "web": {
           "label_type": 1,
           "label_until": "2023-12-14T08:00:00+00:00",
           "release_phase": "global_launch"
         },
         "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
-        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -1334,8 +1334,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -1418,8 +1418,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147601472"
     },
