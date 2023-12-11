@@ -15045,6 +15045,7 @@
   "COLLECTIBLES_ACCEPT_GIFT": "\"Accept gift\"",
   "COLLECTIBLES_FROM_SENDER": "\"From {sender}\"",
   "COLLECTIBLES_GIFT_DETAILS": "\"Gifted by {sender} on {date}\"",
+  "COLLECTIBLES_SEND_ITEM_AS_A_GIFT": "\"Send item as a gift\"",
   "COLLECTIBLES_GIFT_COACHMARK_HEADING": "\"Give the gift of style\"",
   "COLLECTIBLES_GIFT_COACHMARK_DESC": "\"Check out the latest profile styles and surprise your friend with a fresh new look.\"",
   "COLLECTIBLES_GIFT_SEND_ERROR_OWNED": "\"Hey! Your friend already has this. Try sending something else.\"",
