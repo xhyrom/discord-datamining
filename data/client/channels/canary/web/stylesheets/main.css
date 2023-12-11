@@ -84157,6 +84157,7 @@ input::-webkit-inner-spin-button {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    pointer-events: none;
     cursor: default;
     animation-name: snowflakes-fall__21238, snowflakes-shake_ab86ff;
     animation-duration: 10s, 3s;
@@ -124624,4 +124625,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.53b7f21a5a00213547f6.css.map*/
+/*# sourceMappingURL=app.9a29e39be86b3fc91307.css.map*/
