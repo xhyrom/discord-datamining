@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["64873"], {
+    ["67820"], {
         753809: function(_, I, E) {
             "use strict";
             E.r(I), E.d(I, {
@@ -81,46 +81,6 @@
             }
             var N = S
         },
-        778588: function(_, I, E) {
-            "use strict";
-            E.r(I), E.d(I, {
-                default: function() {
-                    return O
-                }
-            }), E("222007");
-            var T = E("446674"),
-                S = E("913144");
-            let N = [];
-
-            function R() {
-                N = []
-            }
-            class A extends T.default.Store {
-                hasLayers() {
-                    return N.length > 0
-                }
-                getLayers() {
-                    return N
-                }
-            }
-            A.displayName = "LayerStore";
-            var O = new A(S.default, {
-                LAYER_PUSH: function(_) {
-                    let {
-                        component: I
-                    } = _;
-                    if (N.indexOf(I) >= 0) return !1;
-                    N = [...N, I]
-                },
-                LAYER_POP: function() {
-                    if (0 === N.length) return !1;
-                    N = N.slice(0, -1)
-                },
-                LAYER_POP_ALL: R,
-                LOGOUT: R,
-                NOTIFICATION_CLICK: R
-            })
-        },
         83900: function(_, I, E) {
             "use strict";
             E.r(I), E.d(I, {
@@ -165,4 +125,4 @@
         }
     }
 ]);
-//# sourceMappingURL=64873.bd98aa3f1ec96684dac4.js.map
+//# sourceMappingURL=67820.89b724532f9991f7db9d.js.map

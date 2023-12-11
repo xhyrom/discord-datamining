@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["28794"], {
+    ["51772"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -167,19 +167,19 @@
                     return C
                 },
                 requestHarvest: function() {
-                    return N
+                    return v
                 },
                 setPendingAvatar: function() {
-                    return v
+                    return N
                 },
                 setPendingGlobalNameName: function() {
                     return g
                 },
                 setPendingAvatarDecoration: function() {
-                    return A
+                    return m
                 },
                 setPendingProfileEffectID: function() {
-                    return m
+                    return A
                 },
                 setSingleTryItOutCollectiblesItem: function() {
                     return R
@@ -191,13 +191,13 @@
                     return U
                 },
                 resetAllPending: function() {
-                    return O
+                    return y
                 },
                 resetAndCloseUserProfileForm: function() {
-                    return P
+                    return O
                 },
                 setDisableSubmit: function() {
-                    return y
+                    return P
                 }
             });
             var i = n("872717"),
@@ -331,14 +331,14 @@
                 })
             }
 
-            function N() {
+            function v() {
                 return i.default.post({
                     url: f.Endpoints.USER_HARVEST,
                     oldFormErrors: !0
                 })
             }
 
-            function v(e) {
+            function N(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
                     avatar: e
@@ -352,14 +352,14 @@
                 })
             }
 
-            function A(e) {
+            function m(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION",
                     avatarDecoration: e
                 })
             }
 
-            function m(e) {
+            function A(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
                     profileEffectID: e
@@ -385,19 +385,19 @@
                 })
             }
 
-            function O() {
+            function y() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_RESET_ALL_PENDING"
                 })
             }
 
-            function P() {
+            function O() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
                 })
             }
 
-            function y(e) {
+            function P(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_DISABLE_SUBMIT",
                     disable: e
@@ -1274,10 +1274,10 @@
                     return C
                 },
                 clearErrors: function() {
-                    return N
+                    return v
                 },
                 setDisableSubmit: function() {
-                    return v
+                    return N
                 }
             }), n("70102");
             var i = n("872717"),
@@ -1405,13 +1405,13 @@
                 })
             }
 
-            function N() {
+            function v() {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
                 })
             }
 
-            function v(e) {
+            function N(e) {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_DISABLE_SUBMIT",
                     disable: e
@@ -1438,17 +1438,17 @@
             }
 
             function S() {
-                C(), N(), p = {}, I = _.FormStates.OPEN
+                C(), v(), p = {}, I = _.FormStates.OPEN
             }
 
             function C() {
                 i = void 0, u = void 0
             }
 
-            function N() {
+            function v() {
                 l = void 0, r = void 0, o = void 0, s = void 0
             }
-            class v extends f.default.Store {
+            class N extends f.default.Store {
                 getFormState() {
                     return I
                 }
@@ -1502,8 +1502,8 @@
                     return h
                 }
             }
-            v.displayName = "GuildIdentitySettingsStore";
-            var g = new v(E.default, {
+            N.displayName = "GuildIdentitySettingsStore";
+            var g = new N(E.default, {
                 GUILD_IDENTITY_SETTINGS_INIT: function(e) {
                     a = e.guild, I = _.FormStates.OPEN, p = {}, c = e.source, d = e.analyticsLocations
                 },
@@ -1562,7 +1562,7 @@
                     s = t
                 },
                 GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: C,
-                GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: N,
+                GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: v,
                 GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: S,
                 GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: S,
                 GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: function() {
@@ -2363,23 +2363,23 @@
                     stepConfigs: T,
                     setBodyNode: S,
                     setFooterNode: C,
-                    setModalOverlayNode: N,
-                    setReadySlideId: v
+                    setModalOverlayNode: v,
+                    setReadySlideId: N
                 } = (0, f.usePaymentContext)(), g = T.find(e => e.key === h);
                 l.useEffect(() => {
-                    N(null)
-                }, [h, N]), s(null != g, "Unknown step for current payment flow.");
-                let A = null !== (a = null == g ? void 0 : null === (t = g.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== a && a,
-                    m = null == g ? void 0 : null === (n = g.options) || void 0 === n ? void 0 : n.bodyClassName,
+                    v(null)
+                }, [h, v]), s(null != g, "Unknown step for current payment flow.");
+                let m = null !== (a = null == g ? void 0 : null === (t = g.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== a && a,
+                    A = null == g ? void 0 : null === (n = g.options) || void 0 === n ? void 0 : n.bodyClassName,
                     R = void 0 !== I && I ? E.sliderBodyLarge : null == g ? void 0 : null === (r = g.options) || void 0 === r ? void 0 : r.sliderBodyClassName;
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [null === (c = null == g ? void 0 : null === (u = g.options) || void 0 === u ? void 0 : u.renderHeader) || void 0 === c || c ? _ : null, g.renderStep(p), null == h || A ? null : (0, i.jsxs)(i.Fragment, {
+                    children: [null === (c = null == g ? void 0 : null === (u = g.options) || void 0 === u ? void 0 : u.renderHeader) || void 0 === c || c ? _ : null, g.renderStep(p), null == h || m ? null : (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(d.ModalContent, {
-                            className: o(E.body, m),
+                            className: o(E.body, A),
                             children: (0, i.jsx)(d.Slides, {
                                 activeSlide: h,
                                 centered: !1,
-                                onSlideReady: e => v(e),
+                                onSlideReady: e => N(e),
                                 children: T.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
                                     id: e.key,
                                     children: (0, i.jsx)("form", {
@@ -2392,7 +2392,7 @@
                         }), (0, i.jsx)("div", {
                             ref: e => C(e)
                         }), (0, i.jsx)("div", {
-                            ref: e => N(e)
+                            ref: e => v(e)
                         })]
                     })]
                 })
@@ -2420,7 +2420,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return I
                 }
             });
             var i = n("37983");
@@ -2429,34 +2429,36 @@
                 r = n("77078"),
                 o = n("112679"),
                 u = n("55689"),
-                s = n("855133"),
-                a = n("599110"),
-                c = n("659500"),
-                d = n("49111"),
-                f = n("646718");
+                s = n("676379"),
+                a = n("697218"),
+                c = n("599110"),
+                d = n("659500"),
+                f = n("719923"),
+                E = n("49111"),
+                _ = n("646718");
 
-            function E(e) {
+            function I(e) {
                 let {
                     initialPlanId: t,
-                    followupSKUInfo: E,
-                    onClose: _,
-                    onComplete: I,
-                    onSubscriptionConfirmation: p,
-                    analyticsLocations: h,
-                    analyticsObject: T,
-                    analyticsLocation: S,
-                    analyticsSourceLocation: C,
-                    isGift: N = !1,
-                    giftMessage: v,
-                    subscriptionTier: g,
-                    trialId: A,
-                    postSuccessGuild: m,
-                    openInvoiceId: R,
-                    applicationId: L,
-                    referralTrialOfferId: U,
-                    giftRecipient: O,
-                    returnRef: P
-                } = null != e ? e : {}, y = !1, D = (0, l.v4)();
+                    followupSKUInfo: I,
+                    onClose: p,
+                    onComplete: h,
+                    onSubscriptionConfirmation: T,
+                    analyticsLocations: S,
+                    analyticsObject: C,
+                    analyticsLocation: v,
+                    analyticsSourceLocation: N,
+                    isGift: g = !1,
+                    giftMessage: m,
+                    subscriptionTier: A,
+                    trialId: R,
+                    postSuccessGuild: L,
+                    openInvoiceId: U,
+                    applicationId: y,
+                    referralTrialOfferId: O,
+                    giftRecipient: P,
+                    returnRef: D
+                } = null != e ? e : {}, M = !1, b = (0, l.v4)(), w = a.default.getCurrentUser(), x = (0, f.isPremiumExactly)(w, _.PremiumTypes.TIER_2);
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
@@ -2468,109 +2470,67 @@
                         } = n;
                         return (0, i.jsx)(e, {
                             ...r,
-                            loadId: D,
-                            subscriptionTier: g,
-                            skuId: g,
-                            isGift: N,
-                            giftMessage: v,
-                            giftRecipient: O,
+                            loadId: b,
+                            subscriptionTier: A,
+                            skuId: A,
+                            isGift: g,
+                            giftMessage: m,
+                            giftRecipient: P,
                             initialPlanId: t,
-                            followupSKUInfo: E,
-                            onClose: e => {
-                                l(), null == _ || _(e), e && (null == p || p())
+                            followupSKUInfo: I,
+                            onClose: (e, t) => {
+                                l(), null == p || p(e), e && (null == T || T(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !x && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
-                                y = !0, null == I || I(), !N && ((0, s.setIsPersistentHelperHidden)(!0), (0, s.setCanPlayWowMoment)(!0))
+                                M = !0, null == h || h(), !g && (0, s.setCanPlayWowMoment)(!0)
                             },
-                            onSubscriptionConfirmation: p,
-                            analyticsLocations: h,
-                            analyticsObject: T,
-                            analyticsLocation: S,
-                            analyticsSourceLocation: C,
-                            trialId: A,
-                            postSuccessGuild: m,
-                            planGroup: f.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
-                            openInvoiceId: R,
-                            applicationId: L,
-                            referralTrialOfferId: U,
-                            returnRef: P
+                            onSubscriptionConfirmation: T,
+                            analyticsLocations: S,
+                            analyticsObject: C,
+                            analyticsLocation: v,
+                            analyticsSourceLocation: N,
+                            trialId: R,
+                            postSuccessGuild: L,
+                            planGroup: _.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
+                            openInvoiceId: U,
+                            applicationId: y,
+                            referralTrialOfferId: O,
+                            returnRef: D
                         })
                     }
                 }, {
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
-                        !y && a.default.track(d.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
-                            load_id: D,
-                            payment_type: d.PurchaseTypeToAnalyticsPaymentType[d.PurchaseTypes.SUBSCRIPTION],
-                            location: null != S ? S : T,
-                            source: C,
-                            subscription_type: d.SubscriptionTypes.PREMIUM,
-                            is_gift: N,
-                            eligible_for_trial: null != A,
-                            application_id: L,
-                            location_stack: h
-                        }), (0, o.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == _ || _(y), y && (!N && c.ComponentDispatch.dispatch(d.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED), null == p || p())
+                        !M && c.default.track(E.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
+                            load_id: b,
+                            payment_type: E.PurchaseTypeToAnalyticsPaymentType[E.PurchaseTypes.SUBSCRIPTION],
+                            location: null != v ? v : C,
+                            source: N,
+                            subscription_type: E.SubscriptionTypes.PREMIUM,
+                            is_gift: g,
+                            eligible_for_trial: null != R,
+                            application_id: y,
+                            location_stack: S
+                        }), (0, o.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == p || p(M), M && (null == T || T())
                     },
-                    onCloseRequest: d.NOOP
+                    onCloseRequest: E.NOOP
                 })
             }
         },
-        855133: function(e, t, n) {
+        676379: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                togglePersistentHelper: function() {
-                    return l
-                },
-                setHasCompletedStep: function() {
-                    return r
-                },
-                resetPremiumTutorialStore: function() {
-                    return o
-                },
                 setCanPlayWowMoment: function() {
-                    return u
-                },
-                setIsPersistentHelperHidden: function() {
-                    return s
-                },
-                setNavigatedFromHelper: function() {
-                    return a
+                    return l
                 }
             });
             var i = n("913144");
-            let l = () => {
-                    i.default.dispatch({
-                        type: "PREMIUM_TUTORIAL_PERSISTENT_ONBOARDING_TOGGLE_COLLAPSE"
-                    })
-                },
-                r = () => {
-                    i.default.dispatch({
-                        type: "SET_HAS_COMPLETED_STEP"
-                    })
-                },
-                o = () => {
-                    i.default.dispatch({
-                        type: "RESET_PREMIUM_TUTORIAL_STORE"
-                    })
-                },
-                u = e => {
-                    i.default.dispatch({
-                        type: "PREMIUM_TUTORIAL_SET_CAN_PLAY_WOW_MOMENT",
-                        value: e
-                    })
-                },
-                s = e => {
-                    i.default.dispatch({
-                        type: "PREMIUM_TUTORIAL_PERSISTENT_SET_IS_HIDDEN",
-                        value: e
-                    })
-                },
-                a = e => {
-                    i.default.dispatch({
-                        type: "PREMIUM_TUTORIAL_SET_NAVIGATED_FROM_HELPER",
-                        value: e
-                    })
-                }
+            let l = e => {
+                i.default.dispatch({
+                    type: "PURCHASED_ITEMS_FESTIVITY_SET_CAN_PLAY_WOW_MOMENT",
+                    value: e
+                })
+            }
         },
         716849: function(e, t, n) {
             "use strict";
@@ -3028,19 +2988,19 @@
                     return C
                 },
                 setTryItOutAvatar: function() {
-                    return N
+                    return v
                 },
                 setTryItOutAvatarDecoration: function() {
-                    return v
+                    return N
                 },
                 setTryItOutProfileEffect: function() {
                     return g
                 },
                 setTryItOutBanner: function() {
-                    return A
+                    return m
                 },
                 setTryItOutThemeColors: function() {
-                    return m
+                    return A
                 }
             });
             var i = n("872717"),
@@ -3148,14 +3108,14 @@
                 })
             }
 
-            function N(e) {
+            function v(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR",
                     avatar: e
                 }), f(d.AnalyticsPremiumFeatureNames.ANIMATED_AVATAR)
             }
 
-            function v(e) {
+            function N(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION",
                     avatarDecoration: e
@@ -3169,14 +3129,14 @@
                 }), f(d.AnalyticsPremiumFeatureNames.PROFILE_EFFECT)
             }
 
-            function A(e) {
+            function m(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
                     banner: e
                 }), f(d.AnalyticsPremiumFeatureNames.PROFILE_BANNER)
             }
 
-            function m(e) {
+            function A(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
                     themeColors: e
@@ -3371,34 +3331,6 @@
                 })
             }
             n("884691")
-        },
-        476765: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                uid: function() {
-                    return o
-                },
-                useUID: function() {
-                    return u
-                },
-                UID: function() {
-                    return s
-                }
-            });
-            var i = n("995008"),
-                l = n.n(i),
-                r = n("775560");
-            let o = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
-                    return l(e)
-                },
-                u = () => (0, r.useLazyValue)(() => o()),
-                s = e => {
-                    let {
-                        children: t
-                    } = e;
-                    return t(u())
-                }
         },
         109264: function(e, t, n) {
             "use strict";
@@ -3865,6 +3797,44 @@
                     size: 16
                 })
         },
+        394832: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return o
+                }
+            });
+            var i = n("37983");
+            n("884691");
+            var l = n("469563"),
+                r = n("125094"),
+                o = (0, l.replaceIcon)(function(e) {
+                    let {
+                        width: t = 24,
+                        height: n = 24,
+                        color: l = "currentColor",
+                        className: r,
+                        foreground: o
+                    } = e;
+                    return (0, i.jsx)("svg", {
+                        className: r,
+                        width: t,
+                        height: n,
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: (0, i.jsx)("path", {
+                            className: o,
+                            fill: l,
+                            fillRule: "evenodd",
+                            clipRule: "evenodd",
+                            d: "M2 4.5C2 3.397 2.897 2.5 4 2.5H20C21.103 2.5 22 3.397 22 4.5V15.5C22 16.604 21.103 17.5 20 17.5H13V19.5H17V21.5H7V19.5H11V17.5H4C2.897 17.5 2 16.604 2 15.5V4.5ZM13.2 14.3375V11.6C9.864 11.6 7.668 12.6625 6 15C6.672 11.6625 8.532 8.3375 13.2 7.6625V5L18 9.6625L13.2 14.3375Z"
+                        })
+                    })
+                }, r.ScreenArrowIcon, void 0, {
+                    size: 24
+                })
+        },
         368121: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -3939,6 +3909,141 @@
                     size: 32
                 })
         },
+        708169: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                FullScreenLayers: function() {
+                    return N
+                },
+                useFullScreenLayerStore: function() {
+                    return T
+                },
+                openFullScreenLayer: function() {
+                    return g
+                },
+                closeFullScreenLayer: function() {
+                    return m
+                }
+            }), n("222007");
+            var i, l, r = n("37983"),
+                o = n("884691"),
+                u = n("995008"),
+                s = n.n(u),
+                a = n("324134"),
+                c = n("308503"),
+                d = n("769846"),
+                f = n("77078"),
+                E = n("485328"),
+                _ = n("159885"),
+                I = n("983782"),
+                p = n("275495");
+            let h = (0, _.cssValueToNumber)(d.default.FULL_SCREEN_LAYER_ANIMATION_DURATION);
+            (l = i || (i = {}))[l.ENTERING = 1] = "ENTERING", l[l.ENTERED = 2] = "ENTERED", l[l.EXITING = 3] = "EXITING", l[l.EXITED = 4] = "EXITED";
+            let T = (0, c.default)(e => ({
+                fullScreenLayers: [],
+                addLayer: t => e(e => {
+                    let {
+                        fullScreenLayers: n
+                    } = e;
+                    return {
+                        fullScreenLayers: [...n, t]
+                    }
+                })
+            }));
+
+            function S(e) {
+                let {
+                    item: t
+                } = e, n = o.useRef(null);
+                return (0, f.useFocusLock)(n), o.useEffect(() => (E.default.disable(), E.default.enableTemp(function(e) {
+                    return {
+                        POP_LAYER: {
+                            binds: ["esc"],
+                            comboKeysBindGlobal: !0,
+                            action() {
+                                m(e)
+                            }
+                        }
+                    }
+                }(t.key)), () => {
+                    E.default.disableTemp()
+                }), [t.key]), (0, r.jsx)(t.LayerComponent, {
+                    children: (0, r.jsxs)("div", {
+                        className: p.root,
+                        ref: n,
+                        children: [(0, r.jsx)("div", {
+                            className: p.drag
+                        }), t.render({
+                            transitionState: null != t ? t.transitionState : 3,
+                            closeLayer: () => m(t.key)
+                        })]
+                    })
+                })
+            }
+            let C = {
+                    enter: p.enter,
+                    enterActive: p.enterActive,
+                    enterDone: p.enterDone,
+                    exit: p.exit,
+                    exitActive: p.exitActive,
+                    exitDone: p.exitDone
+                },
+                v = {
+                    enter: p.enterReducedMotion,
+                    enterActive: p.enterActiveReducedMotion,
+                    enterDone: p.enterDoneReducedMotion,
+                    exit: p.exitReducedMotion,
+                    exitActive: p.exitActiveReducedMotion,
+                    exitDone: p.exitDoneReducedMotion
+                };
+
+            function N() {
+                let {
+                    reducedMotion: e
+                } = o.useContext(f.AccessibilityPreferencesContext), t = e.enabled, n = t ? v : C, i = T(e => e.fullScreenLayers);
+                return (0, r.jsx)(a.TransitionGroup, {
+                    children: i.map(e => (0, r.jsx)(a.CSSTransition, {
+                        classNames: n,
+                        timeout: h,
+                        onEntered: () => {
+                            T.setState({
+                                fullScreenLayers: i.map(t => t.key === e.key ? {
+                                    ...t,
+                                    transitionState: 2
+                                } : t)
+                            })
+                        },
+                        unmountOnExit: !0,
+                        children: (0, r.jsx)(S, {
+                            item: e
+                        })
+                    }, e.key))
+                })
+            }
+
+            function g(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.freeze({}),
+                    {
+                        layerKey: n,
+                        Layer: i
+                    } = t,
+                    l = null != n ? n : s();
+                return T.setState(t => ({
+                    fullScreenLayers: [...t.fullScreenLayers, {
+                        key: l,
+                        transitionState: 1,
+                        LayerComponent: null != i ? i : I.default,
+                        render: e
+                    }]
+                })), l
+            }
+
+            function m(e) {
+                T.setState(t => ({
+                    fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
+                }))
+            }
+        },
         713573: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -4007,7 +4112,7 @@
                     return T
                 },
                 default: function() {
-                    return N
+                    return v
                 }
             }), n("424973"), n("222007");
             var i = n("37983"),
@@ -4198,7 +4303,7 @@
                 showDefaultAvatarsForNullUsers: !1,
                 size: T.SIZE_24
             };
-            var N = C
+            var v = C
         },
         866190: function(e, t, n) {
             "use strict";
@@ -4355,4 +4460,4 @@
         }
     }
 ]);
-//# sourceMappingURL=28794.22cd143a0470e074ea67.js.map
+//# sourceMappingURL=51772.156013bf4b78b90a53c9.js.map

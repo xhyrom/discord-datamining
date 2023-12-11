@@ -6350,7 +6350,7 @@
                     return o
                 },
                 default: function() {
-                    return g
+                    return p
                 }
             });
             var l = n("37983"),
@@ -6362,7 +6362,6 @@
                     PREMIUM_TIER_1: (0, s.v4)(),
                     PREMIUM_TIER_2: (0, s.v4)(),
                     PREMIUM_GUILD: (0, s.v4)(),
-                    PREMIUM_TRIAL_TUTORIAL: (0, s.v4)(),
                     PREMIUM_GUILD_BADGE_V2_BACKGROUND: (0, s.v4)()
                 }),
                 o = {
@@ -6370,7 +6369,6 @@
                     PREMIUM_TIER_1: "url(#".concat(r.PREMIUM_TIER_1, ")"),
                     PREMIUM_TIER_2: "url(#".concat(r.PREMIUM_TIER_2, ")"),
                     PREMIUM_GUILD: "url(#".concat(r.PREMIUM_GUILD, ")"),
-                    PREMIUM_TRIAL_TUTORIAL: "url(#".concat(r.PREMIUM_TRIAL_TUTORIAL, ")"),
                     PREMIUM_GUILD_BADGE_V2_BACKGROUND: "url(#".concat(r.PREMIUM_GUILD_BADGE_V2_BACKGROUND, ")")
                 },
                 u = () => (0, l.jsxs)("linearGradient", {
@@ -6417,15 +6415,6 @@
                     })]
                 }),
                 f = () => (0, l.jsxs)("linearGradient", {
-                    id: r.PREMIUM_TRIAL_TUTORIAL,
-                    children: [(0, l.jsx)("stop", {
-                        stopColor: i.default.unsafe_rawColors.PREMIUM_TIER_2_PURPLE.css
-                    }), (0, l.jsx)("stop", {
-                        offset: "1",
-                        stopColor: i.default.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
-                    })]
-                }),
-                h = () => (0, l.jsxs)("linearGradient", {
                     id: r.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
                     gradientTransform: "rotate(45)",
                     children: [(0, l.jsx)("stop", {
@@ -6436,7 +6425,7 @@
                         stopColor: i.default.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
                     })]
                 }),
-                p = a.memo(function() {
+                h = a.memo(function() {
                     return (0, l.jsxs)("svg", {
                         viewBox: "0 0 1 1",
                         style: {
@@ -6448,10 +6437,10 @@
                             height: 1
                         },
                         "aria-hidden": !0,
-                        children: [u(), d(), c(), m(), f(), h()]
+                        children: [u(), d(), c(), m(), f()]
                     })
                 }, () => !0);
-            var g = p
+            var p = h
         },
         663175: function(e, t, n) {
             "use strict";
@@ -10722,4 +10711,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56145.ca77ff8c50f941ccf356.js.map
+//# sourceMappingURL=56145.05dff2851b6b511b4763.js.map

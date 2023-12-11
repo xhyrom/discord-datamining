@@ -94,12 +94,17 @@
                             flags: l & ~a | n
                         })
                     },
-                    setAccountFlag(e, t) {
+                    async setAccountFlag(e, t) {
                         let n = s.default.accountNotificationSettings.flags,
                             l = (0, r.setFlag)(n, e, t);
-                        a.default.patch({
+                        await a.default.patch({
                             url: u.Endpoints.ACCOUNT_NOTIFICATION_SETTINGS,
                             body: {
+                                flags: l
+                            }
+                        }), await i.default.dispatch({
+                            type: "NOTIFICATION_SETTINGS_UPDATE",
+                            settings: {
                                 flags: l
                             }
                         })
@@ -161,8 +166,8 @@
                 p = n("26989"),
                 E = n("697218"),
                 N = n("599110"),
-                h = n("568734"),
-                S = n("449008"),
+                S = n("568734"),
+                h = n("449008"),
                 O = n("286235"),
                 C = n("863636"),
                 I = n("380710"),
@@ -250,7 +255,7 @@
                         s = C.default.getEnabled(e) ? C.default.getDefaultChannelIds(e) : [],
                         [u, c] = (0, I.getChannelCoverageForOnboarding)(e, t, s),
                         O = [...d, ...s],
-                        L = O.map(e => _.default.getChannel(e)).filter(S.isNotNullish),
+                        L = O.map(e => _.default.getChannel(e)).filter(h.isNotNullish),
                         U = (0, A.getFlattenedChannels)(e, new Set(O), L, !0).length,
                         b = null == n ? [] : n.options.map(e => e.id);
                     if (N.default.track(G.AnalyticEvents.GUILD_ONBOARDING_STEP_COMPLETED, {
@@ -275,7 +280,7 @@
                             let n = null !== (y = null === (F = p.default.getMember(e, t.id)) || void 0 === F ? void 0 : F.flags) && void 0 !== y ? y : 0;
                             (0, f.updateImpersonatedData)(e, {
                                 memberOptions: {
-                                    flags: (0, h.setFlag)(n, T.GuildMemberFlags.COMPLETED_ONBOARDING, !0)
+                                    flags: (0, S.setFlag)(n, T.GuildMemberFlags.COMPLETED_ONBOARDING, !0)
                                 }
                             })
                         }
@@ -307,7 +312,7 @@
                         var n, a;
                         let l = null !== (a = null === (n = p.default.getMember(e, t.id)) || void 0 === n ? void 0 : n.flags) && void 0 !== a ? a : 0;
                         await (0, u.updateGuildSelfMember)(e, {
-                            flags: (0, h.setFlag)(l, T.GuildMemberFlags.COMPLETED_ONBOARDING, !1)
+                            flags: (0, S.setFlag)(l, T.GuildMemberFlags.COMPLETED_ONBOARDING, !1)
                         })
                     }
                 }
@@ -326,7 +331,7 @@
                     return N
                 },
                 isOnboardingActiveForGuild: function() {
-                    return h
+                    return S
                 }
             });
             var a = n("627445"),
@@ -372,7 +377,7 @@
                 })
             }
 
-            function h(e) {
+            function S(e) {
                 return null != _[e]
             }
         },
@@ -441,7 +446,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 setOptInChannel: function() {
-                    return S
+                    return h
                 },
                 updateOptInChannelsImmediate: function() {
                     return O
@@ -477,19 +482,19 @@
                 p = n("568734"),
                 E = n("34676"),
                 N = n("49111"),
-                h = n("397336");
+                S = n("397336");
 
-            function S(e, t, n, a) {
+            function h(e, t, n, a) {
                 if (null == e) return;
                 if (o.default.isFullServerPreview(e)) {
                     (0, r.updateImpersonatedChannels)(e, n ? [t] : [], n ? [] : [t]);
                     return
                 }
                 let l = c.default.getChannelIdFlags(e, t);
-                !n && (l = (0, p.setFlag)(l, h.ChannelNotificationSettingsFlags.FAVORITED, !1));
+                !n && (l = (0, p.setFlag)(l, S.ChannelNotificationSettingsFlags.FAVORITED, !1));
                 let d = (0, E.getCurrentChannelSettings)(e, t),
                     f = {
-                        flags: (0, p.setFlag)(l, h.ChannelNotificationSettingsFlags.OPT_IN_ENABLED, n)
+                        flags: (0, p.setFlag)(l, S.ChannelNotificationSettingsFlags.OPT_IN_ENABLED, n)
                     };
                 u.default.saveUserGuildSettingsBulk({
                     [e]: {
@@ -519,13 +524,13 @@
                     return
                 }
                 let l = c.default.getChannelIdFlags(e, t);
-                !n && (l = (0, p.setFlag)(l, h.ChannelNotificationSettingsFlags.FAVORITED, !1));
+                !n && (l = (0, p.setFlag)(l, S.ChannelNotificationSettingsFlags.FAVORITED, !1));
                 let d = (0, E.getCurrentChannelSettings)(e, t),
                     f = {
-                        flags: (0, p.setFlag)(l, h.ChannelNotificationSettingsFlags.OPT_IN_ENABLED, n)
+                        flags: (0, p.setFlag)(l, S.ChannelNotificationSettingsFlags.OPT_IN_ENABLED, n)
                     };
                 if (!c.default.isOptInEnabled(e)) {
-                    let n = (0, p.setFlag)(c.default.getGuildFlags(e), h.GuildNotificationSettingsFlags.OPT_IN_CHANNELS_ON, !0);
+                    let n = (0, p.setFlag)(c.default.getGuildFlags(e), S.GuildNotificationSettingsFlags.OPT_IN_CHANNELS_ON, !0);
                     u.default.saveUserGuildSettingsBulk({
                         [e]: {
                             channel_overrides: {
@@ -574,10 +579,10 @@
                 if (t.forEach(t => {
                         let n = c.default.getChannelIdFlags(e, t);
                         l[t] = {
-                            flags: (0, p.setFlag)(n, h.ChannelNotificationSettingsFlags.OPT_IN_ENABLED, !0)
+                            flags: (0, p.setFlag)(n, S.ChannelNotificationSettingsFlags.OPT_IN_ENABLED, !0)
                         }
                     }), n) {
-                    let t = (0, p.setFlag)(c.default.getGuildFlags(e), h.GuildNotificationSettingsFlags.OPT_IN_CHANNELS_ON, !0);
+                    let t = (0, p.setFlag)(c.default.getGuildFlags(e), S.GuildNotificationSettingsFlags.OPT_IN_CHANNELS_ON, !0);
                     d.default.updateGuildAndChannelNotificationSettings(e, {
                         flags: t,
                         channel_overrides: l
@@ -602,7 +607,7 @@
                 }
                 let a = c.default.getGuildFlags(e);
                 d.default.updateGuildNotificationSettings(e, {
-                    flags: (0, p.setFlag)(a, h.GuildNotificationSettingsFlags.OPT_IN_CHANNELS_ON, t)
+                    flags: (0, p.setFlag)(a, S.GuildNotificationSettingsFlags.OPT_IN_CHANNELS_ON, t)
                 }), _.default.track(N.AnalyticEvents.CHANNEL_LIST_UPDATED, {
                     ...(0, s.collectGuildAnalyticsMetadata)(e),
                     action_type: t ? "guild_enabled" : "guild_disabled",
@@ -613,8 +618,8 @@
             function T(e, t, n, a) {
                 if (null == e || o.default.isFullServerPreview(e)) return;
                 let l = c.default.getChannelIdFlags(e, t);
-                !(0, p.hasFlag)(l, h.ChannelNotificationSettingsFlags.OPT_IN_ENABLED) && n && (l = (0, p.setFlag)(l, h.ChannelNotificationSettingsFlags.OPT_IN_ENABLED, !0)), d.default.updateChannelOverrideSettings(e, t, {
-                    flags: (0, p.setFlag)(l, h.ChannelNotificationSettingsFlags.FAVORITED, n)
+                !(0, p.hasFlag)(l, S.ChannelNotificationSettingsFlags.OPT_IN_ENABLED) && n && (l = (0, p.setFlag)(l, S.ChannelNotificationSettingsFlags.OPT_IN_ENABLED, !0)), d.default.updateChannelOverrideSettings(e, t, {
+                    flags: (0, p.setFlag)(l, S.ChannelNotificationSettingsFlags.FAVORITED, n)
                 }), _.default.track(N.AnalyticEvents.CHANNEL_LIST_UPDATED, {
                     ...(0, s.collectGuildAnalyticsMetadata)(e),
                     action_type: n ? "favorited" : "unfavorited",
@@ -638,97 +643,77 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return C
+                    return E
                 }
-            }), n("424973"), n("222007");
-            var a = n("917351"),
-                l = n.n(a),
-                i = n("872717"),
-                d = n("689988"),
-                s = n("605250"),
-                r = n("870691"),
-                o = n("42203"),
-                u = n("49111");
-            let f = {},
-                g = new s.default("UserGuildSettingsManager"),
-                c = 0;
+            }), n("222007");
+            var a = n("872717"),
+                l = n("689988"),
+                i = n("870691"),
+                d = n("42203"),
+                s = n("49111");
+            let r = {},
+                o = 0;
 
-            function _() {
-                f = {
-                    ...r.default.getCollapsedCategories()
+            function u() {
+                r = {
+                    ...i.default.getCollapsedCategories()
                 }
             }
 
-            function p() {
-                !__OVERLAY__ && (clearTimeout(c), c = setTimeout(() => E(), 15e3))
+            function f() {
+                !__OVERLAY__ && (clearTimeout(o), o = setTimeout(() => g(), 15e3))
             }
-            async function E(e, t) {
-                await N(null != t ? {
-                    [null != e ? e : u.ME]: t
+            async function g(e, t) {
+                await c(null != t ? {
+                    [null != e ? e : s.ME]: t
                 } : {})
             }
-            async function N(e) {
-                clearTimeout(c);
+            async function c(e) {
+                clearTimeout(o);
                 let t = 0 !== Object.keys(e).length,
-                    n = r.default.getCollapsedCategories(),
-                    a = function() {
+                    n = i.default.getCollapsedCategories(),
+                    l = function() {
                         let e = {},
-                            t = r.default.getCollapsedCategories();
-                        for (let n in t) t[n] !== f[n] && (e[n] = !0);
-                        for (let n in f) t[n] !== f[n] && (e[n] = !0);
+                            t = i.default.getCollapsedCategories();
+                        for (let n in t) t[n] !== r[n] && (e[n] = !0);
+                        for (let n in r) t[n] !== r[n] && (e[n] = !0);
                         return e
                     }();
-                for (let l in a) {
-                    let a = o.default.getChannel(l);
-                    null != a && null != a.guild_id && (!(a.guild_id in e) && (e[a.guild_id] = {}), null == e[a.guild_id].channel_overrides && (e[a.guild_id].channel_overrides = {}), e[a.guild_id].channel_overrides[a.id] = {
-                        ...e[a.guild_id].channel_overrides[a.id],
-                        collapsed: a.id in n
+                for (let a in l) {
+                    let l = d.default.getChannel(a);
+                    null != l && null != l.guild_id && (!(l.guild_id in e) && (e[l.guild_id] = {}), null == e[l.guild_id].channel_overrides && (e[l.guild_id].channel_overrides = {}), e[l.guild_id].channel_overrides[l.id] = {
+                        ...e[l.guild_id].channel_overrides[l.id],
+                        collapsed: l.id in n
                     }, t = !0)
                 }
-                if (!t) return;
-                f = {
+                return t ? (r = {
                     ...n
-                };
-                let d = l.map(e, (e, t) => ({
-                    guildId: t,
-                    updates: e,
-                    attempts: 0
-                }));
-                for (; d.length > 0;) {
-                    let e = d.shift();
-                    if (e.guildId !== u.FAVORITES) try {
-                        await i.default.patch({
-                            url: u.Endpoints.USER_GUILD_SETTINGS(e.guildId),
-                            body: e.updates
-                        }), await h(1e3)
-                    } catch (t) {
-                        g.error(t), e.attempts += 1, e.attempts < 3 && d.push(e), await h(5e3)
+                }, delete e[s.FAVORITES], (await a.default.patch({
+                    url: s.Endpoints.USER_GUILD_SETTINGS_BULK,
+                    body: {
+                        guilds: e
                     }
-                }
+                })).body) : []
             }
 
-            function h(e) {
-                return new Promise(t => setTimeout(t, e + Math.ceil(e * Math.random())))
-            }
-
-            function S() {
-                f = {
-                    ...r.default.getCollapsedCategories()
+            function _() {
+                r = {
+                    ...i.default.getCollapsedCategories()
                 }
             }
-            class O extends d.default {
+            class p extends l.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        CATEGORY_COLLAPSE: p,
-                        CATEGORY_EXPAND: p,
-                        CATEGORY_COLLAPSE_ALL: p,
-                        CATEGORY_EXPAND_ALL: p,
-                        POST_CONNECTION_OPEN: _,
-                        USER_GUILD_SETTINGS_FULL_UPDATE: S
-                    }, this.saveUserGuildSettings = E, this.saveUserGuildSettingsBulk = N
+                        CATEGORY_COLLAPSE: f,
+                        CATEGORY_EXPAND: f,
+                        CATEGORY_COLLAPSE_ALL: f,
+                        CATEGORY_EXPAND_ALL: f,
+                        POST_CONNECTION_OPEN: u,
+                        USER_GUILD_SETTINGS_FULL_UPDATE: _
+                    }, this.saveUserGuildSettings = g, this.saveUserGuildSettingsBulk = c
                 }
             }
-            var C = new O
+            var E = new p
         },
         870691: function(e, t, n) {
             "use strict";
@@ -837,4 +822,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6086.1339c227c38e3c5b2586.js.map
+//# sourceMappingURL=6086.23be3cf9bcb21ebc9b54.js.map
