@@ -1452,7 +1452,7 @@
                 return i.useEffect(() => {
                     let n = new a.Timeout,
                         i = () => {
-                            let e = o.diff(Date.now(), "millisecond");
+                            let e = Math.min(o.diff(Date.now(), "millisecond"), 864e5);
                             null == n || n.start(e, () => {
                                 o.isBefore(Date.now()) ? t(!1) : i()
                             })
@@ -2077,4 +2077,4 @@
         }
     }
 ]);
-//# sourceMappingURL=62768.232f00c591becc89b0ca.js.map
+//# sourceMappingURL=62768.41de9bf94c0f314cc33e.js.map
