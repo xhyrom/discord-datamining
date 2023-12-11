@@ -1882,6 +1882,10 @@
       "OPTIONS"
     ]
   },
+  "USER_GUILD_SETTINGS_BULK": {
+    "url": "/users/@me/guilds/settings",
+    "allowed_methods": null
+  },
   "USER_GUILD_SETTINGS": {
     "url": "/users/@me/guilds/:param/settings",
     "allowed_methods": [
@@ -4208,6 +4212,18 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "NOTIFICATION_SNAPSHOTS": {
+    "url": "/users/@me/notification-settings/snapshots",
+    "allowed_methods": null
+  },
+  "NOTIFICATION_SNAPSHOT": {
+    "url": "/users/@me/notification-settings/snapshots/:param",
+    "allowed_methods": null
+  },
+  "RESTORE_NOTIFICATION_SNAPSHOT": {
+    "url": "/users/@me/notification-settings/snapshots/:param/restore-guilds",
+    "allowed_methods": null
   },
   "GUILD_ADMIN_SERVER_ELIGIBILITY": {
     "url": "/guilds/:param/admin-server-eligibility",
