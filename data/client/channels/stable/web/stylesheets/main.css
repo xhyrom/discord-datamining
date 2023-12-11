@@ -19479,8 +19479,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -27677,6 +27677,10 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .container__5eb17 {
     display: flex
+}
+
+.noPointerEvents__16aad {
+    pointer-events: none
 }
 
 .disabled__74c03 {
@@ -82745,6 +82749,10 @@ input::-webkit-inner-spin-button {
     padding: 24px 48px 32px
 }
 
+.collectedInfoContainer_d8324a.default__48f1b {
+    background-color: var(--modal-background)
+}
+
 .collectedTextContainer__3e39d {
     display: flex;
     flex-direction: column;
@@ -84149,6 +84157,7 @@ input::-webkit-inner-spin-button {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    pointer-events: none;
     cursor: default;
     animation-name: snowflakes-fall__21238, snowflakes-shake_ab86ff;
     animation-duration: 10s, 3s;
@@ -106557,6 +106566,10 @@ html .invoiceCancelRow_a8669b {
     min-height: 80px
 }
 
+.previewTextArea_ef8120 {
+    overflow-y: scroll
+}
+
 .channelTextAreaInner__33239 {
     background: transparent;
     border-radius: 0;
@@ -106794,7 +106807,8 @@ html .invoiceCancelRow_a8669b {
 
 .previewModeIndicator_c9ec62 {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    padding-top: 4px
 }
 
 .focusTarget_b668ef {
@@ -124611,4 +124625,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.83f01b3df65cd0fa3bb9.css.map*/
+/*# sourceMappingURL=app.9a29e39be86b3fc91307.css.map*/

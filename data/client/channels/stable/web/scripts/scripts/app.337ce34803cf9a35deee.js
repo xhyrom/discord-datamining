@@ -4811,7 +4811,8 @@
         426068: function(e, t, o) {
             "use strict";
             e.exports = {
-                container: "container__5eb17"
+                container: "container__5eb17",
+                noPointerEvents: "noPointerEvents__16aad"
             }
         },
         67046: function(e, t, o) {
@@ -5623,6 +5624,7 @@
                 collectedTextContainer: "collectedTextContainer__3e39d",
                 confettiCanvas: "confettiCanvas__125ed",
                 decorationBanner: "decorationBanner_d5fe2e",
+                default: "default__48f1b",
                 modalCloseButton: "modalCloseButton_a426a9",
                 modalContent: "modalContent__613a4",
                 modalInner: "modalInner__0113c",
@@ -8075,6 +8077,7 @@
                 prefixElement: "prefixElement__829f9",
                 previewForm: "previewForm__87c77",
                 previewModeIndicator: "previewModeIndicator_c9ec62",
+                previewTextArea: "previewTextArea_ef8120",
                 searchIcon: "searchIcon_affa6a",
                 submitButton: "submitButton__6a7c5",
                 submitButtonInner: "submitButtonInner__74f89",
