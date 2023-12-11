@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-12_nitro_standard_wow_moment_experiment",
+    "label": "Productionize Nitro Standard Flying Wumpus Wow Moment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Flying Wumpus Wow Moment shows for redeeming Nitro Standard gifts, trials, and purchases"
+    ],
+    "hash": 418762923,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
