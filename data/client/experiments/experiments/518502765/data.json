@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-02_nitroduction_experience",
-    "label": "Nitroduction Experience",
+    "id": "2023-12_eslatam_launch",
+    "label": "ES LATAM Launch",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: One month trial users recieve the Nitroduction experience"
+      "Treatment 1: Enable ES-LATAM"
     ],
-    "hash": 2956169075,
+    "hash": 518502765,
     "buckets": [
       -1,
       0,
