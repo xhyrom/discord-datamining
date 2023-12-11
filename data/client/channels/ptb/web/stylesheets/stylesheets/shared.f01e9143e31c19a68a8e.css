@@ -26249,8 +26249,8 @@ span.button__4f306.disabled_dc5630 {
 
 .title_cb085d {
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase
 }
 
@@ -26356,8 +26356,8 @@ span.button__4f306.disabled_dc5630 {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 1rem;
-    line-height: 1.125rem;
+    font-size: 16px;
+    line-height: 18px;
     padding: 16px
 }
 
@@ -26445,4 +26445,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.918565fe70840bf74b85.css.map*/
+/*# sourceMappingURL=shared.f01e9143e31c19a68a8e.css.map*/
