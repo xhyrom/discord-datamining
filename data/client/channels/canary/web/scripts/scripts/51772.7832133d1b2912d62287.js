@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["78934"], {
+    ["51772"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -197,7 +197,7 @@
                     return O
                 },
                 setDisableSubmit: function() {
-                    return D
+                    return P
                 }
             });
             var i = n("872717"),
@@ -397,7 +397,7 @@
                 })
             }
 
-            function D(e) {
+            function P(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_DISABLE_SUBMIT",
                     disable: e
@@ -2456,7 +2456,7 @@
                     referralTrialOfferId: U,
                     giftRecipient: y,
                     returnRef: O
-                } = null != e ? e : {}, D = !1, P = (0, l.v4)();
+                } = null != e ? e : {}, P = !1, D = (0, l.v4)();
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
@@ -2468,7 +2468,7 @@
                         } = n;
                         return (0, i.jsx)(e, {
                             ...r,
-                            loadId: P,
+                            loadId: D,
                             subscriptionTier: g,
                             skuId: g,
                             isGift: v,
@@ -2480,7 +2480,7 @@
                                 l(), null == _ || _(e), e && (null == p || p())
                             },
                             onComplete: () => {
-                                D = !0, null == I || I(), !v && ((0, s.setIsPersistentHelperHidden)(!0), (0, s.setCanPlayWowMoment)(!0))
+                                P = !0, null == I || I(), !v && ((0, s.setIsPersistentHelperHidden)(!0), (0, s.setCanPlayWowMoment)(!0))
                             },
                             onSubscriptionConfirmation: p,
                             analyticsLocations: h,
@@ -2499,8 +2499,8 @@
                 }, {
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
-                        !D && a.default.track(d.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
-                            load_id: P,
+                        !P && a.default.track(d.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
+                            load_id: D,
                             payment_type: d.PurchaseTypeToAnalyticsPaymentType[d.PurchaseTypes.SUBSCRIPTION],
                             location: null != S ? S : T,
                             source: C,
@@ -2509,7 +2509,7 @@
                             eligible_for_trial: null != m,
                             application_id: L,
                             location_stack: h
-                        }), (0, o.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == _ || _(D), D && (!v && c.ComponentDispatch.dispatch(d.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED), null == p || p())
+                        }), (0, o.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == _ || _(P), P && (!v && c.ComponentDispatch.dispatch(d.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED), null == p || p())
                     },
                     onCloseRequest: d.NOOP
                 })
@@ -3338,34 +3338,6 @@
                 })
             }
             n("884691")
-        },
-        476765: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                uid: function() {
-                    return o
-                },
-                useUID: function() {
-                    return u
-                },
-                UID: function() {
-                    return s
-                }
-            });
-            var i = n("995008"),
-                l = n.n(i),
-                r = n("775560");
-            let o = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
-                    return l(e)
-                },
-                u = () => (0, r.useLazyValue)(() => o()),
-                s = e => {
-                    let {
-                        children: t
-                    } = e;
-                    return t(u())
-                }
         },
         109264: function(e, t, n) {
             "use strict";
@@ -4495,4 +4467,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78934.f0d12a8b07eb21955dbb.js.map
+//# sourceMappingURL=51772.7832133d1b2912d62287.js.map
