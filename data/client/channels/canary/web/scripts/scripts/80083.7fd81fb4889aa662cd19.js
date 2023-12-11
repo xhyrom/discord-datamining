@@ -80,11 +80,12 @@
                 }(e.id, !0, !0) : e.isForumLikeChannel() ? c(e.id, !0, !0, l.default.fromTimestamp(Date.now())) : c(e.id, !0, !0)
             }
 
-            function _(e) {
+            function _(e, t) {
                 r.default.dispatch({
                     type: "BULK_ACK",
                     channels: e,
-                    context: d.CURRENT_APP_CONTEXT
+                    context: d.CURRENT_APP_CONTEXT,
+                    onFinished: t
                 })
             }
 
@@ -1377,4 +1378,4 @@
         }
     }
 ]);
-//# sourceMappingURL=80083.8581aa78cb83cb4217b0.js.map
+//# sourceMappingURL=80083.7fd81fb4889aa662cd19.js.map

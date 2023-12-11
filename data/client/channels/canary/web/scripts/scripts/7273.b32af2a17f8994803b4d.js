@@ -1197,6 +1197,7 @@
                     INTEGRATION_JOIN: _ => "/integrations/".concat(_, "/join"),
                     INTEGRATION_SEARCH: _ => "/integrations/".concat(_, "/search"),
                     INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS: "/users/@me/guilds/integration-application-ids",
+                    USER_GUILD_SETTINGS_BULK: "/users/@me/guilds/settings",
                     USER_GUILD_SETTINGS: _ => "/users/@me/guilds/".concat(_, "/settings"),
                     APPLICATIONS_DETECTABLE: "/applications/detectable",
                     APPLICATION_ICON: (_, E) => "/applications/".concat(_, "/app-icons/").concat(E, ".png"),
@@ -1505,6 +1506,9 @@
                     NOTIF_CENTER_ITEMS: _ => "/users/@me/notification-center/items".concat(null != _ ? "/".concat(_) : ""),
                     NOTIF_CENTER_ITEMS_ACK: _ => "/users/@me/notification-center/items/".concat(_, "/ack"),
                     NOTIF_CENTER_ITEMS_BULK_ACK: "/users/@me/notification-center/items/bulk-ack",
+                    NOTIFICATION_SNAPSHOTS: "/users/@me/notification-settings/snapshots",
+                    NOTIFICATION_SNAPSHOT: _ => "/users/@me/notification-settings/snapshots/".concat(_),
+                    RESTORE_NOTIFICATION_SNAPSHOT: _ => "/users/@me/notification-settings/snapshots/".concat(_, "/restore-guilds"),
                     GUILD_ADMIN_SERVER_ELIGIBILITY: _ => "/guilds/".concat(_, "/admin-server-eligibility"),
                     JOIN_ADMIN_SERVER: _ => "/guilds/".concat(_, "/join-admin-server"),
                     AUTH_SESSIONS: "/auth/sessions",
@@ -13132,4 +13136,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.0609399eb0ca551a1c47.js.map
+//# sourceMappingURL=7273.b32af2a17f8994803b4d.js.map

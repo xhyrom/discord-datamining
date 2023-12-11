@@ -26776,20 +26776,20 @@
             function eN(e) {
                 return null != e && e.isPrivate() && !$.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)
             }
-            async function eO() {
+            async function eO(e) {
                 if (0 === eE.length) {
-                    eh = !1;
+                    eh = !1, null == e || e();
                     return
                 }
                 eh = !0;
-                let e = eE.splice(0, 100);
+                let t = eE.splice(0, 100);
                 await eR(() => c.default.post({
                     url: en.Endpoints.BULK_ACK,
                     body: {
-                        read_states: e
+                        read_states: t
                     },
                     oldFormErrors: !0
-                })), await (0, _.timeoutPromise)(1e3), eO()
+                })), await (0, _.timeoutPromise)(1e3), eO(e)
             }
             async function eR(e) {
                 let t = x.default.getId();
@@ -27916,12 +27916,13 @@
                     return eG(eo)
                 },
                 BULK_ACK: function(e) {
-                    var t, n;
+                    var t, n, i;
                     let {
-                        channels: i,
-                        context: a
-                    } = e, l = i.filter(e => null != e.messageId && eX.hasUnread(e.channelId, e.readStateType));
-                    t = l, n = a, t.forEach(e => {
+                        channels: a,
+                        context: l,
+                        onFinished: s
+                    } = e, r = a.filter(e => null != e.messageId && eX.hasUnread(e.channelId, e.readStateType));
+                    t = r, n = l, i = s, t.forEach(e => {
                         let {
                             channelId: t,
                             messageId: n,
@@ -27938,7 +27939,7 @@
                         channel_id: e.channelId,
                         message_id: e.messageId,
                         read_state_type: e.readStateType
-                    }))), eh || eO())
+                    }))), eh || eO(i))
                 },
                 ENABLE_AUTOMATIC_ACK: function(e) {
                     let {
@@ -33948,4 +33949,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.bceed2aaf0c0f60ffd82.js.map
+//# sourceMappingURL=67615.8f1d21df633f10e224d7.js.map
