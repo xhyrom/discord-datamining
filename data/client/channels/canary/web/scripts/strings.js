@@ -15066,6 +15066,7 @@
                 COLLECTIBLES_ACCEPT_GIFT: "Accept gift",
                 COLLECTIBLES_FROM_SENDER: "From {sender}",
                 COLLECTIBLES_GIFT_DETAILS: "Gifted by {sender} on {date}",
+                COLLECTIBLES_SEND_ITEM_AS_A_GIFT: "Send item as a gift",
                 COLLECTIBLES_GIFT_COACHMARK_HEADING: "Give the gift of style",
                 COLLECTIBLES_GIFT_COACHMARK_DESC: "Check out the latest profile styles and surprise your friend with a fresh new look.",
                 COLLECTIBLES_GIFT_SEND_ERROR_OWNED: "Hey! Your friend already has this. Try sending something else.",
@@ -18359,7 +18360,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253288", ", Version Hash: ").concat("e1fc03de753ff3351d415c7562250fdb5c274723")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253303", ", Version Hash: ").concat("9a4489ad7d1ca94a826ea2a5285e0a4563dbd238")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20658,8 +20659,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "253288", "253288"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253288")), _ = 0), _
+                let _ = parseInt((e = "253303", "253303"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253303")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36697,4 +36698,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.d53f400a65926a7873c3.js.map
+//# sourceMappingURL=66318.adba8bd06c7ef7cc9711.js.map
