@@ -27054,14 +27054,16 @@
                     message: t,
                     channel: x,
                     shouldMention: a,
-                    showMentionToggle: o
+                    showMentionToggle: o,
+                    source: y
                 } = i;
                 s.default.dispatch({
                     type: "CREATE_PENDING_REPLY",
                     message: t,
                     channel: x,
                     shouldMention: a,
-                    showMentionToggle: o
+                    showMentionToggle: o,
+                    source: y
                 })
             }
 
@@ -27227,4 +27229,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97146.ba5d381e14f798be8b84.js.map
+//# sourceMappingURL=97146.b754a49f3f9b0dd1b2d6.js.map
