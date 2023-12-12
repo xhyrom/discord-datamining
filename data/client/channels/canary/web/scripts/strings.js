@@ -5882,14 +5882,9 @@
                 INVALID_EXTERNAL_EMOJI_BODY: "This emoji doesn't work here because it's from a different server. Upgrade to Discord Nitro to use emoji from other servers",
                 INVALID_EXTERNAL_EMOJI_BODY_UPGRADE: "This emoji doesn't work here because it's from a different server. Discord Nitro can solve all of that, check User Settings > Nitro for details",
                 REACTION_PICKER: "Reaction Picker",
-                REACTION_PICKER_CATEGORIES_A11Y_LABEL: "Reaction Picker Categories",
-                REACTION_PICKER_REACTIONS: "Reactions",
-                REACTION_PICKER_SUPER_REACTIONS: "Super Reactions",
                 ADD_REACTION: "Add Reaction",
                 REACT: "React",
                 SUPER_REACT: "Super React",
-                BURST_REACTION_ADD_SUCCESS_A11Y: "{name} super reaction successfully added. ({n} left)",
-                BURST_REACTION_ADD_ERROR_A11Y: "{name} super reaction could not be added. ({n} left)",
                 BURST_REACTION_ADD_UNLIMITED_SUCCESS_A11Y: "{name} super reaction successfully added.",
                 BURST_REACTION_ADD_UNLIMITED_ERROR_A11Y: "{name} super reaction could not be added.",
                 BURST_REACTION_REMOVE_SUCCESS_A11Y: "{name} super reaction successfully removed.",
@@ -5918,7 +5913,6 @@
                 SUPER_REACTIONS_TAB_TOOLTIP_SOON: "You’ll get more Super Reactions later today.",
                 SUPER_REACTIONS_TOOLTIP_COACHMARK_TITLE: "NEW! Super Reactions",
                 SUPER_REACTIONS_TOOLTIP_COACHMARK: "A better way to react, now available with [Nitro]({nitroLink}).",
-                SUPER_REACTION_COACHMARK_TITLE: "A new way to react",
                 SUPER_REACTION_COACHMARK_DESCRIPTION: "Hype up the chat with Super Reactions [[Beta]]({helpdeskArticle}). Now available with Nitro.",
                 SUPER_REACTION_COACHMARK_DESCRIPTION_FREE: "Hype up the chat and get a taste of our newest Nitro-exclusive perk: Super Reactions.",
                 SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION: "Hype up the chat with Super Reactions. Now available with [Nitro]({nitroLink}).",
@@ -5950,9 +5944,6 @@
                 REACTION_REMOVE_SUCCESS_A11Y: "{name} reaction successfully removed",
                 REACTION_REMOVE_ERROR_A11Y: "{name} reaction could not be removed",
                 ADD_BURST_REACTION: "Add Super Reaction",
-                GET_SUPER_REACTIONS: "Get Super Reactions",
-                ADD_BURST_REACTION_A11Y: "Add Super Reaction. ({n} left)",
-                ADD_A_BURST_REACTION: "Add a Super Reaction",
                 REACTION_REACTORS_A11Y: "{name} {n, plural, =1 {1 reaction} other {{n} reactions}}",
                 BURST_REACTION_REACTORS_A11Y: "{name} {n, plural, =1 {1 super reaction} other {{n} super reactions}}",
                 BURST_REACTIONS_LEFT: "{count} left",
@@ -5960,7 +5951,6 @@
                 BURST_REACTIONS_REMOVE_MODAL_DESCRIPTION: "You will not get a credit refund if you choose to remove this Super Reaction.",
                 BURST_REACTIONS_REMOVE_MODAL_CONFIRM: "Remove Super Reaction",
                 BURST_REACTIONS_REMOVE_MODAL_CANCEL: "Cancel",
-                SUPER_REACTIONS_LEFT_WITH_PLURAL: "{count, plural, =1 {1 Super Reaction} other {{count} Super Reactions}} left",
                 BURST_MOBILE_NOT_READY_IMG_ALT: "Wumpus waving",
                 BURST_MOBILE_NOT_READY_TITLE: "Super Reactions",
                 SUPER_MOBILE_NOT_READY_SUBTITLE: "The ability to add Super Reactions is only on desktop for now. Use the desktop app to send and view these special animated reactions.",
@@ -5997,29 +5987,15 @@
                 BURST_REACTION_TOOLTIP_N_INTERACTIVE: "!!{emojiName}!! super reaction sent by {n, plural, one {1 person} other {[{n} people](onClick)}}",
                 SUPER_REACTION_TOOLTIP_CTA: "Add Super Reaction",
                 SUPER_REACTION_TOOLTIP_CTA_REACTED: "You've sent this Super Reaction",
-                BURST_REACTION_TOOLTIP_CTA_LEFT: "({n} left)",
                 SUPER_REACTION_TOOLTIP_UPSELL: "Want to start the hype train? Get Nitro to add a Super Reaction.",
-                BURST_REACTION_TOOLTIP_CTA_UPSELL: "Get Nitro",
-                SUPER_REACTION_TOOLTIP_OUT_OF_REACTIONS_WEEKDAY: "You’re out of Super Reactions. You’ll get {refillAmount} more every week.",
-                SUPER_REACTION_TOOLTIP_OUT_OF_REACTIONS_DAILY: "You’re out of Super Reactions. You’ll get {refillAmount} more tomorrow.",
-                SUPER_REACTION_CREDIT_TOOLTIP_WEEKDAY: "You have {count} Super Reactions. You'll get {refillAmount} more every week.",
-                SUPER_REACTION_NITRO_TOOLTIP: "Hype up the chat with Super Reactions!",
                 LOAD_REACTIONS_ERROR: "Whoops, something went wrong. Give it another try?",
                 NO_REACTIONS_HEADER: "No Reactions",
                 NO_REACTIONS_BODY: "What a cold, emotionless world.",
-                SUPER_REACTION_DESKTOP_NOTIFICATION_TITLE: "You got a super reaction!",
-                SUPER_REACTION_DESKTOP_NOTIFICATION_BODY: "{name} super reacted to your message in {channelName}, {guildName}",
-                SUPER_REACTION_DESKTOP_NOTIFICATION_BODY_NO_USER: "You got a super reaction to your message in {channelName}, {guildName}",
                 SUPER_REACTION_TOGGLE_ENABLED: "Super Reactions enabled",
                 SUPER_REACTION_TOGGLE_DISABLED: "Enable Super Reactions",
                 SUPER_REACTIONS_UPSELL_TITLE: "A better way to react on Discord",
                 SUPER_REACTIONS_UPSELL_TITLE_MOBILE: "A better way to react!",
-                SUPER_REACTIONS_UPSELL_DESCRIPTION_MOBILE_UNLIMITED: "Hype up the chat with Super Reactions! Get unlimited Super Reactions and other cool perks with Nitro.",
-                BURST_REACTIONS_UPSELL_BODY: "Want to use emoji from any server with fun reactions? We got you covered on that [and more with Discord Nitro!](onLearnMore)",
-                SUPER_REACTIONS_UPSELL_BODY: "Hype up the chat with Super Reactions [[Beta]]({helpdeskArticle})! Get more Super Reactions and other cool perks with Nitro.",
-                SUPER_REACTIONS_UPSELL_BODY_LAUNCH: "Hype up the chat with Super Reactions! Get more Super Reactions and other cool perks with [Nitro](onClick).",
                 SUPER_REACTIONS_UPSELL_UNLIMITED_BODY: "Hype up the chat with Super Reactions! Get unlimited Super Reactions and other cool perks with [Nitro](onClick).",
-                SUPER_REACTIONS_LONG_PRESS_LOADER: "Keep holding to Super React",
                 SUPER_REACTIONS_UNLIMITED_NOTICE_TITLE: "Unlimited Super Reactions!",
                 SUPER_REACTIONS_UNLIMITED_NOTICE_DESCRIPTION_DESKTOP_V2: "Click the button to add a Super Reaction.",
                 SUPER_REACTIONS_UNLIMITED_NOTICE_DESCRIPTION_MOBILE_V2: "Tap the button to add a Super Reaction.",
@@ -6547,8 +6523,6 @@
                 PREMIUM_TIER_UPLOAD_ITEM: "{maxUploadPremium} uploads",
                 PREMIUM_TIER_NITRO_BADGE_ITEM: "Special Nitro badge on your profile",
                 PREMIUM_TIER_CUSTOM_EMOJI_ITEM: "Custom emoji anywhere",
-                PREMIUM_TIER_SUPER_REACTIONS_ITEM: "{weeklyReactionsNumber} Super Reactions per week",
-                PREMIUM_TIER_SUPER_REACTIONS_DAILY_ITEM: "{dailyReactionsNumber} Super Reactions per day",
                 PREMIUM_TIER_HD_STREAMING_ITEM: "HD video streaming",
                 PREMIUM_TIER_SERVER_BOOST_ITEM: "2 Server Boosts",
                 PREMIUM_TIER_SERVER_BOOST_MORE_ITEM: "2 Server Boosts, and more!",
@@ -8096,8 +8070,6 @@
                 USER_SETTINGS_NOTIFICATIONS_SHOW_BADGE_LABEL: "Enable Unread Message Badge",
                 USER_SETTINGS_NOTIFICATIONS_SHOW_BADGE_BODY: "Shows a red badge on the app icon when you have unread messages.",
                 USER_SETTING_NOTIFICATIONS_ENABLE_BURST_REACTION_NOTIFICATIONS_LABEL: "Enable Super Reaction Notifications",
-                USER_SETTING_NOTIFICATIONS_ENABLE_BURST_REACTION_NOTIFICATIONS_LABEL_MOBILE: "Suppress Super Reactions",
-                USER_SETTING_NOTIFICATIONS_ENABLE_BURST_REACTION_NOTIFICATIONS_BODY: "Get a notification when someone super reacts to one of your messages.",
                 USER_SETTINGS_NOTIFICATIONS_SHOW_FLASH_LABEL: "Enable Taskbar Flashing",
                 USER_SETTINGS_NOTIFICATIONS_SHOW_FLASH_BODY: "Flashes the app in your taskbar when you have new notifications.",
                 USER_SETTINGS_NOTIFICATIONS_PREVIEW_SOUND: "Preview sound",
@@ -16157,6 +16129,7 @@
                 CLIPS_ENABLED_VIEWER_TOOLTIP: "Participants in this call have clips enabled.",
                 CLIPS_ENABLED_VIEWER_TOOLTIP_NITRO_EA: "Participants in this call have clips enabled. Now available early access with Nitro.",
                 CLIPS_IN_CALL_WARNING: "A participant in the call you joined has clipping enabled, your voice may be recorded.",
+                CLIPS_GALLERY_TOOLTIP: "View Clips",
                 CLIPS_GALLERY_NO_CLIPS: "You haven't clipped anything yet! Use $[!!{keybind}!!](keybindHook) to capture a clip while streaming.",
                 CLIPS_GALLERY_NO_CLIPS_NO_KEYBIND_SET: "You haven't clipped anything yet! Set up a keybind [here](onClick) to start clipping.",
                 CLIPS_GALLERY_NO_CLIPS_MATCH_QUERY: "We can't find any clips matching your query.",
@@ -16711,6 +16684,7 @@
                 NOTIF_MIGRATION_CUSTOMIZE_BOX_3_SUBTITLE: "I don’t expect updates, I’ll check at my own pace.",
                 NOTIF_MIGRATION_REVIEW_TITLE: "Here’s what will happen",
                 NOTIF_MIGRATION_REVIEW_SUB_TITLE: "We will set **notification presets** for each server based on your selection. You can always change them later, or revert back to your current notification setting whenever.",
+                NOTIFICATION_MIGRATION_SHOW_ALL: "Show All Servers",
                 NOTIF_MIGRATION_WARNING: "Hola, it looks like you might be modifying your client. This feature is going to be cool, we're building it for power users, buuut you may want to stay clear it for a bit, because it's not really ready yet and might actually mess up your client (seriously). You can read more here though: [https://dis.gd/notifications-technical-details](https://dis.gd/notifications-technical-details)",
                 POLL: "Poll",
                 POLLS: "Polls",
@@ -18346,7 +18320,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253742", ", Version Hash: ").concat("818163c5ccdc8a4582512a0a238885fc790cf812")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253755", ", Version Hash: ").concat("00b5a635b7926d6863c2f9b56ce289f2fdf01c8b")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19761,7 +19735,7 @@
                     inlineRequire: () => E("126115").default
                 },
                 MemberSafetySearchManager: {
-                    actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "GUILD_MEMBERS_CHUNK", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING"],
+                    actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING"],
                     inlineRequire: () => E("804160").default
                 },
                 MessageCodedLinkManager: {
@@ -20645,8 +20619,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "253742", "253742"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253742")), _ = 0), _
+                let _ = parseInt((e = "253755", "253755"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253755")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -24640,41 +24614,29 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return i
+                    return r
                 }
             }), E("222007");
             var t = E("689988"),
-                o = E("536999"),
-                n = E("90870"),
-                r = E("219115");
-            class a extends t.default {
+                o = E("219115");
+            class n extends t.default {
                 handleInitialize(e) {
-                    let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-                    return _ ? (0, r.handleInitializeV2)(e) : (0, n.handleInitializeV1)(e)
+                    return (0, o.handleInitializeV2)(e)
                 }
                 handleGuildDelete(e) {
-                    let _ = (0, o.isInMembersSearchV2Experiment)(e.guild.id);
-                    return _ ? (0, r.handleGuildDeleteV2)(e) : (0, n.handleGuildDeleteV1)(e)
+                    return (0, o.handleGuildDeleteV2)(e)
                 }
                 handleSearchStateUpdate(e) {
-                    let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-                    return _ ? (0, r.handleSearchStateUpdateV2)(e) : (0, n.handleSearchStateUpdateV1)(e)
+                    return (0, o.handleSearchStateUpdateV2)(e)
                 }
                 handlePaginationUpdate(e) {
-                    let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-                    return _ ? (0, r.handlePaginationUpdateV2)(e) : (0, n.handlePaginationUpdateV1)(e)
-                }
-                handleGuildMembersChunk(e) {
-                    let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-                    if (!_) return (0, n.handleGuildMembersChunkV1)(e)
+                    return (0, o.handlePaginationUpdateV2)(e)
                 }
                 handleGuildMemberSearchSuccess(e) {
-                    let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-                    if (_) return (0, r.handleGuildMemberSearchSuccessV2)(e)
+                    return (0, o.handleGuildMemberSearchSuccessV2)(e)
                 }
                 handleGuildMemberSearchStillIndexing(e) {
-                    let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-                    if (_) return (0, r.handleGuildMemberSearchStillIndexingV2)(e)
+                    return (0, o.handleGuildMemberSearchStillIndexingV2)(e)
                 }
                 constructor(...e) {
                     super(...e), this.actions = {
@@ -24682,209 +24644,12 @@
                         GUILD_DELETE: e => this.handleGuildDelete(e),
                         MEMBER_SAFETY_SEARCH_STATE_UPDATE: e => this.handleSearchStateUpdate(e),
                         MEMBER_SAFETY_PAGINATION_UPDATE: e => this.handlePaginationUpdate(e),
-                        GUILD_MEMBERS_CHUNK: e => this.handleGuildMembersChunk(e),
                         MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: e => this.handleGuildMemberSearchSuccess(e),
                         MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING: e => this.handleGuildMemberSearchStillIndexing(e)
                     }
                 }
             }
-            var i = new a
-        },
-        90870: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                handleInitializeV1: function() {
-                    return U
-                },
-                handleGuildDeleteV1: function() {
-                    return M
-                },
-                handleSearchStateUpdateV1: function() {
-                    return h
-                },
-                handlePaginationUpdateV1: function() {
-                    return P
-                },
-                handleGuildMembersChunkV1: function() {
-                    return m
-                }
-            }), E("222007"), E("424973");
-            var t, o, n, r, a = E("851387"),
-                i = E("895026"),
-                I = E("770115"),
-                s = E("178406"),
-                T = E("645266");
-
-            function S(e, _, E) {
-                return "guild_".concat(e, "_search_").concat(_, "_for_").concat(E)
-            }(n = t || (t = {})).QUERY = "query", n.ROLE = "role", n.UNUSUAL_DM_ACTIVITY = "unusual_dm_activity";
-            (r = o || (o = {}))[r.FAILED = 0] = "FAILED", r[r.UNFETCHED = 1] = "UNFETCHED", r[r.PENDING = 2] = "PENDING", r[r.SUCCEEDED = 3] = "SUCCEEDED";
-            let N = {};
-
-            function O(e, _) {
-                null != N[e] && (N[e] = {
-                    ...N[e],
-                    ..._
-                })
-            }
-
-            function A(e, _) {
-                null != N[_] && O(_, {
-                    request: 2,
-                    lastUpdated: Date.now(),
-                    limit: c(e)
-                })
-            }
-
-            function R(e) {
-                null != N[e] && O(e, {
-                    request: 0,
-                    lastUpdated: Date.now()
-                })
-            }
-
-            function l(e) {
-                null != N[e] && O(e, {
-                    request: 3,
-                    lastUpdated: Date.now()
-                })
-            }
-
-            function u(e, _, E) {
-                let t = function(e, _) {
-                        if (null == N[_]) {
-                            var E, t, o;
-                            t = _, o = (E = e, {
-                                request: 1,
-                                lastUpdated: Date.now(),
-                                limit: c(E)
-                            }), N[t] = o
-                        }
-                        return N[_]
-                    }(e, _),
-                    o = c(e),
-                    n = function(e) {
-                        if (e.includes("query"));
-                        else if (e.includes("role")) return "role";
-                        else if (e.includes("unusual_dm_activity")) return "unusual_dm_activity";
-                        return "query"
-                    }(_);
-                switch (n) {
-                    case "query":
-                        return t.request >= E && t.limit >= o;
-                    case "role":
-                        return t.request >= E;
-                    case "unusual_dm_activity":
-                        return t.request >= E && t.lastUpdated + 3e5 > Date.now();
-                    default:
-                        return !0
-                }
-            }
-
-            function L(e) {
-                Object.keys(N).forEach(_ => {
-                    _.startsWith("guild_".concat(e)) && delete N[_]
-                })
-            }
-
-            function C(e) {
-                return null != e && e.length > 1
-            }
-
-            function c(e) {
-                let {
-                    pageSize: _
-                } = s.default.getPaginationStateByGuildId(e);
-                return Math.min(2 * _, 100)
-            }
-            async function D(e, _) {
-                if (!C(_)) return;
-                let E = S(e, "query", _);
-                if (!u(e, E, 2)) try {
-                    A(e, E);
-                    let [t, o] = (0, I.splitQuery)(_), n = t.map(_ => a.default.requestMembers(e, _, c(e)));
-                    o.length > 0 && n.push(a.default.requestMembersById(e, o)), await Promise.all(n)
-                } catch (e) {
-                    R(E)
-                }
-            }
-            async function d(e, _) {
-                let E = S(e, "role", _);
-                if (!u(e, E, 2)) try {
-                    A(e, E), await (0, i.requestMembersForRole)(e, _, !1)
-                } catch (e) {
-                    R(E)
-                }
-            }
-
-            function U(e) {
-                let {
-                    guildId: _
-                } = e;
-                L(_)
-            }
-
-            function M(e) {
-                let {
-                    guild: _
-                } = e;
-                L(_.id)
-            }
-
-            function h(e) {
-                let {
-                    guildId: _,
-                    searchState: E
-                } = e, {
-                    query: t,
-                    selectedRoleIds: o
-                } = E;
-                C(t) && D(_, t), null != o && o.forEach(e => {
-                    d(_, e)
-                })
-            }
-
-            function P(e) {
-                let {
-                    guildId: _
-                } = e, {
-                    query: E
-                } = s.default.getSearchStateByGuildId(_);
-                C(E) && D(_, E);
-                let t = s.default.getPaginationStateByGuildId(_),
-                    o = s.default.calculateNewContinuationToken(_, t);
-                if (null != o && o !== t.continuationToken) {
-                    let {
-                        query: e
-                    } = s.default.getSearchStateByGuildId(_);
-                    (0, T.requestNewPaginationChunk)(_, {
-                        query: e,
-                        continuationToken: o
-                    })
-                }
-            }
-
-            function m(e) {
-                let {
-                    guildId: _
-                } = e, {
-                    query: E,
-                    selectedRoleIds: t,
-                    requireUnusualDmActivity: o
-                } = s.default.getSearchStateByGuildId(_);
-                C(E) && ! function(e, _) {
-                    let E = S(e, "query", _);
-                    l(E)
-                }(_, E), t.size > 0 && t.forEach(e => {
-                    ! function(e, _) {
-                        let E = S(e, "role", _);
-                        l(E)
-                    }(_, e)
-                }), o && ! function(e) {
-                    let _ = S(e, "unusual_dm_activity", "");
-                    l(_)
-                }(_)
-            }
+            var r = new n
         },
         999243: function(e, _, E) {
             "use strict";
@@ -36684,4 +36449,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.8ae06dd9cdb802d8dfef.js.map
+//# sourceMappingURL=66318.e245e0eed1fb51ab997a.js.map

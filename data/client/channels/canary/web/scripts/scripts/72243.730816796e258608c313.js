@@ -21435,28 +21435,32 @@
                     label: "Clips Experiment",
                     defaultConfig: {
                         enableClips: !1,
-                        ignorePlatformRestriction: !1
+                        ignorePlatformRestriction: !1,
+                        showClipsHeaderEntrypoint: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "Clips without upsells",
                         config: {
                             enableClips: !0,
-                            ignorePlatformRestriction: !1
+                            ignorePlatformRestriction: !1,
+                            showClipsHeaderEntrypoint: !0
                         }
                     }, {
                         id: 2,
                         label: "Clips with upsells",
                         config: {
                             enableClips: !0,
-                            ignorePlatformRestriction: !1
+                            ignorePlatformRestriction: !1,
+                            showClipsHeaderEntrypoint: !0
                         }
                     }, {
                         id: 99,
                         label: "Clips 4 da Developerz",
                         config: {
                             enableClips: !0,
-                            ignorePlatformRestriction: !0
+                            ignorePlatformRestriction: !0,
+                            showClipsHeaderEntrypoint: !0
                         }
                     }]
                 }),
@@ -21657,6 +21661,9 @@
                 }
                 hasClips() {
                     return C.hasClips
+                }
+                getNewClipIds() {
+                    return C.newClipIds
                 }
             }
             A.displayName = "ClipsStore", A.persistKey = "ClipsStore", A.migrations = [e => ({
@@ -49436,7 +49443,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "253742"
+                                build_number: "253755"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62702,4 +62709,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.ef15248d9e8df93968fe.js.map
+//# sourceMappingURL=72243.730816796e258608c313.js.map
