@@ -1,11 +1,15 @@
-.wrapper__55afe {
+.wrapper__55afe,
+.activeWrapper__95162 {
     height: 100%;
     left: 0;
-    pointer-events: none;
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 200
+    z-index: 1002
+}
+
+.wrapper__55afe {
+    pointer-events: none
 }
 
 .videoWrapper__12a62 {
@@ -124293,4 +124297,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.529e12488d3cb0dd34c9.css.map*/
+/*# sourceMappingURL=app.fc1a1a1fa91faf5972ee.css.map*/
