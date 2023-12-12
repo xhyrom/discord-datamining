@@ -142,7 +142,7 @@
                 async transitionToGuildSync(e, t, l, n) {
                     var d, r;
                     let o = await P(e);
-                    let a = (d = o.id, null != (r = l) ? r : (0, s.isInMainTabsExperiment)() ? void 0 : (0, L.getChannelIdForGuildTransition)(d)),
+                    let a = (d = o.id, null != (r = l) ? r : !(0, s.isInMainTabsExperiment)() || (0, _.isOnNewPanels)() ? (0, L.getChannelIdForGuildTransition)(d) : void 0),
                         u = t;
                     (null == t ? void 0 : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (u = {
                         ...t,
@@ -1009,4 +1009,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18814.8a9d7b31f5a23de4ecfd.js.map
+//# sourceMappingURL=18814.b4decb18f30fe77bf89a.js.map
