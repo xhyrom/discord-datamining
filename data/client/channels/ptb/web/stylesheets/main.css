@@ -19423,8 +19423,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83430,12 +83430,13 @@ input::-webkit-inner-spin-button {
 }
 
 .shopCard_f7822b {
-    border-radius: var(--radius-xxl);
+    border-radius: 30px;
     border: 2px solid transparent;
     grid-column: auto;
     width: 100%;
     height: 420px;
-    transition: transform 1s, box-shadow.5s;
+    top: 0;
+    transition: top 1s, box-shadow.5s;
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -83446,7 +83447,7 @@ input::-webkit-inner-spin-button {
 
 .shopCard_f7822b:hover,
 .shopCard_f7822b:focus-within {
-    transform: translatey(-4px)
+    top: -4px
 }
 
 .avatar_f6650d {
@@ -124289,4 +124290,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7bf4751ecac12408fd45.css.map*/
+/*# sourceMappingURL=app.ec0806c45abb36b778a7.css.map*/
