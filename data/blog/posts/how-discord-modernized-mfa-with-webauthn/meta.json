@@ -1,0 +1,10 @@
+{
+  "id": "how-discord-modernized-mfa-with-webauthn",
+  "title": "How Discord Modernized MFA with WebAuthn",
+  "link": "https://discord.com/blog/how-discord-modernized-mfa-with-webauthn",
+  "guid": "https://discord.com/blog/how-discord-modernized-mfa-with-webauthn",
+  "description": "WebAuthn has landed in Discord for all users! In this post, we’ll talk about the engineering challenges we faced introducing WebAuthn to Discord and how we overcame them.",
+  "pubDate": "Tue, 12 Dec 2023 00:00:00 GMT",
+  "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6578bd5345289c1be8d4f5d4_Policy%20and%20Safety%20(1).png",
+  "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6578bd5345289c1be8d4f5d4_Policy%20and%20Safety%20(1).png"
+}
