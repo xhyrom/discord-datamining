@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["78934"], {
+    ["51772"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -197,7 +197,7 @@
                     return O
                 },
                 setDisableSubmit: function() {
-                    return D
+                    return P
                 }
             });
             var i = n("872717"),
@@ -397,7 +397,7 @@
                 })
             }
 
-            function D(e) {
+            function P(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_DISABLE_SUBMIT",
                     disable: e
@@ -2456,8 +2456,8 @@
                     openInvoiceId: U,
                     applicationId: y,
                     referralTrialOfferId: O,
-                    giftRecipient: D,
-                    returnRef: P
+                    giftRecipient: P,
+                    returnRef: D
                 } = null != e ? e : {}, M = !1, b = (0, l.v4)(), w = a.default.getCurrentUser(), x = (0, f.isPremiumExactly)(w, _.PremiumTypes.TIER_2);
                 (0, r.openModalLazy)(async () => {
                     let {
@@ -2475,7 +2475,7 @@
                             skuId: A,
                             isGift: g,
                             giftMessage: m,
-                            giftRecipient: D,
+                            giftRecipient: P,
                             initialPlanId: t,
                             followupSKUInfo: I,
                             onClose: (e, t) => {
@@ -2495,7 +2495,7 @@
                             openInvoiceId: U,
                             applicationId: y,
                             referralTrialOfferId: O,
-                            returnRef: P
+                            returnRef: D
                         })
                     }
                 }, {
@@ -3331,34 +3331,6 @@
                 })
             }
             n("884691")
-        },
-        476765: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                uid: function() {
-                    return o
-                },
-                useUID: function() {
-                    return u
-                },
-                UID: function() {
-                    return s
-                }
-            });
-            var i = n("995008"),
-                l = n.n(i),
-                r = n("775560");
-            let o = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
-                    return l(e)
-                },
-                u = () => (0, r.useLazyValue)(() => o()),
-                s = e => {
-                    let {
-                        children: t
-                    } = e;
-                    return t(u())
-                }
         },
         109264: function(e, t, n) {
             "use strict";
@@ -4488,4 +4460,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78934.1b19b5ce8278ae23100c.js.map
+//# sourceMappingURL=51772.156013bf4b78b90a53c9.js.map
