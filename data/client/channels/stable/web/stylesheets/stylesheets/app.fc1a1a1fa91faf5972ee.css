@@ -1,11 +1,15 @@
-.wrapper__55afe {
+.wrapper__55afe,
+.activeWrapper__95162 {
     height: 100%;
     left: 0;
-    pointer-events: none;
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 200
+    z-index: 1002
+}
+
+.wrapper__55afe {
+    pointer-events: none
 }
 
 .videoWrapper__12a62 {
@@ -19423,8 +19427,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -70862,18 +70866,6 @@ input::-webkit-inner-spin-button {
     color: var(--interactive-active)
 }
 
-.customCallSoundsFeatureArt__5f0aa {
-    background-image: url(/assets/6296fbce83bbcc0e73d9.svg);
-    width: 161px;
-    height: 129px;
-    align-self: center;
-    margin-bottom: -12px
-}
-
-.customCallSoundsFeatureHeader_ba0b7b {
-    text-indent: -6px
-}
-
 .scroller_a6a293 {
     margin-left: -3px;
     margin-right: -7px;
@@ -83506,7 +83498,8 @@ input::-webkit-inner-spin-button {
 
 .description__92b55 {
     margin-top: 4px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    flex: 1
 }
 
 .priceTag__76b4b {
@@ -83583,6 +83576,14 @@ input::-webkit-inner-spin-button {
     transition: opacity.5s
 }
 
+.innerMask__720e6 {
+    -webkit-mask-image: linear-gradient(to bottom, var(--black-500)100%, transparent 100%);
+    mask-image: linear-gradient(to bottom, var(--black-500)100%, transparent 100%);
+    transition: -webkit-mask-image.5s;
+    transition: mask-image.5s;
+    transition: mask-image.5s, -webkit-mask-image.5s
+}
+
 .checkmarkWrapper_f2dab8 {
     position: absolute;
     align-items: center;
@@ -83613,6 +83614,12 @@ input::-webkit-inner-spin-button {
 .shopCard_f7822b:hover .innerBlur_ed9e8f,
 .shopCard_f7822b:focus-within .innerBlur_ed9e8f {
     opacity: 0
+}
+
+.shopCard_f7822b:hover .innerMask__720e6,
+.shopCard_f7822b:focus-within .innerMask__720e6 {
+    -webkit-mask-image: linear-gradient(to bottom, var(--black-500)50%, transparent 95%);
+    mask-image: linear-gradient(to bottom, var(--black-500)50%, transparent 95%)
 }
 
 .shopCard_f7822b:hover .checkmark__2ccd6,
@@ -124290,4 +124297,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.45d4d70d2e41bc34b882.css.map*/
+/*# sourceMappingURL=app.fc1a1a1fa91faf5972ee.css.map*/

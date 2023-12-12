@@ -5942,6 +5942,7 @@
                 hoverUpsellContainer: "hoverUpsellContainer__425f0",
                 innerBlur: "innerBlur_ed9e8f",
                 innerHover: "innerHover__54e25",
+                innerMask: "innerMask__720e6",
                 lightCardBackground: "lightCardBackground_da94ab",
                 limitedTimeBadge: "limitedTimeBadge__19a7e",
                 premiumWheel: "premiumWheel__02495",
@@ -19951,6 +19952,7 @@
         600608: function(e, t, o) {
             "use strict";
             e.exports = {
+                activeWrapper: "activeWrapper__95162",
                 gadientHighlight: "gadientHighlight__0a91f",
                 swipe: "swipe_c36fab",
                 swipeWrapper: "swipeWrapper__6c5bf",
@@ -22017,13 +22019,6 @@
             e.exports = {
                 container: "container__0d484",
                 image: "image__2d4d5"
-            }
-        },
-        566398: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                customCallSoundsFeatureArt: "customCallSoundsFeatureArt__5f0aa",
-                customCallSoundsFeatureHeader: "customCallSoundsFeatureHeader_ba0b7b"
             }
         },
         872759: function(e, t, o) {

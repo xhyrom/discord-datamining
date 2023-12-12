@@ -176,7 +176,7 @@
                 T = n("657944"),
                 D = n("133335");
 
-            function v(e) {
+            function U(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 if (g.default.isFullServerPreview(e)) return;
                 let n = t ? C.default.getOnboardingPromptsForOnboarding(e) : C.default.getOnboardingPrompts(e),
@@ -232,7 +232,7 @@
                         removedOptionIds: d
                     })
                 },
-                updateOnboardingResponses: l.debounce(v, 1e3),
+                updateOnboardingResponses: l.debounce(U, 1e3),
                 updateRolesLocal: function(e, t, n) {
                     var a, i;
                     let d = null !== (i = null === (a = p.default.getSelfMember(e)) || void 0 === a ? void 0 : a.roles) && void 0 !== i ? i : [];
@@ -256,7 +256,7 @@
                         [u, c] = (0, I.getChannelCoverageForOnboarding)(e, t, s),
                         O = [...d, ...s],
                         L = O.map(e => _.default.getChannel(e)).filter(h.isNotNullish),
-                        U = (0, A.getFlattenedChannels)(e, new Set(O), L, !0).length,
+                        v = (0, A.getFlattenedChannels)(e, new Set(O), L, !0).length,
                         b = null == n ? [] : n.options.map(e => e.id);
                     if (N.default.track(G.AnalyticEvents.GUILD_ONBOARDING_STEP_COMPLETED, {
                             ...(0, o.collectGuildAnalyticsMetadata)(e),
@@ -267,10 +267,10 @@
                             in_onboarding: !0,
                             is_final_step: !0,
                             roles_granted: l.size,
-                            channels_granted: U,
+                            channels_granted: v,
                             guild_onboarding_covered_channel_ids: u.map(e => e.id),
                             guild_onboarding_uncovered_channel_ids: c.map(e => e.id)
-                        }), (0, r.ackGuildFeature)(e, D.ReadStateTypes.GUILD_ONBOARDING_QUESTION, i.default.fromTimestamp(Date.now())), v(e, !0), g.default.isFullServerPreview(e)) {
+                        }), (0, r.ackGuildFeature)(e, D.ReadStateTypes.GUILD_ONBOARDING_QUESTION, i.default.fromTimestamp(Date.now())), U(e, !0), g.default.isFullServerPreview(e)) {
                         (0, f.updateImpersonatedChannels)(e, O, []), (0, f.updateImpersonatedData)(e, {
                             optInEnabled: !0
                         }), (0, f.updateImpersonatedRoles)(e, Array.from(l));
@@ -464,7 +464,7 @@
                     return T
                 },
                 dimissFavoriteSuggestion: function() {
-                    return v
+                    return U
                 }
             }), n("222007");
             var a = n("917351"),
@@ -631,7 +631,7 @@
                 (0, f.updateUserGuildSettings)(e, e => (!(0, p.hasFlag)(e.guildOnboardingProgress, l.GuildOnboardingProgress.GUILD_NOTICE_CLEARED) || !!(0, p.hasFlag)(e.guildOnboardingProgress, l.GuildOnboardingProgress.GUILD_NOTICE_SHOWN)) && (e.guildOnboardingProgress = (0, p.addFlag)(e.guildOnboardingProgress, l.GuildOnboardingProgress.GUILD_NOTICE_CLEARED), e.guildOnboardingProgress = (0, p.setFlag)(e.guildOnboardingProgress, l.GuildOnboardingProgress.GUILD_NOTICE_SHOWN, !1), !0), f.UserSettingsDelay.INFREQUENT_USER_ACTION)
             }
 
-            function v(e, t) {
+            function U(e, t) {
                 i.default.dispatch({
                     type: "DISMISS_FAVORITE_SUGGESTION",
                     guildId: e,
@@ -664,7 +664,10 @@
                 !__OVERLAY__ && (clearTimeout(o), o = setTimeout(() => g(), 15e3))
             }
             async function g(e, t) {
-                await c(null != t ? {
+                null == e || e === s.ME ? await a.default.patch({
+                    url: s.Endpoints.USER_GUILD_SETTINGS(s.ME),
+                    body: t
+                }) : await c(null != t ? {
                     [null != e ? e : s.ME]: t
                 } : {})
             }
@@ -822,4 +825,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6086.23be3cf9bcb21ebc9b54.js.map
+//# sourceMappingURL=6086.272964ad8589a973eeaa.js.map

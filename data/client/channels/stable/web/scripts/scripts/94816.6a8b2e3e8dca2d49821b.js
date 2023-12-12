@@ -190,8 +190,8 @@
                 p = n("798609"),
                 f = n("700179"),
                 m = n("884351"),
-                _ = n("252862"),
-                I = n("730498"),
+                I = n("252862"),
+                _ = n("730498"),
                 C = n("300322"),
                 T = n("845579"),
                 A = n("42203"),
@@ -506,7 +506,7 @@
                         var n, i;
                         let {
                             channel: l
-                        } = t, a = null !== (n = D(e, "name")) && void 0 !== n ? n : "", s = null !== (i = D(e, "message")) && void 0 !== i ? i : "", r = await (0, I.createThread)(l, a, o.ChannelTypes.PUBLIC_THREAD, (0, _.getAutoArchiveDuration)(l, null), "Slash Command");
+                        } = t, a = null !== (n = D(e, "name")) && void 0 !== n ? n : "", s = null !== (i = D(e, "message")) && void 0 !== i ? i : "", r = await (0, _.createThread)(l, a, o.ChannelTypes.PUBLIC_THREAD, (0, I.getAutoArchiveDuration)(l, null), "Slash Command");
                         c.default.sendMessage(r.id, m.default.parse(r, s))
                     }
                 }, {
@@ -881,7 +881,7 @@
                     return m
                 },
                 getFilteredTopCommands: function() {
-                    return _
+                    return I
                 },
                 default: function() {
                     return A
@@ -916,14 +916,14 @@
                 return [...t]
             }
 
-            function _(e, t) {
+            function I(e, t) {
                 return e.filter(e => {
                     if (e.includes(":")) return null != t.guild && t.guild.id === e.split(":")[1];
                     return !0
                 }).map(e => e.split(":")[0])
             }
 
-            function I(e, t) {
+            function _(e, t) {
                 return 0 > Number(t.id) ? t.id : null != e.guild && null != t.guildId ? "".concat(t.id, ":").concat(e.guild.id) : t.id
             }
 
@@ -951,7 +951,7 @@
                 }
                 getScoreWithoutLoadingLatest(e, t) {
                     var n;
-                    return null !== (n = f.getScore(I(e, t))) && void 0 !== n ? n : 0
+                    return null !== (n = f.getScore(_(e, t))) && void 0 !== n ? n : 0
                 }
                 getTopCommandsWithoutLoadingLatest() {
                     return f.frequently
@@ -965,7 +965,7 @@
                         context: n
                     } = e;
                     if (t.type !== o.ApplicationCommandType.CHAT) return !1;
-                    let i = I(n, t);
+                    let i = _(n, t);
                     p.pendingUsages.push({
                         key: i,
                         timestamp: Date.now()
@@ -1082,8 +1082,8 @@
                 p = n("605393"),
                 f = n("892692"),
                 m = n("915639"),
-                _ = n("872173"),
-                I = n("42203"),
+                I = n("872173"),
+                _ = n("42203"),
                 C = n("305961"),
                 T = n("162771"),
                 A = n("697218"),
@@ -1379,7 +1379,7 @@
                     }), a = null == l ? void 0 : null === (t = l.result) || void 0 === t ? void 0 : t.sectionIdsByBotId;
                     if (null != a)
                         for (let e in a) {
-                            let t = I.default.getDMFromUserId(e);
+                            let t = _.default.getDMFromUserId(e);
                             null != t && W({
                                 type: "channel",
                                 channelId: t
@@ -1529,7 +1529,7 @@
                     sortOptions: d = Q
                 } = e, {
                     commandType: c
-                } = t, f = null == l ? void 0 : l.toLowerCase(), m = null == f ? void 0 : f.split(" "), I = a === O.BuiltInCommandFilter.ONLY_TEXT, T = a !== O.BuiltInCommandFilter.DENY ? (0, N.getBuiltInCommands)(c, !0, I) : [], A = [], E = {
+                } = t, f = null == l ? void 0 : l.toLowerCase(), m = null == f ? void 0 : f.split(" "), _ = a === O.BuiltInCommandFilter.ONLY_TEXT, T = a !== O.BuiltInCommandFilter.DENY ? (0, N.getBuiltInCommands)(c, !0, _) : [], A = [], E = {
                     permissionContext: t,
                     query: f,
                     splitQuery: m,
@@ -1560,7 +1560,7 @@
                         let r = J(i, l, E);
                         null != r && A.push(r)
                     }
-                    d.applications.useFrecency && _.FrecencyUserSettingsActionCreators.loadIfNecessary(), A.sort((e, t) => {
+                    d.applications.useFrecency && I.FrecencyUserSettingsActionCreators.loadIfNecessary(), A.sort((e, t) => {
                         if (d.applications.useScore && u === O.ScoreMethod.APPLICATION_ONLY) {
                             var n, i, l, a;
                             let s = null !== (l = null === (n = e.data[0]) || void 0 === n ? void 0 : n.score) && void 0 !== l ? l : Number.MAX_VALUE,
@@ -1586,7 +1586,7 @@
                 if (u === O.ScoreMethod.COMMAND_ONLY || u === O.ScoreMethod.COMMAND_OR_APPLICATION) {
                     let e = t.context,
                         n = C.default.getGuild(t.context.guild_id);
-                    d.commands.useFrecency && _.FrecencyUserSettingsActionCreators.loadIfNecessary(), y.sort((t, i) => {
+                    d.commands.useFrecency && I.FrecencyUserSettingsActionCreators.loadIfNecessary(), y.sort((t, i) => {
                         if (d.commands.useScore) {
                             var l, a;
                             let e = null !== (l = t.score) && void 0 !== l ? l : 0,
@@ -1631,10 +1631,10 @@
                     } = r,
                     f = null != u.guild_id ? D.computeAllowedForUser(e.permissions, u.guild_id, d, c, p) : null,
                     m = null != u.guild_id ? D.computeAllowedForChannel(e.permissions, u, u.guild_id) : null,
-                    _ = [];
+                    I = [];
                 for (let e of t) {
                     let t = D.hasAccess(e, r, f, m);
-                    t === D.HasAccessResult.ALLOWED && _.push(e)
+                    t === D.HasAccessResult.ALLOWED && I.push(e)
                 }
                 return 0 !== (i = o !== O.ScoreMethod.NONE && null != l && null != a ? function(e, t, n, i, l) {
                     let a;
@@ -1681,7 +1681,7 @@
                         })
                     }
                     return s
-                }(l, a, _, e, o) : _).length || s ? ((o === O.ScoreMethod.NONE || o === O.ScoreMethod.APPLICATION_ONLY) && i.sort((e, t) => ea(e.displayName, t.displayName)), {
+                }(l, a, I, e, o) : I).length || s ? ((o === O.ScoreMethod.NONE || o === O.ScoreMethod.APPLICATION_ONLY) && i.sort((e, t) => ea(e.displayName, t.displayName)), {
                     section: e,
                     data: i
                 }) : null
@@ -1794,8 +1794,8 @@
                 p = n("988721"),
                 f = n("972620"),
                 m = n("216193"),
-                _ = n("166004"),
-                I = n("524768"),
+                I = n("166004"),
+                _ = n("524768"),
                 C = n("317041"),
                 T = n("49111");
 
@@ -1835,7 +1835,7 @@
                 var i, l, a, s, o, r;
                 if (!D({
                         location: "getCachedApplicationSection"
-                    })) return null === (o = _.default.getApplicationSections(e.id, t)) || void 0 === o ? void 0 : o.find(e => e.id === n);
+                    })) return null === (o = I.default.getApplicationSections(e.id, t)) || void 0 === o ? void 0 : o.find(e => e.id === n);
                 let u = p.default.getUserState(),
                     d = p.default.getContextState(e),
                     c = null !== (r = null === (l = u.result) || void 0 === l ? void 0 : null === (i = l.sections) || void 0 === i ? void 0 : i[n]) && void 0 !== r ? r : null === (s = d.result) || void 0 === s ? void 0 : null === (a = s.sections) || void 0 === a ? void 0 : a[n];
@@ -1848,8 +1848,8 @@
                     })) {
                     var i, l;
                     return {
-                        commands: null !== (i = _.default.getQueryCommands(e.id, t, n)) && void 0 !== i ? i : [],
-                        sections: null !== (l = _.default.getApplicationSections(e.id, t)) && void 0 !== l ? l : []
+                        commands: null !== (i = I.default.getQueryCommands(e.id, t, n)) && void 0 !== i ? i : [],
+                        sections: null !== (l = I.default.getApplicationSections(e.id, t)) && void 0 !== l ? l : []
                     }
                 }
                 let a = p.default.query(e, {
@@ -1870,7 +1870,7 @@
                         location: "getChangeKeys"
                     }, {
                         autoTrackExposure: !1
-                    })) return [_.default.getQueryCommands(e.id, t, n)];
+                    })) return [I.default.getQueryCommands(e.id, t, n)];
                 let i = p.default.getUserState(),
                     l = p.default.getContextState(e);
                 return [null == i ? void 0 : i.result, null == l ? void 0 : l.result]
@@ -1881,7 +1881,7 @@
                         location: "useDiscovery"
                     })) {
                     var a, o;
-                    return (0, _.useDiscoveryState)(e, t.commandType, null !== (a = n.placeholderCount) && void 0 !== a ? a : 0, null !== (o = n.limit) && void 0 !== o ? o : 10, {
+                    return (0, I.useDiscoveryState)(e, t.commandType, null !== (a = n.placeholderCount) && void 0 !== a ? a : 0, null !== (o = n.limit) && void 0 !== o ? o : 10, {
                         canOnlyUseTextCommands: t.builtIns === f.BuiltInCommandFilter.ONLY_TEXT,
                         canUseFrecency: n.includeFrecency
                     })
@@ -1891,14 +1891,14 @@
                         descriptors: u,
                         commands: c,
                         sectionedCommands: m,
-                        loading: I
+                        loading: _
                     } = (0, p.useDiscoveryState)(e, r, t, {
                         ...n,
                         allowFetch: !0
                     }),
                     [A, E] = i.useState(null),
                     N = i.useRef(!1);
-                N.current = I;
+                N.current = _;
                 let S = i.useMemo(() => {
                     let e = [];
                     if (null != n.placeholderCount)
@@ -1913,7 +1913,7 @@
                         commandsByActiveSection: m,
                         filteredSectionId: A,
                         hasMoreAfter: !1,
-                        placeholders: I ? S : [],
+                        placeholders: _ ? S : [],
                         sectionDescriptors: u,
                         filterSection: e => {
                             E(e)
@@ -1924,7 +1924,7 @@
                         let t = m.find(e => e.section.id === A);
                         e.activeSections = null != t ? [t.section] : [], e.commandsByActiveSection = null != t ? [t] : []
                     }
-                    if (I) {
+                    if (_) {
                         let t = m[0];
                         if (null != t) e.commandsByActiveSection = [{
                             section: t.section,
@@ -1940,7 +1940,7 @@
                         e.commands = [...c, ...S]
                     }
                     return e
-                }, [c, u, A, m, I, S])
+                }, [c, u, A, m, _, S])
             }
 
             function M(e, t, n) {
@@ -1949,19 +1949,19 @@
                     })) {
                     var i, l, s, o, r;
                     return !0 === n.allowFetch && u.querySearchManager((0, a.getCommandContext)(e), null !== (i = t.text) && void 0 !== i ? i : "", null !== (l = n.limit) && void 0 !== l ? l : 10, t.commandType), {
-                        commands: null !== (o = _.default.getQueryCommands(e.id, t.commandType, null !== (s = t.text) && void 0 !== s ? s : "")) && void 0 !== o ? o : [],
-                        sections: null !== (r = _.default.getApplicationSections(e.id, t.commandType)) && void 0 !== r ? r : []
+                        commands: null !== (o = I.default.getQueryCommands(e.id, t.commandType, null !== (s = t.text) && void 0 !== s ? s : "")) && void 0 !== o ? o : [],
+                        sections: null !== (r = I.default.getApplicationSections(e.id, t.commandType)) && void 0 !== r ? r : []
                     }
                 }
                 let {
                     descriptors: c,
                     commands: f,
                     loading: m
-                } = p.default.query(e, t, n), I = [];
+                } = p.default.query(e, t, n), _ = [];
                 if (null != n.placeholderCount && m)
-                    for (let e = 0; e < n.placeholderCount; e++) I.push(L(e, t.commandType));
+                    for (let e = 0; e < n.placeholderCount; e++) _.push(L(e, t.commandType));
                 return {
-                    commands: m ? [...f, ...I] : f,
+                    commands: m ? [...f, ..._] : f,
                     sections: m && 0 === c.length ? [d.BUILT_IN_SECTIONS[C.BuiltInSectionId.BUILT_IN]] : c
                 }
             }
@@ -1971,7 +1971,7 @@
                         location: "useQuery"
                     })) {
                     var l, a;
-                    return (0, _.useQueryState)(e, t.commandType, null !== (l = t.text) && void 0 !== l ? l : "", null !== (a = n.limit) && void 0 !== a ? a : 10)
+                    return (0, I.useQueryState)(e, t.commandType, null !== (l = t.text) && void 0 !== l ? l : "", null !== (a = n.limit) && void 0 !== a ? a : 10)
                 }
                 let {
                     descriptors: s,
@@ -2080,7 +2080,7 @@
             function y() {
                 !R({
                     location: "useSearchOpenState"
-                }) && (0, _.useSearchStoreOpenState)()
+                }) && (0, I.useSearchStoreOpenState)()
             }
 
             function D(e, t) {
@@ -2093,14 +2093,14 @@
             }
             let P = {
                 id: "placeholder-section",
-                type: I.ApplicationCommandSectionType.APPLICATION,
+                type: _.ApplicationCommandSectionType.APPLICATION,
                 name: ""
             };
 
             function L(e, t) {
                 return {
                     type: t,
-                    inputType: I.ApplicationCommandInputType.PLACEHOLDER,
+                    inputType: _.ApplicationCommandInputType.PLACEHOLDER,
                     id: "placeholder-".concat(e),
                     name: "",
                     displayName: "",
@@ -2142,8 +2142,8 @@
                 p = n("957255"),
                 f = n("507217"),
                 m = n("166004"),
-                _ = n("389153");
-            let I = new Map,
+                I = n("389153");
+            let _ = new Map,
                 C = new Set,
                 T = new Set,
                 A = new s({
@@ -2163,7 +2163,7 @@
                         var i;
                         if (null == e) return;
                         if (null != t && l && C.add(t), 0 === e.applicationCommands.length && (null == e.applications || 0 === e.applications.length)) return;
-                        let a = (0, _.buildApplicationCommands)(e.applicationCommands);
+                        let a = (0, I.buildApplicationCommands)(e.applicationCommands);
                         f.updateRegistry(a, null !== (i = e.applications) && void 0 !== i ? i : [], n)
                     })
                 },
@@ -2174,7 +2174,7 @@
                         channelId: i,
                         includeApplications: l
                     } = e, a = c.default.getChannel(i);
-                    if (null != a)(0, _.canUseApplicationCommands)(p.default, d.default, !1, a) && N({
+                    if (null != a)(0, I.canUseApplicationCommands)(p.default, d.default, !1, a) && N({
                         guildId: n,
                         channelId: i,
                         includeApplications: l,
@@ -2186,10 +2186,10 @@
                     })
                 }, 250),
                 g = l.debounce((e, t, n, i) => {
-                    let l = [...n].filter(_.isSnowflake);
+                    let l = [...n].filter(I.isSnowflake);
                     if (0 === l.length) return;
                     let a = c.default.getChannel(t);
-                    if (null == a || !(0, _.canUseApplicationCommands)(p.default, d.default, !1, a)) return;
+                    if (null == a || !(0, I.canUseApplicationCommands)(p.default, d.default, !1, a)) return;
                     let s = l.slice(0, 100),
                         o = l.slice(100);
                     N({
@@ -2212,7 +2212,7 @@
                     return null != e && A.has(e)
                 }
                 getApplication(e) {
-                    if (null != e) return I.get(e)
+                    if (null != e) return _.get(e)
                 }
                 getCommand(e) {
                     if (null != e) return A.get(e)
@@ -2275,7 +2275,7 @@
                         commands: n,
                         channelId: i
                     } = e;
-                    for (let e of t) I.set(e.id, e);
+                    for (let e of t) _.set(e.id, e);
                     for (let e of n) T.delete(e.id), A.set(e.id, e), E.set(e.id, {
                         channelId: i,
                         command: e
@@ -2296,11 +2296,11 @@
                     i === u.ApplicationCommandType.CHAT && (null === (t = l.applicationCommands) || void 0 === t || t.forEach(e => {
                         A.set(e.id, e)
                     }), null === (n = l.applicationSections) || void 0 === n || n.forEach(e => {
-                        null != e.application && I.set(e.application.id, e.application)
+                        null != e.application && _.set(e.application.id, e.application)
                     }))
                 },
                 LOGOUT: function() {
-                    I.clear(), C.clear(), T.clear(), A.reset(), E.reset()
+                    _.clear(), C.clear(), T.clear(), A.reset(), E.reset()
                 }
             });
             var h = O
@@ -2336,8 +2336,8 @@
                 p = n("763898"),
                 f = n("938767"),
                 m = n("38654"),
-                _ = n("252063"),
-                I = n("140596"),
+                I = n("252063"),
+                _ = n("140596"),
                 C = n("685841"),
                 T = n("872173"),
                 A = n("374363"),
@@ -2682,7 +2682,7 @@
                         state: n
                     })
                 }, [e.id, t]);
-                (0, _.usePrivateChannelIntegrationState)({
+                (0, I.usePrivateChannelIntegrationState)({
                     channelId: e.id
                 });
                 let N = i.useRef(!1),
@@ -2706,7 +2706,7 @@
                     y = (0, f.useCommandContext)(e),
                     P = (0, h.useTopCommands)(y),
                     H = (0, h.useTopRealCommands)(y),
-                    w = (0, r.useStateFromStores)([S.default, I.default], () => (0, D.canUseApplicationCommands)(S.default, I.default, null != a && a, e), [a, e]);
+                    w = (0, r.useStateFromStores)([S.default, _.default], () => (0, D.canUseApplicationCommands)(S.default, _.default, null != a && a, e), [a, e]);
                 i.useEffect(() => {
                     if (o) return;
                     if (E({
@@ -2859,8 +2859,8 @@
                     t = n.channel.isPrivate() ? null !== (p = c.applicationCommands) && void 0 !== p ? p : [] : B([], null != o ? o : [])
                 }
                 let f = U(n, i, s),
-                    m = (0, D.canUseApplicationCommands)(S.default, I.default, s, n.channel) && (n.channel.isPrivate() ? null == c.applicationCommands : null == o),
-                    _ = [],
+                    m = (0, D.canUseApplicationCommands)(S.default, _.default, s, n.channel) && (n.channel.isPrivate() ? null == c.applicationCommands : null == o),
+                    I = [],
                     C = !1;
                 if (m)
                     for (let e = l.length - 1; e > 0; e -= 1) {
@@ -2868,7 +2868,7 @@
                             i = c.queries.get(n);
                         if (null != i) {
                             C = i.done, i.commands.forEach(e => {
-                                null == t.find(t => t.id === e.id) && null == f.find(t => t.id === e.id) && _.push(e)
+                                null == t.find(t => t.id === e.id) && null == f.find(t => t.id === e.id) && I.push(e)
                             });
                             break
                         }
@@ -2876,7 +2876,7 @@
                 C && (m = !1);
                 let A = [],
                     E = l.split(" ");
-                if ([...t, ..._, ...f].forEach(e => {
+                if ([...t, ...I, ...f].forEach(e => {
                         var t;
                         let n = null === (t = c.applicationSections) || void 0 === t ? void 0 : t.find(t => t.id === e.applicationId),
                             i = ee(l, E, e, n);
@@ -2914,7 +2914,7 @@
                         limit: a,
                         applicationId: s
                     } = e;
-                    if (!(0, D.canUseApplicationCommands)(S.default, I.default, !1, n.channel)) return;
+                    if (!(0, D.canUseApplicationCommands)(S.default, _.default, !1, n.channel)) return;
                     let o = q.getOrInsertChannelState(n.channel.id, i);
                     if (n.channel.isPrivate()) {
                         !o.discoveryInitialized && null == o.applicationCommands && L(n.channel.id, {
@@ -2967,7 +2967,7 @@
                         query: a,
                         limit: s
                     } = e;
-                    if (!(0, D.canUseApplicationCommands)(S.default, I.default, !1, i.channel) || i.channel.isPrivate()) return;
+                    if (!(0, D.canUseApplicationCommands)(S.default, _.default, !1, i.channel) || i.channel.isPrivate()) return;
                     let o = q.getOrInsertChannelState(i.channel.id, l),
                         r = null === (n = o.queries.get(a)) || void 0 === n ? void 0 : n.scrollDownCursor;
                     null != r && await L(i.channel.id, {
@@ -3095,7 +3095,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 buildPermissionContext: function() {
-                    return I
+                    return _
                 },
                 usePermissionContext: function() {
                     return C
@@ -3116,18 +3116,18 @@
                 p = n("26989"),
                 f = n("957255"),
                 m = n("697218"),
-                _ = n("49111");
+                I = n("49111");
 
-            function I(e, t) {
+            function _(e, t) {
                 var n, i, l, a, s;
                 let f;
                 f = e instanceof u.ChannelRecordBase && e.isThread() ? null !== (l = c.default.getChannel(e.parent_id)) && void 0 !== l ? l : e : e;
-                let _ = N(f),
-                    I = r.ViewNsfwCommands.getSetting(),
+                let I = N(f),
+                    _ = r.ViewNsfwCommands.getSetting(),
                     C = d.default.getId(),
                     S = null !== (a = null === (n = m.default.getCurrentUser()) || void 0 === n ? void 0 : n.nsfwAllowed) && void 0 !== a && a,
-                    g = null != _ && null !== (s = null === (i = p.default.getMember(_, C)) || void 0 === i ? void 0 : i.roles) && void 0 !== s ? s : [],
-                    M = o.default.isViewingRoles(_),
+                    g = null != I && null !== (s = null === (i = p.default.getMember(I, C)) || void 0 === i ? void 0 : i.roles) && void 0 !== s ? s : [],
+                    M = o.default.isViewingRoles(I),
                     {
                         computedPermissions: O,
                         hasBaseAccessPermissions: h
@@ -3141,7 +3141,7 @@
                     commandContextType: E(f),
                     computedPermissions: O,
                     hasBaseAccessPermissions: h,
-                    allowNsfw: T(f, S, I)
+                    allowNsfw: T(f, S, _)
                 }
             }
 
@@ -3156,11 +3156,11 @@
                     l = N(n),
                     s = r.ViewNsfwCommands.useSetting(),
                     f = (0, a.useStateFromStores)([d.default], () => d.default.getId()),
-                    _ = (0, a.useStateFromStores)([m.default], () => {
+                    I = (0, a.useStateFromStores)([m.default], () => {
                         var e, t;
                         return null !== (t = null === (e = m.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed) && void 0 !== t && t
                     }),
-                    I = (0, a.useStateFromStoresArray)([p.default], () => {
+                    _ = (0, a.useStateFromStoresArray)([p.default], () => {
                         var e, t;
                         return null != l && null !== (t = null === (e = p.default.getMember(l, f)) || void 0 === e ? void 0 : e.roles) && void 0 !== t ? t : []
                     }),
@@ -3173,15 +3173,15 @@
                     return {
                         context: n,
                         userId: f,
-                        roleIds: I,
+                        roleIds: _,
                         commandType: t,
                         isImpersonating: C,
                         commandContextType: E(n),
                         computedPermissions: e,
                         hasBaseAccessPermissions: i,
-                        allowNsfw: T(n, _, s)
+                        allowNsfw: T(n, I, s)
                     }
-                }, [t, n, C, I, f, _, s])
+                }, [t, n, C, _, f, I, s])
             }
 
             function T(e, t, n) {
@@ -3195,7 +3195,7 @@
                     hasBaseAccessPermissions: !0
                 };
                 let n = f.default.computePermissions(e);
-                return t = !!l.default.has(n, _.Permissions.ADMINISTRATOR) || (e instanceof u.ChannelRecordBase ? l.default.has(n, _.Permissions.VIEW_CHANNEL) && l.default.has(n, _.Permissions.USE_APPLICATION_COMMANDS) : l.default.has(n, _.Permissions.VIEW_CHANNEL)), {
+                return t = !!l.default.has(n, I.Permissions.ADMINISTRATOR) || (e instanceof u.ChannelRecordBase ? l.default.has(n, I.Permissions.VIEW_CHANNEL) && l.default.has(n, I.Permissions.USE_APPLICATION_COMMANDS) : l.default.has(n, I.Permissions.VIEW_CHANNEL)), {
                     computedPermissions: n,
                     hasBaseAccessPermissions: t
                 }
@@ -3203,7 +3203,7 @@
 
             function E(e) {
                 var t;
-                return e instanceof u.ChannelRecordBase && null == e.guild_id ? e.type === _.ChannelTypes.DM && (null === (t = m.default.getUser(e.getRecipientId())) || void 0 === t ? void 0 : t.bot) === !0 ? s.ApplicationCommandContextType.BOT_DM : s.ApplicationCommandContextType.PRIVATE_CHANNEL : s.ApplicationCommandContextType.GUILD
+                return e instanceof u.ChannelRecordBase && null == e.guild_id ? e.type === I.ChannelTypes.DM && (null === (t = m.default.getUser(e.getRecipientId())) || void 0 === t ? void 0 : t.bot) === !0 ? s.ApplicationCommandContextType.BOT_DM : s.ApplicationCommandContextType.PRIVATE_CHANNEL : s.ApplicationCommandContextType.GUILD
             }
 
             function N(e) {
@@ -3217,7 +3217,7 @@
                     return i
                 },
                 hasAccess: function() {
-                    return I
+                    return _
                 },
                 computeAllowedForChannel: function() {
                     return A
@@ -3236,15 +3236,15 @@
                 p = n("389153"),
                 f = n("123373"),
                 m = n("317041"),
-                _ = n("49111");
+                I = n("49111");
 
-            function I(e, t, n, i) {
+            function _(e, t, n, i) {
                 let {
                     context: l,
                     commandType: a,
                     commandContextType: r,
                     allowNsfw: c,
-                    computedPermissions: I,
+                    computedPermissions: _,
                     userId: C,
                     roleIds: T,
                     isImpersonating: N,
@@ -3262,7 +3262,7 @@
                 }
                 if (e.applicationId === m.BuiltInSectionId.BUILT_IN) return 0;
                 let g = (0, f.getContextGuildId)(l);
-                if (null == g || o.default.has(I, _.Permissions.ADMINISTRATOR)) return 0;
+                if (null == g || o.default.has(_, I.Permissions.ADMINISTRATOR)) return 0;
                 if (!S) return 5;
                 if (l instanceof u.ChannelRecordBase) {
                     s(void 0 !== i, "missing applicationAllowedForChannel");
@@ -3282,7 +3282,7 @@
                     return !1 === e
                 }(M) ? 7 : function(e) {
                     return !1 === e
-                }(n) || null != e.defaultMemberPermissions && !(!o.default.equals(e.defaultMemberPermissions, p.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && o.default.has(I, e.defaultMemberPermissions)) ? 7 : 0
+                }(n) || null != e.defaultMemberPermissions && !(!o.default.equals(e.defaultMemberPermissions, p.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && o.default.has(_, e.defaultMemberPermissions)) ? 7 : 0
             }
 
             function C(e) {
@@ -3345,19 +3345,19 @@
                 p = n("697218"),
                 f = n("524768"),
                 m = n("317041"),
-                _ = n("49111"),
-                I = n("782340");
+                I = n("49111"),
+                _ = n("782340");
 
             function C(e) {
                 switch (e) {
-                    case _.ChannelTextAreaIntegrations.GIF.title:
-                    case _.ChannelTextAreaIntegrations.TENOR.title:
-                        return I.default.Messages.COMMAND_GIPHY_DESCRIPTION;
+                    case I.ChannelTextAreaIntegrations.GIF.title:
+                    case I.ChannelTextAreaIntegrations.TENOR.title:
+                        return _.default.Messages.COMMAND_GIPHY_DESCRIPTION;
                     default:
                         return ""
                 }
             }
-            let T = [...a(_.ChannelTextAreaIntegrations).values().map(e => ({
+            let T = [...a(I.ChannelTextAreaIntegrations).values().map(e => ({
                 id: e.commandId,
                 name: e.command,
                 displayName: e.command,
@@ -3370,15 +3370,15 @@
                 get displayDescription() {
                     return C(e.title)
                 },
-                options: e.type === _.ChannelTextAreaIntegrationTypes.GIF ? [{
+                options: e.type === I.ChannelTextAreaIntegrationTypes.GIF ? [{
                     name: "query",
                     displayName: "query",
                     type: u.ApplicationCommandOptionType.STRING,
                     get description() {
-                        return I.default.Messages.COMMAND_GIPHY_QUERY_DESCRIPTION
+                        return _.default.Messages.COMMAND_GIPHY_QUERY_DESCRIPTION
                     },
                     get displayDescription() {
-                        return I.default.Messages.COMMAND_GIPHY_QUERY_DESCRIPTION
+                        return _.default.Messages.COMMAND_GIPHY_QUERY_DESCRIPTION
                     },
                     required: !0
                 }] : [],
@@ -3392,20 +3392,20 @@
                 inputType: f.ApplicationCommandInputType.BUILT_IN,
                 applicationId: m.BuiltInSectionId.BUILT_IN,
                 get description() {
-                    return I.default.Messages.LEAVE_GROUP_DM
+                    return _.default.Messages.LEAVE_GROUP_DM
                 },
                 get displayDescription() {
-                    return I.default.Messages.LEAVE_GROUP_DM
+                    return _.default.Messages.LEAVE_GROUP_DM
                 },
                 options: [{
                     name: "silent",
                     displayName: "silent",
                     type: u.ApplicationCommandOptionType.BOOLEAN,
                     get description() {
-                        return I.default.Messages.LEAVE_GROUP_DM_SILENTLY_COMMAND_OPTION
+                        return _.default.Messages.LEAVE_GROUP_DM_SILENTLY_COMMAND_OPTION
                     },
                     get displayDescription() {
-                        return I.default.Messages.LEAVE_GROUP_DM_SILENTLY
+                        return _.default.Messages.LEAVE_GROUP_DM_SILENTLY
                     },
                     required: !1
                 }],
@@ -3419,26 +3419,26 @@
                     var n, l;
                     let {
                         channel: a
-                    } = t, u = (0, d.computeChannelName)(a, p.default, c.default), f = I.default.Messages.LEAVE_GROUP_DM_TITLE.format({
+                    } = t, u = (0, d.computeChannelName)(a, p.default, c.default), f = _.default.Messages.LEAVE_GROUP_DM_TITLE.format({
                         name: u
-                    }), m = I.default.Messages.LEAVE_GROUP_DM_BODY.format({
+                    }), m = _.default.Messages.LEAVE_GROUP_DM_BODY.format({
                         name: u
-                    }), _ = null !== (l = null === (n = e.find(e => "silent" === e.name)) || void 0 === n ? void 0 : n.value) && void 0 !== l && l;
+                    }), I = null !== (l = null === (n = e.find(e => "silent" === e.name)) || void 0 === n ? void 0 : n.value) && void 0 !== l && l;
                     async function C() {
                         try {
-                            await o.default.closePrivateChannel(a.id, void 0, _)
+                            await o.default.closePrivateChannel(a.id, void 0, I)
                         } catch (e) {
-                            r.default.sendBotMessage(a.id, I.default.Messages.LEAVE_GROUP_DM_ERROR)
+                            r.default.sendBotMessage(a.id, _.default.Messages.LEAVE_GROUP_DM_ERROR)
                         }
                     }
-                    a.isManaged() && (f = I.default.Messages.LEAVE_GROUP_DM_MANAGED_TITLE.format({
+                    a.isManaged() && (f = _.default.Messages.LEAVE_GROUP_DM_MANAGED_TITLE.format({
                         name: u
-                    }), m = I.default.Messages.LEAVE_GROUP_DM_MANAGED_BODY.format({
+                    }), m = _.default.Messages.LEAVE_GROUP_DM_MANAGED_BODY.format({
                         name: u
                     })), (0, s.openModal)(e => (0, i.jsx)(s.ConfirmModal, {
                         header: f,
-                        confirmText: I.default.Messages.LEAVE_GROUP_DM,
-                        cancelText: I.default.Messages.CANCEL,
+                        confirmText: _.default.Messages.LEAVE_GROUP_DM,
+                        cancelText: _.default.Messages.CANCEL,
                         onConfirm: C,
                         ...e,
                         children: (0, i.jsx)(s.Text, {
@@ -3487,7 +3487,7 @@
                 }), f.track(e), f.compute()
             }
 
-            function _() {
+            function I() {
                 var e, t;
                 let n = u.default.frecencyWithoutFetchingLatest,
                     i = null !== (t = null === (e = n.applicationFrecency) || void 0 === e ? void 0 : e.applications) && void 0 !== t ? t : {};
@@ -3496,9 +3496,9 @@
                     recentUses: e.recentUses.map(Number).filter(e => e > 0)
                 })), p.pendingUsages)
             }
-            class I extends a.default.PersistedStore {
+            class _ extends a.default.PersistedStore {
                 initialize(e) {
-                    null != e && (p = e), this.syncWith([u.default], _)
+                    null != e && (p = e), this.syncWith([u.default], I)
                 }
                 getState() {
                     return p
@@ -3517,8 +3517,8 @@
                     return f.frequently
                 }
             }
-            I.displayName = "ApplicationFrecencyStore", I.persistKey = "ApplicationFrecency";
-            var C = new I(s.default, {
+            _.displayName = "ApplicationFrecencyStore", _.persistKey = "ApplicationFrecency";
+            var C = new _(s.default, {
                 APPLICATION_COMMAND_USED: function(e) {
                     let {
                         command: t
@@ -3566,8 +3566,8 @@
                 p = n("271938"),
                 f = n("42203"),
                 m = n("660478"),
-                _ = n("18494"),
-                I = n("449008"),
+                I = n("18494"),
+                _ = n("449008"),
                 C = n("786742");
             let T = [],
                 A = null,
@@ -3603,7 +3603,7 @@
 
             function B() {
                 var e;
-                let t = _.default.getChannelId();
+                let t = I.default.getChannelId();
                 if (null == t || !(null === (e = f.default.getChannel(t)) || void 0 === e ? void 0 : e.isForumLikeChannel())) return U(), !1;
                 b({
                     refreshThreadIds: !0
@@ -3645,7 +3645,7 @@
             }
             class H extends r.default.Store {
                 initialize() {
-                    this.waitFor(f.default, d.default, _.default, m.default)
+                    this.waitFor(f.default, d.default, I.default, m.default)
                 }
                 getNewThreadCount() {
                     return g
@@ -3655,7 +3655,7 @@
                 }
                 getThreadIds(e, t, n) {
                     let i = e !== E,
-                        l = !(0, I.areSetsEqual)(n, N),
+                        l = !(0, _.areSetsEqual)(n, N),
                         a = t !== S;
                     return E = e, N = n, S = t, i ? b({
                         refreshThreadIds: !0
@@ -3790,121 +3790,6 @@
             });
             var i = n("870346")
         },
-        685841: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return c
-                }
-            });
-            var i = n("446674"),
-                l = n("913144"),
-                a = n("377253");
-            let s = {},
-                o = {};
-
-            function r(e) {
-                if (null == e) return !1;
-                let t = o[e];
-                if (null == t) return !1;
-                let n = a.default.getMessage(e, t.messageId);
-                if (null == n) return !1;
-                s[e] = {
-                    channel: t.channel,
-                    message: n,
-                    shouldMention: t.shouldMention,
-                    showMentionToggle: t.showMentionToggle
-                }, delete o[e]
-            }
-
-            function u() {
-                s = {}, o = {}
-            }
-            class d extends i.default.Store {
-                initialize() {
-                    this.waitFor(a.default)
-                }
-                getPendingReply(e) {
-                    return s[e]
-                }
-            }
-            d.displayName = "PendingReplyStore";
-            var c = new d(l.default, {
-                CREATE_PENDING_REPLY: function(e) {
-                    let {
-                        channel: t,
-                        message: n,
-                        shouldMention: i = !0,
-                        showMentionToggle: l = !0
-                    } = e;
-                    s[t.id] = {
-                        channel: t,
-                        message: n,
-                        shouldMention: i,
-                        showMentionToggle: l
-                    }
-                },
-                CREATE_SHALLOW_PENDING_REPLY: function(e) {
-                    let {
-                        channel: t,
-                        messageId: n,
-                        shouldMention: i = !0,
-                        showMentionToggle: l = !0
-                    } = e;
-                    o[t.id] = {
-                        channel: t,
-                        messageId: n,
-                        shouldMention: i,
-                        showMentionToggle: l
-                    }
-                },
-                SET_PENDING_REPLY_SHOULD_MENTION: function(e) {
-                    let {
-                        channelId: t,
-                        shouldMention: n
-                    } = e;
-                    t in s && (s[t] = {
-                        ...s[t],
-                        shouldMention: n
-                    }), t in o && (o[t] = {
-                        ...o[t],
-                        shouldMention: n
-                    })
-                },
-                DELETE_PENDING_REPLY: function(e) {
-                    let {
-                        channelId: t
-                    } = e;
-                    delete s[t], delete o[t]
-                },
-                CONNECTION_OPEN: u,
-                LOGOUT: u,
-                MESSAGE_DELETE: function(e) {
-                    var t, n, i;
-                    let {
-                        id: l,
-                        channelId: a
-                    } = e;
-                    if ((null === (n = s[a]) || void 0 === n ? void 0 : null === (t = n.message) || void 0 === t ? void 0 : t.id) === l) delete s[a];
-                    else {
-                        if ((null === (i = o[a]) || void 0 === i ? void 0 : i.messageId) !== l) return !1;
-                        delete o[a]
-                    }
-                },
-                CHANNEL_SELECT: function(e) {
-                    let {
-                        channelId: t
-                    } = e;
-                    r(t)
-                },
-                LOAD_MESSAGES_SUCCESS: function(e) {
-                    let {
-                        channelId: t
-                    } = e;
-                    r(t)
-                }
-            })
-        },
         812809: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -3999,8 +3884,8 @@
                 p = n("670902"),
                 f = n("867965"),
                 m = n("884351"),
-                _ = n("804888"),
-                I = n("42203"),
+                I = n("804888"),
+                _ = n("42203"),
                 C = n("474643"),
                 T = n("377253"),
                 A = n("401848"),
@@ -4062,7 +3947,7 @@
                     useDefaultThreadName: p,
                     uploadHandler: f
                 } = e;
-                return a.useCallback(async (e, a, _) => {
+                return a.useCallback(async (e, a, I) => {
                     var T;
                     let A = null == n,
                         E = y(i, l),
@@ -4072,7 +3957,7 @@
                         S = "" !== e ? e : h.default.Messages.THREAD
                     }
                     let g = (0, N.getAutoArchiveDuration)(t),
-                        M = I.default.getChannel(n),
+                        M = _.default.getChannel(n),
                         v = await U(t, () => {
                             let e = null != n ? O.Endpoints.CHANNEL_MESSAGE_THREADS(t.id, n) : O.Endpoints.CHANNEL_THREADS(t.id);
                             return s.default.post({
@@ -4085,11 +3970,11 @@
                                 }
                             })
                         });
-                    v !== M && (u.default.clearDraft(t.id, C.DraftType.ThreadSettings), u.default.clearDraft(t.id, C.DraftType.FirstThreadMessage), null == r || r(v), (A || e.length > 0 || null != a && a.length > 0 || null != _ && _.length > 0) && function(e, t, n, i, l) {
+                    v !== M && (u.default.clearDraft(t.id, C.DraftType.ThreadSettings), u.default.clearDraft(t.id, C.DraftType.FirstThreadMessage), null == r || r(v), (A || e.length > 0 || null != a && a.length > 0 || null != I && I.length > 0) && function(e, t, n, i, l) {
                         if (null != l && null != i && i.length > 0) l(e, i, t, n);
                         else if (null != n && n.length > 0) d.default.sendStickers(e.id, n, t);
                         else d.default.sendMessage(e.id, m.default.parse(e, t))
-                    }(v, e, a, _, f)), c.default.clearAll(t.id, C.DraftType.FirstThreadMessage)
+                    }(v, e, a, I, f)), c.default.clearAll(t.id, C.DraftType.FirstThreadMessage)
                 }, [t, n, i, r, l, o, p, f])
             }
 
@@ -4115,13 +4000,13 @@
                 } = e;
                 return a.useCallback(async (e, a, r) => {
                     let d = 0,
-                        [p, m] = (0, _.default)(e);
+                        [p, m] = (0, I.default)(e);
                     p && (e = m, d = (0, E.addFlag)(d, O.MessageFlags.SUPPRESS_NOTIFICATIONS));
-                    let I = (0, N.getAutoArchiveDuration)(t, null),
+                    let _ = (0, N.getAutoArchiveDuration)(t, null),
                         T = O.Endpoints.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
                         A = {
                             name: n,
-                            auto_archive_duration: I,
+                            auto_archive_duration: _,
                             applied_tags: i,
                             message: {
                                 content: e,
@@ -4183,7 +4068,7 @@
                             null == t.body && n(), p.default.addConditionalChangeListener(() => {
                                 let t = p.default.getAndDeleteMostRecentUserCreatedThreadId();
                                 if (null != t) {
-                                    let i = I.default.getChannel(t);
+                                    let i = _.default.getChannel(t);
                                     return o.default.wait(() => {
                                         null == i ? n() : e(i)
                                     }), !1
@@ -4197,8 +4082,8 @@
                     }
                 }
                 return new Promise((e, t) => {
-                    null == n.body && t(), I.default.addConditionalChangeListener(() => {
-                        let t = I.default.getChannel(n.body.id);
+                    null == n.body && t(), _.default.addConditionalChangeListener(() => {
+                        let t = _.default.getChannel(n.body.id);
                         if (null != t) return o.default.wait(() => {
                             e(t)
                         }), !1
@@ -4220,4 +4105,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94816.5a175ba33d20e66d2eca.js.map
+//# sourceMappingURL=94816.6a8b2e3e8dca2d49821b.js.map
