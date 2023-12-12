@@ -53353,122 +53353,6 @@ html .progress__4ef76 {
     text-align: left
 }
 
-.descriptionContainer__342b3 {
-    margin-top: 24px
-}
-
-.descriptionText__0f081 {
-    margin-bottom: 16px
-}
-
-.descriptionTextChunk_e98ac8 {
-    display: inline-block;
-    opacity: 0;
-    animation: descriptionTextChunkFadeIn_b8a106 1s forwards
-}
-
-@keyframes descriptionTextChunkFadeIn_b8a106 {
-    0% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: .5
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-.countdownStatic_c58da5,
-.countdown_ed561e,
-.countdownWithAnimation_bf56f3 {
-    border-radius: 20px;
-    background: rgba(255, 255, 255, .1);
-    display: inline-block;
-    margin-bottom: 16px
-}
-
-.countdown_ed561e {
-    opacity: 0
-}
-
-.countdownWithAnimation_bf56f3 {
-    transform: scalex(0);
-    transform-origin: left;
-    animation: countdownExpandFromLeft__4e241 1s forwards
-}
-
-@keyframes countdownExpandFromLeft__4e241 {
-    0% {
-        transform: scalex(0)
-    }
-
-    to {
-        transform: scalex(1)
-    }
-}
-
-.countdownText_c71e5c {
-    color: #ffeaa0;
-    padding: 8px 16px;
-    text-transform: uppercase
-}
-
-.countdownTextContainer__3cb4f,
-.countdownTextContainerWithAnimation__1516a {
-    opacity: 0
-}
-
-.countdownTextContainerWithAnimation__1516a {
-    animation: countdownTextFadeIn__2a9bb.5s ease-in forwards;
-    animation-delay: .25s
-}
-
-@keyframes countdownTextFadeIn__2a9bb {
-    0% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-.termsApplyStatic__02539,
-.termsApply__01eef,
-.termsApplyWithAnimation__90c29 {
-    display: table;
-    margin: 0 auto
-}
-
-.termsApply__01eef,
-.termsApplyWithAnimation__90c29 {
-    opacity: 0
-}
-
-.termsApplyWithAnimation__90c29 {
-    animation: TermsApplyFadeIn_c522af.5s ease-in forwards;
-    animation-delay: .25s
-}
-
-.termsApplyLink_db423e {
-    color: var(--white-500);
-    -webkit-text-decoration: underline var(--white-500);
-    text-decoration: underline var(--white-500)
-}
-
-@keyframes TermsApplyFadeIn_c522af {
-    0% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
 .container__1e26b {
     display: flex;
     align-items: center;
@@ -112036,6 +111920,38 @@ html .tabBadge__002b3 {
     justify-content: center
 }
 
+.buttonWide_bc8401 {
+    margin-top: 7px;
+    min-height: 40px;
+    min-width: 315px
+}
+
+.innerButton_bce5f8 {
+    align-items: center;
+    display: flex
+}
+
+.nitroIconSubHeader_d58016 {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px
+}
+
+.termsApplyBodyText__64e4c {
+    text-align: center;
+    max-width: 500px;
+    padding-top: 8px;
+    color: var(--text-normal);
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-underline-offset: 2px
+}
+
+.termsApplyAnchor__07721:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none
+}
+
 .header_df5998 {
     font-size: 20px;
     margin-top: 20px
@@ -113563,6 +113479,31 @@ html .invoiceCancelRow_c1bfe7 {
     padding: 0 6px
 }
 
+.root__89ffb {
+    display: flex;
+    width: 496px
+}
+
+.footer__93fac {
+    justify-content: center;
+    align-items: center
+}
+
+.content_b120d1,
+.footer__93fac {
+    padding: 16px
+}
+
+.footer__93fac button:not(:last-child) {
+    margin-right: 8px
+}
+
+.closeButton_efa717 {
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
 .nitroIconSubHeader__8efbd {
     width: 16px;
     height: 16px;
@@ -113593,121 +113534,6 @@ html .invoiceCancelRow_c1bfe7 {
 .innerButton__9f318 {
     align-items: center;
     display: flex
-}
-
-.nitroIconSubHeader__04f30 {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px
-}
-
-.termsApplyBodyText_f45b74 {
-    text-align: center;
-    max-width: 500px;
-    padding-top: 8px;
-    color: var(--text-normal);
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-    text-underline-offset: 2px
-}
-
-.termsApplyAnchor_fcdbe9:hover {
-    -webkit-text-decoration: none;
-    text-decoration: none
-}
-
-.buttonWide__483cd {
-    margin-top: 7px;
-    min-height: 40px;
-    min-width: 315px
-}
-
-.innerButton__7d545 {
-    align-items: center;
-    display: flex
-}
-
-.trialPill_d04c59 {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background-color: rgba(0, 0, 0, .2);
-    box-shadow: 0 0 32px 32px rgba(0, 0, 0, .2);
-    border-radius: 25px;
-    padding: 2px 8px
-}
-
-.theme-light .trialPill_d04c59 {
-    box-shadow: none;
-    background-color: transparent
-}
-
-.video__47ab5 {
-    width: 100%;
-    background-color: transparent
-}
-
-.header__78150 {
-    width: 85%
-}
-
-.buttonWide_bc8401 {
-    margin-top: 7px;
-    min-height: 40px;
-    min-width: 315px
-}
-
-.innerButton_bce5f8 {
-    align-items: center;
-    display: flex
-}
-
-.nitroIconSubHeader_d58016 {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px
-}
-
-.termsApplyBodyText__64e4c {
-    text-align: center;
-    max-width: 500px;
-    padding-top: 8px;
-    color: var(--text-normal);
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-    text-underline-offset: 2px
-}
-
-.termsApplyAnchor__07721:hover {
-    -webkit-text-decoration: none;
-    text-decoration: none
-}
-
-.root__89ffb {
-    display: flex;
-    width: 496px
-}
-
-.footer__93fac {
-    justify-content: center;
-    align-items: center
-}
-
-.content_b120d1,
-.footer__93fac {
-    padding: 16px
-}
-
-.footer__93fac button:not(:last-child) {
-    margin-right: 8px
-}
-
-.closeButton_efa717 {
-    position: absolute;
-    top: 12px;
-    right: 12px
 }
 
 .learnMoreLink__43492 {
@@ -124297,4 +124123,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.df569c357026a82a62af.css.map*/
+/*# sourceMappingURL=app.12e3da729d77d5dab777.css.map*/
