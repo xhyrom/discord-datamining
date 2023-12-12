@@ -1916,6 +1916,357 @@
   {
     "data": {
       "kind": "user",
+      "id": "2022-09_burst_reactions",
+      "label": "Burst Reactions User Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: User two entry points",
+        "Treatment 2: User Tab UI",
+        "Treatment 4: User Free Bursts",
+        "Treatment 5: User Free Bursts",
+        "Treatment 6: Combined entry point and tabs",
+        "Treatment 7: Combined entry point and tabs + double weekly refills",
+        "Treatment 8: All additional polish",
+        "Treatment 9: All additional polish except notifications",
+        "Treatment 10: The exact same as bucket six, just with a different label",
+        "Treatment 11: New send experience"
+      ],
+      "hash": 1443856828,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled",
+        "hasTabUI",
+        "hasTwoButtonEntryPoint",
+        "hasFreeBursts",
+        "hasUnlimited",
+        "hasBurstToggle"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2022-09_creator_monetization_raven",
+      "label": "Creator Monetization Onboarding v2",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables guild to create Guild Role Subscriptions quickly"
+      ],
+      "hash": 3723449866,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false,
+      "config_keys": [
+        "enableFastMonetizationOnboardingForGuild"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 1000
+                },
+                {
+                  "start": 1000,
+                  "end": 2000
+                },
+                {
+                  "start": 2000,
+                  "end": 3000
+                },
+                {
+                  "start": 3000,
+                  "end": 5000
+                },
+                {
+                  "start": 5000,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "651595875897835540",
+          "1045109153582022727",
+          "1047953830979047455",
+          "84764735832068096"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_creator_monetization_raven_users",
+      "label": "Creator Monetization Onboarding v2 Users",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables users to create Guild Role Subscriptions quickly"
+      ],
+      "hash": 2539540256,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enableFastMonetizationOnboardingForUser"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_free_file_upload_limit",
+      "label": "Free File Upload Limit Increase",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3991298449,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_mobile_account_switcher",
+      "label": "Mobile Account Switcher",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Account Switcher on Mobile",
+        "Treatment 2: Unenroll Account Switcher on Mobile and Clear Local Flag"
+      ],
+      "hash": 2001067746,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_remote_audio_settings",
+      "label": "Remote Audio Settings",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Read/write remote audio settings"
+      ],
+      "hash": 1503364285,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_welcome_header",
+      "label": "Show welcome header for home",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: show welcome header"
+      ],
+      "hash": 683339869,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-10_context_menu_and_new_media_picker",
+      "label": "Context Menu and New Media Picker",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
+        "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
+      ],
+      "hash": 478936943,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled",
+        "persistentGiftButton"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2022-10_guild_raid_messaging",
+      "label": "Raid Alerts",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Reporting Of Raids"
+      ],
+      "hash": 3636231100,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false,
+      "config_keys": [
+        "enableRaidAlerts"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "816784679717044276",
+          "763838479293349899",
+          "435572461912719360",
+          "1044378460296061008",
+          "876918412369088582",
+          "1044721355821678662",
+          "1034492236483792958",
+          "912834371034181642",
+          "809846768074227723",
+          "999116324842246224",
+          "987012965834297405",
+          "942897714956472401",
+          "169256939211980800",
+          "987122927000494131"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-10_h265_dm_call",
+      "label": "Test how h265 works on ios/macos for DM calls",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Calling with H.265"
+      ],
+      "hash": 3916079111,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2022-11_activitiesbashoutcoachmark",
       "label": "Bash Out Coach Mark",
       "description": [
@@ -1933,6 +2284,120 @@
       "aa_mode": false,
       "config_keys": [
         "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-11_clips_experiment",
+      "label": "Clips Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Clips without upsells",
+        "Treatment 2: Clips with upsells",
+        "Treatment 99: Clips 4 da Developerz"
+      ],
+      "hash": 1651184307,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        99
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enableClips",
+        "ignorePlatformRestriction"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2022-11_creator_monetization_onboarding_waitlist",
+      "label": "Creator Monetization Onboarding Waitlist",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables Guilds to (possibly) see the waitlist"
+      ],
+      "hash": 987884927,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false,
+      "config_keys": [
+        "enableWaitlist"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 987884927,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        }
       ]
     }
   },
@@ -2017,6 +2482,75 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-11_desktop_notification_center",
+      "label": "Desktop notification center",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Notification center desktop enabled"
+      ],
+      "hash": 1323079101,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-11_mobile_account_switcher_notifications",
+      "label": "Mobile Account Switcher: Notifications",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable notifications for multiple accounts"
+      ],
+      "hash": 1333727,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "isMultiAccountMobileNotificationsEnabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-11_rtx40xx_gpu_screenshare_with_av1",
+      "label": "Test how AV1 works on windows with RTX40xx GPUs for screenshare",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Screenshare with AV1"
+      ],
+      "hash": 535388300,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "signalAV1Support"
+      ]
     }
   },
   {
@@ -2879,52 +3413,6 @@
         "Treatment 1: enabled"
       ],
       "hash": 268309827,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_birthday_activities_jamspace_tile",
-      "label": "Birthday Activities Whats New Jamspace Tile",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Jamspace tile"
-      ],
-      "hash": 3742269191,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_birthday_activities_whats_new_gdm_tile",
-      "label": "Birthday Activities Whats New GDM Tile",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable GDM tile"
-      ],
-      "hash": 3839121633,
       "buckets": [
         -1,
         0,
@@ -4768,143 +5256,6 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 848173753,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 848173753,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 2,
-      "overrides": {},
-      "overrides_formatted": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "INTERNAL_EMPLOYEE_ONLY"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "TEXT_IN_STAGE_ENABLED"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_ids",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "hash": 1199974293,
       "holdout": {
         "name": null,
@@ -5615,7 +5966,7 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 2507971540,
+      "hash": 3282315774,
       "holdout": {
         "name": null,
         "bucket": null
@@ -5630,14 +5981,6 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 5000
-                },
-                {
-                  "start": 5000,
-                  "end": 9000
-                },
-                {
-                  "start": 9000,
                   "end": 10000
                 }
               ]
@@ -5645,28 +5988,25 @@
           },
           "filters": [
             {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 2507971540,
-              "target": 10000
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            },
+            {
+              "type": "guild_member_count_range",
+              "min_count": 1000,
+              "max_count": null
             }
           ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
         }
       ],
-      "revision": 2,
-      "overrides": {},
+      "revision": 0,
+      "overrides": {
+        "2": [
+          "132251458665054209"
+        ]
+      },
       "overrides_formatted": []
     }
   },
@@ -5696,6 +6036,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-04_birthday_activities_jamspace_tile",
+      "label": "Birthday Activities Whats New Jamspace Tile",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Jamspace tile"
+      ],
+      "hash": 3742269191,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-04_birthday_activities_putt_party_tile",
       "label": "Birthday Activities Whats New Putt Party Tile",
       "description": [
@@ -5704,6 +6067,279 @@
         "Treatment 1: Enable Putt Party tile"
       ],
       "hash": 2616904300,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 2653930115,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "2": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 2780791286,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "281683040739262465",
+          "816784679717044276",
+          "814669604840013874",
+          "834876967656489020",
+          "21154681615024128",
+          "822219052402606132",
+          "877393448309772319",
+          "981258149317185616",
+          "958076720819372044",
+          "876918412369088582",
+          "760598239606341673",
+          "520070086158057513",
+          "910971430122971247",
+          "997637077099364383",
+          "816074230474735666",
+          "852642429105995786",
+          "1016836116273430539"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3510816342,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3674963204,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 100
+                },
+                {
+                  "start": 100,
+                  "end": 200
+                },
+                {
+                  "start": 200,
+                  "end": 300
+                },
+                {
+                  "start": 300,
+                  "end": 400
+                },
+                {
+                  "start": 400,
+                  "end": 600
+                },
+                {
+                  "start": 600,
+                  "end": 800
+                },
+                {
+                  "start": 800,
+                  "end": 1200
+                },
+                {
+                  "start": 1200,
+                  "end": 1600
+                },
+                {
+                  "start": 1600,
+                  "end": 4000
+                },
+                {
+                  "start": 4000,
+                  "end": 6500
+                },
+                {
+                  "start": 6500,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "DISCOVERABLE"
+              ]
+            }
+          ]
+        }
+      ],
+      "revision": 2,
+      "overrides": {
+        "1": [
+          "951951155175489606",
+          "937840859544682529",
+          "953754308971733103",
+          "522477306787397642",
+          "803241158054510612",
+          "647509637821628422",
+          "712111817333407824",
+          "710659351576182915",
+          "302094807046684672",
+          "958150409208365146",
+          "290843998296342529",
+          "595999872222756885",
+          "417739215355510784",
+          "378662079361449994",
+          "877239953174691910",
+          "1009955672546345021",
+          "1011361906616979496",
+          "994727054190854314"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3832113202,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 4,
+      "overrides": {
+        "0": [
+          "814669604840013874"
+        ],
+        "2": [
+          "1064959560890204271"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_birthday_activities_whats_new_gdm_tile",
+      "label": "Birthday Activities Whats New GDM Tile",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable GDM tile"
+      ],
+      "hash": 3839121633,
       "buckets": [
         -1,
         0,
@@ -5954,37 +6590,6 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 2653930115,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "2": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "id": "2023-09_gaming_stats_setup",
       "label": "Gaming stats exposure setup",
       "description": [
@@ -6048,6 +6653,37 @@
           "1113529666989469708"
         ]
       },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3363020987,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 1,
+      "overrides": {},
       "overrides_formatted": []
     }
   },
@@ -6230,6 +6866,75 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2022-12_activities_auto_suggest",
+      "label": "Activities Auto Suggest",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable VC Activities Mini Shelf"
+      ],
+      "hash": 2732395257,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enableCenterControlTrayMiniShelf"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-12_forum_activity",
+      "label": "Increased activity view for Forums, per user",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 828081447,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-12_home_feedback_ux",
+      "label": "Show post feedback for home",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 100: show feedback"
+      ],
+      "hash": 655899426,
+      "buckets": [
+        -1,
+        0,
+        100
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "showFeedback"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "hash": 747043176,
       "holdout": {
@@ -6321,6 +7026,143 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 848173753,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            },
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 848173753,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 2,
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "TEXT_IN_STAGE_ENABLED"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "885418158788345897"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -6429,52 +7271,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2022-09_burst_reactions",
-      "label": "Burst Reactions User Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: User two entry points",
-        "Treatment 2: User Tab UI",
-        "Treatment 4: User Free Bursts",
-        "Treatment 5: User Free Bursts",
-        "Treatment 6: Combined entry point and tabs",
-        "Treatment 7: Combined entry point and tabs + double weekly refills",
-        "Treatment 8: All additional polish",
-        "Treatment 9: All additional polish except notifications",
-        "Treatment 10: The exact same as bucket six, just with a different label",
-        "Treatment 11: New send experience"
-      ],
-      "hash": 1443856828,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled",
-        "hasTabUI",
-        "hasTwoButtonEntryPoint",
-        "hasFreeBursts",
-        "hasUnlimited",
-        "hasBurstToggle"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "hash": 1504498621,
       "holdout": {
@@ -6509,563 +7305,6 @@
       "revision": 2,
       "overrides": {},
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2022-09_creator_monetization_raven",
-      "label": "Creator Monetization Onboarding v2",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables guild to create Guild Role Subscriptions quickly"
-      ],
-      "hash": 3723449866,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false,
-      "config_keys": [
-        "enableFastMonetizationOnboardingForGuild"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 1000
-                },
-                {
-                  "start": 1000,
-                  "end": 2000
-                },
-                {
-                  "start": 2000,
-                  "end": 3000
-                },
-                {
-                  "start": 3000,
-                  "end": 5000
-                },
-                {
-                  "start": 5000,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "651595875897835540",
-          "1045109153582022727",
-          "1047953830979047455",
-          "84764735832068096"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_creator_monetization_raven_users",
-      "label": "Creator Monetization Onboarding v2 Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables users to create Guild Role Subscriptions quickly"
-      ],
-      "hash": 2539540256,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enableFastMonetizationOnboardingForUser"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_free_file_upload_limit",
-      "label": "Free File Upload Limit Increase",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3991298449,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_mobile_account_switcher",
-      "label": "Mobile Account Switcher",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Account Switcher on Mobile",
-        "Treatment 2: Unenroll Account Switcher on Mobile and Clear Local Flag"
-      ],
-      "hash": 2001067746,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_remote_audio_settings",
-      "label": "Remote Audio Settings",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Read/write remote audio settings"
-      ],
-      "hash": 1503364285,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_welcome_header",
-      "label": "Show welcome header for home",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: show welcome header"
-      ],
-      "hash": 683339869,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-10_context_menu_and_new_media_picker",
-      "label": "Context Menu and New Media Picker",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
-        "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
-      ],
-      "hash": 478936943,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled",
-        "persistentGiftButton"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2022-10_guild_raid_messaging",
-      "label": "Raid Alerts",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Reporting Of Raids"
-      ],
-      "hash": 3636231100,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false,
-      "config_keys": [
-        "enableRaidAlerts"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "816784679717044276",
-          "763838479293349899",
-          "435572461912719360",
-          "1044378460296061008",
-          "876918412369088582",
-          "1044721355821678662",
-          "1034492236483792958",
-          "912834371034181642",
-          "809846768074227723",
-          "999116324842246224",
-          "987012965834297405",
-          "942897714956472401",
-          "169256939211980800",
-          "987122927000494131"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-10_h265_dm_call",
-      "label": "Test how h265 works on ios/macos for DM calls",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Calling with H.265"
-      ],
-      "hash": 3916079111,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-11_clips_experiment",
-      "label": "Clips Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Clips without upsells",
-        "Treatment 2: Clips with upsells",
-        "Treatment 99: Clips 4 da Developerz"
-      ],
-      "hash": 1651184307,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        99
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enableClips",
-        "ignorePlatformRestriction"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2022-11_creator_monetization_onboarding_waitlist",
-      "label": "Creator Monetization Onboarding Waitlist",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables Guilds to (possibly) see the waitlist"
-      ],
-      "hash": 987884927,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false,
-      "config_keys": [
-        "enableWaitlist"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 987884927,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "INTERNAL_EMPLOYEE_ONLY"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-11_desktop_notification_center",
-      "label": "Desktop notification center",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Notification center desktop enabled"
-      ],
-      "hash": 1323079101,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-11_mobile_account_switcher_notifications",
-      "label": "Mobile Account Switcher: Notifications",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable notifications for multiple accounts"
-      ],
-      "hash": 1333727,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "isMultiAccountMobileNotificationsEnabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-11_rtx40xx_gpu_screenshare_with_av1",
-      "label": "Test how AV1 works on windows with RTX40xx GPUs for screenshare",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Screenshare with AV1"
-      ],
-      "hash": 535388300,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "signalAV1Support"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-12_activities_auto_suggest",
-      "label": "Activities Auto Suggest",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable VC Activities Mini Shelf"
-      ],
-      "hash": 2732395257,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enableCenterControlTrayMiniShelf"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-12_forum_activity",
-      "label": "Increased activity view for Forums, per user",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 828081447,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-12_home_feedback_ux",
-      "label": "Show post feedback for home",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 100: show feedback"
-      ],
-      "hash": 655899426,
-      "buckets": [
-        -1,
-        0,
-        100
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "showFeedback"
-      ]
     }
   },
   {
@@ -9628,37 +9867,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_mobile_redesign_0g_mini",
-      "label": "Tabs V2 - 0g Mini",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Minimal Channel List",
-        "Treatment 2: Full Width Panel",
-        "Treatment 3: Recent Channels",
-        "Treatment 4: Notification Timer",
-        "Treatment 5: Base redesign"
-      ],
-      "hash": 2911413063,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-08_new_app_command_serving",
       "label": "New Application Command Serving",
       "description": [
@@ -10146,43 +10354,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-09_mobile_redesign_hfu",
-      "label": "Tabs V2 - HFU Iteration",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: DM Tab",
-        "Treatment 2: Launchpad Pull Tab",
-        "Treatment 3: Minimal Channel List",
-        "Treatment 4: Quickswitcher Tab",
-        "Treatment 5: Launchpad Tab",
-        "Treatment 6: Base redesign",
-        "Treatment 7: Full width panel",
-        "Treatment 8: Full width panel (disabled swiping & selected channel highlight)"
-      ],
-      "hash": 3033100557,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-09_mobile_redesign_override_toggles",
       "label": "Tabs V2 - redesign opt-out/in for all",
       "description": [
@@ -10229,64 +10400,6 @@
       "aa_mode": false,
       "config_keys": [
         "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-09_mobile_redesign_panels_existing_users",
-      "label": "Tabs V2 - Panels - Existing Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Merged Server + DM tab",
-        "Treatment 2: Split DM Tab",
-        "Treatment 3: Base redesign"
-      ],
-      "hash": 2137061112,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "showRedesign",
-        "showNewPanels",
-        "isSplitMessagesTab"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-09_mobile_redesign_panels_new_users",
-      "label": "Tabs V2 - Panels - New Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Merged Server + DM tab",
-        "Treatment 2: Split DM Tab",
-        "Treatment 3: Base redesign"
-      ],
-      "hash": 1258152564,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "showRedesign",
-        "showNewPanels",
-        "isSplitMessagesTab"
       ]
     }
   },
@@ -12007,6 +12120,64 @@
   {
     "data": {
       "kind": "guild",
+      "hash": 2507971540,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 5000
+                },
+                {
+                  "start": 5000,
+                  "end": 9000
+                },
+                {
+                  "start": 9000,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2507971540,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 2,
+      "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "hash": 2544556038,
       "holdout": {
         "name": null,
@@ -12226,57 +12397,6 @@
           ]
         }
       ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 2780791286,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "281683040739262465",
-          "816784679717044276",
-          "814669604840013874",
-          "834876967656489020",
-          "21154681615024128",
-          "822219052402606132",
-          "877393448309772319",
-          "981258149317185616",
-          "958076720819372044",
-          "876918412369088582",
-          "760598239606341673",
-          "520070086158057513",
-          "910971430122971247",
-          "997637077099364383",
-          "816074230474735666",
-          "852642429105995786",
-          "1016836116273430539"
-        ]
-      },
-      "overrides_formatted": []
     }
   },
   {
@@ -13050,53 +13170,6 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 3282315774,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "guild_member_count_range",
-              "min_count": 1000,
-              "max_count": null
-            }
-          ]
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "2": [
-          "132251458665054209"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "hash": 3320756132,
       "holdout": {
         "name": null,
@@ -13121,37 +13194,6 @@
         }
       ],
       "revision": 2,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3363020987,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 1,
       "overrides": {},
       "overrides_formatted": []
     }
@@ -13212,37 +13254,6 @@
           "187450744427773963"
         ]
       },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3510816342,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
       "overrides_formatted": []
     }
   },
@@ -13380,105 +13391,6 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 3674963204,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 100
-                },
-                {
-                  "start": 100,
-                  "end": 200
-                },
-                {
-                  "start": 200,
-                  "end": 300
-                },
-                {
-                  "start": 300,
-                  "end": 400
-                },
-                {
-                  "start": 400,
-                  "end": 600
-                },
-                {
-                  "start": 600,
-                  "end": 800
-                },
-                {
-                  "start": 800,
-                  "end": 1200
-                },
-                {
-                  "start": 1200,
-                  "end": 1600
-                },
-                {
-                  "start": 1600,
-                  "end": 4000
-                },
-                {
-                  "start": 4000,
-                  "end": 6500
-                },
-                {
-                  "start": 6500,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "DISCOVERABLE"
-              ]
-            }
-          ]
-        }
-      ],
-      "revision": 2,
-      "overrides": {
-        "1": [
-          "951951155175489606",
-          "937840859544682529",
-          "953754308971733103",
-          "522477306787397642",
-          "803241158054510612",
-          "647509637821628422",
-          "712111817333407824",
-          "710659351576182915",
-          "302094807046684672",
-          "958150409208365146",
-          "290843998296342529",
-          "595999872222756885",
-          "417739215355510784",
-          "378662079361449994",
-          "877239953174691910",
-          "1009955672546345021",
-          "1011361906616979496",
-          "994727054190854314"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "hash": 3738976194,
       "holdout": {
         "name": null,
@@ -13554,44 +13466,6 @@
       ],
       "revision": 0,
       "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3832113202,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 4,
-      "overrides": {
-        "0": [
-          "814669604840013874"
-        ],
-        "2": [
-          "1064959560890204271"
-        ]
-      },
       "overrides_formatted": []
     }
   },
