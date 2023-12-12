@@ -22,7 +22,8 @@
     "aa_mode": false,
     "config_keys": [
       "enableClips",
-      "ignorePlatformRestriction"
+      "ignorePlatformRestriction",
+      "showClipsHeaderEntrypoint"
     ]
   }
 }
