@@ -19427,8 +19427,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -82913,6 +82913,10 @@ input::-webkit-inner-spin-button {
     margin-bottom: 10px
 }
 
+.itemTypeTitleForTallerCard__90049 {
+    padding-left: 8px
+}
+
 .newItemTypeBadge__7e6f7 {
     margin-left: 8px;
     margin-top: 28px
@@ -82993,6 +82997,14 @@ input::-webkit-inner-spin-button {
     .closeWrapper__1e132 {
         width: inherit
     }
+}
+
+.categories__57a0d>.categoryWrapper__042a8 {
+    margin-top: 40px
+}
+
+.categories__57a0d>.categoryWrapper__042a8~.categoryWrapper__042a8 {
+    margin-top: 80px
 }
 
 .modalRoot__71dee {
@@ -83478,9 +83490,7 @@ input::-webkit-inner-spin-button {
 
 .checkmark__2ccd6 {
     width: 100%;
-    color: white;
-    transition: opacity.5s;
-    filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2))
+    transition: opacity.5s
 }
 
 .limitedTimeBadge__19a7e {
@@ -107088,6 +107098,16 @@ html .invoiceCancelRow_a8669b {
     max-width: none
 }
 
+.showAllCheckboxContainer__32ee0 {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px
+}
+
+.showAllCheckbox_be0771 {
+    flex-grow: 0
+}
+
 .tabs__8ef81 {
     display: flex;
     gap: 8px;
@@ -124123,4 +124143,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.adbd5d5dba8dcd989765.css.map*/
+/*# sourceMappingURL=app.a5b1310c2e3ead865d86.css.map*/
