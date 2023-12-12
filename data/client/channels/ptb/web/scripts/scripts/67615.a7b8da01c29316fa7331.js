@@ -1371,15 +1371,14 @@
                     },
                     disconnect() {
                         let e = l.default.getRemoteSessionId();
-                        if (null != e && a.remoteDisconnect(e), (0, u.isVoicePanelEnabled)()) this.selectVoiceChannel(null);
-                        else {
+                        if (null != e && a.remoteDisconnect(e), (0, u.isOldVoiceUIEnabled)()) {
                             let e = o.default.getChannel(_.default.getChannelId()),
                                 t = _.default.getChannelId() === _.default.getVoiceChannelId() && (null == e ? void 0 : e.isThread()) === !0;
                             if (this.selectVoiceChannel(null), s.close(T.PopoutWindowKeys.CHANNEL_CALL_POPOUT), t) {
                                 let e = E.default.getGuildId();
                                 null != e && (0, r.transitionTo)((0, f.previousTextChannelRouteForGuild)(e))
                             }
-                        }
+                        } else this.selectVoiceChannel(null)
                     }
                 }
         },
@@ -23586,7 +23585,7 @@
                 return !1
             }
             n.r(t), n.d(t, {
-                isVoicePanelEnabled: function() {
+                isOldVoiceUIEnabled: function() {
                     return i
                 }
             })
@@ -33949,4 +33948,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.8f1d21df633f10e224d7.js.map
+//# sourceMappingURL=67615.a7b8da01c29316fa7331.js.map
