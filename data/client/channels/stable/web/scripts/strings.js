@@ -6661,9 +6661,9 @@
                 SEASONAL_GIFTING_POPUP_HEADER: "Looking for a holiday gift?",
                 SEASONAL_GIFTING_DM_POPUP_HEADER: "Gift Nitro for the holidays.",
                 SEASONAL_GIFTING_DM_POPUP_BODY: "Send a personalized Nitro gift to spread holiday cheer!",
-                SEASONAL_GIFTING_DM_POPUP_CTA: "Try it out",
                 SEASONAL_GIFTING_MAKE_SOMEONES_DAY_TOOLTIP: "Make someone's day when you send some sweet Nitro their way.",
                 SEASONAL_GIFTING_SEND_GIFT_CTA: "Send gift",
+                SEASONAL_GIFTING_DM_POPUP_CTA: "Try it out",
                 PREMIUM_MARKETING_HERO_HEADER: "Make Discord yours",
                 PREMIUM_MARKETING_HERO_BODY: "Upgrade your emoji, personalize your profile, and stand out in your servers.",
                 PREMIUM_MARKETING_FEATURE_EMOJI_TITLE: "More Emoji Power",
@@ -15066,6 +15066,7 @@
                 COLLECTIBLES_ACCEPT_GIFT: "Accept gift",
                 COLLECTIBLES_FROM_SENDER: "From {sender}",
                 COLLECTIBLES_GIFT_DETAILS: "Gifted by {sender} on {date}",
+                COLLECTIBLES_SEND_ITEM_AS_A_GIFT: "Send item as a gift",
                 COLLECTIBLES_GIFT_COACHMARK_HEADING: "Give the gift of style",
                 COLLECTIBLES_GIFT_COACHMARK_DESC: "Check out the latest profile styles and surprise your friend with a fresh new look.",
                 COLLECTIBLES_GIFT_SEND_ERROR_OWNED: "Hey! Your friend already has this. Try sending something else.",
@@ -18359,7 +18360,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253288", ", Version Hash: ").concat("e1fc03de753ff3351d415c7562250fdb5c274723")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253425", ", Version Hash: ").concat("87bde23a2bf6a48abe7859dceedecaf5991b8eda")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20658,8 +20659,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "253288", "253288"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253288")), _ = 0), _
+                let _ = parseInt((e = "253425", "253425"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253425")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36697,4 +36698,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.d53f400a65926a7873c3.js.map
+//# sourceMappingURL=66318.033cbcfb5d0225fbaa63.js.map

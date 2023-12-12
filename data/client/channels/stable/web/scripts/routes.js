@@ -6150,7 +6150,7 @@
                 },
                 POLLS_NORMAL_BORDER: {
                     [I.DARK]: {
-                        raw: "PRIMARY_260",
+                        raw: "PRIMARY_700",
                         opacity: 1
                     },
                     [I.LIGHT]: {
@@ -6158,11 +6158,11 @@
                         opacity: 1
                     },
                     [I.AMOLED]: {
-                        raw: "PRIMARY_260",
+                        raw: "PRIMARY_700",
                         opacity: 1
                     },
                     [I.DARKER]: {
-                        raw: "PRIMARY_260",
+                        raw: "PRIMARY_700",
                         opacity: 1
                     }
                 },
@@ -6186,7 +6186,7 @@
                 },
                 POLLS_NORMAL_FILL: {
                     [I.DARK]: {
-                        raw: "WHITE_500",
+                        raw: "PRIMARY_530",
                         opacity: 1
                     },
                     [I.LIGHT]: {
@@ -6194,17 +6194,17 @@
                         opacity: 1
                     },
                     [I.AMOLED]: {
-                        raw: "WHITE_500",
+                        raw: "PRIMARY_530",
                         opacity: 1
                     },
                     [I.DARKER]: {
-                        raw: "WHITE_500",
+                        raw: "PRIMARY_530",
                         opacity: 1
                     }
                 },
                 POLLS_NORMAL_LABEL: {
                     [I.DARK]: {
-                        raw: "PRIMARY_600",
+                        raw: "WHITE_500",
                         opacity: 1
                     },
                     [I.LIGHT]: {
@@ -6212,11 +6212,11 @@
                         opacity: 1
                     },
                     [I.AMOLED]: {
-                        raw: "PRIMARY_600",
+                        raw: "WHITE_500",
                         opacity: 1
                     },
                     [I.DARKER]: {
-                        raw: "PRIMARY_600",
+                        raw: "WHITE_500",
                         opacity: 1
                     }
                 },
@@ -12104,10 +12104,10 @@
                 "polls-embed-background": [e.Color.PRIMARY_630, e.Color.PRIMARY_130, e.Color.BRAND_360, e.Color.BRAND_360],
                 "polls-embed-border": [e.Color.PRIMARY_660, e.Color.PRIMARY_200, e.Color.PRIMARY_630, e.Color.PRIMARY_630],
                 "polls-image-normal-border": [e.Color.BLACK_430, e.Color.BLACK_430, e.Color.BLACK_430, e.Color.BLACK_430],
-                "polls-normal-border": [e.Color.PRIMARY_260, e.Color.PRIMARY_260, e.Color.PRIMARY_260, e.Color.PRIMARY_260],
+                "polls-normal-border": [e.Color.PRIMARY_700, e.Color.PRIMARY_260, e.Color.PRIMARY_700, e.Color.PRIMARY_700],
                 "polls-normal-confetti": [e.Color.BRAND_500, e.Color.BRAND_500, e.Color.BRAND_500, e.Color.BRAND_500],
-                "polls-normal-fill": [e.Color.WHITE_500, e.Color.WHITE_500, e.Color.WHITE_500, e.Color.WHITE_500],
-                "polls-normal-label": [e.Color.PRIMARY_600, e.Color.PRIMARY_600, e.Color.PRIMARY_600, e.Color.PRIMARY_600],
+                "polls-normal-fill": [e.Color.PRIMARY_530, e.Color.WHITE_500, e.Color.PRIMARY_530, e.Color.PRIMARY_530],
+                "polls-normal-label": [e.Color.WHITE_500, e.Color.PRIMARY_600, e.Color.WHITE_500, e.Color.WHITE_500],
                 "polls-victor-border": [e.Color.YELLOW_300, e.Color.YELLOW_300, e.Color.YELLOW_300, e.Color.YELLOW_300],
                 "polls-victor-fill": [e.Color.YELLOW_200, e.Color.YELLOW_200, e.Color.YELLOW_200, e.Color.YELLOW_200],
                 "polls-victor-label": [e.Color.PRIMARY_600, e.Color.PRIMARY_600, e.Color.PRIMARY_600, e.Color.PRIMARY_600],
@@ -13139,4 +13139,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.9877d7d8e852067dbd7f.js.map
+//# sourceMappingURL=7273.127bb3093b2efad579d6.js.map
