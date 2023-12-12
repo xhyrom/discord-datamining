@@ -13826,16 +13826,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 useIsBulkBanningExperimentEnabled: function() {
-                    return r
-                },
-                isInMembersSearchV2Experiment: function() {
-                    return u
-                },
-                useMembersSearchV2Experiment: function() {
-                    return o
+                    return s
                 },
                 isInMembersTableSafetySignalsExperiment: function() {
-                    return d
+                    return r
                 }
             });
             var i = n("862205");
@@ -13856,27 +13850,6 @@
                 }),
                 l = (0, i.createExperiment)({
                     kind: "guild",
-                    id: "2023-07_guild_members_search_in_elasticsearch",
-                    label: "Members Search V2 Experiment",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Enable Members Search V2 Backend Only",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "Enable Members Search V2 Backend + Frontend",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                s = (0, i.createExperiment)({
-                    kind: "guild",
                     id: "2023-12_guild_members_table_safety_signal_filters",
                     label: "Guild Members Table Safety Signals",
                     defaultConfig: {
@@ -13890,7 +13863,7 @@
                         }
                     }]
                 }),
-                r = function(e) {
+                s = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
@@ -13906,46 +13879,14 @@
                     });
                     return l
                 },
-                u = function(e) {
-                    let {
-                        autoTrackExposure: t = !1,
-                        disable: n = !1,
-                        location: i = "f03bed_7"
-                    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                        enabled: a
-                    } = l.getCurrentConfig({
-                        guildId: e,
-                        location: i
-                    }, {
-                        autoTrackExposure: t,
-                        disable: n
-                    });
-                    return a
-                },
-                o = function(e) {
-                    let {
-                        autoTrackExposure: t = !1,
-                        disable: n = !1,
-                        location: i = "f03bed_8"
-                    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                        enabled: a
-                    } = l.useExperiment({
-                        guildId: e,
-                        location: i
-                    }, {
-                        autoTrackExposure: t,
-                        disable: n
-                    });
-                    return a
-                },
-                d = function(e) {
+                r = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
                         location: i = "f03bed_9"
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
                         enabled: a
-                    } = s.getCurrentConfig({
+                    } = l.getCurrentConfig({
                         guildId: e,
                         location: i
                     }, {
@@ -33948,4 +33889,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.a7b8da01c29316fa7331.js.map
+//# sourceMappingURL=67615.cb55c0acfbc8a577c7ea.js.map
