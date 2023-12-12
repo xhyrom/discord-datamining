@@ -4605,7 +4605,7 @@
                     gradient: {
                         light: {
                             color: "WHITE_500",
-                            opacity: .1
+                            opacity: .4
                         },
                         dark: {
                             color: "WHITE_500",
@@ -5759,7 +5759,7 @@
                     },
                     gradient: {
                         light: {
-                            color: "BLACK_500",
+                            color: "WHITE_500",
                             opacity: .1
                         },
                         dark: {
@@ -7410,6 +7410,16 @@
                     [I.DARKER]: {
                         raw: "PLUM_11",
                         opacity: .12
+                    },
+                    gradient: {
+                        light: {
+                            color: "WHITE_500",
+                            opacity: .4
+                        },
+                        dark: {
+                            color: "WHITE_500",
+                            opacity: .1
+                        }
                     }
                 },
                 REDESIGN_INPUT_CONTROL_ACTIVE_BG: {
@@ -13139,4 +13149,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.127bb3093b2efad579d6.js.map
+//# sourceMappingURL=7273.c50a5a0e11e7a62c6d63.js.map
