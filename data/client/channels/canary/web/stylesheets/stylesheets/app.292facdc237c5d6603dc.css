@@ -83022,6 +83022,10 @@ input::-webkit-inner-spin-button {
     height: 100%
 }
 
+.shopScrollBackgroundPrimary_bb1f42 {
+    background-color: var(--background-primary)
+}
+
 .itemTypeTitleContainer__58a10 {
     display: flex;
     flex-direction: row
@@ -124284,4 +124288,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b20be02efd7dca38b3d5.css.map*/
+/*# sourceMappingURL=app.292facdc237c5d6603dc.css.map*/
