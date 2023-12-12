@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["96321"], {
+    ["78934"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -152,40 +152,40 @@
                     return I
                 },
                 accountDetailsClose: function() {
-                    return T
-                },
-                disableAccount: function() {
                     return p
                 },
-                saveAccountRequest: function() {
-                    return S
-                },
-                saveAccountChanges: function() {
-                    return C
-                },
-                getHarvestStatus: function() {
+                disableAccount: function() {
                     return h
                 },
+                saveAccountRequest: function() {
+                    return T
+                },
+                saveAccountChanges: function() {
+                    return S
+                },
+                getHarvestStatus: function() {
+                    return C
+                },
                 requestHarvest: function() {
-                    return N
+                    return v
                 },
                 setPendingAvatar: function() {
-                    return v
+                    return N
                 },
                 setPendingGlobalNameName: function() {
                     return g
                 },
                 setPendingAvatarDecoration: function() {
-                    return A
-                },
-                setPendingProfileEffectID: function() {
                     return m
                 },
+                setPendingProfileEffectID: function() {
+                    return A
+                },
                 setSingleTryItOutCollectiblesItem: function() {
-                    return L
+                    return R
                 },
                 clearErrors: function() {
-                    return R
+                    return L
                 },
                 resetPendingAccountChanges: function() {
                     return U
@@ -194,7 +194,7 @@
                     return y
                 },
                 resetAndCloseUserProfileForm: function() {
-                    return P
+                    return O
                 },
                 setDisableSubmit: function() {
                     return D
@@ -219,13 +219,13 @@
                 })
             }
 
-            function T() {
+            function p() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_CLOSE"
                 })
             }
 
-            function p(e, t) {
+            function h(e, t) {
                 let n = t ? _.default.Messages.DELETE_ACCOUNT : _.default.Messages.DISABLE_ACCOUNT,
                     l = t ? f.Endpoints.DELETE_ACCOUNT : f.Endpoints.DISABLE_ACCOUNT;
                 return (0, c.default)(t => i.default.post({
@@ -244,7 +244,7 @@
                     d.default.logoutInternal(), (0, u.transitionTo)(f.Routes.DEFAULT_LOGGED_OUT)
                 })
             }
-            async function S(e) {
+            async function T(e) {
                 let t = await i.default.patch({
                         url: f.Endpoints.ME,
                         oldFormErrors: !0,
@@ -268,7 +268,7 @@
                 }), t
             }
 
-            function C(e) {
+            function S(e) {
                 let {
                     username: t,
                     discriminator: n,
@@ -277,8 +277,8 @@
                     password: u,
                     avatar: d,
                     avatarDecoration: I,
-                    newPassword: T,
-                    globalName: p
+                    newPassword: p,
+                    globalName: h
                 } = e;
                 return o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
@@ -290,8 +290,8 @@
                         password: u,
                         avatar: d,
                         discriminator: n,
-                        global_name: p,
-                        new_password: T,
+                        global_name: h,
+                        new_password: p,
                         ...e
                     };
                     null === I && (o.avatar_decoration_id = null), null != I && (o.avatar_decoration_id = I.id, o.avatar_decoration_sku_id = I.skuId);
@@ -299,7 +299,7 @@
                         a = (0, E.getDevicePushProvider)();
                     null != a && null != s && (o.push_provider = a, o.push_token = s);
                     let c = l.default.get(f.DEVICE_VOIP_TOKEN);
-                    return null != E.DEVICE_PUSH_VOIP_PROVIDER && null != c && (o.push_voip_provider = E.DEVICE_PUSH_VOIP_PROVIDER, o.push_voip_token = c), S(o)
+                    return null != E.DEVICE_PUSH_VOIP_PROVIDER && null != c && (o.push_voip_provider = E.DEVICE_PUSH_VOIP_PROVIDER, o.push_voip_token = c), T(o)
                 }, {
                     checkEnabled: !1,
                     modalProps: {
@@ -324,21 +324,21 @@
                 }), e))
             }
 
-            function h() {
+            function C() {
                 return i.default.get({
                     url: f.Endpoints.USER_HARVEST,
                     oldFormErrors: !0
                 })
             }
 
-            function N() {
+            function v() {
                 return i.default.post({
                     url: f.Endpoints.USER_HARVEST,
                     oldFormErrors: !0
                 })
             }
 
-            function v(e) {
+            function N(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
                     avatar: e
@@ -352,28 +352,28 @@
                 })
             }
 
-            function A(e) {
+            function m(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION",
                     avatarDecoration: e
                 })
             }
 
-            function m(e) {
+            function A(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
                     profileEffectID: e
                 })
             }
 
-            function L(e) {
+            function R(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM",
                     item: e
                 })
             }
 
-            function R() {
+            function L() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_CLEAR_ERRORS"
                 })
@@ -391,7 +391,7 @@
                 })
             }
 
-            function P() {
+            function O() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
                 })
@@ -563,6 +563,40 @@
                         d: "M3 20c0 1.1.9 2 2 2h5.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5V20ZM13.5 22a.5.5 0 0 1-.5-.5v-7c0-.28.22-.5.5-.5h7c.28 0 .5.22.5.5V20a2 2 0 0 1-2 2h-5.5Z",
                         className: u
                     })]
+                })
+            }
+        },
+        811513: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                GroupIcon: function() {
+                    return o
+                }
+            });
+            var i = n("37983");
+            n("884691");
+            var l = n("669491"),
+                r = n("75196");
+            let o = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: o = l.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: u = "",
+                    ...s
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, r.default)(s),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        fill: "string" == typeof o ? o : o.css,
+                        d: "M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z",
+                        className: u
+                    })
                 })
             }
         },
@@ -939,6 +973,27 @@
                 }, [l]), t
             }
         },
+        206625: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return l
+                }
+            });
+            var i = n("884691");
+
+            function l(e, t) {
+                let n = i.useRef(e);
+                return i.useEffect(() => {
+                    function e(e) {
+                        null != n.current && !n.current.contains(e.target) && t()
+                    }
+                    return document.addEventListener("mousedown", e), () => {
+                        document.removeEventListener("mousedown", e)
+                    }
+                }, [n, t]), n
+            }
+        },
         750560: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1112,7 +1167,7 @@
                     baseConfig: d,
                     addClickListener: f,
                     removeClickListener: E
-                } = e, _ = (0, r.useConfettiCannon)(n, s), I = (0, o.default)([u.default], () => u.default.useReducedMotion), T = l.useMemo(() => I ? a : {
+                } = e, _ = (0, r.useConfettiCannon)(n, s), I = (0, o.default)([u.default], () => u.default.useReducedMotion), p = l.useMemo(() => I ? a : {
                     confettiCanvas: n,
                     cannon: _,
                     createConfetti: (e, t) => _.createConfetti({
@@ -1157,7 +1212,7 @@
                     removeClickListener: E
                 }, [f, d, _, n, I, E]);
                 return (0, i.jsx)(c.Provider, {
-                    value: T,
+                    value: p,
                     children: t
                 })
             }
@@ -1204,25 +1259,25 @@
                     return I
                 },
                 setPendingNickname: function() {
-                    return T
-                },
-                setPendingThemeColors: function() {
                     return p
                 },
-                resetPendingMemberChanges: function() {
-                    return S
-                },
-                resetPendingProfileChanges: function() {
-                    return C
-                },
-                resetAllPending: function() {
+                setPendingThemeColors: function() {
                     return h
                 },
+                resetPendingMemberChanges: function() {
+                    return T
+                },
+                resetPendingProfileChanges: function() {
+                    return S
+                },
+                resetAllPending: function() {
+                    return C
+                },
                 clearErrors: function() {
-                    return N
+                    return v
                 },
                 setDisableSubmit: function() {
-                    return v
+                    return N
                 }
             }), n("70102");
             var i = n("872717"),
@@ -1318,45 +1373,45 @@
                 })
             }
 
-            function T(e) {
+            function p(e) {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME",
                     nickname: e
                 })
             }
 
-            function p(e) {
+            function h(e) {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS",
                     themeColors: e
                 })
             }
 
-            function S() {
+            function T() {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
                 })
             }
 
-            function C() {
+            function S() {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
                 })
             }
 
-            function h() {
+            function C() {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
                 })
             }
 
-            function N() {
+            function v() {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
                 })
             }
 
-            function v(e) {
+            function N(e) {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_DISABLE_SUBMIT",
                     disable: e
@@ -1375,30 +1430,30 @@
                 E = n("913144"),
                 _ = n("49111");
             let I = _.FormStates.CLOSED,
-                T = {},
-                p = !1;
+                p = {},
+                h = !1;
+
+            function T() {
+                I = _.FormStates.CLOSED, p = {}, a = null, c = void 0, d = []
+            }
 
             function S() {
-                I = _.FormStates.CLOSED, T = {}, a = null, c = void 0, d = []
+                C(), v(), p = {}, I = _.FormStates.OPEN
             }
 
             function C() {
-                h(), N(), T = {}, I = _.FormStates.OPEN
-            }
-
-            function h() {
                 i = void 0, u = void 0
             }
 
-            function N() {
+            function v() {
                 l = void 0, r = void 0, o = void 0, s = void 0
             }
-            class v extends f.default.Store {
+            class N extends f.default.Store {
                 getFormState() {
                     return I
                 }
                 getErrors() {
-                    return T
+                    return p
                 }
                 showNotice() {
                     return void 0 !== i || void 0 !== l || void 0 !== r || void 0 !== o || void 0 !== u || void 0 !== s
@@ -1444,31 +1499,31 @@
                     return d
                 }
                 getIsDisableSubmit() {
-                    return p
+                    return h
                 }
             }
-            v.displayName = "GuildIdentitySettingsStore";
-            var g = new v(E.default, {
+            N.displayName = "GuildIdentitySettingsStore";
+            var g = new N(E.default, {
                 GUILD_IDENTITY_SETTINGS_INIT: function(e) {
-                    a = e.guild, I = _.FormStates.OPEN, T = {}, c = e.source, d = e.analyticsLocations
+                    a = e.guild, I = _.FormStates.OPEN, p = {}, c = e.source, d = e.analyticsLocations
                 },
-                GUILD_IDENTITY_SETTINGS_CLOSE: S,
+                GUILD_IDENTITY_SETTINGS_CLOSE: T,
                 GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: function() {
-                    C(), S()
+                    S(), T()
                 },
                 GUILD_IDENTITY_SETTINGS_SET_GUILD: function(e) {
-                    a = e.guild, T = {}
+                    a = e.guild, p = {}
                 },
                 GUILD_IDENTITY_SETTINGS_SUBMIT: function() {
-                    I = _.FormStates.SUBMITTING, T = {}
+                    I = _.FormStates.SUBMITTING, p = {}
                 },
                 GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: function(e) {
                     var t;
                     if (I !== _.FormStates.SUBMITTING) return !1;
-                    I = _.FormStates.OPEN, T = null !== (t = e.errors) && void 0 !== t ? t : {}
+                    I = _.FormStates.OPEN, p = null !== (t = e.errors) && void 0 !== t ? t : {}
                 },
                 USER_PROFILE_UPDATE_FAILURE: function(e) {
-                    I = _.FormStates.OPEN, T = e.errors
+                    I = _.FormStates.OPEN, p = e.errors
                 },
                 GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: function(e) {
                     let {
@@ -1506,18 +1561,18 @@
                     } = e;
                     s = t
                 },
-                GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: h,
-                GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: N,
-                GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: C,
-                GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: C,
+                GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: C,
+                GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: v,
+                GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: S,
+                GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: S,
                 GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: function() {
-                    T = {}
+                    p = {}
                 },
                 GUILD_IDENTITY_SETTINGS_SET_DISABLE_SUBMIT: function(e) {
                     let {
                         disable: t
                     } = e;
-                    p = t
+                    h = t
                 }
             })
         },
@@ -1658,6 +1713,131 @@
                     delete r[t.id], delete o[t.id]
                 }
             })
+        },
+        597517: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                hideHotspot: function() {
+                    return o
+                },
+                setHotspotOverride: function() {
+                    return u
+                },
+                clearHotspotOverride: function() {
+                    return s
+                }
+            });
+            var i = n("913144"),
+                l = n("599110"),
+                r = n("49111");
+
+            function o(e) {
+                l.default.track(r.AnalyticEvents.HOTSPOT_HIDDEN, {
+                    hotspot_location: e
+                }), i.default.wait(() => {
+                    i.default.dispatch({
+                        type: "HOTSPOT_HIDE",
+                        location: e
+                    })
+                })
+            }
+
+            function u(e, t) {
+                i.default.dispatch({
+                    type: "HOTSPOT_OVERRIDE_SET",
+                    location: e,
+                    enabled: t
+                })
+            }
+
+            function s(e) {
+                i.default.dispatch({
+                    type: "HOTSPOT_OVERRIDE_CLEAR",
+                    location: e
+                })
+            }
+        },
+        269596: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return c
+                }
+            }), n("222007");
+            var i = n("446674"),
+                l = n("913144"),
+                r = n("197881"),
+                o = n("492397");
+            let u = new Set,
+                s = {};
+            class a extends i.default.PersistedStore {
+                initialize(e) {
+                    null != e && (Array.isArray(e.hiddenHotspots) && (u = new Set(e.hiddenHotspots)), null != e.hotspotOverrides && (s = e.hotspotOverrides))
+                }
+                hasHotspot(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = !t && s[e];
+                    return !(o.CONFERENCE_MODE_ENABLED || r.ProcessArgs.isDisallowPopupsSet()) && (n || !u.has(e))
+                }
+                hasHiddenHotspot(e) {
+                    return u.has(e)
+                }
+                getHotspotOverride(e) {
+                    return s[e]
+                }
+                getState() {
+                    return {
+                        hiddenHotspots: u,
+                        hotspotOverrides: s
+                    }
+                }
+            }
+            a.displayName = "HotspotStore", a.persistKey = "hotspots", a.migrations = [e => ({
+                hiddenHotspots: null != e ? e : [],
+                hotspotOverrides: {}
+            })];
+            var c = new a(l.default, {
+                OVERLAY_INITIALIZE: function(e) {
+                    let {
+                        hiddenHotspots: t
+                    } = e;
+                    u = new Set(t)
+                },
+                HOTSPOT_HIDE: function(e) {
+                    let {
+                        location: t
+                    } = e;
+                    if (u.has(t)) return !1;
+                    u.add(t)
+                },
+                HOTSPOT_OVERRIDE_SET: function(e) {
+                    let {
+                        location: t,
+                        enabled: n
+                    } = e;
+                    s[t] = n
+                },
+                HOTSPOT_OVERRIDE_CLEAR: function(e) {
+                    let {
+                        location: t
+                    } = e;
+                    if (null == s[t]) return !1;
+                    delete s[t]
+                }
+            })
+        },
+        139321: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                HotspotStore: function() {
+                    return r.default
+                }
+            });
+            var i = n("533613");
+            n.es(i, t);
+            var l = n("597517");
+            n.es(l, t);
+            var r = n("269596")
         },
         217145: function(e, t, n) {
             "use strict";
@@ -2146,7 +2326,7 @@
                     return I
                 },
                 PaymentPortalFooter: function() {
-                    return T
+                    return p
                 }
             });
             var i = n("37983"),
@@ -2166,7 +2346,7 @@
                 let {
                     header: _,
                     isLargeModal: I,
-                    stepProps: T
+                    stepProps: p
                 } = function(e) {
                     let {
                         header: t,
@@ -2179,40 +2359,40 @@
                         stepProps: i
                     }
                 }(e), {
-                    step: p,
-                    stepConfigs: S,
-                    setBodyNode: C,
-                    setFooterNode: h,
-                    setModalOverlayNode: N,
-                    setReadySlideId: v
-                } = (0, f.usePaymentContext)(), g = S.find(e => e.key === p);
+                    step: h,
+                    stepConfigs: T,
+                    setBodyNode: S,
+                    setFooterNode: C,
+                    setModalOverlayNode: v,
+                    setReadySlideId: N
+                } = (0, f.usePaymentContext)(), g = T.find(e => e.key === h);
                 l.useEffect(() => {
-                    N(null)
-                }, [p, N]), s(null != g, "Unknown step for current payment flow.");
-                let A = null !== (a = null == g ? void 0 : null === (t = g.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== a && a,
-                    m = null == g ? void 0 : null === (n = g.options) || void 0 === n ? void 0 : n.bodyClassName,
-                    L = void 0 !== I && I ? E.sliderBodyLarge : null == g ? void 0 : null === (r = g.options) || void 0 === r ? void 0 : r.sliderBodyClassName;
+                    v(null)
+                }, [h, v]), s(null != g, "Unknown step for current payment flow.");
+                let m = null !== (a = null == g ? void 0 : null === (t = g.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== a && a,
+                    A = null == g ? void 0 : null === (n = g.options) || void 0 === n ? void 0 : n.bodyClassName,
+                    R = void 0 !== I && I ? E.sliderBodyLarge : null == g ? void 0 : null === (r = g.options) || void 0 === r ? void 0 : r.sliderBodyClassName;
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [null === (c = null == g ? void 0 : null === (u = g.options) || void 0 === u ? void 0 : u.renderHeader) || void 0 === c || c ? _ : null, g.renderStep(T), null == p || A ? null : (0, i.jsxs)(i.Fragment, {
+                    children: [null === (c = null == g ? void 0 : null === (u = g.options) || void 0 === u ? void 0 : u.renderHeader) || void 0 === c || c ? _ : null, g.renderStep(p), null == h || m ? null : (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(d.ModalContent, {
-                            className: o(E.body, m),
+                            className: o(E.body, A),
                             children: (0, i.jsx)(d.Slides, {
-                                activeSlide: p,
+                                activeSlide: h,
                                 centered: !1,
-                                onSlideReady: e => v(e),
-                                children: S.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
+                                onSlideReady: e => N(e),
+                                children: T.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
                                     id: e.key,
                                     children: (0, i.jsx)("form", {
-                                        className: o(E.sliderBody, L),
-                                        ref: e => C(e),
+                                        className: o(E.sliderBody, R),
+                                        ref: e => S(e),
                                         onSubmit: e => e.preventDefault()
                                     })
                                 }, e.key))
                             })
                         }), (0, i.jsx)("div", {
-                            ref: e => h(e)
+                            ref: e => C(e)
                         }), (0, i.jsx)("div", {
-                            ref: e => N(e)
+                            ref: e => v(e)
                         })]
                     })]
                 })
@@ -2227,7 +2407,7 @@
                 return null == n ? null : c.createPortal(t, n)
             }
 
-            function T(e) {
+            function p(e) {
                 let {
                     children: t
                 } = e, {
@@ -2261,24 +2441,24 @@
                 let {
                     initialPlanId: t,
                     followupSKUInfo: I,
-                    onClose: T,
-                    onComplete: p,
-                    onSubscriptionConfirmation: S,
-                    analyticsLocations: C,
-                    analyticsObject: h,
-                    analyticsLocation: N,
-                    analyticsSourceLocation: v,
+                    onClose: p,
+                    onComplete: h,
+                    onSubscriptionConfirmation: T,
+                    analyticsLocations: S,
+                    analyticsObject: C,
+                    analyticsLocation: v,
+                    analyticsSourceLocation: N,
                     isGift: g = !1,
-                    giftMessage: A,
-                    subscriptionTier: m,
-                    trialId: L,
-                    postSuccessGuild: R,
+                    giftMessage: m,
+                    subscriptionTier: A,
+                    trialId: R,
+                    postSuccessGuild: L,
                     openInvoiceId: U,
                     applicationId: y,
-                    referralTrialOfferId: P,
+                    referralTrialOfferId: O,
                     giftRecipient: D,
-                    returnRef: O
-                } = null != e ? e : {}, b = !1, M = (0, l.v4)(), w = a.default.getCurrentUser(), G = (0, f.isPremiumExactly)(w, _.PremiumTypes.TIER_2);
+                    returnRef: P
+                } = null != e ? e : {}, M = !1, b = (0, l.v4)(), w = a.default.getCurrentUser(), x = (0, f.isPremiumExactly)(w, _.PremiumTypes.TIER_2);
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
@@ -2290,48 +2470,48 @@
                         } = n;
                         return (0, i.jsx)(e, {
                             ...r,
-                            loadId: M,
-                            subscriptionTier: m,
-                            skuId: m,
+                            loadId: b,
+                            subscriptionTier: A,
+                            skuId: A,
                             isGift: g,
-                            giftMessage: A,
+                            giftMessage: m,
                             giftRecipient: D,
                             initialPlanId: t,
                             followupSKUInfo: I,
                             onClose: (e, t) => {
-                                l(), null == T || T(e), e && (null == S || S(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !G && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
+                                l(), null == p || p(e), e && (null == T || T(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !x && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
-                                b = !0, null == p || p(), !g && (0, s.setCanPlayWowMoment)(!0)
+                                M = !0, null == h || h(), !g && (0, s.setCanPlayWowMoment)(!0)
                             },
-                            onSubscriptionConfirmation: S,
-                            analyticsLocations: C,
-                            analyticsObject: h,
-                            analyticsLocation: N,
-                            analyticsSourceLocation: v,
-                            trialId: L,
-                            postSuccessGuild: R,
+                            onSubscriptionConfirmation: T,
+                            analyticsLocations: S,
+                            analyticsObject: C,
+                            analyticsLocation: v,
+                            analyticsSourceLocation: N,
+                            trialId: R,
+                            postSuccessGuild: L,
                             planGroup: _.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
                             openInvoiceId: U,
                             applicationId: y,
-                            referralTrialOfferId: P,
-                            returnRef: O
+                            referralTrialOfferId: O,
+                            returnRef: P
                         })
                     }
                 }, {
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
-                        !b && c.default.track(E.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
-                            load_id: M,
+                        !M && c.default.track(E.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
+                            load_id: b,
                             payment_type: E.PurchaseTypeToAnalyticsPaymentType[E.PurchaseTypes.SUBSCRIPTION],
-                            location: null != N ? N : h,
-                            source: v,
+                            location: null != v ? v : C,
+                            source: N,
                             subscription_type: E.SubscriptionTypes.PREMIUM,
                             is_gift: g,
-                            eligible_for_trial: null != L,
+                            eligible_for_trial: null != R,
                             application_id: y,
-                            location_stack: C
-                        }), (0, o.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == T || T(b), b && (null == S || S())
+                            location_stack: S
+                        }), (0, o.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == p || p(M), M && (null == T || T())
                     },
                     onCloseRequest: E.NOOP
                 })
@@ -2359,10 +2539,10 @@
                     return _
                 },
                 maybeFetchPremiumLikelihood: function() {
-                    return T
+                    return p
                 },
                 useMaybeFetchPremiumLikelihood: function() {
-                    return p
+                    return h
                 }
             });
             var i = n("884691"),
@@ -2406,7 +2586,7 @@
                 }
             }
 
-            function T(e) {
+            function p(e) {
                 let {
                     enabled: t,
                     useExpectedValue: n
@@ -2415,10 +2595,10 @@
                 }, {
                     autoTrackExposure: !1
                 }), i = d.default.shouldFetchPremiumLikelihood(), l = s.default.getCurrentUser();
-                S(l, i, t, n)
+                T(l, i, t, n)
             }
 
-            function p(e) {
+            function h(e) {
                 let {
                     enabled: t,
                     useExpectedValue: n
@@ -2428,11 +2608,11 @@
                     autoTrackExposure: !1
                 }), r = (0, l.default)([d.default], () => d.default.shouldFetchPremiumLikelihood()), o = (0, l.default)([s.default], () => s.default.getCurrentUser());
                 i.useEffect(() => {
-                    S(o, r, t, n)
+                    T(o, r, t, n)
                 }, [o, r, t, n])
             }
 
-            function S(e, t, n, i) {
+            function T(e, t, n, i) {
                 null != e && !(0, c.isPremium)(e) && n && (t && I(), i && (!a.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_0) && !a.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_0) && (0, u.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_0), !a.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_2) && !a.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_2) && (0, u.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_2)))
             }
         },
@@ -2699,7 +2879,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return T
                 }
             }), n("424973");
             var i = n("917351"),
@@ -2732,7 +2912,7 @@
                     _()
                 };
 
-            function T() {
+            function p() {
                 var e;
                 let t = null === (e = s.default.frecencyWithoutFetchingLatest.stickerFrecency) || void 0 === e ? void 0 : e.stickers;
                 if (null == t) return !1;
@@ -2741,9 +2921,9 @@
                     recentUses: e.recentUses.map(Number).filter(e => e > 0)
                 })), f.pendingUsages)
             }
-            class p extends r.default.PersistedStore {
+            class h extends r.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(a.default), null != e && (f = e), this.syncWith([a.default], I), this.syncWith([s.default], T)
+                    this.waitFor(a.default), null != e && (f = e), this.syncWith([a.default], I), this.syncWith([s.default], p)
                 }
                 getState() {
                     return f
@@ -2755,8 +2935,8 @@
                     return E
                 }
             }
-            p.displayName = "StickersPersistedStore", p.persistKey = "StickersPersistedStoreV2";
-            var S = new p(o.default, {
+            h.displayName = "StickersPersistedStore", h.persistKey = "StickersPersistedStoreV2";
+            var T = new h(o.default, {
                 STICKER_TRACK_USAGE: e => {
                     let {
                         stickerIds: t
@@ -2793,34 +2973,34 @@
                     return I
                 },
                 setPendingBanner: function() {
-                    return T
-                },
-                setPendingBio: function() {
                     return p
                 },
-                setPendingPronouns: function() {
-                    return S
-                },
-                setPendingAccentColor: function() {
-                    return C
-                },
-                setPendingThemeColors: function() {
+                setPendingBio: function() {
                     return h
                 },
+                setPendingPronouns: function() {
+                    return T
+                },
+                setPendingAccentColor: function() {
+                    return S
+                },
+                setPendingThemeColors: function() {
+                    return C
+                },
                 setTryItOutAvatar: function() {
-                    return N
+                    return v
                 },
                 setTryItOutAvatarDecoration: function() {
-                    return v
+                    return N
                 },
                 setTryItOutProfileEffect: function() {
                     return g
                 },
                 setTryItOutBanner: function() {
-                    return A
+                    return m
                 },
                 setTryItOutThemeColors: function() {
-                    return m
+                    return A
                 }
             });
             var i = n("872717"),
@@ -2893,49 +3073,49 @@
                 })
             }
 
-            function T(e) {
+            function p(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER",
                     banner: e
                 })
             }
 
-            function p(e) {
+            function h(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BIO",
                     bio: e
                 })
             }
 
-            function S(e) {
+            function T(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS",
                     pronouns: e
                 })
             }
 
-            function C(e) {
+            function S(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR",
                     color: e
                 })
             }
 
-            function h(e) {
+            function C(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS",
                     themeColors: e
                 })
             }
 
-            function N(e) {
+            function v(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR",
                     avatar: e
                 }), f(d.AnalyticsPremiumFeatureNames.ANIMATED_AVATAR)
             }
 
-            function v(e) {
+            function N(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION",
                     avatarDecoration: e
@@ -2949,14 +3129,14 @@
                 }), f(d.AnalyticsPremiumFeatureNames.PROFILE_EFFECT)
             }
 
-            function A(e) {
+            function m(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
                     banner: e
                 }), f(d.AnalyticsPremiumFeatureNames.PROFILE_BANNER)
             }
 
-            function m(e) {
+            function A(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
                     themeColors: e
@@ -3046,10 +3226,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 Shine: function() {
-                    return T
+                    return p
                 },
                 default: function() {
-                    return S
+                    return T
                 }
             });
             var i, l, r = n("37983"),
@@ -3070,7 +3250,7 @@
                     default: E.shineInnerDefault,
                     small: E.shineInnerSmall
                 };
-            class T extends o.PureComponent {
+            class p extends o.PureComponent {
                 render() {
                     let {
                         className: e,
@@ -3094,10 +3274,10 @@
                     })
                 }
             }
-            T.defaultProps = {
+            p.defaultProps = {
                 shineSize: "default"
             };
-            let p = e => {
+            let h = e => {
                 let {
                     children: t,
                     className: n,
@@ -3108,23 +3288,23 @@
                     shinePaused: f,
                     buttonShineClassName: _,
                     onlyShineOnHover: I,
-                    ...p
-                } = e, S = o.createRef(), C = (0, d.default)(S), h = !i && !l && !0 !== u && (!I || C);
+                    ...h
+                } = e, T = o.createRef(), S = (0, d.default)(T), C = !i && !l && !0 !== u && (!I || S);
                 return (0, r.jsxs)(c.Button, {
-                    buttonRef: S,
-                    ...p,
+                    buttonRef: T,
+                    ...h,
                     className: s(E.shinyButton, n),
                     disabled: i,
                     submitting: l,
-                    children: [t, h ? (0, r.jsx)(T, {
+                    children: [t, C ? (0, r.jsx)(p, {
                         shinePaused: f,
                         className: s(E.buttonShine, I ? E.onlyShineOnHover : void 0, _),
                         shineSize: a
                     }) : null]
                 })
             };
-            p.ShineSizes = l;
-            var S = p
+            h.ShineSizes = l;
+            var T = h
         },
         191814: function(e, t, n) {
             "use strict";
@@ -3151,6 +3331,34 @@
                 })
             }
             n("884691")
+        },
+        476765: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                uid: function() {
+                    return o
+                },
+                useUID: function() {
+                    return u
+                },
+                UID: function() {
+                    return s
+                }
+            });
+            var i = n("995008"),
+                l = n.n(i),
+                r = n("775560");
+            let o = function() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
+                    return l(e)
+                },
+                u = () => (0, r.useLazyValue)(() => o()),
+                s = e => {
+                    let {
+                        children: t
+                    } = e;
+                    return t(u())
+                }
         },
         109264: function(e, t, n) {
             "use strict";
@@ -3461,6 +3669,57 @@
                     size: 16
                 })
         },
+        155207: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            });
+            var i = n("37983");
+            n("884691");
+            var l = n("469563"),
+                r = n("811513"),
+                o = n("75196"),
+                u = (0, l.replaceIcon)(function(e) {
+                    let {
+                        width: t = 24,
+                        height: n = 24,
+                        color: l = "currentColor",
+                        foreground: r,
+                        ...u
+                    } = e;
+                    return (0, i.jsxs)("svg", {
+                        ...(0, o.default)(u),
+                        width: t,
+                        height: n,
+                        viewBox: "0 0 24 24",
+                        children: [(0, i.jsx)("path", {
+                            className: r,
+                            fill: l,
+                            fillRule: "evenodd",
+                            clipRule: "evenodd",
+                            d: "M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z"
+                        }), (0, i.jsx)("path", {
+                            className: r,
+                            fill: l,
+                            fillRule: "evenodd",
+                            clipRule: "evenodd",
+                            d: "M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z"
+                        }), (0, i.jsx)("path", {
+                            className: r,
+                            fill: l,
+                            d: "M20.0001 20.006H22.0001V19.006C22.0001 16.4433 20.2697 14.4415 17.5213 13.5352C19.0621 14.9127 20.0001 16.8059 20.0001 19.006V20.006Z"
+                        }), (0, i.jsx)("path", {
+                            className: r,
+                            fill: l,
+                            d: "M14.8834 11.9077C16.6657 11.5044 18.0001 9.9077 18.0001 8.00598C18.0001 5.96916 16.4693 4.28218 14.4971 4.0367C15.4322 5.09511 16.0001 6.48524 16.0001 8.00598C16.0001 9.44888 15.4889 10.7742 14.6378 11.8102C14.7203 11.8418 14.8022 11.8743 14.8834 11.9077Z"
+                        })]
+                    })
+                }, r.GroupIcon, void 0, {
+                    size: 24
+                })
+        },
         132755: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -3682,16 +3941,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 FullScreenLayers: function() {
-                    return v
+                    return N
                 },
                 useFullScreenLayerStore: function() {
-                    return S
+                    return T
                 },
                 openFullScreenLayer: function() {
                     return g
                 },
                 closeFullScreenLayer: function() {
-                    return A
+                    return m
                 }
             }), n("222007");
             var i, l, r = n("37983"),
@@ -3705,10 +3964,10 @@
                 E = n("485328"),
                 _ = n("159885"),
                 I = n("983782"),
-                T = n("275495");
-            let p = (0, _.cssValueToNumber)(d.default.FULL_SCREEN_LAYER_ANIMATION_DURATION);
+                p = n("275495");
+            let h = (0, _.cssValueToNumber)(d.default.FULL_SCREEN_LAYER_ANIMATION_DURATION);
             (l = i || (i = {}))[l.ENTERING = 1] = "ENTERING", l[l.ENTERED = 2] = "ENTERED", l[l.EXITING = 3] = "EXITING", l[l.EXITED = 4] = "EXITED";
-            let S = (0, c.default)(e => ({
+            let T = (0, c.default)(e => ({
                 fullScreenLayers: [],
                 addLayer: t => e(e => {
                     let {
@@ -3720,7 +3979,7 @@
                 })
             }));
 
-            function C(e) {
+            function S(e) {
                 let {
                     item: t
                 } = e, n = o.useRef(null);
@@ -3730,7 +3989,7 @@
                             binds: ["esc"],
                             comboKeysBindGlobal: !0,
                             action() {
-                                A(e)
+                                m(e)
                             }
                         }
                     }
@@ -3738,44 +3997,44 @@
                     E.default.disableTemp()
                 }), [t.key]), (0, r.jsx)(t.LayerComponent, {
                     children: (0, r.jsxs)("div", {
-                        className: T.root,
+                        className: p.root,
                         ref: n,
                         children: [(0, r.jsx)("div", {
-                            className: T.drag
+                            className: p.drag
                         }), t.render({
                             transitionState: null != t ? t.transitionState : 3,
-                            closeLayer: () => A(t.key)
+                            closeLayer: () => m(t.key)
                         })]
                     })
                 })
             }
-            let h = {
-                    enter: T.enter,
-                    enterActive: T.enterActive,
-                    enterDone: T.enterDone,
-                    exit: T.exit,
-                    exitActive: T.exitActive,
-                    exitDone: T.exitDone
+            let C = {
+                    enter: p.enter,
+                    enterActive: p.enterActive,
+                    enterDone: p.enterDone,
+                    exit: p.exit,
+                    exitActive: p.exitActive,
+                    exitDone: p.exitDone
                 },
-                N = {
-                    enter: T.enterReducedMotion,
-                    enterActive: T.enterActiveReducedMotion,
-                    enterDone: T.enterDoneReducedMotion,
-                    exit: T.exitReducedMotion,
-                    exitActive: T.exitActiveReducedMotion,
-                    exitDone: T.exitDoneReducedMotion
+                v = {
+                    enter: p.enterReducedMotion,
+                    enterActive: p.enterActiveReducedMotion,
+                    enterDone: p.enterDoneReducedMotion,
+                    exit: p.exitReducedMotion,
+                    exitActive: p.exitActiveReducedMotion,
+                    exitDone: p.exitDoneReducedMotion
                 };
 
-            function v() {
+            function N() {
                 let {
                     reducedMotion: e
-                } = o.useContext(f.AccessibilityPreferencesContext), t = e.enabled, n = t ? N : h, i = S(e => e.fullScreenLayers);
+                } = o.useContext(f.AccessibilityPreferencesContext), t = e.enabled, n = t ? v : C, i = T(e => e.fullScreenLayers);
                 return (0, r.jsx)(a.TransitionGroup, {
                     children: i.map(e => (0, r.jsx)(a.CSSTransition, {
                         classNames: n,
-                        timeout: p,
+                        timeout: h,
                         onEntered: () => {
-                            S.setState({
+                            T.setState({
                                 fullScreenLayers: i.map(t => t.key === e.key ? {
                                     ...t,
                                     transitionState: 2
@@ -3783,7 +4042,7 @@
                             })
                         },
                         unmountOnExit: !0,
-                        children: (0, r.jsx)(C, {
+                        children: (0, r.jsx)(S, {
                             item: e
                         })
                     }, e.key))
@@ -3797,7 +4056,7 @@
                         Layer: i
                     } = t,
                     l = null != n ? n : s();
-                return S.setState(t => ({
+                return T.setState(t => ({
                     fullScreenLayers: [...t.fullScreenLayers, {
                         key: l,
                         transitionState: 1,
@@ -3807,11 +4066,272 @@
                 })), l
             }
 
-            function A(e) {
-                S.setState(t => ({
+            function m(e) {
+                T.setState(t => ({
                     fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
                 }))
             }
+        },
+        713573: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            });
+            var i = n("37983");
+            n("884691");
+            var l = n("414456"),
+                r = n.n(l),
+                o = n("77078"),
+                u = n("254686"),
+                s = n("851706");
+            let a = Object.freeze({
+                    SIZE_10: s.size10,
+                    SIZE_12: s.size12,
+                    SIZE_14: s.size14,
+                    SIZE_16: s.size16,
+                    SIZE_20: s.size20,
+                    SIZE_24: s.size24,
+                    SIZE_32: s.size32
+                }),
+                c = e => {
+                    let {
+                        id: t,
+                        muted: n = !1,
+                        className: l = u.wrapper,
+                        size: s = a.SIZE_14,
+                        selectable: c = !1,
+                        children: d,
+                        color: f,
+                        onClick: E,
+                        onContextMenu: _,
+                        style: I,
+                        title: p,
+                        uppercase: h
+                    } = e;
+                    return (0, i.jsx)(o.H, {
+                        role: null != E ? "button" : void 0,
+                        onClick: E,
+                        onContextMenu: _,
+                        id: t,
+                        className: r(l, {
+                            [u.base]: !0,
+                            [s]: !0,
+                            [u.selectable]: c,
+                            [u.muted]: n,
+                            [u.uppercase]: h
+                        }),
+                        title: p,
+                        style: null != f ? {
+                            ...I,
+                            color: f
+                        } : I,
+                        children: d
+                    })
+                };
+            c.Sizes = a;
+            var d = c
+        },
+        811305: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                Sizes: function() {
+                    return T
+                },
+                default: function() {
+                    return v
+                }
+            }), n("424973"), n("222007");
+            var i = n("37983"),
+                l = n("884691"),
+                r = n("414456"),
+                o = n.n(r),
+                u = n("627445"),
+                s = n.n(u),
+                a = n("77078"),
+                c = n("506885"),
+                d = n("981601"),
+                f = n("766274"),
+                E = n("697218"),
+                _ = n("368121"),
+                I = n("523096"),
+                p = n("587974"),
+                h = n("494101");
+            let T = {
+                SIZE_16: 16,
+                SIZE_24: 24,
+                SIZE_32: 32,
+                SIZE_56: 56
+            };
+
+            function S(e, t) {
+                let n = e instanceof f.default ? e : null != e ? e.user : null;
+                return null != n ? n.id : "user-".concat(t)
+            }
+            class C extends l.PureComponent {
+                renderUsers() {
+                    let {
+                        users: e,
+                        max: t,
+                        renderUser: n = this.defaultRenderUser,
+                        size: l,
+                        extraDetail: r
+                    } = this.props, o = [], u = e.length === t ? e.length : t - 1, s = this.renderMoreUsers(u), a = 0;
+                    for (; a < u && a < e.length;) {
+                        var c;
+                        let t = null == s && null == r && a === e.length - 1,
+                            u = n(e[a], t, a);
+                        o.push(t ? (0, i.jsx)("div", {
+                            className: h.avatarContainer,
+                            children: u
+                        }, S(null !== (c = e[a]) && void 0 !== c ? c : null, a)) : (0, i.jsx)(p.default, {
+                            className: h.avatarContainerMasked,
+                            height: l,
+                            width: l,
+                            mask: p.default.Masks.VOICE_USER_SUMMARY_ITEM,
+                            children: u
+                        }, S(e[a], a))), a++
+                    }
+                    return null != r ? o.push(r) : null != s && o.push(s), o
+                }
+                renderMoreUsers(e) {
+                    let {
+                        max: t,
+                        count: n,
+                        hideMoreUsers: r,
+                        renderMoreUsers: o,
+                        users: u
+                    } = this.props, s = Math.min(e, u.length);
+                    if (!r) {
+                        if (null != n) {
+                            if (n >= t) return (0, i.jsx)(l.Fragment, {
+                                children: o("".concat(t, "+"), t)
+                            }, "more-users");
+                            if (n > u.length) {
+                                let e = n - u.length;
+                                return (0, i.jsx)(l.Fragment, {
+                                    children: o("+".concat(e), e)
+                                }, "more-users")
+                            }
+                        } else if (s < u.length) {
+                            let e = Math.min(u.length - s, 99);
+                            return (0, i.jsx)(l.Fragment, {
+                                children: o("+".concat(e), e)
+                            }, "more-users")
+                        }
+                    }
+                }
+                renderIcon() {
+                    return this.props.renderIcon ? (0, i.jsx)(_.default, {
+                        foreground: h.foreground,
+                        className: h.icon
+                    }) : null
+                }
+                render() {
+                    let {
+                        className: e,
+                        size: t,
+                        users: n,
+                        guildId: l,
+                        showUserPopout: r,
+                        useFallbackUserForPopout: u
+                    } = this.props, {
+                        popoutUserId: f
+                    } = this.state, _ = n.find(e => null != e && e.id === f), I = u && null == E.default.getUser(f);
+                    return (0, i.jsx)(a.Popout, {
+                        position: "right",
+                        preload: null == _ ? void 0 : () => (0, c.default)(_.id, _.getAvatarURL(l, 80), {
+                            guildId: l
+                        }),
+                        shouldShow: !0 === r && null != f,
+                        fixed: !0,
+                        renderPopout: e => (s(null != f, "UserSummaryItem.render - renderPopout: popoutUserId cannot be null"), (0, i.jsx)(d.default, {
+                            ...this.props,
+                            user: I && null != _ ? _ : void 0,
+                            ...e,
+                            userId: f,
+                            guildId: this.props.guildId
+                        })),
+                        onRequestClose: () => this.setState({
+                            popoutUserId: null
+                        }),
+                        children: n => (0, i.jsxs)("div", {
+                            className: o(e, h.container, function() {
+                                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T.SIZE_24;
+                                switch (e) {
+                                    case T.SIZE_16:
+                                        return h.size16;
+                                    case T.SIZE_24:
+                                        return h.size24;
+                                    case T.SIZE_32:
+                                        return h.size32;
+                                    case T.SIZE_56:
+                                        return h.size56;
+                                    default:
+                                        return h.size24
+                                }
+                            }(t)),
+                            ref: this._ref,
+                            ...n,
+                            children: [this.renderIcon(), this.renderUsers()]
+                        })
+                    })
+                }
+                constructor(...e) {
+                    super(...e), this.state = {
+                        popoutUserId: null
+                    }, this._ref = l.createRef(), this.defaultRenderUser = (e, t, n) => {
+                        let {
+                            showUserPopout: l,
+                            guildId: r,
+                            size: o
+                        } = this.props;
+                        if (null == e) {
+                            if (!this.props.showDefaultAvatarsForNullUsers) return (0, i.jsx)("div", {
+                                className: h.emptyUser
+                            });
+                            {
+                                let e = (null != n ? n : 0) % I.default.DEFAULT_AVATARS.length,
+                                    t = I.default.DEFAULT_AVATARS[e];
+                                return (0, i.jsx)("img", {
+                                    src: t,
+                                    alt: "",
+                                    className: h.avatar
+                                })
+                            }
+                        }
+                        let u = (0, i.jsx)("img", {
+                            src: e.getAvatarURL(r, o),
+                            alt: e.username,
+                            className: h.avatar
+                        }, e.id);
+                        return l ? (0, i.jsx)(a.Clickable, {
+                            className: h.clickableAvatar,
+                            onClick: () => {
+                                null != this._ref.current && null != e && this.setState({
+                                    popoutUserId: e.id
+                                })
+                            },
+                            tabIndex: -1,
+                            children: u
+                        }, e.id) : u
+                    }
+                }
+            }
+            C.defaultProps = {
+                max: 10,
+                renderMoreUsers: function(e) {
+                    return (0, i.jsx)("div", {
+                        className: h.moreUsers,
+                        children: e
+                    })
+                },
+                renderIcon: !1,
+                showDefaultAvatarsForNullUsers: !1,
+                size: T.SIZE_24
+            };
+            var v = C
         },
         866190: function(e, t, n) {
             "use strict";
@@ -3968,4 +4488,4 @@
         }
     }
 ]);
-//# sourceMappingURL=96321.ae5c46f196b290d49108.js.map
+//# sourceMappingURL=78934.1b19b5ce8278ae23100c.js.map
