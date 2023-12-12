@@ -23002,13 +23002,13 @@
         },
         115279: function(e, s, n) {
             "use strict";
-            var i, r, o, t, a, f, _, d, u, g, m;
+            var i, r, o, t, a, f, _, d, u, g;
             n.r(s), n.d(s, {
                 EmojiCategoryTypes: function() {
                     return i
                 },
                 GRID_NAVIGATOR_ID: function() {
-                    return v
+                    return m
                 },
                 EmojiCategories: function() {
                     return r
@@ -23017,68 +23017,52 @@
                     return o
                 },
                 INACTIVE_CATEGORY_INDEX: function() {
-                    return c
+                    return v
                 },
                 EmojiSize: function() {
                     return a
                 },
                 EMOJI_PICKER_TAB_PANEL_ID: function() {
-                    return h
+                    return c
                 },
                 EMOJI_PICKER_TAB_ID: function() {
-                    return l
+                    return h
                 },
                 SOUNDBOARD_PICKER_TAB_PANEL_ID: function() {
-                    return y
+                    return l
                 },
                 SOUNDBOARD_PICKER_TAB_ID: function() {
-                    return V
-                },
-                REACTION_PICKER_TAB_PANEL_ID: function() {
-                    return k
-                },
-                REACTION_PICKER_TAB_ID: function() {
-                    return b
-                },
-                SUPER_REACTION_PICKER_TAB_ID: function() {
-                    return w
-                },
-                SuperReactionBalanceLocations: function() {
-                    return f
+                    return y
                 },
                 GIF_PICKER_TAB_PANEL_ID: function() {
-                    return p
+                    return V
                 },
                 GIF_PICKER_TAB_ID: function() {
-                    return D
+                    return k
                 },
                 EMOJI_SIZE_MAP: function() {
-                    return P
+                    return b
                 },
                 EMOJI_ROW_SIZE: function() {
-                    return C
+                    return w
                 }
-            }), (_ = i || (i = {})).GUILD = "GUILD", _.PACK = "PACK", _.UNICODE = "UNICODE", _.RECENT = "RECENT", _.CUSTOM = "CUSTOM", _.SEARCH_RESULTS = "SEARCH_RESULTS", _.FAVORITES = "FAVORITES", _.TOP_GUILD_EMOJI = "TOP_GUILD_EMOJI", _.PREMIUM_UPSELL = "PREMIUM_UPSELL";
-            let v = "emoji-picker-grid";
-            (d = r || (r = {})).RECENT = "recent", d.FAVORITES = "favorites", d.TOP_GUILD_EMOJI = "top guild emoji", d.CUSTOM = "custom", d.PEOPLE = "people", d.NATURE = "nature", d.FOOD = "food", d.ACTIVITY = "activity", d.TRAVEL = "travel", d.OBJECTS = "objects", d.SYMBOLS = "symbols", d.FLAGS = "flags", d.PREMIUM_UPSELL = "premium emoji", (u = o || (o = {})).NONE = "", u.TOP_GUILD_EMOJI = "top_server", u.NEWLY_ADDED_EMOJI = "newly_added", (g = t || (t = {}))[g.EMOJI = 0] = "EMOJI", g[g.NSFW = 1] = "NSFW";
-            let c = -1;
-            (m = a || (a = {}))[m.MEDIUM = 40] = "MEDIUM", m[m.LARGE = 48] = "LARGE";
-            let h = "emoji-picker-tab-panel",
-                l = "emoji-picker-tab",
-                y = "soundboard-picker-tab-panel",
-                V = "soundboard-picker-tab",
-                k = "reaction-picker-tab-panel",
-                b = "reaction-picker-tab",
-                w = "super-reaction-picker-tab";
-            (f || (f = {})).TOOLTIP = "tooltip";
-            let p = "gif-picker-tab-panel",
-                D = "gif-picker-tab",
-                P = {
+            }), (f = i || (i = {})).GUILD = "GUILD", f.PACK = "PACK", f.UNICODE = "UNICODE", f.RECENT = "RECENT", f.CUSTOM = "CUSTOM", f.SEARCH_RESULTS = "SEARCH_RESULTS", f.FAVORITES = "FAVORITES", f.TOP_GUILD_EMOJI = "TOP_GUILD_EMOJI", f.PREMIUM_UPSELL = "PREMIUM_UPSELL";
+            let m = "emoji-picker-grid";
+            (_ = r || (r = {})).RECENT = "recent", _.FAVORITES = "favorites", _.TOP_GUILD_EMOJI = "top guild emoji", _.CUSTOM = "custom", _.PEOPLE = "people", _.NATURE = "nature", _.FOOD = "food", _.ACTIVITY = "activity", _.TRAVEL = "travel", _.OBJECTS = "objects", _.SYMBOLS = "symbols", _.FLAGS = "flags", _.PREMIUM_UPSELL = "premium emoji", (d = o || (o = {})).NONE = "", d.TOP_GUILD_EMOJI = "top_server", d.NEWLY_ADDED_EMOJI = "newly_added", (u = t || (t = {}))[u.EMOJI = 0] = "EMOJI", u[u.NSFW = 1] = "NSFW";
+            let v = -1;
+            (g = a || (a = {}))[g.MEDIUM = 40] = "MEDIUM", g[g.LARGE = 48] = "LARGE";
+            let c = "emoji-picker-tab-panel",
+                h = "emoji-picker-tab",
+                l = "soundboard-picker-tab-panel",
+                y = "soundboard-picker-tab",
+                V = "gif-picker-tab-panel",
+                k = "gif-picker-tab",
+                b = {
                     reaction: 32,
                     default: 44,
                     jumbo: 96
                 },
-                C = 9
+                w = 9
         },
         39616: function(e, s, n) {
             "use strict";
@@ -23168,9 +23152,9 @@
                 S = n("299039"),
                 O = n("858619"),
                 x = n("867805"),
-                T = n("802461"),
-                R = n("26430"),
-                U = n("958706"),
+                U = n("802461"),
+                T = n("26430"),
+                R = n("958706"),
                 N = n("115279"),
                 A = n("397336");
             let L = [N.EmojiCategories.TOP_GUILD_EMOJI.toString(), N.EmojiCategories.FAVORITES.toString(), N.EmojiCategories.RECENT.toString(), N.EmojiCategories.CUSTOM.toString()].concat(x.default.getCategories()),
@@ -23327,7 +23311,7 @@
                     if (this.ensureDisambiguated(), null == this.topEmojis) {
                         var s;
                         let n = Y.get(e),
-                            i = R.default.getTopEmojiIdsByGuildId(e);
+                            i = T.default.getTopEmojiIdsByGuildId(e);
                         if (null == n && null == i) return z;
                         let r = null !== (s = null == n ? void 0 : n.emojiIds) && void 0 !== s ? s : i,
                             o = r.map(e => {
@@ -23371,7 +23355,7 @@
                             id: n,
                             names: i,
                             name: o
-                        } = s, t = null != i && r.some(i, e), a = null != o && e(o), f = null != o && r.some(v.default.getTermsForEmoji(o), e), _ = null != n && r.some(T.default.getCaptionsForEmojiById({
+                        } = s, t = null != i && r.some(i, e), a = null != o && e(o), f = null != o && r.some(v.default.getTermsForEmoji(o), e), _ = null != n && r.some(U.default.getCaptionsForEmojiById({
                             emojiId: n
                         }), e);
                         return t || a || f || _
@@ -23513,7 +23497,7 @@
             }
             class e_ extends f.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(u.default, p.default, w.default, D.default, V.default, k.default, l.default, R.default, C.default), null != e && (F = e), this.syncWith([b.default], eo), this.syncWith([V.default], ef)
+                    this.waitFor(u.default, p.default, w.default, D.default, V.default, k.default, l.default, T.default, C.default), null != e && (F = e), this.syncWith([b.default], eo), this.syncWith([V.default], ef)
                 }
                 getState() {
                     return F
@@ -23595,7 +23579,7 @@
                                 canViewAndUsePackEmoji: a,
                                 forceIncludeExternalGuilds: t
                             });
-                            return i === U.EmojiDisabledReasons.PREMIUM_LOCKED ? e.locked.push(s) : null == i && e.unlocked.push(s), e
+                            return i === R.EmojiDisabledReasons.PREMIUM_LOCKED ? e.locked.push(s) : null == i && e.unlocked.push(s), e
                         }, {
                             unlocked: [],
                             locked: []
@@ -25209,4 +25193,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98086.1f6c2dc2dd33056bcb39.js.map
+//# sourceMappingURL=98086.9295667d7fc218bd525c.js.map

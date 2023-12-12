@@ -12601,40 +12601,6 @@ input[type=checked]:focus-visible+.label__8e2ef {
     width: 124px
 }
 
-.burstNotice_ea6e72 {
-    background-color: var(--background-tertiary);
-    border-radius: 4px;
-    display: flex;
-    padding: 8px;
-    margin: 8px 8px 0;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text-normal);
-    line-height: 16px
-}
-
-.burstNoticeIcon__2bfff {
-    min-width: var(--custom-emoji-picker-constants-emoji-size);
-    height: 24px;
-    margin-right: 8px;
-    margin-top: 2px
-}
-
-.burstNoticeClose_f46652 {
-    width: 16px;
-    height: 16px;
-    color: var(--interactive-normal);
-    cursor: pointer
-}
-
-.burstNoticeClose_f46652:hover {
-    color: var(--interactive-hover)
-}
-
-.burstNoticeContent__3cea1 {
-    flex: 1 1 auto
-}
-
 .banner_f818f0 {
     width: 100%;
     border-radius: 8px;
@@ -12722,10 +12688,6 @@ input[type=checked]:focus-visible+.label__8e2ef {
     width: 100%;
     padding: 0 48px;
     box-sizing: border-box
-}
-
-.button_cd9cbe {
-    flex: 1
 }
 
 .wrapper_cd625e {
@@ -32785,156 +32747,6 @@ html .progress__4ef76 {
     overflow: hidden
 }
 
-.contentWrapper_eab878 {
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-    box-shadow: var(--elevation-stroke), var(--elevation-high);
-    box-sizing: border-box;
-    display: grid;
-    flex: 1 1 auto;
-    grid-template-rows: 24px auto;
-    grid-row-gap: 8px;
-    height: 546px;
-    width: 498px;
-    overflow: hidden;
-    padding-top: 16px;
-    position: relative;
-    z-index: 1
-}
-
-.contentWrapper_eab878.isBurstReactionPicker_b9ca03 {
-    box-shadow: 0 0 0 2px var(--premium-tier-2-purple-for-gradients-2), 0 0 16px var(--premium-tier-2-pink-for-gradients);
-    border-radius: var(--custom-reaction-picker-border-radius)
-}
-
-.nav__2aafa {
-    padding: 0 16px
-}
-
-.navList__8438b {
-    display: flex
-}
-
-.navItem_bd587d {
-    margin-right: 8px
-}
-
-.navButton__0565e {
-    flex: 0 0 auto;
-    border-radius: 4px;
-    color: var(--interactive-normal);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 2px 8px;
-    transition: background-color.1s ease-in-out, color.1s ease-in-out
-}
-
-.navButton__0565e:hover {
-    color: var(--interactive-hover)
-}
-
-.navButtonActive_b003de {
-    background-color: var(--background-accent);
-    color: var(--white-500)
-}
-
-.navButtonActive_b003de:hover {
-    color: var(--white-500)
-}
-
-.navButtonSuperReactActive__01546 {
-    background: linear-gradient(270deg, var(--premium-tier-2-pink-for-gradients)0%, var(--premium-tier-2-pink-for-gradients-2)33.63%, var(--premium-tier-2-purple-for-gradients)100%);
-    color: var(--white-500)
-}
-
-.navButtonSuperReactActive__01546:hover {
-    color: var(--white-500)
-}
-
-.burstReactionTabTooltip__8478c {
-    max-width: 300px
-}
-
-.burstReactionCoachmarkTooltip_e4df14 {
-    padding: 0
-}
-
-.betaTag__403f6 {
-    position: absolute;
-    align-self: center;
-    right: 16px
-}
-
-.sparkleStar__429cc {
-    position: absolute;
-    top: -4px;
-    left: -12px
-}
-
-.sparklePlus__55383 {
-    position: absolute;
-    top: auto;
-    left: auto;
-    bottom: 0;
-    right: 0
-}
-
-.sparkles__65284 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0
-}
-
-.burstReactionTooltip__34a31 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-    width: 250px;
-    text-align: center;
-    padding: 8px
-}
-
-.burstTooltipImage__78e9e {
-    width: 100%;
-    border-radius: 8px
-}
-
-.burstTooltipImageContainer__9a746 {
-    width: 100%;
-    min-height: 140px
-}
-
-.burstTooltipTitle_cc311b {
-    margin: 16px auto 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.burstTooltipTitle_cc311b .nitroWheel__14f2e {
-    width: 16px;
-    min-width: 16px;
-    margin-right: 4px
-}
-
-.burstTooltipButtons__0df29 {
-    margin-top: 16px;
-    display: flex;
-    width: 100%
-}
-
-.burstTooltipButtons__0df29 .button__14887 {
-    flex: 1;
-    flex-basis: 50%
-}
-
-.burstTooltipButtons__0df29 .blankButton__3364c {
-    color: var(--white-500)
-}
-
 .art_fa26ef {
     width: 168px;
     height: 140px
@@ -33885,12 +33697,6 @@ html .progress__4ef76 {
 
 .burstReactionTooltipNitroIcon_fd83fd {
     margin-right: 5px
-}
-
-.burstAnimatedCounter__6c8d3 {
-    font-size: 14px;
-    flex: 1;
-    margin-left: 4px
 }
 
 .burstReactionTooltipUpsellCta__0bb21 {
@@ -34928,22 +34734,6 @@ html .progress__4ef76 {
 .actionTextHelper__154e6 {
     margin-left: 4px;
     text-transform: lowercase
-}
-
-.isBurstReactionPicker__428c0 {
-    border: 2px solid var(--premium-tier-2-purple-for-gradients-2);
-    box-shadow: 0 0 16px rgba(214, 138, 189, .3)
-}
-
-.burstCount__835d0 {
-    display: flex;
-    align-items: center;
-    color: var(--text-normal);
-    padding: 6px 8px
-}
-
-.burstIcon__2b0aa {
-    margin-right: 4px
 }
 
 .wrapper__2e846 {
@@ -114089,26 +113879,6 @@ html .invoiceCancelRow_c1bfe7 {
     padding: 11px 20px
 }
 
-.container__984a9 {
-    width: 320px
-}
-
-.header__2392a {
-    justify-content: center
-}
-
-.description__9909e {
-    margin-bottom: 24px;
-    text-align: center
-}
-
-.buttons__3937b {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 24px
-}
-
 .description__32529 {
     margin-bottom: 16px
 }
@@ -124143,4 +123913,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a5b1310c2e3ead865d86.css.map*/
+/*# sourceMappingURL=app.1e551cbf69a9ef99f113.css.map*/
