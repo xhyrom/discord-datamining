@@ -19423,8 +19423,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -58666,7 +58666,7 @@ html .progress__4ef76 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 4px
 }
 
@@ -83466,15 +83466,16 @@ input::-webkit-inner-spin-button {
 }
 
 .cardText_e9b824 {
-    height: 168px;
-    width: 100%;
+    height: 170px;
+    width: calc(100% + 4px);
     padding: 23px;
     box-sizing: border-box;
     z-index: 1;
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 0
+    bottom: -2px;
+    left: -2px
 }
 
 .cardTextBlur_e2acf1 {
@@ -124288,4 +124289,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.690ec3fb2771b31c71f4.css.map*/
+/*# sourceMappingURL=app.5e19d9dcf476b50237b0.css.map*/
