@@ -5942,6 +5942,7 @@
                 hoverUpsellContainer: "hoverUpsellContainer__425f0",
                 innerBlur: "innerBlur_ed9e8f",
                 innerHover: "innerHover__54e25",
+                innerMask: "innerMask__720e6",
                 lightCardBackground: "lightCardBackground_da94ab",
                 limitedTimeBadge: "limitedTimeBadge__19a7e",
                 premiumWheel: "premiumWheel__02495",
