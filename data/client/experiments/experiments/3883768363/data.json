@@ -33,6 +33,19 @@
     "populations": [
       {
         "buckets": {
+          "4": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      },
+      {
+        "buckets": {
           "3": {
             "rollout": [
               {
@@ -45,7 +58,7 @@
         "filters": []
       }
     ],
-    "revision": 9,
+    "revision": 10,
     "overrides": {},
     "overrides_formatted": []
   }
