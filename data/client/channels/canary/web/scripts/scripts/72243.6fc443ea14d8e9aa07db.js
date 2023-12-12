@@ -18468,23 +18468,27 @@
                 return m().then(n => {
                     var i;
                     let r = null === (i = u.default.getGameForPID(e)) || void 0 === i ? void 0 : i.name,
-                        c = l.default.getGameByName(r);
+                        c = l.default.getGameByName(r),
+                        E = null;
                     return new Promise(i => {
-                        let l = u.default.getOverlayOptionsForPID(e),
-                            E = {
+                        let l = (e, n) => {
+                                d.default.track(p.AnalyticEvents.HOOK_RESULT, {
+                                    game_name: r,
+                                    game_id: null == c ? null : c.id,
+                                    success: n,
+                                    error: e,
+                                    ...t
+                                }), null != E && (clearTimeout(E), E = null), n ? i() : i(e = null != e ? e : "Unknown hook error")
+                            },
+                            f = u.default.getOverlayOptionsForPID(e),
+                            h = {
                                 ...o.DEFAULT_OVERLAY_OPTIONS,
-                                ...l,
+                                ...f,
                                 elevate: u.default.shouldElevateProcessForPID(e)
                             };
-                        null == E.allowHook || E.allowHook ? (n.attachToProcess(e, E, (e, n) => {
-                            d.default.track(p.AnalyticEvents.HOOK_RESULT, {
-                                game_name: r,
-                                game_id: null == c ? null : c.id,
-                                success: n,
-                                error: e,
-                                ...t
-                            }), n ? i() : i(e = null != e ? e : "Unknown hook error")
-                        }), s.default.wait(() => a.default.clearElevatedProcess())) : i("Hook is disabled for this game")
+                        null == h.allowHook || h.allowHook ? (E = setTimeout(() => {
+                            n.cancelAttachToProcess(e), l("Timed out waiting for hook response", !1)
+                        }, 12e4), n.attachToProcess(e, h, l), s.default.wait(() => a.default.clearElevatedProcess())) : i("Hook is disabled for this game")
                     })
                 })
             }
@@ -49479,7 +49483,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "253583"
+                                build_number: "253594"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62750,4 +62754,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.d7d4bb20091897f7b597.js.map
+//# sourceMappingURL=72243.6fc443ea14d8e9aa07db.js.map

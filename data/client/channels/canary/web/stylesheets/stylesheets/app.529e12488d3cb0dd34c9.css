@@ -83494,7 +83494,8 @@ input::-webkit-inner-spin-button {
 
 .description__92b55 {
     margin-top: 4px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    flex: 1
 }
 
 .priceTag__76b4b {
@@ -83571,6 +83572,14 @@ input::-webkit-inner-spin-button {
     transition: opacity.5s
 }
 
+.innerMask__720e6 {
+    -webkit-mask-image: linear-gradient(to bottom, var(--black-500)100%, transparent 100%);
+    mask-image: linear-gradient(to bottom, var(--black-500)100%, transparent 100%);
+    transition: -webkit-mask-image.5s;
+    transition: mask-image.5s;
+    transition: mask-image.5s, -webkit-mask-image.5s
+}
+
 .checkmarkWrapper_f2dab8 {
     position: absolute;
     align-items: center;
@@ -83601,6 +83610,12 @@ input::-webkit-inner-spin-button {
 .shopCard_f7822b:hover .innerBlur_ed9e8f,
 .shopCard_f7822b:focus-within .innerBlur_ed9e8f {
     opacity: 0
+}
+
+.shopCard_f7822b:hover .innerMask__720e6,
+.shopCard_f7822b:focus-within .innerMask__720e6 {
+    -webkit-mask-image: linear-gradient(to bottom, var(--black-500)50%, transparent 95%);
+    mask-image: linear-gradient(to bottom, var(--black-500)50%, transparent 95%)
 }
 
 .shopCard_f7822b:hover .checkmark__2ccd6,
@@ -124278,4 +124293,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2bfbe412309116381d9d.css.map*/
+/*# sourceMappingURL=app.529e12488d3cb0dd34c9.css.map*/
