@@ -14953,6 +14953,7 @@
   "SAFETY_USER_SENTIMENT_FEEDBACK_CONFIRMATION": "\"Thanks for the feedback!\"",
   "COLLECTIBLES_SHOP": "\"Shop\"",
   "COLLECTIBLES_USE_NOW": "\"Use Now\"",
+  "COLLECTIBLES_USE_NOW_SENTENCE_CASE": "\"Use now\"",
   "COLLECTIBLES_CTA_GO_TO_SHOP": "\"Go to Shop\"",
   "COLLECTIBLES_UPSELL_ENTRYPOINT_HEADER": "\"Collect new avatar decorations!\"",
   "COLLECTIBLES_AVAILABLE_FOR_PURCHASE": "\"Available For Purchase\"",
