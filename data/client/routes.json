@@ -4219,7 +4219,10 @@
   },
   "NOTIFICATION_SNAPSHOT": {
     "url": "/users/@me/notification-settings/snapshots/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "RESTORE_NOTIFICATION_SNAPSHOT": {
     "url": "/users/@me/notification-settings/snapshots/:param/restore-guilds",
