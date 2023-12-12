@@ -78198,19 +78198,19 @@ input::-webkit-inner-spin-button {
 }
 
 .slideContentOuterContainerSquished__71b0a {
-    height: calc(100vh - var(--custom-activity-shelf-modal-modal-padding) - var(--custom-activity-shelf-modal-modal-art-height) - var(--custom-activity-shelf-modal-modal-header-height) - var(--custom-activity-shelf-modal-divider-height))
+    height: calc(100vh - var(--custom-activity-shelf-modal-modal-padding) - var(--custom-activity-shelf-modal-modal-art-height) - var(--custom-activity-shelf-modal-modal-header-height) - var(--custom-activity-shelf-modal-divider-height) - var(--custom-activity-shelf-modal-modal-footer-height))
 }
 
 .slideContentOuterContainerSquishedWithDev__86b4a {
-    height: calc(100vh - var(--custom-activity-shelf-modal-modal-padding) - var(--custom-activity-shelf-modal-modal-art-height) - var(--custom-activity-shelf-modal-modal-header-developer-controls-height) - var(--custom-activity-shelf-modal-modal-header-height) - var(--custom-activity-shelf-modal-divider-height))
+    height: calc(100vh - var(--custom-activity-shelf-modal-modal-padding) - var(--custom-activity-shelf-modal-modal-art-height) - var(--custom-activity-shelf-modal-modal-header-developer-controls-height) - var(--custom-activity-shelf-modal-modal-header-height) - var(--custom-activity-shelf-modal-divider-height) - var(--custom-activity-shelf-modal-modal-footer-height))
 }
 
 .slideContentOuterContainerTall_b39131 {
-    height: calc(var(--custom-activity-shelf-modal-modal-max-height) - var(--custom-activity-shelf-modal-modal-header-height) - var(--custom-activity-shelf-modal-divider-height))
+    height: calc(var(--custom-activity-shelf-modal-modal-max-height) - var(--custom-activity-shelf-modal-modal-header-height) - var(--custom-activity-shelf-modal-divider-height) - var(--custom-activity-shelf-modal-modal-footer-height))
 }
 
 .slideContentOuterContainerTallWithDev__99327 {
-    height: calc(var(--custom-activity-shelf-modal-modal-max-height) - var(--custom-activity-shelf-modal-modal-header-height) - var(--custom-activity-shelf-modal-modal-header-developer-controls-height) - var(--custom-activity-shelf-modal-divider-height))
+    height: calc(var(--custom-activity-shelf-modal-modal-max-height) - var(--custom-activity-shelf-modal-modal-header-height) - var(--custom-activity-shelf-modal-modal-header-developer-controls-height) - var(--custom-activity-shelf-modal-divider-height) - var(--custom-activity-shelf-modal-modal-footer-height))
 }
 
 .slideContentOuterContainerNoMetaTextSquished_c22cf7 {
@@ -124046,7 +124046,7 @@ code {
     --custom-activity-shelf-modal-modal-max-width: 1024px;
     --custom-activity-shelf-modal-modal-header-height: 92px;
     --custom-activity-shelf-modal-modal-header-without-description-height: 74px;
-    --custom-activity-shelf-modal-modal-footer-height: 70px;
+    --custom-activity-shelf-modal-modal-footer-height: 50px;
     --custom-activity-shelf-modal-modal-art-height: 64px;
     --custom-activity-shelf-modal-modal-max-height: 720px;
     --custom-activity-shelf-modal-modal-header-developer-controls-height: 176px;
@@ -124290,4 +124290,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c84320246376df3e9394.css.map*/
+/*# sourceMappingURL=app.45d4d70d2e41bc34b882.css.map*/

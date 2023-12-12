@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["84649"], {
+    ["24364"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -2115,12 +2115,12 @@
                     config: T,
                     from: G,
                     to: w
-                }), Y = (0, h.getAvatarSize)(S), W = (0, h.getAvatarSpecs)(S), K = W.status * h.TYPING_WIDTH_RATIO, z = W.status * h.MOBILE_HEIGHT_RATIO, X = null != N ? (W.status * h.TYPING_WIDTH_RATIO - W.status) / 2 : 0, q = W.size - W.status - X - W.offset, Z = W.size - z - W.offset, Q = W.size + Math.ceil(X);
+                }), Y = (0, h.getAvatarSize)(S), W = (0, h.getAvatarSpecs)(S), K = W.status * h.TYPING_WIDTH_RATIO, z = W.status * h.MOBILE_HEIGHT_RATIO, q = null != N ? (W.status * h.TYPING_WIDTH_RATIO - W.status) / 2 : 0, X = W.size - W.status - q - W.offset, Z = W.size - z - W.offset, Q = W.size + Math.ceil(q);
                 return (0, i.jsx)(A, {
                     ...e,
                     ariaLabel: P,
                     ariaHidden: L,
-                    typingOffset: X,
+                    typingOffset: q,
                     specs: W,
                     children: (0, i.jsxs)("svg", {
                         width: Q,
@@ -2167,7 +2167,7 @@
                             }(W.status, W.stroke, l, E),
                             children: e => (0, i.jsxs)(i.Fragment, {
                                 children: [null != y && C(y, l, W, N), (0, i.jsxs)("svg", {
-                                    x: q,
+                                    x: X,
                                     y: Z,
                                     width: K,
                                     height: z,
@@ -6090,7 +6090,7 @@
                         visibleSections: W,
                         totalHeight: K,
                         forceUpdate: z,
-                        masonryComputer: X
+                        masonryComputer: q
                     } = (0, u.useVirtualizedMasonryState)({
                         sections: _,
                         columns: S,
@@ -6106,10 +6106,10 @@
                         paddingHorizontal: L,
                         getScrollerState: B,
                         dir: p
-                    }), q = (0, r.useCallback)(function() {
+                    }), X = (0, r.useCallback)(function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 2;
                         e > V.current.dirty && (V.current.dirty = e, 2 === e ? z() : H(1))
-                    }, [H, V, z]), Z = (0, u.useScrollSpring)(F), Q = (0, r.useCallback)(() => X.itemGrid, [X]), J = (0, r.useCallback)(() => X.coordsMap, [X]), $ = s.useCallback(() => q(), [q]);
+                    }, [H, V, z]), Z = (0, u.useScrollSpring)(F), Q = (0, r.useCallback)(() => q.itemGrid, [q]), J = (0, r.useCallback)(() => q.coordsMap, [q]), $ = s.useCallback(() => X(), [X]);
                     (0, u.useResizeObserverSubscription)({
                         ref: F,
                         key: "container",
@@ -6124,10 +6124,10 @@
                         ...(0, u.getAnimatedScrollHelpers)(F, B, Z)
                     }), [F, B, Q, Z, J]);
                     let ee = (0, r.useCallback)(e => {
-                        q(1), null == G.current ? x(!0) : clearTimeout(G.current), G.current = setTimeout(() => {
+                        X(1), null == G.current ? x(!0) : clearTimeout(G.current), G.current = setTimeout(() => {
                             G.current = null, x(!1)
                         }, 200), null != h && h(e)
-                    }, [h, q]);
+                    }, [h, X]);
                     return (0, i.jsx)("div", {
                         ref: F,
                         onScroll: ee,
@@ -9463,8 +9463,8 @@
                         renderOptionSuffix: W = () => null,
                         "aria-describedby": K,
                         "aria-invalid": z,
-                        "aria-labelledby": X,
-                        "aria-required": q,
+                        "aria-labelledby": q,
+                        "aria-required": X,
                         inputClassNames: Z,
                         centerCaret: Q = !1,
                         onBlur: J,
@@ -9764,9 +9764,9 @@
                                                     isEditing: eh,
                                                     inputRef: eo,
                                                     "aria-describedby": null != K ? K : ei,
-                                                    "aria-required": q,
+                                                    "aria-required": X,
                                                     "aria-invalid": null != z ? z : null != er,
-                                                    "aria-labelledby": null != X ? X : en,
+                                                    "aria-labelledby": null != q ? q : en,
                                                     "aria-expanded": n,
                                                     setInputRef: e => {
                                                         u.current = e, eo.current = e
@@ -10454,11 +10454,11 @@
                     ref: W,
                     width: K,
                     height: z
-                } = (0, f.default)(), X = r.useCallback(e => {
+                } = (0, f.default)(), q = r.useCallback(e => {
                     j !== e && !o && (Y(e), e ? null == R || R() : null == A || A())
-                }, [o, A, R, j]), q = r.useCallback(e => {
-                    j && !e && X(!1)
-                }, [X, j]), Z = (0, h.useIsVisible)(q), Q = r.useCallback(e => {
+                }, [o, A, R, j]), X = r.useCallback(e => {
+                    j && !e && q(!1)
+                }, [q, j]), Z = (0, h.useIsVisible)(X), Q = r.useCallback(e => {
                     if (w(e), G) {
                         var t;
                         null === (t = W.current) || void 0 === t || t.focus()
@@ -10478,10 +10478,10 @@
                     animation: c.Popout.Animation.NONE,
                     shouldShow: j,
                     onRequestOpen: () => {
-                        X(!0)
+                        q(!0)
                     },
                     onRequestClose: () => {
-                        X(!1)
+                        q(!1)
                     },
                     renderPopout: e => {
                         let {
@@ -10524,10 +10524,10 @@
                                 W.current = e, Z.current = e
                             },
                             onClick: o ? void 0 : e => {
-                                r(e), X(!j)
+                                r(e), q(!j)
                             },
                             onKeyDown: e => {
-                                "ArrowDown" === e.key ? X(!0) : "Escape" === e.key && (e.stopPropagation(), X(!1)), u(e)
+                                "ArrowDown" === e.key ? q(!0) : "Escape" === e.key && (e.stopPropagation(), q(!1)), u(e)
                             },
                             ...c,
                             className: a(C.select, s, {
@@ -14069,31 +14069,31 @@
                     return z.createListScroller
                 },
                 ListAuto: function() {
-                    return X.ListAuto
+                    return q.ListAuto
                 },
                 ListNone: function() {
-                    return X.ListNone
+                    return q.ListNone
                 },
                 ListThin: function() {
-                    return X.ListThin
+                    return q.ListThin
                 },
                 List: function() {
-                    return X.ListThin
+                    return q.ListThin
                 },
                 createMasonryListScroller: function() {
-                    return q.createMasonryListScroller
+                    return X.createMasonryListScroller
                 },
                 MasonryListScrollerRef: function() {
-                    return q.MasonryListScrollerRef
+                    return X.MasonryListScrollerRef
                 },
                 RenderSection: function() {
-                    return q.RenderSection
+                    return X.RenderSection
                 },
                 RenderItem: function() {
-                    return q.RenderItem
+                    return X.RenderItem
                 },
                 MasonryListScrollerProps: function() {
-                    return q.MasonryListScrollerProps
+                    return X.MasonryListScrollerProps
                 },
                 MasonryListAuto: function() {
                     return Z.MasonryListAuto
@@ -14438,19 +14438,19 @@
                     return ez.createToast
                 },
                 useToastStore: function() {
-                    return eX.useToastStore
+                    return eq.useToastStore
                 },
                 showToast: function() {
-                    return eX.showToast
+                    return eq.showToast
                 },
                 popToast: function() {
-                    return eX.popToast
+                    return eq.popToast
                 },
                 ToastType: function() {
-                    return eq.ToastType
+                    return eX.ToastType
                 },
                 ToastPosition: function() {
-                    return eq.ToastPosition
+                    return eX.ToastPosition
                 },
                 ToastContainer: function() {
                     return eZ.ToastContainer
@@ -14564,8 +14564,8 @@
                 W = n("228256"),
                 K = n("222163"),
                 z = n("73643"),
-                X = n("433600"),
-                q = n("304549"),
+                q = n("433600"),
+                X = n("304549"),
                 Z = n("384704"),
                 Q = n("71096"),
                 J = n("155823"),
@@ -14618,8 +14618,8 @@
                 eW = n("240353"),
                 eK = n("161814"),
                 ez = n("35672"),
-                eX = n("325236"),
-                eq = n("159350"),
+                eq = n("325236"),
+                eX = n("159350"),
                 eZ = n("371557"),
                 eQ = n("414055"),
                 eJ = n("669491"),
@@ -19201,19 +19201,22 @@
                     return z
                 },
                 PUTT_PARTY_APPLICATION_ID: function() {
-                    return X
+                    return q
                 },
                 KRUNKER_STRIKE_APPLICATION_ID: function() {
-                    return q
+                    return X
                 },
                 COLONIST_APPLICATION_ID: function() {
                     return Z
                 },
-                ImageSizes: function() {
+                EMBEDDED_ACTIVITY_SURVEY_URL: function() {
                     return Q
                 },
-                STAFF_RELEASE_PHASES: function() {
+                ImageSizes: function() {
                     return J
+                },
+                STAFF_RELEASE_PHASES: function() {
+                    return $
                 },
                 ActivityFeedbackReasons: function() {
                     return i
@@ -19237,13 +19240,13 @@
                     return c
                 },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return $
-                },
-                APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
                     return ee
                 },
-                APPLICATIONS_WITH_NO_REFFERER: function() {
+                APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
                     return et
+                },
+                APPLICATIONS_WITH_NO_REFFERER: function() {
+                    return en
                 },
                 WhatsNewSection: function() {
                     return d
@@ -19255,10 +19258,10 @@
                     return f
                 },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return ei
+                    return er
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return er
+                    return es
                 }
             }), n("222007");
             var i, r, s, a, o, l, u, c, d, E, f, h, p, _, S, m, T, g, I, C, v, A, R = n("798609"),
@@ -19284,38 +19287,39 @@
                 W = "879863686565621790",
                 K = "902271654783242291",
                 z = "1037680572660727838",
-                X = "945737671223947305",
-                q = "1011683823555199066",
+                q = "945737671223947305",
+                X = "1011683823555199066",
                 Z = "1106787098452832296",
-                Q = {
+                Q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                J = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                J = ["in_development", "activities_team", "employee_release"];
+                $ = ["in_development", "activities_team", "employee_release"];
             (h = i || (i = {})).FAILED_LOAD = "FAILED_LOAD", h.LAGGING = "LAGGING", h.CONFUSING = "CONFUSING", h.NOT_FUN = "NOT_FUN", h.OTHER = "OTHER", (p = r || (r = {}))[p.PLAY = 0] = "PLAY", p[p.SPECTATE = 1] = "SPECTATE", (_ = s || (s = {})).DESKTOP = "desktop", _.MOBILE = "mobile", (S = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", S.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", S.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", S.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (m = o || (o = {}))[m.UNLOCKED = 0] = "UNLOCKED", m[m.NEEDS_NITRO = 1] = "NEEDS_NITRO", (T = l || (l = {}))[T.NO_UPDATE = 0] = "NO_UPDATE", T[T.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", T[T.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", T[T.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", T[T.USER_JOINED = 4] = "USER_JOINED", T[T.USER_LEFT = 5] = "USER_LEFT", T[T.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (g = u || (u = {}))[g.UNLOCKED = 1] = "UNLOCKED", g[g.PORTRAIT = 2] = "PORTRAIT", g[g.LANDSCAPE = 3] = "LANDSCAPE", (I = c || (c = {}))[I.DIRECTORY = 0] = "DIRECTORY", I[I.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", I[I.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let $ = "activity-shelf",
-                ee = new Set(["755600276941176913", P, b, x]),
-                et = new Set([P, b, x]);
+            let ee = "activity-shelf",
+                et = new Set(["755600276941176913", P, b, x]),
+                en = new Set([P, b, x]);
             (C = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", C.GDM_ACTIVITIES = "GDM_ACTIVITIES", C.PUTT_PARTY = "PUTT_PARTY", C.JAMSPACE_OLD = "JAMSPACE", C.JAMSPACE = "JAMSPACE2", C.POKER = "POKER", C.FREE = "FREE", (v = E || (E = {}))[v.PORTRAIT = 0] = "PORTRAIT", v[v.LANDSCAPE = 1] = "LANDSCAPE", (A = f || (f = {}))[A.FOCUSED = 0] = "FOCUSED", A[A.PIP = 1] = "PIP", A[A.GRID = 2] = "GRID";
-            let en = {
+            let ei = {
                     label_type: R.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                ei = {
+                er = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
                     supported_platforms: [R.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [R.EmbeddedActivitySupportedPlatforms.WEB]: en,
-                        [R.EmbeddedActivitySupportedPlatforms.IOS]: en,
-                        [R.EmbeddedActivitySupportedPlatforms.ANDROID]: en
+                        [R.EmbeddedActivitySupportedPlatforms.WEB]: ei,
+                        [R.EmbeddedActivitySupportedPlatforms.IOS]: ei,
+                        [R.EmbeddedActivitySupportedPlatforms.ANDROID]: ei
                     },
                     has_csp_exception: !1
                 },
-                er = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
+                es = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
         },
         586391: function(e, t, n) {
             "use strict";
@@ -23697,7 +23701,7 @@
                 return null
             }
 
-            function X(e) {
+            function q(e) {
                 let t = {};
                 for (let i in e) {
                     var n;
@@ -23711,12 +23715,12 @@
                 return t
             }
 
-            function q(e) {
+            function X(e) {
                 let {
                     serializedExperimentStore: t,
                     user: n
                 } = e;
-                !P && k(n) && (P = !0), I = t.hasLoadedExperiments, C = t.trackedExposureExperiments, N = t.loadedUserExperiments, y = t.userExperimentOverrides, L = t.guildExperimentOverrides, O = X(t.loadedGuildExperiments), D = {}
+                !P && k(n) && (P = !0), I = t.hasLoadedExperiments, C = t.trackedExposureExperiments, N = t.loadedUserExperiments, y = t.userExperimentOverrides, L = t.guildExperimentOverrides, O = q(t.loadedGuildExperiments), D = {}
             }
 
             function Z() {
@@ -24021,13 +24025,13 @@
                 constructor() {
                     super(), this.trackExposure = H, this.loadCache = () => {
                         let e = this.readSnapshot(er.LATEST_SNAPSHOT_VERSION);
-                        null != e && ("loadedUserExperiments" in e ? (N = e.loadedUserExperiments, O = X(e.loadedGuildExperiments)) : K(e.rawUserExperiments, e.rawGuildExperiments))
+                        null != e && ("loadedUserExperiments" in e ? (N = e.loadedUserExperiments, O = q(e.loadedGuildExperiments)) : K(e.rawUserExperiments, e.rawGuildExperiments))
                     }, this.registerActionHandlers({
                         LOGOUT: Q,
                         LOGIN_SUCCESS: J,
                         CONNECTION_OPEN: W,
                         EXPERIMENTS_FETCH_SUCCESS: W,
-                        OVERLAY_INITIALIZE: q,
+                        OVERLAY_INITIALIZE: X,
                         CACHE_LOADED: this.loadCache,
                         EXPERIMENTS_FETCH_FAILURE: Z,
                         EXPERIMENT_REGISTER_LEGACY: et,
@@ -29739,10 +29743,10 @@
                     return z
                 },
                 PREMIUM_MONTHLY_PLANS: function() {
-                    return X
+                    return q
                 },
                 PREMIUM_SKU_TO_MONTHLY_PLAN: function() {
-                    return q
+                    return X
                 },
                 PREMIUM_SKU_TO_YEARLY_PLAN: function() {
                     return Z
@@ -29922,8 +29926,8 @@
                 W = new Set(["511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"]),
                 K = new Set(["590665532894740483", "944037355453415424", "944037391444738048", "590665538238152709"]),
                 z = new Set(["642251038925127690", "944037208325619722", "944037355453415424", "944037391444738048"]),
-                X = new Set(["978380692553465866", "511651871736201216", "511651880837840896"]),
-                q = Object.freeze({
+                q = new Set(["978380692553465866", "511651871736201216", "511651880837840896"]),
+                X = Object.freeze({
                     "978380684370378762": "978380692553465866",
                     "521846918637420545": "511651871736201216",
                     "521847234246082599": "511651880837840896",
@@ -32203,7 +32207,7 @@
                     return z
                 },
                 VOICE_THREAD_PARENT_CHANNEL_TYPES: function() {
-                    return X
+                    return q
                 },
                 getAccessPermissions: function() {
                     return et
@@ -32318,9 +32322,9 @@
                 W = new Set([E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.ANNOUNCEMENT_THREAD]),
                 K = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE]),
                 z = new Set([E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE]),
-                X = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]);
+                q = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]);
 
-            function q(e) {
+            function X(e) {
                 let t = {};
                 return null == e || e.forEach(e => {
                     t[e.id] = {
@@ -32585,7 +32589,7 @@
                         ownerId: e.owner_id,
                         parent_id: e.parent_id,
                         parentChannelThreadType: void 0,
-                        permissionOverwrites_: q(e.permission_overwrites),
+                        permissionOverwrites_: X(e.permission_overwrites),
                         position_: e.position,
                         rateLimitPerUser_: e.rate_limit_per_user,
                         rawRecipients: null != e.recipients ? e.recipients : [],
@@ -32632,7 +32636,7 @@
                         nsfw_: null !== (r = e.nsfw) && void 0 !== r && r,
                         originChannelId: e.origin_channel_id,
                         parent_id: e.parent_id,
-                        permissionOverwrites_: q(e.permission_overwrites),
+                        permissionOverwrites_: X(e.permission_overwrites),
                         position_: e.position,
                         rateLimitPerUser_: null !== (s = e.rate_limit_per_user) && void 0 !== s ? s : 0,
                         rtcRegion: e.rtc_region,
@@ -32667,7 +32671,7 @@
                         name: null !== (i = e.name) && void 0 !== i ? i : "",
                         nsfw_: null !== (r = e.nsfw) && void 0 !== r && r,
                         parent_id: e.parent_id,
-                        permissionOverwrites_: q(e.permission_overwrites),
+                        permissionOverwrites_: X(e.permission_overwrites),
                         position_: e.position,
                         rateLimitPerUser_: null !== (s = e.rate_limit_per_user) && void 0 !== s ? s : 0,
                         themeColor: e.theme_color,
@@ -32705,7 +32709,7 @@
                         name: null !== (i = e.name) && void 0 !== i ? i : "",
                         nsfw_: null !== (r = e.nsfw) && void 0 !== r && r,
                         parent_id: e.parent_id,
-                        permissionOverwrites_: q(e.permission_overwrites),
+                        permissionOverwrites_: X(e.permission_overwrites),
                         position_: e.position,
                         rateLimitPerUser_: null !== (s = e.rate_limit_per_user) && void 0 !== s ? s : 0,
                         template: e.template,
@@ -34109,8 +34113,8 @@
                 W = !1,
                 K = "",
                 z = !1,
-                X = !1,
-                q = {},
+                q = !1,
+                X = {},
                 Z = {},
                 Q = null,
                 J = null,
@@ -34193,7 +34197,7 @@
                 ee("handleLogout called."), es(), ei(), !(null == e ? void 0 : e.isSwitchingAccount) && et(), u.default.PersistedStore.clearAll({
                     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
                     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-                }), C.default.clearAll(), h.clear(), g.default.clearUser(), d.default.remove(y), L = null, k = (null == e ? void 0 : e.isSwitchingAccount) ? v.LoginStates.LOGGING_IN : v.LoginStates.NONE, x = v.RegistrationStates.NONE, B = "", K = "", j = null, H = !1, z = !1, X = !1, q = {}, Z = {}
+                }), C.default.clearAll(), h.clear(), g.default.clearUser(), d.default.remove(y), L = null, k = (null == e ? void 0 : e.isSwitchingAccount) ? v.LoginStates.LOGGING_IN : v.LoginStates.NONE, x = v.RegistrationStates.NONE, B = "", K = "", j = null, H = !1, z = !1, q = !1, X = {}, Z = {}
             }
             class el extends u.default.Store {
                 initialize() {
@@ -34209,10 +34213,10 @@
                     return z
                 }
                 getVerifyErrors() {
-                    return q
+                    return X
                 }
                 didVerifySucceed() {
-                    return X
+                    return q
                 }
                 getLoginStatus() {
                     return k
@@ -34484,10 +34488,10 @@
                     let {
                         errors: t
                     } = e;
-                    z = !0, X = !1, q = null != t ? t : {}
+                    z = !0, q = !1, X = null != t ? t : {}
                 },
                 VERIFY_SUCCESS: function(e) {
-                    X = !0, z = !1, q = {}, Q = e.verifyingUserId
+                    q = !0, z = !1, X = {}, Q = e.verifyingUserId
                 },
                 START_SESSION: function() {
                     if (0 === Object.keys(Z).length) return !1;
@@ -34824,12 +34828,12 @@
                 y = {}, A = {}, R = {}, P = {}, N = {}, U = {}, D = {}, M = new Set
             }
 
-            function X(e) {
+            function q(e) {
                 for (let t of (z(), e.channels)) H((0, f.deserializeChannel)((0, S.castChannelRecord)(t)));
                 M = new Set(e.guilds.map(e => e.id))
             }
 
-            function q(e) {
+            function X(e) {
                 if (!S.ALL_CHANNEL_TYPES.has(e.channel.type)) return !1;
                 let t = B(e.channel.id);
                 if (null == t) t = e.channel;
@@ -34980,7 +34984,7 @@
                         for (let e of n) H((0, S.castChannelRecord)(e));
                     e.guilds.length, M = new Set(e.guilds.map(e => e.id))
                 },
-                CACHE_LOADED: X,
+                CACHE_LOADED: q,
                 CHANNEL_CREATE: function(e) {
                     H(e.channel)
                 },
@@ -35033,7 +35037,7 @@
                 LOGOUT: function() {
                     z()
                 },
-                OVERLAY_INITIALIZE: X,
+                OVERLAY_INITIALIZE: q,
                 SEARCH_FINISH: function(e) {
                     let {
                         messages: t,
@@ -35048,7 +35052,7 @@
                         t.isPrivate() && n ? U[t.id] = t : H(t)
                     })
                 },
-                THREAD_CREATE: q,
+                THREAD_CREATE: X,
                 THREAD_DELETE: J,
                 THREAD_LIST_SYNC: function(e) {
                     let {
@@ -35058,7 +35062,7 @@
                         S.ALL_CHANNEL_TYPES.has(e.type) && H(e)
                     })
                 },
-                THREAD_UPDATE: q
+                THREAD_UPDATE: X
             })
         },
         86878: function(e, t, n) {
@@ -36358,7 +36362,7 @@
                     return w
                 },
                 default: function() {
-                    return X
+                    return q
                 }
             }), n("222007"), n("702976"), n("424973");
             var i, r, s = n("917351"),
@@ -36795,7 +36799,7 @@
                 }
             }
             z.displayName = "GuildMemberStore";
-            var X = new z(u.default, {
+            var q = new z(u.default, {
                 CONNECTION_OPEN: function(e) {
                     A ? A = !1 : I = {}, v = {}, F(e)
                 },
@@ -37487,8 +37491,8 @@
                 W = n("122530"),
                 K = n("928609"),
                 z = n("891760"),
-                X = n("374363"),
-                q = n("599110"),
+                q = n("374363"),
+                X = n("599110"),
                 Z = n("922932"),
                 Q = n("773336"),
                 J = n("286235"),
@@ -37601,13 +37605,13 @@
                 eW = !1,
                 eK = ec.SoundshareEnableState.NOT_ENABLED,
                 ez = !1,
-                eX = !1;
+                eq = !1;
             K.default.hasPermission(eE.NativePermissionTypes.AUDIO, {
                 showAuthorizationError: !1
             }), K.default.hasPermission(eE.NativePermissionTypes.CAMERA, {
                 showAuthorizationError: !1
             });
-            let eq = new Set,
+            let eX = new Set,
                 eZ = !1,
                 eQ = !1,
                 eJ = {},
@@ -37712,7 +37716,7 @@
                 let s = null !== (r = null == e ? void 0 : e.soundshareSession) && void 0 !== r ? r : "";
                 null == e$[s] && (e$[s] = new Set);
                 let a = null != t && !e$[s].has(t);
-                a && e$[s].add(t), (null == t || a) && q.default.track(ec.AnalyticEvents.SOUNDSHARE_FAILED, {
+                a && e$[s].add(t), (null == t || a) && X.default.track(ec.AnalyticEvents.SOUNDSHARE_FAILED, {
                     soundshare_failure_code: t,
                     soundshare_failure_reason: n,
                     soundshare_failure_will_retry: i,
@@ -37818,7 +37822,7 @@
             function ts() {
                 var e, t;
                 let n = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-                    i = null !== (e = X.default.settings.audioContextSettings) && void 0 !== e ? e : {
+                    i = null !== (e = q.default.settings.audioContextSettings) && void 0 !== e ? e : {
                         user: {},
                         stream: {}
                     };
@@ -37876,7 +37880,7 @@
 
             function tl(e) {
                 let t = e0();
-                q.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
+                X.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
                     echo_cancellation: t.echoCancellation,
                     noise_cancellation: t.noiseCancellation,
                     noise_suppression: t.noiseSuppression,
@@ -37913,7 +37917,7 @@
                         let n = parseInt(t.message.substring(t.message.indexOf(": ") + 1));
                         e = isNaN(n) || 0 === n ? eh.NoiseCancellerError.INITIALIZED : n
                     }
-                    q.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
+                    X.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
                         noise_canceller_error: e
                     }), te({
                         noiseCancellation: !1
@@ -37949,7 +37953,7 @@
                         message: "".concat(t)
                     }
                 } finally {
-                    i.emitChange(), q.default.track(ec.AnalyticEvents.SOUNDSHARE_ENABLE, e)
+                    i.emitChange(), X.default.track(ec.AnalyticEvents.SOUNDSHARE_ENABLE, e)
                 }
             }
             class tp extends S.default.Store {
@@ -38042,7 +38046,7 @@
                                 }
                             })
                         }), e.on(m.BaseConnectionEvent.SoundshareAttached, () => {
-                            (null == s ? void 0 : s.desktopSource) != null && q.default.track(ec.AnalyticEvents.SOUNDSHARE_ATTACHED, (0, y.default)(null == s ? void 0 : s.desktopSource))
+                            (null == s ? void 0 : s.desktopSource) != null && X.default.track(ec.AnalyticEvents.SOUNDSHARE_ATTACHED, (0, y.default)(null == s ? void 0 : s.desktopSource))
                         }), e.on(m.BaseConnectionEvent.SoundshareFailed, e => {
                             let {
                                 failureCode: t,
@@ -38051,7 +38055,7 @@
                             } = e;
                             e6(null == s ? void 0 : s.desktopSource, t, n, i)
                         }), e.on(m.BaseConnectionEvent.SoundshareSpeaking, () => {
-                            (null == s ? void 0 : s.desktopSource) != null && (q.default.track(ec.AnalyticEvents.SOUNDSHARE_TRANSMITTING, (0, y.default)(null == s ? void 0 : s.desktopSource)), null != ea.default.getHookError(ec.MediaEngineHookTypes.SOUND) && I.default.wait(() => I.default.dispatch({
+                            (null == s ? void 0 : s.desktopSource) != null && (X.default.track(ec.AnalyticEvents.SOUNDSHARE_TRANSMITTING, (0, y.default)(null == s ? void 0 : s.desktopSource)), null != ea.default.getHookError(ec.MediaEngineHookTypes.SOUND) && I.default.wait(() => I.default.dispatch({
                                 type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
                             })))
                         });
@@ -38087,7 +38091,7 @@
                                 required: e
                             })
                         }), e.on(m.BaseConnectionEvent.VideoHookInitialize, (e, t, n, i, r, a) => {
-                            (null == s ? void 0 : s.desktopSource) != null && q.default.track(ec.AnalyticEvents.VIDEOHOOK_INITIALIZED, {
+                            (null == s ? void 0 : s.desktopSource) != null && X.default.track(ec.AnalyticEvents.VIDEOHOOK_INITIALIZED, {
                                 backend: e,
                                 format: t,
                                 framebuffer_format: n,
@@ -38097,7 +38101,7 @@
                                 ...(0, y.default)(null == s ? void 0 : s.desktopSource)
                             })
                         }), e.on(m.BaseConnectionEvent.NoiseCancellationError, e => {
-                            e_.warn("noisecancellererror event: ".concat(e)), eW = !0, q.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
+                            e_.warn("noisecancellererror event: ".concat(e)), eW = !0, X.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
                                 noise_canceller_error: e
                             }), I.default.dispatch({
                                 type: "AUDIO_SET_NOISE_SUPPRESSION",
@@ -38110,7 +38114,7 @@
                                 code: e
                             })
                         }), e.on(m.BaseConnectionEvent.VoiceActivityDetectorError, e => {
-                            e_.warn("voiceactivitydetectorerror event: ".concat(e)), q.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
+                            e_.warn("voiceactivitydetectorerror event: ".concat(e)), X.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
                                 noise_canceller_error: e
                             }), I.default.dispatch({
                                 type: "AUDIO_SET_MODE",
@@ -38152,7 +38156,7 @@
                             settings: null
                         })
                     }), eg.on(m.MediaEngineEvent.AudioPermission, e => {
-                        eX = !0, I.default.dispatch({
+                        eq = !0, I.default.dispatch({
                             type: "MEDIA_ENGINE_PERMISSION",
                             kind: "audio",
                             granted: e
@@ -38174,11 +38178,11 @@
                         } catch (t) {
                             "number" == typeof t.status && (e = t.status)
                         }
-                        e_.warn("Watchdog timeout, report submission status: ".concat(null != e ? e : 200)), q.default.track(ec.AnalyticEvents.VOICE_WATCHDOG_TIMEOUT, {
+                        e_.warn("Watchdog timeout, report submission status: ".concat(null != e ? e : 200)), X.default.track(ec.AnalyticEvents.VOICE_WATCHDOG_TIMEOUT, {
                             minidump_submission_error: e
                         })
                     }), eg.on(m.MediaEngineEvent.VideoInputInitialized, e => {
-                        q.default.track(ec.AnalyticEvents.VIDEO_INPUT_INITIALIZED, {
+                        X.default.track(ec.AnalyticEvents.VIDEO_INPUT_INITIALIZED, {
                             device_name: e.description.name,
                             time_to_first_frame_ms: e.initializationTimerExpired ? null : Math.round(1e3 * e.timeToFirstFrame),
                             timed_out: e.initializationTimerExpired,
@@ -38224,7 +38228,7 @@
                         [eh.Features.VIDEO]: eg.supports(eh.Features.VIDEO),
                         [eh.Features.DESKTOP_CAPTURE]: eg.supports(eh.Features.DESKTOP_CAPTURE),
                         [eh.Features.HYBRID_VIDEO]: eg.supports(eh.Features.HYBRID_VIDEO)
-                    }, this.waitFor(et.default, ei.default, er.default, ea.default, eo.default, el.default, K.default.storage, X.default, es.default, A.default)
+                    }, this.waitFor(et.default, ei.default, er.default, ea.default, eo.default, el.default, K.default.storage, q.default, es.default, A.default)
                 }
                 supports(e) {
                     return eg.supports(e)
@@ -38338,17 +38342,17 @@
                 }
                 isLocalVideoAutoDisabled(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eh.MediaEngineContextTypes.DEFAULT;
-                    return t === eh.MediaEngineContextTypes.DEFAULT && eq.has(e)
+                    return t === eh.MediaEngineContextTypes.DEFAULT && eX.has(e)
                 }
                 isAnyLocalVideoAutoDisabled() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eh.MediaEngineContextTypes.DEFAULT;
-                    return e === eh.MediaEngineContextTypes.DEFAULT && eq.size > 0
+                    return e === eh.MediaEngineContextTypes.DEFAULT && eX.size > 0
                 }
                 isMediaFilterSettingLoading() {
                     return ez
                 }
                 isNativeAudioPermissionReady() {
-                    return eX
+                    return eq
                 }
                 getGoLiveSource() {
                     return s
@@ -38601,14 +38605,14 @@
                             break;
                         case ec.RTCConnectionStates.DISCONNECTED:
                             (function() {
-                                if (0 === eq.size) return;
+                                if (0 === eX.size) return;
                                 let e = eh.MediaEngineContextTypes.DEFAULT,
                                     {
                                         disabledLocalVideos: t
                                     } = e0(e);
-                                eq.forEach(n => {
+                                eX.forEach(n => {
                                     E(t[n], "If you are auto-disabled, then you are also disabled."), delete t[n], eg.eachConnection(e => e.setLocalVideoDisabled(n, !1), e)
-                                }), eq.clear(), te({
+                                }), eX.clear(), te({
                                     disabledLocalVideos: t
                                 }, e, !1)
                             })()
@@ -38670,7 +38674,7 @@
                             disabledLocalVideos: p
                         } = e0(l),
                         _ = null !== (t = p[u]) && void 0 !== t && t,
-                        S = eq.has(u),
+                        S = eX.has(u),
                         m = c === ec.VideoToggleState.AUTO_ENABLED || c === ec.VideoToggleState.MANUAL_ENABLED;
                     e_.info("disableVideo=".concat(h, " currentlyDisabled=").concat(_, " currentlyAutoDisabled=").concat(S, ", isVideoShown=").concat(m)), E(!(S && !_), "If you are auto-disabled, then you are also disabled.");
                     let T = h !== _,
@@ -38685,9 +38689,9 @@
                             videoToggleStateMap: v
                         }, l, d), c === ec.VideoToggleState.AUTO_PROBING ? null === (n = eo.default.getRTCConnection()) || void 0 === n || n.pauseStatsCollectionForUser(u, !0) : null === (i = eo.default.getRTCConnection()) || void 0 === i || i.pauseStatsCollectionForUser(u, !1), !eZ && (e_.info("isAutoDisableAllowed=".concat(eZ, " - disabling VideoHealthManager")), null === (s = eo.default.getRTCConnection()) || void 0 === s || null === (r = s.getVideoHealthManager()) || void 0 === r || r.disable()), I) {
                         if (!h && !S || h && !eZ) return;
-                        (0, W.default)(u, h ? eh.VideoToggleReason.AUTO_DISABLE : eh.VideoToggleReason.AUTO_ENABLE, m), h ? eq.add(u) : eq.delete(u)
+                        (0, W.default)(u, h ? eh.VideoToggleReason.AUTO_DISABLE : eh.VideoToggleReason.AUTO_ENABLE, m), h ? eX.add(u) : eX.delete(u)
                     } else C && (S && !h ? (e_.info("disallowing auto-disable for this session because of manual override by user"), eZ = !1, null === (o = eo.default.getRTCConnection()) || void 0 === o || null === (a = o.getVideoHealthManager()) || void 0 === a || a.disable(), (0, W.default)(u, eh.VideoToggleReason.MANUAL_REENABLE, m)) : (0, W.default)(u, h ? eh.VideoToggleReason.MANUAL_DISABLE : eh.VideoToggleReason.MANUAL_ENABLE, m));
-                    g && !h && eq.delete(u), h ? p[u] = !0 : delete p[u], te({
+                    g && !h && eX.delete(u), h ? p[u] = !0 : delete p[u], te({
                         disabledLocalVideos: p
                     }, l, d), eg.eachConnection(e => {
                         var t;
@@ -39072,7 +39076,7 @@
                     } = e, i = t === eE.NativePermissionStates.ACCEPTED;
                     switch (n) {
                         case eE.NativePermissionTypes.AUDIO:
-                            eX = !0, eg.eachConnection(e4);
+                            eq = !0, eg.eachConnection(e4);
                             break;
                         case eE.NativePermissionTypes.CAMERA:
                             !i && eM && e3(!1);
@@ -40405,12 +40409,12 @@
                 K = null,
                 z = {};
 
-            function X(e, t, n) {
+            function q(e, t, n) {
                 let i = e[t];
                 void 0 !== i && (delete e[t], e[n] = i)
             }
 
-            function q(e, t) {
+            function X(e, t) {
                 null != t.lastLaunched ? e.lastLaunched = t.lastLaunched : null != t.start && (e.lastLaunched = t.start)
             }
 
@@ -40557,7 +40561,7 @@
                                 let n = B.gameOverrides[J(e)];
                                 null != n && (n.lastFocused = e.lastFocused)
                             }
-                            return q(t, e), !0
+                            return X(t, e), !0
                         }
                         return !1
                     });
@@ -40570,7 +40574,7 @@
                                 cmdLine: e.cmdLine,
                                 lastFocused: e.lastFocused
                             };
-                            return null != e.id && (t.id = e.id), null != e.nativeProcessObserverId && (t.nativeProcessObserverId = e.nativeProcessObserverId), null != e.name && (t.name = e.name), e.add && (t.add = !0), e.block && (t.block = !0), q(t, e), t
+                            return null != e.id && (t.id = e.id), null != e.nativeProcessObserverId && (t.nativeProcessObserverId = e.nativeProcessObserverId), null != e.name && (t.name = e.name), e.add && (t.add = !0), e.block && (t.block = !0), X(t, e), t
                         }(e))
                     }
                 }), B.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), en(), g.default.setRecentGames(eo().map(e => ei(e))))
@@ -40811,7 +40815,7 @@
                     }
                     n.name = e.newName;
                     let r = J(n);
-                    delete B.gameOverrides[t], B.gameOverrides[r] = n, X(B.enableOverlay, t, r), X(B.enableDetection, t, r), X(V, t, r), B.gamesSeen.forEach(n => {
+                    delete B.gameOverrides[t], B.gameOverrides[r] = n, q(B.enableOverlay, t, r), q(B.enableDetection, t, r), q(V, t, r), B.gamesSeen.forEach(n => {
                         J(n) === t && (n.name = e.newName)
                     });
                     let s = !1;
@@ -41589,7 +41593,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return X
+                    return q
                 }
             }), n("222007"), n("702976");
             var i = n("917351"),
@@ -42092,7 +42096,7 @@
                     H(t)
                 }
             });
-            var X = z
+            var q = z
         },
         697218: function(e, t, n) {
             "use strict";
@@ -45802,7 +45806,7 @@
                 }), [k, C, H, L]);
                 let {
                     visibleItems: z,
-                    listOffset: X
+                    listOffset: q
                 } = r.useMemo(() => {
                     if (-1 === L || -1 === D) return {
                         visibleItems: null,
@@ -45858,15 +45862,15 @@
                         visibleItems: i,
                         listOffset: n
                     }
-                }, [w, x, k, F, u, c, d, f, E, D, Y, C, h, G, L]), q = r.useMemo(() => {
+                }, [w, x, k, F, u, c, d, f, E, D, Y, C, h, G, L]), X = r.useMemo(() => {
                     var e, t, n;
                     return {
-                        top: X,
+                        top: q,
                         right: null !== (e = null == u ? void 0 : u[1]) && void 0 !== e ? e : 0,
                         bottom: null !== (t = null == u ? void 0 : u[2]) && void 0 !== t ? t : 0,
                         left: null !== (n = null == u ? void 0 : u[3]) && void 0 !== n ? n : 0
                     }
-                }, [X, u]), Z = r.useMemo(() => ({
+                }, [q, u]), Z = r.useMemo(() => ({
                     height: H
                 }), [H]), Q = A ? o.AdvancedScrollerNone : o.AdvancedScrollerThin;
                 return (0, i.jsxs)(Q, {
@@ -45877,7 +45881,7 @@
                     children: [(0, i.jsx)("div", {
                         role: O,
                         className: l.listItems,
-                        style: q,
+                        style: X,
                         children: z
                     }), (0, i.jsx)("div", {
                         className: l.listHeight,
@@ -49475,7 +49479,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "253449"
+                                build_number: "253462"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -50166,10 +50170,10 @@
                     return K
                 },
                 getPlanDescriptionFromInvoice: function() {
-                    return X
+                    return q
                 },
                 getExternalPlanDisplayName: function() {
-                    return q
+                    return X
                 },
                 getPremiumPlanOptions: function() {
                     return Z
@@ -50691,7 +50695,7 @@
                 }
             }
 
-            function X(e) {
+            function q(e) {
                 let {
                     renewalInvoicePreview: t,
                     subscription: n,
@@ -50718,7 +50722,7 @@
                 })
             }
 
-            function q(e) {
+            function X(e) {
                 let {
                     planId: t,
                     additionalPlans: n
@@ -55696,10 +55700,10 @@
                     return z
                 },
                 PING_INTERVAL: function() {
-                    return X
+                    return q
                 },
                 VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: function() {
-                    return q
+                    return X
                 },
                 VIDEO_QUALITY_FRAMERATE: function() {
                     return Z
@@ -55771,8 +55775,8 @@
                 W = 6e5,
                 K = 15e4,
                 z = 1e7,
-                X = 5e3,
-                q = 15e3,
+                q = 5e3,
+                X = 15e3,
                 Z = 30,
                 Q = 20,
                 J = 12,
@@ -62746,4 +62750,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84649.085bd22cf53d85e80ec6.js.map
+//# sourceMappingURL=24364.6f26d05a750801d039e4.js.map
