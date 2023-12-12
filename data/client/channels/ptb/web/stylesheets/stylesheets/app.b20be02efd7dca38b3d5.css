@@ -103637,53 +103637,6 @@ html .invoiceCancelRow_a8669b {
     margin: 0 auto
 }
 
-.title__76b2b {
-    font-size: 24px;
-    line-height: 30px;
-    margin-top: 20px;
-    margin-bottom: 12px
-}
-
-.subtitle__28a2f {
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 36px
-}
-
-.footer__835f2 {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%
-}
-
-.title__6536e {
-    margin-top: 20px;
-    margin-bottom: 12px
-}
-
-.subtitle__8d09e {
-    margin-bottom: 12px
-}
-
-.question__39a6b {
-    margin-bottom: 16px
-}
-
-.modal_bff660 {
-    width: 440px
-}
-
-.otherField__38d6b {
-    margin-left: 40px;
-    margin-bottom: 20px
-}
-
-.footer__17495 {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%
-}
-
 .container_fd3603 {
     background-color: var(--background-floating);
     padding: 8px;
@@ -124331,4 +124284,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.dd53b14dc885ceafc644.css.map*/
+/*# sourceMappingURL=app.b20be02efd7dca38b3d5.css.map*/
