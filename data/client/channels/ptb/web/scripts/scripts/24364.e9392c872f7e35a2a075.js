@@ -18559,17 +18559,24 @@
             "use strict";
             n.r(t), n.d(t, {
                 makeFormatter: function() {
-                    return r
+                    return s
                 }
             });
-            var i = n("765309");
+            var i = n("765309"),
+                r = n("782340");
 
-            function r(e) {
-                if (null != i.makeFormatter) return (0, i.makeFormatter)(void 0, e);
+            function s(e) {
+                let t = r.default.getLocale();
+                if (null != i.makeFormatter) return (0, i.makeFormatter)(t !== r.default.getDefaultLocale() ? t : void 0, e);
                 {
-                    let t = new Intl.DateTimeFormat(void 0, e);
+                    let n;
+                    try {
+                        n = new Intl.DateTimeFormat(t, e)
+                    } catch (t) {
+                        n = new Intl.DateTimeFormat(void 0, e)
+                    }
                     return function(e) {
-                        return t.format(e)
+                        return n.format(e)
                     }
                 }
             }
@@ -49468,7 +49475,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "253440"
+                                build_number: "253442"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62739,4 +62746,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.aa1b64bb5871e7ade0b2.js.map
+//# sourceMappingURL=24364.e9392c872f7e35a2a075.js.map
