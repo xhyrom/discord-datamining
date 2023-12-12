@@ -1,12 +1,29 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2023-07_guild_members_search_in_elasticsearch",
+    "label": "Members Search V2 Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Members Search V2 Backend Only",
+      "Treatment 2: Enable Members Search V2 Backend + Frontend"
+    ],
     "hash": 386483746,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
