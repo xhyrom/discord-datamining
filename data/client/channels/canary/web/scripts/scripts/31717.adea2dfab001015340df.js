@@ -26,35 +26,37 @@
                 p = n("582415"),
                 M = n("600798"),
                 T = n("569808"),
-                A = n("9294"),
-                I = n("52393"),
+                I = n("9294"),
+                A = n("52393"),
                 C = n("143291"),
                 L = n("379534"),
-                D = n("40566"),
-                v = n("994918"),
+                v = n("40566"),
+                D = n("994918"),
                 O = n("815297"),
                 y = n("168730"),
                 N = n("129953"),
                 R = n("28007"),
                 b = n("880731"),
                 G = n("562228"),
-                U = n("793277"),
-                P = n("256572"),
+                P = n("793277");
+            n("685841");
+            var U = n("256572"),
                 w = n("364685"),
                 k = n("804888"),
                 B = n("263024"),
                 F = n("410912"),
                 V = n("373469"),
-                H = n("271938"),
-                x = n("42203"),
-                K = n("305961"),
-                W = n("337543"),
-                Y = n("377253"),
+                x = n("271938"),
+                H = n("42203");
+            n("836417");
+            var K = n("305961"),
+                Y = n("337543"),
+                W = n("377253"),
                 j = n("957255"),
                 X = n("824563"),
                 J = n("660478"),
-                q = n("27618"),
-                z = n("18494"),
+                z = n("27618"),
+                q = n("18494"),
                 Q = n("162771"),
                 Z = n("401848"),
                 $ = n("697218"),
@@ -89,12 +91,12 @@
                     location: l,
                     suggested: s = null,
                     overrideProperties: i = {}
-                } = e, r = (0, A.parseExtraDataFromInviteKey)(t), d = x.default.getChannel(n);
+                } = e, r = (0, I.parseExtraDataFromInviteKey)(t), d = H.default.getChannel(n);
                 if (null != d) {
                     let e = null;
                     d.isMultiUserDM() ? e = er.LoggingInviteTypes.GDM_INVITE : !d.isPrivate() && (e = er.LoggingInviteTypes.SERVER_INVITE);
                     let n = {},
-                        c = W.default.getInvite(t);
+                        c = Y.default.getInvite(t);
                     if (null != c && c.state === er.InviteStates.RESOLVED && null != c.channel) {
                         var o;
                         let t = c.channel;
@@ -120,7 +122,7 @@
                     }, u.default.trackWithMetadata(er.AnalyticEvents.INVITE_SENT, n)
                 } else {
                     let e = {},
-                        n = W.default.getInvite(t);
+                        n = Y.default.getInvite(t);
                     null != n && n.state === er.InviteStates.RESOLVED && null != n.inviter && (e.invite_inviter_id = n.inviter.id, e = {
                         ...e,
                         location: l,
@@ -182,14 +184,14 @@
                     },
                     sendClydeError(e) {
                         let t, n, a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-                            l = x.default.getChannel(e);
+                            l = H.default.getChannel(e);
                         if (null != l) {
                             if (a === er.AbortCodes.EXPLICIT_CONTENT) {
                                 if (l.isDM()) t = eo.default.Messages.BOT_DM_EXPLICIT_CONTENT.format({
-                                    name: (0, f.computeChannelName)(l, $.default, q.default)
+                                    name: (0, f.computeChannelName)(l, $.default, z.default)
                                 }), n = "BOT_DM_EXPLICIT_CONTENT";
                                 else if (l.isMultiUserDM()) t = eo.default.Messages.BOT_GDM_EXPLICIT_CONTENT.format({
-                                    name: (0, f.computeChannelName)(l, $.default, q.default)
+                                    name: (0, f.computeChannelName)(l, $.default, z.default)
                                 }), n = "BOT_GDM_EXPLICIT_CONTENT";
                                 else {
                                     let e = K.default.getGuild(l.getGuildId());
@@ -234,7 +236,7 @@
                         let n = {
                             present: !0
                         };
-                        Y.default.hasPresent(e) ? i.default.dispatch({
+                        W.default.hasPresent(e) ? i.default.dispatch({
                             type: "LOAD_MESSAGES_SUCCESS_CACHED",
                             jump: n,
                             channelId: e,
@@ -304,7 +306,7 @@
                             isPreload: o,
                             skipLocalFetch: c,
                             truncate: E
-                        } = e, f = x.default.getChannel(t), _ = S.default.isConnectedOrOverlay(), g = Date.now();
+                        } = e, f = H.default.getChannel(t), _ = S.default.isConnectedOrOverlay(), g = Date.now();
                         if (null != f && f.type === er.ChannelTypes.GUILD_STORE) return !1;
                         if (t === ed.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) return;
                         if (ec.log("Fetching messages for ".concat(t, " between ").concat(n, " and ").concat(a, ". jump=").concat(JSON.stringify(d))), em._tryFetchMessagesCached({
@@ -379,7 +381,7 @@
                         }), !1))
                     },
                     async fetchLocalMessages(e, t, n, a, l) {
-                        let s = x.default.getBasicChannel(e),
+                        let s = H.default.getBasicChannel(e),
                             d = r.default.getOrCreate(e),
                             u = o.default.database();
                         if (null == u || null == s || null != t || null != n) {
@@ -410,7 +412,7 @@
                     },
                     async fetchNewLocalMessages(e, t) {
                         var n;
-                        let a = x.default.getBasicChannel(e),
+                        let a = H.default.getBasicChannel(e),
                             l = o.default.database();
                         if (null == l || null == a) return;
                         let s = r.default.getOrCreate(e);
@@ -439,7 +441,7 @@
                             jump: s,
                             focus: r,
                             truncate: d
-                        } = e, u = Y.default.getMessages(t);
+                        } = e, u = W.default.getMessages(t);
                         if (u.cached || !u.ready) return !1;
                         if ((null == s ? void 0 : s.messageId) != null || (null == r ? void 0 : r.messageId) != null) {
                             if ((null == s ? void 0 : s.messageId) != null && u.has(s.messageId, !1)) return i.default.dispatch({
@@ -491,7 +493,7 @@
                         let a = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                             l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
                         if (t.reaction) return Promise.resolve();
-                        let s = await (0, U.default)(e);
+                        let s = await (0, P.default)(e);
                         if (null != s) return em.sendMessage(s, t, a, l);
                         let i = () => em._sendMessage(e, t, l),
                             r = C.LocalMessageBackgroundSendingExperiment.getCurrentConfig({
@@ -501,8 +503,8 @@
                         return (l = {
                             ...l,
                             nonce: d
-                        }, D.default.recordMessageSendAttempt(e, d), Y.default.isReady(e)) ? r() : a && e !== ed.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID ? (eE.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
-                            Y.default.whenReady(e, () => {
+                        }, v.default.recordMessageSendAttempt(e, d), W.default.isReady(e)) ? r() : a && e !== ed.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID ? (eE.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+                            W.default.whenReady(e, () => {
                                 eE.info("Channel ".concat(e, " is ready for sending now.")), r().then(t, n)
                             })
                         })) : r()
@@ -525,7 +527,7 @@
                         }
                     },
                     sendInvite: (e, t, n, a) => em._sendMessage(e, {
-                        content: (0, I.default)(t),
+                        content: (0, A.default)(t),
                         tts: !1,
                         validNonShortcutEmojis: [],
                         invalidEmojis: []
@@ -579,7 +581,7 @@
                                 message_reference: a
                             },
                             oldFormErrors: !0
-                        }).then(n => (v.default.donateSentMessage(n.body.content, e), em.receiveMessage(e, n.body), i.default.dispatch({
+                        }).then(n => (D.default.donateSentMessage(n.body.content, e), em.receiveMessage(e, n.body), i.default.dispatch({
                             type: "STICKER_TRACK_USAGE",
                             stickerIds: [t]
                         }), n), t => {
@@ -604,7 +606,7 @@
                     },
                     _sendMessage(e, t, n) {
                         var l, s;
-                        let r = (0, U.default)(e);
+                        let r = (0, P.default)(e);
                         if (null != r) return eE.info("Converting channel to a private channel"), r.then(e => {
                             eE.info("Finished converting channel to a private channel"), em._sendMessage(e, t, n)
                         });
@@ -618,15 +620,15 @@
                                 activityAction: m,
                                 location: S,
                                 suggestedInvite: p,
-                                stickerIds: A,
-                                messageReference: I,
+                                stickerIds: I,
+                                messageReference: A,
                                 allowedMentions: C,
                                 poll: L
                             } = n,
                             N = null !== (l = n.flags) && void 0 !== l ? l : 0,
-                            [P, B] = (0, k.default)(o);
-                        if (P && (o = B, N = (0, et.addFlag)(N, er.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === o && null == m && null == A && null == L) return Promise.reject(Error("not sending empty message"));
-                        let F = null != I ? er.MessageTypes.REPLY : er.MessageTypes.DEFAULT,
+                            [U, B] = (0, k.default)(o);
+                        if (U && (o = B, N = (0, et.addFlag)(N, er.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === o && null == m && null == I && null == L) return Promise.reject(Error("not sending empty message"));
+                        let F = null != A ? er.MessageTypes.REPLY : er.MessageTypes.DEFAULT,
                             V = null !== (s = n.nonce) && void 0 !== s ? s : (0, O.createNonce)();
                         if (!1 !== n.eagerDispatch) {
                             let t = (0, O.default)({
@@ -634,13 +636,13 @@
                                 content: o,
                                 tts: f,
                                 type: F,
-                                messageReference: I,
+                                messageReference: A,
                                 allowedMentions: C,
                                 flags: 0 !== N ? N : void 0,
                                 nonce: V,
                                 poll: (0, G.createPollServerDataFromCreateRequest)(L)
                             });
-                            (0, R.updateComboOnMessageSend)(e, t.id), null != A && (t.sticker_items = A.map(e => w.default.getStickerById(e)).filter(e => null != e)), em.receiveMessage(e, t, !0, n)
+                            (0, R.updateComboOnMessageSend)(e, t.id), null != I && (t.sticker_items = I.map(e => w.default.getStickerById(e)).filter(e => null != e)), em.receiveMessage(e, t, !0, n)
                         }
                         if (!ef && null != c && c.length > 0) {
                             let t, n;
@@ -657,13 +659,13 @@
                                 content: o,
                                 nonce: V,
                                 tts: f,
-                                message_reference: I,
+                                message_reference: A,
                                 allowed_mentions: C,
                                 flags: N
                             }
                         };
                         if (null != m) {
-                            let e = m.type === er.ActivityActionTypes.JOIN_REQUEST ? null == m ? void 0 : m.activity.session_id : H.default.getSessionId();
+                            let e = m.type === er.ActivityActionTypes.JOIN_REQUEST ? null == m ? void 0 : m.activity.session_id : x.default.getSessionId();
                             if (null != e) {
                                 let t = {
                                         type: m.type,
@@ -675,19 +677,19 @@
                                 null != n.party && null != n.party.id && (t.party_id = n.party.id), K.message.application_id = n.application_id, K.message.activity = t
                             }
                         }
-                        return null != L && (K.message.poll = L), null != A && (K.message.sticker_ids = A), b.default.isEnabled() && (K.message.has_poggermode_enabled = !0), (0, _.default)(e) && (K.message.allow_proactive_clyde_reply = !0), new Promise((t, l) => {
+                        return null != L && (K.message.poll = L), null != I && (K.message.sticker_ids = I), b.default.isEnabled() && (K.message.has_poggermode_enabled = !0), (0, _.default)(e) && (K.message.allow_proactive_clyde_reply = !0), new Promise((t, l) => {
                             let s = Date.now(),
                                 r = d.default.length,
                                 c = Math.floor(1e4 * Math.random());
                             eE.info("Queueing message to be sent LogId:".concat(c)), d.default.enqueue(K, d => {
                                 let c = Date.now() - s;
-                                if (d.ok) v.default.donateSentMessage(o, e), em.receiveMessage(e, d.body, !0, {
+                                if (d.ok) D.default.donateSentMessage(o, e), em.receiveMessage(e, d.body, !0, {
                                     sendAnalytics: {
                                         duration: c,
                                         queueSize: r
                                     },
                                     poll: L
-                                }), D.default.recordMessageSendApiResponse(V), i.default.dispatch({
+                                }), v.default.recordMessageSendApiResponse(V), i.default.dispatch({
                                     type: "SLOWMODE_RESET_COOLDOWN",
                                     slowmodeType: Z.SlowmodeType.SendMessage,
                                     channelId: e
@@ -696,7 +698,7 @@
                                     emojiUsed: E
                                 }), i.default.dispatch({
                                     type: "STICKER_TRACK_USAGE",
-                                    stickerIds: A
+                                    stickerIds: I
                                 }), ! function(e) {
                                     let {
                                         content: t,
@@ -735,7 +737,7 @@
                                             application_id: d,
                                             device_platform: a.isMobile ? "mobile_web" : "desktop_web",
                                             guild_id: Q.default.getGuildId(),
-                                            channel_id: z.default.getChannelId()
+                                            channel_id: q.default.getChannelId()
                                         });
                                         else if (t === g.CodedLinkType.ACTIVITY_BOOKMARK);
                                         else if (t === g.CodedLinkType.EMBEDDED_ACTIVITY_INVITE);
@@ -752,7 +754,7 @@
                                     suggested: p
                                 }), ! function(e, t, n, a, l) {
                                     (0, en.findGiftCodes)(e).forEach(e => {
-                                        let s = x.default.getChannel(t);
+                                        let s = H.default.getChannel(t);
                                         null != s && u.default.trackWithMetadata(er.AnalyticEvents.GIFT_CODE_SENT, {
                                             location: a,
                                             gift_code: e,
@@ -810,12 +812,13 @@
                             }, c)
                         })
                     },
-                    startEditMessage(e, t, n) {
+                    startEditMessage(e, t, n, a) {
                         i.default.dispatch({
                             type: "MESSAGE_START_EDIT",
                             channelId: e,
                             messageId: t,
-                            content: n
+                            content: n,
+                            source: a
                         })
                     },
                     updateEditMessage(e, t, n) {
@@ -839,10 +842,10 @@
                         } = n;
                         await B.default.unarchiveThreadIfNecessary(e);
                         let l = function(e, t) {
-                                let n = Y.default.getMessage(e, t);
+                                let n = W.default.getMessage(e, t);
                                 if (null == n || n.type !== er.MessageTypes.REPLY) return;
-                                let a = P.default.getMessageByReference(n.messageReference);
-                                if (a.state === P.ReferencedMessageState.LOADED) {
+                                let a = U.default.getMessageByReference(n.messageReference);
+                                if (a.state === U.ReferencedMessageState.LOADED) {
                                     if (!n.mentions.includes(a.message.author.id)) return {
                                         parse: Object.values(er.AllowedMentionTypes),
                                         replied_user: !1
@@ -915,7 +918,7 @@
                         }).then(() => {
                             a()
                         }));
-                        let r = Y.default.getMessage(e, t);
+                        let r = W.default.getMessage(e, t);
                         (null == r ? void 0 : r.type) === er.MessageTypes.GUILD_INVITE_REMINDER && (0, N.trackGuildInviteNotificationDismissed)()
                     },
                     dismissAutomatedMessage(e) {
@@ -1129,7 +1132,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return A
+                    return I
                 }
             }), n("222007");
             var a = n("446674"),
@@ -1229,7 +1232,7 @@
                     a = r.default.getChannelId();
                 n && t === a && p.recordChannel(t), !n && p.deleteChannel(t)
             }
-            var A = new p(l.default, {
+            var I = new p(l.default, {
                 CACHE_LOADED_LAZY_NO_CACHE: function(e) {
                     S = !0
                 },
@@ -1548,6 +1551,97 @@
                 constructor(e) {
                     this.items = new Map, this.limit = e
                 }
+            }
+        },
+        149022: function(e, t, n) {
+            "use strict";
+
+            function a() {
+                return {
+                    textValue: "",
+                    richValue: [{
+                        type: "line",
+                        children: [{
+                            text: ""
+                        }]
+                    }]
+                }
+            }
+
+            function l(e) {
+                return {
+                    textValue: e,
+                    richValue: i(e)
+                }
+            }
+            n.r(t), n.d(t, {
+                createEmptyState: function() {
+                    return a
+                },
+                createState: function() {
+                    return l
+                },
+                toRichValue: function() {
+                    return i
+                },
+                voidToOptionValue: function() {
+                    return r
+                }
+            }), n("70102");
+            let s = Object.freeze([Object.freeze({
+                type: "line",
+                children: Object.freeze([Object.freeze({
+                    text: ""
+                })])
+            })]);
+
+            function i(e) {
+                return "" !== e ? e.split("\n").map(e => ({
+                    type: "line",
+                    children: [{
+                        text: e
+                    }]
+                })) : s
+            }
+
+            function r(e) {
+                switch (e.type) {
+                    case "userMention":
+                        return {
+                            type: "userMention", userId: e.userId
+                        };
+                    case "channelMention":
+                        return {
+                            type: "channelMention", channelId: e.channelId
+                        };
+                    case "staticRouteLink":
+                        return {
+                            type: "staticRouteLink", channelId: e.channelId
+                        };
+                    case "soundboard":
+                        return {
+                            type: "soundboard", soundId: e.soundId
+                        };
+                    case "roleMention":
+                        return {
+                            type: "roleMention", roleId: e.roleId
+                        };
+                    case "textMention":
+                        return {
+                            type: "textMention", text: e.name
+                        };
+                    case "emoji":
+                        return {
+                            type: "emoji", name: e.emoji.name, surrogate: e.emoji.surrogate
+                        };
+                    case "customEmoji":
+                        return {
+                            type: "customEmoji", emojiId: e.emoji.emojiId, name: e.emoji.name, animated: e.emoji.animated
+                        };
+                    case "testInlineVoid":
+                        throw Error("Unable to convert test types")
+                }
+                return null
             }
         },
         374648: function(e, t, n) {
@@ -2877,6 +2971,207 @@
                 return null == t ? null : a.default.ensurePrivateChannel(t.recipients)
             }
         },
+        685841: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return E
+                }
+            });
+            var a = n("446674"),
+                l = n("913144"),
+                s = n("377253");
+            let i = {},
+                r = {},
+                d = {};
+
+            function u(e) {
+                if (null == e) return !1;
+                let t = r[e];
+                if (null == t) return !1;
+                let n = s.default.getMessage(e, t.messageId);
+                if (null == n) return !1;
+                i[e] = {
+                    channel: t.channel,
+                    message: n,
+                    shouldMention: t.shouldMention,
+                    showMentionToggle: t.showMentionToggle
+                }, delete r[e]
+            }
+
+            function o() {
+                i = {}, r = {}, d = {}
+            }
+            class c extends a.default.Store {
+                initialize() {
+                    this.waitFor(s.default)
+                }
+                getPendingReply(e) {
+                    return i[e]
+                }
+                getPendingReplyActionSource(e) {
+                    return d[e]
+                }
+            }
+            c.displayName = "PendingReplyStore";
+            var E = new c(l.default, {
+                CREATE_PENDING_REPLY: function(e) {
+                    let {
+                        channel: t,
+                        message: n,
+                        shouldMention: a = !0,
+                        showMentionToggle: l = !0,
+                        source: s
+                    } = e;
+                    i[t.id] = {
+                        channel: t,
+                        message: n,
+                        shouldMention: a,
+                        showMentionToggle: l
+                    }, d[t.id] = s
+                },
+                CREATE_SHALLOW_PENDING_REPLY: function(e) {
+                    let {
+                        channel: t,
+                        messageId: n,
+                        shouldMention: a = !0,
+                        showMentionToggle: l = !0
+                    } = e;
+                    r[t.id] = {
+                        channel: t,
+                        messageId: n,
+                        shouldMention: a,
+                        showMentionToggle: l
+                    }
+                },
+                SET_PENDING_REPLY_SHOULD_MENTION: function(e) {
+                    let {
+                        channelId: t,
+                        shouldMention: n
+                    } = e;
+                    t in i && (i[t] = {
+                        ...i[t],
+                        shouldMention: n
+                    }), t in r && (r[t] = {
+                        ...r[t],
+                        shouldMention: n
+                    })
+                },
+                DELETE_PENDING_REPLY: function(e) {
+                    let {
+                        channelId: t
+                    } = e;
+                    delete i[t], delete r[t]
+                },
+                CONNECTION_OPEN: o,
+                LOGOUT: o,
+                MESSAGE_DELETE: function(e) {
+                    var t, n, a;
+                    let {
+                        id: l,
+                        channelId: s
+                    } = e;
+                    if ((null === (n = i[s]) || void 0 === n ? void 0 : null === (t = n.message) || void 0 === t ? void 0 : t.id) === l) delete i[s], delete d[s];
+                    else {
+                        if ((null === (a = r[s]) || void 0 === a ? void 0 : a.messageId) !== l) return !1;
+                        delete r[s], delete d[s]
+                    }
+                },
+                CHANNEL_SELECT: function(e) {
+                    let {
+                        channelId: t
+                    } = e;
+                    u(t)
+                },
+                LOAD_MESSAGES_SUCCESS: function(e) {
+                    let {
+                        channelId: t
+                    } = e;
+                    u(t)
+                }
+            })
+        },
+        836417: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return E
+                }
+            });
+            var a = n("446674"),
+                l = n("913144"),
+                s = n("149022"),
+                i = n("884351"),
+                r = n("845579"),
+                d = n("377253");
+            let u = {},
+                o = {};
+            class c extends a.default.Store {
+                isEditing(e, t) {
+                    var n;
+                    return (null === (n = u[e]) || void 0 === n ? void 0 : n.messageId) === t
+                }
+                isEditingAny(e) {
+                    return null != u[e]
+                }
+                getEditingTextValue(e) {
+                    var t;
+                    return null === (t = u[e]) || void 0 === t ? void 0 : t.textValue
+                }
+                getEditingRichValue(e) {
+                    var t;
+                    return null === (t = u[e]) || void 0 === t ? void 0 : t.richValue
+                }
+                getEditingMessageId(e) {
+                    var t;
+                    return null === (t = u[e]) || void 0 === t ? void 0 : t.messageId
+                }
+                getEditingMessage(e) {
+                    let t = u[e];
+                    return null != t && null != t.messageId ? d.default.getMessage(e, t.messageId) : null
+                }
+                getEditActionSource(e) {
+                    return o[e]
+                }
+            }
+            c.displayName = "EditMessageStore";
+            var E = new c(l.default, {
+                MESSAGE_START_EDIT: function(e) {
+                    let {
+                        channelId: t,
+                        messageId: n,
+                        content: a,
+                        source: l
+                    } = e, d = r.UseLegacyChatInput.getSetting(), c = i.default.unparse(a, t);
+                    u[t] = {
+                        channelId: t,
+                        messageId: n,
+                        textValue: c,
+                        richValue: (0, s.toRichValue)(d ? c : a)
+                    }, o[t] = l
+                },
+                MESSAGE_UPDATE_EDIT: function(e) {
+                    let {
+                        channelId: t,
+                        textValue: n,
+                        richValue: a
+                    } = e, l = u[t];
+                    if (null == l) return !1;
+                    u[t] = {
+                        ...l,
+                        textValue: n,
+                        richValue: a
+                    }
+                },
+                MESSAGE_END_EDIT: function(e) {
+                    let {
+                        channelId: t
+                    } = e;
+                    if (null == t || null == u[t]) return !1;
+                    delete u[t], delete o[t]
+                }
+            })
+        },
         401848: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -3001,4 +3296,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.600d5111130648c4f7c5.js.map
+//# sourceMappingURL=31717.adea2dfab001015340df.js.map
