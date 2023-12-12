@@ -5721,6 +5721,7 @@
                 regularShopCard: "regularShopCard__06c2e",
                 shop: "shop_b31ed2",
                 shopScroll: "shopScroll__2feb5",
+                shopScrollBackgroundPrimary: "shopScrollBackgroundPrimary_bb1f42",
                 tallerShopCard: "tallerShopCard__60f20",
                 title: "title_f46d09"
             }
