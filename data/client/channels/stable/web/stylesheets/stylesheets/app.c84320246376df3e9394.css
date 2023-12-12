@@ -58666,7 +58666,7 @@ html .progress__4ef76 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -83430,12 +83430,13 @@ input::-webkit-inner-spin-button {
 }
 
 .shopCard_f7822b {
-    border-radius: var(--radius-xxl);
+    border-radius: 30px;
     border: 2px solid transparent;
     grid-column: auto;
     width: 100%;
     height: 420px;
-    transition: transform 1s, box-shadow.5s;
+    top: 0;
+    transition: top 1s, box-shadow.5s;
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -83446,7 +83447,7 @@ input::-webkit-inner-spin-button {
 
 .shopCard_f7822b:hover,
 .shopCard_f7822b:focus-within {
-    transform: translatey(-4px)
+    top: -4px
 }
 
 .avatar_f6650d {
@@ -124289,4 +124290,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5e19d9dcf476b50237b0.css.map*/
+/*# sourceMappingURL=app.c84320246376df3e9394.css.map*/
