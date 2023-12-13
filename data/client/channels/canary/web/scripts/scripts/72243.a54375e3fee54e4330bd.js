@@ -47326,6 +47326,10 @@
                     throttlePeriod: 9e5,
                     throttleKeys: e => [e.tab_opened]
                 },
+                [f.AnalyticEvents.NOW_PLAYING_CARD_HOVERED]: {
+                    throttlePeriod: 9e5,
+                    throttleKeys: e => [e.tab_opened]
+                },
                 [f.AnalyticEvents.START_SPEAKING]: {
                     throttlePeriod: 9e5,
                     throttleKeys: e => [e.server]
@@ -49443,7 +49447,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "253786"
+                                build_number: "253822"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62709,4 +62713,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.90e0f3d2010a36cb7781.js.map
+//# sourceMappingURL=72243.a54375e3fee54e4330bd.js.map
