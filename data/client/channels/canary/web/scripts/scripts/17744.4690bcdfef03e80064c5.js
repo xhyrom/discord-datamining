@@ -239,9 +239,9 @@
                     return c
                 }
                 isItemViewed(e) {
-                    var t;
-                    let r = s.default.getCategoryForProduct(e.skuId);
-                    return null != r && (null === (t = c.categoryItemViews[r.skuId]) || void 0 === t ? void 0 : t[e.type]) != null
+                    var t, r;
+                    let l = null === (t = s.default.getProduct(e.skuId)) || void 0 === t ? void 0 : t.categorySkuId;
+                    return null != l && (null === (r = c.categoryItemViews[l]) || void 0 === r ? void 0 : r[e.type]) != null
                 }
                 reset() {
                     c = d()
@@ -474,10 +474,11 @@
                         currency: l,
                         price: a,
                         prices: d,
-                        ...c
+                        category_sku_id: c,
+                        ...f
                     } = t;
                     return new e({
-                        ...super.fromServer(c),
+                        ...super.fromServer(f),
                         currency: l,
                         price: a,
                         prices: null == (r = d) ? {} : Object.keys(r).reduce((e, t) => {
@@ -491,7 +492,8 @@
                                 paymentSourcePrices: {}
                             }, e
                         }, {}),
-                        items: c.items.reduce((e, t) => (0, i.match)(t).with({
+                        categorySkuId: c,
+                        items: f.items.reduce((e, t) => (0, i.match)(t).with({
                             type: o.CollectiblesItemType.AVATAR_DECORATION
                         }, t => (e.push(s.default.fromServer(t)), e)).with({
                             type: o.CollectiblesItemType.PROFILE_EFFECT
@@ -499,7 +501,7 @@
                     })
                 }
                 constructor(e) {
-                    super(e), this.currency = e.currency, this.price = e.price, this.prices = e.prices, this.summary = e.summary, this.items = e.items
+                    super(e), this.currency = e.currency, this.price = e.price, this.prices = e.prices, this.summary = e.summary, this.items = e.items, this.categorySkuId = e.categorySkuId
                 }
             }
         },
@@ -638,8 +640,8 @@
                 C = r("190045"),
                 O = r("335031"),
                 S = r("252063"),
-                L = r("38766"),
-                h = r("845579"),
+                h = r("38766"),
+                L = r("845579"),
                 I = r("271938"),
                 y = r("42203"),
                 m = r("305961"),
@@ -789,7 +791,7 @@
                     allowEdit: B = !0,
                     showPremiumBadgeUpsell: M = !0,
                     hasProfileEffect: D = !1
-                } = e, [X, Z] = n.useState((null == s ? void 0 : s.banner) == null ? 2 : 0), J = (0, d.useStateFromStores)([m.default], () => m.default.getGuild(P)), Q = (0, d.useStateFromStores)([I.default], () => I.default.getId()), $ = Q === i.id && B || i.isClyde() && null != J && (0, _.canEditClydeAIProfile)(J), ee = F.default.isPremiumAtLeast(null == s ? void 0 : s.premiumType, z.PremiumTypes.TIER_2), [et, er] = n.useState(!1), el = (0, d.useStateFromStores)([v.default], () => v.default.isFocused()), ei = h.GifAutoPlay.getSetting(), eo = (0, f.useToken)(c.default.unsafe_rawColors.PRIMARY_800).hex(), en = (0, f.getAvatarSize)(f.AvatarSizes.SIZE_80), es = (0, u.hex2int)((0, T.default)(i.getAvatarURL(P, en), eo, !1)), ea = (0, O.default)(null !== (t = null == s ? void 0 : s.primaryColor) && void 0 !== t ? t : es).hsl, eu = (0, x.getUserBannerSize)(A), ed = null != E ? E : null == s ? void 0 : s.getBannerURL({
+                } = e, [X, Z] = n.useState((null == s ? void 0 : s.banner) == null ? 2 : 0), J = (0, d.useStateFromStores)([m.default], () => m.default.getGuild(P)), Q = (0, d.useStateFromStores)([I.default], () => I.default.getId()), $ = Q === i.id && B || i.isClyde() && null != J && (0, _.canEditClydeAIProfile)(J), ee = F.default.isPremiumAtLeast(null == s ? void 0 : s.premiumType, z.PremiumTypes.TIER_2), [et, er] = n.useState(!1), el = (0, d.useStateFromStores)([v.default], () => v.default.isFocused()), ei = L.GifAutoPlay.getSetting(), eo = (0, f.useToken)(c.default.unsafe_rawColors.PRIMARY_800).hex(), en = (0, f.getAvatarSize)(f.AvatarSizes.SIZE_80), es = (0, u.hex2int)((0, T.default)(i.getAvatarURL(P, en), eo, !1)), ea = (0, O.default)(null !== (t = null == s ? void 0 : s.primaryColor) && void 0 !== t ? t : es).hsl, eu = (0, x.getUserBannerSize)(A), ed = null != E ? E : null == s ? void 0 : s.getBannerURL({
                     size: eu,
                     canAnimate: b || !ei ? et : el
                 }), ec = null != ed, ef = (0, d.useStateFromStores)([H.default], () => H.default.getUserProfile(i.id)), eE = y.default.getChannel(U.default.getChannelId()), {
@@ -814,7 +816,7 @@
                     let t = new Image;
                     t.src = e
                 }, [ei, ee, E, s, eu]);
-                let eC = (0, L.default)({
+                let eC = (0, h.default)({
                     analyticsLocation: {
                         page: W.AnalyticsPages.USER_POPOUT,
                         section: W.AnalyticsSections.PROFILE_POPOUT
@@ -941,7 +943,7 @@
                     hasBanner: _,
                     forProfileEffectModal: C,
                     hasProfileEffect: O = !1
-                } = e, S = p[r], L = (0, a.useUID)(), h = function(e) {
+                } = e, S = p[r], h = (0, a.useUID)(), L = function(e) {
                     let {
                         profileType: t,
                         avatarSize: r,
@@ -1022,18 +1024,18 @@
                     hasThemeColors: T,
                     hasProfileEffect: O
                 });
-                C && (h.bannerWidth = (0, u.cssValueToNumber)(o.default.USER_PROFILE_THEMED_CONTAINER_PROFILE_EFFECTS_USER_POPOUT_WIDTH));
-                let I = h.avatarSize / 2 + h.avatarBorderSize,
-                    y = h.bannerHeight - h.offsetY;
+                C && (L.bannerWidth = (0, u.cssValueToNumber)(o.default.USER_PROFILE_THEMED_CONTAINER_PROFILE_EFFECTS_USER_POPOUT_WIDTH));
+                let I = L.avatarSize / 2 + L.avatarBorderSize,
+                    y = L.bannerHeight - L.offsetY;
                 return (0, l.jsxs)("svg", {
                     className: E.bannerSVGWrapper,
-                    viewBox: "0 0 ".concat(h.bannerWidth, " ").concat(h.bannerHeight),
+                    viewBox: "0 0 ".concat(L.bannerWidth, " ").concat(L.bannerHeight),
                     style: {
-                        minWidth: h.bannerWidth,
-                        minHeight: h.bannerHeight
+                        minWidth: L.bannerWidth,
+                        minHeight: L.bannerHeight
                     },
                     children: [(0, l.jsxs)("mask", {
-                        id: L,
+                        id: h,
                         children: [(0, l.jsx)("rect", {
                             fill: "white",
                             x: "0",
@@ -1042,7 +1044,7 @@
                             height: "100%"
                         }), (0, l.jsx)("circle", {
                             fill: "black",
-                            cx: h.offsetX + I,
+                            cx: L.offsetX + I,
                             cy: y,
                             r: I
                         })]
@@ -1052,7 +1054,7 @@
                         width: "100%",
                         height: "100%",
                         overflow: "visible",
-                        mask: "url(#".concat(L, ")"),
+                        mask: "url(#".concat(h, ")"),
                         children: t
                     })]
                 })
@@ -1175,22 +1177,22 @@
                     pendingProfileEffectId: C,
                     useDefaultClientTheme: O,
                     children: S,
-                    forceShowPremium: L = !1,
-                    showOutOfBoundaryComponents: h = !1
+                    forceShowPremium: h = !1,
+                    showOutOfBoundaryComponents: L = !1
                 } = e, I = i.useRef(null), y = (0, a.default)(o.id, p), {
                     profileTheme: m
                 } = (0, u.default)(o, y, {
                     themeElementRef: I,
                     pendingThemeColors: _,
-                    isPreview: L,
+                    isPreview: h,
                     useDefaultClientTheme: O
-                }), U = (null == y ? void 0 : y.canEditThemes) || L, A = i.useMemo(() => ({
+                }), U = (null == y ? void 0 : y.canEditThemes) || h, A = i.useMemo(() => ({
                     profileType: P,
                     profileTheme: m
                 }), [P, m]);
                 return (0, l.jsx)("div", {
                     ref: I,
-                    className: n((t = P, (0, s.match)(t).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutOuter).with(d.UserProfileTypes.MODAL, () => f.userProfileModalOuter).with(d.UserProfileTypes.PANEL, () => f.userPanelOuter).with(d.UserProfileTypes.CARD, () => f.userCardOuter).exhaustive()), U ? f.userProfileOuterThemed : f.userProfileOuterUnthemed, c.profileColors, h ? f.showOutOfBoundaryComponents : void 0, "theme-".concat(m), T),
+                    className: n((t = P, (0, s.match)(t).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutOuter).with(d.UserProfileTypes.MODAL, () => f.userProfileModalOuter).with(d.UserProfileTypes.PANEL, () => f.userPanelOuter).with(d.UserProfileTypes.CARD, () => f.userCardOuter).exhaustive()), U ? f.userProfileOuterThemed : f.userProfileOuterUnthemed, c.profileColors, L ? f.showOutOfBoundaryComponents : void 0, "theme-".concat(m), T),
                     children: (0, l.jsx)("div", {
                         className: n((r = P, (0, s.match)(r).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutInner).with(d.UserProfileTypes.MODAL, () => f.userProfileModalInner).with(d.UserProfileTypes.PANEL, () => f.userPanelInner).with(d.UserProfileTypes.CARD, () => f.userCardInner).exhaustive()), function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
@@ -1208,7 +1210,7 @@
                             }, () => f.userProfileInnerThemedWithBanner).with({
                                 canUsePremiumProfileCustomization: !0
                             }, () => f.userProfileInnerThemedPremiumWithoutBanner).otherwise(() => f.userProfileInnerThemedNonPremium)
-                        }((null == y ? void 0 : y.canUsePremiumProfileCustomization) || L, null !== C && ((null == y ? void 0 : y.banner) != null || void 0 !== C), P)),
+                        }((null == y ? void 0 : y.canUsePremiumProfileCustomization) || h, null !== C && ((null == y ? void 0 : y.banner) != null || void 0 !== C), P)),
                         children: (0, l.jsx)(E.Provider, {
                             value: A,
                             children: S
@@ -1316,22 +1318,22 @@
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, [P, T] = (0, u.default)(e, t, {
                     pendingThemeColors: f,
                     isPreview: E
-                }), [_, C, O] = (0, o.useStateFromStoresArray)([s.default], () => [s.default.desaturateUserColors, s.default.saturation, s.default.syncProfileThemeWithUserTheme]), S = (0, n.default)(), L = l.useCallback(() => O || p ? S : (0, a.getProfileTheme)(P), [p, O, S, P]), [h, I] = l.useState(L()), y = (0, a.useProfileThemeValues)(h), m = (0, a.useDividerColor)(h, P), U = (0, a.useMessageInputBorderColor)(h, T), A = l.useCallback((e, t) => (0, i.int2hsl)(e, _, null, t), [_]);
+                }), [_, C, O] = (0, o.useStateFromStoresArray)([s.default], () => [s.default.desaturateUserColors, s.default.saturation, s.default.syncProfileThemeWithUserTheme]), S = (0, n.default)(), h = l.useCallback(() => O || p ? S : (0, a.getProfileTheme)(P), [p, O, S, P]), [L, I] = l.useState(h()), y = (0, a.useProfileThemeValues)(L), m = (0, a.useDividerColor)(L, P), U = (0, a.useMessageInputBorderColor)(L, T), A = l.useCallback((e, t) => (0, i.int2hsl)(e, _, null, t), [_]);
                 l.useEffect(() => {
-                    I(L())
-                }, [P, O, S, p, L]);
-                let v = (0, a.useAvatarBorderColor)(h, P, O),
+                    I(h())
+                }, [P, O, S, p, h]);
+                let v = (0, a.useAvatarBorderColor)(L, P, O),
                     g = null != v ? (0, i.int2hsl)(v, !1, _ ? C : null) : null,
                     R = e => d.forEach(t => {
                         e.style.removeProperty(t)
                     });
                 return l.useEffect(() => {
-                    if (null != P && null != T && null != h && null != v && null != m && null != U) {
-                        let e = O && h !== S ? null == y ? void 0 : y.overlaySyncedWithUserTheme : null == y ? void 0 : y.overlay;
+                    if (null != P && null != T && null != L && null != v && null != m && null != U) {
+                        let e = O && L !== S ? null == y ? void 0 : y.overlaySyncedWithUserTheme : null == y ? void 0 : y.overlay;
                         c(r, "--profile-gradient-primary-color", A(P)), c(r, "--profile-gradient-secondary-color", A(T)), c(r, "--profile-gradient-button-color", A((0, a.calculateButtonColor)(P))), c(r, "--profile-gradient-overlay-color", e), c(r, "--profile-body-background-color", null == y ? void 0 : y.sectionBox), c(r, "--profile-body-background-hover", null == y ? void 0 : y.profileBodyBackgroundHover), c(r, "--profile-body-divider-color", A(m, null == y ? void 0 : y.dividerOpacity)), c(r, "--profile-avatar-border-color", A(v)), c(r, "--profile-message-input-border-color", A(U)), c(r, "--profile-note-background-color", null == y ? void 0 : y.noteBackgroundColor), c(r, "--profile-role-pill-background-color", null == y ? void 0 : y.rolePillBackgroundColor), c(r, "--profile-role-pill-border-color", null == y ? void 0 : y.rolePillBorderColor)
                     } else(null == r ? void 0 : r.current) != null && R(null == r ? void 0 : r.current)
-                }, [P, T, v, h, S, r, A, O, m, null == y ? void 0 : y.overlaySyncedWithUserTheme, null == y ? void 0 : y.overlay, null == y ? void 0 : y.sectionBox, null == y ? void 0 : y.profileBodyBackgroundHover, null == y ? void 0 : y.dividerOpacity, null == y ? void 0 : y.noteBackgroundColor, null == y ? void 0 : y.rolePillBackgroundColor, null == y ? void 0 : y.rolePillBorderColor, U]), {
-                    profileTheme: null != h ? h : S,
+                }, [P, T, v, L, S, r, A, O, m, null == y ? void 0 : y.overlaySyncedWithUserTheme, null == y ? void 0 : y.overlay, null == y ? void 0 : y.sectionBox, null == y ? void 0 : y.profileBodyBackgroundHover, null == y ? void 0 : y.dividerOpacity, null == y ? void 0 : y.noteBackgroundColor, null == y ? void 0 : y.rolePillBackgroundColor, null == y ? void 0 : y.rolePillBorderColor, U]), {
+                    profileTheme: null != L ? L : S,
                     primaryProfileColor: P,
                     avatarBorderColor: g
                 }
@@ -1339,4 +1341,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17744.a586cfff7253ad1f7ffe.js.map
+//# sourceMappingURL=17744.4690bcdfef03e80064c5.js.map
