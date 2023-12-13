@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-11_colonist_minishelf_banner",
-    "label": "Actvity Colonist Mini-Shelf Banner",
+    "id": "2023-12_2023_eoy_ringtone",
+    "label": "EOY Ringtone 2023",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable mini-shelf banner"
+      "Treatment 1: Enabled"
     ],
-    "hash": 2188337804,
+    "hash": 654872987,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enableColonistMiniShelfBanner"
+      "enabled"
     ]
   }
 }
