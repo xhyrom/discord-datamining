@@ -73,7 +73,13 @@
             ]
           }
         },
-        "filters": []
+        "filters": [
+          {
+            "type": "guild_member_count_range",
+            "min_count": 3,
+            "max_count": 30
+          }
+        ]
       }
     ],
     "revision": 2,
