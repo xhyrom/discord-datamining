@@ -20602,6 +20602,22 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     flex-grow: 1
 }
 
+.notificationBody__3f148 {
+    padding: 0 6px 6px;
+    display: flex;
+    height: 50px;
+    align-items: center
+}
+
+.iconContainer__88a0a {
+    height: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-xs);
+    margin-right: 16px
+}
+
 .animationContainer_d558e3 {
     position: absolute;
     padding: 10px
@@ -124193,4 +124209,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ffba56ec30c5887fd990.css.map*/
+/*# sourceMappingURL=app.6f7f387244340745bc54.css.map*/

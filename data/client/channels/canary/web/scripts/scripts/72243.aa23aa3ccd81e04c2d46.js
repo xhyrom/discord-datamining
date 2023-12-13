@@ -29830,7 +29830,7 @@
                     default:
                         return 5
                 }
-            }(i = u || (u = {}))[i.WELCOME = 0] = "WELCOME", i[i.NEWS = 1] = "NEWS", i[i.GO_LIVE_VOICE = 2] = "GO_LIVE_VOICE", i[i.GO_LIVE_NON_VOICE = 3] = "GO_LIVE_NON_VOICE", i[i.BROADCAST = 4] = "BROADCAST", (r = c || (c = {})).PRIMARY = "PRIMARY", r.BRAND = "BRAND", r.DANGER = "DANGER", (s = d || (d = {}))[s.Nudge = 0] = "Nudge", s[s.TextChat = 1] = "TextChat", s[s.VoiceCall = 2] = "VoiceCall", s[s.Activity = 3] = "Activity", s[s.Clips = 4] = "Clips", s[s.Other = 5] = "Other", (a = f || (f = {})).NewsNudge = "News Nudge", a.WelcomeNudge = "Welcome Nudge", a.TextChat = "Text Chat", a.ActivityUserJoin = "Activity User Join", a.ActivityInvite = "Activity Invite", a.IncomingCall = "Incoming Call", a.GoLiveNudge = "Go Live Nudge", a.GoLiveNonVoiceNudge = "Go Live Non Voice Nudge", a.OverlayCrashed = "Overlay Crashed", a.StartBroadcastNotification = "Start Broadcast Notification", a.ClipsReminderNotification = "Clips Reminder Notification", a.ClipsNotification = "Clips Notification", (o = E || (E = {}))[o.Viewed = 0] = "Viewed", o[o.Clicked = 1] = "Clicked";
+            }(i = u || (u = {}))[i.WELCOME = 0] = "WELCOME", i[i.NEWS = 1] = "NEWS", i[i.GO_LIVE_VOICE = 2] = "GO_LIVE_VOICE", i[i.GO_LIVE_NON_VOICE = 3] = "GO_LIVE_NON_VOICE", i[i.BROADCAST = 4] = "BROADCAST", i[i.KEYBIND_INDICATORS = 5] = "KEYBIND_INDICATORS", (r = c || (c = {})).PRIMARY = "PRIMARY", r.BRAND = "BRAND", r.DANGER = "DANGER", (s = d || (d = {}))[s.Nudge = 0] = "Nudge", s[s.TextChat = 1] = "TextChat", s[s.VoiceCall = 2] = "VoiceCall", s[s.Activity = 3] = "Activity", s[s.Clips = 4] = "Clips", s[s.Other = 5] = "Other", (a = f || (f = {})).NewsNudge = "News Nudge", a.WelcomeNudge = "Welcome Nudge", a.TextChat = "Text Chat", a.ActivityUserJoin = "Activity User Join", a.ActivityInvite = "Activity Invite", a.IncomingCall = "Incoming Call", a.GoLiveNudge = "Go Live Nudge", a.GoLiveNonVoiceNudge = "Go Live Non Voice Nudge", a.OverlayCrashed = "Overlay Crashed", a.StartBroadcastNotification = "Start Broadcast Notification", a.ClipsReminderNotification = "Clips Reminder Notification", a.ClipsNotification = "Clips Notification", a.KeybindIndicatorsNotification = "Keybind Indicators Notification", (o = E || (E = {}))[o.Viewed = 0] = "Viewed", o[o.Clicked = 1] = "Clicked";
             let m = Object.freeze({
                 LOW: "background-opacity-low",
                 MEDIUM: "background-opacity-medium",
@@ -49762,7 +49762,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254211"
+                                build_number: "254226"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63133,4 +63133,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.65961c74b6f974344ad8.js.map
+//# sourceMappingURL=72243.aa23aa3ccd81e04c2d46.js.map
