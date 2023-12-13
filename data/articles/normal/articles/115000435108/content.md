@@ -14,6 +14,9 @@
 </ul>
 <h1 id="h_01GFV3NE6JPS6BRTX7XYQDJ0S4"><strong>Nitro Plans</strong></h1>
 <h2 id="h_01GFV3P0M2YEC5GQA04QZZ3XTA"><strong>Nitro</strong></h2>
+<h3 id="h_01HHJJ9PMRV33X830SJCRMQNNT">
+    <span style="color: #434343;" data-darkreader-inline-color="">For both Nitro yearly and Nitro monthly memberships, you will receive 2 Server Boosts in total to use to support your favorite servers. You can learn more about Server Boosts </span><a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+</h3>
 <p><span style="font-weight: 400;">Our most-popular plan, Nitro, unlocks access to all the perks we offer, including custom emoji and stickers anywhere, HD video streaming, and 2 Server Boosts just to name a few.</span></p>
 <p><span style="font-weight: 400;">All included subscriber perks:</span></p>
 <ol>
