@@ -110099,22 +110099,27 @@ html .invoiceCancelRow_a8669b {
     top: -5px;
     right: -5px;
     display: flex;
-    background: var(--background-tertiary);
+    background: var(--background-primary);
     border-radius: var(--radius-xs);
     opacity: 0;
     transition: opacity var(--custom-button-transition-duration)ease;
-    box-shadow: var(--shadow-low)
+    box-shadow: var(--shadow-low);
+    overflow: hidden
 }
 
 .imagePreviewContainer__19776 {
     position: relative;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xs);
     background-color: var(--background-secondary-alt);
-    border: 5px solid var(--background-floating);
     height: 175px;
     box-sizing: border-box;
     cursor: pointer;
-    overflow: hidden
+    overflow: hidden;
+    transition: background-color var(--custom-button-transition-duration)ease
+}
+
+.imagePreviewContainer__19776:hover {
+    background-color: var(--input-background)
 }
 
 .imagePreviewContainer__19776:hover .altBadge_df7f31,
@@ -110143,7 +110148,7 @@ html .invoiceCancelRow_a8669b {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 6px 6px 1px;
+    padding: 6px;
     box-sizing: border-box;
     background: var(--background-floating);
     white-space: nowrap;
@@ -110158,27 +110163,34 @@ html .invoiceCancelRow_a8669b {
     color: var(--primary-230)
 }
 
-.expressionPickerButtonDefault_eda6e6 {
-    width: 48px;
-    height: 48px;
+.expressionPickerButton_b81316 {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     cursor: pointer
+}
+
+.expressionPickerButton_b81316 .media__6967e {
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.expressionPickerButton_b81316:hover .media__6967e {
+    opacity: .6
+}
+
+.expressionPickerButtonDefault_eda6e6 {
+    width: 48px;
+    height: 48px
 }
 
 .expressionPickerButtonImageOnly__42a53 {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer
+    height: 100%
 }
 
 .expressionPickerIconDefault__286f7 {
     color: var(--interactive-normal);
-    margin-right: 6px
+    margin-left: 4px
 }
 
 .expressionPickerIconImageOnly_b5541a {
@@ -110189,13 +110201,16 @@ html .invoiceCancelRow_a8669b {
 }
 
 .emojiDefault_a6c36f {
-    margin-right: 6px
+    margin-left: 4px
 }
 
 .emojiJumbo__389fd {
     width: 48px;
-    height: 48px;
-    margin-right: 6px
+    height: 48px
+}
+
+.gif__0e3fd {
+    transition: opacity var(--custom-button-transition-duration)ease
 }
 
 .gifJumbo__8044e {
@@ -110214,10 +110229,21 @@ html .invoiceCancelRow_a8669b {
 
 .spinnerWrapper__6bb67 {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 48px;
+    height: 48px;
     justify-content: center;
+    align-items: center;
     cursor: default
+}
+
+.spinnerWrapperDefault__30e54 {
+    width: 48px;
+    height: 48px
+}
+
+.spinnerWrapperImageOnly_bfdbd6 {
+    width: 100%;
+    height: 100%
 }
 
 .removeAnswerButtonDefault_f2d25e {
@@ -110282,7 +110308,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .formInput_c28524 {
-    border-radius: var(--radius-lg)
+    border-radius: var(--radius-xs)
 }
 
 .questionInput_ac682b {
@@ -110295,7 +110321,7 @@ html .invoiceCancelRow_a8669b {
     align-items: center;
     box-sizing: border-box;
     background-color: var(--background-secondary-alt);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xs);
     cursor: pointer;
     transition: background-color var(--custom-button-transition-duration)ease
 }
@@ -110306,10 +110332,10 @@ html .invoiceCancelRow_a8669b {
 
 .addAnswerButtonDefault_f6a374 {
     justify-content: flex-start;
-    gap: 14px;
+    gap: 16px;
     margin-right: 36px;
     height: 48px;
-    padding: 0 20px 0 16px
+    padding: 0 20px 0 12px
 }
 
 .addAnswerButtonImageOnly__73d3e {
@@ -110394,7 +110420,7 @@ html .invoiceCancelRow_a8669b {
     display: block;
     min-height: 48px;
     padding: 20px;
-    border-radius: var(--radius-lg)
+    border-radius: var(--radius-xs)
 }
 
 .footer__73f70 {
@@ -123890,4 +123916,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.22277373db3edfd6f474.css.map*/
+/*# sourceMappingURL=app.b9c79ee7743524b98f90.css.map*/
