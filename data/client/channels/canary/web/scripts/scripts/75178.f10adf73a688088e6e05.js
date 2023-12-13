@@ -11,6 +11,7 @@
                 "./call_ringing.mp3": "173447",
                 "./call_ringing_beat.mp3": "942044",
                 "./call_ringing_halloween.mp3": "707746",
+                "./call_ringing_snowsgiving.mp3": "753257",
                 "./clip_error.mp3": "933574",
                 "./clip_save.mp3": "393686",
                 "./ddr-down.mp3": "497452",
@@ -121,6 +122,10 @@
         707746: function(e, t, n) {
             "use strict";
             e.exports = n.p + "e19cc32298b291be6b3d.mp3"
+        },
+        753257: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "3c6cc93eaab97c478abe.mp3"
         },
         933574: function(e, t, n) {
             "use strict";
@@ -490,10 +495,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 updateAllowVoiceRecording: function() {
-                    return T
+                    return w
                 },
                 updateClipsEnabled: function() {
-                    return w
+                    return T
                 },
                 updateDecoupledClipsEnabled: function() {
                     return D
@@ -555,7 +560,7 @@
                 x = n("80028"),
                 L = n("49111");
 
-            function T(e) {
+            function w(e) {
                 let {
                     allowVoiceRecording: t
                 } = e;
@@ -567,7 +572,7 @@
                     allow_voice_recording: t
                 })
             }
-            async function w(e) {
+            async function T(e) {
                 let {
                     clipsEnabled: t,
                     guildId: n,
@@ -1191,4 +1196,4 @@
         }
     }
 ]);
-//# sourceMappingURL=75178.64e8110b6e1ccebb3f13.js.map
+//# sourceMappingURL=75178.f10adf73a688088e6e05.js.map
