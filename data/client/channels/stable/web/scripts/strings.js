@@ -2381,6 +2381,7 @@
                 FORM_LABEL_MUTE_SERVER: "Mute **!!{name}!!**",
                 FORM_LABEL_UNMUTE_SERVER: "Unmute **!!{name}!!**",
                 FORM_LABEL_MUTE_SERVER_DESCRIPTION: "\nMuting a server prevents unread indicators and notifications from appearing unless you are mentioned.\n",
+                FOR_LABEL_MUTE_SEVER_DESCRIPTION_V2: "Muting prevents unread badges and notifications from appearing unless you are mentioned.",
                 FORM_LABEL_MUTE_SERVER_DESCRIPTION_NEW: "Muting a server suppresses notifications but unread indicators will still be visible if you're mentioned.",
                 FORM_LABEL_MOBILE_PUSH_NOTIFICATIONS: "Mobile Push Notifications",
                 FORM_LABEL_ALL_MESSAGES: "All Messages",
@@ -2402,6 +2403,19 @@
                 FORM_LABEL_LIVE_STAGES_ONLY: "All Live Stages",
                 RESET: "Reset",
                 LARGE_GUILD_NOTIFY_ALL_MESSAGES_DESCRIPTION: "Due to this server's size, you won't get mobile push notifications for non-@mention messages.",
+                NOTIFICATION_SETTINGS_PRESETS: "Notifications Presets",
+                NOTIFICATION_SETTINGS_ADVANCED: "Advanced",
+                NOTIFICATION_SETTINGS_PRESETS_ALL_MESSAGES: "All Messages",
+                NOTIFICATION_SETTINGS_PRESETS_MENTION_ONLY: "Mention Only",
+                NOTIFICATION_SETTINGS_PRESETS_NONE: "None",
+                NOTIFICATION_SETTINGS_PRESETS_UNREAD_TITLE: "Unread badges",
+                NOTIFICATION_SETTINGS_PRESETS_UNREAD_SUBTITLE: "Choose when you see a full unread badge next to the channel in this server.",
+                NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_TITLE: "Push Notifications",
+                NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_SUBTITLE: "Choose when you receive a push notification from this server.",
+                NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_1: "new-mention",
+                NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_2: "new-message",
+                NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_3: "nothing-new",
+                NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_MESSAGE: "that’s the annoying part yea lol it’s sooooo chunky",
                 FORM_LABEL_MOBILE_NOTIFICATIONS_LABEL: "Enable all notifications",
                 FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_LABEL: "System notifications",
                 FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_DESC: "Get notifications outside of Discord.",
@@ -2420,6 +2434,7 @@
                 FORM_LABEL_MOBILE_NOTIFICATIONS_OS_CONTROL_JUMP: "Tweak notification settings",
                 FORM_LABEL_MOBILE_NOTIFICATIONS_OS_CONTROL_JUMP_HELP: "Advanced notification settings are controlled by the system.",
                 FORM_LABEL_MOBILE_NOTIFICATIONS_CALL_DESC: "Integrate calls with Phone app.",
+                FORM_LABEL_MOBILE_NOTIFICATIONS_VOICE_CHANNEL_OVERRIDE: "Switching to at-mentions only will disable voice activity notifications while still letting you know if somebody pinged you directly in the VC chat.",
                 FORM_LABEL_MOBILE_CHANNEL_OVERRIDE_MUTE: "You won't receive notifications from muted channels, and they will appear grayed out in your channel list. This setting applies across all your devices.",
                 FORM_LABEL_MOBILE_CATEGORY_OVERRIDE_MUTE: "You won't receive notifications from muted categories, and they will appear grayed out in your channel list. This setting applies across all your devices.",
                 FORM_LABEL_MOBILE_CHANNEL_OVERRIDE_GUILD_MUTED: "Your server is currently $[**muted**](mutedHook). You can't get notifications from this channel nor change settings until you unmute this server.",
@@ -2450,6 +2465,7 @@
                 FORM_DESCRIPTION_MOBILE_NOTIFICATION_MUTED: "You can’t get notifications from this channel nor change settings until you unmute this channel.",
                 FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ALL_MESSAGES: "You are receiving notifications from all messages in this server, but you can override it here",
                 FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ONLY_MENTIONS: "You are receiving notifications from only mentions in this server, but you can override it here",
+                FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ALL_ACTIVITY: "You are receiving notifications from all activity in this server, but you can override it here",
                 SETTINGS_GAMES_NO_GAME_DETECTED: "No game detected",
                 SETTINGS_GAMES_ADDED_GAMES_LABEL: "Added Games",
                 SETTINGS_GAMES_HIDDEN_LIBRARY_APPLICATIONS_LABEL: "Hidden Games",
@@ -4288,6 +4304,7 @@
                 TOGGLE_MEDIA_KEYBOARD: "Toggle media keyboard",
                 TOGGLE_MEDIA_KEYBOARD_HINT: "Open to add an image to your message, use a command, or start a thread",
                 A11Y_MOBILE_HEADER_BUTTON_HINT: "double-tap for more options",
+                A11Y_MOBILE_BUTTON_HINT: "double-tap to activate",
                 A11Y_ROLE_CHECKBOX: "checkbox",
                 A11Y_ROLE_SWITCH: "switch",
                 A11Y_ROLE_RADIO_BUTTON: "radio button",
@@ -8128,6 +8145,7 @@
                 NEW_OVERRIDE: "New Override",
                 SELECT_CHANNEL_OR_CATEGORY: "Select a channel or category…",
                 NOTIFICATION_OVERRIDES: "Notification Overrides",
+                CHANNEL_NOTIFICATION_OVERRIDES: "Channel Notification Overrides",
                 PRIVATE_CHANNEL: "Private Channel",
                 CATEGORY_SETTINGS: "Category Settings",
                 PRIVATE_CATEGORY: "Private Category",
@@ -13707,6 +13725,10 @@
                 GUILD_CREATE_CHANNEL_CTA: "Create a Channel",
                 GUILD_NO_UNREADS_HEADER: "All caught up!",
                 GUILD_NO_UNREADS_SUBHEADER: "You don't have any unread messages.",
+                NOTIFICATION_PRESET_EVERYTHING: "Everything",
+                NOTIFICATION_PRESET_ESSENTIALS: "Essentials",
+                NOTIFICATION_PRESET_NOTHING: "Nothing",
+                NOTIFICATION_PRESET_CUSTOM: "Custom",
                 APP_DIRECTORY: "App Directory",
                 APP_DIRECTORY_LISTING_VIEW_ALL_BUTTON: "View All",
                 APP_DIRECTORY_LISTING_ADD_BUTTON: "Add",
@@ -16167,6 +16189,7 @@
                 CLIPS_SETTINGS_HW_ENCODING_MUST_BE_ENABLED_INFOBOX: "To use Clips, enable hardware encoding. Find it in [Voice & Video settings](onClick).",
                 CLIPS_PROCESSING_BADGE: "Processing...",
                 SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
+                SOUND_INCOMING_RING_EOY_2023: "Seasonal Incoming Ring",
                 CUSTOM_SOUNDS: "Custom Sounds",
                 ENABLE_PHONE_INTEGRATION: "Enable integration with the Phone app to experience this.",
                 GUILD_SHOP_CHANNEL_LABEL: "Server Shop",
@@ -16332,9 +16355,11 @@
                 SCREENSHARE_APPS_PHOTOS_ACCESSIBILITY_LABEL: "Screenshare Photos",
                 SCREENSHARE_APPS_SNAPCHAT: "Snapchat",
                 SCREENSHARE_APPS_SNAPCHAT_ACCESSIBILITY_LABEL: "Screenshare Snapchat",
+                LAUNCH_PAD: "LaunchPad",
                 LAUNCH_PAD_HISTORY: "Recent Channels",
                 LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
                 LAUNCH_PAD_RECENT_SERVERS: "Recent Servers",
+                LAUNCH_PAD_TAB_A11Y_LABEL: "Open LaunchPad",
                 REPORT_SECOND_LOOK_SUCCESS_TITLE: "We have received your request.",
                 REPORT_SECOND_LOOK_FAILURE_TITLE: "You have already submitted a review request for this report."
             })
@@ -16397,6 +16422,7 @@
                 CREATE_EVENT_RECUR_LABEL: "Event Frequency",
                 CREATE_EVENT_RECUR_NONE: "Does not repeat",
                 CREATE_EVENT_RECUR_WEEKLY: "Weekly on {weekday}",
+                CREATE_EVENT_RECUR_BIWEEKLY: "Every other {weekday}",
                 CREATE_EVENT_RECUR_MONTHLY: "Monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
                 CREATE_EVENT_RECUR_YEARLY: "Annually on {date}",
                 CREATE_EVENT_RECUR_WEEKDAYS: "Every weekday (Monday to Friday)",
@@ -16404,6 +16430,7 @@
                 GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
                 GUILD_SCHEDULED_EVENT_REPEATS: "Events in series",
                 GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
+                GUILD_SCHEDULED_EVENT_REPEATS_BIWEEKLY: "Repeats every other {weekday}",
                 GUILD_SCHEDULED_EVENT_REPEATS_MONTHLY: "Repeats monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
                 GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
                 GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
@@ -16704,8 +16731,8 @@
                 CREATE_POLL_LAYOUTS_RADIOGROUP_ARIA_LABEL: "Poll answer style",
                 CREATE_POLL_LAYOUT_DEFAULT: "Text answers with optional media",
                 CREATE_POLL_LAYOUT_IMAGE: "Media only answers",
-                CREATE_POLL_ADD_IMAGE: "Add media, answer {answerNumber}",
-                CREATE_POLL_EDIT_IMAGE: "Update media, {imageName}, answer {answerNumber}",
+                CREATE_POLL_ADD_IMAGE_ARIA: "Add media, answer {answerNumber}",
+                CREATE_POLL_EDIT_IMAGE_ARIA: "Update media, {imageName}, answer {answerNumber}",
                 CREATE_POLL_ANSWER_INPUT_LABEL: "Answer {answerNumber}",
                 CREATE_POLL_ANSWER_PLACEHOLDER: "Type your answer",
                 CREATE_POLL_ADD_ANSWER_BUTTON: "Add another answer",
@@ -16716,8 +16743,9 @@
                 CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_BODY: "Are you sure you want to exit? Any changes made will be lost if you exit now.",
                 CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_CTA_EXIT: "Exit",
                 CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_BACK_TO_EDITING: "Back to editing",
-                CREATE_POLL_REMOVE_ANSWER: "Remove answer",
-                CREATE_POLL_REPLACE_IMAGE: "Replace image",
+                CREATE_POLL_REMOVE_ANSWER: "Remove Answer",
+                CREATE_POLL_ADD_IMAGE: "Add Media",
+                CREATE_POLL_REPLACE_IMAGE: "Replace Media",
                 CREATE_POLL_POLL_ANSWER: "Poll Answer",
                 CREATE_POLL_EDIT_ALT_TEXT: "Edit Image Description (Alt Text)",
                 CREATE_POLL_EDIT_IMAGE_DESCRIPTION: "Edit Image Description",
@@ -17762,89 +17790,6 @@
                 })
             }
         },
-        193990: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                default: function() {
-                    return o
-                }
-            });
-            var t = E("913144"),
-                o = {
-                    setDesktopType(e) {
-                        t.default.dispatch({
-                            type: "NOTIFICATIONS_SET_DESKTOP_TYPE",
-                            desktopType: e
-                        })
-                    },
-                    setTTSType(e) {
-                        t.default.dispatch({
-                            type: "NOTIFICATIONS_SET_TTS_TYPE",
-                            ttsType: e
-                        })
-                    },
-                    setDisabledSounds(e) {
-                        t.default.dispatch({
-                            type: "NOTIFICATIONS_SET_DISABLED_SOUNDS",
-                            sounds: e
-                        })
-                    },
-                    toggleDisableAllSounds() {
-                        t.default.dispatch({
-                            type: "NOTIFICATIONS_TOGGLE_ALL_DISABLED"
-                        })
-                    },
-                    setDisableUnreadBadge(e) {
-                        t.default.dispatch({
-                            type: "NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE",
-                            disableUnreadBadge: e
-                        })
-                    },
-                    setTaskbarFlash(e) {
-                        t.default.dispatch({
-                            type: "NOTIFICATIONS_SET_TASKBAR_FLASH",
-                            taskbarFlash: e
-                        })
-                    },
-                    setNotifyMessagesInSelectedChannel(e) {
-                        t.default.dispatch({
-                            type: "NOTIFICATIONS_SET_NOTIFY_MESSAGES_IN_SELECTED_CHANNEL",
-                            notify: e
-                        })
-                    },
-                    setPermissionsState(e, _) {
-                        t.default.dispatch({
-                            type: "NOTIFICATIONS_SET_PERMISSION_STATE",
-                            enabled: e,
-                            source: _
-                        })
-                    },
-                    showNotification(e, _, E, o) {
-                        let n = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
-                        t.default.dispatch({
-                            type: "NOTIFICATION_CREATE",
-                            icon: e,
-                            title: _,
-                            body: E,
-                            trackingProps: o,
-                            options: {
-                                ...n,
-                                onClick() {
-                                    var e;
-                                    null === (e = n.onClick) || void 0 === e || e.call(n), t.default.dispatch({
-                                        type: "NOTIFICATION_CLICK"
-                                    })
-                                }
-                            }
-                        })
-                    },
-                    clickedNotification() {
-                        t.default.dispatch({
-                            type: "NOTIFICATION_CLICK"
-                        })
-                    }
-                }
-        },
         920842: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -18320,7 +18265,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253927", ", Version Hash: ").concat("4dd83c9e9485c5ce68aabc562ecedbc0446e884a")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254206", ", Version Hash: ").concat("3ae797fcd2fe8776a2996626c1fbc83d41c0608f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19718,8 +19663,9 @@
                     inlineRequire: () => E("589636").default
                 },
                 HangStatusManager: {
-                    actions: ["VOICE_CHANNEL_SELECT", "LOGOUT"],
+                    actions: ["VOICE_CHANNEL_SELECT", "LOGOUT", "CHANNEL_SELECT"],
                     inlineRequire: () => E("360557").default,
+                    neverLoadBeforeConnectionOpen: !0,
                     hasStoreChangeListeners: !0
                 },
                 InteractionModalManager: {
@@ -20619,8 +20565,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "253927", "253927"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253927")), _ = 0), _
+                let _ = parseInt((e = "254206", "254206"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254206")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -24969,6 +24915,7 @@
             class I extends t.default {
                 constructor(...e) {
                     super(...e), this.actions = {
+                        CHANNEL_SELECT: e => this.handleChannelSelect(e),
                         VOICE_CHANNEL_SELECT: e => this.handleVoiceChannelSelect(e),
                         LOGOUT: () => this.handleLogout()
                     }, this.handleVoiceChannelSelect = e => {
@@ -25010,6 +24957,14 @@
                         (0, n.clearHangStatus)()
                     }, this.handleLogout = () => {
                         this.handleDisconnectFromVoiceChannel()
+                    }, this.handleChannelSelect = e => {
+                        let {
+                            guildId: _
+                        } = e;
+                        null != _ && r.HangStatusExperiment.trackExposure({
+                            guildId: _,
+                            location: "HangStatusManager"
+                        })
                     }
                 }
             }
@@ -36148,51 +36103,66 @@
         },
         811022: function(e, _, E) {
             "use strict";
-            var t;
             E.r(_), E.d(_, {
                 setLogFn: function() {
-                    return n
+                    return r
                 },
                 default: function() {
                     return t
                 }
             }), E("222007");
-            let o = () => {};
+            var t, o = E("14334");
+            let n = () => {};
 
-            function n(e) {
-                o = e
+            function r(e) {
+                n = e
             }
             t = class {
                 constructor(e = "default") {
                     var _ = this;
-                    this.log = function(e) {
-                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-                        o(_.name, "log", e, ...t)
+                    this.logDangerously = function(e) {
+                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
+                        n(_.name, "log", e, ...t)
+                    }, this.log = function(e) {
+                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+                        (0, o.checkLogForPII)(e, ...t), n(_.name, "log", e, ...t)
+                    }, this.verbose = function(e) {
+                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+                        (0, o.checkLogForPII)(e, ...t), n(_.name, "debug", e, ...t)
                     }, this.info = function(e) {
-                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-                        o(_.name, "info", e, ...t)
+                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+                        (0, o.checkLogForPII)(e, ...t), n(_.name, "info", e, ...t)
                     }, this.warn = function(e) {
-                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-                        o(_.name, "warn", e, ...t)
+                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+                        (0, o.checkLogForPII)(e, ...t), n(_.name, "warn", e, ...t)
                     }, this.error = function(e) {
-                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-                        o(_.name, "error", e, ...t)
+                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+                        (0, o.checkLogForPII)(e, ...t), n(_.name, "error", e, ...t)
                     }, this.trace = function(e) {
-                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-                        o(_.name, "trace", e, ...t)
+                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
+                        n(_.name, "trace", e, ...t)
                     }, this.time = (e, _) => {
                         let E = Date.now(),
                             t = _();
                         return this.log(e, Date.now() - E), t
                     }, this.fileOnly = function(e) {
-                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-                        o(_.name, "file-only", e, ...t)
-                    }, this.verbose = function(e) {
-                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-                        o(_.name, "debug", e, ...t)
+                        for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
+                        n(_.name, "file-only", e, ...t)
                     }, this.name = e
                 }
             }
+        },
+        14334: function(e, _, E) {
+            "use strict";
+
+            function t(e) {
+                for (var _ = arguments.length, E = Array(_ > 1 ? _ - 1 : 0), t = 1; t < _; t++) E[t - 1] = arguments[t]
+            }
+            E.r(_), E.d(_, {
+                checkLogForPII: function() {
+                    return t
+                }
+            }), E("70102")
         },
         817792: function(e, _, E) {
             "use strict";
@@ -36449,4 +36419,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.e3b88b938a321e95b20d.js.map
+//# sourceMappingURL=66318.a9903e5b4ebc53ae236e.js.map

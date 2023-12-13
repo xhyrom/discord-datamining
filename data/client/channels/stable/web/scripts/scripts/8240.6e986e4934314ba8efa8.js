@@ -697,77 +697,74 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return A
+                    return g
                 }
             }), n("222007");
             var i = n("446674"),
                 a = n("913144"),
-                l = n("716241"),
-                r = n("982108"),
-                u = n("18494"),
-                s = n("49111");
-            let d = {};
+                l = n("982108"),
+                r = n("18494"),
+                u = n("389153");
+            let s = {};
 
-            function o() {
-                return d = {}, !0
+            function d() {
+                return s = {}, !0
             }
 
-            function c(e) {
-                return !(e in d) && (d[e] = {
+            function o(e) {
+                return !(e in s) && (s[e] = {
                     activeCommand: null,
                     activeCommandSection: null,
                     activeOptionName: null,
                     preferredCommandId: null,
                     optionStates: {},
                     initialValues: {}
-                }), d[e]
+                }), s[e]
             }
 
-            function _(e) {
-                var t, n, i;
+            function c(e) {
+                var t;
                 let {
-                    channelId: a,
-                    command: r,
-                    section: u,
-                    initialValues: d,
-                    location: o,
-                    triggerSection: _,
-                    queryLength: f
-                } = e, h = c(a);
-                if ((null == r ? void 0 : r.id) === (null === (t = h.activeCommand) || void 0 === t ? void 0 : t.id)) return !1;
-                h.activeCommand = r, h.activeCommandSection = u, h.activeOptionName = null, h.preferredCommandId = null, h.initialValues = null != d ? d : {};
-                let E = {};
-                return (null == r ? void 0 : r.options) != null && r.options.forEach(e => {
-                    E[e.name] = {
+                    channelId: n,
+                    command: i,
+                    section: a,
+                    initialValues: l,
+                    location: r,
+                    triggerSection: s,
+                    queryLength: d
+                } = e, c = o(n);
+                if ((null == i ? void 0 : i.id) === (null === (t = c.activeCommand) || void 0 === t ? void 0 : t.id)) return !1;
+                c.activeCommand = i, c.activeCommandSection = a, c.activeOptionName = null, c.preferredCommandId = null, c.initialValues = null != l ? l : {};
+                let _ = {};
+                return (null == i ? void 0 : i.options) != null && i.options.forEach(e => {
+                    _[e.name] = {
                         isActive: !1,
                         hasValue: !1,
                         lastValidationResult: null,
                         optionValue: null
                     }
-                }), h.optionStates = E, null != r && (0, l.trackWithMetadata)(s.AnalyticEvents.APPLICATION_COMMAND_SELECTED, {
-                    command_id: null !== (i = null === (n = r.rootCommand) || void 0 === n ? void 0 : n.id) && void 0 !== i ? i : r.id,
-                    application_id: r.applicationId,
-                    location: o,
-                    section: _,
-                    query_length: f,
-                    command_text_length: r.displayName.length
+                }), c.optionStates = _, null != i && (0, u.trackCommandSelected)({
+                    command: i,
+                    location: r,
+                    triggerSection: s,
+                    queryLength: d
                 }), !0
             }
 
-            function f(e) {
+            function _(e) {
                 var t, n;
                 let {
                     channelId: i,
                     commandId: a
-                } = e, l = c(i);
+                } = e, l = o(i);
                 return a !== l.preferredCommandId && (null !== l.preferredCommandId || a !== (null !== (n = null === (t = l.activeCommand) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null)) && (l.activeCommand = null, l.activeOptionName = null, l.preferredCommandId = a, l.optionStates = {}, !0)
             }
 
-            function h(e) {
+            function f(e) {
                 let {
                     channelId: t,
                     changedOptionStates: n
-                } = e, i = c(t), a = {
+                } = e, i = o(t), a = {
                     ...i.optionStates
                 };
                 for (let [e, t] of Object.entries(n)) {
@@ -799,66 +796,66 @@
                 }
                 return i.optionStates = a, !0
             }
-            class E extends i.default.Store {
+            class h extends i.default.Store {
                 initialize() {
-                    r.default.addChangeListener(() => {
-                        let e = u.default.getChannelId();
-                        if (null == e) return d = {}, !0;
-                        let t = r.default.getCurrentSidebarChannelId(e);
-                        if (null != t && t in d) return !1;
-                        d = e in d ? {
-                            [e]: d[e]
+                    l.default.addChangeListener(() => {
+                        let e = r.default.getChannelId();
+                        if (null == e) return s = {}, !0;
+                        let t = l.default.getCurrentSidebarChannelId(e);
+                        if (null != t && t in s) return !1;
+                        s = e in s ? {
+                            [e]: s[e]
                         } : {}
                     })
                 }
                 getActiveCommand(e) {
-                    let t = c(e);
+                    let t = o(e);
                     return t.activeCommand
                 }
                 getActiveCommandSection(e) {
-                    let t = c(e);
+                    let t = o(e);
                     return t.activeCommandSection
                 }
                 getActiveOptionName(e) {
-                    let t = c(e);
+                    let t = o(e);
                     return t.activeOptionName
                 }
                 getActiveOption(e) {
                     var t, n, i;
-                    let a = c(e);
+                    let a = o(e);
                     return null !== (i = null === (n = a.activeCommand) || void 0 === n ? void 0 : null === (t = n.options) || void 0 === t ? void 0 : t.find(e => e.name === a.activeOptionName)) && void 0 !== i ? i : null
                 }
                 getPreferredCommandId(e) {
-                    let t = c(e);
+                    let t = o(e);
                     return t.preferredCommandId
                 }
                 getOptionStates(e) {
-                    let t = c(e);
+                    let t = o(e);
                     return t.optionStates
                 }
                 getOptionState(e, t) {
-                    let n = c(e);
+                    let n = o(e);
                     return n.optionStates[t]
                 }
                 getOption(e, t) {
                     var n, i;
-                    let a = c(e);
+                    let a = o(e);
                     return null === (i = a.activeCommand) || void 0 === i ? void 0 : null === (n = i.options) || void 0 === n ? void 0 : n.find(e => e.name === t)
                 }
                 getState(e) {
                     return {
-                        ...c(e)
+                        ...o(e)
                     }
                 }
             }
-            E.displayName = "ApplicationCommandStore";
-            let g = new E(a.default, {
-                CONNECTION_OPEN: o,
-                CHANNEL_SELECT: o,
-                LOGOUT: o,
-                APPLICATION_COMMAND_SET_ACTIVE_COMMAND: _,
-                APPLICATION_COMMAND_SET_PREFERRED_COMMAND: f,
-                APPLICATION_COMMAND_UPDATE_OPTIONS: h,
+            h.displayName = "ApplicationCommandStore";
+            let E = new h(a.default, {
+                CONNECTION_OPEN: d,
+                CHANNEL_SELECT: d,
+                LOGOUT: d,
+                APPLICATION_COMMAND_SET_ACTIVE_COMMAND: c,
+                APPLICATION_COMMAND_SET_PREFERRED_COMMAND: _,
+                APPLICATION_COMMAND_UPDATE_OPTIONS: f,
                 APPLICATION_COMMAND_UPDATE_CHANNEL_STATE: function(e) {
                     let {
                         channelId: t,
@@ -866,16 +863,16 @@
                         command: i,
                         section: a,
                         changedOptionStates: l
-                    } = e, r = _({
+                    } = e, r = c({
                         type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND",
                         channelId: t,
                         command: i,
                         section: a
-                    }), u = f({
+                    }), u = _({
                         type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND",
                         channelId: t,
                         commandId: n
-                    }), s = h({
+                    }), s = f({
                         type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
                         channelId: t,
                         changedOptionStates: l
@@ -883,7 +880,7 @@
                     return r || u || s
                 }
             });
-            var A = g
+            var g = E
         },
         349778: function(e, t, n) {
             "use strict";
@@ -1439,13 +1436,13 @@
                     return D
                 },
                 trackForumPostLinkCopied: function() {
-                    return y
+                    return b
                 },
                 trackForumOnboardingClicked: function() {
                     return L
                 },
                 trackForumUpsellModalClicked: function() {
-                    return b
+                    return y
                 },
                 trackForumAddMediaToOriginalPostClicked: function() {
                     return F
@@ -1738,7 +1735,7 @@
                 })
             }
 
-            function y(e) {
+            function b(e) {
                 let {
                     postId: t,
                     location: n
@@ -1758,7 +1755,7 @@
                 })
             }
 
-            function b(e) {
+            function y(e) {
                 let {
                     forumDemoId: t
                 } = e;
@@ -2031,7 +2028,7 @@
                     return A
                 },
                 default: function() {
-                    return b
+                    return y
                 }
             }), n("222007");
             var a = n("917351"),
@@ -2085,7 +2082,7 @@
                 if (!(v.indexOf(e) >= 0)) return !1;
                 v = v.filter(t => t !== e)
             }
-            let y = [];
+            let b = [];
             class L extends s.default.Store {
                 initialize() {
                     this.waitFor(f.default, g.default, h.default)
@@ -2103,11 +2100,11 @@
                     return M === e && p === t && (0, E.areSetsEqual)(i, n) ? m : (R(), !1)
                 }
                 getThreads(e, t, n) {
-                    return M === e && p === t && (0, E.areSetsEqual)(i, n) ? v : y
+                    return M === e && p === t && (0, E.areSetsEqual)(i, n) ? v : b
                 }
             }
             L.displayName = "ArchivedThreadsStore";
-            var b = new L(d.default, {
+            var y = new L(d.default, {
                 CONNECTION_OPEN: R,
                 THREAD_DELETE: function(e) {
                     let {
@@ -3451,4 +3448,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8240.865c70ef34cec1e11192.js.map
+//# sourceMappingURL=8240.6e986e4934314ba8efa8.js.map
