@@ -27,14 +27,13 @@
 <p>3. Once directed to the Shop, you can preview and buy avatar decorations and profile effects to add to your collection! </p>
 <p>Head over to the <a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a> article and the <a href="https://support.discord.com/hc/en-us/articles/17828465914263" target="_blank" rel="noopener noreferrer">Profile Effects</a> article to find steps on how to apply your collection and customize your profile! </p>
 <h1 id="docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d">Gifting from the Shop</h1>
-<h3 id="h_01HGTXJAXVH4YCGB7X6NGVMSK0"><span style="color: #434343;">Gifting from the Shop is currently rolling out and available to a limited number of users. Sending gifts from the Shop is only available on desktop and browser. </span></h3>
 <p>Along with collecting items for yourself, you can also gift items from the Shop to your friends! </p>
 <p>1. Select the item you would like to send and press the <strong>gift</strong> <strong>icon</strong> located to the right of the <strong>Buy Decoration </strong>button. You can also select the gift icon within the main Shop page to send a gift. </p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-744e18a4-7fff-7f1d-093b-e2c7e113d3b7"><img src="https://support.discord.com/hc/article_attachments/19550225912983" width="624" height="452"></span></p>
 <p id="docs-internal-guid-728f0c68-7fff-e50c-1d4b-f70e617cccab">2. Then, the <strong>Send a gift </strong>window will appear. While here, you will be able to select a card design and customize the gift by adding a personal note, a soundboard effect, and an emoji confetti.</p>
 <p>3. Once you have chosen who you would like to send the gift to and have added your personal touches, press <strong>Next </strong>to proceed.</p>
-<h3 id="docs-internal-guid-cab4eef2-7fff-0e80-443b-f6a8e42f7b13"><span style="color: #434343;">Note: If your Discord account does not have a previously saved payment method, you will need to add your payment method details before proceeding.  </span></h3>
-<p class="wysiwyg-text-align-center"><span style="color: #434343;"><span id="docs-internal-guid-52d89e1f-7fff-2554-dbb0-b6b078a091bf"><img src="https://support.discord.com/hc/article_attachments/19550225921047" width="624" height="452"></span></span></p>
+<h3 id="docs-internal-guid-cab4eef2-7fff-0e80-443b-f6a8e42f7b13"><span style="color: #434343;" data-darkreader-inline-color="">Note: If your Discord account does not have a previously saved payment method, you will need to add your payment method details before proceeding.  </span></h3>
+<p class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><span id="docs-internal-guid-52d89e1f-7fff-2554-dbb0-b6b078a091bf"><img src="https://support.discord.com/hc/article_attachments/19550225921047" width="624" height="452"></span></span></p>
 <p id="docs-internal-guid-152b98e9-7fff-6e8d-3e01-9c066ef3758c">And that’s it! You should see a confirmation that your gift was sent. </p>
 <h1 id="h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions </h1>
 <p id="docs-internal-guid-19fc1892-7fff-8091-9662-2453d7666148"><strong>Q: Who can currently access the Shop and buy and use profile effects?</strong></p>
