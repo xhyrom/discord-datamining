@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -19389,17 +19389,14 @@
                 KRUNKER_STRIKE_APPLICATION_ID: function() {
                     return X
                 },
-                COLONIST_APPLICATION_ID: function() {
+                EMBEDDED_ACTIVITY_SURVEY_URL: function() {
                     return Z
                 },
-                EMBEDDED_ACTIVITY_SURVEY_URL: function() {
+                ImageSizes: function() {
                     return Q
                 },
-                ImageSizes: function() {
-                    return J
-                },
                 STAFF_RELEASE_PHASES: function() {
-                    return $
+                    return J
                 },
                 ActivityFeedbackReasons: function() {
                     return i
@@ -19423,13 +19420,13 @@
                     return c
                 },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return ee
+                    return $
                 },
                 APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
-                    return et
+                    return ee
                 },
                 APPLICATIONS_WITH_NO_REFFERER: function() {
-                    return en
+                    return et
                 },
                 WhatsNewSection: function() {
                     return d
@@ -19441,10 +19438,10 @@
                     return E
                 },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return er
+                    return ei
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return es
+                    return er
                 }
             }), n("222007");
             var i, r, s, a, o, l, u, c, d, f, E, h, p, _, S, m, T, g, I, C, v, A, R = n("798609"),
@@ -19472,37 +19469,36 @@
                 z = "1037680572660727838",
                 q = "945737671223947305",
                 X = "1011683823555199066",
-                Z = "1106787098452832296",
-                Q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-                J = {
+                Z = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                Q = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                $ = ["in_development", "activities_team", "employee_release"];
+                J = ["in_development", "activities_team", "employee_release"];
             (h = i || (i = {})).FAILED_LOAD = "FAILED_LOAD", h.LAGGING = "LAGGING", h.CONFUSING = "CONFUSING", h.NOT_FUN = "NOT_FUN", h.OTHER = "OTHER", (p = r || (r = {}))[p.PLAY = 0] = "PLAY", p[p.SPECTATE = 1] = "SPECTATE", (_ = s || (s = {})).DESKTOP = "desktop", _.MOBILE = "mobile", (S = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", S.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", S.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", S.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (m = o || (o = {}))[m.UNLOCKED = 0] = "UNLOCKED", m[m.NEEDS_NITRO = 1] = "NEEDS_NITRO", (T = l || (l = {}))[T.NO_UPDATE = 0] = "NO_UPDATE", T[T.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", T[T.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", T[T.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", T[T.USER_JOINED = 4] = "USER_JOINED", T[T.USER_LEFT = 5] = "USER_LEFT", T[T.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (g = u || (u = {}))[g.UNLOCKED = 1] = "UNLOCKED", g[g.PORTRAIT = 2] = "PORTRAIT", g[g.LANDSCAPE = 3] = "LANDSCAPE", (I = c || (c = {}))[I.DIRECTORY = 0] = "DIRECTORY", I[I.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", I[I.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let ee = "activity-shelf",
-                et = new Set(["755600276941176913", L, b, x]),
-                en = new Set([L, b, x]);
+            let $ = "activity-shelf",
+                ee = new Set(["755600276941176913", L, b, x]),
+                et = new Set([L, b, x]);
             (C = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", C.GDM_ACTIVITIES = "GDM_ACTIVITIES", C.PUTT_PARTY = "PUTT_PARTY", C.JAMSPACE_OLD = "JAMSPACE", C.JAMSPACE = "JAMSPACE2", C.POKER = "POKER", C.FREE = "FREE", (v = f || (f = {}))[v.PORTRAIT = 0] = "PORTRAIT", v[v.LANDSCAPE = 1] = "LANDSCAPE", (A = E || (E = {}))[A.FOCUSED = 0] = "FOCUSED", A[A.PIP = 1] = "PIP", A[A.GRID = 2] = "GRID";
-            let ei = {
+            let en = {
                     label_type: R.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                er = {
+                ei = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
                     supported_platforms: [R.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [R.EmbeddedActivitySupportedPlatforms.WEB]: ei,
-                        [R.EmbeddedActivitySupportedPlatforms.IOS]: ei,
-                        [R.EmbeddedActivitySupportedPlatforms.ANDROID]: ei
+                        [R.EmbeddedActivitySupportedPlatforms.WEB]: en,
+                        [R.EmbeddedActivitySupportedPlatforms.IOS]: en,
+                        [R.EmbeddedActivitySupportedPlatforms.ANDROID]: en
                     },
                     has_csp_exception: !1
                 },
-                es = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
+                er = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
         },
         586391: function(e, t, n) {
             "use strict";
@@ -42045,6 +42041,16 @@
                     }
                     return this.getMessageNotifications(e.guild_id)
                 }
+                resolveUnreadSetting(e) {
+                    let t = this.getChannelUnreadSetting(e.guild_id, e.id);
+                    if (t !== m.UnreadSetting.UNSET) return t;
+                    if (null != e.parent_id) {
+                        let t = this.getChannelUnreadSetting(e.guild_id, e.parent_id);
+                        if (t !== m.UnreadSetting.UNSET) return t
+                    }
+                    let n = this.getGuildUnreadSetting(e.guild_id);
+                    return n !== m.UnreadSetting.UNSET ? n : this.resolvedMessageNotifications(e) === _.UserNotificationSettings.ALL_MESSAGES ? m.UnreadSetting.ALL_MESSAGES : m.UnreadSetting.ONLY_MENTIONS
+                }
                 isGuildOrCategoryOrChannelMuted(e, t) {
                     return this.isMuted(e) || this.isCategoryMuted(e, t) || this.isChannelMuted(e, t)
                 }
@@ -42162,11 +42168,7 @@
                     return f.hasFlag(n, T.ChannelNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? m.UnreadSetting.ALL_MESSAGES : f.hasFlag(n, T.ChannelNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? m.UnreadSetting.ONLY_MENTIONS : m.UnreadSetting.UNSET
                 }
                 getChannelUnreadMode(e) {
-                    if (d.THREAD_CHANNEL_TYPES.has(e.type)) return c.default.isMuted(e.id) ? m.UnreadMode.NONE : m.UnreadMode.IMPORTANT;
-                    if (this.getMutedChannels(e.guild_id).has(e.id)) return m.UnreadMode.NONE;
-                    if (!W()) return m.UnreadMode.IMPORTANT;
-                    let t = this.getChannelUnreadSetting(e.guild_id, e.id);
-                    return t === m.UnreadSetting.UNSET && (null != e.parent_id && (t = this.getChannelUnreadSetting(e.guild_id, e.parent_id)), t === m.UnreadSetting.UNSET && (t = this.getGuildUnreadSetting(e.guild_id)) === m.UnreadSetting.UNSET) ? this.resolvedMessageNotifications(e) === _.UserNotificationSettings.ALL_MESSAGES ? m.UnreadMode.IMPORTANT : m.UnreadMode.LESS_IMPORTANT : t === m.UnreadSetting.ALL_MESSAGES ? m.UnreadMode.IMPORTANT : m.UnreadMode.LESS_IMPORTANT
+                    return d.THREAD_CHANNEL_TYPES.has(e.type) ? c.default.isMuted(e.id) ? m.UnreadMode.NONE : m.UnreadMode.IMPORTANT : this.getMutedChannels(e.guild_id).has(e.id) ? m.UnreadMode.NONE : W() ? this.resolveUnreadSetting(e) === m.UnreadSetting.ALL_MESSAGES ? m.UnreadMode.IMPORTANT : m.UnreadMode.LESS_IMPORTANT : m.UnreadMode.IMPORTANT
                 }
             }
             K.displayName = "UserGuildSettingsStore", K.persistKey = "collapsedGuilds", K.migrations = [e => ({
@@ -49666,7 +49668,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254158"
+                                build_number: "254173"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63037,4 +63039,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.07e1ebba2f656ed43547.js.map
+//# sourceMappingURL=72243.ce89e33f536083bcb94c.js.map
