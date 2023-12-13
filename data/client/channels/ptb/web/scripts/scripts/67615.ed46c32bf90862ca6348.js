@@ -2613,7 +2613,7 @@
                     return this.queue.length >= this.maxSize
                 }
                 drain(e, t) {
-                    switch (this.logger.log("Draining Message Queue with: ", e), e.type) {
+                    switch (this.logger.log("Draining Message Queue with: ", e.type), e.type) {
                         case 0:
                             this.handleSend(e.message, t);
                             break;
@@ -26243,7 +26243,7 @@
                         isPushNotification: i
                     } = e, a = r.default.getOrCreate(t);
                     if (i) {
-                        D.log("Inserting message tapped on from a push notification", n), r.default.commit(a.receivePushNotification(n));
+                        D.log("Inserting message tapped on from a push notification", n.id, n.channel_id), r.default.commit(a.receivePushNotification(n));
                         return
                     }
                     if (!a.ready) return !1;
@@ -33754,4 +33754,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.10b603b54c7e65d7066e.js.map
+//# sourceMappingURL=67615.ed46c32bf90862ca6348.js.map
