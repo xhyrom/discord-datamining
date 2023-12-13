@@ -17981,6 +17981,14 @@
                 wrapper: "wrapper__26def"
             }
         },
+        707154: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                keybindIcon: "keybindIcon__980d1",
+                keybindIndicator: "keybindIndicator_d07e29",
+                keybindIndicatorText: "keybindIndicatorText_b8f3a8"
+            }
+        },
         906664: function(e, t, o) {
             "use strict";
             e.exports = {
