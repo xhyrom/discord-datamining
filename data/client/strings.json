@@ -4647,6 +4647,7 @@
   "SCOPE_UNSUPPORTED_ON_ANDROID": "\"Not supported within Android app\"",
   "SCOPE_UNSUPPORTED_ON_ANDROID_DESCRIPTION": "\"This OAuth2 scope is not supported within the app yet.\\nGood news though, it does work on your mobile web browser! So please open it there.\"",
   "OAUTH2_GO_TO_SERVER_NAME_CTA": "\"Go to **!!{guildName}!!**\"",
+  "OAUTH2_GO_TO_SERVER_DEFAULT_CTA": "\"Go to Server\"",
   "SETTINGS_TWO_FA": "\"Multi-Factor Authentication\"",
   "TWO_FA": "\"Authenticator App\"",
   "TWO_FA_DESCRIPTION": "\"Configuring an authenticator app is a good way to add an extra layer of security to your Discord account to make sure that only you have the ability to log in.\"",
