@@ -21435,28 +21435,32 @@
                     label: "Clips Experiment",
                     defaultConfig: {
                         enableClips: !1,
-                        ignorePlatformRestriction: !1
+                        ignorePlatformRestriction: !1,
+                        showClipsHeaderEntrypoint: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "Clips without upsells",
                         config: {
                             enableClips: !0,
-                            ignorePlatformRestriction: !1
+                            ignorePlatformRestriction: !1,
+                            showClipsHeaderEntrypoint: !0
                         }
                     }, {
                         id: 2,
                         label: "Clips with upsells",
                         config: {
                             enableClips: !0,
-                            ignorePlatformRestriction: !1
+                            ignorePlatformRestriction: !1,
+                            showClipsHeaderEntrypoint: !0
                         }
                     }, {
                         id: 99,
                         label: "Clips 4 da Developerz",
                         config: {
                             enableClips: !0,
-                            ignorePlatformRestriction: !0
+                            ignorePlatformRestriction: !0,
+                            showClipsHeaderEntrypoint: !0
                         }
                     }]
                 }),
@@ -21657,6 +21661,9 @@
                 }
                 hasClips() {
                     return C.hasClips
+                }
+                getNewClipIds() {
+                    return C.newClipIds
                 }
             }
             A.displayName = "ClipsStore", A.persistKey = "ClipsStore", A.migrations = [e => ({
@@ -22818,7 +22825,7 @@
                 }
             }), n("222007");
             var i = n("151426");
-            let r = new Set([i.DismissibleContent.APPLICATION_COMMAND_TOOLTIP, i.DismissibleContent.NOW_PLAYING_CONSENT_CARD, i.DismissibleContent.GUILD_INSIGHTS_ACCESS_RATE_NEW, i.DismissibleContent.FORUM_CHANNEL_UPSELL_MODAL, i.DismissibleContent.FORUM_CHANNEL_HELPER_CARD, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.COMMANDS_MIGRATION_UPSELL_MODAL, i.DismissibleContent.HUB_BACK_TO_SCHOOL_UPSELL, i.DismissibleContent.CHANNEL_BROWSER_NUX, i.DismissibleContent.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL, i.DismissibleContent.GG_ANNOUNCEMENT, i.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL, i.DismissibleContent.SEASONAL_GIFTING_COACHMARK_2022, i.DismissibleContent.CLIENT_THEMES_SETTINGS_BADGE, i.DismissibleContent.CLIENT_THEMES_SPARKLE_PREVIEW, i.DismissibleContent.QUEST_1_COMPLETION_TOOLTIP, i.DismissibleContent.SOUNDBOARD_VOLUME_EDUCATION, i.DismissibleContent.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE, i.DismissibleContent.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE, i.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL, i.DismissibleContent.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK, i.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, i.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_BADGE, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_FLIP, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_FLIP, i.DismissibleContent.RECURRING_CONTACT_SYNC_PROMPT, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE, i.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER, i.DismissibleContent.PROFILE_EFFECT_SHOP_NEW_BADGE, i.DismissibleContent.COLLECTIBLES_SHOP_TAB_NEW_BADGE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP, i.DismissibleContent.Q4_MARKETING_PAGE_HEADER_ANIMATION, i.DismissibleContent.DISXCORE_PROFILE_EFFECTS_NEW_BADGE, i.DismissibleContent.COLLECTIBLES_SHOP_FOR_ALL_NEW_BADGE, i.DismissibleContent.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS])
+            let r = new Set([i.DismissibleContent.APPLICATION_COMMAND_TOOLTIP, i.DismissibleContent.NOW_PLAYING_CONSENT_CARD, i.DismissibleContent.GUILD_INSIGHTS_ACCESS_RATE_NEW, i.DismissibleContent.FORUM_CHANNEL_UPSELL_MODAL, i.DismissibleContent.FORUM_CHANNEL_HELPER_CARD, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.COMMANDS_MIGRATION_UPSELL_MODAL, i.DismissibleContent.HUB_BACK_TO_SCHOOL_UPSELL, i.DismissibleContent.CHANNEL_BROWSER_NUX, i.DismissibleContent.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL, i.DismissibleContent.GG_ANNOUNCEMENT, i.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL, i.DismissibleContent.SEASONAL_GIFTING_COACHMARK_2022, i.DismissibleContent.CLIENT_THEMES_SETTINGS_BADGE, i.DismissibleContent.CLIENT_THEMES_SPARKLE_PREVIEW, i.DismissibleContent.QUEST_1_COMPLETION_TOOLTIP, i.DismissibleContent.SOUNDBOARD_VOLUME_EDUCATION, i.DismissibleContent.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE, i.DismissibleContent.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE, i.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL, i.DismissibleContent.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK, i.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, i.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_BADGE, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_FLIP, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_FLIP, i.DismissibleContent.RECURRING_CONTACT_SYNC_PROMPT, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE, i.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER, i.DismissibleContent.PROFILE_EFFECT_SHOP_NEW_BADGE, i.DismissibleContent.COLLECTIBLES_SHOP_TAB_NEW_BADGE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP, i.DismissibleContent.DISXCORE_PROFILE_EFFECTS_NEW_BADGE, i.DismissibleContent.COLLECTIBLES_SHOP_FOR_ALL_NEW_BADGE, i.DismissibleContent.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS])
         },
         585653: function(e, t, n) {
             "use strict";
@@ -29776,14 +29783,11 @@
                 PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: function() {
                     return eh
                 },
-                PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: function() {
+                PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: function() {
                     return ep
                 },
-                PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: function() {
-                    return e_
-                },
                 SubscriptionTrials: function() {
-                    return eS
+                    return e_
                 },
                 PremiumUpsellTypes: function() {
                     return o
@@ -29792,28 +29796,28 @@
                     return l
                 },
                 SKU_ID_PURCHASED_FLAGS: function() {
-                    return em
+                    return eS
                 },
                 OUTBOUND_PROMOTION_REDEMPTION_EXPIRATION_WINDOW: function() {
-                    return eT
+                    return em
                 },
                 MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
-                    return eg
+                    return eT
                 },
                 IncrementalStickerCountsByTier: function() {
-                    return eI
+                    return eg
                 },
                 TotalStickerCountsByTier: function() {
-                    return eC
+                    return eI
                 },
                 TotalSoundboardSoundCountsByTier: function() {
-                    return ev
+                    return eC
                 },
                 BoostedGuildFeatures: function() {
-                    return eA
+                    return ev
                 },
                 ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
-                    return eR
+                    return eA
                 },
                 AnalyticsPremiumFeatureNames: function() {
                     return u
@@ -29822,13 +29826,13 @@
                     return c
                 },
                 DISCOUNTS: function() {
-                    return eN
+                    return eR
                 },
                 StreamQualities: function() {
                     return d
                 },
                 StreamQualitiesToPremiumType: function() {
-                    return eO
+                    return eN
                 },
                 PremiumMarketingEntrypoints: function() {
                     return E
@@ -29837,7 +29841,7 @@
                     return f
                 },
                 PremiumUserLimits: function() {
-                    return eD
+                    return eO
                 },
                 BoostingUpsellAction: function() {
                     return _
@@ -29846,16 +29850,16 @@
                     return S
                 },
                 LegacyPricingCountries: function() {
-                    return ey
+                    return eD
                 },
                 LegacySeasonalGiftStyles: function() {
-                    return eL
+                    return ey
                 },
                 SeasonalGiftStyles2023: function() {
-                    return eP
+                    return eL
                 },
                 AllSeasonalGiftStyles: function() {
-                    return eb
+                    return eP
                 }
             }), n("222007");
             var i, r, s, a, o, l, u, c, d, E, f, h, p, _, S, m, T, g, I, C, v, A, R, N, O, D, y, L, P, b, M = n("866227"),
@@ -30070,9 +30074,8 @@
                 eE = "1004850445463584768",
                 ef = "1073698058383917056",
                 eh = "1070132870233980928",
-                ep = "1161363847311785984",
-                e_ = "1150904354090532864",
-                eS = Object.freeze({
+                ep = "1150904354090532864",
+                e_ = Object.freeze({
                     [eo]: {
                         id: eo,
                         skus: ["521847234246082599"]
@@ -30104,40 +30107,36 @@
                     [ef]: {
                         id: ef,
                         skus: ["521847234246082599"]
-                    },
-                    [ep]: {
-                        id: ep,
-                        skus: ["521847234246082599"]
                     }
                 });
             (C = o || (o = {})).ANIMATED_GUILD_BANNER_TOOLTIP = "animated_guild_banner_tooltip", C.EMOJI_PICKER_SEARCH = "emoji_picker_search", C.EMOJI_PICKER_EMOJI_CLICKED = "emoji_picker_emoji_clicked", C.EMOJI_PICKER_STICKER_CLICKED = "emoji_picker_sticker_clicked", C.EMOJI_PICKER_REACTION_EMOJI_CLICKED = "emoji_picker_reaction_emoji_clicked", C.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED = "emoji_picker_super_reaction_emoji_clicked", C.EMOJI_PICKER_STATUS_EMOJI_CLICKED = "emoji_picker_status_emoji_clicked", C.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED = "emoji_picker_top_server_emoji_clicked", C.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED = "emoji_picker_newly_added_emoji_clicked", C.EMOJI_AUTOCOMPLETE_INLINE = "emoji_autocomplete_inline", C.EMOJI_AUTOCOMPLETE_MODAL = "emoji_autocomplete_modal", C.EMOJI_IN_MESSAGE_HOVER = "emoji_in_message_hover", C.EMOJI_IN_REACTION_HOVER = "emoji_in_reaction_hover", C.EMOJI_IN_BURST_REACTION_HOVER = "emoji_in_burst_reaction_hover", C.EMOJI_IN_BURST_REACTION_HOVER_UPSELL = "emoji_in_burst_reaction_hover_upsell", C.STICKER_IN_MESSAGE_HOVER = "sticker_in_message_hover", C.EMPTY_STICKER_PICKER_UPSELL = "empty_sticker_picker_upsell", C.STREAM_QUALITY_INDICATOR = "stream_quality_indicator", C.GIFT_STREAM_QUALITY_INDICATOR = "gift_stream_quality_indicator", C.STREAM_QUALITY_UPSELL = "stream_quality_upsell", C.MESSAGE_LENGTH_UPSELL = "message_length_upsell", C.MESSAGE_LENGTH_IN_EDITOR_UPSELL = "message_length_in_editor_upsell", C.CUSTOM_PROFILE_UPSELL = "custom profiles upsell modal", C.CUSTOM_PROFILE_TRY_OUT_UPSELL = "try out custom profile in settings upsell", C.VIDEO_BACKGROUNDS_MODAL = "video backgrounds modal", C.VIDEO_BACKGROUNDS_INLINE = "video backgrounds inline", C.GUILD_CAP_INLINE_SERVER_LIST = "guild_cap_inline_server_list", C.GUILD_PREMIUM_UPSELL_MODAL = "premium guild premium upsell modal", C.GUILD_CAP_INLINE_INVITE_MODAL = "guild_cap_inline_invite_modal", C.GUILD_CAP_MODAL_UPSELL = "guild_cap_modal_upsell", C.PREMIUM_GUILD_IDENTITY_MODAL = "premium guild identity upsell alert", C.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON = "custom profiles settings banner upsell", C.CUSTOM_PROFILES_PROFILE_BANNER_SOCIAL_UPSELL = "custom profiles profile banner social upsell", C.STICKER_PICKER_UPSELL = "sticker_picker_upsell", C.ANIMATED_AVATAR_PREVIEW_GIF_MODAL = "animated avatar preview gif modal", C.PREMIUM_PROGRESS_BAR = "premium_progress_bar_tooltip", C.INVITE_SPLASH_UPSELL = "premium_invite_splash_upsell", C.ANIMATED_USER_AVATAR_MODAL = "animated user avatar upsell modal", C.UPLOAD_ERROR_UPSELL = "upload error upsell", C.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE = "premium guild member profile upsell inline", C.CONCURRENT_ACTIVITIES = "Concurrent Activities", C.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED = "premium_uncancel_winback_modal_viewed", C.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET = "animated_video_background_new_preset", C.LOW_PRICE_EXPERIMENT_TOOLTIP = "low_price_experiment_tooltip", C.PREMIUM_PROFILE_BADGE_UPSELL = "premium_profile_badge_upsell", C.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "emoji", C.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "profile customization", C.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "hd streaming", C.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "larger file uploads", C.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "bogo", C.VOICE_CHANNEL_EFFECTS_UPSELL = "voice_channel_effects_upsell", C.VOICE_CHANNEL_EFFECTS_BAR_EMOJI_UPSELL = "Voice Channel Effect Bar Emoji Upsell", C.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED = "voice_channel_effects_toggle_clicked", C.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED = "voice_channel_effects_toggle_clicked_expanded", C.PROFILE_THEME_UPSELL_MODAL = "profile_theme_upsell_modal", C.PROFILE_EFFECTS_INLINE_SETTINGS = "profile_effects_inline_settings", C.PROFILE_EFFECTS_INLINE_SETTINGS_MOBILE = "profile_effects_inline_settings_mobile", C.HIGH_VIDEO_QUALITY_UPSELL = "high_video_quality_upsell", C.PREMIUM_PROFILE_TRY_IT_OUT = "premium_profile_try_it_out", C.BURST_REACTION_RAIL_UPSELL = "burst_reaction_rail_upsell", C.BURST_REACTION_UPSELL = "burst_reaction_upsell", C.BURST_REACTION_QUICK_ACTION_UPSELL = "burst_reaction_quick_action_upsell", C.BURST_REACTION_CONTEXT_MENU_UPSELL = "burst_reaction_context_menu_upsell", C.PREMIUM_CLIENT_THEME_TRY_IT_OUT = "premium_client_theme_try_it_out", C.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL = "premium_client_theme_settings_upsell", C.VIDEO_STAGE_LIMIT = "video_stage_limit", C.SOUND_PICKER_SOUND_CLICKED = "sound_picker_sound_clicked", C.APP_ICON_UPSELL = "app_icon_upsell", C.COLLECTIBLES_SHOP = "collectibles_shop", C.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles_profile_settings_upsell", C.COLLECTIBLES_PREMIUM_MARKETING_PAGE_UPSELL = "collectibles_premium_marketing_page_upsell", C.CLIPS_GUILD_SIDEBAR_COACHMARK_PREMIUM_EARLY_ACCESS_UPSELL = "clips_guild_sidebar_coachmark_premium_early_access_upsell", C.CLIPS_GO_LIVE_PREMIUM_EARLY_ACCESS_ROADBLOCK_UPSELL = "clips_go_live_premium_early_access_roadblock_upsell", (v = l || (l = {}))[v.PREMIUM_TIER_1 = 1] = "PREMIUM_TIER_1", v[v.PREMIUM_TIER_2 = 2] = "PREMIUM_TIER_2", v[v.GUILD_BOOST = 4] = "GUILD_BOOST", v[v.PREMIUM_TIER_0 = 8] = "PREMIUM_TIER_0";
-            let em = Object.freeze({
+            let eS = Object.freeze({
                     "978380684370378762": 8,
                     "521846918637420545": 1,
                     "521847234246082599": 2,
                     "590663762298667008": 4
                 }),
-                eT = U.duration(30, "days"),
-                eg = 52428800,
-                eI = {
+                em = U.duration(30, "days"),
+                eT = 52428800,
+                eg = {
                     [w.BoostedGuildTiers.NONE]: 5,
                     [w.BoostedGuildTiers.TIER_1]: 10,
                     [w.BoostedGuildTiers.TIER_2]: 15,
                     [w.BoostedGuildTiers.TIER_3]: 30
                 },
-                eC = {
-                    [w.BoostedGuildTiers.NONE]: eI[w.BoostedGuildTiers.NONE],
-                    [w.BoostedGuildTiers.TIER_1]: eI[w.BoostedGuildTiers.NONE] + eI[w.BoostedGuildTiers.TIER_1],
-                    [w.BoostedGuildTiers.TIER_2]: eI[w.BoostedGuildTiers.NONE] + eI[w.BoostedGuildTiers.TIER_1] + eI[w.BoostedGuildTiers.TIER_2],
-                    [w.BoostedGuildTiers.TIER_3]: eI[w.BoostedGuildTiers.NONE] + eI[w.BoostedGuildTiers.TIER_1] + eI[w.BoostedGuildTiers.TIER_2] + eI[w.BoostedGuildTiers.TIER_3]
+                eI = {
+                    [w.BoostedGuildTiers.NONE]: eg[w.BoostedGuildTiers.NONE],
+                    [w.BoostedGuildTiers.TIER_1]: eg[w.BoostedGuildTiers.NONE] + eg[w.BoostedGuildTiers.TIER_1],
+                    [w.BoostedGuildTiers.TIER_2]: eg[w.BoostedGuildTiers.NONE] + eg[w.BoostedGuildTiers.TIER_1] + eg[w.BoostedGuildTiers.TIER_2],
+                    [w.BoostedGuildTiers.TIER_3]: eg[w.BoostedGuildTiers.NONE] + eg[w.BoostedGuildTiers.TIER_1] + eg[w.BoostedGuildTiers.TIER_2] + eg[w.BoostedGuildTiers.TIER_3]
                 },
-                ev = {
+                eC = {
                     [w.BoostedGuildTiers.NONE]: 8,
                     [w.BoostedGuildTiers.TIER_1]: 24,
                     [w.BoostedGuildTiers.TIER_2]: 36,
                     [w.BoostedGuildTiers.TIER_3]: 48
                 },
-                eA = Object.freeze({
+                ev = Object.freeze({
                     [w.BoostedGuildTiers.NONE]: {
                         features: [],
                         limits: {
@@ -30146,9 +30145,9 @@
                             fileSize: w.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 30,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: ev[w.BoostedGuildTiers.NONE],
+                            soundboardSounds: eC[w.BoostedGuildTiers.NONE],
                             maxConcurrentActivities: 2,
-                            stickers: eC[w.BoostedGuildTiers.NONE],
+                            stickers: eI[w.BoostedGuildTiers.NONE],
                             stageVideoUsers: w.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -30160,9 +30159,9 @@
                             fileSize: w.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: ev[w.BoostedGuildTiers.TIER_1],
+                            soundboardSounds: eC[w.BoostedGuildTiers.TIER_1],
                             maxConcurrentActivities: 3,
-                            stickers: eC[w.BoostedGuildTiers.TIER_1],
+                            stickers: eI[w.BoostedGuildTiers.TIER_1],
                             stageVideoUsers: w.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -30174,9 +30173,9 @@
                             fileSize: 52428800,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: ev[w.BoostedGuildTiers.TIER_2],
+                            soundboardSounds: eC[w.BoostedGuildTiers.TIER_2],
                             maxConcurrentActivities: 5,
-                            stickers: eC[w.BoostedGuildTiers.TIER_2],
+                            stickers: eI[w.BoostedGuildTiers.TIER_2],
                             stageVideoUsers: w.MAX_STAGE_VIDEO_USER_LIMIT_TIER2
                         }
                     },
@@ -30188,16 +30187,16 @@
                             fileSize: 104857600,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: ev[w.BoostedGuildTiers.TIER_3],
+                            soundboardSounds: eC[w.BoostedGuildTiers.TIER_3],
                             maxConcurrentActivities: Number.MAX_SAFE_INTEGER,
-                            stickers: eC[w.BoostedGuildTiers.TIER_3],
+                            stickers: eI[w.BoostedGuildTiers.TIER_3],
                             stageVideoUsers: w.MAX_STAGE_VIDEO_USER_LIMIT_TIER3
                         }
                     }
                 }),
-                eR = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+                eA = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
             (A = u || (u = {})).SOUNDBOARD_PLAY = "soundboard play", A.PROFILE_THEME_COLOR = "profile_theme_color", A.PROFILE_BANNER = "profile_banner", A.ANIMATED_AVATAR = "animated_avatar", A.AVATAR_DECORATION = "avatar_decoration", A.CLIENT_THEME = "client_theme", A.SHARED_CANVAS = "shared_canvas", A.PROFILE_EFFECT = "profile_effect", (R = c || (c = {})).FREE = "free", R.PREMIUM_STANDARD = "premium-standard";
-            let eN = {
+            let eR = {
                 "1024422698568122368": 16,
                 "511651876987469824": 16,
                 "511651885459963904": 16,
@@ -30205,14 +30204,14 @@
                 "642251038925127690": 5
             };
             (N = d || (d = {})).HIGH_STREAMING_QUALITY = "high_streaming_quality", N.MID_STREAMING_QUALITY = "mid_streaming_quality";
-            let eO = Object.freeze({
+            let eN = Object.freeze({
                 high_streaming_quality: 2,
                 mid_streaming_quality: 1
             });
             (O = E || (E = {}))[O.UserSettings = 0] = "UserSettings", O[O.ApplicationStoreHome = 1] = "ApplicationStoreHome", (D = f || (f = {})).USER_NOT_VERIFIED = "user_not_verified", D.NO_CODE_BODY = "no_code_body", D.NO_PROMOTION = "no_promotion", D.CODE_CLAIMED = "code_claimed", D.EXISTING_SUBSCRIBER = "existing_subscriber", D.PREVIOUS_SUBSCRIBER = "previous_subscriber", D.BLOCKED_PAYMENT = "blocked_payment";
-            let eD = Object.freeze({
+            let eO = Object.freeze({
                 3: {
-                    fileSize: eg
+                    fileSize: eT
                 },
                 1: {
                     fileSize: 52428800
@@ -30222,10 +30221,10 @@
                 }
             });
             (y = h || (h = {})).EXPLORE_ALL_PERKS_CLICKED = "explore_all_perks_clicked", y.HELPER_COLLAPSED = "helper_collapsed", y.HELPER_UNCOLLAPSED = "helper_uncollapsed", y.UNLOCK_EMOJI_CLICKED = "unlock_emoji_clicked", y.CUSTOM_PROFILES_CLICKED = "custom_profiles_clicked", y.SERVER_BOOSTS_CLICKED = "server_boosts_clicked", y.HELPER_DISMISSED = "premium_feature_helper_dismissed", y.HELPER_RENDERED = "premium_feature_helper_rendered", (L = p || (p = {})).EMOJI_TUTORIAL_STARTED = "emoji_tutorial_started", L.EMOJI_INTRO_VIEWED = "emoji_intro_viewed", L.EMOJI_PROMPT_VIEWED = "emoji_prompt_viewed", L.CUSTOM_PROFILE_TUTORIAL_STARTED = "custom_profile_tutorial_started", L.CUSTOM_PROFILE_AVATAR_INTRO_VIEWED = "custom_profile_avatar_intro_viewed", L.CUSTOM_PROFILE_AVATAR_DECORATIONS_VIEWED = "custom_profile_avatar_decorations_viewed", L.CUSTOM_PROFILE_BANNER_INTRO_VIEWED = "custom_profile_banner_intro_viewed", L.CUSTOM_PROFILE_THEME_INTRO_VIEWED = "custom_profile_theme_intro_viewed", L.SERVER_PROFILE_INTRO_VIEWED = "server_profile_intro_viewed", L.SERVER_BOOST_TUTORIAL_STARTED = "server_boost_tutorial_started", L.BOOST_INTRO_VIEWED = "boost_intro_viewed", L.BOOST_PROMPT_VIEWED = "boost_prompt_viewed", (P = _ || (_ = {})).BOOST = "boost", P.DISMISS = "dismiss", (b = S || (S = {})).BADGE_TOOLTIP_VIEWED = "share_nitro_bagde_tooltip_viewed", b.BADGE_CLICKED = "share_nitro_badge_clicked", b.FLOW_STARTED = "share_nitro_flow_started", b.FLOW_COMPLETED = "share_nitro_flow_completed";
-            let ey = new Set(["PL", "TR"]),
-                eL = [G.PremiumGiftStyles.SNOWGLOBE, G.PremiumGiftStyles.BOX, G.PremiumGiftStyles.CUP],
-                eP = [G.PremiumGiftStyles.SEASONAL_STANDARD_BOX, G.PremiumGiftStyles.SEASONAL_CAKE, G.PremiumGiftStyles.SEASONAL_COFFEE, G.PremiumGiftStyles.SEASONAL_CHEST],
-                eb = eP.concat(eL)
+            let eD = new Set(["PL", "TR"]),
+                ey = [G.PremiumGiftStyles.SNOWGLOBE, G.PremiumGiftStyles.BOX, G.PremiumGiftStyles.CUP],
+                eL = [G.PremiumGiftStyles.SEASONAL_STANDARD_BOX, G.PremiumGiftStyles.SEASONAL_CAKE, G.PremiumGiftStyles.SEASONAL_COFFEE, G.PremiumGiftStyles.SEASONAL_CHEST],
+                eP = eL.concat(ey)
         },
         45120: function(e, t, n) {
             "use strict";
@@ -47327,6 +47326,10 @@
                     throttlePeriod: 9e5,
                     throttleKeys: e => [e.tab_opened]
                 },
+                [f.AnalyticEvents.NOW_PLAYING_CARD_HOVERED]: {
+                    throttlePeriod: 9e5,
+                    throttleKeys: e => [e.tab_opened]
+                },
                 [f.AnalyticEvents.START_SPEAKING]: {
                     throttlePeriod: 9e5,
                     throttleKeys: e => [e.server]
@@ -49444,7 +49447,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "253706"
+                                build_number: "253927"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -50104,9 +50107,6 @@
                 getPremiumPlanItem: function() {
                     return G
                 },
-                getDefaultPrice: function() {
-                    return w
-                },
                 getPrice: function() {
                     return k
                 },
@@ -50227,11 +50227,8 @@
                 isNewUser: function() {
                     return ey
                 },
-                formatPriceString: function() {
-                    return eL
-                },
                 default: function() {
-                    return eP
+                    return eL
                 }
             }), n("70102"), n("222007"), n("843762"), n("808653"), n("424973");
             var i, r, s, a, o = n("627445"),
@@ -51188,13 +51185,7 @@
                 return n
             }
             let ey = e => null != e && Date.now() - e.createdAt.getTime() < 2592e6;
-
-            function eL(e, t) {
-                let n = (0, R.formatPrice)(e.amount, e.currency),
-                    i = V(t);
-                return "".concat(n, "/").concat(i)
-            }
-            var eP = Object.freeze({
+            var eL = Object.freeze({
                 isNewUser: ey,
                 isPremiumAtLeast: A.isPremiumAtLeast,
                 isPremium: A.isPremium,
@@ -51451,7 +51442,11 @@
                 canUseCollectibles: function(e) {
                     return (0, E.canUserUse)(E.COLLECTIBLES, e)
                 },
-                formatPriceString: eL,
+                formatPriceString: function(e, t) {
+                    let n = (0, R.formatPrice)(e.amount, e.currency),
+                        i = V(t);
+                    return "".concat(n, "/").concat(i)
+                },
                 StreamQuality: r
             })
         },
@@ -62718,4 +62713,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.319d4d1e4dcfc8765f57.js.map
+//# sourceMappingURL=72243.73ea8779ccf478d75982.js.map
