@@ -19083,7 +19083,7 @@
                             color: h.Button.Colors.BRAND,
                             onClick: u,
                             className: g.button,
-                            children: I.default.Messages.OAUTH2_GO_TO_SERVER_NAME_CTA.format({
+                            children: (null == t ? void 0 : t.name.length) > 30 ? I.default.Messages.OAUTH2_GO_TO_SERVER_DEFAULT_CTA : I.default.Messages.OAUTH2_GO_TO_SERVER_NAME_CTA.format({
                                 guildName: null == t ? void 0 : t.name
                             })
                         }), null != s && (0, i.jsx)(h.Button, {
@@ -33754,4 +33754,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.ed46c32bf90862ca6348.js.map
+//# sourceMappingURL=67615.e263cd8045b10900f4b8.js.map
