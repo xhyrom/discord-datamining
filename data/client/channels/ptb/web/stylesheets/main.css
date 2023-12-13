@@ -108534,6 +108534,32 @@ html .invoiceCancelRow_a8669b {
     color: var(--status-danger)
 }
 
+.keybindIndicator_d07e29 {
+    display: flex;
+    opacity: .4;
+    margin-left: 46px;
+    margin-bottom: 4px
+}
+
+.keybindIcon__980d1 {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    border-radius: 4px;
+    margin-right: 4px;
+    padding: 2px
+}
+
+.keybindIndicatorText_b8f3a8 {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 2px 4px;
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    border-radius: 4px;
+    line-height: 14px;
+    text-transform: uppercase
+}
+
 .icon__5e128 {
     width: 16px;
     height: 16px;
@@ -108581,7 +108607,8 @@ html .invoiceCancelRow_a8669b {
     line-height: 16px;
     font-weight: 500;
     padding: 2px 4px;
-    max-width: 158px
+    max-width: 158px;
+    color: var(--text-normal)
 }
 
 .voiceUserWrapper_a2c79e .username__65d62 {
@@ -108589,24 +108616,12 @@ html .invoiceCancelRow_a8669b {
 }
 
 .locked__636b4 {
-    border-radius: 4px
+    border-radius: 4px;
+    background-color: var(--background-primary);
+    color: var(--text-normal)
 }
 
-.theme-dark .username__65d62,
-.theme-light .username__65d62 {
-    color: var(--white-500)
-}
-
-.theme-dark .locked__636b4,
-.theme-light .locked__636b4 {
-    background-color: hsl(var(--black-500-hsl)/.4);
-    color: var(--white-500)
-}
-
-.faded__21e5f {
-    opacity: .6
-}
-
+.faded__21e5f,
 .draggingHeader__3b59b {
     opacity: .4
 }
@@ -108652,7 +108667,7 @@ html .invoiceCancelRow_a8669b {
 
 .streamerControls_d1b5cf {
     background: hsl(var(--primary-700-hsl)/.85);
-    color: var(--white-500);
+    color: var(--text-normal);
     font-size: 14px;
     font-weight: 500;
     padding: 16px 12px;
@@ -108714,7 +108729,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .streamerIcon__78b9b:hover {
-    color: var(--white-500)
+    color: var(--interactive-active)
 }
 
 .canvas_dc9bd7 {
@@ -123878,4 +123893,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.66af1995f1fb707c7644.css.map*/
+/*# sourceMappingURL=app.0dd66fe624dd3fc67ad4.css.map*/

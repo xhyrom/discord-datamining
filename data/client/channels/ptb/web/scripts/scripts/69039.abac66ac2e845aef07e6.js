@@ -22,13 +22,13 @@
                     return A
                 }
             });
-            var l = n("917351"),
-                i = n("913144"),
+            var i = n("917351"),
+                l = n("913144"),
                 u = n("563680"),
                 r = n("816454");
 
             function E(e, t) {
-                i.default.dispatch({
+                l.default.dispatch({
                     type: "WINDOW_FOCUS",
                     windowId: (0, r.getWindowId)(e),
                     focused: t
@@ -36,13 +36,13 @@
             }
 
             function o(e) {
-                i.default.dispatch({
+                l.default.dispatch({
                     type: "WINDOW_HIDDEN",
                     windowId: (0, r.getWindowId)(e)
                 })
             }
-            let d = (0, l.memoize)(e => (0, l.debounce)((t, n) => {
-                i.default.dispatch({
+            let d = (0, i.memoize)(e => (0, i.debounce)((t, n) => {
+                l.default.dispatch({
                     type: "WINDOW_RESIZED",
                     windowId: e,
                     width: t,
@@ -58,7 +58,7 @@
 
             function s(e) {
                 let t = (0, r.getWindowId)(e);
-                i.default.dispatch({
+                l.default.dispatch({
                     type: "WINDOW_FULLSCREEN_CHANGE",
                     windowId: t,
                     isElementFullscreen: (0, u.isFullScreen)(null, e.document)
@@ -68,7 +68,7 @@
             function _(e) {
                 let t = (0, r.getWindowId)(e),
                     n = e.document;
-                i.default.dispatch({
+                l.default.dispatch({
                     type: "WINDOW_INIT",
                     windowId: t,
                     isElementFullscreen: (0, u.isFullScreen)(null, n),
@@ -79,7 +79,7 @@
             }
 
             function A(e) {
-                i.default.dispatch({
+                l.default.dispatch({
                     type: "WINDOW_UNLOAD",
                     windowId: (0, r.getWindowId)(e)
                 })
@@ -89,11 +89,11 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return i
                 }
             });
-            var l, i = n("666038");
-            l = class extends i.default {
+            var i, l = n("666038");
+            i = class extends l.default {
                 constructor(e) {
                     super(), this.id = e.id || "", this.widgets = e.widgets || []
                 }
@@ -103,11 +103,11 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return i
                 }
             });
-            var l, i = n("666038");
-            l = class extends i.default {
+            var i, l = n("666038");
+            i = class extends l.default {
                 constructor(e) {
                     super(), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type, this.anchor = {
                         left: 0,
@@ -125,7 +125,7 @@
         },
         505507: function(e, t, n) {
             "use strict";
-            let l, i;
+            let i, l;
             n.r(t), n.d(t, {
                 default: function() {
                     return g
@@ -140,11 +140,11 @@
                 A = n("684849"),
                 c = n("611310"),
                 O = n("80687"),
-                f = n("49111");
+                I = n("49111");
             (r = u || (u = {})).REQUIRED = "REQUIRED", r.OPTIONAL = "OPTIONAL", r.OPTIONAL_DEFAULT = "OPTIONAL_DEFAULT";
-            let I = "migrated",
-                T = {
-                    [f.OverlayWidgets.GUILDS]: {
+            let T = "migrated",
+                f = {
+                    [I.OverlayWidgets.GUILDS]: {
                         minSize: {
                             width: 312,
                             height: 300
@@ -167,7 +167,7 @@
                             pinned: !1
                         }
                     },
-                    [f.OverlayWidgets.TEXT]: {
+                    [I.OverlayWidgets.TEXT]: {
                         minSize: {
                             width: 430,
                             height: 300
@@ -190,7 +190,7 @@
                             pinned: !0
                         }
                     },
-                    [f.OverlayWidgets.VOICE]: {
+                    [I.OverlayWidgets.VOICE]: {
                         minSize: {
                             width: 272,
                             height: 100
@@ -213,7 +213,7 @@
                             pinned: !0
                         }
                     },
-                    [f.OverlayWidgets.GUILDS_TEXT]: {
+                    [I.OverlayWidgets.GUILDS_TEXT]: {
                         minSize: {
                             height: 300,
                             width: 610
@@ -236,7 +236,7 @@
                             pinned: !1
                         }
                     },
-                    [f.OverlayWidgets.LOBBY_VOICE]: {
+                    [I.OverlayWidgets.LOBBY_VOICE]: {
                         minSize: {
                             width: 272,
                             height: 100
@@ -262,50 +262,50 @@
                 };
 
             function h(e, t) {
-                let n = i[e];
+                let n = l[e];
                 if (null == n) return !1;
-                let u = l[n.layoutId];
+                let u = i[n.layoutId];
                 return null != u && t(n, u)
             }
 
             function L(e) {
                 var t;
-                return null === (t = T[e]) || void 0 === t ? void 0 : t.defaultSettings
+                return null === (t = f[e]) || void 0 === t ? void 0 : t.defaultSettings
             }
             class S extends a.default.PersistedStore {
                 initialize(e) {
-                    null != e && null != e.layouts && null != e.widgets ? (l = function(e) {
+                    null != e && null != e.layouts && null != e.widgets ? (i = function(e) {
                         let t = {};
                         return o.forEach(e, (e, n) => {
                             t[n] = new A.default(e)
                         }), t
-                    }(e.layouts), i = function(e) {
+                    }(e.layouts), l = function(e) {
                         let t = {};
                         return o.forEach(e, (e, n) => {
                             t[n] = new c.default(e)
                         }), t
-                    }(e.widgets)) : (l = {}, i = {});
+                    }(e.widgets)) : (i = {}, l = {});
                     let t = !1,
                         n = [];
-                    o.forEach(T, (e, t) => {
+                    o.forEach(f, (e, t) => {
                         "REQUIRED" === e.layoutPolicy && n.push(t)
-                    }), o.forEach(l, (e, u) => {
+                    }), o.forEach(i, (e, u) => {
                         let r = this.getWidgetsForLayout(u),
                             E = !1;
                         for (let e of n) {
                             let n = r.find(t => t.type === e);
                             if (null != n) continue;
                             E = t = !0;
-                            let l = (0, d.v4)();
+                            let i = (0, d.v4)();
                             n = new c.default({
                                 ...this.getWidgetDefaultSettings(e),
                                 type: e,
-                                id: l,
+                                id: i,
                                 layoutId: u,
                                 zIndex: r.length
-                            }), r.push(n), i = {
-                                ...i,
-                                [l]: n
+                            }), r.push(n), l = {
+                                ...l,
+                                [i]: n
                             }
                         }
                         E && (e = e.set("widgets", r.map(e => {
@@ -313,34 +313,34 @@
                                 id: t
                             } = e;
                             return t
-                        })), l = {
-                            ...l,
+                        })), i = {
+                            ...i,
                             [u]: e
                         })
-                    }), o.forEach(i, (e, n) => {
-                        let u = l[e.layoutId];
-                        (null == u || 0 > u.widgets.indexOf(n)) && (i = {
-                            ...i
-                        }, delete i[n], t = !0)
+                    }), o.forEach(l, (e, n) => {
+                        let u = i[e.layoutId];
+                        (null == u || 0 > u.widgets.indexOf(n)) && (l = {
+                            ...l
+                        }, delete l[n], t = !0)
                     }), t && (this.persist(), this.emitChange())
                 }
                 getState() {
                     return {
-                        layouts: l,
-                        widgets: i
+                        layouts: i,
+                        widgets: l
                     }
                 }
                 getLayouts() {
-                    return l
-                }
-                getLayout(e) {
-                    return l[e]
-                }
-                getAllWidgets() {
                     return i
                 }
-                getWidget(e) {
+                getLayout(e) {
                     return i[e]
+                }
+                getAllWidgets() {
+                    return l
+                }
+                getWidget(e) {
+                    return l[e]
                 }
                 getWidgetsForLayout(e) {
                     let t = this.getLayout(e);
@@ -350,27 +350,27 @@
                     }, [])
                 }
                 getWidgetConfig(e) {
-                    return T[e]
+                    return f[e]
                 }
                 getWidgetDefaultSettings(e) {
                     return L(e)
                 }
                 getWidgetType(e) {
-                    let t = i[e];
+                    let t = l[e];
                     return null != t ? t.type : ""
                 }
                 getRegisteredWidgets() {
-                    return T
+                    return f
                 }
                 getDefaultLayout(e) {
                     let t = [];
-                    return o.forEach(this.getRegisteredWidgets(), (n, l) => {
+                    return o.forEach(this.getRegisteredWidgets(), (n, i) => {
                         switch (n.layoutPolicy) {
                             case "REQUIRED":
                             case "OPTIONAL_DEFAULT":
                                 t.push({
                                     ...n.defaultSettings,
-                                    type: l,
+                                    type: i,
                                     id: (0, d.v4)(),
                                     layoutId: e
                                 })
@@ -385,19 +385,19 @@
                     {
                         pinnedWidgets: t,
                         positions: n,
-                        sizes: l,
-                        v: i
+                        sizes: i,
+                        v: l
                     } = e;
-                if (5 === i && t) {
+                if (5 === l && t) {
                     let e = [],
-                        i = t.map(t => {
-                            let i = null != n ? n[t] : null,
-                                u = null != l ? l[t] : null,
+                        l = t.map(t => {
+                            let l = null != n ? n[t] : null,
+                                u = null != i ? i[t] : null,
                                 r = {
                                     id: t,
-                                    layoutId: I,
+                                    layoutId: T,
                                     type: t,
-                                    anchor: i || {
+                                    anchor: l || {
                                         top: -1,
                                         left: -1,
                                         bottom: null,
@@ -414,9 +414,9 @@
                         });
                     return {
                         layouts: [
-                            [I, {
-                                id: I,
-                                widgets: i
+                            [T, {
+                                id: T,
+                                widgets: l
                             }]
                         ],
                         widgets: e
@@ -430,48 +430,48 @@
                 let {
                     layouts: t,
                     widgets: n
-                } = e, l = new Set(Object.keys(f.OverlayWidgets)), i = Array.from(n).filter(e => {
+                } = e, i = new Set(Object.keys(I.OverlayWidgets)), l = Array.from(n).filter(e => {
                     let [t] = e;
-                    return !l.has(t)
+                    return !i.has(t)
                 }), u = Array.from(t).filter(e => {
                     let [t] = e;
-                    return t !== I
+                    return t !== T
                 });
                 return u.forEach(e => {
-                    let [t, n] = e, l = null, u = null;
+                    let [t, n] = e, i = null, u = null;
                     if (n.widgets.find(e => {
-                            let n = i.find(n => {
-                                let [l, i] = n;
-                                return l === e && i.layoutId === t
+                            let n = l.find(n => {
+                                let [i, l] = n;
+                                return i === e && l.layoutId === t
                             });
-                            return null != n && (null == u && n[1].type === f.OverlayWidgets.VOICE && (u = n[0]), null == l && n[1].type === f.OverlayWidgets.TEXT && (l = n[1].pinned), null != l && null != u || void 0)
-                        }), l || null == u) return;
+                            return null != n && (null == u && n[1].type === I.OverlayWidgets.VOICE && (u = n[0]), null == i && n[1].type === I.OverlayWidgets.TEXT && (i = n[1].pinned), null != i && null != u || void 0)
+                        }), i || null == u) return;
                     let r = (0, d.v4)();
-                    n.widgets = [u, r], i.push([r, {
-                        ...L(f.OverlayWidgets.GUILDS_TEXT),
-                        type: f.OverlayWidgets.GUILDS_TEXT,
+                    n.widgets = [u, r], l.push([r, {
+                        ...L(I.OverlayWidgets.GUILDS_TEXT),
+                        type: I.OverlayWidgets.GUILDS_TEXT,
                         id: r,
                         layoutId: t,
                         zIndex: 2
                     }])
                 }), {
-                    widgets: i,
+                    widgets: l,
                     layouts: u
                 }
             }, e => {
                 let {
                     layouts: t,
                     widgets: n
-                } = e, l = t.reduce((e, t) => {
-                    let [n, l] = t;
-                    return e[n] = l, e
-                }, {}), i = n.reduce((e, t) => {
-                    let [n, l] = t;
-                    return e[n] = l, e
+                } = e, i = t.reduce((e, t) => {
+                    let [n, i] = t;
+                    return e[n] = i, e
+                }, {}), l = n.reduce((e, t) => {
+                    let [n, i] = t;
+                    return e[n] = i, e
                 }, {});
                 return {
-                    layouts: l,
-                    widgets: i
+                    layouts: i,
+                    widgets: l
                 }
             }];
             var g = new S(_.default, {
@@ -481,14 +481,14 @@
                         widgets: n,
                         defaultResolution: u
                     } = e;
-                    if (null != l[t]) return !1;
+                    if (null != i[t]) return !1;
                     let r = [];
                     n.forEach((e, t) => {
                         let n = function(e) {
-                                let t = l[I];
+                                let t = i[T];
                                 if (null != t)
                                     for (let n of t.widgets) {
-                                        let t = i[n];
+                                        let t = l[n];
                                         if (null != t && t.type === e) return t
                                     }
                                 return null
@@ -497,12 +497,12 @@
                                 ...e,
                                 zIndex: t
                             };
-                        "" === E.id && (E.id = (0, d.v4)()), null != n && (E.pinned = n.pinned, -1 !== n.anchor.left && (E.anchor = (0, O.getAnchorPercentageFromLayoutSize)(n.anchor, u)), -1 !== n.size.width && (E.size = (0, O.getSizePercentageFromSize)(n.size, u))), i = {
-                            ...i,
+                        "" === E.id && (E.id = (0, d.v4)()), null != n && (E.pinned = n.pinned, -1 !== n.anchor.left && (E.anchor = (0, O.getAnchorPercentageFromLayoutSize)(n.anchor, u)), -1 !== n.size.width && (E.size = (0, O.getSizePercentageFromSize)(n.size, u))), l = {
+                            ...l,
                             [E.id]: new c.default(E)
                         }, r.push(E.id)
-                    }), l = {
-                        ...l,
+                    }), i = {
+                        ...i,
                         [t]: new A.default({
                             id: t,
                             widgets: r
@@ -515,8 +515,8 @@
                     } = e;
                     return h(t, (e, t) => {
                         (function(e) {
-                            i = {
-                                ...i,
+                            l = {
+                                ...l,
                                 [e.id]: e.set("pinned", !e.pinned)
                             }
                         })(e)
@@ -526,17 +526,17 @@
                     let {
                         widgetId: t,
                         anchor: n,
-                        size: l
+                        size: i
                     } = e;
                     return h(t, (e, t) => (function(e, t, n) {
-                        i = {
-                            ...i,
+                        l = {
+                            ...l,
                             [e.id]: e.merge({
                                 anchor: t,
                                 size: n
                             })
                         }
-                    })(e, n, l))
+                    })(e, n, i))
                 },
                 LAYOUT_SET_TOP_WIDGET: function(e) {
                     let {
@@ -546,19 +546,19 @@
                         let n = function(e) {
                             let t = [];
                             return e.widgets.forEach(e => {
-                                let n = i[e];
+                                let n = l[e];
                                 null != n && t.push(n)
                             }), t
                         }(e);
                         n.sort((e, t) => e.zIndex - t.zIndex);
-                        let l = n.findIndex(e => e.id === t);
-                        if (l === n.length - 1) return !1;
-                        n.push(n.splice(l, 1)[0]);
+                        let i = n.findIndex(e => e.id === t);
+                        if (i === n.length - 1) return !1;
+                        n.push(n.splice(i, 1)[0]);
                         for (let e = 0; e < n.length; e++) {
                             let t = n[e];
                             (function(e, t) {
-                                i = {
-                                    ...i,
+                                l = {
+                                    ...l,
                                     [e.id]: e.set("zIndex", t)
                                 }
                             })(t, e)
@@ -570,15 +570,15 @@
                     let {
                         widgetId: t
                     } = e;
-                    i = {
-                        ...i
-                    }, delete i[t], o.forEach(l, (e, n) => {
-                        if (n === I) return;
-                        let i = e.widgets.indexOf(t);
-                        if (i >= 0) {
+                    l = {
+                        ...l
+                    }, delete l[t], o.forEach(i, (e, n) => {
+                        if (n === T) return;
+                        let l = e.widgets.indexOf(t);
+                        if (l >= 0) {
                             let t = [...e.widgets];
-                            t.splice(i, 1), l = {
-                                ...l,
+                            t.splice(l, 1), i = {
+                                ...i,
                                 [n]: e.set("widgets", t)
                             }
                         }
@@ -587,14 +587,14 @@
                 LAYOUT_DELETE_ALL_WIDGETS: function(e) {
                     let {
                         layoutId: t
-                    } = e, n = l[t];
+                    } = e, n = i[t];
                     if (null == n) return !1;
                     n.widgets.forEach(e => {
-                        i = {
-                            ...i
-                        }, delete i[e]
-                    }), l = {
-                        ...l,
+                        l = {
+                            ...l
+                        }, delete l[e]
+                    }), i = {
+                        ...i,
                         [n.id]: n.set("widgets", [])
                     }
                 },
@@ -604,15 +604,15 @@
                     } = e;
                     t.forEach(e => {
                         let t = new c.default(e),
-                            n = l[t.layoutId];
+                            n = i[t.layoutId];
                         if (null == n) throw Error("LayoutStore - handleAddWidget: Invalid layoutId");
-                        t = t.set("zIndex", n.widgets.length), i = {
-                            ...i,
+                        t = t.set("zIndex", n.widgets.length), l = {
+                            ...l,
                             [t.id]: t
                         };
                         let u = [...n.widgets, t.id];
-                        l = {
-                            ...l,
+                        i = {
+                            ...i,
                             [n.id]: n.set("widgets", u)
                         }
                     })
@@ -626,8 +626,8 @@
                     return F
                 }
             }), n("222007"), n("70102");
-            var l = n("446674"),
-                i = n("95410"),
+            var i = n("446674"),
+                l = n("95410"),
                 u = n("913144"),
                 r = n("741148"),
                 E = n("121338"),
@@ -639,9 +639,9 @@
                 A = n("505507"),
                 c = n("162771"),
                 O = n("773336"),
-                f = n("50885"),
-                I = n("819068"),
-                T = n("471671"),
+                I = n("50885"),
+                T = n("819068"),
+                f = n("471671"),
                 h = n("49111"),
                 L = n("6791");
             let S = Object.freeze({
@@ -654,7 +654,7 @@
                     textChatNotifications: h.OverlayNotificationTextChatTypes.ENABLED,
                     disableExternalLinkAlert: !1,
                     disablePinTutorial: !1,
-                    showMuteDeafenKeybinds: !0,
+                    showKeybindIndicators: !0,
                     textWidgetOpacity: L.OpacityBounds.LOWER
                 }),
                 g = null,
@@ -666,9 +666,9 @@
                 N = !1,
                 P = !1,
                 U = new Set,
-                M = !1;
+                w = !1;
 
-            function w(e) {
+            function M(e) {
                 let t = C[e];
                 return null == t && (t = C[e] = {
                     ...S
@@ -677,31 +677,31 @@
             let Y = {
                     ...S
                 },
-                v = new Set(["AUDIO_SET_INPUT_DEVICE", "AUDIO_SET_INPUT_VOLUME", "AUDIO_SET_LOCAL_VIDEO_DISABLED", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_SET_MODE", "AUDIO_SET_NOISE_CANCELLATION", "AUDIO_SET_NOISE_SUPPRESSION", "AUDIO_SET_OUTPUT_DEVICE", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "BILLING_SUBSCRIPTION_UPDATE_SUCCESS", "CATEGORY_COLLAPSE", "CATEGORY_EXPAND", "CHANNEL_ACK", "CHANNEL_PRELOAD", "GIFT_CODE_REDEEM", "GIFT_CODE_REDEEM_FAILURE", "GIFT_CODE_REDEEM_SUCCESS", "HOTSPOT_HIDE", "INVITE_MODAL_CLOSE", "LAYOUT_CREATE", "LAYOUT_CREATE_WIDGETS", "LAYOUT_DELETE_ALL_WIDGETS", "LAYOUT_DELETE_WIDGET", "LAYOUT_SET_PINNED", "LAYOUT_SET_TOP_WIDGET", "LAYOUT_UPDATE_WIDGET", "LOAD_MESSAGES", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES_SUCCESS", "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", "OVERLAY_ACTIVATE_REGION", "OVERLAY_DEACTIVATE_ALL_REGIONS", "OVERLAY_MESSAGE_EVENT_ACTION", "OVERLAY_SET_AVATAR_SIZE_MODE", "OVERLAY_SET_CLICK_ZONES", "OVERLAY_SET_DISPLAY_NAME_MODE", "OVERLAY_SET_DISPLAY_USER_MODE", "OVERLAY_SET_INPUT_LOCKED", "OVERLAY_SET_NOTIFICATION_POSITION_MODE", "OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE", "OVERLAY_TOGGLE_SHOW_KEYBINDS", "OVERLAY_SET_TEXT_WIDGET_OPACITY", "OVERLAY_SET_UI_LOCKED", "PREMIUM_PAYMENT_ERROR_CLEAR", "PREMIUM_PAYMENT_MODAL_CLOSE", "PREMIUM_PAYMENT_MODAL_OPEN", "PREMIUM_PAYMENT_SUBSCRIBE_FAIL", "PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS", "PREMIUM_PAYMENT_UPDATE_FAIL", "PREMIUM_PAYMENT_UPDATE_SUCCESS", "PREMIUM_REQUIRED_MODAL_CLOSE", "PREMIUM_REQUIRED_MODAL_OPEN", "PURCHASE_CONFIRMATION_MODAL_CLOSE", "PURCHASE_CONFIRMATION_MODAL_OPEN", "SKU_PURCHASE_CLEAR_ERROR", "SKU_PURCHASE_FAIL", "SKU_PURCHASE_MODAL_CLOSE", "SKU_PURCHASE_MODAL_OPEN", "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", "SKU_PURCHASE_SHOW_CONFIRMATION_STEP", "SKU_PURCHASE_START", "SKU_PURCHASE_SUCCESS", "STREAM_CLOSE", "STREAM_START", "VOICE_CHANNEL_SELECT"]),
+                v = new Set(["AUDIO_SET_INPUT_DEVICE", "AUDIO_SET_INPUT_VOLUME", "AUDIO_SET_LOCAL_VIDEO_DISABLED", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_SET_MODE", "AUDIO_SET_NOISE_CANCELLATION", "AUDIO_SET_NOISE_SUPPRESSION", "AUDIO_SET_OUTPUT_DEVICE", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "BILLING_SUBSCRIPTION_UPDATE_SUCCESS", "CATEGORY_COLLAPSE", "CATEGORY_EXPAND", "CHANNEL_ACK", "CHANNEL_PRELOAD", "GIFT_CODE_REDEEM", "GIFT_CODE_REDEEM_FAILURE", "GIFT_CODE_REDEEM_SUCCESS", "HOTSPOT_HIDE", "INVITE_MODAL_CLOSE", "LAYOUT_CREATE", "LAYOUT_CREATE_WIDGETS", "LAYOUT_DELETE_ALL_WIDGETS", "LAYOUT_DELETE_WIDGET", "LAYOUT_SET_PINNED", "LAYOUT_SET_TOP_WIDGET", "LAYOUT_UPDATE_WIDGET", "LOAD_MESSAGES", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES_SUCCESS", "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", "OVERLAY_ACTIVATE_REGION", "OVERLAY_DEACTIVATE_ALL_REGIONS", "OVERLAY_MESSAGE_EVENT_ACTION", "OVERLAY_SET_AVATAR_SIZE_MODE", "OVERLAY_SET_CLICK_ZONES", "OVERLAY_SET_DISPLAY_NAME_MODE", "OVERLAY_SET_DISPLAY_USER_MODE", "OVERLAY_SET_INPUT_LOCKED", "OVERLAY_SET_NOTIFICATION_POSITION_MODE", "OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE", "OVERLAY_SET_SHOW_KEYBIND_INDICATORS", "OVERLAY_SET_TEXT_WIDGET_OPACITY", "OVERLAY_SET_UI_LOCKED", "PREMIUM_PAYMENT_ERROR_CLEAR", "PREMIUM_PAYMENT_MODAL_CLOSE", "PREMIUM_PAYMENT_MODAL_OPEN", "PREMIUM_PAYMENT_SUBSCRIBE_FAIL", "PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS", "PREMIUM_PAYMENT_UPDATE_FAIL", "PREMIUM_PAYMENT_UPDATE_SUCCESS", "PREMIUM_REQUIRED_MODAL_CLOSE", "PREMIUM_REQUIRED_MODAL_OPEN", "PURCHASE_CONFIRMATION_MODAL_CLOSE", "PURCHASE_CONFIRMATION_MODAL_OPEN", "SKU_PURCHASE_CLEAR_ERROR", "SKU_PURCHASE_FAIL", "SKU_PURCHASE_MODAL_CLOSE", "SKU_PURCHASE_MODAL_OPEN", "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", "SKU_PURCHASE_SHOW_CONFIRMATION_STEP", "SKU_PURCHASE_START", "SKU_PURCHASE_SUCCESS", "STREAM_CLOSE", "STREAM_START", "VOICE_CHANNEL_SELECT"]),
                 V = new Set([...v.values(), "ACTIVITY_INVITE_MODAL_CLOSE", "CALL_DELETE", "CHANNEL_COLLAPSE", "CHANNEL_SELECT", "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", "OVERLAY_CALL_PRIVATE_CHANNEL", "OVERLAY_JOIN_GAME", "OVERLAY_NOTIFICATION_EVENT", "OVERLAY_SELECT_CALL", "OVERLAY_SET_NOT_IDLE", "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", "OVERLAY_WIDGET_CHANGED", "SOUNDBOARD_SET_OVERLAY_ENABLED", "STREAM_STOP"]);
 
             function W() {
                 if (!__OVERLAY__) return !1;
-                let e = g === (0, I.getPID)(),
-                    t = R.has((0, I.getPID)()) || U.size > 0;
+                let e = g === (0, T.getPID)(),
+                    t = R.has((0, T.getPID)()) || U.size > 0;
                 e && t ? (0, r.focus)(window, !0) : (0, r.focus)(window, !1)
             }
 
             function m() {
-                if (g !== (0, I.getPID)()) return !1;
+                if (g !== (0, T.getPID)()) return !1;
                 U.clear()
             }
 
-            function G(e) {
-                let t = (0, I.getPID)();
+            function z(e) {
+                let t = (0, T.getPID)();
                 if (null == e.pid || e.pid === t) switch (e.type) {
                     case h.OverlayEventTypes.STORAGE_SYNC:
-                        l.default.PersistedStore.initializeAll(e.states);
+                        i.default.PersistedStore.initializeAll(e.states);
                         break;
                     case h.OverlayEventTypes.DISPATCH:
                         null != e.payloads && (N = !0, e.payloads.forEach(e => (function(e) {
-                            var t, n, l, i, r, a;
-                            if ("OVERLAY_INITIALIZE" === e.type && (null == (a = e).version && 1 === I.OVERLAY_VERSION || a.version === I.OVERLAY_VERSION || (u.default.dispatch({
+                            var t, n, i, l, r, a;
+                            if ("OVERLAY_INITIALIZE" === e.type && (null == (a = e).version && 1 === T.OVERLAY_VERSION || a.version === T.OVERLAY_VERSION || (u.default.dispatch({
                                     type: "OVERLAY_INCOMPATIBLE_APP"
                                 }), (0, E.disconnect)(), 0))) P = !0;
                             if (P) switch (e.type) {
@@ -735,7 +735,7 @@
                                 case "GUILD_CREATE":
                                     let _ = e => (0, d.createChannelRecord)(e),
                                         A = e.guild;
-                                    A.channels = null !== (i = null === (n = A.channels) || void 0 === n ? void 0 : n.map(_)) && void 0 !== i ? i : null, A.threads = null === (l = A.threads) || void 0 === l ? void 0 : l.map(_), null != A.channelUpdates && (A.channelUpdates.writes = null === (r = A.channelUpdates.writes) || void 0 === r ? void 0 : r.map(_)), u.default.dispatch({
+                                    A.channels = null !== (l = null === (n = A.channels) || void 0 === n ? void 0 : n.map(_)) && void 0 !== l ? l : null, A.threads = null === (i = A.threads) || void 0 === i ? void 0 : i.map(_), null != A.channelUpdates && (A.channelUpdates.writes = null === (r = A.channelUpdates.writes) || void 0 === r ? void 0 : r.map(_)), u.default.dispatch({
                                         type: "GUILD_CREATE",
                                         guild: A
                                     });
@@ -755,17 +755,17 @@
                         })(e)), N = !1)
                 }
             }
-            class z extends l.default.PersistedStore {
+            class G extends i.default.PersistedStore {
                 initialize(e) {
                     if (this.waitFor(a.default), this.syncWith([a.default], () => {
                             let e = a.default.getId();
-                            Y = null != e ? w(e) : {
+                            Y = null != e ? M(e) : {
                                 ...S
                             }
-                        }), __OVERLAY__ && (O.isPlatformEmbedded && f.default.requireModule("discord_overlay2"), R.delete((0, I.getPID)())), null != e) {
+                        }), __OVERLAY__ && (O.isPlatformEmbedded && I.default.requireModule("discord_overlay2"), R.delete((0, T.getPID)())), null != e) {
                         C = e;
                         let t = a.default.getId();
-                        null != t && (null == (Y = w(t)).textChatNotifications && (Y.textChatNotifications = S.textChatNotifications), null == Y.textWidgetOpacity && (Y.textWidgetOpacity = S.textWidgetOpacity))
+                        null != t && (null == (Y = M(t)).textChatNotifications && (Y.textChatNotifications = S.textChatNotifications), null == Y.textWidgetOpacity && (Y.textWidgetOpacity = S.textWidgetOpacity))
                     }
                 }
                 getState() {
@@ -776,17 +776,17 @@
                 }
                 isInstanceUILocked() {
                     if (!__OVERLAY__) throw Error("OverlayStore: App instance should never call .isInstanceUILocked()");
-                    return !R.has((0, I.getPID)())
+                    return !R.has((0, T.getPID)())
                 }
                 isInstanceFocused() {
                     if (!__OVERLAY__) throw Error("OverlayStore: App instance should never call .isInstanceFocused()");
-                    return g === (0, I.getPID)()
+                    return g === (0, T.getPID)()
                 }
                 isFocused(e) {
                     return g === e
                 }
                 isPinned(e) {
-                    let t = A.default.getLayout(I.OVERLAY_LAYOUT_ID);
+                    let t = A.default.getLayout(T.OVERLAY_LAYOUT_ID);
                     if (null != t) {
                         let n = t.widgets.find(t => {
                             let n = A.default.getWidget(t);
@@ -820,8 +820,8 @@
                 getTextChatNotificationMode() {
                     return Y.notificationPositionMode === h.OverlayNotificationPositions.DISABLED ? h.OverlayNotificationTextChatTypes.DISABLED : Y.textChatNotifications
                 }
-                getShowMuteDeafenKeybinds() {
-                    return Y.showMuteDeafenKeybinds
+                get showKeybindIndicators() {
+                    return Y.showKeybindIndicators
                 }
                 getDisableExternalLinkAlert() {
                     return Y.disableExternalLinkAlert
@@ -842,17 +842,17 @@
                     return Y.textWidgetOpacity
                 }
                 isPreviewingInGame() {
-                    return M
+                    return w
                 }
             }
-            z.displayName = "OverlayStore", z.persistKey = "OverlayStoreV2", z.migrations = [() => {
+            G.displayName = "OverlayStore", G.persistKey = "OverlayStoreV2", G.migrations = [() => {
                 let e = {
-                        ...i.default.get("OverlayStore")
+                        ...l.default.get("OverlayStore")
                     },
                     {
                         pinnedWidgets: t,
                         positions: n,
-                        sizes: l,
+                        sizes: i,
                         v: u,
                         ...r
                     } = e;
@@ -870,7 +870,7 @@
                 };
                 return n
             }];
-            var F = new z(u.default, {
+            var F = new G(u.default, {
                 LOGOUT: function(e) {
                     !e.isSwitchingAccount && (C = {})
                 },
@@ -890,8 +890,8 @@
                             } = e;
                             return null != n && ((0, E.send)({
                                 type: h.OverlayEventTypes.DISPATCH,
-                                pid: (0, I.getPID)(),
-                                token: (0, I.getRPCAuthToken)(),
+                                pid: (0, T.getPID)(),
+                                token: (0, T.getRPCAuthToken)(),
                                 payloads: [{
                                     type: "CHANNEL_PRELOAD",
                                     guildId: t === h.ME ? null : t,
@@ -906,14 +906,14 @@
                         }
                         return (0, E.send)({
                             type: h.OverlayEventTypes.DISPATCH,
-                            pid: (0, I.getPID)(),
-                            token: (0, I.getRPCAuthToken)(),
+                            pid: (0, T.getPID)(),
+                            token: (0, T.getRPCAuthToken)(),
                             payloads: [e]
                         }), !v.has(e.type)
-                    }), (0, E.setReceiveEventHandler)(G, (0, I.getRPCAuthToken)()), (0, E.connect)(), (0, E.send)({
+                    }), (0, E.setReceiveEventHandler)(z, (0, T.getRPCAuthToken)()), (0, E.connect)(), (0, E.send)({
                         type: h.OverlayEventTypes.CONNECT,
-                        pid: (0, I.getPID)(),
-                        token: (0, I.getRPCAuthToken)()
+                        pid: (0, T.getPID)(),
+                        token: (0, T.getRPCAuthToken)()
                     })
                 },
                 OVERLAY_INITIALIZE: function(e) {
@@ -984,11 +984,11 @@
                     } = e;
                     Y.textChatNotifications = t
                 },
-                OVERLAY_TOGGLE_SHOW_KEYBINDS: function(e) {
+                OVERLAY_SET_SHOW_KEYBIND_INDICATORS: function(e) {
                     let {
                         shouldShow: t
                     } = e;
-                    Y.showMuteDeafenKeybinds = t
+                    Y.showKeybindIndicators = t
                 },
                 OVERLAY_SET_TEXT_WIDGET_OPACITY: function(e) {
                     let {
@@ -1007,23 +1007,23 @@
                         locked: t,
                         pid: n
                     } = e;
-                    t ? R.delete(n) : R.add(n), m(), W(), M = !1
+                    t ? R.delete(n) : R.add(n), m(), W(), w = !1
                 },
                 OVERLAY_ACTIVATE_REGION: function(e) {
                     let {
                         region: t
                     } = e;
-                    if (g !== (0, I.getPID)() || U.has(t)) return !1;
+                    if (g !== (0, T.getPID)() || U.has(t)) return !1;
                     U.add(t)
                 },
                 OVERLAY_DEACTIVATE_ALL_REGIONS: m,
                 OVERLAY_SET_PREVIEW_IN_GAME_MODE: function(e) {
-                    M = e.isPreviewingInGame
+                    w = e.isPreviewingInGame
                 },
                 WINDOW_RESIZED: function() {
                     if (__OVERLAY__) {
-                        let e = T.default.windowSize();
-                        !(0, I.validResolution)(e) && (M = !1)
+                        let e = f.default.windowSize();
+                        !(0, T.validResolution)(e) && (w = !1)
                     }
                 }
             })
@@ -1031,70 +1031,70 @@
         80687: function(e, t, n) {
             "use strict";
 
-            function l(e) {
+            function i(e) {
                 return Math.max(Math.min(e, 1), 0)
             }
 
-            function i(e, t) {
+            function l(e, t) {
                 let {
                     top: n,
-                    bottom: i,
+                    bottom: l,
                     left: u,
                     right: r
                 } = e;
                 return {
-                    top: null != n ? Math.floor(l(n) * t.height) : null,
-                    left: null != u ? Math.floor(l(u) * t.width) : null,
-                    bottom: null != i ? Math.floor(l(i) * t.height) : null,
-                    right: null != r ? Math.floor(l(r) * t.width) : null
+                    top: null != n ? Math.floor(i(n) * t.height) : null,
+                    left: null != u ? Math.floor(i(u) * t.width) : null,
+                    bottom: null != l ? Math.floor(i(l) * t.height) : null,
+                    right: null != r ? Math.floor(i(r) * t.width) : null
                 }
             }
 
             function u(e, t) {
                 let {
                     width: n,
-                    height: i
+                    height: l
                 } = e;
                 return {
-                    width: "auto" === n ? n : Math.floor(l(n) * t.width),
-                    height: "auto" === i ? i : Math.floor(l(i) * t.height)
+                    width: "auto" === n ? n : Math.floor(i(n) * t.width),
+                    height: "auto" === l ? l : Math.floor(i(l) * t.height)
                 }
             }
 
             function r(e, t) {
                 let {
                     top: n,
-                    bottom: i,
+                    bottom: l,
                     left: u,
                     right: r
                 } = e;
                 return {
-                    top: null != n ? l(n / t.height) : null,
-                    left: null != u ? l(u / t.width) : null,
-                    bottom: null != i ? l(i / t.height) : null,
-                    right: null != r ? l(r / t.width) : null
+                    top: null != n ? i(n / t.height) : null,
+                    left: null != u ? i(u / t.width) : null,
+                    bottom: null != l ? i(l / t.height) : null,
+                    right: null != r ? i(r / t.width) : null
                 }
             }
 
             function E(e, t) {
                 let {
                     width: n,
-                    height: l
+                    height: i
                 } = e;
                 return {
                     width: "auto" === n ? n : n / t.width,
-                    height: "auto" === l ? l : l / t.height
+                    height: "auto" === i ? i : i / t.height
                 }
             }
 
-            function o(e, t, n, l, i) {
+            function o(e, t, n, i, l) {
                 let {
                     top: u,
                     bottom: r,
                     left: E,
                     right: o
                 } = e;
-                if (null == u && null == r ? (u = 0, r = n - i) : null == u && null != r ? u = n - (r + i) : null != u && (r = n - (u + i)), null == E && null == o ? (E = 0, o = t - l) : null == E && null != o ? E = t - (o + l) : null == o && null != E && (o = t - (E + l)), null == u || null == r || null == E || null == o) throw Error("Logically this can never happen based on our if/else statements");
+                if (null == u && null == r ? (u = 0, r = n - l) : null == u && null != r ? u = n - (r + l) : null != u && (r = n - (u + l)), null == E && null == o ? (E = 0, o = t - i) : null == E && null != o ? E = t - (o + i) : null == o && null != E && (o = t - (E + i)), null == u || null == r || null == E || null == o) throw Error("Logically this can never happen based on our if/else statements");
                 return {
                     top: u,
                     left: E,
@@ -1107,14 +1107,14 @@
                 let {
                     top: t,
                     left: n,
-                    bottom: l,
-                    right: i
+                    bottom: i,
+                    right: l
                 } = e;
-                return 0 === t || t <= l ? l = null : t = null, 0 === n || n <= i ? i = null : n = null, {
+                return 0 === t || t <= i ? i = null : t = null, 0 === n || n <= l ? l = null : n = null, {
                     top: t,
                     left: n,
-                    bottom: l,
-                    right: i
+                    bottom: i,
+                    right: l
                 }
             }
 
@@ -1122,30 +1122,30 @@
                 let {
                     top: t,
                     left: n,
-                    bottom: l,
-                    right: i
+                    bottom: i,
+                    right: l
                 } = e;
-                return l < 0 && (t += l, l = 0), t < 0 && (l += t, t = 0), i < 0 && (n += i, i = 0), n < 0 && (i += n, n = 0), {
+                return i < 0 && (t += i, i = 0), t < 0 && (i += t, t = 0), l < 0 && (n += l, l = 0), n < 0 && (l += n, n = 0), {
                     top: t,
                     left: n,
-                    bottom: l,
-                    right: i
+                    bottom: i,
+                    right: l
                 }
             }
 
             function s(e, t, n) {
-                e = i(e, n);
+                e = l(e, n);
                 let {
-                    width: l,
+                    width: i,
                     height: r
                 } = u(t, n);
-                return l = "string" == typeof l ? 0 : l, r = "string" == typeof r ? 0 : r, o(e, n.width, n.height, l, r)
+                return i = "string" == typeof i ? 0 : i, r = "string" == typeof r ? 0 : r, o(e, n.width, n.height, i, r)
             }
 
             function _(e, t, n) {
                 let {
-                    top: l,
-                    left: i
+                    top: i,
+                    left: l
                 } = e, {
                     x: u,
                     y: s
@@ -1156,8 +1156,8 @@
                     width: _,
                     height: A
                 } = t, c = d(a(o({
-                    top: l + s,
-                    left: i + u,
+                    top: i + s,
+                    left: l + u,
                     bottom: null,
                     right: null
                 }, n.width, n.height, "number" == typeof _ ? _ : 0, "number" == typeof A ? A : 0)));
@@ -1166,8 +1166,8 @@
 
             function A(e, t, n) {
                 let {
-                    top: l,
-                    right: i
+                    top: i,
+                    right: l
                 } = e, {
                     x: u,
                     y: s
@@ -1178,16 +1178,16 @@
                     width: _,
                     height: A
                 } = t, c = d(a(o({
-                    top: l + s,
+                    top: i + s,
                     left: null,
                     bottom: null,
-                    right: i - u
+                    right: l - u
                 }, n.width, n.height, "number" == typeof _ ? _ : 0, "number" == typeof A ? A : 0)));
                 return [r(c, n), E(t, n)]
             }
             n.r(t), n.d(t, {
                 getAnchorCoordsFromLayoutSize: function() {
-                    return i
+                    return l
                 },
                 getSizeFromLayoutSize: function() {
                     return u
@@ -1220,4 +1220,4 @@
         }
     }
 ]);
-//# sourceMappingURL=69039.0d3b4d5be7f6a21cf93d.js.map
+//# sourceMappingURL=69039.abac66ac2e845aef07e6.js.map
