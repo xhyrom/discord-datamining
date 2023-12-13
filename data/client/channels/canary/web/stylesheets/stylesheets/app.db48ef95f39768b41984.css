@@ -15189,12 +15189,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -54184,41 +54184,6 @@ html .progress__4ef76 {
 .headerArt__851a2 {
     width: 100%;
     pointer-events: none
-}
-
-.container__4ecff {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center
-}
-
-.textContainer__1765b {
-    margin-top: 10px;
-    max-width: 336px
-}
-
-.managePlanButton__44e1e {
-    margin-top: 20px;
-    width: 95%
-}
-
-.managePlanButtonCTA_e4ebec {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-size: 14px
-}
-
-.theme-light .managePlanButton__44e1e {
-    border-color: var(--black);
-    color: var(--black)
-}
-
-.theme-dark .managePlanButton__44e1e {
-    border-color: var(--white);
-    color: var(--white)
 }
 
 .container__6eaa3 {
@@ -123913,4 +123878,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.de2a17180ce8f752077b.css.map*/
+/*# sourceMappingURL=app.db48ef95f39768b41984.css.map*/
