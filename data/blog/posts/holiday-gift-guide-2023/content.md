@@ -55,7 +55,6 @@
             <h2><strong>Mail Some Actual, Real Life Physical Discord Merch<br></strong></h2>
             <p>Help your friends bring Discord IRL by gifting them a memento that reminds them of the place where their friends are at all times, wherever they find themselves in the world.&nbsp;</p>
             <p>We’ve got way more than just the Discord logo on a black shirt — pick from items themed after warm summer nights, “paying attention” in the classroom, monstrous mechas, or just the Discord vibe. Grab a Discord hoodie or beanie for a friend, or help them ditch their potato mic by gifting them an ultra-fancy Wumpus-themed microphone to give your ears a bit of relief in the process.&nbsp;</p>
-            <p>‍</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656fad739fe7f2a78547491b_3DwaazEXAVacid-gQiGyAjG42sjmBlHSOeH5YER3vvA3FGOeBW3Z0cM9oQkeZL0iHlw-HZlv0XyyDuW3qqbymfnq7Rzzy-mpehjW_bjNvqY-9SOqjEdwccIvwGfZJRgMA7lK4g7ZbZ9c8uOcm1WcrqhBFKp2Cr-2o6RnLUtvxVJNGqp5YTzHLS1Y3fo7KQ.png" alt="A preview of six collections from the Discord merch store."></div>
             </figure>
