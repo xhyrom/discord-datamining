@@ -68,6 +68,8 @@
   "UNREADS_EMPTY_STATE_HEADER": "\"You're all caught up!\"",
   "UNREADS_EMPTY_STATE_TIP": "\"Open the Inbox by pressing CTRL+I, and mark your top message as read with CTRL+Shift+E.\"",
   "UNREADS_EMPTY_STATE_TIP_MAC": "\"Open the Inbox by pressing CMD+I, and mark your top message as read with CMD+Shift+E.\"",
+  "UNREADS_EMPTY_STATE_ERROR_HEADER": "\"Whoops\"",
+  "UNREADS_EMPTY_STATE_ERROR_SUBTITLE": "\"The Inbox hit a snag, please close and re-open it.\"",
   "UNREADS_VIEW_CHANNEL": "\"View all unreads\"",
   "UNREADS_MARK_READ": "\"Mark Inbox As Read\"",
   "UNREADS_TUTORIAL_HEADER": "\"Stay up to date with latest messages!\"",
