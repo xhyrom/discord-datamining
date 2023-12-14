@@ -5618,6 +5618,7 @@
             "use strict";
             e.exports = {
                 avatarDecoration: "avatarDecoration_b3abcd",
+                bannerBackgroundFallback: "bannerBackgroundFallback__42f49",
                 bannerContainer: "bannerContainer__7814d",
                 collectedInfoContainer: "collectedInfoContainer_d8324a",
                 collectedTextContainer: "collectedTextContainer__3e39d",

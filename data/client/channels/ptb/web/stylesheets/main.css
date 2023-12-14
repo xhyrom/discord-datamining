@@ -82896,16 +82896,17 @@ html .tabBadge__002b3 {
 
 .decorationBanner_d5fe2e {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%)
+    background-position: 50%50%
+}
+
+.bannerBackgroundFallback__42f49 {
+    background-color: var(--background-secondary)
 }
 
 .bannerContainer__7814d {
     position: relative;
     height: 228px;
-    overflow: hidden;
-    background-color: var(--background-secondary)
+    overflow: hidden
 }
 
 .collectedInfoContainer_d8324a {
@@ -83762,7 +83763,8 @@ html .tabBadge__002b3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative
+    position: relative;
+    background-color: var(--modal-background)
 }
 
 .previewsContainerInner__0209d {
@@ -124216,4 +124218,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.dc6a3eab71995a978f20.css.map*/
+/*# sourceMappingURL=app.e4bc00bc287401294cad.css.map*/
