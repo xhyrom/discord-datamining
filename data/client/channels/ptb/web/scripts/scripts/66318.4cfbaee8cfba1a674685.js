@@ -16759,6 +16759,7 @@
                 POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}h left}}",
                 POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}m left}}",
                 POLL_EXPIRED: "Poll closed",
+                POLL_NOT_INTERACTIVE: "View original message to interact",
                 FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
                 KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
                 PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
@@ -18268,7 +18269,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254376", ", Version Hash: ").concat("100a6585753a6f43dccd4ee13bceb1beccba04c3")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254382", ", Version Hash: ").concat("550df81ec14dca5df4bcc320699390909d679de2")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20573,8 +20574,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "254376", "254376"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254376")), _ = 0), _
+                let _ = parseInt((e = "254382", "254382"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254382")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36561,4 +36562,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.e44eed2815ecc2ed8cf7.js.map
+//# sourceMappingURL=66318.4cfbaee8cfba1a674685.js.map
