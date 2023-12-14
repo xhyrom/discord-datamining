@@ -19397,8 +19397,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -84204,7 +84204,9 @@ html .tabBadge__002b3 {
 
 .checkmark__2ccd6 {
     width: 100%;
-    transition: opacity.5s
+    color: var(--interactive-active);
+    transition: opacity.5s;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2))
 }
 
 .limitedTimeBadge__19a7e {
@@ -124214,4 +124216,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a53aeb1a945618fe183d.css.map*/
+/*# sourceMappingURL=app.d6d0f978e80acaf07e41.css.map*/
