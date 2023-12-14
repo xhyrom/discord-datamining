@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["33547"], {
+    ["55348"], {
         876779: function(I, N, A) {
             I.exports = {
                 Common: {
@@ -1789,6 +1789,34 @@
                 }
             })
         },
+        476765: function(I, N, A) {
+            "use strict";
+            A.r(N), A.d(N, {
+                uid: function() {
+                    return E
+                },
+                useUID: function() {
+                    return e
+                },
+                UID: function() {
+                    return V
+                }
+            });
+            var O = A("995008"),
+                T = A.n(O),
+                _ = A("775560");
+            let E = function() {
+                    let I = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
+                    return T(I)
+                },
+                e = () => (0, _.useLazyValue)(() => E()),
+                V = I => {
+                    let {
+                        children: N
+                    } = I;
+                    return N(e())
+                }
+        },
         449008: function(I, N, A) {
             "use strict";
 
@@ -1837,4 +1865,4 @@
         }
     }
 ]);
-//# sourceMappingURL=33547.4c771f02a97eed59aa9a.js.map
+//# sourceMappingURL=55348.29e83ba0718684f2c9af.js.map
