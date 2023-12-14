@@ -1242,6 +1242,10 @@
       "POST"
     ]
   },
+  "FRIEND_FINDER_VIEWED_SUGGESTIONS": {
+    "url": "/friend-finder/viewed-suggestions",
+    "allowed_methods": null
+  },
   "FRIEND_FINDER_HIDE_INVITE_SUGGESTION": {
     "url": "/friend-finder/hide-invite-suggestion",
     "allowed_methods": null
