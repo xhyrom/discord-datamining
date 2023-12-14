@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_friend_finder_pymk",
+    "label": "Friend Finder People You May Know",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable PYMK"
+    ],
+    "hash": 3412409298,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

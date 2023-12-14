@@ -367,6 +367,7 @@ id,hash,label
 2023-10_thumbhash_messages,3927145797,Display thumbhash placeholders when loading message images
 2023-10_trial_for_everyone_trial_creation,2559295447,Trial for everyone
 2023-10_triggerdebuggingaa,1863147434,Trigger Debugging User AA Experiment
+2023-10_username_lookup_killswitch,2240098025,Friend Finder Username Lookup Killswitch
 2023-10_video_hook_disable,1363886659,Video Hook disable on Windows 11
 2023-10_video_hook_stale_frame_timeout,1821813006,Video Hook Stale Frame Timeout
 2023-10_viewer_clipping,3351049965,Test viewer side clipping
@@ -380,6 +381,7 @@ id,hash,label
 2023-11_colonist_minishelf_banner,2188337804,Actvity Colonist Mini-Shelf Banner
 2023-11_enable_hang_status,1033614739,Hang Statuses
 2023-11_expanded_gifting_revamp_experiment,2053162821,Expanded Gifting Revamp Experiment
+2023-11_friend_finder_sync,3202958470,Friend Finder Sync
 2023-11_midjourney_onboarding,1881851350,Midjourney Onboarding
 2023-11_nitro_affinities,1617769333,Nitro Affinities
 2023-11_nitro_tab_holdout,2005511838,Nitro Tab Holdout
@@ -399,6 +401,7 @@ id,hash,label
 2023-11_xbox_game_invites,4094597383,Xbox Game Invites Experiment
 2023-12_2023_eoy_ringtone,654872987,EOY Ringtone 2023
 2023-12_eslatam_launch,518502765,ES LATAM Launch
+2023-12_friend_suggestion_seen_state,1821275338,Friend Suggestions Seen State
 2023-12_guild_members_table_safety_signal_filters,1004673763,Guild Members Table Safety Signals
 2023-12_krunker_strike_coachmark,1296191863,Krunker Strike Coachmark
 2023-12_marketing_automation_experiment,2969274422,Marketing Automation
