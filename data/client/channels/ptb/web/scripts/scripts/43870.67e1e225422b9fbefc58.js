@@ -193,7 +193,7 @@
                     return p
                 },
                 sortAvatarDecorationsByPopularity: function() {
-                    return D
+                    return y
                 }
             }), r("222007"), r("808653");
             var n = r("917351"),
@@ -279,7 +279,7 @@
                 L = ["1146328960951668776", "1146328961417224193", "1139323093991575696", "1139323099687436419", "1139323092645183591", "1139323093551165533", "1139323101881061466", "1139323100568244355", "1139323101008642101", "1139323099251232828", "1139323095744790568", "1139323096180994169"].reduce(U, {}),
                 F = ["1174460780842856588", "1174459546748600481", "1174459480348565554", "1174459415924064376", "1154896005045694555", "1144307957425778779", "1144308439720394944", "1144307629225672846", "1144308196723408958", "1144046002110738634", "1144305233707671573", "1144307257807491094", "1144056139584127058", "1144006094134456352", "1144057023726628945", "1144003752978829455", "1144056631374647458", "1144057486203158560", "1144048390594908212", "1144048977138946230", "1144057737475534889", "1144049603109470370", "1144057249392771145", "1144049316009353338", "1144049924397334651"].reduce(U, {}),
                 p = t => t.sort(m(L)),
-                D = t => t.sort(m(F))
+                y = t => t.sort(m(F))
         },
         170313: function(t, e, r) {
             "use strict";
@@ -427,7 +427,7 @@
             let n, o, i, u, l, a, c, s, T, E, _, d, S, C;
             r.r(e), r.d(e, {
                 default: function() {
-                    return D
+                    return y
                 }
             });
             var I = r("265586"),
@@ -495,7 +495,7 @@
                 getPendingAvatarDecoration() {
                     return i
                 }
-                getPendingProfileEffectID() {
+                getPendingProfileEffectId() {
                     return u
                 }
                 getAllPending() {
@@ -507,7 +507,7 @@
                         pendingAccentColor: s,
                         pendingThemeColors: T,
                         pendingAvatarDecoration: i,
-                        pendingProfileEffectID: u,
+                        pendingProfileEffectId: u,
                         pendingGlobalName: o
                     }
                 }
@@ -520,7 +520,7 @@
                 getTryItOutAvatarDecoration() {
                     return d
                 }
-                getTryItOutProfileEffectID() {
+                getTryItOutProfileEffectId() {
                     return S
                 }
                 getTryItOutBanner() {
@@ -531,7 +531,7 @@
                         tryItOutThemeColors: E,
                         tryItOutAvatar: _,
                         tryItOutAvatarDecoration: d,
-                        tryItOutProfileEffectID: S,
+                        tryItOutProfileEffectId: S,
                         tryItOutBanner: C
                     }
                 }
@@ -540,7 +540,7 @@
                 }
             }
             p.displayName = "UserSettingsAccountStore";
-            var D = new p(f.default, {
+            var y = new p(f.default, {
                 USER_SETTINGS_ACCOUNT_INIT: g,
                 USER_SETTINGS_MODAL_INIT: g,
                 USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: g,
@@ -588,7 +588,7 @@
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: function(t) {
                     let {
-                        profileEffectID: e
+                        profileEffectId: e
                     } = t;
                     u = e
                 },
@@ -636,7 +636,7 @@
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT_ID: function(t) {
                     let {
-                        profileEffectID: e
+                        profileEffectId: e
                     } = t;
                     S = e
                 },
@@ -699,4 +699,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43870.f743a5b6b92a59ff718a.js.map
+//# sourceMappingURL=43870.67e1e225422b9fbefc58.js.map

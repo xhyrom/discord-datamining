@@ -99,7 +99,7 @@
                     }), null != o.body.guild_member_profile && i.default.dispatch({
                         type: "USER_PROFILE_UPDATE_SUCCESS",
                         userId: a.CLYDE_AI_USER_ID,
-                        profileEffectID: void 0,
+                        profileEffectId: void 0,
                         ...o.body.guild_member_profile
                     }), null != o.body.guild_member && i.default.dispatch({
                         type: "GUILD_MEMBER_PROFILE_UPDATE",
@@ -642,7 +642,7 @@
                     [u, l] = i.useState(!1),
                     {
                         preset: s
-                    } = (0, y.default)(e.profileEffectID, () => l(!1));
+                    } = (0, y.default)(e.profileEffectId, () => l(!1));
                 return t && null != s ? r || !1 === e.autoPlay && !1 === e.isHovering ? (0, n.jsx)(I, {
                     useThumbnail: e.useThumbnail,
                     config: s.config,
@@ -751,4 +751,4 @@
         }
     }
 ]);
-//# sourceMappingURL=22198.60494a9d4db5b29906c5.js.map
+//# sourceMappingURL=22198.6697a55b3d7107bc8e97.js.map

@@ -150,12 +150,12 @@
                     hideTooltip: f,
                     className: u
                 }));
-                let D = (0, c.default)(a, l, void 0, P),
-                    H = null != D && D.length > 0;
-                return null != j || H ? (0, n.jsxs)("div", {
+                let H = (0, c.default)(a, l, void 0, P),
+                    L = null != H && H.length > 0;
+                return null != j || L ? (0, n.jsxs)("div", {
                     className: s,
                     children: [j, (0, n.jsx)(h, {
-                        text: D,
+                        text: H,
                         className: i
                     }), null != a && a.some(d.default) ? (0, n.jsx)(N.default, {
                         width: 16,
@@ -645,7 +645,7 @@
                     P = () => {
                         n.stop(), M(!1)
                     },
-                    D = e => {
+                    H = e => {
                         (0, T.copy)(r), f.default.track(E.AnalyticEvents.TEXT_COPIED, {
                             type: m
                         }), "function" == typeof e && e(), !h && p(N + 1), M(!0), I(!0), n.start(1e3, () => M(!1)), l.start(2e3, () => p(0))
@@ -675,7 +675,7 @@
                                 v ? P() : "function" == typeof n && n()
                             },
                             onClick: () => {
-                                D(t)
+                                H(t)
                             },
                             children: (0, s.jsxs)("div", {
                                 className: u(a, _.copiableWrapper),
@@ -984,9 +984,9 @@
                 y = a("552243"),
                 j = a("590456"),
                 P = a("49111"),
-                D = a("646718"),
-                H = a("782340"),
-                L = a("524466"),
+                H = a("646718"),
+                L = a("782340"),
+                D = a("524466"),
                 G = a("231185");
             let b = d.AvatarSizes.SIZE_80,
                 B = (0, c.getDecorationSizeForAvatarSize)(b);
@@ -1000,15 +1000,15 @@
                 } = e, i = (0, u.useStateFromStores)([I.default], () => I.default.getUserProfile(t.id), [t]), r = (0, u.useStateFromStores)([_.default], () => _.default.getGuild(a), [a]), c = (0, T.useClydeProfilesEnabled)(r);
                 return (0, n.jsxs)(n.Fragment, {
                     children: [(null == i ? void 0 : i.profileFetchFailed) && (!t.isClyde() || c) && (0, n.jsx)(d.Tooltip, {
-                        text: H.default.Messages.USER_PROFILE_LOAD_ERROR,
+                        text: L.default.Messages.USER_PROFILE_LOAD_ERROR,
                         spacing: 16,
                         children: e => (0, n.jsx)(C.default, {
                             ...e,
-                            className: L.warningCircleIcon,
+                            className: D.warningCircleIcon,
                             color: o.default.unsafe_rawColors.YELLOW_300.css
                         })
                     }), (0, n.jsx)(U.default, {
-                        className: s ? L.profileBadgesCompactNoTouch : L.profileBadges,
+                        className: s ? D.profileBadgesCompactNoTouch : D.profileBadges,
                         user: t,
                         guildId: a,
                         isTryItOutFlow: l,
@@ -1036,7 +1036,7 @@
                     hasProfileEffect: U
                 } = e, F = (0, u.useStateFromStores)([S.default], () => S.default.getCurrentUser()), {
                     profileTheme: k
-                } = l.useContext(x.UserProfileContext), V = l.useContext(N.AnalyticsContext), W = t.isNonUserBot() && !t.isClyde(), Y = p.default.isPremiumAtLeast(null == a ? void 0 : a.premiumType, D.PremiumTypes.TIER_2), z = l.useMemo(() => (0, E.shouldDisableUserPresenceInChannel)(t, _), [t, _]), Z = C || t.isClyde(), {
+                } = l.useContext(x.UserProfileContext), V = l.useContext(N.AnalyticsContext), W = t.isNonUserBot() && !t.isClyde(), Y = p.default.isPremiumAtLeast(null == a ? void 0 : a.premiumType, H.PremiumTypes.TIER_2), z = l.useMemo(() => (0, E.shouldDisableUserPresenceInChannel)(t, _), [t, _]), Z = C || t.isClyde(), {
                     avatarDecorationSrc: X,
                     avatarSrc: K,
                     eventHandlers: Q,
@@ -1055,7 +1055,7 @@
                     showPending: t.id === (null == F ? void 0 : F.id),
                     showTryItOut: t.id === (null == F ? void 0 : F.id)
                 }), $ = M && null != J, ee = (0, n.jsxs)("div", {
-                    className: L.avatarHoverTarget,
+                    className: D.avatarHoverTarget,
                     ...Q,
                     children: [(0, n.jsx)(w, {
                         src: null != s ? s : K,
@@ -1074,28 +1074,28 @@
                             size: b,
                             status: P.StatusTypes.UNKNOWN,
                             isMobile: T,
-                            className: L.tryingOutAvatarDecoration,
+                            className: D.tryingOutAvatarDecoration,
                             "aria-hidden": !0
                         })
                     }, J)]
                 }), et = (0, r.match)(v).with(j.UserProfileTypes.POPOUT, () => {
                     let e = (0, O.buildGetPremiumUserBannerStyles)({
-                        premiumUserWithBanner: L.avatarPositionPremiumBanner,
-                        premiumUserWithoutBanner: L.avatarPositionPremiumNoBanner,
-                        default: L.avatarPositionNormal
+                        premiumUserWithBanner: D.avatarPositionPremiumBanner,
+                        premiumUserWithoutBanner: D.avatarPositionPremiumNoBanner,
+                        default: D.avatarPositionNormal
                     });
                     return e({
                         isPremium: Y && !W,
                         hasBanner: o,
                         hasProfileEffect: U
                     })
-                }).with(j.UserProfileTypes.POMELO_POPOUT, () => L.avatarPositionPomelo).with(j.UserProfileTypes.PANEL, () => L.avatarPositionPanel).exhaustive();
+                }).with(j.UserProfileTypes.POMELO_POPOUT, () => D.avatarPositionPomelo).with(j.UserProfileTypes.PANEL, () => D.avatarPositionPanel).exhaustive();
                 return (0, n.jsx)(n.Fragment, {
                     children: (0, n.jsxs)(d.Clickable, {
                         className: i({
-                            [L.clickable]: !Z,
-                            [L.avatarWrapperNonUserBot]: W,
-                            [L.avatarWrapperNormal]: !W
+                            [D.clickable]: !Z,
+                            [D.avatarWrapperNonUserBot]: W,
+                            [D.avatarWrapperNormal]: !W
                         }, et),
                         onClick: W || Z ? void 0 : function() {
                             (0, R.openUserProfileModal)({
@@ -1110,15 +1110,15 @@
                                 t = e ? B : (0, d.getAvatarSize)(b);
                             return (0, n.jsx)(g.default, {
                                 mask: null == c || c === P.StatusTypes.UNKNOWN || z ? g.default.Masks.AVATAR_DEFAULT : (0, r.match)([e, T]).with([!0, !0], () => g.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => g.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => g.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => g.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
-                                className: e ? L.avatarDecorationHint : L.avatarHint,
+                                className: e ? D.avatarDecorationHint : D.avatarHint,
                                 style: e ? {
                                     borderRadius: .4 * t
                                 } : void 0,
                                 width: t,
                                 height: t,
                                 children: (0, n.jsx)("div", {
-                                    className: L.avatarHintInner,
-                                    children: H.default.Messages.VIEW_PROFILE
+                                    className: D.avatarHintInner,
+                                    children: L.default.Messages.VIEW_PROFILE
                                 })
                             })
                         }()]
@@ -1141,7 +1141,7 @@
                     showPremiumBadgeUpsell: T = !0,
                     showCollectiblesTryItOut: E = !1,
                     upsell: _
-                } = e, C = (0, u.useStateFromStores)([S.default], () => S.default.getCurrentUser()), g = (0, u.useStateFromStores)([m.default], () => m.default.getTryItOutProfileEffectID()), N = E && t.id === (null == C ? void 0 : C.id) && null != g ? g : null == a ? void 0 : a.profileEffectID;
+                } = e, C = (0, u.useStateFromStores)([S.default], () => S.default.getCurrentUser()), g = (0, u.useStateFromStores)([m.default], () => m.default.getTryItOutProfileEffectId()), N = E && t.id === (null == C ? void 0 : C.id) && null != g ? g : null == a ? void 0 : a.profileEffectId;
                 return (0, n.jsxs)(n.Fragment, {
                     children: [_, (0, n.jsx)(M.default, {
                         user: t,
@@ -1151,9 +1151,9 @@
                         profileType: j.UserProfileTypes.POPOUT,
                         showPremiumBadgeUpsell: T,
                         isHovering: f,
-                        hasProfileEffect: E || (null == a ? void 0 : a.profileEffectID) != null
+                        hasProfileEffect: E || (null == a ? void 0 : a.profileEffectId) != null
                     }), null != N && (0, n.jsx)(A.default, {
-                        profileEffectID: N,
+                        profileEffectId: N,
                         bannerAdjustment: 0,
                         isHovering: f
                     }), (0, n.jsx)(k, {
@@ -1536,4 +1536,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94491.e9bbfb32dd44ea7e36a4.js.map
+//# sourceMappingURL=94491.43e23cd85dcba86fad0a.js.map

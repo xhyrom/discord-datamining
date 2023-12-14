@@ -4909,7 +4909,7 @@
                             is_streaming: el,
                             has_custom_status: null != $,
                             has_avatar_decoration: null != t.avatarDecoration,
-                            has_profile_effect: (null == W ? void 0 : W.profileEffectID) != null,
+                            has_profile_effect: (null == W ? void 0 : W.profileEffectId) != null,
                             profile_has_nitro_customization: null != W && (null == W ? void 0 : W.hasPremiumCustomization()),
                             profile_has_theme_color_customized: null != W && W.hasThemeColors(),
                             profile_has_theme_animation: (null == W ? void 0 : W.popoutAnimationParticleType) != null,
@@ -5381,7 +5381,7 @@
                 a.useEffect(() => (B(b), () => {
                     Y()
                 }), [B, b, Y]);
-                let V = (0, o.default)([S.default], () => S.default.getProfileEffectById(null == s ? void 0 : s.profileEffectID)),
+                let V = (0, o.default)([S.default], () => S.default.getProfileEffectById(null == s ? void 0 : s.profileEffectId)),
                     [H, W] = (0, o.useStateFromStoresArray)([h.default], () => {
                         var e;
                         return [(0, _.isPremiumCollectiblesProduct)(h.default.getProduct(null === (e = l.avatarDecoration) || void 0 === e ? void 0 : e.skuId)), (0, _.isPremiumCollectiblesProduct)(h.default.getProduct(null == V ? void 0 : V.skuId))]
@@ -6193,7 +6193,7 @@
                 }, [g, S]);
                 let v = h && (null == S ? void 0 : S.id) !== t.id && !I && !(null != _ && _ !== l),
                     C = v && (null == S ? void 0 : S.avatarDecoration) == null && (null == t ? void 0 : t.avatarDecoration) != null,
-                    N = v && null != g && null == g.profileEffectID && (null == A ? void 0 : A.profileEffectID) != null,
+                    N = v && null != g && null == g.profileEffectId && (null == A ? void 0 : A.profileEffectId) != null,
                     [y, M] = (0, f.useDismissibleContentGroup)(C || N ? [r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL] : [], void 0, !0);
                 return {
                     shouldShow: y === r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL,
@@ -7916,4 +7916,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58247.89fe73a3cb7a03c243ab.js.map
+//# sourceMappingURL=58247.6d141517001747f271f0.js.map

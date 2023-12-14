@@ -178,7 +178,7 @@
                 setPendingAvatarDecoration: function() {
                     return A
                 },
-                setPendingProfileEffectID: function() {
+                setPendingProfileEffectId: function() {
                     return m
                 },
                 setSingleTryItOutCollectiblesItem: function() {
@@ -362,7 +362,7 @@
             function m(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
-                    profileEffectID: e
+                    profileEffectId: e
                 })
             }
 
@@ -2393,7 +2393,7 @@
                 setNewPendingAvatarDecoration: function() {
                     return d
                 },
-                setNewPendingProfileEffectID: function() {
+                setNewPendingProfileEffectId: function() {
                     return f
                 },
                 getProfilePreviewField: function() {
@@ -2443,9 +2443,9 @@
 
             function f(e, t) {
                 if (e === t) {
-                    (0, l.setPendingProfileEffectID)(void 0);
+                    (0, l.setPendingProfileEffectId)(void 0);
                     return
-                }(0, l.setPendingProfileEffectID)(e)
+                }(0, l.setPendingProfileEffectId)(e)
             }
 
             function E(e, t, n) {
@@ -2721,7 +2721,7 @@
                         l.default.dispatch({
                             type: "USER_PROFILE_UPDATE_SUCCESS",
                             userId: d,
-                            profileEffectID: e,
+                            profileEffectId: e,
                             ...n.body
                         })
                     } else {
@@ -2807,7 +2807,7 @@
             function g(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT_ID",
-                    profileEffectID: e
+                    profileEffectId: e
                 }), f(d.AnalyticsPremiumFeatureNames.PROFILE_EFFECT)
             }
 
@@ -3830,4 +3830,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54135.42f3c6917d344519a2bd.js.map
+//# sourceMappingURL=54135.bbb8095d3eb36ab21cfa.js.map
