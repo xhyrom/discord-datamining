@@ -4231,7 +4231,10 @@
   },
   "RESTORE_NOTIFICATION_SNAPSHOT": {
     "url": "/users/@me/notification-settings/snapshots/:param/restore-guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_ADMIN_SERVER_ELIGIBILITY": {
     "url": "/guilds/:param/admin-server-eligibility",
