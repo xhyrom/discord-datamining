@@ -28972,13 +28972,22 @@
                     id: "2023-08_secure_frames_encryption",
                     label: "Allowing testing secure frames for voice/video",
                     defaultConfig: {
-                        canSupportSecureFrames: !1
+                        canSupportSecureFrames: !1,
+                        canSupportMls: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "Can support secure frames for voice/video",
                         config: {
-                            canSupportSecureFrames: !0
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Can support secure frames for voice/video w/ MLS nogotiation",
+                        config: {
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
                         }
                     }]
                 }),
@@ -28987,13 +28996,22 @@
                     id: "2023-11_secure_frames_encryption_guilds",
                     label: "Allowing testing secure frames for voice/video (Guilds)",
                     defaultConfig: {
-                        canSupportSecureFrames: !1
+                        canSupportSecureFrames: !1,
+                        canSupportMls: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "Can support secure frames for voice/video",
                         config: {
-                            canSupportSecureFrames: !0
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Can support secure frames for voice/video w/ MLS nogotiation",
+                        config: {
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
                         }
                     }]
                 })
@@ -38810,13 +38828,14 @@
                     let t = eg.getSupportedSecureFramesProtocolVersion(),
                         n = V.SecureFramesUserExperiment.getCurrentConfig({
                             location: "MediaEngineStore"
-                        }).canSupportSecureFrames;
-                    if (n) return t;
-                    let i = null != e && V.SecureFramesGuildExperiment.getCurrentConfig({
-                        guildId: e,
-                        location: "MediaEngineStore"
-                    }).canSupportSecureFrames;
-                    return i ? t : 0
+                        }),
+                        i = null != e ? V.SecureFramesGuildExperiment.getCurrentConfig({
+                            guildId: e,
+                            location: "MediaEngineStore"
+                        }) : null,
+                        r = n.canSupportSecureFrames || (null == i ? void 0 : i.canSupportSecureFrames),
+                        s = n.canSupportMls || (null == i ? void 0 : i.canSupportMls);
+                    return r ? s ? t : t % 100 : 0
                 }
             }
             tp.displayName = "MediaEngineStore";
@@ -49762,7 +49781,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254230"
+                                build_number: "254261"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63133,4 +63152,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.0c47213c47d83e4eafdb.js.map
+//# sourceMappingURL=72243.7a96568235460028e193.js.map
