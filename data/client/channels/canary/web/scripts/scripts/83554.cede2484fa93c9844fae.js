@@ -123,13 +123,13 @@
                 o = {},
                 c = 0,
                 I = null,
-                O = () => !0;
+                S = () => !0;
 
-            function S(e) {
+            function T(e) {
                 E.add(e)
             }
 
-            function T(e) {
+            function O(e) {
                 let {
                     messages: t
                 } = e;
@@ -146,7 +146,7 @@
             }
             class h extends n.default.Store {
                 initialize() {
-                    this.waitFor(u.default), this.syncWith([u.default], O)
+                    this.waitFor(u.default), this.syncWith([u.default], S)
                 }
                 checkAndFetchReferralsRemaining() {
                     null == a && !d && c < 5 && (null == I || I < Date.now()) && (0, s.fetchReferralsRemaining)()
@@ -237,14 +237,14 @@
                     } = e;
                     E.delete(t), R.add(t)
                 },
-                LOAD_MESSAGES_SUCCESS: T,
+                LOAD_MESSAGES_SUCCESS: O,
                 MESSAGE_CREATE: function(e) {
                     let {
                         message: t
                     } = e;
                     A(t)
                 },
-                LOAD_MESSAGES_AROUND_SUCCESS: T,
+                LOAD_MESSAGES_AROUND_SUCCESS: O,
                 LOGOUT: function() {
                     a = null, f = {}, L = [], _ = new Set, d = !1, E = new Set, R = new Set, o = {}, c = 0, I = null
                 }
@@ -280,7 +280,7 @@
             }
 
             function _() {
-                let e = (0, n.useStateFromStores)([s.default], () => s.default.getUserDiscountOffer(a.PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID)),
+                let e = (0, n.useStateFromStores)([s.default], () => s.default.getUserDiscount(a.PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID)),
                     [t, r] = l.useState(f(e)),
                     L = (0, n.useStateFromStores)([u.default], () => (0, C.isPremium)(u.default.getCurrentUser()));
                 return l.useEffect(() => {
@@ -374,31 +374,28 @@
             let a = {
                     userOffersLastFetchedAtDate: void 0,
                     userTrialOffers: {},
-                    userDiscounts: {},
-                    userDiscountOffers: {}
+                    userDiscounts: {}
                 },
                 f = a;
 
             function L() {
-                f.userTrialOffers = {}, f.userDiscounts = {}, f.userDiscountOffers = {}, f.userOffersLastFetchedAtDate = void 0
+                f.userTrialOffers = {}, f.userDiscounts = {}, f.userOffersLastFetchedAtDate = void 0
             }
             let _ = () => !0;
 
             function d() {
                 let e = s.default.getPremiumTypeSubscription();
-                return null != e && (f.userTrialOffers = {}, f.userDiscounts = {}, f.userDiscountOffers = {}, !0)
+                return null != e && (f.userTrialOffers = {}, f.userDiscounts = {}, !0)
             }
             class E extends l.default.PersistedStore {
                 initialize(e) {
-                    f = null != e ? e : a;
-                    let t = null == e ? void 0 : e.userDiscounts;
-                    null != t && 0 !== Object.keys(t).length && (f.userDiscountOffers = t), this.waitFor(i.default), this.syncWith([i.default], _), this.syncWith([s.default], d)
+                    f = null != e ? e : a, this.waitFor(i.default), this.syncWith([i.default], _), this.syncWith([s.default], d)
                 }
                 getUserTrialOffer(e) {
                     if (null !== e) return f.userTrialOffers[e]
                 }
-                getUserDiscountOffer(e) {
-                    if (null !== e) return f.userDiscountOffers[e]
+                getUserDiscount(e) {
+                    if (null !== e) return f.userDiscounts[e]
                 }
                 getAnyOfUserTrialOfferId(e) {
                     for (let t of e)
@@ -423,7 +420,7 @@
                 }
                 getUnacknowledgedDiscountOffers() {
                     let e = i.default.getCurrentUser();
-                    return (0, u.isPremium)(e) ? [] : Object.values(f.userDiscountOffers).filter(e => null == e.expires_at)
+                    return (0, u.isPremium)(e) ? [] : Object.values(f.userDiscounts).filter(e => null == e.expires_at)
                 }
                 getUnacknowledgedOffers(e) {
                     let t = i.default.getCurrentUser();
@@ -458,14 +455,14 @@
                         userTrialOffer: t,
                         userDiscount: r
                     } = e;
-                    null == t && null == r && L(), null != t ? (f.userTrialOffers[t.trial_id] = t, f.userDiscountOffers = {}) : null != r && (f.userDiscountOffers[r.discount_id] = r, f.userTrialOffers = {}), f.userOffersLastFetchedAtDate = Date.now()
+                    null == t && null == r && L(), null != t ? (f.userTrialOffers[t.trial_id] = t, f.userDiscounts = {}) : null != r && (f.userDiscounts[r.discount_id] = r, f.userTrialOffers = {}), f.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t,
                         userDiscount: r
                     } = e;
-                    null != t ? f.userTrialOffers[t.trial_id] = t : f.userTrialOffers = {}, null != r ? f.userDiscountOffers[r.discount_id] = r : f.userDiscountOffers = {}, f.userOffersLastFetchedAtDate = Date.now()
+                    null != t ? f.userTrialOffers[t.trial_id] = t : f.userTrialOffers = {}, null != r ? f.userDiscounts[r.discount_id] = r : f.userDiscounts = {}, f.userOffersLastFetchedAtDate = Date.now()
                 },
                 LOGOUT: L
             })
@@ -564,4 +561,4 @@
         }
     }
 ]);
-//# sourceMappingURL=83554.b9dcf0c67154b723c6ce.js.map
+//# sourceMappingURL=83554.cede2484fa93c9844fae.js.map
