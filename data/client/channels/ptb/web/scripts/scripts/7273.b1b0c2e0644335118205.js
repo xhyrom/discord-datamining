@@ -1108,6 +1108,7 @@
                     FORUM_TAGS: _ => "/channels/".concat(_, "/tags"),
                     FORUM_TAG: (_, E) => "/channels/".concat(_, "/tags/").concat(E),
                     FRIEND_FINDER: "/friend-finder/find-friends",
+                    FRIEND_FINDER_VIEWED_SUGGESTIONS: "/friend-finder/viewed-suggestions",
                     FRIEND_FINDER_HIDE_INVITE_SUGGESTION: "/friend-finder/hide-invite-suggestion",
                     FRIEND_SUGGESTIONS: "/friend-suggestions",
                     FRIEND_SUGGESTION: _ => "/friend-suggestions/".concat(_),
@@ -13150,4 +13151,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.e68ef0bcffba427c8068.js.map
+//# sourceMappingURL=7273.b1b0c2e0644335118205.js.map
