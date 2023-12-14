@@ -201,7 +201,7 @@
                 }
                 constructor(e, i) {
                     var l, t, n, r;
-                    this.userId = e.userId, this.guildId = null == i ? void 0 : i.guildId, this.banner = null !== (l = null == i ? void 0 : i.banner) && void 0 !== l ? l : e.banner, this.bio = d(e.bio, null == i ? void 0 : i.bio), this.pronouns = d(e.pronouns, null == i ? void 0 : i.pronouns), this.accentColor = e.accentColor, this.themeColors = null !== (t = null == i ? void 0 : i.themeColors) && void 0 !== t ? t : e.themeColors, this.popoutAnimationParticleType = null !== (n = null == i ? void 0 : i.popoutAnimationParticleType) && void 0 !== n ? n : e.popoutAnimationParticleType, this.profileEffectID = null !== (r = null == i ? void 0 : i.profileEffectID) && void 0 !== r ? r : e.profileEffectID, this._userProfile = e, this._guildMemberProfile = i
+                    this.userId = e.userId, this.guildId = null == i ? void 0 : i.guildId, this.banner = null !== (l = null == i ? void 0 : i.banner) && void 0 !== l ? l : e.banner, this.bio = d(e.bio, null == i ? void 0 : i.bio), this.pronouns = d(e.pronouns, null == i ? void 0 : i.pronouns), this.accentColor = e.accentColor, this.themeColors = null !== (t = null == i ? void 0 : i.themeColors) && void 0 !== t ? t : e.themeColors, this.popoutAnimationParticleType = null !== (n = null == i ? void 0 : i.popoutAnimationParticleType) && void 0 !== n ? n : e.popoutAnimationParticleType, this.profileEffectId = null !== (r = null == i ? void 0 : i.profileEffectId) && void 0 !== r ? r : e.profileEffectId, this._userProfile = e, this._guildMemberProfile = i
                 }
             }
         },
@@ -209,7 +209,7 @@
             "use strict";
             l.r(i), l.d(i, {
                 default: function() {
-                    return w
+                    return D
                 }
             }), l("222007"), l("702976");
             var t = l("917351"),
@@ -303,7 +303,7 @@
                         themeColors: null === (t = e.user_profile) || void 0 === t ? void 0 : t.theme_colors,
                         popoutAnimationParticleType: null === (n = e.user_profile) || void 0 === n ? void 0 : n.popout_animation_particle_type,
                         bio: null !== (p = null === (u = e.user_profile) || void 0 === u ? void 0 : u.bio) && void 0 !== p ? p : "",
-                        profileEffectID: null === (d = e.user_profile) || void 0 === d ? void 0 : null === (o = d.profile_effect) || void 0 === o ? void 0 : o.id,
+                        profileEffectId: null === (d = e.user_profile) || void 0 === d ? void 0 : null === (o = d.profile_effect) || void 0 === o ? void 0 : o.id,
                         pronouns: null !== (h = null === (a = e.user_profile) || void 0 === a ? void 0 : a.pronouns) && void 0 !== h ? h : "",
                         connectedAccounts: null !== (P = e.connected_accounts.filter(e => r.default.isSupported(e.type))) && void 0 !== P ? P : [],
                         applicationRoleConnections: null !== (S = e.application_role_connections) && void 0 !== S ? S : [],
@@ -330,7 +330,7 @@
                         accentColor: e.guild_member_profile.accent_color,
                         themeColors: null === (E = e.guild_member_profile) || void 0 === E ? void 0 : E.theme_colors,
                         popoutAnimationParticleType: null === (C = e.guild_member_profile) || void 0 === C ? void 0 : C.popout_animation_particle_type,
-                        profileEffectID: null === (U = e.guild_member_profile) || void 0 === U ? void 0 : null === (I = U.profile_effect) || void 0 === I ? void 0 : I.id,
+                        profileEffectId: null === (U = e.guild_member_profile) || void 0 === U ? void 0 : null === (I = U.profile_effect) || void 0 === I ? void 0 : I.id,
                         bio: e.guild_member_profile.bio,
                         pronouns: e.guild_member_profile.pronouns,
                         badges: e.guild_badges
@@ -381,7 +381,7 @@
                         pronouns: u,
                         popout_animation_particle_type: o,
                         theme_colors: d,
-                        profileEffectID: s
+                        profileEffectId: s
                     } = e;
                     if (null == l || null == g[i]) return !1;
                     let a = g[i][l];
@@ -394,7 +394,7 @@
                         pronouns: u,
                         popoutAnimationParticleType: o,
                         themeColors: d,
-                        profileEffectID: s
+                        profileEffectId: s
                     }
                 }(e) : function(e) {
                     let {
@@ -405,7 +405,7 @@
                         pronouns: r,
                         popout_animation_particle_type: u,
                         theme_colors: o,
-                        profileEffectID: d
+                        profileEffectId: d
                     } = e, s = _[i];
                     if (null == s) return !1;
                     _[i] = {
@@ -416,7 +416,7 @@
                         pronouns: r,
                         popoutAnimationParticleType: u,
                         themeColors: o,
-                        profileEffectID: d
+                        profileEffectId: d
                     }
                 }(e)
             }
@@ -433,10 +433,10 @@
                 _[i.id].lastFetched = 0
             }
 
-            function D() {
+            function G() {
                 m.clear(), _ = {}, g = {}
             }
-            class G extends c.default {
+            class w extends c.default {
                 isFetchingProfile(e) {
                     return m.has(e)
                 }
@@ -465,7 +465,7 @@
                 takeSnapshot() {
                     let e = d.default.getId();
                     return {
-                        version: G.LATEST_SNAPSHOT_VERSION,
+                        version: w.LATEST_SNAPSHOT_VERSION,
                         data: [{
                             userId: e,
                             profile: _[e]
@@ -474,7 +474,7 @@
                 }
                 constructor() {
                     super(), this.loadCache = () => {
-                        let e = this.readSnapshot(G.LATEST_SNAPSHOT_VERSION);
+                        let e = this.readSnapshot(w.LATEST_SNAPSHOT_VERSION);
                         null != e && e.forEach(e => {
                             let {
                                 userId: i,
@@ -499,11 +499,11 @@
                         GUILD_MEMBER_UPDATE: L,
                         USER_UPDATE: L,
                         LOGOUT: S
-                    }), this.waitFor(f.default), this.syncWith([u.default], D)
+                    }), this.waitFor(f.default), this.syncWith([u.default], G)
                 }
             }
-            G.displayName = "UserProfileStore", G.LATEST_SNAPSHOT_VERSION = 1;
-            var w = new G
+            w.displayName = "UserProfileStore", w.LATEST_SNAPSHOT_VERSION = 1;
+            var D = new w
         },
         506885: function(e, i, l) {
             "use strict";
@@ -613,4 +613,4 @@
         }
     }
 ]);
-//# sourceMappingURL=49191.d845556dff27841ecd1e.js.map
+//# sourceMappingURL=49191.4c47aae235ac3c0cdcd4.js.map

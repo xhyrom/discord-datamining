@@ -16473,6 +16473,8 @@
                 DEV_NOTICE_LOCAL: "Local development mode",
                 DEV_NOTICE_STAGING: "Staging {buildNumber}",
                 NOTIF_CENTER_V2_VIEW_SUMMARY: "Join in!",
+                NOTIFICATION_CENTER_HIGHLIGHT_SETTINGS: "Highlight Notification Settings",
+                HIGHLIGHT_NOTIFICATION_SETTINGS_LABEL_SUPPRESS_HIGHLIGHTS: "Suppress Highlights in this server",
                 GUILD_SETTINGS_PARTNER_CHECKLIST_LOADING_FAILED: "We are having trouble loading the requirements. Please check back later.",
                 GUILD_SETTINGS_PARTNER_CHECKLIST_LOADING_FAILED_TOOLTIP: "Something went wrong. Please check back later",
                 PURCHASE_REVIEW_TAX_LABEL: "Tax",
@@ -16759,6 +16761,7 @@
                 POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}h left}}",
                 POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}m left}}",
                 POLL_EXPIRED: "Poll closed",
+                POLL_NOT_INTERACTIVE: "View original message to interact",
                 FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
                 KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
                 PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
@@ -18268,7 +18271,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254362", ", Version Hash: ").concat("96ecb5b1f7d8d410589712d95b6245af220c274d")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254518", ", Version Hash: ").concat("61f5b93c47200f6eeb6302f0f267b6fc8573735f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20573,8 +20576,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "254362", "254362"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254362")), _ = 0), _
+                let _ = parseInt((e = "254518", "254518"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254518")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -26177,23 +26180,25 @@
                     super(...e), this.actions = {
                         POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
                     }, this.onPostConnectionOpen = () => {
-                        let e = i.UUOneClickExperiment.getCurrentConfig({
-                            location: "uu_one_click"
-                        }, {
-                            autoTrackExposure: !1
-                        }).enabled;
-                        (function() {
-                            let e = r.experiment.getCurrentConfig({
-                                location: "b9eb97_1"
+                        if (function() {
+                                let e = r.experiment.getCurrentConfig({
+                                    location: "b9eb97_1"
+                                }, {
+                                    autoTrackExposure: !1
+                                }).enabled;
+                                if (!e) return !1;
+                                let _ = n.default.getCurrentUser();
+                                if (null == _ || _.isPomelo() || !_.hasVerifiedEmailOrPhone()) return !1;
+                                let E = t.default.get(s);
+                                return !(null != E && Date.now() - E < 6048e5) && !0
+                            }()) {
+                            let e = i.UUOneClickExperiment.getCurrentConfig({
+                                location: "uu_one_click"
                             }, {
                                 autoTrackExposure: !1
                             }).enabled;
-                            if (!e) return !1;
-                            let _ = n.default.getCurrentUser();
-                            if (null == _ || _.isPomelo() || !_.hasVerifiedEmailOrPhone()) return !1;
-                            let E = t.default.get(s);
-                            return !(null != E && Date.now() - E < 6048e5) && !0
-                        })() && ((0, a.openPomeloModal)(I.PomeloEntrypoints.APP_START, e), t.default.set(s, Date.now()))
+                            (0, a.openPomeloModal)(I.PomeloEntrypoints.APP_START, e), t.default.set(s, Date.now())
+                        }
                     }
                 }
             }
@@ -36561,4 +36566,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.e7514428ab9848381b08.js.map
+//# sourceMappingURL=66318.82298fd040829d7aab01.js.map
