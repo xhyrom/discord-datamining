@@ -4712,5 +4712,9 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "QUESTS_CURRENT_QUESTS": {
+    "url": "/quests/@me",
+    "allowed_methods": null
   }
 }
