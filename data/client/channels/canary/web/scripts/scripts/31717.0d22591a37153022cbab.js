@@ -2862,72 +2862,73 @@
             "use strict";
             n.r(t), n.d(t, {
                 generateEmptyPollAnswer: function() {
-                    return u
-                },
-                generateUploadId: function() {
                     return o
                 },
-                filterOutUUID: function() {
+                generateUploadId: function() {
                     return c
                 },
-                useCanPostPollsInChannel: function() {
+                filterOutUUID: function() {
                     return E
                 },
-                isAnswerFilled: function() {
+                useCanPostPollsInChannel: function() {
                     return f
                 },
-                isIncompleteAnswer: function() {
+                isAnswerFilled: function() {
                     return _
                 },
-                createPollServerDataFromCreateRequest: function() {
+                isIncompleteAnswer: function() {
                     return g
+                },
+                createPollServerDataFromCreateRequest: function() {
+                    return h
                 }
             }), n("781738");
             var a = n("748820"),
-                l = n("418009"),
-                s = n("957255"),
-                i = n("697218"),
-                r = n("83995"),
-                d = n("49111");
+                l = n("446674"),
+                s = n("418009"),
+                i = n("957255"),
+                r = n("697218"),
+                d = n("83995"),
+                u = n("49111");
 
-            function u() {
+            function o() {
                 return {
                     text: void 0,
                     image: void 0,
-                    uploadId: o()
+                    uploadId: c()
                 }
             }
 
-            function o() {
+            function c() {
                 return (0, a.v4)()
             }
 
-            function c(e) {
+            function E(e) {
                 return e.replace(/\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i, "")
             }
 
-            function E(e) {
+            function f(e) {
                 let {
                     enabled: t
-                } = r.PollsExperiment.useExperiment({
+                } = d.PollsExperiment.useExperiment({
                     guildId: e.guild_id,
                     location: "useCanPostPollsInChannel"
-                });
-                return !!d.ChannelTypesSets.POLLS.has(e.type) && (e.isPrivate() ? e.recipients.every(e => {
-                    let t = i.default.getUser(e);
-                    return (null == t ? void 0 : t.isStaff()) === !0
-                }) : t && s.default.can(d.Permissions.SEND_MESSAGES, e))
-            }
-
-            function f(e, t) {
-                return t === l.PollLayoutTypes.IMAGE_ONLY_ANSWERS ? null != e.image : null != e.text && e.text.length > 0
+                }), n = (0, l.useStateFromStoresArray)([r.default], () => {
+                    var t, n;
+                    return null !== (n = null === (t = e.recipients) || void 0 === t ? void 0 : t.map(r.default.getUser)) && void 0 !== n ? n : []
+                }, [e.recipients]);
+                return !!u.ChannelTypesSets.POLLS.has(e.type) && (e.isPrivate() ? n.every(e => (null == e ? void 0 : e.isStaff()) === !0) : t && i.default.can(u.Permissions.SEND_MESSAGES, e))
             }
 
             function _(e, t) {
-                return t === l.PollLayoutTypes.DEFAULT && null != e.image && (null == e.text || 0 === e.text.length)
+                return t === s.PollLayoutTypes.IMAGE_ONLY_ANSWERS ? null != e.image : null != e.text && e.text.length > 0
             }
 
-            function g(e) {
+            function g(e, t) {
+                return t === s.PollLayoutTypes.DEFAULT && null != e.image && (null == e.text || 0 === e.text.length)
+            }
+
+            function h(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "0";
                 if (null == e) return;
@@ -3296,4 +3297,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.adea2dfab001015340df.js.map
+//# sourceMappingURL=31717.0d22591a37153022cbab.js.map
