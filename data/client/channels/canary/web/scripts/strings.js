@@ -71,6 +71,8 @@
                 UNREADS_EMPTY_STATE_HEADER: "You're all caught up!",
                 UNREADS_EMPTY_STATE_TIP: "Open the Inbox by pressing CTRL+I, and mark your top message as read with CTRL+Shift+E.",
                 UNREADS_EMPTY_STATE_TIP_MAC: "Open the Inbox by pressing CMD+I, and mark your top message as read with CMD+Shift+E.",
+                UNREADS_EMPTY_STATE_ERROR_HEADER: "Whoops",
+                UNREADS_EMPTY_STATE_ERROR_SUBTITLE: "The Inbox hit a snag, please close and re-open it.",
                 UNREADS_VIEW_CHANNEL: "View all unreads",
                 UNREADS_MARK_READ: "Mark Inbox As Read",
                 UNREADS_TUTORIAL_HEADER: "Stay up to date with latest messages!",
@@ -18271,7 +18273,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254536", ", Version Hash: ").concat("49e4a8602c0edfd0d207c004c6eeec513f650a50")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254546", ", Version Hash: ").concat("e982e0e66f8e6d465af47d531566315c39c2049b")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20576,8 +20578,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "254536", "254536"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254536")), _ = 0), _
+                let _ = parseInt((e = "254546", "254546"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254546")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -27809,24 +27811,17 @@
                 i = E("818766");
             class I extends t.default {
                 handleVoiceChannelSelect(e) {
-                    var _;
                     let {
-                        channelId: E,
-                        guildId: t
+                        channelId: _,
+                        guildId: E
                     } = e;
-                    if (null == E || null == t) return;
-                    let I = r.default.getChannel(E),
-                        {
-                            voiceChannelActivityNotifsEnabled: s
-                        } = n.VoiceActivityNotificationGuildExperiment.getCurrentConfig({
-                            guildId: null !== (_ = null == I ? void 0 : I.getGuildId()) && void 0 !== _ ? _ : "",
-                            location: "voiceChannelNotificationsManager"
-                        });
-                    if (s && (null == I ? void 0 : I.isGuildVoice())) {
-                        let e = o.default.getParticipants(E).length,
-                            _ = a.default.isInChannel(E),
-                            t = e === (_ ? 1 : 0);
-                        t ? i.sendVoiceChannelActivityNotification(E, t) : e === (_ ? 2 : 1) && i.sendVoiceChannelActivityNotification(E, t)
+                    if (null == _ || null == E) return;
+                    let t = r.default.getChannel(_);
+                    if (null != t && (0, n.hasVoiceChannelActivityNotifsEnabled)(t) && t.isGuildVoice()) {
+                        let e = o.default.getParticipants(_).length,
+                            E = a.default.isInChannel(_),
+                            t = e === (E ? 1 : 0);
+                        t ? i.sendVoiceChannelActivityNotification(_, t) : e === (E ? 2 : 1) && i.sendVoiceChannelActivityNotification(_, t)
                     }
                 }
                 constructor(...e) {
@@ -36566,4 +36561,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.c1f903129bd80b4b4ae1.js.map
+//# sourceMappingURL=66318.739ff3b0834ef9495988.js.map
