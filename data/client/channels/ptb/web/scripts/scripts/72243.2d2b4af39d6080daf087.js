@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -22675,6 +22675,7 @@
             var i = n("446674"),
                 r = n("913144");
             let s = {
+                    always_on_tab_bar: "Always on bottom tabs navigation bar",
                     enable_swipe_shortcuts: "Gestures shortcuts - swipe from right to left.",
                     disable_alpha_voice_panel: "Disable new Voice Panel UI: Currently the new voice ui is defaulted ON for staff.  It's not feature complete so if there's something you are missing, or you find a problem, you can disable it here.",
                     highlight_experimental_icons: "Highlight experimental icons",
@@ -49781,7 +49782,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254289"
+                                build_number: "254317"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63152,4 +63153,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.aab2cfcd21fad4a3b971.js.map
+//# sourceMappingURL=72243.2d2b4af39d6080daf087.js.map
