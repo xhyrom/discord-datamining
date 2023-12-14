@@ -1,12 +1,32 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2023-12_voice_lockscreen_widget",
+    "label": "Voice live activity (guild)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Off (notif only)",
+      "Treatment 2: On (widget + notif)",
+      "Treatment 3: On (widget + notifs++)"
+    ],
     "hash": 3182686365,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "showWidget",
+      "voiceChannelActivityNotifsEnabled"
+    ]
   },
   "rollout": {
     "populations": [

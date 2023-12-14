@@ -6,17 +6,13 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Deadchat notifs enabled, voice channel activity notifs disabled",
-      "Treatment 2: Deadchat notifs disabled, voice channel activity notifs enabled",
-      "Treatment 3: Deadchat notifs enabled, voice channel activity notifs enabled"
+      "Treatment 2: Deadchat notifs disabled, voice channel activity notifs enabled"
     ],
     "hash": 3997016690,
     "buckets": [
       -1,
       0,
-      1,
-      2,
-      3
+      2
     ],
     "holdout": {
       "name": null,
@@ -24,8 +20,7 @@
     },
     "aa_mode": false,
     "config_keys": [
-      "deadchatNotifsEnabled",
-      "voiceChannelActivityNotifsEnabled"
+      "enabled"
     ]
   },
   "rollout": {
