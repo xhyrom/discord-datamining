@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["27201"], {
+    ["67615"], {
         273215: function(e, t, n) {
             "use strict";
             e.exports = n.p + "63900a1ba1f23d305c53.png"
@@ -5133,7 +5133,7 @@
             function U(e) {
                 switch (e) {
                     case p.CommandOrigin.CHAT:
-                        return h.DraftType.SlashCommand;
+                        return h.DraftType.ChannelMessage;
                     case p.CommandOrigin.APPLICATION_LAUNCHER:
                         return h.DraftType.ApplicationLauncherCommand
                 }
@@ -24649,7 +24649,7 @@
                 _ = n("341542"),
                 E = n("49111");
             let h = E.MAX_MESSAGE_LENGTH_PREMIUM + 500;
-            (a = i || (i = {}))[a.ChannelMessage = 0] = "ChannelMessage", a[a.ThreadSettings = 1] = "ThreadSettings", a[a.FirstThreadMessage = 2] = "FirstThreadMessage", a[a.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", a[a.Poll = 4] = "Poll", a[a.SlashCommand = 5] = "SlashCommand";
+            (a = i || (i = {}))[a.ChannelMessage = 0] = "ChannelMessage", a[a.ThreadSettings = 1] = "ThreadSettings", a[a.FirstThreadMessage = 2] = "FirstThreadMessage", a[a.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", a[a.Poll = 4] = "Poll";
             let f = {};
 
             function p(e) {
@@ -28961,12 +28961,12 @@
                         channelId: i,
                         showLargeMessageDialog: l,
                         draftType: s
-                    } = e, d = [...p(i, s)], h = (null === (t = u.default.getCurrentConfig({
+                    } = e, d = [...p(i, s)], c = (null === (t = u.default.getCurrentConfig({
                         location: "373489_1"
                     }, {
                         autoTrackExposure: !1
                     })) || void 0 === t ? void 0 : t.enabled) === !0;
-                    if (h && d.length + n.length > _.MAX_UPLOAD_COUNT && s !== c.DraftType.SlashCommand && s !== c.DraftType.ApplicationLauncherCommand) {
+                    if (c && d.length + n.length > _.MAX_UPLOAD_COUNT) {
                         r.default.show({
                             title: E.default.Messages.ATTACHMENT_TOO_MANY_ERROR_TITLE,
                             body: E.default.Messages.ATTACHMENT_TOO_MANY_ERROR_MESSAGE.format({
@@ -33754,4 +33754,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27201.72a930883e9987f5dc22.js.map
+//# sourceMappingURL=67615.e263cd8045b10900f4b8.js.map
