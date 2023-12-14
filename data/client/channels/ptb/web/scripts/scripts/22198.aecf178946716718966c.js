@@ -625,7 +625,7 @@
                         children: (0, r.jsx)("div", {
                             className: u ? S.innerNoRadius : S.inner,
                             children: (0, r.jsx)("img", {
-                                src: n ? s : f,
+                                src: n && !o ? s : f,
                                 className: S.effect,
                                 style: {
                                     top: 0 - i
@@ -753,4 +753,4 @@
         }
     }
 ]);
-//# sourceMappingURL=22198.18a0a0fea30b37bf372b.js.map
+//# sourceMappingURL=22198.aecf178946716718966c.js.map
