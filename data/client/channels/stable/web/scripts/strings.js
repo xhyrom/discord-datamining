@@ -4654,6 +4654,7 @@
                 SCOPE_UNSUPPORTED_ON_ANDROID: "Not supported within Android app",
                 SCOPE_UNSUPPORTED_ON_ANDROID_DESCRIPTION: "This OAuth2 scope is not supported within the app yet.\nGood news though, it does work on your mobile web browser! So please open it there.",
                 OAUTH2_GO_TO_SERVER_NAME_CTA: "Go to **!!{guildName}!!**",
+                OAUTH2_GO_TO_SERVER_DEFAULT_CTA: "Go to Server",
                 SETTINGS_TWO_FA: "Multi-Factor Authentication",
                 TWO_FA: "Authenticator App",
                 TWO_FA_DESCRIPTION: "Configuring an authenticator app is a good way to add an extra layer of security to your Discord account to make sure that only you have the ability to log in.",
@@ -16759,7 +16760,9 @@
                 POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}m left}}",
                 POLL_EXPIRED: "Poll closed",
                 FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
-                PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink})."
+                KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
+                PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
+                MANAGE_AUTHORIZED_APP: "Manage Authorized App"
             })
         },
         657743: function(e, _, E) {
@@ -18265,7 +18268,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254206", ", Version Hash: ").concat("3ae797fcd2fe8776a2996626c1fbc83d41c0608f")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254355", ", Version Hash: ").concat("4eb51456c9bb354bec552d3d94771a0e873a313f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19842,6 +19845,11 @@
                     actions: ["CHANNEL_CREATE"],
                     inlineRequire: () => E("643857").default,
                     neverLoadBeforeConnectionOpen: !0
+                },
+                QuestsManager: {
+                    actions: ["POST_CONNECTION_OPEN", "RUNNING_GAMES_CHANGE"],
+                    inlineRequire: () => E("319405").default,
+                    neverLoadBeforeConnectionOpen: !0
                 }
             };
             (0, t.initialize)(o)
@@ -20565,8 +20573,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "254206", "254206"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254206")), _ = 0), _
+                let _ = parseInt((e = "254355", "254355"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254355")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -20960,20 +20968,17 @@
                 handleRTCConnectionFlags(e) {
                     let {
                         userId: _,
-                        context: E,
-                        channelId: t,
-                        guildId: n
+                        channelId: E,
+                        guildId: t
                     } = e;
-                    if (E === o.MediaEngineContextTypes.DEFAULT) this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
-                    else if (E === o.MediaEngineContextTypes.STREAM) {
-                        let e = N.default.getRTCConnection(i.encodeStreamKey({
-                            streamType: null != n ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
-                            ownerId: _,
-                            channelId: t,
-                            guildId: n
-                        }));
-                        this.recordInboundStream(_, e)
-                    }
+                    this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
+                    let o = N.default.getRTCConnection(i.encodeStreamKey({
+                        streamType: null != t ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
+                        ownerId: _,
+                        channelId: E,
+                        guildId: t
+                    }));
+                    null != o && this.applyInboundStreamRecording(_, o)
                 }
                 handleRTCUserSSRC(e) {
                     let {
@@ -21029,7 +21034,7 @@
                         channelId: t,
                         guildId: n
                     }));
-                    this.recordInboundStream(_, r)
+                    null != r && this.applyInboundStreamRecording(_, r)
                 }
                 async classifyHardwareAndTrack() {
                     try {
@@ -21083,13 +21088,13 @@
                     let t = l.default.isVoiceRecordingAllowedForUser(e);
                     null == E || E.setClipRecordSSRC(e, "audio", "inbound", t, _)
                 }
-                recordInboundStream(e, _) {
+                applyInboundStreamRecording(e, _) {
                     if (!(0, L.default)(T.default) || e === s.default.getId()) return;
                     let {
                         enableViewerClipping: E,
                         ignoreSenderPreference: t
                     } = I.default.getCurrentConfig({
-                        location: "ClipsManager:recordInboundStream"
+                        location: "ClipsManager:applyInboundStreamRecording"
                     });
                     if (!E) return;
                     let o = t || l.default.isViewerClippingAllowedForUser(e);
@@ -23049,7 +23054,8 @@
                         [C.OverlayNotificationType.OverlayCrashed]: new D,
                         [C.OverlayNotificationType.StartBroadcastNotification]: new D,
                         [C.OverlayNotificationType.ClipsReminderNotification]: new D,
-                        [C.OverlayNotificationType.ClipsNotification]: new D
+                        [C.OverlayNotificationType.ClipsNotification]: new D,
+                        [C.OverlayNotificationType.KeybindIndicatorsNotification]: new D
                     }
                 }
             }(o = t || (t = {}))[o.Voice = 0] = "Voice", o[o.Text = 1] = "Text";
@@ -26418,6 +26424,142 @@
                 var _;
                 return !e.ok && (null === (_ = e.body) || void 0 === _ ? void 0 : _.code) === t.AbortCodes.BLOCKED_BY_PROXY
             }
+        },
+        448881: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                fetchCurrentQuests: function() {
+                    return a
+                }
+            });
+            var t = E("872717"),
+                o = E("913144"),
+                n = E("599417"),
+                r = E("49111");
+            async function a() {
+                o.default.dispatch({
+                    type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
+                });
+                try {
+                    let e = await t.default.get({
+                        url: r.Endpoints.QUESTS_CURRENT_QUESTS
+                    });
+                    o.default.dispatch({
+                        type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
+                        quests: e.body
+                    })
+                } catch (e) {
+                    o.default.dispatch({
+                        type: "QUESTS_FETCH_CURRENT_QUESTS_FAILURE",
+                        error: new n.default(e)
+                    })
+                }
+            }
+        },
+        374023: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return n
+                }
+            });
+            var t = E("862205");
+            let o = (0, t.createExperiment)({
+                id: "2023-12_quests",
+                kind: "user",
+                label: "Quests",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 0,
+                    label: "Control",
+                    config: {
+                        enabled: !1
+                    }
+                }, {
+                    id: 1,
+                    label: "Quests enabled",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+            var n = o
+        },
+        2973: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return I
+                }
+            });
+            var t = E("446674"),
+                o = E("913144");
+            let n = !1,
+                r = [],
+                a = 0;
+            class i extends t.default.Store {
+                get quests() {
+                    return r
+                }
+                get isFetchingCurrentQuests() {
+                    return n
+                }
+                get lastFetchedCurrentQuests() {
+                    return a
+                }
+            }
+            i.displayName = "QuestsStore";
+            var I = new i(o.default, {
+                LOGOUT: function() {
+                    n = !1, r = [], a = 0
+                },
+                QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
+                    a = Date.now(), n = !0
+                },
+                QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: function(e) {
+                    let {
+                        quests: _
+                    } = e;
+                    n = !1, r = _
+                },
+                QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
+                    a = 0, n = !1
+                }
+            })
+        },
+        319405: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return i
+                }
+            }), E("222007");
+            var t = E("689988"),
+                o = E("448881"),
+                n = E("374023"),
+                r = E("2973");
+            class a extends t.default {
+                maybeFetchCurrentQuests() {
+                    n.default.getCurrentConfig({
+                        location: "maybeFetchCurrentQuests"
+                    }, {
+                        autoTrackExposure: !1
+                    }).enabled && !r.default.isFetchingCurrentQuests && (0, o.fetchCurrentQuests)()
+                }
+                constructor(...e) {
+                    super(...e), this.instantiatedAt = Date.now(), this.handleRunningGamesChange = () => {
+                        !(this.instantiatedAt + 432e5 > Date.now() || r.default.lastFetchedCurrentQuests + 432e5 > Date.now()) && this.maybeFetchCurrentQuests()
+                    }, this.handlePostConnectionOpen = () => {
+                        window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(5e3 * Math.random()))
+                    }, this.actions = {
+                        POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
+                        RUNNING_GAMES_CHANGE: this.handleRunningGamesChange
+                    }
+                }
+            }
+            var i = new a
         },
         50733: function(e, _, E) {
             "use strict";
@@ -36419,4 +36561,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.a9903e5b4ebc53ae236e.js.map
+//# sourceMappingURL=66318.5cd4642b30de73457968.js.map

@@ -22675,6 +22675,7 @@
             var i = n("446674"),
                 r = n("913144");
             let s = {
+                    always_on_tab_bar: "Always on bottom tabs navigation bar",
                     enable_swipe_shortcuts: "Gestures shortcuts - swipe from right to left.",
                     disable_alpha_voice_panel: "Disable new Voice Panel UI: Currently the new voice ui is defaulted ON for staff.  It's not feature complete so if there's something you are missing, or you find a problem, you can disable it here.",
                     highlight_experimental_icons: "Highlight experimental icons",
@@ -24523,6 +24524,32 @@
                 }
             }
         },
+        868493: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return r
+                }
+            });
+            var i = n("296892");
+
+            function r(e) {
+                let t = (0, i.default)({
+                        ...e,
+                        id: "".concat(e.id, "_existing_users"),
+                        label: "".concat(e.label, " - Existing Users")
+                    }),
+                    n = (0, i.default)({
+                        ...e,
+                        id: "".concat(e.id, "_new_users"),
+                        label: "".concat(e.label, " - New Users")
+                    });
+                return {
+                    existingUsers: t,
+                    newUsers: n
+                }
+            }
+        },
         862205: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -24531,6 +24558,35 @@
                 }
             });
             var i = n("296892")
+        },
+        133337: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useMergedExperimentConfigs: function() {
+                    return a
+                },
+                getMergedExperimentConfigs: function() {
+                    return o
+                }
+            });
+            var i = n("884691"),
+                r = n("917351");
+
+            function s(e, t) {
+                return (0, r.mergeWith)({}, e, t, (e, t) => e || t)
+            }
+
+            function a(e, t, n, r) {
+                let a = e.useExperiment(n, r),
+                    o = t.useExperiment(n, r);
+                return i.useMemo(() => s(a, o), [a, o])
+            }
+
+            function o(e, t, n, i) {
+                let r = e.getCurrentConfig(n, i),
+                    a = t.getCurrentConfig(n, i);
+                return s(r, a)
+            }
         },
         13030: function(e, t, n) {
             "use strict";
@@ -27845,7 +27901,7 @@
                 a = n("95410");
             n("789563"), n("697218"), n("699145");
             var o = n("132522");
-            n("98443");
+            n("98443"), n("680992");
             var l = n("693051"),
                 u = n("139404"),
                 c = n("61796"),
@@ -28033,16 +28089,15 @@
             "use strict";
             n.r(t), n.d(t, {
                 useNavPeekExperiment: function() {
-                    return d
+                    return l
                 },
                 getNavPeekExperimentConfig: function() {
-                    return f
+                    return u
                 }
             });
-            var i = n("884691"),
-                r = n("917351"),
-                s = n("862205");
-            let a = {
+            var i = n("868493"),
+                r = n("133337");
+            let s = {
                     removePeek: !1,
                     removePeekSubtle: !1,
                     removePeekRoundRight: !1,
@@ -28050,18 +28105,18 @@
                     removeForwardSwipe: !1,
                     showNewPanels: !1
                 },
-                o = [{
+                a = [{
                     id: 0,
                     label: "Control",
                     config: {
-                        ...a,
+                        ...s,
                         showNewPanels: !0
                     }
                 }, {
                     id: 1,
                     label: "Remove peek",
                     config: {
-                        ...a,
+                        ...s,
                         showNewPanels: !0,
                         removePeek: !0
                     }
@@ -28069,7 +28124,7 @@
                     id: 2,
                     label: "Remove peek (subtle peek}",
                     config: {
-                        ...a,
+                        ...s,
                         showNewPanels: !0,
                         removePeek: !0,
                         removePeekSubtle: !0
@@ -28078,7 +28133,7 @@
                     id: 3,
                     label: "Remove peek (round right corner)",
                     config: {
-                        ...a,
+                        ...s,
                         showNewPanels: !0,
                         removePeek: !0,
                         removePeekRoundRight: !0
@@ -28087,7 +28142,7 @@
                     id: 4,
                     label: "Remove peek + flush right edge",
                     config: {
-                        ...a,
+                        ...s,
                         showNewPanels: !0,
                         removePeek: !0,
                         removePeekEdge: !0
@@ -28096,42 +28151,78 @@
                     id: 5,
                     label: "Remove peek + flush right edge + remove forward swipe",
                     config: {
-                        ...a,
+                        ...s,
                         showNewPanels: !0,
                         removePeek: !0,
                         removePeekEdge: !0,
                         removeForwardSwipe: !0
                     }
                 }],
-                l = (0, s.createExperiment)({
+                o = (0, i.default)({
                     kind: "user",
-                    id: "2023-12_mobile_redesign_nav_peek_existing_users",
-                    label: "Mobile Redesign - Nav Experiment: Peek - Existing Users",
-                    defaultConfig: a,
-                    treatments: o
-                }),
-                u = (0, s.createExperiment)({
-                    kind: "user",
-                    id: "2023-12_mobile_redesign_nav_peek_new_users",
-                    label: "Mobile Redesign - Nav Experiment: Peek - New Users",
-                    defaultConfig: a,
-                    treatments: o
+                    id: "2023-12_mobile_redesign_nav_peek",
+                    label: "Mobile Redesign - Nav Experiment: Peek",
+                    defaultConfig: s,
+                    treatments: a
                 });
 
-            function c(e, t) {
-                return (0, r.mergeWith)({}, e, t, (e, t) => e || t)
+            function l(e, t) {
+                return (0, r.useMergedExperimentConfigs)(o.existingUsers, o.newUsers, e, t)
             }
 
-            function d(e, t) {
-                let n = l.useExperiment(e, t),
-                    r = u.useExperiment(e, t);
-                return i.useMemo(() => c(n, r), [n, r])
+            function u(e, t) {
+                return (0, r.getMergedExperimentConfigs)(o.existingUsers, o.newUsers, e, t)
             }
+        },
+        680992: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getNavNotifTabExperiment: function() {
+                    return l
+                }
+            });
+            var i = n("868493"),
+                r = n("133337");
+            let s = {
+                    moveFriendRequests: !1,
+                    removeNotificationTab: !1,
+                    showNewPanels: !1
+                },
+                a = [{
+                    id: 0,
+                    label: "Control",
+                    config: {
+                        ...s,
+                        showNewPanels: !0
+                    }
+                }, {
+                    id: 1,
+                    label: "Move friend requests out of notification tab.",
+                    config: {
+                        ...s,
+                        showNewPanels: !0,
+                        moveFriendRequests: !0
+                    }
+                }, {
+                    id: 2,
+                    label: "Remove notification tab and move friend requests out of notification tab.",
+                    config: {
+                        ...s,
+                        showNewPanels: !0,
+                        moveFriendRequests: !0,
+                        removeNotificationTab: !0
+                    }
+                }],
+                o = (0, i.default)({
+                    kind: "user",
+                    id: "2023-12_mobile_redesign_notif_tab",
+                    label: "Mobile Redesign - Notification Tab",
+                    defaultConfig: s,
+                    treatments: a
+                });
 
-            function f(e, t) {
-                let n = l.getCurrentConfig(e, t),
-                    i = u.getCurrentConfig(e, t);
-                return c(n, i)
+            function l(e, t) {
+                return (0, r.getMergedExperimentConfigs)(o.existingUsers, o.newUsers, e, t)
             }
         },
         693051: function(e, t, n) {
@@ -28232,19 +28323,19 @@
             let i;
             n.r(t), n.d(t, {
                 isOnNewPanels: function() {
-                    return g
-                },
-                useOnNewPanels: function() {
                     return I
                 },
-                isSplitMessagesTab: function() {
+                useOnNewPanels: function() {
                     return C
                 },
-                isSplitMessagesTabAndOnMessagesTab: function() {
+                isSplitMessagesTab: function() {
                     return v
                 },
-                shouldHandleNewPanelsRoute: function() {
+                isSplitMessagesTabAndOnMessagesTab: function() {
                     return A
+                },
+                shouldHandleNewPanelsRoute: function() {
+                    return R
                 }
             });
             var r = n("95410"),
@@ -28254,57 +28345,61 @@
                 l = n("21121"),
                 u = n("699145"),
                 c = n("98443"),
-                d = n("264325"),
-                f = n("18108"),
-                E = n("491246"),
-                h = n("49111");
-            let p = {
+                d = n("680992"),
+                f = n("264325"),
+                E = n("18108"),
+                h = n("491246"),
+                p = n("49111");
+            let _ = {
                     autoTrackExposure: !1
                 },
-                _ = {
+                S = {
                     location: "isSplitMessagesTab"
                 },
-                S = {
+                m = {
                     location: "isOnNewPanels"
                 },
-                m = {
+                T = {
                     location: "useOnNewPanels"
                 };
 
-            function T(e) {
-                (0, f.updateIsInNewPanels)(e), i !== e && (r.default.set("isOnNewPanels", e), i = e)
-            }
-
-            function g() {
-                return (0, l.isInMainTabsExperiment)() ? s.default.get("new_panels") ? (T(!0), !0) : o.default.hasLoadedExperiments || void 0 === i ? u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig(S, p).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig(S, p).showPanels || (0, c.getNavPeekExperimentConfig)(S, p).showNewPanels || (0, d.isTabsUIEnabledManually)() ? (T(!0), !0) : (T(!1), !1) : i : (T(!1), !1)
+            function g(e) {
+                (0, E.updateIsInNewPanels)(e), i !== e && (r.default.set("isOnNewPanels", e), i = e)
             }
 
             function I() {
-                let e = (0, l.useInMainTabsExperiment)(),
-                    t = (0, a.default)("new_panels"),
-                    n = (0, c.useNavPeekExperiment)(m, p).showNewPanels,
-                    i = u.MainTabsV2OnePercentExperimentExistingUsers.useExperiment(m, p).showPanels,
-                    r = u.MainTabsV2OnePercentExperimentNewUsers.useExperiment(m, p).showPanels,
-                    s = (0, d.useIsTabsUIEnabledManually)();
-                return e && (t || n || i || r || s)
+                return (0, l.isInMainTabsExperiment)() ? s.default.get("new_panels") ? (g(!0), !0) : o.default.hasLoadedExperiments || void 0 === i ? u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig(m, _).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig(m, _).showPanels || (0, c.getNavPeekExperimentConfig)(m, _).showNewPanels || (0, d.getNavNotifTabExperiment)(m, _).showNewPanels || (0, f.isTabsUIEnabledManually)() ? (g(!0), !0) : (g(!1), !1) : i : (g(!1), !1)
             }
 
             function C() {
-                if (!(0, l.isInMainTabsExperiment)()) return !1;
-                let {
-                    showNewPanels: e
-                } = (0, c.getNavPeekExperimentConfig)(_, p);
-                return !!(e || !g() || s.default.get("panels_split_messages_tab") || u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig(_, p).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig(_, p).showPanels || (0, d.isTabsUIEnabledManually)()) || !1
+                let e = (0, l.useInMainTabsExperiment)(),
+                    t = (0, a.default)("new_panels"),
+                    n = (0, c.useNavPeekExperiment)(T, _).showNewPanels,
+                    i = (0, d.getNavNotifTabExperiment)(T, _).showNewPanels,
+                    r = u.MainTabsV2OnePercentExperimentExistingUsers.useExperiment(T, _).showPanels,
+                    s = u.MainTabsV2OnePercentExperimentNewUsers.useExperiment(T, _).showPanels,
+                    o = (0, f.useIsTabsUIEnabledManually)();
+                return e && (t || n || i || r || s || o)
             }
 
             function v() {
-                if (!C()) return !1;
-                let e = (0, E.default)();
+                if (!(0, l.isInMainTabsExperiment)()) return !1;
+                let {
+                    showNewPanels: e
+                } = (0, c.getNavPeekExperimentConfig)(S, _), {
+                    showNewPanels: t
+                } = (0, d.getNavNotifTabExperiment)(S, _);
+                return !!(e || t || !I() || s.default.get("panels_split_messages_tab") || u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig(S, _).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig(S, _).showPanels || (0, f.isTabsUIEnabledManually)()) || !1
+            }
+
+            function A() {
+                if (!v()) return !1;
+                let e = (0, h.default)();
                 return (null == e ? void 0 : e.name) === "messages"
             }
 
-            function A(e) {
-                return !!g() && (!C() || null != e && e !== h.ME)
+            function R(e) {
+                return !!I() && (!v() || null != e && e !== p.ME)
             }
         },
         491246: function(e, t, n) {
@@ -28878,13 +28973,22 @@
                     id: "2023-08_secure_frames_encryption",
                     label: "Allowing testing secure frames for voice/video",
                     defaultConfig: {
-                        canSupportSecureFrames: !1
+                        canSupportSecureFrames: !1,
+                        canSupportMls: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "Can support secure frames for voice/video",
                         config: {
-                            canSupportSecureFrames: !0
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Can support secure frames for voice/video w/ MLS nogotiation",
+                        config: {
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
                         }
                     }]
                 }),
@@ -28893,13 +28997,22 @@
                     id: "2023-11_secure_frames_encryption_guilds",
                     label: "Allowing testing secure frames for voice/video (Guilds)",
                     defaultConfig: {
-                        canSupportSecureFrames: !1
+                        canSupportSecureFrames: !1,
+                        canSupportMls: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "Can support secure frames for voice/video",
                         config: {
-                            canSupportSecureFrames: !0
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Can support secure frames for voice/video w/ MLS nogotiation",
+                        config: {
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
                         }
                     }]
                 })
@@ -29736,7 +29849,7 @@
                     default:
                         return 5
                 }
-            }(i = u || (u = {}))[i.WELCOME = 0] = "WELCOME", i[i.NEWS = 1] = "NEWS", i[i.GO_LIVE_VOICE = 2] = "GO_LIVE_VOICE", i[i.GO_LIVE_NON_VOICE = 3] = "GO_LIVE_NON_VOICE", i[i.BROADCAST = 4] = "BROADCAST", (r = c || (c = {})).PRIMARY = "PRIMARY", r.BRAND = "BRAND", r.DANGER = "DANGER", (s = d || (d = {}))[s.Nudge = 0] = "Nudge", s[s.TextChat = 1] = "TextChat", s[s.VoiceCall = 2] = "VoiceCall", s[s.Activity = 3] = "Activity", s[s.Clips = 4] = "Clips", s[s.Other = 5] = "Other", (a = f || (f = {})).NewsNudge = "News Nudge", a.WelcomeNudge = "Welcome Nudge", a.TextChat = "Text Chat", a.ActivityUserJoin = "Activity User Join", a.ActivityInvite = "Activity Invite", a.IncomingCall = "Incoming Call", a.GoLiveNudge = "Go Live Nudge", a.GoLiveNonVoiceNudge = "Go Live Non Voice Nudge", a.OverlayCrashed = "Overlay Crashed", a.StartBroadcastNotification = "Start Broadcast Notification", a.ClipsReminderNotification = "Clips Reminder Notification", a.ClipsNotification = "Clips Notification", (o = E || (E = {}))[o.Viewed = 0] = "Viewed", o[o.Clicked = 1] = "Clicked";
+            }(i = u || (u = {}))[i.WELCOME = 0] = "WELCOME", i[i.NEWS = 1] = "NEWS", i[i.GO_LIVE_VOICE = 2] = "GO_LIVE_VOICE", i[i.GO_LIVE_NON_VOICE = 3] = "GO_LIVE_NON_VOICE", i[i.BROADCAST = 4] = "BROADCAST", i[i.KEYBIND_INDICATORS = 5] = "KEYBIND_INDICATORS", (r = c || (c = {})).PRIMARY = "PRIMARY", r.BRAND = "BRAND", r.DANGER = "DANGER", (s = d || (d = {}))[s.Nudge = 0] = "Nudge", s[s.TextChat = 1] = "TextChat", s[s.VoiceCall = 2] = "VoiceCall", s[s.Activity = 3] = "Activity", s[s.Clips = 4] = "Clips", s[s.Other = 5] = "Other", (a = f || (f = {})).NewsNudge = "News Nudge", a.WelcomeNudge = "Welcome Nudge", a.TextChat = "Text Chat", a.ActivityUserJoin = "Activity User Join", a.ActivityInvite = "Activity Invite", a.IncomingCall = "Incoming Call", a.GoLiveNudge = "Go Live Nudge", a.GoLiveNonVoiceNudge = "Go Live Non Voice Nudge", a.OverlayCrashed = "Overlay Crashed", a.StartBroadcastNotification = "Start Broadcast Notification", a.ClipsReminderNotification = "Clips Reminder Notification", a.ClipsNotification = "Clips Notification", a.KeybindIndicatorsNotification = "Keybind Indicators Notification", (o = E || (E = {}))[o.Viewed = 0] = "Viewed", o[o.Clicked = 1] = "Clicked";
             let m = Object.freeze({
                 LOW: "background-opacity-low",
                 MEDIUM: "background-opacity-medium",
@@ -38716,13 +38829,14 @@
                     let t = eg.getSupportedSecureFramesProtocolVersion(),
                         n = V.SecureFramesUserExperiment.getCurrentConfig({
                             location: "MediaEngineStore"
-                        }).canSupportSecureFrames;
-                    if (n) return t;
-                    let i = null != e && V.SecureFramesGuildExperiment.getCurrentConfig({
-                        guildId: e,
-                        location: "MediaEngineStore"
-                    }).canSupportSecureFrames;
-                    return i ? t : 0
+                        }),
+                        i = null != e ? V.SecureFramesGuildExperiment.getCurrentConfig({
+                            guildId: e,
+                            location: "MediaEngineStore"
+                        }) : null,
+                        r = n.canSupportSecureFrames || (null == i ? void 0 : i.canSupportSecureFrames),
+                        s = n.canSupportMls || (null == i ? void 0 : i.canSupportMls);
+                    return r ? s ? t : t % 100 : 0
                 }
             }
             tp.displayName = "MediaEngineStore";
@@ -49668,7 +49782,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254206"
+                                build_number: "254355"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63039,4 +63153,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.bf730b4ff896b85f9c2c.js.map
+//# sourceMappingURL=72243.e93bd599c783d925c6d2.js.map
