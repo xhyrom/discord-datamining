@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Can support secure frames for voice/video"
+      "Treatment 1: Can support secure frames for voice/video",
+      "Treatment 2: Can support secure frames for voice/video w/ MLS nogotiation"
     ],
     "hash": 2916044329,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {
       "name": null,
@@ -20,7 +22,8 @@
     },
     "aa_mode": false,
     "config_keys": [
-      "canSupportSecureFrames"
+      "canSupportSecureFrames",
+      "canSupportMls"
     ]
   },
   "rollout": {
