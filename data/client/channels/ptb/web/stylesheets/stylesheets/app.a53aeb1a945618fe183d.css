@@ -113535,7 +113535,8 @@ html .invoiceCancelRow_c1bfe7 {
     border-radius: 11px;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    position: relative
 }
 
 .featureCard_f69a9f.wideStyle__37e4e {
@@ -121871,6 +121872,7 @@ div.nagbar_c731ff {
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
     --input-background: var(--primary-700);
+    --input-focused-border: hsl(var(--white-500-hsl) / 0.08);
     --input-placeholder-text: var(--input-placeholder-text-dark);
     --interactive-active: var(--white-500);
     --interactive-hover: var(--primary-230);
@@ -122173,6 +122175,7 @@ div.nagbar_c731ff {
     --info-warning-foreground: var(--yellow-400);
     --info-warning-text: var(--black-500);
     --input-background: hsl(var(--black-500-hsl) / 0.08);
+    --input-focused-border: hsl(var(--black-500-hsl) / 0.08);
     --input-placeholder-text: var(--primary-500);
     --interactive-active: var(--primary-860);
     --interactive-hover: var(--primary-600);
@@ -122356,7 +122359,7 @@ div.nagbar_c731ff {
     --blur-fallback: hsl(var(--plum-19-hsl) / 0.96);
     --blur-fallback-pressed: hsl(var(--plum-20-hsl) / 0.96);
     --border-faint: hsl(var(--plum-11-hsl) / 0.06);
-    --border-strong: hsl(var(--plum-11-hsl) / 0.2);
+    --border-strong: hsl(var(--plum-11-hsl) / 0.24);
     --border-subtle: hsl(var(--plum-11-hsl) / 0.12);
     --bug-reporter-modal-submitting-background: hsl(var(--plum-23-hsl) / 0.6);
     --button-creator-revenue-background: var(--teal-430);
@@ -122443,7 +122446,7 @@ div.nagbar_c731ff {
     --deprecated-text-input-border-hover: var(--primary-900);
     --deprecated-text-input-prefix: var(--primary-200);
     --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
-    --divider-strong: hsl(var(--plum-11-hsl) / 0.2);
+    --divider-strong: hsl(var(--plum-11-hsl) / 0.24);
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
     --expression-picker-bg: var(--black-500);
     --focus-primary: var(--blue-345);
@@ -122475,6 +122478,7 @@ div.nagbar_c731ff {
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
     --input-background: hsl(var(--plum-23-alpha-hsl) / 0.09);
+    --input-focused-border: hsl(var(--plum-11-hsl) / 0.12);
     --input-placeholder-text: var(--plum-9);
     --interactive-active: var(--plum-3);
     --interactive-hover: var(--plum-4);
@@ -122658,7 +122662,7 @@ div.nagbar_c731ff {
     --blur-fallback: hsl(var(--plum-17-hsl) / 0.96);
     --blur-fallback-pressed: hsl(var(--plum-18-hsl) / 0.96);
     --border-faint: hsl(var(--plum-11-hsl) / 0.06);
-    --border-strong: hsl(var(--plum-11-hsl) / 0.18);
+    --border-strong: hsl(var(--plum-11-hsl) / 0.22);
     --border-subtle: hsl(var(--plum-11-hsl) / 0.12);
     --bug-reporter-modal-submitting-background: hsl(var(--plum-23-hsl) / 0.6);
     --button-creator-revenue-background: var(--teal-430);
@@ -122745,7 +122749,7 @@ div.nagbar_c731ff {
     --deprecated-text-input-border-hover: var(--primary-900);
     --deprecated-text-input-prefix: var(--primary-200);
     --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
-    --divider-strong: hsl(var(--plum-11-hsl) / 0.18);
+    --divider-strong: hsl(var(--plum-11-hsl) / 0.22);
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
     --expression-picker-bg: var(--plum-20);
     --focus-primary: var(--blue-345);
@@ -122777,7 +122781,8 @@ div.nagbar_c731ff {
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
     --input-background: hsl(var(--plum-24-hsl) / 0.85);
-    --input-placeholder-text: var(--plum-9);
+    --input-focused-border: hsl(var(--plum-11-hsl) / 0.24);
+    --input-placeholder-text: var(--plum-10);
     --interactive-active: var(--plum-1);
     --interactive-hover: var(--plum-4);
     --interactive-muted: var(--plum-13);
@@ -124209,4 +124214,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.209a5afe8592b021736c.css.map*/
+/*# sourceMappingURL=app.a53aeb1a945618fe183d.css.map*/
