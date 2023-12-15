@@ -11376,7 +11376,6 @@
   "GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_SCHEDULED_END_TIME_REMOVED": "\"Reset the end time\"",
   "GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_IS_CANCELED_CANCELED": "\"Canceled this event\"",
   "GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_IS_CANCELED_RESTORED": "\"Restored this event\"",
-  "GUILD_EVENT_AUTO_START_TOGGLE": "\"Automatically start event\"",
   "CHANNEL_PERMISSIONS_MODERATOR_TITLE": "\"Stage Moderators\"",
   "CHANNEL_PERMISSIONS_MODERATOR_CURRENT_TITLE": "\"Current Stage moderators\"",
   "CHANNEL_PERMISSIONS_MODERATOR_DESCRIPTION": "\"Stage moderators are Speakers who can add and remove other Speakers. They can also start the Stage event. Stage moderators don't have to be mods of the server.\"",
