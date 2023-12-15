@@ -19397,8 +19397,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -22636,8 +22636,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .name__8d1ec {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -60649,8 +60649,8 @@ input::-webkit-inner-spin-button {
 .errorState_b806b1 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -60712,7 +60712,7 @@ input::-webkit-inner-spin-button {
 
 .confirmChannelName_c49514 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -60720,7 +60720,7 @@ input::-webkit-inner-spin-button {
 .lastActiveTimestamp__56cd7 {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -73480,7 +73480,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .viewAllGamesButton__6eb3d {
@@ -73500,7 +73500,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__9b81c,
 .viewAllNitroGames__4193c {
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -73556,7 +73556,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .headerBar_afb1ac {
@@ -124166,4 +124166,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.757841b0a85942f7e212.css.map*/
+/*# sourceMappingURL=app.42346768e77578b281d0.css.map*/
