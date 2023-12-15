@@ -94766,7 +94766,7 @@ html .invoiceCancelRow_a8669b {
     background: linear-gradient(to bottom, rgba(247, 248, 249, 0)0%, var(--home-background)100%)
 }
 
-.theme-amoled .background_cb0a80 {
+.theme-midnight .background_cb0a80 {
     background-color: var(--home-background)
 }
 
@@ -99150,7 +99150,7 @@ html .invoiceCancelRow_a8669b {
     background: linear-gradient(to bottom, rgba(247, 248, 249, 0)0%, var(--home-background)100%)
 }
 
-.theme-amoled .background_e80d5a {
+.theme-midnight .background_e80d5a {
     background-color: var(--home-background)
 }
 
@@ -121824,7 +121824,7 @@ div.nagbar_c731ff {
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
     --input-background: var(--primary-700);
-    --input-focused-border: hsl(var(--white-500-hsl) / 0.08);
+    --input-focused-border: hsl(var(--white-500-hsl) / 0.16);
     --input-placeholder-text: var(--input-placeholder-text-dark);
     --interactive-active: var(--white-500);
     --interactive-hover: var(--primary-230);
@@ -122127,7 +122127,7 @@ div.nagbar_c731ff {
     --info-warning-foreground: var(--yellow-400);
     --info-warning-text: var(--black-500);
     --input-background: hsl(var(--black-500-hsl) / 0.08);
-    --input-focused-border: hsl(var(--black-500-hsl) / 0.08);
+    --input-focused-border: hsl(var(--black-500-hsl) / 0.16);
     --input-placeholder-text: var(--primary-500);
     --interactive-active: var(--primary-860);
     --interactive-hover: var(--primary-600);
@@ -122268,7 +122268,7 @@ div.nagbar_c731ff {
     --white: var(--white-500)
 }
 
-.theme-amoled {
+.theme-midnight {
     --action-sheet-gradient-bg: var(--black-500);
     --activity-card-background: var(--primary-700);
     --alert-bg: var(--black-500);
@@ -122430,7 +122430,7 @@ div.nagbar_c731ff {
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
     --input-background: hsl(var(--plum-23-alpha-hsl) / 0.09);
-    --input-focused-border: hsl(var(--plum-11-hsl) / 0.12);
+    --input-focused-border: hsl(var(--plum-11-hsl) / 0.24);
     --input-placeholder-text: var(--plum-9);
     --interactive-active: var(--plum-3);
     --interactive-hover: var(--plum-4);
@@ -122733,7 +122733,7 @@ div.nagbar_c731ff {
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
     --input-background: hsl(var(--plum-24-hsl) / 0.85);
-    --input-focused-border: hsl(var(--plum-11-hsl) / 0.24);
+    --input-focused-border: hsl(var(--plum-11-hsl) / 0.32);
     --input-placeholder-text: var(--plum-10);
     --interactive-active: var(--plum-1);
     --interactive-hover: var(--plum-4);
@@ -122928,7 +122928,7 @@ div.nagbar_c731ff {
     --shadow-top-low-filter: drop-shadow(0 -1px 4px hsla(0, 0%, 0%, 0.08))
 }
 
-.theme-amoled,
+.theme-midnight,
 .theme-darker {
     --shadow-border: 0 0 0 1px hsla(0, 0%, 100%, 0.08);
     --shadow-border-filter: drop-shadow(0 0 1px hsla(0, 0%, 100%, 0.08));
@@ -124166,4 +124166,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.cc466bf82431c1ca689f.css.map*/
+/*# sourceMappingURL=app.42346768e77578b281d0.css.map*/
