@@ -2994,7 +2994,7 @@
   "NOTIFICATION_REPORT_CONTENT": "\"I don’t like the content\"",
   "NOTIFICATION_REPORT_BODY": "\"Tell us about your notification experience.\"",
   "NOTIFICATION_EMBED_BUTTON": "\"Was this notification useful? [Let us know!](handleMessage)\"",
-  "NOTIFICATION_EMBED_BUTTON_2": "\"Notification [feedback & settings](handleMessage)\"",
+  "NOTIFICATION_EMBED_BUTTON_2": "\"[Highlight Notification Settings](handleMessage)\"",
   "NOTIFICATION_REPORT_TITLE": "\"Was this notification useful?\"",
   "NOTIFICATION_REPORT_FEEDBACK": "\"Give Feedback on this Notification\"",
   "NOTIFICATION_REPORT_TEXT": "\"We’ll use this to improve the notifications experience. Visit the [help center]({helpUrl}) to learn about highlights notifications.\"",
