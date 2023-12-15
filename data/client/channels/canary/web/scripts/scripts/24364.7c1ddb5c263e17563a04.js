@@ -22683,10 +22683,8 @@
                     messages_badge_num_channels: "Messages tab badge counts # of unread channels instead of # of unread messages",
                     main_tab_launchpad: "Enable LaunchPad in Main Tab",
                     new_panels: "Use panels for chat",
-                    new_channels_for_panels: "Use new channel list for panels",
                     panels_split_messages_tab: "Split messages tab for panels",
                     redesign_individual_feature_you_tab: "Enable You tab in the old UI",
-                    fullscreen_panels: "Fullscreen panels",
                     disable_theme_key: "Disable reloading the entire app when the theme changes",
                     theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
                     panels_navigator: "Use panels navigator",
@@ -49733,7 +49731,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254901"
+                                build_number: "254912"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63105,4 +63103,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.5c3abf46bd873d214a06.js.map
+//# sourceMappingURL=24364.7c1ddb5c263e17563a04.js.map
