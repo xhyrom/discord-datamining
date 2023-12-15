@@ -22,10 +22,10 @@
                     return u
                 },
                 createWidget: function() {
-                    return _
+                    return s
                 },
                 createWidgets: function() {
-                    return s
+                    return _
                 }
             });
             var a = n("913144"),
@@ -78,11 +78,11 @@
                 })
             }
 
-            function _(e) {
-                s([e])
+            function s(e) {
+                _([e])
             }
 
-            function s(e) {
+            function _(e) {
                 a.default.dispatch({
                     type: "LAYOUT_CREATE_WIDGETS",
                     widgetConfigs: e
@@ -104,8 +104,8 @@
                 d = n("471671"),
                 E = n("80687"),
                 u = n("819068"),
-                _ = n("640583"),
-                s = n("49111");
+                s = n("640583"),
+                _ = n("49111");
             let c = {
                 track(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
@@ -250,7 +250,7 @@
                     })
                 },
                 updateNotificationStatus(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.OverlayNotificationStatus.DISMISSED;
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _.OverlayNotificationStatus.DISMISSED;
                     l.default.dispatch({
                         type: "OVERLAY_UPDATE_NOTIFICATION_STATUS",
                         notificationId: e,
@@ -271,9 +271,9 @@
                 setPinChat(e) {
                     let t = u.OVERLAY_LAYOUT_ID,
                         n = i.default.getWidgetsForLayout(t),
-                        l = i.default.getWidgetConfig(s.OverlayWidgets.GUILDS),
-                        o = i.default.getWidgetConfig(s.OverlayWidgets.TEXT),
-                        r = i.default.getWidgetConfig(s.OverlayWidgets.GUILDS_TEXT);
+                        l = i.default.getWidgetConfig(_.OverlayWidgets.GUILDS),
+                        o = i.default.getWidgetConfig(_.OverlayWidgets.TEXT),
+                        r = i.default.getWidgetConfig(_.OverlayWidgets.GUILDS_TEXT);
                     if (0 === n.length || null == l || null == o || null == r) return;
                     let c = d.default.windowSize(),
                         O = {
@@ -308,14 +308,14 @@
                                 size: l
                             } = e;
                             switch (t) {
-                                case s.OverlayWidgets.TEXT:
-                                    O = (0, E.getSizeFromLayoutSize)(l, c), (0, _.deleteWidget)(n);
+                                case _.OverlayWidgets.TEXT:
+                                    O = (0, E.getSizeFromLayoutSize)(l, c), (0, s.deleteWidget)(n);
                                     break;
-                                case s.OverlayWidgets.GUILDS:
-                                    T = (0, E.getFullCoordsFromLayoutSize)(a, l, c), A = (0, E.getSizeFromLayoutSize)(l, c), (0, _.deleteWidget)(n);
+                                case _.OverlayWidgets.GUILDS:
+                                    T = (0, E.getFullCoordsFromLayoutSize)(a, l, c), A = (0, E.getSizeFromLayoutSize)(l, c), (0, s.deleteWidget)(n);
                                     break;
-                                case s.OverlayWidgets.GUILDS_TEXT:
-                                    I = (0, E.getFullCoordsFromLayoutSize)(a, l, c), S = (0, E.getSizeFromLayoutSize)(l, c), (0, _.deleteWidget)(n)
+                                case _.OverlayWidgets.GUILDS_TEXT:
+                                    I = (0, E.getFullCoordsFromLayoutSize)(a, l, c), S = (0, E.getSizeFromLayoutSize)(l, c), (0, s.deleteWidget)(n)
                             }
                         }), e) {
                         let e = "auto" === S.width ? r.minSize.width : S.width;
@@ -329,21 +329,21 @@
                         }, c, {
                             x: 10,
                             y: 10
-                        }), O = i.default.getWidgetDefaultSettings(s.OverlayWidgets.TEXT);
+                        }), O = i.default.getWidgetDefaultSettings(_.OverlayWidgets.TEXT);
                         if (null == O) throw Error("OverlayActionCreators.setPinChat: No config for TEXT exists");
-                        (0, _.createWidget)({
+                        (0, s.createWidget)({
                             ...O,
-                            type: s.OverlayWidgets.TEXT,
+                            type: _.OverlayWidgets.TEXT,
                             id: (0, a.v4)(),
                             size: u,
                             anchor: d,
                             layoutId: t
                         });
-                        let T = i.default.getWidgetDefaultSettings(s.OverlayWidgets.GUILDS);
+                        let T = i.default.getWidgetDefaultSettings(_.OverlayWidgets.GUILDS);
                         if (null == T) throw Error("OverlayActionCreators.setPinChat: No config for GUILDS exists");
-                        (0, _.createWidget)({
+                        (0, s.createWidget)({
                             ...T,
-                            type: s.OverlayWidgets.GUILDS,
+                            type: _.OverlayWidgets.GUILDS,
                             id: (0, a.v4)(),
                             size: o,
                             anchor: n,
@@ -355,11 +355,11 @@
                         let [n, r] = (0, E.getLeftWidgetSpecs)(T, {
                             height: A.height,
                             width: e
-                        }, c), d = i.default.getWidgetDefaultSettings(s.OverlayWidgets.GUILDS_TEXT);
+                        }, c), d = i.default.getWidgetDefaultSettings(_.OverlayWidgets.GUILDS_TEXT);
                         if (null == d) throw Error("OverlayActionCreators.setPinChat: No config for GUILDS_TEXT exists");
-                        (0, _.createWidget)({
+                        (0, s.createWidget)({
                             ...d,
-                            type: s.OverlayWidgets.GUILDS_TEXT,
+                            type: _.OverlayWidgets.GUILDS_TEXT,
                             id: (0, a.v4)(),
                             layoutId: t,
                             anchor: n,
@@ -369,7 +369,7 @@
                 },
                 resetDefaultLayout(e) {
                     let t = i.default.getLayout(e);
-                    null != t && ((0, _.deleteAllWidgets)(e), (0, _.createWidgets)(i.default.getDefaultLayout(e)))
+                    null != t && ((0, s.deleteAllWidgets)(e), (0, s.createWidgets)(i.default.getDefaultLayout(e)))
                 },
                 setClickZones(e) {
                     l.default.dispatch({
@@ -387,6 +387,31 @@
                 }
             };
             var O = c
+        },
+        999819: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return o
+                }
+            });
+            var a = n("862205");
+            let l = (0, a.createExperiment)({
+                kind: "user",
+                id: "2023-11_keybind_indicators",
+                label: "Overlay Keybind Indicators",
+                defaultConfig: {
+                    showKeybindIndicators: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Show Keybind Indicators - Overlay",
+                    config: {
+                        showKeybindIndicators: !0
+                    }
+                }]
+            });
+            var o = l
         },
         127080: function(e, t, n) {
             "use strict";
@@ -409,145 +434,177 @@
         },
         227602: function(e, t, n) {
             "use strict";
+            let a;
             n.r(t), n.d(t, {
                 default: function() {
-                    return k
+                    return Q
                 }
             }), n("808653"), n("424973"), n("222007"), n("781738");
-            var a = n("800648"),
-                l = n.n(a),
-                o = n("969230"),
-                i = n.n(o),
-                r = n("714617"),
-                d = n.n(r),
-                E = n("917351"),
-                u = n.n(E),
+            var l = n("800648"),
+                o = n.n(l),
+                i = n("969230"),
+                r = n.n(i),
+                d = n("714617"),
+                E = n.n(d),
+                u = n("917351"),
+                s = n.n(u),
                 _ = n("446674"),
-                s = n("913144"),
-                c = n("485328"),
-                O = n("605250"),
-                T = n("42887"),
-                A = n("599110"),
-                I = n("773336"),
-                S = n("50885"),
-                f = n("13798"),
-                N = n("860957"),
-                L = n("49111"),
-                C = n("80028"),
-                D = n("846325"),
-                y = n("390493");
-            let p = new O.default("KeybindsStore"),
-                R = {},
-                v = {},
-                h = 0,
-                P = !0,
+                c = n("913144"),
+                O = n("485328"),
+                T = n("605250"),
+                A = n("999819"),
+                I = n("42887"),
+                S = n("599110"),
+                f = n("773336"),
+                N = n("50885"),
+                L = n("13798"),
+                C = n("860957"),
+                y = n("49111"),
+                D = n("80028"),
+                p = n("846325"),
+                h = n("390493");
+            let v = new T.default("KeybindsStore"),
+                R = {
+                    id: "1000",
+                    action: y.GlobalKeybindActions.TOGGLE_MUTE,
+                    shortcut: (0, L.toCombo)("mod+shift+m"),
+                    enabled: !0,
+                    managed: !0,
+                    params: {}
+                },
                 g = {},
-                G = [L.GlobalKeybindActions.PUSH_TO_TALK, L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET];
+                P = {},
+                G = 0,
+                b = !0,
+                m = {},
+                U = !1,
+                M = [y.GlobalKeybindActions.PUSH_TO_TALK, y.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, y.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET];
 
-            function m(e) {
-                if (I.isPlatformEmbedded) S.default.inputEventUnregister(parseInt(e, 10));
+            function Y() {
+                let {
+                    showKeybindIndicators: e
+                } = A.default.getCurrentConfig({
+                    location: "KeybindsStore"
+                }), t = s.find(P, e => R.action === e.action);
+                null == t && !__OVERLAY__ && !U && b && e && (K(R), U = !0)
+            }
+
+            function w() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                (U || e) && (V(R.id), U = !1)
+            }
+
+            function H(e) {
+                let {
+                    showKeybindIndicators: t
+                } = e;
+                t ? Y() : w(!0)
+            }
+
+            function V(e) {
+                if (f.isPlatformEmbedded) N.default.inputEventUnregister(parseInt(e, 10));
                 else {
-                    let t = R[e];
+                    let t = g[e];
                     if (t) {
-                        let t = v[e],
-                            n = g[t.action];
-                        (null == n ? void 0 : n.isPressed) === !0 && y.nextTick(() => n.onTrigger(!1, t)), R[e].reset(), R[e] = null
+                        let t = P[e],
+                            n = m[t.action];
+                        (null == n ? void 0 : n.isPressed) === !0 && h.nextTick(() => n.onTrigger(!1, t)), g[e].reset(), g[e] = null
                     }
                 }
             }
 
-            function U(e) {
-                if (!P || __OVERLAY__) return;
+            function K(e) {
+                if (!b || __OVERLAY__) return;
                 let {
                     shortcut: t,
                     action: n,
                     enabled: a
                 } = e;
-                if ("" === t || null == t || n === L.GlobalKeybindActions.UNASSIGNED || !a) return;
-                if (null == g[n]) {
-                    p.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
+                if ("" === t || null == t || n === y.GlobalKeybindActions.UNASSIGNED || !a) return;
+                if (null == m[n]) {
+                    v.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
                     return
                 }
-                let o = e.id,
-                    r = g[n].keyEvents;
-                ! function(e, t, n, a) {
-                    if (I.isPlatformEmbedded) S.default.inputEventRegister(parseInt(e), t, n, a);
+                let l = e.id,
+                    i = m[n].keyEvents;
+                e.action === y.GlobalKeybindActions.TOGGLE_MUTE && w(), ! function(e, t, n, a) {
+                    if (f.isPlatformEmbedded) N.default.inputEventRegister(parseInt(e), t, n, a);
                     else {
-                        m(e);
-                        let o = i(new l(document));
-                        a.keyup && o.bindGlobal((0, f.toString)(t), () => n(!1), "keyup"), a.keydown && o.bindGlobal((0, f.toString)(t), () => n(!0), "keydown"), R[e] = o
+                        V(e);
+                        let l = r(new o(document));
+                        a.keyup && l.bindGlobal((0, L.toString)(t), () => n(!1), "keyup"), a.keydown && l.bindGlobal((0, L.toString)(t), () => n(!0), "keydown"), g[e] = l
                     }
-                }(o, t, e => (function(e, t) {
-                    let n = v[e];
-                    null != n && g[n.action].onTrigger(t, n)
-                })(o, e), {
+                }(l, t, e => (function(e, t) {
+                    let n = e === R.id ? R : P[e];
+                    null != n && m[n.action].onTrigger(t, n)
+                })(l, e), {
                     focused: !0,
                     blurred: !0,
                     keydown: !1,
                     keyup: !1,
-                    ...r
-                }), c.default.validateKeybind((0, f.toString)(e.shortcut))
+                    ...i
+                }), O.default.validateKeybind((0, L.toString)(e.shortcut))
             }
 
-            function b(e) {
+            function k(e) {
                 let t = {
-                    id: h.toString(),
+                    id: G.toString(),
                     enabled: !0,
-                    action: L.GlobalKeybindActions.UNASSIGNED,
+                    action: y.GlobalKeybindActions.UNASSIGNED,
                     shortcut: [],
                     managed: !1,
                     params: {},
                     ...e
                 };
-                return v = {
-                    ...v,
+                return P = {
+                    ...P,
                     [t.id]: t
-                }, h += 1, t
+                }, G += 1, t
             }
 
-            function M(e) {
-                m(e.id), v = {
-                    ...v
-                }, delete v[e.id]
+            function W(e) {
+                V(e.id), P = {
+                    ...P
+                }, delete P[e.id], e.action === y.GlobalKeybindActions.TOGGLE_MUTE && Y()
             }
 
-            function Y(e) {
+            function F(e) {
                 let {
                     keybind: t
                 } = e;
-                v = {
-                    ...v,
+                P = {
+                    ...P,
                     [t.id]: t
-                }, !__OVERLAY__ && (A.default.track(L.AnalyticEvents.USER_SETTINGS_KEYBIND_UPDATED, {
+                }, !__OVERLAY__ && (S.default.track(y.AnalyticEvents.USER_SETTINGS_KEYBIND_UPDATED, {
                     keybind_action: t.action,
                     keybind_is_bound: !0,
                     keybind_has_shortcut: t.shortcut.length > 0
-                }), t.action === L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? A.default.track(L.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
-                    hotkey: t.action === L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? (0, f.toString)(t.shortcut) : null
-                }) : t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && A.default.track(L.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
-                    text_activation_hotkey: t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, f.toString)(t.shortcut) : null
-                })), U(t)
+                }), t.action === y.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? S.default.track(y.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
+                    hotkey: t.action === y.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? (0, L.toString)(t.shortcut) : null
+                }) : t.action === y.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && S.default.track(y.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
+                    text_activation_hotkey: t.action === y.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, L.toString)(t.shortcut) : null
+                })), K(t)
             }
 
-            function H(e, t) {
+            function x(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-                    a = u.find(v, t => t.action === e && (!n || t.managed === n));
-                return null == a && (U(b({
+                    a = s.find(P, t => t.action === e && (!n || t.managed === n));
+                return null == a && (K(k({
                     action: e,
                     enabled: !0,
-                    shortcut: (0, f.toCombo)(t),
+                    shortcut: (0, L.toCombo)(t),
                     managed: !0,
                     params: {}
                 })), !0)
             }
-            let w = [function() {
-                let e = T.default.getShortcuts();
-                return u.each(v, t => {
-                    t.action === L.GlobalKeybindActions.PUSH_TO_TALK && !0 === t.managed && (null == t.context || null == e[t.context]) && M(t)
-                }), u.reduce(T.default.getShortcuts(), (e, t, n) => {
-                    let a = u.find(v, e => e.action === L.GlobalKeybindActions.PUSH_TO_TALK && !0 === e.managed && e.context === n);
-                    if (null == a) U(b({
-                        action: L.GlobalKeybindActions.PUSH_TO_TALK,
+            let B = [function() {
+                let e = I.default.getShortcuts();
+                return s.each(P, t => {
+                    t.action === y.GlobalKeybindActions.PUSH_TO_TALK && !0 === t.managed && (null == t.context || null == e[t.context]) && W(t)
+                }), s.reduce(I.default.getShortcuts(), (e, t, n) => {
+                    let a = s.find(P, e => e.action === y.GlobalKeybindActions.PUSH_TO_TALK && !0 === e.managed && e.context === n);
+                    if (null == a) K(k({
+                        action: y.GlobalKeybindActions.PUSH_TO_TALK,
                         enabled: !0,
                         shortcut: t,
                         managed: !0,
@@ -556,10 +613,10 @@
                     }));
                     else {
                         if (null == t) return e || !1;
-                        Y({
+                        F({
                             keybind: {
                                 ...a,
-                                shortcut: "string" == typeof t ? (0, f.toCombo)(t) : t,
+                                shortcut: "string" == typeof t ? (0, L.toCombo)(t) : t,
                                 context: n
                             }
                         })
@@ -567,73 +624,79 @@
                     return !0
                 }, !1)
             }, function() {
-                return !!N.default.enabled && H(L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, "shift+`")
+                return !!C.default.enabled && x(y.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, "shift+`")
             }, function() {
-                return !!N.default.enabled && H(L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
+                return !!C.default.enabled && x(y.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
             }, function() {
-                return H(L.GlobalKeybindActions.SOUNDBOARD_HOLD, D.DEFAULT_KEYBIND, !1)
+                return x(y.GlobalKeybindActions.SOUNDBOARD_HOLD, p.DEFAULT_KEYBIND, !1)
             }, function() {
-                return H(L.GlobalKeybindActions.SAVE_CLIP, C.DEFAULT_KEYBIND)
+                return x(y.GlobalKeybindActions.SAVE_CLIP, D.DEFAULT_KEYBIND)
             }];
 
-            function V() {
-                return w.reduce((e, t) => t() || e, !1)
+            function X() {
+                return Y(), B.reduce((e, t) => t() || e, !1)
             }
-            c.default.setGetKeybindList(() => {
+            O.default.setGetKeybindList(() => {
                 let e = [];
-                for (let t in v) v.hasOwnProperty(t) && e.push((0, f.toString)(v[t].shortcut));
-                return e
+                for (let t in P) P.hasOwnProperty(t) && e.push((0, L.toString)(P[t].shortcut));
+                return U && e.push((0, L.toString)(R.shortcut)), e
             });
-            class W extends _.default.DeviceSettingsStore {
+            class z extends _.default.DeviceSettingsStore {
                 initialize(e) {
-                    !__OVERLAY__ && this.waitFor(T.default, N.default), v = null != e ? e : {}
+                    !__OVERLAY__ && this.waitFor(I.default, C.default), P = null != e ? e : {}
                 }
                 getUserAgnosticState() {
-                    return v
+                    return P
                 }
                 hasKeybind(e, t, n) {
-                    for (let a in v)
-                        for (let l of v[a].shortcut)
+                    for (let a in P)
+                        for (let l of P[a].shortcut)
                             if (l[0] === e && l[1] === t && (void 0 === n || n === l[2])) return !0;
                     return !1
                 }
                 hasExactKeybind(e) {
-                    for (let t in v) {
-                        let n = v[t];
-                        if (u.isEqual(n.shortcut, e)) return !0
+                    for (let t in P) {
+                        let n = P[t];
+                        if (s.isEqual(n.shortcut, e)) return !0
                     }
                     return !1
                 }
                 getKeybindForAction(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                    return u.find(v, n => n.action === e && (!t || t && !0 === n.managed))
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        {
+                            showKeybindIndicators: n
+                        } = A.default.getCurrentConfig({
+                            location: "KeybindsStore"
+                        }),
+                        a = s.find(P, n => n.action === e && (!t || t && !0 === n.managed));
+                    return null != a ? a : n && e === y.GlobalKeybindActions.TOGGLE_MUTE ? R : null
                 }
                 getOverlayKeybind() {
-                    return this.getKeybindForAction(L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, !0)
+                    return this.getKeybindForAction(y.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, !0)
                 }
                 getOverlayChatKeybind() {
-                    return this.getKeybindForAction(L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, !0)
+                    return this.getKeybindForAction(y.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, !0)
                 }
             }
-            W.displayName = "KeybindsStore", W.persistKey = "keybinds", W.migrations = [function() {
+            z.displayName = "KeybindsStore", z.persistKey = "keybinds", z.migrations = [function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                     {
                         v: t,
                         keybinds: n = e
                     } = e;
-                return u.reduce(n, (e, n, a) => {
+                return s.reduce(n, (e, n, a) => {
                     let l = parseInt(n.id, 10);
-                    return isNaN(l) || n.id !== a ? e : ((null == t || t < 2) && ("string" == typeof n.shortcut ? (n.shortcut = n.shortcut.replace("escape", "esc").replace("capslock", "caps lock").replace("numlock", "num lock").replace("pageup", "page up").replace("pagedown", "page down"), n.shortcut = (0, f.toCombo)(n.shortcut)) : n.shortcut = n.shortcut.map(e => e.length < 3 ? [...e, (0, f.getEnv)()] : e)), e[a] = n, e)
+                    return isNaN(l) || n.id !== a ? e : ((null == t || t < 2) && ("string" == typeof n.shortcut ? (n.shortcut = n.shortcut.replace("escape", "esc").replace("capslock", "caps lock").replace("numlock", "num lock").replace("pageup", "page up").replace("pagedown", "page down"), n.shortcut = (0, L.toCombo)(n.shortcut)) : n.shortcut = n.shortcut.map(e => e.length < 3 ? [...e, (0, L.getEnv)()] : e)), e[a] = n, e)
                 }, {})
             }, e => e, e => {
                 let {
                     keybinds: t = e
                 } = e;
-                return u.reduce(t, (e, t, n) => {
-                    if ((0, I.isLinux)() && t.action === L.GlobalKeybindActions.SOUNDBOARD_HOLD) {
+                return s.reduce(t, (e, t, n) => {
+                    if ((0, f.isLinux)() && t.action === y.GlobalKeybindActions.SOUNDBOARD_HOLD) {
                         let n = t.shortcut.map(e => e[1]),
-                            a = (0, f.toCombo)("`").map(e => e[1]);
-                        if (d(n, a)) return e
+                            a = (0, L.toCombo)("`").map(e => e[1]);
+                        if (E(n, a)) return e
                     }
                     return {
                         ...e,
@@ -658,49 +721,51 @@
                 }
                 return t
             }];
-            var k = new W(s.default, {
-                CONNECTION_OPEN: V,
-                AUDIO_SET_MODE: V,
-                OVERLAY_SET_ENABLED: V,
-                RPC_APP_CONNECTED: V,
-                RPC_APP_DISCONNECTED: V,
+            var Q = new z(c.default, {
+                CONNECTION_OPEN: X,
+                AUDIO_SET_MODE: X,
+                OVERLAY_SET_ENABLED: X,
+                RPC_APP_CONNECTED: X,
+                RPC_APP_DISCONNECTED: X,
                 KEYBINDS_ADD_KEYBIND: function(e) {
                     let {
                         keybind: t
-                    } = e, n = b(t);
-                    U(n)
+                    } = e, n = k(t);
+                    K(n)
                 },
                 KEYBINDS_DELETE_KEYBIND: function(e) {
                     let {
                         id: t
-                    } = e, n = v[t];
-                    !__OVERLAY__ && A.default.track(L.AnalyticEvents.USER_SETTINGS_KEYBIND_UPDATED, {
+                    } = e, n = P[t];
+                    !__OVERLAY__ && S.default.track(y.AnalyticEvents.USER_SETTINGS_KEYBIND_UPDATED, {
                         keybind_action: n.action,
                         keybind_is_bound: !1,
                         keybind_has_shortcut: !1
-                    }), null != n && M(n)
+                    }), null != n && W(n)
                 },
-                KEYBINDS_SET_KEYBIND: Y,
+                KEYBINDS_SET_KEYBIND: F,
                 KEYBINDS_ENABLE_ALL_KEYBINDS: function(e) {
                     let {
                         enable: t
                     } = e;
-                    P = t, t ? (c.default.enable(), u.forEach(v, U)) : (c.default.disable(), u.forEach(v, e => m(e.id)))
+                    b = t, t ? (O.default.enable(), s.forEach(P, K), Y()) : (O.default.disable(), s.forEach(P, e => V(e.id)), w())
                 },
                 KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS: function(e) {
                     let {
                         keybinds: t
                     } = e;
-                    g = t, R = {}, h = 0;
-                    let n = Object.values(v).filter(e => G.includes(e.action) && e.managed);
-                    n.length !== G.length && V(), u.forEach(v, e => {
-                        h = Math.max(parseInt(e.id, 10), h) + 1;
+                    m = t, g = {}, G = 0;
+                    let n = Object.values(P).filter(e => M.includes(e.action) && e.managed);
+                    n.length !== M.length && X(), s.forEach(P, e => {
+                        G = Math.max(parseInt(e.id, 10), G) + 1;
                         try {
-                            U(e)
+                            K(e)
                         } catch (t) {
-                            p.error("Failed to register keybind", e, t)
+                            v.error("Failed to register keybind", e, t)
                         }
-                    }), P = !0
+                    }), b = !0, null == a && (a = A.default.subscribe({
+                        location: "KeybindsStore"
+                    }, H))
                 }
             })
         },
@@ -712,15 +777,15 @@
                     return en
                 },
                 default: function() {
-                    return ey
+                    return eD
                 }
             }), n("222007"), n("70102"), n("311790"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341"), n("101997"), n("313619"), n("654714"), n("287168"), n("956660"), n("860677");
             var o, i, r = n("992830"),
                 d = n("446674"),
                 E = n("913144"),
                 u = n("561288"),
-                _ = n("823411"),
-                s = n("640583"),
+                s = n("823411"),
+                _ = n("640583"),
                 c = n("539405"),
                 O = n("987317"),
                 T = n("49671"),
@@ -731,27 +796,27 @@
                 N = n("127080"),
                 L = n("116949"),
                 C = n("271938"),
-                D = n("546463"),
-                y = n("505507"),
+                y = n("546463"),
+                D = n("505507"),
                 p = n("568307"),
-                R = n("599110"),
+                h = n("599110"),
                 v = n("27571"),
-                h = n("658530"),
-                P = n("50885"),
-                g = n("819068"),
+                R = n("658530"),
+                g = n("50885"),
+                P = n("819068"),
                 G = n("49111"),
-                m = n("6791");
+                b = n("6791");
             (i = o || (o = {})).ATTACHING = "ATTACHING", i.CONNECTING = "CONNECTING", i.CONNECTED = "CONNECTED", i.READY = "READY", i.CRASHED = "CRASHED", i.CONNECT_FAILED = "CONNECT_FAILED", i.HOOK_FAILED = "HOOK_FAILED";
-            let U = {},
-                b = new Map,
+            let m = {},
+                U = new Map,
                 M = !1,
                 Y = new Set,
-                H = new Set,
-                w = !1,
+                w = new Set,
+                H = !1,
                 V = !1,
-                W = null,
+                K = null,
                 k = "",
-                K = new Set,
+                W = new Set,
                 F = !1,
                 x = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_MFA_FAILURE", "LOGIN_MFA_SMS", "LOGIN_MFA_SMS_REQUEST_SUCCESS", "LOGIN_MFA_SMS_FAILURE", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "REGISTER_FAILURE", "VERIFY_FAILURE", "VERIFY_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "CHANNEL_SETTINGS_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "MENTION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "SEARCH_MODAL_OPEN", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "MENTION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "SEARCH_MODAL_CLOSE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_OPEN", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_START", "SEARCH_FINISH", "SEARCH_INDEXING", "SEARCH_CLEAR", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_CLEAR_HISTORY", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "EXPERIMENT_REGISTER_LEGACY", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "GUILD_FEED_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_SEARCH_STORE_QUERY", "APPLICATION_COMMAND_SEARCH_STORE_UPDATE", "APPLICATION_COMMAND_SEARCH_STORE_UI_UPDATE", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED"]),
                 B = new Set,
@@ -762,7 +827,7 @@
                     onContentionResolved: () => X.verbose("overlayLock contention: resolved."),
                     onTimeout: (e, t) => {
                         let n = "overlayLock: lastMutexCall ".concat(z, "}");
-                        X.error(n), R.default.track(G.AnalyticEvents.OVERLAY_HOOK_RESULT, {
+                        X.error(n), h.default.track(G.AnalyticEvents.OVERLAY_HOOK_RESULT, {
                             success: !1,
                             error_description: n
                         })
@@ -779,19 +844,19 @@
 
             function j(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-                    a = b.get(e);
+                    a = U.get(e);
                 if ((null === n || a === n) && a !== t) {
-                    if (null == t ? b.delete(e) : b.set(e, t), null == t || "CRASHED" === t) {
+                    if (null == t ? U.delete(e) : U.set(e, t), null == t || "CRASHED" === t) {
                         var l;
-                        W = null;
+                        K = null;
                         let e = null === T.default || void 0 === T.default ? void 0 : null === (l = T.default.fileManager) || void 0 === l ? void 0 : l.uploadDiscordHookCrashes;
                         null != e && e().then(e => {
                             if (Array.isArray(e) && 0 !== e.length)
                                 for (let d of (X.log("transitionOverlayPIDStatus: Uploaded minidumps", e), e)) {
                                     var t, n, a, l, o, i, r;
                                     if (null == d) continue;
-                                    let e = null != d.processName ? D.default.getGameByExecutable(d.processName) : null;
-                                    R.default.track(G.AnalyticEvents.OVERLAY_HOOK_CRASHED, {
+                                    let e = null != d.processName ? y.default.getGameByExecutable(d.processName) : null;
+                                    h.default.track(G.AnalyticEvents.OVERLAY_HOOK_CRASHED, {
                                         process_name: null == d ? void 0 : d.processName,
                                         game_name: null !== (t = null == e ? void 0 : e.name) && void 0 !== t ? t : null,
                                         game_id: null !== (n = null == e ? void 0 : e.id) && void 0 !== n ? n : null,
@@ -804,24 +869,24 @@
                                 }
                         })
                     }
-                    K.delete(e), X.info("pid=".concat(e, " status transition ").concat(null != a ? a : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), b), M = Array.from(b.values()).some(e => "READY" === e)
+                    W.delete(e), X.info("pid=".concat(e, " status transition ").concat(null != a ? a : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), U), M = Array.from(U.values()).some(e => "READY" === e)
                 }
             }
             async function q(e) {
-                if (P.default.supportsFeature(G.NativeFeatures.CREATE_HOST_ON_ATTACH)) {
-                    if (b.size > 0) {
+                if (g.default.supportsFeature(G.NativeFeatures.CREATE_HOST_ON_ATTACH)) {
+                    if (U.size > 0) {
                         z = "reconcile.getOverlayURL";
                         let t = await en();
-                        z = "reconcile.createHostProcess", e.createHostProcess(t, e_, eu)
+                        z = "reconcile.createHostProcess", e.createHostProcess(t, es, eu)
                     } else z = "reconcile.destroyHostProcess", e.destroyHostProcess()
-                } else if (w) {
+                } else if (H) {
                     let t = await en();
-                    e.createHostProcess(t, e_, eu)
+                    e.createHostProcess(t, es, eu)
                 } else e.destroyHostProcess()
             }
             async function J(e) {
                 !Q.isMutexHeld() && X.error("_attachPIDMustBeLocked: overlayMutex is not held.", e);
-                let t = b.get(e);
+                let t = U.get(e);
                 if (null != t) {
                     X.warn("Trying to attach to pid=".concat(e, ", that is already in status: ").concat(t));
                     return
@@ -833,13 +898,13 @@
                 null == a ? (z = "attach.transitionOverlayPIDStatus (CONNECTING)", j(e, "CONNECTING", "ATTACHING"), z = "attach.reconcileHostProcess", await q(n), n.connectProcess(e)) : (z = "attach.transitionOverlayPIDStatus (HOOK_FAILED)", j(e, "HOOK_FAILED", "ATTACHING"), X.warn("Could not hook to pid=".concat(e, ", error=").concat(a)))
             }
             async function $(e) {
-                if (!Q.isMutexHeld() && X.error("_detachPIDMustBeLocked: overlayMutex is not held.", e), !b.has(e)) {
+                if (!Q.isMutexHeld() && X.error("_detachPIDMustBeLocked: overlayMutex is not held.", e), !U.has(e)) {
                     X.warn("Trying to detach from pid ".concat(e, ", which is in an unknown state"));
                     return
                 }
                 z = "detach.getOverlayModule";
                 let t = await ea();
-                z = "detach.transitionOverlayPIDStatus", j(e, null), e !== g.DEV_PID && (z = "detach.cancelAttachToProcess", A.cancelAttachToProcess(e), z = "detach.disconnectProcess", t.disconnectProcess(e)), z = "detach.reconcileHostProcess", await q(t)
+                z = "detach.transitionOverlayPIDStatus", j(e, null), e !== P.DEV_PID && (z = "detach.cancelAttachToProcess", A.cancelAttachToProcess(e), z = "detach.disconnectProcess", t.disconnectProcess(e)), z = "detach.reconcileHostProcess", await q(t)
             }
             async function ee(e) {
                 var t, n;
@@ -851,30 +916,30 @@
                     return
                 }
                 async function a(t) {
-                    if (!(t in U)) {
-                        X.error("Unexpected. ".concat(t, " is not a tracked game?"), U, e);
+                    if (!(t in m)) {
+                        X.error("Unexpected. ".concat(t, " is not a tracked game?"), m, e);
                         return
                     }
-                    let n = U[t];
-                    delete U[t];
+                    let n = m[t];
+                    delete m[t];
                     try {
                         await n.deconstructor()
                     } catch (e) {
                         X.error("Failed to deconstruct tracked game ".concat(t), e)
                     }
                 }
-                if (null == e || !w) {
-                    X.verbose("updateIntendedOverlayPIDs: Removing all.", U, e);
-                    let t = Object.keys(U);
+                if (null == e || !H) {
+                    X.verbose("updateIntendedOverlayPIDs: Removing all.", m, e);
+                    let t = Object.keys(m);
                     for (let e of t) await a(Number(e));
                     return
                 }
                 for (let n of null !== (t = e.added) && void 0 !== t ? t : []) {
                     let t = p.default.getGameOverlayStatus(n);
-                    if (X.verbose("updateIntendedOverlayPIDs: newGame", n, t), null != t && t.enabled) switch (n.pid in U && X.error("Unexpected. ".concat(n.pid, " is being added twice?"), U, e), t.overlayMethod) {
-                        case m.OverlayMethod.OutOfProcess:
+                    if (X.verbose("updateIntendedOverlayPIDs: newGame", n, t), null != t && t.enabled) switch (n.pid in m && X.error("Unexpected. ".concat(n.pid, " is being added twice?"), m, e), t.overlayMethod) {
+                        case b.OverlayMethod.OutOfProcess:
                             let a = await er();
-                            a.trackGame(n.pid), U[n.pid] = {
+                            a.trackGame(n.pid), m[n.pid] = {
                                 method: t.overlayMethod,
                                 deconstructor: async () => {
                                     let e = await er();
@@ -882,15 +947,15 @@
                                 }
                             };
                             break;
-                        case m.OverlayMethod.Hook:
-                            !b.has(n.pid) && await J(n.pid), U[n.pid] = {
+                        case b.OverlayMethod.Hook:
+                            !U.has(n.pid) && await J(n.pid), m[n.pid] = {
                                 method: t.overlayMethod,
                                 deconstructor: async () => {
                                     await $(n.pid)
                                 }
                             };
                             break;
-                        case m.OverlayMethod.Disabled:
+                        case b.OverlayMethod.Disabled:
                             X.verbose("updateIntendedOverlayPIDs: disabled", n);
                             break;
                         default:
@@ -901,7 +966,7 @@
                 let l = p.default.getVisibleGame();
                 if (null != l) {
                     let e = p.default.getGameOverlayStatus(l);
-                    if ((null == e ? void 0 : e.enabled) && (null == e ? void 0 : e.overlayMethod) === m.OverlayMethod.OutOfProcess) {
+                    if ((null == e ? void 0 : e.enabled) && (null == e ? void 0 : e.overlayMethod) === b.OverlayMethod.OutOfProcess) {
                         let e = await er();
                         e.setVisibleGame(l.pid, null !== (n = l.windowHandle) && void 0 !== n ? n : ""), X.verbose("updateIntendedOverlayPIDs: ".concat(l.pid, " is now the visible game"), l)
                     }
@@ -911,7 +976,7 @@
 
             function en() {
                 return new Promise(e => {
-                    eD.addConditionalChangeListener(() => {
+                    ey.addConditionalChangeListener(() => {
                         if (null != a) return e(a), !1
                     })
                 })
@@ -919,13 +984,13 @@
             let ea = (() => {
                 let e = null;
                 async function t() {
-                    if (!m.OVERLAY_SUPPORTED) throw X.error("Attempted to load overlay on an unsupported platform."), Error("Overlay is not supported on this platform.");
+                    if (!b.OVERLAY_SUPPORTED) throw X.error("Attempted to load overlay on an unsupported platform."), Error("Overlay is not supported on this platform.");
                     try {
-                        return await P.default.ensureModule("discord_overlay2"),
+                        return await g.default.ensureModule("discord_overlay2"),
                             function(e) {
                                 for (let t of ["createHostProcess", "connectProcess", "disconnectProcess", "destroyHostProcess"]) null == e[t] && (X.info("polyfilling OverlayModule.".concat(t, "(); Overlay module is probably out of date.")), e[t] = () => void 0);
                                 return e
-                            }(P.default.requireModule("discord_overlay2"))
+                            }(g.default.requireModule("discord_overlay2"))
                     } catch (e) {
                         throw X.error("failed ensuring discord_overlay2", e), e
                     }
@@ -953,7 +1018,7 @@
             let er = (() => {
                 let e = null;
                 async function t() {
-                    if (!m.OVERLAY_SUPPORTED || !(0, g.supportsOutOfProcess)()) throw X.error("Attempted to load out of process overlay on an unsupported platform."), Error("Out of Process Overlay is not supported on this platform.");
+                    if (!b.OVERLAY_SUPPORTED || !(0, P.supportsOutOfProcess)()) throw X.error("Attempted to load out of process overlay on an unsupported platform."), Error("Out of Process Overlay is not supported on this platform.");
                     try {
                         let {
                             OutOfProcess: e
@@ -973,43 +1038,43 @@
                 })
             }
             let eE = Z("setOverlayEnabled", async e => {
-                if (!m.OVERLAY_SUPPORTED || w === e) return;
-                w = e, f.OverlayStoredSettings.update({
+                if (!b.OVERLAY_SUPPORTED || H === e) return;
+                H = e, f.OverlayStoredSettings.update({
                     enabled: e
-                }), eD.emitChange();
+                }), ey.emitChange();
                 let t = await ea(),
                     {
                         OutOfProcess: n
                     } = t;
-                (0, g.setOutOfProcessSupport)(null != n), w ? (await q(t), ed()) : (await ee(void 0), await q(t))
+                (0, P.setOutOfProcessSupport)(null != n), H ? (await q(t), ed()) : (await ee(void 0), await q(t))
             });
 
             function eu(e) {
                 if (0 === e) {
                     var t, n;
-                    let e = null !== (n = null === (t = U[null != W ? W : 0]) || void 0 === t ? void 0 : t.method) && void 0 !== n ? n : m.OverlayMethod.Disabled;
-                    if (e === m.OverlayMethod.OutOfProcess) return
+                    let e = null !== (n = null === (t = m[null != K ? K : 0]) || void 0 === t ? void 0 : t.method) && void 0 !== n ? n : b.OverlayMethod.Disabled;
+                    if (e === b.OverlayMethod.OutOfProcess) return
                 }
                 c.default.setFocusedPID(0 === e ? null : e)
             }
 
-            function e_(e, t, n) {
+            function es(e, t, n) {
                 var a;
                 let l = null === (a = p.default.getGameForPID(e)) || void 0 === a ? void 0 : a.name,
-                    o = D.default.getGameByName(l),
+                    o = y.default.getGameByName(l),
                     i = {
                         game_name: l,
                         game_id: null == o ? null : o.id,
                         success: t,
                         ...n
                     };
-                (0, s.createLayout)(g.OVERLAY_LAYOUT_ID, y.default.getDefaultLayout(g.OVERLAY_LAYOUT_ID), {
+                (0, _.createLayout)(P.OVERLAY_LAYOUT_ID, D.default.getDefaultLayout(P.OVERLAY_LAYOUT_ID), {
                     width: n.graphics_width,
                     height: n.graphics_height
-                }), R.default.track(G.AnalyticEvents.OVERLAY_HOOK_RESULT, i), X.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), i), t ? j(e, "CONNECTED", "CONNECTING") : j(e, "CONNECT_FAILED", "CONNECTING")
+                }), h.default.track(G.AnalyticEvents.OVERLAY_HOOK_RESULT, i), X.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), i), t ? j(e, "CONNECTED", "CONNECTING") : j(e, "CONNECT_FAILED", "CONNECTING")
             }
 
-            function es() {
+            function e_() {
                 let e = C.default.getToken(),
                     t = C.default.getId();
                 null != e && I.send({
@@ -1025,10 +1090,10 @@
             }
             async function ec(e) {
                 let t = await ea();
-                if (null != W && W !== g.DEV_PID && t.sendCommand(W, {
+                if (null != K && K !== P.DEV_PID && t.sendCommand(K, {
                         message: "intercept_input",
                         intercept: !e
-                    }), (0, g.supportsOutOfProcess)()) {
+                    }), (0, P.supportsOutOfProcess)()) {
                     let t = await er();
                     t.setInteractionEnabled(!e)
                 }
@@ -1038,7 +1103,7 @@
                 if (e) {
                     let t = p.default.getVisibleGame(),
                         n = null == t ? null : p.default.getGameOverlayStatus(t);
-                    (null == n ? void 0 : n.overlayMethod) === m.OverlayMethod.OutOfProcess ? ec(e) : setTimeout(() => ec(e), 200)
+                    (null == n ? void 0 : n.overlayMethod) === b.OverlayMethod.OutOfProcess ? ec(e) : setTimeout(() => ec(e), 200)
                 } else ec(e)
             }
             let eT = null;
@@ -1047,7 +1112,7 @@
                 c.default.relayClickZoneClicked(e, t, n)
             }
             async function eI(e) {
-                if (!(0, g.supportsOutOfProcess)()) return;
+                if (!(0, P.supportsOutOfProcess)()) return;
                 let t = await er();
                 t.setClickZones(e.map(e => {
                     let t = {
@@ -1093,7 +1158,7 @@
                     case G.OverlayEventTypes.CONNECT:
                         let t = C.default.getToken();
                         if (null == t) break;
-                        (0, s.createLayout)(g.OVERLAY_LAYOUT_ID, y.default.getDefaultLayout(g.OVERLAY_LAYOUT_ID)), Promise.all([(0, N.default)(t, e.pid), d.default.PersistedStore.getAllStates()]).then(t => {
+                        (0, _.createLayout)(P.OVERLAY_LAYOUT_ID, D.default.getDefaultLayout(P.OVERLAY_LAYOUT_ID)), Promise.all([(0, N.default)(t, e.pid), d.default.PersistedStore.getAllStates()]).then(t => {
                             let [n, a] = t, {
                                 pid: l,
                                 token: o
@@ -1123,32 +1188,32 @@
             }
             class eC extends d.default.Store {
                 initialize() {
-                    !(!m.OVERLAY_SUPPORTED || __OVERLAY__) && (H.add(m.OverlayMethod.Hook), this.waitFor(p.default, C.default), I.setReceiveCommandHandler(eL, eN), C.default.addChangeListener(es), eE(f.OverlayStoredSettings.enabled), E.default.addInterceptor(eS))
+                    !(!b.OVERLAY_SUPPORTED || __OVERLAY__) && (w.add(b.OverlayMethod.Hook), this.waitFor(p.default, C.default), I.setReceiveCommandHandler(eL, eN), C.default.addChangeListener(e_), eE(f.OverlayStoredSettings.enabled), E.default.addInterceptor(eS))
                 }
                 isInputLocked(e) {
-                    return !K.has(e)
+                    return !W.has(e)
                 }
                 isSupported() {
-                    return m.OVERLAY_SUPPORTED
+                    return b.OVERLAY_SUPPORTED
                 }
                 isMethodSupported(e) {
-                    return m.OVERLAY_SUPPORTED && H.has(e)
+                    return b.OVERLAY_SUPPORTED && w.has(e)
                 }
                 get enabled() {
-                    return w
+                    return H
                 }
                 getFocusedPID() {
-                    return W
+                    return K
                 }
                 isReady(e) {
-                    return "READY" === b.get(e)
+                    return "READY" === U.get(e)
                 }
                 isCrashed(e) {
-                    return "CRASHED" === b.get(e)
+                    return "CRASHED" === U.get(e)
                 }
             }
             eC.displayName = "OverlayBridgeStore";
-            let eD = new eC(E.default, __OVERLAY__ ? {
+            let ey = new eC(E.default, __OVERLAY__ ? {
                 OVERLAY_RELAY_CLICK_ZONE_CLICKED: function(e) {
                     let {
                         normalizedMouseX: t,
@@ -1157,8 +1222,8 @@
                     setTimeout(() => {
                         let e = Math.ceil(t * window.innerWidth),
                             a = Math.ceil(n * window.innerHeight),
-                            l = (0, h.createMouseEvent)("click", e, a);
-                        (0, h.dispatchEventToPoint)(l, e, a)
+                            l = (0, R.createMouseEvent)("click", e, a);
+                        (0, R.dispatchEventToPoint)(l, e, a)
                     }, 50)
                 }
             } : {
@@ -1166,7 +1231,7 @@
                     V = !0, ed()
                 },
                 CONNECTION_CLOSED: function() {
-                    V = !1, W = null, et(void 0)
+                    V = !1, K = null, et(void 0)
                 },
                 OVERLAY_SET_ENABLED: function(e) {
                     let {
@@ -1178,7 +1243,7 @@
                     let {
                         pid: t
                     } = e;
-                    W = t
+                    K = t
                 },
                 RUNNING_GAMES_CHANGE: function(e) {
                     et(e)
@@ -1187,9 +1252,9 @@
                     let {
                         locked: t,
                         pid: n
-                    } = e, a = b.get(n);
+                    } = e, a = U.get(n);
                     if (t || "READY" === a || "CRASHED" === a) {
-                        if (t ? K.delete(n) : K.add(n), B.clear(), null != eT && (clearTimeout(eT), eT = null, t)) return;
+                        if (t ? W.delete(n) : W.add(n), B.clear(), null != eT && (clearTimeout(eT), eT = null, t)) return;
                         t ? eO(t) : eT = setTimeout(() => {
                             eO(t), eT = null
                         }, 100)
@@ -1210,7 +1275,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...n));
                     let l = new URLSearchParams;
-                    l.append("build_id", "b487faad0a025339be1be32a2b02c40480bb20c7"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
+                    l.append("build_id", "f4882ccacb5b229dcf5bf0501fe1bf85980aad54"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1230,13 +1295,13 @@
                         messageId: o
                     } = e;
                     setImmediate(() => {
-                        _.default.join({
+                        s.default.join({
                             userId: t,
                             sessionId: n,
                             applicationId: a,
                             channelId: l,
                             messageId: o
-                        }), null != W && c.default.setLocked(!0, W)
+                        }), null != K && c.default.setLocked(!0, K)
                     })
                 },
                 OVERLAY_CRASHED: function(e) {
@@ -1263,7 +1328,7 @@
                     eI(t)
                 }
             });
-            var ey = eD
+            var eD = ey
         },
         27571: function(e, t, n) {
             "use strict";
@@ -1338,4 +1403,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77015.5a300be2755ab34de1f8.js.map
+//# sourceMappingURL=77015.ecf38f0aa09ef0ee383d.js.map
