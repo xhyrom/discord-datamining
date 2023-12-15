@@ -82184,8 +82184,8 @@ html .tabBadge__002b3 {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -82232,8 +82232,8 @@ html .tabBadge__002b3 {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -124166,4 +124166,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.31dd2964b3da4570e263.css.map*/
+/*# sourceMappingURL=app.f6b09c8dc94512a31ed1.css.map*/
