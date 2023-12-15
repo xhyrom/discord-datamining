@@ -12670,8 +12670,6 @@
             "use strict";
             e.exports = {
                 addImageHint: "addImageHint_cfec14",
-                autoStartTitle: "autoStartTitle__86cee",
-                autoStartToggle: "autoStartToggle__9ecaf",
                 blockedUsersContainer: "blockedUsersContainer_b5f073",
                 broadcastInfoDescription: "broadcastInfoDescription__31034",
                 broadcastInfoTooltip: "broadcastInfoTooltip__32bfb",
