@@ -533,7 +533,7 @@
                 exportClip: function() {
                     return B
                 }
-            }), n("222007"), n("70102"), n("424973");
+            }), n("222007"), n("424973");
             var i = n("750028"),
                 a = n("913144"),
                 u = n("49671"),
@@ -643,7 +643,7 @@
                 })
             }
 
-            function R(e, t) {
+            function U(e, t) {
                 var n, i, a, u, o, s, d, l, p, f;
                 let m = new Map;
                 for (let e in t.framesEncodedByEncoder) {
@@ -681,74 +681,64 @@
                     saved_at: t.savedAt
                 }
             }
-            async function U(e) {
-                var t, n;
-                let i;
-                let r = S.default.getSettings(),
-                    s = r.storageLocation,
-                    d = (0, E.default)(e),
-                    l = "".concat((0, C.default)(d.applicationName.substring(0, 20)), "_").concat(d.id, ".mp4"),
-                    c = u.default.fileManager.join(s, l),
-                    _ = m.default.getMediaEngine(),
-                    b = JSON.stringify(d);
-                if (null != e) {
-                    let n = g.default.getRTCConnection(e);
-                    if (null == n) throw Error("could not find RTC connection");
-                    let {
-                        ownerId: a
-                    } = (0, o.decodeStreamKey)(e), [u, r] = null !== (t = n.getSSRCsForUser(a)) && void 0 !== t ? t : [];
-                    if (null == u || null == r) throw Error("Could not find target SSRCs");
-                    let s = u[0];
-                    i = _.saveClipForSSRC.bind(_, a, s, r)
-                } else i = _.saveClip.bind(_);
-                let h = function(e) {
-                    var t;
-                    let n, i, a;
-                    if (null != e) {
-                        n = null != e ? g.default.getRTCConnection(e) : null;
-                        let t = (0, o.decodeStreamKey)(e);
-                        i = t.guildId, a = t.channelId
-                    } else {
-                        let e = f.default.getId(),
-                            t = p.default.getActiveStreamForUser(e, null);
-                        n = null != t ? g.default.getRTCConnection((0, o.encodeStreamKey)(t)) : null, i = null == t ? void 0 : t.guildId, a = null == t ? void 0 : t.channelId
-                    }
-                    let u = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
-                    return {
-                        rtc_connection_id: null == n ? void 0 : n.getRTCConnectionId(),
-                        media_session_id: null == n ? void 0 : n.getMediaSessionId(),
-                        parent_media_session_id: null == n ? void 0 : n.parentMediaSessionId,
-                        guild_id: i,
-                        channel_id: a,
-                        application_id: null == u ? void 0 : u.id,
-                        application_name: null == u ? void 0 : u.name
-                    }
-                }(e);
+            async function R(e) {
+                let t = S.default.getSettings(),
+                    n = t.storageLocation,
+                    i = (0, E.default)(e),
+                    r = "".concat((0, C.default)(i.applicationName.substring(0, 20)), "_").concat(i.id, ".mp4"),
+                    s = u.default.fileManager.join(n, r),
+                    d = m.default.getMediaEngine(),
+                    l = JSON.stringify(i),
+                    c = null != e ? (0, o.decodeStreamKey)(e).ownerId : void 0,
+                    _ = function(e) {
+                        var t;
+                        let n, i, a;
+                        if (null != e) {
+                            n = null != e ? g.default.getRTCConnection(e) : null;
+                            let t = (0, o.decodeStreamKey)(e);
+                            i = t.guildId, a = t.channelId
+                        } else {
+                            let e = f.default.getId(),
+                                t = p.default.getActiveStreamForUser(e, null);
+                            n = null != t ? g.default.getRTCConnection((0, o.encodeStreamKey)(t)) : null, i = null == t ? void 0 : t.guildId, a = null == t ? void 0 : t.channelId
+                        }
+                        let u = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
+                        return {
+                            rtc_connection_id: null == n ? void 0 : n.getRTCConnectionId(),
+                            media_session_id: null == n ? void 0 : n.getMediaSessionId(),
+                            parent_media_session_id: null == n ? void 0 : n.parentMediaSessionId,
+                            guild_id: i,
+                            channel_id: a,
+                            application_id: null == u ? void 0 : u.id,
+                            application_name: null == u ? void 0 : u.name
+                        }
+                    }(e);
                 null != e && a.default.dispatch({
                     type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
                     clip: {
-                        ...d,
-                        filepath: c
+                        ...i,
+                        filepath: s
                     }
                 });
                 try {
+                    var b;
                     let {
                         duration: e,
                         thumbnail: t,
-                        clipStats: a
-                    } = await i(c, b), r = R(h, a);
-                    r.clip_save_time_ms = a.clipSaveTimeMs, r.clip_size_bytes = a.clipSizeBytes, null != a.viewerDecodeFps && (r.decode_fps_during_clip = a.viewerDecodeFps, r.encode_fps_during_clip = a.viewerEncodeFps, r.target_fps = null), v.default.track(L.AnalyticEvents.CLIP_SAVED, r);
-                    let o = await (null != u.default.clips.getClipProtocolURLFromPath ? (0, y.createThumbnailFromVideo)(u.default.clips.getClipProtocolURLFromPath(c), 0) : (0, y.createThumbnail)(t));
-                    return d.thumbnail = o, d.length = e, x.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (n = null == o ? void 0 : o.length) && void 0 !== n ? n : 0, " bytes thumbnail.")), await _.updateClipMetadata(c, JSON.stringify(d)), {
-                        ...d,
-                        filepath: c
+                        clipStats: n
+                    } = await (null != c ? d.saveClipForUser(c, s, l) : d.saveClip(s, l)), a = U(_, n);
+                    a.clip_save_time_ms = n.clipSaveTimeMs, a.clip_size_bytes = n.clipSizeBytes, null != n.viewerDecodeFps && (a.decode_fps_during_clip = n.viewerDecodeFps, a.encode_fps_during_clip = n.viewerEncodeFps, a.target_fps = null), v.default.track(L.AnalyticEvents.CLIP_SAVED, a);
+                    let r = await (null != u.default.clips.getClipProtocolURLFromPath ? (0, y.createThumbnailFromVideo)(u.default.clips.getClipProtocolURLFromPath(s), 0) : (0, y.createThumbnail)(t));
+                    return i.thumbnail = r, i.length = e, x.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (b = null == r ? void 0 : r.length) && void 0 !== b ? b : 0, " bytes thumbnail.")), await d.updateClipMetadata(s, JSON.stringify(i)), {
+                        ...i,
+                        filepath: s
                     }
                 } catch (n) {
                     if (null != e && a.default.dispatch({
                             type: "CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR",
-                            clipId: d.id
-                        }), !("errorMessage" in n)) throw v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, h), n;
-                    let t = R(h, n);
+                            clipId: i.id
+                        }), !("errorMessage" in n)) throw v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, _), n;
+                    let t = U(_, n);
                     throw t.error_at = n.errorAt, t.error_message = n.errorMessage, v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
                 }
             }
@@ -770,25 +760,27 @@
                 if (S.default.getIsAtMaxSaveClipOperations()) return;
                 let u = S.default.getSettings().clipsEnabled && null != p.default.getCurrentUserActiveStream(),
                     r = n && S.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null,
-                    o = null != e && null != p.default.getActiveStreamForStreamKey(e) && i;
-                if (!u && !r && !o) return;
+                    l = null != e && null != p.default.getActiveStreamForStreamKey(e) && i;
+                if (!u && !r && !l) return;
+                let c = p.default.getCurrentUserActiveStream(),
+                    f = null != c ? (0, o.encodeStreamKey)(c) : void 0;
                 a.default.dispatch({
                     type: "CLIPS_SAVE_CLIP_START"
                 });
-                let l = (0, h.playSound)("clip_save", .5),
-                    c = performance.now();
+                let m = (0, h.playSound)("clip_save", .5),
+                    g = performance.now();
                 try {
-                    let t = await U(e);
+                    let t = await R(null != e ? e : f);
                     a.default.dispatch({
                         type: "CLIPS_SAVE_CLIP",
                         clip: t
                     })
                 } catch (e) {
-                    x.ClipsLogger.error("Clip Failed to Save", e), null == l || l.stop(), (0, h.playSound)("clip_error", .5), a.default.dispatch({
+                    x.ClipsLogger.error("Clip Failed to Save", e), null == m || m.stop(), (0, h.playSound)("clip_error", .5), a.default.dispatch({
                         type: "CLIPS_SAVE_CLIP_ERROR"
                     })
                 }
-                x.ClipsLogger.info("".concat(S.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - c), "ms"))
+                x.ClipsLogger.info("".concat(S.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - g), "ms"))
             }
             async function M(e, t) {
                 let n = S.default.getClips().find(t => t.id === e);
@@ -1196,4 +1188,4 @@
         }
     }
 ]);
-//# sourceMappingURL=75178.f10adf73a688088e6e05.js.map
+//# sourceMappingURL=75178.48b874ed943dcbdd6232.js.map
