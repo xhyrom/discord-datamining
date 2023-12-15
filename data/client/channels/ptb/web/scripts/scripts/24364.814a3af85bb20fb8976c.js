@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -49733,7 +49733,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254798"
+                                build_number: "254805"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -52447,89 +52447,90 @@
             "use strict";
             n.r(t), n.d(t, {
                 getEnv: function() {
-                    return p
-                },
-                codeToKey: function() {
                     return _
                 },
-                keyToCode: function() {
+                codeToKey: function() {
                     return S
                 },
-                toBrowserEvents: function() {
-                    return C
+                keyToCode: function() {
+                    return m
                 },
-                toCombo: function() {
+                toBrowserEvents: function() {
                     return v
                 },
-                toString: function() {
+                toCombo: function() {
                     return A
+                },
+                toString: function() {
+                    return R
                 }
             }), n("222007"), n("781738"), n("70102"), n("808653"), n("424973");
             var i = n("499032"),
                 r = n.n(i),
                 s = n("917351"),
                 a = n.n(s),
-                o = n("449008"),
-                l = n("773336"),
-                u = n("49111");
-            let c = (0, l.isLinux)() ? u.LinuxKeyToCode : (0, l.isMac)() ? u.MacosKeyToCode : (0, l.isWindows)() ? u.WindowsKeyToCode : void 0,
-                d = a.invert(u.LinuxKeyToCode);
-            d["223"] = "`", Object.freeze(d);
-            let f = Object.freeze(a.invert(u.MacosKeyToCode)),
-                E = a.invert(u.WindowsKeyToCode);
-            E["223"] = "`", Object.freeze(E);
-            let h = a.invert(null != c ? c : {});
+                o = n("485328"),
+                l = n("449008"),
+                u = n("773336"),
+                c = n("49111");
+            let d = (0, u.isLinux)() ? c.LinuxKeyToCode : (0, u.isMac)() ? c.MacosKeyToCode : (0, u.isWindows)() ? c.WindowsKeyToCode : void 0,
+                f = a.invert(c.LinuxKeyToCode);
+            f["223"] = "`", Object.freeze(f);
+            let E = Object.freeze(a.invert(c.MacosKeyToCode)),
+                h = a.invert(c.WindowsKeyToCode);
+            h["223"] = "`", Object.freeze(h);
+            let p = a.invert(null != d ? d : {});
 
-            function p() {
-                if ((0, l.isLinux)()) return u.KeyboardEnvs.LINUX;
-                if ((0, l.isMac)()) return u.KeyboardEnvs.MACOS;
-                if ((0, l.isWindows)()) return u.KeyboardEnvs.WINDOWS;
-                else return u.KeyboardEnvs.BROWSER
-            }
-
-            function _(e) {
-                let [, t, n] = e;
-                switch (n) {
-                    case u.KeyboardEnvs.LINUX:
-                        return d["" + t];
-                    case u.KeyboardEnvs.MACOS:
-                        return f["" + t];
-                    case u.KeyboardEnvs.WINDOWS:
-                        return E["" + t];
-                    case u.KeyboardEnvs.BROWSER:
-                        return r(t);
-                    default:
-                        return h["" + t]
-                }
+            function _() {
+                if ((0, u.isLinux)()) return c.KeyboardEnvs.LINUX;
+                if ((0, u.isMac)()) return c.KeyboardEnvs.MACOS;
+                if ((0, u.isWindows)()) return c.KeyboardEnvs.WINDOWS;
+                else return c.KeyboardEnvs.BROWSER
             }
 
             function S(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p(),
-                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.KeyboardDeviceTypes.KEYBOARD_KEY;
+                let [, t, n] = e;
                 switch (n) {
-                    case u.KeyboardDeviceTypes.KEYBOARD_KEY:
-                    case u.KeyboardDeviceTypes.KEYBOARD_MODIFIER_KEY:
+                    case c.KeyboardEnvs.LINUX:
+                        return f["" + t];
+                    case c.KeyboardEnvs.MACOS:
+                        return E["" + t];
+                    case c.KeyboardEnvs.WINDOWS:
+                        return h["" + t];
+                    case c.KeyboardEnvs.BROWSER:
+                        return r(t);
+                    default:
+                        return p["" + t]
+                }
+            }
+
+            function m(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _(),
+                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c.KeyboardDeviceTypes.KEYBOARD_KEY;
+                switch (n) {
+                    case c.KeyboardDeviceTypes.KEYBOARD_KEY:
+                    case c.KeyboardDeviceTypes.KEYBOARD_MODIFIER_KEY:
                         switch (t) {
-                            case u.KeyboardEnvs.LINUX:
-                                return u.LinuxKeyToCode[e];
-                            case u.KeyboardEnvs.MACOS:
-                                return u.MacosKeyToCode[e];
-                            case u.KeyboardEnvs.WINDOWS:
-                                return u.WindowsKeyToCode[e];
-                            case u.KeyboardEnvs.BROWSER:
+                            case c.KeyboardEnvs.LINUX:
+                                return c.LinuxKeyToCode[e];
+                            case c.KeyboardEnvs.MACOS:
+                                return c.MacosKeyToCode[e];
+                            case c.KeyboardEnvs.WINDOWS:
+                                return c.WindowsKeyToCode[e];
+                            case c.KeyboardEnvs.BROWSER:
                                 return r(e.replace(/^(right|left) (shift|meta|ctrl|alt)$/, "$2").replace("meta", "command"));
                             default:
-                                return c[e]
+                                return d[e]
                         }
-                    case u.KeyboardDeviceTypes.MOUSE_BUTTON:
+                    case c.KeyboardDeviceTypes.MOUSE_BUTTON:
                         return parseInt(e.replace("MOUSE", ""), 10);
-                    case u.KeyboardDeviceTypes.GAMEPAD_BUTTON:
+                    case c.KeyboardDeviceTypes.GAMEPAD_BUTTON:
                         return parseInt(e.replace("GAMEPAD", ""), 10);
                     default:
                         throw Error("Unrecognized DeviceType ".concat(n, "."))
                 }
-            }!(0, l.isMac)() && (h["223"] = "`"), Object.freeze(h);
-            let m = [
+            }!(0, u.isMac)() && (p["223"] = "`"), Object.freeze(p);
+            let T = [
                     ["META", "⌘"],
                     ["RIGHT META", "RIGHT ⌘"],
                     ["SHIFT", "⇧"],
@@ -52553,19 +52554,19 @@
                     ["TAB", "⇥"],
                     ["SPACE", "␣"]
                 ],
-                T = e => {
-                    for (let [t, n] of m)
+                g = e => {
+                    for (let [t, n] of T)
                         if (t === e.toUpperCase()) return n;
                     return e
                 },
-                g = e => {
-                    for (let [t, n] of m)
+                I = e => {
+                    for (let [t, n] of T)
                         if (n === e.toUpperCase()) return t.toLowerCase();
                     return e
                 },
-                I = /shift|meta|ctrl|alt$/;
+                C = /shift|meta|ctrl|alt$/;
 
-            function C(e) {
+            function v(e) {
                 let t = {
                     keyCode: 0,
                     metaKey: !1,
@@ -52574,7 +52575,7 @@
                     ctrlKey: !1
                 };
                 return null == e ? [] : e.reduce((e, n) => {
-                    let i = _(n),
+                    let i = S(n),
                         r = {
                             ...t
                         };
@@ -52582,40 +52583,40 @@
                         ...r,
                         combo: n
                     }), e;
-                    if (I.test(i)) return t[i + "Key"] = !0, e.map(e => (e[i + "Key"] = !0, e));
+                    if (C.test(i)) return t[i + "Key"] = !0, e.map(e => (e[i + "Key"] = !0, e));
                     {
-                        let t = S(i, u.KeyboardEnvs.BROWSER);
+                        let t = m(i, c.KeyboardEnvs.BROWSER);
                         return null != t && (r.keyCode = t), e.push(r), e
                     }
                 }, [])
             }
 
-            function v(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p(),
-                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.KeyboardDeviceTypes.KEYBOARD_KEY,
-                    i = e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").split("+").map(e => e.trim().replace("plus", "+"));
+            function A(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _(),
+                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c.KeyboardDeviceTypes.KEYBOARD_KEY,
+                    i = e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, o.default.modKey).split("+").map(e => e.trim().replace("plus", "+"));
                 return i.reduce((e, i) => {
-                    let r = g(i),
-                        s = S(r, t, n);
+                    let r = I(i),
+                        s = m(r, t, n);
                     return null != s && e.push([n, s, t]), e
                 }, [])
             }
 
-            function A(e) {
+            function R(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     i = e.map(e => {
                         let [t, n, i] = e;
-                        if (t === u.KeyboardDeviceTypes.KEYBOARD_KEY || t === u.KeyboardDeviceTypes.KEYBOARD_MODIFIER_KEY) {
+                        if (t === c.KeyboardDeviceTypes.KEYBOARD_KEY || t === c.KeyboardDeviceTypes.KEYBOARD_MODIFIER_KEY) {
                             var r;
-                            return null !== (r = _(null != i ? [t, n, i] : [t, n])) && void 0 !== r ? r : "UNK".concat(n)
+                            return null !== (r = S(null != i ? [t, n, i] : [t, n])) && void 0 !== r ? r : "UNK".concat(n)
                         }
-                        if (t === u.KeyboardDeviceTypes.MOUSE_BUTTON) return "mouse".concat(n);
-                        if (t === u.KeyboardDeviceTypes.GAMEPAD_BUTTON) return "gamepad".concat(n);
+                        if (t === c.KeyboardDeviceTypes.MOUSE_BUTTON) return "mouse".concat(n);
+                        if (t === c.KeyboardDeviceTypes.GAMEPAD_BUTTON) return "gamepad".concat(n);
                         else return "dev".concat(t, ",").concat(n)
-                    }).filter(o.isNotNullish);
+                    }).filter(l.isNotNullish);
                 if (!t) return i.join("+");
                 {
-                    let e = -1 !== n.g.navigator.appVersion.indexOf("Mac OS X") ? i.map(T) : i;
+                    let e = -1 !== n.g.navigator.appVersion.indexOf("Mac OS X") ? i.map(g) : i;
                     return e.join(" + ").toUpperCase()
                 }
             }
@@ -63104,4 +63105,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.30a9dd674bd19d6efebe.js.map
+//# sourceMappingURL=24364.814a3af85bb20fb8976c.js.map
