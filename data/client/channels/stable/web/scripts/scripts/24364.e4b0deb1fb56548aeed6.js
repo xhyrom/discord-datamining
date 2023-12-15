@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -21015,7 +21015,7 @@
                     null != e && (i = (null == e ? void 0 : e.gradientPresetId) != null ? S.BACKGROUND_GRADIENT_PRESETS_MAP[e.gradientPresetId] : void 0), this.waitFor(E.default, c.default, f.default, u.default), this.syncWith([E.default], v), this.syncWith([u.default], A)
                 }
                 getState() {
-                    return {
+                    return T ? {} : {
                         gradientPresetId: null == i ? void 0 : i.id
                     }
                 }
@@ -21041,8 +21041,7 @@
                     super(...e), this.migrations = [e => {
                         var t;
                         return {
-                            gradientPresetId: null == e ? void 0 : null === (t = e.gradientPreset) || void 0 === t ? void 0 : t.id,
-                            gradientAngle: null == e ? void 0 : e.gradientAngle
+                            gradientPresetId: null == e ? void 0 : null === (t = e.gradientPreset) || void 0 === t ? void 0 : t.id
                         }
                     }]
                 }
@@ -21466,7 +21465,7 @@
                     midpointPercentage: 50
                 },
                 f = [...u, ...c, d];
-            [...c, ...u], (r = i || (i = {}))[r.DARK = 0] = "DARK", r[r.LIGHT = 1] = "LIGHT", r[r.SYSTEM = 2] = "SYSTEM", o.ThemeTypes.DARK, o.ThemeTypes.LIGHT, o.ThemeTypes.DARKER, o.ThemeTypes.LIGHT, o.ThemeTypes.AMOLED, () => l.default.Messages.THEME_MIDNIGHT;
+            [...c, ...u], (r = i || (i = {}))[r.DARK = 0] = "DARK", r[r.LIGHT = 1] = "LIGHT", r[r.SYSTEM = 2] = "SYSTEM", o.ThemeTypes.DARK, o.ThemeTypes.LIGHT, o.ThemeTypes.DARKER, o.ThemeTypes.LIGHT, o.ThemeTypes.MIDNIGHT, () => l.default.Messages.THEME_MIDNIGHT;
             let E = (0, s.keyBy)(f, "id")
         },
         253539: function(e, t, n) {
@@ -31564,15 +31563,6 @@
                 }
             })
         },
-        559980: function(e, t, n) {
-            "use strict";
-            var i, r;
-            n.r(t), n.d(t, {
-                AMOLEDThemeState: function() {
-                    return i
-                }
-            }), (r = i || (i = {}))[r.HIDDEN = 0] = "HIDDEN", r[r.OFF = 1] = "OFF", r[r.ON = 2] = "ON"
-        },
         755624: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -31957,7 +31947,7 @@
             let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return P
+                    return y
                 }
             });
             var r = n("446674"),
@@ -31976,14 +31966,13 @@
                 _ = n("374363"),
                 S = n("116319"),
                 m = n("49111"),
-                T = n("941719"),
-                g = n("559980");
-            let I = m.ThemeTypes.DARK,
-                C = I,
-                v = null,
-                A = !1;
+                T = n("941719");
+            let g = m.ThemeTypes.DARK,
+                I = g,
+                C = null,
+                v = !1;
 
-            function R() {
+            function A() {
                 var e, t;
                 if (__OVERLAY__) return m.ThemeTypes.DARK;
                 if (u.default.syncForcedColors && "active" === u.default.systemForcedColors && null != i) return i;
@@ -31993,31 +31982,27 @@
                 } catch {}
                 let r = p.default.useSystemTheme;
                 if (r === S.SystemThemeState.ON && null != i) return i;
-                let s = null !== (t = null === (e = h.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme) && void 0 !== t ? t : I;
-                if (n) {
-                    if (p.default.useAMOLEDTheme === g.AMOLEDThemeState.ON) return m.ThemeTypes.AMOLED;
-                    if (s === m.ThemeTypes.DARK) return m.ThemeTypes.DARKER
-                }
-                return s
+                let s = null !== (t = null === (e = h.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme) && void 0 !== t ? t : g;
+                return n && s === m.ThemeTypes.DARK ? m.ThemeTypes.DARKER : s
+            }
+
+            function R() {
+                var e;
+                let t = null === (e = _.default.settings.appearance) || void 0 === e ? void 0 : e.theme;
+                return g = t === s.Theme.LIGHT ? m.ThemeTypes.LIGHT : m.ThemeTypes.DARK, O()
             }
 
             function N() {
-                var e;
-                let t = null === (e = _.default.settings.appearance) || void 0 === e ? void 0 : e.theme;
-                return I = t === s.Theme.LIGHT ? m.ThemeTypes.LIGHT : m.ThemeTypes.DARK, D()
+                return O()
             }
 
             function O() {
-                return D()
+                let e = A();
+                return e !== I && (I = e, !0)
             }
-
-            function D() {
-                let e = R();
-                return e !== C && (C = e, !0)
-            }
-            class y extends r.default.PersistedStore {
+            class D extends r.default.PersistedStore {
                 initialize(e) {
-                    (null == e ? void 0 : e.theme) != null && (I = e.theme, C = R()), this.waitFor(p.default, h.default, _.default, u.default)
+                    (null == e ? void 0 : e.theme) != null && (g = e.theme, I = A()), this.waitFor(p.default, h.default, _.default, u.default)
                 }
                 getState() {
                     return {
@@ -32025,62 +32010,68 @@
                     }
                 }
                 get darkSidebar() {
-                    return (0, o.isThemeLight)(this.theme) && p.default.darkSidebar && !A
+                    return (0, o.isThemeLight)(this.theme) && p.default.darkSidebar && !v
                 }
                 get theme() {
-                    return R()
+                    return A()
                 }
                 get systemTheme() {
-                    return v
+                    return C
                 }
                 get systemPrefersColorScheme() {
                     return i
                 }
                 get isSystemThemeAvailable() {
-                    return null !== v
+                    return null !== C
                 }
             }
-            y.displayName = "ThemeStore", y.persistKey = "ThemeStore";
-            var P = new y(l.default, {
-                CONNECTION_OPEN: N,
-                LOGIN_SUCCESS: O,
+            D.displayName = "ThemeStore", D.persistKey = "ThemeStore", D.migrations = [e => {
+                let t = e.theme;
+                return "amoled" === t && (t = "midnight"), {
+                    ...e,
+                    theme: t
+                }
+            }];
+            var y = new D(l.default, {
+                CONNECTION_OPEN: R,
+                LOGIN_SUCCESS: N,
                 LOGOUT: function(e) {
-                    return !e.isSwitchingAccount && I !== m.ThemeTypes.DARK && (I = m.ThemeTypes.DARK, function() {
-                        !__OVERLAY__ && E.isPlatformEmbedded && f.default.setApplicationBackgroundColor((0, o.isThemeDark)(R()) ? a.default.unsafe_rawColors.PRIMARY_700.resolve({
+                    return !e.isSwitchingAccount && g !== m.ThemeTypes.DARK && (g = m.ThemeTypes.DARK, function() {
+                        !__OVERLAY__ && E.isPlatformEmbedded && f.default.setApplicationBackgroundColor((0, o.isThemeDark)(A()) ? a.default.unsafe_rawColors.PRIMARY_700.resolve({
                             saturation: u.default.saturation
                         }).hsl() : a.default.unsafe_rawColors.WHITE_500.resolve({
                             saturation: u.default.saturation
                         }).hsl())
-                    }(), D())
+                    }(), O())
                 },
-                OVERLAY_INITIALIZE: N,
-                SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: O,
-                UNSYNCED_USER_SETTINGS_UPDATE: O,
-                USER_SETTINGS_PROTO_UPDATE: N,
+                OVERLAY_INITIALIZE: R,
+                SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: N,
+                UNSYNCED_USER_SETTINGS_UPDATE: N,
+                USER_SETTINGS_PROTO_UPDATE: R,
                 UPDATE_BACKGROUND_GRADIENT_PRESET: function(e) {
                     var t, n;
                     let {
                         presetId: i
                     } = e;
-                    I = null != i && null !== (n = null === (t = T.BACKGROUND_GRADIENT_PRESETS_MAP[i]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : R();
+                    g = null != i && null !== (n = null === (t = T.BACKGROUND_GRADIENT_PRESETS_MAP[i]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : A();
                     let r = null != i;
-                    return A !== r ? (A = r, !0) : function() {
-                        let e = R();
-                        return !!(0, c.areThemesEqualForGradientThemes)(I, C) && (C = e, !0)
+                    return v !== r ? (v = r, !0) : function() {
+                        let e = A();
+                        return !!(0, c.areThemesEqualForGradientThemes)(g, I) && (I = e, !0)
                     }()
                 },
-                RESET_PREVIEW_CLIENT_THEME: N,
+                RESET_PREVIEW_CLIENT_THEME: R,
                 SYSTEM_THEME_CHANGE: function(e) {
                     let {
                         systemTheme: t
                     } = e;
-                    return v = t, D()
+                    return C = t, O()
                 },
                 ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: function(e) {
-                    return i = e.systemPrefersColorScheme, D()
+                    return i = e.systemPrefersColorScheme, O()
                 },
                 ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: function() {
-                    return (0, o.isThemeLight)(R())
+                    return (0, o.isThemeLight)(A())
                 }
             })
         },
@@ -32088,7 +32079,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return g
+                    return T
                 }
             });
             var i, r, s, a, o = n("917351"),
@@ -32097,152 +32088,146 @@
                 c = n("95410"),
                 d = n("913144"),
                 f = n("116319"),
-                E = n("49111");
-            n("504593");
-            var h = n("13030"),
-                p = n("559980");
+                E = n("49111"),
+                h = n("13030");
             (i = s || (s = {})).DATA_SAVER = "data_saver", i.STANDARD = "standard", i.BEST = "best", (r = a || (a = {})).VERY_LOW = "very_low", r.LOW = "low", r.MEDIUM = "medium", r.HIGH = "high", r.VERY_HIGH = "very_high";
-            let _ = (window.innerWidth - E.CHANNEL_SIDEBAR_WIDTH) / 2,
-                S = null,
-                m = {};
-            class T extends u.default.DeviceSettingsStore {
+            let p = (window.innerWidth - E.CHANNEL_SIDEBAR_WIDTH) / 2,
+                _ = null,
+                S = {};
+            class m extends u.default.DeviceSettingsStore {
                 initialize(e) {
                     var t;
-                    (m = null != e ? e : {}).darkSidebar = null !== (t = m.darkSidebar) && void 0 !== t ? t : function() {
+                    (S = null != e ? e : {}).darkSidebar = null !== (t = S.darkSidebar) && void 0 !== t ? t : function() {
                         var e;
                         let t = u.default.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
                         return null !== (e = null == t ? void 0 : t.darkSidebar) && void 0 !== e && e
                     }()
                 }
                 getUserAgnosticState() {
-                    return m
+                    return S
                 }
                 get displayCompactAvatars() {
                     var e;
-                    return null !== (e = m.displayCompactAvatars) && void 0 !== e && e
+                    return null !== (e = S.displayCompactAvatars) && void 0 !== e && e
                 }
                 get lowQualityImageMode() {
                     var e;
-                    return null !== (e = m.lowQualityImageMode) && void 0 !== e && e
+                    return null !== (e = S.lowQualityImageMode) && void 0 !== e && e
                 }
                 get videoUploadQuality() {
                     var e;
-                    return null !== (e = m.videoUploadQuality) && void 0 !== e ? e : "standard"
+                    return null !== (e = S.videoUploadQuality) && void 0 !== e ? e : "standard"
                 }
                 get dataSavingMode() {
                     var e, t;
-                    return null !== (t = null !== (e = m.dataSavingMode) && void 0 !== e ? e : m.lowQualityImageMode) && void 0 !== t && t
+                    return null !== (t = null !== (e = S.dataSavingMode) && void 0 !== e ? e : S.lowQualityImageMode) && void 0 !== t && t
                 }
                 get expressionPickerWidth() {
                     var e;
-                    return null !== (e = m.expressionPickerWidth) && void 0 !== e ? e : h.ExpressionPickerWidths.MIN
+                    return null !== (e = S.expressionPickerWidth) && void 0 !== e ? e : h.ExpressionPickerWidths.MIN
                 }
                 get messageRequestSidebarWidth() {
                     var e;
-                    return null !== (e = m.messageRequestSidebarWidth) && void 0 !== e ? e : E.DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH
+                    return null !== (e = S.messageRequestSidebarWidth) && void 0 !== e ? e : E.DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH
                 }
                 get threadSidebarWidth() {
                     var e;
-                    return null !== (e = m.threadSidebarWidth) && void 0 !== e ? e : E.DEFAULT_CHAT_SIDEBAR_WIDTH
+                    return null !== (e = S.threadSidebarWidth) && void 0 !== e ? e : E.DEFAULT_CHAT_SIDEBAR_WIDTH
                 }
                 get postSidebarWidth() {
                     var e;
-                    return null !== (e = m.postSidebarWidth) && void 0 !== e ? e : _
+                    return null !== (e = S.postSidebarWidth) && void 0 !== e ? e : p
                 }
                 get callChatSidebarWidth() {
                     var e;
-                    return null !== (e = m.callChatSidebarWidth) && void 0 !== e ? e : E.DEFAULT_CHAT_SIDEBAR_WIDTH
+                    return null !== (e = S.callChatSidebarWidth) && void 0 !== e ? e : E.DEFAULT_CHAT_SIDEBAR_WIDTH
                 }
                 get homeSidebarWidth() {
                     var e;
-                    return null !== (e = m.homeSidebarWidth) && void 0 !== e ? e : (null == S && (S = Math.max((window.innerWidth - E.CHANNEL_SIDEBAR_WIDTH) * .4, E.DEFAULT_CHAT_SIDEBAR_WIDTH)), S)
+                    return null !== (e = S.homeSidebarWidth) && void 0 !== e ? e : (null == _ && (_ = Math.max((window.innerWidth - E.CHANNEL_SIDEBAR_WIDTH) * .4, E.DEFAULT_CHAT_SIDEBAR_WIDTH)), _)
                 }
                 get callHeaderHeight() {
-                    return m.callHeaderHeight
+                    return S.callHeaderHeight
                 }
                 get useSystemTheme() {
                     var e;
-                    return null !== (e = m.useSystemTheme) && void 0 !== e ? e : f.SystemThemeState.UNSET
+                    return null !== (e = S.useSystemTheme) && void 0 !== e ? e : f.SystemThemeState.UNSET
                 }
                 get activityPanelHeight() {
-                    return m.activityPanelHeight
-                }
-                get useAMOLEDTheme() {
-                    var e;
-                    return null !== (e = m.useAMOLEDTheme) && void 0 !== e ? e : p.AMOLEDThemeState.HIDDEN
+                    return S.activityPanelHeight
                 }
                 get disableVoiceChannelChangeAlert() {
                     var e;
-                    return null !== (e = m.disableVoiceChannelChangeAlert) && void 0 !== e && e
+                    return null !== (e = S.disableVoiceChannelChangeAlert) && void 0 !== e && e
                 }
                 get disableEmbeddedActivityPopOutAlert() {
                     var e;
-                    return null !== (e = m.disableEmbeddedActivityPopOutAlert) && void 0 !== e && e
+                    return null !== (e = S.disableEmbeddedActivityPopOutAlert) && void 0 !== e && e
                 }
                 get disableActivityHardwareAccelerationPrompt() {
                     var e;
-                    return null !== (e = m.disableActivityHardwareAccelerationPrompt) && void 0 !== e && e
+                    return null !== (e = S.disableActivityHardwareAccelerationPrompt) && void 0 !== e && e
                 }
                 get disableInviteWithTextChannelActivityLaunch() {
                     var e;
-                    return null !== (e = m.disableInviteWithTextChannelActivityLaunch) && void 0 !== e && e
+                    return null !== (e = S.disableInviteWithTextChannelActivityLaunch) && void 0 !== e && e
                 }
                 get disableHideSelfStreamAndVideoConfirmationAlert() {
                     var e;
-                    return null !== (e = m.disableHideSelfStreamAndVideoConfirmationAlert) && void 0 !== e && e
+                    return null !== (e = S.disableHideSelfStreamAndVideoConfirmationAlert) && void 0 !== e && e
                 }
                 get pushUpsellUserSettingsDismissed() {
                     var e;
-                    return null !== (e = m.pushUpsellDismissed) && void 0 !== e && e
+                    return null !== (e = S.pushUpsellDismissed) && void 0 !== e && e
                 }
                 get disableActivityHostLeftNitroUpsell() {
                     var e;
-                    return null !== (e = m.disableActivityHostLeftNitroUpsell) && void 0 !== e && e
+                    return null !== (e = S.disableActivityHostLeftNitroUpsell) && void 0 !== e && e
                 }
                 get disableCallUserConfirmationPrompt() {
                     var e;
-                    return null !== (e = m.disableCallUserConfirmationPrompt) && void 0 !== e && e
+                    return null !== (e = S.disableCallUserConfirmationPrompt) && void 0 !== e && e
                 }
                 get disableApplicationSubscriptionCancellationSurvey() {
                     var e;
-                    return null !== (e = m.disableApplicationSubscriptionCancellationSurvey) && void 0 !== e && e
+                    return null !== (e = S.disableApplicationSubscriptionCancellationSurvey) && void 0 !== e && e
                 }
                 get enableAndroidChatListAnimations() {
                     var e;
-                    return null !== (e = m.enableAndroidChatListAnimations) && void 0 !== e && e
+                    return null !== (e = S.enableAndroidChatListAnimations) && void 0 !== e && e
                 }
                 get darkSidebar() {
                     var e;
-                    return null !== (e = m.darkSidebar) && void 0 !== e && e
+                    return null !== (e = S.darkSidebar) && void 0 !== e && e
                 }
                 get useMobileChatCustomRenderer() {
                     var e;
-                    return null !== (e = m.useMobileChatCustomRenderer) && void 0 !== e && e
+                    return null !== (e = S.useMobileChatCustomRenderer) && void 0 !== e && e
                 }
             }
-            T.displayName = "UnsyncedUserSettingsStore", T.persistKey = "UnsyncedUserSettingsStore", T.migrations = [() => {
+            m.displayName = "UnsyncedUserSettingsStore", m.persistKey = "UnsyncedUserSettingsStore", m.migrations = [() => {
                 let e = c.default.get("UserSettingsStore");
                 return c.default.remove("UserSettingsStore"), l.pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
             }];
-            var g = new T(d.default, {
+            var T = new m(d.default, {
                 UNSYNCED_USER_SETTINGS_UPDATE: function(e) {
-                    m = {
-                        ...m,
+                    S = {
+                        ...S,
                         ...e.settings
                     }
                 },
                 LOGOUT: function() {
-                    m = {
-                        useSystemTheme: m.useSystemTheme,
-                        darkSidebar: m.darkSidebar
+                    S = {
+                        useSystemTheme: S.useSystemTheme,
+                        darkSidebar: S.darkSidebar
                     }
                 },
                 LOGIN_SUCCESS: function() {
-                    null == m && (m = {})
+                    null == S && (S = {})
                 },
                 REGISTER_SUCCESS: function() {},
                 ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: function() {
-                    return m.darkSidebar = !m.darkSidebar, !0
+                    return S.darkSidebar = !S.darkSidebar, !0
                 }
             })
         },
@@ -49748,7 +49733,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254518"
+                                build_number: "254888"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -52462,89 +52447,90 @@
             "use strict";
             n.r(t), n.d(t, {
                 getEnv: function() {
-                    return p
-                },
-                codeToKey: function() {
                     return _
                 },
-                keyToCode: function() {
+                codeToKey: function() {
                     return S
                 },
-                toBrowserEvents: function() {
-                    return C
+                keyToCode: function() {
+                    return m
                 },
-                toCombo: function() {
+                toBrowserEvents: function() {
                     return v
                 },
-                toString: function() {
+                toCombo: function() {
                     return A
+                },
+                toString: function() {
+                    return R
                 }
             }), n("222007"), n("781738"), n("70102"), n("808653"), n("424973");
             var i = n("499032"),
                 r = n.n(i),
                 s = n("917351"),
                 a = n.n(s),
-                o = n("449008"),
-                l = n("773336"),
-                u = n("49111");
-            let c = (0, l.isLinux)() ? u.LinuxKeyToCode : (0, l.isMac)() ? u.MacosKeyToCode : (0, l.isWindows)() ? u.WindowsKeyToCode : void 0,
-                d = a.invert(u.LinuxKeyToCode);
-            d["223"] = "`", Object.freeze(d);
-            let f = Object.freeze(a.invert(u.MacosKeyToCode)),
-                E = a.invert(u.WindowsKeyToCode);
-            E["223"] = "`", Object.freeze(E);
-            let h = a.invert(null != c ? c : {});
+                o = n("485328"),
+                l = n("449008"),
+                u = n("773336"),
+                c = n("49111");
+            let d = (0, u.isLinux)() ? c.LinuxKeyToCode : (0, u.isMac)() ? c.MacosKeyToCode : (0, u.isWindows)() ? c.WindowsKeyToCode : void 0,
+                f = a.invert(c.LinuxKeyToCode);
+            f["223"] = "`", Object.freeze(f);
+            let E = Object.freeze(a.invert(c.MacosKeyToCode)),
+                h = a.invert(c.WindowsKeyToCode);
+            h["223"] = "`", Object.freeze(h);
+            let p = a.invert(null != d ? d : {});
 
-            function p() {
-                if ((0, l.isLinux)()) return u.KeyboardEnvs.LINUX;
-                if ((0, l.isMac)()) return u.KeyboardEnvs.MACOS;
-                if ((0, l.isWindows)()) return u.KeyboardEnvs.WINDOWS;
-                else return u.KeyboardEnvs.BROWSER
-            }
-
-            function _(e) {
-                let [, t, n] = e;
-                switch (n) {
-                    case u.KeyboardEnvs.LINUX:
-                        return d["" + t];
-                    case u.KeyboardEnvs.MACOS:
-                        return f["" + t];
-                    case u.KeyboardEnvs.WINDOWS:
-                        return E["" + t];
-                    case u.KeyboardEnvs.BROWSER:
-                        return r(t);
-                    default:
-                        return h["" + t]
-                }
+            function _() {
+                if ((0, u.isLinux)()) return c.KeyboardEnvs.LINUX;
+                if ((0, u.isMac)()) return c.KeyboardEnvs.MACOS;
+                if ((0, u.isWindows)()) return c.KeyboardEnvs.WINDOWS;
+                else return c.KeyboardEnvs.BROWSER
             }
 
             function S(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p(),
-                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.KeyboardDeviceTypes.KEYBOARD_KEY;
+                let [, t, n] = e;
                 switch (n) {
-                    case u.KeyboardDeviceTypes.KEYBOARD_KEY:
-                    case u.KeyboardDeviceTypes.KEYBOARD_MODIFIER_KEY:
+                    case c.KeyboardEnvs.LINUX:
+                        return f["" + t];
+                    case c.KeyboardEnvs.MACOS:
+                        return E["" + t];
+                    case c.KeyboardEnvs.WINDOWS:
+                        return h["" + t];
+                    case c.KeyboardEnvs.BROWSER:
+                        return r(t);
+                    default:
+                        return p["" + t]
+                }
+            }
+
+            function m(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _(),
+                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c.KeyboardDeviceTypes.KEYBOARD_KEY;
+                switch (n) {
+                    case c.KeyboardDeviceTypes.KEYBOARD_KEY:
+                    case c.KeyboardDeviceTypes.KEYBOARD_MODIFIER_KEY:
                         switch (t) {
-                            case u.KeyboardEnvs.LINUX:
-                                return u.LinuxKeyToCode[e];
-                            case u.KeyboardEnvs.MACOS:
-                                return u.MacosKeyToCode[e];
-                            case u.KeyboardEnvs.WINDOWS:
-                                return u.WindowsKeyToCode[e];
-                            case u.KeyboardEnvs.BROWSER:
+                            case c.KeyboardEnvs.LINUX:
+                                return c.LinuxKeyToCode[e];
+                            case c.KeyboardEnvs.MACOS:
+                                return c.MacosKeyToCode[e];
+                            case c.KeyboardEnvs.WINDOWS:
+                                return c.WindowsKeyToCode[e];
+                            case c.KeyboardEnvs.BROWSER:
                                 return r(e.replace(/^(right|left) (shift|meta|ctrl|alt)$/, "$2").replace("meta", "command"));
                             default:
-                                return c[e]
+                                return d[e]
                         }
-                    case u.KeyboardDeviceTypes.MOUSE_BUTTON:
+                    case c.KeyboardDeviceTypes.MOUSE_BUTTON:
                         return parseInt(e.replace("MOUSE", ""), 10);
-                    case u.KeyboardDeviceTypes.GAMEPAD_BUTTON:
+                    case c.KeyboardDeviceTypes.GAMEPAD_BUTTON:
                         return parseInt(e.replace("GAMEPAD", ""), 10);
                     default:
                         throw Error("Unrecognized DeviceType ".concat(n, "."))
                 }
-            }!(0, l.isMac)() && (h["223"] = "`"), Object.freeze(h);
-            let m = [
+            }!(0, u.isMac)() && (p["223"] = "`"), Object.freeze(p);
+            let T = [
                     ["META", "⌘"],
                     ["RIGHT META", "RIGHT ⌘"],
                     ["SHIFT", "⇧"],
@@ -52568,19 +52554,19 @@
                     ["TAB", "⇥"],
                     ["SPACE", "␣"]
                 ],
-                T = e => {
-                    for (let [t, n] of m)
+                g = e => {
+                    for (let [t, n] of T)
                         if (t === e.toUpperCase()) return n;
                     return e
                 },
-                g = e => {
-                    for (let [t, n] of m)
+                I = e => {
+                    for (let [t, n] of T)
                         if (n === e.toUpperCase()) return t.toLowerCase();
                     return e
                 },
-                I = /shift|meta|ctrl|alt$/;
+                C = /shift|meta|ctrl|alt$/;
 
-            function C(e) {
+            function v(e) {
                 let t = {
                     keyCode: 0,
                     metaKey: !1,
@@ -52589,7 +52575,7 @@
                     ctrlKey: !1
                 };
                 return null == e ? [] : e.reduce((e, n) => {
-                    let i = _(n),
+                    let i = S(n),
                         r = {
                             ...t
                         };
@@ -52597,40 +52583,40 @@
                         ...r,
                         combo: n
                     }), e;
-                    if (I.test(i)) return t[i + "Key"] = !0, e.map(e => (e[i + "Key"] = !0, e));
+                    if (C.test(i)) return t[i + "Key"] = !0, e.map(e => (e[i + "Key"] = !0, e));
                     {
-                        let t = S(i, u.KeyboardEnvs.BROWSER);
+                        let t = m(i, c.KeyboardEnvs.BROWSER);
                         return null != t && (r.keyCode = t), e.push(r), e
                     }
                 }, [])
             }
 
-            function v(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p(),
-                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.KeyboardDeviceTypes.KEYBOARD_KEY,
-                    i = e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").split("+").map(e => e.trim().replace("plus", "+"));
+            function A(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _(),
+                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c.KeyboardDeviceTypes.KEYBOARD_KEY,
+                    i = e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, o.default.modKey).split("+").map(e => e.trim().replace("plus", "+"));
                 return i.reduce((e, i) => {
-                    let r = g(i),
-                        s = S(r, t, n);
+                    let r = I(i),
+                        s = m(r, t, n);
                     return null != s && e.push([n, s, t]), e
                 }, [])
             }
 
-            function A(e) {
+            function R(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     i = e.map(e => {
                         let [t, n, i] = e;
-                        if (t === u.KeyboardDeviceTypes.KEYBOARD_KEY || t === u.KeyboardDeviceTypes.KEYBOARD_MODIFIER_KEY) {
+                        if (t === c.KeyboardDeviceTypes.KEYBOARD_KEY || t === c.KeyboardDeviceTypes.KEYBOARD_MODIFIER_KEY) {
                             var r;
-                            return null !== (r = _(null != i ? [t, n, i] : [t, n])) && void 0 !== r ? r : "UNK".concat(n)
+                            return null !== (r = S(null != i ? [t, n, i] : [t, n])) && void 0 !== r ? r : "UNK".concat(n)
                         }
-                        if (t === u.KeyboardDeviceTypes.MOUSE_BUTTON) return "mouse".concat(n);
-                        if (t === u.KeyboardDeviceTypes.GAMEPAD_BUTTON) return "gamepad".concat(n);
+                        if (t === c.KeyboardDeviceTypes.MOUSE_BUTTON) return "mouse".concat(n);
+                        if (t === c.KeyboardDeviceTypes.GAMEPAD_BUTTON) return "gamepad".concat(n);
                         else return "dev".concat(t, ",").concat(n)
-                    }).filter(o.isNotNullish);
+                    }).filter(l.isNotNullish);
                 if (!t) return i.join("+");
                 {
-                    let e = -1 !== n.g.navigator.appVersion.indexOf("Mac OS X") ? i.map(T) : i;
+                    let e = -1 !== n.g.navigator.appVersion.indexOf("Mac OS X") ? i.map(g) : i;
                     return e.join(" + ").toUpperCase()
                 }
             }
@@ -63119,4 +63105,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.85bb7e2678f8fb855cf5.js.map
+//# sourceMappingURL=24364.e4b0deb1fb56548aeed6.js.map

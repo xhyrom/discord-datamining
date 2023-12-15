@@ -2868,7 +2868,7 @@
                     ...e,
                     key: t
                 }
-            }(r = i || (i = {}))[r.MOBILE_LEGACY_AMOLED_MODE_ENABLED = 1] = "MOBILE_LEGACY_AMOLED_MODE_ENABLED", r[r.MOBILE_REDESIGN_ENABLED = 2] = "MOBILE_REDESIGN_ENABLED", r[r.MOBILE_DARK_GRADIENT_THEME_ENABLED = 4] = "MOBILE_DARK_GRADIENT_THEME_ENABLED", r[r.MOBILE_LIGHT_GRADIENT_THEME_ENABLED = 8] = "MOBILE_LIGHT_GRADIENT_THEME_ENABLED";
+            }(r = i || (i = {}))[r.MOBILE_REDESIGN_ENABLED = 2] = "MOBILE_REDESIGN_ENABLED", r[r.MOBILE_DARK_GRADIENT_THEME_ENABLED = 4] = "MOBILE_DARK_GRADIENT_THEME_ENABLED", r[r.MOBILE_LIGHT_GRADIENT_THEME_ENABLED = 8] = "MOBILE_LIGHT_GRADIENT_THEME_ENABLED";
             let c = s.createContext({
                 theme: "light",
                 primaryColor: null,
@@ -2967,7 +2967,7 @@
             function o(e) {
                 switch (e) {
                     case i.ThemeTypes.DARK:
-                    case i.ThemeTypes.AMOLED:
+                    case i.ThemeTypes.MIDNIGHT:
                     case i.ThemeTypes.DARKER:
                         return !0;
                     default:
@@ -5267,7 +5267,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "254518", "254518"), 10);
+                let o = parseInt((n = "254888", "254888"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5509,4 +5509,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.0b2d39338ad67bd10990.js.map
+//# sourceMappingURL=48059.08a35875a3c116aa3ebb.js.map

@@ -5618,6 +5618,7 @@
             "use strict";
             e.exports = {
                 avatarDecoration: "avatarDecoration_b3abcd",
+                bannerBackgroundFallback: "bannerBackgroundFallback__42f49",
                 bannerContainer: "bannerContainer__7814d",
                 collectedInfoContainer: "collectedInfoContainer_d8324a",
                 collectedTextContainer: "collectedTextContainer__3e39d",
@@ -12669,8 +12670,6 @@
             "use strict";
             e.exports = {
                 addImageHint: "addImageHint_cfec14",
-                autoStartTitle: "autoStartTitle__86cee",
-                autoStartToggle: "autoStartToggle__9ecaf",
                 blockedUsersContainer: "blockedUsersContainer_b5f073",
                 broadcastInfoDescription: "broadcastInfoDescription__31034",
                 broadcastInfoTooltip: "broadcastInfoTooltip__32bfb",
@@ -17555,11 +17554,14 @@
             "use strict";
             e.exports = {
                 column: "column__04851",
+                columnTooltip: "columnTooltip__15feb",
                 container: "container__3d8ce",
                 essentials: "essentials__05db9",
                 everything: "everything__3aef9",
                 guilds: "guilds__108bc",
                 header: "header__7facf",
+                headerLeft: "headerLeft__2d213",
+                headerRight: "headerRight_e35cff",
                 none: "none__5721d",
                 showAllCheckbox: "showAllCheckbox_be0771",
                 showAllCheckboxContainer: "showAllCheckboxContainer__32ee0",
@@ -17569,17 +17571,14 @@
         650287: function(e, t, o) {
             "use strict";
             e.exports = {
-                active: "active__44bce",
                 buttons: "buttons_fac1ba",
                 content: "content__9acd0",
                 dismiss: "dismiss_c7051e",
                 header: "header__2953d",
+                helpfulTips: "helpfulTips__3819f",
                 introIcon: "introIcon__0e3e1",
-                reviewContainer: "reviewContainer_f98c27",
-                right: "right__48241",
-                subTab: "subTab_b51704",
-                subTabs: "subTabs__1af51",
-                subtitle: "subtitle_eee1c4"
+                reviewIcon: "reviewIcon__7d092",
+                right: "right__48241"
             }
         },
         805986: function(e, t, o) {
@@ -19263,11 +19262,8 @@
         944313: function(e, t, o) {
             "use strict";
             e.exports = {
-                imageVotedAndVictorMixinStyles: "imageVotedAndVictorMixinStyles_ae3068",
-                mutedMixinStyles: "mutedMixinStyles__4d4fa",
                 normalStylesDefault: "normalStylesDefault_b8063d",
                 normalStylesImageOnlyAnswers: "normalStylesImageOnlyAnswers__10b2a",
-                selectedMixinStyles: "selectedMixinStyles__6dfd9",
                 victorStyles: "victorStyles_d67b5e",
                 votedStyles: "votedStyles__92837"
             }
@@ -19376,8 +19372,10 @@
                 answer: "answer_be6c2e",
                 answersContainer: "answersContainer_fd091b",
                 attachment: "attachment__02b3f",
+                attachmentWithResults: "attachmentWithResults__2468b",
                 emoji: "emoji__27dab",
                 mediaMissing: "mediaMissing__2a6d1",
+                pollAnswerIcon: "pollAnswerIcon__5fba2",
                 selectedIcon: "selectedIcon__1a872",
                 votesData: "votesData_e545ce"
             }
@@ -19395,12 +19393,13 @@
             e.exports = {
                 answer: "answer__07489",
                 answerContent: "answerContent_f678a4",
+                answerInner: "answerInner_a3bc8e",
                 answersContainer: "answersContainer__97393",
                 attachment: "attachment_b6d123",
                 avatarForSelected: "avatarForSelected_db7f86",
-                emoji: "emoji__320b7",
                 label: "label_f6dfd2",
                 mediaContainer: "mediaContainer__32ff8",
+                pollAnswerIcon: "pollAnswerIcon_eeac4f",
                 voteDataLine: "voteDataLine_efaced",
                 votePercentageBar: "votePercentageBar__4c440",
                 votesData: "votesData__4d275"
