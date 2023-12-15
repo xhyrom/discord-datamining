@@ -3317,9 +3317,6 @@
             l.r(t), l.d(t, {
                 useGetDismissibleContent: function() {
                     return m
-                },
-                useDangerouslyPeekDismissibleContents: function() {
-                    return p
                 }
             });
             var n = l("884691"),
@@ -3365,14 +3362,6 @@
                     })
                 }, [T, t, p]);
                 return [h && null != T ? T : null, S]
-            }
-
-            function p(e) {
-                let t = (0, a.useStateFromStores)([s.default], () => {
-                    var e;
-                    return null === (e = s.default.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
-                });
-                return e.filter(e => null != t && !(0, r.hasBit)(t, e))
             }
         },
         509802: function(e, t, l) {
@@ -7916,4 +7905,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58247.6d141517001747f271f0.js.map
+//# sourceMappingURL=58247.8d5a1562e70621e7e2ba.js.map
