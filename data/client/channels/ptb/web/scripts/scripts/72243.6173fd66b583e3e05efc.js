@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -21015,7 +21015,7 @@
                     null != e && (i = (null == e ? void 0 : e.gradientPresetId) != null ? S.BACKGROUND_GRADIENT_PRESETS_MAP[e.gradientPresetId] : void 0), this.waitFor(E.default, c.default, f.default, u.default), this.syncWith([E.default], v), this.syncWith([u.default], A)
                 }
                 getState() {
-                    return {
+                    return T ? {} : {
                         gradientPresetId: null == i ? void 0 : i.id
                     }
                 }
@@ -21041,8 +21041,7 @@
                     super(...e), this.migrations = [e => {
                         var t;
                         return {
-                            gradientPresetId: null == e ? void 0 : null === (t = e.gradientPreset) || void 0 === t ? void 0 : t.id,
-                            gradientAngle: null == e ? void 0 : e.gradientAngle
+                            gradientPresetId: null == e ? void 0 : null === (t = e.gradientPreset) || void 0 === t ? void 0 : t.id
                         }
                     }]
                 }
@@ -49748,7 +49747,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "254615"
+                                build_number: "254671"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63119,4 +63118,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.8f48e353de6b89b7eec2.js.map
+//# sourceMappingURL=72243.6173fd66b583e3e05efc.js.map
