@@ -626,101 +626,108 @@
             "use strict";
             l.r(t), l.d(t, {
                 UserActivityTypes: function() {
-                    return A
+                    return C
                 },
                 default: function() {
-                    return v
+                    return N
                 }
             });
-            var n = l("37983");
-            l("884691");
-            var a = l("446674"),
-                s = l("77078"),
-                i = l("871388"),
-                r = l("152311"),
-                o = l("532602"),
-                u = l("299285"),
-                d = l("699209"),
-                c = l("769791"),
-                f = l("373469"),
-                m = l("42203"),
-                p = l("305961"),
-                E = l("957255"),
-                T = l("800762"),
-                h = l("313873"),
-                _ = l("474293"),
-                S = l("49111"),
-                I = l("804354");
+            var n = l("37983"),
+                a = l("884691"),
+                s = l("446674"),
+                i = l("77078"),
+                r = l("871388"),
+                o = l("152311"),
+                u = l("532602"),
+                d = l("299285"),
+                c = l("699209"),
+                f = l("769791"),
+                m = l("373469"),
+                p = l("42203"),
+                E = l("305961"),
+                T = l("957255"),
+                h = l("800762"),
+                _ = l("313873"),
+                S = l("599110"),
+                I = l("474293"),
+                g = l("49111"),
+                A = l("804354");
 
-            function g(e) {
+            function v(e) {
                 let {
                     type: t,
                     source: l,
                     activity: a,
-                    applicationStream: i,
-                    user: u,
+                    applicationStream: s,
+                    user: r,
                     guildId: d,
                     channelId: c,
                     onAction: f,
-                    isEmbedded: m = (0, r.default)(a),
+                    isEmbedded: m = (0, o.default)(a),
                     actionColor: p
                 } = e;
-                return (0, n.jsx)(o.default, {
-                    className: (0, _.getClass)(I, "actions", t),
+                return (0, n.jsx)(u.default, {
+                    className: (0, I.getClass)(A, "actions", t),
                     type: t,
                     source: l,
                     activity: a,
-                    applicationStream: i,
-                    user: u,
+                    applicationStream: s,
+                    user: r,
                     guildId: d,
-                    look: s.Button.Looks.FILLED,
-                    color: null != p ? p : s.Button.Colors.PRIMARY,
+                    look: i.Button.Looks.FILLED,
+                    color: null != p ? p : i.Button.Colors.PRIMARY,
                     channelId: c,
                     onAction: f,
                     isEmbedded: m
                 })
             }
-            let A = h.default.Types;
-            var v = function(e) {
+            let C = _.default.Types;
+            var N = function(e) {
                 var t;
                 let {
                     activity: l,
-                    user: s,
-                    useStoreStream: r = !0,
-                    showActions: o = !0,
-                    hideHeader: _ = !1,
-                    ...I
-                } = e, A = (0, a.useStateFromStores)([T.default, m.default], () => {
+                    user: i,
+                    useStoreStream: o = !0,
+                    showActions: u = !0,
+                    hideHeader: I = !1,
+                    ...A
+                } = e, C = (0, s.useStateFromStores)([h.default, p.default], () => {
                     var e;
-                    return m.default.getChannel(null === (e = T.default.getVoiceStateForUser(s.id)) || void 0 === e ? void 0 : e.channelId)
+                    return p.default.getChannel(null === (e = h.default.getVoiceStateForUser(i.id)) || void 0 === e ? void 0 : e.channelId)
                 }), {
-                    enableHangStatus: v
-                } = d.HangStatusExperiment.useExperiment({
-                    guildId: null !== (t = null == A ? void 0 : A.guild_id) && void 0 !== t ? t : "",
+                    enableHangStatus: N
+                } = c.HangStatusExperiment.useExperiment({
+                    guildId: null !== (t = null == C ? void 0 : C.guild_id) && void 0 !== t ? t : "",
                     location: "UserActivityContainer"
-                }), C = (0, a.useStateFromStores)([f.default], () => r ? f.default.getAnyStreamForUser(s.id) : null), N = v && E.default.can(S.Permissions.CONNECT, A), y = (null == l ? void 0 : l.type) === S.ActivityTypes.HANG_STATUS && N ? A : null, M = (0, a.useStateFromStores)([p.default, T.default, m.default], () => {
+                }), y = (0, s.useStateFromStores)([m.default], () => o ? m.default.getAnyStreamForUser(i.id) : null), M = N && T.default.can(g.Permissions.CONNECT, C), O = (null == l ? void 0 : l.type) === g.ActivityTypes.HANG_STATUS && M ? C : null, x = (0, s.useStateFromStores)([E.default, h.default, p.default], () => {
                     var e, t;
-                    return (0, i.default)(l, S.ActivityFlags.EMBEDDED) ? p.default.getGuild(null === (e = m.default.getChannel(null === (t = T.default.getVoiceStateForSession(s.id, null == l ? void 0 : l.session_id)) || void 0 === t ? void 0 : t.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != y ? p.default.getGuild(y.getGuildId()) : null
-                }), O = (0, a.useStateFromStores)([p.default], () => null != C ? p.default.getGuild(C.guildId) : null), x = (0, a.useStateFromStores)([u.default], () => {
-                    if (null != l) return null != l.application_id ? u.default.getApplication(l.application_id) : u.default.getApplicationByName(l.name);
+                    return (0, r.default)(l, g.ActivityFlags.EMBEDDED) ? E.default.getGuild(null === (e = p.default.getChannel(null === (t = h.default.getVoiceStateForSession(i.id, null == l ? void 0 : l.session_id)) || void 0 === t ? void 0 : t.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != O ? E.default.getGuild(O.getGuildId()) : null
+                }), R = (0, s.useStateFromStores)([E.default], () => null != y ? E.default.getGuild(y.guildId) : null), L = (0, s.useStateFromStores)([d.default], () => {
+                    if (null != l) return null != l.application_id ? d.default.getApplication(l.application_id) : d.default.getApplicationByName(l.name);
                     return null
                 });
-                return (null == l ? void 0 : l.type) !== S.ActivityTypes.HANG_STATUS || N ? (0, n.jsx)(h.default, {
-                    ...I,
+                return (a.useEffect(() => {
+                    (null == l ? void 0 : l.type) === g.ActivityTypes.HANG_STATUS && M && S.default.track(g.AnalyticEvents.VIEW_HANG_STATUS, {
+                        source: "UserProfilePopout",
+                        guild_id: null == O ? void 0 : O.guild_id,
+                        channel_id: null == O ? void 0 : O.id
+                    })
+                }, [null == l ? void 0 : l.type, M, O]), (null == l ? void 0 : l.type) !== g.ActivityTypes.HANG_STATUS || M) ? (0, n.jsx)(_.default, {
+                    ...A,
                     activity: l,
-                    user: s,
-                    application: x,
-                    hideHeader: _,
-                    activityGuild: null != M ? M : O,
-                    renderActions: o ? () => (0, n.jsx)(g, {
-                        ...I,
-                        applicationStream: C,
+                    user: i,
+                    application: L,
+                    hideHeader: I,
+                    activityGuild: null != x ? x : R,
+                    renderActions: u ? () => (0, n.jsx)(v, {
+                        ...A,
+                        applicationStream: y,
                         activity: l,
-                        user: s
+                        user: i
                     }) : null,
-                    onOpenSpotifyTrack: c.openTrack,
-                    onOpenSpotifyArtist: c.openArtist,
-                    onOpenSpotifyAlbum: c.openAlbum
+                    onOpenSpotifyTrack: f.openTrack,
+                    onOpenSpotifyArtist: f.openArtist,
+                    onOpenSpotifyAlbum: f.openAlbum
                 }) : null
             }
         },
@@ -1936,7 +1943,7 @@
             "use strict";
             l.r(t), l.d(t, {
                 default: function() {
-                    return c
+                    return f
                 }
             });
             var n = l("37983");
@@ -1945,28 +1952,33 @@
                 s = l("987317"),
                 i = l("957255"),
                 r = l("945956"),
-                o = l("295999"),
-                u = l("49111"),
-                d = l("782340");
+                o = l("599110"),
+                u = l("295999"),
+                d = l("49111"),
+                c = l("782340");
 
-            function c(e) {
+            function f(e) {
                 let {
                     className: t,
                     color: l,
-                    look: c,
-                    hangStatusChannel: f
-                } = e, m = (0, a.useStateFromStores)([r.default], () => r.default.getChannelId() === f.id);
+                    look: f,
+                    hangStatusChannel: m
+                } = e, p = (0, a.useStateFromStores)([r.default], () => r.default.getChannelId() === m.id);
                 return (0, n.jsx)(n.Fragment, {
-                    children: (0, n.jsx)(o.default, {
+                    children: (0, n.jsx)(u.default, {
                         className: t,
-                        disabled: m,
+                        disabled: p,
                         onClick: () => {
-                            i.default.can(u.Permissions.CONNECT, f), s.default.selectVoiceChannel(f.id)
+                            i.default.can(d.Permissions.CONNECT, m), s.default.selectVoiceChannel(m.id), o.default.track(d.AnalyticEvents.HANG_STATUS_CTA_CLICKED, {
+                                source: "UserProfilePopout",
+                                guild_id: m.guild_id,
+                                channel_id: m.id
+                            })
                         },
                         color: l,
-                        look: c,
+                        look: f,
                         fullWidth: !0,
-                        children: d.default.Messages.JOIN
+                        children: c.default.Messages.JOIN
                     }, "join-hang")
                 })
             }
@@ -7905,4 +7917,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58247.8d5a1562e70621e7e2ba.js.map
+//# sourceMappingURL=58247.f2fcb2dce74c0918912c.js.map
