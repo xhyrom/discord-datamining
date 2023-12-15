@@ -19397,8 +19397,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -73852,7 +73852,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .viewAllGamesButton__6eb3d {
@@ -73872,7 +73872,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__9b81c,
 .viewAllNitroGames__4193c {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -73928,7 +73928,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .headerBar_afb1ac {
@@ -118038,7 +118038,7 @@ html .invoiceCancelRow_c1bfe7 {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: .875rem
+    font-size: 14px
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -124166,4 +124166,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.0383aa0894def529416e.css.map*/
+/*# sourceMappingURL=app.2fd2e9201557c191521e.css.map*/
