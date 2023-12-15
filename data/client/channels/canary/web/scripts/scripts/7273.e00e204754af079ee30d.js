@@ -5795,7 +5795,7 @@
                         opacity: 1
                     },
                     [a.LIGHT]: {
-                        raw: "PRIMARY_500",
+                        raw: "PRIMARY_460",
                         opacity: 1
                     },
                     [a.MIDNIGHT]: {
@@ -12106,7 +12106,7 @@
                 "info-warning-text": [e.Color.WHITE_500, e.Color.BLACK_500, e.Color.WHITE_500, e.Color.WHITE_500],
                 "input-background": [e.Color.PRIMARY_700, e.Color.BLACK_500, e.Color.PLUM_23_ALPHA, e.Color.PLUM_24],
                 "input-focused-border": [e.Color.WHITE_500, e.Color.BLACK_500, e.Color.PLUM_11, e.Color.PLUM_11],
-                "input-placeholder-text": [e.Color.INPUT_PLACEHOLDER_TEXT_DARK, e.Color.PRIMARY_500, e.Color.PLUM_9, e.Color.PLUM_10],
+                "input-placeholder-text": [e.Color.INPUT_PLACEHOLDER_TEXT_DARK, e.Color.PRIMARY_460, e.Color.PLUM_9, e.Color.PLUM_10],
                 "interactive-active": [e.Color.WHITE_500, e.Color.PRIMARY_860, e.Color.PLUM_3, e.Color.PLUM_1],
                 "interactive-hover": [e.Color.PRIMARY_230, e.Color.PRIMARY_600, e.Color.PLUM_4, e.Color.PLUM_4],
                 "interactive-muted": [e.Color.PRIMARY_500, e.Color.PRIMARY_300, e.Color.PLUM_13, e.Color.PLUM_13],
@@ -13161,4 +13161,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.69e7c5439886e68aa76a.js.map
+//# sourceMappingURL=7273.e00e204754af079ee30d.js.map

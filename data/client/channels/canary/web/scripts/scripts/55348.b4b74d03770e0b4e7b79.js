@@ -147,6 +147,11 @@
                 code: "en-US",
                 enabled: !0
             }, {
+                name: "English, GB",
+                englishName: "English, GB",
+                code: "en-GB",
+                enabled: !0
+            }, {
                 name: "中文",
                 englishName: "Chinese Simplified",
                 code: "zh-CN",
@@ -1865,4 +1870,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55348.29e83ba0718684f2c9af.js.map
+//# sourceMappingURL=55348.b4b74d03770e0b4e7b79.js.map
