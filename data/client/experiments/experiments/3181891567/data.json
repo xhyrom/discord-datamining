@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-11_keybind_indicators",
+    "label": "Overlay Keybind Indicators",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show Keybind Indicators - Overlay"
+    ],
+    "hash": 3181891567,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "showKeybindIndicators"
+    ]
+  }
+}
