@@ -1888,7 +1888,11 @@
   },
   "USER_GUILD_SETTINGS_BULK": {
     "url": "/users/@me/guilds/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "USER_GUILD_SETTINGS": {
     "url": "/users/@me/guilds/:param/settings",
