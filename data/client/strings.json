@@ -6279,8 +6279,6 @@
   "EXPERIMENTAL_FEATURES": "\"Experimental Features\"",
   "EXPERIMENTAL_DESCRIPTION": "\"These settings/features are in testing phase and may be unstable. They are subject to change or removal without notice. Use with caution.\"",
   "EXPERIMENTAL_FEATURES_TOAST": "\"These settings are still baking. Try not to get burnt \\uD83D\\uDD25\"",
-  "EXPERIMENTAL_AMOLED_MODE_TITLE": "\"AMOLED Mode\"",
-  "EXPERIMENTAL_AMOLED_MODE_NOTE": "\"This feature is experimental and incomplete. Things might break unexpectedly. Use at your own risk.\"",
   "PREMIUM_PERKS_TIER_2_PROFILE": "\"Style your profile with a banner, custom tag, theme, animated avatar, and exclusive Nitro badge\"",
   "PREMIUM_PERKS_TIER_1_PROFILE": "\"Style your profile with a custom tag, animated avatar, and exclusive Nitro badge\"",
   "PREMIUM_PERKS_TIER_2_CUSTOM_EMOJI": "\"Use your custom emoji anywhere and animate them\"",
