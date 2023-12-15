@@ -11392,7 +11392,6 @@
                 GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_SCHEDULED_END_TIME_REMOVED: "Reset the end time",
                 GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_IS_CANCELED_CANCELED: "Canceled this event",
                 GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_IS_CANCELED_RESTORED: "Restored this event",
-                GUILD_EVENT_AUTO_START_TOGGLE: "Automatically start event",
                 CHANNEL_PERMISSIONS_MODERATOR_TITLE: "Stage Moderators",
                 CHANNEL_PERMISSIONS_MODERATOR_CURRENT_TITLE: "Current Stage moderators",
                 CHANNEL_PERMISSIONS_MODERATOR_DESCRIPTION: "Stage moderators are Speakers who can add and remove other Speakers. They can also start the Stage event. Stage moderators don't have to be mods of the server.",
@@ -18273,7 +18272,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254588", ", Version Hash: ").concat("3144f758cd5bc54651387ccfff118943b7e90fd1")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254615", ", Version Hash: ").concat("137a63a0ff50b2cde7a32fa70392032f5499e550")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20578,8 +20577,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "254588", "254588"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254588")), _ = 0), _
+                let _ = parseInt((e = "254615", "254615"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254615")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36561,4 +36560,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.96745668e41a3e0cb549.js.map
+//# sourceMappingURL=66318.e953a02286814c6aab5a.js.map
