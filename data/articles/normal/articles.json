@@ -1,5 +1,31 @@
 [
   {
+    "id": 19885999744279,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/19885999744279.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/19885999744279-Safety-Resources-for-Australian-Users",
+    "author_id": 2921470028,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 115000344951,
+    "created_at": "2023-12-15T21:40:02Z",
+    "name": "Safety Resources for Australian Users",
+    "title": "Safety Resources for Australian Users",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2023-12-15T21:41:06Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720972,
+    "content_tag_ids": [],
+    "label_names": [
+      "answer-bot"
+    ],
+    "body": "<p>Creating a safe environment for our users is at the core of our mission at Discord. We share this commitment with regulators, safety partners and non-governmental organisations around the world.</p>\n<p>The eSafety Commissioner in Australia plays a key role in empowering all Australians to have safer and more positive online experiences. As Australia’s dedicated online safety regulator, eSafety works together with the private sector to protect Australians from a range of online harms, from cyberbullying to the distribution of illegal material.</p>\n<p>As part of our efforts to keep Discord safe, we want our Australian users to be aware of the ways in which eSafety can help them respond to the challenges they may encounter online. You can find out more information about eSafety on their <a href=\"https://www.esafety.gov.au/about-us\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\" data-darkreader-inline-color=\"\">website</span></a>, including how to make a <a href=\"https://www.esafety.gov.au/report\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\" data-darkreader-inline-color=\"\">complaint</span></a>.</p>\n<p>eSafety’s website also includes a comprehensive list of <a href=\"https://www.esafety.gov.au/about-us/counselling-support-services\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\" data-darkreader-inline-color=\"\">counselling and support services</span></a> tailored for Australians.</p>"
+  },
+  {
     "id": 19872987802263,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/19872987802263.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/19872987802263--Deceased-or-Incapacitated-Users",
