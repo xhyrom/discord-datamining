@@ -1,3 +1,4 @@
+<h3 id="h_01HHR3V2T29GZMW61030ZHMTXY"><span style="font-weight: 400;">Note: If you are redeeming this trial on iOS, please double check to confirm that you are redeeming on the correct Discord account. Once a Nitro trial has been applied to a Discord account, our support team is unable to transfer it to a different one.</span></h3>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-d4fe9d98-7fff-8dca-06c1-6464c9b5868d">Starting from </span><strong>December 12, 2023</strong> <strong>(5:00am EST) </strong>to <strong>December 18, 2023 (11:59am EST)</strong>, <strong>T-Mobile and Metro by T-Mobile customers</strong> can claim 3 months of Discord Nitro in the T-Mobile Tuesdays app. Learn below about how you can redeem <a href="https://support.discord.com/hc/articles/115000435108" target="_blank" rel="noopener noreferrer">Discord Nitro</a>.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><span id="docs-internal-guid-4eabad82-7fff-9d5f-8c18-fdba9e634e9c"><img src="https://support.discord.com/hc/article_attachments/19781001941911" width="448" height="441"></span></span></p>
 <p><span class="wysiwyg-color-black wysiwyg-font-size-large"><strong>Promotion Summary</strong></span></p>
@@ -6,7 +7,7 @@
 <p id="docs-internal-guid-52e15989-7fff-469f-89ad-6c0b94cd59e9"><strong>To redeem in Discord,</strong> you must be a first time Nitro member. </p>
 <p>Users who have never had an active Nitro membership on their Discord accounts are eligible to redeem this Nitro promotion.</p>
 <p>Users who have had a Discord Nitro membership at any point on their accounts and have had a Nitro Classic or Nitro Basic membership in the past 12 months are ineligible to redeem this promotion.</p>
-<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership active on their account and they’ve never had a Nitro membership, redeeming this promotion will override that membership.</p>
+<p>If a user has any existing Nitro tier or Server Boosting membership active on their account at the time of redemption, redeeming this promotion will override that membership.</p>
 <p>We will not be able to refund any leftover membership time from those, and the user will be forfeiting the remainder of the existing membership when activating the 3 month Nitro trial.</p>
 <p>Users who have redeemed the T-Mobile Tuesdays offer, you cannot redeem it again</p>
 <p><span class="wysiwyg-color-orange110"><strong>Requirements:</strong></span></p>
@@ -56,8 +57,10 @@
 <p id="docs-internal-guid-3a1ee63c-7fff-4341-8dce-3355bd476e03">To redeem this promotion link to your Discord account, <strong>you must be a first time Nitro member</strong>. </p>
 <p>Users who have never had an active Nitro membership on their Discord accounts are eligible to redeem this Nitro promotion.</p>
 <p>Users who have had a Discord Nitro membership at any point on their accounts and have had a Nitro Classic or Nitro Basic membership in the past 12 months are ineligible to redeem this promotion.</p>
-<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership active on their account and they’ve never had a Nitro membership, redeeming this promotion will override that membership.</p>
+<p><span id="docs-internal-guid-5fe2b125-7fff-60a9-f77a-045630c4dc98">If a user has any existing Nitro tier or Server Boosting membership active on their account at the time of redemption, redeeming this promotion will override that membership.</span></p>
 <p>Users who have already redeemed the T-Mobile Tuesdays offer cannot redeem it again.</p>
+<h3 id="h_01HHR40G233PQQ0VB71DNKAPHG">Please note: By choosing to activate this 3 month trial, you will lose any features associated with your current memberships, and <strong>you will not receive a refund for any remaining value on your current membership.</strong>
+</h3>
 <h2 id="h_01FDVJRRQ3P805VFXE8X09E874">Step by Step Redeem Instructions</h2>
 <h3 id="h_01HHDXXMH2CG50JN5VWVRAMAFD"><span style="color: #434343;" data-darkreader-inline-color="">If you’re redeeming this offer on an iOS device, you will subscribe to Discord Nitro through the Apple App Store. If you are redeeming this offer on an Android device, you can follow the steps below!</span></h3>
 <p><span style="font-weight: 400;">If you're eligible and ready to redeem this Nitro subscription on your own Discord account, you can follow these steps below to redeem the promo!</span></p>
