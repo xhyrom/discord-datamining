@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["68655"], {
+    ["99083"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -3194,34 +3194,6 @@
             }
             n("884691")
         },
-        476765: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                uid: function() {
-                    return o
-                },
-                useUID: function() {
-                    return s
-                },
-                UID: function() {
-                    return u
-                }
-            });
-            var i = n("995008"),
-                r = n.n(i),
-                l = n("775560");
-            let o = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
-                    return r(e)
-                },
-                s = () => (0, l.useLazyValue)(() => o()),
-                u = e => {
-                    let {
-                        children: t
-                    } = e;
-                    return t(s())
-                }
-        },
         109264: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -4350,4 +4322,4 @@
         }
     }
 ]);
-//# sourceMappingURL=68655.f82b8a389254786e9b88.js.map
+//# sourceMappingURL=99083.79b3b5af9e7dd0e3dab7.js.map
