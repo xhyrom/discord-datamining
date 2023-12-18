@@ -12216,6 +12216,7 @@
   "SUGGEST_STICKERS": "\"Stickers\"",
   "MISSING_PAYMENT_METHOD_BANNER": "\"Your Nitro sub is about to expire. Enter a valid payment method to keep your subscription.\"",
   "INVALID_PAYMENT_METHOD_BANNER": "\"Your payment method failed, update your payment details to continue your Nitro subscription.\"",
+  "DUPLICATE_SUBSCRIPTIONS_BANNER": "\"You currently have multiple active Nitro subscriptions. For instructions on how cancel your duplicate subscriptions, please [click here]({helpCenterLink}).\"",
   "BRL_NAME": "\"Brazilian Real\"",
   "PLN_NAME": "\"Polish Złoty\"",
   "TRY_NAME": "\"Turkish Lira\"",
