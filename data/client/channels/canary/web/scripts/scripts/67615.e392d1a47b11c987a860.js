@@ -3506,6 +3506,9 @@
                 },
                 useIsActivitiesInTextEnabled: function() {
                     return o
+                },
+                useIsActivitiesInTextActionBarEnabled: function() {
+                    return d
                 }
             });
             var i = n("446674"),
@@ -3516,13 +3519,22 @@
                     id: "2023-08_activities_in_text",
                     label: "Activities in Text User",
                     defaultConfig: {
-                        enabled: !1
+                        enabled: !1,
+                        actionBarEnabled: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "enable Activities in text channels",
                         config: {
-                            enabled: !0
+                            enabled: !0,
+                            actionBarEnabled: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "enable Activities in text channels with action bar",
+                        config: {
+                            enabled: !0,
+                            actionBarEnabled: !0
                         }
                     }]
                 }),
@@ -3531,13 +3543,22 @@
                     id: "2023-11_activities_in_text_guild",
                     label: "Activities in Text Guild",
                     defaultConfig: {
-                        enabled: !1
+                        enabled: !1,
+                        actionBarEnabled: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "enable Activities in text channels",
                         config: {
-                            enabled: !0
+                            enabled: !0,
+                            actionBarEnabled: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "enable Activities in text channels with action bar",
+                        config: {
+                            enabled: !0,
+                            actionBarEnabled: !0
                         }
                     }]
                 });
@@ -3556,15 +3577,29 @@
             }
 
             function o(e, t) {
-                let n = (0, i.useStateFromStores)([l.default], () => l.default.getChannel(e)),
-                    a = (null == n ? void 0 : n.guild_id) != null ? r : s,
-                    u = a.useExperiment({
-                        guildId: null == n ? void 0 : n.guild_id,
+                var n;
+                let a = (0, i.useStateFromStores)([l.default], () => l.default.getChannel(e)),
+                    u = (null == a ? void 0 : a.guild_id) != null ? r : s,
+                    o = u.useExperiment({
+                        guildId: null !== (n = null == a ? void 0 : a.guild_id) && void 0 !== n ? n : "",
                         location: t
                     }, {
                         autoTrackExposure: !1
                     });
-                return u.enabled
+                return o.enabled
+            }
+
+            function d(e, t) {
+                var n;
+                let a = (0, i.useStateFromStores)([l.default], () => l.default.getChannel(e)),
+                    u = (null == a ? void 0 : a.guild_id) != null ? r : s,
+                    o = u.useExperiment({
+                        guildId: null !== (n = null == a ? void 0 : a.guild_id) && void 0 !== n ? n : "",
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    });
+                return o.actionBarEnabled
             }
         },
         810793: function(e, t, n) {
@@ -33756,4 +33791,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.62fbe5871db1438782eb.js.map
+//# sourceMappingURL=67615.e392d1a47b11c987a860.js.map
