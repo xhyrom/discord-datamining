@@ -24061,11 +24061,12 @@
                     return N["".concat(t)]
                 }
                 getGuildExperimentDescriptor(e, t) {
-                    let n = P[e];
-                    if (L && null != n) return n;
-                    let i = "".concat(t, ":").concat(e);
-                    if (i in D) return D[i];
-                    let r = function e(t, n) {
+                    let n = null != t ? t : "",
+                        i = P[e];
+                    if (L && null != i) return i;
+                    let r = "".concat(n, ":").concat(e);
+                    if (r in D) return D[r];
+                    let s = function e(t, n) {
                         var i, r;
                         let s = M(n),
                             a = O["".concat(s)];
@@ -24115,8 +24116,8 @@
                             aaMode: l,
                             triggerDebuggingEnabled: c
                         }
-                    }(t, e);
-                    return D[i] = r, r
+                    }(n, e);
+                    return D[r] = s, s
                 }
                 getUserExperimentBucket(e) {
                     let t = this.getUserExperimentDescriptor(e);
@@ -49922,7 +49923,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255237"
+                                build_number: "255245"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63279,4 +63280,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.6020fe82f8b98408d559.js.map
+//# sourceMappingURL=72243.62c99f0a223c007dc47f.js.map

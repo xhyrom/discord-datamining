@@ -121,43 +121,42 @@
                 })
             };
             var M = e => {
-                var t;
                 let {
-                    activities: a,
-                    applicationStream: l,
-                    className: s,
-                    textClassName: i,
-                    emojiClassName: u,
-                    animate: o = !0,
-                    hideTooltip: f = !1,
-                    hideEmoji: _ = !1,
-                    user: M
-                } = e, O = null != a ? a.find(e => e.type === p.ActivityTypes.CUSTOM_STATUS) : null, U = (0, r.useStateFromStores)([m.default], () => m.default.getId() === (null == M ? void 0 : M.id)), x = (0, r.useStateFromStores)([E.default], () => U ? E.default.getHangStatusActivity() : null != a ? a.find(e => e.type === p.ActivityTypes.HANG_STATUS) : null), R = (0, r.useStateFromStores)([g.default, S.default], () => {
+                    activities: t,
+                    applicationStream: a,
+                    className: l,
+                    textClassName: s,
+                    emojiClassName: i,
+                    animate: u = !0,
+                    hideTooltip: o = !1,
+                    hideEmoji: f = !1,
+                    user: _
+                } = e, M = null != t ? t.find(e => e.type === p.ActivityTypes.CUSTOM_STATUS) : null, O = (0, r.useStateFromStores)([m.default], () => m.default.getId() === (null == _ ? void 0 : _.id)), U = (0, r.useStateFromStores)([E.default], () => O ? E.default.getHangStatusActivity() : null != t ? t.find(e => e.type === p.ActivityTypes.HANG_STATUS) : null), x = (0, r.useStateFromStores)([g.default, S.default], () => {
                     var e;
-                    return null != x && null != M ? S.default.getChannel(null === (e = g.default.getVoiceStateForUser(M.id)) || void 0 === e ? void 0 : e.channelId) : null
+                    return null != U && null != _ ? S.default.getChannel(null === (e = g.default.getVoiceStateForUser(_.id)) || void 0 === e ? void 0 : e.channelId) : null
                 }), {
-                    enableHangStatus: y
+                    enableHangStatus: R
                 } = T.HangStatusExperiment.useExperiment({
-                    guildId: null !== (t = null == R ? void 0 : R.guild_id) && void 0 !== t ? t : "",
+                    guildId: null == x ? void 0 : x.guild_id,
                     location: "ActivityStatus"
-                }), j = null, P = y && null != x && C.default.can(p.Permissions.CONNECT, R);
-                P ? j = (0, n.jsx)(A.default, {
-                    className: u,
-                    hangStatusActivity: x
-                }) : null != O && null != O.emoji && !_ && (j = (0, n.jsx)(I, {
-                    emoji: O.emoji,
-                    animate: o,
-                    hideTooltip: f,
-                    className: u
+                }), y = null, j = R && null != U && C.default.can(p.Permissions.CONNECT, x);
+                j ? y = (0, n.jsx)(A.default, {
+                    className: i,
+                    hangStatusActivity: U
+                }) : null != M && null != M.emoji && !f && (y = (0, n.jsx)(I, {
+                    emoji: M.emoji,
+                    animate: u,
+                    hideTooltip: o,
+                    className: i
                 }));
-                let H = (0, c.default)(a, l, void 0, P),
-                    L = null != H && H.length > 0;
-                return null != j || L ? (0, n.jsxs)("div", {
-                    className: s,
-                    children: [j, (0, n.jsx)(h, {
-                        text: H,
-                        className: i
-                    }), null != a && a.some(d.default) ? (0, n.jsx)(N.default, {
+                let P = (0, c.default)(t, a, void 0, j),
+                    H = null != P && P.length > 0;
+                return null != y || H ? (0, n.jsxs)("div", {
+                    className: l,
+                    children: [y, (0, n.jsx)(h, {
+                        text: P,
+                        className: s
+                    }), null != t && t.some(d.default) ? (0, n.jsx)(N.default, {
                         width: 16,
                         height: 16,
                         className: v.icon
@@ -1536,4 +1535,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94491.43e23cd85dcba86fad0a.js.map
+//# sourceMappingURL=94491.b8ab3bb32bc6886f282a.js.map
