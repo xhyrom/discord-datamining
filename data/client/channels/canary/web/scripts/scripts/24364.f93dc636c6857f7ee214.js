@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -43768,6 +43768,14 @@
                     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
                     return A(c.SubscriptionTypes.PREMIUM, void 0, e)
                 }
+                getPremiumTypeSubscriptions() {
+                    let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
+                    return function(e, t) {
+                        let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+                            i = n ? f : d;
+                        return null == i ? null : Object.values(i).filter(t => t.type === e)
+                    }(c.SubscriptionTypes.PREMIUM, void 0, e)
+                }
                 getSubscriptions() {
                     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
                     return e ? f : d
@@ -49713,7 +49721,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255082"
+                                build_number: "255094"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63068,4 +63076,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.b5eb079da1619ac5660e.js.map
+//# sourceMappingURL=24364.f93dc636c6857f7ee214.js.map

@@ -20233,6 +20233,8 @@
                 cardText: "cardText__2fe30",
                 container: "container_aafa76",
                 content: "content__666df",
+                duplicateSubscriptionsBanner: "duplicateSubscriptionsBanner_e2aeea",
+                duplicateSubscriptionsBannerText: "duplicateSubscriptionsBannerText_ae1ef0",
                 loading: "loading__007c1",
                 noItemsCard: "noItemsCard_f473e7",
                 noItemsIcon: "noItemsIcon__38ca2",
