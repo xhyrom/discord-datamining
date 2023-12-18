@@ -9370,6 +9370,7 @@
                 GO_LIVE_SHARE_SCREEN: "Screen",
                 GO_LIVE_WATCHING_USER: "Watching {username}",
                 GO_LIVE_MODAL_NOTIFY_FRIENDS_CHECKBOX_LABEL: "Notify my friends in this server that I'm streaming.",
+                GO_LIVE_MODAL_ENABLE_SCREEN_SOUNDSHARE_LABEL: "Also share system audio.",
                 VOICE_CHANNEL_EFFECTS: "Voice Channel Effects",
                 VOICE_CHANNEL_EFFECTS_COOLDOWN: "Reaction Cooldown {seconds}s",
                 VOICE_CHANNEL_EFFECTS_MORE: "More Reactions",
@@ -18285,7 +18286,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255114", ", Version Hash: ").concat("bcd8a32911e162e8080a2041896f2dc2fd3c4e61")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255123", ", Version Hash: ").concat("0b454a5c87d077aa4f7b42fc02ca5f6a7e53d4d5")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20590,8 +20591,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "255114", "255114"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255114")), _ = 0), _
+                let _ = parseInt((e = "255123", "255123"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255123")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36569,4 +36570,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.f5c0b021f1fce1d6c9b7.js.map
+//# sourceMappingURL=66318.ff1267472b822adad105.js.map
