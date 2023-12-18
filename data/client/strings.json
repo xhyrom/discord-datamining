@@ -7058,6 +7058,7 @@
   "PREMIUM_CANCEL_CONFIRM_BUTTON": "\"Cancel Subscription\"",
   "PREMIUM_NO_PLANS_HEADER": "\"Sorry!\"",
   "PREMIUM_NO_PLANS_BODY": "\"We don't current offer a plan through Google Play Billing with more boosts. [Learn more.]({helpdeskArticle})\"",
+  "PREMIUM_PAUSE_OR_CANCEL": "\"Pause or Cancel\"",
   "PREMIUM_SETTINGS_STARTING_AT_PER_MONTH": "\"Subscribe - Starting at !!{price}!! / Month\"",
   "PREMIUM_SUBSCRIPTION_UPDATES": "\"Subscription Updates\"",
   "PREMIUM_SUBSCRIPTION_PLAN_ADJUSTMENT": "\"{planName} Adjustment\"",
