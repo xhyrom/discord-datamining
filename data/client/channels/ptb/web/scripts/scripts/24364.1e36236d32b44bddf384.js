@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72243"], {
+    ["24364"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -35471,8 +35471,9 @@
                         for (let t of e) ee(t.thread);
                     n.forEach(ee), null == i || i.forEach(e => {
                         let t = (0, S.createChannelRecordFromServer)(e),
-                            n = null == B(e.id) || null != U[t.id];
-                        t.isPrivate() && n ? U[t.id] = t : H(t)
+                            n = null != B(e.id),
+                            i = null != U[e.id];
+                        t.isPrivate() && (!n || i) ? U[t.id] = t : !n && H(t)
                     })
                 },
                 THREAD_CREATE: X,
@@ -49923,7 +49924,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255286"
+                                build_number: "255294"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63280,4 +63281,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.a9e3ae0a7a5eb0851583.js.map
+//# sourceMappingURL=24364.1e36236d32b44bddf384.js.map
