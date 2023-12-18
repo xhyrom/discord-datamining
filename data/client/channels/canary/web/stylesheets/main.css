@@ -19410,8 +19410,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -43612,39 +43612,6 @@ html .progress__4ef76 {
     background: hsl(var(--primary-500-hsl)/.6)
 }
 
-.statusGroup__7809a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 4px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    gap: 4px
-}
-
-.statusIcon__87cd6 {
-    flex-shrink: 0;
-    height: 28px
-}
-
-.statusText__40040 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 140px
-}
-
-.iconWidget_b2ac71 {
-    border-radius: 8px;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden
-}
-
 .statusButtonRegion__47ea7 {
     z-index: 1;
     margin-top: 4px;
@@ -43682,7 +43649,13 @@ html .progress__4ef76 {
     border-radius: 8px;
     cursor: pointer;
     border: 1px solid var(--background-modifier-hover);
-    background-color: var(--background-modifier-hover)
+    background-color: var(--background-modifier-hover);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden
 }
 
 .iconWidget_db0821:hover {
@@ -124184,4 +124157,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.36cfc18244a972222875.css.map*/
+/*# sourceMappingURL=app.1217d3764d0fa1933579.css.map*/

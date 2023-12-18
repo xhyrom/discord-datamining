@@ -3940,6 +3940,7 @@
                 liveIconSpacing: "liveIconSpacing__7111d",
                 overlap: "overlap_c76e16",
                 selected: "selected__471ca",
+                selfHangStatus: "selfHangStatus__30cc4",
                 strikethrough: "strikethrough_be7c82",
                 userLarge: "userLarge__6c69c",
                 userSmall: "userSmall_e40291",
