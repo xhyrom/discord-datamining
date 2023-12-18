@@ -1,21 +1,21 @@
 <p id="docs-internal-guid-0477851b-7fff-a062-4335-acc5c8ec4e70"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01HAD8XEZPCZ38NAG9NJAYCEQA">What is the Members page?</a></li>
-    <li><a href="#h_01HAD8XEZP095H4QXP1QAA600P">How does the Members page work?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01HAD8XEZPCZ38NAG9NJAYCEQA">What is the Members page?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01HAD8XEZP095H4QXP1QAA600P">How does the Members page work?</a></li>
     <li>
-        <a href="#h_01HAD96EADBQ0G1V8RE27ATP8E">Managing Server Members</a>
+        <a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01HAD96EADBQ0G1V8RE27ATP8E">Managing Server Members</a>
         <ul>
-            <li><a href="#h_01HAD96EADXYYWVRBF85F6TV67">Adding Roles</a></li>
-            <li><a href="#h_01H5K0YX4XET5E6KP0Q1T9HWNP">Reviewing Signals</a></li>
-            <li><a href="#h_01H5K0Z46YY4M4G3PD9G9NJJGW">Searching, Pruning, and Reviewing Invite Codes</a></li>
-            <li><a href="#docs-internal-guid-cabd3f95-7fff-9cc9-2a77-b0ca70f3259e">Banning</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01HAD96EADXYYWVRBF85F6TV67">Adding Roles</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01H5K0YX4XET5E6KP0Q1T9HWNP">Reviewing Signals</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01H5K0Z46YY4M4G3PD9G9NJJGW">Searching, Pruning, and Reviewing Invite Codes</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#docs-internal-guid-cabd3f95-7fff-9cc9-2a77-b0ca70f3259e">Banning</a></li>
         </ul>
     </li>
-    <li><a href="#h_01H5K0Z9RJ0AT89DSSRFDGYA8Y">Frequently Asked Questions </a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01H5K0Z9RJ0AT89DSSRFDGYA8Y">Frequently Asked Questions </a></li>
 </ul>
 <h1 id="h_01HAD8XEZPCZ38NAG9NJAYCEQA">What is the Members page?</h1>
 <p>The <strong>Members</strong> page provides moderators and admins with a dashboard view of new and existing server members within your server.</p>
-<h3 id="h_01HFSV8TK0B6KHDQ2KYA4X12SM">For Community servers, select <strong>Members</strong> located in the channel list near the top right corner of the server to navigate to the Members page. For friend servers, this feature will be in <strong>Server Settings &gt; Members</strong>.</h3>
+<h3 id="h_01HFSV8TK0B6KHDQ2KYA4X12SM">For Community servers, select <strong>Members</strong> located in the channel list near the top left corner of the server to navigate to the Members page. For friend servers, this feature will be in <strong>Server Settings &gt; Members</strong>.</h3>
 <p>From this page, you can see the following information regarding your server members:</p>
 <ul>
     <li>When they joined the server</li>
@@ -76,8 +76,6 @@
 <p id="docs-internal-guid-4f6d035e-7fff-cb0e-2232-62dca65f1ecc"><strong>Q: Who can see the Members page?</strong></p>
 <p>A: Currently, the Members page is visible for the server’s owner and admins who have admin/manage server/manage nicknames/manage roles/kick/ban permissions.</p>
 <p>Specific information like invite codes will require Manage Server permission.</p>
-<p><strong>Q: Who can see the Members page?</strong></p>
-<p>A: Currently, the Members page is visible for your team members who have admin/manage/kick/ban/timeout permissions.</p>
 <p id="docs-internal-guid-8b6e97d6-7fff-4709-1cc3-80414bcc9770"><strong>Q: Is the Members page available on mobile?</strong></p>
 <p>A: The Members page is only available for browser/desktop at this time.</p>
 <p><strong>Q: Why doesn’t the Members page show a list of all of my members?</strong></p>
