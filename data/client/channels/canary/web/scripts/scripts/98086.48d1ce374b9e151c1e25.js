@@ -23153,8 +23153,8 @@
                 O = n("858619"),
                 x = n("867805"),
                 U = n("802461"),
-                T = n("26430"),
-                R = n("958706"),
+                R = n("26430"),
+                T = n("958706"),
                 N = n("115279"),
                 A = n("397336");
             let L = [N.EmojiCategories.TOP_GUILD_EMOJI.toString(), N.EmojiCategories.FAVORITES.toString(), N.EmojiCategories.RECENT.toString(), N.EmojiCategories.CUSTOM.toString()].concat(x.default.getCategories()),
@@ -23311,7 +23311,7 @@
                     if (this.ensureDisambiguated(), null == this.topEmojis) {
                         var s;
                         let n = Y.get(e),
-                            i = T.default.getTopEmojiIdsByGuildId(e);
+                            i = R.default.getTopEmojiIdsByGuildId(e);
                         if (null == n && null == i) return z;
                         let r = null !== (s = null == n ? void 0 : n.emojiIds) && void 0 !== s ? s : i,
                             o = r.map(e => {
@@ -23331,20 +23331,6 @@
                     if (this.ensureDisambiguated(), null == this.newlyAddedEmoji) return z;
                     let s = this.newlyAddedEmoji[e];
                     return null == s ? z : s
-                }
-                getBackfillTopEmojis(e) {
-                    let s = this.getGroupedCustomEmoji();
-                    if (null == s) return z;
-                    if (null == this.backfillTopEmojis[e]) {
-                        let n = this.getNewlyAddedEmojiForGuild(e).map(e => e.id),
-                            i = this.getTopEmojiWithoutFetchingLatest(e).map(e => e.id);
-                        if (null != s[e]) {
-                            let r = s[e].filter(e => !n.includes(e.id) && !i.includes(e.id)),
-                                o = n.length + i.length;
-                            this.backfillTopEmojis[e] = r.sort((e, s) => S.default.compare(e.id, s.id)).slice(0, o < 9 ? 9 - o : 0)
-                        } else this.backfillTopEmojis[e] = z
-                    }
-                    return this.backfillTopEmojis[e]
                 }
                 getEscapedCustomEmoticonNames() {
                     return null == this.escapedEmoticonNames && this._buildDisambiguatedCustomEmoji(), this.escapedEmoticonNames
@@ -23408,7 +23394,7 @@
                     }), this.escapedEmoticonNames = s.join("|")
                 }
                 constructor(e) {
-                    this.emoticonRegex = null, this.frequentlyUsed = null, this.favorites = null, this.favoriteNamesAndIds = null, this.topEmojis = null, this.escapedEmoticonNames = null, this.disambiguatedEmoji = null, this.newlyAddedEmoji = null, this.backfillTopEmojis = {}, this.isFavoriteEmojiWithoutFetchingLatest = e => {
+                    this.emoticonRegex = null, this.frequentlyUsed = null, this.favorites = null, this.favoriteNamesAndIds = null, this.topEmojis = null, this.escapedEmoticonNames = null, this.disambiguatedEmoji = null, this.newlyAddedEmoji = null, this.isFavoriteEmojiWithoutFetchingLatest = e => {
                         var s;
                         if (null == e) return !1;
                         let n = this.rebuildFavoriteEmojisWithoutFetchingLatest()[1];
@@ -23497,7 +23483,7 @@
             }
             class e_ extends f.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(u.default, p.default, w.default, D.default, V.default, k.default, l.default, T.default, C.default), null != e && (F = e), this.syncWith([b.default], eo), this.syncWith([V.default], ef)
+                    this.waitFor(u.default, p.default, w.default, D.default, V.default, k.default, l.default, R.default, C.default), null != e && (F = e), this.syncWith([b.default], eo), this.syncWith([V.default], ef)
                 }
                 getState() {
                     return F
@@ -23579,7 +23565,7 @@
                                 canViewAndUsePackEmoji: a,
                                 forceIncludeExternalGuilds: t
                             });
-                            return i === R.EmojiDisabledReasons.PREMIUM_LOCKED ? e.locked.push(s) : null == i && e.unlocked.push(s), e
+                            return i === T.EmojiDisabledReasons.PREMIUM_LOCKED ? e.locked.push(s) : null == i && e.unlocked.push(s), e
                         }, {
                             unlocked: [],
                             locked: []
@@ -23605,9 +23591,6 @@
                 }
                 getNewlyAddedEmoji(e) {
                     return null == e ? z : (Z(), Q.get(e).getNewlyAddedEmojiForGuild(e))
-                }
-                getBackfillTopEmojis(e) {
-                    return null == e ? z : (Z(), Q.get(e).getBackfillTopEmojis(e))
                 }
                 getTopEmojisMetadata(e) {
                     return Y.get(e)
@@ -25193,4 +25176,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98086.0963628a6eb81f7d6345.js.map
+//# sourceMappingURL=98086.48d1ce374b9e151c1e25.js.map
