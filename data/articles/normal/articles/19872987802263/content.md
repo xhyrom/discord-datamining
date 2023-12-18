@@ -55,7 +55,7 @@
 <p><strong>Document Submission Guidelines:</strong></p>
 <p>Please ensure that the documents are provided as photocopies or scanned copies. To safeguard your privacy, you can block out any personal information such as birthdays and addresses while keeping names visible.</p>
 <p><strong>Explicit Confirmation of Action Requested:</strong></p>
-<p>In addition to the required documents, we need an explicit confirmation of the action you are requesting for the account. Please include the following statement: <strong><em>"I request to have the account associated with [email and/or username+discriminator] deleted."</em></strong></p>
+<p>In addition to the required documents, we need an explicit confirmation of the action you are requesting for the account. Please include the following statement: <strong><em>"I request to have the account associated with [email and/or username] deleted."</em></strong></p>
 <h1 id="h_01HHQ2QR092B8A6GRFFSRV6R55">Billing or Payment-Related issues</h1>
 <p>If you have any questions regarding billing or payments related to a deceased user’s account, please visit our <a href="https://support.discord.com/hc/en-us/requests/new" target="_blank" rel="noopener noreferrer">support form</a>, select <strong>Billing</strong>, and choose the type of billing issue that most closely relates to your question.</p>
 <h1 id="h_01HHQ2QR09GY34N1Q5063SZWXC">Requests to Memorialize or Transfer an Account</h1>
