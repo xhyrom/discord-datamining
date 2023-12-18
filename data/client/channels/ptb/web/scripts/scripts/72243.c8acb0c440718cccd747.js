@@ -3077,31 +3077,35 @@
                     onKeyDown: f,
                     onFocus: E,
                     onBlur: h,
-                    onMouseDown: p,
-                    buttonProps: _,
-                    "aria-label": S
-                } = e, m = r.useRef(null);
+                    onMouseOver: p,
+                    onMouseDown: _,
+                    onMouseLeave: S,
+                    buttonProps: m,
+                    "aria-label": T
+                } = e, g = r.useRef(null);
                 return (0, i.jsxs)(t, {
-                    ref: m,
+                    ref: g,
                     className: o,
                     onClick: u,
+                    onMouseOver: p,
+                    onMouseLeave: S,
                     onDoubleClick: c,
                     onContextMenu: d,
                     children: [(0, i.jsx)(s.Clickable, {
-                        ..._,
+                        ...m,
                         focusProps: {
-                            ringTarget: m,
+                            ringTarget: g,
                             ...l
                         },
                         className: a.focusTarget,
-                        "aria-label": S,
+                        "aria-label": T,
                         onClick: e => {
                             e.stopPropagation(), null == u || u(e)
                         },
                         onKeyDown: f,
                         onFocus: E,
                         onBlur: h,
-                        onMouseDown: p
+                        onMouseDown: _
                     }), n]
                 })
             }
@@ -49918,7 +49922,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255202"
+                                build_number: "255214"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63275,4 +63279,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.8f4580dbaa0533fea495.js.map
+//# sourceMappingURL=72243.c8acb0c440718cccd747.js.map

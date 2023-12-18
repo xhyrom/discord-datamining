@@ -19410,8 +19410,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -79634,10 +79634,6 @@ input::-webkit-inner-spin-button {
     filter: var(--shadow-low-hover-filter)
 }
 
-.clipItem__03b69:hover .buttonContainer__3f0c3 {
-    display: flex
-}
-
 .newIcon__98982 {
     width: 24px;
     height: 24px
@@ -79701,6 +79697,18 @@ input::-webkit-inner-spin-button {
     padding: 8px
 }
 
+.clipTitleInput_f80ecf {
+    height: inherit;
+    padding: 0;
+    background-color: inherit
+}
+
+.clipTitleInputPlaceholder__5c743 {
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: center
+}
+
 .clipTitle__779d0,
 .clipName__63511,
 .clipMetadata_a529e8 {
@@ -79728,7 +79736,7 @@ input::-webkit-inner-spin-button {
 }
 
 .buttonContainer__3f0c3 {
-    display: none;
+    display: flex;
     flex-direction: row;
     gap: 8px
 }
@@ -124157,4 +124165,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.fe85e505a01faae462e4.css.map*/
+/*# sourceMappingURL=app.7c19a124ec9933251b90.css.map*/

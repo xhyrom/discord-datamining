@@ -5373,6 +5373,8 @@
                 clipThumb: "clipThumb__90837",
                 clipThumbContainer: "clipThumbContainer_f469a2",
                 clipTitle: "clipTitle__779d0",
+                clipTitleInput: "clipTitleInput_f80ecf",
+                clipTitleInputPlaceholder: "clipTitleInputPlaceholder__5c743",
                 disabled: "disabled__29897",
                 miniIcon: "miniIcon_d6c101",
                 newIcon: "newIcon__98982",
