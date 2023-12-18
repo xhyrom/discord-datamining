@@ -495,10 +495,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 updateAllowVoiceRecording: function() {
-                    return w
+                    return T
                 },
                 updateClipsEnabled: function() {
-                    return T
+                    return w
                 },
                 updateDecoupledClipsEnabled: function() {
                     return D
@@ -506,32 +506,35 @@
                 updateClipsStorageLocation: function() {
                     return P
                 },
-                updateClipsLength: function() {
+                updateClipsQuality: function() {
                     return N
                 },
-                updateViewerClipsEnabled: function() {
+                updateClipsLength: function() {
                     return k
                 },
-                saveClip: function() {
-                    return O
+                updateViewerClipsEnabled: function() {
+                    return U
                 },
-                updateClipMetadata: function() {
+                saveClip: function() {
                     return M
                 },
-                clearClipsSession: function() {
+                updateClipMetadata: function() {
                     return F
                 },
-                clearNewClipIds: function() {
+                clearClipsSession: function() {
                     return V
                 },
-                loadClipsDirectory: function() {
+                clearNewClipIds: function() {
                     return j
                 },
-                deleteClip: function() {
+                loadClipsDirectory: function() {
                     return G
                 },
-                exportClip: function() {
+                deleteClip: function() {
                     return B
+                },
+                exportClip: function() {
+                    return H
                 }
             }), n("222007"), n("424973");
             var i = n("750028"),
@@ -555,12 +558,12 @@
                 C = n("13136"),
                 E = n("881095"),
                 I = n("997942"),
-                A = n("310238"),
-                y = n("99366"),
+                y = n("310238"),
+                A = n("99366"),
                 x = n("80028"),
                 L = n("49111");
 
-            function w(e) {
+            function T(e) {
                 let {
                     allowVoiceRecording: t
                 } = e;
@@ -572,7 +575,7 @@
                     allow_voice_recording: t
                 })
             }
-            async function T(e) {
+            async function w(e) {
                 let {
                     clipsEnabled: t,
                     guildId: n,
@@ -629,7 +632,7 @@
                 a.default.dispatch({
                     type: "CLIPS_SETTINGS_UPDATE",
                     settings: {
-                        clipsLength: e
+                        clipsQuality: e
                     }
                 })
             }
@@ -638,12 +641,21 @@
                 a.default.dispatch({
                     type: "CLIPS_SETTINGS_UPDATE",
                     settings: {
+                        clipsLength: e
+                    }
+                })
+            }
+
+            function U(e) {
+                a.default.dispatch({
+                    type: "CLIPS_SETTINGS_UPDATE",
+                    settings: {
                         viewerClipsEnabled: e
                     }
                 })
             }
 
-            function U(e, t) {
+            function R(e, t) {
                 var n, i, a, u, o, s, d, l, p, f;
                 let m = new Map;
                 for (let e in t.framesEncodedByEncoder) {
@@ -681,7 +693,7 @@
                     saved_at: t.savedAt
                 }
             }
-            async function R(e) {
+            async function O(e) {
                 let t = S.default.getSettings(),
                     n = t.storageLocation,
                     i = (0, E.default)(e),
@@ -726,9 +738,9 @@
                         duration: e,
                         thumbnail: t,
                         clipStats: n
-                    } = await (null != c ? d.saveClipForUser(c, s, l) : d.saveClip(s, l)), a = U(_, n);
+                    } = await (null != c ? d.saveClipForUser(c, s, l) : d.saveClip(s, l)), a = R(_, n);
                     a.clip_save_time_ms = n.clipSaveTimeMs, a.clip_size_bytes = n.clipSizeBytes, null != n.viewerDecodeFps && (a.decode_fps_during_clip = n.viewerDecodeFps, a.encode_fps_during_clip = n.viewerEncodeFps, a.target_fps = null), v.default.track(L.AnalyticEvents.CLIP_SAVED, a);
-                    let r = await (null != u.default.clips.getClipProtocolURLFromPath ? (0, y.createThumbnailFromVideo)(u.default.clips.getClipProtocolURLFromPath(s), 0) : (0, y.createThumbnail)(t));
+                    let r = await (null != u.default.clips.getClipProtocolURLFromPath ? (0, A.createThumbnailFromVideo)(u.default.clips.getClipProtocolURLFromPath(s), 0) : (0, A.createThumbnail)(t));
                     return i.thumbnail = r, i.length = e, x.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (b = null == r ? void 0 : r.length) && void 0 !== b ? b : 0, " bytes thumbnail.")), await d.updateClipMetadata(s, JSON.stringify(i)), {
                         ...i,
                         filepath: s
@@ -738,11 +750,11 @@
                             type: "CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR",
                             clipId: i.id
                         }), !("errorMessage" in n)) throw v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, _), n;
-                    let t = U(_, n);
+                    let t = R(_, n);
                     throw t.error_at = n.errorAt, t.error_message = n.errorMessage, v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
                 }
             }
-            async function O(e) {
+            async function M(e) {
                 var t;
                 let {
                     enableDecoupledGameClipping: n
@@ -770,7 +782,7 @@
                 let m = (0, h.playSound)("clip_save", .5),
                     g = performance.now();
                 try {
-                    let t = await R(null != e ? e : f);
+                    let t = await O(null != e ? e : f);
                     a.default.dispatch({
                         type: "CLIPS_SAVE_CLIP",
                         clip: t
@@ -782,7 +794,7 @@
                 }
                 x.ClipsLogger.info("".concat(S.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - g), "ms"))
             }
-            async function M(e, t) {
+            async function F(e, t) {
                 let n = S.default.getClips().find(t => t.id === e);
                 if (null == n) return;
                 let i = {
@@ -797,18 +809,18 @@
                 })
             }
 
-            function F() {
+            function V() {
                 a.default.dispatch({
                     type: "CLIPS_CLEAR_CLIPS_SESSION"
                 })
             }
 
-            function V() {
+            function j() {
                 a.default.dispatch({
                     type: "CLIPS_CLEAR_NEW_CLIP_IDS"
                 })
             }
-            async function j(e) {
+            async function G(e) {
                 var t;
                 if (!(0, b.isDesktop)() || (null === (t = u.default.clips) || void 0 === t ? void 0 : t.loadClipsDirectory) == null) return;
                 let n = await u.default.clips.loadClipsDirectory(e),
@@ -825,17 +837,17 @@
                     clips: i
                 })
             }
-            async function G(e) {
+            async function B(e) {
                 var t;
                 (0, b.isDesktop)() && (null === (t = u.default.clips) || void 0 === t ? void 0 : t.deleteClip) != null && (await u.default.clips.deleteClip(e), a.default.dispatch({
                     type: "CLIPS_DELETE_CLIP",
                     filepath: e
                 }))
             }
-            async function B(e, t) {
+            async function H(e, t) {
                 let n = m.default.getMediaEngine(),
                     i = await n.exportClip(e.filepath, t);
-                return (0, A.default)(i)
+                return (0, y.default)(i)
             }
         },
         310238: function(e, t, n) {
@@ -1188,4 +1200,4 @@
         }
     }
 ]);
-//# sourceMappingURL=75178.48b874ed943dcbdd6232.js.map
+//# sourceMappingURL=75178.803fbc4663cfdcd42598.js.map

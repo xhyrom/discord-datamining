@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["87237"], {
+    ["72243"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -2115,7 +2115,7 @@
                     config: T,
                     from: G,
                     to: w
-                }), Y = (0, h.getAvatarSize)(S), W = (0, h.getAvatarSpecs)(S), K = W.status * h.TYPING_WIDTH_RATIO, z = W.status * h.MOBILE_HEIGHT_RATIO, q = null != N ? (W.status * h.TYPING_WIDTH_RATIO - W.status) / 2 : 0, X = W.size - W.status - q - W.offset, Z = W.size - z - W.offset, Q = W.size + Math.ceil(q);
+                }), Y = (0, h.getAvatarSize)(S), W = (0, h.getAvatarSpecs)(S), K = W.status * h.TYPING_WIDTH_RATIO, z = W.status * h.MOBILE_HEIGHT_RATIO, q = null != N ? (W.status * h.TYPING_WIDTH_RATIO - W.status) / 2 : 0, X = W.size - W.status - q - W.offset, Q = W.size - z - W.offset, Z = W.size + Math.ceil(q);
                 return (0, i.jsx)(A, {
                     ...e,
                     ariaLabel: L,
@@ -2123,9 +2123,9 @@
                     typingOffset: q,
                     specs: W,
                     children: (0, i.jsxs)("svg", {
-                        width: Q,
-                        height: Q,
-                        viewBox: "0 0 ".concat(Q, " ").concat(Q),
+                        width: Z,
+                        height: Z,
+                        viewBox: "0 0 ".concat(Z, " ").concat(Z),
                         className: a(m.mask, m.svg),
                         "aria-hidden": !0,
                         children: [(0, i.jsxs)("mask", {
@@ -2168,7 +2168,7 @@
                             children: e => (0, i.jsxs)(i.Fragment, {
                                 children: [null != y && C(y, l, W, N), (0, i.jsxs)("svg", {
                                     x: X,
-                                    y: Z,
+                                    y: Q,
                                     width: K,
                                     height: z,
                                     viewBox: "0 0 ".concat(K, " ").concat(z),
@@ -6109,7 +6109,7 @@
                     }), X = (0, r.useCallback)(function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 2;
                         e > V.current.dirty && (V.current.dirty = e, 2 === e ? z() : H(1))
-                    }, [H, V, z]), Z = (0, u.useScrollSpring)(F), Q = (0, r.useCallback)(() => q.itemGrid, [q]), J = (0, r.useCallback)(() => q.coordsMap, [q]), $ = s.useCallback(() => X(), [X]);
+                    }, [H, V, z]), Q = (0, u.useScrollSpring)(F), Z = (0, r.useCallback)(() => q.itemGrid, [q]), J = (0, r.useCallback)(() => q.coordsMap, [q]), $ = s.useCallback(() => X(), [X]);
                     (0, u.useResizeObserverSubscription)({
                         ref: F,
                         key: "container",
@@ -6118,11 +6118,11 @@
                         listenerMap: d
                     }), (0, r.useImperativeHandle)(E, () => ({
                         getScrollerNode: () => F.current,
-                        getItemGrid: Q,
+                        getItemGrid: Z,
                         getCoordsMap: J,
                         getScrollerState: B,
-                        ...(0, u.getAnimatedScrollHelpers)(F, B, Z)
-                    }), [F, B, Q, Z, J]);
+                        ...(0, u.getAnimatedScrollHelpers)(F, B, Q)
+                    }), [F, B, Z, Q, J]);
                     let ee = (0, r.useCallback)(e => {
                         X(1), null == G.current ? x(!0) : clearTimeout(G.current), G.current = setTimeout(() => {
                             G.current = null, x(!1)
@@ -9465,8 +9465,8 @@
                         "aria-invalid": z,
                         "aria-labelledby": q,
                         "aria-required": X,
-                        inputClassNames: Z,
-                        centerCaret: Q = !1,
+                        inputClassNames: Q,
+                        centerCaret: Z = !1,
                         onBlur: J,
                         ...$
                     } = e, {
@@ -9791,14 +9791,14 @@
                                                         let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                                                         ek(e, t)
                                                     },
-                                                    inputClassNames: Z
+                                                    inputClassNames: Q
                                                 })
                                             })
                                         })
                                     }), (0, i.jsxs)("div", {
                                         className: a(P.icons, {
                                             [P.multi]: h,
-                                            [P.iconsContainer]: !Q
+                                            [P.iconsContainer]: !Z
                                         }),
                                         ref: ee,
                                         children: [c && (null != ef && "" !== ef || eI.length > 0) ? (0, i.jsx)(d.Clickable, {
@@ -9812,7 +9812,7 @@
                                             })
                                         }) : null, (0, i.jsx)(d.Clickable, {
                                             className: a({
-                                                [P.iconsCenter]: Q
+                                                [P.iconsCenter]: Z
                                             }),
                                             "aria-label": ec ? y.default.Messages.CLOSE : y.default.Messages.OPEN,
                                             "aria-controls": eO,
@@ -10458,7 +10458,7 @@
                     j !== e && !o && (Y(e), e ? null == R || R() : null == A || A())
                 }, [o, A, R, j]), X = r.useCallback(e => {
                     j && !e && q(!1)
-                }, [q, j]), Z = (0, h.useIsVisible)(X), Q = r.useCallback(e => {
+                }, [q, j]), Q = (0, h.useIsVisible)(X), Z = r.useCallback(e => {
                     if (w(e), G) {
                         var t;
                         null === (t = W.current) || void 0 === t || t.focus()
@@ -10497,7 +10497,7 @@
                             isSelected: k,
                             closePopout: n,
                             buttonHeight: null != z ? z : 0,
-                            onSelect: Q,
+                            onSelect: Z,
                             options: t,
                             serialize: x,
                             renderOptionLabel: N,
@@ -10521,7 +10521,7 @@
                             role: "button",
                             "aria-disabled": o,
                             innerRef: e => {
-                                W.current = e, Z.current = e
+                                W.current = e, Q.current = e
                             },
                             onClick: o ? void 0 : e => {
                                 r(e), q(!j)
@@ -14096,19 +14096,19 @@
                     return X.MasonryListScrollerProps
                 },
                 MasonryListAuto: function() {
-                    return Z.MasonryListAuto
+                    return Q.MasonryListAuto
                 },
                 MasonryListThin: function() {
-                    return Z.MasonryListThin
+                    return Q.MasonryListThin
                 },
                 MasonryList: function() {
-                    return Z.MasonryListThin
+                    return Q.MasonryListThin
                 },
                 Menu: function() {
-                    return Q.Menu
+                    return Z.Menu
                 },
                 MenuSpinner: function() {
-                    return Q.MenuSpinner
+                    return Z.MenuSpinner
                 },
                 MenuSeparator: function() {
                     return J.MenuSeparator
@@ -14453,19 +14453,19 @@
                     return eX.ToastPosition
                 },
                 ToastContainer: function() {
-                    return eZ.ToastContainer
+                    return eQ.ToastContainer
                 },
                 Tooltip: function() {
-                    return eQ.Tooltip
+                    return eZ.Tooltip
                 },
                 TooltipContainer: function() {
-                    return eQ.TooltipContainer
+                    return eZ.TooltipContainer
                 },
                 TooltipColors: function() {
-                    return eQ.TooltipColors
+                    return eZ.TooltipColors
                 },
                 TooltipLayer: function() {
-                    return eQ.TooltipLayer
+                    return eZ.TooltipLayer
                 },
                 tokens: function() {
                     return eJ.default
@@ -14566,8 +14566,8 @@
                 z = n("73643"),
                 q = n("433600"),
                 X = n("304549"),
-                Z = n("384704"),
-                Q = n("71096"),
+                Q = n("384704"),
+                Z = n("71096"),
                 J = n("155823"),
                 $ = n("916528"),
                 ee = n("404417"),
@@ -14620,8 +14620,8 @@
                 ez = n("35672"),
                 eq = n("325236"),
                 eX = n("159350"),
-                eZ = n("371557"),
-                eQ = n("414055"),
+                eQ = n("371557"),
+                eZ = n("414055"),
                 eJ = n("669491"),
                 e$ = n("708253"),
                 e0 = n("685639"),
@@ -19361,10 +19361,10 @@
                     return X
                 },
                 EMBEDDED_ACTIVITY_SURVEY_URL: function() {
-                    return Z
+                    return Q
                 },
                 ImageSizes: function() {
-                    return Q
+                    return Z
                 },
                 STAFF_RELEASE_PHASES: function() {
                     return J
@@ -19440,8 +19440,8 @@
                 z = "1037680572660727838",
                 q = "945737671223947305",
                 X = "1011683823555199066",
-                Z = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-                Q = {
+                Q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                Z = {
                     SMALL: 64,
                     LARGE: 160
                 },
@@ -21485,103 +21485,100 @@
         80028: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                ClipsQualitySettings: function() {
-                    return a
-                },
                 ClipsLengthSettings: function() {
-                    return o
+                    return s
                 },
                 ClipsViewerConnectivitySettings: function() {
-                    return l
+                    return a
                 },
                 DEFAULT_KEYBIND: function() {
-                    return d
+                    return u
                 },
                 CLIPS_TOAST_DURATION: function() {
-                    return f
+                    return c
                 },
                 ClipsLogger: function() {
-                    return E
+                    return d
                 },
                 CLIPS_EXPORT_FILENAME: function() {
-                    return h
+                    return f
                 },
                 CURRENT_CLIP_METADATA_VERSION: function() {
-                    return p
+                    return E
                 },
                 CLIPS_HARDWARE_CLASSIFICATION_VERSION: function() {
-                    return _
+                    return h
                 },
                 WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: function() {
-                    return S
+                    return p
                 },
                 WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: function() {
-                    return m
+                    return _
                 },
                 OSX_HARDWARE_AUTO_ENABLE_GPU_REGEX: function() {
-                    return T
+                    return S
                 },
                 MIN_CLIP_DURATION_SECONDS: function() {
-                    return g
+                    return m
                 },
                 CLIP_PLAYING_DEBOUNCE_MS: function() {
-                    return I
+                    return T
                 },
                 CLIP_NAME_MIN_CHAR_LENGTH: function() {
-                    return C
+                    return g
                 },
                 CLIP_NAME_MAX_CHAR_LENGTH: function() {
-                    return v
+                    return I
                 },
                 CLIPS_EDIT_MODAL_KEY: function() {
-                    return A
+                    return C
                 },
                 CLIPS_GALLERY_MODAL_KEY: function() {
-                    return R
+                    return v
                 },
                 CLIPS_THUMBNAIL_MAX_WIDTH: function() {
-                    return N
+                    return A
                 },
                 CLIPS_THUMBNAIL_MAX_HEIGHT: function() {
-                    return O
+                    return R
                 },
                 CLIPS_MAX_PARTICIPANTS: function() {
-                    return D
+                    return N
                 },
                 CLIP_NAME_TEMPLATE: function() {
-                    return y
+                    return O
                 },
                 MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: function() {
-                    return P
+                    return D
                 },
                 CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY: function() {
-                    return L
+                    return y
                 }
             });
-            var i, r, s, a, o, l, u = n("605250"),
-                c = n("718517");
-            (i = a || (a = {}))[i.DEFAULT = 0] = "DEFAULT", (r = o || (o = {}))[r.SECONDS_30 = 30 * c.default.Millis.SECOND] = "SECONDS_30", r[r.MINUTES_1 = c.default.Millis.MINUTE] = "MINUTES_1", r[r.MINUTES_2 = 2 * c.default.Millis.MINUTE] = "MINUTES_2", (s = l || (l = {}))[s.ALL = 0] = "ALL", s[s.FRIENDS = 1] = "FRIENDS";
-            let d = "alt+c",
-                f = 6 * c.default.Millis.SECOND,
-                E = new u.default("Clips"),
-                h = e => "Discord_Clip_".concat(e, ".mp4"),
-                p = 2,
-                _ = 1,
-                S = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
-                m = /(NVIDIA GeForce (RTX (20|30|40).*))|(.*Radeon RX (57|58|59|6|7).*)/,
-                T = /(Apple M[12].*)/,
-                g = .1,
-                I = 25,
-                C = 0,
-                v = 200,
-                A = "clips-edit",
-                R = "clips-gallery",
-                N = 640,
-                O = 360,
-                D = 100,
-                y = e => "Clip - ".concat(new Date(e).toLocaleString()),
-                P = 15,
-                L = 15e3
+            var i, r, s, a, o = n("605250"),
+                l = n("718517");
+            (i = s || (s = {}))[i.SECONDS_30 = 30 * l.default.Millis.SECOND] = "SECONDS_30", i[i.MINUTES_1 = l.default.Millis.MINUTE] = "MINUTES_1", i[i.MINUTES_2 = 2 * l.default.Millis.MINUTE] = "MINUTES_2", (r = a || (a = {}))[r.ALL = 0] = "ALL", r[r.FRIENDS = 1] = "FRIENDS";
+            let u = "alt+c",
+                c = 6 * l.default.Millis.SECOND,
+                d = new o.default("Clips"),
+                f = e => "Discord_Clip_".concat(e, ".mp4"),
+                E = 2,
+                h = 1,
+                p = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
+                _ = /(NVIDIA GeForce (RTX (20|30|40).*))|(.*Radeon RX (57|58|59|6|7).*)/,
+                S = /(Apple M[12].*)/,
+                m = .1,
+                T = 25,
+                g = 0,
+                I = 200,
+                C = "clips-edit",
+                v = "clips-gallery",
+                A = 640,
+                R = 360,
+                N = 100,
+                O = e => "Clip - ".concat(new Date(e).toLocaleString()),
+                D = 15,
+                y = 15e3
         },
         56947: function(e, t, n) {
             "use strict";
@@ -21747,7 +21744,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return O
                 }
             }), n("222007"), n("702976");
             var i = n("446674"),
@@ -21760,95 +21757,99 @@
                 c = n("568734"),
                 d = n("30591"),
                 f = n("80028"),
-                E = n("49111");
-            let h = "default",
-                p = [],
+                E = n("49111"),
+                h = n("686298");
+            let p = "default",
                 _ = [],
-                S = 0,
-                m = null,
+                S = [],
+                m = 0,
                 T = null,
-                g = {},
-                I = {
+                g = null,
+                I = {},
+                C = {
                     clipsEnabled: !1,
-                    storageLocation: h,
-                    clipsQuality: f.ClipsQualitySettings.DEFAULT,
+                    storageLocation: p,
+                    clipsQuality: {
+                        resolution: h.ApplicationStreamResolutions.RESOLUTION_1080,
+                        frameRate: h.ApplicationStreamFPS.FPS_30
+                    },
                     clipsLength: f.ClipsLengthSettings.SECONDS_30,
                     decoupledClipsEnabled: !1,
                     viewerClipsEnabled: !0,
                     viewerConnectivity: f.ClipsViewerConnectivitySettings.ALL
                 },
-                C = {
-                    clipsSettings: I,
+                v = {
+                    clipsSettings: C,
                     hardwareClassification: null,
                     hardwareClassificationForDecoupled: null,
                     hardwareClassificationVersion: 0,
                     newClipIds: [],
                     hasClips: !1
                 };
-            async function v() {
-                if (C.clipsSettings.storageLocation !== h || null == s.default || null == s.default.remoteApp) return;
+            async function A() {
+                if (v.clipsSettings.storageLocation !== p || null == s.default || null == s.default.remoteApp) return;
                 let e = await s.default.remoteApp.getPath("documents");
-                C.clipsSettings.storageLocation = e, R.emitChange()
+                v.clipsSettings.storageLocation = e, N.emitChange()
             }
-            class A extends i.default.DeviceSettingsStore {
+            class R extends i.default.DeviceSettingsStore {
                 initialize(e) {
-                    null != e && (C = e), v(), this.waitFor(u.default)
+                    null != e && (v = e), A(), this.waitFor(u.default)
                 }
                 getClips() {
-                    return p
-                }
-                getPendingClips() {
                     return _
                 }
+                getPendingClips() {
+                    return S
+                }
                 getUserAgnosticState() {
-                    return C
+                    return v
                 }
                 getSettings() {
-                    return C.clipsSettings
+                    return v.clipsSettings
                 }
                 getLastClipsSession() {
-                    return T
+                    return g
                 }
                 getClipsWarningShown(e) {
-                    return m === e
+                    return T === e
                 }
                 getHardwareClassification() {
-                    return C.hardwareClassification
+                    return v.hardwareClassification
                 }
                 getHardwareClassificationForDecoupled() {
-                    return C.hardwareClassificationForDecoupled
+                    return v.hardwareClassificationForDecoupled
                 }
                 getHardwareClassificationVersion() {
-                    return C.hardwareClassificationVersion
+                    return v.hardwareClassificationVersion
                 }
                 getIsAtMaxSaveClipOperations() {
-                    return S >= f.MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS
+                    return m >= f.MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS
                 }
                 isClipsEnabledForUser(e) {
                     var t, n;
-                    return null !== (n = null === (t = g[e]) || void 0 === t ? void 0 : t.clipsEnabled) && void 0 !== n && n
+                    return null !== (n = null === (t = I[e]) || void 0 === t ? void 0 : t.clipsEnabled) && void 0 !== n && n
                 }
                 isVoiceRecordingAllowedForUser(e) {
                     var t, n;
-                    return null !== (n = null === (t = g[e]) || void 0 === t ? void 0 : t.allowVoiceRecording) && void 0 !== n && n
+                    return null !== (n = null === (t = I[e]) || void 0 === t ? void 0 : t.allowVoiceRecording) && void 0 !== n && n
                 }
                 isViewerClippingAllowedForUser(e) {
                     var t, n;
-                    return null !== (n = null === (t = g[e]) || void 0 === t ? void 0 : t.allowAnyViewerClips) && void 0 !== n && n
+                    return null !== (n = null === (t = I[e]) || void 0 === t ? void 0 : t.allowAnyViewerClips) && void 0 !== n && n
                 }
                 hasClips() {
-                    return C.hasClips
+                    return v.hasClips
                 }
                 getNewClipIds() {
-                    return C.newClipIds
+                    return v.newClipIds
                 }
             }
-            A.displayName = "ClipsStore", A.persistKey = "ClipsStore", A.migrations = [e => ({
-                clipsSettings: null != e ? e : I,
+            R.displayName = "ClipsStore", R.persistKey = "ClipsStore", R.migrations = [e => ({
+                clipsSettings: null != e ? e : C,
                 newClipsCount: 0
             }), e => {
                 let t = {
-                    ...I,
+                    ...C,
                     ...e.clipsSettings
                 };
                 return {
@@ -21878,7 +21879,7 @@
                 ...e,
                 clipsSettings: {
                     ...e.clipsSettings,
-                    decoupledClipsEnabled: I.decoupledClipsEnabled
+                    decoupledClipsEnabled: C.decoupledClipsEnabled
                 }
             }), e => {
                 var t;
@@ -21903,16 +21904,22 @@
                     newClipIds: null !== (t = e.newClipIds) && void 0 !== t ? t : [],
                     newClipIDs: void 0
                 }
-            }];
-            let R = new A(r.default, {
+            }, e => ({
+                ...e,
+                clipsSettings: {
+                    ...e.clipsSettings,
+                    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? C.clipsQuality : e.clipsSettings.clipsQuality
+                }
+            })];
+            let N = new R(r.default, {
                 CLIPS_SETTINGS_UPDATE: function(e) {
                     let {
                         settings: t
                     } = e;
-                    C = {
-                        ...C,
+                    v = {
+                        ...v,
                         clipsSettings: {
-                            ...C.clipsSettings,
+                            ...v.clipsSettings,
                             ...t
                         }
                     }
@@ -21922,32 +21929,32 @@
                     let {
                         clip: i
                     } = e;
-                    S = Math.max(S - 1, 0), T = {
+                    m = Math.max(m - 1, 0), g = {
                         applicationName: i.applicationName,
                         ended: !1,
-                        ...T,
-                        newClipIds: [...null !== (t = null == T ? void 0 : T.newClipIds) && void 0 !== t ? t : [], i.id]
-                    }, C = {
-                        ...C,
-                        newClipIds: [...null !== (n = C.newClipIds) && void 0 !== n ? n : [], i.id]
-                    }, _ = _.filter(e => {
+                        ...g,
+                        newClipIds: [...null !== (t = null == g ? void 0 : g.newClipIds) && void 0 !== t ? t : [], i.id]
+                    }, v = {
+                        ...v,
+                        newClipIds: [...null !== (n = v.newClipIds) && void 0 !== n ? n : [], i.id]
+                    }, S = S.filter(e => {
                         let {
                             id: t
                         } = e;
                         return t !== i.id
-                    }), p = [i, ...p], C.hasClips = !0
+                    }), _ = [i, ..._], v.hasClips = !0
                 },
                 CLIPS_SAVE_CLIP_PLACEHOLDER: function(e) {
                     let {
                         clip: t
                     } = e;
-                    _ = [t, ..._]
+                    S = [t, ...S]
                 },
                 CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: function(e) {
                     let {
                         clipId: t
                     } = e;
-                    _ = _.filter(e => {
+                    S = S.filter(e => {
                         let {
                             id: n
                         } = e;
@@ -21955,17 +21962,17 @@
                     })
                 },
                 CLIPS_SAVE_CLIP_START: function() {
-                    S += 1
+                    m += 1
                 },
                 CLIPS_SAVE_CLIP_ERROR: function() {
-                    S = Math.max(S - 1, 0)
+                    m = Math.max(m - 1, 0)
                 },
                 STREAM_START: function(e) {
                     let {
                         sourceName: t,
                         pid: n
                     } = e;
-                    if (!C.clipsSettings.clipsEnabled) return !1;
+                    if (!v.clipsSettings.clipsEnabled) return !1;
                     let i = t;
                     if (null != n) {
                         var r;
@@ -21973,7 +21980,7 @@
                         i = null !== (r = null == e ? void 0 : e.name) && void 0 !== r ? r : i
                     }
                     if (null == i || "" === i) return !1;
-                    T = {
+                    g = {
                         applicationName: i,
                         newClipIds: [],
                         ended: !1
@@ -21983,42 +21990,42 @@
                     let {
                         streamKey: t
                     } = e;
-                    if (null == T || (0, a.decodeStreamKey)(t).ownerId !== o.default.getId()) return !1;
-                    T = 0 === T.newClipIds.length ? null : {
-                        ...T,
+                    if (null == g || (0, a.decodeStreamKey)(t).ownerId !== o.default.getId()) return !1;
+                    g = 0 === g.newClipIds.length ? null : {
+                        ...g,
                         ended: !0
                     }
                 },
                 CLIPS_CLEAR_CLIPS_SESSION: function() {
-                    if (null == T) return !1;
-                    T = null
+                    if (null == g) return !1;
+                    g = null
                 },
                 CLIPS_CLEAR_NEW_CLIP_IDS: function() {
-                    C.newClipIds = []
+                    v.newClipIds = []
                 },
                 CLIPS_LOAD_DIRECTORY_SUCCESS: function(e) {
-                    C.hasClips = e.clips.length > 0, p = e.clips
+                    v.hasClips = e.clips.length > 0, _ = e.clips
                 },
                 CLIPS_DELETE_CLIP: function(e) {
-                    0 === (p = p.filter(t => {
+                    0 === (_ = _.filter(t => {
                         let {
                             filepath: n
                         } = t;
                         return n !== e.filepath
-                    })).length && (C.hasClips = !1)
+                    })).length && (v.hasClips = !1)
                 },
                 CLIPS_UPDATE_METADATA: function(e) {
                     let {
                         clip: t
                     } = e;
-                    for (let [e, n] of p.entries())
+                    for (let [e, n] of _.entries())
                         if (n.id === t.id) {
-                            p[e] = t, p = [...p];
+                            _[e] = t, _ = [..._];
                             return
                         }
                 },
                 RTC_CONNECTION_FLAGS: function(e) {
-                    g[e.userId] = {
+                    I[e.userId] = {
                         clipsEnabled: (0, c.hasFlag)(e.flags, E.VoiceFlags.CLIPS_ENABLED),
                         allowVoiceRecording: (0, c.hasFlag)(e.flags, E.VoiceFlags.ALLOW_VOICE_RECORDING),
                         allowAnyViewerClips: (0, c.hasFlag)(e.flags, E.VoiceFlags.ALLOW_ANY_VIEWER_CLIPS)
@@ -22028,35 +22035,35 @@
                     let {
                         channelId: t
                     } = e;
-                    m = t
+                    T = t
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    t !== m && (m = null)
+                    t !== T && (T = null)
                 },
                 CLIPS_CLASSIFY_HARDWARE: function(e) {
                     let {
                         classification: t
-                    } = e, n = C.hardwareClassification;
-                    C.hardwareClassificationVersion = f.CLIPS_HARDWARE_CLASSIFICATION_VERSION, C.hardwareClassification = t, C.hardwareClassification === d.ClipsHardwareClassification.MEETS_AUTO_ENABLE && n !== d.ClipsHardwareClassification.MEETS_AUTO_ENABLE && (C.clipsSettings.clipsEnabled = !0);
-                    let i = C.hardwareClassificationForDecoupled;
-                    C.hardwareClassificationForDecoupled = t, C.hardwareClassificationForDecoupled === d.ClipsHardwareClassification.MEETS_AUTO_ENABLE && i !== d.ClipsHardwareClassification.MEETS_AUTO_ENABLE && C.clipsSettings.clipsEnabled && (C.clipsSettings.decoupledClipsEnabled = !0)
+                    } = e, n = v.hardwareClassification;
+                    v.hardwareClassificationVersion = f.CLIPS_HARDWARE_CLASSIFICATION_VERSION, v.hardwareClassification = t, v.hardwareClassification === d.ClipsHardwareClassification.MEETS_AUTO_ENABLE && n !== d.ClipsHardwareClassification.MEETS_AUTO_ENABLE && (v.clipsSettings.clipsEnabled = !0);
+                    let i = v.hardwareClassificationForDecoupled;
+                    v.hardwareClassificationForDecoupled = t, v.hardwareClassificationForDecoupled === d.ClipsHardwareClassification.MEETS_AUTO_ENABLE && i !== d.ClipsHardwareClassification.MEETS_AUTO_ENABLE && v.clipsSettings.clipsEnabled && (v.clipsSettings.decoupledClipsEnabled = !0)
                 },
                 CLIPS_INIT: function(e) {
                     let {
                         applicationName: t
                     } = e;
-                    if (!C.clipsSettings.clipsEnabled) return !1;
-                    T = {
+                    if (!v.clipsSettings.clipsEnabled) return !1;
+                    g = {
                         applicationName: t,
                         newClipIds: [],
                         ended: !1
                     }
                 }
             });
-            var N = R
+            var O = N
         },
         30591: function(e, t, n) {
             "use strict";
@@ -23884,11 +23891,11 @@
                 !L && k(n) && (L = !0), I = t.hasLoadedExperiments, C = t.trackedExposureExperiments, N = t.loadedUserExperiments, y = t.userExperimentOverrides, P = t.guildExperimentOverrides, O = q(t.loadedGuildExperiments), D = {}
             }
 
-            function Z() {
+            function Q() {
                 I = !0
             }
 
-            function Q(e) {
+            function Z(e) {
                 let {
                     isSwitchingAccount: t
                 } = e;
@@ -24188,13 +24195,13 @@
                         let e = this.readSnapshot(er.LATEST_SNAPSHOT_VERSION);
                         null != e && ("loadedUserExperiments" in e ? (N = e.loadedUserExperiments, O = q(e.loadedGuildExperiments)) : K(e.rawUserExperiments, e.rawGuildExperiments))
                     }, this.registerActionHandlers({
-                        LOGOUT: Q,
+                        LOGOUT: Z,
                         LOGIN_SUCCESS: J,
                         CONNECTION_OPEN: W,
                         EXPERIMENTS_FETCH_SUCCESS: W,
                         OVERLAY_INITIALIZE: X,
                         CACHE_LOADED: this.loadCache,
-                        EXPERIMENTS_FETCH_FAILURE: Z,
+                        EXPERIMENTS_FETCH_FAILURE: Q,
                         EXPERIMENT_REGISTER_LEGACY: et,
                         EXPERIMENT_OVERRIDE_BUCKET: en,
                         GUILD_CREATE: ei,
@@ -24980,6 +24987,199 @@
                 f = ">=10.0.22000";
             (r = a || (a = {})).GUILD = "guild", r.CALL = "call";
             let E = o.Notifications.StreamNotificationsGuildMaxSize
+        },
+        686298: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ApplicationStreamResolutions: function() {
+                    return i
+                },
+                getApplicationResolution: function() {
+                    return f
+                },
+                ApplicationStreamFPS: function() {
+                    return r
+                },
+                ApplicationStreamPresets: function() {
+                    return s
+                },
+                getApplicationFramerate: function() {
+                    return E
+                },
+                ApplicationStreamPresetValues: function() {
+                    return h
+                },
+                ApplicationStreamSettingRequirements: function() {
+                    return p
+                },
+                ApplicationStreamResolutionButtons: function() {
+                    return S
+                },
+                GoLiveDeviceResolutionButtons: function() {
+                    return m
+                },
+                ApplicationStreamResolutionButtonsWithSuffixLabel: function() {
+                    return g
+                },
+                ApplicationStreamFPSButtons: function() {
+                    return I
+                },
+                ApplicationStreamFPSButtonsWithSuffixLabel: function() {
+                    return C
+                }
+            }), n("70102");
+            var i, r, s, a, o, l, u = n("49111"),
+                c = n("646718"),
+                d = n("782340");
+
+            function f(e) {
+                switch (e) {
+                    case 480:
+                        return 480;
+                    case 720:
+                        return 720;
+                    case 1080:
+                        return 1080;
+                    case 0:
+                        return 0;
+                    default:
+                        throw Error("Unknown resolution: ".concat(e))
+                }
+            }
+
+            function E(e) {
+                switch (e) {
+                    case 5:
+                        return 5;
+                    case 15:
+                        return 15;
+                    case 30:
+                        return 30;
+                    case 60:
+                        return 60;
+                    default:
+                        throw Error("Unknown frame rate: ".concat(e))
+                }
+            }(a = i || (i = {}))[a.RESOLUTION_480 = 480] = "RESOLUTION_480", a[a.RESOLUTION_720 = 720] = "RESOLUTION_720", a[a.RESOLUTION_1080 = 1080] = "RESOLUTION_1080", a[a.RESOLUTION_1440 = 1440] = "RESOLUTION_1440", a[a.RESOLUTION_SOURCE = 0] = "RESOLUTION_SOURCE", (o = r || (r = {}))[o.FPS_5 = 5] = "FPS_5", o[o.FPS_15 = 15] = "FPS_15", o[o.FPS_30 = 30] = "FPS_30", o[o.FPS_60 = 60] = "FPS_60", (l = s || (s = {}))[l.PRESET_VIDEO = 1] = "PRESET_VIDEO", l[l.PRESET_DOCUMENTS = 2] = "PRESET_DOCUMENTS", l[l.PRESET_CUSTOM = 3] = "PRESET_CUSTOM";
+            let h = {
+                    2: [{
+                        resolution: 0,
+                        fps: 15
+                    }, {
+                        resolution: 0,
+                        fps: 5
+                    }],
+                    1: [{
+                        resolution: 1440,
+                        fps: 60
+                    }, {
+                        resolution: 1080,
+                        fps: 60
+                    }, {
+                        resolution: 720,
+                        fps: 60
+                    }, {
+                        resolution: 720,
+                        fps: 30
+                    }],
+                    3: []
+                },
+                p = [{
+                    resolution: 0,
+                    fps: 60,
+                    quality: c.StreamQualities.HIGH_STREAMING_QUALITY
+                }, {
+                    resolution: 0,
+                    fps: 30,
+                    quality: c.StreamQualities.HIGH_STREAMING_QUALITY
+                }, {
+                    resolution: 0,
+                    fps: 15,
+                    quality: c.StreamQualities.HIGH_STREAMING_QUALITY
+                }, {
+                    resolution: 0,
+                    fps: 5,
+                    preset: 2
+                }, {
+                    resolution: 1440,
+                    fps: 60,
+                    guildPremiumTier: u.BoostedGuildTiers.TIER_2,
+                    quality: c.StreamQualities.MID_STREAMING_QUALITY
+                }, {
+                    resolution: 1440,
+                    fps: 30,
+                    guildPremiumTier: u.BoostedGuildTiers.TIER_2,
+                    quality: c.StreamQualities.MID_STREAMING_QUALITY
+                }, {
+                    resolution: 1440,
+                    fps: 15,
+                    guildPremiumTier: u.BoostedGuildTiers.TIER_2,
+                    quality: c.StreamQualities.MID_STREAMING_QUALITY
+                }, {
+                    resolution: 1080,
+                    fps: 60,
+                    guildPremiumTier: u.BoostedGuildTiers.TIER_2,
+                    quality: c.StreamQualities.MID_STREAMING_QUALITY
+                }, {
+                    resolution: 1080,
+                    fps: 30,
+                    guildPremiumTier: u.BoostedGuildTiers.TIER_2,
+                    quality: c.StreamQualities.MID_STREAMING_QUALITY
+                }, {
+                    resolution: 1080,
+                    fps: 15,
+                    guildPremiumTier: u.BoostedGuildTiers.TIER_2,
+                    quality: c.StreamQualities.MID_STREAMING_QUALITY
+                }, {
+                    resolution: 720,
+                    fps: 60,
+                    guildPremiumTier: u.BoostedGuildTiers.TIER_1,
+                    quality: c.StreamQualities.MID_STREAMING_QUALITY
+                }, {
+                    resolution: 720,
+                    fps: 30
+                }, {
+                    resolution: 720,
+                    fps: 15
+                }, {
+                    resolution: 720,
+                    fps: 5
+                }, {
+                    resolution: 480,
+                    fps: 60,
+                    guildPremiumTier: u.BoostedGuildTiers.TIER_1,
+                    quality: c.StreamQualities.MID_STREAMING_QUALITY
+                }, {
+                    resolution: 480,
+                    fps: 30
+                }, {
+                    resolution: 480,
+                    fps: 15
+                }, {
+                    resolution: 480,
+                    fps: 5
+                }];
+
+            function _(e, t) {
+                return {
+                    value: e,
+                    get label() {
+                        return null != t ? t() : e
+                    }
+                }
+            }
+            let S = [_(720), _(1080), _(1440), _(0, () => d.default.Messages.SCREENSHARE_SOURCE)],
+                m = [_(720), _(1080), _(1440)],
+                T = e => "".concat(e, "p"),
+                g = [_(480, () => T(480)), _(720, () => T(720)), _(1080, () => T(1080)), _(1440, () => T(1440)), _(0, () => d.default.Messages.SCREENSHARE_SOURCE)],
+                I = [_(15), _(30), _(60)],
+                C = [_(15, () => d.default.Messages.STREAM_FPS_OPTION.format({
+                    value: 15
+                })), _(30, () => d.default.Messages.STREAM_FPS_OPTION.format({
+                    value: 30
+                })), _(60, () => d.default.Messages.STREAM_FPS_OPTION.format({
+                    value: 60
+                }))]
         },
         374014: function(e, t, n) {
             "use strict";
@@ -29999,13 +30199,13 @@
                     return X
                 },
                 PREMIUM_SKU_TO_YEARLY_PLAN: function() {
-                    return Z
+                    return Q
                 },
                 SubscriptionIntervalTypes: function() {
                     return a
                 },
                 SubscriptionPlanInfo: function() {
-                    return Q
+                    return Z
                 },
                 GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: function() {
                     return J
@@ -30182,7 +30382,7 @@
                     "590663762298667008": void 0,
                     "521842865731534868": void 0
                 }),
-                Z = Object.freeze({
+                Q = Object.freeze({
                     "978380684370378762": "1024422698568122368",
                     "521846918637420545": "511651876987469824",
                     "521847234246082599": "511651885459963904",
@@ -30191,7 +30391,7 @@
                     "521842865731534868": void 0
                 });
             (I = a || (a = {}))[I.MONTH = 1] = "MONTH", I[I.YEAR = 2] = "YEAR", I[I.DAY = 3] = "DAY";
-            let Q = Object.freeze({
+            let Z = Object.freeze({
                     "628379151761408000": {
                         id: "628379151761408000",
                         name: "None Monthly",
@@ -32554,11 +32754,11 @@
                 }), t
             }
 
-            function Z(e) {
+            function Q(e) {
                 return null == e ? {} : r.reduce(e, (e, t) => (e[t.id] = t.nick, e), {})
             }
 
-            function Q(e) {
+            function Z(e) {
                 return null == e ? [] : e.map(e => ({
                     id: e.id,
                     name: e.name,
@@ -32770,7 +32970,7 @@
                     let s = {
                         application_id: e.application_id,
                         appliedTags: e.applied_tags,
-                        availableTags: null != e.available_tags ? Q(e.available_tags) : void 0,
+                        availableTags: null != e.available_tags ? Z(e.available_tags) : void 0,
                         bitrate_: e.bitrate,
                         defaultAutoArchiveDuration: e.default_auto_archive_duration,
                         defaultForumLayout: e.default_forum_layout,
@@ -32801,7 +33001,7 @@
                         memberListId: e.member_list_id,
                         messageCount: e.message_count,
                         name: null !== (i = e.name) && void 0 !== i ? i : "",
-                        nicks: Z(e.nicks),
+                        nicks: Q(e.nicks),
                         nsfw_: e.nsfw,
                         originChannelId: e.origin_channel_id,
                         ownerId: e.owner_id,
@@ -32908,7 +33108,7 @@
                 static fromServer(e, t) {
                     var n, i, r, s;
                     let a = {
-                        availableTags: null != e.available_tags ? Q(e.available_tags) : [],
+                        availableTags: null != e.available_tags ? Z(e.available_tags) : [],
                         defaultAutoArchiveDuration: e.default_auto_archive_duration,
                         defaultForumLayout: e.default_forum_layout,
                         defaultReactionEmoji: null != e.default_reaction_emoji ? {
@@ -32958,7 +33158,7 @@
                         lastMessageId: e.last_message_id,
                         lastPinTimestamp: e.last_pin_timestamp,
                         name: null !== (n = e.name) && void 0 !== n ? n : "",
-                        nicks: Z(e.nicks),
+                        nicks: Q(e.nicks),
                         ownerId: e.owner_id,
                         rawRecipients: null != e.recipients ? e.recipients : [],
                         recipients: null != e.recipients ? e.recipients.map(e => e.id) : [],
@@ -34333,8 +34533,8 @@
                 z = !1,
                 q = !1,
                 X = {},
-                Z = {},
-                Q = null,
+                Q = {},
+                Z = null,
                 J = null,
                 $ = null;
 
@@ -34415,7 +34615,7 @@
                 ee("handleLogout called."), es(), ei(), !(null == e ? void 0 : e.isSwitchingAccount) && et(), u.default.PersistedStore.clearAll({
                     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
                     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-                }), C.default.clearAll(), h.clear(), g.default.clearUser(), d.default.remove(y), P = null, k = (null == e ? void 0 : e.isSwitchingAccount) ? v.LoginStates.LOGGING_IN : v.LoginStates.NONE, x = v.RegistrationStates.NONE, B = "", K = "", j = null, H = !1, z = !1, q = !1, X = {}, Z = {}
+                }), C.default.clearAll(), h.clear(), g.default.clearUser(), d.default.remove(y), P = null, k = (null == e ? void 0 : e.isSwitchingAccount) ? v.LoginStates.LOGGING_IN : v.LoginStates.NONE, x = v.RegistrationStates.NONE, B = "", K = "", j = null, H = !1, z = !1, q = !1, X = {}, Q = {}
             }
             class el extends u.default.Store {
                 initialize() {
@@ -34464,7 +34664,7 @@
                     return w
                 }
                 getErrors() {
-                    return Z
+                    return Q
                 }
                 getMFATicket() {
                     return B
@@ -34512,7 +34712,7 @@
                     return i
                 }
                 getVerifyingUserId() {
-                    return Q
+                    return Z
                 }
                 getCurrentRegistrationOptions() {
                     return r
@@ -34568,7 +34768,7 @@
                     null != t && (M = t)
                 },
                 LOGIN: function(e) {
-                    Z = {}, k = v.LoginStates.LOGGING_IN, K = "", r = null, null != e.login && ($ = e.login)
+                    Q = {}, k = v.LoginStates.LOGGING_IN, K = "", r = null, null != e.login && ($ = e.login)
                 },
                 LOGIN_SUCCESS: function(e) {
                     let {
@@ -34580,7 +34780,7 @@
                     let {
                         error: t
                     } = e;
-                    B = "", H = !1, j = null, k = null != (Z = function(e) {
+                    B = "", H = !1, j = null, k = null != (Q = function(e) {
                         if (Object.keys(e.fields).length > 0) return e.fields;
                         let t = {
                             message: e.message
@@ -34596,7 +34796,7 @@
                         backup: r,
                         totp: s
                     } = e;
-                    null != t && (B = t, H = n, K = "", j = null != i ? i : null, W = r, Y = s), Z = {}, k = v.LoginStates.MFA_STEP
+                    null != t && (B = t, H = n, K = "", j = null != i ? i : null, W = r, Y = s), Q = {}, k = v.LoginStates.MFA_STEP
                 },
                 LOGIN_MFA: function() {
                     k = v.LoginStates.LOGGING_IN_MFA
@@ -34605,7 +34805,7 @@
                     let {
                         message: t
                     } = e;
-                    k = v.LoginStates.MFA_STEP, Z = {
+                    k = v.LoginStates.MFA_STEP, Q = {
                         code: t
                     }
                 },
@@ -34622,7 +34822,7 @@
                     let {
                         message: t
                     } = e;
-                    k = v.LoginStates.MFA_SMS_STEP, Z = {
+                    k = v.LoginStates.MFA_SMS_STEP, Q = {
                         code: t
                     }
                 },
@@ -34642,7 +34842,7 @@
                     let {
                         isMultiAccount: t
                     } = e;
-                    Z = {}, k = v.LoginStates.NONE, B = "", H = !1, j = null, r = null, i = null, !t && (es(), et(!1))
+                    Q = {}, k = v.LoginStates.NONE, B = "", H = !1, j = null, r = null, i = null, !t && (es(), et(!1))
                 },
                 LOGIN_STATUS_RESET: function() {
                     k = v.LoginStates.NONE
@@ -34678,7 +34878,7 @@
                     let {
                         birthday: t
                     } = e;
-                    Z = {}, null != t && (a(null != r, "Got birthday in multistep registration without existing form"), r = {
+                    Q = {}, null != t && (a(null != r, "Got birthday in multistep registration without existing form"), r = {
                         ...r,
                         birthday: t
                     }), x = v.RegistrationStates.REGISTERING
@@ -34693,7 +34893,7 @@
                     let {
                         error: t
                     } = e;
-                    Z = function(e) {
+                    Q = function(e) {
                         let t = {};
                         if (t.error_code = e.code, null != e.errors) {
                             for (let n of Object.keys(e.errors)) t[n] = [e.getFirstFieldErrorMessage(n)];
@@ -34709,17 +34909,17 @@
                     z = !0, q = !1, X = null != t ? t : {}
                 },
                 VERIFY_SUCCESS: function(e) {
-                    q = !0, z = !1, X = {}, Q = e.verifyingUserId
+                    q = !0, z = !1, X = {}, Z = e.verifyingUserId
                 },
                 START_SESSION: function() {
-                    if (0 === Object.keys(Z).length) return !1;
-                    Z = {}
+                    if (0 === Object.keys(Q).length) return !1;
+                    Q = {}
                 },
                 FORGOT_PASSWORD_REQUEST: function() {
-                    k = v.LoginStates.FORGOT_PASSWORD, Z = {}
+                    k = v.LoginStates.FORGOT_PASSWORD, Q = {}
                 },
                 FORGOT_PASSWORD_SENT: function() {
-                    k = v.LoginStates.NONE, Z = {}
+                    k = v.LoginStates.NONE, Q = {}
                 },
                 UPDATE_TOKEN: function(e) {
                     let {
@@ -34737,7 +34937,7 @@
                 },
                 AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: ea,
                 CLEAR_AUTHENTICATION_ERRORS: function() {
-                    Z = {}
+                    Q = {}
                 }
             }, f.DispatchBand.Early)
         },
@@ -35035,7 +35235,7 @@
                     for (let t of (F(e.id), M.delete(e.id), f.default.restored(e.id), e.channels)) W(t);
                 if (null != e.channelUpdates) {
                     let t = e.channelUpdates;
-                    for (let n of ((t.writes.length > 0 || t.deletes.length > 0) && f.default.invalidate(e.id), t.deletes)) Q(A[n]);
+                    for (let n of ((t.writes.length > 0 || t.deletes.length > 0) && f.default.invalidate(e.id), t.deletes)) Z(A[n]);
                     for (let e of t.writes) W(e)
                 }
                 if (null != e.threads)
@@ -35065,7 +35265,7 @@
                 H(t)
             }
 
-            function Z(e) {
+            function Q(e) {
                 let {
                     threads: t
                 } = e;
@@ -35074,7 +35274,7 @@
                 })
             }
 
-            function Q(e) {
+            function Z(e) {
                 if (null == e) return;
                 let t = e.guild_id;
                 e.id in N && delete N[e.id], e.id in A && delete A[e.id], e.id in D && delete D[e.id], null != t && null != R[t] && e.id in R[t] && delete R[t][e.id], ! function(e) {
@@ -35092,7 +35292,7 @@
                     channel: i
                 } = e, r = null !== (n = null !== (t = A[i.id]) && void 0 !== t ? t : N[i.id]) && void 0 !== n ? n : D[i.id];
                 if (null == r) return !1;
-                Q(r), ! function(e) {
+                Z(r), ! function(e) {
                     if ("basicPermissions" in e || e.type !== I.ChannelTypes.DM) return;
                     let t = e.getRecipientId(),
                         n = y[t];
@@ -35191,7 +35391,7 @@
                             var t, i;
                             r.forEach(n[e.id], W);
                             let s = null !== (i = e.partial_updates.deleted_channel_ids) && void 0 !== i ? i : [];
-                            s.length > 0 && (k(e.id, 1, "handleBackgroundSync"), s.forEach(e => Q(A[e]))), null === (t = e.partial_updates.channels) || void 0 === t || t.forEach(t => W((0, S.createChannelRecordFromServer)(t, e.id)))
+                            s.length > 0 && (k(e.id, 1, "handleBackgroundSync"), s.forEach(e => Z(A[e]))), null === (t = e.partial_updates.channels) || void 0 === t || t.forEach(t => W((0, S.createChannelRecordFromServer)(t, e.id)))
                         } else F(e.id), M.delete(e.id), f.default.restored(e.id), e.channels.forEach(t => W((0, S.createChannelRecordFromServer)(t, e.id)))
                     })
                 },
@@ -35248,10 +35448,10 @@
                     for (let e of i) !(e.id in D) && S.ALL_CHANNEL_TYPES.has(e.type) && (Y((0, S.createChannelRecordFromServer)(e)), n = !0);
                     return n
                 },
-                LOAD_ARCHIVED_THREADS_SUCCESS: Z,
+                LOAD_ARCHIVED_THREADS_SUCCESS: Q,
                 LOAD_MESSAGES_AROUND_SUCCESS: $,
                 LOAD_MESSAGES_SUCCESS: $,
-                LOAD_THREADS_SUCCESS: Z,
+                LOAD_THREADS_SUCCESS: Q,
                 LOGOUT: function() {
                     z()
                 },
@@ -37711,8 +37911,8 @@
                 z = n("891760"),
                 q = n("374363"),
                 X = n("599110"),
-                Z = n("922932"),
-                Q = n("773336"),
+                Q = n("922932"),
+                Z = n("773336"),
                 J = n("286235"),
                 $ = n("50885"),
                 ee = n("13798"),
@@ -37744,7 +37944,7 @@
                     mode: ec.InputModes.VOICE_ACTIVITY,
                     modeOptions: {
                         threshold: -60,
-                        autoThreshold: Q.isPlatformEmbedded || __OVERLAY__,
+                        autoThreshold: Z.isPlatformEmbedded || __OVERLAY__,
                         vadUseKrisp: !0,
                         vadLeading: 5,
                         vadTrailing: 25,
@@ -37830,8 +38030,8 @@
                 showAuthorizationError: !1
             });
             let eX = new Set,
-                eZ = !1,
                 eQ = !1,
+                eZ = !1,
                 eJ = {},
                 e$ = {};
 
@@ -37871,7 +38071,7 @@
                 let r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eM,
                     a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
                     o = s;
-                if ((null == o ? void 0 : o.desktopSource) != null && o.desktopSource.id !== (null == a ? void 0 : null === (e = a.desktopSource) || void 0 === e ? void 0 : e.id) && (null != o.desktopSource.soundshareId && (0, Q.isWindows)() && v.cancelAttachToProcess(o.desktopSource.soundshareId), eg.setGoLiveSource(null, eR)), (null == o ? void 0 : o.cameraSource) != null && (o.cameraSource.videoDeviceGuid !== (null == a ? void 0 : null === (t = a.cameraSource) || void 0 === t ? void 0 : t.videoDeviceGuid) || o.cameraSource.audioDeviceGuid !== (null == a ? void 0 : null === (n = a.cameraSource) || void 0 === n ? void 0 : n.audioDeviceGuid)) && eg.setGoLiveSource(null, eR), (eM || r) && (eU = (eM = r) ? tr(eD, e0().videoDeviceId) : eh.DISABLED_DEVICE_ID, eg.setVideoInputDevice(eU)), s = a, null != a) {
+                if ((null == o ? void 0 : o.desktopSource) != null && o.desktopSource.id !== (null == a ? void 0 : null === (e = a.desktopSource) || void 0 === e ? void 0 : e.id) && (null != o.desktopSource.soundshareId && (0, Z.isWindows)() && v.cancelAttachToProcess(o.desktopSource.soundshareId), eg.setGoLiveSource(null, eR)), (null == o ? void 0 : o.cameraSource) != null && (o.cameraSource.videoDeviceGuid !== (null == a ? void 0 : null === (t = a.cameraSource) || void 0 === t ? void 0 : t.videoDeviceGuid) || o.cameraSource.audioDeviceGuid !== (null == a ? void 0 : null === (n = a.cameraSource) || void 0 === n ? void 0 : n.audioDeviceGuid)) && eg.setGoLiveSource(null, eR), (eM || r) && (eU = (eM = r) ? tr(eD, e0().videoDeviceId) : eh.DISABLED_DEVICE_ID, eg.setVideoInputDevice(eU)), s = a, null != a) {
                     let e = {
                         resolution: a.quality.resolution,
                         frameRate: a.quality.frameRate
@@ -37945,18 +38145,18 @@
             function e5(e) {
                 let t = e0(),
                     n = t.inputDeviceId;
-                if (e.setEchoCancellation(ei.default.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(ei.default.hasNoiseSuppression(n) || t.noiseSuppression), e.setAutomaticGainControl(ei.default.hasAutomaticGainControl(n) || t.automaticGainControl), e.setNoiseCancellation(t.noiseCancellation), (0, Q.isWeb)()) {
+                if (e.setEchoCancellation(ei.default.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(ei.default.hasNoiseSuppression(n) || t.noiseSuppression), e.setAutomaticGainControl(ei.default.hasAutomaticGainControl(n) || t.automaticGainControl), e.setNoiseCancellation(t.noiseCancellation), (0, Z.isWeb)()) {
                     let n = t.noiseCancellation ? -150 : -100;
                     e.setSilenceThreshold(n)
                 }
             }
 
             function e7() {
-                return (0, Q.isWindows)() && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.WINDOWS_GRAPHICS_CAPTURE_VERSION)
+                return (0, Z.isWindows)() && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.WINDOWS_GRAPHICS_CAPTURE_VERSION)
             }
 
             function e8(e) {
-                return !!((0, Q.isMac)() && eg.supports(eh.Features.SCREEN_CAPTURE_KIT) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.DARWIN_SCKIT_VERSION)) && F.default.getCurrentConfig({
+                return !!((0, Z.isMac)() && eg.supports(eh.Features.SCREEN_CAPTURE_KIT) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.DARWIN_SCKIT_VERSION)) && F.default.getCurrentConfig({
                     location: "screenCaptureKitEnabled"
                 }, {
                     autoTrackExposure: e
@@ -38074,9 +38274,9 @@
                     soundshareSession: ""
                 };
                 {
-                    let t = i.getExperimentalSoundshare() ? e : Z.default.getAudioPid(e),
+                    let t = i.getExperimentalSoundshare() ? e : Q.default.getAudioPid(e),
                         n = "";
-                    return null != t && (n = Z.default.generateSessionFromPid(t)), {
+                    return null != t && (n = Q.default.generateSessionFromPid(t)), {
                         soundshareId: t,
                         soundshareSession: n
                     }
@@ -38084,7 +38284,7 @@
             }
 
             function to(e, t) {
-                (0, Q.isWindows)() && v.attachToProcess(e, {
+                (0, Z.isWindows)() && v.attachToProcess(e, {
                     soundshare_session: t
                 }).then(t => {
                     null != t && !el.default.shouldContinueWithoutElevatedProcessForPID(e) && I.default.wait(() => {
@@ -38114,7 +38314,7 @@
                     i = ei.default.hasNoiseSuppression(t) || e.noiseSuppression,
                     r = ei.default.hasAutomaticGainControl(t) || e.automaticGainControl,
                     s = e.noiseCancellation;
-                eg.setLoopback(eQ, {
+                eg.setLoopback(eZ, {
                     echoCancellation: n,
                     noiseSuppression: i,
                     automaticGainControl: r,
@@ -38388,7 +38588,7 @@
                     }), eg.on(m.MediaEngineEvent.WatchdogTimeout, async () => {
                         let e;
                         try {
-                            await Z.default.submitLiveCrashReport({
+                            await Q.default.submitLiveCrashReport({
                                 message: {
                                     message: "Voice Watchdog Timeout"
                                 }
@@ -38430,15 +38630,15 @@
                                 if (h.defaultsDeep(e, eT()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, ee.toCombo)(e.modeOptions.shortcut)), null != e.modeOptions && 4 !== e.vadUseKrispSettingVersion && (e.vadUseKrispSettingVersion = 4, e.modeOptions.vadUseKrisp = !0), !e.qosMigrated && (e.qosMigrated = !0, e.qos = !1), !e.vadThrehsoldMigrated) {
                                     var t;
                                     e.vadThrehsoldMigrated = !0, (null === (t = e.modeOptions) || void 0 === t ? void 0 : t.threshold) === -40 && (e.modeOptions.threshold = -60)
-                                }(0, Q.isWeb)() ? 1 !== e.ncUseKrispjsSettingVersion && (e.ncUseKrispjsSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0): 1 !== e.ncUseKrispSettingVersion && (e.ncUseKrispSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0), 1 !== e.av1EnabledSettingVersion && (e.av1EnabledSettingVersion = 1, e.av1Enabled = !0)
+                                }(0, Z.isWeb)() ? 1 !== e.ncUseKrispjsSettingVersion && (e.ncUseKrispjsSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0): 1 !== e.ncUseKrispSettingVersion && (e.ncUseKrispSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0), 1 !== e.av1EnabledSettingVersion && (e.av1EnabledSettingVersion = 1, e.av1Enabled = !0)
                             }),
                             function() {
                                 let e = e0();
                                 eg.setAudioInputDevice(e.inputDeviceId), eg.setAudioOutputDevice(e.outputDeviceId), e3(), eg.setInputVolume(e.inputVolume), eg.setOutputVolume(e.outputVolume), eg.setH264Enabled(e.openH264), eg.setAv1Enabled(e.av1Enabled), eg.setAecDump(e.aecDumpEnabled)
                             }()
-                    }(), !(0, Q.isDesktop)() || __OVERLAY__ || eH || ej ? (0, Q.isWeb)() && eg.supports(eh.Features.NOISE_CANCELLATION) ? (ej = !0, i.emitChange()) : (0, Q.isWeb)() && te({
+                    }(), !(0, Z.isDesktop)() || __OVERLAY__ || eH || ej ? (0, Z.isWeb)() && eg.supports(eh.Features.NOISE_CANCELLATION) ? (ej = !0, i.emitChange()) : (0, Z.isWeb)() && te({
                         noiseCancellation: !1
-                    }) : (eH = !0, td()), (0, Q.isMac)() && eg.supports(eh.Features.SOUNDSHARE) ? eg.getSoundshareStatus().then(e => {
+                    }) : (eH = !0, td()), (0, Z.isMac)() && eg.supports(eh.Features.SOUNDSHARE) ? eg.getSoundshareStatus().then(e => {
                         tE(e)
                     }).catch(e => {
                         e_.warn("Failed to check if soundshare is enabled: ".concat(e))
@@ -38704,7 +38904,7 @@
                     return eV
                 }
                 getPacketDelay() {
-                    return Q.isPlatformEmbedded || this.getMode() !== ec.InputModes.VOICE_ACTIVITY ? 0 : this.getModeOptions().vadLeading
+                    return Z.isPlatformEmbedded || this.getMode() !== ec.InputModes.VOICE_ACTIVITY ? 0 : this.getModeOptions().vadLeading
                 }
                 setCanHavePriority(e, t) {
                     eg.eachConnection(n => n.setCanHavePriority(e, t))
@@ -38738,10 +38938,10 @@
                     return eK
                 }
                 supportsEnableSoundshare() {
-                    return (0, Q.isMac)() && eg.supports(eh.Features.SOUNDSHARE) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.DARWIN_SOUNDSHARE_VERSION) && !(_.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.DARWIN_SCKIT_AUDIO_VERSION) && e8(!1))
+                    return (0, Z.isMac)() && eg.supports(eh.Features.SOUNDSHARE) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.DARWIN_SOUNDSHARE_VERSION) && !(_.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.DARWIN_SCKIT_AUDIO_VERSION) && e8(!1))
                 }
                 supportsScreenSoundshare() {
-                    return (0, Q.isMac)() && eg.supports(eh.Features.SOUNDSHARE) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.DARWIN_SCKIT_AUDIO_VERSION) && e8(!1)
+                    return (0, Z.isMac)() && eg.supports(eh.Features.SOUNDSHARE) && _.satisfies(null === C.default || void 0 === C.default ? void 0 : C.default.os.release, ed.DARWIN_SCKIT_AUDIO_VERSION) && e8(!1)
                 }
                 getVideoStreamParameters() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eh.MediaEngineContextTypes.DEFAULT,
@@ -38906,10 +39106,10 @@
                     } = e0(l);
                     if (v[u] === ec.VideoToggleState.AUTO_PROBING && c === ec.VideoToggleState.AUTO_ENABLED && (0, W.default)(u, h ? eh.VideoToggleReason.AUTO_DISABLE : eh.VideoToggleReason.AUTO_ENABLE, m), v[u] = c, te({
                             videoToggleStateMap: v
-                        }, l, d), c === ec.VideoToggleState.AUTO_PROBING ? null === (n = eo.default.getRTCConnection()) || void 0 === n || n.pauseStatsCollectionForUser(u, !0) : null === (i = eo.default.getRTCConnection()) || void 0 === i || i.pauseStatsCollectionForUser(u, !1), !eZ && (e_.info("isAutoDisableAllowed=".concat(eZ, " - disabling VideoHealthManager")), null === (s = eo.default.getRTCConnection()) || void 0 === s || null === (r = s.getVideoHealthManager()) || void 0 === r || r.disable()), I) {
-                        if (!h && !S || h && !eZ) return;
+                        }, l, d), c === ec.VideoToggleState.AUTO_PROBING ? null === (n = eo.default.getRTCConnection()) || void 0 === n || n.pauseStatsCollectionForUser(u, !0) : null === (i = eo.default.getRTCConnection()) || void 0 === i || i.pauseStatsCollectionForUser(u, !1), !eQ && (e_.info("isAutoDisableAllowed=".concat(eQ, " - disabling VideoHealthManager")), null === (s = eo.default.getRTCConnection()) || void 0 === s || null === (r = s.getVideoHealthManager()) || void 0 === r || r.disable()), I) {
+                        if (!h && !S || h && !eQ) return;
                         (0, W.default)(u, h ? eh.VideoToggleReason.AUTO_DISABLE : eh.VideoToggleReason.AUTO_ENABLE, m), h ? eX.add(u) : eX.delete(u)
-                    } else C && (S && !h ? (e_.info("disallowing auto-disable for this session because of manual override by user"), eZ = !1, null === (o = eo.default.getRTCConnection()) || void 0 === o || null === (a = o.getVideoHealthManager()) || void 0 === a || a.disable(), (0, W.default)(u, eh.VideoToggleReason.MANUAL_REENABLE, m)) : (0, W.default)(u, h ? eh.VideoToggleReason.MANUAL_DISABLE : eh.VideoToggleReason.MANUAL_ENABLE, m));
+                    } else C && (S && !h ? (e_.info("disallowing auto-disable for this session because of manual override by user"), eQ = !1, null === (o = eo.default.getRTCConnection()) || void 0 === o || null === (a = o.getVideoHealthManager()) || void 0 === a || a.disable(), (0, W.default)(u, eh.VideoToggleReason.MANUAL_REENABLE, m)) : (0, W.default)(u, h ? eh.VideoToggleReason.MANUAL_DISABLE : eh.VideoToggleReason.MANUAL_ENABLE, m));
                     g && !h && eX.delete(u), h ? p[u] = !0 : delete p[u], te({
                         disabledLocalVideos: p
                     }, l, d), eg.eachConnection(e => {
@@ -39008,7 +39208,7 @@
                     let {
                         enabled: t
                     } = e;
-                    return eQ = t, tu()
+                    return eZ = t, tu()
                 },
                 AUDIO_SET_NOISE_SUPPRESSION: function(e) {
                     let t = te({
@@ -39162,8 +39362,8 @@
                                 resolution: 720,
                                 frameRate: 30
                             },
-                            d = Z.default.getPidFromDesktopSource(r);
-                        Q.isPlatformEmbedded && !0 === l && ({
+                            d = Q.default.getPidFromDesktopSource(r);
+                        Z.isPlatformEmbedded && !0 === l && ({
                             soundshareId: e,
                             soundshareSession: i
                         } = ta(d), null != e && to(e, i)), (a = u) !== eR && (null != s && eg.setGoLiveSource(null, eR), eR = a);
@@ -39362,36 +39562,33 @@
                 CLIPS_INIT: function(e) {
                     let {
                         sourceId: t,
-                        applicationName: n
+                        applicationName: n,
+                        quality: r
                     } = e, {
-                        enableDecoupledGameClipping: r
+                        enableDecoupledGameClipping: s
                     } = L.default.getCurrentConfig({
                         location: "handleClipsInit"
                     }, {
                         autoTrackExposure: !0
-                    }), s = A.default.getSettings().decoupledClipsEnabled;
-                    if (!r || !s || null == C.default) return;
-                    let o = null,
-                        l = null,
-                        u = {
-                            resolution: 720,
-                            frameRate: 30
-                        },
-                        c = Z.default.getPidFromDesktopSource(t);
+                    }), o = A.default.getSettings().decoupledClipsEnabled;
+                    if (!s || !o || null == C.default) return;
+                    let l = null,
+                        u = null,
+                        c = Q.default.getPidFromDesktopSource(t);
                     ({
-                        soundshareId: o,
-                        soundshareSession: l
+                        soundshareId: l,
+                        soundshareSession: u
                     } = ta(c));
                     let d = {
                         desktopSource: {
                             id: t,
                             sourcePid: c,
-                            soundshareId: o,
-                            soundshareSession: l
+                            soundshareId: l,
+                            soundshareSession: u
                         },
-                        quality: u
+                        quality: r
                     };
-                    null != a && a.desktopSource.id !== d.desktopSource.id && (eg.setClipsSource(null), (0, Q.isWindows)() && null != a.desktopSource.soundshareId && v.cancelAttachToProcess(a.desktopSource.soundshareId)), null != o && to(o, l), a = d;
+                    null != a && a.desktopSource.id !== d.desktopSource.id && (eg.setClipsSource(null), (0, Z.isWindows)() && null != a.desktopSource.soundshareId && v.cancelAttachToProcess(a.desktopSource.soundshareId)), null != l && to(l, u), a = d;
                     let {
                         useQuartzCapturer: f
                     } = x.default.getCurrentConfig({
@@ -39422,7 +39619,7 @@
                             graphicsCaptureStaleFrameTimeoutMs: S,
                             hdrCaptureMode: E
                         },
-                        quality: u,
+                        quality: r,
                         applicationName: n
                     })
                 },
@@ -40634,11 +40831,11 @@
                 void 0 !== i && (delete e[t], e[n] = i)
             }
 
-            function Z(e, t) {
+            function Q(e, t) {
                 null != t.lastLaunched ? e.lastLaunched = t.lastLaunched : null != t.start && (e.lastLaunched = t.start)
             }
 
-            function Q(e) {
+            function Z(e) {
                 return b.some(t => t.name === e.name && !0 === t.streamerTool)
             }
 
@@ -40781,7 +40978,7 @@
                                 let n = H.gameOverrides[$(e)];
                                 null != n && (n.lastFocused = e.lastFocused)
                             }
-                            return Z(t, e), !0
+                            return Q(t, e), !0
                         }
                         return !1
                     });
@@ -40794,7 +40991,7 @@
                                 cmdLine: e.cmdLine,
                                 lastFocused: e.lastFocused
                             };
-                            return null != e.id && (t.id = e.id), null != e.nativeProcessObserverId && (t.nativeProcessObserverId = e.nativeProcessObserverId), null != e.name && (t.name = e.name), e.add && (t.add = !0), e.block && (t.block = !0), Z(t, e), t
+                            return null != e.id && (t.id = e.id), null != e.nativeProcessObserverId && (t.nativeProcessObserverId = e.nativeProcessObserverId), null != e.name && (t.name = e.name), e.add && (t.add = !0), e.block && (t.block = !0), Q(t, e), t
                         }(e))
                     }
                 }), H.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), ei(), g.default.setRecentGames(el().map(e => er(e))))
@@ -40860,7 +41057,7 @@
                         } = t;
                         return n === e.name
                     }) || (n.push(e), !1)));
-                    let s = n.filter(Q).length;
+                    let s = n.filter(Z).length;
                     s !== W && (W = s, f.default.dispatch({
                         type: "RUNNING_STREAMER_TOOLS_CHANGE",
                         count: W
@@ -46108,10 +46305,10 @@
                         bottom: null !== (t = null == u ? void 0 : u[2]) && void 0 !== t ? t : 0,
                         left: null !== (n = null == u ? void 0 : u[3]) && void 0 !== n ? n : 0
                     }
-                }, [q, u]), Z = r.useMemo(() => ({
+                }, [q, u]), Q = r.useMemo(() => ({
                     height: H
-                }), [H]), Q = A ? o.AdvancedScrollerNone : o.AdvancedScrollerThin;
-                return (0, i.jsxs)(Q, {
+                }), [H]), Z = A ? o.AdvancedScrollerNone : o.AdvancedScrollerThin;
+                return (0, i.jsxs)(Z, {
                     fade: R,
                     className: a(l.scroller, v),
                     ref: b,
@@ -46123,7 +46320,7 @@
                         children: z
                     }), (0, i.jsx)("div", {
                         className: l.listHeight,
-                        style: Z
+                        style: Q
                     })]
                 })
             }));
@@ -49721,7 +49918,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255174"
+                                build_number: "255188"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -50418,7 +50615,7 @@
                     return X
                 },
                 getPremiumPlanOptions: function() {
-                    return Z
+                    return Q
                 },
                 getNumPremiumGuildSubscriptions: function() {
                     return $
@@ -50982,7 +51179,7 @@
                 else throw Error("Subscription without premium or premium guild subscription")
             }
 
-            function Z(e) {
+            function Q(e) {
                 let {
                     skuId: t,
                     isPremium: n,
@@ -51030,7 +51227,7 @@
                 return c
             }
 
-            function Q(e) {
+            function Z(e) {
                 let t = D.SubscriptionPlanInfo[e];
                 if (null == t) {
                     let t = Error("Unsupported plan");
@@ -51455,7 +51652,7 @@
 
             function eD(e) {
                 let t = null != e ? G(e) : null,
-                    n = null != t ? Q(t.planId) : null;
+                    n = null != t ? Z(t.planId) : null;
                 return n
             }
             let ey = e => null != e && Date.now() - e.createdAt.getTime() < 2592e6;
@@ -51484,7 +51681,7 @@
                 getPremiumType: B,
                 getDisplayName: H,
                 getDisplayPremiumType: W,
-                getPremiumPlanOptions: Z,
+                getPremiumPlanOptions: Q,
                 getUpgradeEligibilities: J,
                 getPlanDescription: z,
                 isPremiumSku: function(e) {
@@ -51510,7 +51707,7 @@
                     throw Error("".concat(e, " interval subscription period not implemented"))
                 },
                 getUserMaxFileSize: v.getUserMaxFileSize,
-                getSkuIdForPlan: Q,
+                getSkuIdForPlan: Z,
                 getSkuIdForPremiumType: function(e) {
                     switch (e) {
                         case D.PremiumTypes.TIER_0:
@@ -56043,10 +56240,10 @@
                     return X
                 },
                 VIDEO_QUALITY_FRAMERATE: function() {
-                    return Z
+                    return Q
                 },
                 VIDEO_QUALITY_FRAMERATE_MUTED: function() {
-                    return Q
+                    return Z
                 },
                 VIDEO_QUALITY_FRAMERATE_MUTED_2: function() {
                     return J
@@ -56114,8 +56311,8 @@
                 z = 1e7,
                 q = 5e3,
                 X = 15e3,
-                Z = 30,
-                Q = 20,
+                Q = 30,
+                Z = 20,
                 J = 12,
                 $ = 4e6,
                 ee = 8e6,
@@ -56124,12 +56321,12 @@
                     videoBudget: {
                         width: 1280,
                         height: 720,
-                        framerate: Z
+                        framerate: Q
                     },
                     videoCapture: {
                         width: 1280,
                         height: 720,
-                        framerate: Z
+                        framerate: Q
                     },
                     videoBitrate: {
                         min: 15e4,
@@ -63076,4 +63273,4 @@
         }
     }
 ]);
-//# sourceMappingURL=87237.a1bc02fc1fd0a8112b37.js.map
+//# sourceMappingURL=72243.6892734cdf6800ede702.js.map

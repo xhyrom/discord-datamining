@@ -32,199 +32,6 @@
             "use strict";
             t.exports = n.p + "a1aa5e5cf3f255bb84cd.mp4"
         },
-        686298: function(t, e, n) {
-            "use strict";
-            n.r(e), n.d(e, {
-                ApplicationStreamResolutions: function() {
-                    return i
-                },
-                getApplicationResolution: function() {
-                    return _
-                },
-                ApplicationStreamFPS: function() {
-                    return u
-                },
-                ApplicationStreamPresets: function() {
-                    return r
-                },
-                getApplicationFramerate: function() {
-                    return f
-                },
-                ApplicationStreamPresetValues: function() {
-                    return E
-                },
-                ApplicationStreamSettingRequirements: function() {
-                    return p
-                },
-                ApplicationStreamResolutionButtons: function() {
-                    return S
-                },
-                GoLiveDeviceResolutionButtons: function() {
-                    return T
-                },
-                ApplicationStreamResolutionButtonsWithSuffixLabel: function() {
-                    return I
-                },
-                ApplicationStreamFPSButtons: function() {
-                    return g
-                },
-                ApplicationStreamFPSButtonsWithSuffixLabel: function() {
-                    return R
-                }
-            }), n("70102");
-            var i, u, r, o, a, s, l = n("49111"),
-                d = n("646718"),
-                c = n("782340");
-
-            function _(t) {
-                switch (t) {
-                    case 480:
-                        return 480;
-                    case 720:
-                        return 720;
-                    case 1080:
-                        return 1080;
-                    case 0:
-                        return 0;
-                    default:
-                        throw Error("Unknown resolution: ".concat(t))
-                }
-            }
-
-            function f(t) {
-                switch (t) {
-                    case 5:
-                        return 5;
-                    case 15:
-                        return 15;
-                    case 30:
-                        return 30;
-                    case 60:
-                        return 60;
-                    default:
-                        throw Error("Unknown frame rate: ".concat(t))
-                }
-            }(o = i || (i = {}))[o.RESOLUTION_480 = 480] = "RESOLUTION_480", o[o.RESOLUTION_720 = 720] = "RESOLUTION_720", o[o.RESOLUTION_1080 = 1080] = "RESOLUTION_1080", o[o.RESOLUTION_1440 = 1440] = "RESOLUTION_1440", o[o.RESOLUTION_SOURCE = 0] = "RESOLUTION_SOURCE", (a = u || (u = {}))[a.FPS_5 = 5] = "FPS_5", a[a.FPS_15 = 15] = "FPS_15", a[a.FPS_30 = 30] = "FPS_30", a[a.FPS_60 = 60] = "FPS_60", (s = r || (r = {}))[s.PRESET_VIDEO = 1] = "PRESET_VIDEO", s[s.PRESET_DOCUMENTS = 2] = "PRESET_DOCUMENTS", s[s.PRESET_CUSTOM = 3] = "PRESET_CUSTOM";
-            let E = {
-                    2: [{
-                        resolution: 0,
-                        fps: 15
-                    }, {
-                        resolution: 0,
-                        fps: 5
-                    }],
-                    1: [{
-                        resolution: 1440,
-                        fps: 60
-                    }, {
-                        resolution: 1080,
-                        fps: 60
-                    }, {
-                        resolution: 720,
-                        fps: 60
-                    }, {
-                        resolution: 720,
-                        fps: 30
-                    }],
-                    3: []
-                },
-                p = [{
-                    resolution: 0,
-                    fps: 60,
-                    quality: d.StreamQualities.HIGH_STREAMING_QUALITY
-                }, {
-                    resolution: 0,
-                    fps: 30,
-                    quality: d.StreamQualities.HIGH_STREAMING_QUALITY
-                }, {
-                    resolution: 0,
-                    fps: 15,
-                    quality: d.StreamQualities.HIGH_STREAMING_QUALITY
-                }, {
-                    resolution: 0,
-                    fps: 5,
-                    preset: 2
-                }, {
-                    resolution: 1440,
-                    fps: 60,
-                    guildPremiumTier: l.BoostedGuildTiers.TIER_2,
-                    quality: d.StreamQualities.MID_STREAMING_QUALITY
-                }, {
-                    resolution: 1440,
-                    fps: 30,
-                    guildPremiumTier: l.BoostedGuildTiers.TIER_2,
-                    quality: d.StreamQualities.MID_STREAMING_QUALITY
-                }, {
-                    resolution: 1440,
-                    fps: 15,
-                    guildPremiumTier: l.BoostedGuildTiers.TIER_2,
-                    quality: d.StreamQualities.MID_STREAMING_QUALITY
-                }, {
-                    resolution: 1080,
-                    fps: 60,
-                    guildPremiumTier: l.BoostedGuildTiers.TIER_2,
-                    quality: d.StreamQualities.MID_STREAMING_QUALITY
-                }, {
-                    resolution: 1080,
-                    fps: 30,
-                    guildPremiumTier: l.BoostedGuildTiers.TIER_2,
-                    quality: d.StreamQualities.MID_STREAMING_QUALITY
-                }, {
-                    resolution: 1080,
-                    fps: 15,
-                    guildPremiumTier: l.BoostedGuildTiers.TIER_2,
-                    quality: d.StreamQualities.MID_STREAMING_QUALITY
-                }, {
-                    resolution: 720,
-                    fps: 60,
-                    guildPremiumTier: l.BoostedGuildTiers.TIER_1,
-                    quality: d.StreamQualities.MID_STREAMING_QUALITY
-                }, {
-                    resolution: 720,
-                    fps: 30
-                }, {
-                    resolution: 720,
-                    fps: 15
-                }, {
-                    resolution: 720,
-                    fps: 5
-                }, {
-                    resolution: 480,
-                    fps: 60,
-                    guildPremiumTier: l.BoostedGuildTiers.TIER_1,
-                    quality: d.StreamQualities.MID_STREAMING_QUALITY
-                }, {
-                    resolution: 480,
-                    fps: 30
-                }, {
-                    resolution: 480,
-                    fps: 15
-                }, {
-                    resolution: 480,
-                    fps: 5
-                }];
-
-            function A(t, e) {
-                return {
-                    value: t,
-                    get label() {
-                        return null != e ? e() : t
-                    }
-                }
-            }
-            let S = [A(720), A(1080), A(1440), A(0, () => c.default.Messages.SCREENSHARE_SOURCE)],
-                T = [A(720), A(1080), A(1440)],
-                O = t => "".concat(t, "p"),
-                I = [A(480, () => O(480)), A(720, () => O(720)), A(1080, () => O(1080)), A(1440, () => O(1440)), A(0, () => c.default.Messages.SCREENSHARE_SOURCE)],
-                g = [A(15), A(30), A(60)],
-                R = [A(15, () => c.default.Messages.STREAM_FPS_OPTION.format({
-                    value: 15
-                })), A(30, () => c.default.Messages.STREAM_FPS_OPTION.format({
-                    value: 30
-                })), A(60, () => c.default.Messages.STREAM_FPS_OPTION.format({
-                    value: 60
-                }))]
-        },
         504385: function(t, e, n) {
             "use strict";
             n.r(e), n.d(e, {
@@ -296,10 +103,10 @@
                     return A
                 },
                 startApplyMediaFilterSettings: function() {
-                    return S
+                    return O
                 },
                 errorApplyingMediaFilterSettings: function() {
-                    return T
+                    return g
                 }
             });
             var i = n("872717"),
@@ -308,8 +115,8 @@
                 o = n("42887"),
                 a = n("697218"),
                 s = n("659558"),
-                l = n("239448"),
-                d = n("284231"),
+                d = n("239448"),
+                l = n("284231"),
                 c = n("49111");
             async function _() {
                 let t = await i.default.get(c.Endpoints.VIDEO_FILTER_ASSETS);
@@ -333,21 +140,21 @@
                         videoFilterAsset: r.body
                     }), r.body
                 } catch (t) {
-                    throw new d.default(t)
+                    throw new l.default(t)
                 }
             }
             async function E(t) {
                 await i.default.delete(c.Endpoints.VIDEO_FILTER_ASSET(t.id));
                 let e = (0, s.getLastUsedVideoBackgroundOption)(a.default.getCurrentUser());
-                (0, l.isCustomBackgroundOption)(e) && e.id === t.id && p(null), u.default.dispatch({
+                (0, d.isCustomBackgroundOption)(e) && e.id === t.id && p(null), u.default.dispatch({
                     type: "VIDEO_FILTER_ASSET_DELETE_SUCCESS",
                     videoFilterAsset: t
                 })
             }
             async function p(t) {
                 if (await r.PreloadedUserSettingsActionCreators.updateAsync("voiceAndVideo", e => {
-                        e.videoBackgroundFilterDesktop = (0, l.getVideoBackgroundProtoFromOption)(t)
-                    }, r.UserSettingsDelay.FREQUENT_USER_ACTION), (0, l.isCustomBackgroundOption)(t)) {
+                        e.videoBackgroundFilterDesktop = (0, d.getVideoBackgroundProtoFromOption)(t)
+                    }, r.UserSettingsDelay.FREQUENT_USER_ACTION), (0, d.isCustomBackgroundOption)(t)) {
                     let e = await i.default.post(c.Endpoints.VIDEO_FILTER_ASSET_LAST_USED(t.id));
                     u.default.dispatch({
                         type: "VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION",
@@ -366,13 +173,13 @@
                 })
             }
 
-            function S() {
+            function O() {
                 o.default.isSupported() && u.default.dispatch({
                     type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START"
                 })
             }
 
-            function T() {
+            function g() {
                 u.default.dispatch({
                     type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR"
                 })
@@ -382,7 +189,7 @@
             "use strict";
             n.r(e), n.d(e, {
                 default: function() {
-                    return T
+                    return g
                 }
             }), n("808653");
             var i = n("446674"),
@@ -391,8 +198,8 @@
                 o = n("374363"),
                 a = n("42887"),
                 s = n("18494"),
-                l = n("697218"),
-                d = n("239448");
+                d = n("697218"),
+                l = n("239448");
             let c = !1,
                 _ = null,
                 f = !1,
@@ -400,16 +207,16 @@
 
             function p(t) {
                 var e;
-                let n = l.default.getCurrentUser();
+                let n = d.default.getCurrentUser();
                 if (null == n) return !1;
-                let i = null != t ? t : (0, d.getVideoBackgroundOptionFromProto)(null === (e = o.default.settings.voiceAndVideo) || void 0 === e ? void 0 : e.videoBackgroundFilterDesktop, n.id);
+                let i = null != t ? t : (0, l.getVideoBackgroundOptionFromProto)(null === (e = o.default.settings.voiceAndVideo) || void 0 === e ? void 0 : e.videoBackgroundFilterDesktop, n.id);
                 return null != s.default.getVoiceChannelId() && a.default.isVideoEnabled() && null != i
             }
 
             function A() {
                 _ !== s.default.getVoiceChannelId() && (f = !1), p() && (f = !0), _ = s.default.getVoiceChannelId()
             }
-            class S extends i.default.Store {
+            class O extends i.default.Store {
                 initialize() {
                     this.waitFor(o.default, s.default, a.default), this.syncWith([s.default, a.default], A)
                 }
@@ -423,8 +230,8 @@
                     return f
                 }
             }
-            S.displayName = "VideoBackgroundStore";
-            var T = new S(r.default, {
+            O.displayName = "VideoBackgroundStore";
+            var g = new O(r.default, {
                 VIDEO_FILTER_ASSETS_FETCH_SUCCESS: function(t) {
                     let {
                         assets: e
@@ -469,7 +276,7 @@
             "use strict";
             n.r(e), n.d(e, {
                 isCustomBackgroundOption: function() {
-                    return d
+                    return l
                 },
                 isDefaultBackgroundOption: function() {
                     return c
@@ -487,13 +294,13 @@
                     return A
                 },
                 trackBackgroundOptionDeleted: function() {
-                    return S
+                    return O
                 },
                 getVideoBackgroundProtoFromOption: function() {
-                    return T
+                    return g
                 },
                 getVideoBackgroundOptionFromProto: function() {
-                    return O
+                    return D
                 }
             });
             var i = n("716241"),
@@ -502,9 +309,9 @@
                 o = n("599110"),
                 a = n("315102"),
                 s = n("917219"),
-                l = n("49111");
+                d = n("49111");
 
-            function d(t) {
+            function l(t) {
                 return null != t && "object" == typeof t && "id" in t && t.type === s.VideoFilterType.BACKGROUND
             }
 
@@ -513,7 +320,7 @@
             }
 
             function _(t) {
-                return c(t) ? s.ANIMATED_DEFAULT_VIDEO_BACKGROUNDS.includes(t) : !!d(t) && ((0, a.isAnimatedIconHash)(t.asset) || (0, a.isVideoAssetHash)(t.asset))
+                return c(t) ? s.ANIMATED_DEFAULT_VIDEO_BACKGROUNDS.includes(t) : !!l(t) && ((0, a.isAnimatedIconHash)(t.asset) || (0, a.isVideoAssetHash)(t.asset))
             }
 
             function f(t) {
@@ -522,7 +329,7 @@
 
             function E(t) {
                 if (null == t) return "None";
-                if (d(t)) return "Custom";
+                if (l(t)) return "Custom";
                 if ("blur" === t) return "Blur";
                 else return "Preset - ".concat(function(t) {
                     switch (t) {
@@ -549,15 +356,15 @@
             function p(t, e, n) {
                 let a = r.default.getGuildId(),
                     s = r.default.getChannelId(),
-                    d = u.default.getChannel(s),
+                    l = u.default.getChannel(s),
                     c = (0, i.getVoiceStateMetadata)(a, s, !0);
-                o.default.track(l.AnalyticEvents.VIDEO_EFFECT_UPDATED, {
+                o.default.track(d.AnalyticEvents.VIDEO_EFFECT_UPDATED, {
                     location: e,
                     effect_type: f(t),
                     effect_detail: E(t),
                     effect_state: n,
                     channel_id: s,
-                    channel_type: null == d ? void 0 : d.type,
+                    channel_type: null == l ? void 0 : l.type,
                     guild_id: a,
                     voice_state_count: c.voice_state_count,
                     video_stream_count: c.video_stream_count,
@@ -568,24 +375,24 @@
             }
 
             function A(t, e, n) {
-                o.default.track(l.AnalyticEvents.VIDEO_BACKGROUND_ADDED, {
+                o.default.track(d.AnalyticEvents.VIDEO_BACKGROUND_ADDED, {
                     is_animated: _(t),
                     is_video: e,
                     is_from_tenor: n
                 })
             }
 
-            function S(t) {
-                o.default.track(l.AnalyticEvents.VIDEO_BACKGROUND_DELETED, {
+            function O(t) {
+                o.default.track(d.AnalyticEvents.VIDEO_BACKGROUND_DELETED, {
                     is_animated: _(t)
                 })
             }
 
-            function T(t) {
+            function g(t) {
                 if (null == t) return {
                     oneofKind: void 0
                 };
-                if (d(t)) return {
+                if (l(t)) return {
                     oneofKind: "customAsset",
                     customAsset: {
                         id: t.id,
@@ -604,7 +411,7 @@
                 }
             }
 
-            function O(t, e) {
+            function D(t, e) {
                 if (null == t || void 0 === t.oneofKind) return null;
                 switch (t.oneofKind) {
                     case "customAsset":
@@ -642,13 +449,13 @@
             "use strict";
             n.r(e), n.d(e, {
                 applyBackgroundOptionLive: function() {
-                    return O
+                    return D
                 },
                 applyBackgroundOptionPreview: function() {
-                    return I
+                    return S
                 },
                 applyInitialVideoBackgroundOption: function() {
-                    return g
+                    return T
                 }
             }), n("332822"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341");
             var i = n("627445"),
@@ -657,8 +464,8 @@
                 o = n("697218"),
                 a = n("315102"),
                 s = n("659558"),
-                l = n("154867"),
-                d = n("870879"),
+                d = n("154867"),
+                l = n("870879"),
                 c = n("239448"),
                 _ = n("977801"),
                 f = n("512244"),
@@ -670,8 +477,8 @@
                 return new Uint8ClampedArray(await n.arrayBuffer())
             }
 
-            function S(t, e, n, i, u) {
-                (0, l.applyMediaFilterSettings)({
+            function O(t, e, n, i, u) {
+                (0, d.applyMediaFilterSettings)({
                     [t]: {
                         graph: n,
                         target: e,
@@ -680,18 +487,18 @@
                     }
                 })
             }
-            async function T(t, e, n) {
+            async function g(t, e, n) {
                 var i, o;
-                let s, d = !1;
-                if (null == n) return S(t, e, r.FilterSettingsGraph.NONE);
-                if (n === E.BLUR_BACKGROUND_OPTION) return S(t, e, r.FilterSettingsGraph.BACKGROUND_BLUR);
+                let s, l = !1;
+                if (null == n) return O(t, e, r.FilterSettingsGraph.NONE);
+                if (n === E.BLUR_BACKGROUND_OPTION) return O(t, e, r.FilterSettingsGraph.BACKGROUND_BLUR);
                 if ("string" == typeof n || "number" == typeof n) {
                     ;
                     let t = (0, _.default)()[n];
-                    d = null !== (i = t.isVideo) && void 0 !== i && i, s = t.source
+                    l = null !== (i = t.isVideo) && void 0 !== i && i, s = t.source
                 } else {
                     let t = n.asset;
-                    d = (0, a.isAnimatedIconHash)(t) || (0, a.isVideoAssetHash)(t), s = (0, a.getVideoFilterAssetURL)({
+                    l = (0, a.isAnimatedIconHash)(t) || (0, a.isVideoAssetHash)(t), s = (0, a.getVideoFilterAssetURL)({
                         userId: n.user_id,
                         assetId: n.id,
                         assetHash: t,
@@ -700,7 +507,7 @@
                 }
                 if (null != s) try {
                     ;
-                    let n = d ? void 0 : await (o = s, new Promise((t, e) => {
+                    let n = l ? void 0 : await (o = s, new Promise((t, e) => {
                             let n = new Image;
                             n.crossOrigin = "anonymous", n.onload = () => {
                                 let e = document.createElement("canvas");
@@ -711,48 +518,48 @@
                                     o = E.BACKGROUND_REPLACEMENT_SIZE.height,
                                     a = E.BACKGROUND_REPLACEMENT_SIZE.height / r,
                                     s = (e.width - a) / 2,
-                                    l = (e.height - o) / 2;
-                                i.drawImage(n, s, l, a, o);
-                                let d = i.getImageData(0, 0, e.width, e.height);
+                                    d = (e.height - o) / 2;
+                                i.drawImage(n, s, d, a, o);
+                                let l = i.getImageData(0, 0, e.width, e.height);
                                 t({
-                                    data: d.data,
-                                    width: d.width,
-                                    height: d.height,
+                                    data: l.data,
+                                    width: l.width,
+                                    height: l.height,
                                     pixelFormat: "rgba"
                                 })
                             }, n.onerror = t => e(t), n.src = o
                         })),
-                        i = d ? await A(s) : void 0;
-                    S(t, e, r.FilterSettingsGraph.BACKGROUND_REPLACEMENT, n, i)
+                        i = l ? await A(s) : void 0;
+                    O(t, e, r.FilterSettingsGraph.BACKGROUND_REPLACEMENT, n, i)
                 } catch (t) {
-                    (0, l.errorApplyingMediaFilterSettings)()
+                    (0, d.errorApplyingMediaFilterSettings)()
                 }
             }
-            async function O(t, e) {
+            async function D(t, e) {
                 let {
                     track: n = !0,
                     location: i
                 } = e;
-                await T(r.FilterSettingsKey.CAMERA_BACKGROUND_LIVE, {
+                await g(r.FilterSettingsKey.CAMERA_BACKGROUND_LIVE, {
                     type: r.FilterTargetType.INPUT_DEVICE
                 }, t), n && (0, c.trackBackgroundOptionUpdated)(t, i, "Enabled")
             }
-            async function I(t, e, n) {
+            async function S(t, e, n) {
                 let {
                     track: i = !0,
                     location: u
                 } = n;
-                (0, l.startApplyMediaFilterSettings)(), await T(r.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW, {
+                (0, d.startApplyMediaFilterSettings)(), await g(r.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW, {
                     type: r.FilterTargetType.STREAM,
                     streamId: e
                 }, t), i && (0, c.trackBackgroundOptionUpdated)(t, u, "Preview")
             }
 
-            function g() {
+            function T() {
                 let t = o.default.getCurrentUser();
                 if (null == t) return;
                 let e = (0, s.getLastUsedVideoBackgroundOption)(t);
-                (0, f.default)() && !d.default.hasBeenApplied && null != e && O(e, {
+                (0, f.default)() && !l.default.hasBeenApplied && null != e && D(e, {
                     track: !1
                 }).catch(p.NOOP)
             }
@@ -770,8 +577,8 @@
                 o = n("27562"),
                 a = n("851703"),
                 s = n("902577"),
-                l = n("351288"),
-                d = n("595726"),
+                d = n("351288"),
+                l = n("595726"),
                 c = n("462641"),
                 _ = n("95937"),
                 f = n("929461"),
@@ -783,7 +590,7 @@
                     },
                     [i.DefaultVideoBackground.OPTION_2]: {
                         id: i.DefaultVideoBackground.OPTION_2,
-                        source: d,
+                        source: l,
                         name: r.default.Messages.VIDEO_BACKGROUND_DEFAULT_BACKGROUND_NAME_2
                     },
                     [i.DefaultVideoBackground.OPTION_3]: {
@@ -812,7 +619,7 @@
                     },
                     [i.DefaultVideoBackground.OPTION_9]: {
                         id: i.DefaultVideoBackground.OPTION_9,
-                        source: l,
+                        source: d,
                         name: r.default.Messages.VIDEO_BACKGROUND_DEFAULT_BACKGROUND_NAME_9,
                         isVideo: !0,
                         hotspotLocation: u.HotspotLocations.ANIMATED_VIDEO_BG_HACKER_DEN_NEW
@@ -858,10 +665,10 @@
                     return A
                 },
                 getMaxQuality: function() {
-                    return S
+                    return O
                 },
                 trackStreamSettingsUpdate: function() {
-                    return T
+                    return g
                 }
             });
             var i = n("305961"),
@@ -870,13 +677,13 @@
                 o = n("599110"),
                 a = n("49111"),
                 s = n("686298"),
-                l = n("646718"),
-                d = n("353927"),
+                d = n("646718"),
+                l = n("353927"),
                 c = n("782340");
 
             function _(t) {
                 if (null == t) return;
-                let e = t.maxResolution.type === d.ResolutionTypes.SOURCE ? s.ApplicationStreamResolutions.RESOLUTION_SOURCE : t.maxResolution.height,
+                let e = t.maxResolution.type === l.ResolutionTypes.SOURCE ? s.ApplicationStreamResolutions.RESOLUTION_SOURCE : t.maxResolution.height,
                     n = (0, s.getApplicationResolution)(e),
                     i = (0, s.getApplicationFramerate)(t.maxFrameRate);
                 return i !== s.ApplicationStreamFPS.FPS_5 && null == s.ApplicationStreamSettingRequirements.find(t => t.resolution === n && t.fps !== s.ApplicationStreamFPS.FPS_5 && !E(t))
@@ -893,7 +700,7 @@
             }
 
             function p(t) {
-                return t.type === d.ResolutionTypes.SOURCE ? c.default.Messages.SCREENSHARE_SOURCE : c.default.Messages.SCREENSHARE_RESOLUTION_ABBREVIATED.format({
+                return t.type === l.ResolutionTypes.SOURCE ? c.default.Messages.SCREENSHARE_SOURCE : c.default.Messages.SCREENSHARE_RESOLUTION_ABBREVIATED.format({
                     resolution: t.height
                 })
             }
@@ -904,23 +711,23 @@
                 })
             }
 
-            function S(t) {
+            function O(t) {
                 return null == t.maxResolution || null == t.maxFrameRate ? null : {
                     maxFrameRate: t.maxFrameRate,
                     maxResolution: t.maxResolution
                 }
             }
 
-            function T(t, e, n) {
-                var d, c, _;
-                let f = (d = t, c = e, _ = n, s.ApplicationStreamSettingRequirements.find(t => (null == t.preset || t.preset === d) && t.resolution === c && t.fps === _)),
+            function g(t, e, n) {
+                var l, c, _;
+                let f = (l = t, c = e, _ = n, s.ApplicationStreamSettingRequirements.find(t => (null == t.preset || t.preset === l) && t.resolution === c && t.fps === _)),
                     E = r.default.getCurrentUser(),
                     p = u.default.getGuildId(),
                     A = null != p ? i.default.getGuild(p) : null;
                 o.default.track(a.AnalyticEvents.STREAM_SETTINGS_UPDATE, {
                     user_premium_tier: null == E ? void 0 : E.premiumType,
                     guild_premium_tier: null == A ? void 0 : A.premiumTier,
-                    stream_quality_user_premium_tier: (null == f ? void 0 : f.quality) != null ? l.StreamQualitiesToPremiumType[f.quality] : null,
+                    stream_quality_user_premium_tier: (null == f ? void 0 : f.quality) != null ? d.StreamQualitiesToPremiumType[f.quality] : null,
                     stream_quality_guild_premium_tier: null == f ? void 0 : f.guildPremiumTier,
                     stream_quality_preset: t,
                     stream_quality_resolution: e,
@@ -939,4 +746,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21413.04451f046a440f45bd24.js.map
+//# sourceMappingURL=21413.4df2838a904251745894.js.map
