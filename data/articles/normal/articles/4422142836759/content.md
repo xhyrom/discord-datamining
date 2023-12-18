@@ -41,7 +41,7 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847" target="_blank" rel="noopener noreferrer">Jamspace Whiteboard</a></li>
     <li><a href="https://fundaygames.dk/discord/color-together-play-guide" target="_blank" rel="noopener noreferrer">Color Together</a></li>
     <li><a href="https://frvr.com/tutorials/krunker/" target="_blank" rel="noopener noreferrer">Krunker Strike FRVR</a></li>
-    <li><a href="https://blog.colonist.io/play-colonist-on-discord-a-step-by-step-guide/" target="_blank" rel="noopener noreferrer">Colonist</a></li>
+    <li><a href="https://blog.colonist.io/play-colonist-on-discord/" target="_blank" rel="noopener noreferrer">Colonist</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/15508886520855" target="_blank" rel="noopener noreferrer">Bobble Bash</a></li>
     <li><a href="https://discord.gg/dhgEgZkeJx" target="_blank" rel="noopener noreferrer">Chef Showdown</a></li>
 </ol>
