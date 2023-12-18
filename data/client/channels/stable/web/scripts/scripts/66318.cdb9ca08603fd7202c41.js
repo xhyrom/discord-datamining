@@ -9370,6 +9370,7 @@
                 GO_LIVE_SHARE_SCREEN: "Screen",
                 GO_LIVE_WATCHING_USER: "Watching {username}",
                 GO_LIVE_MODAL_NOTIFY_FRIENDS_CHECKBOX_LABEL: "Notify my friends in this server that I'm streaming.",
+                GO_LIVE_MODAL_ENABLE_SCREEN_SOUNDSHARE_LABEL: "Also share system audio.",
                 VOICE_CHANNEL_EFFECTS: "Voice Channel Effects",
                 VOICE_CHANNEL_EFFECTS_COOLDOWN: "Reaction Cooldown {seconds}s",
                 VOICE_CHANNEL_EFFECTS_MORE: "More Reactions",
@@ -12233,6 +12234,7 @@
                 SUGGEST_STICKERS: "Stickers",
                 MISSING_PAYMENT_METHOD_BANNER: "Your Nitro sub is about to expire. Enter a valid payment method to keep your subscription.",
                 INVALID_PAYMENT_METHOD_BANNER: "Your payment method failed, update your payment details to continue your Nitro subscription.",
+                DUPLICATE_SUBSCRIPTIONS_BANNER: "You currently have multiple active Nitro subscriptions. For instructions on how cancel your duplicate subscriptions, please [click here]({helpCenterLink}).",
                 BRL_NAME: "Brazilian Real",
                 PLN_NAME: "Polish Złoty",
                 TRY_NAME: "Turkish Lira",
@@ -16097,7 +16099,7 @@
                 CLIPS_SETTINGS_HELP_IN_GO_LIVE_CTA: "Capture clips during your stream with $[!!{keybind}!!](keybindHook).",
                 CLIPS_SETTINGS_VIDEO_QUALITY: "Video Quality Settings",
                 CLIPS_SETTINGS_VIDEO_QUALITY_HELP: "Clips will be captured at the same quality as your stream.",
-                CLIPS_SETTINGS_QUALITY_INFOBOX: "Please note that clips are captured at the same quality as your stream.",
+                CLIPS_SETTINGS_QUALITY_INFOBOX: "Please note that clips are currently captured at the same quality as your stream when streaming.",
                 CLIPS_SETTINGS_UNDER_MIN_SPECS: "Your computer doesn't meet the minimum specifications for Clips, performance may be impacted if you enable Clips.",
                 CLIPS_QUALITY_DEFAULT: "Default",
                 CLIPS_SETTINGS_LENGTH: "Clip Length",
@@ -16180,6 +16182,7 @@
                 CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_BODY: "Take clips right in Discord and share them with friends. Early access now available with Nitro.",
                 CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_SUBS: "Got it",
                 CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_NON_SUBS: "Get Nitro",
+                CLIPS_ADD_A_TITLE: "Add a title",
                 CLIPS_UNTITLED: "Untitled",
                 CLIPS_UNKNOWN_SOURCE: "Unknown",
                 CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING: "Allow my voice to be recorded in Clips",
@@ -16188,6 +16191,10 @@
                 CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE_DESCRIPTION: "If this is on, viewers can take clips of your stream.",
                 CLIPS_SETTINGS_HW_ENCODING_MUST_BE_ENABLED_INFOBOX: "To use Clips, enable hardware encoding. Find it in [Voice & Video settings](onClick).",
                 CLIPS_PROCESSING_BADGE: "Processing...",
+                CLIPS_SETTINGS_RESOLUTION: "Clip Resolution",
+                CLIPS_SETTINGS_RESOLUTION_NOTE: "This is the maximum resolution your clips will be recorded in.",
+                CLIPS_SETTINGS_FRAMERATE: "Clip Frame Rate",
+                CLIPS_SETTINGS_FRAMERATE_NOTE: "This is the maximum frame rate your clips will be recorded at.",
                 SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
                 SOUND_INCOMING_RING_EOY_2023: "Seasonal Incoming Ring",
                 CUSTOM_SOUNDS: "Custom Sounds",
@@ -16653,14 +16660,15 @@
                 BROADCASTING_BETA_TOOLTIP_TEXT: "Open Parties is an experimental feature. A limited number of users have the ability to host or join.",
                 START_BROADCAST_NOTIFICATION_BODY: "Start a party, so your friends can drop by!",
                 START_BROADCAST_NOTIFICATION_CTA: "Open a Party",
-                STATUS_POPOUT_CUSTOM_TITLE: "Customs",
+                STATUS_POPOUT_CUSTOM_TITLE: "Custom",
                 STATUS_POPOUT_SET_CUSTOM: "Set Custom Activity",
                 STATUS_POPOUT_EDIT_CUSTOM: "Edit Custom Activity",
                 STATUS_POPOUT_CLEAR_STATUS: "Clear Status",
                 SET_STATUS_MODAL_TITLE: "Set Custom Voice Activity",
-                SET_STATUS_MODAL_SUBTITLE: "Get unique with letting everyone know what you're doing.",
+                SET_STATUS_MODAL_SUBTITLE: "We'll save you most recent creations and auto-delete them after a while.",
                 SET_STATUS_MODAL_CTA: "Confirm",
                 STATUS_LEAD_IN_JUST: "Right now, I'm -",
+                STATUS_LEAD_IN_WIDGET: "Right now, I'm: ",
                 STATUS_CHILLING: "Chilling tbh",
                 STATUS_GAMING: "GAMING",
                 STATUS_FOCUSING: "In the zone",
@@ -16673,8 +16681,9 @@
                 HANG_STATUS_LOCATION: "in !!{guildName}!!",
                 CUSTOM_HANG_STATUS: "Custom Status",
                 CUSTOM_HANG_STATUS_CTA: "Jump in here!",
-                CUSTOM_HANG_STATUS_PLACEHOLDER: "Eating a potato",
+                CUSTOM_HANG_STATUS_PLACEHOLDER: "What are you doing?",
                 CUSTOM_HANGS_STATUS_COPY_CTA: "Swipe status",
+                HANG_STATUS_VC_ROW_ADD: "Add a status",
                 XBOX: "Xbox",
                 PLAYSTATION: "PlayStation",
                 SAFETY_HUB_CLASSIFICATIONS_TABLE_HEADER: "Lorem, ipsum",
@@ -16770,6 +16779,10 @@
                 POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, one {1 min} other {{minutes} mins left}}",
                 POLL_EXPIRED: "Poll closed",
                 POLL_NOT_INTERACTIVE: "View original message to interact",
+                POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
+                POLL_NO_VOTES_FOR_ANSWER_BODY: "There are no votes for this answer.",
+                POLL_TAP_FOR_VOTERS_A11Y_ANDROID: "Reveal voters",
+                POLL_TAP_FOR_VOTERS_A11Y_IOS: "Reveals voters",
                 FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
                 KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
                 PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
@@ -18279,7 +18292,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254888", ", Version Hash: ").concat("4d180e8dbd5d622c4401a12b02cd52006e0f56a2")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255245", ", Version Hash: ").concat("b43666f4f8a47e5562c98ead1ca35581fdc5a43f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19830,7 +19843,7 @@
                     inlineRequire: () => E("129040").default
                 },
                 ClipsManager: {
-                    actions: ["RTC_CONNECTION_FLAGS", "VOICE_STATE_UPDATES", "RTC_CONNECTION_USER_CREATE_SSRC", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
+                    actions: ["RTC_CONNECTION_FLAGS", "VOICE_STATE_UPDATES", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
                     inlineRequire: () => E("332491").default
                 },
                 BroadcastingManager: {
@@ -20584,8 +20597,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "254888", "254888"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254888")), _ = 0), _
+                let _ = parseInt((e = "255245", "255245"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255245")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -20982,7 +20995,7 @@
                         channelId: E,
                         guildId: t
                     } = e;
-                    this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
+                    this.maybeShowClipsWarning(_), this.applyUserRecording(_);
                     let o = N.default.getRTCConnection(a.encodeStreamKey({
                         streamType: null != t ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
                         ownerId: _,
@@ -20990,14 +21003,6 @@
                         guildId: t
                     }));
                     null != o && this.applyInboundStreamRecording(_, o)
-                }
-                handleRTCUserSSRC(e) {
-                    let {
-                        userId: _,
-                        ssrc: E,
-                        context: t
-                    } = e;
-                    t === o.MediaEngineContextTypes.DEFAULT && this.applySSRCRecording(_, E)
                 }
                 handleClipsInitFailure(e) {
                     let {
@@ -21092,12 +21097,12 @@
                     }
                     return u.ClipsHardwareClassification.UNKNOWN
                 }
-                applySSRCRecording(e, _) {
+                applyUserRecording(e) {
                     if (!(0, L.default)(T.default) || e === s.default.getId()) return;
-                    let E = S.default.getRTCConnection();
-                    if (null == E) return;
-                    let t = l.default.isVoiceRecordingAllowedForUser(e);
-                    null == E || E.setClipRecordSSRC(e, "audio", "inbound", t, _)
+                    let _ = S.default.getRTCConnection();
+                    if (null == _) return;
+                    let E = l.default.isVoiceRecordingAllowedForUser(e);
+                    null == _ || _.setClipRecordUser(e, "audio", E)
                 }
                 applyInboundStreamRecording(e, _) {
                     if (!(0, L.default)(T.default) || e === s.default.getId()) return;
@@ -21109,7 +21114,7 @@
                     });
                     if (!E) return;
                     let o = t || l.default.isViewerClippingAllowedForUser(e);
-                    this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", o), _.setClipRecordSSRC(e, "video", "inbound", o)
+                    this.applyNativeClipsSettings(), _.setClipRecordUser(e, "audio", o), _.setClipRecordUser(e, "video", o)
                 }
                 disableClips() {}
                 constructor(...e) {
@@ -21117,7 +21122,6 @@
                         POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
                         RTC_CONNECTION_FLAGS: e => this.handleRTCConnectionFlags(e),
                         VOICE_STATE_UPDATES: e => this.handleVoiceStateUpdates(e),
-                        RTC_CONNECTION_USER_CREATE_SSRC: e => this.handleRTCUserSSRC(e),
                         CLIPS_INIT_FAILURE: e => this.handleClipsInitFailure(e),
                         CLIPS_SETTINGS_UPDATE: e => this.applyNativeClipsSettings(e),
                         STREAM_START: () => this.applyNativeClipsSettings(),
@@ -21164,7 +21168,7 @@
                     let _ = (0, a.areClipsEnabled)(),
                         E = s.default.getSettings(),
                         t = (E.clipsEnabled || E.decoupledClipsEnabled) && _;
-                    r.default.getMediaEngine().setClipBufferLength(t ? E.clipsLength / 1e3 : 0), (null == e ? void 0 : e.settings.decoupledClipsEnabled) && this.fireClipsInitEvent()
+                    r.default.getMediaEngine().setClipBufferLength(t ? E.clipsLength / 1e3 : 0), ((null == e ? void 0 : e.settings.decoupledClipsEnabled) || (null == e ? void 0 : e.settings.clipsQuality) != null) && this.fireClipsInitEvent()
                 }
                 fireClipsInitEventHelper(e) {
                     let _ = i.default.getVisibleGame();
@@ -21182,7 +21186,8 @@
                     (null == t ? void 0 : t.pid) != null && (null == t ? void 0 : t.windowHandle) != null && null != t.name && "" !== t.name && o.default.dispatch({
                         type: "CLIPS_INIT",
                         sourceId: "window:".concat(null == t ? void 0 : t.windowHandle),
-                        applicationName: t.name
+                        applicationName: t.name,
+                        quality: _.clipsQuality
                     })
                 }
                 handleMediaEngineSetHardwareH264(e) {
@@ -29046,8 +29051,11 @@
                 getPlatformName: function() {
                     return u
                 },
-                getOS: function() {
+                getNativePlatform: function() {
                     return L
+                },
+                getOS: function() {
+                    return C
                 }
             }), (o = t || (t = {})).WINDOWS = "WINDOWS", o.OSX = "OSX", o.LINUX = "LINUX", o.WEB = "WEB";
             let n = window.DiscordNative,
@@ -29100,6 +29108,16 @@
             }
 
             function L() {
+                switch (i) {
+                    case "ios":
+                    case "android":
+                        return i;
+                    default:
+                        return "web"
+                }
+            }
+
+            function C() {
                 let {
                     userAgent: e
                 } = window.navigator;
@@ -29584,7 +29602,7 @@
                             E = this.getDiscordUtils().getPidFromWindowHandle(e);
                         return null == E || 0 === E ? null : E
                     }
-                    if ("screen" === E) return 1;
+                    if (E.startsWith("screen")) return 1;
                     return null
                 },
                 getDesktopSourceFromPid(e) {
@@ -36559,4 +36577,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.37c47bef7af05736858d.js.map
+//# sourceMappingURL=66318.cdb9ca08603fd7202c41.js.map

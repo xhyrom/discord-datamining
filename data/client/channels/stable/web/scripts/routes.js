@@ -1933,7 +1933,7 @@
                     family: "gg sans"
                 }]
             });
-            (Rl = _V || (_V = {}))[Rl.UNPAID = 0] = "UNPAID", Rl[Rl.ACTIVE = 1] = "ACTIVE", Rl[Rl.PAST_DUE = 2] = "PAST_DUE", Rl[Rl.CANCELED = 3] = "CANCELED", Rl[Rl.ENDED = 4] = "ENDED", Rl[Rl.ACCOUNT_HOLD = 6] = "ACCOUNT_HOLD", Rl[Rl.BILLING_RETRY = 7] = "BILLING_RETRY", Rl[Rl.PAUSED = 8] = "PAUSED", (Rs = _F || (_F = {}))[Rs.OPEN = 1] = "OPEN", Rs[Rs.PAID = 2] = "PAID", Rs[Rs.VOID = 3] = "VOID", Rs[Rs.UNCOLLECTIBLE = 4] = "UNCOLLECTIBLE";
+            (Rl = _V || (_V = {}))[Rl.UNPAID = 0] = "UNPAID", Rl[Rl.ACTIVE = 1] = "ACTIVE", Rl[Rl.PAST_DUE = 2] = "PAST_DUE", Rl[Rl.CANCELED = 3] = "CANCELED", Rl[Rl.ENDED = 4] = "ENDED", Rl[Rl.ACCOUNT_HOLD = 6] = "ACCOUNT_HOLD", Rl[Rl.BILLING_RETRY = 7] = "BILLING_RETRY", Rl[Rl.PAUSED = 8] = "PAUSED", Rl[Rl.PAUSE_PENDING = 9] = "PAUSE_PENDING", (Rs = _F || (_F = {}))[Rs.OPEN = 1] = "OPEN", Rs[Rs.PAID = 2] = "PAID", Rs[Rs.VOID = 3] = "VOID", Rs[Rs.UNCOLLECTIBLE = 4] = "UNCOLLECTIBLE";
             let ot = "Price changed";
             (RP = _W || (_W = {})).USER = "USER", RP.GLOBAL = "GLOBAL", RP.ROLE = "ROLE", RP.CHANNEL = "CHANNEL", RP.EMOJI = "EMOJI", RP.EMOJI_PREMIUM_UPSELL = "EMOJI_PREMIUM_UPSELL", RP.SLASH = "SLASH", RP.CHOICE = "CHOICE", RP.STICKER = "STICKER", RP.CHOICE_LOADING = "CHOICE_LOADING", RP.LABEL = "LABEL";
             let or = Object.freeze({
@@ -5795,7 +5795,7 @@
                         opacity: 1
                     },
                     [a.LIGHT]: {
-                        raw: "PRIMARY_500",
+                        raw: "PRIMARY_460",
                         opacity: 1
                     },
                     [a.MIDNIGHT]: {
@@ -12106,7 +12106,7 @@
                 "info-warning-text": [e.Color.WHITE_500, e.Color.BLACK_500, e.Color.WHITE_500, e.Color.WHITE_500],
                 "input-background": [e.Color.PRIMARY_700, e.Color.BLACK_500, e.Color.PLUM_23_ALPHA, e.Color.PLUM_24],
                 "input-focused-border": [e.Color.WHITE_500, e.Color.BLACK_500, e.Color.PLUM_11, e.Color.PLUM_11],
-                "input-placeholder-text": [e.Color.INPUT_PLACEHOLDER_TEXT_DARK, e.Color.PRIMARY_500, e.Color.PLUM_9, e.Color.PLUM_10],
+                "input-placeholder-text": [e.Color.INPUT_PLACEHOLDER_TEXT_DARK, e.Color.PRIMARY_460, e.Color.PLUM_9, e.Color.PLUM_10],
                 "interactive-active": [e.Color.WHITE_500, e.Color.PRIMARY_860, e.Color.PLUM_3, e.Color.PLUM_1],
                 "interactive-hover": [e.Color.PRIMARY_230, e.Color.PRIMARY_600, e.Color.PLUM_4, e.Color.PLUM_4],
                 "interactive-muted": [e.Color.PRIMARY_500, e.Color.PRIMARY_300, e.Color.PLUM_13, e.Color.PLUM_13],
@@ -13161,4 +13161,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.69e7c5439886e68aa76a.js.map
+//# sourceMappingURL=7273.62bf824c92dd38e770bb.js.map

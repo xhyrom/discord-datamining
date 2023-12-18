@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["55403"], {
+    ["67615"], {
         273215: function(e, t, n) {
             "use strict";
             e.exports = n.p + "63900a1ba1f23d305c53.png"
@@ -3506,6 +3506,9 @@
                 },
                 useIsActivitiesInTextEnabled: function() {
                     return o
+                },
+                useIsActivitiesInTextActionBarEnabled: function() {
+                    return d
                 }
             });
             var i = n("446674"),
@@ -3516,13 +3519,22 @@
                     id: "2023-08_activities_in_text",
                     label: "Activities in Text User",
                     defaultConfig: {
-                        enabled: !1
+                        enabled: !1,
+                        actionBarEnabled: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "enable Activities in text channels",
                         config: {
-                            enabled: !0
+                            enabled: !0,
+                            actionBarEnabled: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "enable Activities in text channels with action bar",
+                        config: {
+                            enabled: !0,
+                            actionBarEnabled: !0
                         }
                     }]
                 }),
@@ -3531,13 +3543,22 @@
                     id: "2023-11_activities_in_text_guild",
                     label: "Activities in Text Guild",
                     defaultConfig: {
-                        enabled: !1
+                        enabled: !1,
+                        actionBarEnabled: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "enable Activities in text channels",
                         config: {
-                            enabled: !0
+                            enabled: !0,
+                            actionBarEnabled: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "enable Activities in text channels with action bar",
+                        config: {
+                            enabled: !0,
+                            actionBarEnabled: !0
                         }
                     }]
                 });
@@ -3565,6 +3586,18 @@
                         autoTrackExposure: !1
                     });
                 return u.enabled
+            }
+
+            function d(e, t) {
+                let n = (0, i.useStateFromStores)([l.default], () => l.default.getChannel(e)),
+                    a = (null == n ? void 0 : n.guild_id) != null ? r : s,
+                    u = a.useExperiment({
+                        guildId: null == n ? void 0 : n.guild_id,
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    });
+                return u.actionBarEnabled
             }
         },
         810793: function(e, t, n) {
@@ -5133,7 +5166,7 @@
             function U(e) {
                 switch (e) {
                     case p.CommandOrigin.CHAT:
-                        return h.DraftType.ChannelMessage;
+                        return h.DraftType.SlashCommand;
                     case p.CommandOrigin.APPLICATION_LAUNCHER:
                         return h.DraftType.ApplicationLauncherCommand
                 }
@@ -24651,7 +24684,7 @@
                 _ = n("341542"),
                 E = n("49111");
             let h = E.MAX_MESSAGE_LENGTH_PREMIUM + 500;
-            (a = i || (i = {}))[a.ChannelMessage = 0] = "ChannelMessage", a[a.ThreadSettings = 1] = "ThreadSettings", a[a.FirstThreadMessage = 2] = "FirstThreadMessage", a[a.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", a[a.Poll = 4] = "Poll";
+            (a = i || (i = {}))[a.ChannelMessage = 0] = "ChannelMessage", a[a.ThreadSettings = 1] = "ThreadSettings", a[a.FirstThreadMessage = 2] = "FirstThreadMessage", a[a.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", a[a.Poll = 4] = "Poll", a[a.SlashCommand = 5] = "SlashCommand";
             let f = {};
 
             function p(e) {
@@ -28963,12 +28996,12 @@
                         channelId: i,
                         showLargeMessageDialog: l,
                         draftType: s
-                    } = e, d = [...p(i, s)], c = (null === (t = u.default.getCurrentConfig({
+                    } = e, d = [...p(i, s)], h = (null === (t = u.default.getCurrentConfig({
                         location: "373489_1"
                     }, {
                         autoTrackExposure: !1
                     })) || void 0 === t ? void 0 : t.enabled) === !0;
-                    if (c && d.length + n.length > _.MAX_UPLOAD_COUNT) {
+                    if (h && d.length + n.length > _.MAX_UPLOAD_COUNT && s !== c.DraftType.SlashCommand && s !== c.DraftType.ApplicationLauncherCommand) {
                         r.default.show({
                             title: E.default.Messages.ATTACHMENT_TOO_MANY_ERROR_TITLE,
                             body: E.default.Messages.ATTACHMENT_TOO_MANY_ERROR_MESSAGE.format({
@@ -33756,4 +33789,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55403.40bca05f8e5ab220950a.js.map
+//# sourceMappingURL=67615.69f5e0c1798811781b88.js.map

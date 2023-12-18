@@ -1038,7 +1038,7 @@
                 "./1f468-1f3fe-200d-1f9b2.svg": "469475",
                 "./1f468-1f3fe-200d-1f9b3.svg": "331755",
                 "./1f468-1f3fe-200d-1f9bc.svg": "67773",
-                "./1f468-1f3fe-200d-1f9bd.svg": "49003",
+                "./1f468-1f3fe-200d-1f9bd.svg": "627425",
                 "./1f468-1f3fe-200d-2695-fe0f.svg": "294967",
                 "./1f468-1f3fe-200d-2696-fe0f.svg": "23049",
                 "./1f468-1f3fe-200d-2708-fe0f.svg": "642025",
@@ -1666,7 +1666,7 @@
                 "./1f486-1f3ff-200d-2642-fe0f.svg": "189250",
                 "./1f486-1f3ff.svg": "252267",
                 "./1f486-200d-2640-fe0f.svg": "951884",
-                "./1f486-200d-2642-fe0f.svg": "34863",
+                "./1f486-200d-2642-fe0f.svg": "501952",
                 "./1f486.svg": "769743",
                 "./1f487-1f3fb-200d-2640-fe0f.svg": "469872",
                 "./1f487-1f3fb-200d-2642-fe0f.svg": "633179",
@@ -2066,7 +2066,7 @@
                 "./1f634.svg": "674483",
                 "./1f635-200d-1f4ab.svg": "284352",
                 "./1f635.svg": "96593",
-                "./1f636-200d-1f32b-fe0f.svg": "459767",
+                "./1f636-200d-1f32b-fe0f.svg": "878456",
                 "./1f636.svg": "343831",
                 "./1f637.svg": "425578",
                 "./1f638.svg": "484497",
@@ -2126,7 +2126,7 @@
                 "./1f647-1f3fc.svg": "514026",
                 "./1f647-1f3fd-200d-2640-fe0f.svg": "202775",
                 "./1f647-1f3fd-200d-2642-fe0f.svg": "229753",
-                "./1f647-1f3fd.svg": "48843",
+                "./1f647-1f3fd.svg": "459767",
                 "./1f647-1f3fe-200d-2640-fe0f.svg": "846076",
                 "./1f647-1f3fe-200d-2642-fe0f.svg": "797608",
                 "./1f647-1f3fe.svg": "827368",
@@ -2424,7 +2424,7 @@
                 "./1f916.svg": "807382",
                 "./1f917.svg": "191698",
                 "./1f918-1f3fb.svg": "503638",
-                "./1f918-1f3fc.svg": "525198",
+                "./1f918-1f3fc.svg": "389023",
                 "./1f918-1f3fd.svg": "923397",
                 "./1f918-1f3fe.svg": "600551",
                 "./1f918-1f3ff.svg": "7286",
@@ -2579,7 +2579,7 @@
                 "./1f938-1f3fb-200d-2640-fe0f.svg": "267169",
                 "./1f938-1f3fb-200d-2642-fe0f.svg": "925138",
                 "./1f938-1f3fb.svg": "213681",
-                "./1f938-1f3fc-200d-2640-fe0f.svg": "878470",
+                "./1f938-1f3fc-200d-2640-fe0f.svg": "34863",
                 "./1f938-1f3fc-200d-2642-fe0f.svg": "888104",
                 "./1f938-1f3fc.svg": "420411",
                 "./1f938-1f3fd-200d-2640-fe0f.svg": "493728",
@@ -2718,7 +2718,7 @@
                 "./1f97a.svg": "194861",
                 "./1f97b.svg": "955293",
                 "./1f97c.svg": "874798",
-                "./1f97d.svg": "240856",
+                "./1f97d.svg": "525198",
                 "./1f97e.svg": "468427",
                 "./1f97f.svg": "636477",
                 "./1f980.svg": "323679",
@@ -2849,7 +2849,7 @@
                 "./1f9cc.svg": "117456",
                 "./1f9cd-1f3fb-200d-2640-fe0f.svg": "477781",
                 "./1f9cd-1f3fb-200d-2642-fe0f.svg": "586234",
-                "./1f9cd-1f3fb.svg": "627425",
+                "./1f9cd-1f3fb.svg": "237264",
                 "./1f9cd-1f3fc-200d-2640-fe0f.svg": "107520",
                 "./1f9cd-1f3fc-200d-2642-fe0f.svg": "264431",
                 "./1f9cd-1f3fc.svg": "332573",
@@ -3201,7 +3201,7 @@
                 "./1f9d8-1f3fb.svg": "885396",
                 "./1f9d8-1f3fc-200d-2640-fe0f.svg": "778378",
                 "./1f9d8-1f3fc-200d-2642-fe0f.svg": "729260",
-                "./1f9d8-1f3fc.svg": "303464",
+                "./1f9d8-1f3fc.svg": "41843",
                 "./1f9d8-1f3fd-200d-2640-fe0f.svg": "911326",
                 "./1f9d8-1f3fd-200d-2642-fe0f.svg": "273395",
                 "./1f9d8-1f3fd.svg": "145345",
@@ -3352,7 +3352,7 @@
                 "./1fa77.svg": "690219",
                 "./1fa78.svg": "895838",
                 "./1fa79.svg": "499969",
-                "./1fa7a.svg": "41843",
+                "./1fa7a.svg": "199752",
                 "./1fa7b.svg": "956769",
                 "./1fa7c.svg": "734823",
                 "./1fa80.svg": "107669",
@@ -23153,8 +23153,8 @@
                 O = n("858619"),
                 x = n("867805"),
                 U = n("802461"),
-                T = n("26430"),
-                R = n("958706"),
+                R = n("26430"),
+                T = n("958706"),
                 N = n("115279"),
                 A = n("397336");
             let L = [N.EmojiCategories.TOP_GUILD_EMOJI.toString(), N.EmojiCategories.FAVORITES.toString(), N.EmojiCategories.RECENT.toString(), N.EmojiCategories.CUSTOM.toString()].concat(x.default.getCategories()),
@@ -23311,7 +23311,7 @@
                     if (this.ensureDisambiguated(), null == this.topEmojis) {
                         var s;
                         let n = Y.get(e),
-                            i = T.default.getTopEmojiIdsByGuildId(e);
+                            i = R.default.getTopEmojiIdsByGuildId(e);
                         if (null == n && null == i) return z;
                         let r = null !== (s = null == n ? void 0 : n.emojiIds) && void 0 !== s ? s : i,
                             o = r.map(e => {
@@ -23331,20 +23331,6 @@
                     if (this.ensureDisambiguated(), null == this.newlyAddedEmoji) return z;
                     let s = this.newlyAddedEmoji[e];
                     return null == s ? z : s
-                }
-                getBackfillTopEmojis(e) {
-                    let s = this.getGroupedCustomEmoji();
-                    if (null == s) return z;
-                    if (null == this.backfillTopEmojis[e]) {
-                        let n = this.getNewlyAddedEmojiForGuild(e).map(e => e.id),
-                            i = this.getTopEmojiWithoutFetchingLatest(e).map(e => e.id);
-                        if (null != s[e]) {
-                            let r = s[e].filter(e => !n.includes(e.id) && !i.includes(e.id)),
-                                o = n.length + i.length;
-                            this.backfillTopEmojis[e] = r.sort((e, s) => S.default.compare(e.id, s.id)).slice(0, o < 9 ? 9 - o : 0)
-                        } else this.backfillTopEmojis[e] = z
-                    }
-                    return this.backfillTopEmojis[e]
                 }
                 getEscapedCustomEmoticonNames() {
                     return null == this.escapedEmoticonNames && this._buildDisambiguatedCustomEmoji(), this.escapedEmoticonNames
@@ -23408,7 +23394,7 @@
                     }), this.escapedEmoticonNames = s.join("|")
                 }
                 constructor(e) {
-                    this.emoticonRegex = null, this.frequentlyUsed = null, this.favorites = null, this.favoriteNamesAndIds = null, this.topEmojis = null, this.escapedEmoticonNames = null, this.disambiguatedEmoji = null, this.newlyAddedEmoji = null, this.backfillTopEmojis = {}, this.isFavoriteEmojiWithoutFetchingLatest = e => {
+                    this.emoticonRegex = null, this.frequentlyUsed = null, this.favorites = null, this.favoriteNamesAndIds = null, this.topEmojis = null, this.escapedEmoticonNames = null, this.disambiguatedEmoji = null, this.newlyAddedEmoji = null, this.isFavoriteEmojiWithoutFetchingLatest = e => {
                         var s;
                         if (null == e) return !1;
                         let n = this.rebuildFavoriteEmojisWithoutFetchingLatest()[1];
@@ -23497,7 +23483,7 @@
             }
             class e_ extends f.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(u.default, p.default, w.default, D.default, V.default, k.default, l.default, T.default, C.default), null != e && (F = e), this.syncWith([b.default], eo), this.syncWith([V.default], ef)
+                    this.waitFor(u.default, p.default, w.default, D.default, V.default, k.default, l.default, R.default, C.default), null != e && (F = e), this.syncWith([b.default], eo), this.syncWith([V.default], ef)
                 }
                 getState() {
                     return F
@@ -23579,7 +23565,7 @@
                                 canViewAndUsePackEmoji: a,
                                 forceIncludeExternalGuilds: t
                             });
-                            return i === R.EmojiDisabledReasons.PREMIUM_LOCKED ? e.locked.push(s) : null == i && e.unlocked.push(s), e
+                            return i === T.EmojiDisabledReasons.PREMIUM_LOCKED ? e.locked.push(s) : null == i && e.unlocked.push(s), e
                         }, {
                             unlocked: [],
                             locked: []
@@ -23605,9 +23591,6 @@
                 }
                 getNewlyAddedEmoji(e) {
                     return null == e ? z : (Z(), Q.get(e).getNewlyAddedEmojiForGuild(e))
-                }
-                getBackfillTopEmojis(e) {
-                    return null == e ? z : (Z(), Q.get(e).getBackfillTopEmojis(e))
                 }
                 getTopEmojisMetadata(e) {
                     return Y.get(e)
@@ -25193,4 +25176,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98086.9295667d7fc218bd525c.js.map
+//# sourceMappingURL=98086.48d1ce374b9e151c1e25.js.map

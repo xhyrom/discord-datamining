@@ -5373,6 +5373,8 @@
                 clipThumb: "clipThumb__90837",
                 clipThumbContainer: "clipThumbContainer_f469a2",
                 clipTitle: "clipTitle__779d0",
+                clipTitleInput: "clipTitleInput_f80ecf",
+                clipTitleInputPlaceholder: "clipTitleInputPlaceholder__5c743",
                 disabled: "disabled__29897",
                 miniIcon: "miniIcon_d6c101",
                 newIcon: "newIcon__98982",
@@ -15294,9 +15296,10 @@
                 cta: "cta__86081",
                 iconGroup: "iconGroup__93485",
                 outline: "outline__8f17a statusIcon__3e5cd",
+                popout: "popout__7a706",
+                popoutWrapper: "popoutWrapper_b99dc6",
                 statusGroup: "statusGroup_ebfa6c",
-                statusIcon: "statusIcon__3e5cd",
-                wrapper: "wrapper__139c2"
+                statusIcon: "statusIcon__3e5cd"
             }
         },
         492013: function(e, t, o) {
@@ -15305,31 +15308,20 @@
                 comingSoonIcon: "comingSoonIcon_d5180a",
                 customIcon: "customIcon_a37db4",
                 defaultIcon: "defaultIcon__8ffba",
-                deleteOption: "deleteOption_c9549f",
                 disabledWidget: "disabledWidget_a64d38",
                 divider: "divider__26943",
                 editIcon: "editIcon__562b8",
-                editOption: "editOption_fbe509",
+                editIconColor: "editIconColor_e9a173",
                 icon: "icon__7eecf",
                 iconWidget: "iconWidget_db0821",
                 iconsContainer: "iconsContainer__44b35",
-                optionIcon: "optionIcon__4e55f",
-                popoutOption: "popoutOption__8c8cf",
-                popoutTitle: "popoutTitle__00ba8",
+                optionButton: "optionButton_e99332",
+                popout: "popout__4c91f",
                 popoutWrapper: "popoutWrapper__16db8",
-                recentIcon: "recentIcon__43beb",
                 selectedWidget: "selectedWidget__1e288",
+                setCustomButton: "setCustomButton__99e98",
                 statusButtonRegion: "statusButtonRegion__47ea7",
                 statusWidget: "statusWidget__878ca"
-            }
-        },
-        207509: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                iconWidget: "iconWidget_b2ac71",
-                statusGroup: "statusGroup__7809a",
-                statusIcon: "statusIcon__87cd6",
-                statusText: "statusText__40040"
             }
         },
         961282: function(e, t, o) {
@@ -19363,7 +19355,8 @@
             "use strict";
             e.exports = {
                 attachmentImage: "attachmentImage__468d1",
-                enabled: "enabled__75d0c"
+                enabled: "enabled__75d0c",
+                listItemButton: "listItemButton_a98837"
             }
         },
         314164: function(e, t, o) {
@@ -20232,6 +20225,8 @@
                 cardText: "cardText__2fe30",
                 container: "container_aafa76",
                 content: "content__666df",
+                duplicateSubscriptionsBanner: "duplicateSubscriptionsBanner_e2aeea",
+                duplicateSubscriptionsBannerText: "duplicateSubscriptionsBannerText_ae1ef0",
                 loading: "loading__007c1",
                 noItemsCard: "noItemsCard_f473e7",
                 noItemsIcon: "noItemsIcon__38ca2",

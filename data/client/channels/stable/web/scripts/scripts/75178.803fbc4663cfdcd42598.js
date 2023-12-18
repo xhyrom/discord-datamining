@@ -495,10 +495,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 updateAllowVoiceRecording: function() {
-                    return w
+                    return T
                 },
                 updateClipsEnabled: function() {
-                    return T
+                    return w
                 },
                 updateDecoupledClipsEnabled: function() {
                     return D
@@ -506,34 +506,37 @@
                 updateClipsStorageLocation: function() {
                     return P
                 },
-                updateClipsLength: function() {
+                updateClipsQuality: function() {
                     return N
                 },
-                updateViewerClipsEnabled: function() {
+                updateClipsLength: function() {
                     return k
                 },
-                saveClip: function() {
-                    return O
+                updateViewerClipsEnabled: function() {
+                    return U
                 },
-                updateClipMetadata: function() {
+                saveClip: function() {
                     return M
                 },
-                clearClipsSession: function() {
+                updateClipMetadata: function() {
                     return F
                 },
-                clearNewClipIds: function() {
+                clearClipsSession: function() {
                     return V
                 },
-                loadClipsDirectory: function() {
+                clearNewClipIds: function() {
                     return j
                 },
-                deleteClip: function() {
+                loadClipsDirectory: function() {
                     return G
                 },
-                exportClip: function() {
+                deleteClip: function() {
                     return B
+                },
+                exportClip: function() {
+                    return H
                 }
-            }), n("222007"), n("70102"), n("424973");
+            }), n("222007"), n("424973");
             var i = n("750028"),
                 a = n("913144"),
                 u = n("49671"),
@@ -555,12 +558,12 @@
                 C = n("13136"),
                 E = n("881095"),
                 I = n("997942"),
-                A = n("310238"),
-                y = n("99366"),
+                y = n("310238"),
+                A = n("99366"),
                 x = n("80028"),
                 L = n("49111");
 
-            function w(e) {
+            function T(e) {
                 let {
                     allowVoiceRecording: t
                 } = e;
@@ -572,7 +575,7 @@
                     allow_voice_recording: t
                 })
             }
-            async function T(e) {
+            async function w(e) {
                 let {
                     clipsEnabled: t,
                     guildId: n,
@@ -629,12 +632,21 @@
                 a.default.dispatch({
                     type: "CLIPS_SETTINGS_UPDATE",
                     settings: {
-                        clipsLength: e
+                        clipsQuality: e
                     }
                 })
             }
 
             function k(e) {
+                a.default.dispatch({
+                    type: "CLIPS_SETTINGS_UPDATE",
+                    settings: {
+                        clipsLength: e
+                    }
+                })
+            }
+
+            function U(e) {
                 a.default.dispatch({
                     type: "CLIPS_SETTINGS_UPDATE",
                     settings: {
@@ -681,78 +693,68 @@
                     saved_at: t.savedAt
                 }
             }
-            async function U(e) {
-                var t, n;
-                let i;
-                let r = S.default.getSettings(),
-                    s = r.storageLocation,
-                    d = (0, E.default)(e),
-                    l = "".concat((0, C.default)(d.applicationName.substring(0, 20)), "_").concat(d.id, ".mp4"),
-                    c = u.default.fileManager.join(s, l),
-                    _ = m.default.getMediaEngine(),
-                    b = JSON.stringify(d);
-                if (null != e) {
-                    let n = g.default.getRTCConnection(e);
-                    if (null == n) throw Error("could not find RTC connection");
-                    let {
-                        ownerId: a
-                    } = (0, o.decodeStreamKey)(e), [u, r] = null !== (t = n.getSSRCsForUser(a)) && void 0 !== t ? t : [];
-                    if (null == u || null == r) throw Error("Could not find target SSRCs");
-                    let s = u[0];
-                    i = _.saveClipForSSRC.bind(_, a, s, r)
-                } else i = _.saveClip.bind(_);
-                let h = function(e) {
-                    var t;
-                    let n, i, a;
-                    if (null != e) {
-                        n = null != e ? g.default.getRTCConnection(e) : null;
-                        let t = (0, o.decodeStreamKey)(e);
-                        i = t.guildId, a = t.channelId
-                    } else {
-                        let e = f.default.getId(),
-                            t = p.default.getActiveStreamForUser(e, null);
-                        n = null != t ? g.default.getRTCConnection((0, o.encodeStreamKey)(t)) : null, i = null == t ? void 0 : t.guildId, a = null == t ? void 0 : t.channelId
-                    }
-                    let u = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
-                    return {
-                        rtc_connection_id: null == n ? void 0 : n.getRTCConnectionId(),
-                        media_session_id: null == n ? void 0 : n.getMediaSessionId(),
-                        parent_media_session_id: null == n ? void 0 : n.parentMediaSessionId,
-                        guild_id: i,
-                        channel_id: a,
-                        application_id: null == u ? void 0 : u.id,
-                        application_name: null == u ? void 0 : u.name
-                    }
-                }(e);
+            async function O(e) {
+                let t = S.default.getSettings(),
+                    n = t.storageLocation,
+                    i = (0, E.default)(e),
+                    r = "".concat((0, C.default)(i.applicationName.substring(0, 20)), "_").concat(i.id, ".mp4"),
+                    s = u.default.fileManager.join(n, r),
+                    d = m.default.getMediaEngine(),
+                    l = JSON.stringify(i),
+                    c = null != e ? (0, o.decodeStreamKey)(e).ownerId : void 0,
+                    _ = function(e) {
+                        var t;
+                        let n, i, a;
+                        if (null != e) {
+                            n = null != e ? g.default.getRTCConnection(e) : null;
+                            let t = (0, o.decodeStreamKey)(e);
+                            i = t.guildId, a = t.channelId
+                        } else {
+                            let e = f.default.getId(),
+                                t = p.default.getActiveStreamForUser(e, null);
+                            n = null != t ? g.default.getRTCConnection((0, o.encodeStreamKey)(t)) : null, i = null == t ? void 0 : t.guildId, a = null == t ? void 0 : t.channelId
+                        }
+                        let u = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
+                        return {
+                            rtc_connection_id: null == n ? void 0 : n.getRTCConnectionId(),
+                            media_session_id: null == n ? void 0 : n.getMediaSessionId(),
+                            parent_media_session_id: null == n ? void 0 : n.parentMediaSessionId,
+                            guild_id: i,
+                            channel_id: a,
+                            application_id: null == u ? void 0 : u.id,
+                            application_name: null == u ? void 0 : u.name
+                        }
+                    }(e);
                 null != e && a.default.dispatch({
                     type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
                     clip: {
-                        ...d,
-                        filepath: c
+                        ...i,
+                        filepath: s
                     }
                 });
                 try {
+                    var b;
                     let {
                         duration: e,
                         thumbnail: t,
-                        clipStats: a
-                    } = await i(c, b), r = R(h, a);
-                    r.clip_save_time_ms = a.clipSaveTimeMs, r.clip_size_bytes = a.clipSizeBytes, null != a.viewerDecodeFps && (r.decode_fps_during_clip = a.viewerDecodeFps, r.encode_fps_during_clip = a.viewerEncodeFps, r.target_fps = null), v.default.track(L.AnalyticEvents.CLIP_SAVED, r);
-                    let o = await (null != u.default.clips.getClipProtocolURLFromPath ? (0, y.createThumbnailFromVideo)(u.default.clips.getClipProtocolURLFromPath(c), 0) : (0, y.createThumbnail)(t));
-                    return d.thumbnail = o, d.length = e, x.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (n = null == o ? void 0 : o.length) && void 0 !== n ? n : 0, " bytes thumbnail.")), await _.updateClipMetadata(c, JSON.stringify(d)), {
-                        ...d,
-                        filepath: c
+                        clipStats: n
+                    } = await (null != c ? d.saveClipForUser(c, s, l) : d.saveClip(s, l)), a = R(_, n);
+                    a.clip_save_time_ms = n.clipSaveTimeMs, a.clip_size_bytes = n.clipSizeBytes, null != n.viewerDecodeFps && (a.decode_fps_during_clip = n.viewerDecodeFps, a.encode_fps_during_clip = n.viewerEncodeFps, a.target_fps = null), v.default.track(L.AnalyticEvents.CLIP_SAVED, a);
+                    let r = await (null != u.default.clips.getClipProtocolURLFromPath ? (0, A.createThumbnailFromVideo)(u.default.clips.getClipProtocolURLFromPath(s), 0) : (0, A.createThumbnail)(t));
+                    return i.thumbnail = r, i.length = e, x.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (b = null == r ? void 0 : r.length) && void 0 !== b ? b : 0, " bytes thumbnail.")), await d.updateClipMetadata(s, JSON.stringify(i)), {
+                        ...i,
+                        filepath: s
                     }
                 } catch (n) {
                     if (null != e && a.default.dispatch({
                             type: "CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR",
-                            clipId: d.id
-                        }), !("errorMessage" in n)) throw v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, h), n;
-                    let t = R(h, n);
+                            clipId: i.id
+                        }), !("errorMessage" in n)) throw v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, _), n;
+                    let t = R(_, n);
                     throw t.error_at = n.errorAt, t.error_message = n.errorMessage, v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
                 }
             }
-            async function O(e) {
+            async function M(e) {
                 var t;
                 let {
                     enableDecoupledGameClipping: n
@@ -770,27 +772,29 @@
                 if (S.default.getIsAtMaxSaveClipOperations()) return;
                 let u = S.default.getSettings().clipsEnabled && null != p.default.getCurrentUserActiveStream(),
                     r = n && S.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null,
-                    o = null != e && null != p.default.getActiveStreamForStreamKey(e) && i;
-                if (!u && !r && !o) return;
+                    l = null != e && null != p.default.getActiveStreamForStreamKey(e) && i;
+                if (!u && !r && !l) return;
+                let c = p.default.getCurrentUserActiveStream(),
+                    f = null != c ? (0, o.encodeStreamKey)(c) : void 0;
                 a.default.dispatch({
                     type: "CLIPS_SAVE_CLIP_START"
                 });
-                let l = (0, h.playSound)("clip_save", .5),
-                    c = performance.now();
+                let m = (0, h.playSound)("clip_save", .5),
+                    g = performance.now();
                 try {
-                    let t = await U(e);
+                    let t = await O(null != e ? e : f);
                     a.default.dispatch({
                         type: "CLIPS_SAVE_CLIP",
                         clip: t
                     })
                 } catch (e) {
-                    x.ClipsLogger.error("Clip Failed to Save", e), null == l || l.stop(), (0, h.playSound)("clip_error", .5), a.default.dispatch({
+                    x.ClipsLogger.error("Clip Failed to Save", e), null == m || m.stop(), (0, h.playSound)("clip_error", .5), a.default.dispatch({
                         type: "CLIPS_SAVE_CLIP_ERROR"
                     })
                 }
-                x.ClipsLogger.info("".concat(S.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - c), "ms"))
+                x.ClipsLogger.info("".concat(S.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - g), "ms"))
             }
-            async function M(e, t) {
+            async function F(e, t) {
                 let n = S.default.getClips().find(t => t.id === e);
                 if (null == n) return;
                 let i = {
@@ -805,18 +809,18 @@
                 })
             }
 
-            function F() {
+            function V() {
                 a.default.dispatch({
                     type: "CLIPS_CLEAR_CLIPS_SESSION"
                 })
             }
 
-            function V() {
+            function j() {
                 a.default.dispatch({
                     type: "CLIPS_CLEAR_NEW_CLIP_IDS"
                 })
             }
-            async function j(e) {
+            async function G(e) {
                 var t;
                 if (!(0, b.isDesktop)() || (null === (t = u.default.clips) || void 0 === t ? void 0 : t.loadClipsDirectory) == null) return;
                 let n = await u.default.clips.loadClipsDirectory(e),
@@ -833,17 +837,17 @@
                     clips: i
                 })
             }
-            async function G(e) {
+            async function B(e) {
                 var t;
                 (0, b.isDesktop)() && (null === (t = u.default.clips) || void 0 === t ? void 0 : t.deleteClip) != null && (await u.default.clips.deleteClip(e), a.default.dispatch({
                     type: "CLIPS_DELETE_CLIP",
                     filepath: e
                 }))
             }
-            async function B(e, t) {
+            async function H(e, t) {
                 let n = m.default.getMediaEngine(),
                     i = await n.exportClip(e.filepath, t);
-                return (0, A.default)(i)
+                return (0, y.default)(i)
             }
         },
         310238: function(e, t, n) {
@@ -1196,4 +1200,4 @@
         }
     }
 ]);
-//# sourceMappingURL=75178.f10adf73a688088e6e05.js.map
+//# sourceMappingURL=75178.803fbc4663cfdcd42598.js.map
