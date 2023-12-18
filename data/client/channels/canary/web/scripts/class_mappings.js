@@ -15294,9 +15294,10 @@
                 cta: "cta__86081",
                 iconGroup: "iconGroup__93485",
                 outline: "outline__8f17a statusIcon__3e5cd",
+                popout: "popout__7a706",
+                popoutWrapper: "popoutWrapper_b99dc6",
                 statusGroup: "statusGroup_ebfa6c",
-                statusIcon: "statusIcon__3e5cd",
-                wrapper: "wrapper__139c2"
+                statusIcon: "statusIcon__3e5cd"
             }
         },
         492013: function(e, t, o) {
@@ -15305,20 +15306,18 @@
                 comingSoonIcon: "comingSoonIcon_d5180a",
                 customIcon: "customIcon_a37db4",
                 defaultIcon: "defaultIcon__8ffba",
-                deleteOption: "deleteOption_c9549f",
                 disabledWidget: "disabledWidget_a64d38",
                 divider: "divider__26943",
                 editIcon: "editIcon__562b8",
-                editOption: "editOption_fbe509",
+                editIconColor: "editIconColor_e9a173",
                 icon: "icon__7eecf",
                 iconWidget: "iconWidget_db0821",
                 iconsContainer: "iconsContainer__44b35",
-                optionIcon: "optionIcon__4e55f",
-                popoutOption: "popoutOption__8c8cf",
-                popoutTitle: "popoutTitle__00ba8",
+                optionButton: "optionButton_e99332",
+                popout: "popout__4c91f",
                 popoutWrapper: "popoutWrapper__16db8",
-                recentIcon: "recentIcon__43beb",
                 selectedWidget: "selectedWidget__1e288",
+                setCustomButton: "setCustomButton__99e98",
                 statusButtonRegion: "statusButtonRegion__47ea7",
                 statusWidget: "statusWidget__878ca"
             }

@@ -2806,7 +2806,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -2837,8 +2837,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -19410,8 +19410,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -43658,34 +43658,24 @@ html .progress__4ef76 {
 }
 
 .popoutWrapper__16db8 {
+    padding-left: 16px
+}
+
+.popout__4c91f {
     background-color: var(--background-secondary-alt);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    max-width: 216px;
+    max-width: 192px;
     justify-content: center;
-    padding-top: 12px
-}
-
-.popoutTitle__00ba8 {
-    text-transform: uppercase;
-    margin: 12px 12px 4px;
-    display: flex;
-    flex-direction: row;
-    align-items: center
-}
-
-.recentIcon__43beb {
-    height: 14px;
-    width: 14px;
-    margin-right: 4px
+    padding: 12px
 }
 
 .iconsContainer__44b35 {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 4px 12px
+    padding: 4px 0
 }
 
 .iconWidget_db0821 {
@@ -43709,6 +43699,36 @@ html .progress__4ef76 {
     background-color: var(--background-accent)
 }
 
+.optionButton_e99332 {
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-active);
+    background-color: var(--background-message-highlight-hover)
+}
+
+.optionButton_e99332:hover {
+    border: 1px solid var(--background-modifier-active);
+    background-color: var(--background-modifier-active)
+}
+
+.setCustomButton__99e98 {
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--background-message-highlight-hover);
+    background-color: var(--background-message-highlight-hover);
+    padding: 8px 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.setCustomButton__99e98:hover {
+    border: 1px solid var(--background-modifier-active);
+    background-color: var(--background-modifier-active)
+}
+
 .icon__7eecf {
     height: 24px;
     width: 24px;
@@ -43728,38 +43748,15 @@ html .progress__4ef76 {
 .divider__26943 {
     height: 1px;
     background-color: var(--background-modifier-hover);
-    margin: 8px 0 0
+    margin: 8px 0
 }
 
-.popoutOption__8c8cf {
-    cursor: pointer;
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    padding: 8px 12px
+.editIcon__562b8 {
+    height: 24px;
+    width: 24px
 }
 
-.popoutOption__8c8cf:hover {
-    background-color: var(--background-modifier-hover)
-}
-
-.editOption_fbe509 {
-    margin-bottom: 0;
-    margin-top: 4px
-}
-
-.deleteOption_c9549f {
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    padding-bottom: 12px
-}
-
-.optionIcon__4e55f {
-    height: 12px;
-    width: 12px
-}
-
-.editIcon__562b8,
+.editIconColor_e9a173,
 .defaultIcon__8ffba {
     color: var(--interactive-normal)
 }
@@ -43772,7 +43769,11 @@ html .progress__4ef76 {
     border: 1px solid var(--interactive-active)
 }
 
-.wrapper__139c2 {
+.popoutWrapper_b99dc6 {
+    padding-left: 16px
+}
+
+.popout__7a706 {
     background-color: var(--background-secondary-alt);
     padding: 16px;
     width: 252px;
@@ -124183,4 +124184,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.385fa504986f7681cb36.css.map*/
+/*# sourceMappingURL=app.bf8989c62c4c873adbb8.css.map*/
