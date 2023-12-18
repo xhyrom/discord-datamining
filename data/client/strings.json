@@ -9361,6 +9361,7 @@
   "GO_LIVE_SHARE_SCREEN": "\"Screen\"",
   "GO_LIVE_WATCHING_USER": "\"Watching {username}\"",
   "GO_LIVE_MODAL_NOTIFY_FRIENDS_CHECKBOX_LABEL": "\"Notify my friends in this server that I'm streaming.\"",
+  "GO_LIVE_MODAL_ENABLE_SCREEN_SOUNDSHARE_LABEL": "\"Also share system audio.\"",
   "VOICE_CHANNEL_EFFECTS": "\"Voice Channel Effects\"",
   "VOICE_CHANNEL_EFFECTS_COOLDOWN": "\"Reaction Cooldown {seconds}s\"",
   "VOICE_CHANNEL_EFFECTS_MORE": "\"More Reactions\"",
