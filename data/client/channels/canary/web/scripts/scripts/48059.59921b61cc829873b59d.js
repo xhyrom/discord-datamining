@@ -3562,6 +3562,18 @@
                     shouldSync: !1,
                     settings: r.pick(i, ["theme", "clientThemeSettings", "developerMode"])
                 }), o
+            }, e => {
+                var t, n;
+                if ((null == e ? void 0 : null === (n = e.appearance) || void 0 === n ? void 0 : null === (t = n.settings) || void 0 === t ? void 0 : t.theme) === "amoled") return {
+                    ...e,
+                    appearance: {
+                        ...e.appearance,
+                        settings: {
+                            ...e.appearance.settings,
+                            theme: "midnight"
+                        }
+                    }
+                }
             }];
             var d = new c(l.default, {
                 SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: function(e) {
@@ -5267,7 +5279,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "255325", "255325"), 10);
+                let o = parseInt((n = "255326", "255326"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5509,4 +5521,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.3d8ce2808de64eeed911.js.map
+//# sourceMappingURL=48059.59921b61cc829873b59d.js.map
