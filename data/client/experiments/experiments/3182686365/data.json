@@ -24,8 +24,7 @@
     },
     "aa_mode": false,
     "config_keys": [
-      "showWidget",
-      "voiceChannelActivityNotifsEnabled"
+      "enabled"
     ]
   },
   "rollout": {
