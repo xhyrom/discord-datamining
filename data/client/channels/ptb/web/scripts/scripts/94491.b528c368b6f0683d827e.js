@@ -1,28 +1,32 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     ["94491"], {
-        979295: function(e, t, a) {
+        185769: function(e, t, a) {
             "use strict";
-            e.exports = a.p + "bf10b4db797e1264170f.gif"
+            e.exports = a.p + "ecc14d613a0539cb4a93.svg"
         },
-        672407: function(e, t, a) {
+        156589: function(e, t, a) {
             "use strict";
-            e.exports = a.p + "fe7719aef8a8e68f0648.gif"
+            e.exports = a.p + "23832fe21a4aab1ebc38.svg"
         },
-        341117: function(e, t, a) {
+        608249: function(e, t, a) {
             "use strict";
-            e.exports = a.p + "444ef3f0048b8d30799f.gif"
+            e.exports = a.p + "585164866cd6fa502f13.svg"
         },
-        268351: function(e, t, a) {
+        500246: function(e, t, a) {
             "use strict";
-            e.exports = a.p + "70d38d06990a137df664.gif"
+            e.exports = a.p + "6c0d132178a5cd0ff8a2.svg"
         },
-        528906: function(e, t, a) {
+        445449: function(e, t, a) {
             "use strict";
-            e.exports = a.p + "32f57771152bf03eeff1.gif"
+            e.exports = a.p + "96a66151bbd353da5d7b.svg"
         },
-        220054: function(e, t, a) {
+        52880: function(e, t, a) {
             "use strict";
-            e.exports = a.p + "f49a39b40eb9d180fc88.gif"
+            e.exports = a.p + "7691d13e8cb9054e1583.svg"
+        },
+        978173: function(e, t, a) {
+            "use strict";
+            e.exports = a.p + "5f6f425f0d94c6e3a217.svg"
         },
         696246: function(e, t, a) {
             "use strict";
@@ -411,24 +415,25 @@
             "use strict";
             a.r(t), a.d(t, {
                 getHangStatusOptions: function() {
-                    return c
-                },
-                getHangStatusDetails: function() {
                     return f
                 },
-                getHangStatusText: function() {
+                getHangStatusDetails: function() {
                     return T
+                },
+                getHangStatusText: function() {
+                    return E
                 }
             });
             var n = a("49111"),
                 l = a("782340"),
-                s = a("979295"),
-                i = a("672407"),
-                r = a("341117"),
-                u = a("268351"),
-                o = a("528906"),
-                d = a("220054");
-            let c = () => ({
+                s = a("185769"),
+                i = a("156589"),
+                r = a("608249"),
+                u = a("500246"),
+                o = a("445449"),
+                d = a("52880"),
+                c = a("978173");
+            let f = () => ({
                     [n.HangStatusTypes.CHILLING]: {
                         title: l.default.Messages.STATUS_CHILLING,
                         icon: i,
@@ -437,45 +442,51 @@
                     },
                     [n.HangStatusTypes.GAMING]: {
                         title: l.default.Messages.STATUS_GAMING,
-                        icon: o,
+                        icon: r,
                         color: "#554E72",
                         size: null
                     },
                     [n.HangStatusTypes.FOCUSING]: {
                         title: l.default.Messages.STATUS_FOCUSING,
-                        icon: s,
+                        icon: o,
                         color: "#725F4E",
                         size: "28px"
                     },
                     [n.HangStatusTypes.BRB]: {
                         title: l.default.Messages.STATUS_BRB,
-                        icon: u,
+                        icon: s,
                         color: "#6B4E72",
                         size: "26px"
                     },
                     [n.HangStatusTypes.EATING]: {
                         title: l.default.Messages.STATUS_EATING,
-                        icon: d,
+                        icon: u,
                         color: "#57724E",
                         size: "20px"
                     },
                     [n.HangStatusTypes.IN_TRANSIT]: {
                         title: l.default.Messages.STATUS_IN_TRANSIT,
-                        icon: r,
+                        icon: d,
+                        color: "#726C4E",
+                        size: null
+                    },
+                    [n.HangStatusTypes.WATCHING]: {
+                        title: l.default.Messages.STATUS_WATCHING,
+                        icon: c,
                         color: "#726C4E",
                         size: null
                     }
                 }),
-                f = e => {
+                T = e => {
                     if ((null == e ? void 0 : e.type) !== n.ActivityTypes.HANG_STATUS || (null == e ? void 0 : e.state) == null) return null;
                     let t = e.state;
-                    return t === n.HangStatusTypes.CUSTOM ? null : c()[t]
+                    return t === n.HangStatusTypes.CUSTOM ? null : f()[t]
                 };
 
-            function T(e) {
+            function E(e) {
                 var t;
                 let a = (null == e ? void 0 : e.state) != null ? e.state : null;
-                return a === n.HangStatusTypes.CUSTOM ? null == e ? void 0 : e.details : null === (t = f(e)) || void 0 === t ? void 0 : t.title
+                return a === n.HangStatusTypes.CUSTOM ? null == e ? void 0 : e.details : null === (t = T(e)) || void 0 === t ? void 0 : t.title
             }
         },
         342845: function(e, t, a) {
@@ -1535,4 +1546,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94491.b8ab3bb32bc6886f282a.js.map
+//# sourceMappingURL=94491.b528c368b6f0683d827e.js.map

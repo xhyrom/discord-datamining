@@ -43680,11 +43680,6 @@ html .progress__4ef76 {
     background-color: var(--background-modifier-active)
 }
 
-.iconWidget_db0821.disabledWidget_a64d38 {
-    opacity: .5;
-    cursor: default
-}
-
 .iconWidget_db0821.selectedWidget__1e288 {
     background-color: var(--background-accent)
 }
@@ -43724,10 +43719,6 @@ html .progress__4ef76 {
     width: 24px;
     -o-object-fit: contain;
     object-fit: contain
-}
-
-.comingSoonIcon_d5180a {
-    margin-left: 4px
 }
 
 .customIcon_a37db4 {
@@ -124186,4 +124177,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.57352faa206cc0894404.css.map*/
+/*# sourceMappingURL=app.078362604684e251dc39.css.map*/
