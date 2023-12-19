@@ -19410,8 +19410,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -22649,8 +22649,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .name__8d1ec {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -124170,4 +124170,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.da2a2fdea8372f637adb.css.map*/
+/*# sourceMappingURL=app.7e6fad11f2cf9f165f26.css.map*/
