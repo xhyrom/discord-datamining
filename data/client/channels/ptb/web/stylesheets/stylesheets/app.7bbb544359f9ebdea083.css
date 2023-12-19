@@ -33253,29 +33253,6 @@ html .progress__4ef76 {
     overflow: hidden
 }
 
-.art_fa26ef {
-    width: 168px;
-    height: 140px
-}
-
-.root_e0f4f8 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 16px;
-    text-align: center
-}
-
-.header_a23522 {
-    margin-top: 12px;
-    margin-bottom: 16px
-}
-
-.button__7ae36 {
-    margin: 16px auto 0
-}
-
 .reactions_fba1d8 {
     display: flex;
     flex: 1 0 auto;
@@ -34062,47 +34039,6 @@ html .progress__4ef76 {
 .image__9ba4c {
     width: 64px;
     height: 64px
-}
-
-.theme-light .burstReactionTooltipCoachmark_f8f406 {
-    box-shadow: var(--legacy-elevation-low), var(--legacy-elevation-border)
-}
-
-.burstReactionTooltipCoachmark_f8f406 {
-    min-height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 15rem;
-    padding: 1rem;
-    background: var(--background-floating);
-    border-radius: .25rem
-}
-
-.burstReactionTooltipCoachmark_f8f406 a {
-    color: solid var(--text-normal);
-    -webkit-text-decoration: underline;
-    text-decoration: underline
-}
-
-.burstReactionTooltipCoachmarkButtons_c657c3 {
-    margin-top: 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
-
-.burstReactionTooltipCoachmarkButton_e70c49 {
-    flex-grow: 1;
-    flex-basis: 50%;
-    color: var(--text-normal)
-}
-
-.burstReactionTooltipCoachmarkCTA__09343 {
-    color: var(--white-500);
-    background: linear-gradient(270deg, var(--premium-tier-2-pink-for-gradients)0%, var(--premium-tier-2-pink-for-gradients-2)33.63%, var(--premium-tier-2-purple-for-gradients)100%)
 }
 
 .effect__18773 {
@@ -124172,4 +124108,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.71cbb5f1bb013a49c3fa.css.map*/
+/*# sourceMappingURL=app.7bbb544359f9ebdea083.css.map*/
