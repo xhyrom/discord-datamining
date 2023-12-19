@@ -2806,7 +2806,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -2837,8 +2837,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -19417,8 +19417,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -124177,4 +124177,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.078362604684e251dc39.css.map*/
+/*# sourceMappingURL=app.e69523d103537f7da4b9.css.map*/
