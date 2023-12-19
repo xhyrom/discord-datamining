@@ -43746,9 +43746,8 @@ html .progress__4ef76 {
     width: 24px
 }
 
-.editIconColor_e9a173,
-.defaultIcon__8ffba {
-    color: var(--interactive-normal)
+.editIconColor_e9a173 {
+    color: var(--interactive-active)
 }
 
 .theme-dark .selectedWidget__1e288 {
@@ -102688,7 +102687,7 @@ html .invoiceCancelRow_a8669b {
 .customInput_ac30ac {
     flex: 1;
     margin-top: 8px;
-    width: 460px
+    width: 520px
 }
 
 .emoji__8b920 {
@@ -124187,4 +124186,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.984d018e35258d754ba4.css.map*/
+/*# sourceMappingURL=app.57352faa206cc0894404.css.map*/
