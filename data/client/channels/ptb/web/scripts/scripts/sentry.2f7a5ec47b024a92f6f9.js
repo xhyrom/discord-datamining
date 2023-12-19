@@ -101,22 +101,22 @@
                     }
                 }();
                 var l = [],
-                    d = !1,
-                    f = -1;
+                    f = !1,
+                    d = -1;
 
                 function h() {
-                    d && i && (d = !1, i.length ? l = i.concat(l) : f = -1, l.length && p())
+                    f && i && (f = !1, i.length ? l = i.concat(l) : d = -1, l.length && p())
                 }
 
                 function p() {
-                    if (!d) {
+                    if (!f) {
                         var t = a(h);
-                        d = !0;
+                        f = !0;
                         for (var e = l.length; e;) {
-                            for (i = l, l = []; ++f < e;) i && i[f].run();
-                            f = -1, e = l.length
+                            for (i = l, l = []; ++d < e;) i && i[d].run();
+                            d = -1, e = l.length
                         }
-                        i = null, d = !1, ! function(t) {
+                        i = null, f = !1, ! function(t) {
                             if (o === clearTimeout) return clearTimeout(t);
                             if ((o === s || !o) && clearTimeout) return o = clearTimeout, clearTimeout(t);
                             try {
@@ -141,7 +141,7 @@
                     var e = Array(arguments.length - 1);
                     if (arguments.length > 1)
                         for (var n = 1; n < arguments.length; n++) e[n - 1] = arguments[n];
-                    l.push(new m(t, e)), 1 === l.length && !d && a(p)
+                    l.push(new m(t, e)), 1 === l.length && !f && a(p)
                 }, m.prototype.run = function() {
                     this.fun.apply(null, this.array)
                 }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = b, u.addListener = b, u.once = b, u.off = b, u.removeListener = b, u.removeAllListeners = b, u.emit = b, u.prependListener = b, u.prependOnceListener = b, u.listeners = function(t) {
@@ -227,7 +227,7 @@
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-eef95c8bd5f32f5499d630894fa018f8d85d235f",
+                        release: "discord_web-6112c5f0ee64eafc0f18e87a957521f03afa9779",
                         beforeSend: t => {
                             var e, n;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !u() && !("Aborted" === (n = t).message || "cancel captcha" === n.message) && c() ? t : null
@@ -245,7 +245,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (t = "255424", "255424")), r.setTag("builtAt", String("1702960188019"));
+                    }), r.setTag("buildNumber", (t = "255430", "255430")), r.setTag("builtAt", String("1702961557615"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) r.setTag(t, e[t]);
@@ -352,4 +352,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.f61f484a21532b54723d.js.map
+//# sourceMappingURL=sentry.2f7a5ec47b024a92f6f9.js.map
