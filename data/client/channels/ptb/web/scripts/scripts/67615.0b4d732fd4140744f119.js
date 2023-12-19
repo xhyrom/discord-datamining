@@ -31001,7 +31001,7 @@
                     maxMediaHeight: n
                 } : (null === (i = e.provider) || void 0 === i ? void 0 : i.name) === "TikTok" ? {
                     maxMediaWidth: 400,
-                    maxMediaHeight: 425
+                    maxMediaHeight: 450
                 } : {
                     maxMediaWidth: 400,
                     maxMediaHeight: 300
@@ -33789,4 +33789,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.69f5e0c1798811781b88.js.map
+//# sourceMappingURL=67615.0b4d732fd4140744f119.js.map
