@@ -11984,14 +11984,6 @@
                             channelId: t.channel_id
                         });
                         break;
-                    case "BURST_CREDIT_BALANCE_UPDATE":
-                        G({
-                            type: "BURST_CREDITS_SET",
-                            amount: t.amount,
-                            wasReplenishedToday: t.replenished_today,
-                            nextReplenishAt: new Date(t.next_replenish_at)
-                        });
-                        break;
                     case "MESSAGE_REACTION_ADD":
                     case "MESSAGE_REACTION_REMOVE":
                         G({
@@ -19407,57 +19399,45 @@
             "use strict";
             n.r(t), n.d(t, {
                 getReactionEmojiName: function() {
-                    return E
+                    return r
                 },
                 getAccessibleEmojiDisplayName: function() {
-                    return h
+                    return u
                 },
                 toReactionEmoji: function() {
-                    return f
+                    return o
                 },
                 emojiEquals: function() {
-                    return p
+                    return d
                 },
                 getBurstAnalyticsSection: function() {
-                    return C
-                },
-                useNextReplenishmentMessage: function() {
-                    return m
-                },
-                useTooltipReplenishmentMessage: function() {
-                    return S
+                    return c
                 },
                 shouldApplyReaction: function() {
-                    return I
+                    return _
                 }
             }), n("781738");
-            var i, a, l = n("866227"),
-                s = n.n(l),
-                r = n("65597"),
-                u = n("867805"),
-                o = n("692171"),
-                d = n("271938");
-            n("764364");
-            var c = n("49111");
-            n("646718");
-            var _ = n("782340");
+            var i = n("867805"),
+                a = n("271938"),
+                l = n("49111"),
+                s = n("782340");
 
-            function E(e) {
-                return null == e.id ? u.default.convertSurrogateToName(e.name) : ":".concat(e.name, ":")
+            function r(e) {
+                return null == e.id ? i.default.convertSurrogateToName(e.name) : ":".concat(e.name, ":")
             }
 
-            function h(e, t, n, i) {
-                var a, l, s;
-                let r;
-                r = i ? e ? _.default.Messages.SUPER_REACT_REMOVE_WITH_COUNT_A11Y_LABEL : _.default.Messages.SUPER_REACT_WITH_COUNT_A11Y_LABEL : e ? _.default.Messages.REACT_REMOVE_WITH_COUNT_A11Y_LABEL : _.default.Messages.REACT_WITH_COUNT_A11Y_LABEL;
-                let u = r.format({
+            function u(e, t, n, i) {
+                var a, l, u;
+                let o;
+                o = i ? e ? s.default.Messages.SUPER_REACT_REMOVE_WITH_COUNT_A11Y_LABEL : s.default.Messages.SUPER_REACT_WITH_COUNT_A11Y_LABEL : e ? s.default.Messages.REACT_REMOVE_WITH_COUNT_A11Y_LABEL : s.default.Messages.REACT_WITH_COUNT_A11Y_LABEL;
+                let d = o.format({
                     reactions: t,
-                    emojiName: null !== (s = null === (l = E(n)) || void 0 === l ? void 0 : null === (a = l.replace(/[:_]/g, " ")) || void 0 === a ? void 0 : a.trim()) && void 0 !== s ? s : ""
+                    emojiName: null !== (u = null === (l = r(n)) || void 0 === l ? void 0 : null === (a = l.replace(/[:_]/g, " ")) || void 0 === a ? void 0 : a.trim()) && void 0 !== u ? u : ""
                 });
-                return u
+                return d
             }
 
-            function f(e) {
+            function o(e) {
                 var t, n, i;
                 return {
                     id: null !== (t = e.id) && void 0 !== t ? t : null,
@@ -19466,7 +19446,7 @@
                 }
             }
 
-            function p(e, t) {
+            function d(e, t) {
                 if (null != t.id) {
                     let n = null != e.id ? "".concat(e.id) : e.id;
                     return "".concat(t.id) === n
@@ -19474,39 +19454,20 @@
                 return null == e.id && t.name === e.name
             }
 
-            function T() {
-                let e = (0, r.default)([o.default], () => o.default.nextReplenishAt);
-                return null == e ? 7 : Math.max(0, Math.ceil(s(e).diff(s().utc(), "days", !0)))
+            function c(e) {
+                if (e.isThread()) return l.AnalyticsSections.THREAD_TEXT_AREA;
+                if (e.isForumPost()) return l.AnalyticsSections.FORUM_CHANNEL_TEXT_AREA;
+                if (e.isGuildVocal()) return l.AnalyticsSections.TEXT_IN_VOICE;
+                return l.AnalyticsSections.CHANNEL_TEXT_AREA
             }
 
-            function C(e) {
-                if (e.isThread()) return c.AnalyticsSections.THREAD_TEXT_AREA;
-                if (e.isForumPost()) return c.AnalyticsSections.FORUM_CHANNEL_TEXT_AREA;
-                if (e.isGuildVocal()) return c.AnalyticsSections.TEXT_IN_VOICE;
-                return c.AnalyticsSections.CHANNEL_TEXT_AREA
-            }
-
-            function m() {
-                let e = T();
-                return 0 === e ? _.default.Messages.SUPER_REACTIONS_OUT_OF_BURSTS_SIMPLE_SOON : _.default.Messages.SUPER_REACTIONS_OUT_OF_BURSTS_SIMPLE.format({
-                    n: e
-                })
-            }
-
-            function S() {
-                let e = T();
-                return 0 === e ? _.default.Messages.SUPER_REACTIONS_TAB_TOOLTIP_SOON : _.default.Messages.SUPER_REACTIONS_TAB_TOOLTIP.format({
-                    n: e
-                })
-            }
-
-            function I(e) {
+            function _(e) {
                 let {
                     userId: t,
                     optimistic: n
-                } = e, i = d.default.getId() === t;
+                } = e, i = a.default.getId() === t;
                 return (!n || !!i) && !0
-            }(a = i || (i = {}))[a.TIER_0 = 2] = "TIER_0", a[a.TIER_1 = 2] = "TIER_1", a[a.TIER_2 = 5] = "TIER_2"
+            }
         },
         256572: function(e, t, n) {
             "use strict";
@@ -33789,4 +33750,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.0b4d732fd4140744f119.js.map
+//# sourceMappingURL=67615.2d02016887f49d31f118.js.map

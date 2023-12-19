@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -49921,7 +49921,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255447"
+                                build_number: "255460"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -50698,11 +50698,8 @@
                 getPremiumSkuIdForSubscription: function() {
                     return eD
                 },
-                isNewUser: function() {
-                    return ey
-                },
                 default: function() {
-                    return eP
+                    return ey
                 }
             }), n("70102"), n("222007"), n("843762"), n("808653"), n("424973");
             var i, r, s, a, o = n("627445"),
@@ -51658,9 +51655,8 @@
                     n = null != t ? Z(t.planId) : null;
                 return n
             }
-            let ey = e => null != e && Date.now() - e.createdAt.getTime() < 2592e6;
-            var eP = Object.freeze({
-                isNewUser: ey,
+            var ey = Object.freeze({
+                isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < 2592e6,
                 isPremiumAtLeast: A.isPremiumAtLeast,
                 isPremium: A.isPremium,
                 isPremiumExactly: A.isPremiumExactly,
@@ -63278,4 +63274,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.61091fbbc9a34cb326c8.js.map
+//# sourceMappingURL=72243.b17275899df86c65086b.js.map
