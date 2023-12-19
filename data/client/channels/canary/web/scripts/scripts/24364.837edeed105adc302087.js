@@ -49921,7 +49921,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255574"
+                                build_number: "255603"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -52066,6 +52066,10 @@
                     } catch (e) {
                         return null
                     }
+                }
+                getMemoryUsageElectronRendererUsedHeapSize() {
+                    var e, t;
+                    return null === r.default || void 0 === r.default ? void 0 : null === (t = r.default.processUtils) || void 0 === t ? void 0 : null === (e = t.getUsedHeapSize) || void 0 === e ? void 0 : e.call(t)
                 }
                 constructor() {
                     var e, t;
@@ -63274,4 +63278,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.4003eebd64dad899c836.js.map
+//# sourceMappingURL=24364.837edeed105adc302087.js.map
