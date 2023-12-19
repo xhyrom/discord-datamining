@@ -3926,6 +3926,7 @@
                 disabled: "disabled__69f9b",
                 flipped: "flipped__5d69b",
                 guestSuffix: "guestSuffix__33fec",
+                hangStatusIcon: "hangStatusIcon__10ffc",
                 icon: "icon__1d60c",
                 iconPriortySpeaker: "iconPriortySpeaker_b1ed03",
                 iconPriortySpeakerSpeaking: "iconPriortySpeakerSpeaking__3f2f3",

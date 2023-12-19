@@ -6197,6 +6197,13 @@
                 TERMS_OF_SERVICE_UPDATE_03_27_2023_DESCRIPTION: "We announced our annual updates to our policies last month, which are now in effect. Check out our [blog post](https://discord.com/blog/important-policy-updates) for a summary of these changes, and read the full policies below.",
                 COMMUNITY_GUIDELINES: "[Community Guidelines]({url})",
                 BLOG_POST: "[Our blog post]({url})",
+                SEARCH_FILTER_CONTEXT_MENU_FROM: "From a specific person",
+                SEARCH_FILTER_CONTEXT_MENU_MENTIONS: "Mention someone",
+                SEARCH_FILTER_CONTEXT_MENU_CHANNEL: "In a specific channel",
+                SEARCH_FILTER_MESSAGES_FROM_USER: "Filter messages from a particular user",
+                SEARCH_FILTER_MESSAGES_FROM_CHANNEL: "Filter messages from a particular channel",
+                SEARCH_FILTER_MESSAGES_MENTION_USER: "Filter messages that mention a particular user",
+                SEARCH_ADD_FILTERS: "Add Filters",
                 SEARCH_RESULTS_SECTION_LABEL: "Search Results",
                 SEARCH_IN: "Search in {guildName}",
                 SEARCH_DM_WITH: "Search DM with {userName}",
@@ -6213,6 +6220,7 @@
                 SEARCH_NO_RESULTS_ALT: "No results found. Empathy banana is here for you.",
                 SEARCH_GUILD_STILL_INDEXING: "Before searching, we need to index this server. Give us a bit.",
                 SEARCH_DM_STILL_INDEXING: "Before searching, we need to index this DM. Give us a bit.",
+                SEARCH_DMS_STILL_INDEXING: "Before searching, we need to index your messages. Give us a bit.",
                 SEARCH_ERROR: "We dropped the magnifying glass. Can you try searching again?",
                 SEARCH_STILL_INDEXING_HINT: "{count, plural, =0 {No results} one {{count} result} other {{count} results}} indexed so far. We’re still indexing older messages.",
                 SEARCH_NUM_RESULTS_BLOCKED_NOT_SHOWN: "We’ve hidden {count, plural, one {{count} result} other {{count} results}} from users you’ve blocked.",
@@ -16266,6 +16274,8 @@
                 SAFETY_POLICY_NOTICE_HEADER: "You broke Discord's community guidelines",
                 SAFETY_POLICY_NOTICE_BODY: "We've taken action that affects your account.",
                 SAFETY_POLICY_NOTICE_DAYS_AGO: "{daysAgo, plural, =0 {Today} =1 {Yesterday} other {# days ago}}",
+                SAFETY_SYSTEM_NOTIFICATION_SEE_DETAILS_BUTTON: "See Details",
+                SAFETY_SYSTEM_NOTIFICATION_LEARN_MORE_BUTTON: "Learn More",
                 BLOCKED_BY_PROXY_NOTICE: "Please bear with us as we are encountering some network errors.",
                 OBSCURED_CONTENT_HIDE_CONTENT_ALT: "Hide content",
                 OBSCURED_CONTENT_SHOW_CONTENT_ALT: "Show content",
@@ -16676,7 +16686,7 @@
                 STATUS_BRB: "Gonna BRB",
                 STATUS_EATING: "Grubbin",
                 STATUS_IN_TRANSIT: "Wandering IRL",
-                STATUS_COMING_SOON: "Coming soon!",
+                STATUS_WATCHING: "Watchin' stuff",
                 STATUS_NONE: "No status",
                 HANG_STATUS: "Hang Status",
                 HANG_STATUS_LOCATION: "in !!{guildName}!!",
@@ -18293,7 +18303,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255464", ", Version Hash: ").concat("f0b315952a7514aa3756917b90a0d4f538f70d2b")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255660", ", Version Hash: ").concat("4e7d327359993e863b9436d71f27889ba3c39ee2")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19585,11 +19595,6 @@
                     inlineRequire: () => E("728966").default,
                     hasStoreChangeListeners: !0
                 },
-                ChannelDetailsSearchManager: {
-                    actions: ["CHANNEL_SELECT"],
-                    inlineRequire: () => E("59734").default,
-                    neverLoadBeforeConnectionOpen: !0
-                },
                 ClydeAuthorizeManager: {
                     actions: ["MESSAGE_FAILED_CLYDE_CONSENT"],
                     inlineRequire: () => E("887418").default
@@ -20597,8 +20602,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "255464", "255464"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255464")), _ = 0), _
+                let _ = parseInt((e = "255660", "255660"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255660")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25506,57 +25511,6 @@
                 }
             }
             var I = new a
-        },
-        59734: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                default: function() {
-                    return i
-                }
-            }), E("222007");
-            var t = E("689988"),
-                o = E("42203"),
-                n = E("596759");
-            class r extends t.default {
-                _initialize() {
-                    (0, n.deleteChannelStates)()
-                }
-                _terminate() {
-                    (0, n.deleteChannelStates)()
-                }
-                handleChannelSelect(e) {
-                    let {
-                        channelId: _
-                    } = e;
-                    if (_ === this._selectedChannelId || null == _) return;
-                    let E = o.default.getChannel(this._selectedChannelId);
-                    _ !== (null == E ? void 0 : E.parent_id) && ((0, n.deleteChannelStates)(), this._selectedChannelId = _)
-                }
-                constructor(...e) {
-                    super(...e), this._selectedChannelId = null, this.actions = {
-                        CHANNEL_SELECT: e => this.handleChannelSelect(e)
-                    }
-                }
-            }
-            var i = new r
-        },
-        596759: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                deleteChannelStates: function() {
-                    return n
-                }
-            }), E("222007");
-            var t = E("308503");
-            let o = (0, t.default)(() => ({
-                states: new Map
-            }));
-
-            function n() {
-                o.setState({
-                    states: new Map
-                })
-            }
         },
         104545: function(e, _, E) {
             "use strict";
@@ -36570,4 +36524,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66318.0a66cde4c5d9194f58df.js.map
+//# sourceMappingURL=66318.9ab589ebb53b9ef15be9.js.map

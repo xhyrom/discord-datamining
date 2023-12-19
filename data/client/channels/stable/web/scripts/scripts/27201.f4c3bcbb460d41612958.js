@@ -30828,7 +30828,7 @@
                 E = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
                 h = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
                 f = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
-                p = new Set([o.MessageEmbedTypes.AUTO_MODERATION_MESSAGE, o.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION, o.MessageEmbedTypes.RICH, o.MessageEmbedTypes.SAFETY_POLICY_NOTICE]);
+                p = new Set([o.MessageEmbedTypes.AUTO_MODERATION_MESSAGE, o.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION, o.MessageEmbedTypes.RICH, o.MessageEmbedTypes.SAFETY_POLICY_NOTICE, o.MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION]);
 
             function T(e) {
                 let {
@@ -33750,4 +33750,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27201.43f62157ec518c5f91ef.js.map
+//# sourceMappingURL=27201.f4c3bcbb460d41612958.js.map

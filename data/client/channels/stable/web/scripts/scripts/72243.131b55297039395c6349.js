@@ -22683,7 +22683,8 @@
                     panels_navigator: "Use panels navigator",
                     cozy_header: "Cozy header",
                     enable_channel_emojis: "Enables channel emoji UI components",
-                    mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls"
+                    mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls",
+                    enable_new_search_filters: "Enables new search filters behavior"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -29448,7 +29449,7 @@
                         ignoreSenderPreference: !1
                     }
                 }, {
-                    id: 99,
+                    id: 2,
                     label: "Viewer Clipping enabled; For developer testing",
                     config: {
                         enableViewerClipping: !0,
@@ -38441,7 +38442,7 @@
                             }, {
                                 autoTrackExposure: !1
                             });
-                            e.setViewerSideClip(n), e.setClipsKeyFrameInterval(n && t.viewerClipsEnabled ? eh.VIEWERSIDE_CLIP_KFI_MS : 0)
+                            e.setViewerSideClip(n), e.setClipsKeyFrameInterval(eh.VIEWERSIDE_CLIP_KFI_MS)
                         }
                         for (let t of (n = e0(e.context), e.setPostponeDecodeLevel(100), Object.keys(n.localMutes))) t !== et.default.getId() && e.setLocalMute(t, n.localMutes[t]);
                         for (let t of Object.keys(n.localVolumes)) t !== et.default.getId() && e.setLocalVolume(t, n.localVolumes[t]);
@@ -49921,7 +49922,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255464"
+                                build_number: "255660"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -52066,6 +52067,10 @@
                     } catch (e) {
                         return null
                     }
+                }
+                getMemoryUsageElectronRendererUsedHeapSize() {
+                    var e, t;
+                    return null === r.default || void 0 === r.default ? void 0 : null === (t = r.default.processUtils) || void 0 === t ? void 0 : null === (e = t.getUsedHeapSize) || void 0 === e ? void 0 : e.call(t)
                 }
                 constructor() {
                     var e, t;
@@ -63274,4 +63279,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.872424df49acf9b5f2f5.js.map
+//# sourceMappingURL=72243.131b55297039395c6349.js.map

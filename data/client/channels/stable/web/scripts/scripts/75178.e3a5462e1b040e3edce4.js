@@ -516,7 +516,7 @@
                     return U
                 },
                 saveClip: function() {
-                    return M
+                    return O
                 },
                 updateClipMetadata: function() {
                     return F
@@ -693,7 +693,7 @@
                     saved_at: t.savedAt
                 }
             }
-            async function O(e) {
+            async function M(e) {
                 let t = S.default.getSettings(),
                     n = t.storageLocation,
                     i = (0, E.default)(e),
@@ -754,7 +754,7 @@
                     throw t.error_at = n.errorAt, t.error_message = n.errorMessage, v.default.track(L.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
                 }
             }
-            async function M(e) {
+            async function O(e) {
                 var t;
                 let {
                     enableDecoupledGameClipping: n
@@ -782,7 +782,7 @@
                 let m = (0, h.playSound)("clip_save", .5),
                     g = performance.now();
                 try {
-                    let t = await O(null != e ? e : f);
+                    let t = await M(null != e ? e : f);
                     a.default.dispatch({
                         type: "CLIPS_SAVE_CLIP",
                         clip: t
@@ -798,15 +798,16 @@
                 let n = S.default.getClips().find(t => t.id === e);
                 if (null == n) return;
                 let i = {
-                    ...n,
-                    ...t
-                };
-                await m.default.getMediaEngine().updateClipMetadata(i.filepath, JSON.stringify(i)), v.default.track(L.AnalyticEvents.CLIP_EDITED, {
+                        ...n,
+                        ...t
+                    },
+                    u = await (0, I.validateClipMetadata)(i);
+                null != u && (await m.default.getMediaEngine().updateClipMetadata(i.filepath, JSON.stringify(i)), v.default.track(L.AnalyticEvents.CLIP_EDITED, {
                     clip_id: i.id
                 }), a.default.dispatch({
                     type: "CLIPS_UPDATE_METADATA",
                     clip: i
-                })
+                }))
             }
 
             function V() {
@@ -1200,4 +1201,4 @@
         }
     }
 ]);
-//# sourceMappingURL=75178.803fbc4663cfdcd42598.js.map
+//# sourceMappingURL=75178.e3a5462e1b040e3edce4.js.map
