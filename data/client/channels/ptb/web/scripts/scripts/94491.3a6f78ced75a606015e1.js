@@ -65,8 +65,8 @@
                 C = a("957255"),
                 g = a("800762"),
                 N = a("137783"),
-                p = a("49111"),
-                v = a("205341");
+                v = a("49111"),
+                p = a("205341");
 
             function I(e) {
                 let {
@@ -75,7 +75,7 @@
                     animate: l = !0,
                     hideTooltip: s
                 } = e, r = _.AnimateEmoji.useSetting(), d = null != t.id ? ":".concat(t.name, ":") : f.default.translateSurrogatesToInlineEmoji(t.name), c = {
-                    className: i(v.emoji, a),
+                    className: i(p.emoji, a),
                     emojiId: t.id,
                     emojiName: t.name,
                     autoplay: !0,
@@ -116,7 +116,7 @@
                             ref: s,
                             children: a
                         }), (0, n.jsx)("div", {
-                            className: i(v.textRuler, t),
+                            className: i(p.textRuler, t),
                             ref: r,
                             "aria-hidden": !0,
                             children: a
@@ -135,7 +135,7 @@
                     hideTooltip: o = !1,
                     hideEmoji: f = !1,
                     user: _
-                } = e, M = null != t ? t.find(e => e.type === p.ActivityTypes.CUSTOM_STATUS) : null, O = (0, r.useStateFromStores)([m.default], () => m.default.getId() === (null == _ ? void 0 : _.id)), U = (0, r.useStateFromStores)([E.default], () => O ? E.default.getHangStatusActivity() : null != t ? t.find(e => e.type === p.ActivityTypes.HANG_STATUS) : null), x = (0, r.useStateFromStores)([g.default, S.default], () => {
+                } = e, M = null != t ? t.find(e => e.type === v.ActivityTypes.CUSTOM_STATUS) : null, O = (0, r.useStateFromStores)([m.default], () => m.default.getId() === (null == _ ? void 0 : _.id)), U = (0, r.useStateFromStores)([E.default], () => O ? E.default.getHangStatusActivity() : null != t ? t.find(e => e.type === v.ActivityTypes.HANG_STATUS) : null), x = (0, r.useStateFromStores)([g.default, S.default], () => {
                     var e;
                     return null != U && null != _ ? S.default.getChannel(null === (e = g.default.getVoiceStateForUser(_.id)) || void 0 === e ? void 0 : e.channelId) : null
                 }), {
@@ -143,7 +143,7 @@
                 } = T.HangStatusExperiment.useExperiment({
                     guildId: null == x ? void 0 : x.guild_id,
                     location: "ActivityStatus"
-                }), y = null, j = R && null != U && C.default.can(p.Permissions.CONNECT, x);
+                }), y = null, j = R && null != U && C.default.can(v.Permissions.CONNECT, x);
                 j ? y = (0, n.jsx)(A.default, {
                     className: i,
                     hangStatusActivity: U
@@ -163,7 +163,7 @@
                     }), null != t && t.some(d.default) ? (0, n.jsx)(N.default, {
                         width: 16,
                         height: 16,
-                        className: v.icon
+                        className: p.icon
                     }) : null]
                 }) : null
             }
@@ -437,44 +437,37 @@
                     [n.HangStatusTypes.CHILLING]: {
                         title: l.default.Messages.STATUS_CHILLING,
                         icon: i,
-                        color: "#395153",
-                        size: null
+                        color: "#567C7E"
                     },
                     [n.HangStatusTypes.GAMING]: {
                         title: l.default.Messages.STATUS_GAMING,
                         icon: r,
-                        color: "#554E72",
-                        size: null
+                        color: "#685F8C"
                     },
                     [n.HangStatusTypes.FOCUSING]: {
                         title: l.default.Messages.STATUS_FOCUSING,
                         icon: o,
-                        color: "#725F4E",
-                        size: "28px"
+                        color: "#7F6956"
                     },
                     [n.HangStatusTypes.BRB]: {
                         title: l.default.Messages.STATUS_BRB,
                         icon: s,
-                        color: "#6B4E72",
-                        size: "26px"
+                        color: "#76567E"
                     },
                     [n.HangStatusTypes.EATING]: {
                         title: l.default.Messages.STATUS_EATING,
                         icon: u,
-                        color: "#57724E",
-                        size: "20px"
+                        color: "#717B54"
                     },
                     [n.HangStatusTypes.IN_TRANSIT]: {
                         title: l.default.Messages.STATUS_IN_TRANSIT,
                         icon: d,
-                        color: "#726C4E",
-                        size: null
+                        color: "#56697F"
                     },
                     [n.HangStatusTypes.WATCHING]: {
                         title: l.default.Messages.STATUS_WATCHING,
                         icon: c,
-                        color: "#726C4E",
-                        size: null
+                        color: "#7C5571"
                     }
                 }),
                 T = e => {
@@ -569,10 +562,10 @@
                     return N
                 },
                 MAX_GUILD_BANNER_OVERLAY_HEIGHT: function() {
-                    return p
+                    return v
                 },
                 MAX_SCHEDULED_EVENT_IMAGE_OVERLAY_HEIGHT: function() {
-                    return v
+                    return p
                 },
                 MAX_HOME_HEADER_OVERLAY_HEIGHT: function() {
                     return I
@@ -603,8 +596,8 @@
                 C = 2.5,
                 g = 4,
                 N = u / m,
-                p = u / S,
-                v = u / C,
+                v = u / S,
+                p = u / C,
                 I = u / g,
                 h = r.BACKGROUND_REPLACEMENT_SIZE.width / r.BACKGROUND_REPLACEMENT_SIZE.height,
                 M = u / h;
@@ -640,7 +633,7 @@
                     children: S,
                     disableCopy: C,
                     showCopyIcon: g
-                } = e, [N, p] = i.useState(0), [v, I] = i.useState(!1), [h, M] = i.useState(!1);
+                } = e, [N, v] = i.useState(0), [p, I] = i.useState(!1), [h, M] = i.useState(!1);
                 if (i.useEffect(() => (n = new o.Timeout, l = new o.Timeout, function() {
                         n.stop(), l.stop()
                     }), []), !T.SUPPORTS_COPY || C) return (0, s.jsx)(s.Fragment, {
@@ -651,25 +644,25 @@
                     x = null !== (t = O[U]) && void 0 !== t ? t : O[0],
                     R = N >= O.length - 1,
                     y = R ? d.TooltipColors.RED : d.TooltipColors.GREEN,
-                    j = v ? y : d.TooltipColors.PRIMARY,
+                    j = p ? y : d.TooltipColors.PRIMARY,
                     P = () => {
                         n.stop(), M(!1)
                     },
                     H = e => {
                         (0, T.copy)(r), f.default.track(E.AnalyticEvents.TEXT_COPIED, {
                             type: m
-                        }), "function" == typeof e && e(), !h && p(N + 1), M(!0), I(!0), n.start(1e3, () => M(!1)), l.start(2e3, () => p(0))
+                        }), "function" == typeof e && e(), !h && v(N + 1), M(!0), I(!0), n.start(1e3, () => M(!1)), l.start(2e3, () => v(0))
                     };
                 return (0, s.jsx)(d.Tooltip, {
                     delay: 500,
                     color: j,
                     forceOpen: h,
-                    text: v ? (0, s.jsx)(d.Shaker, {
+                    text: p ? (0, s.jsx)(d.Shaker, {
                         isShaking: R,
                         children: x
                     }) : A.default.Messages.ACCOUNT_CLICK_TO_COPY,
                     onAnimationRest: (e, t) => {
-                        !h && v && t.phase === E.SpringTransitionPhases.LEAVE && I(!1)
+                        !h && p && t.phase === E.SpringTransitionPhases.LEAVE && I(!1)
                     },
                     "aria-label": A.default.Messages.ACCOUNT_CLICK_TO_COPY,
                     children: e => {
@@ -682,7 +675,7 @@
                             ...l,
                             className: _.clickTarget,
                             onMouseEnter: () => {
-                                v ? P() : "function" == typeof n && n()
+                                p ? P() : "function" == typeof n && n()
                             },
                             onClick: () => {
                                 H(t)
@@ -782,17 +775,17 @@
                     shrinkToSize: i,
                     isTryItOutFlow: C,
                     size: g = 0
-                } = e, N = (0, T.default)(t.id, a), p = (0, f.default)(N).map(e => ({
+                } = e, N = (0, T.default)(t.id, a), v = (0, f.default)(N).map(e => ({
                     ...e,
                     src: (0, E.getBadgeAsset)(e.icon)
-                })), v = (0, d.useWindowDispatch)();
+                })), p = (0, d.useWindowDispatch)();
                 if (t.isClyde()) return (0, s.jsx)("div", {
                     className: r(n, m.container, m.clydeBadgeList),
                     "aria-label": _.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
                     children: (0, s.jsx)(c.default, {})
                 });
-                C && null == p.find(e => "premium" === e.id) && p.push({
+                C && null == v.find(e => "premium" === e.id) && v.push({
                     id: "premium",
                     icon: S,
                     src: S,
@@ -800,12 +793,12 @@
                         date: new Date
                     })
                 });
-                let I = null != l && null != i && p.length > l ? i : g;
+                let I = null != l && null != i && v.length > l ? i : g;
                 return (0, s.jsx)("div", {
-                    className: r(n, p.length > 0 ? m.containerWithContent : m.container),
+                    className: r(n, v.length > 0 ? m.containerWithContent : m.container),
                     "aria-label": _.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
-                    children: p.map(e => (0, s.jsx)(u.Tooltip, {
+                    children: v.map(e => (0, s.jsx)(u.Tooltip, {
                         position: "top",
                         text: e.description,
                         spacing: 12,
@@ -815,7 +808,7 @@
                                 var n;
                                 null === (n = t.onClick) || void 0 === n || n.call(t);
                                 let l = null != e.link ? (0, o.default)(e.link) : null;
-                                if (null != l) return v.dispatch(A.ComponentActions.POPOUT_CLOSE), l(a)
+                                if (null != l) return p.dispatch(A.ComponentActions.POPOUT_CLOSE), l(a)
                             },
                             href: e.link,
                             children: (0, s.jsx)("img", {
@@ -982,8 +975,8 @@
                 C = a("423487"),
                 g = a("587974"),
                 N = a("599110"),
-                p = a("719923"),
-                v = a("50885"),
+                v = a("719923"),
+                p = a("50885"),
                 I = a("713135"),
                 h = a("106435"),
                 M = a("289918"),
@@ -1026,7 +1019,7 @@
                     })]
                 })
             }
-            let w = v.default.getEnableHardwareAcceleration() ? d.AnimatedAvatar : d.Avatar;
+            let w = p.default.getEnableHardwareAcceleration() ? d.AnimatedAvatar : d.Avatar;
 
             function k(e) {
                 let {
@@ -1040,13 +1033,13 @@
                     channelId: _,
                     onClose: m,
                     disableUserProfileLink: C,
-                    profileType: v,
+                    profileType: p,
                     animateOnHover: I,
                     showCollectiblesTryItOut: M,
                     hasProfileEffect: U
                 } = e, F = (0, u.useStateFromStores)([S.default], () => S.default.getCurrentUser()), {
                     profileTheme: k
-                } = l.useContext(x.UserProfileContext), V = l.useContext(N.AnalyticsContext), W = t.isNonUserBot() && !t.isClyde(), Y = p.default.isPremiumAtLeast(null == a ? void 0 : a.premiumType, H.PremiumTypes.TIER_2), z = l.useMemo(() => (0, E.shouldDisableUserPresenceInChannel)(t, _), [t, _]), Z = C || t.isClyde(), {
+                } = l.useContext(x.UserProfileContext), V = l.useContext(N.AnalyticsContext), W = t.isNonUserBot() && !t.isClyde(), Y = v.default.isPremiumAtLeast(null == a ? void 0 : a.premiumType, H.PremiumTypes.TIER_2), Z = l.useMemo(() => (0, E.shouldDisableUserPresenceInChannel)(t, _), [t, _]), z = C || t.isClyde(), {
                     avatarDecorationSrc: X,
                     avatarSrc: K,
                     eventHandlers: Q,
@@ -1072,8 +1065,8 @@
                         avatarDecoration: $ ? null : X,
                         size: b,
                         "aria-label": t.username,
-                        status: z ? P.StatusTypes.UNKNOWN : c,
-                        statusBackdropColor: null != k && Y && !z ? (0, d.getStatusBackdropColor)(k) : void 0,
+                        status: Z ? P.StatusTypes.UNKNOWN : c,
+                        statusBackdropColor: null != k && Y && !Z ? (0, d.getStatusBackdropColor)(k) : void 0,
                         isMobile: T,
                         statusTooltip: !0
                     }), $ && (0, n.jsx)(y.default, {
@@ -1088,7 +1081,7 @@
                             "aria-hidden": !0
                         })
                     }, J)]
-                }), et = (0, r.match)(v).with(j.UserProfileTypes.POPOUT, () => {
+                }), et = (0, r.match)(p).with(j.UserProfileTypes.POPOUT, () => {
                     let e = (0, O.buildGetPremiumUserBannerStyles)({
                         premiumUserWithBanner: D.avatarPositionPremiumBanner,
                         premiumUserWithoutBanner: D.avatarPositionPremiumNoBanner,
@@ -1103,11 +1096,11 @@
                 return (0, n.jsx)(n.Fragment, {
                     children: (0, n.jsxs)(d.Clickable, {
                         className: i({
-                            [D.clickable]: !Z,
+                            [D.clickable]: !z,
                             [D.avatarWrapperNonUserBot]: W,
                             [D.avatarWrapperNormal]: !W
                         }, et),
-                        onClick: W || Z ? void 0 : function() {
+                        onClick: W || z ? void 0 : function() {
                             (0, R.openUserProfileModal)({
                                 userId: t.id,
                                 guildId: null != A ? A : void 0,
@@ -1115,11 +1108,11 @@
                                 analyticsLocation: V.location
                             }), null == m || m()
                         },
-                        children: [ee, !Z && function() {
+                        children: [ee, !z && function() {
                             let e = null != X,
                                 t = e ? B : (0, d.getAvatarSize)(b);
                             return (0, n.jsx)(g.default, {
-                                mask: null == c || c === P.StatusTypes.UNKNOWN || z ? g.default.Masks.AVATAR_DEFAULT : (0, r.match)([e, T]).with([!0, !0], () => g.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => g.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => g.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => g.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
+                                mask: null == c || c === P.StatusTypes.UNKNOWN || Z ? g.default.Masks.AVATAR_DEFAULT : (0, r.match)([e, T]).with([!0, !0], () => g.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => g.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => g.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => g.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
                                 className: e ? D.avatarDecorationHint : D.avatarHint,
                                 style: e ? {
                                     borderRadius: .4 * t
@@ -1286,8 +1279,8 @@
                     hidePersonalInformation: c,
                     isUsingGuildBio: g,
                     lastSection: N = !1,
-                    animateOnHover: p = !1,
-                    isHovering: v = !1,
+                    animateOnHover: v = !1,
+                    isHovering: p = !1,
                     lineClamp: I
                 } = e, {
                     location: h
@@ -1332,8 +1325,8 @@
                         })]
                     }), (0, n.jsx)(T.default, {
                         userBio: l,
-                        animateOnHover: p,
-                        isHovering: v,
+                        animateOnHover: v,
+                        isHovering: p,
                         lineClamp: I
                     })]
                 })
@@ -1546,4 +1539,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94491.b528c368b6f0683d827e.js.map
+//# sourceMappingURL=94491.3a6f78ced75a606015e1.js.map
