@@ -412,7 +412,7 @@
             var l = n("132710"),
                 r = n.n(l),
                 a = n("862205");
-            let i = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/attachments\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/,
+            let i = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/,
                 u = (0, a.createExperiment)({
                     kind: "user",
                     id: "2023-11_attachment_link_markup",
@@ -3145,4 +3145,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48590.565f556d5a983c7e1e74.js.map
+//# sourceMappingURL=48590.e79c8907d98d9145bb73.js.map
