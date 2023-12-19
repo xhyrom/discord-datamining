@@ -2806,7 +2806,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -2837,8 +2837,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -67692,8 +67692,8 @@ input::-webkit-inner-spin-button {
 }
 
 .memberCount_d3ce07 {
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     display: flex;
     align-items: center
 }
@@ -124177,4 +124177,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ea2d4b347cb6d4e2f264.css.map*/
+/*# sourceMappingURL=app.f31a0a9dc4dd39abeb25.css.map*/
