@@ -12465,6 +12465,7 @@
                 headerContainer: "headerContainer__09356",
                 headerEmpty: "headerEmpty__7c318",
                 headerImage: "headerImage__432bb",
+                headerImageEmpty: "headerImageEmpty__73e89",
                 tierImage: "tierImage__41b3d",
                 tierImageContainer: "tierImageContainer_a5f82e"
             }
