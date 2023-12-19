@@ -32730,6 +32730,78 @@ html .progress__4ef76 {
     background-color: var(--button-danger-background-hover)
 }
 
+.safetyPolicyNoticeContainer_d7f74e {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-primary-bg);
+    border-radius: var(--radius-sm)
+}
+
+.noticeContent__41674 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-12)
+}
+
+.headerRow_fd726b {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.icon_d90a2a {
+    width: 14px;
+    height: 14px;
+    margin-right: var(--spacing-4)
+}
+
+.incidentTiming__01801 {
+    color: var(--text-muted);
+    margin-top: var(--spacing-4)
+}
+
+.noticeBody__1c812 {
+    margin-top: var(--spacing-8);
+    color: var(--text-muted)
+}
+
+.detailsButton__9800f {
+    padding: var(--spacing-8)0 var(--spacing-8);
+    margin-left: var(--spacing-8);
+    margin-right: var(--spacing-8)
+}
+
+.defaultFooterContainer__77afa {
+    width: 100%;
+    border-radius: 0 0 var(--radius-sm)var(--radius-sm);
+    background-color: var(--background-secondary-alt);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color: var(--white)
+}
+
+.defaultFooterContainer__77afa:hover {
+    background-color: var(--button-secondary-background-hover)
+}
+
+.dangerFooterContainer__1acb5 {
+    width: 100%;
+    border-radius: 0 0 var(--radius-sm)var(--radius-sm);
+    background-color: var(--button-danger-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--white)
+}
+
+.dangerfooterContainer__26db2:hover {
+    background-color: var(--button-danger-background-hover)
+}
+
 .popoutContent_e89c59 {
     padding: var(--custom-message-helpers-popout-padding-width);
     display: flex;
@@ -124115,4 +124187,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.dfc76d0261d311fb08ba.css.map*/
+/*# sourceMappingURL=app.984d018e35258d754ba4.css.map*/
