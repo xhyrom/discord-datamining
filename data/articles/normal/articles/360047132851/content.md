@@ -43,13 +43,10 @@
     <li>Lastly, all <strong>servers must comply with our </strong><a href="https://support.discord.com/hc/en-us/articles/360035969312"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Community Guidelines</span></strong></a>. We want to make sure that users joining your server have a good experience and that there’s nothing that violates our Guidelines on your server.</li>
 </ul>
 <h1 id="h_01H1W335WPM73HJSY6011CKDQB">Tools for Community Servers</h1>
+<h3 id="h_01HJ1YYHRZ2DGXVBHTVFH83NVZ">
+    <span style="color: #434343;" data-darkreader-inline-color="">Please note that you will no longer be able to edit Welcome Screen if your Community server still has Welcome Screen enabled.. We recommend enabling </span><a href="https://support.discord.com/hc/en-us/articles/11074987197975" target="_blank" rel="noopener noreferrer">Community Onboarding</a><span style="color: #434343;" data-darkreader-inline-color=""> instead on your server.</span>
+</h3>
 <ul>
-    <li>
-        <a href="https://support.discord.com/hc/en-us/articles/360043913591"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Welcome Screen:</span></strong></a> 
-        <ul>
-            <li>Set up a personalized welcome screen for new visitors so they know what your community is about and where to start. This way, they can immediately head to the welcome and rules channels instead of wandering around the server.</li>
-        </ul>
-    </li>
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/360032008192"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Announcement Channels:</span></strong></a><strong> </strong>
         <ul>
