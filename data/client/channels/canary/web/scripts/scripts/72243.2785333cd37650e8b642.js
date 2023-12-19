@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24364"], {
+    ["72243"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -22683,7 +22683,8 @@
                     panels_navigator: "Use panels navigator",
                     cozy_header: "Cozy header",
                     enable_channel_emojis: "Enables channel emoji UI components",
-                    mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls"
+                    mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls",
+                    enable_new_search_filters: "Enables new search filters behavior"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -29448,7 +29449,7 @@
                         ignoreSenderPreference: !1
                     }
                 }, {
-                    id: 99,
+                    id: 2,
                     label: "Viewer Clipping enabled; For developer testing",
                     config: {
                         enableViewerClipping: !0,
@@ -38441,7 +38442,7 @@
                             }, {
                                 autoTrackExposure: !1
                             });
-                            e.setViewerSideClip(n), e.setClipsKeyFrameInterval(n && t.viewerClipsEnabled ? eh.VIEWERSIDE_CLIP_KFI_MS : 0)
+                            e.setViewerSideClip(n), e.setClipsKeyFrameInterval(eh.VIEWERSIDE_CLIP_KFI_MS)
                         }
                         for (let t of (n = e0(e.context), e.setPostponeDecodeLevel(100), Object.keys(n.localMutes))) t !== et.default.getId() && e.setLocalMute(t, n.localMutes[t]);
                         for (let t of Object.keys(n.localVolumes)) t !== et.default.getId() && e.setLocalVolume(t, n.localVolumes[t]);
@@ -49921,7 +49922,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255603"
+                                build_number: "255610"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63278,4 +63279,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.837edeed105adc302087.js.map
+//# sourceMappingURL=72243.2785333cd37650e8b642.js.map
