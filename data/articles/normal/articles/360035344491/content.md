@@ -1,3 +1,6 @@
+<h3 id="h_01HJ1SHX182EMXXMQQV7SR8PF2">
+    <span style="color: #434343;" data-darkreader-inline-color="">If you’ve received the 3 months Xbox Game Pass promotion, you will not be eligible for a Nitro subscription refund. You can learn more about our refund policy </span><a href="https://support.discord.com/hc/en-us/articles/360012668071" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+</h3>
 <p id="docs-internal-guid-6074669e-7fff-d94b-ffa0-4fe796f828f0">Starting from <strong>October 31, 2023 (5pm PST)</strong> to <strong>January 31, 2024 (11:59pm PST)</strong>,<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a> members can redeem <strong>3 months</strong> of <strong>Xbox Game Pass for PC</strong>. Read more below about the promotion below.</p>
 <p class="wysiwyg-text-align-center"><img style="height: 325px; width: 624px;" src="https://support.discord.com/hc/article_attachments/19157216277399"></p>
 <p><strong>Promotion Summary</strong></p>
@@ -41,13 +44,13 @@
 <h1 id="h_01HE3W5FZ3BQN7JGWX5SBC32B1">What is Discord Nitro?</h1>
 <p>Discord Nitro is our membership plan that gives you access to special perks that’ll make your time on Discord as fun as ever! Personalize and enhance your experience with popular perks like HD streaming, 500MB file uploads, profile and avatar customizations, 2 free Server Boosts, and more:</p>
 <ul>
-    <li><a href="https://support.discord.com/hc/articles/360036479811"><span class="wysiwyg-underline" style="color: #1155cc;">Custom Emojis</span></a></li>
-    <li><a href="https://support.discord.com/hc/articles/207260127"><span class="wysiwyg-underline" style="color: #1155cc;">Discord App Color Themes</span></a></li>
-    <li><a href="https://support.discord.com/hc/articles/12102061808663"><span class="wysiwyg-underline" style="color: #1155cc;">Super Reactions</span></a></li>
-    <li><a href="https://support.discord.com/hc/articles/13410113109911"><span class="wysiwyg-underline" style="color: #1155cc;">Avatar Decorations</span></a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4409388345495"><span class="wysiwyg-underline" style="color: #1155cc;">Unique Server Profiles</span></a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-"><span class="wysiwyg-underline" style="color: #1155cc;">Server Boosts</span></a></li>
-    <li><a href="https://support.discord.com/hc/articles/115000435108"><span class="wysiwyg-underline" style="color: #1155cc;">More Nitro &amp; Nitro Basic perks</span></a></li>
+    <li><a href="https://support.discord.com/hc/articles/360036479811"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Custom Emojis</span></a></li>
+    <li><a href="https://support.discord.com/hc/articles/207260127"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Discord App Color Themes</span></a></li>
+    <li><a href="https://support.discord.com/hc/articles/12102061808663"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Super Reactions</span></a></li>
+    <li><a href="https://support.discord.com/hc/articles/13410113109911"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Avatar Decorations</span></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4409388345495"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Unique Server Profiles</span></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Server Boosts</span></a></li>
+    <li><a href="https://support.discord.com/hc/articles/115000435108"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">More Nitro &amp; Nitro Basic perks</span></a></li>
 </ul>
 <h1 id="h_01HE3W5FZ3X2RN5BJAPEW7NNK0"><strong>What is Xbox Game Pass for PC?</strong></h1>
 <p>Play over 100 high-quality PC games on Windows 10, plus enjoy all the benefits of EA Play, coming this holiday at no extra cost. With new games added all the time and Xbox Game Studios titles when they premier, you will always have something new to play.<a href="https://www.xbox.com/xbox-game-pass/pc-games/?ocid=discord_3mPC920" target="_blank" rel="noopener noreferrer"> Press here for more info!</a></p>
@@ -65,7 +68,7 @@
 </ul>
 <p id="docs-internal-guid-1542ec94-7fff-2400-4d6c-8fd69cfd0273">Unfortunately, if you are a <strong>Nitro trial member, Nitro Basic, Nitro Classic, or Server Boosting</strong> <strong>member</strong>, you are ineligible to claim this promotion.</p>
 <h3 id="docs-internal-guid-73f54c41-7fff-74c3-8d71-f9dcacbaaefb">
-    <span style="color: #434343;">Note: Xbox Game Pass for PC is only available to new Xbox Game Pass subscribers and Nitro members within eligible regions. If you have claimed your Nitro membership from the </span><a href="https://support.discord.com/hc/en-us/articles/360047412672" target="_blank" rel="noopener noreferrer">Xbox Game Pass promotion</a><span style="color: #434343;">, you will not be eligible to redeem a Xbox Game Pass for PC Code in your Gift Inventory!</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">Note: Xbox Game Pass for PC is only available to new Xbox Game Pass subscribers and Nitro members within eligible regions. If you have claimed your Nitro membership from the </span><a href="https://support.discord.com/hc/en-us/articles/360047412672" target="_blank" rel="noopener noreferrer">Xbox Game Pass promotion</a><span style="color: #434343;" data-darkreader-inline-color="">, you will not be eligible to redeem a Xbox Game Pass for PC Code in your Gift Inventory!</span>
 </h3>
 <h2 id="h_01HE3W5FZ4DBWTE2WV7RGQP24Q"><strong>Step By Step Claim Instructions </strong></h2>
 <p><strong>1) Log into Your Discord account and head to the Gift Inventory tab. </strong></p>
