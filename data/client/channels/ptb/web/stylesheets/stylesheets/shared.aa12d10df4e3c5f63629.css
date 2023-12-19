@@ -15425,10 +15425,12 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     opacity: .4
 }
 
+.background-opacity-low .embedAmazonMusic__747d9,
 .background-opacity-low .embedSpotify_d58077 {
     opacity: .8
 }
 
+.background-opacity-low .embedAmazonMusic__747d9:hover,
 .background-opacity-low .embedSpotify_d58077:hover {
     opacity: 1
 }
@@ -15459,10 +15461,12 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     opacity: .4
 }
 
+.background-opacity-medium .embedAmazonMusic__747d9,
 .background-opacity-medium .embedSpotify_d58077 {
     opacity: .8
 }
 
+.background-opacity-medium .embedAmazonMusic__747d9:hover,
 .background-opacity-medium .embedSpotify_d58077:hover {
     opacity: 1
 }
@@ -15493,10 +15497,12 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     opacity: .4
 }
 
+.background-opacity-high .embedAmazonMusic__747d9,
 .background-opacity-high .embedSpotify_d58077 {
     opacity: .9
 }
 
+.background-opacity-high .embedAmazonMusic__747d9:hover,
 .background-opacity-high .embedSpotify_d58077:hover {
     opacity: 1
 }
@@ -15537,6 +15543,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     justify-self: auto !important
 }
 
+.overlay-unlocked .embedAmazonMusic__747d9,
 .overlay-unlocked .embedSpotify_d58077,
 .overlay-unlocked .embedThumbnail__468e1 {
     opacity: 1
@@ -26496,4 +26503,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.eeba4411a8e01ae36199.css.map*/
+/*# sourceMappingURL=shared.aa12d10df4e3c5f63629.css.map*/
