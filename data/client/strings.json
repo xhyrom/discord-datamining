@@ -16245,6 +16245,8 @@
   "SAFETY_POLICY_NOTICE_HEADER": "\"You broke Discord's community guidelines\"",
   "SAFETY_POLICY_NOTICE_BODY": "\"We've taken action that affects your account.\"",
   "SAFETY_POLICY_NOTICE_DAYS_AGO": "\"{daysAgo, plural, =0 {Today} =1 {Yesterday} other {# days ago}}\"",
+  "SAFETY_SYSTEM_NOTIFICATION_SEE_DETAILS_BUTTON": "\"See Details\"",
+  "SAFETY_SYSTEM_NOTIFICATION_LEARN_MORE_BUTTON": "\"Learn More\"",
   "BLOCKED_BY_PROXY_NOTICE": "\"Please bear with us as we are encountering some network errors.\"",
   "OBSCURED_CONTENT_HIDE_CONTENT_ALT": "\"Hide content\"",
   "OBSCURED_CONTENT_SHOW_CONTENT_ALT": "\"Show content\"",
