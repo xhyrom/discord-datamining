@@ -18487,6 +18487,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     object-fit: cover
 }
 
+.headerImageEmpty__73e89 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-secondary)
+}
+
 .closeContainer__3fee3 {
     width: 24px;
     height: 24px;
@@ -18515,7 +18521,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     border-radius: 50%;
     position: absolute;
     bottom: -48px;
-    left: calc(50% - 48px)
+    left: calc(50% - 48px);
+    z-index: 1
 }
 
 .tierImage__41b3d {
@@ -117980,7 +117987,7 @@ html .invoiceCancelRow_c1bfe7 {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: .875rem
+    font-size: 14px
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -124108,4 +124115,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4400a2a1602b89f51f0e.css.map*/
+/*# sourceMappingURL=app.dfc76d0261d311fb08ba.css.map*/
