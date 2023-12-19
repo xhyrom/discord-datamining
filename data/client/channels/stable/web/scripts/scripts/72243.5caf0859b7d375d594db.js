@@ -32132,7 +32132,7 @@
             let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return y
+                    return O
                 }
             });
             var r = n("446674"),
@@ -32141,53 +32141,50 @@
                 o = n("819855"),
                 l = n("913144"),
                 u = n("206230"),
-                c = n("253539"),
-                d = n("21121");
-            n("831588");
-            var f = n("922932"),
-                E = n("773336"),
-                h = n("737292"),
-                p = n("168973"),
-                _ = n("374363"),
-                S = n("116319"),
-                m = n("49111"),
-                T = n("941719");
-            let g = m.ThemeTypes.DARK,
-                I = g,
-                C = null,
-                v = !1;
+                c = n("253539");
+            n("21121"), n("831588");
+            var d = n("922932"),
+                f = n("773336"),
+                E = n("737292"),
+                h = n("168973"),
+                p = n("374363"),
+                _ = n("116319"),
+                S = n("49111"),
+                m = n("941719");
+            let T = S.ThemeTypes.DARK,
+                g = null,
+                I = !1;
+
+            function C() {
+                let e = function() {
+                    var e, t;
+                    if (__OVERLAY__) return S.ThemeTypes.DARK;
+                    if (u.default.syncForcedColors && "active" === u.default.systemForcedColors && null != i) return i;
+                    let n = h.default.useSystemTheme;
+                    if (n === _.SystemThemeState.ON && null != i) return i;
+                    let r = null === (e = E.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme;
+                    if (null != r) return r;
+                    let a = null === (t = p.default.settings.appearance) || void 0 === t ? void 0 : t.theme;
+                    return a === s.Theme.LIGHT ? S.ThemeTypes.LIGHT : S.ThemeTypes.DARK
+                }();
+                return e
+            }
+
+            function v() {
+                return R()
+            }
 
             function A() {
-                var e, t;
-                if (__OVERLAY__) return m.ThemeTypes.DARK;
-                if (u.default.syncForcedColors && "active" === u.default.systemForcedColors && null != i) return i;
-                let n = !1;
-                try {
-                    n = (0, d.isInMainTabsExperiment)()
-                } catch {}
-                let r = p.default.useSystemTheme;
-                if (r === S.SystemThemeState.ON && null != i) return i;
-                let s = null !== (t = null === (e = h.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme) && void 0 !== t ? t : g;
-                return n && s === m.ThemeTypes.DARK ? m.ThemeTypes.DARKER : s
+                return R()
             }
 
             function R() {
-                var e;
-                let t = null === (e = _.default.settings.appearance) || void 0 === e ? void 0 : e.theme;
-                return g = t === s.Theme.LIGHT ? m.ThemeTypes.LIGHT : m.ThemeTypes.DARK, O()
+                let e = C();
+                return e !== T && (T = e, !0)
             }
-
-            function N() {
-                return O()
-            }
-
-            function O() {
-                let e = A();
-                return e !== I && (I = e, !0)
-            }
-            class D extends r.default.PersistedStore {
+            class N extends r.default.PersistedStore {
                 initialize(e) {
-                    (null == e ? void 0 : e.theme) != null && (g = e.theme, I = A()), this.waitFor(p.default, h.default, _.default, u.default)
+                    (null == e ? void 0 : e.theme) != null && (T = e.theme), this.waitFor(h.default, E.default, p.default, u.default)
                 }
                 getState() {
                     return {
@@ -32195,68 +32192,68 @@
                     }
                 }
                 get darkSidebar() {
-                    return (0, o.isThemeLight)(this.theme) && p.default.darkSidebar && !v
+                    return (0, o.isThemeLight)(this.theme) && h.default.darkSidebar && !I
                 }
                 get theme() {
-                    return A()
+                    return C()
                 }
                 get systemTheme() {
-                    return C
+                    return g
                 }
                 get systemPrefersColorScheme() {
                     return i
                 }
                 get isSystemThemeAvailable() {
-                    return null !== C
+                    return null !== g
                 }
             }
-            D.displayName = "ThemeStore", D.persistKey = "ThemeStore", D.migrations = [e => {
+            N.displayName = "ThemeStore", N.persistKey = "ThemeStore", N.migrations = [e => {
                 let t = e.theme;
                 return "amoled" === t && (t = "midnight"), {
                     ...e,
                     theme: t
                 }
             }];
-            var y = new D(l.default, {
-                CONNECTION_OPEN: R,
-                LOGIN_SUCCESS: N,
+            var O = new N(l.default, {
+                CONNECTION_OPEN: v,
+                LOGIN_SUCCESS: A,
                 LOGOUT: function(e) {
-                    return !e.isSwitchingAccount && g !== m.ThemeTypes.DARK && (g = m.ThemeTypes.DARK, function() {
-                        !__OVERLAY__ && E.isPlatformEmbedded && f.default.setApplicationBackgroundColor((0, o.isThemeDark)(A()) ? a.default.unsafe_rawColors.PRIMARY_700.resolve({
+                    return !e.isSwitchingAccount && T !== S.ThemeTypes.DARK && (T = S.ThemeTypes.DARK, function() {
+                        !__OVERLAY__ && f.isPlatformEmbedded && d.default.setApplicationBackgroundColor((0, o.isThemeDark)(C()) ? a.default.unsafe_rawColors.PRIMARY_700.resolve({
                             saturation: u.default.saturation
                         }).hsl() : a.default.unsafe_rawColors.WHITE_500.resolve({
                             saturation: u.default.saturation
                         }).hsl())
-                    }(), O())
+                    }(), R())
                 },
-                OVERLAY_INITIALIZE: R,
-                SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: N,
-                UNSYNCED_USER_SETTINGS_UPDATE: N,
-                USER_SETTINGS_PROTO_UPDATE: R,
+                OVERLAY_INITIALIZE: v,
+                SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: A,
+                UNSYNCED_USER_SETTINGS_UPDATE: A,
+                USER_SETTINGS_PROTO_UPDATE: v,
                 UPDATE_BACKGROUND_GRADIENT_PRESET: function(e) {
                     var t, n;
                     let {
                         presetId: i
                     } = e;
-                    g = null != i && null !== (n = null === (t = T.BACKGROUND_GRADIENT_PRESETS_MAP[i]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : A();
+                    T = null != i && null !== (n = null === (t = m.BACKGROUND_GRADIENT_PRESETS_MAP[i]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : C();
                     let r = null != i;
-                    return v !== r ? (v = r, !0) : function() {
-                        let e = A();
-                        return !!(0, c.areThemesEqualForGradientThemes)(g, I) && (I = e, !0)
+                    return I !== r ? (I = r, !0) : function() {
+                        let e = C();
+                        return !(0, c.areThemesEqualForGradientThemes)(T, e) && (T = e, !0)
                     }()
                 },
-                RESET_PREVIEW_CLIENT_THEME: R,
+                RESET_PREVIEW_CLIENT_THEME: v,
                 SYSTEM_THEME_CHANGE: function(e) {
                     let {
                         systemTheme: t
                     } = e;
-                    return C = t, O()
+                    return g = t, R()
                 },
                 ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: function(e) {
-                    return i = e.systemPrefersColorScheme, O()
+                    return i = e.systemPrefersColorScheme, R()
                 },
                 ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: function() {
-                    return (0, o.isThemeLight)(A())
+                    return (0, o.isThemeLight)(C())
                 }
             })
         },
@@ -35471,8 +35468,9 @@
                         for (let t of e) ee(t.thread);
                     n.forEach(ee), null == i || i.forEach(e => {
                         let t = (0, S.createChannelRecordFromServer)(e),
-                            n = null == B(e.id) || null != U[t.id];
-                        t.isPrivate() && n ? U[t.id] = t : H(t)
+                            n = null != B(e.id),
+                            i = null != U[e.id];
+                        t.isPrivate() && (!n || i) ? U[t.id] = t : !n && H(t)
                     })
                 },
                 THREAD_CREATE: X,
@@ -49923,7 +49921,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255245"
+                                build_number: "255423"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63280,4 +63278,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.62c99f0a223c007dc47f.js.map
+//# sourceMappingURL=72243.5caf0859b7d375d594db.js.map

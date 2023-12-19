@@ -1663,6 +1663,7 @@
             e.exports = {
                 centerContent: "centerContent__4a3dd",
                 embed: "embed_d3cbe3",
+                embedAmazonMusic: "embedAmazonMusic__747d9",
                 embedAuthor: "embedAuthor_cb4bfc",
                 embedAuthorIcon: "embedAuthorIcon__6b055",
                 embedAuthorName: "embedAuthorName_a1274b",
