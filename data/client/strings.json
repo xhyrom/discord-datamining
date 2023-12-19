@@ -16650,7 +16650,7 @@
   "STATUS_BRB": "\"Gonna BRB\"",
   "STATUS_EATING": "\"Grubbin\"",
   "STATUS_IN_TRANSIT": "\"Wandering IRL\"",
-  "STATUS_COMING_SOON": "\"Coming soon!\"",
+  "STATUS_WATCHING": "\"Watchin' stuff\"",
   "STATUS_NONE": "\"No status\"",
   "HANG_STATUS": "\"Hang Status\"",
   "HANG_STATUS_LOCATION": "\"in !!{guildName}!!\"",
