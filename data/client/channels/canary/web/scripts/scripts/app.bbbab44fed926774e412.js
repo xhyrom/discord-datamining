@@ -15318,7 +15318,6 @@
             e.exports = {
                 comingSoonIcon: "comingSoonIcon_d5180a",
                 customIcon: "customIcon_a37db4",
-                defaultIcon: "defaultIcon__8ffba",
                 disabledWidget: "disabledWidget_a64d38",
                 divider: "divider__26943",
                 editIcon: "editIcon__562b8",
