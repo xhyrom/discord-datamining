@@ -6205,6 +6205,7 @@
   "SEARCH_NO_RESULTS_ALT": "\"No results found. Empathy banana is here for you.\"",
   "SEARCH_GUILD_STILL_INDEXING": "\"Before searching, we need to index this server. Give us a bit.\"",
   "SEARCH_DM_STILL_INDEXING": "\"Before searching, we need to index this DM. Give us a bit.\"",
+  "SEARCH_DMS_STILL_INDEXING": "\"Before searching, we need to index your messages. Give us a bit.\"",
   "SEARCH_ERROR": "\"We dropped the magnifying glass. Can you try searching again?\"",
   "SEARCH_STILL_INDEXING_HINT": "\"{count, plural, =0 {No results} one {{count} result} other {{count} results}} indexed so far. We’re still indexing older messages.\"",
   "SEARCH_NUM_RESULTS_BLOCKED_NOT_SHOWN": "\"We’ve hidden {count, plural, one {{count} result} other {{count} results}} from users you’ve blocked.\"",
