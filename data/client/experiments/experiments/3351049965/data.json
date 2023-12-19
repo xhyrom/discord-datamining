@@ -7,14 +7,14 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Viewer Clipping enabled",
-      "Treatment 99: Viewer Clipping enabled; For developer testing"
+      "Treatment 2: Viewer Clipping enabled; For developer testing"
     ],
     "hash": 3351049965,
     "buckets": [
       -1,
       0,
       1,
-      99
+      2
     ],
     "holdout": {},
     "aa_mode": false,
