@@ -16430,7 +16430,11 @@
                     let r = this._connection;
                     if (null != r && this.userId !== t) {
                         var s;
-                        i !== W.SpeakingFlags.NONE && r.createUser(t, n), null === (s = this._localMediaSinkWantsManager) || void 0 === s || s.setAudioSSRC(t, n)
+                        i !== W.SpeakingFlags.NONE && (r.createUser(t, n), _.default.dispatch({
+                            type: "RTC_CONNECTION_USER_CREATE",
+                            userId: t,
+                            context: this.context
+                        })), null === (s = this._localMediaSinkWantsManager) || void 0 === s || s.setAudioSSRC(t, n)
                     }
                 }
                 handleFlags(e, t) {
@@ -49922,7 +49926,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255717"
+                                build_number: "255727"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63279,4 +63283,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.3096c88d3cf1f0fc365b.js.map
+//# sourceMappingURL=72243.c61dd864f396150abfeb.js.map
