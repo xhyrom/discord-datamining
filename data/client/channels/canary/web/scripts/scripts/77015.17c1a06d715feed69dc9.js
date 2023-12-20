@@ -485,7 +485,7 @@
                     showKeybindIndicators: e
                 } = A.default.getCurrentConfig({
                     location: "KeybindsStore"
-                }), t = s.find(P, e => R.action === e.action);
+                }), t = s.find(P, e => R.action === e.action && e.enabled && e.shortcut.length > 0);
                 null == t && !__OVERLAY__ && !U && b && e && (K(R), U = !0)
             }
 
@@ -639,7 +639,12 @@
             O.default.setGetKeybindList(() => {
                 let e = [];
                 for (let t in P) P.hasOwnProperty(t) && e.push((0, L.toString)(P[t].shortcut));
-                return U && e.push((0, L.toString)(R.shortcut)), e
+                let {
+                    showKeybindIndicators: t
+                } = A.default.getCurrentConfig({
+                    location: "KeybindsStore"
+                });
+                return t && e.push((0, L.toString)(R.shortcut)), e
             });
             class z extends _.default.DeviceSettingsStore {
                 initialize(e) {
@@ -663,13 +668,14 @@
                 }
                 getKeybindForAction(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                         {
-                            showKeybindIndicators: n
+                            showKeybindIndicators: a
                         } = A.default.getCurrentConfig({
                             location: "KeybindsStore"
                         }),
-                        a = s.find(P, n => n.action === e && (!t || t && !0 === n.managed));
-                    return null != a ? a : n && e === y.GlobalKeybindActions.TOGGLE_MUTE ? R : null
+                        l = s.find(P, a => a.action === e && (!t || a.managed) && (!n || a.shortcut.length > 0 && a.enabled));
+                    return null != l ? l : a && e === y.GlobalKeybindActions.TOGGLE_MUTE ? R : null
                 }
                 getOverlayKeybind() {
                     return this.getKeybindForAction(y.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, !0)
@@ -1275,7 +1281,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...n));
                     let l = new URLSearchParams;
-                    l.append("build_id", "99c3bd5ef4a2843fd6b659875880643734add938"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
+                    l.append("build_id", "5c99828189bb42c4106531b3b0dc9254a94999a5"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1403,4 +1409,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77015.f47c7743e6af82ee29e7.js.map
+//# sourceMappingURL=77015.17c1a06d715feed69dc9.js.map

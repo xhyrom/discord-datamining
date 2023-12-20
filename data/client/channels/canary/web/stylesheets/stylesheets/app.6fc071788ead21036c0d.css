@@ -107365,13 +107365,12 @@ html .invoiceCancelRow_a8669b {
 
 .keybindIndicator_d07e29 {
     display: flex;
-    opacity: .4;
     margin-left: 46px;
     margin-bottom: 4px
 }
 
 .keybindIcon__980d1 {
-    background-color: var(--background-primary);
+    background-color: var(--background-modifier-selected);
     color: var(--text-normal);
     border-radius: 4px;
     margin-right: 4px;
@@ -107382,11 +107381,13 @@ html .invoiceCancelRow_a8669b {
     width: -moz-fit-content;
     width: fit-content;
     padding: 2px 4px;
-    background-color: var(--background-primary);
+    background-color: var(--background-modifier-selected);
     color: var(--text-normal);
     border-radius: 4px;
     line-height: 14px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    display: flex;
+    align-items: center
 }
 
 .icon__5e128 {
@@ -123927,4 +123928,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.eb5e7edcdb442166a8d2.css.map*/
+/*# sourceMappingURL=app.6fc071788ead21036c0d.css.map*/
