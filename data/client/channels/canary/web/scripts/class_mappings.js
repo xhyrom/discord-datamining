@@ -5718,7 +5718,6 @@
                 itemTypeTitleContainer: "itemTypeTitleContainer__58a10",
                 itemTypeTitleForTallerCard: "itemTypeTitleForTallerCard__90049",
                 logo: "logo_b80583",
-                newItemTypeBadge: "newItemTypeBadge__7e6f7",
                 page: "page_be1421",
                 pageWrapper: "pageWrapper__582b9",
                 pageWrapperBackgroundPrimary: "pageWrapperBackgroundPrimary__74f14",
