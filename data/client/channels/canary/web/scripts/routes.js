@@ -8858,7 +8858,7 @@
                 }),
                 radii: T.Radius,
                 spacing: L,
-                meta: {
+                internal: {
                     isSemanticColor: _ => "object" == typeof _ && null !== _ && D in _,
                     resolveSemanticColor(_, E, I) {
                         _ = function(_) {
@@ -13162,4 +13162,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.1d6580bcb655f09477ed.js.map
+//# sourceMappingURL=7273.383fdaec574d5f47e12c.js.map

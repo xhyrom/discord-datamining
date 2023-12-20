@@ -13802,12 +13802,12 @@
                 r = n("841098"),
                 s = n("206230");
 
-            function a(e) {
-                let t = (0, r.default)(),
-                    n = (0, i.default)([s.default], () => s.default.saturation);
+            function a(e, t) {
+                let n = (0, r.default)(),
+                    a = (0, i.default)([s.default], () => s.default.saturation);
                 return e.resolve({
-                    theme: t,
-                    saturation: n
+                    theme: null != t ? t : n,
+                    saturation: a
                 })
             }
         },
@@ -21566,7 +21566,7 @@
                 c = 6 * l.default.Millis.SECOND,
                 d = new o.default("Clips"),
                 f = e => "Discord_Clip_".concat(e, ".mp4"),
-                E = 2,
+                E = 3,
                 h = 1,
                 p = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
                 _ = /(NVIDIA GeForce (RTX (20|30|40).*))|(.*Radeon RX (57|58|59|6|7).*)/,
@@ -49922,7 +49922,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255670"
+                                build_number: "255707"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63279,4 +63279,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.630efda544511d204765.js.map
+//# sourceMappingURL=72243.3194e664a40d47e0cb87.js.map
