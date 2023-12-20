@@ -43238,8 +43238,12 @@
                 MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: function(e) {
                     let {
                         members: t
-                    } = e;
-                    return t.reduce((e, t) => C(t.member.user) || e, !1)
+                    } = e, n = f.default.getId();
+                    return t.reduce((e, t) => {
+                        if (t.member.user.id === n) return e;
+                        let i = C(t.member.user);
+                        return i || e
+                    }, !1)
                 }
             })
         },
@@ -50022,7 +50026,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255920"
+                                build_number: "255926"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -63409,4 +63413,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.6fa29cfb2deb4b9fa314.js.map
+//# sourceMappingURL=72243.dd3ce7808315bf407da1.js.map
