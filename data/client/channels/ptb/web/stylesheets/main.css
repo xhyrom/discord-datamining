@@ -10347,11 +10347,6 @@
     color: ButtonText
 }
 
-.tryingOutAvatarDecoration__65e66 {
-    position: absolute;
-    bottom: 0
-}
-
 .member_aa4760 {
     position: relative;
     max-width: 224px;
@@ -70410,170 +70405,6 @@ input::-webkit-inner-spin-button {
     left: 128px
 }
 
-.collectiblesList_b551dd {
-    display: grid;
-    justify-items: center;
-    padding-top: 2px
-}
-
-.accountSwitcherCollectiblesList_a18629 {
-    grid-gap: 8px;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr))
-}
-
-.interactiveModalCollectiblesList__53412 {
-    grid-gap: 12px;
-    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr))
-}
-
-.item_ecbedf {
-    border-radius: var(--radius-xs);
-    overflow: hidden;
-    background-color: var(--background-floating);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-sizing: border-box;
-    position: relative
-}
-
-.accountSwitcherItem_b16f56 {
-    width: 80px;
-    height: 80px
-}
-
-.interactiveModalItem_fb9b00 {
-    width: 72px;
-    height: 72px
-}
-
-.selectedItem_adfa83 {
-    box-shadow: 0 0 0 2px var(--brand-500)
-}
-
-.avatarDecorationPlaceholder__697ae {
-    position: absolute
-}
-
-.avatarDecoration__30377 {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding: 6px;
-    box-sizing: border-box
-}
-
-.avatarDecorationItem_c53626:before {
-    content: "";
-    position: absolute;
-    background: url(/assets/f6c7b8245d3a54cf98b2.png);
-    background-size: contain
-}
-
-.accountSwitcherItem_b16f56:before {
-    width: 56px;
-    height: 56px
-}
-
-.interactiveModalItem_fb9b00:before {
-    width: 48px;
-    height: 48px
-}
-
-.loading__3f327 {
-    height: 100%
-}
-
-.presetEffectImg_b4d9ed {
-    position: absolute;
-    border-radius: 4px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top;
-    object-position: top;
-    width: 100%;
-    height: 100%
-}
-
-.presetEffectBackground__58a7d {
-    position: absolute;
-    border-radius: 4px;
-    width: 100%;
-    height: 100%
-}
-
-.theme-light .item_ecbedf {
-    background-color: var(--background-tertiary)
-}
-
-.container__0ec3c {
-    background: var(--background-secondary);
-    margin-left: 4px;
-    border-radius: var(--radius-sm);
-    width: 324px;
-    box-shadow: var(--shadow-high);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
-}
-
-.content__28297 {
-    padding: 24px 24px 12px
-}
-
-.title_f462e1 {
-    padding-bottom: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-items: center
-}
-
-.ctaContainer__95bd7 {
-    background-color: var(--background-secondary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 0 var(--radius-sm)var(--radius-sm)
-}
-
-.cta_ca821f {
-    margin: 16px;
-    width: 100%
-}
-
-.close_c83a09 {
-    cursor: pointer;
-    display: flex;
-    align-items: center
-}
-
-.closeIcon__6dc3a {
-    color: var(--interactive-normal);
-    width: 16px;
-    height: 16px
-}
-
-.listContainer_c0b21e {
-    margin: 0 24px
-}
-
-.segmentControl__626aa {
-    padding: 4px;
-    margin: 20px 0 0
-}
-
-.segmentControlOption__79596 {
-    border-radius: 4px;
-    color: var(--header-secondary)
-}
-
-.segmentControlOptionSelected_fa6c0e {
-    box-shadow: var(--shadow-low);
-    color: var(--interactive-active)
-}
-
 .clearStatusIcon_f08a92 {
     width: 16px;
     height: 16px
@@ -81769,6 +81600,103 @@ input::-webkit-inner-spin-button {
     margin-bottom: 4px;
     border-radius: var(--radius-sm);
     border: .5px solid var(--white-500)
+}
+
+.collectiblesList_b551dd {
+    display: grid;
+    justify-items: center;
+    padding-top: 2px
+}
+
+.accountSwitcherCollectiblesList_a18629 {
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr))
+}
+
+.interactiveModalCollectiblesList__53412 {
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr))
+}
+
+.item_ecbedf {
+    border-radius: var(--radius-xs);
+    overflow: hidden;
+    background-color: var(--background-floating);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative
+}
+
+.accountSwitcherItem_b16f56 {
+    width: 80px;
+    height: 80px
+}
+
+.interactiveModalItem_fb9b00 {
+    width: 72px;
+    height: 72px
+}
+
+.selectedItem_adfa83 {
+    box-shadow: 0 0 0 2px var(--brand-500)
+}
+
+.avatarDecorationPlaceholder__697ae {
+    position: absolute
+}
+
+.avatarDecoration__30377 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box
+}
+
+.avatarDecorationItem_c53626:before {
+    content: "";
+    position: absolute;
+    background: url(/assets/f6c7b8245d3a54cf98b2.png);
+    background-size: contain
+}
+
+.accountSwitcherItem_b16f56:before {
+    width: 56px;
+    height: 56px
+}
+
+.interactiveModalItem_fb9b00:before {
+    width: 48px;
+    height: 48px
+}
+
+.loading__3f327 {
+    height: 100%
+}
+
+.presetEffectImg_b4d9ed {
+    position: absolute;
+    border-radius: 4px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    width: 100%;
+    height: 100%
+}
+
+.presetEffectBackground__58a7d {
+    position: absolute;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%
+}
+
+.theme-light .item_ecbedf {
+    background-color: var(--background-tertiary)
 }
 
 .badge__38d19 {
@@ -124196,4 +124124,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.0c45dbb95c22694b677a.css.map*/
+/*# sourceMappingURL=app.4e6e9c6934ebb48b6a85.css.map*/

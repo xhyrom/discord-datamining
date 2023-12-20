@@ -5594,22 +5594,6 @@
                 profileCustomizationTab: "profileCustomizationTab__0022f"
             }
         },
-        55395: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                close: "close_c83a09",
-                closeIcon: "closeIcon__6dc3a",
-                container: "container__0ec3c",
-                content: "content__28297",
-                cta: "cta_ca821f",
-                ctaContainer: "ctaContainer__95bd7",
-                listContainer: "listContainer_c0b21e",
-                segmentControl: "segmentControl__626aa",
-                segmentControlOption: "segmentControlOption__79596",
-                segmentControlOptionSelected: "segmentControlOptionSelected_fa6c0e",
-                title: "title_f462e1"
-            }
-        },
         268779: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -23572,7 +23556,6 @@
                 clickable: "clickable__35918",
                 profileBadges: "profileBadges__7a7cb",
                 profileBadgesCompactNoTouch: "profileBadgesCompactNoTouch__9b41f profileBadges__7a7cb",
-                tryingOutAvatarDecoration: "tryingOutAvatarDecoration__65e66",
                 warningCircleIcon: "warningCircleIcon__5c6b0"
             }
         },
