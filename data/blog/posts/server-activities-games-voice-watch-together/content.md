@@ -103,7 +103,7 @@
                 <li><a href="https://www.fundaygames.dk/discord/color-together-play-guide">Color Together</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/15508886520855-Bobble-Bash-FAQ">Bobble Bash</a></li>
                 <li><a href="https://mojiworks.com/chef-showdown/help">Chef Showdown</a></li>
-                <li><a href="https://discord.gg/colonist">Colonist</a></li>
+                <li><a href="https://blog.colonist.io/play-colonist-on-discord/">Colonist</a></li>
             </ul>
             <p>And of course, you’ll always find us on the usual places: <a href="https://x.com/discord">X</a>, <a href="https://www.instagram.com/discord/">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Try making a good ol’ fashioned montage of your sick Putt Party plays and share it with us!&nbsp;</p>
         </div>
