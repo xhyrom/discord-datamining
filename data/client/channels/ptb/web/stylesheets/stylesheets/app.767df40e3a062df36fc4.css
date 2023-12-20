@@ -19412,8 +19412,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -92349,6 +92349,14 @@ html .invoiceCancelRow_a8669b {
     padding: 8px
 }
 
+.roleTooltipSafetyContainer__85e04 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px;
+    width: 160px
+}
+
 .roleTooltipItem_fe6bd1 {
     overflow: hidden
 }
@@ -123928,4 +123936,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6fc071788ead21036c0d.css.map*/
+/*# sourceMappingURL=app.767df40e3a062df36fc4.css.map*/
