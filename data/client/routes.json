@@ -4728,5 +4728,13 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "ATTACHMENTS_REFRESH_URLS": {
+    "url": "/attachments/refresh-urls",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
