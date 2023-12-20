@@ -5868,15 +5868,6 @@
                 skeleton: "skeleton__5ac25"
             }
         },
-        322853: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                coachmark: "coachmark_db913c",
-                imageLoader: "imageLoader__0a236",
-                loading: "loading__9320e",
-                shopArt: "shopArt_acfdd5"
-            }
-        },
         216365: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -21511,7 +21502,8 @@
             "use strict";
             e.exports = {
                 classificationEvidenceCard: "classificationEvidenceCard__1b7da",
-                classificationEvidenceContainer: "classificationEvidenceContainer__91a8a"
+                classificationEvidenceContainer: "classificationEvidenceContainer__91a8a",
+                classificationEvidenceMessageAttachment: "classificationEvidenceMessageAttachment_c76fcf"
             }
         },
         122698: function(e, t, o) {
