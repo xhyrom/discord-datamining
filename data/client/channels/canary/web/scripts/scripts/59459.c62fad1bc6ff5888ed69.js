@@ -773,6 +773,9 @@
                 },
                 handleGuildMemberSearchStillIndexingV2: function() {
                     return U
+                },
+                handleGuildMemberNewTimestampRefreshV2: function() {
+                    return G
                 }
             }), n("222007"), n("70102");
             var r, l, a, u, o = n("714617"),
@@ -1067,6 +1070,13 @@
                     abortController: null,
                     lastUpdated: Date.now()
                 })
+            }
+
+            function G(e) {
+                let {
+                    guildId: t
+                } = e;
+                v(t)
             }
         },
         347895: function(e, t, n) {
@@ -1886,4 +1896,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59459.805f1d37a012735e4e89.js.map
+//# sourceMappingURL=59459.c62fad1bc6ff5888ed69.js.map
