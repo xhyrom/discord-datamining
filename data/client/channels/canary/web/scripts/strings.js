@@ -15081,8 +15081,6 @@
                 MARKETING_PAGE_SHOP_PERK_COMPARISON_CHART: "Shop member pricing, and exclusive items",
                 USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_HEADER: "‘Tis the season for feelin’ festive!",
                 USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_SUBHEADER: "Deck your profile in seasonal styles with new items in the Shop.",
-                COLLECTIBLES_INTERACTIVE_MODAL_HEADER: "Look Your Best: the Shop is Open!",
-                COLLECTIBLES_INTERACTIVE_MODAL_SUBHEADER: "Try on a few items from the Shop below.\nBuy any of them and they're yours to keep.",
                 COLLECTIBLES_SHOP_TAB_COACHMARK_SUBHEADER: "Deck your profile in seasonal styles with new Winter Wonderland items.",
                 AVATAR_DECORATIONS_SOCIAL_UPSELL: "Like this avatar decoration? $[Get your own from the Shop](openShop).",
                 COMBINED_COLLECTIBLES_SOCIAL_UPSELL: "Customize your profile with snazzy animations. $[Check them out](openShop).",
@@ -18299,7 +18297,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255821", ", Version Hash: ").concat("6a5d3e1362c22def8ac0c6c3c621b220b578b041")), t.default.setTags({
+            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255832", ", Version Hash: ").concat("4d02ba605ca4b3ad84a1a2740c8454532a441c2c")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
         },
@@ -20768,8 +20766,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "255821", "255821"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255821")), _ = 0), _
+                let _ = parseInt((e = "255832", "255832"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255832")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36990,4 +36988,4 @@
         }
     }
 ]);
-//# sourceMappingURL=85664.a5767243eba049e84468.js.map
+//# sourceMappingURL=85664.8199c37e9035001d0867.js.map
