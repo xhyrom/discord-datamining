@@ -19460,14 +19460,17 @@
                 KRUNKER_STRIKE_APPLICATION_ID: function() {
                     return X
                 },
-                EMBEDDED_ACTIVITY_SURVEY_URL: function() {
+                COLONIST_APPLICATION_ID: function() {
                     return Q
                 },
-                ImageSizes: function() {
+                EMBEDDED_ACTIVITY_SURVEY_URL: function() {
                     return Z
                 },
-                STAFF_RELEASE_PHASES: function() {
+                ImageSizes: function() {
                     return J
+                },
+                STAFF_RELEASE_PHASES: function() {
+                    return $
                 },
                 ActivityFeedbackReasons: function() {
                     return i
@@ -19491,13 +19494,13 @@
                     return c
                 },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return $
-                },
-                APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
                     return ee
                 },
-                APPLICATIONS_WITH_NO_REFFERER: function() {
+                APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
                     return et
+                },
+                APPLICATIONS_WITH_NO_REFFERER: function() {
+                    return en
                 },
                 WhatsNewSection: function() {
                     return d
@@ -19509,10 +19512,10 @@
                     return f
                 },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return ei
+                    return er
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return er
+                    return es
                 }
             }), n("222007");
             var i, r, s, a, o, l, u, c, d, E, f, h, p, _, S, m, T, g, I, C, v, A, R = n("798609"),
@@ -19540,36 +19543,37 @@
                 z = "1037680572660727838",
                 q = "945737671223947305",
                 X = "1011683823555199066",
-                Q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-                Z = {
+                Q = "1106787098452832296",
+                Z = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                J = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                J = ["in_development", "activities_team", "employee_release"];
+                $ = ["in_development", "activities_team", "employee_release"];
             (h = i || (i = {})).FAILED_LOAD = "FAILED_LOAD", h.LAGGING = "LAGGING", h.CONFUSING = "CONFUSING", h.NOT_FUN = "NOT_FUN", h.OTHER = "OTHER", (p = r || (r = {}))[p.PLAY = 0] = "PLAY", p[p.SPECTATE = 1] = "SPECTATE", (_ = s || (s = {})).DESKTOP = "desktop", _.MOBILE = "mobile", (S = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", S.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", S.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", S.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (m = o || (o = {}))[m.UNLOCKED = 0] = "UNLOCKED", m[m.NEEDS_NITRO = 1] = "NEEDS_NITRO", (T = l || (l = {}))[T.NO_UPDATE = 0] = "NO_UPDATE", T[T.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", T[T.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", T[T.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", T[T.USER_JOINED = 4] = "USER_JOINED", T[T.USER_LEFT = 5] = "USER_LEFT", T[T.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (g = u || (u = {}))[g.UNLOCKED = 1] = "UNLOCKED", g[g.PORTRAIT = 2] = "PORTRAIT", g[g.LANDSCAPE = 3] = "LANDSCAPE", (I = c || (c = {}))[I.DIRECTORY = 0] = "DIRECTORY", I[I.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", I[I.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let $ = "activity-shelf",
-                ee = new Set(["755600276941176913", L, b, x]),
-                et = new Set([L, b, x]);
+            let ee = "activity-shelf",
+                et = new Set(["755600276941176913", L, b, x]),
+                en = new Set([L, b, x]);
             (C = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", C.GDM_ACTIVITIES = "GDM_ACTIVITIES", C.PUTT_PARTY = "PUTT_PARTY", C.JAMSPACE_OLD = "JAMSPACE", C.JAMSPACE = "JAMSPACE2", C.POKER = "POKER", C.FREE = "FREE", (v = E || (E = {}))[v.PORTRAIT = 0] = "PORTRAIT", v[v.LANDSCAPE = 1] = "LANDSCAPE", (A = f || (f = {}))[A.FOCUSED = 0] = "FOCUSED", A[A.PIP = 1] = "PIP", A[A.GRID = 2] = "GRID";
-            let en = {
+            let ei = {
                     label_type: R.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                ei = {
+                er = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
                     supported_platforms: [R.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [R.EmbeddedActivitySupportedPlatforms.WEB]: en,
-                        [R.EmbeddedActivitySupportedPlatforms.IOS]: en,
-                        [R.EmbeddedActivitySupportedPlatforms.ANDROID]: en
+                        [R.EmbeddedActivitySupportedPlatforms.WEB]: ei,
+                        [R.EmbeddedActivitySupportedPlatforms.IOS]: ei,
+                        [R.EmbeddedActivitySupportedPlatforms.ANDROID]: ei
                     },
                     has_csp_exception: !1
                 },
-                er = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
+                es = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
         },
         586391: function(e, t, n) {
             "use strict";
@@ -50018,7 +50022,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255877"
+                                build_number: "255890"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -63405,4 +63409,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.eb739a76e23059fdb031.js.map
+//# sourceMappingURL=72243.c1c83307e49dabb8e8d7.js.map
