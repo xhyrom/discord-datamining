@@ -50022,7 +50022,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "255901"
+                                build_number: "255907"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -52208,29 +52208,29 @@
             "use strict";
             n.r(t), n.d(t, {
                 serializeObject: function() {
-                    return a
+                    return o
                 },
                 deserializeObject: function() {
-                    return o
+                    return l
                 }
-            }), n("274635");
+            }), n("274635"), n("311790"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341");
             var i = n("917351"),
                 r = n.n(i),
-                s = n("316693");
-
-            function a(e) {
-                return r.cloneDeepWith(e, e => {
-                    if ((0, s.isBigFlag)(e)) return {
-                        __tag__: "bigflag",
-                        data: e.toJSON()
-                    }
-                })
-            }
+                s = n("316693"),
+                a = n("674268");
 
             function o(e) {
-                return r.cloneDeepWith(e, e => {
-                    if (null != e && "object" == typeof e && "__tag__" in e && "bigflag" === e.__tag__) return s.default.deserialize(e.data)
-                })
+                return r.cloneDeepWith(e, e => (0, s.isBigFlag)(e) ? {
+                    __tag__: "bigflag",
+                    data: e.toJSON()
+                } : (0, a.isUint8Array)(e) ? {
+                    __tag__: "uint8array",
+                    data: Array.from(e)
+                } : void 0)
+            }
+
+            function l(e) {
+                return r.cloneDeepWith(e, e => null != e && "object" == typeof e && "__tag__" in e && "bigflag" === e.__tag__ ? s.default.deserialize(e.data) : (0, a.isSerializedUint8Array)(e) ? new Uint8Array(e.data) : void 0)
             }
         },
         299039: function(e, t, n) {
@@ -63409,4 +63409,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.cf204687d728307db13f.js.map
+//# sourceMappingURL=72243.0af2bf894fe01352b6c0.js.map

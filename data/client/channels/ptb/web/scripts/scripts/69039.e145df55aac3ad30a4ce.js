@@ -13,10 +13,10 @@
                     return a
                 },
                 fullscreenChange: function() {
-                    return s
+                    return _
                 },
                 init: function() {
-                    return _
+                    return s
                 },
                 unload: function() {
                     return A
@@ -56,7 +56,7 @@
                 n(e.innerWidth, e.innerHeight)
             }
 
-            function s(e) {
+            function _(e) {
                 let t = (0, r.getWindowId)(e);
                 l.default.dispatch({
                     type: "WINDOW_FULLSCREEN_CHANGE",
@@ -65,7 +65,7 @@
                 })
             }
 
-            function _(e) {
+            function s(e) {
                 let t = (0, r.getWindowId)(e),
                     n = e.document;
                 l.default.dispatch({
@@ -135,11 +135,11 @@
                 o = n.n(E),
                 d = n("748820"),
                 a = n("446674"),
-                s = n("95410"),
-                _ = n("913144"),
+                _ = n("95410"),
+                s = n("913144"),
                 A = n("684849"),
-                c = n("611310"),
-                O = n("80687"),
+                O = n("611310"),
+                c = n("80687"),
                 I = n("49111");
             (r = u || (u = {})).REQUIRED = "REQUIRED", r.OPTIONAL = "OPTIONAL", r.OPTIONAL_DEFAULT = "OPTIONAL_DEFAULT";
             let T = "migrated",
@@ -282,7 +282,7 @@
                     }(e.layouts), l = function(e) {
                         let t = {};
                         return o.forEach(e, (e, n) => {
-                            t[n] = new c.default(e)
+                            t[n] = new O.default(e)
                         }), t
                     }(e.widgets)) : (i = {}, l = {});
                     let t = !1,
@@ -297,7 +297,7 @@
                             if (null != n) continue;
                             E = t = !0;
                             let i = (0, d.v4)();
-                            n = new c.default({
+                            n = new O.default({
                                 ...this.getWidgetDefaultSettings(e),
                                 type: e,
                                 id: i,
@@ -380,7 +380,7 @@
             }
             S.displayName = "LayoutStore", S.persistKey = "LayoutStore", S.migrations = [() => {
                 let e = {
-                        ...s.default.get("OverlayStore")
+                        ..._.default.get("OverlayStore")
                     },
                     {
                         pinnedWidgets: t,
@@ -474,7 +474,7 @@
                     widgets: l
                 }
             }];
-            var g = new S(_.default, {
+            var g = new S(s.default, {
                 LAYOUT_CREATE: function(e) {
                     let {
                         layoutId: t,
@@ -497,9 +497,9 @@
                                 ...e,
                                 zIndex: t
                             };
-                        "" === E.id && (E.id = (0, d.v4)()), null != n && (E.pinned = n.pinned, -1 !== n.anchor.left && (E.anchor = (0, O.getAnchorPercentageFromLayoutSize)(n.anchor, u)), -1 !== n.size.width && (E.size = (0, O.getSizePercentageFromSize)(n.size, u))), l = {
+                        "" === E.id && (E.id = (0, d.v4)()), null != n && (E.pinned = n.pinned, -1 !== n.anchor.left && (E.anchor = (0, c.getAnchorPercentageFromLayoutSize)(n.anchor, u)), -1 !== n.size.width && (E.size = (0, c.getSizePercentageFromSize)(n.size, u))), l = {
                             ...l,
-                            [E.id]: new c.default(E)
+                            [E.id]: new O.default(E)
                         }, r.push(E.id)
                     }), i = {
                         ...i,
@@ -603,7 +603,7 @@
                         widgetConfigs: t
                     } = e;
                     t.forEach(e => {
-                        let t = new c.default(e),
+                        let t = new O.default(e),
                             n = i[t.layoutId];
                         if (null == n) throw Error("LayoutStore - handleAddWidget: Invalid layoutId");
                         t = t.set("zIndex", n.widgets.length), l = {
@@ -634,11 +634,11 @@
                 o = n("116949"),
                 d = n("233069"),
                 a = n("271938"),
-                s = n("42203"),
-                _ = n("923959"),
+                _ = n("42203"),
+                s = n("923959"),
                 A = n("505507"),
-                c = n("162771"),
-                O = n("773336"),
+                O = n("162771"),
+                c = n("773336"),
                 I = n("50885"),
                 T = n("819068"),
                 f = n("471671"),
@@ -659,13 +659,13 @@
                 }),
                 g = null,
                 C = {},
-                D = null,
-                R = new Set,
+                R = null,
+                D = new Set,
                 p = !1,
                 y = null,
                 N = !1,
-                P = !1,
-                U = new Set,
+                U = !1,
+                P = new Set,
                 w = !1;
 
             function M(e) {
@@ -677,19 +677,19 @@
             let Y = {
                     ...S
                 },
-                v = new Set(["AUDIO_SET_INPUT_DEVICE", "AUDIO_SET_INPUT_VOLUME", "AUDIO_SET_LOCAL_VIDEO_DISABLED", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_SET_MODE", "AUDIO_SET_NOISE_CANCELLATION", "AUDIO_SET_NOISE_SUPPRESSION", "AUDIO_SET_OUTPUT_DEVICE", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "BILLING_SUBSCRIPTION_UPDATE_SUCCESS", "CATEGORY_COLLAPSE", "CATEGORY_EXPAND", "CHANNEL_ACK", "CHANNEL_PRELOAD", "GIFT_CODE_REDEEM", "GIFT_CODE_REDEEM_FAILURE", "GIFT_CODE_REDEEM_SUCCESS", "HOTSPOT_HIDE", "INVITE_MODAL_CLOSE", "LAYOUT_CREATE", "LAYOUT_CREATE_WIDGETS", "LAYOUT_DELETE_ALL_WIDGETS", "LAYOUT_DELETE_WIDGET", "LAYOUT_SET_PINNED", "LAYOUT_SET_TOP_WIDGET", "LAYOUT_UPDATE_WIDGET", "LOAD_MESSAGES", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES_SUCCESS", "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", "OVERLAY_ACTIVATE_REGION", "OVERLAY_DEACTIVATE_ALL_REGIONS", "OVERLAY_MESSAGE_EVENT_ACTION", "OVERLAY_SET_AVATAR_SIZE_MODE", "OVERLAY_SET_CLICK_ZONES", "OVERLAY_SET_DISPLAY_NAME_MODE", "OVERLAY_SET_DISPLAY_USER_MODE", "OVERLAY_SET_INPUT_LOCKED", "OVERLAY_SET_NOTIFICATION_POSITION_MODE", "OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE", "OVERLAY_SET_SHOW_KEYBIND_INDICATORS", "OVERLAY_SET_TEXT_WIDGET_OPACITY", "OVERLAY_SET_UI_LOCKED", "PREMIUM_PAYMENT_ERROR_CLEAR", "PREMIUM_PAYMENT_MODAL_CLOSE", "PREMIUM_PAYMENT_MODAL_OPEN", "PREMIUM_PAYMENT_SUBSCRIBE_FAIL", "PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS", "PREMIUM_PAYMENT_UPDATE_FAIL", "PREMIUM_PAYMENT_UPDATE_SUCCESS", "PREMIUM_REQUIRED_MODAL_CLOSE", "PREMIUM_REQUIRED_MODAL_OPEN", "PURCHASE_CONFIRMATION_MODAL_CLOSE", "PURCHASE_CONFIRMATION_MODAL_OPEN", "SKU_PURCHASE_CLEAR_ERROR", "SKU_PURCHASE_FAIL", "SKU_PURCHASE_MODAL_CLOSE", "SKU_PURCHASE_MODAL_OPEN", "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", "SKU_PURCHASE_SHOW_CONFIRMATION_STEP", "SKU_PURCHASE_START", "SKU_PURCHASE_SUCCESS", "STREAM_CLOSE", "STREAM_START", "VOICE_CHANNEL_SELECT"]),
+                v = new Set(["AUDIO_SET_INPUT_DEVICE", "AUDIO_SET_INPUT_VOLUME", "AUDIO_SET_LOCAL_VIDEO_DISABLED", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_SET_MODE", "AUDIO_SET_NOISE_CANCELLATION", "AUDIO_SET_NOISE_SUPPRESSION", "AUDIO_SET_OUTPUT_DEVICE", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "BILLING_SUBSCRIPTION_UPDATE_SUCCESS", "CATEGORY_COLLAPSE", "CATEGORY_EXPAND", "CHANNEL_ACK", "CHANNEL_PRELOAD", "GIFT_CODE_REDEEM", "GIFT_CODE_REDEEM_FAILURE", "GIFT_CODE_REDEEM_SUCCESS", "HOTSPOT_HIDE", "INVITE_MODAL_CLOSE", "LAYOUT_CREATE", "LAYOUT_CREATE_WIDGETS", "LAYOUT_DELETE_ALL_WIDGETS", "LAYOUT_DELETE_WIDGET", "LAYOUT_SET_PINNED", "LAYOUT_SET_TOP_WIDGET", "LAYOUT_UPDATE_WIDGET", "LOAD_MESSAGES", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES_SUCCESS", "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", "OVERLAY_ACTIVATE_REGION", "OVERLAY_DEACTIVATE_ALL_REGIONS", "OVERLAY_MESSAGE_EVENT_ACTION", "OVERLAY_SET_AVATAR_SIZE_MODE", "OVERLAY_SET_CLICK_ZONES", "OVERLAY_SET_DISPLAY_NAME_MODE", "OVERLAY_SET_DISPLAY_USER_MODE", "OVERLAY_SET_INPUT_LOCKED", "OVERLAY_SET_NOTIFICATION_POSITION_MODE", "OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE", "OVERLAY_SET_SHOW_KEYBIND_INDICATORS", "OVERLAY_SET_TEXT_WIDGET_OPACITY", "OVERLAY_SET_UI_LOCKED", "PREMIUM_PAYMENT_ERROR_CLEAR", "PREMIUM_PAYMENT_MODAL_CLOSE", "PREMIUM_PAYMENT_MODAL_OPEN", "PREMIUM_PAYMENT_SUBSCRIBE_FAIL", "PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS", "PREMIUM_PAYMENT_UPDATE_FAIL", "PREMIUM_PAYMENT_UPDATE_SUCCESS", "PREMIUM_REQUIRED_MODAL_CLOSE", "PREMIUM_REQUIRED_MODAL_OPEN", "PURCHASE_CONFIRMATION_MODAL_CLOSE", "PURCHASE_CONFIRMATION_MODAL_OPEN", "SKU_PURCHASE_CLEAR_ERROR", "SKU_PURCHASE_FAIL", "SKU_PURCHASE_MODAL_CLOSE", "SKU_PURCHASE_MODAL_OPEN", "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", "SKU_PURCHASE_SHOW_CONFIRMATION_STEP", "SKU_PURCHASE_START", "SKU_PURCHASE_SUCCESS", "STREAM_CLOSE", "STREAM_START", "VOICE_CHANNEL_SELECT", "USER_SETTINGS_PROTO_ENQUEUE_UPDATE", "USER_SETTINGS_PROTO_LOAD_IF_NECESSARY"]),
                 V = new Set([...v.values(), "ACTIVITY_INVITE_MODAL_CLOSE", "CALL_DELETE", "CHANNEL_COLLAPSE", "CHANNEL_SELECT", "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", "OVERLAY_CALL_PRIVATE_CHANNEL", "OVERLAY_JOIN_GAME", "OVERLAY_NOTIFICATION_EVENT", "OVERLAY_SELECT_CALL", "OVERLAY_SET_NOT_IDLE", "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", "OVERLAY_WIDGET_CHANGED", "SOUNDBOARD_SET_OVERLAY_ENABLED", "STREAM_STOP"]);
 
             function W() {
                 if (!__OVERLAY__) return !1;
                 let e = g === (0, T.getPID)(),
-                    t = R.has((0, T.getPID)()) || U.size > 0;
+                    t = D.has((0, T.getPID)()) || P.size > 0;
                 e && t ? (0, r.focus)(window, !0) : (0, r.focus)(window, !1)
             }
 
             function m() {
                 if (g !== (0, T.getPID)()) return !1;
-                U.clear()
+                P.clear()
             }
 
             function z(e) {
@@ -703,18 +703,18 @@
                             var t, n, i, l, r, a;
                             if ("OVERLAY_INITIALIZE" === e.type && (null == (a = e).version && 1 === T.OVERLAY_VERSION || a.version === T.OVERLAY_VERSION || (u.default.dispatch({
                                     type: "OVERLAY_INCOMPATIBLE_APP"
-                                }), (0, E.disconnect)(), 0))) P = !0;
-                            if (P) switch (e.type) {
+                                }), (0, E.disconnect)(), 0))) U = !0;
+                            if (U) switch (e.type) {
                                 case "CHANNEL_CREATE":
                                 case "THREAD_CREATE":
                                 case "THREAD_UPDATE":
                                 case "CHANNEL_DELETE":
                                 case "THREAD_DELETE":
-                                    let s = (0, d.createChannelRecord)(e.channel);
-                                    if (!d.ALL_CHANNEL_TYPES.has(s.type)) break;
+                                    let _ = (0, d.createChannelRecord)(e.channel);
+                                    if (!d.ALL_CHANNEL_TYPES.has(_.type)) break;
                                     u.default.dispatch({
                                         type: e.type,
-                                        channel: s
+                                        channel: _
                                     });
                                     break;
                                 case "CHANNEL_UPDATES":
@@ -733,9 +733,9 @@
                                     });
                                     break;
                                 case "GUILD_CREATE":
-                                    let _ = e => (0, d.createChannelRecord)(e),
+                                    let s = e => (0, d.createChannelRecord)(e),
                                         A = e.guild;
-                                    A.channels = null !== (l = null === (n = A.channels) || void 0 === n ? void 0 : n.map(_)) && void 0 !== l ? l : null, A.threads = null === (i = A.threads) || void 0 === i ? void 0 : i.map(_), null != A.channelUpdates && (A.channelUpdates.writes = null === (r = A.channelUpdates.writes) || void 0 === r ? void 0 : r.map(_)), u.default.dispatch({
+                                    A.channels = null !== (l = null === (n = A.channels) || void 0 === n ? void 0 : n.map(s)) && void 0 !== l ? l : null, A.threads = null === (i = A.threads) || void 0 === i ? void 0 : i.map(s), null != A.channelUpdates && (A.channelUpdates.writes = null === (r = A.channelUpdates.writes) || void 0 === r ? void 0 : r.map(s)), u.default.dispatch({
                                         type: "GUILD_CREATE",
                                         guild: A
                                     });
@@ -762,7 +762,7 @@
                             Y = null != e ? M(e) : {
                                 ...S
                             }
-                        }), __OVERLAY__ && (O.isPlatformEmbedded && I.default.requireModule("discord_overlay2"), R.delete((0, T.getPID)())), null != e) {
+                        }), __OVERLAY__ && (c.isPlatformEmbedded && I.default.requireModule("discord_overlay2"), D.delete((0, T.getPID)())), null != e) {
                         C = e;
                         let t = a.default.getId();
                         null != t && (null == (Y = M(t)).textChatNotifications && (Y.textChatNotifications = S.textChatNotifications), null == Y.textWidgetOpacity && (Y.textWidgetOpacity = S.textWidgetOpacity))
@@ -772,11 +772,11 @@
                     return C
                 }
                 isUILocked(e) {
-                    return !R.has(e)
+                    return !D.has(e)
                 }
                 isInstanceUILocked() {
                     if (!__OVERLAY__) throw Error("OverlayStore: App instance should never call .isInstanceUILocked()");
-                    return !R.has((0, T.getPID)())
+                    return !D.has((0, T.getPID)())
                 }
                 isInstanceFocused() {
                     if (!__OVERLAY__) throw Error("OverlayStore: App instance should never call .isInstanceFocused()");
@@ -803,7 +803,7 @@
                     return Y.selectedChannelId
                 }
                 getSelectedCallId() {
-                    return D
+                    return R
                 }
                 getDisplayUserMode() {
                     return Y.displayUserMode
@@ -830,13 +830,13 @@
                     return g
                 }
                 get initialized() {
-                    return P
+                    return U
                 }
                 get incompatibleApp() {
                     return p
                 }
                 getActiveRegions() {
-                    return U
+                    return P
                 }
                 getTextWidgetOpacity() {
                     return Y.textWidgetOpacity
@@ -878,7 +878,7 @@
                     e.userId in C && delete C[e.userId]
                 },
                 CONNECTION_CLOSED: function() {
-                    R.clear()
+                    D.clear()
                 },
                 OVERLAY_START_SESSION: function() {
                     u.default.addInterceptor(e => {
@@ -925,8 +925,8 @@
                 OVERLAY_READY: function() {
                     let e = Y.selectedGuildId,
                         t = Y.selectedChannelId;
-                    if (null != e && (!_.default.hasChannels(e) || null != t && !_.default.hasSelectableChannel(e, t)) && (e = null, t = null), null != t && null == s.default.getChannel(t) && (e = null, t = null), null == e && null == t && (e = c.default.getGuildId()), null != e && null == t) {
-                        let n = _.default.getDefaultChannel(e);
+                    if (null != e && (!s.default.hasChannels(e) || null != t && !s.default.hasSelectableChannel(e, t)) && (e = null, t = null), null != t && null == _.default.getChannel(t) && (e = null, t = null), null == e && null == t && (e = O.default.getGuildId()), null != e && null == t) {
+                        let n = s.default.getDefaultChannel(e);
                         null != n && (t = n.id)
                     }
                     Y.selectedGuildId = e, Y.selectedChannelId = t
@@ -948,10 +948,10 @@
                     let {
                         callId: t
                     } = e;
-                    D = t
+                    R = t
                 },
                 CALL_DELETE: function() {
-                    D = null
+                    R = null
                 },
                 LAYOUT_CREATE: function() {},
                 OVERLAY_SET_DISPLAY_NAME_MODE: function(e) {
@@ -1007,14 +1007,14 @@
                         locked: t,
                         pid: n
                     } = e;
-                    t ? R.delete(n) : R.add(n), m(), W(), w = !1
+                    t ? D.delete(n) : D.add(n), m(), W(), w = !1
                 },
                 OVERLAY_ACTIVATE_REGION: function(e) {
                     let {
                         region: t
                     } = e;
-                    if (g !== (0, T.getPID)() || U.has(t)) return !1;
-                    U.add(t)
+                    if (g !== (0, T.getPID)() || P.has(t)) return !1;
+                    P.add(t)
                 },
                 OVERLAY_DEACTIVATE_ALL_REGIONS: m,
                 OVERLAY_SET_PREVIEW_IN_GAME_MODE: function(e) {
@@ -1133,7 +1133,7 @@
                 }
             }
 
-            function s(e, t, n) {
+            function _(e, t, n) {
                 e = l(e, n);
                 let {
                     width: i,
@@ -1142,26 +1142,26 @@
                 return i = "string" == typeof i ? 0 : i, r = "string" == typeof r ? 0 : r, o(e, n.width, n.height, i, r)
             }
 
-            function _(e, t, n) {
+            function s(e, t, n) {
                 let {
                     top: i,
                     left: l
                 } = e, {
                     x: u,
-                    y: s
+                    y: _
                 } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
                     x: 0,
                     y: 0
                 }, {
-                    width: _,
+                    width: s,
                     height: A
-                } = t, c = d(a(o({
-                    top: i + s,
+                } = t, O = d(a(o({
+                    top: i + _,
                     left: l + u,
                     bottom: null,
                     right: null
-                }, n.width, n.height, "number" == typeof _ ? _ : 0, "number" == typeof A ? A : 0)));
-                return [r(c, n), E(t, n)]
+                }, n.width, n.height, "number" == typeof s ? s : 0, "number" == typeof A ? A : 0)));
+                return [r(O, n), E(t, n)]
             }
 
             function A(e, t, n) {
@@ -1170,20 +1170,20 @@
                     right: l
                 } = e, {
                     x: u,
-                    y: s
+                    y: _
                 } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
                     x: 0,
                     y: 0
                 }, {
-                    width: _,
+                    width: s,
                     height: A
-                } = t, c = d(a(o({
-                    top: i + s,
+                } = t, O = d(a(o({
+                    top: i + _,
                     left: null,
                     bottom: null,
                     right: l - u
-                }, n.width, n.height, "number" == typeof _ ? _ : 0, "number" == typeof A ? A : 0)));
-                return [r(c, n), E(t, n)]
+                }, n.width, n.height, "number" == typeof s ? s : 0, "number" == typeof A ? A : 0)));
+                return [r(O, n), E(t, n)]
             }
             n.r(t), n.d(t, {
                 getAnchorCoordsFromLayoutSize: function() {
@@ -1208,10 +1208,10 @@
                     return a
                 },
                 getFullCoordsFromLayoutSize: function() {
-                    return s
+                    return _
                 },
                 getLeftWidgetSpecs: function() {
-                    return _
+                    return s
                 },
                 getRightWidgetSpecs: function() {
                     return A
@@ -1220,4 +1220,4 @@
         }
     }
 ]);
-//# sourceMappingURL=69039.abac66ac2e845aef07e6.js.map
+//# sourceMappingURL=69039.e145df55aac3ad30a4ce.js.map
