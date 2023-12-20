@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["70137"], {
+    ["67615"], {
         273215: function(e, t, n) {
             "use strict";
             e.exports = n.p + "63900a1ba1f23d305c53.png"
@@ -16484,36 +16484,6 @@
             }
             f.displayName = "SpamMessageRequestStore", f.LATEST_SNAPSHOT_VERSION = 1;
             var p = new f
-        },
-        651693: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                isImageFile: function() {
-                    return s
-                },
-                isAnimatedImageUrl: function() {
-                    return u
-                },
-                isVideoUrl: function() {
-                    return d
-                },
-                isVideoFile: function() {
-                    return c
-                }
-            }), n("222007");
-            var i = n("773336");
-            let a = (e, t) => {
-                    if (null == e) return !1;
-                    let [n, i] = e.split(/\?/, 1);
-                    return t.test(n)
-                },
-                l = /\.(png|jpe?g|webp|gif|heic|heif|dng)$/i,
-                s = e => null != e && l.test(e),
-                r = /\.(webp|gif)$/i,
-                u = e => a(e, r),
-                o = (0, i.isIOS)() ? /\.(mp4|mov)$/i : ((0, i.isAndroid)(), /\.(mp4|webm|mov)$/i),
-                d = e => a(e, o),
-                c = e => null != e && o.test(e)
         },
         875978: function(e, t, n) {
             "use strict";
@@ -33621,4 +33591,4 @@
         }
     }
 ]);
-//# sourceMappingURL=70137.ae940c6c6d346f79dfcb.js.map
+//# sourceMappingURL=67615.688e8f3e45a5d842cde7.js.map

@@ -4869,6 +4869,12 @@
                 },
                 removeBit: function() {
                     return o
+                },
+                isUint8Array: function() {
+                    return s
+                },
+                isSerializedUint8Array: function() {
+                    return l
                 }
             }), n("311790"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341");
 
@@ -4894,6 +4900,14 @@
                     e[n] &= ~(1 << i)
                 }
                 return e
+            }
+
+            function s(e) {
+                return e instanceof Uint8Array
+            }
+
+            function l(e) {
+                return null != e && "object" == typeof e && "uint8array" === e.__tag__
             }
         },
         33112: function(e, t, n) {
@@ -5279,7 +5293,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "255832", "255832"), 10);
+                let o = parseInt((n = "255936", "255936"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5521,4 +5535,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.d5dfffe5e3b1ad9a0bc0.js.map
+//# sourceMappingURL=48059.7f9a86b9b3eb181f9006.js.map

@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["47540"], {
+    ["93541"], {
         53708: function(e, t, n) {
             "use strict";
             e.exports = n.p + "f6c7b8245d3a54cf98b2.png"
@@ -2313,8 +2313,9 @@
                     applicationId: y,
                     referralTrialOfferId: P,
                     giftRecipient: O,
-                    returnRef: D
-                } = null != e ? e : {}, b = !1, w = (0, r.v4)(), M = a.default.getCurrentUser(), x = (0, f.isPremiumExactly)(M, _.PremiumTypes.TIER_2);
+                    returnRef: D,
+                    subscription: b
+                } = null != e ? e : {}, w = !1, M = (0, r.v4)(), x = a.default.getCurrentUser(), G = (0, f.isPremiumExactly)(x, _.PremiumTypes.TIER_2);
                 (0, l.openModalLazy)(async () => {
                     let {
                         default: e
@@ -2326,7 +2327,7 @@
                         } = n;
                         return (0, i.jsx)(e, {
                             ...l,
-                            loadId: w,
+                            loadId: M,
                             subscriptionTier: A,
                             skuId: A,
                             isGift: g,
@@ -2335,10 +2336,10 @@
                             initialPlanId: t,
                             followupSKUInfo: I,
                             onClose: (e, t) => {
-                                r(), null == p || p(e), e && (null == C || C(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !x && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
+                                r(), null == p || p(e), e && (null == C || C(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !G && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
-                                b = !0, null == h || h(), !g && (0, u.setCanPlayWowMoment)(!0)
+                                w = !0, null == h || h(), !g && (0, u.setCanPlayWowMoment)(!0)
                             },
                             onSubscriptionConfirmation: C,
                             analyticsLocations: S,
@@ -2351,14 +2352,15 @@
                             openInvoiceId: U,
                             applicationId: y,
                             referralTrialOfferId: P,
-                            returnRef: D
+                            returnRef: D,
+                            subscription: b
                         })
                     }
                 }, {
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
-                        !b && c.default.track(E.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
-                            load_id: w,
+                        !w && c.default.track(E.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
+                            load_id: M,
                             payment_type: E.PurchaseTypeToAnalyticsPaymentType[E.PurchaseTypes.SUBSCRIPTION],
                             location: null != v ? v : T,
                             source: N,
@@ -2367,7 +2369,7 @@
                             eligible_for_trial: null != L,
                             application_id: y,
                             location_stack: S
-                        }), (0, o.clearError)(), (0, s.clearPurchaseTokenAuthState)(), null == p || p(b), b && (null == C || C())
+                        }), (0, o.clearError)(), (0, s.clearPurchaseTokenAuthState)(), null == p || p(w), w && (null == C || C())
                     },
                     onCloseRequest: E.NOOP
                 })
@@ -3177,6 +3179,34 @@
                 })
             }
             n("884691")
+        },
+        476765: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                uid: function() {
+                    return o
+                },
+                useUID: function() {
+                    return s
+                },
+                UID: function() {
+                    return u
+                }
+            });
+            var i = n("995008"),
+                r = n.n(i),
+                l = n("775560");
+            let o = function() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
+                    return r(e)
+                },
+                s = () => (0, l.useLazyValue)(() => o()),
+                u = e => {
+                    let {
+                        children: t
+                    } = e;
+                    return t(s())
+                }
         },
         461380: function(e, t, n) {
             "use strict";
@@ -4423,4 +4453,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47540.58a7ab7a122cf52d7742.js.map
+//# sourceMappingURL=93541.4351f7c88aef905f4425.js.map

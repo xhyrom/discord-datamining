@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["85664"], {
+    ["14907"], {
         229353: function(e, _, E) {
             e.exports = Object.freeze({
                 DISCORD: "Discord",
@@ -2410,14 +2410,16 @@
                 NOTIFICATION_SETTINGS_PRESETS_ALL_MESSAGES: "All Messages",
                 NOTIFICATION_SETTINGS_PRESETS_MENTION_ONLY: "Mention Only",
                 NOTIFICATION_SETTINGS_PRESETS_NONE: "None",
-                NOTIFICATION_SETTINGS_PRESETS_UNREAD_TITLE: "Unread badges",
+                NOTIFICATION_SETTINGS_PRESETS_UNREAD_TITLE: "Unread Badges",
                 NOTIFICATION_SETTINGS_PRESETS_UNREAD_SUBTITLE: "Choose when you see a full unread badge next to the channel in this server.",
                 NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_TITLE: "Push Notifications",
                 NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_SUBTITLE: "Choose when you receive a push notification from this server.",
+                NOTIFICATION_SETTINGS_CUSTOMIZE: "Customize",
                 NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_1: "new-mention",
                 NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_2: "new-message",
                 NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_3: "nothing-new",
                 NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_MESSAGE: "that’s the annoying part yea lol it’s sooooo chunky",
+                NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_AUTHOR: "Lone Wanderer",
                 FORM_LABEL_MOBILE_NOTIFICATIONS_LABEL: "Enable all notifications",
                 FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_LABEL: "System notifications",
                 FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_DESC: "Get notifications outside of Discord.",
@@ -2535,6 +2537,10 @@
                 INVITE_FRIEND_MODAL_INVITE: "Invite",
                 INVITE_FRIEND_MODAL_RETRY: "Retry",
                 INVITE_FRIEND_MODAL_BOOSTING_UPSELL: "Add an image to your invite link with Boosting",
+                NOTIFICATION_SETTINGS_MUTE_BANNER_GUILD_TITLE: "Server is currently muted",
+                NOTIFICATION_SETTINGS_MUTE_BANNER_CHANNEL_TITLE: "Channel is currently muted",
+                NOTIFICATION_SETTINGS_MUTE_BANNER_SUBTITLE: "You are not seeing any notifications or unread badges.",
+                NOTIFICATION_SETTINGS_MUTE_BANNER_SUBTITLE_UNTIL: "You are not seeing any notifications or unread badges until !!{endTime}!!",
                 CONTACT_SYNC_FAILED_ALERT_TITLE: "Uh oh something went wrong.",
                 CONTACT_SYNC_FAILED_ALERT_MESSAGE: "Something went wrong while syncing your contacts. Please wait a moment and try again.",
                 CONTACT_SYNC_ENTER_PHONE_NUMBER_TITLE: "Verify your phone number",
@@ -13300,6 +13306,7 @@
                 MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY: "Unusual Account Activity",
                 MEMBER_SAFETY_USERNAME_QUARANTINED: "Quarantined",
                 MEMBER_SAFETY_COMMUNICATION_DISABLED_TOOLTIP: "Timed out for",
+                MEMBER_SAFETY_MORE_ROLES_TOOLTIP: "More Roles",
                 MEMBER_SAFETY_UNUSUAL_DM_ACTIVITY_TOOLTIP: "Sent excessive DMs to non-friend server members in last 24 hrs",
                 MEMBER_SAFETY_MEMBER_ROW_ARIA_LABEL: "Member {name}",
                 MEMBER_SAFETY_DM_PAUSED_HEADER: "Direct messages are paused",
@@ -13739,6 +13746,7 @@
                 NOTIFICATION_PRESET_ESSENTIALS: "Essentials",
                 NOTIFICATION_PRESET_NOTHING: "Nothing",
                 NOTIFICATION_PRESET_CUSTOM: "Custom",
+                NOTIFICATION_PRESET_CUSTOM_DESCRIPTION: "You are changing notifications manually.",
                 APP_DIRECTORY: "App Directory",
                 APP_DIRECTORY_LISTING_VIEW_ALL_BUTTON: "View All",
                 APP_DIRECTORY_LISTING_ADD_BUTTON: "Add",
@@ -15081,7 +15089,6 @@
                 MARKETING_PAGE_SHOP_PERK_COMPARISON_CHART: "Shop member pricing, and exclusive items",
                 USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_HEADER: "‘Tis the season for feelin’ festive!",
                 USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_SUBHEADER: "Deck your profile in seasonal styles with new items in the Shop.",
-                COLLECTIBLES_SHOP_TAB_COACHMARK_SUBHEADER: "Deck your profile in seasonal styles with new Winter Wonderland items.",
                 AVATAR_DECORATIONS_SOCIAL_UPSELL: "Like this avatar decoration? $[Get your own from the Shop](openShop).",
                 COMBINED_COLLECTIBLES_SOCIAL_UPSELL: "Customize your profile with snazzy animations. $[Check them out](openShop).",
                 STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO: "Like this profile effect? $[Get your own from the Shop](openShop).",
@@ -18297,7 +18304,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255832", ", Version Hash: ").concat("4d02ba605ca4b3ad84a1a2740c8454532a441c2c")), t.default.setTags({
+            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255936", ", Version Hash: ").concat("8ffa720c6e5e93766dc5e995ff2bf1635b3b9895")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
         },
@@ -19877,8 +19884,12 @@
                     inlineRequire: () => E("126115").default
                 },
                 MemberSafetySearchManager: {
-                    actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING"],
+                    actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING", "MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH"],
                     inlineRequire: () => E("804160").default
+                },
+                MemberSafetyStoreBatchUpdateManager: {
+                    actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_MEMBER_ADD", "GUILD_MEMBER_UPDATE", "GUILD_MEMBER_REMOVE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS"],
+                    inlineRequire: () => E("332336").default
                 },
                 MessageCodedLinkManager: {
                     actions: ["POST_CONNECTION_OPEN", "MESSAGE_UPDATE", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_AROUND_SUCCESS", "LOAD_RECENT_MENTIONS_SUCCESS", "LOAD_PINNED_MESSAGES_SUCCESS", "SEARCH_FINISH", "GUILD_FEED_FETCH_SUCCESS"],
@@ -20766,8 +20777,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "255832", "255832"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255832")), _ = 0), _
+                let _ = parseInt((e = "255936", "255936"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255936")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -24774,6 +24785,9 @@
                 handleGuildMemberSearchStillIndexing(e) {
                     return (0, o.handleGuildMemberSearchStillIndexingV2)(e)
                 }
+                handleNewMemberTimestampRefresh(e) {
+                    return (0, o.handleGuildMemberNewTimestampRefreshV2)(e)
+                }
                 constructor(...e) {
                     super(...e), this.actions = {
                         INITIALIZE_MEMBER_SAFETY_STORE: e => this.handleInitialize(e),
@@ -24781,11 +24795,102 @@
                         MEMBER_SAFETY_SEARCH_STATE_UPDATE: e => this.handleSearchStateUpdate(e),
                         MEMBER_SAFETY_PAGINATION_UPDATE: e => this.handlePaginationUpdate(e),
                         MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: e => this.handleGuildMemberSearchSuccess(e),
-                        MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING: e => this.handleGuildMemberSearchStillIndexing(e)
+                        MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING: e => this.handleGuildMemberSearchStillIndexing(e),
+                        MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH: e => this.handleNewMemberTimestampRefresh(e)
                     }
                 }
             }
             var r = new n
+        },
+        332336: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return O
+                }
+            }), E("222007");
+            var t = E("913144"),
+                o = E("689988"),
+                n = E("525065"),
+                r = E("178406");
+            let i = {},
+                a = {},
+                I = null;
+            async function s(e, _) {
+                null == i[e] && (i[e] = new Set), i[e].add(_), null == a[e] && (a[e] = Date.now()), S(e) && await T(e)
+            }
+
+            function T(e) {
+                if (null == i[e]) return;
+                let _ = Array.from(i[e]);
+                i[e] = new Set, a[e] = Date.now(), requestAnimationFrame(async () => {
+                    await t.default.dispatch({
+                        type: "MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH",
+                        guildId: e,
+                        userIds: _
+                    })
+                })
+            }
+
+            function S(e) {
+                let _ = i[e];
+                if (null == _) return !1;
+                let E = _.size >= function(e) {
+                        var _;
+                        let E = null !== (_ = n.default.getMemberCount(e)) && void 0 !== _ ? _ : 0;
+                        return E >= 75e3 ? 10 : 2
+                    }(e),
+                    t = a[e];
+                if (E) return !0;
+                if (null == t) return !1;
+                let o = Date.now() - t,
+                    r = null != t && o >= function(e) {
+                        var _;
+                        let E = null !== (_ = n.default.getMemberCount(e)) && void 0 !== _ ? _ : 0;
+                        return E >= 75e3 ? 5e3 : 2e3
+                    }(e);
+                return r
+            }
+
+            function N(e) {
+                i[e] = new Set, a[e] = null
+            }
+            class A extends o.default {
+                handleInitialize() {
+                    null == I && null == I && (I = setInterval(() => {
+                        for (let e in i) S(e) && T(e)
+                    }, 1e4))
+                }
+                handleGuildMemberUpdate(e, _) {
+                    let E = r.default.isInitialized(e);
+                    if (E) return s(e, _)
+                }
+                handleGuildMemberRemove(e, _) {
+                    let E = r.default.isInitialized(e);
+                    if (E) return s(e, _)
+                }
+                handleGuildDelete(e) {
+                    let _ = e.guild.id,
+                        E = r.default.isInitialized(_);
+                    E && N(_)
+                }
+                handleGuildMemberSearchSuccess(e) {
+                    let {
+                        guildId: _
+                    } = e, E = r.default.isInitialized(_);
+                    E && N(_)
+                }
+                constructor(...e) {
+                    super(...e), this.actions = {
+                        INITIALIZE_MEMBER_SAFETY_STORE: () => this.handleInitialize(),
+                        GUILD_MEMBER_ADD: e => this.handleGuildMemberUpdate(e.guildId, e.user.id),
+                        GUILD_MEMBER_UPDATE: e => this.handleGuildMemberUpdate(e.guildId, e.user.id),
+                        GUILD_MEMBER_REMOVE: e => this.handleGuildMemberRemove(e.guildId, e.user.id),
+                        MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: e => this.handleGuildMemberSearchSuccess(e)
+                    }
+                }
+            }
+            var O = new A
         },
         999243: function(e, _, E) {
             "use strict";
@@ -25873,6 +25978,36 @@
                 }
             }
             var S = new T
+        },
+        651693: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                isImageFile: function() {
+                    return r
+                },
+                isAnimatedImageUrl: function() {
+                    return a
+                },
+                isVideoUrl: function() {
+                    return s
+                },
+                isVideoFile: function() {
+                    return T
+                }
+            }), E("222007");
+            var t = E("773336");
+            let o = (e, _) => {
+                    if (null == e) return !1;
+                    let [E, t] = e.split(/\?/, 1);
+                    return _.test(E)
+                },
+                n = /\.(png|jpe?g|webp|gif|heic|heif|dng)$/i,
+                r = e => null != e && n.test(e),
+                i = /\.(webp|gif)$/i,
+                a = e => o(e, i),
+                I = (0, t.isIOS)() ? /\.(mp4|mov)$/i : ((0, t.isAndroid)(), /\.(mp4|webm|mov)$/i),
+                s = e => o(e, I),
+                T = e => null != e && I.test(e)
         },
         643857: function(e, _, E) {
             "use strict";
@@ -36988,4 +37123,4 @@
         }
     }
 ]);
-//# sourceMappingURL=85664.8199c37e9035001d0867.js.map
+//# sourceMappingURL=14907.e4fc0f9b445abf740850.js.map

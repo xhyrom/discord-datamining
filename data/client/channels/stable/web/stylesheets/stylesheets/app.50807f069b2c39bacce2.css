@@ -15331,6 +15331,33 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-bottom: 32px
 }
 
+.dupSubscriptionRow__2abc4 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 48px
+}
+
+.dupSubscriptionRow__2abc4:after {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: -16px;
+    width: calc(100% + 32px);
+    height: calc(100% + 32px);
+    background-color: var(--bg-mod-faint);
+    display: block;
+    z-index: -1;
+    border-radius: 4px
+}
+
+.dupSubscriptionRow__2abc4:first-child {
+    margin-top: 32px
+}
+
+.dupSubscriptionRow__2abc4:last-child {
+    margin-bottom: 0
+}
+
 .guildSubscriptionRow__43b32 {
     margin-top: 16px
 }
@@ -15473,6 +15500,11 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-bottom: 8px
 }
 
+.duplicateHeader_ac8aff {
+    color: var(--red-400);
+    margin-bottom: 8px
+}
+
 .billingInformation_ed226c {
     color: var(--text-normal);
     font-size: 14px;
@@ -15514,6 +15546,19 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .boostingDesktopAppBlurb__03a6b {
     margin-top: 8px
+}
+
+.duplicateSubscriptionsBanner__178e1 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: var(--bg-mod-faint);
+    border-radius: 4px;
+    margin-bottom: 14px
+}
+
+.duplicateSubscriptionsBannerText_a80007 {
+    margin-left: 8px
 }
 
 .container_ae490a {
@@ -19308,19 +19353,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .theme-dark .noItemsIcon__38ca2 {
     background: #4f545c
-}
-
-.duplicateSubscriptionsBanner_e2aeea {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background: var(--background-floating);
-    border-radius: 4px;
-    margin-bottom: 14px
-}
-
-.duplicateSubscriptionsBannerText_ae1ef0 {
-    margin-left: 8px
 }
 
 :root {
@@ -24206,7 +24238,7 @@ html .progress__4ef76 {
     text-align: center;
     border-radius: 3px;
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     padding: 12px 0;
     margin-top: 16px;
     color: var(--white-500);
@@ -92349,6 +92381,14 @@ html .invoiceCancelRow_a8669b {
     padding: 8px
 }
 
+.roleTooltipSafetyContainer__85e04 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px;
+    width: 160px
+}
+
 .roleTooltipItem_fe6bd1 {
     overflow: hidden
 }
@@ -107365,13 +107405,12 @@ html .invoiceCancelRow_a8669b {
 
 .keybindIndicator_d07e29 {
     display: flex;
-    opacity: .4;
     margin-left: 46px;
     margin-bottom: 4px
 }
 
 .keybindIcon__980d1 {
-    background-color: var(--background-primary);
+    background-color: var(--background-modifier-selected);
     color: var(--text-normal);
     border-radius: 4px;
     margin-right: 4px;
@@ -107382,11 +107421,13 @@ html .invoiceCancelRow_a8669b {
     width: -moz-fit-content;
     width: fit-content;
     padding: 2px 4px;
-    background-color: var(--background-primary);
+    background-color: var(--background-modifier-selected);
     color: var(--text-normal);
     border-radius: 4px;
     line-height: 14px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    display: flex;
+    align-items: center
 }
 
 .icon__5e128 {
@@ -110101,27 +110142,6 @@ html .invoiceCancelRow_a8669b {
 .art_f8934e {
     margin-top: -60px;
     height: 120px
-}
-
-.coachmark_db913c {
-    width: 296px
-}
-
-.loading__9320e {
-    opacity: 0;
-    pointer-events: none
-}
-
-.shopArt_acfdd5 img {
-    margin-top: -80px;
-    height: 150px;
-    width: 250px;
-    -o-object-fit: contain;
-    object-fit: contain
-}
-
-.imageLoader__0a236 {
-    display: none
 }
 
 html .tabBadge__002b3 {
@@ -114003,6 +114023,10 @@ html .invoiceCancelRow_c1bfe7 {
     padding-bottom: 13px;
     display: flex;
     flex-direction: row
+}
+
+.classificationEvidenceMessageAttachment_c76fcf {
+    max-width: 372px
 }
 
 .classificationContainer_ee7986 {
@@ -123944,4 +123968,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.da903f984f29d3c5e5d7.css.map*/
+/*# sourceMappingURL=app.50807f069b2c39bacce2.css.map*/
