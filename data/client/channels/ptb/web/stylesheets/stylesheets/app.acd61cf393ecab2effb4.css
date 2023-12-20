@@ -19412,8 +19412,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -24206,7 +24206,7 @@ html .progress__4ef76 {
     text-align: center;
     border-radius: 3px;
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     padding: 12px 0;
     margin-top: 16px;
     color: var(--white-500);
@@ -110103,27 +110103,6 @@ html .invoiceCancelRow_a8669b {
     height: 120px
 }
 
-.coachmark_db913c {
-    width: 296px
-}
-
-.loading__9320e {
-    opacity: 0;
-    pointer-events: none
-}
-
-.shopArt_acfdd5 img {
-    margin-top: -80px;
-    height: 150px;
-    width: 250px;
-    -o-object-fit: contain;
-    object-fit: contain
-}
-
-.imageLoader__0a236 {
-    display: none
-}
-
 html .tabBadge__002b3 {
     background-color: var(--status-danger)
 }
@@ -114003,6 +113982,10 @@ html .invoiceCancelRow_c1bfe7 {
     padding-bottom: 13px;
     display: flex;
     flex-direction: row
+}
+
+.classificationEvidenceMessageAttachment_c76fcf {
+    max-width: 372px
 }
 
 .classificationContainer_ee7986 {
@@ -123944,4 +123927,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.da903f984f29d3c5e5d7.css.map*/
+/*# sourceMappingURL=app.acd61cf393ecab2effb4.css.map*/
