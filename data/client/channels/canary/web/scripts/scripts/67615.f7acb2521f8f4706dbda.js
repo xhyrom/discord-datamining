@@ -2005,38 +2005,6 @@
                 })
             }
         },
-        57999: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return i
-                }
-            });
-            var i = (0, n("862205").createExperiment)({
-                kind: "user",
-                id: "2022-10_context_menu_and_new_media_picker",
-                label: "Context Menu and New Media Picker",
-                defaultConfig: {
-                    enabled: !1,
-                    persistentGiftButton: !0
-                },
-                treatments: [{
-                    id: 1,
-                    label: "New media picker is enabled. Gift button is visible alongside Create Chread",
-                    config: {
-                        enabled: !0,
-                        persistentGiftButton: !0
-                    }
-                }, {
-                    id: 2,
-                    label: "New media picker is enabled. Gift button is NOT visible alongside Create Chread",
-                    config: {
-                        enabled: !0,
-                        persistentGiftButton: !1
-                    }
-                }]
-            })
-        },
         389806: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -28825,7 +28793,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return m
                 }
             }), n("222007"), n("424973");
             var i = n("917351"),
@@ -28833,85 +28801,79 @@
                 l = n("446674"),
                 s = n("913144"),
                 r = n("404118"),
-                u = n("57999"),
-                o = n("282928"),
-                d = n("402752"),
-                c = n("474643"),
-                _ = n("49111"),
-                E = n("782340");
-            let h = new Map,
-                f = [];
+                u = n("282928"),
+                o = n("402752"),
+                d = n("474643"),
+                c = n("49111"),
+                _ = n("782340");
+            let E = new Map,
+                h = [];
 
-            function p(e, t) {
+            function f(e, t) {
                 var n, i;
-                return null !== (i = null === (n = T(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== i ? i : f
+                return null !== (i = null === (n = p(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== i ? i : h
             }
 
-            function T(e) {
+            function p(e) {
                 var t;
-                return null !== (t = h.get(e)) && void 0 !== t ? t : new Map
+                return null !== (t = E.get(e)) && void 0 !== t ? t : new Map
             }
 
-            function C(e, t, n) {
-                let i = T(e);
-                i.set(t, n), h.set(e, i)
+            function T(e, t, n) {
+                let i = p(e);
+                i.set(t, n), E.set(e, i)
             }
-            class m extends l.default.Store {
+            class C extends l.default.Store {
                 getFirstUpload(e, t) {
-                    let n = p(e, t);
+                    let n = f(e, t);
                     return n.length > 0 ? n[0] : null
                 }
                 hasAdditionalUploads(e, t) {
                     var n;
-                    return (null !== (n = p(e, t).length) && void 0 !== n ? n : 0) > 1
+                    return (null !== (n = f(e, t).length) && void 0 !== n ? n : 0) > 1
                 }
                 getUploads(e, t) {
-                    return p(e, t)
+                    return f(e, t)
                 }
                 getUploadCount(e, t) {
                     var n;
-                    return null !== (n = p(e, t).length) && void 0 !== n ? n : 0
+                    return null !== (n = f(e, t).length) && void 0 !== n ? n : 0
                 }
                 getUpload(e, t, n) {
-                    return p(e, n).find(e => e.id === t)
+                    return f(e, n).find(e => e.id === t)
                 }
                 findUpload(e, t, n) {
-                    return p(e, t).find(n)
+                    return f(e, t).find(n)
                 }
             }
-            m.displayName = "UploadAttachmentStore";
-            var S = new m(s.default, {
+            C.displayName = "UploadAttachmentStore";
+            var m = new C(s.default, {
                 UPLOAD_ATTACHMENT_POP_FILE: function(e) {
                     let {
                         channelId: t
-                    } = e, n = [...p(t, c.DraftType.ChannelMessage)];
-                    n.shift(), C(t, c.DraftType.ChannelMessage, n)
+                    } = e, n = [...f(t, d.DraftType.ChannelMessage)];
+                    n.shift(), T(t, d.DraftType.ChannelMessage, n)
                 },
                 UPLOAD_ATTACHMENT_ADD_FILES: e => {
-                    var t;
                     let {
-                        files: n,
-                        channelId: i,
-                        showLargeMessageDialog: l,
-                        draftType: s
-                    } = e, d = [...p(i, s)], h = (null === (t = u.default.getCurrentConfig({
-                        location: "373489_1"
-                    }, {
-                        autoTrackExposure: !1
-                    })) || void 0 === t ? void 0 : t.enabled) === !0;
-                    if (h && d.length + n.length > _.MAX_UPLOAD_COUNT && s !== c.DraftType.SlashCommand && s !== c.DraftType.ApplicationLauncherCommand) {
+                        files: t,
+                        channelId: n,
+                        showLargeMessageDialog: i,
+                        draftType: l
+                    } = e, s = [...f(n, l)];
+                    if (s.length + t.length > c.MAX_UPLOAD_COUNT && l !== d.DraftType.SlashCommand && l !== d.DraftType.ApplicationLauncherCommand) {
                         r.default.show({
-                            title: E.default.Messages.ATTACHMENT_TOO_MANY_ERROR_TITLE,
-                            body: E.default.Messages.ATTACHMENT_TOO_MANY_ERROR_MESSAGE.format({
-                                limit: _.MAX_UPLOAD_COUNT
+                            title: _.default.Messages.ATTACHMENT_TOO_MANY_ERROR_TITLE,
+                            body: _.default.Messages.ATTACHMENT_TOO_MANY_ERROR_MESSAGE.format({
+                                limit: c.MAX_UPLOAD_COUNT
                             })
                         });
                         return
                     }
-                    a.forEach(n, e => {
-                        let t = new o.CloudUpload(e, i, l, d.length);
-                        t.upload(), d.push(t)
-                    }), C(i, s, d)
+                    a.forEach(t, e => {
+                        let t = new u.CloudUpload(e, n, i, s.length);
+                        t.upload(), s.push(t)
+                    }), T(n, l, s)
                 },
                 UPLOAD_ATTACHMENT_UPDATE_FILE: function(e) {
                     let {
@@ -28922,28 +28884,21 @@
                         spoiler: l,
                         thumbnail: s,
                         draftType: r
-                    } = e, u = [...p(t, r)], o = u.map(e => (e.id === n && (void 0 !== i && (e.filename = i), void 0 !== l && (e.spoiler = l), void 0 !== a && (e.description = a), void 0 !== s && (e.isThumbnail = s)), e));
-                    C(t, r, o)
+                    } = e, u = [...f(t, r)], o = u.map(e => (e.id === n && (void 0 !== i && (e.filename = i), void 0 !== l && (e.spoiler = l), void 0 !== a && (e.description = a), void 0 !== s && (e.isThumbnail = s)), e));
+                    T(t, r, o)
                 },
                 UPLOAD_ATTACHMENT_REMOVE_FILE: function(e) {
-                    var t;
-                    let n, {
-                            channelId: i,
-                            id: a,
-                            draftType: l
-                        } = e,
-                        s = (null === (t = u.default.getCurrentConfig({
-                            location: "373489_2"
-                        }, {
-                            autoTrackExposure: !1
-                        })) || void 0 === t ? void 0 : t.enabled) === !0,
-                        r = [...p(i, l)];
-                    if ((n = s ? r.findIndex(e => (0, d.doesImageMatchUpload)({
-                            uri: a,
-                            filename: a
-                        }, e)) : r.findIndex(e => a === e.id)) > -1) {
-                        let e = r.splice(n, 1)[0];
-                        e.cancel(), C(i, l, r)
+                    let {
+                        channelId: t,
+                        id: n,
+                        draftType: i
+                    } = e, a = [...f(t, i)], l = a.findIndex(e => (0, o.doesImageMatchUpload)({
+                        uri: n,
+                        filename: n
+                    }, e));
+                    if (l > -1) {
+                        let e = a.splice(l, 1)[0];
+                        e.cancel(), T(t, i, a)
                     }
                 },
                 UPLOAD_ATTACHMENT_REMOVE_FILES: function(e) {
@@ -28951,21 +28906,21 @@
                         channelId: t,
                         attachmentIds: n,
                         draftType: i
-                    } = e, a = [...p(t, i)];
+                    } = e, a = [...f(t, i)];
                     n.forEach(e => {
                         let t = a.findIndex(t => e === t.id);
                         if (t > -1) {
                             let e = a.splice(t, 1)[0];
                             e.cancel()
                         }
-                    }), C(t, i, a)
+                    }), T(t, i, a)
                 },
                 UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: function(e) {
                     let {
                         channelId: t,
                         draftType: n
                     } = e;
-                    C(t, n, [])
+                    T(t, n, [])
                 },
                 UPLOAD_ATTACHMENT_SET_UPLOADS: function(e) {
                     let {
@@ -28973,7 +28928,7 @@
                         uploads: n,
                         draftType: i
                     } = e;
-                    C(t, i, n)
+                    T(t, i, n)
                 },
                 UPLOAD_ATTACHMENT_SET_FILE: function(e) {
                     let {
@@ -28981,14 +28936,14 @@
                         id: n,
                         file: i,
                         draftType: a
-                    } = e, l = [...p(t, a)], s = l.filter(e => e.id !== n), r = new o.CloudUpload(i, t);
-                    r.upload(), s.push(r), C(t, a, s)
+                    } = e, l = [...f(t, a)], s = l.filter(e => e.id !== n), r = new u.CloudUpload(i, t);
+                    r.upload(), s.push(r), T(t, a, s)
                 },
                 SIDEBAR_CLOSE: function(e) {
                     let {
                         baseChannelId: t
                     } = e;
-                    C(t, c.DraftType.FirstThreadMessage, [])
+                    T(t, d.DraftType.FirstThreadMessage, [])
                 }
             })
         },
@@ -33666,4 +33621,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.80a5849c1a16950c261e.js.map
+//# sourceMappingURL=67615.f7acb2521f8f4706dbda.js.map
