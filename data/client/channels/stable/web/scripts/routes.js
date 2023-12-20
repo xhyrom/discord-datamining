@@ -1694,7 +1694,8 @@
                     REPORT_SECOND_LOOK: "/report-review",
                     COLLECTIBLES_SHOP: "/shop",
                     COLLECTIBLES_SHOP_FULLSCREEN: "/shop/fullscreen",
-                    COLLECTIBLES_SHOP_PRODUCT_DETAIL: _ => "/shop/product/".concat(_)
+                    COLLECTIBLES_SHOP_PRODUCT_DETAIL: _ => "/shop/product/".concat(_),
+                    ACCOUNT_STANDING: "/account-standing"
                 }),
                 a4 = (0, aX.wrapPaths)(a5),
                 a8 = (0, aX.wrapPaths)(a6, [":", "?", "@"]);
@@ -8858,7 +8859,7 @@
                 }),
                 radii: T.Radius,
                 spacing: L,
-                meta: {
+                internal: {
                     isSemanticColor: _ => "object" == typeof _ && null !== _ && D in _,
                     resolveSemanticColor(_, E, I) {
                         _ = function(_) {
@@ -13162,4 +13163,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.1d6580bcb655f09477ed.js.map
+//# sourceMappingURL=7273.454f9f190f561fb3c471.js.map

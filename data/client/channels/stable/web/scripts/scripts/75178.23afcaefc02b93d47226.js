@@ -451,6 +451,13 @@
                         name: e.name.startsWith("Clip - ") ? void 0 : e.name
                     };
                     return t
+                }, e => {
+                    let t = {
+                        ...e,
+                        version: 3,
+                        name: "" === e.name ? void 0 : e.name
+                    };
+                    return t
                 }],
                 u = null;
             async function r(e) {
@@ -459,7 +466,10 @@
                 let o = (t = r, null != u ? u : u = t.object({
                     id: t.string().required(),
                     version: t.number().positive().integer().min(0).max(i.CURRENT_CLIP_METADATA_VERSION).optional(),
-                    name: t.string(),
+                    name: t.string().when("version", {
+                        is: t.number().less(3),
+                        then: t.string().allow("")
+                    }),
                     gameName: t.string().when("version", {
                         is: t.number().greater(0).required(),
                         then: t.forbidden(),
@@ -495,10 +505,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 updateAllowVoiceRecording: function() {
-                    return T
+                    return w
                 },
                 updateClipsEnabled: function() {
-                    return w
+                    return T
                 },
                 updateDecoupledClipsEnabled: function() {
                     return D
@@ -563,7 +573,7 @@
                 x = n("80028"),
                 L = n("49111");
 
-            function T(e) {
+            function w(e) {
                 let {
                     allowVoiceRecording: t
                 } = e;
@@ -575,7 +585,7 @@
                     allow_voice_recording: t
                 })
             }
-            async function w(e) {
+            async function T(e) {
                 let {
                     clipsEnabled: t,
                     guildId: n,
@@ -1201,4 +1211,4 @@
         }
     }
 ]);
-//# sourceMappingURL=75178.e3a5462e1b040e3edce4.js.map
+//# sourceMappingURL=75178.23afcaefc02b93d47226.js.map
