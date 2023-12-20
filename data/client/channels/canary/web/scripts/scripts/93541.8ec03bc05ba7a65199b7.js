@@ -185,23 +185,20 @@
                 setPendingProfileEffectId: function() {
                     return A
                 },
-                setSingleTryItOutCollectiblesItem: function() {
+                clearErrors: function() {
                     return L
                 },
-                clearErrors: function() {
+                resetPendingAccountChanges: function() {
                     return R
                 },
-                resetPendingAccountChanges: function() {
+                resetAllPending: function() {
                     return U
                 },
-                resetAllPending: function() {
+                resetAndCloseUserProfileForm: function() {
                     return y
                 },
-                resetAndCloseUserProfileForm: function() {
-                    return P
-                },
                 setDisableSubmit: function() {
-                    return O
+                    return P
                 }
             });
             var i = n("872717"),
@@ -370,38 +367,31 @@
                 })
             }
 
-            function L(e) {
-                o.default.dispatch({
-                    type: "USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM",
-                    item: e
-                })
-            }
-
-            function R() {
+            function L() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_CLEAR_ERRORS"
                 })
             }
 
-            function U() {
+            function R() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
                 })
             }
 
-            function y() {
+            function U() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_RESET_ALL_PENDING"
                 })
             }
 
-            function P() {
+            function y() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
                 })
             }
 
-            function O(e) {
+            function P(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_DISABLE_SUBMIT",
                     disable: e
@@ -2324,7 +2314,7 @@
                     referralTrialOfferId: P,
                     giftRecipient: O,
                     returnRef: D
-                } = null != e ? e : {}, b = !1, M = (0, r.v4)(), w = a.default.getCurrentUser(), x = (0, f.isPremiumExactly)(w, _.PremiumTypes.TIER_2);
+                } = null != e ? e : {}, b = !1, w = (0, r.v4)(), M = a.default.getCurrentUser(), x = (0, f.isPremiumExactly)(M, _.PremiumTypes.TIER_2);
                 (0, l.openModalLazy)(async () => {
                     let {
                         default: e
@@ -2336,7 +2326,7 @@
                         } = n;
                         return (0, i.jsx)(e, {
                             ...l,
-                            loadId: M,
+                            loadId: w,
                             subscriptionTier: A,
                             skuId: A,
                             isGift: g,
@@ -2368,7 +2358,7 @@
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
                         !b && c.default.track(E.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
-                            load_id: M,
+                            load_id: w,
                             payment_type: E.PurchaseTypeToAnalyticsPaymentType[E.PurchaseTypes.SUBSCRIPTION],
                             location: null != v ? v : T,
                             source: N,
@@ -2859,14 +2849,11 @@
                 setTryItOutAvatarDecoration: function() {
                     return N
                 },
-                setTryItOutProfileEffect: function() {
+                setTryItOutBanner: function() {
                     return g
                 },
-                setTryItOutBanner: function() {
-                    return m
-                },
                 setTryItOutThemeColors: function() {
-                    return A
+                    return m
                 }
             });
             var i = n("872717"),
@@ -2990,19 +2977,12 @@
 
             function g(e) {
                 r.default.dispatch({
-                    type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT_ID",
-                    profileEffectId: e
-                }), f(d.AnalyticsPremiumFeatureNames.PROFILE_EFFECT)
-            }
-
-            function m(e) {
-                r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
                     banner: e
                 }), f(d.AnalyticsPremiumFeatureNames.PROFILE_BANNER)
             }
 
-            function A(e) {
+            function m(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
                     themeColors: e
@@ -4471,4 +4451,4 @@
         }
     }
 ]);
-//# sourceMappingURL=93541.c3777023e64f69b7d96c.js.map
+//# sourceMappingURL=93541.8ec03bc05ba7a65199b7.js.map
