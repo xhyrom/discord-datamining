@@ -35,6 +35,9 @@
 <h3 id="docs-internal-guid-cab4eef2-7fff-0e80-443b-f6a8e42f7b13"><span style="color: #434343;" data-darkreader-inline-color="">Note: If your Discord account does not have a previously saved payment method, you will need to add your payment method details before proceeding.  </span></h3>
 <p class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><span id="docs-internal-guid-52d89e1f-7fff-2554-dbb0-b6b078a091bf"><img src="https://support.discord.com/hc/article_attachments/19550225921047" width="624" height="452"></span></span></p>
 <p id="docs-internal-guid-152b98e9-7fff-6e8d-3e01-9c066ef3758c">And that’s it! You should see a confirmation that your gift was sent. </p>
+<h3 id="h_01HJ49ZVS8EBSFDVKZBE2STRNZ">
+    <span id="docs-internal-guid-f7642f45-7fff-cf3b-1ecb-cc8089ddae41" style="color: #434343;">Any purchased gifts that haven’t been sent and claimed can be found in your Discord Gift Inventory, which you can find by going to </span><strong><span style="color: #434343;">User Settings &gt; Gift Inventory</span></strong><span style="color: #434343;">.</span>
+</h3>
 <h1 id="h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions </h1>
 <p id="docs-internal-guid-19fc1892-7fff-8091-9662-2453d7666148"><strong>Q: Who can currently access the Shop and buy and use profile effects?</strong></p>
 <p>A:  The Shop is available to all Discord users. If you are also a Nitro member, you will have special member pricing on all purchases within the Shop!  </p>
@@ -42,7 +45,9 @@
 <p>A: Only Nitro members have access to special member pricing in the Shop. You can find more information about Nitro <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <p><strong>Q: What is your refund policy for Shop purchases?</strong></p>
 <p>A: You can find our full refund policy, including Shop purchases and Nitro subscriptions, <a href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy" target="_blank" rel="noopener noreferrer">here</a>. </p>
-<p id="docs-internal-guid-54f1cc92-7fff-e03b-1b0b-0ea7490de43b"><strong>Q: What happens to my purchased items if my account is deleted?</strong></p>
+<p id="docs-internal-guid-7f1a5203-7fff-0964-c4a2-4697b212b222"><strong>Q: I purchased a gift for a friend, but it wasn’t sent to them! Where can I find this missing gift?</strong></p>
+<p>A: If you bought a gift from the Shop but it was not sent to your friend, you can go to <strong>User Settings &gt; Gift Inventory</strong> where you’ll find any purchased but unsent gifts. You can resend those gifts from the <strong>Gift Inventory</strong>!</p>
+<p><strong>Q: What happens to my purchased items if my account is deleted?</strong></p>
 <p>A: Your use of Discord is subject to our <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>, and access to any items purchased on Discord may be lost in the case of temporary or permanent account suspension or self-requested deletion. Additionally, you are responsible for maintaining the security of your account. </p>
 <p id="docs-internal-guid-5bb8c24f-7fff-9a25-c5f5-2f21c75d8c35"><strong>Q: What if my friend sends me a gift from the Shop, but I already have the item in my collection? </strong></p>
 <p>A: Don’t worry, your friend will not be able to send an item that has already been claimed and added to your collection. </p>
