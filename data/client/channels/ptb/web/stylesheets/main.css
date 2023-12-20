@@ -19444,8 +19444,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -79738,7 +79738,7 @@ input::-webkit-inner-spin-button {
 }
 
 .root_bffbd0 {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 0;
     width: 992px;
     height: calc(100vh - 46px);
@@ -79747,15 +79747,15 @@ input::-webkit-inner-spin-button {
 }
 
 .clipGrid__8a9d3 {
-    padding: 0 24px 8px
+    padding: var(--spacing-4)var(--spacing-24)var(--spacing-8)
 }
 
 .clipsRow_b41f4b {
     display: grid;
-    grid-gap: 12px;
+    grid-gap: var(--spacing-12);
     grid-template-columns: repeat(3, 308px);
     grid-auto-rows: minmax(min-content, max-content);
-    padding-bottom: 8px
+    padding-bottom: var(--spacing-8)
 }
 
 .closeIcon_d57994 {
@@ -123968,4 +123968,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6705f03e6a80fb9b4870.css.map*/
+/*# sourceMappingURL=app.35189f0d627078be51f6.css.map*/
