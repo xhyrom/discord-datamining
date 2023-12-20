@@ -39061,7 +39061,7 @@
                             location: "MediaEngineStore"
                         }) : null,
                         r = n.canSupportSecureFrames || (null == i ? void 0 : i.canSupportSecureFrames),
-                        s = n.canSupportMls || (null == i ? void 0 : i.canSupportMls);
+                        s = !(0, Z.isIOS)() && !(0, Z.isAndroid)() && (n.canSupportMls || (null == i ? void 0 : i.canSupportMls));
                     return r ? s ? t : t % 100 : 0
                 }
             }
@@ -50019,7 +50019,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "256053"
+                                build_number: "256057"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63406,4 +63406,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72243.ff9e9da664022fc5ef77.js.map
+//# sourceMappingURL=72243.aa9e38a3c4f475bfb447.js.map
