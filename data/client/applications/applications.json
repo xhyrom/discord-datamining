@@ -1,1168 +1,5 @@
 [
   {
-    "id": "438122941302046720",
-    "name": "Xbox",
-    "icon": null,
-    "description": "",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "verify_key": "79e3173780ce2aa604ab8472cc288c2d1f3f35aa272939468442741bf4ea1856",
-    "flags": 0
-  },
-  {
-    "id": "773336526917861400",
-    "name": "Betrayal.io",
-    "icon": "0227b2e89ea08d666c43003fbadbc72a",
-    "description": "Play inside Discord with your friends!",
-    "summary": "",
-    "type": null,
-    "cover_image": "0227b2e89ea08d666c43003fbadbc72a",
-    "hook": true,
-    "verify_key": "1bf78fdbfcbabe2e1256f9b133818976591203a22febabba5ff89f86f24760ff",
-    "flags": 131072,
-    "max_participants": null,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": null,
-      "supported_platforms": [
-        "web"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        }
-      },
-      "shelf_rank": 2147483647,
-      "has_csp_exception": false
-    }
-  },
-  {
-    "id": "880218832743055411",
-    "name": "Watch Together Dev",
-    "icon": "3f135503dc803ce7bcf555c769b3f577",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "cover_image": "f22f4184f95706fef2024a10110d47aa",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "2dd794372c9fab97dbc2344ac2eaf06a7671a928a9245dc398ce82a1c60aecd3",
-    "flags": 1179648,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": null,
-      "supported_platforms": [
-        "web",
-        "android",
-        "ios"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "activities_team"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "activities_team"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "activities_team"
-        }
-      },
-      "shelf_rank": 28,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Video Player",
-      "Watch"
-    ]
-  },
-  {
-    "id": "1050941315912835122",
-    "name": "Watch Together QA",
-    "icon": "a380fd3c2d90f436731044cf2c6412e0",
-    "description": "Create and watch a playlist of videos with your friends. Your choice to share the remote or not.",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "94db6083fb1d715424e3445c755bdf33abf94b2bf793f7393183c16b341d29ec",
-    "flags": 1179648,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": null,
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        }
-      },
-      "shelf_rank": 2147483647,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Video Player",
-      "Watch"
-    ]
-  },
-  {
-    "id": "1070087967294631976",
-    "name": "Whiteboard",
-    "icon": "9a04eab3b9f50302006577b769354520",
-    "description": "You can draw, write, and post GIFs in this collaborative whiteboard. It’s not just what you create, it’s the fun of creating it together!",
-    "summary": "",
-    "type": null,
-    "cover_image": "9a04eab3b9f50302006577b769354520",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "6f5e042d9c27b4e9f48db12fafc29886288b81012fbef0aa470d2b6106490ccb",
-    "flags": 1179648,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1146495383174926457",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "ios": {
-          "label_type": 2,
-          "label_until": "2023-10-24T00:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 2,
-          "label_until": "2023-10-24T00:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 2,
-          "label_until": "2023-10-24T00:00:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 8,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Collaborate",
-      "Whiteboard"
-    ]
-  },
-  {
-    "id": "1007373802981822582",
-    "name": "Gartic Phone",
-    "icon": "7293b549efff3c5a809999d883f09202",
-    "description": "Draw and guess what you see in the ultimate game of telephone! Have some good laughs in this party game with friends.",
-    "summary": "",
-    "type": null,
-    "cover_image": "7293b549efff3c5a809999d883f09202",
-    "hook": true,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://garticphone.com/en/terms",
-    "privacy_policy_url": "https://garticphone.com/en/privacy",
-    "verify_key": "8ffdc7b099a299d592e43b258dfa4f47c058f2752003c28972ad83c78e544c27",
-    "flags": 131072,
-    "max_participants": 16,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1100817158386233375",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": "2023-05-15T16:30:00+00:00",
-      "free_period_ends_at": "2023-06-16T07:00:00+00:00",
-      "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 4,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Drawing",
-      "Gartic",
-      "Party",
-      "telephone"
-    ]
-  },
-  {
-    "id": "1039835161136746497",
-    "name": "Color Together",
-    "icon": "c1962e3f45c660e0f9dfc84acc717f98",
-    "description": "Pick a color, and start painting in this relaxing color-by-numbers game. Color Together is a relaxed space to hang out with your friends. Together you'll return the color to the world. ",
-    "summary": "",
-    "type": null,
-    "cover_image": "800aeb4c6899941eb52a743abe773a0b",
-    "hook": true,
-    "terms_of_service_url": "https://www.fundaygames.dk/legal/color-together/terms-of-use",
-    "privacy_policy_url": "https://www.fundaygames.dk/legal/color-together/privacy-policy",
-    "verify_key": "310fab18f3d036c66b576cdec920cb62a4d79f1e946ef40c95e447ebbb4bc8dd",
-    "flags": 131072,
-    "max_participants": 100,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1123566402528346122",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 16,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Chill",
-      "Color-by-Numbers"
-    ]
-  },
-  {
-    "id": "852509694341283871",
-    "name": "SpellCast",
-    "icon": "9a4a52c760994654a416740ae0b19fbb",
-    "description": "A word game where players search for words on a magical grid of letters. Challenge friends or play solo.",
-    "summary": "",
-    "type": null,
-    "cover_image": "9a4a52c760994654a416740ae0b19fbb",
-    "hook": true,
-    "terms_of_service_url": "https://frvr.com/legal#TermsofService",
-    "privacy_policy_url": "https://frvr.com/legal/#PrivacyPolicy",
-    "verify_key": "3dec42617bd0e2d2f7c316330cf99eb949a168c9b93a6aee6d1525946a9c3f1a",
-    "flags": 131072,
-    "max_participants": 6,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "951492843522895872",
-      "supported_platforms": [
-        "ios",
-        "android",
-        "web"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 15,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Solo",
-      "Word Game"
-    ]
-  },
-  {
-    "id": "903769130790969345",
-    "name": "Land-io",
-    "icon": "0a6b8f4795c66ba12afbc766dd920bfb",
-    "description": "Pick a character and encircle new territory. Run into trails to knock out foes - careful not to hit your own!",
-    "summary": "",
-    "type": null,
-    "cover_image": "0a6b8f4795c66ba12afbc766dd920bfb",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "82c2ef51c10e534207dee215fd1cbffc13708f8245a2d5e1e3e233099b30403e",
-    "flags": 1179648,
-    "max_participants": 16,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "956935500910956584",
-      "supported_platforms": [
-        "ios",
-        "android",
-        "web"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 12,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Arcade",
-      "Cross-Server",
-      "IO"
-    ]
-  },
-  {
-    "id": "880218394199220334",
-    "name": "Watch Together",
-    "icon": "ec48acbad4c32efab4275cb9f3ca3a58",
-    "description": "Create and watch a playlist of YouTube videos with your friends. Your choice to share the remote or not. ",
-    "summary": "",
-    "type": null,
-    "cover_image": "3cc9446876ae9eec6e06ff565703c292",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "e2aaf50fbe2fd9d025ac669035f5efb89099931690fba9dc28efb7eaade7f96d",
-    "flags": 1179648,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1104184163201990836",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 2,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Video Player",
-      "Watch"
-    ]
-  },
-  {
-    "id": "1078728822972764312",
-    "name": "Know What I Meme",
-    "icon": "6f547114b2979b8bc83e4ba91b4d770d",
-    "description": "The feeling when memes and inside jokes become a game.",
-    "summary": "",
-    "type": null,
-    "cover_image": "6f547114b2979b8bc83e4ba91b4d770d",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "864918885639ea54d153abdd48270f659456e02ca7cead6a512fe26e56002eeb",
-    "flags": 1179648,
-    "max_participants": 9,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1078738117185515581",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 10,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "GIFs",
-      "Memes",
-      "Party"
-    ]
-  },
-  {
-    "id": "947957217959759964",
-    "name": "Bobble League",
-    "icon": "b485f75e95e6486a758a4aa5db3352f4",
-    "description": "Bobble League is a tabletop sports game. Use Power Plays and Formations to lead your team to Victory!",
-    "summary": "",
-    "type": null,
-    "cover_image": "b485f75e95e6486a758a4aa5db3352f4",
-    "hook": true,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "35334d24152b346fa751dafbbc4d3ac14f9b6ff9501c975c75fe3072e2c8226f",
-    "flags": 1179648,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1183843013026398328",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 3,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 13,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Sports",
-      "Strategy",
-      "Team"
-    ]
-  },
-  {
-    "id": "832013003968348200",
-    "name": "Checkers In The Park",
-    "icon": "97e50fed67f44802dbb4901d74a6f9a1",
-    "description": "With boards spread across your server, jump between games as easily as you jump your opponent's pieces!",
-    "summary": "",
-    "type": null,
-    "cover_image": "97e50fed67f44802dbb4901d74a6f9a1",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "f5b322fcb0baf39974eed3c04b81f590b9e584fbdf8d6189cfe07d19eaeb57f8",
-    "flags": 1179648,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "951326802545111070",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 2,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 18,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Board Game",
-      "Classic"
-    ]
-  },
-  {
-    "id": "832012774040141894",
-    "name": "Chess In The Park",
-    "icon": "3b3981ddf67c8702920fae10b5f123ed",
-    "description": "Unleash your inner Grandmaster by playing multiple games of Chess at once vs anybody on your server.",
-    "summary": "",
-    "type": null,
-    "cover_image": "3b3981ddf67c8702920fae10b5f123ed",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "bc758e51403b1374ea262c8412b91bcdc53349a337037d10921cbf6c39bc696f",
-    "flags": 1179648,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "951327097396285470",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 7,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Board Game",
-      "Classic"
-    ]
-  },
-  {
-    "id": "832025144389533716",
-    "name": "Blazing 8s",
-    "icon": "6fe6e3dda7657b83758693205a833aa1",
-    "description": "Be the first to zero cards by swapping hands, skipping players, and reversing turns!",
-    "summary": "",
-    "type": null,
-    "cover_image": "6fe6e3dda7657b83758693205a833aa1",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "138631e02cf2de499ebfcba54a724ddeb99957274ee9a3db967376666cffdc5e",
-    "flags": 1179648,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "951327865570467880",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 3,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 9,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Card Game",
-      "Classic"
-    ]
-  },
-  {
-    "id": "755827207812677713",
-    "name": "Poker Night",
-    "icon": "e594da3ca4520c7edde5b59948e97cdc",
-    "description": "A Texas hold 'em style game where you can prove your Poker prowess! Enjoy new stickers, emotes, cardbacks and more.",
-    "summary": "",
-    "type": null,
-    "cover_image": "e70dcb600e0b0fccf90ba90ed1021ff4",
-    "splash": "b511208e677d7c07358c480a14ab2f98",
-    "hook": true,
-    "rpc_origins": [
-      "https://d351jq51i9e0ij.cloudfront.net",
-      "https://poker-prod.discordpartygames.com"
-    ],
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "850c5aa3928877c6cbcdae524d0fafd4a9b7fe013b1e7fe4eaf350d53853ac42",
-    "flags": 1179656,
-    "max_participants": 7,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1073351701312053359",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 3,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": true,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 6,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Card Game",
-      "Classic",
-      "IAP"
-    ]
-  },
-  {
-    "id": "879863686565621790",
-    "name": "Letter League",
-    "icon": "0096355142a9b00bc2676ec09b9c8dbc",
-    "description": "Craft words from a set of tiles, and let your lexicon fly! It's Letter League time!",
-    "summary": "",
-    "type": null,
-    "cover_image": "0096355142a9b00bc2676ec09b9c8dbc",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "c282d4b2693092a1f657cc699ddbcc26b83b7d7a1bfd0eae1697583ee04e1bef",
-    "flags": 1179648,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "951327524460310568",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 17,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Classic",
-      "Word Game"
-    ]
-  },
-  {
-    "id": "902271654783242291",
-    "name": "Sketch Heads",
-    "icon": "5e7c221f17f3cb4c189de9284423f7c3",
-    "description": "A drawing game where you discover that you're either bad at drawing or your friends are bad at guessing!",
-    "summary": "",
-    "type": null,
-    "cover_image": "0fbc3e38ea4b26c47d8001eff6b94a7b",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "31c42a3c9317409819db8c40cd0d6993d11b3f9c11abb2e3276c71efc02a3307",
-    "flags": 1179648,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1183821360317878372",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 14,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Creative",
-      "Drawing Game"
-    ]
-  },
-  {
-    "id": "1037680572660727838",
-    "name": "Chef Showdown",
-    "icon": "b27f11b43c0ebea952aa1ce60d9c9a8e",
-    "description": "Be the world's best Chef on Discord 👨‍🍳🚀",
-    "summary": "",
-    "type": null,
-    "cover_image": "61847edf739aba25c08069b7df4ff191",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://mojiworks.com/privacy-policy",
-    "privacy_policy_url": "https://mojiworks.com/privacy-policy",
-    "verify_key": "65cadf28285c80d8caf20499091260d3b1b01f538d6be3585f67e1b532688b0d",
-    "flags": 131080,
-    "max_participants": 15,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1156987260890259467",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 2,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 11,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Competitive",
-      "Delicious"
-    ]
-  },
-  {
-    "id": "945737671223947305",
-    "name": "Putt Party",
-    "icon": "12ee915c2f75d7f2c7d551819534f158",
-    "description": "Perfect your putts in this pumped-up production of Putt Party, a putting golf game with power-ups. Putt Party Paradise now has more courses, extra power-ups, and a new tournament mode!",
-    "summary": "",
-    "type": null,
-    "cover_image": "95c64853134eb048670d9cfbbe92853b",
-    "hook": true,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "62c87eb718eb2c06232b2e7b1e14d8a63ca76add1a00c290e8e09669e5aed916",
-    "flags": 1179648,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1110251297518669914",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 3,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 5,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Arcade",
-      "Mini golf"
-    ]
-  },
-  {
-    "id": "1011683823555199066",
-    "name": "Krunker Strike FRVR",
-    "icon": "cdc044d1552ae938203583a2672a34b3",
-    "description": "Enter the Krunker Strike FRVR universe and compete in a cross-platform shooter in REAL-TIME MULTIPLAYER BATTLES with a wide range of arsenal across scenic locations.",
-    "summary": "",
-    "type": null,
-    "cover_image": "cdc044d1552ae938203583a2672a34b3",
-    "hook": true,
-    "bot_public": false,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
-    "privacy_policy_url": "https://frvr.com/legal/krunker#PrivacyPolicy",
-    "verify_key": "75e97499e54bb5489bd7e217e95cf3061fde7731a7c6b18257f827abaad3d8bf",
-    "flags": 131080,
-    "max_participants": 12,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1113838534000922665",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 3,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "android": {
-          "label_type": 1,
-          "label_until": "2023-11-21T01:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-11-21T09:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 1,
-          "label_until": "2023-11-20T09:00:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 3,
-      "has_csp_exception": false
-    },
-    "tags": [
-      "Arcade",
-      "FPS",
-      "Shooter"
-    ]
-  },
-  {
-    "id": "755600276941176913",
-    "name": "YouTube Together",
-    "icon": "4e0fd3bf009282c0ecd1fb010e621f28",
-    "description": "Watch YouTube together",
-    "summary": "",
-    "type": null,
-    "cover_image": "dc73f8a0e3b2b519f0332dc1ffc9ad4e",
-    "hook": true,
-    "rpc_origins": [],
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "verify_key": "11f490f8f76ecb4e175ad82bce9c573889fbe9bc671e22ca8f8b950bb7f2a7bb",
-    "developers": [
-      {
-        "id": "583753077904113664",
-        "name": "Discord"
-      }
-    ],
-    "flags": 131072,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": null,
-      "supported_platforms": [
-        "web"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        }
-      },
-      "shelf_rank": 2147483647,
-      "has_csp_exception": false
-    }
-  },
-  {
-    "id": "521842831262875670",
-    "name": "Nitro",
-    "icon": null,
-    "description": "",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "verify_key": "93661a9eefe452d12f51e129e8d9340e7ca53a770158c0ec7970e701534b7420",
-    "flags": 0
-  },
-  {
-    "id": "710982414301790216",
-    "name": "Stickers",
-    "icon": null,
-    "description": "",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "verify_key": "4be0b338ea2e6b55ca654be7d08534b99260888d08b7f2636cca1a962a5cd21b",
-    "flags": 0
-  },
-  {
     "id": "426537812993638400",
     "name": "Bloxlink",
     "icon": "746124a5a40305b92d6dc4e983fd1de2",
@@ -1203,8 +40,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147483648"
     },
@@ -1368,6 +205,1169 @@
     "flags": 0
   },
   {
+    "id": "710982414301790216",
+    "name": "Stickers",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "verify_key": "4be0b338ea2e6b55ca654be7d08534b99260888d08b7f2636cca1a962a5cd21b",
+    "flags": 0
+  },
+  {
+    "id": "438122941302046720",
+    "name": "Xbox",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "verify_key": "79e3173780ce2aa604ab8472cc288c2d1f3f35aa272939468442741bf4ea1856",
+    "flags": 0
+  },
+  {
+    "id": "773336526917861400",
+    "name": "Betrayal.io",
+    "icon": "0227b2e89ea08d666c43003fbadbc72a",
+    "description": "Play inside Discord with your friends!",
+    "summary": "",
+    "type": null,
+    "cover_image": "0227b2e89ea08d666c43003fbadbc72a",
+    "hook": true,
+    "verify_key": "1bf78fdbfcbabe2e1256f9b133818976591203a22febabba5ff89f86f24760ff",
+    "flags": 131072,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": null,
+      "supported_platforms": [
+        "web"
+      ],
+      "default_orientation_lock_state": 1,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        }
+      },
+      "shelf_rank": 2147483647,
+      "has_csp_exception": false
+    }
+  },
+  {
+    "id": "880218832743055411",
+    "name": "Watch Together Dev",
+    "icon": "3f135503dc803ce7bcf555c769b3f577",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "cover_image": "f22f4184f95706fef2024a10110d47aa",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "2dd794372c9fab97dbc2344ac2eaf06a7671a928a9245dc398ce82a1c60aecd3",
+    "flags": 1179648,
+    "max_participants": -1,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": null,
+      "supported_platforms": [
+        "web",
+        "android",
+        "ios"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "activities_team"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "activities_team"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "activities_team"
+        }
+      },
+      "shelf_rank": 28,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Video Player",
+      "Watch"
+    ]
+  },
+  {
+    "id": "1050941315912835122",
+    "name": "Watch Together QA",
+    "icon": "a380fd3c2d90f436731044cf2c6412e0",
+    "description": "Create and watch a playlist of videos with your friends. Your choice to share the remote or not.",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "94db6083fb1d715424e3445c755bdf33abf94b2bf793f7393183c16b341d29ec",
+    "flags": 1179648,
+    "max_participants": -1,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": null,
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 1,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        }
+      },
+      "shelf_rank": 2147483647,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Video Player",
+      "Watch"
+    ]
+  },
+  {
+    "id": "1070087967294631976",
+    "name": "Whiteboard",
+    "icon": "9a04eab3b9f50302006577b769354520",
+    "description": "You can draw, write, and post GIFs in this collaborative whiteboard. It’s not just what you create, it’s the fun of creating it together!",
+    "summary": "",
+    "type": null,
+    "cover_image": "9a04eab3b9f50302006577b769354520",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "6f5e042d9c27b4e9f48db12fafc29886288b81012fbef0aa470d2b6106490ccb",
+    "flags": 1179648,
+    "max_participants": -1,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1146495383174926457",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "android": {
+          "label_type": 2,
+          "label_until": "2023-10-24T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 2,
+          "label_until": "2023-10-24T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 2,
+          "label_until": "2023-10-24T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 8,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Collaborate",
+      "Whiteboard"
+    ]
+  },
+  {
+    "id": "1007373802981822582",
+    "name": "Gartic Phone",
+    "icon": "7293b549efff3c5a809999d883f09202",
+    "description": "Draw and guess what you see in the ultimate game of telephone! Have some good laughs in this party game with friends.",
+    "summary": "",
+    "type": null,
+    "cover_image": "7293b549efff3c5a809999d883f09202",
+    "hook": true,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://garticphone.com/en/terms",
+    "privacy_policy_url": "https://garticphone.com/en/privacy",
+    "verify_key": "8ffdc7b099a299d592e43b258dfa4f47c058f2752003c28972ad83c78e544c27",
+    "flags": 131072,
+    "max_participants": 16,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1100817158386233375",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": "2023-05-15T16:30:00+00:00",
+      "free_period_ends_at": "2023-06-16T07:00:00+00:00",
+      "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 4,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Drawing",
+      "Gartic",
+      "Party",
+      "telephone"
+    ]
+  },
+  {
+    "id": "1039835161136746497",
+    "name": "Color Together",
+    "icon": "c1962e3f45c660e0f9dfc84acc717f98",
+    "description": "Pick a color, and start painting in this relaxing color-by-numbers game. Color Together is a relaxed space to hang out with your friends. Together you'll return the color to the world. ",
+    "summary": "",
+    "type": null,
+    "cover_image": "800aeb4c6899941eb52a743abe773a0b",
+    "hook": true,
+    "terms_of_service_url": "https://www.fundaygames.dk/legal/color-together/terms-of-use",
+    "privacy_policy_url": "https://www.fundaygames.dk/legal/color-together/privacy-policy",
+    "verify_key": "310fab18f3d036c66b576cdec920cb62a4d79f1e946ef40c95e447ebbb4bc8dd",
+    "flags": 131072,
+    "max_participants": 100,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1123566402528346122",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-07-13T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 1,
+          "label_until": "2023-07-13T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2023-07-13T12:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 16,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Chill",
+      "Color-by-Numbers"
+    ]
+  },
+  {
+    "id": "852509694341283871",
+    "name": "SpellCast",
+    "icon": "9a4a52c760994654a416740ae0b19fbb",
+    "description": "A word game where players search for words on a magical grid of letters. Challenge friends or play solo.",
+    "summary": "",
+    "type": null,
+    "cover_image": "9a4a52c760994654a416740ae0b19fbb",
+    "hook": true,
+    "terms_of_service_url": "https://frvr.com/legal#TermsofService",
+    "privacy_policy_url": "https://frvr.com/legal/#PrivacyPolicy",
+    "verify_key": "3dec42617bd0e2d2f7c316330cf99eb949a168c9b93a6aee6d1525946a9c3f1a",
+    "flags": 131072,
+    "max_participants": 6,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "951492843522895872",
+      "supported_platforms": [
+        "ios",
+        "android",
+        "web"
+      ],
+      "default_orientation_lock_state": 1,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 15,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Solo",
+      "Word Game"
+    ]
+  },
+  {
+    "id": "903769130790969345",
+    "name": "Land-io",
+    "icon": "0a6b8f4795c66ba12afbc766dd920bfb",
+    "description": "Pick a character and encircle new territory. Run into trails to knock out foes - careful not to hit your own!",
+    "summary": "",
+    "type": null,
+    "cover_image": "0a6b8f4795c66ba12afbc766dd920bfb",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "82c2ef51c10e534207dee215fd1cbffc13708f8245a2d5e1e3e233099b30403e",
+    "flags": 1179648,
+    "max_participants": 16,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "956935500910956584",
+      "supported_platforms": [
+        "ios",
+        "android",
+        "web"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 12,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Arcade",
+      "Cross-Server",
+      "IO"
+    ]
+  },
+  {
+    "id": "880218394199220334",
+    "name": "Watch Together",
+    "icon": "ec48acbad4c32efab4275cb9f3ca3a58",
+    "description": "Create and watch a playlist of YouTube videos with your friends. Your choice to share the remote or not. ",
+    "summary": "",
+    "type": null,
+    "cover_image": "3cc9446876ae9eec6e06ff565703c292",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "e2aaf50fbe2fd9d025ac669035f5efb89099931690fba9dc28efb7eaade7f96d",
+    "flags": 1179648,
+    "max_participants": -1,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1104184163201990836",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 2,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Video Player",
+      "Watch"
+    ]
+  },
+  {
+    "id": "1078728822972764312",
+    "name": "Know What I Meme",
+    "icon": "6f547114b2979b8bc83e4ba91b4d770d",
+    "description": "The feeling when memes and inside jokes become a game.",
+    "summary": "",
+    "type": null,
+    "cover_image": "6f547114b2979b8bc83e4ba91b4d770d",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "864918885639ea54d153abdd48270f659456e02ca7cead6a512fe26e56002eeb",
+    "flags": 1179648,
+    "max_participants": 9,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1078738117185515581",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 10,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "GIFs",
+      "Memes",
+      "Party"
+    ]
+  },
+  {
+    "id": "947957217959759964",
+    "name": "Bobble League",
+    "icon": "b485f75e95e6486a758a4aa5db3352f4",
+    "description": "Bobble League is a tabletop sports game. Use Power Plays and Formations to lead your team to Victory!",
+    "summary": "",
+    "type": null,
+    "cover_image": "b485f75e95e6486a758a4aa5db3352f4",
+    "hook": true,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "35334d24152b346fa751dafbbc4d3ac14f9b6ff9501c975c75fe3072e2c8226f",
+    "flags": 1179648,
+    "max_participants": 8,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1183843013026398328",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 13,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Sports",
+      "Strategy",
+      "Team"
+    ]
+  },
+  {
+    "id": "832013003968348200",
+    "name": "Checkers In The Park",
+    "icon": "97e50fed67f44802dbb4901d74a6f9a1",
+    "description": "With boards spread across your server, jump between games as easily as you jump your opponent's pieces!",
+    "summary": "",
+    "type": null,
+    "cover_image": "97e50fed67f44802dbb4901d74a6f9a1",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "f5b322fcb0baf39974eed3c04b81f590b9e584fbdf8d6189cfe07d19eaeb57f8",
+    "flags": 1179648,
+    "max_participants": -1,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "951326802545111070",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 2,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 18,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Board Game",
+      "Classic"
+    ]
+  },
+  {
+    "id": "832012774040141894",
+    "name": "Chess In The Park",
+    "icon": "3b3981ddf67c8702920fae10b5f123ed",
+    "description": "Unleash your inner Grandmaster by playing multiple games of Chess at once vs anybody on your server.",
+    "summary": "",
+    "type": null,
+    "cover_image": "3b3981ddf67c8702920fae10b5f123ed",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "bc758e51403b1374ea262c8412b91bcdc53349a337037d10921cbf6c39bc696f",
+    "flags": 1179648,
+    "max_participants": -1,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "951327097396285470",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 1,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 7,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Board Game",
+      "Classic"
+    ]
+  },
+  {
+    "id": "832025144389533716",
+    "name": "Blazing 8s",
+    "icon": "6fe6e3dda7657b83758693205a833aa1",
+    "description": "Be the first to zero cards by swapping hands, skipping players, and reversing turns!",
+    "summary": "",
+    "type": null,
+    "cover_image": "6fe6e3dda7657b83758693205a833aa1",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "138631e02cf2de499ebfcba54a724ddeb99957274ee9a3db967376666cffdc5e",
+    "flags": 1179648,
+    "max_participants": 8,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "951327865570467880",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 9,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Card Game",
+      "Classic"
+    ]
+  },
+  {
+    "id": "755827207812677713",
+    "name": "Poker Night",
+    "icon": "e594da3ca4520c7edde5b59948e97cdc",
+    "description": "A Texas hold 'em style game where you can prove your Poker prowess! Enjoy new stickers, emotes, cardbacks and more.",
+    "summary": "",
+    "type": null,
+    "cover_image": "e70dcb600e0b0fccf90ba90ed1021ff4",
+    "splash": "b511208e677d7c07358c480a14ab2f98",
+    "hook": true,
+    "rpc_origins": [
+      "https://d351jq51i9e0ij.cloudfront.net",
+      "https://poker-prod.discordpartygames.com"
+    ],
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "850c5aa3928877c6cbcdae524d0fafd4a9b7fe013b1e7fe4eaf350d53853ac42",
+    "flags": 1179656,
+    "max_participants": 7,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1073351701312053359",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": true,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 6,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Card Game",
+      "Classic",
+      "IAP"
+    ]
+  },
+  {
+    "id": "879863686565621790",
+    "name": "Letter League",
+    "icon": "0096355142a9b00bc2676ec09b9c8dbc",
+    "description": "Craft words from a set of tiles, and let your lexicon fly! It's Letter League time!",
+    "summary": "",
+    "type": null,
+    "cover_image": "0096355142a9b00bc2676ec09b9c8dbc",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "c282d4b2693092a1f657cc699ddbcc26b83b7d7a1bfd0eae1697583ee04e1bef",
+    "flags": 1179648,
+    "max_participants": 8,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "951327524460310568",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 1,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 17,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Classic",
+      "Word Game"
+    ]
+  },
+  {
+    "id": "902271654783242291",
+    "name": "Sketch Heads",
+    "icon": "5e7c221f17f3cb4c189de9284423f7c3",
+    "description": "A drawing game where you discover that you're either bad at drawing or your friends are bad at guessing!",
+    "summary": "",
+    "type": null,
+    "cover_image": "0fbc3e38ea4b26c47d8001eff6b94a7b",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "31c42a3c9317409819db8c40cd0d6993d11b3f9c11abb2e3276c71efc02a3307",
+    "flags": 1179648,
+    "max_participants": 8,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1183821360317878372",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 14,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Creative",
+      "Drawing Game"
+    ]
+  },
+  {
+    "id": "1037680572660727838",
+    "name": "Chef Showdown",
+    "icon": "b27f11b43c0ebea952aa1ce60d9c9a8e",
+    "description": "Be the world's best Chef on Discord 👨‍🍳🚀",
+    "summary": "",
+    "type": null,
+    "cover_image": "61847edf739aba25c08069b7df4ff191",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://mojiworks.com/privacy-policy",
+    "privacy_policy_url": "https://mojiworks.com/privacy-policy",
+    "verify_key": "65cadf28285c80d8caf20499091260d3b1b01f538d6be3585f67e1b532688b0d",
+    "flags": 131080,
+    "max_participants": 15,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1156987260890259467",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 2,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 11,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Competitive",
+      "Delicious"
+    ]
+  },
+  {
+    "id": "945737671223947305",
+    "name": "Putt Party",
+    "icon": "12ee915c2f75d7f2c7d551819534f158",
+    "description": "Perfect your putts in this pumped-up production of Putt Party, a putting golf game with power-ups. Putt Party Paradise now has more courses, extra power-ups, and a new tournament mode!",
+    "summary": "",
+    "type": null,
+    "cover_image": "95c64853134eb048670d9cfbbe92853b",
+    "hook": true,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "62c87eb718eb2c06232b2e7b1e14d8a63ca76add1a00c290e8e09669e5aed916",
+    "flags": 1179648,
+    "max_participants": 8,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1110251297518669914",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 5,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Arcade",
+      "Mini golf"
+    ]
+  },
+  {
+    "id": "1011683823555199066",
+    "name": "Krunker Strike FRVR",
+    "icon": "cdc044d1552ae938203583a2672a34b3",
+    "description": "Enter the Krunker Strike FRVR universe and compete in a cross-platform shooter in REAL-TIME MULTIPLAYER BATTLES with a wide range of arsenal across scenic locations.",
+    "summary": "",
+    "type": null,
+    "cover_image": "cdc044d1552ae938203583a2672a34b3",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
+    "privacy_policy_url": "https://frvr.com/legal/krunker#PrivacyPolicy",
+    "verify_key": "75e97499e54bb5489bd7e217e95cf3061fde7731a7c6b18257f827abaad3d8bf",
+    "flags": 131080,
+    "max_participants": 12,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1113838534000922665",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-11-21T09:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 1,
+          "label_until": "2023-11-20T09:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2023-11-21T01:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 3,
+      "has_csp_exception": false
+    },
+    "tags": [
+      "Arcade",
+      "FPS",
+      "Shooter"
+    ]
+  },
+  {
+    "id": "755600276941176913",
+    "name": "YouTube Together",
+    "icon": "4e0fd3bf009282c0ecd1fb010e621f28",
+    "description": "Watch YouTube together",
+    "summary": "",
+    "type": null,
+    "cover_image": "dc73f8a0e3b2b519f0332dc1ffc9ad4e",
+    "hook": true,
+    "rpc_origins": [],
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "verify_key": "11f490f8f76ecb4e175ad82bce9c573889fbe9bc671e22ca8f8b950bb7f2a7bb",
+    "developers": [
+      {
+        "id": "583753077904113664",
+        "name": "Discord"
+      }
+    ],
+    "flags": 131072,
+    "max_participants": -1,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": null,
+      "supported_platforms": [
+        "web"
+      ],
+      "default_orientation_lock_state": 1,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        }
+      },
+      "shelf_rank": 2147483647,
+      "has_csp_exception": false
+    }
+  },
+  {
+    "id": "521842831262875670",
+    "name": "Nitro",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "verify_key": "93661a9eefe452d12f51e129e8d9340e7ca53a770158c0ec7970e701534b7420",
+    "flags": 0
+  },
+  {
     "id": "1096190356233670716",
     "name": "Collectibles",
     "icon": null,
@@ -1399,8 +1399,8 @@
         "is_launcher": true
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -1409,8 +1409,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
