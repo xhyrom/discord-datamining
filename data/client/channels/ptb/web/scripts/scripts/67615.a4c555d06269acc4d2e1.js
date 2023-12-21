@@ -31987,7 +31987,7 @@
                 E = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
                 f = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
                 h = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
-                p = new Set([o.MessageEmbedTypes.AUTO_MODERATION_MESSAGE, o.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION, o.MessageEmbedTypes.RICH, o.MessageEmbedTypes.SAFETY_POLICY_NOTICE, o.MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION]);
+                p = new Set([o.MessageEmbedTypes.AUTO_MODERATION_MESSAGE, o.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION, o.MessageEmbedTypes.RICH, o.MessageEmbedTypes.SAFETY_POLICY_NOTICE, o.MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION, o.MessageEmbedTypes.VOICE_CHANNEL]);
 
             function T(e) {
                 let {
@@ -32685,8 +32685,11 @@
                 getNickname: function() {
                     return o
                 },
-                default: function() {
+                useName: function() {
                     return c
+                },
+                default: function() {
+                    return _
                 }
             });
             var i = n("446674"),
@@ -32710,12 +32713,14 @@
                 var i;
                 return null == n ? u.default.Messages.UNKNOWN_USER : null !== (i = o(e, t, n)) && void 0 !== i ? i : r.default.getName(n)
             }
-            var c = {
+
+            function c(e, t, n) {
+                return (0, i.useStateFromStores)([l.default, a.default, s.default], () => d(e, t, n))
+            }
+            var _ = {
                 getNickname: o,
                 getName: d,
-                useName: function(e, t, n) {
-                    return (0, i.useStateFromStores)([l.default, a.default, s.default], () => d(e, t, n))
-                }
+                useName: c
             }
         },
         231987: function(e, t, n) {
@@ -34888,4 +34893,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.e8beb331b7bee284dba9.js.map
+//# sourceMappingURL=67615.a4c555d06269acc4d2e1.js.map
