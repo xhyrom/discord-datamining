@@ -14318,6 +14318,7 @@
             e.exports = {
                 active: "active_a18d93",
                 boostingIconWrapper: "boostingIconWrapper__8bcc5",
+                browserUnsupportedDialog: "browserUnsupportedDialog__7873c",
                 buttons: "buttons_c6b069",
                 divider: "divider_c06cac",
                 emoji: "emoji__31930",

@@ -46778,7 +46778,7 @@
                 A = n("30175");
             (0, u.setUpdateRules)(l.default), (0, o.default)(A.default, i.default, c.default), s.default.Emitter.injectBatchEmitChanges(a.batchUpdates), s.default.PersistedStore.disableWrites = __OVERLAY__, s.default.initialize();
             var N = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(N, ", Build Number: ").concat("256194", ", Version Hash: ").concat("4e2242017508b99df2af59aa9c1d623acddc0353")), r.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(N, ", Build Number: ").concat("256197", ", Version Hash: ").concat("478a60bafa7d22b0af573075a4bf9472954c9b35")), r.default.setTags({
                 appContext: S.CURRENT_APP_CONTEXT
             }), d.default.initBasic(), E.default.init(), _.FocusRingManager.init(), I.init(), (0, f.cleanupTempFiles)()
         },
@@ -63342,8 +63342,8 @@
             var r = n("281925");
 
             function i() {
-                var e, t = parseInt((e = "256194", "256194"));
-                return Number.isNaN(t) && (r.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256194")), t = 0), t
+                var e, t = parseInt((e = "256197", "256197"));
+                return Number.isNaN(t) && (r.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256197")), t = 0), t
             }
         },
         322825: function(e, t, n) {
@@ -143760,7 +143760,7 @@
                     }) : Promise.reject(Error("not desktop client"))).then(function(e) {
                         var r, c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "256194"
+                                build_number: "256197"
                             },
                             d = u.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -149684,7 +149684,7 @@
             function q(e) {
                 U = (0, c._)({}, U, e), l = (0, p.default)(U)
             }
-            q((a = {}, (s = window.GLOBAL_ENV.RELEASE_CHANNEL) && (a.release_channel = s.split("-")[0]), !isNaN(u = parseInt((o = "256194", "256194"), 10)) && (a.client_build_number = u), !isNaN(_ = null == M ? void 0 : null === (r = (i = M.remoteApp).getBuildNumber) || void 0 === r ? void 0 : r.call(i)) && (a.native_build_number = _), a.client_event_source = function() {
+            q((a = {}, (s = window.GLOBAL_ENV.RELEASE_CHANNEL) && (a.release_channel = s.split("-")[0]), !isNaN(u = parseInt((o = "256197", "256197"), 10)) && (a.client_build_number = u), !isNaN(_ = null == M ? void 0 : null === (r = (i = M.remoteApp).getBuildNumber) || void 0 === r ? void 0 : r.call(i)) && (a.native_build_number = _), a.client_event_source = function() {
                 try {
                     if (__OVERLAY__) return "OVERLAY"
                 } catch (e) {}
@@ -170173,4 +170173,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58869.9a2845ecc09c8665538b.js.map
+//# sourceMappingURL=58869.a6b700e86f7a05e6c125.js.map

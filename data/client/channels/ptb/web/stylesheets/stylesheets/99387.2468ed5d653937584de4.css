@@ -117524,6 +117524,17 @@ div.nagbar_c731ff {
     border-color: ButtonText
 }
 
+.browserUnsupportedDialog__7873c {
+    max-width: 288px;
+    padding: 16px;
+    overflow: hidden;
+    background: var(--background-floating);
+    font-weight: 500;
+    box-shadow: var(--elevation-high);
+    color: var(--text-normal);
+    border-radius: var(--radius-xs)
+}
+
 @value gridBreakpoint from './GuildStickersTiers.module.css';
 
 .wrapper_d9a30a {
@@ -124015,4 +124026,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.70602c2212f3d6e0a381.css.map*/
+/*# sourceMappingURL=99387.2468ed5d653937584de4.css.map*/
