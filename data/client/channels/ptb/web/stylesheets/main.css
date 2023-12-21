@@ -31396,16 +31396,29 @@ html .progress__00e29 {
 }
 
 .burstReactionTooltipSpacer__97123 {
-    padding-bottom: 8px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    padding-top: 8px;
+    margin-top: 8px;
+    border-top: 1px solid var(--background-modifier-accent)
 }
 
 .burstReactionTooltipPrompt__1296d {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 12px 0
+    margin: 12px 0 0
+}
+
+.burstReactionTooltipPromptClickable_c5b63b {
+    pointer-events: all
+}
+
+.burstReactionTooltipPromptClickable_c5b63b:hover {
+    cursor: pointer
+}
+
+.burstReactionTooltipPromptClickable_c5b63b:hover a {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
 }
 
 .burstReactionTooltipNitroIcon__7d212 {
@@ -37970,8 +37983,8 @@ html .progress__00e29 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -124002,4 +124015,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.176fd1c1fc8d9dab36fd.css.map*/
+/*# sourceMappingURL=99387.70602c2212f3d6e0a381.css.map*/
