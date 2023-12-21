@@ -1,5 +1,57 @@
 [
   {
+    "id": 19987942515607,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/19987942515607.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/19987942515607-Holiday-Shop-Giveaway-Instagram",
+    "author_id": 424992137214,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 115000457731,
+    "created_at": "2023-12-20T02:14:49Z",
+    "name": "Holiday Shop Giveaway - Instagram",
+    "title": "Holiday Shop Giveaway - Instagram",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2023-12-21T17:50:26Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720972,
+    "content_tag_ids": [],
+    "label_names": [
+      "giveaway"
+    ],
+    "body": "<p>See full terms and conditions in the Master Sweepstakes Rules here: <a href=\"https://support.discord.com/hc/en-us/articles/16000885744791\" target=\"_blank\" rel=\"noopener noreferrer\">https://support.discord.com/hc/en-us/articles/16000885744791</a>  </p>\n<p>By entering, you agree to these Master Sweepstakes Terms.</p>\n<ol>\n<li>\n<strong>Eligibility Requirements</strong>: You must be a legal resident of the United States or Canada, excluding Quebec and at least thirteen (13) years of age or older (with legal guardian approval if you are under the age of majority) as of the date of entry.</li>\n<li>\n<strong>Entry Time Frame</strong>: December 21, 2023 9:00 AM PST - December 31, 2023 11:59 PM PST</li>\n<li>\n<strong>How to Enter</strong>: Like and mention a friend in the comments that you would like to send a gift to on the giveaway post, both you and your friend will receive a prize, if selected!</li>\n<li>\n<strong>Prizes</strong>: Five (5) winners:\n<ul>\n<li>\n<strong>Five (5) Prize Winner(s) will receive</strong> ($120 USD Total Value):\n<ul>\n<li>\n<strong>For themselves</strong>: The choice of one (1) in-app shop items, either one (1) avatar decoration or one (1) profile effect ($11.99 USD Value)</li>\n<li>\n<strong>For a friend</strong>: The choice of one (1) in-app shop items, either one (1) avatar decoration or one (1) profile effect ($11.99 USD Value)</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<strong>Winner Notification Date</strong>: January 4, 2023 9:00 AM PST</li>\n<li>\n<strong>Notification Method</strong>: Winners will be notified via DM through the account they used to enter the Giveaway and have one (1) week to respond in order to claim their prize.</li>\n</ol>"
+  },
+  {
+    "id": 19987423506583,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/19987423506583.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/19987423506583-Holiday-Shop-Giveaway-2023-Twitter",
+    "author_id": 424992137214,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 115000457731,
+    "created_at": "2023-12-20T01:39:30Z",
+    "name": "Holiday Shop Giveaway 2023 - Twitter",
+    "title": "Holiday Shop Giveaway 2023 - Twitter",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2023-12-21T17:49:54Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720972,
+    "content_tag_ids": [],
+    "label_names": [
+      "giveaway"
+    ],
+    "body": "<p><strong>See full terms and conditions in the Master Sweepstakes Rules here:</strong> <a href=\"https://support.discord.com/hc/en-us/articles/16000885744791\" target=\"_blank\" rel=\"noopener noreferrer\">https://support.discord.com/hc/en-us/articles/16000885744791  </a></p>\n<p>By entering, you agree to these Master Sweepstakes Terms.</p>\n<ol>\n<li>\n<strong>Eligibility Requirements</strong>: You must be a legal resident of the United States or Canada, excluding Quebec and at least thirteen (13) years of age or older (with legal guardian approval if you are under the age of majority) as of the date of entry.</li>\n<li>\n<strong>Entry Time Frame</strong>: December 21, 2023 9:00 AM PST - December 31, 2023 11:59 PM PST</li>\n<li>\n<strong>How to Enter</strong>: Like, repost and reply with mentioning a friend you would like to send a gift to on the Twitter and Instagram giveaway post, both you and your friend will receive a prize, if selected!</li>\n<li>\n<strong>Prizes</strong>: Five (5) winners:\n<ul>\n<li>\n<strong>Five (5) Prize Winner(s) will receive</strong> ($120 USD Total Value):\n<ul>\n<li>\n<strong>For themselves</strong>: The choice of one (1) in-app shop items, either one (1) avatar decoration or one (1) profile effect ($11.99 USD Value)</li>\n<li>\n<strong>For a friend</strong>: The choice of one (1) in-app shop items, either one (1) avatar decoration or one (1) profile effect ($11.99 USD Value)</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<strong>Winner Notification Date</strong>: January 4, 2023 9:00 AM PST</li>\n<li>\n<strong>Notification Method</strong>: Winners will be notified via DM through the account they used to enter the Giveaway and have one (1) week to respond in order to claim their prize.</li>\n</ol>"
+  },
+  {
     "id": 19885999744279,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/19885999744279.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/19885999744279-Safety-Resources-for-Australian-Users",
