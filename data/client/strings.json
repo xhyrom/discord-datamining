@@ -13733,6 +13733,7 @@
   "NOTIFICATION_PRESET_3": "\"Nothing\"",
   "NOTIFICATION_PRESET_CUSTOM": "\"Custom\"",
   "NOTIFICATION_PRESET_CUSTOM_DESCRIPTION": "\"You are changing settings manually.\"",
+  "NOTIFICATION_SETTINGS_USE_PRESET": "\"Use Presets\"",
   "APP_DIRECTORY": "\"App Directory\"",
   "APP_DIRECTORY_LISTING_VIEW_ALL_BUTTON": "\"View All\"",
   "APP_DIRECTORY_LISTING_ADD_BUTTON": "\"Add\"",
