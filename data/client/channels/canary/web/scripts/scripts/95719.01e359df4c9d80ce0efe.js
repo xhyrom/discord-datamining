@@ -3484,8 +3484,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "256256",
-                    versionHash: "b237701f470d33f4de4d2620f90657e7ce2b16e2"
+                    buildNumber: "256258",
+                    versionHash: "91f5fae58b28a784c9a6860e7f9b27f1dc3eb75a"
                 }
             }
             n.r(t), n.d(t, {
@@ -3740,7 +3740,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-b237701f470d33f4de4d2620f90657e7ce2b16e2",
+                    release: "discord_web-91f5fae58b28a784c9a6860e7f9b27f1dc3eb75a",
                     beforeSend: function(e) {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(function(e) {
@@ -3762,7 +3762,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), r.setTag("buildNumber", (e = "256256", "256256")), r.setTag("builtAt", String("1703194974809"));
+                }), r.setTag("buildNumber", (e = "256258", "256258")), r.setTag("builtAt", String("1703195694697"));
                 var e, t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (var n in t) r.setTag(n, t[n]);
@@ -7878,4 +7878,4 @@
         }
     }
 ]);
-//# sourceMappingURL=95719.4b05a853fa4224d32f3a.js.map
+//# sourceMappingURL=95719.01e359df4c9d80ce0efe.js.map
