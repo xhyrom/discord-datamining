@@ -21475,6 +21475,7 @@
                 classificationActionExplanationContainer: "classificationActionExplanationContainer__662f6",
                 classificationActionsTakenCard: "classificationActionsTakenCard__9dd97",
                 classificationActionsTakenContainer: "classificationActionsTakenContainer_dc3a21",
+                classificationActionsTakenList: "classificationActionsTakenList__5cd68",
                 classificationActionsTakenRow: "classificationActionsTakenRow_d5ee44",
                 classificationActionsTakenRowIcon: "classificationActionsTakenRowIcon__46ce5",
                 classificationContainer: "classificationContainer_ee7986",

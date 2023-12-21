@@ -19444,8 +19444,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -81197,8 +81197,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -81245,8 +81245,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -114061,17 +114061,16 @@ html .invoiceCancelRow_c1bfe7 {
 
 .classificationActionsTakenCard__9dd97 {
     margin-top: 14px;
-    background: var(--background-secondary);
     border-radius: 4px;
     padding-top: 8px;
     padding-bottom: 8px
 }
 
 .classificationActionsTakenRow_d5ee44 {
-    display: flex;
-    flex-direction: row;
-    margin: 8px 17px;
-    align-items: center
+    color: var(--text-primary);
+    display: list-item;
+    margin-top: 10px;
+    margin-left: 4px
 }
 
 .classificationActionsTakenRowIcon__46ce5 {
@@ -114083,6 +114082,11 @@ html .invoiceCancelRow_c1bfe7 {
     width: 24px;
     height: 24px;
     margin-right: 12px
+}
+
+.classificationActionsTakenList__5cd68 {
+    color: var(--text-primary);
+    list-style: inside
 }
 
 .redIcon_ca7671 {
@@ -114105,16 +114109,15 @@ html .invoiceCancelRow_c1bfe7 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px
+    margin-top: 22px;
+    margin-bottom: 22px
 }
 
 .classificationPolicyCard__0923e {
     margin-top: 14px;
-    background: var(--background-secondary);
+    background: var(--bg-base-secondary);
     border-radius: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: var(--spacing-12)var(--spacing-16);
     display: flex;
     align-items: center
 }
@@ -114130,19 +114133,17 @@ html .invoiceCancelRow_c1bfe7 {
     background-color: var(--background-tertiary);
     border-radius: 200px;
     width: 40px;
-    height: 40px;
-    margin: 12px 16px;
-    padding: 8px
+    height: 40px
 }
 
 .classificationPolicyDescriptionContainer_a80226 {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin-left: 12px
 }
 
 .classificationPolicyLinkIcon__3685d {
-    margin-left: auto;
-    margin-right: 12px
+    margin-left: auto
 }
 
 .image__9f923 {
@@ -114949,9 +114950,9 @@ html .invoiceCancelRow_c1bfe7 {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: var(--background-tertiary);
-    width: 90px;
-    height: 90px;
+    background-color: var(--bg-mod-strong);
+    width: 92px;
+    height: 92px;
     border-radius: 50%
 }
 
@@ -115085,8 +115086,8 @@ html .invoiceCancelRow_c1bfe7 {
     width: 100%;
     align-items: center;
     cursor: pointer;
-    padding: 10px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    padding: 8px
 }
 
 .headerIconWrapper__0cd76 {
@@ -115096,8 +115097,8 @@ html .invoiceCancelRow_c1bfe7 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px
+    width: 40px;
+    height: 40px
 }
 
 .caret__678eb {
@@ -115125,13 +115126,13 @@ html .invoiceCancelRow_c1bfe7 {
 }
 
 .itemDetail__846d8 {
-    background-color: var(--background-secondary-alt);
+    background-color: var(--card-secondary-bg);
     border-radius: var(--radius-md);
     cursor: pointer;
     height: -moz-max-content;
     height: max-content;
     margin: 8px 4px 0;
-    padding: 10px;
+    padding: var(--spacing-16);
     width: 100%;
     box-sizing: border-box
 }
@@ -115200,7 +115201,7 @@ html .invoiceCancelRow_c1bfe7 {
 }
 
 .iconContainer_a44e31 {
-    margin-bottom: 16px;
+    margin-bottom: var(--spacing-16);
     position: relative
 }
 
@@ -123968,4 +123969,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.35189f0d627078be51f6.css.map*/
+/*# sourceMappingURL=app.ee18a10efbf5cea66f6b.css.map*/
