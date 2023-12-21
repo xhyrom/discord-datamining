@@ -65,7 +65,7 @@
                     return d
                 },
                 default: function() {
-                    return r
+                    return o
                 }
             });
             var i = n("446674"),
@@ -84,7 +84,7 @@
                         y: 0
                     }
                 };
-            class o extends i.default.DeviceSettingsStore {
+            class r extends i.default.DeviceSettingsStore {
                 initialize(e) {
                     u = null != e ? e : u, a.default.actionLogger.persist = this.devToolsEnabled
                 }
@@ -111,8 +111,8 @@
                     return u.devWidgetPosition
                 }
             }
-            o.displayName = "DevToolsSettingsStore", o.persistKey = "DevToolsSettingsStore";
-            var r = new o(a.default, {
+            r.displayName = "DevToolsSettingsStore", r.persistKey = "DevToolsSettingsStore";
+            var o = new r(a.default, {
                 DEV_TOOLS_SETTINGS_UPDATE: function(e) {
                     (u.devToolsEnabled || e.settings.devToolsEnabled) && (null != e.settings.devToolsEnabled && (a.default.actionLogger.persist = e.settings.devToolsEnabled, l.default.set(s.STORAGE_KEY_LOG_DISPATCHES, e.settings.devToolsEnabled)), u = {
                         ...u,
@@ -140,8 +140,8 @@
                 s = n("872717"),
                 d = n("913144"),
                 u = n("42203"),
-                o = n("670902"),
-                r = n("349778"),
+                r = n("670902"),
+                o = n("349778"),
                 c = n("430475"),
                 f = n("324261"),
                 g = n("49111");
@@ -195,7 +195,7 @@
                 m = null;
 
             function h(e, t) {
-                let n = (0, r.isForumActivityExperimentEnabled)(e);
+                let n = (0, o.isForumActivityExperimentEnabled)(e);
                 if (n) {
                     let {
                         loaded: e,
@@ -216,7 +216,7 @@
                     loaded: i,
                     firstMessage: l
                 } = (0, a.useStateFromStoresObject)([c.default], () => c.default.getMessage(e.id)), s = (0, a.useStateFromStores)([u.default], () => u.default.getChannel(e.parent_id));
-                if (null != s && (t = i, n = l, !t && null == n)) v(s, e.id);
+                if (null != s && (t = i, n = l, !t && null == n)) N(s, e.id);
                 return {
                     loaded: i,
                     firstMessage: l
@@ -228,7 +228,7 @@
                     loaded: n,
                     message: i
                 } = (0, a.useStateFromStoresObject)([f.default], () => f.default.getMessageState(t.id));
-                return null != e && h(t.guild_id, t.id) && v(e, t.id), {
+                return null != e && h(t.guild_id, t.id) && N(e, t.id), {
                     loaded: n,
                     mostRecentMessage: i
                 }
@@ -247,24 +247,24 @@
             }
 
             function I(e) {
-                A(e, (0, o.computeThreadIdsSnapshot)(e.id).slice(0, 10))
+                A(e, (0, r.computeThreadIdsSnapshot)(e.id).slice(0, 10))
             }
 
-            function v(e, t) {
+            function N(e, t) {
                 if (_.hasRequested(e.id, t)) return;
-                let n = (0, o.computeThreadIdsSnapshot)(e.id),
+                let n = (0, r.computeThreadIdsSnapshot)(e.id),
                     i = n.findIndex(e => e === t),
                     l = n.slice(i, i + 5).filter(t => !_.hasRequested(e.id, t));
                 A(e, l)
             }
             async function C() {
                 try {
-                    for (; _.hasNext();) await N(_.next())
+                    for (; _.hasNext();) await v(_.next())
                 } finally {
                     m = null
                 }
             }
-            async function N(e) {
+            async function v(e) {
                 let t = _.getNextBatch(e, 10);
                 try {
                     var n;
@@ -304,32 +304,32 @@
                 s = n("42203"),
                 d = n("697218"),
                 u = n("449008"),
-                o = n("299039");
-            let r = {};
+                r = n("299039");
+            let o = {};
 
             function c(e) {
                 var t;
                 let n = s.default.getChannel(null == e ? void 0 : e.channel_id);
                 if (null == n || !n.isForumPost()) return !1;
-                let i = r[n.id];
-                return o.default.compare(null == e ? void 0 : e.id, null == i ? void 0 : null === (t = i.message) || void 0 === t ? void 0 : t.id) > -1
+                let i = o[n.id];
+                return r.default.compare(null == e ? void 0 : e.id, null == i ? void 0 : null === (t = i.message) || void 0 === t ? void 0 : t.id) > -1
             }
 
             function f(e, t) {
                 let n = null == t ? null : (0, a.createMessageRecord)(t);
-                return r[e] = {
+                return o[e] = {
                     loaded: !0,
                     message: n
                 }, !0
             }
 
             function g(e) {
-                return r[e]
+                return o[e]
             }
 
             function E(e) {
                 var t;
-                return null === (t = r[e]) || void 0 === t ? void 0 : t.message
+                return null === (t = o[e]) || void 0 === t ? void 0 : t.message
             }
 
             function _(e) {
@@ -346,16 +346,16 @@
                     this.waitFor(s.default, d.default)
                 }
                 getMessageState(e) {
-                    return !(e in r) && (r[e] = {
+                    return !(e in o) && (o[e] = {
                         loaded: !1,
                         message: null
-                    }), r[e]
+                    }), o[e]
                 }
             }
             m.displayName = "ForumPostRecentMessageStore";
             var h = new m(l.default, {
                 CONNECTION_OPEN: function() {
-                    r = {}
+                    o = {}
                 },
                 MESSAGE_CREATE: function(e) {
                     if (e.isPushNotification || !c(e.message)) return !1;
@@ -365,10 +365,10 @@
                     if (!c(e.message) || e.message.channel_id === e.message.id) return !1;
                     ! function(e, t) {
                         let n = function(e) {
-                                return r[e]
+                                return o[e]
                             }(e),
                             i = E(e);
-                        null != n && null != i && (r[e] = {
+                        null != n && null != i && (o[e] = {
                             ...n,
                             message: (0, a.updateMessageRecord)(i, t)
                         })
@@ -377,7 +377,7 @@
                 MESSAGE_DELETE: function(e) {
                     return function(e, t) {
                         let n = E(e);
-                        return (null == n ? void 0 : n.id) === t && (delete r[e], !0)
+                        return (null == n ? void 0 : n.id) === t && (delete o[e], !0)
                     }(e.channelId, e.id)
                 },
                 LOAD_FORUM_POSTS: function(e) {
@@ -403,17 +403,17 @@
                 s = n("697218"),
                 d = n("509");
             let u = null,
-                o = () => {
+                r = () => {
                     let e = a.default.getCommunicationDisabledUserMap();
                     Object.keys(e).forEach(t => {
                         let n = (0, a.getGuildIdFromCommunicationDisabledUserKey)(t),
                             i = (0, a.getUserIdFromCommunicationDisabledUserKey)(t),
                             l = e[t];
-                        !(0, d.isCommunicationDisabled)(l) && r(n, i)
+                        !(0, d.isCommunicationDisabled)(l) && o(n, i)
                     })
                 },
-                r = (e, t) => {
-                    var n, l, u, o, r, c;
+                o = (e, t) => {
+                    var n, l, u, r, o, c;
                     let f = a.default.getMember(e, t),
                         g = s.default.getUser(t);
                     if (null == f || null == g || (0, d.isMemberCommunicationDisabled)(f)) return;
@@ -423,10 +423,10 @@
                         nick: null !== (n = f.nick) && void 0 !== n ? n : g.username,
                         avatar: null !== (l = f.avatar) && void 0 !== l ? l : void 0,
                         premiumSince: null !== (u = f.premiumSince) && void 0 !== u ? u : void 0,
-                        isPending: null !== (o = f.isPending) && void 0 !== o && o,
+                        isPending: null !== (r = f.isPending) && void 0 !== r && r,
                         user: {
                             ...g,
-                            email: null !== (r = g.email) && void 0 !== r ? r : void 0,
+                            email: null !== (o = g.email) && void 0 !== o ? o : void 0,
                             phone: null !== (c = g.phone) && void 0 !== c ? c : void 0
                         },
                         communicationDisabledUntil: null
@@ -438,13 +438,13 @@
                 };
             class c extends l.default {
                 _initialize() {
-                    u = setInterval(() => o(), 1e4)
+                    u = setInterval(() => r(), 1e4)
                 }
                 _terminate() {
                     clearInterval(u)
                 }
                 constructor(...e) {
-                    super(...e), this.clearGuildMemberTimeout = r
+                    super(...e), this.clearGuildMemberTimeout = o
                 }
             }
             var f = new c
@@ -490,8 +490,8 @@
                 s = n("801340"),
                 d = n("10641"),
                 u = n("872173"),
-                o = n("374363"),
-                r = n("305961"),
+                r = n("374363"),
+                o = n("305961"),
                 c = n("696326"),
                 f = n("380710"),
                 g = n("49111"),
@@ -501,13 +501,13 @@
 
             function h(e, t) {
                 var n;
-                let i = r.default.getGuilds(),
+                let i = o.default.getGuilds(),
                     a = Object.entries(i).some(e => {
                         let [t, n] = e, i = (0, f.isGuildOnboardingSettingsAvailable)(t), l = n.hasFeature(g.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED);
                         return i && l
                     });
                 if (a || !(0, f.isGuildOnboardingSettingsAvailable)(e)) return !1;
-                let u = null === (n = o.default.settings.userContent) || void 0 === n ? void 0 : n.guildOnboardingUpsellDismissedAt,
+                let u = null === (n = r.default.settings.userContent) || void 0 === n ? void 0 : n.guildOnboardingUpsellDismissedAt,
                     E = null != u ? s.Timestamp.toDate(u) : void 0,
                     h = null != E ? l().diff(E, "days") : null,
                     S = _.indexOf(t);
@@ -539,73 +539,6 @@
                 })
             }
         },
-        567707: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getLockscreenWidgetConfig: function() {
-                    return d
-                },
-                useLockscreenWidgetConfig: function() {
-                    return u
-                }
-            });
-            var i = n("249654"),
-                l = n("862205"),
-                a = n("718517");
-            let s = (0, l.createExperiment)({
-                kind: "guild",
-                id: "2023-12_voice_lockscreen_widget",
-                label: "Voice live activity (guild)",
-                defaultConfig: {
-                    showWidget: !1,
-                    voiceChannelActivityNotifsEnabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Off (notif only)",
-                    config: {
-                        showWidget: !1,
-                        voiceChannelActivityNotifsEnabled: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "On (widget + notif)",
-                    config: {
-                        showWidget: !0,
-                        voiceChannelActivityNotifsEnabled: !1
-                    }
-                }, {
-                    id: 3,
-                    label: "On (widget + notifs++)",
-                    config: {
-                        showWidget: !0,
-                        voiceChannelActivityNotifsEnabled: !0
-                    }
-                }]
-            });
-
-            function d(e, t) {
-                let n = i.default.age(e) >= 30 * a.default.Millis.DAY;
-                return s.getCurrentConfig({
-                    location: t,
-                    guildId: e
-                }, {
-                    disable: n,
-                    autoTrackExposure: !0
-                })
-            }
-
-            function u(e, t, n) {
-                let l = i.default.age(e) >= 30 * a.default.Millis.DAY;
-                return s.useExperiment({
-                    location: t,
-                    guildId: e
-                }, {
-                    disable: l,
-                    autoTrackExposure: n
-                })
-            }
-        },
         931318: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -634,14 +567,14 @@
                 s = n("42203"),
                 d = n("305961"),
                 u = n("27618"),
-                o = n("697218"),
-                r = n("599110"),
+                r = n("697218"),
+                o = n("599110"),
                 c = n("520899"),
                 f = n("988864"),
                 g = n("49111");
 
             function E(e, t) {
-                r.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
+                o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "adding",
                     rating: "".concat(c.default.getMessageReminders().length)
@@ -655,20 +588,20 @@
                         if (null == t) return null;
                         let n = d.default.getGuild(t.guild_id),
                             i = "",
-                            l = (0, a.computeChannelName)(t, o.default, u.default, !0);
+                            l = (0, a.computeChannelName)(t, r.default, u.default, !0);
                         if (t.isPrivate()) i = l;
                         else if (t.isThread()) {
                             let e = s.default.getChannel(t.parent_id);
                             if (null == e) return null;
-                            let n = (0, a.computeChannelName)(e, o.default, u.default, !0);
+                            let n = (0, a.computeChannelName)(e, r.default, u.default, !0);
                             i = "".concat(n, " > ").concat(l)
                         } else i = l;
-                        let r = "".concat(e.content.length > 0 ? e.content : "".concat(e.attachments.length, " attachments"));
+                        let o = "".concat(e.content.length > 0 ? e.content : "".concat(e.attachments.length, " attachments"));
                         return {
                             authorSummary: e.author.username,
                             authorId: e.author.id,
                             channelSummary: i,
-                            messageSummary: r.length > 200 ? "".concat(r.slice(0, 197), "...") : r,
+                            messageSummary: o.length > 200 ? "".concat(o.slice(0, 197), "...") : o,
                             guildId: null == n ? void 0 : n.id
                         }
                     }(e)
@@ -676,7 +609,7 @@
             }
 
             function _(e, t) {
-                r.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
+                o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "updating_due_at",
                     rating: "".concat(c.default.getMessageReminders().length)
@@ -691,7 +624,7 @@
             }
 
             function m(e, t) {
-                r.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
+                o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: t,
                     reason: "updating within the list",
                     rating: "".concat(c.default.getMessageReminders().length)
@@ -703,7 +636,7 @@
             }
 
             function h(e) {
-                r.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
+                o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "complete and clear immediately",
                     rating: "".concat(c.default.getMessageReminders().length)
@@ -713,7 +646,7 @@
             }
 
             function S() {
-                r.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
+                o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "clearing",
                     rating: "".concat(c.default.getMessageReminders().length)
@@ -723,7 +656,7 @@
             }
 
             function p(e) {
-                r.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
+                o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "updated_from_server",
                     rating: "".concat(c.default.getMessageReminders().length)
@@ -784,7 +717,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return r
+                    return o
                 }
             }), n("222007");
             var i = n("446674"),
@@ -793,7 +726,7 @@
             let s = [],
                 d = new Set,
                 u = 0;
-            class o extends i.default.Store {
+            class r extends i.default.Store {
                 initialize() {
                     setInterval(() => {
                         this.emitChange()
@@ -821,8 +754,8 @@
                     }
                 }
             }
-            o.displayName = "MessageRemindersStore";
-            var r = new o(l.default, {
+            r.displayName = "MessageRemindersStore";
+            var o = new r(l.default, {
                 SAVED_MESSAGES_UPDATE: function(e) {
                     let {
                         messages: t
@@ -928,7 +861,7 @@
             let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return W
+                    return q
                 }
             }), n("222007");
             var l = n("803182"),
@@ -936,8 +869,8 @@
                 s = n("95410"),
                 d = n("913144"),
                 u = n("404118"),
-                o = n("819689"),
-                r = n("115718"),
+                r = n("819689"),
+                o = n("115718"),
                 c = n("689988"),
                 f = n("408062"),
                 g = n("619443"),
@@ -950,11 +883,11 @@
                 T = n("18494"),
                 A = n("162771"),
                 I = n("49111"),
-                v = n("724210"),
+                N = n("724210"),
                 C = n("782340");
-            let N = new a.default("MessageManager");
+            let v = new a.default("MessageManager");
 
-            function y(e) {
+            function D(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -966,31 +899,31 @@
                     logFailures: E
                 } = e;
                 if (null == n) {
-                    E && N.log("Skipping fetch because channelId is null");
+                    E && v.log("Skipping fetch because channelId is null");
                     return
                 }
-                if ((0, v.isStaticChannelRoute)(n)) {
-                    E && N.log("Skipping fetch because channelId is a static route");
+                if ((0, N.isStaticChannelRoute)(n)) {
+                    E && v.log("Skipping fetch because channelId is a static route");
                     return
                 }
                 let _ = h.default.getChannel(n);
                 if ((null == _ ? void 0 : _.type) === I.ChannelTypes.GUILD_STORE || (null == _ ? void 0 : _.type) != null && I.ChannelTypesSets.GUILD_THREADS_ONLY.has(_.type)) {
-                    E && N.log("Skipping fetch because channel is a forum/store");
+                    E && v.log("Skipping fetch because channel is a forum/store");
                     return
                 }
                 let m = f.default.getOrCreate(n);
                 null != m.jumpTargetId && null == l && (m = m.mutate({
                     jumpTargetId: null,
                     jumped: !1,
-                    jumpType: r.JumpTypes.ANIMATED
+                    jumpType: o.JumpTypes.ANIMATED
                 }), f.default.commit(m)), null != m.focusTargetId && null == l && (m = m.mutate({
                     focusTargetId: null
                 }), f.default.commit(m));
                 let T = a;
-                if (!d || g.default.isConnected() || m.loadingMore ? m.loadingMore || m.ready && !m.cached ? null != l ? T = !0 : E && N.log("Skipping fetch because no other conditions matched") : null == t || null != S.default.getGuild(t) ? T = !0 : E && N.log("Skipping fetch we are connected and have loaded messages") : T = !0, T) {
+                if (!d || g.default.isConnected() || m.loadingMore ? m.loadingMore || m.ready && !m.cached ? null != l ? T = !0 : E && v.log("Skipping fetch because no other conditions matched") : null == t || null != S.default.getGuild(t) ? T = !0 : E && v.log("Skipping fetch we are connected and have loaded messages") : T = !0, T) {
                     if (f.default.commit(m.mutate({
                             loadingMore: !0
-                        })), null != l) o.default.jumpToMessage({
+                        })), null != l) r.default.jumpToMessage({
                         channelId: n,
                         messageId: l,
                         flash: !0,
@@ -1002,14 +935,14 @@
                             if (p.default.hasOpenedThread(e)) return !1;
                             if (null == i) {
                                 var t;
-                                i = null !== (t = s.default.get(D, {})) && void 0 !== t ? t : {}
+                                i = null !== (t = s.default.get(y, {})) && void 0 !== t ? t : {}
                             }
                             if (e in i) return !1;
                             i[e] = Date.now();
                             let n = Date.now() - 7776e6;
                             for (let e in i) i[e] < n && delete i[e];
-                            return s.default.set(D, i), !0
-                        }(n)) N.log("Jumping to start of thread ".concat(_.id)), o.default.fetchMessages({
+                            return s.default.set(y, i), !0
+                        }(n)) v.log("Jumping to start of thread ".concat(_.id)), r.default.fetchMessages({
                         channelId: n,
                         limit: I.MAX_MESSAGES_PER_CHANNEL,
                         jump: {
@@ -1021,7 +954,7 @@
                     });
                     else if ((null == _ ? void 0 : _.isThread()) && p.default.hasTrackedUnread(_.id) && !m.ready) {
                         let e = p.default.getTrackedAckMessageId(_.id);
-                        N.log("Jumping to most recent message in thread ".concat(_.id, " - ").concat(e)), o.default.fetchMessages({
+                        v.log("Jumping to most recent message in thread ".concat(_.id, " - ").concat(e)), r.default.fetchMessages({
                             channelId: n,
                             limit: I.MAX_MESSAGES_PER_CHANNEL,
                             jump: {
@@ -1032,18 +965,18 @@
                             isPreload: d,
                             skipLocalFetch: c
                         })
-                    } else o.default.fetchMessages({
+                    } else r.default.fetchMessages({
                         channelId: n,
                         limit: I.MAX_MESSAGES_PER_CHANNEL,
                         isPreload: d,
                         skipLocalFetch: c,
                         jump: {
-                            jumpType: r.JumpTypes.ANIMATED
+                            jumpType: o.JumpTypes.ANIMATED
                         }
                     })
                 }
             }
-            let D = "viewedThreadIds";
+            let y = "viewedThreadIds";
 
             function b() {
                 let e = T.default.getChannelId();
@@ -1055,7 +988,7 @@
                             path: I.Routes.CHANNEL(":guild", ":channel", ":message"),
                             exact: !0
                         });
-                        y({
+                        D({
                             guildId: n.getGuildId(),
                             channelId: n.id,
                             messageId: null == e ? void 0 : null === (t = e.params) || void 0 === t ? void 0 : t.message
@@ -1072,14 +1005,14 @@
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, i = T.default.getChannelId();
                 if (null != i) {
                     let l = h.default.getChannel(i);
-                    null != l ? ((0, _.isTextChannel)(l.type) ? y({
+                    null != l ? ((0, _.isTextChannel)(l.type) ? D({
                         guildId: l.getGuildId(),
                         channelId: l.id,
                         isPreload: e,
                         skipLocalFetch: t,
                         logFailures: n
-                    }) : n && N.log("Skipping fetch because the selected channel is not a text channel"), R(l.getGuildId(), l.id)) : n && N.log("Skipping fetch because channel is null")
-                } else n && N.log("Skipping fetch because there is no selected channel")
+                    }) : n && v.log("Skipping fetch because the selected channel is not a text channel"), R(l.getGuildId(), l.id)) : n && v.log("Skipping fetch because channel is null")
+                } else n && v.log("Skipping fetch because there is no selected channel")
             }
 
             function O(e) {
@@ -1089,7 +1022,7 @@
                     messageId: i,
                     jumpType: l
                 } = e;
-                y({
+                D({
                     guildId: t,
                     channelId: n,
                     messageId: i,
@@ -1102,7 +1035,7 @@
                     guildId: t,
                     channelId: n
                 } = e;
-                y({
+                D({
                     guildId: t,
                     channelId: n
                 })
@@ -1112,7 +1045,7 @@
                 let n = m.default.getCurrentSidebarChannelId(t);
                 if (null == n) return;
                 let i = m.default.getCurrentSidebarMessageId(t);
-                y({
+                D({
                     guildId: e,
                     channelId: n,
                     messageId: i
@@ -1133,7 +1066,7 @@
                     channelId: n,
                     context: i
                 } = e;
-                i === I.CURRENT_APP_CONTEXT && (y({
+                i === I.CURRENT_APP_CONTEXT && (D({
                     guildId: t,
                     channelId: n
                 }), R(t, n))
@@ -1144,24 +1077,24 @@
                     channel: t,
                     messageId: n
                 } = e, i = t.guild_id;
-                null != i && T.default.getChannelId(i) === t.id && y({
+                null != i && T.default.getChannelId(i) === t.id && D({
                     guildId: i,
                     channelId: t.id,
                     messageId: n
                 })
             }
 
-            function w(e) {
+            function P(e) {
                 let {
                     channelId: t
                 } = e;
-                o.default.fetchMessages({
+                r.default.fetchMessages({
                     channelId: t,
                     limit: I.MAX_MESSAGES_PER_CHANNEL
                 })
             }
 
-            function P(e) {
+            function F(e) {
                 let {
                     response: t
                 } = e;
@@ -1176,7 +1109,7 @@
                     })
                 }
             }
-            let F = {};
+            let w = {};
 
             function x(e) {
                 var t;
@@ -1187,13 +1120,13 @@
                     isPreview: a = !1
                 } = e;
                 if (a) return;
-                let s = null !== (t = F[n]) && void 0 !== t ? t : 0;
+                let s = null !== (t = w[n]) && void 0 !== t ? t : 0;
                 if (Date.now() - s < 1e4) return;
-                F[n] = Date.now();
+                w[n] = Date.now();
                 let d = T.default.getChannelId(),
                     u = m.default.getCurrentSidebarChannelId(d),
-                    r = n === d || n === u;
-                l && g.default.isConnected() && r && o.default.fetchMessages({
+                    o = n === d || n === u;
+                l && g.default.isConnected() && o && r.default.fetchMessages({
                     channelId: n,
                     limit: I.MAX_MESSAGES_PER_CHANNEL,
                     jump: i
@@ -1219,7 +1152,7 @@
                 if ("active" !== t) return !1;
                 let n = T.default.getChannelId();
                 if (null == n) return !1;
-                o.default.fetchNewLocalMessages(n, I.MAX_MESSAGES_PER_CHANNEL)
+                r.default.fetchNewLocalMessages(n, I.MAX_MESSAGES_PER_CHANNEL)
             }
             class B extends c.default {
                 _initialize() {
@@ -1229,7 +1162,7 @@
                     d.default.unsubscribe("CONNECTION_OPEN", b)
                 }
                 constructor(...e) {
-                    super(...e), this.fetchMessages = y, this.loadSelectedChannelIfNecessary = M, this.stores = new Map().set(m.default, G), this.actions = {
+                    super(...e), this.fetchMessages = D, this.loadSelectedChannelIfNecessary = M, this.stores = new Map().set(m.default, G), this.actions = {
                         APP_STATE_UPDATE: H,
                         OVERLAY_INITIALIZE: b,
                         CHANNEL_SELECT: O,
@@ -1238,9 +1171,9 @@
                         THREAD_LIST_SYNC: () => M(),
                         CHANNEL_CREATE: k,
                         CHANNEL_PRELOAD: U,
-                        THREAD_CREATE_LOCAL: w,
+                        THREAD_CREATE_LOCAL: P,
                         GUILD_CREATE: () => M(),
-                        MESSAGE_END_EDIT: P,
+                        MESSAGE_END_EDIT: F,
                         LOAD_MESSAGES_SUCCESS: x,
                         UPLOAD_FAIL: V,
                         CHANNEL_DELETE: () => M(),
@@ -1248,22 +1181,21 @@
                     }
                 }
             }
-            var W = new B
+            var q = new B
         },
         721281: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 useVoiceActivityNotificationSettingsExperiment: function() {
-                    return u
+                    return d
                 },
                 hasVoiceChannelActivityNotifsEnabled: function() {
-                    return o
+                    return u
                 }
             });
             var i = n("862205"),
-                l = n("567707"),
-                a = n("49111");
-            let s = (0, i.createExperiment)({
+                l = n("49111");
+            let a = (0, i.createExperiment)({
                     kind: "user",
                     id: "2023-11_voice_activity_notification_user",
                     label: "Voice Activity Notifications for User",
@@ -1278,7 +1210,7 @@
                         }
                     }]
                 }),
-                d = (0, i.createExperiment)({
+                s = (0, i.createExperiment)({
                     kind: "guild",
                     id: "2023-11_voice_activity_notification_guild",
                     label: "General Voice Channel Notifications for Guild",
@@ -1294,38 +1226,36 @@
                     }]
                 });
 
-            function u(e) {
-                var t, n;
-                let {
-                    voiceChannelActivityNotifsEnabled: i
-                } = d.useExperiment({
-                    location: "useVoiceActivityNotificationSettingsExperiment",
-                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : ""
-                }, {
-                    disable: (null == e ? void 0 : e.type) !== a.ChannelTypes.GUILD_VOICE,
-                    autoTrackExposure: !1
-                }), {
-                    voiceChannelActivityNotifsEnabled: u
-                } = (0, l.useLockscreenWidgetConfig)(null !== (n = null == e ? void 0 : e.getGuildId()) && void 0 !== n ? n : "", "useVoiceActivityNotificationSettingsExperiment", !1), {
-                    enabled: o
-                } = s.useExperiment({
-                    location: "useVoiceActivityNotificationSettingsExperiment"
-                }, {
-                    disable: (null == e ? void 0 : e.type) !== a.ChannelTypes.GUILD_VOICE || !i,
-                    autoTrackExposure: !0
-                });
-                return (null == e ? void 0 : e.type) === a.ChannelTypes.GUILD_VOICE && (u || i && o)
-            }
-
-            function o(e) {
+            function d(e) {
                 var t;
                 let {
                     voiceChannelActivityNotifsEnabled: n
-                } = d.getCurrentConfig({
+                } = s.useExperiment({
+                    location: "useVoiceActivityNotificationSettingsExperiment",
+                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : ""
+                }, {
+                    disable: (null == e ? void 0 : e.type) !== l.ChannelTypes.GUILD_VOICE,
+                    autoTrackExposure: !1
+                }), {
+                    enabled: i
+                } = a.useExperiment({
+                    location: "useVoiceActivityNotificationSettingsExperiment"
+                }, {
+                    disable: (null == e ? void 0 : e.type) !== l.ChannelTypes.GUILD_VOICE || !n,
+                    autoTrackExposure: !0
+                });
+                return (null == e ? void 0 : e.type) === l.ChannelTypes.GUILD_VOICE && n && i
+            }
+
+            function u(e) {
+                var t;
+                let {
+                    voiceChannelActivityNotifsEnabled: n
+                } = s.getCurrentConfig({
                     guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : "",
                     location: "hasVoiceChannelActivityNotifsEnabled"
-                }), i = null != e && null != e.guild_id && (0, l.getLockscreenWidgetConfig)(e.guild_id, "hasVoiceChannelActivityNotifsEnabled").voiceChannelActivityNotifsEnabled;
-                return n || i
+                });
+                return n
             }
         },
         553257: function(e, t, n) {
@@ -1399,9 +1329,9 @@
                     taskbarFlash: !0,
                     notifyMessagesInSelectedChannel: !1
                 },
-                o = u;
+                r = u;
 
-            function r(e, t) {
+            function o(e, t) {
                 !__OVERLAY__ && a.default.track(e, t)
             }
 
@@ -1409,43 +1339,43 @@
                 let {
                     desktopType: t
                 } = e;
-                o.desktopType = t, r(d.AnalyticEvents.LOCAL_SETTINGS_UPDATED, {
+                r.desktopType = t, o(d.AnalyticEvents.LOCAL_SETTINGS_UPDATED, {
                     notifications_enabled: t === d.DesktopNotificationTypes.ALL
                 })
             }
             class f extends i.default.DeviceSettingsStore {
                 initialize(e) {
-                    o = {
+                    r = {
                         ...u,
                         ...e
                     }
                 }
                 getUserAgnosticState() {
-                    return o
+                    return r
                 }
                 getDesktopType() {
-                    return o.desktopType
+                    return r.desktopType
                 }
                 getTTSType() {
-                    return o.ttsType
+                    return r.ttsType
                 }
                 getDisabledSounds() {
-                    return o.disabledSounds
+                    return r.disabledSounds
                 }
                 getDisableAllSounds() {
-                    return o.disableAllSounds
+                    return r.disableAllSounds
                 }
                 getDisableUnreadBadge() {
-                    return o.disableUnreadBadge
+                    return r.disableUnreadBadge
                 }
                 getNotifyMessagesInSelectedChannel() {
-                    return o.notifyMessagesInSelectedChannel
+                    return r.notifyMessagesInSelectedChannel
                 }
                 get taskbarFlash() {
-                    return o.taskbarFlash
+                    return r.taskbarFlash
                 }
                 isSoundDisabled(e) {
-                    return o.disableAllSounds || -1 !== o.disabledSounds.indexOf(e)
+                    return r.disableAllSounds || -1 !== r.disabledSounds.indexOf(e)
                 }
             }
             f.displayName = "NotificationSettingsStore", f.persistKey = "notifications", f.migrations = [e => {
@@ -1460,23 +1390,23 @@
                     let {
                         ttsType: t
                     } = e;
-                    o.ttsType = t
+                    r.ttsType = t
                 },
                 NOTIFICATIONS_SET_DISABLED_SOUNDS: function(e) {
                     let {
                         sounds: t
                     } = e;
-                    o.disabledSounds = t
+                    r.disabledSounds = t
                 },
                 NOTIFICATIONS_TOGGLE_ALL_DISABLED: function() {
-                    o.disableAllSounds = !o.disableAllSounds
+                    r.disableAllSounds = !r.disableAllSounds
                 },
                 NOTIFICATIONS_SET_PERMISSION_STATE: function(e) {
                     let {
                         enabled: t,
                         source: n
                     } = e;
-                    r(d.AnalyticEvents.ENABLE_NOTIFICATIONS, {
+                    o(d.AnalyticEvents.ENABLE_NOTIFICATIONS, {
                         enabled: t === d.NotificationPermissionTypes.ENABLED,
                         source: n
                     }), t === d.NotificationPermissionTypes.BLOCKED ? c({
@@ -1489,19 +1419,19 @@
                     let {
                         disableUnreadBadge: t
                     } = e;
-                    o.disableUnreadBadge = t
+                    r.disableUnreadBadge = t
                 },
                 NOTIFICATIONS_SET_TASKBAR_FLASH: function(e) {
                     let {
                         taskbarFlash: t
                     } = e;
-                    o.taskbarFlash = t
+                    r.taskbarFlash = t
                 },
                 NOTIFICATIONS_SET_NOTIFY_MESSAGES_IN_SELECTED_CHANNEL: function(e) {
                     let {
                         notify: t
                     } = e;
-                    o.notifyMessagesInSelectedChannel = t
+                    r.notifyMessagesInSelectedChannel = t
                 }
             })
         },
@@ -1543,4 +1473,4 @@
         }
     }
 ]);
-//# sourceMappingURL=93464.ffb9aa123b24b6a7e9dd.js.map
+//# sourceMappingURL=93464.cbb6acc8337a79d665e9.js.map
