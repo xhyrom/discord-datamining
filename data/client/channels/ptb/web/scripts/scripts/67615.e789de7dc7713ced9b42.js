@@ -3470,19 +3470,20 @@
             "use strict";
             n.r(t), n.d(t, {
                 isActivitiesInTextEnabled: function() {
-                    return u
+                    return d
                 },
                 useIsActivitiesInTextEnabled: function() {
-                    return o
+                    return c
                 },
                 useIsActivitiesInTextActionBarEnabled: function() {
-                    return d
+                    return _
                 }
             });
-            var i = n("446674"),
-                a = n("862205"),
-                l = n("42203");
-            let s = (0, a.createExperiment)({
+            var i = n("298386"),
+                a = n("446674"),
+                l = n("862205"),
+                s = n("42203");
+            let r = (0, l.createExperiment)({
                     kind: "user",
                     id: "2023-08_activities_in_text",
                     label: "Activities in Text User",
@@ -3506,7 +3507,7 @@
                         }
                     }]
                 }),
-                r = (0, a.createExperiment)({
+                u = (0, l.createExperiment)({
                     kind: "guild",
                     id: "2023-11_activities_in_text_guild",
                     label: "Activities in Text Guild",
@@ -3531,41 +3532,48 @@
                     }]
                 });
 
-            function u(e, t) {
-                return null != e && ((null == e ? void 0 : e.guild_id) != null ? r.getCurrentConfig({
+            function o(e) {
+                return null != e && [i.ChannelTypes.GUILD_TEXT, i.ChannelTypes.GROUP_DM, i.ChannelTypes.DM].includes(e.type)
+            }
+
+            function d(e, t) {
+                if (null == e) return !1;
+                let n = o(e);
+                return (null == e ? void 0 : e.guild_id) != null ? u.getCurrentConfig({
                     guildId: e.guild_id,
                     location: t
                 }, {
                     autoTrackExposure: !1
-                }).enabled : s.getCurrentConfig({
+                }).enabled && n : r.getCurrentConfig({
                     location: t
                 }, {
                     autoTrackExposure: !1
-                }).enabled)
+                }).enabled && n
             }
 
-            function o(e, t) {
-                let n = (0, i.useStateFromStores)([l.default], () => l.default.getChannel(e)),
-                    a = (null == n ? void 0 : n.guild_id) != null ? r : s,
-                    u = a.useExperiment({
+            function c(e, t) {
+                let n = (0, a.useStateFromStores)([s.default], () => s.default.getChannel(e)),
+                    i = o(n),
+                    l = (null == n ? void 0 : n.guild_id) != null ? u : r,
+                    d = l.useExperiment({
                         guildId: null == n ? void 0 : n.guild_id,
                         location: t
                     }, {
                         autoTrackExposure: !1
                     });
-                return u.enabled
+                return d.enabled && i
             }
 
-            function d(e, t) {
-                let n = (0, i.useStateFromStores)([l.default], () => l.default.getChannel(e)),
-                    a = (null == n ? void 0 : n.guild_id) != null ? r : s,
-                    u = a.useExperiment({
+            function _(e, t) {
+                let n = (0, a.useStateFromStores)([s.default], () => s.default.getChannel(e)),
+                    i = (null == n ? void 0 : n.guild_id) != null ? u : r,
+                    l = i.useExperiment({
                         guildId: null == n ? void 0 : n.guild_id,
                         location: t
                     }, {
                         autoTrackExposure: !1
                     });
-                return u.actionBarEnabled
+                return l.actionBarEnabled
             }
         },
         810793: function(e, t, n) {
@@ -34893,4 +34901,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.a4c555d06269acc4d2e1.js.map
+//# sourceMappingURL=67615.e789de7dc7713ced9b42.js.map
