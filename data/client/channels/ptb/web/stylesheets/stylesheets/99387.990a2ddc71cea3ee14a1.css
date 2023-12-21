@@ -113974,21 +113974,21 @@ html .invoiceCancelRow_aa7946 {
 .classificationEvidenceContainer__6e0de {
     display: flex;
     flex-direction: column;
-    margin-top: 27px
+    margin-top: var(--spacing-40);
+    gap: var(--spacing-12)
 }
 
 .classificationEvidenceCard__2f9dc {
-    margin-top: 14px;
-    background: var(--background-secondary);
-    border-radius: 4px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    background: var(--channeltextarea-background);
+    border-radius: var(--radius-sm);
+    padding: 20px var(--spacing-8)20px var(--spacing-8);
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    border: 1px solid var(--bg-base-tertiary)
 }
 
 .classificationEvidenceMessageAttachment_fca7f4 {
-    max-width: 372px
+    max-width: 356px
 }
 
 .classificationContainer_dce6f2 {
@@ -114006,15 +114006,6 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     flex-direction: column;
     margin-top: 27px
-}
-
-.classificationEvidenceCard__0c566 {
-    margin-top: 14px;
-    height: 116px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-    border: 1px solid var(--background-tertiary);
-    background: var(--background-accent);
-    border-radius: 4px
 }
 
 .classificationActionsTakenContainer_aa5c0f {
@@ -124026,4 +124017,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2468ed5d653937584de4.css.map*/
+/*# sourceMappingURL=99387.990a2ddc71cea3ee14a1.css.map*/
