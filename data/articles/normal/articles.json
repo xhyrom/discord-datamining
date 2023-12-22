@@ -20,7 +20,9 @@
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [],
-    "label_names": [],
+    "label_names": [
+      "publicalertbanner"
+    ],
     "body": "<section class=\"article-info\">\n<div class=\"article-content\">\n<div class=\"article-body\">\n<p>Unfortunately, you may experience a delayed response from our team due to limited support during the holiday season! Rest assured that we're doing our best to respond to each and every person.</p>\n</div>\n</div>\n</section>"
   },
   {

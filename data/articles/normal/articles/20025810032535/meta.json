@@ -19,5 +19,7 @@
   "user_segment_id": null,
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
-  "label_names": []
+  "label_names": [
+    "publicalertbanner"
+  ]
 }
