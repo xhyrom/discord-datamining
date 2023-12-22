@@ -4365,7 +4365,7 @@
   "DISPLAY_OPTION_ONLY_WHILE_SPEAKING": "\"Only While Speaking\"",
   "FORM_LABEL_AUTOMATIC_VAD_MOBILE": "\"Auto Sensitivity\"",
   "RESET_NOTIFICATION_SETTINGS": "\"Reset Notification Settings\"",
-  "RESET_NOTIFICATION_OVERRIDE": "\"Reset Notification Override\"",
+  "RESET_NOTIFICATION_OVERRIDE": "\"Reset Override\"",
   "CHANNEL_SETTINGS": "\"Channel Settings\"",
   "SEND_MESSAGE": "\"Send Message\"",
   "OVERLAY_NOTIFICATIONS_SETTINGS": "\"Overlay Notifications\"",
