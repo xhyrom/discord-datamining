@@ -1,33 +1,33 @@
-<p>Starting from <strong>December 16th, 2023 (3PM PST)</strong> to <strong>June 17th, 2024 (11:59PM PST)</strong>, Opera GX Members can claim 1 month of free Discord Nitro. Learn below about how you can claim<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a>.</p>
+<p>Starting from <strong>December 16th, 2023 (3PM PST)</strong> to <strong>June 17th, 2024 (11:59PM PST)</strong>, Opera GX Members can claim 1 month of Discord Nitro on us. Learn below about how you can claim<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19882336420247" width="484" height="540"></p>
 <p><strong>Promotion Summary</strong></p>
-<p><strong>Offer Details:</strong> 1 month of free Discord Nitro</p>
+<p><strong>Offer Details:</strong> 1 month of Discord Nitro on us</p>
 <p><strong>Who is Eligible: </strong>Users who have had an active Nitro membership or Nitro trial in the last 12 months are not eligible to redeem this Nitro promotion.</p>
-<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership active on their account and they’ve never had a Nitro membership, redeeming this promotion will override that membership.</p>
+<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership active on their account and they’ve never had a Nitro membership, redeeming this promotion will cancel your existing membership, with no credit for any time remaining on that existing membership.</p>
 <p>We will not be able to refund any leftover membership time from those, and the user will be forfeiting the remainder of the existing membership when activating the 1 month Nitro trial.</p>
 <p>Users who have already claimed a gift from this promotion are not eligible to claim further gifts from this promotion.</p>
 <p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article</a>.</p>
 <p><strong>Requirements:</strong> Claim through the Opera GX browser by <strong>June 17th, 2024 (11:59PM PST)</strong>, and redeem in your Discord account by <strong>July 16th, 2024 (11:59PM PST)</strong>.</p>
-<p><strong>Membership:</strong> After the 1 month free trial period, your Nitro membership will convert to a monthly recurring membership, and Discord will bill your payment method for per month until you cancel it. You can cancel at any time in your Discord <strong>User Settings</strong>. </p>
+<p><strong>Membership:</strong> After the 1 month free trial period, your Nitro membership will convert to a monthly recurring membership, and Discord will bill your payment method for per month until you cancel it. You can cancel at any time in your Discord <strong>User Settings</strong>. For more info, check out our support article on <a href="https://support.discord.com/hc/en-us/articles/19580873036695" target="_blank" rel="noopener noreferrer">How to Cancel Nitro memberships</a>.</p>
 <p><span class="wysiwyg-font-size-large"><strong>What does this article cover?</strong></span></p>
 <ul>
-    <li><a href="#h_01HHQG82JHATXWBXYNQHM96DQV">What is Discord Nitro?</a></li>
-    <li><a href="#h_01HHQG82JHT4N2JXDXN1BVSD9J">What is Opera GX?</a></li>
-    <li><a href="#h_01HHQG82JHHRS32KJY7F68X28D">How do I claim the Nitro Promo from my Opera GX account?  </a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHATXWBXYNQHM96DQV">What is Discord Nitro?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHT4N2JXDXN1BVSD9J">What is Opera GX?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHHRS32KJY7F68X28D">How do I claim the Nitro Promo from my Opera GX account?  </a></li>
     <li>
-        <a href="#h_01HHQG82JHCKJWEKKTE0TTZZMR">How do I redeem the Nitro Trial on my Discord Account? </a>
+        <a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHCKJWEKKTE0TTZZMR">How do I redeem the Nitro Trial on my Discord Account? </a>
         <ul>
-            <li><a href="#h_01HHQG82JH2TV1XSHCAQW644T4">Eligibility for Redeeming the Nitro Trial</a></li>
-            <li><a href="#h_01HHQG82JHMG9J9TAWDY7ZZ6XD">Step by Step Redeem Instructions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JH2TV1XSHCAQW644T4">Eligibility for Redeeming the Nitro Trial</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHMG9J9TAWDY7ZZ6XD">Step by Step Redeem Instructions</a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01HHQG82JH29MQDWQXVYSJREFH">Frequently Asked Questions</a>
+        <a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JH29MQDWQXVYSJREFH">Frequently Asked Questions</a>
         <ul>
-            <li><a href="#h_01HHQG82JHSYTZNJC35WWCR2QH">Promotion Details</a></li>
-            <li><a href="#h_01HHQG82JHHZZJXYAABG2HKXGA">Eligibility for the Promotion</a></li>
-            <li><a href="#h_01HHQG82JHA7SRC6ABCHD06MH0">Payment Info and Membership Questions</a></li>
-            <li><a href="#h_01HHQG82JJ7NVRVY88B01K8KAQ">Potential Errors and Other Issues</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHSYTZNJC35WWCR2QH">Promotion Details</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHHZZJXYAABG2HKXGA">Eligibility for the Promotion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHA7SRC6ABCHD06MH0">Payment Info and Membership Questions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JJ7NVRVY88B01K8KAQ">Potential Errors and Other Issues</a></li>
         </ul>
     </li>
 </ul>
@@ -48,13 +48,13 @@
 <p>You should see the Nitro Promo offer in your Opera GX browser through the startpage speed dial or onboarding screen.</p>
 <p>To claim this Nitro gift, open an Opera GX browser window. Make sure your Opera GX browser is updated to the latest version!</p>
 <h1 id="h_01HHQG82JHCKJWEKKTE0TTZZMR">How do I redeem the Nitro Trial on my Discord Account?</h1>
-<p>Once you have claimed the promo, you'll now need to officially redeem this promo on your Discord account. You must redeem this Nitro trial by <strong>June 17th, 2024 (11:59PM PST).</strong></p>
+<p>Once you have claimed the promo, you'll now need to officially redeem this promo on your Discord account. You must redeem this Nitro trial by <strong>July 16th, 2024 (11:59PM PST).</strong></p>
 <h2 id="h_01HHQG82JH2TV1XSHCAQW644T4">Eligibility for Redeeming the Nitro Trial</h2>
 <h3 id="h_01HHQG82JH3AF15YMASD5TVJNC">
     <strong>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this</strong><a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a>
 </h3>
 <p>Users who have had an active Nitro membership or Nitro trial in the last 12 months are not eligible to redeem this Nitro promotion.</p>
-<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership active on their account and they’ve never had a Nitro membership, redeeming this promotion will override that membership.</p>
+<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership active on their account and they’ve never had a Nitro membership, redeeming this promotion will cancel your existing membership, with no credit for any time remaining on that existing membership.</p>
 <p>Users who have already claimed a gift from this promotion are not eligible to claim further gifts from this promotion.</p>
 <h2 id="h_01HHQG82JHMG9J9TAWDY7ZZ6XD">Step by Step Redeem Instructions</h2>
 <p>If you're eligible and ready to redeem this Nitro membership on your own Discord account, you can follow these steps below to redeem the promo.</p>
@@ -110,11 +110,11 @@
 <h1 id="h_01HHQG82JH29MQDWQXVYSJREFH">Frequently Asked Questions</h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
 <ul>
-    <li><a href="#h_01HHQG82JHSYTZNJC35WWCR2QH">Promotion Details</a></li>
-    <li><a href="#h_01HHQG82JHHZZJXYAABG2HKXGA">Eligibility for the Promotion</a></li>
-    <li><a href="#h_01HHQG82JHA7SRC6ABCHD06MH0">Payment Info and Membership Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHSYTZNJC35WWCR2QH">Promotion Details</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHHZZJXYAABG2HKXGA">Eligibility for the Promotion</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JHA7SRC6ABCHD06MH0">Payment Info and Membership Questions</a></li>
     <li>
-        <a href="#h_01HHQG82JJ7NVRVY88B01K8KAQ">Potential Errors and Other Issues</a>
+        <a href="https://support.discord.com/hc/en-us/articles/19822382831767#h_01HHQG82JJ7NVRVY88B01K8KAQ">Potential Errors and Other Issues</a>
         <ul>
             <li>Already Had/Have Nitro</li>
             <li>Already Redeemed</li>
@@ -140,10 +140,10 @@
 <p>At the end of the promotion period, you'll be converted to a paying Nitro membership per month unless you cancel your membership.</p>
 <h2 id="h_01HHQG82JHA7SRC6ABCHD06MH0">Payment Info and Membership Questions</h2>
 <p><strong>Q: Why do I need to submit my payment info to redeem Nitro?</strong></p>
-<p><strong>A:</strong> Because Nitro is a membership plan, at the end of your free 1 month trial, we will start your first billing cycle so you can continue to enjoy Nitro on Discord.</p>
+<p><strong>A:</strong> Because Nitro is a membership plan, at the end of your 1 month trial, we will start your first billing cycle so you can continue to enjoy Nitro on Discord.</p>
 <p>However, you can cancel the Nitro membership at any time before the end of the 1 month.</p>
-<p><strong>Q: Why do I see a temporary hold/charge on my account when this is supposed to be a free promotion?</strong></p>
-<p><strong>A:</strong> Just to clarify, this Nitro promotion is free, however, there will be a <strong>temporary hold</strong> placed on the payment method upon activating the promotion. This is to help Discord confirm the payment method works as expected and to prevent the use of fraudulent payment methods. This charge will appear in your Discord transaction history, and it may appear as a hold on your payment method.</p>
+<p><strong>Q: Why do I see a temporary hold/charge on my account when this is supposed to be a trial promotion?</strong></p>
+<p><strong>A:</strong> <span id="docs-internal-guid-7a9397f3-7fff-0286-f821-9054144b0996">We place a temporary hold on the payment method </span> to help Discord confirm the payment method works as expected and to prevent the use of fraudulent payment methods. This charge will appear in your Discord transaction history, and it may appear as a hold on your payment method.</p>
 <p>We immediately reverse the temporary hold, and you’ll see that reflected in your Discord transaction history. Your bank may take longer to remove the hold from your payment method.</p>
 <h3 id="h_01HHQG82JJEXZH1XYWYCX5M1F8"><strong>Note: Banks will usually remove the temporary hold from your account within a few business days.</strong></h3>
 <p>If your Discord transaction history does not show the hold released after 5 business days, please let us know at<a href="https://dis.gd/contact"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">https://dis.gd/contact</span></a>, and our support team will be able to investigate this issue further.</p>
@@ -168,6 +168,7 @@
     <li>The promotion is invalid</li>
     <li>The promotion has reached the maximum number of claims</li>
     <li>The link is invalid</li>
+    <li>The link is expired</li>
 </ul>
 <p>Please note that the Discord support team is not able to assist if you run into this error when attempting to redeem. See the list above for possible reasons why your account may be ineligible or otherwise unable to redeem this promotion.</p>
 <p><strong>Q: I see a "Sorry, This Payment Source Cannot Be Used for Redemption" error when trying to redeem my promo!</strong></p>
