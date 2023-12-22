@@ -5517,7 +5517,7 @@
                         opacity: 1
                     },
                     [a.DARKER]: {
-                        raw: "PLUM_1",
+                        raw: "PLUM_4",
                         opacity: 1
                     }
                 },
@@ -7477,7 +7477,7 @@
                         opacity: 1
                     },
                     [a.DARKER]: {
-                        raw: "PLUM_3",
+                        raw: "PLUM_6",
                         opacity: 1
                     }
                 },
@@ -7582,7 +7582,7 @@
                         opacity: 1
                     },
                     [a.DARKER]: {
-                        raw: "PLUM_3",
+                        raw: "PLUM_6",
                         opacity: 1
                     }
                 },
@@ -8399,7 +8399,7 @@
                         opacity: 1
                     },
                     [a.DARKER]: {
-                        raw: "PLUM_3",
+                        raw: "PLUM_6",
                         opacity: 1
                     }
                 },
@@ -8437,7 +8437,7 @@
                         opacity: 1
                     },
                     [a.DARKER]: {
-                        raw: "PLUM_3",
+                        raw: "PLUM_6",
                         opacity: 1
                     }
                 },
@@ -8886,22 +8886,22 @@
                     PLUM_23_ALPHA: "#A5B0E9",
                     PLUM_0: "#f9f9fa",
                     PLUM_1: "#f3f3f4",
-                    PLUM_10: "#828391",
-                    PLUM_11: "#6d6f7e",
-                    PLUM_12: "#5c5d6e",
-                    PLUM_13: "#4e4f5f",
-                    PLUM_14: "#414252",
-                    PLUM_15: "#383948",
-                    PLUM_16: "#31323f",
-                    PLUM_17: "#2b2c38",
-                    PLUM_18: "#262732",
-                    PLUM_19: "#21222b",
+                    PLUM_10: "#818491",
+                    PLUM_11: "#6c6f7c",
+                    PLUM_12: "#5b5e6a",
+                    PLUM_13: "#4d505b",
+                    PLUM_14: "#41434d",
+                    PLUM_15: "#383a43",
+                    PLUM_16: "#31323b",
+                    PLUM_17: "#2c2d35",
+                    PLUM_18: "#26272f",
+                    PLUM_19: "#212229",
                     PLUM_2: "#ecedef",
-                    PLUM_20: "#1c1d26",
-                    PLUM_21: "#181921",
-                    PLUM_22: "#15161d",
-                    PLUM_23: "#121319",
-                    PLUM_24: "#0f1015",
+                    PLUM_20: "#1c1d23",
+                    PLUM_21: "#18191f",
+                    PLUM_22: "#16161c",
+                    PLUM_23: "#131318",
+                    PLUM_24: "#0f1014",
                     PLUM_25: "#0c0c10",
                     PLUM_26: "#08080b",
                     PLUM_3: "#e4e5e8",
@@ -11160,52 +11160,52 @@
                     hex: "#f3f3f4"
                 },
                 "plum-10": {
-                    hex: "#828391"
+                    hex: "#818491"
                 },
                 "plum-11": {
-                    hex: "#6d6f7e"
+                    hex: "#6c6f7c"
                 },
                 "plum-12": {
-                    hex: "#5c5d6e"
+                    hex: "#5b5e6a"
                 },
                 "plum-13": {
-                    hex: "#4e4f5f"
+                    hex: "#4d505b"
                 },
                 "plum-14": {
-                    hex: "#414252"
+                    hex: "#41434d"
                 },
                 "plum-15": {
-                    hex: "#383948"
+                    hex: "#383a43"
                 },
                 "plum-16": {
-                    hex: "#31323f"
+                    hex: "#31323b"
                 },
                 "plum-17": {
-                    hex: "#2b2c38"
+                    hex: "#2c2d35"
                 },
                 "plum-18": {
-                    hex: "#262732"
+                    hex: "#26272f"
                 },
                 "plum-19": {
-                    hex: "#21222b"
+                    hex: "#212229"
                 },
                 "plum-2": {
                     hex: "#ecedef"
                 },
                 "plum-20": {
-                    hex: "#1c1d26"
+                    hex: "#1c1d23"
                 },
                 "plum-21": {
-                    hex: "#181921"
+                    hex: "#18191f"
                 },
                 "plum-22": {
-                    hex: "#15161d"
+                    hex: "#16161c"
                 },
                 "plum-23": {
-                    hex: "#121319"
+                    hex: "#131318"
                 },
                 "plum-24": {
-                    hex: "#0f1015"
+                    hex: "#0f1014"
                 },
                 "plum-25": {
                     hex: "#0c0c10"
@@ -12055,22 +12055,22 @@
                 PLUM_23_ALPHA: "#A5B0E9",
                 PLUM_0: "#f9f9fa",
                 PLUM_1: "#f3f3f4",
-                PLUM_10: "#828391",
-                PLUM_11: "#6d6f7e",
-                PLUM_12: "#5c5d6e",
-                PLUM_13: "#4e4f5f",
-                PLUM_14: "#414252",
-                PLUM_15: "#383948",
-                PLUM_16: "#31323f",
-                PLUM_17: "#2b2c38",
-                PLUM_18: "#262732",
-                PLUM_19: "#21222b",
+                PLUM_10: "#818491",
+                PLUM_11: "#6c6f7c",
+                PLUM_12: "#5b5e6a",
+                PLUM_13: "#4d505b",
+                PLUM_14: "#41434d",
+                PLUM_15: "#383a43",
+                PLUM_16: "#31323b",
+                PLUM_17: "#2c2d35",
+                PLUM_18: "#26272f",
+                PLUM_19: "#212229",
                 PLUM_2: "#ecedef",
-                PLUM_20: "#1c1d26",
-                PLUM_21: "#181921",
-                PLUM_22: "#15161d",
-                PLUM_23: "#121319",
-                PLUM_24: "#0f1015",
+                PLUM_20: "#1c1d23",
+                PLUM_21: "#18191f",
+                PLUM_22: "#16161c",
+                PLUM_23: "#131318",
+                PLUM_24: "#0f1014",
                 PLUM_25: "#0c0c10",
                 PLUM_26: "#08080b",
                 PLUM_3: "#e4e5e8",
@@ -12431,7 +12431,7 @@
                 "guild-icon-inactive-nested-bg": [o.Color.PRIMARY_600, o.Color.WHITE_500, o.Color.BLACK_500, o.Color.PLUM_20],
                 "guild-notifications-bottom-sheet-pill-background": [o.Color.PRIMARY_700, o.Color.WHITE_500, o.Color.PRIMARY_700, o.Color.PRIMARY_700],
                 "header-muted": [o.Color.PRIMARY_360, o.Color.PRIMARY_460, o.Color.PLUM_10, o.Color.PLUM_10],
-                "header-primary": [o.Color.PRIMARY_130, o.Color.PRIMARY_860, o.Color.PLUM_2, o.Color.PLUM_1],
+                "header-primary": [o.Color.PRIMARY_130, o.Color.PRIMARY_860, o.Color.PLUM_2, o.Color.PLUM_4],
                 "header-secondary": [o.Color.PRIMARY_330, o.Color.PRIMARY_500, o.Color.PLUM_8, o.Color.PLUM_9],
                 "home-background": [o.Color.PRIMARY_645, o.Color.PRIMARY_100, o.Color.PLUM_18, o.Color.PLUM_18],
                 "home-card-resting-border": [o.Color.TRANSPARENT, o.Color.PRIMARY_400, o.Color.TRANSPARENT, o.Color.TRANSPARENT],
@@ -12531,12 +12531,12 @@
                 "redesign-button-secondary-alt-background": [o.Color.PRIMARY_660, o.Color.BLACK_500, o.Color.PLUM_23_ALPHA, o.Color.PLUM_11],
                 "redesign-button-secondary-alt-pressed-background": [o.Color.PRIMARY_560, o.Color.BLACK_500, o.Color.PLUM_11, o.Color.PLUM_11],
                 "redesign-button-secondary-alt-pressed-text": [o.Color.PRIMARY_330, o.Color.PRIMARY_500, o.Color.PLUM_8, o.Color.PLUM_9],
-                "redesign-button-secondary-alt-text": [o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PLUM_4, o.Color.PLUM_3],
+                "redesign-button-secondary-alt-text": [o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PLUM_4, o.Color.PLUM_6],
                 "redesign-button-secondary-background": [o.Color.PRIMARY_460, o.Color.WHITE_500, o.Color.PLUM_17, o.Color.PLUM_15],
                 "redesign-button-secondary-border": [o.Color.WHITE_500, o.Color.BLACK_500, o.Color.PLUM_11, o.Color.PLUM_11],
                 "redesign-button-secondary-pressed-background": [o.Color.PRIMARY_500, o.Color.PRIMARY_130, o.Color.PLUM_15, o.Color.PLUM_13],
                 "redesign-button-secondary-pressed-border": [o.Color.TRANSPARENT, o.Color.BLACK_500, o.Color.PLUM_11, o.Color.PLUM_11],
-                "redesign-button-secondary-text": [o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PLUM_4, o.Color.PLUM_3],
+                "redesign-button-secondary-text": [o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PLUM_4, o.Color.PLUM_6],
                 "redesign-channel-category-name-text": [o.Color.PRIMARY_330, o.Color.PRIMARY_500, o.Color.PLUM_8, o.Color.PLUM_9],
                 "redesign-channel-message-preview-text": [o.Color.PRIMARY_360, o.Color.PRIMARY_460, o.Color.PLUM_10, o.Color.PLUM_10],
                 "redesign-channel-name-muted-text": [o.Color.PRIMARY_360, o.Color.PRIMARY_460, o.Color.PLUM_10, o.Color.PLUM_10],
@@ -12579,9 +12579,9 @@
                 "text-message-preview-low-sat": [o.Color.PRIMARY_360, o.Color.PRIMARY_460, o.Color.PLUM_9, o.Color.PLUM_11],
                 "text-muted": [o.Color.PRIMARY_360, o.Color.PRIMARY_460, o.Color.PLUM_10, o.Color.PLUM_10],
                 "text-muted-on-default": [o.Color.PRIMARY_330, o.Color.PRIMARY_430, o.Color.PRIMARY_330, o.Color.PRIMARY_330],
-                "text-normal": [o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PLUM_4, o.Color.PLUM_3],
+                "text-normal": [o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PLUM_4, o.Color.PLUM_6],
                 "text-positive": [o.Color.GREEN_330, o.Color.GREEN_430, o.Color.GREEN_330, o.Color.GREEN_330],
-                "text-primary": [o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PLUM_4, o.Color.PLUM_3],
+                "text-primary": [o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PLUM_4, o.Color.PLUM_6],
                 "text-secondary": [o.Color.PRIMARY_330, o.Color.PRIMARY_500, o.Color.PLUM_8, o.Color.PLUM_9],
                 "text-warning": [o.Color.YELLOW_300, o.Color.YELLOW_430, o.Color.YELLOW_300, o.Color.YELLOW_300],
                 "textbox-markdown-syntax": [o.Color.PRIMARY_360, o.Color.PRIMARY_530, o.Color.PLUM_9, o.Color.PLUM_9],
@@ -12854,22 +12854,22 @@
                 PLUM_23_ALPHA: "hsl(230, calc(var(--saturation-factor, 1) * 60.7%), 78%)",
                 PLUM_0: "hsl(240, calc(var(--saturation-factor, 1) * 9.1%), 97.8%)",
                 PLUM_1: "hsl(240, calc(var(--saturation-factor, 1) * 4.3%), 95.5%)",
-                PLUM_10: "hsl(236, calc(var(--saturation-factor, 1) * 6.4%), 53.9%)",
-                PLUM_11: "hsl(233, calc(var(--saturation-factor, 1) * 7.2%), 46.1%)",
-                PLUM_12: "hsl(237, calc(var(--saturation-factor, 1) * 8.9%), 39.6%)",
-                PLUM_13: "hsl(236, calc(var(--saturation-factor, 1) * 9.8%), 33.9%)",
-                PLUM_14: "hsl(236, calc(var(--saturation-factor, 1) * 11.6%), 28.8%)",
-                PLUM_15: "hsl(236, calc(var(--saturation-factor, 1) * 12.5%), 25.1%)",
-                PLUM_16: "hsl(236, calc(var(--saturation-factor, 1) * 12.5%), 22%)",
-                PLUM_17: "hsl(235, calc(var(--saturation-factor, 1) * 13.1%), 19.4%)",
-                PLUM_18: "hsl(235, calc(var(--saturation-factor, 1) * 13.6%), 17.3%)",
-                PLUM_19: "hsl(234, calc(var(--saturation-factor, 1) * 13.2%), 14.9%)",
+                PLUM_10: "hsl(229, calc(var(--saturation-factor, 1) * 6.8%), 53.7%)",
+                PLUM_11: "hsl(229, calc(var(--saturation-factor, 1) * 6.9%), 45.5%)",
+                PLUM_12: "hsl(228, calc(var(--saturation-factor, 1) * 7.6%), 38.6%)",
+                PLUM_13: "hsl(227, calc(var(--saturation-factor, 1) * 8.3%), 32.9%)",
+                PLUM_14: "hsl(230, calc(var(--saturation-factor, 1) * 8.5%), 27.8%)",
+                PLUM_15: "hsl(229, calc(var(--saturation-factor, 1) * 8.9%), 24.1%)",
+                PLUM_16: "hsl(234, calc(var(--saturation-factor, 1) * 9.3%), 21.2%)",
+                PLUM_17: "hsl(233, calc(var(--saturation-factor, 1) * 9.3%), 19%)",
+                PLUM_18: "hsl(233, calc(var(--saturation-factor, 1) * 10.6%), 16.7%)",
+                PLUM_19: "hsl(233, calc(var(--saturation-factor, 1) * 10.8%), 14.5%)",
                 PLUM_2: "hsl(220, calc(var(--saturation-factor, 1) * 8.6%), 93.1%)",
-                PLUM_20: "hsl(234, calc(var(--saturation-factor, 1) * 15.2%), 12.9%)",
-                PLUM_21: "hsl(233, calc(var(--saturation-factor, 1) * 15.8%), 11.2%)",
-                PLUM_22: "hsl(233, calc(var(--saturation-factor, 1) * 16%), 9.8%)",
-                PLUM_23: "hsl(231, calc(var(--saturation-factor, 1) * 16.3%), 8.4%)",
-                PLUM_24: "hsl(230, calc(var(--saturation-factor, 1) * 16.7%), 7.1%)",
+                PLUM_20: "hsl(231, calc(var(--saturation-factor, 1) * 11.1%), 12.4%)",
+                PLUM_21: "hsl(231, calc(var(--saturation-factor, 1) * 12.7%), 10.8%)",
+                PLUM_22: "hsl(240, calc(var(--saturation-factor, 1) * 12%), 9.8%)",
+                PLUM_23: "hsl(240, calc(var(--saturation-factor, 1) * 11.6%), 8.4%)",
+                PLUM_24: "hsl(228, calc(var(--saturation-factor, 1) * 14.3%), 6.9%)",
                 PLUM_25: "hsl(240, calc(var(--saturation-factor, 1) * 14.3%), 5.5%)",
                 PLUM_26: "hsl(240, calc(var(--saturation-factor, 1) * 15.8%), 3.7%)",
                 PLUM_3: "hsl(225, calc(var(--saturation-factor, 1) * 8%), 90.2%)",
@@ -13509,4 +13509,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.7d6c0db39f80d7c521d6.js.map
+//# sourceMappingURL=7273.228e4f8fe2c4e3b10bc8.js.map

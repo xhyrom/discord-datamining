@@ -19444,8 +19444,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -121092,37 +121092,37 @@ div.nagbar_c731ff {
     --plum-1: hsl(var(--plum-1-hsl) / 1);
     --plum-1-hsl: 240 calc(var(--saturation-factor, 1) * 4.3%) 95.5%;
     --plum-10: hsl(var(--plum-10-hsl) / 1);
-    --plum-10-hsl: 236 calc(var(--saturation-factor, 1) * 6.4%) 53.9%;
+    --plum-10-hsl: 229 calc(var(--saturation-factor, 1) * 6.8%) 53.7%;
     --plum-11: hsl(var(--plum-11-hsl) / 1);
-    --plum-11-hsl: 233 calc(var(--saturation-factor, 1) * 7.2%) 46.1%;
+    --plum-11-hsl: 229 calc(var(--saturation-factor, 1) * 6.9%) 45.5%;
     --plum-12: hsl(var(--plum-12-hsl) / 1);
-    --plum-12-hsl: 237 calc(var(--saturation-factor, 1) * 8.9%) 39.6%;
+    --plum-12-hsl: 228 calc(var(--saturation-factor, 1) * 7.6%) 38.6%;
     --plum-13: hsl(var(--plum-13-hsl) / 1);
-    --plum-13-hsl: 236 calc(var(--saturation-factor, 1) * 9.8%) 33.9%;
+    --plum-13-hsl: 227 calc(var(--saturation-factor, 1) * 8.3%) 32.9%;
     --plum-14: hsl(var(--plum-14-hsl) / 1);
-    --plum-14-hsl: 236 calc(var(--saturation-factor, 1) * 11.6%) 28.8%;
+    --plum-14-hsl: 230 calc(var(--saturation-factor, 1) * 8.5%) 27.8%;
     --plum-15: hsl(var(--plum-15-hsl) / 1);
-    --plum-15-hsl: 236 calc(var(--saturation-factor, 1) * 12.5%) 25.1%;
+    --plum-15-hsl: 229 calc(var(--saturation-factor, 1) * 8.9%) 24.1%;
     --plum-16: hsl(var(--plum-16-hsl) / 1);
-    --plum-16-hsl: 236 calc(var(--saturation-factor, 1) * 12.5%) 22%;
+    --plum-16-hsl: 234 calc(var(--saturation-factor, 1) * 9.3%) 21.2%;
     --plum-17: hsl(var(--plum-17-hsl) / 1);
-    --plum-17-hsl: 235 calc(var(--saturation-factor, 1) * 13.1%) 19.4%;
+    --plum-17-hsl: 233 calc(var(--saturation-factor, 1) * 9.3%) 19%;
     --plum-18: hsl(var(--plum-18-hsl) / 1);
-    --plum-18-hsl: 235 calc(var(--saturation-factor, 1) * 13.6%) 17.3%;
+    --plum-18-hsl: 233 calc(var(--saturation-factor, 1) * 10.6%) 16.7%;
     --plum-19: hsl(var(--plum-19-hsl) / 1);
-    --plum-19-hsl: 234 calc(var(--saturation-factor, 1) * 13.2%) 14.9%;
+    --plum-19-hsl: 233 calc(var(--saturation-factor, 1) * 10.8%) 14.5%;
     --plum-2: hsl(var(--plum-2-hsl) / 1);
     --plum-2-hsl: 220 calc(var(--saturation-factor, 1) * 8.6%) 93.1%;
     --plum-20: hsl(var(--plum-20-hsl) / 1);
-    --plum-20-hsl: 234 calc(var(--saturation-factor, 1) * 15.2%) 12.9%;
+    --plum-20-hsl: 231 calc(var(--saturation-factor, 1) * 11.1%) 12.4%;
     --plum-21: hsl(var(--plum-21-hsl) / 1);
-    --plum-21-hsl: 233 calc(var(--saturation-factor, 1) * 15.8%) 11.2%;
+    --plum-21-hsl: 231 calc(var(--saturation-factor, 1) * 12.7%) 10.8%;
     --plum-22: hsl(var(--plum-22-hsl) / 1);
-    --plum-22-hsl: 233 calc(var(--saturation-factor, 1) * 16%) 9.8%;
+    --plum-22-hsl: 240 calc(var(--saturation-factor, 1) * 12%) 9.8%;
     --plum-23: hsl(var(--plum-23-hsl) / 1);
-    --plum-23-hsl: 231 calc(var(--saturation-factor, 1) * 16.3%) 8.4%;
+    --plum-23-hsl: 240 calc(var(--saturation-factor, 1) * 11.6%) 8.4%;
     --plum-24: hsl(var(--plum-24-hsl) / 1);
-    --plum-24-hsl: 230 calc(var(--saturation-factor, 1) * 16.7%) 7.1%;
+    --plum-24-hsl: 228 calc(var(--saturation-factor, 1) * 14.3%) 6.9%;
     --plum-25: hsl(var(--plum-25-hsl) / 1);
     --plum-25-hsl: 240 calc(var(--saturation-factor, 1) * 14.3%) 5.5%;
     --plum-26: hsl(var(--plum-26-hsl) / 1);
@@ -122580,7 +122580,7 @@ div.nagbar_c731ff {
     --guild-icon-inactive-nested-bg: var(--plum-20);
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
     --header-muted: var(--plum-10);
-    --header-primary: var(--plum-1);
+    --header-primary: var(--plum-4);
     --header-secondary: var(--plum-9);
     --home-background: var(--plum-18);
     --home-card-resting-border: hsl(var(--transparent-hsl) / 0);
@@ -122680,12 +122680,12 @@ div.nagbar_c731ff {
     --redesign-button-secondary-alt-background: hsl(var(--plum-11-hsl) / 0.12);
     --redesign-button-secondary-alt-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
     --redesign-button-secondary-alt-pressed-text: var(--plum-9);
-    --redesign-button-secondary-alt-text: var(--plum-3);
+    --redesign-button-secondary-alt-text: var(--plum-6);
     --redesign-button-secondary-background: var(--plum-15);
     --redesign-button-secondary-border: hsl(var(--plum-11-hsl) / 0.12);
     --redesign-button-secondary-pressed-background: var(--plum-13);
     --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.06);
-    --redesign-button-secondary-text: var(--plum-3);
+    --redesign-button-secondary-text: var(--plum-6);
     --redesign-channel-category-name-text: var(--plum-9);
     --redesign-channel-message-preview-text: var(--plum-10);
     --redesign-channel-name-muted-text: var(--plum-10);
@@ -122728,9 +122728,9 @@ div.nagbar_c731ff {
     --text-message-preview-low-sat: var(--plum-11);
     --text-muted: var(--plum-10);
     --text-muted-on-default: var(--primary-330);
-    --text-normal: var(--plum-3);
+    --text-normal: var(--plum-6);
     --text-positive: var(--green-330);
-    --text-primary: var(--plum-3);
+    --text-primary: var(--plum-6);
     --text-secondary: var(--plum-9);
     --text-warning: var(--yellow-300);
     --textbox-markdown-syntax: var(--plum-9);
@@ -124035,4 +124035,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.86d46d8fac784667a256.css.map*/
+/*# sourceMappingURL=app.3f73c23e4a8641e9d682.css.map*/
