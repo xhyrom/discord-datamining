@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["72054"], {
+    ["50696"], {
         798526: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -41078,7 +41078,7 @@
                 }
             }("undefined" == typeof self ? void 0 === n.g ? this : n.g : self)
         },
-        132710: function(e, t, n) {
+        463928: function(e, t, n) {
             var r, a;
             e = n.nmd(e), n("854508"), n("781738"), n("222007"), n("424973"), n("70102"), n("511434"), n("313619"), n("654714"), n("287168"), n("956660"), r = this, a = function() {
                 "use strict";
@@ -41749,7 +41749,7 @@
                         },
                         em: {
                             order: B,
-                            match: m(RegExp("^\\b_((?:__|\\\\[\\s\\S]|[^\\\\_])+?)_\\b|^\\*(?=\\S)((?:\\*\\*|\\\\[\\s\\S]|\\s+(?:\\\\[\\s\\S]|[^\\s\\*\\\\]|\\*\\*)|[^\\s\\*\\\\])+?)\\*(?!\\*)")),
+                            match: m(RegExp("^\\b_((?:_[_(]|\\\\[\\s\\S]|(?<!_)\\B_\\B|[^\\\\_])+?)_(?![(])\\b|^\\*(?=\\S)((?:\\*\\*|\\\\[\\s\\S]|\\s+(?:\\\\[\\s\\S]|[^\\s\\*\\\\]|\\*\\*)|[^\\s\\*\\\\])+?)\\*(?!\\*)")),
                             quality: function(e) {
                                 return e[0].length + .2
                             },
@@ -42888,4 +42888,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72054.ccb12939fa7033320d60.js.map
+//# sourceMappingURL=50696.478dbfea0b0fef7555be.js.map
