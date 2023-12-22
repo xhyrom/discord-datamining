@@ -503,6 +503,7 @@
   "APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER": "\"Start typing...\"",
   "APP_LAUNCHER_COMMAND_NOT_FOUND_TITLE": "\"No command found\"",
   "APP_LAUNCHER_COMMAND_NOT_FOUND_BODY": "\"This command is not available\"",
+  "APP_LAUNCHER_NO_PERMISSIONS_STATE_BODY": "\"You don't have permission to use any apps in this channel\"",
   "READY": "\"Ready\"",
   "CONNECTING": "\"Connecting…\"",
   "CONNECTING_PROBLEMS_CTA": "\"Connection problems? Let us know!\"",
