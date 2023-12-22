@@ -32478,6 +32478,10 @@
                     var e;
                     return null !== (e = S.useMobileChatCustomRenderer) && void 0 !== e && e
                 }
+                get saveCameraUploadsToDevice() {
+                    var e;
+                    return null === (e = S.saveCameraUploadsToDevice) || void 0 === e || e
+                }
             }
             m.displayName = "UnsyncedUserSettingsStore", m.persistKey = "UnsyncedUserSettingsStore", m.migrations = [() => {
                 let e = c.default.get("UserSettingsStore");
@@ -50019,7 +50023,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "256406"
+                                build_number: "256413"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63409,4 +63413,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.9fd75883e76dd61f54c2.js.map
+//# sourceMappingURL=24364.678255ecb501ad4ac54f.js.map
