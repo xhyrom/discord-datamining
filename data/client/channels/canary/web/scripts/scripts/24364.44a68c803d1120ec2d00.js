@@ -39035,6 +39035,9 @@
                         s = !(0, Q.isIOS)() && !(0, Q.isAndroid)() && (n.canSupportMls || (null == i ? void 0 : i.canSupportMls));
                     return r ? s ? t : t % 100 : 0
                 }
+                hasClipsSource() {
+                    return null != a
+                }
             }
             th.displayName = "MediaEngineStore";
             var tp = i = new th(I.default, {
@@ -49990,7 +49993,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "256482"
+                                build_number: "256489"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63380,4 +63383,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24364.abf5867c050261248f6a.js.map
+//# sourceMappingURL=24364.44a68c803d1120ec2d00.js.map
