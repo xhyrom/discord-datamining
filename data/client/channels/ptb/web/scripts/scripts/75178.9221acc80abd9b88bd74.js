@@ -781,7 +781,7 @@
                 });
                 if (S.default.getIsAtMaxSaveClipOperations()) return;
                 let u = S.default.getSettings().clipsEnabled && null != p.default.getCurrentUserActiveStream(),
-                    r = n && S.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null,
+                    r = n && S.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && m.default.hasClipsSource(),
                     l = null != e && null != p.default.getActiveStreamForStreamKey(e) && i;
                 if (!u && !r && !l) return;
                 let c = p.default.getCurrentUserActiveStream(),
@@ -789,8 +789,8 @@
                 a.default.dispatch({
                     type: "CLIPS_SAVE_CLIP_START"
                 });
-                let m = (0, h.playSound)("clip_save", .5),
-                    g = performance.now();
+                let g = (0, h.playSound)("clip_save", .5),
+                    v = performance.now();
                 try {
                     let t = await M(null != e ? e : f);
                     a.default.dispatch({
@@ -798,11 +798,11 @@
                         clip: t
                     })
                 } catch (e) {
-                    x.ClipsLogger.error("Clip Failed to Save", e), null == m || m.stop(), (0, h.playSound)("clip_error", .5), a.default.dispatch({
+                    x.ClipsLogger.error("Clip Failed to Save", e), null == g || g.stop(), (0, h.playSound)("clip_error", .5), a.default.dispatch({
                         type: "CLIPS_SAVE_CLIP_ERROR"
                     })
                 }
-                x.ClipsLogger.info("".concat(S.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - g), "ms"))
+                x.ClipsLogger.info("".concat(S.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - v), "ms"))
             }
             async function F(e, t) {
                 let n = S.default.getClips().find(t => t.id === e);
@@ -1211,4 +1211,4 @@
         }
     }
 ]);
-//# sourceMappingURL=75178.23afcaefc02b93d47226.js.map
+//# sourceMappingURL=75178.9221acc80abd9b88bd74.js.map
