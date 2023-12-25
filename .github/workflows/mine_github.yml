@@ -38,6 +38,7 @@ jobs:
 
       - name: Setup git
         run: |
+          git config --global url.https://${{ secrets.GITHUB_TOKEN }}@github.com/.insteadOf https://github.com/
           git config --global user.name "hyros-dataminer[bot]"
           git config --global user.email "154810797+hyros-dataminer[bot]@users.noreply.github.com"
         env:
