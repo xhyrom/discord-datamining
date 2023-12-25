@@ -4,6 +4,9 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   mine:
     runs-on: ubuntu-latest
@@ -35,12 +38,10 @@ jobs:
 
       - name: Setup git
         run: |
-          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
-          git config user.name "xHyroM"
-          git config user.email "github@xhyrom.dev"
+          git config user.name "hyros-dataminer[bot]"
+          git config user.email "154810797+hyros-dataminer[bot]@users.noreply.github.com"
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Install dependencies
         run: pnpm i
