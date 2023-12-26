@@ -48,7 +48,7 @@ export class Applications implements Module {
 
     const invalidIdsText =
       (await readFile(join(this.baseDir, "invalid_ids.json"))) ?? "[]";
-    const invalidIds = JSON.parse(invalidIdsText);
+    const invalidIds: Set<string> = new Set(JSON.parse(invalidIdsText));
 
     const ids = await this.getSnowflakes();
 
@@ -57,7 +57,7 @@ export class Applications implements Module {
     for (const id of ids ?? []) {
       const result = await this.fetchSnowflake(id);
       if (result.type === "invalid") {
-        invalidIds.push(id);
+        invalidIds.add(id);
         continue;
       }
 
@@ -75,14 +75,14 @@ export class Applications implements Module {
     );
     await writeFile(
       join(this.baseDir, "invalid_ids.json"),
-      JSON.stringify(invalidIds, null, 2)
+      JSON.stringify([...invalidIds], null, 2)
     );
 
     await git.pull(); // one more time to make sure we have the latest changes
     await pushToGit(
       "📱 Applications were updated",
       `${formatNumber(applications.length)} valid, ${formatNumber(
-        invalidIds.length
+        invalidIds.size
       )} invalid`,
       "",
       "Co-Authored-By: Happy enderman <66224387+happyendermangit@users.noreply.github.com>"
