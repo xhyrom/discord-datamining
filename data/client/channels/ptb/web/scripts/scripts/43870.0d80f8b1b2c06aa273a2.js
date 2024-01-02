@@ -22,8 +22,8 @@
                         animateOnHover: E = !1,
                         showPending: s = !1,
                         showTryItOut: _ = !1,
-                        avatarDecorationOverride: d
-                    } = t, [S, C] = n.useState(!1), I = (0, i.useStateFromStores)([o.default], () => o.default.useReducedMotion), A = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), f = (0, i.useStateFromStores)([l.default], () => {
+                        avatarDecorationOverride: S
+                    } = t, [d, C] = n.useState(!1), I = (0, i.useStateFromStores)([o.default], () => o.default.useReducedMotion), A = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), f = (0, i.useStateFromStores)([l.default], () => {
                         var t;
                         return null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id
                     }), v = (0, i.useStateFromStores)([l.default], () => {
@@ -33,11 +33,11 @@
                         pendingAvatarDecoration: O
                     } = (0, u.default)({
                         isTryItOut: _
-                    }), N = A && (S || !I && !E), R = s && void 0 !== O && void 0 !== f && f === (null == e ? void 0 : e.id) ? O : null != v ? v : null == e ? void 0 : e.avatarDecoration, P = n.useMemo(() => (0, T.getAvatarDecorationURL)({
-                        avatarDecoration: void 0 !== d ? d : R,
+                    }), N = A && (d || !I && !E), R = s && void 0 !== O && void 0 !== f && f === (null == e ? void 0 : e.id) ? O : null != v ? v : null == e ? void 0 : e.avatarDecoration, P = n.useMemo(() => (0, T.getAvatarDecorationURL)({
+                        avatarDecoration: void 0 !== S ? S : R,
                         canAnimate: N,
                         size: r
-                    }), [R, N, r, d]), g = n.useCallback(() => C(!0), []), U = n.useCallback(() => C(!1), []);
+                    }), [R, N, r, S]), g = n.useCallback(() => C(!0), []), U = n.useCallback(() => C(!1), []);
                     return {
                         avatarPlaceholderSrc: c,
                         avatarDecorationSrc: P,
@@ -54,7 +54,7 @@
             let n, i;
             r.r(e), r.d(e, {
                 default: function() {
-                    return S
+                    return d
                 }
             }), r("222007");
             var o = r("917351"),
@@ -66,7 +66,7 @@
                 E = T,
                 s = c,
                 _ = !1;
-            class d extends u.default.Store {
+            class S extends u.default.Store {
                 get isFetching() {
                     return _
                 }
@@ -93,8 +93,8 @@
                     return this.getCategory(null == e ? void 0 : e.categorySkuId)
                 }
             }
-            d.displayName = "CollectiblesCategoryStore";
-            var S = new d(l.default, {
+            S.displayName = "CollectiblesCategoryStore";
+            var d = new S(l.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: t => {
                     _ = !0, n = void 0
                 },
@@ -137,10 +137,10 @@
                     return _
                 },
                 extractPriceByPurchaseTypes: function() {
-                    return d
+                    return S
                 },
                 isFreeCollectiblesProduct: function() {
-                    return S
+                    return d
                 },
                 getProductsFromCategories: function() {
                     return C
@@ -166,7 +166,7 @@
                 isCollectiblesGiftCode: function() {
                     return g
                 }
-            }), r("222007"), r("808653");
+            }), r("222007");
             var n = r("917351"),
                 i = r("635058"),
                 o = r("265586"),
@@ -178,17 +178,17 @@
             let E = t => (null == t ? void 0 : t.categorySkuId) === i.CollectiblesCategorySkuId.DISXCORE,
                 s = t => (null == t ? void 0 : t.purchaseType) === c.EntitlementTypes.PREMIUM_PURCHASE,
                 _ = (t, e) => {
-                    let r = d(t, e ? c.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : c.PriceSetAssignmentPurchaseTypes.DEFAULT);
+                    let r = S(t, e ? c.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : c.PriceSetAssignmentPurchaseTypes.DEFAULT);
                     return null == r ? "" : (0, l.formatPrice)(null == r ? void 0 : r.amount, null == r ? void 0 : r.currency)
                 },
-                d = (t, e) => {
+                S = (t, e) => {
                     var r, n, i;
                     let o = null !== (i = t.prices[e]) && void 0 !== i ? i : null;
                     return null == o ? null : null === (n = o.countryPrices) || void 0 === n ? void 0 : null === (r = n.prices) || void 0 === r ? void 0 : r[0]
                 },
-                S = t => {
+                d = t => {
                     var e;
-                    return (null === (e = d(t, c.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === e ? void 0 : e.amount) === 0
+                    return (null === (e = S(t, c.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === e ? void 0 : e.amount) === 0
                 },
                 C = t => {
                     let e = (0, n.flatMap)([...t.values()], "products");
@@ -242,9 +242,7 @@
                         shopPreviews: n
                     }
                 },
-                g = t => t.applicationId === c.COLLECTIBLES_APPLICATION_ID,
-                U = (t, e, r) => (t[e] = r, t);
-            ["1146328960951668776", "1146328961417224193", "1139323093991575696", "1139323099687436419", "1139323092645183591", "1139323093551165533", "1139323101881061466", "1139323100568244355", "1139323101008642101", "1139323099251232828", "1139323095744790568", "1139323096180994169"].reduce(U, {}), ["1174460780842856588", "1174459546748600481", "1174459480348565554", "1174459415924064376", "1154896005045694555", "1144307957425778779", "1144308439720394944", "1144307629225672846", "1144308196723408958", "1144046002110738634", "1144305233707671573", "1144307257807491094", "1144056139584127058", "1144006094134456352", "1144057023726628945", "1144003752978829455", "1144056631374647458", "1144057486203158560", "1144048390594908212", "1144048977138946230", "1144057737475534889", "1144049603109470370", "1144057249392771145", "1144049316009353338", "1144049924397334651"].reduce(U, {})
+                g = t => t.applicationId === c.COLLECTIBLES_APPLICATION_ID
         },
         170313: function(t, e, r) {
             "use strict";
@@ -376,20 +374,20 @@
                     } = (0, i.useStateFromStoresObject)([l.default], () => ({
                         pendingAvatar: e ? l.default.getTryItOutAvatar() : l.default.getPendingAvatar(),
                         pendingAvatarDecoration: e ? l.default.getTryItOutAvatarDecoration() : l.default.getPendingAvatarDecoration()
-                    })), d = (0, n.useCallback)(t => (0, u.setNewPendingAvatar)(t, null == c ? void 0 : c.avatar), [null == c ? void 0 : c.avatar]), S = (0, n.useCallback)(t => {
+                    })), S = (0, n.useCallback)(t => (0, u.setNewPendingAvatar)(t, null == c ? void 0 : c.avatar), [null == c ? void 0 : c.avatar]), d = (0, n.useCallback)(t => {
                         (0, u.setNewPendingAvatarDecoration)(t, null == c ? void 0 : c.avatarDecoration), null != t && E(t)
                     }, [null == c ? void 0 : c.avatarDecoration, E]);
                     return {
                         pendingAvatar: s,
                         pendingAvatarDecoration: _,
-                        setPendingAvatar: e ? T.setTryItOutAvatar : d,
-                        setPendingAvatarDecoration: e ? T.setTryItOutAvatarDecoration : S
+                        setPendingAvatar: e ? T.setTryItOutAvatar : S,
+                        setPendingAvatarDecoration: e ? T.setTryItOutAvatarDecoration : d
                     }
                 }
         },
         790618: function(t, e, r) {
             "use strict";
-            let n, i, o, u, l, a, T, c, E, s, _, d, S, C;
+            let n, i, o, u, l, a, T, c, E, s, _, S, d, C;
             r.r(e), r.d(e, {
                 default: function() {
                     return p
@@ -424,7 +422,7 @@
             }
 
             function L() {
-                _ = void 0, d = void 0, S = void 0, C = void 0, s = void 0
+                _ = void 0, S = void 0, d = void 0, C = void 0, s = void 0
             }
             class D extends A.default.Store {
                 getFormState() {
@@ -483,10 +481,10 @@
                     return _
                 }
                 getTryItOutAvatarDecoration() {
-                    return d
+                    return S
                 }
                 getTryItOutProfileEffectId() {
-                    return S
+                    return d
                 }
                 getTryItOutBanner() {
                     return C
@@ -495,8 +493,8 @@
                     return {
                         tryItOutThemeColors: s,
                         tryItOutAvatar: _,
-                        tryItOutAvatarDecoration: d,
-                        tryItOutProfileEffectId: S,
+                        tryItOutAvatarDecoration: S,
+                        tryItOutProfileEffectId: d,
                         tryItOutBanner: C
                     }
                 }
@@ -549,7 +547,7 @@
                     let {
                         item: e
                     } = t;
-                    (null == e ? void 0 : e.type) === I.CollectiblesItemType.PROFILE_EFFECT ? (d = null, S = null == e ? void 0 : e.id) : (S = null, d = e)
+                    (null == e ? void 0 : e.type) === I.CollectiblesItemType.PROFILE_EFFECT ? (S = null, d = null == e ? void 0 : e.id) : (d = null, S = e)
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: function(t) {
                     let {
@@ -597,13 +595,13 @@
                     let {
                         avatarDecoration: e
                     } = t;
-                    d = e
+                    S = e
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT_ID: function(t) {
                     let {
                         profileEffectId: e
                     } = t;
-                    S = e
+                    d = e
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: function(t) {
                     let {
@@ -658,4 +656,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43870.65d0a96d11b5c7e21fa0.js.map
+//# sourceMappingURL=43870.0d80f8b1b2c06aa273a2.js.map
