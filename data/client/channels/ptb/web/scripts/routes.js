@@ -1573,6 +1573,7 @@
                     POLL_ANSWERS: (_, E) => "/channels/".concat(_, "/polls/").concat(E, "/answers"),
                     PREMIUM_MARKETING: "/premium-marketing",
                     QUESTS_CURRENT_QUESTS: "/quests/@me",
+                    QUESTS_HEARTBEAT: _ => "/quests/".concat(_, "/heartbeat"),
                     ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls"
                 }),
                 a6 = Object.freeze({
@@ -13509,4 +13510,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.228e4f8fe2c4e3b10bc8.js.map
+//# sourceMappingURL=7273.69832f304660121a78a8.js.map
