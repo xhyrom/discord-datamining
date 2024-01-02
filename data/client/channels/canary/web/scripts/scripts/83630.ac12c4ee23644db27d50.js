@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["17744"], {
+    ["83630"], {
         618017: function(e, t, r) {
             "use strict";
             r.r(t), r.d(t, {
@@ -68,10 +68,10 @@
                     return _
                 },
                 validateCollectiblesRecipient: function() {
-                    return C
+                    return O
                 },
                 setCollectiblesCategoryItemsViewed: function() {
-                    return O
+                    return C
                 }
             });
             var l = r("872717"),
@@ -177,7 +177,7 @@
                             error: t
                         }), new n.APIError(t)
                     }
-                }, C = async (e, t) => {
+                }, O = async (e, t) => {
                     try {
                         let r = await l.default.get({
                             url: d.Endpoints.COLLECTIBLES_VALID_GIFT_RECIPIENT,
@@ -190,7 +190,7 @@
                     } catch (e) {
                         throw new n.APIError(e)
                     }
-                }, O = e => {
+                }, C = e => {
                     i.default.dispatch({
                         type: "COLLECTIBLES_CATEGORY_ITEMS_VIEWED",
                         ...e
@@ -331,52 +331,6 @@
                     d = u, c = !1, l = void 0, i = void 0, o = void 0
                 }
             })
-        },
-        805172: function(e, t, r) {
-            "use strict";
-            r.r(t), r.d(t, {
-                default: function() {
-                    return o
-                }
-            });
-            var l = r("862205");
-            let i = (0, l.createExperiment)({
-                kind: "user",
-                id: "2023-10_collectibles_shop_for_all",
-                label: "Collectibles Shop For All",
-                defaultConfig: {
-                    shopForAllEnabled: !1,
-                    marketingEnabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enables Collectibles Shop For All",
-                    config: {
-                        shopForAllEnabled: !0,
-                        marketingEnabled: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "Enables Collectibles Shop For All with in-app DCF marketing",
-                    config: {
-                        shopForAllEnabled: !0,
-                        marketingEnabled: !0
-                    }
-                }]
-            });
-            var o = e => {
-                let {
-                    location: t,
-                    autoTrackExposure: r = !0,
-                    trackExposureOptions: l = {}
-                } = e;
-                return i.useExperiment({
-                    location: t
-                }, {
-                    autoTrackExposure: r,
-                    trackExposureOptions: l
-                })
-            }
         },
         216719: function(e, t, r) {
             "use strict";
@@ -639,27 +593,27 @@
                 P = r("685665"),
                 T = r("462274"),
                 _ = r("618017"),
-                C = r("190045"),
-                O = r("335031"),
+                O = r("190045"),
+                C = r("335031"),
                 S = r("252063"),
-                h = r("38766"),
-                L = r("845579"),
-                I = r("271938"),
+                L = r("38766"),
+                I = r("845579"),
+                h = r("271938"),
                 y = r("42203"),
-                m = r("305961"),
-                U = r("18494"),
+                U = r("305961"),
+                m = r("18494"),
                 A = r("697218"),
                 v = r("471671"),
                 g = r("275623"),
                 R = r("945330"),
                 N = r("474571"),
-                b = r("216422"),
-                B = r("987772"),
+                B = r("216422"),
+                b = r("987772"),
                 M = r("956089"),
                 D = r("599110"),
                 w = r("315102"),
-                F = r("719923"),
-                H = r("713135"),
+                H = r("719923"),
+                F = r("713135"),
                 k = r("581295"),
                 x = r("878569"),
                 G = r("236100"),
@@ -693,7 +647,7 @@
                     onClick: i
                 } = e, s = (0, d.useStateFromStores)([A.default], () => {
                     let e = A.default.getCurrentUser();
-                    return F.default.canUsePremiumProfileCustomization(e)
+                    return H.default.canUsePremiumProfileCustomization(e)
                 }), u = n.useRef(!1), {
                     analyticsLocations: c
                 } = (0, P.default)(p.default.BADGE);
@@ -745,7 +699,7 @@
                         }),
                         children: (0, o.jsx)(M.TextBadge, {
                             color: "rgba(32, 34, 37, 0.8)",
-                            text: (0, o.jsx)(b.default, {
+                            text: (0, o.jsx)(B.default, {
                                 width: 16,
                                 height: 16,
                                 className: Y.premiumIcon
@@ -762,7 +716,7 @@
                     profileLabel: l,
                     icon: i,
                     ...n
-                } = e, s = X[r], a = "pencil" === i ? B.default : N.default;
+                } = e, s = X[r], a = "pencil" === i ? b.default : N.default;
                 return (0, o.jsx)(f.Clickable, {
                     ...n,
                     "aria-label": l,
@@ -789,14 +743,14 @@
                     guildId: P,
                     profileType: A = j.UserProfileTypes.POPOUT,
                     isHovering: N,
-                    animateOnHover: b,
-                    allowEdit: B = !0,
+                    animateOnHover: B,
+                    allowEdit: b = !0,
                     showPremiumBadgeUpsell: M = !0,
                     hasProfileEffect: D = !1
-                } = e, [X, Z] = n.useState((null == s ? void 0 : s.banner) == null ? 2 : 0), J = (0, d.useStateFromStores)([m.default], () => m.default.getGuild(P)), Q = (0, d.useStateFromStores)([I.default], () => I.default.getId()), $ = Q === i.id && B || i.isClyde() && null != J && (0, _.canEditClydeAIProfile)(J), ee = F.default.isPremiumAtLeast(null == s ? void 0 : s.premiumType, z.PremiumTypes.TIER_2), [et, er] = n.useState(!1), el = (0, d.useStateFromStores)([v.default], () => v.default.isFocused()), ei = L.GifAutoPlay.getSetting(), eo = (0, f.useToken)(c.default.unsafe_rawColors.PRIMARY_800).hex(), en = (0, f.getAvatarSize)(f.AvatarSizes.SIZE_80), es = (0, u.hex2int)((0, T.default)(i.getAvatarURL(P, en), eo, !1)), ea = (0, O.default)(null !== (t = null == s ? void 0 : s.primaryColor) && void 0 !== t ? t : es).hsl, eu = (0, x.getUserBannerSize)(A), ed = null != E ? E : null == s ? void 0 : s.getBannerURL({
+                } = e, [X, Z] = n.useState((null == s ? void 0 : s.banner) == null ? 2 : 0), J = (0, d.useStateFromStores)([U.default], () => U.default.getGuild(P)), Q = (0, d.useStateFromStores)([h.default], () => h.default.getId()), $ = Q === i.id && b || i.isClyde() && null != J && (0, _.canEditClydeAIProfile)(J), ee = H.default.isPremiumAtLeast(null == s ? void 0 : s.premiumType, z.PremiumTypes.TIER_2), [et, er] = n.useState(!1), el = (0, d.useStateFromStores)([v.default], () => v.default.isFocused()), ei = I.GifAutoPlay.getSetting(), eo = (0, f.useToken)(c.default.unsafe_rawColors.PRIMARY_800).hex(), en = (0, f.getAvatarSize)(f.AvatarSizes.SIZE_80), es = (0, u.hex2int)((0, T.default)(i.getAvatarURL(P, en), eo, !1)), ea = (0, C.default)(null !== (t = null == s ? void 0 : s.primaryColor) && void 0 !== t ? t : es).hsl, eu = (0, x.getUserBannerSize)(A), ed = null != E ? E : null == s ? void 0 : s.getBannerURL({
                     size: eu,
-                    canAnimate: b || !ei ? et : el
-                }), ec = null != ed, ef = (0, d.useStateFromStores)([H.default], () => H.default.getUserProfile(i.id)), eE = y.default.getChannel(U.default.getChannelId()), {
+                    canAnimate: B || !ei ? et : el
+                }), ec = null != ed, ef = (0, d.useStateFromStores)([F.default], () => F.default.getUserProfile(i.id)), eE = y.default.getChannel(m.default.getChannelId()), {
                     appsInGDMEnabled: ep,
                     availableApplications: eP
                 } = (0, S.usePrivateChannelIntegrationState)({
@@ -818,7 +772,7 @@
                     let t = new Image;
                     t.src = e
                 }, [ei, ee, E, s, eu]);
-                let eC = (0, h.default)({
+                let eO = (0, L.default)({
                     analyticsLocation: {
                         page: W.AnalyticsPages.USER_POPOUT,
                         section: W.AnalyticsSections.PROFILE_POPOUT
@@ -852,7 +806,7 @@
                             profileLabel: V.default.Messages.CLYDE_SETTINGS,
                             icon: "gear",
                             onClick: () => {
-                                null == p || p(), (0, C.default)(J.id)
+                                null == p || p(), (0, O.default)(J.id)
                             }
                         }) : null == J ? null : (0, o.jsx)(f.Popout, {
                             spacing: 6,
@@ -880,7 +834,7 @@
                             profileLabel: V.default.Messages.EDIT_PROFILE,
                             icon: "pencil",
                             onClick: () => {
-                                null == p || p(), eC()
+                                null == p || p(), eO()
                             }
                         }) : (() => {
                             let e = M && ec && A !== j.UserProfileTypes.SETTINGS;
@@ -943,9 +897,9 @@
                     isPremium: P,
                     hasThemeColors: T,
                     hasBanner: _,
-                    forProfileEffectModal: C,
-                    hasProfileEffect: O = !1
-                } = e, S = p[r], h = (0, a.useUID)(), L = function(e) {
+                    forProfileEffectModal: O,
+                    hasProfileEffect: C = !1
+                } = e, S = p[r], L = (0, a.useUID)(), I = function(e) {
                     let {
                         profileType: t,
                         avatarSize: r,
@@ -958,11 +912,11 @@
                     let T = (0, s.getDecorationSizeForAvatarSize)(r),
                         {
                             size: _,
-                            stroke: C
+                            stroke: O
                         } = (0, n.getAvatarSpecs)(r),
-                        O = {
+                        C = {
                             avatarSize: _,
-                            avatarBorderSize: C,
+                            avatarBorderSize: O,
                             avatarDecorationSize: T,
                             avatarDecorationBorderSize: P,
                             avatarDecorationOffsetY: -(T + 2 * P) / 2,
@@ -978,20 +932,20 @@
                     return (0, i.match)(t).with(c.UserProfileTypes.POPOUT, () => {
                         let e = E ? (0, u.cssValueToNumber)(o.default.USER_PROFILE_THEMED_CONTAINER_USER_PROFILE_THEMED_PADDING) : 0;
                         return {
-                            ...O,
+                            ...C,
                             bannerWidth: (0, u.cssValueToNumber)(o.default.USER_PROFILE_THEMED_CONTAINER_USER_POPOUT_WIDTH),
                             offsetX: 16 - e,
                             offsetY: 4 + e,
                             avatarDecorationOffsetX: 4
                         }
                     }).with(c.UserProfileTypes.MODAL, () => ({
-                        ...O,
+                        ...C,
                         bannerWidth: (0, d.getUserBannerSize)(c.UserProfileTypes.MODAL),
                         offsetX: 14,
                         offsetY: 5,
                         avatarDecorationOffsetX: 2
                     })).with(c.UserProfileTypes.SETTINGS, () => ({
-                        ...O,
+                        ...C,
                         bannerWidth: 660,
                         offsetX: 16,
                         offsetY: -22,
@@ -999,20 +953,20 @@
                     })).with(c.UserProfileTypes.PANEL, () => {
                         let e = (0, u.cssValueToNumber)(o.default.USER_PROFILE_THEMED_CONTAINER_USER_PROFILE_THEMED_PADDING);
                         return {
-                            ...O,
+                            ...C,
                             bannerWidth: (0, u.cssValueToNumber)(o.default.USER_PROFILE_THEMED_CONTAINER_USER_POPOUT_WIDTH),
                             offsetX: 16 - e,
                             offsetY: 4 + e,
                             avatarDecorationOffsetX: 4
                         }
                     }).with(c.UserProfileTypes.POMELO_POPOUT, () => ({
-                        ...O,
+                        ...C,
                         bannerWidth: (0, d.getUserBannerSize)(c.UserProfileTypes.POMELO_POPOUT),
                         offsetX: 20,
                         offsetY: -20,
                         avatarDecorationOffsetX: 10
                     })).with(c.UserProfileTypes.CANCEL_MODAL, () => ({
-                        ...O,
+                        ...C,
                         bannerWidth: (0, d.getUserBannerSize)(c.UserProfileTypes.CANCEL_MODAL),
                         offsetX: 8,
                         offsetY: 2,
@@ -1024,20 +978,20 @@
                     hasBanner: _,
                     isPremium: P,
                     hasThemeColors: T,
-                    hasProfileEffect: O
+                    hasProfileEffect: C
                 });
-                C && (L.bannerWidth = (0, u.cssValueToNumber)(o.default.USER_PROFILE_THEMED_CONTAINER_PROFILE_EFFECTS_USER_POPOUT_WIDTH));
-                let I = L.avatarSize / 2 + L.avatarBorderSize,
-                    y = L.bannerHeight - L.offsetY;
+                O && (I.bannerWidth = (0, u.cssValueToNumber)(o.default.USER_PROFILE_THEMED_CONTAINER_PROFILE_EFFECTS_USER_POPOUT_WIDTH));
+                let h = I.avatarSize / 2 + I.avatarBorderSize,
+                    y = I.bannerHeight - I.offsetY;
                 return (0, l.jsxs)("svg", {
                     className: E.bannerSVGWrapper,
-                    viewBox: "0 0 ".concat(L.bannerWidth, " ").concat(L.bannerHeight),
+                    viewBox: "0 0 ".concat(I.bannerWidth, " ").concat(I.bannerHeight),
                     style: {
-                        minWidth: L.bannerWidth,
-                        minHeight: L.bannerHeight
+                        minWidth: I.bannerWidth,
+                        minHeight: I.bannerHeight
                     },
                     children: [(0, l.jsxs)("mask", {
-                        id: h,
+                        id: L,
                         children: [(0, l.jsx)("rect", {
                             fill: "white",
                             x: "0",
@@ -1046,9 +1000,9 @@
                             height: "100%"
                         }), (0, l.jsx)("circle", {
                             fill: "black",
-                            cx: L.offsetX + I,
+                            cx: I.offsetX + h,
                             cy: y,
-                            r: I
+                            r: h
                         })]
                     }), (0, l.jsx)("foreignObject", {
                         x: "0",
@@ -1056,7 +1010,7 @@
                         width: "100%",
                         height: "100%",
                         overflow: "visible",
-                        mask: "url(#".concat(h, ")"),
+                        mask: "url(#".concat(L, ")"),
                         children: t
                     })]
                 })
@@ -1176,25 +1130,25 @@
                     profileType: P,
                     className: T,
                     pendingThemeColors: _,
-                    pendingProfileEffectId: C,
-                    useDefaultClientTheme: O,
+                    pendingProfileEffectId: O,
+                    useDefaultClientTheme: C,
                     children: S,
-                    forceShowPremium: h = !1,
-                    showOutOfBoundaryComponents: L = !1
-                } = e, I = i.useRef(null), y = (0, a.default)(o.id, p), {
-                    profileTheme: m
+                    forceShowPremium: L = !1,
+                    showOutOfBoundaryComponents: I = !1
+                } = e, h = i.useRef(null), y = (0, a.default)(o.id, p), {
+                    profileTheme: U
                 } = (0, u.default)(o, y, {
-                    themeElementRef: I,
+                    themeElementRef: h,
                     pendingThemeColors: _,
-                    isPreview: h,
-                    useDefaultClientTheme: O
-                }), U = (null == y ? void 0 : y.canEditThemes) || h, A = i.useMemo(() => ({
+                    isPreview: L,
+                    useDefaultClientTheme: C
+                }), m = (null == y ? void 0 : y.canEditThemes) || L, A = i.useMemo(() => ({
                     profileType: P,
-                    profileTheme: m
-                }), [P, m]);
+                    profileTheme: U
+                }), [P, U]);
                 return (0, l.jsx)("div", {
-                    ref: I,
-                    className: n((t = P, (0, s.match)(t).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutOuter).with(d.UserProfileTypes.MODAL, () => f.userProfileModalOuter).with(d.UserProfileTypes.PANEL, () => f.userPanelOuter).with(d.UserProfileTypes.CARD, () => f.userCardOuter).exhaustive()), U ? f.userProfileOuterThemed : f.userProfileOuterUnthemed, c.profileColors, L ? f.showOutOfBoundaryComponents : void 0, "theme-".concat(m), T),
+                    ref: h,
+                    className: n((t = P, (0, s.match)(t).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutOuter).with(d.UserProfileTypes.MODAL, () => f.userProfileModalOuter).with(d.UserProfileTypes.PANEL, () => f.userPanelOuter).with(d.UserProfileTypes.CARD, () => f.userCardOuter).exhaustive()), m ? f.userProfileOuterThemed : f.userProfileOuterUnthemed, c.profileColors, I ? f.showOutOfBoundaryComponents : void 0, "theme-".concat(U), T),
                     children: (0, l.jsx)("div", {
                         className: n((r = P, (0, s.match)(r).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => f.userPopoutInner).with(d.UserProfileTypes.MODAL, () => f.userProfileModalInner).with(d.UserProfileTypes.PANEL, () => f.userPanelInner).with(d.UserProfileTypes.CARD, () => f.userCardInner).exhaustive()), function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
@@ -1212,7 +1166,7 @@
                             }, () => f.userProfileInnerThemedWithBanner).with({
                                 canUsePremiumProfileCustomization: !0
                             }, () => f.userProfileInnerThemedPremiumWithoutBanner).otherwise(() => f.userProfileInnerThemedNonPremium)
-                        }((null == y ? void 0 : y.canUsePremiumProfileCustomization) || h, null !== C && ((null == y ? void 0 : y.banner) != null || void 0 !== C), P)),
+                        }((null == y ? void 0 : y.canUsePremiumProfileCustomization) || L, null !== O && ((null == y ? void 0 : y.banner) != null || void 0 !== O), P)),
                         children: (0, l.jsx)(E.Provider, {
                             value: A,
                             children: S
@@ -1320,22 +1274,22 @@
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, [P, T] = (0, u.default)(e, t, {
                     pendingThemeColors: f,
                     isPreview: E
-                }), [_, C, O] = (0, o.useStateFromStoresArray)([s.default], () => [s.default.desaturateUserColors, s.default.saturation, s.default.syncProfileThemeWithUserTheme]), S = (0, n.default)(), h = l.useCallback(() => O || p ? S : (0, a.getProfileTheme)(P), [p, O, S, P]), [L, I] = l.useState(h()), y = (0, a.useProfileThemeValues)(L), m = (0, a.useDividerColor)(L, P), U = (0, a.useMessageInputBorderColor)(L, T), A = l.useCallback((e, t) => (0, i.int2hsl)(e, _, null, t), [_]);
+                }), [_, O, C] = (0, o.useStateFromStoresArray)([s.default], () => [s.default.desaturateUserColors, s.default.saturation, s.default.syncProfileThemeWithUserTheme]), S = (0, n.default)(), L = l.useCallback(() => C || p ? S : (0, a.getProfileTheme)(P), [p, C, S, P]), [I, h] = l.useState(L()), y = (0, a.useProfileThemeValues)(I), U = (0, a.useDividerColor)(I, P), m = (0, a.useMessageInputBorderColor)(I, T), A = l.useCallback((e, t) => (0, i.int2hsl)(e, _, null, t), [_]);
                 l.useEffect(() => {
-                    I(h())
-                }, [P, O, S, p, h]);
-                let v = (0, a.useAvatarBorderColor)(L, P, O),
-                    g = null != v ? (0, i.int2hsl)(v, !1, _ ? C : null) : null,
+                    h(L())
+                }, [P, C, S, p, L]);
+                let v = (0, a.useAvatarBorderColor)(I, P, C),
+                    g = null != v ? (0, i.int2hsl)(v, !1, _ ? O : null) : null,
                     R = e => d.forEach(t => {
                         e.style.removeProperty(t)
                     });
                 return l.useEffect(() => {
-                    if (null != P && null != T && null != L && null != v && null != m && null != U) {
-                        let e = O && L !== S ? null == y ? void 0 : y.overlaySyncedWithUserTheme : null == y ? void 0 : y.overlay;
-                        c(r, "--profile-gradient-primary-color", A(P)), c(r, "--profile-gradient-secondary-color", A(T)), c(r, "--profile-gradient-button-color", A((0, a.calculateButtonColor)(P))), c(r, "--profile-gradient-overlay-color", e), c(r, "--profile-body-background-color", null == y ? void 0 : y.sectionBox), c(r, "--profile-body-background-hover", null == y ? void 0 : y.profileBodyBackgroundHover), c(r, "--profile-body-divider-color", A(m, null == y ? void 0 : y.dividerOpacity)), c(r, "--profile-avatar-border-color", A(v)), c(r, "--profile-message-input-border-color", A(U)), c(r, "--profile-note-background-color", null == y ? void 0 : y.noteBackgroundColor), c(r, "--profile-role-pill-background-color", null == y ? void 0 : y.rolePillBackgroundColor), c(r, "--profile-role-pill-border-color", null == y ? void 0 : y.rolePillBorderColor)
+                    if (null != P && null != T && null != I && null != v && null != U && null != m) {
+                        let e = C && I !== S ? null == y ? void 0 : y.overlaySyncedWithUserTheme : null == y ? void 0 : y.overlay;
+                        c(r, "--profile-gradient-primary-color", A(P)), c(r, "--profile-gradient-secondary-color", A(T)), c(r, "--profile-gradient-button-color", A((0, a.calculateButtonColor)(P))), c(r, "--profile-gradient-overlay-color", e), c(r, "--profile-body-background-color", null == y ? void 0 : y.sectionBox), c(r, "--profile-body-background-hover", null == y ? void 0 : y.profileBodyBackgroundHover), c(r, "--profile-body-divider-color", A(U, null == y ? void 0 : y.dividerOpacity)), c(r, "--profile-avatar-border-color", A(v)), c(r, "--profile-message-input-border-color", A(m)), c(r, "--profile-note-background-color", null == y ? void 0 : y.noteBackgroundColor), c(r, "--profile-role-pill-background-color", null == y ? void 0 : y.rolePillBackgroundColor), c(r, "--profile-role-pill-border-color", null == y ? void 0 : y.rolePillBorderColor)
                     } else(null == r ? void 0 : r.current) != null && R(null == r ? void 0 : r.current)
-                }, [P, T, v, L, S, r, A, O, m, null == y ? void 0 : y.overlaySyncedWithUserTheme, null == y ? void 0 : y.overlay, null == y ? void 0 : y.sectionBox, null == y ? void 0 : y.profileBodyBackgroundHover, null == y ? void 0 : y.dividerOpacity, null == y ? void 0 : y.noteBackgroundColor, null == y ? void 0 : y.rolePillBackgroundColor, null == y ? void 0 : y.rolePillBorderColor, U]), {
-                    profileTheme: null != L ? L : S,
+                }, [P, T, v, I, S, r, A, C, U, null == y ? void 0 : y.overlaySyncedWithUserTheme, null == y ? void 0 : y.overlay, null == y ? void 0 : y.sectionBox, null == y ? void 0 : y.profileBodyBackgroundHover, null == y ? void 0 : y.dividerOpacity, null == y ? void 0 : y.noteBackgroundColor, null == y ? void 0 : y.rolePillBackgroundColor, null == y ? void 0 : y.rolePillBorderColor, m]), {
+                    profileTheme: null != I ? I : S,
                     primaryProfileColor: P,
                     avatarBorderColor: g
                 }
@@ -1343,4 +1297,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17744.5384139f6fe0e91e2992.js.map
+//# sourceMappingURL=83630.ac12c4ee23644db27d50.js.map
