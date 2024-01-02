@@ -4,7 +4,7 @@
             "use strict";
             r.r(e), r.d(e, {
                 default: function() {
-                    return s
+                    return E
                 }
             }), r("222007");
             var n = r("884691"),
@@ -13,14 +13,14 @@
                 u = r("91653"),
                 l = r("697218"),
                 a = r("471671"),
-                c = r("315102"),
-                T = r("53708"),
-                s = t => {
+                T = r("315102"),
+                c = r("53708"),
+                E = t => {
                     let {
                         user: e,
                         size: r,
-                        animateOnHover: s = !1,
-                        showPending: E = !1,
+                        animateOnHover: E = !1,
+                        showPending: s = !1,
                         showTryItOut: _ = !1,
                         avatarDecorationOverride: d
                     } = t, [S, C] = n.useState(!1), I = (0, i.useStateFromStores)([o.default], () => o.default.useReducedMotion), A = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), f = (0, i.useStateFromStores)([l.default], () => {
@@ -33,17 +33,17 @@
                         pendingAvatarDecoration: O
                     } = (0, u.default)({
                         isTryItOut: _
-                    }), N = A && (S || !I && !s), R = E && void 0 !== O && void 0 !== f && f === (null == e ? void 0 : e.id) ? O : null != v ? v : null == e ? void 0 : e.avatarDecoration, g = n.useMemo(() => (0, c.getAvatarDecorationURL)({
+                    }), N = A && (S || !I && !E), R = s && void 0 !== O && void 0 !== f && f === (null == e ? void 0 : e.id) ? O : null != v ? v : null == e ? void 0 : e.avatarDecoration, P = n.useMemo(() => (0, T.getAvatarDecorationURL)({
                         avatarDecoration: void 0 !== d ? d : R,
                         canAnimate: N,
                         size: r
-                    }), [R, N, r, d]), P = n.useCallback(() => C(!0), []), U = n.useCallback(() => C(!1), []);
+                    }), [R, N, r, d]), g = n.useCallback(() => C(!0), []), U = n.useCallback(() => C(!1), []);
                     return {
-                        avatarPlaceholderSrc: T,
-                        avatarDecorationSrc: g,
+                        avatarPlaceholderSrc: c,
+                        avatarDecorationSrc: P,
                         isAvatarDecorationAnimating: N,
                         eventHandlers: {
-                            onMouseEnter: P,
+                            onMouseEnter: g,
                             onMouseLeave: U
                         }
                     }
@@ -54,24 +54,21 @@
             let n, i;
             r.r(e), r.d(e, {
                 default: function() {
-                    return A
+                    return S
                 }
-            }), r("222007"), r("808653"), r("424973");
+            }), r("222007");
             var o = r("917351"),
-                u = r("635058"),
-                l = r("446674"),
-                a = r("913144"),
-                c = r("491232");
+                u = r("446674"),
+                l = r("913144"),
+                a = r("491232");
             let T = new Map,
-                s = new Map,
-                E = new Map,
-                _ = T,
-                d = s,
-                S = E,
-                C = !1;
-            class I extends l.default.Store {
+                c = new Map,
+                E = T,
+                s = c,
+                _ = !1;
+            class d extends u.default.Store {
                 get isFetching() {
-                    return C
+                    return _
                 }
                 get error() {
                     return n
@@ -80,66 +77,50 @@
                     return i
                 }
                 get categories() {
-                    return _
+                    return E
                 }
                 get products() {
-                    return d
-                }
-                get productsByItemTypeAndCategory() {
-                    return S
+                    return s
                 }
                 getCategory(t) {
-                    return null != t ? _.get(t) : void 0
+                    return null != t ? E.get(t) : void 0
                 }
                 getProduct(t) {
-                    return null != t ? d.get(t) : void 0
+                    return null != t ? s.get(t) : void 0
                 }
                 getCategoryForProduct(t) {
                     let e = this.getProduct(t);
                     return this.getCategory(null == e ? void 0 : e.categorySkuId)
                 }
-                getProductsByItemType(t) {
-                    return null != t && u.CollectiblesCategorySkuIdSets.ALL.has(t) ? S.get(t) : void 0
-                }
             }
-            I.displayName = "CollectiblesCategoryStore";
-            var A = new I(a.default, {
+            d.displayName = "CollectiblesCategoryStore";
+            var S = new d(l.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: t => {
-                    C = !0, n = void 0
+                    _ = !0, n = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: t => {
-                    0 === t.categories.length ? (_ = T, d = s, S = E) : !(0, o.isEqual)([..._.values()], t.categories) && (_ = new Map(t.categories.map(t => [t.skuId, t])), d = new Map((0, c.getProductsFromCategories)(_).map(t => [t.skuId, t])), t.categories.forEach(t => {
-                        let e = t.products.reduce((t, e) => {
-                            if (e.items.length > 0) {
-                                var r;
-                                let n = e.items[0].type;
-                                t[n] = null !== (r = t[n]) && void 0 !== r ? r : [], t[n].push(e)
-                            }
-                            return t
-                        }, {});
-                        S.set(t.skuId, e)
-                    })), i = Date.now(), C = !1, n = void 0
+                    0 === t.categories.length ? (E = T, s = c) : !(0, o.isEqual)([...E.values()], t.categories) && (E = new Map(t.categories.map(t => [t.skuId, t])), s = new Map((0, a.getProductsFromCategories)(E).map(t => [t.skuId, t]))), i = Date.now(), _ = !1, n = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: t => {
                     let {
                         error: e
                     } = t;
-                    _ = T, d = s, S = E, C = !1, n = e
+                    E = T, s = c, _ = !1, n = e
                 },
                 COLLECTIBLES_PRODUCT_FETCH: t => {
-                    C = !0, n = void 0
+                    _ = !0, n = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: t => {
-                    d.set(t.product.skuId, t.product), C = !1, n = void 0
+                    s.set(t.product.skuId, t.product), _ = !1, n = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: t => {
                     let {
                         error: e
                     } = t;
-                    C = !1, n = e
+                    _ = !1, n = e
                 },
                 LOGOUT: t => {
-                    _ = T, d = s, S = E, i = void 0, C = !1, n = void 0
+                    E = T, s = c, i = void 0, _ = !1, n = void 0
                 }
             })
         },
@@ -147,10 +128,10 @@
             "use strict";
             r.r(e), r.d(e, {
                 isPremiumCollectiblesProduct: function() {
-                    return s
+                    return E
                 },
                 isPremiumCollectiblesPurchase: function() {
-                    return E
+                    return s
                 },
                 getFormattedPriceForCollectiblesProduct: function() {
                     return _
@@ -180,10 +161,10 @@
                     return R
                 },
                 groupProfileEffects: function() {
-                    return g
+                    return P
                 },
                 isCollectiblesGiftCode: function() {
-                    return P
+                    return g
                 }
             }), r("222007"), r("808653");
             var n = r("917351"),
@@ -192,12 +173,12 @@
                 u = r("407063"),
                 l = r("153160"),
                 a = r("730297"),
-                c = r("806410"),
-                T = r("49111");
-            let s = t => (null == t ? void 0 : t.categorySkuId) === i.CollectiblesCategorySkuId.DISXCORE,
-                E = t => (null == t ? void 0 : t.purchaseType) === T.EntitlementTypes.PREMIUM_PURCHASE,
+                T = r("806410"),
+                c = r("49111");
+            let E = t => (null == t ? void 0 : t.categorySkuId) === i.CollectiblesCategorySkuId.DISXCORE,
+                s = t => (null == t ? void 0 : t.purchaseType) === c.EntitlementTypes.PREMIUM_PURCHASE,
                 _ = (t, e) => {
-                    let r = d(t, e ? T.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : T.PriceSetAssignmentPurchaseTypes.DEFAULT);
+                    let r = d(t, e ? c.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : c.PriceSetAssignmentPurchaseTypes.DEFAULT);
                     return null == r ? "" : (0, l.formatPrice)(null == r ? void 0 : r.amount, null == r ? void 0 : r.currency)
                 },
                 d = (t, e) => {
@@ -207,7 +188,7 @@
                 },
                 S = t => {
                     var e;
-                    return (null === (e = d(t, T.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === e ? void 0 : e.amount) === 0
+                    return (null === (e = d(t, c.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === e ? void 0 : e.amount) === 0
                 },
                 C = t => {
                     let e = (0, n.flatMap)([...t.values()], "products");
@@ -219,7 +200,7 @@
                         return (0, n.uniqBy)(e, "id")
                     }
                     if (e === o.CollectiblesItemType.PROFILE_EFFECT) {
-                        let e = (0, n.flatMap)([...t.values()], "items").filter(c.isProfileEffectRecord);
+                        let e = (0, n.flatMap)([...t.values()], "items").filter(T.isProfileEffectRecord);
                         return (0, n.uniqBy)(e, "id")
                     }
                 },
@@ -230,7 +211,7 @@
                         return (0, n.uniqBy)(t, "id")
                     }
                     if (e === o.CollectiblesItemType.PROFILE_EFFECT) {
-                        let t = (0, n.flatMap)(r, "items").filter(c.isProfileEffectRecord);
+                        let t = (0, n.flatMap)(r, "items").filter(T.isProfileEffectRecord);
                         return (0, n.uniqBy)(t, "id")
                     }
                 },
@@ -242,13 +223,13 @@
                         CDN_HOST: n,
                         API_ENDPOINT: i
                     } = window.GLOBAL_ENV, o = (0, u.getBestMediaProxySize)(e.size * (0, u.getDevicePixelRatio)()), l = null !== (r = null == e ? void 0 : e.format) && void 0 !== r ? r : "png";
-                    if (null != n) return "".concat(location.protocol, "//").concat(n, "/app-assets/").concat(T.COLLECTIBLES_APPLICATION_ID, "/").concat(t, ".").concat(l, "?size=").concat(o);
-                    let a = T.Endpoints.APPLICATION_ASSET(T.COLLECTIBLES_APPLICATION_ID, t, l);
+                    if (null != n) return "".concat(location.protocol, "//").concat(n, "/app-assets/").concat(c.COLLECTIBLES_APPLICATION_ID, "/").concat(t, ".").concat(l, "?size=").concat(o);
+                    let a = c.Endpoints.APPLICATION_ASSET(c.COLLECTIBLES_APPLICATION_ID, t, l);
                     return "".concat(location.protocol).concat(i).concat(a, "?size=").concat(o)
                 },
                 N = t => I(t, o.CollectiblesItemType.PROFILE_EFFECT),
                 R = t => A(t, o.CollectiblesItemType.PROFILE_EFFECT),
-                g = (t, e) => {
+                P = (t, e) => {
                     let r = N(e),
                         n = R(t).filter(t => {
                             let {
@@ -261,7 +242,7 @@
                         shopPreviews: n
                     }
                 },
-                P = t => t.applicationId === T.COLLECTIBLES_APPLICATION_ID,
+                g = t => t.applicationId === c.COLLECTIBLES_APPLICATION_ID,
                 U = (t, e, r) => (t[e] = r, t);
             ["1146328960951668776", "1146328961417224193", "1139323093991575696", "1139323099687436419", "1139323092645183591", "1139323093551165533", "1139323101881061466", "1139323100568244355", "1139323101008642101", "1139323099251232828", "1139323095744790568", "1139323096180994169"].reduce(U, {}), ["1174460780842856588", "1174459546748600481", "1174459480348565554", "1174459415924064376", "1154896005045694555", "1144307957425778779", "1144308439720394944", "1144307629225672846", "1144308196723408958", "1144046002110738634", "1144305233707671573", "1144307257807491094", "1144056139584127058", "1144006094134456352", "1144057023726628945", "1144003752978829455", "1144056631374647458", "1144057486203158560", "1144048390594908212", "1144048977138946230", "1144057737475534889", "1144049603109470370", "1144057249392771145", "1144049316009353338", "1144049924397334651"].reduce(U, {})
         },
@@ -269,7 +250,7 @@
             "use strict";
             r.r(e), r.d(e, {
                 default: function() {
-                    return E
+                    return s
                 }
             }), r("794252");
             var n = r("884691"),
@@ -278,19 +259,19 @@
                 u = r("65597"),
                 l = r("599110"),
                 a = r("853987"),
-                c = r("491232"),
-                T = r("49111"),
-                s = r("646718"),
-                E = t => {
+                T = r("491232"),
+                c = r("49111"),
+                E = r("646718"),
+                s = t => {
                     let e = (0, u.default)([a.default], () => a.default.products);
                     return (0, n.useCallback)(r => {
                         let {
                             type: n,
                             skuId: u
                         } = r, a = e.get(u);
-                        l.default.track(T.AnalyticEvents.PREMIUM_FEATURE_TRY_OUT, {
-                            feature_name: (0, i.match)(n).with(o.CollectiblesItemType.AVATAR_DECORATION, () => s.AnalyticsPremiumFeatureNames.AVATAR_DECORATION).with(o.CollectiblesItemType.PROFILE_EFFECT, () => s.AnalyticsPremiumFeatureNames.PROFILE_EFFECT).otherwise(() => void 0),
-                            feature_tier: (0, c.isPremiumCollectiblesProduct)(a) ? s.AnalyticsPremiumFeatureTiers.FREE : s.AnalyticsPremiumFeatureTiers.PREMIUM_STANDARD,
+                        l.default.track(c.AnalyticEvents.PREMIUM_FEATURE_TRY_OUT, {
+                            feature_name: (0, i.match)(n).with(o.CollectiblesItemType.AVATAR_DECORATION, () => E.AnalyticsPremiumFeatureNames.AVATAR_DECORATION).with(o.CollectiblesItemType.PROFILE_EFFECT, () => E.AnalyticsPremiumFeatureNames.PROFILE_EFFECT).otherwise(() => void 0),
+                            feature_tier: (0, T.isPremiumCollectiblesProduct)(a) ? E.AnalyticsPremiumFeatureTiers.FREE : E.AnalyticsPremiumFeatureTiers.PREMIUM_STANDARD,
                             feature_selection: null == a ? void 0 : a.name,
                             location_stack: t
                         })
@@ -375,7 +356,7 @@
             "use strict";
             r.r(e), r.d(e, {
                 default: function() {
-                    return T
+                    return c
                 }
             });
             var n = r("884691"),
@@ -384,34 +365,34 @@
                 u = r("906932"),
                 l = r("790618"),
                 a = r("697218"),
-                c = r("783142"),
-                T = t => {
+                T = r("783142"),
+                c = t => {
                     let {
                         isTryItOut: e,
                         analyticsLocations: r
-                    } = t, T = (0, i.default)([a.default], () => a.default.getCurrentUser()), s = (0, o.default)(r), {
-                        pendingAvatar: E,
+                    } = t, c = (0, i.default)([a.default], () => a.default.getCurrentUser()), E = (0, o.default)(r), {
+                        pendingAvatar: s,
                         pendingAvatarDecoration: _
                     } = (0, i.useStateFromStoresObject)([l.default], () => ({
                         pendingAvatar: e ? l.default.getTryItOutAvatar() : l.default.getPendingAvatar(),
                         pendingAvatarDecoration: e ? l.default.getTryItOutAvatarDecoration() : l.default.getPendingAvatarDecoration()
-                    })), d = (0, n.useCallback)(t => (0, u.setNewPendingAvatar)(t, null == T ? void 0 : T.avatar), [null == T ? void 0 : T.avatar]), S = (0, n.useCallback)(t => {
-                        (0, u.setNewPendingAvatarDecoration)(t, null == T ? void 0 : T.avatarDecoration), null != t && s(t)
-                    }, [null == T ? void 0 : T.avatarDecoration, s]);
+                    })), d = (0, n.useCallback)(t => (0, u.setNewPendingAvatar)(t, null == c ? void 0 : c.avatar), [null == c ? void 0 : c.avatar]), S = (0, n.useCallback)(t => {
+                        (0, u.setNewPendingAvatarDecoration)(t, null == c ? void 0 : c.avatarDecoration), null != t && E(t)
+                    }, [null == c ? void 0 : c.avatarDecoration, E]);
                     return {
-                        pendingAvatar: E,
+                        pendingAvatar: s,
                         pendingAvatarDecoration: _,
-                        setPendingAvatar: e ? c.setTryItOutAvatar : d,
-                        setPendingAvatarDecoration: e ? c.setTryItOutAvatarDecoration : S
+                        setPendingAvatar: e ? T.setTryItOutAvatar : d,
+                        setPendingAvatarDecoration: e ? T.setTryItOutAvatarDecoration : S
                     }
                 }
         },
         790618: function(t, e, r) {
             "use strict";
-            let n, i, o, u, l, a, c, T, s, E, _, d, S, C;
+            let n, i, o, u, l, a, T, c, E, s, _, d, S, C;
             r.r(e), r.d(e, {
                 default: function() {
-                    return D
+                    return p
                 }
             });
             var I = r("265586"),
@@ -422,30 +403,30 @@
                 N = {},
                 R = !1;
 
-            function g() {
+            function P() {
                 O = v.FormStates.OPEN, N = {}
             }
 
-            function P() {
+            function g() {
                 O = v.FormStates.CLOSED, N = {}
             }
 
             function U() {
-                m(), L(), N = {}
-            }
-
-            function m() {
-                n = void 0, i = void 0, o = void 0, u = void 0
-            }
-
-            function L() {
-                l = void 0, a = void 0, c = void 0, T = void 0, s = void 0, u = void 0
+                F(), m(), N = {}
             }
 
             function F() {
-                _ = void 0, d = void 0, S = void 0, C = void 0, E = void 0
+                n = void 0, i = void 0, o = void 0, u = void 0
             }
-            class p extends A.default.Store {
+
+            function m() {
+                l = void 0, a = void 0, T = void 0, c = void 0, E = void 0, u = void 0
+            }
+
+            function L() {
+                _ = void 0, d = void 0, S = void 0, C = void 0, s = void 0
+            }
+            class D extends A.default.Store {
                 getFormState() {
                     return O
                 }
@@ -453,7 +434,7 @@
                     return N
                 }
                 showNotice() {
-                    return void 0 !== n || void 0 !== l || void 0 !== a || void 0 !== c || void 0 !== T || void 0 !== s || void 0 !== o || void 0 !== u || void 0 !== i
+                    return void 0 !== n || void 0 !== l || void 0 !== a || void 0 !== T || void 0 !== c || void 0 !== E || void 0 !== o || void 0 !== u || void 0 !== i
                 }
                 getPendingAvatar() {
                     return n
@@ -468,13 +449,13 @@
                     return a
                 }
                 getPendingPronouns() {
-                    return c
-                }
-                getPendingAccentColor() {
                     return T
                 }
+                getPendingAccentColor() {
+                    return c
+                }
                 getPendingThemeColors() {
-                    return s
+                    return E
                 }
                 getPendingAvatarDecoration() {
                     return o
@@ -487,16 +468,16 @@
                         pendingAvatar: n,
                         pendingBanner: l,
                         pendingBio: a,
-                        pendingPronouns: c,
-                        pendingAccentColor: T,
-                        pendingThemeColors: s,
+                        pendingPronouns: T,
+                        pendingAccentColor: c,
+                        pendingThemeColors: E,
                         pendingAvatarDecoration: o,
                         pendingProfileEffectId: u,
                         pendingGlobalName: i
                     }
                 }
                 getTryItOutThemeColors() {
-                    return E
+                    return s
                 }
                 getTryItOutAvatar() {
                     return _
@@ -512,7 +493,7 @@
                 }
                 getAllTryItOut() {
                     return {
-                        tryItOutThemeColors: E,
+                        tryItOutThemeColors: s,
                         tryItOutAvatar: _,
                         tryItOutAvatarDecoration: d,
                         tryItOutProfileEffectId: S,
@@ -523,20 +504,20 @@
                     return R
                 }
             }
-            p.displayName = "UserSettingsAccountStore";
-            var D = new p(f.default, {
-                USER_SETTINGS_ACCOUNT_INIT: g,
-                USER_SETTINGS_MODAL_INIT: g,
-                USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: g,
+            D.displayName = "UserSettingsAccountStore";
+            var p = new D(f.default, {
+                USER_SETTINGS_ACCOUNT_INIT: P,
+                USER_SETTINGS_MODAL_INIT: P,
+                USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: P,
                 USER_SETTINGS_MODAL_SET_SECTION: function(t) {
                     let {
                         section: e
                     } = t;
-                    return e === v.UserSettingsSections.ACCOUNT && g()
+                    return e === v.UserSettingsSections.ACCOUNT && P()
                 },
-                USER_SETTINGS_ACCOUNT_CLOSE: P,
+                USER_SETTINGS_ACCOUNT_CLOSE: g,
                 USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: function() {
-                    U(), F(), P()
+                    U(), L(), g()
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT: function() {
                     O = v.FormStates.SUBMITTING, N = {}
@@ -592,19 +573,19 @@
                     let {
                         pronouns: e
                     } = t;
-                    c = e
+                    T = e
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: function(t) {
                     let {
                         color: e
                     } = t;
-                    T = e
+                    c = e
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: function(t) {
                     let {
                         themeColors: e
                     } = t;
-                    s = e
+                    E = e
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: function(t) {
                     let {
@@ -634,15 +615,15 @@
                     let {
                         themeColors: e
                     } = t;
-                    E = e
+                    s = e
                 },
                 USER_SETTINGS_CLEAR_ERRORS: function() {
                     N = {}
                 },
-                USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: m,
-                USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: L,
+                USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: F,
+                USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: m,
                 USER_SETTINGS_RESET_ALL_PENDING: U,
-                USER_SETTINGS_RESET_ALL_TRY_IT_OUT: F,
+                USER_SETTINGS_RESET_ALL_TRY_IT_OUT: L,
                 USER_SETTINGS_RESET_PENDING_AVATAR_DECORATION: function() {
                     o = void 0
                 },
@@ -663,14 +644,8 @@
             r.r(e), r.d(e, {
                 CollectiblesCategorySkuId: function() {
                     return n
-                },
-                CollectiblesCategorySkuIdSets: function() {
-                    return o
                 }
-            }), r("222007"), (i = n || (n = {})).FANTASY = "1144003461608906824", i.ANIME = "1144302037593497701", i.BREAKFAST = "1144054000099012659", i.DISXCORE = "1144058340327047249", i.HALLOWEEN = "1157410718711304313", i.FALL = "1157406994873991284", i.WINTER = "1174459301239197856", i.MONSTERS = "1179493515038818325";
-            let o = {
-                ALL: new Set(["1144003461608906824", "1144054000099012659", "1144058340327047249", "1144302037593497701", "1157406994873991284", "1157410718711304313", "1174459301239197856", "1179493515038818325"])
-            }
+            }), r("222007"), (i = n || (n = {})).FANTASY = "1144003461608906824", i.ANIME = "1144302037593497701", i.BREAKFAST = "1144054000099012659", i.DISXCORE = "1144058340327047249", i.HALLOWEEN = "1157410718711304313", i.FALL = "1157406994873991284", i.WINTER = "1174459301239197856", i.MONSTERS = "1179493515038818325"
         },
         265586: function(t, e, r) {
             "use strict";
@@ -683,4 +658,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43870.ad436802f4e3ebc9b214.js.map
+//# sourceMappingURL=43870.65d0a96d11b5c7e21fa0.js.map

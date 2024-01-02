@@ -474,11 +474,12 @@
                         currency: l,
                         price: a,
                         prices: d,
-                        category_sku_id: c,
-                        ...f
+                        type: c,
+                        category_sku_id: f,
+                        ...E
                     } = t;
                     return new e({
-                        ...super.fromServer(f),
+                        ...super.fromServer(E),
                         currency: l,
                         price: a,
                         prices: null == (r = d) ? {} : Object.keys(r).reduce((e, t) => {
@@ -492,8 +493,9 @@
                                 paymentSourcePrices: {}
                             }, e
                         }, {}),
-                        categorySkuId: c,
-                        items: f.items.reduce((e, t) => (0, i.match)(t).with({
+                        type: c,
+                        categorySkuId: f,
+                        items: E.items.reduce((e, t) => (0, i.match)(t).with({
                             type: o.CollectiblesItemType.AVATAR_DECORATION
                         }, t => (e.push(s.default.fromServer(t)), e)).with({
                             type: o.CollectiblesItemType.PROFILE_EFFECT
@@ -501,7 +503,7 @@
                     })
                 }
                 constructor(e) {
-                    super(e), this.currency = e.currency, this.price = e.price, this.prices = e.prices, this.summary = e.summary, this.items = e.items, this.categorySkuId = e.categorySkuId
+                    super(e), this.currency = e.currency, this.price = e.price, this.prices = e.prices, this.summary = e.summary, this.type = e.type, this.items = e.items, this.categorySkuId = e.categorySkuId
                 }
             }
         },
@@ -1341,4 +1343,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17744.4690bcdfef03e80064c5.js.map
+//# sourceMappingURL=17744.5384139f6fe0e91e2992.js.map
