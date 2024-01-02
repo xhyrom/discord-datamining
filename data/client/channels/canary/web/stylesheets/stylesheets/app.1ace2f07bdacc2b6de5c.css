@@ -15184,12 +15184,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -124035,4 +124035,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.04f3c9eff4b2a69f3d33.css.map*/
+/*# sourceMappingURL=app.1ace2f07bdacc2b6de5c.css.map*/
