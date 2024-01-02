@@ -5681,7 +5681,6 @@
                 hiddenWumpus: "hiddenWumpus__3cb90",
                 hiddenWumpusEnabled: "hiddenWumpusEnabled__72e7a",
                 itemTypeTitle: "itemTypeTitle_ff8328",
-                itemTypeTitleContainer: "itemTypeTitleContainer__58a10",
                 itemTypeTitleForTallerCard: "itemTypeTitleForTallerCard__90049",
                 logo: "logo_b80583",
                 page: "page_be1421",
