@@ -599,15 +599,16 @@
             }
 
             function X(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(Y).length;
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(Y).length,
+                    n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                 return i(Y).keys().filter(e => A.IS_SEARCH_FILTER_TOKEN.test(e)).filter(e => null != Y[e].key).map(e => ({
                     token: e,
                     text: Y[e].key
                 })).filter(t => {
                     let {
-                        text: n
+                        text: r
                     } = t;
-                    return u(e.toLowerCase(), n)
+                    return n ? u(e.toLowerCase(), r) : r.startsWith(e.toLowerCase())
                 }).take(t).value()
             }
             var z = Y
@@ -1896,4 +1897,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59459.c62fad1bc6ff5888ed69.js.map
+//# sourceMappingURL=59459.056585b8ff9dab64dba6.js.map
