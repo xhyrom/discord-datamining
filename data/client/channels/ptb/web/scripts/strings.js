@@ -16,6 +16,9 @@
                 NOTIFICATION_MESSAGE_CREATE_GROUP_DM_ACTIVITY_LISTEN: "!!{user}!! invited the group to listen on Spotify",
                 NOTIFICATION_MESSAGE_CREATE_DM_ACTIVITY_LISTEN: "!!{user}!! invited you to listen on Spotify",
                 NOTIFICATION_DISMISS: "Dismiss notification",
+                NOTIFICATION_FRIEND_SUGGESTION_CONTACT_TITLE: "Your contact !!{contact}!! just joined Discord!",
+                NOTIFICATION_FRIEND_SUGGESTION_TITLE: "!!{contact}!! just joined Discord!",
+                NOTIFICATION_FRIEND_SUGGESTION_BODY: "Send them a friend request",
                 IOS_NOTIFICATION_SEE_FULL: "Tap to see full message.",
                 ERRORS_UNEXPECTED_CRASH: "Looks like Discord has crashed unexpectedly....",
                 ERRORS_ACTION_TO_TAKE: "We've tracked the error and will get right on it.",
@@ -18326,7 +18329,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256685", ", Version Hash: ").concat("9e5824cc92f177884b9b443f927a425d1ade0ebf")), t.default.setTags({
+            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256689", ", Version Hash: ").concat("7139fc54f5acf75adb1c0695f7098cf3d302ec40")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
         },
@@ -20799,8 +20802,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "256685", "256685"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256685")), _ = 0), _
+                let _ = parseInt((e = "256689", "256689"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256689")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37145,4 +37148,4 @@
         }
     }
 ]);
-//# sourceMappingURL=14907.0946ed55997221ed056e.js.map
+//# sourceMappingURL=14907.f5f3be43441e13e2cabd.js.map
