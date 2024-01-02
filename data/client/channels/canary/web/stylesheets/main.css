@@ -19443,8 +19443,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -46072,8 +46072,8 @@ html .progress__4ef76 {
 .errorState_b806b1 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -46135,7 +46135,7 @@ html .progress__4ef76 {
 
 .confirmChannelName_c49514 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -46143,7 +46143,7 @@ html .progress__4ef76 {
 .lastActiveTimestamp__56cd7 {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -124033,4 +124033,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.93f93448982707ca2505.css.map*/
+/*# sourceMappingURL=app.6ca7feedafce1277f1e6.css.map*/
