@@ -29,8 +29,8 @@
                 D = l("383173"),
                 G = l("923959"),
                 U = l("305961"),
-                y = l("18494"),
-                S = l("162771"),
+                S = l("18494"),
+                y = l("162771"),
                 h = l("697218"),
                 A = l("599110"),
                 R = l("991170"),
@@ -80,9 +80,9 @@
                     loadId: E
                 }));
                 try {
-                    let t = S.default.getGuildId(),
+                    let t = y.default.getGuildId(),
                         d = e === t && null != U.default.getGuild(e),
-                        a = d ? y.default.getChannelId(e) : null,
+                        a = d ? S.default.getChannelId(e) : null,
                         o = await r.default.put({
                             url: O.Endpoints.GUILD_JOIN(e),
                             query: {
@@ -152,26 +152,6 @@
                 deleteGuild: M,
                 selectGuild(e) {
                     (0, u.stopLurking)(e)
-                },
-                async addGuild(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-                        l = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-                        d = arguments.length > 3 ? arguments[3] : void 0;
-                    try {
-                        let a = await r.default.post({
-                            url: O.Endpoints.GUILDS,
-                            body: {
-                                name: e,
-                                icon: t,
-                                channels: l,
-                                system_channel_id: d
-                            },
-                            oldFormErrors: !0
-                        });
-                        return a.body
-                    } catch (e) {
-                        throw new o.default(e)
-                    }
                 },
                 createGuild(e) {
                     n.default.dispatch({
@@ -867,4 +847,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18814.1d6a80b11d936b41c5d9.js.map
+//# sourceMappingURL=18814.2887004806e3f2dcb541.js.map
