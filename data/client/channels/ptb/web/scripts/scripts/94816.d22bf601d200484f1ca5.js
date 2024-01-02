@@ -1632,9 +1632,9 @@
                     f = null != u.guild_id ? D.computeAllowedForUser(e.permissions, u.guild_id, d, c, p) : null,
                     m = null != u.guild_id ? D.computeAllowedForChannel(e.permissions, u, u.guild_id) : null,
                     I = [];
-                for (let e of t) {
-                    let t = D.hasAccess(e, r, f, m);
-                    t === D.HasAccessResult.ALLOWED && I.push(e)
+                for (let n of t) {
+                    let t = D.hasAccess(n, r, f, m, e.botId);
+                    t === D.HasAccessResult.ALLOWED && I.push(n)
                 }
                 return 0 !== (i = o !== O.ScoreMethod.NONE && null != l && null != a ? function(e, t, n, i, l) {
                     let a;
@@ -3100,6 +3100,9 @@
                 usePermissionContext: function() {
                     return C
                 },
+                computeCommandContextType: function() {
+                    return E
+                },
                 getContextGuildId: function() {
                     return N
                 }
@@ -3125,23 +3128,22 @@
                 let I = N(f),
                     _ = r.ViewNsfwCommands.getSetting(),
                     C = d.default.getId(),
-                    S = null !== (a = null === (n = m.default.getCurrentUser()) || void 0 === n ? void 0 : n.nsfwAllowed) && void 0 !== a && a,
-                    g = null != I && null !== (s = null === (i = p.default.getMember(I, C)) || void 0 === i ? void 0 : i.roles) && void 0 !== s ? s : [],
-                    M = o.default.isViewingRoles(I),
+                    E = null !== (a = null === (n = m.default.getCurrentUser()) || void 0 === n ? void 0 : n.nsfwAllowed) && void 0 !== a && a,
+                    S = null != I && null !== (s = null === (i = p.default.getMember(I, C)) || void 0 === i ? void 0 : i.roles) && void 0 !== s ? s : [],
+                    g = o.default.isViewingRoles(I),
                     {
-                        computedPermissions: O,
-                        hasBaseAccessPermissions: h
+                        computedPermissions: M,
+                        hasBaseAccessPermissions: O
                     } = A(f);
                 return {
                     context: f,
                     userId: C,
-                    roleIds: g,
-                    isImpersonating: M,
+                    roleIds: S,
+                    isImpersonating: g,
                     commandType: t,
-                    commandContextType: E(f),
-                    computedPermissions: O,
-                    hasBaseAccessPermissions: h,
-                    allowNsfw: T(f, S, _)
+                    computedPermissions: M,
+                    hasBaseAccessPermissions: O,
+                    allowNsfw: T(f, E, _)
                 }
             }
 
@@ -3176,7 +3178,6 @@
                         roleIds: _,
                         commandType: t,
                         isImpersonating: C,
-                        commandContextType: E(n),
                         computedPermissions: e,
                         hasBaseAccessPermissions: i,
                         allowNsfw: T(n, I, s)
@@ -3201,9 +3202,8 @@
                 }
             }
 
-            function E(e) {
-                var t;
-                return e instanceof u.ChannelRecordBase && null == e.guild_id ? e.type === I.ChannelTypes.DM && (null === (t = m.default.getUser(e.getRecipientId())) || void 0 === t ? void 0 : t.bot) === !0 ? s.ApplicationCommandContextType.BOT_DM : s.ApplicationCommandContextType.PRIVATE_CHANNEL : s.ApplicationCommandContextType.GUILD
+            function E(e, t) {
+                return e instanceof u.ChannelRecordBase && null == e.guild_id ? e.type === I.ChannelTypes.DM && e.getRecipientId() === t ? s.ApplicationCommandContextType.BOT_DM : s.ApplicationCommandContextType.PRIVATE_CHANNEL : s.ApplicationCommandContextType.GUILD
             }
 
             function N(e) {
@@ -3238,11 +3238,10 @@
                 m = n("317041"),
                 I = n("49111");
 
-            function _(e, t, n, i) {
+            function _(e, t, n, i, l) {
                 let {
-                    context: l,
-                    commandType: a,
-                    commandContextType: r,
+                    context: a,
+                    commandType: r,
                     allowNsfw: c,
                     computedPermissions: _,
                     userId: C,
@@ -3250,23 +3249,24 @@
                     isImpersonating: N,
                     hasBaseAccessPermissions: S
                 } = t;
-                if (e.type !== a) return 2;
+                if (e.type !== r) return 2;
                 if (e.nsfw && !c) return 1;
-                if (null != e.contexts && !e.contexts.includes(r)) return 4;
-                if (null != e.predicate && l instanceof u.ChannelRecordBase) {
-                    let t = d.default.getGuild(l.guild_id);
+                let g = (0, f.computeCommandContextType)(a, l);
+                if (null != e.contexts && !e.contexts.includes(g)) return 4;
+                if (null != e.predicate && a instanceof u.ChannelRecordBase) {
+                    let t = d.default.getGuild(a.guild_id);
                     if (!e.predicate({
-                            channel: l,
+                            channel: a,
                             guild: t
                         })) return 3
                 }
                 if (e.applicationId === m.BuiltInSectionId.BUILT_IN) return 0;
-                let g = (0, f.getContextGuildId)(l);
-                if (null == g || o.default.has(_, I.Permissions.ADMINISTRATOR)) return 0;
+                let M = (0, f.getContextGuildId)(a);
+                if (null == M || o.default.has(_, I.Permissions.ADMINISTRATOR)) return 0;
                 if (!S) return 5;
-                if (l instanceof u.ChannelRecordBase) {
+                if (a instanceof u.ChannelRecordBase) {
                     s(void 0 !== i, "missing applicationAllowedForChannel");
-                    let t = A(e.permissions, l, g);
+                    let t = A(e.permissions, a, M);
                     if (function(e) {
                             return !1 === e
                         }(t) || ! function(e) {
@@ -3275,12 +3275,12 @@
                             return !1 === e
                         }(i)) return 6
                 }
-                let M = E(e.permissions, g, C, T, N);
+                let O = E(e.permissions, M, C, T, N);
                 return function(e) {
                     return !0 === e
-                }(M) ? 0 : function(e) {
+                }(O) ? 0 : function(e) {
                     return !1 === e
-                }(M) ? 7 : function(e) {
+                }(O) ? 7 : function(e) {
                     return !1 === e
                 }(n) || null != e.defaultMemberPermissions && !(!o.default.equals(e.defaultMemberPermissions, p.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && o.default.has(_, e.defaultMemberPermissions)) ? 7 : 0
             }
@@ -4105,4 +4105,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94816.6a8b2e3e8dca2d49821b.js.map
+//# sourceMappingURL=94816.d22bf601d200484f1ca5.js.map
