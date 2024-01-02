@@ -2806,7 +2806,7 @@
 }
 
 .title__746ed {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources_fdd04d:hover {
@@ -2837,8 +2837,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -22682,8 +22682,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .name__8d1ec {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -46074,8 +46074,8 @@ html .progress__4ef76 {
 .errorState_b806b1 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -46137,7 +46137,7 @@ html .progress__4ef76 {
 
 .confirmChannelName_c49514 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -46145,7 +46145,7 @@ html .progress__4ef76 {
 .lastActiveTimestamp__56cd7 {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -73761,7 +73761,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .viewAllGamesButton__6eb3d {
@@ -73781,7 +73781,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__9b81c,
 .viewAllNitroGames__4193c {
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -73837,7 +73837,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .headerBar_afb1ac {
@@ -79294,13 +79294,9 @@ input::-webkit-inner-spin-button {
     display: grid;
     padding: var(--spacing-16);
     border-top: 1px solid var(--background-modifier-accent);
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 3fr 1fr;
     grid-gap: var(--spacing-16);
     gap: var(--spacing-16)
-}
-
-.clipFormFooterPrimaryButton_f1c890 {
-    grid-column: span 3
 }
 
 .clipFormFooterButton_aff5b9 {
@@ -79613,6 +79609,10 @@ input::-webkit-inner-spin-button {
 
 .clipFooter_cc57f5 {
     padding: 8px
+}
+
+.clipTitleIcon__2c730 {
+    flex-shrink: 0
 }
 
 .clipTitleInput_f80ecf {
@@ -124035,4 +124035,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4cd6713eb086045c6b2a.css.map*/
+/*# sourceMappingURL=app.e222144fe6f14b0d1946.css.map*/
