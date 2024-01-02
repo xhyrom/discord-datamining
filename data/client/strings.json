@@ -10403,7 +10403,7 @@
   "ROLE_PERMISSIONS_KICK_MEMBERS_DESCRIPTION": "\"Allows members to remove other members from this server. Kicked members will be able to rejoin if they have another invite.\"",
   "ROLE_PERMISSIONS_KICK_MEMBERS_AND_REVIEW_APPLICATION_DESCRIPTION": "\"Kick will remove other members from this server. Kicked members will be able to rejoin if they have another invite. If the server enables Member Requirements, this permission enables the ability to approve or reject members who request to join.\"",
   "BAN_MEMBERS": "\"Ban Members\"",
-  "ROLE_PERMISSIONS_BAN_MEMBERS_DESCRIPTION": "\"Allows members to permanently ban other members from this server.\"",
+  "ROLE_PERMISSIONS_BAN_MEMBERS_DESCRIPTION": "\"Allows members to permanently ban and delete the message history of other members from this server.\"",
   "SEND_MESSAGES": "\"Send Messages\"",
   "ROLE_PERMISSIONS_SEND_MESSAGES_DESCRIPTION": "\"Allows members to send messages in text channels.\"",
   "EMBED_LINKS": "\"Embed Links\"",
