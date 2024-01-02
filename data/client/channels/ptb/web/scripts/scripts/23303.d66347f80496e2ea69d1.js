@@ -13940,8 +13940,23 @@
                             enabled: !0
                         }
                     }]
-                }),
-                s = function(e) {
+                });
+            (0, i.createExperiment)({
+                kind: "guild",
+                id: "2024-01_guild_members_table_additional_filtering",
+                label: "Guild Members Table Additional Filtering",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Additional filtering enabled",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+            let s = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
@@ -34902,4 +34917,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.cd6e10f7108732a62a72.js.map
+//# sourceMappingURL=23303.d66347f80496e2ea69d1.js.map
