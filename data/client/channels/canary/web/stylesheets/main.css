@@ -19444,8 +19444,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -20639,16 +20639,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     opacity: 1
 }
 
-.footer__3a140 {
-    display: flex;
-    align-content: center;
-    justify-content: center
-}
-
-.ctaButton_e1b1b6 {
-    flex-grow: 1
-}
-
 .notificationBody__3f148 {
     padding: 0 6px 6px;
     display: flex;
@@ -20663,6 +20653,16 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     background-color: var(--background-secondary);
     border-radius: var(--radius-xs);
     margin-right: 16px
+}
+
+.footer__3a140 {
+    display: flex;
+    align-content: center;
+    justify-content: center
+}
+
+.ctaButton_e1b1b6 {
+    flex-grow: 1
 }
 
 .animationContainer_d558e3 {
@@ -124035,4 +124035,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e222144fe6f14b0d1946.css.map*/
+/*# sourceMappingURL=app.57281ac007d8235104ab.css.map*/
