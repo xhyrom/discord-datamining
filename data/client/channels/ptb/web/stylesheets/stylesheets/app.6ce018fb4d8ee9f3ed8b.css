@@ -77616,7 +77616,7 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     width: 224px;
     height: var(--custom-activity-shelf-item-activity-item-height);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     overflow: hidden;
     background: var(--background-secondary);
     box-shadow: var(--elevation-stroke);
@@ -77708,6 +77708,25 @@ input::-webkit-inner-spin-button {
     top: 0;
     left: 0;
     padding: 4px
+}
+
+.devShelfBadge_a7da3f {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--activity-card-icon-overlay);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.devShelfIcon__39539 {
+    width: 18px;
+    height: 18px
 }
 
 .badgeContainer__8bb31 {
@@ -124122,4 +124141,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f181e399f2d30085ed56.css.map*/
+/*# sourceMappingURL=app.6ce018fb4d8ee9f3ed8b.css.map*/
