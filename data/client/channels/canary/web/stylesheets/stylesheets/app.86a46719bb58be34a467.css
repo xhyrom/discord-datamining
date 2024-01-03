@@ -2806,7 +2806,7 @@
 }
 
 .title__746ed {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources_fdd04d:hover {
@@ -2837,8 +2837,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -121401,6 +121401,7 @@ div.nagbar_c731ff {
 .theme-dark {
     --action-sheet-gradient-bg: var(--primary-630);
     --activity-card-background: var(--primary-700);
+    --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
     --alert-bg: var(--primary-600);
     --android-navigation-bar-background: var(--primary-830);
     --android-navigation-scrim-background: hsl(var(--primary-830-hsl) / 0.5);
@@ -121704,6 +121705,7 @@ div.nagbar_c731ff {
 .theme-light {
     --action-sheet-gradient-bg: var(--primary-130);
     --activity-card-background: var(--white-500);
+    --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
     --alert-bg: var(--white-500);
     --android-navigation-bar-background: var(--primary-100);
     --android-navigation-scrim-background: hsl(var(--primary-100-hsl) / 0.5);
@@ -122007,6 +122009,7 @@ div.nagbar_c731ff {
 .theme-midnight {
     --action-sheet-gradient-bg: var(--black-500);
     --activity-card-background: var(--primary-700);
+    --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
     --alert-bg: var(--black-500);
     --android-navigation-bar-background: var(--plum-24);
     --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
@@ -122310,6 +122313,7 @@ div.nagbar_c731ff {
 .theme-darker {
     --action-sheet-gradient-bg: var(--plum-20);
     --activity-card-background: var(--primary-700);
+    --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
     --alert-bg: var(--plum-20);
     --android-navigation-bar-background: var(--plum-24);
     --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
@@ -123902,4 +123906,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c8c6484aba838052c893.css.map*/
+/*# sourceMappingURL=app.86a46719bb58be34a467.css.map*/
