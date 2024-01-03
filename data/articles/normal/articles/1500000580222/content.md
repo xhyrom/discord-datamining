@@ -1,5 +1,5 @@
 <p>Shh, it's a secret! Ephemeral Messages are a new way for Discord bots to send you a private message without having to send you a DM. You may have received this kind of message before from Clyde, and now bots can send them, too!</p>
-<p><img src="https://support.discord.com/hc/article_attachments/1500000616802/mceclip0.png" alt="mceclip0.png"></p>
+<p><img src="https://support.discord.com/hc/article_attachments/1500000616802" alt="mceclip0.png"></p>
 <h1>Frequently Asked Questions</h1>
 <p><span class="wysiwyg-font-size-large"><strong>Q: What is this kind of message?</strong></span></p>
 <p>An "Ephemeral Message" is a message sent by Clyde and other Discord bots. It's a message that only you can see. These messages disappear when you dismiss them, wait long enough, or restart Discord.</p>
