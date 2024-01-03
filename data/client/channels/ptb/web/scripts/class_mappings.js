@@ -10076,13 +10076,18 @@
         623529: function(e, t, o) {
             "use strict";
             e.exports = {
+                innerContainer: "innerContainer__0d2b8",
+                loadingContainer: "loadingContainer_bcf1e4",
+                profileThemedContainer: "profileThemedContainer__649f1",
                 sidebarContianer: "sidebarContianer_e155a0"
             }
         },
         558595: function(e, t, o) {
             "use strict";
             e.exports = {
+                modInfoAction: "modInfoAction__40259",
                 modInfoItem: "modInfoItem__05dd7",
+                modInfoItemActionIcon: "modInfoItemActionIcon__50180",
                 modInfoItemContainer: "modInfoItemContainer__3a0b0",
                 modInfoItemDescription: "modInfoItemDescription_eab42f",
                 modInfoItemIcon: "modInfoItemIcon__5a831",
@@ -10096,14 +10101,33 @@
                 addRoleIcon: "addRoleIcon__8020e",
                 container: "container_c18052",
                 guildIcon: "guildIcon__137b3",
+                header: "header__01d62",
+                headerTitle: "headerTitle__5360f",
                 highestRole: "highestRole__587f2",
                 infoTitle: "infoTitle_cb538d",
+                innerContainer: "innerContainer_fe088f",
+                keyComboContainer: "keyComboContainer__7564c",
+                keyComboInner: "keyComboInner__272a8",
                 loadingSpinner: "loadingSpinner_fff75b",
                 otherRoles: "otherRoles__479b5",
                 roleContainer: "roleContainer_a1406d",
                 roleTooltip: "roleTooltip__841f1",
                 roleTooltipItem: "roleTooltipItem_d76bcc",
-                roleTooltipItemContainer: "roleTooltipItemContainer_e938b9"
+                roleTooltipItemContainer: "roleTooltipItemContainer_e938b9",
+                unverifiedIcon: "unverifiedIcon__06545",
+                verifiedIcon: "verifiedIcon__29369"
+            }
+        },
+        953035: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                backButton: "backButton__2f3b7",
+                container: "container_b3957f",
+                header: "header_dfa38f",
+                headerTitle: "headerTitle__60ae2",
+                innerContainer: "innerContainer__68aae",
+                keyComboContainer: "keyComboContainer_c48c31",
+                keyComboInner: "keyComboInner_a00a38"
             }
         },
         298028: function(e, t, o) {
@@ -10114,7 +10138,6 @@
                 bottomRowActionDisabled: "bottomRowActionDisabled__413d8",
                 closeAction: "closeAction__06c6c",
                 container: "container__8316e",
-                innerBoarderedContainer: "innerBoarderedContainer_e438e6",
                 memberAvatar: "memberAvatar__5f01a",
                 memberName: "memberName_be9f8d",
                 memberNameContainer: "memberNameContainer__7f3f1",
