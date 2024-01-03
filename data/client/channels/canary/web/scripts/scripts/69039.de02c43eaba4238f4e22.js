@@ -138,8 +138,8 @@
                 _ = n("95410"),
                 s = n("913144"),
                 A = n("684849"),
-                O = n("611310"),
-                c = n("80687"),
+                c = n("611310"),
+                O = n("80687"),
                 I = n("49111");
             (r = u || (u = {})).REQUIRED = "REQUIRED", r.OPTIONAL = "OPTIONAL", r.OPTIONAL_DEFAULT = "OPTIONAL_DEFAULT";
             let T = "migrated",
@@ -282,7 +282,7 @@
                     }(e.layouts), l = function(e) {
                         let t = {};
                         return o.forEach(e, (e, n) => {
-                            t[n] = new O.default(e)
+                            t[n] = new c.default(e)
                         }), t
                     }(e.widgets)) : (i = {}, l = {});
                     let t = !1,
@@ -297,7 +297,7 @@
                             if (null != n) continue;
                             E = t = !0;
                             let i = (0, d.v4)();
-                            n = new O.default({
+                            n = new c.default({
                                 ...this.getWidgetDefaultSettings(e),
                                 type: e,
                                 id: i,
@@ -497,9 +497,9 @@
                                 ...e,
                                 zIndex: t
                             };
-                        "" === E.id && (E.id = (0, d.v4)()), null != n && (E.pinned = n.pinned, -1 !== n.anchor.left && (E.anchor = (0, c.getAnchorPercentageFromLayoutSize)(n.anchor, u)), -1 !== n.size.width && (E.size = (0, c.getSizePercentageFromSize)(n.size, u))), l = {
+                        "" === E.id && (E.id = (0, d.v4)()), null != n && (E.pinned = n.pinned, -1 !== n.anchor.left && (E.anchor = (0, O.getAnchorPercentageFromLayoutSize)(n.anchor, u)), -1 !== n.size.width && (E.size = (0, O.getSizePercentageFromSize)(n.size, u))), l = {
                             ...l,
-                            [E.id]: new O.default(E)
+                            [E.id]: new c.default(E)
                         }, r.push(E.id)
                     }), i = {
                         ...i,
@@ -603,7 +603,7 @@
                         widgetConfigs: t
                     } = e;
                     t.forEach(e => {
-                        let t = new O.default(e),
+                        let t = new c.default(e),
                             n = i[t.layoutId];
                         if (null == n) throw Error("LayoutStore - handleAddWidget: Invalid layoutId");
                         t = t.set("zIndex", n.widgets.length), l = {
@@ -637,8 +637,8 @@
                 _ = n("42203"),
                 s = n("923959"),
                 A = n("505507"),
-                O = n("162771"),
-                c = n("773336"),
+                c = n("162771"),
+                O = n("773336"),
                 I = n("50885"),
                 T = n("819068"),
                 f = n("471671"),
@@ -661,8 +661,8 @@
                 C = {},
                 R = null,
                 D = new Set,
-                p = !1,
-                y = null,
+                y = !1,
+                p = null,
                 N = !1,
                 U = !1,
                 P = new Set,
@@ -762,7 +762,7 @@
                             Y = null != e ? M(e) : {
                                 ...S
                             }
-                        }), __OVERLAY__ && (c.isPlatformEmbedded && I.default.requireModule("discord_overlay2"), D.delete((0, T.getPID)())), null != e) {
+                        }), __OVERLAY__ && (O.isPlatformEmbedded && I.default.requireModule("discord_overlay2"), D.delete((0, T.getPID)())), null != e) {
                         C = e;
                         let t = a.default.getId();
                         null != t && (null == (Y = M(t)).textChatNotifications && (Y.textChatNotifications = S.textChatNotifications), null == Y.textWidgetOpacity && (Y.textWidgetOpacity = S.textWidgetOpacity))
@@ -821,7 +821,7 @@
                     return Y.notificationPositionMode === h.OverlayNotificationPositions.DISABLED ? h.OverlayNotificationTextChatTypes.DISABLED : Y.textChatNotifications
                 }
                 get showKeybindIndicators() {
-                    return Y.showKeybindIndicators
+                    return null == Y.showKeybindIndicators || Y.showKeybindIndicators
                 }
                 getDisableExternalLinkAlert() {
                     return Y.disableExternalLinkAlert
@@ -833,7 +833,7 @@
                     return U
                 }
                 get incompatibleApp() {
-                    return p
+                    return y
                 }
                 getActiveRegions() {
                     return P
@@ -925,7 +925,7 @@
                 OVERLAY_READY: function() {
                     let e = Y.selectedGuildId,
                         t = Y.selectedChannelId;
-                    if (null != e && (!s.default.hasChannels(e) || null != t && !s.default.hasSelectableChannel(e, t)) && (e = null, t = null), null != t && null == _.default.getChannel(t) && (e = null, t = null), null == e && null == t && (e = O.default.getGuildId()), null != e && null == t) {
+                    if (null != e && (!s.default.hasChannels(e) || null != t && !s.default.hasSelectableChannel(e, t)) && (e = null, t = null), null != t && null == _.default.getChannel(t) && (e = null, t = null), null == e && null == t && (e = c.default.getGuildId()), null != e && null == t) {
                         let n = s.default.getDefaultChannel(e);
                         null != n && (t = n.id)
                     }
@@ -1000,7 +1000,7 @@
                     Y.disableExternalLinkAlert = !0
                 },
                 OVERLAY_INCOMPATIBLE_APP: function() {
-                    p = !0
+                    y = !0
                 },
                 OVERLAY_SET_UI_LOCKED: function(e) {
                     let {
@@ -1155,13 +1155,13 @@
                 }, {
                     width: s,
                     height: A
-                } = t, O = d(a(o({
+                } = t, c = d(a(o({
                     top: i + _,
                     left: l + u,
                     bottom: null,
                     right: null
                 }, n.width, n.height, "number" == typeof s ? s : 0, "number" == typeof A ? A : 0)));
-                return [r(O, n), E(t, n)]
+                return [r(c, n), E(t, n)]
             }
 
             function A(e, t, n) {
@@ -1177,13 +1177,13 @@
                 }, {
                     width: s,
                     height: A
-                } = t, O = d(a(o({
+                } = t, c = d(a(o({
                     top: i + _,
                     left: null,
                     bottom: null,
                     right: l - u
                 }, n.width, n.height, "number" == typeof s ? s : 0, "number" == typeof A ? A : 0)));
-                return [r(O, n), E(t, n)]
+                return [r(c, n), E(t, n)]
             }
             n.r(t), n.d(t, {
                 getAnchorCoordsFromLayoutSize: function() {
@@ -1220,4 +1220,4 @@
         }
     }
 ]);
-//# sourceMappingURL=69039.e145df55aac3ad30a4ce.js.map
+//# sourceMappingURL=69039.de02c43eaba4238f4e22.js.map
