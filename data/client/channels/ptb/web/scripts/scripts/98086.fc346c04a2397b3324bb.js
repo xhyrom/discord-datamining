@@ -24593,8 +24593,15 @@
                 o = n("782340");
 
             function t(e, s) {
-                let n = Math.round(255 * s).toString(16).toUpperCase().padStart(2, "0");
-                return "".concat(e).concat(n).padEnd(9, "0")
+                let n;
+                let i = e;
+                if (9 === e.length) {
+                    i = e.slice(0, 7);
+                    let r = parseInt(e.slice(7, 9), 16) / 255;
+                    n = Math.round(r * s * 255)
+                } else n = Math.round(255 * s);
+                let r = n.toString(16).toUpperCase().padStart(2, "0");
+                return "".concat(i).concat(r).padEnd(9, "0")
             }
 
             function a(e) {
@@ -25176,4 +25183,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98086.48d1ce374b9e151c1e25.js.map
+//# sourceMappingURL=98086.fc346c04a2397b3324bb.js.map
