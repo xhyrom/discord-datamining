@@ -16531,6 +16531,8 @@
   "GUILD_DISCOVERY_CATEGORY_SEARCH_PLACEHOLDER_TAGS": "\"Explore {categoryName} servers, or try popular tags below\"",
   "CHANNEL_CHAT_NOTIFICATION_SETTINGS_NOTICE_MUTED": "\"You will not be notified of new messages because **!!{name}!!** is muted.\"",
   "CHANNEL_CHAT_NOTIFICATION_SETTINGS_NOTICE_ONLY_MENTIONS": "\"You will only be notified when you are mentioned because **!!{name}!!** is set to **Only @mentions**.\"",
+  "NOTIFICATION_SETTINGS_UNREAD_MENTION_ONLY_DISABLED": "\"Disabled when notification is set to all messages\"",
+  "NOTIFICATION_SETTINGS_UNREAD_UPDATE_WARNING": "\"This will update unread badges to all messages\"",
   "GUILD_JOIN_FEEDBACK_HEADER": "\"How is !!{guildName}!! going?\"",
   "GUILD_JOIN_FEEDBACK_BODY": "\"Tell us about your community experience\"",
   "GUILD_JOIN_FEEDBACK_ISSUE_SECTION_HEADER": "\"Choose your main issue\"",
