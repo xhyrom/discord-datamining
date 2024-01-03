@@ -9,18 +9,18 @@
 <p>1. When a teen receives direct messages (DMs) from a sender for the first time, Discord will detect if a safety alert should be sent to the teen for this DM. If detected, Discord will notify the teen with a safety alert encouraging them to double check if they want to reply, and will provide links to block the user or view more safety tips to safeguard themselves. </p>
 <p>If Discord does not detect the need for a safety alert for this DM, the teen will not receive the safety alert and will simply receive the message. </p>
 <p>This feature will not be available in the <strong>Message Requests</strong> and <strong>Spam</strong> folders. Only messages that go directly to DMs and the messages accepted then moved from Message Requests and Spam folders will be eligible for the safety alerts. </p>
-<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;"><img src="https://support.discord.com/hc/article_attachments/18514548841623" alt="01_alert.png"></span></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20287437365527" alt="stranger danger.png"></p>
 <p>2. If a teen presses on <strong>More Tips</strong> within the safety alert, they will find tips on what they can do to protect themselves and actions they can take such as muting or blocking the sender. The teen can also block the sender directly from the safety alert. If the teen dismisses the safety alert, they will see the message. </p>
-<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;"><img src="https://support.discord.com/hc/article_attachments/18514529718039" alt="02_detail.png"></span></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20287437383703" alt="stranger danger-2.png"></p>
 <p>3. If a teen decides to mute the sender, they can click on <strong>Mute</strong> from the alert detail.</p>
-<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;"><img src="https://support.discord.com/hc/article_attachments/18514529721751" alt="03_muted.png"></span></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20287437394327" alt="stranger danger-3.png"></p>
 <p>4. If a teen decides to block the sender, they can click on <strong>Block</strong> from the alert detail.</p>
-<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;"><img src="https://support.discord.com/hc/article_attachments/18514548849303" alt="04_blocking.png"></span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18514529724055" alt="05_blocked.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20287470969367" alt="true.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20287479502359" alt="stranger danger-1.png"></p>
 <p>5. If a teen wants to report a message from the sender, they can use the <a href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord" target="_blank" rel="noopener noreferrer">in-app reporting process</a> to report the specific message. </p>
 <p>The safety alert feature is enabled by default for all teens. </p>
 <p>The safety alert will override a teen’s server privacy defaults within <strong>User Settings &gt; Privacy &amp; Safety</strong>. If a teen has <strong>Allow direct messages from server members</strong> enabled, they could still receive these safety alerts. </p>
-<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;"><img src="https://support.discord.com/hc/article_attachments/18514529725463" alt="06_settings.png"></span></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20287470997783" alt="settings adult.png"></p>
 <h1 id="h_01HD4T7W175WSNRAA92JG3GMBG">Future safety alerts</h1>
 <p>Discord will be launching additional safety alerts for teens and adults that focus on protecting against additional harm types. Check our <a href="https://discord.com/safety-news" target="_blank" rel="noopener noreferrer">Safety News Hub</a> for the latest information. </p>
 <h1 id="h_01HD4T7W17V4WYW74FVP5B9GQ9">Frequently Asked Questions</h1>
