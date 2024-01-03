@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["41039"], {
+    ["78033"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -24313,25 +24313,27 @@
             "use strict";
             n.r(t), n.d(t, {
                 GUILD_FILTERS: function() {
-                    return f
+                    return h
                 }
             }), n("222007");
             var i = n("552442"),
                 r = n.n(i),
                 s = n("210696"),
                 a = n.n(s),
-                o = n("519820"),
-                l = n("525065"),
-                u = n("305961");
+                o = n("249654"),
+                l = n("519820"),
+                u = n("525065"),
+                c = n("305961"),
+                d = n("718517");
 
-            function c(e, t, n) {
+            function f(e, t, n) {
                 let i = r(e),
                     s = null != t ? r(t) : null,
                     a = null != n ? r(n) : null;
                 return !(null != s && i.lesser(s) || null != a && i.greater(a)) && !0
             }
 
-            function d(e) {
+            function E(e) {
                 let t, n;
                 for (let [i, r] of e) switch (i) {
                     case a.v3("min_id"):
@@ -24345,7 +24347,7 @@
                     max: n
                 }
             }
-            let f = {
+            let h = {
                 [a.v3("guild_ids")]: e => {
                     let t = [];
                     for (let [n, i] of e)
@@ -24356,17 +24358,27 @@
                     let {
                         min: t,
                         max: n
-                    } = d(e);
-                    return e => c(e, t, n)
+                    } = E(e);
+                    return e => f(e, t, n)
+                },
+                [a.v3("guild_age_range_days")]: e => {
+                    let {
+                        min: t,
+                        max: n
+                    } = E(e);
+                    return e => {
+                        let i = Math.floor(o.default.age(e) / d.default.Millis.DAY);
+                        return f(i, t, n)
+                    }
                 },
                 [a.v3("guild_member_count_range")]: e => {
                     let {
                         min: t,
                         max: n
-                    } = d(e);
+                    } = E(e);
                     return e => {
-                        let i = l.default.getMemberCount(e);
-                        return null != i && c(i, t, n)
+                        let i = u.default.getMemberCount(e);
+                        return null != i && f(i, t, n)
                     }
                 },
                 [a.v3("guild_has_feature")]: e => {
@@ -24375,7 +24387,7 @@
                     ] = e;
                     return e => {
                         var n;
-                        let i = null !== (n = u.default.getGuild(e)) && void 0 !== n ? n : o.default.getGuild(e);
+                        let i = null !== (n = c.default.getGuild(e)) && void 0 !== n ? n : l.default.getGuild(e);
                         return null != i && t.some(e => i.hasFeature(e))
                     }
                 },
@@ -24385,7 +24397,7 @@
                     ] = e;
                     return e => {
                         var n;
-                        let i = null !== (n = u.default.getGuild(e)) && void 0 !== n ? n : o.default.getGuild(e);
+                        let i = null !== (n = c.default.getGuild(e)) && void 0 !== n ? n : l.default.getGuild(e);
                         return null != i && "number" == typeof i.hubType && t.some(e => i.hubType === e)
                     }
                 },
@@ -24395,7 +24407,7 @@
                     ] = e;
                     return e => {
                         var n;
-                        let i = null !== (n = u.default.getGuild(e)) && void 0 !== n ? n : o.default.getGuild(e);
+                        let i = null !== (n = c.default.getGuild(e)) && void 0 !== n ? n : l.default.getGuild(e);
                         if (null == i) return !1;
                         let r = null != i.vanityURLCode;
                         return t === r
@@ -49993,7 +50005,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "256988"
+                                build_number: "256991"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63382,4 +63394,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.f01bdf18769034fa95b9.js.map
+//# sourceMappingURL=78033.5864706cb9d6484d66fa.js.map
