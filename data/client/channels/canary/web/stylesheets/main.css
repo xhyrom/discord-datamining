@@ -19443,8 +19443,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -123885,4 +123885,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b144b9a6161113e833da.css.map*/
+/*# sourceMappingURL=app.63a887986a3de40f5651.css.map*/
