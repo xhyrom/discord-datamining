@@ -25,7 +25,7 @@
                     return s
                 },
                 createWidgets: function() {
-                    return c
+                    return _
                 }
             });
             var a = n("913144"),
@@ -79,10 +79,10 @@
             }
 
             function s(e) {
-                c([e])
+                _([e])
             }
 
-            function c(e) {
+            function _(e) {
                 a.default.dispatch({
                     type: "LAYOUT_CREATE_WIDGETS",
                     widgetConfigs: e
@@ -105,8 +105,8 @@
                 E = n("80687"),
                 u = n("819068"),
                 s = n("640583"),
-                c = n("49111");
-            let _ = {
+                _ = n("49111");
+            let c = {
                 track(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                         n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
@@ -158,7 +158,7 @@
                 },
                 setInstanceLocked(e) {
                     if (!__OVERLAY__) throw Error("OverlayActionCreators.setInstanceLocked: Must be called within Overlay context");
-                    _.setLocked(e, (0, u.getPID)())
+                    c.setLocked(e, (0, u.getPID)())
                 },
                 setEnabled(e) {
                     l.default.dispatch({
@@ -250,7 +250,7 @@
                     })
                 },
                 updateNotificationStatus(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.OverlayNotificationStatus.DISMISSED;
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _.OverlayNotificationStatus.DISMISSED;
                     l.default.dispatch({
                         type: "OVERLAY_UPDATE_NOTIFICATION_STATUS",
                         notificationId: e,
@@ -271,11 +271,11 @@
                 setPinChat(e) {
                     let t = u.OVERLAY_LAYOUT_ID,
                         n = i.default.getWidgetsForLayout(t),
-                        l = i.default.getWidgetConfig(c.OverlayWidgets.GUILDS),
-                        o = i.default.getWidgetConfig(c.OverlayWidgets.TEXT),
-                        r = i.default.getWidgetConfig(c.OverlayWidgets.GUILDS_TEXT);
+                        l = i.default.getWidgetConfig(_.OverlayWidgets.GUILDS),
+                        o = i.default.getWidgetConfig(_.OverlayWidgets.TEXT),
+                        r = i.default.getWidgetConfig(_.OverlayWidgets.GUILDS_TEXT);
                     if (0 === n.length || null == l || null == o || null == r) return;
-                    let _ = d.default.windowSize(),
+                    let c = d.default.windowSize(),
                         O = {
                             width: 0,
                             height: 0
@@ -308,14 +308,14 @@
                                 size: l
                             } = e;
                             switch (t) {
-                                case c.OverlayWidgets.TEXT:
-                                    O = (0, E.getSizeFromLayoutSize)(l, _), (0, s.deleteWidget)(n);
+                                case _.OverlayWidgets.TEXT:
+                                    O = (0, E.getSizeFromLayoutSize)(l, c), (0, s.deleteWidget)(n);
                                     break;
-                                case c.OverlayWidgets.GUILDS:
-                                    T = (0, E.getFullCoordsFromLayoutSize)(a, l, _), A = (0, E.getSizeFromLayoutSize)(l, _), (0, s.deleteWidget)(n);
+                                case _.OverlayWidgets.GUILDS:
+                                    T = (0, E.getFullCoordsFromLayoutSize)(a, l, c), A = (0, E.getSizeFromLayoutSize)(l, c), (0, s.deleteWidget)(n);
                                     break;
-                                case c.OverlayWidgets.GUILDS_TEXT:
-                                    I = (0, E.getFullCoordsFromLayoutSize)(a, l, _), S = (0, E.getSizeFromLayoutSize)(l, _), (0, s.deleteWidget)(n)
+                                case _.OverlayWidgets.GUILDS_TEXT:
+                                    I = (0, E.getFullCoordsFromLayoutSize)(a, l, c), S = (0, E.getSizeFromLayoutSize)(l, c), (0, s.deleteWidget)(n)
                             }
                         }), e) {
                         let e = "auto" === S.width ? r.minSize.width : S.width;
@@ -323,27 +323,27 @@
                         let [n, o] = (0, E.getLeftWidgetSpecs)(I, {
                             ...S,
                             width: l.minSize.width
-                        }, _), [d, u] = (0, E.getRightWidgetSpecs)(I, {
+                        }, c), [d, u] = (0, E.getRightWidgetSpecs)(I, {
                             ...S,
                             width: e
-                        }, _, {
+                        }, c, {
                             x: 10,
                             y: 10
-                        }), O = i.default.getWidgetDefaultSettings(c.OverlayWidgets.TEXT);
+                        }), O = i.default.getWidgetDefaultSettings(_.OverlayWidgets.TEXT);
                         if (null == O) throw Error("OverlayActionCreators.setPinChat: No config for TEXT exists");
                         (0, s.createWidget)({
                             ...O,
-                            type: c.OverlayWidgets.TEXT,
+                            type: _.OverlayWidgets.TEXT,
                             id: (0, a.v4)(),
                             size: u,
                             anchor: d,
                             layoutId: t
                         });
-                        let T = i.default.getWidgetDefaultSettings(c.OverlayWidgets.GUILDS);
+                        let T = i.default.getWidgetDefaultSettings(_.OverlayWidgets.GUILDS);
                         if (null == T) throw Error("OverlayActionCreators.setPinChat: No config for GUILDS exists");
                         (0, s.createWidget)({
                             ...T,
-                            type: c.OverlayWidgets.GUILDS,
+                            type: _.OverlayWidgets.GUILDS,
                             id: (0, a.v4)(),
                             size: o,
                             anchor: n,
@@ -355,11 +355,11 @@
                         let [n, r] = (0, E.getLeftWidgetSpecs)(T, {
                             height: A.height,
                             width: e
-                        }, _), d = i.default.getWidgetDefaultSettings(c.OverlayWidgets.GUILDS_TEXT);
+                        }, c), d = i.default.getWidgetDefaultSettings(_.OverlayWidgets.GUILDS_TEXT);
                         if (null == d) throw Error("OverlayActionCreators.setPinChat: No config for GUILDS_TEXT exists");
                         (0, s.createWidget)({
                             ...d,
-                            type: c.OverlayWidgets.GUILDS_TEXT,
+                            type: _.OverlayWidgets.GUILDS_TEXT,
                             id: (0, a.v4)(),
                             layoutId: t,
                             anchor: n,
@@ -386,7 +386,7 @@
                     })
                 }
             };
-            var O = _
+            var O = c
         },
         999819: function(e, t, n) {
             "use strict";
@@ -448,8 +448,8 @@
                 E = n.n(d),
                 u = n("917351"),
                 s = n.n(u),
-                c = n("446674"),
-                _ = n("913144"),
+                _ = n("446674"),
+                c = n("913144"),
                 O = n("485328"),
                 T = n("605250"),
                 A = n("999819"),
@@ -646,7 +646,7 @@
                 });
                 return t && e.push((0, L.toString)(R.shortcut)), e
             });
-            class z extends c.default.DeviceSettingsStore {
+            class z extends _.default.DeviceSettingsStore {
                 initialize(e) {
                     !__OVERLAY__ && this.waitFor(I.default, C.default), P = null != e ? e : {}
                 }
@@ -727,7 +727,7 @@
                 }
                 return t
             }];
-            var Q = new z(_.default, {
+            var Q = new z(c.default, {
                 CONNECTION_OPEN: X,
                 AUDIO_SET_MODE: X,
                 OVERLAY_SET_ENABLED: X,
@@ -791,8 +791,8 @@
                 E = n("913144"),
                 u = n("561288"),
                 s = n("823411"),
-                c = n("640583"),
-                _ = n("539405"),
+                _ = n("640583"),
+                c = n("539405"),
                 O = n("987317"),
                 T = n("49671"),
                 A = n("6193"),
@@ -1061,7 +1061,7 @@
                     let e = null !== (n = null === (t = m[null != K ? K : 0]) || void 0 === t ? void 0 : t.method) && void 0 !== n ? n : b.OverlayMethod.Disabled;
                     if (e === b.OverlayMethod.OutOfProcess) return
                 }
-                _.default.setFocusedPID(0 === e ? null : e)
+                c.default.setFocusedPID(0 === e ? null : e)
             }
 
             function es(e, t, n) {
@@ -1074,13 +1074,13 @@
                         success: t,
                         ...n
                     };
-                (0, c.createLayout)(P.OVERLAY_LAYOUT_ID, D.default.getDefaultLayout(P.OVERLAY_LAYOUT_ID), {
+                (0, _.createLayout)(P.OVERLAY_LAYOUT_ID, D.default.getDefaultLayout(P.OVERLAY_LAYOUT_ID), {
                     width: n.graphics_width,
                     height: n.graphics_height
                 }), h.default.track(G.AnalyticEvents.OVERLAY_HOOK_RESULT, i), X.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), i), t ? j(e, "CONNECTED", "CONNECTING") : j(e, "CONNECT_FAILED", "CONNECTING")
             }
 
-            function ec() {
+            function e_() {
                 let e = C.default.getToken(),
                     t = C.default.getId();
                 null != e && I.send({
@@ -1094,7 +1094,7 @@
                     }]
                 })
             }
-            async function e_(e) {
+            async function ec(e) {
                 let t = await ea();
                 if (null != K && K !== P.DEV_PID && t.sendCommand(K, {
                         message: "intercept_input",
@@ -1109,13 +1109,13 @@
                 if (e) {
                     let t = p.default.getVisibleGame(),
                         n = null == t ? null : p.default.getGameOverlayStatus(t);
-                    (null == n ? void 0 : n.overlayMethod) === b.OverlayMethod.OutOfProcess ? e_(e) : setTimeout(() => e_(e), 200)
-                } else e_(e)
+                    (null == n ? void 0 : n.overlayMethod) === b.OverlayMethod.OutOfProcess ? ec(e) : setTimeout(() => ec(e), 200)
+                } else ec(e)
             }
             let eT = null;
 
             function eA(e, t, n) {
-                _.default.relayClickZoneClicked(e, t, n)
+                c.default.relayClickZoneClicked(e, t, n)
             }
             async function eI(e) {
                 if (!(0, P.supportsOutOfProcess)()) return;
@@ -1164,7 +1164,7 @@
                     case G.OverlayEventTypes.CONNECT:
                         let t = C.default.getToken();
                         if (null == t) break;
-                        (0, c.createLayout)(P.OVERLAY_LAYOUT_ID, D.default.getDefaultLayout(P.OVERLAY_LAYOUT_ID)), Promise.all([(0, N.default)(t, e.pid), d.default.PersistedStore.getAllStates()]).then(t => {
+                        (0, _.createLayout)(P.OVERLAY_LAYOUT_ID, D.default.getDefaultLayout(P.OVERLAY_LAYOUT_ID)), Promise.all([(0, N.default)(t, e.pid), d.default.PersistedStore.getAllStates()]).then(t => {
                             let [n, a] = t, {
                                 pid: l,
                                 token: o
@@ -1179,7 +1179,7 @@
                                 pid: l,
                                 token: o,
                                 payloads: [n]
-                            }), j(l, "READY"), _.default.overlayReady(l)
+                            }), j(l, "READY"), c.default.overlayReady(l)
                         });
                         break;
                     case G.OverlayEventTypes.DISPATCH:
@@ -1194,7 +1194,7 @@
             }
             class eC extends d.default.Store {
                 initialize() {
-                    !(!b.OVERLAY_SUPPORTED || __OVERLAY__) && (w.add(b.OverlayMethod.Hook), this.waitFor(p.default, C.default), I.setReceiveCommandHandler(eL, eN), C.default.addChangeListener(ec), eE(f.OverlayStoredSettings.enabled), E.default.addInterceptor(eS))
+                    !(!b.OVERLAY_SUPPORTED || __OVERLAY__) && (w.add(b.OverlayMethod.Hook), this.waitFor(p.default, C.default), I.setReceiveCommandHandler(eL, eN), C.default.addChangeListener(e_), eE(f.OverlayStoredSettings.enabled), E.default.addInterceptor(eS))
                 }
                 isInputLocked(e) {
                     return !W.has(e)
@@ -1281,7 +1281,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...n));
                     let l = new URLSearchParams;
-                    l.append("build_id", "e5f4ccee1c5bf8cc7d7adb53419195e2634cb351"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
+                    l.append("build_id", "8e9aad4aeecba79d3d4ccb574ce88e4b9bdbd324"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1307,7 +1307,7 @@
                             applicationId: a,
                             channelId: l,
                             messageId: o
-                        }), null != K && _.default.setLocked(!0, K)
+                        }), null != K && c.default.setLocked(!0, K)
                     })
                 },
                 OVERLAY_CRASHED: function(e) {
@@ -1409,4 +1409,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77015.c69219e37ad8a8373495.js.map
+//# sourceMappingURL=77015.cd7cad2a1544dfccd5ee.js.map
