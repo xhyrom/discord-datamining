@@ -21959,7 +21959,8 @@
                 secondaryIcon: "secondaryIcon_de5138",
                 secondaryIconActive: "secondaryIconActive__586a8 secondaryIcon_de5138",
                 secondaryIconDisabled: "secondaryIconDisabled__6bd93 secondaryIcon_de5138",
-                soundButtonSettingContainer: "soundButtonSettingContainer__548af"
+                soundButtonSettingContainer: "soundButtonSettingContainer__548af",
+                soundText: "soundText__51d36"
             }
         },
         304593: function(e, t, o) {
