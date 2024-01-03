@@ -47,8 +47,8 @@
                 a = n("233069"),
                 s = n("271938"),
                 r = n("42203"),
-                d = n("923959"),
-                c = n("525065"),
+                c = n("923959"),
+                d = n("525065"),
                 o = n("26989"),
                 f = n("305961"),
                 _ = n("42887"),
@@ -77,13 +77,13 @@
                 if (null == n) return null;
                 let l = s.default.getId(),
                     u = o.default.getMember(t, l),
-                    i = d.default.getChannels(t),
-                    a = i[d.GUILD_SELECTABLE_CHANNELS_KEY].length,
-                    r = i[d.GUILD_VOCAL_CHANNELS_KEY].length,
+                    i = c.default.getChannels(t),
+                    a = i[c.GUILD_SELECTABLE_CHANNELS_KEY].length,
+                    r = i[c.GUILD_VOCAL_CHANNELS_KEY].length,
                     _ = T.default.getVoiceStates(t);
                 return {
                     guild_id: n.id,
-                    guild_size_total: c.default.getMemberCount(t),
+                    guild_size_total: d.default.getMemberCount(t),
                     guild_num_channels: a + r,
                     guild_num_text_channels: a,
                     guild_num_voice_channels: r,
@@ -145,15 +145,15 @@
                 let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                     s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 if (A.default.isThrottled(t)) return;
-                let d = !("location" in a) || a.location !== y.AnalyticsLocations.GUILD_CREATE_INVITE_SUGGESTION,
-                    c = "guild_id" in a ? a.guild_id : d ? p.default.getGuildId() : null,
-                    o = "channel_id" in a ? a.channel_id : d ? v.default.getChannelId(c) : null,
+                let c = !("location" in a) || a.location !== y.AnalyticsLocations.GUILD_CREATE_INVITE_SUGGESTION,
+                    d = "guild_id" in a ? a.guild_id : c ? p.default.getGuildId() : null,
+                    o = "channel_id" in a ? a.channel_id : c ? v.default.getChannelId(d) : null,
                     f = r.default.getChannel(o);
-                let _ = (e = f, n = c, null == e ? null != n ? n : null : e.isPrivate() ? null : null !== (u = null !== (l = e.getGuildId()) && void 0 !== l ? l : n) && void 0 !== u ? u : null);
+                let _ = (e = f, n = d, null == e ? null != n ? n : null : e.isPrivate() ? null : null !== (u = null !== (l = e.getGuildId()) && void 0 !== l ? l : n) && void 0 !== u ? u : null);
                 let S = {
                     ...a,
                     ...C(_),
-                    ...null != c && null != o && (0, m.isStaticChannelRoute)(o) ? (i = 0, {
+                    ...null != d && null != o && (0, m.isStaticChannelRoute)(o) ? (i = 0, {
                         channel_static_route: o,
                         channel_hidden: !1
                     }) : L(f)
@@ -216,8 +216,8 @@
                 a = n.n(i),
                 s = n("446674"),
                 r = n("913144"),
-                d = n("49111");
-            let c = o();
+                c = n("49111");
+            let d = o();
 
             function o() {
                 return {
@@ -227,13 +227,13 @@
             }
             class f extends s.default.PersistedStore {
                 initialize(t) {
-                    c = {
+                    d = {
                         ...o(),
                         ...null != t ? t : {}
                     }
                 }
                 getState() {
-                    return c
+                    return d
                 }
                 getCurrentHangStatus() {
                     return l
@@ -242,14 +242,14 @@
                     return u
                 }
                 getRecentCustomStatuses() {
-                    return c.recentCustomStatuses
+                    return d.recentCustomStatuses
                 }
                 getCurrentDefaultStatus() {
-                    return c.currentDefaultStatus
+                    return d.currentDefaultStatus
                 }
                 getHangStatusActivity() {
                     return null == l ? null : {
-                        type: d.ActivityTypes.HANG_STATUS,
+                        type: c.ActivityTypes.HANG_STATUS,
                         name: "Hang Status",
                         state: l,
                         details: null == u ? void 0 : u.status,
@@ -260,14 +260,14 @@
             f.displayName = "HangStatusStore", f.persistKey = "HangStatusStore";
             var _ = new f(r.default, {
                 LOGOUT: function() {
-                    c = o()
+                    d = o()
                 },
                 UPDATE_HANG_STATUS: function(t) {
                     let {
                         status: e,
                         saveAsDefault: n
                     } = t;
-                    l = e, u = null, n && (c.currentDefaultStatus = {
+                    l = e, u = null, n && (d.currentDefaultStatus = {
                         status: e,
                         customHangStatus: u,
                         expiresAt: Date.now() + 288e5
@@ -279,12 +279,12 @@
                         emoji: n,
                         saveAsDefault: i
                     } = t;
-                    l = d.HangStatusTypes.CUSTOM, u = {
+                    l = c.HangStatusTypes.CUSTOM, u = {
                         status: e,
                         emoji: n
                     };
-                    let s = [...c.recentCustomStatuses],
-                        r = s.findIndex(t => t.status === e && a.isEqual(t.emoji, n)); - 1 !== r ? s.splice(r, 1) : 7 === s.length && s.splice(6, 1), c.recentCustomStatuses = [u, ...s], i && (c.currentDefaultStatus = {
+                    let s = [...d.recentCustomStatuses],
+                        r = s.findIndex(t => t.status === e && a.isEqual(t.emoji, n)); - 1 !== r ? s.splice(r, 1) : 7 === s.length && s.splice(6, 1), d.recentCustomStatuses = [u, ...s], i && (d.currentDefaultStatus = {
                         status: l,
                         customHangStatus: u,
                         expiresAt: Date.now() + 288e5
@@ -294,7 +294,11 @@
                     let {
                         saveAsDefault: e
                     } = t;
-                    l = null, u = null, e && (c.currentDefaultStatus = null)
+                    l = null, u = null, e && (d.currentDefaultStatus = {
+                        status: null,
+                        customHangStatus: null,
+                        expiresAt: Date.now() + 288e5
+                    })
                 }
             })
         },
@@ -311,8 +315,8 @@
                 a = n.n(i),
                 s = n("446674"),
                 r = n("913144"),
-                d = n("309570"),
-                c = n("32346"),
+                c = n("309570"),
+                d = n("32346"),
                 o = n("271938"),
                 f = n("697218"),
                 _ = n("49111");
@@ -341,7 +345,7 @@
                             return 0
                     }
                 },
-                h = t => (0, d.default)(t) ? 1 : 0;
+                h = t => (0, c.default)(t) ? 1 : 0;
 
             function y(t, e) {
                 var n, l, u, i, a;
@@ -438,7 +442,7 @@
             }
             class U extends s.default.Store {
                 initialize() {
-                    this.waitFor(o.default, c.default)
+                    this.waitFor(o.default, d.default)
                 }
                 setCurrentUserOnConnectionOpen(t, e) {
                     E[o.default.getId()] = t, v[o.default.getId()] = e
@@ -685,4 +689,4 @@
         }
     }
 ]);
-//# sourceMappingURL=26230.571465a628976fcccff3.js.map
+//# sourceMappingURL=26230.2da40d874ee26e9e465a.js.map
