@@ -335,7 +335,7 @@
                 }), delete R[l], delete U[l]
             }
 
-            function G(e) {
+            function B(e) {
                 var t, i;
                 let {
                     channelId: n,
@@ -355,7 +355,7 @@
                 }), delete R[A])
             }
 
-            function B(e) {
+            function G(e) {
                 let {
                     mediaSessionId: t
                 } = e, i = _.default.getChannelId();
@@ -374,10 +374,10 @@
             }
             n = class extends u.default {
                 _initialize() {
-                    E.default.addChangeListener(this.handleSelectedChannelUpdate), l.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.subscribe("EMBEDDED_ACTIVITY_OPEN", F), l.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", w), l.default.subscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", G), l.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.subscribe("MEDIA_SESSION_JOINED", B)
+                    E.default.addChangeListener(this.handleSelectedChannelUpdate), l.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.subscribe("EMBEDDED_ACTIVITY_OPEN", F), l.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", w), l.default.subscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", B), l.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.subscribe("MEDIA_SESSION_JOINED", G)
                 }
                 _terminate() {
-                    E.default.removeChangeListener(this.handleSelectedChannelUpdate), l.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", F), l.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", w), l.default.unsubscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", G), l.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.unsubscribe("MEDIA_SESSION_JOINED", B)
+                    E.default.removeChangeListener(this.handleSelectedChannelUpdate), l.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", F), l.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", w), l.default.unsubscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", B), l.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.unsubscribe("MEDIA_SESSION_JOINED", G)
                 }
                 constructor(...e) {
                     super(...e), this.handleSelectedChannelUpdate = () => {
@@ -1370,37 +1370,28 @@
             "use strict";
             i.r(t), i.d(t, {
                 default: function() {
-                    return u
+                    return a
                 },
                 isPrivateChannelWithEnabledActivities: function() {
-                    return r
+                    return u
                 }
             });
             var n = i("65597"),
-                l = i("42203"),
-                a = i("447789");
+                l = i("42203");
+
+            function a(e) {
+                var t;
+                let i = (0, n.default)([l.default], () => l.default.getChannel(e)),
+                    a = null !== (t = null == i ? void 0 : i.isPrivate()) && void 0 !== t && t;
+                return a
+            }
 
             function u(e) {
                 var t;
-                let i = (0, a.useIsActivitiesInGdmEnabled)(),
-                    u = (0, n.default)([l.default], () => l.default.getChannel(e)),
-                    r = null !== (t = null == u ? void 0 : u.isPrivate()) && void 0 !== t && t;
-                return i && r
-            }
-
-            function r(e) {
-                var t;
                 if (null == e) return !1;
                 let i = l.default.getChannel(e),
-                    n = null !== (t = null == i ? void 0 : i.isPrivate()) && void 0 !== t && t,
-                    {
-                        isActivitiesInGdmEnabled: u
-                    } = a.ActivitiesInGdmExperiment.getCurrentConfig({
-                        location: "f31c95_1"
-                    }, {
-                        autoTrackExposure: !1
-                    });
-                return u && n
+                    n = null !== (t = null == i ? void 0 : i.isPrivate()) && void 0 !== t && t;
+                return n
             }
         },
         141962: function(e, t, i) {
@@ -2110,4 +2101,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47146.3055dfc334424c70363e.js.map
+//# sourceMappingURL=47146.85b388ae9beae4a7591d.js.map
