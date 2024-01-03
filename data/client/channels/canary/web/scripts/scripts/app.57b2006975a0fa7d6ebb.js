@@ -2668,6 +2668,8 @@
                 avatars: "avatars__11149",
                 badgeContainer: "badgeContainer__8bb31",
                 brokenImageIconWrapper: "brokenImageIconWrapper__461ed activityImage_a2de33",
+                devShelfBadge: "devShelfBadge_a7da3f",
+                devShelfIcon: "devShelfIcon__39539",
                 disabled: "disabled_b6f87e",
                 fadeIn: "fadeIn__18cab",
                 fadeOut: "fadeOut__1434a",
