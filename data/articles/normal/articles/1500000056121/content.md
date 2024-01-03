@@ -28,7 +28,7 @@
     <span style="font-weight: 400;">To start navigating in Keyboard Mode, simply press </span><strong>Tab</strong><span style="font-weight: 400;">. </span>
 </h3>
 <p><span style="font-weight: 400;">Once you're in Keyboard Mode, you'll see a blue Focus Ring appear around the element that currently has focus. This ring will move around as you navigate.</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/360101312273/keyboard_nav_example_gif.gif" alt="An example of using keyboard navigation to move the blue focus ring to differents elements of the app."></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/360101312273" alt="An example of using keyboard navigation to move the blue focus ring to differents elements of the app."></span></p>
 <p><span style="font-weight: 400;">For the most part, the</span><strong> Tab</strong><span style="font-weight: 400;"> key will move you through everything in the app. Buttons, Links, and other interactive content is generally going to be part of the </span><strong>Tab</strong><span style="font-weight: 400;"> order of the app, so if you can click it, you can probably </span><strong>Tab</strong><span style="font-weight: 400;"> to it.</span></p>
 <p><span style="font-weight: 400;">For everything else, </span><strong>arrow keys</strong><span style="font-weight: 400;"> should get you around as you'd expect - list-like content such as the Guilds list, Channels, Messages, context menus, and more. </span></p>
 <p><span style="font-weight: 400;">Because these things can have hundreds of entries at a time, they often aren't included in the Tab order of the page, so if you see something that looks like a List, try the arrow keys.</span></p>
@@ -37,7 +37,7 @@
 <h3>
     <span style="font-weight: 400;">To navigate through these messages, start by hitting the </span><strong>Tab key! <br></strong><span style="font-weight: 400;">Then you can jump from one to the next with the </span><strong>arrow keys</strong><span style="font-weight: 400;">, and then move into the content of a message with </span><strong>Tab</strong><span style="font-weight: 400;">. </span>
 </h3>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/1500000199982/message_navigation_interaction.gif" alt="An example of using keyboard navigation to navigate through messages to add a reaction and then add a direct reply" width="637" height="594"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/1500000199982" alt="An example of using keyboard navigation to navigate through messages to add a reaction and then add a direct reply" width="637" height="594"></span></p>
 <h1 id="h_01ES1NEK3S6C9PW39KYMTXEJGH"><span style="font-weight: 400;">Message Shortcut Keys List</span></h1>
 <p><span style="font-weight: 400;">With so many actions to take on messages, there are also a number of dedicated shortcut keys to make things quicker. When you focus on a specific message in Keyboard Mode and you have your blue ring highlighting the message you’d like to interact with, you can use the following shortcuts below!</span></p>
 <table>
@@ -138,7 +138,7 @@
     <li style="font-weight: 400;"><span style="font-weight: 400;">Messages</span></li>
     <li style="font-weight: 400;"><span style="font-weight: 400;">the Member’s List</span></li>
 </ul>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/1500000200102/Screen_Shot_2020-12-07_at_6.35.08_PM.png" alt="An example of the different sections that you can jump to in the server view."></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/1500000200102" alt="An example of the different sections that you can jump to in the server view."></span></p>
 <p><span style="font-weight: 400;">As a reminder on what shortcuts you can use for </span><strong>Section Jumping</strong><span style="font-weight: 400;">, check out this table below: </span></p>
 <table>
     <tbody>

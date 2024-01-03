@@ -36,7 +36,7 @@
     <li>Open your <strong>Server Settings</strong> and head into the <strong>Integrations</strong> tab:</li>
     <li>Click the "<strong>Create Webhook</strong>" button to create a new webhook!</li>
 </ol>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500000463501/Screen_Shot_2020-12-15_at_4.41.53_PM.png" alt="Screen_Shot_2020-12-15_at_4.41.53_PM.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500000463501" alt="Screen_Shot_2020-12-15_at_4.41.53_PM.png"></p>
 <p>You'll have a few options here. You can:</p>
 <ul>
     <li> <strong>Edit the avatar: </strong>By clicking the avatar next to the Name in the top left</li>
@@ -48,14 +48,14 @@
     </li>
 </ul>
 <p>You now have your own handy URL / pneumatic tube <em>schoomp</em>-er that you can link to more websites to receive messages from. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360101553853/Screen_Shot_2020-12-15_at_4.51.38_PM.png" alt="Screen_Shot_2020-12-15_at_4.51.38_PM.png" width="650" height="393"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360101553853" alt="Screen_Shot_2020-12-15_at_4.51.38_PM.png" width="650" height="393"></p>
 <h1>Quick Example: GitHub Webhook Integration</h1>
 <p>Since webhooks can't really function on their own and need to be linked to another website to function as intended, I figured it'd be best to include a sample integration for any of you GitHub enthusiasts and code-pushers.</p>
 <p>You can use Discord's webhooks to send any code merge or push updates in a repository of yours into a text channel in your server.  </p>
 <p><strong><span class="wysiwyg-font-size-large">1. Get the webhook URL for the server/channel you want to receive messages:</span></strong></p>
 <p>In my server, I've created a text channel labeled #general-chat and I want my repo updates to post messages here!</p>
 <p>Therefore, I'll grab the webhook URL for this channel by pressing the <strong>Copy Webhook URL</strong> button:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500000455142/Screen_Shot_2020-12-15_at_4.45.52_PM.png" alt="Screen_Shot_2020-12-15_at_4.45.52_PM.png" width="601" height="609"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500000455142" alt="Screen_Shot_2020-12-15_at_4.45.52_PM.png" width="601" height="609"></p>
 <p><strong><span class="wysiwyg-font-size-large">2. Add the webhook URL into your GitHub repo settings</span></strong></p>
 <p>Choose the repository that you'd like to get updates from in your Discord server. Once you've selected the repo, go into the Settings &gt; Webhooks menu</p>
 <p>And then click the "Add webhook" button, and enter the Discord-generated URL in the "Payload URL" blank. </p>
