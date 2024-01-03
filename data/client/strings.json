@@ -8462,6 +8462,7 @@
   "GAME_INVITES_EXPIRED_HEADER": "\"Expired Invites\"",
   "GAME_INVITES_DELETE_ALL": "\"Delete all\"",
   "GAME_INVITES_SENT_YOU_AN_INVITE": "\"{username} Sent You a Game Invite\"",
+  "GAME_INVITES_INVITE_FROM": "\"Invite from {username}\"",
   "GAME_INVITES_JOIN_GAME": "\"Join Game\"",
   "GAME_INVITES_LAUNCH_GAME": "\"Launch Game\"",
   "GAME_INVITES_INSTALL_GAME": "\"Install Game\"",
