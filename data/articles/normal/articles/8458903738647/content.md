@@ -9,11 +9,11 @@
 <h1 id="h_01GBP177AT8V4HTN8S0JY9PKN7"><span style="font-weight: 400;">How to pause invites</span></h1>
 <p><span style="font-weight: 400;">1. Those with <strong>Manage Server permissions</strong> can head over to <strong>Server Settings</strong> <strong>&gt;</strong> <strong>Invites</strong></span></p>
 <p><span style="font-weight: 400;">2. Press the <strong>Pause Invites</strong> button. </span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8567960845335/invites-button-pause-invites-setting.png" alt="invites-button-pause-invites-setting.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8567960845335" alt="invites-button-pause-invites-setting.png"></span></p>
 <p><span style="font-weight: 400;">Now that your invite links are paused, users will no longer be able to join your Community until you re-enable invites. Rest assured your existing invite links, embeds, and vanity URLs will still be visible.</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8567952960535/enable-invites-button-pause-invites-setting-page.png" alt="enable-invites-button-pause-invites-setting-page.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8567952960535" alt="enable-invites-button-pause-invites-setting-page.png"></span></p>
 <p><span style="font-weight: 400;">3. While your invites are paused, users who press on an invite link will be notified that invites are paused for your Community and will be unable to join:</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8514086260631/pause-invites-invalid-notification.jpg" alt="pause-invites-invalid-notification.jpg" width="568" height="181"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8514086260631" alt="pause-invites-invalid-notification.jpg" width="568" height="181"></span></p>
 <p><span style="font-weight: 400;">4. To re-enable invites so that users can join your Community again, navigate back to <strong>Server Settings &gt; Invites</strong> and press <strong>Enable Invites</strong>. Users who now press on your invite link will be able to successfully join your Community.</span></p>
 <h1 id="h_01GBP1JJQZ412D2VK4419RDA69"><span style="font-weight: 400;">Why should I pause invites to my server?</span></h1>
 <ul>
