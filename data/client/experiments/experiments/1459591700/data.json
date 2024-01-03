@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_developers_get_developer_shelf",
+    "label": "Developers Get Developer Shelf",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable developers get developer shelf"
+    ],
+    "hash": 1459591700,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
