@@ -19443,8 +19443,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -26900,9 +26900,16 @@ html .progress__4ef76 {
 }
 
 .positionLayer__50609 {
-    left: 86px;
     pointer-events: none;
     z-index: 0
+}
+
+.positionLayerDefaultAlignLeft_b90a2b {
+    right: var(--spacing-16)
+}
+
+.positionLayerDefaultAlignRight__0e6fa {
+    left: var(--spacing-16)
 }
 
 .positionContainer__0c914 {
@@ -26920,7 +26927,6 @@ html .progress__4ef76 {
     max-width: 100%;
     pointer-events: all;
     position: absolute;
-    right: 0;
     width: 100%;
     z-index: 1
 }
@@ -26987,7 +26993,6 @@ html .progress__4ef76 {
 .resizeHandle__86d9c {
     cursor: ew-resize;
     height: 100%;
-    left: -2px;
     position: absolute;
     top: 0;
     width: 4px;
@@ -27834,6 +27839,10 @@ html .progress__4ef76 {
     left: -10px;
     width: 150%;
     height: 150%
+}
+
+.expressionPickerPositionLayer__2061e {
+    left: 86px
 }
 
 .theme-dark.custom-theme-background .attachedBars_da3c74 {
@@ -109485,6 +109494,10 @@ html .invoiceCancelRow_a8669b {
     color: var(--status-danger)
 }
 
+.expressionPickerPositionLayer_f15e20 {
+    right: var(--spacing-80)
+}
+
 .heading-sm-normal__4a449 {
     font-family: var(--font-display);
     font-size: 14px;
@@ -124103,4 +124116,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.81ee7e50d79cc662a7d4.css.map*/
+/*# sourceMappingURL=app.8734f201f8c9dcd63932.css.map*/

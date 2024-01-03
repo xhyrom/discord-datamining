@@ -4860,6 +4860,7 @@
                 channelTextAreaDisabled: "channelTextAreaDisabled_c43b1c",
                 disabledButtonWrapper: "disabledButtonWrapper__02c7a",
                 emojiButton: "emojiButton__30ec7 button__55e53",
+                expressionPickerPositionLayer: "expressionPickerPositionLayer__2061e",
                 focusRing: "focusRing_e5d39f",
                 fontSize12Padding: "fontSize12Padding__8bf16",
                 fontSize14Padding: "fontSize14Padding__152fa",
@@ -7447,6 +7448,8 @@
                 positionContainer: "positionContainer__0c914",
                 positionContainerOnlyEmoji: "positionContainerOnlyEmoji_be9d5f",
                 positionLayer: "positionLayer__50609",
+                positionLayerDefaultAlignLeft: "positionLayerDefaultAlignLeft_b90a2b",
+                positionLayerDefaultAlignRight: "positionLayerDefaultAlignRight__0e6fa",
                 resizeHandle: "resizeHandle__86d9c",
                 soundboardContainer: "soundboardContainer__81b8e",
                 stickersNavItem: "stickersNavItem__017c9",
@@ -19304,6 +19307,12 @@
                 dangerIcon: "dangerIcon__836bc",
                 header: "header_cf90da",
                 warningIcon: "warningIcon__17017"
+            }
+        },
+        929574: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                expressionPickerPositionLayer: "expressionPickerPositionLayer_f15e20"
             }
         },
         652886: function(e, t, o) {
