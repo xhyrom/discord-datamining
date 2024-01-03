@@ -18009,9 +18009,16 @@ html.disable-forced-colors * {
     flex-direction: column;
     margin-top: 4px;
     background-color: var(--background-secondary);
-    padding: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px
+}
+
+.cardContent_fc7261 {
+    display: flex;
+    flex-direction: column;
     gap: 8px;
-    border-radius: 8px 8px 0 0
+    padding: 12px
 }
 
 .cardHeader__60ecb {
@@ -18040,9 +18047,7 @@ html.disable-forced-colors * {
     flex-direction: row;
     align-items: center;
     background-color: var(--background-secondary-alt);
-    padding: 4px;
-    border-radius: 0 0 8px 8px;
-    margin-bottom: 12px
+    padding: 4px
 }
 
 .iconContainer_c66c93 {
@@ -18151,6 +18156,32 @@ html.disable-forced-colors * {
 .compact__0b450 .spanCorrection__78174 {
     display: flex !important;
     flex-direction: row
+}
+
+.alertsEnabledSubHeader_d89186 {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.alertsEnabledSubHeaderAvatarUsername_f5fe74 {
+    display: flex;
+    align-items: center;
+    cursor: pointer
+}
+
+.dotSeparatedRow__2d230 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px
+}
+
+.dot__65d82 {
+    width: 4px;
+    height: 4px;
+    background-color: var(--background-modifier-accent);
+    border-radius: 50%
 }
 
 .channelNameChange__6b031 {
@@ -26502,4 +26533,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.bd3b8114190f49308486.css.map*/
+/*# sourceMappingURL=shared.04a38492543055654df4.css.map*/
