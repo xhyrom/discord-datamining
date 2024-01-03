@@ -39624,6 +39624,45 @@ html .progress__4ef76 {
     padding-bottom: var(--spacing-16)
 }
 
+.tooltip_e208e4 {
+    width: 232px;
+    max-width: 232px
+}
+
+.tooltipContent_e5fd34 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding: var(--spacing-16)
+}
+
+.iconContainer__5eefd {
+    display: flex;
+    flex-direction: row
+}
+
+.inviteImage__4d65c {
+    width: 24px;
+    height: 24px;
+    border-radius: var(--radius-xs)
+}
+
+.offsetAvatarContainer_e93278 {
+    position: relative;
+    width: 24px;
+    height: 24px
+}
+
+.inviterImage_ab64aa {
+    position: absolute;
+    left: -5px
+}
+
+.titleContainer_a9c874 {
+    margin-left: var(--spacing-8)
+}
+
 .recentsIcon__3c4cf {
     position: relative
 }
@@ -124064,4 +124103,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.fa06323915e402ad8cea.css.map*/
+/*# sourceMappingURL=app.81ee7e50d79cc662a7d4.css.map*/
