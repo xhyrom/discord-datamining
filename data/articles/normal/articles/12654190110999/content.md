@@ -122,7 +122,7 @@
 <h4 id="h_01HFW7WQ05KSPGTJCHCCF4X9NA"><span style="color: #666666;" data-darkreader-inline-color="">2. Open call details and settings</span></h4>
 <h4 id="h_01HFW7WQ05W1YM2GSJYJFDPZ49"><span style="color: #666666;" data-darkreader-inline-color="">3. Change audio to speakerphone</span></h4>
 <h4 id="h_01HFW7WQ054CC0VJ51ZN91EMAT"><span style="color: #666666;" data-darkreader-inline-color="">4. Invite friends to call</span></h4>
-<p>To screenshare or start an activity, tap the <strong>rocket icon</strong> at the bottom of the voice call. </p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">To screenshare or start an activity, tap on the screen to reveal the bottom menu. Then you can tap on the </span><strong><span style="color: #2e3338;" data-darkreader-inline-color="">rocket icon</span></strong><span style="color: #2e3338;" data-darkreader-inline-color=""> to pull up all available activities.</span></p>
 <p>When in a voice call, you can double-tap on another user’s tile to make their video fullscreen. </p>
 <p>When you're in a fullscreen activity or stream, double-tap to minimize it and get back to the rest of the call participants.</p>
 <h1 id="h_01HFW7WQ056CJ4W605NMYQPBEF">Swipe to Reply</h1>
