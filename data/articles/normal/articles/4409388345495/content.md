@@ -1,4 +1,4 @@
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409574846615/Server-Avatars-splash-Nitro-badge.png" alt="Server-Avatars-splash-Nitro-badge.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409574846615" alt="Server-Avatars-splash-Nitro-badge.png"></p>
 <p>Have you ever wanted to express yourself with unique user identities across all your servers? Perhaps you're in a tabletop roleplaying game server and you want to have a server-specific avatar, profile banner, and bio inspired by your super cool character? Or maybe you're in a server all about coffee and you want an avatar and profile banner of your favorite cup of hot bean juice? Well, now you can with our Nitro perk: Server Profiles!</p>
 <p><span class="wysiwyg-font-size-large"><strong>What does this article cover?</strong></span></p>
 <ul>
@@ -37,17 +37,17 @@
 <p>In the browser or desktop app, you can right-click on your avatar in Member List of the server, which is the right side bar, and activate the the drop down menu.</p>
 <p>Press on the <strong>Edit Server Profile </strong>option and an in-app pop-up window will appear. You can then press on your avatar to upload your server avatar.</p>
 <p>Press the <strong>Save</strong> button to confirm your server avatar!</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636183062167/update-right-click-edit-server-profile.gif" alt="update-right-click-edit-server-profile.gif" width="685" height="397"></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636687143703/updated-server-profile-settings-avatar.png" alt="updated-server-profile-settings-avatar.png" width="676" height="671"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636183062167" alt="update-right-click-edit-server-profile.gif" width="685" height="397"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636687143703" alt="updated-server-profile-settings-avatar.png" width="676" height="671"></p>
 <h3>Like profile avatars, PNG and JPG are the supported file types and Nitro users can upload a GIF for their server avatars. After uploading a server avatar, you can crop and center PNG, JPG, and GIF files. </h3>
 <h2 id="h_01FGM5JCW5TMQAR0VAFG1Y8SZH">Left-Click on your Avatar</h2>
 <p>Alternatively, you can left-click on your avatar in the Member List, in a text channel, or in a voice channel to make the mini profile pop-up appear. You'll then see at the top right corner a <strong>pencil icon</strong>, which you can press to show the <strong>Edit Server Profile </strong>and <strong>Edit User Profile </strong>options. Press on <strong>Edit Server Profile</strong> to change your server avatar in the <strong>Server Profile </strong>settings page.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636388018071/update-left-click-edit-server-profile.gif" alt="update-left-click-edit-server-profile.gif" width="705" height="409"></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636687143703/updated-server-profile-settings-avatar.png" alt="updated-server-profile-settings-avatar.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636388018071" alt="update-left-click-edit-server-profile.gif" width="705" height="409"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636687143703" alt="updated-server-profile-settings-avatar.png"></p>
 <p>Don't forget to press on the <strong>Save Changes</strong> button to confirm your avatar change.</p>
 <h2 id="h_01FGM5JM22TG41PZR8SMFXBTKR">What if I want to reset my Server Avatar?</h2>
 <p>If you made a mistake with your server avatar or if you would like to revert your server avatar to your profile avatar, you can navigate to the in-app pop-up window following either of the two methods above and then press on <strong>Remove Avatar</strong>.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6635274442263/updated-server-profile-settings-page-avatar.png" alt="updated-server-profile-settings-page-avatar.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6635274442263" alt="updated-server-profile-settings-page-avatar.png"></p>
 <h2 id="h_01FJ354SN3Q9YQ28AB5GMXWTVA">Changing your Server Avatar on Mobile</h2>
 <p>If you'd like to customize your Server Avatar while on the iOS or Android clients, you can do so through two ways: the <strong>User Profile</strong> and the <strong>Server Profile</strong>.</p>
 <ol>
@@ -78,11 +78,11 @@
 </h3>
 <h1 id="h_01FPE3GWZ62G842RFFFYD9NTJT">How do I change my profile banner?</h1>
 <p>In your <strong>Server Profile</strong> settings, press <strong>Change Banner</strong> to upload your server banner.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636757438999/updated-server-profile-settings-banner.png" alt="updated-server-profile-settings-banner.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636757438999" alt="updated-server-profile-settings-banner.png"></p>
 <p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> members can upload an image or animated GIF as their profile banner. Supported file types are PNG, JPG, and animated GIFs under 10MB. The recommended minimum size is 600x240.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4415382163223/nitro_profile_banner.png" alt="nitro_profile_banner.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4415382163223" alt="nitro_profile_banner.png"></p>
 <h3 class="wysiwyg-text-align-left">Tip: Images can be cropped after upload</h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4415382164247/banner_edit_image.png" alt="banner_edit_image.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4415382164247" alt="banner_edit_image.png"></p>
 <h1 id="h_01G52M1Y6A47PB0S6MRYJF7VQD">How do I set up an “About Me” for my Server Profile?</h1>
 <p><span style="font-weight: 400;">In the </span><strong>Server Profile</strong><span style="font-weight: 400;"> settings page, you can write a small blurb in the text box under </span><strong>About Me </strong><span style="font-weight: 400;">that’s specific to your server profile.</span></p>
 <p><span style="font-weight: 400;">Your </span><strong>About Me</strong><span style="font-weight: 400;"> for your server profile can have:</span></p>
@@ -96,7 +96,7 @@
 </ul>
 <h3>Note: Nitro<span style="font-weight: 400;"> and </span>Nitro Classic<span style="font-weight: 400;"> subscribers can use </span><a href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis"><span style="font-weight: 400;">custom emojis</span></a><span style="font-weight: 400;"> in their About Me.</span>
 </h3>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/6635417351447/updated-server-profile-settings-page-about-me-box.png" alt="updated-server-profile-settings-page-about-me-box.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/6635417351447" alt="updated-server-profile-settings-page-about-me-box.png"></span></p>
 <h1 id="h_01FGCPPE37QG92W7XCVV53NVC3">Frequently Asked Questions</h1>
 <p id="h_01FGCPPQ1ZJN7YBBFZ5J3T21XA"><span class="wysiwyg-font-size-large"><strong>Q: What happened to server nicknames?</strong></span></p>
 <p>A: Server nicknames still exist and are free to all Discord users! To change your server nickname, you can follow the same steps to change your server avatar, but instead input/change your server nickname in the in-app pop-up window.</p>
