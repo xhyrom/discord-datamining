@@ -13,7 +13,7 @@
     <li><a href="#h_01H0TCK5PHAH4ZHZA1WQX2T3FG" target="_self">Using Server Templates</a></li>
 </ul>
 <h1 id="h_01H0TCJ3ZR5K7A387D2G661Z9S"><strong>Creating a Server Template</strong></h1>
-<h3><strong>Note: This feature is currently only available on the desktop and browser app. If you’re on the mobile app, you sadly won’t be able to create a new Server Template at this point in time.</strong></h3>
+<h3 id="h_01HKB09WH3V4RQEY8T3EYQ44HA"><strong>Note: This feature is currently only available on the desktop and browser app. If you’re on the mobile app, you sadly won’t be able to create a new Server Template at this point in time.</strong></h3>
 <p><strong>1.</strong> To create a Server Template, you will need to be the owner of the server or have a role with the <strong>Manage Server</strong> permission enabled: </p>
 <p class="wysiwyg-text-align-center"><img style="height: 91px; width: 412px;" src="https://support.discord.com/hc/article_attachments/14711163397399"></p>
 <p><strong>2.</strong> If you meet either requirements, navigate to <strong>Server Settings</strong> by selecting the dropdown menu next to the server name or by right-clicking the server name itself:</p>
@@ -24,6 +24,7 @@
 <p class="wysiwyg-text-align-center"><img style="height: 228.3060806911387; width: 580px;" src="https://support.discord.com/hc/article_attachments/14711132300823"></p>
 <p>6. Once you’ve generated a link, simply select <strong>Copy</strong> and you are ready to share your Server Template!</p>
 <p class="wysiwyg-text-align-center"><img style="height: 107.98886827458257; width: 534px;" src="https://support.discord.com/hc/article_attachments/14711147670551"></p>
+<h3 id="docs-internal-guid-84a9ee3d-7fff-fdff-493a-a547934d75c6"><span style="color: #434343;">Note: Community-enabled channel types (e.g. Forum, Announcement, and Stage) are not transferable and are not included within Server Templates.</span></h3>
 <h2 id="h_01H0TCJDWN13DFN9FTP502E13Q"><strong>Sync Server Templates</strong></h2>
 <p>Server Templates do not automatically update when you make changes to the original server's set-up. That means if the Server Template isn't synced, you won't see the new changes when using the template!</p>
 <p>However, a notification will pop up by your server’s name when you make changes to your server:</p>
@@ -43,7 +44,7 @@
 <p> </p>
 <p>If you run into this error, you’ll need to reduce the number of Role Permissions overwrites in your Server before you are able to create a Server Template.</p>
 <p> </p>
-<h3>
+<h3 id="h_01HKB09WH3SNV89GB4RZX5H2AF">
     <strong><span style="color: #434343;" data-darkreader-inline-color="">Note:</span></strong><span style="color: #434343;" data-darkreader-inline-color=""> This limit does apply retroactively, so we recommend keeping tabs on the number of permission overwrites you are adding to your server to ensure that your friends are able to use your Server Template as well.</span>
 </h3>
 <p> </p>
@@ -56,5 +57,5 @@
 <p>If you’re satisfied with the preview of the server template, you can rename the server and upload a new server image from the preview window.</p>
 <p>Once you select <strong>Create</strong>, brand new servers can be created with all the preset channels, roles, and permissions using the server template. </p>
 <p class="wysiwyg-text-align-center"><img style="height: 327px; width: 537px;" src="https://support.discord.com/hc/article_attachments/14711147697943"></p>
-<h3><strong>Note: If the Template creator deletes the Server Template, the link will no longer work.</strong></h3>
+<h3 id="h_01HKB09WH4ZQSM6WGNSY69J31D"><strong>Note: If the Template creator deletes the Server Template, the link will no longer work.</strong></h3>
 <p class="wysiwyg-text-align-center"><img style="height: 270px; width: 501px;" src="https://support.discord.com/hc/article_attachments/14711163434775"><img src="https://support.discord.com/hc/article_attachments/14711194315927" alt="blobid0.png"></p>
