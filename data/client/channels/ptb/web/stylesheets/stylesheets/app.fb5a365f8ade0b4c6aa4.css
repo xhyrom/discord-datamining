@@ -19130,8 +19130,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .planInfo_cd8cba {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -19443,8 +19443,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -42654,7 +42654,8 @@ html .progress__4ef76 {
 
 .backButton__576ea {
     height: 38px;
-    margin-right: auto
+    margin-right: auto;
+    color: var(--text-normal)
 }
 
 .skip_f687eb {
@@ -42677,6 +42678,10 @@ html .progress__4ef76 {
 .title_cba92b {
     text-align: center;
     font-weight: 700
+}
+
+.backButton_c0ce06 {
+    color: var(--text-normal)
 }
 
 .subtitle__963da {
@@ -124141,4 +124146,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5ae4feb0a21e759d3eb4.css.map*/
+/*# sourceMappingURL=app.fb5a365f8ade0b4c6aa4.css.map*/
