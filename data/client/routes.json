@@ -4731,7 +4731,10 @@
   },
   "QUESTS_HEARTBEAT": {
     "url": "/quests/:param/heartbeat",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "ATTACHMENTS_REFRESH_URLS": {
     "url": "/attachments/refresh-urls",
