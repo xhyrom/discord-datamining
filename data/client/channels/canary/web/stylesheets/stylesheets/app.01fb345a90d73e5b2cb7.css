@@ -20728,21 +20728,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     height: 16px
 }
 
-.effect__50f2a {
-    position: absolute;
-    pointer-events: none;
-    bottom: 0;
-    overflow: hidden
-}
-
-.effectsWrapper__9fe42 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    z-index: 1
-}
-
 .pill_f4ac2f {
     position: absolute;
     top: 0;
@@ -33906,6 +33891,21 @@ html .progress__4ef76 {
     to {
         transform: translate(.0625rem, -.0625rem)rotate(-1deg)
     }
+}
+
+.effect__50f2a {
+    position: absolute;
+    pointer-events: none;
+    bottom: 0;
+    overflow: hidden
+}
+
+.effectsWrapper__9fe42 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    z-index: 1
 }
 
 .container_dc03c3 {
@@ -124146,4 +124146,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7b724e2e3f1c68783582.css.map*/
+/*# sourceMappingURL=app.01fb345a90d73e5b2cb7.css.map*/
