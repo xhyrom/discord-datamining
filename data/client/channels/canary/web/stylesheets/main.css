@@ -2806,7 +2806,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -2837,8 +2837,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -18655,8 +18655,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase
 }
 
@@ -124141,4 +124141,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6ce018fb4d8ee9f3ed8b.css.map*/
+/*# sourceMappingURL=app.ddf9511b526664459b0d.css.map*/
