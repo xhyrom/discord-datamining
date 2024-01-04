@@ -5201,8 +5201,7 @@
                 buttonsContainer: "buttonsContainer_ce5947",
                 header: "header__65043",
                 recentClipsPopout: "recentClipsPopout__5b2fb",
-                thumbnail: "thumbnail__1fc02",
-                thumbnailStack: "thumbnailStack__555a3"
+                thumbnailStackContainer: "thumbnailStackContainer__1b379"
             }
         },
         11103: function(e, t, o) {
@@ -5269,6 +5268,17 @@
                 inputItemText: "inputItemText__21b04",
                 inputItemTitle: "inputItemTitle__7da53",
                 selectControl: "selectControl_ff47fe"
+            }
+        },
+        471888: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                "height-1": "height-1__01fae",
+                "height-2": "height-2__71c0c",
+                "height-3": "height-3__807c8",
+                "height-max": "height-max_d44a21",
+                thumbnail: "thumbnail__8d582",
+                thumbnailStack: "thumbnailStack__3fa0d"
             }
         },
         458554: function(e, t, o) {
