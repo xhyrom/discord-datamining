@@ -673,14 +673,14 @@
                     }
                     return v(t, o, s, E, e)
                 };
-                return null != i ? new Promise(e => {
+                return null != i ? new Promise((e, t) => {
                     (0, f.default)(i, A, () => {
                         _.leaveActivity({
                             channelId: o,
                             applicationId: i.id
                         }), N({
                             bypassChangeVcModal: !0
-                        })
+                        }).then(e).catch(t)
                     }, () => e(!0))
                 }) : N()
             }
@@ -1059,7 +1059,7 @@
                         n = A.can(E.Permissions.CONNECT, C),
                         l = A.can(E.Permissions.USE_EMBEDDED_ACTIVITIES, C);
                     if (!l) return 1;
-                    if (!t) {
+                    if (C.isVocal() && !t) {
                         if (i) return 3;
                         if (!n) return 2
                     }
@@ -2101,4 +2101,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47146.85b388ae9beae4a7591d.js.map
+//# sourceMappingURL=47146.2aeefdd47b02a9f928a7.js.map
