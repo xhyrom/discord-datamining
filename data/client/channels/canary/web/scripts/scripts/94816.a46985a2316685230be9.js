@@ -2470,7 +2470,8 @@
                             i = {
                                 [c.ApplicationCommandType.CHAT]: t(),
                                 [c.ApplicationCommandType.MESSAGE]: t(),
-                                [c.ApplicationCommandType.USER]: t()
+                                [c.ApplicationCommandType.USER]: t(),
+                                [c.ApplicationCommandType.PRIMARY_ENTRY_POINT]: t()
                             };
                         n.set(e, i)
                     }
@@ -4105,4 +4106,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94816.d22bf601d200484f1ca5.js.map
+//# sourceMappingURL=94816.a46985a2316685230be9.js.map
