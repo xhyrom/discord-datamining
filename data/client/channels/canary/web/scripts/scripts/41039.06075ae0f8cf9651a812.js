@@ -31150,74 +31150,80 @@
             n.r(t), n.d(t, {
                 default: function() {
                     return s
+                },
+                ChannelBackNavigationSources: function() {
+                    return a
                 }
             }), n("222007");
             var i, r = n("648564");
             (i || (i = {})).INVITE_ACCEPT = "invite_accept";
             var s = i;
-            r.OpenThreadAnalyticsLocations.EMBED, r.OpenThreadAnalyticsLocations.FORUM
+            let a = new Set([r.OpenThreadAnalyticsLocations.EMBED, r.OpenThreadAnalyticsLocations.FORUM])
         },
         393414: function(e, t, n) {
             "use strict";
             let i, r, s;
             n.r(t), n.d(t, {
                 transitionTo: function() {
-                    return _
-                },
-                transitionToGuild: function() {
                     return S
                 },
-                replaceWith: function() {
+                transitionToGuild: function() {
                     return m
                 },
-                getHistory: function() {
+                currentRouteHasBackNavigation: function() {
                     return T
                 },
-                getLastRouteChangeSource: function() {
+                replaceWith: function() {
                     return g
                 },
-                getLastRouteChangeSourceLocationStack: function() {
+                getHistory: function() {
                     return I
                 },
-                isValidFingerprintRoute: function() {
+                getLastRouteChangeSource: function() {
                     return C
                 },
-                getFingerprintLocation: function() {
+                getLastRouteChangeSourceLocationStack: function() {
                     return v
                 },
-                hasNavigated: function() {
+                isValidFingerprintRoute: function() {
                     return A
                 },
-                back: function() {
+                getFingerprintLocation: function() {
                     return R
                 },
-                forward: function() {
+                hasNavigated: function() {
                     return N
+                },
+                back: function() {
+                    return O
+                },
+                forward: function() {
+                    return D
                 }
             }), n("424973"), n("781738");
             var a = n("294094"),
                 o = n("605250"),
-                l = n("659500");
-            n("877275");
-            var u = n("49111");
-            let c = new o.default("Routing/Utils"),
-                d = [u.RelativeMarketingURLs.DEVELOPER_PORTAL];
+                l = n("659500"),
+                u = n("877275"),
+                c = n("49111");
+            let d = new o.default("Routing/Utils"),
+                f = [c.RelativeMarketingURLs.DEVELOPER_PORTAL];
             i = __OVERLAY__ ? (0, a.createMemoryHistory)() : (0, a.createBrowserHistory)();
-            let f = !1,
-                E = i.listen((e, t) => {
-                    "REPLACE" !== t && (f = !0, E())
+            let E = !1,
+                h = i.listen((e, t) => {
+                    "REPLACE" !== t && (E = !0, h())
                 });
 
-            function h() {
-                return !l.ComponentDispatch.hasSubscribers(u.ComponentActions.MODAL_CLOSE) && (n("144747").default.close(), !0)
+            function p() {
+                return !l.ComponentDispatch.hasSubscribers(c.ComponentActions.MODAL_CLOSE) && (n("144747").default.close(), !0)
             }
 
-            function p(e, t) {
-                return !!("string" == typeof e && d.some(t => e.startsWith(t))) && (c.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), !0)
+            function _(e, t) {
+                return !!("string" == typeof e && f.some(t => e.startsWith(t))) && (d.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), !0)
             }
 
-            function _(e, t, n, a) {
-                !p(e, "assign") && (c.log("transitionTo - Transitioning to ".concat(e)), null != n && (null == t ? t = {
+            function S(e, t, n, a) {
+                !_(e, "assign") && (d.log("transitionTo - Transitioning to ".concat(e)), null != n && (null == t ? t = {
                     source: n
                 } : t.source = n), null == t ? i.push(e) : i.push({
                     pathname: e,
@@ -31225,69 +31231,73 @@
                 }), r = n, s = a)
             }
 
-            function S(e, t, n, i, r) {
-                c.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
+            function m(e, t, n, i, r) {
+                d.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
                     guildId: e,
                     channelId: t,
                     messageId: n
-                }))), _(u.Routes.CHANNEL(e, t, n), null != r ? r : null, i)
-            }
-
-            function m(e, t, n) {
-                !p(e, "replace") && (c.log("Replacing route with ".concat(e)), "string" == typeof e ? i.replace(e, t) : i.replace(e), r = n)
+                }))), S(c.Routes.CHANNEL(e, t, n), null != r ? r : null, i)
             }
 
             function T() {
-                return i
+                return null != r && u.ChannelBackNavigationSources.has(r)
             }
 
-            function g() {
-                return r
+            function g(e, t, n) {
+                !_(e, "replace") && (d.log("Replacing route with ".concat(e)), "string" == typeof e ? i.replace(e, t) : i.replace(e), r = n)
             }
 
             function I() {
+                return i
+            }
+
+            function C() {
+                return r
+            }
+
+            function v() {
                 return s
             }
 
-            function C(e) {
+            function A(e) {
                 if (null == e) {
                     var t;
                     e = null !== (t = i.location.pathname) && void 0 !== t ? t : ""
                 }
-                return !e.startsWith(u.Routes.HANDOFF) && !0
+                return !e.startsWith(c.Routes.HANDOFF) && !0
             }
 
-            function v(e) {
+            function R(e) {
                 if (null == e) {
                     var t;
                     e = null !== (t = i.location.pathname) && void 0 !== t ? t : ""
                 }
-                if (e.startsWith(u.Routes.LOGIN)) return u.PageAnalyticsLocations.LOGIN;
-                if (e.startsWith(u.Routes.REGISTER)) return u.PageAnalyticsLocations.REGISTER;
-                if (e.startsWith(u.Routes.INVITE(""))) return u.PageAnalyticsLocations.INVITE;
-                else if (e.startsWith(u.Routes.VERIFY)) return u.PageAnalyticsLocations.VERIFY;
-                else if (e.startsWith(u.Routes.DISABLE_EMAIL_NOTIFICATIONS)) return u.PageAnalyticsLocations.DISABLE_EMAIL_NOTIFICATIONS;
-                else if (e.startsWith(u.Routes.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS)) return u.PageAnalyticsLocations.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS;
-                else if (e.startsWith(u.Routes.REJECT_IP)) return u.PageAnalyticsLocations.REJECT_IP;
-                else if (e.startsWith(u.Routes.REJECT_MFA)) return u.PageAnalyticsLocations.REJECT_MFA;
-                else if (e.startsWith(u.Routes.AUTHORIZE_IP)) return u.PageAnalyticsLocations.AUTHORIZE_IP;
-                else if (e.startsWith(u.Routes.AUTHORIZE_PAYMENT)) return u.PageAnalyticsLocations.AUTHORIZE_PAYMENT;
-                else if (e.startsWith(u.Routes.RESET)) return u.PageAnalyticsLocations.RESET;
-                else if (e.startsWith(u.Routes.REPORT)) return u.PageAnalyticsLocations.REPORT;
-                else if (e.startsWith(u.Routes.REPORT_SECOND_LOOK)) return u.PageAnalyticsLocations.REPORT_SECOND_LOOK;
+                if (e.startsWith(c.Routes.LOGIN)) return c.PageAnalyticsLocations.LOGIN;
+                if (e.startsWith(c.Routes.REGISTER)) return c.PageAnalyticsLocations.REGISTER;
+                if (e.startsWith(c.Routes.INVITE(""))) return c.PageAnalyticsLocations.INVITE;
+                else if (e.startsWith(c.Routes.VERIFY)) return c.PageAnalyticsLocations.VERIFY;
+                else if (e.startsWith(c.Routes.DISABLE_EMAIL_NOTIFICATIONS)) return c.PageAnalyticsLocations.DISABLE_EMAIL_NOTIFICATIONS;
+                else if (e.startsWith(c.Routes.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS)) return c.PageAnalyticsLocations.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS;
+                else if (e.startsWith(c.Routes.REJECT_IP)) return c.PageAnalyticsLocations.REJECT_IP;
+                else if (e.startsWith(c.Routes.REJECT_MFA)) return c.PageAnalyticsLocations.REJECT_MFA;
+                else if (e.startsWith(c.Routes.AUTHORIZE_IP)) return c.PageAnalyticsLocations.AUTHORIZE_IP;
+                else if (e.startsWith(c.Routes.AUTHORIZE_PAYMENT)) return c.PageAnalyticsLocations.AUTHORIZE_PAYMENT;
+                else if (e.startsWith(c.Routes.RESET)) return c.PageAnalyticsLocations.RESET;
+                else if (e.startsWith(c.Routes.REPORT)) return c.PageAnalyticsLocations.REPORT;
+                else if (e.startsWith(c.Routes.REPORT_SECOND_LOOK)) return c.PageAnalyticsLocations.REPORT_SECOND_LOOK;
                 return e
             }
 
-            function A() {
-                return f
-            }
-
-            function R() {
-                h() && (r = null, i.goBack())
-            }
-
             function N() {
-                h() && (r = null, i.goForward())
+                return E
+            }
+
+            function O() {
+                p() && (r = null, i.goBack())
+            }
+
+            function D() {
+                p() && (r = null, i.goForward())
             }
         },
         239380: function(e, t, n) {
@@ -50005,7 +50015,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "257079"
+                                build_number: "257088"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63393,4 +63403,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.a7423e043fff0a21bb91.js.map
+//# sourceMappingURL=41039.06075ae0f8cf9651a812.js.map
