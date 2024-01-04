@@ -16509,8 +16509,15 @@
                 S = [c.AST_KEY.UNDERLINE, c.AST_KEY.STRONG, c.AST_KEY.ITALICS, c.AST_KEY.STRIKETHROUGH, c.AST_KEY.INLINE_CODE, c.AST_KEY.SPOILER, c.AST_KEY.LINE_BREAK, c.AST_KEY.TIMESTAMP, c.AST_KEY.EMOJI, c.AST_KEY.CUSTOM_EMOJI, c.AST_KEY.LIST, c.AST_KEY.HEADING, c.AST_KEY.BLOCK_QUOTE];
 
             function I(e, t) {
-                for (let n of (!Array.isArray(e) && (e = [e]), e))
-                    if (!t.includes(n.type) || n.type === c.AST_KEY.INLINE_CODE && null == I(n.validationChildContent, t) || Array.isArray(n.content) && null == I(n.content, t)) return null;
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
+                for (let i of (!Array.isArray(e) && (e = [e]), e)) {
+                    if (!t.includes(i.type)) return null;
+                    if (i.type === c.AST_KEY.INLINE_CODE) {
+                        let e = [...t, ...n];
+                        if (null == I(i.validationChildContent, e)) return null
+                    }
+                    if (Array.isArray(i.content) && null == I(i.content, t)) return null
+                }
                 return e
             }
 
@@ -16554,7 +16561,7 @@
                         G = [...b, ...C],
                         k = [...m, ...S],
                         F = t(R, P),
-                        w = I(F, G),
+                        w = I(F, G, [c.AST_KEY.EMOJI]),
                         H = t(y, P),
                         x = I(H, k);
                     if (null == w || null == x) return E();
@@ -34946,4 +34953,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.f41d32ea42386b237bf3.js.map
+//# sourceMappingURL=23303.19da9be14459af74d4d0.js.map
