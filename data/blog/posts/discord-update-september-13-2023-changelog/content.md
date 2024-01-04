@@ -18,7 +18,7 @@
             </ul>
             <h3><strong>‍</strong>Now playing: your theme music</h3>
             <ul role="list">
-                <li>‍<strong>Announce your arrival with Soundboard</strong>. TV shows have opening sequences. Pro athletes have walk-on songs. With [Soundboard](https://discord.com/blog/ready-your-airhorns-discord-soundboard-is-coming), you can let your friends know you’ve arrived with a choir of angels—or a shrieking pile of rubber chickens, whatever feels right. And with Nitro, you can choose a sound to <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H5JJ9XK68MMK1WXBFAQ0AQGR">play automatically</a> when you join a voice channel.<strong>‍</strong></li>
+                <li>‍<strong>Announce your arrival with Soundboard</strong>. TV shows have opening sequences. Pro athletes have walk-on songs. With <a href="https://discord.com/blog/ready-your-airhorns-discord-soundboard-is-coming">Soundboard</a>, you can let your friends know you’ve arrived with a choir of angels—or a shrieking pile of rubber chickens, whatever feels right. And with Nitro, you can choose a sound to <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H5JJ9XK68MMK1WXBFAQ0AQGR">play automatically</a> when you join a voice channel.<strong>‍</strong></li>
                 <li><strong>Nitro gift cards now </strong><a href="https://dis.gd/disgiftcard"><strong>available on Amazon</strong></a>. Buy 1, 3, 6, or 12 months of Nitro to email to your bestie or yourself. Stock up when you’re browsing for Halloween costumes, or just send the link to your tech-savvy grandma when she asks what to get you for your birthday. Available in the U.S. only.</li>
             </ul>
         </div>
