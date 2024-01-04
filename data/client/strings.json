@@ -9884,6 +9884,7 @@
   "GUILD_RULES_HEADER": "\"Server Rules\"",
   "GUILD_RULES_SUBHEADER": "\"By participating in this server, you have read and agreed to the server's rules.\"",
   "GUILD_RULES_EDIT_LINK": "\"Edit Server Rules\"",
+  "GUILD_RULES_INVALID_CHANNEL": "\"Invalid server rules channel\"",
   "DISCOVER": "\"Discover\"",
   "AVATAR_UPLOAD_EDIT_MEDIA": "\"Edit Image\"",
   "AVATAR_UPLOAD_CANCEL": "\"Cancel\"",
