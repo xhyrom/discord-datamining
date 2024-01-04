@@ -81551,8 +81551,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -81599,8 +81599,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .loader_acb69b {
@@ -124236,4 +124236,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.07977c4ba5e631fcbdfe.css.map*/
+/*# sourceMappingURL=app.7e02ad4a0f2b9c36e5ad.css.map*/
