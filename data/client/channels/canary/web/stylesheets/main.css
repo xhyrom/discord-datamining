@@ -19443,8 +19443,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -101864,6 +101864,197 @@ html .invoiceCancelRow_a8669b {
     background-color: var(--white-500)
 }
 
+.progressBarPercentContainer_bff7f6 {
+    margin-top: 10px;
+    margin-bottom: 16px
+}
+
+.progressPercent_bbea8c {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: .24px;
+    display: inline-block;
+    position: relative
+}
+
+.progressPercentInnerInProgress_b2f14d {
+    color: var(--text-brand)
+}
+
+.progressPercentInnerComplete_eea4c6 {
+    color: var(--text-positive)
+}
+
+.progressBarContainer__2c512 {
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
+
+.progressBarContainer__2c512,
+.progressBarOuter_cf06a5,
+.progressBarInner_af56bf {
+    height: 6px;
+    border-radius: 8px
+}
+
+.progressBarOuter_cf06a5 {
+    width: 100%;
+    background: var(--background-modifier-active)
+}
+
+.progressBarOuter_cf06a5,
+.progressBarInner_af56bf {
+    height: 6px;
+    border-radius: 8px
+}
+
+.questInProgressGradient__32570 {
+    background: linear-gradient(270deg, var(--premium-tier-1-blue)0%, rgba(115, 142, 245, 0)65.64%), var(--brand-500)
+}
+
+.progressBarInnerComplete__07ae6 {
+    background: var(--green-330)
+}
+
+.outerContainer_a94665 {
+    min-height: 130px;
+    border-radius: 0 0 8px 8px;
+    padding: 16px;
+    display: flex
+}
+
+.questRewardContainer__46761 {
+    max-width: 150px;
+    max-height: 150px
+}
+
+.questReward__12781 {
+    border-radius: 8px;
+    pointer-events: none
+}
+
+.innerContainer_e82bb0 {
+    padding: 16px 0 0 16px;
+    width: 100%
+}
+
+.questCopyCta_c1ee0b {
+    display: flex
+}
+
+.questCopy__55f21 {
+    max-width: 400px
+}
+
+.questCta_ba3931 {
+    margin-left: auto
+}
+
+.ctaTooltipCopy__83704 {
+    text-align: center
+}
+
+.theme-light .outerContainer_a94665 {
+    background: var(--background-tertiary)
+}
+
+.theme-dark .outerContainer_a94665 {
+    background: var(--background-secondary)
+}
+
+.questsCardHeader__149ea {
+    height: 185px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    position: relative
+}
+
+.questSplash__98953 {
+    position: absolute;
+    height: 185px;
+    width: 660px
+}
+
+.headerContent_e8529b {
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+
+.iconLogotypeContainer__065f9 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-left: 16px
+}
+
+.questIcon__5afef {
+    margin-right: 8px;
+    height: 34px;
+    width: 34px;
+    border-radius: 4px;
+    pointer-events: none
+}
+
+.questLogotype__0fc95 {
+    align-self: center;
+    max-height: 24px;
+    max-width: 120px;
+    pointer-events: none
+}
+
+.questInfo_b1b9e7 {
+    margin-left: 16px;
+    margin-top: 4px
+}
+
+.questTitle__558af {
+    max-width: 400px
+}
+
+.questSubtitle_d058fc {
+    max-width: 200px
+}
+
+.theme-light .headerContent_e8529b {
+    background: linear-gradient(90deg, var(--white-100).04%, rgba(255, 255, 255, 0)99.96%)
+}
+
+.theme-dark .headerContent_e8529b {
+    background: linear-gradient(90deg, var(--black-500).04%, rgba(0, 0, 0, 0)99.96%)
+}
+
+.questsContainer__5df56 {
+    margin-top: 32px
+}
+
+.questsHeading_c53307 {
+    display: flex;
+    align-items: center
+}
+
+.questsIcon_ceed64 {
+    margin-right: 4px
+}
+
+.divider_f814bb {
+    margin: 8px 0 18px
+}
+
+.questsCard_c9865e {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px
+}
+
+.spinner_e1e709 {
+    margin-top: 40px
+}
+
 .divider_ed0c1d {
     margin: 32px 0
 }
@@ -124261,4 +124452,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2d78704ad8652ef29f3f.css.map*/
+/*# sourceMappingURL=app.d9287b4c85a40cd04019.css.map*/
