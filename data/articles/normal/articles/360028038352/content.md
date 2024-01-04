@@ -92,6 +92,7 @@
 <p>You can lose your boosting streak for any of the following reasons:</p>
 <ul>
     <li>You cancel your Server Boost(s)</li>
+    <li>Your Nitro (with 2 included Server Boosts) or your Server Boost(s) subscription has ended</li>
     <li>The server you have been boosting has been deleted </li>
     <li>You’ve been removed from the server by an admin or moderator</li>
 </ul>
@@ -105,7 +106,7 @@
 <p>4. You can either search for the name of the server you want to transfer the boost to, or you can tap on <strong>Transfer here</strong> if you see the server in the list. In order for a server to show up in the list, you <em>must</em> be a member of the server.</p>
 <p>5. Now just tap on <strong>Yes, Transfer Boost</strong>  to transfer the Server Boost.</p>
 <p>6. Finally you’ll see a confirmation message stating it has been transferred successfully.</p>
-<p class="wysiwyg-text-align-center"><img src="https://lh7-us.googleusercontent.com/C6PRZDKbcamFtCX4UA8Bx1MI9S3dCWx-MMtLxwSTB6Ph0dpQP8QDJ6n3YWyTmAip-bG0SIe1w3UO1peoiHeRk5xTLhCx7FPRJ9JsJxYU0aQusYt76OQT-OPidyGbDjQJ70PHfQEhIUZevWN3gnK_ehU" width="624" height="351"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20325154465815" width="624" height="351"></p>
 <h1 id="h_01HGX7DJ34RX96KX2RBPEANZKB">Server Owner/Admin View Of Server Boosts</h1>
 <p>If someone uses a Server Boost on your server, and you have the option enabled, you’ll see a message in your designated text channel that states someone has boosted the server.</p>
 <p id="h_01HGX7DJ349T9DMNMG7KYZN2TP" class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19576208168215" width="380" height="47"></span></p>
@@ -122,5 +123,5 @@
 </ul>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19576232999191" width="624" height="488"></p>
 <p>If your server is running low on Server Boosts and loses a level, the server will be able to keep the perks for a grace period of 72 hours. After 72 hours, the perks (such as the server banner and extra emojis) will not be fully removed from the server, but will become temporarily invalid until the level is regained.</p>
-<p>However, the Custom Invite Link will be lost and become available to other servers after 72 hours. </p>
+<p>However, the Custom Invite Link will be lost and become available to other servers after 30 days.</p>
 <p>Want to see different perks added to this in the future? We'd love to hear all your feedback and suggestions over at <a href="http://dis.gd/feedback" target="_blank" rel="noopener noreferrer">http://dis.gd/feedback</a>!</p>
