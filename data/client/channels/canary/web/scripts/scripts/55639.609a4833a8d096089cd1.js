@@ -51,7 +51,7 @@
                     return r
                 },
                 GuildMemberSafetyMembers: function() {
-                    return f
+                    return g
                 }
             }), i("424973"), i("222007");
             var r, n, s = i("969176"),
@@ -74,12 +74,12 @@
                 return -e.joinedAtTimestamp
             }
 
-            function g() {
+            function f() {
                 return new a.default(_, M)
             }(n = r || (r = {})).NEW_GUILD_MEMBER = "NEW_GUILD_MEMBER", n.CURRENT_GUILD_MEMBER = "CURRENT_GUILD_MEMBER", n.INCLUDED_IN_SEARCH_RESULTS = "INCLUDED_IN_SEARCH_RESULTS";
-            class f {
+            class g {
                 reset() {
-                    this._membersMap.clear(), this._membersMap = g(), this.resetNewMemberTimestamp()
+                    this._membersMap.clear(), this._membersMap = f(), this.resetNewMemberTimestamp()
                 }
                 resetNewMemberTimestamp() {
                     this.newMemberTimestamp = Date.now()
@@ -196,7 +196,7 @@
                     return this._membersMap.version
                 }
                 constructor(e) {
-                    this.newMemberTimestamp = Date.now(), this.guildId = e, this._membersMap = g()
+                    this.newMemberTimestamp = Date.now(), this.guildId = e, this._membersMap = f()
                 }
             }
         },
@@ -602,50 +602,61 @@
             "use strict";
             i.r(t), i.d(t, {
                 getDefaultSearchState: function() {
-                    return o
+                    return d
                 },
                 GuildMemberSafetySearch: function() {
-                    return c
+                    return _
                 }
             }), i("222007");
             var r = i("448105"),
                 n = i.n(r),
                 s = i("969176"),
                 u = i.n(s),
-                a = i("681937"),
-                l = i("509"),
-                h = i("770115");
+                a = i("249654"),
+                l = i("681937"),
+                h = i("509"),
+                o = i("770115");
 
-            function o() {
+            function d() {
                 return {
                     query: "",
                     requireUnusualDmActivity: !1,
                     requireCommunicationDisabled: !1,
                     requireUnusualAccountActivity: !1,
                     requireUsernameQuarantined: !1,
-                    selectedRoleIds: new Set
+                    selectedRoleIds: new Set,
+                    selectedJoinDateOption: {
+                        optionId: 0,
+                        afterDate: null,
+                        beforeDate: null
+                    },
+                    selectedAccountAgeOption: {
+                        optionId: 0,
+                        afterDate: null,
+                        beforeDate: null
+                    }
                 }
             }
-            let d = Object.freeze(o());
+            let m = Object.freeze(d());
 
-            function m(e, t) {
+            function c(e, t) {
                 return null != e && (!!(e.toLowerCase().includes(t.toLowerCase()) || n(e.toLowerCase(), t.toLowerCase())) || !1)
             }
-            class c {
+            class _ {
                 get requiresUsernameMatch() {
                     return this._searchState.query.trim().length > 0
                 }
                 reset() {
-                    this._searchState = o(), this.hasDefaultQuery = !0
+                    this._searchState = d(), this.hasDefaultQuery = !0
                 }
                 updateSearchState(e) {
                     return this._searchState = {
                         ...this._searchState,
                         ...e
-                    }, this.hasDefaultQuery = u(this._searchState, d), !0
+                    }, this.hasDefaultQuery = u(this._searchState, m), !0
                 }
                 resetSearchState() {
-                    return !this.hasDefaultQuery && (this._searchState = o(), this.hasDefaultQuery = !0, !0)
+                    return !this.hasDefaultQuery && (this._searchState = d(), this.hasDefaultQuery = !0, !0)
                 }
                 getSearchState() {
                     return this._searchState
@@ -657,35 +668,38 @@
                         requireCommunicationDisabled: r,
                         requireUnusualAccountActivity: n,
                         requireUsernameQuarantined: s,
-                        selectedRoleIds: u
+                        selectedRoleIds: u,
+                        selectedJoinDateOption: d,
+                        selectedAccountAgeOption: m
                     } = this._searchState;
                     if (t.length > 0 && ! function(e, t) {
                             if ("" === t.trim()) return !1;
-                            let [i, r] = (0, h.splitQuery)(t);
+                            let [i, r] = (0, o.splitQuery)(t);
                             for (let t of r)
                                 if (e.userId === t) return !0;
                             for (let t of i)
-                                if (m(e.nick, t)) return !0;
+                                if (c(e.nick, t)) return !0;
                             if (null == e.user) return !1;
                             let {
                                 globalName: n,
                                 username: s
                             } = e.user;
                             for (let e of i)
-                                if (m(s, e)) return !0;
+                                if (c(s, e)) return !0;
                             for (let e of i)
-                                if (m(n, e)) return !0;
+                                if (c(n, e)) return !0;
                             return !1
                         }(e, t)) return !1;
                     if (u.size > 0) {
-                        var o, d;
-                        if (o = e, !(0 !== (d = u).size && Array.from(d).every(e => o.roles.includes(e)))) return !1
+                        var _, M;
+                        if (_ = e, !(0 !== (M = u).size && Array.from(M).every(e => _.roles.includes(e)))) return !1
                     }
-                    if (i || r || n || s) return !!(i && e.hasUnusualDmActivity || r && (0, l.isMemberCommunicationDisabled)(e) || n && e.hasUnusualAccountActivity || s && (0, a.hasAutomodQuarantinedProfile)(e)) || !1;
+                    if (null != d.afterDate && e.joinedAtTimestamp < d.afterDate || null != d.beforeDate && e.joinedAtTimestamp > d.beforeDate || null != m.afterDate && a.default.extractTimestamp(e.userId) < m.afterDate || null != m.beforeDate && a.default.extractTimestamp(e.userId) > m.beforeDate) return !1;
+                    if (i || r || n || s) return !!(i && e.hasUnusualDmActivity || r && (0, h.isMemberCommunicationDisabled)(e) || n && e.hasUnusualAccountActivity || s && (0, l.hasAutomodQuarantinedProfile)(e)) || !1;
                     return !0
                 }
                 constructor(e) {
-                    this.guildId = e, this._searchState = o(), this.hasDefaultQuery = !0
+                    this.guildId = e, this._searchState = d(), this.hasDefaultQuery = !0
                 }
             }
         },
@@ -757,11 +771,11 @@
                 i.reset(t)
             }
 
-            function g() {
+            function f() {
                 return !1
             }
 
-            function f(e) {
+            function g(e) {
                 let {
                     guildId: t
                 } = e, i = _(t);
@@ -786,7 +800,7 @@
                     t = n.updateServerMembers(r) || t
                 }), t
             }
-            class S extends r.default.Store {
+            class p extends r.default.Store {
                 initialize() {
                     this.waitFor(s.default, u.default, l.default)
                 }
@@ -858,8 +872,8 @@
                     return t.lastCursorTimestamp
                 }
             }
-            S.displayName = "MemberSafetyStore";
-            let p = new S(n.default, {
+            p.displayName = "MemberSafetyStore";
+            let S = new p(n.default, {
                 CONNECTION_OPEN: function(e) {
                     return m ? m = !1 : ! function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
@@ -925,8 +939,8 @@
                     } = e, r = _(t);
                     return r.updateServerMembers(i)
                 },
-                GUILD_MEMBER_ADD: g,
-                GUILD_MEMBER_UPDATE: g,
+                GUILD_MEMBER_ADD: f,
+                GUILD_MEMBER_UPDATE: f,
                 GUILD_MEMBER_UPDATE_LOCAL: function(e) {
                     let {
                         guildId: t
@@ -940,8 +954,8 @@
                     } = e, r = _(t);
                     return r.removeMember(i.id)
                 },
-                GUILD_ROLE_UPDATE: f,
-                GUILD_ROLE_DELETE: f,
+                GUILD_ROLE_UPDATE: g,
+                GUILD_ROLE_DELETE: g,
                 GUILD_MEMBER_PROFILE_UPDATE: function(e) {
                     let {
                         guildId: t,
@@ -1093,7 +1107,7 @@
                     return r.updateMembersByMemberIds(i)
                 }
             });
-            var E = p
+            var E = S
         },
         159132: function(e, t, i) {
             "use strict";
@@ -1133,7 +1147,7 @@
             "use strict";
             i.r(t), i.d(t, {
                 registerFetchedSupplementals: function() {
-                    return g
+                    return f
                 },
                 JoinSourceType: function() {
                     return n
@@ -1167,13 +1181,13 @@
                 })
             }
 
-            function g(e, t) {
+            function f(e, t) {
                 t.forEach(t => (function(e, t, i) {
                     d[e + t] = 3
                 })(e, t, 3))
             }
 
-            function f(e) {
+            function g(e) {
                 return {
                     userId: e.user_id,
                     sourceInviteCode: e.source_invite_code,
@@ -1195,7 +1209,7 @@
                         }
                     });
                     if (!Array.isArray(t.body)) return M(i, 0), [];
-                    let n = t.body.map(f),
+                    let n = t.body.map(g),
                         s = [];
                     n.forEach(e => {
                         let {
@@ -1228,4 +1242,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55639.f4b3715209ac7b2c4b6c.js.map
+//# sourceMappingURL=55639.609a4833a8d096089cd1.js.map
