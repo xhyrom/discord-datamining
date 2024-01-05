@@ -13939,10 +13939,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 useIsBulkBanningExperimentEnabled: function() {
-                    return s
+                    return r
                 },
                 isInMembersTableSafetySignalsExperiment: function() {
-                    return r
+                    return u
+                },
+                isInMembersTablesAdditionalFilteringExperiment: function() {
+                    return o
                 }
             });
             var i = n("862205");
@@ -13975,23 +13978,23 @@
                             enabled: !0
                         }
                     }]
-                });
-            (0, i.createExperiment)({
-                kind: "guild",
-                id: "2024-01_guild_members_table_additional_filtering",
-                label: "Guild Members Table Additional Filtering",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Additional filtering enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-            let s = function(e) {
+                }),
+                s = (0, i.createExperiment)({
+                    kind: "guild",
+                    id: "2024-01_guild_members_table_additional_filtering",
+                    label: "Guild Members Table Additional Filtering",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Additional filtering enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
@@ -14007,7 +14010,7 @@
                     });
                     return l
                 },
-                r = function(e) {
+                u = function(e) {
                     let {
                         autoTrackExposure: t = !0,
                         disable: n = !1,
@@ -14015,6 +14018,22 @@
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
                         enabled: a
                     } = l.getCurrentConfig({
+                        guildId: e,
+                        location: i
+                    }, {
+                        autoTrackExposure: t,
+                        disable: n
+                    });
+                    return a
+                },
+                o = function(e) {
+                    let {
+                        autoTrackExposure: t = !1,
+                        disable: n = !1,
+                        location: i = "f03bed_10"
+                    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
+                        enabled: a
+                    } = s.getCurrentConfig({
                         guildId: e,
                         location: i
                     }, {
@@ -34959,4 +34978,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.bc4f598c9f1607ba89ce.js.map
+//# sourceMappingURL=23303.04c82c5544419d17ca58.js.map
