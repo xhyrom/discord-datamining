@@ -42088,13 +42088,24 @@
                     e.userId in c && delete c[e.userId]
                 },
                 STREAMER_MODE_UPDATE: function(e) {
+                    let t = {
+                        ...d
+                    };
                     return d[e.key] = e.value, "enabled" === e.key ? l(e.value, !1) : s.default.track(o.AnalyticEvents.UPDATE_STREAMER_MODE_SETTINGS, {
                         enabled: d.enabled,
                         automatic: d.autoToggle,
                         disable_notifications: d.disableNotifications,
                         disable_sounds: d.disableSounds,
                         hide_instant_invites: d.hideInstantInvites,
-                        hide_personal_info: d.hidePersonalInformation
+                        hide_personal_info: d.hidePersonalInformation,
+                        enable_content_protection: d.enableContentProtection,
+                        old_enabled: t.enabled,
+                        old_automatic: t.autoToggle,
+                        old_disable_notifications: t.disableNotifications,
+                        old_disable_sounds: t.disableSounds,
+                        old_hide_instant_invites: t.hideInstantInvites,
+                        old_hide_personal_info: t.hidePersonalInformation,
+                        old_enable_content_protection: t.enableContentProtection
                     }), !0
                 },
                 RUNNING_STREAMER_TOOLS_CHANGE: function(e) {
@@ -50024,7 +50035,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "257505"
+                                build_number: "257515"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63412,4 +63423,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.2e9f04d5d6a28868ed44.js.map
+//# sourceMappingURL=78033.c2cd565878b94c9ddcf5.js.map
