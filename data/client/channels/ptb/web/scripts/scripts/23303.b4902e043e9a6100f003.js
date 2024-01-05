@@ -14003,7 +14003,7 @@
                 },
                 r = function(e) {
                     let {
-                        autoTrackExposure: t = !1,
+                        autoTrackExposure: t = !0,
                         disable: n = !1,
                         location: i = "f03bed_9"
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
@@ -34953,4 +34953,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.19da9be14459af74d4d0.js.map
+//# sourceMappingURL=23303.b4902e043e9a6100f003.js.map
