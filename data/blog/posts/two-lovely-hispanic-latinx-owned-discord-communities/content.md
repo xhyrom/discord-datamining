@@ -11,7 +11,7 @@
             <p>The “Latinx in Gaming” community is a vibrant space that’s home to thousands of Hispanic &amp; Latinx members in the gaming industry. Their mission is to help “break down barriers to revolutionize the gaming industry for a more diverse, inclusive, and promising future.”</p>
             <p>It’s a place where community members uplift and empower both each other and fellow marginalized communities — and they’re always ready to lend a hand. "While most of our community hails from the U.S. with Latin American roots or directly from Latin America, our reach is global,” explains the server’s leadership. “Many members have forged unique paths as game devs, content creators, and gamers. Celebrating our diversity is our pride!”</p>
             <p>‍</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/651760cb609d69aaf9582308__jzKNEuI3iyq08luD_aZsiC4oTYajDiwuj6a415uYUrIBr0lPRfDAj2GZJWHAXfdPFeBB8owDBKdZfWBm8fC--j5BG8h66kM_WgH61zRzFvz6GAgwTIBy9SAcxCrfcQswWfsfjl2QT8YLcnZMwDcVSQ.gif" alt="A Discord-like embed for the verified Latinx in Gaming server."></div>
             </figure>
             <p>The server’s celebrations extend beyond Hispanic Heritage Month with three annual events: UNIDOS is their yearly community spotlight, showcasing extraordinary members — sort of like this article! Next is an annual game jam where their talented dev community creates games for a chance to win additional funding to polish up their respective entries.&nbsp;</p>
