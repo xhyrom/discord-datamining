@@ -7572,6 +7572,12 @@
                 reset: "reset__2fa7b"
             }
         },
+        45912: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                ring: "ring__452c3"
+            }
+        },
         308611: function(e, t, o) {
             "use strict";
             e.exports = {
