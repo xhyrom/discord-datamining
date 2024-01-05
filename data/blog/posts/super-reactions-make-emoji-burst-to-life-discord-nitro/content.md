@@ -3,7 +3,7 @@
         <div class="blog-post-content w-richtext">
             <p>Reactions: they say the stuff we just can’t put into words. Want to agree with your friend without saying “^ this” in chat? Slap a “✅” on that bad boy. But sometimes, a small emoji just isn’t enough.&nbsp;</p>
             <p>Take a look at this for instance:</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6413747e7afe9132577ceae0_SWIIc75HGdiA7GY_uRabXLCFm9hG43YL00eJ_r3-ZnY-XA66SdRLzu2ZuL4GkAFfaLtlkba3s73f-bgW7nDbUw1lPokN5lYs0C6FBPhjA0vhF5ifn1iFl7SXT0pZIUmC4xPU7bAeGfvcrmUeTPuVdUU.png" alt="A standard Discord reaction using the “Moai” emoji."></div>
             </figure>
             <p>Your favorite 🗿 is just there. Chillin’. Doing nothing after being placed down on a message. It, like the mystical statue the emoji is modeled after, is completely motionless. It doesn’t have the “oomph” that you wanted to convey when it was placed there, and it doesn’t bring the sheer EMOTION that 🗿 needs to bring to the conversation.</p>
