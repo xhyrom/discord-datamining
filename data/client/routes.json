@@ -4743,5 +4743,13 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "QUESTS_REWARD_CODE": {
+    "url": "/quests/:param/reward-code",
+    "allowed_methods": null
+  },
+  "QUESTS_ENROLL": {
+    "url": "/quests/:param/enroll",
+    "allowed_methods": null
   }
 }
