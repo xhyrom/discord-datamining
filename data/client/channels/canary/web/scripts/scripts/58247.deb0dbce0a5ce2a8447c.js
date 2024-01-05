@@ -2305,36 +2305,39 @@
             "use strict";
             l.r(t), l.d(t, {
                 getDecorationSizeForAvatarSize: function() {
-                    return i
+                    return o
                 },
                 openAvatarDecorationModal: function() {
-                    return r
+                    return u
                 }
             });
             var n = l("37983");
             l("884691");
-            var a = l("77078");
+            var a = l("77078"),
+                s = l("393414");
             l("103603");
-            var s = l("573135");
+            var i = l("573135"),
+                r = l("49111");
 
-            function i(e) {
-                return "number" != typeof e ? (0, a.getAvatarSize)(e) * s.DECORATION_TO_AVATAR_RATIO : e * s.DECORATION_TO_AVATAR_RATIO
+            function o(e) {
+                return "number" != typeof e ? (0, a.getAvatarSize)(e) * i.DECORATION_TO_AVATAR_RATIO : e * i.DECORATION_TO_AVATAR_RATIO
             }
-            let r = e => {
+            let u = e => {
                 let {
                     analyticsLocations: t,
-                    initialSelectedDecoration: s,
-                    isTryItOutFlow: i
+                    initialSelectedDecoration: i,
+                    isTryItOutFlow: o
                 } = e;
                 (0, a.openModalLazy)(async () => {
+                    (0, s.getHistory)().location.pathname === r.Routes.COLLECTIBLES_SHOP_FULLSCREEN && (0, s.transitionTo)(r.Routes.APP);
                     let {
                         default: e
                     } = await l.el("791050").then(l.bind(l, "791050"));
                     return l => (0, n.jsx)(e, {
                         ...l,
                         analyticsLocations: t,
-                        initialSelectedDecoration: s,
-                        isTryItOutFlow: i
+                        initialSelectedDecoration: i,
+                        isTryItOutFlow: o
                     })
                 }, {})
             }
@@ -7962,4 +7965,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58247.84f8ae8a8dcd9867bb5a.js.map
+//# sourceMappingURL=58247.deb0dbce0a5ce2a8447c.js.map
