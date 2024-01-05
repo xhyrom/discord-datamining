@@ -1576,7 +1576,9 @@
                     QUESTS_HEARTBEAT: _ => "/quests/".concat(_, "/heartbeat"),
                     ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls",
                     QUESTS_REWARD_CODE: _ => "/quests/".concat(_, "/reward-code"),
-                    QUESTS_ENROLL: _ => "/quests/".concat(_, "/enroll")
+                    QUESTS_ENROLL: _ => "/quests/".concat(_, "/enroll"),
+                    GAME_INVITE: _ => "/game-invite/@me/".concat(_),
+                    GAME_INVITES: "/game-invite/@me"
                 }),
                 a6 = Object.freeze({
                     INDEX: "/",
@@ -13525,4 +13527,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.050bbf0961817878e95f.js.map
+//# sourceMappingURL=7273.50c1d859da738789bb44.js.map
