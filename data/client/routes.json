@@ -4755,7 +4755,10 @@
   },
   "QUESTS_ENROLL": {
     "url": "/quests/:param/enroll",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GAME_INVITE": {
     "url": "/game-invite/@me/:param",
