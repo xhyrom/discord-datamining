@@ -26,7 +26,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Connect Accounts to Gain Linked Roles</strong></h2>
             <p>Let’s get the basics down first: A <em>Connection</em> is a way to display account information on your Discord by linking to it. You link your accounts by signing into them, verifying that you own them in the process. This makes connected accounts way more trustworthy than a text field and you can also choose to display any of these Connections on your profile.&nbsp;</p>
-            <figure style="max-width:" class="w-richtext-align-center w-richtext-figure-type-image">
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6567a9e8cd842d5bd4efc5b4_Linked%20Accounts%20-%20Phibi.png" loading="lazy" alt=""></div>
             </figure>
             <p>We wanted to take authentication a step further by allowing these external identities to share extra info from your Connections. Now, in addition to signing in to an account to prove you own it, <strong>certain Connections will now provide additional details and stats</strong>, such as how many followers an account may have or if you’re a highly-reviewed seller, to further legitimize the person behind the Discord account.</p>
