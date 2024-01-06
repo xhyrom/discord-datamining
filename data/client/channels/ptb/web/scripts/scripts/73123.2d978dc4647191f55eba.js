@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23303"], {
+    ["73123"], {
         273215: function(e, t, n) {
             "use strict";
             e.exports = n.p + "63900a1ba1f23d305c53.png"
@@ -28200,7 +28200,7 @@
                     } = e;
                     if (!this._shouldAck(a, n, l) || !a && !this.canTrackUnreads()) return !1;
                     let u = this.hasMentions();
-                    return this.estimated = !1, this.unreadCount = 0, this.mentionCount = 0, (null != t || null != (t = this.lastMessageId)) && (this.ackMessageId = t, this.isManualAck = !1, this._persisted = !0, function(e) {
+                    return this.estimated = !1, this.unreadCount = 0, this.mentionCount = 0, (null != t || null != (t = this.lastMessageId)) && (this.ackMessageId = t, this.isManualAck = !1, this._persisted = !0, e_ && (this.ackedWhileCached = !0), function(e) {
                         if (null == e) return;
                         let t = ev.get(e);
                         if (t.type !== es.ReadStateTypes.CHANNEL) return;
@@ -28366,7 +28366,7 @@
                     }))
                 }
                 constructor(e, t = es.ReadStateTypes.CHANNEL) {
-                    this.type = es.ReadStateTypes.CHANNEL, this.outgoingAckTimer = null, this.ackMessageIdAtChannelSelect = null, this.channelId = e, this.type = t, this._guildId = null, this._isThread = !1, this._isActiveThread = !1, this._isJoinedThread = !1, this._isResourceChannel = !1, this._persisted = !1, this.loadedMessages = !1, this._lastMessageId = null, this._lastMessageTimestamp = 0, this._ackMessageId = null, this._ackMessageTimestamp = 0, this.isManualAck = !1, this.ackPinTimestamp = 0, this.lastPinTimestamp = 0, this._oldestUnreadMessageId = null, this.oldestUnreadMessageIdStale = !1, this.estimated = !1, this._unreadCount = 0, this._mentionCount = 0, this.outgoingAck = null
+                    this.type = es.ReadStateTypes.CHANNEL, this.outgoingAckTimer = null, this.ackMessageIdAtChannelSelect = null, this.ackedWhileCached = void 0, this.channelId = e, this.type = t, this._guildId = null, this._isThread = !1, this._isActiveThread = !1, this._isJoinedThread = !1, this._isResourceChannel = !1, this._persisted = !1, this.loadedMessages = !1, this._lastMessageId = null, this._lastMessageTimestamp = 0, this._ackMessageId = null, this._ackMessageTimestamp = 0, this.isManualAck = !1, this.ackPinTimestamp = 0, this.lastPinTimestamp = 0, this._oldestUnreadMessageId = null, this.oldestUnreadMessageIdStale = !1, this.estimated = !1, this._unreadCount = 0, this._mentionCount = 0, this.outgoingAck = null
                 }
             }
 
@@ -28690,7 +28690,7 @@
                         let l = ev.get(e.id, a);
                         l._persisted = !0, l._mentionCount = null !== (n = e.mention_count) && void 0 !== n ? n : 0, l.flags = e.flags, l.lastViewed = e.last_viewed;
                         let s = Y.default.getBasicChannel(e.id);
-                        null != s && (0, b.isThread)(s.type) && (null == e.last_message_id || 0 === e.last_message_id) ? l.ackMessageId = x.default.fromTimestamp(eU(s.guild_id, s.id)) : l.ackMessageId = e.last_message_id, l.ackPinTimestamp = eg(e.last_pin_timestamp), ev._mentionChannels.delete(l.channelId), l._mentionCount > 0 && l.canHaveMentions() && ev._mentionChannels.add(l.channelId)
+                        null != s && (0, b.isThread)(s.type) && (null == e.last_message_id || 0 === e.last_message_id) ? l.ackMessageId = x.default.fromTimestamp(eU(s.guild_id, s.id)) : l.ackedWhileCached ? -1 === x.default.compare(l.ackMessageId, e.last_message_id) && (l.ackMessageId = e.last_message_id) : l.ackMessageId = e.last_message_id, l.ackedWhileCached = void 0, l.ackPinTimestamp = eg(e.last_pin_timestamp), ev._mentionChannels.delete(l.channelId), l._mentionCount > 0 && l.canHaveMentions() && ev._mentionChannels.add(l.channelId)
                     }), ev.resetGuildSentinels();
                     let r = null === (t = ee.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
                     if (null != r) {
@@ -34983,4 +34983,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.8e25e76527271d810631.js.map
+//# sourceMappingURL=73123.2d978dc4647191f55eba.js.map
