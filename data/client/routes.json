@@ -4769,6 +4769,10 @@
   },
   "GAME_INVITES": {
     "url": "/game-invite/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
