@@ -78,7 +78,7 @@
             </figure>
             <p>Or, whether you even want to hear any sounds that play for things like disconnecting or joining calls, you’ll find every possible option that you can think of when it comes to making your notification experience as personalized and stress free as you want it to be.</p>
             <p>Want to customize your notification settings for a specific server? Hover over the icon for the server you want to adjust, right-click on it, and select “Notification Settings” to manage options specifically for that server. You can even disable mobile push notifications for a server if it’s extremely active or gets a lot of ““““funny guys””””” spamming @here.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654168758aafb865dbc2d28d_-H-v6N3_NK0Y1dThqgQahggIVNRuvxjblWXHj6gydupyL0ywTODMEJ9rr_OGOo5ng9OAIY3zZa01wnXzhC7oQfaHe0Zywe8H_ASxRNKqgL-lFCUdCXl6yI_saY2p8LoAtNnZZ0jRz8rdgRtnVbb8Zhw.png" alt=" The per-server notification settings, access by the user right-clicking on one of their servers."></div>
             </figure>
             <p>For example, let’s say you’re in a server called “Hydration Club” but really only care about the #coffee-drinkers channel because <em>all my homies hate tea</em>. There’s a way to customize your notifications in that server specifically for that by muting all channels except for that one.</p>
