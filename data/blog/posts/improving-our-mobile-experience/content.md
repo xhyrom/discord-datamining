@@ -103,7 +103,7 @@
             <p>None of this would matter if the app didn’t excel at what’s most important: getting you to your conversations faster. So yeah, it’s faster. Much faster.</p>
             <p>How much faster? <strong>We’ve reduced app open time by 55% on Android and 43% on iOS.</strong> When hopping between channels and chats, the mobile app now uses 4 <em>times</em> <em>less</em> data when loading up for the first time, and keeps your most recent messages cached in the background. We also cut the crash rate in half this year for Android users. PROGRESS!!!</p>
             <p>‍</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6101dddcec0d0cb174bc_C3YPHpR0qUAxOX_LlGR-SC1V-lh4t8Nh1Y8Tb3PW_tgGFRVRdiMdvTo0iW9N7-EKIlkJkkLrAVu7liPX0tKu-v-YPoi6DxtkC8kwKWmBCttEcbOaFOJZ7vYCse4uF-nvV_TLcoebqweC0tZHGg1E8HY.png" alt="An illutration of Wumpus running fast, representing the speed of the new Mobile experience."></div>
             </figure>
             <p>When you’re hopping between conversations in your servers and DMs, the mobile app will now store the recent messages of up to 700 text channels and DMs, letting them load quicker as you navigate your communities. Scrolling up and down channels to catch up on the conversation is better as well, with background improvements that let you scroll faster, without having to wait for things to “buffer.”&nbsp;</p>
