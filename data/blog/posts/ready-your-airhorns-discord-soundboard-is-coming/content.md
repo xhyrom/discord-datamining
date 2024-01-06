@@ -38,7 +38,7 @@
                 <li><strong>File length</strong>: Up to 5 seconds</li>
             </ul>
             <p>Once you’ve uploaded your sound file, you can change its name, adjust the sound’s default volume for everyone, and assign it an emoji that pops up in Voice when you use it. Upload your sound effects and test your optimal onomatopoeia assigning when you name your sounds “awOOOga” or “<em>honk honk</em>”</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/642c8a7756925b19b7cb9f14_IuXq6P9V7gWJagK-Vmm-pcfarC8Rcs9Wxrv8htRcKCF20d4oGYjc7hGecZ7yGVOluNZryb6dUgKTHUdVVuCVCrw5C9YULyvz4qmzBGQBFtnJSSN604q_fZ7SrY6FkDE5mFbN19oc1GLtXyEEoecUyw.png" alt="A screenshot of the Sound Edit functions in Server Settings > Soundboard."></div>
             </figure>
             <p>Permission management for Soundboard works like Emojis and Stickers: Moderators can limit the usage of Soundboard to certain channels or roles by adjusting the new “Use Soundboard” permission. And similar to emojis and stickers, you can limit the usage of external soundpacks using the “Use External Sounds” permission.&nbsp;</p>
