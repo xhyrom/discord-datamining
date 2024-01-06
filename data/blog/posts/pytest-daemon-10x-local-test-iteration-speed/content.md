@@ -41,7 +41,7 @@
                 <script src="https://gist.github.com/DiscordBlog/722e4bc4e37230330377ca8a8b0206d8.js"></script>
             </div>
             <p>To utilize our tactic, we’ll need to determine which modules need to be reloaded and the order they should be reloaded. For instance, if we have the following imports:</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725adf90e0e3bcaa3f64e6_Screenshot%202023-12-07%20at%203.52.46%E2%80%AFPM.png" loading="lazy" alt="A flowchart with two paths. One goes: &quot;Test -> import -> view -> import -> model.&quot; The other goes: &quot;test -> import - model&quot;"></div>
             </figure>
             <ul role="list">
@@ -53,7 +53,7 @@
             <ol role="list">
                 <li>Build an import graph for our code, where each node is pointing to all the files that directly import it (reversing the import graph):</li>
             </ol>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725b1754caa81aae5cc169_Screenshot%202023-12-07%20at%203.53.37%E2%80%AFPM.png" loading="lazy" alt="A flowchart with two paths. One goes: &quot;model -> dependancy -> test.&quot; The other goes &quot;model -> dependancy -> view -> dependancy -> test.&quot;"></div>
             </figure>
             <ol role="list">
