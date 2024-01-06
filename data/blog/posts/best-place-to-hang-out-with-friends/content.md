@@ -13,7 +13,7 @@
         <div class="blog-post-content w-richtext">
             <h2>Expanding Customization with the Shop<br></h2>
             <p>We keep hearing that users love perks that enable them to customize how they show up on Discord. That’s why last month we launched a brand new in-app <a href="https://discord.com/shop/fullscreen?source=1">Shop</a>,&nbsp;giving Nitro members the opportunity to purchase profile accessories, starting with cool new avatar decorations and now profile effects: animations that appear on your profile whenever you or another Discord user previews it.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65303f866377dec7f38d88bb_65303a62d29fa499bd30191b_EN%2520GB%25201.png" alt=""></div>
             </figure>
             <p>Nitro members have early access to the Shop and can purchase new, collectible avatar decorations and profile effects. Previously avatar decorations were only available seasonally, but now you can keep them and use them season after season.&nbsp; Soon, the Shop will open up to all users, allowing everyone to browse and deck out their own profiles with decorations and effects. Nitro members will get a sweet discount.</p>
@@ -23,12 +23,12 @@
         <div class="blog-post-content w-richtext">
             <h2>Delivering for Developers on Discord<br></h2>
             <p>Supporting our developer community is a huge part of making Discord the best place to have fun with friends. We’ve been committed to being an open platform for developers to build on since the beginning. Today, Discord is home to a vibrant ecosystem of over 750k third-party apps globally — a real testament to the amazing developers building on our platform.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65305b7e90de3a7822b4085c_EN-profile%20monitor.png" loading="lazy" alt=""></div>
             </figure>
             <p>A few weeks ago, we introduced Premium App Subscriptions for developers in the US. We’re excited to announce that this week, we’re extending access to Premium App Subscriptions to <a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727-What-Are-Premium-Apps-">eligible </a>developers in the UK and Europe. We plan to continue to expand availability to help developers generate revenue directly on Discord.</p>
             <p>For developers, Premium App Subscriptions enables effortless setup, end-to-end transactions, smart SKU management, multiple payment options, and a frictionless user experience.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021ea5df45b104d8af9c7_JafxEYj9w6TVgCbBAB3lPi2AEFQnlIlxLh8inmlRGzoJIBYkbEJMrmdWPJz3bWhhZ60rLUCMRofWMYfz_yd1sHRLkZOTCLYmynupI6IoI_WAwpL9lZahSgqwhbrSLCClhrhuqEo2-E_ndQiLwbuCBfs.png" alt="App Directory homepage with selection of Premium App Subscriptions."></div>
             </figure>
             <p>We're really proud of everything our developer community has built over the years, and we're looking forward to seeing them earn money for delivering an even more customizable experience to their fans.</p>
@@ -60,14 +60,14 @@
                 <li><strong>Safety alerts on senders: </strong>When a teen receives a DM from a user for the first time, Discord will detect if a safety alert should be sent to the teen. The safety alert will encourage the recipient to double check if they want to reply, and will provide links to block the user or view more safety tips to safeguard themselves if needed.</li>
                 <li><strong>Sensitive content filters: </strong>For teens, Discord will automatically blur media that may be sensitive in direct messages and group direct messages with friends, as well as in&nbsp; servers. The blur creates an extra step to encourage teens to use caution when viewing the media. This feature will also be available for anyone to opt in.</li>
             </ul>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021eca381519f257dad30_11uKtW6nE2US_LgFSjHM6fO3tq0pnfuYpc603o1sy_Wj97s-K1dEidSd8xxRNBHjfel6EMIgdAhbOnFrkAvZS4n_lYRw6yuFbLBeCBUveh-x5Af5EBWaAKue-wJLtSP9E70Nie83e4LzvwJsNej9AAg.png" alt="Still image of the sensitive content filters blurring an image."></div>
             </figure>
             <p>Stay tuned for many more features from this initiative as we look ahead to the next year!</p>
             <p><strong>Warning System</strong></p>
             <p>We’ve found that if someone knows exactly how they broke the rules, it gives them a chance to reflect and change their behavior, helping keep Discord safer.</p>
             <p>For those who break our platform’s rules, <strong>we’re</strong> <strong>introducing our new Warning System</strong>, which includes multiple touchpoints for users to clearly understand rule violations and the consequences of their actions. These touchpoints provide more transparency into Discord interventions, letting users know how their violation may impact their overall account standing and gives information for them to learn from to be better digital citizens in the future.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021eb55ffb97bb012c1f2_aakQEgYk0s0uQWdKnaJyRNO-upRD5yl_WYDVchz8cIc4qKBzWc3QtC2O34MUGr1cj4eN_epNKoOZPd8kW1qHZhNyyCCddrF9L2wwseSftShDmaOLxgCumz7kHAeMcfwR9dA8c1vejhWFXomRJdEUdEI.png" alt="Still image of an in-app message notifying a user of a violation."></div>
             </figure>
             <ul role="list">
@@ -87,7 +87,7 @@
             <p>We’ve reduced the time it takes to open our app by 55% on Android and 43% on iOS. The app also downloads less data when launching, syncs new messages in the background and stores more recent messages so you can start chatting faster. We've also reduced the crash rate on Android from 0.49% to 0.26% this year.</p>
             <p><strong>Voice Messages</strong></p>
             <p>Sending a Voice Message is as easy as pressing a button. When you’re in a Direct Message, Group DM, or server with Voice Messages enabled, you’ll see a microphone icon next to your emoji button. Hold it down, and you’ll instantly start recording your message.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edb3187d3a26a52f71_JppKQTVQMiDwXwnA4QLfSDSR_pQS6eG_pMBCOoPIiT5DZvOHFMJ4G06nrRP4ePZxYtZRxOsm82ltgSl0xB__-9IHCGgti9nm638N-4l_TElF_ehqAcup0WSQ76YuTcjaPZD9MxhuUlWi49utiWW9HGM.png" alt="Still image of a Discord user recording and sending a Voice Message on a mobile phone."></div>
             </figure>
             <p>‍<strong>Better Media Uploads</strong></p>
