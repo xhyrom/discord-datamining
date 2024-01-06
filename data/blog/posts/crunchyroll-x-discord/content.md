@@ -28,13 +28,13 @@
             <h2><strong>Coming Soon: Connect your Crunchyroll Account to Discord</strong></h2>
             <p>Later this month, you’ll also be able to <a href="https://discord.com/blog/building-the-future-of-discord#heading-4">connect</a> your Crunchyroll account to Discord and show your friends what anime, which episode, and which season you’re watching in real time. Strike up a conversation about the season finale of your favorite series when you see your friends getting to the good part.</p>
             <p>‍</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/63619edf18705339383d0a2f_8MmH7jFFyXYX8qUBu3jtzhS1dn3FWVAEPlgEcb_uPvrdrYrdcHmbtMqBTvX8qk9eSz35i_hFKPbTqyPtsD2af_xTRxEE7SHNamGbC_E_aauR4FOwPf-wy9F_Qq_IPay0wImjVcw-fkvhOveI4NA552R0gACHpEdO1ZAbOdW8NW0P-NIuhs_wiTTUbg.png" alt="Key artwork for Wumpus showing off the Crunchyroll logo, while wearing a gaming headset with built-in cat ears."></div>
             </figure>
             <p>‍</p>
             <p>Enjoy the fall 2022 anime season — let’s get watchin’!</p>
             <p><em>- Haunting, melodious end credits - 🎶</em></p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/63619edf4948953f892f7727_0vqLkSg0J1sbtI8MTVILigih7MnPrBur8dmnuZZTzlWS80ExUTqauunDPBENIzKVUa3EwUpbA6o7uNJ3JH0Bpz_HkKoRbjNEOCdvKdRDQ0ucEeWimVshqXLdSpGSNpLdu83utzkMIRKc7foQs5PC_4qcIWJ3lNPOA4kBSsbFZ9fHrHTZfO48Hc7kpA.png" alt="A four-panel comic featuring the mascots of Crunchyroll (Hime) and Discord (Wumpus). Panel 1: Hime is playing a computer game at their desk. Panel 2: Hime goes to check her messages on Discord, and 99+ messages are awaiting her from multiple friends. Panel 3: Wumpus is sitting on the couch, messaging on their phone while watching anime. Panel 4: Both Wumpus and Hime message to each other at the same time the phrase “I’m going to need more than 30 days…” They both laugh at the same time due to their perfectly-timed messages to each other. "></div>
             </figure>
         </div>
