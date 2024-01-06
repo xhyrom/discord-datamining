@@ -4762,7 +4762,10 @@
   },
   "GAME_INVITE": {
     "url": "/game-invite/@me/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "GAME_INVITES": {
     "url": "/game-invite/@me",
