@@ -30,7 +30,7 @@
             <p>You’ll find the option to <a href="https://support.discord.com/hc/en-us/articles/8458903738647-Pause-Invites-FAQ">pause your server’s invites</a> in <strong>Server Settings &gt; Invites</strong>.&nbsp;<br>‍</p>
             <h2><strong>Has a Raid Occurred? Let Us Know.&nbsp;</strong></h2>
             <p>Help us out by reporting raids using the new “Report Raids'' feature in your Server Settings drop-down. You can include information on what’s happened during the raid, including channel, DM and mention spam and even let us know about those suspicious “NotARobot” accounts.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/632a1fd1f1b890c4c3017b7a_FLgqUuNueYOlRqhhK5uFJE1zNqLjnW0yzfEi1o3_lBb0o4vNMHkvIV2A7Usg9Tj1rzK1rXLCPpoAWMOOvLQV3lxrUgr4rVpBxK4ZRppgxmMCo6ObsPorlcVnofcVW-3A_NnGBDM6YHa_ncukDGG2qHNE9g0ZkZ9fzqvyZ4m5XkX9EVL_jC5J3NuekA.png" alt="The raid reporting pop-up inside Discord. It reads: “Report a Raid: Which behavior best describes how this raid is currently disrupting your server?” Selectable options include: “Spamming channels, spamming DMs, spamming mentions, suspicious new members, and changing server and channel settings.”"></div>
             </figure>
             <p>We’ll be able to use your report to study what types of raids have been occurring within your communities, helping us better craft anti-raid tools for you in the future.&nbsp;<strong>‍<br>‍</strong></p>
