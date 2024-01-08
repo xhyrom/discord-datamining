@@ -11573,14 +11573,15 @@
                             l.default.Emitter.batched(() => {
                                 t = E.default.hydrateReady.measure(() => y.hydrateReadyPayloadPrioritized(t, M.socket.identifyStartTime));
                                 let e = t.private_channels.map(e => (0, h.createChannelRecordFromServer)(e)),
-                                    n = t.guilds.filter(e => e.unavailable).map(e => e.id),
-                                    i = t.guilds.filter(e => !0 !== e.unavailable);
+                                    n = t.guilds.filter(e => e.unavailable && !1 === e.geo_restricted).map(e => e.id),
+                                    i = t.guilds.filter(e => !0 !== e.unavailable),
+                                    a = t.guilds.filter(e => !0 === e.geo_restricted);
                                 i.forEach(e => {
                                     e.presences = []
                                 });
-                                let a = null == t.user_settings_proto ? void 0 : (0, f.b64ToPreloadedUserSettingsProto)(t.user_settings_proto);
+                                let l = null == t.user_settings_proto ? void 0 : (0, f.b64ToPreloadedUserSettingsProto)(t.user_settings_proto);
                                 E.default.dispatchReady.measure(() => {
-                                    var l;
+                                    var s;
                                     G({
                                         type: "CONNECTION_OPEN",
                                         sessionId: t.session_id,
@@ -11604,14 +11605,15 @@
                                         consents: t.consents,
                                         sessions: w(t.sessions || []),
                                         pendingPayments: t.pending_payments,
-                                        countryCode: null !== (l = t.country_code) && void 0 !== l ? l : void 0,
+                                        countryCode: null !== (s = t.country_code) && void 0 !== s ? s : void 0,
                                         guildJoinRequests: t.guild_join_requests || [],
-                                        userSettingsProto: a,
+                                        userSettingsProto: l,
                                         apiCodeVersion: t.api_code_version,
                                         auth: t.auth,
                                         notificationSettings: {
                                             flags: t.notification_settings.flags
-                                        }
+                                        },
+                                        geoRestrictedGuilds: a
                                     })
                                 }), null != t.auth_token && G({
                                     type: "UPDATE_TOKEN",
@@ -11872,7 +11874,12 @@
                         G({
                             type: "GUILD_DELETE",
                             guild: t
-                        }), t.unavailable && G({
+                        }), t.geo_restricted ? G({
+                            type: "GUILD_GEO_RESTRICTED",
+                            guildId: t.id,
+                            icon: t.icon,
+                            name: t.name
+                        }) : t.unavailable && G({
                             type: "GUILD_UNAVAILABLE",
                             guildId: t.id
                         });
@@ -35735,4 +35742,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.8aae8f0c50938d14fffd.js.map
+//# sourceMappingURL=23303.f473283dbcd8511985ab.js.map

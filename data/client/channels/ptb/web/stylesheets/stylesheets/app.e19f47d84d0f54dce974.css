@@ -32792,8 +32792,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -43044,6 +43044,22 @@ html .progress__4ef76 {
 .enable-forced-colors .centerTarget_dffece.dragOver__84b73:before {
     background-color: Highlight;
     outline: 2px solid Canvas
+}
+
+.circleIconButton_aea38e {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    transition: color.15s ease-out, background-color.15s ease-out
+}
+
+.geoRestrictedBadge_c8de97 {
+    background-color: var(--status-warning);
+    color: var(--black)
 }
 
 .progressContainer__7d5bb {
@@ -124363,4 +124379,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1bca6f6033c2e58e19ba.css.map*/
+/*# sourceMappingURL=app.e19f47d84d0f54dce974.css.map*/
