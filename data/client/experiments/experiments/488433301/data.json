@@ -1,15 +1,15 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-10_collectibles_shop_for_all",
-    "label": "Collectibles Shop For All",
+    "id": "2023-12_collectibles_shop_marketing",
+    "label": "Collectibles Shop Marketing Variations",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enables Collectibles Shop For All",
-      "Treatment 2: Enables Collectibles Shop For All with in-app DCF marketing"
+      "Treatment 1: Winter 2023",
+      "Treatment 2: Jan 2024"
     ],
-    "hash": 640079350,
+    "hash": 488433301,
     "buckets": [
       -1,
       0,
