@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23303"], {
+    ["67615"], {
         273215: function(e, t, n) {
             "use strict";
             e.exports = n.p + "63900a1ba1f23d305c53.png"
@@ -59,7 +59,6 @@
         898085: function(e, t, n) {},
         495873: function(e, t, n) {},
         778583: function(e, t, n) {},
-        527870: function(e, t, n) {},
         482803: function(e, t, n) {},
         503745: function(e, t, n) {},
         555919: function(e, t, n) {
@@ -33872,56 +33871,53 @@
             "use strict";
             n.r(t), n.d(t, {
                 getStoreListingLocation: function() {
-                    return A
+                    return I
                 },
                 getApplicationStoreListingLocation: function() {
-                    return N
+                    return g
                 },
                 getAssetURL: function() {
-                    return O
+                    return A
                 },
                 httpGetWithCountryCodeQuery: function() {
-                    return R
+                    return N
                 },
                 nativePlatformTypeToSKUOperatingSystem: function() {
-                    return y
+                    return O
                 },
                 skuOperatingSystemToText: function() {
-                    return v
+                    return R
                 },
                 getPrimarySKUForApplication: function() {
-                    return M
+                    return y
                 },
                 getSocialRecommendationReasons: function() {
-                    return L
+                    return M
                 },
                 getNonSocialRecommendationReasons: function() {
-                    return P
+                    return L
                 }
             }), n("424973"), n("462568"), n("222007"), n("70102"), n("702976");
             var i = n("917351"),
                 a = n.n(i),
                 l = n("866227"),
                 s = n.n(l),
-                r = n("642852"),
-                u = n.n(r),
-                o = n("394846"),
-                d = n("872717"),
-                c = n("850068"),
-                _ = n("407063"),
-                E = n("160299"),
-                f = n("357957"),
-                h = n("521012"),
-                p = n("560528"),
-                T = n("568734"),
-                C = n("449008"),
-                m = n("773336"),
-                S = n("49111"),
-                I = n("782340");
-            u.shim();
-            let g = !o.isMobile && !o.isTablet && -1 !== (0, p.getChromeVersion)();
+                r = n("394846"),
+                u = n("872717"),
+                o = n("850068"),
+                d = n("407063"),
+                c = n("160299"),
+                _ = n("357957"),
+                E = n("521012"),
+                f = n("560528"),
+                h = n("568734"),
+                p = n("449008"),
+                T = n("773336"),
+                C = n("49111"),
+                m = n("782340");
+            let S = !r.isMobile && !r.isTablet && -1 !== (0, f.getChromeVersion)();
 
-            function A(e, t) {
+            function I(e, t) {
                 let {
                     analyticsSource: n,
                     analyticsProperties: i,
@@ -33931,7 +33927,7 @@
                     guildId: r
                 } = t;
                 return {
-                    pathname: null != s && null != r ? S.Routes.CHANNEL(r, s, e) : S.Routes.APPLICATION_STORE_LISTING_SKU(e, l),
+                    pathname: null != s && null != r ? C.Routes.CHANNEL(r, s, e) : C.Routes.APPLICATION_STORE_LISTING_SKU(e, l),
                     state: {
                         analyticsSource: n,
                         analyticsProperties: i
@@ -33940,14 +33936,14 @@
                 }
             }
 
-            function N(e, t) {
+            function g(e, t) {
                 let {
                     analyticsSource: n,
                     analyticsProperties: i,
                     slug: a
                 } = t;
                 return {
-                    pathname: S.Routes.APPLICATION_STORE_LISTING_APPLICATION(e, a),
+                    pathname: C.Routes.APPLICATION_STORE_LISTING_APPLICATION(e, a),
                     state: {
                         analyticsSource: n,
                         analyticsProperties: i
@@ -33955,7 +33951,7 @@
                 }
             }
 
-            function O(e, t, n, i) {
+            function A(e, t, n, i) {
                 var a;
                 let l;
                 let s = window.GLOBAL_ENV.CDN_HOST;
@@ -33970,31 +33966,31 @@
                     default:
                         i = "webp"
                 }
-                "webp" === i && !g && (i = "png");
+                "webp" === i && !S && (i = "png");
                 let r = (a = "https:", "https:");
-                return l = null != s ? "".concat(r, "//").concat(s, "/app-assets/").concat(e, "/store/").concat(t.id, ".").concat(i) : "".concat(r).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(S.Endpoints.STORE_ASSET(e, t.id, i)), null != n && (l += "?size=".concat((0, _.getBestMediaProxySize)(n * (0, _.getDevicePixelRatio)()))), l
+                return l = null != s ? "".concat(r, "//").concat(s, "/app-assets/").concat(e, "/store/").concat(t.id, ".").concat(i) : "".concat(r).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(C.Endpoints.STORE_ASSET(e, t.id, i)), null != n && (l += "?size=".concat((0, d.getBestMediaProxySize)(n * (0, d.getDevicePixelRatio)()))), l
             }
-            async function R(e) {
+            async function N(e) {
                 var t, n, i, a;
                 let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 if (l) {
                     let e = [];
-                    !f.default.hasFetchedPaymentSources && e.push(null !== (n = E.default.paymentSourcesFetchRequest) && void 0 !== n ? n : (0, c.fetchPaymentSources)()), !E.default.ipCountryCodeLoaded && e.push((0, c.fetchIpCountryCode)()), e.push(new Promise(async e => {
-                        if (h.default.hasFetchedSubscriptions()) e();
-                        else if (E.default.isSubscriptionFetching) {
+                    !_.default.hasFetchedPaymentSources && e.push(null !== (n = c.default.paymentSourcesFetchRequest) && void 0 !== n ? n : (0, o.fetchPaymentSources)()), !c.default.ipCountryCodeLoaded && e.push((0, o.fetchIpCountryCode)()), e.push(new Promise(async e => {
+                        if (E.default.hasFetchedSubscriptions()) e();
+                        else if (c.default.isSubscriptionFetching) {
                             let t = () => {
-                                E.default.isSubscriptionFetching ? setTimeout(t, 50) : e()
+                                c.default.isSubscriptionFetching ? setTimeout(t, 50) : e()
                             };
                             t()
-                        } else await (0, c.fetchSubscriptions)(), e()
+                        } else await (0, o.fetchSubscriptions)(), e()
                     })), await Promise.allSettled(e)
                 }
-                let s = f.default.getDefaultBillingCountryCode(),
-                    r = null !== (i = null === (t = f.default.defaultPaymentSource) || void 0 === t ? void 0 : t.id) && void 0 !== i ? i : null,
-                    u = h.default.getPremiumTypeSubscription();
-                null != u && null != u.paymentSourceId && (r = u.paymentSourceId), null === s && (s = null !== (a = E.default.ipCountryCode) && void 0 !== a ? a : null);
-                let o = {};
-                if (null != s && (o.country_code = s), null != r && (o.payment_source_id = r), null != s || null != r) {
+                let s = _.default.getDefaultBillingCountryCode(),
+                    r = null !== (i = null === (t = _.default.defaultPaymentSource) || void 0 === t ? void 0 : t.id) && void 0 !== i ? i : null,
+                    d = E.default.getPremiumTypeSubscription();
+                null != d && null != d.paymentSourceId && (r = d.paymentSourceId), null === s && (s = null !== (a = c.default.ipCountryCode) && void 0 !== a ? a : null);
+                let f = {};
+                if (null != s && (f.country_code = s), null != r && (f.payment_source_id = r), null != s || null != r) {
                     if ("string" == typeof e) {
                         let t = {
                             url: e,
@@ -34004,47 +34000,47 @@
                     }
                     if ("string" == typeof e.query) throw Error("string query not supported");
                     e.query = {
-                        ...o,
+                        ...f,
                         ...e.query
                     }
                 }
-                return d.default.get(e)
+                return u.default.get(e)
             }
 
-            function y(e) {
+            function O(e) {
                 switch (e) {
-                    case m.PlatformTypes.WINDOWS:
-                        return S.OperatingSystems.WINDOWS;
-                    case m.PlatformTypes.OSX:
-                        return S.OperatingSystems.MACOS;
-                    case m.PlatformTypes.LINUX:
-                        return S.OperatingSystems.LINUX;
+                    case T.PlatformTypes.WINDOWS:
+                        return C.OperatingSystems.WINDOWS;
+                    case T.PlatformTypes.OSX:
+                        return C.OperatingSystems.MACOS;
+                    case T.PlatformTypes.LINUX:
+                        return C.OperatingSystems.LINUX;
                     default:
                         return null
                 }
             }
 
-            function v(e) {
+            function R(e) {
                 switch (e) {
-                    case S.OperatingSystems.WINDOWS:
-                        return I.default.Messages.WINDOWS;
-                    case S.OperatingSystems.MACOS:
-                        return I.default.Messages.MACOS;
-                    case S.OperatingSystems.LINUX:
-                        return I.default.Messages.LINUX
+                    case C.OperatingSystems.WINDOWS:
+                        return m.default.Messages.WINDOWS;
+                    case C.OperatingSystems.MACOS:
+                        return m.default.Messages.MACOS;
+                    case C.OperatingSystems.LINUX:
+                        return m.default.Messages.LINUX
                 }
                 throw Error("Unknown operating system value: ".concat(e))
             }
 
-            function M(e, t, n) {
+            function y(e, t, n) {
                 let i = t.getApplication(e);
                 return null == i || null == i.primarySkuId ? null : n.get(i.primarySkuId)
             }
-            let D = [];
+            let v = [];
 
-            function L(e, t, n, i, l) {
+            function M(e, t, n, i, l) {
                 let s = t.get(e);
-                if (null == s) return D;
+                if (null == s) return v;
                 let r = s.applicationId,
                     u = [],
                     o = [],
@@ -34058,9 +34054,9 @@
                                     user: n,
                                     startTime: a[n.id].startedPlaying
                                 }
-                            }).filter(C.isNotNullish).sort((e, t) => t.startTime - e.startTime);
+                            }).filter(p.isNotNullish).sort((e, t) => t.startTime - e.startTime);
                         return 0 === s.length ? null : {
-                            type: S.StoreRecommendationTypes.NOW_PLAYING,
+                            type: C.StoreRecommendationTypes.NOW_PLAYING,
                             userInfo: s
                         }
                     }(r, n, i);
@@ -34083,9 +34079,9 @@
                                     user: n,
                                     endTime: Date.parse(e.last_played_at)
                                 }
-                            }).filter(C.isNotNullish).sort((e, t) => t.endTime - e.endTime);
+                            }).filter(p.isNotNullish).sort((e, t) => t.endTime - e.endTime);
                             return 0 === a.length ? null : {
-                                type: S.StoreRecommendationTypes.EVER_PLAYED,
+                                type: C.StoreRecommendationTypes.EVER_PLAYED,
                                 userInfo: a
                             }
                         }(r, n, l);
@@ -34094,25 +34090,25 @@
                 }
                 return u
             }
-            let U = [];
+            let D = [];
 
-            function P(e, t, n) {
+            function L(e, t, n) {
                 let i = t.get(e),
                     a = n.getForSKU(e);
-                if (null == i || null == a) return U;
+                if (null == i || null == a) return D;
                 let l = [];
-                (0, T.hasFlag)(i.flags, S.SKUFlags.HAS_FREE_PREMIUM_CONTENT) && l.push({
-                    type: S.StoreRecommendationTypes.HAS_FREE_PREMIUM_CONTENT
+                (0, h.hasFlag)(i.flags, C.SKUFlags.HAS_FREE_PREMIUM_CONTENT) && l.push({
+                    type: C.StoreRecommendationTypes.HAS_FREE_PREMIUM_CONTENT
                 });
                 let r = i.releaseDate;
-                return null != r && 3 > s().diff(r, "months") && (i.accessType === S.SKUAccessTypes.EARLY_ACCESS ? l.push({
-                    type: S.StoreRecommendationTypes.EARLY_ACCESS,
+                return null != r && 3 > s().diff(r, "months") && (i.accessType === C.SKUAccessTypes.EARLY_ACCESS ? l.push({
+                    type: C.StoreRecommendationTypes.EARLY_ACCESS,
                     releaseDate: r
                 }) : l.push({
-                    type: S.StoreRecommendationTypes.RECENT_RELEASE_DATE,
+                    type: C.StoreRecommendationTypes.RECENT_RELEASE_DATE,
                     releaseDate: r
                 })), null != a.flavorText && l.push({
-                    type: S.StoreRecommendationTypes.FLAVOR_TEXT,
+                    type: C.StoreRecommendationTypes.FLAVOR_TEXT,
                     flavorText: a.flavorText
                 }), l
             }
@@ -35771,4 +35767,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.6ed5e9a077492bd140d9.js.map
+//# sourceMappingURL=67615.c1d5e9ee2168b7e1d55f.js.map
