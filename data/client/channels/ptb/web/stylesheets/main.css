@@ -43875,7 +43875,7 @@ html .progress__4ef76 {
 }
 
 .iconWithGuildIcon__4461b {
-    background: var(--background-accent);
+    background: var(--bg-mod-strong);
     border-radius: var(--radius-round);
     color: var(--text-secondary);
     height: 12px;
@@ -43982,6 +43982,11 @@ html .progress__4ef76 {
 .modeMuted__0aeea .icon_eff5d4,
 .modeMuted__0aeea .name__8d1ec {
     color: var(--interactive-muted)
+}
+
+.modeMuted__0aeea .iconWithGuildIcon__4461b {
+    color: var(--text-muted);
+    background: var(--bg-mod-faint)
 }
 
 .theme-light.custom-theme-background .modeMuted__0aeea .icon_eff5d4,
@@ -124379,4 +124384,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8c867b76d1b4715cccfd.css.map*/
+/*# sourceMappingURL=app.5c089a66117dfa1be61a.css.map*/
