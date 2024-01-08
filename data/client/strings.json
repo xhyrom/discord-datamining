@@ -16319,6 +16319,8 @@
   "WAVE_BACK": "\"Wave back\"",
   "JOIN_HANGOUT": "\"Join Hangout\"",
   "CANNOT_ACCESS_HANGOUT": "\"You cannot access this hangout\"",
+  "GEO_RESTRICTED_MODAL_TITLE": "\"Server Unavailable\"",
+  "GEO_RESTRICTED_MODAL_BODY": "\"**{serverName}** is not available in your region.\"",
   "QUESTS": "\"Quests\"",
   "QUESTS_AVAILABLE_THROUGH": "\"Available through {date}\"",
   "QUESTS_SHOW_CODE": "\"Show code\"",
