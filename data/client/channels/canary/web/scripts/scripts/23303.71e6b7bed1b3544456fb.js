@@ -17331,8 +17331,11 @@
                         a.relativeTimeThreshold("ss", -1);
                         let i = a.relativeTimeThreshold("m");
                         a.relativeTimeThreshold("m", 60);
-                        let l = a(e.toDate()).fromNow();
-                        return a.relativeTimeThreshold("s", t), a.relativeTimeThreshold("ss", n), a.relativeTimeThreshold("m", i), l
+                        let l = null;
+                        try {
+                            l = a(e.toDate()).fromNow()
+                        } catch (e) {}
+                        return a.relativeTimeThreshold("s", t), a.relativeTimeThreshold("ss", n), a.relativeTimeThreshold("m", i), null != l ? l : a(e.toDate()).fromNow()
                     }
                 },
                 r = "f";
@@ -35727,4 +35730,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.22536e5e8e30b21fbb79.js.map
+//# sourceMappingURL=23303.71e6b7bed1b3544456fb.js.map
