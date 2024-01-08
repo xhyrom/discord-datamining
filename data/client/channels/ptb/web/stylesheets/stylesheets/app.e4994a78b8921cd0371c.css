@@ -19443,8 +19443,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -53079,6 +53079,12 @@ html .progress__4ef76 {
     object-fit: contain;
     width: 150px;
     transform: translatey(-3px)
+}
+
+.artJan2024_a7d694 {
+    width: 143px;
+    left: -20px;
+    transform: translatey(5px)
 }
 
 .shopForAllBackgroundImage__009d9 {
@@ -124489,4 +124495,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4c77603936b7535c2152.css.map*/
+/*# sourceMappingURL=app.e4994a78b8921cd0371c.css.map*/
