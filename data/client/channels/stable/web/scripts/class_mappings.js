@@ -18259,13 +18259,11 @@
             "use strict";
             e.exports = {
                 actionButtons: "actionButtons_b58cbb",
-                active: "active__29381",
                 beta: "beta__59fad",
                 button: "button__66e8c",
                 buttonActive: "buttonActive__407a7",
                 buttonColor: "buttonColor_a6eb73",
                 buttonContents: "buttonContents__387ff",
-                buttonDeveloperActivityShelf: "buttonDeveloperActivityShelf__94e0d",
                 buttonIcon: "buttonIcon__80d32",
                 channel: "channel_d7d412",
                 connection: "connection__5bb32",
@@ -25114,7 +25112,6 @@
                 gameNightActivityIsActive: "gameNightActivityIsActive__66108",
                 gameNightButton: "gameNightButton__71f00",
                 gameNightButtonInner: "gameNightButtonInner_a72ec4",
-                gameNightDeveloperActivityShelf: "gameNightDeveloperActivityShelf__0babf",
                 gameNightRocket: "gameNightRocket_f91b21"
             }
         },

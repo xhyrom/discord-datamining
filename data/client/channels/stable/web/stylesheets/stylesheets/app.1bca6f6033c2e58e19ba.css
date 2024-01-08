@@ -12407,16 +12407,6 @@
     color: var(--white-500)
 }
 
-.gameNightDeveloperActivityShelf__0babf {
-    background-color: var(--yellow-400);
-    color: var(--white-500)
-}
-
-.gameNightDeveloperActivityShelf__0babf:hover {
-    background: var(--yellow-530);
-    color: var(--white-500)
-}
-
 .gameNightButtonInner_a72ec4 {
     display: flex;
     align-items: center;
@@ -70839,19 +70829,6 @@ input::-webkit-inner-spin-button {
     opacity: .3
 }
 
-.button__66e8c .buttonColor_a6eb73.buttonDeveloperActivityShelf__94e0d,
-.button__66e8c.buttonColor_a6eb73.buttonDeveloperActivityShelf__94e0d {
-    background-color: var(--yellow-400);
-    color: var(--white-500)
-}
-
-.button__66e8c .buttonColor_a6eb73.buttonDeveloperActivityShelf__94e0d.active__29381,
-.button__66e8c .buttonColor_a6eb73.buttonDeveloperActivityShelf__94e0d:hover,
-.button__66e8c.buttonColor_a6eb73.buttonDeveloperActivityShelf__94e0d.active__29381,
-.button__66e8c.buttonColor_a6eb73.buttonDeveloperActivityShelf__94e0d:hover {
-    background: var(--yellow-530)
-}
-
 .theme-dark.custom-theme-background .container_d667ff {
     background: var(--bg-overlay-1, var(--background-secondary-alt))
 }
@@ -124386,4 +124363,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1fcbcd56fe42b9059165.css.map*/
+/*# sourceMappingURL=app.1bca6f6033c2e58e19ba.css.map*/
