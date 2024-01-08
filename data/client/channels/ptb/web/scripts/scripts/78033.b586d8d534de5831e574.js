@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["41039"], {
+    ["78033"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -42414,6 +42414,7 @@
                     return this.getMessageNotifications(e.guild_id)
                 }
                 resolveUnreadSetting(e) {
+                    if (d.THREAD_CHANNEL_TYPES.has(e.type) || (0, d.isPrivate)(e.type)) return m.UnreadSetting.ALL_MESSAGES;
                     let t = this.getChannelUnreadSetting(e.guild_id, e.id);
                     if (t !== m.UnreadSetting.UNSET) return t;
                     if (null != e.parent_id) {
@@ -42540,7 +42541,7 @@
                     return f.hasFlag(n, T.ChannelNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? m.UnreadSetting.ALL_MESSAGES : f.hasFlag(n, T.ChannelNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? m.UnreadSetting.ONLY_MENTIONS : m.UnreadSetting.UNSET
                 }
                 getChannelUnreadMode(e) {
-                    return d.THREAD_CHANNEL_TYPES.has(e.type) ? c.default.isMuted(e.id) ? m.UnreadMode.NONE : m.UnreadMode.IMPORTANT : this.getMutedChannels(e.guild_id).has(e.id) ? m.UnreadMode.NONE : W() ? this.resolveUnreadSetting(e) === m.UnreadSetting.ALL_MESSAGES ? m.UnreadMode.IMPORTANT : m.UnreadMode.LESS_IMPORTANT : m.UnreadMode.IMPORTANT
+                    return d.THREAD_CHANNEL_TYPES.has(e.type) ? c.default.isMuted(e.id) ? m.UnreadMode.NONE : m.UnreadMode.IMPORTANT : this.getMutedChannels(e.guild_id).has(e.id) ? m.UnreadMode.NONE : (0, d.isPrivate)(e.type) || !W() ? m.UnreadMode.IMPORTANT : this.resolveUnreadSetting(e) === m.UnreadSetting.ALL_MESSAGES ? m.UnreadMode.IMPORTANT : m.UnreadMode.LESS_IMPORTANT
                 }
             }
             K.displayName = "UserGuildSettingsStore", K.persistKey = "collapsedGuilds", K.migrations = [e => ({
@@ -50054,7 +50055,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258005"
+                                build_number: "258017"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63441,4 +63442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.35e7d8bfde6c7a32e0c0.js.map
+//# sourceMappingURL=78033.b586d8d534de5831e574.js.map
