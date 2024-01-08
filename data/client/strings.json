@@ -6232,6 +6232,7 @@
   "SEARCH_FILTER_MESSAGES_AFTER_DATE": "\"Filter messages from after a date\"",
   "SEARCH_FILTER_MESSAGES_ON_DATE": "\"Filter messages sent on a specific date\"",
   "SEARCH_AUTOCOMPLETE_PROMPT": "\"Start typing to see some suggestions!\"",
+  "SEARCH_AUTOCOMPLETE_NO_RESULTS": "\"Unfortunately, we could not find any suggestions.\"",
   "SEARCH_ADD_FILTERS": "\"Add Filters\"",
   "SEARCH_RESULTS_SECTION_LABEL": "\"Search Results\"",
   "SEARCH_IN": "\"Search in {guildName}\"",
