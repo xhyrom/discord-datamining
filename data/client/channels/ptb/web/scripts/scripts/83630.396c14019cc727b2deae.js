@@ -425,17 +425,15 @@
                 static fromServer(t) {
                     var r;
                     let {
-                        currency: l,
-                        price: a,
+                        type: l,
+                        category_sku_id: a,
                         prices: d,
-                        type: c,
-                        category_sku_id: f,
-                        ...E
+                        ...c
                     } = t;
                     return new e({
-                        ...super.fromServer(E),
-                        currency: l,
-                        price: a,
+                        ...super.fromServer(c),
+                        type: l,
+                        categorySkuId: a,
                         prices: null == (r = d) ? {} : Object.keys(r).reduce((e, t) => {
                             if (null == r) return e;
                             let l = r[t];
@@ -447,9 +445,7 @@
                                 paymentSourcePrices: {}
                             }, e
                         }, {}),
-                        type: c,
-                        categorySkuId: f,
-                        items: E.items.reduce((e, t) => (0, i.match)(t).with({
+                        items: c.items.reduce((e, t) => (0, i.match)(t).with({
                             type: o.CollectiblesItemType.AVATAR_DECORATION
                         }, t => (e.push(s.default.fromServer(t)), e)).with({
                             type: o.CollectiblesItemType.PROFILE_EFFECT
@@ -457,7 +453,7 @@
                     })
                 }
                 constructor(e) {
-                    super(e), this.currency = e.currency, this.price = e.price, this.prices = e.prices, this.summary = e.summary, this.type = e.type, this.items = e.items, this.categorySkuId = e.categorySkuId
+                    super(e), this.summary = e.summary, this.type = e.type, this.items = e.items, this.categorySkuId = e.categorySkuId, this.prices = e.prices
                 }
             }
         },
@@ -1297,4 +1293,4 @@
         }
     }
 ]);
-//# sourceMappingURL=83630.ac12c4ee23644db27d50.js.map
+//# sourceMappingURL=83630.396c14019cc727b2deae.js.map

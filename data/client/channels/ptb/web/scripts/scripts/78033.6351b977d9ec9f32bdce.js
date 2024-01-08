@@ -50037,7 +50037,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "257959"
+                                build_number: "257971"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -57004,9 +57004,7 @@
                             address: o,
                             port: l
                         } = s;
-                        this.logger.info("Connected with local address ".concat(o, ":").concat(l, " and protocol: ").concat(a));
-                        let u = this.context === m.MediaEngineContextTypes.STREAM && this.ids.userId !== this.streamUserId;
-                        this.experimentFlags.has(S.ExperimentFlags.STREAMER_CLIP) && !u && this.setClipRecordUser(this.ids.userId, "audio", !0), i(i => {
+                        this.logger.info("Connected with local address ".concat(o, ":").concat(l, " and protocol: ").concat(a)), i(i => {
                             let r = (0, f.getExperimentCodecs)(this.experimentFlags);
                             this.codecs = [{
                                 type: "audio",
@@ -57672,7 +57670,7 @@
                         !this.videoEncoderFallbackPending && (this.logger.info("Falling back from current video encoder:" + e), this.codecs = this.codecs.map(t => ((e === t.name || "AV1" === t.name && "AV1X" === e) && (t.encode = !1), t)).filter(e => !("video" === e.type && !1 === e.encode && !1 === e.decode)), this.emit(d.BaseConnectionEvent.VideoEncoderFallback, this.codecs), this.videoEncoderFallbackPending = !0)
                     }, this.handleVideo = (e, t, n, i) => {
                         let r = s.cloneDeep(this.videoStreamParameters);
-                        e === this.ids.userId ? (this.experimentFlags.has(S.ExperimentFlags.STREAMER_CLIP) && this.context === m.MediaEngineContextTypes.STREAM && this.streamUserId === this.ids.userId && t > 0 && this.setClipRecordUser(this.ids.userId, "video", !0), null != i && Array.isArray(i) && i.length > 0 ? i.forEach(e => {
+                        e === this.ids.userId ? null != i && Array.isArray(i) && i.length > 0 ? i.forEach(e => {
                             r.forEach((t, n) => {
                                 t.rid === e.rid && (r[n] = {
                                     ...t,
@@ -57681,7 +57679,7 @@
                                     active: e.active
                                 })
                             })
-                        }) : t > 0 ? (r[0].active = !0, r[0].ssrc = t, r[0].rtxSsrc = g(t)) : r[0].active = !1) : t > 0 && (void 0 !== this.remoteVideoSSRCs[e] ? !this.remoteVideoSSRCs[e].includes(t) && (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = r, this.emit(d.BaseConnectionEvent.Video, e, null != n && "" !== n ? n : null, e === this.ids.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, g(t), this.videoStreamParameters)
+                        }) : t > 0 ? (r[0].active = !0, r[0].ssrc = t, r[0].rtxSsrc = g(t)) : r[0].active = !1 : t > 0 && (void 0 !== this.remoteVideoSSRCs[e] ? !this.remoteVideoSSRCs[e].includes(t) && (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = r, this.emit(d.BaseConnectionEvent.Video, e, null != n && "" !== n ? n : null, e === this.ids.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, g(t), this.videoStreamParameters)
                     }, this.handleFirstFrame = (e, t, n) => {
                         this.emit(d.BaseConnectionEvent.FirstFrame, e, t, n)
                     }, this.handleNoInput = e => {
@@ -63426,4 +63424,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.b83eb7df7fdb4e74b6c5.js.map
+//# sourceMappingURL=78033.6351b977d9ec9f32bdce.js.map
