@@ -436,6 +436,9 @@
             "use strict";
             let a;
             n.r(t), n.d(t, {
+                DEFAULT_MUTE_KEYBIND: function() {
+                    return R
+                },
                 default: function() {
                     return Q
                 }
@@ -1281,7 +1284,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...n));
                     let l = new URLSearchParams;
-                    l.append("build_id", "94efcdfc5790dd6900ea5602b3f7887369906f6a"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
+                    l.append("build_id", "834698d8f84b6db607630dc4423aaa7c2042b8bb"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1409,4 +1412,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77015.100182cebbff9f154242.js.map
+//# sourceMappingURL=77015.cdfd02df79cd826d776d.js.map

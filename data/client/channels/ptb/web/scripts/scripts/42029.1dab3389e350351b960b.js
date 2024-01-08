@@ -1,16 +1,16 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["7105"], {
+    ["42029"], {
         272030: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 closeContextMenu: function() {
-                    return a
-                },
-                openContextMenu: function() {
                     return o
                 },
+                openContextMenu: function() {
+                    return d
+                },
                 openContextMenuLazy: function() {
-                    return E
+                    return c
                 }
             }), n("506083");
             var i = n("913144"),
@@ -19,14 +19,14 @@
                 r = n("749866"),
                 s = n("49111");
 
-            function _(e) {
+            function a(e) {
                 i.default.dispatch({
                     type: "CONTEXT_MENU_OPEN",
                     contextMenu: e
                 })
             }
 
-            function a(e) {
+            function o(e) {
                 {
                     let {
                         flushSync: t
@@ -41,40 +41,40 @@
                 }
             }
 
-            function o(e, t, n, i) {
-                var a, o, E;
+            function d(e, t, n, i) {
+                var o, d, c;
                 if (e.stopPropagation(), null != e.currentTarget.contains && !e.currentTarget.contains(e.target)) return;
-                let d = 0,
-                    c = 0;
-                if ("pageX" in e && (d = e.pageX, c = e.pageY), 0 === d && 0 === c) {
-                    let t = null === (a = e.target) || void 0 === a ? void 0 : a.getBoundingClientRect(),
+                let g = 0,
+                    f = 0;
+                if ("pageX" in e && (g = e.pageX, f = e.pageY), 0 === g && 0 === f) {
+                    let t = null === (o = e.target) || void 0 === o ? void 0 : o.getBoundingClientRect(),
                         {
                             left: n = 0,
                             top: i = 0,
                             width: l = 0,
                             height: u = 0
                         } = null != t ? t : {};
-                    d = n + l / 2, c = i + u / 2
+                    g = n + l / 2, f = i + u / 2
                 }
-                let I = {
+                let h = {
                     render: t,
                     renderLazy: i,
-                    target: null !== (o = e.target) && void 0 !== o ? o : e.currentTarget,
-                    rect: new DOMRect(d, c, 0, 0),
+                    target: null !== (d = e.target) && void 0 !== d ? d : e.currentTarget,
+                    rect: new DOMRect(g, f, 0, 0),
                     config: {
-                        context: __OVERLAY__ ? s.AppContext.OVERLAY : null !== (E = (0, l.getCurrentlyInteractingAppContext)()) && void 0 !== E ? E : s.AppContext.APP,
+                        context: __OVERLAY__ ? s.AppContext.OVERLAY : null !== (c = (0, l.getCurrentlyInteractingAppContext)()) && void 0 !== c ? c : s.AppContext.APP,
                         ...n
                     }
                 };
                 if ((null == n ? void 0 : n.enableSpellCheck) && (0, u.isDesktop)()) {
                     let e = (0, r.addResultListener)(() => {
-                        e(), _(I)
+                        e(), a(h)
                     })
-                } else e.preventDefault(), _(I)
+                } else e.preventDefault(), a(h)
             }
 
-            function E(e, t, n) {
-                o(e, void 0, n, t)
+            function c(e, t, n) {
+                d(e, void 0, n, t)
             }
         },
         689988: function(e, t, n) {
@@ -165,7 +165,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 install: function() {
-                    return D
+                    return p
                 }
             }), n("781738"), n("222007");
             var i = n("78349"),
@@ -173,20 +173,20 @@
                 u = n.n(l),
                 r = n("118810"),
                 s = n("49671"),
-                _ = n("605250"),
-                a = n("915639"),
-                o = n("449008"),
-                E = n("851234"),
-                d = n("648610");
-            let c = new _.default("Spellchecker"),
-                I = null === s.default || void 0 === s.default ? void 0 : s.default.spellCheck;
+                a = n("605250"),
+                o = n("915639"),
+                d = n("449008"),
+                c = n("851234"),
+                g = n("648610");
+            let f = new a.default("Spellchecker"),
+                h = null === s.default || void 0 === s.default ? void 0 : s.default.spellCheck;
 
-            function N(e) {
+            function S(e) {
                 var t;
-                e = null !== (t = d.default[e]) && void 0 !== t ? t : e;
+                e = null !== (t = g.default[e]) && void 0 !== t ? t : e;
                 let n = (0, i.parse)(e.replace(/[_-]/g, "-"));
                 if (null == n || null == n.langtag.language || null == n.langtag.region) {
-                    c.error("".concat(e, " is not a valid locale."));
+                    f.error("".concat(e, " is not a valid locale."));
                     return
                 }
                 let {
@@ -195,7 +195,7 @@
                 } = n.langtag;
                 return "".concat(l.language.toLowerCase(), "-").concat(u.toUpperCase())
             }
-            class T {
+            class E {
                 get enabled() {
                     return this._enabled
                 }
@@ -203,12 +203,12 @@
                     this._enabled = e
                 }
                 setLearnedWords(e) {
-                    I.setLearnedWords(e)
+                    h.setLearnedWords(e)
                 }
                 setLocale(e) {
                     var t;
-                    null === (t = I.setLocale(e)) || void 0 === t || t.then(t => {
-                        c.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
+                    null === (t = h.setLocale(e)) || void 0 === t || t.then(t => {
+                        f.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
                     })
                 }
                 setAppLocale(e) {
@@ -232,38 +232,38 @@
                     return this.isMisspelled(e, t) ? this.corrections : []
                 }
                 replaceMisspelling(e) {
-                    I.replaceMisspelling(e)
+                    h.replaceMisspelling(e)
                 }
                 constructor(e) {
                     this._enabled = !0, this.misspelledWord = "", this.corrections = [];
-                    let [t, n] = a.default.locale.split("-");
+                    let [t, n] = o.default.locale.split("-");
                     this.regionPreference = n;
                     let i = this.getAvailableLanguages(e);
-                    this.languageDetector = new E.default(t, n => {
+                    this.languageDetector = new c.default(t, n => {
                         let l = "".concat(n, "-").concat(this.regionPreference);
                         if (-1 !== e.indexOf(l)) this.setLocale(l);
                         else {
                             var u;
-                            let e = null !== (u = i[n]) && void 0 !== u ? u : d.default[t];
+                            let e = null !== (u = i[n]) && void 0 !== u ? u : g.default[t];
                             null != e && this.setLocale(e)
                         }
-                    }), I.on("spellcheck-result", (e, t) => {
+                    }), h.on("spellcheck-result", (e, t) => {
                         this.misspelledWord = null != e ? e : "", this.corrections = null != t ? t : []
                     })
                 }
             }
-            let A = u.debounce((e, t) => {
+            let _ = u.debounce((e, t) => {
                 let n = function(e) {
                     return null == e ? null : (0, r.isElement)(e, HTMLInputElement) || (0, r.isElement)(e, HTMLTextAreaElement) ? e.value : (0, r.isElement)(e) && e.hasAttribute("contenteditable") ? e.textContent : void 0
                 }(t);
                 null != n && e.detectLanguage(n)
             }, 250);
-            async function D() {
+            async function p() {
                 var e, t;
-                let n = null !== (e = await I.getAvailableDictionaries()) && void 0 !== e ? e : [],
-                    i = n.map(N).filter(o.isNotNullish),
-                    l = new T(i);
-                return t = l, null != document.body && document.body.addEventListener("beforeinput", e => A(t, e.target), !0), l
+                let n = null !== (e = await h.getAvailableDictionaries()) && void 0 !== e ? e : [],
+                    i = n.map(S).filter(d.isNotNullish),
+                    l = new E(i);
+                return t = l, null != document.body && document.body.addEventListener("beforeinput", e => _(t, e.target), !0), l
             }
         },
         648610: function(e, t, n) {
@@ -413,15 +413,6 @@
                 zu: "zu-ZA"
             }
         },
-        533613: function(e, t, n) {
-            "use strict";
-            var i, l;
-            n.r(t), n.d(t, {
-                HotspotLocations: function() {
-                    return i
-                }
-            }), (l = i || (i = {})).REPORT_PROBLEM_POST_STREAM = "REPORT_PROBLEM_POST_STREAM", l.VIDEO_BACKGROUND_FEEDBACK = "VIDEO_BACKGROUND_FEEDBACK", l.VOICE_CALL_FEEDBACK = "VOICE_CALL_FEEDBACK", l.GUILD_ANALYTICS_GUILD_SETTINGS_MENU = "GUILD_ANALYTICS_GUILD_SETTINGS_MENU", l.NOW_PLAYING_CONSENT_CARD = "NOW_PLAYING_CONSENT_CARD", l.IOS_GUILD_NAV_EDUCATION = "IOS_GUILD_NAV_EDUCATION", l.VOICE_PANEL_INTRODUCTION = "VOICE_PANEL_INTRODUCTION", l.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL = "GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL", l.FAVORITE_EMOJI_TOOLTIP = "FAVORITE_EMOJI_TOOLTIP", l.POST_ACTIVITY_FEEDBACK = "POST_ACTIVITY_FEEDBACK", l.GUILD_DELETE_FEEDBACK = "GUILD_DELETE_FEEDBACK", l.GUILD_LEAVE_FEEDBACK = "GUILD_LEAVE_FEEDBACK", l.APPLICATION_COMMAND_TOOLTIP = "APPLICATION_COMMAND_TOOLTIP", l.GUILD_CAP_INLINE_UPSELL = "GUILD_CAP_INLINE_UPSELL", l.STAGE_CHANNEL_UPSELL = "STAGE_CHANNEL_UPSELL", l.HUB_WAITLIST_UPSELL = "HUB_WAITLIST_UPSELL", l.HUB_NEW = "HUB_NEW", l.HUB_SECOND_EMAIL_CONNECTION_UPSELL = "HUB_SECOND_EMAIL_CONNECTION_UPSELL", l.LIVE_STAGE_NOTIFICATION_BADGE = "LIVE_STAGE_NOTIFICATION_BADGE", l.GUILD_EVENT_UPSELL = "GUILD_EVENT_UPSELL", l.HUB_LINK_CHANNEL_NOTICE = "HUB_LINK_CHANNEL_NOTICE", l.PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP = "PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP", l.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP = "ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP", l.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL = "ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL", l.MULTI_ACCOUNT_TOOLTIP = "MULTI_ACCOUNT_TOOLTIP", l.HUB_STUDY_ROOM_NOTICE = "HUB_STUDY_ROOM_NOTICE", l.CHANNEL_BANNER_MEMBER_LIST_NOTICE = "CHANNEL_BANNER_MEMBER_LIST_NOTICE", l.CHANGE_LANGUAGE_MODAL = "CHANGE_LANGUAGE_MODAL", l.ACTIVITY_BEB_TUTORIAL = "ACTIVITY_BEB_TUTORIAL", l.APP_DIRECTORY_SETTINGS_NEW_PILL = "APP_DIRECTORY_SETTINGS_NEW_PILL", l.INVITE_SPLASH_GUILD_HEADER_TOOLTIP = "INVITE_SPLASH_GUILD_HEADER_TOOLTIP", l.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW = "ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW", l.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW = "ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW", l.ANIMATED_VIDEO_BG_HACKER_DEN_NEW = "ANIMATED_VIDEO_BG_HACKER_DEN_NEW", l.ANIMATED_VIDEO_BG_WUMPICE_NEW = "ANIMATED_VIDEO_BG_WUMPICE_NEW", l.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW = "ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW", l.ANIMATED_VIDEO_BG_BIRTHDAY_1_NEW = "ANIMATED_VIDEO_BG_BIRTHDAY_1_NEW", l.SOUNDBOARD_WHEEL_EDUCATION_MODAL = "SOUNDBOARD_WHEEL_EDUCATION_MODAL", l.IN_APP_REPORTS_FEEDBACK = "IN_APP_REPORTS_FEEDBACK", l.CLIPS_CHANNEL_ATTACH_REMINDER = "CLIPS_CHANNEL_ATTACH_REMINDER"
-        },
         846325: function(e, t, n) {
             "use strict";
             var i, l;
@@ -436,196 +427,196 @@
                     return s
                 },
                 SoundboardWheelSize: function() {
-                    return _
-                },
-                DEFAULT_KEYBIND: function() {
                     return a
                 },
-                EMPTY_SOUND_LIST: function() {
+                DEFAULT_KEYBIND: function() {
                     return o
                 },
-                CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID: function() {
-                    return E
-                },
-                NUM_RECENTLY_HEARD_SOUNDS: function() {
+                EMPTY_SOUND_LIST: function() {
                     return d
                 },
-                NUM_FREQUENTLY_USED_SOUNDS: function() {
+                CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID: function() {
                     return c
+                },
+                NUM_RECENTLY_HEARD_SOUNDS: function() {
+                    return g
+                },
+                NUM_FREQUENTLY_USED_SOUNDS: function() {
+                    return f
                 }
             }), n("222007");
             let u = 32,
                 r = 5,
                 s = "DEFAULT";
             (l = i || (i = {}))[l.SUCCESS = 0] = "SUCCESS", l[l.INTERRUPTED = 1] = "INTERRUPTED";
-            let _ = {
+            let a = {
                     width: 424,
                     height: 424,
                     padding: 100
                 },
-                a = "ctrl+`",
-                o = [],
-                E = "0",
-                d = 6,
-                c = 6
+                o = "ctrl+`",
+                d = [],
+                c = "0",
+                g = 6,
+                f = 6
         },
         235004: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return M
+                    return I
                 }
             }), n("222007"), n("424973"), n("834022");
             var i, l, u = n("917351"),
                 r = n.n(u),
                 s = n("446674"),
-                _ = n("913144"),
-                a = n("845579"),
-                o = n("374363"),
-                E = n("697218"),
-                d = n("599110"),
-                c = n("829536"),
-                I = n("846325"),
-                N = n("49111"),
-                T = n("397336");
+                a = n("913144"),
+                o = n("845579"),
+                d = n("374363"),
+                c = n("697218"),
+                g = n("599110"),
+                f = n("829536"),
+                h = n("846325"),
+                S = n("49111"),
+                E = n("397336");
             (l = i || (i = {}))[l.NOT_FETCHED = 0] = "NOT_FETCHED", l[l.FETCHING = 1] = "FETCHING", l[l.FETCHED = 2] = "FETCHED";
-            let A = new Map,
-                D = new Map,
-                L = new Set,
-                O = 0,
-                S = 0,
-                U = new Set,
-                f = new Map,
-                g = !1;
+            let _ = new Map,
+                p = new Map,
+                D = new Set,
+                v = 0,
+                N = 0,
+                T = new Set,
+                U = new Map,
+                O = !1;
 
-            function C(e) {
+            function A(e) {
                 let {
                     sound: t
-                } = e, n = A.get(t.guildId), i = null == n ? void 0 : n.findIndex(e => e.soundId === t.soundId);
-                null != n && null != i && -1 !== i ? (n[i] = t, A.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), A.set(t.guildId, [...n]))
+                } = e, n = _.get(t.guildId), i = null == n ? void 0 : n.findIndex(e => e.soundId === t.soundId);
+                null != n && null != i && -1 !== i ? (n[i] = t, _.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), _.set(t.guildId, [...n]))
             }
-            let h = r.debounce(e => {
-                d.default.track(N.AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, {
-                    volume: Math.round((0, c.amplitudeToPerceptual)(e))
-                }), a.SoundboardSettings.updateSetting({
+            let L = r.debounce(e => {
+                g.default.track(S.AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, {
+                    volume: Math.round((0, f.amplitudeToPerceptual)(e))
+                }), o.SoundboardSettings.updateSetting({
                     volume: e
                 })
             }, 1e3);
 
-            function R(e) {
+            function m(e) {
                 var t, n;
                 let i = null !== (n = null == e ? void 0 : null === (t = e.audioContextSettings) || void 0 === t ? void 0 : t.user) && void 0 !== n ? n : {};
-                for (let [e, t] of Object.entries(i)) t.soundboardMuted ? L.add(e) : L.delete(e);
-                for (let e of L.keys()) null == i[e] && L.delete(e)
+                for (let [e, t] of Object.entries(i)) t.soundboardMuted ? D.add(e) : D.delete(e);
+                for (let e of D.keys()) null == i[e] && D.delete(e)
             }
-            class p extends s.default.Store {
+            class C extends s.default.Store {
                 initialize() {
-                    this.waitFor(o.default), R(o.default.settings)
+                    this.waitFor(d.default), m(d.default.settings)
                 }
                 getOverlaySerializedState() {
                     return {
-                        soundboardSounds: Object.fromEntries(A),
-                        favoritedSoundIds: Array.from(U),
-                        localSoundboardMutes: Array.from(L)
+                        soundboardSounds: Object.fromEntries(_),
+                        favoritedSoundIds: Array.from(T),
+                        localSoundboardMutes: Array.from(D)
                     }
                 }
                 getSounds() {
-                    return A
+                    return _
                 }
                 getSoundsForGuild(e) {
-                    return A.get(e)
+                    return _.get(e)
                 }
                 getSound(e, t) {
                     var n;
-                    let i = null !== (n = A.get(e)) && void 0 !== n ? n : [];
+                    let i = null !== (n = _.get(e)) && void 0 !== n ? n : [];
                     return i.find(e => e.soundId === t)
                 }
                 getSoundById(e) {
-                    let t = Array.from(A.values()).flat();
+                    let t = Array.from(_.values()).flat();
                     return t.find(t => t.soundId === e)
                 }
                 isFetchingSounds() {
-                    return 1 === S
+                    return 1 === N
                 }
                 isFetchingDefaultSounds() {
-                    return 1 === O
+                    return 1 === v
                 }
                 isFetching() {
                     return this.isFetchingSounds() || this.isFetchingDefaultSounds()
                 }
                 shouldFetchDefaultSounds() {
-                    return 0 === O
+                    return 0 === v
                 }
                 hasFetchedDefaultSounds() {
-                    return 2 === O
+                    return 2 === v
                 }
                 isUserPlayingSounds(e) {
-                    let t = f.get(e);
+                    let t = U.get(e);
                     return null != t && t > 0
                 }
                 isPlayingSound(e) {
-                    return null != D.get(e)
+                    return null != p.get(e)
                 }
                 isFavoriteSound(e) {
-                    return U.has(e)
+                    return T.has(e)
                 }
                 getFavorites() {
-                    return U
+                    return T
                 }
                 isLocalSoundboardMuted(e) {
-                    return L.has(e)
+                    return D.has(e)
                 }
                 hasHadOtherUserPlaySoundInSession() {
-                    return g
+                    return O
                 }
                 hasFetchedAllSounds() {
-                    return 2 === S && 2 === O
+                    return 2 === N && 2 === v
                 }
             }
-            p.displayName = "SoundboardStore";
-            var M = new p(_.default, {
+            C.displayName = "SoundboardStore";
+            var I = new C(a.default, {
                 LOGOUT: function() {
-                    A.clear(), D.clear(), f.clear(), g = !1, S = 0, O = 0
+                    _.clear(), p.clear(), U.clear(), O = !1, N = 0, v = 0
                 },
                 GUILD_SOUNDBOARD_FETCH: function() {
-                    S = 1
+                    N = 1
                 },
-                GUILD_SOUNDBOARD_SOUND_CREATE: C,
-                GUILD_SOUNDBOARD_SOUND_UPDATE: C,
+                GUILD_SOUNDBOARD_SOUND_CREATE: A,
+                GUILD_SOUNDBOARD_SOUND_UPDATE: A,
                 GUILD_SOUNDBOARD_SOUND_DELETE: function(e) {
                     let {
                         soundId: t,
                         guildId: n
                     } = e;
-                    A.delete(t);
-                    let i = A.get(n),
+                    _.delete(t);
+                    let i = _.get(n),
                         l = null == i ? void 0 : i.findIndex(e => e.soundId === t);
-                    null != i && null != l && !(l < 0) && (i.splice(l, 1), A.set(n, [...i]))
+                    null != i && null != l && !(l < 0) && (i.splice(l, 1), _.set(n, [...i]))
                 },
                 GUILD_SOUNDBOARD_SOUND_PLAY_START: function(e) {
                     var t, n, i;
                     let {
                         soundId: l,
                         userId: u
-                    } = e, r = (null !== (n = D.get(l)) && void 0 !== n ? n : 0) + 1, s = (null !== (i = f.get(u)) && void 0 !== i ? i : 0) + 1;
-                    D.set(l, r), f.set(u, s), u !== (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (g = !0)
+                    } = e, r = (null !== (n = p.get(l)) && void 0 !== n ? n : 0) + 1, s = (null !== (i = U.get(u)) && void 0 !== i ? i : 0) + 1;
+                    p.set(l, r), U.set(u, s), u !== (null === (t = c.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (O = !0)
                 },
                 GUILD_SOUNDBOARD_SOUND_PLAY_END: function(e) {
                     var t, n;
                     let {
                         soundId: i,
                         userId: l
-                    } = e, u = (null !== (t = D.get(i)) && void 0 !== t ? t : 0) - 1, r = (null !== (n = f.get(l)) && void 0 !== n ? n : 0) - 1;
-                    u <= 0 ? D.delete(i) : D.set(i, u), r <= 0 ? f.delete(l) : f.set(l, r)
+                    } = e, u = (null !== (t = p.get(i)) && void 0 !== t ? t : 0) - 1, r = (null !== (n = U.get(l)) && void 0 !== n ? n : 0) - 1;
+                    u <= 0 ? p.delete(i) : p.set(i, u), r <= 0 ? U.delete(l) : U.set(l, r)
                 },
                 USER_SOUNDBOARD_SET_VOLUME: function(e) {
                     let {
                         volume: t
                     } = e;
-                    h(t)
+                    L(t)
                 },
                 VOICE_CHANNEL_SELECT: function() {
-                    D.clear(), f.clear()
+                    p.clear(), U.clear()
                 },
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     let {
@@ -634,19 +625,19 @@
                         type: n,
                         proto: i
                     } = t;
-                    if (n === T.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
+                    if (n === E.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
                         var l, u;
-                        U = new Set(null !== (u = null == i ? void 0 : null === (l = i.favoriteSoundboardSounds) || void 0 === l ? void 0 : l.soundIds) && void 0 !== u ? u : [])
-                    } else n === T.UserSettingsTypes.PRELOADED_USER_SETTINGS && R(i)
+                        T = new Set(null !== (u = null == i ? void 0 : null === (l = i.favoriteSoundboardSounds) || void 0 === l ? void 0 : l.soundIds) && void 0 !== u ? u : [])
+                    } else n === E.UserSettingsTypes.PRELOADED_USER_SETTINGS && m(i)
                 },
                 SOUNDBOARD_FETCH_DEFAULT_SOUNDS: function() {
-                    O = 1
+                    v = 1
                 },
                 SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: function(e) {
                     let {
                         soundboardSounds: t
                     } = e;
-                    A.set(I.DEFAULT_SOUND_GUILD_ID, t), O = 2
+                    _.set(h.DEFAULT_SOUND_GUILD_ID, t), v = 2
                 },
                 SOUNDBOARD_SOUNDS_RECEIVED: function(e) {
                     let {
@@ -657,33 +648,33 @@
                             guildId: t,
                             sounds: n
                         } = e;
-                        A.set(t, n)
-                    }), S = 2
+                        _.set(t, n)
+                    }), N = 2
                 },
                 GUILD_DELETE: function(e) {
                     let {
                         guild: t
                     } = e;
-                    A.delete(t.id)
+                    _.delete(t.id)
                 },
                 AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: function(e) {
                     let {
                         userId: t
                     } = e;
-                    L.has(t) ? L.delete(t) : L.add(t)
+                    D.has(t) ? D.delete(t) : D.add(t)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         soundboardStoreState: t
                     } = e;
-                    A = new Map(Object.entries(t.soundboardSounds)), U = new Set(t.favoritedSoundIds), L = new Set(t.localSoundboardMutes)
+                    _ = new Map(Object.entries(t.soundboardSounds)), T = new Set(t.favoritedSoundIds), D = new Set(t.localSoundboardMutes)
                 },
                 GUILD_SOUNDBOARD_SOUNDS_UPDATE: function(e) {
                     let {
                         guildId: t,
                         soundboardSounds: n
                     } = e;
-                    A.set(t, n)
+                    _.set(t, n)
                 }
             })
         },
@@ -717,25 +708,25 @@
                     return s
                 },
                 setEnabled: function() {
-                    return a
-                },
-                setLearnedWords: function() {
                     return o
                 },
-                isMisspelled: function() {
-                    return E
-                },
-                getCorrections: function() {
+                setLearnedWords: function() {
                     return d
                 },
-                replaceWithCorrection: function() {
+                isMisspelled: function() {
                     return c
                 },
+                getCorrections: function() {
+                    return g
+                },
+                replaceWithCorrection: function() {
+                    return f
+                },
                 setAppLocale: function() {
-                    return I
+                    return h
                 },
                 addResultListener: function() {
-                    return N
+                    return S
                 }
             });
             var i = n("49671"),
@@ -749,36 +740,36 @@
             function s() {
                 return (0, u.isDesktop)() && r()
             }
-            let _ = s() ? (0, l.install)() : null;
-            async function a(e) {
-                let t = await _;
+            let a = s() ? (0, l.install)() : null;
+            async function o(e) {
+                let t = await a;
                 null != t && (t.enabled = e)
             }
-            async function o(e) {
-                let t = await _;
+            async function d(e) {
+                let t = await a;
                 null != t && t.setLearnedWords(e)
             }
-            async function E(e) {
+            async function c(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = await _;
+                    n = await a;
                 return null != n && n.isMisspelled(e, t)
             }
-            async function d(e) {
+            async function g(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 5,
-                    i = await _;
+                    i = await a;
                 return null == i ? [] : i.getCorrectionsForMisspelling(e, t).slice(0, n)
             }
-            async function c(e) {
-                let t = await _;
+            async function f(e) {
+                let t = await a;
                 null != t && t.replaceMisspelling(e)
             }
-            async function I(e) {
-                let t = await _;
+            async function h(e) {
+                let t = await a;
                 null != t && t.setAppLocale(e)
             }
 
-            function N(e) {
+            function S(e) {
                 if (!r()) return () => {};
                 let t = i.default.spellCheck.on("spellcheck-result", e);
                 return null != t ? t : () => {}
@@ -786,4 +777,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7105.da032cdf2d68f70cd9db.js.map
+//# sourceMappingURL=42029.1dab3389e350351b960b.js.map
