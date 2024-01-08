@@ -131,10 +131,10 @@
                 c = n("86878"),
                 s = n("546463"),
                 E = n("686470"),
-                p = n("535974"),
-                A = n("568734"),
-                f = n("269180"),
-                I = n("773336"),
+                I = n("535974"),
+                p = n("568734"),
+                A = n("269180"),
+                f = n("773336"),
                 _ = n("260365"),
                 T = n("438931"),
                 C = n("215082"),
@@ -151,7 +151,7 @@
                     embedded: r = !1,
                     analyticsLocations: u = []
                 } = t;
-                S(e, null, a, r, u).then(() => f.default.waitConnected(e)).then(() => Promise.race([f.default.waitSubscribed(e, y.RPCEvents.ACTIVITY_JOIN)])).then(() => {
+                S(e, null, a, r, u).then(() => A.default.waitConnected(e)).then(() => Promise.race([A.default.waitSubscribed(e, y.RPCEvents.ACTIVITY_JOIN)])).then(() => {
                     l.default.dispatch({
                         type: "ACTIVITY_JOIN",
                         applicationId: e,
@@ -168,26 +168,24 @@
             function S(t, e, n) {
                 let d = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
                     s = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : [];
-                if (d) return null == n ? Promise.reject(Error("Invalid channel ID")) : ((0, r.startEmbeddedActivity)(n, {
-                    application_id: t
-                }, s), Promise.resolve());
+                if (d) return null == n ? Promise.reject(Error("Invalid channel ID")) : ((0, r.startEmbeddedActivity)(n, t, s), Promise.resolve());
                 if (c.default.isConnected(t)) return Promise.resolve();
-                let A = null;
+                let p = null;
                 if (null == e) {
                     let n = E.default.getActiveLibraryApplication(t);
                     e = null != n ? n.branchId : t
                 }
-                if (p.default.isLaunchable(t, e)) {
-                    var I;
-                    let n = p.default.getState(t, e),
+                if (I.default.isLaunchable(t, e)) {
+                    var f;
+                    let n = I.default.getState(t, e),
                         l = E.default.getActiveLaunchOptionId(t, e);
                     if (null == n) throw Error("Missing dispatch game when launching");
                     let r = E.default.getLibraryApplication(t, e);
                     if (null == r) throw Error("Missing library application when launching");
-                    A = (I = t, i.default.post({
+                    p = (f = t, i.default.post({
                         url: y.Endpoints.OAUTH2_AUTHORIZE,
                         query: {
-                            client_id: I,
+                            client_id: f,
                             response_type: "token",
                             scope: [y.OAuth2Scopes.IDENTIFY].join(" ")
                         },
@@ -208,20 +206,20 @@
                     }, t => {
                         if (404 === t.status) return null;
                         throw t
-                    })).then(t => f.default.launchDispatchApplication(n, t, o.default.locale, r.getBranchName(), l))
+                    })).then(t => A.default.launchDispatchApplication(n, t, o.default.locale, r.getBranchName(), l))
                 } else {
                     let e = u.default.getApplication(t);
-                    A = null != e ? f.default.launch(e) : f.default.launchGame(t)
+                    p = null != e ? A.default.launch(e) : A.default.launchGame(t)
                 }
                 let _ = Error("game not found");
-                return null != A ? (l.default.dispatch({
+                return null != p ? (l.default.dispatch({
                     type: "LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE",
                     applicationId: t,
                     branchId: e
                 }), l.default.dispatch({
                     type: "GAME_LAUNCH_START",
                     applicationId: t
-                }), A.then(e => {
+                }), p.then(e => {
                     l.default.dispatch({
                         type: "GAME_LAUNCH_SUCCESS",
                         applicationId: t,
@@ -251,7 +249,7 @@
                     if (null != n) {
                         let t = E.default.getActiveLibraryApplication(n.id);
                         if (null != t) {
-                            let e = A.toggleFlag(t.getFlags(), y.LibraryApplicationFlags.OVERLAY_DISABLED);
+                            let e = p.toggleFlag(t.getFlags(), y.LibraryApplicationFlags.OVERLAY_DISABLED);
                             T.updateFlags(t.id, t.branchId, e);
                             return
                         }
@@ -348,7 +346,7 @@
                             url: y.Endpoints.UNVERIFIED_APPLICATIONS,
                             body: {
                                 name: e,
-                                os: (0, I.getPlatformName)(),
+                                os: (0, f.getPlatformName)(),
                                 icon: n,
                                 distributor_application: (s = r, E = u, null == s || "" === s ? null : {
                                     distributor: s,
@@ -550,10 +548,10 @@
                 c = n("599417"),
                 s = n("299285"),
                 E = n("191145"),
-                p = n("752598"),
-                A = n("653047"),
-                f = n("271938"),
-                I = n("42203"),
+                I = n("752598"),
+                p = n("653047"),
+                A = n("271938"),
+                f = n("42203"),
                 _ = n("18494"),
                 T = n("697218"),
                 C = n("449008"),
@@ -569,43 +567,41 @@
                 let a = N.default.getSelfEmbeddedActivityForChannel(t);
                 null != a && O({
                     channelId: t,
-                    applicationId: a.application_id
+                    applicationId: a.applicationId
                 }), l.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_OPEN",
                     channelId: t,
-                    embeddedActivity: e,
+                    applicationId: e,
                     analyticsLocations: n
                 });
-                let {
-                    application_id: i
-                } = e, r = (0, S.default)(t);
-                r ? (u.default.selectParticipant(t, i), u.default.updateLayout(t, m.ChannelLayouts.NO_CHAT)) : (0, D.default)(t)
+                let i = (0, S.default)(t);
+                i ? (u.default.selectParticipant(t, e), u.default.updateLayout(t, m.ChannelLayouts.NO_CHAT)) : (0, D.default)(t)
             }
             async function L(t) {
                 var e, n;
-                let i = I.default.getChannel(t),
+                let i = f.default.getChannel(t),
                     r = null !== (e = null == i ? void 0 : i.getGuildId()) && void 0 !== e ? e : void 0;
                 if (null == r && !(null !== (n = null == i ? void 0 : i.isPrivate()) && void 0 !== n && n)) return;
                 let u = N.default.getSelfEmbeddedActivityForChannel(t);
                 if (null === u) return;
-                let d = f.default.getSessionId();
+                let d = A.default.getSessionId();
                 try {
                     l.default.dispatch({
                             type: "EMBEDDED_ACTIVITY_LAUNCH_START",
                             embeddedActivity: u
                         }),
                         function(t, e) {
-                            let n = I.default.getChannel(t),
-                                a = N.default.getEmbeddedActivitiesForChannel(t).some(t => t.application_id === e);
+                            let n = f.default.getChannel(t),
+                                a = N.default.getEmbeddedActivitiesForChannel(t).some(t => t.applicationId === e);
                             if (a) return !1;
                             let i = (0, h.isActivitiesInTextEnabled)(n, "EmbeddedActivitiesActionCreators#isActivityInTextStart");
                             return !!((null == n ? void 0 : n.type) === m.ChannelTypes.GUILD_TEXT && i || null != n && n.isPrivate() && i && null == _.default.getVoiceChannelId()) || !1
-                        }(t, u.application_id) ? await (0, p.executePrimaryEntryPointInteraction)({
-                            applicationId: u.application_id,
+                        }(t, u.applicationId) ? await (0, I.executePrimaryEntryPointInteraction)({
+                            applicationId: u.applicationId,
                             channelId: t,
                             guildId: r
                         }) : await y.default.post({
-                            url: m.Endpoints.ACTIVITY_CHANNEL_LAUNCH(t, u.application_id),
+                            url: m.Endpoints.ACTIVITY_CHANNEL_LAUNCH(t, u.applicationId),
                             body: {
                                 session_id: d,
                                 guild_id: null != r ? r : void 0
@@ -615,7 +611,7 @@
                                 properties: {
                                     guild_id: r,
                                     channel_id: t,
-                                    application_id: u.application_id,
+                                    application_id: u.applicationId,
                                     session_id: d
                                 }
                             },
@@ -628,11 +624,11 @@
                     l.default.dispatch({
                         type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
                         guildId: r,
-                        applicationId: u.application_id,
+                        applicationId: u.applicationId,
                         error: new c.default(e)
                     }), O({
                         channelId: t,
-                        applicationId: u.application_id,
+                        applicationId: u.applicationId,
                         showFeedback: !1
                     })
                 }
@@ -653,7 +649,7 @@
                 });
                 let r = E.default.getSelectedParticipantId(n),
                     d = null === (e = T.default.getCurrentUser()) || void 0 === e ? void 0 : e.id,
-                    o = N.default.getEmbeddedActivitiesForChannel(n).find(t => t.application_id === a);
+                    o = N.default.getEmbeddedActivitiesForChannel(n).find(t => t.applicationId === a);
                 null != o && null != d && "" !== d && r === a && u.default.selectParticipant(n, null)
             }
 
@@ -676,7 +672,7 @@
                             },
                             oldFormErrors: !0
                         }),
-                        e = t.body.map(t => A.default.createFromServer(t));
+                        e = t.body.map(t => p.default.createFromServer(t));
                     l.default.dispatch({
                         type: "DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS",
                         items: e
@@ -773,7 +769,7 @@
                         applications: o
                     }), {
                         activityConfigs: d,
-                        applications: o.map(t => A.default.createFromServer(t))
+                        applications: o.map(t => p.default.createFromServer(t))
                     }
                 } catch (t) {
                     return l.default.dispatch({
@@ -795,7 +791,7 @@
                     target_type: g.InviteTargetTypes.EMBEDDED_APPLICATION,
                     target_application_id: a
                 }, i);
-                null != I.default.getChannel(n) && o.default.sendInvite(n, l.code, i, null)
+                null != f.default.getChannel(n) && o.default.sendInvite(n, l.code, i, null)
             }
             async function G(t) {
                 let {
@@ -808,7 +804,7 @@
                     target_application_id: n
                 }, i);
                 r.default.ensurePrivateChannel(a).then(t => {
-                    null != I.default.getChannel(t) && o.default.sendInvite(t, l.code, i, null)
+                    null != f.default.getChannel(t) && o.default.sendInvite(t, l.code, i, null)
                 })
             }
 
@@ -858,10 +854,10 @@
             let a;
             n.r(e), n.d(e, {
                 cleanExecutablePath: function() {
-                    return p
+                    return I
                 },
                 default: function() {
-                    return A
+                    return p
                 }
             }), n("781738"), n("424973");
             var i = n("917351"),
@@ -880,14 +876,14 @@
                 null != t && "" !== t && (!(t = s(t)).endsWith("/") && (t += "/"), c.push(t))
             }
 
-            function p(t) {
+            function I(t) {
                 t = s(t);
                 let e = !1;
                 return (c.forEach(n => {
                     !e && t.startsWith(n) && (t = t.substr(n.length), e = !0)
                 }), e) ? t = t.includes("dosbox.exe") ? t.split("/").slice(-3).join("/") : t.split("/").slice(-2).join("/") : null
             }
-            async function A() {
+            async function p() {
                 if (null != a) return a;
                 try {
                     await o.default.ensureModule("discord_game_utils"), a = await o.default.requireModule("discord_game_utils")
@@ -980,7 +976,7 @@
             let a, i;
             n.r(e), n.d(e, {
                 default: function() {
-                    return f
+                    return A
                 }
             }), n("222007");
             var l = n("446674"),
@@ -992,12 +988,12 @@
                 s = {},
                 E = {};
 
-            function p(t) {
+            function I(t) {
                 delete c[t];
                 let e = E[t];
                 null != e && delete s[e], delete E[t]
             }
-            class A extends l.default.Store {
+            class p extends l.default.Store {
                 getInteraction(t) {
                     let e = s[t.id];
                     return null != e ? c[e] : null
@@ -1021,8 +1017,8 @@
                     return a
                 }
             }
-            A.displayName = "InteractionStore";
-            var f = new A(r.default, {
+            p.displayName = "InteractionStore";
+            var A = new p(r.default, {
                 LOGOUT: function() {
                     c = {}, s = {}, E = {}
                 },
@@ -1064,7 +1060,7 @@
                     if (null == n) return !1;
                     let a = c[n];
                     if (null == a) return !1;
-                    null === (e = a.onSuccess) || void 0 === e || e.call(a), p(n)
+                    null === (e = a.onSuccess) || void 0 === e || e.call(a), I(n)
                 },
                 INTERACTION_FAILURE: function(t) {
                     var e;
@@ -1076,7 +1072,7 @@
                     if (null == n) return !1;
                     let l = c[n];
                     if (null == l) return !1;
-                    null === (e = l.onFailure) || void 0 === e || e.call(l, a, i), l.data.interactionType === u.InteractionTypes.APPLICATION_COMMAND ? p(n) : c[n] = {
+                    null === (e = l.onFailure) || void 0 === e || e.call(l, a, i), l.data.interactionType === u.InteractionTypes.APPLICATION_COMMAND ? I(n) : c[n] = {
                         ...l,
                         state: o.InteractionState.FAILED,
                         errorCode: a,
@@ -1092,7 +1088,7 @@
                         var n;
                         let t = c[e.nonce];
                         if (null == t) return !1;
-                        null === (n = t.onSuccess) || void 0 === n || n.call(t), p(e.nonce)
+                        null === (n = t.onSuccess) || void 0 === n || n.call(t), I(e.nonce)
                     }
                 },
                 CHANNEL_SELECT: function(t) {
@@ -1100,7 +1096,7 @@
                         channelId: e
                     } = t, n = d.default.getChannel(e);
                     if (null == n) return !1;
-                    for (let [t, e] of Object.entries(c)) e.state === o.InteractionState.FAILED && p(t)
+                    for (let [t, e] of Object.entries(c)) e.state === o.InteractionState.FAILED && I(t)
                 },
                 INTERACTION_IFRAME_MODAL_CREATE: function(t) {
                     let {
@@ -1161,10 +1157,10 @@
                 c = n("263024"),
                 s = n("271938"),
                 E = n("274800"),
-                p = n("809810"),
-                A = n("3765"),
-                f = n("606981"),
-                I = n("49111");
+                I = n("809810"),
+                p = n("3765"),
+                A = n("606981"),
+                f = n("49111");
 
             function _(t) {
                 return null == t || "" === t || Number.isNaN(t) ? Date.now() : l.default.extractTimestamp(t) + 9e5
@@ -1177,25 +1173,25 @@
                     customId: i,
                     indices: u,
                     applicationId: d,
-                    channelId: A,
-                    guildId: f,
+                    channelId: p,
+                    guildId: A,
                     localState: _
                 } = t, T = l.default.fromTimestamp(Date.now());
-                if (!p.default.canQueueInteraction(n, T)) return;
-                await c.default.unarchiveThreadIfNecessary(A), (0, E.addQueued)(T, {
+                if (!I.default.canQueueInteraction(n, T)) return;
+                await c.default.unarchiveThreadIfNecessary(p), (0, E.addQueued)(T, {
                     messageId: n,
                     data: {
                         interactionType: o.InteractionTypes.MESSAGE_COMPONENT,
                         customId: i,
                         indices: u
                     },
-                    onFailure: (t, e) => y(A, t, e)
+                    onFailure: (t, e) => y(p, t, e)
                 }), null != _ && (0, E.queueInteractionComponentState)(n, T, _, u);
                 let C = {
                     type: o.InteractionTypes.MESSAGE_COMPONENT,
                     nonce: T,
-                    guild_id: f,
-                    channel_id: A,
+                    guild_id: A,
+                    channel_id: p,
                     message_flags: a,
                     message_id: n,
                     application_id: d,
@@ -1215,11 +1211,11 @@
                     }
                 };
                 await r.default.post({
-                    url: I.Endpoints.INTERACTIONS,
+                    url: f.Endpoints.INTERACTIONS,
                     body: C,
                     timeout: 3e3
                 }, t => {
-                    h(T, A, f, t)
+                    h(T, p, A, t)
                 })
             }, C = async t => {
                 let {
@@ -1238,7 +1234,7 @@
                     }
                 };
                 await r.default.post({
-                    url: I.Endpoints.INTERACTIONS,
+                    url: f.Endpoints.INTERACTIONS,
                     body: u,
                     timeout: 3e3
                 }, t => {
@@ -1251,8 +1247,8 @@
                     if (!a.hasErr) {
                         var i;
                         if (a.status >= 400 && a.status < 500 && a.body) {
-                            if (a.body.code === I.AbortCodes.INVALID_FORM_BODY && a.body.errors) {
-                                let i = (0, f.getFirstSkemaError)(a.body.errors);
+                            if (a.body.code === f.AbortCodes.INVALID_FORM_BODY && a.body.errors) {
+                                let i = (0, A.getFirstSkemaError)(a.body.errors);
                                 null != i && ("INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" === i.code || "INTERACTION_APPLICATION_COMMAND_INVALID" === i.code) && u.default.dispatch({
                                     type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION",
                                     channelId: e,
@@ -1270,15 +1266,15 @@
             let N = (t, e) => {
                 var n;
                 let a = null == e ? void 0 : e.state,
-                    i = t.state === I.MessageStates.SENT && _(t.id) < Date.now();
-                let r = t.state === I.MessageStates.SEND_FAILED && (null == (n = t.id) || "" === n || Number.isNaN(n) ? Date.now() : l.default.extractTimestamp(n) + 3e3) < Date.now(),
+                    i = t.state === f.MessageStates.SENT && _(t.id) < Date.now();
+                let r = t.state === f.MessageStates.SEND_FAILED && (null == (n = t.id) || "" === n || Number.isNaN(n) ? Date.now() : l.default.extractTimestamp(n) + 3e3) < Date.now(),
                     u = (null == e ? void 0 : e.data.interactionType) === o.InteractionTypes.APPLICATION_COMMAND,
                     d = t.isCommandType();
-                if (u && a === A.InteractionState.QUEUED || d && t.state === I.MessageStates.SENDING && null != e) return 0;
-                if (u && a === A.InteractionState.CREATED || t.hasFlag(I.MessageFlags.LOADING) && !i) return 1;
-                if (null != t.interaction && t.hasFlag(I.MessageFlags.LOADING) && i) return 3;
-                else if (null != t.interaction && !t.hasFlag(I.MessageFlags.LOADING) && r) return 3;
-                else if (d && t.state === I.MessageStates.SEND_FAILED) return 2
+                if (u && a === p.InteractionState.QUEUED || d && t.state === f.MessageStates.SENDING && null != e) return 0;
+                if (u && a === p.InteractionState.CREATED || t.hasFlag(f.MessageFlags.LOADING) && !i) return 1;
+                if (null != t.interaction && t.hasFlag(f.MessageFlags.LOADING) && i) return 3;
+                else if (null != t.interaction && !t.hasFlag(f.MessageFlags.LOADING) && r) return 3;
+                else if (d && t.state === f.MessageStates.SEND_FAILED) return 2
             };
 
             function D(t) {
@@ -1311,4 +1307,4 @@
         }
     }
 ]);
-//# sourceMappingURL=37580.27e1cc87fc76e4d246c6.js.map
+//# sourceMappingURL=37580.f4011cf1c76f3c28f15f.js.map
