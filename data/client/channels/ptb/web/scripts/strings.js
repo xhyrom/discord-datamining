@@ -15130,6 +15130,10 @@
                 STARTER_AVATAR_DECORATIONS_SOCIAL_UPSELL_NITRO: "Like this avatar decoration? $[Claim it with your Nitro subscription](openShop).",
                 STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NITRO: "Like this profile effect? $[Claim it with your Nitro subscription](openShop).",
                 COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO: "Like this profile customization? $[Get your own from the Shop](openShop).",
+                COLLECTIBLES_CYBERPUNK_COACHMARK_TITLE: "NEW in the Shop! Cyberpunk",
+                COLLECTIBLES_CYBERPUNK_COACHMARK_DESCRIPTION: "The future is here, and it's looking good.",
+                COLLECTIBLES_BANNER_TITLE_2024: "Give your profile a fresh look",
+                COLLECTIBLES_BANNER_DESCRIPTION_2024: "Check out the latest avatar decorations and profile effects and collect your favorite styles.",
                 INVENTORY_ADD_PACK: "Add Pack",
                 INVENTORY_VIEW_PACK: "View Pack",
                 INVENTORY_REMOVE_PACK: "Remove Pack",
@@ -18402,7 +18406,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257888", ", Version Hash: ").concat("5f06f7c43cec26a6d772c1e932e8f5a1ecf90342")), t.default.setTags({
+            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257893", ", Version Hash: ").concat("b8baa1f030c08470a5725bfeab0d0f61823569f4")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
         },
@@ -20875,8 +20879,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "257888", "257888"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257888")), _ = 0), _
+                let _ = parseInt((e = "257893", "257893"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257893")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37156,4 +37160,4 @@
         }
     }
 ]);
-//# sourceMappingURL=14907.72d36658a42d8c440e8b.js.map
+//# sourceMappingURL=14907.cc027acb78a19719579a.js.map
