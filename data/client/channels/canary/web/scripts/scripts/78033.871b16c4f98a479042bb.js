@@ -5927,7 +5927,14 @@
                     l(null != r, "Missing elementRef"), "function" != typeof n && null != n.current && S.set(r, n.current), d.ComponentDispatch.subscribe(p.ComponentActions.LAYER_POP_START, this.handleLayerPopStart), d.ComponentDispatch.subscribe(p.ComponentActions.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == r || null === (t = r.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), null == i || i()
                 }
                 componentDidUpdate(e, t) {
-                    if (T(e) !== T(this.props) && this.updatePosition(), t.position !== this.state.position) {
+                    if (T(e) !== T(this.props) ? this.updatePosition() : ! function(e, t) {
+                            if ("function" == typeof e && "function" == typeof t) {
+                                let n = e(),
+                                    i = t();
+                                return n.top === i.top && n.left === i.left
+                            }
+                            return e === t
+                        }(e.reference, this.props.reference) && this.updatePosition(), t.position !== this.state.position) {
                         var n, i;
                         null === (n = (i = this.props).onPositionChange) || void 0 === n || n.call(i, this.state.position)
                     }
@@ -50030,7 +50037,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "257837"
+                                build_number: "257849"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63419,4 +63426,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.c1bab0e5b74631ab1c03.js.map
+//# sourceMappingURL=78033.871b16c4f98a479042bb.js.map
