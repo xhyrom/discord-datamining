@@ -3529,9 +3529,9 @@
                 },
                 EMBEDDED_ACTIVITY_OPEN: function(e) {
                     let {
-                        embeddedActivity: t
+                        applicationId: t
                     } = e;
-                    m(t.application_id)
+                    m(t)
                 },
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     let {
@@ -4106,4 +4106,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94816.a46985a2316685230be9.js.map
+//# sourceMappingURL=94816.2deb13c0fe85f9fdbe84.js.map
