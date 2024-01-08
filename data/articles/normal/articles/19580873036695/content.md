@@ -34,7 +34,7 @@
 <p>3. Next, scroll down to <strong>Billing Settings</strong> and tap on <strong>Manage Nitro.</strong></p>
 <p>4. Here you can cancel your Nitro or Nitro Basic subscription. Follow the prompts on screen until the cancellation is confirmed.</p>
 <p>Once the cancellation has been completed, your <strong>Manage Nitro</strong> settings will show the date on which your subscription will expire and you will lose your Nitro benefits..</p>
-<p>Alternatively, you can also cancel your Discord subscriptions directly on your mobile device settings by following these instructions for <a href="https://support.google.com/googleplay/answer/7018481?hl=en&amp;co=GENIE.Platform%3DAndroid" target="_blank" rel="noopener noreferrer">Apple iOS</a> subscriptions or <a href="https://support.google.com/googleplay/answer/7018481?hl=en&amp;co=GENIE.Platform%3DAndroid" target="_blank" rel="noopener noreferrer">Google Play</a> subscriptions</p>
+<p>Alternatively, you can also cancel your Discord subscriptions directly on your mobile device settings by following these instructions for <a href="https://support.apple.com/en-ca/HT202039" target="_blank" rel="noopener noreferrer">Apple iOS</a> subscriptions or <a href="https://support.google.com/googleplay/answer/7018481?hl=en&amp;co=GENIE.Platform%3DAndroid" target="_blank" rel="noopener noreferrer">Google Play</a> subscriptions</p>
 <p> </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580893103511" width="269" height="528"></p>
 <h1 id="h_01HGXEYG13GJJ2MQ080K8P5XAG">How do I Cancel my Server Boost subscription?</h1>
