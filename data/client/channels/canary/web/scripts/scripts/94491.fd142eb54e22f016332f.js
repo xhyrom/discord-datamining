@@ -36,10 +36,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ActivityEmoji: function() {
-                    return I
+                    return M
                 },
                 default: function() {
-                    return h
+                    return O
                 }
             }), n("222007");
             var a = n("37983"),
@@ -56,22 +56,23 @@
                 E = n("32346"),
                 A = n("342845"),
                 _ = n("845579"),
-                m = n("271938"),
-                S = n("42203"),
+                S = n("271938"),
+                m = n("42203"),
                 C = n("957255"),
-                N = n("800762"),
-                g = n("137783"),
-                p = n("49111"),
-                v = n("205341");
+                N = n("824563"),
+                g = n("800762"),
+                p = n("137783"),
+                v = n("49111"),
+                I = n("205341");
 
-            function I(e) {
+            function M(e) {
                 let {
                     emoji: t,
                     className: n,
                     animate: l = !0,
                     hideTooltip: s
                 } = e, r = _.AnimateEmoji.useSetting(), c = null != t.id ? ":".concat(t.name, ":") : f.default.translateSurrogatesToInlineEmoji(t.name), d = {
-                    className: i(v.emoji, n),
+                    className: i(I.emoji, n),
                     emojiId: t.id,
                     emojiName: t.name,
                     autoplay: !0,
@@ -87,7 +88,7 @@
                     })
                 })
             }
-            let M = e => {
+            let h = e => {
                 let {
                     className: t,
                     text: n
@@ -112,7 +113,7 @@
                             ref: s,
                             children: n
                         }), (0, a.jsx)("div", {
-                            className: i(v.textRuler, t),
+                            className: i(I.textRuler, t),
                             ref: r,
                             "aria-hidden": !0,
                             children: n
@@ -120,7 +121,7 @@
                     })
                 })
             };
-            var h = e => {
+            var O = e => {
                 let {
                     activities: t,
                     applicationStream: n,
@@ -131,37 +132,39 @@
                     hideTooltip: o = !1,
                     hideEmoji: f = !1,
                     user: _
-                } = e, h = null != t ? t.find(e => e.type === p.ActivityTypes.CUSTOM_STATUS) : null, O = (0, r.useStateFromStores)([m.default], () => m.default.getId() === (null == _ ? void 0 : _.id)), U = (0, r.useStateFromStores)([E.default], () => O ? E.default.getHangStatusActivity() : null != t ? t.find(e => e.type === p.ActivityTypes.HANG_STATUS) : null), R = (0, r.useStateFromStores)([N.default, S.default], () => {
+                } = e, O = null != t ? t.find(e => e.type === v.ActivityTypes.CUSTOM_STATUS) : null, U = (0, r.useStateFromStores)([S.default], () => S.default.getId() === (null == _ ? void 0 : _.id)), R = (0, r.useStateFromStores)([E.default], () => U ? E.default.getHangStatusActivity() : null != t ? t.find(e => e.type === v.ActivityTypes.HANG_STATUS) : null), x = (0, r.useStateFromStores)([g.default, m.default], () => {
                     var e;
-                    return null != U && null != _ ? S.default.getChannel(null === (e = N.default.getVoiceStateForUser(_.id)) || void 0 === e ? void 0 : e.channelId) : null
+                    return null != R && null != _ ? m.default.getChannel(null === (e = g.default.getVoiceStateForUser(_.id)) || void 0 === e ? void 0 : e.channelId) : null
                 }), {
-                    enableHangStatus: x
+                    enableHangStatus: y
                 } = T.HangStatusExperiment.useExperiment({
-                    guildId: null == R ? void 0 : R.guild_id,
+                    guildId: null == x ? void 0 : x.guild_id,
                     location: "ActivityStatus"
-                }), y = null, j = x && null != U && C.default.can(p.Permissions.CONNECT, R);
-                j ? y = (0, a.jsx)(A.default, {
+                }), j = null, P = y && null != R && C.default.can(v.Permissions.CONNECT, x);
+                P ? j = (0, a.jsx)(A.default, {
                     className: i,
-                    hangStatusActivity: U
-                }) : null != h && null != h.emoji && !f && (y = (0, a.jsx)(I, {
-                    emoji: h.emoji,
+                    hangStatusActivity: R
+                }) : null != O && null != O.emoji && !f && (j = (0, a.jsx)(M, {
+                    emoji: O.emoji,
                     animate: u,
                     hideTooltip: o,
                     className: i
                 }));
-                let P = (0, d.default)(t, n, void 0, j),
-                    H = null != P && P.length > 0;
-                return null != y || H ? (0, a.jsxs)("div", {
+                let H = (0, r.useStateFromStores)([N.default], () => null != _ ? N.default.getStatus(_.id) : null),
+                    L = null !== H && [v.StatusTypes.OFFLINE, v.StatusTypes.INVISIBLE].includes(H),
+                    G = (0, d.default)(t, n, void 0, P),
+                    D = null != G && G.length > 0;
+                return L || null == j && !D ? null : (0, a.jsxs)("div", {
                     className: l,
-                    children: [y, (0, a.jsx)(M, {
-                        text: P,
+                    children: [j, (0, a.jsx)(h, {
+                        text: G,
                         className: s
-                    }), null != t && t.some(c.default) ? (0, a.jsx)(g.default, {
+                    }), null != t && t.some(c.default) ? (0, a.jsx)(p.default, {
                         width: 16,
                         height: 16,
-                        className: v.icon
+                        className: I.icon
                     }) : null]
-                }) : null
+                })
             }
         },
         267527: function(e, t, n) {
@@ -543,10 +546,10 @@
                     return _
                 },
                 BANNER_ASPECT_RATIO: function() {
-                    return m
+                    return S
                 },
                 GUILD_BANNER_ASPECT_RATIO: function() {
-                    return S
+                    return m
                 },
                 SCHEDULED_EVENT_IMAGE_ASPECT_RATIO: function() {
                     return C
@@ -587,12 +590,12 @@
                 E = 960,
                 A = 2400,
                 _ = 600,
-                m = 17 / 6,
-                S = 16 / 9,
+                S = 17 / 6,
+                m = 16 / 9,
                 C = 2.5,
                 N = 4,
-                g = u / m,
-                p = u / S,
+                g = u / S,
+                p = u / m,
                 v = u / C,
                 I = u / N,
                 M = r.BACKGROUND_REPLACEMENT_SIZE.width / r.BACKGROUND_REPLACEMENT_SIZE.height,
@@ -604,7 +607,7 @@
             let a, l;
             n.r(t), n.d(t, {
                 CopiableField: function() {
-                    return m
+                    return S
                 }
             }), n("222007");
             var s = n("37983"),
@@ -620,20 +623,20 @@
                 A = n("782340"),
                 _ = n("491701");
 
-            function m(e) {
+            function S(e) {
                 var t;
                 let {
                     className: n,
                     copyValue: r,
-                    copyMetaData: m,
-                    children: S,
+                    copyMetaData: S,
+                    children: m,
                     disableCopy: C,
                     showCopyIcon: N
                 } = e, [g, p] = i.useState(0), [v, I] = i.useState(!1), [M, h] = i.useState(!1);
                 if (i.useEffect(() => (a = new o.Timeout, l = new o.Timeout, function() {
                         a.stop(), l.stop()
                     }), []), !T.SUPPORTS_COPY || C) return (0, s.jsx)(s.Fragment, {
-                    children: S
+                    children: m
                 });
                 let O = [A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_1, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_2, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_3, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_4, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_5, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_6, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_7, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_8, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_9, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_10, A.default.Messages.ACCOUNT_USERNAME_COPY_SUCCESS_11],
                     U = Math.min(Math.max(g - 1, 0), O.length - 1),
@@ -646,7 +649,7 @@
                     },
                     H = e => {
                         (0, T.copy)(r), f.default.track(E.AnalyticEvents.TEXT_COPIED, {
-                            type: m
+                            type: S
                         }), "function" == typeof e && e(), !M && p(g + 1), h(!0), I(!0), a.start(1e3, () => h(!1)), l.start(2e3, () => p(0))
                     };
                 return (0, s.jsx)(c.Tooltip, {
@@ -680,7 +683,7 @@
                                 className: u(n, _.copiableWrapper),
                                 children: [(0, s.jsx)("div", {
                                     className: _.childWrapper,
-                                    children: S
+                                    children: m
                                 }), N ? (0, s.jsx)("div", {
                                     className: _.copyIconWrapper,
                                     children: (0, s.jsx)(d.default, {
@@ -759,8 +762,8 @@
                 E = n("590456"),
                 A = n("49111"),
                 _ = n("782340"),
-                m = n("730684"),
-                S = n("696246");
+                S = n("730684"),
+                m = n("696246");
 
             function C(e) {
                 let {
@@ -776,22 +779,22 @@
                     src: (0, E.getBadgeAsset)(e.icon)
                 })), v = (0, c.useWindowDispatch)();
                 if (t.isClyde()) return (0, s.jsx)("div", {
-                    className: r(a, m.container, m.clydeBadgeList),
+                    className: r(a, S.container, S.clydeBadgeList),
                     "aria-label": _.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
                     children: (0, s.jsx)(d.default, {})
                 });
                 C && null == p.find(e => "premium" === e.id) && p.push({
                     id: "premium",
-                    icon: S,
-                    src: S,
+                    icon: m,
+                    src: m,
                     description: _.default.Messages.PREMIUM_BADGE_TOOLTIP.format({
                         date: new Date
                     })
                 });
                 let I = null != l && null != i && p.length > l ? i : N;
                 return (0, s.jsx)("div", {
-                    className: r(a, p.length > 0 ? m.containerWithContent : m.container),
+                    className: r(a, p.length > 0 ? S.containerWithContent : S.container),
                     "aria-label": _.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
                     children: p.map(e => (0, s.jsx)(u.Tooltip, {
@@ -812,9 +815,9 @@
                                 "aria-hidden": !0,
                                 src: e.src,
                                 className: r({
-                                    [m.profileBadge24]: 0 === I,
-                                    [m.profileBadge22]: 1 === I,
-                                    [m.profileBadge18]: 2 === I
+                                    [S.profileBadge24]: 0 === I,
+                                    [S.profileBadge22]: 1 === I,
+                                    [S.profileBadge18]: 2 === I
                                 })
                             })
                         })
@@ -848,15 +851,15 @@
                     textClassName: T,
                     guild: E,
                     guildMember: A
-                } = e, _ = (0, l.default)([r.default], () => r.default.locale), m = null != E && null != A;
+                } = e, _ = (0, l.default)([r.default], () => r.default.locale), S = null != E && null != A;
                 return (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(s.Heading, {
                         variant: "eyebrow",
                         className: n,
-                        children: m ? d.default.Messages.USER_PROFILE_MEMBER_SINCE : d.default.Messages.USER_PROFILE_DISCORD_MEMBER_SINCE
+                        children: S ? d.default.Messages.USER_PROFILE_MEMBER_SINCE : d.default.Messages.USER_PROFILE_DISCORD_MEMBER_SINCE
                     }), (0, a.jsxs)("div", {
                         className: f.memberSinceContainer,
-                        children: [m && (0, a.jsx)(s.Tooltip, {
+                        children: [S && (0, a.jsx)(s.Tooltip, {
                             text: d.default.Messages.DISCORD_NAME,
                             children: e => (0, a.jsx)(o.default, {
                                 ...e,
@@ -935,8 +938,8 @@
                 E = n("635471"),
                 A = n("305961"),
                 _ = n("423487"),
-                m = n("587974"),
-                S = n("599110"),
+                S = n("587974"),
+                m = n("599110"),
                 C = n("719923"),
                 N = n("50885"),
                 g = n("713135"),
@@ -998,7 +1001,7 @@
                     hasProfileEffect: v
                 } = e, {
                     profileTheme: M
-                } = l.useContext(h.UserProfileContext), L = l.useContext(S.AnalyticsContext), D = t.isNonUserBot() && !t.isClyde(), b = C.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, x.PremiumTypes.TIER_2), B = l.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, E), [t, E]), F = _ || t.isClyde(), {
+                } = l.useContext(h.UserProfileContext), L = l.useContext(m.AnalyticsContext), D = t.isNonUserBot() && !t.isClyde(), b = C.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, x.PremiumTypes.TIER_2), B = l.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, E), [t, E]), F = _ || t.isClyde(), {
                     avatarDecorationSrc: k,
                     avatarSrc: w,
                     eventHandlers: V
@@ -1050,8 +1053,8 @@
                         children: [W, !F && function() {
                             let e = null != k,
                                 t = e ? H : (0, c.getAvatarSize)(P);
-                            return (0, a.jsx)(m.default, {
-                                mask: null == o || o === R.StatusTypes.UNKNOWN || B ? m.default.Masks.AVATAR_DEFAULT : (0, r.match)([e, d]).with([!0, !0], () => m.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => m.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => m.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => m.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
+                            return (0, a.jsx)(S.default, {
+                                mask: null == o || o === R.StatusTypes.UNKNOWN || B ? S.default.Masks.AVATAR_DEFAULT : (0, r.match)([e, d]).with([!0, !0], () => S.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => S.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => S.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => S.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
                                 className: e ? j.avatarDecorationHint : j.avatarHint,
                                 style: e ? {
                                     borderRadius: .4 * t
@@ -1192,17 +1195,17 @@
                 E = n("777003"),
                 A = n("49111"),
                 _ = n("782340"),
-                m = n("125234"),
-                S = n("814076");
+                S = n("125234"),
+                m = n("814076");
 
             function C(e) {
                 let {
                     guildName: t
                 } = e;
                 return (0, a.jsxs)("div", {
-                    className: m.guildMemberProfileTooltip,
+                    className: S.guildMemberProfileTooltip,
                     children: [(0, a.jsx)(d.default, {
-                        className: m.guildMemberProfileTooltipNitroWheel
+                        className: S.guildMemberProfileTooltipNitroWheel
                     }), _.default.Messages.GUILD_IDENTITY_BIO_TOAST.format({
                         guildName: t
                     })]
@@ -1226,10 +1229,10 @@
                     lastSection: g,
                     children: [(0, a.jsxs)(r.Heading, {
                         variant: "eyebrow",
-                        className: S.title,
+                        className: m.title,
                         children: [_.default.Messages.USER_POPOUT_ABOUT_ME, null != t && N && (0, a.jsx)(r.Tooltip, {
                             color: r.Tooltip.Colors.CUSTOM,
-                            tooltipClassName: m.aboutMeGuildIconTooltip,
+                            tooltipClassName: S.aboutMeGuildIconTooltip,
                             "aria-label": _.default.Messages.GUILD_IDENTITY_BIO_TOAST.format({
                                 guildName: t.name
                             }),
@@ -1255,8 +1258,8 @@
                                 },
                                 guild: t,
                                 size: c.default.Sizes.SMOL,
-                                className: s(m.aboutMeGuildIcon, {
-                                    [m.nonPremiumHoverState]: !O
+                                className: s(S.aboutMeGuildIcon, {
+                                    [S.nonPremiumHoverState]: !O
                                 })
                             })
                         })]
@@ -1359,12 +1362,12 @@
                     usernameIcon: E,
                     identityCTA: A,
                     className: _,
-                    isTryItOut: m = !1,
-                    lastSection: S
+                    isTryItOut: S = !1,
+                    lastSection: m
                 } = e;
                 return (0, a.jsx)(c.default, {
                     className: s(f.container, _),
-                    lastSection: S,
+                    lastSection: m,
                     children: (0, a.jsxs)("div", {
                         className: n ? f.copiableNameTag : void 0,
                         children: [(0, a.jsx)(u.CopiableField, {
@@ -1386,7 +1389,7 @@
                                     usernameIcon: E,
                                     user: t,
                                     forceUsername: !0,
-                                    forcePomelo: m,
+                                    forcePomelo: S,
                                     className: null == l ? f.userTagNoNickname : f.userTagWithNickname,
                                     usernameClass: null == l ? f.userTagUsernameNoNickname : f.userTagUsernameBase,
                                     discriminatorClass: null == l ? f.userTagDiscriminatorNoNickname : f.discrimBase,
@@ -1476,4 +1479,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94491.1493d9cb04f8cb43be69.js.map
+//# sourceMappingURL=94491.fd142eb54e22f016332f.js.map
