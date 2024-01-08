@@ -3903,12 +3903,13 @@
             e.exports = {
                 channelIcon: "channelIcon__801cb",
                 channelLabel: "channelLabel__6345a",
-                channelRowLabel: "channelRowLabel__5940b",
+                channelSpine: "channelSpine_e83bee",
                 hasParent: "hasParent_df45f2",
+                helperText: "helperText__8a721",
                 noIndent: "noIndent__90a43",
                 resultsList: "resultsList_bec6cd",
+                resultsListContainer: "resultsListContainer__4ec00",
                 resultsListParent: "resultsListParent_b72c41",
-                roleLabel: "roleLabel_cf92a0",
                 roleTag: "roleTag_cba5b8",
                 roleTagContainer: "roleTagContainer__353b8",
                 roleTagIcon: "roleTagIcon_b47995",
@@ -3919,6 +3920,7 @@
                 searchBar: "searchBar_e9a65c",
                 searchBox: "searchBox__74225",
                 searchContainer: "searchContainer_bffd9f",
+                searchRowLabel: "searchRowLabel_b64d40",
                 sectionFooter: "sectionFooter__8f8ea",
                 sectionHeight: "sectionHeight_c85c9e",
                 sectionTitle: "sectionTitle__71387",
@@ -13265,7 +13267,8 @@
                 removeButton: "removeButton_aba08a",
                 rightButtons: "rightButtons__17ac2",
                 rolesHeader: "rolesHeader__9fae7",
-                rolesInputHelp: "rolesInputHelp__54299"
+                rolesInputHelp: "rolesInputHelp__54299",
+                searchInput: "searchInput__5294a"
             }
         },
         965979: function(e, t, o) {
@@ -13379,34 +13382,6 @@
                 uploadButton: "uploadButton__6add7",
                 upsellButton: "upsellButton__2e068",
                 upsellButtonInner: "upsellButtonInner__4692d"
-            }
-        },
-        470514: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                channelAndRoleContainer: "channelAndRoleContainer_d5a1e0",
-                channelIcon: "channelIcon__9cdc6",
-                channelLabel: "channelLabel_e08f1f",
-                channelRowLabel: "channelRowLabel__9c6c0",
-                hasParent: "hasParent__7a03a",
-                helperText: "helperText_bd3964",
-                noIndent: "noIndent__66ac5",
-                resultsList: "resultsList_ccad0b",
-                resultsListParent: "resultsListParent__4f138",
-                roleLabel: "roleLabel_f4e248",
-                roleTag: "roleTag_a2eb5a",
-                roleTagContainer: "roleTagContainer_b04b38",
-                roleTagIcon: "roleTagIcon__3575e",
-                roleTagLabel: "roleTagLabel_a5e85e",
-                rowContainer: "rowContainer__9e828",
-                rowHeight: "rowHeight_c85f5a",
-                rowLabel: "rowLabel__99f19",
-                searchBar: "searchBar__5175c",
-                searchBox: "searchBox__49097",
-                searchContainer: "searchContainer__0faa9",
-                sectionHeight: "sectionHeight_f27667",
-                sectionTitle: "sectionTitle__84928",
-                selectableSearchRow: "selectableSearchRow__1c74e"
             }
         },
         48887: function(e, t, o) {
