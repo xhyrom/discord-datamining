@@ -2866,6 +2866,7 @@
                 PASSWORDLESS_ENTER_PASSWORD_DESCRIPTION_PHONE: "Enter the password for the account with the phone number {phone}",
                 PASSWORDLESS_ENTER_PASSWORD_DESCRIPTION_EMAIL: "Enter the password for the account with the email address {email}",
                 TEXT_DATA_RATES: "Standard message and data rates apply.",
+                PHONE_NOT_MOBILE_ERROR: "Unable to register using phone number. Please register with an e-mail address.",
                 NUF_BODY_REFRESH: "Join over 100 million people who use Discord to talk with communities and friends.",
                 NUF_TITLE_MOBILE: "Welcome to Discord",
                 NUF_BODY_MOBILE: "Login or Register to get started",
@@ -18277,7 +18278,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258104", ", Version Hash: ").concat("5becbd2cd8ce771f15732e7aa94aea5f8035bd09")), t.default.setTags({
+            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258194", ", Version Hash: ").concat("115acf647fe48a1a4ad737b24c56b93729f53d9d")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
         },
@@ -20750,8 +20751,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "258104", "258104"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258104")), _ = 0), _
+                let _ = parseInt((e = "258194", "258194"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258194")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37058,4 +37059,4 @@
         }
     }
 ]);
-//# sourceMappingURL=14907.9a8f163d2f20fbb0f627.js.map
+//# sourceMappingURL=14907.960648d534094f5eda00.js.map
