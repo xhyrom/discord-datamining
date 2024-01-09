@@ -2861,6 +2861,7 @@
   "PASSWORDLESS_ENTER_PASSWORD_DESCRIPTION_PHONE": "\"Enter the password for the account with the phone number {phone}\"",
   "PASSWORDLESS_ENTER_PASSWORD_DESCRIPTION_EMAIL": "\"Enter the password for the account with the email address {email}\"",
   "TEXT_DATA_RATES": "\"Standard message and data rates apply.\"",
+  "PHONE_NOT_MOBILE_ERROR": "\"Unable to register using phone number. Please register with an e-mail address.\"",
   "NUF_BODY_REFRESH": "\"Join over 100 million people who use Discord to talk with communities and friends.\"",
   "NUF_TITLE_MOBILE": "\"Welcome to Discord\"",
   "NUF_BODY_MOBILE": "\"Login or Register to get started\"",
