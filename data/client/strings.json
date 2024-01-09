@@ -9561,6 +9561,7 @@
   "SHOW_ALL": "\"Show all\"",
   "CLEAR_ALL": "\"Clear all\"",
   "PHOTOS": "\"Photos\"",
+  "PHOTOS_AND_FILES": "\"Photos & Files\"",
   "RECENTS": "\"Recents\"",
   "IOS_MEDIA_KEYBOARD_NO_PERMISSION": "\"Enable permissions to access your photo library. Show everyone how cute your pet is.\"",
   "IOS_MEDIA_KEYBOARD_NO_PHOTOS": "\"You don’t have any photos in your photo library. The best time to start is now.\"",
