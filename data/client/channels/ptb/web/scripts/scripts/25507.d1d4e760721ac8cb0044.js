@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["41039"], {
+    ["25507"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -37593,7 +37593,7 @@
                 default: function() {
                     return g
                 }
-            }), n("222007"), n("424973");
+            }), n("222007");
             var r = n("917351"),
                 s = n.n(r),
                 a = n("446674"),
@@ -37684,7 +37684,11 @@
                 GUILD_DELETE: function(e) {
                     let {
                         guild: t
-                    } = e;
+                    } = e, n = _.findIndex(e => e.id === t.id);
+                    if (-1 !== n) {
+                        _.splice(n, 1), _ = [..._];
+                        return
+                    }
                     if (null == h[t.id] || t.unavailable) return !1;
                     h = {
                         ...h
@@ -37720,13 +37724,13 @@
                     return !0
                 },
                 GUILD_GEO_RESTRICTED: function(e) {
-                    _.push({
+                    _ = [..._, {
                         id: e.guildId,
                         name: e.name,
                         icon: e.icon,
                         unavailable: !0,
                         geo_restricted: !0
-                    })
+                    }]
                 }
             })
         },
@@ -50057,7 +50061,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258266"
+                                build_number: "258272"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63444,4 +63448,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.7fcc18c57a9babec0827.js.map
+//# sourceMappingURL=25507.d1d4e760721ac8cb0044.js.map
