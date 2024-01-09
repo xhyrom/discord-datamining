@@ -7,14 +7,16 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enabled",
-      "Treatment 2: Enabled with more captions from post-processing"
+      "Treatment 2: Enabled with more captions from post-processing",
+      "Treatment 3: Enabled with mobile autosuggest"
     ],
     "hash": 3610590624,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,

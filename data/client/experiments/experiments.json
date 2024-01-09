@@ -10450,13 +10450,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enabled"
+        "Treatment 1: EU user",
+        "Treatment 2: DSA E2E testing user"
       ],
       "hash": 1438986391,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -10950,14 +10952,16 @@
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: Enabled",
-        "Treatment 2: Enabled with more captions from post-processing"
+        "Treatment 2: Enabled with more captions from post-processing",
+        "Treatment 3: Enabled with mobile autosuggest"
       ],
       "hash": 3610590624,
       "buckets": [
         -1,
         0,
         1,
-        2
+        2,
+        3
       ],
       "holdout": {},
       "aa_mode": false,
