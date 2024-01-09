@@ -9577,6 +9577,7 @@
                 SHOW_ALL: "Show all",
                 CLEAR_ALL: "Clear all",
                 PHOTOS: "Photos",
+                PHOTOS_AND_FILES: "Photos & Files",
                 RECENTS: "Recents",
                 IOS_MEDIA_KEYBOARD_NO_PERMISSION: "Enable permissions to access your photo library. Show everyone how cute your pet is.",
                 IOS_MEDIA_KEYBOARD_NO_PHOTOS: "You don’t have any photos in your photo library. The best time to start is now.",
@@ -14140,6 +14141,11 @@
                 HIGHLIGHTS_AND_MENTIONS: "Mentions",
                 FORM_LABEL_UNREAD_SETTINGS_OPT_IN: "Configure Unread Settings",
                 FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE: "More granular settings to control when channels should appear as unread.",
+                UNREAD_NOTIFICATION_SETTING_NOTICE: "Should we mark this channel as unread for every message, instead of only mentions?",
+                UNREAD_NOTIFICATION_SETTING_NOTICE_TITLE: "Mark unread for every message?",
+                UNREAD_NOTIFICATION_SETTING_NOTICE_DESCRIPTION: "The channel will show as unread for every message so you don't miss a thing.",
+                UNREAD_NOTIFICATION_SETTING_NOTICE_ALL_MESSAGES: "Change to all messages",
+                UNREAD_NOTIFICATION_SETTING_NOTICE_MENTION_ONLY: "Change to mention only",
                 NEW_GUILD_EVENTS_ACCESSIBILITY_LABEL: "New Events",
                 OPT_IN_GUILD_NOTICE_TITLE: "Heads up!",
                 OPT_IN_GUILD_NOTICE_DESCRIPTION: "This community now has a customizable Channel List. [Customize](onCustomizeClick) your list further, or go back to All Channels via [Server Settings](onServerSettingsClick).",
@@ -16315,11 +16321,21 @@
                 LAUNCH_PAD_TAB_A11Y_LABEL: "Open LaunchPad",
                 REPORT_SECOND_LOOK_SUCCESS_TITLE: "We have received your request.",
                 REPORT_SECOND_LOOK_FAILURE_TITLE: "You have already submitted a review request for this report.",
-                APPEAL_INGESTION_LEARN_MORE_LINK_TITLE: "Learn more about this policy",
-                POLL_NOTIFICATIONS: "Polls",
                 APPEAL_INGESTION_AGE_VERIFICATION_LINK_TITLE: "Submit age verification",
+                APPEAL_INGESTION_LEARN_MORE_LINK_TITLE: "Learn more about this policy",
+                APPEAL_INGESTION_BREADCRUMBS_HEADER: "REASON",
+                APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_ADD_DETAILS: "Add details",
+                APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_EDIT_DETAILS: "Edit details",
+                APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_FOOTER: "Your request will be sent to our team. Violations will stay on your account until they expire or are removed after review.",
+                APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_SUBHEADER: "Here's a summary of your request.",
+                APPEAL_INGESTION_ADD_DETAILS_ACTION_SHEET_SUBHEADER: "You can add context or anything else that might be helpful for us to know.",
+                APPEAL_INGESTION_ADD_DETAILS_ACTION_SHEET_PLACEHOLDER: "What would you like us to know?",
                 APPEAL_INGESTION_MODAL_HEADER: "Request a review",
                 APPEAL_INGESTION_MODAL_REQUEST_SENT_HEADER: "Request sent",
+                APPEAL_INGESTION_MODAL_REQUEST_SENT_SUBHEADER: "Thank you for your submission. We will let you know the outcome of this review.",
+                APPEAL_INGESTION_MODAL_REQUEST_SENT_ACTIONS_HEADER: "More you can do",
+                APPEAL_INGESTION_MODAL_REQUEST_SENT_GUIDELINES_LINK: "View our Community Guidelines",
+                APPEAL_INGESTION_MODAL_REQUEST_SENT_RULES_LINK: "Learn about how we enforce rules",
                 APPEAL_INGESTION_MODAL_THANKS_HEADER: "Thanks for letting us know.",
                 APPEAL_INGESTION_MODAL_SPAM_HEADER: "This request is for spam.",
                 APPEAL_INGESTION_MODAL_SPEED_BUMP_SUBHEADER: "Did we make a mistake? Let us know.",
@@ -16332,6 +16348,7 @@
                 APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_DONT_AGREE_PENALTY: "I don't agree with the penalty",
                 APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_SOMETHING_ELSE: "Something else",
                 APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_DISCLAIMER: "This request is sent to Discord. Creating false reports and/or spamming the report button may result in suspension of reporting abilities. Learn more from the [Discord Community Guidelines](https://discord.com/guidelines).",
+                POLL_NOTIFICATIONS: "Polls",
                 SUMMONED: "Summoned!",
                 WAVED_AT_USER: "\uD83D\uDC4B You waved at !!{username}!!",
                 WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
@@ -18278,7 +18295,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258194", ", Version Hash: ").concat("115acf647fe48a1a4ad737b24c56b93729f53d9d")), t.default.setTags({
+            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258377", ", Version Hash: ").concat("7896fcaa61ac9a94e88e9a7dcc4655118fa6bb0d")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
         },
@@ -20025,7 +20042,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 QuestsManager: {
-                    actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_START", "STREAM_CLOSE"],
+                    actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_START", "STREAM_CLOSE"],
                     inlineRequire: () => E("319405").default,
                     neverLoadBeforeConnectionOpen: !0
                 }
@@ -20751,8 +20768,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "258194", "258194"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258194")), _ = 0), _
+                let _ = parseInt((e = "258377", "258377"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258377")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21756,7 +21773,7 @@
                 G = E("262194"),
                 p = E("36773"),
                 g = E("374036"),
-                y = E("509802"),
+                y = E("384997"),
                 B = E("234819"),
                 f = E("182033"),
                 v = E("928741"),
@@ -21816,7 +21833,7 @@
                     autoTrackExposure: !0
                 }), ei = (0, T.useStateFromStores)([b.default], () => b.default.getLayers().includes(Z.Layers.USER_SETTINGS)), ea = (0, T.useStateFromStores)([w.default], () => X.default.canUseClientThemes(w.default.getCurrentUser())), eI = $ && !ei, es = [];
                 eI && eo && er && !ea && es.push(S.DismissibleContent.CLIENT_THEMES_COACHMARK);
-                let [eT, eS] = (0, y.useDismissibleContentGroup)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
+                let [eT, eS] = (0, y.useSelectedDismissibleContent)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
                 es.push(S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
                 let eN = eT === S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
                     eA = eT === S.DismissibleContent.CLIENT_THEMES_COACHMARK;
@@ -22342,19 +22359,29 @@
                 id: "2023-10_emoji_captions",
                 label: "Emoji Captions Experiment",
                 defaultConfig: {
-                    isEnabled: !1
+                    isEnabledOnDesktop: !1,
+                    isAutosuggestEnabled: !1
                 },
                 treatments: [{
                     id: 1,
                     label: "Enabled",
                     config: {
-                        isEnabled: !0
+                        isEnabledOnDesktop: !0,
+                        isAutosuggestEnabled: !1
                     }
                 }, {
                     id: 2,
                     label: "Enabled with more captions from post-processing",
                     config: {
-                        isEnabled: !0
+                        isEnabledOnDesktop: !0,
+                        isAutosuggestEnabled: !1
+                    }
+                }, {
+                    id: 3,
+                    label: "Enabled with mobile autosuggest",
+                    config: {
+                        isEnabledOnDesktop: !0,
+                        isAutosuggestEnabled: !0
                     }
                 }]
             });
@@ -22391,7 +22418,7 @@
                 let E = (0, n.getEmojiCaptionsExperimentConfig)({
                     location: e
                 });
-                if (!E.isEnabled) {
+                if (!E.isEnabledOnDesktop) {
                     r.default.hasPersistedState() && r.default.clear();
                     return
                 }
@@ -26908,6 +26935,23 @@
                         window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, 6e4))
                     }, this.terminateHeartbeat = e => {
                         window.clearInterval(this.sendHeartbeatIntervalIds.get(e)), this.sendHeartbeatIntervalIds.delete(e)
+                    }, this.handleEnrollmentSuccess = e => {
+                        let {
+                            enrolledQuestUserStatus: {
+                                questId: _
+                            }
+                        } = e, E = n.default.getStreamerActiveStreamMetadata();
+                        if (null == E || null == E.pid) return;
+                        let t = i.default.getGameForPID(E.pid);
+                        if (null == t || null == t.id) return;
+                        let r = (0, T.getQuestByApplicationId)(t.id);
+                        if (null == r || r.id !== _) return;
+                        let a = n.default.getCurrentUserActiveStream();
+                        null != a && this.initiateHeartbeat({
+                            streamKey: (0, o.encodeStreamKey)(a),
+                            applicationId: r.config.applicationId,
+                            questId: r.id
+                        })
                     }, this.handlePostConnectionOpen = () => {
                         window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(5e3 * Math.random()))
                     }, this.handleSendHeartbeatSuccess = e => {
@@ -26944,6 +26988,7 @@
                         } = e;
                         this.terminateHeartbeat(_)
                     }, this.actions = {
+                        QUESTS_ENROLL_SUCCESS: this.handleEnrollmentSuccess,
                         QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,
                         POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
                         RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
@@ -30403,20 +30448,6 @@
 
             function i(e) {
                 o === e && (o = null)
-            }
-        },
-        360782: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                default: function() {
-                    return o
-                }
-            });
-            var t = E("860957");
-
-            function o() {
-                let e = t.default.getFocusedPID();
-                return null != e && (t.default.isReady(e) || t.default.isCrashed(e)) ? e : null
             }
         },
         981980: function(e, _, E) {
@@ -36990,7 +37021,7 @@
         190709: function(e, _, E) {
             "use strict";
             E.r(_), E("222007"), E("274635");
-            var t = E("405665");
+            var t = E("464324");
             E("985745");
             var o = E("383536"),
                 n = E.n(o);
@@ -37059,4 +37090,4 @@
         }
     }
 ]);
-//# sourceMappingURL=14907.960648d534094f5eda00.js.map
+//# sourceMappingURL=14907.644509ea887c89965cf3.js.map

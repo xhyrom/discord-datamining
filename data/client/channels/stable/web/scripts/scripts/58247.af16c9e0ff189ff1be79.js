@@ -3415,10 +3415,10 @@
                 return [h && null != T ? T : null, S]
             }
         },
-        509802: function(e, t, l) {
+        384997: function(e, t, l) {
             "use strict";
             l.r(t), l.d(t, {
-                useDismissibleContentGroup: function() {
+                useSelectedDismissibleContent: function() {
                     return d
                 },
                 default: function() {
@@ -6200,7 +6200,7 @@
                 u = l("875212"),
                 d = l("619935"),
                 c = l("411691"),
-                f = l("509802"),
+                f = l("384997"),
                 m = l("697218"),
                 p = l("217513"),
                 E = l("627601");
@@ -6232,7 +6232,7 @@
                 let v = h !== c.CollectiblesShopMarketingVariants.DEFAULT && (null == S ? void 0 : S.id) !== t.id && !I && !(null != _ && _ !== l),
                     C = v && (null == S ? void 0 : S.avatarDecoration) == null && (null == t ? void 0 : t.avatarDecoration) != null,
                     N = v && null != g && null == g.profileEffectId && (null == A ? void 0 : A.profileEffectId) != null,
-                    [y, O] = (0, f.useDismissibleContentGroup)(C || N ? [r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL] : [], void 0, !0);
+                    [y, O] = (0, f.useSelectedDismissibleContent)(C || N ? [r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL] : [], void 0, !0);
                 return {
                     shouldShow: y === r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL,
                     canShowAvatarDecorationUpsell: C,
@@ -7954,4 +7954,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58247.384f3050c02115bea152.js.map
+//# sourceMappingURL=58247.af16c9e0ff189ff1be79.js.map

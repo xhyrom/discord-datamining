@@ -1541,7 +1541,6 @@
             e.exports = {
                 categoryHeader: "categoryHeader__46769",
                 headerBar: "headerBar_afb1ac",
-                home: "home_d6d172",
                 homeBody: "homeBody__413be",
                 homeTile: "homeTile_e56701",
                 homeWrapper: "homeWrapper__59a03",
@@ -1549,7 +1548,6 @@
                 marketingWrapper: "marketingWrapper_c87a52 homeWrapper__59a03",
                 premiumApplicationsHeader: "premiumApplicationsHeader_e2dd83",
                 premiumContainer: "premiumContainer__2ebd0",
-                scroller: "scroller__244e5",
                 spinner: "spinner__6bfe4",
                 viewAllGames: "viewAllGames__9b81c",
                 viewAllGamesButton: "viewAllGamesButton__6eb3d",
@@ -8603,7 +8601,8 @@
                 selectorTextSelected: "selectorTextSelected_d7d560 selectorText_b1d64c",
                 settingsGroup: "settingsGroup__8c3f8",
                 toolTipTextContainer: "toolTipTextContainer__3b924",
-                tooltip: "tooltip_c91c10"
+                tooltip: "tooltip_c91c10",
+                upsellText: "upsellText__80136"
             }
         },
         139191: function(e, t, o) {
@@ -17644,6 +17643,16 @@
                 unreadMuted: "unreadMuted_e9b847"
             }
         },
+        60490: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                button: "button_e2e738",
+                buttonInner: "buttonInner_d034a5",
+                buttons: "buttons_d1f537",
+                info: "info_b9d68d",
+                notice: "notice__6934b"
+            }
+        },
         232425: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -20490,7 +20499,6 @@
                 accountCreditTitle: "accountCreditTitle_e0b7b3",
                 applicationStoreHomeWrapper: "applicationStoreHomeWrapper_ac145c",
                 background: "background__7bde6",
-                bottomOfPageVisibilitySensor: "bottomOfPageVisibilitySensor_ca9280",
                 container: "container__9ecba",
                 content: "content__25fc5",
                 loading: "loading__053e3",
@@ -20790,6 +20798,7 @@
             e.exports = {
                 bannerFullScreenNegativeMargin: "bannerFullScreenNegativeMargin__1a304",
                 bottomIllustration: "bottomIllustration__5d164",
+                bottomOfPageVisibilitySensor: "bottomOfPageVisibilitySensor__201a9",
                 container: "container__74da1",
                 existingSubscriberSpacing: "existingSubscriberSpacing__3dfec",
                 footerSpacing: "footerSpacing__9d9e4",
@@ -20809,6 +20818,7 @@
                 premiumTierCardsContainer: "premiumTierCardsContainer_e3c13b",
                 premiumTierCardsContainerFullscreen: "premiumTierCardsContainerFullscreen__90547 premiumTierCardsContainer_e3c13b",
                 premiumTierCardsContainerSettings: "premiumTierCardsContainerSettings_f346a8 premiumTierCardsContainer_e3c13b",
+                scroller: "scroller_a1aadd",
                 settingsHeroBogoHeight: "settingsHeroBogoHeight__39203",
                 settingsHeroBogoMarginFullscreen: "settingsHeroBogoMarginFullscreen__9f6a6",
                 settingsHeroNoBackground: "settingsHeroNoBackground__0cfbe",
@@ -20823,10 +20833,12 @@
             "use strict";
             e.exports = {
                 bottomIllustration: "bottomIllustration__8dcea",
+                bottomOfPageVisibilitySensor: "bottomOfPageVisibilitySensor_ab7f4d",
                 container: "container__6eaa3",
                 footerSpacing: "footerSpacing_e43335",
                 giftNitro: "giftNitro__7b37a",
                 heroHeading: "heroHeading_a17887",
+                mainPageScroller: "mainPageScroller__12afb",
                 manageMembership: "manageMembership__63c2c",
                 perksCards: "perksCards_e83187",
                 perksDiscoverability: "perksDiscoverability__4242c",
