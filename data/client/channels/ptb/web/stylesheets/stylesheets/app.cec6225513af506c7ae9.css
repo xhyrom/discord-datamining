@@ -15227,12 +15227,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -31127,6 +31127,33 @@ html .progress__4ef76 {
     flex: 1
 }
 
+.notice__6934b {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-secondary-alt)
+}
+
+.info_b9d68d {
+    flex: 1
+}
+
+.buttons_d1f537 {
+    display: flex
+}
+
+.button_e2e738 {
+    border-radius: 8px;
+    padding: 3px 8px
+}
+
+.buttonInner_d034a5 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .chatHeaderBar__28ee6 {
     position: relative;
     align-items: center;
@@ -32792,8 +32819,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -124406,4 +124433,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5d3a495644b65fc29381.css.map*/
+/*# sourceMappingURL=app.cec6225513af506c7ae9.css.map*/
