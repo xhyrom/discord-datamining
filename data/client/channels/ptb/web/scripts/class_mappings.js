@@ -8601,7 +8601,8 @@
                 selectorTextSelected: "selectorTextSelected_d7d560 selectorText_b1d64c",
                 settingsGroup: "settingsGroup__8c3f8",
                 toolTipTextContainer: "toolTipTextContainer__3b924",
-                tooltip: "tooltip_c91c10"
+                tooltip: "tooltip_c91c10",
+                upsellText: "upsellText__80136"
             }
         },
         139191: function(e, t, o) {
