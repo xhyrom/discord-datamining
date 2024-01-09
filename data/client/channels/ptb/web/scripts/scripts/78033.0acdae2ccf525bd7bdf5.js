@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["41039"], {
+    ["78033"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -19409,6 +19409,15 @@
                     type: "ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE"
                 })
             }
+        },
+        727538: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                AccessibilityFeatureFlags: function() {
+                    return i
+                }
+            }), (r = i || (i = {}))[r.NONE = 0] = "NONE", r[r.SCREENREADER = 1] = "SCREENREADER", r[r.REDUCED_MOTION = 2] = "REDUCED_MOTION", r[r.REDUCED_MOTION_PREFERS_CROSSFADES = 4194304] = "REDUCED_MOTION_PREFERS_CROSSFADES", r[r.REDUCED_TRANSPARENCY = 4] = "REDUCED_TRANSPARENCY", r[r.HIGH_CONTRAST = 8] = "HIGH_CONTRAST", r[r.BOLD_TEXT = 16] = "BOLD_TEXT", r[r.GRAYSCALE = 32] = "GRAYSCALE", r[r.INVERT_COLORS = 64] = "INVERT_COLORS", r[r.PREFERS_COLOR_SCHEME_LIGHT = 128] = "PREFERS_COLOR_SCHEME_LIGHT", r[r.PREFERS_COLOR_SCHEME_DARK = 256] = "PREFERS_COLOR_SCHEME_DARK", r[r.CHAT_FONT_SCALE_INCREASED = 512] = "CHAT_FONT_SCALE_INCREASED", r[r.CHAT_FONT_SCALE_DECREASED = 1024] = "CHAT_FONT_SCALE_DECREASED", r[r.ZOOM_LEVEL_INCREASED = 2048] = "ZOOM_LEVEL_INCREASED", r[r.ZOOM_LEVEL_DECREASED = 4096] = "ZOOM_LEVEL_DECREASED", r[r.MESSAGE_GROUP_SPACING_INCREASED = 8192] = "MESSAGE_GROUP_SPACING_INCREASED", r[r.MESSAGE_GROUP_SPACING_DECREASED = 16384] = "MESSAGE_GROUP_SPACING_DECREASED", r[r.DARK_SIDEBAR = 32768] = "DARK_SIDEBAR", r[r.REDUCED_MOTION_FROM_USER_SETTINGS = 65536] = "REDUCED_MOTION_FROM_USER_SETTINGS", r[r.SATURATION_LEVEL_DECREASED = 131072] = "SATURATION_LEVEL_DECREASED", r[r.FORCED_COLORS = 262144] = "FORCED_COLORS", r[r.FORCED_COLORS_FROM_USER_SETTINGS = 524288] = "FORCED_COLORS_FROM_USER_SETTINGS", r[r.ROLE_STYLE_ADJUSTED = 1048576] = "ROLE_STYLE_ADJUSTED", r[r.SYNC_PROFILE_THEME_WITH_USER_THEME = 2097152] = "SYNC_PROFILE_THEME_WITH_USER_THEME"
         },
         954016: function(e, t, n) {
             "use strict";
@@ -50061,7 +50070,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258275"
+                                build_number: "258285"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63448,4 +63457,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.dbdd07b773045f6ed023.js.map
+//# sourceMappingURL=78033.0acdae2ccf525bd7bdf5.js.map

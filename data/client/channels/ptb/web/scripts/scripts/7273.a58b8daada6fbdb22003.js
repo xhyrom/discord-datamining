@@ -3886,7 +3886,7 @@
                     }
                 },
                 BUTTON_OUTLINE_BRAND_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -4057,7 +4057,7 @@
                     }
                 },
                 BUTTON_OUTLINE_DANGER_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -4228,7 +4228,7 @@
                     }
                 },
                 BUTTON_OUTLINE_POSITIVE_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -4399,7 +4399,7 @@
                     }
                 },
                 BUTTON_OUTLINE_PRIMARY_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -5731,7 +5731,7 @@
                     }
                 },
                 INFO_DANGER_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -5788,7 +5788,7 @@
                     }
                 },
                 INFO_HELP_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -5845,7 +5845,7 @@
                     }
                 },
                 INFO_POSITIVE_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -5902,7 +5902,7 @@
                     }
                 },
                 INFO_WARNING_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -6883,7 +6883,7 @@
                     }
                 },
                 REDESIGN_BUTTON_DANGER_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -6940,7 +6940,7 @@
                     }
                 },
                 REDESIGN_BUTTON_OVERLAY_ALPHA_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -6997,7 +6997,7 @@
                     }
                 },
                 REDESIGN_BUTTON_OVERLAY_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "PRIMARY_860",
                         opacity: 1
@@ -7054,7 +7054,7 @@
                     }
                 },
                 REDESIGN_BUTTON_POSITIVE_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -7187,7 +7187,7 @@
                     }
                 },
                 REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -7244,7 +7244,7 @@
                     }
                 },
                 REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "BRAND_360",
                         opacity: 1
@@ -7263,7 +7263,7 @@
                     }
                 },
                 REDESIGN_BUTTON_PRIMARY_ALT_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "BRAND_360",
                         opacity: 1
@@ -7339,7 +7339,7 @@
                     }
                 },
                 REDESIGN_BUTTON_PRIMARY_ON_BLURPLE_PRESSED_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "BRAND_530",
                         opacity: 1
@@ -7358,7 +7358,7 @@
                     }
                 },
                 REDESIGN_BUTTON_PRIMARY_ON_BLURPLE_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "BRAND_500",
                         opacity: 1
@@ -7406,7 +7406,7 @@
                     }
                 },
                 REDESIGN_BUTTON_PRIMARY_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -7463,7 +7463,7 @@
                     }
                 },
                 REDESIGN_BUTTON_SECONDARY_ALT_PRESSED_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "PRIMARY_330",
                         opacity: 1
@@ -7482,7 +7482,7 @@
                     }
                 },
                 REDESIGN_BUTTON_SECONDARY_ALT_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "PRIMARY_230",
                         opacity: 1
@@ -7587,7 +7587,7 @@
                     }
                 },
                 REDESIGN_BUTTON_SECONDARY_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "PRIMARY_230",
                         opacity: 1
@@ -7606,7 +7606,7 @@
                     }
                 },
                 REDESIGN_CHANNEL_CATEGORY_NAME_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "PRIMARY_330",
                         opacity: 1
@@ -7625,7 +7625,7 @@
                     }
                 },
                 REDESIGN_CHANNEL_MESSAGE_PREVIEW_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "PRIMARY_360",
                         opacity: 1
@@ -7644,7 +7644,7 @@
                     }
                 },
                 REDESIGN_CHANNEL_NAME_MUTED_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "PRIMARY_360",
                         opacity: 1
@@ -7663,7 +7663,7 @@
                     }
                 },
                 REDESIGN_CHANNEL_NAME_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "PRIMARY_130",
                         opacity: 1
@@ -8024,7 +8024,7 @@
                     }
                 },
                 STATUS_DANGER_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -8157,7 +8157,7 @@
                     }
                 },
                 STATUS_POSITIVE_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "WHITE_500",
                         opacity: 1
@@ -8233,7 +8233,7 @@
                     }
                 },
                 STATUS_WARNING_TEXT: {
-                    category: "generic",
+                    category: "text",
                     [a.DARK]: {
                         raw: "BLACK_500",
                         opacity: 1
@@ -8290,7 +8290,7 @@
                     }
                 },
                 TEXT_LINK: {
-                    category: "text",
+                    category: "generic",
                     [a.DARK]: {
                         raw: "BLUE_345",
                         opacity: 1
@@ -8309,7 +8309,7 @@
                     }
                 },
                 TEXT_LINK_LOW_SATURATION: {
-                    category: "text",
+                    category: "generic",
                     [a.DARK]: {
                         raw: "BLUE_330",
                         opacity: 1
@@ -9133,7 +9133,7 @@
                 default: function() {
                     return l
                 }
-            }), e("70102"), e("222007");
+            }), e("70102");
             var I = e("10371"),
                 a = e.n(I),
                 o = e("773179"),
@@ -9202,16 +9202,9 @@
                                 "saturation" in E && (_ = _.set("hsl.s", E.saturation)), "lightness" in E && (_ = _.set("hsl.l", E.lightness)), T = _.hex(), r = "opacity" in E ? E.opacity : 1
                             }
                         }
-                        let N = null !== (I = null == e ? void 0 : e.contrastMode) && void 0 !== I ? I : "default",
+                        let N = null !== (I = null == e ? void 0 : e.contrast) && void 0 !== I ? I : 1,
                             L = null !== (o = null == e ? void 0 : e.saturation) && void 0 !== o ? o : 1;
-                        switch (L < 1 && (T = (0, i.transformColorForReducedSaturation)(T, t, L)), N) {
-                            case "reduced":
-                                T = (0, i.transformColorForReducedContrast)(T, t, _);
-                                break;
-                            case "increased":
-                                [T, r] = (0, i.transformColorForIncreasedContrast)(T, r, t, _)
-                        }
-                        if (1 === r) return T;
+                        if (L < 1 && (T = (0, i.transformColorForReducedSaturation)(T, t, L)), 1 !== N && (T = (0, i.transformColorContrast)(T, t, _, N)), 1 === r) return T;
                         {
                             let _ = a(T);
                             return _.alpha(r).hex()
@@ -10042,37 +10035,48 @@
         515950: function(_, E, e) {
             "use strict";
             e.r(E), e.d(E, {
-                transformColorForReducedContrast: function() {
-                    return o
-                },
-                transformColorForIncreasedContrast: function() {
-                    return R
-                },
                 transformColorForReducedSaturation: function() {
                     return t
+                },
+                transformColorContrast: function() {
+                    return i
                 }
-            });
+            }), e("222007");
             var I = e("10371"),
                 a = e.n(I);
 
             function o(_, E, e) {
-                if ("background" === E || "border" === E) return a(_).set("hsl.l", "light" === e ? "*1.6" : "*0.975").set("hsl.s", "*0.8").hex();
-                if ("text" === E) {
-                    let E = a(_),
-                        I = E.get("hsl.l");
-                    return E.set("hsl.l", "light" === e ? "*1.05" : Math.max(.85 * I, .6)).hex()
-                }
-                return _
+                let [I, a] = _, [o, R] = E, t = (I + a) / 2;
+                return e === t ? t : e < t ? o + (e - I) / (t - I) * (t - o) : t + (e - t) / (a - t) * (R - t)
             }
-
-            function R(_, E, e, I) {
-                return "border" === e ? [_, .3 + E] : "text" === e ? [a(_).set("hsl.l", "light" === I ? "*0.6" : "*1.5").set("hsl.s", "*2").hex(), E] : "background" === e && "light" !== I ? [a(_).set("hsl.l", "*0.9").hex(), E] : [_, E]
-            }
+            let R = [0, 2];
 
             function t(_, E, e) {
-                let I = a(_),
-                    o = I.get("hsl.s");
-                return "background" === E ? I.set("hsl.s", "*0.7").hex() : I.set("hsl.s", Math.min(o, e)).hex()
+                let I = a(_);
+                if ("background" !== E) return I.set("hsl.s", "*".concat(e)).hex();
+                {
+                    let _ = function(_, E, e) {
+                        let [I, a] = _, [o, R] = E;
+                        return o + (R - o) * ((e - I) / (a - I))
+                    }([0, 1], [.75, 1], e);
+                    return I.set("hsl.s", "*".concat(_)).hex()
+                }
+            }
+            let A = [1.3, .85],
+                T = [.98, 1],
+                r = [.75, 1.5],
+                N = [1.45, .45];
+
+            function i(_, E, e, I) {
+                switch (E) {
+                    case "background":
+                    case "border":
+                        return a(_).set("hsl.l", "*".concat(o(R, "light" === e ? T : A, I))).hex();
+                    case "text":
+                        return a(_).set("hsl.l", "*".concat(o(R, "light" === e ? N : r, I))).hex();
+                    default:
+                        return _
+                }
             }
         },
         843455: function(_, E, e) {
@@ -13529,4 +13533,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.54a6b732f6412e47e3ef.js.map
+//# sourceMappingURL=7273.a58b8daada6fbdb22003.js.map
