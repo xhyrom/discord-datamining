@@ -4625,6 +4625,10 @@
       "OPTIONS"
     ]
   },
+  "SAFETY_HUB_REQUEST_REVIEW": {
+    "url": "/safety-hub/request-review/:param",
+    "allowed_methods": null
+  },
   "INITIATE_CHANNEL_PROMPTS": {
     "url": "/initiate-prompts",
     "allowed_methods": [
