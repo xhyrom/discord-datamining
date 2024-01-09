@@ -18279,7 +18279,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258251", ", Version Hash: ").concat("66bd105b4bd657a434defb7586a3d8323591226d")), t.default.setTags({
+            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258266", ", Version Hash: ").concat("72e4801f8a0a1f6c7261ad182803225dba3dcf6e")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
         },
@@ -20752,8 +20752,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "258251", "258251"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258251")), _ = 0), _
+                let _ = parseInt((e = "258266", "258266"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258266")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22343,19 +22343,29 @@
                 id: "2023-10_emoji_captions",
                 label: "Emoji Captions Experiment",
                 defaultConfig: {
-                    isEnabled: !1
+                    isEnabledOnDesktop: !1,
+                    isAutosuggestEnabled: !1
                 },
                 treatments: [{
                     id: 1,
                     label: "Enabled",
                     config: {
-                        isEnabled: !0
+                        isEnabledOnDesktop: !0,
+                        isAutosuggestEnabled: !1
                     }
                 }, {
                     id: 2,
                     label: "Enabled with more captions from post-processing",
                     config: {
-                        isEnabled: !0
+                        isEnabledOnDesktop: !0,
+                        isAutosuggestEnabled: !1
+                    }
+                }, {
+                    id: 3,
+                    label: "Enabled with mobile autosuggest",
+                    config: {
+                        isEnabledOnDesktop: !0,
+                        isAutosuggestEnabled: !0
                     }
                 }]
             });
@@ -22392,7 +22402,7 @@
                 let E = (0, n.getEmojiCaptionsExperimentConfig)({
                     location: e
                 });
-                if (!E.isEnabled) {
+                if (!E.isEnabledOnDesktop) {
                     r.default.hasPersistedState() && r.default.clear();
                     return
                 }
@@ -37078,4 +37088,4 @@
         }
     }
 ]);
-//# sourceMappingURL=14907.be8adfdce19d80cf1908.js.map
+//# sourceMappingURL=14907.247ceb126028b8cf9ad7.js.map
