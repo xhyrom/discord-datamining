@@ -42769,8 +42769,10 @@
             }
 
             function N(e) {
-                if (null != e.users)
-                    for (let t of e.users) _[t.id] = new d.default(t)
+                if (null != e.users) {
+                    for (let t of e.users)
+                        if (!(t.id in _ && !("incomplete" in t))) _[t.id] = new d.default(t)
+                }
             }
 
             function O(e) {
@@ -50055,7 +50057,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258063"
+                                build_number: "258080"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63442,4 +63444,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.5292d047ff98ea6dd1d3.js.map
+//# sourceMappingURL=78033.8bfd6f2de3c326c62376.js.map
