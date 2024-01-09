@@ -32792,8 +32792,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -91946,6 +91946,10 @@ html .tabBadge__002b3 {
     white-space: nowrap
 }
 
+.upsellText__80136 {
+    margin-left: 8px
+}
+
 .tooltip_c91c10 {
     max-width: 260px
 }
@@ -124402,4 +124406,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.afa9eecc168ce9fe2997.css.map*/
+/*# sourceMappingURL=app.b559ff4554d25dcc755e.css.map*/
