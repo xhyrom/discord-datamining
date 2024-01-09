@@ -1559,6 +1559,7 @@
                     INVENTORY_GET: "/users/@me/inventory",
                     EMOJI_CAPTIONS_GET: "/users/@me/emoji-captions",
                     SAFETY_HUB: "/safety-hub/@me",
+                    SAFETY_HUB_REQUEST_REVIEW: _ => "/safety-hub/request-review/".concat(_),
                     INITIATE_CHANNEL_PROMPTS: "/initiate-prompts",
                     FORCE_SEND_PROMPT: _ => "/".concat(_, "/force-send-prompt"),
                     EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE: "/attachments/report-false-positive",
@@ -13528,4 +13529,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.3a160c7d6b189823adac.js.map
+//# sourceMappingURL=7273.54a6b732f6412e47e3ef.js.map
