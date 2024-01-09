@@ -14141,6 +14141,11 @@
                 HIGHLIGHTS_AND_MENTIONS: "Mentions",
                 FORM_LABEL_UNREAD_SETTINGS_OPT_IN: "Configure Unread Settings",
                 FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE: "More granular settings to control when channels should appear as unread.",
+                UNREAD_NOTIFICATION_SETTING_NOTICE: "Should we mark this channel as unread for every message, instead of only mentions?",
+                UNREAD_NOTIFICATION_SETTING_NOTICE_TITLE: "Mark unread for every message?",
+                UNREAD_NOTIFICATION_SETTING_NOTICE_DESCRIPTION: "The channel will show as unread for every message so you don't miss a thing.",
+                UNREAD_NOTIFICATION_SETTING_NOTICE_ALL_MESSAGES: "Change to all messages",
+                UNREAD_NOTIFICATION_SETTING_NOTICE_MENTION_ONLY: "Change to mention only",
                 NEW_GUILD_EVENTS_ACCESSIBILITY_LABEL: "New Events",
                 OPT_IN_GUILD_NOTICE_TITLE: "Heads up!",
                 OPT_IN_GUILD_NOTICE_DESCRIPTION: "This community now has a customizable Channel List. [Customize](onCustomizeClick) your list further, or go back to All Channels via [Server Settings](onServerSettingsClick).",
@@ -18290,7 +18295,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258375", ", Version Hash: ").concat("e328b7aa964013d5319d1b95d0b01a32d1f4e519")), t.default.setTags({
+            new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258377", ", Version Hash: ").concat("7896fcaa61ac9a94e88e9a7dcc4655118fa6bb0d")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
         },
@@ -20763,8 +20768,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "258375", "258375"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258375")), _ = 0), _
+                let _ = parseInt((e = "258377", "258377"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258377")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37085,4 +37090,4 @@
         }
     }
 ]);
-//# sourceMappingURL=14907.7d2192dd5768a7e6e545.js.map
+//# sourceMappingURL=14907.644509ea887c89965cf3.js.map
