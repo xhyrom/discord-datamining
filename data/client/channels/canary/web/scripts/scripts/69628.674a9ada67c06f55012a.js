@@ -32,7 +32,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return g
+                    return m
                 }
             });
             var a = n("913144"),
@@ -40,23 +40,21 @@
                 s = n("439141"),
                 i = n("533222"),
                 l = n("42887"),
-                u = n("227602"),
-                o = n("471671"),
-                d = n("599110"),
-                c = n("709681"),
-                f = n("12307"),
-                E = n("49111"),
-                h = n("353927");
+                u = n("599110"),
+                o = n("709681"),
+                d = n("12307"),
+                c = n("49111"),
+                f = n("353927");
 
-            function p() {
-                (0, c.playSound)("mention3")
+            function E() {
+                (0, o.playSound)("mention3")
             }
 
-            function S(e, t, n, a, r) {
+            function h(e, t, n, a, r) {
                 if (t === n) return;
                 let s = e[t],
                     l = e[n];
-                d.default.track(E.AnalyticEvents.MEDIA_DEVICE_CHANGED, {
+                u.default.track(c.AnalyticEvents.MEDIA_DEVICE_CHANGED, {
                     device_from_name: i.default.getCertifiedDeviceName(t, null != s ? s.name : ""),
                     device_to_name: i.default.getCertifiedDeviceName(n, null != l ? l.name : ""),
                     device_type: a,
@@ -64,31 +62,27 @@
                     location: r
                 })
             }
-            let _ = {
+            let p = {
                 isNotSupported: () => !1,
-                enable: e => Promise.resolve(!0)
+                enable: e => Promise.resolve(!0),
+                trackToggleSelfMute(e) {}
             };
-            _ = n("412905");
+            p = n("412905");
             let {
-                enable: C,
-                isNotSupported: m
-            } = _;
-            var g = {
-                enable: C,
+                enable: S,
+                isNotSupported: _,
+                trackToggleSelfMute: C
+            } = p;
+            var m = {
+                enable: S,
                 toggleSelfMute() {
                     let {
-                        context: e = h.MediaEngineContextTypes.DEFAULT,
+                        context: e = f.MediaEngineContextTypes.DEFAULT,
                         syncRemote: t = !0,
                         usedKeybind: n = !1
                     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    if (m()) return Promise.resolve();
-                    let r = u.default.getKeybindForAction(E.GlobalKeybindActions.TOGGLE_MUTE, !1, !0);
-                    return (d.default.track(E.AnalyticEvents.INPUT_MUTE_TOGGLED, {
-                        enabled: !l.default.isSelfMute(),
-                        custom_keybind_assigned: null != r && r.id !== u.DEFAULT_MUTE_KEYBIND.id,
-                        used_keybind: n,
-                        app_in_focus: o.default.isFocused(),
-                        overlay_activated: __OVERLAY__
+                    return _() ? Promise.resolve() : (C({
+                        usedKeybind: n
                     }), l.default.isEnabled()) ? a.default.dispatch({
                         type: "AUDIO_TOGGLE_SELF_MUTE",
                         context: e,
@@ -96,32 +90,32 @@
                     }) : this.enable(!0)
                 },
                 setTemporarySelfMute(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_TEMPORARY_SELF_MUTE",
                         mute: e
                     })
                 },
                 toggleSelfDeaf() {
                     let {
-                        context: e = h.MediaEngineContextTypes.DEFAULT,
+                        context: e = f.MediaEngineContextTypes.DEFAULT,
                         syncRemote: t = !0
                     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_TOGGLE_SELF_DEAF",
                         context: e,
                         syncRemote: t
                     })
                 },
                 toggleLocalMute(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : h.MediaEngineContextTypes.DEFAULT;
-                    !m() && a.default.dispatch({
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.MediaEngineContextTypes.DEFAULT;
+                    !_() && a.default.dispatch({
                         type: "AUDIO_TOGGLE_LOCAL_MUTE",
                         context: t,
                         userId: e
                     })
                 },
                 toggleLocalSoundboardMute(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : h.MediaEngineContextTypes.DEFAULT;
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.MediaEngineContextTypes.DEFAULT;
                     a.default.dispatch({
                         type: "AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE",
                         context: t,
@@ -129,10 +123,10 @@
                     })
                 },
                 setDisableLocalVideo(e, t) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : h.MediaEngineContextTypes.DEFAULT,
+                    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.MediaEngineContextTypes.DEFAULT,
                         r = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3],
                         s = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_LOCAL_VIDEO_DISABLED",
                         context: n,
                         userId: e,
@@ -142,7 +136,7 @@
                     })
                 },
                 setLocalVolume(e, t) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : h.MediaEngineContextTypes.DEFAULT;
+                    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.MediaEngineContextTypes.DEFAULT;
                     a.default.dispatch({
                         type: "AUDIO_SET_LOCAL_VOLUME",
                         context: n,
@@ -151,7 +145,7 @@
                     })
                 },
                 setLocalPan(e, t, n) {
-                    let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : h.MediaEngineContextTypes.DEFAULT;
+                    let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : f.MediaEngineContextTypes.DEFAULT;
                     a.default.dispatch({
                         type: "AUDIO_SET_LOCAL_PAN",
                         context: r,
@@ -162,8 +156,8 @@
                 },
                 setMode(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : h.MediaEngineContextTypes.DEFAULT;
-                    !m() && a.default.dispatch({
+                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.MediaEngineContextTypes.DEFAULT;
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_MODE",
                         context: n,
                         mode: e,
@@ -174,49 +168,49 @@
                     })
                 },
                 setInputVolume(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_INPUT_VOLUME",
                         volume: e
                     })
                 },
                 setOutputVolume(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_OUTPUT_VOLUME",
                         volume: e
                     })
                 },
                 setInputDevice(e, t) {
-                    if (!m()) {
+                    if (!_()) {
                         if (null != t) {
                             let n = l.default.getInputDevices(),
                                 a = l.default.getInputDeviceId();
-                            S(n, a, e, "Audio Input", t)
+                            h(n, a, e, "Audio Input", t)
                         }
                         a.default.dispatch({
                             type: "AUDIO_SET_INPUT_DEVICE",
                             id: e
-                        }), p()
+                        }), E()
                     }
                 },
                 setOutputDevice(e, t) {
-                    if (!m()) {
+                    if (!_()) {
                         if (null != t) {
                             let n = l.default.getOutputDevices(),
                                 a = l.default.getOutputDeviceId();
-                            S(n, a, e, "Audio Output", t)
+                            h(n, a, e, "Audio Output", t)
                         }
                         a.default.dispatch({
                             type: "AUDIO_SET_OUTPUT_DEVICE",
                             id: e
-                        }), p()
+                        }), E()
                     }
                 },
                 setVideoDevice(e, t) {
-                    if (!m()) {
+                    if (!_()) {
                         if (null != t) {
                             let n = l.default.getVideoDevices(),
                                 a = l.default.getVideoDeviceId();
-                            S(n, a, e, "Video", t)
+                            h(n, a, e, "Video", t)
                         }
                         a.default.dispatch({
                             type: "MEDIA_ENGINE_SET_VIDEO_DEVICE",
@@ -225,27 +219,27 @@
                     }
                 },
                 setEchoCancellation(e, t) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_ECHO_CANCELLATION",
                         enabled: e,
                         location: t
                     })
                 },
                 setLoopback(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_LOOPBACK",
                         enabled: e
                     })
                 },
                 setNoiseSuppression(e, t) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_NOISE_SUPPRESSION",
                         enabled: e,
                         location: t
                     })
                 },
                 setNoiseCancellation(e, t) {
-                    !m() && (a.default.dispatch({
+                    !_() && (a.default.dispatch({
                         type: "AUDIO_SET_NOISE_CANCELLATION",
                         enabled: e,
                         location: t
@@ -256,26 +250,26 @@
                     }))
                 },
                 setAutomaticGainControl(e, t) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_AUTOMATIC_GAIN_CONTROL",
                         enabled: e,
                         location: t
                     })
                 },
                 setExperimentalEncoders(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_EXPERIMENTAL_ENCODERS",
                         enabled: e
                     })
                 },
                 setHardwareH264(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_HARDWARE_H264",
                         enabled: e
                     })
                 },
                 setAttenuation(e, t, n) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_ATTENUATION",
                         attenuation: e,
                         attenuateWhileSpeakingSelf: t,
@@ -283,42 +277,42 @@
                     })
                 },
                 setQoS(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_QOS",
                         enabled: e
                     })
                 },
                 reset() {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_RESET"
                     })
                 },
                 setSilenceWarning(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_DISPLAY_SILENCE_WARNING",
                         enabled: e
                     })
                 },
                 setDebugLogging(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_DEBUG_LOGGING",
                         enabled: e
                     })
                 },
                 setVideoHook(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_VIDEO_HOOK",
                         enabled: e
                     })
                 },
                 setExperimentalSoundshare(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE",
                         enabled: e
                     })
                 },
                 setAudioSubsystem(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "AUDIO_SET_SUBSYSTEM",
                         subsystem: e
                     })
@@ -330,43 +324,43 @@
                     })
                 },
                 setGoLiveSource(e) {
-                    (null == e ? void 0 : e.qualityOptions) != null && (0, f.trackStreamSettingsUpdate)(e.qualityOptions.preset, e.qualityOptions.resolution, e.qualityOptions.frameRate), a.default.dispatch({
+                    (null == e ? void 0 : e.qualityOptions) != null && (0, d.trackStreamSettingsUpdate)(e.qualityOptions.preset, e.qualityOptions.resolution, e.qualityOptions.frameRate), a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
                         settings: e
                     })
                 },
                 setOpenH264(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_OPEN_H264",
                         enabled: e
                     })
                 },
                 setAV1Enabled(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_AV1",
                         enabled: e
                     })
                 },
                 setH265Enabled(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_H265",
                         enabled: e
                     })
                 },
                 setAecDump(e) {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_SET_AEC_DUMP",
                         enabled: e
                     })
                 },
                 interact() {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_INTERACTION_REQUIRED",
                         required: !1
                     })
                 },
                 enableSoundshare() {
-                    !m() && a.default.dispatch({
+                    !_() && a.default.dispatch({
                         type: "MEDIA_ENGINE_ENABLE_SOUNDSHARE"
                     })
                 }
@@ -540,10 +534,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 isNotSupported: function() {
-                    return h
+                    return _
                 },
                 enable: function() {
-                    return S
+                    return m
+                },
+                trackToggleSelfMute: function() {
+                    return g
                 }
             });
             var a = n("37983");
@@ -552,13 +549,16 @@
                 s = n("913144"),
                 i = n("605250"),
                 l = n("42887"),
-                u = n("599110"),
-                o = n("49111"),
-                d = n("180524"),
-                c = n("782340");
-            let f = new i.default("AudioActionCreators");
+                u = n("227602"),
+                o = n("471671"),
+                d = n("599110"),
+                c = n("360782"),
+                f = n("49111"),
+                E = n("180524"),
+                h = n("782340");
+            let p = new i.default("AudioActionCreators");
 
-            function E() {
+            function S() {
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
@@ -570,53 +570,66 @@
                 })
             }
 
-            function h() {
+            function _() {
                 return !l.default.isSupported() && ((0, r.openModal)(e => (0, a.jsx)(r.ConfirmModal, {
-                    header: c.default.Messages.UNSUPPORTED_BROWSER,
-                    confirmText: c.default.Messages.DOWNLOAD_APP,
-                    cancelText: c.default.Messages.CANCEL,
-                    onConfirm: E,
+                    header: h.default.Messages.UNSUPPORTED_BROWSER,
+                    confirmText: h.default.Messages.DOWNLOAD_APP,
+                    cancelText: h.default.Messages.CANCEL,
+                    onConfirm: S,
                     confirmButtonColor: r.Button.Colors.BRAND,
                     ...e,
                     children: (0, a.jsx)(r.Text, {
                         variant: "text-md/normal",
-                        children: c.default.Messages.UNSUPPORTED_BROWSER_DETAILS
+                        children: h.default.Messages.UNSUPPORTED_BROWSER_DETAILS
                     })
                 })), !0)
             }
 
-            function p(e) {
-                u.default.track(o.AnalyticEvents.PERMISSIONS_ACKED, {
+            function C(e) {
+                d.default.track(f.AnalyticEvents.PERMISSIONS_ACKED, {
                     type: "audio",
                     action: e
                 })
             }
 
-            function S() {
+            function m() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-                return h() ? Promise.resolve(!1) : (u.default.track(o.AnalyticEvents.PERMISSIONS_REQUESTED, {
+                return _() ? Promise.resolve(!1) : (d.default.track(f.AnalyticEvents.PERMISSIONS_REQUESTED, {
                     type: "audio"
                 }), l.default.getMediaEngine().enable().then(() => {
                     s.default.dispatch({
                         type: "MEDIA_ENGINE_SET_AUDIO_ENABLED",
                         enabled: !0,
                         unmute: e
-                    }), p(d.NativePermissionStates.ACCEPTED)
+                    }), C(E.NativePermissionStates.ACCEPTED)
                 }, e => {
                     switch (e) {
-                        case o.UserMediaErrors.NO_DEVICES_FOUND:
-                            p(d.NativePermissionStates.NO_DEVICES);
+                        case f.UserMediaErrors.NO_DEVICES_FOUND:
+                            C(E.NativePermissionStates.NO_DEVICES);
                             break;
-                        case o.UserMediaErrors.PERMISSION_DENIED:
-                            p(d.NativePermissionStates.DENIED);
+                        case f.UserMediaErrors.PERMISSION_DENIED:
+                            C(E.NativePermissionStates.DENIED);
                             break;
-                        case o.UserMediaErrors.PERMISSION_DISMISSED:
-                            p(d.NativePermissionStates.DISMISSED);
+                        case f.UserMediaErrors.PERMISSION_DISMISSED:
+                            C(E.NativePermissionStates.DISMISSED);
                             break;
                         default:
-                            p(d.NativePermissionStates.ERROR), f.warn("unknown getUserMedia error: ".concat(e))
+                            C(E.NativePermissionStates.ERROR), p.warn("unknown getUserMedia error: ".concat(e))
                     }
                 }).then(() => !0))
+            }
+
+            function g(e) {
+                let {
+                    usedKeybind: t = !1
+                } = e, n = u.default.getKeybindForAction(f.GlobalKeybindActions.TOGGLE_MUTE, !1, !0);
+                d.default.track(f.AnalyticEvents.INPUT_MUTE_TOGGLED, {
+                    enabled: !l.default.isSelfMute(),
+                    custom_keybind_assigned: null != n && n.id !== u.DEFAULT_MUTE_KEYBIND.id,
+                    used_keybind: t,
+                    app_in_focus: o.default.isFocused(),
+                    overlay_activated: null != (0, c.default)()
+                })
             }
         },
         988738: function(e, t, n) {
@@ -1676,7 +1689,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return L
+                    return y
                 }
             }), n("70102"), n("222007");
             var a = n("37983"),
@@ -1779,7 +1792,7 @@
             }
             let N = [];
 
-            function L(e) {
+            function y(e) {
                 let {
                     channelId: t,
                     guildId: s,
@@ -1788,16 +1801,16 @@
                     compact: _ = !1,
                     disableInteraction: m = !1,
                     maxVisibleUsers: I = 3
-                } = e, [v, L] = r.useState(!1), y = r.useRef(new d.DelayedCall(150, () => L(!1))), D = (0, o.useStateFromStoresArray)([h.default, p.default], () => {
+                } = e, [v, y] = r.useState(!1), L = r.useRef(new d.DelayedCall(150, () => y(!1))), D = (0, o.useStateFromStoresArray)([h.default, p.default], () => {
                     if (l.type === g.ParticipantTypes.STREAM) {
                         let e = h.default.getViewerIds(l.id);
                         return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(C.isNotNullish) : N
                     }
                     return l.type === g.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(C.isNotNullish) : N : N
                 }, [l]), R = r.useCallback(() => {
-                    y.current.cancel(), L(!0)
+                    L.current.cancel(), y(!0)
                 }, []), x = r.useCallback(() => {
-                    y.current.delay()
+                    L.current.delay()
                 }, []), P = r.useCallback((e, t) => {
                     R(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
@@ -1991,7 +2004,7 @@
                             action: () => M(r, m, t, h.AnalyticsObjectTypes.RESOLUTION)
                         }, "stream-settings-fps-".concat(t))
                     }),
-                    L = p.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
+                    y = p.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
@@ -2010,7 +2023,7 @@
                         children: N
                     }), (0, a.jsx)(i.MenuGroup, {
                         label: _.default.Messages.STREAM_RESOLUTION,
-                        children: L
+                        children: y
                     })]
                 })
             }
@@ -2064,7 +2077,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return L
+                    return y
                 }
             }), n("222007");
             var a = n("37983"),
@@ -2191,13 +2204,13 @@
                     }, this.discordErrorsSet = !1
                 }
             }
-            var L = N
+            var y = N
         },
         160139: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return y
+                    return L
                 }
             });
             var a = n("37983");
@@ -2261,7 +2274,7 @@
                         })]
                     })
                 },
-                L = e => {
+                y = e => {
                     let {
                         focused: t,
                         windowKey: n,
@@ -2313,7 +2326,7 @@
                     })
                 };
 
-            function y(e) {
+            function L(e) {
                 let {
                     focused: t,
                     type: n,
@@ -2330,7 +2343,7 @@
                             hasOpenLayer: E
                         });
                     case m.PlatformTypes.OSX:
-                        return (0, a.jsx)(L, {
+                        return (0, a.jsx)(y, {
                             focused: t,
                             windowKey: r,
                             frame: s,
@@ -2469,7 +2482,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-a3fca4266a067d80f2f81c85e6cda469adb79fb1",
+                    release: "discord_web-dfa7fcb77818bc5096b0e7ca47a105bc090fc83f",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2487,7 +2500,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "258300", "258300")), a.setTag("builtAt", String("1704835939354"));
+                }), a.setTag("buildNumber", (e = "258305", "258305")), a.setTag("builtAt", String("1704836757916"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -3361,7 +3374,7 @@
                     onClose: A,
                     onSelect: v,
                     appContext: M = m.AppContext.APP
-                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = I(n, r, l), y = (0, o.default)(N, M), D = (0, u.default)(N, M, m.NOOP_NULL), R = null == N ? (0, a.jsx)(s.MenuItem, {
+                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, y = I(n, r, l), L = (0, o.default)(N, M), D = (0, u.default)(N, M, m.NOOP_NULL), R = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: h.default,
@@ -3370,7 +3383,7 @@
                     children: [C.isPlatformEmbedded ? (0, a.jsx)(s.MenuItem, {
                         id: "stream-settings",
                         label: T.default.Messages.SCREENSHARE_STREAM_QUALITY,
-                        children: y
+                        children: L
                     }) : null, E ? D : null, O ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
                         label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
@@ -3391,7 +3404,7 @@
                         onClose: A,
                         "aria-label": null != N ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
                         children: [(0, a.jsx)(s.MenuGroup, {
-                            children: L.map(e => {
+                            children: y.map(e => {
                                 let {
                                     stream: t,
                                     username: n
@@ -5017,6 +5030,20 @@
                 }), (0, a.init)(e)
             }
         },
+        360782: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return r
+                }
+            });
+            var a = n("860957");
+
+            function r() {
+                let e = a.default.getFocusedPID();
+                return null != e && (a.default.isReady(e) || a.default.isCrashed(e)) ? e : null
+            }
+        },
         88807: function(e, t, n) {
             "use strict";
             var a, r;
@@ -5037,4 +5064,4 @@
         }
     }
 ]);
-//# sourceMappingURL=69628.ce1a05d822acbf054d7d.js.map
+//# sourceMappingURL=69628.674a9ada67c06f55012a.js.map
