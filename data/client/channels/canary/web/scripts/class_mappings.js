@@ -14725,6 +14725,7 @@
                 unread: "unread__48cf4",
                 unreadImportant: "unreadImportant_c775b3",
                 unreadWithHangStatus: "unreadWithHangStatus_bbb809",
+                withGuildIcon: "withGuildIcon_cd7a25",
                 wrapper: "wrapper__7bcde"
             }
         },
@@ -14744,7 +14745,6 @@
                 scroller: "scroller_f0f183",
                 sectionDivider: "sectionDivider__68d2a",
                 sectionDividerWithBottom: "sectionDividerWithBottom__9b53a sectionDivider__68d2a",
-                threadListWithGuildIcon: "threadListWithGuildIcon__81019",
                 unread: "unread__11823 " + o("100252").container,
                 unreadBar: "unreadBar__6ecda",
                 unreadBottom: "unreadBottom__6be9f unread__11823 " + o("100252").container,
@@ -14876,7 +14876,9 @@
             e.exports = {
                 container: "container_f87d43",
                 spine: "spine__88e6d",
-                spineBorder: "spineBorder_bdec8b"
+                spineBorder: "spineBorder_bdec8b",
+                spineBorderWithGuildIcon: "spineBorderWithGuildIcon_a5c9e8 spineBorder_bdec8b",
+                spineWithGuildIcon: "spineWithGuildIcon_bad76a spine__88e6d"
             }
         },
         477635: function(e, t, o) {

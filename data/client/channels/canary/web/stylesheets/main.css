@@ -45141,6 +45141,14 @@ html .progress__4ef76 {
     left: -36px
 }
 
+.typeThread__2f91c.withGuildIcon_cd7a25 {
+    margin-left: 46px
+}
+
+.typeThread__2f91c.withGuildIcon_cd7a25 .unread__48cf4 {
+    left: -46px
+}
+
 .wrapper__7bcde.modeSelected__487d6 {
     cursor: default
 }
@@ -68261,10 +68269,6 @@ input::-webkit-inner-spin-button {
     margin-bottom: 8px
 }
 
-.threadListWithGuildIcon__81019 {
-    left: 10px
-}
-
 .newChannel_f99b92 {
     color: var(--brand-560)
 }
@@ -68536,6 +68540,11 @@ input::-webkit-inner-spin-button {
     position: absolute;
     top: 10px;
     width: 2px
+}
+
+.spineWithGuildIcon_bad76a,
+.spineBorderWithGuildIcon_a5c9e8 {
+    left: 32px
 }
 
 .container__31d25 {
@@ -126230,4 +126239,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.baf450f09e8a4443ea46.css.map*/
+/*# sourceMappingURL=app.760289408e48550aaaf0.css.map*/
