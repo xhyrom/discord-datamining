@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2024-01_windows_key_frame_interval",
+    "label": "Windows key frame interval",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: KFI 60000 ms",
+      "Treatment 2: KFI 70000 ms",
+      "Treatment 3: KFI 80000 ms",
+      "Treatment 4: KFI 90000 ms"
+    ],
+    "hash": 2961250399,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "keyFrameIntervalMs"
+    ]
+  }
+}
