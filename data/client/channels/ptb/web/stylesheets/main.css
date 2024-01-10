@@ -90386,6 +90386,75 @@ html .tabBadge__002b3 {
     margin-bottom: 16px
 }
 
+.modalHeader__105b5 {
+    display: flex;
+    flex-direction: column
+}
+
+.modalHeaderTitle__69789 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+    height: 24px
+}
+
+.modalContent__32131 {
+    padding: 16px;
+    height: 340px
+}
+
+.guildSelector_e2953b {
+    width: 100%
+}
+
+.categoryRow__56206 {
+    margin-bottom: 8px
+}
+
+.channelRow__97b12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px
+}
+
+.channelRow__97b12+.categoryRow__56206 {
+    margin-top: 24px
+}
+
+.channelName_d417c3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px
+}
+
+.channelIconContainer__965ac {
+    background: var(--bg-mod-subtle);
+    border-radius: var(--radius-round);
+    height: 32px;
+    width: 32px
+}
+
+.channelIcon__081cb {
+    color: var(--interactive-normal);
+    padding: 6px
+}
+
+.modalFooter__6a2d6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row
+}
+
+.goBackButton__03acf {
+    color: var(--interactive-normal)
+}
+
 .name_ed8429 {
     margin-top: 16px
 }
@@ -126208,4 +126277,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.125b4974eda4eb340343.css.map*/
+/*# sourceMappingURL=app.17c2706f11751d0eea4d.css.map*/
