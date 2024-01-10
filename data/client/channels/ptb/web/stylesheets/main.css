@@ -32819,8 +32819,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83804,8 +83804,8 @@ html .tabBadge__002b3 {
     min-width: 500px
 }
 
-.shopForAllHeroBanner__734b9 {
-    background: linear-gradient(180deg, var(--brand-400), var(--brand-500))
+.heroBannerNonPremium__3290f {
+    background: var(--themes-light-gradients-blurple, linear-gradient(135deg, var(--brand-400), var(--brand-500)))
 }
 
 .bannerBackgroundWrapper_c98734 {
@@ -124433,4 +124433,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.05a99e1663e3441d4ece.css.map*/
+/*# sourceMappingURL=app.8ed7124737879a406cb0.css.map*/
