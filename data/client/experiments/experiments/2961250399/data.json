@@ -50,7 +50,7 @@
     "overrides_formatted": [
       {
         "buckets": {
-          "2": {
+          "4": {
             "rollout": [
               {
                 "start": 0,
