@@ -18646,7 +18646,7 @@
                     if (this.userId === e) {
                         if (t === this.speaking) return;
                         if (t !== a.SpeakingFlags.NONE) {
-                            let e = Object.values(r.default.getVoiceStatesForChannel(this.channelId)).filter(e => e.userId !== this.userId && !e.selfDeaf && !e.deaf);
+                            let e = Object.values(r.default.getVoiceStatesForChannel(this.channelId)).filter(e => !e.selfDeaf && !e.deaf);
                             e.forEach(e => this.totalListeners.add(e.userId)), this.maxListenerCount = Math.max(e.length, this.maxListenerCount)
                         }
                         this.speaking = t
@@ -40326,12 +40326,12 @@
                             channelId: n
                         })
                     })
-                }), null == m && (m = new l.default(f.default.getId(), t)), T = null, g = !1, I = !1, u
+                }), m = new l.default(f.default.getId(), t), T = null, g = !1, I = !1, u
             }
 
             function v() {
                 if (null == i) return !1;
-                T = i.getDuration(), i.destroy(), i = null
+                T = i.getDuration(), i.destroy(), i = null, m = null
             }
 
             function A() {
@@ -50176,7 +50176,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258644"
+                                build_number: "258657"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63563,4 +63563,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.260d04904eb780b07d81.js.map
+//# sourceMappingURL=41039.0ac44a3da09a87162d4d.js.map
