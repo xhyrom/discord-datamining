@@ -38657,14 +38657,14 @@
                                 autoTrackExposure: !1
                             });
                             e.setViewerSideClip(n);
-                            let {
-                                keyFrameIntervalMs: i
-                            } = G.default.getCurrentConfig({
-                                location: "MediaEngineStore"
+                            let i = eo.default.getGuildId(),
+                                r = 0;
+                            null != i && e.context === eh.MediaEngineContextTypes.STREAM && (r = G.default.getCurrentConfig({
+                                guildId: i,
+                                location: "MediaEngineStore_SetupMediaEngine"
                             }, {
-                                autoTrackExposure: !1
-                            });
-                            e.setClipsKeyFrameInterval(n && t.viewerClipsEnabled ? eh.VIEWERSIDE_CLIP_KFI_MS : i)
+                                autoTrackExposure: !0
+                            }).keyFrameIntervalMs), e.setClipsKeyFrameInterval(n && t.viewerClipsEnabled ? eh.VIEWERSIDE_CLIP_KFI_MS : r)
                         }
                         for (let t of (n = e0(e.context), e.setPostponeDecodeLevel(100), Object.keys(n.localMutes))) t !== et.default.getId() && e.setLocalMute(t, n.localMutes[t]);
                         for (let t of Object.keys(n.localVolumes)) t !== et.default.getId() && e.setLocalVolume(t, n.localVolumes[t]);
@@ -50177,7 +50177,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258590"
+                                build_number: "258617"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63564,4 +63564,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.986529fc270f7a7d1901.js.map
+//# sourceMappingURL=41039.1a421bec851004c39cbd.js.map
