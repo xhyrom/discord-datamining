@@ -1,5 +1,5 @@
 ! function() {
-    var e, a, t, d, s, n, c, i, r, o = {
+    var e, a, t, d, s, n, i, c, r, o = {
             386177: function(e, a, t) {
                 "use strict";
                 e.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBjbGlwLXBhdGg9InVybCgjYSkiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJtMCAwIDUgMiAxLjUgNEg3VjBIMFptMCAxMyA1LTIgMS41LTRIN3Y2SDBaIiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTYuNDIzIDYuNUM2LjQyMyAzLjMxMiAzLjc4My43NTYuNS41MThjMy4zODYuMjM2IDYgMi44NTUgNiA1Ljk4MiAwIDMuMTI3LTIuNjE0IDUuNzQ2LTYgNS45ODN2LS4wMDFjMy4yODQtLjIzNyA1LjkyMy0yLjc5NCA1LjkyMy01Ljk4MloiIHN0cm9rZT0iI0Q0RDlEQiIvPjxwYXRoIGZpbGw9IiNENEQ5REIiIGQ9Ik0wIDBoMXYxSDB6TTAgMTJoMXYxSDB6Ii8+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iYSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGg3djEzSDB6Ii8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
@@ -34,14 +34,14 @@
                 t("884691");
                 var s = t("90915"),
                     n = t("446674"),
-                    c = t("271938"),
-                    i = t("760190"),
+                    i = t("271938"),
+                    c = t("760190"),
                     r = t("49111"),
-                    o = n.default.connectStores([i.default, c.default], () => {
-                        let e = c.default.getToken();
+                    o = n.default.connectStores([c.default, i.default], () => {
+                        let e = i.default.getToken();
                         return {
                             token: e,
-                            hasLoadedExperiments: null != e || i.default.hasLoadedExperiments
+                            hasLoadedExperiments: null != e || c.default.hasLoadedExperiments
                         }
                     })(e => {
                         let {
@@ -65,15 +65,15 @@
                 var d = t("37983"),
                     s = t("884691"),
                     n = t("414456"),
-                    c = t.n(n),
-                    i = t("474557"),
+                    i = t.n(n),
+                    c = t("474557"),
                     r = t("507812"),
                     o = t("173791");
                 class f extends s.Component {
                     render() {
                         return (0, d.jsx)("div", {
-                            className: c(r.app, o.vertical),
-                            children: (0, d.jsx)(i.default, {})
+                            className: i(r.app, o.vertical),
+                            children: (0, d.jsx)(c.default, {})
                         })
                     }
                 }
@@ -104,8 +104,8 @@
                 var d = t("37983"),
                     s = t("884691"),
                     n = t("522632"),
-                    c = t("803182"),
-                    i = t("90915"),
+                    i = t("803182"),
+                    c = t("90915"),
                     r = t("817792"),
                     o = t("815157"),
                     f = t("391679"),
@@ -236,8 +236,8 @@
                             migrationStatus: t,
                             skipsSettingDefaultPageTitle: s
                         } = this.props;
-                        return e = t === _.MigrationStatus.IN_PROGRESS ? null : N.IS_APP_COMPATIBLE_BROWSER ? w.isPlatformEmbedded ? (0, d.jsxs)(i.Switch, {
-                            children: [(0, d.jsx)(i.Route, {
+                        return e = t === _.MigrationStatus.IN_PROGRESS ? null : N.IS_APP_COMPATIBLE_BROWSER ? w.isPlatformEmbedded ? (0, d.jsxs)(c.Switch, {
+                            children: [(0, d.jsx)(c.Route, {
                                 exact: !0,
                                 path: S.Routes.INDEX,
                                 render: () => (0, d.jsx)(p.default, {})
@@ -245,42 +245,42 @@
                                 exact: !0,
                                 path: S.Routes.APPS,
                                 component: D
-                            }), (0, d.jsx)(i.Route, {
+                            }), (0, d.jsx)(c.Route, {
                                 path: X([S.Routes.LOGIN, S.Routes.REGISTER, S.Routes.INVITE(":inviteCode"), S.Routes.INVITE_LOGIN(":inviteCode"), S.Routes.GIFT_CODE(":giftCode"), S.Routes.GIFT_CODE_LOGIN(":giftCode"), S.Routes.RESET], A.CONFERENCE_MODE_ENABLED),
                                 component: V
                             }), (0, d.jsx)(h.default, {
                                 path: S.Routes.INVITE_PROXY(":channelId"),
                                 component: L
-                            }), (0, d.jsx)(i.Redirect, {
+                            }), (0, d.jsx)(c.Redirect, {
                                 from: S.Routes.INVITE(""),
                                 to: S.Routes.LOGIN
-                            }), (0, d.jsx)(i.Redirect, {
+                            }), (0, d.jsx)(c.Redirect, {
                                 from: S.Routes.GIFT_CODE(""),
                                 to: S.Routes.LOGIN
-                            }), (0, d.jsx)(i.Route, {
+                            }), (0, d.jsx)(c.Route, {
                                 render: Z
                             })]
-                        }) : (0, d.jsxs)(i.Switch, {
+                        }) : (0, d.jsxs)(c.Switch, {
                             children: [(0, d.jsx)(h.default, {
                                 exact: !0,
                                 path: S.Routes.INDEX,
                                 render: () => (0, d.jsx)(p.default, {})
-                            }), (0, d.jsx)(i.Route, {
+                            }), (0, d.jsx)(c.Route, {
                                 path: X([S.Routes.LOGIN, S.Routes.LOGIN_HANDOFF, S.Routes.REGISTER, S.Routes.BILLING_PREFIX, S.Routes.BILLING_PROMOTION_REDEMPTION(":code"), S.Routes.INVITE(":inviteCode"), S.Routes.INVITE_LOGIN(":inviteCode"), S.Routes.GIFT_CODE(":giftCode"), S.Routes.GIFT_CODE_LOGIN(":giftCode"), S.Routes.GUILD_TEMPLATE(":guildTemplateCode"), S.Routes.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), S.Routes.DISABLE_EMAIL_NOTIFICATIONS, S.Routes.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, S.Routes.RESET, S.Routes.REPORT, S.Routes.REPORT_SECOND_LOOK], A.CONFERENCE_MODE_ENABLED),
                                 component: V
-                            }), a ? null : (0, d.jsx)(i.Route, {
+                            }), a ? null : (0, d.jsx)(c.Route, {
                                 path: S.Routes.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
                                 component: V
-                            }), a ? null : (0, d.jsx)(i.Route, {
+                            }), a ? null : (0, d.jsx)(c.Route, {
                                 path: S.Routes.CHANNEL(":guildId", ":channelId?", ":messageId?"),
                                 component: V
-                            }), (0, d.jsx)(i.Redirect, {
+                            }), (0, d.jsx)(c.Redirect, {
                                 from: S.Routes.INVITE(""),
                                 to: S.Routes.LOGIN
                             }), (0, d.jsx)(h.default, {
                                 path: S.Routes.INVITE_PROXY(":channelId"),
                                 component: L
-                            }), (0, d.jsx)(i.Redirect, {
+                            }), (0, d.jsx)(c.Redirect, {
                                 from: S.Routes.GIFT_CODE(""),
                                 to: S.Routes.LOGIN
                             }), (0, d.jsx)(h.default, {
@@ -313,15 +313,15 @@
                                     var e, a, t;
                                     let d = null === (e = T.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
                                         s = (0, n.parse)((null !== (t = window.location.search) && void 0 !== t ? t : "").substr(1)),
-                                        c = null === (a = s.referring_location) || void 0 === a ? void 0 : a.toString();
+                                        i = null === (a = s.referring_location) || void 0 === a ? void 0 : a.toString();
                                     return ("iOS" === d || "Android" === d) && T.default.track(S.AnalyticEvents.DOWNLOAD_APP, {
                                         platform: d,
                                         ptb: !1,
                                         released: !0,
                                         has_e_mail: "true" === s.has_e_mail,
-                                        referring_location: c,
+                                        referring_location: i,
                                         qr_code: !0
-                                    }), window.location.href = (0, O.getMobileDownloadLink)(null != c && "" !== c ? c : "qr_code", d), null
+                                    }), window.location.href = (0, O.getMobileDownloadLink)(null != i && "" !== i ? i : "qr_code", d), null
                                 }
                             }), (0, d.jsx)(h.default, {
                                 path: S.Routes.OPEN_APP_FROM_EMAIL,
@@ -329,7 +329,7 @@
                                     var e, a;
                                     let t = null === (e = T.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
                                         s = (0, R.getOpenAppFromEmailDestinations)(null !== (a = window.location.search) && void 0 !== a ? a : "");
-                                    if ("iOS" !== t && "Android" !== t) return (0, d.jsx)(i.Redirect, {
+                                    if ("iOS" !== t && "Android" !== t) return (0, d.jsx)(c.Redirect, {
                                         to: null != s.desktop ? "".concat(s.desktop.pathname).concat(s.desktop.search) : S.Routes.APP
                                     });
                                     {
@@ -343,28 +343,28 @@
                                         }), window.location.href = e
                                     }
                                 }
-                            }), (0, d.jsx)(i.Redirect, {
+                            }), (0, d.jsx)(c.Redirect, {
                                 from: S.Routes.CONNECT_AUTHORIZE,
                                 to: {
                                     ...location,
                                     pathname: S.Routes.OAUTH2_AUTHORIZE
                                 }
-                            }), (0, d.jsx)(i.Route, {
+                            }), (0, d.jsx)(c.Route, {
                                 path: [S.Routes.OAUTH2_AUTHORIZED, S.Routes.OAUTH2_AUTHORIZE, S.Routes.OAUTH2_ERROR, S.Routes.OAUTH2_WHITELIST_ACCEPT],
                                 component: H
-                            }), (0, d.jsx)(i.Route, {
+                            }), (0, d.jsx)(c.Route, {
                                 path: [S.Routes.ACCOUNT_STANDING],
                                 component: K
-                            }), a ? null : (0, d.jsx)(i.Route, {
+                            }), a ? null : (0, d.jsx)(c.Route, {
                                 path: S.Routes.APPLICATION_STORE,
                                 component: b.default
-                            }), a ? null : (0, d.jsx)(i.Route, {
+                            }), a ? null : (0, d.jsx)(c.Route, {
                                 path: [S.Routes.APPLICATION_DIRECTORY_SEARCH, S.Routes.APPLICATION_DIRECTORY_PROFILE(":applicationId", ":section?"), S.Routes.APPLICATION_DIRECTORY],
                                 component: F
-                            }), (0, d.jsx)(i.Route, {
+                            }), (0, d.jsx)(c.Route, {
                                 render: Z
                             })]
-                        }) : (0, d.jsx)(i.Switch, {
+                        }) : (0, d.jsx)(c.Switch, {
                             children: (0, d.jsx)(h.default, {
                                 component: C
                             })
@@ -383,7 +383,7 @@
                     let a = function() {
                         let {
                             pathname: e
-                        } = (0, i.useLocation)(), a = (0, c.matchPath)(e, {
+                        } = (0, c.useLocation)(), a = (0, i.matchPath)(e, {
                             path: S.Routes.APPLICATION_DIRECTORY
                         });
                         return null != a
@@ -397,7 +397,7 @@
             20423: function(e, a, t) {
                 "use strict";
                 t.r(a), t("860677");
-                var d, s, n, c, i, r = t("37983");
+                var d, s, n, i, c, r = t("37983");
                 t("320777"), t("884691");
                 var o = t("288661"),
                     f = t("627445"),
@@ -441,7 +441,7 @@
                         })
                     });
                     let e = null === (s = (n = N.default.remoteApp).getVersion) || void 0 === s ? void 0 : s.call(n),
-                        a = null === (c = (i = N.default.remoteApp).getBuildNumber) || void 0 === c ? void 0 : c.call(i),
+                        a = null === (i = (c = N.default.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(c),
                         t = {};
                     null != N.default.remoteApp.getModuleVersions && (t = N.default.remoteApp.getModuleVersions()), E.default.setExtra({
                         hostVersion: e,
@@ -473,20 +473,20 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     default: function() {
-                        return i
+                        return c
                     }
                 });
                 var d = t("37983");
                 t("884691");
                 var s = t("77078"),
                     n = t("650758"),
-                    c = t("874762"),
-                    i = {
+                    i = t("874762"),
+                    c = {
                         App: () => (0, d.jsx)(s.DnDProvider, {
-                            children: (0, d.jsx)(c.default, {})
+                            children: (0, d.jsx)(i.default, {})
                         }),
                         Overlay: () => (0, d.jsx)(s.DnDProvider, {
-                            children: (0, d.jsx)(c.Overlay, {})
+                            children: (0, d.jsx)(i.Overlay, {})
                         }),
                         OutdatedClient: n.default
                     }
@@ -498,7 +498,7 @@
                         return s
                     },
                     default: function() {
-                        return c
+                        return i
                     }
                 });
                 var d = t("37983");
@@ -513,7 +513,7 @@
                     })
                 }
 
-                function c() {
+                function i() {
                     return (0, d.jsx)(d.Fragment, {
                         children: (0, d.jsx)(n, {})
                     })
@@ -523,17 +523,17 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     default: function() {
-                        return i
+                        return c
                     }
                 });
                 var d = t("659500"),
                     s = t("791776"),
                     n = t("75480"),
-                    c = t("49111"),
-                    i = {
+                    i = t("49111"),
+                    c = {
                         init() {
                             document.addEventListener("paste", e => {
-                                !(0, n.default)((0, s.eventOwnerDocument)(e)) && d.ComponentDispatch.dispatchToLastSubscribed(c.ComponentActions.GLOBAL_CLIPBOARD_PASTE, {
+                                !(0, n.default)((0, s.eventOwnerDocument)(e)) && d.ComponentDispatch.dispatchToLastSubscribed(i.ComponentActions.GLOBAL_CLIPBOARD_PASTE, {
                                     event: e
                                 })
                             })
@@ -562,8 +562,8 @@
                 }), t("222007");
                 var d, s = t("37983"),
                     n = t("884691"),
-                    c = t("597755"),
-                    i = t.n(c),
+                    i = t("597755"),
+                    c = t.n(i),
                     r = t("703809"),
                     o = t("446674"),
                     f = t("895547"),
@@ -585,7 +585,7 @@
                 d = class extends n.PureComponent {
                     getPlatform() {
                         var e;
-                        let a = null === (e = i.os) || void 0 === e ? void 0 : e.family;
+                        let a = null === (e = c.os) || void 0 === e ? void 0 : e.family;
                         return null != a && /^win/i.test(a) ? m.PlatformTypes.WINDOWS : null != a && /darwin|os x/i.test(a) ? m.PlatformTypes.OSX : m.PlatformTypes.LINUX
                     }
                     componentDidMount() {
@@ -637,24 +637,24 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     default: function() {
-                        return i
+                        return c
                     }
                 });
                 var d = t("862337"),
                     s = t("913144"),
                     n = t("845579");
-                let c = new d.Timeout;
-                var i = {
+                let i = new d.Timeout;
+                var c = {
                     init() {
                         s.default.subscribe("USER_SETTINGS_PROTO_UPDATE", () => {
                             let e = n.CustomStatusSetting.getSetting();
-                            if (null == e) c.stop();
+                            if (null == e) i.stop();
                             else if (null != e.expiresAtMs && "0" !== e.expiresAtMs) {
                                 let a = new Date(Number(e.expiresAtMs)).getTime() - new Date().getTime();
-                                a > 0 ? c.start(a, () => {
+                                a > 0 ? i.start(a, () => {
                                     n.CustomStatusSetting.updateSetting(void 0)
-                                }, !0) : (n.CustomStatusSetting.updateSetting(void 0), c.stop())
-                            } else null != c && c.stop()
+                                }, !0) : (n.CustomStatusSetting.updateSetting(void 0), i.stop())
+                            } else null != i && i.stop()
                         })
                     }
                 }
@@ -678,7 +678,7 @@
                         return n
                     },
                     finishMigration: function() {
-                        return c
+                        return i
                     }
                 });
                 var d = t("913144");
@@ -695,7 +695,7 @@
                     })
                 }
 
-                function c() {
+                function i() {
                     window.location.reload()
                 }
             },
@@ -710,24 +710,24 @@
                     }
                 });
                 var d, s, n = t("446674"),
-                    c = t("913144");
+                    i = t("913144");
                 (d = s || (s = {}))[d.NOT_STARTED = 0] = "NOT_STARTED", d[d.IN_PROGRESS = 1] = "IN_PROGRESS", d[d.FAILED = 2] = "FAILED", d[d.SKIPPED = 3] = "SKIPPED";
-                let i = 0;
+                let c = 0;
                 class r extends n.default.Store {
                     getMigrationStatus() {
-                        return i
+                        return c
                     }
                 }
                 r.displayName = "DomainMigrationStore";
-                var o = new r(c.default, {
+                var o = new r(i.default, {
                     DOMAIN_MIGRATION_START: function() {
-                        i = 1
+                        c = 1
                     },
                     DOMAIN_MIGRATION_FAILURE: function() {
-                        i = 2
+                        c = 2
                     },
                     DOMAIN_MIGRATION_SKIP: function() {
-                        i = 3
+                        c = 3
                     }
                 })
             },
@@ -741,8 +741,8 @@
                 var d = t("884691"),
                     s = t("817792"),
                     n = t("95410"),
-                    c = t("49671"),
-                    i = t("599110"),
+                    i = t("49671"),
+                    c = t("599110"),
                     r = t("50885"),
                     o = t("50361"),
                     f = t("49111");
@@ -754,9 +754,9 @@
 
                 function u() {
                     return d.useEffect(() => {
-                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== n.default.get(s.DOMAIN_MIGRATION_SUCCESS_KEY) && r.default.supportsFeature(f.NativeFeatures.USER_DATA_CACHE) && (o.migrate(), c.default.userDataCache.getCached().then(e => {
+                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== n.default.get(s.DOMAIN_MIGRATION_SUCCESS_KEY) && r.default.supportsFeature(f.NativeFeatures.USER_DATA_CACHE) && (o.migrate(), i.default.userDataCache.getCached().then(e => {
                             if (null == e) {
-                                o.failMigration(), i.default.track(f.AnalyticEvents.DOMAIN_MIGRATED, {
+                                o.failMigration(), c.default.track(f.AnalyticEvents.DOMAIN_MIGRATED, {
                                     success: !1,
                                     has_data: !1
                                 }, {
@@ -774,13 +774,13 @@
                                 try {
                                     n.default.set(a, JSON.parse(t))
                                 } catch (e) {}
-                            })), i.default.track(f.AnalyticEvents.DOMAIN_MIGRATED, {
+                            })), c.default.track(f.AnalyticEvents.DOMAIN_MIGRATED, {
                                 success: !0,
                                 current_is_newer: u,
                                 has_data: t
                             }, {
                                 flush: !0
-                            }), n.default.set(s.DOMAIN_MIGRATION_SUCCESS_KEY, !0), c.default.userDataCache.deleteCache(), o.finishMigration()
+                            }), n.default.set(s.DOMAIN_MIGRATION_SUCCESS_KEY, !0), i.default.userDataCache.deleteCache(), o.finishMigration()
                         }))
                     }, []), null
                 }
@@ -795,8 +795,8 @@
                 }), t("990131"), t("477657"), t("811875"), t("90301"), t("652153"), t("28797"), t("817884"), t("597349"), t("667536"), t("690341"), t("70102"), t("506083");
                 var s = t("627445"),
                     n = t.n(s),
-                    c = t("917351"),
-                    i = t.n(c),
+                    i = t("917351"),
+                    c = t.n(i),
                     r = t("872717"),
                     o = t("784063"),
                     f = t("625454"),
@@ -821,7 +821,7 @@
                 function S() {
                     O.stop(), null != d && (f.default.removeSink(d, T), d = null)
                 }
-                let A = i.debounce((e, a, t, d) => {
+                let A = c.debounce((e, a, t, d) => {
                     N(e, (0, _.encodeStreamKey)({
                         streamType: null != a ? E.StreamTypes.GUILD : E.StreamTypes.CALL,
                         guildId: a,
@@ -839,17 +839,17 @@
                             return ((0, j.isPlatformEmbedded) ? function(e, a) {
                                 let t = (0, o.getVoiceEngine)(),
                                     s = (null == t ? void 0 : t.getNextVideoOutputFrame) != null;
-                                return new Promise((n, c) => {
-                                    let i = e => {
+                                return new Promise((n, i) => {
+                                    let c = e => {
                                         try {
                                             null != e && a(e) && n(e)
                                         } catch (e) {
-                                            c(e)
+                                            i(e)
                                         }
                                     };
-                                    s ? t.getNextVideoOutputFrame(e).then(i, a => {
+                                    s ? t.getNextVideoOutputFrame(e).then(c, a => {
                                         if (d === e) throw a
-                                    }) : f.default.addSink(e, T, i)
+                                    }) : f.default.addSink(e, T, c)
                                 }).finally(() => {
                                     !s && f.default.removeSink(e, T)
                                 })
@@ -859,13 +859,13 @@
                                 let {
                                     width: d,
                                     height: s
-                                } = t.getVideoTracks()[0].getSettings(), n = document.createElement("video"), c = document.createElement("canvas");
-                                n.width = c.width = null != d ? d : 512, n.height = c.height = null != s ? s : 288, n.srcObject = t, n.play();
-                                let i = c.getContext("2d");
+                                } = t.getVideoTracks()[0].getSettings(), n = document.createElement("video"), i = document.createElement("canvas");
+                                n.width = i.width = null != d ? d : 512, n.height = i.height = null != s ? s : 288, n.srcObject = t, n.play();
+                                let c = i.getContext("2d");
                                 return new Promise((e, t) => {
                                     n.ontimeupdate = () => {
-                                        null == i || i.drawImage(n, 0, 0, c.width, c.height);
-                                        let d = null == i ? void 0 : i.getImageData(0, 0, c.width, c.height);
+                                        null == c || c.drawImage(n, 0, 0, i.width, i.height);
+                                        let d = null == c ? void 0 : c.getImageData(0, 0, i.width, i.height);
                                         try {
                                             null != d && a(d) && e(d)
                                         } catch (e) {
@@ -889,12 +889,12 @@
                                 s = e.width * d,
                                 n = e.height * d;
                             w.width = s, w.height = n;
-                            let c = window.document.createElement("canvas"),
-                                i = c.getContext("2d");
-                            c.width = e.width, c.height = e.height;
+                            let i = window.document.createElement("canvas"),
+                                c = i.getContext("2d");
+                            i.width = e.width, i.height = e.height;
                             let r = new ImageData(e.data, e.width, e.height);
-                            return null == i || i.putImageData(r, 0, 0), new Promise(a => {
-                                null == v || v.drawImage(c, 0, 0, e.width, e.height, 0, 0, s, n), a()
+                            return null == c || c.putImageData(r, 0, 0), new Promise(a => {
+                                null == v || v.drawImage(i, 0, 0, e.width, e.height, 0, 0, s, n), a()
                             })
                         }(t);
                         let s = w.toDataURL("image/jpeg");
@@ -931,9 +931,9 @@
                                 channelId: t,
                                 userId: s,
                                 streamId: n,
-                                context: c
+                                context: i
                             } = e;
-                            !(null == n || c !== I.MediaEngineContextTypes.STREAM || s !== h.default.getId() || __OVERLAY__) && (S(), d = n, A(n, a, t, s))
+                            !(null == n || i !== I.MediaEngineContextTypes.STREAM || s !== h.default.getId() || __OVERLAY__) && (S(), d = n, A(n, a, t, s))
                         }), p.default.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
                             let {
                                 videoState: a
@@ -953,8 +953,8 @@
                 var d = t("913144"),
                     s = t("629109"),
                     n = t("990766"),
-                    c = t("605250"),
-                    i = t("660078"),
+                    i = t("605250"),
+                    c = t("660078"),
                     r = t("268491"),
                     o = t("373469"),
                     f = t("271938"),
@@ -980,7 +980,7 @@
                     }
                     _onStreamDirectSource(e, a, t, d) {
                         this.mode = "verbatim-source", this.streamKey = e, this._onDirectorAction({
-                            type: i.StreamDirectorActionType.STREAM,
+                            type: c.StreamDirectorActionType.STREAM,
                             sourceId: a,
                             audioSourceId: t,
                             sound: d
@@ -993,7 +993,7 @@
                                 break;
                             case "verbatim-source":
                                 this._onDirectorAction({
-                                    type: i.StreamDirectorActionType.STOP
+                                    type: c.StreamDirectorActionType.STOP
                                 });
                                 break;
                             default:
@@ -1017,7 +1017,7 @@
                         let a = o.default.getCurrentUserActiveStream(),
                             t = r.default.getState();
                         switch (e.type) {
-                            case i.StreamDirectorActionType.STREAM:
+                            case c.StreamDirectorActionType.STREAM:
                                 if (null != a && (0, n.setStreamPaused)(a, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
                                     let a = e.sourceId.split(":"),
                                         d = a[1];
@@ -1049,10 +1049,10 @@
                                     })
                                 }
                                 break;
-                            case i.StreamDirectorActionType.PAUSE:
+                            case c.StreamDirectorActionType.PAUSE:
                                 null != a && (0, n.setStreamPaused)(a, !0);
                                 break;
-                            case i.StreamDirectorActionType.STOP:
+                            case c.StreamDirectorActionType.STOP:
                                 null != a && (0, u.default)(a);
                                 break;
                             default:
@@ -1077,14 +1077,14 @@
                         }
                     }
                     constructor() {
-                        this.mode = null, this.applications = [], this.director = new i.StreamDirector(e => this._onDirectorAction(e)), d.default.subscribe("STREAM_START", e => {
+                        this.mode = null, this.applications = [], this.director = new c.StreamDirector(e => this._onDirectorAction(e)), d.default.subscribe("STREAM_START", e => {
                             let {
                                 streamType: a,
                                 guildId: t,
                                 channelId: d,
                                 pid: s,
                                 sourceId: n,
-                                audioSourceId: i,
+                                audioSourceId: c,
                                 sound: r
                             } = e, o = f.default.getId(), u = (0, l.encodeStreamKey)({
                                 streamType: a,
@@ -1092,7 +1092,7 @@
                                 channelId: d,
                                 ownerId: o
                             });
-                            null == s != (null == n) ? (null != s && this._onStreamApplication(u, s), null != n && this._onStreamDirectSource(u, n, i, r)) : new(0, c.default)("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(s, ", source-id: ").concat(n, ")"))
+                            null == s != (null == n) ? (null != s && this._onStreamApplication(u, s), null != n && this._onStreamDirectSource(u, n, c, r)) : new(0, i.default)("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(s, ", source-id: ").concat(n, ")"))
                         }), d.default.subscribe("STREAM_DELETE", e => {
                             let {
                                 streamKey: a
@@ -1139,8 +1139,8 @@
                 var d = t("171718"),
                     s = t("913144"),
                     n = t("316272"),
-                    c = t("773336");
-                class i extends n.default {
+                    i = t("773336");
+                class c extends n.default {
                     _initialize() {
                         s.default.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
                     }
@@ -1149,11 +1149,11 @@
                     }
                     constructor(...e) {
                         super(...e), this.handleConnectionOpen = e => {
-                            ((0, c.isWindows)() || (0, c.isMac)()) && d.default.encryptAndStoreTokens()
+                            ((0, i.isWindows)() || (0, i.isMac)()) && d.default.encryptAndStoreTokens()
                         }
                     }
                 }
-                var r = new i
+                var r = new c
             },
             607542: function(e, a, t) {
                 "use strict";
@@ -1186,8 +1186,8 @@
                 t("884691");
                 var s = t("597755"),
                     n = t.n(s),
-                    c = t("77078"),
-                    i = t("913144"),
+                    i = t("77078"),
+                    c = t("913144"),
                     r = t("135230"),
                     o = t("316272"),
                     f = t("701909"),
@@ -1195,10 +1195,10 @@
                     u = t("782340");
                 class p extends o.default {
                     _initialize() {
-                        i.default.subscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
+                        c.default.subscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
                     }
                     _terminate() {
-                        i.default.unsubscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
+                        c.default.unsubscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
                     }
                     constructor(...e) {
                         super(...e), this.handlePermission = e => {
@@ -1208,7 +1208,7 @@
                             } = e, s = "Firefox" === n.name ? l.HelpdeskArticles.ENABLE_MIC_FIREFOX : l.HelpdeskArticles.ENABLE_MIC_CHROME;
                             if (!t) {
                                 let e = "audio" !== a;
-                                (0, c.openModal)(a => (0, d.jsx)(r.default, {
+                                (0, i.openModal)(a => (0, d.jsx)(r.default, {
                                     title: e ? u.default.Messages.NO_CAMERA_TITLE : u.default.Messages.NO_MIC_TITLE,
                                     body: e ? u.default.Messages.NO_CAMERA_BODY : u.default.Messages.NO_MIC_BODY,
                                     onConfirm: () => window.open(f.default.getArticleURL(s), "_blank"),
@@ -1232,8 +1232,8 @@
                 t("884691");
                 var s = t("414456"),
                     n = t.n(s),
-                    c = t("77078"),
-                    i = t("216422"),
+                    i = t("77078"),
+                    c = t("216422"),
                     r = t("782340"),
                     o = t("881609");
 
@@ -1242,11 +1242,11 @@
                         text: a = r.default.Messages.PROFILE_CUSTOMIZATION_NITRO_ICON_TOOLTIP,
                         className: t
                     } = e;
-                    return (0, d.jsx)(c.Tooltip, {
+                    return (0, d.jsx)(i.Tooltip, {
                         text: a,
-                        children: e => (0, d.jsx)(c.Clickable, {
+                        children: e => (0, d.jsx)(i.Clickable, {
                             ...e,
-                            children: (0, d.jsx)(i.default, {
+                            children: (0, d.jsx)(c.default, {
                                 className: n(o.nitroWheel, t)
                             })
                         })
@@ -1257,14 +1257,14 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     default: function() {
-                        return i
+                        return c
                     }
                 });
                 var d = t("803182"),
                     s = t("308503"),
                     n = t("49111");
 
-                function c(e) {
+                function i(e) {
                     let a = (0, d.matchPath)(null != e ? e : "", {
                         path: n.Routes.CHANNEL(":guildId", ":channelId?", ":messageId?")
                     });
@@ -1289,7 +1289,7 @@
                         channelId: null
                     }
                 }
-                var i = (0, s.default)(e => ({
+                var c = (0, s.default)(e => ({
                     path: null,
                     basePath: "/",
                     guildId: null,
@@ -1298,7 +1298,7 @@
                         let {
                             guildId: t,
                             channelId: d
-                        } = c(a);
+                        } = i(a);
                         e({
                             path: a,
                             guildId: t,
@@ -1309,7 +1309,7 @@
                         let {
                             guildId: t,
                             channelId: d
-                        } = c(a);
+                        } = i(a);
                         e({
                             path: null,
                             guildId: t,
@@ -1329,8 +1329,8 @@
                 var d = t("147369"),
                     s = t("803182"),
                     n = t("619443"),
-                    c = t("21121"),
-                    i = t("693051"),
+                    i = t("21121"),
+                    c = t("693051"),
                     r = t("607542"),
                     o = t("153498"),
                     f = t("934306"),
@@ -1349,7 +1349,7 @@
                         convertRouteToNavigation(e, a) {
                             let {
                                 pathname: t
-                            } = e, d = (0, i.getRootNavigationRef)(), n = (0, c.isInMainTabsExperiment)();
+                            } = e, d = (0, c.getRootNavigationRef)(), n = (0, i.isInMainTabsExperiment)();
                             if (null != d && d.isReady()) {
                                 if (n && (0, f.isSplitMessagesTab)() && t === b.Routes.ME) {
                                     (0, o.navigateToRootTab)({
@@ -1369,7 +1369,7 @@
                                     let a = (0, s.matchPath)(t, {
                                             path: b.Routes.CHANNEL(":guildId", ":channelId?", ":messageId?")
                                         }),
-                                        c = (0, s.matchPath)(t, {
+                                        i = (0, s.matchPath)(t, {
                                             path: "".concat(b.Routes.CHANNEL(":guildId", ":channelId?")).concat(b.Routes.VOICE_CHAT_CHANNEL_PARTIAL(":voiceGuildId", ":voiceChannelId", ":voiceMessageId?"))
                                         });
                                     if (!n) {
@@ -1378,12 +1378,12 @@
                                         (null == e ? void 0 : null === (p = e.routes) || void 0 === p ? void 0 : null === (u = p[0]) || void 0 === u ? void 0 : u.name) !== "panels" && (0, o.resetToPanelsUI)();
                                         return
                                     }
-                                    if (null != c) {
+                                    if (null != i) {
                                         let {
                                             voiceGuildId: a,
                                             voiceChannelId: t,
                                             voiceMessageId: d
-                                        } = c.params;
+                                        } = i.params;
                                         (0, l.isOldVoiceUIEnabled)() && (0, o.navigateToChannel)({
                                             channelId: t,
                                             guildId: a,
@@ -1519,16 +1519,16 @@
                 var d = t("37983"),
                     s = t("884691"),
                     n = t("703809"),
-                    c = t("90915"),
-                    i = t("1501"),
+                    i = t("90915"),
+                    c = t("1501"),
                     r = t("393414");
 
                 function o(e) {
                     let {
                         children: a
                     } = e;
-                    return s.useEffect(() => (i.default.initialize(), () => i.default.cleanup()), []), (0, d.jsx)(n.HelmetProvider, {
-                        children: (0, d.jsx)(c.Router, {
+                    return s.useEffect(() => (c.default.initialize(), () => c.default.cleanup()), []), (0, d.jsx)(n.HelmetProvider, {
+                        children: (0, d.jsx)(i.Router, {
                             history: (0, r.getHistory)(),
                             children: a
                         })
@@ -1542,12 +1542,12 @@
                         return s
                     },
                     StreamDirector: function() {
-                        return c
+                        return i
                     }
                 });
                 var d, s, n = t("242761");
                 (d = s || (s = {})).STREAM = "stream", d.PAUSE = "pause", d.STOP = "stop";
-                class c {
+                class i {
                     onStreamBegin(e, a) {
                         let t = (0, n.getInitialStreamTarget)(e, a);
                         null == t || null == t.windowHandle ? this.callback({
@@ -1609,18 +1609,18 @@
                         return s
                     },
                     getStreamTarget: function() {
-                        return c
+                        return i
                     }
                 }), t("222007");
                 var d = t("449008");
 
                 function s(e, a) {
                     let t = e.find(e => e.processId === a);
-                    return null == t ? null : c(e, t)
+                    return null == t ? null : i(e, t)
                 }
                 let n = "356869127241072640";
 
-                function c(e, a) {
+                function i(e, a) {
                     var t;
                     if (null == a) return null;
                     if (a.applicationId === n) return function(e, a) {
@@ -1630,26 +1630,26 @@
                         return void 0 !== s ? s : d.length > 0 ? d[0] : null
                     }(e, a);
                     let s = new Map(e.map(e => [e.processId, e])),
-                        c = a.processPath.map(e => s.get(e)).find(e => null != e);
-                    if (null == c) return null;
+                        i = a.processPath.map(e => s.get(e)).find(e => null != e);
+                    if (null == i) return null;
                     let r = e.map(e => {
                         let a = e.processPath.findIndex(e => s.has(e));
                         return -1 === a ? null : {
                             application: e,
                             rootedPath: e.processPath.slice(a)
                         }
-                    }).filter(d.isNotNullish).filter(e => e.rootedPath[0] === c.processId);
+                    }).filter(d.isNotNullish).filter(e => e.rootedPath[0] === i.processId);
                     r.sort((e, a) => {
                         let t = e.rootedPath.map(e => s.get(e)).filter(e => null != e && null != e.windowHandle),
                             d = a.rootedPath.map(e => s.get(e)).filter(e => null != e && null != e.windowHandle),
-                            n = i(d, t);
-                        return 0 !== n ? n : i(a.rootedPath, e.rootedPath)
+                            n = c(d, t);
+                        return 0 !== n ? n : c(a.rootedPath, e.rootedPath)
                     });
                     let o = null !== (t = r.find(e => null != e.application.windowHandle)) && void 0 !== t ? t : r[0];
                     return null == o ? null : o.application
                 }
 
-                function i(e, a) {
+                function c(e, a) {
                     return e.length - a.length
                 }
             },
@@ -1663,8 +1663,8 @@
                 var d = t("714617"),
                     s = t.n(d),
                     n = t("917351"),
-                    c = t.n(n),
-                    i = t("913144"),
+                    i = t.n(n),
+                    c = t("913144"),
                     r = t("629109"),
                     o = t("987317"),
                     f = t("316272"),
@@ -1681,10 +1681,10 @@
                     I = t("782340");
                 class T extends f.default {
                     _initialize() {
-                        this.isSupported && (i.default.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), i.default.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), i.default.subscribe("START_SESSION", this.handleViewUpdate), i.default.subscribe("CONNECTION_OPEN", this.handleViewUpdate), i.default.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), i.default.subscribe("CALL_CREATE", this.handleViewUpdate), i.default.subscribe("CALL_UPDATE", this.handleViewUpdate), i.default.subscribe("CALL_DELETE", this.handleViewUpdate), i.default.subscribe("CHANNEL_DELETE", this.handleViewUpdate), i.default.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), i.default.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), i.default.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), i.default.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), i.default.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), E.default.on("THUMBAR_BUTTONS_CLICKED", (e, a) => this.buttonClicked(a)))
+                        this.isSupported && (c.default.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), c.default.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), c.default.subscribe("START_SESSION", this.handleViewUpdate), c.default.subscribe("CONNECTION_OPEN", this.handleViewUpdate), c.default.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), c.default.subscribe("CALL_CREATE", this.handleViewUpdate), c.default.subscribe("CALL_UPDATE", this.handleViewUpdate), c.default.subscribe("CALL_DELETE", this.handleViewUpdate), c.default.subscribe("CHANNEL_DELETE", this.handleViewUpdate), c.default.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), c.default.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), c.default.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), c.default.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), c.default.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), E.default.on("THUMBAR_BUTTONS_CLICKED", (e, a) => this.buttonClicked(a)))
                     }
                     _terminate() {
-                        this.isSupported && (i.default.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), i.default.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), i.default.unsubscribe("START_SESSION", this.handleViewUpdate), i.default.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), i.default.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), i.default.unsubscribe("CALL_CREATE", this.handleViewUpdate), i.default.unsubscribe("CALL_UPDATE", this.handleViewUpdate), i.default.unsubscribe("CALL_DELETE", this.handleViewUpdate), i.default.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), i.default.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), i.default.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), i.default.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), i.default.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), i.default.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate))
+                        this.isSupported && (c.default.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), c.default.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), c.default.unsubscribe("START_SESSION", this.handleViewUpdate), c.default.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), c.default.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), c.default.unsubscribe("CALL_CREATE", this.handleViewUpdate), c.default.unsubscribe("CALL_UPDATE", this.handleViewUpdate), c.default.unsubscribe("CALL_DELETE", this.handleViewUpdate), c.default.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), c.default.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), c.default.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), c.default.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), c.default.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), c.default.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate))
                     }
                     setThumbarButtons(e) {
                         !s(this.prevButtons, e) && (this.prevButtons = e, E.default.setThumbarButtons(e))
@@ -1703,7 +1703,7 @@
                                 return
                             }
                             this.callbackActions[e.buttonName]()
-                        }, this.handleViewUpdate = c.debounce(() => {
+                        }, this.handleViewUpdate = i.debounce(() => {
                             let e = m.default.getVoiceChannelId();
                             if (null == e) {
                                 this.setThumbarButtons([]);
@@ -1714,9 +1714,9 @@
                                 d = j.default.isVideoEnabled(),
                                 s = j.default.isVideoAvailable(),
                                 n = h.default.getChannel(e),
-                                c = null == n || (0, u.getVideoPermission)(n),
+                                i = null == n || (0, u.getVideoPermission)(n),
                                 {
-                                    reachedLimit: i,
+                                    reachedLimit: c,
                                     limit: r
                                 } = null != n ? (0, l.getChannelVideoLimit)(n) : {
                                     reachedLimit: void 0,
@@ -1727,9 +1727,9 @@
                                     join: !1,
                                     channel: n,
                                     cameraUnavailable: !s,
-                                    hasPermission: c,
+                                    hasPermission: i,
                                     channelLimit: r,
-                                    channelLimitReached: i
+                                    channelLimitReached: c
                                 });
                             this.setThumbarButtons([{
                                 name: E.ThumbarButtonName.VIDEO,
@@ -1756,7 +1756,7 @@
             },
             889810: function(e, a, t) {
                 "use strict";
-                var d, s, n, c, i;
+                var d, s, n, i, c;
 
                 function r() {
                     return {
@@ -1779,7 +1779,7 @@
                     default: function() {
                         return n
                     }
-                }), (c = d || (d = {})).CHECKING_FOR_UPDATES = "checking-for-updates", c.INSTALLED_MODULE = "installed-module", c.UPDATE_CHECK_FINISHED = "update-check-finished", c.DOWNLOADING_MODULE = "downloading-module", c.DOWNLOADING_MODULE_PROGRESS = "downloading-module-progress", c.DOWNLOADING_MODULES_FINISHED = "downloading-modules-finished", c.UPDATE_MANUALLY = "update-manually", c.DOWNLOADED_MODULE = "downloaded-module", c.INSTALLING_MODULES_FINISHED = "installing-modules-finished", c.INSTALLING_MODULE = "installing-module", c.INSTALLING_MODULE_PROGRESS = "installing-module-progress", c.NO_PENDING_UPDATES = "no-pending-updates", (i = s || (s = {})).CLOUD_SYNC = "discord_cloudsync", i.DESKTOP_CORE = "discord_desktop_core", i.DISPATCH = "discord_dispatch", i.ERLPACK = "discord_erlpack", i.GAME_UTILS = "discord_game_utils", i.HOOK = "discord_hook", i.KRISP = "discord_krisp", i.MEDIA = "discord_media", i.MODULES = "discord_modules", i.OVERLAY2 = "discord_overlay2", i.RPC = "discord_rpc", i.SPELLCHECK = "discord_spellcheck", i.UPDATER_BOOTSTRAP = "discord_updater_bootstrap", i.UTILS = "discord_utils", i.VIGILANTE = "discord_vigilante", i.VOICE = "discord_voice", i.ZSTD = "discord_zstd", n = class {
+                }), (i = d || (d = {})).CHECKING_FOR_UPDATES = "checking-for-updates", i.INSTALLED_MODULE = "installed-module", i.UPDATE_CHECK_FINISHED = "update-check-finished", i.DOWNLOADING_MODULE = "downloading-module", i.DOWNLOADING_MODULE_PROGRESS = "downloading-module-progress", i.DOWNLOADING_MODULES_FINISHED = "downloading-modules-finished", i.UPDATE_MANUALLY = "update-manually", i.DOWNLOADED_MODULE = "downloaded-module", i.INSTALLING_MODULES_FINISHED = "installing-modules-finished", i.INSTALLING_MODULE = "installing-module", i.INSTALLING_MODULE_PROGRESS = "installing-module-progress", i.NO_PENDING_UPDATES = "no-pending-updates", (c = s || (s = {})).CLOUD_SYNC = "discord_cloudsync", c.DESKTOP_CORE = "discord_desktop_core", c.DISPATCH = "discord_dispatch", c.ERLPACK = "discord_erlpack", c.GAME_UTILS = "discord_game_utils", c.HOOK = "discord_hook", c.KRISP = "discord_krisp", c.MEDIA = "discord_media", c.MODULES = "discord_modules", c.OVERLAY2 = "discord_overlay2", c.RPC = "discord_rpc", c.SPELLCHECK = "discord_spellcheck", c.UPDATER_BOOTSTRAP = "discord_updater_bootstrap", c.UTILS = "discord_utils", c.VIGILANTE = "discord_vigilante", c.VOICE = "discord_voice", c.ZSTD = "discord_zstd", n = class {
                     handleDownloadingModule(e) {
                         if (!o(e.name)) {
                             if (null != this._downloadingModules[e.name]) {
@@ -1816,8 +1816,8 @@
                             d = "".concat(t, "_download_ms_").concat(e.name),
                             s = "".concat(t, "_bytes_").concat(e.name),
                             n = Number((BigInt(e.now) - a.startTime + BigInt(999999)) / BigInt(1e6)),
-                            c = !1 === e.receivedBytes ? 0 : e.receivedBytes;
-                        a.foreground ? (this._report.foreground_download_ms_total += n, this._report.foreground_bytes_total += c) : (this._report.background_download_ms_total += n, this._report.background_bytes_total += c), this.incrementReportField(d, n), this.incrementReportField(s, c), delete this._downloadingModules[e.name]
+                            i = !1 === e.receivedBytes ? 0 : e.receivedBytes;
+                        a.foreground ? (this._report.foreground_download_ms_total += n, this._report.foreground_bytes_total += i) : (this._report.background_download_ms_total += n, this._report.background_bytes_total += i), this.incrementReportField(d, n), this.incrementReportField(s, i), delete this._downloadingModules[e.name]
                     }
                     handleInstallingModule(e) {
                         if (!o(e.name)) {
@@ -1841,8 +1841,8 @@
                             d = "".concat(t, "_install_ms_").concat(e.name),
                             s = "min_version_".concat(e.name),
                             n = "max_version_".concat(e.name),
-                            c = Number((BigInt(e.now) - a.startTime + BigInt(999999)) / BigInt(1e6));
-                        a.foreground ? this._report.foreground_install_ms_total += c : this._report.background_install_ms_total += c, this.incrementReportField(d, c), this.setReportFieldMinimum(s, a.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(n, a.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
+                            i = Number((BigInt(e.now) - a.startTime + BigInt(999999)) / BigInt(1e6));
+                        a.foreground ? this._report.foreground_install_ms_total += i : this._report.background_install_ms_total += i, this.incrementReportField(d, i), this.setReportFieldMinimum(s, a.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(n, a.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
                     }
                     trackEvent(e) {
                         switch (e.type) {
@@ -1883,18 +1883,18 @@
                 var d = t("316272"),
                     s = t("599110"),
                     n = t("773336"),
-                    c = t("50885"),
-                    i = t("889810"),
+                    i = t("50885"),
+                    c = t("889810"),
                     r = t("49111");
                 class o extends d.default {
                     _initialize() {
-                        n.isPlatformEmbedded && (c.default.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), c.default.on("MODULE_INSTALLED", (e, a, t) => this.processModuleEvents()), c.default.on("UPDATER_HISTORY_RESPONSE", (e, a) => {
+                        n.isPlatformEmbedded && (i.default.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), i.default.on("MODULE_INSTALLED", (e, a, t) => this.processModuleEvents()), i.default.on("UPDATER_HISTORY_RESPONSE", (e, a) => {
                             this._handleHistoryResponse(a)
                         }), this.processModuleEvents())
                     }
                     _terminate() {}
                     processModuleEvents() {
-                        c.default.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
+                        i.default.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
                     }
                     _handleHistoryResponse(e) {
                         null != e && (e.forEach(e => {
@@ -1902,7 +1902,7 @@
                         }), this._tracker.submissionReady() && (s.default.track(r.AnalyticEvents.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset()))
                     }
                     constructor(...e) {
-                        super(...e), this._tracker = new i.default
+                        super(...e), this._tracker = new c.default
                     }
                 }
                 var f = new o
@@ -1911,7 +1911,7 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     default: function() {
-                        return i
+                        return c
                     },
                     getChannelVideoLimit: function() {
                         return r
@@ -1920,16 +1920,16 @@
                 var d = t("446674"),
                     s = t("305961"),
                     n = t("316133"),
-                    c = t("49111");
+                    i = t("49111");
 
-                function i(e) {
+                function c(e) {
                     return (0, d.useStateFromStoresObject)([n.default, s.default], () => {
                         let a = n.default.countVoiceStatesForChannel(e.id),
                             t = s.default.getGuild(e.getGuildId());
                         return null == t ? {
                             reachedLimit: !1,
                             limit: -1
-                        } : e.type === c.ChannelTypes.GUILD_STAGE_VOICE ? {
+                        } : e.type === i.ChannelTypes.GUILD_STAGE_VOICE ? {
                             reachedLimit: a > t.maxStageVideoChannelUsers,
                             limit: t.maxStageVideoChannelUsers
                         } : {
@@ -1945,7 +1945,7 @@
                     return null == t ? {
                         reachedLimit: !1,
                         limit: -1
-                    } : e.type === c.ChannelTypes.GUILD_STAGE_VOICE ? {
+                    } : e.type === i.ChannelTypes.GUILD_STAGE_VOICE ? {
                         reachedLimit: a > t.maxStageVideoChannelUsers,
                         limit: t.maxStageVideoChannelUsers
                     } : {
@@ -1958,16 +1958,16 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     default: function() {
-                        return i
+                        return c
                     }
                 });
                 var d = t("37983");
                 t("884691");
                 var s = t("77078"),
                     n = t("845579"),
-                    c = t("49111");
+                    i = t("49111");
 
-                function i(e, a) {
+                function c(e, a) {
                     n.AlwaysPreviewVideo.getSetting() ? (0, s.openModalLazy)(async () => {
                         let {
                             default: a
@@ -1979,7 +1979,7 @@
                         })
                     }, {
                         modalKey: "camera-preview",
-                        contextKey: a === c.AppContext.POPOUT ? s.POPOUT_MODAL_CONTEXT : s.DEFAULT_MODAL_CONTEXT
+                        contextKey: a === i.AppContext.POPOUT ? s.POPOUT_MODAL_CONTEXT : s.DEFAULT_MODAL_CONTEXT
                     }) : null == e || e()
                 }
             },
@@ -2002,14 +2002,14 @@
                 var d = t("597755"),
                     s = t.n(d),
                     n = t("815157"),
-                    c = t("271938"),
-                    i = t("49111");
+                    i = t("271938"),
+                    c = t("49111");
                 let r = "linux";
 
                 function o(e) {
                     let a = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                         t = arguments.length > 2 ? arguments[2] : void 0;
-                    return "".concat(i.DownloadLinks.DESKTOP).concat(a ? "/ptb" : "", "?platform=").concat(e).concat(null != t ? "&format=".concat(t) : "")
+                    return "".concat(c.DownloadLinks.DESKTOP).concat(a ? "/ptb" : "", "?platform=").concat(e).concat(null != t ? "&format=".concat(t) : "")
                 }
 
                 function f() {
@@ -2037,14 +2037,14 @@
                         case "iOS":
                             return (0, n.default)(null != d ? d : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
                                 utmSource: e,
-                                fingerprint: c.default.getFingerprint(),
+                                fingerprint: i.default.getFingerprint(),
                                 attemptId: (0, n.generateAttemptId)()
                             });
                         case "Android":
                             return (0, n.default)(null != d ? d : "https://play.google.com/store/apps/details", {
                                 utmSource: e,
                                 id: "com.discord",
-                                fingerprint: c.default.getFingerprint(),
+                                fingerprint: i.default.getFingerprint(),
                                 attemptId: (0, n.generateAttemptId)()
                             });
                         default:
@@ -2062,18 +2062,18 @@
                 var d = t("393414"),
                     s = t("227602"),
                     n = t("773336"),
-                    c = t("50885"),
-                    i = t("49111");
+                    i = t("50885"),
+                    c = t("49111");
 
                 function r(e, a) {
-                    return !(e === i.NavigateEventSource.BROWSER && s.default.hasKeybind(i.KeyboardDeviceTypes.MOUSE_BUTTON, a)) && !0
+                    return !(e === c.NavigateEventSource.BROWSER && s.default.hasKeybind(c.KeyboardDeviceTypes.MOUSE_BUTTON, a)) && !0
                 }
                 var o = new class e {
                     initialize() {
-                        (0, n.isDesktop)() && (c.default.on("NAVIGATE_BACK", (e, a) => {
-                            r(a, i.MouseKeyCodes.Back) && (0, d.back)()
-                        }), c.default.on("NAVIGATE_FORWARD", (e, a) => {
-                            r(a, i.MouseKeyCodes.Forward) && (0, d.forward)()
+                        (0, n.isDesktop)() && (i.default.on("NAVIGATE_BACK", (e, a) => {
+                            r(a, c.MouseKeyCodes.Back) && (0, d.back)()
+                        }), i.default.on("NAVIGATE_FORWARD", (e, a) => {
+                            r(a, c.MouseKeyCodes.Forward) && (0, d.forward)()
                         }))
                     }
                 }
@@ -2082,7 +2082,7 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     getOpenAppFromEmailDestinations: function() {
-                        return c
+                        return i
                     }
                 }), t("511434"), t("313619"), t("654714"), t("287168"), t("956660"), t("222007");
                 var d = t("730290"),
@@ -2096,7 +2096,7 @@
                             return null
                         }
                     },
-                    c = e => {
+                    i = e => {
                         let a = (0, d.parse)(e);
                         return {
                             desktop: n(a.desktop_link),
@@ -2118,20 +2118,20 @@
                 var d = t("627445"),
                     s = t.n(d),
                     n = t("773179"),
-                    c = t.n(n),
-                    i = t("353927");
+                    i = t.n(n),
+                    c = t("353927");
 
                 function r(e, a, t) {
                     let d = window.DiscordNative;
-                    s(null != d, "Can't get desktop sources outside of native app"), a = null != a ? a : [i.DesktopSources.WINDOW, i.DesktopSources.SCREEN], t = null != t ? t : {
+                    s(null != d, "Can't get desktop sources outside of native app"), a = null != a ? a : [c.DesktopSources.WINDOW, c.DesktopSources.SCREEN], t = null != t ? t : {
                         width: 150,
                         height: 150
                     };
                     let n = [];
-                    return a.includes(i.DesktopSources.SCREEN) && e.supports(i.Features.SCREEN_PREVIEWS) && (n.push(e.getScreenPreviews(t.width, t.height)), a = a.filter(e => e !== i.DesktopSources.SCREEN)), a.includes(i.DesktopSources.WINDOW) && e.supports(i.Features.WINDOW_PREVIEWS) && (n.push(e.getWindowPreviews(t.width, t.height)), a = a.filter(e => e !== i.DesktopSources.WINDOW)), 0 !== a.length && n.push(d.desktopCapture.getDesktopCaptureSources({
+                    return a.includes(c.DesktopSources.SCREEN) && e.supports(c.Features.SCREEN_PREVIEWS) && (n.push(e.getScreenPreviews(t.width, t.height)), a = a.filter(e => e !== c.DesktopSources.SCREEN)), a.includes(c.DesktopSources.WINDOW) && e.supports(c.Features.WINDOW_PREVIEWS) && (n.push(e.getWindowPreviews(t.width, t.height)), a = a.filter(e => e !== c.DesktopSources.WINDOW)), 0 !== a.length && n.push(d.desktopCapture.getDesktopCaptureSources({
                         types: a,
                         thumbnailSize: t
-                    })), Promise.all(n).then(e => c.flatten(e))
+                    })), Promise.all(n).then(e => i.flatten(e))
                 }
             }
         },
@@ -2188,7 +2188,7 @@
         136137: ["22839"],
         136394: ["14033"],
         140092: ["97837"],
-        142047: ["56287", "67031"],
+        142047: ["67714", "63930"],
         143416: ["shared", "app", "92336"],
         143909: ["shared", "app", "18407", "75676", "44893", "70077"],
         144295: ["app", "53509", "81814"],
@@ -2206,7 +2206,7 @@
         166452: ["app", "21396", "14875", "31717", "48590", "37580", "47146", "49191", "28473", "77015", "70201", "35090", "9024", "39771"],
         166505: ["37628"],
         167573: ["shared", "app", "77015", "86612"],
-        168003: ["shared", "app", "95569", "39589", "20117", "77015", "12446", "56854", "58468", "65520", "12246", "21936", "7704", "82082", "41490", "49578", "84537", "76656", "81161", "66473", "56287", "5023", "11411", "28051"],
+        168003: ["shared", "app", "95569", "39589", "20117", "77015", "12446", "56854", "58468", "65520", "12246", "21936", "7704", "82082", "41490", "49578", "84537", "76656", "81161", "66473", "67714", "10524", "11411", "29256"],
         168984: ["shared", "app", "31669"],
         169574: ["42490"],
         170206: ["73140"],
@@ -2251,7 +2251,7 @@
         225629: ["22843", "25285"],
         225936: ["app", "82374", "81467"],
         227938: ["81480"],
-        229233: ["shared", "app", "47470", "84537", "55639", "76140", "23992", "18409", "56287", "69628", "5023", "62704", "4359", "19081", "16263"],
+        229233: ["shared", "app", "47470", "84537", "55639", "76140", "23992", "18409", "69628", "10524", "62704", "4359", "19081", "16263"],
         229798: ["app", "11048"],
         232006: ["15128"],
         236840: ["50454"],
@@ -2308,7 +2308,7 @@
         323518: ["shared", "app", "21936", "18409", "27545"],
         324202: ["67602"],
         326778: ["25915"],
-        327241: ["shared", "app", "95569", "39589", "20117", "47470", "13942", "77015", "12446", "56854", "58468", "65520", "12246", "21936", "7704", "82082", "41490", "51077", "49578", "84537", "76656", "81161", "66473", "53181", "67731", "75939", "64823", "96634", "61864", "27660", "55639", "51719", "64612", "32656", "70048", "95664", "76140", "23992", "18409", "56287", "14694", "69628", "5023", "62704", "70941", "4359", "40958", "19081", "53526", "60171", "38429", "64072", "73641", "11411", "26080"],
+        327241: ["shared", "app", "95569", "39589", "20117", "47470", "13942", "77015", "12446", "56854", "58468", "65520", "12246", "21936", "7704", "82082", "41490", "51077", "49578", "84537", "76656", "81161", "66473", "53181", "67731", "75939", "64823", "96634", "61864", "27660", "55639", "51719", "64612", "67714", "32656", "70048", "95664", "76140", "23992", "18409", "14694", "69628", "10524", "62704", "70941", "4359", "40958", "19081", "53526", "60171", "38429", "64072", "73641", "11411", "26080"],
         328770: ["26427"],
         330230: ["app", "53561"],
         331761: ["app", "25905"],
@@ -2365,7 +2365,7 @@
         398296: ["app", "73393"],
         399758: ["shared", "app", "45148", "65000", "38783", "17820", "31897", "55695", "64999", "4714", "67079", "67615", "39179", "18814", "1095", "98086", "79106", "26230", "27043", "41039", "48059", "9711"],
         403130: ["23414", "37126"],
-        404247: ["shared", "app", "85568", "92130", "28473", "78995", "44504", "23497", "80803", "56854", "58468", "65520", "45978", "85740", "88081", "51077", "49578", "11960", "28411", "83328", "18120", "53181", "64814", "75939", "64823", "96634", "87474", "27660", "44893", "51719", "32656", "70048", "95664", "34995", "40751", "40958", "81423", "38429", "11626", "79193", "96003"],
+        404247: ["shared", "app", "85568", "92130", "28473", "78995", "44504", "23497", "80803", "56854", "58468", "65520", "45978", "85740", "88081", "51077", "49578", "11960", "28411", "83328", "18120", "53181", "64814", "75939", "64823", "96634", "87474", "27660", "44893", "51719", "67714", "32656", "70048", "95664", "34995", "40751", "40958", "81423", "38429", "11626", "79193", "96003"],
         404567: ["18868"],
         405314: ["shared", "app", "98106", "95569", "39589", "6734", "17898", "77015", "12446", "23862", "12246", "21936", "82082", "41490", "15556", "24439", "76656", "86213", "53265", "3208", "80813", "27083", "77655", "60932", "37656", "71518", "40644"],
         406784: ["app", "21396", "14875", "31717", "48590", "37580", "47146", "49191", "28473", "77015", "70201", "35090", "99373"],
@@ -2419,7 +2419,7 @@
         471085: ["app", "78075"],
         473070: ["app", "97203"],
         475800: ["92951"],
-        476427: ["shared", "app", "95569", "39589", "85568", "92130", "26730", "69892", "28473", "78995", "44504", "23497", "12446", "80803", "56854", "58468", "65520", "23862", "12246", "21936", "45978", "85740", "41490", "88081", "51077", "49578", "84537", "76656", "11960", "28411", "66473", "83328", "18120", "53181", "67731", "64814", "75939", "64823", "96634", "61864", "87474", "27660", "44893", "51719", "32656", "70048", "95664", "76140", "23992", "56287", "14694", "50099", "93510", "5023", "62704", "34995", "4359", "9759", "40751", "40958", "19081", "81423", "52033", "60171", "38429", "64072", "73641", "25923", "60031"],
+        476427: ["shared", "app", "95569", "39589", "85568", "92130", "26730", "69892", "28473", "78995", "44504", "23497", "12446", "80803", "56854", "58468", "65520", "23862", "12246", "21936", "45978", "85740", "41490", "88081", "51077", "49578", "84537", "76656", "11960", "28411", "66473", "83328", "18120", "53181", "67731", "64814", "75939", "64823", "96634", "61864", "87474", "27660", "44893", "51719", "67714", "32656", "70048", "95664", "76140", "23992", "14694", "50099", "10524", "93510", "62704", "34995", "4359", "9759", "40751", "40958", "19081", "81423", "52033", "60171", "38429", "64072", "73641", "25923", "60031"],
         478754: ["94835"],
         479160: ["27665"],
         479273: ["app", "94548"],
@@ -2614,7 +2614,7 @@
         745544: ["app", "7884"],
         745705: ["app", "77132"],
         747194: ["shared", "app", "65568"],
-        747593: ["shared", "app", "18407", "75676", "36685"],
+        747593: ["shared", "app", "18407", "75676", "67714", "36685"],
         7476: ["app", "23069"],
         748168: ["app", "53159"],
         748375: ["58409", "3341"],
@@ -2638,7 +2638,7 @@
         775195: ["app", "7114"],
         777640: ["69076"],
         777924: ["app", "64263"],
-        779020: ["shared", "app", "95569", "39589", "85568", "92130", "69892", "23351", "28473", "78995", "44504", "23497", "12446", "80803", "56854", "58468", "65520", "23862", "12246", "21936", "45978", "85740", "41490", "88081", "51077", "49578", "84537", "76656", "11960", "28411", "66473", "83328", "18120", "53181", "67731", "64814", "75939", "64823", "96634", "61864", "87474", "27660", "44893", "51719", "32656", "70048", "95664", "76140", "23992", "56287", "14694", "50099", "93510", "5023", "62704", "34995", "4359", "9759", "40751", "40958", "19081", "81423", "52033", "60171", "38429", "64072", "46961", "11626", "73641", "43426", "25923", "79193", "46743", "66484", "14511", "26673"],
+        779020: ["shared", "app", "95569", "39589", "85568", "92130", "69892", "23351", "28473", "78995", "44504", "23497", "12446", "80803", "56854", "58468", "65520", "23862", "12246", "21936", "45978", "85740", "41490", "88081", "51077", "49578", "84537", "76656", "11960", "28411", "66473", "83328", "18120", "53181", "67731", "64814", "75939", "64823", "96634", "61864", "87474", "27660", "44893", "51719", "67714", "32656", "70048", "95664", "76140", "23992", "14694", "50099", "10524", "93510", "62704", "34995", "4359", "9759", "40751", "40958", "19081", "81423", "52033", "60171", "38429", "64072", "46961", "11626", "73641", "43426", "25923", "79193", "46743", "66484", "14511", "26673"],
         783165: ["app", "68269"],
         783260: ["58409", "68638"],
         787598: ["shared", "app", "15556", "86213", "3208", "27083", "13638", "79017"],
@@ -2785,6 +2785,7 @@
         return ({
             10093: "14609b11a998600fc9a0.js",
             10094: "a78d3168ab6e1d6765e1.js",
+            10524: "85f92018e287030d6b3d.js",
             1056: "60eb1de2cb34a6861e69.js",
             10656: "597b573d6065a908af10.js",
             11020: "6f33e1e19f162cdad6a7.js",
@@ -2933,7 +2934,7 @@
             26567: "0363606fa0674ed85a84.js",
             26574: "069fd8c8b4695c1c0787.js",
             26594: "6308b0c49b90638147ea.js",
-            26673: "8acbd2e6460eef8b1410.js",
+            26673: "ef03a005610c6e552ebd.js",
             26703: "5e54d98d6b0270fcc62e.js",
             26730: "24728c8ad7f417d4bbcc.js",
             26743: "bc799860ad782c43ada6.js",
@@ -2948,7 +2949,6 @@
             27660: "0f87ee70e47eeb4f6596.js",
             27665: "7da2fe8fdd0387ef5543.js",
             27949: "3fe51ac337cf11b050dd.js",
-            28051: "420c40be5a58028884e0.js",
             28110: "985b612c434248f01f6f.js",
             28145: "cc3a8d2d6f59a95f8247.js",
             28159: "9b1077c851711cc15e00.js",
@@ -2963,6 +2963,7 @@
             29186: "7716753bd59f3ba960c4.js",
             29212: "d6742ea8b81965001c32.js",
             29232: "9cdaf72e5aa4fb367aa6.js",
+            29256: "2c11e66d5833c5475202.js",
             29473: "0ed2ed5a9dbab0c6f893.js",
             29867: "3e561d55915df7fa40ad.js",
             29910: "47af570bec13596167b6.js",
@@ -3022,7 +3023,7 @@
             36357: "e0f6cd71ef07c3b75f59.js",
             36424: "a5f5d98f4d56106c1981.js",
             36449: "7b90c3ca5efe824f3378.js",
-            36685: "3117bf743bc54f3fbb94.js",
+            36685: "56270d81be54b4efc1e0.js",
             36736: "7d5e81e163608e4a85fe.js",
             36826: "e2518edc327f2e72b89a.js",
             36891: "0ec0265c9b5d822591ed.js",
@@ -3038,7 +3039,7 @@
             37897: "c650cd165ca0222f6429.js",
             37903: "9dd2f883f5436157faa8.js",
             38334: "2816c47c65d377e8eea5.js",
-            38429: "e8404e1f62fedd2acea6.js",
+            38429: "a9171677c47aa199f40b.js",
             38712: "4897247efd5c7d2f8f91.js",
             38833: "9d0a0b335dd7ee225833.js",
             38867: "b2683f417b08f389c3aa.js",
@@ -3093,7 +3094,7 @@
             44893: "303930b4a927d0e1356b.js",
             44941: "479a35fccb237fed005c.js",
             44986: "477ad5132558a4de3fcc.js",
-            44994: "275aa4eda36ebd097291.js",
+            44994: "51b13eca1ff9dcbde989.js",
             45164: "c1adbee2a27e163ab995.js",
             45370: "6ef394955b8792b824b1.js",
             45549: "2c0eb666e8abfd8db1d4.js",
@@ -3138,7 +3139,6 @@
             50066: "0e064f57caa0d50347c7.js",
             50099: "cabb3452437ebe083fc6.js",
             50150: "bcba2013fe61f7d288a5.js",
-            5023: "b2fef1c1dc5a9fdc9478.js",
             50274: "da099a28f4ea842acdd8.js",
             50293: "33dbc97b8d79e5a85a2c.js",
             50454: "0297802d1d7346237698.js",
@@ -3187,7 +3187,6 @@
             55677: "43b4a1fbb60f35feb6b2.js",
             56096: "9b1b8dd6ccbc675adf3e.js",
             56122: "6e412cf5a5efb1675eea.js",
-            56287: "606780f799639c5b3f8f.js",
             56355: "6f0dafa72752499368ac.js",
             56495: "771f5daf9f74bb28ce4d.js",
             56854: "56854.d45c67254383dbef2d40.js",
@@ -3232,6 +3231,7 @@
             63499: "565d6db4011b4921c0c5.js",
             63574: "d56f349886f26f76b7af.js",
             63760: "0c2c42b7cf7e8c0fcd12.js",
+            63930: "6e5752681f628e77091b.js",
             64031: "6f4f346950cc5fdb9e98.js",
             64072: "2a42d3dfadbdf1716285.js",
             64263: "e41f705ab6c52d1a9522.js",
@@ -3259,7 +3259,6 @@
             66711: "d6844ac3b2bc3722dd22.js",
             66735: "04afdc94f48a612e80c6.js",
             66769: "d78d5c3ada7db12abbc8.js",
-            67031: "89c862e2da6af59052e3.js",
             67055: "06cda0bc75ac953f495f.js",
             67204: "54bebb9225f10e153e40.js",
             67220: "8680879a6e06e0bc5e23.js",
@@ -3270,6 +3269,7 @@
             67569: "bdee9dd24bbf2fa37dbb.js",
             67581: "4b45fd368f848de6c629.js",
             67602: "8a4ecf8fa6f2bbedb5c7.js",
+            67714: "4cac828d8acfe5c87d00.js",
             67731: "42451b76820c05aef78f.js",
             6787: "da391db0b15c809a0663.js",
             67954: "af57a27a7b7a58df2ed3.js",
@@ -3326,7 +3326,7 @@
             73187: "4d6e875cc856757dcfc8.js",
             73198: "2f6e7d99be34b63dc48e.js",
             73393: "62654b812ca07f30e793.js",
-            73641: "c99708fafbf22a477663.js",
+            73641: "d571ded551f8bcb6c8d8.js",
             73850: "c0787dd3f6a0b924098a.js",
             73864: "4dc987601023410257e5.js",
             73879: "301ea570e5c733964c62.js",
@@ -3565,14 +3565,14 @@
             return
         }
         if (void 0 !== d) {
-            for (var n, c, i = document.getElementsByTagName("script"), r = 0; r < i.length; r++) {
-                var o = i[r];
+            for (var n, i, c = document.getElementsByTagName("script"), r = 0; r < c.length; r++) {
+                var o = c[r];
                 if (o.getAttribute("src") == e) {
                     n = o;
                     break
                 }
             }
-        }!n && (c = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, l.nc && n.setAttribute("nonce", l.nc), n.src = e), a[e] = [t];
+        }!n && (i = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, l.nc && n.setAttribute("nonce", l.nc), n.src = e), a[e] = [t];
         var f = function(t, d) {
                 n.onerror = n.onload = null, clearTimeout(u);
                 var s = a[e];
@@ -3584,7 +3584,7 @@
                 type: "timeout",
                 target: n
             }), 12e4);
-        n.onerror = f.bind(null, n.onerror), n.onload = f.bind(null, n.onload), c && document.head.appendChild(n)
+        n.onerror = f.bind(null, n.onerror), n.onload = f.bind(null, n.onload), i && document.head.appendChild(n)
     }, l.o = function(e, a) {
         return Object.prototype.hasOwnProperty.call(e, a)
     }, t = [], l.O = function(e, a, d, s) {
@@ -3594,11 +3594,11 @@
             t[n] = [a, d, s];
             return
         }
-        for (var c = 1 / 0, n = 0; n < t.length; n++) {
-            for (var a = t[n][0], d = t[n][1], s = t[n][2], i = !0, r = 0; r < a.length; r++) c >= s && Object.keys(l.O).every(function(e) {
+        for (var i = 1 / 0, n = 0; n < t.length; n++) {
+            for (var a = t[n][0], d = t[n][1], s = t[n][2], c = !0, r = 0; r < a.length; r++) i >= s && Object.keys(l.O).every(function(e) {
                 return l.O[e](a[r])
-            }) ? a.splice(r--, 1) : (i = !1, s < c && (c = s));
-            if (i) {
+            }) ? a.splice(r--, 1) : (c = !1, s < i && (i = s));
+            if (c) {
                 t.splice(n--, 1);
                 var o = d();
                 void 0 !== o && (e = o)
@@ -3612,21 +3612,21 @@
         } catch (e) {
             if ("object" == typeof window) return window
         }
-    }(), d = "function" == typeof Symbol ? Symbol("webpack queues") : "__webpack_queues__", s = "function" == typeof Symbol ? Symbol("webpack exports") : "__webpack_exports__", n = "function" == typeof Symbol ? Symbol("webpack error") : "__webpack_error__", c = function(e) {
+    }(), d = "function" == typeof Symbol ? Symbol("webpack queues") : "__webpack_queues__", s = "function" == typeof Symbol ? Symbol("webpack exports") : "__webpack_exports__", n = "function" == typeof Symbol ? Symbol("webpack error") : "__webpack_error__", i = function(e) {
         e && e.d < 1 && (e.d = 1, e.forEach(function(e) {
             e.r--
         }), e.forEach(function(e) {
             e.r-- ? e.r++ : e()
         }))
     }, l.a = function(e, a, t) {
-        t && ((i = []).d = -1);
-        var i, r, o, f, l = new Set,
+        t && ((c = []).d = -1);
+        var c, r, o, f, l = new Set,
             u = e.exports,
             p = new Promise(function(e, a) {
                 f = a, o = e
             });
         p[s] = u, p[d] = function(e) {
-            i && e(i), l.forEach(e), p.catch(function() {})
+            c && e(c), l.forEach(e), p.catch(function() {})
         }, e.exports = p, a(function(e) {
             r = e.map(function(e) {
                 if (null !== e && "object" == typeof e) {
@@ -3634,9 +3634,9 @@
                     if (e.then) {
                         var a = [];
                         a.d = 0, e.then(function(e) {
-                            t[s] = e, c(a)
+                            t[s] = e, i(a)
                         }, function(e) {
-                            t[n] = e, c(a)
+                            t[n] = e, i(a)
                         });
                         var t = {};
                         return t[d] = function(e) {
@@ -3644,8 +3644,8 @@
                         }, t
                     }
                 }
-                var i = {};
-                return i[d] = function() {}, i[s] = e, i
+                var c = {};
+                return c[d] = function() {}, c[s] = e, c
             });
             var a, t = function() {
                     return r.map(function(e) {
@@ -3658,7 +3658,7 @@
                         e(t)
                     }).r = 0;
                     var s = function(e) {
-                        e === i || l.has(e) || (l.add(e), e && !e.d && (a.r++, e.push(a)))
+                        e === c || l.has(e) || (l.add(e), e && !e.d && (a.r++, e.push(a)))
                     };
                     r.map(function(e) {
                         e[d](s)
@@ -3666,8 +3666,8 @@
                 });
             return a.r ? o : t()
         }, function(e) {
-            e ? f(p[n] = e) : o(u), c(i)
-        }), i && i.d < 0 && (i.d = 0)
+            e ? f(p[n] = e) : o(u), i(c)
+        }), c && c.d < 0 && (c.d = 0)
     }, l.d = function(e, a) {
         for (var t in a) l.o(a, t) && !l.o(e, t) && Object.defineProperty(e, t, {
             enumerable: !0,
@@ -3690,9 +3690,9 @@
         var t = Object.create(null);
         l.r(t);
         var d = {};
-        i = i || [null, r({}), r([]), r(r)];
+        c = c || [null, r({}), r([]), r(r)];
         for (var s = 2 & a && e;
-            "object" == typeof s && !~i.indexOf(s); s = r(s)) Object.getOwnPropertyNames(s).forEach(function(a) {
+            "object" == typeof s && !~c.indexOf(s); s = r(s)) Object.getOwnPropertyNames(s).forEach(function(a) {
             d[a] = function() {
                 return e[a]
             }
@@ -3808,32 +3808,32 @@
             a = "webpack",
             t = "data-webpack-loading",
             d = function(e, d, s, n) {
-                var c, i, r = "chunk-" + e;
+                var i, c, r = "chunk-" + e;
                 if (!n) {
                     for (var o = document.getElementsByTagName("link"), f = 0; f < o.length; f++) {
                         var u = o[f],
                             p = u.getAttribute("href") || u.href;
                         if (p && !p.startsWith(l.p) && (p = l.p + (p.startsWith("/") ? p.slice(1) : p)), "stylesheet" == u.rel && (p && p.startsWith(d) || u.getAttribute("data-webpack") == a + ":" + r)) {
-                            c = u;
+                            i = u;
                             break
                         }
                     }
-                    if (!s) return c
-                }!c && (i = !0, (c = document.createElement("link")).setAttribute("data-webpack", a + ":" + r), c.setAttribute(t, 1), c.rel = "stylesheet", c.href = d);
+                    if (!s) return i
+                }!i && (c = !0, (i = document.createElement("link")).setAttribute("data-webpack", a + ":" + r), i.setAttribute(t, 1), i.rel = "stylesheet", i.href = d);
                 var b = function(e, a) {
-                    if (c.onerror = c.onload = null, c.removeAttribute(t), clearTimeout(h), a && "load" != a.type && c.parentNode.removeChild(c), s(a), e) return e(a)
+                    if (i.onerror = i.onload = null, i.removeAttribute(t), clearTimeout(h), a && "load" != a.type && i.parentNode.removeChild(i), s(a), e) return e(a)
                 };
-                if (c.getAttribute(t)) {
+                if (i.getAttribute(t)) {
                     var h = setTimeout(b.bind(null, void 0, {
                         type: "timeout",
-                        target: c
+                        target: i
                     }), 12e4);
-                    c.onerror = b.bind(null, c.onerror), c.onload = b.bind(null, c.onload)
+                    i.onerror = b.bind(null, i.onerror), i.onload = b.bind(null, i.onload)
                 } else b(void 0, {
                     type: "load",
-                    target: c
+                    target: i
                 });
-                return n ? n.parentNode.insertBefore(c, n) : i && document.head.appendChild(c), c
+                return n ? n.parentNode.insertBefore(i, n) : c && document.head.appendChild(i), i
             };
         l.f.css = function(a, t) {
             var s = l.o(e, a) ? e[a] : void 0;
@@ -3844,14 +3844,14 @@
                         s = e[a] = [t, d]
                     });
                     t.push(s[2] = n);
-                    var c = l.p + l.k(a),
-                        i = Error();
-                    d(a, c, function(t) {
+                    var i = l.p + l.k(a),
+                        c = Error();
+                    d(a, i, function(t) {
                         if (l.o(e, a) && (0 !== (s = e[a]) && (e[a] = void 0), s)) {
                             if ("load" !== t.type) {
                                 var d = t && t.type,
                                     n = t && t.target && t.target.src;
-                                i.message = "Loading css chunk " + a + " failed.\n(" + d + ": " + n + ")", i.name = "ChunkLoadError", i.type = d, i.request = n, s[1](i)
+                                c.message = "Loading css chunk " + a + " failed.\n(" + d + ": " + n + ")", c.name = "ChunkLoadError", c.type = d, c.request = n, s[1](c)
                             } else s[0]()
                         }
                     })
@@ -3880,12 +3880,12 @@
                     });
                     t.push(d[2] = s);
                     var n = l.p + l.u(a),
-                        c = Error();
+                        i = Error();
                     l.l(n, function(t) {
                         if (l.o(e, a) && (0 !== (d = e[a]) && (e[a] = void 0), d)) {
                             var s = t && ("load" === t.type ? "missing" : t.type),
                                 n = t && t.target && t.target.src;
-                            c.message = "Loading chunk " + a + " failed.\n(" + s + ": " + n + ")", c.name = "ChunkLoadError", c.type = s, c.request = n, d[1](c)
+                            i.message = "Loading chunk " + a + " failed.\n(" + s + ": " + n + ")", i.name = "ChunkLoadError", i.type = s, i.request = n, d[1](i)
                         }
                     }, "chunk-" + a, a)
                 }
@@ -3897,14 +3897,14 @@
                 var d = t[0],
                     s = t[1],
                     n = t[2],
-                    c, i, r = 0;
+                    i, c, r = 0;
                 if (d.some(function(a) {
                         return 0 !== e[a]
                     })) {
-                    for (c in s) l.o(s, c) && (l.m[c] = s[c]);
+                    for (i in s) l.o(s, i) && (l.m[i] = s[i]);
                     if (n) var o = n(l)
                 }
-                for (a && a(t); r < d.length; r++) i = d[r], l.o(e, i) && e[i] && e[i][0](), e[i] = 0;
+                for (a && a(t); r < d.length; r++) c = d[r], l.o(e, c) && e[c] && e[c][0](), e[c] = 0;
                 return l.O(o)
             },
             t = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
@@ -3918,4 +3918,4 @@
     });
     l.O(u)
 }();
-//# sourceMappingURL=web.e7225224a0a708c4af00.js.map
+//# sourceMappingURL=web.96073c9b1edfd84fb741.js.map
