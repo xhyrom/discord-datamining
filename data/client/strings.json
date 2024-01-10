@@ -1654,6 +1654,7 @@
   "MEMBER_VERIFICATION_VERIFIED": "\"Verified\"",
   "MEMBER_VERIFICATION_PHONE_VERIFIED": "\"Phone Verified\"",
   "MEMBER_VERIFICATION_EMAIL_VERIFIED": "\"Email Verified\"",
+  "MEMBER_VERIFICATION_ACCOUNT_VERIFIED": "\"Passed Verification Level\"",
   "MEMBER_VERIFICATION_NEED_RULES_CHANNEL_PERMS": "\"You need to have Send Message permissions in your server's rules channel to add or edit server rules here.\"",
   "MEMBER_VERIFICATION_PREVIEW_DISABLED_MARKDOWN_WARNING": "\"Channel and role mentions will not show up properly in rules if you've disabled preview.\"",
   "MEMBER_VERIFICATION_FIELD_QUESTION": "\"Enter your question\"",
