@@ -1,16 +1,16 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     ["22198"], {
-        335189: function(e, t, n) {
+        335189: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 saveClydeProfile: function() {
-                    return s
+                    return d
                 },
                 addClydeGuildMember: function() {
                     return c
                 },
                 generatePersonality: function() {
-                    return d
+                    return f
                 },
                 setPendingPersonality: function() {
                     return _
@@ -31,10 +31,10 @@
                     return I
                 },
                 fetchClydeSettings: function() {
-                    return C
+                    return A
                 },
                 fetchClydeProfile: function() {
-                    return A
+                    return C
                 },
                 createClydeProfile: function() {
                     return m
@@ -43,30 +43,30 @@
                     return L
                 },
                 doneEditingClydeProfile: function() {
-                    return g
+                    return D
                 }
             });
-            var r = n("872717"),
-                i = n("913144"),
-                u = n("327037"),
-                l = n("599110"),
-                o = n("473591"),
-                a = n("680894"),
-                f = n("49111");
-            async function s(e, t) {
-                let n = await E(e, t);
-                return n
+            var n = r("872717"),
+                i = r("913144"),
+                u = r("327037"),
+                l = r("599110"),
+                o = r("473591"),
+                a = r("680894"),
+                s = r("49111");
+            async function d(e, t) {
+                let r = await E(e, t);
+                return r
             }
             async function c(e) {
-                return await r.default.put({
-                    url: f.Endpoints.GUILD_CLYDE_ADD_MEMBER(e),
+                return await n.default.put({
+                    url: s.Endpoints.GUILD_CLYDE_ADD_MEMBER(e),
                     oldFormErrors: !0
                 })
             }
-            async function d(e) {
+            async function f(e) {
                 try {
-                    let t = await r.default.post({
-                        url: f.Endpoints.CLYDE_PROFILES_GENERATE_PERSONALITY,
+                    let t = await n.default.post({
+                        url: s.Endpoints.CLYDE_PROFILES_GENERATE_PERSONALITY,
                         oldFormErrors: !0,
                         body: {
                             personality: e
@@ -82,15 +82,15 @@
                 i.default.dispatch({
                     type: "CLYDE_GUILD_SETTINGS_SAVE_START"
                 });
-                let n = null != t.personality && o.default.getGeneratedPersonality() === o.default.getPendingPersonality();
+                let r = null != t.personality && o.default.getGeneratedPersonality() === o.default.getPendingPersonality();
                 try {
-                    var u, s;
-                    let o = await r.default.patch({
-                        url: f.Endpoints.GUILD_CLYDE_SETTINGS(e),
+                    var u, d;
+                    let o = await n.default.patch({
+                        url: s.Endpoints.GUILD_CLYDE_SETTINGS(e),
                         oldFormErrors: !0,
                         body: {
                             ...t,
-                            personality_preset: n ? "generated" : "custom"
+                            personality_preset: r ? "generated" : "custom"
                         }
                     });
                     if (o.ok) return i.default.dispatch({
@@ -108,16 +108,16 @@
                     }), o.body.settings;
                     return i.default.dispatch({
                         type: "CLYDE_GUILD_SETTINGS_SAVE_FAIL",
-                        errors: null !== (s = null === (u = o.body) || void 0 === u ? void 0 : u.errors) && void 0 !== s ? s : {}
-                    }), l.default.track(f.AnalyticEvents.CLYDE_AI_PROFILE_UPDATE_FAILED, {
+                        errors: null !== (d = null === (u = o.body) || void 0 === u ? void 0 : u.errors) && void 0 !== d ? d : {}
+                    }), l.default.track(s.AnalyticEvents.CLYDE_AI_PROFILE_UPDATE_FAILED, {
                         guild_id: e,
                         clyde_profile_id: t.clyde_profile_id
                     }), null
-                } catch (n) {
+                } catch (r) {
                     return i.default.dispatch({
                         type: "CLYDE_GUILD_SETTINGS_SAVE_FAIL",
-                        errors: n.body
-                    }), l.default.track(f.AnalyticEvents.CLYDE_AI_PROFILE_UPDATE_FAILED, {
+                        errors: r.body
+                    }), l.default.track(s.AnalyticEvents.CLYDE_AI_PROFILE_UPDATE_FAILED, {
                         guild_id: e,
                         clyde_profile_id: t.clyde_profile_id
                     }), null
@@ -166,7 +166,7 @@
                     type: "CLYDE_RESET_PENDING_CHANGES"
                 })
             }
-            async function C(e) {
+            async function A(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 if (t || o.default.shouldFetchSettings(e)) {
                     (0, u.fetchProfile)(a.CLYDE_AI_USER_ID, {
@@ -176,15 +176,15 @@
                         guildId: e
                     });
                     try {
-                        let t = await r.default.get({
-                                url: f.Endpoints.GUILD_CLYDE_SETTINGS(e),
+                        let t = await n.default.get({
+                                url: s.Endpoints.GUILD_CLYDE_SETTINGS(e),
                                 oldFormErrors: !0
                             }),
-                            n = t.body;
+                            r = t.body;
                         i.default.dispatch({
                             type: "CLYDE_GUILD_SETTINGS_FETCH_SUCCESS",
-                            guildId: n.guild_id,
-                            settings: n
+                            guildId: r.guild_id,
+                            settings: r
                         })
                     } catch (t) {
                         i.default.dispatch({
@@ -194,21 +194,21 @@
                     }
                 }
             }
-            async function A(e) {
+            async function C(e) {
                 if (null == o.default.getProfile(e)) {
                     i.default.dispatch({
                         type: "CLYDE_PROFILE_FETCH_START",
                         clydeProfileId: e
                     });
                     try {
-                        let t = await r.default.get({
-                                url: f.Endpoints.CLYDE_PROFILES(e),
+                        let t = await n.default.get({
+                                url: s.Endpoints.CLYDE_PROFILES(e),
                                 oldFormErrors: !0
                             }),
-                            n = t.body;
+                            r = t.body;
                         i.default.dispatch({
                             type: "CLYDE_PROFILE_FETCH_SUCCESS",
-                            profile: n
+                            profile: r
                         })
                     } catch (t) {
                         i.default.dispatch({
@@ -220,8 +220,8 @@
             }
             async function m(e) {
                 try {
-                    let t = await r.default.post({
-                        url: f.Endpoints.CLYDE_PROFILES_CREATE(e),
+                    let t = await n.default.post({
+                        url: s.Endpoints.CLYDE_PROFILES_CREATE(e),
                         oldFormErrors: !0
                     });
                     return t.ok && i.default.dispatch({
@@ -239,50 +239,50 @@
                 })
             }
 
-            function g() {
+            function D() {
                 i.default.dispatch({
                     type: "CLYDE_PROFILE_EDITING_END"
                 })
             }
         },
-        845962: function(e, t, n) {
+        845962: function(e, t, r) {
             "use strict";
-            let r;
-            n.r(t), n.d(t, {
+            let n;
+            r.r(t), r.d(t, {
                 default: function() {
                     return _
                 }
             });
-            var i = n("917351"),
-                u = n("446674"),
-                l = n("913144");
+            var i = r("917351"),
+                u = r("446674"),
+                l = r("913144");
             let o = [],
                 a = !1;
-            let f = o,
-                s = {},
+            let s = o,
+                d = {},
                 c = null,
-                d = e => {
-                    f = (0, i.cloneDeep)(e);
+                f = e => {
+                    s = (0, i.cloneDeep)(e);
                     let t = {};
-                    f.forEach(e => {
+                    s.forEach(e => {
                         t[e.id] = e
-                    }), s = t
+                    }), d = t
                 };
             class E extends u.default.Store {
                 get isFetching() {
                     return a
                 }
                 get fetchError() {
-                    return r
+                    return n
                 }
                 get profileEffects() {
-                    return f
+                    return s
                 }
                 get tryItOutId() {
                     return c
                 }
                 getProfileEffectById(e) {
-                    return null != e ? s[e] : void 0
+                    return null != e ? d[e] : void 0
                 }
             }
             E.displayName = "ProfileEffectStore";
@@ -294,13 +294,13 @@
                     let {
                         profileEffects: t
                     } = e;
-                    a = !1, d(0 === t.length ? o : t)
+                    a = !1, f(0 === t.length ? o : t)
                 },
                 USER_PROFILE_EFFECTS_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    a = !1, r = t, d(o)
+                    a = !1, n = t, f(o)
                 },
                 PROFILE_EFFECTS_SET_TRY_IT_OUT: e => {
                     let {
@@ -309,324 +309,268 @@
                     c = t
                 },
                 LOGOUT: e => {
-                    a = !1, d(o), c = null
+                    a = !1, f(o), c = null
                 }
             })
         },
-        662286: function(e, t, n) {
+        76047: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
-                useCanUseProfileEffects: function() {
-                    return u
-                },
-                canUseProfileEffects: function() {
-                    return l
-                }
-            });
-            var r = n("862205");
-            let i = (0, r.createExperiment)({
-                kind: "user",
-                id: "2023-08_profile_effects",
-                label: "Profile Effects User Experiment",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enables profile effects and shop",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-
-            function u(e) {
-                let {
-                    location: t,
-                    trackExposureOptions: n = {},
-                    autoTrackExposure: r = !0
-                } = e;
-                return i.useExperiment({
-                    location: t
-                }, {
-                    autoTrackExposure: r,
-                    trackExposureOptions: n
-                }).enabled
-            }
-
-            function l(e) {
-                let {
-                    location: t,
-                    trackExposureOptions: n = {},
-                    autoTrackExposure: r = !0
-                } = e;
-                return i.getCurrentConfig({
-                    location: t
-                }, {
-                    autoTrackExposure: r,
-                    trackExposureOptions: n
-                }).enabled
-            }
-        },
-        76047: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 ENTRY_DELAY: function() {
-                    return r
+                    return n
                 },
                 RESET: function() {
                     return i
                 }
             });
-            let r = 500,
+            let n = 500,
                 i = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
         },
-        859498: function(e, t, n) {
+        859498: function(e, t, r) {
             "use strict";
-            var r, i, u, l;
-            n.r(t), n.d(t, {
+            var n, i, u, l;
+            r.r(t), r.d(t, {
                 RestartMethod: function() {
-                    return r
+                    return n
                 },
                 AnimationTypes: function() {
                     return i
                 }
-            }), (u = r || (r = {})).FromLoop = "fromLoop", u.FromStart = "fromStart", (l = i || (i = {}))[l.UNSPECIFIED = 0] = "UNSPECIFIED", l[l.PERSISTENT = 1] = "PERSISTENT", l[l.INTERMITTENT = 2] = "INTERMITTENT"
+            }), (u = n || (n = {})).FromLoop = "fromLoop", u.FromStart = "fromStart", (l = i || (i = {}))[l.UNSPECIFIED = 0] = "UNSPECIFIED", l[l.PERSISTENT = 1] = "PERSISTENT", l[l.INTERMITTENT = 2] = "INTERMITTENT"
         },
-        687682: function(e, t, n) {
+        687682: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 default: function() {
                     return u
                 }
             });
-            var r = n("884691");
+            var n = r("884691");
             let i = 1e3 / 24;
             var u = function(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i,
-                    n = r.useRef(0),
-                    u = r.useRef(),
-                    l = r.useRef(!0),
-                    o = r.useCallback(() => {
-                        l.current = !1, cancelAnimationFrame(n.current)
+                    r = n.useRef(0),
+                    u = n.useRef(),
+                    l = n.useRef(!0),
+                    o = n.useCallback(() => {
+                        l.current = !1, cancelAnimationFrame(r.current)
                     }, []),
-                    a = r.useCallback(r => {
-                        null == u.current && (u.current = r);
-                        let i = r - u.current;
-                        i >= t && (u.current = r, e(i)), l.current && (n.current = requestAnimationFrame(a))
+                    a = n.useCallback(n => {
+                        null == u.current && (u.current = n);
+                        let i = n - u.current;
+                        i >= t && (u.current = n, e(i)), l.current && (r.current = requestAnimationFrame(a))
                     }, [e, t]),
-                    f = r.useCallback(() => {
-                        l.current = !0, u.current = void 0, n.current = requestAnimationFrame(a)
+                    s = n.useCallback(() => {
+                        l.current = !0, u.current = void 0, r.current = requestAnimationFrame(a)
                     }, [a]);
-                return r.useEffect(() => (n.current = requestAnimationFrame(a), () => cancelAnimationFrame(n.current)), []), {
+                return n.useEffect(() => (r.current = requestAnimationFrame(a), () => cancelAnimationFrame(r.current)), []), {
                     stop: o,
-                    reset: f,
+                    reset: s,
                     ticking: l
                 }
             }
         },
-        833395: function(e, t, n) {
+        833395: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 default: function() {
                     return i
                 }
-            }), n("222007"), n("808653"), n("424973");
-            var r = n("884691"),
+            }), r("222007"), r("808653"), r("424973");
+            var n = r("884691"),
                 i = (e, t) => {
-                    let [n, i] = r.useState(-1), u = r.useRef(-1);
-                    return r.useEffect(() => {
+                    let [r, i] = n.useState(-1), u = n.useRef(-1);
+                    return n.useEffect(() => {
                         let t = e.reduce((e, t) => (!e.includes(t.src) && e.push(t.src), e), []);
                         i(t.length), u.current = t.length
-                    }, [e, u, i]), r.useEffect(() => {
-                        0 === n && t()
-                    }, [n, t]), {
-                        pending: n,
+                    }, [e, u, i]), n.useEffect(() => {
+                        0 === r && t()
+                    }, [r, t]), {
+                        pending: r,
                         pendingRef: u,
                         setPending: i
                     }
                 }
         },
-        784410: function(e, t, n) {
+        784410: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 default: function() {
                     return u
                 }
-            }), n("222007"), n("808653");
-            var r = n("884691"),
-                i = n("845962"),
+            }), r("222007"), r("808653");
+            var n = r("884691"),
+                i = r("845962"),
                 u = e => {
                     let t = i.default.profileEffects,
-                        [n, u] = r.useState(e),
-                        [l, o] = r.useState(i.default.getProfileEffectById(e)),
-                        a = t.reduce((t, n, r) => (n.id === e && (t = r), t), 0),
-                        [, f] = r.useState(a),
-                        s = r.useRef(a);
-                    return r.useEffect(() => {
+                        [r, u] = n.useState(e),
+                        [l, o] = n.useState(i.default.getProfileEffectById(e)),
+                        a = t.reduce((t, r, n) => (r.id === e && (t = n), t), 0),
+                        [, s] = n.useState(a),
+                        d = n.useRef(a);
+                    return n.useEffect(() => {
                         u(e), o(i.default.getProfileEffectById(e))
                     }, [e]), {
                         increment: () => {
-                            let e = (s.current + 1) % t.length;
-                            s.current = e, f(e), u(t[e].id), o(t[e])
+                            let e = (d.current + 1) % t.length;
+                            d.current = e, s(e), u(t[e].id), o(t[e])
                         },
                         decrement: () => {
-                            let e = 0 === s.current ? t.length - 1 : s.current - 1;
-                            s.current = e, f(e), u(t[e].id), o(t[e])
+                            let e = 0 === d.current ? t.length - 1 : d.current - 1;
+                            d.current = e, s(e), u(t[e].id), o(t[e])
                         },
-                        id: n,
+                        id: r,
                         preset: l
                     }
                 }
         },
-        525808: function(e, t, n) {
+        525808: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 sortEffectLayers: function() {
-                    return r
+                    return n
                 }
             });
-            let r = e => e.sort((e, t) => {
-                var n, r;
-                return (null !== (n = e.zIndex) && void 0 !== n ? n : 0) - (null !== (r = t.zIndex) && void 0 !== r ? r : 0)
+            let n = e => e.sort((e, t) => {
+                var r, n;
+                return (null !== (r = e.zIndex) && void 0 !== r ? r : 0) - (null !== (n = t.zIndex) && void 0 !== n ? n : 0)
             })
         },
-        635471: function(e, t, n) {
+        635471: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 default: function() {
                     return A
                 }
-            }), n("222007");
-            var r = n("37983"),
-                i = n("884691"),
-                u = n("414456"),
-                l = n.n(u),
-                o = n("446674"),
-                a = n("206230"),
-                f = n("471671"),
-                s = n("662286"),
-                c = n("76047"),
-                d = n("859498"),
-                E = n("687682"),
-                _ = n("525808"),
-                p = n("465523"),
-                T = n("417675"),
-                y = n("188645"),
-                S = n("260742");
-            let I = e => {
+            }), r("222007");
+            var n = r("37983"),
+                i = r("884691"),
+                u = r("414456"),
+                l = r.n(u),
+                o = r("446674"),
+                a = r("206230"),
+                s = r("471671"),
+                d = r("76047"),
+                c = r("859498"),
+                f = r("687682"),
+                E = r("525808"),
+                _ = r("465523"),
+                p = r("417675"),
+                T = r("188645"),
+                y = r("260742");
+            let S = e => {
                     let {
                         bannerAdjustment: t = 0,
-                        maxLoops: n,
+                        maxLoops: r,
                         resetOnHover: u = !1,
                         isHovering: o = !1,
                         useOpacityOnHover: a = !0,
-                        autoPlay: f = !0,
-                        restartMethod: s,
-                        urlQueryString: p,
-                        profileEffectConfig: y,
+                        autoPlay: s = !0,
+                        restartMethod: _,
+                        urlQueryString: T,
+                        profileEffectConfig: S,
                         noBorderRadius: I = !1,
-                        introDelay: C = c.ENTRY_DELAY
-                    } = e, A = i.useRef(null), [m, L] = i.useState([]);
-                    (0, T.default)(y);
-                    let [g, D] = i.useState(0), [R, h] = i.useState(0), {
-                        accessibilityLabel: P
-                    } = y, [v, F] = i.useState(-C), {
+                        introDelay: A = d.ENTRY_DELAY
+                    } = e, C = i.useRef(null), [m, L] = i.useState([]);
+                    (0, p.default)(S);
+                    let [D, R] = i.useState(0), [h, g] = i.useState(0), {
+                        accessibilityLabel: v
+                    } = S, [P, F] = i.useState(-A), {
                         stop: N,
-                        reset: b,
-                        ticking: U
-                    } = (0, E.default)(e => {
+                        reset: Y,
+                        ticking: b
+                    } = (0, f.default)(e => {
                         F(t => t + e)
                     });
                     i.useEffect(() => {
-                        F(-C), L((0, _.sortEffectLayers)(y.effects))
-                    }, [y]), i.useEffect(() => {
+                        F(-A), L((0, E.sortEffectLayers)(S.effects))
+                    }, [S]), i.useEffect(() => {
                         let e = 0,
                             t = 1 / 0;
-                        m.forEach(n => {
-                            let r = n.start + n.duration;
-                            r > e && (e = r), n.loop && n.start < t && (t = n.start)
-                        }), D(t), h(e)
-                    }, [h, m]);
-                    let [Y, G] = i.useState(!1);
+                        m.forEach(r => {
+                            let n = r.start + r.duration;
+                            n > e && (e = n), r.loop && r.start < t && (t = r.start)
+                        }), R(t), g(e)
+                    }, [g, m]);
+                    let [G, U] = i.useState(!1);
                     return i.useEffect(() => {
-                        !0 !== f && !o && (N(), F(0)), !o && Y && U.current && (N(), F(0)), u && o && !U.current && (b(), y.animationType === d.AnimationTypes.PERSISTENT ? F(s === d.RestartMethod.FromStart ? 0 : g) : F(0))
-                    }, [o, Y, g, u, N, b, U, y.animationType, f, s]), (0, r.jsx)("div", {
-                        ref: A,
-                        className: l(S.profileEffects, {
-                            [S.hovered]: o && a
+                        !0 !== s && !o && (N(), F(0)), !o && G && b.current && (N(), F(0)), u && o && !b.current && (Y(), S.animationType === c.AnimationTypes.PERSISTENT ? F(_ === c.RestartMethod.FromStart ? 0 : D) : F(0))
+                    }, [o, G, D, u, N, Y, b, S.animationType, s, _]), (0, n.jsx)("div", {
+                        ref: C,
+                        className: l(y.profileEffects, {
+                            [y.hovered]: o && a
                         }),
-                        children: (0, r.jsx)("div", {
-                            className: I ? S.innerNoRadius : S.inner,
+                        children: (0, n.jsx)("div", {
+                            className: I ? y.innerNoRadius : y.inner,
                             children: m.map((e, i) => {
-                                var u, l, o, a, s, E, _, T;
-                                if (!U.current) {
-                                    if (y.animationType === d.AnimationTypes.PERSISTENT && null != y.staticFrameSrc && 0 === i && !0 === f) {
+                                var u, l, o, a, f, E, _, p;
+                                if (!b.current) {
+                                    if (S.animationType === c.AnimationTypes.PERSISTENT && null != S.staticFrameSrc && 0 === i && !0 === s) {
                                         let {
-                                            staticFrameSrc: n
-                                        } = y;
-                                        return (0, r.jsx)("img", {
-                                            className: S.effect,
+                                            staticFrameSrc: r
+                                        } = S;
+                                        return (0, n.jsx)("img", {
+                                            className: y.effect,
                                             style: {
-                                                top: null !== (s = null === (o = e.position) || void 0 === o ? void 0 : o.y) && void 0 !== s ? s : 0 - t,
+                                                top: null !== (f = null === (o = e.position) || void 0 === o ? void 0 : o.y) && void 0 !== f ? f : 0 - t,
                                                 left: null !== (E = null === (a = e.position) || void 0 === a ? void 0 : a.x) && void 0 !== E ? E : 0
                                             },
-                                            src: n,
-                                            alt: P
+                                            src: r,
+                                            alt: v
                                         }, e.src + i)
                                     }
-                                    return (0, r.jsx)("img", {
-                                        src: c.RESET,
-                                        alt: P
+                                    return (0, n.jsx)("img", {
+                                        src: d.RESET,
+                                        alt: v
                                     }, e.src + i)
                                 }
-                                if (v < e.start || !e.loop && v > e.duration + e.start) return (0, r.jsx)("img", {
-                                    src: c.RESET,
-                                    alt: P
+                                if (P < e.start || !e.loop && P > e.duration + e.start) return (0, n.jsx)("img", {
+                                    src: d.RESET,
+                                    alt: v
                                 }, e.src + i);
-                                if (y.animationType === d.AnimationTypes.PERSISTENT && !Y && null != n && v >= R && G(!0), e.loop && void 0 !== e.loopDelay && e.loopDelay > 0) {
+                                if (S.animationType === c.AnimationTypes.PERSISTENT && !G && null != r && P >= h && U(!0), e.loop && void 0 !== e.loopDelay && e.loopDelay > 0) {
                                     let t = e.duration + e.loopDelay,
-                                        u = Math.floor((v - e.start) / t);
-                                    if (v - e.start - u * t > e.duration) return y.animationType === d.AnimationTypes.INTERMITTENT && !Y && null != n && u >= n && G(!0), (0, r.jsx)("img", {
-                                        src: c.RESET,
-                                        alt: P
+                                        u = Math.floor((P - e.start) / t);
+                                    if (P - e.start - u * t > e.duration) return S.animationType === c.AnimationTypes.INTERMITTENT && !G && null != r && u >= r && U(!0), (0, n.jsx)("img", {
+                                        src: d.RESET,
+                                        alt: v
                                     }, e.src + i)
                                 }
-                                return (0, r.jsx)("img", {
-                                    src: null != p ? "".concat(e.src, "?query=").concat(p) : e.src,
-                                    className: S.effect,
+                                return (0, n.jsx)("img", {
+                                    src: null != T ? "".concat(e.src, "?query=").concat(T) : e.src,
+                                    className: y.effect,
                                     style: {
                                         top: (null !== (_ = null === (u = e.position) || void 0 === u ? void 0 : u.y) && void 0 !== _ ? _ : 0) - t,
-                                        left: null !== (T = null === (l = e.position) || void 0 === l ? void 0 : l.x) && void 0 !== T ? T : 0
+                                        left: null !== (p = null === (l = e.position) || void 0 === l ? void 0 : l.x) && void 0 !== p ? p : 0
                                     },
-                                    alt: P
+                                    alt: v
                                 }, e.src + i)
                             })
                         })
                     })
                 },
-                C = e => {
+                I = e => {
                     let {
                         config: t,
-                        useThumbnail: n,
+                        useThumbnail: r,
                         bannerAdjustment: i = 0,
                         noBorderRadius: u,
                         isHovering: o = !1,
                         useOpacityOnHover: a = !0
                     } = e, {
-                        reducedMotionSrc: f,
-                        thumbnailPreviewSrc: s,
+                        reducedMotionSrc: s,
+                        thumbnailPreviewSrc: d,
                         accessibilityLabel: c
                     } = t;
-                    return (0, r.jsx)("div", {
-                        className: l(S.profileEffects, {
-                            [S.hovered]: o && a
+                    return (0, n.jsx)("div", {
+                        className: l(y.profileEffects, {
+                            [y.hovered]: o && a
                         }),
-                        children: (0, r.jsx)("div", {
-                            className: u ? S.innerNoRadius : S.inner,
-                            children: (0, r.jsx)("img", {
-                                src: n && !o ? s : f,
-                                className: S.effect,
+                        children: (0, n.jsx)("div", {
+                            className: u ? y.innerNoRadius : y.inner,
+                            children: (0, n.jsx)("img", {
+                                src: r && !o ? d : s,
+                                className: y.effect,
                                 style: {
                                     top: 0 - i
                                 },
@@ -636,53 +580,50 @@
                     })
                 };
             var A = e => {
-                let t = (0, s.useCanUseProfileEffects)({
-                        location: "WebWrappedProfileEffect"
-                    }),
-                    n = (0, o.useStateFromStores)([f.default], () => f.default.isFocused()),
-                    u = (0, o.useStateFromStores)([a.default], () => a.default.useReducedMotion),
-                    [l, c] = i.useState(!1),
+                let t = (0, o.useStateFromStores)([s.default], () => s.default.isFocused()),
+                    r = (0, o.useStateFromStores)([a.default], () => a.default.useReducedMotion),
+                    [u, l] = i.useState(!1),
                     {
-                        preset: E
-                    } = (0, y.default)(e.profileEffectId, () => c(!1));
-                return t && null != E && (n || E.config.animationType === d.AnimationTypes.PERSISTENT) ? !n && E.config.animationType === d.AnimationTypes.PERSISTENT || u || !1 === e.autoPlay && !1 === e.isHovering ? (0, r.jsx)(C, {
+                        preset: d
+                    } = (0, T.default)(e.profileEffectId, () => l(!1));
+                return null != d && (t || d.config.animationType === c.AnimationTypes.PERSISTENT) ? !t && d.config.animationType === c.AnimationTypes.PERSISTENT || r || !1 === e.autoPlay && !1 === e.isHovering ? (0, n.jsx)(I, {
                     useThumbnail: e.useThumbnail,
-                    config: E.config,
+                    config: d.config,
                     bannerAdjustment: e.bannerAdjustment,
                     noBorderRadius: e.noBorderRadius,
                     isHovering: e.isHovering,
                     useOpacityOnHover: e.useOpacityOnHover
-                }) : l ? (0, r.jsx)(I, {
-                    profileEffectConfig: E.config,
+                }) : u ? (0, n.jsx)(S, {
+                    profileEffectConfig: d.config,
                     ...e
-                }) : (0, r.jsx)(p.default, {
-                    profileEffectConfig: E.config,
+                }) : (0, n.jsx)(_.default, {
+                    profileEffectConfig: d.config,
                     onReady: () => {
-                        c(!0)
+                        l(!0)
                     }
                 }) : null
             }
         },
-        465523: function(e, t, n) {
+        465523: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 default: function() {
                     return u
                 }
             });
-            var r = n("37983");
-            n("884691");
-            var i = n("833395"),
+            var n = r("37983");
+            r("884691");
+            var i = r("833395"),
                 u = e => {
                     let {
                         profileEffectConfig: t,
-                        onReady: n
+                        onReady: r
                     } = e, {
                         pendingRef: u,
                         setPending: l
-                    } = (0, i.default)(t.effects, n);
-                    return (0, r.jsx)("div", {
-                        children: t.effects.map(e => (0, r.jsx)("img", {
+                    } = (0, i.default)(t.effects, r);
+                    return (0, n.jsx)("div", {
+                        children: t.effects.map(e => (0, n.jsx)("img", {
                             src: e.src,
                             alt: "Preload Profile Effect Asset",
                             "aria-hidden": !0,
@@ -697,50 +638,50 @@
                     })
                 }
         },
-        417675: function(e, t, n) {
+        417675: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 default: function() {
                     return u
                 }
             });
-            var r = n("884691");
+            var n = r("884691");
             let i = e => {
                 e.effects.forEach(e => {
                     let {
                         src: t
-                    } = e, n = document.createElement("link");
-                    n.rel = "prefetch", n.href = t, document.body.appendChild(n)
+                    } = e, r = document.createElement("link");
+                    r.rel = "prefetch", r.href = t, document.body.appendChild(r)
                 })
             };
             var u = e => {
-                r.useEffect(() => {
+                n.useEffect(() => {
                     i(e)
                 }, [e])
             }
         },
-        188645: function(e, t, n) {
+        188645: function(e, t, r) {
             "use strict";
-            n.r(t), n.d(t, {
+            r.r(t), r.d(t, {
                 default: function() {
                     return l
                 }
             });
-            var r = n("884691"),
-                i = n("890503"),
-                u = n("784410"),
+            var n = r("884691"),
+                i = r("890503"),
+                u = r("784410"),
                 l = (e, t) => {
-                    let n = (0, i.default)("profile_effect_debug_controls"),
+                    let r = (0, i.default)("profile_effect_debug_controls"),
                         {
                             id: l,
                             preset: o,
                             increment: a,
-                            decrement: f
+                            decrement: s
                         } = (0, u.default)(e);
-                    return r.useEffect(() => {
-                        if (!n) return;
+                    return n.useEffect(() => {
+                        if (!r) return;
                         let e = e => {
-                            "ArrowUp" === e.key && (a(), e.preventDefault()), "ArrowDown" === e.key && (f(), e.preventDefault()), "r" === e.key && (null == t || t(), e.preventDefault())
+                            "ArrowUp" === e.key && (a(), e.preventDefault()), "ArrowDown" === e.key && (s(), e.preventDefault()), "r" === e.key && (null == t || t(), e.preventDefault())
                         };
                         return window.addEventListener("keydown", e), () => {
                             window.removeEventListener("keydown", e)
@@ -753,4 +694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=22198.aecf178946716718966c.js.map
+//# sourceMappingURL=22198.f5f5aeb061c44ad3e071.js.map
