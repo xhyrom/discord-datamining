@@ -5161,13 +5161,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Voice Activity Notifications are enabled for user"
+        "Treatment 1: Voice Activity Notifications are enabled for user",
+        "Treatment 2: Control for AA test. Voice Activity Notifications are NOT enabled for user."
       ],
       "hash": 2966119607,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
