@@ -6275,6 +6275,7 @@
   "SEARCH_GROUP_HEADER_PINNED": "\"Pinned\"",
   "SEARCH_GROUP_HINT_PINNED": "\"Tap to append filter. Search pinned messages\"",
   "SEARCH_FILTERS": "\"Search Filters\"",
+  "SEARCH_FILTER_RESULTS_ELLIPSIZED": "\"Filter results...\"",
   "SEARCH_FILTER_FROM": "\"from\"",
   "SEARCH_FILTER_HAS": "\"has\"",
   "SEARCH_FILTER_BEFORE": "\"before\"",
