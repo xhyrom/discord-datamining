@@ -13008,6 +13008,18 @@
                         G({
                             type: "PREMIUM_MARKETING_PREVIEW",
                             properties: t.properties
+                        });
+                        break;
+                    case "USER_APPLICATION_UPDATE":
+                        G({
+                            type: "USER_APPLICATION_UPDATE",
+                            applicationId: t.application_id
+                        });
+                        break;
+                    case "USER_APPLICATION_REMOVE":
+                        G({
+                            type: "USER_APPLICATION_REMOVE",
+                            applicationId: t.application_id
                         })
                 }
             }
@@ -35767,4 +35779,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.3f6cdabefa477e1817b5.js.map
+//# sourceMappingURL=67615.ab726ea8be70a2a9e9e3.js.map
