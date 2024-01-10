@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["41039"], {
+    ["78033"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -12514,11 +12514,12 @@
                             lineClamp: f,
                             color: E,
                             tabularNumbers: h = !1,
-                            ...p
+                            scaleFontToUserSetting: p = !1,
+                            ..._
                         } = e,
-                        _ = "",
-                        S = {};
-                    if (null != f && (1 === f ? _ = u.lineClamp1 : (_ = u.lineClamp2Plus, S = {
+                        S = "",
+                        m = {};
+                    if (null != f && (1 === f ? S = u.lineClamp1 : (S = u.lineClamp2Plus, m = {
                             lineClamp: f,
                             WebkitLineClamp: f
                         })), void 0 !== E) switch (E) {
@@ -12529,22 +12530,23 @@
                             t = "white";
                             break;
                         default:
-                            var m;
-                            t = null === (m = l.default.colors[d[E]]) || void 0 === m ? void 0 : m.css
+                            var T;
+                            t = null === (T = l.default.colors[d[E]]) || void 0 === T ? void 0 : T.css
                     }
-                    let T = {
+                    let g = {
                         color: t,
-                        ...S,
-                        ...p.style
+                        ...m,
+                        ..._.style
                     };
                     return (0, i.jsx)(r, {
                         className: s({
                             [u.defaultColor]: void 0 === E,
                             [u.selectable]: a,
-                            [u.tabularNumbers]: h
-                        }, _, c[n], o),
-                        ...p,
-                        style: Object.values(T).filter(Boolean).length > 0 ? T : void 0,
+                            [u.tabularNumbers]: h,
+                            [c.fontScaling]: p
+                        }, S, c[n], o),
+                        ..._,
+                        style: Object.values(g).filter(Boolean).length > 0 ? g : void 0,
                         "data-text-variant": n
                     })
                 }
@@ -50165,7 +50167,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258452"
+                                build_number: "258574"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63552,4 +63554,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.06faeccaf8da3e56f9ce.js.map
+//# sourceMappingURL=78033.600bf9545690a71dafe6.js.map

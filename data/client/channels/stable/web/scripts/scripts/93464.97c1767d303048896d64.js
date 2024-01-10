@@ -1212,6 +1212,12 @@
                         config: {
                             enabled: !0
                         }
+                    }, {
+                        id: 2,
+                        label: "Control for AA test. Voice Activity Notifications are NOT enabled for user.",
+                        config: {
+                            enabled: !1
+                        }
                     }]
                 }),
                 s = (0, i.createExperiment)({
@@ -1477,4 +1483,4 @@
         }
     }
 ]);
-//# sourceMappingURL=93464.cd6c451ba5c6f5d3eb71.js.map
+//# sourceMappingURL=93464.97c1767d303048896d64.js.map
