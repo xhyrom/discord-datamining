@@ -32411,7 +32411,6 @@
             }];
             var O = new N(l.default, {
                 CONNECTION_OPEN: v,
-                LOGIN_SUCCESS: A,
                 LOGOUT: function(e) {
                     return !e.isSwitchingAccount && T !== S.ThemeTypes.DARK && (T = S.ThemeTypes.DARK, function() {
                         !__OVERLAY__ && f.isPlatformEmbedded && d.default.setApplicationBackgroundColor((0, o.isThemeDark)(C()) ? a.default.unsafe_rawColors.PRIMARY_700.resolve({
@@ -50177,7 +50176,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258617"
+                                build_number: "258620"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63564,4 +63563,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.1a421bec851004c39cbd.js.map
+//# sourceMappingURL=41039.288c2abf0fece20d19ac.js.map
