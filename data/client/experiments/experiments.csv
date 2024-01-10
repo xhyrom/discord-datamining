@@ -16,7 +16,7 @@ id,hash,label
 2021-07_role_popout,1428438599,Role Popout
 2021-08_guild_role_subscription_users,1567199723,Guild Role Subscription Users
 2021-08_max_sync_delay,578035700,Overrides the default max sync delay for AV streams in WebRTC
-2021-09_favorites_server,1134868932,Enable fancy super-alpha favorites server.
+2021-09_favorites_server,1134868932,Favorites Server
 2021-09_ios_screenshare_resolution_profiles,3656427814,iOS: Screenshare resolution profiles
 2021-09_watch_together_rollout,3607703918,Exposure tracking for Watch Together (do not override)
 2021-10_pause_partner_applications_experiment,4049227286,Pause Partner Applications Experiment

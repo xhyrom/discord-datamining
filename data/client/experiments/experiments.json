@@ -2615,13 +2615,14 @@
     "data": {
       "kind": "user",
       "id": "2021-09_favorites_server",
-      "label": "Enable fancy super-alpha favorites server.",
+      "label": "Favorites Server",
       "description": [
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: Favorites v1 - On",
         "Treatment 2: Favorites v1 - Forced Off",
-        "Treatment 3: Favorites v2"
+        "Treatment 3: Favorites v2",
+        "Treatment 4: Favorites v2 w/o Staff Privileges"
       ],
       "hash": 1134868932,
       "buckets": [
@@ -2629,14 +2630,16 @@
         0,
         1,
         2,
-        3
+        3,
+        4
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
         "favoritesEnabled",
         "canShow",
-        "isFavoritesPerk"
+        "isFavoritesPerk",
+        "hasStaffPrivileges"
       ]
     }
   },
@@ -11360,14 +11363,14 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 1000
+                  "end": 2500
                 }
               ]
             },
             "none": {
               "rollout": [
                 {
-                  "start": 1000,
+                  "start": 2500,
                   "end": 10000
                 }
               ]
