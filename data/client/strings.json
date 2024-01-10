@@ -1068,6 +1068,7 @@
   "FAVORITES_SET_NICKNAME_DESCRIPTION": "\"This name will only appear in your favorites.\"",
   "FAVORITE_ADDED": "\"Added to Favorites!\"",
   "FAVORITES_RENAME_CATEGORY": "\"Rename Category\"",
+  "FAVORITES_ADD_A_CHANNEL": "\"Add a channel\"",
   "AFK_SETTINGS": "\"Inactive Settings\"",
   "NO_AFK_CHANNEL": "\"No Inactive Channel\"",
   "FORM_LABEL_AFK_CHANNEL": "\"Inactive Channel\"",
