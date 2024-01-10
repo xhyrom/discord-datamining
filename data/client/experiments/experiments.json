@@ -8979,6 +8979,147 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2023-08_user_apps",
+      "label": "Allow user app commands",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Allow user app commands"
+      ],
+      "hash": 825618208,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "userAppsTreatment"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_video_quality_measurement_v1",
+      "label": "Video Quality Measurement",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
+        "Treatment 2: Measure PSNR Only",
+        "Treatment 3: Measure VMAF Only",
+        "Treatment 4: Measure PSNR and VMAF",
+        "Treatment 5: Measure PSNR Only, 5000ms",
+        "Treatment 6: Measure VMAF Only, 5000ms",
+        "Treatment 7: Measure PSNR and VMAF, 5000ms",
+        "Treatment 8: Measure PSNR Only, 10000ms",
+        "Treatment 9: Measure VMAF Only, 10000ms",
+        "Treatment 10: Measure PSNR and VMAF, 10000ms",
+        "Treatment 11: Measure PSNR Only, 30000ms",
+        "Treatment 12: Measure VMAF Only, 30000ms",
+        "Treatment 13: Measure PSNR and VMAF, 30000ms"
+      ],
+      "hash": 2496837643,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-09_client_theme_coachmark_reintro",
+      "label": "Experiment to reintroduce the client themes experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable the coachmark"
+      ],
+      "hash": 1017818703,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-09_clips_nitro_early_access",
+      "label": "Clips (Nitro EA)",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Clips Nitro EA Upsells Visible",
+        "Treatment 2: Clips Enabled (Nitro)"
+      ],
+      "hash": 67524618,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-09_decoupled_game_clipping",
+      "label": "Test decoupled game clipping",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Decoupled Game Clipping"
+      ],
+      "hash": 1366927696,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enableDecoupledGameClipping"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2023-09_gaming_stats_prompt_guild",
       "label": "Gaming stats prompt",
@@ -9294,170 +9435,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_trial_notif_to_nitro_home",
-      "label": "Trial Notification to Nitro Home",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 4023901003,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_user_apps",
-      "label": "Allow user app commands",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Allow user app commands"
-      ],
-      "hash": 825618208,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "userAppsTreatment"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_video_quality_measurement_v1",
-      "label": "Video Quality Measurement",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
-        "Treatment 2: Measure PSNR Only",
-        "Treatment 3: Measure VMAF Only",
-        "Treatment 4: Measure PSNR and VMAF",
-        "Treatment 5: Measure PSNR Only, 5000ms",
-        "Treatment 6: Measure VMAF Only, 5000ms",
-        "Treatment 7: Measure PSNR and VMAF, 5000ms",
-        "Treatment 8: Measure PSNR Only, 10000ms",
-        "Treatment 9: Measure VMAF Only, 10000ms",
-        "Treatment 10: Measure PSNR and VMAF, 10000ms",
-        "Treatment 11: Measure PSNR Only, 30000ms",
-        "Treatment 12: Measure VMAF Only, 30000ms",
-        "Treatment 13: Measure PSNR and VMAF, 30000ms"
-      ],
-      "hash": 2496837643,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-09_client_theme_coachmark_reintro",
-      "label": "Experiment to reintroduce the client themes experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: enable the coachmark"
-      ],
-      "hash": 1017818703,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-09_clips_nitro_early_access",
-      "label": "Clips (Nitro EA)",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Clips Nitro EA Upsells Visible",
-        "Treatment 2: Clips Enabled (Nitro)"
-      ],
-      "hash": 67524618,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-09_decoupled_game_clipping",
-      "label": "Test decoupled game clipping",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Decoupled Game Clipping"
-      ],
-      "hash": 1366927696,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enableDecoupledGameClipping"
-      ]
     }
   },
   {
@@ -12190,6 +12167,29 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_rpc_analytics_killswitch",
+      "label": "RPC Server Analytics Killswitch",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable RPC Server Analytics"
+      ],
+      "hash": 305964783,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {

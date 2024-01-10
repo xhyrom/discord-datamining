@@ -418,4 +418,5 @@ id,hash,label
 2023-12_voice_lockscreen_widget,3182686365,Voice live activity (guild)
 2024-01_developers_get_developer_shelf,1459591700,Developers Get Developer Shelf
 2024-01_guild_members_table_additional_filtering,1640304679,Guild Members Table Additional Filtering
+2024-01_rpc_analytics_killswitch,305964783,RPC Server Analytics Killswitch
 2024-01_windows_key_frame_interval,2961250399,Windows key frame interval
