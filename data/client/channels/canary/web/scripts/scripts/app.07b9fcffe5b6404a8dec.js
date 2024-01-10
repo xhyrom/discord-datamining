@@ -10148,9 +10148,6 @@
             "use strict";
             e.exports = {
                 backButton: "backButton__2f3b7",
-                container: "container_b3957f",
-                header: "header_dfa38f",
-                headerTitle: "headerTitle__60ae2",
                 innerContainer: "innerContainer__68aae",
                 keyComboContainer: "keyComboContainer_c48c31",
                 keyComboInner: "keyComboInner_a00a38"
@@ -10164,6 +10161,7 @@
                 bottomRowActionDisabled: "bottomRowActionDisabled__413d8",
                 closeAction: "closeAction__06c6c",
                 container: "container__8316e",
+                innerBottomRowAction: "innerBottomRowAction_ccb714",
                 memberAvatar: "memberAvatar__5f01a",
                 memberName: "memberName_be9f8d",
                 memberNameContainer: "memberNameContainer__7f3f1",
