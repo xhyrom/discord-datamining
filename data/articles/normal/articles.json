@@ -1,5 +1,35 @@
 [
   {
+    "id": 20470973046295,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/20470973046295.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/20470973046295--Known-Issue-Support-for-Windows-7-8-and-8-1",
+    "author_id": 2921470028,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 115000352292,
+    "created_at": "2024-01-10T17:24:45Z",
+    "name": "[Known Issue] Support for Windows 7, 8, and 8.1",
+    "title": "[Known Issue] Support for Windows 7, 8, and 8.1",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-01-10T17:27:36Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720972,
+    "content_tag_ids": [],
+    "label_names": [
+      "answer-bot",
+      "known issue",
+      "windows 7",
+      "windows 8",
+      "windows 8.1"
+    ],
+    "body": "<p>As of <strong>March 15th, 2024</strong>, Discord will no longer be supported on Windows 7, Windows 8, or Windows 8.1.</p>\n<p>This change is in line with both Chromium’s deprecation policy as well as Microsoft’s end of support for Windows 7 ESU and Windows 8.1 extended support on <strong>March 15th, 2024</strong>.</p>\n<p>To continue receiving updates and support for your Discord client, you must upgrade to at least Windows 10.</p>\n<p>You can find more information about upgrading your Windows computer on the following pages from Microsoft:</p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/windows/upgrade-to-windows-10-faq-cce52341-7943-594e-72ce-e1cf00382445\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\" data-darkreader-inline-color=\"\">Upgrade to Windows 10 FAQ</span></a></li>\n<li><a href=\"https://support.microsoft.com/en-us/windows/upgrade-to-windows-11-faq-fb6206a2-1a0f-448a-80f1-8668ee5b2bf9\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\" data-darkreader-inline-color=\"\">Upgrade to Windows 11 FAQ</span></a></li>\n</ul>\n<h1 id=\"h_01HKT6AFKPQYXZNEB16HG1EBPE\">Frequently Asked Questions</h1>\n<p><strong>Q: Will the Discord client I currently have installed continue to work after March 15th, 2024?</strong><br>A: Basic functionality may continue to work, however the functionality and stability is not guaranteed as the client will no longer receive updates.</p>\n<p><strong>Q: If I cannot upgrade my computer right now, can I use the browser version of Discord?</strong><br>A: Yes, as long as your browser meets the minimum requirements found <a href=\"https://support.discord.com/hc/en-us/articles/213491697-What-are-the-OS-system-requirements-for-Discord-\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\" data-darkreader-inline-color=\"\">here</span></a>, you can continue to use it.</p>"
+  },
+  {
     "id": 20025810032535,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/20025810032535.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/20025810032535--Notice-Delayed-Responses-from-our-Support-Team-due-to-the-Holiday-Season",
