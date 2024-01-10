@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["78033"], {
+    ["41039"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -21905,6 +21905,7 @@
                         frameRate: h.ApplicationStreamFPS.FPS_30
                     },
                     clipsLength: f.ClipsLengthSettings.SECONDS_30,
+                    remindersEnabled: !0,
                     decoupledClipsEnabled: !1,
                     viewerClipsEnabled: !0,
                     viewerConnectivity: f.ClipsViewerConnectivitySettings.ALL
@@ -22041,7 +22042,16 @@
                     ...e.clipsSettings,
                     clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? C.clipsQuality : e.clipsSettings.clipsQuality
                 }
-            })];
+            }), e => {
+                var t;
+                return {
+                    ...e,
+                    clipsSettings: {
+                        ...e.clipsSettings,
+                        remindersEnabled: null !== (t = e.clipsSettings.remindersEnabled) && void 0 !== t ? t : C.remindersEnabled
+                    }
+                }
+            }];
             let N = new R(r.default, {
                 CLIPS_SETTINGS_UPDATE: function(e) {
                     let {
@@ -50167,7 +50177,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258574"
+                                build_number: "258578"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63554,4 +63564,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.600bf9545690a71dafe6.js.map
+//# sourceMappingURL=41039.9970f4b8672a96ea37f1.js.map
