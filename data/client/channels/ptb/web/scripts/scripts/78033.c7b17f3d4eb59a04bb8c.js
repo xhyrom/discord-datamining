@@ -28986,24 +28986,6 @@
                 }]
             })
         },
-        334280: function(e, t, n) {
-            "use strict";
-            n.r(t), (0, n("862205").createExperiment)({
-                kind: "user",
-                id: "2023-02_h265_android",
-                label: "Test how h265 works on android for DM calls",
-                defaultConfig: {
-                    signalH265SupportAndroid: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Calling with H.265",
-                    config: {
-                        signalH265SupportAndroid: !0
-                    }
-                }]
-            })
-        },
         705500: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -29023,24 +29005,6 @@
                     label: "Calling with H.265",
                     config: {
                         signalH265SupportMacOS: !0
-                    }
-                }]
-            })
-        },
-        715440: function(e, t, n) {
-            "use strict";
-            n.r(t), (0, n("862205").createExperiment)({
-                kind: "user",
-                id: "2022-10_h265_dm_call",
-                label: "Test how h265 works on ios/macos for DM calls",
-                defaultConfig: {
-                    signalH265SupportApple: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Calling with H.265",
-                    config: {
-                        signalH265SupportApple: !0
                     }
                 }]
             })
@@ -38133,11 +38097,9 @@
                 D = n("733589"),
                 y = n("933034"),
                 P = n("746800"),
-                L = n("584687");
-            n("334280");
-            var b = n("705500");
-            n("715440");
-            var M = n("238847"),
+                L = n("584687"),
+                b = n("705500"),
+                M = n("238847"),
                 U = n("981699"),
                 G = n("352705"),
                 w = n("140622"),
@@ -50193,7 +50155,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258864"
+                                build_number: "258868"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63580,4 +63542,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.2dbfdc74300310a3c041.js.map
+//# sourceMappingURL=78033.c7b17f3d4eb59a04bb8c.js.map
