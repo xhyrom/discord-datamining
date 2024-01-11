@@ -772,7 +772,7 @@
                     return Rf
                 },
                 PopoutWindowKeys: function() {
-                    return Rh
+                    return EV
                 },
                 PopoutEventTypes: function() {
                     return EF
@@ -796,7 +796,7 @@
                     return EQ
                 },
                 DISCODO_STORAGE_KEY: function() {
-                    return Ry
+                    return Rh
                 },
                 SpringTransitionPhases: function() {
                     return EJ
@@ -808,13 +808,13 @@
                     return Ez
                 },
                 MAX_MEMBERS_NOTIFY_ALL_MESSAGES: function() {
-                    return RY
+                    return Ry
                 },
                 UNREACHABLE_REQUEST_ANIMATION_FRAME_ID: function() {
-                    return Rw
+                    return RY
                 },
                 WELCOME_OLD_GUILD_AGE_THRESHOLD: function() {
-                    return Rb
+                    return Rw
                 },
                 AllowedMentionTypes: function() {
                     return Eq
@@ -826,16 +826,16 @@
                     return E0
                 },
                 DEFAULT_NUM_REACTION_USERS: function() {
-                    return Rm
+                    return Rb
                 },
                 TOKEN_REGEX: function() {
-                    return RK
+                    return Rm
                 },
                 HighlightSettings: function() {
                     return E1
                 },
                 SERVER_MONETIZATION_OWNERSHIP_TRANSFER_URL: function() {
-                    return RV
+                    return RK
                 },
                 VoiceFlags: function() {
                     return E3
@@ -2445,23 +2445,17 @@
             (aD = EK || (EK = {})).ALWAYS = "ALWAYS", aD.ON_CLICK = "ON_CLICK", aD.IF_MODERATOR = "IF_MODERATOR";
             let RH = 4,
                 Rf = [];
-            (aS = EV || (EV = {})).CHANNEL_CALL_POPOUT = "CHANNEL_CALL_POPOUT", aS.SOUNDBOARD = "SOUNDBOARD", aS.RTC_DEBUG_POPOUT = "RTC_DEBUG_POPOUT", aS.CHANNEL_POPOUT = "CHANNEL_POPOUT";
-            let Rh = function(_) {
-                let E = {};
-                for (let e in _) E[e] = "DISCORD_".concat(_[e]);
-                return E
-            }(EV);
-            (aC = EF || (EF = {})).LOADED = "loaded", aC.UNLOADED = "unloaded", (al = EW || (EW = {})).CONNECTING = "CONNECTING", al.ACTIVE = "ACTIVE", al.RECONNECTING = "RECONNECTING", al.ENDED = "ENDED", al.PAUSED = "PAUSED", al.FAILED = "FAILED", (as = Ev || (Ev = {})).USER_REQUESTED = "user_requested", as.STREAM_FULL = "stream_full", as.UNAUTHORIZED = "unauthorized", as.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited", (aP = Ek || (Ek = {})).SOUND = "SOUND", aP.VIDEO = "VIDEO", (aM = Ex || (Ex = {})).PLAYING = "playing", aM.PAUSED = "paused", (aG = EX || (EX = {})).NONE = "none", aG.WIFI = "wifi", aG.CELLULAR = "cellular", aG.UNKNOWN = "unknown", aG.ETHERNET = "ethernet", aG.BLUETOOTH = "bluetooth", aG.WIMAX = "wimax", aG.OTHER = "other", (aU = EQ || (EQ = {})).UNKNOWN = "unknown", aU.SLOW_TWO_G = "slow-2g", aU.TWO_G = "2g", aU.THREE_G = "3g", aU.FOUR_G = "4g", aU.FIVE_G = "5g";
-            let Ry = "discodoEasterEgg";
+            (aS = EV || (EV = {})).CHANNEL_CALL_POPOUT = "DISCORD_CHANNEL_CALL_POPOUT", aS.SOUNDBOARD = "DISCORD_SOUNDBOARD", aS.RTC_DEBUG_POPOUT = "DISCORD_RTC_DEBUG_POPOUT", aS.CHANNEL_POPOUT = "DISCORD_CHANNEL_POPOUT", (aC = EF || (EF = {})).LOADED = "loaded", aC.UNLOADED = "unloaded", (al = EW || (EW = {})).CONNECTING = "CONNECTING", al.ACTIVE = "ACTIVE", al.RECONNECTING = "RECONNECTING", al.ENDED = "ENDED", al.PAUSED = "PAUSED", al.FAILED = "FAILED", (as = Ev || (Ev = {})).USER_REQUESTED = "user_requested", as.STREAM_FULL = "stream_full", as.UNAUTHORIZED = "unauthorized", as.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited", (aP = Ek || (Ek = {})).SOUND = "SOUND", aP.VIDEO = "VIDEO", (aM = Ex || (Ex = {})).PLAYING = "playing", aM.PAUSED = "paused", (aG = EX || (EX = {})).NONE = "none", aG.WIFI = "wifi", aG.CELLULAR = "cellular", aG.UNKNOWN = "unknown", aG.ETHERNET = "ethernet", aG.BLUETOOTH = "bluetooth", aG.WIMAX = "wimax", aG.OTHER = "other", (aU = EQ || (EQ = {})).UNKNOWN = "unknown", aU.SLOW_TWO_G = "slow-2g", aU.TWO_G = "2g", aU.THREE_G = "3g", aU.FOUR_G = "4g", aU.FIVE_G = "5g";
+            let Rh = "discodoEasterEgg";
             (ad = EJ || (EJ = {})).INITIAL = "initial", ad.ENTER = "enter", ad.UPDATE = "update", ad.LEAVE = "leave", (au = EZ || (EZ = {})).CHANNEL_SETTINGS = "Channel Settings", au.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings", au.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings", (ap = Ej || (Ej = {}))[ap.INCOMING = 1] = "INCOMING", ap[ap.CHANNEL_FOLLOWER = 2] = "CHANNEL_FOLLOWER", (aB = Ez || (Ez = {}))[aB.APPLICATION = 0] = "APPLICATION", aB[aB.OVERVIEW = 1] = "OVERVIEW", aB[aB.CHANNEL_FOLLOWING = 2] = "CHANNEL_FOLLOWING", aB[aB.TWITCH = 3] = "TWITCH", aB[aB.YOUTUBE = 4] = "YOUTUBE", aB[aB.WEBHOOKS = 5] = "WEBHOOKS";
-            let RY = 2500,
-                Rw = 0,
-                Rb = 2592e6;
+            let Ry = 2500,
+                RY = 0,
+                Rw = 2592e6;
             (ag = Eq || (Eq = {})).USERS = "users", ag.ROLES = "roles", ag.EVERYONE = "everyone", (aH = E$ || (E$ = {}))[aH.AUTO = 1] = "AUTO", aH[aH.FULL = 2] = "FULL", (af = E0 || (E0 = {}))[af.NOT_ENABLED = 0] = "NOT_ENABLED", af[af.ENABLING = 1] = "ENABLING", af[af.ENABLED = 2] = "ENABLED", af[af.FAILED_TO_ENABLE = 3] = "FAILED_TO_ENABLE";
-            let Rm = 100,
-                RK = /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
+            let Rb = 100,
+                Rm = /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
             aV.default, (ah = E1 || (E1 = {}))[ah.NULL = 0] = "NULL", ah[ah.DISABLED = 1] = "DISABLED", ah[ah.ENABLED = 2] = "ENABLED";
-            let RV = "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
+            let RK = "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
             (ay = E3 || (E3 = {}))[ay.CLIPS_ENABLED = 1] = "CLIPS_ENABLED", ay[ay.ALLOW_VOICE_RECORDING = 2] = "ALLOW_VOICE_RECORDING", ay[ay.ALLOW_ANY_VIEWER_CLIPS = 4] = "ALLOW_ANY_VIEWER_CLIPS", (aY = E2 || (E2 = {})).LOADING = "LOADING", aY.ERROR = "ERROR", aY.READY = "READY", (aw = E5 || (E5 = {}))[aw.SECOND = 1e3] = "SECOND", aw[aw.MINUTE = 6e4] = "MINUTE", aw[aw.HOUR = 36e5] = "HOUR", aw[aw.DAY = 864e5] = "DAY", aw[aw.WEEK = 6048e5] = "WEEK", aw[aw.MONTH = 2592e6] = "MONTH", aw[aw.YEAR = 31536e6] = "YEAR"
         },
         504593: function(_, E, e) {
@@ -13534,4 +13528,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.473f208ca5d53616688d.js.map
+//# sourceMappingURL=7273.48f264fbc0de6d1838aa.js.map
