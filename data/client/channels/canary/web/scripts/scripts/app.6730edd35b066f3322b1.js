@@ -5768,7 +5768,6 @@
                 bannerHand: "bannerHand__7d103",
                 bannerTitle: "bannerTitle_c91ab8",
                 heroBanner: "heroBanner_e16ab1",
-                heroBannerNonPremium: "heroBannerNonPremium__3290f",
                 heroDescription: "heroDescription__31612",
                 heroDescriptionWithSidebar: "heroDescriptionWithSidebar_c1ef6c",
                 heroSubtitle: "heroSubtitle_a6c000",
