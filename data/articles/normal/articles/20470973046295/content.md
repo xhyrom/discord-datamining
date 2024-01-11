@@ -1,5 +1,5 @@
 <p>As of <strong>March 15th, 2024</strong>, Discord will no longer be supported on Windows 7, Windows 8, or Windows 8.1.</p>
-<p>This change is in line with both Chromium’s deprecation policy as well as Microsoft’s end of support for Windows 7 ESU and Windows 8.1 extended support on <strong>March 15th, 2024</strong>.</p>
+<p>This change is in line with both Chromium’s deprecation policy as well as Microsoft’s end of support for Windows 7 ESU and Windows 8.1 extended support on <strong>January 10, 2024</strong>.</p>
 <p>To continue receiving updates and support for your Discord client, you must upgrade to at least Windows 10.</p>
 <p>You can find more information about upgrading your Windows computer on the following pages from Microsoft:</p>
 <ul>
