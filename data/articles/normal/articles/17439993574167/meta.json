@@ -20,8 +20,18 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "ban",
+    "administrator",
+    "manage",
+    "safety",
     "answer-bot",
+    "server",
+    "kick",
+    "members",
     "activity alerts",
-    "security actions"
+    "security actions",
+    "timeout",
+    "alerts",
+    "raid protection"
   ]
 }
