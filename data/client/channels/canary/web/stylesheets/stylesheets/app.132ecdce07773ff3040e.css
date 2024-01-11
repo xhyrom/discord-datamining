@@ -60966,12 +60966,17 @@ html .progress__4ef76 {
 }
 
 .container__74da1 {
+    position: relative;
     flex: 1;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    align-items: center;
-    height: 100%
+    align-items: center
+}
+
+.settingsContainer_b14e24 {
+    margin-bottom: -90px;
+    padding-bottom: 60px
 }
 
 .settingsHeroNoBackground__0cfbe {
@@ -61134,6 +61139,17 @@ html .progress__4ef76 {
     transform: translatey(50%)
 }
 
+.bottomOfPageVisibilitySensor__201a9 {
+    position: absolute;
+    bottom: 0;
+    height: 300px
+}
+
+.scroller_a1aadd {
+    background-color: var(--background-primary);
+    contain: layout size
+}
+
 .container__662c9 {
     display: flex;
     flex-direction: column;
@@ -61236,6 +61252,7 @@ html .progress__4ef76 {
 
 .container__6eaa3 {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -61278,6 +61295,17 @@ html .progress__4ef76 {
 
 .heroHeading_a17887 {
     margin-bottom: 16px
+}
+
+.bottomOfPageVisibilitySensor_ab7f4d {
+    position: absolute;
+    bottom: 0;
+    height: 300px
+}
+
+.mainPageScroller__12afb {
+    background-color: var(--background-primary);
+    contain: layout size
 }
 
 .container__9ecba {
@@ -61547,12 +61575,6 @@ html .progress__4ef76 {
 
 .theme-light .tier1StreamPerk__930b9 {
     color: #69974d
-}
-
-.bottomOfPageVisibilitySensor_ca9280 {
-    position: absolute;
-    bottom: 0;
-    height: 300px
 }
 
 .socialLinks_c1fc99 {
@@ -75343,11 +75365,6 @@ input::-webkit-inner-spin-button {
     margin: 0 auto
 }
 
-.scroller__244e5 {
-    background-color: var(--background-primary);
-    contain: layout size
-}
-
 .categoryHeader__46769 {
     display: flex;
     flex-direction: column;
@@ -75412,7 +75429,8 @@ input::-webkit-inner-spin-button {
 
 .homeWrapper__59a03 {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    position: relative
 }
 
 .homeWrapperNormal__6f127 {
@@ -75437,12 +75455,6 @@ input::-webkit-inner-spin-button {
 
 .headerBar_afb1ac {
     transform: translatez(0)
-}
-
-.premiumContainer__2ebd0 {
-    position: relative;
-    flex: 1 1 auto;
-    margin: 0 auto
 }
 
 .theme-dark .premiumApplicationsHeader_e2dd83,
@@ -126278,4 +126290,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.77e021a0a6fb4a20c35f.css.map*/
+/*# sourceMappingURL=app.132ecdce07773ff3040e.css.map*/
