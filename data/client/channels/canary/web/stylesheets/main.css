@@ -26872,8 +26872,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -28564,6 +28564,11 @@ html .progress__4ef76 {
 
 .listItemButton_a98837 {
     cursor: pointer
+}
+
+.checkmarkCircle__88bcc {
+    color: var(--custom-poll-style-label);
+    filter: var(--shadow-low-filter)
 }
 
 .answersContainer_fd091b {
@@ -126277,4 +126282,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.0cbbf3c9179644ad45f9.css.map*/
+/*# sourceMappingURL=app.a5a4309acb2731f52bd2.css.map*/
