@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_unreads",
+    "label": "Unreads Experiment (grey-dot mode)",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Auto open migration",
+      "Treatment 2: Manually open migration"
+    ],
+    "hash": 2883062585,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "logExposure",
+      "autoOpen",
+      "manuallyOpen"
+    ]
+  }
+}
