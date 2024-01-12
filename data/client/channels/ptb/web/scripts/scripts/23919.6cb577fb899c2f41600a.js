@@ -13,11 +13,17 @@
                 unsubscribeMembers: function() {
                     return o
                 },
-                subscribeChannel: function() {
+                subscribeToMemberUpdates: function() {
                     return s
                 },
-                subscribeChannelDimensions: function() {
+                unsubscribeFromMemberUpdates: function() {
                     return u
+                },
+                subscribeChannel: function() {
+                    return a
+                },
+                subscribeChannelDimensions: function() {
+                    return c
                 }
             }), n("424973");
             var i = n("913144"),
@@ -39,7 +45,21 @@
                 })
             }
 
-            function s(e, t, n) {
+            function s(e) {
+                i.default.dispatch({
+                    type: "GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES",
+                    guildId: e
+                })
+            }
+
+            function u(e) {
+                i.default.dispatch({
+                    type: "GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES",
+                    guildId: e
+                })
+            }
+
+            function a(e, t, n) {
                 i.default.dispatch({
                     type: "GUILD_SUBSCRIPTIONS_CHANNEL",
                     guildId: e,
@@ -48,7 +68,7 @@
                 })
             }
 
-            function u(e) {
+            function c(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -57,21 +77,21 @@
                     rowHeight: o
                 } = e;
 
-                function u(e) {
+                function s(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
                     return Math.max(0, Math.ceil(Math.ceil(e / o)) + t)
                 }
-                let a = [];
+                let u = [];
 
                 function c(e) {
                     let t = e + (r.MINIMUM_RANGE - 1);
-                    return a.push([e, t]), t + 1
+                    return u.push([e, t]), t + 1
                 }
-                let d = u(.5 * l),
-                    f = u(i, -d),
-                    E = u(i + l, d);
+                let d = s(.5 * l),
+                    f = s(i, -d),
+                    E = s(i + l, d);
                 for (f > 0 && (f = Math.max(c(0), f)), f = Math.floor(f / r.MINIMUM_RANGE) * r.MINIMUM_RANGE; f <= E;) f = c(f);
-                s(t, n, a)
+                a(t, n, u)
             }
         },
         112679: function(e, t, n) {
@@ -2159,8 +2179,8 @@
                     openInvoiceId: U,
                     applicationId: y,
                     referralTrialOfferId: P,
-                    giftRecipient: O,
-                    returnRef: D,
+                    giftRecipient: D,
+                    returnRef: O,
                     subscription: b
                 } = null != e ? e : {}, w = !1, M = (0, r.v4)(), x = a.default.getCurrentUser(), G = (0, f.isPremiumExactly)(x, _.PremiumTypes.TIER_2);
                 (0, l.openModalLazy)(async () => {
@@ -2179,7 +2199,7 @@
                             skuId: A,
                             isGift: g,
                             giftMessage: m,
-                            giftRecipient: O,
+                            giftRecipient: D,
                             initialPlanId: t,
                             followupSKUInfo: p,
                             onClose: (e, t) => {
@@ -2199,7 +2219,7 @@
                             openInvoiceId: U,
                             applicationId: y,
                             referralTrialOfferId: P,
-                            returnRef: D,
+                            returnRef: O,
                             subscription: b
                         })
                     }
@@ -4289,4 +4309,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23919.5475cf189fea81c850c0.js.map
+//# sourceMappingURL=23919.6cb577fb899c2f41600a.js.map
