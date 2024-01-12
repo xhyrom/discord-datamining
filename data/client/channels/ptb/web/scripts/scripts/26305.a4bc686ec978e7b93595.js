@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["61985"], {
+    ["26305"], {
         53708: function(e, t, n) {
             "use strict";
             e.exports = n.p + "f6c7b8245d3a54cf98b2.png"
@@ -162,10 +162,10 @@
                     return I
                 },
                 saveAccountRequest: function() {
-                    return C
+                    return S
                 },
                 saveAccountChanges: function() {
-                    return S
+                    return C
                 },
                 getHarvestStatus: function() {
                     return T
@@ -245,7 +245,7 @@
                     d.default.logoutInternal(), (0, s.transitionTo)(f.Routes.DEFAULT_LOGGED_OUT)
                 })
             }
-            async function C(e) {
+            async function S(e) {
                 let t = await i.default.patch({
                         url: f.Endpoints.ME,
                         oldFormErrors: !0,
@@ -269,7 +269,7 @@
                 }), t
             }
 
-            function S(e) {
+            function C(e) {
                 let {
                     username: t,
                     discriminator: n,
@@ -300,7 +300,7 @@
                         a = (0, E.getDevicePushProvider)();
                     null != a && null != u && (o.push_provider = a, o.push_token = u);
                     let c = r.default.get(f.DEVICE_VOIP_TOKEN);
-                    return null != E.DEVICE_PUSH_VOIP_PROVIDER && null != c && (o.push_voip_provider = E.DEVICE_PUSH_VOIP_PROVIDER, o.push_voip_token = c), C(o)
+                    return null != E.DEVICE_PUSH_VOIP_PROVIDER && null != c && (o.push_voip_provider = E.DEVICE_PUSH_VOIP_PROVIDER, o.push_voip_token = c), S(o)
                 }, {
                     checkEnabled: !1,
                     modalProps: {
@@ -1259,10 +1259,10 @@
                     return I
                 },
                 resetPendingMemberChanges: function() {
-                    return C
+                    return S
                 },
                 resetPendingProfileChanges: function() {
-                    return S
+                    return C
                 },
                 resetAllPending: function() {
                     return T
@@ -1381,13 +1381,13 @@
                 })
             }
 
-            function C() {
+            function S() {
                 r.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
                 })
             }
 
-            function S() {
+            function C() {
                 r.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
                 })
@@ -1427,11 +1427,11 @@
                 h = {},
                 I = !1;
 
-            function C() {
+            function S() {
                 p = _.FormStates.CLOSED, h = {}, a = null, c = void 0, d = []
             }
 
-            function S() {
+            function C() {
                 T(), v(), h = {}, p = _.FormStates.OPEN
             }
 
@@ -1501,9 +1501,9 @@
                 GUILD_IDENTITY_SETTINGS_INIT: function(e) {
                     a = e.guild, p = _.FormStates.OPEN, h = {}, c = e.source, d = e.analyticsLocations
                 },
-                GUILD_IDENTITY_SETTINGS_CLOSE: C,
+                GUILD_IDENTITY_SETTINGS_CLOSE: S,
                 GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: function() {
-                    S(), C()
+                    C(), S()
                 },
                 GUILD_IDENTITY_SETTINGS_SET_GUILD: function(e) {
                     a = e.guild, h = {}
@@ -1557,8 +1557,8 @@
                 },
                 GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: T,
                 GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: v,
-                GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: S,
-                GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: S,
+                GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: C,
+                GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: C,
                 GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: function() {
                     h = {}
                 },
@@ -2063,12 +2063,12 @@
                     }
                 }(e), {
                     step: I,
-                    stepConfigs: C,
-                    setBodyNode: S,
+                    stepConfigs: S,
+                    setBodyNode: C,
                     setFooterNode: T,
                     setModalOverlayNode: v,
                     setReadySlideId: N
-                } = (0, f.usePaymentContext)(), g = C.find(e => e.key === I);
+                } = (0, f.usePaymentContext)(), g = S.find(e => e.key === I);
                 r.useEffect(() => {
                     v(null)
                 }, [I, v]), u(null != g, "Unknown step for current payment flow.");
@@ -2083,11 +2083,11 @@
                                 activeSlide: I,
                                 centered: !1,
                                 onSlideReady: e => N(e),
-                                children: C.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
+                                children: S.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
                                     id: e.key,
                                     children: (0, i.jsx)("form", {
                                         className: o(E.sliderBody, L),
-                                        ref: e => S(e),
+                                        ref: e => C(e),
                                         onSubmit: e => e.preventDefault()
                                     })
                                 }, e.key))
@@ -2146,8 +2146,8 @@
                     followupSKUInfo: p,
                     onClose: h,
                     onComplete: I,
-                    onSubscriptionConfirmation: C,
-                    analyticsLocations: S,
+                    onSubscriptionConfirmation: S,
+                    analyticsLocations: C,
                     analyticsObject: T,
                     analyticsLocation: v,
                     analyticsSourceLocation: N,
@@ -2183,13 +2183,13 @@
                             initialPlanId: t,
                             followupSKUInfo: p,
                             onClose: (e, t) => {
-                                r(), null == h || h(e), e && (null == C || C(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !G && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
+                                r(), null == h || h(e), e && (null == S || S(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !G && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
                                 w = !0, null == I || I(), !g && (0, u.setCanPlayWowMoment)(!0)
                             },
-                            onSubscriptionConfirmation: C,
-                            analyticsLocations: S,
+                            onSubscriptionConfirmation: S,
+                            analyticsLocations: C,
                             analyticsObject: T,
                             analyticsLocation: v,
                             analyticsSourceLocation: N,
@@ -2215,8 +2215,8 @@
                             is_gift: g,
                             eligible_for_trial: null != L,
                             application_id: y,
-                            location_stack: S
-                        }), (0, o.clearError)(), (0, s.clearPurchaseTokenAuthState)(), null == h || h(w), w && (null == C || C())
+                            location_stack: C
+                        }), (0, o.clearError)(), (0, s.clearPurchaseTokenAuthState)(), null == h || h(w), w && (null == S || S())
                     }
                 })
             }
@@ -2299,7 +2299,7 @@
                 }, {
                     autoTrackExposure: !1
                 }), i = d.default.shouldFetchPremiumLikelihood(), r = u.default.getCurrentUser();
-                C(r, i, t, n)
+                S(r, i, t, n)
             }
 
             function I(e) {
@@ -2312,11 +2312,11 @@
                     autoTrackExposure: !1
                 }), l = (0, r.default)([d.default], () => d.default.shouldFetchPremiumLikelihood()), o = (0, r.default)([u.default], () => u.default.getCurrentUser());
                 i.useEffect(() => {
-                    C(o, l, t, n)
+                    S(o, l, t, n)
                 }, [o, l, t, n])
             }
 
-            function C(e, t, n, i) {
+            function S(e, t, n, i) {
                 null != e && !(0, c.isPremium)(e) && n && (t && p(), i && (!a.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_0) && !a.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_0) && (0, s.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_0), !a.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_2) && !a.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_2) && (0, s.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_2)))
             }
         },
@@ -2583,7 +2583,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return C
+                    return S
                 }
             }), n("424973");
             var i = n("917351"),
@@ -2640,7 +2640,7 @@
                 }
             }
             I.displayName = "StickersPersistedStore", I.persistKey = "StickersPersistedStoreV2";
-            var C = new I(o.default, {
+            var S = new I(o.default, {
                 STICKER_TRACK_USAGE: e => {
                     let {
                         stickerIds: t
@@ -2683,10 +2683,10 @@
                     return I
                 },
                 setPendingPronouns: function() {
-                    return C
+                    return S
                 },
                 setPendingAccentColor: function() {
-                    return S
+                    return C
                 },
                 setPendingThemeColors: function() {
                     return T
@@ -2788,14 +2788,14 @@
                 })
             }
 
-            function C(e) {
+            function S(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS",
                     pronouns: e
                 })
             }
 
-            function S(e) {
+            function C(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR",
                     color: e
@@ -2835,6 +2835,24 @@
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
                     themeColors: e
                 }), f(d.AnalyticsPremiumFeatureNames.PROFILE_THEME_COLOR)
+            }
+        },
+        42507: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useFrecencySettings: function() {
+                    return s
+                }
+            });
+            var i = n("884691"),
+                r = n("446674"),
+                l = n("872173"),
+                o = n("374363");
+
+            function s() {
+                return i.useEffect(() => {
+                    l.FrecencyUserSettingsActionCreators.loadIfNecessary()
+                }, []), (0, r.useStateFromStores)([o.default], () => o.default.frecencyWithoutFetchingLatest)
             }
         },
         931138: function(e, t, n) {
@@ -2923,7 +2941,7 @@
                     return h
                 },
                 default: function() {
-                    return C
+                    return S
                 }
             });
             var i, r, l = n("37983"),
@@ -2983,9 +3001,9 @@
                     buttonShineClassName: _,
                     onlyShineOnHover: p,
                     ...I
-                } = e, C = o.createRef(), S = (0, d.default)(C), T = !i && !r && !0 !== s && (!p || S);
+                } = e, S = o.createRef(), C = (0, d.default)(S), T = !i && !r && !0 !== s && (!p || C);
                 return (0, l.jsxs)(c.Button, {
-                    buttonRef: C,
+                    buttonRef: S,
                     ...I,
                     className: u(E.shinyButton, n),
                     disabled: i,
@@ -2998,7 +3016,7 @@
                 })
             };
             I.ShineSizes = r;
-            var C = I
+            var S = I
         },
         191814: function(e, t, n) {
             "use strict";
@@ -3025,6 +3043,34 @@
                 })
             }
             n("884691")
+        },
+        476765: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                uid: function() {
+                    return o
+                },
+                useUID: function() {
+                    return s
+                },
+                UID: function() {
+                    return u
+                }
+            });
+            var i = n("995008"),
+                r = n.n(i),
+                l = n("775560");
+            let o = function() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
+                    return r(e)
+                },
+                s = () => (0, l.useLazyValue)(() => o()),
+                u = e => {
+                    let {
+                        children: t
+                    } = e;
+                    return t(s())
+                }
         },
         461380: function(e, t, n) {
             "use strict";
@@ -3059,12 +3105,12 @@
                         transition: p = f.transition,
                         className: h,
                         foreground: I,
-                        expanded: C,
-                        ...S
+                        expanded: S,
+                        ...C
                     } = e, {
                         enabled: T
                     } = (0, c.useRedesignIconContext)(), v = t;
-                    if (!0 === C ? v = E.DOWN : !1 === C && (v = E.RIGHT), T) {
+                    if (!0 === S ? v = E.DOWN : !1 === S && (v = E.RIGHT), T) {
                         let e = {
                             [E.UP]: a.ChevronSmallUpIcon,
                             [E.DOWN]: o.ChevronSmallDownIcon,
@@ -3072,7 +3118,7 @@
                             [E.RIGHT]: u.ChevronSmallRightIcon
                         } [v];
                         return (0, i.jsx)(e, {
-                            ...S,
+                            ...C,
                             className: h,
                             width: n,
                             height: r,
@@ -3085,7 +3131,7 @@
                         width: n,
                         height: r,
                         viewBox: "0 0 24 24",
-                        ...(0, d.default)(S),
+                        ...(0, d.default)(C),
                         children: (0, i.jsx)("path", {
                             className: I,
                             fill: "none",
@@ -3727,7 +3773,7 @@
                     return N
                 },
                 useFullScreenLayerStore: function() {
-                    return C
+                    return S
                 },
                 openFullScreenLayer: function() {
                     return g
@@ -3750,7 +3796,7 @@
                 h = n("275495");
             let I = (0, _.cssValueToNumber)(d.default.FULL_SCREEN_LAYER_ANIMATION_DURATION);
             (r = i || (i = {}))[r.ENTERING = 1] = "ENTERING", r[r.ENTERED = 2] = "ENTERED", r[r.EXITING = 3] = "EXITING", r[r.EXITED = 4] = "EXITED";
-            let C = (0, c.default)(e => ({
+            let S = (0, c.default)(e => ({
                 fullScreenLayers: [],
                 addLayer: t => e(e => {
                     let {
@@ -3762,7 +3808,7 @@
                 })
             }));
 
-            function S(e) {
+            function C(e) {
                 let {
                     item: t
                 } = e, n = o.useRef(null);
@@ -3811,13 +3857,13 @@
             function N() {
                 let {
                     reducedMotion: e
-                } = o.useContext(f.AccessibilityPreferencesContext), t = e.enabled, n = t ? v : T, i = C(e => e.fullScreenLayers);
+                } = o.useContext(f.AccessibilityPreferencesContext), t = e.enabled, n = t ? v : T, i = S(e => e.fullScreenLayers);
                 return (0, l.jsx)(a.TransitionGroup, {
                     children: i.map(e => (0, l.jsx)(a.CSSTransition, {
                         classNames: n,
                         timeout: I,
                         onEntered: () => {
-                            C.setState({
+                            S.setState({
                                 fullScreenLayers: i.map(t => t.key === e.key ? {
                                     ...t,
                                     transitionState: 2
@@ -3825,7 +3871,7 @@
                             })
                         },
                         unmountOnExit: !0,
-                        children: (0, l.jsx)(S, {
+                        children: (0, l.jsx)(C, {
                             item: e
                         })
                     }, e.key))
@@ -3839,7 +3885,7 @@
                         Layer: i
                     } = t,
                     r = null != n ? n : u();
-                return C.setState(t => ({
+                return S.setState(t => ({
                     fullScreenLayers: [...t.fullScreenLayers, {
                         key: r,
                         transitionState: 1,
@@ -3850,7 +3896,7 @@
             }
 
             function m(e) {
-                C.setState(t => ({
+                S.setState(t => ({
                     fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
                 }))
             }
@@ -3920,7 +3966,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 Sizes: function() {
-                    return C
+                    return S
                 },
                 default: function() {
                     return v
@@ -3941,14 +3987,14 @@
                 p = n("523096"),
                 h = n("587974"),
                 I = n("494101");
-            let C = {
+            let S = {
                 SIZE_16: 16,
                 SIZE_24: 24,
                 SIZE_32: 32,
                 SIZE_56: 56
             };
 
-            function S(e, t) {
+            function C(e, t) {
                 let n = e instanceof f.default ? e : null != e ? e.user : null;
                 return null != n ? n.id : "user-".concat(t)
             }
@@ -3968,13 +4014,13 @@
                         o.push(t ? (0, i.jsx)("div", {
                             className: I.avatarContainer,
                             children: s
-                        }, S(null !== (c = e[a]) && void 0 !== c ? c : null, a)) : (0, i.jsx)(h.default, {
+                        }, C(null !== (c = e[a]) && void 0 !== c ? c : null, a)) : (0, i.jsx)(h.default, {
                             className: I.avatarContainerMasked,
                             height: r,
                             width: r,
                             mask: h.default.Masks.VOICE_USER_SUMMARY_ITEM,
                             children: s
-                        }, S(e[a], a))), a++
+                        }, C(e[a], a))), a++
                     }
                     return null != l ? o.push(l) : null != u && o.push(u), o
                 }
@@ -4041,15 +4087,15 @@
                         }),
                         children: n => (0, i.jsxs)("div", {
                             className: o(e, I.container, function() {
-                                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : C.SIZE_24;
+                                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S.SIZE_24;
                                 switch (e) {
-                                    case C.SIZE_16:
+                                    case S.SIZE_16:
                                         return I.size16;
-                                    case C.SIZE_24:
+                                    case S.SIZE_24:
                                         return I.size24;
-                                    case C.SIZE_32:
+                                    case S.SIZE_32:
                                         return I.size32;
-                                    case C.SIZE_56:
+                                    case S.SIZE_56:
                                         return I.size56;
                                     default:
                                         return I.size24
@@ -4112,7 +4158,7 @@
                 },
                 renderIcon: !1,
                 showDefaultAvatarsForNullUsers: !1,
-                size: C.SIZE_24
+                size: S.SIZE_24
             };
             var v = T
         },
@@ -4271,4 +4317,4 @@
         }
     }
 ]);
-//# sourceMappingURL=61985.887e3e028a92cbd5cbd1.js.map
+//# sourceMappingURL=26305.a4bc686ec978e7b93595.js.map

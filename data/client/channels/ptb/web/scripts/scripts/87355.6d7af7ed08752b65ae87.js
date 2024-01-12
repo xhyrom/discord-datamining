@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["53526"], {
+    ["87355"], {
         89400: function(e, t, n) {
             var i = {
                 "./activities-rocket-time.mp3": "329160",
@@ -546,10 +546,10 @@
                     return x
                 },
                 updateClipsLength: function() {
-                    return w
+                    return U
                 },
                 updateViewerClipsEnabled: function() {
-                    return P
+                    return w
                 },
                 saveClip: function() {
                     return G
@@ -591,9 +591,9 @@
                 h = n("773336"),
                 S = n("709681"),
                 v = n("386045"),
-                C = n("13136"),
-                A = n("881095"),
-                I = n("997942"),
+                I = n("13136"),
+                C = n("881095"),
+                A = n("997942"),
                 T = n("310238"),
                 b = n("99366"),
                 y = n("80028"),
@@ -682,7 +682,7 @@
                 })
             }
 
-            function w(e) {
+            function U(e) {
                 a.default.dispatch({
                     type: "CLIPS_SETTINGS_UPDATE",
                     settings: {
@@ -691,7 +691,7 @@
                 })
             }
 
-            function P(e) {
+            function w(e) {
                 a.default.dispatch({
                     type: "CLIPS_SETTINGS_UPDATE",
                     settings: {
@@ -700,7 +700,7 @@
                 })
             }
 
-            function U(e, t) {
+            function P(e, t) {
                 var n, i, a, l, u, d, r, o, f, p;
                 let m = new Map;
                 for (let e in t.framesEncodedByEncoder) {
@@ -741,8 +741,8 @@
             async function k(e) {
                 let t = v.default.getSettings(),
                     n = t.storageLocation,
-                    i = (0, A.default)(e),
-                    s = "".concat((0, C.default)(i.applicationName.substring(0, 20)), "_").concat(i.id, ".mp4"),
+                    i = (0, C.default)(e),
+                    s = "".concat((0, I.default)(i.applicationName.substring(0, 20)), "_").concat(i.id, ".mp4"),
                     d = l.default.fileManager.join(n, s),
                     r = m.default.getMediaEngine(),
                     o = JSON.stringify(i),
@@ -783,7 +783,7 @@
                         duration: e,
                         thumbnail: t,
                         clipStats: n
-                    } = await (null != c ? r.saveClipForUser(c, d, o) : r.saveClip(d, o)), a = U(_, n);
+                    } = await (null != c ? r.saveClipForUser(c, d, o) : r.saveClip(d, o)), a = P(_, n);
                     a.clip_save_time_ms = n.clipSaveTimeMs, a.clip_size_bytes = n.clipSizeBytes, null != n.viewerDecodeFps && (a.decode_fps_during_clip = n.viewerDecodeFps, a.encode_fps_during_clip = n.viewerEncodeFps, a.target_fps = null), E.default.track(N.AnalyticEvents.CLIP_SAVED, a);
                     let s = await (null != l.default.clips.getClipProtocolURLFromPath ? (0, b.createThumbnailFromVideo)(l.default.clips.getClipProtocolURLFromPath(d), 0) : (0, b.createThumbnail)(t));
                     return i.thumbnail = s, i.length = e, y.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (h = null == s ? void 0 : s.length) && void 0 !== h ? h : 0, " bytes thumbnail.")), await r.updateClipMetadata(d, JSON.stringify(i)), {
@@ -795,7 +795,7 @@
                             type: "CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR",
                             clipId: i.id
                         }), !("errorMessage" in n)) throw E.default.track(N.AnalyticEvents.CLIP_SAVE_FAILURE, _), n;
-                    let t = U(_, n);
+                    let t = P(_, n);
                     throw t.error_at = n.errorAt, t.error_message = n.errorMessage, E.default.track(N.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
                 }
             }
@@ -846,7 +846,7 @@
                         ...n,
                         ...t
                     },
-                    l = await (0, I.validateClipMetadata)(i);
+                    l = await (0, A.validateClipMetadata)(i);
                 null != l && (await m.default.getMediaEngine().updateClipMetadata(i.filepath, JSON.stringify(i)), E.default.track(N.AnalyticEvents.CLIP_EDITED, {
                     clip_id: i.id
                 }), a.default.dispatch({
@@ -872,7 +872,7 @@
                 let n = await l.default.clips.loadClipsDirectory(e),
                     i = [];
                 for (let e of n) {
-                    let t = await (0, I.validateClipMetadata)({
+                    let t = await (0, A.validateClipMetadata)({
                         ...e.metadata,
                         filepath: e.filepath
                     });
@@ -1070,7 +1070,7 @@
                     return v
                 },
                 preloadForumThreads: function() {
-                    return A
+                    return C
                 }
             }), n("222007");
             var i = n("917351"),
@@ -1155,7 +1155,7 @@
                     loaded: i,
                     firstMessage: a
                 } = (0, l.useStateFromStoresObject)([c.default], () => c.default.getMessage(e.id)), s = (0, l.useStateFromStores)([d.default], () => d.default.getChannel(e.parent_id));
-                if (null != s && (t = i, n = a, !t && null == n)) I(s, e.id);
+                if (null != s && (t = i, n = a, !t && null == n)) A(s, e.id);
                 return {
                     loaded: i,
                     firstMessage: a
@@ -1167,13 +1167,13 @@
                     loaded: n,
                     message: i
                 } = (0, l.useStateFromStoresObject)([f.default], () => f.default.getMessageState(t.id));
-                return null != e && E(t.guild_id, t.id) && I(e, t.id), {
+                return null != e && E(t.guild_id, t.id) && A(e, t.id), {
                     loaded: n,
                     mostRecentMessage: i
                 }
             }
 
-            function C(e, t) {
+            function I(e, t) {
                 let n = !1;
                 t.forEach(t => {
                     var i, a;
@@ -1185,16 +1185,16 @@
                 }), n && null == g && (g = setTimeout(T, 0))
             }
 
-            function A(e) {
-                C(e, (0, r.computeThreadIdsSnapshot)(e.id).slice(0, 10))
+            function C(e) {
+                I(e, (0, r.computeThreadIdsSnapshot)(e.id).slice(0, 10))
             }
 
-            function I(e, t) {
+            function A(e, t) {
                 if (_.hasRequested(e.id, t)) return;
                 let n = (0, r.computeThreadIdsSnapshot)(e.id),
                     i = n.findIndex(e => e === t),
                     a = n.slice(i, i + 5).filter(t => !_.hasRequested(e.id, t));
-                C(e, a)
+                I(e, a)
             }
             async function T() {
                 try {
@@ -1329,6 +1329,57 @@
                 LOAD_THREADS_SUCCESS: _
             })
         },
+        542827: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return p
+                }
+            }), n("881410"), n("222007"), n("424973");
+            var i = n("917351"),
+                a = n.n(i),
+                l = n("267363"),
+                s = n("863636"),
+                u = n("401690"),
+                d = n("923959"),
+                r = n("660478"),
+                o = n("599110"),
+                c = n("49111"),
+                f = n("133335");
+
+            function p(e, t, n) {
+                let i = a.flatMap(e, e => {
+                    let t = d.default.getSelectableChannelIds(e),
+                        n = d.default.getVocalChannelIds(e),
+                        i = [...t, ...n],
+                        a = u.default.getActiveJoinedThreadsForGuild(e);
+                    for (let e of t) {
+                        var l;
+                        let t = null !== (l = a[e]) && void 0 !== l ? l : {};
+                        for (let e in t) i.push(e)
+                    }
+                    return i
+                }).map(e => ({
+                    channelId: e,
+                    readStateType: f.ReadStateTypes.CHANNEL,
+                    messageId: r.default.lastMessageId(e)
+                }));
+                return e.forEach(e => {
+                    i.push({
+                        channelId: e,
+                        readStateType: f.ReadStateTypes.GUILD_EVENT,
+                        messageId: r.default.lastMessageId(e, f.ReadStateTypes.GUILD_EVENT)
+                    }), i.push({
+                        channelId: e,
+                        readStateType: f.ReadStateTypes.GUILD_ONBOARDING_QUESTION,
+                        messageId: s.default.ackIdForGuild(e)
+                    })
+                }), o.default.track(c.AnalyticEvents.MARK_AS_READ, {
+                    source: t,
+                    type: "guild"
+                }), (0, l.bulkAck)(i, n)
+            }
+        },
         658536: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1456,7 +1507,7 @@
                 let v = _.find(e => !(0, u.isDismissibleContentDismissed)(e)) === t;
                 if (!v) return !1;
                 let {
-                    showLifecycleUpsells: C
+                    showLifecycleUpsells: I
                 } = c.default.getCurrentConfig({
                     guildId: e,
                     location: "7f5b67_1"
@@ -1464,7 +1515,7 @@
                     disable: l || !(0, f.isGuildOnboardingSettingsAvailable)(e),
                     autoTrackExposure: !0
                 });
-                return C
+                return I
             }
 
             function h(e, t) {
@@ -1497,7 +1548,7 @@
                     return h
                 },
                 fetchAndUpdateSavedMessages: function() {
-                    return C
+                    return I
                 }
             });
             var i = n("872717"),
@@ -1617,7 +1668,7 @@
                 })
             }
 
-            function C() {
+            function I() {
                 return c.default.recentlyFetched() ? Promise.resolve() : i.default.get({
                     url: p.Endpoints.SAVED_MESSAGES
                 }).then(e => {
@@ -1820,9 +1871,9 @@
                 h = n("305961"),
                 S = n("660478"),
                 v = n("18494"),
-                C = n("162771"),
-                A = n("519841"),
-                I = n("787336"),
+                I = n("162771"),
+                C = n("519841"),
+                A = n("787336"),
                 T = n("49111"),
                 b = n("724210"),
                 y = n("782340");
@@ -1853,9 +1904,9 @@
                     return
                 }
                 let g = f.default.getOrCreate(n);
-                A.AttachmentLinkRefreshExperiment.getCurrentConfig({
+                C.AttachmentLinkRefreshExperiment.getCurrentConfig({
                     location: "fetch_messages"
-                }).enabled && g.some(I.messageHasExpiredAttachmentUrl) && (N.log("Found expired attachment link, clearing messages"), f.default.clear(n), g = f.default.getOrCreate(n)), null != g.jumpTargetId && null == a && (g = g.mutate({
+                }).enabled && g.some(A.messageHasExpiredAttachmentUrl) && (N.log("Found expired attachment link, clearing messages"), f.default.clear(n), g = f.default.getOrCreate(n)), null != g.jumpTargetId && null == a && (g = g.mutate({
                     jumpTargetId: null,
                     jumped: !1,
                     jumpType: o.JumpTypes.ANIMATED
@@ -1935,7 +1986,7 @@
                             guildId: n.getGuildId(),
                             channelId: n.id,
                             messageId: null == e ? void 0 : null === (t = e.params) || void 0 === t ? void 0 : t.message
-                        }), w(n.getGuildId(), n.id)
+                        }), U(n.getGuildId(), n.id)
                     }
                 }
             }
@@ -1954,7 +2005,7 @@
                         isPreload: e,
                         skipLocalFetch: t,
                         logFailures: n
-                    }) : n && N.log("Skipping fetch because the selected channel is not a text channel"), w(a.getGuildId(), a.id)) : n && N.log("Skipping fetch because channel is null")
+                    }) : n && N.log("Skipping fetch because the selected channel is not a text channel"), U(a.getGuildId(), a.id)) : n && N.log("Skipping fetch because channel is null")
                 } else n && N.log("Skipping fetch because there is no selected channel")
             }
 
@@ -1970,7 +2021,7 @@
                     channelId: n,
                     messageId: i,
                     jumpType: a
-                }), w(t, n)
+                }), U(t, n)
             }
 
             function x(e) {
@@ -1984,7 +2035,7 @@
                 })
             }
 
-            function w(e, t) {
+            function U(e, t) {
                 let n = g.default.getCurrentSidebarChannelId(t);
                 if (null == n) return;
                 let i = g.default.getCurrentSidebarMessageId(t);
@@ -1995,15 +2046,15 @@
                 })
             }
 
-            function P() {
+            function w() {
                 let e = v.default.getChannelId(),
-                    t = C.default.getGuildId();
+                    t = I.default.getGuildId();
                 if (null == t || null == e) return;
                 let n = g.default.getSidebarState(e);
-                (null == n ? void 0 : n.type) !== m.SidebarType.VIEW_CHANNEL && w(t, e)
+                (null == n ? void 0 : n.type) !== m.SidebarType.VIEW_CHANNEL && U(t, e)
             }
 
-            function U(e) {
+            function P(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -2012,7 +2063,7 @@
                 i === T.CURRENT_APP_CONTEXT && (D({
                     guildId: t,
                     channelId: n
-                }), w(t, n))
+                }), U(t, n))
             }
 
             function k(e) {
@@ -2105,7 +2156,7 @@
                     u.default.unsubscribe("CONNECTION_OPEN", M)
                 }
                 constructor(...e) {
-                    super(...e), this.fetchMessages = D, this.loadSelectedChannelIfNecessary = O, this.stores = new Map().set(g.default, P), this.actions = {
+                    super(...e), this.fetchMessages = D, this.loadSelectedChannelIfNecessary = O, this.stores = new Map().set(g.default, w), this.actions = {
                         APP_STATE_UPDATE: j,
                         OVERLAY_INITIALIZE: M,
                         CHANNEL_SELECT: R,
@@ -2113,7 +2164,7 @@
                         THREAD_CREATE: k,
                         THREAD_LIST_SYNC: () => O(),
                         CHANNEL_CREATE: k,
-                        CHANNEL_PRELOAD: U,
+                        CHANNEL_PRELOAD: P,
                         THREAD_CREATE_LOCAL: G,
                         GUILD_CREATE: () => O(),
                         MESSAGE_END_EDIT: F,
@@ -2704,4 +2755,4 @@
         }
     }
 ]);
-//# sourceMappingURL=53526.6375832349b340f8d573.js.map
+//# sourceMappingURL=87355.6d7af7ed08752b65ae87.js.map
