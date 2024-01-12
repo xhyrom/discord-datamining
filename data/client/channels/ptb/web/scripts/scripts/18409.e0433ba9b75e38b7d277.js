@@ -88,13 +88,13 @@
                     return h
                 },
                 getBlindIds: function() {
-                    return E
+                    return b
                 },
                 uploadCallscopeLogs: function() {
-                    return L
+                    return E
                 },
                 uploadCallscopeLogFiles: function() {
-                    return b
+                    return L
                 }
             }), n("222007");
             var o = n("872717"),
@@ -122,7 +122,7 @@
                     return null == e || e.length < 2 || null == e[1] ? "unknown" : e[1]
                 }
             }
-            async function E(t, e, n) {
+            async function b(t, e, n) {
                 let o = new a.BlindID(n),
                     l = await o.blind(t),
                     r = await o.blind(e);
@@ -131,7 +131,7 @@
                     blindUserId: r
                 }
             }
-            async function L(t, e, n, o) {
+            async function E(t, e, n, o) {
                 var a;
                 if (!__OVERLAY__) {
                     if ((null === l.default || void 0 === l.default ? void 0 : null === (a = l.default.fileManager) || void 0 === a ? void 0 : a.getCallscopeLogFiles) == null) {
@@ -146,16 +146,16 @@
                         let {
                             blindChannelId: a,
                             blindUserId: r
-                        } = await E(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
+                        } = await b(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
                         f.info("uploadCallscopeLogs: Uploading callscope logs for context: ".concat(o, ", ").concat(i));
                         let c = await l.default.fileManager.getCallscopeLogFiles(a);
-                        await b(r, c)
+                        await L(r, c)
                     } catch (t) {
                         f.error("uploadCallscopeLogs: Error uploading logs ".concat(null == t ? void 0 : t.text), t)
                     }
                 }
             }
-            async function b(t, e) {
+            async function L(t, e) {
                 try {
                     if (0 === e.length) {
                         f.error("uploadCallscopeLogFiles: No files found.");
@@ -247,8 +247,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "258906",
-                    versionHash: "1cc04d0a5fec789a6e2303a4a14982eadfbb1c2a"
+                    buildNumber: "258908",
+                    versionHash: "c5bb3616a672dec14ba3bd1cb87b5132e7263988"
                 }
             }
             n.r(e), n.d(e, {
@@ -357,4 +357,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18409.0942b6eea34dbec2873c.js.map
+//# sourceMappingURL=18409.e0433ba9b75e38b7d277.js.map
