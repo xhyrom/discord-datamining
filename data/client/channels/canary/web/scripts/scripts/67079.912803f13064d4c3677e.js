@@ -8,13 +8,13 @@
                     return o
                 },
                 default: function() {
-                    return v
+                    return y
                 }
             }), n("70102"), n("860677"), n("506083");
             var o, l, a = n("759843"),
                 i = n("171718"),
-                d = n("872717"),
-                r = n("95410"),
+                r = n("872717"),
+                d = n("95410"),
                 u = n("913144"),
                 c = n("448993"),
                 E = n("307439"),
@@ -22,8 +22,8 @@
                 p = n("21121"),
                 f = n("776502"),
                 h = n("393414"),
-                A = n("271938"),
-                S = n("350522"),
+                S = n("271938"),
+                A = n("350522"),
                 O = n("840707"),
                 I = n("772017"),
                 N = n("49111"),
@@ -42,13 +42,13 @@
                 })
             }
 
-            function y() {
+            function v() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N.Routes.DEFAULT_LOGGED_OUT;
                 R();
                 let t = (0, p.getRootNavigationRefIfInExperiment)();
                 null != e && (null != t ? (I.default.popAll(), t.navigate("auth")) : (0, h.transitionTo)(e))
             }(l = o || (o = {})).MFA = "MFA", l.SUCCESS = "SUCCESS";
-            var v = {
+            var y = {
                 startSession(e) {
                     u.default.wait(() => {
                         u.default.dispatch({
@@ -72,8 +72,8 @@
                         loginCode: o,
                         undelete: l,
                         source: i,
-                        giftCodeSKUId: d,
-                        invite: r,
+                        giftCodeSKUId: r,
+                        invite: d,
                         isMultiAccount: E
                     } = e;
                     u.default.dispatch({
@@ -88,14 +88,14 @@
                             undelete: l,
                             login_code: o,
                             login_source: i,
-                            gift_code_sku_id: d
+                            gift_code_sku_id: r
                         },
                         retries: 2,
                         oldFormErrors: !0,
                         trackedActionData: {
                             event: a.NetworkActionNames.USER_LOGIN,
                             properties: {
-                                invite_code: null == r ? void 0 : r.code,
+                                invite_code: null == d ? void 0 : d.code,
                                 is_multi_account: E
                             }
                         },
@@ -114,20 +114,20 @@
                                 token: l,
                                 backup: a,
                                 user_id: i,
-                                required_actions: d,
-                                totp: r
+                                required_actions: r,
+                                totp: d
                             }
                         } = e;
                         u.default.dispatch({
                             type: "LOGIN_ATTEMPTED",
                             user_id: i,
-                            required_actions: d
+                            required_actions: r
                         }), t ? u.default.dispatch({
                             type: "LOGIN_MFA_STEP",
                             ticket: o,
                             sms: n,
                             webauthn: s,
-                            totp: r,
+                            totp: d,
                             backup: a
                         }) : E ? this.switchAccountToken(l) : u.default.dispatch({
                             type: "LOGIN_SUCCESS",
@@ -163,9 +163,9 @@
                         source: o,
                         giftCodeSKUId: l,
                         isMultiAccount: i,
-                        mfaType: d
+                        mfaType: r
                     } = e;
-                    return t = "webauthn" === d ? N.Endpoints.LOGIN_WEBAUTHN : "sms" === d ? N.Endpoints.LOGIN_SMS : N.Endpoints.LOGIN_MFA, O.default.post({
+                    return t = "webauthn" === r ? N.Endpoints.LOGIN_WEBAUTHN : "sms" === r ? N.Endpoints.LOGIN_SMS : N.Endpoints.LOGIN_MFA, O.default.post({
                         url: t,
                         body: {
                             code: n,
@@ -185,7 +185,7 @@
                         })
                     }).catch(e => {
                         var t;
-                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === N.AbortCodes.MFA_INVALID_CODE) throw Error((0, f.mapError)(d));
+                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === N.AbortCodes.MFA_INVALID_CODE) throw Error((0, f.mapError)(r));
                         throw e
                     })
                 },
@@ -224,9 +224,9 @@
                         url: N.Endpoints.LOGOUT,
                         body: {
                             provider: (0, C.getDevicePushProvider)(),
-                            token: r.default.get(N.DEVICE_TOKEN),
+                            token: d.default.get(N.DEVICE_TOKEN),
                             voip_provider: C.DEVICE_PUSH_VOIP_PROVIDER,
-                            voip_token: r.default.get(N.DEVICE_VOIP_TOKEN)
+                            voip_token: d.default.get(N.DEVICE_VOIP_TOKEN)
                         },
                         oldFormErrors: !0,
                         trackedActionData: {
@@ -238,12 +238,12 @@
                             }
                         }
                     }).finally(() => {
-                        (null == n || n === A.default.getId()) && y(t)
+                        (null == n || n === S.default.getId()) && v(t)
                     })
                 },
                 switchAccountToken(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                        n = A.default.getToken();
+                        n = S.default.getToken();
                     m.log("Switching accounts", {
                         wasLoggedIn: null != n,
                         tokenHasChanged: e !== n
@@ -251,7 +251,7 @@
                         isSwitchingAccount: !0
                     });
                     let s = this.loginToken(e, !0).then(() => {
-                        let t = A.default.getToken();
+                        let t = S.default.getToken();
                         m.log("Switched accounts finished", {
                             isCorrectToken: e === t
                         })
@@ -260,10 +260,10 @@
                 },
                 verifySSOToken() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N.Routes.DEFAULT_LOGGED_OUT;
-                    return d.default.get({
+                    return r.default.get({
                         url: N.Endpoints.ME,
                         oldFormErrors: !0
-                    }).catch(() => y(e))
+                    }).catch(() => v(e))
                 },
                 verify(e) {
                     null != e ? O.default.post({
@@ -356,10 +356,10 @@
                             password: t,
                             source: n
                         },
-                        o = r.default.get(N.DEVICE_TOKEN),
+                        o = d.default.get(N.DEVICE_TOKEN),
                         l = (0, C.getDevicePushProvider)();
                     null != l && null != o && (s.push_provider = l, s.push_token = o);
-                    let i = r.default.get(N.DEVICE_VOIP_TOKEN);
+                    let i = d.default.get(N.DEVICE_VOIP_TOKEN);
                     null != C.DEVICE_PUSH_VOIP_PROVIDER && null != i && (s.push_voip_provider = C.DEVICE_PUSH_VOIP_PROVIDER, s.push_voip_token = i);
                     try {
                         let {
@@ -370,7 +370,7 @@
                                 ticket: o,
                                 token: l,
                                 backup: i,
-                                totp: d
+                                totp: r
                             }
                         } = await O.default.post({
                             url: N.Endpoints.RESET_PASSWORD,
@@ -387,7 +387,7 @@
                             ticket: o,
                             token: l,
                             backup: i,
-                            totp: d
+                            totp: r
                         }
                     } catch (e) {
                         throw u.default.dispatch({
@@ -408,7 +408,7 @@
                     u.default.dispatch({
                         type: "LOGIN_MFA"
                     });
-                    let d = await O.default.post({
+                    let r = await O.default.post({
                         url: N.Endpoints.RESET_PASSWORD,
                         body: {
                             code: n,
@@ -426,7 +426,7 @@
                             }
                         }
                     });
-                    return d.body.token
+                    return r.body.token
                 },
                 async forgotPassword(e) {
                     this.setLoginCredentials(e), u.default.dispatch({
@@ -473,13 +473,13 @@
                         type: "SET_CONSENT_REQUIRED",
                         consentRequired: !0
                     })
-                }, 5e3), T = d.default.get({
+                }, 5e3), T = r.default.get({
                     url: N.Endpoints.AUTH_LOCATION_METADATA,
                     retries: 2,
                     oldFormErrors: !0
                 }).then(e => {
                     var t, n, o, l, a;
-                    if (clearTimeout(s), null == S.default.getAuthenticationConsentRequired()) {
+                    if (clearTimeout(s), null == A.default.getAuthenticationConsentRequired()) {
                         let t = null === (l = null == e ? void 0 : null === (o = e.body) || void 0 === o ? void 0 : o.consent_required) || void 0 === l || l;
                         u.default.dispatch({
                             type: "SET_CONSENT_REQUIRED",
@@ -517,8 +517,8 @@
                 l = n("913144"),
                 a = n("693051"),
                 i = n("153498"),
-                d = n("76493"),
-                r = n("91731"),
+                r = n("76493"),
+                d = n("91731"),
                 u = n("49111"),
                 c = {
                     push(e, t) {
@@ -527,7 +527,7 @@
                             a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : u.AppContext.APP;
                         return (0, i.pushModal)({
                             key: n,
-                            modal: (0, r.default)(e, {}, t, n),
+                            modal: (0, d.default)(e, {}, t, n),
                             ...s
                         }), l.default.dispatch({
                             type: "MODAL_PUSH",
@@ -546,7 +546,7 @@
                                 default: t
                             } = e;
                             return t
-                        }) : e()).then(e => this.push(e, t, n, s)) : new Promise(o => d.default.enqueue(() => o(this.pushLazy(e, t, n, s))))
+                        }) : e()).then(e => this.push(e, t, n, s)) : new Promise(o => r.default.enqueue(() => o(this.pushLazy(e, t, n, s))))
                     },
                     updateAnimation(e, t) {
                         l.default.dispatch({
@@ -659,7 +659,7 @@
                     return i
                 },
                 openMFAModal: function() {
-                    return r
+                    return d
                 }
             }), n("70102"), n("581081");
             var s = n("872717"),
@@ -678,7 +678,7 @@
                 }
                 return t
             }
-            async function d(e) {
+            async function r(e) {
                 let {
                     ticket: t,
                     mfaType: n,
@@ -696,22 +696,22 @@
                     });
                     return e.body
                 } catch (e) {
-                    var d;
-                    if ((null === (d = e.body) || void 0 === d ? void 0 : d.code) === l.AbortCodes.MFA_INVALID_CODE) throw Error(i(n));
+                    var r;
+                    if ((null === (r = e.body) || void 0 === r ? void 0 : r.code) === l.AbortCodes.MFA_INVALID_CODE) throw Error(i(n));
                     throw e
                 }
             }
 
-            function r(e, t, s) {
+            function d(e, t, s) {
                 let a = async e => {
-                    let n = await d(e),
+                    let n = await r(e),
                         s = {
                             "X-Discord-MFA-Authorization": n.token
                         };
                     return new Promise((n, o) => {
                         t(s, (t, s, a) => {
-                            var d, r;
-                            return (null === (d = t.body) || void 0 === d ? void 0 : d.code) === l.AbortCodes.MFA_INVALID_CODE || (null === (r = t.body) || void 0 === r ? void 0 : r.code) === l.AbortCodes.MFA_REQUIRED ? (o(Error(i(e.mfaType))), !0) : (n(), !1)
+                            var r, d;
+                            return (null === (r = t.body) || void 0 === r ? void 0 : r.code) === l.AbortCodes.MFA_INVALID_CODE || (null === (d = t.body) || void 0 === d ? void 0 : d.code) === l.AbortCodes.MFA_REQUIRED ? (o(Error(i(e.mfaType))), !0) : (n(), !1)
                         })
                     })
                 };
@@ -748,7 +748,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 MFAModal: function() {
-                    return v
+                    return y
                 },
                 MFASlides: function() {
                     return g
@@ -762,8 +762,8 @@
                 l = n("376507"),
                 a = n("872717"),
                 i = n("77078"),
-                d = n("145131"),
-                r = n("772280"),
+                r = n("145131"),
+                d = n("772280"),
                 u = n("773336"),
                 c = n("286235"),
                 E = n("50885"),
@@ -772,13 +772,13 @@
                 f = n("782340"),
                 h = n("992279");
 
-            function A(e) {
+            function S(e) {
                 let {
                     subtitle: t,
                     onClose: n
                 } = e;
                 return (0, s.jsxs)(i.ModalHeader, {
-                    direction: d.default.Direction.VERTICAL,
+                    direction: r.default.Direction.VERTICAL,
                     className: h.header,
                     separator: !1,
                     children: [(0, s.jsx)(i.Heading, {
@@ -796,7 +796,7 @@
                 })
             }
 
-            function S(e) {
+            function A(e) {
                 let {
                     children: t
                 } = e;
@@ -827,7 +827,7 @@
                 } = e, a = t.methods.length > 1;
                 return a || o ? (0, s.jsxs)(i.ModalFooter, {
                     className: h.footer,
-                    direction: o && !a ? d.default.Direction.HORIZONTAL_REVERSE : d.default.Direction.HORIZONTAL,
+                    direction: o && !a ? r.default.Direction.HORIZONTAL_REVERSE : r.default.Direction.HORIZONTAL,
                     children: [a && (0, s.jsx)(i.Button, {
                         look: i.Button.Looks.LINK,
                         onClick: () => n("select"),
@@ -848,10 +848,10 @@
                     onClose: o
                 } = e;
                 return (0, s.jsxs)(s.Fragment, {
-                    children: [(0, s.jsx)(A, {
+                    children: [(0, s.jsx)(S, {
                         subtitle: f.default.Messages.MFA_V2_SELECT_HEADER,
                         onClose: o
-                    }), (0, s.jsx)(S, {
+                    }), (0, s.jsx)(A, {
                         children: t.methods.map(e => (0, s.jsxs)(i.Clickable, {
                             className: h.listItemContainer,
                             onClick: () => {
@@ -861,7 +861,7 @@
                                 className: h.listItemText,
                                 variant: "text-md/semibold",
                                 children: _.SELECT_NAMES[e.type]
-                            }), (0, s.jsx)(r.default, {
+                            }), (0, s.jsx)(d.default, {
                                 width: 20,
                                 height: 20,
                                 className: h.listItemArrow
@@ -876,8 +876,8 @@
                     request: t,
                     finish: n,
                     setSlide: a,
-                    onClose: d
-                } = e, [r, _] = o.useState(!1), [h, N] = o.useState(null), {
+                    onClose: r
+                } = e, [d, _] = o.useState(!1), [h, N] = o.useState(null), {
                     challenge: C
                 } = t.methods.find(e => "webauthn" === e.type), m = async () => {
                     _(!0), N(null);
@@ -895,11 +895,11 @@
                     }
                 };
                 return (0, s.jsxs)(s.Fragment, {
-                    children: [(0, s.jsx)(A, {
-                        onClose: d
-                    }), (0, s.jsxs)(S, {
+                    children: [(0, s.jsx)(S, {
+                        onClose: r
+                    }), (0, s.jsxs)(A, {
                         children: [(0, s.jsx)(i.Button, {
-                            submitting: r,
+                            submitting: d,
                             onClick: m,
                             children: f.default.Messages.MFA_V2_WEBAUTHN_CTA
                         }), (0, s.jsx)(O, {
@@ -918,16 +918,16 @@
                     finish: n,
                     setSlide: l,
                     onClose: a,
-                    isSlideReady: d
-                } = e, [r, u] = o.useState(!1), [c, E] = o.useState(null), [_, p] = o.useState(""), h = o.useRef(null), N = f.default.Messages.TWO_FA_ENTER_BACKUP_LABEL, C = f.default.Messages.TWO_FA_BACKUP_CODE, m = o.useCallback(e => {
+                    isSlideReady: r
+                } = e, [d, u] = o.useState(!1), [c, E] = o.useState(null), [_, p] = o.useState(""), h = o.useRef(null), N = f.default.Messages.TWO_FA_ENTER_BACKUP_LABEL, C = f.default.Messages.TWO_FA_BACKUP_CODE, m = o.useCallback(e => {
                     p(e), E(null)
                 }, [p, E]);
                 return o.useEffect(() => {
-                    if (d) {
+                    if (r) {
                         var e;
                         null === (e = h.current) || void 0 === e || e.focus()
                     }
-                }, [d]), (0, s.jsxs)("form", {
+                }, [r]), (0, s.jsxs)("form", {
                     onSubmit: e => {
                         e.preventDefault(), u(!0), n({
                             mfaType: "backup",
@@ -939,9 +939,9 @@
                             u(!1)
                         })
                     },
-                    children: [(0, s.jsx)(A, {
+                    children: [(0, s.jsx)(S, {
                         onClose: a
-                    }), (0, s.jsx)(S, {
+                    }), (0, s.jsx)(A, {
                         children: (0, s.jsxs)(i.FormItem, {
                             title: N,
                             children: [(0, s.jsx)(i.TextInput, {
@@ -952,7 +952,7 @@
                                 minLength: 8,
                                 value: _,
                                 spellCheck: "false",
-                                disabled: r
+                                disabled: d
                             }), (0, s.jsx)(O, {
                                 error: c
                             })]
@@ -962,7 +962,7 @@
                         setSlide: l,
                         showConfirm: !0,
                         disabled: _.length < 8,
-                        submitting: r
+                        submitting: d
                     })]
                 })
             }
@@ -973,14 +973,14 @@
                     finish: n,
                     setSlide: l,
                     onClose: a,
-                    isSlideReady: d
-                } = e, [r, u] = o.useState(!1), [c, E] = o.useState(null), [_, p] = o.useState(""), h = o.useRef(null);
+                    isSlideReady: r
+                } = e, [d, u] = o.useState(!1), [c, E] = o.useState(null), [_, p] = o.useState(""), h = o.useRef(null);
                 return o.useEffect(() => {
-                    if (d) {
+                    if (r) {
                         var e;
                         null === (e = h.current) || void 0 === e || e.focus()
                     }
-                }, [d]), (0, s.jsxs)("form", {
+                }, [r]), (0, s.jsxs)("form", {
                     onSubmit: e => {
                         e.preventDefault(), u(!0), n({
                             mfaType: "totp",
@@ -992,9 +992,9 @@
                             u(!1)
                         })
                     },
-                    children: [(0, s.jsx)(A, {
+                    children: [(0, s.jsx)(S, {
                         onClose: a
-                    }), (0, s.jsx)(S, {
+                    }), (0, s.jsx)(A, {
                         children: (0, s.jsxs)(i.FormItem, {
                             title: f.default.Messages.TWO_FA_ENTER_TOKEN_NO_BACKUP_LABEL,
                             children: [(0, s.jsx)(i.TextInput, {
@@ -1006,7 +1006,7 @@
                                 value: _,
                                 autoComplete: "one-time-code",
                                 spellCheck: "false",
-                                disabled: r
+                                disabled: d
                             }), (0, s.jsx)(O, {
                                 error: c
                             })]
@@ -1016,7 +1016,7 @@
                         setSlide: l,
                         showConfirm: !0,
                         disabled: 0 === _.length,
-                        submitting: r
+                        submitting: d
                     })]
                 })
             }
@@ -1026,9 +1026,9 @@
                     request: t,
                     finish: n,
                     setSlide: l,
-                    onClose: d,
-                    isSlideReady: r
-                } = e, [u, c] = o.useState(!1), [E, _] = o.useState(null), [N, C] = o.useState(!1), [m, T] = o.useState(null), [R, y] = o.useState(""), v = o.useRef(null);
+                    onClose: r,
+                    isSlideReady: d
+                } = e, [u, c] = o.useState(!1), [E, _] = o.useState(null), [N, C] = o.useState(!1), [m, T] = o.useState(null), [R, v] = o.useState(""), y = o.useRef(null);
                 o.useEffect(() => {
                     c(!0), a.default.post({
                         url: p.Endpoints.LOGIN_SMS_SEND,
@@ -1045,11 +1045,11 @@
                         c(!1)
                     })
                 }, [t.ticket]), o.useEffect(() => {
-                    if (r) {
+                    if (d) {
                         var e;
-                        null === (e = v.current) || void 0 === e || e.focus()
+                        null === (e = y.current) || void 0 === e || e.focus()
                     }
-                }, [r]);
+                }, [d]);
                 let g = null == E ? f.default.Messages.TWO_FA_ENTER_SMS_TOKEN_SENDING : f.default.Messages.TWO_FA_ENTER_SMS_TOKEN_SENT.format({
                     phoneNumber: E
                 });
@@ -1065,18 +1065,18 @@
                             C(!1)
                         })
                     },
-                    children: [(0, s.jsx)(A, {
+                    children: [(0, s.jsx)(S, {
                         subtitle: g,
-                        onClose: d
-                    }), (0, s.jsx)(S, {
+                        onClose: r
+                    }), (0, s.jsx)(A, {
                         children: (0, s.jsxs)(i.FormItem, {
                             title: f.default.Messages.TWO_FA_ENTER_TOKEN_NO_BACKUP_LABEL,
                             children: [(0, s.jsxs)("div", {
                                 className: h.smsInputContainer,
                                 children: [(0, s.jsx)(i.TextInput, {
                                     className: h.smsInput,
-                                    inputRef: v,
-                                    onChange: y,
+                                    inputRef: y,
+                                    onChange: v,
                                     placeholder: f.default.Messages.TWO_FA_AUTH_CODE_NO_BACKUP,
                                     maxLength: 10,
                                     value: R,
@@ -1116,20 +1116,20 @@
                 })
             }
 
-            function y(e) {
+            function v(e) {
                 let {
                     request: t,
                     finish: n,
                     setSlide: l,
                     onClose: a,
-                    isSlideReady: d
-                } = e, [r, u] = o.useState(!1), [c, E] = o.useState(null), [_, p] = o.useState(""), h = o.useRef(null);
+                    isSlideReady: r
+                } = e, [d, u] = o.useState(!1), [c, E] = o.useState(null), [_, p] = o.useState(""), h = o.useRef(null);
                 return o.useEffect(() => {
-                    if (d) {
+                    if (r) {
                         var e;
                         null === (e = h.current) || void 0 === e || e.focus()
                     }
-                }, [d]), (0, s.jsxs)("form", {
+                }, [r]), (0, s.jsxs)("form", {
                     onSubmit: e => {
                         e.preventDefault(), u(!0), n({
                             mfaType: "password",
@@ -1141,9 +1141,9 @@
                             u(!1)
                         })
                     },
-                    children: [(0, s.jsx)(A, {
+                    children: [(0, s.jsx)(S, {
                         onClose: a
-                    }), (0, s.jsx)(S, {
+                    }), (0, s.jsx)(A, {
                         children: (0, s.jsxs)(i.FormItem, {
                             title: f.default.Messages.FORM_LABEL_PASSWORD,
                             children: [(0, s.jsx)(i.TextInput, {
@@ -1153,7 +1153,7 @@
                                 type: "password",
                                 autoComplete: "password",
                                 spellCheck: "false",
-                                disabled: r
+                                disabled: d
                             }), (0, s.jsx)(O, {
                                 error: c
                             })]
@@ -1163,12 +1163,12 @@
                         setSlide: l,
                         showConfirm: !0,
                         disabled: 0 === _.length,
-                        submitting: r
+                        submitting: d
                     })]
                 })
             }
 
-            function v(e) {
+            function y(e) {
                 let {
                     transitionState: t,
                     request: n,
@@ -1193,8 +1193,8 @@
                 let {
                     request: l,
                     mfaFinish: a,
-                    onEarlyClose: d,
-                    onClose: r,
+                    onEarlyClose: r,
+                    onClose: d,
                     width: u = 440
                 } = e, [c, E] = o.useState(null !== (n = null === (t = l.methods[0]) || void 0 === t ? void 0 : t.type) && void 0 !== n ? n : "select"), [_, p] = o.useState(c), f = async e => {
                     let {
@@ -1205,12 +1205,12 @@
                         mfaType: t,
                         data: n,
                         ticket: l.ticket
-                    }), null != r && r()
+                    }), null != d && d()
                 }, h = {
                     request: l,
                     finish: f,
                     setSlide: E,
-                    onClose: d
+                    onClose: r
                 };
                 return (0, s.jsxs)(i.Slides, {
                     activeSlide: c,
@@ -1246,7 +1246,7 @@
                         })
                     }), (0, s.jsx)(i.Slide, {
                         id: "password",
-                        children: (0, s.jsx)(y, {
+                        children: (0, s.jsx)(v, {
                             ...h,
                             isSlideReady: "password" === _
                         })
@@ -1255,7 +1255,7 @@
             }
 
             function M(e, t, n) {
-                (0, i.openModal)(n => (0, s.jsx)(v, {
+                (0, i.openModal)(n => (0, s.jsx)(y, {
                     finish: t,
                     request: e,
                     ...n
@@ -1265,6 +1265,23 @@
                     }
                 })
             }
+        },
+        191349: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                DEVICE_PUSH_VOIP_PROVIDER: function() {
+                    return a
+                },
+                getDevicePushProvider: function() {
+                    return i
+                }
+            });
+            var s, o, l = n("773336");
+            let a = null;
+
+            function i() {
+                return (0, l.isAndroid)(), null
+            }(s = o || (o = {})).REMINDER = "reminder", s.TOP_MESSAGE_PUSH = "top_messages_push", s.TRENDING_CONTENT_PUSH = "trending_content_push"
         },
         350522: function(e, t, n) {
             "use strict";
@@ -1278,8 +1295,8 @@
             let l = !1,
                 a = !1,
                 i = {},
-                d = null;
-            class r extends s.default.Store {
+                r = null;
+            class d extends s.default.Store {
                 hasConsented(e) {
                     return null != i[e] && i[e].consented
                 }
@@ -1290,11 +1307,11 @@
                     return a
                 }
                 getAuthenticationConsentRequired() {
-                    return d
+                    return r
                 }
             }
-            r.displayName = "ConsentStore";
-            var u = new r(o.default, {
+            d.displayName = "ConsentStore";
+            var u = new d(o.default, {
                 CONNECTION_OPEN: function(e) {
                     let {
                         consents: t
@@ -1313,10 +1330,10 @@
                     }, l = !0
                 },
                 SET_CONSENT_REQUIRED: function(e) {
-                    d = e.consentRequired
+                    r = e.consentRequired
                 },
                 LOGOUT: function() {
-                    d = null
+                    r = null
                 }
             })
         },
@@ -1331,15 +1348,15 @@
                 o = n("49111");
 
             function l(e, t, n) {
-                var l, a, i, d, r, u, c, E;
+                var l, a, i, r, d, u, c, E;
                 let _ = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
                 return {
                     key: null !== (a = null !== (l = t.key) && void 0 !== l ? l : _) && void 0 !== a ? a : "modal",
                     modal: e,
                     animation: null !== (i = t.animation) && void 0 !== i ? i : s.default.useReducedMotion ? o.ModalAnimation.FADE : o.ModalAnimation.SLIDE_UP,
-                    shouldPersistUnderModals: null !== (d = t.shouldPersistUnderModals) && void 0 !== d && d,
+                    shouldPersistUnderModals: null !== (r = t.shouldPersistUnderModals) && void 0 !== r && r,
                     props: n,
-                    backdropStyle: null !== (r = t.backdropStyle) && void 0 !== r ? r : null,
+                    backdropStyle: null !== (d = t.backdropStyle) && void 0 !== d ? d : null,
                     backdropInstant: null !== (u = t.backdropInstant) && void 0 !== u && u,
                     disableAnimation: null !== (c = t.disableAnimation) && void 0 !== c && c,
                     closable: "boolean" != typeof t.closable || t.closable,
@@ -1350,4 +1367,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67079.8c773b08bd63e44275b8.js.map
+//# sourceMappingURL=67079.912803f13064d4c3677e.js.map

@@ -42615,11 +42615,12 @@
                     let t = this.getGuildFlags(e);
                     return f.hasFlag(t, T.GuildNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? m.UnreadSetting.ALL_MESSAGES : f.hasFlag(t, T.GuildNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? m.UnreadSetting.ONLY_MENTIONS : m.UnreadSetting.UNSET
                 }
+                resolveGuildUnreadSetting(e) {
+                    let t = this.getGuildFlags(e.id);
+                    return !W() || f.hasFlag(t, T.GuildNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? m.UnreadSetting.ALL_MESSAGES : f.hasFlag(t, T.GuildNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? m.UnreadSetting.ONLY_MENTIONS : e.defaultMessageNotifications === _.UserNotificationSettings.ALL_MESSAGES ? m.UnreadSetting.ALL_MESSAGES : m.UnreadSetting.ONLY_MENTIONS
+                }
                 getGuildUnreadMode(e) {
-                    if (this.isMuted(e.id)) return m.UnreadMode.NONE;
-                    if (!W()) return m.UnreadMode.IMPORTANT;
-                    let t = this.getGuildUnreadSetting(e.id);
-                    return t === m.UnreadSetting.ALL_MESSAGES ? m.UnreadMode.IMPORTANT : t === m.UnreadSetting.ONLY_MENTIONS ? m.UnreadMode.LESS_IMPORTANT : e.defaultMessageNotifications === _.UserNotificationSettings.ALL_MESSAGES ? m.UnreadMode.IMPORTANT : m.UnreadMode.LESS_IMPORTANT
+                    return this.isMuted(e.id) ? m.UnreadMode.NONE : this.resolveGuildUnreadSetting(e) === m.UnreadSetting.ALL_MESSAGES ? m.UnreadMode.IMPORTANT : m.UnreadMode.LESS_IMPORTANT
                 }
                 getChannelRecordUnreadSetting(e) {
                     return this.getChannelUnreadSetting(e.guild_id, e.id)
@@ -50155,7 +50156,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258925"
+                                build_number: "258935"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63542,4 +63543,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.a17bfebe57baeed7fac3.js.map
+//# sourceMappingURL=41039.4147e5b8037fa4b7e5fa.js.map
