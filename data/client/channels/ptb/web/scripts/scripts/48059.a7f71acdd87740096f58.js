@@ -5306,7 +5306,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "258985", "258985"), 10);
+                let o = parseInt((n = "258997", "258997"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5363,7 +5363,7 @@
                 ImpressionTypes: function() {
                     return r
                 }
-            }), (o = i || (i = {})).CHANNEL_ADD_FLOW = "channel_add_flow", o.CONTACT_SYNC_FLOW = "contact_sync_flow", o.DIRECTORY_GUILD_ADD_FLOW = "directory_guild_add_flow", o.GUILD_ADD_FLOW = "guild_add_flow", o.GUILD_ADD_NUF = "guild_add_nuf", o.USER_VERIFICATION_MODAL_FLOW = "user_verification_modal_flow", o.GUILD_TRANSFER_OWNERSHIP_FLOW = "guild_transfer_ownership_flow", o.ROLE_ADD_FLOW = "role_add_flow", o.USER_ACCOUNT_EMAIL_CHANGE_FLOW = "user_account_email_change_flow", o.USER_LOGIN_FLOW = "user_login_flow", o.USER_REGISTRATION_FLOW = "user_registration_flow", o.ACTIVITY_SHELF_FLOW = "activity_shelf_flow", o.POMELO_FLOW = "pomelo_flow", (s = r || (r = {})).PAGE = "page", s.MODAL = "modal", s.POPOUT = "popout", s.MENU = "menu", s.PANE = "pane", s.VIEW = "view", s.HALFSHEET = "halfsheet"
+            }), (o = i || (i = {})).CHANNEL_ADD_FLOW = "channel_add_flow", o.CONTACT_SYNC_FLOW = "contact_sync_flow", o.DIRECTORY_GUILD_ADD_FLOW = "directory_guild_add_flow", o.GUILD_ADD_FLOW = "guild_add_flow", o.GUILD_ADD_NUF = "guild_add_nuf", o.USER_VERIFICATION_MODAL_FLOW = "user_verification_modal_flow", o.GUILD_TRANSFER_OWNERSHIP_FLOW = "guild_transfer_ownership_flow", o.ROLE_ADD_FLOW = "role_add_flow", o.USER_ACCOUNT_EMAIL_CHANGE_FLOW = "user_account_email_change_flow", o.USER_LOGIN_FLOW = "user_login_flow", o.USER_REGISTRATION_FLOW = "user_registration_flow", o.ACTIVITY_SHELF_FLOW = "activity_shelf_flow", o.POMELO_FLOW = "pomelo_flow", o.APPEAL_INGESTION = "appeal_ingestion", (s = r || (r = {})).PAGE = "page", s.MODAL = "modal", s.POPOUT = "popout", s.MENU = "menu", s.PANE = "pane", s.VIEW = "view", s.HALFSHEET = "halfsheet"
         },
         612481: function(e, t, n) {
             "use strict";
@@ -5549,4 +5549,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.b3f219d582176fb021db.js.map
+//# sourceMappingURL=48059.a7f71acdd87740096f58.js.map
