@@ -3116,7 +3116,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -3147,8 +3147,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -26876,8 +26876,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -126688,4 +126688,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.cd4c1b7923a70636a758.css.map*/
+/*# sourceMappingURL=app.be1f234131dae8fbe9b5.css.map*/
