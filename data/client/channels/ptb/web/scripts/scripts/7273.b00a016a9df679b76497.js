@@ -1933,7 +1933,7 @@
                 }),
                 Ro = 7,
                 RR = 0;
-            (IC = _K || (_K = {}))[IC.DEFAULT = 0] = "DEFAULT", IC[IC.GIFT = 1] = "GIFT", IC[IC.SALE = 2] = "SALE", IC[IC.PREMIUM_TIER_1 = 3] = "PREMIUM_TIER_1", IC[IC.PREMIUM_TIER_2 = 4] = "PREMIUM_TIER_2", IC[IC.MOBILE = 5] = "MOBILE";
+            (IC = _K || (_K = {}))[IC.DEFAULT = 0] = "DEFAULT", IC[IC.GIFT = 1] = "GIFT", IC[IC.SALE = 2] = "SALE", IC[IC.PREMIUM_TIER_1 = 3] = "PREMIUM_TIER_1", IC[IC.PREMIUM_TIER_2 = 4] = "PREMIUM_TIER_2", IC[IC.MOBILE = 5] = "MOBILE", IC[IC.PREMIUM_TIER_0 = 6] = "PREMIUM_TIER_0", IC[IC.MOBILE_PREMIUM_TIER_2 = 7] = "MOBILE_PREMIUM_TIER_2";
             let Rt = Object.freeze({
                 fonts: [{
                     src: "url(https://cdn.discordapp.com/assets/stripe/ggsans-vf.woff2)",
@@ -13528,4 +13528,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.48f264fbc0de6d1838aa.js.map
+//# sourceMappingURL=7273.b00a016a9df679b76497.js.map
