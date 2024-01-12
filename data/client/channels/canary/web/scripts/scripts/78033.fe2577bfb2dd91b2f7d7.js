@@ -50155,7 +50155,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "258890"
+                                build_number: "258901"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -57478,7 +57478,7 @@
                 }
                 setDesktopEncodingOptions(e, t, n) {
                     if (this.destroyed) return;
-                    let i = 0 === t || t > 720 || n > 30 ? S.DESKTOP_BITRATE_ENHANCED : S.DESKTOP_BITRATE,
+                    let i = 0 === t && n >= 10 || t > 720 || n > 30 ? S.DESKTOP_BITRATE_ENHANCED : S.DESKTOP_BITRATE,
                         r = {
                             width: e,
                             height: t,
@@ -63542,4 +63542,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.1fc89e5ba00ab834b526.js.map
+//# sourceMappingURL=78033.fe2577bfb2dd91b2f7d7.js.map
