@@ -404,10 +404,10 @@
                     return S
                 },
                 fetchCommandsForApplication: function() {
-                    return v
+                    return M
                 },
                 updateRegistry: function() {
-                    return M
+                    return v
                 }
             }), n("222007");
             var i = n("627445"),
@@ -539,7 +539,7 @@
                 })
             }
 
-            function v(e) {
+            function M(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -553,7 +553,7 @@
                 })
             }
 
-            function M(e, t, n) {
+            function v(e, t, n) {
                 s.default.dispatch({
                     type: "APPLICATION_COMMAND_REGISTRY_UPDATE",
                     applications: t,
@@ -1412,10 +1412,10 @@
                     return S
                 },
                 maybeTrackForumNewPostDraftCreated: function() {
-                    return v
+                    return M
                 },
                 trackForumNewPostCleared: function() {
-                    return M
+                    return v
                 },
                 trackForumPostCreated: function() {
                     return C
@@ -1583,7 +1583,7 @@
                 })
             }
 
-            function v(e) {
+            function M(e) {
                 var t, n, i, l;
                 let {
                     guildId: u,
@@ -1607,7 +1607,7 @@
                 })
             }
 
-            function M(e) {
+            function v(e) {
                 let {
                     guildId: t,
                     channelId: n
@@ -1804,6 +1804,7 @@
                     ...(0, a.collectGuildAnalyticsMetadata)(e.guild_id),
                     ...(0, a.collectChannelAnalyticsMetadata)(e),
                     ...(0, l.collectThreadMetadata)(e, !0),
+                    ...(0, a.getChannelOpenedMetadata)(e.id),
                     channel_id: e.id,
                     guild_id: e.guild_id,
                     parent_id: e.parent_id,
@@ -1844,10 +1845,10 @@
                     return S
                 },
                 getForumPostDraftNumAttachments: function() {
-                    return v
+                    return M
                 },
                 getForumPostDraftAppliedTagIds: function() {
-                    return M
+                    return v
                 },
                 getNumActiveThreads: function() {
                     return C
@@ -1892,11 +1893,11 @@
                 }
             }
 
-            function v(e) {
+            function M(e) {
                 return _.default.getUploads(e, d.DraftType.FirstThreadMessage).length
             }
 
-            function M(e) {
+            function v(e) {
                 var t, n;
                 let i = o.default.getChannel(e);
                 if (null == i) return [];
@@ -2132,13 +2133,13 @@
                 T = !0,
                 p = !1,
                 S = !1,
-                v = null,
-                M = s.ThreadSortOrder.LATEST_ACTIVITY,
+                M = null,
+                v = s.ThreadSortOrder.LATEST_ACTIVITY,
                 C = [],
                 N = 0;
 
             function O() {
-                A = !1, T = !0, p = !1, S = !1, v = null, M = s.ThreadSortOrder.LATEST_ACTIVITY, i = new Set, N = 0, C = []
+                A = !1, T = !0, p = !1, S = !1, M = null, v = s.ThreadSortOrder.LATEST_ACTIVITY, i = new Set, N = 0, C = []
             }
 
             function R(e, t) {
@@ -2146,19 +2147,19 @@
             }
 
             function I() {
-                if (null == v) return !1;
+                if (null == M) return !1;
                 let e = !p,
                     t = f.default.getChannel(C[C.length - 1]),
-                    n = null == t ? null : R(t, M);
-                C = l(f.default.getAllThreadsForParent(v)).filter(e => e.isArchivedThread()).filter(t => {
+                    n = null == t ? null : R(t, v);
+                C = l(f.default.getAllThreadsForParent(M)).filter(e => e.isArchivedThread()).filter(t => {
                     var a;
                     if (0 !== i.size && (null === (a = t.appliedTags) || void 0 === a ? void 0 : a.some(e => i.has(e))) !== !0) return !1;
                     if (e || null == n) return !0;
                     {
-                        let e = null == t ? null : R(t, M);
+                        let e = null == t ? null : R(t, v);
                         return null != e && r.default.compare(e, n) >= 0
                     }
-                }).sort((e, t) => r.default.compare(R(e, M), R(t, M))).map(e => e.id).reverse().value()
+                }).sort((e, t) => r.default.compare(R(e, v), R(t, v))).map(e => e.id).reverse().value()
             }
 
             function D(e) {
@@ -2180,10 +2181,10 @@
                     return T
                 }
                 isLoading(e, t, n) {
-                    return v === e && M === t && (0, E.areSetsEqual)(i, n) ? A : (O(), !1)
+                    return M === e && v === t && (0, E.areSetsEqual)(i, n) ? A : (O(), !1)
                 }
                 getThreads(e, t, n) {
-                    return v === e && M === t && (0, E.areSetsEqual)(i, n) ? C : b
+                    return M === e && v === t && (0, E.areSetsEqual)(i, n) ? C : b
                 }
             }
             y.displayName = "ArchivedThreadsStore";
@@ -2199,20 +2200,20 @@
                     let {
                         channel: t
                     } = e;
-                    return v === t.parent_id && !!(0, d.isForumPostPinned)(t.id) && void D(t.id)
+                    return M === t.parent_id && !!(0, d.isForumPostPinned)(t.id) && void D(t.id)
                 },
                 CHANNEL_DELETE: function(e) {
-                    if (e.channel.id !== v) return !1;
+                    if (e.channel.id !== M) return !1;
                     O()
                 },
                 LOAD_ARCHIVED_THREADS: function(e) {
-                    (e.channelId !== v || e.sortOrder !== M || !(0, E.areSetsEqual)(e.tagFilter, i)) && O(), v = e.channelId, M = e.sortOrder, i = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), A = !0, T = !1
+                    (e.channelId !== M || e.sortOrder !== v || !(0, E.areSetsEqual)(e.tagFilter, i)) && O(), M = e.channelId, v = e.sortOrder, i = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), A = !0, T = !1
                 },
                 LOAD_ARCHIVED_THREADS_SUCCESS: function(e) {
-                    if (e.channelId !== v || e.sortOrder !== M || !(0, E.areSetsEqual)(e.tagFilter, i)) return !1;
+                    if (e.channelId !== M || e.sortOrder !== v || !(0, E.areSetsEqual)(e.tagFilter, i)) return !1;
                     let t = e.threads.filter(e => _.ALL_CHANNEL_TYPES.has(e.type)).map(e => e.id);
                     C = C.concat(t);
-                    let n = f.default.getChannel(v);
+                    let n = f.default.getChannel(M);
                     null != n && n.isForumLikeChannel() && (0, c.trackForumMorePostsLoaded)({
                         guildId: n.guild_id,
                         channelId: n.id,
@@ -2223,11 +2224,11 @@
                     }), I(), p = e.hasMore, N = e.offset + m, A = !1, T = !1
                 },
                 LOAD_ARCHIVED_THREADS_FAIL: function(e) {
-                    if (e.channelId !== v || e.sortOrder !== M || !(0, E.areSetsEqual)(e.tagFilter, i)) return !1;
+                    if (e.channelId !== M || e.sortOrder !== v || !(0, E.areSetsEqual)(e.tagFilter, i)) return !1;
                     A = !1, S = !0, T = !1
                 },
                 RESORT_THREADS: function(e) {
-                    return (null == v || null == e.channelId || v === e.channelId) && I()
+                    return (null == M || null == e.channelId || M === e.channelId) && I()
                 }
             })
         },
@@ -2258,7 +2259,7 @@
                 p = n("724210"),
                 S = n("782340");
 
-            function v(e, t) {
+            function M(e, t) {
                 return a.default.patch({
                     url: T.Endpoints.CHANNEL(e.id),
                     body: t
@@ -2271,7 +2272,7 @@
                 }), t))
             }
 
-            function M(e, t) {
+            function v(e, t) {
                 l.default.dispatch({
                     type: "THREAD_MEMBER_LOCAL_UPDATE",
                     id: e.id,
@@ -2285,18 +2286,18 @@
                     let n = {
                         archived: !0
                     };
-                    return t && (n.locked = !0), v(e, n)
+                    return t && (n.locked = !0), M(e, n)
                 },
                 async lockThread(e) {
                     let t = e.isArchivedThread();
-                    return t && await this.unarchiveThread(e, !1), v(e, {
+                    return t && await this.unarchiveThread(e, !1), M(e, {
                         locked: !0,
                         archived: t
                     })
                 },
                 async unlockThread(e) {
                     let t = e.isArchivedThread();
-                    return t && await this.unarchiveThread(e, !0), v(e, {
+                    return t && await this.unarchiveThread(e, !0), M(e, {
                         locked: !1,
                         archived: t
                     })
@@ -2308,7 +2309,7 @@
                         i = e.isForumPost();
                     t && (n.locked = !1);
                     try {
-                        return await v(e, n)
+                        return await M(e, n)
                     } catch (e) {
                         var a, l;
                         throw (null === (a = e.body) || void 0 === a ? void 0 : a.code) === T.AbortCodes.TOO_MANY_THREADS ? s.default.show({
@@ -2332,11 +2333,11 @@
                         i = f.default.can(T.Permissions.MANAGE_THREADS, n);
                     null != n && n.isArchivedThread() && (i || (null === (t = n.threadMetadata) || void 0 === t ? void 0 : t.locked) !== !0) && await this.unarchiveThread(n, !1)
                 },
-                setInvitable: (e, t) => v(e, {
+                setInvitable: (e, t) => M(e, {
                     invitable: t
                 }),
                 async joinThread(e, t) {
-                    e.isForumPost() && M(e, !0);
+                    e.isForumPost() && v(e, !0);
                     try {
                         return await a.default.post({
                             url: T.Endpoints.THREAD_MEMBER(e.id),
@@ -2356,7 +2357,7 @@
                             title: S.default.Messages.ERROR,
                             body: S.default.Messages.ERROR_OCCURRED_TRY_AGAIN
                         });
-                        e.isForumPost() && M(e, !1)
+                        e.isForumPost() && v(e, !1)
                     }
                 },
                 async addMember(e, t, n) {
@@ -2381,7 +2382,7 @@
                         })
                     }
                 },
-                leaveThread: (e, t) => (e.isForumPost() && M(e, !1), a.default.delete({
+                leaveThread: (e, t) => (e.isForumPost() && v(e, !1), a.default.delete({
                     url: T.Endpoints.THREAD_MEMBER(e.id),
                     query: {
                         location: t
@@ -2775,10 +2776,10 @@
 
             function S(e) {
                 var t;
-                null === (t = e.threads) || void 0 === t || t.forEach(v)
+                null === (t = e.threads) || void 0 === t || t.forEach(M)
             }
 
-            function v(e) {
+            function M(e) {
                 T(e, t => {
                     var n;
                     null != e.messageCount && (t.count = e.messageCount);
@@ -2787,10 +2788,10 @@
                 })
             }
 
-            function M(e) {
+            function v(e) {
                 if (null != e && !(e.id in m)) {
                     let t = _.default.getChannel(e.id);
-                    if (null != t) return v(t), !0
+                    if (null != t) return M(t), !0
                 }
                 return !1
             }
@@ -2799,14 +2800,14 @@
                 let {
                     channel: t
                 } = e;
-                v(t)
+                M(t)
             }
 
             function N(e) {
                 let {
                     threads: t
                 } = e;
-                t.forEach(M)
+                t.forEach(v)
             }
             class O extends l.default.Store {
                 initialize() {
@@ -2870,7 +2871,7 @@
                         threads: t,
                         mostRecentMessages: n
                     } = e;
-                    t.forEach(v), null == n || n.forEach(e => {
+                    t.forEach(M), null == n || n.forEach(e => {
                         let t = _.default.getChannel(e.channel_id);
                         null != t && e.type !== E.MessageTypes.THREAD_STARTER_MESSAGE && T(t, t => {
                             t.mostRecentRawMessage = e, t.mostRecentMessage = null
@@ -2885,8 +2886,8 @@
                         threads: n
                     } = e;
                     for (let e of t)
-                        for (let t of e) M(t.thread);
-                    n.forEach(M)
+                        for (let t of e) v(t.thread);
+                    n.forEach(v)
                 },
                 THREAD_DELETE: function(e) {
                     let {
@@ -2960,7 +2961,7 @@
                 },
                 LOAD_MESSAGES_SUCCESS: function(e) {
                     let t = !1;
-                    for (let n of e.messages) t = M(n.thread) || t;
+                    for (let n of e.messages) t = v(n.thread) || t;
                     if (e.isAfter || e.isBefore || e.hasMoreAfter) return t;
                     let n = _.default.getChannel(e.channelId);
                     if (null == n || !o.THREAD_CHANNEL_TYPES.has(n.type)) return t;
@@ -2977,7 +2978,7 @@
                     let {
                         data: t
                     } = e, n = !1;
-                    for (let e of (0, r.getThreadsFromGuildFeedFetch)(t)) n = M(e) || n;
+                    for (let e of (0, r.getThreadsFromGuildFeedFetch)(t)) n = v(e) || n;
                     return n
                 }
             })
@@ -3001,7 +3002,7 @@
                     return S
                 },
                 useLastMessageTimestamp: function() {
-                    return v
+                    return M
                 }
             }), n("702976");
             var i = n("866227"),
@@ -3057,10 +3058,10 @@
                     p = (0, _.muteConfigToTimestamp)(h.default.getMuteConfig(e.id)),
                     {
                         can_send_message: S,
-                        ...v
+                        ...M
                     } = a,
-                    M = {
-                        ...v,
+                    v = {
+                        ...M,
                         channel_id: e.id,
                         guild_id: l,
                         parent_id: s,
@@ -3075,10 +3076,10 @@
                         old_thread_muted_until: p,
                         new_thread_muted_until: null != t.mute_config ? (0, _.muteConfigToTimestamp)(t.mute_config) : p
                     };
-                d.default.track(m.AnalyticEvents.THREAD_NOTIFICATION_SETTINGS_UPDATED, M)
+                d.default.track(m.AnalyticEvents.THREAD_NOTIFICATION_SETTINGS_UPDATED, v)
             }
             n("782340");
-            let v = e => {
+            let M = e => {
                 var t, n;
                 let i = (0, l.useStateFromStores)([u.default], () => u.default.lastMessageId(e.id)),
                     s = null != i ? f.default.extractTimestamp(i) : null,
@@ -3195,17 +3196,17 @@
             }
 
             function S(e, t) {
-                return T.subscribeToGuild(e), null != t && o.default.getSection(t) === A.ChannelSections.MEMBERS && v(e, t, s.DEFAULT_RANGES)
+                return T.subscribeToGuild(e), null != t && o.default.getSection(t) === A.ChannelSections.MEMBERS && M(e, t, s.DEFAULT_RANGES)
             }
 
-            function v(e, t, n) {
+            function M(e, t, n) {
                 let i = d.default.getChannel(t);
                 if (null == i) return !1;
                 let a = i.getGuildId();
                 return (a !== e && e === A.FAVORITES && T.subscribeToGuild(a), null != i && i.isThread()) ? i.type === A.ChannelTypes.ANNOUNCEMENT_THREAD ? T.subscribeChannel(a, i.parent_id, n) : !!i.isActiveThread() && T.subscribeThreadMemberList(a, t, g.default.getChannelId()) : T.subscribeChannel(a, t, n)
             }
 
-            function M(e) {
+            function v(e) {
                 let {
                     type: t
                 } = e;
@@ -3267,8 +3268,8 @@
             }
             R.displayName = "GuildSubscriptionsStore";
             var I = new R(l.default, {
-                CONNECTION_OPEN: M,
-                CONNECTION_RESUMED: M,
+                CONNECTION_OPEN: v,
+                CONNECTION_RESUMED: v,
                 CONNECTION_CLOSED: function() {
                     p(!1, !1)
                 },
@@ -3320,7 +3321,7 @@
                         channelId: n,
                         ranges: i
                     } = e;
-                    return v(t, n, i)
+                    return M(t, n, i)
                 },
                 GUILD_SUBSCRIPTIONS: function(e) {
                     let {
@@ -3375,10 +3376,10 @@
                     return S
                 },
                 getManyCurrentGuildSettings: function() {
-                    return v
+                    return M
                 },
                 getCurrentChannelSettings: function() {
-                    return M
+                    return v
                 },
                 getManyCurrentChannelSettings: function() {
                     return C
@@ -3484,11 +3485,11 @@
                         }
                     },
                     E = f(i),
-                    m = f(M(e, t), n),
+                    m = f(v(e, t), n),
                     p = A(E, m, "RETURN_PREVIOUS_WHEN_CHANGED"),
                     S = o.default.getChannel(t),
-                    v = null !== (s = p("channel_flags")) && void 0 !== s ? s : 0,
-                    C = (null !== (d = m.channel_flags) && void 0 !== d ? d : 0) ^ v,
+                    M = null !== (s = p("channel_flags")) && void 0 !== s ? s : 0,
+                    C = (null !== (d = m.channel_flags) && void 0 !== d ? d : 0) ^ M,
                     N = 0 === (0, c.removeFlags)(C, h.ChannelNotificationSettingsFlags.FAVORITED, h.ChannelNotificationSettingsFlags.OPT_IN_ENABLED);
                 r.default.trackWithMetadata(_.AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, {
                     ...m,
@@ -3524,12 +3525,12 @@
                 }
             }
 
-            function v(e) {
+            function M(e) {
                 let t = new Map;
                 return e.forEach(e => t.set(e, S(e))), t
             }
 
-            function M(e, t) {
+            function v(e, t) {
                 let n = d.default.isChannelMuted(e, t),
                     i = d.default.getChannelMuteConfig(e, t);
                 return {
@@ -3542,7 +3543,7 @@
 
             function C(e, t) {
                 let n = new Map;
-                return t.forEach(t => n.set(t, M(e, t))), n
+                return t.forEach(t => n.set(t, v(e, t))), n
             }
         },
         843117: function(e, t, n) {
@@ -3556,4 +3557,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8240.ffd1ff9464a694d55b6e.js.map
+//# sourceMappingURL=8240.ac5c949d8bd9ea6b8d68.js.map
