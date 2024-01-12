@@ -16377,6 +16377,8 @@
   "APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_DONT_AGREE_PENALTY": "\"I don't agree with the penalty\"",
   "APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_SOMETHING_ELSE": "\"Something else\"",
   "APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_DISCLAIMER": "\"This request is sent to Discord. Creating false reports and/or spamming the report button may result in suspension of reporting abilities. Learn more from the [Discord Community Guidelines](https://discord.com/guidelines).\"",
+  "APPEAL_INGESTION_MODAL_SPEED_BUMP_LEARN_MORE_OTHER_OPTIONS_DSA": "\"Learn more about your other options under the [Digital Services Act](https://support.discord.com/hc/articles/17861767909527).\"",
+  "APPEAL_INGESTION_MODAL_SPEED_BUMP_SUBMIT_SPAM": "\"Submit a spam appeal\"",
   "POLL": "\"Poll\"",
   "POLLS": "\"Polls\"",
   "POLL_NOTIFICATIONS": "\"Polls\"",
