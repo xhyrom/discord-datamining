@@ -544,15 +544,15 @@
             let a = null !== (i = document.getElementById("app-mount")) && void 0 !== i ? i : document;
 
             function u(e) {
-                var t, n;
-                let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                    u = (0, s.useStateFromStores)([l.default], () => l.default.keyboardModeEnabled),
-                    c = r.useRef(!1);
-                return c.current = !u && (null === (t = i.returnRef) || void 0 === t ? void 0 : t.current) == null, (0, o.default)(e, {
-                    ...i,
-                    disableReturnRef: c,
-                    attachTo: null !== (n = i.attachTo) && void 0 !== n ? n : a,
-                    returnRef: i.returnRef
+                var t;
+                let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+                    i = (0, s.useStateFromStores)([l.default], () => l.default.keyboardModeEnabled),
+                    u = r.useRef(!1);
+                return u.current = !i, (0, o.default)(e, {
+                    ...n,
+                    disableReturnRef: u,
+                    attachTo: null !== (t = n.attachTo) && void 0 !== t ? t : a,
+                    returnRef: n.returnRef
                 })
             }
 
@@ -5306,7 +5306,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "259044", "259044"), 10);
+                let o = parseInt((n = "259047", "259047"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5549,4 +5549,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.2e79efaa0ed352064041.js.map
+//# sourceMappingURL=48059.3401a6720691a12767ff.js.map

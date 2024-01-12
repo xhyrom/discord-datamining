@@ -85304,18 +85304,25 @@ html .tabBadge__002b3 {
     padding: 0 32px 32px;
     box-sizing: border-box;
     margin: 44px 0 300px;
-    position: relative;
     display: flex;
     flex-direction: column
 }
 
-.close__354a2 {
-    position: sticky;
+.closeWrapper__1e132 {
+    box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
-    top: 32px;
-    right: 32px;
-    pointer-events: all
+    background-color: red;
+    padding: 0 32px;
+    height: 0;
+    max-width: 1316px;
+    margin: 0 auto
+}
+
+.close__354a2 {
+    position: sticky;
+    margin-top: 24px;
+    z-index: 1
 }
 
 .cardsContainer__52d9f {
@@ -85420,18 +85427,6 @@ html .tabBadge__002b3 {
 .hiddenWumpusEnabled__72e7a {
     animation-name: easterEggAnimationReverse_ff37f4;
     animation-duration: .5s
-}
-
-@media(max-width:1124px) {
-    .close__354a2 {
-        position: fixed
-    }
-}
-
-@media(orientation:portrait) {
-    .closeWrapper__1e132 {
-        width: inherit
-    }
 }
 
 .categories__57a0d>.categoryWrapper__042a8 {
@@ -126693,4 +126688,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d7df428f153644c3027e.css.map*/
+/*# sourceMappingURL=app.cd4c1b7923a70636a758.css.map*/
