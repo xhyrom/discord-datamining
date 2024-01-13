@@ -11617,6 +11617,8 @@
                 GUILD_IDENTITY_UPSELL_OVERLAY_DESCRIPTION_THEMES: "Customize your avatar, banner, theme, and bio for every server.",
                 GUILD_IDENTITY_UPSELL_OVERLAY_TITLE_VARIANT: "Customize your profile for every server!",
                 GUILD_IDENTITY_UPSELL_OVERLAY_IMAGE_ALT: "customized profile image",
+                GUILD_IDENTITY_PFX_COACHMARK_TITLE: "Elevate your profile styles",
+                GUILD_IDENTITY_PFX_COACHMARK_BODY: "You can now set server-specific avatar decorations & profile effects with Nitro.",
                 USER_POPOUT_ABOUT_ME: "About Me",
                 PREMIUM_PROFILE_CUSTOMIZATION_UPSELL_HEADER: "Wanna upload your own banner?",
                 PREMIUM_PROFILE_CUSTOMIZATION_UPGRADE_BODY: "Get more customization with a profile banner and join more servers by [upgrading to Discord Nitro](onLearnMore)",
@@ -16284,6 +16286,7 @@
                 GUILD_HEADER_ONLINE_COUNT_UNKNOWN: "— Online",
                 GUILD_HEADER_MEMBER_COUNT: "{count, plural, =1 {# Member} other {# Members}}",
                 GUILD_HEADER_MEMBER_COUNT_UNKNOWN: "— Members",
+                SENDER_BLOCKED_MEDIA_MARK_FALSE_POSITIVE: "Mark as not sensitive",
                 STRANGER_DANGER_BANNER_HEADER: "Unwanted message?",
                 STRANGER_DANGER_BANNER_DESCRIPTION: "If you don't want to chat with this person, you can block or mute them.",
                 STRANGER_DANGER_BANNER_MORE_TIPS: "More tips",
@@ -18127,7 +18130,7 @@
                 L = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259051", ", Version Hash: ").concat("c7c9bb323b93aec8b5a4f76de56b1554aa29b3b4")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259064", ", Version Hash: ").concat("b2cbab0309c41ef2c539c821dc02463c282c761a")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20401,8 +20404,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "259051", "259051"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259051")), _ = 0), _
+                let _ = parseInt((e = "259064", "259064"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259064")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35691,4 +35694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6575.dd28af41335f65cb43ee.js.map
+//# sourceMappingURL=6575.2fa2db9357fbdcff5c72.js.map
