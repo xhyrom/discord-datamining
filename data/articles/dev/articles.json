@@ -2,7 +2,7 @@
   {
     "id": 17709085688727,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/17709085688727.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/17709085688727-What-Are-Premium-Apps-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/17709085688727-What-Are-Premium-Apps",
     "author_id": 1531775952001,
     "comments_disabled": true,
     "draft": false,
@@ -54,7 +54,7 @@
   {
     "id": 13847462843543,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/13847462843543.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/13847462843543-Introducing-the-AutoMod-Badge-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/13847462843543-Introducing-the-AutoMod-Badge",
     "author_id": 5630494357399,
     "comments_disabled": true,
     "draft": false,
@@ -106,7 +106,7 @@
   {
     "id": 10852186730903,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/10852186730903.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/10852186730903-How-do-I-build-an-App-with-Connection-Features-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/10852186730903-How-do-I-build-an-App-with-Connection-Features",
     "author_id": 1902393830045,
     "comments_disabled": true,
     "draft": false,
@@ -422,7 +422,7 @@
   {
     "id": 6768337038743,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6768337038743.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6768337038743-Why-has-my-bot-been-flagged-for-inorganic-growth-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6768337038743-Why-has-my-bot-been-flagged-for-inorganic-growth",
     "author_id": 363848936712,
     "comments_disabled": true,
     "draft": false,
@@ -446,7 +446,7 @@
   {
     "id": 6470840524311,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6470840524311.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6470840524311-Why-can-t-I-copy-my-bot-s-token-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6470840524311-Why-can-t-I-copy-my-bot-s-token",
     "author_id": 5630494357399,
     "comments_disabled": false,
     "draft": false,
@@ -706,7 +706,7 @@
   {
     "id": 6223003921559,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6223003921559.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6223003921559-My-Bot-Is-Being-Rate-Limited-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6223003921559-My-Bot-Is-Being-Rate-Limited",
     "author_id": 1902393830045,
     "comments_disabled": true,
     "draft": false,
@@ -735,7 +735,7 @@
   {
     "id": 6207308062871,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6207308062871.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6207308062871-What-are-Privileged-Intents-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6207308062871-What-are-Privileged-Intents",
     "author_id": 1906696111445,
     "comments_disabled": true,
     "draft": false,
@@ -770,7 +770,7 @@
   {
     "id": 6207083765655,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6207083765655.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6207083765655-What-is-Bot-Verification-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6207083765655-What-is-Bot-Verification",
     "author_id": 1906696111445,
     "comments_disabled": true,
     "draft": false,
@@ -801,7 +801,7 @@
   {
     "id": 6206007597207,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6206007597207.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6206007597207-How-do-I-get-my-bot-verified-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6206007597207-How-do-I-get-my-bot-verified",
     "author_id": 1906696111445,
     "comments_disabled": true,
     "draft": false,
@@ -831,7 +831,7 @@
   {
     "id": 6205754771351,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6205754771351.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6205754771351-How-do-I-get-Privileged-Intents-for-my-bot-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6205754771351-How-do-I-get-Privileged-Intents-for-my-bot",
     "author_id": 1906696111445,
     "comments_disabled": true,
     "draft": false,
@@ -895,7 +895,7 @@
   {
     "id": 6177533521047,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6177533521047.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6177533521047-What-is-considered-an-acceptable-use-case-for-Privileged-Intents-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6177533521047-What-is-considered-an-acceptable-use-case-for-Privileged-Intents",
     "author_id": 1906696111445,
     "comments_disabled": true,
     "draft": false,
@@ -961,7 +961,7 @@
   {
     "id": 6129090215959,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6129090215959.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6129090215959-How-Do-I-Change-My-Bot-s-Name-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6129090215959-How-Do-I-Change-My-Bot-s-Name",
     "author_id": 1520283396621,
     "comments_disabled": true,
     "draft": false,
@@ -1023,7 +1023,7 @@
   {
     "id": 6027634717335,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6027634717335.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6027634717335-I-Received-the-Message-Content-Intent-for-Other-Functionality-Can-I-Use-Prefix-Commands-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6027634717335-I-Received-the-Message-Content-Intent-for-Other-Functionality-Can-I-Use-Prefix-Commands",
     "author_id": 5309274131351,
     "comments_disabled": true,
     "draft": false,
@@ -1054,7 +1054,7 @@
   {
     "id": 6027579011863,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6027579011863.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6027579011863-Can-I-Use-Mentions-or-DMs-As-Commands-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6027579011863-Can-I-Use-Mentions-or-DMs-As-Commands",
     "author_id": 5309274131351,
     "comments_disabled": true,
     "draft": false,
@@ -1120,7 +1120,7 @@
   {
     "id": 6025517367063,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6025517367063.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6025517367063-Do-I-need-to-use-slash-commands-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/6025517367063-Do-I-need-to-use-slash-commands",
     "author_id": 5309274131351,
     "comments_disabled": true,
     "draft": false,
@@ -1229,7 +1229,7 @@
   {
     "id": 360040340451,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/360040340451.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/360040340451-How-do-I-stop-selling-my-game-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/360040340451-How-do-I-stop-selling-my-game",
     "author_id": 1902393830045,
     "comments_disabled": true,
     "draft": false,
@@ -1253,7 +1253,7 @@
   {
     "id": 360028717192,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/360028717192.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/360028717192-Where-can-I-find-my-Application-Team-Server-ID-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/360028717192-Where-can-I-find-my-Application-Team-Server-ID",
     "author_id": 360103367092,
     "comments_disabled": true,
     "draft": false,
@@ -1473,7 +1473,7 @@
   {
     "id": 17297949965079,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/17297949965079.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/articles/17297949965079-How-Do-I-Monetize-My-App-",
+    "html_url": "https://support-dev.discord.com/hc/en-us/articles/17297949965079-How-Do-I-Monetize-My-App",
     "author_id": 1531775952001,
     "comments_disabled": true,
     "draft": false,
