@@ -718,6 +718,8 @@
   "EMBEDDED_ACTIVITIES_SELECT_VOICE_CHANNEL": "\"Select Voice Channel\"",
   "EMBEDDED_ACTIVITIES_LAUNCH": "\"Launch\"",
   "EMBEDDED_ACTIVITIES_JOIN": "\"Join\"",
+  "EMBEDDED_ACTIVITIES_JOINED": "\"Joined\"",
+  "EMBEDDED_ACTIVITIES_ENDED": "\"Ended\"",
   "EMBEDDED_ACTIVITIES_RETURN_TO_ACTIVITY": "\"Return to Activity\"",
   "EMBEDDED_ACTIVITIES_PEOPLE_ARE_IN_AN_ACTIVITY": "\"{n, plural, one {1 person is} other {{n} people are}} in an Activity\"",
   "EMBEDDED_ACTIVITIES_SUPPORTED_PLATFORMS_MOBILE": "\"Mobile\"",
