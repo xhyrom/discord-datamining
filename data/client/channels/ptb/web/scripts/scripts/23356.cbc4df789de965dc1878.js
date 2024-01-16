@@ -43061,25 +43061,48 @@
             "use strict";
             n.r(t), n.d(t, {
                 isMidjourneyOnboardingFlow: function() {
-                    return a
-                },
-                shouldRedirectToMidjourneyDM: function() {
                     return o
+                },
+                isEligibleForMidjourneyRedirect: function() {
+                    return d
+                },
+                hasRedirectedToGuild: function() {
+                    return u
                 }
             }), n("446674");
             var s = n("305961"),
-                i = n("256896"),
-                r = n("760797");
+                i = n("162771"),
+                r = n("256896"),
+                a = n("760797");
 
-            function a(e) {
+            function o(e) {
                 let {
                     guildStore: t
                 } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = null != t ? t : s.default;
-                return 1 === n.getGuildCount() && null != n.getGuild(r.MIDJOURNEY_GUILD_ID) && (0, i.isEligibleForMidjourneyOnboarding)(e)
+                return 1 === n.getGuildCount() && null != n.getGuild(a.MIDJOURNEY_GUILD_ID) && (0, r.isEligibleForMidjourneyOnboarding)(e)
             }
 
-            function o(e) {
-                return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === r.MIDJOURNEY_BOT_ID && a("app")
+            function d(e) {
+                return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === a.MIDJOURNEY_BOT_ID && o("app")
+            }
+
+            function u(e) {
+                return new Promise((t, n) => {
+                    if (i.default.getGuildId() === e) {
+                        t();
+                        return
+                    }
+                    let s = setTimeout(() => {
+                            a(), n()
+                        }, 3e3),
+                        r = () => {
+                            i.default.getGuildId() === e && (a(), t())
+                        },
+                        a = () => {
+                            i.default.removeChangeListener(r), clearTimeout(s)
+                        };
+                    i.default.addChangeListener(r)
+                })
             }
         },
         618421: function(e, t, n) {
@@ -63153,4 +63176,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.19f377420bf32cf50b7e.js.map
+//# sourceMappingURL=23356.cbc4df789de965dc1878.js.map
