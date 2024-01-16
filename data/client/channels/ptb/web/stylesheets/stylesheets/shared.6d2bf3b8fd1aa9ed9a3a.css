@@ -15486,6 +15486,11 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 @use postcss-pxtorem;
 
+.theme-dark.custom-theme-background .embedFull__8dc21 {
+    --__spoiler-background-color--hidden: var(--primary-760);
+    --__spoiler-background-color--hidden--hover: hsl(var(--primary-760-hsl) / 0.8)
+}
+
 .embed_d3cbe3 {
     position: relative;
     display: grid;
@@ -27301,4 +27306,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.12d71ec2cc496754e53a.css.map*/
+/*# sourceMappingURL=shared.6d2bf3b8fd1aa9ed9a3a.css.map*/
