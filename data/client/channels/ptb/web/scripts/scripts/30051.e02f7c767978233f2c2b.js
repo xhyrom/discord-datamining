@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["78033"], {
+    ["30051"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -19720,24 +19720,25 @@
             }
 
             function f() {
-                for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-                let [s, o] = r.useState(t), l = r.useContext(u), f = r.useMemo(() => d(l, s), [s, l]), E = r.useMemo(() => d(l, s.slice(0, s.length - 1)), [s, l]);
+                for (var e, t = arguments.length, n = Array(t), s = 0; s < t; s++) n[s] = arguments[s];
+                let [o, l] = r.useState(n), f = r.useContext(u), E = r.useMemo(() => d(f, o), [o, f]), h = r.useMemo(() => d(f, o.slice(0, o.length - 1)), [o, f]);
                 r.useEffect(() => {
-                    !a(t, s) && o(t)
-                }, [t]);
-                let h = r.useCallback(e => {
+                    !a(n, o) && l(n)
+                }, [n]);
+                let p = r.useCallback(e => {
                     let {
                         children: t
                     } = e;
                     return (0, i.jsx)(c, {
-                        currentContext: f,
+                        currentContext: E,
                         children: t
                     })
-                }, [f]);
+                }, [E]);
                 return {
-                    AnalyticsLocationProvider: h,
-                    analyticsLocations: f,
-                    sourceAnalyticsLocations: E
+                    AnalyticsLocationProvider: p,
+                    analyticsLocations: E,
+                    sourceAnalyticsLocations: h,
+                    newestAnalyticsLocation: null !== (e = E[E.length - 1]) && void 0 !== e ? e : null
                 }
             }
         },
@@ -50159,7 +50160,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "259250"
+                                build_number: "259255"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63546,4 +63547,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.6079c0ce054dc9ca816f.js.map
+//# sourceMappingURL=30051.e02f7c767978233f2c2b.js.map
