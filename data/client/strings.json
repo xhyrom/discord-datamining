@@ -13633,7 +13633,7 @@
   "GENERIC_FORMATTED_LIST_FOUR": "\"$[](a), $[](b), $[](c), and $[](d)\"",
   "NUMBER_ABBREVIATION_FULL": "\"{value, number}\"",
   "NUMBER_ABBREVIATION_THOUSANDS": "\"{value, number}k\"",
-  "NUMBER_ABBREVIATION_MILLIONS": "\"{value, number}M\"",
+  "NUMBER_ABBREVIATION_MILLIONS": "\"{value}M\"",
   "FINISH": "\"Finish\"",
   "ONBOARDING_NO_PROMPTS": "\"We hope you enjoy your stay!\"",
   "ONBOARDING_COVER_WELCOME_TITLE": "\"Welcome to !!{guildName}!!, !!{userName}!!!\"",
