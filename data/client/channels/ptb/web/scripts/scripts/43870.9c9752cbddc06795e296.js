@@ -54,21 +54,28 @@
             let n, i;
             r.r(e), r.d(e, {
                 default: function() {
-                    return d
+                    return I
                 }
             }), r("222007");
             var o = r("917351"),
                 u = r("446674"),
                 l = r("913144"),
-                a = r("491232");
-            let T = new Map,
-                c = new Map,
-                E = T,
+                a = r("915639"),
+                T = r("491232");
+            let c = new Map,
+                E = new Map,
                 s = c,
-                _ = !1;
-            class S extends u.default.Store {
+                _ = E,
+                S = !1;
+            let d = () => {
+                s = c, _ = E, i = void 0, S = !1, n = void 0
+            };
+            class C extends u.default.Store {
+                initialize() {
+                    this.syncWith([a.default], d)
+                }
                 get isFetching() {
-                    return _
+                    return S
                 }
                 get error() {
                     return n
@@ -77,51 +84,49 @@
                     return i
                 }
                 get categories() {
-                    return E
-                }
-                get products() {
                     return s
                 }
+                get products() {
+                    return _
+                }
                 getCategory(t) {
-                    return null != t ? E.get(t) : void 0
+                    return null != t ? s.get(t) : void 0
                 }
                 getProduct(t) {
-                    return null != t ? s.get(t) : void 0
+                    return null != t ? _.get(t) : void 0
                 }
                 getCategoryForProduct(t) {
                     let e = this.getProduct(t);
                     return this.getCategory(null == e ? void 0 : e.categorySkuId)
                 }
             }
-            S.displayName = "CollectiblesCategoryStore";
-            var d = new S(l.default, {
+            C.displayName = "CollectiblesCategoryStore";
+            var I = new C(l.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: t => {
-                    _ = !0, n = void 0
+                    S = !0, n = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: t => {
-                    0 === t.categories.length ? (E = T, s = c) : !(0, o.isEqual)([...E.values()], t.categories) && (E = new Map(t.categories.map(t => [t.skuId, t])), s = new Map((0, a.getProductsFromCategories)(E).map(t => [t.skuId, t]))), i = Date.now(), _ = !1, n = void 0
+                    0 === t.categories.length ? (s = c, _ = E) : !(0, o.isEqual)([...s.values()], t.categories) && (s = new Map(t.categories.map(t => [t.skuId, t])), _ = new Map((0, T.getProductsFromCategories)(s).map(t => [t.skuId, t]))), i = Date.now(), S = !1, n = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: t => {
                     let {
                         error: e
                     } = t;
-                    E = T, s = c, _ = !1, n = e
+                    s = c, _ = E, S = !1, n = e
                 },
                 COLLECTIBLES_PRODUCT_FETCH: t => {
-                    _ = !0, n = void 0
+                    S = !0, n = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: t => {
-                    s.set(t.product.skuId, t.product), _ = !1, n = void 0
+                    _.set(t.product.skuId, t.product), S = !1, n = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: t => {
                     let {
                         error: e
                     } = t;
-                    _ = !1, n = e
+                    S = !1, n = e
                 },
-                LOGOUT: t => {
-                    E = T, s = c, i = void 0, _ = !1, n = void 0
-                }
+                LOGOUT: d
             })
         },
         491232: function(t, e, r) {
@@ -656,4 +661,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43870.0d80f8b1b2c06aa273a2.js.map
+//# sourceMappingURL=43870.9c9752cbddc06795e296.js.map
