@@ -22828,21 +22828,6 @@
                 }
             })
         },
-        362391: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return s
-                }
-            });
-            var i = n("446674"),
-                r = n("650033");
-
-            function s(e) {
-                let t = (0, i.useStateFromStores)([r.default], () => r.default.get(e), [e]);
-                return t
-            }
-        },
         916523: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -24658,32 +24643,7 @@
         },
         133337: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                useMergedExperimentConfigs: function() {
-                    return a
-                },
-                getMergedExperimentConfigs: function() {
-                    return o
-                }
-            });
-            var i = n("884691"),
-                r = n("917351");
-
-            function s(e, t) {
-                return (0, r.mergeWith)({}, e, t, (e, t) => e || t)
-            }
-
-            function a(e, t, n, r) {
-                let a = e.useExperiment(n, r),
-                    o = t.useExperiment(n, r);
-                return i.useMemo(() => s(a, o), [a, o])
-            }
-
-            function o(e, t, n, i) {
-                let r = e.getCurrentConfig(n, i),
-                    a = t.getCurrentConfig(n, i);
-                return s(r, a)
-            }
+            n.r(t), n("884691"), n("917351")
         },
         13030: function(e, t, n) {
             "use strict";
@@ -28256,14 +28216,7 @@
         },
         699145: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                MainTabsV2OnePercentExperimentExistingUsers: function() {
-                    return a
-                },
-                MainTabsV2OnePercentExperimentNewUsers: function() {
-                    return o
-                }
-            });
+            n.r(t);
             var i = n("862205");
             let r = {
                     showRedesign: !1,
@@ -28283,21 +28236,20 @@
                         showRedesign: !0,
                         showPanels: !0
                     }
-                }],
-                a = (0, i.createExperiment)({
-                    kind: "user",
-                    id: "2023-10_mobile_redesign_one_percent_existing_users",
-                    label: "Tabs V2 - One Percent - Existing Users",
-                    defaultConfig: r,
-                    treatments: s
-                }),
-                o = (0, i.createExperiment)({
-                    kind: "user",
-                    id: "2023-10_mobile_redesign_one_percent_new_users",
-                    label: "Tabs V2 - One Percent - New Users",
-                    defaultConfig: r,
-                    treatments: s
-                })
+                }];
+            (0, i.createExperiment)({
+                kind: "user",
+                id: "2023-10_mobile_redesign_one_percent_existing_users",
+                label: "Tabs V2 - One Percent - Existing Users",
+                defaultConfig: r,
+                treatments: s
+            }), (0, i.createExperiment)({
+                kind: "user",
+                id: "2023-10_mobile_redesign_one_percent_new_users",
+                label: "Tabs V2 - One Percent - New Users",
+                defaultConfig: r,
+                treatments: s
+            })
         },
         132522: function(e, t, n) {
             "use strict";
@@ -28376,17 +28328,10 @@
         },
         98443: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                useNavPeekExperiment: function() {
-                    return l
-                },
-                getNavPeekExperimentConfig: function() {
-                    return u
-                }
-            });
-            var i = n("868493"),
-                r = n("133337");
-            let s = {
+            n.r(t);
+            var i = n("868493");
+            n("133337");
+            let r = {
                     removePeek: !1,
                     removePeekSubtle: !1,
                     removePeekRoundRight: !1,
@@ -28394,18 +28339,18 @@
                     removeForwardSwipe: !1,
                     showNewPanels: !1
                 },
-                a = [{
+                s = [{
                     id: 0,
                     label: "Control",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0
                     }
                 }, {
                     id: 1,
                     label: "Remove peek",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0,
                         removePeek: !0
                     }
@@ -28413,7 +28358,7 @@
                     id: 2,
                     label: "Remove peek (subtle peek}",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0,
                         removePeek: !0,
                         removePeekSubtle: !0
@@ -28422,7 +28367,7 @@
                     id: 3,
                     label: "Remove peek (round right corner)",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0,
                         removePeek: !0,
                         removePeekRoundRight: !0
@@ -28431,7 +28376,7 @@
                     id: 4,
                     label: "Remove peek + flush right edge",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0,
                         removePeek: !0,
                         removePeekEdge: !0
@@ -28440,55 +28385,43 @@
                     id: 5,
                     label: "Remove peek + flush right edge + remove forward swipe",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0,
                         removePeek: !0,
                         removePeekEdge: !0,
                         removeForwardSwipe: !0
                     }
-                }],
-                o = (0, i.default)({
-                    kind: "user",
-                    id: "2023-12_mobile_redesign_nav_peek",
-                    label: "Mobile Redesign - Nav Experiment: Peek",
-                    defaultConfig: s,
-                    treatments: a
-                });
-
-            function l(e, t) {
-                return (0, r.useMergedExperimentConfigs)(o.existingUsers, o.newUsers, e, t)
-            }
-
-            function u(e, t) {
-                return (0, r.getMergedExperimentConfigs)(o.existingUsers, o.newUsers, e, t)
-            }
+                }];
+            (0, i.default)({
+                kind: "user",
+                id: "2023-12_mobile_redesign_nav_peek",
+                label: "Mobile Redesign - Nav Experiment: Peek",
+                defaultConfig: r,
+                treatments: s
+            })
         },
         680992: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                getNavNotifTabExperiment: function() {
-                    return l
-                }
-            });
-            var i = n("868493"),
-                r = n("133337");
-            let s = {
+            n.r(t);
+            var i = n("868493");
+            n("133337");
+            let r = {
                     moveFriendRequests: !1,
                     removeNotificationTab: !1,
                     showNewPanels: !1
                 },
-                a = [{
+                s = [{
                     id: 0,
                     label: "Control",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0
                     }
                 }, {
                     id: 1,
                     label: "Move friend requests out of notification tab.",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0,
                         moveFriendRequests: !0
                     }
@@ -28496,23 +28429,19 @@
                     id: 2,
                     label: "Remove notification tab and move friend requests out of notification tab.",
                     config: {
-                        ...s,
+                        ...r,
                         showNewPanels: !0,
                         moveFriendRequests: !0,
                         removeNotificationTab: !0
                     }
-                }],
-                o = (0, i.default)({
-                    kind: "user",
-                    id: "2023-12_mobile_redesign_notif_tab",
-                    label: "Mobile Redesign - Notification Tab",
-                    defaultConfig: s,
-                    treatments: a
-                });
-
-            function l(e, t) {
-                return (0, r.getMergedExperimentConfigs)(o.existingUsers, o.newUsers, e, t)
-            }
+                }];
+            (0, i.default)({
+                kind: "user",
+                id: "2023-12_mobile_redesign_notif_tab",
+                label: "Mobile Redesign - Notification Tab",
+                defaultConfig: r,
+                treatments: s
+            })
         },
         693051: function(e, t, n) {
             "use strict";
@@ -28579,10 +28508,7 @@
             let i, r;
             n.r(t), n.d(t, {
                 updateIsInTabsUI: function() {
-                    return c
-                },
-                updateIsInNewPanels: function() {
-                    return d
+                    return u
                 }
             });
             var s = n("411916"),
@@ -28590,105 +28516,60 @@
                 o = n("599110"),
                 l = n("286235");
 
-            function u() {
-                let e = i ? r ? s.DesignIds.DESIGN_TABS_IA : s.DesignIds.DESIGN_IA : s.DesignIds.CLASSIC_IA;
-                o.default.extendSuperProperties({
-                    design_id: e
-                }), a.addGlobalTag("design_id", e), l.default.setTags({
-                    design_id: "".concat(e)
-                })
-            }
-
-            function c(e) {
-                i !== e && (i = e, u())
-            }
-
-            function d(e) {
-                r !== e && (r = e, u())
+            function u(e) {
+                i !== e && (i = e, r = e, ! function() {
+                    let e = i ? r ? s.DesignIds.DESIGN_TABS_IA : s.DesignIds.DESIGN_IA : s.DesignIds.CLASSIC_IA;
+                    o.default.extendSuperProperties({
+                        design_id: e
+                    }), a.addGlobalTag("design_id", e), l.default.setTags({
+                        design_id: "".concat(e)
+                    })
+                }())
             }
         },
         934306: function(e, t, n) {
             "use strict";
-            let i;
             n.r(t), n.d(t, {
                 isOnNewPanels: function() {
-                    return I
+                    return a
                 },
                 useOnNewPanels: function() {
-                    return C
+                    return o
                 },
                 isSplitMessagesTab: function() {
-                    return v
+                    return l
                 },
                 isSplitMessagesTabAndOnMessagesTab: function() {
-                    return A
+                    return u
                 },
                 shouldHandleNewPanelsRoute: function() {
-                    return R
+                    return c
                 }
             });
-            var r = n("95410"),
-                s = n("650033"),
-                a = n("362391"),
-                o = n("760190"),
-                l = n("21121"),
-                u = n("699145"),
-                c = n("98443"),
-                d = n("680992"),
-                f = n("264325"),
-                E = n("18108"),
-                h = n("491246"),
-                p = n("49111");
-            let _ = {
-                    autoTrackExposure: !1
-                },
-                S = {
-                    location: "isSplitMessagesTab"
-                },
-                m = {
-                    location: "isOnNewPanels"
-                },
-                T = {
-                    location: "useOnNewPanels"
-                };
+            var i = n("21121"),
+                r = n("491246"),
+                s = n("49111");
 
-            function g(e) {
-                (0, E.updateIsInNewPanels)(e), i !== e && (r.default.set("isOnNewPanels", e), i = e)
+            function a() {
+                return (0, i.isInMainTabsExperiment)()
             }
 
-            function I() {
-                return (0, l.isInMainTabsExperiment)() ? s.default.get("new_panels") ? (g(!0), !0) : o.default.hasLoadedExperiments || void 0 === i ? u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig(m, _).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig(m, _).showPanels || (0, c.getNavPeekExperimentConfig)(m, _).showNewPanels || (0, d.getNavNotifTabExperiment)(m, _).showNewPanels || (0, f.isTabsUIEnabledManually)() ? (g(!0), !0) : (g(!1), !1) : i : (g(!1), !1)
+            function o() {
+                return (0, i.useInMainTabsExperiment)()
             }
 
-            function C() {
-                let e = (0, l.useInMainTabsExperiment)(),
-                    t = (0, a.default)("new_panels"),
-                    n = (0, c.useNavPeekExperiment)(T, _).showNewPanels,
-                    i = (0, d.getNavNotifTabExperiment)(T, _).showNewPanels,
-                    r = u.MainTabsV2OnePercentExperimentExistingUsers.useExperiment(T, _).showPanels,
-                    s = u.MainTabsV2OnePercentExperimentNewUsers.useExperiment(T, _).showPanels,
-                    o = (0, f.useIsTabsUIEnabledManually)();
-                return e && (t || n || i || r || s || o)
+            function l() {
+                return (0, i.isInMainTabsExperiment)()
             }
 
-            function v() {
-                if (!(0, l.isInMainTabsExperiment)()) return !1;
-                let {
-                    showNewPanels: e
-                } = (0, c.getNavPeekExperimentConfig)(S, _), {
-                    showNewPanels: t
-                } = (0, d.getNavNotifTabExperiment)(S, _);
-                return !!(e || t || !I() || s.default.get("panels_split_messages_tab") || u.MainTabsV2OnePercentExperimentExistingUsers.getCurrentConfig(S, _).showPanels || u.MainTabsV2OnePercentExperimentNewUsers.getCurrentConfig(S, _).showPanels || (0, f.isTabsUIEnabledManually)()) || !1
-            }
-
-            function A() {
-                if (!v()) return !1;
-                let e = (0, h.default)();
+            function u() {
+                if (!l()) return !1;
+                let e = (0, r.default)();
                 return (null == e ? void 0 : e.name) === "messages"
             }
 
-            function R(e) {
-                return !!I() && (!v() || null != e && e !== p.ME)
+            function c(e) {
+                return !!a() && null != e && e !== s.ME
             }
         },
         491246: function(e, t, n) {
@@ -50160,7 +50041,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "259322"
+                                build_number: "259327"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63547,4 +63428,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.fb597d558fef35c6fc5a.js.map
+//# sourceMappingURL=41039.6140fd24f068a50688b1.js.map
