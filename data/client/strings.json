@@ -16349,6 +16349,7 @@
   "APPEAL_INGESTION_MODAL_REQUEST_SENT_RULES_LINK": "\"Learn about how we enforce rules\"",
   "APPEAL_INGESTION_MODAL_THANKS_HEADER": "\"Thanks for letting us know.\"",
   "APPEAL_INGESTION_MODAL_SPAM_HEADER": "\"This request is for spam.\"",
+  "APPEAL_INGESTION_MODAL_SPAM_LINK": "\"Contact Discord Support\"",
   "APPEAL_INGESTION_MODAL_SPEED_BUMP_SUBHEADER": "\"Did we make a mistake? Let us know.\"",
   "APPEAL_INGESTION_MODAL_SPEED_BUMP_ACTIVITY_HEADER": "\"YOUR ACTIVITY\"",
   "APPEAL_INGESTION_MODAL_SPEED_BUMP_ACTIVITY_SUBHEADER": "\"We determined this content violates our policy\"",
