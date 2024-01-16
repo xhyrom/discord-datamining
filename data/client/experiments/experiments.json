@@ -10892,8 +10892,7 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "showRedesign",
-        "showPanels"
+        "enabled"
       ]
     }
   },
@@ -10918,8 +10917,7 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "showRedesign",
-        "showPanels"
+        "enabled"
       ]
     }
   },
