@@ -6275,6 +6275,17 @@
                 loader: "loader__0c85a"
             }
         },
+        928987: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                buttons: "buttons_d00e0a",
+                content: "content__5ac45",
+                footer: "footer_b2cb88",
+                header: "header_d3b11d",
+                teamBodyText: "teamBodyText__6a99e",
+                teamSetup: "teamSetup_ad74ed"
+            }
+        },
         284427: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -11479,17 +11490,6 @@
                 divider: "divider_fbb2ab",
                 header: "header_b6ae2b",
                 headerWithDescription: "headerWithDescription__6a2ab"
-            }
-        },
-        910707: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                buttons: "buttons__01c98",
-                content: "content_bcd00a",
-                footer: "footer__3af62",
-                header: "header__859ad",
-                teamBodyText: "teamBodyText__7c7fc",
-                teamSetup: "teamSetup_b1b621"
             }
         },
         302287: function(e, t, o) {
