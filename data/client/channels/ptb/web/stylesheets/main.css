@@ -20511,9 +20511,9 @@ html .progress__4ef76 {
     background: var(--background-tertiary)
 }
 
-.soundButton__5ad7b.focused_a3fd1a:not(.premiumDisabled__07ada) .buttonOverlay__76d7d,
-.soundButton__5ad7b:focus-within:not(.premiumDisabled__07ada) .buttonOverlay__76d7d,
-.soundButton__5ad7b:hover:not(.premiumDisabled__07ada) .buttonOverlay__76d7d {
+.soundButton__5ad7b.focused_a3fd1a .buttonOverlay__76d7d,
+.soundButton__5ad7b:focus-within .buttonOverlay__76d7d,
+.soundButton__5ad7b:hover .buttonOverlay__76d7d {
     opacity: 1;
     visibility: visible
 }
@@ -20609,7 +20609,8 @@ html .progress__4ef76 {
 
 .secondaryButton__41267:focus,
 .secondaryButton__41267:hover {
-    color: var(--interactive-hover)
+    color: var(--interactive-hover);
+    cursor: pointer
 }
 
 .secondaryIcon__8154f {
@@ -20731,6 +20732,16 @@ html .progress__4ef76 {
 .image__2d4d5 {
     height: 80px;
     width: auto
+}
+
+.buttonContainer_cd8f81 {
+    position: relative
+}
+
+.previewButtonContainer__4c95a {
+    position: absolute;
+    top: 8px;
+    left: -24px
 }
 
 .sectionHeader_c664ae {
@@ -125922,4 +125933,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.af74fad1a78ce1d265cd.css.map*/
+/*# sourceMappingURL=app.2a4a8af953bfab78a103.css.map*/
