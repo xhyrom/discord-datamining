@@ -26871,8 +26871,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -86739,6 +86739,36 @@ html .tabBadge__002b3 {
     white-space: pre-wrap
 }
 
+.header_d3b11d {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between
+}
+
+.content__5ac45 {
+    margin-bottom: 24px;
+    max-width: 625px
+}
+
+.teamSetup_ad74ed,
+.teamBodyText__6a99e {
+    margin-bottom: 24px
+}
+
+.teamSetup_ad74ed p {
+    margin-top: 0
+}
+
+.footer_b2cb88 {
+    justify-content: space-between
+}
+
+.buttons_d00e0a {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
 .textArea__545d6 {
     background-color: var(--input-background);
     padding-bottom: 36px
@@ -100743,36 +100773,6 @@ html .invoiceCancelRow_a8669b {
 
 .description__2c6cf {
     margin-right: 24px
-}
-
-.header__859ad {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between
-}
-
-.content_bcd00a {
-    margin-bottom: 24px;
-    max-width: 625px
-}
-
-.teamSetup_b1b621,
-.teamBodyText__7c7fc {
-    margin-bottom: 24px
-}
-
-.teamSetup_b1b621 p {
-    margin-top: 0
-}
-
-.footer__3af62 {
-    justify-content: space-between
-}
-
-.buttons__01c98 {
-    display: flex;
-    align-items: center;
-    gap: 8px
 }
 
 .container__2ff1a {
@@ -125933,4 +125933,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.647bc7ce30f0d4f2acde.css.map*/
+/*# sourceMappingURL=app.377c240d97768fbb249f.css.map*/
