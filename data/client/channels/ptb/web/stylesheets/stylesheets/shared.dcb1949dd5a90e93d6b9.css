@@ -8438,7 +8438,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-sm-normal__5f295 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -8449,7 +8449,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-sm-medium_dc8711 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -8460,7 +8460,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-sm-semibold__4cfe3 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -8471,7 +8471,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-sm-bold__749b9 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -8482,7 +8482,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-sm-extrabold__2e507 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 800
 }
@@ -8493,7 +8493,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-md-normal__25bf8 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -8504,7 +8504,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-md-medium__2cdab {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -8515,7 +8515,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-md-semibold__72d48 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -8526,7 +8526,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-md-bold_e6526d {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -8537,7 +8537,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-md-extrabold_d14b63 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -8548,7 +8548,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-lg-normal__86980 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -8559,7 +8559,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-lg-medium__974bb {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -8570,7 +8570,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-lg-semibold_d8b5dc {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -8581,7 +8581,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-lg-bold_a64bab {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -8592,7 +8592,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-lg-extrabold_c1c252 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 800
 }
@@ -8603,7 +8603,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xl-normal_cacf96 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -8614,7 +8614,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xl-medium__0995b {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -8625,7 +8625,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xl-semibold__7af04 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -8636,7 +8636,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xl-bold__51bcc {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -8647,7 +8647,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xl-extrabold__6ffb0 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -8658,7 +8658,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xxl-normal_dc34ef {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -8669,7 +8669,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xxl-medium__4201a {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -8680,7 +8680,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xxl-semibold__5cfd4 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -8691,7 +8691,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xxl-bold__39481 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -8702,7 +8702,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-xxl-extrabold__52186 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -8713,7 +8713,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .eyebrow__60985 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700;
     text-transform: uppercase;
@@ -8726,7 +8726,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-deprecated-12-normal_ca5ece {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -8737,7 +8737,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-deprecated-12-medium__219ab {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -8748,7 +8748,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-deprecated-12-semibold_c46b67 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -8759,7 +8759,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-deprecated-12-bold__55af0 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -8770,7 +8770,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .heading-deprecated-12-extrabold__4dfa9 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 800
 }
@@ -8781,7 +8781,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-heading-18-bold__17650 {
     font-family: var(--font-display);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -8792,7 +8792,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-xxs-normal__34cff {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -8803,7 +8803,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-xxs-medium__39e25 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -8814,7 +8814,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-xxs-semibold_be01dd {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -8825,7 +8825,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-xxs-bold__2b5aa {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -8836,7 +8836,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-xs-normal__85eee {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -8847,7 +8847,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-xs-medium__66ef2 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -8858,7 +8858,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-xs-semibold__5d4b3 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -8869,7 +8869,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-xs-bold_fde81b {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -8880,7 +8880,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-sm-normal__79442 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -8891,7 +8891,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-sm-medium__3d1f5 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -8902,7 +8902,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-sm-semibold__361dc {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -8913,7 +8913,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-sm-bold__45d89 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -8924,7 +8924,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-md-normal_a91dc3 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -8935,7 +8935,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-md-medium_ee6992 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -8946,7 +8946,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-md-semibold__509c1 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -8957,7 +8957,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-md-bold__391a1 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -8968,7 +8968,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-lg-normal_b63177 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -8979,7 +8979,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-lg-medium__71ee9 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -8990,7 +8990,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-lg-semibold__21e4c {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -9001,7 +9001,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .text-lg-bold_a367ba {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -9012,7 +9012,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-message-preview-normal_faa829 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -9023,7 +9023,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-message-preview-medium__2fc94 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -9034,7 +9034,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-message-preview-semibold_c63fd7 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -9045,7 +9045,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-message-preview-bold__7bdd8 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -9056,7 +9056,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-channel-title-normal__385ee {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 400
 }
@@ -9067,7 +9067,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-channel-title-medium_f4d9c8 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 500
 }
@@ -9078,7 +9078,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-channel-title-semibold__9f765 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 600
 }
@@ -9089,7 +9089,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .redesign-channel-title-bold__76d53 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 700
 }
@@ -9100,7 +9100,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .display-sm__7975b {
     font-family: var(--font-headline);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1;
     font-weight: 800
 }
@@ -9111,7 +9111,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .display-md__49cf2 {
     font-family: var(--font-headline);
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 1.0588235294117647;
     font-weight: 800
 }
@@ -9122,7 +9122,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .display-lg_f9d971 {
     font-family: var(--font-headline);
-    font-size: 44px;
+    font-size: 2.75rem;
     line-height: .9545454545454546;
     font-weight: 800
 }
@@ -9133,7 +9133,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .code__11b54 {
     font-family: var(--font-code);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -27301,4 +27301,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.c8f26abbb671b6b12cfa.css.map*/
+/*# sourceMappingURL=shared.dcb1949dd5a90e93d6b9.css.map*/
