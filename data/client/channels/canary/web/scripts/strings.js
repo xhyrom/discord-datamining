@@ -4333,6 +4333,8 @@
                 A11Y_ROLE_IMAGE_BUTTON: "image, button",
                 A11Y_LOADING_STARTED: "Loading",
                 A11Y_LOADING_FINISHED: "Loading finished",
+                A11Y_CHECKBOX_CHECKED: "checked",
+                A11Y_CHECKBOX_UNCHECKED: "unchecked",
                 DND_ITEM_PICKED_UP: "Picked up !!{itemName}!!",
                 DND_ITEM_DROPPED: "Dropped item",
                 DND_DRAG_CANCELED: "Stopped dragging",
@@ -16452,6 +16454,8 @@
                 WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
                 YOU_ARE_IN_CHANNEL: "You are in $[](channelHook)",
                 THEY_ARE_IN_CHANNEL: "They're hanging out in $[](channelHook)",
+                YOU_ARE_IN_CHANNEL_NAME: "You are in #!!{channelName}!!",
+                THEY_ARE_IN_CHANNEL_NAME: "They're hanging out in #!!{channelName}!!",
                 HANGOUT_OVER_SENDER: "The hangout is over, want to start it again?",
                 HANGOUT_OVER_RECEIVER: "You missed the hangout :(",
                 WAVE_AGAIN: "Wave again",
@@ -18113,7 +18117,7 @@
                 L = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259421", ", Version Hash: ").concat("22b5cc7ad0d9e5bea90fae8c2ad0481cf58d34ed")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259430", ", Version Hash: ").concat("771ff870767a64e476105a4bef648d8fa59b9ae8")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20387,8 +20391,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "259421", "259421"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259421")), _ = 0), _
+                let _ = parseInt((e = "259430", "259430"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259430")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35678,4 +35682,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6575.e1a05239ad403f2241ed.js.map
+//# sourceMappingURL=6575.a5e8115c232a958d41a1.js.map
