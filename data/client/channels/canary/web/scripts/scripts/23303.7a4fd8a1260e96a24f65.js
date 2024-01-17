@@ -55072,8 +55072,7 @@
                         oldFormErrors: !0
                     })).then(e => {
                         null != e && (el === r && i === x.default.getId() && (el = e.body.token), g.default.dispatch({
-                            type: "MESSAGE_ACKED",
-                            channelId: this.channelId
+                            type: "MESSAGE_ACKED"
                         }), t && n.el("199808").then(n.bind(n, "199808")).then(e => {
                             let {
                                 default: t
@@ -63174,4 +63173,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.36166cddd57acd4f85ea.js.map
+//# sourceMappingURL=23303.7a4fd8a1260e96a24f65.js.map
