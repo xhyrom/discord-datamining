@@ -2142,11 +2142,17 @@
         787336: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                isAttachmentUrl: function() {
+                    return u
+                },
+                removeSignedUrlParameters: function() {
+                    return d
+                },
                 messageHasExpiredAttachmentUrl: function() {
-                    return f
+                    return p
                 },
                 maybeRefreshAttachmentUrl: function() {
-                    return p
+                    return E
                 }
             }), n("222007"), n("511434"), n("313619"), n("654714"), n("287168"), n("956660");
             var l, a = n("872717"),
@@ -2156,6 +2162,15 @@
                 o = new Set(["/attachments/", "/ephemeral-attachments/"]);
 
             function u(e) {
+                return r.has(e.hostname) && Array.from(o).some(t => e.pathname.startsWith(t))
+            }
+
+            function d(e) {
+                for (let t of (e = new URL(e), ["ex", "is", "hm"])) e.searchParams.delete(t);
+                return e
+            }
+
+            function c(e) {
                 let t = function(e) {
                     let t = e.searchParams.get("ex"),
                         n = parseInt(null != t ? t : "", 16);
@@ -2164,27 +2179,26 @@
                 return null == t || t <= Date.now() + 36e5
             }
 
-            function d(e) {
-                let t = new URL(e.url);
-                return u(t)
-            }
-
-            function c(e) {
-                var t;
-                if (null == e) return !1;
-                let n = new URL(e.url);
-                return t = n, !!(r.has(t.hostname) && Array.from(o).some(e => t.pathname.startsWith(e))) && u(n)
-            }
-
             function m(e) {
-                var t;
-                return c(e.image) || (null === (t = e.images) || void 0 === t ? void 0 : t.some(c)) || c(e.video)
+                let t = new URL(e.url);
+                return c(t)
             }
 
             function f(e) {
-                return e.attachments.some(d) || e.embeds.some(m)
+                if (null == e) return !1;
+                let t = new URL(e.url);
+                return !!u(t) && c(t)
             }
-            async function h(e) {
+
+            function h(e) {
+                var t;
+                return f(e.image) || (null === (t = e.images) || void 0 === t ? void 0 : t.some(f)) || f(e.video)
+            }
+
+            function p(e) {
+                return e.attachments.some(m) || e.embeds.some(h)
+            }
+            async function g(e) {
                 let t = await a.default.post({
                     url: i.Endpoints.ATTACHMENTS_REFRESH_URLS,
                     body: {
@@ -2193,13 +2207,13 @@
                 });
                 return t.ok ? t.body.refreshed_urls[0].refreshed : void 0
             }
-            async function p(e) {
+            async function E(e) {
                 if (!s.AttachmentLinkRefreshExperiment.getCurrentConfig({
                         location: "link_clicked"
                     }).enabled) return e;
                 let t = new URL(e);
-                if (!u(t)) return e;
-                let n = await h(e);
+                if (!c(t)) return e;
+                let n = await g(e);
                 return null != n ? n : e
             }
         },
@@ -10759,4 +10773,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56145.f18410a65e2b5f99b9be.js.map
+//# sourceMappingURL=56145.1199b3469715ddb7696c.js.map
