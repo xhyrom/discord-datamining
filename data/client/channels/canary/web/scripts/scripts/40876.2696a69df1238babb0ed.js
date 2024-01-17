@@ -1424,7 +1424,7 @@
                     });
                     i.default.dispatch({
                         type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
-                        quests: e.body.map(r.questWithUserStatusFromServer)
+                        quests: e.body.quests.map(r.questWithUserStatusFromServer)
                     })
                 } catch (e) {
                     i.default.dispatch({
@@ -1709,4 +1709,4 @@
         }
     }
 ]);
-//# sourceMappingURL=40876.a47161717a3a9610fcda.js.map
+//# sourceMappingURL=40876.2696a69df1238babb0ed.js.map
