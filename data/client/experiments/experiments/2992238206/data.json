@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_chunked_message_attachment_uploads",
+    "label": "Use chunked uploads for message attachments",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Chunked message attachment uploads"
+    ],
+    "hash": 2992238206,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "chunkSize"
+    ]
+  }
+}
