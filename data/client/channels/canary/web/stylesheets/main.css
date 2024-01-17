@@ -26871,8 +26871,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -45050,6 +45050,17 @@ html .progress__4ef76 {
     width: 24px
 }
 
+.acronym_fbdc79 {
+    font-weight: 500;
+    line-height: 1.2em;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-mod-strong);
+    color: var(--text-normal)
+}
+
 .iconContainer__3f9b0 {
     position: relative;
     margin-right: 6px
@@ -45141,7 +45152,8 @@ html .progress__4ef76 {
     color: var(--interactive-muted)
 }
 
-.modeMuted__0aeea .iconWithGuildIcon__4461b {
+.modeMuted__0aeea .iconWithGuildIcon__4461b,
+.modeMuted__0aeea .acronym_fbdc79 {
     color: var(--text-muted);
     background: var(--bg-mod-faint)
 }
@@ -45175,6 +45187,11 @@ html .progress__4ef76 {
 .modeSelected__487d6:hover .iconWithGuildIcon__4461b {
     background: var(--interactive-normal);
     color: var(--background-secondary)
+}
+
+.modeSelected__487d6 .acronym_fbdc79,
+.modeSelected__487d6:hover .acronym_fbdc79 {
+    background: var(--brand-experiment)
 }
 
 .modeSelected__487d6 .link__95dc0,
@@ -125938,4 +125955,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d7214da01dd46ffc5250.css.map*/
+/*# sourceMappingURL=app.7ee176b000d0becda914.css.map*/
