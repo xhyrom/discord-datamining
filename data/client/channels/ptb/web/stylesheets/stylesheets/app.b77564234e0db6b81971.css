@@ -37841,7 +37841,13 @@ html .progress__4ef76 {
     margin: 0 var(--spacing-16);
     border-radius: var(--radius-md);
     background: var(--background-primary);
-    position: relative
+    position: relative;
+    opacity: .7
+}
+
+.container__155f7:hover {
+    opacity: 1;
+    box-shadow: var(--shadow-low-hover)
 }
 
 .container__155f7:not(:last-child) {
@@ -37853,6 +37859,7 @@ html .progress__4ef76 {
     flex-grow: 1;
     padding: var(--spacing-12);
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     box-sizing: border-box
 }
@@ -37860,9 +37867,21 @@ html .progress__4ef76 {
 .title__4f6bc {
     display: flex;
     flex-grow: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis
+    margin-right: var(--spacing-32)
+}
+
+.subtitle_deec05 {
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: var(--spacing-4);
+    margin-top: var(--spacing-4)
+}
+
+.metaContainer_d2328f {
+    flex-shrink: 1;
+    background-color: var(--background-modifier-hover);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-8)var(--spacing-16)
 }
 
 .divider__28cf5 {
@@ -37880,32 +37899,36 @@ html .progress__4ef76 {
 }
 
 .secondaryRow_f2616a {
-    padding: var(--spacing-12);
+    padding: var(--spacing-8)var(--spacing-16);
     display: flex;
-    justify-content: flex-start;
-    box-sizing: border-box
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%
+}
+
+.buttonContainer__08f59 {
+    display: flex;
+    align-items: center
 }
 
 .primaryButton__76629 {
-    margin-left: auto;
+    flex-shrink: 0;
     min-width: -moz-max-content;
     min-width: max-content
 }
 
-.infoBox_a3dcf7 {
-    margin-left: auto;
-    height: 40px;
-    width: 136px;
-    align-items: center;
-    text-align: center;
-    background: var(--background-secondary);
-    border-radius: var(--radius-xs);
-    display: flex;
-    justify-content: center
+.deleteButton__0597e {
+    margin-left: var(--spacing-12)
 }
 
-.secondaryButton__02639 {
-    margin-left: var(--spacing-16)
+.launchToJoinContainer_eda9c7 {
+    display: flex;
+    align-items: center
+}
+
+.launchToJoinText__810bf {
+    margin-right: var(--spacing-4)
 }
 
 .container__64705 {
@@ -37942,8 +37965,8 @@ html .progress__4ef76 {
 }
 
 .tooltip_e208e4 {
-    width: 232px;
-    max-width: 232px
+    width: 280px;
+    max-width: 280px
 }
 
 .tooltipContent_e5fd34 {
@@ -115813,6 +115836,17 @@ html .invoiceCancelRow_c1bfe7 {
     padding: 11px 20px
 }
 
+.modalContent_d4e781 {
+    padding-top: var(--spacing-16)
+}
+
+.header__807ed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-16)
+}
+
 .description__32529 {
     margin-bottom: 16px
 }
@@ -125955,4 +125989,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.44434c2b80e6c12f98a1.css.map*/
+/*# sourceMappingURL=app.b77564234e0db6b81971.css.map*/

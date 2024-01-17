@@ -3396,6 +3396,7 @@
                 messageAttachmentFullWidth: "messageAttachmentFullWidth__89ab6",
                 messageAttachmentMediaMosaic: "messageAttachmentMediaMosaic__65bfc",
                 messageAttachmentNoJustify: "messageAttachmentNoJustify__922b7",
+                messageAttachmentWithFooter: "messageAttachmentWithFooter_b68ca2 noBorderBottomRadius__1dde7",
                 noBorderBottomRadius: "noBorderBottomRadius__1dde7",
                 nonMediaAttachment: "nonMediaAttachment__30665",
                 obscureVideo: "obscureVideo_efdb7b",
