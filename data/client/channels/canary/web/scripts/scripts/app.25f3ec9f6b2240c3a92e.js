@@ -21439,14 +21439,18 @@
         72317: function(e, t, o) {
             "use strict";
             e.exports = {
+                buttonContainer: "buttonContainer__08f59",
                 container: "container__155f7",
+                deleteButton: "deleteButton__0597e",
                 divider: "divider__28cf5",
-                infoBox: "infoBox_a3dcf7",
                 inviteImage: "inviteImage_dff78c",
+                launchToJoinContainer: "launchToJoinContainer_eda9c7",
+                launchToJoinText: "launchToJoinText__810bf",
+                metaContainer: "metaContainer_d2328f",
                 primaryButton: "primaryButton__76629",
                 primaryRow: "primaryRow__69d8b",
-                secondaryButton: "secondaryButton__02639",
                 secondaryRow: "secondaryRow_f2616a",
+                subtitle: "subtitle_deec05",
                 title: "title__4f6bc"
             }
         },
@@ -21458,6 +21462,13 @@
                 headerDivider: "headerDivider__3823d",
                 headerTitle: "headerTitle_c90ffd",
                 invitesContainer: "invitesContainer_b72c78"
+            }
+        },
+        130718: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                header: "header__807ed",
+                modalContent: "modalContent_d4e781"
             }
         },
         400004: function(e, t, o) {

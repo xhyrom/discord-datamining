@@ -16239,6 +16239,10 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     border-bottom-right-radius: 0
 }
 
+.messageAttachmentWithFooter_b68ca2 {
+    flex-direction: column
+}
+
 .hideOverflow_d442b2 {
     overflow: hidden
 }
@@ -27306,4 +27310,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.3731b3da71b6caf7132e.css.map*/
+/*# sourceMappingURL=shared.5e369802a367ec8229ab.css.map*/
