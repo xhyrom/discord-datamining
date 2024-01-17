@@ -26871,8 +26871,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -123559,6 +123559,7 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
     --divider-strong: hsl(var(--white-500-hsl) / 0.16);
     --divider-subtle: hsl(var(--white-500-hsl) / 0.08);
+    --embed-title: var(--primary-130);
     --expression-picker-bg: var(--primary-630);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl) / 0.8);
@@ -123863,6 +123864,7 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--white-200-hsl) / 0.5);
     --divider-strong: hsl(var(--black-500-hsl) / 0.16);
     --divider-subtle: hsl(var(--black-500-hsl) / 0.08);
+    --embed-title: var(--primary-860);
     --expression-picker-bg: var(--primary-130);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-160-hsl) / 0.8);
@@ -124167,6 +124169,7 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --divider-strong: hsl(var(--plum-11-hsl) / 0.24);
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
+    --embed-title: var(--plum-2);
     --expression-picker-bg: var(--black-500);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--plum-19-hsl) / 0.8);
@@ -124471,6 +124474,7 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --divider-strong: hsl(var(--plum-11-hsl) / 0.22);
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
+    --embed-title: var(--plum-4);
     --expression-picker-bg: var(--plum-20);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--plum-19-hsl) / 0.8);
@@ -125934,4 +125938,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3899188e45f3fa9ce22a.css.map*/
+/*# sourceMappingURL=app.d7214da01dd46ffc5250.css.map*/

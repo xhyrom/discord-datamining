@@ -15634,7 +15634,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .embed_d3cbe3 .embedAuthorNameLink_b25226 {
-    color: var(--header-primary)
+    color: var(--embed-title)
 }
 
 .embedAuthorIcon__6b055 {
@@ -15916,7 +15916,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 .embedAuthorName_a1274b,
 .embedTitle__31740,
 .embedFieldName_d42d0c {
-    color: var(--header-primary)
+    color: var(--embed-title)
 }
 
 .embedProvider_cfa718,
@@ -27306,4 +27306,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.6d2bf3b8fd1aa9ed9a3a.css.map*/
+/*# sourceMappingURL=shared.3731b3da71b6caf7132e.css.map*/
