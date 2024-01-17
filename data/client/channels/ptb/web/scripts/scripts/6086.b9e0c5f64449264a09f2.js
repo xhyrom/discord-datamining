@@ -643,43 +643,45 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return S
                 }
             }), n("222007");
             var a = n("872717"),
                 l = n("689988"),
                 i = n("870691"),
                 d = n("42203"),
-                s = n("49111");
-            let r = {},
-                o = 0;
+                s = n("718517"),
+                r = n("49111");
+            let o = {},
+                u = 0,
+                f = 15 * s.default.Millis.SECOND;
 
-            function u() {
-                r = {
+            function g() {
+                o = {
                     ...i.default.getCollapsedCategories()
                 }
             }
 
-            function f() {
-                !__OVERLAY__ && (clearTimeout(o), o = setTimeout(() => g(), 15e3))
+            function c() {
+                !__OVERLAY__ && (clearTimeout(u), u = setTimeout(() => _(), f))
             }
-            async function g(e, t) {
-                null == e || e === s.ME ? await a.default.patch({
-                    url: s.Endpoints.USER_GUILD_SETTINGS(s.ME),
+            async function _(e, t) {
+                null == e || e === r.ME ? await a.default.patch({
+                    url: r.Endpoints.USER_GUILD_SETTINGS(r.ME),
                     body: t
-                }) : await c(null != t ? {
-                    [null != e ? e : s.ME]: t
+                }) : await p(null != t ? {
+                    [null != e ? e : r.ME]: t
                 } : {})
             }
-            async function c(e) {
-                clearTimeout(o);
+            async function p(e) {
+                clearTimeout(u);
                 let t = 0 !== Object.keys(e).length,
                     n = i.default.getCollapsedCategories(),
                     l = function() {
                         let e = {},
                             t = i.default.getCollapsedCategories();
-                        for (let n in t) t[n] !== r[n] && (e[n] = !0);
-                        for (let n in r) t[n] !== r[n] && (e[n] = !0);
+                        for (let n in t) t[n] !== o[n] && (e[n] = !0);
+                        for (let n in o) t[n] !== o[n] && (e[n] = !0);
                         return e
                     }();
                 for (let a in l) {
@@ -689,34 +691,34 @@
                         collapsed: l.id in n
                     }, t = !0)
                 }
-                return t ? (r = {
+                return t ? (o = {
                     ...n
-                }, delete e[s.FAVORITES], (await a.default.patch({
-                    url: s.Endpoints.USER_GUILD_SETTINGS_BULK,
+                }, delete e[r.FAVORITES], (await a.default.patch({
+                    url: r.Endpoints.USER_GUILD_SETTINGS_BULK,
                     body: {
                         guilds: e
                     }
                 })).body) : []
             }
 
-            function _() {
-                r = {
+            function E() {
+                o = {
                     ...i.default.getCollapsedCategories()
                 }
             }
-            class p extends l.default {
+            class N extends l.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        CATEGORY_COLLAPSE: f,
-                        CATEGORY_EXPAND: f,
-                        CATEGORY_COLLAPSE_ALL: f,
-                        CATEGORY_EXPAND_ALL: f,
-                        POST_CONNECTION_OPEN: u,
-                        USER_GUILD_SETTINGS_FULL_UPDATE: _
-                    }, this.saveUserGuildSettings = g, this.saveUserGuildSettingsBulk = c
+                        CATEGORY_COLLAPSE: c,
+                        CATEGORY_EXPAND: c,
+                        CATEGORY_COLLAPSE_ALL: c,
+                        CATEGORY_EXPAND_ALL: c,
+                        POST_CONNECTION_OPEN: g,
+                        USER_GUILD_SETTINGS_FULL_UPDATE: E
+                    }, this.saveUserGuildSettings = _, this.saveUserGuildSettingsBulk = p
                 }
             }
-            var E = new p
+            var S = new N
         },
         870691: function(e, t, n) {
             "use strict";
@@ -825,4 +827,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6086.41f62eee6f2a97cafe40.js.map
+//# sourceMappingURL=6086.b9e0c5f64449264a09f2.js.map

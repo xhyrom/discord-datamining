@@ -204,26 +204,28 @@
             "use strict";
             i.r(t), i.d(t, {
                 GuildMemberSafetyPageStore: function() {
-                    return h
+                    return d
                 }
             }), i("222007"), i("808653"), i("424973");
             var r = i("917351"),
                 n = i("26989"),
                 s = i("697218"),
-                u = i("493910"),
-                a = i("691386"),
-                l = i("936763");
-            class h {
+                u = i("718517"),
+                a = i("493910"),
+                l = i("691386"),
+                h = i("936763");
+            let o = 3 * u.default.Millis.SECOND;
+            class d {
                 getSearchIndex() {
                     let e = null == this._search || this._search.hasDefaultQuery;
-                    return e ? u.MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER : u.MemberSafetySecondaryIndex.INCLUDED_IN_SEARCH_RESULTS
+                    return e ? a.MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER : a.MemberSafetySecondaryIndex.INCLUDED_IN_SEARCH_RESULTS
                 }
                 initialize() {
                     if (this._initialized) {
                         this.lastCursorTimestamp = Date.now();
                         return
                     }
-                    this._initialized = !0, this._search = new l.GuildMemberSafetySearch(this.guildId), this._members = new u.GuildMemberSafetyMembers(this.guildId), this._pagination = new a.GuildMemberSafetyPagination(this.guildId, this._members.values(this.getSearchIndex()))
+                    this._initialized = !0, this._search = new h.GuildMemberSafetySearch(this.guildId), this._members = new a.GuildMemberSafetyMembers(this.guildId), this._pagination = new l.GuildMemberSafetyPagination(this.guildId, this._members.values(this.getSearchIndex()))
                 }
                 get isInitialized() {
                     return this._initialized
@@ -234,7 +236,7 @@
                     this._initialized && (null === (e = this._members) || void 0 === e || e.reset(), null === (t = this._pagination) || void 0 === t || t.reset(), null === (i = this._search) || void 0 === i || i.reset(), r && this.initialize())
                 }
                 get searchChunkSize() {
-                    return null != this._pagination && this._initialized ? (0, a.getSearchChunkLimit)(this._pagination.getPaginationState()) : 0
+                    return null != this._pagination && this._initialized ? (0, l.getSearchChunkLimit)(this._pagination.getPaginationState()) : 0
                 }
                 getMember(e) {
                     var t;
@@ -374,13 +376,13 @@
                 _scheduleRefresh(e) {
                     this.lastRefreshTimestamp = e, this.lastCursorTimestamp = Date.now(), null != this._lastRefreshTimer && clearTimeout(this._lastRefreshTimer), this._lastRefreshTimer = setTimeout(() => {
                         this._lastRefreshTimer = null, this.lastRefreshTimestamp = 0
-                    }, 3e3)
+                    }, o)
                 }
                 refreshNewMembersAndSearchResults() {
                     if (null == this._search || null == this._members || !this._initialized) return !1;
                     let e = Number(Date.now());
                     this._scheduleRefresh(e);
-                    let t = (0, r.cloneDeep)(this._members.values(u.MemberSafetySecondaryIndex.NEW_GUILD_MEMBER)),
+                    let t = (0, r.cloneDeep)(this._members.values(a.MemberSafetySecondaryIndex.NEW_GUILD_MEMBER)),
                         i = !1;
                     for (let r of t) i = this._members.updateMember(r, {
                         isCurrentGuildMemberByTimestamp: !0,
@@ -388,10 +390,10 @@
                         user: s.default.getUser(r.userId)
                     }) || i;
                     this._members.resetNewMemberTimestamp(), this.resetSearchState() && (i = !1);
-                    let [n, a] = this.updatePaginationState({
+                    let [n, u] = this.updatePaginationState({
                         currentPage: 1
                     }, !1);
-                    return a && (i = !1), i && this.updatePaginationChunks(), !0
+                    return u && (i = !1), i && this.updatePaginationChunks(), !0
                 }
                 getNewMemberTimestamp() {
                     return null != this._members && this._initialized ? this._members.newMemberTimestamp : 0
@@ -401,7 +403,7 @@
                     let t = !!this._search.hasDefaultQuery,
                         i = this._search.updateSearchState(e);
                     if (this._search.hasDefaultQuery && t) return this.updatePaginationChunks();
-                    let n = (0, r.cloneDeep)(this._members.values(u.MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER)),
+                    let n = (0, r.cloneDeep)(this._members.values(a.MemberSafetySecondaryIndex.CURRENT_GUILD_MEMBER)),
                         s = t !== this._search.hasDefaultQuery;
                     for (let e of n) {
                         if (!e.isCurrentGuildMemberByTimestamp) continue;
@@ -415,7 +417,7 @@
                     }), !0) : i
                 }
                 getSearchState() {
-                    return null != this._search && this._initialized ? this._search.getSearchState() : (0, l.getDefaultSearchState)()
+                    return null != this._search && this._initialized ? this._search.getSearchState() : (0, h.getDefaultSearchState)()
                 }
                 hasDefaultSearchState() {
                     return null == this._search || !this._initialized || this._search.hasDefaultQuery
@@ -433,7 +435,7 @@
                     return null != this._search && null != this._pagination && this._initialized ? (t && (this.lastRefreshTimestamp = 0), this._search.hasDefaultQuery && null != e.totalResultsCount && (this._defaultSearchTotalResultsCount = e.totalResultsCount), this._pagination.updatePaginationState(e)) : [!1, !1]
                 }
                 getPaginationState() {
-                    return null != this._pagination && this._initialized ? this._pagination.getPaginationState() : (0, a.createDefaultMemberSafetyPaginationState)()
+                    return null != this._pagination && this._initialized ? this._pagination.getPaginationState() : (0, l.createDefaultMemberSafetyPaginationState)()
                 }
                 getPaginatedMembers() {
                     return null != this._pagination && this._initialized ? [this._pagination.paginatedMembers, this._pagination.version] : [{}, 0]
@@ -725,15 +727,16 @@
             "use strict";
             i.r(t), i.d(t, {
                 UNUSUAL_DM_COMPARISON_DELTA: function() {
-                    return r
+                    return n
                 },
                 createMemberSearchCursor: function() {
-                    return n
+                    return s
                 }
             });
-            let r = 1728e5;
+            var r = i("718517");
+            let n = 2 * r.default.Millis.DAY;
 
-            function n(e) {
+            function s(e) {
                 if (null == e || null == e.joinedAt) return null;
                 let t = new Date(e.joinedAt).getTime();
                 return {
@@ -1242,4 +1245,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55639.609a4833a8d096089cd1.js.map
+//# sourceMappingURL=55639.c4b02d1537ac95b8d6a3.js.map

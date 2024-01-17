@@ -25,27 +25,28 @@
             "use strict";
             _.r(t), _.d(t, {
                 default: function() {
-                    return n
+                    return a
                 }
             });
             var s = _("888400"),
-                r = _("333805"),
-                E = _("782340");
-            class i extends r.default {
+                r = _("718517"),
+                E = _("333805"),
+                i = _("782340");
+            class n extends E.default {
                 _getMessageFromRateLimit(e) {
                     let t = e.body.retry_after,
-                        _ = (0, s.diffAsUnits)(0, 1e3 * t);
+                        _ = (0, s.diffAsUnits)(0, t * r.default.Millis.SECOND);
                     return (0, s.unitsAsStrings)(_, {
-                        days: E.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_ERROR_RATE_LIMIT_DAYS,
-                        hours: E.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_ERROR_RATE_LIMIT_HOURS,
-                        minutes: E.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_ERROR_RATE_LIMIT_MINUTES
+                        days: i.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_ERROR_RATE_LIMIT_DAYS,
+                        hours: i.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_ERROR_RATE_LIMIT_HOURS,
+                        minutes: i.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_ERROR_RATE_LIMIT_MINUTES
                     })
                 }
                 constructor(e, t) {
                     super(e, t), 429 === this.status && (this.message = this._getMessageFromRateLimit(e))
                 }
             }
-            var n = i
+            var a = n
         },
         736978: function(e, t, _) {
             "use strict";
@@ -353,4 +354,4 @@
         }
     }
 ]);
-//# sourceMappingURL=46541.ab18cbeb54e90f2fb7b5.js.map
+//# sourceMappingURL=46541.c33eae8d471e53d0e4b0.js.map

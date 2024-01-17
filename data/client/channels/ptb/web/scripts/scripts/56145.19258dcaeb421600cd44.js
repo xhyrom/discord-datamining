@@ -1315,8 +1315,8 @@
                 y = n("781423"),
                 R = n("47677"),
                 L = n("49111"),
-                b = n("724210"),
-                O = n("782340"),
+                O = n("724210"),
+                b = n("782340"),
                 D = n("862839");
             n("706250");
             var P = n("632215");
@@ -1441,10 +1441,10 @@
                                 let n = h.default.getGuild(e);
                                 if (null == e || null == n || !n.hasFeature(L.GuildFeatures.COMMUNITY)) return;
                                 let l = {
-                                        home: b.StaticChannelRoute.GUILD_HOME,
-                                        browse: b.StaticChannelRoute.CHANNEL_BROWSER,
-                                        customize: b.StaticChannelRoute.CUSTOMIZE_COMMUNITY,
-                                        guide: b.StaticChannelRoute.GUILD_HOME
+                                        home: O.StaticChannelRoute.GUILD_HOME,
+                                        browse: O.StaticChannelRoute.CHANNEL_BROWSER,
+                                        customize: O.StaticChannelRoute.CUSTOMIZE_COMMUNITY,
+                                        guide: O.StaticChannelRoute.GUILD_HOME
                                     },
                                     a = l[t],
                                     s = h.default.getGuild(e);
@@ -1459,15 +1459,15 @@
                         if (!(0, M.isStaticRouteIconType)(e.channelId)) return null;
                         let s = "".concat(e.channelId);
                         switch (e.channelId) {
-                            case b.StaticChannelId.GUILD_HOME:
-                            case b.StaticChannelId.SERVER_GUIDE:
-                                s = O.default.Messages.SERVER_GUIDE;
+                            case O.StaticChannelId.GUILD_HOME:
+                            case O.StaticChannelId.SERVER_GUIDE:
+                                s = b.default.Messages.SERVER_GUIDE;
                                 break;
-                            case b.StaticChannelId.CHANNEL_BROWSER:
-                                s = O.default.Messages.GUILD_SIDEBAR_CHANNEL_BROWSER;
+                            case O.StaticChannelId.CHANNEL_BROWSER:
+                                s = b.default.Messages.GUILD_SIDEBAR_CHANNEL_BROWSER;
                                 break;
-                            case b.StaticChannelId.CUSTOMIZE_COMMUNITY:
-                                s = O.default.Messages.CHANNELS_AND_ROLES
+                            case O.StaticChannelId.CUSTOMIZE_COMMUNITY:
+                                s = b.default.Messages.CHANNELS_AND_ROLES
                         }
                         return (0, l.jsx)(o.Tooltip, {
                             text: s,
@@ -1663,15 +1663,15 @@
                 a = n("866227"),
                 s = n.n(a),
                 i = n("775560"),
-                r = n("646630"),
-                o = n("49111");
+                r = n("718517"),
+                o = n("646630");
             let u = [
-                    [2 * o.Durations.MINUTE, o.Durations.SECOND],
-                    [5 * o.Durations.MINUTE, o.Durations.MINUTE],
-                    [45 * o.Durations.MINUTE, 2 * o.Durations.MINUTE],
-                    [21 * o.Durations.HOUR, 5 * o.Durations.MINUTE]
+                    [2 * r.default.Seconds.MINUTE, r.default.Seconds.SECOND],
+                    [5 * r.default.Seconds.MINUTE, r.default.Seconds.MINUTE],
+                    [45 * r.default.Seconds.MINUTE, 2 * r.default.Seconds.MINUTE],
+                    [21 * r.default.Seconds.HOUR, 5 * r.default.Seconds.MINUTE]
                 ],
-                d = 2 * o.Durations.HOUR;
+                d = 2 * r.default.Seconds.HOUR;
 
             function c(e) {
                 let t = (0, i.useForceUpdate)();
@@ -1687,7 +1687,7 @@
                         t()
                     }, n);
                     return () => clearInterval(a)
-                }, [t, e.format, e.parsed]), "R" === e.format) ? r.TIMESTAMP_FORMATS.R(e.parsed) : e.formatted
+                }, [t, e.format, e.parsed]), "R" === e.format) ? o.TIMESTAMP_FORMATS.R(e.parsed) : e.formatted
             }
         },
         886125: function(e, t, n) {
@@ -2143,77 +2143,79 @@
             "use strict";
             n.r(t), n.d(t, {
                 isAttachmentUrl: function() {
-                    return u
+                    return c
                 },
                 removeSignedUrlParameters: function() {
-                    return d
+                    return m
                 },
                 messageHasExpiredAttachmentUrl: function() {
-                    return p
+                    return E
                 },
                 maybeRefreshAttachmentUrl: function() {
-                    return E
+                    return C
                 }
             }), n("222007"), n("511434"), n("313619"), n("654714"), n("287168"), n("956660");
             var l, a = n("872717"),
-                s = n("519841"),
-                i = n("49111");
-            let r = new Set([window.GLOBAL_ENV.CDN_HOST, null === (l = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) || void 0 === l ? void 0 : l.substring(2)]),
-                o = new Set(["/attachments/", "/ephemeral-attachments/"]);
+                s = n("718517"),
+                i = n("519841"),
+                r = n("49111");
+            let o = new Set([window.GLOBAL_ENV.CDN_HOST, null === (l = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) || void 0 === l ? void 0 : l.substring(2)]),
+                u = new Set(["/attachments/", "/ephemeral-attachments/"]),
+                d = 1 * s.default.Millis.HOUR;
 
-            function u(e) {
-                return r.has(e.hostname) && Array.from(o).some(t => e.pathname.startsWith(t))
+            function c(e) {
+                return o.has(e.hostname) && Array.from(u).some(t => e.pathname.startsWith(t))
             }
 
-            function d(e) {
+            function m(e) {
                 for (let t of (e = new URL(e), ["ex", "is", "hm"])) e.searchParams.delete(t);
                 return e
             }
 
-            function c(e) {
+            function f(e) {
                 let t = function(e) {
                     let t = e.searchParams.get("ex"),
                         n = parseInt(null != t ? t : "", 16);
-                    return isNaN(n) ? void 0 : 1e3 * n
+                    return isNaN(n) ? void 0 : n * s.default.Millis.SECOND
                 }(e);
-                return null == t || t <= Date.now() + 36e5
-            }
-
-            function m(e) {
-                let t = new URL(e.url);
-                return c(t)
-            }
-
-            function f(e) {
-                if (null == e) return !1;
-                let t = new URL(e.url);
-                return !!u(t) && c(t)
+                return null == t || t <= Date.now() + d
             }
 
             function h(e) {
-                var t;
-                return f(e.image) || (null === (t = e.images) || void 0 === t ? void 0 : t.some(f)) || f(e.video)
+                let t = new URL(e.url);
+                return f(t)
             }
 
             function p(e) {
-                return e.attachments.some(m) || e.embeds.some(h)
+                if (null == e) return !1;
+                let t = new URL(e.url);
+                return !!c(t) && f(t)
             }
-            async function g(e) {
+
+            function g(e) {
+                var t;
+                return p(e.image) || (null === (t = e.images) || void 0 === t ? void 0 : t.some(p)) || p(e.video)
+            }
+
+            function E(e) {
+                return e.attachments.some(h) || e.embeds.some(g)
+            }
+            async function v(e) {
                 let t = await a.default.post({
-                    url: i.Endpoints.ATTACHMENTS_REFRESH_URLS,
+                    url: r.Endpoints.ATTACHMENTS_REFRESH_URLS,
                     body: {
                         attachment_urls: [e]
                     }
                 });
                 return t.ok ? t.body.refreshed_urls[0].refreshed : void 0
             }
-            async function E(e) {
-                if (!s.AttachmentLinkRefreshExperiment.getCurrentConfig({
+            async function C(e) {
+                if (!i.AttachmentLinkRefreshExperiment.getCurrentConfig({
                         location: "link_clicked"
                     }).enabled) return e;
                 let t = new URL(e);
-                if (!c(t)) return e;
-                let n = await g(e);
+                if (!f(t)) return e;
+                let n = await v(e);
                 return null != n ? n : e
             }
         },
@@ -2483,8 +2485,8 @@
                 y = n("162771"),
                 R = n("697218"),
                 L = n("145131"),
-                b = n("791106"),
-                O = n("580357"),
+                O = n("791106"),
+                b = n("580357"),
                 D = n("476263"),
                 P = n("98292"),
                 w = n("256170"),
@@ -2619,7 +2621,7 @@
                             className: i(X.guildInformation, X.truncatingText),
                             children: [(0, l.jsxs)(L.default, {
                                 align: L.default.Align.CENTER,
-                                children: [(0, l.jsx)(O.default, {
+                                children: [(0, l.jsx)(b.default, {
                                     guild: t,
                                     className: X.guildBadge
                                 }), c ? (0, l.jsx)(d.Clickable, {
@@ -2686,26 +2688,26 @@
                         joinedEmojiSourceGuildRecord: S,
                         closePopout: A,
                         onToggleShowMoreEmojis: j,
-                        guildEmoji: b,
-                        demoMode: O = !1,
+                        guildEmoji: O,
+                        demoMode: b = !1,
                         nonce: D
                     } = e, U = (0, o.useStateFromStores)([R.default], () => R.default.getCurrentUser()), k = (0, o.useStateFromStores)([y.default], () => y.default.getGuildId()), F = H.default.isPremium(U), B = null != k && (k === (null == v ? void 0 : v.id) || k === (null == S ? void 0 : S.id)), q = null != S, $ = null !== (t = null == v ? void 0 : v.isDiscoverable()) && void 0 !== t && t;
-                    O && (F = !0, $ = !0, q = !1, B = !1);
+                    b && (F = !0, $ = !0, q = !1, B = !1);
                     let ee = J(),
                         {
                             isRoleSubscriptionEmoji: en,
                             isUnusableRoleSubscriptionEmoji: el,
                             userIsRoleSubscriber: ea
-                        } = a.useMemo(() => null == b ? {
+                        } = a.useMemo(() => null == O ? {
                             isRoleSubscriptionEmoji: !1,
                             isUnusableRoleSubscriptionEmoji: !1,
                             userIsRoleSubscriber: !1
                         } : {
-                            isRoleSubscriptionEmoji: C.isPurchasableRoleSubscriptionEmoji(b),
-                            isUnusableRoleSubscriptionEmoji: C.isUnusableRoleSubscriptionEmoji(b, null != k ? k : void 0),
-                            userIsRoleSubscriber: I.default.getUserSubscriptionRoles(b.guildId).size > 0
-                        }, [b, k]),
-                        es = !!el && (0, g.shouldHideGuildPurchaseEntryPoints)(null == b ? void 0 : b.guildId),
+                            isRoleSubscriptionEmoji: C.isPurchasableRoleSubscriptionEmoji(O),
+                            isUnusableRoleSubscriptionEmoji: C.isUnusableRoleSubscriptionEmoji(O, null != k ? k : void 0),
+                            userIsRoleSubscriber: I.default.getUserSubscriptionRoles(O.guildId).size > 0
+                        }, [O, k]),
+                        es = !!el && (0, g.shouldHideGuildPurchaseEntryPoints)(null == O ? void 0 : O.guildId),
                         {
                             analyticsLocations: ei
                         } = (0, h.default)(f.default.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL);
@@ -2714,8 +2716,8 @@
                         name: r.ImpressionNames.ROLE_SUBSCRIPTION_EMOJI_UPSELL,
                         properties: {
                             location_stack: ei,
-                            emoji_guild_id: null !== (n = null == b ? void 0 : b.guildId) && void 0 !== n ? n : null,
-                            emoji_id: null !== (s = null == b ? void 0 : b.id) && void 0 !== s ? s : null
+                            emoji_guild_id: null !== (n = null == O ? void 0 : O.guildId) && void 0 !== n ? n : null,
+                            emoji_id: null !== (s = null == O ? void 0 : O.id) && void 0 !== s ? s : null
                         }
                     }, {
                         disableTrack: !en
@@ -2750,7 +2752,7 @@
                             popoutData: ed,
                             emojiSourceGuildId: null == v ? void 0 : v.id,
                             nonce: D,
-                            demoMode: O
+                            demoMode: b
                         }),
                         eh = ed.type === G.EmojiPopoutType.JOIN_GUILD,
                         ep = ed.type === G.EmojiPopoutType.GET_PREMIUM_INVENTORY_DISABLED,
@@ -2760,7 +2762,7 @@
                         className: X.popoutContent,
                         children: [(() => {
                             let e = async () => {
-                                if (O || null == v || q) return;
+                                if (b || null == v || q) return;
                                 A();
                                 let e = v.id;
                                 try {
@@ -2820,7 +2822,7 @@
                             let e = q || null != eo.collectedPack,
                                 t = null != v && !q && ($ || eu),
                                 n = () => {
-                                    t && (null == j || j(), !eg && !O && V.default.track(z.AnalyticEvents.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eE(!eg))
+                                    t && (null == j || j(), !eg && !b && V.default.track(z.AnalyticEvents.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eE(!eg))
                                 };
                             return (0, l.jsxs)("div", {
                                 className: X.guildSection,
@@ -2922,7 +2924,7 @@
                                         className: X.ctaDescription,
                                         children: [u && (0, l.jsx)(U.default, {
                                             className: X.nitroWheel,
-                                            color: b.GradientCssUrls.PREMIUM_TIER_2
+                                            color: O.GradientCssUrls.PREMIUM_TIER_2
                                         }), (0, l.jsx)(d.Text, {
                                             variant: "text-sm/medium",
                                             "aria-label": g,
@@ -3044,8 +3046,8 @@
                 y = n("888673"),
                 R = n("839952"),
                 L = n("476765"),
-                b = n("62843"),
-                O = n("461380"),
+                O = n("62843"),
+                b = n("461380"),
                 D = n("171710"),
                 P = n("945330"),
                 w = n("909004"),
@@ -3222,7 +3224,7 @@
                         type: t = 0,
                         onClick: n
                     } = e;
-                    return (0, s.jsx)(b.MessagesInteractionContext.Consumer, {
+                    return (0, s.jsx)(O.MessagesInteractionContext.Consumer, {
                         children: e => e.disableInteractions ? null : (0, s.jsxs)("div", {
                             className: z.jumpToPresentBar,
                             children: [(0, s.jsx)(f.FocusRing, {
@@ -3257,7 +3259,7 @@
                                             default:
                                                 return (0, k.assertNever)(e)
                                         }
-                                    }(t), (0, s.jsx)(O.default, {
+                                    }(t), (0, s.jsx)(b.default, {
                                         className: z.barButtonIcon
                                     })]
                                 })
@@ -3274,7 +3276,7 @@
                         onClick: t,
                         loading: n
                     } = e;
-                    return (0, s.jsx)(b.MessagesInteractionContext.Consumer, {
+                    return (0, s.jsx)(O.MessagesInteractionContext.Consumer, {
                         children: e => e.disableInteractions ? null : (0, s.jsxs)(f.Clickable, {
                             className: z.messagesErrorBar,
                             onClick: t,
@@ -3322,7 +3324,7 @@
                     (0, p.ack)(n)
                 }, [n]), {
                     disableInteractions: u
-                } = i.useContext(b.MessagesInteractionContext);
+                } = i.useContext(O.MessagesInteractionContext);
                 return u ? null : (0, s.jsxs)("div", {
                     className: o(z.newMessagesBar, {
                         [z.disableInteractions]: u
@@ -3363,7 +3365,7 @@
                     scrollManager: u
                 } = e, {
                     disableInteractions: g
-                } = i.useContext(b.MessagesInteractionContext), [E, N] = i.useState(null), M = i.useRef(null), [j, y] = i.useState(null), R = i.useRef(null), L = (0, m.useStateFromStoresArray)([_.default], () => {
+                } = i.useContext(O.MessagesInteractionContext), [E, N] = i.useState(null), M = i.useRef(null), [j, y] = i.useState(null), R = i.useRef(null), L = (0, m.useStateFromStoresArray)([_.default], () => {
                     var e;
                     return null !== (e = _.default.summaries(a.id)) && void 0 !== e ? e : []
                 }, [a]), V = (0, C.default)(L);
@@ -3523,10 +3525,10 @@
                                     variant: "text-sm/medium",
                                     className: o(z.newTopicsBarCompact, z.newTopicsBarText),
                                     children: ei
-                                }), (0, s.jsx)(O.default, {
+                                }), (0, s.jsx)(b.default, {
                                     width: 16,
                                     height: 16,
-                                    direction: O.default.Directions.DOWN,
+                                    direction: b.default.Directions.DOWN,
                                     className: z.newTopicsBarCaret
                                 })]
                             })
@@ -3592,7 +3594,7 @@
                     scrollManager: r
                 } = e, {
                     disableInteractions: u
-                } = i.useContext(b.MessagesInteractionContext), [p, g] = i.useState(null), E = i.useRef(null), [N, M] = i.useState(null), T = i.useRef(null), j = (0, m.useStateFromStoresArray)([_.default], () => {
+                } = i.useContext(O.MessagesInteractionContext), [p, g] = i.useState(null), E = i.useRef(null), [N, M] = i.useState(null), T = i.useRef(null), j = (0, m.useStateFromStoresArray)([_.default], () => {
                     var e;
                     return null !== (e = _.default.summaries(a.id)) && void 0 !== e ? e : []
                 }, [a]), y = (0, C.default)(j);
@@ -3745,10 +3747,10 @@
                                     className: z.topicsPillTextTitle,
                                     variant: "text-sm/medium",
                                     children: ea
-                                }), (0, s.jsx)(O.default, {
+                                }), (0, s.jsx)(b.default, {
                                     width: 16,
                                     height: 16,
-                                    direction: O.default.Directions.DOWN,
+                                    direction: b.default.Directions.DOWN,
                                     className: z.topicsPillDropdownCaret
                                 })]
                             })
@@ -3760,10 +3762,10 @@
                                 className: o(z.topicsPillCaret, z.topicsCaretLeft, {
                                     [z.topicsPillCaretDisabled]: null == B
                                 }),
-                                children: (0, s.jsx)(O.default, {
+                                children: (0, s.jsx)(b.default, {
                                     width: 16,
                                     height: 16,
-                                    direction: O.default.Directions.UP
+                                    direction: b.default.Directions.UP
                                 })
                             }), (0, s.jsx)(f.Clickable, {
                                 "aria-label": W.default.Messages.SUMMARY_PILL_PREVIOUS,
@@ -3771,10 +3773,10 @@
                                 className: o(z.topicsPillCaret, z.topicsCaretRight, {
                                     [z.topicsPillCaretDisabled]: null == V
                                 }),
-                                children: (0, s.jsx)(O.default, {
+                                children: (0, s.jsx)(b.default, {
                                     width: 16,
                                     height: 16,
-                                    direction: O.default.Directions.DOWN
+                                    direction: b.default.Directions.DOWN
                                 })
                             })]
                         })]
@@ -4254,28 +4256,28 @@
             "use strict";
             n.r(t), n.d(t, {
                 setHighlightedSummary: function() {
-                    return I
-                },
-                toggleTopicsBar: function() {
-                    return x
-                },
-                setSelectedSummary: function() {
-                    return _
-                },
-                updateVisibleMessages: function() {
                     return S
                 },
-                useSummaryPolling: function() {
+                toggleTopicsBar: function() {
+                    return N
+                },
+                setSelectedSummary: function() {
                     return M
                 },
-                setSummaryFeedback: function() {
+                updateVisibleMessages: function() {
                     return T
                 },
-                deleteSummary: function() {
+                useSummaryPolling: function() {
+                    return j
+                },
+                setSummaryFeedback: function() {
                     return y
                 },
+                deleteSummary: function() {
+                    return O
+                },
                 default: function() {
-                    return L
+                    return D
                 }
             }), n("222007");
             var l = n("884691"),
@@ -4290,12 +4292,15 @@
                 m = n("104589"),
                 f = n("116460"),
                 h = n("42203"),
-                p = n("347738");
-            let g = {},
-                E = {};
-            async function v(e, t) {
+                p = n("718517"),
+                g = n("347738");
+            let E = 30 * p.default.Millis.SECOND,
+                v = 5 * p.default.Millis.SECOND,
+                C = {},
+                I = {};
+            async function x(e, t) {
                 let n, l;
-                if (!p.default.shouldFetch(e, t)) return;
+                if (!g.default.shouldFetch(e, t)) return;
                 let a = Date.now();
                 u.default.dispatch({
                     type: "REQUEST_CHANNEL_SUMMARY",
@@ -4318,10 +4323,10 @@
                     receivedAt: Date.now()
                 })
             }
-            async function C(e) {
+            async function _(e) {
                 var t, n;
                 let l, a;
-                if (!p.default.shouldFetch(e)) return;
+                if (!g.default.shouldFetch(e)) return;
                 let i = Date.now();
                 u.default.dispatch({
                     type: "REQUEST_CHANNEL_SUMMARIES",
@@ -4344,7 +4349,7 @@
                 })
             }
 
-            function I(e, t) {
+            function S(e, t) {
                 u.default.dispatch({
                     type: "SET_HIGHLIGHTED_SUMMARY",
                     channelId: e,
@@ -4352,21 +4357,21 @@
                 })
             }
 
-            function x() {
+            function N() {
                 u.default.dispatch({
                     type: "TOGGLE_TOPICS_BAR"
                 })
             }
 
-            function _(e, t) {
-                null != e && null != t && v(e, t), u.default.dispatch({
+            function M(e, t) {
+                null != e && null != t && x(e, t), u.default.dispatch({
                     type: "SET_SELECTED_SUMMARY",
                     channelId: e,
                     summaryId: null != t ? t : null
                 })
             }
 
-            function S(e, t) {
+            function T(e, t) {
                 u.default.dispatch({
                     type: "UPDATE_VISIBLE_MESSAGES",
                     topVisibleMessage: null != e ? e : null,
@@ -4374,11 +4379,11 @@
                 })
             }
 
-            function N(e, t) {
-                return null == g[e] && (g[e] = 0), null === t ? g[e] = 0 : g[e] += t, g[e]
+            function A(e, t) {
+                return null == C[e] && (C[e] = 0), null === t ? C[e] = 0 : C[e] += t, C[e]
             }
 
-            function M(e) {
+            function j(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                     n = (0, r.default)([h.default], () => h.default.getChannel(e), [e]),
                     [a, s] = l.useState(null),
@@ -4388,23 +4393,23 @@
                         s(null)
                     }
                 }, [e, o]), l.useEffect(() => {
-                    if (a !== e && null != a && R.stopPolling(e), o && null != a) return (t || null != e && a !== e) && R.fetchSummaries(e), R.startPolling(e), () => {
-                        null != a && R.stopPolling(e)
+                    if (a !== e && null != a && b.stopPolling(e), o && null != a) return (t || null != e && a !== e) && b.fetchSummaries(e), b.startPolling(e), () => {
+                        null != a && b.stopPolling(e)
                     }
                 }, [e, t, a, o])
             }
 
-            function T(e, t) {
+            function y(e, t) {
                 u.default.dispatch({
                     type: "SET_SUMMARY_FEEDBACK",
                     summary: e,
                     rating: t
                 })
             }
-            async function A() {
+            async function R() {
                 var e;
                 let t, n;
-                if (!p.default.shouldFetchChannelAffinities()) return Promise.resolve(null);
+                if (!g.default.shouldFetchChannelAffinities()) return Promise.resolve(null);
                 let l = Date.now();
                 u.default.dispatch({
                     type: "REQUEST_CHANNEL_AFFINITIES",
@@ -4424,14 +4429,14 @@
                     receivedAt: Date.now()
                 })
             }
-            async function j(e) {
+            async function L(e) {
                 let t, n, {
                     useQuickSwitcher: l = !0,
                     useChannelAffinities: a = !0
                 } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 e = null != e ? e : [];
                 let s = Date.now();
-                if (0 === (e = e.concat(p.default.defaultChannelIds({
+                if (0 === (e = e.concat(g.default.defaultChannelIds({
                         withQuickSwitcher: l,
                         withChannelAffinities: a
                     })).filter(e => {
@@ -4439,10 +4444,10 @@
                         return (0, c.canSeeChannelSummaries)(t, !1, !0)
                     }).filter(e => {
                         let t = Date.now(),
-                            n = p.default.status(e);
+                            n = g.default.status(e);
                         if (null == n ? void 0 : n.fetching) return !1;
                         let l = null == n ? void 0 : n.lastReceivedAt;
-                        return null == l || t - l > 3e4
+                        return null == l || t - l > E
                     }).slice(0, 50)).length) return Promise.resolve(null);
                 u.default.dispatch({
                     type: "REQUEST_CHANNEL_SUMMARIES_BULK",
@@ -4471,7 +4476,7 @@
                     error: t
                 })
             }
-            async function y(e) {
+            async function O(e) {
                 try {
                     await o.default.delete("/channels/".concat(e.channelId, "/summaries/").concat(e.id)), u.default.dispatch({
                         type: "DELETE_SUMMARY",
@@ -4481,24 +4486,24 @@
                     throw new d.APIError(e)
                 }
             }
-            let R = {
+            let b = {
                 startPolling: function(e) {
-                    let t = N(e, 1);
-                    t - 1 == 0 && (E[e] = setInterval(async () => {
-                        await R.fetchSummaries(e)
-                    }, 5e3))
+                    let t = A(e, 1);
+                    t - 1 == 0 && (I[e] = setInterval(async () => {
+                        await b.fetchSummaries(e)
+                    }, v))
                 },
                 stopPolling: function(e) {
-                    let t = N(e, -1);
-                    t <= 0 && (N(e, 0), clearInterval(E[e]))
+                    let t = A(e, -1);
+                    t <= 0 && (A(e, 0), clearInterval(I[e]))
                 },
-                setSummaryFeedback: T,
-                useSummaryPolling: M,
-                updateVisibleMessages: S,
-                setSelectedSummary: _,
-                setHighlightedSummary: I,
-                fetchSummaries: C,
-                fetchSummariesBulk: j,
+                setSummaryFeedback: y,
+                useSummaryPolling: j,
+                updateVisibleMessages: T,
+                setSelectedSummary: M,
+                setHighlightedSummary: S,
+                fetchSummaries: _,
+                fetchSummariesBulk: L,
                 useChannelSummaries: function(e) {
                     let {
                         channelIds: t = []
@@ -4509,20 +4514,20 @@
                         l.useEffect(() => {
                             (async function e() {
                                 try {
-                                    await A()
+                                    await R()
                                 } catch (e) {}
                                 try {
                                     var e, n;
                                     (null === (e = f.default.getProps().results) || void 0 === e ? void 0 : e.length) === 0 && (0, m.search)(null !== (n = f.default.getProps().query) && void 0 !== n ? n : "")
                                 } catch (e) {}
-                                await j(t.split(","))
+                                await L(t.split(","))
                             })()
                         }, [t])
-                    }(t), (0, r.useStateFromStoresArray)([p.default], () => p.default.topSummaries(), [])
+                    }(t), (0, r.useStateFromStoresArray)([g.default], () => g.default.topSummaries(), [])
                 },
-                deleteSummary: y
+                deleteSummary: O
             };
-            var L = R
+            var D = b
         },
         995307: function(e, t, n) {
             "use strict";
@@ -4595,17 +4600,17 @@
                 y = {},
                 R = [],
                 L = {},
-                b = {
+                O = {
                     status: "ok",
                     lastRequest: null,
                     lastResponse: null
                 },
-                O = [],
+                b = [],
                 D = A.SummarySources.SOURCE_0,
                 P = null;
 
             function w() {
-                O = E.default.getProps().results.filter(e => e.type === p.AutocompleterResultTypes.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
+                b = E.default.getProps().results.filter(e => e.type === p.AutocompleterResultTypes.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
             }
 
             function U(e) {
@@ -4628,7 +4633,7 @@
                         summariesFeedback: r,
                         channelAffinities: R,
                         channelAffinitiesById: L,
-                        channelAffinitiesStatus: b
+                        channelAffinitiesStatus: O
                     }
                 }
                 initialize(e) {
@@ -4720,10 +4725,10 @@
                     return null == e ? L : L[e]
                 }
                 channelAffinitiesStatus() {
-                    return b
+                    return O
                 }
                 shouldFetchChannelAffinities() {
-                    return !("fetching" === b.status || null != b.lastResponse && Date.now() - b.lastResponse < 3e4) && !0
+                    return !("fetching" === O.status || null != O.lastResponse && Date.now() - O.lastResponse < 30 * N.default.Millis.SECOND) && !0
                 }
                 defaultChannelIds(e) {
                     let {
@@ -4732,7 +4737,7 @@
                         withUnreads: l,
                         numChannels: a = 25
                     } = e, s = [];
-                    return t && (s = s.concat(O)), n && (s = s.concat(R.map(e => e.channel_id))), l && (s = s.filter(e => {
+                    return t && (s = s.concat(b)), n && (s = s.concat(R.map(e => e.channel_id))), l && (s = s.filter(e => {
                         let t = v.default.getChannel(e);
                         return null != t && !_.default.isChannelMuted(t.guild_id, e) && I.default.hasUnread(e)
                     })), (s = s.filter(e => {
@@ -4883,8 +4888,8 @@
                     null != n ? r[t.id] = n : delete r[t.id]
                 },
                 REQUEST_CHANNEL_AFFINITIES() {
-                    b = {
-                        ...b,
+                    O = {
+                        ...O,
                         status: "fetching",
                         lastRequest: Date.now()
                     }
@@ -4896,15 +4901,15 @@
                         error: l
                     } = e;
                     if (null != l) {
-                        R = [], L = {}, b = {
-                            ...b,
+                        R = [], L = {}, O = {
+                            ...O,
                             status: "error",
                             lastResponse: Date.now()
                         };
                         return
                     }
-                    R = null != n ? n : [], L = null !== (t = null == n ? void 0 : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) && void 0 !== t ? t : {}, b = {
-                        ...b,
+                    R = null != n ? n : [], L = null !== (t = null == n ? void 0 : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) && void 0 !== t ? t : {}, O = {
+                        ...O,
                         status: "ok",
                         lastResponse: Date.now()
                     }
@@ -5141,12 +5146,12 @@
                         channel: c,
                         rating: n
                     })
-                }, b = d.default.can(x.Permissions.MANAGE_MESSAGES, c);
+                }, O = d.default.can(x.Permissions.MANAGE_MESSAGES, c);
                 return (0, l.jsxs)(i.Clickable, {
                     className: S.container,
                     onClick: T,
                     onContextMenu: e => {
-                        b && (0, r.openContextMenuLazy)(e, async () => {
+                        O && (0, r.openContextMenuLazy)(e, async () => {
                             let {
                                 default: e
                             } = await n.el("113286").then(n.bind(n, "113286"));
@@ -5788,7 +5793,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return N
                 }
             }), n("222007");
             var l = n("37983"),
@@ -5804,14 +5809,15 @@
                 f = n("830837"),
                 h = n("132755"),
                 p = n("659500"),
-                g = n("829536"),
-                E = n("534107"),
-                v = n("49111"),
-                C = n("782340"),
-                I = n("447946");
-            let x = a.lazy(() => n.el("403130").then(n.bind(n, "403130")));
+                g = n("718517"),
+                E = n("829536"),
+                v = n("534107"),
+                C = n("49111"),
+                I = n("782340"),
+                x = n("447946");
+            let _ = a.lazy(() => n.el("403130").then(n.bind(n, "403130")));
 
-            function _(e) {
+            function S(e) {
                 let {
                     played: t,
                     duration: n,
@@ -5819,95 +5825,95 @@
                 } = e, s = null == n ? "--:--" : t ? (0, c.convertSecondsToClockFormat)(Math.ceil(n - a)) : (0, c.convertSecondsToClockFormat)(Math.ceil(n));
                 return (0, l.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    className: I.duration,
+                    className: x.duration,
                     tabularNumbers: !0,
                     children: s
                 })
             }
-            var S = a.memo(function(e) {
-                var t, n, s, c, S, N;
-                let M, {
-                        src: T,
-                        volume: A = 1,
-                        onVolumeChange: j,
-                        onMute: y,
-                        waveform: R,
-                        durationSecs: L,
+            var N = a.memo(function(e) {
+                var t, n, s, c, N, M;
+                let T, {
+                        src: A,
+                        volume: j = 1,
+                        onVolumeChange: y,
+                        onMute: R,
+                        waveform: L,
+                        durationSecs: O,
                         onVolumeShow: b,
-                        onVolumeHide: O,
-                        onPlay: D,
-                        onPause: P,
-                        onError: w
+                        onVolumeHide: D,
+                        onPlay: P,
+                        onPause: w,
+                        onError: U
                     } = e,
-                    U = a.useRef(null),
-                    [k, V] = a.useState(0),
-                    [F, B] = a.useState(L),
-                    [H, G] = a.useState(!1),
-                    [W, z] = a.useState(!1),
-                    [Y, Z] = a.useState(!1),
-                    [K, X] = a.useState(!1),
-                    [J, q] = a.useState("none"),
-                    [Q, $] = a.useState(() => "function" == typeof A ? A() : A),
-                    ee = a.useRef(void 0),
-                    et = a.useCallback(() => {
-                        z(e => !e)
-                    }, []),
+                    k = a.useRef(null),
+                    [V, F] = a.useState(0),
+                    [B, H] = a.useState(O),
+                    [G, W] = a.useState(!1),
+                    [z, Y] = a.useState(!1),
+                    [Z, K] = a.useState(!1),
+                    [X, J] = a.useState(!1),
+                    [q, Q] = a.useState("none"),
+                    [$, ee] = a.useState(() => "function" == typeof j ? j() : j),
+                    et = a.useRef(void 0),
                     en = a.useCallback(() => {
-                        q("metadata")
+                        Y(e => !e)
                     }, []),
-                    el = a.useCallback(e => {
+                    el = a.useCallback(() => {
+                        Q("metadata")
+                    }, []),
+                    ea = a.useCallback(e => {
                         let t = e.currentTarget.duration;
-                        !isNaN(t) && B(t)
-                    }, []),
-                    ea = a.useCallback(() => {
-                        z(!1), null == ee.current && (ee.current = setTimeout(() => {
-                            X(!1), ee.current = void 0
-                        }, 500))
+                        !isNaN(t) && H(t)
                     }, []),
                     es = a.useCallback(() => {
-                        !Y && ea()
-                    }, [ea, Y]),
+                        Y(!1), null == et.current && (et.current = setTimeout(() => {
+                            J(!1), et.current = void 0
+                        }, 500))
+                    }, []),
                     ei = a.useCallback(() => {
-                        let e = U.current;
+                        !Z && es()
+                    }, [es, Z]),
+                    er = a.useCallback(() => {
+                        let e = k.current;
                         if (null == e) return;
                         let t = e.error;
-                        null == w || w(t)
-                    }, [w]),
-                    er = a.useCallback(e => {
-                        let t = (0, g.perceptualToAmplitude)(e, 1);
-                        G(0 === t), $(t), null == j || j(t)
-                    }, [j]),
-                    eo = a.useCallback(() => {
-                        G(!H), null == y || y(!H)
-                    }, [H, y]),
+                        null == U || U(t)
+                    }, [U]),
+                    eo = a.useCallback(e => {
+                        let t = (0, E.perceptualToAmplitude)(e, 1);
+                        W(0 === t), ee(t), null == y || y(t)
+                    }, [y]),
                     eu = a.useCallback(() => {
-                        Z(!0)
-                    }, []),
+                        W(!G), null == R || R(!G)
+                    }, [G, R]),
                     ed = a.useCallback(() => {
-                        Z(!1), k === F && ea()
-                    }, [k, F, ea]),
-                    ec = a.useCallback(e => {
-                        let t = U.current;
-                        if (null == F || null == t) return;
-                        let n = e * F;
-                        V(n), t.currentTime = n, X(!0), clearTimeout(ee.current), ee.current = void 0
-                    }, [F]);
+                        K(!0)
+                    }, []),
+                    ec = a.useCallback(() => {
+                        K(!1), V === B && es()
+                    }, [V, B, es]),
+                    em = a.useCallback(e => {
+                        let t = k.current;
+                        if (null == B || null == t) return;
+                        let n = e * B;
+                        F(n), t.currentTime = n, J(!0), clearTimeout(et.current), et.current = void 0
+                    }, [B]);
                 a.useEffect(() => {
-                    !K && W && X(!0)
-                }, [W, K]);
-                let em = a.useRef(null);
+                    !X && z && J(!0)
+                }, [z, X]);
+                let ef = a.useRef(null);
                 a.useEffect(() => {
-                    if (K || W) {
-                        if (W) {
+                    if (X || z) {
+                        if (z) {
                             var e, t;
-                            em.current = performance.now(), null == D || D(!1, k, (null !== (t = null === (e = U.current) || void 0 === e ? void 0 : e.duration) && void 0 !== t ? t : 0) * 1e3)
+                            ef.current = performance.now(), null == P || P(!1, V, (null !== (t = null === (e = k.current) || void 0 === e ? void 0 : e.duration) && void 0 !== t ? t : 0) * g.default.Millis.SECOND)
                         } else {
                             let e = performance.now(),
-                                t = em.current;
-                            null == P || P(k, null != t ? (e - t) / 1e3 : 0), em.current = null
+                                t = ef.current;
+                            null == w || w(V, null != t ? (e - t) / 1e3 : 0), ef.current = null
                         }
                     }
-                }, [W]), t = U, n = W, s = V, a.useEffect(() => {
+                }, [z]), t = k, n = z, s = F, a.useEffect(() => {
                     let e;
                     return ! function l() {
                         let a = t.current;
@@ -5915,105 +5921,105 @@
                     }(), () => {
                         null != e && cancelAnimationFrame(e)
                     }
-                }, [t, n, s]), c = T, S = W, N = z, a.useEffect(() => {
-                    if (S) return p.ComponentDispatch.dispatch(v.ComponentActions.VOICE_MESSAGE_PLAYBACK_STARTED, {
+                }, [t, n, s]), c = A, N = z, M = Y, a.useEffect(() => {
+                    if (N) return p.ComponentDispatch.dispatch(C.ComponentActions.VOICE_MESSAGE_PLAYBACK_STARTED, {
                         src: c
-                    }), p.ComponentDispatch.subscribe(v.ComponentActions.VOICE_MESSAGE_PLAYBACK_STARTED, e), () => {
-                        p.ComponentDispatch.unsubscribe(v.ComponentActions.VOICE_MESSAGE_PLAYBACK_STARTED, e)
+                    }), p.ComponentDispatch.subscribe(C.ComponentActions.VOICE_MESSAGE_PLAYBACK_STARTED, e), () => {
+                        p.ComponentDispatch.unsubscribe(C.ComponentActions.VOICE_MESSAGE_PLAYBACK_STARTED, e)
                     };
 
                     function e(e) {
                         let {
                             src: t
                         } = e;
-                        c !== t && N(!1)
+                        c !== t && M(!1)
                     }
-                }, [c, S, N]);
-                let ef = W ? f.default : h.default,
-                    eh = W ? C.default.Messages.PAUSE : C.default.Messages.PLAY;
-                M = "Safari" === platform.name ? (0, l.jsx)(a.Suspense, {
-                    children: (0, l.jsx)(x, {
-                        ref: U,
-                        className: I.audioElement,
-                        src: T,
-                        preload: J,
-                        playing: W && !Y,
-                        onEnded: es,
-                        onLoadedMetadata: el,
-                        onError: ei,
-                        muted: H,
-                        volume: Q
+                }, [c, N, M]);
+                let eh = z ? f.default : h.default,
+                    ep = z ? I.default.Messages.PAUSE : I.default.Messages.PLAY;
+                T = "Safari" === platform.name ? (0, l.jsx)(a.Suspense, {
+                    children: (0, l.jsx)(_, {
+                        ref: k,
+                        className: x.audioElement,
+                        src: A,
+                        preload: q,
+                        playing: z && !Z,
+                        onEnded: ei,
+                        onLoadedMetadata: ea,
+                        onError: er,
+                        muted: G,
+                        volume: $
                     })
                 }) : (0, l.jsx)(d.default, {
-                    ref: U,
-                    className: I.audioElement,
+                    ref: k,
+                    className: x.audioElement,
                     controls: !1,
-                    preload: J,
-                    onEnded: es,
-                    onLoadedMetadata: el,
-                    onError: ei,
-                    muted: H,
-                    volume: Q,
-                    playing: W && !Y,
+                    preload: q,
+                    onEnded: ei,
+                    onLoadedMetadata: ea,
+                    onError: er,
+                    muted: G,
+                    volume: $,
+                    playing: z && !Z,
                     children: (0, l.jsx)("source", {
-                        src: T
+                        src: A
                     })
                 });
-                let ep = (0, r.useStateFromStores)([u.default], () => u.default.useReducedMotion),
+                let eg = (0, r.useStateFromStores)([u.default], () => u.default.useReducedMotion),
                     {
-                        enabled: eg
+                        enabled: eE
                     } = (0, o.useRedesignIconContext)();
                 return (0, l.jsxs)("div", {
-                    className: i(I.container, {
-                        [I.playing]: W
+                    className: i(x.container, {
+                        [x.playing]: z
                     }),
-                    onMouseEnter: en,
+                    onMouseEnter: el,
                     children: [(0, l.jsx)("div", {
-                        className: I.rippleContainer,
+                        className: x.rippleContainer,
                         children: (0, l.jsx)("div", {
-                            className: i(I.ripple, {
-                                [I.reducedMotion]: ep
+                            className: i(x.ripple, {
+                                [x.reducedMotion]: eg
                             })
                         })
                     }), (0, l.jsx)(o.Clickable, {
-                        className: I.playButtonContainer,
-                        onClick: et,
-                        "aria-label": eh,
-                        children: (0, l.jsx)(ef, {
-                            className: i(I.playIcon, {
-                                [I.oldPlayIconSpacing]: !eg && !W
+                        className: x.playButtonContainer,
+                        onClick: en,
+                        "aria-label": ep,
+                        children: (0, l.jsx)(eh, {
+                            className: i(x.playIcon, {
+                                [x.oldPlayIconSpacing]: !eE && !z
                             }),
                             width: 18,
                             height: 18
                         })
-                    }), (0, l.jsx)(E.default, {
-                        className: I.waveform,
-                        waveform: R,
-                        currentTime: k,
-                        duration: null != F ? F : 1,
-                        playing: W,
-                        played: K,
-                        onDrag: ec,
-                        onDragStart: eu,
-                        onDragEnd: ed
-                    }), (0, l.jsx)(_, {
-                        played: K,
-                        currentTime: k,
-                        duration: F
+                    }), (0, l.jsx)(v.default, {
+                        className: x.waveform,
+                        waveform: L,
+                        currentTime: V,
+                        duration: null != B ? B : 1,
+                        playing: z,
+                        played: X,
+                        onDrag: em,
+                        onDragStart: ed,
+                        onDragEnd: ec
+                    }), (0, l.jsx)(S, {
+                        played: X,
+                        currentTime: V,
+                        duration: B
                     }), (0, l.jsx)(m.default, {
-                        className: I.volumeButton,
-                        iconClassName: I.volumeButtonIcon,
-                        sliderWrapperClassName: I.volumeSlider,
-                        muted: H,
-                        value: (0, g.amplitudeToPerceptual)(Q, 1),
+                        className: x.volumeButton,
+                        iconClassName: x.volumeButtonIcon,
+                        sliderWrapperClassName: x.volumeSlider,
+                        muted: G,
+                        value: (0, E.amplitudeToPerceptual)($, 1),
                         minValue: 0,
                         maxValue: 1,
                         currentWindow: window,
-                        onValueChange: er,
-                        onToggleMute: eo,
+                        onValueChange: eo,
+                        onToggleMute: eu,
                         onVolumeShow: b,
-                        onVolumeHide: O
-                    }), M]
+                        onVolumeHide: D
+                    }), T]
                 })
             })
         },
@@ -6098,7 +6104,7 @@
                     var e;
                     let t;
                     return Math.floor(((t = (e = c) <= g ? 40 : e >= 45 ? 294 : (Math.min(e, 45) - g) / (45 - g) * 254 + 40) + 4) / E) * E - 4
-                }, [c]), L = a.useRef(), b = function(e, t) {
+                }, [c]), L = a.useRef(), O = function(e, t) {
                     let n = a.useMemo(() => (function(e) {
                             let t;
                             if (null == e) return;
@@ -6127,7 +6133,7 @@
                             }(null != n ? n : [], l)) && void 0 !== e ? e : C
                         }, [n, l]);
                     return s
-                }(n, y), O = a.useRef(v), D = a.useRef(N), P = a.useRef(null), w = window.devicePixelRatio, {
+                }(n, y), b = a.useRef(v), D = a.useRef(N), P = a.useRef(null), w = window.devicePixelRatio, {
                     lastBackgroundFillColor: U,
                     backgroundFillColor: k,
                     lastActiveFillColor: V,
@@ -6160,27 +6166,27 @@
                         showAll: !v,
                         currentTime: s,
                         duration: c,
-                        numSegments: b.length
+                        numSegments: O.length
                     });
-                    L.current = b.map((t, n) => new f.default(n < e ? t : 0))
-                }, [b]), a.useEffect(() => {
+                    L.current = O.map((t, n) => new f.default(n < e ? t : 0))
+                }, [O]), a.useEffect(() => {
                     let e = L.current;
                     if (null == e) return;
                     let t = I({
                         showAll: !v,
                         currentTime: s,
                         duration: c,
-                        numSegments: b.length
+                        numSegments: O.length
                     });
                     for (let n = 0; n < e.length; n++) {
                         let l = e[n];
                         if (n < t) {
-                            l.animateTo(b[n]);
+                            l.animateTo(O[n]);
                             continue
                         }
                         l.reset()
                     }
-                }, [b, s, c, v]), a.useEffect(() => {
+                }, [O, s, c, v]), a.useEffect(() => {
                     let e = null;
                     return e = requestAnimationFrame(function t(n) {
                         let l = j.current,
@@ -6188,16 +6194,16 @@
                             s = L.current;
                         if (null == l || null == a || null == s) return;
                         let i = !1;
-                        (O.current !== v || D.current !== N) && (O.current = v, D.current = N, P.current = n), null != P.current && n > P.current + 200 && (P.current = null);
+                        (b.current !== v || D.current !== N) && (b.current = v, D.current = N, P.current = n), null != P.current && n > P.current + 200 && (P.current = null);
                         let r = l.height / w;
                         a.clearRect(0, 0, l.width, l.height), a.beginPath();
                         let [o, u] = S(U, k, n, P.current);
                         i = i || u, a.fillStyle = o;
-                        for (let e = 0; e < b.length; e++) x({
+                        for (let e = 0; e < O.length; e++) x({
                             context: a,
                             devicePixelRatio: w,
                             canvasHeight: r,
-                            segmentValue: b[e],
+                            segmentValue: O[e],
                             segmentIndex: e,
                             constrainMin: !0
                         });
@@ -6208,7 +6214,7 @@
                         i = i || f;
                         for (let e = 0; e < s.length; e++) {
                             let t = s[e],
-                                n = Math.max(t.getCurrentValue(), b[e] - .1);
+                                n = Math.max(t.getCurrentValue(), O[e] - .1);
                             a.beginPath(), a.fillStyle = t.isReset ? d : m, x({
                                 context: a,
                                 devicePixelRatio: w,
@@ -6222,7 +6228,7 @@
                     }), () => {
                         null != e && cancelAnimationFrame(e)
                     }
-                }, [j, w, b, y, s, c, v, N, U, k, V, F, B, H]);
+                }, [j, w, O, y, s, c, v, N, U, k, V, F, B, H]);
                 let [, G] = (0, d.default)({
                     ref: j,
                     onDrag: M,
@@ -6739,12 +6745,12 @@
                         placeholderVersion: R,
                         showThumbhashPlaceholder: L
                     } = this.props, {
-                        readyState: b,
-                        hasMouseOver: O,
+                        readyState: O,
+                        hasMouseOver: b,
                         hasFocus: D
                     } = this.state, P = null != l, w = this.getRatio(), U = (0, r.clamp)(Math.round(E * w), null != C ? C : 0, null != x ? x : 1 / 0), k = (0, r.clamp)(Math.round(v * w), null != I ? I : 0, null != _ ? _ : 1 / 0), V = {
                         alt: t,
-                        readyState: b,
+                        readyState: O,
                         onContextMenu: null != i ? i : void 0,
                         zoomable: P,
                         className: d,
@@ -6781,14 +6787,14 @@
                         onBlur: this.onBlur
                     };
                     if (1 === V.width && 1 === V.height) return null;
-                    switch ((P || null != N) && (V.onClick = this.onClick), a && (V.original = null != u && "" !== u ? u : V.src), b) {
+                    switch ((P || null != N) && (V.onClick = this.onClick), a && (V.original = null != u && "" !== u ? u : V.src), O) {
                         case p.ImageReadyStates.LOADING:
                             null != n && (V.src = n);
                             break;
                         case p.ImageReadyStates.READY:
                             if (e.isAnimated(this.props)) {
                                 V.onMouseLeave = this.onMouseLeave;
-                                let t = (o || O || D) && (null == g || g) && e.visibilityObserver.isVisible(this);
+                                let t = (o || b || D) && (null == g || g) && e.visibilityObserver.isVisible(this);
                                 t ? (V.src = this.getSrc(w), V.renderAccessory = M) : (V.src = this.getSrc(w, !h || !o), V.renderAccessory = this.renderAccessory), null != m && (V.children = e => {
                                     let {
                                         src: n,
@@ -7409,7 +7415,7 @@
                     return b
                 },
                 default: function() {
-                    return k
+                    return V
                 }
             }), n("424973"), n("222007");
             var l = n("37983"),
@@ -7421,32 +7427,33 @@
                 u = n("458960"),
                 d = n("77078"),
                 c = n("95032"),
-                m = n("829536"),
-                f = n("563680"),
-                h = n("725962"),
-                p = n("672724"),
-                g = n("392284"),
-                E = n("468482"),
-                v = n("316680"),
-                C = n("830837"),
-                I = n("132755"),
-                x = n("73034"),
-                _ = n("58608"),
-                S = n("719347"),
-                N = n("49111"),
-                M = n("782340"),
-                T = n("167691"),
-                A = n("173791");
-            let j = "-:--",
-                y = {
+                m = n("718517"),
+                f = n("829536"),
+                h = n("563680"),
+                p = n("725962"),
+                g = n("672724"),
+                E = n("392284"),
+                v = n("468482"),
+                C = n("316680"),
+                I = n("830837"),
+                x = n("132755"),
+                _ = n("73034"),
+                S = n("58608"),
+                N = n("719347"),
+                M = n("49111"),
+                T = n("782340"),
+                A = n("167691"),
+                j = n("173791");
+            let y = "-:--",
+                R = {
                     friction: 14,
                     tension: 200
                 },
-                R = {
+                L = {
                     VIDEO: "VIDEO",
                     AUDIO: "AUDIO"
                 },
-                L = {
+                O = {
                     width: "100%",
                     height: "100%",
                     backgroundColor: "black"
@@ -7457,26 +7464,26 @@
                     n = t % 60;
                 return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
             }
-            let O = e => {
+            let D = e => {
                 let {
                     current: t,
                     duration: n
-                } = e, a = null != t ? b(t) : j, s = null != n ? b(n) : j;
+                } = e, a = null != t ? b(t) : y, s = null != n ? b(n) : y;
                 return a = a.padStart(s.length, "0"), (0, l.jsxs)("div", {
-                    className: T.durationTimeWrapper,
+                    className: A.durationTimeWrapper,
                     children: [(0, l.jsx)("span", {
-                        className: T.durationTimeDisplay,
+                        className: A.durationTimeDisplay,
                         children: a
                     }), (0, l.jsx)("span", {
-                        className: T.durationTimeSeparator,
+                        className: A.durationTimeSeparator,
                         children: "/"
                     }), (0, l.jsx)("span", {
-                        className: T.durationTimeDisplay,
+                        className: A.durationTimeDisplay,
                         children: s
                     })]
                 })
             };
-            class D extends a.Component {
+            class P extends a.Component {
                 componentDidMount() {
                     this.state.translateY.setValue(this.props.autoPlay ? 1 : 0)
                 }
@@ -7503,7 +7510,7 @@
                     } = this.state;
                     t ? u.default.spring(n, {
                         toValue: e,
-                        ...y
+                        ...R
                     }).start() : n.setValue(e)
                 }
                 getAnimatedStyle() {
@@ -7529,28 +7536,28 @@
                         disabled: i
                     } = this.props;
                     return e ? (0, l.jsx)(d.Clickable, {
-                        className: T.videoButton,
+                        className: A.videoButton,
                         onClick: a,
                         tabIndex: i ? -1 : 0,
-                        "aria-label": M.default.Messages.PAUSE,
-                        children: (0, l.jsx)(C.default, {
-                            className: T.controlIcon
+                        "aria-label": T.default.Messages.PAUSE,
+                        children: (0, l.jsx)(I.default, {
+                            className: A.controlIcon
                         }, "pause")
                     }) : null != t && t === n ? (0, l.jsx)(d.Clickable, {
-                        className: T.videoButton,
+                        className: A.videoButton,
                         onClick: s,
                         tabIndex: i ? -1 : 0,
-                        "aria-label": M.default.Messages.PLAY_AGAIN,
-                        children: (0, l.jsx)(x.default, {
-                            className: T.controlIcon
+                        "aria-label": T.default.Messages.PLAY_AGAIN,
+                        children: (0, l.jsx)(_.default, {
+                            className: A.controlIcon
                         }, "replay")
                     }) : (0, l.jsx)(d.Clickable, {
-                        className: T.videoButton,
+                        className: A.videoButton,
                         onClick: s,
                         tabIndex: i ? -1 : 0,
-                        "aria-label": M.default.Messages.PLAY,
-                        children: (0, l.jsx)(I.default, {
-                            className: T.controlIcon
+                        "aria-label": T.default.Messages.PLAY,
+                        children: (0, l.jsx)(x.default, {
+                            className: A.controlIcon
                         }, "play")
                     })
                 }
@@ -7569,39 +7576,39 @@
                         onVolumeHide: m,
                         width: f,
                         volume: h,
-                        type: g
+                        type: p
                     } = this.props;
                     return (0, l.jsxs)(u.default.div, {
-                        className: g === R.VIDEO ? T.videoControls : T.audioControls,
+                        className: p === L.VIDEO ? A.videoControls : A.audioControls,
                         onClick: e => e.stopPropagation(),
                         onDoubleClick: e => e.stopPropagation(),
                         style: this.getAnimatedStyle(),
-                        children: [this.renderPlayIcon(), "string" == typeof f || f > 250 ? (0, l.jsx)(O, {
+                        children: [this.renderPlayIcon(), "string" == typeof f || f > 250 ? (0, l.jsx)(D, {
                             current: n,
                             duration: a
-                        }) : null, (0, l.jsx)(p.default, {
+                        }) : null, (0, l.jsx)(g.default, {
                             buffers: e,
                             value: null != a ? a : 0,
                             onDrag: i,
                             onDragEnd: r,
                             onDragStart: o,
-                            type: p.default.Types.DURATION,
+                            type: g.default.Types.DURATION,
                             ref: this.setDurationRef
                         }), (0, l.jsx)("div", {
-                            className: A.flex,
-                            children: (0, l.jsx)(v.default, {
+                            className: j.flex,
+                            children: (0, l.jsx)(C.default, {
                                 ref: this.setVolumeButtonRef,
                                 muted: s,
                                 value: h,
                                 minValue: 0,
                                 maxValue: 1,
                                 currentWindow: window,
-                                onValueChange: e => i(e, p.default.Types.VOLUME),
+                                onValueChange: e => i(e, g.default.Types.VOLUME),
                                 onToggleMute: d,
                                 onVolumeShow: c,
                                 onVolumeHide: m,
-                                iconClassName: T.controlIcon,
-                                sliderWrapperClassName: T.volumeSliderWrapper
+                                iconClassName: A.controlIcon,
+                                sliderWrapperClassName: A.volumeSliderWrapper
                             })
                         }), t]
                     })
@@ -7617,7 +7624,7 @@
                 }
             }
 
-            function P(e) {
+            function w(e) {
                 let {
                     fileName: t,
                     fileSize: n,
@@ -7627,31 +7634,31 @@
                     hideDownloadButton: r
                 } = e;
                 return (0, l.jsxs)("div", {
-                    className: T.audioMetadata,
+                    className: A.audioMetadata,
                     children: [(0, l.jsxs)("div", {
-                        className: T.metadataContent,
-                        children: [s ? t : (0, l.jsx)(h.default, {
+                        className: A.metadataContent,
+                        children: [s ? t : (0, l.jsx)(p.default, {
                             href: a,
-                            className: T.metadataDownload,
-                            iconClassName: T.metadataIcon,
+                            className: A.metadataDownload,
+                            iconClassName: A.metadataIcon,
                             mimeType: i,
                             fileName: t
                         }), (0, l.jsx)("div", {
-                            className: T.metadataSize,
+                            className: A.metadataSize,
                             children: n
                         })]
-                    }), !r && (0, l.jsx)(h.default, {
+                    }), !r && (0, l.jsx)(p.default, {
                         href: a,
-                        className: T.metadataDownload,
-                        iconClassName: T.metadataIcon,
+                        className: A.metadataDownload,
+                        iconClassName: A.metadataIcon,
                         mimeType: i
                     })]
                 })
             }
-            D.defaultProps = {
+            P.defaultProps = {
                 disabled: !1
             };
-            class w extends a.Component {
+            class U extends a.Component {
                 pop() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                     this.setState({
@@ -7679,12 +7686,12 @@
                 render() {
                     let {
                         play: e
-                    } = this.state, t = e ? I.default : C.default;
+                    } = this.state, t = e ? x.default : I.default;
                     return (0, l.jsx)(u.default.div, {
-                        className: T.playPausePop,
+                        className: A.playPausePop,
                         style: this.getAnimatedStyle(),
                         children: (0, l.jsx)(t, {
-                            className: T.playPausePopIcon
+                            className: A.playPausePopIcon
                         })
                     })
                 }
@@ -7706,13 +7713,13 @@
                             duration: 200
                         })]), u.default.spring(t, {
                             toValue: 1.5,
-                            ...y,
+                            ...R,
                             friction: 80
                         })]).start()
                     }
                 }
             }
-            class U extends a.PureComponent {
+            class k extends a.PureComponent {
                 static getDerivedStateFromProps(e, t) {
                     return !e.playable && t.playing ? {
                         playing: !1,
@@ -7750,8 +7757,8 @@
                     } = this.playPausePopRef;
                     if (null == d) return;
                     s && !t.playing ? (this.play(), this.handleMouseMove(), this.handleUIUpdate(), t.hasClickedPlay && (null == c || c.pop(s))) : !s && t.playing && (d.pause(), null == c || c.pop(s), null == n || n());
-                    let m = (0, f.getFullScreenNode)(d.parentNode, d);
-                    i && !t.fullscreen && null != m ? ((0, f.requestFullScreen)(m), m.addEventListener(f.FULLSCREEN_CHANGE_EVENT, this.handleFullScreenExit)) : !i && t.fullscreen && null != m && (m.removeEventListener(f.FULLSCREEN_CHANGE_EVENT, this.handleFullScreenExit), (0, f.exitFullScreen)(m)), o === p.default.Types.DURATION && t.dragging !== p.default.Types.DURATION && s ? d.pause() : o !== p.default.Types.DURATION && t.dragging === p.default.Types.DURATION && s && d.play(), r !== t.muted && (d.muted = r, null == a || a(r)), u !== t.volume && (d.volume = u, null == l || l(u))
+                    let m = (0, h.getFullScreenNode)(d.parentNode, d);
+                    i && !t.fullscreen && null != m ? ((0, h.requestFullScreen)(m), m.addEventListener(h.FULLSCREEN_CHANGE_EVENT, this.handleFullScreenExit)) : !i && t.fullscreen && null != m && (m.removeEventListener(h.FULLSCREEN_CHANGE_EVENT, this.handleFullScreenExit), (0, h.exitFullScreen)(m)), o === g.default.Types.DURATION && t.dragging !== g.default.Types.DURATION && s ? d.pause() : o !== g.default.Types.DURATION && t.dragging === g.default.Types.DURATION && s && d.play(), r !== t.muted && (d.muted = r, null == a || a(r)), u !== t.volume && (d.volume = u, null == l || l(u))
                 }
                 componentWillUnmount() {
                     this._unmounted = !0;
@@ -7759,8 +7766,8 @@
                         current: e
                     } = this.mediaRef;
                     if (null == e) return;
-                    let t = (0, f.getFullScreenNode)(e.parentNode, e);
-                    null != t && (t.removeEventListener(f.FULLSCREEN_CHANGE_EVENT, this.handleFullScreenExit), (0, f.exitFullScreen)(t))
+                    let t = (0, h.getFullScreenNode)(e.parentNode, e);
+                    null != t && (t.removeEventListener(h.FULLSCREEN_CHANGE_EVENT, this.handleFullScreenExit), (0, h.exitFullScreen)(t))
                 }
                 play() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
@@ -7782,20 +7789,20 @@
                             let e = l();
                             e !== this.state.muted && (a.muted = e, s.muted = e)
                         }
-                        this.setState(s), a.play(), null == t || t(e, 1e3 * a.currentTime, 1e3 * a.duration)
+                        this.setState(s), a.play(), null == t || t(e, a.currentTime * m.default.Millis.SECOND, a.duration * m.default.Millis.SECOND)
                     }
                 }
                 getWidth() {
                     let {
                         width: e
                     } = this.props;
-                    return "100%" === e ? e : Math.max(e, U.minWidth)
+                    return "100%" === e ? e : Math.max(e, k.minWidth)
                 }
                 getHeight() {
                     let {
                         height: e
                     } = this.props;
-                    return "100%" === e ? e : Math.max(e, U.minHeight)
+                    return "100%" === e ? e : Math.max(e, k.minHeight)
                 }
                 updateValue(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
@@ -7833,8 +7840,8 @@
                         playing: r,
                         fullscreen: o
                     } = this.state, u = this.getWidth(), d = this.getHeight();
-                    return n ? (0, l.jsx)(_.default, {
-                        className: T.video,
+                    return n ? (0, l.jsx)(S.default, {
+                        className: A.video,
                         controls: !1,
                         height: d,
                         poster: t,
@@ -7843,14 +7850,14 @@
                         mediaLayoutType: i,
                         playsInline: !0,
                         autoPlay: r
-                    }) : (0, l.jsx)(_.default, {
-                        className: T.video,
+                    }) : (0, l.jsx)(S.default, {
+                        className: A.video,
                         controls: !1,
                         playsInline: !0,
                         autoPlay: r,
                         height: d,
                         responsive: s && !o,
-                        mediaLayoutType: o ? S.MediaLayoutType.STATIC : i,
+                        mediaLayoutType: o ? N.MediaLayoutType.STATIC : i,
                         onClick: this.handleVideoClick,
                         onEnded: this.handleEnded,
                         onError: a,
@@ -7865,7 +7872,7 @@
                 }
                 renderAudio() {
                     return (0, l.jsx)("audio", {
-                        className: T.audio,
+                        className: A.audio,
                         controls: !1,
                         onClick: this.handleVideoClick,
                         onEnded: this.handleEnded,
@@ -7894,20 +7901,20 @@
                             currentTime: o,
                             duration: u,
                             hasClickedPlay: d,
-                            hideControls: h,
+                            hideControls: m,
                             muted: p,
-                            playing: E,
+                            playing: g,
                             fullscreen: v,
                             volume: C,
                             dragging: I
                         }
                     } = this, x = this.getWidth();
-                    return d || n || t === R.AUDIO ? (0, l.jsx)(D, {
+                    return d || n || t === L.AUDIO ? (0, l.jsx)(P, {
                         buffers: r,
                         currentTime: o,
                         duration: u,
-                        volume: (0, m.amplitudeToPerceptual)(C, 1),
-                        hide: t === R.VIDEO && h,
+                        volume: (0, f.amplitudeToPerceptual)(C, 1),
+                        hide: t === L.VIDEO && m,
                         muted: p,
                         autoPlay: n,
                         onDrag: this.handleDrag,
@@ -7918,20 +7925,20 @@
                         onToggleMuted: this.toggleMuted,
                         onVolumeShow: s,
                         onVolumeHide: i,
-                        playing: E,
+                        playing: g,
                         dragging: I,
                         type: t,
                         ref: this.controlsRef,
                         width: v ? window.screen.width : x,
                         disabled: !a,
-                        children: t === R.VIDEO ? (0, l.jsx)(c.default, {
-                            "aria-label": M.default.Messages.TITLE_BAR_FULLSCREEN_WINDOW,
-                            className: T.videoButton,
+                        children: t === L.VIDEO ? (0, l.jsx)(c.default, {
+                            "aria-label": T.default.Messages.TITLE_BAR_FULLSCREEN_WINDOW,
+                            className: A.videoButton,
                             guestWindow: window,
                             onClick: this.toggleFullscreen,
-                            node: (0, f.getFullScreenNode)(null == e ? void 0 : e.parentNode, e)
+                            node: (0, h.getFullScreenNode)(null == e ? void 0 : e.parentNode, e)
                         }) : null
-                    }) : (0, l.jsx)(g.default, {
+                    }) : (0, l.jsx)(E.default, {
                         onPlay: this.handleVideoClick,
                         inactive: !a
                     })
@@ -7945,7 +7952,7 @@
                         playable: s,
                         mimeType: i
                     } = this.props;
-                    return null == e || null == t ? null : a === R.AUDIO ? (0, l.jsx)(P, {
+                    return null == e || null == t ? null : a === L.AUDIO ? (0, l.jsx)(w, {
                         fileName: e,
                         fileSize: t,
                         src: n,
@@ -7955,7 +7962,7 @@
                     }) : null
                 }
                 renderPlayPausePop() {
-                    return (0, l.jsx)(w, {
+                    return (0, l.jsx)(U, {
                         ref: this.playPausePopRef
                     })
                 }
@@ -7967,7 +7974,7 @@
                     } = this.props, {
                         fullscreen: l
                     } = this.state, a = this.getWidth();
-                    return l ? L : t === R.AUDIO ? {
+                    return l ? O : t === L.AUDIO ? {
                         width: void 0,
                         height: "auto"
                     } : e ? void 0 : {
@@ -7990,21 +7997,21 @@
                         fullscreen: c,
                         hideControls: m,
                         playing: f
-                    } = this.state, h = T.wrapperPaused;
-                    if (t === R.AUDIO ? h = T.wrapperAudio : m ? h = T.wrapperControlsHidden : f && (h = T.wrapperPlaying), a && t === R.VIDEO) {
+                    } = this.state, h = A.wrapperPaused;
+                    if (t === L.AUDIO ? h = A.wrapperAudio : m ? h = A.wrapperControlsHidden : f && (h = A.wrapperPlaying), a && t === L.VIDEO) {
                         let t = this.getWidth();
                         return (0, l.jsxs)("div", {
                             className: i(h, {
-                                [T.wrapperMediaMosaic]: u === S.MediaLayoutType.MOSAIC
+                                [A.wrapperMediaMosaic]: u === N.MediaLayoutType.MOSAIC
                             }),
                             style: o ? void 0 : {
                                 width: t,
                                 height: e
                             },
                             children: [this.renderMetadata(), this.renderVideo(), (0, l.jsx)("div", {
-                                className: T.playCenter,
-                                children: (0, l.jsx)(E.default, {
-                                    className: T.playButton,
+                                className: A.playCenter,
+                                children: (0, l.jsx)(v.default, {
+                                    className: A.playButton,
                                     externalURL: n,
                                     renderLinkComponent: r
                                 })
@@ -8012,8 +8019,8 @@
                         })
                     }
                     return (0, l.jsxs)("div", {
-                        className: i(h, T.newMosaicStyle, s, {
-                            [T.wrapperMediaMosaic]: u === S.MediaLayoutType.MOSAIC
+                        className: i(h, A.newMosaicStyle, s, {
+                            [A.wrapperMediaMosaic]: u === N.MediaLayoutType.MOSAIC
                         }),
                         "data-fullscreen": c,
                         onMouseEnter: this.handleMouseEnter,
@@ -8021,9 +8028,9 @@
                         onMouseMove: f ? this.handleMouseMove : void 0,
                         onKeyDown: this.handleKeyDown,
                         style: this.getMediaStyle(),
-                        children: [this.renderMetadata(), t === R.AUDIO ? this.renderAudio() : this.renderVideo(), this.renderControls(), t === R.VIDEO ? this.renderPlayPausePop() : null, null != d ? (0, l.jsx)("div", {
+                        children: [this.renderMetadata(), t === L.AUDIO ? this.renderAudio() : this.renderVideo(), this.renderControls(), t === L.VIDEO ? this.renderPlayPausePop() : null, null != d ? (0, l.jsx)("div", {
                             className: i({
-                                [T.overlayContentHidden]: f || c
+                                [A.overlayContentHidden]: f || c
                             }),
                             children: d()
                         }) : null]
@@ -8036,8 +8043,8 @@
                             current: e
                         } = this.mediaRef;
                         if (null == e) return;
-                        let t = (0, f.getFullScreenNode)(e.parentNode, e);
-                        (null == t || !(0, f.isFullScreen)(t)) && this.setState({
+                        let t = (0, h.getFullScreenNode)(e.parentNode, e);
+                        (null == t || !(0, h.isFullScreen)(t)) && this.setState({
                             fullscreen: !1
                         })
                     }, this.toggleFullscreen = () => {
@@ -8067,9 +8074,9 @@
                         let {
                             current: n
                         } = this.mediaRef;
-                        if (t === p.default.Types.DURATION) null != n && isFinite(n.duration) && this.setTime(n.duration * e, !1);
-                        else if (t === p.default.Types.VOLUME) {
-                            let t = (0, m.perceptualToAmplitude)(e, 1);
+                        if (t === g.default.Types.DURATION) null != n && isFinite(n.duration) && this.setTime(n.duration * e, !1);
+                        else if (t === g.default.Types.VOLUME) {
+                            let t = (0, f.perceptualToAmplitude)(e, 1);
                             0 === t ? this.setState({
                                 muted: !0,
                                 volume: t
@@ -8193,10 +8200,10 @@
                         let {
                             current: t
                         } = this.mediaRef;
-                        if (e.which === N.KeyboardKeys.SPACE) e.preventDefault(), this.setPlay(!this.state.playing);
-                        else if (e.which >= N.KeyboardKeys.DIGIT_0 && e.which <= N.KeyboardKeys.DIGIT_9 && null != t) {
+                        if (e.which === M.KeyboardKeys.SPACE) e.preventDefault(), this.setPlay(!this.state.playing);
+                        else if (e.which >= M.KeyboardKeys.DIGIT_0 && e.which <= M.KeyboardKeys.DIGIT_9 && null != t) {
                             e.preventDefault();
-                            let n = (e.which - N.KeyboardKeys.DIGIT_0) / 10;
+                            let n = (e.which - M.KeyboardKeys.DIGIT_0) / 10;
                             t.currentTime = t.duration * n, this.setPlay(!0)
                         }
                     };
@@ -8219,13 +8226,13 @@
                         volume: r,
                         playing: n,
                         preload: "none",
-                        width: U.minWidth,
-                        height: U.minHeight,
+                        width: k.minWidth,
+                        height: k.minHeight,
                         hovering: !1
                     }
                 }
             }
-            U.Types = R, U.defaultProps = {
+            k.Types = L, k.defaultProps = {
                 width: 400,
                 height: 300,
                 forceExternal: !1,
@@ -8234,8 +8241,8 @@
                 autoPlay: !1,
                 autoMute: !1,
                 volume: 1
-            }, U.minWidth = 150, U.minHeight = 110;
-            var k = U
+            }, k.minWidth = 150, k.minHeight = 110;
+            var V = k
         },
         666897: function(e, t, n) {
             "use strict";
@@ -10773,4 +10780,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56145.1199b3469715ddb7696c.js.map
+//# sourceMappingURL=56145.19258dcaeb421600cd44.js.map

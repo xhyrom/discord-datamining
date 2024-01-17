@@ -2877,13 +2877,13 @@
             "use strict";
             l.r(t), l.d(t, {
                 usePlatformAllowed: function() {
-                    return E
+                    return _
                 },
                 usePlatforms: function() {
-                    return T
+                    return S
                 },
                 useLegacyPlatformType: function() {
-                    return _
+                    return h
                 }
             }), l("222007");
             var n = l("884691"),
@@ -2894,16 +2894,18 @@
                 o = l("695702"),
                 u = l("47319"),
                 d = l("697218"),
-                c = l("49111"),
-                f = l("894282");
-            let m = {
-                    [c.PlatformTypes.INSTAGRAM]: ["1036753656588017764"]
+                c = l("718517"),
+                f = l("49111"),
+                m = l("894282");
+            let p = {
+                    [f.PlatformTypes.INSTAGRAM]: ["1036753656588017764"]
                 },
-                p = new Map([
-                    [c.PlatformTypes.INSTAGRAM, new Date(2023, 1, 18).getTime()]
-                ]);
+                E = new Map([
+                    [f.PlatformTypes.INSTAGRAM, new Date(2023, 1, 18).getTime()]
+                ]),
+                T = 30 * c.default.Millis.DAY;
 
-            function E(e) {
+            function _(e) {
                 let {
                     forUserProfile: t
                 } = e, l = (0, i.useStateFromStores)([d.default], () => d.default.getCurrentUser()), n = o.PlayStationVoiceExperiment.useExperiment({
@@ -2913,13 +2915,13 @@
                 }).allowPlayStationStaging;
                 return e => {
                     var a;
-                    return e.type === c.PlatformTypes.PLAYSTATION_STAGING ? n : !!(void 0 !== l && (null === (a = m[e.type]) || void 0 === a ? void 0 : a.includes(l.id))) || !!t || e.enabled
+                    return e.type === f.PlatformTypes.PLAYSTATION_STAGING ? n : !!(void 0 !== l && (null === (a = p[e.type]) || void 0 === a ? void 0 : a.includes(l.id))) || !!t || e.enabled
                 }
             }
 
-            function T() {
+            function S() {
                 let e = (0, i.useStateFromStores)([u.default], () => u.default.getAccounts()),
-                    t = E({
+                    t = _({
                         forUserProfile: !1
                     }),
                     l = n.useMemo(() => {
@@ -2928,29 +2930,29 @@
                     }, [e]);
                 return s.sortBy(r.default.filter(t), [e => {
                     var t;
-                    return !(p.has(e.type) && Date.now() < (null !== (t = p.get(e.type)) && void 0 !== t ? t : 0) + 2592e6)
-                }, e => l.has(e.type), e => e.hasMetadata, e => !c.ACTIVITY_PLATFORM_TYPES.has(e.type), e => e.name])
+                    return !(E.has(e.type) && Date.now() < (null !== (t = E.get(e.type)) && void 0 !== t ? t : 0) + T)
+                }, e => l.has(e.type), e => e.hasMetadata, e => !f.ACTIVITY_PLATFORM_TYPES.has(e.type), e => e.name])
             }
 
-            function _(e) {
+            function h(e) {
                 let [t, l] = n.useState(!1);
 
                 function a(e) {
                     let {
                         key: t
                     } = e;
-                    t === f.KeyboardKeysUpdated.SHIFT && l(!0)
+                    t === m.KeyboardKeysUpdated.SHIFT && l(!0)
                 }
 
                 function s(e) {
                     let {
                         key: t
                     } = e;
-                    t === f.KeyboardKeysUpdated.SHIFT && l(!1)
+                    t === m.KeyboardKeysUpdated.SHIFT && l(!1)
                 }
                 return (n.useEffect(() => (window.addEventListener("keydown", a), window.addEventListener("keyup", s), () => {
                     window.removeEventListener("keydown", a), window.removeEventListener("keyup", s)
-                }), []), t && e === c.PlatformTypes.TWITTER) ? c.PlatformTypes.TWITTER_LEGACY : e
+                }), []), t && e === f.PlatformTypes.TWITTER) ? f.PlatformTypes.TWITTER_LEGACY : e
             }
         },
         216049: function(e, t, l) {
@@ -3774,13 +3776,13 @@
             "use strict";
             l.r(t), l.d(t, {
                 useSpotifyPlayAction: function() {
-                    return S
+                    return I
                 },
                 useSpotifySyncAction: function() {
-                    return h
+                    return A
                 },
                 useSpotifyJoinAction: function() {
-                    return I
+                    return g
                 }
             }), l("222007");
             var n = l("884691"),
@@ -3788,16 +3790,18 @@
                 s = l("862337"),
                 i = l("84339"),
                 r = l("271938"),
-                o = l("158998"),
-                u = l("662285"),
-                d = l("782911"),
-                c = l("629414"),
-                f = l("53887"),
-                m = l("486150"),
-                p = l("555759"),
-                E = l("450484");
+                o = l("718517"),
+                u = l("158998"),
+                d = l("662285"),
+                c = l("782911"),
+                f = l("629414"),
+                m = l("53887"),
+                p = l("486150"),
+                E = l("555759"),
+                T = l("450484");
+            let _ = 30 * o.default.Millis.SECOND;
 
-            function T(e) {
+            function S(e) {
                 let {
                     currentUserTrackId: t,
                     syncingWithUser: l,
@@ -3807,7 +3811,7 @@
                     r && (t !== d || l || a) && (o(!1), u.stop())
                 }, [t, d, l, a, r, u]);
                 let c = n.useCallback(() => {
-                        o(!0), u.start(3e4, () => o(!1))
+                        o(!0), u.start(_, () => o(!1))
                     }, [u]),
                     f = n.useCallback(() => {
                         o(!1), u.stop()
@@ -3819,12 +3823,12 @@
                 }
             }
 
-            function _(e, t) {
-                return (0, a.useStateFromStoresObject)([u.default, r.default], () => (0, f.default)(u.default, r.default, t, e), [e, t])
+            function h(e, t) {
+                return (0, a.useStateFromStoresObject)([d.default, r.default], () => (0, m.default)(d.default, r.default, t, e), [e, t])
             }
 
-            function S(e, t, l) {
-                let a = _(e, t),
+            function I(e, t, l) {
+                let a = h(e, t),
                     {
                         notPlayable: s,
                         isCurrentUser: i,
@@ -3833,14 +3837,14 @@
                     {
                         loading: o,
                         startLoading: u,
-                        clearLoading: f
-                    } = T(a),
+                        clearLoading: d
+                    } = S(a),
                     m = n.useCallback(() => {
-                        u(), (0, p.default)(a, E.SpotifyActionTypes.USER_ACTIVITY_PLAY, l).catch(f)
-                    }, [a, l, u, f]);
+                        u(), (0, E.default)(a, T.SpotifyActionTypes.USER_ACTIVITY_PLAY, l).catch(d)
+                    }, [a, l, u, d]);
                 return {
-                    label: (0, d.default)(a, E.SpotifyActionTypes.USER_ACTIVITY_PLAY),
-                    tooltip: (0, c.default)(a, E.SpotifyActionTypes.USER_ACTIVITY_PLAY),
+                    label: (0, c.default)(a, T.SpotifyActionTypes.USER_ACTIVITY_PLAY),
+                    tooltip: (0, f.default)(a, T.SpotifyActionTypes.USER_ACTIVITY_PLAY),
                     disabled: !o && (i || s || r),
                     loading: o,
                     onClick: m,
@@ -3848,34 +3852,34 @@
                 }
             }
 
-            function h(e, t, l, a) {
-                let s = null != a ? a : o.default.getName(t),
-                    i = _(e, t),
+            function A(e, t, l, a) {
+                let s = null != a ? a : u.default.getName(t),
+                    i = h(e, t),
                     {
                         syncingWithUser: r,
-                        syncingWithParty: u,
-                        isCurrentUser: f
+                        syncingWithParty: o,
+                        isCurrentUser: d
                     } = i,
                     {
-                        loading: p,
-                        startLoading: S,
-                        clearLoading: h
-                    } = T(i),
+                        loading: m,
+                        startLoading: E,
+                        clearLoading: _
+                    } = S(i),
                     I = n.useCallback(() => {
-                        S(), (0, m.default)(i, E.SpotifyActionTypes.USER_ACTIVITY_SYNC, l).catch(h)
-                    }, [i, l, S, h]);
+                        E(), (0, p.default)(i, T.SpotifyActionTypes.USER_ACTIVITY_SYNC, l).catch(_)
+                    }, [i, l, E, _]);
                 return {
-                    label: (0, d.default)(i, E.SpotifyActionTypes.USER_ACTIVITY_SYNC),
-                    tooltip: (0, c.default)(i, E.SpotifyActionTypes.USER_ACTIVITY_SYNC, s),
-                    disabled: !p && (f || r || u),
-                    loading: p,
+                    label: (0, c.default)(i, T.SpotifyActionTypes.USER_ACTIVITY_SYNC),
+                    tooltip: (0, f.default)(i, T.SpotifyActionTypes.USER_ACTIVITY_SYNC, s),
+                    disabled: !m && (d || r || o),
+                    loading: m,
                     onClick: I,
                     spotifyData: i
                 }
             }
 
-            function I(e, t, l) {
-                let a = _(e, t),
+            function g(e, t, l) {
+                let a = h(e, t),
                     {
                         notPlayable: s,
                         syncingWithUser: i,
@@ -3884,18 +3888,18 @@
                     } = a,
                     {
                         loading: u,
-                        startLoading: f,
-                        clearLoading: p
-                    } = T(a),
-                    S = n.useCallback(() => {
-                        f(), (0, m.default)(a, E.SpotifyActionTypes.EMBED_SYNC, l).catch(p)
-                    }, [a, l, f, p]);
+                        startLoading: d,
+                        clearLoading: m
+                    } = S(a),
+                    E = n.useCallback(() => {
+                        d(), (0, p.default)(a, T.SpotifyActionTypes.EMBED_SYNC, l).catch(m)
+                    }, [a, l, d, m]);
                 return {
-                    label: (0, d.default)(a, E.SpotifyActionTypes.EMBED_SYNC),
-                    tooltip: (0, c.default)(a, E.SpotifyActionTypes.EMBED_SYNC),
+                    label: (0, c.default)(a, T.SpotifyActionTypes.EMBED_SYNC),
+                    tooltip: (0, f.default)(a, T.SpotifyActionTypes.EMBED_SYNC),
                     disabled: !u && (o || i || r || s),
                     loading: u,
-                    onClick: S,
+                    onClick: E,
                     spotifyData: a
                 }
             }
@@ -7668,4 +7672,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58247.5354ce2323be7db04b5e.js.map
+//# sourceMappingURL=58247.dc2941e60398908e0ea8.js.map
