@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23919"], {
+    ["26305"], {
         53708: function(e, t, n) {
             "use strict";
             e.exports = n.p + "f6c7b8245d3a54cf98b2.png"
@@ -2179,8 +2179,8 @@
                     openInvoiceId: U,
                     applicationId: y,
                     referralTrialOfferId: P,
-                    giftRecipient: O,
-                    returnRef: D,
+                    giftRecipient: D,
+                    returnRef: O,
                     subscription: b
                 } = null != e ? e : {}, w = !1, M = (0, r.v4)(), x = a.default.getCurrentUser(), G = (0, f.isPremiumExactly)(x, _.PremiumTypes.TIER_2);
                 (0, l.openModalLazy)(async () => {
@@ -2199,7 +2199,7 @@
                             skuId: A,
                             isGift: g,
                             giftMessage: m,
-                            giftRecipient: O,
+                            giftRecipient: D,
                             initialPlanId: t,
                             followupSKUInfo: p,
                             onClose: (e, t) => {
@@ -2219,7 +2219,7 @@
                             openInvoiceId: U,
                             applicationId: y,
                             referralTrialOfferId: P,
-                            returnRef: D,
+                            returnRef: O,
                             subscription: b
                         })
                     }
@@ -3063,6 +3063,34 @@
                 })
             }
             n("884691")
+        },
+        476765: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                uid: function() {
+                    return o
+                },
+                useUID: function() {
+                    return s
+                },
+                UID: function() {
+                    return u
+                }
+            });
+            var i = n("995008"),
+                r = n.n(i),
+                l = n("775560");
+            let o = function() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
+                    return r(e)
+                },
+                s = () => (0, l.useLazyValue)(() => o()),
+                u = e => {
+                    let {
+                        children: t
+                    } = e;
+                    return t(s())
+                }
         },
         461380: function(e, t, n) {
             "use strict";
@@ -4309,4 +4337,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23919.18dcd557889af2760d91.js.map
+//# sourceMappingURL=26305.0ed6623b4b60b61b9a98.js.map
