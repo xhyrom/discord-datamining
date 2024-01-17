@@ -25465,7 +25465,7 @@ html .progress__4ef76 {
 
 .message__80c10.selected_fd9051,
 .mouse-mode.full-motion .message__80c10:hover {
-    background-color: var(--background-message-hover)
+    background: var(--bg-overlay-3, var(--background-message-hover))
 }
 
 .message__80c10.mentioned__58017.selected_fd9051,
@@ -125989,4 +125989,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.27ad76e6d18663a4e9f2.css.map*/
+/*# sourceMappingURL=app.2fbd8d2f0f648896f7eb.css.map*/
