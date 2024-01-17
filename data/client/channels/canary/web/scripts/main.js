@@ -247,8 +247,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "259490",
-                    versionHash: "d2a8f8ab2f55e53534f3062c4478b3a1675ace59"
+                    buildNumber: "259495",
+                    versionHash: "5cf06960e101dd8c9368828c36d629d1ae87373e"
                 }
             }
             n.r(e), n.d(e, {
@@ -357,4 +357,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18409.b7beca8d4fce11c0c44f.js.map
+//# sourceMappingURL=18409.220c1cd1b352ce0d7c10.js.map
