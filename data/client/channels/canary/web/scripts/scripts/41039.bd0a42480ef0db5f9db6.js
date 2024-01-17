@@ -21697,6 +21697,12 @@
                 },
                 CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY: function() {
                     return y
+                },
+                SEEK_DENOMINATOR: function() {
+                    return P
+                },
+                SEEK_SHIFT_MODIFIER: function() {
+                    return L
                 }
             });
             var i, r, s, a, o = n("605250"),
@@ -21722,7 +21728,9 @@
                 N = 100,
                 O = e => "Clip - ".concat(new Date(e).toLocaleString()),
                 D = 15,
-                y = 15e3
+                y = 15e3,
+                P = 30,
+                L = 10
         },
         56947: function(e, t, n) {
             "use strict";
@@ -50049,7 +50057,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "259473"
+                                build_number: "259478"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63436,4 +63444,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.d7fd817e5356135044c1.js.map
+//# sourceMappingURL=41039.bd0a42480ef0db5f9db6.js.map
