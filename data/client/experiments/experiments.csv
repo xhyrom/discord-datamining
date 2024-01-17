@@ -416,6 +416,7 @@ id,hash,label
 2023-12_nv_relaxed_rate_control,3216770283,Alternative rate control proposal for Nvidia encoder
 2023-12_quests,2582794089,Quests
 2023-12_voice_lockscreen_widget,3182686365,Voice live activity (guild)
+2024-01_auto_disable_video_mobile_v2,1814449668,Mobile performance: VideoHealthManager (v2)
 2024-01_chunked_message_attachment_uploads,2992238206,Use chunked uploads for message attachments
 2024-01_developers_get_developer_shelf,1459591700,Developers Get Developer Shelf
 2024-01_guild_members_table_additional_filtering,1640304679,Guild Members Table Additional Filtering
