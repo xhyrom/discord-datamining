@@ -178,8 +178,8 @@
                 d = l("888198"),
                 f = l("290689"),
                 p = l("804888"),
-                h = l("401690"),
-                E = l("845579"),
+                E = l("401690"),
+                h = l("845579"),
                 g = l("42203"),
                 m = l("923959"),
                 A = l("26989"),
@@ -326,7 +326,7 @@
                     },
                     emoticon: {
                         match(e, t, l) {
-                            if (!E.ConvertEmoticons.getSetting() || 0 !== l.length && !/\s$/.test(l)) return null;
+                            if (!h.ConvertEmoticons.getSetting() || 0 !== l.length && !/\s$/.test(l)) return null;
                             let n = s.default.EMOJI_SHORTCUT_RE.exec(e);
                             return null == n || n[0].length !== e.length && " " !== e[n[0].length] && "\n" !== e[n[0].length] ? null : n
                         },
@@ -570,12 +570,12 @@
                         id: e.channel.id,
                         text: e.channel.name
                     }))).value() : [],
-                    f = h.default.computeAllActiveJoinedThreads(l).map(e => ({
+                    f = E.default.computeAllActiveJoinedThreads(l).map(e => ({
                         id: e.id,
                         text: e.name
                     })),
                     p = o.default.getDisambiguatedEmojiContext(l),
-                    E = p.getEscapedCustomEmoticonNames(),
+                    h = p.getEscapedCustomEmoticonNames(),
                     g = p.getCustomEmoji(),
                     C = p.getCustomEmoticonRegex(),
                     S = N.default.getCurrentUser(),
@@ -593,7 +593,7 @@
                         customEmoticonsRegex: C,
                         canViewAndUsePackEmoji: T,
                         customEmoji: g,
-                        textExclusions: E,
+                        textExclusions: h,
                         disableErrorGuards: !0
                     };
                 return I
@@ -700,7 +700,7 @@
             "use strict";
             l.r(t), l.d(t, {
                 default: function() {
-                    return Y
+                    return j
                 }
             }), l("222007");
             var n = l("448105"),
@@ -714,8 +714,8 @@
                 d = l("299285"),
                 f = l("860285"),
                 p = l("915639"),
-                h = l("86878"),
-                E = l("546463"),
+                E = l("86878"),
+                h = l("546463"),
                 g = l("686470"),
                 m = l("568307"),
                 A = l("102985"),
@@ -723,60 +723,61 @@
                 y = l("946749"),
                 C = l("535974"),
                 S = l("352326"),
-                N = l("117362"),
-                _ = l("449008"),
-                T = l("964889"),
-                I = l("773336"),
-                R = l("50885"),
-                v = l("602043"),
-                b = l("9377"),
-                U = l("49111");
-            let M = o().subtract(1, "week"),
-                O = [],
-                G = "",
-                D = !1;
+                N = l("718517"),
+                _ = l("117362"),
+                T = l("449008"),
+                I = l("964889"),
+                R = l("773336"),
+                v = l("50885"),
+                b = l("602043"),
+                U = l("9377"),
+                M = l("49111");
+            let O = o().subtract(1, "week"),
+                G = [],
+                D = "",
+                w = !1;
 
-            function w(e, t) {
+            function P(e, t) {
                 return e.application.name.localeCompare(t.application.name, p.default.locale, {
                     sensitivity: "base"
                 })
             }
-            let P = {
-                    [U.GameTableListKeys.NAME]: w,
-                    [U.GameTableListKeys.PLATFORM]: (e, t, l) => {
+            let x = {
+                    [M.GameTableListKeys.NAME]: P,
+                    [M.GameTableListKeys.PLATFORM]: (e, t, l) => {
                         let n = e.libraryApplication.getDistributor(),
                             a = t.libraryApplication.getDistributor();
-                        return n === a ? (l === U.TableSortDirections.DESCENDING ? -1 : 1) * w(e, t) : null == n ? 1 : null == a ? -1 : n.localeCompare(a)
+                        return n === a ? (l === M.TableSortDirections.DESCENDING ? -1 : 1) * P(e, t) : null == n ? 1 : null == a ? -1 : n.localeCompare(a)
                     },
-                    [U.GameTableListKeys.LAST_PLAYED]: (e, t) => e.isNew && !t.isNew ? -1 : !e.isNew && t.isNew ? 1 : e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1,
-                    [U.GameTableListKeys.ACTIONS]: null
+                    [M.GameTableListKeys.LAST_PLAYED]: (e, t) => e.isNew && !t.isNew ? -1 : !e.isNew && t.isNew ? 1 : e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1,
+                    [M.GameTableListKeys.ACTIONS]: null
                 },
-                x = (0, N.cachedFunction)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
-                k = (0, N.cachedFunction)(e => e.filter(e => null != e.libraryApplication && C.default.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
-                F = (0, N.cachedFunction)((e, t) => e.filter(e => a(t.toLowerCase(), e.application.name.toLowerCase()))),
-                H = (0, N.cachedFunction)((e, t, l, n) => {
-                    let a = P[t];
+                k = (0, _.cachedFunction)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
+                F = (0, _.cachedFunction)(e => e.filter(e => null != e.libraryApplication && C.default.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
+                H = (0, _.cachedFunction)((e, t) => e.filter(e => a(t.toLowerCase(), e.application.name.toLowerCase()))),
+                q = (0, _.cachedFunction)((e, t, l, n) => {
+                    let a = x[t];
                     if (null == a) return e;
                     let r = [...e],
                         i = r.sort(a);
-                    return l === U.TableSortDirections.DESCENDING ? i.reverse() : i
+                    return l === M.TableSortDirections.DESCENDING ? i.reverse() : i
                 }),
-                q = (0, N.cachedFunction)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
+                B = (0, _.cachedFunction)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
 
-            function B(e, t) {
+            function V(e, t) {
                 let l = L.default.getCurrentUserStatisticsForApplication(e.id);
                 if (null != l) return new Date(l.last_played_at).getTime();
                 let n = t[e.id];
                 return null != n ? n : 0
             }
 
-            function V() {
+            function K() {
                 let e = new Set(m.default.getRunningVerifiedApplicationIds()),
                     t = {},
                     l = new Set,
                     n = m.default.getGamesSeen(!1, !1).map(e => {
-                        let l = E.default.getGameByGameData(e);
-                        return null != l ? (t[l.id] = 1e3 * e.lastFocused, l.id) : null
+                        let l = h.default.getGameByGameData(e);
+                        return null != l ? (t[l.id] = e.lastFocused * N.default.Millis.SECOND, l.id) : null
                     }),
                     a = Object.values(g.default.getAllLibraryApplications()),
                     r = a.map(n => (function(e, t, l, n, a) {
@@ -784,34 +785,34 @@
                         if (!a && t.has(e.id)) return null;
                         let u = d.default.getApplication(e.id);
                         if (null == u) return null;
-                        let s = B(u, l);
-                        if (t.add(e.id), !(0, T.isUserEntitledToLibraryApplication)(e) && !C.default.isInstalled(e.id, e.branchId)) return null;
+                        let s = V(u, l);
+                        if (t.add(e.id), !(0, I.isUserEntitledToLibraryApplication)(e) && !C.default.isInstalled(e.id, e.branchId)) return null;
                         return {
                             key: "".concat(e.id, "-").concat(e.branchId),
                             application: u,
                             libraryApplication: e,
                             lastPlayed: s,
                             supportsCloudSync: null != e && C.default.supportsCloudSync(e.id, e.branchId),
-                            isNew: (r = e, i = s, null != r && o(r.createdAt).isAfter(M) && 0 === i),
+                            isNew: (r = e, i = s, null != r && o(r.createdAt).isAfter(O) && 0 === i),
                             isLaunching: f.default.launchingGames.has(e.id),
                             isRunning: n.has(e.id),
-                            isLaunchable: (0, v.isLaunchable)({
+                            isLaunchable: (0, b.isLaunchable)({
                                 LibraryApplicationStore: g.default,
                                 LaunchableGameStore: f.default,
                                 DispatchApplicationStore: C.default,
-                                ConnectedAppsStore: h.default,
+                                ConnectedAppsStore: E.default,
                                 applicationId: e.id,
                                 branchId: e.branchId
                             }),
                             isUpdatingFlags: g.default.isUpdatingFlags(e.id, e.branchId),
-                            shouldShowInLibrary: (0, T.shouldShowGameInLibrary)(u, e, A.default),
-                            defaultAction: (0, b.getDefaultLibraryApplicationAction)(e, C.default, S.default)
+                            shouldShowInLibrary: (0, I.shouldShowGameInLibrary)(u, e, A.default),
+                            defaultAction: (0, U.getDefaultLibraryApplicationAction)(e, C.default, S.default)
                         }
-                    })(n, l, t, e, !0)).filter(_.isNotNullish),
+                    })(n, l, t, e, !0)).filter(T.isNotNullish),
                     u = n.map(n => (function(e, t, l, n) {
                         let a = null != e ? d.default.getApplication(e) : null;
                         if (null == a || null == e || t.has(e)) return null;
-                        let r = B(a, l);
+                        let r = V(a, l);
                         return t.add(e), {
                             key: e,
                             application: a,
@@ -820,11 +821,11 @@
                             isNew: !1,
                             isLaunching: f.default.launchingGames.has(e),
                             isRunning: n.has(e),
-                            isLaunchable: (0, v.isLaunchable)({
+                            isLaunchable: (0, b.isLaunchable)({
                                 LibraryApplicationStore: g.default,
                                 LaunchableGameStore: f.default,
                                 DispatchApplicationStore: C.default,
-                                ConnectedAppsStore: h.default,
+                                ConnectedAppsStore: E.default,
                                 applicationId: e,
                                 branchId: null
                             }),
@@ -833,46 +834,46 @@
                             libraryApplication: null,
                             defaultAction: null
                         }
-                    })(n, l, t, e)).filter(_.isNotNullish),
+                    })(n, l, t, e)).filter(T.isNotNullish),
                     s = [...u, ...r].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
-                return D = null != E.default.lastFetched && g.default.fetched, !i.isEqual(s, O) && (O = s, I.isPlatformEmbedded && R.default.setSystemTrayApplications(k(O).map(e => e.application).slice(0, 5)), !0)
+                return w = null != h.default.lastFetched && g.default.fetched, !i.isEqual(s, G) && (G = s, R.isPlatformEmbedded && v.default.setSystemTrayApplications(F(G).map(e => e.application).slice(0, 5)), !0)
             }
-            class K extends s.default.Store {
+            class Y extends s.default.Store {
                 initialize() {
-                    this.syncWith([d.default, E.default, f.default, m.default, C.default, S.default, g.default, L.default, A.default, h.default], V, 200), this.syncWith([y.default, p.default], () => !0)
+                    this.syncWith([d.default, h.default, f.default, m.default, C.default, S.default, g.default, L.default, A.default, E.default], K, 200), this.syncWith([y.default, p.default], () => !0)
                 }
                 get applicationFilterQuery() {
-                    return G
-                }
-                get applicationViewItems() {
-                    return O
-                }
-                get launchableApplicationViewItems() {
-                    return k(O)
-                }
-                get libraryApplicationViewItems() {
-                    return x(O)
-                }
-                get filteredLibraryApplicationViewItems() {
-                    return F(this.libraryApplicationViewItems, G)
-                }
-                get sortedFilteredLibraryApplicationViewItems() {
-                    return H(this.filteredLibraryApplicationViewItems, y.default.sortKey, y.default.sortDirection, p.default.locale)
-                }
-                get hiddenLibraryApplicationViewItems() {
-                    return q(O)
-                }
-                get hasFetchedApplications() {
                     return D
                 }
+                get applicationViewItems() {
+                    return G
+                }
+                get launchableApplicationViewItems() {
+                    return F(G)
+                }
+                get libraryApplicationViewItems() {
+                    return k(G)
+                }
+                get filteredLibraryApplicationViewItems() {
+                    return H(this.libraryApplicationViewItems, D)
+                }
+                get sortedFilteredLibraryApplicationViewItems() {
+                    return q(this.filteredLibraryApplicationViewItems, y.default.sortKey, y.default.sortDirection, p.default.locale)
+                }
+                get hiddenLibraryApplicationViewItems() {
+                    return B(G)
+                }
+                get hasFetchedApplications() {
+                    return w
+                }
             }
-            K.displayName = "ApplicationViewStore";
-            var Y = new K(c.default, {
+            Y.displayName = "ApplicationViewStore";
+            var j = new Y(c.default, {
                 LIBRARY_APPLICATION_FILTER_UPDATE: function(e) {
                     let {
                         query: t
                     } = e;
-                    G = t
+                    D = t
                 }
             })
         },
@@ -933,10 +934,10 @@
                 d = s.TableSortDirections.ASCENDING,
                 f = s.GameTableListKeys.LAST_PLAYED,
                 p = !1,
-                h = r.debounce(() => {
+                E = r.debounce(() => {
                     p = !1, g.emitChange()
                 }, 200);
-            class E extends i.default.Store {
+            class h extends i.default.Store {
                 initialize() {
                     var e;
                     let t = null !== (e = u.default.get(c)) && void 0 !== e ? e : {};
@@ -955,8 +956,8 @@
                     return p
                 }
             }
-            E.displayName = "GameLibraryViewStore";
-            let g = new E(o.default, {
+            h.displayName = "GameLibraryViewStore";
+            let g = new h(o.default, {
                 LIBRARY_TABLE_SORT_UPDATE: function(e) {
                     let {
                         direction: t,
@@ -972,7 +973,7 @@
                         key: t,
                         isKeyboardEvent: l
                     } = e;
-                    l && (p = !0, h()), n = t
+                    l && (p = !0, E()), n = t
                 }
             });
             var m = g
@@ -998,8 +999,8 @@
                 d = l("605250"),
                 f = l("385976"),
                 p = l("677315"),
-                h = l("361776"),
-                E = l("290886"),
+                E = l("361776"),
+                h = l("290886"),
                 g = l("866353"),
                 m = l("865372"),
                 A = l("364685"),
@@ -1084,42 +1085,42 @@
                     limit: n,
                     filter: a,
                     allowSnowflake: i
-                } = e, u = D.default.getUsers(), s = G.default.getGuildId(), c = t.toLocaleLowerCase(), d = (0, H.normalize)(c), f = [], p = [], h = l.length, E = 0, g = 0;
-                for (; E < h;) {
+                } = e, u = D.default.getUsers(), s = G.default.getGuildId(), c = t.toLocaleLowerCase(), d = (0, H.normalize)(c), f = [], p = [], E = l.length, h = 0, g = 0;
+                for (; h < E;) {
                     var m, A, L, y, C, S, _, T, R;
                     let e, n;
-                    let o = l[E];
+                    let o = l[h];
                     o instanceof N.default ? (n = o, e = null === (A = I.default.getNick(s, n.id)) || void 0 === A ? void 0 : A.toLocaleLowerCase()) : (e = null === (L = o.nick) || void 0 === L ? void 0 : L.toLocaleLowerCase(), n = u[o.userId]);
-                    let h = null === (m = q.default.getGlobalName(n)) || void 0 === m ? void 0 : m.toLocaleLowerCase();
+                    let E = null === (m = q.default.getGlobalName(n)) || void 0 === m ? void 0 : m.toLocaleLowerCase();
                     if (null == a || a(n)) {
                         let l = n.username.toLocaleLowerCase(),
                             a = (0, H.stripDiacritics)(l),
                             u = (0, H.normalize)(a),
                             o = null != e ? (0, H.stripDiacritics)(e) : null,
                             s = null != o ? (0, H.normalize)(o) : null,
-                            E = null != h ? (0, H.stripDiacritics)(h) : null,
-                            m = null != E ? (0, H.normalize)(E) : null;
-                        i && t === n.id || l.substring(0, c.length) === c || a.substring(0, c.length) === c || (null == e ? void 0 : e.substring(0, c.length)) === c || (null == o ? void 0 : o.substring(0, c.length)) === c || (null == h ? void 0 : h.substring(0, c.length)) === c || (null == E ? void 0 : E.substring(0, c.length)) === c ? f.push({
+                            h = null != E ? (0, H.stripDiacritics)(E) : null,
+                            m = null != h ? (0, H.normalize)(h) : null;
+                        i && t === n.id || l.substring(0, c.length) === c || a.substring(0, c.length) === c || (null == e ? void 0 : e.substring(0, c.length)) === c || (null == o ? void 0 : o.substring(0, c.length)) === c || (null == E ? void 0 : E.substring(0, c.length)) === c || (null == h ? void 0 : h.substring(0, c.length)) === c ? f.push({
                             type: V.AutocompleterResultTypes.USER,
                             record: n,
                             score: 10,
-                            comparator: null !== (y = null != h ? h : e) && void 0 !== y ? y : l,
-                            sortable: null !== (C = null != E ? E : o) && void 0 !== C ? C : a
+                            comparator: null !== (y = null != E ? E : e) && void 0 !== y ? y : l,
+                            sortable: null !== (C = null != h ? h : o) && void 0 !== C ? C : a
                         }) : u.substring(0, d.length) === d || (null == s ? void 0 : s.substring(0, d.length)) === d || (null == m ? void 0 : m.substring(0, d.length)) === d ? f.push({
                             type: V.AutocompleterResultTypes.USER,
                             record: n,
                             score: 1,
-                            comparator: null !== (S = null != h ? h : e) && void 0 !== S ? S : l,
-                            sortable: null !== (_ = null != E ? E : o) && void 0 !== _ ? _ : a
-                        }) : g < 50 && (r(c, a) || r(d, u) || null != o && r(c, o) || null != s && r(d, s) || null != E && r(c, E) || null != m && r(d, m)) && (p.push({
+                            comparator: null !== (S = null != E ? E : e) && void 0 !== S ? S : l,
+                            sortable: null !== (_ = null != h ? h : o) && void 0 !== _ ? _ : a
+                        }) : g < 50 && (r(c, a) || r(d, u) || null != o && r(c, o) || null != s && r(d, s) || null != h && r(c, h) || null != m && r(d, m)) && (p.push({
                             type: V.AutocompleterResultTypes.USER,
                             record: n,
                             score: 1,
-                            comparator: null !== (T = null != h ? h : e) && void 0 !== T ? T : l,
-                            sortable: null !== (R = null != E ? E : o) && void 0 !== R ? R : a
+                            comparator: null !== (T = null != E ? E : e) && void 0 !== T ? T : l,
+                            sortable: null !== (R = null != h ? h : o) && void 0 !== R ? R : a
                         }), g += 1)
                     }
-                    E += 1
+                    h += 1
                 }
                 return f.sort(o.default), f.length < n && (p.sort(o.default), f = f.concat(p.slice(0, Math.max(0, n - f.length)))), f.length > n && (f.length = n), f
             }
@@ -1274,9 +1275,9 @@
                             allowEmptyQueries: d = !1,
                             requireVocalConnectAccess: f = !0,
                             boosters: p = {},
-                            allowSnowflake: h
+                            allowSnowflake: E
                         } = e,
-                        E = function(e) {
+                        h = function(e) {
                             let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                                 l = e.split(" ").filter(e => "" !== e || t).map(e => {
                                     let t = e.toLocaleLowerCase();
@@ -1304,9 +1305,9 @@
                     for (let e of t) {
                         var A, L, C, N, I;
                         if (A = c, L = e.type, C = null != n, !(A === L || (C || (0, S.isGuildChannelType)(L)) && (A === T.GUILD_SELECTABLE_CHANNELS_KEY ? (0, S.isGuildSelectableChannelType)(L) || (0, S.isGuildVocalChannelType)(L) : A === T.GUILD_VOCAL_CHANNELS_KEY && (0, S.isGuildVocalChannelType)(L))) || (0, S.isGuildChannelType)(e.type) && !b.default.can(f ? e.accessPermissions : B.Permissions.VIEW_CHANNEL, e) || !i(e)) continue;
-                        let t = [...E],
+                        let t = [...h],
                             a = e.name.toLocaleLowerCase(),
-                            u = h && l === e.id,
+                            u = E && l === e.id,
                             o = u ? 10 : er(a, t, r);
                         if (0 !== o) {
                             if (t.length > 0) {
@@ -1467,21 +1468,21 @@
                         includeNonMentionableRoles: d = !1,
                         checkRecentlyTalkedOnEmptyQuery: f = !0,
                         limit: p = B.MAX_AUTOCOMPLETE_RESULTS,
-                        request: h,
-                        allowSnowflake: E = !1
+                        request: E,
+                        allowSnowflake: h = !1
                     } = e, g = i ? (c && null != l.guild_id ? this.queryGuildUsers({
                         guildId: l.guild_id,
                         query: t,
                         limit: p,
                         checkRecentlyTalkedOnEmptyQuery: f,
-                        request: h,
-                        allowSnowflake: E
+                        request: E,
+                        allowSnowflake: h
                     }) : this.queryChannelUsers({
                         channelId: l.id,
                         query: t,
                         limit: p,
                         checkRecentlyTalkedOnEmptyQuery: f,
-                        allowSnowflake: E
+                        allowSnowflake: h
                     })).map(e => {
                         let {
                             record: t,
@@ -1505,7 +1506,7 @@
                                 name: a,
                                 id: i
                             } = t;
-                            return (l || n || d) && (r(A, a.toLowerCase()) || E && A === i) && i !== e
+                            return (l || n || d) && (r(A, a.toLowerCase()) || h && A === i) && i !== e
                         }).take(p - m).forEach(e => {
                             L.push(e)
                         }), m += L.length)
@@ -1580,7 +1581,7 @@
                         exactQuery: RegExp("^".concat(F.default.escape(n)), "i"),
                         containQuery: RegExp(F.default.escape(n), "i"),
                         queryLower: n
-                    }, r = ((0, p.canSeeGuildHome)(l.id) || (0, E.canSeeOnboardingHome)(l.id)) && !l.hasFeature(B.GuildFeatures.HUB), i = l.hasFeature(B.GuildFeatures.COMMUNITY), u = (0, h.isGuildOnboardingAvailable)(l) && l.hasFeature(B.GuildFeatures.COMMUNITY), o = [{
+                    }, r = ((0, p.canSeeGuildHome)(l.id) || (0, h.canSeeOnboardingHome)(l.id)) && !l.hasFeature(B.GuildFeatures.HUB), i = l.hasFeature(B.GuildFeatures.COMMUNITY), u = (0, E.isGuildOnboardingAvailable)(l) && l.hasFeature(B.GuildFeatures.COMMUNITY), o = [{
                         id: K.StaticChannelId.SERVER_GUIDE,
                         name: Y.default.Messages.SERVER_GUIDE
                     }, {
@@ -1733,8 +1734,8 @@
                                 }(n), i = 0;
                                 t ? a === e ? i = 10 * r : c.test(a) ? i = 7 * r : (n === L.StickerMetadataTypes.GUILD_NAME || n === L.StickerMetadataTypes.PACK_NAME || n === L.StickerMetadataTypes.STICKER_NAME) && d.test(a) && (i = 5 * r) : a === e && (i = 10 * r, f = a), i > s && (s = i, f = a)
                             }
-                            let h = m.default.stickerFrecencyWithoutFetchingLatest.getScore(u);
-                            null != h && (s *= h / 100), s > 0 && null != f && !i.has(p.id) && (i.add(p.id), o.push({
+                            let E = m.default.stickerFrecencyWithoutFetchingLatest.getScore(u);
+                            null != E && (s *= E / 100), s > 0 && null != f && !i.has(p.id) && (i.add(p.id), o.push({
                                 sticker: p,
                                 comparator: f,
                                 score: s
@@ -1766,7 +1767,7 @@
             let n;
             l.r(t), l.d(t, {
                 default: function() {
-                    return g
+                    return m
                 }
             }), l("424973");
             var a = l("917351"),
@@ -1776,10 +1777,11 @@
                 o = l("851387"),
                 s = l("305961"),
                 c = l("697218"),
-                d = l("158998"),
-                f = l("782340");
-            let p = new u({
-                maxAge: 6e4
+                d = l("718517"),
+                f = l("158998"),
+                p = l("782340");
+            let E = new u({
+                maxAge: 1 * d.default.Millis.MINUTE
             });
 
             function h(e, t, l) {
@@ -1801,17 +1803,17 @@
                 }, 200)
             }
 
-            function E(e, t) {
+            function g(e, t) {
                 let l = "".concat(null != e ? e : "", ":").concat(t),
-                    n = p.get(l);
+                    n = E.get(l);
                 if (null != n) return n;
-                p.set(l, !0)
+                E.set(l, !0)
             }
-            var g = {
+            var m = {
                 getGuildNameSuggestion: function(e) {
                     let t = c.default.getCurrentUser(),
-                        l = d.getName(t);
-                    return null == l || 0 === l.length ? "" : f.default.Messages.CREATE_SERVER_DEFAULT_SERVER_NAME_FORMAT.format({
+                        l = f.getName(t);
+                    return null == l || 0 === l.length ? "" : p.default.Messages.CREATE_SERVER_DEFAULT_SERVER_NAME_FORMAT.format({
                         username: (null == e ? void 0 : e.truncateUsername) ? l.slice(0, 20) : l
                     })
                 },
@@ -1821,11 +1823,11 @@
                         a = [],
                         r = !1;
                     if (n) e.forEach(e => {
-                        let l = E(e, t);
+                        let l = g(e, t);
                         null == l && a.push(e)
                     });
                     else {
-                        let l = E(e, t);
+                        let l = g(e, t);
                         null == l && (r = !0)
                     }
                     a.length > 0 && n ? h(a, t, l) : r && h(e, t, l)
@@ -1862,4 +1864,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48590.1b76e1504f6a5bf1cfc3.js.map
+//# sourceMappingURL=48590.9d5fbcc5aac137b478e1.js.map

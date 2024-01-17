@@ -4314,27 +4314,29 @@
             "use strict";
             n.r(t), n.d(t, {
                 getPurchaseToken: function() {
-                    return u
+                    return o
                 },
                 getPurchaseTokenHash: function() {
-                    return a
+                    return d
                 }
             }), n("311790"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341"), n("101997"), n("222007");
             var r = n("748820"),
-                i = n("95410");
-            let l = "purchase_token";
+                i = n("95410"),
+                l = n("718517");
+            let u = "purchase_token",
+                a = 60 * l.default.Millis.DAY;
 
-            function u() {
-                let e = i.default.get(l);
+            function o() {
+                let e = i.default.get(u);
                 if (null != e && e.expires >= Date.now()) return e.purchaseToken;
                 let t = (0, r.v4)();
-                return i.default.set(l, {
+                return i.default.set(u, {
                     purchaseToken: t,
-                    expires: Date.now() + 5184e6
+                    expires: Date.now() + a
                 }), t
             }
-            async function a() {
-                let e = new Uint8Array(u().split("").map(e => e.charCodeAt(0))),
+            async function d() {
+                let e = new Uint8Array(o().split("").map(e => e.charCodeAt(0))),
                     t = await window.crypto.subtle.digest({
                         name: "SHA-256"
                     }, e);
@@ -4471,4 +4473,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71554.a8fc7dee6229ebf179cf.js.map
+//# sourceMappingURL=71554.f28684722d618fe71a30.js.map
