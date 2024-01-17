@@ -26871,8 +26871,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -98009,6 +98009,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .media_c4f903 {
+    display: flex;
     align-items: center;
     border-radius: 8px;
     box-sizing: border-box;
@@ -125933,4 +125934,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.377c240d97768fbb249f.css.map*/
+/*# sourceMappingURL=app.3899188e45f3fa9ce22a.css.map*/
