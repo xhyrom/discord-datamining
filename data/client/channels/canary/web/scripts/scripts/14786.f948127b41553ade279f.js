@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["7704"], {
+    ["14786"], {
         440540: function(i, x, t) {
             "use strict";
             i.exports = {
@@ -26262,6 +26262,40 @@
                 markers: []
             }
         },
+        891722: function(i, x, t) {
+            "use strict";
+            t.r(x), t.d(x, {
+                ArrowSmallLeftIcon: function() {
+                    return y
+                }
+            });
+            var s = t("37983");
+            t("884691");
+            var a = t("669491"),
+                o = t("75196");
+            let y = i => {
+                let {
+                    width: x = 24,
+                    height: t = 24,
+                    color: y = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: k = "",
+                    ...d
+                } = i;
+                return (0, s.jsx)("svg", {
+                    ...(0, o.default)(d),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: x,
+                    height: t,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, s.jsx)("path", {
+                        fill: "string" == typeof y ? y : y.css,
+                        d: "M3.3 11.3a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4-1.4L6.42 13H20a1 1 0 1 0 0-2H6.41l3.3-3.3a1 1 0 0 0-1.42-1.4l-5 5Z",
+                        className: k
+                    })
+                })
+            }
+        },
         529805: function(i, x, t) {
             "use strict";
             t.r(x), t.d(x, {
@@ -26327,7 +26361,7 @@
             "use strict";
             t.r(x), t.d(x, {
                 CUSTOM_CALL_SOUND_ANIMATION_RANGE: function() {
-                    return C
+                    return U
                 },
                 AnimationTypeToAnimations: function() {
                     return T
@@ -26342,7 +26376,7 @@
                     return D
                 },
                 getEffectAnnouncement: function() {
-                    return Y
+                    return V
                 }
             });
             var s = t("917351"),
@@ -26358,31 +26392,31 @@
                 n = t("733261"),
                 c = t("596926"),
                 l = t("761999"),
-                _ = t("189580"),
-                f = t("679126"),
+                f = t("189580"),
+                _ = t("679126"),
                 h = t("101593"),
-                I = t("414668"),
-                w = t("97656"),
+                w = t("414668"),
+                I = t("97656"),
                 b = t("812007"),
                 u = t("721336"),
                 g = t("954877"),
                 E = t("662151"),
-                A = t("155232"),
-                F = t("843093"),
-                N = t("867805"),
-                v = t("407063"),
-                L = t("697218"),
+                v = t("155232"),
+                L = t("843093"),
+                A = t("867805"),
+                N = t("407063"),
+                F = t("697218"),
                 O = t("315102"),
                 M = t("402671"),
                 S = t("626334"),
-                U = t("782340");
-            let C = {
+                C = t("782340");
+            let U = {
                     start: 10,
                     end: 15
                 },
                 B = {
                     BASIC: [o],
-                    PREMIUM: [y, k, d, p, r, e, m, n, c, l, _, f, h, I, w, b, u, g, E, A, F]
+                    PREMIUM: [y, k, d, p, r, e, m, n, c, l, f, _, h, w, I, b, u, g, E, v, L]
                 },
                 T = {
                     [S.VoiceChannelEffectAnimationType.BASIC]: B.BASIC,
@@ -26391,7 +26425,7 @@
                 R = a.memoize(i => new Promise(x => {
                     let t = new Image;
                     t.src = i, t.crossOrigin = "Anonymous", t.onload = () => {
-                        let s = S.EMOJI_SIZE * (0, v.getDevicePixelRatio)();
+                        let s = S.EMOJI_SIZE * (0, N.getDevicePixelRatio)();
                         if (t.width === s && t.height === s) x(i);
                         else {
                             var a;
@@ -26419,42 +26453,78 @@
                         size: x
                     })
                 }
-                let s = N.default.convertSurrogateToName(i.name, !1),
-                    a = N.default.getByName(s);
+                let s = A.default.convertSurrogateToName(i.name, !1),
+                    a = A.default.getByName(s);
                 return null != a ? M.default.getURL(a.surrogates) : ""
             }
 
-            function V(i, x) {
+            function H(i, x) {
                 return a(i).map(i => {
                     var t;
                     return null !== (t = i[x]) && void 0 !== t ? t : null
                 }).filter(i => null != i).uniq().value()
             }
 
-            function Y(i) {
+            function V(i) {
                 var x, t, s, a, o, y;
                 if (i.length < 1) return "";
-                let k = V(i, "userId"),
-                    d = V(i, "emojiName"),
+                let k = H(i, "userId"),
+                    d = H(i, "emojiName"),
                     p = d.length < 2 ? null !== (x = null == d ? void 0 : d[0]) && void 0 !== x ? x : "" : d.join(", ");
                 if (k.length < 1) return "";
-                if (1 === k.length) return U.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_SINGLE.format({
-                    firstUsername: null === (t = L.default.getUser(k[0])) || void 0 === t ? void 0 : t.username,
+                if (1 === k.length) return C.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_SINGLE.format({
+                    firstUsername: null === (t = F.default.getUser(k[0])) || void 0 === t ? void 0 : t.username,
                     emojiNames: p
                 });
-                if (2 === k.length) return U.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_DOUBLE.format({
-                    firstUsername: null === (s = L.default.getUser(k[0])) || void 0 === s ? void 0 : s.username,
-                    secondUsername: null === (a = L.default.getUser(k[1])) || void 0 === a ? void 0 : a.username,
+                if (2 === k.length) return C.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_DOUBLE.format({
+                    firstUsername: null === (s = F.default.getUser(k[0])) || void 0 === s ? void 0 : s.username,
+                    secondUsername: null === (a = F.default.getUser(k[1])) || void 0 === a ? void 0 : a.username,
                     emojiNames: p
                 });
-                else return U.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_MULTIPLE.format({
-                    firstUsername: null === (o = L.default.getUser(k[0])) || void 0 === o ? void 0 : o.username,
-                    secondUsername: null === (y = L.default.getUser(k[1])) || void 0 === y ? void 0 : y.username,
+                else return C.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_MULTIPLE.format({
+                    firstUsername: null === (o = F.default.getUser(k[0])) || void 0 === o ? void 0 : o.username,
+                    secondUsername: null === (y = F.default.getUser(k[1])) || void 0 === y ? void 0 : y.username,
                     count: k.length - 2,
                     emojiNames: p
                 })
             }
+        },
+        531470: function(i, x, t) {
+            "use strict";
+            t.r(x), t.d(x, {
+                default: function() {
+                    return k
+                }
+            });
+            var s = t("37983");
+            t("884691");
+            var a = t("469563"),
+                o = t("891722"),
+                y = t("75196"),
+                k = (0, a.replaceIcon)(function(i) {
+                    let {
+                        width: x = 24,
+                        height: t = 24,
+                        color: a = "currentColor",
+                        foreground: o,
+                        ...k
+                    } = i;
+                    return (0, s.jsx)("svg", {
+                        ...(0, y.default)(k),
+                        width: x,
+                        height: t,
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        children: (0, s.jsx)("path", {
+                            className: o,
+                            fill: a,
+                            d: "M20 10.9378H14.2199H8.06628L10.502 8.50202L9 7L4 12L9 17L10.502 15.498L8.06628 13.0622H20V10.9378Z"
+                        })
+                    })
+                }, o.ArrowSmallLeftIcon, void 0, {
+                    size: 24
+                })
         }
     }
 ]);
-//# sourceMappingURL=7704.768be05f0ebc44490f7c.js.map
+//# sourceMappingURL=14786.f948127b41553ade279f.js.map
