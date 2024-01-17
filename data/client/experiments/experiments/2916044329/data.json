@@ -34,14 +34,14 @@
             "rollout": [
               {
                 "start": 0,
-                "end": 2500
+                "end": 1000
               }
             ]
           },
           "none": {
             "rollout": [
               {
-                "start": 2500,
+                "start": 1000,
                 "end": 10000
               }
             ]
