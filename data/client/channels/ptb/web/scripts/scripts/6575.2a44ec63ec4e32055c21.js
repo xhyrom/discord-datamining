@@ -8172,6 +8172,9 @@
                 KEEP_PERMISSIONS: "Keep Current Permissions",
                 NEVERMIND: "Never Mind",
                 GIF: "GIF",
+                NITRO_HOME_ENJOY_UPDATED_DISCORD: "Enjoy An Upgraded Discord",
+                NITRO_HOME_SHOW_UP_HOW_YOU_WANT: "Show Up The Way You Want",
+                NITRO_HOME_ALL_YOUR_NITRO_PERKS: "All Your Nitro Perks",
                 MARKETING_PAGE_CAROUSEL_TITLE: "Make Discord Yours",
                 MARKETING_PAGE_CHOOSE_PLAN_TITLE: "Choose Your Nitro",
                 MARKETING_PAGE_CHOOSE_PLAN_SUBTITLE: "Upgrade to get all the customization thangs.",
@@ -18117,7 +18120,7 @@
                 L = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259447", ", Version Hash: ").concat("73562de57799e19a20792e036fc830c57802bff5")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259452", ", Version Hash: ").concat("9748faed92b69cd60f617734360191665f0aae3d")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20395,8 +20398,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "259447", "259447"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259447")), _ = 0), _
+                let _ = parseInt((e = "259452", "259452"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259452")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35697,4 +35700,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6575.23a5916c31c9ec589aeb.js.map
+//# sourceMappingURL=6575.2a44ec63ec4e32055c21.js.map

@@ -14606,6 +14606,7 @@
         404135: function(e, t, o) {
             "use strict";
             e.exports = {
+                acronym: "acronym_fbdc79",
                 channelEmoji: "channelEmoji_eda5df",
                 channelEmojiLeftOfIcon: "channelEmojiLeftOfIcon__1d593",
                 channelEmojiRightOfIcon: "channelEmojiRightOfIcon__1e272",
