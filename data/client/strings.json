@@ -13216,6 +13216,8 @@
   "GUILD_AUTOMOD_NOTIFICATION_RAID_FALSE_ALARM": "\"Report False Alarm\"",
   "GUILD_AUTOMOD_NOTIFICATION_RAID_DMS": "\"~{dmsSent, number} DMs Detected\"",
   "GUILD_AUTOMOD_NOTIFICATION_MARK_AS_RESOLVED": "\"Mark as resolved\"",
+  "GUILD_AUTOMOD_NOTIFICATION_MENTION_RAID_TITLE": "\"Unusual Mention Activity Detected\"",
+  "GUILD_AUTOMOD_NOTIFICATION_MENTION_RAID_DESCRIPTION": "\"We're restricting some messages due to a potential mention raid.\"",
   "MEMBER_SAFETY_CHANNEL_TITLE": "\"Members\"",
   "MEMBER_SAFETY_TABLE_TITLE": "\"Recent Members\"",
   "MEMBER_SAFETY_TABLE_TITLE_SEARCH": "\"Search Results\"",
