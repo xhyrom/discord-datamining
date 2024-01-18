@@ -26871,8 +26871,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -94240,6 +94240,55 @@ html .invoiceCancelRow_a8669b {
     margin-left: 8px
 }
 
+.inviteCodeOptionContainer__7ba2a {
+    display: flex;
+    gap: 8px;
+    color: var(--white-500)
+}
+
+.radioLabelContainer__35456 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto
+}
+
+.icon__2e40c {
+    margin-right: 4px
+}
+
+.blankIcon__1dc11 {
+    width: 16px;
+    margin-right: 4px
+}
+
+.nagivateBackContainer__0421b {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 2px 0;
+    padding: 6px 8px 6px 7px;
+    border-radius: 2px;
+    cursor: pointer
+}
+
+.nagivateBackContainer__0421b:hover {
+    background-color: var(--brand-experiment-560);
+    color: var(--white-500)
+}
+
+.labelText__1eabe {
+    color: var(--text-normal)
+}
+
+.labelText__1eabe.focused__68a5e {
+    color: var(--white-500)
+}
+
+.selectedOption__07ef3 {
+    margin-top: 4px
+}
+
 .rolePopout_da0123 {
     background-color: var(--background-floating)
 }
@@ -126048,4 +126097,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e0e7ea2824b63b4f51ca.css.map*/
+/*# sourceMappingURL=app.99cd77d1f5c81ac463d9.css.map*/
