@@ -1015,6 +1015,7 @@
 
             function q(e) {
                 var t, n, a;
+                if (null == e) return [];
                 let i = r.keyBy(null !== (t = e.voice_joins) && void 0 !== t ? t : [], "channel_id"),
                     s = r.keyBy(null !== (n = e.message_sends) && void 0 !== n ? n : [], "channel_id");
                 return (null !== (a = e.channel_opens) && void 0 !== a ? a : []).map(e => {
@@ -1424,7 +1425,7 @@
                     });
                     i.default.dispatch({
                         type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
-                        quests: e.body.map(r.questWithUserStatusFromServer)
+                        quests: e.body.quests.map(r.questWithUserStatusFromServer)
                     })
                 } catch (e) {
                     i.default.dispatch({
@@ -1709,4 +1710,4 @@
         }
     }
 ]);
-//# sourceMappingURL=40876.a47161717a3a9610fcda.js.map
+//# sourceMappingURL=40876.477d9a39902b14c7bd0a.js.map
