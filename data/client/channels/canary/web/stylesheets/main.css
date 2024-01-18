@@ -26871,8 +26871,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -93481,6 +93481,14 @@ html .tabBadge__002b3 {
     line-height: 20px
 }
 
+.keybindHint_f547ed {
+    color: var(--text-normal);
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 8px 0
+}
+
 .mainCheckboxContainer__777cd {
     display: flex;
     align-items: stretch;
@@ -126111,4 +126119,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.bcf6b0734063c29e6c11.css.map*/
+/*# sourceMappingURL=app.3d289a68851b34c2d7bb.css.map*/

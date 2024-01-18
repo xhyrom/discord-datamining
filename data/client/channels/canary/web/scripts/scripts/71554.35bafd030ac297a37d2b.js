@@ -3498,18 +3498,20 @@
                         guildId: n,
                         channelId: i,
                         pid: l,
-                        sourceName: a
-                    } = e, o = (0, s.encodeStreamKey)({
+                        sourceId: a,
+                        sourceName: o
+                    } = e, d = (0, s.encodeStreamKey)({
                         streamType: t,
                         guildId: n,
                         channelId: i,
                         ownerId: c.default.getId()
-                    }), d = null != l ? N.default.getGameForPID(l) : null;
-                    u[o] = {
-                        id: null == d ? void 0 : d.id,
+                    }), E = null != l ? N.default.getGameForPID(l) : null;
+                    u[d] = {
+                        id: null == E ? void 0 : E.id,
                         pid: l,
-                        sourceName: a
-                    }, r.delete(o), r.set(o, {
+                        sourceId: a,
+                        sourceName: o
+                    }, r.delete(d), r.set(d, {
                         streamType: t,
                         guildId: n,
                         channelId: i,
@@ -4473,4 +4475,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71554.f28684722d618fe71a30.js.map
+//# sourceMappingURL=71554.35bafd030ac297a37d2b.js.map
