@@ -26608,12 +26608,13 @@
                         "Content-Range": "bytes ".concat(e.start, "-").concat(e.end - 1, "/").concat(e.totalSize)
                     };
                     for (let n = 1; n <= 3; n++) {
-                        p.log("Attempt ".concat(n, ": Uploading chunk ").concat(e.start, "-").concat(e.end - 1, " of ").concat(e.totalSize, " bytes"));
+                        p.log("Attempt ".concat(n, " for file id ").concat(this.id, " : Uploading chunk ").concat(e.start, "-").concat(e.end - 1, " of ").concat(e.totalSize, " bytes"));
                         let s = a.throttle(t => {
-                                let n = e.start + t.loaded;
-                                this.emit("progress", n, e.totalSize, n - this.loaded), this.loaded = n
-                            }, 50),
-                            i = await d.default.put({
+                            let n = e.start + t.loaded;
+                            this.emit("progress", n, e.totalSize, n - this.loaded), this.loaded = n
+                        }, 50);
+                        try {
+                            let n = await d.default.put({
                                 url: e.sessionUrl,
                                 body: e.chunk,
                                 headers: t,
@@ -26621,16 +26622,19 @@
                                 onRequestProgress: s,
                                 ...this.retryOpts()
                             });
-                        if (this.isUnsuccessfulChunkUpload(i, e.end - 1)) {
-                            p.error("Incomplete chunk upload: ".concat(i.status));
-                            continue
+                            if (n.ok) return
+                        } catch (t) {
+                            if (!this.RESUME_INCOMPLETE_CODES.includes(t.status)) throw t;
+                            if (this.isUnsuccessfulChunkUpload(t, e.end - 1)) {
+                                p.error("Incomplete chunk upload for file id ".concat(this.id, ": ").concat(t.status));
+                                continue
+                            }
+                            return
                         }
-                        if (i.ok) return
                     }
                     throw Error("Failed to upload chunk")
                 }
                 isUnsuccessfulChunkUpload(e, t) {
-                    if (!this.RESUME_INCOMPLETE_CODES.includes(e.status)) return !1;
                     if (null == e.headers.range || "" === e.headers.range) return !0;
                     let n = e.headers.range.match(/bytes=(\d+)-(\d+)/);
                     return null !== n && parseInt(n[2], 10) !== t
@@ -63342,4 +63346,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.849be7a09f0086f691a0.js.map
+//# sourceMappingURL=23303.5a775ea759b528625055.js.map
