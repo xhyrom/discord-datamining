@@ -20871,7 +20871,7 @@
 
             function I(e, t) {
                 if (!t.hasFeature(S.GuildFeatures.CREATOR_MONETIZABLE) && !t.hasFeature(S.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) return !1;
-                let n = f.default.isViewingSubscriptionRoles(t.id);
+                let n = f.default.isViewingServerShop(t.id);
                 for (let i of Object.keys(e.permissionOverwrites)) {
                     let r = t.getRole(i);
                     if (!g({
@@ -27852,9 +27852,9 @@
                     let n = this.getViewingChannels(e);
                     return null != n && n.has(t)
                 }
-                isViewingSubscriptionRoles(e) {
+                isViewingServerShop(e) {
                     var t;
-                    return null != e && (null === (t = c[e]) || void 0 === t ? void 0 : t.type) === o.ImpersonateType.ROLE_SUBSCRIPTION
+                    return null != e && (null === (t = c[e]) || void 0 === t ? void 0 : t.type) === o.ImpersonateType.SERVER_SHOP
                 }
                 getImpersonateType(e) {
                     if (null == e) return null;
@@ -27867,9 +27867,8 @@
                     if (null == t) return l.GuildSettingsSections.ROLES;
                     switch (t.type) {
                         case o.ImpersonateType.ROLES:
+                        case o.ImpersonateType.SERVER_SHOP:
                             return t.returnToSection;
-                        case o.ImpersonateType.ROLE_SUBSCRIPTION:
-                            return l.GuildSettingsSections.ROLE_SUBSCRIPTIONS;
                         case o.ImpersonateType.NEW_MEMBER:
                             return l.GuildSettingsSections.ONBOARDING;
                         default:
@@ -27957,7 +27956,7 @@
                 ImpersonateType: function() {
                     return i
                 }
-            }), (r = i || (i = {})).ROLES = "ROLES", r.NEW_MEMBER = "NEW_MEMBER", r.ROLE_SUBSCRIPTION = "ROLE_SUBSCRIPTION"
+            }), (r = i || (i = {})).ROLES = "ROLES", r.NEW_MEMBER = "NEW_MEMBER", r.SERVER_SHOP = "SERVER_SHOP"
         },
         886167: function(e, t, n) {
             "use strict";
@@ -50147,7 +50146,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "259807"
+                                build_number: "259813"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63552,4 +63551,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.387e8c8f57607dadf202.js.map
+//# sourceMappingURL=78033.769a17cd9e710fa4c235.js.map

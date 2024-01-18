@@ -25761,6 +25761,11 @@ html .progress__4ef76 {
     flex: 1
 }
 
+.draftBadge_a1ae8e {
+    color: var(--primary-860);
+    letter-spacing: .02em
+}
+
 @value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
 
 .draftBadgeContainer__54085 {
@@ -25773,11 +25778,6 @@ html .progress__4ef76 {
     z-index: 1;
     overflow: hidden;
     border-radius: 8px
-}
-
-.draftBadge__81bcc {
-    color: var(--primary-860);
-    letter-spacing: .02em
 }
 
 .tierName_ba33cc {
@@ -26871,8 +26871,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -27461,6 +27461,12 @@ html .progress__4ef76 {
     background-color: rgba(43, 45, 49, .7);
     white-space: nowrap;
     transition: background-color.2s ease-in-out
+}
+
+.draftBadge_dbf179 {
+    position: absolute;
+    bottom: 10px;
+    right: 8px
 }
 
 .productThumbnailContainer_ca0cb3:hover .purchaseToUnlockBadge__9cccf {
@@ -51596,6 +51602,10 @@ html .progress__4ef76 {
 .tabBarItem_fe6b2e {
     padding-bottom: 16px;
     margin-bottom: -2px
+}
+
+.previewButton_ba9b26 {
+    margin-left: auto
 }
 
 .table_c056b8 {
@@ -126097,4 +126107,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.99cd77d1f5c81ac463d9.css.map*/
+/*# sourceMappingURL=app.5de386182dfe31f85edc.css.map*/
