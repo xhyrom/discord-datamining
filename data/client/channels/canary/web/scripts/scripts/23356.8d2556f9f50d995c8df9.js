@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23303"], {
+    ["23356"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -29752,7 +29752,7 @@
                 _getEmbeddedActivities() {
                     let e = u.default.getEmbeddedActivitiesForChannel(this.channelId),
                         t = u.default.getSelfEmbeddedActivityForChannel(this.channelId);
-                    return null == t ? e : (0, a.uniqBy)([...e, t], "application_id")
+                    return null == t ? e : (0, a.uniqBy)([...e, t], e => e.applicationId)
                 }
                 _getParticipantsForEmbeddedActivities() {
                     return this._getEmbeddedActivities().map((e, t) => {
@@ -63346,4 +63346,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.bde5f96c56f838b3426c.js.map
+//# sourceMappingURL=23356.8d2556f9f50d995c8df9.js.map
