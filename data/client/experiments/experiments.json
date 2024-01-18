@@ -12742,73 +12742,7 @@
               ]
             }
           },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 2000,
-                  "end": 3800
-                },
-                {
-                  "start": 3800,
-                  "end": 3900
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "start": 4000,
-                  "end": 5800
-                },
-                {
-                  "start": 5800,
-                  "end": 5900
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 1900,
-                  "end": 2000
-                },
-                {
-                  "start": 3900,
-                  "end": 4000
-                },
-                {
-                  "start": 5900,
-                  "end": 6000
-                },
-                {
-                  "start": 6000,
-                  "end": 8000
-                },
-                {
-                  "start": 8000,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 3,
-              "max_count": 30
-            }
-          ]
+          "filters": []
         }
       ],
       "revision": 7,
