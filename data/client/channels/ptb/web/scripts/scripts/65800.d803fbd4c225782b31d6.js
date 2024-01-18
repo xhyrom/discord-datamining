@@ -686,6 +686,7 @@
                     onMouseMove: s,
                     onMouseDown: o,
                     onMouseLeave: d,
+                    onDoubleClick: c,
                     children: [(0, a.jsx)("div", {
                         className: i(w.topControls),
                         children: (0, a.jsx)(v.PictureInPictureHeader, {
@@ -1915,4 +1916,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65800.2cad628b3c35a9159a3d.js.map
+//# sourceMappingURL=65800.d803fbd4c225782b31d6.js.map
