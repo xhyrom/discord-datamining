@@ -9239,7 +9239,9 @@
                             let _ = a(T);
                             return _.alpha(r).hex()
                         }
-                    }
+                    },
+                    adjustColorSaturation: (_, E, e) => (0, i.transformColorForReducedSaturation)(_, e, E),
+                    adjustColorContrast: (_, E, e, I) => (0, i.transformColorContrast)(_, e, I, E)
                 }
             };
             var l = C
@@ -13565,4 +13567,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.90af7e3bd3dd0b284aca.js.map
+//# sourceMappingURL=7273.e752f462db8cd02b8425.js.map
