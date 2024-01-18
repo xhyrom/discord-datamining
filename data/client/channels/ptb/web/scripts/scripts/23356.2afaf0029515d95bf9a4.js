@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23303"], {
+    ["23356"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -39951,7 +39951,7 @@
                 let i = (0, r.isCreatorMonetizationEnabledGuild)(s),
                     a = s.hasFeature(l.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
                 if (i && a) return !0;
-                let u = n.isViewingSubscriptionRoles(e);
+                let u = n.isViewingServerShop(e);
                 return !!u || !1
             }
 
@@ -63317,4 +63317,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.e4746355b02abb351839.js.map
+//# sourceMappingURL=23356.2afaf0029515d95bf9a4.js.map
