@@ -30,18 +30,18 @@
                         var t;
                         return null === (t = l.default.getUser(null == e ? void 0 : e.id)) || void 0 === t ? void 0 : t.avatarDecoration
                     }), {
-                        pendingAvatarDecoration: O
+                        pendingAvatarDecoration: N
                     } = (0, u.default)({
                         isTryItOut: _
-                    }), N = A && (d || !I && !E), R = s && void 0 !== O && void 0 !== f && f === (null == e ? void 0 : e.id) ? O : null != v ? v : null == e ? void 0 : e.avatarDecoration, P = n.useMemo(() => (0, T.getAvatarDecorationURL)({
+                    }), O = A && (d || !I && !E), R = s && void 0 !== N && void 0 !== f && f === (null == e ? void 0 : e.id) ? N : null != v ? v : null == e ? void 0 : e.avatarDecoration, P = n.useMemo(() => (0, T.getAvatarDecorationURL)({
                         avatarDecoration: void 0 !== S ? S : R,
-                        canAnimate: N,
+                        canAnimate: O,
                         size: r
-                    }), [R, N, r, S]), g = n.useCallback(() => C(!0), []), U = n.useCallback(() => C(!1), []);
+                    }), [R, O, r, S]), g = n.useCallback(() => C(!0), []), U = n.useCallback(() => C(!1), []);
                     return {
                         avatarPlaceholderSrc: c,
                         avatarDecorationSrc: P,
-                        isAvatarDecorationAnimating: N,
+                        isAvatarDecorationAnimating: O,
                         eventHandlers: {
                             onMouseEnter: g,
                             onMouseLeave: U
@@ -157,10 +157,10 @@
                     return v
                 },
                 getCollectiblesAssetURL: function() {
-                    return O
+                    return N
                 },
                 getProfileEffectsFromPurchases: function() {
-                    return N
+                    return O
                 },
                 getProfileEffectsFromCategories: function() {
                     return R
@@ -222,7 +222,7 @@
                 },
                 f = t => I(t, o.CollectiblesItemType.AVATAR_DECORATION),
                 v = t => A(t, o.CollectiblesItemType.AVATAR_DECORATION),
-                O = (t, e) => {
+                N = (t, e) => {
                     var r;
                     let {
                         CDN_HOST: n,
@@ -232,10 +232,10 @@
                     let a = c.Endpoints.APPLICATION_ASSET(c.COLLECTIBLES_APPLICATION_ID, t, l);
                     return "".concat(location.protocol).concat(i).concat(a, "?size=").concat(o)
                 },
-                N = t => I(t, o.CollectiblesItemType.PROFILE_EFFECT),
+                O = t => I(t, o.CollectiblesItemType.PROFILE_EFFECT),
                 R = t => A(t, o.CollectiblesItemType.PROFILE_EFFECT),
                 P = (t, e) => {
-                    let r = N(e),
+                    let r = O(e),
                         n = R(t).filter(t => {
                             let {
                                 id: e
@@ -402,20 +402,20 @@
                 A = r("446674"),
                 f = r("913144"),
                 v = r("49111");
-            let O = v.FormStates.CLOSED,
-                N = {},
+            let N = v.FormStates.CLOSED,
+                O = {},
                 R = !1;
 
             function P() {
-                O = v.FormStates.OPEN, N = {}
+                N = v.FormStates.OPEN, O = {}
             }
 
             function g() {
-                O = v.FormStates.CLOSED, N = {}
+                N = v.FormStates.CLOSED, O = {}
             }
 
             function U() {
-                F(), m(), N = {}
+                F(), m(), O = {}
             }
 
             function F() {
@@ -431,10 +431,10 @@
             }
             class D extends A.default.Store {
                 getFormState() {
-                    return O
+                    return N
                 }
                 getErrors() {
-                    return N
+                    return O
                 }
                 showNotice() {
                     return void 0 !== n || void 0 !== l || void 0 !== a || void 0 !== T || void 0 !== c || void 0 !== E || void 0 !== o || void 0 !== u || void 0 !== i
@@ -523,12 +523,12 @@
                     U(), L(), g()
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT: function() {
-                    O = v.FormStates.SUBMITTING, N = {}
+                    N = v.FormStates.SUBMITTING, O = {}
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: function(t) {
                     var e;
-                    if (O !== v.FormStates.SUBMITTING) return !1;
-                    O = v.FormStates.OPEN, N = null !== (e = t.errors) && void 0 !== e ? e : {}
+                    if (N !== v.FormStates.SUBMITTING) return !1;
+                    N = v.FormStates.OPEN, O = null !== (e = t.errors) && void 0 !== e ? e : {}
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: function(t) {
                     let {
@@ -621,7 +621,7 @@
                     s = e
                 },
                 USER_SETTINGS_CLEAR_ERRORS: function() {
-                    N = {}
+                    O = {}
                 },
                 USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: F,
                 USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: m,
@@ -648,7 +648,7 @@
                 CollectiblesCategorySkuId: function() {
                     return n
                 }
-            }), r("222007"), (i = n || (n = {})).FANTASY = "1144003461608906824", i.ANIME = "1144302037593497701", i.BREAKFAST = "1144054000099012659", i.DISXCORE = "1144058340327047249", i.HALLOWEEN = "1157410718711304313", i.FALL = "1157406994873991284", i.WINTER = "1174459301239197856", i.MONSTERS = "1179493515038818325"
+            }), r("222007"), (i = n || (n = {})).FANTASY = "1144003461608906824", i.ANIME = "1144302037593497701", i.BREAKFAST = "1144054000099012659", i.DISXCORE = "1144058340327047249", i.HALLOWEEN = "1157410718711304313", i.FALL = "1157406994873991284", i.WINTER = "1174459301239197856", i.MONSTERS = "1179493515038818325", i.CYBERPUNK = "1197342727608746044"
         },
         265586: function(t, e, r) {
             "use strict";
@@ -661,4 +661,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43870.9c9752cbddc06795e296.js.map
+//# sourceMappingURL=43870.9ee18b086d6c3064dc1f.js.map
