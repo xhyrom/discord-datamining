@@ -50146,7 +50146,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "259826"
+                                build_number: "259829"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -54968,17 +54968,11 @@
                 getManySyncUnsafe(e) {
                     return this.table.getManySyncUnsafe([], e)
                 }
-                getKvEntriesSyncUnsafe() {
-                    return this.table.getKvEntriesSyncUnsafe()
-                }
                 getMapEntriesSyncUnsafe() {
                     return this.table.getMapEntriesSyncUnsafe()
                 }
                 getIdsSyncUnsafe() {
                     return this.table.getChildIdsSyncUnsafe([])
-                }
-                getParentIdSyncUnsafe(e) {
-                    return this.table.getParentIdSyncUnsafe([null, e])
                 }
                 constructor(e, t, n) {
                     this.table = new r.Table([e], t, n)
@@ -55188,17 +55182,11 @@
                 getManySyncUnsafe(e) {
                     return this.table.getManySyncUnsafe([], e)
                 }
-                getKvEntriesSyncUnsafe() {
-                    return this.table.getKvEntriesSyncUnsafe()
-                }
                 getMapEntriesSyncUnsafe() {
                     return this.table.getMapEntriesSyncUnsafe()
                 }
                 getIdsSyncUnsafe() {
                     return this.table.getChildIdsSyncUnsafe([])
-                }
-                getParentIdSyncUnsafe(e) {
-                    return this.table.getParentIdSyncUnsafe([null, e])
                 }
                 static cell(e, t) {
                     return {
@@ -55308,9 +55296,6 @@
                 getManySyncUnsafe(e, t) {
                     return this.table.getManySyncUnsafe([e], t)
                 }
-                getKvEntriesSyncUnsafe() {
-                    return this.table.getKvEntriesSyncUnsafe()
-                }
                 getMapEntriesSyncUnsafe() {
                     return this.table.getMapEntriesSyncUnsafe()
                 }
@@ -55319,9 +55304,6 @@
                 }
                 getGuildIdsSyncUnsafe() {
                     return this.table.getChildIdsSyncUnsafe([])
-                }
-                getGuildIdSyncUnsafe(e) {
-                    return this.table.getParentIdSyncUnsafe([null, e])
                 }
                 constructor(e, t, n) {
                     this.table = new r.Table([e], t, n)
@@ -55429,9 +55411,6 @@
                 getManySyncUnsafe(e, t) {
                     return this.table.getManySyncUnsafe([e], t)
                 }
-                getKvEntriesSyncUnsafe() {
-                    return this.table.getKvEntriesSyncUnsafe()
-                }
                 getMapEntriesSyncUnsafe() {
                     return this.table.getMapEntriesSyncUnsafe()
                 }
@@ -55440,9 +55419,6 @@
                 }
                 getGuildIdsSyncUnsafe() {
                     return this.table.getChildIdsSyncUnsafe([])
-                }
-                getGuildIdSyncUnsafe(e) {
-                    return this.table.getParentIdSyncUnsafe([null, e])
                 }
                 static cell(e, t, n) {
                     return {
@@ -55777,14 +55753,6 @@
                         limit: null == t ? void 0 : t.limit
                     })
                 }
-                getKvEntriesSyncUnsafe() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-                    return this.database.executeSync({
-                        type: "kv.get_kv_entries",
-                        table: this.tableId,
-                        key: (0, r.combineKeyPrefix)(this.prefix, e)
-                    })
-                }
                 getMapEntriesSyncUnsafe() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
                     return this.database.executeSync({
@@ -55797,22 +55765,6 @@
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
                     return this.database.executeSync({
                         type: "kv.get_child_ids",
-                        table: this.tableId,
-                        key: (0, r.combineKeyPrefix)(this.prefix, e)
-                    })
-                }
-                getParentIdSyncUnsafe() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-                    return this.database.executeSync({
-                        type: "kv.get_parent_id",
-                        table: this.tableId,
-                        key: (0, r.combineKey)(this.prefix, e)
-                    })
-                }
-                deleteSyncUnsafe() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-                    return this.database.executeSync({
-                        type: "kv.delete_many",
                         table: this.tableId,
                         key: (0, r.combineKeyPrefix)(this.prefix, e)
                     })
@@ -63551,4 +63503,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.e8f0ba332019fea84ca1.js.map
+//# sourceMappingURL=78033.93346d294c3f87b815ea.js.map
