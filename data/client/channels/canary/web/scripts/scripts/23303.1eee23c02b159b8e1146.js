@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23356"], {
+    ["23303"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -43234,8 +43234,8 @@
             function o(e) {
                 let {
                     guildStore: t
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = null != t ? t : s.default;
-                return 1 === n.getGuildCount() && null != n.getGuild(a.MIDJOURNEY_GUILD_ID) && (0, r.isEligibleForMidjourneyOnboarding)(e)
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = null != t ? t : s.default, i = n.getGuild(a.MIDJOURNEY_GUILD_ID), o = (null == i ? void 0 : i.joinedAt) instanceof Date && Date.now() - i.joinedAt.getTime() <= 36e5;
+                return 1 === n.getGuildCount() && o && (0, r.isEligibleForMidjourneyOnboarding)(e)
             }
 
             function d(e) {
@@ -63317,4 +63317,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.2afaf0029515d95bf9a4.js.map
+//# sourceMappingURL=23303.1eee23c02b159b8e1146.js.map
