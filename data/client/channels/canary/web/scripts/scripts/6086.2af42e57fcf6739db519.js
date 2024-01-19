@@ -663,7 +663,7 @@
             }
 
             function c() {
-                !__OVERLAY__ && (clearTimeout(u), u = setTimeout(() => _(), f))
+                !__OVERLAY__ && (clearTimeout(u), u = setTimeout(() => p({}), f))
             }
             async function _(e, t) {
                 null == e || e === r.ME ? await a.default.patch({
@@ -827,4 +827,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6086.b9e0c5f64449264a09f2.js.map
+//# sourceMappingURL=6086.2af42e57fcf6739db519.js.map
