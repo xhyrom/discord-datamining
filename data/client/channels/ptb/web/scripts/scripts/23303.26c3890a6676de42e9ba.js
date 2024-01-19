@@ -61457,8 +61457,9 @@
                         s = "webp"
                 }
                 "webp" === s && !T && (s = "png");
-                let o = (i = "https:", "https:");
-                return r = null != a ? "".concat(o, "//").concat(a, "/app-assets/").concat(e, "/store/").concat(t.id, ".").concat(s) : "".concat(o).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(y.Endpoints.STORE_ASSET(e, t.id, s)), null != n && (r += "?size=".concat((0, _.getBestMediaProxySize)(n * (0, _.getDevicePixelRatio)()))), r
+                let o = "string" == typeof t ? t : t.id,
+                    d = (i = "https:", "https:");
+                return r = null != a ? "".concat(d, "//").concat(a, "/app-assets/").concat(e, "/store/").concat(o, ".").concat(s) : "".concat(d).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(y.Endpoints.STORE_ASSET(e, o, s)), null != n && (r += "?size=".concat((0, _.getBestMediaProxySize)(n * (0, _.getDevicePixelRatio)()))), r
             }
             async function D(e) {
                 var t, n, s, i;
@@ -63343,4 +63344,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.20241f761b0a250af333.js.map
+//# sourceMappingURL=23303.26c3890a6676de42e9ba.js.map
