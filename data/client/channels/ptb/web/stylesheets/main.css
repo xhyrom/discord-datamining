@@ -45789,7 +45789,8 @@ html .progress__4ef76 {
 
 .modeSelected__487d6 .acronym_fbdc79,
 .modeSelected__487d6:hover .acronym_fbdc79 {
-    background: var(--brand-experiment)
+    background: var(--brand-experiment);
+    color: var(--white)
 }
 
 .modeSelected__487d6 .link__95dc0,
@@ -126172,4 +126173,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.efcb8c8bc767b60fbdd8.css.map*/
+/*# sourceMappingURL=app.73efc54ea898338afac6.css.map*/
