@@ -1,27 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-08_guild_member_bulk_ban_experiment",
-    "label": "Bulk Banning Guild Members Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Bulk Banning Enabled"
-    ],
     "hash": 2119968730,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "enabled"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [

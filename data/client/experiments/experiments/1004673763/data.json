@@ -1,27 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-12_guild_members_table_safety_signal_filters",
-    "label": "Guild Members Table Safety Signals",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Safety Signals Enabled"
-    ],
     "hash": 1004673763,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "enabled"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [

@@ -1,27 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2024-01_guild_members_table_additional_filtering",
-    "label": "Guild Members Table Additional Filtering",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Additional filtering enabled"
-    ],
     "hash": 1640304679,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "enabled"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [
