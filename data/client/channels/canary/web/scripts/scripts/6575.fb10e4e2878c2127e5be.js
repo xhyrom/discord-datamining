@@ -899,6 +899,7 @@
                 EMBEDDED_ACTIVITIES_DEVELOPER_ACTIVITY: "In Development",
                 EMBEDDED_ACTIVITIES_INTERACTION_EMBED_ENDED: "Activity has ended.",
                 EMBEDDED_ACTIVITIES_INTERACTION_EMBED_NO_PRESENCE: "Activity has started.",
+                EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE: "You cannot launch this activity in a server with more than 25 members",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED: "Activity has ended",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity has started",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION: "You do not have permissions to join this Voice Channel.",
@@ -18081,7 +18082,7 @@
                 L = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259936", ", Version Hash: ").concat("31ac322917114902bea88b43a1a4e6805792e3fd")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259957", ", Version Hash: ").concat("77b72b6496ef1c7296700e26346a59f425942359")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20359,8 +20360,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "259936", "259936"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259936")), _ = 0), _
+                let _ = parseInt((e = "259957", "259957"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259957")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35629,4 +35630,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6575.3cc62cdcc47e65a47779.js.map
+//# sourceMappingURL=6575.fb10e4e2878c2127e5be.js.map
