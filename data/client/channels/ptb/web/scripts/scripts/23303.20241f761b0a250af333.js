@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23356"], {
+    ["23303"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -26015,7 +26015,7 @@
             let A = e => 0 === e.type,
                 D = e => 1 === e.type,
                 N = e => A(e) ? e.message.nonce : D(e) ? e.message.messageId : e.message.data.id,
-                O = [1 * E.default.Millis.SECOND, 5 * E.default.Millis.SECOND];
+                O = [1 * E.default.Millis.SECOND, 5 * E.default.Millis.MINUTE];
             class b extends y.default {
                 isFull() {
                     return this.queue.length >= this.maxSize
@@ -63343,4 +63343,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.9c7bbccdee684e7717aa.js.map
+//# sourceMappingURL=23303.20241f761b0a250af333.js.map
