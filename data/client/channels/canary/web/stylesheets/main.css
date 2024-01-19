@@ -7491,19 +7491,6 @@
     background-color: var(--background-secondary)
 }
 
-.actionButton_dac582 {
-    min-height: 32px
-}
-
-.actionRightButton__8ac12 {
-    margin-left: 10px
-}
-
-.pendingIncoming_c83b56 {
-    display: flex;
-    flex-grow: 0
-}
-
 .divider__2bbbc {
     margin-top: 12px;
     height: 1px;
@@ -8696,14 +8683,6 @@
     padding-right: 8px;
     width: 16px;
     height: 16px
-}
-
-.addFriendSection__413d3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px
 }
 
 .referencePosition__76f5a {
@@ -120900,6 +120879,19 @@ div.nagbar_c731ff {
     height: 100%
 }
 
+.actionButton_dac582 {
+    min-height: 32px
+}
+
+.actionRightButton__8ac12 {
+    margin-left: 10px
+}
+
+.pendingIncoming_c83b56 {
+    display: flex;
+    flex-grow: 0
+}
+
 .header__7da4f {
     position: relative
 }
@@ -126175,4 +126167,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.9967aae1c38913142ae5.css.map*/
+/*# sourceMappingURL=app.1fad90e2963f391fe51f.css.map*/
