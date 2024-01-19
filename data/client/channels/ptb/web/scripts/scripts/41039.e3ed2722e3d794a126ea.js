@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["78033"], {
+    ["41039"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -49993,7 +49993,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260140"
+                                build_number: "260155"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -54771,6 +54771,9 @@
                 get prefix() {
                     return this.table.prefix
                 }
+                withoutLogging() {
+                    return new s(this.originalPrefix, this.table.tableId, this.table.database, !1)
+                }
                 get(e) {
                     return this.table.get([e])
                 }
@@ -54803,8 +54806,8 @@
                 delete(e) {
                     return 0 == arguments.length ? this.table.delete() : this.table.delete([e])
                 }
-                transaction(e) {
-                    return this.table.transaction(t => e(new a(t)))
+                transaction(e, t) {
+                    return this.table.transaction(t => e(new a(t)), t)
                 }
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
@@ -54821,8 +54824,8 @@
                 getIdsSyncUnsafe() {
                     return this.table.getChildIdsSyncUnsafe([])
                 }
-                constructor(e, t, n) {
-                    this.table = new r.Table([e], t, n)
+                constructor(e, t, n, i = !0) {
+                    this.originalPrefix = e, this.table = new r.Table([e], t, n, i)
                 }
             }
             class a {
@@ -54878,19 +54881,20 @@
                     }))
                 }
                 execute(e, t) {
-                    var n;
                     if (null == this.raw) throw Error("database is no longer open (database: ".concat(this));
-                    return i.default.timeAsync("\uD83D\uDCBE", "db: ".concat(null != t ? t : e.type, " ").concat(null !== (n = e.table) && void 0 !== n ? n : ""), () => s.Runtime.executeAsync(null != t ? t : e.type, t => {
-                        this.raw.execute(t, {
-                            ...e,
-                            handle: 0
-                        })
-                    }))
+                    let n = "key" in e ? e.key[0] : e.table,
+                        r = () => s.Runtime.executeAsync(null != t ? t : e.type, t => {
+                            this.raw.execute(t, {
+                                ...e,
+                                handle: 0
+                            })
+                        });
+                    return null === t ? r() : i.default.timeAsync("\uD83D\uDCBE", "".concat(null != t ? t : e.type, " ").concat(null != n ? n : ""), r)
                 }
                 executeSync(e) {
-                    var t;
                     if (null == this.raw) throw Error("database is no longer open (database: ".concat(this));
-                    return i.default.time("\uD83D\uDCBE", "DB ".concat(e.type, " ").concat(null !== (t = e.table) && void 0 !== t ? t : "", " (sync)"), () => this.raw.execute(null, {
+                    let t = "key" in e ? e.key[0] : e.table;
+                    return i.default.time("\uD83D\uDCBE", "SYNC: ".concat(e.type, " ").concat(null != t ? t : ""), () => this.raw.execute(null, {
                         ...e,
                         handle: 0
                     }, {
@@ -54930,19 +54934,13 @@
                 state() {
                     return this.lastState
                 }
-                transaction(e) {
-                    let t = new l(this),
-                        n = e(t);
-                    return Promise.resolve(n).then(() => {
-                        if (!(t.operations.length > 0)) return Promise.resolve();
-                        {
-                            let e = "transaction (x".concat(t.operations.length, ")");
-                            return this.execute({
-                                type: "db.transaction",
-                                operations: t.complete()
-                            }, e)
-                        }
-                    })
+                transaction(e, t) {
+                    let n = new l(this),
+                        i = e(n);
+                    return Promise.resolve(i).then(() => n.operations.length > 0 ? this.execute({
+                        type: "db.transaction",
+                        operations: n.complete()
+                    }, t) : Promise.resolve())
                 }
                 toString() {
                     return "[Database #".concat(this.handle, ": ").concat(this.name, "]")
@@ -54982,6 +54980,9 @@
                 get prefix() {
                     return this.table.prefix
                 }
+                withoutLogging() {
+                    return new s(this.originalPrefix, this.table.tableId, this.table.database, !1)
+                }
                 get(e) {
                     return this.table.get([e])
                 }
@@ -55005,20 +55006,20 @@
                 }
                 put(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.ConflictOptions.Replace;
-                    return this.transaction(n => n.put(e, t))
+                    return this.transaction(n => n.put(e, t), "".concat(this.prefix, " put"))
                 }
                 putAll(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.ConflictOptions.Replace;
-                    return this.transaction(n => n.putAll(e, t))
+                    return this.transaction(n => n.putAll(e, t), "".concat(this.prefix, " putAll"))
                 }
                 replaceAll(e) {
-                    return this.transaction(t => t.replaceAll(e))
+                    return this.transaction(t => t.replaceAll(e), "".concat(this.prefix, " replaceAll"))
                 }
                 delete(e) {
-                    return this.transaction(t => t.delete(e))
+                    return this.transaction(t => t.delete(e), "".concat(this.prefix, " delete"))
                 }
-                transaction(e) {
-                    return this.table.transaction(t => e(new a(t)))
+                transaction(e, t) {
+                    return this.table.transaction(t => e(new a(t)), t)
                 }
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
@@ -55042,8 +55043,8 @@
                         generation: t
                     }
                 }
-                constructor(e, t, n) {
-                    this.table = new r.Table([e], t, n)
+                constructor(e, t, n, i = !0) {
+                    this.originalPrefix = e, this.table = new r.Table([e], t, n, i)
                 }
             }
             class a {
@@ -55081,6 +55082,9 @@
             class s {
                 get prefix() {
                     return this.table.prefix
+                }
+                withoutLogging() {
+                    return new s(this.originalPrefix, this.table.tableId, this.table.database, !1)
                 }
                 get(e, t) {
                     return this.table.get([e, t])
@@ -55131,8 +55135,8 @@
                 deleteGeneration(e, t) {
                     return this.table.deleteGeneration([], e, t)
                 }
-                transaction(e) {
-                    return this.table.transaction(t => e(new a(t)))
+                transaction(e, t) {
+                    return this.table.transaction(t => e(new a(t)), t)
                 }
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
@@ -55152,8 +55156,8 @@
                 getGuildIdsSyncUnsafe() {
                     return this.table.getChildIdsSyncUnsafe([])
                 }
-                constructor(e, t, n) {
-                    this.table = new r.Table([e], t, n)
+                constructor(e, t, n, i = !0) {
+                    this.originalPrefix = e, this.table = new r.Table([e], t, n, i)
                 }
             }
             class a {
@@ -55205,6 +55209,9 @@
                 get prefix() {
                     return this.table.prefix
                 }
+                withoutLogging() {
+                    return new s(this.originalPrefix, this.table.tableId, this.table.database, !1)
+                }
                 get(e, t) {
                     return this.table.get([e, t])
                 }
@@ -55231,23 +55238,23 @@
                 }
                 put(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i.ConflictOptions.Replace;
-                    return this.transaction(i => i.put(e, t, n))
+                    return this.transaction(i => i.put(e, t, n), "".concat(this.prefix, " put"))
                 }
                 putAll(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i.ConflictOptions.Replace;
-                    return this.transaction(i => i.putAll(e, t, n))
+                    return this.transaction(i => i.putAll(e, t, n), "".concat(this.prefix, " putAll"))
                 }
                 replaceAll(e, t) {
-                    return this.transaction(n => n.replaceAll(e, t))
+                    return this.transaction(n => n.replaceAll(e, t), "".concat(this.prefix, " replaceAll"))
                 }
                 delete(e, t) {
-                    return this.transaction(n => n.delete(e, t))
+                    return this.transaction(n => n.delete(e, t), "".concat(this.prefix, " delete"))
                 }
                 deleteGeneration(e, t) {
-                    return this.transaction(n => n.deleteGeneration(e, t))
+                    return this.transaction(n => n.deleteGeneration(e, t), "".concat(this.prefix, " deleteGeneration"))
                 }
-                transaction(e) {
-                    return this.table.transaction(t => e(new a(t)))
+                transaction(e, t) {
+                    return this.table.transaction(t => e(new a(t)), t)
                 }
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
@@ -55274,8 +55281,8 @@
                         generation: n
                     }
                 }
-                constructor(e, t, n) {
-                    this.table = new r.Table([e], t, n)
+                constructor(e, t, n, i = !0) {
+                    this.originalPrefix = e, this.table = new r.Table([e], t, n, i)
                 }
             }
             class a {
@@ -55332,6 +55339,9 @@
                 get prefix() {
                     return this.table.prefix
                 }
+                withoutLogging() {
+                    return new s(this.originalPrefix, this.table.tableId, this.table.database, !1)
+                }
                 get(e, t, n) {
                     return this.table.get([e, t, l(n)])
                 }
@@ -55368,14 +55378,14 @@
                 deleteMessage(e, t, n) {
                     return this.table.delete([e, t, l(n)])
                 }
-                transaction(e) {
-                    return this.table.transaction(t => e(new a(t)))
+                transaction(e, t) {
+                    return this.table.transaction(t => e(new a(t)), t)
                 }
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
                 }
-                constructor(e, t, n) {
-                    this.table = new r.Table([e], t, n)
+                constructor(e, t, n, i = !0) {
+                    this.originalPrefix = e, this.table = new r.Table([e], t, n, i)
                 }
             }
             class a {
@@ -55480,7 +55490,7 @@
                         key: (0, r.combineKeyPrefix)(this.prefix, e),
                         ordering: null == t ? void 0 : t.ordering,
                         limit: null == t ? void 0 : t.limit
-                    })
+                    }, this.defaultDebugTag)
                 }
                 getRange(e, t, n) {
                     let i = (0, r.combineKey)(this.prefix, e),
@@ -55491,7 +55501,7 @@
                         range: [i, s],
                         ordering: null == n ? void 0 : n.ordering,
                         limit: null == n ? void 0 : n.limit
-                    })
+                    }, this.defaultDebugTag)
                 }
                 getKvEntries() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
@@ -55499,7 +55509,7 @@
                         type: "kv.get_kv_entries",
                         table: this.tableId,
                         key: (0, r.combineKeyPrefix)(this.prefix, e)
-                    })
+                    }, this.defaultDebugTag)
                 }
                 getMapEntries() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
@@ -55507,7 +55517,7 @@
                         type: "kv.get_map_entries",
                         table: this.tableId,
                         key: (0, r.combineKeyPrefix)(this.prefix, e)
-                    })
+                    }, this.defaultDebugTag)
                 }
                 getChildIds() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
@@ -55515,7 +55525,7 @@
                         type: "kv.get_child_ids",
                         table: this.tableId,
                         key: (0, r.combineKeyPrefix)(this.prefix, e)
-                    })
+                    }, this.defaultDebugTag)
                 }
                 getParentId() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
@@ -55523,7 +55533,7 @@
                         type: "kv.get_parent_id",
                         table: this.tableId,
                         key: (0, r.combineKey)(this.prefix, e)
-                    })
+                    }, this.defaultDebugTag)
                 }
                 put(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.ConflictOptions.Replace;
@@ -55532,7 +55542,7 @@
                         table: this.tableId,
                         cell: s(e, this.prefix),
                         overwrite: t === i.ConflictOptions.Replace
-                    })
+                    }, this.defaultDebugTag)
                 }
                 putAll(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.ConflictOptions.Replace;
@@ -55541,12 +55551,12 @@
                         table: this.tableId,
                         cells: a(e, this.prefix),
                         overwrite: t === i.ConflictOptions.Replace
-                    })
+                    }, this.defaultDebugTag)
                 }
                 replaceAll(e) {
                     return this.transaction(t => {
                         t.delete(), t.putAll(e)
-                    })
+                    }, this.defaultDebugTag)
                 }
                 delete() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
@@ -55554,7 +55564,7 @@
                         type: "kv.delete_many",
                         table: this.tableId,
                         key: (0, r.combineKeyPrefix)(this.prefix, e)
-                    })
+                    }, this.defaultDebugTag)
                 }
                 deleteRange(e, t) {
                     let n = (0, r.combineKey)(this.prefix, e),
@@ -55563,7 +55573,7 @@
                         type: "kv.delete_range",
                         table: this.tableId,
                         range: [n, i]
-                    })
+                    }, this.defaultDebugTag)
                 }
                 deleteGeneration() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
@@ -55575,10 +55585,10 @@
                         key: (0, r.combineKeyPrefix)(this.prefix, e),
                         generation: n,
                         comparer: t
-                    })
+                    }, this.defaultDebugTag)
                 }
-                transaction(e) {
-                    return this.database.transaction(t => e(new l(this.prefix, this.tableId, t)))
+                transaction(e, t) {
+                    return this.database.transaction(t => e(new l(this.prefix, this.tableId, t)), t)
                 }
                 upgradeTransaction(e) {
                     return new l(this.prefix, this.tableId, e)
@@ -55616,14 +55626,14 @@
                         key: (0, r.combineKeyPrefix)(this.prefix, e)
                     })
                 }
-                constructor(e, t, n) {
+                constructor(e, t, n, i) {
                     this.messages = {
                         getLatest: e => this.database.execute({
                             type: "messages.get_latest",
                             table: this.tableId,
                             guildId: e
-                        })
-                    }, this.prefix = e, this.tableId = t, this.database = n
+                        }, this.defaultDebugTag)
+                    }, this.prefix = e, this.tableId = t, this.database = n, this.defaultDebugTag = i ? void 0 : null
                 }
             }
             class l {
@@ -63350,4 +63360,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78033.b990312a6bfbe8ce40c2.js.map
+//# sourceMappingURL=41039.e3ed2722e3d794a126ea.js.map

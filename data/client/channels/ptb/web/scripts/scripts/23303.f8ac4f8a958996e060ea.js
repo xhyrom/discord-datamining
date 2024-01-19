@@ -42915,7 +42915,7 @@
                     var s;
                     n = n.set("reactions", D(null !== (s = e.reactions) && void 0 !== s ? s : t.reactions))
                 }
-                return n
+                return null != t.poll && (n = n.set("poll", (0, a.default)(t.poll))), n
             }
 
             function S(e) {
@@ -63344,4 +63344,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.26c3890a6676de42e9ba.js.map
+//# sourceMappingURL=23303.f8ac4f8a958996e060ea.js.map
