@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_explicit_media_sender_false_positive",
+    "label": "Explicit Media Sender False Positive",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable explicit media sender false positive experience"
+    ],
+    "hash": 3730176707,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
