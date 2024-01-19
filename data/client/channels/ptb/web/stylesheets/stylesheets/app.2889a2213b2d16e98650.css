@@ -11995,10 +11995,10 @@
 }
 
 .circularButton_e0aa9b {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background: var(--bg-overlay-1, var(--background-secondary-alt));
-    border-radius: 16px
+    border-radius: 20px
 }
 
 .wrapper__93c36 {
@@ -12053,15 +12053,16 @@
 .header__263c7 {
     display: flex;
     flex-direction: row;
-    padding: 8px;
-    align-items: center
+    align-items: center;
+    padding: 14px 8px
 }
 
 .footer__4f337 {
     display: flex;
     flex-direction: row;
     padding: 8px;
-    align-items: start
+    align-items: center;
+    justify-content: center
 }
 
 .minimizeContainer_d5ce9e {
@@ -12069,15 +12070,15 @@
 }
 
 .circularButton__88b89 {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background: var(--bg-overlay-1, var(--background-secondary-alt));
-    border-radius: 16px
+    border-radius: 20px
 }
 
 .minimizeIcon__65052 {
-    width: 16px;
-    height: 16px
+    width: 20px;
+    height: 20px
 }
 
 .headerTitle__901c1 {
@@ -12086,8 +12087,7 @@
 }
 
 .leaveButtonContainer__67662 {
-    flex: 0;
-    justify-content: right
+    margin: 0 16px
 }
 
 .activityContainer__49787 {
@@ -12104,7 +12104,8 @@
 }
 
 .leaveActivityButton__5535d {
-    padding: 6px
+    width: 40px;
+    height: 40px
 }
 
 .regionSelectPopout__0127b {
@@ -26871,8 +26872,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -126119,4 +126120,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3d289a68851b34c2d7bb.css.map*/
+/*# sourceMappingURL=app.2889a2213b2d16e98650.css.map*/
