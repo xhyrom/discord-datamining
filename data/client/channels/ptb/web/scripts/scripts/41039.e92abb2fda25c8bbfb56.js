@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["98097"], {
+    ["41039"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -24659,7 +24659,7 @@
                 ExpressionPickerWidths: function() {
                     return r
                 }
-            }), (s = i || (i = {})).EMOJI = "emoji", s.GIF = "gif", s.STICKER = "sticker", s.SOUNDBOARD = "soundboard";
+            }), (s = i || (i = {})).EMOJI = "emoji", s.GIF = "gif", s.STICKER = "sticker", s.SOUNDBOARD = "soundboard", s.CUSTOM_UPLOAD = "custom-upload";
             let o = "expression-picker-chat-input-button",
                 l = 498;
             (a = r || (r = {})).MIN = "min", a.MAX = "max"
@@ -49959,7 +49959,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260020"
+                                build_number: "260030"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63316,4 +63316,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98097.610e65c743d5c3ad5acd.js.map
+//# sourceMappingURL=41039.e92abb2fda25c8bbfb56.js.map
