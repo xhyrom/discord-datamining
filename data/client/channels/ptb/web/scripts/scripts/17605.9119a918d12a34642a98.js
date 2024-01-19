@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["58247"], {
+    ["17605"], {
         142226: function(e, t, l) {
             "use strict";
             e.exports = l.p + "b92378012a6b664c01b6.png"
@@ -7669,7 +7669,16 @@
                     resolve: e
                 }))
             }
+        },
+        635058: function(e, t, l) {
+            "use strict";
+            var n, a;
+            l.r(t), l.d(t, {
+                CollectiblesCategorySkuId: function() {
+                    return n
+                }
+            }), l("222007"), (a = n || (n = {})).FANTASY = "1144003461608906824", a.ANIME = "1144302037593497701", a.BREAKFAST = "1144054000099012659", a.DISXCORE = "1144058340327047249", a.HALLOWEEN = "1157410718711304313", a.FALL = "1157406994873991284", a.WINTER = "1174459301239197856", a.MONSTERS = "1179493515038818325", a.CYBERPUNK = "1197342727608746044"
         }
     }
 ]);
-//# sourceMappingURL=58247.dc2941e60398908e0ea8.js.map
+//# sourceMappingURL=17605.9119a918d12a34642a98.js.map
