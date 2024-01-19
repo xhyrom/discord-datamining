@@ -28829,7 +28829,8 @@
                     displayDescription: null !== (s = a.description_localized) && void 0 !== s ? s : a.description,
                     nsfw: r.nsfw,
                     contexts: r.contexts,
-                    integration_types: r.integration_types
+                    integration_types: r.integration_types,
+                    global_popularity_rank: r.global_popularity_rank
                 }
             }
 
@@ -63342,4 +63343,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.26d30c2e28b4050cc0b4.js.map
+//# sourceMappingURL=23303.a4bc0800e68dd100a8cf.js.map
