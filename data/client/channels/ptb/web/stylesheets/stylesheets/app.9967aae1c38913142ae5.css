@@ -26921,8 +26921,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -94314,7 +94314,7 @@ html .invoiceCancelRow_a8669b {
     color: var(--white-500)
 }
 
-.radioLabelContainer__35456 {
+.labelWithIconContainer__9db6a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -94330,7 +94330,7 @@ html .invoiceCancelRow_a8669b {
     margin-right: 4px
 }
 
-.nagivateBackContainer__0421b {
+.customLabelContainer_e315af {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -94340,7 +94340,7 @@ html .invoiceCancelRow_a8669b {
     cursor: pointer
 }
 
-.nagivateBackContainer__0421b:hover {
+.customLabelContainer_e315af:hover {
     background-color: var(--brand-experiment-560);
     color: var(--white-500)
 }
@@ -94355,6 +94355,12 @@ html .invoiceCancelRow_a8669b {
 
 .selectedOption__07ef3 {
     margin-top: 4px
+}
+
+.containerWithRightCaret__9d3c6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
 }
 
 .rolePopout_da0123 {
@@ -126169,4 +126175,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.bf43fff94ccf4d5455a0.css.map*/
+/*# sourceMappingURL=app.9967aae1c38913142ae5.css.map*/
