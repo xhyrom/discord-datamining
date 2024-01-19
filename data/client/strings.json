@@ -894,6 +894,7 @@
   "EMBEDDED_ACTIVITIES_DEVELOPER_ACTIVITY": "\"In Development\"",
   "EMBEDDED_ACTIVITIES_INTERACTION_EMBED_ENDED": "\"Activity has ended.\"",
   "EMBEDDED_ACTIVITIES_INTERACTION_EMBED_NO_PRESENCE": "\"Activity has started.\"",
+  "EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE": "\"You cannot launch this activity in a server with more than 25 members\"",
   "EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED": "\"Activity has ended\"",
   "EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE": "\"Activity has started\"",
   "EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION": "\"You do not have permissions to join this Voice Channel.\"",
