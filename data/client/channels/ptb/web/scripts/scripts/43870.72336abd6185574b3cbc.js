@@ -657,8 +657,8 @@
                 CollectiblesItemType: function() {
                     return n
                 }
-            }), (i = n || (n = {}))[i.NONE = -1] = "NONE", i[i.AVATAR_DECORATION = 0] = "AVATAR_DECORATION", i[i.PROFILE_EFFECT = 1] = "PROFILE_EFFECT"
+            }), (i = n || (n = {}))[i.NONE = 100] = "NONE", i[i.AVATAR_DECORATION = 0] = "AVATAR_DECORATION", i[i.PROFILE_EFFECT = 1] = "PROFILE_EFFECT"
         }
     }
 ]);
-//# sourceMappingURL=43870.2b7a6cf450485e70626b.js.map
+//# sourceMappingURL=43870.72336abd6185574b3cbc.js.map
