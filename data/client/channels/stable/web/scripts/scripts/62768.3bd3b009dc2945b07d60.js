@@ -16,7 +16,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 fetchAllStoreListingsForApplication: function() {
-                    return c
+                    return d
                 },
                 fetchStoreListingForSku: function() {
                     return f
@@ -50,13 +50,13 @@
             var a = n("393414"),
                 s = n("552712");
             n("698041");
-            var u = n("167726"),
-                o = n("271560"),
-                d = n("49111");
+            var o = n("167726"),
+                u = n("271560"),
+                c = n("49111");
 
-            function c(e) {
-                return (0, o.httpGetWithCountryCodeQuery)({
-                    url: d.Endpoints.STORE_PUBLISHED_LISTINGS_SKUS,
+            function d(e) {
+                return (0, u.httpGetWithCountryCodeQuery)({
+                    url: c.Endpoints.STORE_PUBLISHED_LISTINGS_SKUS,
                     query: {
                         application_id: e
                     },
@@ -69,8 +69,8 @@
 
             function f(e) {
                 let t = s.default.get(e),
-                    n = null != t && (u.default.inTestModeForApplication(t.applicationId) || l.default.inDevModeForApplication(t.applicationId));
-                return (0, o.httpGetWithCountryCodeQuery)(n ? d.Endpoints.STORE_LISTINGS_SKU(e) : d.Endpoints.STORE_PUBLISHED_LISTINGS_SKU(e)).then(e => {
+                    n = null != t && (o.default.inTestModeForApplication(t.applicationId) || l.default.inDevModeForApplication(t.applicationId));
+                return (0, u.httpGetWithCountryCodeQuery)(n ? c.Endpoints.STORE_LISTINGS_SKU(e) : c.Endpoints.STORE_PUBLISHED_LISTINGS_SKU(e)).then(e => {
                     n ? r.default.dispatch({
                         type: "STORE_LISTINGS_FETCH_SUCCESS",
                         storeListings: e.body
@@ -82,7 +82,7 @@
             }
 
             function p(e) {
-                return (0, o.httpGetWithCountryCodeQuery)(d.Endpoints.STORE_LISTING(e)).then(e => {
+                return (0, u.httpGetWithCountryCodeQuery)(c.Endpoints.STORE_LISTING(e)).then(e => {
                     r.default.dispatch({
                         type: "STORE_LISTING_FETCH_SUCCESS",
                         storeListing: e.body
@@ -91,7 +91,7 @@
             }
 
             function h(e) {
-                return (0, o.httpGetWithCountryCodeQuery)(d.Endpoints.STORE_PUBLISHED_LISTINGS_APPLICATION(e)).then(e => {
+                return (0, u.httpGetWithCountryCodeQuery)(c.Endpoints.STORE_PUBLISHED_LISTINGS_APPLICATION(e)).then(e => {
                     r.default.dispatch({
                         type: "STORE_LISTING_FETCH_SUCCESS",
                         storeListing: e.body
@@ -106,12 +106,12 @@
             }
 
             function m() {
-                (0, a.transitionTo)(d.Routes.APPLICATION_STORE)
+                (0, a.transitionTo)(c.Routes.APPLICATION_STORE)
             }
 
             function _(e) {
                 return i.default.post({
-                    url: d.Endpoints.STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD(e),
+                    url: c.Endpoints.STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD(e),
                     oldFormErrors: !0
                 })
             }
@@ -120,7 +120,7 @@
                 let {
                     pathname: n,
                     ...i
-                } = (0, o.getStoreListingLocation)(e, t);
+                } = (0, u.getStoreListingLocation)(e, t);
                 (0, a.transitionTo)(n, i)
             }
 
@@ -128,7 +128,7 @@
                 let {
                     pathname: n,
                     ...i
-                } = (0, o.getApplicationStoreListingLocation)(e, t);
+                } = (0, u.getApplicationStoreListingLocation)(e, t);
                 (0, a.transitionTo)(n, i)
             }
         },
@@ -185,10 +185,10 @@
                     height: n = 24,
                     color: a = r.default.colors.INTERACTIVE_NORMAL,
                     colorClass: s = "",
-                    ...u
+                    ...o
                 } = e;
                 return (0, i.jsx)("svg", {
-                    ...(0, l.default)(u),
+                    ...(0, l.default)(o),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
@@ -237,14 +237,23 @@
             let i = "(max-width: 485px)",
                 r = "(max-height: 450px)"
         },
+        692105: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                IconType: function() {
+                    return i
+                }
+            }), (r = i || (i = {}))[r.STORE_ASSET = 1] = "STORE_ASSET", r[r.EMOJI = 2] = "EMOJI"
+        },
         829805: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 ApplicationBenefitsModalIcon: function() {
-                    return d
+                    return c
                 },
                 ApplicationBenefitsModalHeading: function() {
-                    return c
+                    return d
                 },
                 ApplicationBenefitsModalDivider: function() {
                     return f
@@ -265,9 +274,9 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("850644"),
-                u = n("899604"),
-                o = n("114067");
-            let d = e => {
+                o = n("899604"),
+                u = n("114067");
+            let c = e => {
                     let {
                         application: t,
                         asset: n,
@@ -282,7 +291,7 @@
                         ...l
                     })
                 },
-                c = e => {
+                d = e => {
                     let {
                         children: t,
                         className: n,
@@ -290,7 +299,7 @@
                         ...s
                     } = e;
                     return (0, i.jsx)(a.Heading, {
-                        className: l(o.header, n),
+                        className: l(u.header, n),
                         variant: "heading-xl/extrabold",
                         id: r,
                         ...s,
@@ -300,7 +309,7 @@
 
             function f() {
                 return (0, i.jsx)("hr", {
-                    className: o.divider
+                    className: u.divider
                 })
             }
             let p = e => {
@@ -326,19 +335,20 @@
                 },
                 h = e => {
                     let {
-                        benefits: t,
-                        className: n,
-                        ...r
+                        applicationId: t,
+                        storeListingBenefits: n,
+                        skuBenefits: r,
+                        className: a,
+                        ...s
                     } = e;
                     return (0, i.jsx)("div", {
-                        className: l(o.benefitsContainer, n),
-                        ...r,
-                        children: t.map(e => {
-                            var t, n;
-                            return (0, i.jsx)(u.default, {
-                                className: o.benefit,
-                                benefit: e
-                            }, "".concat(e.ref_type, "-").concat(null === (t = e.emoji) || void 0 === t ? void 0 : t.id, "-").concat(null === (n = e.emoji) || void 0 === n ? void 0 : n.name))
+                        className: l(u.benefitsContainer, a),
+                        ...s,
+                        children: (0, i.jsx)(o.SubscriptionListingBenefits, {
+                            applicationId: t,
+                            storeListingBenefits: n,
+                            skuBenefits: r,
+                            className: u.benefit
                         })
                     })
                 },
@@ -349,7 +359,7 @@
                         ...r
                     } = e;
                     return (0, i.jsx)("div", {
-                        className: l(o.container, n),
+                        className: l(u.container, n),
                         ...r,
                         children: t
                     })
@@ -369,13 +379,13 @@
             n("884691");
             var a = n("414456"),
                 s = n.n(a),
-                u = n("315102"),
-                o = n("271560"),
-                d = n("969850");
+                o = n("315102"),
+                u = n("271560"),
+                c = n("969850");
             (i = r || (r = {}))[i.SMALL = 40] = "SMALL", i[i.MEDIUM = 66] = "MEDIUM";
-            let c = {
-                40: d.small,
-                66: d.medium
+            let d = {
+                40: c.small,
+                66: c.medium
             };
             var f = e => {
                 let t, {
@@ -384,14 +394,14 @@
                     asset: r,
                     className: a
                 } = e;
-                return t = null != r ? (0, o.getAssetURL)(n.id, r, i) : u.default.getApplicationIconURL({
+                return t = null != r ? (0, u.getAssetURL)(n.id, r, i) : o.default.getApplicationIconURL({
                     id: n.id,
                     icon: n.icon,
                     size: i
                 }), (0, l.jsx)("img", {
                     alt: "",
                     src: t,
-                    className: s(d.icon, c[i], a)
+                    className: s(c.icon, d[i], a)
                 })
             }
         },
@@ -399,7 +409,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return o
                 }
             });
             var i = n("37983");
@@ -409,15 +419,15 @@
                 a = n("77078"),
                 s = n("396671");
 
-            function u(e) {
+            function o(e) {
                 let {
                     children: t,
                     className: n,
                     size: r = a.Button.Sizes.SMALL,
-                    ...u
+                    ...o
                 } = e;
                 return (0, i.jsx)(a.Button, {
-                    ...u,
+                    ...o,
                     size: r,
                     className: l(s.button, n),
                     children: t
@@ -443,10 +453,10 @@
                 l = n("834897"),
                 a = n("85336"),
                 s = n("159149"),
-                u = n("650484"),
-                o = n("945330"),
-                d = n("829805"),
-                c = n("425480"),
+                o = n("650484"),
+                u = n("945330"),
+                c = n("829805"),
+                d = n("425480"),
                 f = n("782340"),
                 p = n("370184"),
                 h = n("137852"),
@@ -455,7 +465,7 @@
                     let {
                         step: t,
                         onClose: n
-                    } = e, s = (0, l.default)(c.RESPONSIVE_MOBILE_HEIGHT_SMALL_QUERY);
+                    } = e, s = (0, l.default)(d.RESPONSIVE_MOBILE_HEIGHT_SMALL_QUERY);
                     return t === a.Step.CONFIRM || t === a.Step.BENEFITS ? (0, i.jsx)("div", {}) : (0, i.jsxs)("div", {
                         className: p.headerContainer,
                         children: [!s && (0, i.jsx)("div", {
@@ -470,7 +480,7 @@
                             className: p.closeContainer,
                             onClick: () => n(),
                             "aria-label": f.default.Messages.CLOSE,
-                            children: (0, i.jsx)(o.default, {
+                            children: (0, i.jsx)(u.default, {
                                 className: p.closeIcon
                             })
                         })]
@@ -486,17 +496,19 @@
                     } = e;
                     return null == n ? null : (0, i.jsx)("div", {
                         className: p.confirmationContainer,
-                        children: (0, i.jsxs)(d.ApplicationBenefitsModalContent, {
-                            children: [(0, i.jsx)(d.ApplicationBenefitsModalIcon, {
+                        children: (0, i.jsxs)(c.ApplicationBenefitsModalContent, {
+                            children: [(0, i.jsx)(c.ApplicationBenefitsModalIcon, {
                                 application: n,
                                 asset: t.image_asset
-                            }), (0, i.jsx)(d.ApplicationBenefitsModalHeading, {
+                            }), (0, i.jsx)(c.ApplicationBenefitsModalHeading, {
                                 children: r
-                            }), (0, i.jsx)(d.ApplicationBenefitsModalDivider, {}), (0, i.jsx)(d.ApplicationBenefitsModalDescription, {
+                            }), (0, i.jsx)(c.ApplicationBenefitsModalDivider, {}), (0, i.jsx)(c.ApplicationBenefitsModalDescription, {
                                 title: l,
                                 description: a
-                            }), (0, i.jsx)(d.ApplicationBenefitsModalBenefits, {
-                                benefits: t.sku_benefits.benefits
+                            }), (0, i.jsx)(c.ApplicationBenefitsModalBenefits, {
+                                applicationId: t.application_id,
+                                storeListingBenefits: t.store_listing_benefits,
+                                skuBenefits: t.sku_benefits.benefits
                             })]
                         })
                     })
@@ -529,7 +541,7 @@
                         children: f.default.Messages.APPLICATION_SUBSCRIPTION_PURCHASE_CONFIRMATION_SUBTITLE.format({
                             timestamp: null == l ? void 0 : l.currentPeriodEnd
                         })
-                    }), (0, i.jsx)(u.PaymentPortalFooter, {
+                    }), (0, i.jsx)(o.PaymentPortalFooter, {
                         children: (0, i.jsx)(s.default, {
                             onPrimary: n,
                             primaryCTA: s.CTAType.CONTINUE,
@@ -542,8 +554,11 @@
         899604: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                SubscriptionListingBenefits: function() {
+                    return d
+                },
                 default: function() {
-                    return o
+                    return f
                 }
             });
             var i = n("37983");
@@ -552,37 +567,103 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("430568"),
-                u = n("888266");
+                o = n("271560"),
+                u = n("692105"),
+                c = n("888266");
 
-            function o(e) {
+            function d(e) {
+                let t, {
+                    applicationId: n,
+                    storeListingBenefits: r,
+                    skuBenefits: a,
+                    className: s
+                } = e;
+                return null != r ? t = r.map(e => (0, i.jsx)(p, {
+                    applicationId: n,
+                    benefit: e,
+                    className: l(c.benefit, s)
+                }, e.id)) : null != a && (t = a.map((e, t) => (0, i.jsx)(f, {
+                    benefit: e,
+                    className: l(c.benefit, s)
+                }, t))), (0, i.jsx)(i.Fragment, {
+                    children: t
+                })
+            }
+
+            function f(e) {
                 let {
                     benefit: t,
                     className: n,
                     emojiContainerClassName: r,
                     showsDescription: o = !0,
-                    nameTextVariant: d = "text-md/medium",
-                    nameTextColor: c = "header-primary"
+                    nameTextVariant: u = "text-md/medium",
+                    nameTextColor: d = "header-primary"
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: l(u.container, n),
+                    className: l(c.container, n),
                     children: [null != t.emoji && (0, i.jsx)("div", {
-                        className: l(u.emojiContainer, r),
+                        className: l(c.emojiContainer, r),
                         children: (0, i.jsx)(s.default, {
                             emojiId: t.emoji.id,
                             emojiName: t.emoji.name,
                             animated: t.emoji.animated
                         })
                     }), (0, i.jsxs)("div", {
-                        className: u.infoContainer,
+                        className: c.infoContainer,
                         children: [(0, i.jsx)(a.Text, {
-                            variant: d,
-                            color: c,
-                            className: u.name,
+                            variant: u,
+                            color: d,
+                            className: c.name,
                             children: t.name
                         }), o && (0, i.jsx)(a.Text, {
                             color: "interactive-normal",
                             variant: "text-sm/normal",
                             children: t.description
+                        })]
+                    })]
+                })
+            }
+
+            function p(e) {
+                let t, {
+                    applicationId: n,
+                    benefit: r,
+                    className: d,
+                    emojiContainerClassName: f,
+                    showsDescription: p = !0,
+                    nameTextVariant: h = "text-md/medium",
+                    nameTextColor: S = "header-primary"
+                } = e;
+                if (null != r.icon) switch (r.icon.type) {
+                    case u.IconType.STORE_ASSET:
+                        let m = (0, o.getAssetURL)(n, r.icon.store_asset_id);
+                        t = (0, i.jsx)("img", {
+                            src: m,
+                            alt: "",
+                            className: "emoji"
+                        });
+                        break;
+                    case u.IconType.EMOJI:
+                        t = (0, i.jsx)(s.default, {
+                            emojiName: r.icon.emoji
+                        })
+                }
+                return (0, i.jsxs)("div", {
+                    className: l(c.container, d),
+                    children: [(0, i.jsx)("div", {
+                        className: l(c.emojiContainer, f),
+                        children: t
+                    }), (0, i.jsxs)("div", {
+                        className: c.infoContainer,
+                        children: [(0, i.jsx)(a.Text, {
+                            variant: h,
+                            color: S,
+                            className: c.name,
+                            children: r.name
+                        }), p && (0, i.jsx)(a.Text, {
+                            color: "interactive-normal",
+                            variant: "text-sm/normal",
+                            children: r.description
                         })]
                     })]
                 })
@@ -624,7 +705,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return C
                 }
             });
             var i = n("37983"),
@@ -632,10 +713,10 @@
                 l = n("627445"),
                 a = n.n(l),
                 s = n("446674"),
-                u = n("913144"),
-                o = n("775433"),
-                d = n("685665"),
-                c = n("598981"),
+                o = n("913144"),
+                u = n("775433"),
+                c = n("685665"),
+                d = n("598981"),
                 f = n("846286"),
                 p = n("697218"),
                 h = n("10514"),
@@ -644,54 +725,54 @@
                 _ = n("333955"),
                 I = n("599733"),
                 E = n("49111"),
-                C = n("782340"),
-                T = e => {
+                T = n("782340"),
+                C = e => {
                     var t;
                     let n, {
                             listing: l,
-                            guildId: T,
+                            guildId: C,
                             groupListingId: g,
                             analyticsLocation: A,
                             showBenefitsFirst: N,
-                            onComplete: v,
-                            forcesTransitionToGuild: b
+                            onComplete: b,
+                            forcesTransitionToGuild: v
                         } = e,
                         L = null == l ? void 0 : l.subscription_plans[0],
-                        P = null == l ? void 0 : l.application_id,
-                        O = null == L ? void 0 : L.id,
-                        F = (null == l ? void 0 : l.published) === !0,
-                        x = null == L ? void 0 : L.sku_id,
-                        R = (0, s.useStateFromStores)([h.default], () => null != O ? h.default.get(O) : null),
-                        y = (0, S.useApplication)(P),
+                        O = null == l ? void 0 : l.application_id,
+                        P = null == L ? void 0 : L.id,
+                        x = (null == l ? void 0 : l.published) === !0,
+                        F = null == L ? void 0 : L.sku_id,
+                        R = (0, s.useStateFromStores)([h.default], () => null != P ? h.default.get(P) : null),
+                        y = (0, S.useApplication)(O),
                         k = (0, S.useSubscriptionListingsForGroup)(g, {
                             includeSoftDeleted: !0
                         }),
                         G = k.map(e => e.subscription_plans[0].id),
                         {
                             analyticsLocations: H
-                        } = (0, d.default)(),
+                        } = (0, c.default)(),
                         {
                             activeSubscription: M,
-                            activeEntitlement: w
-                        } = (0, S.useActiveSubscriptionListingForApplication)(P, T),
-                        D = (0, S.useEligibleApplicationSubscriptionGuilds)(P, T),
-                        U = (0, c.default)(),
-                        j = null != l && (0, m.isApplicationUserSubscription)(l.sku_flags),
-                        B = null != w && w.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
-                        V = null == w || B,
-                        K = null == w || G.length > 1,
-                        W = null != T || D.length > 0,
-                        z = j && B,
-                        Z = null != R && null != y && V && K && (W || j) && !z;
-                    V ? W ? z && null != R && (n = C.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
+                            activeEntitlement: j
+                        } = (0, S.useActiveSubscriptionListingForApplication)(O, C),
+                        w = (0, S.useEligibleApplicationSubscriptionGuilds)(O, C),
+                        D = (0, d.default)(),
+                        U = null != l && (0, m.isApplicationUserSubscription)(l.sku_flags),
+                        B = null != j && j.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
+                        V = null == j || B,
+                        K = null == j || G.length > 1,
+                        W = null != C || w.length > 0,
+                        z = U && B,
+                        Z = null != R && null != y && V && K && (W || U) && !z;
+                    V ? W ? z && null != R && (n = T.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
                         tierName: R.name
-                    })) : n = C.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = C.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
-                        F && null != x && U && u.default.wait(() => {
-                            (0, o.fetchSubscriptionPlansForSKU)(x)
+                    })) : n = T.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = T.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
+                        x && null != F && D && o.default.wait(() => {
+                            (0, u.fetchSubscriptionPlansForSKU)(F)
                         })
-                    }, [F, x, U]);
+                    }, [x, F, D]);
                     let Q = r.useCallback(() => {
-                        a(null != l, "No subscription listing"), a(null != y, "No application"), a(null != L, "No subscription plan"), a(F, "Cannot purchase this unpublished plan");
+                        a(null != l, "No subscription listing"), a(null != y, "No application"), a(null != L, "No subscription plan"), a(x, "Cannot purchase this unpublished plan");
                         let e = () => {
                             (0, f.openApplicationSubscriptionPaymentModal)({
                                 activeSubscription: M,
@@ -704,22 +785,22 @@
                                 }),
                                 initialPlanId: L.id,
                                 skuId: L.sku_id,
-                                guildId: T,
-                                eligibleApplicationSubscriptionGuilds: D,
+                                guildId: C,
+                                eligibleApplicationSubscriptionGuilds: w,
                                 planGroup: G,
                                 listing: l,
                                 application: y,
                                 showBenefitsFirst: N,
-                                onComplete: v,
-                                forcesTransitionToGuild: b
+                                onComplete: b,
+                                forcesTransitionToGuild: v
                             })
                         };
-                        !W && j ? (0, I.confirmNoSharedServerSubscribeWarningModal)({
+                        !W && U ? (0, I.confirmNoSharedServerSubscribeWarningModal)({
                             application: y,
                             onConfirm: e,
                             onCancel: () => {}
                         }) : e()
-                    }, [F, l, L, G, y, T, W, j, H, A, M, N, D, v, b]);
+                    }, [x, l, L, G, y, C, W, U, H, A, M, N, w, b, v]);
                     return {
                         openModal: Q,
                         canOpenModal: Z,
@@ -807,61 +888,61 @@
                 l = n("210721"),
                 a = n("78345"),
                 s = n("53253"),
-                u = n("105097"),
-                o = n("659632"),
-                d = n("642906"),
-                c = n("782340");
+                o = n("105097"),
+                u = n("659632"),
+                c = n("642906"),
+                d = n("782340");
             let f = a.PremiumGiftStyles.STANDARD_BOX,
                 p = void 0,
-                [h, S, m] = (0, u.default)();
+                [h, S, m] = (0, o.default)();
 
             function _(e) {
                 let {
                     isGift: t = !1,
                     giftRecipient: n,
-                    giftMessage: u,
+                    giftMessage: o,
                     children: S
                 } = e, {
                     selectedSkuId: m
-                } = (0, d.usePaymentContext)(), [_, I] = r.useState(n), [E, C] = r.useState(), [T, g] = r.useState(!1), A = (0, o.shouldShowCustomGiftExperience)(_), N = (0, s.useIsSeasonalGiftingActive)(), {
-                    enabled: v
+                } = (0, c.usePaymentContext)(), [_, I] = r.useState(n), [E, T] = r.useState(), [C, g] = r.useState(!1), A = (0, u.shouldShowCustomGiftExperience)(_), N = (0, s.useIsSeasonalGiftingActive)(), {
+                    enabled: b
                 } = s.default.useExperiment({
                     location: "PaymentContextProvider"
                 }, {
                     autoTrackExposure: A && N
-                }), [b, L] = r.useState(A ? v && N ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [P, O] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(_)) ? c.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [F, x] = r.useState(void 0), [R, y] = r.useState(void 0), k = (0, o.useGetGiftCode)(m, t), [G, H] = r.useState(!1), [M, w] = r.useState(!1), [D, U] = r.useState(), j = r.useCallback(e => {
+                }), [v, L] = r.useState(A ? b && N ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [O, P] = r.useState(t && u.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, u.getGiftExperience)(_)) ? d.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : o), [x, F] = r.useState(void 0), [R, y] = r.useState(void 0), k = (0, u.useGetGiftCode)(m, t), [G, H] = r.useState(!1), [M, j] = r.useState(!1), [w, D] = r.useState(), U = r.useCallback(e => {
                     let {
                         onSubscriptionConfirmation: t
                     } = e;
-                    return w(!0), (0, l.sendGiftMessage)(_, k).then(() => {
-                        w(!1), null == t || t(), H(!0)
+                    return j(!0), (0, l.sendGiftMessage)(_, k).then(() => {
+                        j(!1), null == t || t(), H(!0)
                     }).catch(e => {
-                        w(!1), U(e), H(!0)
+                        j(!1), D(e), H(!0)
                     })
-                }, [_, k, w, H, U]);
+                }, [_, k, j, H, D]);
                 return (0, i.jsx)(h.Provider, {
                     value: {
                         isGift: t,
                         giftCode: k,
-                        giftMessage: u,
+                        giftMessage: o,
                         giftRecipient: _,
                         setGiftRecipient: I,
                         giftRecipientError: E,
-                        setGiftRecipientError: C,
-                        validatingGiftRecipient: T,
+                        setGiftRecipientError: T,
+                        validatingGiftRecipient: C,
                         setValidatingGiftRecipient: g,
-                        soundEffect: F,
-                        setSoundEffect: x,
+                        soundEffect: x,
+                        setSoundEffect: F,
                         emojiConfetti: R,
                         setEmojiConfetti: y,
-                        customGiftMessage: P,
-                        setCustomGiftMessage: O,
-                        selectedGiftStyle: b,
+                        customGiftMessage: O,
+                        setCustomGiftMessage: P,
+                        selectedGiftStyle: v,
                         setSelectedGiftStyle: L,
-                        sendGiftMessage: j,
+                        sendGiftMessage: U,
                         hasSentMessage: G,
                         isSendingMessage: M,
-                        giftMessageError: D
+                        giftMessageError: w
                     },
                     children: S
                 })
@@ -874,7 +955,7 @@
                     return m
                 },
                 openActivityApplicationPaymentModal: function() {
-                    return C
+                    return T
                 }
             });
             var i = n("37983");
@@ -883,10 +964,10 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("316718"),
-                u = n("55620"),
-                o = n("524503"),
-                d = n("186211"),
-                c = n("90592"),
+                o = n("55620"),
+                u = n("524503"),
+                c = n("186211"),
+                d = n("90592"),
                 f = n("651057"),
                 p = n("299285"),
                 h = n("635357"),
@@ -898,18 +979,18 @@
                     activeSubscription: r,
                     analyticsObject: l,
                     analyticsLocation: s,
-                    analyticsLocations: u,
-                    analyticsSubscriptionType: o,
-                    renderHeader: d,
-                    planGroup: c,
+                    analyticsLocations: o,
+                    analyticsSubscriptionType: u,
+                    renderHeader: c,
+                    planGroup: d,
                     skuId: f,
                     guildId: p,
                     reviewWarningMessage: m,
                     listing: _,
                     application: I,
                     showBenefitsFirst: E,
-                    eligibleApplicationSubscriptionGuilds: C,
-                    onComplete: T,
+                    eligibleApplicationSubscriptionGuilds: T,
+                    onComplete: C,
                     forcesTransitionToGuild: g
                 } = e;
                 (0, a.openModalLazy)(async () => {
@@ -922,7 +1003,7 @@
                         application: I,
                         listing: _,
                         showBenefitsFirst: E,
-                        eligibleApplicationSubscriptionGuilds: C
+                        eligibleApplicationSubscriptionGuilds: T
                     });
                     return n => (0, i.jsx)(e, {
                         applicationId: I.id,
@@ -934,16 +1015,16 @@
                                 ...n,
                                 initialPlanId: t,
                                 skuId: f,
-                                analyticsLocations: u,
+                                analyticsLocations: o,
                                 analyticsObject: l,
                                 analyticsLocation: s,
-                                analyticsSubscriptionType: o,
-                                renderHeader: d,
-                                planGroup: c,
+                                analyticsSubscriptionType: u,
+                                renderHeader: c,
+                                planGroup: d,
                                 reviewWarningMessage: m,
                                 applicationId: I.id,
                                 guildId: null != p ? p : void 0,
-                                onComplete: T,
+                                onComplete: C,
                                 forcesTransitionToGuild: g
                             })
                         })
@@ -959,19 +1040,19 @@
                 let n = p.default.getApplication(e);
                 return l(null != n, "Failed to find application with ID %s", e), n
             }, I = async e => {
-                let t = d.default.getSubscriptionGroupListingForApplication(e);
+                let t = c.default.getSubscriptionGroupListingForApplication(e);
                 if (null != t) return t;
-                let n = await (0, u.fetchAllStoreListingsForApplication)(e),
+                let n = await (0, o.fetchAllStoreListingsForApplication)(e),
                     i = n.find(e => e.sku.type === S.SKUTypes.SUBSCRIPTION_GROUP);
-                l(null != i, "Failed to find subscription store listing"), await (0, o.fetchAllSubscriptionListingsDataForApplication)(e, null == i ? void 0 : i.id);
-                let r = d.default.getSubscriptionGroupListingForApplication(e);
+                l(null != i, "Failed to find subscription store listing"), await (0, u.fetchAllSubscriptionListingsDataForApplication)(e, null == i ? void 0 : i.id);
+                let r = c.default.getSubscriptionGroupListingForApplication(e);
                 return l(null != r, "Failed to find subscription group listing"), r
             }, E = async (e, t) => {
                 let n = await (0, s.fetchUserEntitlementsForApplication)(e),
                     i = n.find(e => e.sku_id === t);
                 l(null == i, "User already has an active subscription to this SKU")
             };
-            async function C(e) {
+            async function T(e) {
                 let {
                     applicationId: t,
                     skuId: n,
@@ -979,24 +1060,24 @@
                     analyticsLocationObject: r,
                     analyticsLocations: a,
                     renderHeader: s
-                } = e, u = await _(t), o = await I(t), d = (0, c.getPayableSubscriptionListing)(o);
-                l(null != d, "Failed to find subscription listing");
-                let f = (0, c.isApplicationUserSubscription)(d.sku_flags);
-                l(f, "Guild application subscriptions unsupported!"), l(d.published, "Subscription listing not published"), await E(t, n);
+                } = e, o = await _(t), u = await I(t), c = (0, d.getPayableSubscriptionListing)(u);
+                l(null != c, "Failed to find subscription listing");
+                let f = (0, d.isApplicationUserSubscription)(c.sku_flags);
+                l(f, "Guild application subscriptions unsupported!"), l(c.published, "Subscription listing not published"), await E(t, n);
                 let p = {
-                    initialPlanId: null != i ? i : null == d ? void 0 : d.subscription_plans[0].id,
+                    initialPlanId: null != i ? i : null == c ? void 0 : c.subscription_plans[0].id,
                     activeSubscription: null,
                     analyticsLocations: a,
                     analyticsLocationObject: r,
                     analyticsSubscriptionType: S.SubscriptionTypes.APPLICATION,
                     renderHeader: s,
-                    planGroup: o.subscription_listings_ids,
+                    planGroup: u.subscription_listings_ids,
                     skuId: n,
                     guildId: null,
                     eligibleApplicationSubscriptionGuilds: [],
                     showBenefitsFirst: !1,
-                    application: u,
-                    listing: d
+                    application: o,
+                    listing: c
                 };
                 m(p)
             }
@@ -1015,10 +1096,10 @@
             n("884691");
             var a = n("77078"),
                 s = n("145131"),
-                u = n("181114"),
-                o = n("376641"),
-                d = n("782340"),
-                c = n("198699");
+                o = n("181114"),
+                u = n("376641"),
+                c = n("782340"),
+                d = n("198699");
             (i = r || (r = {}))[i.CONTINUE = 0] = "CONTINUE", i[i.UPGRADE = 1] = "UPGRADE", i[i.PURCHASE = 2] = "PURCHASE";
             let f = e => {
                 let {
@@ -1040,9 +1121,9 @@
                     align: s.default.Align.CENTER,
                     children: [(() => {
                         if (null == r || null == p) return null;
-                        let e = 2 === r ? u.default : a.Button,
+                        let e = 2 === r ? o.default : a.Button,
                             t = {
-                                innerClassName: c.button,
+                                innerClassName: d.button,
                                 type: f,
                                 disabled: S,
                                 submitting: m,
@@ -1055,13 +1136,13 @@
                                 ...n,
                                 ...t,
                                 children: [null == i ? null : (0, l.jsx)(i, {
-                                    className: c.primaryIcon
+                                    className: d.primaryIcon
                                 }), p]
                             })
                         }) : (0, l.jsxs)(e, {
                             ...t,
                             children: [null == i ? null : (0, l.jsx)(i, {
-                                className: c.primaryIcon
+                                className: d.primaryIcon
                             }), p]
                         })
                     })(), null == I ? null : (0, l.jsx)(a.Button, {
@@ -1069,12 +1150,12 @@
                         look: a.Button.Looks.LINK,
                         onClick: E,
                         children: I
-                    }), (0, l.jsx)(o.default, {}), null == t ? null : (0, l.jsx)(a.Button, {
-                        className: c.back,
+                    }), (0, l.jsx)(u.default, {}), null == t ? null : (0, l.jsx)(a.Button, {
+                        className: d.back,
                         color: a.Button.Colors.PRIMARY,
                         look: a.Button.Looks.LINK,
                         onClick: t,
-                        children: null != n ? n : d.default.Messages.BACK
+                        children: null != n ? n : c.default.Messages.BACK
                     })]
                 })
             };
@@ -1085,7 +1166,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return c
+                    return d
                 }
             });
             var i = n("37983");
@@ -1094,20 +1175,20 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("600785"),
-                u = n("782340"),
-                o = n("980638"),
-                d = n("173791");
+                o = n("782340"),
+                u = n("980638"),
+                c = n("173791");
 
-            function c() {
+            function d() {
                 return (0, i.jsxs)("div", {
-                    className: l(o.paymentModalLockIcon, d.flex, d.alignCenter),
+                    className: l(u.paymentModalLockIcon, c.flex, c.alignCenter),
                     children: [(0, i.jsx)(s.default, {
-                        className: o.lockIcon,
+                        className: u.lockIcon,
                         width: 18,
                         height: 18
                     }), (0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
-                        children: u.default.Messages.BILLING_SECURE
+                        children: o.default.Messages.BILLING_SECURE
                     })]
                 })
             }
@@ -1128,10 +1209,10 @@
             var i, r, l = n("627445"),
                 a = n.n(l),
                 s = n("450911"),
-                u = n("819689"),
-                o = n("884351"),
-                d = n("42203"),
-                c = n("659632"),
+                o = n("819689"),
+                u = n("884351"),
+                c = n("42203"),
+                d = n("659632"),
                 f = n("78345");
             (r = i || (i = {})).ACTION = "action", r.LOOP = "loop", r.IDLE = "idle";
             let p = (e, t) => {
@@ -1386,12 +1467,12 @@
                     if (null == t) throw Error("giftCode must be defined");
                     if (null == e) throw Error("Recipient must be defined");
                     let n = await s.default.openPrivateChannel(e.id).then(e => {
-                            let t = d.default.getChannel(e);
+                            let t = c.default.getChannel(e);
                             if (a(null != t, "PrivateChannel is null"), null == t) throw Error("Channel must be defined");
                             return t
                         }),
-                        i = (0, c.getGiftCodeURL)(t);
-                    return u.default.sendMessage(n.id, o.default.parse(n, i), void 0, {
+                        i = (0, d.getGiftCodeURL)(t);
+                    return o.default.sendMessage(n.id, u.default.parse(n, i), void 0, {
                         isGiftLinkSentOnBehalfOfUser: !0
                     })
                 }
@@ -1400,7 +1481,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 SeasonalGiftingMarketingExperiment: function() {
-                    return c
+                    return d
                 },
                 useIsSeasonalGiftingActive: function() {
                     return f
@@ -1414,9 +1495,9 @@
                 l = n.n(r),
                 a = n("862337"),
                 s = n("296892");
-            let u = new Date("2024-01-04T07:59:59.000Z"),
-                o = l(u),
-                d = (0, s.default)({
+            let o = new Date("2024-01-04T07:59:59.000Z"),
+                u = l(o),
+                c = (0, s.default)({
                     id: "2023-11_seasonal_gifting",
                     label: "Seasonal Gifting 2023",
                     kind: "user",
@@ -1431,7 +1512,7 @@
                         }
                     }]
                 }),
-                c = (0, s.default)({
+                d = (0, s.default)({
                     id: "2023-11_seasonal_gifting_marketing_2023",
                     label: "Seasonal Gifting Marketing 2023",
                     kind: "user",
@@ -1448,31 +1529,31 @@
                 });
 
             function f() {
-                let [e, t] = i.useState(() => o.isAfter(Date.now()));
+                let [e, t] = i.useState(() => u.isAfter(Date.now()));
                 return i.useEffect(() => {
                     let n = new a.Timeout,
                         i = () => {
-                            let e = Math.min(o.diff(Date.now(), "millisecond"), 864e5);
+                            let e = Math.min(u.diff(Date.now(), "millisecond"), 864e5);
                             null == n || n.start(e, () => {
-                                o.isBefore(Date.now()) ? t(!1) : i()
+                                u.isBefore(Date.now()) ? t(!1) : i()
                             })
                         };
                     return e && i(), () => n.stop()
                 }), e
             }
-            var p = d
+            var p = c
         },
         970755: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 fetchApplicationsShelf: function() {
-                    return u
-                },
-                fetchPrivateChannelIntegrations: function() {
                     return o
                 },
+                fetchPrivateChannelIntegrations: function() {
+                    return u
+                },
                 deletePrivateChannelIntegration: function() {
-                    return d
+                    return c
                 }
             }), n("70102"), n("746379");
             var i = n("981980"),
@@ -1483,7 +1564,7 @@
                 s = n("49111");
             n("843455"), n("782340");
 
-            function u() {
+            function o() {
                 a.default.getApplicationsShelfFetchState() === a.FetchState.NOT_FETCHED && (l.default.dispatch({
                     type: "APPLICATIONS_SHELF_FETCH_START"
                 }), r.default.get(s.Endpoints.APPLICATIONS_SHELF).then(e => l.default.dispatch({
@@ -1494,7 +1575,7 @@
                 })))
             }
 
-            function o(e) {
+            function u(e) {
                 let t = new i.default(1e3, 5e3);
                 l.default.dispatch({
                     type: "FETCH_PRIVATE_CHANNEL_INTEGRATIONS_START",
@@ -1517,7 +1598,7 @@
                 })
             }
 
-            function d(e, t) {
+            function c(e, t) {
                 return r.default.delete(s.Endpoints.CHANNEL_INTEGRATION(e, t)).then(e => {
                     var t;
                     if (null === (t = e.body) || void 0 === t ? void 0 : t.message) throw Error(e.body.message)
@@ -1528,7 +1609,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 usePrivateChannelIntegrationState: function() {
-                    return o
+                    return u
                 }
             }), n("222007");
             var i = n("884691"),
@@ -1536,35 +1617,35 @@
                 l = n("201155"),
                 a = n("21121"),
                 s = n("970755"),
-                u = n("140596");
+                o = n("140596");
 
-            function o(e) {
+            function u(e) {
                 let {
                     channelId: t
                 } = e;
                 (0, a.useInMainTabsExperiment)();
                 let n = (0, l.useShowApplicationInGDM)(t),
                     {
-                        installedIntegrations: o,
-                        applicationsShelf: d,
-                        integrationsFetchState: c,
+                        installedIntegrations: u,
+                        applicationsShelf: c,
+                        integrationsFetchState: d,
                         applicationsShelfFetchState: f
-                    } = (0, r.useStateFromStoresObject)([u.default], () => ({
-                        installedIntegrations: u.default.getIntegrations(t),
-                        applicationsShelf: u.default.getApplicationsShelf(),
-                        integrationsFetchState: u.default.getIntegrationsFetchState(t),
-                        applicationsShelfFetchState: u.default.getApplicationsShelfFetchState()
+                    } = (0, r.useStateFromStoresObject)([o.default], () => ({
+                        installedIntegrations: o.default.getIntegrations(t),
+                        applicationsShelf: o.default.getApplicationsShelf(),
+                        integrationsFetchState: o.default.getIntegrationsFetchState(t),
+                        applicationsShelfFetchState: o.default.getApplicationsShelfFetchState()
                     }));
                 i.useEffect(() => {
-                    n && ((c === u.FetchState.NOT_FETCHED || c === u.FetchState.FETCH_FAILED) && (0, s.fetchPrivateChannelIntegrations)(t), (f === u.FetchState.NOT_FETCHED || f === u.FetchState.FETCH_FAILED) && (0, s.fetchApplicationsShelf)())
-                }, [n, t, c, f]);
-                let p = new Set(o.map(e => e.application.id)),
-                    h = d.filter(e => !p.has(e.id));
+                    n && ((d === o.FetchState.NOT_FETCHED || d === o.FetchState.FETCH_FAILED) && (0, s.fetchPrivateChannelIntegrations)(t), (f === o.FetchState.NOT_FETCHED || f === o.FetchState.FETCH_FAILED) && (0, s.fetchApplicationsShelf)())
+                }, [n, t, d, f]);
+                let p = new Set(u.map(e => e.application.id)),
+                    h = c.filter(e => !p.has(e.id));
                 return {
-                    installedIntegrations: o,
+                    installedIntegrations: u,
                     availableApplications: h,
-                    applicationsShelf: d,
-                    fetched: c !== u.FetchState.NOT_FETCHED && c !== u.FetchState.FETCHING && f !== u.FetchState.NOT_FETCHED && f !== u.FetchState.FETCHING,
+                    applicationsShelf: c,
+                    fetched: d !== o.FetchState.NOT_FETCHED && d !== o.FetchState.FETCHING && f !== o.FetchState.NOT_FETCHED && f !== o.FetchState.FETCHING,
                     appsInGDMEnabled: n
                 }
             }
@@ -1582,34 +1663,34 @@
             var i, r, l = n("446674"),
                 a = n("913144"),
                 s = n("653047"),
-                u = n("946028");
+                o = n("946028");
             (r = i || (i = {}))[r.NOT_FETCHED = 0] = "NOT_FETCHED", r[r.FETCHING = 1] = "FETCHING", r[r.FETCHED = 2] = "FETCHED", r[r.FETCH_FAILED = 3] = "FETCH_FAILED";
-            let o = new Map,
-                d = new Map,
-                c = [],
+            let u = new Map,
+                c = new Map,
+                d = [],
                 f = 0,
                 p = [];
             class h extends l.default.Store {
                 getIntegrations(e) {
                     var t;
-                    return null !== (t = o.get(e)) && void 0 !== t ? t : p
+                    return null !== (t = u.get(e)) && void 0 !== t ? t : p
                 }
                 getIntegration(e, t) {
                     var n;
-                    return null === (n = o.get(e)) || void 0 === n ? void 0 : n.find(e => e.application.id === t)
+                    return null === (n = u.get(e)) || void 0 === n ? void 0 : n.find(e => e.application.id === t)
                 }
                 getAllIntegrations() {
-                    return o
+                    return u
                 }
                 getIntegrationsFetchState(e) {
                     var t;
-                    return null !== (t = d.get(e)) && void 0 !== t ? t : 0
+                    return null !== (t = c.get(e)) && void 0 !== t ? t : 0
                 }
                 getApplicationsShelfFetchState() {
                     return f
                 }
                 getApplicationsShelf() {
-                    return c
+                    return d
                 }
             }
 
@@ -1619,17 +1700,17 @@
             h.displayName = "PrivateChannelIntegrationStore";
             let m = new h(a.default, {
                 LOGOUT() {
-                    o.clear()
+                    u.clear()
                 },
                 CONNECTION_OPEN() {
-                    o.clear(), d.clear()
+                    u.clear(), c.clear()
                 },
                 CHANNEL_SELECT(e) {
                     let {
                         channelId: t
                     } = e;
-                    if (null == t || 3 !== d.get(t)) return !1;
-                    d.set(t, 0)
+                    if (null == t || 3 !== c.get(t)) return !1;
+                    c.set(t, 0)
                 },
                 APPLICATIONS_SHELF_FETCH_START() {
                     f = 1
@@ -1638,7 +1719,7 @@
                     let {
                         applications: t
                     } = e;
-                    c = t.map(s.default.createFromServer).sort((e, t) => e.name.localeCompare(t.name)), f = 2
+                    d = t.map(s.default.createFromServer).sort((e, t) => e.name.localeCompare(t.name)), f = 2
                 },
                 APPLICATIONS_SHELF_FETCH_FAIL() {
                     f = 3
@@ -1647,50 +1728,50 @@
                     let {
                         channelId: t
                     } = e;
-                    o.set(t, null), d.set(t, 1)
+                    u.set(t, null), c.set(t, 1)
                 },
                 FETCH_PRIVATE_CHANNEL_INTEGRATIONS_SUCCESS(e) {
                     let {
                         channelId: t,
                         integrations: n
                     } = e;
-                    o.set(t, S(n.map(u.createPrivateChannelIntegration))), d.set(t, 2)
+                    u.set(t, S(n.map(o.createPrivateChannelIntegration))), c.set(t, 2)
                 },
                 FETCH_PRIVATE_CHANNEL_INTEGRATIONS_FAIL(e) {
                     let {
                         channelId: t
                     } = e;
-                    d.set(t, 3)
+                    c.set(t, 3)
                 },
                 PRIVATE_CHANNEL_INTEGRATION_CREATE(e) {
                     let {
                         integration: t
-                    } = e, n = o.get(t.channel_id);
+                    } = e, n = u.get(t.channel_id);
                     if (null == n) return !1;
-                    o.set(t.channel_id, S([...n, (0, u.createPrivateChannelIntegration)(t)]))
+                    u.set(t.channel_id, S([...n, (0, o.createPrivateChannelIntegration)(t)]))
                 },
                 PRIVATE_CHANNEL_INTEGRATION_UPDATE(e) {
                     let {
                         integration: t
-                    } = e, n = o.get(t.channel_id);
+                    } = e, n = u.get(t.channel_id);
                     if (null == n) return !1;
-                    let i = (0, u.createPrivateChannelIntegration)(t),
+                    let i = (0, o.createPrivateChannelIntegration)(t),
                         r = n.findIndex(e => e.application.id === i.application.id),
-                        l = [...n]; - 1 === r ? l.push(i) : l[r] = i, o.set(i.channel_id, S(l))
+                        l = [...n]; - 1 === r ? l.push(i) : l[r] = i, u.set(i.channel_id, S(l))
                 },
                 PRIVATE_CHANNEL_INTEGRATION_DELETE(e) {
                     let {
                         channelId: t,
                         applicationId: n
-                    } = e, i = o.get(t);
+                    } = e, i = u.get(t);
                     if (null == i) return !1;
-                    o.set(t, i.filter(e => e.application.id !== n))
+                    u.set(t, i.filter(e => e.application.id !== n))
                 },
                 CHANNEL_DELETE(e) {
                     let {
                         channel: t
                     } = e;
-                    return o.delete(t.id)
+                    return u.delete(t.id)
                 }
             });
             var _ = m
@@ -1764,18 +1845,18 @@
                 l = n("913144"),
                 a = n("915639"),
                 s = n("928460"),
-                u = n("449008");
-            let o = {},
-                d = {},
+                o = n("449008");
+            let u = {},
                 c = {},
+                d = {},
                 f = {};
 
             function p(e) {
                 let t = e.id,
                     n = e.sku.id,
-                    i = o[t],
+                    i = u[t],
                     r = s.default.createFromServer(e);
-                !(null != i && !i.isSlimDirectoryVersion() && r.isSlimDirectoryVersion()) && (!1 === e.published ? (null == c[n] && (c[n] = new Set), c[n].add(t)) : f[n] = t, o[t] = r)
+                !(null != i && !i.isSlimDirectoryVersion() && r.isSlimDirectoryVersion()) && (!1 === e.published ? (null == d[n] && (d[n] = new Set), d[n].add(t)) : f[n] = t, u[t] = r)
             }
 
             function h(e, t) {
@@ -1790,7 +1871,7 @@
             }
 
             function m() {
-                o = {}, f = {}, c = {}, d = {}
+                u = {}, f = {}, d = {}, c = {}
             }
 
             function _() {
@@ -1802,18 +1883,18 @@
                     this.waitFor(a.default), this.syncWith([a.default], _), i = a.default.locale
                 }
                 get(e) {
-                    return o[e]
+                    return u[e]
                 }
                 getForSKU(e, t) {
                     let n = f[e];
-                    return null != t ? d[h(t, e)] : null != n ? o[n] : null
+                    return null != t ? c[h(t, e)] : null != n ? u[n] : null
                 }
                 getUnpublishedForSKU(e) {
-                    let t = c[e];
-                    return null == t ? [] : Array.from(t).map(e => o[e]).filter(u.isNotNullish)
+                    let t = d[e];
+                    return null == t ? [] : Array.from(t).map(e => u[e]).filter(o.isNotNullish)
                 }
                 getForChannel(e, t) {
-                    return d[h(e, t)]
+                    return c[h(e, t)]
                 }
                 getStoreListing(e) {
                     let {
@@ -1846,7 +1927,7 @@
                     } = e;
                     if (null != n) {
                         let e = s.default.createFromServer(t);
-                        d[h(n, e.skuId)] = e, f[e.skuId] = e.id
+                        c[h(n, e.skuId)] = e, f[e.skuId] = e.id
                     } else p(t)
                 },
                 USER_SETTINGS_PROTO_UPDATE: _,
@@ -1891,52 +1972,52 @@
                     return i
                 },
                 default: function() {
-                    return c
+                    return d
                 }
             }), n("70102");
             var i, r, l = n("37983");
             n("884691");
             var a = n("414456"),
                 s = n.n(a),
-                u = n("75196"),
-                o = n("741460");
+                o = n("75196"),
+                u = n("741460");
             (r = i || (i = {})).LEFT = "LEFT", r.RIGHT = "RIGHT", r.UP = "UP", r.DOWN = "DOWN", r.UP_LEFT = "UP_LEFT", r.DOWN_RIGHT = "DOWN_RIGHT";
-            let d = e => {
+            let c = e => {
                 let {
                     width: t = 24,
                     height: n = 24,
                     color: i = "currentColor",
                     direction: r,
                     foreground: a,
-                    className: d,
-                    title: c,
+                    className: c,
+                    title: d,
                     ...f
                 } = e;
                 return (0, l.jsxs)("svg", {
-                    ...(0, u.default)(f),
+                    ...(0, o.default)(f),
                     width: t,
                     height: n,
-                    className: s(d, function(e) {
+                    className: s(c, function(e) {
                         switch (e) {
                             case "LEFT":
-                                return o.left;
+                                return u.left;
                             case "RIGHT":
-                                return o.right;
+                                return u.right;
                             case "UP":
                                 return null;
                             case "DOWN":
-                                return o.down;
+                                return u.down;
                             case "UP_LEFT":
-                                return o.upLeft;
+                                return u.upLeft;
                             case "DOWN_RIGHT":
-                                return o.downRight;
+                                return u.downRight;
                             default:
                                 throw Error("Invalid Direction ".concat(e))
                         }
                     }(r)),
                     viewBox: "0 0 24 24",
-                    children: [null != c ? (0, l.jsx)("title", {
-                        children: c
+                    children: [null != d ? (0, l.jsx)("title", {
+                        children: d
                     }) : null, (0, l.jsx)("polygon", {
                         className: a,
                         fill: i,
@@ -1945,8 +2026,8 @@
                     })]
                 })
             };
-            d.Directions = i;
-            var c = d
+            c.Directions = i;
+            var d = c
         },
         600785: function(e, t, n) {
             "use strict";
@@ -2023,10 +2104,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 canInstallApplication: function() {
-                    return o
+                    return u
                 },
                 installApplication: function() {
-                    return d
+                    return c
                 }
             });
             var i = n("394846"),
@@ -2034,47 +2115,47 @@
                 l = n("33942"),
                 a = n("599110"),
                 s = n("128259"),
-                u = n("49111");
+                o = n("49111");
 
-            function o(e, t, n) {
+            function u(e, t, n) {
                 return null != t || null != n
             }
 
-            function d(e) {
+            function c(e) {
                 let {
                     applicationId: t,
                     customInstallUrl: n,
-                    installParams: o,
-                    guildId: d,
-                    channelId: c,
+                    installParams: u,
+                    guildId: c,
+                    channelId: d,
                     disableGuildSelect: f,
                     source: p
                 } = e;
-                if (null != n) return a.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                if (null != n) return a.default.track(o.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
                     application_id: t,
-                    guild_id: d,
+                    guild_id: c,
                     auth_type: "custom_url",
                     source: p,
                     device_platform: i.isMobile ? "mobile_web" : "desktop_web"
                 }), (0, s.handleClick)({
                     href: n
                 });
-                null != o && (a.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                null != u && (a.default.track(o.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
                     application_id: t,
-                    guild_id: d,
+                    guild_id: c,
                     auth_type: "in_app",
                     source: p,
                     device_platform: i.isMobile ? "mobile_web" : "desktop_web"
                 }), (0, l.openOAuth2Modal)({
-                    guildId: d,
+                    guildId: c,
                     clientId: t,
-                    scopes: o.scopes,
-                    channelId: c,
+                    scopes: u.scopes,
+                    channelId: d,
                     disableGuildSelect: f,
-                    permissions: null != o.permissions ? r.default.deserialize(o.permissions) : void 0
+                    permissions: null != u.permissions ? r.default.deserialize(u.permissions) : void 0
                 }))
             }
         }
     }
 ]);
-//# sourceMappingURL=62768.41de9bf94c0f314cc33e.js.map
+//# sourceMappingURL=62768.3bd3b009dc2945b07d60.js.map

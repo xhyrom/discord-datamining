@@ -511,6 +511,7 @@
                 APP_LAUNCHER_COMMAND_NOT_FOUND_TITLE: "No command found",
                 APP_LAUNCHER_COMMAND_NOT_FOUND_BODY: "This command is not available",
                 APP_LAUNCHER_NO_PERMISSIONS_STATE_BODY: "You don't have permission to use any apps in this channel",
+                APP_LAUNCHER_PREVIOUSLY_EXECUTED_COMMAND_OPEN: "Open Command",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -898,6 +899,7 @@
                 EMBEDDED_ACTIVITIES_DEVELOPER_ACTIVITY: "In Development",
                 EMBEDDED_ACTIVITIES_INTERACTION_EMBED_ENDED: "Activity has ended.",
                 EMBEDDED_ACTIVITIES_INTERACTION_EMBED_NO_PRESENCE: "Activity has started.",
+                EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE: "You cannot launch this activity in a server with more than 25 members",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED: "Activity has ended",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity has started",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION: "You do not have permissions to join this Voice Channel.",
@@ -3370,7 +3372,7 @@
                 KEYBIND_DESCRIPTION_TOGGLE_VOICE_MODE: "Toggle to switch between Push To Talk and Voice Activity mode.",
                 KEYBIND_DESCRIPTION_TOGGLE_OVERLAY_INPUT_LOCK: "Toggle overlay interactivity lock.",
                 KEYBIND_DESCRIPTION_TOGGLE_STREAMER_MODE: "Toggle to enable/disable Streamer Mode.",
-                KEYBIND_DESCRIPTION_TOGGLE_GO_LIVE_STREAMING: "Toggle to start/stop streaming in your current voice channel. Streams can only be started with this keybind if Discord recognizes the game you are currently playing.",
+                KEYBIND_DESCRIPTION_TOGGLE_GO_LIVE_STREAMING: "Toggle to start/stop streaming the foreground game or window in your current voice channel.",
                 KEYBIND_DESCRIPTION_NAVIGATE_BACK: "Navigate backward in page history",
                 KEYBIND_DESCRIPTION_NAVIGATE_FORWARD: "Navigate forward in page history",
                 KEYBIND_UNASSIGNED: "Unassigned",
@@ -9391,6 +9393,7 @@
                 GO_LIVE_WATCHING_USER: "Watching {username}",
                 GO_LIVE_MODAL_NOTIFY_FRIENDS_CHECKBOX_LABEL: "Notify my friends in this server that I'm streaming.",
                 GO_LIVE_MODAL_ENABLE_SCREEN_SOUNDSHARE_LABEL: "Also share system audio.",
+                GO_LIVE_HOTKEY_HINT: "**Pro Tip**: Share the foreground window with $[!!{keybind}!!](keybindHook)",
                 VOICE_CHANNEL_EFFECTS: "Voice Channel Effects",
                 VOICE_CHANNEL_EFFECTS_COOLDOWN: "Reaction Cooldown {seconds}s",
                 VOICE_CHANNEL_EFFECTS_MORE: "More Reactions",
@@ -13312,6 +13315,35 @@
                 MEMBER_SAFETY_JOIN_TYPE_HUB: "Student Hub",
                 MEMBER_SAFETY_INVITER_TOOLTIP: "Invited by",
                 MEMBER_SAFETY_INVITER_BOT_TOOLTIP: "Added by Bot",
+                MEMBER_SAFETY_JOIN_TYPE_FILTER_NAME: "Other Join Methods",
+                MEMBER_SAFETY_JOIN_TYPE_HUB_LABEL_NAME: "Hub",
+                MEMBER_SAFETY_JOIN_TYPE_VANITY_URL_LABEL_NAME: "{vanityUrl} (Vanity)",
+                MEMBER_SAFETY_JOIN_TYPE_VANITY_URL: "Vanity URL",
+                MEMBER_SAFETY_JOIN_TYPE_BOT_LABEL_NAME: "Bot (OAuth2)",
+                MEMBER_SAFETY_JOIN_TYPE_LABEL_NAME: "Member Joined Via",
+                MEMBER_SAFETY_INVITE_CODE_: "Member Joined Via",
+                MEMBER_SAFETY_INVITE_CODE_SEARCH_PLACEHOLDER: "Enter invite code...",
+                MEMBER_SAFETY_JOIN_TYPE_INVITE: "Server Invite",
+                MEMBER_SAFETY_JOIN_TYPE_VANITY: "Vanity URL",
+                MEMBER_SAFETY_INTEGRATION_TYPE_DISCORD: "Discord",
+                MEMBER_SAFETY_INTEGRATION_TYPE_TWITCH: "Twitch",
+                MEMBER_SAFETY_INTEGRATION_TYPE_YOUTUBE: "YouTube",
+                MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION: "Server Subscription",
+                MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP: "Engaged in suspected spam activity",
+                MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "User can't talk in server until they change their member name",
+                MEMBER_SAFETY_DATE_OPTION_LABEL_ALL: "All",
+                MEMBER_SAFETY_DATE_OPTION_LABEL_1_HOUR: "Past 1 hr",
+                MEMBER_SAFETY_DATE_OPTION_LABEL_24_HOURS: "Past 24 hrs",
+                MEMBER_SAFETY_DATE_OPTION_LABEL_7_DAYS: "Past 7 days",
+                MEMBER_SAFETY_DATE_OPTION_LABEL_2_WEEKS: "Past 2 weeks",
+                MEMBER_SAFETY_DATE_OPTION_LABEL_4_WEEKS: "Past 4 weeks",
+                MEMBER_SAFETY_DATE_OPTION_LABEL_3_MONTHS: "Past 3 months",
+                MEMBER_SAFETY_DATE_OPTION_LABEL_CUSTOM: "Custom Range",
+                MEMBER_SAFETY_DATE_OPTION_AFTER: "After Date",
+                MEMBER_SAFETY_DATE_OPTION_BEFORE: "Before Date",
+                MEMBER_SAFETY_JOINED_DATE_LABEL: "Member Since Date Options",
+                MEMBER_SAFETY_ACCOUNT_AGE_LABEL: "Discord Join Date Options",
+                MEMBER_SAFETY_JOIN_METHOD_LABEL: "Server Join Method Options",
                 GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE: "Show Members In Channel List",
                 GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION: "Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.",
                 GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED: "The members page has been moved to the server channel list. [Go There](onClick)",
@@ -16170,6 +16202,8 @@
                 CLIPS_SETTINGS_FRAMERATE_NOTE: "This is the maximum frame rate your clips will be recorded at.",
                 CLIPS_CROP_START: "Crop Start",
                 CLIPS_CROP_END: "Crop End",
+                CLIPS_ATTACHMENT_UTILITIES_SPOILER: "Spoiler Clip",
+                CLIPS_ATTACHMENT_UTILITIES_REMOVE: "Remove Clip",
                 SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
                 SOUND_INCOMING_RING_EOY_2023: "Seasonal Incoming Ring",
                 CUSTOM_SOUNDS: "Custom Sounds",
@@ -16463,6 +16497,10 @@
                 CREATE_POLL_ALT_TEXT_LABEL: "Image Description (Alt Text)",
                 CREATE_POLL_ALT_TEXT_SCREEN_READER_HINT: "Alt text:",
                 POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
+                EXPRESSION_PICKER_UPLOAD: "Upload",
+                EXPRESSION_PICKER_UPLOAD_IMAGE_TAG: "IMAGE",
+                EXPRESSION_PICKER_UPLOAD_DESCRIPTION: "Drag and drop or click to upload an image",
+                EXPRESSION_PICKER_UPLOAD_ARIA: "Upload an image",
                 SUMMONED: "Summoned!",
                 WAVED_AT_USER: "\uD83D\uDC4B You waved at !!{username}!!",
                 WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
@@ -16487,7 +16525,12 @@
                 QUESTS_ACCEPT_TOOLTIP: "Accept the quest and complete the task to unlock the reward",
                 QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
                 QUESTS_STREAM_TASK: "Stream for {minutes} minutes",
-                QUEST_REWARD: "Win {reward}"
+                QUEST_REWARD: "Win {reward}",
+                FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
+                PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
+                PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
+                DEADCHAT_ACTION_CAMERA: "My View",
+                DEADCHAT_ACTION_STICKER: "Surprise Me"
             })
         },
         444051: function(e, _, E) {
@@ -16667,26 +16710,6 @@
                 VOICE_CHANNEL_TYPE: "Voice",
                 FORUM_CHANNEL_TYPE: "Forum",
                 TEXT_CHANNEL_TYPE: "Text",
-                MEMBER_SAFETY_JOIN_TYPE_INVITE: "Server Invite",
-                MEMBER_SAFETY_JOIN_TYPE_VANITY: "Vanity URL",
-                MEMBER_SAFETY_INTEGRATION_TYPE_DISCORD: "Discord",
-                MEMBER_SAFETY_INTEGRATION_TYPE_TWITCH: "Twitch",
-                MEMBER_SAFETY_INTEGRATION_TYPE_YOUTUBE: "YouTube",
-                MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION: "Server Subscription",
-                MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP: "Engaged in suspected spam activity",
-                MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "User can't talk in server until they change their member name",
-                MEMBER_SAFETY_DATE_OPTION_LABEL_ALL: "All",
-                MEMBER_SAFETY_DATE_OPTION_LABEL_1_HOUR: "Past 1 hr",
-                MEMBER_SAFETY_DATE_OPTION_LABEL_24_HOURS: "Past 24 hrs",
-                MEMBER_SAFETY_DATE_OPTION_LABEL_7_DAYS: "Past 7 days",
-                MEMBER_SAFETY_DATE_OPTION_LABEL_2_WEEKS: "Past 2 weeks",
-                MEMBER_SAFETY_DATE_OPTION_LABEL_4_WEEKS: "Past 4 weeks",
-                MEMBER_SAFETY_DATE_OPTION_LABEL_3_MONTHS: "Past 3 months",
-                MEMBER_SAFETY_DATE_OPTION_LABEL_CUSTOM: "Custom Range",
-                MEMBER_SAFETY_DATE_OPTION_AFTER: "After Date",
-                MEMBER_SAFETY_DATE_OPTION_BEFORE: "Before Date",
-                MEMBER_SAFETY_JOINED_DATE_LABEL: "Member Since Date Options",
-                MEMBER_SAFETY_ACCOUNT_AGE_LABEL: "Discord Join Date Options",
                 BAN_MULTIPLE_CONFIRM_TITLE: "Would you like to ban {count, plural, one {1 member} other {{count} members}}?",
                 BAN_MULTIPLE_SUCCESS_TOAST: "Mass ban succesful",
                 BAN_MULTIPLE_FAILED_TOAST: "Mass ban failed",
@@ -16806,10 +16829,6 @@
                 CHANNEL_PROMPT_RANDOM_STICKER_CTA: "Random sticker",
                 DEADCHAT_PROMPT_1: "It's quiet in here.",
                 CHANNEL_PROMPT_GAMING_CTA: "Get my stats!",
-                FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
-                PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
-                DEADCHAT_ACTION_CAMERA: "My View",
-                DEADCHAT_ACTION_STICKER: "Surprise Me",
                 USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_MINIMAL: "Minimal",
                 SERVER_USAGE_SURVEY_BODY: "Help us make Discord better by answering a few questions about !!{guildName}!!",
                 SERVER_USAGE_SURVEY_CTA: "Take Survey",
@@ -18069,7 +18088,7 @@
                 L = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259781", ", Version Hash: ").concat("ed42aff24d25b514f0354f26ce2996edbbc7d121")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260101", ", Version Hash: ").concat("e220e7575d383f42fd0070b786df9346b3c5d213")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19599,7 +19618,7 @@
                     inlineRequire: () => E("129040").default
                 },
                 ClipsManager: {
-                    actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
+                    actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAME_TOGGLE_DETECTION", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
                     inlineRequire: () => E("332491").default
                 },
                 BroadcastingManager: {
@@ -20347,8 +20366,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "259781", "259781"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259781")), _ = 0), _
+                let _ = parseInt((e = "260101", "260101"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260101")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -20909,7 +20928,8 @@
                         CLIPS_INIT_FAILURE: e => this.handleClipsInitFailure(e),
                         CLIPS_SETTINGS_UPDATE: e => this.applyNativeClipsSettings(e),
                         STREAM_START: () => this.applyNativeClipsSettings(),
-                        RUNNING_GAMES_CHANGE: e => this.fireClipsInitEventHelper(e),
+                        RUNNING_GAME_TOGGLE_DETECTION: e => this.handleClipsInitOnToggleDetection(e),
+                        RUNNING_GAMES_CHANGE: e => this.handleClipsInitOnGamesChange(e),
                         CLIPS_RESTART: () => this.fireClipsInitEvent(),
                         RTC_CONNECTION_VIDEO: e => this.handleRTCConnectionVideo(e),
                         RTC_CONNECTION_STATE: e => this.handleRTCConnectionState(e),
@@ -20955,10 +20975,14 @@
                         t = (E.clipsEnabled || E.decoupledClipsEnabled) && _;
                     r.default.getMediaEngine().setClipBufferLength(t ? E.clipsLength / 1e3 : 0), ((null == e ? void 0 : e.settings.decoupledClipsEnabled) || (null == e ? void 0 : e.settings.clipsQuality) != null) && this.fireClipsInitEvent()
                 }
-                fireClipsInitEventHelper(e) {
+                handleClipsInitOnToggleDetection(e) {
+                    let _ = i.default.getVisibleGame();
+                    null != _ && _.id === e.game.id && this.fireClipsInitEvent()
+                }
+                handleClipsInitOnGamesChange(e) {
                     let _ = i.default.getVisibleGame();
                     if (null == _) return;
-                    let E = !!e.added.find(e => e.pid === (null == _ ? void 0 : _.pid));
+                    let E = !!e.added.find(e => e.pid === _.pid);
                     E ? setTimeout(() => this.fireClipsInitEvent(), N.CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY) : this.fireClipsInitEvent()
                 }
                 fireClipsInitEvent() {
@@ -35612,4 +35636,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6575.f53dfec4262a2b29c303.js.map
+//# sourceMappingURL=6575.507fad3ad28f9e5198cf.js.map

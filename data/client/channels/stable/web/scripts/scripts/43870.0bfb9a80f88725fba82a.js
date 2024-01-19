@@ -22,29 +22,29 @@
                         animateOnHover: E = !1,
                         showPending: s = !1,
                         showTryItOut: _ = !1,
-                        avatarDecorationOverride: S
-                    } = t, [d, C] = n.useState(!1), I = (0, i.useStateFromStores)([o.default], () => o.default.useReducedMotion), A = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), f = (0, i.useStateFromStores)([l.default], () => {
+                        avatarDecorationOverride: d
+                    } = t, [S, C] = n.useState(!1), I = (0, i.useStateFromStores)([o.default], () => o.default.useReducedMotion), f = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), A = (0, i.useStateFromStores)([l.default], () => {
                         var t;
                         return null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id
                     }), v = (0, i.useStateFromStores)([l.default], () => {
                         var t;
                         return null === (t = l.default.getUser(null == e ? void 0 : e.id)) || void 0 === t ? void 0 : t.avatarDecoration
                     }), {
-                        pendingAvatarDecoration: O
+                        pendingAvatarDecoration: N
                     } = (0, u.default)({
                         isTryItOut: _
-                    }), N = A && (d || !I && !E), R = s && void 0 !== O && void 0 !== f && f === (null == e ? void 0 : e.id) ? O : null != v ? v : null == e ? void 0 : e.avatarDecoration, P = n.useMemo(() => (0, T.getAvatarDecorationURL)({
-                        avatarDecoration: void 0 !== S ? S : R,
-                        canAnimate: N,
+                    }), O = f && (S || !I && !E), R = s && void 0 !== N && void 0 !== A && A === (null == e ? void 0 : e.id) ? N : null != v ? v : null == e ? void 0 : e.avatarDecoration, P = n.useMemo(() => (0, T.getAvatarDecorationURL)({
+                        avatarDecoration: void 0 !== d ? d : R,
+                        canAnimate: O,
                         size: r
-                    }), [R, N, r, S]), g = n.useCallback(() => C(!0), []), U = n.useCallback(() => C(!1), []);
+                    }), [R, O, r, d]), U = n.useCallback(() => C(!0), []), g = n.useCallback(() => C(!1), []);
                     return {
                         avatarPlaceholderSrc: c,
                         avatarDecorationSrc: P,
-                        isAvatarDecorationAnimating: N,
+                        isAvatarDecorationAnimating: O,
                         eventHandlers: {
-                            onMouseEnter: g,
-                            onMouseLeave: U
+                            onMouseEnter: U,
+                            onMouseLeave: g
                         }
                     }
                 }
@@ -66,16 +66,16 @@
                 E = new Map,
                 s = c,
                 _ = E,
-                S = !1;
-            let d = () => {
-                s = c, _ = E, i = void 0, S = !1, n = void 0
+                d = !1;
+            let S = () => {
+                s = c, _ = E, i = void 0, d = !1, n = void 0
             };
             class C extends u.default.Store {
                 initialize() {
-                    this.syncWith([a.default], d)
+                    this.syncWith([a.default], S)
                 }
                 get isFetching() {
-                    return S
+                    return d
                 }
                 get error() {
                     return n
@@ -103,140 +103,139 @@
             C.displayName = "CollectiblesCategoryStore";
             var I = new C(l.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: t => {
-                    S = !0, n = void 0
+                    d = !0, n = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: t => {
-                    0 === t.categories.length ? (s = c, _ = E) : !(0, o.isEqual)([...s.values()], t.categories) && (s = new Map(t.categories.map(t => [t.skuId, t])), _ = new Map((0, T.getProductsFromCategories)(s).map(t => [t.skuId, t]))), i = Date.now(), S = !1, n = void 0
+                    0 === t.categories.length ? (s = c, _ = E) : !(0, o.isEqual)([...s.values()], t.categories) && (s = new Map(t.categories.map(t => [t.skuId, t])), _ = new Map((0, T.getProductsFromCategories)(s).map(t => [t.skuId, t]))), i = Date.now(), d = !1, n = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: t => {
                     let {
                         error: e
                     } = t;
-                    s = c, _ = E, S = !1, n = e
+                    s = c, _ = E, d = !1, n = e
                 },
                 COLLECTIBLES_PRODUCT_FETCH: t => {
-                    S = !0, n = void 0
+                    d = !0, n = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: t => {
-                    _.set(t.product.skuId, t.product), S = !1, n = void 0
+                    _.set(t.product.skuId, t.product), d = !1, n = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: t => {
                     let {
                         error: e
                     } = t;
-                    S = !1, n = e
+                    d = !1, n = e
                 },
-                LOGOUT: d
+                LOGOUT: S
             })
         },
         491232: function(t, e, r) {
             "use strict";
             r.r(e), r.d(e, {
                 isPremiumCollectiblesProduct: function() {
-                    return E
+                    return c
                 },
                 isPremiumCollectiblesPurchase: function() {
-                    return s
+                    return E
                 },
                 getFormattedPriceForCollectiblesProduct: function() {
-                    return _
+                    return s
                 },
                 extractPriceByPurchaseTypes: function() {
-                    return S
+                    return _
                 },
                 isFreeCollectiblesProduct: function() {
                     return d
                 },
                 getProductsFromCategories: function() {
-                    return C
+                    return S
                 },
                 getAvatarDecorationsFromPurchases: function() {
                     return f
                 },
                 getAvatarDecorationsFromCategories: function() {
-                    return v
+                    return A
                 },
                 getCollectiblesAssetURL: function() {
-                    return O
+                    return v
                 },
                 getProfileEffectsFromPurchases: function() {
                     return N
                 },
                 getProfileEffectsFromCategories: function() {
-                    return R
+                    return O
                 },
                 groupProfileEffects: function() {
-                    return P
+                    return R
                 },
                 isCollectiblesGiftCode: function() {
-                    return g
+                    return P
                 }
             }), r("222007");
             var n = r("917351"),
-                i = r("635058"),
-                o = r("265586"),
-                u = r("407063"),
-                l = r("153160"),
-                a = r("730297"),
-                T = r("806410"),
-                c = r("49111");
-            let E = t => (null == t ? void 0 : t.categorySkuId) === i.CollectiblesCategorySkuId.DISXCORE,
-                s = t => (null == t ? void 0 : t.purchaseType) === c.EntitlementTypes.PREMIUM_PURCHASE,
-                _ = (t, e) => {
-                    let r = S(t, e ? c.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : c.PriceSetAssignmentPurchaseTypes.DEFAULT);
-                    return null == r ? "" : (0, l.formatPrice)(null == r ? void 0 : r.amount, null == r ? void 0 : r.currency)
+                i = r("265586"),
+                o = r("407063"),
+                u = r("153160"),
+                l = r("730297"),
+                a = r("806410"),
+                T = r("49111");
+            let c = t => (null == t ? void 0 : t.premiumType) != null,
+                E = t => (null == t ? void 0 : t.purchaseType) === T.EntitlementTypes.PREMIUM_PURCHASE,
+                s = (t, e) => {
+                    let r = _(t, e ? T.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : T.PriceSetAssignmentPurchaseTypes.DEFAULT);
+                    return null == r ? "" : (0, u.formatPrice)(null == r ? void 0 : r.amount, null == r ? void 0 : r.currency)
                 },
-                S = (t, e) => {
+                _ = (t, e) => {
                     var r, n, i;
                     let o = null !== (i = t.prices[e]) && void 0 !== i ? i : null;
                     return null == o ? null : null === (n = o.countryPrices) || void 0 === n ? void 0 : null === (r = n.prices) || void 0 === r ? void 0 : r[0]
                 },
                 d = t => {
                     var e;
-                    return (null === (e = S(t, c.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === e ? void 0 : e.amount) === 0
+                    return (null === (e = _(t, T.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === e ? void 0 : e.amount) === 0
                 },
-                C = t => {
+                S = t => {
                     let e = (0, n.flatMap)([...t.values()], "products");
                     return (0, n.uniqBy)(e, "storeListingId")
                 },
+                C = (t, e) => {
+                    if (e === i.CollectiblesItemType.AVATAR_DECORATION) {
+                        let e = (0, n.flatMap)([...t.values()], "items").filter(l.isAvatarDecorationRecord);
+                        return (0, n.uniqBy)(e, "id")
+                    }
+                    if (e === i.CollectiblesItemType.PROFILE_EFFECT) {
+                        let e = (0, n.flatMap)([...t.values()], "items").filter(a.isProfileEffectRecord);
+                        return (0, n.uniqBy)(e, "id")
+                    }
+                },
                 I = (t, e) => {
-                    if (e === o.CollectiblesItemType.AVATAR_DECORATION) {
-                        let e = (0, n.flatMap)([...t.values()], "items").filter(a.isAvatarDecorationRecord);
-                        return (0, n.uniqBy)(e, "id")
-                    }
-                    if (e === o.CollectiblesItemType.PROFILE_EFFECT) {
-                        let e = (0, n.flatMap)([...t.values()], "items").filter(T.isProfileEffectRecord);
-                        return (0, n.uniqBy)(e, "id")
-                    }
-                },
-                A = (t, e) => {
-                    let r = C(t);
-                    if (e === o.CollectiblesItemType.AVATAR_DECORATION) {
-                        let t = (0, n.flatMap)(r, "items").filter(a.isAvatarDecorationRecord);
+                    let r = S(t);
+                    if (e === i.CollectiblesItemType.AVATAR_DECORATION) {
+                        let t = (0, n.flatMap)(r, "items").filter(l.isAvatarDecorationRecord);
                         return (0, n.uniqBy)(t, "id")
                     }
-                    if (e === o.CollectiblesItemType.PROFILE_EFFECT) {
-                        let t = (0, n.flatMap)(r, "items").filter(T.isProfileEffectRecord);
+                    if (e === i.CollectiblesItemType.PROFILE_EFFECT) {
+                        let t = (0, n.flatMap)(r, "items").filter(a.isProfileEffectRecord);
                         return (0, n.uniqBy)(t, "id")
                     }
                 },
-                f = t => I(t, o.CollectiblesItemType.AVATAR_DECORATION),
-                v = t => A(t, o.CollectiblesItemType.AVATAR_DECORATION),
-                O = (t, e) => {
+                f = t => C(t, i.CollectiblesItemType.AVATAR_DECORATION),
+                A = t => I(t, i.CollectiblesItemType.AVATAR_DECORATION),
+                v = (t, e) => {
                     var r;
                     let {
                         CDN_HOST: n,
                         API_ENDPOINT: i
-                    } = window.GLOBAL_ENV, o = (0, u.getBestMediaProxySize)(e.size * (0, u.getDevicePixelRatio)()), l = null !== (r = null == e ? void 0 : e.format) && void 0 !== r ? r : "png";
-                    if (null != n) return "".concat(location.protocol, "//").concat(n, "/app-assets/").concat(c.COLLECTIBLES_APPLICATION_ID, "/").concat(t, ".").concat(l, "?size=").concat(o);
-                    let a = c.Endpoints.APPLICATION_ASSET(c.COLLECTIBLES_APPLICATION_ID, t, l);
-                    return "".concat(location.protocol).concat(i).concat(a, "?size=").concat(o)
+                    } = window.GLOBAL_ENV, u = (0, o.getBestMediaProxySize)(e.size * (0, o.getDevicePixelRatio)()), l = null !== (r = null == e ? void 0 : e.format) && void 0 !== r ? r : "png";
+                    if (null != n) return "".concat(location.protocol, "//").concat(n, "/app-assets/").concat(T.COLLECTIBLES_APPLICATION_ID, "/").concat(t, ".").concat(l, "?size=").concat(u);
+                    let a = T.Endpoints.APPLICATION_ASSET(T.COLLECTIBLES_APPLICATION_ID, t, l);
+                    return "".concat(location.protocol).concat(i).concat(a, "?size=").concat(u)
                 },
-                N = t => I(t, o.CollectiblesItemType.PROFILE_EFFECT),
-                R = t => A(t, o.CollectiblesItemType.PROFILE_EFFECT),
-                P = (t, e) => {
+                N = t => C(t, i.CollectiblesItemType.PROFILE_EFFECT),
+                O = t => I(t, i.CollectiblesItemType.PROFILE_EFFECT),
+                R = (t, e) => {
                     let r = N(e),
-                        n = R(t).filter(t => {
+                        n = O(t).filter(t => {
                             let {
                                 id: e
                             } = t;
@@ -247,7 +246,7 @@
                         shopPreviews: n
                     }
                 },
-                g = t => t.applicationId === c.COLLECTIBLES_APPLICATION_ID
+                P = t => t.applicationId === T.COLLECTIBLES_APPLICATION_ID
         },
         170313: function(t, e, r) {
             "use strict";
@@ -379,62 +378,62 @@
                     } = (0, i.useStateFromStoresObject)([l.default], () => ({
                         pendingAvatar: e ? l.default.getTryItOutAvatar() : l.default.getPendingAvatar(),
                         pendingAvatarDecoration: e ? l.default.getTryItOutAvatarDecoration() : l.default.getPendingAvatarDecoration()
-                    })), S = (0, n.useCallback)(t => (0, u.setNewPendingAvatar)(t, null == c ? void 0 : c.avatar), [null == c ? void 0 : c.avatar]), d = (0, n.useCallback)(t => {
+                    })), d = (0, n.useCallback)(t => (0, u.setNewPendingAvatar)(t, null == c ? void 0 : c.avatar), [null == c ? void 0 : c.avatar]), S = (0, n.useCallback)(t => {
                         (0, u.setNewPendingAvatarDecoration)(t, null == c ? void 0 : c.avatarDecoration), null != t && E(t)
                     }, [null == c ? void 0 : c.avatarDecoration, E]);
                     return {
                         pendingAvatar: s,
                         pendingAvatarDecoration: _,
-                        setPendingAvatar: e ? T.setTryItOutAvatar : S,
-                        setPendingAvatarDecoration: e ? T.setTryItOutAvatarDecoration : d
+                        setPendingAvatar: e ? T.setTryItOutAvatar : d,
+                        setPendingAvatarDecoration: e ? T.setTryItOutAvatarDecoration : S
                     }
                 }
         },
         790618: function(t, e, r) {
             "use strict";
-            let n, i, o, u, l, a, T, c, E, s, _, S, d, C;
+            let n, i, o, u, l, a, T, c, E, s, _, d, S, C;
             r.r(e), r.d(e, {
                 default: function() {
-                    return p
+                    return D
                 }
             });
             var I = r("265586"),
-                A = r("446674"),
-                f = r("913144"),
+                f = r("446674"),
+                A = r("913144"),
                 v = r("49111");
-            let O = v.FormStates.CLOSED,
-                N = {},
+            let N = v.FormStates.CLOSED,
+                O = {},
                 R = !1;
 
             function P() {
-                O = v.FormStates.OPEN, N = {}
-            }
-
-            function g() {
-                O = v.FormStates.CLOSED, N = {}
+                N = v.FormStates.OPEN, O = {}
             }
 
             function U() {
-                F(), m(), N = {}
+                N = v.FormStates.CLOSED, O = {}
             }
 
-            function F() {
-                n = void 0, i = void 0, o = void 0, u = void 0
+            function g() {
+                m(), F(), O = {}
             }
 
             function m() {
+                n = void 0, i = void 0, o = void 0, u = void 0
+            }
+
+            function F() {
                 l = void 0, a = void 0, T = void 0, c = void 0, E = void 0, u = void 0
             }
 
             function L() {
-                _ = void 0, S = void 0, d = void 0, C = void 0, s = void 0
+                _ = void 0, d = void 0, S = void 0, C = void 0, s = void 0
             }
-            class D extends A.default.Store {
+            class p extends f.default.Store {
                 getFormState() {
-                    return O
+                    return N
                 }
                 getErrors() {
-                    return N
+                    return O
                 }
                 showNotice() {
                     return void 0 !== n || void 0 !== l || void 0 !== a || void 0 !== T || void 0 !== c || void 0 !== E || void 0 !== o || void 0 !== u || void 0 !== i
@@ -486,10 +485,10 @@
                     return _
                 }
                 getTryItOutAvatarDecoration() {
-                    return S
+                    return d
                 }
                 getTryItOutProfileEffectId() {
-                    return d
+                    return S
                 }
                 getTryItOutBanner() {
                     return C
@@ -498,8 +497,8 @@
                     return {
                         tryItOutThemeColors: s,
                         tryItOutAvatar: _,
-                        tryItOutAvatarDecoration: S,
-                        tryItOutProfileEffectId: d,
+                        tryItOutAvatarDecoration: d,
+                        tryItOutProfileEffectId: S,
                         tryItOutBanner: C
                     }
                 }
@@ -507,8 +506,8 @@
                     return R
                 }
             }
-            D.displayName = "UserSettingsAccountStore";
-            var p = new D(f.default, {
+            p.displayName = "UserSettingsAccountStore";
+            var D = new p(A.default, {
                 USER_SETTINGS_ACCOUNT_INIT: P,
                 USER_SETTINGS_MODAL_INIT: P,
                 USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: P,
@@ -518,17 +517,17 @@
                     } = t;
                     return e === v.UserSettingsSections.ACCOUNT && P()
                 },
-                USER_SETTINGS_ACCOUNT_CLOSE: g,
+                USER_SETTINGS_ACCOUNT_CLOSE: U,
                 USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: function() {
-                    U(), L(), g()
+                    g(), L(), U()
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT: function() {
-                    O = v.FormStates.SUBMITTING, N = {}
+                    N = v.FormStates.SUBMITTING, O = {}
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: function(t) {
                     var e;
-                    if (O !== v.FormStates.SUBMITTING) return !1;
-                    O = v.FormStates.OPEN, N = null !== (e = t.errors) && void 0 !== e ? e : {}
+                    if (N !== v.FormStates.SUBMITTING) return !1;
+                    N = v.FormStates.OPEN, O = null !== (e = t.errors) && void 0 !== e ? e : {}
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: function(t) {
                     let {
@@ -552,7 +551,7 @@
                     let {
                         item: e
                     } = t;
-                    (null == e ? void 0 : e.type) === I.CollectiblesItemType.PROFILE_EFFECT ? (S = null, d = null == e ? void 0 : e.id) : (d = null, S = e)
+                    (null == e ? void 0 : e.type) === I.CollectiblesItemType.PROFILE_EFFECT ? (d = null, S = null == e ? void 0 : e.id) : (S = null, d = e)
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: function(t) {
                     let {
@@ -600,13 +599,13 @@
                     let {
                         avatarDecoration: e
                     } = t;
-                    S = e
+                    d = e
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT_ID: function(t) {
                     let {
                         profileEffectId: e
                     } = t;
-                    d = e
+                    S = e
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: function(t) {
                     let {
@@ -621,11 +620,11 @@
                     s = e
                 },
                 USER_SETTINGS_CLEAR_ERRORS: function() {
-                    N = {}
+                    O = {}
                 },
-                USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: F,
-                USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: m,
-                USER_SETTINGS_RESET_ALL_PENDING: U,
+                USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: m,
+                USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: F,
+                USER_SETTINGS_RESET_ALL_PENDING: g,
                 USER_SETTINGS_RESET_ALL_TRY_IT_OUT: L,
                 USER_SETTINGS_RESET_PENDING_AVATAR_DECORATION: function() {
                     o = void 0
@@ -641,15 +640,6 @@
                 }
             })
         },
-        635058: function(t, e, r) {
-            "use strict";
-            var n, i;
-            r.r(e), r.d(e, {
-                CollectiblesCategorySkuId: function() {
-                    return n
-                }
-            }), r("222007"), (i = n || (n = {})).FANTASY = "1144003461608906824", i.ANIME = "1144302037593497701", i.BREAKFAST = "1144054000099012659", i.DISXCORE = "1144058340327047249", i.HALLOWEEN = "1157410718711304313", i.FALL = "1157406994873991284", i.WINTER = "1174459301239197856", i.MONSTERS = "1179493515038818325"
-        },
         265586: function(t, e, r) {
             "use strict";
             var n, i;
@@ -657,8 +647,8 @@
                 CollectiblesItemType: function() {
                     return n
                 }
-            }), (i = n || (n = {}))[i.AVATAR_DECORATION = 0] = "AVATAR_DECORATION", i[i.PROFILE_EFFECT = 1] = "PROFILE_EFFECT"
+            }), (i = n || (n = {}))[i.NONE = 100] = "NONE", i[i.AVATAR_DECORATION = 0] = "AVATAR_DECORATION", i[i.PROFILE_EFFECT = 1] = "PROFILE_EFFECT"
         }
     }
 ]);
-//# sourceMappingURL=43870.9c9752cbddc06795e296.js.map
+//# sourceMappingURL=43870.0bfb9a80f88725fba82a.js.map

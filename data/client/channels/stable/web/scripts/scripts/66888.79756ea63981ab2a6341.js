@@ -8,9 +8,9 @@
                 }
             }), n("222007"), n("70102"), n("843762"), n("424973");
             var r = n("37983"),
-                s = n("884691"),
-                a = n("414456"),
-                i = n.n(a),
+                a = n("884691"),
+                s = n("414456"),
+                i = n.n(s),
                 o = n("817736"),
                 l = n.n(o),
                 u = n("118810"),
@@ -23,7 +23,7 @@
                 S = n("402671"),
                 E = n("866190"),
                 v = n("115279");
-            class T extends s.PureComponent {
+            class T extends a.PureComponent {
                 componentWillUnmount() {
                     var e;
                     null === (e = this.cancelLoadImage) || void 0 === e || e.call(this)
@@ -34,8 +34,8 @@
                             src: t,
                             emojiId: n,
                             emojiName: r,
-                            animated: s,
-                            shouldAnimate: a,
+                            animated: a,
+                            shouldAnimate: s,
                             isFocused: i,
                             isInteracting: o,
                             size: l = "default"
@@ -48,7 +48,7 @@
                         let e = v.EMOJI_SIZE_MAP[l];
                         return p.default.getEmojiURL({
                             id: n,
-                            animated: i && !0 === s && (!0 === a || u || !0 === o),
+                            animated: i && !0 === a && (!0 === s || u || !0 === o),
                             size: e
                         })
                     }
@@ -59,7 +59,7 @@
                     let t;
                     let {
                         emojiName: n,
-                        animated: a,
+                        animated: s,
                         className: o,
                         size: l = "default",
                         alt: u,
@@ -73,10 +73,10 @@
                     return null == S || "" === S ? (0, r.jsx)("span", {
                         className: i("emoji", "emoji-text"),
                         children: n
-                    }) : (a && (t = {
+                    }) : (s && (t = {
                         onMouseEnter: this.onMouseEnter,
                         onMouseLeave: this.onMouseLeave
-                    }), (0, s.createElement)("img", {
+                    }), (0, a.createElement)("img", {
                         ...p,
                         key: this.key,
                         src: S,
@@ -134,21 +134,21 @@
                 };
                 let t = [],
                     n = [],
-                    a = new window.IntersectionObserver(e => {
+                    s = new window.IntersectionObserver(e => {
                         e.forEach(e => {
                             let r = n.find(t => {
                                 let [n] = t;
                                 return n === e.target
                             });
                             if (null == r) return;
-                            let s = r[1];
+                            let a = r[1];
                             if (e.intersectionRatio >= .7) {
-                                var a, i;
-                                if (-1 !== t.indexOf(s)) return;
-                                let n = Math.abs(e.intersectionRect.bottom - Number(null === (a = e.rootBounds) || void 0 === a ? void 0 : a.bottom)) < Math.abs(e.intersectionRect.top - Number(null === (i = e.rootBounds) || void 0 === i ? void 0 : i.top));
-                                n ? t.unshift(s) : t.push(s), s.forceUpdate(), n && t.length > 100 && t[100].forceUpdate()
+                                var s, i;
+                                if (-1 !== t.indexOf(a)) return;
+                                let n = Math.abs(e.intersectionRect.bottom - Number(null === (s = e.rootBounds) || void 0 === s ? void 0 : s.bottom)) < Math.abs(e.intersectionRect.top - Number(null === (i = e.rootBounds) || void 0 === i ? void 0 : i.top));
+                                n ? t.unshift(a) : t.push(a), a.forceUpdate(), n && t.length > 100 && t[100].forceUpdate()
                             } else {
-                                let e = t.indexOf(s); - 1 !== e && (t.splice(e, 1), s.forceUpdate(), e < 100 && t.length >= 100 && t[99].forceUpdate())
+                                let e = t.indexOf(a); - 1 !== e && (t.splice(e, 1), a.forceUpdate(), e < 100 && t.length >= 100 && t[99].forceUpdate())
                             }
                         })
                     }, {
@@ -157,18 +157,18 @@
 
                 function i(e) {
                     let t = l.findDOMNode(e);
-                    (0, u.isElement)(t) && (n.push([t, e]), a.observe(t))
+                    (0, u.isElement)(t) && (n.push([t, e]), s.observe(t))
                 }
 
                 function o(e) {
                     let r = l.findDOMNode(e);
-                    a.unobserve(r);
-                    let s = n.findIndex(t => {
+                    s.unobserve(r);
+                    let a = n.findIndex(t => {
                         let [n, r] = t;
                         return r === e
-                    }); - 1 !== s && (n.splice(s, 1), -1 !== (s = t.indexOf(e)) && (t.splice(s, 1), s < 100 && t.length >= 100 && t[99].forceUpdate()))
+                    }); - 1 !== a && (n.splice(a, 1), -1 !== (a = t.indexOf(e)) && (t.splice(a, 1), a < 100 && t.length >= 100 && t[99].forceUpdate()))
                 }
-                return class extends s.Component {
+                return class extends a.Component {
                     shouldAutoplay(e) {
                         return e.animated && e.autoplay
                     }
@@ -186,15 +186,15 @@
                     render() {
                         let n = t.indexOf(this),
                             {
-                                autoplay: s,
-                                allowAnimatedEmoji: a,
+                                autoplay: a,
+                                allowAnimatedEmoji: s,
                                 ...i
                             } = this.props;
                         return (0, r.jsx)(m.MessagesInteractionContext.Consumer, {
                             children: t => (0, r.jsx)(e, {
                                 ...i,
-                                autoplay: s || !1,
-                                shouldAnimate: -1 !== n && n < 100 && !t.disableAnimations && a
+                                autoplay: a || !1,
+                                shouldAnimate: -1 !== n && n < 100 && !t.disableAnimations && s
                             })
                         })
                     }
@@ -207,11 +207,11 @@
                         autoplay: null == e.autoplay ? t : e.autoplay,
                         allowAnimatedEmoji: t
                     },
-                    s = __OVERLAY__ ? (0, d.useStateFromStores)([h.default], () => h.default.isInstanceFocused()) : (0, E.useIsWindowFocused)();
+                    a = __OVERLAY__ ? (0, d.useStateFromStores)([h.default], () => h.default.isInstanceFocused()) : (0, E.useIsWindowFocused)();
                 return (0, r.jsx)(g, {
                     ...e,
                     ...n,
-                    isFocused: s
+                    isFocused: a
                 })
             }
         },
@@ -224,8 +224,8 @@
             });
             var r = n("37983");
             n("884691");
-            var s = n("414456"),
-                a = n.n(s),
+            var a = n("414456"),
+                s = n.n(a),
                 i = n("446674"),
                 o = n("77078"),
                 l = n("102985"),
@@ -245,7 +245,7 @@
                 let {
                     primary: t,
                     secondary: n,
-                    botType: s,
+                    botType: a,
                     botVerified: i,
                     discriminatorClass: l,
                     className: d,
@@ -255,24 +255,25 @@
                     showStreamerModeTooltip: S
                 } = e;
                 return (0, r.jsxs)("div", {
-                    className: a(h.info, d),
+                    className: s(h.info, d),
                     children: [(0, r.jsx)(o.Tooltip, {
                         text: f.default.Messages.STREAMER_MODE_ENABLED,
                         shouldShow: S,
+                        "aria-label": !!S && void 0,
                         children: e => (0, r.jsx)("span", {
                             ...e,
-                            className: a(h.username, c),
+                            className: s(h.username, c),
                             style: null != m ? {
                                 color: m
                             } : void 0,
                             children: t
                         })
                     }), null != n ? (0, r.jsx)("span", {
-                        className: a(h.infoSpacing, l),
+                        className: s(h.infoSpacing, l),
                         children: n
-                    }) : void 0, null != s && (0, r.jsx)(u.default, {
-                        type: s,
-                        className: a(h.infoSpacing, p),
+                    }) : void 0, null != a && (0, r.jsx)(u.default, {
+                        type: a,
+                        className: s(h.infoSpacing, p),
                         verified: i
                     })]
                 })
@@ -281,15 +282,15 @@
                 let {
                     hideDiscriminator: t = !1,
                     user: n,
-                    nick: s,
-                    forceUsername: a,
+                    nick: a,
+                    forceUsername: s,
                     showAccountIdentifier: o,
                     overrideDiscriminator: u,
                     forcePomelo: f,
                     ...h
-                } = e, S = (0, i.useStateFromStores)([l.default], () => l.default.hidePersonalInformation), E = S || t || n.isNonUserBot(), v = n.toString(), T = c.default.getName(n), g = a ? v : null != s ? s : T, A = n.isPomelo() || f;
+                } = e, S = (0, i.useStateFromStores)([l.default], () => l.default.hidePersonalInformation), E = S || t || n.isNonUserBot(), v = n.toString(), T = c.default.getName(n), g = s ? v : null != a ? a : T, A = n.isPomelo() || f;
                 if (A || g !== v) {
-                    let e = g === v && A && a ? c.default.getUserTag(n, {
+                    let e = g === v && A && s ? c.default.getUserTag(n, {
                             forcePomelo: f
                         }) : g,
                         t = o && e !== "@".concat(v) ? c.default.getUserTag(n) : void 0;
@@ -320,18 +321,18 @@
             });
             var r = n("37983");
             n("884691");
-            var s = n("669491"),
-                a = n("75196");
+            var a = n("669491"),
+                s = n("75196");
             let i = e => {
                 let {
                     width: t = 24,
                     height: n = 24,
-                    color: i = s.default.colors.INTERACTIVE_NORMAL,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
                     colorClass: o = "",
                     ...l
                 } = e;
                 return (0, r.jsxs)("svg", {
-                    ...(0, a.default)(l),
+                    ...(0, s.default)(l),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
@@ -357,14 +358,14 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return a
+                    return s
                 }
             });
             var r = n("446674"),
-                s = n("76393");
+                a = n("76393");
 
-            function a() {
-                return (0, r.useStateFromStores)([s.default], () => null != s.default.getRemoteSessionId() || null != s.default.getAwaitingRemoteSessionInfo())
+            function s() {
+                return (0, r.useStateFromStores)([a.default], () => null != a.default.getRemoteSessionId() || null != a.default.getAwaitingRemoteSessionInfo())
             }
         },
         300322: function(e, t, n) {
@@ -420,8 +421,8 @@
                 }
             });
             var r = n("917351"),
-                s = n.n(r),
-                a = n("316693"),
+                a = n.n(r),
+                s = n("316693"),
                 i = n("446674"),
                 o = n("296892"),
                 l = n("889014"),
@@ -450,20 +451,20 @@
 
             function E(e, t) {
                 let n = (0, i.useStateFromStores)([h.default], () => {
-                    let t = e.isForumLikeChannel() ? p.Permissions.SEND_MESSAGES : a.default.combine(p.Permissions.CREATE_PUBLIC_THREADS, p.Permissions.READ_MESSAGE_HISTORY);
+                    let t = e.isForumLikeChannel() ? p.Permissions.SEND_MESSAGES : s.default.combine(p.Permissions.CREATE_PUBLIC_THREADS, p.Permissions.READ_MESSAGE_HISTORY);
                     return h.default.can(t, e)
                 }, [e]);
                 return A(n, e, t)
             }
 
             function v(e, t) {
-                let n = e.isForumLikeChannel() ? p.Permissions.SEND_MESSAGES : a.default.combine(p.Permissions.CREATE_PUBLIC_THREADS, p.Permissions.READ_MESSAGE_HISTORY),
+                let n = e.isForumLikeChannel() ? p.Permissions.SEND_MESSAGES : s.default.combine(p.Permissions.CREATE_PUBLIC_THREADS, p.Permissions.READ_MESSAGE_HISTORY),
                     r = h.default.can(n, e);
                 return A(r, e, t)
             }
 
             function T(e) {
-                let t = (0, i.useStateFromStores)([h.default], () => h.default.can(a.default.combine(p.Permissions.CREATE_PRIVATE_THREADS), e), [e]);
+                let t = (0, i.useStateFromStores)([h.default], () => h.default.can(s.default.combine(p.Permissions.CREATE_PRIVATE_THREADS), e), [e]);
                 return e.type === p.ChannelTypes.GUILD_TEXT && A(t, e)
             }
 
@@ -490,11 +491,11 @@
                     let t = m.default.getActiveJoinedThreadsForParent(e.guild_id, e.id),
                         n = m.default.getActiveJoinedRelevantThreadsForParent(e.guild_id, e.id),
                         r = m.default.getActiveUnjoinedThreadsForParent(e.guild_id, e.id),
-                        a = s(n).some(e => h.default.can(p.Permissions.VIEW_CHANNEL, e.channel)),
-                        i = s(t).some(e => !(e.channel.id in n) && h.default.can(p.Permissions.VIEW_CHANNEL, e.channel)),
-                        o = s(r).some(e => h.default.can(p.Permissions.VIEW_CHANNEL, e));
+                        s = a(n).some(e => h.default.can(p.Permissions.VIEW_CHANNEL, e.channel)),
+                        i = a(t).some(e => !(e.channel.id in n) && h.default.can(p.Permissions.VIEW_CHANNEL, e.channel)),
+                        o = a(r).some(e => h.default.can(p.Permissions.VIEW_CHANNEL, e));
                     return {
-                        hasActiveThreads: a || i || o,
+                        hasActiveThreads: s || i || o,
                         hasMoreActiveThreads: o || i
                     }
                 })
@@ -558,13 +559,13 @@
                 let t = (0, l.default)(),
                     n = (0, i.useStateFromStores)([h.default], () => h.default.can(p.Permissions.CONNECT, e)),
                     r = x(e),
-                    s = S.useExperiment({
+                    a = S.useExperiment({
                         guildId: e.guild_id,
                         location: "e791ea_1"
                     }, {
                         autoTrackExposure: !1
                     }).enabled;
-                return !t && e.isVocalThread() && s && n && r
+                return !t && e.isVocalThread() && a && n && r
             }
 
             function w(e) {
@@ -584,8 +585,8 @@
             });
             var r = n("37983");
             n("884691");
-            var s = n("414456"),
-                a = n.n(s),
+            var a = n("414456"),
+                s = n.n(a),
                 i = n("79798"),
                 o = n("988268"),
                 l = n("888770"),
@@ -593,7 +594,7 @@
                     let {
                         name: t,
                         discriminator: n,
-                        invertBotTagColor: s,
+                        invertBotTagColor: a,
                         nameColor: o,
                         className: u,
                         botType: d,
@@ -606,10 +607,10 @@
                         usernameIcon: E
                     } = e;
                     return (0, r.jsxs)("div", {
-                        className: a(u, l.nameTag),
+                        className: s(u, l.nameTag),
                         style: p,
                         children: [(0, r.jsxs)("span", {
-                            className: a(l.username, c),
+                            className: s(l.username, c),
                             style: null != o ? {
                                 color: o
                             } : void 0,
@@ -619,8 +620,8 @@
                             children: ["#", n]
                         }) : null, null != d ? (0, r.jsx)(i.default, {
                             type: d,
-                            invertColor: s,
-                            className: a(h, l.bot),
+                            invertColor: a,
+                            className: s(h, l.bot),
                             verified: m,
                             useRemSizes: S
                         }) : null]
@@ -631,11 +632,11 @@
             "use strict";
             n.r(t), n.d(t, {
                 MessagesInteractionContext: function() {
-                    return s
+                    return a
                 }
             });
             var r = n("884691");
-            let s = r.createContext({
+            let a = r.createContext({
                 disableInteractions: !1,
                 disableAnimations: !1
             })
@@ -649,16 +650,16 @@
             });
             var r = n("37983");
             n("884691");
-            var s = n("669491"),
-                a = n("469563"),
+            var a = n("669491"),
+                s = n("469563"),
                 i = n("163725"),
                 o = n("75196"),
-                l = (0, a.replaceIcon)(function(e) {
+                l = (0, s.replaceIcon)(function(e) {
                     let {
                         width: t = 24,
                         height: n = 24,
-                        color: a = "currentColor",
-                        foregroundColor: i = s.default.unsafe_rawColors.RED_400.css,
+                        color: s = "currentColor",
+                        foregroundColor: i = a.default.unsafe_rawColors.RED_400.css,
                         foreground: l,
                         background: u,
                         ...d
@@ -677,7 +678,7 @@
                             height: "2",
                             transform: "rotate(-45 2 21.2154)"
                         }), (0, r.jsx)("path", {
-                            fill: a,
+                            fill: s,
                             className: u,
                             fillRule: "evenodd",
                             clipRule: "evenodd",
@@ -699,10 +700,10 @@
                 }
             }), n("70102");
             var r = n("281071"),
-                s = n("773336"),
-                a = n("50885");
+                a = n("773336"),
+                s = n("50885");
             let i = (() => {
-                if (s.isPlatformEmbedded) return null != a.default.copy;
+                if (a.isPlatformEmbedded) return null != s.default.copy;
                 try {
                     return document.queryCommandEnabled("copy") || document.queryCommandSupported("copy")
                 } catch (e) {
@@ -711,7 +712,7 @@
             })();
 
             function o(e) {
-                return !!i && (s.isPlatformEmbedded ? (a.default.copy(e), !0) : r.copy(e))
+                return !!i && (a.isPlatformEmbedded ? (s.default.copy(e), !0) : r.copy(e))
             }
         },
         281071: function(e, t, n) {
@@ -722,10 +723,10 @@
                 if (null == t) throw Error("[Utils] ClipboardUtils.copy(): assert failed: document.body != null");
                 let n = document.createRange(),
                     r = window.getSelection(),
-                    s = document.createElement("textarea");
-                s.value = e, s.contentEditable = "true", s.style.visibility = "none", t.appendChild(s), n.selectNodeContents(s), null == r || r.removeAllRanges(), null == r || r.addRange(n), s.focus(), s.setSelectionRange(0, e.length);
-                let a = document.execCommand("copy");
-                return t.removeChild(s), a
+                    a = document.createElement("textarea");
+                a.value = e, a.contentEditable = "true", a.style.visibility = "none", t.appendChild(a), n.selectNodeContents(a), null == r || r.removeAllRanges(), null == r || r.addRange(n), a.focus(), a.setSelectionRange(0, e.length);
+                let s = document.execCommand("copy");
+                return t.removeChild(a), s
             }
             n.r(t), n.d(t, {
                 copy: function() {
@@ -735,4 +736,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66888.e207ac8a6f2c14a9eaa9.js.map
+//# sourceMappingURL=66888.79756ea63981ab2a6341.js.map

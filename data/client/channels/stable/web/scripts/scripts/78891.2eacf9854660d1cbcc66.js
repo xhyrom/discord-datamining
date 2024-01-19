@@ -18,19 +18,19 @@
                     s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
                 if (s > 3) throw Error("Unable to search guild members after max retries");
                 let {
-                    autoRetry: c = !0,
-                    signal: _
+                    autoRetry: _ = !0,
+                    signal: c
                 } = r;
                 try {
                     var E;
                     let l = await n.default.post({
                         url: o.Endpoints.GUILD_MEMBER_SEARCH(e),
                         body: t,
-                        signal: _
+                        signal: c
                     });
                     if (l.status === i.INDEXING_RESPONSE_CODE) {
                         if (null == l.body.retry_after) throw Error("Indexing response did not include retry_after");
-                        if (!c) throw Error("Indexing response received but autoRetry is disabled");
+                        if (!_) throw Error("Indexing response received but autoRetry is disabled");
                         return await u.default.dispatch({
                             type: "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING",
                             guildId: e
@@ -109,7 +109,7 @@
                     return G
                 },
                 useIsStillIndexing: function() {
-                    return P
+                    return q
                 },
                 default: function() {
                     return w
@@ -119,16 +119,16 @@
                 o = r.n(i),
                 d = r("917351"),
                 s = r("308503"),
-                c = r("811022"),
-                _ = r("249654"),
+                _ = r("811022"),
+                c = r("249654"),
                 E = r("689988"),
                 S = r("449008"),
                 f = r("691386"),
                 h = r("770115"),
                 g = r("490931"),
                 R = r("225982"),
-                C = r("178406");
-            let y = new c.default("MemberSafetySearchManager");
+                y = r("178406");
+            let C = new _.default("MemberSafetySearchManager");
 
             function b(e) {
                 return "guild_".concat(e)
@@ -146,7 +146,7 @@
             }(l = n || (n = {}))[l.FAILED = 0] = "FAILED", l[l.UNFETCHED = 1] = "UNFETCHED", l[l.PENDING = 2] = "PENDING", l[l.SUCCEEDED = 3] = "SUCCEEDED", l[l.STILL_INDEXING = 4] = "STILL_INDEXING";
             let M = (0, s.default)(e => ({}));
 
-            function I(e, t) {
+            function v(e, t) {
                 let r = M.getState()[e];
                 return null == r && (r = m(1)), r = {
                     ...r,
@@ -157,18 +157,18 @@
                 })), r
             }
 
-            function v(e) {
+            function I(e) {
                 return M.getState()[e]
             }
 
             function p(e) {
-                let t = v(e);
-                return null == t && I(e, t = m(1)), t
+                let t = I(e);
+                return null == t && v(e, t = m(1)), t
             }
 
             function U(e) {
-                let t = v(e);
-                null != t && I(e, {
+                let t = I(e);
+                null != t && v(e, {
                     requestState: 3,
                     abortController: null,
                     lastUpdated: Date.now()
@@ -203,11 +203,11 @@
             }(a = u || (u = {}))[a.FIRST_PAGE_CHUNK = 0] = "FIRST_PAGE_CHUNK", a[a.CURRENT_SEARCH_CHUNK = 1] = "CURRENT_SEARCH_CHUNK", a[a.NEXT_SEARCH_CHUNK = 2] = "NEXT_SEARCH_CHUNK", a[a.PREVIOUS_SEARCH_CHUNK = 3] = "PREVIOUS_SEARCH_CHUNK";
             async function A(e) {
                 var t, r, n, u;
-                let l = C.default.getSearchStateByGuildId(e),
-                    a = C.default.getPaginationStateByGuildId(e),
+                let l = y.default.getSearchStateByGuildId(e),
+                    a = y.default.getPaginationStateByGuildId(e),
                     i = b(e),
                     s = p(i),
-                    [c, E] = function(e, t, r) {
+                    [_, E] = function(e, t, r) {
                         var n, u, l, a, i, o;
                         let d = function(e, t) {
                                 var r;
@@ -217,7 +217,7 @@
                                     nextPageChunkNumber: l
                                 } = T(t), {
                                     previousPagination: a
-                                } = p(b(e)), i = t.currentPage, o = null !== (r = null == a ? void 0 : a.currentPage) && void 0 !== r ? r : 0, d = C.default.getElasticSearchPaginationByGuildId(e);
+                                } = p(b(e)), i = t.currentPage, o = null !== (r = null == a ? void 0 : a.currentPage) && void 0 !== r ? r : 0, d = y.default.getElasticSearchPaginationByGuildId(e);
                                 switch (!0) {
                                     case null == d:
                                     case n === l && 0 === n:
@@ -233,32 +233,32 @@
                                         return 1
                                 }
                             }(e, r),
-                            s = C.default.getElasticSearchPaginationByGuildId(e),
-                            c = (0, f.getSearchChunkLimit)(r);
+                            s = y.default.getElasticSearchPaginationByGuildId(e),
+                            _ = (0, f.getSearchChunkLimit)(r);
                         switch (d) {
                             case 0: {
-                                let t = C.default.getLastCursorTimestamp(e);
+                                let t = y.default.getLastCursorTimestamp(e);
                                 return [null, {
-                                    limit: c,
+                                    limit: _,
                                     after: {
                                         guild_joined_at: t,
-                                        user_id: _.default.fromTimestamp(t)
+                                        user_id: c.default.fromTimestamp(t)
                                     }
                                 }]
                             }
                             case 1:
                                 return [null !== (n = t.cursor) && void 0 !== n ? n : null, {
-                                    limit: c,
+                                    limit: _,
                                     after: null !== (u = t.cursor) && void 0 !== u ? u : void 0
                                 }];
                             case 2:
                                 return [null !== (l = null == s ? void 0 : s.after) && void 0 !== l ? l : null, {
-                                    limit: c,
+                                    limit: _,
                                     after: null !== (a = null == s ? void 0 : s.after) && void 0 !== a ? a : void 0
                                 }];
                             case 3:
                                 return [null !== (i = null == s ? void 0 : s.before) && void 0 !== i ? i : null, {
-                                    limit: c,
+                                    limit: _,
                                     before: null !== (o = null == s ? void 0 : s.before) && void 0 !== o ? o : void 0
                                 }];
                             default:
@@ -298,18 +298,18 @@
                         }
                     }), o && (s.unusual_account_activity = o), d && (s.automod_quarantined_username = d), Object.keys(s).length > 0 && (u.or_query.safety_signals = s);
                     let {
-                        selectedRoleIds: c
+                        selectedRoleIds: _
                     } = e;
-                    c.size > 0 && (u.and_query.role_ids = {
-                        and_query: Array.from(c)
+                    _.size > 0 && (u.and_query.role_ids = {
+                        and_query: Array.from(_)
                     });
                     let {
-                        selectedJoinDateOption: _
+                        selectedJoinDateOption: c
                     } = e;
-                    null != _.afterDate && (u.and_query.guild_joined_at = {
+                    null != c.afterDate && (u.and_query.guild_joined_at = {
                         range: {
-                            gte: _.afterDate,
-                            lte: null !== (t = _.beforeDate) && void 0 !== t ? t : void 0
+                            gte: c.afterDate,
+                            lte: null !== (t = c.beforeDate) && void 0 !== t ? t : void 0
                         }
                     });
                     let {
@@ -325,7 +325,18 @@
                             }
                         }
                     }
-                    return u
+                    let {
+                        selectedSourceInviteCode: S
+                    } = e;
+                    null != S && (u.and_query.source_invite_code = {
+                        or_query: [S]
+                    });
+                    let {
+                        selectedJoinSourceType: f
+                    } = e;
+                    return null != f && (u.and_query.join_source_type = {
+                        or_query: [f]
+                    }), u
                 }(l), null == (r = E) ? t : {
                     ...t,
                     ...r
@@ -333,14 +344,14 @@
                 if (function(e, t) {
                         let r = p(e);
                         return o(r.query, t)
-                    }(i, m) && (0, d.isEqual)(c, s.cursor)) return;
+                    }(i, m) && (0, d.isEqual)(_, s.cursor)) return;
                 let M = function(e, t, r, n) {
-                    let u = v(e);
+                    let u = I(e);
                     if ((null == u ? void 0 : u.requestState) === 2) {
                         var l;
                         null === (l = u.abortController) || void 0 === l || l.abort()
                     }
-                    return I(e, {
+                    return v(e, {
                         requestState: 2,
                         abortController: new AbortController,
                         lastUpdated: Date.now(),
@@ -348,10 +359,10 @@
                         cursor: r,
                         previousPagination: n
                     })
-                }(i, m, c, a);
+                }(i, m, _, a);
                 try {
                     ;
-                    if (y.info("Making member search request", {
+                    if (C.info("Making member search request", {
                             query: M.query,
                             guildId: e
                         }), null == M.query) throw Error("Query is null");
@@ -361,8 +372,8 @@
                 } catch (e) {
                     if (-1 === e.code) return;
                     ! function(e) {
-                        let t = v(e);
-                        null != t && I(e, {
+                        let t = I(e);
+                        null != t && v(e, {
                             requestState: 0,
                             abortController: null,
                             lastUpdated: Date.now()
@@ -381,14 +392,14 @@
                 })
             }
 
-            function P(e) {
+            function q(e) {
                 return M(t => {
                     var r;
                     let n = b(e);
                     return (null === (r = t[n]) || void 0 === r ? void 0 : r.requestState) === 4
                 })
             }
-            class q extends E.default {
+            class P extends E.default {
                 handleInitialize(e) {
                     let {
                         guildId: t
@@ -423,7 +434,7 @@
                     let {
                         guildId: t
                     } = e, r = b(t);
-                    I(r, {
+                    v(r, {
                         requestState: 4,
                         abortController: null,
                         lastUpdated: Date.now()
@@ -447,8 +458,8 @@
                     }
                 }
             }
-            var w = new q
+            var w = new P
         }
     }
 ]);
-//# sourceMappingURL=78891.c59397164243924d4dca.js.map
+//# sourceMappingURL=78891.2eacf9854660d1cbcc66.js.map
