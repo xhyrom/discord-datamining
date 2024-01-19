@@ -27211,7 +27211,7 @@
                 b = new Map,
                 P = new Map;
             let R = h.ActivityPanelModes.ACTION_BAR,
-                V = h.FocusedActivityLayouts.NO_CHAT;
+                V = h.FocusedActivityLayouts.RESIZABLE;
 
             function k(e) {
                 return null != e ? e : "0"
@@ -63229,4 +63229,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.9f4053b44e721c7e9afa.js.map
+//# sourceMappingURL=23303.927c493a055b425514b4.js.map
