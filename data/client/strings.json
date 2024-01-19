@@ -16180,6 +16180,8 @@
   "CLIPS_SETTINGS_FRAMERATE_NOTE": "\"This is the maximum frame rate your clips will be recorded at.\"",
   "CLIPS_CROP_START": "\"Crop Start\"",
   "CLIPS_CROP_END": "\"Crop End\"",
+  "CLIPS_ATTACHMENT_UTILITIES_SPOILER": "\"Spoiler Clip\"",
+  "CLIPS_ATTACHMENT_UTILITIES_REMOVE": "\"Remove Clip\"",
   "SOUND_INCOMING_RING_HALLOWEEN": "\"Halloween Incoming Ring\"",
   "SOUND_INCOMING_RING_EOY_2023": "\"Seasonal Incoming Ring\"",
   "CUSTOM_SOUNDS": "\"Custom Sounds\"",
