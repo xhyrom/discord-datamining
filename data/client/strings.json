@@ -4343,6 +4343,8 @@
   "DND_MOVE_UP": "\"Move item up in list\"",
   "DND_MOVE_DOWN": "\"Move item down in list\"",
   "DND_MOBILE_ITEM_HINT": "\"double-tap and hold to drag\"",
+  "DND_MOBILE_DROP_ADD_TO_FOLDER": "\"Add to folder, !!{folderName}!!\"",
+  "DND_MOBILE_DROP_COMBINE_TO_NEW_FOLDER": "\"Combine and create new folder\"",
   "A11Y_ANNOUNCEMENT_GENERIC_FAIL": "\"update failed\"",
   "A11Y_ANNOUNCEMENT_FRIEND_CANCEL_REQUEST": "\"friend request dismissed\"",
   "A11Y_ANNOUNCEMENT_FRIEND_ACCEPT_REQUEST": "\"friend request accepted\"",
