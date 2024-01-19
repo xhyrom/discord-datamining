@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2024-01_nvencadaptivekeyframe",
+    "label": "nvenc adaptive key frame interval",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable adaptive key frame for nvenc"
+    ],
+    "hash": 3032307853,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enableAdaptiveKeyFrame"
+    ]
+  }
+}
