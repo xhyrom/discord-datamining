@@ -23598,7 +23598,6 @@
         956330: function(e, t, o) {
             "use strict";
             e.exports = {
-                addFriendSection: "addFriendSection__413d3",
                 clydeErrorText: "clydeErrorText_b9fc7e",
                 customStatusSection: "customStatusSection_ce6c27",
                 divider: "divider__56f26",
