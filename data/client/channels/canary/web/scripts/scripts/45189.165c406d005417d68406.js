@@ -1,7 +1,7 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["55348"], {
-        876779: function(I, N, A) {
-            I.exports = {
+    ["45189"], {
+        876779: function(N, I, A) {
+            N.exports = {
                 Common: {
                     OPEN_DISCORD: "Open Discord",
                     SIGN_UP_NOW: "Sign Up Now"
@@ -60,7 +60,7 @@
                 }
             }
         },
-        826507: function(I, N, A) {
+        826507: function(N, I, A) {
             var O = {
                 "./bg": "652617",
                 "./bg.json": "652617",
@@ -126,24 +126,24 @@
                 "./zh-TW.json": "391977"
             };
 
-            function T(I) {
-                return A(_(I))
+            function T(N) {
+                return A(_(N))
             }
 
-            function _(I) {
-                if (!A.o(O, I)) {
-                    var N = Error("Cannot find module '" + I + "'");
-                    throw N.code = "MODULE_NOT_FOUND", N
+            function _(N) {
+                if (!A.o(O, N)) {
+                    var I = Error("Cannot find module '" + N + "'");
+                    throw I.code = "MODULE_NOT_FOUND", I
                 }
-                return O[I]
+                return O[N]
             }
             T.id = '"826507"', T.keys = function() {
                 return Object.keys(O)
-            }, T.resolve = _, I.exports = T
+            }, T.resolve = _, N.exports = T
         },
-        499172: function(I, N, A) {
+        499172: function(N, I, A) {
             "use strict";
-            I.exports = [{
+            N.exports = [{
                 name: "English, USA",
                 englishName: "English, USA",
                 code: "en-US",
@@ -305,9 +305,9 @@
                 enabled: !0
             }]
         },
-        652617: function(I, N, A) {
+        652617: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Отваряне на Discord",
                 COMMON_SIGN_UP_NOW: "Регистрирай се сега",
                 FOOTER_READY_TO_TRY_DISCORD: "Готов/а ли си да опиташ Discord? Безплатно е!",
@@ -354,9 +354,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Твоето място за говорене с общности и приятели."
             }
         },
-        136399: function(I, N, A) {
+        136399: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Otevř\xedt Discord",
                 COMMON_SIGN_UP_NOW: "Zaregistruj se",
                 FOOTER_READY_TO_TRY_DISCORD: "Chceš vyzkoušet Discord? Je zdarma!",
@@ -403,9 +403,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "M\xedsto, kde si můžeš popov\xeddat s\xa0př\xe1teli a\xa0komunitami."
             }
         },
-        166226: function(I, N, A) {
+        166226: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "\xc5bn Discord",
                 COMMON_SIGN_UP_NOW: "Tilmeld dig nu",
                 FOOTER_READY_TO_TRY_DISCORD: "Klar til at pr\xf8ve Discord? Det er gratis.",
@@ -448,9 +448,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Dit sted, hvor du kan tale med communities og venner."
             }
         },
-        107944: function(I, N, A) {
+        107944: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Discord \xf6ffnen",
                 COMMON_SIGN_UP_NOW: "Jetzt anmelden",
                 FOOTER_READY_TO_TRY_DISCORD: "Worauf wartest du noch? Discord ist kostenlos!",
@@ -496,9 +496,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Dein Ort, um mit deinen Communitys und Freunden zu reden."
             }
         },
-        978838: function(I, N, A) {
+        978838: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Ανοίξτε το Discord",
                 COMMON_SIGN_UP_NOW: "Κάνε εγγραφή τώρα",
                 FOOTER_READY_TO_TRY_DISCORD: "Έτοιμος να δοκιμάσεις το Discord; Είναι δωρεάν!",
@@ -544,9 +544,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Το δικό σου μέρος για να μιλάς με κοινότητες και φίλους."
             }
         },
-        384193: function(I, N, A) {
+        384193: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Open Discord",
                 COMMON_SIGN_UP_NOW: "Sign up now",
                 FOOTER_READY_TO_TRY_DISCORD: "Ready to try Discord? It's free!",
@@ -593,9 +593,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Your place to talk with communities and friends."
             }
         },
-        580895: function(I, N, A) {
+        580895: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Abrir Discord",
                 COMMON_SIGN_UP_NOW: "Registrarse ahora",
                 FOOTER_READY_TO_TRY_DISCORD: "\xbfListo para probar Discord? \xa1Es gratis!",
@@ -641,9 +641,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Tu sitio para hablar con comunidades y amigos."
             }
         },
-        72952: function(I, N, A) {
+        72952: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Avaa Discord",
                 COMMON_SIGN_UP_NOW: "Rekister\xf6idy nyt",
                 FOOTER_READY_TO_TRY_DISCORD: "Oletko valmis kokeilemaan Discordia? Se on ilmainen!",
@@ -689,9 +689,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Paikka keskustella yhteis\xf6jesi ja kavereidesi kanssa."
             }
         },
-        699940: function(I, N, A) {
+        699940: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Ouvrir Discord",
                 COMMON_SIGN_UP_NOW: "S'inscire maintenant",
                 FOOTER_READY_TO_TRY_DISCORD: "Pr\xeat \xe0 essayer Discord\xa0? C'est gratuit\xa0!",
@@ -737,9 +737,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Un endroit pour parler avec tes communaut\xe9s et tes amis."
             }
         },
-        922509: function(I, N, A) {
+        922509: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Discord खोलें",
                 COMMON_SIGN_UP_NOW: "अभी साइन अप करें",
                 FOOTER_READY_TO_TRY_DISCORD: "Discord को आज़माने के लिए तैयार हैं? यह मुफ़्त है!",
@@ -786,9 +786,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "कम्युनिटी और फ्रेंड्स के साथ बातचीत करने की आपकी जगह."
             }
         },
-        293200: function(I, N, A) {
+        293200: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Otvori Discord",
                 COMMON_SIGN_UP_NOW: "Registriraj se sada",
                 FOOTER_READY_TO_TRY_DISCORD: "Spreman/na isprobati Discord? Besplatno je!",
@@ -832,9 +832,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Tvoje mjesto za razgovor sa svojom zajednicom i prijateljima."
             }
         },
-        254957: function(I, N, A) {
+        254957: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "A Discord megnyit\xe1sa",
                 COMMON_SIGN_UP_NOW: "Regisztr\xe1ci\xf3 most",
                 FOOTER_READY_TO_TRY_DISCORD: "K\xe9szen \xe1llsz a Discord kipr\xf3b\xe1l\xe1s\xe1ra? Nem ker\xfcl semmibe!",
@@ -879,13 +879,13 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Ahol k\xf6z\xf6ss\xe9geiddel \xe9s bar\xe1taiddal besz\xe9lgethetsz."
             }
         },
-        886044: function(I, N, A) {
+        886044: function(N, I, A) {
             "use strict";
-            I.exports = {}
+            N.exports = {}
         },
-        903422: function(I, N, A) {
+        903422: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Apri Discord",
                 COMMON_SIGN_UP_NOW: "Registrati",
                 FOOTER_READY_TO_TRY_DISCORD: "Pronto a provare Discord? \xc8 gratis!",
@@ -930,9 +930,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Il luogo ideale per parlare con amici e community."
             }
         },
-        44867: function(I, N, A) {
+        44867: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Discordを開く",
                 COMMON_SIGN_UP_NOW: "今すぐ登録する",
                 FOOTER_READY_TO_TRY_DISCORD: "Discordを使ってみるかい？（無料だよ！）",
@@ -978,9 +978,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "コミュニティやフレンドと話せる、あなたの居場所です。"
             }
         },
-        865240: function(I, N, A) {
+        865240: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Discord 열기",
                 COMMON_SIGN_UP_NOW: "지금 가입하세요",
                 FOOTER_READY_TO_TRY_DISCORD: "Discord를 사용할 준비가 되었나요? 무료입니다!",
@@ -1027,9 +1027,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "커뮤니티, 친구와 대화할 수 있는 나만의 공간."
             }
         },
-        828806: function(I, N, A) {
+        828806: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Atidaryti Discord",
                 COMMON_SIGN_UP_NOW: "Prisiregistruok dabar",
                 FOOTER_READY_TO_TRY_DISCORD: "Pasiruošęs (-usi) išbandyti Discord? Tai nemokama!",
@@ -1075,9 +1075,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Tavo vieta kalbėtis su bendruomenėmis ir draugais."
             }
         },
-        379380: function(I, N, A) {
+        379380: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Discord openen",
                 COMMON_SIGN_UP_NOW: "Schrijf je nu in",
                 FOOTER_READY_TO_TRY_DISCORD: "Klaar om Discord te proberen? Het is gratis!",
@@ -1120,9 +1120,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Jouw plek om te praten met community's en vrienden."
             }
         },
-        262207: function(I, N, A) {
+        262207: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "\xc5pne Discord",
                 COMMON_SIGN_UP_NOW: "Registrer deg n\xe5",
                 FOOTER_READY_TO_TRY_DISCORD: "Klar til \xe5 pr\xf8ve Discord? Det er gratis!",
@@ -1168,9 +1168,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Et sted der du kan snakke med venner og likesinnede."
             }
         },
-        697596: function(I, N, A) {
+        697596: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Otw\xf3rz Discorda",
                 COMMON_SIGN_UP_NOW: "Zarejestruj się teraz",
                 FOOTER_READY_TO_TRY_DISCORD: "Got\xf3w, aby wypr\xf3bować Discorda? Za darmo!",
@@ -1216,9 +1216,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Twoje miejsce do rozm\xf3w ze społecznościami i znajomymi."
             }
         },
-        132974: function(I, N, A) {
+        132974: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Abrir Discord",
                 COMMON_SIGN_UP_NOW: "Registre-se agora",
                 FOOTER_READY_TO_TRY_DISCORD: "Pronto para testar o Discord? \xc9 gr\xe1tis!",
@@ -1265,9 +1265,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Seu lugar para conversar com suas comunidades e amigos."
             }
         },
-        499395: function(I, N, A) {
+        499395: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Deschide Discord",
                 COMMON_SIGN_UP_NOW: "\xcenregistrează-te Acum",
                 FOOTER_READY_TO_TRY_DISCORD: "Ești gata să \xeencerci Discord? Este gratis!",
@@ -1311,9 +1311,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Locul \xeen care discuți cu membrii comunităților și cu prietenii tăi."
             }
         },
-        135786: function(I, N, A) {
+        135786: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Открыть Discord",
                 COMMON_SIGN_UP_NOW: "Зарегистрироваться",
                 FOOTER_READY_TO_TRY_DISCORD: "Готовы попробовать Discord? Это бесплатно!",
@@ -1362,9 +1362,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Место для общения с вашими сообществами и друзьями."
             }
         },
-        119037: function(I, N, A) {
+        119037: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "\xd6ppna Discord",
                 COMMON_SIGN_UP_NOW: "Registrera dig nu",
                 FOOTER_READY_TO_TRY_DISCORD: "Redo att testa Discord? Det \xe4r gratis!",
@@ -1409,9 +1409,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "St\xe4llet d\xe4r du kan prata med communityn och v\xe4nner."
             }
         },
-        398352: function(I, N, A) {
+        398352: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "เปิด Discord",
                 COMMON_SIGN_UP_NOW: "ลงทะเบียนเลย",
                 FOOTER_READY_TO_TRY_DISCORD: "พร้อมจะลอง Discord หรือยัง ฟรีนะ!",
@@ -1456,9 +1456,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "พื้นที่สำหรับพูดคุยกับชุมชนและเพื่อน ๆ ของคุณ"
             }
         },
-        461697: function(I, N, A) {
+        461697: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Discord'u A\xe7",
                 COMMON_SIGN_UP_NOW: "Hemen Kaydol",
                 FOOTER_READY_TO_TRY_DISCORD: "Discord'u denemeye hazır mısın? \xdccretsiz!",
@@ -1505,9 +1505,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Topluluklarınla ve arkadaşlarınla konuşma ortamın."
             }
         },
-        842498: function(I, N, A) {
+        842498: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Відкрити Discord",
                 COMMON_SIGN_UP_NOW: "Зареєструватися зараз",
                 FOOTER_READY_TO_TRY_DISCORD: "Готовий випробувати Discord? Це безкоштовно!",
@@ -1553,9 +1553,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Твоє місце для спілкування зі спільнотами та друзями."
             }
         },
-        26384: function(I, N, A) {
+        26384: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "Mở Discord",
                 COMMON_SIGN_UP_NOW: "Đăng K\xfd Ngay",
                 FOOTER_READY_TO_TRY_DISCORD: "Bạn đ\xe3 sẵn s\xe0ng thử Discord chưa? Ho\xe0n to\xe0n miễn ph\xed!",
@@ -1600,9 +1600,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "Kh\xf4ng gian ri\xeang để tr\xf2 chuyện với bạn b\xe8 v\xe0 cộng đồng."
             }
         },
-        460288: function(I, N, A) {
+        460288: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "打开 Discord",
                 COMMON_SIGN_UP_NOW: "点我注册",
                 FOOTER_READY_TO_TRY_DISCORD: "要试用看看 Discord 吗？免费的哟！",
@@ -1649,9 +1649,9 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "您与社区和好友的畅聊天地。"
             }
         },
-        391977: function(I, N, A) {
+        391977: function(N, I, A) {
             "use strict";
-            I.exports = {
+            N.exports = {
                 COMMON_OPEN_DISCORD: "開啟 Discord",
                 COMMON_SIGN_UP_NOW: "立即註冊",
                 FOOTER_READY_TO_TRY_DISCORD: "準備好嘗試一下 Discord 了嗎？不花一毛錢！",
@@ -1698,56 +1698,133 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "您與社群和好友聊天的地方。"
             }
         },
-        318696: function(I, N, A) {
+        272030: function(N, I, A) {
+            "use strict";
+            A.r(I), A.d(I, {
+                closeContextMenu: function() {
+                    return i
+                },
+                openContextMenu: function() {
+                    return n
+                },
+                openContextMenuLazy: function() {
+                    return t
+                }
+            }), A("506083");
+            var O = A("913144"),
+                T = A("244201"),
+                _ = A("773336"),
+                e = A("749866"),
+                E = A("49111");
+
+            function V(N) {
+                O.default.dispatch({
+                    type: "CONTEXT_MENU_OPEN",
+                    contextMenu: N
+                })
+            }
+
+            function i(N) {
+                {
+                    let {
+                        flushSync: I
+                    } = A("817736");
+                    I(() => {
+                        O.default.wait(() => {
+                            O.default.dispatch({
+                                type: "CONTEXT_MENU_CLOSE"
+                            }).finally(N)
+                        })
+                    })
+                }
+            }
+
+            function n(N, I, A, O) {
+                var i, n, t;
+                if (N.stopPropagation(), null != N.currentTarget.contains && !N.currentTarget.contains(N.target)) return;
+                let R = 0,
+                    G = 0;
+                if ("pageX" in N && (R = N.pageX, G = N.pageY), 0 === R && 0 === G) {
+                    let I = null === (i = N.target) || void 0 === i ? void 0 : i.getBoundingClientRect(),
+                        {
+                            left: A = 0,
+                            top: O = 0,
+                            width: T = 0,
+                            height: _ = 0
+                        } = null != I ? I : {};
+                    R = A + T / 2, G = O + _ / 2
+                }
+                let r = {
+                    render: I,
+                    renderLazy: O,
+                    target: null !== (n = N.target) && void 0 !== n ? n : N.currentTarget,
+                    rect: new DOMRect(R, G, 0, 0),
+                    config: {
+                        context: __OVERLAY__ ? E.AppContext.OVERLAY : null !== (t = (0, T.getCurrentlyInteractingAppContext)()) && void 0 !== t ? t : E.AppContext.APP,
+                        ...A
+                    }
+                };
+                if ((null == A ? void 0 : A.enableSpellCheck) && (0, _.isDesktop)()) {
+                    let N = (0, e.addResultListener)(() => {
+                        N(), V(r)
+                    })
+                } else N.preventDefault(), V(r)
+            }
+
+            function t(N, I, A) {
+                n(N, void 0, A, I)
+            }
+        },
+        318696: function(N, I, A) {
             "use strict";
             let O, T;
-            A.r(N), A.d(N, {
+            A.r(I), A.d(I, {
                 setLocale: function() {
-                    return G
+                    return i
                 },
                 updateLocaleLoadingStatus: function() {
-                    return R
+                    return n
                 }
             }), A("424973"), A("222007"), A("860677");
             var _ = A("913144"),
-                E = A("787910"),
-                e = A("782340");
+                e = A("787910"),
+                E = A("782340");
             O = A("792788").default;
             let V = !1;
 
-            function G(I) {
-                T = e.default.loadPromise, O && O.setLocale(I), e.default.setLocale(I), R(I)
+            function i(N) {
+                T = E.default.loadPromise, O && O.setLocale(N), E.default.setLocale(N), n(N)
             }
 
-            function R(I) {
-                let N = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                if (V && e.default.loadPromise === T) return;
-                V = !0, N ? (0, E.setLocaleHack)(I) : _.default.dispatch({
+            function n(N) {
+                let I = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                if (V && E.default.loadPromise === T) return;
+                V = !0, I ? (0, e.setLocaleHack)(N) : _.default.dispatch({
                     type: "I18N_LOAD_START",
-                    locale: I
+                    locale: N
                 });
-                let A = [e.default.loadPromise];
+                let A = [E.default.loadPromise];
                 O && A.push(O.loadPromise);
-                let G = Promise.all(A);
+                let i = Promise.all(A);
                 setImmediate(() => {
-                    G.then(() => {
+                    i.then(() => {
                         _.default.dispatch({
                             type: "I18N_LOAD_SUCCESS",
-                            locale: I
+                            locale: N
                         })
-                    }).catch(N => {
+                    }).catch(I => {
                         _.default.dispatch({
                             type: "I18N_LOAD_ERROR",
-                            error: N,
-                            locale: I
+                            error: I,
+                            locale: N
                         })
                     })
                 })
             }
         },
-        49671: function(I, N, A) {
+        49671: function(N, I, A) {
             "use strict";
-            A.r(N), A.d(N, {
+            A.r(I), A.d(I, {
                 default: function() {
                     return T
                 }
@@ -1755,139 +1832,417 @@
             let O = window.DiscordNative;
             var T = O
         },
-        915639: function(I, N, A) {
+        851234: function(N, I, A) {
             "use strict";
-            A.r(N), A.d(N, {
+            A.r(I), A.d(I, {
                 default: function() {
-                    return R
+                    return O
+                }
+            }), A("70102");
+            var O, T = A("50885");
+            O = class {
+                get language() {
+                    return this._language
+                }
+                set language(N) {
+                    this._language !== N && (this._language = N, this._onChange(N))
+                }
+                set languageHint(N) {
+                    this._languageHint = N
+                }
+                process(N) {
+                    !this._processing && (this._processing = !0, requestIdleCallback(I => {
+                        var A, O;
+                        let _ = I.timeRemaining();
+                        if (_ <= this._minimumTimeRemaining) {
+                            this._processEnd();
+                            return
+                        }
+                        N.length > 256 && (N = N.slice(0, 256)), (A = N, O = this._languageHint, T.default.ensureModule("discord_spellcheck").then(() => {
+                            let {
+                                cld: N
+                            } = T.default.requireModule("discord_spellcheck");
+                            return new Promise((I, T) => {
+                                N.detect(A, {
+                                    httpHint: O,
+                                    encodingHint: "UTF8"
+                                }, (N, A) => {
+                                    null != N ? T(Error(N.message)) : !A.reliable || A.languages[0].percent < 90 || A.languages[0].score < 500 ? T(Error("Not enough reliable text.")) : I(A.languages[0].code)
+                                })
+                            })
+                        })).then(N => {
+                            this.language = N, this._processEnd(I.didTimeout)
+                        }, () => {
+                            this._processEnd(I.didTimeout)
+                        })
+                    }))
+                }
+                _processEnd() {
+                    let N = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                    this._processing = !1, N && this._minimumTimeRemaining++
+                }
+                constructor(N, I) {
+                    this._shouldProcess = !1, this._processing = !1, this._minimumTimeRemaining = 5, this._language = N, this._languageHint = N, this._onChange = I, I(N)
+                }
+            }
+        },
+        852046: function(N, I, A) {
+            "use strict";
+            A.r(I), A.d(I, {
+                install: function() {
+                    return s
+                }
+            }), A("781738"), A("222007");
+            var O = A("78349"),
+                T = A("917351"),
+                _ = A.n(T),
+                e = A("118810"),
+                E = A("49671"),
+                V = A("605250"),
+                i = A("915639"),
+                n = A("449008"),
+                t = A("851234"),
+                R = A("648610");
+            let G = new V.default("Spellchecker"),
+                r = null === E.default || void 0 === E.default ? void 0 : E.default.spellCheck;
+
+            function a(N) {
+                var I;
+                N = null !== (I = R.default[N]) && void 0 !== I ? I : N;
+                let A = (0, O.parse)(N.replace(/[_-]/g, "-"));
+                if (null == A || null == A.langtag.language || null == A.langtag.region) {
+                    G.error("".concat(N, " is not a valid locale."));
+                    return
+                }
+                let {
+                    language: T,
+                    region: _
+                } = A.langtag;
+                return "".concat(T.language.toLowerCase(), "-").concat(_.toUpperCase())
+            }
+            class S {
+                get enabled() {
+                    return this._enabled
+                }
+                set enabled(N) {
+                    this._enabled = N
+                }
+                setLearnedWords(N) {
+                    r.setLearnedWords(N)
+                }
+                setLocale(N) {
+                    var I;
+                    null === (I = r.setLocale(N)) || void 0 === I || I.then(I => {
+                        G.info("Switching to ".concat(N), I ? "(available)" : "(unavailable)")
+                    })
+                }
+                setAppLocale(N) {
+                    this.regionPreference = N.split("-")[1]
+                }
+                detectLanguage(N) {
+                    this.enabled && this.languageDetector.process(N)
+                }
+                getAvailableLanguages(N) {
+                    let I = {};
+                    return N.forEach(N => {
+                        var A;
+                        let [O] = N.split("-");
+                        I[O] = null !== (A = I[O]) && void 0 !== A ? A : N
+                    }), I
+                }
+                isMisspelled(N, I) {
+                    return "" !== this.misspelledWord && N === this.misspelledWord
+                }
+                getCorrectionsForMisspelling(N, I) {
+                    return this.isMisspelled(N, I) ? this.corrections : []
+                }
+                replaceMisspelling(N) {
+                    r.replaceMisspelling(N)
+                }
+                constructor(N) {
+                    this._enabled = !0, this.misspelledWord = "", this.corrections = [];
+                    let [I, A] = i.default.locale.split("-");
+                    this.regionPreference = A;
+                    let O = this.getAvailableLanguages(N);
+                    this.languageDetector = new t.default(I, A => {
+                        let T = "".concat(A, "-").concat(this.regionPreference);
+                        if (-1 !== N.indexOf(T)) this.setLocale(T);
+                        else {
+                            var _;
+                            let N = null !== (_ = O[A]) && void 0 !== _ ? _ : R.default[I];
+                            null != N && this.setLocale(N)
+                        }
+                    }), r.on("spellcheck-result", (N, I) => {
+                        this.misspelledWord = null != N ? N : "", this.corrections = null != I ? I : []
+                    })
+                }
+            }
+            let o = _.debounce((N, I) => {
+                let A = function(N) {
+                    return null == N ? null : (0, e.isElement)(N, HTMLInputElement) || (0, e.isElement)(N, HTMLTextAreaElement) ? N.value : (0, e.isElement)(N) && N.hasAttribute("contenteditable") ? N.textContent : void 0
+                }(I);
+                null != A && N.detectLanguage(A)
+            }, 250);
+            async function s() {
+                var N, I;
+                let A = null !== (N = await r.getAvailableDictionaries()) && void 0 !== N ? N : [],
+                    O = A.map(a).filter(n.isNotNullish),
+                    T = new S(O);
+                return I = T, null != document.body && document.body.addEventListener("beforeinput", N => o(I, N.target), !0), T
+            }
+        },
+        648610: function(N, I, A) {
+            "use strict";
+            A.r(I), A.d(I, {
+                default: function() {
+                    return O
+                }
+            });
+            var O = {
+                aa: "aa-ET",
+                af: "af-ZA",
+                ak: "ak-GH",
+                am: "am-ET",
+                an: "an-ES",
+                ar: "ar-MA",
+                as: "as-IN",
+                ay: "ay-PE",
+                az: "az-AZ",
+                be: "be-BY",
+                bg: "bg-BG",
+                bi: "bi-TV",
+                bn: "bn-BD",
+                bo: "bo-CN",
+                br: "br-FR",
+                bs: "bs-BA",
+                ca: "ca-ES",
+                ce: "ce-RU",
+                cs: "cs-CZ",
+                cv: "cv-RU",
+                cy: "cy-GB",
+                da: "da-DK",
+                de: "de-DE",
+                dv: "dv-MV",
+                dz: "dz-BT",
+                el: "el-GR",
+                en: "en-US",
+                es: "es-ES",
+                et: "et-EE",
+                eu: "eu-ES",
+                fa: "fa-IR",
+                ff: "ff-SN",
+                fi: "fi-FI",
+                fo: "fo-FO",
+                fr: "fr-FR",
+                fy: "fy-DE",
+                ga: "ga-IE",
+                gd: "gd-GB",
+                gl: "gl-ES",
+                gu: "gu-IN",
+                gv: "gv-GB",
+                ha: "ha-NG",
+                he: "he-IL",
+                hi: "hi-IN",
+                hr: "hr-HR",
+                ht: "ht-HT",
+                hu: "hu-HU",
+                hy: "hy-AM",
+                ia: "ia-FR",
+                id: "id-ID",
+                ig: "ig-NG",
+                ik: "ik-CA",
+                is: "is-IS",
+                it: "it-IT",
+                iu: "iu-CA",
+                ja: "ja-JP",
+                ka: "ka-GE",
+                kk: "kk-KZ",
+                kl: "kl-GL",
+                km: "km-KH",
+                kn: "kn-IN",
+                ko: "ko-KR",
+                ks: "ks-IN",
+                ku: "ku-TR",
+                kw: "kw-GB",
+                ky: "ky-KG",
+                lb: "lb-LU",
+                lg: "lg-UG",
+                li: "li-BE",
+                ln: "ln-CD",
+                lo: "lo-LA",
+                lt: "lt-LT",
+                lv: "lv-LV",
+                mg: "mg-MG",
+                mh: "mh-MH",
+                mi: "mi-NZ",
+                mk: "mk-MK",
+                ml: "ml-IN",
+                mn: "mn-MN",
+                mr: "mr-IN",
+                ms: "ms-MY",
+                mt: "mt-MT",
+                my: "my-MM",
+                nb: "nb-NO",
+                ne: "ne-NP",
+                nl: "nl-NL",
+                nn: "nn-NO",
+                nr: "nr-ZA",
+                oc: "oc-FR",
+                om: "om-KE",
+                or: "or-IN",
+                os: "os-RU",
+                pa: "pa-PK",
+                pl: "pl-PL",
+                ps: "ps-AF",
+                pt: "pt-PT",
+                ro: "ro-RO",
+                ru: "ru-RU",
+                rw: "rw-RW",
+                sa: "sa-IN",
+                sc: "sc-IT",
+                sd: "sd-IN",
+                se: "se-NO",
+                si: "si-LK",
+                sk: "sk-SK",
+                sl: "sl-SI",
+                so: "so-SO",
+                sq: "sq-AL",
+                sr: "sr-RS",
+                ss: "ss-ZA",
+                st: "st-ZA",
+                sv: "sv-SE",
+                sw: "sw-KE",
+                ta: "ta-IN",
+                te: "te-IN",
+                tg: "tg-TJ",
+                th: "th-TH",
+                ti: "ti-ER",
+                tk: "tk-TM",
+                tl: "tl-PH",
+                tn: "tn-ZA",
+                tr: "tr-TR",
+                ts: "ts-ZA",
+                tt: "tt-RU",
+                ug: "ug-CN",
+                uk: "uk-UA",
+                ur: "ur-PK",
+                uz: "uz-UZ",
+                ve: "ve-ZA",
+                vi: "vi-VN",
+                wa: "wa-BE",
+                wo: "wo-SN",
+                xh: "xh-ZA",
+                yi: "yi-US",
+                yo: "yo-NG",
+                zh: "zh-CN",
+                zu: "zu-ZA"
+            }
+        },
+        915639: function(N, I, A) {
+            "use strict";
+            A.r(I), A.d(I, {
+                default: function() {
+                    return n
                 }
             });
             var O = A("446674"),
                 T = A("913144"),
                 _ = A("318696"),
-                E = A("374363");
-            let e = A("782340").default.getDefaultLocale();
+                e = A("374363");
+            let E = A("782340").default.getDefaultLocale();
 
             function V() {
-                var I, N;
-                let A = null === (N = E.default.settings.localization) || void 0 === N ? void 0 : null === (I = N.locale) || void 0 === I ? void 0 : I.value;
-                return null != A && "" !== A && A !== e && (e = A, _.setLocale(e), !0)
+                var N, I;
+                let A = null === (I = e.default.settings.localization) || void 0 === I ? void 0 : null === (N = I.locale) || void 0 === N ? void 0 : N.value;
+                return null != A && "" !== A && A !== E && (E = A, _.setLocale(E), !0)
             }
-            class G extends O.default.Store {
+            class i extends O.default.Store {
                 initialize() {
-                    this.waitFor(E.default), V(), _.setLocale(e)
+                    this.waitFor(e.default), V(), _.setLocale(E)
                 }
                 get locale() {
-                    return e
+                    return E
                 }
             }
-            G.displayName = "LocaleStore";
-            var R = new G(T.default, {
+            i.displayName = "LocaleStore";
+            var n = new i(T.default, {
                 OVERLAY_INITIALIZE: V,
                 CONNECTION_OPEN: V,
                 USER_SETTINGS_PROTO_UPDATE: V,
-                USER_SETTINGS_LOCALE_OVERRIDE: function(I) {
-                    e = I.locale, _.setLocale(e)
+                USER_SETTINGS_LOCALE_OVERRIDE: function(N) {
+                    E = N.locale, _.setLocale(E)
                 }
             })
         },
-        787910: function(I, N, A) {
+        787910: function(N, I, A) {
             "use strict";
-            A.r(N), A.d(N, {
+            A.r(I), A.d(I, {
                 setLocaleHack: function() {
                     return V
                 },
                 default: function() {
-                    return S
+                    return t
                 }
             });
             var O = A("446674"),
                 T = A("913144");
             let _ = !1,
-                E = null,
-                e = null;
+                e = null,
+                E = null;
 
-            function V(I) {
-                G({
-                    locale: I
+            function V(N) {
+                i({
+                    locale: N
                 })
             }
 
-            function G(I) {
+            function i(N) {
                 let {
-                    locale: N
-                } = I;
-                _ = !0, E = N
+                    locale: I
+                } = N;
+                _ = !0, e = I
             }
-            class R extends O.default.Store {
+            class n extends O.default.Store {
                 isLoading() {
                     return _
                 }
                 getError() {
-                    return e
+                    return E
                 }
             }
-            R.displayName = "I18nLoaderStore";
-            var S = new R(T.default, {
-                I18N_LOAD_START: G,
-                I18N_LOAD_SUCCESS: function(I) {
+            n.displayName = "I18nLoaderStore";
+            var t = new n(T.default, {
+                I18N_LOAD_START: i,
+                I18N_LOAD_SUCCESS: function(N) {
                     let {
-                        locale: N
-                    } = I;
-                    N === E && (_ = !1, e = null, E = null)
+                        locale: I
+                    } = N;
+                    I === e && (_ = !1, E = null, e = null)
                 },
-                I18N_LOAD_ERROR: function(I) {
+                I18N_LOAD_ERROR: function(N) {
                     let {
-                        error: N,
+                        error: I,
                         locale: A
-                    } = I;
-                    A === E && (_ = !1, e = null != N ? N : null, E = null)
+                    } = N;
+                    A === e && (_ = !1, E = null != I ? I : null, e = null)
                 }
             })
         },
-        476765: function(I, N, A) {
-            "use strict";
-            A.r(N), A.d(N, {
-                uid: function() {
-                    return E
-                },
-                useUID: function() {
-                    return e
-                },
-                UID: function() {
-                    return V
-                }
-            });
-            var O = A("995008"),
-                T = A.n(O),
-                _ = A("775560");
-            let E = function() {
-                    let I = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
-                    return T(I)
-                },
-                e = () => (0, _.useLazyValue)(() => E()),
-                V = I => {
-                    let {
-                        children: N
-                    } = I;
-                    return N(e())
-                }
-        },
-        449008: function(I, N, A) {
+        449008: function(N, I, A) {
             "use strict";
 
-            function O(I) {
-                throw Error("Unhandled value: ".concat(I))
+            function O(N) {
+                throw Error("Unhandled value: ".concat(N))
             }
 
-            function T(I) {
-                return null != I
+            function T(N) {
+                return null != N
             }
 
-            function _(I, N) {
-                return I.size === N.size && (0 === I.size && 0 === N.size || Array.from(I).every(I => N.has(I)))
+            function _(N, I) {
+                return N.size === I.size && (0 === N.size && 0 === I.size || Array.from(N).every(N => I.has(N)))
             }
-            A.r(N), A.d(N, {
+            A.r(I), A.d(I, {
                 assertNever: function() {
                     return O
                 },
@@ -1899,11 +2254,85 @@
                 }
             }), A("70102")
         },
-        792788: function(I, N, A) {
+        749866: function(N, I, A) {
             "use strict";
-            A.r(N), A.d(N, {
-                default: function() {
+            A.r(I), A.d(I, {
+                isSupported: function() {
                     return E
+                },
+                setEnabled: function() {
+                    return i
+                },
+                setLearnedWords: function() {
+                    return n
+                },
+                isMisspelled: function() {
+                    return t
+                },
+                getCorrections: function() {
+                    return R
+                },
+                replaceWithCorrection: function() {
+                    return G
+                },
+                setAppLocale: function() {
+                    return r
+                },
+                addResultListener: function() {
+                    return a
+                }
+            });
+            var O = A("49671"),
+                T = A("852046"),
+                _ = A("773336");
+
+            function e() {
+                return (null === O.default || void 0 === O.default ? void 0 : O.default.spellCheck) != null
+            }
+
+            function E() {
+                return (0, _.isDesktop)() && e()
+            }
+            let V = E() ? (0, T.install)() : null;
+            async function i(N) {
+                let I = await V;
+                null != I && (I.enabled = N)
+            }
+            async function n(N) {
+                let I = await V;
+                null != I && I.setLearnedWords(N)
+            }
+            async function t(N) {
+                let I = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    A = await V;
+                return null != A && A.isMisspelled(N, I)
+            }
+            async function R(N) {
+                let I = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    A = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 5,
+                    O = await V;
+                return null == O ? [] : O.getCorrectionsForMisspelling(N, I).slice(0, A)
+            }
+            async function G(N) {
+                let I = await V;
+                null != I && I.replaceMisspelling(N)
+            }
+            async function r(N) {
+                let I = await V;
+                null != I && I.setAppLocale(N)
+            }
+
+            function a(N) {
+                if (!e()) return () => {};
+                let I = O.default.spellCheck.on("spellcheck-result", N);
+                return null != I ? I : () => {}
+            }
+        },
+        792788: function(N, I, A) {
+            "use strict";
+            A.r(I), A.d(I, {
+                default: function() {
+                    return e
                 }
             });
             var O = A("160679"),
@@ -1911,14 +2340,14 @@
             A("246663");
             let _ = new T.default({
                 initialLocale: O.parse(document.cookie).locale,
-                getMessages: I => A("826507")("./messages/".concat(I).replace("./messages/", "./")),
+                getMessages: N => A("826507")("./messages/".concat(N).replace("./messages/", "./")),
                 getLanguages: () => A("499172")
             });
-            _.addListener("locale", I => {
-                document.cookie = "locale=".concat(I, ";path=/")
+            _.addListener("locale", N => {
+                document.cookie = "locale=".concat(N, ";path=/")
             });
-            var E = _
+            var e = _
         }
     }
 ]);
-//# sourceMappingURL=55348.aee1ea4755a2b7781dff.js.map
+//# sourceMappingURL=45189.165c406d005417d68406.js.map

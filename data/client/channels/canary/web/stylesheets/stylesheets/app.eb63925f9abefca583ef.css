@@ -1641,178 +1641,6 @@
     margin-left: 10px
 }
 
-.focus-rings-ring {
-    position: absolute;
-    display: block;
-    pointer-events: none;
-    background: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 4px;
-    border-radius: var(--__adaptive-focus-ring-radius, 4px);
-    box-shadow: 0 0 0 4px#00b0f4;
-    box-shadow: 0 0 0 4px var(--__adaptive-focus-ring-color, var(--focus-primary, #00b0f4))
-}
-
-.paypalLogo_d5b251 {
-    background-image: url(/assets/7a6a74bce00532de3748.svg)
-}
-
-.sofortLogo__40894 {
-    background-image: url(/assets/bb2df9b4fe177b88f5cb.svg)
-}
-
-.paysafeCardLogo__036a3 {
-    background-image: url(/assets/1f5c70f7ae2fa7ca6f55.svg)
-}
-
-.gcashLogo__79636 {
-    background-image: url(/assets/08d19f5d231757b14468.svg)
-}
-
-.grabPayLogo__27a10 {
-    background-image: url(/assets/5b309e3bda0a954ae67e.svg)
-}
-
-.momoLogo_f6b282 {
-    background-image: url(/assets/022b6f08ce8cd06e7d2e.svg)
-}
-
-.kakaopayLogo__9e5dd {
-    background-image: url(/assets/74cc3a7d069e7bde4642.svg)
-}
-
-.goPayLogo_a4342b {
-    background-image: url(/assets/a0e2e13b1edb66b440fe.svg)
-}
-
-.bancontactLogo__0b133 {
-    background-image: url(/assets/d3d02d383054f64091d5.svg)
-}
-
-.epsLogo__95976 {
-    background-image: url(/assets/dd293574a2092f9d4555.svg)
-}
-
-.idealLogo__7cddf {
-    background-image: url(/assets/a6a8e98a210bf8b02da7.svg)
-}
-
-.p24Logo__81ad5 {
-    background-image: url(/assets/b8ead81360c33e0de3f5.svg)
-}
-
-.giropayLogo__9aae5 {
-    background-image: url(/assets/66d99a14180b6e5da1a3.svg)
-}
-
-.message_a18a8a {
-    font-size: 24px;
-    text-align: center
-}
-
-.gamepadButtonText__77d59 {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--white-500);
-    margin-right: 30px
-}
-
-.gamepadButtonContainer_a682a6 {
-    display: flex;
-    flex-direction: row;
-    align-items: center
-}
-
-.header__94364 {
-    padding: 24px 16px 0;
-    flex-grow: 0;
-    overflow: hidden
-}
-
-.subtitle__0d3af {
-    margin-top: 8px
-}
-
-.closeButton__2e9ef {
-    z-index: 1000;
-    position: absolute;
-    top: 12px;
-    right: 12px
-}
-
-.content__3d6e7 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 24px;
-    padding-top: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 24px
-}
-
-.smsInputContainer_dfd2d0 {
-    display: flex;
-    gap: 8px
-}
-
-.smsInput__8c42b {
-    flex-grow: 1
-}
-
-.error__95c4e {
-    margin-top: 8px
-}
-
-.footer__72fb4 {
-    justify-content: space-between;
-    padding-left: 8px
-}
-
-.listItemContainer_cb9db1 {
-    border-radius: 8px;
-    border: 1px solid var(--background-modifier-accent);
-    background-color: var(--background-primary);
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: 100%;
-    padding: 0;
-    padding-left: 8px
-}
-
-.listItemContainer_cb9db1:hover {
-    background-color: var(--background-modifier-hover)
-}
-
-.keyboard-mode .listItemContainer_cb9db1:focus {
-    background-color: var(--background-modifier-selected)
-}
-
-.listItemContainer_cb9db1:active {
-    background-color: var(--background-modifier-active)
-}
-
-.listItemIcon_e5a0ae {
-    filter: saturate(1);
-    filter: saturate(var(--saturation-factor, 1));
-    margin: 8px 8px 8px 16px
-}
-
-.listItemText_d903ca {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 8px
-}
-
-.listItemArrow__8205e {
-    margin-left: auto;
-    margin-right: 16px;
-    height: 50px;
-    color: var(--interactive-normal)
-}
-
 .applicationDetails__6d654 {
     padding: 24px 0
 }
@@ -2178,6 +2006,103 @@
     padding-bottom: 8px
 }
 
+.header__94364 {
+    padding: 24px 16px 0;
+    flex-grow: 0;
+    overflow: hidden
+}
+
+.subtitle__0d3af {
+    margin-top: 8px
+}
+
+.closeButton__2e9ef {
+    z-index: 1000;
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.content__3d6e7 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    padding-top: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px
+}
+
+.smsInputContainer_dfd2d0 {
+    display: flex;
+    gap: 8px
+}
+
+.smsInput__8c42b {
+    flex-grow: 1
+}
+
+.error__95c4e {
+    margin-top: 8px
+}
+
+.footer__72fb4 {
+    justify-content: space-between;
+    padding-left: 8px
+}
+
+.listItemContainer_cb9db1 {
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-primary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    padding-left: 8px
+}
+
+.listItemContainer_cb9db1:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.keyboard-mode .listItemContainer_cb9db1:focus {
+    background-color: var(--background-modifier-selected)
+}
+
+.listItemContainer_cb9db1:active {
+    background-color: var(--background-modifier-active)
+}
+
+.listItemIcon_e5a0ae {
+    filter: saturate(1);
+    filter: saturate(var(--saturation-factor, 1));
+    margin: 8px 8px 8px 16px
+}
+
+.listItemText_d903ca {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 8px
+}
+
+.listItemArrow__8205e {
+    margin-left: auto;
+    margin-right: 16px;
+    height: 50px;
+    color: var(--interactive-normal)
+}
+
+.errorCodeMessage__0cd84 {
+    margin-top: 16px
+}
+
+.title__09d1c {
+    text-transform: capitalize
+}
+
 .spacing_a2cee4 {
     margin-bottom: 20px
 }
@@ -2194,12 +2119,87 @@
     color: var(--white-500)
 }
 
-.errorCodeMessage__0cd84 {
-    margin-top: 16px
+.focus-rings-ring {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+    border-radius: var(--__adaptive-focus-ring-radius, 4px);
+    box-shadow: 0 0 0 4px#00b0f4;
+    box-shadow: 0 0 0 4px var(--__adaptive-focus-ring-color, var(--focus-primary, #00b0f4))
 }
 
-.title__09d1c {
-    text-transform: capitalize
+.paypalLogo_d5b251 {
+    background-image: url(/assets/7a6a74bce00532de3748.svg)
+}
+
+.sofortLogo__40894 {
+    background-image: url(/assets/bb2df9b4fe177b88f5cb.svg)
+}
+
+.paysafeCardLogo__036a3 {
+    background-image: url(/assets/1f5c70f7ae2fa7ca6f55.svg)
+}
+
+.gcashLogo__79636 {
+    background-image: url(/assets/08d19f5d231757b14468.svg)
+}
+
+.grabPayLogo__27a10 {
+    background-image: url(/assets/5b309e3bda0a954ae67e.svg)
+}
+
+.momoLogo_f6b282 {
+    background-image: url(/assets/022b6f08ce8cd06e7d2e.svg)
+}
+
+.kakaopayLogo__9e5dd {
+    background-image: url(/assets/74cc3a7d069e7bde4642.svg)
+}
+
+.goPayLogo_a4342b {
+    background-image: url(/assets/a0e2e13b1edb66b440fe.svg)
+}
+
+.bancontactLogo__0b133 {
+    background-image: url(/assets/d3d02d383054f64091d5.svg)
+}
+
+.epsLogo__95976 {
+    background-image: url(/assets/dd293574a2092f9d4555.svg)
+}
+
+.idealLogo__7cddf {
+    background-image: url(/assets/a6a8e98a210bf8b02da7.svg)
+}
+
+.p24Logo__81ad5 {
+    background-image: url(/assets/b8ead81360c33e0de3f5.svg)
+}
+
+.giropayLogo__9aae5 {
+    background-image: url(/assets/66d99a14180b6e5da1a3.svg)
+}
+
+.message_a18a8a {
+    font-size: 24px;
+    text-align: center
+}
+
+.gamepadButtonText__77d59 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white-500);
+    margin-right: 30px
+}
+
+.gamepadButtonContainer_a682a6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
 }
 
 .widthForAddPack__4a53e {
@@ -126182,4 +126182,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2bbcef7506dbeb488991.css.map*/
+/*# sourceMappingURL=app.eb63925f9abefca583ef.css.map*/
