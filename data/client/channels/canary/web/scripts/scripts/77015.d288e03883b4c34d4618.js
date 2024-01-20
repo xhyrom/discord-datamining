@@ -634,8 +634,6 @@
                 return x(y.GlobalKeybindActions.SOUNDBOARD_HOLD, p.DEFAULT_KEYBIND, !1)
             }, function() {
                 return x(y.GlobalKeybindActions.SAVE_CLIP, D.DEFAULT_KEYBIND)
-            }, function() {
-                return x(y.GlobalKeybindActions.TOGGLE_GO_LIVE_STREAMING, "mod+shift+l")
             }];
 
             function X() {
@@ -1286,7 +1284,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...n));
                     let l = new URLSearchParams;
-                    l.append("build_id", "8e2c5a63ca3ae6838ff82a81f74d306309194297"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
+                    l.append("build_id", "f98c2dae1a6b95add29c62bdaf0818ab194a894b"), l.append("rpc", String(t)), l.append("rpc_auth_token", k), a = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(l.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1414,4 +1412,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77015.f716492708ba4a2f5790.js.map
+//# sourceMappingURL=77015.d288e03883b4c34d4618.js.map

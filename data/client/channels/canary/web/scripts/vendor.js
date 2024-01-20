@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -91674,20 +91674,18 @@
                         guildId: n,
                         channelId: s,
                         pid: r,
-                        sourceId: o,
-                        sourceName: l
-                    } = e, u = (0, d.encodeStreamKey)({
+                        sourceName: o
+                    } = e, l = (0, d.encodeStreamKey)({
                         streamType: t,
                         guildId: n,
                         channelId: s,
                         ownerId: _.default.getId()
-                    }), c = null != r ? v.default.getGameForPID(r) : null;
-                    a[u] = {
-                        id: null == c ? void 0 : c.id,
+                    }), u = null != r ? v.default.getGameForPID(r) : null;
+                    a[l] = {
+                        id: null == u ? void 0 : u.id,
                         pid: r,
-                        sourceId: o,
-                        sourceName: l
-                    }, i.delete(u), i.set(u, {
+                        sourceName: o
+                    }, i.delete(l), i.set(l, {
                         streamType: t,
                         guildId: n,
                         channelId: s,
@@ -118356,7 +118354,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260268"
+                                build_number: "260273"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134445,4 +134443,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.8db71d576634af56879a.js.map
+//# sourceMappingURL=29278.329479a821a6689cb8c4.js.map
