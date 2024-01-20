@@ -15037,6 +15037,8 @@
   "COLLECTIBLES_SFA_STARTER_BANNER_DESCRIPTION": "\"Collect these sweet, bonus items when you join Nitro! $[Unlock with Nitro](getPremium)\"",
   "COLLECTIBLES_SFA_HERO_BANNER_SUBTITLE": "\"Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.\"",
   "COLLECTIBLES_SFA_BANNER_DESCRIPTION": "\"Make your profile feel alive with snazzy profile effects and avatar decorations. What's not to love?\"",
+  "COLLECTIBLES_CYBERPUNK_COACHMARK_HEADER": "\"NEW in the Shop! Cyberpunk\"",
+  "COLLECTIBLES_CYBERPUNK_COACHMARK_DESC": "\"The future is here, and it's looking good.\"",
   "COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION": "\"{sender} gifted you an avatar decoration!\"",
   "COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT": "\"{sender} gifted you a profile effect!\"",
   "COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION_UNKNOWN_SENDER": "\"You have been gifted an avatar decoration!\"",
