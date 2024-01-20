@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["65225"], {
+    ["59646"], {
         53708: function(e, t, n) {
             "use strict";
             e.exports = n.p + "f6c7b8245d3a54cf98b2.png"
@@ -173,10 +173,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 accountDetailsInit: function() {
-                    return I
+                    return p
                 },
                 accountDetailsClose: function() {
-                    return p
+                    return I
                 },
                 disableAccount: function() {
                     return h
@@ -234,13 +234,13 @@
                 E = n("191349"),
                 _ = n("782340");
 
-            function I() {
+            function p() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_INIT"
                 })
             }
 
-            function p() {
+            function I() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_CLOSE"
                 })
@@ -297,8 +297,8 @@
                     emailToken: r,
                     password: s,
                     avatar: d,
-                    avatarDecoration: I,
-                    newPassword: p,
+                    avatarDecoration: p,
+                    newPassword: I,
                     globalName: h
                 } = e;
                 return o.default.dispatch({
@@ -312,10 +312,10 @@
                         avatar: d,
                         discriminator: n,
                         global_name: h,
-                        new_password: p,
+                        new_password: I,
                         ...e
                     };
-                    null === I && (o.avatar_decoration_id = null), null != I && (o.avatar_decoration_id = I.id, o.avatar_decoration_sku_id = I.skuId);
+                    null === p && (o.avatar_decoration_id = null), null != p && (o.avatar_decoration_id = p.id, o.avatar_decoration_sku_id = p.skuId);
                     let u = l.default.get(f.DEVICE_TOKEN),
                         a = (0, E.getDevicePushProvider)();
                     null != a && null != u && (o.push_provider = a, o.push_token = u);
@@ -1126,7 +1126,7 @@
                     baseConfig: d,
                     addClickListener: f,
                     removeClickListener: E
-                } = e, _ = (0, r.useConfettiCannon)(n, u), I = (0, o.default)([s.default], () => s.default.useReducedMotion), p = l.useMemo(() => I ? a : {
+                } = e, _ = (0, r.useConfettiCannon)(n, u), p = (0, o.default)([s.default], () => s.default.useReducedMotion), I = l.useMemo(() => p ? a : {
                     confettiCanvas: n,
                     cannon: _,
                     createConfetti: (e, t) => _.createConfetti({
@@ -1169,9 +1169,9 @@
                     },
                     addClickListener: f,
                     removeClickListener: E
-                }, [f, d, _, n, I, E]);
+                }, [f, d, _, n, p, E]);
                 return (0, i.jsx)(c.Provider, {
-                    value: p,
+                    value: I,
                     children: t
                 })
             }
@@ -1215,10 +1215,10 @@
                     return _
                 },
                 setPendingPronouns: function() {
-                    return I
+                    return p
                 },
                 setPendingNickname: function() {
-                    return p
+                    return I
                 },
                 setPendingThemeColors: function() {
                     return h
@@ -1325,14 +1325,14 @@
                 })
             }
 
-            function I(e) {
+            function p(e) {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS",
                     pronouns: e
                 })
             }
 
-            function p(e) {
+            function I(e) {
                 l.default.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME",
                     nickname: e
@@ -1388,16 +1388,16 @@
             var f = n("446674"),
                 E = n("913144"),
                 _ = n("49111");
-            let I = _.FormStates.CLOSED,
-                p = {},
+            let p = _.FormStates.CLOSED,
+                I = {},
                 h = !1;
 
             function C() {
-                I = _.FormStates.CLOSED, p = {}, a = null, c = void 0, d = []
+                p = _.FormStates.CLOSED, I = {}, a = null, c = void 0, d = []
             }
 
             function T() {
-                S(), N(), p = {}, I = _.FormStates.OPEN
+                S(), N(), I = {}, p = _.FormStates.OPEN
             }
 
             function S() {
@@ -1409,10 +1409,10 @@
             }
             class v extends f.default.Store {
                 getFormState() {
-                    return I
+                    return p
                 }
                 getErrors() {
-                    return p
+                    return I
                 }
                 showNotice() {
                     return void 0 !== i || void 0 !== l || void 0 !== r || void 0 !== o || void 0 !== s || void 0 !== u
@@ -1464,25 +1464,25 @@
             v.displayName = "GuildIdentitySettingsStore";
             var g = new v(E.default, {
                 GUILD_IDENTITY_SETTINGS_INIT: function(e) {
-                    a = e.guild, I = _.FormStates.OPEN, p = {}, c = e.source, d = e.analyticsLocations
+                    a = e.guild, p = _.FormStates.OPEN, I = {}, c = e.source, d = e.analyticsLocations
                 },
                 GUILD_IDENTITY_SETTINGS_CLOSE: C,
                 GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: function() {
                     T(), C()
                 },
                 GUILD_IDENTITY_SETTINGS_SET_GUILD: function(e) {
-                    a = e.guild, p = {}
+                    a = e.guild, I = {}
                 },
                 GUILD_IDENTITY_SETTINGS_SUBMIT: function() {
-                    I = _.FormStates.SUBMITTING, p = {}
+                    p = _.FormStates.SUBMITTING, I = {}
                 },
                 GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: function(e) {
                     var t;
-                    if (I !== _.FormStates.SUBMITTING) return !1;
-                    I = _.FormStates.OPEN, p = null !== (t = e.errors) && void 0 !== t ? t : {}
+                    if (p !== _.FormStates.SUBMITTING) return !1;
+                    p = _.FormStates.OPEN, I = null !== (t = e.errors) && void 0 !== t ? t : {}
                 },
                 USER_PROFILE_UPDATE_FAILURE: function(e) {
-                    I = _.FormStates.OPEN, p = e.errors
+                    p = _.FormStates.OPEN, I = e.errors
                 },
                 GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: function(e) {
                     let {
@@ -1525,7 +1525,7 @@
                 GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: T,
                 GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: T,
                 GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: function() {
-                    p = {}
+                    I = {}
                 },
                 GUILD_IDENTITY_SETTINGS_SET_DISABLE_SUBMIT: function(e) {
                     let {
@@ -1866,10 +1866,10 @@
                     return _
                 },
                 PaymentPortalBody: function() {
-                    return I
+                    return p
                 },
                 PaymentPortalFooter: function() {
-                    return p
+                    return I
                 }
             });
             var i = n("37983"),
@@ -1888,8 +1888,8 @@
                 var t, n, r, s, a, c;
                 let {
                     header: _,
-                    isLargeModal: I,
-                    stepProps: p
+                    isLargeModal: p,
+                    stepProps: I
                 } = function(e) {
                     let {
                         header: t,
@@ -1914,9 +1914,9 @@
                 }, [h, N]), u(null != g, "Unknown step for current payment flow.");
                 let m = null !== (a = null == g ? void 0 : null === (t = g.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== a && a,
                     A = null == g ? void 0 : null === (n = g.options) || void 0 === n ? void 0 : n.bodyClassName,
-                    L = void 0 !== I && I ? E.sliderBodyLarge : null == g ? void 0 : null === (r = g.options) || void 0 === r ? void 0 : r.sliderBodyClassName;
+                    L = void 0 !== p && p ? E.sliderBodyLarge : null == g ? void 0 : null === (r = g.options) || void 0 === r ? void 0 : r.sliderBodyClassName;
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [null === (c = null == g ? void 0 : null === (s = g.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === c || c ? _ : null, g.renderStep(p), null == h || m ? null : (0, i.jsxs)(i.Fragment, {
+                    children: [null === (c = null == g ? void 0 : null === (s = g.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === c || c ? _ : null, g.renderStep(I), null == h || m ? null : (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(d.ModalContent, {
                             className: o(E.body, A),
                             children: (0, i.jsx)(d.Slides, {
@@ -1941,7 +1941,7 @@
                 })
             }
 
-            function I(e) {
+            function p(e) {
                 let {
                     children: t
                 } = e, {
@@ -1950,7 +1950,7 @@
                 return null == n ? null : c.createPortal(t, n)
             }
 
-            function p(e) {
+            function I(e) {
                 let {
                     children: t
                 } = e, {
@@ -1963,7 +1963,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return p
                 }
             });
             var i = n("37983");
@@ -1980,11 +1980,11 @@
                 E = n("49111"),
                 _ = n("646718");
 
-            function I(e) {
+            function p(e) {
                 let {
                     initialPlanId: t,
-                    followupSKUInfo: I,
-                    onClose: p,
+                    followupSKUInfo: p,
+                    onClose: I,
                     onComplete: h,
                     onSubscriptionConfirmation: C,
                     analyticsLocations: T,
@@ -1999,8 +1999,8 @@
                     openInvoiceId: U,
                     applicationId: y,
                     referralTrialOfferId: P,
-                    giftRecipient: D,
-                    returnRef: b,
+                    giftRecipient: b,
+                    returnRef: D,
                     subscription: O
                 } = null != e ? e : {}, w = !1, M = (0, l.v4)(), x = a.default.getCurrentUser(), G = (0, f.isPremiumExactly)(x, _.PremiumTypes.TIER_2);
                 (0, r.openModalLazy)(async () => {
@@ -2019,11 +2019,11 @@
                             skuId: A,
                             isGift: g,
                             giftMessage: m,
-                            giftRecipient: D,
+                            giftRecipient: b,
                             initialPlanId: t,
-                            followupSKUInfo: I,
+                            followupSKUInfo: p,
                             onClose: (e, t) => {
-                                l(), null == p || p(e), e && (null == C || C(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !G && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
+                                l(), null == I || I(e), e && (null == C || C(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !G && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
                                 w = !0, null == h || h(), !g && (0, u.setCanPlayWowMoment)(!0)
@@ -2039,7 +2039,7 @@
                             openInvoiceId: U,
                             applicationId: y,
                             referralTrialOfferId: P,
-                            returnRef: b,
+                            returnRef: D,
                             subscription: O
                         })
                     }
@@ -2056,7 +2056,7 @@
                             eligible_for_trial: null != L,
                             application_id: y,
                             location_stack: T
-                        }), (0, o.clearError)(), (0, s.clearPurchaseTokenAuthState)(), null == p || p(w), w && (null == C || C())
+                        }), (0, o.clearError)(), (0, s.clearPurchaseTokenAuthState)(), null == I || I(w), w && (null == C || C())
                     }
                 })
             }
@@ -2083,7 +2083,7 @@
                     return _
                 },
                 maybeFetchPremiumLikelihood: function() {
-                    return p
+                    return I
                 },
                 useMaybeFetchPremiumLikelihood: function() {
                     return h
@@ -2101,7 +2101,7 @@
                 f = n("646718"),
                 E = n("49111");
             let _ = "nonSubscriber";
-            async function I() {
+            async function p() {
                 try {
                     o.default.dispatch({
                         type: "BILLING_USER_PREMIUM_LIKELIHOOD_FETCH"
@@ -2130,7 +2130,7 @@
                 }
             }
 
-            function p(e) {
+            function I(e) {
                 let {
                     enabled: t,
                     useExpectedValue: n
@@ -2157,7 +2157,7 @@
             }
 
             function C(e, t, n, i) {
-                null != e && !(0, c.isPremium)(e) && n && (t && I(), i && (!a.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_0) && !a.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_0) && (0, s.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_0), !a.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_2) && !a.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_2) && (0, s.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_2)))
+                null != e && !(0, c.isPremium)(e) && n && (t && p(), i && (!a.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_0) && !a.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_0) && (0, s.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_0), !a.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_2) && !a.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_2) && (0, s.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_2)))
             }
         },
         676572: function(e, t, n) {
@@ -2265,7 +2265,7 @@
                     return _
                 },
                 showRemoveBanner: function() {
-                    return I
+                    return p
                 }
             }), n("424973");
             var i = n("884691"),
@@ -2332,7 +2332,7 @@
                 return void 0 === e ? null != t : null != e
             }
 
-            function I(e, t) {
+            function p(e, t) {
                 return void 0 === e ? null != t : null != e
             }
         },
@@ -2452,11 +2452,11 @@
                 _ = () => {
                     c.default.isLoaded && E.compute()
                 },
-                I = () => {
+                p = () => {
                     _()
                 };
 
-            function p() {
+            function I() {
                 var e;
                 let t = null === (e = u.default.frecencyWithoutFetchingLatest.stickerFrecency) || void 0 === e ? void 0 : e.stickers;
                 if (null == t) return !1;
@@ -2467,7 +2467,7 @@
             }
             class h extends r.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(c.default), null != e && (f = e), this.syncWith([c.default], I), this.syncWith([u.default], p)
+                    this.waitFor(c.default), null != e && (f = e), this.syncWith([c.default], p), this.syncWith([u.default], I)
                 }
                 getState() {
                     return f
@@ -2514,10 +2514,10 @@
                     return _
                 },
                 resetPendingProfileChanges: function() {
-                    return I
+                    return p
                 },
                 setPendingBanner: function() {
-                    return p
+                    return I
                 },
                 setPendingBio: function() {
                     return h
@@ -2608,13 +2608,13 @@
                 })
             }
 
-            function I() {
+            function p() {
                 l.default.dispatch({
                     type: "USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
                 })
             }
 
-            function p(e) {
+            function I(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER",
                     banner: e
@@ -2742,7 +2742,7 @@
                         !e.repeat && ((e.charCode === s.KeyboardKeys.SPACE || e.charCode === s.KeyboardKeys.ENTER) && (e.preventDefault(), null != n && (0, o.transitionTo)(n), null == a || a()), null == c || c(e))
                     }, [n, c, a]), _ = l.useCallback(e => {
                         !e.metaKey && !e.shiftKey && 0 === e.button && (e.preventDefault(), e.stopPropagation(), null != n && (0, o.transitionTo)(n), null == a || a())
-                    }, [n, a]), I = (0, i.jsx)("a", {
+                    }, [n, a]), p = (0, i.jsx)("a", {
                         ref: t,
                         href: n,
                         onClick: _,
@@ -2752,7 +2752,7 @@
                     });
                     return (0, i.jsx)(r.FocusRing, {
                         ...d,
-                        children: I
+                        children: p
                     })
                 })
         },
@@ -2760,7 +2760,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 Shine: function() {
-                    return p
+                    return I
                 },
                 default: function() {
                     return C
@@ -2780,11 +2780,11 @@
                     default: E.shineDefault,
                     small: E.shineSmall
                 },
-                I = {
+                p = {
                     default: E.shineInnerDefault,
                     small: E.shineInnerSmall
                 };
-            class p extends o.PureComponent {
+            class I extends o.PureComponent {
                 render() {
                     let {
                         className: e,
@@ -2802,13 +2802,13 @@
                             justify: f.default.Justify.CENTER,
                             className: _[t],
                             children: (0, r.jsx)("div", {
-                                className: I[t]
+                                className: p[t]
                             })
                         })
                     })
                 }
             }
-            p.defaultProps = {
+            I.defaultProps = {
                 shineSize: "default"
             };
             let h = e => {
@@ -2821,18 +2821,18 @@
                     shineSize: a = "default",
                     shinePaused: f,
                     buttonShineClassName: _,
-                    onlyShineOnHover: I,
+                    onlyShineOnHover: p,
                     ...h
-                } = e, C = o.createRef(), T = (0, d.default)(C), S = !i && !l && !0 !== s && (!I || T);
+                } = e, C = o.createRef(), T = (0, d.default)(C), S = !i && !l && !0 !== s && (!p || T);
                 return (0, r.jsxs)(c.Button, {
                     buttonRef: C,
                     ...h,
                     className: u(E.shinyButton, n),
                     disabled: i,
                     submitting: l,
-                    children: [t, S ? (0, r.jsx)(p, {
+                    children: [t, S ? (0, r.jsx)(I, {
                         shinePaused: f,
-                        className: u(E.buttonShine, I ? E.onlyShineOnHover : void 0, _),
+                        className: u(E.buttonShine, p ? E.onlyShineOnHover : void 0, _),
                         shineSize: a
                     }) : null]
                 })
@@ -2866,39 +2866,11 @@
             }
             n("884691")
         },
-        476765: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                uid: function() {
-                    return o
-                },
-                useUID: function() {
-                    return s
-                },
-                UID: function() {
-                    return u
-                }
-            });
-            var i = n("995008"),
-                l = n.n(i),
-                r = n("775560");
-            let o = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
-                    return l(e)
-                },
-                s = () => (0, r.useLazyValue)(() => o()),
-                u = e => {
-                    let {
-                        children: t
-                    } = e;
-                    return t(s())
-                }
-        },
         461380: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return p
                 }
             });
             var i = n("37983");
@@ -2924,8 +2896,8 @@
                         width: n = 24,
                         height: l = 24,
                         color: _ = "currentColor",
-                        transition: I = f.transition,
-                        className: p,
+                        transition: p = f.transition,
+                        className: I,
                         foreground: h,
                         expanded: C,
                         ...T
@@ -2941,7 +2913,7 @@
                         } [N];
                         return (0, i.jsx)(e, {
                             ...T,
-                            className: p,
+                            className: I,
                             width: n,
                             height: l,
                             color: _,
@@ -2949,7 +2921,7 @@
                         })
                     }
                     return (0, i.jsx)("svg", {
-                        className: r(p, I, N),
+                        className: r(I, p, N),
                         width: n,
                         height: l,
                         viewBox: "0 0 24 24",
@@ -2967,7 +2939,7 @@
                     })
                 };
             _.Directions = E;
-            var I = _
+            var p = _
         },
         109264: function(e, t, n) {
             "use strict";
@@ -3563,8 +3535,8 @@
                 f = n("77078"),
                 E = n("485328"),
                 _ = n("159885"),
-                I = n("983782"),
-                p = n("275495");
+                p = n("983782"),
+                I = n("275495");
             let h = (0, _.cssValueToNumber)(d.default.FULL_SCREEN_LAYER_ANIMATION_DURATION);
             (l = i || (i = {}))[l.ENTERING = 1] = "ENTERING", l[l.ENTERED = 2] = "ENTERED", l[l.EXITING = 3] = "EXITING", l[l.EXITED = 4] = "EXITED";
             let C = (0, c.default)(e => ({
@@ -3597,10 +3569,10 @@
                     E.default.disableTemp()
                 }), [t.key]), (0, r.jsx)(t.LayerComponent, {
                     children: (0, r.jsxs)("div", {
-                        className: p.root,
+                        className: I.root,
                         ref: n,
                         children: [(0, r.jsx)("div", {
-                            className: p.drag
+                            className: I.drag
                         }), t.render({
                             transitionState: null != t ? t.transitionState : 3,
                             closeLayer: () => m(t.key)
@@ -3609,20 +3581,20 @@
                 })
             }
             let S = {
-                    enter: p.enter,
-                    enterActive: p.enterActive,
-                    enterDone: p.enterDone,
-                    exit: p.exit,
-                    exitActive: p.exitActive,
-                    exitDone: p.exitDone
+                    enter: I.enter,
+                    enterActive: I.enterActive,
+                    enterDone: I.enterDone,
+                    exit: I.exit,
+                    exitActive: I.exitActive,
+                    exitDone: I.exitDone
                 },
                 N = {
-                    enter: p.enterReducedMotion,
-                    enterActive: p.enterActiveReducedMotion,
-                    enterDone: p.enterDoneReducedMotion,
-                    exit: p.exitReducedMotion,
-                    exitActive: p.exitActiveReducedMotion,
-                    exitDone: p.exitDoneReducedMotion
+                    enter: I.enterReducedMotion,
+                    enterActive: I.enterActiveReducedMotion,
+                    enterDone: I.enterDoneReducedMotion,
+                    exit: I.exitReducedMotion,
+                    exitActive: I.exitActiveReducedMotion,
+                    exitDone: I.exitDoneReducedMotion
                 };
 
             function v() {
@@ -3660,7 +3632,7 @@
                     fullScreenLayers: [...t.fullScreenLayers, {
                         key: l,
                         transitionState: 1,
-                        LayerComponent: null != i ? i : I.default,
+                        LayerComponent: null != i ? i : p.default,
                         render: e
                     }]
                 })), l
@@ -3827,4 +3799,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65225.45a68e44217bdc89eb40.js.map
+//# sourceMappingURL=59646.b5251b58cb15891339af.js.map
