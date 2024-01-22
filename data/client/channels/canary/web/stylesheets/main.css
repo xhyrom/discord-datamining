@@ -69114,12 +69114,6 @@ input::-webkit-inner-spin-button {
     display: block
 }
 
-.icon24px__4546a {
-    width: 24px;
-    height: 24px;
-    border-radius: 4px
-}
-
 .icon20px__279be {
     width: 20px;
     height: 20px;
@@ -69146,6 +69140,10 @@ input::-webkit-inner-spin-button {
     line-height: 20px;
     border-radius: 4px;
     height: 20px
+}
+
+.modeMuted_c5fde0 {
+    opacity: .3
 }
 
 .liveIndicator_b0f0af {
@@ -126398,4 +126396,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.57046e47ae03c3e55594.css.map*/
+/*# sourceMappingURL=app.ccff851025016913c169.css.map*/
