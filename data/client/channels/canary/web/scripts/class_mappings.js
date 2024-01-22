@@ -17573,7 +17573,9 @@
         775247: function(e, t, o) {
             "use strict";
             e.exports = {
-                advanceSetting: "advanceSetting__5c4d1"
+                advanceSetting: "advanceSetting__5c4d1",
+                advanceSettingTitle: "advanceSettingTitle__50465",
+                settingTitleIcon: "settingTitleIcon__6f523"
             }
         },
         105346: function(e, t, o) {
@@ -17607,6 +17609,7 @@
                 headerBell: "headerBell_a9f96c",
                 headerLeft: "headerLeft__810aa",
                 sectionContent: "sectionContent_fb280b",
+                sectionContentPadding: "sectionContentPadding_f7178e",
                 sectionHeader: "sectionHeader_fe8db6",
                 sectionHeaderTitle: "sectionHeaderTitle__0489c"
             }
@@ -17625,6 +17628,7 @@
                 channelListChannel: "channelListChannel_c19cd4",
                 channelListChannelIcon: "channelListChannelIcon_ac2e72",
                 channelListChannelName: "channelListChannelName__0005e",
+                customPresetsContainer: "customPresetsContainer__88e36",
                 grid: "grid__6d90a",
                 hidden: "hidden__3914d",
                 input: "input_ee086a",
@@ -17635,6 +17639,9 @@
                 mockMessageDisabled: "mockMessageDisabled_d8162f",
                 muted: "muted__057f4",
                 presetExplanation: "presetExplanation__24cb9",
+                presetSeparator: "presetSeparator__13306",
+                segmentedControl: "segmentedControl_b02584",
+                segmentedControlsContainer: "segmentedControlsContainer__70e91",
                 separator: "separator__8736b",
                 setting: "setting__5ade1",
                 settingLabel: "settingLabel_c60961",
