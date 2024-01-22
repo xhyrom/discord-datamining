@@ -132,19 +132,19 @@
                     }
                 }
 
-                function b(t, e) {
+                function m(t, e) {
                     this.fun = t, this.array = e
                 }
 
-                function m() {}
+                function b() {}
                 u.nextTick = function(t) {
                     var e = Array(arguments.length - 1);
                     if (arguments.length > 1)
                         for (var n = 1; n < arguments.length; n++) e[n - 1] = arguments[n];
-                    l.push(new b(t, e)), 1 === l.length && !d && a(p)
-                }, b.prototype.run = function() {
+                    l.push(new m(t, e)), 1 === l.length && !d && a(p)
+                }, m.prototype.run = function() {
                     this.fun.apply(null, this.array)
-                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = m, u.addListener = m, u.once = m, u.off = m, u.removeListener = m, u.removeAllListeners = m, u.emit = m, u.prependListener = m, u.prependOnceListener = m, u.listeners = function(t) {
+                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = b, u.addListener = b, u.once = b, u.off = b, u.removeListener = b, u.removeAllListeners = b, u.emit = b, u.prependListener = b, u.prependOnceListener = b, u.listeners = function(t) {
                     return []
                 }, u.binding = function(t) {
                     throw Error("process.binding is not supported")
@@ -227,7 +227,7 @@
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-6c4dc2e6c7e0b50bb7c78768e5268f33bdf50bc8",
+                        release: "discord_web-52e329676190496b3092c00ed2cd60d1ae7e3037",
                         beforeSend: t => {
                             var e, n;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !u() && !("Aborted" === (n = t).message || "cancel captcha" === n.message) && c() ? t : null
@@ -245,7 +245,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (t = "260339", "260339")), r.setTag("builtAt", String("1705949241818"));
+                    }), r.setTag("buildNumber", (t = "260358", "260358")), r.setTag("builtAt", String("1705950703142"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) r.setTag(t, e[t]);
@@ -352,4 +352,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.95609e9f5e1091287b70.js.map
+//# sourceMappingURL=sentry.097307531129c71f0a86.js.map
