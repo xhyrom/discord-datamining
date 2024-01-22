@@ -29,7 +29,9 @@
             </tr>
             <tr>
                 <td>Mac</td>
-                <td>MacOS 10.11 (El Capitan)+</td>
+                <td>
+                    <p>MacOS 10.13 (High Sierra)+</p>
+                </td>
                 <td>MacOS 10.15 (Catalina)+</td>
             </tr>
             <tr>
