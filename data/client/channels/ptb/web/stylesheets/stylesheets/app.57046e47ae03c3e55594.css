@@ -26900,8 +26900,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -84649,7 +84649,8 @@ html .tabBadge__002b3 {
 
 .categoryLogo__1444c {
     z-index: 1;
-    max-height: 96px
+    max-height: 96px;
+    max-width: 80%
 }
 
 .discordLogo_efcf47 {
@@ -85324,6 +85325,18 @@ html .tabBadge__002b3 {
 @media(max-width:1e3px) {
     .heroDescriptionWithSidebar_c1ef6c>* {
         margin-left: 16px
+    }
+}
+
+@media(max-width:720px) {
+    .heroDescription__31612>* {
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .heroDescription__31612>h2 {
+        font-size: 34px;
+        line-height: 1.0588235294117647
     }
 }
 
@@ -126385,4 +126398,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b556e5f6ab54b4737351.css.map*/
+/*# sourceMappingURL=app.57046e47ae03c3e55594.css.map*/
