@@ -20553,6 +20553,30 @@
                 tier2Plan: "tier2Plan__66988"
             }
         },
+        16358: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                backButton: "backButton__5b790",
+                container: "container_ae11d8",
+                content: "content_ff6bc3",
+                headerArt: "headerArt_b78f22"
+            }
+        },
+        821265: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                arrowIcon: "arrowIcon_c86bb8",
+                card: "card__02aee",
+                cardContainer: "cardContainer__15848",
+                cardInnerContainer: "cardInnerContainer_dc5168",
+                cardProgressBar: "cardProgressBar__0e60a",
+                dot: "dot__5c7fb",
+                leftArrow: "leftArrow__1d2d5",
+                perkInfo: "perkInfo_d1f641",
+                rightArrow: "rightArrow__0633c",
+                selectedDot: "selectedDot__3f4ad"
+            }
+        },
         507759: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -20850,14 +20874,19 @@
         137537: function(e, t, o) {
             "use strict";
             e.exports = {
+                allPerksScroller: "allPerksScroller__8740f",
                 bottomIllustration: "bottomIllustration__8dcea",
                 bottomOfPageVisibilitySensor: "bottomOfPageVisibilitySensor_ab7f4d",
+                cardCarousel: "cardCarousel_f51586",
+                column: "column_b89206",
                 container: "container__6eaa3",
                 footerSpacing: "footerSpacing_e43335",
                 giftNitro: "giftNitro__7b37a",
+                heading: "heading_a0920e",
                 heroHeading: "heroHeading_a17887",
                 mainPageScroller: "mainPageScroller__12afb",
                 manageMembership: "manageMembership__63c2c",
+                open: "open__0960c",
                 perksCards: "perksCards_e83187",
                 perksDiscoverability: "perksDiscoverability__4242c",
                 whatsNew: "whatsNew__2b2f9"
