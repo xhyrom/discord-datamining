@@ -26900,8 +26900,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -76026,9 +76026,9 @@ input::-webkit-inner-spin-button {
     height: 14px
 }
 
-.art_f8934e {
-    margin-top: -60px;
-    height: 120px
+.art__76661 {
+    margin-top: -100px;
+    height: 165px
 }
 
 .checkbox__0fbd2 {
@@ -126396,4 +126396,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3cf05c6778528184d091.css.map*/
+/*# sourceMappingURL=app.a6ee2f98b298147767af.css.map*/
