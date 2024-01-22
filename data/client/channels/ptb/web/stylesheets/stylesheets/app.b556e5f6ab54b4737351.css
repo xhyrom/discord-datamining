@@ -26900,8 +26900,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -108822,6 +108822,15 @@ html .invoiceCancelRow_a8669b {
     margin-bottom: 0
 }
 
+.advanceSettingTitle__50465 {
+    display: inline-flex;
+    align-items: center
+}
+
+.settingTitleIcon__6f523 {
+    margin-left: 8px
+}
+
 .input_b45823 {
     margin-top: 12px
 }
@@ -108928,6 +108937,23 @@ html .invoiceCancelRow_a8669b {
     display: flex
 }
 
+.segmentedControlsContainer__70e91 {
+    padding: 16px
+}
+
+.presetSeparator__13306 {
+    height: 1px;
+    background-color: var(--modal-background)
+}
+
+.segmentedControl_b02584 {
+    padding: 4px
+}
+
+.customPresetsContainer__88e36 {
+    padding: 24px
+}
+
 .input_ee086a {
     min-width: 240px
 }
@@ -108940,9 +108966,12 @@ html .invoiceCancelRow_a8669b {
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    margin-top: 24px;
     grid-gap: 24px;
     gap: 24px
+}
+
+.grid__6d90a:not(:first-child) {
+    margin-top: 16px
 }
 
 .item__77e2c {
@@ -109075,7 +109104,10 @@ html .invoiceCancelRow_a8669b {
 .sectionContent_fb280b {
     background-color: var(--bg-base-secondary);
     margin-bottom: 24px;
-    border-radius: 12px;
+    border-radius: 12px
+}
+
+.sectionContentPadding_f7178e {
     padding: 16px
 }
 
@@ -126353,4 +126385,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.562bf597538f1acb4864.css.map*/
+/*# sourceMappingURL=app.b556e5f6ab54b4737351.css.map*/

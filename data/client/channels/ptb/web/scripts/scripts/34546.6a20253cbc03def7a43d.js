@@ -2421,9 +2421,9 @@
                 NOTIFICATION_SETTINGS_PRESETS_MENTION_ONLY: "Mention Only",
                 NOTIFICATION_SETTINGS_PRESETS_NONE: "None",
                 NOTIFICATION_SETTINGS_PRESETS_UNREAD_TITLE: "Unread Badges",
-                NOTIFICATION_SETTINGS_PRESETS_UNREAD_SUBTITLE: "Choose when you see a full unread badge next to the channel.",
+                NOTIFICATION_SETTINGS_PRESETS_UNREAD_SUBTITLE: "Highlighted channel name and half dot",
                 NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_TITLE: "Notifications",
-                NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_SUBTITLE: "Choose when you receive a notification from this server.",
+                NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_SUBTITLE: "Push notification and ping sound",
                 NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_CHANNEL_SUBTITLE: "Choose when you receive a notification from this channel.",
                 NOTIFICATION_SETTINGS_CUSTOMIZE: "Customize",
                 NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_1: "announcements",
@@ -18055,7 +18055,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260367", ", Version Hash: ").concat("851ba1eeb8e7ff727a806a6d3517a946bbbec0a1")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260372", ", Version Hash: ").concat("5248dd8eaa941d1a0cb612e037aa2e50f16952de")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20289,8 +20289,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "260367", "260367"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260367")), _ = 0), _
+                let _ = parseInt((e = "260372", "260372"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260372")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -34924,4 +34924,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.f48a887a444e9f89018b.js.map
+//# sourceMappingURL=34546.6a20253cbc03def7a43d.js.map
