@@ -49767,113 +49767,105 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return h
+                    return _
                 }
             }), n("702976");
             var i = n("446674"),
                 s = n("913144"),
                 r = n("845579"),
                 a = n("568734"),
-                o = n("655151"),
-                l = n("49111");
+                o = n("49111");
 
-            function u() {
+            function l() {
                 return {
-                    isEnabled: !1,
                     lastUsedObject: {},
                     useActivityUrlOverride: !1,
                     activityUrlOverride: null,
                     filter: ""
                 }
             }
-            let d = u(),
-                c = null,
-                f = [];
-            class _ extends i.default.PersistedStore {
+            let u = l(),
+                d = null,
+                c = [];
+            class f extends i.default.PersistedStore {
                 initialize(e) {
-                    d = {
-                        ...u(),
+                    u = {
+                        ...l(),
                         ...null != e ? e : {}
                     }
                 }
                 getState() {
-                    return d
+                    return u
                 }
                 getIsEnabled() {
-                    return o.ExperimentDevelopersGetDeveloperShelf.getCurrentConfig({
-                        location: "DeveloperActivityShelfStore"
-                    }).enabled ? r.DeveloperMode.getSetting() : d.isEnabled
+                    return r.DeveloperMode.getSetting() && c.length > 0
                 }
                 getLastUsedObject() {
-                    return d.lastUsedObject
+                    return u.lastUsedObject
                 }
                 getUseActivityUrlOverride() {
-                    return d.useActivityUrlOverride
+                    return this.getIsEnabled() && u.useActivityUrlOverride
                 }
                 getActivityUrlOverride() {
-                    return d.activityUrlOverride
+                    return this.getIsEnabled() ? u.activityUrlOverride : null
                 }
                 getFetchState() {
-                    return c
+                    return d
                 }
                 getFilter() {
-                    return d.filter
+                    return this.getIsEnabled() ? u.filter : ""
                 }
                 getDeveloperShelfItems() {
-                    return f
-                }
-                isApplicationInDevShelf(e) {
-                    return null != f.find(t => t.id === e)
+                    return this.getIsEnabled() ? c : []
                 }
                 inDevModeForApplication(e) {
-                    return d.isEnabled && this.isApplicationInDevShelf(e)
+                    return this.getIsEnabled() && null != c.find(t => t.id === e)
                 }
             }
-            _.displayName = "DeveloperActivityShelfStore", _.persistKey = "DeveloperActivityShelfStore";
-            var h = new _(s.default, {
+            f.displayName = "DeveloperActivityShelfStore", f.persistKey = "DeveloperActivityShelfStore", f.migrations = [e => (delete e.isEnabled, {
+                ...e
+            })];
+            var _ = new f(s.default, {
                 LOGOUT: function() {
-                    d = u(), c = null, f = []
-                },
-                DEVELOPER_ACTIVITY_SHELF_TOGGLE_ENABLED: function() {
-                    d.isEnabled = !d.isEnabled
+                    u = l(), d = null, c = []
                 },
                 DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: function() {
-                    d.useActivityUrlOverride = !d.useActivityUrlOverride
+                    u.useActivityUrlOverride = !u.useActivityUrlOverride
                 },
                 DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: function(e) {
                     let {
                         activityUrlOverride: t
                     } = e;
-                    d.activityUrlOverride = t
+                    u.activityUrlOverride = t
                 },
                 DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: function(e) {
                     let {
                         applicationId: t,
                         timestamp: n
                     } = e;
-                    if (null == f.find(e => e.id === t)) return !1;
-                    d.lastUsedObject[t] = n
+                    if (null == c.find(e => e.id === t)) return !1;
+                    u.lastUsedObject[t] = n
                 },
                 DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
-                    c = "loading"
+                    d = "loading"
                 },
                 DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: function(e) {
                     let {
                         items: t
                     } = e;
-                    c = "loaded", f = t.filter(e => null != e.flags && (0, a.hasFlag)(e.flags, l.ApplicationFlags.EMBEDDED))
+                    d = "loaded", c = t.filter(e => null != e.flags && (0, a.hasFlag)(e.flags, o.ApplicationFlags.EMBEDDED))
                 },
                 DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: function(e) {
                     let {
                         type: t
                     } = e;
-                    c = "errored"
+                    d = "errored"
                 },
                 DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: function(e) {
                     let {
                         filter: t
                     } = e;
-                    d.filter = t
+                    u.filter = t
                 },
                 USER_SETTINGS_PROTO_UPDATE() {}
             })
@@ -50350,30 +50342,6 @@
             });
             var x = F
         },
-        655151: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ExperimentDevelopersGetDeveloperShelf: function() {
-                    return s
-                }
-            });
-            var i = n("862205");
-            let s = (0, i.createExperiment)({
-                kind: "user",
-                id: "2024-01_developers_get_developer_shelf",
-                label: "Developers Get Developer Shelf",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable developers get developer shelf",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
-        },
         711562: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -50386,7 +50354,7 @@
 
             function r(e) {
                 let t = s.default.getState();
-                return t.isEnabled && t.useActivityUrlOverride && null != t.activityUrlOverride && "" !== t.activityUrlOverride ? t.activityUrlOverride : i.default.inTestModeForEmbeddedApplication(e) ? i.default.testModeOriginURL : function(e) {
+                return t.useActivityUrlOverride && null != t.activityUrlOverride && "" !== t.activityUrlOverride ? t.activityUrlOverride : i.default.inTestModeForEmbeddedApplication(e) ? i.default.testModeOriginURL : function(e) {
                     let t = window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST;
                     return null == t ? null : "https://".concat(e, ".").concat(t)
                 }(e)
@@ -118377,7 +118345,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260474"
+                                build_number: "260484"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134466,4 +134434,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.db2b4c32be3564fe4a05.js.map
+//# sourceMappingURL=29278.99b3fc0fad8f6f6ff55c.js.map
