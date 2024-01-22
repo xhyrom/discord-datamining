@@ -10,33 +10,33 @@
 </ul>
 <h1 id="docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f"><strong>Desktop</strong></h1>
 <div>
-    <table style="width: 100%;">
+    <table style="width: 100%; height: 88px;">
         <colgroup>
             <col>
             <col>
             <col>
         </colgroup>
         <tbody>
-            <tr>
-                <td><strong>OS</strong></td>
-                <td><strong>Minimum</strong></td>
-                <td><strong>Recommended</strong></td>
+            <tr style="height: 22px;">
+                <td style="height: 22px;"><strong>OS</strong></td>
+                <td style="height: 22px;"><strong>Minimum</strong></td>
+                <td style="height: 22px;"><strong>Recommended</strong></td>
             </tr>
-            <tr>
-                <td>Windows</td>
-                <td>Windows 7+</td>
-                <td>Windows 10+</td>
+            <tr style="height: 22px;">
+                <td style="height: 22px;">Windows</td>
+                <td style="height: 22px;">Windows 7+</td>
+                <td style="height: 22px;">Windows 10+</td>
             </tr>
-            <tr>
-                <td>Mac</td>
-                <td>
+            <tr style="height: 22px;">
+                <td style="height: 22px;">Mac</td>
+                <td style="height: 22px;">
                     <p>MacOS 10.13 (High Sierra)+</p>
                 </td>
-                <td>MacOS 10.15 (Catalina)+</td>
+                <td style="height: 22px;">MacOS 10.15 (Catalina)+</td>
             </tr>
-            <tr>
-                <td>Linux</td>
-                <td colspan="2">Ubuntu 18.04+, Debian 10+, openSUSE 15.2+ and Fedora Linux 32+</td>
+            <tr style="height: 22px;">
+                <td style="height: 22px;">Linux</td>
+                <td style="height: 22px;" colspan="2">Ubuntu 18.04+, Debian 10+, openSUSE 15.2+ and Fedora Linux 32+</td>
             </tr>
         </tbody>
     </table>
