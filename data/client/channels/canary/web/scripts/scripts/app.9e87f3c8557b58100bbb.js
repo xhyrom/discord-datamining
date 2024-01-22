@@ -5606,6 +5606,12 @@
                 zoomin: "zoomin_fa2e9f"
             }
         },
+        906861: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                art: "art__76661"
+            }
+        },
         898689: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -5635,12 +5641,6 @@
             e.exports = {
                 avatarDecorationPreview: "avatarDecorationPreview__2f195",
                 profileEffectPreview: "profileEffectPreview__7a288"
-            }
-        },
-        608284: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                art: "art_f8934e"
             }
         },
         576997: function(e, t, o) {
