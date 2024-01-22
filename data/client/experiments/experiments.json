@@ -5174,6 +5174,37 @@
   {
     "data": {
       "kind": "guild",
+      "hash": 3811644885,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "hash": 3832113202,
       "holdout": {
         "name": null,
@@ -11819,6 +11850,79 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-12_marketing_automation_experiment",
+      "label": "Marketing Automation",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Ask server for marketing content for rendering"
+      ],
+      "hash": 2969274422,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-12_nitro_standard_wow_moment_experiment",
+      "label": "Productionize Nitro Standard Flying Wumpus Wow Moment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Flying Wumpus Wow Moment shows for redeeming Nitro Standard gifts, trials, and purchases"
+      ],
+      "hash": 418762923,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-12_nv_relaxed_rate_control",
+      "label": "Alternative rate control proposal for Nvidia encoder",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: 250 ms",
+        "Treatment 2: 500 ms",
+        "Treatment 3: 1000 ms"
+      ],
+      "hash": 3216770283,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "nvMediumVbvSizeMs"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-12_quests",
       "label": "Quests",
       "description": [
@@ -11827,6 +11931,174 @@
         "Treatment 1: Quests enabled"
       ],
       "hash": 2582794089,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_all_perks",
+      "label": "All Perks",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 1613323547,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_auto_disable_video_mobile_v2",
+      "label": "Mobile performance: VideoHealthManager (v2)",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: 5 second window, 100% allowed poor fps ratio, 5 fps threshold, 15 second backoff",
+        "Treatment 2: 5 second window, 100% allowed poor fps ratio, 5 fps threshold, 10 second backoff",
+        "Treatment 3: 10 second window, 70% allowed poor fps ratio, 5 fps threshold, 15 second backoff",
+        "Treatment 4: 10 second window, 90% allowed poor fps ratio, 5 fps threshold, 15 second backoff"
+      ],
+      "hash": 1814449668,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_chunked_message_attachment_uploads",
+      "label": "Use chunked uploads for message attachments",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Chunked message attachment uploads"
+      ],
+      "hash": 2992238206,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled",
+        "chunkSize"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_developers_get_developer_shelf",
+      "label": "Developers Get Developer Shelf",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable developers get developer shelf"
+      ],
+      "hash": 1459591700,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_h265_desktop_decode",
+      "label": "H.265 Desktop Decode",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Desktop H.265 Decode"
+      ],
+      "hash": 124383374,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "signalH265DesktopDecode"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2024-01_nvencadaptivekeyframe",
+      "label": "nvenc adaptive key frame interval",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable adaptive key frame for nvenc"
+      ],
+      "hash": 3032307853,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enableAdaptiveKeyFrame"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_rpc_analytics_killswitch",
+      "label": "RPC Server Analytics Killswitch",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable RPC Server Analytics"
+      ],
+      "hash": 305964783,
       "buckets": [
         -1,
         0,
@@ -12021,90 +12293,44 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-12_marketing_automation_experiment",
-      "label": "Marketing Automation",
+      "id": "2024-01_unreads",
+      "label": "Unreads Experiment (grey-dot mode)",
       "description": [
         "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Ask server for marketing content for rendering"
+        "Treatment 0: Control",
+        "Treatment 1: Auto open migration",
+        "Treatment 2: Manually open migration"
       ],
-      "hash": 2969274422,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-12_nitro_standard_wow_moment_experiment",
-      "label": "Productionize Nitro Standard Flying Wumpus Wow Moment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Flying Wumpus Wow Moment shows for redeeming Nitro Standard gifts, trials, and purchases"
-      ],
-      "hash": 418762923,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-12_nv_relaxed_rate_control",
-      "label": "Alternative rate control proposal for Nvidia encoder",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: 250 ms",
-        "Treatment 2: 500 ms",
-        "Treatment 3: 1000 ms"
-      ],
-      "hash": 3216770283,
+      "hash": 2883062585,
       "buckets": [
         -1,
         0,
         1,
-        2,
-        3
+        2
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "nvMediumVbvSizeMs"
+        "logExposure",
+        "autoOpen",
+        "manuallyOpen"
       ]
     }
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2024-01_auto_disable_video_mobile_v2",
-      "label": "Mobile performance: VideoHealthManager (v2)",
+      "kind": "guild",
+      "id": "2024-01_windows_key_frame_interval",
+      "label": "Windows key frame interval",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: 5 second window, 100% allowed poor fps ratio, 5 fps threshold, 15 second backoff",
-        "Treatment 2: 5 second window, 100% allowed poor fps ratio, 5 fps threshold, 10 second backoff",
-        "Treatment 3: 10 second window, 70% allowed poor fps ratio, 5 fps threshold, 15 second backoff",
-        "Treatment 4: 10 second window, 90% allowed poor fps ratio, 5 fps threshold, 15 second backoff"
+        "Treatment 1: KFI 60000 ms",
+        "Treatment 2: KFI 70000 ms",
+        "Treatment 3: KFI 80000 ms",
+        "Treatment 4: KFI 90000 ms"
       ],
-      "hash": 1814449668,
+      "hash": 2961250399,
       "buckets": [
         -1,
         0,
@@ -12113,57 +12339,54 @@
         3,
         4
       ],
-      "holdout": {},
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "keyFrameIntervalMs"
       ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-01_chunked_message_attachment_uploads",
-      "label": "Use chunked uploads for message attachments",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Chunked message attachment uploads"
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
       ],
-      "hash": 2992238206,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled",
-        "chunkSize"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-01_developers_get_developer_shelf",
-      "label": "Developers Get Developer Shelf",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable developers get developer shelf"
-      ],
-      "hash": 1459591700,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
+      "revision": 2,
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "4": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "973351947883147304"
+              ]
+            }
+          ]
+        }
       ]
     }
   },
@@ -12819,175 +13042,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2024-01_h265_desktop_decode",
-      "label": "H.265 Desktop Decode",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Desktop H.265 Decode"
-      ],
-      "hash": 124383374,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "signalH265DesktopDecode"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2024-01_nvencadaptivekeyframe",
-      "label": "nvenc adaptive key frame interval",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: enable adaptive key frame for nvenc"
-      ],
-      "hash": 3032307853,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enableAdaptiveKeyFrame"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-01_rpc_analytics_killswitch",
-      "label": "RPC Server Analytics Killswitch",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable RPC Server Analytics"
-      ],
-      "hash": 305964783,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-01_unreads",
-      "label": "Unreads Experiment (grey-dot mode)",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: Auto open migration",
-        "Treatment 2: Manually open migration"
-      ],
-      "hash": 2883062585,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "logExposure",
-        "autoOpen",
-        "manuallyOpen"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2024-01_windows_key_frame_interval",
-      "label": "Windows key frame interval",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: KFI 60000 ms",
-        "Treatment 2: KFI 70000 ms",
-        "Treatment 3: KFI 80000 ms",
-        "Treatment 4: KFI 90000 ms"
-      ],
-      "hash": 2961250399,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false,
-      "config_keys": [
-        "keyFrameIntervalMs"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 2,
-      "overrides": {},
-      "overrides_formatted": [
-        {
-          "buckets": {
-            "4": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_ids",
-              "ids": [
-                "973351947883147304"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "hash": 3738976194,
       "holdout": {
@@ -13017,37 +13071,6 @@
             }
           ]
         },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3811644885,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
         {
           "buckets": {
             "none": {
