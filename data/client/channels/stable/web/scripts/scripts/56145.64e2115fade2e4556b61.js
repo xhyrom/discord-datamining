@@ -678,67 +678,51 @@
             "use strict";
             n.r(t), n.d(t, {
                 channelEligibleForSummaries: function() {
-                    return r
+                    return i
                 },
                 canSeeChannelSummaries: function() {
-                    return o
+                    return r
                 },
                 canGuildUseConversationSummaries: function() {
-                    return u
+                    return o
                 },
                 useChannelSummariesExperiment: function() {
-                    return d
+                    return u
                 }
             }), n("65597");
-            var l = n("862205"),
-                a = n("305961"),
-                s = n("49111"),
-                i = n("724210");
-            (0, l.createExperiment)({
-                kind: "user",
-                id: "2023-07_p13n_guild_dock_summaries",
-                label: "Guild Dock Summaries on Mobile Experiment",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable guild dock summaries mobile UX",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
+            var l = n("305961"),
+                a = n("49111"),
+                s = n("724210");
 
-            function r(e) {
-                return o(e, !0, !1)
+            function i(e) {
+                return r(e, !0, !1)
             }
 
-            function o(e) {
+            function r(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                 if (null == e || ! function(e) {
                         var t;
                         if (null == e) return !1;
-                        let n = a.default.getGuild(null !== (t = null == e ? void 0 : e.guild_id) && void 0 !== t ? t : ""),
-                            l = null != n && n.rulesChannelId === e.id;
-                        return s.ChannelTypesSets.SUMMARIZEABLE.has(e.type) && !e.isNSFW() && !l
-                    }(e) || !1 === t && e.hasFlag(i.ChannelFlags.SUMMARIES_DISABLED)) return !1;
-                let l = a.default.getGuild(e.guild_id);
-                return u(l, n)
+                        let n = l.default.getGuild(null !== (t = null == e ? void 0 : e.guild_id) && void 0 !== t ? t : ""),
+                            s = null != n && n.rulesChannelId === e.id;
+                        return a.ChannelTypesSets.SUMMARIZEABLE.has(e.type) && !e.isNSFW() && !s
+                    }(e) || !1 === t && e.hasFlag(s.ChannelFlags.SUMMARIES_DISABLED)) return !1;
+                let i = l.default.getGuild(e.guild_id);
+                return o(i, n)
             }
 
-            function u(e) {
+            function o(e) {
                 var t;
                 let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 if (null == e) return !1;
-                return !!((null == (t = e.id) || t !== s.ME && t !== s.FAVORITES) && e.hasFeature(s.GuildFeatures.SUMMARIES_ENABLED_GA)) && (!n || e.hasFeature(s.GuildFeatures.SUMMARIES_ENABLED_BY_USER))
+                return !!((null == (t = e.id) || t !== a.ME && t !== a.FAVORITES) && e.hasFeature(a.GuildFeatures.SUMMARIES_ENABLED_GA)) && (!n || e.hasFeature(a.GuildFeatures.SUMMARIES_ENABLED_BY_USER))
             }
 
-            function d(e) {
+            function u(e) {
                 arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                return o(e, t)
+                return r(e, t)
             }
         },
         554743: function(e, t, n) {
@@ -10780,4 +10764,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56145.255a11b90ae72242c2c6.js.map
+//# sourceMappingURL=56145.64e2115fade2e4556b61.js.map

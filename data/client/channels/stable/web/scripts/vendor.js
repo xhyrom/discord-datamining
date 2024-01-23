@@ -23834,21 +23834,28 @@
                             token: r
                         })
                     }, e => {
-                        var t;
-                        let s = null === (t = e.body) || void 0 === t ? void 0 : t.code;
-                        s === T.AbortCodes.ACCOUNT_SCHEDULED_FOR_DELETION && null != i && "" !== i ? d.default.dispatch({
+                        var t, s, r;
+                        if (null != e.body && (null === (t = e.body) || void 0 === t ? void 0 : t.suspended_user_token) != null) {
+                            d.default.dispatch({
+                                type: "LOGIN_SUSPENDED_USER",
+                                suspendedUserToken: null === (r = e.body) || void 0 === r ? void 0 : r.suspended_user_token
+                            });
+                            return
+                        }
+                        let a = null === (s = e.body) || void 0 === s ? void 0 : s.code;
+                        a === T.AbortCodes.ACCOUNT_SCHEDULED_FOR_DELETION && null != i && "" !== i ? d.default.dispatch({
                             type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION",
                             credentials: {
                                 login: n,
                                 password: i
                             }
-                        }) : s === T.AbortCodes.ACCOUNT_DISABLED && null != i && "" !== i ? d.default.dispatch({
+                        }) : a === T.AbortCodes.ACCOUNT_DISABLED && null != i && "" !== i ? d.default.dispatch({
                             type: "LOGIN_ACCOUNT_DISABLED",
                             credentials: {
                                 login: n,
                                 password: i
                             }
-                        }) : s === T.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
+                        }) : a === T.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
                             type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED"
                         }) : d.default.dispatch({
                             type: "LOGIN_FAILURE",
@@ -23885,7 +23892,14 @@
                         })
                     }).catch(e => {
                         var t;
-                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === T.AbortCodes.MFA_INVALID_CODE) throw Error((0, g.mapError)(l));
+                        if (null != e.body && null != e.body.suspended_user_token) {
+                            d.default.dispatch({
+                                type: "LOGIN_SUSPENDED_USER",
+                                suspendedUserToken: e.body.suspended_user_token
+                            });
+                            return
+                        }
+                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === T.AbortCodes.MFA_INVALID_CODE) throw Error((0, g.getInvalidMFACodeError)(l));
                         throw e
                     })
                 },
@@ -24202,7 +24216,12 @@
                         type: "SET_CONSENT_REQUIRED",
                         consentRequired: !0
                     }), A = null
-                }))
+                })),
+                closeSuspendedUser() {
+                    d.default.dispatch({
+                        type: "CLOSE_SUSPENDED_USER"
+                    })
+                }
             }
         },
         850068: function(e, t, n) {
@@ -48723,21 +48742,27 @@
             }
 
             function c(e, t) {
-                if (!__OVERLAY__) throw new s.default(l.RPCErrors.UNKNOWN_ERROR, "called from wrong app context");
+                if (!__OVERLAY__) throw new s.default({
+                    errorCode: o.RPCErrors.UNKNOWN_ERROR
+                }, "called from wrong app context");
                 i.default.subscribe(o.RPCEvents.OVERLAY, {
                     token: t
                 }, t => e((0, a.deserializeObject)(t)))
             }
 
             function f(e, t) {
-                if (__OVERLAY__) throw new s.default(l.RPCErrors.UNKNOWN_ERROR, "called from wrong app context");
+                if (__OVERLAY__) throw new s.default({
+                    errorCode: o.RPCErrors.UNKNOWN_ERROR
+                }, "called from wrong app context");
                 r.default.setCommandHandler(o.RPCCommands.OVERLAY, {
                     scope: l.RPC_PRIVATE_SCOPE,
                     handler(n) {
                         let {
                             args: i
                         } = n;
-                        if (!t(i.token)) throw new s.default(l.RPCErrors.INVALID_TOKEN, "Invalid RPC auth token provided");
+                        if (!t(i.token)) throw new s.default({
+                            errorCode: o.RPCErrors.INVALID_TOKEN
+                        }, "Invalid RPC auth token provided");
                         e((0, a.deserializeObject)(i))
                     }
                 }), r.default.setEventHandler(o.RPCEvents.OVERLAY, {
@@ -48746,7 +48771,9 @@
                         let {
                             args: n
                         } = e;
-                        if (!t(n.token)) throw new s.default(l.RPCErrors.INVALID_TOKEN, "Invalid RPC auth token provided")
+                        if (!t(n.token)) throw new s.default({
+                            errorCode: o.RPCErrors.INVALID_TOKEN
+                        }, "Invalid RPC auth token provided")
                     }
                 })
             }
@@ -49767,113 +49794,105 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return h
+                    return _
                 }
             }), n("702976");
             var i = n("446674"),
                 s = n("913144"),
                 r = n("845579"),
                 a = n("568734"),
-                o = n("655151"),
-                l = n("49111");
+                o = n("49111");
 
-            function u() {
+            function l() {
                 return {
-                    isEnabled: !1,
                     lastUsedObject: {},
                     useActivityUrlOverride: !1,
                     activityUrlOverride: null,
                     filter: ""
                 }
             }
-            let d = u(),
-                c = null,
-                f = [];
-            class _ extends i.default.PersistedStore {
+            let u = l(),
+                d = null,
+                c = [];
+            class f extends i.default.PersistedStore {
                 initialize(e) {
-                    d = {
-                        ...u(),
+                    u = {
+                        ...l(),
                         ...null != e ? e : {}
                     }
                 }
                 getState() {
-                    return d
+                    return u
                 }
                 getIsEnabled() {
-                    return o.ExperimentDevelopersGetDeveloperShelf.getCurrentConfig({
-                        location: "DeveloperActivityShelfStore"
-                    }).enabled ? r.DeveloperMode.getSetting() : d.isEnabled
+                    return r.DeveloperMode.getSetting() && c.length > 0
                 }
                 getLastUsedObject() {
-                    return d.lastUsedObject
+                    return u.lastUsedObject
                 }
                 getUseActivityUrlOverride() {
-                    return d.useActivityUrlOverride
+                    return this.getIsEnabled() && u.useActivityUrlOverride
                 }
                 getActivityUrlOverride() {
-                    return d.activityUrlOverride
+                    return this.getIsEnabled() ? u.activityUrlOverride : null
                 }
                 getFetchState() {
-                    return c
+                    return d
                 }
                 getFilter() {
-                    return d.filter
+                    return this.getIsEnabled() ? u.filter : ""
                 }
                 getDeveloperShelfItems() {
-                    return f
-                }
-                isApplicationInDevShelf(e) {
-                    return null != f.find(t => t.id === e)
+                    return this.getIsEnabled() ? c : []
                 }
                 inDevModeForApplication(e) {
-                    return d.isEnabled && this.isApplicationInDevShelf(e)
+                    return this.getIsEnabled() && null != c.find(t => t.id === e)
                 }
             }
-            _.displayName = "DeveloperActivityShelfStore", _.persistKey = "DeveloperActivityShelfStore";
-            var h = new _(s.default, {
+            f.displayName = "DeveloperActivityShelfStore", f.persistKey = "DeveloperActivityShelfStore", f.migrations = [e => (delete e.isEnabled, {
+                ...e
+            })];
+            var _ = new f(s.default, {
                 LOGOUT: function() {
-                    d = u(), c = null, f = []
-                },
-                DEVELOPER_ACTIVITY_SHELF_TOGGLE_ENABLED: function() {
-                    d.isEnabled = !d.isEnabled
+                    u = l(), d = null, c = []
                 },
                 DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: function() {
-                    d.useActivityUrlOverride = !d.useActivityUrlOverride
+                    u.useActivityUrlOverride = !u.useActivityUrlOverride
                 },
                 DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: function(e) {
                     let {
                         activityUrlOverride: t
                     } = e;
-                    d.activityUrlOverride = t
+                    u.activityUrlOverride = t
                 },
                 DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: function(e) {
                     let {
                         applicationId: t,
                         timestamp: n
                     } = e;
-                    if (null == f.find(e => e.id === t)) return !1;
-                    d.lastUsedObject[t] = n
+                    if (null == c.find(e => e.id === t)) return !1;
+                    u.lastUsedObject[t] = n
                 },
                 DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
-                    c = "loading"
+                    d = "loading"
                 },
                 DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: function(e) {
                     let {
                         items: t
                     } = e;
-                    c = "loaded", f = t.filter(e => null != e.flags && (0, a.hasFlag)(e.flags, l.ApplicationFlags.EMBEDDED))
+                    d = "loaded", c = t.filter(e => null != e.flags && (0, a.hasFlag)(e.flags, o.ApplicationFlags.EMBEDDED))
                 },
                 DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: function(e) {
                     let {
                         type: t
                     } = e;
-                    c = "errored"
+                    d = "errored"
                 },
                 DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: function(e) {
                     let {
                         filter: t
                     } = e;
-                    d.filter = t
+                    u.filter = t
                 },
                 USER_SETTINGS_PROTO_UPDATE() {}
             })
@@ -50350,30 +50369,6 @@
             });
             var x = F
         },
-        655151: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ExperimentDevelopersGetDeveloperShelf: function() {
-                    return s
-                }
-            });
-            var i = n("862205");
-            let s = (0, i.createExperiment)({
-                kind: "user",
-                id: "2024-01_developers_get_developer_shelf",
-                label: "Developers Get Developer Shelf",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable developers get developer shelf",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
-        },
         711562: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -50386,7 +50381,7 @@
 
             function r(e) {
                 let t = s.default.getState();
-                return t.isEnabled && t.useActivityUrlOverride && null != t.activityUrlOverride && "" !== t.activityUrlOverride ? t.activityUrlOverride : i.default.inTestModeForEmbeddedApplication(e) ? i.default.testModeOriginURL : function(e) {
+                return t.useActivityUrlOverride && null != t.activityUrlOverride && "" !== t.activityUrlOverride ? t.activityUrlOverride : i.default.inTestModeForEmbeddedApplication(e) ? i.default.testModeOriginURL : function(e) {
                     let t = window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST;
                     return null == t ? null : "https://".concat(e, ".").concat(t)
                 }(e)
@@ -69052,12 +69047,16 @@
                 },
                 MAX_ATTACHMENT_UPLOAD_COUNT: function() {
                     return a
+                },
+                MAX_PUBLISHED_GUILD_PRODUCT_LISTINGS: function() {
+                    return o
                 }
             });
             let i = "guild-product-edit-modal",
                 s = 1073741824,
                 r = 1073741824,
-                a = 10
+                a = 10,
+                o = 30
         },
         287883: function(e, t, n) {
             "use strict";
@@ -77154,11 +77153,11 @@
         776502: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                mapError: function() {
+                getInvalidMFACodeError: function() {
                     return o
                 },
                 openMFAModal: function() {
-                    return u
+                    return d
                 }
             }), n("70102"), n("581081");
             var i = n("872717"),
@@ -77177,7 +77176,23 @@
                 }
                 return t
             }
-            async function l(e) {
+
+            function l(e, t) {
+                if (null == t || null == t.code) return null;
+                switch (t.code) {
+                    case r.AbortCodes.MFA_INVALID_CODE:
+                        return o(e);
+                    case r.AbortCodes.STAFF_REQUIRED:
+                        return a.default.Messages.MFA_REQUIRED_FOR_STAFF;
+                    case r.AbortCodes.MFA_REQUIRED:
+                    case r.AbortCodes.MFA_REQUIRED_FOR_CREATOR_MONETIZATION:
+                        var n;
+                        return null !== (n = t.message) && void 0 !== n ? n : a.default.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR;
+                    default:
+                        return a.default.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR
+                }
+            }
+            async function u(e) {
                 let {
                     ticket: t,
                     mfaType: n,
@@ -77194,27 +77209,26 @@
                         retries: a
                     });
                     return e.body
-                } catch (e) {
-                    var l;
-                    if ((null === (l = e.body) || void 0 === l ? void 0 : l.code) === r.AbortCodes.MFA_INVALID_CODE) throw Error(o(n));
-                    throw e
+                } catch (t) {
+                    let e = l(n, t.body);
+                    throw null != e ? Error(e) : t
                 }
             }
 
-            function u(e, t, i) {
-                let a = async e => {
-                    let n = await l(e),
+            function d(e, t, i) {
+                let r = async e => {
+                    let n = await u(e),
                         i = {
                             "X-Discord-MFA-Authorization": n.token
                         };
                     return new Promise((n, s) => {
-                        t(i, (t, i, a) => {
-                            var l, u;
-                            return (null === (l = t.body) || void 0 === l ? void 0 : l.code) === r.AbortCodes.MFA_INVALID_CODE || (null === (u = t.body) || void 0 === u ? void 0 : u.code) === r.AbortCodes.MFA_REQUIRED ? (s(Error(o(e.mfaType))), !0) : (n(), !1)
+                        t(i, (t, i, r) => {
+                            let a = l(e.mfaType, t.body);
+                            return null != a ? (s(Error(a)), !0) : (n(), !1)
                         })
                     })
                 };
-                e.methods = e.methods.filter(e => Object.hasOwn(s.SELECT_NAMES, e.type)), n("24287").openMFAModal(e, a, i)
+                e.methods = e.methods.filter(e => Object.hasOwn(s.SELECT_NAMES, e.type)), n("24287").openMFAModal(e, r, i)
             }
         },
         695501: function(e, t, n) {
@@ -77380,13 +77394,21 @@
                     challenge: I
                 } = t.methods.find(e => "webauthn" === e.type), C = async () => {
                     _(!0), T(null);
-                    let e = d.isPlatformEmbedded && f.default.supportsFeature(h.NativeFeatures.WEBAUTHN) ? f.default.webAuthnAuthenticate(I) : r.get(JSON.parse(I)).then(e => JSON.stringify(e));
+                    let e = d.isPlatformEmbedded && f.default.supportsFeature(h.NativeFeatures.WEBAUTHN) ? f.default.webAuthnAuthenticate(I) : r.get(JSON.parse(I)).then(e => JSON.stringify(e)),
+                        t = async e => {
+                            try {
+                                await n({
+                                    mfaType: "webauthn",
+                                    data: e
+                                })
+                            } catch (e) {
+                                var t;
+                                T(null !== (t = e.message) && void 0 !== t ? t : g.default.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR)
+                            }
+                        };
                     try {
-                        let t = await e;
-                        await n({
-                            mfaType: "webauthn",
-                            data: t
-                        })
+                        let n = await e;
+                        await t(n)
                     } catch (e) {
                         c.default.captureException(e), T(g.default.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR)
                     } finally {
@@ -82607,41 +82629,38 @@
         },
         492249: function(e, t, n) {
             "use strict";
-            var i, s, r, a, o, l, u, d, c, f;
+            var i, s, r, a, o, l, u, d;
             n.r(t), n.d(t, {
                 RPC_SCOPE_CONFIG: function() {
                     return i
                 },
                 RPC_PRIVATE_SCOPE: function() {
-                    return _
+                    return c
                 },
                 RPC_PRIVATE_LIMITED_SCOPE: function() {
-                    return h
+                    return f
                 },
                 RPC_LOCAL_SCOPE: function() {
-                    return g
+                    return _
                 },
                 RPC_AUTHENTICATED_SCOPE: function() {
-                    return m
+                    return h
                 },
                 RPCDeepLinks: function() {
                     return s
                 },
-                RPCErrors: function() {
+                DispatchErrorCodes: function() {
                     return r
                 },
-                DispatchErrorCodes: function() {
-                    return a
-                },
                 TransportTypes: function() {
-                    return o
+                    return a
                 }
-            }), (l = i || (i = {})).ANY = "$any", l.ALL = "$all";
-            let _ = "RPC_PRIVATE_SCOPE",
-                h = "RPC_PRIVATE_LIMITED_SCOPE",
-                g = "RPC_LOCAL_SCOPE",
-                m = "RPC_AUTHENTICATED_SCOPE";
-            (u = s || (s = {})).USER_SETTINGS = "USER_SETTINGS", u.CHANGELOG = "CHANGELOG", u.LIBRARY = "LIBRARY", u.STORE_HOME = "STORE_HOME", u.STORE_LISTING = "STORE_LISTING", u.CHANNEL = "CHANNEL", u.PICK_GUILD_SETTINGS = "PICK_GUILD_SETTINGS", (d = r || (r = {}))[d.UNKNOWN_ERROR = 1e3] = "UNKNOWN_ERROR", d[d.SERVICE_UNAVAILABLE = 1001] = "SERVICE_UNAVAILABLE", d[d.TRANSACTION_ABORTED = 1002] = "TRANSACTION_ABORTED", d[d.INVALID_PAYLOAD = 4e3] = "INVALID_PAYLOAD", d[d.INVALID_COMMAND = 4002] = "INVALID_COMMAND", d[d.INVALID_GUILD = 4003] = "INVALID_GUILD", d[d.INVALID_EVENT = 4004] = "INVALID_EVENT", d[d.INVALID_CHANNEL = 4005] = "INVALID_CHANNEL", d[d.INVALID_PERMISSIONS = 4006] = "INVALID_PERMISSIONS", d[d.INVALID_CLIENTID = 4007] = "INVALID_CLIENTID", d[d.INVALID_ORIGIN = 4008] = "INVALID_ORIGIN", d[d.INVALID_TOKEN = 4009] = "INVALID_TOKEN", d[d.INVALID_USER = 4010] = "INVALID_USER", d[d.INVALID_INVITE = 4011] = "INVALID_INVITE", d[d.INVALID_ACTIVITY_JOIN_REQUEST = 4012] = "INVALID_ACTIVITY_JOIN_REQUEST", d[d.INVALID_LOBBY = 4013] = "INVALID_LOBBY", d[d.INVALID_LOBBY_SECRET = 4014] = "INVALID_LOBBY_SECRET", d[d.INVALID_ENTITLEMENT = 4015] = "INVALID_ENTITLEMENT", d[d.INVALID_GIFT_CODE = 4016] = "INVALID_GIFT_CODE", d[d.INVALID_GUILD_TEMPLATE = 4017] = "INVALID_GUILD_TEMPLATE", d[d.INVALID_SOUND = 4018] = "INVALID_SOUND", d[d.OAUTH2_ERROR = 5e3] = "OAUTH2_ERROR", d[d.SELECT_CHANNEL_TIMED_OUT = 5001] = "SELECT_CHANNEL_TIMED_OUT", d[d.GET_GUILD_TIMED_OUT = 5002] = "GET_GUILD_TIMED_OUT", d[d.SELECT_VOICE_FORCE_REQUIRED = 5003] = "SELECT_VOICE_FORCE_REQUIRED", d[d.INVALID_ACTIVITY_SECRET = 5005] = "INVALID_ACTIVITY_SECRET", d[d.NO_ELIGIBLE_ACTIVITY = 5006] = "NO_ELIGIBLE_ACTIVITY", d[d.LOBBY_FULL = 5007] = "LOBBY_FULL", d[d.PURCHASE_CANCELED = 5008] = "PURCHASE_CANCELED", d[d.PURCHASE_ERROR = 5009] = "PURCHASE_ERROR", d[d.UNAUTHORIZED_FOR_ACHIEVEMENT = 5010] = "UNAUTHORIZED_FOR_ACHIEVEMENT", d[d.RATE_LIMITED = 5011] = "RATE_LIMITED", (c = a || (a = {}))[c.APPLICATION_NOT_FOUND = 101] = "APPLICATION_NOT_FOUND", c[c.DISK_LOW = 2022] = "DISK_LOW", c[c.DISK_PERMISSION_DENIED = 2025] = "DISK_PERMISSION_DENIED", c[c.POST_INSTALL_FAILED = 2025] = "POST_INSTALL_FAILED", c[c.REDISTRIBUTABLE_INSTALL_FAILED = 2026] = "REDISTRIBUTABLE_INSTALL_FAILED", c[c.APPLICATION_LOAD_FAILED = 2034] = "APPLICATION_LOAD_FAILED", c[c.DESERIALIZATION_FAILED = 2047] = "DESERIALIZATION_FAILED", c[c.INTERRUPTED = 2055] = "INTERRUPTED", c[c.MAX_REQUEST_RETRIES_EXCEEDED = 2058] = "MAX_REQUEST_RETRIES_EXCEEDED", c[c.AUTHENTICATION_FAILED = 2063] = "AUTHENTICATION_FAILED", c[c.IO_PERMISSION_DENIED = 2064] = "IO_PERMISSION_DENIED", c[c.NO_MANIFESTS = 2065] = "NO_MANIFESTS", c[c.POST_INSTALL_CANCELLED = 2066] = "POST_INSTALL_CANCELLED", c[c.API_ERROR = 2069] = "API_ERROR", c[c.FILE_NAME_TOO_LONG = 2072] = "FILE_NAME_TOO_LONG", c[c.NOT_ENTITLED = 2073] = "NOT_ENTITLED", c[c.APPLICATION_LOCK_FAILED = 2076] = "APPLICATION_LOCK_FAILED", c[c.NOT_DIRECTORY = 2077] = "NOT_DIRECTORY", c[c.INVALID_DRIVE = 2078] = "INVALID_DRIVE", c[c.DISK_FULL = 2080] = "DISK_FULL", (f = o || (o = {})).IPC = "ipc", f.WEBSOCKET = "ws", f.HTTP = "http", f.POST_MESSAGE = "post_message"
+            }), (o = i || (i = {})).ANY = "$any", o.ALL = "$all";
+            let c = "RPC_PRIVATE_SCOPE",
+                f = "RPC_PRIVATE_LIMITED_SCOPE",
+                _ = "RPC_LOCAL_SCOPE",
+                h = "RPC_AUTHENTICATED_SCOPE";
+            (l = s || (s = {})).USER_SETTINGS = "USER_SETTINGS", l.CHANGELOG = "CHANGELOG", l.LIBRARY = "LIBRARY", l.STORE_HOME = "STORE_HOME", l.STORE_LISTING = "STORE_LISTING", l.CHANNEL = "CHANNEL", l.PICK_GUILD_SETTINGS = "PICK_GUILD_SETTINGS", (u = r || (r = {}))[u.APPLICATION_NOT_FOUND = 101] = "APPLICATION_NOT_FOUND", u[u.DISK_LOW = 2022] = "DISK_LOW", u[u.DISK_PERMISSION_DENIED = 2025] = "DISK_PERMISSION_DENIED", u[u.POST_INSTALL_FAILED = 2025] = "POST_INSTALL_FAILED", u[u.REDISTRIBUTABLE_INSTALL_FAILED = 2026] = "REDISTRIBUTABLE_INSTALL_FAILED", u[u.APPLICATION_LOAD_FAILED = 2034] = "APPLICATION_LOAD_FAILED", u[u.DESERIALIZATION_FAILED = 2047] = "DESERIALIZATION_FAILED", u[u.INTERRUPTED = 2055] = "INTERRUPTED", u[u.MAX_REQUEST_RETRIES_EXCEEDED = 2058] = "MAX_REQUEST_RETRIES_EXCEEDED", u[u.AUTHENTICATION_FAILED = 2063] = "AUTHENTICATION_FAILED", u[u.IO_PERMISSION_DENIED = 2064] = "IO_PERMISSION_DENIED", u[u.NO_MANIFESTS = 2065] = "NO_MANIFESTS", u[u.POST_INSTALL_CANCELLED = 2066] = "POST_INSTALL_CANCELLED", u[u.API_ERROR = 2069] = "API_ERROR", u[u.FILE_NAME_TOO_LONG = 2072] = "FILE_NAME_TOO_LONG", u[u.NOT_ENTITLED = 2073] = "NOT_ENTITLED", u[u.APPLICATION_LOCK_FAILED = 2076] = "APPLICATION_LOCK_FAILED", u[u.NOT_DIRECTORY = 2077] = "NOT_DIRECTORY", u[u.INVALID_DRIVE = 2078] = "INVALID_DRIVE", u[u.DISK_FULL = 2080] = "DISK_FULL", (d = a || (a = {})).IPC = "ipc", d.WEBSOCKET = "ws", d.HTTP = "http", d.POST_MESSAGE = "post_message"
         },
         843158: function(e, t, n) {
             "use strict";
@@ -82726,11 +82745,17 @@
                 }
                 handleRequest(e, t) {
                     new Promise(n => {
-                        if (null == t.nonce || "" === t.nonce) throw new c.default(h.RPCErrors.INVALID_PAYLOAD, "Payload requires a nonce");
+                        if (null == t.nonce || "" === t.nonce) throw new c.default({
+                            errorCode: g.RPCErrors.INVALID_PAYLOAD
+                        }, "Payload requires a nonce");
                         let i = t.cmd,
                             s = this.commands[i];
-                        if (null == s) throw new c.default(h.RPCErrors.INVALID_COMMAND, "Invalid command: ".concat(t.cmd));
-                        if (!(0, _.default)(e.authorization.scopes, s.scope)) throw new c.default(h.RPCErrors.INVALID_PERMISSIONS, "Not authenticated or invalid scope");
+                        if (null == s) throw new c.default({
+                            errorCode: g.RPCErrors.INVALID_COMMAND
+                        }, "Invalid command: ".concat(t.cmd));
+                        if (!(0, _.default)(e.authorization.scopes, s.scope)) throw new c.default({
+                            errorCode: g.RPCErrors.INVALID_PERMISSIONS
+                        }, "Not authenticated or invalid scope");
                         d.ExperimentRPCServerAnalyticsKillswitch.getCurrentConfig({
                             location: "RPCServer"
                         }).enabled && l.default.track(g.AnalyticEvents.RPC_COMMAND_SENT, {
@@ -82745,7 +82770,9 @@
                                 convert: !1
                             }, t => {
                                 if (null != t) {
-                                    i(new c.default(h.RPCErrors.INVALID_PAYLOAD, t.message));
+                                    i(new c.default({
+                                        errorCode: g.RPCErrors.INVALID_PAYLOAD
+                                    }, t.message));
                                     return
                                 }
                                 n(e)
@@ -82791,7 +82818,7 @@
                 error(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
                         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.RPCCommands.DISPATCH,
-                        i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : h.RPCErrors.UNKNOWN_ERROR,
+                        i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : g.RPCErrors.UNKNOWN_ERROR,
                         s = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "Unknown Error";
                     l.default.track(g.AnalyticEvents.RPC_SERVER_ERROR_CAUGHT, {
                         command: n,
@@ -87881,7 +87908,7 @@
                     let s = null === (e = _.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme;
                     if (null != s) return s;
                     let a = null === (t = g.default.settings.appearance) || void 0 === t ? void 0 : t.theme;
-                    return a === r.Theme.LIGHT ? E.ThemeTypes.LIGHT : E.ThemeTypes.DARK
+                    return null == a ? v : a === r.Theme.LIGHT ? E.ThemeTypes.LIGHT : E.ThemeTypes.DARK
                 }();
                 return e
             }
@@ -91801,7 +91828,7 @@
             let i, s;
             n.r(t), n.d(t, {
                 default: function() {
-                    return eu
+                    return ed
                 }
             }), n("222007"), n("860677"), n("424973"), n("70102");
             var r = n("627445"),
@@ -91852,9 +91879,10 @@
                 Q = {},
                 Z = null,
                 J = null,
-                $ = null;
+                $ = null,
+                ee = null;
 
-            function ee(e) {
+            function et(e) {
                 let t = null != o.default.getToken(),
                     n = null != c.default.get(C.TOKEN_KEY);
                 N.verbose(e, {
@@ -91863,16 +91891,16 @@
                 })
             }
 
-            function et() {
+            function en() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
                 if (U = c.default.get(R), null != J) return J;
                 let t = null != U ? U : o.default.getToken();
-                !(!(0, m.isValidFingerprintRoute)() || !e && null != t || T.default.isHandoffAvailable()) && en({
+                !(!(0, m.isValidFingerprintRoute)() || !e && null != t || T.default.isHandoffAvailable()) && ei({
                     withGuildExperiments: !0
                 })
             }
 
-            function en(e) {
+            function ei(e) {
                 let {
                     withGuildExperiments: t
                 } = e, n = {}, i = p.default.getSuperPropertiesBase64();
@@ -91909,33 +91937,33 @@
                 })
             }
 
-            function ei() {
+            function es() {
                 k = U, U = null, c.default.remove(R)
             }
 
-            function es(e, t) {
-                ee("setAuthToken called."), o.default.setToken(e, t)
-            }
-
-            function er() {
-                ee("removeAuthToken called."), o.default.removeToken()
+            function er(e, t) {
+                et("setAuthToken called."), o.default.setToken(e, t)
             }
 
             function ea() {
-                F = !0, eo(), f.default.wait(() => {
+                et("removeAuthToken called."), o.default.removeToken()
+            }
+
+            function eo() {
+                F = !0, el(), f.default.wait(() => {
                     (0, m.transitionTo)(C.Routes.REGISTER)
                 })
             }
 
-            function eo(e) {
-                ee("handleLogout called."), er(), ei(), !(null == e ? void 0 : e.isSwitchingAccount) && et(), u.default.PersistedStore.clearAll({
+            function el(e) {
+                et("handleLogout called."), ea(), es(), !(null == e ? void 0 : e.isSwitchingAccount) && en(), u.default.PersistedStore.clearAll({
                     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
                     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
                 }), I.default.clearAll(), h.clear(), S.default.clearUser(), c.default.remove(D), P = null, V = (null == e ? void 0 : e.isSwitchingAccount) ? C.LoginStates.LOGGING_IN : C.LoginStates.NONE, G = C.RegistrationStates.NONE, B = "", K = "", Y = null, H = !1, z = !1, q = !1, X = {}, Q = {}
             }
-            class el extends u.default.Store {
+            class eu extends u.default.Store {
                 initialize() {
-                    P = c.default.get(D), b = c.default.get(O), $ = c.default.get("login_cache"), null == o.default.getToken() && et()
+                    P = c.default.get(D), b = c.default.get(O), $ = c.default.get("login_cache"), null == o.default.getToken() && en()
                 }
                 getEmail() {
                     return b
@@ -92039,9 +92067,12 @@
                 getWebAuthnChallenge() {
                     return Y
                 }
+                getSuspendedUserToken() {
+                    return ee
+                }
             }
-            el.displayName = "AuthenticationStore";
-            var eu = new el(f.default, {
+            eu.displayName = "AuthenticationStore";
+            var ed = new eu(f.default, {
                 CONNECTION_OPEN: function(e) {
                     var t;
                     let {
@@ -92051,7 +92082,7 @@
                         analyticsToken: r,
                         auth: a
                     } = e;
-                    ee("handleConnectionOpen called"), S.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.default)(n)), L = i, M = s, w = r, P = n.id, b = n.email, void 0 !== a && (x = a.authenticator_types), c.default.set(O, n.email), c.default.set(D, n.id)
+                    et("handleConnectionOpen called"), S.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.default)(n)), L = i, M = s, w = r, P = n.id, b = n.email, void 0 !== a && (x = a.authenticator_types), c.default.set(O, n.email), c.default.set(D, n.id)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     var t;
@@ -92061,20 +92092,20 @@
                         analyticsToken: s,
                         token: r
                     } = e;
-                    S.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.default)(n)), L = i, w = s, es(r), ei(), P = n.id, c.default.set(D, n.id)
+                    S.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.default)(n)), L = i, w = s, er(r), es(), P = n.id, c.default.set(D, n.id)
                 },
                 CONNECTION_CLOSED: function(e) {
                     let {
                         code: t
                     } = e;
-                    if (ee("handleConnectionClosed called with code ".concat(t, ".")), 4004 === t) {
+                    if (et("handleConnectionClosed called with code ".concat(t, ".")), 4004 === t) {
                         if (F || y(A.NEW_USER_AGE_GATE_MODAL_KEY) || y(A.EXISTING_USER_AGE_GATE_MODAL_KEY)) {
-                            ea();
+                            eo();
                             return
                         }
                         p.default.track(C.AnalyticEvents.APP_USER_DEAUTHENTICATED, {
                             user_id: c.default.get(D)
-                        }), eo(), setImmediate(() => (0, m.transitionTo)(C.Routes.DEFAULT_LOGGED_OUT))
+                        }), el(), setImmediate(() => (0, m.transitionTo)(C.Routes.DEFAULT_LOGGED_OUT))
                     }
                 },
                 AUTH_SESSION_CHANGE: function(e) {
@@ -92090,7 +92121,7 @@
                     let {
                         token: t
                     } = e;
-                    V = C.LoginStates.NONE, es(t), ei(), B = "", H = !1, Y = null, K = ""
+                    V = C.LoginStates.NONE, er(t), es(), B = "", H = !1, Y = null, K = ""
                 },
                 LOGIN_FAILURE: function(e) {
                     let {
@@ -92158,10 +92189,16 @@
                     let {
                         isMultiAccount: t
                     } = e;
-                    Q = {}, V = C.LoginStates.NONE, B = "", H = !1, Y = null, s = null, i = null, !t && (er(), et(!1))
+                    Q = {}, V = C.LoginStates.NONE, B = "", H = !1, Y = null, s = null, i = null, !t && (ea(), en(!1))
                 },
                 LOGIN_STATUS_RESET: function() {
                     V = C.LoginStates.NONE
+                },
+                LOGIN_SUSPENDED_USER: function(e) {
+                    let {
+                        suspendedUserToken: t
+                    } = e;
+                    ee = t, setImmediate(() => (0, m.transitionTo)(C.Routes.ACCOUNT_STANDING))
                 },
                 SET_LOGIN_CREDENTIALS: function(e) {
                     let {
@@ -92173,13 +92210,13 @@
                         password: n
                     }
                 },
-                LOGOUT: eo,
+                LOGOUT: el,
                 FINGERPRINT: function(e) {
                     let t = e.fingerprint;
                     null == U ? null != t ? (p.default.track(C.AnalyticEvents.USER_FINGERPRINT_CHANGED, {
                         old_fingerprint: null != k ? (0, l.extractId)(k) : null,
                         new_fingerprint: (0, l.extractId)(t)
-                    }), U = t, k = t, c.default.set(R, U)) : et() : null != t && U !== t && p.default.track(C.AnalyticEvents.EXTERNAL_FINGERPRINT_DROPPED, {
+                    }), U = t, k = t, c.default.set(R, U)) : en() : null != t && U !== t && p.default.track(C.AnalyticEvents.EXTERNAL_FINGERPRINT_DROPPED, {
                         fingerprint: (0, l.extractId)(U),
                         dropped_fingerprint: (0, l.extractId)(t)
                     })
@@ -92203,7 +92240,7 @@
                     let {
                         token: t
                     } = e;
-                    G = C.RegistrationStates.NONE, s = null, es(t), ei()
+                    G = C.RegistrationStates.NONE, s = null, er(t), es()
                 },
                 REGISTER_FAILURE: function(e) {
                     let {
@@ -92242,18 +92279,21 @@
                         token: t,
                         userId: n
                     } = e;
-                    ee("handleUpdateToken called"), es(t, n), ei()
+                    et("handleUpdateToken called"), er(t, n), es()
                 },
-                EXPERIMENTS_FETCH: en,
+                EXPERIMENTS_FETCH: ei,
                 CURRENT_USER_UPDATE: function(e) {
                     let {
                         user: t
                     } = e;
                     P = t.id, b = t.email, void 0 !== t.authenticator_types && (x = t.authenticator_types), c.default.set(O, t.email), c.default.set(D, t.id)
                 },
-                AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: ea,
+                AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eo,
                 CLEAR_AUTHENTICATION_ERRORS: function() {
                     Q = {}
+                },
+                CLOSE_SUSPENDED_USER: function() {
+                    ee = null, V = C.LoginStates.NONE, el(), setImmediate(() => (0, m.transitionTo)(C.Routes.DEFAULT_LOGGED_OUT))
                 }
             }, f.DispatchBand.Early)
         },
@@ -118354,7 +118394,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260292"
+                                build_number: "260683"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -126570,7 +126610,7 @@
                     let r = s.createReplayConnection("default", (e, n) => {
                         let r = null != s.getCodecCapabilities ? s.getCodecCapabilities : s.getSupportedVideoCodecs;
                         i.on(c.BaseConnectionEvent.Stats, i.handleStats), i.conn.setOnVideoCallback(i.handleVideo), r(e => {
-                            let n = (0, f.getExperimentCodecs)(i.experimentFlags);
+                            let n = (0, f.getExperimentCodecs)(i.experimentFlags, p.MediaEngineContextTypes.DEFAULT);
                             i.codecs = [{
                                 type: "audio",
                                 name: p.Codecs.OPUS,
@@ -126618,7 +126658,7 @@
                             port: l
                         } = r;
                         this.logger.info("Connected with local address ".concat(o, ":").concat(l, " and protocol: ").concat(a)), i(i => {
-                            let s = (0, f.getExperimentCodecs)(this.experimentFlags);
+                            let s = (0, f.getExperimentCodecs)(this.experimentFlags, this.context);
                             this.codecs = [{
                                 type: "audio",
                                 name: p.Codecs.OPUS,
@@ -129017,21 +129057,21 @@
                 }), i
             }
 
-            function a(e) {
-                let t = [];
-                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? t.unshift({
+            function a(e, t) {
+                let n = [];
+                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? n.unshift({
                     name: "H265",
                     encode: !0,
                     decode: !0
-                }) : e.has(i.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT) && t.unshift({
+                }) : e.has(i.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT) && t === i.MediaEngineContextTypes.STREAM && n.unshift({
                     name: "H265",
                     encode: !1,
                     decode: !0
-                }), e.has(i.ExperimentFlags.SIGNAL_AV1_SUPPORT) && t.unshift({
+                }), e.has(i.ExperimentFlags.SIGNAL_AV1_SUPPORT) && n.unshift({
                     name: "AV1",
                     encode: !0,
                     decode: !0
-                }), t
+                }), n
             }
 
             function o(e, t) {
@@ -133875,7 +133915,7 @@
             }), n("70102");
             var i = class e extends Error {
                 constructor(e, t) {
-                    super(t), this.code = e, this.message = t, this.name = "RPCError"
+                    super(t), "closeCode" in e ? (this.code = e.closeCode, this.closeCode = e.closeCode) : (this.code = e.errorCode, this.errorCode = e.errorCode), this.message = t, this.name = "RPCError"
                 }
             }
         },
@@ -134443,4 +134483,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.b5e788a88b8ad570f69b.js.map
+//# sourceMappingURL=29278.eb612ef6a4a33eab0832.js.map

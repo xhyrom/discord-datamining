@@ -1679,7 +1679,8 @@
                             questName: (n = t.messages).quest_name,
                             rewardName: n.reward_name,
                             rewardNameWithArticle: n.reward_name_with_article,
-                            rewardRedemptionInstructions: n.reward_redemption_instructions
+                            rewardRedemptionInstructions: n.reward_redemption_instructions,
+                            gameTitle: n.game_title
                         }
                     },
                     userStatus: null == e.user_status ? null : r(e.user_status)
@@ -1710,4 +1711,4 @@
         }
     }
 ]);
-//# sourceMappingURL=40876.477d9a39902b14c7bd0a.js.map
+//# sourceMappingURL=40876.8fc1c3320acfc4dd44ed.js.map

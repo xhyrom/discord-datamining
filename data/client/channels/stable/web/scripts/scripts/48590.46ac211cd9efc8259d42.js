@@ -1390,7 +1390,7 @@
                     for (let e of d) {
                         if (!e.isMultiUserDM() || !a(e)) continue;
                         let t = (0, s.computeChannelName)(e, D.default, M.default).toLocaleLowerCase(),
-                            l = (0, H.stripDiacritics)(t),
+                            l = (0, H.stripDiacritics)((0, H.normalize)(t)),
                             i = el(l, c, n);
                         i > 0 && f.push({
                             type: V.AutocompleterResultTypes.GROUP_DM,
@@ -1864,4 +1864,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48590.9d5fbcc5aac137b478e1.js.map
+//# sourceMappingURL=48590.46ac211cd9efc8259d42.js.map
