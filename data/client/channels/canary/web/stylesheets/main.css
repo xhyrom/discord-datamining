@@ -26900,8 +26900,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -61353,6 +61353,11 @@ html .progress__4ef76 {
     margin: 0 24px 24px
 }
 
+.leftAlignSection_b3e61a,
+.centerAlignSubtitle_f111db {
+    position: relative
+}
+
 .leftAlignSubtitle_dd3314 {
     text-align: left
 }
@@ -61395,6 +61400,13 @@ html .progress__4ef76 {
 
 .leftAlignSection_b3e61a {
     align-items: start
+}
+
+.showAllPerksButton__15f8d {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%)
 }
 
 .wrapper__765a2 {
@@ -61929,6 +61941,20 @@ html .progress__4ef76 {
 .giftNitro__7b37a {
     width: calc(100% - 32px);
     margin-top: 64px
+}
+
+.seeAllPerksButton_c90d04 {
+    border-radius: 20px;
+    padding: 8px 8px 8px 16px
+}
+
+.seeAllPerksButton_c90d04:hover {
+    background: linear-gradient(120deg, var(--premium-tier-2-purple-for-gradients)20%, var(--premium-tier-2-purple-for-gradients-2)50%, var(--premium-tier-2-pink-for-gradients)80%)
+}
+
+.seeAllPerksButtonContent_f387e5 {
+    display: flex;
+    align-items: center
 }
 
 .footerSpacing_e43335 {
@@ -126382,4 +126408,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8fe131f9e068037f7767.css.map*/
+/*# sourceMappingURL=app.e0eedbc7fb135d1942c7.css.map*/
