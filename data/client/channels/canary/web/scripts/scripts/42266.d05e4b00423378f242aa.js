@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["42266"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -48723,21 +48723,27 @@
             }
 
             function c(e, t) {
-                if (!__OVERLAY__) throw new s.default(l.RPCErrors.UNKNOWN_ERROR, "called from wrong app context");
+                if (!__OVERLAY__) throw new s.default({
+                    errorCode: o.RPCErrors.UNKNOWN_ERROR
+                }, "called from wrong app context");
                 i.default.subscribe(o.RPCEvents.OVERLAY, {
                     token: t
                 }, t => e((0, a.deserializeObject)(t)))
             }
 
             function f(e, t) {
-                if (__OVERLAY__) throw new s.default(l.RPCErrors.UNKNOWN_ERROR, "called from wrong app context");
+                if (__OVERLAY__) throw new s.default({
+                    errorCode: o.RPCErrors.UNKNOWN_ERROR
+                }, "called from wrong app context");
                 r.default.setCommandHandler(o.RPCCommands.OVERLAY, {
                     scope: l.RPC_PRIVATE_SCOPE,
                     handler(n) {
                         let {
                             args: i
                         } = n;
-                        if (!t(i.token)) throw new s.default(l.RPCErrors.INVALID_TOKEN, "Invalid RPC auth token provided");
+                        if (!t(i.token)) throw new s.default({
+                            errorCode: o.RPCErrors.INVALID_TOKEN
+                        }, "Invalid RPC auth token provided");
                         e((0, a.deserializeObject)(i))
                     }
                 }), r.default.setEventHandler(o.RPCEvents.OVERLAY, {
@@ -48746,7 +48752,9 @@
                         let {
                             args: n
                         } = e;
-                        if (!t(n.token)) throw new s.default(l.RPCErrors.INVALID_TOKEN, "Invalid RPC auth token provided")
+                        if (!t(n.token)) throw new s.default({
+                            errorCode: o.RPCErrors.INVALID_TOKEN
+                        }, "Invalid RPC auth token provided")
                     }
                 })
             }
@@ -82598,41 +82606,38 @@
         },
         492249: function(e, t, n) {
             "use strict";
-            var i, s, r, a, o, l, u, d, c, f;
+            var i, s, r, a, o, l, u, d;
             n.r(t), n.d(t, {
                 RPC_SCOPE_CONFIG: function() {
                     return i
                 },
                 RPC_PRIVATE_SCOPE: function() {
-                    return _
+                    return c
                 },
                 RPC_PRIVATE_LIMITED_SCOPE: function() {
-                    return h
+                    return f
                 },
                 RPC_LOCAL_SCOPE: function() {
-                    return g
+                    return _
                 },
                 RPC_AUTHENTICATED_SCOPE: function() {
-                    return m
+                    return h
                 },
                 RPCDeepLinks: function() {
                     return s
                 },
-                RPCErrors: function() {
+                DispatchErrorCodes: function() {
                     return r
                 },
-                DispatchErrorCodes: function() {
-                    return a
-                },
                 TransportTypes: function() {
-                    return o
+                    return a
                 }
-            }), (l = i || (i = {})).ANY = "$any", l.ALL = "$all";
-            let _ = "RPC_PRIVATE_SCOPE",
-                h = "RPC_PRIVATE_LIMITED_SCOPE",
-                g = "RPC_LOCAL_SCOPE",
-                m = "RPC_AUTHENTICATED_SCOPE";
-            (u = s || (s = {})).USER_SETTINGS = "USER_SETTINGS", u.CHANGELOG = "CHANGELOG", u.LIBRARY = "LIBRARY", u.STORE_HOME = "STORE_HOME", u.STORE_LISTING = "STORE_LISTING", u.CHANNEL = "CHANNEL", u.PICK_GUILD_SETTINGS = "PICK_GUILD_SETTINGS", (d = r || (r = {}))[d.UNKNOWN_ERROR = 1e3] = "UNKNOWN_ERROR", d[d.SERVICE_UNAVAILABLE = 1001] = "SERVICE_UNAVAILABLE", d[d.TRANSACTION_ABORTED = 1002] = "TRANSACTION_ABORTED", d[d.INVALID_PAYLOAD = 4e3] = "INVALID_PAYLOAD", d[d.INVALID_COMMAND = 4002] = "INVALID_COMMAND", d[d.INVALID_GUILD = 4003] = "INVALID_GUILD", d[d.INVALID_EVENT = 4004] = "INVALID_EVENT", d[d.INVALID_CHANNEL = 4005] = "INVALID_CHANNEL", d[d.INVALID_PERMISSIONS = 4006] = "INVALID_PERMISSIONS", d[d.INVALID_CLIENTID = 4007] = "INVALID_CLIENTID", d[d.INVALID_ORIGIN = 4008] = "INVALID_ORIGIN", d[d.INVALID_TOKEN = 4009] = "INVALID_TOKEN", d[d.INVALID_USER = 4010] = "INVALID_USER", d[d.INVALID_INVITE = 4011] = "INVALID_INVITE", d[d.INVALID_ACTIVITY_JOIN_REQUEST = 4012] = "INVALID_ACTIVITY_JOIN_REQUEST", d[d.INVALID_LOBBY = 4013] = "INVALID_LOBBY", d[d.INVALID_LOBBY_SECRET = 4014] = "INVALID_LOBBY_SECRET", d[d.INVALID_ENTITLEMENT = 4015] = "INVALID_ENTITLEMENT", d[d.INVALID_GIFT_CODE = 4016] = "INVALID_GIFT_CODE", d[d.INVALID_GUILD_TEMPLATE = 4017] = "INVALID_GUILD_TEMPLATE", d[d.INVALID_SOUND = 4018] = "INVALID_SOUND", d[d.OAUTH2_ERROR = 5e3] = "OAUTH2_ERROR", d[d.SELECT_CHANNEL_TIMED_OUT = 5001] = "SELECT_CHANNEL_TIMED_OUT", d[d.GET_GUILD_TIMED_OUT = 5002] = "GET_GUILD_TIMED_OUT", d[d.SELECT_VOICE_FORCE_REQUIRED = 5003] = "SELECT_VOICE_FORCE_REQUIRED", d[d.INVALID_ACTIVITY_SECRET = 5005] = "INVALID_ACTIVITY_SECRET", d[d.NO_ELIGIBLE_ACTIVITY = 5006] = "NO_ELIGIBLE_ACTIVITY", d[d.LOBBY_FULL = 5007] = "LOBBY_FULL", d[d.PURCHASE_CANCELED = 5008] = "PURCHASE_CANCELED", d[d.PURCHASE_ERROR = 5009] = "PURCHASE_ERROR", d[d.UNAUTHORIZED_FOR_ACHIEVEMENT = 5010] = "UNAUTHORIZED_FOR_ACHIEVEMENT", d[d.RATE_LIMITED = 5011] = "RATE_LIMITED", (c = a || (a = {}))[c.APPLICATION_NOT_FOUND = 101] = "APPLICATION_NOT_FOUND", c[c.DISK_LOW = 2022] = "DISK_LOW", c[c.DISK_PERMISSION_DENIED = 2025] = "DISK_PERMISSION_DENIED", c[c.POST_INSTALL_FAILED = 2025] = "POST_INSTALL_FAILED", c[c.REDISTRIBUTABLE_INSTALL_FAILED = 2026] = "REDISTRIBUTABLE_INSTALL_FAILED", c[c.APPLICATION_LOAD_FAILED = 2034] = "APPLICATION_LOAD_FAILED", c[c.DESERIALIZATION_FAILED = 2047] = "DESERIALIZATION_FAILED", c[c.INTERRUPTED = 2055] = "INTERRUPTED", c[c.MAX_REQUEST_RETRIES_EXCEEDED = 2058] = "MAX_REQUEST_RETRIES_EXCEEDED", c[c.AUTHENTICATION_FAILED = 2063] = "AUTHENTICATION_FAILED", c[c.IO_PERMISSION_DENIED = 2064] = "IO_PERMISSION_DENIED", c[c.NO_MANIFESTS = 2065] = "NO_MANIFESTS", c[c.POST_INSTALL_CANCELLED = 2066] = "POST_INSTALL_CANCELLED", c[c.API_ERROR = 2069] = "API_ERROR", c[c.FILE_NAME_TOO_LONG = 2072] = "FILE_NAME_TOO_LONG", c[c.NOT_ENTITLED = 2073] = "NOT_ENTITLED", c[c.APPLICATION_LOCK_FAILED = 2076] = "APPLICATION_LOCK_FAILED", c[c.NOT_DIRECTORY = 2077] = "NOT_DIRECTORY", c[c.INVALID_DRIVE = 2078] = "INVALID_DRIVE", c[c.DISK_FULL = 2080] = "DISK_FULL", (f = o || (o = {})).IPC = "ipc", f.WEBSOCKET = "ws", f.HTTP = "http", f.POST_MESSAGE = "post_message"
+            }), (o = i || (i = {})).ANY = "$any", o.ALL = "$all";
+            let c = "RPC_PRIVATE_SCOPE",
+                f = "RPC_PRIVATE_LIMITED_SCOPE",
+                _ = "RPC_LOCAL_SCOPE",
+                h = "RPC_AUTHENTICATED_SCOPE";
+            (l = s || (s = {})).USER_SETTINGS = "USER_SETTINGS", l.CHANGELOG = "CHANGELOG", l.LIBRARY = "LIBRARY", l.STORE_HOME = "STORE_HOME", l.STORE_LISTING = "STORE_LISTING", l.CHANNEL = "CHANNEL", l.PICK_GUILD_SETTINGS = "PICK_GUILD_SETTINGS", (u = r || (r = {}))[u.APPLICATION_NOT_FOUND = 101] = "APPLICATION_NOT_FOUND", u[u.DISK_LOW = 2022] = "DISK_LOW", u[u.DISK_PERMISSION_DENIED = 2025] = "DISK_PERMISSION_DENIED", u[u.POST_INSTALL_FAILED = 2025] = "POST_INSTALL_FAILED", u[u.REDISTRIBUTABLE_INSTALL_FAILED = 2026] = "REDISTRIBUTABLE_INSTALL_FAILED", u[u.APPLICATION_LOAD_FAILED = 2034] = "APPLICATION_LOAD_FAILED", u[u.DESERIALIZATION_FAILED = 2047] = "DESERIALIZATION_FAILED", u[u.INTERRUPTED = 2055] = "INTERRUPTED", u[u.MAX_REQUEST_RETRIES_EXCEEDED = 2058] = "MAX_REQUEST_RETRIES_EXCEEDED", u[u.AUTHENTICATION_FAILED = 2063] = "AUTHENTICATION_FAILED", u[u.IO_PERMISSION_DENIED = 2064] = "IO_PERMISSION_DENIED", u[u.NO_MANIFESTS = 2065] = "NO_MANIFESTS", u[u.POST_INSTALL_CANCELLED = 2066] = "POST_INSTALL_CANCELLED", u[u.API_ERROR = 2069] = "API_ERROR", u[u.FILE_NAME_TOO_LONG = 2072] = "FILE_NAME_TOO_LONG", u[u.NOT_ENTITLED = 2073] = "NOT_ENTITLED", u[u.APPLICATION_LOCK_FAILED = 2076] = "APPLICATION_LOCK_FAILED", u[u.NOT_DIRECTORY = 2077] = "NOT_DIRECTORY", u[u.INVALID_DRIVE = 2078] = "INVALID_DRIVE", u[u.DISK_FULL = 2080] = "DISK_FULL", (d = a || (a = {})).IPC = "ipc", d.WEBSOCKET = "ws", d.HTTP = "http", d.POST_MESSAGE = "post_message"
         },
         843158: function(e, t, n) {
             "use strict";
@@ -82717,11 +82722,17 @@
                 }
                 handleRequest(e, t) {
                     new Promise(n => {
-                        if (null == t.nonce || "" === t.nonce) throw new c.default(h.RPCErrors.INVALID_PAYLOAD, "Payload requires a nonce");
+                        if (null == t.nonce || "" === t.nonce) throw new c.default({
+                            errorCode: g.RPCErrors.INVALID_PAYLOAD
+                        }, "Payload requires a nonce");
                         let i = t.cmd,
                             s = this.commands[i];
-                        if (null == s) throw new c.default(h.RPCErrors.INVALID_COMMAND, "Invalid command: ".concat(t.cmd));
-                        if (!(0, _.default)(e.authorization.scopes, s.scope)) throw new c.default(h.RPCErrors.INVALID_PERMISSIONS, "Not authenticated or invalid scope");
+                        if (null == s) throw new c.default({
+                            errorCode: g.RPCErrors.INVALID_COMMAND
+                        }, "Invalid command: ".concat(t.cmd));
+                        if (!(0, _.default)(e.authorization.scopes, s.scope)) throw new c.default({
+                            errorCode: g.RPCErrors.INVALID_PERMISSIONS
+                        }, "Not authenticated or invalid scope");
                         d.ExperimentRPCServerAnalyticsKillswitch.getCurrentConfig({
                             location: "RPCServer"
                         }).enabled && l.default.track(g.AnalyticEvents.RPC_COMMAND_SENT, {
@@ -82736,7 +82747,9 @@
                                 convert: !1
                             }, t => {
                                 if (null != t) {
-                                    i(new c.default(h.RPCErrors.INVALID_PAYLOAD, t.message));
+                                    i(new c.default({
+                                        errorCode: g.RPCErrors.INVALID_PAYLOAD
+                                    }, t.message));
                                     return
                                 }
                                 n(e)
@@ -82782,7 +82795,7 @@
                 error(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
                         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.RPCCommands.DISPATCH,
-                        i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : h.RPCErrors.UNKNOWN_ERROR,
+                        i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : g.RPCErrors.UNKNOWN_ERROR,
                         s = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "Unknown Error";
                     l.default.track(g.AnalyticEvents.RPC_SERVER_ERROR_CAUGHT, {
                         command: n,
@@ -118345,7 +118358,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260484"
+                                build_number: "260518"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133866,7 +133879,7 @@
             }), n("70102");
             var i = class e extends Error {
                 constructor(e, t) {
-                    super(t), this.code = e, this.message = t, this.name = "RPCError"
+                    super(t), "closeCode" in e ? (this.code = e.closeCode, this.closeCode = e.closeCode) : (this.code = e.errorCode, this.errorCode = e.errorCode), this.message = t, this.name = "RPCError"
                 }
             }
         },
@@ -134434,4 +134447,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.99b3fc0fad8f6f6ff55c.js.map
+//# sourceMappingURL=42266.d05e4b00423378f242aa.js.map

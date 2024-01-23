@@ -24725,16 +24725,14 @@
                 progressBarInnerComplete: "progressBarInnerComplete__07ae6",
                 progressBarInnerInProgress: "progressBarInnerInProgress__4eb19 questInProgressGradient__32570",
                 progressBarOuter: "progressBarOuter_cf06a5",
-                progressBarPercentContainer: "progressBarPercentContainer_bff7f6",
                 progressPercent: "progressPercent_bbea8c",
                 progressPercentInnerComplete: "progressPercentInnerComplete_eea4c6",
                 progressPercentInnerInProgress: "progressPercentInnerInProgress_b2f14d",
-                questCopy: "questCopy__55f21",
                 questCopyCta: "questCopyCta_c1ee0b",
                 questCta: "questCta_ba3931",
                 questInProgressGradient: "questInProgressGradient__32570",
                 questReward: "questReward__12781",
-                questRewardContainer: "questRewardContainer__46761"
+                taskInstructions: "taskInstructions__5b051"
             }
         },
         779928: function(e, t, o) {
@@ -24746,8 +24744,6 @@
                 questInfo: "questInfo_b1b9e7",
                 questLogotype: "questLogotype__0fc95",
                 questSplash: "questSplash__98953",
-                questSubtitle: "questSubtitle_d058fc",
-                questTitle: "questTitle__558af",
                 questsCardHeader: "questsCardHeader__149ea"
             }
         },

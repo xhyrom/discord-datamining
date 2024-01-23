@@ -26900,8 +26900,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -103349,11 +103349,6 @@ html .invoiceCancelRow_a8669b {
     background-color: var(--white-500)
 }
 
-.progressBarPercentContainer_bff7f6 {
-    margin-top: 10px;
-    margin-bottom: 16px
-}
-
 .progressPercent_bbea8c {
     text-align: right;
     font-size: 12px;
@@ -103397,7 +103392,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .questInProgressGradient__32570 {
-    background: linear-gradient(270deg, var(--premium-tier-1-blue)0%, rgba(115, 142, 245, 0)65.64%), var(--brand-500)
+    background: var(--brand-500)
 }
 
 .progressBarInnerComplete__07ae6 {
@@ -103406,36 +103401,38 @@ html .invoiceCancelRow_a8669b {
 
 .outerContainer_a94665 {
     min-height: 130px;
-    border-radius: 0 0 8px 8px;
     padding: 16px;
     display: flex
 }
 
-.questRewardContainer__46761 {
-    max-width: 150px;
-    max-height: 150px
-}
-
 .questReward__12781 {
     border-radius: 8px;
-    pointer-events: none
+    pointer-events: none;
+    height: 98px;
+    width: 98px;
+    margin-right: 16px
 }
 
 .innerContainer_e82bb0 {
-    padding: 16px 0 0 16px;
-    width: 100%
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
 
 .questCopyCta_c1ee0b {
-    display: flex
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%
 }
 
-.questCopy__55f21 {
-    max-width: 400px
+.taskInstructions__5b051 {
+    margin-bottom: 4px
 }
 
 .questCta_ba3931 {
-    margin-left: auto
+    margin-left: 16px
 }
 
 .ctaTooltipCopy__83704 {
@@ -103452,7 +103449,6 @@ html .invoiceCancelRow_a8669b {
 
 .questsCardHeader__149ea {
     height: 185px;
-    border-radius: 8px 8px 0 0;
     overflow: hidden;
     position: relative
 }
@@ -103465,15 +103461,14 @@ html .invoiceCancelRow_a8669b {
 
 .headerContent_e8529b {
     position: absolute;
+    padding: 24px 16px 20px;
     height: 100%;
     width: 100%
 }
 
 .iconLogotypeContainer__065f9 {
     display: flex;
-    flex-direction: row;
-    margin-top: 24px;
-    margin-left: 16px
+    flex-direction: row
 }
 
 .questIcon__5afef {
@@ -103492,24 +103487,15 @@ html .invoiceCancelRow_a8669b {
 }
 
 .questInfo_b1b9e7 {
-    margin-left: 16px;
     margin-top: 4px
 }
 
-.questTitle__558af {
-    max-width: 400px
-}
-
-.questSubtitle_d058fc {
-    max-width: 200px
-}
-
 .theme-light .headerContent_e8529b {
-    background: linear-gradient(90deg, var(--white-100).04%, rgba(255, 255, 255, 0)99.96%)
+    background: linear-gradient(90deg, var(--white-100).04%, rgba(255, 255, 255, 0))
 }
 
 .theme-dark .headerContent_e8529b {
-    background: linear-gradient(90deg, var(--black-500).04%, rgba(0, 0, 0, 0)99.96%)
+    background: linear-gradient(90deg, var(--black-500).04%, rgba(0, 0, 0, 0))
 }
 
 .questsContainer__5df56 {
@@ -103531,9 +103517,9 @@ html .invoiceCancelRow_a8669b {
 
 .questsCard_c9865e {
     width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden
 }
 
 .spinner_e1e709 {
@@ -126396,4 +126382,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a6ee2f98b298147767af.css.map*/
+/*# sourceMappingURL=app.8fe131f9e068037f7767.css.map*/
