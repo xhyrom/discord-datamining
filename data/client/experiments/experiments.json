@@ -12932,13 +12932,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable explicit media sender false positive experience"
+        "Treatment 1: Enable explicit media sender false positive experience",
+        "Treatment 2: Enable explicit media sender false positive experience with 3 second submit report expiration window"
       ],
       "hash": 3730176707,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
