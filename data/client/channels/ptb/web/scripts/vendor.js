@@ -23835,7 +23835,7 @@
                         })
                     }, e => {
                         var t, s, r;
-                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.suspended_user_token) != null) {
+                        if (null != e.body && (null === (t = e.body) || void 0 === t ? void 0 : t.suspended_user_token) != null) {
                             d.default.dispatch({
                                 type: "LOGIN_SUSPENDED_USER",
                                 suspendedUserToken: null === (r = e.body) || void 0 === r ? void 0 : r.suspended_user_token
@@ -23892,7 +23892,7 @@
                         })
                     }).catch(e => {
                         var t;
-                        if (null != e.body.suspended_user_token) {
+                        if (null != e.body && null != e.body.suspended_user_token) {
                             d.default.dispatch({
                                 type: "LOGIN_SUSPENDED_USER",
                                 suspendedUserToken: e.body.suspended_user_token
@@ -118394,7 +118394,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260626"
+                                build_number: "260628"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134483,4 +134483,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.95fcc32a144b2b4a9056.js.map
+//# sourceMappingURL=29278.4d61e1829fa366b290ab.js.map
