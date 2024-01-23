@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -118260,7 +118260,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260705"
+                                build_number: "260708"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134349,4 +134349,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.bdcabcd3a2310905dc46.js.map
+//# sourceMappingURL=29278.dd50aa58c432f3215d26.js.map
