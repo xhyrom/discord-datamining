@@ -26900,8 +26900,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -69143,7 +69143,8 @@ input::-webkit-inner-spin-button {
 .icon20px__279be {
     width: 20px;
     height: 20px;
-    border-radius: 4px
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle)
 }
 
 .icon20px__279be:not(:last-child) {
@@ -126408,4 +126409,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.9a58a5d01f444dd68c46.css.map*/
+/*# sourceMappingURL=app.5eaf5d113d9719b12a3d.css.map*/
