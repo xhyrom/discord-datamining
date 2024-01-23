@@ -16500,6 +16500,9 @@
                 EXPRESSION_PICKER_UPLOAD_IMAGE_TAG: "IMAGE",
                 EXPRESSION_PICKER_UPLOAD_DESCRIPTION: "Drag and drop or click to upload an image",
                 EXPRESSION_PICKER_UPLOAD_ARIA: "Upload an image",
+                POLL_END_EARLY: "End Poll Now",
+                POLL_END_EARLY_CONFIRMATION_TITLE: "End Poll Now?",
+                POLL_END_EARLY_CONFIRMATION_TEXT: "This will close the poll immediately and reveal the results.",
                 SUMMONED: "Summoned!",
                 WAVED_AT_USER: "\uD83D\uDC4B You waved at !!{username}!!",
                 WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
@@ -18055,7 +18058,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260768", ", Version Hash: ").concat("164a4b1d3483f800775e1573214c23ba726729aa")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260778", ", Version Hash: ").concat("7464d3d705e78cdfaa3a8db960e9e46a9a00419f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20289,8 +20292,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "260768", "260768"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260768")), _ = 0), _
+                let _ = parseInt((e = "260778", "260778"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260778")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -34924,4 +34927,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.f0b3431d974925bdb8b2.js.map
+//# sourceMappingURL=34546.34b0f2d06adfa8adfe46.js.map

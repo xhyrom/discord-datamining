@@ -1543,6 +1543,7 @@
                     CLYDE_PROFILES_CREATE: _ => "/guilds/".concat(_, "/clyde-profiles"),
                     CLYDE_PROFILES_GENERATE_PERSONALITY: "/clyde-profiles/generate-personality",
                     POLL_ANSWERS: (_, E) => "/channels/".concat(_, "/polls/").concat(E, "/answers"),
+                    POLL_EXPIRE: (_, E) => "/channels/".concat(_, "/messages/").concat(E, "/expire"),
                     PREMIUM_MARKETING: "/premium-marketing",
                     QUESTS_CURRENT_QUESTS: "/quests/@me",
                     QUESTS_HEARTBEAT: _ => "/quests/".concat(_, "/heartbeat"),
@@ -13573,4 +13574,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.be41e5e62901169f2dea.js.map
+//# sourceMappingURL=7273.f8b09c542db8c3f5f4a0.js.map
