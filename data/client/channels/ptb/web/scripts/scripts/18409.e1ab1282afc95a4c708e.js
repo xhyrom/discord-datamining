@@ -91,10 +91,10 @@
                     return E
                 },
                 uploadCallscopeLogs: function() {
-                    return b
+                    return L
                 },
                 uploadCallscopeLogFiles: function() {
-                    return L
+                    return b
                 }
             }), n("222007");
             var o = n("872717"),
@@ -131,7 +131,7 @@
                     blindUserId: r
                 }
             }
-            async function b(t, e, n, o) {
+            async function L(t, e, n, o) {
                 var a;
                 if (!__OVERLAY__) {
                     if ((null === l.default || void 0 === l.default ? void 0 : null === (a = l.default.fileManager) || void 0 === a ? void 0 : a.getCallscopeLogFiles) == null) {
@@ -149,13 +149,13 @@
                         } = await E(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
                         f.info("uploadCallscopeLogs: Uploading callscope logs for context: ".concat(o, ", ").concat(i));
                         let c = await l.default.fileManager.getCallscopeLogFiles(a);
-                        await L(r, c)
+                        await b(r, c)
                     } catch (t) {
                         f.error("uploadCallscopeLogs: Error uploading logs ".concat(null == t ? void 0 : t.text), t)
                     }
                 }
             }
-            async function L(t, e) {
+            async function b(t, e) {
                 try {
                     if (0 === e.length) {
                         f.error("uploadCallscopeLogFiles: No files found.");
@@ -247,8 +247,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "260484",
-                    versionHash: "7ec33f871fc1fbc9cf9a341ec2f92279b9b67bf9"
+                    buildNumber: "260518",
+                    versionHash: "fd0933c63fcfd921a0fbf2f04e6016fe518fc045"
                 }
             }
             n.r(e), n.d(e, {
@@ -360,4 +360,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18409.5bbebc02632559a4b5f5.js.map
+//# sourceMappingURL=18409.e1ab1282afc95a4c708e.js.map
