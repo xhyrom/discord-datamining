@@ -16506,7 +16506,7 @@
   "QUESTS_COMPLETE_TOOLTIP": "\"Hit claim to get your reward code!\"",
   "QUESTS_ACCEPT_TOOLTIP": "\"Accept the quest and complete the task to unlock the reward\"",
   "QUESTS_IN_PROGRESS_TOOLTIP": "\"Complete the task to unlock the reward\"",
-  "QUESTS_STREAM_TASK": "\"Stream for {minutes} minutes\"",
+  "QUESTS_STREAM_TASK": "\"Stream {gameTitle} to a friend for {minutes} minutes\"",
   "QUEST_REWARD": "\"Win {reward}\"",
   "FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE": "\"Prompt members to chat after this channel has been inactive for a while.\"",
   "PROMPT_CAMERA_LOADING_TITLE": "\"What are you looking at?\"",
