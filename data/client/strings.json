@@ -16257,7 +16257,7 @@
   "SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION": "\"You broke the rules against $[!!{description}!!](descriptionHook).\"",
   "SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION_GUILD": "\"Your server {guildName} broke the rules against $[!!{description}!!](descriptionHook).\"",
   "SAFETY_HUB_VIOLATIONS_CONTAINER_NEW": "\"NEW\"",
-  "SAFETY_HUB_STANDALONE_PAGE_NAGBAR": "\"Protecting our users is a top priority. When a user engages in repeated violations or particularly egregious harms, we take swift action\"",
+  "SAFETY_HUB_STANDALONE_PAGE_NAGBAR": "\"You lost access to Discord. Review your violations to understand for how long and why.\"",
   "SAFETY_HUB_STANDALONE_PAGE_NAGBAR_CTA": "\"Learn More\"",
   "SAFETY_POLICY_NOTICE_BUTTON": "\"Learn more\"",
   "SAFETY_POLICY_NOTICE_HEADER": "\"You broke Discord's community guidelines\"",
