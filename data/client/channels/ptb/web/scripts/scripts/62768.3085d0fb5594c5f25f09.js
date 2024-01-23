@@ -50,12 +50,12 @@
             var a = n("393414"),
                 s = n("552712");
             n("698041");
-            var o = n("167726"),
-                u = n("271560"),
+            var u = n("167726"),
+                o = n("271560"),
                 c = n("49111");
 
             function d(e) {
-                return (0, u.httpGetWithCountryCodeQuery)({
+                return (0, o.httpGetWithCountryCodeQuery)({
                     url: c.Endpoints.STORE_PUBLISHED_LISTINGS_SKUS,
                     query: {
                         application_id: e
@@ -69,8 +69,8 @@
 
             function f(e) {
                 let t = s.default.get(e),
-                    n = null != t && (o.default.inTestModeForApplication(t.applicationId) || l.default.inDevModeForApplication(t.applicationId));
-                return (0, u.httpGetWithCountryCodeQuery)(n ? c.Endpoints.STORE_LISTINGS_SKU(e) : c.Endpoints.STORE_PUBLISHED_LISTINGS_SKU(e)).then(e => {
+                    n = null != t && (u.default.inTestModeForApplication(t.applicationId) || l.default.inDevModeForApplication(t.applicationId));
+                return (0, o.httpGetWithCountryCodeQuery)(n ? c.Endpoints.STORE_LISTINGS_SKU(e) : c.Endpoints.STORE_PUBLISHED_LISTINGS_SKU(e)).then(e => {
                     n ? r.default.dispatch({
                         type: "STORE_LISTINGS_FETCH_SUCCESS",
                         storeListings: e.body
@@ -82,7 +82,7 @@
             }
 
             function p(e) {
-                return (0, u.httpGetWithCountryCodeQuery)(c.Endpoints.STORE_LISTING(e)).then(e => {
+                return (0, o.httpGetWithCountryCodeQuery)(c.Endpoints.STORE_LISTING(e)).then(e => {
                     r.default.dispatch({
                         type: "STORE_LISTING_FETCH_SUCCESS",
                         storeListing: e.body
@@ -91,7 +91,7 @@
             }
 
             function h(e) {
-                return (0, u.httpGetWithCountryCodeQuery)(c.Endpoints.STORE_PUBLISHED_LISTINGS_APPLICATION(e)).then(e => {
+                return (0, o.httpGetWithCountryCodeQuery)(c.Endpoints.STORE_PUBLISHED_LISTINGS_APPLICATION(e)).then(e => {
                     r.default.dispatch({
                         type: "STORE_LISTING_FETCH_SUCCESS",
                         storeListing: e.body
@@ -120,7 +120,7 @@
                 let {
                     pathname: n,
                     ...i
-                } = (0, u.getStoreListingLocation)(e, t);
+                } = (0, o.getStoreListingLocation)(e, t);
                 (0, a.transitionTo)(n, i)
             }
 
@@ -128,7 +128,7 @@
                 let {
                     pathname: n,
                     ...i
-                } = (0, u.getApplicationStoreListingLocation)(e, t);
+                } = (0, o.getApplicationStoreListingLocation)(e, t);
                 (0, a.transitionTo)(n, i)
             }
         },
@@ -185,10 +185,10 @@
                     height: n = 24,
                     color: a = r.default.colors.INTERACTIVE_NORMAL,
                     colorClass: s = "",
-                    ...o
+                    ...u
                 } = e;
                 return (0, i.jsx)("svg", {
-                    ...(0, l.default)(o),
+                    ...(0, l.default)(u),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
@@ -274,8 +274,8 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("850644"),
-                o = n("899604"),
-                u = n("114067");
+                u = n("899604"),
+                o = n("114067");
             let c = e => {
                     let {
                         application: t,
@@ -299,7 +299,7 @@
                         ...s
                     } = e;
                     return (0, i.jsx)(a.Heading, {
-                        className: l(u.header, n),
+                        className: l(o.header, n),
                         variant: "heading-xl/extrabold",
                         id: r,
                         ...s,
@@ -309,7 +309,7 @@
 
             function f() {
                 return (0, i.jsx)("hr", {
-                    className: u.divider
+                    className: o.divider
                 })
             }
             let p = e => {
@@ -342,13 +342,13 @@
                         ...s
                     } = e;
                     return (0, i.jsx)("div", {
-                        className: l(u.benefitsContainer, a),
+                        className: l(o.benefitsContainer, a),
                         ...s,
-                        children: (0, i.jsx)(o.SubscriptionListingBenefits, {
+                        children: (0, i.jsx)(u.SubscriptionListingBenefits, {
                             applicationId: t,
                             storeListingBenefits: n,
                             skuBenefits: r,
-                            className: u.benefit
+                            className: o.benefit
                         })
                     })
                 },
@@ -359,7 +359,7 @@
                         ...r
                     } = e;
                     return (0, i.jsx)("div", {
-                        className: l(u.container, n),
+                        className: l(o.container, n),
                         ...r,
                         children: t
                     })
@@ -379,8 +379,8 @@
             n("884691");
             var a = n("414456"),
                 s = n.n(a),
-                o = n("315102"),
-                u = n("271560"),
+                u = n("315102"),
+                o = n("271560"),
                 c = n("969850");
             (i = r || (r = {}))[i.SMALL = 40] = "SMALL", i[i.MEDIUM = 66] = "MEDIUM";
             let d = {
@@ -394,7 +394,7 @@
                     asset: r,
                     className: a
                 } = e;
-                return t = null != r ? (0, u.getAssetURL)(n.id, r, i) : o.default.getApplicationIconURL({
+                return t = null != r ? (0, o.getAssetURL)(n.id, r, i) : u.default.getApplicationIconURL({
                     id: n.id,
                     icon: n.icon,
                     size: i
@@ -409,7 +409,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return u
                 }
             });
             var i = n("37983");
@@ -419,15 +419,15 @@
                 a = n("77078"),
                 s = n("396671");
 
-            function o(e) {
+            function u(e) {
                 let {
                     children: t,
                     className: n,
                     size: r = a.Button.Sizes.SMALL,
-                    ...o
+                    ...u
                 } = e;
                 return (0, i.jsx)(a.Button, {
-                    ...o,
+                    ...u,
                     size: r,
                     className: l(s.button, n),
                     children: t
@@ -453,8 +453,8 @@
                 l = n("834897"),
                 a = n("85336"),
                 s = n("159149"),
-                o = n("650484"),
-                u = n("945330"),
+                u = n("650484"),
+                o = n("945330"),
                 c = n("829805"),
                 d = n("425480"),
                 f = n("782340"),
@@ -480,7 +480,7 @@
                             className: p.closeContainer,
                             onClick: () => n(),
                             "aria-label": f.default.Messages.CLOSE,
-                            children: (0, i.jsx)(u.default, {
+                            children: (0, i.jsx)(o.default, {
                                 className: p.closeIcon
                             })
                         })]
@@ -488,27 +488,29 @@
                 },
                 _ = e => {
                     let {
-                        listing: t,
-                        application: n,
-                        title: r,
-                        subtitle: l,
-                        description: a
+                        icon: t,
+                        storeListingBenefits: n,
+                        skuBenefits: r,
+                        application: l,
+                        title: a,
+                        subtitle: s,
+                        description: u
                     } = e;
-                    return null == n ? null : (0, i.jsx)("div", {
+                    return null == l ? null : (0, i.jsx)("div", {
                         className: p.confirmationContainer,
                         children: (0, i.jsxs)(c.ApplicationBenefitsModalContent, {
                             children: [(0, i.jsx)(c.ApplicationBenefitsModalIcon, {
-                                application: n,
-                                asset: t.image_asset
+                                application: l,
+                                asset: t
                             }), (0, i.jsx)(c.ApplicationBenefitsModalHeading, {
-                                children: r
+                                children: a
                             }), (0, i.jsx)(c.ApplicationBenefitsModalDivider, {}), (0, i.jsx)(c.ApplicationBenefitsModalDescription, {
-                                title: l,
-                                description: a
+                                title: s,
+                                description: u
                             }), (0, i.jsx)(c.ApplicationBenefitsModalBenefits, {
-                                applicationId: t.application_id,
-                                storeListingBenefits: t.store_listing_benefits,
-                                skuBenefits: t.sku_benefits.benefits
+                                applicationId: l.id,
+                                storeListingBenefits: n,
+                                skuBenefits: r
                             })]
                         })
                     })
@@ -516,7 +518,7 @@
 
             function I(e) {
                 let {
-                    listing: t,
+                    tierName: t,
                     onConfirm: n,
                     subscription: l
                 } = e;
@@ -532,7 +534,7 @@
                         variant: "heading-xl/extrabold",
                         color: "header-primary",
                         children: f.default.Messages.APPLICATION_SUBSCRIPTION_PURCHASE_CONFIRMATION_TITLE.format({
-                            tier: t.name
+                            tier: t
                         })
                     }), (0, i.jsx)(r.Text, {
                         className: p.confirmationSubtitle,
@@ -541,7 +543,7 @@
                         children: f.default.Messages.APPLICATION_SUBSCRIPTION_PURCHASE_CONFIRMATION_SUBTITLE.format({
                             timestamp: null == l ? void 0 : l.currentPeriodEnd
                         })
-                    }), (0, i.jsx)(o.PaymentPortalFooter, {
+                    }), (0, i.jsx)(u.PaymentPortalFooter, {
                         children: (0, i.jsx)(s.default, {
                             onPrimary: n,
                             primaryCTA: s.CTAType.CONTINUE,
@@ -567,8 +569,8 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("430568"),
-                o = n("271560"),
-                u = n("692105"),
+                u = n("271560"),
+                o = n("692105"),
                 c = n("888266");
 
             function d(e) {
@@ -595,8 +597,8 @@
                     benefit: t,
                     className: n,
                     emojiContainerClassName: r,
-                    showsDescription: o = !0,
-                    nameTextVariant: u = "text-md/medium",
+                    showsDescription: u = !0,
+                    nameTextVariant: o = "text-md/medium",
                     nameTextColor: d = "header-primary"
                 } = e;
                 return (0, i.jsxs)("div", {
@@ -611,11 +613,11 @@
                     }), (0, i.jsxs)("div", {
                         className: c.infoContainer,
                         children: [(0, i.jsx)(a.Text, {
-                            variant: u,
+                            variant: o,
                             color: d,
                             className: c.name,
                             children: t.name
-                        }), o && (0, i.jsx)(a.Text, {
+                        }), u && (0, i.jsx)(a.Text, {
                             color: "interactive-normal",
                             variant: "text-sm/normal",
                             children: t.description
@@ -635,15 +637,15 @@
                     nameTextColor: S = "header-primary"
                 } = e;
                 if (null != r.icon) switch (r.icon.type) {
-                    case u.IconType.STORE_ASSET:
-                        let m = (0, o.getAssetURL)(n, r.icon.store_asset_id);
+                    case o.IconType.STORE_ASSET:
+                        let m = (0, u.getAssetURL)(n, r.icon.store_asset_id);
                         t = (0, i.jsx)("img", {
                             src: m,
                             alt: "",
                             className: "emoji"
                         });
                         break;
-                    case u.IconType.EMOJI:
+                    case o.IconType.EMOJI:
                         t = (0, i.jsx)(s.default, {
                             emojiName: r.icon.emoji
                         })
@@ -713,8 +715,8 @@
                 l = n("627445"),
                 a = n.n(l),
                 s = n("446674"),
-                o = n("913144"),
-                u = n("775433"),
+                u = n("913144"),
+                o = n("775433"),
                 c = n("685665"),
                 d = n("598981"),
                 f = n("846286"),
@@ -734,8 +736,8 @@
                             groupListingId: g,
                             analyticsLocation: A,
                             showBenefitsFirst: N,
-                            onComplete: b,
-                            forcesTransitionToGuild: v
+                            onComplete: v,
+                            forcesTransitionToGuild: b
                         } = e,
                         L = null == l ? void 0 : l.subscription_plans[0],
                         O = null == l ? void 0 : l.application_id,
@@ -767,8 +769,8 @@
                     V ? W ? z && null != R && (n = T.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
                         tierName: R.name
                     })) : n = T.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = T.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
-                        x && null != F && D && o.default.wait(() => {
-                            (0, u.fetchSubscriptionPlansForSKU)(F)
+                        x && null != F && D && u.default.wait(() => {
+                            (0, o.fetchSubscriptionPlansForSKU)(F)
                         })
                     }, [x, F, D]);
                     let Q = r.useCallback(() => {
@@ -791,8 +793,8 @@
                                 listing: l,
                                 application: y,
                                 showBenefitsFirst: N,
-                                onComplete: b,
-                                forcesTransitionToGuild: v
+                                onComplete: v,
+                                forcesTransitionToGuild: b
                             })
                         };
                         !W && U ? (0, I.confirmNoSharedServerSubscribeWarningModal)({
@@ -800,7 +802,7 @@
                             onConfirm: e,
                             onCancel: () => {}
                         }) : e()
-                    }, [x, l, L, G, y, C, W, U, H, A, M, N, w, b, v]);
+                    }, [x, l, L, G, y, C, W, U, H, A, M, N, w, v, b]);
                     return {
                         openModal: Q,
                         canOpenModal: Z,
@@ -888,29 +890,29 @@
                 l = n("210721"),
                 a = n("78345"),
                 s = n("53253"),
-                o = n("105097"),
-                u = n("659632"),
+                u = n("105097"),
+                o = n("659632"),
                 c = n("642906"),
                 d = n("782340");
             let f = a.PremiumGiftStyles.STANDARD_BOX,
                 p = void 0,
-                [h, S, m] = (0, o.default)();
+                [h, S, m] = (0, u.default)();
 
             function _(e) {
                 let {
                     isGift: t = !1,
                     giftRecipient: n,
-                    giftMessage: o,
+                    giftMessage: u,
                     children: S
                 } = e, {
                     selectedSkuId: m
-                } = (0, c.usePaymentContext)(), [_, I] = r.useState(n), [E, T] = r.useState(), [C, g] = r.useState(!1), A = (0, u.shouldShowCustomGiftExperience)(_), N = (0, s.useIsSeasonalGiftingActive)(), {
-                    enabled: b
+                } = (0, c.usePaymentContext)(), [_, I] = r.useState(n), [E, T] = r.useState(), [C, g] = r.useState(!1), A = (0, o.shouldShowCustomGiftExperience)(_), N = (0, s.useIsSeasonalGiftingActive)(), {
+                    enabled: v
                 } = s.default.useExperiment({
                     location: "PaymentContextProvider"
                 }, {
                     autoTrackExposure: A && N
-                }), [v, L] = r.useState(A ? b && N ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [O, P] = r.useState(t && u.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, u.getGiftExperience)(_)) ? d.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : o), [x, F] = r.useState(void 0), [R, y] = r.useState(void 0), k = (0, u.useGetGiftCode)(m, t), [G, H] = r.useState(!1), [M, j] = r.useState(!1), [w, D] = r.useState(), U = r.useCallback(e => {
+                }), [b, L] = r.useState(A ? v && N ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [O, P] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(_)) ? d.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [x, F] = r.useState(void 0), [R, y] = r.useState(void 0), k = (0, o.useGetGiftCode)(m, t), [G, H] = r.useState(!1), [M, j] = r.useState(!1), [w, D] = r.useState(), U = r.useCallback(e => {
                     let {
                         onSubscriptionConfirmation: t
                     } = e;
@@ -924,7 +926,7 @@
                     value: {
                         isGift: t,
                         giftCode: k,
-                        giftMessage: o,
+                        giftMessage: u,
                         giftRecipient: _,
                         setGiftRecipient: I,
                         giftRecipientError: E,
@@ -937,7 +939,7 @@
                         setEmojiConfetti: y,
                         customGiftMessage: O,
                         setCustomGiftMessage: P,
-                        selectedGiftStyle: v,
+                        selectedGiftStyle: b,
                         setSelectedGiftStyle: L,
                         sendGiftMessage: U,
                         hasSentMessage: G,
@@ -964,8 +966,8 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("316718"),
-                o = n("55620"),
-                u = n("524503"),
+                u = n("55620"),
+                o = n("524503"),
                 c = n("186211"),
                 d = n("90592"),
                 f = n("651057"),
@@ -979,8 +981,8 @@
                     activeSubscription: r,
                     analyticsObject: l,
                     analyticsLocation: s,
-                    analyticsLocations: o,
-                    analyticsSubscriptionType: u,
+                    analyticsLocations: u,
+                    analyticsSubscriptionType: o,
                     renderHeader: c,
                     planGroup: d,
                     skuId: f,
@@ -1015,10 +1017,10 @@
                                 ...n,
                                 initialPlanId: t,
                                 skuId: f,
-                                analyticsLocations: o,
+                                analyticsLocations: u,
                                 analyticsObject: l,
                                 analyticsLocation: s,
-                                analyticsSubscriptionType: u,
+                                analyticsSubscriptionType: o,
                                 renderHeader: c,
                                 planGroup: d,
                                 reviewWarningMessage: m,
@@ -1042,9 +1044,9 @@
             }, I = async e => {
                 let t = c.default.getSubscriptionGroupListingForApplication(e);
                 if (null != t) return t;
-                let n = await (0, o.fetchAllStoreListingsForApplication)(e),
+                let n = await (0, u.fetchAllStoreListingsForApplication)(e),
                     i = n.find(e => e.sku.type === S.SKUTypes.SUBSCRIPTION_GROUP);
-                l(null != i, "Failed to find subscription store listing"), await (0, u.fetchAllSubscriptionListingsDataForApplication)(e, null == i ? void 0 : i.id);
+                l(null != i, "Failed to find subscription store listing"), await (0, o.fetchAllSubscriptionListingsDataForApplication)(e, null == i ? void 0 : i.id);
                 let r = c.default.getSubscriptionGroupListingForApplication(e);
                 return l(null != r, "Failed to find subscription group listing"), r
             }, E = async (e, t) => {
@@ -1060,7 +1062,7 @@
                     analyticsLocationObject: r,
                     analyticsLocations: a,
                     renderHeader: s
-                } = e, o = await _(t), u = await I(t), c = (0, d.getPayableSubscriptionListing)(u);
+                } = e, u = await _(t), o = await I(t), c = (0, d.getPayableSubscriptionListing)(o);
                 l(null != c, "Failed to find subscription listing");
                 let f = (0, d.isApplicationUserSubscription)(c.sku_flags);
                 l(f, "Guild application subscriptions unsupported!"), l(c.published, "Subscription listing not published"), await E(t, n);
@@ -1071,12 +1073,12 @@
                     analyticsLocationObject: r,
                     analyticsSubscriptionType: S.SubscriptionTypes.APPLICATION,
                     renderHeader: s,
-                    planGroup: u.subscription_listings_ids,
+                    planGroup: o.subscription_listings_ids,
                     skuId: n,
                     guildId: null,
                     eligibleApplicationSubscriptionGuilds: [],
                     showBenefitsFirst: !1,
-                    application: o,
+                    application: u,
                     listing: c
                 };
                 m(p)
@@ -1096,8 +1098,8 @@
             n("884691");
             var a = n("77078"),
                 s = n("145131"),
-                o = n("181114"),
-                u = n("376641"),
+                u = n("181114"),
+                o = n("376641"),
                 c = n("782340"),
                 d = n("198699");
             (i = r || (r = {}))[i.CONTINUE = 0] = "CONTINUE", i[i.UPGRADE = 1] = "UPGRADE", i[i.PURCHASE = 2] = "PURCHASE";
@@ -1121,7 +1123,7 @@
                     align: s.default.Align.CENTER,
                     children: [(() => {
                         if (null == r || null == p) return null;
-                        let e = 2 === r ? o.default : a.Button,
+                        let e = 2 === r ? u.default : a.Button,
                             t = {
                                 innerClassName: d.button,
                                 type: f,
@@ -1150,7 +1152,7 @@
                         look: a.Button.Looks.LINK,
                         onClick: E,
                         children: I
-                    }), (0, l.jsx)(u.default, {}), null == t ? null : (0, l.jsx)(a.Button, {
+                    }), (0, l.jsx)(o.default, {}), null == t ? null : (0, l.jsx)(a.Button, {
                         className: d.back,
                         color: a.Button.Colors.PRIMARY,
                         look: a.Button.Looks.LINK,
@@ -1175,20 +1177,20 @@
                 l = n.n(r),
                 a = n("77078"),
                 s = n("600785"),
-                o = n("782340"),
-                u = n("980638"),
+                u = n("782340"),
+                o = n("980638"),
                 c = n("173791");
 
             function d() {
                 return (0, i.jsxs)("div", {
-                    className: l(u.paymentModalLockIcon, c.flex, c.alignCenter),
+                    className: l(o.paymentModalLockIcon, c.flex, c.alignCenter),
                     children: [(0, i.jsx)(s.default, {
-                        className: u.lockIcon,
+                        className: o.lockIcon,
                         width: 18,
                         height: 18
                     }), (0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
-                        children: o.default.Messages.BILLING_SECURE
+                        children: u.default.Messages.BILLING_SECURE
                     })]
                 })
             }
@@ -1209,8 +1211,8 @@
             var i, r, l = n("627445"),
                 a = n.n(l),
                 s = n("450911"),
-                o = n("819689"),
-                u = n("884351"),
+                u = n("819689"),
+                o = n("884351"),
                 c = n("42203"),
                 d = n("659632"),
                 f = n("78345");
@@ -1472,7 +1474,7 @@
                             return t
                         }),
                         i = (0, d.getGiftCodeURL)(t);
-                    return o.default.sendMessage(n.id, u.default.parse(n, i), void 0, {
+                    return u.default.sendMessage(n.id, o.default.parse(n, i), void 0, {
                         isGiftLinkSentOnBehalfOfUser: !0
                     })
                 }
@@ -1495,8 +1497,8 @@
                 l = n.n(r),
                 a = n("862337"),
                 s = n("296892");
-            let o = new Date("2024-01-04T07:59:59.000Z"),
-                u = l(o),
+            let u = new Date("2024-01-04T07:59:59.000Z"),
+                o = l(u),
                 c = (0, s.default)({
                     id: "2023-11_seasonal_gifting",
                     label: "Seasonal Gifting 2023",
@@ -1529,13 +1531,13 @@
                 });
 
             function f() {
-                let [e, t] = i.useState(() => u.isAfter(Date.now()));
+                let [e, t] = i.useState(() => o.isAfter(Date.now()));
                 return i.useEffect(() => {
                     let n = new a.Timeout,
                         i = () => {
-                            let e = Math.min(u.diff(Date.now(), "millisecond"), 864e5);
+                            let e = Math.min(o.diff(Date.now(), "millisecond"), 864e5);
                             null == n || n.start(e, () => {
-                                u.isBefore(Date.now()) ? t(!1) : i()
+                                o.isBefore(Date.now()) ? t(!1) : i()
                             })
                         };
                     return e && i(), () => n.stop()
@@ -1547,10 +1549,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 fetchApplicationsShelf: function() {
-                    return o
+                    return u
                 },
                 fetchPrivateChannelIntegrations: function() {
-                    return u
+                    return o
                 },
                 deletePrivateChannelIntegration: function() {
                     return c
@@ -1564,7 +1566,7 @@
                 s = n("49111");
             n("843455"), n("782340");
 
-            function o() {
+            function u() {
                 a.default.getApplicationsShelfFetchState() === a.FetchState.NOT_FETCHED && (l.default.dispatch({
                     type: "APPLICATIONS_SHELF_FETCH_START"
                 }), r.default.get(s.Endpoints.APPLICATIONS_SHELF).then(e => l.default.dispatch({
@@ -1575,7 +1577,7 @@
                 })))
             }
 
-            function u(e) {
+            function o(e) {
                 let t = new i.default(1e3, 5e3);
                 l.default.dispatch({
                     type: "FETCH_PRIVATE_CHANNEL_INTEGRATIONS_START",
@@ -1609,7 +1611,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 usePrivateChannelIntegrationState: function() {
-                    return u
+                    return o
                 }
             }), n("222007");
             var i = n("884691"),
@@ -1617,35 +1619,35 @@
                 l = n("201155"),
                 a = n("21121"),
                 s = n("970755"),
-                o = n("140596");
+                u = n("140596");
 
-            function u(e) {
+            function o(e) {
                 let {
                     channelId: t
                 } = e;
                 (0, a.useInMainTabsExperiment)();
                 let n = (0, l.useShowApplicationInGDM)(t),
                     {
-                        installedIntegrations: u,
+                        installedIntegrations: o,
                         applicationsShelf: c,
                         integrationsFetchState: d,
                         applicationsShelfFetchState: f
-                    } = (0, r.useStateFromStoresObject)([o.default], () => ({
-                        installedIntegrations: o.default.getIntegrations(t),
-                        applicationsShelf: o.default.getApplicationsShelf(),
-                        integrationsFetchState: o.default.getIntegrationsFetchState(t),
-                        applicationsShelfFetchState: o.default.getApplicationsShelfFetchState()
+                    } = (0, r.useStateFromStoresObject)([u.default], () => ({
+                        installedIntegrations: u.default.getIntegrations(t),
+                        applicationsShelf: u.default.getApplicationsShelf(),
+                        integrationsFetchState: u.default.getIntegrationsFetchState(t),
+                        applicationsShelfFetchState: u.default.getApplicationsShelfFetchState()
                     }));
                 i.useEffect(() => {
-                    n && ((d === o.FetchState.NOT_FETCHED || d === o.FetchState.FETCH_FAILED) && (0, s.fetchPrivateChannelIntegrations)(t), (f === o.FetchState.NOT_FETCHED || f === o.FetchState.FETCH_FAILED) && (0, s.fetchApplicationsShelf)())
+                    n && ((d === u.FetchState.NOT_FETCHED || d === u.FetchState.FETCH_FAILED) && (0, s.fetchPrivateChannelIntegrations)(t), (f === u.FetchState.NOT_FETCHED || f === u.FetchState.FETCH_FAILED) && (0, s.fetchApplicationsShelf)())
                 }, [n, t, d, f]);
-                let p = new Set(u.map(e => e.application.id)),
+                let p = new Set(o.map(e => e.application.id)),
                     h = c.filter(e => !p.has(e.id));
                 return {
-                    installedIntegrations: u,
+                    installedIntegrations: o,
                     availableApplications: h,
                     applicationsShelf: c,
-                    fetched: d !== o.FetchState.NOT_FETCHED && d !== o.FetchState.FETCHING && f !== o.FetchState.NOT_FETCHED && f !== o.FetchState.FETCHING,
+                    fetched: d !== u.FetchState.NOT_FETCHED && d !== u.FetchState.FETCHING && f !== u.FetchState.NOT_FETCHED && f !== u.FetchState.FETCHING,
                     appsInGDMEnabled: n
                 }
             }
@@ -1663,9 +1665,9 @@
             var i, r, l = n("446674"),
                 a = n("913144"),
                 s = n("653047"),
-                o = n("946028");
+                u = n("946028");
             (r = i || (i = {}))[r.NOT_FETCHED = 0] = "NOT_FETCHED", r[r.FETCHING = 1] = "FETCHING", r[r.FETCHED = 2] = "FETCHED", r[r.FETCH_FAILED = 3] = "FETCH_FAILED";
-            let u = new Map,
+            let o = new Map,
                 c = new Map,
                 d = [],
                 f = 0,
@@ -1673,14 +1675,14 @@
             class h extends l.default.Store {
                 getIntegrations(e) {
                     var t;
-                    return null !== (t = u.get(e)) && void 0 !== t ? t : p
+                    return null !== (t = o.get(e)) && void 0 !== t ? t : p
                 }
                 getIntegration(e, t) {
                     var n;
-                    return null === (n = u.get(e)) || void 0 === n ? void 0 : n.find(e => e.application.id === t)
+                    return null === (n = o.get(e)) || void 0 === n ? void 0 : n.find(e => e.application.id === t)
                 }
                 getAllIntegrations() {
-                    return u
+                    return o
                 }
                 getIntegrationsFetchState(e) {
                     var t;
@@ -1700,10 +1702,10 @@
             h.displayName = "PrivateChannelIntegrationStore";
             let m = new h(a.default, {
                 LOGOUT() {
-                    u.clear()
+                    o.clear()
                 },
                 CONNECTION_OPEN() {
-                    u.clear(), c.clear()
+                    o.clear(), c.clear()
                 },
                 CHANNEL_SELECT(e) {
                     let {
@@ -1728,14 +1730,14 @@
                     let {
                         channelId: t
                     } = e;
-                    u.set(t, null), c.set(t, 1)
+                    o.set(t, null), c.set(t, 1)
                 },
                 FETCH_PRIVATE_CHANNEL_INTEGRATIONS_SUCCESS(e) {
                     let {
                         channelId: t,
                         integrations: n
                     } = e;
-                    u.set(t, S(n.map(o.createPrivateChannelIntegration))), c.set(t, 2)
+                    o.set(t, S(n.map(u.createPrivateChannelIntegration))), c.set(t, 2)
                 },
                 FETCH_PRIVATE_CHANNEL_INTEGRATIONS_FAIL(e) {
                     let {
@@ -1746,32 +1748,32 @@
                 PRIVATE_CHANNEL_INTEGRATION_CREATE(e) {
                     let {
                         integration: t
-                    } = e, n = u.get(t.channel_id);
+                    } = e, n = o.get(t.channel_id);
                     if (null == n) return !1;
-                    u.set(t.channel_id, S([...n, (0, o.createPrivateChannelIntegration)(t)]))
+                    o.set(t.channel_id, S([...n, (0, u.createPrivateChannelIntegration)(t)]))
                 },
                 PRIVATE_CHANNEL_INTEGRATION_UPDATE(e) {
                     let {
                         integration: t
-                    } = e, n = u.get(t.channel_id);
+                    } = e, n = o.get(t.channel_id);
                     if (null == n) return !1;
-                    let i = (0, o.createPrivateChannelIntegration)(t),
+                    let i = (0, u.createPrivateChannelIntegration)(t),
                         r = n.findIndex(e => e.application.id === i.application.id),
-                        l = [...n]; - 1 === r ? l.push(i) : l[r] = i, u.set(i.channel_id, S(l))
+                        l = [...n]; - 1 === r ? l.push(i) : l[r] = i, o.set(i.channel_id, S(l))
                 },
                 PRIVATE_CHANNEL_INTEGRATION_DELETE(e) {
                     let {
                         channelId: t,
                         applicationId: n
-                    } = e, i = u.get(t);
+                    } = e, i = o.get(t);
                     if (null == i) return !1;
-                    u.set(t, i.filter(e => e.application.id !== n))
+                    o.set(t, i.filter(e => e.application.id !== n))
                 },
                 CHANNEL_DELETE(e) {
                     let {
                         channel: t
                     } = e;
-                    return u.delete(t.id)
+                    return o.delete(t.id)
                 }
             });
             var _ = m
@@ -1845,8 +1847,8 @@
                 l = n("913144"),
                 a = n("915639"),
                 s = n("928460"),
-                o = n("449008");
-            let u = {},
+                u = n("449008");
+            let o = {},
                 c = {},
                 d = {},
                 f = {};
@@ -1854,9 +1856,9 @@
             function p(e) {
                 let t = e.id,
                     n = e.sku.id,
-                    i = u[t],
+                    i = o[t],
                     r = s.default.createFromServer(e);
-                !(null != i && !i.isSlimDirectoryVersion() && r.isSlimDirectoryVersion()) && (!1 === e.published ? (null == d[n] && (d[n] = new Set), d[n].add(t)) : f[n] = t, u[t] = r)
+                !(null != i && !i.isSlimDirectoryVersion() && r.isSlimDirectoryVersion()) && (!1 === e.published ? (null == d[n] && (d[n] = new Set), d[n].add(t)) : f[n] = t, o[t] = r)
             }
 
             function h(e, t) {
@@ -1871,7 +1873,7 @@
             }
 
             function m() {
-                u = {}, f = {}, d = {}, c = {}
+                o = {}, f = {}, d = {}, c = {}
             }
 
             function _() {
@@ -1883,15 +1885,15 @@
                     this.waitFor(a.default), this.syncWith([a.default], _), i = a.default.locale
                 }
                 get(e) {
-                    return u[e]
+                    return o[e]
                 }
                 getForSKU(e, t) {
                     let n = f[e];
-                    return null != t ? c[h(t, e)] : null != n ? u[n] : null
+                    return null != t ? c[h(t, e)] : null != n ? o[n] : null
                 }
                 getUnpublishedForSKU(e) {
                     let t = d[e];
-                    return null == t ? [] : Array.from(t).map(e => u[e]).filter(o.isNotNullish)
+                    return null == t ? [] : Array.from(t).map(e => o[e]).filter(u.isNotNullish)
                 }
                 getForChannel(e, t) {
                     return c[h(e, t)]
@@ -1979,8 +1981,8 @@
             n("884691");
             var a = n("414456"),
                 s = n.n(a),
-                o = n("75196"),
-                u = n("741460");
+                u = n("75196"),
+                o = n("741460");
             (r = i || (i = {})).LEFT = "LEFT", r.RIGHT = "RIGHT", r.UP = "UP", r.DOWN = "DOWN", r.UP_LEFT = "UP_LEFT", r.DOWN_RIGHT = "DOWN_RIGHT";
             let c = e => {
                 let {
@@ -1994,23 +1996,23 @@
                     ...f
                 } = e;
                 return (0, l.jsxs)("svg", {
-                    ...(0, o.default)(f),
+                    ...(0, u.default)(f),
                     width: t,
                     height: n,
                     className: s(c, function(e) {
                         switch (e) {
                             case "LEFT":
-                                return u.left;
+                                return o.left;
                             case "RIGHT":
-                                return u.right;
+                                return o.right;
                             case "UP":
                                 return null;
                             case "DOWN":
-                                return u.down;
+                                return o.down;
                             case "UP_LEFT":
-                                return u.upLeft;
+                                return o.upLeft;
                             case "DOWN_RIGHT":
-                                return u.downRight;
+                                return o.downRight;
                             default:
                                 throw Error("Invalid Direction ".concat(e))
                         }
@@ -2104,7 +2106,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 canInstallApplication: function() {
-                    return u
+                    return o
                 },
                 installApplication: function() {
                     return c
@@ -2115,9 +2117,9 @@
                 l = n("33942"),
                 a = n("599110"),
                 s = n("128259"),
-                o = n("49111");
+                u = n("49111");
 
-            function u(e, t, n) {
+            function o(e, t, n) {
                 return null != t || null != n
             }
 
@@ -2125,13 +2127,13 @@
                 let {
                     applicationId: t,
                     customInstallUrl: n,
-                    installParams: u,
+                    installParams: o,
                     guildId: c,
                     channelId: d,
                     disableGuildSelect: f,
                     source: p
                 } = e;
-                if (null != n) return a.default.track(o.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                if (null != n) return a.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
                     application_id: t,
                     guild_id: c,
                     auth_type: "custom_url",
@@ -2140,7 +2142,7 @@
                 }), (0, s.handleClick)({
                     href: n
                 });
-                null != u && (a.default.track(o.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                null != o && (a.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
                     application_id: t,
                     guild_id: c,
                     auth_type: "in_app",
@@ -2149,13 +2151,13 @@
                 }), (0, l.openOAuth2Modal)({
                     guildId: c,
                     clientId: t,
-                    scopes: u.scopes,
+                    scopes: o.scopes,
                     channelId: d,
                     disableGuildSelect: f,
-                    permissions: null != u.permissions ? r.default.deserialize(u.permissions) : void 0
+                    permissions: null != o.permissions ? r.default.deserialize(o.permissions) : void 0
                 }))
             }
         }
     }
 ]);
-//# sourceMappingURL=62768.3bd3b009dc2945b07d60.js.map
+//# sourceMappingURL=62768.3085d0fb5594c5f25f09.js.map
