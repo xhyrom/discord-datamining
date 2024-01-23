@@ -16798,16 +16798,15 @@
             "use strict";
             e.exports = {
                 container: "container__11e4a",
-                contentContainer: "contentContainer__30797",
+                content: "content_ab9920",
                 cta: "cta_b6fbfa",
                 img: "img__4deec",
                 imgBroken: "imgBroken__954ba",
-                imgContainer: "imgContainer_c8dc58",
+                imgWrapper: "imgWrapper_b60dfd",
                 info: "info__0cbb1",
-                join: "join_b45c53",
+                mediumLayout: "mediumLayout_e2c0a5",
                 outerContainer: "outerContainer_ee638d",
-                rowLayout: "rowLayout__5ef33",
-                stackedLayout: "stackedLayout__7b0e6"
+                smallLayout: "smallLayout__37dca"
             }
         },
         50435: function(e, t, o) {
