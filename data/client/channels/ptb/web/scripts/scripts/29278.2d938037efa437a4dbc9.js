@@ -29058,14 +29058,15 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return a
+                    return o
                 }
             });
             var i = n("37983");
             n("884691");
             var s = n("551042"),
                 r = n("135230"),
-                a = {
+                a = n("782340"),
+                o = {
                     show(e) {
                         let {
                             title: t,
@@ -29098,7 +29099,21 @@
                             onCloseCallback: c
                         })
                     },
-                    close() {}
+                    close() {},
+                    confirm(e) {
+                        return new Promise(t => {
+                            this.show({
+                                onConfirm() {
+                                    t(!0)
+                                },
+                                cancelText: a.default.Messages.CANCEL,
+                                onCancel() {
+                                    t(!1)
+                                },
+                                ...e
+                            })
+                        })
+                    }
                 }
         },
         452453: function(e, t, n) {
@@ -118260,7 +118275,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260768"
+                                build_number: "260778"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134349,4 +134364,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.12f50a9f872b920af97f.js.map
+//# sourceMappingURL=29278.2d938037efa437a4dbc9.js.map
