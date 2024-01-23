@@ -2759,6 +2759,9 @@
         181114: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                ShineSizes: function() {
+                    return l
+                },
                 Shine: function() {
                     return p
                 },
@@ -3827,4 +3830,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65225.45a68e44217bdc89eb40.js.map
+//# sourceMappingURL=65225.de79c418bd5f0874cf53.js.map

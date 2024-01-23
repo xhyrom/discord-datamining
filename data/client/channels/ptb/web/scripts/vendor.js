@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87885,7 +87885,7 @@
                     let s = null === (e = _.default.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme;
                     if (null != s) return s;
                     let a = null === (t = g.default.settings.appearance) || void 0 === t ? void 0 : t.theme;
-                    return a === r.Theme.LIGHT ? E.ThemeTypes.LIGHT : E.ThemeTypes.DARK
+                    return null == a ? v : a === r.Theme.LIGHT ? E.ThemeTypes.LIGHT : E.ThemeTypes.DARK
                 }();
                 return e
             }
@@ -118358,7 +118358,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260518"
+                                build_number: "260555"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -126574,7 +126574,7 @@
                     let r = s.createReplayConnection("default", (e, n) => {
                         let r = null != s.getCodecCapabilities ? s.getCodecCapabilities : s.getSupportedVideoCodecs;
                         i.on(c.BaseConnectionEvent.Stats, i.handleStats), i.conn.setOnVideoCallback(i.handleVideo), r(e => {
-                            let n = (0, f.getExperimentCodecs)(i.experimentFlags);
+                            let n = (0, f.getExperimentCodecs)(i.experimentFlags, p.MediaEngineContextTypes.DEFAULT);
                             i.codecs = [{
                                 type: "audio",
                                 name: p.Codecs.OPUS,
@@ -126622,7 +126622,7 @@
                             port: l
                         } = r;
                         this.logger.info("Connected with local address ".concat(o, ":").concat(l, " and protocol: ").concat(a)), i(i => {
-                            let s = (0, f.getExperimentCodecs)(this.experimentFlags);
+                            let s = (0, f.getExperimentCodecs)(this.experimentFlags, this.context);
                             this.codecs = [{
                                 type: "audio",
                                 name: p.Codecs.OPUS,
@@ -129021,21 +129021,21 @@
                 }), i
             }
 
-            function a(e) {
-                let t = [];
-                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? t.unshift({
+            function a(e, t) {
+                let n = [];
+                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? n.unshift({
                     name: "H265",
                     encode: !0,
                     decode: !0
-                }) : e.has(i.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT) && t.unshift({
+                }) : e.has(i.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT) && t === i.MediaEngineContextTypes.STREAM && n.unshift({
                     name: "H265",
                     encode: !1,
                     decode: !0
-                }), e.has(i.ExperimentFlags.SIGNAL_AV1_SUPPORT) && t.unshift({
+                }), e.has(i.ExperimentFlags.SIGNAL_AV1_SUPPORT) && n.unshift({
                     name: "AV1",
                     encode: !0,
                     decode: !0
-                }), t
+                }), n
             }
 
             function o(e, t) {
@@ -134447,4 +134447,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.d05e4b00423378f242aa.js.map
+//# sourceMappingURL=29278.101f7fcefda2da27f6e9.js.map
