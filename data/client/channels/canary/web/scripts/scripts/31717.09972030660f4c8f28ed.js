@@ -226,12 +226,12 @@
                             message: ed.default.Messages.SENDER_BLOCKED_MEDIA_BOT_GUILD_MESSAGE,
                             messageName: "BOT_GUILD_EXPLICIT_CONTENT"
                         })), i = (0, O.createNonce)();
-                        null != t && t.length > 0 && r.default.dispatch({
+                        eg.sendBotMessage(e, l, s, i), null != t && t.length > 0 && r.default.dispatch({
                             type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE",
                             messageId: i,
                             channelId: e,
                             attachments: t
-                        }), eg.sendBotMessage(e, l, s, i)
+                        })
                     },
                     truncateMessages(e, t, n) {
                         r.default.dispatch({
@@ -3255,4 +3255,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.8a6ec3611da42044cb32.js.map
+//# sourceMappingURL=31717.09972030660f4c8f28ed.js.map

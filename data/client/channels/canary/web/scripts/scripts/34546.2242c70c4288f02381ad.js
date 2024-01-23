@@ -16315,6 +16315,8 @@
                 SENDER_BLOCKED_MEDIA_MARK_FALSE_POSITIVE: "Mark as not sensitive",
                 SENDER_BLOCKED_MEDIA_BOT_GUILD_MESSAGE: "Your message could not be sent. It may contain explicit media, which has been blocked by the server.",
                 SENDER_BLOCKED_MEDIA_BOT_DMS_MESSAGE: "Your message could not be sent. It may contain sensitive media, which has been blocked by someone in this conversation.",
+                SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_HEADER: "Unable to Mark as Not Sensitive",
+                SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_BODY: "We don't store blocked media permanently. Since this media was uploaded a while ago, the option to mark it as not sensitive has expired.",
                 STRANGER_DANGER_BANNER_HEADER: "Unwanted message?",
                 STRANGER_DANGER_BANNER_DESCRIPTION: "If you don't want to chat with this person, you can block or mute them.",
                 STRANGER_DANGER_BANNER_MORE_TIPS: "More tips",
@@ -18053,7 +18055,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260670", ", Version Hash: ").concat("2c82e17dd5701fd733ea737a299cf0b58f48aad2")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260683", ", Version Hash: ").concat("d2d7d6b6900a72a6cb395f4fdc5274fdfa1bb16b")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20287,8 +20289,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "260670", "260670"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260670")), _ = 0), _
+                let _ = parseInt((e = "260683", "260683"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260683")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -34922,4 +34924,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.800c00258658d274044d.js.map
+//# sourceMappingURL=34546.2242c70c4288f02381ad.js.map
