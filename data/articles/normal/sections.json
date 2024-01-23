@@ -1,5 +1,21 @@
 [
   {
+    "id": 20782794581527,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/20782794581527.json",
+    "html_url": "https://support.discord.com/hc/en-us/sections/20782794581527-Activities",
+    "category_id": 115000193752,
+    "position": 0,
+    "sorting": "title",
+    "created_at": "2024-01-23T02:14:47Z",
+    "name": "Activities",
+    "description": "",
+    "locale": "en-us",
+    "source_locale": "en-us",
+    "outdated": false,
+    "parent_section_id": null,
+    "theme_template": "section_page"
+  },
+  {
     "id": 6509209701655,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/6509209701655.json",
     "html_url": "https://support.discord.com/hc/en-us/sections/6509209701655-Applications",
