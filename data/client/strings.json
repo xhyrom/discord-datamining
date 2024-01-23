@@ -10214,6 +10214,7 @@
   "VIEW_AS_MEMBER_ROLES_WARNING": "\"Changing roles manually may not reflect the new member experience.\"",
   "VIEW_AS_ROLES_NO_ACCESS": "\"You do not have permissions to use this feature\"",
   "VIEWING_AS_ONBOARDING_MEMBER_BACK": "\"Back to Onboarding Settings\"",
+  "SERVER_SHOP_PREVIEW_DISCLAIMER": "\"Currently viewing all server subscription tiers and products. There is a maximum of {maxTiers} tiers and {maxProducts} products that can be published at a time.\"",
   "MESSAGE_ACTION_REPLY": "\"Reply\"",
   "REPLYING_TO": "\"Replying to $[](userHook)\"",
   "REPLYING_TO_A11Y_LABEL": "\"Replying to !!{username}!!\"",
