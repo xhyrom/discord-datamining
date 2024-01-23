@@ -4632,6 +4632,13 @@
       "PUT"
     ]
   },
+  "SAFETY_HUB_SUSPENDED": {
+    "url": "/safety-hub/suspended/@me",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "INITIATE_CHANNEL_PROMPTS": {
     "url": "/initiate-prompts",
     "allowed_methods": [
