@@ -3116,7 +3116,7 @@
 }
 
 .title__746ed {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources_fdd04d:hover {
@@ -3147,8 +3147,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -26587,8 +26587,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -126408,4 +126408,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.304615ba83b63f547e8e.css.map*/
+/*# sourceMappingURL=app.e0eedbc7fb135d1942c7.css.map*/
