@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["31812"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -23834,21 +23834,28 @@
                             token: r
                         })
                     }, e => {
-                        var t;
-                        let s = null === (t = e.body) || void 0 === t ? void 0 : t.code;
-                        s === T.AbortCodes.ACCOUNT_SCHEDULED_FOR_DELETION && null != i && "" !== i ? d.default.dispatch({
+                        var t, s, r;
+                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.suspended_user_token) != null) {
+                            d.default.dispatch({
+                                type: "LOGIN_SUSPENDED_USER",
+                                suspendedUserToken: null === (r = e.body) || void 0 === r ? void 0 : r.suspended_user_token
+                            });
+                            return
+                        }
+                        let a = null === (s = e.body) || void 0 === s ? void 0 : s.code;
+                        a === T.AbortCodes.ACCOUNT_SCHEDULED_FOR_DELETION && null != i && "" !== i ? d.default.dispatch({
                             type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION",
                             credentials: {
                                 login: n,
                                 password: i
                             }
-                        }) : s === T.AbortCodes.ACCOUNT_DISABLED && null != i && "" !== i ? d.default.dispatch({
+                        }) : a === T.AbortCodes.ACCOUNT_DISABLED && null != i && "" !== i ? d.default.dispatch({
                             type: "LOGIN_ACCOUNT_DISABLED",
                             credentials: {
                                 login: n,
                                 password: i
                             }
-                        }) : s === T.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
+                        }) : a === T.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
                             type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED"
                         }) : d.default.dispatch({
                             type: "LOGIN_FAILURE",
@@ -23885,6 +23892,13 @@
                         })
                     }).catch(e => {
                         var t;
+                        if (null != e.body.suspended_user_token) {
+                            d.default.dispatch({
+                                type: "LOGIN_SUSPENDED_USER",
+                                suspendedUserToken: e.body.suspended_user_token
+                            });
+                            return
+                        }
                         if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === T.AbortCodes.MFA_INVALID_CODE) throw Error((0, g.getInvalidMFACodeError)(l));
                         throw e
                     })
@@ -24202,7 +24216,12 @@
                         type: "SET_CONSENT_REQUIRED",
                         consentRequired: !0
                     }), A = null
-                }))
+                })),
+                closeSuspendedUser() {
+                    d.default.dispatch({
+                        type: "CLOSE_SUSPENDED_USER"
+                    })
+                }
             }
         },
         850068: function(e, t, n) {
@@ -91809,7 +91828,7 @@
             let i, s;
             n.r(t), n.d(t, {
                 default: function() {
-                    return eu
+                    return ed
                 }
             }), n("222007"), n("860677"), n("424973"), n("70102");
             var r = n("627445"),
@@ -91860,9 +91879,10 @@
                 Q = {},
                 Z = null,
                 J = null,
-                $ = null;
+                $ = null,
+                ee = null;
 
-            function ee(e) {
+            function et(e) {
                 let t = null != o.default.getToken(),
                     n = null != c.default.get(C.TOKEN_KEY);
                 N.verbose(e, {
@@ -91871,16 +91891,16 @@
                 })
             }
 
-            function et() {
+            function en() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
                 if (U = c.default.get(R), null != J) return J;
                 let t = null != U ? U : o.default.getToken();
-                !(!(0, m.isValidFingerprintRoute)() || !e && null != t || T.default.isHandoffAvailable()) && en({
+                !(!(0, m.isValidFingerprintRoute)() || !e && null != t || T.default.isHandoffAvailable()) && ei({
                     withGuildExperiments: !0
                 })
             }
 
-            function en(e) {
+            function ei(e) {
                 let {
                     withGuildExperiments: t
                 } = e, n = {}, i = p.default.getSuperPropertiesBase64();
@@ -91917,33 +91937,33 @@
                 })
             }
 
-            function ei() {
+            function es() {
                 k = U, U = null, c.default.remove(R)
             }
 
-            function es(e, t) {
-                ee("setAuthToken called."), o.default.setToken(e, t)
-            }
-
-            function er() {
-                ee("removeAuthToken called."), o.default.removeToken()
+            function er(e, t) {
+                et("setAuthToken called."), o.default.setToken(e, t)
             }
 
             function ea() {
-                F = !0, eo(), f.default.wait(() => {
+                et("removeAuthToken called."), o.default.removeToken()
+            }
+
+            function eo() {
+                F = !0, el(), f.default.wait(() => {
                     (0, m.transitionTo)(C.Routes.REGISTER)
                 })
             }
 
-            function eo(e) {
-                ee("handleLogout called."), er(), ei(), !(null == e ? void 0 : e.isSwitchingAccount) && et(), u.default.PersistedStore.clearAll({
+            function el(e) {
+                et("handleLogout called."), ea(), es(), !(null == e ? void 0 : e.isSwitchingAccount) && en(), u.default.PersistedStore.clearAll({
                     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
                     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
                 }), I.default.clearAll(), h.clear(), S.default.clearUser(), c.default.remove(D), P = null, V = (null == e ? void 0 : e.isSwitchingAccount) ? C.LoginStates.LOGGING_IN : C.LoginStates.NONE, G = C.RegistrationStates.NONE, B = "", K = "", Y = null, H = !1, z = !1, q = !1, X = {}, Q = {}
             }
-            class el extends u.default.Store {
+            class eu extends u.default.Store {
                 initialize() {
-                    P = c.default.get(D), b = c.default.get(O), $ = c.default.get("login_cache"), null == o.default.getToken() && et()
+                    P = c.default.get(D), b = c.default.get(O), $ = c.default.get("login_cache"), null == o.default.getToken() && en()
                 }
                 getEmail() {
                     return b
@@ -92047,9 +92067,12 @@
                 getWebAuthnChallenge() {
                     return Y
                 }
+                getSuspendedUserToken() {
+                    return ee
+                }
             }
-            el.displayName = "AuthenticationStore";
-            var eu = new el(f.default, {
+            eu.displayName = "AuthenticationStore";
+            var ed = new eu(f.default, {
                 CONNECTION_OPEN: function(e) {
                     var t;
                     let {
@@ -92059,7 +92082,7 @@
                         analyticsToken: r,
                         auth: a
                     } = e;
-                    ee("handleConnectionOpen called"), S.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.default)(n)), L = i, M = s, w = r, P = n.id, b = n.email, void 0 !== a && (x = a.authenticator_types), c.default.set(O, n.email), c.default.set(D, n.id)
+                    et("handleConnectionOpen called"), S.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.default)(n)), L = i, M = s, w = r, P = n.id, b = n.email, void 0 !== a && (x = a.authenticator_types), c.default.set(O, n.email), c.default.set(D, n.id)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     var t;
@@ -92069,20 +92092,20 @@
                         analyticsToken: s,
                         token: r
                     } = e;
-                    S.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.default)(n)), L = i, w = s, es(r), ei(), P = n.id, c.default.set(D, n.id)
+                    S.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.default)(n)), L = i, w = s, er(r), es(), P = n.id, c.default.set(D, n.id)
                 },
                 CONNECTION_CLOSED: function(e) {
                     let {
                         code: t
                     } = e;
-                    if (ee("handleConnectionClosed called with code ".concat(t, ".")), 4004 === t) {
+                    if (et("handleConnectionClosed called with code ".concat(t, ".")), 4004 === t) {
                         if (F || y(A.NEW_USER_AGE_GATE_MODAL_KEY) || y(A.EXISTING_USER_AGE_GATE_MODAL_KEY)) {
-                            ea();
+                            eo();
                             return
                         }
                         p.default.track(C.AnalyticEvents.APP_USER_DEAUTHENTICATED, {
                             user_id: c.default.get(D)
-                        }), eo(), setImmediate(() => (0, m.transitionTo)(C.Routes.DEFAULT_LOGGED_OUT))
+                        }), el(), setImmediate(() => (0, m.transitionTo)(C.Routes.DEFAULT_LOGGED_OUT))
                     }
                 },
                 AUTH_SESSION_CHANGE: function(e) {
@@ -92098,7 +92121,7 @@
                     let {
                         token: t
                     } = e;
-                    V = C.LoginStates.NONE, es(t), ei(), B = "", H = !1, Y = null, K = ""
+                    V = C.LoginStates.NONE, er(t), es(), B = "", H = !1, Y = null, K = ""
                 },
                 LOGIN_FAILURE: function(e) {
                     let {
@@ -92166,10 +92189,16 @@
                     let {
                         isMultiAccount: t
                     } = e;
-                    Q = {}, V = C.LoginStates.NONE, B = "", H = !1, Y = null, s = null, i = null, !t && (er(), et(!1))
+                    Q = {}, V = C.LoginStates.NONE, B = "", H = !1, Y = null, s = null, i = null, !t && (ea(), en(!1))
                 },
                 LOGIN_STATUS_RESET: function() {
                     V = C.LoginStates.NONE
+                },
+                LOGIN_SUSPENDED_USER: function(e) {
+                    let {
+                        suspendedUserToken: t
+                    } = e;
+                    ee = t, setImmediate(() => (0, m.transitionTo)(C.Routes.ACCOUNT_STANDING))
                 },
                 SET_LOGIN_CREDENTIALS: function(e) {
                     let {
@@ -92181,13 +92210,13 @@
                         password: n
                     }
                 },
-                LOGOUT: eo,
+                LOGOUT: el,
                 FINGERPRINT: function(e) {
                     let t = e.fingerprint;
                     null == U ? null != t ? (p.default.track(C.AnalyticEvents.USER_FINGERPRINT_CHANGED, {
                         old_fingerprint: null != k ? (0, l.extractId)(k) : null,
                         new_fingerprint: (0, l.extractId)(t)
-                    }), U = t, k = t, c.default.set(R, U)) : et() : null != t && U !== t && p.default.track(C.AnalyticEvents.EXTERNAL_FINGERPRINT_DROPPED, {
+                    }), U = t, k = t, c.default.set(R, U)) : en() : null != t && U !== t && p.default.track(C.AnalyticEvents.EXTERNAL_FINGERPRINT_DROPPED, {
                         fingerprint: (0, l.extractId)(U),
                         dropped_fingerprint: (0, l.extractId)(t)
                     })
@@ -92211,7 +92240,7 @@
                     let {
                         token: t
                     } = e;
-                    G = C.RegistrationStates.NONE, s = null, es(t), ei()
+                    G = C.RegistrationStates.NONE, s = null, er(t), es()
                 },
                 REGISTER_FAILURE: function(e) {
                     let {
@@ -92250,18 +92279,21 @@
                         token: t,
                         userId: n
                     } = e;
-                    ee("handleUpdateToken called"), es(t, n), ei()
+                    et("handleUpdateToken called"), er(t, n), es()
                 },
-                EXPERIMENTS_FETCH: en,
+                EXPERIMENTS_FETCH: ei,
                 CURRENT_USER_UPDATE: function(e) {
                     let {
                         user: t
                     } = e;
                     P = t.id, b = t.email, void 0 !== t.authenticator_types && (x = t.authenticator_types), c.default.set(O, t.email), c.default.set(D, t.id)
                 },
-                AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: ea,
+                AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eo,
                 CLEAR_AUTHENTICATION_ERRORS: function() {
                     Q = {}
+                },
+                CLOSE_SUSPENDED_USER: function() {
+                    ee = null, V = C.LoginStates.NONE, el(), setImmediate(() => (0, m.transitionTo)(C.Routes.DEFAULT_LOGGED_OUT))
                 }
             }, f.DispatchBand.Early)
         },
@@ -118362,7 +118394,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260606"
+                                build_number: "260617"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134451,4 +134483,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31812.a1b664cbed9bd0992771.js.map
+//# sourceMappingURL=29278.991d410ee060464341dc.js.map
