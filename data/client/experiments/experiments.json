@@ -1672,71 +1672,6 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 1789705089,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 100,
-                  "end": 200
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 200,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 1,
-              "max_count": 50
-            }
-          ]
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "hash": 1804122827,
       "holdout": {
         "name": null,
@@ -4031,56 +3966,6 @@
           "81384788765712384",
           "1073747669937299567",
           "401220874742661121"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 2080490321,
-      "holdout": {
-        "name": "2023-06_server_subscriptions_tier_templates_holdout",
-        "bucket": 0
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 300,
-                  "end": 600
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 600,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "ROLE_SUBSCRIPTIONS_ENABLED"
-              ]
-            }
-          ]
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "0": [
-          "1098695569129611454"
         ]
       },
       "overrides_formatted": []
