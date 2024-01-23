@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["42266"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -52592,139 +52592,6 @@
                 }
             })
         },
-        848415: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return S
-                }
-            }), n("424973");
-            var i = n("627445"),
-                s = n.n(i),
-                r = n("446674"),
-                a = n("913144"),
-                o = n("42203"),
-                l = n("923959"),
-                u = n("305961"),
-                d = n("957255"),
-                c = n("677099"),
-                f = n("299039"),
-                _ = n("49111");
-            let h = null,
-                g = [],
-                m = null,
-                E = null;
-
-            function p(e) {
-                return null == e ? 0 : new Date().getTime() - e.getTime()
-            }
-            class v extends r.default.Store {
-                initialize() {
-                    this.waitFor(c.default, l.default, o.default)
-                }
-                isCallout(e) {
-                    return g.some(t => t.targetId === e)
-                }
-                getCurrentAction() {
-                    return 0 === g.length ? null : g[0]
-                }
-                isCurrentKind(e) {
-                    return 0 !== g.length && g[0].kind === e
-                }
-                isActive(e) {
-                    return null != h && h === e && g.length > 0
-                }
-                getAnalyticsProperties() {
-                    let e = this.getCurrentAction();
-                    return {
-                        step: null == e ? void 0 : e.kind,
-                        is_final_step: 1 === g.length,
-                        step_duration: p(E),
-                        total_duration: p(m)
-                    }
-                }
-                isAnyActive() {
-                    return g.length > 0
-                }
-            }
-            v.displayName = "AssistantStore";
-            var S = new v(a.default, {
-                ASSISTANT_REBUILD_ACTION_STACK: function(e) {
-                    let {
-                        guildId: t
-                    } = e, n = u.default.getGuild(t);
-                    if (null == n) return !1;
-                    h = t, (g = []).push({
-                        guildId: t,
-                        kind: "splashScreen",
-                        targetKey: void 0,
-                        targetId: void 0
-                    });
-                    let i = function(e) {
-                        let t = l.default.getVocalChannelIds(e);
-                        for (var n = 0; n < t.length; n++) {
-                            let e = t[n],
-                                i = o.default.getChannel(e);
-                            if (null != i && !i.nsfw && d.default.can(_.Permissions.VIEW_CHANNEL, i)) return i
-                        }
-                        return null
-                    }(t);
-                    null != i && (g.push({
-                        guildId: t,
-                        kind: "joinVoiceChannel",
-                        targetKey: "voiceChannel",
-                        targetId: i.id
-                    }), g.push({
-                        guildId: t,
-                        kind: "joinVoiceChannelMultitask",
-                        targetKey: "voiceChannel",
-                        targetId: i.id
-                    }));
-                    let s = function(e) {
-                        let t = l.default.getSelectableChannels(e.id),
-                            n = t.sort((e, t) => f.default.compare(e.channel.id, t.channel.id)).find(e => !e.channel.nsfw);
-                        if (null != n) return n.channel;
-                        let i = o.default.getChannel(e.systemChannelId);
-                        return null != i && !i.nsfw && d.default.can(_.Permissions.VIEW_CHANNEL, i) ? i : l.default.getSFWDefaultChannel(e.id)
-                    }(n);
-                    null != s && (g.push({
-                        guildId: t,
-                        kind: "openTextChannel",
-                        targetKey: "textChannel",
-                        targetId: s.id
-                    }), g.push({
-                        guildId: t,
-                        kind: "sendMessage",
-                        targetKey: void 0,
-                        targetId: void 0
-                    })), g.push({
-                        guildId: t,
-                        kind: "navigateAround",
-                        targetKey: void 0,
-                        targetId: void 0
-                    }), g.push({
-                        guildId: t,
-                        kind: "wumpusJoined",
-                        targetKey: void 0,
-                        targetId: void 0
-                    }), g.push({
-                        guildId: t,
-                        kind: "startActivity",
-                        targetKey: void 0,
-                        targetId: void 0
-                    }), m = new Date, E = new Date
-                },
-                ASSISTANT_COMPLETE_ACTION: function(e) {
-                    let {
-                        kind: t
-                    } = e;
-                    return 0 === g.length ? (s("AssistantStore: no actions to complete"), !1) : g[0].kind === t && void(g.shift(), E = new Date)
-                },
-                ASSISTANT_DISMISS: function() {
-                    g = [], E = null, m = null
-                }
-            })
-        },
         519820: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -58346,93 +58213,92 @@
             "use strict";
             n.r(t), n.d(t, {
                 isDismissibleContentDismissed: function() {
-                    return v
+                    return p
                 },
                 useIsDismissibleContentDismissed: function() {
-                    return S
+                    return v
                 },
                 requestMarkDismissibleContentAsShown: function() {
-                    return T
+                    return S
                 },
                 markDismissibleContentAsDismissed: function() {
-                    return I
+                    return T
                 }
             }), n("222007");
             var i = n("446674"),
                 s = n("151426"),
-                r = n("848415"),
-                a = n("193302"),
-                o = n("872173"),
-                l = n("374363"),
-                u = n("599110"),
-                d = n("674268"),
-                c = n("495226"),
-                f = n("585653"),
-                _ = n("989691"),
-                h = n("127746"),
-                g = n("862853"),
-                m = n("846614"),
-                E = n("994428"),
-                p = n("49111");
+                r = n("193302"),
+                a = n("872173"),
+                o = n("374363"),
+                l = n("599110"),
+                u = n("674268"),
+                d = n("495226"),
+                c = n("585653"),
+                f = n("989691"),
+                _ = n("127746"),
+                h = n("862853"),
+                g = n("846614"),
+                m = n("994428"),
+                E = n("49111");
+
+            function p(e) {
+                var t;
+                if ((0, g.disableNewUserDismissibleContent)(e)) return !0;
+                let n = null === (t = o.default.settings.userContent) || void 0 === t ? void 0 : t.dismissedContents;
+                return null != n && (0, u.hasBit)(n, e)
+            }
 
             function v(e) {
-                var t;
-                if ((0, m.disableNewUserDismissibleContent)(e)) return !0;
-                let n = null === (t = l.default.settings.userContent) || void 0 === t ? void 0 : t.dismissedContents;
-                return null != n && (0, d.hasBit)(n, e)
+                return (0, i.useStateFromStores)([o.default], () => p(e))
             }
 
-            function S(e) {
-                return (0, i.useStateFromStores)([l.default], () => v(e))
-            }
-
-            function T(e, t, n) {
-                if ((0, g.isContentShown)(e) || r.default.isAnyActive() || _.default.hasUserHitDCCap(e)) return;
+            function S(e, t, n) {
+                if ((0, h.isContentShown)(e) || f.default.hasUserHitDCCap(e)) return;
                 let i = function(e) {
-                    let t = h.CONTENT_TYPES_WITH_BYPASS_HOLDOUT.has(e),
+                    let t = _.CONTENT_TYPES_WITH_BYPASS_HOLDOUT.has(e),
                         {
                             enabled: n
-                        } = a.default.getCurrentConfig({
+                        } = r.default.getCurrentConfig({
                             location: "isUserSubjectToDCFHoldout"
                         }, {
                             autoTrackExposure: !t
                         });
                     return n && !t
                 }(e);
-                if (!i) !n && (0, g.addCandidateContent)({
+                if (!i) !n && (0, h.addCandidateContent)({
                     content: e,
                     groupName: null == t ? void 0 : t.groupName,
                     onAdded: () => {
                         var n;
-                        let [i, r] = (0, g.getCurrentlyShownCounts)();
-                        (0, f.handleDCShownToUser)(e), u.default.track(p.AnalyticEvents.DISMISSIBLE_CONTENT_SHOWN, {
+                        let [i, r] = (0, h.getCurrentlyShownCounts)();
+                        (0, c.handleDCShownToUser)(e), l.default.track(E.AnalyticEvents.DISMISSIBLE_CONTENT_SHOWN, {
                             type: s.DismissibleContent[e],
                             content_count: i,
                             fatigable_content_count: r,
                             group_name: null == t ? void 0 : t.groupName,
-                            bypass_fatigue: c.CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(e),
+                            bypass_fatigue: d.CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(e),
                             guild_id: null == t ? void 0 : t.guildId
                         }), null == t || null === (n = t.onShown) || void 0 === n || n.call(t)
                     }
                 })
             }
-            async function I(e) {
+            async function T(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                ((0, g.isContentShown)(e) || t.forceTrack) && function(e, t) {
+                ((0, h.isContentShown)(e) || t.forceTrack) && function(e, t) {
                     var n;
-                    let [i] = (0, g.getCurrentlyShownCounts)(), r = _.default.getRenderedAtTimestamp(e), a = new Date, o = null == r ? null : a.getTime() - r;
-                    u.default.track(p.AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED, {
+                    let [i] = (0, h.getCurrentlyShownCounts)(), r = f.default.getRenderedAtTimestamp(e), a = new Date, o = null == r ? null : a.getTime() - r;
+                    l.default.track(E.AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED, {
                         type: s.DismissibleContent[e],
-                        action: null !== (n = null == t ? void 0 : t.dismissAction) && void 0 !== n ? n : E.ContentDismissActionType.UNKNOWN,
+                        action: null !== (n = null == t ? void 0 : t.dismissAction) && void 0 !== n ? n : m.ContentDismissActionType.UNKNOWN,
                         content_count: i,
                         group_name: null == t ? void 0 : t.groupName,
-                        bypass_fatigue: c.CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(e),
+                        bypass_fatigue: d.CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(e),
                         guild_id: null == t ? void 0 : t.guildId,
                         shown_duration: o
                     })
-                }(e, t), (0, f.handleDCDismissed)(e), await (0, o.addDismissedContent)(e);
-                let n = !_.default.hasUserHitDCCap();
-                (0, g.removeCandidateContent)({
+                }(e, t), (0, c.handleDCDismissed)(e), await (0, a.addDismissedContent)(e);
+                let n = !f.default.hasUserHitDCCap();
+                (0, h.removeCandidateContent)({
                     content: e,
                     groupName: null == t ? void 0 : t.groupName
                 }, n)
@@ -118394,7 +118260,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260697"
+                                build_number: "260703"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134483,4 +134349,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.96296169e23e5894ad30.js.map
+//# sourceMappingURL=42266.ea405298242e9c03e5c9.js.map
