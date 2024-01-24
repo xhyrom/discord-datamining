@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["16419"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -51791,7 +51791,7 @@
                 CommandOrigin: function() {
                     return l
                 }
-            }), (u = i || (i = {}))[u.BUILT_IN = 0] = "BUILT_IN", u[u.APPLICATION = 1] = "APPLICATION", (d = s || (s = {}))[d.BUILT_IN = 0] = "BUILT_IN", d[d.BUILT_IN_TEXT = 1] = "BUILT_IN_TEXT", d[d.BUILT_IN_INTEGRATION = 2] = "BUILT_IN_INTEGRATION", d[d.BOT = 3] = "BOT", d[d.PLACEHOLDER = 4] = "PLACEHOLDER", (c = r || (r = {}))[c.ROLE = 1] = "ROLE", c[c.USER = 2] = "USER", c[c.CHANNEL = 3] = "CHANNEL", (f = a || (a = {})).DISCOVERY = "discovery", f.SUGGESTION = "suggestion", f.MENTION = "mention", f.PASTE = "paste", f.RECALL = "recall", f.POPULAR_COMMANDS = "popular_commands", f.MJ_CHAT_BAR = "mj_chat_bar", f.QUERY = "query", f.SLASH_UI = "slash_ui", f.APP_LAUNCHER = "app_launcher", f.APP_LAUNCHER_DOCK = "app_launcher_dock", f.APP_LAUNCHER_COMMAND_LIST = "app_launcher_command_list", f.APP_LAUNCHER_COMMAND_LIST_FRECENCT = "app_launcher_command_list_frecent", f.APP_LAUNCHER_DOCK_SEARCH = "app_launcher_dock_search", f.APP_LAUNCHER_SLASH_SEARCH = "app_launcher_slash_search", (_ = o || (o = {}))[_.BUILT_IN = 1] = "BUILT_IN", _[_.FRECENCY = 2] = "FRECENCY", _[_.APP = 3] = "APP", (h = l || (l = {}))[h.CHAT = 0] = "CHAT", h[h.APPLICATION_LAUNCHER = 1] = "APPLICATION_LAUNCHER"
+            }), (u = i || (i = {}))[u.BUILT_IN = 0] = "BUILT_IN", u[u.APPLICATION = 1] = "APPLICATION", (d = s || (s = {}))[d.BUILT_IN = 0] = "BUILT_IN", d[d.BUILT_IN_TEXT = 1] = "BUILT_IN_TEXT", d[d.BUILT_IN_INTEGRATION = 2] = "BUILT_IN_INTEGRATION", d[d.BOT = 3] = "BOT", d[d.PLACEHOLDER = 4] = "PLACEHOLDER", (c = r || (r = {}))[c.ROLE = 1] = "ROLE", c[c.USER = 2] = "USER", c[c.CHANNEL = 3] = "CHANNEL", (f = a || (a = {})).DISCOVERY = "discovery", f.SUGGESTION = "suggestion", f.MENTION = "mention", f.PASTE = "paste", f.RECALL = "recall", f.POPULAR_COMMANDS = "popular_commands", f.MJ_CHAT_BAR = "mj_chat_bar", f.QUERY = "query", f.SLASH_UI = "slash_ui", f.APP_LAUNCHER = "app_launcher", f.APP_LAUNCHER_HOME = "app_launcher_home", f.APP_LAUNCHER_HOME_SEARCH = "app_launcher_home_search", f.APP_LAUNCHER_APPLICATION_VIEW = "app_launcher_application_view", f.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = "app_launcher_application_view_frecent", f.APP_LAUNCHER_SLASH_SEARCH = "app_launcher_slash_search", (_ = o || (o = {}))[_.BUILT_IN = 1] = "BUILT_IN", _[_.FRECENCY = 2] = "FRECENCY", _[_.APP = 3] = "APP", (h = l || (l = {}))[h.CHAT = 0] = "CHAT", h[h.APPLICATION_LAUNCHER = 1] = "APPLICATION_LAUNCHER"
         },
         970254: function(e, t, n) {
             "use strict";
@@ -118371,7 +118371,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261072"
+                                build_number: "261074"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134460,4 +134460,4 @@
         }
     }
 ]);
-//# sourceMappingURL=16419.584275124877c6177d61.js.map
+//# sourceMappingURL=29278.1e5be6ff0e847b3ff5c8.js.map
