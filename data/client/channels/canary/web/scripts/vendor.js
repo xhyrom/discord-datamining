@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -110788,7 +110788,7 @@
                         null != this.animation && this.animation.destroy();
                         let [o, {
                             default: l
-                        }] = await Promise.all([e(), n.el("245749").then(n.t.bind(n, "245749", 23))]);
+                        }] = await Promise.all([e(), n.el("865981").then(n.t.bind(n, "865981", 23))]);
                         null != this.animationRef.current && (this.animation = l.loadAnimation({
                             container: this.animationRef.current,
                             renderer: r,
@@ -118279,7 +118279,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "260987"
+                                build_number: "260994"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134368,4 +134368,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.9943470fd33301e1507e.js.map
+//# sourceMappingURL=29278.5c55c662858e58d649d7.js.map
