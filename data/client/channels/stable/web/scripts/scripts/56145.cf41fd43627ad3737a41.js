@@ -8420,7 +8420,8 @@
                                 "aria-expanded": h,
                                 style: l,
                                 className: o(n, E.spoilerContent, E.spoilerContainer, {
-                                    [E.hidden]: !h
+                                    [E.hidden]: !h,
+                                    [E.constrainedObscureContent]: r
                                 }),
                                 role: h ? "presentation" : "button",
                                 tabIndex: h ? -1 : 0,
@@ -10764,4 +10765,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56145.64e2115fade2e4556b61.js.map
+//# sourceMappingURL=56145.cf41fd43627ad3737a41.js.map

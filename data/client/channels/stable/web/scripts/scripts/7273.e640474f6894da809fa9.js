@@ -1530,6 +1530,7 @@
                     EMOJI_CAPTIONS_GET: "/users/@me/emoji-captions",
                     SAFETY_HUB: "/safety-hub/@me",
                     SAFETY_HUB_REQUEST_REVIEW: _ => "/safety-hub/request-review/".concat(_),
+                    SAFETY_HUB_REQUEST_SUSPENDED_USER_REVIEW: _ => "/safety-hub/suspended/request-review/".concat(_),
                     SAFETY_HUB_SUSPENDED: "/safety-hub/suspended/@me",
                     INITIATE_CHANNEL_PROMPTS: "/initiate-prompts",
                     FORCE_SEND_PROMPT: _ => "/".concat(_, "/force-send-prompt"),
@@ -1543,6 +1544,7 @@
                     CLYDE_PROFILES_CREATE: _ => "/guilds/".concat(_, "/clyde-profiles"),
                     CLYDE_PROFILES_GENERATE_PERSONALITY: "/clyde-profiles/generate-personality",
                     POLL_ANSWERS: (_, E) => "/channels/".concat(_, "/polls/").concat(E, "/answers"),
+                    POLL_EXPIRE: (_, E) => "/channels/".concat(_, "/messages/").concat(E, "/expire"),
                     PREMIUM_MARKETING: "/premium-marketing",
                     QUESTS_CURRENT_QUESTS: "/quests/@me",
                     QUESTS_HEARTBEAT: _ => "/quests/".concat(_, "/heartbeat"),
@@ -13573,4 +13575,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.be41e5e62901169f2dea.js.map
+//# sourceMappingURL=7273.e640474f6894da809fa9.js.map
