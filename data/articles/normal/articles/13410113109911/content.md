@@ -1,9 +1,9 @@
 <p id="docs-internal-guid-5caf3839-7fff-ea94-fb64-7b1f9802cc64"><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor=""><span class="wysiwyg-font-size-large">What this article covers:</span><br></span></strong></p>
 <ul>
     <li><a href="#h_01GWJJPDWA7210GPEJB5Z4R5WC" target="_self">What are avatar decorations?</a></li>
-    <li><a href="#docs-internal-guid-3376417a-7fff-e38e-b0eb-3fc85a230fdb">How can I collect an avatar decoration?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/13410113109911#docs-internal-guid-3376417a-7fff-e38e-b0eb-3fc85a230fdb">How can I collect an avatar decoration?</a></li>
     <li>
-        <a href="#docs-internal-guid-e73a0c54-7fff-dbc0-6e07-40581ee1ea3f">How to apply an avatar decoration to my profile <br></a>
+        <a href="https://support.discord.com/hc/en-us/articles/13410113109911#docs-internal-guid-e73a0c54-7fff-dbc0-6e07-40581ee1ea3f">How to apply an avatar decoration to my profile <br></a>
         <ul>
             <li><a href="#h_01GWJJPTV8YQ3C3BDW7Q93ARGX" target="_self">Desktop</a></li>
             <li><a href="#h_01GWJJPZTY0EKDJJSAHPBA6VWN" target="_self">Mobile</a></li>
@@ -24,7 +24,7 @@
 <p>1. Navigate into your <strong>User Settings &gt; Profiles</strong>. </p>
 <p>2. While there, you will see the banner to the Shop where you can select <strong>Check it out</strong>. You can also select <strong>Change Decoration</strong> and select the <strong>Shop</strong> icon.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432529801623" alt="image3.png" width="406" height="252">   <img src="https://support.discord.com/hc/article_attachments/19432529809047" alt="image8.png" width="280" height="252"></p>
-<h3 id="h_01HB742VRKH0K9N1X2A85E2RY5">The Shop is only available on the desktop app or your browser. </h3>
+<h3 id="h_01HB742VRKH0K9N1X2A85E2RY5">The Shop is only available on the desktop app or your browser.</h3>
 <p id="docs-internal-guid-3e542f33-7fff-1af5-0df0-3783196af3dd">3. Once directed to the Shop, you can preview and buy avatar decorations to add to your collection and wear whenever you’d like. <span id="docs-internal-guid-e8990bb0-7fff-a6f2-9d87-19267439ca31"></span></p>
 <h3 id="h_01HB7451TQD6GE1AR8YC9S6HWH" class="wysiwyg-text-align-left">Purchased avatar decorations are yours to keep and can be used at any time! Selections available for purchase in the Shop will change periodically.</h3>
 <h1 id="docs-internal-guid-e73a0c54-7fff-dbc0-6e07-40581ee1ea3f">How to apply an avatar decoration to my profile</h1>
@@ -49,7 +49,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17808425706391" alt="image3.gif" width="253" height="516"></p>
 <h1 id="h_01GWJJX4GZDK1QJAXZBB7N4RNG">Frequently Asked Questions</h1>
 <p id="docs-internal-guid-43737dc2-7fff-6d6f-dff3-b8e118678317"><strong>Q: Who can currently access the Shop and buy and use avatar decorations?</strong></p>
-<p>A: At this time, only Nitro members can buy avatar decorations from the Shop and use them as an early access benefit.  </p>
+<p>A: The Shop is available to all Discord users. If you are also a Nitro member, you will have special member pricing on all purchases within the Shop!</p>
 <p id="docs-internal-guid-22992952-7fff-a0a6-ea7e-1cb0798d6051"><strong>Q: How do I get a discount on avatar decorations in the Shop?</strong></p>
 <p>A: Only Nitro members have access to special member pricing in the Shop. You can find more information about Nitro <a href="https://support.discord.com/hc/articles/115000435108-Discord-Nitro-Classic-Nitro">here</a>.</p>
 <p><strong>Q: Do I keep the avatar decorations I’ve purchased? </strong></p>
