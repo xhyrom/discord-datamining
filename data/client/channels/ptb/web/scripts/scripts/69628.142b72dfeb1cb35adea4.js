@@ -1249,7 +1249,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return R
+                    return N
                 }
             }), n("70102"), n("222007");
             var a = n("37983"),
@@ -1350,9 +1350,9 @@
                     })
                 })
             }
-            let N = [];
+            let R = [];
 
-            function R(e) {
+            function N(e) {
                 let {
                     channelId: t,
                     guildId: s,
@@ -1361,14 +1361,14 @@
                     compact: m = !1,
                     disableInteraction: g = !1,
                     maxVisibleUsers: v = 3
-                } = e, [I, R] = r.useState(!1), L = r.useRef(new d.DelayedCall(150, () => R(!1))), O = (0, o.useStateFromStoresArray)([p.default, E.default], () => {
+                } = e, [I, N] = r.useState(!1), L = r.useRef(new d.DelayedCall(150, () => N(!1))), O = (0, o.useStateFromStoresArray)([p.default, E.default], () => {
                     if (i.type === _.ParticipantTypes.STREAM) {
                         let e = p.default.getViewerIds(i.id);
-                        return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(S.isNotNullish) : N
+                        return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(S.isNotNullish) : R
                     }
-                    return i.type === _.ParticipantTypes.ACTIVITY ? i.participants.size > 0 ? Array.from(i.participants).map(e => E.default.getUser(e)).filter(S.isNotNullish) : N : N
+                    return i.type === _.ParticipantTypes.ACTIVITY ? i.participants.size > 0 ? Array.from(i.participants).map(e => E.default.getUser(e)).filter(S.isNotNullish) : R : R
                 }, [i]), y = r.useCallback(() => {
-                    L.current.cancel(), R(!0)
+                    L.current.cancel(), N(!0)
                 }, []), P = r.useCallback(() => {
                     L.current.delay()
                 }, []), D = r.useCallback((e, t) => {
@@ -1551,7 +1551,7 @@
                 }, [t, I, T]);
                 if (null == e) return null;
                 let x = S === E.ApplicationStreamPresets.PRESET_DOCUMENTS ? E.ApplicationStreamFPS.FPS_30 : _,
-                    N = E.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
+                    R = E.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
@@ -1564,7 +1564,7 @@
                             action: () => M(r, g, t, p.AnalyticsObjectTypes.RESOLUTION)
                         }, "stream-settings-fps-".concat(t))
                     }),
-                    R = E.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
+                    N = E.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
@@ -1580,10 +1580,10 @@
                 return (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(l.MenuGroup, {
                         label: m.default.Messages.SCREENSHARE_FRAME_RATE,
-                        children: N
+                        children: R
                     }), (0, a.jsx)(l.MenuGroup, {
                         label: m.default.Messages.STREAM_RESOLUTION,
-                        children: R
+                        children: N
                     })]
                 })
             }
@@ -1637,7 +1637,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return R
+                    return N
                 }
             }), n("222007");
             var a = n("37983"),
@@ -1692,7 +1692,7 @@
             }, 100, {
                 trailing: !1
             });
-            class N extends r.PureComponent {
+            class R extends r.PureComponent {
                 componentDidCatch(e, t) {
                     this.triggerSoftCrash(e, t)
                 }
@@ -1764,7 +1764,7 @@
                     }, this.discordErrorsSet = !1
                 }
             }
-            var R = N
+            var N = R
         },
         160139: function(e, t, n) {
             "use strict";
@@ -1800,7 +1800,7 @@
                 x = (e, t) => {
                     (0, g.isMac)() && !t.altKey ? T.default.fullscreen(e) : T.default.maximize(e)
                 },
-                N = e => {
+                R = e => {
                     let {
                         windowKey: t,
                         themeOverride: n,
@@ -1834,7 +1834,7 @@
                         })]
                     })
                 },
-                R = e => {
+                N = e => {
                     let {
                         focused: t,
                         windowKey: n,
@@ -1897,13 +1897,13 @@
                 if (f) return null;
                 switch (n) {
                     case g.PlatformTypes.WINDOWS:
-                        return (0, a.jsx)(N, {
+                        return (0, a.jsx)(R, {
                             windowKey: r,
                             themeOverride: i,
                             hasOpenLayer: h
                         });
                     case g.PlatformTypes.OSX:
-                        return (0, a.jsx)(R, {
+                        return (0, a.jsx)(N, {
                             focused: t,
                             windowKey: r,
                             frame: s,
@@ -2042,7 +2042,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-2cec3aba94d13e1b73aa27d52db6a7568709cc5c",
+                    release: "discord_web-302e8c41fba42bf82d87eaf20aaa149962c049e3",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !l() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && i() ? e : null
@@ -2058,9 +2058,9 @@
                         sentry: !0,
                         xhr: !0
                     })],
-                    ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
+                    ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "260966", "260966")), a.setTag("builtAt", String("1706118404342"));
+                }), a.setTag("buildNumber", (e = "260978", "260978")), a.setTag("builtAt", String("1706119860236"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2934,7 +2934,7 @@
                     onClose: A,
                     onSelect: I,
                     appContext: M = g.AppContext.APP
-                } = e, x = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = i.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, R = v(n, r, i), L = (0, o.default)(N, M), O = (0, u.default)(N, M, g.NOOP_NULL), y = null == N ? (0, a.jsx)(s.MenuItem, {
+                } = e, x = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), R = null !== (t = i.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, N = v(n, r, i), L = (0, o.default)(R, M), O = (0, u.default)(R, M, g.NOOP_NULL), y = null == R ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: p.default,
@@ -2953,7 +2953,7 @@
                         id: "stop-streaming",
                         label: T.default.Messages.STOP_STREAMING,
                         icon: E.default,
-                        action: () => (0, d.default)(N)
+                        action: () => (0, d.default)(R)
                     })]
                 });
                 return (0, a.jsx)(l.default, {
@@ -2962,9 +2962,9 @@
                         onSelect: I,
                         navId: "manage-streams",
                         onClose: A,
-                        "aria-label": null != N ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
+                        "aria-label": null != R ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
                         children: [(0, a.jsx)(s.MenuGroup, {
-                            children: R.map(e => {
+                            children: N.map(e => {
                                 let {
                                     stream: t,
                                     username: n
@@ -4610,4 +4610,4 @@
         }
     }
 ]);
-//# sourceMappingURL=69628.8dbb4794e8ad58678aee.js.map
+//# sourceMappingURL=69628.142b72dfeb1cb35adea4.js.map
