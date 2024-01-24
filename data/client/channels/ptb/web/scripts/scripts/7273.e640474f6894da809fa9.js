@@ -1530,6 +1530,7 @@
                     EMOJI_CAPTIONS_GET: "/users/@me/emoji-captions",
                     SAFETY_HUB: "/safety-hub/@me",
                     SAFETY_HUB_REQUEST_REVIEW: _ => "/safety-hub/request-review/".concat(_),
+                    SAFETY_HUB_REQUEST_SUSPENDED_USER_REVIEW: _ => "/safety-hub/suspended/request-review/".concat(_),
                     SAFETY_HUB_SUSPENDED: "/safety-hub/suspended/@me",
                     INITIATE_CHANNEL_PROMPTS: "/initiate-prompts",
                     FORCE_SEND_PROMPT: _ => "/".concat(_, "/force-send-prompt"),
@@ -13574,4 +13575,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.f8b09c542db8c3f5f4a0.js.map
+//# sourceMappingURL=7273.e640474f6894da809fa9.js.map
