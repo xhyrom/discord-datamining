@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_reactivation_user_discount_offer_experiment",
+    "label": "Reactivation User Discount Offer",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: users receive reactivation trial offers",
+      "Treatment 1: users receive neither reactivation trial offers nor reactivation discount offers",
+      "Treatment 2: users receive reactivation discount offers"
+    ],
+    "hash": 4279678064,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

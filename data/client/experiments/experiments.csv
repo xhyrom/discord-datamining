@@ -425,6 +425,7 @@ id,hash,label
 2024-01_guild_members_table_additional_filtering,1640304679,Guild Members Table Additional Filtering
 2024-01_h265_desktop_decode,124383374,H.265 Desktop Decode
 2024-01_nvencadaptivekeyframe,3032307853,nvenc adaptive key frame interval
+2024-01_reactivation_user_discount_offer_experiment,4279678064,Reactivation User Discount Offer
 2024-01_rpc_analytics_killswitch,305964783,RPC Server Analytics Killswitch
 2024-01_unreads,2883062585,Unreads Experiment (grey-dot mode)
 2024-01_windows_key_frame_interval,2961250399,Windows key frame interval
