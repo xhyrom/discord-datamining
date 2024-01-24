@@ -2390,11 +2390,53 @@
         0,
         1
       ],
-      "holdout": {},
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
       "aa_mode": false,
       "config_keys": [
         "enabled"
       ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 3333,
+                  "end": 6666
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 6666,
+                  "end": 9999
+                },
+                {
+                  "start": 9999,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 1,
+      "overrides": {
+        "1": [
+          "882680660588904448",
+          "882703776794959873",
+          "859533785225494528",
+          "859533828754505741"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
