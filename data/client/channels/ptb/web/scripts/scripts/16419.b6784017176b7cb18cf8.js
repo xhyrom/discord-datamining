@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["16419"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -61158,6 +61158,24 @@
                 })
             }
         },
+        612920: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                SUPPORTED_EMBED_TYPES: function() {
+                    return s
+                },
+                EXPLICIT_MEDIA_MIN_WIDTH: function() {
+                    return r
+                },
+                EXPLICIT_MEDIA_MIN_HEIGHT: function() {
+                    return a
+                }
+            }), n("222007");
+            var i = n("246111");
+            let s = new Set([i.MessageEmbedTypes.IMAGE, i.MessageEmbedTypes.VIDEO, i.MessageEmbedTypes.GIFV]),
+                r = 146,
+                a = 212
+        },
         457971: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -61238,55 +61256,58 @@
             "use strict";
             n.r(t), n.d(t, {
                 resolveDefaultSetting: function() {
-                    return y
-                },
-                getExplicitContentSettingOrDefault: function() {
                     return N
                 },
-                getShouldObscureForSetting: function() {
+                getExplicitContentSettingOrDefault: function() {
                     return R
                 },
-                shouldRedactExplicitContent: function() {
+                getShouldObscureForSetting: function() {
                     return O
                 },
-                updateExplicitContentSetting: function() {
+                shouldRedactExplicitContent: function() {
                     return D
+                },
+                updateExplicitContentSetting: function() {
+                    return P
                 },
                 ObscuredMediaTypes: function() {
                     return i
                 },
                 isMediaObscured: function() {
-                    return P
-                },
-                getObscuredMediaForMessage: function() {
                     return b
                 },
-                isPendingScan: function() {
+                getObscuredMediaForMessage: function() {
                     return L
+                },
+                isPendingScan: function() {
+                    return M
                 },
                 TrackMediaRedactionActionType: function() {
                     return s
                 },
                 trackMediaRedactionAction: function() {
-                    return M
+                    return U
                 },
                 TimeoutCancelSource: function() {
                     return r
                 },
                 trackScanTiming: function() {
-                    return U
-                },
-                trackScanningTimedOut: function() {
                     return k
                 },
-                trackExplicitMediaRedactableMessagedLoaded: function() {
+                trackScanningTimedOut: function() {
                     return w
                 },
-                trackExplicitMediaScanComplete: function() {
+                trackExplicitMediaRedactableMessagedLoaded: function() {
                     return V
                 },
-                handleExplicitMediaScanTimeoutForMessage: function() {
+                trackExplicitMediaScanComplete: function() {
                     return G
+                },
+                handleExplicitMediaScanTimeoutForMessage: function() {
+                    return F
+                },
+                isExplicitMediaBelowConstraints: function() {
+                    return x
                 }
             }), n("702976");
             var i, s, r, a, o, l, u = n("432710"),
@@ -61302,34 +61323,35 @@
                 v = n("568734"),
                 S = n("983850"),
                 T = n("457971"),
-                I = n("49111"),
-                C = n("568456");
+                I = n("612920"),
+                C = n("49111"),
+                A = n("568456");
             n("782340");
-            let A = () => {
+            let y = () => {
                     let e = E.default.getCurrentUser();
                     return (null == e ? void 0 : e.nsfwAllowed) === !1 ? d.ExplicitContentRedaction.BLUR : d.ExplicitContentRedaction.SHOW
                 },
-                y = function() {
+                N = function() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
                         t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                    if (!e) return A();
+                    if (!e) return y();
                     let n = h.ExplicitContentFilter.getSetting();
-                    return t ? n === C.ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS ? d.ExplicitContentRedaction.BLOCK : A() : n === C.ExplicitContentFilterTypes.NON_FRIENDS || n === C.ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS ? d.ExplicitContentRedaction.BLOCK : A()
+                    return t ? n === A.ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS ? d.ExplicitContentRedaction.BLOCK : y() : n === A.ExplicitContentFilterTypes.NON_FRIENDS || n === A.ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS ? d.ExplicitContentRedaction.BLOCK : y()
                 },
-                N = () => {
+                R = () => {
                     let e = h.ExplicitContentSettings.getSetting();
                     return {
-                        explicitContentGuilds: e.explicitContentGuilds === d.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? y() : e.explicitContentGuilds,
-                        explicitContentNonFriendDm: e.explicitContentNonFriendDm === d.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? y(!0) : e.explicitContentNonFriendDm,
-                        explicitContentFriendDm: e.explicitContentFriendDm === d.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? y(!0, !0) : e.explicitContentFriendDm
+                        explicitContentGuilds: e.explicitContentGuilds === d.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? N() : e.explicitContentGuilds,
+                        explicitContentNonFriendDm: e.explicitContentNonFriendDm === d.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? N(!0) : e.explicitContentNonFriendDm,
+                        explicitContentFriendDm: e.explicitContentFriendDm === d.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? N(!0, !0) : e.explicitContentFriendDm
                     }
                 };
 
-            function R(e) {
+            function O(e) {
                 return e === d.ExplicitContentRedaction.BLUR || e === d.ExplicitContentRedaction.BLOCK
             }
 
-            function O(e) {
+            function D(e) {
                 var t;
                 if (!(0, T.isEligibleForExplicitMediaRedaction)()) return !1;
                 let n = E.default.getCurrentUser();
@@ -61338,41 +61360,41 @@
                     explicitContentGuilds: i,
                     explicitContentFriendDm: s,
                     explicitContentNonFriendDm: r
-                } = N(), a = g.default.getChannel(e.channel_id);
+                } = R(), a = g.default.getChannel(e.channel_id);
                 if (null == a) return !1;
-                if (a.isDM() || a.isGroupDM()) return null != e.author && m.default.getFriendIDs().includes(e.author.id) ? R(s) : R(r);
-                return R(i)
+                if (a.isDM() || a.isGroupDM()) return null != e.author && m.default.getFriendIDs().includes(e.author.id) ? O(s) : O(r);
+                return O(i)
             }
-            let D = e => {
-                let t = N();
+            let P = e => {
+                let t = R();
                 h.ExplicitContentSettings.updateSetting({
                     ...t,
                     ...e
                 })
             };
 
-            function P(e, t) {
+            function b(e, t) {
                 var n, i;
                 if (!t) return !1;
                 if (c.default.get("obscure_blur_effect_enabled")) return !0;
                 switch (e.type) {
                     case 1:
-                        return (0, v.hasFlag)(null !== (n = e.media.flags) && void 0 !== n ? n : 0, I.MessageEmbedFlags.CONTAINS_EXPLICIT_MEDIA);
+                        return (0, v.hasFlag)(null !== (n = e.media.flags) && void 0 !== n ? n : 0, C.MessageEmbedFlags.CONTAINS_EXPLICIT_MEDIA);
                     case 0:
-                        return (0, v.hasFlag)(null !== (i = e.media.flags) && void 0 !== i ? i : 0, I.MessageAttachmentFlags.CONTAINS_EXPLICIT_MEDIA);
+                        return (0, v.hasFlag)(null !== (i = e.media.flags) && void 0 !== i ? i : 0, C.MessageAttachmentFlags.CONTAINS_EXPLICIT_MEDIA);
                     default:
                         return !1
                 }
             }
 
-            function b(e) {
-                let t = O(e);
+            function L(e) {
+                let t = D(e);
                 return t ? {
-                    obscuredAttachments: e.attachments.filter(e => P({
+                    obscuredAttachments: e.attachments.filter(e => b({
                         type: 0,
                         media: e
                     }, !0)),
-                    obscuredEmbeds: e.embeds.filter(e => P({
+                    obscuredEmbeds: e.embeds.filter(e => b({
                         type: 1,
                         media: e
                     }, !0))
@@ -61382,11 +61404,11 @@
                 }
             }
 
-            function L(e) {
+            function M(e) {
                 return !c.default.get("explicit_media_redaction_ignore_pending_scan") && null == e
             }
 
-            function M(e) {
+            function U(e) {
                 let {
                     action: t,
                     channelId: n,
@@ -61394,7 +61416,7 @@
                 } = e;
                 if (null == n || null == i) return;
                 let s = g.default.getChannel(n);
-                p.default.track(I.AnalyticEvents.EXPLICIT_MEDIA_ACTION, {
+                p.default.track(C.AnalyticEvents.EXPLICIT_MEDIA_ACTION, {
                     action: t,
                     guild_id: null == s ? void 0 : s.guild_id,
                     channel_id: n,
@@ -61403,7 +61425,7 @@
                 })
             }
 
-            function U(e, t) {
+            function k(e, t) {
                 let n = Date.now() - e;
                 f.default.increment({
                     name: u.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING,
@@ -61411,7 +61433,7 @@
                 })
             }
 
-            function k(e) {
+            function w(e) {
                 let {
                     channelId: t,
                     messageId: n,
@@ -61420,7 +61442,7 @@
                 } = e;
                 if (null == t || null == n) return;
                 let r = g.default.getChannel(t);
-                p.default.track(I.AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
+                p.default.track(C.AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
                     channel_id: t,
                     guild_id: null == r ? void 0 : r.guild_id,
                     message_id: n,
@@ -61433,7 +61455,7 @@
                 })
             }
 
-            function w(e) {
+            function V(e) {
                 let {
                     channelId: t,
                     numOfAttachments: n,
@@ -61443,7 +61465,7 @@
                 } = e;
                 if (null == t) return;
                 let a = g.default.getChannel(t);
-                p.default.track(I.AnalyticEvents.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED, {
+                p.default.track(C.AnalyticEvents.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED, {
                     channel_id: t,
                     guild_id: null == a ? void 0 : a.guild_id,
                     num_of_attachments: n,
@@ -61453,7 +61475,7 @@
                 })
             }
 
-            function V(e) {
+            function G(e) {
                 let {
                     messageId: t,
                     channelId: n,
@@ -61464,7 +61486,7 @@
                 } = e;
                 if (null == n) return;
                 let o = g.default.getChannel(n);
-                p.default.track(I.AnalyticEvents.EXPLICIT_MEDIA_RETROACTIVE_SCAN_COMPLETE, {
+                p.default.track(C.AnalyticEvents.EXPLICIT_MEDIA_RETROACTIVE_SCAN_COMPLETE, {
                     message_id: t,
                     channel_id: n,
                     channel_type: null == o ? void 0 : o.type,
@@ -61476,12 +61498,13 @@
                 })
             }
 
-            function G(e) {
+            function F(e) {
                 let t = e.attachments.map(e => (null == e.content_scan_version && (e.content_scan_version = -1), e));
                 e = e.set("attachments", t);
                 let n = e.embeds.map(e => (null == e.contentScanVersion && (e.contentScanVersion = -1), e));
                 return e = e.set("embeds", n)
-            }(a = i || (i = {}))[a.Attachment = 0] = "Attachment", a[a.Embed = 1] = "Embed", (o = s || (s = {})).EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", o.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", o.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", o.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", o.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", o.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", o.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", o.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel", (l = r || (r = {})).UPDATE = "update", l.TIMEOUT = "timeout"
+            }(a = i || (i = {}))[a.Attachment = 0] = "Attachment", a[a.Embed = 1] = "Embed", (o = s || (s = {})).EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", o.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", o.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", o.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", o.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", o.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", o.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", o.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel", (l = r || (r = {})).UPDATE = "update", l.TIMEOUT = "timeout";
+            let x = (e, t) => null != e && null != t && (e <= I.EXPLICIT_MEDIA_MIN_WIDTH || t <= I.EXPLICIT_MEDIA_MIN_HEIGHT)
         },
         533222: function(e, t, n) {
             "use strict";
@@ -118348,7 +118371,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261048"
+                                build_number: "261055"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134437,4 +134460,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.d63d9cfbdd62198249c8.js.map
+//# sourceMappingURL=16419.b6784017176b7cb18cf8.js.map

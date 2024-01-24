@@ -12042,6 +12042,11 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     color: var(--__current--spoiler-warning-text-color)
 }
 
+.constrainedObscureContent__2b3c7 {
+    min-width: 146px;
+    min-height: 212px
+}
+
 .explicitContentWarning__3f1a4 {
     text-align: center;
     width: 100%
@@ -27310,4 +27315,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.35fd4de660dd396adf9d.css.map*/
+/*# sourceMappingURL=shared.b96b378c74e95b5a113c.css.map*/
