@@ -2167,6 +2167,7 @@
             n.displayName = "LocaleStore";
             var t = new n(T.default, {
                 OVERLAY_INITIALIZE: V,
+                CACHE_LOADED: V,
                 CONNECTION_OPEN: V,
                 USER_SETTINGS_PROTO_UPDATE: V,
                 USER_SETTINGS_LOCALE_OVERRIDE: function(N) {
@@ -2378,4 +2379,4 @@
         }
     }
 ]);
-//# sourceMappingURL=10716.20ac18b9f6922b552ac7.js.map
+//# sourceMappingURL=10716.bcccef800d16c68ae0c0.js.map
