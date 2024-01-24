@@ -5896,7 +5896,6 @@
                 ctaButton: "ctaButton__7d20c",
                 mainColumn: "mainColumn_f44fc2",
                 shopForAllBackgroundImage: "shopForAllBackgroundImage__009d9",
-                shopForAllWinterBackground: "shopForAllWinterBackground__34a14",
                 title: "title__5fd27"
             }
         },
