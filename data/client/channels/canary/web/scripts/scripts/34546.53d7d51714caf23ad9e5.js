@@ -13268,6 +13268,7 @@
                 MEMBER_SAFETY_TABLE_FLAGS_POPOUT_TITLE: "Member Safety Flags",
                 MEMBER_SAFETY_TABLE_ADD_ROLES_TOOLTIP: "Add Roles",
                 MEMBER_SAFETY_TABLE_PROFILE_TOOLTIP: "View Profile",
+                MEMBER_SAFETY_TABLE_MOD_VIEW_TOOLTIP: "Open Mod View",
                 MEMBER_SAFETY_TABLE_OVERFLOW_TOOLTIP: "More Options",
                 MEMBER_SAFETY_UNUSUAL_DM_ACTIVITY: "Unusual DM Activity",
                 MEMBER_SAFETY_COMMUNICATION_DISABLED: "Timed Out",
@@ -18073,7 +18074,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261000", ", Version Hash: ").concat("d499fd6eb2b129df60bbe0463661a49f2522d472")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261003", ", Version Hash: ").concat("cbcad3b248c07aa0537533177a1fdaa5f2b17e91")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20307,8 +20308,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "261000", "261000"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261000")), _ = 0), _
+                let _ = parseInt((e = "261003", "261003"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261003")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35256,4 +35257,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.f00bba6cf7451f35558a.js.map
+//# sourceMappingURL=34546.53d7d51714caf23ad9e5.js.map

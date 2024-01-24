@@ -10475,6 +10475,22 @@
                 manualApprovalDescriptionText: "manualApprovalDescriptionText__1f5e2"
             }
         },
+        50183: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                clickable: "clickable__76c8a",
+                footerAlignment: "footerAlignment__8fdaa",
+                integrationIcon: "integrationIcon__2e221",
+                inviteChiplet: "inviteChiplet_ba47bc",
+                inviteChipletContainer: "inviteChipletContainer__8076e",
+                inviteContainer: "inviteContainer__16047",
+                inviterFooter: "inviterFooter__95a33",
+                inviterTooltipContainer: "inviterTooltipContainer__0dd66",
+                inviterUserContainer: "inviterUserContainer__9acba",
+                robot: "robot__61823",
+                unknownInvite: "unknownInvite_f8d544"
+            }
+        },
         117102: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -10648,6 +10664,7 @@
                 inviteCodeOptionContainer: "inviteCodeOptionContainer__7ba2a",
                 labelText: "labelText__1eabe",
                 labelWithIconContainer: "labelWithIconContainer__9db6a",
+                radioSelection: "radioSelection__254a5",
                 selectedOption: "selectedOption__07ef3"
             }
         },
@@ -10725,11 +10742,8 @@
                 "heading-xxl/normal": "heading-xxl-normal__5ffb4",
                 "heading-xxl/semibold": "heading-xxl-semibold_b19593",
                 highestRole: "highestRole__93122",
-                integrationIcon: "integrationIcon__4d2c6",
                 inviteChiplet: "inviteChiplet__8bf4b",
                 inviteChipletContainer: "inviteChipletContainer_aa2289",
-                inviteContainer: "inviteContainer__4d80b",
-                inviterTooltipContainer: "inviterTooltipContainer_a6dcab",
                 mediumCol: "mediumCol_a1c627",
                 mediumSmallCol: "mediumSmallCol__1cfae",
                 memberAvatar: "memberAvatar__0cf3a",
@@ -10748,7 +10762,6 @@
                 "redesign/message-preview/medium": "redesign-message-preview-medium__1b66e",
                 "redesign/message-preview/normal": "redesign-message-preview-normal__1aa6d",
                 "redesign/message-preview/semibold": "redesign-message-preview-semibold__9f0d9",
-                robot: "robot__70072",
                 roleContainer: "roleContainer__7cd51",
                 roleTooltip: "roleTooltip__776ce",
                 roleTooltipItem: "roleTooltipItem_fe6bd1",
@@ -10777,7 +10790,6 @@
                 "text-xxs/medium": "text-xxs-medium__2fc94",
                 "text-xxs/normal": "text-xxs-normal__21171",
                 "text-xxs/semibold": "text-xxs-semibold__13ba2",
-                unknownInvite: "unknownInvite__9f726",
                 xsmallCol: "xsmallCol__5f935"
             }
         },
