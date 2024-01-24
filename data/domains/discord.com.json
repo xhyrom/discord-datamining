@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 56,
+  "subdomain_count": 57,
   "subdomains": [
     "support",
     "blog",
@@ -17,6 +17,7 @@
     "zendesk1",
     "click",
     "snowsgiving-tale-2022-ko",
+    "androiddiag",
     "o16.ptr7471",
     "snowsgiving-tale-2022-ru",
     "zendesk2",
