@@ -409,7 +409,7 @@
                 <p><strong>peso</strong></p>
             </td>
             <td style="height: 22px; width: 63.1px;">
-                <p><span style="font-weight: 400;">216.99</span></p>
+                <p><span style="font-weight: 400;">499.99</span></p>
             </td>
             <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">2169.99</span></p>
