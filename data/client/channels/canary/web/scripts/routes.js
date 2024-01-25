@@ -1536,6 +1536,7 @@
                     INITIATE_CHANNEL_PROMPTS: "/initiate-prompts",
                     FORCE_SEND_PROMPT: _ => "/".concat(_, "/force-send-prompt"),
                     EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE: "/attachments/report-false-positive",
+                    EXPLICIT_MEDIA_SENDER_REPORT_FALSE_POSITIVE: "/attachments/sender-report-false-positive",
                     SEND_GAMING_STATS: _ => "/".concat(_, "/gaming-stats"),
                     UPDATE_GAMING_STATS: (_, E) => "/".concat(_, "/").concat(E, "/update-gaming-stats"),
                     BULK_GUILD_BAN: _ => "/guilds/".concat(_, "/bulk-ban"),
@@ -13576,4 +13577,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.5e9ea79b658a3b4b01c5.js.map
+//# sourceMappingURL=7273.64f9ed0b10411c13c806.js.map
