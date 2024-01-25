@@ -14228,7 +14228,7 @@
                 HIGHLIGHTS_AND_MENTIONS: "Mentions",
                 FORM_LABEL_UNREAD_SETTINGS_OPT_IN: "Configure Unread Settings",
                 FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE: "More granular settings to control when channels should appear as unread.",
-                UNREAD_NOTIFICATION_SETTING_NOTICE: "Should we mark this channel as unread for every message, instead of only mentions?",
+                UNREAD_NOTIFICATION_SETTING_NOTICE: "Should we mark this channel as unread for every new message, instead of only mentions?",
                 UNREAD_NOTIFICATION_SETTING_NOTICE_TITLE: "Mark unread for every message?",
                 UNREAD_NOTIFICATION_SETTING_NOTICE_DESCRIPTION: "The channel will show as unread for every message so you don't miss a thing.",
                 UNREAD_NOTIFICATION_SETTING_NOTICE_ALL_MESSAGES: "Change to all messages",
@@ -18074,7 +18074,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261141", ", Version Hash: ").concat("591171934705155930e1ff6790be22c3921da382")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261188", ", Version Hash: ").concat("287799c8a49fc542b0f262a7c5f3f47d2ebb9f37")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20308,8 +20308,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "261141", "261141"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261141")), _ = 0), _
+                let _ = parseInt((e = "261188", "261188"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261188")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35257,4 +35257,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.e5fb3c038daebc440e4c.js.map
+//# sourceMappingURL=34546.1916ad28284d57fdc986.js.map
