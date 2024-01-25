@@ -18074,7 +18074,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261204", ", Version Hash: ").concat("af223b4fc5d9ad4694fc50183eb951c2674ec69a")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261226", ", Version Hash: ").concat("6cdd252d6323169e6a9c2ca8d483af5083c7d3c0")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19303,6 +19303,11 @@
                     inlineRequire: () => E("728966").default,
                     hasStoreChangeListeners: !0
                 },
+                ChannelSafetyWarningsManager: {
+                    actions: ["CHANNEL_SELECT", "CHANNEL_UPDATES"],
+                    inlineRequire: () => E("578165").default,
+                    neverLoadBeforeConnectionOpen: !0
+                },
                 ClydeAuthorizeManager: {
                     actions: ["MESSAGE_FAILED_CLYDE_CONSENT"],
                     inlineRequire: () => E("887418").default
@@ -20308,8 +20313,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "261204", "261204"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261204")), _ = 0), _
+                let _ = parseInt((e = "261226", "261226"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261226")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -26166,6 +26171,114 @@
                 }
             }
             var r = new n
+        },
+        578165: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return s
+                }
+            }), E("222007");
+            var t = E("689988"),
+                o = E("18494"),
+                n = E("821240"),
+                r = E("761771");
+
+            function a(e) {
+                let {
+                    channelId: _
+                } = e;
+                return !!(null != _ && (0, r.isEligibleForInappropriateConversationWarning)({
+                    location: "channel_select"
+                })) && (!!(0, n.shouldShowInappropriateConversationTakeoverForChannel)(_) || !1)
+            }
+
+            function i(e) {
+                let {
+                    channels: _
+                } = e;
+                if (!(0, r.isEligibleForInappropriateConversationWarning)({
+                        location: "channel_updates"
+                    })) return !1;
+                let E = o.default.getCurrentlySelectedChannelId();
+                if (null == E) return !1;
+                let t = _.find(e => e.id === E);
+                return null != t && (!!(0, n.shouldShowInappropriateConversationTakeoverForChannelRecord)(t) || !1)
+            }
+            class I extends t.default {
+                constructor(...e) {
+                    super(...e), this.actions = {
+                        CHANNEL_SELECT: a,
+                        CHANNEL_UPDATES: i
+                    }
+                }
+            }
+            var s = new I
+        },
+        821240: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                shouldShowInappropriateConversationTakeoverForChannel: function() {
+                    return o
+                },
+                shouldShowInappropriateConversationTakeoverForChannelRecord: function() {
+                    return n
+                }
+            });
+            var t = E("764828");
+
+            function o(e) {
+                let _ = function(e) {
+                        let _ = t.default.getChannelSafetyWarnings(e);
+                        return _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2)
+                    }(e),
+                    E = _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
+                return E.length > 0 && E.every(e => null == e.dismiss_timestamp)
+            }
+
+            function n(e) {
+                if (null == e.safetyWarnings) return !1;
+                let _ = e.safetyWarnings.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
+                return _.length > 0 && _.every(e => null == e.dismiss_timestamp)
+            }
+        },
+        761771: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                isEligibleForInappropriateConversationWarning: function() {
+                    return n
+                }
+            });
+            var t = E("862205");
+            let o = (0, t.createExperiment)({
+                kind: "user",
+                id: "2024-01_inappropriate_conversation_warning",
+                label: "Inappropriate Conversation Warning",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable Inappropriate Conversation Warning",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function n(e) {
+                let {
+                    location: _,
+                    autoTrackExposure: E = !0
+                } = e, {
+                    enabled: t
+                } = o.getCurrentConfig({
+                    location: _
+                }, {
+                    autoTrackExposure: E
+                });
+                return t
+            }
         },
         303167: function(e, _, E) {
             "use strict";
@@ -35257,4 +35370,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.c0bb9b427f98932a6042.js.map
+//# sourceMappingURL=34546.41e2bc4d3fabaa98a533.js.map
