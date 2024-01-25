@@ -8187,6 +8187,7 @@
                 NITRO_HOME_CARD_USE_CUSTOM_SOUNDS: "Use custom soundboard sounds across voice channels.",
                 NITRO_HOME_CARD_UPLOAD_POWER: "Feel the upload power.",
                 NITRO_HOME_STREAM_UP_TO_4K: "Up to 4K and 60FPS.",
+                NITRO_HOME_UPLOAD_ALL_YOU_WANT: "Upload what you want with increased 500MB upload size.",
                 NITRO_HOME_SUPER_REACTIONS: "Super Reactions",
                 NITRO_HOME_SUPER_REACTIONS_DESCRIPTION: "Hype up the chat with action-packed, animated reactions.",
                 NITRO_HOME_ENTRANCE_SOUNDS_BENEFIT: "Make a splash like only Nitro subscribers can in your favorite voice channels.",
@@ -18074,7 +18075,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261318", ", Version Hash: ").concat("e9fab134863b32484a09a5f6c8b5dfae1bb42379")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261328", ", Version Hash: ").concat("cb753405fcaf99d72f174d4ae2d5d1a1b6fe002c")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20313,8 +20314,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "261318", "261318"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261318")), _ = 0), _
+                let _ = parseInt((e = "261328", "261328"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261328")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35370,4 +35371,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.30a8630d3ed37d796d6f.js.map
+//# sourceMappingURL=34546.392a0fafb0b420df5565.js.map
