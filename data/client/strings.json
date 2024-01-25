@@ -901,6 +901,7 @@
   "EMBEDDED_ACTIVITIES_INSTANCE_EMBED_INVALID_CHANNEL": "\"You cannot join Activities in this channel.\"",
   "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED": "\"$[](userHook) started an activity\"",
   "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE": "\"[!!{username}!!](usernameOnClick) started an activity\"",
+  "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_NOTIFICATION": "\"{username} started an activity\"",
   "KRUNKER_STRIKE_COACHMARK_TITLE": "\"Updated! Krunker Strike FRVR\"",
   "KRUNKER_STRIKE_COACHMARK_DESCRIPTION": "\"Squad up with friends or other players around the world and battle your way to victory in this first person shooter game.\"",
   "KRUNKER_STRIKE_COACHMARK_BUTTON_CANCEL": "\"Maybe later\"",
