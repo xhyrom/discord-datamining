@@ -16445,14 +16445,6 @@
                 listItemTooltip: "listItemTooltip_a30dfd"
             }
         },
-        679269: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                clock: "clock__88476",
-                container: "container__41fb3",
-                expirationContainer: "expirationContainer__43733"
-            }
-        },
         812931: function(e, t, n) {
             "use strict";
             e.exports = {
