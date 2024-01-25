@@ -4736,7 +4736,10 @@
   },
   "POLL_EXPIRE": {
     "url": "/channels/:param/messages/:param/expire",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PREMIUM_MARKETING": {
     "url": "/premium-marketing",
