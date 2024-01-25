@@ -8846,15 +8846,13 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enables creation of polls from the media picker",
-        "Treatment 2: Enables creation of polls from the omni button"
+        "Treatment 1: Enables creation of polls within a guild"
       ],
       "hash": 2254848082,
       "buckets": [
         -1,
         0,
-        1,
-        2
+        1
       ],
       "holdout": {
         "name": null,
@@ -8862,8 +8860,7 @@
       },
       "aa_mode": false,
       "config_keys": [
-        "enabled",
-        "mobileEntryPoint"
+        "enabled"
       ]
     },
     "rollout": {
