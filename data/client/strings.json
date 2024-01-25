@@ -6057,6 +6057,7 @@
   "ACCESSIBILITY_FONT_SCALE_CLASSIC_LABEL": "\"Classic chat text size\"",
   "ACCESSIBILITY_FONT_SCALE_CLASSIC_HINT": "\"When enabled uses a slightly smaller font size for the chat text.\"",
   "ACCESSIBILITY_ZOOM_LEVEL_LABEL": "\"Zoom level\"",
+  "ACCESSIBILITY_ZOOM_LEVEL_VALUE_LABEL": "\"Zoom level ({value})\"",
   "ACCESSIBILITY_FONT_SCALING_USE_APP": "\"Currently using the Discord-specific font scale.\"",
   "ACCESSIBILITY_FONT_SCALING_USE_OS": "\"Currently using your device's font scale.\"",
   "ACCESSIBILITY_DARK_SIDEBAR": "\"Dark Sidebar\"",
