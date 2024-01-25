@@ -14208,7 +14208,7 @@
   "HIGHLIGHTS_AND_MENTIONS": "\"Mentions\"",
   "FORM_LABEL_UNREAD_SETTINGS_OPT_IN": "\"Configure Unread Settings\"",
   "FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE": "\"More granular settings to control when channels should appear as unread.\"",
-  "UNREAD_NOTIFICATION_SETTING_NOTICE": "\"Should we mark this channel as unread for every message, instead of only mentions?\"",
+  "UNREAD_NOTIFICATION_SETTING_NOTICE": "\"Should we mark this channel as unread for every new message, instead of only mentions?\"",
   "UNREAD_NOTIFICATION_SETTING_NOTICE_TITLE": "\"Mark unread for every message?\"",
   "UNREAD_NOTIFICATION_SETTING_NOTICE_DESCRIPTION": "\"The channel will show as unread for every message so you don't miss a thing.\"",
   "UNREAD_NOTIFICATION_SETTING_NOTICE_ALL_MESSAGES": "\"Change to all messages\"",
