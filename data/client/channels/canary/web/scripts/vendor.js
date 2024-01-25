@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["73694"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -57600,7 +57600,8 @@
                     enable_channel_emojis: "Enables channel emoji UI components",
                     mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls",
                     enable_new_search_filters: "Enables new search filters behavior",
-                    force_channel_list_v2: "Force channel list V2"
+                    force_channel_list_v2: "Force channel list V2",
+                    render_native_message_previews_pins: "Render native message previews in pins (Android only)"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -118380,7 +118381,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261448"
+                                build_number: "261457"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134471,4 +134472,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.ffa8748653254bcebd61.js.map
+//# sourceMappingURL=73694.7d6c4d1443277ed49f59.js.map
