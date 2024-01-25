@@ -4095,11 +4095,7 @@
   },
   "APPLICATION_COMMAND_INDEX_USER": {
     "url": "/users/@me/application-command-index",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": []
   },
   "GUILD_COMMANDS_FOR_APPLICATION": {
     "url": "/guilds/:param/application-commands/:param",
