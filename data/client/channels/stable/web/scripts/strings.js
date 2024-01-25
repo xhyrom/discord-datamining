@@ -14228,7 +14228,7 @@
                 HIGHLIGHTS_AND_MENTIONS: "Mentions",
                 FORM_LABEL_UNREAD_SETTINGS_OPT_IN: "Configure Unread Settings",
                 FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE: "More granular settings to control when channels should appear as unread.",
-                UNREAD_NOTIFICATION_SETTING_NOTICE: "Should we mark this channel as unread for every message, instead of only mentions?",
+                UNREAD_NOTIFICATION_SETTING_NOTICE: "Should we mark this channel as unread for every new message, instead of only mentions?",
                 UNREAD_NOTIFICATION_SETTING_NOTICE_TITLE: "Mark unread for every message?",
                 UNREAD_NOTIFICATION_SETTING_NOTICE_DESCRIPTION: "The channel will show as unread for every message so you don't miss a thing.",
                 UNREAD_NOTIFICATION_SETTING_NOTICE_ALL_MESSAGES: "Change to all messages",
@@ -15065,8 +15065,6 @@
                 COLLECTIBLES_SFA_STARTER_BANNER_DESCRIPTION: "Collect these sweet, bonus items when you join Nitro! $[Unlock with Nitro](getPremium)",
                 COLLECTIBLES_SFA_HERO_BANNER_SUBTITLE: "Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.",
                 COLLECTIBLES_SFA_BANNER_DESCRIPTION: "Make your profile feel alive with snazzy profile effects and avatar decorations. What's not to love?",
-                COLLECTIBLES_CYBERPUNK_COACHMARK_HEADER: "NEW in the Shop! Cyberpunk",
-                COLLECTIBLES_CYBERPUNK_COACHMARK_DESC: "The future is here, and it's looking good.",
                 COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION: "{sender} gifted you an avatar decoration!",
                 COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT: "{sender} gifted you a profile effect!",
                 COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION_UNKNOWN_SENDER: "You have been gifted an avatar decoration!",
@@ -15442,7 +15440,7 @@
                 GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_LABEL: "Enter 2FA verification code",
                 GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_PLACEHOLDER: "MFA Code",
                 CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_TITLE: "Disable Monetization",
-                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "This will disable both server subscriptions **and** products for **!!{guildName}!!**. There should be no remaining payouts, and all tiers and product listings must be deleted in order to complete this action.",
+                CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "This will disable Server Subscriptions and Server Products for **!!{guildName}!!**. There should be no remaining payouts and all subscription tiers must be deleted in order to complete this action.",
                 CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_CTA: "Disable Monetization",
                 CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_HEADER: "Disable Monetization",
                 CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_DESCRIPTION: "Disable server subscriptions and products for **!!{guildName}!!**. To delete your payment team you will need to do so in the [Developer Portal]({url}).",
@@ -16747,6 +16745,8 @@
                 STAFF_PTO_NOTICE: "Heads up! This person may be Out of Office.",
                 CONSOLE_PLAYSTATION_STAGING_TRANSFER_VOICE: "Transfer to PlayStation (sp-int)",
                 CONSOLE_PLAYSTATION_STAGING_JOIN_VOICE: "Join on PlayStation (sp-int)",
+                SEARCH_EVERYWHERE: "Search Everywhere",
+                SEARCH_FAVORITES: "Search Favorites",
                 ROLE_PERMISSIONS_CONNECT_DESCRIPTION_THREADS: "Allows members to talk in voice and hear others in this channel's threads.",
                 ROLE_PERMISSIONS_CONNECT_DESCRIPTION_THREADS_EVERYONE: "Allows members to talk in voice and hear others in this channel's threads.",
                 ROLE_PERMISSIONS_SPEAK_DESCRIPTION_THREADS: "Allows members to talk in voice in this channel's threads. If this permission is disabled, members are default muted until somebody with the “Mute Members” permission un-mutes them.",
@@ -18074,7 +18074,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261141", ", Version Hash: ").concat("591171934705155930e1ff6790be22c3921da382")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261314", ", Version Hash: ").concat("b92a880362358a9cf8b448ecf5084debef22b87f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19303,6 +19303,11 @@
                     inlineRequire: () => E("728966").default,
                     hasStoreChangeListeners: !0
                 },
+                ChannelSafetyWarningsManager: {
+                    actions: ["CHANNEL_SELECT", "CHANNEL_UPDATES"],
+                    inlineRequire: () => E("578165").default,
+                    neverLoadBeforeConnectionOpen: !0
+                },
                 ClydeAuthorizeManager: {
                     actions: ["MESSAGE_FAILED_CLYDE_CONSENT"],
                     inlineRequire: () => E("887418").default
@@ -20308,8 +20313,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "261141", "261141"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261141")), _ = 0), _
+                let _ = parseInt((e = "261314", "261314"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261314")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -26166,6 +26171,114 @@
                 }
             }
             var r = new n
+        },
+        578165: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return s
+                }
+            }), E("222007");
+            var t = E("689988"),
+                o = E("18494"),
+                n = E("821240"),
+                r = E("761771");
+
+            function a(e) {
+                let {
+                    channelId: _
+                } = e;
+                return !!(null != _ && (0, r.isEligibleForInappropriateConversationWarning)({
+                    location: "channel_select"
+                })) && (!!(0, n.shouldShowInappropriateConversationTakeoverForChannel)(_) || !1)
+            }
+
+            function i(e) {
+                let {
+                    channels: _
+                } = e;
+                if (!(0, r.isEligibleForInappropriateConversationWarning)({
+                        location: "channel_updates"
+                    })) return !1;
+                let E = o.default.getCurrentlySelectedChannelId();
+                if (null == E) return !1;
+                let t = _.find(e => e.id === E);
+                return null != t && (!!(0, n.shouldShowInappropriateConversationTakeoverForChannelRecord)(t) || !1)
+            }
+            class I extends t.default {
+                constructor(...e) {
+                    super(...e), this.actions = {
+                        CHANNEL_SELECT: a,
+                        CHANNEL_UPDATES: i
+                    }
+                }
+            }
+            var s = new I
+        },
+        821240: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                shouldShowInappropriateConversationTakeoverForChannel: function() {
+                    return o
+                },
+                shouldShowInappropriateConversationTakeoverForChannelRecord: function() {
+                    return n
+                }
+            });
+            var t = E("764828");
+
+            function o(e) {
+                let _ = function(e) {
+                        let _ = t.default.getChannelSafetyWarnings(e);
+                        return _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2)
+                    }(e),
+                    E = _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
+                return E.length > 0 && E.every(e => null == e.dismiss_timestamp)
+            }
+
+            function n(e) {
+                if (null == e.safetyWarnings) return !1;
+                let _ = e.safetyWarnings.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
+                return _.length > 0 && _.every(e => null == e.dismiss_timestamp)
+            }
+        },
+        761771: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                isEligibleForInappropriateConversationWarning: function() {
+                    return n
+                }
+            });
+            var t = E("862205");
+            let o = (0, t.createExperiment)({
+                kind: "user",
+                id: "2024-01_inappropriate_conversation_warning",
+                label: "Inappropriate Conversation Warning",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable Inappropriate Conversation Warning",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function n(e) {
+                let {
+                    location: _,
+                    autoTrackExposure: E = !0
+                } = e, {
+                    enabled: t
+                } = o.getCurrentConfig({
+                    location: _
+                }, {
+                    autoTrackExposure: E
+                });
+                return t
+            }
         },
         303167: function(e, _, E) {
             "use strict";
@@ -35257,4 +35370,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.e5fb3c038daebc440e4c.js.map
+//# sourceMappingURL=34546.c02bfef4ef54f65effd6.js.map

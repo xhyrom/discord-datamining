@@ -74,12 +74,12 @@
                 return -e.joinedAtTimestamp
             }
 
-            function g() {
+            function f() {
                 return new a.default(_, M)
             }(n = r || (r = {})).NEW_GUILD_MEMBER = "NEW_GUILD_MEMBER", n.CURRENT_GUILD_MEMBER = "CURRENT_GUILD_MEMBER", n.INCLUDED_IN_SEARCH_RESULTS = "INCLUDED_IN_SEARCH_RESULTS";
             class b {
                 reset() {
-                    this._membersMap.clear(), this._membersMap = g(), this.resetNewMemberTimestamp()
+                    this._membersMap.clear(), this._membersMap = f(), this.resetNewMemberTimestamp()
                 }
                 resetNewMemberTimestamp() {
                     this.newMemberTimestamp = Date.now()
@@ -196,7 +196,7 @@
                     return this._membersMap.version
                 }
                 constructor(e) {
-                    this.newMemberTimestamp = Date.now(), this.guildId = e, this._membersMap = g()
+                    this.newMemberTimestamp = Date.now(), this.guildId = e, this._membersMap = f()
                 }
             }
         },
@@ -440,9 +440,6 @@
                 getPaginatedMembers() {
                     return null != this._pagination && this._initialized ? [this._pagination.paginatedMembers, this._pagination.version] : [{}, 0]
                 }
-                calculateNewContinuationToken(e) {
-                    return null != this._pagination && this._initialized ? this._pagination.calculateNewContinuationToken(e) : null
-                }
                 updatePaginationToken(e) {
                     return null != this._pagination && !!this._initialized && this._pagination.updatePaginationToken(e)
                 }
@@ -458,41 +455,40 @@
             "use strict";
             i.r(t), i.d(t, {
                 PAGINATION_PAGE_SIZE_OPTIONS: function() {
-                    return l
+                    return a
                 },
                 MAX_VISIBLE_PAGES: function() {
-                    return h
+                    return l
                 },
                 createDefaultMemberSafetyPaginationState: function() {
-                    return d
+                    return h
                 },
                 getSearchChunkLimit: function() {
-                    return o
+                    return d
                 },
                 GuildMemberSafetyPagination: function() {
-                    return m
+                    return o
                 }
             }), i("808653"), i("424973"), i("222007");
-            var r, n, s = i("525065"),
-                u = i("26989"),
-                a = i("490931");
-            let l = [12, 25, 50, 100],
-                h = 7;
+            var r, n, s = i("26989"),
+                u = i("490931");
+            let a = [12, 25, 50, 100],
+                l = 7;
 
-            function d() {
+            function h() {
                 return {
-                    pageSize: l[0],
+                    pageSize: a[0],
                     currentPage: 1,
                     continuationToken: null
                 }
-            }(n = r || (r = {}))[n.FORWARD = 1] = "FORWARD", n[n.BACKWARD = -1] = "BACKWARD";
-
-            function o(e) {
-                return Math.max(5 * e.pageSize, 250)
             }
-            class m {
+
+            function d(e) {
+                return Math.max(5 * e.pageSize, 250)
+            }(n = r || (r = {}))[n.FORWARD = 1] = "FORWARD", n[n.BACKWARD = -1] = "BACKWARD";
+            class o {
                 reset() {
-                    this._paginationState = d(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
+                    this._paginationState = h(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
                 }
                 isMemberOnCurrentPage(e) {
                     var t;
@@ -513,18 +509,6 @@
                 }
                 _rebuildPaginationChunksFromStoredMembers() {
                     return this._cachedPaginationChunks = this._buildPaginationFromMemberIds(this._sortedMemberIds), this._version += 1, !0
-                }
-                calculateNewContinuationToken(e) {
-                    var t, i, r;
-                    let n = null !== (t = s.default.getMemberCount(this.guildId)) && void 0 !== t ? t : this._sortedMemberIds.length,
-                        u = this._sortedMemberIds.length - 1,
-                        a = this._sortedMemberIds[u],
-                        l = Math.min(o(this._paginationState), u);
-                    let h = null != (r = e).totalResultsCount ? r.totalResultsCount : r.currentPage * r.pageSize,
-                        d = null !== (i = this._sortedMemberIds[h - 1]) && void 0 !== i ? i : a;
-                    if (null == this._paginationState.continuationToken) return h < l ? this._paginationState.continuationToken : d;
-                    let m = this._sortedMemberIds.findIndex(e => e === this._paginationState.continuationToken);
-                    return -1 === m ? d : h > n ? a : m - h >= 0 ? this._paginationState.continuationToken : Math.ceil(h / l) > Math.ceil(m / l) ? d : this._paginationState.continuationToken
                 }
                 getPaginationState() {
                     return this._paginationState
@@ -566,10 +550,10 @@
                         i = e;
                     i < this._sortedMemberIds.length && (i = this._sortedMemberIds.length - 1), i < 0 && (i = 0);
                     let r = this._sortedMemberIds[e],
-                        n = u.default.getMember(this.guildId, r);
+                        n = s.default.getMember(this.guildId, r);
                     for (; null == n && !((e += t) < 0) && !(e >= this._sortedMemberIds.length);) {
                         ;
-                        r = this._sortedMemberIds[e], (null == (n = u.default.getMember(this.guildId, r)) ? void 0 : n.joinedAt) == null && (n = null)
+                        r = this._sortedMemberIds[e], (null == (n = s.default.getMember(this.guildId, r)) ? void 0 : n.joinedAt) == null && (n = null)
                     }
                     return n
                 }
@@ -577,11 +561,11 @@
                     let {
                         pageSize: e,
                         currentPage: t
-                    } = this._paginationState, i = o(this._paginationState), r = Math.min((Math.floor(e * t / i) + 1) * (i - 1), this._sortedMemberIds.length - 1), n = this._findMember(r, -1), s = this._findMember(Math.max(r - i, 0), 1);
+                    } = this._paginationState, i = d(this._paginationState), r = Math.min((Math.floor(e * t / i) + 1) * (i - 1), this._sortedMemberIds.length - 1), n = this._findMember(r, -1), s = this._findMember(Math.max(r - i, 0), 1);
                     return {
                         limit: i,
-                        after: (0, a.createMemberSearchCursor)(n),
-                        before: (0, a.createMemberSearchCursor)(s)
+                        after: (0, u.createMemberSearchCursor)(n),
+                        before: (0, u.createMemberSearchCursor)(s)
                     }
                 }
                 get paginatedMembers() {
@@ -594,7 +578,7 @@
                     this._reduceMemberIdsToPaginationChunks = (e, t, i) => {
                         let r = Math.floor(i / this._paginationState.pageSize) + 1;
                         return null == e[r] && (e[r] = []), e[r].push(t), e
-                    }, this.guildId = e, this._paginationState = d(), this._version = 0;
+                    }, this.guildId = e, this._paginationState = h(), this._version = 0;
                     let [i, r] = this._initPaginationFromRawMembers(t);
                     this._sortedMemberIds = i, this._cachedPaginationChunks = r, this._version += 1
                 }
@@ -697,8 +681,8 @@
                             return !1
                         }(e, t)) return !1;
                     if (u.size > 0) {
-                        var g, b;
-                        if (g = e, !(0 !== (b = u).size && Array.from(b).every(e => g.roles.includes(e)))) return !1
+                        var f, b;
+                        if (f = e, !(0 !== (b = u).size && Array.from(b).every(e => f.roles.includes(e)))) return !1
                     }
                     if (null != o.afterDate && e.joinedAtTimestamp < o.afterDate || null != o.beforeDate && e.joinedAtTimestamp > o.beforeDate || null != m.afterDate && a.default.extractTimestamp(e.userId) < m.afterDate || null != m.beforeDate && a.default.extractTimestamp(e.userId) > m.beforeDate || null != _ && e.sourceInviteCode !== _ || null != M && e.joinSourceType !== M) return !1;
                     if (i || r || n || s) return !!(i && e.hasUnusualDmActivity || r && (0, h.isMemberCommunicationDisabled)(e) || n && e.hasUnusualAccountActivity || s && (0, l.hasAutomodQuarantinedProfile)(e)) || !1;
@@ -778,7 +762,7 @@
                 i.reset(t)
             }
 
-            function g() {
+            function f() {
                 return !1
             }
 
@@ -789,7 +773,7 @@
                 return i.rebuildAllMembers()
             }
 
-            function f(e) {
+            function g(e) {
                 let {
                     guildId: t,
                     userId: i
@@ -857,10 +841,6 @@
                 getElasticSearchPaginationByGuildId(e) {
                     let t = _(e);
                     return t.getElasticSearchPagination()
-                }
-                calculateNewContinuationToken(e, t) {
-                    let i = _(e);
-                    return i.calculateNewContinuationToken(t)
                 }
                 getEnhancedMember(e, t) {
                     let i = _(e);
@@ -946,8 +926,8 @@
                     } = e, r = _(t);
                     return r.updateServerMembers(i)
                 },
-                GUILD_MEMBER_ADD: g,
-                GUILD_MEMBER_UPDATE: g,
+                GUILD_MEMBER_ADD: f,
+                GUILD_MEMBER_UPDATE: f,
                 GUILD_MEMBER_UPDATE_LOCAL: function(e) {
                     let {
                         guildId: t
@@ -970,8 +950,8 @@
                     } = e, r = _(t);
                     return r.updateMembersByMemberIds([i.user.id])
                 },
-                GUILD_ROLE_MEMBER_REMOVE: f,
-                GUILD_ROLE_MEMBER_ADD: f,
+                GUILD_ROLE_MEMBER_REMOVE: g,
+                GUILD_ROLE_MEMBER_ADD: g,
                 THREAD_MEMBER_LIST_UPDATE: function(e) {
                     let {
                         guildId: t,
@@ -1165,4 +1145,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55639.406bee7d3e2064cd65d4.js.map
+//# sourceMappingURL=55639.05e4bf0b7a6dc29862b8.js.map

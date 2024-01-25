@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["58166"], {
+    ["80530"], {
         630086: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -39,7 +39,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return E
                 }
             });
             var a = n("374014"),
@@ -54,7 +54,7 @@
                 f = n("49111"),
                 g = n("782340");
 
-            function p(e) {
+            function E(e) {
                 let {
                     sourceName: t,
                     sourceApplicationId: n
@@ -79,13 +79,13 @@
                         sourceName: null !== (t = null == u ? void 0 : u.sourceName) && void 0 !== t ? t : null == o ? void 0 : o.name,
                         sourceApplicationId: null !== (n = null == u ? void 0 : u.id) && void 0 !== n ? n : null == o ? void 0 : o.id
                     }
-                }(e), p = u.default.getChannelId(), _ = [l.default.getId()];
-                return null != p && (_ = Object.keys(r.default.getVoiceStatesForChannel(p))), {
+                }(e), E = u.default.getChannelId(), p = [l.default.getId()];
+                return null != E && (p = Object.keys(r.default.getVoiceStatesForChannel(E))), {
                     id: o.default.fromTimestamp(Date.now()),
                     version: c.CURRENT_CLIP_METADATA_VERSION,
                     applicationName: null != t ? t : g.default.Messages.CLIPS_UNKNOWN_SOURCE,
                     applicationId: n,
-                    users: _,
+                    users: p,
                     clipMethod: "manual",
                     length: 0,
                     thumbnail: ""
@@ -172,13 +172,13 @@
                     return M
                 },
                 updateClipsEnabled: function() {
-                    return L
+                    return R
                 },
                 updateDecoupledClipsEnabled: function() {
-                    return b
+                    return L
                 },
                 updateRemindersEnabled: function() {
-                    return R
+                    return b
                 },
                 updateClipsStorageLocation: function() {
                     return O
@@ -193,10 +193,10 @@
                     return U
                 },
                 saveClip: function() {
-                    return F
+                    return V
                 },
                 updateClipMetadata: function() {
-                    return V
+                    return k
                 },
                 clearClipsSession: function() {
                     return x
@@ -205,10 +205,10 @@
                     return H
                 },
                 loadClipsDirectory: function() {
-                    return q
+                    return W
                 },
                 deleteClip: function() {
-                    return W
+                    return q
                 },
                 exportClip: function() {
                     return B
@@ -225,10 +225,10 @@
                 c = n("268491"),
                 f = n("373469"),
                 g = n("271938"),
-                p = n("42887"),
-                _ = n("568307"),
-                m = n("205817"),
-                E = n("599110"),
+                E = n("42887"),
+                p = n("568307"),
+                _ = n("205817"),
+                m = n("599110"),
                 h = n("773336"),
                 S = n("709681"),
                 v = n("386045"),
@@ -236,8 +236,8 @@
                 I = n("881095"),
                 A = n("997942"),
                 T = n("310238"),
-                y = n("99366"),
-                N = n("80028"),
+                N = n("99366"),
+                y = n("80028"),
                 D = n("49111");
 
             function M(e) {
@@ -248,11 +248,11 @@
                     e.allowVoiceRecording = a.BoolValue.create({
                         value: t
                     })
-                }, o.UserSettingsDelay.INFREQUENT_USER_ACTION), E.default.track(D.AnalyticEvents.CLIPS_SETTINGS_UPDATED, {
+                }, o.UserSettingsDelay.INFREQUENT_USER_ACTION), m.default.track(D.AnalyticEvents.CLIPS_SETTINGS_UPDATED, {
                     allow_voice_recording: t
                 })
             }
-            async function L(e) {
+            async function R(e) {
                 let {
                     clipsEnabled: t,
                     guildId: n,
@@ -266,7 +266,7 @@
                             decoupledClipsEnabled: !1
                         }
                     }
-                }), a && E.default.track(D.AnalyticEvents.CLIPS_SETTINGS_UPDATED, {
+                }), a && m.default.track(D.AnalyticEvents.CLIPS_SETTINGS_UPDATED, {
                     clips_enabled: t,
                     guild_id: n,
                     ...!t && {
@@ -275,7 +275,7 @@
                 })
             }
 
-            function b(e) {
+            function L(e) {
                 let {
                     enabled: t,
                     trackAnalytics: n = !1
@@ -288,7 +288,7 @@
                         },
                         decoupledClipsEnabled: t
                     }
-                }), n && E.default.track(D.AnalyticEvents.CLIPS_SETTINGS_UPDATED, {
+                }), n && m.default.track(D.AnalyticEvents.CLIPS_SETTINGS_UPDATED, {
                     ...t && {
                         clips_enabled: !0
                     },
@@ -296,7 +296,7 @@
                 })
             }
 
-            function R(e) {
+            function b(e) {
                 i.default.dispatch({
                     type: "CLIPS_SETTINGS_UPDATE",
                     settings: {
@@ -343,24 +343,24 @@
 
             function G(e, t) {
                 var n, a, i, l, u, s, r, o, f, g;
-                let p = new Map;
+                let E = new Map;
                 for (let e in t.framesEncodedByEncoder) {
                     let a = t.framesEncodedByEncoder[e],
                         i = (0, d.parseEncoder)(e),
-                        l = null !== (n = p.get(i)) && void 0 !== n ? n : 0;
-                    p.set(i, l + a)
+                        l = null !== (n = E.get(i)) && void 0 !== n ? n : 0;
+                    E.set(i, l + a)
                 }
                 return {
                     ...e,
-                    frames_encoded_nvidia_cuda: null !== (a = p.get(d.Encoders.NVIDIA_CUDA)) && void 0 !== a ? a : 0,
-                    frames_encoded_nvidia_direct3d: null !== (i = p.get(d.Encoders.NVIDIA_DIRECT_3D)) && void 0 !== i ? i : 0,
-                    frames_encoded_openh264: null !== (l = p.get(d.Encoders.OPENH264)) && void 0 !== l ? l : 0,
-                    frames_encoded_videotoolbox: null !== (u = p.get(d.Encoders.VIDEOTOOLBOX)) && void 0 !== u ? u : 0,
-                    frames_encoded_amd_direct3d: null !== (s = p.get(d.Encoders.AMD_DIRECT_3D)) && void 0 !== s ? s : 0,
-                    frames_encoded_intel: null !== (r = p.get(d.Encoders.INTEL)) && void 0 !== r ? r : 0,
-                    frames_encoded_intel_direct3d: null !== (o = p.get(d.Encoders.INTEL_DIRECT_3D)) && void 0 !== o ? o : 0,
-                    frames_encoded_uncategorized: null !== (f = p.get(d.Encoders.UNCATEGORIZED)) && void 0 !== f ? f : 0,
-                    frames_encoded_unknown: null !== (g = p.get(d.Encoders.UNKNOWN)) && void 0 !== g ? g : 0,
+                    frames_encoded_nvidia_cuda: null !== (a = E.get(d.Encoders.NVIDIA_CUDA)) && void 0 !== a ? a : 0,
+                    frames_encoded_nvidia_direct3d: null !== (i = E.get(d.Encoders.NVIDIA_DIRECT_3D)) && void 0 !== i ? i : 0,
+                    frames_encoded_openh264: null !== (l = E.get(d.Encoders.OPENH264)) && void 0 !== l ? l : 0,
+                    frames_encoded_videotoolbox: null !== (u = E.get(d.Encoders.VIDEOTOOLBOX)) && void 0 !== u ? u : 0,
+                    frames_encoded_amd_direct3d: null !== (s = E.get(d.Encoders.AMD_DIRECT_3D)) && void 0 !== s ? s : 0,
+                    frames_encoded_intel: null !== (r = E.get(d.Encoders.INTEL)) && void 0 !== r ? r : 0,
+                    frames_encoded_intel_direct3d: null !== (o = E.get(d.Encoders.INTEL_DIRECT_3D)) && void 0 !== o ? o : 0,
+                    frames_encoded_uncategorized: null !== (f = E.get(d.Encoders.UNCATEGORIZED)) && void 0 !== f ? f : 0,
+                    frames_encoded_unknown: null !== (g = E.get(d.Encoders.UNKNOWN)) && void 0 !== g ? g : 0,
                     frames_submitted: t.framesSubmitted,
                     frames_submitted_during_clip: t.framesSubmittedDuringClip,
                     frames_encoded: t.framesEncoded,
@@ -379,26 +379,26 @@
                     saved_at: t.savedAt
                 }
             }
-            async function k(e) {
+            async function F(e) {
                 let t = v.default.getSettings(),
                     n = t.storageLocation,
                     a = (0, I.default)(e),
                     d = "".concat((0, C.default)(a.applicationName.substring(0, 20)), "_").concat(a.id, ".mp4"),
                     s = l.default.fileManager.join(n, d),
-                    r = p.default.getMediaEngine(),
+                    r = E.default.getMediaEngine(),
                     o = JSON.stringify(a),
                     c = null != e ? (0, u.decodeStreamKey)(e).ownerId : void 0,
-                    _ = function(e) {
+                    p = function(e) {
                         var t;
                         let n, a, i;
                         if (null != e) {
-                            n = null != e ? m.default.getRTCConnection(e) : null;
+                            n = null != e ? _.default.getRTCConnection(e) : null;
                             let t = (0, u.decodeStreamKey)(e);
                             a = t.guildId, i = t.channelId
                         } else {
                             let e = g.default.getId(),
                                 t = f.default.getActiveStreamForUser(e, null);
-                            n = null != t ? m.default.getRTCConnection((0, u.encodeStreamKey)(t)) : null, a = null == t ? void 0 : t.guildId, i = null == t ? void 0 : t.channelId
+                            n = null != t ? _.default.getRTCConnection((0, u.encodeStreamKey)(t)) : null, a = null == t ? void 0 : t.guildId, i = null == t ? void 0 : t.channelId
                         }
                         let l = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
                         return {
@@ -424,10 +424,10 @@
                         duration: e,
                         thumbnail: t,
                         clipStats: n
-                    } = await (null != c ? r.saveClipForUser(c, s, o) : r.saveClip(s, o)), i = G(_, n);
-                    i.clip_save_time_ms = n.clipSaveTimeMs, i.clip_size_bytes = n.clipSizeBytes, null != n.viewerDecodeFps && (i.decode_fps_during_clip = n.viewerDecodeFps, i.encode_fps_during_clip = n.viewerEncodeFps, i.target_fps = null), E.default.track(D.AnalyticEvents.CLIP_SAVED, i);
-                    let d = await (null != l.default.clips.getClipProtocolURLFromPath ? (0, y.createThumbnailFromVideo)(l.default.clips.getClipProtocolURLFromPath(s), 0) : (0, y.createThumbnail)(t));
-                    return a.thumbnail = d, a.length = e, N.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (h = null == d ? void 0 : d.length) && void 0 !== h ? h : 0, " bytes thumbnail.")), await r.updateClipMetadata(s, JSON.stringify(a)), {
+                    } = await (null != c ? r.saveClipForUser(c, s, o) : r.saveClip(s, o)), i = G(p, n);
+                    i.clip_save_time_ms = n.clipSaveTimeMs, i.clip_size_bytes = n.clipSizeBytes, null != n.viewerDecodeFps && (i.decode_fps_during_clip = n.viewerDecodeFps, i.encode_fps_during_clip = n.viewerEncodeFps, i.target_fps = null), m.default.track(D.AnalyticEvents.CLIP_SAVED, i);
+                    let d = await (null != l.default.clips.getClipProtocolURLFromPath ? (0, N.createThumbnailFromVideo)(l.default.clips.getClipProtocolURLFromPath(s), 0) : (0, N.createThumbnail)(t));
+                    return a.thumbnail = d, a.length = e, y.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (h = null == d ? void 0 : d.length) && void 0 !== h ? h : 0, " bytes thumbnail.")), await r.updateClipMetadata(s, JSON.stringify(a)), {
                         ...a,
                         filepath: s
                     }
@@ -435,12 +435,12 @@
                     if (null != e && i.default.dispatch({
                             type: "CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR",
                             clipId: a.id
-                        }), !("errorMessage" in n)) throw E.default.track(D.AnalyticEvents.CLIP_SAVE_FAILURE, _), n;
-                    let t = G(_, n);
-                    throw t.error_at = n.errorAt, t.error_message = n.errorMessage, E.default.track(D.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
+                        }), !("errorMessage" in n)) throw m.default.track(D.AnalyticEvents.CLIP_SAVE_FAILURE, p), n;
+                    let t = G(p, n);
+                    throw t.error_at = n.errorAt, t.error_message = n.errorMessage, m.default.track(D.AnalyticEvents.CLIP_SAVE_FAILURE, t), n.errorMessage
                 }
             }
-            async function F(e) {
+            async function V(e) {
                 var t;
                 let {
                     enableDecoupledGameClipping: n
@@ -457,7 +457,7 @@
                 });
                 if (v.default.getIsAtMaxSaveClipOperations()) return;
                 let l = v.default.getSettings().clipsEnabled && null != f.default.getCurrentUserActiveStream(),
-                    d = n && v.default.getSettings().decoupledClipsEnabled && (null === (t = _.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && p.default.hasClipsSource(),
+                    d = n && v.default.getSettings().decoupledClipsEnabled && (null === (t = p.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && E.default.hasClipsSource(),
                     o = null != e && null != f.default.getActiveStreamForStreamKey(e) && a;
                 if (!l && !d && !o) return;
                 let c = f.default.getCurrentUserActiveStream(),
@@ -465,22 +465,22 @@
                 i.default.dispatch({
                     type: "CLIPS_SAVE_CLIP_START"
                 });
-                let m = (0, S.playSound)("clip_save", .5),
-                    E = performance.now();
+                let _ = (0, S.playSound)("clip_save", .5),
+                    m = performance.now();
                 try {
-                    let t = await k(null != e ? e : g);
+                    let t = await F(null != e ? e : g);
                     i.default.dispatch({
                         type: "CLIPS_SAVE_CLIP",
                         clip: t
                     })
                 } catch (e) {
-                    N.ClipsLogger.error("Clip Failed to Save", e), null == m || m.stop(), (0, S.playSound)("clip_error", .5), i.default.dispatch({
+                    y.ClipsLogger.error("Clip Failed to Save", e), null == _ || _.stop(), (0, S.playSound)("clip_error", .5), i.default.dispatch({
                         type: "CLIPS_SAVE_CLIP_ERROR"
                     })
                 }
-                N.ClipsLogger.info("".concat(v.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - E), "ms"))
+                y.ClipsLogger.info("".concat(v.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - m), "ms"))
             }
-            async function V(e, t) {
+            async function k(e, t) {
                 let n = v.default.getClips().find(t => t.id === e);
                 if (null == n) return;
                 let a = {
@@ -488,7 +488,7 @@
                         ...t
                     },
                     l = await (0, A.validateClipMetadata)(a);
-                null != l && (await p.default.getMediaEngine().updateClipMetadata(a.filepath, JSON.stringify(a)), E.default.track(D.AnalyticEvents.CLIP_EDITED, {
+                null != l && (await E.default.getMediaEngine().updateClipMetadata(a.filepath, JSON.stringify(a)), m.default.track(D.AnalyticEvents.CLIP_EDITED, {
                     clip_id: a.id
                 }), i.default.dispatch({
                     type: "CLIPS_UPDATE_METADATA",
@@ -507,7 +507,7 @@
                     type: "CLIPS_CLEAR_NEW_CLIP_IDS"
                 })
             }
-            async function q(e) {
+            async function W(e) {
                 var t;
                 if (!(0, h.isDesktop)() || (null === (t = l.default.clips) || void 0 === t ? void 0 : t.loadClipsDirectory) == null) return;
                 let n = await l.default.clips.loadClipsDirectory(e),
@@ -524,7 +524,7 @@
                     clips: a
                 })
             }
-            async function W(e) {
+            async function q(e) {
                 var t;
                 (0, h.isDesktop)() && (null === (t = l.default.clips) || void 0 === t ? void 0 : t.deleteClip) != null && (await l.default.clips.deleteClip(e), i.default.dispatch({
                     type: "CLIPS_DELETE_CLIP",
@@ -532,7 +532,7 @@
                 }))
             }
             async function B(e, t) {
-                let n = p.default.getMediaEngine(),
+                let n = E.default.getMediaEngine(),
                     a = await n.exportClip(e.filepath, t);
                 return (0, T.default)(a)
             }
@@ -725,7 +725,7 @@
                 c = n("430475"),
                 f = n("324261"),
                 g = n("49111");
-            class p {
+            class E {
                 get(e) {
                     return !this._set.hasOwnProperty(e) && (this._set[e] = this._defaultValueFunc()), this._set[e]
                 }
@@ -742,7 +742,7 @@
                     this._set = {}, this._defaultValueFunc = e
                 }
             }
-            let _ = new class e {
+            let p = new class e {
                     request(e, t) {
                         this.requested.get(e).add(t)
                     }
@@ -751,7 +751,7 @@
                     }
                     finishRequesting(e, t) {
                         let n = this.requested.get(e);
-                        t.forEach(e => n.delete(e)), _.compact(e)
+                        t.forEach(e => n.delete(e)), p.compact(e)
                     }
                     getRequested(e) {
                         return this.requested.get(e)
@@ -769,12 +769,12 @@
                         0 === this.requested.get(e).size && this.requested.delete(e)
                     }
                     constructor() {
-                        this.requested = new p(() => new Set)
+                        this.requested = new E(() => new Set)
                     }
                 },
-                m = null;
+                _ = null;
 
-            function E(e, t) {
+            function m(e, t) {
                 let n = (0, o.isForumActivityExperimentEnabled)(e);
                 if (n) {
                     let {
@@ -808,7 +808,7 @@
                     loaded: n,
                     message: a
                 } = (0, l.useStateFromStoresObject)([f.default], () => f.default.getMessageState(t.id));
-                return null != e && E(t.guild_id, t.id) && A(e, t.id), {
+                return null != e && m(t.guild_id, t.id) && A(e, t.id), {
                     loaded: n,
                     mostRecentMessage: a
                 }
@@ -822,8 +822,8 @@
                         loaded: l,
                         firstMessage: d
                     } = c.default.getMessage(t);
-                    if (a = l, i = d, !a && null == i || E(e.guild_id, t)) _.request(e.id, t), n = !0
-                }), n && null == m && (m = setTimeout(T, 0))
+                    if (a = l, i = d, !a && null == i || m(e.guild_id, t)) p.request(e.id, t), n = !0
+                }), n && null == _ && (_ = setTimeout(T, 0))
             }
 
             function I(e) {
@@ -831,21 +831,21 @@
             }
 
             function A(e, t) {
-                if (_.hasRequested(e.id, t)) return;
+                if (p.hasRequested(e.id, t)) return;
                 let n = (0, r.computeThreadIdsSnapshot)(e.id),
                     a = n.findIndex(e => e === t),
-                    i = n.slice(a, a + 5).filter(t => !_.hasRequested(e.id, t));
+                    i = n.slice(a, a + 5).filter(t => !p.hasRequested(e.id, t));
                 C(e, i)
             }
             async function T() {
                 try {
-                    for (; _.hasNext();) await y(_.next())
+                    for (; p.hasNext();) await N(p.next())
                 } finally {
-                    m = null
+                    _ = null
                 }
             }
-            async function y(e) {
-                let t = _.getNextBatch(e, 10);
+            async function N(e) {
+                let t = p.getNextBatch(e, 10);
                 try {
                     var n;
                     if (0 === t.length) return;
@@ -867,7 +867,7 @@
                         threads: i
                     })
                 } catch (e) {} finally {
-                    _.finishRequesting(e, t)
+                    p.finishRequesting(e, t)
                 }
             }
         },
@@ -875,7 +875,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return m
                 }
             });
             var a = n("446674"),
@@ -907,12 +907,12 @@
                 return o[e]
             }
 
-            function p(e) {
+            function E(e) {
                 var t;
                 return null === (t = o[e]) || void 0 === t ? void 0 : t.message
             }
 
-            function _(e) {
+            function p(e) {
                 let {
                     threads: t,
                     mostRecentMessages: n
@@ -921,7 +921,7 @@
                     f(e.channel_id, e)
                 })
             }
-            class m extends a.default.Store {
+            class _ extends a.default.Store {
                 initialize() {
                     this.waitFor(d.default, u.default)
                 }
@@ -932,8 +932,8 @@
                     }), o[e]
                 }
             }
-            m.displayName = "ForumPostRecentMessageStore";
-            var E = new m(i.default, {
+            _.displayName = "ForumPostRecentMessageStore";
+            var m = new _(i.default, {
                 CONNECTION_OPEN: function() {
                     o = {}
                 },
@@ -947,7 +947,7 @@
                         let n = function(e) {
                                 return o[e]
                             }(e),
-                            a = p(e);
+                            a = E(e);
                         null != n && null != a && (o[e] = {
                             ...n,
                             message: (0, l.updateMessageRecord)(a, t)
@@ -956,7 +956,7 @@
                 },
                 MESSAGE_DELETE: function(e) {
                     return function(e, t) {
-                        let n = p(e);
+                        let n = E(e);
                         return (null == n ? void 0 : n.id) === t && (delete o[e], !0)
                     }(e.channelId, e.id)
                 },
@@ -966,8 +966,8 @@
                     } = e;
                     for (let e in t) f(e, t[e].most_recent_message)
                 },
-                LOAD_ARCHIVED_THREADS_SUCCESS: _,
-                LOAD_THREADS_SUCCESS: _
+                LOAD_ARCHIVED_THREADS_SUCCESS: p,
+                LOAD_THREADS_SUCCESS: p
             })
         },
         542827: function(e, t, n) {
@@ -1048,7 +1048,7 @@
                     let f = l.default.getMember(e, t),
                         g = d.default.getUser(t);
                     if (null == f || null == g || (0, u.isMemberCommunicationDisabled)(f)) return;
-                    let p = {
+                    let E = {
                         ...f,
                         guildId: e,
                         nick: null !== (n = f.nick) && void 0 !== n ? n : g.username,
@@ -1064,7 +1064,7 @@
                     };
                     a.default.dispatch({
                         type: "GUILD_MEMBER_UPDATE",
-                        ...p
+                        ...E
                     })
                 };
             class c extends i.default {
@@ -1084,16 +1084,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 addMessageReminders: function() {
-                    return p
+                    return E
                 },
                 updateReminderDueAt: function() {
-                    return _
+                    return p
                 },
                 toggleMessageReminders: function() {
-                    return m
+                    return _
                 },
                 completeMessageReminders: function() {
-                    return E
+                    return m
                 },
                 cleanupMessageReminders: function() {
                     return h
@@ -1114,7 +1114,7 @@
                 f = n("988864"),
                 g = n("49111");
 
-            function p(e, t) {
+            function E(e, t) {
                 o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "adding",
@@ -1149,7 +1149,7 @@
                 }], [])
             }
 
-            function _(e, t) {
+            function p(e, t) {
                 o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "updating_due_at",
@@ -1164,7 +1164,7 @@
                 }], [a])
             }
 
-            function m(e, t) {
+            function _(e, t) {
                 o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: t,
                     reason: "updating within the list",
@@ -1176,7 +1176,7 @@
                 })
             }
 
-            function E(e) {
+            function m(e) {
                 o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "complete and clear immediately",
@@ -1415,10 +1415,10 @@
                 c = n("689988"),
                 f = n("408062"),
                 g = n("619443"),
-                p = n("582713"),
-                _ = n("233069"),
-                m = n("982108"),
-                E = n("42203"),
+                E = n("582713"),
+                p = n("233069"),
+                _ = n("982108"),
+                m = n("42203"),
                 h = n("305961"),
                 S = n("660478"),
                 v = n("18494"),
@@ -1426,12 +1426,12 @@
                 I = n("718517"),
                 A = n("519841"),
                 T = n("787336"),
-                y = n("49111"),
-                N = n("724210"),
+                N = n("49111"),
+                y = n("724210"),
                 D = n("782340");
             let M = new l.default("MessageManager");
 
-            function L(e) {
+            function R(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -1440,34 +1440,34 @@
                     isPreload: u,
                     jumpType: s,
                     skipLocalFetch: c,
-                    logFailures: p
+                    logFailures: E
                 } = e;
                 if (null == n) {
-                    p && M.log("Skipping fetch because channelId is null");
+                    E && M.log("Skipping fetch because channelId is null");
                     return
                 }
-                if ((0, N.isStaticChannelRoute)(n)) {
-                    p && M.log("Skipping fetch because channelId is a static route");
+                if ((0, y.isStaticChannelRoute)(n)) {
+                    E && M.log("Skipping fetch because channelId is a static route");
                     return
                 }
-                let _ = E.default.getChannel(n);
-                if ((null == _ ? void 0 : _.type) === y.ChannelTypes.GUILD_STORE || (null == _ ? void 0 : _.type) != null && y.ChannelTypesSets.GUILD_THREADS_ONLY.has(_.type)) {
-                    p && M.log("Skipping fetch because channel is a forum/store");
+                let p = m.default.getChannel(n);
+                if ((null == p ? void 0 : p.type) === N.ChannelTypes.GUILD_STORE || (null == p ? void 0 : p.type) != null && N.ChannelTypesSets.GUILD_THREADS_ONLY.has(p.type)) {
+                    E && M.log("Skipping fetch because channel is a forum/store");
                     return
                 }
-                let m = f.default.getOrCreate(n);
+                let _ = f.default.getOrCreate(n);
                 A.AttachmentLinkRefreshExperiment.getCurrentConfig({
                     location: "fetch_messages"
-                }).enabled && m.some(T.messageHasExpiredAttachmentUrl) && (M.log("Found expired attachment link, clearing messages"), f.default.clear(n), m = f.default.getOrCreate(n)), null != m.jumpTargetId && null == i && (m = m.mutate({
+                }).enabled && _.some(T.messageHasExpiredAttachmentUrl) && (M.log("Found expired attachment link, clearing messages"), f.default.clear(n), _ = f.default.getOrCreate(n)), null != _.jumpTargetId && null == i && (_ = _.mutate({
                     jumpTargetId: null,
                     jumped: !1,
                     jumpType: o.JumpTypes.ANIMATED
-                }), f.default.commit(m)), null != m.focusTargetId && null == i && (m = m.mutate({
+                }), f.default.commit(_)), null != _.focusTargetId && null == i && (_ = _.mutate({
                     focusTargetId: null
-                }), f.default.commit(m));
+                }), f.default.commit(_));
                 let v = l;
-                if (!u || g.default.isConnected() || m.loadingMore ? m.loadingMore || m.ready && !m.cached ? null != i ? v = !0 : p && M.log("Skipping fetch because no other conditions matched") : null == t || null != h.default.getGuild(t) ? v = !0 : p && M.log("Skipping fetch we are connected and have loaded messages") : v = !0, v) {
-                    if (f.default.commit(m.mutate({
+                if (!u || g.default.isConnected() || _.loadingMore ? _.loadingMore || _.ready && !_.cached ? null != i ? v = !0 : E && M.log("Skipping fetch because no other conditions matched") : null == t || null != h.default.getGuild(t) ? v = !0 : E && M.log("Skipping fetch we are connected and have loaded messages") : v = !0, v) {
+                    if (f.default.commit(_.mutate({
                             loadingMore: !0
                         })), null != i) r.default.jumpToMessage({
                         channelId: n,
@@ -1477,20 +1477,20 @@
                         skipLocalFetch: c,
                         jumpType: s
                     });
-                    else if ((null == _ ? void 0 : _.isThread()) && function(e) {
+                    else if ((null == p ? void 0 : p.isThread()) && function(e) {
                             if (S.default.hasOpenedThread(e)) return !1;
                             if (null == a) {
                                 var t;
-                                a = null !== (t = d.default.get(R, {})) && void 0 !== t ? t : {}
+                                a = null !== (t = d.default.get(b, {})) && void 0 !== t ? t : {}
                             }
                             if (e in a) return !1;
                             a[e] = Date.now();
-                            let n = Date.now() - b;
+                            let n = Date.now() - L;
                             for (let e in a) a[e] < n && delete a[e];
-                            return d.default.set(R, a), !0
-                        }(n)) M.log("Jumping to start of thread ".concat(_.id)), r.default.fetchMessages({
+                            return d.default.set(b, a), !0
+                        }(n)) M.log("Jumping to start of thread ".concat(p.id)), r.default.fetchMessages({
                         channelId: n,
-                        limit: y.MAX_MESSAGES_PER_CHANNEL,
+                        limit: N.MAX_MESSAGES_PER_CHANNEL,
                         jump: {
                             messageId: n,
                             flash: !1
@@ -1498,11 +1498,11 @@
                         isPreload: u,
                         skipLocalFetch: c
                     });
-                    else if ((null == _ ? void 0 : _.isThread()) && S.default.hasTrackedUnread(_.id) && !m.ready) {
-                        let e = S.default.getTrackedAckMessageId(_.id);
-                        M.log("Jumping to most recent message in thread ".concat(_.id, " - ").concat(e)), r.default.fetchMessages({
+                    else if ((null == p ? void 0 : p.isThread()) && S.default.hasTrackedUnread(p.id) && !_.ready) {
+                        let e = S.default.getTrackedAckMessageId(p.id);
+                        M.log("Jumping to most recent message in thread ".concat(p.id, " - ").concat(e)), r.default.fetchMessages({
                             channelId: n,
-                            limit: y.MAX_MESSAGES_PER_CHANNEL,
+                            limit: N.MAX_MESSAGES_PER_CHANNEL,
                             jump: {
                                 messageId: e,
                                 flash: !1,
@@ -1513,7 +1513,7 @@
                         })
                     } else r.default.fetchMessages({
                         channelId: n,
-                        limit: y.MAX_MESSAGES_PER_CHANNEL,
+                        limit: N.MAX_MESSAGES_PER_CHANNEL,
                         isPreload: u,
                         skipLocalFetch: c,
                         jump: {
@@ -1522,20 +1522,20 @@
                     })
                 }
             }
-            let b = 90 * I.default.Millis.DAY,
-                R = "viewedThreadIds";
+            let L = 90 * I.default.Millis.DAY,
+                b = "viewedThreadIds";
 
             function O() {
                 let e = v.default.getChannelId();
                 if (null != e) {
-                    let n = E.default.getChannel(e);
+                    let n = m.default.getChannel(e);
                     if (null != n) {
                         var t;
                         let e = (0, i.matchPath)(location.pathname, {
-                            path: y.Routes.CHANNEL(":guild", ":channel", ":message"),
+                            path: N.Routes.CHANNEL(":guild", ":channel", ":message"),
                             exact: !0
                         });
-                        L({
+                        R({
                             guildId: n.getGuildId(),
                             channelId: n.id,
                             messageId: null == e ? void 0 : null === (t = e.params) || void 0 === t ? void 0 : t.message
@@ -1551,8 +1551,8 @@
                     logFailures: n
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, a = v.default.getChannelId();
                 if (null != a) {
-                    let i = E.default.getChannel(a);
-                    null != i ? ((0, _.isTextChannel)(i.type) ? L({
+                    let i = m.default.getChannel(a);
+                    null != i ? ((0, p.isTextChannel)(i.type) ? R({
                         guildId: i.getGuildId(),
                         channelId: i.id,
                         isPreload: e,
@@ -1569,7 +1569,7 @@
                     messageId: a,
                     jumpType: i
                 } = e;
-                L({
+                R({
                     guildId: t,
                     channelId: n,
                     messageId: a,
@@ -1582,49 +1582,49 @@
                     guildId: t,
                     channelId: n
                 } = e;
-                L({
+                R({
                     guildId: t,
                     channelId: n
                 })
             }
 
             function G(e, t) {
-                let n = m.default.getCurrentSidebarChannelId(t);
+                let n = _.default.getCurrentSidebarChannelId(t);
                 if (null == n) return;
-                let a = m.default.getCurrentSidebarMessageId(t);
-                L({
+                let a = _.default.getCurrentSidebarMessageId(t);
+                R({
                     guildId: e,
                     channelId: n,
                     messageId: a
                 })
             }
 
-            function k() {
+            function F() {
                 let e = v.default.getChannelId(),
                     t = C.default.getGuildId();
                 if (null == t || null == e) return;
-                let n = m.default.getSidebarState(e);
-                (null == n ? void 0 : n.type) !== p.SidebarType.VIEW_CHANNEL && G(t, e)
+                let n = _.default.getSidebarState(e);
+                (null == n ? void 0 : n.type) !== E.SidebarType.VIEW_CHANNEL && G(t, e)
             }
 
-            function F(e) {
+            function V(e) {
                 let {
                     guildId: t,
                     channelId: n,
                     context: a
                 } = e;
-                a === y.CURRENT_APP_CONTEXT && (L({
+                a === N.CURRENT_APP_CONTEXT && (R({
                     guildId: t,
                     channelId: n
                 }), G(t, n))
             }
 
-            function V(e) {
+            function k(e) {
                 let {
                     channel: t,
                     messageId: n
                 } = e, a = t.guild_id;
-                null != a && v.default.getChannelId(a) === t.id && L({
+                null != a && v.default.getChannelId(a) === t.id && R({
                     guildId: a,
                     channelId: t.id,
                     messageId: n
@@ -1637,7 +1637,7 @@
                 } = e;
                 r.default.fetchMessages({
                     channelId: t,
-                    limit: y.MAX_MESSAGES_PER_CHANNEL
+                    limit: N.MAX_MESSAGES_PER_CHANNEL
                 })
             }
 
@@ -1646,7 +1646,7 @@
                     response: t
                 } = e;
                 if (null == t || null == t.body) return null;
-                if (t.body.code === y.AbortCodes.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
+                if (t.body.code === N.AbortCodes.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
                     let e = t.body.retry_after;
                     null != e && s.default.show({
                         title: D.default.Messages.RATE_LIMITED,
@@ -1656,9 +1656,9 @@
                     })
                 }
             }
-            let q = {};
+            let W = {};
 
-            function W(e) {
+            function q(e) {
                 var t;
                 let {
                     channelId: n,
@@ -1667,15 +1667,15 @@
                     isPreview: l = !1
                 } = e;
                 if (l) return;
-                let d = null !== (t = q[n]) && void 0 !== t ? t : 0;
+                let d = null !== (t = W[n]) && void 0 !== t ? t : 0;
                 if (Date.now() - d < 10 * I.default.Millis.SECOND) return;
-                q[n] = Date.now();
+                W[n] = Date.now();
                 let u = v.default.getChannelId(),
-                    s = m.default.getCurrentSidebarChannelId(u),
+                    s = _.default.getCurrentSidebarChannelId(u),
                     o = n === u || n === s;
                 i && g.default.isConnected() && o && r.default.fetchMessages({
                     channelId: n,
-                    limit: y.MAX_MESSAGES_PER_CHANNEL,
+                    limit: N.MAX_MESSAGES_PER_CHANNEL,
                     jump: a
                 })
             }
@@ -1699,7 +1699,7 @@
                 if ("active" !== t) return !1;
                 let n = v.default.getChannelId();
                 if (null == n) return !1;
-                r.default.fetchNewLocalMessages(n, y.MAX_MESSAGES_PER_CHANNEL)
+                r.default.fetchNewLocalMessages(n, N.MAX_MESSAGES_PER_CHANNEL)
             }
             class K extends c.default {
                 _initialize() {
@@ -1709,19 +1709,19 @@
                     u.default.unsubscribe("CONNECTION_OPEN", O)
                 }
                 constructor(...e) {
-                    super(...e), this.fetchMessages = L, this.loadSelectedChannelIfNecessary = P, this.stores = new Map().set(m.default, k), this.actions = {
+                    super(...e), this.fetchMessages = R, this.loadSelectedChannelIfNecessary = P, this.stores = new Map().set(_.default, F), this.actions = {
                         APP_STATE_UPDATE: j,
                         OVERLAY_INITIALIZE: O,
                         CHANNEL_SELECT: w,
                         VOICE_CHANNEL_SELECT: U,
-                        THREAD_CREATE: V,
+                        THREAD_CREATE: k,
                         THREAD_LIST_SYNC: () => P(),
-                        CHANNEL_CREATE: V,
-                        CHANNEL_PRELOAD: F,
+                        CHANNEL_CREATE: k,
+                        CHANNEL_PRELOAD: V,
                         THREAD_CREATE_LOCAL: x,
                         GUILD_CREATE: () => P(),
                         MESSAGE_END_EDIT: H,
-                        LOAD_MESSAGES_SUCCESS: W,
+                        LOAD_MESSAGES_SUCCESS: q,
                         UPLOAD_FAIL: B,
                         CHANNEL_DELETE: () => P(),
                         THREAD_DELETE: () => P()
@@ -1811,6 +1811,99 @@
                 return n
             }
         },
+        764828: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                SafetyWarningTypes: function() {
+                    return l
+                },
+                SafetyWarningFeedbackTypes: function() {
+                    return d
+                },
+                default: function() {
+                    return p
+                }
+            });
+            var a, i, l, d, u = n("446674"),
+                s = n("913144"),
+                r = n("42203");
+            (a = l || (l = {}))[a.STRANGER_DANGER = 1] = "STRANGER_DANGER", a[a.INAPPROPRIATE_CONVERSATION_TIER_1 = 2] = "INAPPROPRIATE_CONVERSATION_TIER_1", a[a.INAPPROPRIATE_CONVERSATION_TIER_2 = 3] = "INAPPROPRIATE_CONVERSATION_TIER_2", (i = d || (d = {}))[i.UPVOTE = 0] = "UPVOTE", i[i.DOWNVOTE = 1] = "DOWNVOTE";
+            let o = [],
+                c = {};
+
+            function f(e) {
+                let {
+                    safetyWarnings: t
+                } = e;
+                null != t && (c[e.id] = t), null == t && null != c[e.id] && delete c[e.id]
+            }
+
+            function g() {
+                c = {}, Object.values(r.default.getMutablePrivateChannels()).forEach(e => {
+                    f(e)
+                })
+            }
+            class E extends u.default.Store {
+                initialize() {
+                    this.waitFor(r.default)
+                }
+                getChannelSafetyWarning(e, t) {
+                    var n;
+                    return null === (n = c[e]) || void 0 === n ? void 0 : n.find(e => e.id === t)
+                }
+                getChannelSafetyWarnings(e) {
+                    var t;
+                    return null !== (t = c[e]) && void 0 !== t ? t : o
+                }
+            }
+            var p = new E(s.default, {
+                CHANNEL_CREATE: function(e) {
+                    f(e.channel)
+                },
+                CHANNEL_DELETE: function(e) {
+                    null != c[e.channel.id] && delete c[e.channel.id]
+                },
+                CHANNEL_UPDATES: function(e) {
+                    e.channels.forEach(e => {
+                        f(e)
+                    })
+                },
+                CONNECTION_OPEN: g,
+                CONNECTION_OPEN_SUPPLEMENTAL: g,
+                CHANNEL_SAFETY_WARNING_FEEDBACK: function(e) {
+                    let {
+                        channelId: t,
+                        warningId: n,
+                        feedbackType: a
+                    } = e, i = c[t];
+                    null != i && (c[t] = i.map(e => e.id === n ? {
+                        ...e,
+                        feedback_type: a
+                    } : e))
+                },
+                CLEAR_CHANNEL_SAFETY_WARNINGS: function(e) {
+                    let {
+                        channelId: t
+                    } = e, n = c[t];
+                    null != n && (c[t] = n.map(e => ({
+                        ...e,
+                        dismiss_timestamp: void 0
+                    })))
+                },
+                DISMISS_CHANNEL_SAFETY_WARNINGS: function(e) {
+                    let {
+                        channelId: t,
+                        warningIds: n
+                    } = e, a = c[t];
+                    if (null == a) return;
+                    let i = Date.now().toString();
+                    c[t] = a.map(e => n.includes(e.id) ? {
+                        ...e,
+                        dismiss_timestamp: i
+                    } : e)
+                }
+            })
+        },
         774223: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1849,4 +1942,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58166.4ec31e1810af6eda852a.js.map
+//# sourceMappingURL=80530.64539098abfc0f8c0207.js.map

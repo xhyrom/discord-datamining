@@ -60251,6 +60251,26 @@ html .progress__4ef76 {
     border-radius: 20px
 }
 
+.card_e97590:hover .carouselCardImage__4e898 {
+    scale: 114.9%;
+    margin-left: -2.5px;
+    margin-bottom: -6px
+}
+
+.card_e97590:hover .carouselCardImage__4e898 {
+    scale: 114.9%;
+    margin-left: -2.5px;
+    margin-bottom: -6px
+}
+
+@media screen and (max-width:1330px) {
+    .card_e97590:hover .carouselCardImage__4e898 {
+        scale: 119%;
+        margin-left: -2.5px;
+        margin-bottom: -3px
+    }
+}
+
 .reducedMotion__90450 .card_e97590 {
     transition: none
 }
@@ -60288,6 +60308,25 @@ html .progress__4ef76 {
     flex-grow: 1;
     width: 100%;
     z-index: 10
+}
+
+.carouselCardImage__4e898 {
+    width: 270px;
+    height: 180px;
+    z-index: 10;
+    padding: 15px;
+    pointer-events: none;
+    border-radius: 16px;
+    transform: translatex(1px);
+    background: linear-gradient(193deg, var(--premium-tier-0-header-gradient-1)0%, var(--premium-tier-0-header-gradient-3)49.52%, var(--premium-tier-0-header-gradient-4)82.85%, var(--premium-tier-0-header-gradient-5)90.53%);
+    transition: all.1s ease-in-out
+}
+
+@media screen and (max-width:1330px) {
+    .carouselCardImage__4e898 {
+        width: 210px;
+        height: 180px
+    }
 }
 
 .cardImage__9da5b {
@@ -60732,16 +60771,27 @@ html .progress__4ef76 {
     max-height: 600px
 }
 
-.content_ff6bc3 {
+.containerInner__10f58 {
+    display: flex;
     position: absolute;
+    top: 3%;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    text-align: center
+}
+
+.content_ff6bc3 {
+    position: relative;
     min-width: 500px;
-    top: 85px
+    margin-right: 90px;
+    flex: 1
 }
 
 .backButton__5b790 {
-    position: absolute;
-    top: 85px;
-    left: 72px;
+    margin-left: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60785,19 +60835,26 @@ html .progress__4ef76 {
     grid-template-columns: 1fr;
     justify-content: center;
     width: 100%;
-    min-height: 350px
+    min-height: 375px;
+    padding-bottom: 20px
 }
 
 .cardInnerContainer_dc5168 {
+    margin-left: 6px;
     position: relative;
     display: flex;
-    justify-content: center
+    justify-content: left;
+    overflow: hidden;
+    align-items: center
 }
 
 .card__02aee {
-    padding: 8px;
+    padding: 15px;
     position: absolute;
-    max-width: 350px
+    max-width: 325px;
+    height: calc(100% - 20px);
+    display: flex;
+    transition: width.1s ease-in-out, height.1s ease-in-out, padding.1s ease-in-out
 }
 
 .perkInfo_d1f641 {
@@ -60811,11 +60868,11 @@ html .progress__4ef76 {
     position: absolute;
     z-index: 9999;
     cursor: pointer;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: var(--background-primary);
-    top: 40%;
-    transform: translatey(-60%);
+    top: 50%;
+    transform: translatey(-50%);
     border-radius: 100%;
     box-shadow: var(--shadow-low);
     display: flex;
@@ -60824,16 +60881,15 @@ html .progress__4ef76 {
 }
 
 .rightArrow__0633c {
-    right: -8px
+    right: 3px
 }
 
 .leftArrow__1d2d5 {
-    left: -8px
+    left: 3px
 }
 
 .arrowIcon_c86bb8 {
-    width: 90%;
-    height: auto
+    gap: 8px
 }
 
 .cardProgressBar__0e60a {
@@ -60862,6 +60918,14 @@ html .progress__4ef76 {
 
 .selectedDot__3f4ad {
     background-color: var(--interactive-normal)
+}
+
+@media screen and (max-width:1330px) {
+    .card__02aee {
+        width: 280px;
+        padding-right: 10px;
+        padding-left: 10px
+    }
 }
 
 .container__662c9 {
@@ -126753,4 +126817,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.294b037c94e7e1d96a8d.css.map*/
+/*# sourceMappingURL=app.ace734a9bdadccd54685.css.map*/
