@@ -2209,6 +2209,14 @@
       "OPTIONS"
     ]
   },
+  "SEARCH_FAVORITES": {
+    "url": "/search/favorites",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "SEARCH_TABS_GUILD": {
     "url": "/guilds/:param/messages/search/tabs",
     "allowed_methods": [
