@@ -57373,11 +57373,11 @@
                             restrictions: i,
                             restrictionsLoading: r
                         } = c(n),
-                        a = null == n ? void 0 : n.hasFeature(d.GuildFeatures.CREATOR_MONETIZABLE_DISABLED),
-                        o = null == n ? void 0 : n.hasFeature(d.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING),
-                        f = a || o || (r ? null === (t = null == n ? void 0 : n.hasFeature(d.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || void 0 === t || t : (0, u.isRestrictedFromUpdatingCreatorMonetizationSettings)(i));
+                        a = r ? null === (t = null == n ? void 0 : n.hasFeature(d.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || void 0 === t || t : (0, u.isRestrictedFromUpdatingCreatorMonetizationSettings)(i),
+                        o = !!(null == n ? void 0 : n.hasFeature(d.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING));
                     return {
-                        shouldRestrictUpdatingCreatorMonetizationSettings: f,
+                        shouldRestrictUpdatingCreatorMonetizationSettings: a || o,
+                        allowSelfRemoveMonetization: !a,
                         restrictionsLoading: r
                     }
                 },
@@ -118381,7 +118381,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261274"
+                                build_number: "261276"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134470,4 +134470,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.7e13bd5cb6bc5adc2a2e.js.map
+//# sourceMappingURL=29278.eb498a7c57e070e4a424.js.map
