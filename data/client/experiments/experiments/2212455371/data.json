@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable the app launcher feature on mobile"
+      "Treatment 1: Enable the app launcher feature on mobile",
+      "Treatment 2: Enable \"Apps\" button opening existing slash command UI"
     ],
     "hash": 2212455371,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
