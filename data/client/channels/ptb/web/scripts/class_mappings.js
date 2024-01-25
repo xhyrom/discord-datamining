@@ -19818,6 +19818,7 @@
                 entitlementDiscountRow: "entitlementDiscountRow_da633e rowBase_a02b4e",
                 finePrint: "finePrint__5a6ad",
                 header: "header_d1aa3d",
+                negativeMarginBottom: "negativeMarginBottom__0017b",
                 negativeMarginTop: "negativeMarginTop__85b65",
                 row: "row__80aaa rowBase_a02b4e",
                 rowAmount: "rowAmount_b85667",
