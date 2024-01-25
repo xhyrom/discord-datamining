@@ -26901,8 +26901,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83653,8 +83653,8 @@ html .tabBadge__002b3 {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -83701,8 +83701,8 @@ html .tabBadge__002b3 {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -116683,6 +116683,21 @@ html .invoiceCancelRow_c1bfe7 {
     margin-bottom: 16px
 }
 
+.errorText_f6e59e {
+    color: var(--status-danger-text);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-bottom: 12px
+}
+
+.buttonContainer__6c70d {
+    display: flex;
+    justify-content: flex-end
+}
+
 .iconContainer_f97625 {
     align-self: center;
     background-color: var(--text-positive);
@@ -126800,4 +126815,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.dfc460526d095d043174.css.map*/
+/*# sourceMappingURL=app.c5a8d54134abcd3a896f.css.map*/
