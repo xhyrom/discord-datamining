@@ -3609,6 +3609,9 @@
                 USE_THREADS_SIDEBAR_DESCRIPTION: "Open threads in split view",
                 GUILD_DOCK: "Server Dock",
                 GUILD_DOCK_LABEL: "Use server dock navigation",
+                CHAT_GESTURES: "Chat Gestures",
+                SWIPE_TO_REPLY: "Swipe to Reply",
+                SWIPE_TO_REPLY_HINT: "Currently, swiping right-to-left opens Member List. Toggle to enable swiping to reply to a message.",
                 CONNECTED_ACCOUNTS: "Connected Accounts",
                 CONNECTED_ACCOUNTS_NONE_TITLE: "No Connections",
                 CONNECTED_ACCOUNTS_NONE: "Connect your accounts to unlock special Discord integrations",
@@ -16520,6 +16523,7 @@
                 POLL_END_EARLY: "End Poll Now",
                 POLL_END_EARLY_CONFIRMATION_TITLE: "End Poll Now?",
                 POLL_END_EARLY_CONFIRMATION_TEXT: "This will close the poll immediately and reveal the results.",
+                POLL_SENT_NOTIFICATION: "[poll] !!{question}!!",
                 SUMMONED: "Summoned!",
                 WAVED_AT_USER: "\uD83D\uDC4B You waved at !!{username}!!",
                 WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
@@ -18077,7 +18081,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261402", ", Version Hash: ").concat("4a08d0475dc403a9eb39ced8eeec6cab2e75f80a")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261409", ", Version Hash: ").concat("678dba7d77f35cca7b762fb75da0e1de1c660114")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20316,8 +20320,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "261402", "261402"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261402")), _ = 0), _
+                let _ = parseInt((e = "261409", "261409"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261409")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35373,4 +35377,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.f76ce2ed86a6fba83f57.js.map
+//# sourceMappingURL=34546.c066104a578192f9af4d.js.map
