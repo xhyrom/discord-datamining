@@ -29773,27 +29773,6 @@ html .progress__4ef76 {
     opacity: .3
 }
 
-.clock__88476 {
-    margin-right: 8px
-}
-
-.container__41fb3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px
-}
-
-.expirationContainer__43733 {
-    display: flex;
-    flex-direction: row;
-    border-radius: 100px;
-    padding: 8px 16px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-tertiary)
-}
-
 @value smallMobileBreakpoint: 640px;
 
 .container_e7ae9d {
@@ -126817,4 +126796,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ace734a9bdadccd54685.css.map*/
+/*# sourceMappingURL=app.df84964bdd5493f8b90b.css.map*/
