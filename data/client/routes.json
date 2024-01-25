@@ -4634,7 +4634,10 @@
   },
   "SAFETY_HUB_REQUEST_SUSPENDED_USER_REVIEW": {
     "url": "/safety-hub/suspended/request-review/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "SAFETY_HUB_SUSPENDED": {
     "url": "/safety-hub/suspended/@me",
