@@ -15463,12 +15463,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -38244,8 +38244,13 @@ html .progress__4ef76 {
     opacity: 0
 }
 
+.jumpButton__80b53:hover,
+.jumpButton__80b53:focus-within {
+    opacity: 1
+}
+
 .messageContainer__95a1c:hover .jumpButton__80b53,
-.messageContainer__95a1c:focus-within .jumpButton__80b53 {
+.messageContainer__95a1c:focus-visible .jumpButton__80b53 {
     opacity: 1
 }
 
@@ -126837,4 +126842,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f5ca4542dd5d5377c9be.css.map*/
+/*# sourceMappingURL=app.928ec9b512ed9da5cae9.css.map*/
