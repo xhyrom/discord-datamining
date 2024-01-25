@@ -1,45 +1,27 @@
-<p>When bug hunting, one of the most important pieces of information you need to make sure is correct is your client version. </p>
-<h1>Desktop</h1>
-<p><span style="font-weight: 400;">The Client and System settings </span><strong>on Desktop</strong><span style="font-weight: 400;"> can be found by pressing the</span> <strong><img src="https://support.discord.com/hc/article_attachments/360087927954" alt="Vector_1.png" width="17" height="17"> </strong><span style="font-weight: 400;">icon on the bottom left, next to your username. This will bring up your User Settings. On the bottom left of the User Settings, you will find information similar to the image below. You might need to scroll down on the left section to see the information.</span></p>
-<h3><span style="font-weight: 400;">Note: The number in the parentheses behind the version number and the Host are required!</span></h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500007940282" alt="Jh6eDx6.png" width="354" height="414"></p>
-<p><span style="font-weight: 400;">The information that needs to be submitted as system settings are:</span></p>
+<p>Whether you’re bug hunting or running into an issue on the app, one of the most important pieces of information you need to determine is that you’re running the most up-to-date version of Discord. Here’s how to check what version you’re running for both desktop and mobile apps. You can also provide this information to our <a href="https://dis.gd/contact"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Support team</span></a> if you have any questions or need assistance with anything.</p>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Version number</span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Operating System</span></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360052735334#h_01HN17EC60ZAPSDSERYW4197SW">Desktop</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360052735334#h_01HN17EC60CB74E00WYQYHFX5C">Mobile</a></li>
 </ul>
-<h1 class="wysiwyg-text-align-left">Android</h1>
-<p><span style="font-weight: 400;">The Client and System settings </span><strong>on Android</strong><span style="font-weight: 400;"> can be found in the menu by clicking your avatar on the bottom right. You might need to swipe right to see the icon, if you are in chat view.</span></p>
-<p><span style="font-weight: 400;">Tap your avatar to bring up your User Settings. Scrolling down, you will see a tab called "App Information". The number next to it is your current Client Version.</span><a href="https://i.imgur.com/WeoTpov.png"><span style="font-weight: 400;"> </span></a></p>
-<h3><span style="font-weight: 400;">Note: The number in the parenthesis behind the version number is required!</span></h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500007941502" alt="ilCzBRb.png" width="385" height="208"></p>
-<p><span style="font-weight: 400;">Your system settings can be found in the System Settings of your phone, and then accessing the "System" or "About your Phone" tabs respectively (Name may vary).</span></p>
-<p><span style="font-weight: 400;">The information that needs to be submitted as system settings are:</span></p>
+<h1 id="h_01HN17EC60ZAPSDSERYW4197SW">Desktop</h1>
+<p>1. Tap on the cogwheel [<img src="https://support.discord.com/hc/article_attachments/20869073408407" width="20" height="20">] in the bottom left corner of the desktop app to open up your <strong>User Settings</strong>.</p>
+<p>2. Scroll all the way down and you’ll see your client info on the bottom left.</p>
+<p>3. The following information needs to be provided:</p>
 <ul>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Phone model</span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Operating System</span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Version number</span></li>
+    <li>Version number</li>
+    <li>Operating System</li>
 </ul>
-<h1 class="wysiwyg-text-align-left">iOS</h1>
-<h3><span style="font-weight: 400;">iPhone</span></h3>
-<p><span style="font-weight: 400;">The Client settings </span><strong>on iPhones</strong><span style="font-weight: 400;"> can be found in the menu by tapping your avatar on the bottom right. You might need to swipe right to see the icon if you are in chat view.</span></p>
-<p><span style="font-weight: 400;">Scrolling down, you will see a tab called "Change Log". The number next to it is your current Client Number. Press Copy Client Info and all the information can be pasted right in.</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/1500008129581" alt="cIFMUZU.png" width="308" height="518"></span></p>
-<p><span style="font-weight: 400;">Your System Information can be found in the System Settings of your phone and then accessing the "About" section found under the "General" Tab.</span></p>
-<p><span style="font-weight: 400;">The information that needs to be submitted as system settings are:</span></p>
+<h3 id="h_01HN17EC60DDV0JNAT2ZS1HAK0"><span style="color: #434343;" data-darkreader-inline-color="">The number in the parentheses behind the version number and the Host are required.</span></h3>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/20869058757271" width="624" height="351"></span></p>
+<h1 id="h_01HN17EC60CB74E00WYQYHFX5C">Mobile</h1>
+<p>1. Tap on your avatar in the bottom right corner to pull up your <strong>User Settings</strong>.</p>
+<p>2. Next, tap on the <strong>cogwheel</strong> [<img src="https://support.discord.com/hc/article_attachments/20869073408407" width="20" height="20">] at the top right corner.</p>
+<p>3. Now scroll down until you see <strong>Developer Settings</strong> at the bottom.</p>
+<p>4. The following information needs to be provided:</p>
 <ul>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Phone model</span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Operating System</span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Version number</span></li>
+    <li>App version</li>
+    <li>Operating System</li>
+    <li>Device info</li>
 </ul>
-<h2><span style="font-weight: 400;">iPad</span></h2>
-<p><span style="font-weight: 400;">The Client settings <strong>on iPads</strong> can be found by tapping the <strong><img src="https://support.discord.com/hc/article_attachments/360087927954" alt="Vector_1.png" width="17" height="17"></strong> icon on the bottom left, next to your username. Tapping the respective icon will bring up your User Settings. </span></p>
-<p><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/1500008129761" alt="CKy7qeV.png"></span></p>
-<p><span style="font-weight: 400;">Scrolling down, you will see a tab called "Change Log". The number next to it is your current Client Number. Press Copy Client Info and all the information can be pasted right in.</span></p>
-<p><span style="font-weight: 400;">Your System Information can be found in the System Settings of your phone and then accessing the "About" section found under the "General" Tab.</span></p>
-<p><span style="font-weight: 400;">The information that needs to be submitted as system settings are:</span></p>
-<ul>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">iPad model</span></li>
-    <li style="font-weight: 400;" aria-level="1">Operating System</li>
-    <li style="font-weight: 400;" aria-level="1">Version number</li>
-</ul>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20869073437975" width="393" height="850"></p>
