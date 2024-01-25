@@ -26901,8 +26901,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -115327,6 +115327,10 @@ html .invoiceCancelRow_c1bfe7 {
     border-radius: 0 0 4px 4px
 }
 
+.skuSelectModalContent__16b0f.modalPadding__4adb6 {
+    padding-top: 12px
+}
+
 .skuSelectModalHeader_a2b0d3,
 .skuSelectModalContent__16b0f {
     background-color: var(--modal-background)
@@ -126833,4 +126837,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ecb3508cec55b4e5c275.css.map*/
+/*# sourceMappingURL=app.f5ca4542dd5d5377c9be.css.map*/
