@@ -4672,6 +4672,10 @@
       "POST"
     ]
   },
+  "EXPLICIT_MEDIA_SENDER_REPORT_FALSE_POSITIVE": {
+    "url": "/attachments/sender-report-false-positive",
+    "allowed_methods": null
+  },
   "SEND_GAMING_STATS": {
     "url": "/:param/gaming-stats",
     "allowed_methods": [
