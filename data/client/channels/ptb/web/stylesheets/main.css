@@ -60832,6 +60832,10 @@ html .progress__4ef76 {
     left: 0
 }
 
+.openCloseReduceMotion__39a8a {
+    transition: none
+}
+
 .cardCarousel_f51586 {
     display: flex;
     flex-direction: column;
@@ -126842,4 +126846,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.22dea6f4c5741606d6ba.css.map*/
+/*# sourceMappingURL=app.567e35b15065c5a71c07.css.map*/
