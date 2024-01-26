@@ -16367,6 +16367,8 @@
   "LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_MESSAGE": "\"Get access to slash commands and other great ways to chat by enabling our latest features.\\n\\nYou can always go back to legacy chat at any time by heading over to $[User Settings > Accessibility](openSettingsHook).\"",
   "LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_BUTTON_CTA": "\"Enable now\"",
   "LARGE_FILE_UPLOAD_POWERED_BY_NITRO": "\"Large file upload, powered by Nitro • [Learn More](onClick)\"",
+  "CHANNEL_LIST_V2_NUX_TITLE": "\"Find more channels here!\"",
+  "CHANNEL_LIST_V2_NUX_BODY": "\"Use **Browse Channels** inside Server Menu to add more channels.\"",
   "ASSISTANT_SKIP_BUTTON": "\"Skip Tutorial\"",
   "ASSISTANT_SPLASH_TITLE": "\"Welcome, $[username](usernameHook)\"",
   "ASSISTANT_SPLASH_DESCRIPTION": "\"Say hi to Wumpus. He'll show you how Discord helps friends hang out more often.\"",
