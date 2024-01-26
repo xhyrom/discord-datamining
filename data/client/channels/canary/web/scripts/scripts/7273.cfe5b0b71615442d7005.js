@@ -13205,7 +13205,7 @@
                 MessageEmbedTypes: function() {
                     return e
                 }
-            }), (a = e || (e = {})).IMAGE = "image", a.VIDEO = "video", a.LINK = "link", a.ARTICLE = "article", a.TWEET = "tweet", a.RICH = "rich", a.GIFV = "gifv", a.APPLICATION_NEWS = "application_news", a.AUTO_MODERATION_MESSAGE = "auto_moderation_message", a.AUTO_MODERATION_NOTIFICATION = "auto_moderation_notification", a.TEXT = "text", a.POST_PREVIEW = "post_preview", a.GIFT = "gift", a.SAFETY_POLICY_NOTICE = "safety_policy_notice", a.SAFETY_SYSTEM_NOTIFICATION = "safety_system_notification", a.VOICE_CHANNEL = "voice_channel"
+            }), (a = e || (e = {})).IMAGE = "image", a.VIDEO = "video", a.LINK = "link", a.ARTICLE = "article", a.TWEET = "tweet", a.RICH = "rich", a.GIFV = "gifv", a.APPLICATION_NEWS = "application_news", a.AUTO_MODERATION_MESSAGE = "auto_moderation_message", a.AUTO_MODERATION_NOTIFICATION = "auto_moderation_notification", a.TEXT = "text", a.POST_PREVIEW = "post_preview", a.GIFT = "gift", a.SAFETY_POLICY_NOTICE = "safety_policy_notice", a.SAFETY_SYSTEM_NOTIFICATION = "safety_system_notification", a.VOICE_CHANNEL = "voice_channel", a.GAMING_PROFILE = "gaming_profile"
         },
         637612: function(_, E, I) {
             "use strict";
@@ -13577,4 +13577,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.6a3214a0ea448d6c5117.js.map
+//# sourceMappingURL=7273.cfe5b0b71615442d7005.js.map
