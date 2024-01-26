@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["70523"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -114060,6 +114060,10 @@
                     throttlePeriod: 9e5,
                     throttleKeys: e => [e.guild_id, e.channel_id]
                 },
+                [_.AnalyticEvents.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
+                    throttlePeriod: 6e4,
+                    throttleKeys: e => [e.user_id]
+                },
                 [_.AnalyticEvents.DM_PROFILE_VIEWED]: {
                     throttlePeriod: 36e5,
                     throttleKeys: e => [e.viewed_profile_user_id]
@@ -118384,7 +118388,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261790"
+                                build_number: "261794"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134492,4 +134496,4 @@
         }
     }
 ]);
-//# sourceMappingURL=70523.43519838a75491174e14.js.map
+//# sourceMappingURL=29278.0b8df32be74c77617a5e.js.map
