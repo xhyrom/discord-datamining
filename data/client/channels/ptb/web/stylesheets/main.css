@@ -107694,7 +107694,34 @@ html .invoiceCancelRow_a8669b {
 }
 
 .previewTextArea_ef8120 {
-    overflow-y: scroll
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    scrollbar-width: none
+}
+
+.previewTextArea_ef8120::-webkit-scrollbar {
+    width: 12px;
+    height: 12px
+}
+
+.previewTextArea_ef8120::-webkit-scrollbar-thumb,
+.previewTextArea_ef8120::-webkit-scrollbar-track {
+    border-width: 4px;
+    background-clip: padding-box;
+    border-style: solid;
+    border-color: transparent
+}
+
+.previewTextArea_ef8120::-webkit-scrollbar-track {
+    border-width: medium;
+    border-width: initial
+}
+
+.previewTextArea_ef8120::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary-800-hsl)/.6);
+    border-radius: 8px
 }
 
 .channelTextAreaInner__33239 {
@@ -126846,4 +126873,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.567e35b15065c5a71c07.css.map*/
+/*# sourceMappingURL=app.be6c8f9724e52b541cde.css.map*/
