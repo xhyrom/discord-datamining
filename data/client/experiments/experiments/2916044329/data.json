@@ -30,18 +30,10 @@
     "populations": [
       {
         "buckets": {
-          "1": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 1000
-              }
-            ]
-          },
           "none": {
             "rollout": [
               {
-                "start": 1000,
+                "start": 0,
                 "end": 10000
               }
             ]
