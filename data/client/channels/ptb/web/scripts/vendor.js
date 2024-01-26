@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["70523"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -108966,6 +108966,9 @@
             var u = new l(r.default, {
                 OVERLAY_INITIALIZE: function(e) {
                     i = e.currentGame
+                },
+                OVERLAY_SET_ASSOCIATED_GAME: function(e) {
+                    i = e.associatedGame
                 }
             })
         },
@@ -110079,7 +110082,7 @@
             let M = {
                     ...T
                 },
-                U = new Set(["AUDIO_SET_INPUT_DEVICE", "AUDIO_SET_INPUT_VOLUME", "AUDIO_SET_LOCAL_VIDEO_DISABLED", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_SET_MODE", "AUDIO_SET_NOISE_CANCELLATION", "AUDIO_SET_NOISE_SUPPRESSION", "AUDIO_SET_OUTPUT_DEVICE", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "BILLING_SUBSCRIPTION_UPDATE_SUCCESS", "CATEGORY_COLLAPSE", "CATEGORY_EXPAND", "CHANNEL_ACK", "CHANNEL_PRELOAD", "GIFT_CODE_REDEEM", "GIFT_CODE_REDEEM_FAILURE", "GIFT_CODE_REDEEM_SUCCESS", "HOTSPOT_HIDE", "INVITE_MODAL_CLOSE", "LAYOUT_CREATE", "LAYOUT_CREATE_WIDGETS", "LAYOUT_DELETE_ALL_WIDGETS", "LAYOUT_DELETE_WIDGET", "LAYOUT_SET_PINNED", "LAYOUT_SET_TOP_WIDGET", "LAYOUT_UPDATE_WIDGET", "LOAD_MESSAGES", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES_SUCCESS", "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", "OVERLAY_ACTIVATE_REGION", "OVERLAY_DEACTIVATE_ALL_REGIONS", "OVERLAY_MESSAGE_EVENT_ACTION", "OVERLAY_SET_AVATAR_SIZE_MODE", "OVERLAY_SET_CLICK_ZONES", "OVERLAY_SET_DISPLAY_NAME_MODE", "OVERLAY_SET_DISPLAY_USER_MODE", "OVERLAY_SET_INPUT_LOCKED", "OVERLAY_SET_NOTIFICATION_POSITION_MODE", "OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE", "OVERLAY_SET_SHOW_KEYBIND_INDICATORS", "OVERLAY_SET_TEXT_WIDGET_OPACITY", "OVERLAY_SET_UI_LOCKED", "PREMIUM_PAYMENT_ERROR_CLEAR", "PREMIUM_PAYMENT_MODAL_CLOSE", "PREMIUM_PAYMENT_MODAL_OPEN", "PREMIUM_PAYMENT_SUBSCRIBE_FAIL", "PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS", "PREMIUM_PAYMENT_UPDATE_FAIL", "PREMIUM_PAYMENT_UPDATE_SUCCESS", "PREMIUM_REQUIRED_MODAL_CLOSE", "PREMIUM_REQUIRED_MODAL_OPEN", "PURCHASE_CONFIRMATION_MODAL_CLOSE", "PURCHASE_CONFIRMATION_MODAL_OPEN", "SKU_PURCHASE_CLEAR_ERROR", "SKU_PURCHASE_FAIL", "SKU_PURCHASE_MODAL_CLOSE", "SKU_PURCHASE_MODAL_OPEN", "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", "SKU_PURCHASE_SHOW_CONFIRMATION_STEP", "SKU_PURCHASE_START", "SKU_PURCHASE_SUCCESS", "STREAM_CLOSE", "STREAM_START", "VOICE_CHANNEL_SELECT", "USER_SETTINGS_PROTO_ENQUEUE_UPDATE", "USER_SETTINGS_PROTO_LOAD_IF_NECESSARY"]),
+                U = new Set(["AUDIO_SET_INPUT_DEVICE", "AUDIO_SET_INPUT_VOLUME", "AUDIO_SET_LOCAL_VIDEO_DISABLED", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_SET_MODE", "AUDIO_SET_NOISE_CANCELLATION", "AUDIO_SET_NOISE_SUPPRESSION", "AUDIO_SET_OUTPUT_DEVICE", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "BILLING_SUBSCRIPTION_UPDATE_SUCCESS", "CATEGORY_COLLAPSE", "CATEGORY_EXPAND", "CHANNEL_ACK", "CHANNEL_PRELOAD", "GIFT_CODE_REDEEM", "GIFT_CODE_REDEEM_FAILURE", "GIFT_CODE_REDEEM_SUCCESS", "HOTSPOT_HIDE", "INVITE_MODAL_CLOSE", "LAYOUT_CREATE", "LAYOUT_CREATE_WIDGETS", "LAYOUT_DELETE_ALL_WIDGETS", "LAYOUT_DELETE_WIDGET", "LAYOUT_SET_PINNED", "LAYOUT_SET_TOP_WIDGET", "LAYOUT_UPDATE_WIDGET", "LOAD_MESSAGES", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES_SUCCESS", "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", "OVERLAY_ACTIVATE_REGION", "OVERLAY_DEACTIVATE_ALL_REGIONS", "OVERLAY_MESSAGE_EVENT_ACTION", "OVERLAY_SET_AVATAR_SIZE_MODE", "OVERLAY_SET_CLICK_ZONES", "OVERLAY_SET_DISPLAY_NAME_MODE", "OVERLAY_SET_DISPLAY_USER_MODE", "OVERLAY_SET_INPUT_LOCKED", "OVERLAY_SET_NOTIFICATION_POSITION_MODE", "OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE", "OVERLAY_SET_SHOW_KEYBIND_INDICATORS", "OVERLAY_SET_TEXT_WIDGET_OPACITY", "OVERLAY_SET_UI_LOCKED", "OVERLAY_NOTIFY_READY_TO_SHOW", "PREMIUM_PAYMENT_ERROR_CLEAR", "PREMIUM_PAYMENT_MODAL_CLOSE", "PREMIUM_PAYMENT_MODAL_OPEN", "PREMIUM_PAYMENT_SUBSCRIBE_FAIL", "PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS", "PREMIUM_PAYMENT_UPDATE_FAIL", "PREMIUM_PAYMENT_UPDATE_SUCCESS", "PREMIUM_REQUIRED_MODAL_CLOSE", "PREMIUM_REQUIRED_MODAL_OPEN", "PURCHASE_CONFIRMATION_MODAL_CLOSE", "PURCHASE_CONFIRMATION_MODAL_OPEN", "SKU_PURCHASE_CLEAR_ERROR", "SKU_PURCHASE_FAIL", "SKU_PURCHASE_MODAL_CLOSE", "SKU_PURCHASE_MODAL_OPEN", "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", "SKU_PURCHASE_SHOW_CONFIRMATION_STEP", "SKU_PURCHASE_START", "SKU_PURCHASE_SUCCESS", "STREAM_CLOSE", "STREAM_START", "VOICE_CHANNEL_SELECT", "USER_SETTINGS_PROTO_ENQUEUE_UPDATE", "USER_SETTINGS_PROTO_LOAD_IF_NECESSARY"]),
                 k = new Set([...U.values(), "ACTIVITY_INVITE_MODAL_CLOSE", "CALL_DELETE", "CHANNEL_COLLAPSE", "CHANNEL_SELECT", "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", "OVERLAY_CALL_PRIVATE_CHANNEL", "OVERLAY_JOIN_GAME", "OVERLAY_NOTIFICATION_EVENT", "OVERLAY_SELECT_CALL", "OVERLAY_SET_NOT_IDLE", "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", "OVERLAY_WIDGET_CHANGED", "SOUNDBOARD_SET_OVERLAY_ENABLED", "STREAM_STOP"]);
 
             function w() {
@@ -110427,6 +110430,9 @@
                         let e = p.default.windowSize();
                         !(0, E.validResolution)(e) && (b = !1)
                     }
+                },
+                OVERLAY_SET_ASSOCIATED_GAME: function(e) {
+                    y.delete(e.previousAssociatedGamePID)
                 }
             })
         },
@@ -118378,7 +118384,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261702"
+                                build_number: "261707"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -122503,55 +122509,61 @@
         },
         819068: function(e, t, n) {
             "use strict";
-            let i;
+            let i, s;
             n.r(t), n.d(t, {
                 OVERLAY_VERSION: function() {
-                    return r
-                },
-                OVERLAY_DEFAULT_RESOLUTION: function() {
                     return a
                 },
-                OVERLAY_MIN_RESOLUTION: function() {
+                OVERLAY_DEFAULT_RESOLUTION: function() {
                     return o
                 },
-                OVERLAY_LAYOUT_ID: function() {
+                OVERLAY_MIN_RESOLUTION: function() {
                     return l
                 },
-                DEV_PID: function() {
+                OVERLAY_LAYOUT_ID: function() {
                     return u
                 },
-                getPID: function() {
-                    return c
+                DEV_PID: function() {
+                    return d
                 },
-                getRPCAuthToken: function() {
+                getPID: function() {
                     return f
                 },
-                validResolution: function() {
+                setPID: function() {
                     return _
                 },
-                setOutOfProcessSupport: function() {
+                getRPCAuthToken: function() {
                     return h
                 },
-                supportsOutOfProcess: function() {
+                validResolution: function() {
                     return g
+                },
+                setOutOfProcessSupport: function() {
+                    return m
+                },
+                supportsOutOfProcess: function() {
+                    return E
+                },
+                isOutOfProcess: function() {
+                    return p
                 }
             }), n("313619"), n("654714"), n("287168"), n("956660"), n("222007"), n("121338");
-            var s = n("773336");
+            var r = n("773336");
             n("49111");
-            let r = 2,
-                a = {
+            let a = 2,
+                o = {
                     width: 3840,
                     height: 2160
                 },
-                o = {
+                l = {
                     width: 768,
                     height: 432
                 },
-                l = "overlay_default",
-                u = -2,
-                d = !1;
+                u = "overlay_default",
+                d = -2,
+                c = !1;
 
-            function c() {
+            function f() {
                 var e;
                 if (void 0 !== i) return i;
                 let t = new URLSearchParams(window.location.search),
@@ -122560,21 +122572,32 @@
                 return isNaN(s) && (s = -1), i = s
             }
 
-            function f() {
+            function _(e) {
+                p() && (i = e)
+            }
+
+            function h() {
                 let e = new URLSearchParams(window.location.search);
                 return e.get("rpc_auth_token")
             }
 
-            function _(e) {
-                return !s.isPlatformEmbedded || e.width >= o.width && e.height >= o.height
+            function g(e) {
+                return !r.isPlatformEmbedded || e.width >= l.width && e.height >= l.height
             }
 
-            function h(e) {
-                d = e
+            function m(e) {
+                c = e
             }
 
-            function g() {
-                return d
+            function E() {
+                return c
+            }
+
+            function p() {
+                var e;
+                if (void 0 !== s) return s;
+                let t = new URLSearchParams(window.location.search);
+                return s = (null !== (e = t.get("oop")) && void 0 !== e ? e : "") === "true"
             }
         },
         65300: function(e, t, n) {
@@ -134469,4 +134492,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.e5655f8b0648fe0e1e6e.js.map
+//# sourceMappingURL=70523.543211bcea5f8058389a.js.map
