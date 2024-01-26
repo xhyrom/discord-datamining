@@ -4674,7 +4674,11 @@
   },
   "EXPLICIT_MEDIA_SENDER_REPORT_FALSE_POSITIVE": {
     "url": "/attachments/sender-report-false-positive",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SEND_GAMING_STATS": {
     "url": "/:param/gaming-stats",
