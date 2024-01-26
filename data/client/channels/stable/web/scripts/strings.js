@@ -491,8 +491,8 @@
                 COMMAND_ACCESSIBILITY_DESC_APP_ITEM_SELECTED: "{applicationName} application selected",
                 COMMAND_ACCESSIBILITY_DESC_APP_HEADER_ITEM: "Slash command application {applicationName}",
                 COMMAND_ACCESSIBILITY_DESC_COMMAND_OPTION_BUTTON: "Add command argument {optionName}",
-                APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER: "Recent Commands",
-                APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Apps in this server",
+                APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER: "Recents",
+                APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Bots in this server",
                 APP_LAUNCHER_COMMAND_LIST_SORT_HEADER: "Sort By",
                 APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_POPULAR: "Popular",
                 APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_ALPHABETICAL: "Alphabetical",
@@ -906,6 +906,7 @@
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_INVALID_CHANNEL: "You cannot join Activities in this channel.",
                 APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED: "$[](userHook) started an activity",
                 APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE: "[!!{username}!!](usernameOnClick) started an activity",
+                APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_NOTIFICATION: "{username} started an activity",
                 KRUNKER_STRIKE_COACHMARK_TITLE: "Updated! Krunker Strike FRVR",
                 KRUNKER_STRIKE_COACHMARK_DESCRIPTION: "Squad up with friends or other players around the world and battle your way to victory in this first person shooter game.",
                 KRUNKER_STRIKE_COACHMARK_BUTTON_CANCEL: "Maybe later",
@@ -3608,6 +3609,9 @@
                 USE_THREADS_SIDEBAR_DESCRIPTION: "Open threads in split view",
                 GUILD_DOCK: "Server Dock",
                 GUILD_DOCK_LABEL: "Use server dock navigation",
+                CHAT_GESTURES: "Chat Gestures",
+                SWIPE_TO_REPLY: "Swipe to Reply",
+                SWIPE_TO_REPLY_HINT: "Currently, swiping right-to-left opens Member List. Toggle to enable swiping to reply to a message.",
                 CONNECTED_ACCOUNTS: "Connected Accounts",
                 CONNECTED_ACCOUNTS_NONE_TITLE: "No Connections",
                 CONNECTED_ACCOUNTS_NONE: "Connect your accounts to unlock special Discord integrations",
@@ -6061,6 +6065,7 @@
                 ACCESSIBILITY_FONT_SCALE_CLASSIC_LABEL: "Classic chat text size",
                 ACCESSIBILITY_FONT_SCALE_CLASSIC_HINT: "When enabled uses a slightly smaller font size for the chat text.",
                 ACCESSIBILITY_ZOOM_LEVEL_LABEL: "Zoom level",
+                ACCESSIBILITY_ZOOM_LEVEL_VALUE_LABEL: "Zoom level ({value})",
                 ACCESSIBILITY_FONT_SCALING_USE_APP: "Currently using the Discord-specific font scale.",
                 ACCESSIBILITY_FONT_SCALING_USE_OS: "Currently using your device's font scale.",
                 ACCESSIBILITY_DARK_SIDEBAR: "Dark Sidebar",
@@ -8187,6 +8192,7 @@
                 NITRO_HOME_CARD_USE_CUSTOM_SOUNDS: "Use custom soundboard sounds across voice channels.",
                 NITRO_HOME_CARD_UPLOAD_POWER: "Feel the upload power.",
                 NITRO_HOME_STREAM_UP_TO_4K: "Up to 4K and 60FPS.",
+                NITRO_HOME_UPLOAD_ALL_YOU_WANT: "Upload what you want with increased 500MB upload size.",
                 NITRO_HOME_SUPER_REACTIONS: "Super Reactions",
                 NITRO_HOME_SUPER_REACTIONS_DESCRIPTION: "Hype up the chat with action-packed, animated reactions.",
                 NITRO_HOME_ENTRANCE_SOUNDS_BENEFIT: "Make a splash like only Nitro subscribers can in your favorite voice channels.",
@@ -13753,27 +13759,27 @@
                 NOTIF_MIGRATION_INTRO_TAB: "1. What's New",
                 NOTIF_MIGRATION_CUSTOMIZE_TAB: "2. Choose Servers",
                 NOTIF_MIGRATION_TIPS_TAB: "3. Apply Changes",
-                NOTIF_MIGRATION_INTRO_TITLE: "Cut through the noise with new notifications",
-                NOTIF_MIGRATION_INTRO_SUB_TITLE: "Focus more on the channels you actually care about.",
+                NOTIF_MIGRATION_INTRO_TITLE: "Discord notifications just got better!",
+                NOTIF_MIGRATION_INTRO_SUB_TITLE: "We added a new setting to cut through the noise and stay focused on what's important.",
                 NOTIF_MIGRATION_INTRO_CHANNEL_1: "announcements",
                 NOTIF_MIGRATION_INTRO_CHANNEL_2: "general",
                 NOTIF_MIGRATION_INTRO_CHANNEL_3: "random",
                 NOTIF_MIGRATION_INTRO_CHANNEL_4: "introductions",
-                NOTIF_MIGRATION_INTRO_CHANNEL_5: "events",
+                NOTIF_MIGRATION_INTRO_CHANNEL_5: "mods-only",
+                NOTIF_MIGRATION_INTRO_CHANNEL_6: "jokes",
+                NOTIF_MIGRATION_INTRO_CHANNEL_7: "chatter",
                 NOTIF_MIGRATION_INTRO_BEFORE: "Before",
-                NOTIF_MIGRATION_INTRO_BEFORE_TITLE: "Are all your channels always unread?",
-                NOTIF_MIGRATION_INTRO_BEFORE_SUBTITLE: "Every channel is highlighted, so you often get lost in busy servers with lots of new messages.",
                 NOTIF_MIGRATION_INTRO_AFTER: "After",
-                NOTIF_MIGRATION_INTRO_AFTER_TITLE: "Check just the channels that matter the most.",
-                NOTIF_MIGRATION_INTRO_AFTER_SUBTITLE: "Servers only show as unread for new messages in your important channels and mentions.",
-                NOTIF_MIGRATION_INTRO_TIP1: "A server will show as unread when the channels you care about are active.",
-                NOTIF_MIGRATION_INTRO_TIP3: "Choose which channels you use most to highlight so you don’t miss a message.",
-                NOTIF_MIGRATION_INTRO_TIP4: "Channels you rarely or never use won’t be highlighted, so you can ignore them.",
-                NOTIF_MIGRATION_CUSTOMIZE_TITLE: "Choose servers that will use the new setting",
-                NOTIF_MIGRATION_CUSTOMIZE_SUB_TITLE: "We’ll adjust your notification settings based on what channels you use the most.",
-                NOTIF_MIGRATION_CUSTOMIZE_SECTION1_TITLE: "Recommended Servers",
-                NOTIF_MIGRATION_CUSTOMIZE_SECTION1_SUBTITLE: "We picked these servers that you might find overwhelming.",
-                NOTIF_MIGRATION_CUSTOMIZE_SECTION2_TITLE: "Additional Servers",
+                NOTIF_MIGRATION_INTRO_TIP_BEFORE1: "Every server is unread for any new message.",
+                NOTIF_MIGRATION_INTRO_TIP_BEFORE2: "Every channel is highlighted for each new message.",
+                NOTIF_MIGRATION_INTRO_TIP_AFTER1: "Server is unread only when there’s a message from channels you care about, like #announcements.",
+                NOTIF_MIGRATION_INTRO_TIP_AFTER2: "New messages from channels you don’t care about are de-emphasized.",
+                NOTIF_MIGRATION_CUSTOMIZE_TITLE: "Choose servers to update",
+                NOTIF_MIGRATION_CUSTOMIZE_SUB_TITLE: "Your notification settings will be updated based on what channels you use the most.",
+                NOTIF_MIGRATION_CUSTOMIZE_SECTION1_TITLE: "Selected",
+                NOTIF_MIGRATION_CUSTOMIZE_SECTION1_SUBTITLE: "You will only be notified for important channels and mentions.",
+                NOTIF_MIGRATION_CUSTOMIZE_SECTION2_TITLE: "Unselected",
+                NOTIF_MIGRATION_CUSTOMIZE_SECTION2_SUBTITLE: "Your settings will not be changed.",
                 NOTIF_MIGRATION_BACKUP: "You can undo this later in Settings > Notifications.",
                 NOTIF_MIGRATION_GUILD_TOOLTIP_BUSY: "Busy server",
                 NOTIF_MIGRATION_GUILD_TOOLTIP_QUIET: "Quiet server",
@@ -13782,13 +13788,12 @@
                 NOTIF_MIGRATION_GUILD_TOOLTIP_MUTED: "Muted",
                 NOTIF_MIGRATION_GUILD_TOOLTIP_NOT_MUTED: "Not muted",
                 NOTIF_MIGRATION_TIPS_TITLE: "{count, plural, =0 {No servers updated.} one {1 server updated!} other {{count} servers updated!}}",
-                NOTIF_MIGRATION_TIPS_SUB_TITLE: "Here are some additional tips to manage your notifications.",
-                NOTIF_MIGRATION_TIPS_1_TITLE: "Want to change the server setting later?",
-                NOTIF_MIGRATION_TIPS_1_SUBTITLE: "Click on the server name and open Notification Settings.",
-                NOTIF_MIGRATION_TIPS_2_TITLE: "Getting overwhelmed by a channel?",
-                NOTIF_MIGRATION_TIPS_2_SUBTITLE: "Right-click and set it to @Mentions.",
-                NOTIF_MIGRATION_TIPS_3_TITLE: "Need more control?",
-                NOTIF_MIGRATION_TIPS_3_SUBTITLE: "Use the custom option to set the notification and unread badge settings individually.",
+                NOTIF_MIGRATION_TIPS_SUB_TITLE: "Here’s how you can change your settings in the future.",
+                NOTIF_MIGRATION_TIPS_TAB1: "Server Notifications",
+                NOTIF_MIGRATION_TIPS_TAB2: "Channel Notifications",
+                NOTIF_MIGRATION_TIPS_TAB1_TIP2: "Choose @Mentions to get notified for only mentions and important channels.",
+                NOTIF_MIGRATION_TIPS_TAB2_TIP1: "Choose @Mentions to make a channel less overwhelming.",
+                NOTIF_MIGRATION_TIPS_TAB2_TIP2: "Choose Custom to control notification and unread settings individually.",
                 NOTIF_MIGRATION_ERROR: "Looks like something went wrong! We'll try again the next time you launch Discord.",
                 APP_DIRECTORY: "App Directory",
                 APP_DIRECTORY_LISTING_VIEW_ALL_BUTTON: "View All",
@@ -16425,6 +16430,7 @@
                 APPEAL_INGESTION_BREADCRUMBS_HEADER: "REASON",
                 APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_ADD_DETAILS: "Add details",
                 APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_EDIT_DETAILS: "Edit details",
+                APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_ERROR: "Error requesting review",
                 APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_FOOTER: "Your request will be sent to our team. Violations will stay on your account until they expire or are removed after review.",
                 APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_SUBHEADER: "Here's a summary of your request.",
                 APPEAL_INGESTION_FREE_TEXT_REASON_ACTION_SHEET_SUBHEADER: "You can add context or anything else that might be helpful for us to know.",
@@ -16517,6 +16523,7 @@
                 POLL_END_EARLY: "End Poll Now",
                 POLL_END_EARLY_CONFIRMATION_TITLE: "End Poll Now?",
                 POLL_END_EARLY_CONFIRMATION_TEXT: "This will close the poll immediately and reveal the results.",
+                POLL_SENT_NOTIFICATION: "[poll] !!{question}!!",
                 SUMMONED: "Summoned!",
                 WAVED_AT_USER: "\uD83D\uDC4B You waved at !!{username}!!",
                 WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
@@ -18074,7 +18081,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261314", ", Version Hash: ").concat("b92a880362358a9cf8b448ecf5084debef22b87f")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261726", ", Version Hash: ").concat("27f28326e76db0a0aeadb7fa84bef5ef57b02b39")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19600,6 +19607,11 @@
                     actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_START", "STREAM_CLOSE"],
                     inlineRequire: () => E("319405").default,
                     neverLoadBeforeConnectionOpen: !0
+                },
+                VoiceChannelGameActivityManager: {
+                    actions: ["PRESENCE_UPDATES", "POST_CONNECTION_OPEN", "VOICE_STATE_UPDATES"],
+                    inlineRequire: () => E("282655").default,
+                    neverLoadBeforeConnectionOpen: !0
                 }
             };
             (0, t.initialize)(o)
@@ -20313,8 +20325,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "261314", "261314"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261314")), _ = 0), _
+                let _ = parseInt((e = "261726", "261726"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261726")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -24378,6 +24390,76 @@
                 }
             }
             var C = new u
+        },
+        282655: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return R
+                }
+            }), E("222007");
+            var t = E("823411"),
+                o = E("689988"),
+                n = E("651057"),
+                r = E("42203"),
+                a = E("546463"),
+                i = E("824563"),
+                I = E("162771"),
+                s = E("800762"),
+                T = E("785814"),
+                S = E("49111");
+
+            function N(e) {
+                return e.filter(e => e.type === S.ActivityTypes.PLAYING && null != e.application_id && null != a.default.getDetectableGame(e.application_id)).map(e => e.application_id)
+            }
+
+            function O(e) {
+                n.default.fetchApplications(e, !1)
+            }
+            class A extends o.default {
+                handleConnectionOpen() {
+                    let e = I.default.getGuildId();
+                    null != e && t.default.getDetectableGames()
+                }
+                handlePresenceUpdates(e) {
+                    let {
+                        updates: _
+                    } = e, E = new Set;
+                    _.forEach(e => {
+                        var _, t;
+                        let {
+                            user: o,
+                            activities: n
+                        } = e, a = s.default.getVoiceStateForUser(o.id);
+                        if (null == a || !(0, T.isVoiceChannelGameActivityEnabled)(null !== (t = null === (_ = r.default.getChannel(a.channelId)) || void 0 === _ ? void 0 : _.guild_id) && void 0 !== t ? t : "", "presence_update", !1)) return;
+                        let i = N([...n]);
+                        E = new Set([...E, ...i])
+                    }), O([...E])
+                }
+                handleVoiceStateUpdates(e) {
+                    let {
+                        voiceStates: _
+                    } = e, E = new Set;
+                    _.forEach(e => {
+                        let {
+                            userId: _,
+                            guildId: t
+                        } = e;
+                        if (!(0, T.isVoiceChannelGameActivityEnabled)(null != t ? t : "", "voice_state_update", !1)) return;
+                        let o = i.default.getActivities(_, t),
+                            n = N([...o]);
+                        E = new Set([...E, ...n])
+                    }), O([...E])
+                }
+                constructor(...e) {
+                    super(...e), this.actions = {
+                        POST_CONNECTION_OPEN: this.handleConnectionOpen,
+                        PRESENCE_UPDATES: this.handlePresenceUpdates,
+                        VOICE_STATE_UPDATES: this.handleVoiceStateUpdates
+                    }
+                }
+            }
+            var R = new A
         },
         589636: function(e, _, E) {
             "use strict";
@@ -35370,4 +35452,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.c02bfef4ef54f65effd6.js.map
+//# sourceMappingURL=34546.4a97308287d0b9a77115.js.map

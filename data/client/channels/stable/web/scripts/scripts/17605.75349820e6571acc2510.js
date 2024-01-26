@@ -1267,7 +1267,7 @@
                     viewBox: "0 0 24 24",
                     children: (0, n.jsx)("path", {
                         fill: "string" == typeof i ? i : i.css,
-                        d: "m5.1 10.02 7.4 1.39a.6.6 0 0 1 0 1.18L5.1 14l-2.94 5.87a1.48 1.48 0 0 0 1.99 1.98l17.03-8.52a1.48 1.48 0 0 0 0-2.64L4.15 2.16a1.48 1.48 0 0 0-1.99 1.98l2.94 5.88Z",
+                        d: "M6.6 10.02 14 11.4a.6.6 0 0 1 0 1.18L6.6 14l-2.94 5.87a1.48 1.48 0 0 0 1.99 1.98l17.03-8.52a1.48 1.48 0 0 0 0-2.64L5.65 2.16a1.48 1.48 0 0 0-1.99 1.98l2.94 5.88Z",
                         className: r
                     })
                 })
@@ -6075,7 +6075,7 @@
                 let v = S !== c.CollectiblesShopMarketingVariants.DEFAULT && (null == h ? void 0 : h.id) !== t.id && !I && !(null != _ && _ !== l),
                     C = v && (null == h ? void 0 : h.avatarDecoration) == null && (null == t ? void 0 : t.avatarDecoration) != null,
                     N = v && null != A && null == A.profileEffectId && (null == g ? void 0 : g.profileEffectId) != null,
-                    [y, O] = (0, f.useSelectedDismissibleContent)(C || N ? [r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL] : [], void 0, !0);
+                    [y, O] = (0, f.useSelectedDismissibleContent)((C, []), void 0, !0);
                 return {
                     shouldShow: y === r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL,
                     canShowAvatarDecorationUpsell: C,
@@ -7520,4 +7520,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17605.f68f5f357512aebd6a6e.js.map
+//# sourceMappingURL=17605.75349820e6571acc2510.js.map
