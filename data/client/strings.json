@@ -4890,7 +4890,7 @@
   "CONTACTS": "\"Contacts\"",
   "CONTACTS_ON_DISCORD": "\"Contacts on Discord\"",
   "FRIEND_REQUEST_NO_RESULTS_FOUND": "\"Wumpus looked, but couldn’t find anyone with that name.\"",
-  "SEARCH_OR_ADD_BY_USERNAME": "\"Search or add by username\"",
+  "SEARCH_OR_ADD_BY_USERNAME": "\"Search or add by @username\"",
   "ADD_BY_USERNAME": "\"Add by Username\"",
   "ADD_BY_ID_TITLE": "\"Add your friend on Discord\"",
   "ADD_BY_ID_BODY": "\"You will need both their username and a tag. Keep in mind that username is case sensitive.\"",
