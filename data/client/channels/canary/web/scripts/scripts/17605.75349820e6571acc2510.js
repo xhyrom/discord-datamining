@@ -6075,7 +6075,7 @@
                 let v = S !== c.CollectiblesShopMarketingVariants.DEFAULT && (null == h ? void 0 : h.id) !== t.id && !I && !(null != _ && _ !== l),
                     C = v && (null == h ? void 0 : h.avatarDecoration) == null && (null == t ? void 0 : t.avatarDecoration) != null,
                     N = v && null != A && null == A.profileEffectId && (null == g ? void 0 : g.profileEffectId) != null,
-                    [y, O] = (0, f.useSelectedDismissibleContent)(C || N ? [r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL] : [], void 0, !0);
+                    [y, O] = (0, f.useSelectedDismissibleContent)((C, []), void 0, !0);
                 return {
                     shouldShow: y === r.DismissibleContent.SHOP_FOR_ALL_USER_POPOUT_UPSELL,
                     canShowAvatarDecorationUpsell: C,
@@ -7520,4 +7520,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17605.5fc9f54a005b7d35c2e0.js.map
+//# sourceMappingURL=17605.75349820e6571acc2510.js.map
