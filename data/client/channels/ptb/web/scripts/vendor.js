@@ -25447,25 +25447,26 @@
                     items: e.items
                 }, t)
             }
-            async function eu(e, t, n, i) {
+            async function eu(e, t, n, i, s) {
                 if (null != t.paymentSource && null == t.currency) throw Error("Currency must be specified with payment source");
                 o.default.dispatch({
                     type: "BILLING_SUBSCRIPTION_UPDATE_START"
                 });
                 try {
-                    var s;
-                    let r = {
+                    var r;
+                    let l = {
                         status: t.status,
-                        payment_source_id: null === (s = t.paymentSource) || void 0 === s ? void 0 : s.id,
+                        payment_source_id: null === (r = t.paymentSource) || void 0 === r ? void 0 : r.id,
                         payment_source_token: null != t.paymentSource ? await Y(t.paymentSource) : null,
                         currency: t.currency,
-                        gateway_checkout_context: await (0, h.createGatewayCheckoutContext)(t.paymentSource)
+                        gateway_checkout_context: await (0, h.createGatewayCheckoutContext)(t.paymentSource),
+                        load_id: s
                     };
                     if (null != t.paymentSource && S.ADYEN_PAYMENT_SOURCES.has(t.paymentSource.type)) {
                         let e = await ev(t.paymentSource.type);
-                        r.return_url = a.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t.paymentSource.type, null != e ? e : "", "success")
+                        l.return_url = a.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t.paymentSource.type, null != e ? e : "", "success")
                     }
-                    null != t.items && (r.items = (0, g.coerceExistingItemsToNewItemInterval)(t.items).map(e => {
+                    null != t.items && (l.items = (0, g.coerceExistingItemsToNewItemInterval)(t.items).map(e => {
                         let {
                             planId: t,
                             ...n
@@ -25475,20 +25476,20 @@
                             plan_id: t
                         }
                     }));
-                    let l = await a.default.patch({
+                    let u = await a.default.patch({
                         url: p.Endpoints.BILLING_SUBSCRIPTION(e.id),
                         query: {
                             location: i,
                             location_stack: n
                         },
-                        body: r,
+                        body: l,
                         oldFormErrors: !0
                     });
                     return o.default.dispatch({
                         type: "BILLING_SUBSCRIPTION_UPDATE_SUCCESS",
-                        subscription: l.body
+                        subscription: u.body
                     }), {
-                        subscription: l.body,
+                        subscription: u.body,
                         redirectConfirmation: !1
                     }
                 } catch (n) {
@@ -118388,7 +118389,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261942"
+                                build_number: "261951"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134496,4 +134497,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.198de516459a6bae08bd.js.map
+//# sourceMappingURL=29278.5c7efdeb66dc6ad6f610.js.map

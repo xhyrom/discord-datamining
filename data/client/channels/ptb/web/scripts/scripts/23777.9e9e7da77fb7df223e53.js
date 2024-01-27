@@ -153,17 +153,17 @@
                     }), t
                 }
             }
-            async function c(t, e, n, u, s) {
+            async function c(t, e, n, u, s, c) {
                 try {
-                    let c = (0, l.getPremiumPlanItem)(t);
-                    i(c, "Expected existing premium plan");
-                    let S = (0, l.getItemsWithUpsertedPremiumPlanId)(t, c.planId);
+                    let S = (0, l.getPremiumPlanItem)(t);
+                    i(S, "Expected existing premium plan");
+                    let d = (0, l.getItemsWithUpsertedPremiumPlanId)(t, S.planId);
                     await a.updateSubscription(t, {
                         status: o.SubscriptionStatusTypes.ACTIVE,
                         paymentSource: u,
-                        items: S,
+                        items: d,
                         currency: n
-                    }, e, s), r.default.dispatch({
+                    }, e, s, c), r.default.dispatch({
                         type: "PREMIUM_PAYMENT_UPDATE_SUCCESS"
                     })
                 } catch (t) {
@@ -2749,4 +2749,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23777.2a4fc059cb5b5caf5307.js.map
+//# sourceMappingURL=23777.9e9e7da77fb7df223e53.js.map
