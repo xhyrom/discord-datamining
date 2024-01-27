@@ -1,6 +1,6 @@
 <p>As of <strong>March 15, 2024</strong>, Discord will no longer be supported on macOS 10.13 and macOS 10.14.</p>
 <p>To continue receiving updates and support for your Discord client, you must upgrade to at least macOS 10.15. Check out our OS/system requirements for Discord <a href="https://support.discord.com/hc/en-us/articles/213491697" target="_blank" rel="noopener noreferrer">here</a>.</p>
-<p>You can find more information about upgrading your macOS from the following page:</p>
+<p>You can find more information about upgrading your macOS from the following pages:</p>
 <ul>
     <li><a href="https://support.apple.com/en-us/HT201541" target="_blank" rel="noopener noreferrer">Upgrade macOS on Mac</a></li>
     <li><a href="https://support.apple.com/kb/DL2039?locale=en_US" target="_blank" rel="noopener noreferrer">Upgrade to macOS 10.15 Catalina</a></li>
