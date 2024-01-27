@@ -43,7 +43,7 @@
                     return L
                 },
                 doneEditingClydeProfile: function() {
-                    return D
+                    return h
                 }
             });
             var n = r("872717"),
@@ -239,7 +239,7 @@
                 })
             }
 
-            function D() {
+            function h() {
                 i.default.dispatch({
                     type: "CLYDE_PROFILE_EDITING_END"
                 })
@@ -473,7 +473,7 @@
                         introDelay: A = d.ENTRY_DELAY
                     } = e, C = i.useRef(null), [m, L] = i.useState([]);
                     (0, p.default)(S);
-                    let [D, R] = i.useState(0), [h, g] = i.useState(0), {
+                    let [h, D] = i.useState(0), [R, g] = i.useState(0), {
                         accessibilityLabel: v
                     } = S, [P, F] = i.useState(-A), {
                         stop: N,
@@ -490,12 +490,12 @@
                         m.forEach(r => {
                             let n = r.start + r.duration;
                             n > e && (e = n), r.loop && r.start < t && (t = r.start)
-                        }), R(t), g(e)
+                        }), D(t), g(e)
                     }, [g, m]);
                     let [G, U] = i.useState(!1);
                     return i.useEffect(() => {
-                        !0 !== s && !o && (N(), F(0)), !o && G && b.current && (N(), F(0)), u && o && !b.current && (Y(), S.animationType === c.AnimationTypes.PERSISTENT ? F(_ === c.RestartMethod.FromStart ? 0 : D) : F(0))
-                    }, [o, G, D, u, N, Y, b, S.animationType, s, _]), (0, n.jsx)("div", {
+                        !0 !== s && !o && (N(), F(0)), !o && G && b.current && (N(), F(0)), u && o && !b.current && (Y(), S.animationType === c.AnimationTypes.PERSISTENT ? F(_ === c.RestartMethod.FromStart ? 0 : h) : F(0))
+                    }, [o, G, h, u, N, Y, b, S.animationType, s, _]), (0, n.jsx)("div", {
                         ref: C,
                         className: l(y.profileEffects, {
                             [y.hovered]: o && a
@@ -528,7 +528,7 @@
                                     src: d.RESET,
                                     alt: v
                                 }, e.src + i);
-                                if (S.animationType === c.AnimationTypes.PERSISTENT && !G && null != r && P >= h && U(!0), e.loop && void 0 !== e.loopDelay && e.loopDelay > 0) {
+                                if (S.animationType === c.AnimationTypes.PERSISTENT && !G && null != r && P >= R && U(!0), e.loop && void 0 !== e.loopDelay && e.loopDelay > 0) {
                                     let t = e.duration + e.loopDelay,
                                         u = Math.floor((P - e.start) / t);
                                     if (P - e.start - u * t > e.duration) return S.animationType === c.AnimationTypes.INTERMITTENT && !G && null != r && u >= r && U(!0), (0, n.jsx)("img", {
@@ -586,7 +586,7 @@
                     {
                         preset: d
                     } = (0, T.default)(e.profileEffectId, () => l(!1));
-                return null != d && (t || d.config.animationType === c.AnimationTypes.PERSISTENT) ? !t && d.config.animationType === c.AnimationTypes.PERSISTENT || r || !1 === e.autoPlay && !1 === e.isHovering ? (0, n.jsx)(I, {
+                return null != d && (t || e.shopPreview || d.config.animationType !== c.AnimationTypes.INTERMITTENT) ? !t && e.shopPreview || !t && d.config.animationType === c.AnimationTypes.PERSISTENT || r || !1 === e.autoPlay && !1 === e.isHovering ? (0, n.jsx)(I, {
                     useThumbnail: e.useThumbnail,
                     config: d.config,
                     bannerAdjustment: e.bannerAdjustment,
@@ -694,4 +694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=22198.f5f5aeb061c44ad3e071.js.map
+//# sourceMappingURL=22198.18946cfba71a0683afcd.js.map

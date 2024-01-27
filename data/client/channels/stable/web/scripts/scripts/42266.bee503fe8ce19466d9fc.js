@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["42266"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -25447,25 +25447,26 @@
                     items: e.items
                 }, t)
             }
-            async function eu(e, t, n, i) {
+            async function eu(e, t, n, i, s) {
                 if (null != t.paymentSource && null == t.currency) throw Error("Currency must be specified with payment source");
                 o.default.dispatch({
                     type: "BILLING_SUBSCRIPTION_UPDATE_START"
                 });
                 try {
-                    var s;
-                    let r = {
+                    var r;
+                    let l = {
                         status: t.status,
-                        payment_source_id: null === (s = t.paymentSource) || void 0 === s ? void 0 : s.id,
+                        payment_source_id: null === (r = t.paymentSource) || void 0 === r ? void 0 : r.id,
                         payment_source_token: null != t.paymentSource ? await Y(t.paymentSource) : null,
                         currency: t.currency,
-                        gateway_checkout_context: await (0, h.createGatewayCheckoutContext)(t.paymentSource)
+                        gateway_checkout_context: await (0, h.createGatewayCheckoutContext)(t.paymentSource),
+                        load_id: s
                     };
                     if (null != t.paymentSource && S.ADYEN_PAYMENT_SOURCES.has(t.paymentSource.type)) {
                         let e = await ev(t.paymentSource.type);
-                        r.return_url = a.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t.paymentSource.type, null != e ? e : "", "success")
+                        l.return_url = a.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t.paymentSource.type, null != e ? e : "", "success")
                     }
-                    null != t.items && (r.items = (0, g.coerceExistingItemsToNewItemInterval)(t.items).map(e => {
+                    null != t.items && (l.items = (0, g.coerceExistingItemsToNewItemInterval)(t.items).map(e => {
                         let {
                             planId: t,
                             ...n
@@ -25475,20 +25476,20 @@
                             plan_id: t
                         }
                     }));
-                    let l = await a.default.patch({
+                    let u = await a.default.patch({
                         url: p.Endpoints.BILLING_SUBSCRIPTION(e.id),
                         query: {
                             location: i,
                             location_stack: n
                         },
-                        body: r,
+                        body: l,
                         oldFormErrors: !0
                     });
                     return o.default.dispatch({
                         type: "BILLING_SUBSCRIPTION_UPDATE_SUCCESS",
-                        subscription: l.body
+                        subscription: u.body
                     }), {
-                        subscription: l.body,
+                        subscription: u.body,
                         redirectConfirmation: !1
                     }
                 } catch (n) {
@@ -77747,8 +77748,8 @@
                     return s
                 }
             });
-            let i = "1123299582231720017",
-                s = "934240649153220678"
+            let i = "662267976984297473",
+                s = "936929561302675456"
         },
         256896: function(e, t, n) {
             "use strict";
@@ -114060,6 +114061,10 @@
                     throttlePeriod: 9e5,
                     throttleKeys: e => [e.guild_id, e.channel_id]
                 },
+                [_.AnalyticEvents.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
+                    throttlePeriod: 6e4,
+                    throttleKeys: e => [e.user_id]
+                },
                 [_.AnalyticEvents.DM_PROFILE_VIEWED]: {
                     throttlePeriod: 36e5,
                     throttleKeys: e => [e.viewed_profile_user_id]
@@ -118384,7 +118389,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261726"
+                                build_number: "261973"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134105,7 +134110,7 @@
                 MetricEvents: function() {
                     return i
                 }
-            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout"
+            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout"
         },
         561467: function(e, t, n) {
             "use strict";
@@ -134492,4 +134497,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.8980140939c0876cf099.js.map
+//# sourceMappingURL=42266.bee503fe8ce19466d9fc.js.map

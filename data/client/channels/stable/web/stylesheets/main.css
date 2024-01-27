@@ -24518,7 +24518,7 @@ html .progress__4ef76 {
     --custom-poll-style-vote-background: var(--polls-normal-fill);
     --custom-poll-style-vote-percentage: var(--polls-normal-border);
     --custom-poll-style-label: var(--polls-normal-label);
-    --custom-poll-style-image-background: var(--background-primary)
+    --custom-poll-style-image-background: var(--polls-normal-image-background)
 }
 
 .victorStyles_d67b5e {
@@ -26902,8 +26902,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -28625,6 +28625,34 @@ html .progress__4ef76 {
     background-color: var(--custom-poll-style-image-background)
 }
 
+.currentlyVoting_ee856e {
+    transition: background-color var(--custom-button-transition-duration)ease
+}
+
+.currentlyVoting_ee856e .attachment__02b3f:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-500);
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.currentlyVoting_ee856e:hover {
+    background-color: var(--polls-normal-fill-hover)
+}
+
+.currentlyVoting_ee856e:hover .attachment__02b3f:after {
+    opacity: .05
+}
+
+.theme-light .currentlyVoting_ee856e:hover .attachment__02b3f:after {
+    opacity: .1
+}
+
 .attachment__02b3f {
     position: absolute;
     width: 100%;
@@ -28695,6 +28723,14 @@ html .progress__4ef76 {
     align-items: stretch;
     flex-direction: column;
     overflow: hidden
+}
+
+.currentlyVoting_ca7610 {
+    transition: background-color var(--custom-button-transition-duration)ease
+}
+
+.answer__07489:hover .answerInner_a3bc8e.currentlyVoting_ca7610 {
+    background-color: var(--polls-normal-fill-hover)
 }
 
 .answerContent_f678a4 {
@@ -28783,6 +28819,11 @@ html .progress__4ef76 {
     padding-left: 0;
     padding-right: 0;
     cursor: pointer
+}
+
+.textButton__33241 :hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
 }
 
 .invalidWrapper_a453d5 {
@@ -124859,6 +124900,8 @@ div.nagbar_c731ff {
     --polls-normal-border: var(--primary-700);
     --polls-normal-confetti: var(--brand-500);
     --polls-normal-fill: var(--primary-530);
+    --polls-normal-fill-hover: var(--primary-600);
+    --polls-normal-image-background: var(--primary-660);
     --polls-normal-label: var(--white-500);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
@@ -125165,6 +125208,8 @@ div.nagbar_c731ff {
     --polls-normal-border: var(--primary-260);
     --polls-normal-confetti: var(--brand-500);
     --polls-normal-fill: var(--white-500);
+    --polls-normal-fill-hover: var(--primary-230);
+    --polls-normal-image-background: var(--white-500);
     --polls-normal-label: var(--primary-600);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
@@ -125471,6 +125516,8 @@ div.nagbar_c731ff {
     --polls-normal-border: var(--primary-700);
     --polls-normal-confetti: var(--brand-500);
     --polls-normal-fill: var(--primary-530);
+    --polls-normal-fill-hover: var(--primary-600);
+    --polls-normal-image-background: var(--primary-660);
     --polls-normal-label: var(--white-500);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
@@ -125777,6 +125824,8 @@ div.nagbar_c731ff {
     --polls-normal-border: var(--primary-700);
     --polls-normal-confetti: var(--brand-500);
     --polls-normal-fill: var(--primary-530);
+    --polls-normal-fill-hover: var(--primary-600);
+    --polls-normal-image-background: var(--primary-660);
     --polls-normal-label: var(--white-500);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
@@ -127186,4 +127235,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.51873b722906b1b255fa.css.map*/
+/*# sourceMappingURL=app.405672e4887ba18d7316.css.map*/
