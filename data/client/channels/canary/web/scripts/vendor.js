@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -576,7 +576,7 @@
                 "./1f399.svg": "733554",
                 "./1f39a.svg": "82958",
                 "./1f39b.svg": "951972",
-                "./1f39e.svg": "943452",
+                "./1f39e.svg": "368442",
                 "./1f39f.svg": "858132",
                 "./1f3a0.svg": "345170",
                 "./1f3a1.svg": "228817",
@@ -1010,7 +1010,7 @@
                 "./1f468-1f3fc-200d-1f527.svg": "97966",
                 "./1f468-1f3fc-200d-1f52c.svg": "568523",
                 "./1f468-1f3fc-200d-1f680.svg": "135459",
-                "./1f468-1f3fc-200d-1f692.svg": "942763",
+                "./1f468-1f3fc-200d-1f692.svg": "716282",
                 "./1f468-1f3fc-200d-1f91d-200d-1f468-1f3fb.svg": "105028",
                 "./1f468-1f3fc-200d-1f91d-200d-1f468-1f3fd.svg": "416830",
                 "./1f468-1f3fc-200d-1f91d-200d-1f468-1f3fe.svg": "170004",
@@ -1040,7 +1040,7 @@
                 "./1f468-1f3fd-200d-1f373.svg": "124382",
                 "./1f468-1f3fd-200d-1f37c.svg": "32163",
                 "./1f468-1f3fd-200d-1f384.svg": "415154",
-                "./1f468-1f3fd-200d-1f393.svg": "716282",
+                "./1f468-1f3fd-200d-1f393.svg": "596983",
                 "./1f468-1f3fd-200d-1f3a4.svg": "304502",
                 "./1f468-1f3fd-200d-1f3a8.svg": "336381",
                 "./1f468-1f3fd-200d-1f3eb.svg": "663794",
@@ -1101,7 +1101,7 @@
                 "./1f468-1f3fe-200d-1f9b2.svg": "469475",
                 "./1f468-1f3fe-200d-1f9b3.svg": "331755",
                 "./1f468-1f3fe-200d-1f9bc.svg": "67773",
-                "./1f468-1f3fe-200d-1f9bd.svg": "49003",
+                "./1f468-1f3fe-200d-1f9bd.svg": "627425",
                 "./1f468-1f3fe-200d-2695-fe0f.svg": "294967",
                 "./1f468-1f3fe-200d-2696-fe0f.svg": "23049",
                 "./1f468-1f3fe-200d-2708-fe0f.svg": "642025",
@@ -2912,7 +2912,7 @@
                 "./1f9cc.svg": "117456",
                 "./1f9cd-1f3fb-200d-2640-fe0f.svg": "477781",
                 "./1f9cd-1f3fb-200d-2642-fe0f.svg": "586234",
-                "./1f9cd-1f3fb.svg": "627425",
+                "./1f9cd-1f3fb.svg": "237264",
                 "./1f9cd-1f3fc-200d-2640-fe0f.svg": "107520",
                 "./1f9cd-1f3fc-200d-2642-fe0f.svg": "264431",
                 "./1f9cd-1f3fc.svg": "332573",
@@ -3289,7 +3289,7 @@
                 "./1f9d9-1f3fe-200d-2640-fe0f.svg": "845359",
                 "./1f9d9-1f3fe-200d-2642-fe0f.svg": "11268",
                 "./1f9d9-1f3fe.svg": "35447",
-                "./1f9d9-1f3ff-200d-2640-fe0f.svg": "977686",
+                "./1f9d9-1f3ff-200d-2640-fe0f.svg": "943452",
                 "./1f9d9-1f3ff-200d-2642-fe0f.svg": "512798",
                 "./1f9d9-1f3ff.svg": "328803",
                 "./1f9d9-200d-2640-fe0f.svg": "365833",
@@ -118389,7 +118389,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "261973"
+                                build_number: "261996"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134497,4 +134497,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.bee503fe8ce19466d9fc.js.map
+//# sourceMappingURL=29278.10a199afe93b2c33ed86.js.map
