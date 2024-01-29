@@ -67,7 +67,7 @@
 <h3 id="h_01HAD9EVWE3CJ4PJNRQBSTKT5A"><span style="color: #434343;" data-darkreader-inline-color="">To view invite information, you will need the <strong>Manage Server</strong> permission.</span></h3>
 <p>If you would search for a specific member, head into the Members search box and type the username or server display name.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20899297955223" alt="image4.png"></p>
-<p id="docs-internal-guid-2ed4d3de-7fff-72a3-aee7-ed20ac19bf1b">You can also select the server member to view their profile and view other server management tools by selecting the <strong>More Options</strong> button or by right-clicking the member’s row.  </p>
+<p id="docs-internal-guid-2ed4d3de-7fff-72a3-aee7-ed20ac19bf1b">You can also select a server member to view their profile and view other server management tools by selecting the <strong>More Options</strong> button or by right-clicking the member’s row.  </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20899291614231" alt="image3.png"></p>
 <p id="docs-internal-guid-dec4262a-7fff-9fd8-fb64-b4510d0124f4">Additionally, you can press the <strong>Prune</strong> option located right of the search box to assist with pruning members. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20899291618071" alt="image7.png"></p>
@@ -81,11 +81,11 @@
 <p id="docs-internal-guid-b846f5c9-7fff-df0e-88c9-eb50b9dd720b">3. Once banned, the selected users will disappear from the server and won’t be able to rejoin.</p>
 <h1 id="docs-internal-guid-2f0a323e-7fff-ebbf-0e37-dd1263d3cf9f">Mod View</h1>
 <h3 id="h_01HN3YDY5QA4RDPE5DZ0PENPN6"><span style="color: #434343;">Note: Mod View is currently an experiment on desktop and is only available to a limited number of servers.  </span></h3>
-<p>In the Members page, server owners and admins can enter Mod View to quickly review a member’s behaviors within the server.</p>
+<p>In the Members page, server owners and admins can enter <strong>Mod View</strong> to quickly review a member’s behaviors within the server.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20899297980183" alt="image13.png"></p>
-<p id="docs-internal-guid-774d8a70-7fff-8322-50db-2137dc94b15d">To enter<strong> Mod View,</strong> head over to the Members page and select a server member you would like to review. You can also press the <strong>Open Mod View</strong> button located to the far right of the server member’s row. </p>
+<p id="docs-internal-guid-774d8a70-7fff-8322-50db-2137dc94b15d">To enter<strong> Mod View,</strong> head over to the <strong>Members</strong> page and select a server member you would like to review. You can also press the <strong>Open Mod View</strong> button located to the far right of the server member’s row. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20899297987991" alt="image1.gif" width="813" height="454"><img src="https://support.discord.com/hc/article_attachments/20899291642263" alt="image6.png"></p>
-<p id="docs-internal-guid-ba3c885c-7fff-8282-e6cc-fd1f630ee2b3">While in Mod View, you can utilize the server management tools, review the member’s account information, and take a look at the member’s message history by selecting <strong>Messages</strong>. </p>
+<p id="docs-internal-guid-ba3c885c-7fff-8282-e6cc-fd1f630ee2b3">While in <strong>Mod View,</strong> you can utilize the server management tools, review the member’s account information, and take a look at the member’s message history by selecting <strong>Messages</strong>. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/20899291648791" alt="image5.gif" width="790" height="440"></p>
 <h1 id="h_01H5K0Z9RJ0AT89DSSRFDGYA8Y">Frequently Asked Questions</h1>
 <p id="docs-internal-guid-d05d63a4-7fff-dade-2e33-eca6e971faa4"><strong>Q: Which servers have access to the Members page?</strong></p>
@@ -93,7 +93,7 @@
 <p>For non-Community Servers, head over to your <strong>Server Settings &gt; User Management &gt; Members</strong> to view the Members Page. While there, you can also add it to your Channel List by toggling the <strong>Show Members in Channel List</strong> option.</p>
 <p><strong>Q: How are the Signals defined?</strong></p>
 <p id="docs-internal-guid-8ac37960-7fff-a481-2afc-ef6b4b2623eb">A: We can’t share the specific details around the Unusual DM Activity signal at this time. The Timed Out signals are displayed for users who have been timed out.</p>
-<p id="docs-internal-guid-da5ad279-7fff-065f-86ad-89a707ce9280"><strong>Q: If a member has "Unknown" under Join Method, then what does this mean?</strong></p>
+<p id="docs-internal-guid-da5ad279-7fff-065f-86ad-89a707ce9280"><strong>Q: If a member has "Unknown" under Join Method, what does this mean?</strong></p>
 <p>A: This means that we do not have enough information to determine how the member joined the server.</p>
 <p id="docs-internal-guid-4f6d035e-7fff-cb0e-2232-62dca65f1ecc"><strong>Q: Who can see the Members page?</strong></p>
 <p>A: Currently, the Members page is visible for the server’s owner and admins who have admin/manage server/manage nicknames/manage roles/kick/ban permissions.</p>
