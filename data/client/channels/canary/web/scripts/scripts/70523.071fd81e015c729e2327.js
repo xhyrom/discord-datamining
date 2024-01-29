@@ -45028,14 +45028,18 @@
                                     return
                                 }
                                 if (i === d.RPCEvents.ERROR) {
-                                    this.emit("error", new u.default(r.code, r.message)), this.disconnect();
+                                    this.emit("error", new u.default({
+                                        errorCode: r.code
+                                    }, r.message)), this.disconnect();
                                     return
                                 }
                                 this.emit(f(n, i), r);
                                 return
                             }
                             let a = null;
-                            i === d.RPCEvents.ERROR && (a = new u.default(r.code, r.message), r = null), this.emit(f(n, s), a, r)
+                            i === d.RPCEvents.ERROR && (a = new u.default({
+                                errorCode: r.code
+                            }, r.message), r = null), this.emit(f(n, s), a, r)
                         }, g.onclose = g.onerror = e => this.disconnect(e))
                     }
                 }
@@ -45088,7 +45092,9 @@
                                 data: n
                             }
                         } = e;
-                        if (t === d.RPCEvents.ERROR) throw new u.default(n.code, n.message);
+                        if (t === d.RPCEvents.ERROR) throw new u.default({
+                            errorCode: n.code
+                        }, n.message);
                         return n
                     })
                 }
@@ -118250,7 +118256,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262137"
+                                build_number: "262164"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134358,4 +134364,4 @@
         }
     }
 ]);
-//# sourceMappingURL=70523.b17726e1f25d2991992e.js.map
+//# sourceMappingURL=70523.071fd81e015c729e2327.js.map
