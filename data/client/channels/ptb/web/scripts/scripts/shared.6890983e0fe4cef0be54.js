@@ -3936,6 +3936,7 @@
                 guestSuffix: "guestSuffix__33fec",
                 hangStatusIcon: "hangStatusIcon__10ffc",
                 icon: "icon__1d60c",
+                iconGroup: "iconGroup__7a571",
                 iconPriortySpeaker: "iconPriortySpeaker_b1ed03",
                 iconPriortySpeakerSpeaking: "iconPriortySpeakerSpeaking__3f2f3",
                 iconServer: "iconServer_bbd10f",
