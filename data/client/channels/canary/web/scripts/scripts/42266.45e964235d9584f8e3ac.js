@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["42266"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87965,6 +87965,10 @@
                     var e;
                     return null === (e = E.saveCameraUploadsToDevice) || void 0 === e || e
                 }
+                get swipeToReply() {
+                    var e;
+                    return null !== (e = E.swipeToReply) && void 0 !== e && e
+                }
             }
             p.displayName = "UnsyncedUserSettingsStore", p.persistKey = "UnsyncedUserSettingsStore", p.migrations = [() => {
                 let e = d.default.get("UserSettingsStore");
@@ -118246,7 +118250,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262097"
+                                build_number: "262106"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134354,4 +134358,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.b48bb55e1254b308746e.js.map
+//# sourceMappingURL=42266.45e964235d9584f8e3ac.js.map
