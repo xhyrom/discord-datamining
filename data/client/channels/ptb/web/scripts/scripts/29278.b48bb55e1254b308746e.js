@@ -110404,7 +110404,7 @@
                     return s
                 },
                 default: function() {
-                    return p
+                    return h
                 }
             });
             var i, s, r = n("37983"),
@@ -110412,72 +110412,67 @@
                 o = n("414456"),
                 l = n.n(o),
                 u = n("907002"),
-                d = n("84339"),
-                c = n("449918"),
-                f = n("49111"),
-                _ = n("930352");
-            (i = s || (s = {})).SUBTLE = "SUBTLE", i.DARK = "DARK", i.LIGHT = "LIGHT", i.SOLID = "SOLID";
-            let h = {
-                    SUBTLE: .25,
-                    DARK: .85,
-                    LIGHT: .95,
-                    SOLID: 1
-                },
-                g = {
-                    LIGHT: f.Color.WHITE_500,
-                    DARK: f.Color.BLACK_500,
-                    SUBTLE: f.Color.BLACK_500,
-                    SOLID: f.Color.PRIMARY_630
-                };
-
-            function m(e) {
-                return (0, c.getColor)(g[e])
-            }
-            let E = a.forwardRef(function(e, t) {
+                d = n("77078"),
+                c = n("84339"),
+                f = n("930352");
+            (i = s || (s = {})).SUBTLE = "SUBTLE", i.DARK = "DARK", i.BLUR = "BLUR";
+            let _ = a.forwardRef(function(e, t) {
                 let {
                     backdropStyle: n = "SUBTLE",
                     backdropInstant: i = !1,
                     zIndexBoost: s = 0,
                     LayerComponent: a,
                     isVisible: o,
-                    onClose: c
-                } = e, f = {
-                    opacity: 0,
-                    background: m(n)
-                }, g = {
-                    opacity: h[n],
-                    background: m(n)
-                }, E = (0, d.default)(i), p = (0, u.useTransition)(o, {
+                    onClose: _
+                } = e, h = function() {
+                    let e = (0, d.useToken)(d.tokens.colors.BG_BACKDROP_NO_OPACITY).spring({
+                            opacity: .25
+                        }),
+                        t = (0, d.useToken)(d.tokens.colors.BG_BACKDROP).spring();
+                    return {
+                        SUBTLE: e,
+                        DARK: t,
+                        BLUR: t
+                    }
+                }(), g = h[n], m = (0, d.useToken)(d.tokens.colors.BG_BACKDROP_NO_OPACITY).spring({
+                    opacity: 0
+                }), E = {
+                    background: m,
+                    backdropFilter: "blur(0px)"
+                }, p = (0, c.default)(i), v = (0, u.useTransition)(o, {
                     keys: e => e ? "backdrop" : "empty",
                     config: {
-                        duration: i || E ? 0 : 300
+                        duration: i || p ? 0 : 300
                     },
-                    from: f,
-                    enter: g,
-                    leave: f
+                    from: E,
+                    enter: {
+                        background: g,
+                        backdropFilter: "blur(".concat("BLUR" === n ? 8 : 0, "px)")
+                    },
+                    leave: E
                 });
                 if (null == a) {
                     let e = {
                         zIndex: 1e3 + s
                     };
-                    return p((t, n) => n ? (0, r.jsx)(u.animated.div, {
-                        className: _.backdrop,
+                    return v((t, n) => n ? (0, r.jsx)(u.animated.div, {
+                        className: f.backdrop,
                         style: {
                             ...t,
                             ...e
                         },
-                        onClick: c
+                        onClick: _
                     }) : null)
                 }
                 return (0, r.jsx)(a, {
-                    children: p((e, t) => t ? (0, r.jsx)(u.animated.div, {
-                        className: l(_.backdrop, _.withLayer),
+                    children: v((e, t) => t ? (0, r.jsx)(u.animated.div, {
+                        className: l(f.backdrop, f.withLayer),
                         style: e,
-                        onClick: c
+                        onClick: _
                     }) : null)
                 })
             });
-            var p = E
+            var h = _
         },
         79798: function(e, t, n) {
             "use strict";
@@ -118251,7 +118246,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262093"
+                                build_number: "262097"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134359,4 +134354,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.c7a0ecb8bd091334b6dc.js.map
+//# sourceMappingURL=29278.b48bb55e1254b308746e.js.map
