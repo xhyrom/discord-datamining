@@ -25450,6 +25450,45 @@ html .progress__4ef76 {
     color: var(--interactive-normal)
 }
 
+.header_ae0242 {
+    margin: var(--spacing-16)0 var(--spacing-16)
+}
+
+.subheader__3f4ed {
+    margin-top: var(--spacing-16)
+}
+
+.closeButton__716bd {
+    position: absolute;
+    top: var(--spacing-12);
+    right: 0
+}
+
+.button_a2f96f:not(:first-child) {
+    margin-right: var(--spacing-16)
+}
+
+.image__551b1 {
+    width: 100%;
+    border-radius: var(--radius-xs)
+}
+
+.video__288e9 {
+    width: 100%
+}
+
+.media__7cd19 {
+    border-radius: var(--radius-xs)
+}
+
+.mediaContainer__668dd {
+    border-radius: var(--radius-xs);
+    padding: var(--spacing-16);
+    background-color: var(--background-secondary);
+    margin-top: var(--spacing-12);
+    margin-bottom: var(--spacing-16)
+}
+
 .ephemeral_c26b64 {
     position: relative;
     background-color: var(--brand-experiment-05a)
@@ -26922,8 +26961,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -34417,45 +34456,6 @@ html .progress__4ef76 {
     display: block;
     -o-object-fit: contain;
     object-fit: contain
-}
-
-.header__1ee19 {
-    margin: var(--spacing-16)0 var(--spacing-16)
-}
-
-.subheader_d7b23c {
-    margin-top: var(--spacing-16)
-}
-
-.closeButton__5556f {
-    position: absolute;
-    top: var(--spacing-12);
-    right: 0
-}
-
-.button_c9b13f:not(:first-child) {
-    margin-right: var(--spacing-16)
-}
-
-.image__09635 {
-    width: 100%;
-    border-radius: var(--radius-xs)
-}
-
-.video__2f467 {
-    width: 100%
-}
-
-.media__3394a {
-    border-radius: var(--radius-xs)
-}
-
-.mediaContainer_dcdb76 {
-    border-radius: var(--radius-xs);
-    padding: var(--spacing-16);
-    background-color: var(--background-secondary);
-    margin-top: var(--spacing-12);
-    margin-bottom: var(--spacing-16)
 }
 
 .container__9d616 {
@@ -127290,4 +127290,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.cb22923149173145f8ab.css.map*/
+/*# sourceMappingURL=app.54cbf97c1c4df37d8b02.css.map*/

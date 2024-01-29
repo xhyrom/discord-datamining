@@ -61118,11 +61118,14 @@
                 reportFalsePositive: function() {
                     return r
                 },
-                sendMessagesForScanning: function() {
+                reportFailedSendFalsePositive: function() {
                     return a
                 },
-                sendMultiChannelMessagesForScanning: function() {
+                sendMessagesForScanning: function() {
                     return o
+                },
+                sendMultiChannelMessagesForScanning: function() {
+                    return l
                 }
             });
             var i = n("872717"),
@@ -61140,7 +61143,19 @@
                 })
             }
 
-            function a(e, t) {
+            function a(e, t, n, r) {
+                return i.default.post({
+                    url: s.Endpoints.EXPLICIT_MEDIA_SENDER_REPORT_FALSE_POSITIVE,
+                    body: {
+                        channel_id: e,
+                        message_id: t,
+                        attachment_ids: n,
+                        filenames: r
+                    }
+                })
+            }
+
+            function o(e, t) {
                 return i.default.patch({
                     url: s.Endpoints.EXPLICIT_MEDIA_SCAN_MESSAGES(e),
                     body: {
@@ -61149,7 +61164,7 @@
                 })
             }
 
-            function o(e) {
+            function l(e) {
                 let t = e.map(e => ({
                     channel_id: e.channel_id,
                     message_id: e.id
@@ -118391,7 +118406,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262048"
+                                build_number: "262056"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134499,4 +134514,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.64281b1ea6b09bf16dd5.js.map
+//# sourceMappingURL=29278.0302c51297d56a1fc4d1.js.map
