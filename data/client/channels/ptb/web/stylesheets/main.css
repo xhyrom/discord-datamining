@@ -26961,8 +26961,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -48989,8 +48989,8 @@ html .progress__4ef76 {
 }
 
 .memberCount_d3ce07 {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     display: flex;
     align-items: center
 }
@@ -122275,7 +122275,7 @@ div.nagbar_c731ff {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: 14px
+    font-size: .875rem
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -127366,4 +127366,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.11f60c52e18e67a0129c.css.map*/
+/*# sourceMappingURL=app.96067286ba86a48a5649.css.map*/
