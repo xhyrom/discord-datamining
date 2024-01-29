@@ -26964,8 +26964,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -32053,7 +32053,7 @@ html .progress__4ef76 {
 }
 
 .outerContainer_ee638d {
-    height: 132px;
+    height: 128px;
     width: 100%
 }
 
@@ -32062,6 +32062,27 @@ html .progress__4ef76 {
     height: 100%;
     background: var(--background-secondary);
     border-radius: 12px
+}
+
+.contentContainer__30797 {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px;
+    gap: 8px;
+    justify-content: space-between
+}
+
+.headerContainer__16d7d {
+    display: flex;
+    flex-direction: column
+}
+
+.footerContainer_e825c8 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between
 }
 
 .imgWrapper_b60dfd {
@@ -32083,26 +32104,6 @@ html .progress__4ef76 {
     justify-items: center;
     place-items: center;
     background-color: black
-}
-
-.content_ab9920 {
-    flex: 1 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: space-between
-}
-
-.info__0cbb1 {
-    display: flex;
-    flex-direction: column
-}
-
-.cta_b6fbfa {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: space-between
 }
 
 .smallLayout__37dca .container__11e4a {
@@ -127384,4 +127385,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5f8daf95aebf460094ad.css.map*/
+/*# sourceMappingURL=app.097dfebbb91e58a88922.css.map*/
