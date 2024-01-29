@@ -26961,8 +26961,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -80465,6 +80465,10 @@ html .tabBadge__002b3 {
     height: 100vh
 }
 
+.modalCloseButton_b4dfd7 {
+    margin-left: auto
+}
+
 .body_a928aa {
     text-align: center;
     padding: 32px
@@ -127362,4 +127366,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a0fd5228955d59651e23.css.map*/
+/*# sourceMappingURL=app.11f60c52e18e67a0129c.css.map*/

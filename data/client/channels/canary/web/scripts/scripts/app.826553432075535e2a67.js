@@ -3670,6 +3670,12 @@
                 icon: "icon__9090f"
             }
         },
+        501701: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                modalCloseButton: "modalCloseButton_b4dfd7"
+            }
+        },
         114067: function(e, t, n) {
             "use strict";
             e.exports = {
