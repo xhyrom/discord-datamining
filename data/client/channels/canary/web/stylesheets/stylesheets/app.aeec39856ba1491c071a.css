@@ -6672,6 +6672,7 @@
 .headerNameAndButtons_b336e0 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
@@ -6859,6 +6860,8 @@
 
 .buttons__5760d {
     display: flex;
+    flex-grow: 1;
+    justify-content: end;
     align-items: center;
     gap: 10px
 }
@@ -26961,8 +26964,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -127366,4 +127369,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a8b68a271581df382461.css.map*/
+/*# sourceMappingURL=app.aeec39856ba1491c071a.css.map*/
