@@ -24261,17 +24261,9 @@ strong {
     color: var(--status-danger)
 }
 
-.selfHangStatus__30cc4 {
-    border-radius: 8px;
-    border: 1px solid var(--background-modifier-hover);
-    background: var(--background-modifier-hover);
-    padding: 4px 11px;
-    margin-right: -4px
-}
-
 .hangStatusIcon__10ffc {
-    height: 18px;
-    width: 18px
+    height: 16px;
+    width: 16px
 }
 
 .voiceUser__0470a:hover .selfHangStatus__30cc4 {
@@ -27321,4 +27313,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.c46cc62ec65955cc104d.css.map*/
+/*# sourceMappingURL=shared.2f3005e845c6c69615b7.css.map*/
