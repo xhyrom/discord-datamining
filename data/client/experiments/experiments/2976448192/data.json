@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_expiring_status",
+    "label": "Expiring status Experiment ",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: allow expiring status"
+    ],
+    "hash": 2976448192,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "expiringStatus"
+    ]
+  }
+}

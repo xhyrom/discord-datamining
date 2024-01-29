@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_quiet_mode",
+    "label": "Quiet Mode (dnd-equivalent) Experiment ",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: allow quiet mode"
+    ],
+    "hash": 711383732,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "allowQuietMode"
+    ]
+  }
+}
