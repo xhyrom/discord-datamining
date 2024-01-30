@@ -7048,13 +7048,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Recurring Events are enabled"
+        "Treatment 1: Recurring Events are enabled (Desktop Only)",
+        "Treatment 2: Recurring Events are enabled on Mobile + Desktop"
       ],
       "hash": 2114978023,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {
         "name": null,
@@ -7062,7 +7064,8 @@
       },
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "showRecurringEventsDesktop",
+        "showRecurringEventsMobile"
       ]
     },
     "rollout": {
