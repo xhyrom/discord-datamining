@@ -3982,6 +3982,7 @@
   "STATUS_INVISIBLE": "\"Invisible\"",
   "STATUS_DND_HELP": "\"You will not receive any desktop notifications.\"",
   "STATUS_INVISIBLE_HELPER": "\"You will not appear online, but will have full access to all of Discord.\"",
+  "STATUS_UNTIL": "\"until {endTime}\"",
   "STATUS_STREAMING": "\"Streaming\"",
   "STATUS_TAB_A11Y_ACTION": "\"Set your status\"",
   "PINNED_MESSAGES": "\"Pinned Messages\"",
