@@ -1549,10 +1549,10 @@
                     POLL_EXPIRE: (_, E) => "/channels/".concat(_, "/messages/").concat(E, "/expire"),
                     PREMIUM_MARKETING: "/premium-marketing",
                     QUESTS_CURRENT_QUESTS: "/quests/@me",
-                    QUESTS_HEARTBEAT: _ => "/quests/".concat(_, "/heartbeat"),
-                    ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls",
-                    QUESTS_REWARD_CODE: _ => "/quests/".concat(_, "/reward-code"),
                     QUESTS_ENROLL: _ => "/quests/".concat(_, "/enroll"),
+                    QUESTS_HEARTBEAT: _ => "/quests/".concat(_, "/heartbeat"),
+                    QUESTS_REWARD_CODE: _ => "/quests/".concat(_, "/reward-code"),
+                    ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls",
                     GAME_INVITE: _ => "/game-invite/@me/".concat(_),
                     GAME_INVITES: "/game-invite/@me"
                 }),
@@ -13617,4 +13617,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.bac5ec43100a2fcdce43.js.map
+//# sourceMappingURL=7273.8c81ee06b18c7f2e5c2e.js.map

@@ -26964,8 +26964,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -95425,6 +95425,12 @@ html .invoiceCancelRow_a8669b {
     font-size: .75rem
 }
 
+@keyframes shimmer__21c79 {
+    to {
+        background-position-x: 0%
+    }
+}
+
 .flagContainer__5347a,
 .roleContainer__7cd51 {
     display: flex;
@@ -95453,7 +95459,19 @@ html .invoiceCancelRow_a8669b {
 }
 
 .memberRowContainer_f0d0e5 {
-    cursor: pointer
+    cursor: pointer;
+    transition: box-shadow.6s ease-in-out, filter.6s ease-in-out;
+    filter: blur(0);
+    animation: none
+}
+
+.memberRowContainer_f0d0e5.loading_b476df {
+    filter: blur(4px);
+    background: linear-gradient(315deg, transparent, rgba(255, 255, 255, 5%), transparent);
+    animation: shimmer__21c79.5s infinite linear;
+    transition: filter.1s ease-out;
+    background-size: 300%;
+    background-position-x: 100%
 }
 
 .memberRowContainer_f0d0e5:hover td {
@@ -96593,6 +96611,16 @@ html .invoiceCancelRow_a8669b {
 
 .tableOptions_e6ae44 .button__00a9a:active {
     background-color: var(--background-modifier-active)
+}
+
+.sortButton_d8b97a {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.sortText__7eae6 {
+    margin-left: 4px
 }
 
 .settingsColumn__23153 {
@@ -114210,6 +114238,11 @@ html .invoiceCancelRow_a8669b {
     margin-top: 66px
 }
 
+.finishTitlePadding__855e9 {
+    padding-left: 35px;
+    padding-right: 35px
+}
+
 .button_d0990e {
     margin-bottom: 42px
 }
@@ -117117,6 +117150,51 @@ html .invoiceCancelRow_c1bfe7 {
 
 .button_b0bfc0 {
     padding: 11px 20px
+}
+
+.modalBody_bbc84d {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 76px;
+    position: relative
+}
+
+.rewardTile__66a02 {
+    width: 240px;
+    height: 348px;
+    padding: 16px;
+    border-radius: 4px;
+    margin-right: 40px;
+    border: 1px solid black
+}
+
+.reward__29972 {
+    width: 100%;
+    border-radius: 4px
+}
+
+.modalContent_e57193 {
+    width: 368px
+}
+
+.closeButton__669cd {
+    position: absolute;
+    right: 18px;
+    top: 18px
+}
+
+.heading_cd6769 {
+    margin-bottom: 4px
+}
+
+.bodyCopy__75ead {
+    margin-bottom: 24px
+}
+
+.errorInput_b67519 {
+    border: 1px solid var(--status-danger-background) !important
 }
 
 .modalContent_d4e781 {
@@ -127385,4 +127463,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.29fdf3b0586ec0388f14.css.map*/
+/*# sourceMappingURL=app.d9bdd034d0b6ba642636.css.map*/
