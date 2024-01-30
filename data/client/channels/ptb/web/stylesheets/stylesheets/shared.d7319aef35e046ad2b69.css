@@ -27102,6 +27102,56 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
+.wrapper__83f97 {
+    padding: 8px;
+    min-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-modifier-hover);
+    cursor: pointer;
+    color: var(--white-500);
+    text-align: left;
+    gap: 8px;
+    border: 1px solid transparent;
+    box-sizing: border-box
+}
+
+.wrapper__83f97:disabled {
+    cursor: not-allowed;
+    color: var(--text-muted)
+}
+
+.selected__2b4d8 {
+    background-color: var(--brand-500);
+    box-shadow: 0 0 4px 0 var(--brand-500);
+    border-color: rgba(255, 255, 255, .15)
+}
+
+.icon_e1e45d {
+    width: 36px;
+    height: 36px;
+    background-color: var(--background-message-hover);
+    border-radius: var(--radius-round);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.title__8b7fa {
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: var(--font-weight-semibold)
+}
+
+.body__34e23 {
+    font-family: var(--font-primary);
+    font-size: 12px;
+    font-weight: var(--font-weight-normal)
+}
+
 @value maxModalWidth from './MarkdownModal.module.css';
 
 .video__562f3 {
@@ -27321,4 +27371,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.d5f8c60faecdad65d9ae.css.map*/
+/*# sourceMappingURL=shared.d7319aef35e046ad2b69.css.map*/
