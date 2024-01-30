@@ -27064,8 +27064,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -94599,6 +94599,39 @@ html .invoiceCancelRow_a8669b {
     margin-bottom: -2px
 }
 
+.otherDatesContainer__8c5ee {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 2px 0;
+    padding: 6px 8px;
+    border-radius: 2px;
+    cursor: pointer
+}
+
+.otherDatesContainer__8c5ee.focused__9a051 {
+    background-color: var(--brand-experiment-600)
+}
+
+.leftContainer__0199d {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.otherDateLabel__7a492 {
+    color: var(--interactive-normal)
+}
+
+.otherDateLabel__7a492.focused__9a051 {
+    color: var(--white-500)
+}
+
+.radioSelection__0d9ba {
+    color: var(--control-brand-foreground)
+}
+
 .checkboxLabel__5cd49 {
     display: flex;
     flex-direction: row;
@@ -127502,4 +127535,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.0a5c45fd37836fc273f1.css.map*/
+/*# sourceMappingURL=app.cf1f2a65751a6f7fbd0b.css.map*/
