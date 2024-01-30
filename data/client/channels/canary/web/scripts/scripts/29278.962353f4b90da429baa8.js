@@ -50002,7 +50002,7 @@
                 O = new Map,
                 D = new Map,
                 P = new Map;
-            let b = m.ActivityPanelModes.ACTION_BAR,
+            let b = m.ActivityPanelModes.DISCONNECTED,
                 L = m.FocusedActivityLayouts.RESIZABLE;
 
             function M(e) {
@@ -50461,7 +50461,7 @@
                 LANDSCAPE_ACTIVITY_ASPECT_RATIO: function() {
                     return o
                 }
-            }), (r = i || (i = {})).ACTION_BAR = "action_bar", r.PANEL = "panel", r.PIP = "pip", (a = s || (s = {}))[a.NO_CHAT = 0] = "NO_CHAT", a[a.RESIZABLE = 1] = "RESIZABLE";
+            }), (r = i || (i = {})).ACTION_BAR = "action_bar", r.DISCONNECTED = "disconnected", r.LAUNCHING_WITH_ORIENTATION_CHANGE = "launching_with_orientation_change", r.PANEL = "panel", r.PIP = "pip", (a = s || (s = {}))[a.NO_CHAT = 0] = "NO_CHAT", a[a.RESIZABLE = 1] = "RESIZABLE";
             let o = 16 / 9
         },
         644223: function(e, t, n) {
@@ -117039,7 +117039,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262560"
+                                build_number: "262580"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133157,4 +133157,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.86f4343a6132a2efff7c.js.map
+//# sourceMappingURL=29278.962353f4b90da429baa8.js.map
