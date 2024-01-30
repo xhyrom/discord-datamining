@@ -2245,6 +2245,7 @@
             e.exports = {
                 "american-express": "american-express__24ab2",
                 amex: "amex_c19773",
+                apple: "apple_ea52db",
                 bancontact: "bancontact_be53e4",
                 cardIcon: "cardIcon__3476e",
                 cardIconLarge: "cardIconLarge_aca9f7 cardIcon__3476e",
