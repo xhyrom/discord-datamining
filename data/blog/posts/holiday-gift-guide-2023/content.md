@@ -25,7 +25,7 @@
             <h2><strong>Gift ‘em the joy of Discord Nitro…in Amazon’s store<br></strong></h2>
             <p>Maybe you know someone who uses Discord but haven’t added them as a friend yet. Or, someone’s asking you what gift YOU want for the holidays but want to share your idea as easily as possible. (...MOM…)&nbsp;</p>
             <p>Now, you can simply point them to Amazon, where they’ll be able to <a href="https://www.amazon.com/Discord-Nitro-1-Month-Subscription-Digital/dp/B0CF4J58QK/ref=sr_1_1?keywords=discord+nitro+gift+card&amp;qid=1701304458&amp;sr=8-1">purchase digital Nitro gift cards</a>! Anyone can purchase a Nitro gift card via Amazon, even if they don’t have a Discord account. When they complete their purchase, they’ll be emailed a code that a future gift recipient can redeem on their User Settings page.&nbsp;</p>
-            <figure style="max-width:1080px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1080px">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/657214bc07701aba8771f955_G3ItCQWCNyUankg3sKj_4EDc_FAm5_il-ORPetQ-kvr30YD1WQY6w5JDGycO4-5C-zziNf9lilvgVpCgDTCsM_U-WbNWfb5dsl_oc6dnWbSYdg_toiRCO-uLFz3EvpB6d3NYYYUsPVBqRfavetJKFomTyJjqdDmh9rdEAJyQx4rxdA8v2nQXivsecseL4A.png" alt="A collage of Discord Nitro gift cards. 1-month, 3-month, 6-month, and 12-month options are shown."></div>
             </figure>
             <p>There are four options for Nitro Gift Cards in Amazon’s U.S. store: 1-month, 3-month, 6-month, and 12-month gifts. They’re great choices if you don’t want to head straight for the “give me the $100 membership” suggestion.&nbsp;</p>
