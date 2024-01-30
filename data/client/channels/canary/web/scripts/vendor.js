@@ -90448,6 +90448,9 @@
                 CashAppSourceRecord: function() {
                     return A
                 },
+                AppleSourceRecord: function() {
+                    return y
+                },
                 default: function() {
                     return i
                 }
@@ -90709,6 +90712,11 @@
                 constructor(e) {
                     if (super(e), e.type !== l.PaymentSourceTypes.CASH_APP) throw Error("Cannot instantiate Cashapp with type: ".concat(e.type, ", must be ").concat(l.PaymentSourceTypes.CASH_APP));
                     this.username = e.username || ""
+                }
+            }
+            class y extends i {
+                constructor(e) {
+                    if (e.id = "", e.paymentGateway = l.PaymentGateways.APPLE_PARTNER, e.type = l.PaymentSourceTypes.APPLE, e.billingAddress = {}, e.country = "", e.invalid = !1, e.isDefault = !1, e.flags = 0, super(e), e.type !== l.PaymentSourceTypes.APPLE) throw Error("Cannot instantiate AppleSourceRecord with type: ".concat(e.type, ", must be ").concat(l.PaymentSourceTypes.APPLE))
                 }
             }
         },
@@ -118278,7 +118286,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262411"
+                                build_number: "262418"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134396,4 +134404,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.a898703f4629573389c8.js.map
+//# sourceMappingURL=29278.25dda19f2b60020ad59a.js.map
