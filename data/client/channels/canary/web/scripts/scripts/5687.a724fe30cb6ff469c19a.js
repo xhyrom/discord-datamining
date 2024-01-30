@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["27123"], {
+    ["5687"], {
         440540: function(i, t, x) {
             "use strict";
             i.exports = {
@@ -26328,8 +26328,8 @@
                 d = x("349503"),
                 k = x("831109"),
                 p = x("810047"),
-                r = x("856894"),
-                e = x("388647"),
+                e = x("856894"),
+                r = x("388647"),
                 n = x("506061"),
                 m = x("49111");
             let c = new Map;
@@ -26424,16 +26424,16 @@
                     options: d
                 } = i, {
                     page: k
-                } = null != d ? d : {}, p = Date.now(), r = e.default.getFetchState({
+                } = null != d ? d : {}, p = Date.now(), e = r.default.getFetchState({
                     applicationId: x,
                     guildId: s
                 }), {
                     lastFetchTimeMs: n
-                } = null !== (t = e.default.getSimilarApplications({
+                } = null !== (t = r.default.getSimilarApplications({
                     applicationId: x,
                     guildId: s
                 })) && void 0 !== t ? t : {};
-                if (r !== e.FetchState.FETCHING) {
+                if (e !== r.FetchState.FETCHING) {
                     if (null == n || !(n + 6e5 > p)) {
                         o.default.dispatch({
                             type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS",
@@ -26479,28 +26479,28 @@
                     onSuccessCallback: k
                 } = i, {
                     page: p,
-                    categoryId: e
-                } = null != d ? d : {}, n = Date.now(), c = r.default.getFetchState({
+                    categoryId: r
+                } = null != d ? d : {}, n = Date.now(), c = e.default.getFetchState({
                     query: x,
                     guildId: s,
                     page: p,
-                    categoryId: e
+                    categoryId: r
                 }), {
                     lastFetchTimeMs: l
-                } = null !== (t = r.default.getSearchResults({
+                } = null !== (t = e.default.getSearchResults({
                     query: x,
                     guildId: s,
                     page: p,
-                    categoryId: e
+                    categoryId: r
                 })) && void 0 !== t ? t : {};
-                if (c !== r.FetchState.FETCHING) {
+                if (c !== e.FetchState.FETCHING) {
                     if (null == l || !(l + 6e5 > n)) {
                         o.default.dispatch({
                             type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
                             query: x,
                             guildId: s,
                             page: p,
-                            categoryId: e
+                            categoryId: r
                         });
                         try {
                             let i = await a.default.get({
@@ -26509,7 +26509,7 @@
                                     query: x,
                                     guild_id: s,
                                     page: p,
-                                    category_id: e,
+                                    category_id: r,
                                     locale: y.default.locale
                                 }
                             });
@@ -26518,7 +26518,7 @@
                                 query: x,
                                 guildId: s,
                                 page: p,
-                                categoryId: e,
+                                categoryId: r,
                                 result: {
                                     results: i.body.results,
                                     countsByCategory: i.body.counts_by_category,
@@ -26534,7 +26534,7 @@
                                 query: x,
                                 guildId: s,
                                 page: p,
-                                categoryId: e
+                                categoryId: r
                             })
                         }
                     }
@@ -26651,8 +26651,8 @@
                 k = x("913144");
             (s = a || (a = {}))[s.FETCHING = 0] = "FETCHING", s[s.FETCHED = 1] = "FETCHED", s[s.ERROR = 2] = "ERROR";
             let p = {},
-                r = {},
-                e = {};
+                e = {},
+                r = {};
 
             function n(i) {
                 let {
@@ -26665,7 +26665,7 @@
                     let {
                         includesInactive: t
                     } = i;
-                    return e[n({
+                    return r[n({
                         includesInactive: t
                     })]
                 }
@@ -26673,7 +26673,7 @@
                     let {
                         includesInactive: t
                     } = i;
-                    return r[n({
+                    return e[n({
                         includesInactive: t
                     })]
                 }
@@ -26691,8 +26691,8 @@
                     let {
                         includesInactive: t
                     } = i;
-                    r = {
-                        ...r,
+                    e = {
+                        ...e,
                         [n({
                             includesInactive: t
                         })]: 0
@@ -26713,13 +26713,13 @@
                     p = {
                         ...p,
                         [a]: o
-                    }, r = {
-                        ...r,
+                    }, e = {
+                        ...e,
                         [a]: 1
                     };
                     let d = Date.now();
-                    e = {
-                        ...e,
+                    r = {
+                        ...r,
                         [a]: d
                     }
                 },
@@ -26727,8 +26727,8 @@
                     let {
                         includesInactive: t
                     } = i;
-                    r = {
-                        ...r,
+                    e = {
+                        ...e,
                         [n({
                             includesInactive: t
                         })]: 2
@@ -26760,10 +26760,10 @@
                 } = i;
                 return "query:'".concat(t, "' guildId:").concat(x, " page:").concat(s, " categoryId:").concat(a)
             }(s = a || (a = {}))[s.FETCHING = 0] = "FETCHING", s[s.FETCHED = 1] = "FETCHED", s[s.ERROR = 2] = "ERROR";
-            let r = new y({
+            let e = new y({
                     max: 20
                 }),
-                e = {};
+                r = {};
             class n extends d.default.Store {
                 getSearchResults(i) {
                     let {
@@ -26777,7 +26777,7 @@
                         page: s,
                         categoryId: a
                     });
-                    return r.get(o)
+                    return e.get(o)
                 }
                 getFetchState(i) {
                     let {
@@ -26791,7 +26791,7 @@
                         page: s,
                         categoryId: a
                     });
-                    return e[o]
+                    return r[o]
                 }
             }
             n.displayName = "ApplicationDirectorySearchStore";
@@ -26808,8 +26808,8 @@
                         page: s,
                         categoryId: a
                     });
-                    e = {
-                        ...e,
+                    r = {
+                        ...r,
                         [o]: 0
                     }
                 },
@@ -26826,11 +26826,11 @@
                         page: s,
                         categoryId: a
                     });
-                    r.set(y, {
+                    e.set(y, {
                         lastFetchTimeMs: Date.now(),
                         ...o
-                    }), e = {
-                        ...e,
+                    }), r = {
+                        ...r,
                         [y]: 1
                     }
                 },
@@ -26846,8 +26846,8 @@
                         page: s,
                         categoryId: a
                     });
-                    e = {
-                        ...e,
+                    r = {
+                        ...r,
                         [o]: 2
                     }
                 }
@@ -26876,10 +26876,10 @@
                 } = i;
                 return "applicationId:".concat(t, " guildId:").concat(x, " page:").concat(s)
             }(s = a || (a = {}))[s.NOT_FETCHED = 0] = "NOT_FETCHED", s[s.FETCHING = 1] = "FETCHING", s[s.FETCHED = 2] = "FETCHED", s[s.ERROR = 3] = "ERROR";
-            let r = new y({
+            let e = new y({
                     max: 20
                 }),
-                e = {};
+                r = {};
             class n extends d.default.Store {
                 getSimilarApplications(i) {
                     let {
@@ -26893,7 +26893,7 @@
                         guildId: x,
                         page: s
                     });
-                    return r.get(a)
+                    return e.get(a)
                 }
                 getFetchState(i) {
                     let {
@@ -26907,7 +26907,7 @@
                         guildId: x,
                         page: s
                     });
-                    return e[a]
+                    return r[a]
                 }
             }
             n.displayName = "ApplicationDirectorySimilarApplicationsStore";
@@ -26922,8 +26922,8 @@
                         guildId: x,
                         page: s
                     });
-                    e = {
-                        ...e,
+                    r = {
+                        ...r,
                         [a]: 1
                     }
                 },
@@ -26940,14 +26940,14 @@
                         guildId: x,
                         page: o
                     });
-                    r.set(d, {
+                    e.set(d, {
                         lastFetchTimeMs: Date.now(),
                         applications: s,
                         loadId: a,
                         page: o,
                         totalPages: y
-                    }), e = {
-                        ...e,
+                    }), r = {
+                        ...r,
                         [d]: 2
                     }
                 },
@@ -26961,8 +26961,8 @@
                         guildId: x,
                         page: s
                     });
-                    e = {
-                        ...e,
+                    r = {
+                        ...r,
                         [a]: 3
                     }
                 }
@@ -26975,7 +26975,7 @@
                     return s
                 },
                 default: function() {
-                    return e
+                    return r
                 }
             }), x("222007");
             var s, a, o = x("446674"),
@@ -26996,7 +26996,7 @@
                 } = i;
                 null == k.applicationIdToGuildIds[t] && (k.applicationIdToGuildIds[t] = new Set), k.applicationIdToGuildIds[t].add(x), k.applicationIdToGuildIds[t] = new Set(k.applicationIdToGuildIds[t])
             }
-            class r extends o.default.PersistedStore {
+            class e extends o.default.PersistedStore {
                 initialize(i) {
                     if (null != i)
                         for (let t in k.lastFetchTimeMs = i.lastFetchTimeMs, k.nextFetchRetryTimeMs = i.nextFetchRetryTimeMs, k.fetchState = i.fetchState, i.applicationIdToGuildIds) k.applicationIdToGuildIds[t] = new Set(i.applicationIdToGuildIds[t])
@@ -27017,8 +27017,8 @@
                     return k.fetchState
                 }
             }
-            r.displayName = "MyGuildApplicationsStore", r.persistKey = "MyGuildApplicationsStore";
-            var e = new r(y.default, {
+            e.displayName = "MyGuildApplicationsStore", e.persistKey = "MyGuildApplicationsStore";
+            var r = new e(y.default, {
                 LOGOUT: function() {
                     k.applicationIdToGuildIds = {}, k.lastFetchTimeMs = null, k.nextFetchRetryTimeMs = null, k.fetchState = 0
                 },
@@ -27149,7 +27149,7 @@
                     return H
                 },
                 getEffectUrl: function() {
-                    return G
+                    return U
                 },
                 getEffectAnnouncement: function() {
                     return Y
@@ -27162,8 +27162,8 @@
                 d = x("504936"),
                 k = x("988078"),
                 p = x("939118"),
-                r = x("101559"),
-                e = x("326209"),
+                e = x("101559"),
+                r = x("326209"),
                 n = x("610237"),
                 m = x("733261"),
                 c = x("596926"),
@@ -27192,7 +27192,7 @@
                 },
                 v = {
                     BASIC: [o],
-                    PREMIUM: [y, d, k, p, r, e, n, m, c, l, _, f, I, u, h, w, b, E, T, C, A]
+                    PREMIUM: [y, d, k, p, e, r, n, m, c, l, _, f, I, u, h, w, b, E, T, C, A]
                 },
                 D = {
                     [L.VoiceChannelEffectAnimationType.BASIC]: v.BASIC,
@@ -27219,7 +27219,7 @@
                     return Math.floor(Math.random() * x.length)
                 };
 
-            function G(i) {
+            function U(i) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : L.EMOJI_SIZE;
                 if (null != i.id) {
                     var x;
@@ -27234,7 +27234,7 @@
                 return null != a ? S.default.getURL(a.surrogates) : ""
             }
 
-            function U(i, t) {
+            function G(i, t) {
                 return a(i).map(i => {
                     var x;
                     return null !== (x = i[t]) && void 0 !== x ? x : null
@@ -27244,8 +27244,8 @@
             function Y(i) {
                 var t, x, s, a, o, y;
                 if (i.length < 1) return "";
-                let d = U(i, "userId"),
-                    k = U(i, "emojiName"),
+                let d = G(i, "userId"),
+                    k = G(i, "emojiName"),
                     p = k.length < 2 ? null !== (t = null == k ? void 0 : k[0]) && void 0 !== t ? t : "" : k.join(", ");
                 if (d.length < 1) return "";
                 if (1 === d.length) return N.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_SINGLE.format({
@@ -27264,6 +27264,118 @@
                     emojiNames: p
                 })
             }
+        },
+        427302: function(i, t, x) {
+            "use strict";
+            x.r(t), x.d(t, {
+                default: function() {
+                    return _
+                }
+            }), x("222007");
+            var s = x("37983"),
+                a = x("884691"),
+                o = x("414456"),
+                y = x.n(o),
+                d = x("77078"),
+                k = x("145079"),
+                p = x("86621"),
+                e = x("506885"),
+                r = x("981601"),
+                n = x("145131"),
+                m = x("49111"),
+                c = x("123106");
+            class l extends a.Component {
+                render() {
+                    let {
+                        popoutOpen: i
+                    } = this.state, {
+                        user: t,
+                        analyticsContext: x,
+                        disablePopout: a,
+                        guildId: o
+                    } = this.props, y = {
+                        location: {
+                            ...x.location,
+                            object: m.AnalyticsObjects.LIST_ITEM
+                        }
+                    };
+                    return (0, s.jsx)(d.Popout, {
+                        preload: () => (0, e.default)(t.id, t.getAvatarURL(o, 80), {
+                            guildId: o
+                        }),
+                        renderPopout: i => (0, s.jsx)(r.default, {
+                            ...i,
+                            guildId: o,
+                            userId: t.id,
+                            analyticsParams: y
+                        }),
+                        position: "left",
+                        onRequestClose: this.handleUserPopoutClose,
+                        shouldShow: !a && i,
+                        children: i => this.renderUserPopout(i)
+                    })
+                }
+                constructor(...i) {
+                    super(...i), this.state = {
+                        popoutOpen: !1
+                    }, this.handleClickUser = () => {
+                        let {
+                            onPopoutOpen: i
+                        } = this.props;
+                        this.setState({
+                            popoutOpen: !this.state.popoutOpen
+                        }), null == i || i()
+                    }, this.handleUserPopoutClose = () => {
+                        let {
+                            onPopoutClose: i
+                        } = this.props;
+                        this.setState({
+                            popoutOpen: !1
+                        }), null == i || i()
+                    }, this.renderUserPopout = i => {
+                        let {
+                            className: t,
+                            disablePopout: x,
+                            onContextMenu: a,
+                            user: o,
+                            status: p,
+                            textClassName: e,
+                            nick: r,
+                            guildId: m
+                        } = this.props;
+                        return (0, s.jsxs)(n.default, {
+                            align: n.default.Align.CENTER,
+                            className: y(c.memberListItem, t, {
+                                [c.popoutDisabled]: x
+                            }),
+                            onContextMenu: a,
+                            onMouseDown: i.onMouseDown,
+                            onKeyDown: i.onKeyDown,
+                            onClick: this.handleClickUser,
+                            children: [(0, s.jsx)(d.Avatar, {
+                                src: o.getAvatarURL(m, 24),
+                                className: c.avatar,
+                                "aria-label": o.username,
+                                size: d.AvatarSizes.SIZE_24,
+                                status: p
+                            }), (0, s.jsx)(d.Text, {
+                                className: y(c.memberListItemTag, e),
+                                variant: "text-sm/normal",
+                                children: (0, s.jsx)(k.default, {
+                                    user: o,
+                                    nick: r,
+                                    usernameClass: c.username,
+                                    hideDiscriminator: !0
+                                })
+                            })]
+                        })
+                    }
+                }
+            }
+            l.defaultProps = {
+                disablePopout: !1
+            };
+            var _ = (0, p.default)(l)
         },
         531470: function(i, t, x) {
             "use strict";
@@ -27303,4 +27415,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27123.de251037bd5a85bba021.js.map
+//# sourceMappingURL=5687.a724fe30cb6ff469c19a.js.map
