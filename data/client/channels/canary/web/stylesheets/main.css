@@ -118639,9 +118639,8 @@ div.nagbar_c731ff {
 .pageContainer_d51029 {
     padding: var(--spacing-64)var(--spacing-40)var(--spacing-80);
     max-width: 740px;
-    display: flex;
     justify-content: center;
-    box-sizing: border-box
+    width: 100%
 }
 
 .nagbar__16545 {
@@ -127489,4 +127488,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4bab89b65a51780bff03.css.map*/
+/*# sourceMappingURL=app.c69d7bfb9efd8ea85c6e.css.map*/
