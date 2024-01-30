@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["34546"], {
+    ["90486"], {
         229353: function(e, _, E) {
             e.exports = Object.freeze({
                 DISCORD: "Discord",
@@ -136,6 +136,7 @@
                 DEAFEN: "Deafen",
                 UNDEAFEN: "Undeafen",
                 SEARCH: "Search",
+                SEARCH_EXPERIMENTAL: "Search (Experimental)",
                 AUTOCOMPLETE_NO_RESULTS_HEADER: "Nope!",
                 AUTOCOMPLETE_NO_RESULTS_BODY: "Did you make a typo?",
                 AUTOCOMPLETE_STICKERS_QUERY_MATCH: "Similar to: !!{queryMatch}!!",
@@ -929,6 +930,7 @@
                 POMELO_ADD_FRIEND_DESCRIPTION: "You can add friends with their Discord username.",
                 POMELO_ADD_FRIEND_PLACEHOLDER: "Enter a username",
                 POMELO_ACTION_NEEDED: "**Action needed**: Update your username.",
+                POMELO_ACTION_NEEDED_FORCE: "**Action needed**: Update your username. Starting {date}, Discord will assign unique usernames to users who have not updated their usernames.",
                 POMELO_ACTION_LABEL: "Update Your Username",
                 POMELO_UPDATE_DISABLED_MESSAGE: "You need to verify your email or add a phone number to change your username.",
                 POMELO_EXISTING_FLOW_PROMPT_TITLE: "Update your username, {n}",
@@ -986,6 +988,8 @@
                 UU_REGISTER_SUGGESTION: "Here is a suggestion: [!!{suggestion}!!](nameOnClick)",
                 UU_REGISTER_DISPLAY_NAME_HINT_2: "This is how others see you. You can use special characters and emoji.",
                 UU_REGISTER_UNCLAIMED_HINT: "Your username is **!!{name}!!**, finish signing up so you can choose your own.",
+                UU_FORCE_MIGRATION_EXISTING_FLOW_REMINDER_BODY_1: "Update your username by {date}",
+                UU_FORCE_MIGRATION_EXISTING_FLOW_REMINDER_BODY_2: "Starting {date}, Discord will begin assigning unique usernames to users who have not updated their usernames.",
                 ACTIVITIES_SHARE_LOGS: "Share Activity Logs",
                 DEVELOPER_APPLICATION_TEST_MODE_ORIGIN_LABEL: "Select URL Origin Type (Embedded Apps Only)",
                 DEVELOPER_APPLICATION_TEST_MODE_PORT_NUMBER_LABEL: "Localhost Port Number",
@@ -2472,6 +2476,7 @@
                 FORM_LABEL_MOBILE_CATEGORY_MUTED: "You have muted this category",
                 FORM_LABEL_MOBILE_CATEGORY_MUTED_UNTIL: "You have muted this category until $[**{endTime}**](endTimeHook)",
                 MUTE_DURATION_15_MINUTES: "For 15 Minutes",
+                MUTE_DURATION_30_MINUTES: "For 30 Minutes",
                 MUTE_DURATION_1_HOUR: "For 1 Hour",
                 MUTE_DURATION_3_HOURS: "For 3 Hours",
                 MUTE_DURATION_8_HOURS: "For 8 Hours",
@@ -2479,6 +2484,7 @@
                 MUTE_DURATION_ALWAYS: "Until I turn it back on",
                 MUTE_UNTIL: "Mute duration",
                 MUTED_UNTIL_TIME: "Muted until {endTime}",
+                DURATION_FOREVER: "Forever",
                 FORM_DESCRIPTION_MOBILE_NOTIFICATION_MUTED: "You can’t get notifications from this channel nor change settings until you unmute this channel.",
                 FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ALL_MESSAGES: "You are receiving notifications from all messages in this server, but you can override it here",
                 FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ONLY_MENTIONS: "You are receiving notifications from only mentions in this server, but you can override it here",
@@ -3352,6 +3358,8 @@
                 USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_ALL: "All Messages",
                 USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_UNREADS: "Unread DMs only",
                 USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_NONE: "None",
+                USER_SETTINGS_EXACT_SEARCH_RESULT_COUNT: "Show exact search result counts",
+                USER_SETTINGS_EXACT_SEARCH_RESULT_COUNT_DESCRIPTION: "When enabled, may increase the time it takes to show search results.",
                 USER_SETTINGS_SHOW_LIBRARY: "Show Game Library",
                 USER_SETTINGS_SHOW_LIBRARY_NOTE: "Turn this off to hide your Game Library so you can focus on your conversations.",
                 HARDWARE_ACCELERATION: "Hardware Acceleration",
@@ -13359,6 +13367,18 @@
                 MEMBER_SAFETY_JOINED_DATE_LABEL: "Member Since Date Options",
                 MEMBER_SAFETY_ACCOUNT_AGE_LABEL: "Discord Join Date Options",
                 MEMBER_SAFETY_JOIN_METHOD_LABEL: "Server Join Method Options",
+                MEMBER_SAFETY_GUILD_JOINED_AT_DESC: "Member Since (Newest first)",
+                MEMBER_SAFETY_GUILD_JOINED_AT_ASC: "Member Since (Oldest first)",
+                MEMBER_SAFETY_USER_JOINED_AT_DESC: "Joined Discord (Newest first)",
+                MEMBER_SAFETY_USER_JOINED_AT_ASC: "Joined Discord (Oldest first)",
+                GUILD_MEMBER_MOD_VIEW_PHONE_VERIFIED: "Phone Verified",
+                GUILD_MEMBER_MOD_VIEW_AGREE_TO_RULES: "Agreed to Rules",
+                GUILD_MEMBER_MOD_VIEW_INVITE_LINK: "Invite Link",
+                GUILD_MEMBER_MOD_VIEW_INVITE_LINK_TOOLTIP: "Invite link used to join server",
+                GUILD_MEMBER_MOD_VIEW_INVITE_LINK_LABEL: "Join Method",
+                GUILD_MEMBER_MOD_VIEW_DISCORD_JOIN_DATE: "Discord Join Date",
+                GUILD_MEMBER_MOD_VIEW_GUILD_JOIN_DATE: "Server Join Date",
+                GUILD_MEMBER_MOD_VIEW_GUILD_MESSAGE_ACTIVITY_TITLE: "Server Activity",
                 GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE: "Show Members In Channel List",
                 GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION: "Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.",
                 GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED: "The members page has been moved to the server channel list. [Go There](onClick)",
@@ -16573,6 +16593,20 @@
                 QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
                 QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
                 QUEST_REWARD: "Win {reward}",
+                QUESTS_REWARD_CODE_HEADER: "Your reward code",
+                QUESTS_REWARD_CODE_CONGRATS: "Congrats!",
+                QUESTS_REWARD_CODE_PLATFORM_SELECTION_HEADER: "What is your preferred platform?",
+                QUESTS_REWARD_CODE_ERROR: "Uh oh! Something went wrong, please try again later",
+                QUESTS_REWARD_CODE_SELECT_PLATFORM_LABEL: "Choose a platform",
+                QUESTS_REWARD_CODE_SELECT_PLATFORM_PLACEHOLDER: "Select platform",
+                QUESTS_REWARD_CODE_SELECT_PLATFORM_INSTRUCTIONS: "We will generate a platform-specific code for your {rewardName}. **You will not be able to change your selection after hitting Get code.**",
+                QUESTS_REWARD_CODE_DONE: "Done",
+                QUESTS_REWARD_CODE_GET_CODE: "Get code",
+                QUESTS_REWARD_CODE_TRY_AGAIN: "Try again",
+                QUESTS_REWARD_CODE_PLATFORM_XBOX: "Xbox",
+                QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION: "PlayStation",
+                QUESTS_REWARD_CODE_PLATFORM_SWITCH: "Switch",
+                QUESTS_REWARD_CODE_PLATFORM_PC: "PC",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -16581,7 +16615,18 @@
                 LIST_SUMMARY_LABEL_ONE: "!!{first}!!",
                 LIST_SUMMARY_LABEL_TWO: "!!{first}!! and !!{second}!!",
                 LIST_SUMMARY_LABEL_THREE: "!!{first}!!, !!{second}!!, and !!{third}!!",
-                LIST_SUMMARY_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}"
+                LIST_SUMMARY_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}",
+                STOREFRONT: "App Store",
+                STOREFRONT_TITLE: "{appName} App Store",
+                QUIET_MODE_DISABLED: "Quiet Mode Disabled",
+                QUIET_MODE_ENABLED: "Quiet Mode Enabled",
+                QUIET_MODE_DND: "Quiet Mode (DND) Enabled",
+                QUIET_MODE_WHILE_DND_UPSELL_TITLE: "Switch to Online?",
+                QUIET_MODE_WHILE_DND_UPSELL_BODY: "With Quiet Mode, Discord will no longer show in-app, desktop notifications or play message sounds. Would you like to switch to Online?",
+                QUIET_MODE_SETTINGS_LABEL: "Quiet Mode (BETA)",
+                QUIET_MODE_SETTINGS_DESCRIPTION: 'Discord will not show in-app, desktop notifications or play message sounds. Like "Do Not Disturb".',
+                QUIET_MODE_DISABLED_BY: "This is disabled by Quiet Mode",
+                QUIET_MODE_HABITUAL_DND_NOTICE: "You use Do Not Disturb a lot. Would you like to enable Quiet Mode instead?"
             })
         },
         444051: function(e, _, E) {
@@ -18105,7 +18150,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261973", ", Version Hash: ").concat("954e1a5f8dd2dcebf83c5177b0965788054d9563")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262316", ", Version Hash: ").concat("a5eea21f92f675da5226d920d1ddfb5972a3e4b7")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20349,8 +20394,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "261973", "261973"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261973")), _ = 0), _
+                let _ = parseInt((e = "262316", "262316"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262316")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -23942,107 +23987,6 @@
             }
             var T = new s
         },
-        887446: function(e, _, E) {
-            "use strict";
-            let t, o, n, r;
-            E.r(_), E.d(_, {
-                default: function() {
-                    return R
-                }
-            });
-            var a = E("748820"),
-                i = E("446674"),
-                I = E("913144"),
-                s = E("724210"),
-                T = E("515631");
-            let S = {};
-
-            function N(e) {
-                return {
-                    guildId: e,
-                    sessionId: (0, a.v4)()
-                }
-            }
-
-            function O(e) {
-                null != n && n.guildId === e ? (o = n, n = void 0) : o = N(e)
-            }
-            class A extends i.default.Store {
-                getSavedScrollPosition(e) {
-                    return S[e]
-                }
-                getHomeSessionId(e) {
-                    return null != o && o.guildId === e ? o.sessionId : null != n && n.guildId === e ? n.sessionId : void 0
-                }
-                getHomeSessionSource(e) {
-                    return null != r && r.guildId === e ? r.source : T.GuildHomeLandingSource.ORGANIC
-                }
-            }
-            A.displayName = "GuildHomeStore";
-            var R = new A(I.default, {
-                CONNECTION_OPEN: function() {
-                    S = {}
-                },
-                GUILD_FEED_FETCH_FRESH_START: function(e) {
-                    let {
-                        guildId: _
-                    } = e;
-                    delete S[_]
-                },
-                GUILD_HOME_SET_SCROLL_POSITION: function(e) {
-                    let {
-                        guildId: _,
-                        scrollPosition: E
-                    } = e;
-                    S[_] = E
-                },
-                CHANNEL_SELECT: function(e) {
-                    let {
-                        guildId: _,
-                        channelId: E
-                    } = e;
-                    if (null == _ || null == E || !(0, s.isStaticChannelRoute)(E) || !(0, s.isGuildHomeChannel)(E)) {
-                        t = void 0, o = void 0, n = void 0, r = void 0;
-                        return
-                    }
-                    let a = (0, s.buildGuildStaticChannelId)(E, _);
-                    if (t === a || null != o && o.guildId === _) return !1;
-                    O(_), t = a, null != r && r.guildId !== _ && (r = void 0)
-                },
-                CHANNEL_PRELOAD: function(e) {
-                    let {
-                        guildId: _,
-                        channelId: E
-                    } = e;
-                    if (null == _ || null == E || !(0, s.isStaticChannelRoute)(E) || !(0, s.isGuildHomeChannel)(E)) {
-                        n = void 0;
-                        return
-                    }
-                    if (null != n && n.guildId === _) return !1;
-                    n = N(_)
-                },
-                GUILD_HOME_SET_SOURCE: function(e) {
-                    let {
-                        source: _,
-                        guildId: E
-                    } = e;
-                    r = {
-                        guildId: E,
-                        source: _
-                    }
-                },
-                GUILD_HOME_ENSURE_HOME_SESSION: function(e) {
-                    let {
-                        guildId: _
-                    } = e;
-                    if (null != o && o.guildId === _) return !1;
-                    O(_)
-                },
-                LOGOUT: function() {
-                    o = void 0, n = void 0, r = void 0
-                }
-            })
-        },
         129966: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -25787,6 +25731,12 @@
                 },
                 enrollInQuest: function() {
                     return T
+                },
+                claimQuestRewardCode: function() {
+                    return S
+                },
+                fetchQuestRewardCode: function() {
+                    return N
                 }
             });
             var t = E("872717"),
@@ -25801,11 +25751,16 @@
                 });
                 try {
                     let e = await t.default.get({
-                        url: i.Endpoints.QUESTS_CURRENT_QUESTS
-                    });
+                            url: i.Endpoints.QUESTS_CURRENT_QUESTS
+                        }),
+                        _ = e.body.quests.map(e => (0, a.questWithUserStatusFromServer)(e)),
+                        E = _.filter(e => {
+                            var _;
+                            return (null === (_ = e.userStatus) || void 0 === _ ? void 0 : _.claimedAt) != null || e.config.rewardCodePlatforms.length > 0
+                        });
                     o.default.dispatch({
                         type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
-                        quests: e.body.quests.map(a.questWithUserStatusFromServer)
+                        quests: E
                     })
                 } catch (e) {
                     o.default.dispatch({
@@ -25867,6 +25822,59 @@
                     }
                 }
             }
+            async function S(e, _) {
+                let E = r.default.isClaimingRewardCode(e);
+                if (!E) {
+                    o.default.dispatch({
+                        type: "QUESTS_CLAIM_REWARD_CODE_BEGIN",
+                        questId: e
+                    });
+                    try {
+                        let E = await t.default.post({
+                            url: i.Endpoints.QUESTS_REWARD_CODE(e),
+                            body: {
+                                platform: _
+                            }
+                        });
+                        o.default.dispatch({
+                            type: "QUESTS_CLAIM_REWARD_CODE_SUCCESS",
+                            questId: e,
+                            rewardCode: (0, a.questsRewardCodeFromServer)(E.body)
+                        })
+                    } catch (_) {
+                        throw o.default.dispatch({
+                            type: "QUESTS_CLAIM_REWARD_CODE_FAILURE",
+                            error: new n.default(_),
+                            questId: e
+                        }), _
+                    }
+                }
+            }
+            async function N(e) {
+                let _ = r.default.isFetchingRewardCode(e);
+                if (!_) {
+                    o.default.dispatch({
+                        type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
+                        questId: e
+                    });
+                    try {
+                        let _ = await t.default.get({
+                            url: i.Endpoints.QUESTS_REWARD_CODE(e)
+                        });
+                        o.default.dispatch({
+                            type: "QUESTS_FETCH_REWARD_CODE_SUCCESS",
+                            questId: e,
+                            rewardCode: (0, a.questsRewardCodeFromServer)(_.body)
+                        })
+                    } catch (_) {
+                        throw o.default.dispatch({
+                            type: "QUESTS_FETCH_REWARD_CODE_FAILURE",
+                            error: new n.default(_),
+                            questId: e
+                        }), _
+                    }
+                }
+            }
         },
         374023: function(e, _, E) {
             "use strict";
@@ -25903,7 +25911,7 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return S
+                    return R
                 }
             }), E("222007");
             var t = E("446674"),
@@ -25911,9 +25919,12 @@
             let n = !1,
                 r = new Map,
                 a = 0,
-                i = new Set;
+                i = new Set,
+                I = new Set,
+                s = new Set,
+                T = new Map;
 
-            function I(e, _) {
+            function S(e, _) {
                 r = new Map(r);
                 let E = r.get(e);
                 null != E && r.set(e, {
@@ -25922,11 +25933,27 @@
                 })
             }
 
-            function s(e) {
+            function N(e, _) {
+                let E = new Map(T);
+                E.set(e, _), T = E;
+                let t = r.get(e),
+                    o = null == t ? void 0 : t.userStatus;
+                if (null != o && null == o.claimedAt) {
+                    let E = {
+                        userStatus: {
+                            ...o,
+                            claimedAt: _.claimedAt
+                        }
+                    };
+                    S(e, E)
+                }
+            }
+
+            function O(e) {
                 let _ = new Set(i);
                 _.delete(e), i = _
             }
-            class T extends t.default.Store {
+            class A extends t.default.Store {
                 get quests() {
                     return r
                 }
@@ -25939,9 +25966,18 @@
                 isEnrolling(e) {
                     return i.has(e)
                 }
+                isClaimingRewardCode(e) {
+                    return I.has(e)
+                }
+                isFetchingRewardCode(e) {
+                    return s.has(e)
+                }
+                getRewardCode(e) {
+                    return T.get(e)
+                }
             }
-            T.displayName = "QuestsStore";
-            var S = new T(o.default, {
+            A.displayName = "QuestsStore";
+            var R = new A(o.default, {
                 LOGOUT: function() {
                     n = !1, r = new Map, a = 0, i = new Set
                 },
@@ -25962,7 +25998,7 @@
                         questId: _,
                         userStatus: E
                     } = e;
-                    I(_, {
+                    S(_, {
                         userStatus: E
                     })
                 },
@@ -25976,56 +26012,114 @@
                     let {
                         enrolledQuestUserStatus: _
                     } = e;
-                    I(_.questId, {
+                    S(_.questId, {
                         userStatus: _
-                    }), s(_.questId)
+                    }), O(_.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: _
                     } = e;
-                    s(_)
+                    O(_)
+                },
+                QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
+                    let {
+                        questId: _
+                    } = e, E = new Set(s);
+                    E.add(_), s = E
+                },
+                QUESTS_FETCH_REWARD_CODE_SUCCESS: function(e) {
+                    let {
+                        questId: _,
+                        rewardCode: E
+                    } = e, t = new Set(s);
+                    t.delete(_), s = t, N(_, E)
+                },
+                QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
+                    let {
+                        questId: _
+                    } = e, E = new Set(s);
+                    E.delete(_), s = E
+                },
+                QUESTS_CLAIM_REWARD_CODE_BEGIN: function(e) {
+                    let {
+                        questId: _
+                    } = e, E = new Set(I);
+                    E.add(_), I = E
+                },
+                QUESTS_CLAIM_REWARD_CODE_SUCCESS: function(e) {
+                    let {
+                        questId: _,
+                        rewardCode: E
+                    } = e, t = new Set(I);
+                    t.delete(_), I = t, N(_, E)
+                },
+                QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
+                    let {
+                        questId: _
+                    } = e, E = new Set(I);
+                    E.delete(_), I = E
                 }
             })
+        },
+        588025: function(e, _, E) {
+            "use strict";
+            var t, o, n, r;
+            E.r(_), E.d(_, {
+                QuestRewardCodePlatforms: function() {
+                    return t
+                },
+                QuestContent: function() {
+                    return o
+                }
+            }), (n = t || (t = {}))[n.NO_PLATFORM = 0] = "NO_PLATFORM", n[n.XBOX = 1] = "XBOX", n[n.PLAYSTATION = 2] = "PLAYSTATION", n[n.SWITCH = 3] = "SWITCH", n[n.PC = 4] = "PC", (r = o || (o = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR"
         },
         227231: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
                 getQuestByApplicationId: function() {
-                    return n
-                },
-                isQuestExpired: function() {
-                    return r
-                },
-                questUserStatusFromServer: function() {
                     return a
                 },
-                questWithUserStatusFromServer: function() {
+                isQuestExpired: function() {
                     return i
                 },
-                getRewardAssetUrl: function() {
+                questUserStatusFromServer: function() {
                     return I
                 },
-                getHeroAssetUrl: function() {
+                questWithUserStatusFromServer: function() {
                     return s
                 },
-                getQuestBarHeroAssetUrl: function() {
+                questsRewardCodeFromServer: function() {
                     return T
                 },
-                getGameTileAssetUrl: function() {
+                getRewardAssetUrl: function() {
                     return S
                 },
-                getGameLogotypeAssetUrl: function() {
+                getHeroAssetUrl: function() {
                     return N
                 },
-                getQuestForTargetedContent: function() {
+                getQuestBarHeroAssetUrl: function() {
                     return O
+                },
+                getGameTileAssetUrl: function() {
+                    return A
+                },
+                getGameLogotypeAssetUrl: function() {
+                    return R
+                },
+                getQuestForTargetedContent: function() {
+                    return l
+                },
+                getPlatformString: function() {
+                    return L
                 }
             }), E("222007");
-            var t = E("2973");
-            let o = "https://cdn.discordapp.com/assets/quests/";
+            var t = E("2973"),
+                o = E("588025"),
+                n = E("782340");
+            let r = "https://cdn.discordapp.com/assets/quests/";
 
-            function n(e) {
+            function a(e) {
                 let _;
                 for (let [E, o] of t.default.quests)
                     if (o.config.applicationId === e) {
@@ -26034,12 +26128,12 @@
                     } return _
             }
 
-            function r(e) {
+            function i(e) {
                 let _ = new Date(e.config.expiresAt);
                 return _.valueOf() <= Date.now()
             }
 
-            function a(e) {
+            function I(e) {
                 return {
                     userId: e.user_id,
                     questId: e.quest_id,
@@ -26052,42 +26146,70 @@
                 }
             }
 
-            function i(e) {
-                var _, E, t;
+            function s(e) {
                 return {
                     id: e.id,
-                    config: {
-                        expiresAt: (_ = e.config).expires_at,
-                        streamDurationRequirementMinutes: _.stream_duration_requirement_minutes,
-                        gameTitle: _.game_title,
-                        applicationId: _.application_id,
-                        messages: {
-                            questName: (E = _.messages).quest_name,
-                            rewardName: E.reward_name,
-                            rewardNameWithArticle: E.reward_name_with_article,
-                            rewardRedemptionInstructions: E.reward_redemption_instructions,
-                            gameTitle: E.game_title,
-                            gamePublisher: E.game_publisher
-                        },
-                        colors: {
-                            primary: (t = _.colors).primary,
-                            secondary: t.secondary
+                    config: function(e) {
+                        var _, E;
+                        let t = new Set(Object.values(o.QuestRewardCodePlatforms));
+                        return {
+                            expiresAt: e.expires_at,
+                            streamDurationRequirementMinutes: e.stream_duration_requirement_minutes,
+                            gameTitle: e.game_title,
+                            applicationId: e.application_id,
+                            messages: {
+                                questName: (_ = e.messages).quest_name,
+                                rewardName: _.reward_name,
+                                rewardNameWithArticle: _.reward_name_with_article,
+                                rewardRedemptionInstructions: _.reward_redemption_instructions,
+                                gameTitle: _.game_title,
+                                gamePublisher: _.game_publisher
+                            },
+                            colors: {
+                                primary: (E = e.colors).primary,
+                                secondary: E.secondary
+                            },
+                            rewardCodePlatforms: e.reward_code_platforms.filter(e => t.has(e))
                         }
-                    },
-                    userStatus: null == e.user_status ? null : a(e.user_status),
+                    }(e.config),
+                    userStatus: null == e.user_status ? null : I(e.user_status),
                     targetedContent: e.targeted_content
                 }
             }
-            let I = e => "".concat(o).concat(e).concat("/reward.png"),
-                s = e => "".concat(o).concat(e).concat("/hero.png"),
-                T = e => "".concat(o).concat(e).concat("/quest_bar_hero.gif"),
-                S = e => "".concat(o).concat(e).concat("/game_tile.png"),
-                N = (e, _) => "".concat(o).concat(e, "/").concat(_).concat("/game_logotype.png");
 
-            function O(e, _) {
+            function T(e) {
+                return {
+                    userId: e.user_id,
+                    questId: e.quest_id,
+                    code: e.code,
+                    platform: e.platform,
+                    claimedAt: e.claimed_at
+                }
+            }
+            let S = e => "".concat(r).concat(e).concat("/reward.png"),
+                N = e => "".concat(r).concat(e).concat("/hero.png"),
+                O = e => "".concat(r).concat(e).concat("/quest_bar_hero.gif"),
+                A = e => "".concat(r).concat(e).concat("/game_tile.png"),
+                R = (e, _) => "".concat(r).concat(e, "/").concat(_).concat("/game_logotype.png");
+
+            function l(e, _) {
                 for (let [E, t] of e)
-                    if (!r(t) && t.targetedContent.includes(_)) return t;
+                    if (!i(t) && t.targetedContent.includes(_)) return t;
                 return null
+            }
+            let L = e => {
+                switch (e) {
+                    case o.QuestRewardCodePlatforms.XBOX:
+                        return n.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
+                    case o.QuestRewardCodePlatforms.PLAYSTATION:
+                        return n.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
+                    case o.QuestRewardCodePlatforms.SWITCH:
+                        return n.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
+                    case o.QuestRewardCodePlatforms.PC:
+                        return n.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
+                    default:
+                        return ""
+                }
             }
         },
         319405: function(e, _, E) {
@@ -32928,6 +33050,9 @@
                             case 4:
                                 o.enableBurstReactionNotifications = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.enableBurstReactionNotifications);
                                 break;
+                            case 5:
+                                o.quietMode = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.quietMode);
+                                break;
                             default:
                                 let n = E.readUnknownField;
                                 if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -32938,7 +33063,7 @@
                     return o
                 }
                 internalBinaryWrite(e, _, E) {
-                    e.showInAppNotifications && h.BoolValue.internalBinaryWrite(e.showInAppNotifications, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.notifyFriendsOnGoLive && h.BoolValue.internalBinaryWrite(e.notifyFriendsOnGoLive, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), "0" !== e.notificationCenterAckedBeforeId && _.tag(3, M.WireType.Bit64).fixed64(e.notificationCenterAckedBeforeId), e.enableBurstReactionNotifications && h.BoolValue.internalBinaryWrite(e.enableBurstReactionNotifications, _.tag(4, M.WireType.LengthDelimited).fork(), E).join();
+                    e.showInAppNotifications && h.BoolValue.internalBinaryWrite(e.showInAppNotifications, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.notifyFriendsOnGoLive && h.BoolValue.internalBinaryWrite(e.notifyFriendsOnGoLive, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), "0" !== e.notificationCenterAckedBeforeId && _.tag(3, M.WireType.Bit64).fixed64(e.notificationCenterAckedBeforeId), e.enableBurstReactionNotifications && h.BoolValue.internalBinaryWrite(e.enableBurstReactionNotifications, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.quietMode && h.BoolValue.internalBinaryWrite(e.quietMode, _.tag(5, M.WireType.LengthDelimited).fork(), E).join();
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
@@ -32961,6 +33086,11 @@
                     }, {
                         no: 4,
                         name: "enable_burst_reaction_notifications",
+                        kind: "message",
+                        T: () => h.BoolValue
+                    }, {
+                        no: 5,
+                        name: "quiet_mode",
                         kind: "message",
                         T: () => h.BoolValue
                     }])
@@ -33297,7 +33427,9 @@
             let er = new en;
             class ea extends M.MessageType {
                 create(e) {
-                    let _ = {};
+                    let _ = {
+                        statusExpiresAtMs: "0"
+                    };
                     return globalThis.Object.defineProperty(_, M.MESSAGE_TYPE, {
                         enumerable: !1,
                         value: this
@@ -33318,6 +33450,9 @@
                             case 3:
                                 o.showCurrentGame = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.showCurrentGame);
                                 break;
+                            case 4:
+                                o.statusExpiresAtMs = e.fixed64().toString();
+                                break;
                             default:
                                 let n = E.readUnknownField;
                                 if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -33328,7 +33463,7 @@
                     return o
                 }
                 internalBinaryWrite(e, _, E) {
-                    e.status && h.StringValue.internalBinaryWrite(e.status, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.customStatus && es.internalBinaryWrite(e.customStatus, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.showCurrentGame && h.BoolValue.internalBinaryWrite(e.showCurrentGame, _.tag(3, M.WireType.LengthDelimited).fork(), E).join();
+                    e.status && h.StringValue.internalBinaryWrite(e.status, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.customStatus && es.internalBinaryWrite(e.customStatus, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.showCurrentGame && h.BoolValue.internalBinaryWrite(e.showCurrentGame, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), "0" !== e.statusExpiresAtMs && _.tag(4, M.WireType.Bit64).fixed64(e.statusExpiresAtMs);
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
@@ -33348,6 +33483,11 @@
                         name: "show_current_game",
                         kind: "message",
                         T: () => h.BoolValue
+                    }, {
+                        no: 4,
+                        name: "status_expires_at_ms",
+                        kind: "scalar",
+                        T: 6
                     }])
                 }
             }
@@ -33556,6 +33696,9 @@
                             case 7:
                                 o.messagePreviews = h.StringValue.internalBinaryRead(e, e.uint32(), E, o.messagePreviews);
                                 break;
+                            case 8:
+                                o.searchResultExactCountEnabled = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.searchResultExactCountEnabled);
+                                break;
                             default:
                                 let n = E.readUnknownField;
                                 if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -33566,7 +33709,7 @@
                     return o
                 }
                 internalBinaryWrite(e, _, E) {
-                    0 !== e.theme && _.tag(1, M.WireType.Varint).int32(e.theme), !1 !== e.developerMode && _.tag(2, M.WireType.Varint).bool(e.developerMode), e.clientThemeSettings && eL.internalBinaryWrite(e.clientThemeSettings, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), !1 !== e.mobileRedesignDisabled && _.tag(4, M.WireType.Varint).bool(e.mobileRedesignDisabled), e.channelListLayout && h.StringValue.internalBinaryWrite(e.channelListLayout, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.messagePreviews && h.StringValue.internalBinaryWrite(e.messagePreviews, _.tag(7, M.WireType.LengthDelimited).fork(), E).join();
+                    0 !== e.theme && _.tag(1, M.WireType.Varint).int32(e.theme), !1 !== e.developerMode && _.tag(2, M.WireType.Varint).bool(e.developerMode), e.clientThemeSettings && eL.internalBinaryWrite(e.clientThemeSettings, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), !1 !== e.mobileRedesignDisabled && _.tag(4, M.WireType.Varint).bool(e.mobileRedesignDisabled), e.channelListLayout && h.StringValue.internalBinaryWrite(e.channelListLayout, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.messagePreviews && h.StringValue.internalBinaryWrite(e.messagePreviews, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.searchResultExactCountEnabled && h.BoolValue.internalBinaryWrite(e.searchResultExactCountEnabled, _.tag(8, M.WireType.LengthDelimited).fork(), E).join();
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
@@ -33601,6 +33744,11 @@
                         name: "message_previews",
                         kind: "message",
                         T: () => h.StringValue
+                    }, {
+                        no: 8,
+                        name: "search_result_exact_count_enabled",
+                        kind: "message",
+                        T: () => h.BoolValue
                     }])
                 }
             }
@@ -35510,4 +35658,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34546.ddc4e3c8ef5269af8ad5.js.map
+//# sourceMappingURL=90486.3506278ba38b87a7827f.js.map
