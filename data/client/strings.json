@@ -7253,6 +7253,7 @@
   "PAYMENT_SOURCE_GOPAY_WALLET": "\"GoPay\"",
   "PAYMENT_SOURCE_BANCONTACT": "\"Bancontact\"",
   "PAYMENT_SOURCE_CASH_APP_PAY": "\"Cash App Pay\"",
+  "PAYMENT_SOURCE_APPLE": "\"Apple\"",
   "PAYMENT_SOURCE_PAYPAL_LOADING": "\"Contacting PayPal...\"",
   "PAYMENT_SOURCE_CARD_ENDING": "\"{brand} ending in **{last_4}**\"",
   "PAYMENT_SOURCE_CARD_EXPIRES": "\"Expires {month} {year}\"",
