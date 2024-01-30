@@ -13351,6 +13351,8 @@
   "MEMBER_SAFETY_DATE_OPTION_LABEL_CUSTOM": "\"Custom Range\"",
   "MEMBER_SAFETY_DATE_OPTION_AFTER": "\"After Date\"",
   "MEMBER_SAFETY_DATE_OPTION_BEFORE": "\"Before Date\"",
+  "MEMBER_SAFETY_DATE_OPTION_BEFORE_ONLY": "\"Before {date}\"",
+  "MEMBER_SAFETY_DATE_OPTION_AFTER_ONLY": "\"After {date}\"",
   "MEMBER_SAFETY_JOINED_DATE_LABEL": "\"Member Since Date Options\"",
   "MEMBER_SAFETY_ACCOUNT_AGE_LABEL": "\"Discord Join Date Options\"",
   "MEMBER_SAFETY_JOIN_METHOD_LABEL": "\"Server Join Method Options\"",
