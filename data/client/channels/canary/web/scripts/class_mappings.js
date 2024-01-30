@@ -21396,6 +21396,16 @@
                 partnerBrandingLogotype: "partnerBrandingLogotype__3153f"
             }
         },
+        278506: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                percentCompleteLabel: "percentCompleteLabel__049d5",
+                percentCompleteLabelOffset: "percentCompleteLabelOffset__738e1",
+                percentCompleteWrapper: "percentCompleteWrapper_fb73d6",
+                progressBar: "progressBar_eaa4be",
+                progressBarFill: "progressBarFill_e448b3"
+            }
+        },
         787207: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -21417,10 +21427,13 @@
                 brandingWrapper: "brandingWrapper_f30229",
                 content: "content__732fc",
                 contentCollapsed: "contentCollapsed__349be",
+                contentCollapsedAccepted: "contentCollapsedAccepted__7d21e",
                 contentExpanded: "contentExpanded__6935b",
                 contentWrapper: "contentWrapper_baf6c7",
+                contentWrapperAccepted: "contentWrapperAccepted__6d410",
                 contentWrapperExpanded: "contentWrapperExpanded__0ed2e",
                 cta: "cta_ea4a54",
+                ctaClaimReward: "ctaClaimReward_cd2cfd",
                 ctaWrapper: "ctaWrapper_e5ae54",
                 description: "description__721a3",
                 details: "details_d32a60",
@@ -21432,14 +21445,55 @@
                 lottieAnimationForeground: "lottieAnimationForeground__84566",
                 lottieAnimationForegroundHidden: "lottieAnimationForegroundHidden_e989e2",
                 partnerBranding: "partnerBranding__359e5",
-                questContent: "questContent__837fa",
+                questAcceptedContent: "questAcceptedContent_c75f2d",
+                questAcceptedContentCopySubheading: "questAcceptedContentCopySubheading__74c9a",
+                questAcceptedContentHeading: "questAcceptedContentHeading__18c70",
                 questName: "questName__25488",
+                questProgressBar: "questProgressBar_d2e6fd",
+                questProgressRewardTile: "questProgressRewardTile__5f0e1",
+                questProgressWrapper: "questProgressWrapper__70743",
+                questPromoContent: "questPromoContent_ae1f67",
                 rewardTile: "rewardTile__52713",
                 submenuIcon: "submenuIcon__621a7",
                 submenuWrapper: "submenuWrapper__99cbf",
                 title: "title_ffe887",
                 utils: "utils__585f9",
                 wrapper: "wrapper_d895e9"
+            }
+        },
+        643958: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                ctaTooltipCopy: "ctaTooltipCopy_f78f30",
+                innerContainer: "innerContainer__4ef6b",
+                outerContainer: "outerContainer__20d97",
+                questCopyCta: "questCopyCta__310bf",
+                questCta: "questCta__05a3b",
+                questReward: "questReward__2baa9",
+                taskInstructions: "taskInstructions_cb7411"
+            }
+        },
+        32886: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                headerContent: "headerContent__6918d",
+                iconLogotypeContainer: "iconLogotypeContainer_aa5bd5",
+                questIcon: "questIcon__7ce3e",
+                questInfo: "questInfo__5ab60",
+                questLogotype: "questLogotype__8eeb1",
+                questSplash: "questSplash__4e680",
+                questsCardHeader: "questsCardHeader__4772e"
+            }
+        },
+        804642: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                divider: "divider__1718b",
+                questsCard: "questsCard__0dbcb",
+                questsContainer: "questsContainer__44255",
+                questsHeading: "questsHeading__9a291",
+                questsIcon: "questsIcon__603a9",
+                spinner: "spinner__12d21"
             }
         },
         429383: function(e, t, n) {
@@ -24874,50 +24928,6 @@
                 camera: "camera_c58bcd",
                 cameraWrapper: "cameraWrapper__1ee6d",
                 previewImage: "previewImage__91c1c"
-            }
-        },
-        268479: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                ctaTooltipCopy: "ctaTooltipCopy__83704",
-                innerContainer: "innerContainer_e82bb0",
-                outerContainer: "outerContainer_a94665",
-                progressBarContainer: "progressBarContainer__2c512",
-                progressBarInner: "progressBarInner_af56bf",
-                progressBarInnerComplete: "progressBarInnerComplete__07ae6",
-                progressBarInnerInProgress: "progressBarInnerInProgress__4eb19 questInProgressGradient__32570",
-                progressBarOuter: "progressBarOuter_cf06a5",
-                progressPercent: "progressPercent_bbea8c",
-                progressPercentInnerComplete: "progressPercentInnerComplete_eea4c6",
-                progressPercentInnerInProgress: "progressPercentInnerInProgress_b2f14d",
-                questCopyCta: "questCopyCta_c1ee0b",
-                questCta: "questCta_ba3931",
-                questInProgressGradient: "questInProgressGradient__32570",
-                questReward: "questReward__12781",
-                taskInstructions: "taskInstructions__5b051"
-            }
-        },
-        779928: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                headerContent: "headerContent_e8529b",
-                iconLogotypeContainer: "iconLogotypeContainer__065f9",
-                questIcon: "questIcon__5afef",
-                questInfo: "questInfo_b1b9e7",
-                questLogotype: "questLogotype__0fc95",
-                questSplash: "questSplash__98953",
-                questsCardHeader: "questsCardHeader__149ea"
-            }
-        },
-        632087: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                divider: "divider_f814bb",
-                questsCard: "questsCard_c9865e",
-                questsContainer: "questsContainer__5df56",
-                questsHeading: "questsHeading_c53307",
-                questsIcon: "questsIcon_ceed64",
-                spinner: "spinner_e1e709"
             }
         },
         102123: function(e, t, n) {
