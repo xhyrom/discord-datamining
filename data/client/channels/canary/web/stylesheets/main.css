@@ -22100,6 +22100,10 @@ html .progress__4ef76 {
     display: inline-flex
 }
 
+.indentCharacterCount__8957a {
+    margin-right: 30px
+}
+
 .background-opacity-low .scrollableContainer__33e06 {
     background-color: hsl(var(--primary-500-hsl)/.5)
 }
@@ -23372,7 +23376,7 @@ html .progress__4ef76 {
 
 .characterCount_e55010 {
     align-items: flex-end;
-    bottom: 12px;
+    bottom: 10px;
     color: var(--text-normal);
     display: flex;
     flex-direction: column;
@@ -127498,4 +127502,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3068ebd3dc3b8f0282e2.css.map*/
+/*# sourceMappingURL=app.0a5c45fd37836fc273f1.css.map*/

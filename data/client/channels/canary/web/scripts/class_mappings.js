@@ -4884,6 +4884,7 @@
                 fontSize24Padding: "fontSize24Padding_a7052f",
                 hasConnectedBar: "hasConnectedBar__277ab",
                 highlighted: "highlighted__8c37f",
+                indentCharacterCount: "indentCharacterCount__8957a",
                 inner: "inner__9fd0b",
                 innerDisabled: "innerDisabled__37f59 inner__9fd0b",
                 profileBioInput: "profileBioInput__82aa1",
