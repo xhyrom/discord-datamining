@@ -20860,6 +20860,7 @@
         903610: function(e, t, n) {
             "use strict";
             e.exports = {
+                bannerImage: "bannerImage__3f204",
                 container: "container__662c9",
                 giftButtonCTA: "giftButtonCTA__14013",
                 giftCardButton: "giftCardButton__6b1bb",
@@ -24372,7 +24373,9 @@
         188338: function(e, t, n) {
             "use strict";
             e.exports = {
-                divider: "divider_ed0c1d"
+                divider: "divider_ed0c1d",
+                giftNitro: "giftNitro_aac7f4",
+                giftNitroImage: "giftNitroImage__691e3"
             }
         },
         371742: function(e, t, n) {

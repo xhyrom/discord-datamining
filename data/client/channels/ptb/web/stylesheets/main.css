@@ -26751,8 +26751,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -27064,8 +27064,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -61239,6 +61239,7 @@ html .progress__4ef76 {
 }
 
 .container__662c9 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -61247,17 +61248,16 @@ html .progress__4ef76 {
     max-width: 1066px;
     width: 100%;
     background-color: var(--background-secondary-alt);
-    background-repeat: no-repeat;
-    background-position: right center;
     filter: saturate(1);
     filter: saturate(var(--saturation-factor, 1));
     overflow: hidden
 }
 
-@media(max-width:960px) {
-    .container__662c9 {
-        background-image: none
-    }
+.bannerImage__3f204 {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    z-index: -1
 }
 
 .textContainer_ebae6b {
@@ -61265,8 +61265,7 @@ html .progress__4ef76 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-image: linear-gradient(to right, var(--background-secondary-alt)90%, rgba(255, 255, 255, 0)100%);
-    padding: 32px 50px;
+    padding: 32px 50px 40px;
     width: 327px
 }
 
@@ -61277,7 +61276,7 @@ html .progress__4ef76 {
 .giftCardButton__6b1bb {
     width: 100%;
     height: 40px;
-    margin: 8px 0
+    margin-top: 14px
 }
 
 .giftButtonCTA__14013 {
@@ -61287,12 +61286,22 @@ html .progress__4ef76 {
 
 .theme-light .giftCardButton__6b1bb {
     border-color: var(--premium-tier-2-pink-for-gradients-2);
-    color: var(--premium-tier-2-pink-for-gradients-2)
+    color: var(--premium-tier-2-pink-for-gradients-2);
+    background-color: hsl(var(--primary-160-hsl)/.5)
+}
+
+.theme-light .textContainer_ebae6b {
+    background-image: linear-gradient(to right, var(--background-secondary-alt), hsl(var(--primary-160-hsl)/.4)90%, transparent)
 }
 
 .theme-dark .giftCardButton__6b1bb {
     border-color: white;
-    color: white
+    color: white;
+    background-color: hsl(var(--primary-660-hsl)/.7)
+}
+
+.theme-dark .textContainer_ebae6b {
+    background-image: linear-gradient(to right, var(--background-secondary-alt), hsl(var(--primary-660-hsl)/.4)90%, transparent)
 }
 
 .container_a82385 {
@@ -104242,6 +104251,14 @@ html .invoiceCancelRow_a8669b {
     margin: 32px 0
 }
 
+.giftNitro_aac7f4 {
+    margin-bottom: 32px
+}
+
+.giftNitroImage__691e3 {
+    right: -160px
+}
+
 .voiceModalContainer__5345c {
     height: 400px
 }
@@ -125262,6 +125279,9 @@ div.nagbar_c731ff {
     --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-pressed-border: hsl(var(--transparent-hsl) / 0);
     --redesign-button-secondary-text: var(--primary-230);
+    --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
+    --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.28);
+    --redesign-button-selected-text: var(--brand-500);
     --redesign-channel-category-name-text: var(--primary-330);
     --redesign-channel-message-preview-text: var(--primary-360);
     --redesign-channel-name-muted-text: var(--primary-360);
@@ -125570,6 +125590,9 @@ div.nagbar_c731ff {
     --redesign-button-secondary-pressed-background: var(--primary-130);
     --redesign-button-secondary-pressed-border: hsl(var(--black-500-hsl) / 0.04);
     --redesign-button-secondary-text: var(--primary-600);
+    --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.16);
+    --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.24);
+    --redesign-button-selected-text: var(--brand-500);
     --redesign-channel-category-name-text: var(--primary-500);
     --redesign-channel-message-preview-text: var(--primary-460);
     --redesign-channel-name-muted-text: var(--primary-460);
@@ -125878,6 +125901,9 @@ div.nagbar_c731ff {
     --redesign-button-secondary-pressed-background: var(--plum-15);
     --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.06);
     --redesign-button-secondary-text: var(--plum-4);
+    --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
+    --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.28);
+    --redesign-button-selected-text: var(--brand-500);
     --redesign-channel-category-name-text: var(--plum-8);
     --redesign-channel-message-preview-text: var(--plum-10);
     --redesign-channel-name-muted-text: var(--plum-10);
@@ -126186,6 +126212,9 @@ div.nagbar_c731ff {
     --redesign-button-secondary-pressed-background: var(--plum-13);
     --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.06);
     --redesign-button-secondary-text: var(--plum-6);
+    --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
+    --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.28);
+    --redesign-button-selected-text: var(--brand-500);
     --redesign-channel-category-name-text: var(--plum-9);
     --redesign-channel-message-preview-text: var(--plum-10);
     --redesign-channel-name-muted-text: var(--plum-10);
@@ -127535,4 +127564,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.cf1f2a65751a6f7fbd0b.css.map*/
+/*# sourceMappingURL=app.0de09234d7ca672050b0.css.map*/
