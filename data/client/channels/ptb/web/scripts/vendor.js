@@ -114638,13 +114638,17 @@
                     url: t,
                     proxy_url: n,
                     width: i,
-                    height: s
+                    height: s,
+                    placeholder: r,
+                    placeholder_version: a
                 } = e;
                 return {
                     url: t,
                     proxyURL: n,
                     width: i,
-                    height: s
+                    height: s,
+                    placeholder: r,
+                    placeholderVersion: a
                 }
             }
 
@@ -117039,7 +117043,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262580"
+                                build_number: "262588"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133157,4 +133161,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.962353f4b90da429baa8.js.map
+//# sourceMappingURL=29278.90c7f62b3e18954729d7.js.map

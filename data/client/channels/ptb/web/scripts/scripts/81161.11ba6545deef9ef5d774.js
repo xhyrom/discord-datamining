@@ -13,7 +13,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return y
+                    return R
                 }
             });
             var u = n("872717"),
@@ -23,29 +23,30 @@
                 i = n("271938"),
                 a = n("299039"),
                 c = n("271560"),
-                o = n("398604"),
-                E = n("189443"),
-                s = n("745049"),
-                _ = n("49111"),
-                y = {
+                E = n("398604"),
+                o = n("189443"),
+                s = n("832588"),
+                _ = n("745049"),
+                y = n("49111"),
+                R = {
                     startEvent: (e, t) => u.default.patch({
-                        url: _.Endpoints.GUILD_EVENT(t, e),
+                        url: y.Endpoints.GUILD_EVENT(t, e),
                         body: {
-                            status: s.GuildScheduledEventStatus.ACTIVE
+                            status: _.GuildScheduledEventStatus.ACTIVE
                         }
                     }),
                     endEvent: (e, t) => u.default.patch({
-                        url: _.Endpoints.GUILD_EVENT(t, e),
+                        url: y.Endpoints.GUILD_EVENT(t, e),
                         body: {
-                            status: s.GuildScheduledEventStatus.COMPLETED
+                            status: _.GuildScheduledEventStatus.COMPLETED
                         }
                     }),
                     joinVoiceEvent(e, t) {
-                        r.default.selectVoiceChannel(t), (0, d.transitionTo)(_.Routes.CHANNEL(e, t))
+                        r.default.selectVoiceChannel(t), (0, d.transitionTo)(y.Routes.CHANNEL(e, t))
                     },
                     saveEvent(e, t, n, l) {
-                        let r = s.ENTITY_TYPES_REQUIRED_CHANNEL_ID.has(t.entityType) ? t.channelId : null,
-                            d = s.ENTITY_TYPES_REQUIRED_ENTITY_METADATA.has(t.entityType) ? t.entityMetadata : null,
+                        let r = _.ENTITY_TYPES_REQUIRED_CHANNEL_ID.has(t.entityType) ? t.channelId : null,
+                            d = _.ENTITY_TYPES_REQUIRED_ENTITY_METADATA.has(t.entityType) ? t.entityMetadata : null,
                             i = null != t.image && !1 === /^data:/.test(t.image) ? void 0 : t.image,
                             a = {
                                 name: t.name,
@@ -58,10 +59,10 @@
                                 channel_id: r,
                                 entity_metadata: d,
                                 broadcast_to_directory_channels: l.broadcastToDirectoryChannels,
-                                recurrence_rule: (0, E.recurrenceRuleToServer)(t.recurrenceRule)
+                                recurrence_rule: (0, o.recurrenceRuleToServer)(t.recurrenceRule)
                             };
                         return u.default.patch({
-                            url: _.Endpoints.GUILD_EVENT(n, e),
+                            url: y.Endpoints.GUILD_EVENT(n, e),
                             body: a
                         })
                     },
@@ -77,17 +78,17 @@
                             channel_id: e.channelId,
                             entity_metadata: e.entityMetadata,
                             broadcast_to_directory_channels: n.broadcastToDirectoryChannels,
-                            recurrence_rule: (0, E.recurrenceRuleToServer)(e.recurrenceRule)
+                            recurrence_rule: (0, o.recurrenceRuleToServer)(e.recurrenceRule)
                         };
                         return u.default.post({
-                            url: _.Endpoints.GUILD_EVENTS_FOR_GUILD(t),
+                            url: y.Endpoints.GUILD_EVENTS_FOR_GUILD(t),
                             body: l
                         })
                     },
                     async fetchGuildEvent(e, t) {
                         let {
                             body: n
-                        } = await (0, c.httpGetWithCountryCodeQuery)(_.Endpoints.GUILD_EVENT(e, t));
+                        } = await (0, c.httpGetWithCountryCodeQuery)(y.Endpoints.GUILD_EVENT(e, t));
                         return l.default.dispatch({
                             type: "FETCH_GUILD_EVENT",
                             guildScheduledEvent: n
@@ -95,7 +96,7 @@
                     },
                     async fetchGuildEventsForGuild(e) {
                         let t = {
-                                url: _.Endpoints.GUILD_EVENTS_FOR_GUILD(e)
+                                url: y.Endpoints.GUILD_EVENTS_FOR_GUILD(e)
                             },
                             {
                                 body: n
@@ -108,7 +109,7 @@
                     },
                     async fetchGuildEventUserCounts(e, t, n) {
                         let r = {
-                                url: _.Endpoints.GUILD_EVENT_USER_COUNTS(e, t),
+                                url: y.Endpoints.GUILD_EVENT_USER_COUNTS(e, t),
                                 query: {
                                     guild_scheduled_event_exception_ids: n
                                 }
@@ -131,19 +132,19 @@
                         }), a
                     },
                     cancelGuildEvent: (e, t) => u.default.patch({
-                        url: _.Endpoints.GUILD_EVENT(t, e),
+                        url: y.Endpoints.GUILD_EVENT(t, e),
                         body: {
-                            status: s.GuildScheduledEventStatus.CANCELED
+                            status: _.GuildScheduledEventStatus.CANCELED
                         }
                     }),
                     deleteGuildEvent: (e, t) => u.default.delete({
-                        url: _.Endpoints.GUILD_EVENT(t, e)
+                        url: y.Endpoints.GUILD_EVENT(t, e)
                     }),
                     async getGuildEventsForCurrentUser(e) {
                         let {
                             body: t
                         } = await u.default.get({
-                            url: _.Endpoints.USER_GUILD_EVENTS,
+                            url: y.Endpoints.USER_GUILD_EVENTS,
                             query: {
                                 guild_ids: [e]
                             }
@@ -165,7 +166,7 @@
                                 guildEventExceptionId: t,
                                 response: r
                             }), await u.default.put({
-                                url: _.Endpoints.USER_GUILD_EVENT(n, e, t),
+                                url: y.Endpoints.USER_GUILD_EVENT(n, e, t),
                                 body: {
                                     response: r
                                 }
@@ -183,7 +184,7 @@
                     },
                     async deleteRsvpForGuildEvent(e, t, n) {
                         let r = i.default.getId(),
-                            d = o.default.getRsvp(e, t, r);
+                            d = E.default.getRsvp(e, t, r);
                         if (null != d) try {
                             return l.default.dispatch({
                                 type: "GUILD_SCHEDULED_EVENT_USER_REMOVE",
@@ -193,7 +194,7 @@
                                 guildEventExceptionId: t,
                                 response: d.response
                             }), await u.default.delete({
-                                url: _.Endpoints.USER_GUILD_EVENT(n, e, t)
+                                url: y.Endpoints.USER_GUILD_EVENT(n, e, t)
                             })
                         } catch (u) {
                             throw l.default.dispatch({
@@ -206,11 +207,23 @@
                             }), u
                         }
                     },
+                    async updateRsvp(e, t, n, u, l) {
+                        let r = (0, s.getExistingRsvp)(e, t);
+                        if (null != r) try {
+                            await this.deleteRsvpForGuildEvent(e, t, n), null != r && null != t && (null == l || l())
+                        } catch (e) {
+                            null != r && null != t && (null == l || l(e))
+                        } else try {
+                            await this.createRsvpForGuildEvent(e, t, n, u), u === _.GuildScheduledEventUserResponses.INTERESTED && (null == l || l())
+                        } catch (e) {
+                            u === _.GuildScheduledEventUserResponses.INTERESTED && (null == l || l(e))
+                        }
+                    },
                     async fetchUsersForGuildEvent(e, t, n) {
-                        let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : s.MAX_RSVP_USER_DISPLAY_COUNT;
+                        let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : _.MAX_RSVP_USER_DISPLAY_COUNT;
                         if (null == e || null == n) return [];
                         let d = await u.default.get({
-                            url: _.Endpoints.GUILD_EVENT_USERS(n, e, t),
+                            url: y.Endpoints.GUILD_EVENT_USERS(n, e, t),
                             query: {
                                 limit: r,
                                 with_member: !0,
@@ -233,7 +246,7 @@
                             is_canceled: i
                         } = e;
                         return u.default.post({
-                            url: _.Endpoints.GUILD_EVENT_EXCEPTIONS(t, n),
+                            url: y.Endpoints.GUILD_EVENT_EXCEPTIONS(t, n),
                             body: {
                                 original_scheduled_start_time: l,
                                 scheduled_start_time: r,
@@ -249,7 +262,7 @@
                             is_canceled: i
                         } = e;
                         return u.default.patch({
-                            url: _.Endpoints.GUILD_EVENT_EXCEPTION(t, n, l),
+                            url: y.Endpoints.GUILD_EVENT_EXCEPTION(t, n, l),
                             body: {
                                 scheduled_start_time: r,
                                 scheduled_end_time: d,
@@ -258,7 +271,7 @@
                         })
                     },
                     deleteGuildEventException: (e, t, n) => u.default.delete({
-                        url: _.Endpoints.GUILD_EVENT_EXCEPTION(e, t, n)
+                        url: y.Endpoints.GUILD_EVENT_EXCEPTION(e, t, n)
                     }),
                     deleteRecurrence(e, t, n, u) {
                         if (null != u) this.updateGuildEventException({
@@ -283,10 +296,10 @@
                     return c
                 },
                 recurrenceRuleToServer: function() {
-                    return o
+                    return E
                 },
                 recurrenceRuleFromServer: function() {
-                    return E
+                    return o
                 },
                 convertToFakeGuildEvent: function() {
                     return s
@@ -304,7 +317,7 @@
                 return !!(null == e ? void 0 : e.id)
             }
 
-            function o(e) {
+            function E(e) {
                 var t, n;
                 return null == e ? null : {
                     start: e.start,
@@ -320,7 +333,7 @@
                 }
             }
 
-            function E(e) {
+            function o(e) {
                 return null == e ? null : {
                     start: new Date(e.start).toISOString(),
                     end: null != e.end ? new Date(e.end).toISOString() : null,
@@ -342,12 +355,12 @@
                     privacyLevel: d,
                     channelId: i,
                     scheduledStartTime: c,
-                    scheduledEndTime: E,
+                    scheduledEndTime: o,
                     entityType: s,
                     entityMetadata: _,
                     image: y,
                     recurrenceRule: R,
-                    eventExceptions: h
+                    eventExceptions: v
                 } = e;
                 return {
                     id: null != n ? n : a.FAKE_EVENT_ID,
@@ -355,7 +368,7 @@
                     description: null != l ? l : null,
                     privacy_level: d,
                     scheduled_start_time: c,
-                    scheduled_end_time: E,
+                    scheduled_end_time: o,
                     entity_type: s,
                     entity_metadata: null != _ ? _ : null,
                     image: null != y ? y : void 0,
@@ -363,8 +376,8 @@
                     guild_id: t,
                     creator_id: r.default.getId(),
                     status: a.GuildScheduledEventStatus.SCHEDULED,
-                    recurrence_rule: o(R),
-                    guild_scheduled_event_exceptions: h.map(e => ({
+                    recurrence_rule: E(R),
+                    guild_scheduled_event_exceptions: v.map(e => ({
                         event_exception_id: e.eventExceptionId,
                         event_id: e.eventId,
                         guild_id: e.guildId,
@@ -376,19 +389,19 @@
             }
 
             function _(e, t) {
-                var n, u, l, r, c, o, s, _;
+                var n, u, l, r, c, E, s, _;
                 let y = {
                     name: null !== (n = null == e ? void 0 : e.name) && void 0 !== n ? n : "",
                     privacyLevel: null !== (u = null == e ? void 0 : e.privacy_level) && void 0 !== u ? u : a.GuildScheduledEventPrivacyLevel.GUILD_ONLY,
                     description: null !== (l = null == e ? void 0 : e.description) && void 0 !== l ? l : "",
                     scheduledStartTime: null !== (r = null == e ? void 0 : e.scheduled_start_time) && void 0 !== r ? r : (0, i.getInitialEventStartDate)().toISOString(),
                     entityType: null !== (c = null == e ? void 0 : e.entity_type) && void 0 !== c ? c : a.GuildScheduledEventEntityTypes.NONE,
-                    entityMetadata: null !== (o = null == e ? void 0 : e.entity_metadata) && void 0 !== o ? o : void 0,
+                    entityMetadata: null !== (E = null == e ? void 0 : e.entity_metadata) && void 0 !== E ? E : void 0,
                     channelId: null == e ? void 0 : e.channel_id,
                     creatorId: null == e ? void 0 : e.creator_id,
                     image: null == e ? void 0 : e.image,
                     scheduledEndTime: null == e ? void 0 : e.scheduled_end_time,
-                    recurrenceRule: E(null == e ? void 0 : e.recurrence_rule),
+                    recurrenceRule: o(null == e ? void 0 : e.recurrence_rule),
                     eventExceptions: (null !== (s = null == e ? void 0 : e.guild_scheduled_event_exceptions) && void 0 !== s ? s : []).map(e => ({
                         eventExceptionId: e.event_exception_id,
                         eventId: e.event_id,
@@ -464,38 +477,91 @@
                 return e === l.GuildScheduledEventEntityTypes.VOICE || e === l.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? l.EntityChannelTypes[e] : void 0
             }
         },
+        832588: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getExistingRsvp: function() {
+                    return E
+                },
+                ResponseOptions: function() {
+                    return l
+                },
+                getResponseOptions: function() {
+                    return o
+                },
+                handleRsvp: function() {
+                    return s
+                }
+            });
+            var u, l, r = n("271938"),
+                d = n("398604"),
+                i = n("822516"),
+                a = n("745049"),
+                c = n("782340");
+
+            function E(e, t) {
+                let n = r.default.getId();
+                return d.default.getRsvp(e, t, n)
+            }
+
+            function o() {
+                return [{
+                    name: c.default.Messages.GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES,
+                    value: 0
+                }, {
+                    name: c.default.Messages.GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE,
+                    value: 1
+                }]
+            }
+
+            function s(e) {
+                let {
+                    eventId: t,
+                    recurrenceId: n,
+                    guildId: u,
+                    updateRsvp: l,
+                    openRsvpPicker: r,
+                    onRsvp: c,
+                    canRsvpToRecurrences: o = !0
+                } = e, s = d.default.getGuildScheduledEvent(t);
+                if (null == s) return;
+                let _ = o ? null != n ? n : (0, i.getNextRecurrenceIdInEvent)(s) : null,
+                    y = E(s.id, _);
+                null == _ ? (l(t, null, u, a.GuildScheduledEventUserResponses.INTERESTED), null == c || c()) : null != y ? (l(t, _, u, a.GuildScheduledEventUserResponses.UNINTERESTED), null == c || c()) : r(s, _)
+            }(u = l || (l = {}))[u.SERIES = 0] = "SERIES", u[u.RECURRENCE = 1] = "RECURRENCE"
+        },
         822516: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 MAX_DAYS_AHEAD_AN_EVENT_CAN_START: function() {
-                    return o
+                    return E
                 },
                 MAX_DAYS_AHEAD_AN_EVENT_CAN_END: function() {
-                    return E
+                    return o
                 },
                 MAX_YEARS_AHEAD_RECURRING_EVENT: function() {
                     return s
                 },
                 getInitialEventStartDate: function() {
-                    return v
+                    return p
                 },
                 getEventTimeData: function() {
                     return T
                 },
                 getBaseScheduleForRecurrence: function() {
-                    return m
-                },
-                getScheduleForRecurrenceWithException: function() {
                     return N
                 },
+                getScheduleForRecurrenceWithException: function() {
+                    return m
+                },
                 getScheduleFromEventData: function() {
-                    return L
+                    return I
                 },
                 areDatesIdentical: function() {
                     return g
                 },
                 areSchedulesIdentical: function() {
-                    return I
+                    return L
                 },
                 getRRule: function() {
                     return U
@@ -504,10 +570,10 @@
                     return C
                 },
                 getNextRecurrenceIdInEvent: function() {
-                    return w
+                    return G
                 },
                 isValidRecurrence: function() {
-                    return G
+                    return w
                 },
                 recurrenceOptionToRecurrenceRule: function() {
                     return Y
@@ -524,22 +590,22 @@
                 a = n("718517"),
                 c = n("757767");
             n("745049");
-            let o = 365,
-                E = o + 1,
+            let E = 365,
+                o = E + 1,
                 s = 4,
                 _ = [d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday],
                 y = [d.RRule.SU.weekday, d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday],
                 R = [d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday, d.RRule.SA.weekday],
-                h = [d.RRule.SU.weekday, d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday, d.RRule.SA.weekday],
-                v = () => {
+                v = [d.RRule.SU.weekday, d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday, d.RRule.SA.weekday],
+                p = () => {
                     let e = r().add(1, "hour"),
                         t = e.hour();
                     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
                 },
-                p = (e, t) => e.format(e.get("years") === t.get("years") ? "ddd MMM Do \xb7 LT" : "ddd MMM Do, YYYY \xb7 LT"),
+                h = (e, t) => e.format(e.get("years") === t.get("years") ? "ddd MMM Do \xb7 LT" : "ddd MMM Do, YYYY \xb7 LT"),
                 f = (e, t) => {
                     let n = e.diff(t, "days");
-                    return n > 1 ? p(e, t) : e.calendar(t)
+                    return n > 1 ? h(e, t) : e.calendar(t)
                 };
 
             function T(e, t, n) {
@@ -549,7 +615,7 @@
                     d = null != t && u.isSame(l, "day");
                 return {
                     startDateTimeString: f(u, n),
-                    endDateTimeString: null != l ? d ? l.format("LT") : p(l, n) : void 0,
+                    endDateTimeString: null != l ? d ? l.format("LT") : h(l, n) : void 0,
                     currentOrPastEvent: u <= n,
                     upcomingEvent: u <= r().add(1, "hour"),
                     withinStartWindow: u <= r().add(15, "minute"),
@@ -558,7 +624,7 @@
             }
 
             function D(e) {
-                return new d.Weekday(h[e])
+                return new d.Weekday(v[e])
             }
 
             function S(e, t) {
@@ -569,7 +635,7 @@
                 }, null != t && (n.endDate = r(t))), n
             }
 
-            function m(e, t) {
+            function N(e, t) {
                 let n = function(e) {
                         return S(e.scheduled_start_time, e.scheduled_end_time)
                     }(t),
@@ -581,7 +647,7 @@
                 }
             }
 
-            function N(e, t) {
+            function m(e, t) {
                 var n;
                 if (null == t) return e;
                 let u = null !== (n = t.scheduled_end_time) && void 0 !== n ? n : e.endDate;
@@ -591,7 +657,7 @@
                 }
             }
 
-            function L(e) {
+            function I(e) {
                 return S(e.scheduledStartTime, e.scheduledEndTime)
             }
 
@@ -599,7 +665,7 @@
                 return null == e || null == t ? null == e && null == t : e.isSame(t)
             }
 
-            function I(e, t) {
+            function L(e, t) {
                 return null == e || null == t ? null == e && null == t : g(e.startDate, t.startDate) && g(e.endDate, t.endDate)
             }
 
@@ -636,14 +702,14 @@
                 return l
             }
 
-            function w(e) {
+            function G(e) {
                 var t;
                 if (null == e) return null;
                 let n = null == (t = e).recurrence_rule ? null : new Date(t.scheduled_start_time);
                 return null != n ? i.default.fromTimestamp(Math.floor(n.getTime() / a.default.Millis.SECOND) * a.default.Millis.SECOND) : null
             }
 
-            function G(e, t) {
+            function w(e, t) {
                 if (null == t || null == e) return !1;
                 let n = new Date(e.start),
                     u = i.default.extractTimestamp(t),
@@ -711,12 +777,12 @@
                     freq: r,
                     interval: i,
                     byweekday: a,
-                    bynweekday: o,
-                    bymonth: E,
+                    bynweekday: E,
+                    bymonth: o,
                     bymonthday: s,
                     byyearday: _,
                     count: y
-                } = n.options, R = null == o ? void 0 : o.map(e => ({
+                } = n.options, R = null == E ? void 0 : E.map(e => ({
                     n: e[1],
                     day: e[0]
                 }));
@@ -727,7 +793,7 @@
                     interval: i,
                     byWeekday: a,
                     byNWeekday: R,
-                    byMonth: E,
+                    byMonth: o,
                     byMonthDay: s,
                     byYearDay: _,
                     count: y
@@ -755,4 +821,4 @@
         }
     }
 ]);
-//# sourceMappingURL=81161.16bd418e776559e11cd2.js.map
+//# sourceMappingURL=81161.11ba6545deef9ef5d774.js.map
