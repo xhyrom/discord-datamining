@@ -18643,14 +18643,14 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .rocket__4ebd3 {
-    width: 32px;
-    height: 32px;
-    margin-right: 2px;
-    margin-bottom: 2px;
+    padding: 4px
+}
+
+.rocketUnhovered_b0c979 {
     color: var(--interactive-normal)
 }
 
-.rocket__4ebd3>* {
+.rocketUnhovered_b0c979>* {
     fill: currentColor
 }
 
@@ -22595,7 +22595,9 @@ html .progress__4ef76 {
 
 .buttonContainer_c96d16 {
     display: flex;
-    position: relative
+    position: relative;
+    padding-left: 4px;
+    padding-right: 4px
 }
 
 @keyframes sparkle__71a96 {
@@ -23562,7 +23564,7 @@ html .progress__4ef76 {
     align-items: center;
     width: -moz-min-content;
     width: min-content;
-    font-size: 12px
+    font-size: 14px
 }
 
 .optionIcon__2b48d {
@@ -27058,8 +27060,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -42624,7 +42626,7 @@ html .progress__4ef76 {
     flex-grow: 1
 }
 
-.noBorder__0a7b8 {
+.input__57f53 {
     border: none
 }
 
@@ -42784,6 +42786,10 @@ html .progress__4ef76 {
 
 .theme-light .footerText_ae34c9 {
     color: var(--primary-400)
+}
+
+.theme-light .input__57f53 {
+    background-color: transparent
 }
 
 @media(max-width:485px) {
@@ -105839,7 +105845,7 @@ html .invoiceCancelRow_a8669b {
     margin-right: 8px
 }
 
-.noBorder_bf418d {
+.input__0d4ac {
     border: none
 }
 
@@ -105933,6 +105939,10 @@ html .invoiceCancelRow_a8669b {
 
 .theme-light .inviteBannerUpsell__5bda4 {
     background-color: var(--background-tertiary)
+}
+
+.theme-light .input__0d4ac {
+    background-color: transparent
 }
 
 .theme-dark .inviteRow_a25947:hover {
@@ -127488,4 +127498,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c69d7bfb9efd8ea85c6e.css.map*/
+/*# sourceMappingURL=app.3e7631790eb51d265c01.css.map*/

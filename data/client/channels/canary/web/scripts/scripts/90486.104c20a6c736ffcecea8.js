@@ -662,6 +662,7 @@
                 EMBEDDED_ACTIVITIES_LEAVE: "Leave",
                 EMBEDDED_ACTIVITIES_JOIN_ACTIVITY: "Join Activity",
                 EMBEDDED_ACTIVITIES_IN_ACTIVITY: "In Activity",
+                EMBEDDED_ACTIVITIES_START_ACTIVITY_LABEL: "Start Activity",
                 EMBEDDED_ACTIVITIES_START_AN_ACTIVITY: "Start an Activity",
                 EMBEDDED_ACTIVITIES_INVITE_TO_ACTIVITY: "Invite To Activity",
                 EMBEDDED_ACTIVITIES_INVITE_FRIENDS_TO_ACTIVITY_NAME: "Invite friends to {applicationName}",
@@ -18154,7 +18155,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262522", ", Version Hash: ").concat("5e8bdb8e785a6bcacc644dfd129187ac6ca222fd")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262542", ", Version Hash: ").concat("c4bf55d2682a80f809e56dd3be9b2aa5c394866c")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20398,8 +20399,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "262522", "262522"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262522")), _ = 0), _
+                let _ = parseInt((e = "262542", "262542"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262542")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35670,4 +35671,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.810f7f4148c1e07aa372.js.map
+//# sourceMappingURL=90486.104c20a6c736ffcecea8.js.map
