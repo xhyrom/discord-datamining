@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["70523"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -80680,18 +80680,15 @@
         },
         133335: function(e, t, n) {
             "use strict";
-            var i, s, r, a, o, l;
+            var i, s, r, a;
             n.r(t), n.d(t, {
                 ReadStateTypes: function() {
                     return i
                 },
                 UnreadSetting: function() {
                     return s
-                },
-                UnreadMode: function() {
-                    return r
                 }
-            }), (a = i || (i = {}))[a.CHANNEL = 0] = "CHANNEL", a[a.GUILD_EVENT = 1] = "GUILD_EVENT", a[a.NOTIFICATION_CENTER = 2] = "NOTIFICATION_CENTER", a[a.GUILD_HOME = 3] = "GUILD_HOME", a[a.GUILD_ONBOARDING_QUESTION = 4] = "GUILD_ONBOARDING_QUESTION", (o = s || (s = {}))[o.UNSET = 0] = "UNSET", o[o.ALL_MESSAGES = 1] = "ALL_MESSAGES", o[o.ONLY_MENTIONS = 2] = "ONLY_MENTIONS", (l = r || (r = {}))[l.IMPORTANT = 0] = "IMPORTANT", l[l.LESS_IMPORTANT = 1] = "LESS_IMPORTANT", l[l.NONE = 2] = "NONE"
+            }), (r = i || (i = {}))[r.CHANNEL = 0] = "CHANNEL", r[r.GUILD_EVENT = 1] = "GUILD_EVENT", r[r.NOTIFICATION_CENTER = 2] = "NOTIFICATION_CENTER", r[r.GUILD_HOME = 3] = "GUILD_HOME", r[r.GUILD_ONBOARDING_QUESTION = 4] = "GUILD_ONBOARDING_QUESTION", (a = s || (s = {}))[a.UNSET = 0] = "UNSET", a[a.ALL_MESSAGES = 1] = "ALL_MESSAGES", a[a.ONLY_MENTIONS = 2] = "ONLY_MENTIONS"
         },
         256572: function(e, t, n) {
             "use strict";
@@ -94773,7 +94770,7 @@
                     let t = e.isThread() ? o.default.isMuted(e.id) || E.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : E.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id);
                     if (t) return !1
                 }
-                return !(!e.isPrivate() && (D(e, t, (0, r.isOptInEnabledForGuild)(e.guild_id)) || !_.default.can(e.accessPermissions, e))) && (t > 0 || E.default.getChannelUnreadMode(e) === T.UnreadMode.IMPORTANT)
+                return !(!e.isPrivate() && (D(e, t, (0, r.isOptInEnabledForGuild)(e.guild_id)) || !_.default.can(e.accessPermissions, e))) && (t > 0 || E.default.resolveUnreadSetting(e) === T.UnreadSetting.ALL_MESSAGES)
             }
 
             function b(e) {
@@ -94873,7 +94870,7 @@
                         if (m || g) {
                             let e = function(e, t, n) {
                                 if ((0, u.isGuildVocalChannelType)(e.type) && 0 === t || !_.default.canBasicChannel((0, u.getBasicAccessPermissions)(e.type), e) || D(e, t, n)) return !1;
-                                return !("flags" in e && e.hasFlag(S.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || E.default.getChannelUnreadMode(e) === T.UnreadMode.IMPORTANT)
+                                return !("flags" in e && e.hasFlag(S.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || E.default.resolveUnreadSetting(e) === T.UnreadSetting.ALL_MESSAGES)
                             }(n, o, d);
                             e && (m && (i.unreadByType[T.ReadStateTypes.CHANNEL] = !0, i.unreadChannelId = t), g && (i.mentionCount += o, i.mentionCounts[n.id] = o))
                         }
@@ -104754,7 +104751,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return X
+                    return q
                 }
             }), n("222007"), n("702976");
             var i = n("917351"),
@@ -104828,14 +104825,14 @@
                 N.clearTimer(e), !0 === o.muted && N.setTimer(e, o.mute_config, () => {
                     k(e, {
                         muted: !1
-                    }), q.emitChange()
+                    }), z.emitChange()
                 }), s.forEach(r, e => {
                     R.clearTimer(e.channel_id)
                 }), s.forEach(a, t => {
                     !0 === t.muted && R.setTimer(t.channel_id, t.mute_config, () => {
                         V(e, t.channel_id, {
                             muted: !1
-                        }), q.emitChange()
+                        }), z.emitChange()
                     })
                 }), S[e] = o, P[e] = j(S[e]);
                 let l = s.filter(o.channel_overrides, e => {
@@ -104934,15 +104931,7 @@
             function W() {
                 return !0
             }
-
-            function K() {
-                return C && u.NotificationsExperiment.getCurrentConfig({
-                    location: "UserGuildSettingsStore"
-                }, {
-                    autoTrackExposure: !1
-                }).enabled
-            }
-            class z extends r.default.PersistedStore {
+            class K extends r.default.PersistedStore {
                 initialize(e) {
                     if (this.waitFor(g.default, h.default, l.default, d.default), null != e) {
                         var t;
@@ -105147,10 +105136,11 @@
                 }
                 resolveGuildUnreadSetting(e) {
                     let t = this.getGuildFlags(e.id);
-                    return !K() || f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : e.defaultMessageNotifications === m.UserNotificationSettings.ALL_MESSAGES ? p.UnreadSetting.ALL_MESSAGES : p.UnreadSetting.ONLY_MENTIONS
-                }
-                getGuildUnreadMode(e) {
-                    return this.isMuted(e.id) ? p.UnreadMode.NONE : this.resolveGuildUnreadSetting(e) === p.UnreadSetting.ALL_MESSAGES ? p.UnreadMode.IMPORTANT : p.UnreadMode.LESS_IMPORTANT
+                    return !(C && u.NotificationsExperiment.getCurrentConfig({
+                        location: "UserGuildSettingsStore"
+                    }, {
+                        autoTrackExposure: !1
+                    }).enabled) || f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : e.defaultMessageNotifications === m.UserNotificationSettings.ALL_MESSAGES ? p.UnreadSetting.ALL_MESSAGES : p.UnreadSetting.ONLY_MENTIONS
                 }
                 getChannelRecordUnreadSetting(e) {
                     return this.getChannelUnreadSetting(e.guild_id, e.id)
@@ -105159,15 +105149,12 @@
                     let n = this.getChannelIdFlags(e, t);
                     return f.hasFlag(n, v.ChannelNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(n, v.ChannelNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : p.UnreadSetting.UNSET
                 }
-                getChannelUnreadMode(e) {
-                    return c.THREAD_CHANNEL_TYPES.has(e.type) ? d.default.isMuted(e.id) ? p.UnreadMode.NONE : p.UnreadMode.IMPORTANT : this.getMutedChannels(e.guild_id).has(e.id) ? p.UnreadMode.NONE : (0, c.isPrivate)(e.type) || !K() ? p.UnreadMode.IMPORTANT : this.resolveUnreadSetting(e) === p.UnreadSetting.ALL_MESSAGES ? p.UnreadMode.IMPORTANT : p.UnreadMode.LESS_IMPORTANT
-                }
             }
-            z.displayName = "UserGuildSettingsStore", z.persistKey = "collapsedGuilds", z.migrations = [e => ({
+            K.displayName = "UserGuildSettingsStore", K.persistKey = "collapsedGuilds", K.migrations = [e => ({
                 collapsedGuilds: e,
                 userGuildSettings: {}
             })];
-            let q = new z(a.default, {
+            let z = new K(a.default, {
                 USER_GUILD_SETTINGS_FULL_UPDATE: function(e) {
                     let {
                         userGuildSettings: t
@@ -105273,7 +105260,7 @@
                     Y(t)
                 }
             });
-            var X = q
+            var q = z
         },
         26092: function(e, t, n) {
             "use strict";
@@ -117060,7 +117047,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262857"
+                                build_number: "262863"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133181,4 +133168,4 @@
         }
     }
 ]);
-//# sourceMappingURL=70523.6aa66f80a830f1be09f3.js.map
+//# sourceMappingURL=29278.e79f5338c6d3bafb2f98.js.map
