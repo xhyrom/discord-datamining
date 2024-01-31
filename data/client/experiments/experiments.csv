@@ -309,7 +309,7 @@ id,hash,label
 2023-09_guild_events_auto_start,2275541075,Allow users to toggle automatically start events
 2023-09_guild_events_entrypoint,1943118067,Experiments with showing Events entrypoint in the channel list in friends guilds
 2023-09_guild_events_improvements,2181787089,Experiments with various improvements to our events system
-2023-09_guild_polls,2254848082,Polls
+2023-09_guild_polls,2254848082,Create Guild Polls
 2023-09_iar_dsa_webform,1438986391,Safety Experience Unauthenticated Report Form
 2023-09_limited_time_custom_app_icons,4133484951,Limited-time icons
 2023-09_member_safety_release_coachmark,1865413295,Members Safety Release Coachmark Experiment
@@ -420,6 +420,7 @@ id,hash,label
 2024-01_auto_disable_video_mobile_v2,1814449668,Mobile performance: VideoHealthManager (v2)
 2024-01_chunked_message_attachment_uploads,2992238206,Use chunked uploads for message attachments
 2024-01_collectibles_shop_cyberpunk_marketing,2718628725,Shop Cyberpunk In App Marketing Experiment
+2024-01_create_gdm_polls,3969506586,Create GDM Polls
 2024-01_developers_get_developer_shelf,1459591700,Developers Get Developer Shelf
 2024-01_expiring_status,2976448192,Expiring status Experiment 
 2024-01_explicit_media_sender_false_positive,3730176707,Explicit Media Sender False Positive
