@@ -1,14 +1,14 @@
 {
   "data": {
-    "kind": "guild",
-    "id": "2024-01_voice_channel_game_activity",
-    "label": "Voice Channel Game Activity",
+    "kind": "user",
+    "id": "2024-01_voice_user_game_activity",
+    "label": "Voice User Game Activity",
     "description": [
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Show game icon next to the Voice User in VC"
     ],
-    "hash": 3575725749,
+    "hash": 1400973357,
     "buckets": [
       -1,
       0,
