@@ -1797,7 +1797,8 @@
                 large: "large__7dc67",
                 medium: "medium__2316b",
                 small: "small__52213",
-                xsmall: "xsmall_b118ce"
+                xsmall: "xsmall_b118ce",
+                xxsmall: "xxsmall_e160b6"
             }
         },
         296165: function(e, t, a) {
