@@ -755,24 +755,24 @@
                         } = (0, c.default)(),
                         {
                             activeSubscription: M,
-                            activeEntitlement: j
+                            activeEntitlement: w
                         } = (0, S.useActiveSubscriptionListingForApplication)(O, C),
-                        w = (0, S.useEligibleApplicationSubscriptionGuilds)(O, C),
-                        D = (0, d.default)(),
+                        D = (0, S.useEligibleApplicationSubscriptionGuilds)(O, C),
+                        j = (0, d.default)(),
                         U = null != l && (0, m.isApplicationUserSubscription)(l.sku_flags),
-                        B = null != j && j.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
-                        V = null == j || B,
-                        K = null == j || G.length > 1,
-                        W = null != C || w.length > 0,
+                        B = null != w && w.userId === (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
+                        V = null == w || B,
+                        K = null == w || G.length > 1,
+                        W = null != C || D.length > 0,
                         z = U && B,
                         Z = null != R && null != y && V && K && (W || U) && !z;
                     V ? W ? z && null != R && (n = T.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
                         tierName: R.name
                     })) : n = T.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = T.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
-                        x && null != F && D && u.default.wait(() => {
+                        x && null != F && j && u.default.wait(() => {
                             (0, o.fetchSubscriptionPlansForSKU)(F)
                         })
-                    }, [x, F, D]);
+                    }, [x, F, j]);
                     let Q = r.useCallback(() => {
                         a(null != l, "No subscription listing"), a(null != y, "No application"), a(null != L, "No subscription plan"), a(x, "Cannot purchase this unpublished plan");
                         let e = () => {
@@ -788,7 +788,7 @@
                                 initialPlanId: L.id,
                                 skuId: L.sku_id,
                                 guildId: C,
-                                eligibleApplicationSubscriptionGuilds: w,
+                                eligibleApplicationSubscriptionGuilds: D,
                                 planGroup: G,
                                 listing: l,
                                 application: y,
@@ -802,7 +802,7 @@
                             onConfirm: e,
                             onCancel: () => {}
                         }) : e()
-                    }, [x, l, L, G, y, C, W, U, H, A, M, N, w, v, b]);
+                    }, [x, l, L, G, y, C, W, U, H, A, M, N, D, v, b]);
                     return {
                         openModal: Q,
                         canOpenModal: Z,
@@ -912,16 +912,16 @@
                     location: "PaymentContextProvider"
                 }, {
                     autoTrackExposure: A && N
-                }), [b, L] = r.useState(A ? v && N ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [O, P] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(_)) ? d.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [x, F] = r.useState(void 0), [R, y] = r.useState(void 0), k = (0, o.useGetGiftCode)(m, t), [G, H] = r.useState(!1), [M, j] = r.useState(!1), [w, D] = r.useState(), U = r.useCallback(e => {
+                }), [b, L] = r.useState(A ? v && N ? a.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [O, P] = r.useState(t && o.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, o.getGiftExperience)(_)) ? d.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : u), [x, F] = r.useState(void 0), [R, y] = r.useState(void 0), k = (0, o.useGetGiftCode)(m, t), [G, H] = r.useState(!1), [M, w] = r.useState(!1), [D, j] = r.useState(), U = r.useCallback(e => {
                     let {
                         onSubscriptionConfirmation: t
                     } = e;
-                    return j(!0), (0, l.sendGiftMessage)(_, k).then(() => {
-                        j(!1), null == t || t(), H(!0)
+                    return w(!0), (0, l.sendGiftMessage)(_, k).then(() => {
+                        w(!1), null == t || t(), H(!0)
                     }).catch(e => {
-                        j(!1), D(e), H(!0)
+                        w(!1), j(e), H(!0)
                     })
-                }, [_, k, j, H, D]);
+                }, [_, k, w, H, j]);
                 return (0, i.jsx)(h.Provider, {
                     value: {
                         isGift: t,
@@ -944,7 +944,7 @@
                         sendGiftMessage: U,
                         hasSentMessage: G,
                         isSendingMessage: M,
-                        giftMessageError: w
+                        giftMessageError: D
                     },
                     children: S
                 })
@@ -1051,7 +1051,7 @@
                 return l(null != r, "Failed to find subscription group listing"), r
             }, E = async (e, t) => {
                 let n = await (0, s.fetchUserEntitlementsForApplication)(e),
-                    i = n.find(e => e.sku_id === t);
+                    i = n.filter(e => null == e.ends_at || new Date(e.ends_at) < new Date).find(e => e.sku_id === t);
                 l(null == i, "User already has an active subscription to this SKU")
             };
             async function T(e) {
@@ -2160,4 +2160,4 @@
         }
     }
 ]);
-//# sourceMappingURL=62768.3085d0fb5594c5f25f09.js.map
+//# sourceMappingURL=62768.0e1163b1034583fe27ec.js.map
