@@ -62669,7 +62669,7 @@
                 N = n("49111"),
                 R = n("397336");
             let O = window.DiscordNative;
-            C.socket.dispatcher.dispatchSocketMessage = y.default;
+            C.socket.dispatcher.getDispatchHandler = y.default;
             let D = new u.default("ConnectionStore"),
                 P = 0,
                 b = null,
@@ -63673,80 +63673,95 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return i
+                    return s
                 }
             }), n("222007"), n("424973"), n("70102");
-            var i, s = n("446674"),
-                r = n("605250"),
-                a = n("313915"),
-                o = n("509065"),
-                l = n("41642"),
-                u = n("342797");
-            let d = new r.default("GatewaySocket"),
-                c = new Set(["READY", "INITIAL_GUILD"]),
-                f = new Set(["READY", "READY_SUPPLEMENTAL", "RESUMED"]);
-            i = class {
-                isEmpty() {
-                    return 0 === this.queue.length
+            var i, s, r, a = n("446674"),
+                o = n("605250"),
+                l = n("313915"),
+                u = n("509065"),
+                d = n("41642"),
+                c = n("342797");
+            let f = new o.default("GatewaySocket"),
+                _ = new Set(["READY", "INITIAL_GUILD"]),
+                h = new Set(["READY", "READY_SUPPLEMENTAL", "RESUMED"]);
+            (r = i || (i = {}))[r.Loading = 0] = "Loading", r[r.Loaded = 1] = "Loaded", s = class {
+                hasStuffToDispatchNow() {
+                    return this.queue.length > 0 && 1 === this.queue[0].status
                 }
                 processFirstQueuedDispatch(e) {
-                    if (this.isEmpty()) return !1;
                     let t = [];
-                    for (; this.queue.length > 0 && e.has(this.queue[0].type);) t.push(this.queue.shift());
-                    return this.dispatchMultiple(t), !0
+                    for (; this.queue.length > 0 && e.has(this.queue[0].type) && 1 === this.queue[0].status;) t.push(this.queue.shift());
+                    this.dispatchMultiple(t)
                 }
                 unpauseDispatchQueue() {
                     this.paused = !1, this.flush()
                 }
                 receiveDispatch(e, t, n) {
-                    this.queue.push({
-                        data: e,
-                        type: t,
-                        compressionAnalytics: n
-                    }), !this.paused && (c.has(t) ? (null != this.dispatchTimeout && clearTimeout(this.dispatchTimeout), this.flush()) : null == this.dispatchTimeout && (this.dispatchTimeout = setTimeout(this.flush, this.nextDispatchTimeout)))
+                    var i;
+                    if (null == this.getDispatchHandler) throw Error("getDispatchHandler needs to be passed in first!");
+                    let s = null === (i = this.getDispatchHandler(t)) || void 0 === i ? void 0 : i.preload(e),
+                        r = {
+                            data: e,
+                            type: t,
+                            compressionAnalytics: n,
+                            status: null == s ? 1 : 0,
+                            preloadPromise: s,
+                            preloadedData: null
+                        };
+                    this.queue.push(r), null != s ? s.then(e => {
+                        r.preloadedData = e, r.status = 1, this.scheduleFlush(t)
+                    }).catch(e => this.socket.resetSocketOnError(e, t)) : this.scheduleFlush(t)
+                }
+                scheduleFlush(e) {
+                    !this.paused && (_.has(e) ? (null != this.dispatchTimeout && clearTimeout(this.dispatchTimeout), this.flush()) : null == this.dispatchTimeout && (this.dispatchTimeout = setTimeout(this.flush, this.nextDispatchTimeout)))
                 }
                 dispatchMultiple(e) {
-                    if (null == this.dispatchSocketMessage) throw Error("setDispatchSocketMessageFunction needs to be called first!");
                     let t = "none",
                         n = !1;
                     try {
-                        this.socket.connectionState === l.default.RESUMING && s.default.Emitter.pause(150), s.default.Emitter.batched(() => {
+                        this.socket.connectionState === d.default.RESUMING && a.default.Emitter.pause(150), a.default.Emitter.batched(() => {
                             e.forEach(e => {
-                                t = e.type, n = n || f.has(e.type), this.dispatchOne(e)
-                            }), o.default.flush()
-                        }), n && s.default.Emitter.resume()
+                                t = e.type, n = n || h.has(e.type), this.dispatchOne(e)
+                            }), u.default.flush()
+                        }), n && a.default.Emitter.resume()
                     } catch (e) {
                         this.socket.resetSocketOnError(e, t)
                     }
                 }
                 dispatchOne(e) {
+                    var t, n, i;
                     let {
-                        data: t,
-                        type: n,
-                        compressionAnalytics: i
-                    } = e, s = performance.now();
-                    if (this.socket.connectionState === l.default.RESUMING) {
-                        let e = s - this.resumeAnalytics.lastUpdateTime;
-                        0 === this.resumeAnalytics.numEvents ? this.resumeAnalytics.initialWaitTime = e : e > this.resumeAnalytics.largestWaitTime && (this.resumeAnalytics.largestWaitTime = e), this.resumeAnalytics.totalWaitTime += e, this.resumeAnalytics.lastUpdateTime = s, this.resumeAnalytics.numEvents += 1
+                        data: s,
+                        type: r,
+                        compressionAnalytics: a,
+                        preloadedData: o
+                    } = e, _ = performance.now();
+                    if (this.socket.connectionState === d.default.RESUMING) {
+                        let e = _ - this.resumeAnalytics.lastUpdateTime;
+                        0 === this.resumeAnalytics.numEvents ? this.resumeAnalytics.initialWaitTime = e : e > this.resumeAnalytics.largestWaitTime && (this.resumeAnalytics.largestWaitTime = e), this.resumeAnalytics.totalWaitTime += e, this.resumeAnalytics.lastUpdateTime = _, this.resumeAnalytics.numEvents += 1
                     }
-                    if (a.default.isLoggingGatewayEvents && d.verboseDangerously("<~", n, t), "READY" === n) {
-                        let e = (0, u.getReadyPayloadByteSizeAnalytics)(t);
-                        this.dispatchSocketMessage(n, t), (0, u.logReadyPayloadReceived)(this.socket, t, s, i, e)
-                    } else "RESUMED" === n ? (this.dispatchSocketMessage(n, t), (0, u.logResumeAnalytics)(this.resumeAnalytics), this.resumeAnalytics = (0, u.createResumeAnalytics)(), this.socket.handleResumeDispatched()) : this.dispatchSocketMessage(n, t);
-                    this.socket.connectionState === l.default.RESUMING && (this.resumeAnalytics.dispatchTime += performance.now() - s)
+                    if (l.default.isLoggingGatewayEvents && f.verboseDangerously("<~", r, s), u.default.flush(r, s), "READY" === r) {
+                        let e = (0, c.getReadyPayloadByteSizeAnalytics)(s);
+                        null === (t = this.getDispatchHandler(r)) || void 0 === t || t.dispatch(s, r, o), (0, c.logReadyPayloadReceived)(this.socket, s, _, a, e)
+                    } else "RESUMED" === r ? (null === (n = this.getDispatchHandler(r)) || void 0 === n || n.dispatch(s, r, o), (0, c.logResumeAnalytics)(this.resumeAnalytics), this.resumeAnalytics = (0, c.createResumeAnalytics)(), this.socket.handleResumeDispatched()) : null === (i = this.getDispatchHandler(r)) || void 0 === i || i.dispatch(s, r, o);
+                    this.socket.connectionState === d.default.RESUMING && (this.resumeAnalytics.dispatchTime += performance.now() - _)
                 }
                 clear() {
                     this.paused = !1, this.queue.length = 0
                 }
                 constructor(e) {
-                    this.socket = e, this.queue = [], this.dispatchTimeout = null, this.nextDispatchTimeout = 33, this.paused = !0, this.resumeAnalytics = (0, u.createResumeAnalytics)(), this.dispatchSocketMessage = null, this.flush = () => {
+                    this.socket = e, this.queue = [], this.dispatchTimeout = null, this.nextDispatchTimeout = 33, this.paused = !0, this.resumeAnalytics = (0, c.createResumeAnalytics)(), this.getDispatchHandler = null, this.flush = () => {
                         if (this.paused) return;
                         clearTimeout(this.dispatchTimeout), this.dispatchTimeout = null;
                         let e = Date.now(),
-                            t = this.queue.slice();
-                        this.queue.length = 0, this.dispatchMultiple(t);
-                        let n = Date.now() - e;
-                        n > 100 ? (d.log("Dispatched ".concat(t.length, " messages in ").concat(n, "ms")), this.nextDispatchTimeout = 250) : this.nextDispatchTimeout = 33
+                            t = 0;
+                        for (; t < this.queue.length && 1 === this.queue[t].status; t++);
+                        if (0 === t) return;
+                        let n = this.queue.splice(0, t);
+                        this.dispatchMultiple(n);
+                        let i = Date.now() - e;
+                        i > 100 ? (f.log("Dispatched ".concat(n.length, " messages in ").concat(i, "ms")), this.nextDispatchTimeout = 250) : this.nextDispatchTimeout = 33
                     }
                 }
             }
@@ -64370,12 +64385,14 @@
                 U = {};
 
             function w(e, t) {
-                for (let n of e) U[n] = t
+                for (let n of e) U[n] = {
+                    preload: () => null,
+                    dispatch: t
+                }
             }
 
-            function k(e, t) {
-                var n;
-                O.default.flush(e, t), null === (n = U[e]) || void 0 === n || n.call(U, t, e)
+            function k(e) {
+                return U[e]
             }
 
             function V(e) {
@@ -117043,7 +117060,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262781"
+                                build_number: "262784"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -117766,6 +117783,9 @@
                 },
                 isPremiumExactly: function() {
                     return A.isPremiumExactly
+                },
+                StreamQuality: function() {
+                    return s
                 },
                 getPremiumPlanItem: function() {
                     return w
@@ -133161,4 +133181,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.136eb1304c2e63babf05.js.map
+//# sourceMappingURL=29278.d5eb8b51a25e0b779718.js.map
