@@ -10184,6 +10184,8 @@
                 VOICE_PANEL_DEAFEN_SUBTITLE: "Disables all sound",
                 VOICE_PANEL_ONLY_SHOW_VIDEO_TITLE: "Only Show Videos",
                 VOICE_PANEL_ONLY_SHOW_VIDEO_SUBTITLE: "We won't show non-video participants",
+                VOICE_PANEL_CHANGE_BACKGROUND_TITLE: "Change Background",
+                VOICE_PANEL_CHANGE_BACKGROUND_SUBTITLE: "Set background for everyone",
                 VOICE_PANEL_LOAD_MORE: "Load more",
                 VOICE_PANEL_NO_JOIN_PERMISSIONS_ALERT_TITLE: "You don’t have permission to join this Voice Channel.",
                 VOICE_PANEL_NO_JOIN_PERMISSIONS_ALERT_SUBTITLE: "This channel is only for selected members and roles.",
@@ -18167,7 +18169,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262751", ", Version Hash: ").concat("f4650b4b25ff12ae9c0201505dda4e2aadcec836")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262828", ", Version Hash: ").concat("031b95a86235bc4b05a9a8319af9ed8c038b34c5")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20411,8 +20413,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "262751", "262751"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262751")), _ = 0), _
+                let _ = parseInt((e = "262828", "262828"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262828")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35702,4 +35704,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.4351b31e568dd0c70db8.js.map
+//# sourceMappingURL=90486.a1873f7687d3cadf59fe.js.map
