@@ -63464,7 +63464,7 @@
                 }
                 constructor() {
                     super(), this.dispatchExceptionBackoff = new o.default(1e3, F), this.dispatchSuccessTimer = 0, this.didForceClearGuildHashes = !1, this.identifyUncompressedByteSize = 0, this.identifyCompressedByteSize = 0, this.analytics = {}, this.identifyCount = 0, this.resumeUrl = null, this.lastIdentifyClientState = null, this.iosGoingAwayEventCount = 0, this.send = (e, t, n) => {
-                        E.default.isLoggingGatewayEvents && U.verbose("~>", e, t);
+                        E.default.isLoggingGatewayEvents && U.verboseDangerously("~>", e, t);
                         let i = w.pack({
                             op: e,
                             d: t
@@ -63729,7 +63729,7 @@
                         let e = s - this.resumeAnalytics.lastUpdateTime;
                         0 === this.resumeAnalytics.numEvents ? this.resumeAnalytics.initialWaitTime = e : e > this.resumeAnalytics.largestWaitTime && (this.resumeAnalytics.largestWaitTime = e), this.resumeAnalytics.totalWaitTime += e, this.resumeAnalytics.lastUpdateTime = s, this.resumeAnalytics.numEvents += 1
                     }
-                    if (a.default.isLoggingGatewayEvents && d.verbose("<~", n, t), "READY" === n) {
+                    if (a.default.isLoggingGatewayEvents && d.verboseDangerously("<~", n, t), "READY" === n) {
                         let e = (0, u.getReadyPayloadByteSizeAnalytics)(t);
                         this.dispatchSocketMessage(n, t), (0, u.logReadyPayloadReceived)(this.socket, t, s, i, e)
                     } else "RESUMED" === n ? (this.dispatchSocketMessage(n, t), (0, u.logResumeAnalytics)(this.resumeAnalytics), this.resumeAnalytics = (0, u.createResumeAnalytics)(), this.socket.handleResumeDispatched()) : this.dispatchSocketMessage(n, t);
@@ -117043,7 +117043,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262661"
+                                build_number: "262671"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133161,4 +133161,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.d8c0cbf2f8dc7ea2df2d.js.map
+//# sourceMappingURL=29278.5f6235f292a33e8afc48.js.map
