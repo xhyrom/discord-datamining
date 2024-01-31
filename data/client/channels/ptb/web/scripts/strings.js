@@ -18169,7 +18169,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262962", ", Version Hash: ").concat("00b8c24e0a387bcd45c939d5aa1812c9bc9fb9c6")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262967", ", Version Hash: ").concat("f39b07d73a64b7b7f60957de6a36886ea93d1a46")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20413,8 +20413,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "262962", "262962"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262962")), _ = 0), _
+                let _ = parseInt((e = "262967", "262967"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262967")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21141,7 +21141,7 @@
                     } = e;
                     if (_ === a.CodedLinkType.INVITE);
                     else if (_ === a.CodedLinkType.TEMPLATE) null == r.default.getGuildTemplate(E) && n.default.resolveGuildTemplate(E);
-                    else if (_ === a.CodedLinkType.BUILD_OVERRIDE);
+                    else if (_ === a.CodedLinkType.BUILD_OVERRIDE || _ === a.CodedLinkType.MANUAL_BUILD_OVERRIDE);
                     else if (_ === a.CodedLinkType.EVENT);
                     else if (_ === a.CodedLinkType.CHANNEL_LINK);
                     else if (_ === a.CodedLinkType.APP_DIRECTORY_PROFILE);
@@ -35702,4 +35702,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.6b46c680deea50b143d9.js.map
+//# sourceMappingURL=90486.bc86ac4c405d2d044fc0.js.map

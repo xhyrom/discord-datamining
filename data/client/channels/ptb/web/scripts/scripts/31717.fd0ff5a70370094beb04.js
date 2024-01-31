@@ -747,6 +747,7 @@
                                                 guild_template_guild_id: e.sourceGuildId
                                             })
                                         } else if (t === _.CodedLinkType.BUILD_OVERRIDE);
+                                        else if (t === _.CodedLinkType.MANUAL_BUILD_OVERRIDE);
                                         else if (t === _.CodedLinkType.EVENT);
                                         else if (t === _.CodedLinkType.CHANNEL_LINK);
                                         else if (t === _.CodedLinkType.APP_DIRECTORY_PROFILE) Q.default.track(es.AnalyticEvents.APP_DIRECTORY_PROFILE_EMBED_SENT, {
@@ -3272,4 +3273,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.a884df1ca00a0876be62.js.map
+//# sourceMappingURL=31717.fd0ff5a70370094beb04.js.map
