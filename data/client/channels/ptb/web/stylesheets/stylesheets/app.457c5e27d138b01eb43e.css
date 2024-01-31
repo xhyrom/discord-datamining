@@ -27064,8 +27064,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -60189,6 +60189,7 @@ html .progress__4ef76 {
 }
 
 .noFlipCardContainer_e2d2c1,
+.noFlipCardContainerCarousel__11750,
 .flipCardContainer__314ea {
     display: flex;
     width: 100%;
@@ -60197,13 +60198,21 @@ html .progress__4ef76 {
 }
 
 .noFlipCardContainer_e2d2c1.forceShadow__205ef .card_e97590,
+.noFlipCardContainerCarousel__11750.forceShadow__205ef .card_e97590,
 .flipCardContainer__314ea.forceShadow__205ef .card_e97590 {
     box-shadow: var(--elevation-medium)
 }
 
-.noFlipCardContainer_e2d2c1:hover .card_e97590 {
+.noFlipCardContainer_e2d2c1:hover .card_e97590,
+.noFlipCardContainerCarousel__11750:hover .card_e97590 {
     box-shadow: var(--elevation-medium);
     transform: translatey(-8px)
+}
+
+@media screen and (min-width:1331px) {
+    .noFlipCardContainerCarousel__11750 {
+        min-width: 350px
+    }
 }
 
 .flipCardContainer__314ea {
@@ -60327,7 +60336,7 @@ html .progress__4ef76 {
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all.2s ease-in-out
+    transition: all.1s ease-in-out
 }
 
 .card_e97590:hover .cardDescription__46c9d {
@@ -60348,16 +60357,16 @@ html .progress__4ef76 {
 }
 
 .card_e97590:hover .carouselCardImage__4e898 {
-    scale: 115.2%;
-    margin-left: -1.5px;
-    margin-bottom: -7px
+    scale: 116.5%;
+    margin-left: 0;
+    margin-bottom: -6px
 }
 
 @media screen and (max-width:1330px) {
     .card_e97590:hover .carouselCardImage__4e898 {
         scale: 119%;
         margin-left: -2.5px;
-        margin-bottom: -6.5px
+        margin-bottom: -6px
     }
 }
 
@@ -60423,7 +60432,7 @@ html .progress__4ef76 {
     width: 100%;
     z-index: 10;
     pointer-events: none;
-    transition: all.2s ease-in-out
+    transition: all.1s ease-in-out
 }
 
 .cardDescription__46c9d {
@@ -60439,7 +60448,7 @@ html .progress__4ef76 {
     padding: 24px;
     opacity: 0;
     pointer-events: none;
-    transition: all.2s ease-in-out;
+    transition: all.1s ease-in-out;
     border-radius: 20px;
     background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%);
     z-index: 20
@@ -60460,7 +60469,7 @@ html .progress__4ef76 {
     bottom: 8px;
     opacity: .5;
     transform: scale(.75);
-    transition: all.2s ease-in-out
+    transition: all.1s ease-in-out
 }
 
 .reducedMotion__90450 .cardDescription__46c9d {
@@ -60478,7 +60487,7 @@ html .progress__4ef76 {
     right: 0;
     top: 0;
     opacity: 0;
-    transition: all.2s ease-in-out;
+    transition: all.1s ease-in-out;
     pointer-events: none;
     border-radius: 20px
 }
@@ -60611,13 +60620,13 @@ html .progress__4ef76 {
 
 .showAllPerksButton__15f8d {
     margin-left: auto;
-    z-index: 999
+    z-index: 9
 }
 
 .showAllPerksButtonCenter__68bbc {
     margin-bottom: 24px;
     align-items: center;
-    z-index: 999
+    z-index: 9
 }
 
 .wrapper__765a2 {
@@ -60712,6 +60721,7 @@ html .progress__4ef76 {
     align-items: center;
     width: 100%;
     height: 100px;
+    margin-left: -182px;
     justify-content: center;
     text-align: center
 }
@@ -60742,10 +60752,7 @@ html .progress__4ef76 {
 }
 
 .backButtonContainer_ca0298 {
-    position: absolute;
-    margin-right: 20px;
-    top: 30px;
-    left: 10px
+    margin-right: 92px
 }
 
 .headerArt_b78f22 {
@@ -60765,10 +60772,15 @@ html .progress__4ef76 {
     background-color: hsl(var(--white-500-hsl)/.3)
 }
 
-@media(max-width:1190px) {
+@media(max-width:1282px) {
     .backButtonContainer_ca0298 {
         top: -40px;
-        left: 10px
+        left: 10px;
+        position: absolute
+    }
+
+    .containerInner__10f58 {
+        margin-left: 0
     }
 }
 
@@ -60811,7 +60823,8 @@ html .progress__4ef76 {
 }
 
 .leftArrow__1d2d5,
-.rightArrow__0633c {
+.rightArrow__0633c,
+.inactiveArrow_e0ef05 {
     position: absolute;
     z-index: 9999;
     cursor: pointer;
@@ -60886,6 +60899,15 @@ html .progress__4ef76 {
     width: 32px
 }
 
+.inactiveArrow_e0ef05 {
+    cursor: default;
+    box-shadow: var(--shadow-ledge)
+}
+
+.inactiveArrow_e0ef05 .arrowIcon_c86bb8 {
+    fill: var(--interactive-muted)
+}
+
 .theme-dark .leftArrow__1d2d5,
 .theme-dark .rightArrow__0633c {
     background-color: var(--primary-530);
@@ -60912,6 +60934,10 @@ html .progress__4ef76 {
     fill: var(--white)
 }
 
+.theme-dark .inactiveArrow_e0ef05 {
+    background-color: var(--primary-530)
+}
+
 .theme-light .leftArrow__1d2d5,
 .theme-light .rightArrow__0633c {
     background-color: var(--white);
@@ -60932,6 +60958,10 @@ html .progress__4ef76 {
 .theme-light .leftArrow__1d2d5:active .arrowIcon_c86bb8,
 .theme-light .rightArrow__0633c:active .arrowIcon_c86bb8 {
     fill: var(--primary-860)
+}
+
+.theme-light .inactiveArrow_e0ef05 {
+    background-color: var(--white)
 }
 
 .container__6eaa3 {
@@ -61051,6 +61081,10 @@ html .progress__4ef76 {
     justify-content: center;
     width: 100%;
     margin-bottom: 64px
+}
+
+.theme-light .seeAllPerksButton_c90d04 {
+    border: 1px solid var(--background-modifier-accent)
 }
 
 .container__74da1 {
@@ -127651,4 +127685,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.198254a2b27ae840f9e5.css.map*/
+/*# sourceMappingURL=app.457c5e27d138b01eb43e.css.map*/
