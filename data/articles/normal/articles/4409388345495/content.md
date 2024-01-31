@@ -31,7 +31,7 @@
 </ul>
 <h1 id="h_01FGCPNVQ6F9X6ET40NPETDMVK">What are Server Profiles?</h1>
 <p>Server profiles are a new customization feature for Nitro users! With server profiles, users can set a different server-specific avatar, banner, and about me section for each of the servers they're in.</p>
-<h3>Note: Even if you change your server profile, your user profile will be unaffected and remain as your primary avatar in servers where you don't upload server avatars.</h3>
+<h3 id="h_01HNGBKZ17VD2YQG517HE860D8">Note: Even if you change your server profile, your user profile will be unaffected and remain as your primary avatar in servers where you don't upload server avatars.</h3>
 <h1 id="h_01FGCPP3V7BS1QVCQQZ2YC0RXB">How can I change my Server Avatar?</h1>
 <h2 id="h_01FGM5HZ9G9RE5R7836J63ZX1P">Right-Click on your Avatar</h2>
 <p>In the browser or desktop app, you can right-click on your avatar in Member List of the server, which is the right side bar, and activate the the drop down menu.</p>
@@ -39,7 +39,7 @@
 <p>Press the <strong>Save</strong> button to confirm your server avatar!</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636183062167" alt="update-right-click-edit-server-profile.gif" width="685" height="397"></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636687143703" alt="updated-server-profile-settings-avatar.png" width="676" height="671"></p>
-<h3>Like profile avatars, PNG and JPG are the supported file types and Nitro users can upload a GIF for their server avatars. After uploading a server avatar, you can crop and center PNG, JPG, and GIF files. </h3>
+<h3 id="h_01HNGBKZ17X28QXBE49RV716KK">Like profile avatars, PNG and JPG are the supported file types and Nitro users can upload a GIF for their server avatars. After uploading a server avatar, you can crop and center PNG, JPG, and GIF files. </h3>
 <h2 id="h_01FGM5JCW5TMQAR0VAFG1Y8SZH">Left-Click on your Avatar</h2>
 <p>Alternatively, you can left-click on your avatar in the Member List, in a text channel, or in a voice channel to make the mini profile pop-up appear. You'll then see at the top right corner a <strong>pencil icon</strong>, which you can press to show the <strong>Edit Server Profile </strong>and <strong>Edit User Profile </strong>options. Press on <strong>Edit Server Profile</strong> to change your server avatar in the <strong>Server Profile </strong>settings page.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636388018071" alt="update-left-click-edit-server-profile.gif" width="705" height="409"></p>
@@ -61,19 +61,19 @@
 <h1 id="h_01GG6C7WG2GAF74SBZ02GC20VQ">How do I change my profile theme?</h1>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/9769057529751" alt="server-profile-profile-theme-avatar-icon.png" width="378" height="342"></span></p>
 <p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="font-weight: 400;"> members can customize each of their server profiles’ themes! This will specifically change the colors of your mini profile card. You can choose a </span><strong>Primary </strong><span style="font-weight: 400;">color and an </span><strong>Accent </strong><span style="font-weight: 400;">color.</span></p>
-<h2><span style="font-weight: 400;">On Desktop/Browser</span></h2>
+<h2 id="h_01HNGBKZ179D803WSZXF5DV5C5"><span style="font-weight: 400;">On Desktop/Browser</span></h2>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/9769012029719" alt="server-profile-profile-theme-page_copy.png" width="614" height="373"></span></p>
 <p><span style="font-weight: 400;">In your </span><strong>Server Profile</strong><span style="font-weight: 400;"> page, under the </span><strong>Profile Themes</strong><span style="font-weight: 400;">, press the </span><strong>Primary </strong><span style="font-weight: 400;">color square to choose the main color of your mini profile card. Then, press the </span><strong>Accent</strong><span style="font-weight: 400;"> color square to choose a secondary color.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/9769057346327" alt="server-profile-profile-theme-primary_copy.png" width="602" height="367"></span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/9769057401111" alt="server-profile-profile-theme-accent_copy.png" width="604" height="367"></span></p>
-<h3><span style="font-weight: 400;">On Mobile</span></h3>
+<h3 id="h_01HNGBKZ187FNPGCSC4VGRDXWV"><span style="font-weight: 400;">On Mobile</span></h3>
 <p><span style="font-weight: 400;">To access your <strong>Server Profile </strong>page on your mobile clients, swipe right while in the Discord app and tap on your avatar icon in the bottom right corner to open up <strong>User Settings</strong>. Select <strong>Profiles</strong>.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/11110065459735" alt="updated-user-settings-mobile-1.jpg" width="381" height="825"></span></p>
 <p><span style="font-weight: 400;">You can also tap on your avatar icon in a channel of your desired server and select </span><strong>Edit Server Profile</strong><span style="font-weight: 400;"> in your mini profile card.</span></p>
 <p><span style="font-weight: 400;">In the </span><strong>Profile </strong><span style="font-weight: 400;">page, make sure the profile option slider is towards the right for </span><strong>Server Profile</strong><span style="font-weight: 400;"> and that server you intend to customize your server profile is chosen in the dropdown menu.</span></p>
 <p><span style="font-weight: 400;">Under the <strong>Profile Themes </strong>section, press the <strong>Primary </strong>color square to choose the main color of your mini profile card. Then, press the <strong>Accent</strong> color square to choose a secondary color.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/11110029783191" alt="mobile-Server_Profiles.jpg" width="393" height="851"></span></p>
-<h3>
+<h3 id="h_01HNGBKZ1AKBJHENDKBS2AG04R">
     <span style="font-weight: 400;">Please note: if you have </span><strong>Sync profile themes</strong><span style="font-weight: 400;"> enabled in your </span><a href="https://support.discord.com/hc/en-us/articles/1500010454681" target="_blank" rel="noopener noreferrer">Accessibility settings page</a><span style="font-weight: 400;">, which syncs your profile themes to your chosen Discord client theme, the background color of your profile card will reflect the color of your client theme (Light or Dark).</span>
 </h3>
 <h1 id="h_01FPE3GWZ62G842RFFFYD9NTJT">How do I change my profile banner?</h1>
@@ -81,7 +81,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6636757438999" alt="updated-server-profile-settings-banner.png"></p>
 <p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> members can upload an image or animated GIF as their profile banner. Supported file types are PNG, JPG, and animated GIFs under 10MB. The recommended minimum size is 600x240.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4415382163223" alt="nitro_profile_banner.png"></p>
-<h3 class="wysiwyg-text-align-left">Tip: Images can be cropped after upload</h3>
+<h3 class="wysiwyg-text-align-left" id="h_01HNGBKZ1AMD3AT9MNXHKJZJMB">Tip: Images can be cropped after upload</h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4415382164247" alt="banner_edit_image.png"></p>
 <h1 id="h_01G52M1Y6A47PB0S6MRYJF7VQD">How do I set up an “About Me” for my Server Profile?</h1>
 <p><span style="font-weight: 400;">In the </span><strong>Server Profile</strong><span style="font-weight: 400;"> settings page, you can write a small blurb in the text box under </span><strong>About Me </strong><span style="font-weight: 400;">that’s specific to your server profile.</span></p>
@@ -94,16 +94,16 @@
     </li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Unicode</span></li>
 </ul>
-<h3>Note: Nitro<span style="font-weight: 400;"> and </span>Nitro Classic<span style="font-weight: 400;"> subscribers can use </span><a href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis"><span style="font-weight: 400;">custom emojis</span></a><span style="font-weight: 400;"> in their About Me.</span>
+<h3 id="h_01HNGBKZ1ABA9ZEEW5VV14G3E2">Note: Nitro<span style="font-weight: 400;"> and </span>Nitro Classic<span style="font-weight: 400;"> subscribers can use </span><a href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis"><span style="font-weight: 400;">custom emojis</span></a><span style="font-weight: 400;"> in their About Me.</span>
 </h3>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/6635417351447" alt="updated-server-profile-settings-page-about-me-box.png"></span></p>
 <h1 id="h_01FGCPPE37QG92W7XCVV53NVC3">Frequently Asked Questions</h1>
 <p id="h_01FGCPPQ1ZJN7YBBFZ5J3T21XA"><span class="wysiwyg-font-size-large"><strong>Q: What happened to server nicknames?</strong></span></p>
 <p>A: Server nicknames still exist and are free to all Discord users! To change your server nickname, you can follow the same steps to change your server avatar, but instead input/change your server nickname in the in-app pop-up window.</p>
-<h3>You can learn more about server nicknames in this <a href="https://support.discord.com/hc/en-us/articles/219070107" target="_blank" rel="noopener noreferrer">article</a>!</h3>
+<h3 id="h_01HNGBKZ1A0VRDS70VWWGR2RV0">You can learn more about server nicknames in this <a href="https://support.discord.com/hc/en-us/articles/219070107" target="_blank" rel="noopener noreferrer">article</a>!</h3>
 <p id="h_01FGCPQ21A9ZTX4702J5R99GHB"><span class="wysiwyg-font-size-large"><strong>Q: Do I get custom server avatars with Nitro Classic?</strong></span></p>
 <p>A: Nitro Classic users can still set server nicknames; however only Nitro users will be able to set custom server avatars.</p>
-<h3>You can learn more about Nitro and Nitro Classic in this <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">article</a>!</h3>
+<h3 id="h_01HNGBKZ1ARJ99ARFH7V96VMNQ">You can learn more about Nitro and Nitro Classic in this <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">article</a>!</h3>
 <p id="h_01FGCPWPYJGK0ABKCE70EQDPNB"><strong><span class="wysiwyg-font-size-large">Q: What are the size limits and accepted file types for server avatars?</span></strong></p>
 <p>A: Accepted file types for server avatars are JPG, PNG, and GIF files. The maximum file size is 8 MB.</p>
 <p id="h_01FGCPRK0M00FRY1P2XENK2JM2"><span class="wysiwyg-font-size-large"><strong>Q: Can I edit avatars after I upload them?</strong></span></p>

@@ -15,7 +15,7 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2023-06-06T17:00:02Z",
+  "edited_at": "2024-01-31T18:13:41Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [],
@@ -24,6 +24,12 @@
     "Nitro",
     "answer-bot",
     "server avatar",
-    "account customization"
+    "account customization",
+    "avatar decorations",
+    "profile effects",
+    "decoration",
+    "personalize",
+    "profiles",
+    "effect"
   ]
 }
