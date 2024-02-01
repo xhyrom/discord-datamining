@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -112576,31 +112576,31 @@
                     return m
                 },
                 addExtraAnalyticsDecorator: function() {
-                    return v
-                },
-                AnalyticEventConfigs: function() {
                     return S
                 },
-                expandLocation: function() {
+                AnalyticEventConfigs: function() {
                     return T
                 },
-                setUTMContext: function() {
-                    return A
+                expandLocation: function() {
+                    return I
                 },
-                expandEventProperties: function() {
+                setUTMContext: function() {
                     return y
                 },
-                debugLogEvent: function() {
+                expandEventProperties: function() {
                     return N
                 },
+                debugLogEvent: function() {
+                    return R
+                },
                 trackNetworkAction: function() {
-                    return O
+                    return D
                 },
                 AnalyticsSchema: function() {
                     return d
                 },
                 default: function() {
-                    return D
+                    return P
                 }
             }), n("424973"), n("222007");
             var i = n("884691"),
@@ -112620,12 +112620,13 @@
                     location: {}
                 }),
                 E = {},
-                p = [];
+                p = performance.now(),
+                v = [];
 
-            function v(e) {
-                p.push(e)
+            function S(e) {
+                v.push(e)
             }
-            let S = {
+            let T = {
                 [_.AnalyticEvents.APP_OPENED]: {
                     throttlePeriod: 3e5,
                     throttleKeys: () => []
@@ -112805,7 +112806,7 @@
                 }
             };
 
-            function T(e) {
+            function I(e) {
                 return "string" == typeof e ? {
                     location: e
                 } : {
@@ -112816,18 +112817,18 @@
                     location_object_type: e.objectType
                 }
             }
-            let I = () => h.AccessibilityFeatureFlags.NONE,
-                C = (0, s.trackMaker)({
-                    analyticEventConfigs: S,
+            let C = () => h.AccessibilityFeatureFlags.NONE,
+                A = (0, s.trackMaker)({
+                    analyticEventConfigs: T,
                     dispatcher: r.default,
                     TRACK_ACTION_NAME: "TRACK"
                 });
 
-            function A(e) {
+            function y(e) {
                 return E = e
             }
 
-            function y(e) {
+            function N(e) {
                 var t, n, i, s, r;
                 let a = e;
                 if (!a && (a = {}), null != a.location) {
@@ -112837,7 +112838,7 @@
                     } = a;
                     a = {
                         ...t,
-                        ...T(e)
+                        ...I(e)
                     }
                 }
                 if (null != a.source) {
@@ -112859,7 +112860,7 @@
                         }
                     }
                 }
-                a.client_performance_cpu = c.default.getCurrentCPUUsagePercent(), a.client_performance_memory = c.default.getCurrentMemoryUsageKB(), a.cpu_core_count = c.default.getCPUCoreCount(), a.accessibility_features = I(), a.rendered_locale = g.default.getLocale(), a.uptime_app = Math.floor(performance.now() / 1e3);
+                a.client_performance_cpu = c.default.getCurrentCPUUsagePercent(), a.client_performance_memory = c.default.getCurrentMemoryUsageKB(), a.cpu_core_count = c.default.getCPUCoreCount(), a.accessibility_features = C(), a.rendered_locale = g.default.getLocale(), a.uptime_app = Math.floor((performance.now() - p) / 1e3);
                 let o = c.default.getProcessUptime();
                 null != o && (a.uptime_process_renderer = Math.floor(o));
                 let {
@@ -112868,45 +112869,45 @@
                     utmCampaign: d,
                     utmContent: f
                 } = E;
-                return a.utm_source = null !== (t = a.utm_source) && void 0 !== t ? t : l, a.utm_medium = null !== (n = a.utm_medium) && void 0 !== n ? n : u, a.utm_campaign = null !== (i = a.utm_campaign) && void 0 !== i ? i : d, a.utm_content = null !== (s = a.utm_content) && void 0 !== s ? s : f, p.forEach(e => e(a)), a
+                return a.utm_source = null !== (t = a.utm_source) && void 0 !== t ? t : l, a.utm_medium = null !== (n = a.utm_medium) && void 0 !== n ? n : u, a.utm_campaign = null !== (i = a.utm_campaign) && void 0 !== i ? i : d, a.utm_content = null !== (s = a.utm_content) && void 0 !== s ? s : f, v.forEach(e => e(a)), a
             }
 
-            function N(e, t) {
+            function R(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 u.default.isLoggingAnalyticsEvents && console.info("AnalyticsUtils.track(...):", e, t), n ? o.report("Analytics", e, t) : o.report("Analytics", e)
             }
-            let R = (0, s.trackMaker)({
-                analyticEventConfigs: S,
+            let O = (0, s.trackMaker)({
+                analyticEventConfigs: T,
                 dispatcher: r.default,
                 TRACK_ACTION_NAME: "TRACK"
             });
 
-            function O(e, t) {
+            function D(e, t) {
                 let n = (0, a.getLocation)(),
-                    i = y({
+                    i = N({
                         location: n,
                         ...t
                     });
                 (0, a.setDebugTrackedData)(e, {
                     type: "action",
                     ...t
-                }), N(e, i), R(e, i)
+                }), R(e, i), O(e, i)
             }
-            var D = {
+            var P = {
                 ...s.default,
                 getCampaignParams: s.getCampaignParams,
                 setSystemAccessibilityFeatures: function(e) {
-                    I = e
+                    C = e
                 },
-                expandEventProperties: y,
+                expandEventProperties: N,
                 track: function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                     if (!l.IGNORE_ANALYTICS_BREADCRUMB_EVENTS.includes(e) && f.default.addBreadcrumb({
                             category: "analytics",
                             message: "".concat(e)
                         }), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();
-                    let i = y(t);
-                    return N(e, i, n.logEventProperties), C(e, i, {
+                    let i = N(t);
+                    return R(e, i, n.logEventProperties), A(e, i, {
                         flush: n.flush,
                         fingerprint: n.fingerprint
                     })
@@ -117088,7 +117089,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263046"
+                                build_number: "263058"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133209,4 +133210,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.e20490d26aab32b0d7b9.js.map
+//# sourceMappingURL=29278.1deae1ebd6b05ba4eb9e.js.map
