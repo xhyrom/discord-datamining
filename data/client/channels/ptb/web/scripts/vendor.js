@@ -51240,16 +51240,7 @@
                 r = n("802493");
             let a = new i.default("GuildVersions");
             var o = new class e {
-                getCommittedVersions() {
-                    try {
-                        var e, t;
-                        let n = null === (t = r.default.guildVersions()) || void 0 === t ? void 0 : null === (e = t.getManySyncUnsafe()) || void 0 === e ? void 0 : e.map(e => [e.id, e.version]);
-                        return new Map(null != n ? n : [])
-                    } catch (e) {
-                        return a.warn("couldn't load guild versions", e), new Map
-                    }
-                }
-                async getCommittedVersionsAsync() {
+                async getCommittedVersions() {
                     try {
                         let e = r.default.guildVersions();
                         if (null == e) return {};
@@ -51370,26 +51361,18 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return o
                 }
             });
             var i = n("605250"),
                 s = n("802493"),
                 r = n("723939");
-            let a = "version",
-                o = new i.default("KvCacheVersion");
-            var l = new class e {
+            let a = "version";
+            new i.default("KvCacheVersion");
+            var o = new class e {
                 async okAsync(e) {
                     let t = await s.default.cache(e).get(a);
                     return null == t ? null : 3 === t
-                }
-                okSync(e) {
-                    try {
-                        let t = s.default.cache(e).getSyncUnsafe(a);
-                        return null == t ? null : 3 === t
-                    } catch (e) {
-                        return o.log("couldn't read version from database: ".concat(e.message)), !1
-                    }
                 }
                 handleClearGuildCache(e) {
                     s.default.cacheTransaction(e).delete(a), s.default.cacheTransaction(e).delete("CacheStore.Nonce"), r.default.replaceDisableAllDatabases("CLEAR_GUILD_CACHE (via KvCacheVersion)")
@@ -51475,10 +51458,12 @@
                         s = performance.now() - n;
                     return a.verbose("loaded in ".concat(s, "ms (guild: ").concat(t, ", channels: ").concat(i.length, ")")), i
                 }
-                static getGuildIdsSync() {
+                static async getGuildIds() {
                     try {
-                        var e, t;
-                        let n = null !== (t = null === (e = r.default.channels()) || void 0 === e ? void 0 : e.getGuildIdsSyncUnsafe()) && void 0 !== t ? t : [],
+                        var e;
+                        let t = r.default.channels();
+                        if (null == t) return new Set;
+                        let n = null !== (e = await t.getGuildIds()) && void 0 !== e ? e : [],
                             i = n.filter(e => null !== e && "string" == typeof e);
                         return new Set(i)
                     } catch (e) {
@@ -53293,7 +53278,7 @@
                     b()
                 }
                 async getClientState() {
-                    let [e, t] = await Promise.all([S && (0, m.isCacheEnabled)() ? l.default.getCommittedVersionsAsync() : Promise.resolve({}), S && (0, m.isCacheEnabled)() ? u.default.getCommittedVersions() : Promise.resolve({})]);
+                    let [e, t] = await Promise.all([S && (0, m.isCacheEnabled)() ? l.default.getCommittedVersions() : Promise.resolve({}), S && (0, m.isCacheEnabled)() ? u.default.getCommittedVersions() : Promise.resolve({})]);
                     return {
                         knownGuildVersions: e,
                         highestLastMessageId: T,
@@ -64597,7 +64582,12 @@
                 }), setTimeout(() => V({
                     type: "POST_CONNECTION_OPEN"
                 }), 2e3)
-            }), w(["READY"], e => {
+            }), ! function(e, t, n) {
+                for (let i of e) U[i] = {
+                    preload: t,
+                    dispatch: n
+                }
+            }(["READY"], () => R.preloadReadyPayloadData(), (e, t, n) => {
                 if (e.user.bot) {
                     V({
                         type: "LOGOUT"
@@ -64606,26 +64596,26 @@
                 }
                 _.default.ready.measure(() => {
                     r.default.Emitter.batched(() => {
-                        e = _.default.hydrateReady.measure(() => R.hydrateReadyPayloadPrioritized(e, D.socket.identifyStartTime));
+                        e = _.default.hydrateReady.measure(() => R.hydrateReadyPayloadPrioritized(e, D.socket.identifyStartTime, n));
                         let t = e.private_channels.map(e => (0, g.createChannelRecordFromServer)(e)),
-                            n = e.guilds.filter(e => !0 === e.unavailable && !0 !== e.geo_restricted).map(e => e.id),
-                            i = e.guilds.filter(e => !0 !== e.unavailable),
-                            s = e.guilds.filter(e => !0 === e.geo_restricted);
-                        i.forEach(e => {
+                            i = e.guilds.filter(e => !0 === e.unavailable && !0 !== e.geo_restricted).map(e => e.id),
+                            s = e.guilds.filter(e => !0 !== e.unavailable),
+                            r = e.guilds.filter(e => !0 === e.geo_restricted);
+                        s.forEach(e => {
                             e.presences = []
                         });
-                        let r = null == e.user_settings_proto ? void 0 : (0, h.b64ToPreloadedUserSettingsProto)(e.user_settings_proto);
+                        let a = null == e.user_settings_proto ? void 0 : (0, h.b64ToPreloadedUserSettingsProto)(e.user_settings_proto);
                         _.default.dispatchReady.measure(() => {
-                            var a;
+                            var n;
                             V({
                                 type: "CONNECTION_OPEN",
                                 sessionId: e.session_id,
                                 authSessionIdHash: e.auth_session_id_hash,
                                 user: e.user,
                                 users: e.users,
-                                guilds: i,
+                                guilds: s,
                                 initialPrivateChannels: t,
-                                unavailableGuilds: n,
+                                unavailableGuilds: i,
                                 readState: e.read_state,
                                 userGuildSettings: e.user_guild_settings,
                                 tutorial: e.tutorial,
@@ -64640,15 +64630,15 @@
                                 consents: e.consents,
                                 sessions: x(e.sessions || []),
                                 pendingPayments: e.pending_payments,
-                                countryCode: null !== (a = e.country_code) && void 0 !== a ? a : void 0,
+                                countryCode: null !== (n = e.country_code) && void 0 !== n ? n : void 0,
                                 guildJoinRequests: e.guild_join_requests || [],
-                                userSettingsProto: r,
+                                userSettingsProto: a,
                                 apiCodeVersion: e.api_code_version,
                                 auth: e.auth,
                                 notificationSettings: {
                                     flags: e.notification_settings.flags
                                 },
-                                geoRestrictedGuilds: s
+                                geoRestrictedGuilds: r
                             })
                         }), null != e.auth_token && V({
                             type: "UPDATE_TOKEN",
@@ -116455,7 +116445,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263272"
+                                build_number: "263284"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -118799,14 +118789,17 @@
                 hydrateReadySupplementalPayload: function() {
                     return A
                 },
-                hydrateReadyPayloadPrioritized: function() {
+                preloadReadyPayloadData: function() {
                     return y
                 },
+                hydrateReadyPayloadPrioritized: function() {
+                    return N
+                },
                 hydrateInitialGuild: function() {
-                    return R
+                    return O
                 },
                 hydratePreviouslyUnavailableGuild: function() {
-                    return b
+                    return L
                 }
             }), n("424973"), n("222007"), n("70102");
             var i = n("627445"),
@@ -118838,16 +118831,16 @@
                     merged_members: s,
                     merged_presences: r,
                     ...a
-                } = e, o = O(C, null == r ? void 0 : r.friends), l = null !== (n = null == i ? void 0 : i.map((e, t) => {
-                    let n = O(C, null == r ? void 0 : r.guilds[t]),
-                        i = O(C, null == s ? void 0 : s[t]);
+                } = e, o = D(C, null == r ? void 0 : r.friends), l = null !== (n = null == i ? void 0 : i.map((e, t) => {
+                    let n = D(C, null == r ? void 0 : r.guilds[t]),
+                        i = D(C, null == s ? void 0 : s[t]);
                     return {
                         ...e,
                         unavailable: void 0 === e.voice_states,
                         presences: n,
                         members: i
                     }
-                })) && void 0 !== n ? n : [], u = N(t, i, e => ({
+                })) && void 0 !== n ? n : [], u = R(t, i, e => ({
                     id: e.id,
                     members: e.members,
                     presences: e.presences,
@@ -118862,63 +118855,74 @@
                 }
             }
 
-            function y(e, t) {
-                var n;
-                let {
-                    users: i,
-                    relationships: r,
-                    private_channels: _,
-                    merged_members: m,
-                    guilds: S,
-                    ...I
-                } = e;
-                (function() {
-                    ! function() {
-                        let e = o.default.database();
-                        null != e && !1 === u.default.okSync(e) && c.default.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok")
-                    }(), T = {};
-                    let e = Object.values(E.default.getGuilds()),
-                        t = h.default.getGuilds(),
-                        n = g.default.getRawStickersByGuild(),
-                        i = p.default.getReadStatesByChannel(),
-                        s = (0, f.isCacheEnabled)() ? l.default.getCommittedVersions() : new Map,
-                        r = (0, f.isCacheEnabled)() ? d.default.getGuildIdsSync() : new Set;
-                    for (let o of e) {
-                        var a, _, m;
-                        s.has(o.id) && r.has(o.id) && (T[o.id] = {
-                            properties: v.toServer(o),
-                            roles: o.roles,
-                            emojis: null !== (_ = null === (a = t[o.id]) || void 0 === a ? void 0 : a.rawEmojis) && void 0 !== _ ? _ : null,
-                            stickers: null !== (m = n.get(o.id)) && void 0 !== m ? m : null,
-                            readStates: i
-                        })
+            function y() {
+                let e = o.default.database(),
+                    t = (0, f.isCacheEnabled)() ? l.default.getCommittedVersions() : Promise.resolve({}),
+                    n = (0, f.isCacheEnabled)() ? d.default.getGuildIds() : Promise.resolve(new Set),
+                    i = null != e ? u.default.okAsync(e) : Promise.resolve(!1);
+                return Promise.all([t, n, i]).then(e => {
+                    let [t, n, i] = e;
+                    return {
+                        guildVersions: t,
+                        guildChannels: n,
+                        databaseOk: i
                     }
-                })(), C = a.keyBy(i, e => e.id);
-                let A = O(C, r);
-                null == _ || _.forEach(e => {
-                    let t = e.recipient_ids;
-                    null != t && (e.recipients = t.map(e => (s(null != C[e], "Missing user in compressed ready payload"), C[e]))), delete e.recipient_ids
-                });
-                let y = null !== (n = null == S ? void 0 : S.map((e, t) => !0 === e.unavailable ? e : (e.members = O(C, null == m ? void 0 : m[t]), P(e)))) && void 0 !== n ? n : [],
-                    R = N(t, S, e => P(e));
-                return null != R && y.push(R), {
-                    ...I,
-                    users: i,
-                    presences: [],
-                    relationships: A,
-                    guilds: y,
-                    private_channels: null != _ ? _ : []
-                }
+                })
             }
 
             function N(e, t, n) {
+                var i;
+                let {
+                    users: r,
+                    relationships: l,
+                    private_channels: u,
+                    merged_members: d,
+                    guilds: f,
+                    ..._
+                } = e;
+                (function(e) {
+                    let t = o.default.database();
+                    null != t && !1 === e.databaseOk && c.default.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok"), T = {};
+                    let n = Object.values(E.default.getGuilds()),
+                        i = h.default.getGuilds(),
+                        s = g.default.getRawStickersByGuild(),
+                        r = p.default.getReadStatesByChannel();
+                    for (let t of n) {
+                        var a, l, u;
+                        t.id in e.guildVersions && e.guildChannels.has(t.id) && (T[t.id] = {
+                            properties: v.toServer(t),
+                            roles: t.roles,
+                            emojis: null !== (l = null === (a = i[t.id]) || void 0 === a ? void 0 : a.rawEmojis) && void 0 !== l ? l : null,
+                            stickers: null !== (u = s.get(t.id)) && void 0 !== u ? u : null,
+                            readStates: r
+                        })
+                    }
+                })(n), C = a.keyBy(r, e => e.id);
+                let m = D(C, l);
+                null == u || u.forEach(e => {
+                    let t = e.recipient_ids;
+                    null != t && (e.recipients = t.map(e => (s(null != C[e], "Missing user in compressed ready payload"), C[e]))), delete e.recipient_ids
+                });
+                let S = null !== (i = null == f ? void 0 : f.map((e, t) => !0 === e.unavailable ? e : (e.members = D(C, null == d ? void 0 : d[t]), b(e)))) && void 0 !== i ? i : [],
+                    I = R(t, f, e => b(e));
+                return null != I && S.push(I), {
+                    ..._,
+                    users: r,
+                    presences: [],
+                    relationships: m,
+                    guilds: S,
+                    private_channels: null != u ? u : []
+                }
+            }
+
+            function R(e, t, n) {
                 return null == I || I.identifyTime !== e || null != t && t.some(e => e.id === I.guild.id) ? null : n(I.guild)
             }
 
-            function R(e, t) {
+            function O(e, t) {
                 var n, i, s;
                 let r = E.default.getGuild(e.id),
-                    a = b(e, null == r ? void 0 : {
+                    a = L(e, null == r ? void 0 : {
                         properties: v.toServer(r),
                         roles: r.roles,
                         emojis: null !== (i = null === (n = h.default.getGuilds()[r.id]) || void 0 === n ? void 0 : n.rawEmojis) && void 0 !== i ? i : null,
@@ -118931,7 +118935,7 @@
                 }, a
             }
 
-            function O(e, t) {
+            function D(e, t) {
                 let n = [];
                 return null == t || t.forEach(t => {
                     if (null == t) return;
@@ -118940,14 +118944,14 @@
                 }), n
             }
 
-            function D(e) {
+            function P(e) {
                 let t = T[e];
                 return delete T[e], t
             }
 
-            function P(e) {
+            function b(e) {
                 var t, n, i, s, r, a, o, l, u, d, c, f;
-                let _ = D(e.id);
+                let _ = P(e.id);
                 if ("partial" !== e.data_mode) return {
                     id: e.id,
                     dataMode: e.data_mode,
@@ -118963,7 +118967,7 @@
                     stage_instances: e.stage_instances,
                     stickers: e.stickers,
                     threads: null !== (s = null === (i = e.threads) || void 0 === i ? void 0 : i.map(t => (0, m.createChannelRecordFromServer)(t, e.id))) && void 0 !== s ? s : [],
-                    threadMessages: L(e.threads),
+                    threadMessages: M(e.threads),
                     channels: e.channels.map(t => (t.guild_id = e.id, (0, m.createChannelRecordFromServer)(t, e.id))),
                     version: e.version,
                     hasThreadsSubscription: e.has_threads_subscription
@@ -118978,7 +118982,7 @@
                         deletes: null !== (a = e.partial_updates.deleted_channel_ids) && void 0 !== a ? a : []
                     },
                     channelTimestampUpdates: e.channel_updates,
-                    emojis: null == _.emojis ? null : M(_.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
+                    emojis: null == _.emojis ? null : U(_.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
                     emojiUpdates: {
                         writes: null !== (o = e.partial_updates.emojis) && void 0 !== o ? o : [],
                         deletes: null !== (l = e.partial_updates.deleted_emoji_ids) && void 0 !== l ? l : []
@@ -118992,22 +118996,22 @@
                     properties: null !== (u = e.properties) && void 0 !== u ? u : _.properties,
                     roles: v.filterRoleDeletes(e.id, _.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
                     stage_instances: e.stage_instances,
-                    stickers: null == _.stickers ? null : M(_.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
+                    stickers: null == _.stickers ? null : U(_.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
                     stickerUpdates: {
                         writes: null !== (d = e.partial_updates.stickers) && void 0 !== d ? d : [],
                         deletes: null !== (c = e.partial_updates.deleted_sticker_ids) && void 0 !== c ? c : []
                     },
                     unableToSyncDeletes: e.unable_to_sync_deletes,
                     threads: null !== (f = null === (n = e.threads) || void 0 === n ? void 0 : n.map(t => (0, m.createChannelRecordFromServer)(t, e.id))) && void 0 !== f ? f : [],
-                    threadMessages: L(e.threads),
+                    threadMessages: M(e.threads),
                     version: e.version,
                     hasThreadsSubscription: e.has_threads_subscription
                 }
             }
 
-            function b(e, t) {
+            function L(e, t) {
                 var n, i, s, r, a, o, l, u, d, c, f, _;
-                if (null == t && (t = D(e.id)), "partial" !== e.data_mode) return {
+                if (null == t && (t = P(e.id)), "partial" !== e.data_mode) return {
                     id: e.id,
                     emojis: e.emojis,
                     guild_scheduled_events: e.guild_scheduled_events,
@@ -119021,7 +119025,7 @@
                     stage_instances: e.stage_instances,
                     stickers: e.stickers,
                     threads: null !== (r = null === (s = e.threads) || void 0 === s ? void 0 : s.map(t => (0, m.createChannelRecordFromServer)(t, e.id))) && void 0 !== r ? r : [],
-                    threadMessages: L(e.threads),
+                    threadMessages: M(e.threads),
                     channels: e.channels.map(t => (t.guild_id = e.id, (0, m.createChannelRecordFromServer)(t, e.id))),
                     presences: e.presences,
                     embedded_activities: e.embedded_activities,
@@ -119039,7 +119043,7 @@
                     },
                     channelTimestampUpdates: e.channel_updates,
                     embedded_activities: e.embedded_activities,
-                    emojis: null == t.emojis ? null : M(t.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
+                    emojis: null == t.emojis ? null : U(t.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
                     emojiUpdates: {
                         writes: null !== (l = e.partial_updates.emojis) && void 0 !== l ? l : [],
                         deletes: null !== (u = e.partial_updates.deleted_emoji_ids) && void 0 !== u ? u : []
@@ -119054,28 +119058,28 @@
                     properties: null !== (d = e.properties) && void 0 !== d ? d : t.properties,
                     roles: v.filterRoleDeletes(e.id, t.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
                     stage_instances: e.stage_instances,
-                    stickers: null == t.stickers ? null : M(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
+                    stickers: null == t.stickers ? null : U(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
                     stickerUpdates: {
                         writes: null !== (c = e.partial_updates.stickers) && void 0 !== c ? c : [],
                         deletes: null !== (f = e.partial_updates.deleted_sticker_ids) && void 0 !== f ? f : []
                     },
                     unableToSyncDeletes: e.unable_to_sync_deletes,
                     threads: null !== (_ = null === (i = e.threads) || void 0 === i ? void 0 : i.map(t => (0, m.createChannelRecordFromServer)(t, e.id))) && void 0 !== _ ? _ : [],
-                    threadMessages: L(e.threads),
+                    threadMessages: M(e.threads),
                     voice_states: e.voice_states,
                     version: e.version,
                     hasThreadsSubscription: e.has_threads_subscription
                 }
             }
 
-            function L(e) {
+            function M(e) {
                 let t = [];
                 if (null != e)
                     for (let n of e) null != n.most_recent_message && t.push(n.most_recent_message);
                 return t
             }
 
-            function M(e, t, n) {
+            function U(e, t, n) {
                 t = null != t ? t : [];
                 let i = new Set((null != n ? n : []).concat(t.map(e => e.id)));
                 return e.filter(e => !i.has(e.id)).concat(t)
@@ -122611,17 +122615,11 @@
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
                 }
-                getSyncUnsafe(e) {
-                    return this.table.getSyncUnsafe([e])
-                }
                 getManySyncUnsafe(e) {
                     return this.table.getManySyncUnsafe([], e)
                 }
                 getMapEntriesSyncUnsafe() {
                     return this.table.getMapEntriesSyncUnsafe()
-                }
-                getIdsSyncUnsafe() {
-                    return this.table.getChildIdsSyncUnsafe([])
                 }
                 constructor(e, t, n, i = !0) {
                     this.originalPrefix = e, this.table = new s.Table([e], t, n, i)
@@ -122823,17 +122821,11 @@
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
                 }
-                getSyncUnsafe(e) {
-                    return this.table.getSyncUnsafe([e])
-                }
                 getManySyncUnsafe(e) {
                     return this.table.getManySyncUnsafe([], e)
                 }
                 getMapEntriesSyncUnsafe() {
                     return this.table.getMapEntriesSyncUnsafe()
-                }
-                getIdsSyncUnsafe() {
-                    return this.table.getChildIdsSyncUnsafe([])
                 }
                 static cell(e, t) {
                     return {
@@ -122940,20 +122932,11 @@
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
                 }
-                getSyncUnsafe(e, t) {
-                    return this.table.getSyncUnsafe([e, t])
-                }
                 getManySyncUnsafe(e, t) {
                     return this.table.getManySyncUnsafe([e], t)
                 }
                 getMapEntriesSyncUnsafe() {
                     return this.table.getMapEntriesSyncUnsafe()
-                }
-                getIdsSyncUnsafe(e) {
-                    return this.table.getChildIdsSyncUnsafe([e])
-                }
-                getGuildIdsSyncUnsafe() {
-                    return this.table.getChildIdsSyncUnsafe([])
                 }
                 constructor(e, t, n, i = !0) {
                     this.originalPrefix = e, this.table = new s.Table([e], t, n, i)
@@ -123058,20 +123041,11 @@
                 upgradeTransaction(e) {
                     return new a(this.table.upgradeTransaction(e))
                 }
-                getSyncUnsafe(e, t) {
-                    return this.table.getSyncUnsafe([e, t])
-                }
                 getManySyncUnsafe(e, t) {
                     return this.table.getManySyncUnsafe([e], t)
                 }
                 getMapEntriesSyncUnsafe() {
                     return this.table.getMapEntriesSyncUnsafe()
-                }
-                getIdsSyncUnsafe(e) {
-                    return this.table.getChildIdsSyncUnsafe([e])
-                }
-                getGuildIdsSyncUnsafe() {
-                    return this.table.getChildIdsSyncUnsafe([])
                 }
                 static cell(e, t, n) {
                     return {
@@ -123392,12 +123366,6 @@
                 upgradeTransaction(e) {
                     return new l(this.prefix, this.tableId, e)
                 }
-                getSyncUnsafe(e) {
-                    var t;
-                    return null !== (t = this.getManySyncUnsafe(e, {
-                        limit: 1
-                    })[0]) && void 0 !== t ? t : null
-                }
                 getManySyncUnsafe() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
                         t = arguments.length > 1 ? arguments[1] : void 0;
@@ -123413,14 +123381,6 @@
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
                     return this.database.executeSync({
                         type: "kv.get_map_entries",
-                        table: this.tableId,
-                        key: (0, s.combineKeyPrefix)(this.prefix, e)
-                    })
-                }
-                getChildIdsSyncUnsafe() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-                    return this.database.executeSync({
-                        type: "kv.get_child_ids",
                         table: this.tableId,
                         key: (0, s.combineKeyPrefix)(this.prefix, e)
                     })
@@ -132576,4 +132536,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.0ae5d35910c772b95c00.js.map
+//# sourceMappingURL=29278.36ccaf4bc63049ddc319.js.map
