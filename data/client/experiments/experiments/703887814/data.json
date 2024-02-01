@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_app_launcher_onboarding",
+    "label": "App Launcher - Onboarding",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable onboarding within App Launcher"
+    ],
+    "hash": 703887814,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
