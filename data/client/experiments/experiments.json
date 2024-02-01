@@ -9548,7 +9548,8 @@
         "Treatment 20: Sender + Worker: Trendline Window Duration 3750ms + Robust Estimator",
         "Treatment 21: Sender + Worker: Trendline Window Duration 5000ms + Robust Estimator",
         "Treatment 22: Sender + Worker: Trendline Window Duration 6250ms + Robust Estimator",
-        "Treatment 23: Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator"
+        "Treatment 23: Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator",
+        "Treatment 24: Sender + Worker: Trendline Window Duration 3750ms + Robust Estimator + RC Link Capacity Fix (Worker-only)"
       ],
       "hash": 834206369,
       "buckets": [
@@ -9576,7 +9577,8 @@
         20,
         21,
         22,
-        23
+        23,
+        24
       ],
       "holdout": {},
       "aa_mode": false,
