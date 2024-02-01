@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_shop_lunar_new_year_drop_upsell",
+    "label": "Shop Lunar New Year In App Marketing Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables New Badge"
+    ],
+    "hash": 2703753090,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

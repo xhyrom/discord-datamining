@@ -433,6 +433,7 @@ id,hash,label
 2024-01_quiet_mode,711383732,Quiet Mode (dnd-equivalent) Experiment 
 2024-01_reactivation_user_discount_offer_experiment,4279678064,Reactivation User Discount Offer
 2024-01_rpc_analytics_killswitch,305964783,RPC Server Analytics Killswitch
+2024-01_shop_lunar_new_year_drop_upsell,2703753090,Shop Lunar New Year In App Marketing Experiment
 2024-01_unreads,2883062585,Unreads Experiment (grey-dot mode)
 2024-01_voice_channel_game_activity,3575725749,Voice Channel Game Activity
 2024-01_voice_user_game_activity,1400973357,Voice User Game Activity
