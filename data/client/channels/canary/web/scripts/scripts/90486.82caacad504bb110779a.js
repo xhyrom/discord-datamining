@@ -16468,6 +16468,7 @@
                 CUSTOM_HANG_STATUS_PLACEHOLDER: "What are you doing?",
                 CUSTOM_HANGS_STATUS_COPY_CTA: "Swipe status",
                 HANG_STATUS_VC_ROW_ADD: "Add a status",
+                HANG_STATUS_HELP: "Show your friends what you're up to by setting an activity status.",
                 LAUNCH_PAD: "LaunchPad",
                 LAUNCH_PAD_HISTORY: "Recent Channels",
                 LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
@@ -18170,7 +18171,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263148", ", Version Hash: ").concat("dd62152b77be79c0259ca1c28944cabb65a91ae7")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263163", ", Version Hash: ").concat("88eb00373e38928d0914b1be9278e3caef4041fc")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20414,8 +20415,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "263148", "263148"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263148")), _ = 0), _
+                let _ = parseInt((e = "263163", "263163"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263163")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35713,4 +35714,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.e66bd396b493d1c79581.js.map
+//# sourceMappingURL=90486.82caacad504bb110779a.js.map
