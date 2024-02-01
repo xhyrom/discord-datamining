@@ -116774,20 +116774,6 @@ html .invoiceCancelRow_c1bfe7 {
     position: relative
 }
 
-.rewardTile__66a02 {
-    width: 240px;
-    height: 348px;
-    padding: 16px;
-    border-radius: 4px;
-    margin-right: 40px;
-    border: 1px solid black
-}
-
-.reward__29972 {
-    width: 100%;
-    border-radius: 4px
-}
-
 .modalContent_e57193 {
     width: 368px
 }
@@ -116808,6 +116794,41 @@ html .invoiceCancelRow_c1bfe7 {
 
 .errorInput_b67519 {
     border: 1px solid var(--status-danger-background) !important
+}
+
+.rewardTile__66a02 {
+    width: 240px;
+    height: 348px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-right: 40px;
+    box-shadow: var(--shadow-high)
+}
+
+.reward__29972 {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 16px
+}
+
+.rewardSubheading__44e84 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px
+}
+
+.rewardHeading_e27832 {
+    text-align: center;
+    line-height: 1.2
+}
+
+.rewardSubheadingText__50f73 {
+    text-transform: uppercase
+}
+
+.rewardSubheadingIcon__51701 {
+    margin-right: 2px
 }
 
 .modalContent_d4e781 {
@@ -127484,4 +127505,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.74e390026291cf6e10b1.css.map*/
+/*# sourceMappingURL=app.2ee26426f2c463c075b1.css.map*/
