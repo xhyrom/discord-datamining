@@ -76770,6 +76770,18 @@ html .tabBadge__002b3 {
     height: 12px
 }
 
+.newBadgeTooltip_e29756 {
+    max-width: 100%;
+    width: 100%
+}
+
+.newBadgeTooltipContent__9929b {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    white-space: nowrap
+}
+
 .enable-forced-colors .searchBar_e4ea2a {
     border-bottom: 2px solid CanvasText
 }
@@ -127288,4 +127300,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.98f94c3f671bdfbaafdf.css.map*/
+/*# sourceMappingURL=app.d788054b4994b0cab9a1.css.map*/
