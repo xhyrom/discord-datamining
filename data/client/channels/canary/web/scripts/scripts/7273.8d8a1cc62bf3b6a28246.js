@@ -2505,70 +2505,74 @@
         },
         397336: function(_, E, I) {
             "use strict";
-            var e, a, o, R, t, A, T, r, N, i, c, O, n, L;
+            var e, a, o, R, t, A, T, r, N, i, c, O, n, L, D;
             I.r(E), I.d(E, {
                 MAX_FAVORITES: function() {
-                    return D
-                },
-                MAX_FAVORITE_GIFS_SIZE: function() {
                     return S
                 },
-                ROLE_SUBSCRIPTION_SUBSECTION: function() {
+                MAX_FAVORITE_GIFS_SIZE: function() {
                     return C
                 },
-                APPLICATION_SUBSCRIPTION_SUBSECTION: function() {
+                ROLE_SUBSCRIPTION_SUBSECTION: function() {
                     return l
                 },
-                SOUNDBOARD_SUBSECTION: function() {
+                APPLICATION_SUBSCRIPTION_SUBSECTION: function() {
                     return s
+                },
+                SOUNDBOARD_SUBSECTION: function() {
+                    return P
                 },
                 ProfileCustomizationSubsection: function() {
                     return e
                 },
-                ProfileCustomizationScrollPositions: function() {
+                AppearanceScrollPositions: function() {
                     return a
                 },
-                AccessibilityScrollPositions: function() {
+                ProfileCustomizationScrollPositions: function() {
                     return o
                 },
+                AccessibilityScrollPositions: function() {
+                    return R
+                },
                 UserSettingsScrollPositions: function() {
-                    return P
-                },
-                UserSettingsTypes: function() {
-                    return t
-                },
-                UserSettingsDelay: function() {
-                    return A
-                },
-                createEmptyEditInfo: function() {
                     return M
                 },
-                ChangeEmailSteps: function() {
+                UserSettingsTypes: function() {
+                    return A
+                },
+                UserSettingsDelay: function() {
                     return T
                 },
-                ChannelNotificationSettingsFlags: function() {
+                createEmptyEditInfo: function() {
                     return G
                 },
-                GuildNotificationSettingsFlags: function() {
+                ChangeEmailSteps: function() {
+                    return r
+                },
+                ChannelNotificationSettingsFlags: function() {
                     return U
                 },
+                GuildNotificationSettingsFlags: function() {
+                    return d
+                },
                 ProtoAudioSettingsContextTypes: function() {
-                    return r
+                    return N
                 }
             });
-            let D = 250,
-                S = 762880,
-                C = "ROLE_SUBSCRIPTIONS",
-                l = "APPLICATION_SUBSCRIPTION_SUBSECTION",
-                s = "SOUNDBOARD_SUBSECTION";
-            (N = e || (e = {})).USER_PROFILE = "user_profile", N.GUILD = "guild", N.TRY_IT_OUT = "try_it_out", (a || (a = {})).TRY_IT_OUT = "try_it_out", (i = o || (o = {})).REDUCED_MOTION = "reduced_motion", i.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", i.LEGACY_CHAT_INPUT = "legacy_chat_input", (R || (R = {})).HARDWARE_ACCELERATION = "hardware_acceleration";
-            let P = {
-                ProfileCustomizationScrollPositions: a,
-                AccessibilityScrollPositions: o,
-                VoiceAndVideoScrollPositions: R
+            let S = 250,
+                C = 762880,
+                l = "ROLE_SUBSCRIPTIONS",
+                s = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+                P = "SOUNDBOARD_SUBSECTION";
+            (i = e || (e = {})).USER_PROFILE = "user_profile", i.GUILD = "guild", i.TRY_IT_OUT = "try_it_out", (a || (a = {})).CUSTOM_APP_ICONS = "custom_app_icon", (o || (o = {})).TRY_IT_OUT = "try_it_out", (c = R || (R = {})).REDUCED_MOTION = "reduced_motion", c.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", c.LEGACY_CHAT_INPUT = "legacy_chat_input", (t || (t = {})).HARDWARE_ACCELERATION = "hardware_acceleration";
+            let M = {
+                ProfileCustomizationScrollPositions: o,
+                AccessibilityScrollPositions: R,
+                VoiceAndVideoScrollPositions: t,
+                AppearanceScrollPositions: a
             };
 
-            function M() {
+            function G() {
                 return {
                     protoToSave: void 0,
                     timeout: void 0,
@@ -2580,8 +2584,8 @@
                     triggeredMigrations: !1,
                     offlineEditDataVersion: void 0
                 }
-            }(c = t || (t = {}))[c.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", c[c.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", c[c.TEST_SETTINGS = 3] = "TEST_SETTINGS", (O = A || (A = {}))[O.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", O[O.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", O[O.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", O[O.AUTOMATED = 30] = "AUTOMATED", O[O.DAILY = 86400] = "DAILY", (n = T || (T = {}))[n.CONFIRM_START = 0] = "CONFIRM_START", n[n.CONFIRM_CODE = 1] = "CONFIRM_CODE", n[n.EMAIL_AND_PASSWORD = 2] = "EMAIL_AND_PASSWORD", n[n.COMPLETE = 3] = "COMPLETE";
-            let G = {
+            }(O = A || (A = {}))[O.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", O[O.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", O[O.TEST_SETTINGS = 3] = "TEST_SETTINGS", (n = T || (T = {}))[n.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", n[n.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", n[n.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", n[n.AUTOMATED = 30] = "AUTOMATED", n[n.DAILY = 86400] = "DAILY", (L = r || (r = {}))[L.CONFIRM_START = 0] = "CONFIRM_START", L[L.CONFIRM_CODE = 1] = "CONFIRM_CODE", L[L.EMAIL_AND_PASSWORD = 2] = "EMAIL_AND_PASSWORD", L[L.COMPLETE = 3] = "COMPLETE";
+            let U = {
                     NEW_FORUM_THREADS_ON: 16384,
                     NEW_FORUM_THREADS_OFF: 8192,
                     OPT_IN_ENABLED: 4096,
@@ -2589,13 +2593,13 @@
                     UNREADS_ALL_MESSAGES: 1024,
                     UNREADS_ONLY_MENTIONS: 512
                 },
-                U = {
+                d = {
                     OPT_IN_CHANNELS_ON: 16384,
                     OPT_IN_CHANNELS_OFF: 8192,
                     UNREADS_ONLY_MENTIONS: 4096,
                     UNREADS_ALL_MESSAGES: 2048
                 };
-            (L = r || (r = {})).USER = "user", L.STREAM = "stream"
+            (D = N || (N = {})).USER = "user", D.STREAM = "stream"
         },
         718517: function(_, E, I) {
             "use strict";
@@ -13683,4 +13687,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.75c700437837a105bf60.js.map
+//# sourceMappingURL=7273.8d8a1cc62bf3b6a28246.js.map
