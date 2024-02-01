@@ -10131,13 +10131,17 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: enable hang statuses"
+        "Treatment 1: enable hang statuses with no default",
+        "Treatment 2: enable hang statuses with default",
+        "Treatment 3: enable hang statuses with channel topic"
       ],
       "hash": 1033614739,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2,
+        3
       ],
       "holdout": {
         "name": null,
@@ -10145,7 +10149,9 @@
       },
       "aa_mode": false,
       "config_keys": [
-        "enableHangStatus"
+        "enableHangStatus",
+        "setDefaultStatus",
+        "allowChannelTopic"
       ]
     },
     "rollout": {
