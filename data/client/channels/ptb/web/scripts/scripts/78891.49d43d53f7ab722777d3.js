@@ -97,22 +97,22 @@
             "use strict";
             r.r(t), r.d(t, {
                 useMembersSearchRecordStore: function() {
-                    return M
+                    return p
                 },
                 getChunkIndex: function() {
-                    return N
-                },
-                getChunkNumbers: function() {
                     return T
                 },
+                getChunkNumbers: function() {
+                    return A
+                },
                 useIsMakingRequest: function() {
-                    return G
+                    return w
                 },
                 useIsStillIndexing: function() {
                     return P
                 },
                 default: function() {
-                    return L
+                    return q
                 }
             }), r("222007"), r("70102");
             var n, u, l, a, i = r("714617"),
@@ -121,20 +121,21 @@
                 d = r("308503"),
                 c = r("811022"),
                 _ = r("249654"),
-                E = r("689988"),
-                S = r("449008"),
-                f = r("691386"),
-                h = r("770115"),
-                R = r("490931"),
-                g = r("225982"),
-                C = r("178406");
-            let b = new c.default("MemberSafetySearchManager");
+                E = r("398183"),
+                S = r("689988"),
+                f = r("449008"),
+                h = r("691386"),
+                R = r("770115"),
+                g = r("490931"),
+                C = r("225982"),
+                b = r("178406");
+            let m = new c.default("MemberSafetySearchManager");
 
-            function m(e) {
+            function I(e) {
                 return "guild_".concat(e)
             }
 
-            function I(e) {
+            function M(e) {
                 return {
                     requestState: e,
                     abortController: null,
@@ -146,30 +147,30 @@
                     elasticSearchCursor: null
                 }
             }(l = n || (n = {}))[l.FAILED = 0] = "FAILED", l[l.UNFETCHED = 1] = "UNFETCHED", l[l.PENDING = 2] = "PENDING", l[l.SUCCEEDED = 3] = "SUCCEEDED", l[l.STILL_INDEXING = 4] = "STILL_INDEXING";
-            let M = (0, d.default)(e => ({}));
+            let p = (0, d.default)(e => ({}));
 
             function v(e, t) {
-                let r = M.getState()[e];
-                return null == r && (r = I(1)), r = {
+                let r = p.getState()[e];
+                return null == r && (r = M(1)), r = {
                     ...r,
                     ...t
-                }, M.setState(t => ({
+                }, p.setState(t => ({
                     ...t,
                     [e]: r
                 })), r
             }
 
-            function p(e) {
-                return M.getState()[e]
-            }
-
             function y(e) {
-                let t = p(e);
-                return null == t && v(e, t = I(1)), t
+                return p.getState()[e]
             }
 
             function D(e) {
-                let t = p(e);
+                let t = y(e);
+                return null == t && v(e, t = M(1)), t
+            }
+            async function U(e) {
+                await (0, E.sleep)(200);
+                let t = y(e);
                 null != t && v(e, {
                     requestState: 3,
                     abortController: null,
@@ -177,10 +178,10 @@
                 })
             }
 
-            function U(e) {
+            function N(e) {
                 var t;
-                let r = m(e);
-                t = r, M.setState(e => {
+                let r = I(e);
+                t = r, p.setState(e => {
                     let r = {
                         ...e
                     };
@@ -188,28 +189,28 @@
                 })
             }
 
-            function N(e, t) {
+            function T(e, t) {
                 return Math.floor(Math.max(e - 1, 0) / t)
             }
 
-            function T(e) {
-                let t = (0, f.getSearchChunkLimit)(e),
+            function A(e) {
+                let t = (0, h.getSearchChunkLimit)(e),
                     r = e.pageSize * (e.currentPage - 1),
                     n = e.pageSize * e.currentPage,
                     u = e.pageSize * (e.currentPage + 1);
                 return {
-                    previousPageChunkNumber: N(r, t),
-                    currentPageChunkNumber: N(n, t),
-                    nextPageChunkNumber: N(u, t)
+                    previousPageChunkNumber: T(r, t),
+                    currentPageChunkNumber: T(n, t),
+                    nextPageChunkNumber: T(u, t)
                 }
             }(a = u || (u = {}))[a.FIRST_PAGE_CHUNK = 0] = "FIRST_PAGE_CHUNK", a[a.CURRENT_SEARCH_CHUNK = 1] = "CURRENT_SEARCH_CHUNK", a[a.NEXT_SEARCH_CHUNK = 2] = "NEXT_SEARCH_CHUNK", a[a.PREVIOUS_SEARCH_CHUNK = 3] = "PREVIOUS_SEARCH_CHUNK";
-            async function A(e) {
+            async function G(e) {
                 var t, r, n, u, l;
-                let a = C.default.getSearchStateByGuildId(e),
-                    i = C.default.getPaginationStateByGuildId(e),
-                    d = m(e),
-                    c = y(d),
-                    [E, I] = function(e, t, r) {
+                let a = b.default.getSearchStateByGuildId(e),
+                    i = b.default.getPaginationStateByGuildId(e),
+                    d = I(e),
+                    c = D(d),
+                    [E, S] = function(e, t, r) {
                         var n, u, l, a, i, o;
                         let s = function(e, t) {
                                 var r;
@@ -217,9 +218,9 @@
                                     currentPageChunkNumber: n,
                                     previousPageChunkNumber: u,
                                     nextPageChunkNumber: l
-                                } = T(t), {
+                                } = A(t), {
                                     previousPagination: a
-                                } = y(m(e)), i = t.currentPage, o = null !== (r = null == a ? void 0 : a.currentPage) && void 0 !== r ? r : 0, s = C.default.getElasticSearchPaginationByGuildId(e);
+                                } = D(I(e)), i = t.currentPage, o = null !== (r = null == a ? void 0 : a.currentPage) && void 0 !== r ? r : 0, s = b.default.getElasticSearchPaginationByGuildId(e);
                                 switch (!0) {
                                     case null == s:
                                     case n === l && 0 === n:
@@ -235,8 +236,8 @@
                                         return 1
                                 }
                             }(e, r),
-                            d = C.default.getElasticSearchPaginationByGuildId(e),
-                            c = (0, f.getSearchChunkLimit)(r);
+                            d = b.default.getElasticSearchPaginationByGuildId(e),
+                            c = (0, h.getSearchChunkLimit)(r);
                         switch (s) {
                             case 0:
                                 return [null, {
@@ -258,7 +259,7 @@
                                     before: null !== (o = null == d ? void 0 : d.before) && void 0 !== o ? o : void 0
                                 }];
                             default:
-                                (0, S.assertNever)(s)
+                                (0, f.assertNever)(s)
                         }
                     }(e, c, i);
                 let M = (u = function(e) {
@@ -269,7 +270,7 @@
                                 query: l
                             } = e;
                         if (null != (t = l) && t.length > 1) {
-                            let [e, t] = (0, h.splitQuery)(l);
+                            let [e, t] = (0, R.splitQuery)(l);
                             e.length > 0 && (n.usernames = {
                                 or_query: e
                             }), t.length > 0 && (n.user_id = {
@@ -284,7 +285,7 @@
                         } = e, d = {};
                         a && (d.unusual_dm_activity_until = {
                             range: {
-                                gte: Date.now() - R.UNUSUAL_DM_COMPARISON_DELTA
+                                gte: Date.now() - g.UNUSUAL_DM_COMPARISON_DELTA
                             }
                         }), i && (d.communication_disabled_until = {
                             range: {
@@ -329,10 +330,10 @@
                             or_query: [f]
                         });
                         let {
-                            selectedJoinSourceType: g
+                            selectedJoinSourceType: h
                         } = e;
-                        null != g && (n.join_source_type = {
-                            or_query: [g]
+                        null != h && (n.join_source_type = {
+                            or_query: [h]
                         });
                         let C = {
                                 or_query: u,
@@ -342,17 +343,17 @@
                                 selectedSort: b
                             } = e;
                         return null != b && (C.sort = b), C
-                    }(a), null == (l = I) ? u : {
+                    }(a), null == (l = S) ? u : {
                         ...u,
                         ...l
                     }),
-                    U = null !== (t = a.selectedSort) && void 0 !== t ? t : R.OrderBy.ORDER_BY_GUILD_JOINED_AT_DESC;
+                    p = null !== (t = a.selectedSort) && void 0 !== t ? t : g.OrderBy.ORDER_BY_GUILD_JOINED_AT_DESC;
                 if (function(e, t) {
-                        let r = y(e);
+                        let r = D(e);
                         return o(r.query, t)
                     }(d, M) && (0, s.isEqual)(E, c.cursor)) return;
                 let N = function(e, t, r, n, u) {
-                    let l = p(e);
+                    let l = y(e);
                     if ((null == l ? void 0 : l.requestState) === 2) {
                         var a;
                         null === (a = l.abortController) || void 0 === a || a.abort()
@@ -366,19 +367,19 @@
                         previousPagination: n,
                         sort: u
                     })
-                }(d, M, E, i, U);
+                }(d, M, E, i, p);
                 try {
-                    if (b.info("Making member search request", {
+                    if (m.info("Making member search request", {
                             query: N.query,
                             guildId: e
                         }), null == N.query) throw Error("Query is null");
-                    await (0, g.searchGuildMembers)(e, N.query, {
+                    await (0, C.searchGuildMembers)(e, N.query, {
                         signal: null !== (n = null === (r = N.abortController) || void 0 === r ? void 0 : r.signal) && void 0 !== n ? n : void 0
                     })
                 } catch (e) {
                     if (-1 === e.code) return;
                     ! function(e) {
-                        let t = p(e);
+                        let t = y(e);
                         null != t && v(e, {
                             requestState: 0,
                             abortController: null,
@@ -387,59 +388,59 @@
                     }(d);
                     return
                 }
-                D(d)
+                await U(d)
             }
 
-            function G(e) {
-                return M(t => {
+            function w(e) {
+                return p(t => {
                     var r;
-                    let n = m(e);
+                    let n = I(e);
                     return (null === (r = t[n]) || void 0 === r ? void 0 : r.requestState) === 2
                 })
             }
 
             function P(e) {
-                return M(t => {
+                return p(t => {
                     var r;
-                    let n = m(e);
+                    let n = I(e);
                     return (null === (r = t[n]) || void 0 === r ? void 0 : r.requestState) === 4
                 })
             }
-            class w extends E.default {
+            class L extends S.default {
                 handleInitialize(e) {
                     let {
                         guildId: t
                     } = e;
-                    return U(t), A(t)
+                    return N(t), G(t)
                 }
                 handleGuildDelete(e) {
                     let {
                         guild: t
                     } = e;
-                    return U(t.id)
+                    return N(t.id)
                 }
                 handleSearchStateUpdate(e) {
                     let {
                         guildId: t
                     } = e;
-                    return A(t)
+                    return G(t)
                 }
                 handlePaginationUpdate(e) {
                     let {
                         guildId: t
                     } = e;
-                    return A(t)
+                    return G(t)
                 }
                 handleGuildMemberSearchSuccess(e) {
                     let {
                         guildId: t
-                    } = e, r = m(t);
-                    return D(r)
+                    } = e, r = I(t);
+                    return U(r)
                 }
                 handleGuildMemberSearchStillIndexing(e) {
                     let {
                         guildId: t
-                    } = e, r = m(t);
+                    } = e, r = I(t);
                     v(r, {
                         requestState: 4,
                         abortController: null,
@@ -450,7 +451,7 @@
                     let {
                         guildId: t
                     } = e;
-                    return A(t)
+                    return G(t)
                 }
                 constructor(...e) {
                     super(...e), this.actions = {
@@ -464,8 +465,8 @@
                     }
                 }
             }
-            var L = new w
+            var q = new L
         }
     }
 ]);
-//# sourceMappingURL=78891.67edfb2ad5481ac7e469.js.map
+//# sourceMappingURL=78891.49d43d53f7ab722777d3.js.map
