@@ -23708,7 +23708,7 @@
                     return s
                 },
                 default: function() {
-                    return R
+                    return N
                 }
             }), n("70102"), n("860677"), n("506083");
             var s, r, a = n("759843"),
@@ -23720,35 +23720,34 @@
                 f = n("307439"),
                 _ = n("605250"),
                 h = n("21121"),
-                g = n("776502"),
-                m = n("393414"),
-                E = n("271938"),
-                p = n("350522"),
-                v = n("840707"),
-                S = n("772017"),
-                T = n("49111"),
-                I = n("191349");
-            let C = new _.default("AuthenticationActionCreators"),
-                A = null;
+                g = n("393414"),
+                m = n("271938"),
+                E = n("350522"),
+                p = n("840707"),
+                v = n("772017"),
+                S = n("49111"),
+                T = n("191349");
+            let I = new _.default("AuthenticationActionCreators"),
+                C = null;
 
-            function y(e) {
+            function A(e) {
                 let t = {
                     type: "LOGOUT",
                     ...e
                 };
                 d.default.dispatch(t).catch(e => {
                     var t;
-                    throw C.error("Error while dispatching LOGOUT", e), null === (t = window.DiscordErrors) || void 0 === t || t.softCrash(e), e
+                    throw I.error("Error while dispatching LOGOUT", e), null === (t = window.DiscordErrors) || void 0 === t || t.softCrash(e), e
                 })
             }
 
-            function N() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T.Routes.DEFAULT_LOGGED_OUT;
-                y();
+            function y() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S.Routes.DEFAULT_LOGGED_OUT;
+                A();
                 let t = (0, h.getRootNavigationRefIfInExperiment)();
-                null != e && (null != t ? (S.default.popAll(), t.navigate("auth")) : (0, m.transitionTo)(e))
+                null != e && (null != t ? (v.default.popAll(), t.navigate("auth")) : (0, g.transitionTo)(e))
             }(r = s || (s = {})).MFA = "MFA", r.SUCCESS = "SUCCESS";
-            var R = {
+            var N = {
                 startSession(e) {
                     d.default.wait(() => {
                         d.default.dispatch({
@@ -23779,9 +23778,9 @@
                     d.default.dispatch({
                         type: "LOGIN",
                         login: n,
-                        loginMethod: null != s && "" !== s ? T.LoginMethods.LOGIN_CODE : T.LoginMethods.PASSWORD
-                    }), this.setLoginCredentials(n, null !== (t = null != i ? i : s) && void 0 !== t ? t : void 0), v.default.post({
-                        url: T.Endpoints.LOGIN,
+                        loginMethod: null != s && "" !== s ? S.LoginMethods.LOGIN_CODE : S.LoginMethods.PASSWORD
+                    }), this.setLoginCredentials(n, null !== (t = null != i ? i : s) && void 0 !== t ? t : void 0), p.default.post({
+                        url: S.Endpoints.LOGIN,
                         body: {
                             login: n,
                             password: i,
@@ -23843,19 +23842,19 @@
                             return
                         }
                         let a = null === (s = e.body) || void 0 === s ? void 0 : s.code;
-                        a === T.AbortCodes.ACCOUNT_SCHEDULED_FOR_DELETION && null != i && "" !== i ? d.default.dispatch({
+                        a === S.AbortCodes.ACCOUNT_SCHEDULED_FOR_DELETION && null != i && "" !== i ? d.default.dispatch({
                             type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION",
                             credentials: {
                                 login: n,
                                 password: i
                             }
-                        }) : a === T.AbortCodes.ACCOUNT_DISABLED && null != i && "" !== i ? d.default.dispatch({
+                        }) : a === S.AbortCodes.ACCOUNT_DISABLED && null != i && "" !== i ? d.default.dispatch({
                             type: "LOGIN_ACCOUNT_DISABLED",
                             credentials: {
                                 login: n,
                                 password: i
                             }
-                        }) : a === T.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
+                        }) : a === S.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
                             type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED"
                         }) : d.default.dispatch({
                             type: "LOGIN_FAILURE",
@@ -23872,7 +23871,7 @@
                         isMultiAccount: o,
                         mfaType: l
                     } = e;
-                    return t = "webauthn" === l ? T.Endpoints.LOGIN_WEBAUTHN : "sms" === l ? T.Endpoints.LOGIN_SMS : T.Endpoints.LOGIN_MFA, v.default.post({
+                    return t = "webauthn" === l ? S.Endpoints.LOGIN_WEBAUTHN : "sms" === l ? S.Endpoints.LOGIN_SMS : S.Endpoints.LOGIN_MFA, p.default.post({
                         url: t,
                         body: {
                             code: n,
@@ -23899,7 +23898,7 @@
                             });
                             return
                         }
-                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === T.AbortCodes.MFA_INVALID_CODE) throw Error((0, g.getInvalidMFACodeError)(l));
+                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === S.AbortCodes.MFA_INVALID_CODE) throw Error(e.body.message);
                         throw e
                     })
                 },
@@ -23928,19 +23927,19 @@
                     })
                 },
                 logoutInternal(e) {
-                    y(e)
+                    A(e)
                 },
                 logout() {
                     var e;
-                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T.Routes.DEFAULT_LOGGED_OUT,
+                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S.Routes.DEFAULT_LOGGED_OUT,
                         n = arguments.length > 1 ? arguments[1] : void 0;
-                    return v.default.post({
-                        url: T.Endpoints.LOGOUT,
+                    return p.default.post({
+                        url: S.Endpoints.LOGOUT,
                         body: {
-                            provider: (0, I.getDevicePushProvider)(),
-                            token: u.default.get(T.DEVICE_TOKEN),
-                            voip_provider: I.DEVICE_PUSH_VOIP_PROVIDER,
-                            voip_token: u.default.get(T.DEVICE_VOIP_TOKEN)
+                            provider: (0, T.getDevicePushProvider)(),
+                            token: u.default.get(S.DEVICE_TOKEN),
+                            voip_provider: T.DEVICE_PUSH_VOIP_PROVIDER,
+                            voip_token: u.default.get(S.DEVICE_VOIP_TOKEN)
                         },
                         oldFormErrors: !0,
                         trackedActionData: {
@@ -23952,36 +23951,36 @@
                             }
                         }
                     }).finally(() => {
-                        (null == n || n === E.default.getId()) && N(t)
+                        (null == n || n === m.default.getId()) && y(t)
                     })
                 },
                 switchAccountToken(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                        n = E.default.getToken();
-                    C.log("Switching accounts", {
+                        n = m.default.getToken();
+                    I.log("Switching accounts", {
                         wasLoggedIn: null != n,
                         tokenHasChanged: e !== n
-                    }), y({
+                    }), A({
                         isSwitchingAccount: !0
                     });
                     let i = this.loginToken(e, !0).then(() => {
-                        let t = E.default.getToken();
-                        C.log("Switched accounts finished", {
+                        let t = m.default.getToken();
+                        I.log("Switched accounts finished", {
                             isCorrectToken: e === t
                         })
                     });
-                    return t && (0, m.transitionTo)(T.Routes.ME), i
+                    return t && (0, g.transitionTo)(S.Routes.ME), i
                 },
                 verifySSOToken() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T.Routes.DEFAULT_LOGGED_OUT;
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S.Routes.DEFAULT_LOGGED_OUT;
                     return l.default.get({
-                        url: T.Endpoints.ME,
+                        url: S.Endpoints.ME,
                         oldFormErrors: !0
-                    }).catch(() => N(e))
+                    }).catch(() => y(e))
                 },
                 verify(e) {
-                    null != e ? v.default.post({
-                        url: T.Endpoints.VERIFY,
+                    null != e ? p.default.post({
+                        url: S.Endpoints.VERIFY,
                         body: {
                             token: e
                         },
@@ -24007,8 +24006,8 @@
                 },
                 async authorizePayment(e) {
                     try {
-                        await v.default.post({
-                            url: T.Endpoints.AUTHORIZE_PAYMENT,
+                        await p.default.post({
+                            url: S.Endpoints.AUTHORIZE_PAYMENT,
                             body: {
                                 token: e
                             },
@@ -24035,8 +24034,8 @@
                         return
                     }
                     try {
-                        await v.default.post({
-                            url: T.Endpoints.AUTHORIZE_IP,
+                        await p.default.post({
+                            url: S.Endpoints.AUTHORIZE_IP,
                             body: {
                                 token: e
                             },
@@ -24054,8 +24053,8 @@
                         })
                     }
                 },
-                verifyResend: () => v.default.post({
-                    url: T.Endpoints.VERIFY_RESEND,
+                verifyResend: () => p.default.post({
+                    url: S.Endpoints.VERIFY_RESEND,
                     oldFormErrors: !0,
                     trackedActionData: {
                         event: a.NetworkActionNames.USER_VERIFY_RESEND
@@ -24070,11 +24069,11 @@
                             password: t,
                             source: n
                         },
-                        s = u.default.get(T.DEVICE_TOKEN),
-                        r = (0, I.getDevicePushProvider)();
+                        s = u.default.get(S.DEVICE_TOKEN),
+                        r = (0, T.getDevicePushProvider)();
                     null != r && null != s && (i.push_provider = r, i.push_token = s);
-                    let o = u.default.get(T.DEVICE_VOIP_TOKEN);
-                    null != I.DEVICE_PUSH_VOIP_PROVIDER && null != o && (i.push_voip_provider = I.DEVICE_PUSH_VOIP_PROVIDER, i.push_voip_token = o);
+                    let o = u.default.get(S.DEVICE_VOIP_TOKEN);
+                    null != T.DEVICE_PUSH_VOIP_PROVIDER && null != o && (i.push_voip_provider = T.DEVICE_PUSH_VOIP_PROVIDER, i.push_voip_token = o);
                     try {
                         let {
                             body: {
@@ -24086,8 +24085,8 @@
                                 backup: o,
                                 totp: l
                             }
-                        } = await v.default.post({
-                            url: T.Endpoints.RESET_PASSWORD,
+                        } = await p.default.post({
+                            url: S.Endpoints.RESET_PASSWORD,
                             body: i,
                             oldFormErrors: !0,
                             trackedActionData: {
@@ -24122,8 +24121,8 @@
                     d.default.dispatch({
                         type: "LOGIN_MFA"
                     });
-                    let l = await v.default.post({
-                        url: T.Endpoints.RESET_PASSWORD,
+                    let l = await p.default.post({
+                        url: S.Endpoints.RESET_PASSWORD,
                         body: {
                             code: n,
                             ticket: i,
@@ -24147,8 +24146,8 @@
                         type: "FORGOT_PASSWORD_REQUEST"
                     });
                     try {
-                        await v.default.post({
-                            url: T.Endpoints.FORGOT_PASSWORD,
+                        await p.default.post({
+                            url: S.Endpoints.FORGOT_PASSWORD,
                             body: {
                                 login: e
                             },
@@ -24162,7 +24161,7 @@
                     } catch (n) {
                         let e = new c.V6OrEarlierAPIError(n),
                             t = e.code;
-                        throw t === T.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
+                        throw t === S.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
                             type: "LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION"
                         }) : d.default.dispatch({
                             type: "LOGIN_FAILURE",
@@ -24182,18 +24181,18 @@
                         withGuildExperiments: e
                     })
                 },
-                getLocationMetadata: () => null != A ? A : (clearTimeout(i), i = setTimeout(() => {
+                getLocationMetadata: () => null != C ? C : (clearTimeout(i), i = setTimeout(() => {
                     d.default.dispatch({
                         type: "SET_CONSENT_REQUIRED",
                         consentRequired: !0
                     })
-                }, 5e3), A = l.default.get({
-                    url: T.Endpoints.AUTH_LOCATION_METADATA,
+                }, 5e3), C = l.default.get({
+                    url: S.Endpoints.AUTH_LOCATION_METADATA,
                     retries: 2,
                     oldFormErrors: !0
                 }).then(e => {
                     var t, n, s, r, a;
-                    if (clearTimeout(i), null == p.default.getAuthenticationConsentRequired()) {
+                    if (clearTimeout(i), null == E.default.getAuthenticationConsentRequired()) {
                         let t = null === (r = null == e ? void 0 : null === (s = e.body) || void 0 === s ? void 0 : s.consent_required) || void 0 === r || r;
                         d.default.dispatch({
                             type: "SET_CONSENT_REQUIRED",
@@ -24203,7 +24202,7 @@
                     if (d.default.dispatch({
                             type: "SET_LOCATION_METADATA",
                             countryCode: null !== (a = null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.country_code) && void 0 !== a ? a : void 0
-                        }), A = null, (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.promotional_email_opt_in) != null) {
+                        }), C = null, (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.promotional_email_opt_in) != null) {
                         let t = e.body.promotional_email_opt_in;
                         (0, f.setPromoEmailConsentState)({
                             required: t.required,
@@ -24215,7 +24214,7 @@
                     clearTimeout(i), d.default.dispatch({
                         type: "SET_CONSENT_REQUIRED",
                         consentRequired: !0
-                    }), A = null
+                    }), C = null
                 })),
                 closeSuspendedUser() {
                     d.default.dispatch({
@@ -75771,643 +75770,6 @@
                 }
             }
         },
-        776502: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getInvalidMFACodeError: function() {
-                    return o
-                },
-                openMFAModal: function() {
-                    return d
-                }
-            }), n("70102"), n("581081");
-            var i = n("872717"),
-                s = n("695501"),
-                r = n("49111"),
-                a = n("782340");
-
-            function o(e) {
-                let t = a.default.Messages.MFA_V2_INVALID_CODE;
-                switch (e) {
-                    case "webauthn":
-                        t = a.default.Messages.MFA_V2_INVALID_WEBAUTHN;
-                        break;
-                    case "password":
-                        t = a.default.Messages.MFA_V2_INVALID_PASSWORD
-                }
-                return t
-            }
-
-            function l(e, t) {
-                if (null == t || null == t.code) return null;
-                switch (t.code) {
-                    case r.AbortCodes.MFA_INVALID_CODE:
-                        return o(e);
-                    case r.AbortCodes.STAFF_REQUIRED:
-                        return a.default.Messages.MFA_REQUIRED_FOR_STAFF;
-                    case r.AbortCodes.MFA_REQUIRED:
-                    case r.AbortCodes.MFA_REQUIRED_FOR_CREATOR_MONETIZATION:
-                        var n;
-                        return null !== (n = t.message) && void 0 !== n ? n : a.default.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR;
-                    default:
-                        return a.default.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR
-                }
-            }
-            async function u(e) {
-                let {
-                    ticket: t,
-                    mfaType: n,
-                    data: s
-                } = e, a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 2;
-                try {
-                    let e = await i.default.post({
-                        url: r.Endpoints.FINISH_MFA_CHECK,
-                        body: {
-                            ticket: t,
-                            mfa_type: n,
-                            data: s
-                        },
-                        retries: a
-                    });
-                    return e.body
-                } catch (t) {
-                    let e = l(n, t.body);
-                    throw null != e ? Error(e) : t
-                }
-            }
-
-            function d(e, t, i) {
-                let r = async e => {
-                    let n = await u(e),
-                        i = {
-                            "X-Discord-MFA-Authorization": n.token
-                        };
-                    return new Promise((n, s) => {
-                        t(i, (t, i, r) => {
-                            let a = l(e.mfaType, t.body);
-                            return null != a ? (s(Error(a)), !0) : (n(), !1)
-                        })
-                    })
-                };
-                e.methods = e.methods.filter(e => Object.hasOwn(s.SELECT_NAMES, e.type)), n("24287").openMFAModal(e, r, i)
-            }
-        },
-        695501: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                SELECT_NAMES: function() {
-                    return s
-                }
-            });
-            var i = n("782340");
-            let s = {
-                get webauthn() {
-                    return i.default.Messages.MFA_V2_WEBAUTHN_NAME
-                },
-                get totp() {
-                    return i.default.Messages.MFA_V2_TOTP_NAME
-                },
-                get sms() {
-                    return i.default.Messages.MFA_V2_SMS_NAME
-                },
-                get password() {
-                    return i.default.Messages.MFA_V2_PASSWORD_NAME
-                },
-                get backup() {
-                    return i.default.Messages.MFA_V2_BACKUP_NAME
-                }
-            }
-        },
-        24287: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                MFAModal: function() {
-                    return R
-                },
-                MFASlides: function() {
-                    return O
-                },
-                openMFAModal: function() {
-                    return D
-                }
-            }), n("222007"), n("781738"), n("506083"), n("70102");
-            var i = n("37983"),
-                s = n("884691"),
-                r = n("376507"),
-                a = n("872717"),
-                o = n("77078"),
-                l = n("145131"),
-                u = n("772280"),
-                d = n("773336"),
-                c = n("286235"),
-                f = n("50885"),
-                _ = n("695501"),
-                h = n("49111"),
-                g = n("782340"),
-                m = n("992279");
-
-            function E(e) {
-                let {
-                    subtitle: t,
-                    onClose: n
-                } = e;
-                return (0, i.jsxs)(o.ModalHeader, {
-                    direction: l.default.Direction.VERTICAL,
-                    className: m.header,
-                    separator: !1,
-                    children: [(0, i.jsx)(o.Heading, {
-                        variant: "heading-xl/semibold",
-                        children: g.default.Messages.MFA_V2_HEADER
-                    }), null != t && (0, i.jsx)(o.Text, {
-                        color: "header-secondary",
-                        variant: "text-md/normal",
-                        className: m.subtitle,
-                        children: t
-                    }), (0, i.jsx)(o.ModalCloseButton, {
-                        className: m.closeButton,
-                        onClick: n
-                    })]
-                })
-            }
-
-            function p(e) {
-                let {
-                    children: t
-                } = e;
-                return (0, i.jsx)(o.ModalContent, {
-                    className: m.content,
-                    children: t
-                })
-            }
-
-            function v(e) {
-                let {
-                    error: t
-                } = e;
-                return null == t ? null : (0, i.jsx)(o.Text, {
-                    className: m.error,
-                    variant: "text-sm/normal",
-                    color: "text-danger",
-                    children: t
-                })
-            }
-
-            function S(e) {
-                let {
-                    request: t,
-                    setSlide: n,
-                    showConfirm: s = !1,
-                    ...r
-                } = e, a = t.methods.length > 1;
-                return a || s ? (0, i.jsxs)(o.ModalFooter, {
-                    className: m.footer,
-                    direction: s && !a ? l.default.Direction.HORIZONTAL_REVERSE : l.default.Direction.HORIZONTAL,
-                    children: [a && (0, i.jsx)(o.Button, {
-                        look: o.Button.Looks.LINK,
-                        onClick: () => n("select"),
-                        color: o.Button.Colors.PRIMARY,
-                        children: g.default.Messages.MFA_V2_GO_TO_SELECT
-                    }), s && (0, i.jsx)(o.Button, {
-                        type: "submit",
-                        ...r,
-                        children: g.default.Messages.CONFIRM
-                    })]
-                }) : null
-            }
-
-            function T(e) {
-                let {
-                    request: t,
-                    setSlide: n,
-                    onClose: s
-                } = e;
-                return (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(E, {
-                        subtitle: g.default.Messages.MFA_V2_SELECT_HEADER,
-                        onClose: s
-                    }), (0, i.jsx)(p, {
-                        children: t.methods.map(e => (0, i.jsxs)(o.Clickable, {
-                            className: m.listItemContainer,
-                            onClick: () => {
-                                n(e.type)
-                            },
-                            children: [(0, i.jsx)(o.Text, {
-                                className: m.listItemText,
-                                variant: "text-md/semibold",
-                                children: _.SELECT_NAMES[e.type]
-                            }), (0, i.jsx)(u.default, {
-                                width: 20,
-                                height: 20,
-                                className: m.listItemArrow
-                            })]
-                        }, e.type))
-                    })]
-                })
-            }
-
-            function I(e) {
-                let {
-                    request: t,
-                    finish: n,
-                    setSlide: a,
-                    onClose: l
-                } = e, [u, _] = s.useState(!1), [m, T] = s.useState(null), {
-                    challenge: I
-                } = t.methods.find(e => "webauthn" === e.type), C = async () => {
-                    _(!0), T(null);
-                    let e = d.isPlatformEmbedded && f.default.supportsFeature(h.NativeFeatures.WEBAUTHN) ? f.default.webAuthnAuthenticate(I) : r.get(JSON.parse(I)).then(e => JSON.stringify(e)),
-                        t = async e => {
-                            try {
-                                await n({
-                                    mfaType: "webauthn",
-                                    data: e
-                                })
-                            } catch (e) {
-                                var t;
-                                T(null !== (t = e.message) && void 0 !== t ? t : g.default.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR)
-                            }
-                        };
-                    try {
-                        let n = await e;
-                        await t(n)
-                    } catch (e) {
-                        c.default.captureException(e), T(g.default.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR)
-                    } finally {
-                        _(!1)
-                    }
-                };
-                return (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(E, {
-                        onClose: l
-                    }), (0, i.jsxs)(p, {
-                        children: [(0, i.jsx)(o.Button, {
-                            submitting: u,
-                            onClick: C,
-                            children: g.default.Messages.MFA_V2_WEBAUTHN_CTA
-                        }), (0, i.jsx)(v, {
-                            error: m
-                        })]
-                    }), (0, i.jsx)(S, {
-                        request: t,
-                        setSlide: a
-                    })]
-                })
-            }
-
-            function C(e) {
-                let {
-                    request: t,
-                    finish: n,
-                    setSlide: r,
-                    onClose: a,
-                    isSlideReady: l
-                } = e, [u, d] = s.useState(!1), [c, f] = s.useState(null), [_, h] = s.useState(""), m = s.useRef(null), T = g.default.Messages.TWO_FA_ENTER_BACKUP_LABEL, I = g.default.Messages.TWO_FA_BACKUP_CODE, C = s.useCallback(e => {
-                    h(e), f(null)
-                }, [h, f]);
-                return s.useEffect(() => {
-                    if (l) {
-                        var e;
-                        null === (e = m.current) || void 0 === e || e.focus()
-                    }
-                }, [l]), (0, i.jsxs)("form", {
-                    onSubmit: e => {
-                        e.preventDefault(), d(!0), n({
-                            mfaType: "backup",
-                            data: _.replace(/-/g, "")
-                        }).catch(e => {
-                            var t, n;
-                            f(null !== (n = e.message) && void 0 !== n ? n : null === (t = e.body) || void 0 === t ? void 0 : t.message)
-                        }).finally(() => {
-                            d(!1)
-                        })
-                    },
-                    children: [(0, i.jsx)(E, {
-                        onClose: a
-                    }), (0, i.jsx)(p, {
-                        children: (0, i.jsxs)(o.FormItem, {
-                            title: T,
-                            children: [(0, i.jsx)(o.TextInput, {
-                                inputRef: m,
-                                onChange: C,
-                                placeholder: I,
-                                maxLength: 9,
-                                minLength: 8,
-                                value: _,
-                                spellCheck: "false",
-                                disabled: u
-                            }), (0, i.jsx)(v, {
-                                error: c
-                            })]
-                        })
-                    }), (0, i.jsx)(S, {
-                        request: t,
-                        setSlide: r,
-                        showConfirm: !0,
-                        disabled: _.length < 8,
-                        submitting: u
-                    })]
-                })
-            }
-
-            function A(e) {
-                let {
-                    request: t,
-                    finish: n,
-                    setSlide: r,
-                    onClose: a,
-                    isSlideReady: l
-                } = e, [u, d] = s.useState(!1), [c, f] = s.useState(null), [_, h] = s.useState(""), m = s.useRef(null);
-                return s.useEffect(() => {
-                    if (l) {
-                        var e;
-                        null === (e = m.current) || void 0 === e || e.focus()
-                    }
-                }, [l]), (0, i.jsxs)("form", {
-                    onSubmit: e => {
-                        e.preventDefault(), d(!0), n({
-                            mfaType: "totp",
-                            data: _
-                        }).catch(e => {
-                            var t, n;
-                            f(null !== (n = e.message) && void 0 !== n ? n : null === (t = e.body) || void 0 === t ? void 0 : t.message)
-                        }).finally(() => {
-                            d(!1)
-                        })
-                    },
-                    children: [(0, i.jsx)(E, {
-                        onClose: a
-                    }), (0, i.jsx)(p, {
-                        children: (0, i.jsxs)(o.FormItem, {
-                            title: g.default.Messages.TWO_FA_ENTER_TOKEN_NO_BACKUP_LABEL,
-                            children: [(0, i.jsx)(o.TextInput, {
-                                inputRef: m,
-                                onChange: h,
-                                placeholder: g.default.Messages.TWO_FA_AUTH_CODE_NO_BACKUP,
-                                maxLength: 6,
-                                minLength: 6,
-                                value: _,
-                                autoComplete: "one-time-code",
-                                spellCheck: "false",
-                                disabled: u
-                            }), (0, i.jsx)(v, {
-                                error: c
-                            })]
-                        })
-                    }), (0, i.jsx)(S, {
-                        request: t,
-                        setSlide: r,
-                        showConfirm: !0,
-                        disabled: 0 === _.length,
-                        submitting: u
-                    })]
-                })
-            }
-
-            function y(e) {
-                let {
-                    request: t,
-                    finish: n,
-                    setSlide: r,
-                    onClose: l,
-                    isSlideReady: u
-                } = e, [d, c] = s.useState(!1), [f, _] = s.useState(null), [T, I] = s.useState(!1), [C, A] = s.useState(null), [y, N] = s.useState(""), R = s.useRef(null);
-                s.useEffect(() => {
-                    c(!0), a.default.post({
-                        url: h.Endpoints.LOGIN_SMS_SEND,
-                        body: {
-                            ticket: t.ticket
-                        },
-                        oldFormErrors: !0
-                    }).then(e => {
-                        _(e.body.phone)
-                    }).catch(e => {
-                        var t;
-                        A(e.message || (null === (t = e.body) || void 0 === t ? void 0 : t.message))
-                    }).finally(() => {
-                        c(!1)
-                    })
-                }, [t.ticket]), s.useEffect(() => {
-                    if (u) {
-                        var e;
-                        null === (e = R.current) || void 0 === e || e.focus()
-                    }
-                }, [u]);
-                let O = null == f ? g.default.Messages.TWO_FA_ENTER_SMS_TOKEN_SENDING : g.default.Messages.TWO_FA_ENTER_SMS_TOKEN_SENT.format({
-                    phoneNumber: f
-                });
-                return (0, i.jsxs)("form", {
-                    onSubmit: e => {
-                        e.preventDefault(), I(!0), n({
-                            mfaType: "sms",
-                            data: y
-                        }).catch(e => {
-                            var t, n;
-                            A(null !== (n = e.message) && void 0 !== n ? n : null === (t = e.body) || void 0 === t ? void 0 : t.message)
-                        }).finally(() => {
-                            I(!1)
-                        })
-                    },
-                    children: [(0, i.jsx)(E, {
-                        subtitle: O,
-                        onClose: l
-                    }), (0, i.jsx)(p, {
-                        children: (0, i.jsxs)(o.FormItem, {
-                            title: g.default.Messages.TWO_FA_ENTER_TOKEN_NO_BACKUP_LABEL,
-                            children: [(0, i.jsxs)("div", {
-                                className: m.smsInputContainer,
-                                children: [(0, i.jsx)(o.TextInput, {
-                                    className: m.smsInput,
-                                    inputRef: R,
-                                    onChange: N,
-                                    placeholder: g.default.Messages.TWO_FA_AUTH_CODE_NO_BACKUP,
-                                    maxLength: 10,
-                                    value: y,
-                                    autoComplete: "one-time-code",
-                                    spellCheck: "false",
-                                    disabled: T
-                                }), (0, i.jsx)(o.Button, {
-                                    size: o.Button.Sizes.MEDIUM,
-                                    submitting: d,
-                                    onClick: () => {
-                                        a.default.post({
-                                            url: h.Endpoints.LOGIN_SMS_SEND,
-                                            body: {
-                                                ticket: t.ticket
-                                            },
-                                            oldFormErrors: !0
-                                        }).then(e => {
-                                            _(e.body.phone)
-                                        }).catch(e => {
-                                            var t;
-                                            A(e.message || (null === (t = e.body) || void 0 === t ? void 0 : t.message))
-                                        })
-                                    },
-                                    children: g.default.Messages.MFA_SMS_RESEND
-                                })]
-                            }), (0, i.jsx)(v, {
-                                error: C
-                            })]
-                        })
-                    }), (0, i.jsx)(S, {
-                        request: t,
-                        setSlide: r,
-                        showConfirm: !0,
-                        disabled: 0 === y.length,
-                        submitting: T
-                    })]
-                })
-            }
-
-            function N(e) {
-                let {
-                    request: t,
-                    finish: n,
-                    setSlide: r,
-                    onClose: a,
-                    isSlideReady: l
-                } = e, [u, d] = s.useState(!1), [c, f] = s.useState(null), [_, h] = s.useState(""), m = s.useRef(null);
-                return s.useEffect(() => {
-                    if (l) {
-                        var e;
-                        null === (e = m.current) || void 0 === e || e.focus()
-                    }
-                }, [l]), (0, i.jsxs)("form", {
-                    onSubmit: e => {
-                        e.preventDefault(), d(!0), n({
-                            mfaType: "password",
-                            data: _
-                        }).catch(e => {
-                            var t, n;
-                            f(null !== (n = e.message) && void 0 !== n ? n : null === (t = e.body) || void 0 === t ? void 0 : t.message)
-                        }).finally(() => {
-                            d(!1)
-                        })
-                    },
-                    children: [(0, i.jsx)(E, {
-                        onClose: a
-                    }), (0, i.jsx)(p, {
-                        children: (0, i.jsxs)(o.FormItem, {
-                            title: g.default.Messages.FORM_LABEL_PASSWORD,
-                            children: [(0, i.jsx)(o.TextInput, {
-                                inputRef: m,
-                                onChange: h,
-                                value: _,
-                                type: "password",
-                                autoComplete: "password",
-                                spellCheck: "false",
-                                disabled: u
-                            }), (0, i.jsx)(v, {
-                                error: c
-                            })]
-                        })
-                    }), (0, i.jsx)(S, {
-                        request: t,
-                        setSlide: r,
-                        showConfirm: !0,
-                        disabled: 0 === _.length,
-                        submitting: u
-                    })]
-                })
-            }
-
-            function R(e) {
-                let {
-                    transitionState: t,
-                    request: n,
-                    finish: s,
-                    onClose: r
-                } = e;
-                return (0, i.jsx)(o.ModalRoot, {
-                    transitionState: t,
-                    size: o.ModalSize.SMALL,
-                    "aria-label": g.default.Messages.MFA_V2_HEADER,
-                    children: (0, i.jsx)(O, {
-                        request: n,
-                        mfaFinish: s,
-                        onClose: r,
-                        onEarlyClose: r
-                    })
-                })
-            }
-
-            function O(e) {
-                var t, n;
-                let {
-                    request: r,
-                    mfaFinish: a,
-                    onEarlyClose: l,
-                    onClose: u,
-                    width: d = 440
-                } = e, [c, f] = s.useState(null !== (n = null === (t = r.methods[0]) || void 0 === t ? void 0 : t.type) && void 0 !== n ? n : "select"), [_, h] = s.useState(c), g = async e => {
-                    let {
-                        mfaType: t,
-                        data: n
-                    } = e;
-                    await a({
-                        mfaType: t,
-                        data: n,
-                        ticket: r.ticket
-                    }), null != u && u()
-                }, m = {
-                    request: r,
-                    finish: g,
-                    setSlide: f,
-                    onClose: l
-                };
-                return (0, i.jsxs)(o.Slides, {
-                    activeSlide: c,
-                    width: d,
-                    onSlideReady: h,
-                    children: [(0, i.jsx)(o.Slide, {
-                        id: "select",
-                        children: (0, i.jsx)(T, {
-                            ...m
-                        })
-                    }), (0, i.jsx)(o.Slide, {
-                        id: "webauthn",
-                        children: (0, i.jsx)(I, {
-                            ...m
-                        })
-                    }), (0, i.jsx)(o.Slide, {
-                        id: "totp",
-                        children: (0, i.jsx)(A, {
-                            ...m,
-                            isSlideReady: "totp" === _
-                        })
-                    }), (0, i.jsx)(o.Slide, {
-                        id: "sms",
-                        children: (0, i.jsx)(y, {
-                            ...m,
-                            isSlideReady: "sms" === _
-                        })
-                    }), (0, i.jsx)(o.Slide, {
-                        id: "backup",
-                        children: (0, i.jsx)(C, {
-                            ...m,
-                            isSlideReady: "backup" === _
-                        })
-                    }), (0, i.jsx)(o.Slide, {
-                        id: "password",
-                        children: (0, i.jsx)(N, {
-                            ...m,
-                            isSlideReady: "password" === _
-                        })
-                    })]
-                })
-            }
-
-            function D(e, t, n) {
-                (0, o.openModal)(n => (0, i.jsx)(R, {
-                    finish: t,
-                    request: e,
-                    ...n
-                }), {
-                    onCloseCallback: () => {
-                        n(Error(g.default.Messages.MFA_V2_CANCELED))
-                    }
-                })
-            }
-        },
         760797: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -117093,7 +116455,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263213"
+                                build_number: "263240"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133214,4 +132576,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.bc1869bdccd80fa4d990.js.map
+//# sourceMappingURL=29278.49d23fa739d82e2a7ae2.js.map
