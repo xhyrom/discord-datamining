@@ -7636,6 +7636,16 @@
                     [a.DARKER]: {
                         raw: "PLUM_13",
                         opacity: 1
+                    },
+                    gradient: {
+                        light: {
+                            color: "BLACK_500",
+                            opacity: .2
+                        },
+                        dark: {
+                            color: "WHITE_500",
+                            opacity: .2
+                        }
                     }
                 },
                 REDESIGN_BUTTON_SECONDARY_PRESSED_BORDER: {
@@ -13673,4 +13683,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.8f1a35d88b40feb18909.js.map
+//# sourceMappingURL=7273.75c700437837a105bf60.js.map
