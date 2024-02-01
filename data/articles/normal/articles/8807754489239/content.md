@@ -1,3 +1,4 @@
+<h3 id="h_01HNH93B0JKTMR3KBWD6PNGWQJ"><span id="docs-internal-guid-717cc9a1-7fff-88af-72cb-d39374b16132" style="color: #434343;">As of January 31, 2024, the claim period for this promotion has ended. If you claimed this promotion and sent it to a friend, make sure your friend redeems their promotion code by February 28, 2024.</span></h3>
 <p>From <strong>December 20, 2023</strong> to <strong>January 31, 2024</strong>, Discord Nitro members will be able to give a friend 1 trial month of Xbox PC Game Pass!</p>
 <p><strong>Promotion Summary</strong></p>
 <p><strong>Offer Details:</strong> 1 month of Xbox PC Game Pass that a Discord Nitro member can give to a buddy!</p>
