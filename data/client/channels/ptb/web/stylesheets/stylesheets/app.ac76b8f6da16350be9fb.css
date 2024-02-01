@@ -18871,8 +18871,6 @@ html .progress__4ef76 {
 @value responsiveWidthMobileFirst from '../../../../uikit/auth/WaveSplash.module.css';
 
 .downloadApps__30ed7 {
-    background-color: var(--white-500) !important;
-    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high) !important;
     border-radius: 5px;
     justify-content: center;
     display: flex;
@@ -18899,27 +18897,18 @@ html .progress__4ef76 {
 .header__01af9 {
     align-items: center;
     text-align: center;
-    margin-bottom: 32px;
-    color: #060607
+    margin-bottom: 32px
 }
 
 .footer__49ae9 {
     text-align: center;
-    margin-top: 32px;
-    color: #2e3338
+    margin-top: 32px
 }
 
 .footer__49ae9 a {
-    color: #0068e0;
     -webkit-text-decoration: none;
     text-decoration: none;
     cursor: pointer
-}
-
-@supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
-    .footer__49ae9 a {
-        color: hsl(212 calc(100%*var(--saturation-factor, 1))43.9%)
-    }
 }
 
 .footer__49ae9 a:hover {
@@ -18943,7 +18932,7 @@ html .progress__4ef76 {
 .platform__97f9e {
     transition: all.3s ease-in-out;
     backface-visibility: hidden;
-    border: 2px solid#747f8d;
+    border: 2px solid var(--background-accent);
     padding: 32px 12px 12px;
     position: relative;
     display: flex;
@@ -18978,7 +18967,6 @@ html .progress__4ef76 {
 }
 
 .platformName__31348 {
-    color: #060607;
     text-align: center
 }
 
@@ -19058,7 +19046,7 @@ html .progress__4ef76 {
 
 .downloadButton__87489 {
     transition: background-color.3s ease-in-out;
-    background-color: #747f8d;
+    background-color: var(--background-accent);
     text-align: center;
     border-radius: 3px;
     font-weight: 500;
@@ -19069,15 +19057,14 @@ html .progress__4ef76 {
     flex-grow: 1
 }
 
+.downloadButton__87489 .low-saturation .downloadButton__87489 {
+    color: var(--white-500)
+}
+
 .modalCloseButton_d8f980 {
-    color: #4f5660;
     position: absolute;
     top: 12px;
     right: 12px
-}
-
-.modalCloseButton_d8f980:hover {
-    color: #2e3338
 }
 
 @media(max-width:486px) {
@@ -127593,4 +127580,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ad8029ce970ec90a44fd.css.map*/
+/*# sourceMappingURL=app.ac76b8f6da16350be9fb.css.map*/
