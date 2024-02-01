@@ -63446,7 +63446,7 @@
                         sentry: !0,
                         immediate: !1
                     };
-                    U.error("resetSocketOnError", e.stack);
+                    U.error("resetSocketOnError during ".concat(t, ": ").concat(e.message), e.stack);
                     let i = null != e.message && e.message.indexOf("Guild data was missing from store") >= 0;
                     g.default.increment({
                         name: u.MetricEvents.SOCKET_CRASHED,
@@ -63455,6 +63455,10 @@
                         tags: {
                             socketCrashedAction: t
                         }
+                    }), p.default.track(M.AnalyticEvents.GATEWAY_SOCKET_RESET, {
+                        error_message: e.message,
+                        error_stack: e.stack,
+                        action: t
                     }), this._cleanup(e => e.close()), this._reset(!0, 1e3, "Resetting socket due to error."), this.dispatcher.clear(), this.connectionState = C.default.WILL_RECONNECT, this.dispatchExceptionBackoff.cancel(), 0 === this.dispatchExceptionBackoff._fails && n.immediate ? (U.verbose("Triggering fast reconnect"), this.dispatchExceptionBackoff.fail(() => {}), setTimeout(() => this._connect(), 0)) : this.dispatchExceptionBackoff.fail(() => this._connect()), this.didForceClearGuildHashes = !0, f.default.dispatch({
                         type: "CLEAR_GUILD_CACHE"
                     }), clearTimeout(this.dispatchSuccessTimer), this.dispatchSuccessTimer = setTimeout(() => this.dispatchExceptionBackoff.succeed(), 2 * F)
@@ -117089,7 +117093,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263189"
+                                build_number: "263201"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133210,4 +133214,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.e9d0827039e5da2b4dc1.js.map
+//# sourceMappingURL=29278.4872e6420a72370d79a3.js.map
