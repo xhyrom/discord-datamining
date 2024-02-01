@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["42266"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -74115,6 +74115,13 @@
                         enabled: !0,
                         fullname: "bandwidth_estimation/trendline-window-duration-7500,robust-estimator/trendline-window-duration-7500,robust-estimator"
                     }
+                }, {
+                    id: 24,
+                    label: "Sender + Worker: Trendline Window Duration 3750ms + Robust Estimator + RC Link Capacity Fix (Worker-only)",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,rate-control-link-capacity-fix"
+                    }
                 }]
             });
             var r = {
@@ -80709,18 +80716,15 @@
         },
         133335: function(e, t, n) {
             "use strict";
-            var i, s, r, a, o, l;
+            var i, s, r, a;
             n.r(t), n.d(t, {
                 ReadStateTypes: function() {
                     return i
                 },
                 UnreadSetting: function() {
                     return s
-                },
-                UnreadMode: function() {
-                    return r
                 }
-            }), (a = i || (i = {}))[a.CHANNEL = 0] = "CHANNEL", a[a.GUILD_EVENT = 1] = "GUILD_EVENT", a[a.NOTIFICATION_CENTER = 2] = "NOTIFICATION_CENTER", a[a.GUILD_HOME = 3] = "GUILD_HOME", a[a.GUILD_ONBOARDING_QUESTION = 4] = "GUILD_ONBOARDING_QUESTION", (o = s || (s = {}))[o.UNSET = 0] = "UNSET", o[o.ALL_MESSAGES = 1] = "ALL_MESSAGES", o[o.ONLY_MENTIONS = 2] = "ONLY_MENTIONS", (l = r || (r = {}))[l.IMPORTANT = 0] = "IMPORTANT", l[l.LESS_IMPORTANT = 1] = "LESS_IMPORTANT", l[l.NONE = 2] = "NONE"
+            }), (r = i || (i = {}))[r.CHANNEL = 0] = "CHANNEL", r[r.GUILD_EVENT = 1] = "GUILD_EVENT", r[r.NOTIFICATION_CENTER = 2] = "NOTIFICATION_CENTER", r[r.GUILD_HOME = 3] = "GUILD_HOME", r[r.GUILD_ONBOARDING_QUESTION = 4] = "GUILD_ONBOARDING_QUESTION", (a = s || (s = {}))[a.UNSET = 0] = "UNSET", a[a.ALL_MESSAGES = 1] = "ALL_MESSAGES", a[a.ONLY_MENTIONS = 2] = "ONLY_MENTIONS"
         },
         256572: function(e, t, n) {
             "use strict";
@@ -94802,7 +94806,7 @@
                     let t = e.isThread() ? o.default.isMuted(e.id) || E.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : E.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id);
                     if (t) return !1
                 }
-                return !(!e.isPrivate() && (D(e, t, (0, r.isOptInEnabledForGuild)(e.guild_id)) || !_.default.can(e.accessPermissions, e))) && (t > 0 || E.default.getChannelUnreadMode(e) === T.UnreadMode.IMPORTANT)
+                return !(!e.isPrivate() && (D(e, t, (0, r.isOptInEnabledForGuild)(e.guild_id)) || !_.default.can(e.accessPermissions, e))) && (t > 0 || E.default.resolveUnreadSetting(e) === T.UnreadSetting.ALL_MESSAGES)
             }
 
             function b(e) {
@@ -94902,7 +94906,7 @@
                         if (m || g) {
                             let e = function(e, t, n) {
                                 if ((0, u.isGuildVocalChannelType)(e.type) && 0 === t || !_.default.canBasicChannel((0, u.getBasicAccessPermissions)(e.type), e) || D(e, t, n)) return !1;
-                                return !("flags" in e && e.hasFlag(S.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || E.default.getChannelUnreadMode(e) === T.UnreadMode.IMPORTANT)
+                                return !("flags" in e && e.hasFlag(S.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || E.default.resolveUnreadSetting(e) === T.UnreadSetting.ALL_MESSAGES)
                             }(n, o, d);
                             e && (m && (i.unreadByType[T.ReadStateTypes.CHANNEL] = !0, i.unreadChannelId = t), g && (i.mentionCount += o, i.mentionCounts[n.id] = o))
                         }
@@ -105061,7 +105065,7 @@
                     return this.getMessageNotifications(e.guild_id)
                 }
                 resolveUnreadSetting(e) {
-                    if (c.THREAD_CHANNEL_TYPES.has(e.type) || (0, c.isPrivate)(e.type)) return p.UnreadSetting.ALL_MESSAGES;
+                    if (c.THREAD_CHANNEL_TYPES.has(e.type) || (0, c.isPrivate)(e.type) || !K()) return p.UnreadSetting.ALL_MESSAGES;
                     let t = this.getChannelUnreadSetting(e.guild_id, e.id);
                     if (t !== p.UnreadSetting.UNSET) return t;
                     if (null != e.parent_id) {
@@ -105171,6 +105175,7 @@
                     return C
                 }
                 getGuildUnreadSetting(e) {
+                    if (!K()) return p.UnreadSetting.ALL_MESSAGES;
                     let t = this.getGuildFlags(e);
                     return f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : p.UnreadSetting.UNSET
                 }
@@ -105178,18 +105183,12 @@
                     let t = this.getGuildFlags(e.id);
                     return !K() || f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : e.defaultMessageNotifications === m.UserNotificationSettings.ALL_MESSAGES ? p.UnreadSetting.ALL_MESSAGES : p.UnreadSetting.ONLY_MENTIONS
                 }
-                getGuildUnreadMode(e) {
-                    return this.isMuted(e.id) ? p.UnreadMode.NONE : this.resolveGuildUnreadSetting(e) === p.UnreadSetting.ALL_MESSAGES ? p.UnreadMode.IMPORTANT : p.UnreadMode.LESS_IMPORTANT
-                }
                 getChannelRecordUnreadSetting(e) {
                     return this.getChannelUnreadSetting(e.guild_id, e.id)
                 }
                 getChannelUnreadSetting(e, t) {
                     let n = this.getChannelIdFlags(e, t);
                     return f.hasFlag(n, v.ChannelNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(n, v.ChannelNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : p.UnreadSetting.UNSET
-                }
-                getChannelUnreadMode(e) {
-                    return c.THREAD_CHANNEL_TYPES.has(e.type) ? d.default.isMuted(e.id) ? p.UnreadMode.NONE : p.UnreadMode.IMPORTANT : this.getMutedChannels(e.guild_id).has(e.id) ? p.UnreadMode.NONE : (0, c.isPrivate)(e.type) || !K() ? p.UnreadMode.IMPORTANT : this.resolveUnreadSetting(e) === p.UnreadSetting.ALL_MESSAGES ? p.UnreadMode.IMPORTANT : p.UnreadMode.LESS_IMPORTANT
                 }
             }
             z.displayName = "UserGuildSettingsStore", z.persistKey = "collapsedGuilds", z.migrations = [e => ({
@@ -117089,7 +117088,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262981"
+                                build_number: "263046"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133210,4 +133209,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.82c21247a83b8f33de5d.js.map
+//# sourceMappingURL=42266.e20490d26aab32b0d7b9.js.map
