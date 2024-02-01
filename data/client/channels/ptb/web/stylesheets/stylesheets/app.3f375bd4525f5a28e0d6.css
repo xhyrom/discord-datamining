@@ -40531,16 +40531,92 @@ html .progress__4ef76 {
 }
 
 .popout__4c91f {
+    position: relative;
     background-color: var(--background-secondary-alt);
     border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px
+}
+
+.popoutBackground__41448 {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: url(/assets/053ece9d4d0e004f1c47.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    transform: scalex(-1);
+    background-size: auto 76px
+}
+
+.onboarding_b57adf {
+    padding: 4px;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    max-width: 192px;
+    max-width: 180px;
+    flex: 1
+}
+
+.title__0b95c {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px
+}
+
+.helpText_f5fa4f {
+    flex: 1
+}
+
+.newBadge__6e04c {
+    background-color: var(--brand)
+}
+
+.iconGroup_bde68b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px
+}
+
+.statusIcon__0e5ad {
+    height: 40px;
+    width: 40px
+}
+
+.avatarWrapper__2f7aa {
+    position: relative
+}
+
+.avatar__84f00 {
+    border-radius: 50%
+}
+
+.outline_af365c {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-sizing: border-box
+}
+
+.options_e65393 {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 12px
+    max-width: 192px
 }
 
 .iconsContainer__44b35 {
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -127300,4 +127376,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1068a7592f0a76ae9688.css.map*/
+/*# sourceMappingURL=app.3f375bd4525f5a28e0d6.css.map*/
