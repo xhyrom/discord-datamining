@@ -18170,7 +18170,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262981", ", Version Hash: ").concat("e8dfccdf8ef930ba6e22eec3e92410f5d382663a")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263046", ", Version Hash: ").concat("e8f1f3a4787162d4f46e899fa01dbf545921a674")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20414,8 +20414,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "262981", "262981"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262981")), _ = 0), _
+                let _ = parseInt((e = "263046", "263046"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263046")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -33229,6 +33229,9 @@
                             case 22:
                                 o.hideLegacyUsername = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.hideLegacyUsername);
                                 break;
+                            case 23:
+                                o.inappropriateConversationWarnings = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.inappropriateConversationWarnings);
+                                break;
                             default:
                                 let n = E.readUnknownField;
                                 if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -33259,7 +33262,7 @@
                         for (let E = 0; E < e.messageRequestRestrictedGuildIds.length; E++) _.fixed64(e.messageRequestRestrictedGuildIds[E]);
                         _.join()
                     }
-                    e.defaultMessageRequestRestricted && h.BoolValue.internalBinaryWrite(e.defaultMessageRequestRestricted, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.dropsOptedOut && h.BoolValue.internalBinaryWrite(e.dropsOptedOut, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.nonSpamRetrainingOptIn && h.BoolValue.internalBinaryWrite(e.nonSpamRetrainingOptIn, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabled && h.BoolValue.internalBinaryWrite(e.familyCenterEnabled, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabledV2 && h.BoolValue.internalBinaryWrite(e.familyCenterEnabledV2, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.hideLegacyUsername && h.BoolValue.internalBinaryWrite(e.hideLegacyUsername, _.tag(22, M.WireType.LengthDelimited).fork(), E).join();
+                    e.defaultMessageRequestRestricted && h.BoolValue.internalBinaryWrite(e.defaultMessageRequestRestricted, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.dropsOptedOut && h.BoolValue.internalBinaryWrite(e.dropsOptedOut, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.nonSpamRetrainingOptIn && h.BoolValue.internalBinaryWrite(e.nonSpamRetrainingOptIn, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabled && h.BoolValue.internalBinaryWrite(e.familyCenterEnabled, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabledV2 && h.BoolValue.internalBinaryWrite(e.familyCenterEnabledV2, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.hideLegacyUsername && h.BoolValue.internalBinaryWrite(e.hideLegacyUsername, _.tag(22, M.WireType.LengthDelimited).fork(), E).join(), e.inappropriateConversationWarnings && h.BoolValue.internalBinaryWrite(e.inappropriateConversationWarnings, _.tag(23, M.WireType.LengthDelimited).fork(), E).join();
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
@@ -33366,6 +33369,11 @@
                     }, {
                         no: 22,
                         name: "hide_legacy_username",
+                        kind: "message",
+                        T: () => h.BoolValue
+                    }, {
+                        no: 23,
+                        name: "inappropriate_conversation_warnings",
                         kind: "message",
                         T: () => h.BoolValue
                     }])
@@ -35703,4 +35711,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.c8e118e8a461ac96153e.js.map
+//# sourceMappingURL=90486.9c524d7544ec544be2c1.js.map
