@@ -6828,12 +6828,12 @@
             }
             let t6 = ["name", "type", "startTime", "transferSize", "duration"];
 
-            function t4(t) {
+            function t7(t) {
                 return function(e) {
                     return t6.every(n => t[n] === e[n])
                 }
             }
-            class t7 extends Error {
+            class t4 extends Error {
                 constructor() {
                     super("Event buffer exceeded maximum size of ".concat(2e7, "."))
                 }
@@ -6853,7 +6853,7 @@
                 }
                 async addEvent(t) {
                     let e = JSON.stringify(t).length;
-                    if (this._totalSize += e, this._totalSize > 2e7) throw new t7;
+                    if (this._totalSize += e, this._totalSize > 2e7) throw new t4;
                     this.events.push(t)
                 }
                 finish() {
@@ -6944,7 +6944,7 @@
                     let e = tV(t.timestamp);
                     (!this._earliestTimestamp || e < this._earliestTimestamp) && (this._earliestTimestamp = e);
                     let n = JSON.stringify(t);
-                    return (this._totalSize += n.length, this._totalSize > 2e7) ? Promise.reject(new t7) : this._sendEventToWorker(n)
+                    return (this._totalSize += n.length, this._totalSize > 2e7) ? Promise.reject(new t4) : this._sendEventToWorker(n)
                 }
                 finish() {
                     return this._finishRequest()
@@ -7137,7 +7137,7 @@
                     if (!i) return;
                     return await t.eventBuffer.addEvent(i)
                 } catch (r) {
-                    let e = r && r instanceof t7 ? "addEventSizeExceeded" : "addEvent";
+                    let e = r && r instanceof t4 ? "addEventSizeExceeded" : "addEvent";
                     ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && k.logger.error(r), await t.stop(e);
                     let n = (0, T.getCurrentHub)().getClient();
                     n && n.recordDroppedEvent("internal_sdk_error", "replay")
@@ -8457,7 +8457,7 @@
                                         return
                                     }
                                     if ("navigation" === t.entryType) {
-                                        t.duration > 0 && !n.find(t4(t)) && !s.find(t4(t)) && s.push(t);
+                                        t.duration > 0 && !n.find(t7(t)) && !s.find(t7(t)) && s.push(t);
                                         return
                                     }
                                     a.push(t)
@@ -8942,7 +8942,7 @@
                     return a
                 }
             }), n("222007"), n("70102");
-            var r = n("106145"),
+            var r = n("825167"),
                 i = n("768538");
 
             function a(t, e) {
@@ -9012,7 +9012,7 @@
                     return l
                 }
             }), n("808653"), n("222007");
-            var r = n("106145"),
+            var r = n("825167"),
                 i = n("587254");
             let a = "baggage",
                 s = "sentry-",
@@ -9077,7 +9077,7 @@
                     return s
                 }
             }), n("424973");
-            var r = n("106145"),
+            var r = n("825167"),
                 i = n("232945");
             let a = (0, i.getGlobalObject)();
 
@@ -9681,7 +9681,7 @@
                 s = n("933029"),
                 o = n("232945"),
                 c = n("78672"),
-                l = n("106145"),
+                l = n("825167"),
                 u = n("587254"),
                 d = n("648473"),
                 h = n("365504"),
@@ -9713,7 +9713,7 @@
                     return m
                 }
             }), n("424973"), n("222007");
-            var s = n("106145"),
+            var s = n("825167"),
                 o = n("587254"),
                 c = n("654069"),
                 l = n("979605"),
@@ -9994,7 +9994,7 @@
             let S = null,
                 w = null
         },
-        106145: function(t, e, n) {
+        825167: function(t, e, n) {
             "use strict";
             n.r(e), n.d(e, {
                 isDOMError: function() {
@@ -10323,7 +10323,7 @@
                     }
                 }
             }), n("222007"), n("781738"), n("274635");
-            var r = n("106145"),
+            var r = n("825167"),
                 i = n("719928"),
                 a = n("654069"),
                 s = n("979605");
@@ -10419,7 +10419,7 @@
                 }
             }), n("222007"), n("424973");
             var r = n("315250"),
-                i = n("106145"),
+                i = n("825167"),
                 a = n("768538");
 
             function s(t, e, n) {
@@ -10703,7 +10703,7 @@
                     return i
                 }
             }), n("424973");
-            var r = n("106145");
+            var r = n("825167");
 
             function i(t) {
                 let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
@@ -10790,7 +10790,7 @@
                     return s
                 }
             }), n("424973");
-            var r, i, a = n("106145");
+            var r, i, a = n("825167");
 
             function s(t) {
                 return new c(e => {
@@ -12069,4 +12069,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47470.c4ab7647d25b8ac58ca8.js.map
+//# sourceMappingURL=47470.91c2d89ebc10ef7a8bdd.js.map

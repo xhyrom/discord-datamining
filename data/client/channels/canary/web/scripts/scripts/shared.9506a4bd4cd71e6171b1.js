@@ -810,16 +810,6 @@
                 toolbar: "toolbar_faa321"
             }
         },
-        691785: function(e, t, a) {
-            "use strict";
-            e.exports = {
-                defaultColor: "defaultColor__77578",
-                lineClamp1: "lineClamp1__92431",
-                lineClamp2Plus: "lineClamp2Plus_d4306b",
-                selectable: "selectable__06545",
-                tabularNumbers: "tabularNumbers__3286f"
-            }
-        },
         253469: function(e, t, a) {
             "use strict";
             e.exports = {
@@ -4027,6 +4017,16 @@
                 "text-xxs/medium": "text-xxs-medium__49d25",
                 "text-xxs/normal": "text-xxs-normal_a1f535",
                 "text-xxs/semibold": "text-xxs-semibold_c0d72e"
+            }
+        },
+        383817: function(e, t, a) {
+            "use strict";
+            e.exports = {
+                defaultColor: "defaultColor__37d78",
+                lineClamp1: "lineClamp1__0ec05",
+                lineClamp2Plus: "lineClamp2Plus__9938b",
+                selectable: "selectable__46283",
+                tabularNumbers: "tabularNumbers__766ad"
             }
         },
         641282: function(e, t, a) {

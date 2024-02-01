@@ -47887,6 +47887,82 @@ html .progress__4ef76 {
     border: 2px solid CanvasText
 }
 
+.buttonText__723e2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.giftIcon__2d782 {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    margin-right: 8px
+}
+
+.innerGiftButton__8d79f {
+    display: flex;
+    align-items: center
+}
+
+.innerGiftButton__8d79f>* {
+    z-index: 1
+}
+
+:root.theme-dark .giftButton_ff61dc {
+    color: var(--white-500)
+}
+
+:root.theme-dark .giftButton_ff61dc:after,
+:root.theme-dark .giftButton_ff61dc:before {
+    transition: border-color.3s ease;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+:root.theme-dark .giftButton_ff61dc:hover:before {
+    border-color: var(--premium-tier-2-pink-for-gradients)
+}
+
+:root.theme-dark .giftButton_ff61dc:hover:after {
+    border-color: var(--premium-tier-2-purple-for-gradients);
+    -webkit-mask: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
+    mask: linear-gradient(to right, #000, rgba(0, 0, 0, 0))
+}
+
+:root.theme-light .gradientBackground__404d5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2), var(--premium-tier-2-pink-for-gradients));
+    opacity: 0;
+    transition: opacity.3s ease
+}
+
+:root.theme-light .gradientBackgroundHover_db9871 {
+    opacity: 1
+}
+
+:root.theme-light .giftButton_ff61dc {
+    color: var(--text-primary);
+    transition: color.2s ease
+}
+
+:root.theme-light .giftButton_ff61dc:hover {
+    color: var(--white-500)
+}
+
 .modalHeader__18068 {
     align-items: center;
     padding-bottom: 8px
@@ -48241,6 +48317,18 @@ html .progress__4ef76 {
 
 .appListThemedContainer_cc61cb {
     margin-top: 12px
+}
+
+.giftButton__0988e {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: var(--profile-body-background-color)
+}
+
+.giftButtonContainer__68103 {
+    margin: 16px;
+    padding: 0
 }
 
 .actionBarContainer__8649e {
@@ -127505,4 +127593,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2ee26426f2c463c075b1.css.map*/
+/*# sourceMappingURL=app.ad8029ce970ec90a44fd.css.map*/
