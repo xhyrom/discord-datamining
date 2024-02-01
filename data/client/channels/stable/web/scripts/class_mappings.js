@@ -151,6 +151,8 @@
                 familyCenterPendingBadge: "familyCenterPendingBadge_ac950c",
                 hideGameUpdateProgressIndicator: "hideGameUpdateProgressIndicator_b4115e",
                 localizeBadge: "localizeBadge_be6a3a",
+                newBadgeTooltip: "newBadgeTooltip_e29756",
+                newBadgeTooltipContent: "newBadgeTooltipContent__9929b",
                 privateChannels: "privateChannels__93473",
                 searchBar: "searchBar_e4ea2a",
                 searchBarComponent: "searchBarComponent__22760",
@@ -9331,32 +9333,6 @@
                 selectSearch: "selectSearch__920ed"
             }
         },
-        733798: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                blurb: "blurb__77087",
-                guild: "guild__74638",
-                guildGemIndicatorContainer: "guildGemIndicatorContainer_ebec69",
-                guildHeader: "guildHeader__30707",
-                guildHeaderBackground: "guildHeaderBackground__04920",
-                guildHeaderContent: "guildHeaderContent__5973f",
-                guildIcon: "guildIcon_f99c5a",
-                guildName: "guildName__98804",
-                guildSubscribeButton: "guildSubscribeButton_c35677",
-                guildSubscriberCount: "guildSubscriberCount__3b67e",
-                guildSubscriberCountIcon: "guildSubscriberCountIcon__6d3f4",
-                guildSubscriptionCreationDate: "guildSubscriptionCreationDate__74752",
-                guildSubscriptionDuration: "guildSubscriptionDuration__0d572",
-                guildSubscriptionSlot: "guildSubscriptionSlot_b76fc6",
-                guildSubscriptionSlotContent: "guildSubscriptionSlotContent__11260",
-                guildSubscriptionSlotIcon: "guildSubscriptionSlotIcon__17a0a",
-                guildSubscriptionSlotIconCanceled: "guildSubscriptionSlotIconCanceled__4ee8f",
-                guildSubscriptionSlotMenuIcon: "guildSubscriptionSlotMenuIcon__8c559",
-                guildSubscriptionSlots: "guildSubscriptionSlots__5823d",
-                sectionHeader: "sectionHeader_e14f49",
-                subSectionHeader: "subSectionHeader__13c1e"
-            }
-        },
         635303: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -15273,20 +15249,31 @@
         492013: function(e, t, n) {
             "use strict";
             e.exports = {
+                avatar: "avatar__84f00 statusIcon__0e5ad",
+                avatarWrapper: "avatarWrapper__2f7aa statusIcon__0e5ad",
                 customIcon: "customIcon_a37db4",
                 divider: "divider__26943",
                 editIcon: "editIcon__562b8",
                 editIconColor: "editIconColor_e9a173",
+                helpText: "helpText_f5fa4f",
                 icon: "icon__7eecf",
+                iconGroup: "iconGroup_bde68b",
                 iconWidget: "iconWidget_db0821",
                 iconsContainer: "iconsContainer__44b35",
+                newBadge: "newBadge__6e04c",
+                onboarding: "onboarding_b57adf",
                 optionButton: "optionButton_e99332",
+                options: "options_e65393",
+                outline: "outline_af365c statusIcon__0e5ad",
                 popout: "popout__4c91f",
+                popoutBackground: "popoutBackground__41448",
                 popoutWrapper: "popoutWrapper__16db8",
                 selectedWidget: "selectedWidget__1e288",
                 setCustomButton: "setCustomButton__99e98",
                 statusButtonRegion: "statusButtonRegion__47ea7",
-                statusWidget: "statusWidget__878ca"
+                statusIcon: "statusIcon__0e5ad",
+                statusWidget: "statusWidget__878ca",
+                title: "title__0b95c"
             }
         },
         635701: function(e, t, n) {
@@ -19861,17 +19848,6 @@
                 tooltipTextContainer: "tooltipTextContainer_b04cee"
             }
         },
-        89253: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                description: "description_d69259",
-                descriptionStandalone: "descriptionStandalone__8542d",
-                feature: "feature__99aa8",
-                features: "features_c2c4bf",
-                icon: "icon_e9e84a",
-                title: "title__7c45f"
-            }
-        },
         63625: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -24324,6 +24300,7 @@
                 infoBox: "infoBox__7e1d9",
                 permission: "permission_b5be39",
                 permissionCheckmark: "permissionCheckmark__27f79",
+                searchContainer: "searchContainer_d3c151",
                 twoWayWarning: "twoWayWarning_d1f465",
                 twoWayWarningIcon: "twoWayWarningIcon_de3272"
             }
@@ -24497,41 +24474,11 @@
         368862: function(e, t, n) {
             "use strict";
             e.exports = {
-                audioQualityIcon: "audioQualityIcon_b67e68",
                 background: "background__0be22",
-                card: "card__11580",
-                cardWrapper: "cardWrapper_bc8d2a",
                 container: "container_e39f6d",
                 content: "content_e96fa0",
-                customizationIcon: "customizationIcon__774c1",
                 divider: "divider__93246",
-                emojiIcon: "emojiIcon__5cf57",
-                emptyGuilds: "emptyGuilds__164f0",
-                emptyGuildsText: "emptyGuildsText_dd0bc9",
-                emptyGuildsTitle: "emptyGuildsTitle_e5be07",
-                featureHeader: "featureHeader__3d3f0",
-                featureHeaderTop: "featureHeaderTop__6798e",
-                guildBoostingIcon: "guildBoostingIcon__86479",
-                guildFullFeatures: "guildFullFeatures_d50b8c",
-                guildInfo: "guildInfo_b58241",
-                guildName: "guildName_f57529",
-                guildSubscriptionHeading: "guildSubscriptionHeading_d5703d",
-                guilds: "guilds__66a9b",
-                guildsBlurb: "guildsBlurb__73a25",
-                guildsSection: "guildsSection__337a8",
-                loading: "loading__708f9",
-                marketingHeader: "marketingHeader_fa2da6",
-                marketingLogo: "marketingLogo__82611",
-                marketingLogoIcon: "marketingLogoIcon__3b418",
-                marketingLogoImage: "marketingLogoImage__4820c",
-                memberBadgeIcon: "memberBadgeIcon__1b419",
-                profileBadgeIcon: "profileBadgeIcon__1ef75",
-                roleIcon: "roleIcon__92878",
-                stickerIcon: "stickerIcon_aa5f07",
-                subscriberCount: "subscriberCount_bd773f",
-                subscriptionInfo: "subscriptionInfo__2a83d",
-                threadIcon: "threadIcon__864a8",
-                uploadSizeIcon: "uploadSizeIcon__0af61"
+                loading: "loading__708f9"
             }
         },
         890903: function(e, t, n) {

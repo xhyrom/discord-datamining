@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["92764"], {
+    ["98346"], {
         203472: function(e, t, n) {
             "use strict";
             e.exports = n.p + "72eaa596042042be6259.svg"
@@ -2042,7 +2042,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-031b95a86235bc4b05a9a8319af9ed8c038b34c5",
+                    release: "discord_web-f95e9919314a608a11efcf47380f815a8ef0ee90",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2060,7 +2060,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "262828", "262828")), a.setTag("builtAt", String("1706728852486"));
+                }), a.setTag("buildNumber", (e = "263172", "263172")), a.setTag("builtAt", String("1706814901275"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2187,13 +2187,13 @@
                 o === s.default.getId() && a.default.setGoLiveSource(null), r.stopStream(d, t)
             }
         },
-        785814: function(e, t, n) {
+        774539: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useIsVoiceChannelGameActivityEnabled: function() {
+                useIsVoiceUserGameActivityEnabled: function() {
                     return s
                 },
-                isVoiceChannelGameActivityEnabled: function() {
+                isVoiceUserGameActivityEnabled: function() {
                     return i
                 },
                 default: function() {
@@ -2202,9 +2202,9 @@
             });
             var a = n("862205");
             let r = (0, a.createExperiment)({
-                kind: "guild",
-                id: "2024-01_voice_channel_game_activity",
-                label: "Voice Channel Game Activity",
+                kind: "user",
+                id: "2024-01_voice_user_game_activity",
+                label: "Voice User Game Activity",
                 defaultConfig: {
                     showGameIcon: !1
                 },
@@ -2217,28 +2217,26 @@
                 }]
             });
 
-            function s(e, t, n) {
+            function s(e, t) {
                 let {
-                    showGameIcon: a
+                    showGameIcon: n
                 } = r.useExperiment({
-                    guildId: e,
-                    location: t
+                    location: e
                 }, {
-                    autoTrackExposure: n
+                    autoTrackExposure: t
                 });
-                return a
+                return n
             }
 
-            function i(e, t, n) {
+            function i(e, t) {
                 let {
-                    showGameIcon: a
+                    showGameIcon: n
                 } = r.getCurrentConfig({
-                    guildId: e,
-                    location: t
+                    location: e
                 }, {
-                    autoTrackExposure: n
+                    autoTrackExposure: t
                 });
-                return a
+                return n
             }
             var l = r
         },
@@ -4665,4 +4663,4 @@
         }
     }
 ]);
-//# sourceMappingURL=92764.dbeb3acca47d72715b52.js.map
+//# sourceMappingURL=98346.2f9b84d4cc2b6a0bf0ed.js.map

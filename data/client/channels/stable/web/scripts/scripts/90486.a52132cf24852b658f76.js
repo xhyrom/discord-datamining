@@ -136,7 +136,6 @@
                 DEAFEN: "Deafen",
                 UNDEAFEN: "Undeafen",
                 SEARCH: "Search",
-                SEARCH_EXPERIMENTAL: "Search (Experimental)",
                 AUTOCOMPLETE_NO_RESULTS_HEADER: "Nope!",
                 AUTOCOMPLETE_NO_RESULTS_BODY: "Did you make a typo?",
                 AUTOCOMPLETE_STICKERS_QUERY_MATCH: "Similar to: !!{queryMatch}!!",
@@ -658,6 +657,8 @@
                 MACOS: "macOS",
                 LINUX: "Linux",
                 WINDOWS_32_BIT_DEPRECATED_WARNING: "Your version of Windows is out of date. Update it to continue receiving Discord updates and technical support. [Learn more about system requirements]({helpCenterLink})",
+                WINDOWS_7_8_DEPRECATED_WARNING: "Your version of Windows is out of date. Update it to continue receiving Discord updates and technical support. [Learn more about system requirements]({helpCenterLink})",
+                MACOS_DEPRECATED_WARNING: "Your version of macOS is out of date. Update it to continue receiving Discord updates and technical support. [Learn more about system requirements]({helpCenterLink})",
                 EMBEDDED_ACTIVITIES_LEAVE_ACTIVITY: "Leave Activity",
                 EMBEDDED_ACTIVITIES_LEAVE: "Leave",
                 EMBEDDED_ACTIVITIES_JOIN_ACTIVITY: "Join Activity",
@@ -4106,6 +4107,7 @@
                 SELECT: "Select",
                 SELECT_ALL: "Select All",
                 START: "Start",
+                LAUNCH: "Launch",
                 ADD: "Add",
                 ADDED: "Added",
                 REMAINING_PARTICIPANTS: "Add Members (!!{current}!!/!!{max}!!)",
@@ -4609,6 +4611,7 @@
                 BOT_PROFILE_SLASH_COMMANDS: "Try my commands",
                 BOT_PROFILE_UPGRADE_CTA: "Upgrade",
                 BOT_PROFILE_BENEFITS_HEADING: "Unlocked Premium Features",
+                BOT_PROFILE_VIEW_ALL_COMMANDS_CTA: "View All Commands",
                 LOADING: "Loading",
                 OAUTH2_CONNECT_TO_DISCORD: "Connect to Discord",
                 OAUTH2_TITLE: "Authorize access to your account",
@@ -16467,6 +16470,7 @@
                 CUSTOM_HANG_STATUS_PLACEHOLDER: "What are you doing?",
                 CUSTOM_HANGS_STATUS_COPY_CTA: "Swipe status",
                 HANG_STATUS_VC_ROW_ADD: "Add a status",
+                HANG_STATUS_HELP: "Show your friends what you're up to by setting an activity status.",
                 LAUNCH_PAD: "LaunchPad",
                 LAUNCH_PAD_HISTORY: "Recent Channels",
                 LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
@@ -16645,7 +16649,7 @@
                 QUIET_MODE_SETTINGS_LABEL: "Focus Mode (BETA)",
                 QUIET_MODE_SETTINGS_DESCRIPTION: "Discord will not show in-app, desktop notifications or play message sounds.",
                 QUIET_MODE_DISABLED_BY: "This is disabled by Focus Mode",
-                QUIET_MODE_HABITUAL_DND_NOTICE: "You use Do Not Disturb a lot. Would you like to enable Focus Mode instead?"
+                QUIET_MODE_HABITUAL_DND_NOTICE: "You've been on Do Not Disturb for a while. Would you like to enable Focus Mode instead?"
             })
         },
         444051: function(e, _, E) {
@@ -18169,7 +18173,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262828", ", Version Hash: ").concat("031b95a86235bc4b05a9a8319af9ed8c038b34c5")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263172", ", Version Hash: ").concat("f95e9919314a608a11efcf47380f815a8ef0ee90")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20413,8 +20417,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "262828", "262828"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262828")), _ = 0), _
+                let _ = parseInt((e = "263172", "263172"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263172")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21141,7 +21145,7 @@
                     } = e;
                     if (_ === a.CodedLinkType.INVITE);
                     else if (_ === a.CodedLinkType.TEMPLATE) null == r.default.getGuildTemplate(E) && n.default.resolveGuildTemplate(E);
-                    else if (_ === a.CodedLinkType.BUILD_OVERRIDE);
+                    else if (_ === a.CodedLinkType.BUILD_OVERRIDE || _ === a.CodedLinkType.MANUAL_BUILD_OVERRIDE);
                     else if (_ === a.CodedLinkType.EVENT);
                     else if (_ === a.CodedLinkType.CHANNEL_LINK);
                     else if (_ === a.CodedLinkType.APP_DIRECTORY_PROFILE);
@@ -24407,7 +24411,7 @@
                 N = E("162771"),
                 O = E("101125"),
                 A = E("800762"),
-                R = E("785814"),
+                R = E("774539"),
                 l = E("49111");
 
             function L(e) {
@@ -24417,19 +24421,18 @@
                 await r.default.fetchApplications(e, !1)
             }
             async function C(e) {
-                var _;
                 if (null == e) return;
-                let E = I.default.getChannel(e);
-                if (null == E || !(0, R.isVoiceChannelGameActivityEnabled)(null !== (_ = E.guild_id) && void 0 !== _ ? _ : "", "running_games_change", !1)) return;
-                let t = O.default.getActivities();
-                if (0 === t.length) return;
-                let o = L([...t]);
-                await u([...o]);
-                let r = a.default.getApplication(o[0]);
-                null != r && n.default.trackWithMetadata(l.AnalyticEvents.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
+                let _ = I.default.getChannel(e);
+                if (null == _ || !(0, R.isVoiceUserGameActivityEnabled)("running_games_change", !1)) return;
+                let E = O.default.getActivities();
+                if (0 === E.length) return;
+                let t = L([...E]);
+                await u([...t]);
+                let o = a.default.getApplication(t[0]);
+                null != o && n.default.trackWithMetadata(l.AnalyticEvents.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
                     channel_id: e,
-                    guild_id: E.guild_id,
-                    game_name: r.name,
+                    guild_id: _.guild_id,
+                    game_name: o.name,
                     user_id: i.default.getId()
                 })
             }
@@ -24443,14 +24446,13 @@
                         updates: _
                     } = e, E = new Set;
                     _.forEach(e => {
-                        var _, t;
                         let {
-                            user: o,
-                            activities: n
-                        } = e, r = A.default.getVoiceStateForUser(o.id);
-                        if (null == r || !(0, R.isVoiceChannelGameActivityEnabled)(null !== (t = null === (_ = I.default.getChannel(r.channelId)) || void 0 === _ ? void 0 : _.guild_id) && void 0 !== t ? t : "", "presence_update", !1)) return;
-                        let a = L([...n]);
-                        E = new Set([...E, ...a])
+                            user: _,
+                            activities: t
+                        } = e, o = A.default.getVoiceStateForUser(_.id);
+                        if (null == o || !(0, R.isVoiceUserGameActivityEnabled)("presence_update", !1)) return;
+                        let n = L([...t]);
+                        E = new Set([...E, ...n])
                     }), u([...E])
                 }
                 handleVoiceStateUpdates(e) {
@@ -24462,7 +24464,7 @@
                             userId: _,
                             guildId: t
                         } = e;
-                        if (!(0, R.isVoiceChannelGameActivityEnabled)(null != t ? t : "", "voice_state_update", !1)) return;
+                        if (!(0, R.isVoiceUserGameActivityEnabled)("voice_state_update", !1)) return;
                         let o = T.default.getActivities(_, t),
                             n = L([...o]);
                         E = new Set([...E, ...n])
@@ -24545,7 +24547,8 @@
                             channelId: _,
                             guildId: E
                         } = e, {
-                            enableHangStatus: t
+                            enableHangStatus: t,
+                            setDefaultStatus: I
                         } = r.HangStatusExperiment.getCurrentConfig({
                             guildId: null != E ? E : "",
                             location: "HangStatusManager"
@@ -24558,26 +24561,27 @@
                         }
                         if (!t || _ === this.previousVoiceChannelId) return;
                         if (this.previousVoiceChannelId = _, null == E || null == _) return;
-                        let I = o.default.getChannel(_);
-                        if (null == I || I.type !== i.ChannelTypes.GUILD_VOICE) return;
-                        let s = a.default.getCurrentHangStatus();
-                        if (null != s) return;
-                        let T = a.default.getCurrentDefaultStatus();
-                        if ((null == T ? void 0 : T.expiresAt) != null && (null == T ? void 0 : T.expiresAt) >= Date.now()) {
-                            if (T.status === i.HangStatusTypes.CUSTOM && null != T.customHangStatus) {
+                        let s = o.default.getChannel(_);
+                        if (null == s || s.type !== i.ChannelTypes.GUILD_VOICE) return;
+                        let T = a.default.getCurrentHangStatus();
+                        if (null != T) return;
+                        let S = a.default.getCurrentDefaultStatus();
+                        if ((null == S ? void 0 : S.expiresAt) != null && (null == S ? void 0 : S.expiresAt) >= Date.now()) {
+                            if (S.status === i.HangStatusTypes.CUSTOM && null != S.customHangStatus) {
                                 let {
                                     status: e,
                                     emoji: _
-                                } = T.customHangStatus;
+                                } = S.customHangStatus;
                                 (0, n.updateCustomHangStatus)(e, _);
                                 return
                             }
-                            if (null == T.status) return;
+                            if (null == S.status) return;
                             else {
-                                (0, n.updateHangStatus)(T.status);
+                                (0, n.updateHangStatus)(S.status);
                                 return
                             }
                         }
+                        I && (0, n.updateHangStatus)(i.HangStatusTypes.CHILLING)
                     }, this.handleDisconnectFromVoiceChannel = () => {
                         (0, n.clearHangStatus)()
                     }, this.handleLogout = () => {
@@ -33230,6 +33234,9 @@
                             case 22:
                                 o.hideLegacyUsername = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.hideLegacyUsername);
                                 break;
+                            case 23:
+                                o.inappropriateConversationWarnings = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.inappropriateConversationWarnings);
+                                break;
                             default:
                                 let n = E.readUnknownField;
                                 if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -33260,7 +33267,7 @@
                         for (let E = 0; E < e.messageRequestRestrictedGuildIds.length; E++) _.fixed64(e.messageRequestRestrictedGuildIds[E]);
                         _.join()
                     }
-                    e.defaultMessageRequestRestricted && h.BoolValue.internalBinaryWrite(e.defaultMessageRequestRestricted, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.dropsOptedOut && h.BoolValue.internalBinaryWrite(e.dropsOptedOut, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.nonSpamRetrainingOptIn && h.BoolValue.internalBinaryWrite(e.nonSpamRetrainingOptIn, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabled && h.BoolValue.internalBinaryWrite(e.familyCenterEnabled, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabledV2 && h.BoolValue.internalBinaryWrite(e.familyCenterEnabledV2, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.hideLegacyUsername && h.BoolValue.internalBinaryWrite(e.hideLegacyUsername, _.tag(22, M.WireType.LengthDelimited).fork(), E).join();
+                    e.defaultMessageRequestRestricted && h.BoolValue.internalBinaryWrite(e.defaultMessageRequestRestricted, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.dropsOptedOut && h.BoolValue.internalBinaryWrite(e.dropsOptedOut, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.nonSpamRetrainingOptIn && h.BoolValue.internalBinaryWrite(e.nonSpamRetrainingOptIn, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabled && h.BoolValue.internalBinaryWrite(e.familyCenterEnabled, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabledV2 && h.BoolValue.internalBinaryWrite(e.familyCenterEnabledV2, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.hideLegacyUsername && h.BoolValue.internalBinaryWrite(e.hideLegacyUsername, _.tag(22, M.WireType.LengthDelimited).fork(), E).join(), e.inappropriateConversationWarnings && h.BoolValue.internalBinaryWrite(e.inappropriateConversationWarnings, _.tag(23, M.WireType.LengthDelimited).fork(), E).join();
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
@@ -33367,6 +33374,11 @@
                     }, {
                         no: 22,
                         name: "hide_legacy_username",
+                        kind: "message",
+                        T: () => h.BoolValue
+                    }, {
+                        no: 23,
+                        name: "inappropriate_conversation_warnings",
                         kind: "message",
                         T: () => h.BoolValue
                     }])
@@ -35704,4 +35716,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.a1873f7687d3cadf59fe.js.map
+//# sourceMappingURL=90486.a52132cf24852b658f76.js.map

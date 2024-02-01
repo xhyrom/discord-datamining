@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["70523"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -53104,7 +53104,7 @@
                     return E
                 },
                 validateURL: function() {
-                    return S
+                    return I
                 }
             }), n("101997"), n("222007");
             var i = n("160679"),
@@ -53130,6 +53130,22 @@
             }
 
             function _(e) {
+                if (v(e)) return Promise.resolve(function(e) {
+                    let t = e.match(p);
+                    if (null == t || 3 !== t.length) return null;
+                    let n = t[1],
+                        i = t[2];
+                    return {
+                        targetBuildOverride: {
+                            ["discord_".concat(n)]: {
+                                type: "branch",
+                                id: i
+                            }
+                        },
+                        validForUserIds: [],
+                        expiresAt: "Mon, 1 Jan 2038 00:00:00 GMT"
+                    }
+                }(e));
                 let t = o.default.safeParseWithQuery(e);
                 return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, r.default.get({
                     url: s.format(t),
@@ -53157,12 +53173,21 @@
             function E(e) {
                 return null != e && m.test(e)
             }
-            let p = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]),
-                v = new Set(["/__development/link", "/__development/link/"]);
+            let p = RegExp("^dev://bo/(ios|android|web)/([\\w-./]+)$", "i");
 
-            function S(e) {
+            function v(e) {
+                return null != e && p.test(e)
+            }
+            let S = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]),
+                T = new Set(["/__development/link", "/__development/link/"]);
+
+            function I(e) {
+                if (v(e)) return {
+                    payload: null,
+                    url: e
+                };
                 let t = o.default.safeParseWithQuery(e);
-                if (null == t || !p.has(t.hostname) || !("s" in t.query) || !v.has(t.pathname)) return null;
+                if (null == t || !S.has(t.hostname) || !("s" in t.query) || !T.has(t.pathname)) return null;
                 for (let e in t.query) "s" !== e && delete t.query[e];
                 return {
                     payload: t.query.s,
@@ -55834,22 +55859,22 @@
                 CodedLinkType: function() {
                     return i
                 }
-            }), (s = i || (i = {})).INVITE = "INVITE", s.TEMPLATE = "TEMPLATE", s.BUILD_OVERRIDE = "BUILD_OVERRIDE", s.EVENT = "EVENT", s.CHANNEL_LINK = "CHANNEL_LINK", s.APP_DIRECTORY_PROFILE = "APP_DIRECTORY_PROFILE", s.ACTIVITY_BOOKMARK = "ACTIVITY_BOOKMARK", s.EMBEDDED_ACTIVITY_INVITE = "EMBEDDED_ACTIVITY_INVITE", s.GUILD_PRODUCT = "GUILD_PRODUCT", s.SERVER_SHOP = "SERVER_SHOP", s.CLYDE_PROFILE = "CLYDE_PROFILE"
+            }), (s = i || (i = {})).INVITE = "INVITE", s.TEMPLATE = "TEMPLATE", s.BUILD_OVERRIDE = "BUILD_OVERRIDE", s.MANUAL_BUILD_OVERRIDE = "MANUAL_BUILD_OVERRIDE", s.EVENT = "EVENT", s.CHANNEL_LINK = "CHANNEL_LINK", s.APP_DIRECTORY_PROFILE = "APP_DIRECTORY_PROFILE", s.ACTIVITY_BOOKMARK = "ACTIVITY_BOOKMARK", s.EMBEDDED_ACTIVITY_INVITE = "EMBEDDED_ACTIVITY_INVITE", s.GUILD_PRODUCT = "GUILD_PRODUCT", s.SERVER_SHOP = "SERVER_SHOP", s.CLYDE_PROFILE = "CLYDE_PROFILE"
         },
         312016: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 remainingPathFromDiscordHostMatch: function() {
-                    return V
-                },
-                default: function() {
                     return G
                 },
-                parseURLSafely: function() {
+                default: function() {
                     return F
                 },
-                findCodedLink: function() {
+                parseURLSafely: function() {
                     return x
+                },
+                findCodedLink: function() {
+                    return B
                 }
             }), n("781738"), n("222007"), n("424973");
             var i, s, r, a, o, l, u = n("746379"),
@@ -55871,17 +55896,18 @@
                 C = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
                 A = /^\/channels\/([0-9]+)\/shop$/,
                 y = /^\/clyde-profiles\/([0-9-]+)\/?$/,
-                N = w(window.GLOBAL_ENV.INVITE_HOST),
-                R = w(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-                O = w(null !== (i = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== i ? i : "//canary.".concat(m.PRIMARY_DOMAIN)),
-                D = w("//canary.".concat(m.PRIMARY_DOMAIN)),
-                P = w("//ptb.".concat(m.PRIMARY_DOMAIN)),
-                b = w("discordapp.com"),
-                L = w("discord.com"),
-                M = [_.default.escape(null !== (s = N.host) && void 0 !== s ? s : ""), _.default.escape(null !== (r = R.host) && void 0 !== r ? r : ""), _.default.escape(null !== (a = O.host) && void 0 !== a ? a : ""), _.default.escape(null !== (o = b.host) && void 0 !== o ? o : ""), _.default.escape(null !== (l = L.host) && void 0 !== l ? l : "")].filter(Boolean),
-                U = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(M.join("|"), ")"), "g");
+                N = /^dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+$/i,
+                R = k(window.GLOBAL_ENV.INVITE_HOST),
+                O = k(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+                D = k(null !== (i = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== i ? i : "//canary.".concat(m.PRIMARY_DOMAIN)),
+                P = k("//canary.".concat(m.PRIMARY_DOMAIN)),
+                b = k("//ptb.".concat(m.PRIMARY_DOMAIN)),
+                L = k("discordapp.com"),
+                M = k("discord.com"),
+                U = [_.default.escape(null !== (s = R.host) && void 0 !== s ? s : ""), _.default.escape(null !== (r = O.host) && void 0 !== r ? r : ""), _.default.escape(null !== (a = D.host) && void 0 !== a ? a : ""), _.default.escape(null !== (o = L.host) && void 0 !== o ? o : ""), _.default.escape(null !== (l = M.host) && void 0 !== l ? l : "")].filter(Boolean),
+                w = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(U.join("|"), ")"), "g");
 
-            function w(e) {
+            function k(e) {
                 if (null == e) return {
                     host: null,
                     pathPrefix: null
@@ -55899,7 +55925,7 @@
                 }
             }
 
-            function k(e, t) {
+            function V(e, t) {
                 var n, i, s;
                 if ((null === (n = t.host) || void 0 === n ? void 0 : n.replace(/^www[.]/i, "")) !== e.host) return null;
                 let r = null !== (i = t.pathname) && void 0 !== i ? i : "",
@@ -55909,34 +55935,34 @@
                 return "" === o ? null : o
             }
 
-            function V(e) {
+            function G(e) {
                 var t, n, i, s;
-                return null !== (s = null !== (i = null !== (n = null !== (t = k(O, e)) && void 0 !== t ? t : k(D, e)) && void 0 !== n ? n : k(P, e)) && void 0 !== i ? i : k(b, e)) && void 0 !== s ? s : k(L, e)
+                return null !== (s = null !== (i = null !== (n = null !== (t = V(D, e)) && void 0 !== t ? t : V(P, e)) && void 0 !== n ? n : V(b, e)) && void 0 !== i ? i : V(L, e)) && void 0 !== s ? s : V(M, e)
             }
 
-            function G(e) {
+            function F(e) {
                 if (null == e) return [];
                 let t = new Set,
-                    n = [];
-                e = e.replace(U, (e, t, n, i) => null == n ? "".concat(t, "http://").concat(i) : e);
-                let i = e.match(h.default.URL_REGEX);
-                if (null == i) return [];
+                    n = [],
+                    i = (e = e.replace(w, (e, t, n, i) => null == n ? "".concat(t, "http://").concat(i) : e)).match(h.default.URL_REGEX),
+                    s = e.match(N);
+                if (null == (i = (null != i ? i : []).concat(null != s ? s : [])) || 0 === i.length) return [];
                 for (let e of i) {
-                    var s, r, a, o;
+                    var r, a, o, l;
                     if (n.length >= 10) break;
-                    let i = F(e);
+                    let i = x(e);
                     if (null == i || null == i.pathname) continue;
-                    let l = k(N, i),
-                        u = k(R, i),
-                        _ = null !== (o = null !== (a = null !== (r = null !== (s = k(O, i)) && void 0 !== s ? s : k(D, i)) && void 0 !== r ? r : k(P, i)) && void 0 !== a ? a : k(b, i)) && void 0 !== o ? o : k(L, i),
+                    let s = V(R, i),
+                        u = V(O, i),
+                        _ = null !== (l = null !== (o = null !== (a = null !== (r = V(D, i)) && void 0 !== r ? r : V(P, i)) && void 0 !== a ? a : V(b, i)) && void 0 !== o ? o : V(L, i)) && void 0 !== l ? l : V(M, i),
                         h = (e, i) => {
                             !t.has(i) && (t.add(i), n.push({
                                 type: e,
                                 code: i
                             }))
                         };
-                    if ((null == l ? void 0 : l.match(E)) != null) {
-                        let e = (0, c.generateInviteKeyFromUrlParams)(l.substring(1), i.search);
+                    if ((null == s ? void 0 : s.match(E)) != null) {
+                        let e = (0, c.generateInviteKeyFromUrlParams)(s.substring(1), i.search);
                         f.default.getInvite(e), h(g.CodedLinkType.INVITE, e)
                     }(null == u ? void 0 : u.match(E)) != null && h(g.CodedLinkType.TEMPLATE, u.substring(1));
                     let m = null == _ ? void 0 : _.match(v);
@@ -55947,7 +55973,7 @@
                             h(g.CodedLinkType.INVITE, e)
                         } else h(e, m[2])
                     }(null == _ ? void 0 : _.match(p)) != null && h(g.CodedLinkType.CHANNEL_LINK, _.replace("/channels/", ""));
-                    let M = function(e) {
+                    let N = function(e) {
                         if (null == e) return null;
                         let t = e.match(S);
                         return null != t && t.length >= 4 ? {
@@ -55956,7 +55982,7 @@
                             recurrenceId: t[4]
                         } : null
                     }(i.pathname);
-                    null != M && h(g.CodedLinkType.EVENT, "".concat(M.guildId, "-").concat(M.guildEventId) + (null != M.recurrenceId ? "-".concat(M.recurrenceId) : ""));
+                    null != N && h(g.CodedLinkType.EVENT, "".concat(N.guildId, "-").concat(N.guildEventId) + (null != N.recurrenceId ? "-".concat(N.recurrenceId) : ""));
                     let U = null == _ ? void 0 : _.match(T);
                     if (null != U) {
                         let e = U[1];
@@ -55967,7 +55993,7 @@
                         let e = w[1];
                         h(g.CodedLinkType.CLYDE_PROFILE, e)
                     }
-                    let V = null == _ ? void 0 : _.match(I),
+                    let k = null == _ ? void 0 : _.match(I),
                         {
                             activityBookmarkEmbedEnabled: G
                         } = d.ActivityBookmarkEmbedExperiment.getCurrentConfig({
@@ -55975,19 +56001,19 @@
                         }, {
                             autoTrackExposure: !1
                         });
-                    if (null != V && G) {
-                        let e = V[1];
+                    if (null != k && G) {
+                        let e = k[1];
                         h(g.CodedLinkType.ACTIVITY_BOOKMARK, e)
                     }
-                    let x = null == _ ? void 0 : _.match(C);
-                    null != x && h(g.CodedLinkType.GUILD_PRODUCT, "".concat(x[1], "-").concat(x[2]));
+                    let F = null == _ ? void 0 : _.match(C);
+                    null != F && h(g.CodedLinkType.GUILD_PRODUCT, "".concat(F[1], "-").concat(F[2]));
                     let B = null == _ ? void 0 : _.match(A);
                     null != B && h(g.CodedLinkType.SERVER_SHOP, B[1])
                 }
                 return n
             }
 
-            function F(e) {
+            function x(e) {
                 try {
                     return (0, u.parse)(e)
                 } catch (e) {
@@ -55995,8 +56021,8 @@
                 }
             }
 
-            function x(e) {
-                return G(e)[0]
+            function B(e) {
+                return F(e)[0]
             }
         },
         523086: function(e, t, n) {
@@ -61162,6 +61188,9 @@
                 TrackMediaRedactionActionType: function() {
                     return s
                 },
+                TrackMediaRedactionContext: function() {
+                    return r
+                },
                 trackMediaRedactionAction: function() {
                     return k
                 },
@@ -61382,7 +61411,7 @@
                 e = e.set("attachments", t);
                 let n = e.embeds.map(e => (null == e.contentScanVersion && (e.contentScanVersion = -1), e));
                 return e = e.set("embeds", n)
-            }(o = i || (i = {}))[o.Attachment = 0] = "Attachment", o[o.Embed = 1] = "Embed", (l = s || (s = {})).EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", l.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", l.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", l.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel", l.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_VIEWED = "explicit_media_sender_false_positive_button_viewed", l.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED = "explicit_media_sender_false_positive_button_clicked", (u = r || (r = {})).EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW = "explicit_media_obscured_false_positive_flow", u.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW = "explicit_media_sender_false_positive_flow", (d = a || (a = {})).UPDATE = "update", d.TIMEOUT = "timeout";
+            }(o = i || (i = {}))[o.Attachment = 0] = "Attachment", o[o.Embed = 1] = "Embed", (l = s || (s = {})).EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", l.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", l.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", l.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel", l.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_VIEWED = "explicit_media_sender_false_positive_button_viewed", l.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED = "explicit_media_sender_false_positive_button_clicked", l.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT = "explicit_media_false_positive_clyde_message_sent", (u = r || (r = {})).EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW = "explicit_media_obscured_false_positive_flow", u.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW = "explicit_media_sender_false_positive_flow", u.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED = "explicit_media_message_send_blocked", u.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED = "explicit_media_add_media_to_forum_post_blocked", (d = a || (a = {})).UPDATE = "update", d.TIMEOUT = "timeout";
             let H = (e, t) => null != e && null != t && (e <= A.EXPLICIT_MEDIA_MIN_WIDTH || t <= A.EXPLICIT_MEDIA_MIN_HEIGHT)
         },
         533222: function(e, t, n) {
@@ -74086,6 +74115,13 @@
                         enabled: !0,
                         fullname: "bandwidth_estimation/trendline-window-duration-7500,robust-estimator/trendline-window-duration-7500,robust-estimator"
                     }
+                }, {
+                    id: 24,
+                    label: "Sender + Worker: Trendline Window Duration 3750ms + Robust Estimator + RC Link Capacity Fix (Worker-only)",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,rate-control-link-capacity-fix"
+                    }
                 }]
             });
             var r = {
@@ -80680,18 +80716,15 @@
         },
         133335: function(e, t, n) {
             "use strict";
-            var i, s, r, a, o, l;
+            var i, s, r, a;
             n.r(t), n.d(t, {
                 ReadStateTypes: function() {
                     return i
                 },
                 UnreadSetting: function() {
                     return s
-                },
-                UnreadMode: function() {
-                    return r
                 }
-            }), (a = i || (i = {}))[a.CHANNEL = 0] = "CHANNEL", a[a.GUILD_EVENT = 1] = "GUILD_EVENT", a[a.NOTIFICATION_CENTER = 2] = "NOTIFICATION_CENTER", a[a.GUILD_HOME = 3] = "GUILD_HOME", a[a.GUILD_ONBOARDING_QUESTION = 4] = "GUILD_ONBOARDING_QUESTION", (o = s || (s = {}))[o.UNSET = 0] = "UNSET", o[o.ALL_MESSAGES = 1] = "ALL_MESSAGES", o[o.ONLY_MENTIONS = 2] = "ONLY_MENTIONS", (l = r || (r = {}))[l.IMPORTANT = 0] = "IMPORTANT", l[l.LESS_IMPORTANT = 1] = "LESS_IMPORTANT", l[l.NONE = 2] = "NONE"
+            }), (r = i || (i = {}))[r.CHANNEL = 0] = "CHANNEL", r[r.GUILD_EVENT = 1] = "GUILD_EVENT", r[r.NOTIFICATION_CENTER = 2] = "NOTIFICATION_CENTER", r[r.GUILD_HOME = 3] = "GUILD_HOME", r[r.GUILD_ONBOARDING_QUESTION = 4] = "GUILD_ONBOARDING_QUESTION", (a = s || (s = {}))[a.UNSET = 0] = "UNSET", a[a.ALL_MESSAGES = 1] = "ALL_MESSAGES", a[a.ONLY_MENTIONS = 2] = "ONLY_MENTIONS"
         },
         256572: function(e, t, n) {
             "use strict";
@@ -94773,7 +94806,7 @@
                     let t = e.isThread() ? o.default.isMuted(e.id) || E.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : E.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id);
                     if (t) return !1
                 }
-                return !(!e.isPrivate() && (D(e, t, (0, r.isOptInEnabledForGuild)(e.guild_id)) || !_.default.can(e.accessPermissions, e))) && (t > 0 || E.default.getChannelUnreadMode(e) === T.UnreadMode.IMPORTANT)
+                return !(!e.isPrivate() && (D(e, t, (0, r.isOptInEnabledForGuild)(e.guild_id)) || !_.default.can(e.accessPermissions, e))) && (t > 0 || E.default.resolveUnreadSetting(e) === T.UnreadSetting.ALL_MESSAGES)
             }
 
             function b(e) {
@@ -94873,7 +94906,7 @@
                         if (m || g) {
                             let e = function(e, t, n) {
                                 if ((0, u.isGuildVocalChannelType)(e.type) && 0 === t || !_.default.canBasicChannel((0, u.getBasicAccessPermissions)(e.type), e) || D(e, t, n)) return !1;
-                                return !("flags" in e && e.hasFlag(S.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || E.default.getChannelUnreadMode(e) === T.UnreadMode.IMPORTANT)
+                                return !("flags" in e && e.hasFlag(S.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || E.default.resolveUnreadSetting(e) === T.UnreadSetting.ALL_MESSAGES)
                             }(n, o, d);
                             e && (m && (i.unreadByType[T.ReadStateTypes.CHANNEL] = !0, i.unreadChannelId = t), g && (i.mentionCount += o, i.mentionCounts[n.id] = o))
                         }
@@ -105032,7 +105065,7 @@
                     return this.getMessageNotifications(e.guild_id)
                 }
                 resolveUnreadSetting(e) {
-                    if (c.THREAD_CHANNEL_TYPES.has(e.type) || (0, c.isPrivate)(e.type)) return p.UnreadSetting.ALL_MESSAGES;
+                    if (c.THREAD_CHANNEL_TYPES.has(e.type) || (0, c.isPrivate)(e.type) || !K()) return p.UnreadSetting.ALL_MESSAGES;
                     let t = this.getChannelUnreadSetting(e.guild_id, e.id);
                     if (t !== p.UnreadSetting.UNSET) return t;
                     if (null != e.parent_id) {
@@ -105142,6 +105175,7 @@
                     return C
                 }
                 getGuildUnreadSetting(e) {
+                    if (!K()) return p.UnreadSetting.ALL_MESSAGES;
                     let t = this.getGuildFlags(e);
                     return f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : p.UnreadSetting.UNSET
                 }
@@ -105149,18 +105183,12 @@
                     let t = this.getGuildFlags(e.id);
                     return !K() || f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(t, v.GuildNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : e.defaultMessageNotifications === m.UserNotificationSettings.ALL_MESSAGES ? p.UnreadSetting.ALL_MESSAGES : p.UnreadSetting.ONLY_MENTIONS
                 }
-                getGuildUnreadMode(e) {
-                    return this.isMuted(e.id) ? p.UnreadMode.NONE : this.resolveGuildUnreadSetting(e) === p.UnreadSetting.ALL_MESSAGES ? p.UnreadMode.IMPORTANT : p.UnreadMode.LESS_IMPORTANT
-                }
                 getChannelRecordUnreadSetting(e) {
                     return this.getChannelUnreadSetting(e.guild_id, e.id)
                 }
                 getChannelUnreadSetting(e, t) {
                     let n = this.getChannelIdFlags(e, t);
                     return f.hasFlag(n, v.ChannelNotificationSettingsFlags.UNREADS_ALL_MESSAGES) ? p.UnreadSetting.ALL_MESSAGES : f.hasFlag(n, v.ChannelNotificationSettingsFlags.UNREADS_ONLY_MENTIONS) ? p.UnreadSetting.ONLY_MENTIONS : p.UnreadSetting.UNSET
-                }
-                getChannelUnreadMode(e) {
-                    return c.THREAD_CHANNEL_TYPES.has(e.type) ? d.default.isMuted(e.id) ? p.UnreadMode.NONE : p.UnreadMode.IMPORTANT : this.getMutedChannels(e.guild_id).has(e.id) ? p.UnreadMode.NONE : (0, c.isPrivate)(e.type) || !K() ? p.UnreadMode.IMPORTANT : this.resolveUnreadSetting(e) === p.UnreadSetting.ALL_MESSAGES ? p.UnreadMode.IMPORTANT : p.UnreadMode.LESS_IMPORTANT
                 }
             }
             z.displayName = "UserGuildSettingsStore", z.persistKey = "collapsedGuilds", z.migrations = [e => ({
@@ -112548,31 +112576,31 @@
                     return m
                 },
                 addExtraAnalyticsDecorator: function() {
-                    return v
-                },
-                AnalyticEventConfigs: function() {
                     return S
                 },
-                expandLocation: function() {
+                AnalyticEventConfigs: function() {
                     return T
                 },
-                setUTMContext: function() {
-                    return A
+                expandLocation: function() {
+                    return I
                 },
-                expandEventProperties: function() {
+                setUTMContext: function() {
                     return y
                 },
-                debugLogEvent: function() {
+                expandEventProperties: function() {
                     return N
                 },
+                debugLogEvent: function() {
+                    return R
+                },
                 trackNetworkAction: function() {
-                    return O
+                    return D
                 },
                 AnalyticsSchema: function() {
                     return d
                 },
                 default: function() {
-                    return D
+                    return P
                 }
             }), n("424973"), n("222007");
             var i = n("884691"),
@@ -112592,12 +112620,13 @@
                     location: {}
                 }),
                 E = {},
-                p = [];
+                p = performance.now(),
+                v = [];
 
-            function v(e) {
-                p.push(e)
+            function S(e) {
+                v.push(e)
             }
-            let S = {
+            let T = {
                 [_.AnalyticEvents.APP_OPENED]: {
                     throttlePeriod: 3e5,
                     throttleKeys: () => []
@@ -112777,7 +112806,7 @@
                 }
             };
 
-            function T(e) {
+            function I(e) {
                 return "string" == typeof e ? {
                     location: e
                 } : {
@@ -112788,18 +112817,18 @@
                     location_object_type: e.objectType
                 }
             }
-            let I = () => h.AccessibilityFeatureFlags.NONE,
-                C = (0, s.trackMaker)({
-                    analyticEventConfigs: S,
+            let C = () => h.AccessibilityFeatureFlags.NONE,
+                A = (0, s.trackMaker)({
+                    analyticEventConfigs: T,
                     dispatcher: r.default,
                     TRACK_ACTION_NAME: "TRACK"
                 });
 
-            function A(e) {
+            function y(e) {
                 return E = e
             }
 
-            function y(e) {
+            function N(e) {
                 var t, n, i, s, r;
                 let a = e;
                 if (!a && (a = {}), null != a.location) {
@@ -112809,7 +112838,7 @@
                     } = a;
                     a = {
                         ...t,
-                        ...T(e)
+                        ...I(e)
                     }
                 }
                 if (null != a.source) {
@@ -112831,7 +112860,7 @@
                         }
                     }
                 }
-                a.client_performance_cpu = c.default.getCurrentCPUUsagePercent(), a.client_performance_memory = c.default.getCurrentMemoryUsageKB(), a.cpu_core_count = c.default.getCPUCoreCount(), a.accessibility_features = I(), a.rendered_locale = g.default.getLocale(), a.uptime_app = Math.floor(performance.now() / 1e3);
+                a.client_performance_cpu = c.default.getCurrentCPUUsagePercent(), a.client_performance_memory = c.default.getCurrentMemoryUsageKB(), a.cpu_core_count = c.default.getCPUCoreCount(), a.accessibility_features = C(), a.rendered_locale = g.default.getLocale(), a.uptime_app = Math.floor((performance.now() - p) / 1e3);
                 let o = c.default.getProcessUptime();
                 null != o && (a.uptime_process_renderer = Math.floor(o));
                 let {
@@ -112840,45 +112869,45 @@
                     utmCampaign: d,
                     utmContent: f
                 } = E;
-                return a.utm_source = null !== (t = a.utm_source) && void 0 !== t ? t : l, a.utm_medium = null !== (n = a.utm_medium) && void 0 !== n ? n : u, a.utm_campaign = null !== (i = a.utm_campaign) && void 0 !== i ? i : d, a.utm_content = null !== (s = a.utm_content) && void 0 !== s ? s : f, p.forEach(e => e(a)), a
+                return a.utm_source = null !== (t = a.utm_source) && void 0 !== t ? t : l, a.utm_medium = null !== (n = a.utm_medium) && void 0 !== n ? n : u, a.utm_campaign = null !== (i = a.utm_campaign) && void 0 !== i ? i : d, a.utm_content = null !== (s = a.utm_content) && void 0 !== s ? s : f, v.forEach(e => e(a)), a
             }
 
-            function N(e, t) {
+            function R(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 u.default.isLoggingAnalyticsEvents && console.info("AnalyticsUtils.track(...):", e, t), n ? o.report("Analytics", e, t) : o.report("Analytics", e)
             }
-            let R = (0, s.trackMaker)({
-                analyticEventConfigs: S,
+            let O = (0, s.trackMaker)({
+                analyticEventConfigs: T,
                 dispatcher: r.default,
                 TRACK_ACTION_NAME: "TRACK"
             });
 
-            function O(e, t) {
+            function D(e, t) {
                 let n = (0, a.getLocation)(),
-                    i = y({
+                    i = N({
                         location: n,
                         ...t
                     });
                 (0, a.setDebugTrackedData)(e, {
                     type: "action",
                     ...t
-                }), N(e, i), R(e, i)
+                }), R(e, i), O(e, i)
             }
-            var D = {
+            var P = {
                 ...s.default,
                 getCampaignParams: s.getCampaignParams,
                 setSystemAccessibilityFeatures: function(e) {
-                    I = e
+                    C = e
                 },
-                expandEventProperties: y,
+                expandEventProperties: N,
                 track: function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                     if (!l.IGNORE_ANALYTICS_BREADCRUMB_EVENTS.includes(e) && f.default.addBreadcrumb({
                             category: "analytics",
                             message: "".concat(e)
                         }), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();
-                    let i = y(t);
-                    return N(e, i, n.logEventProperties), C(e, i, {
+                    let i = N(t);
+                    return R(e, i, n.logEventProperties), A(e, i, {
                         flush: n.flush,
                         fingerprint: n.fingerprint
                     })
@@ -117060,7 +117089,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "262828"
+                                build_number: "263172"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -133181,4 +133210,4 @@
         }
     }
 ]);
-//# sourceMappingURL=70523.8c4a899e1fc2e9b9a86c.js.map
+//# sourceMappingURL=29278.68daaf44bea0476fcc27.js.map

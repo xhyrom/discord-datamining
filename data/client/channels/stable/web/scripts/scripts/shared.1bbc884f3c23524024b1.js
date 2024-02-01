@@ -1797,7 +1797,8 @@
                 large: "large__7dc67",
                 medium: "medium__2316b",
                 small: "small__52213",
-                xsmall: "xsmall_b118ce"
+                xsmall: "xsmall_b118ce",
+                xxsmall: "xxsmall_e160b6"
             }
         },
         296165: function(e, t, a) {
@@ -2369,17 +2370,6 @@
                 prefixInput: "prefixInput__38dcc",
                 prefixInputInput: "prefixInputInput_b11731",
                 prefixInputPrefix: "prefixInputPrefix__7a021"
-            }
-        },
-        769772: function(e, t, a) {
-            "use strict";
-            e.exports = {
-                gemIndicatorContainer: "gemIndicatorContainer_b03ca0",
-                gemIndicatorProgressCircle: "gemIndicatorProgressCircle__671cc",
-                gemWithLabel: "gemWithLabel_a554ca",
-                gemWithoutLabel: "gemWithoutLabel__6225b",
-                progressBackground: "progressBackground_c5f8f6",
-                tierLabel: "tierLabel__41356"
             }
         },
         688541: function(e, t, a) {
