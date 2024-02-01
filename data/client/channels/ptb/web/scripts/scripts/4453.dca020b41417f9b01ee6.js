@@ -634,7 +634,7 @@
                 i = l("77078"),
                 r = l("871388"),
                 o = l("152311"),
-                u = l("532602"),
+                u = l("632710"),
                 d = l("299285"),
                 c = l("699209"),
                 f = l("769791"),
@@ -1514,7 +1514,7 @@
                 return null != e && (e.application_id === n.XBOX_ACTIVITY_APPLICATION_ID || e.platform === a.ActivityGamePlatforms.XBOX)
             }
         },
-        532602: function(e, t, l) {
+        632710: function(e, t, l) {
             "use strict";
             l.r(t), l.d(t, {
                 default: function() {
@@ -6747,4 +6747,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4453.18dc8323c4641f026135.js.map
+//# sourceMappingURL=4453.dca020b41417f9b01ee6.js.map

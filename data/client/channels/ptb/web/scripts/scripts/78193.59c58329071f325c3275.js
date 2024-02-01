@@ -61,10 +61,10 @@
                     return I
                 },
                 validateCollectiblesRecipient: function() {
-                    return T
+                    return _
                 },
                 setCollectiblesCategoryItemsViewed: function() {
-                    return _
+                    return T
                 }
             });
             var u = r("872717"),
@@ -180,7 +180,7 @@
                             error: t
                         }), new i.APIError(t)
                     }
-                }, T = async (e, t) => {
+                }, _ = async (e, t) => {
                     try {
                         let r = await u.default.get({
                             url: o.Endpoints.COLLECTIBLES_VALID_GIFT_RECIPIENT,
@@ -193,7 +193,7 @@
                     } catch (e) {
                         throw new i.APIError(e)
                     }
-                }, _ = e => {
+                }, T = e => {
                     s.default.dispatch({
                         type: "COLLECTIBLES_CATEGORY_ITEMS_VIEWED",
                         ...e
@@ -534,8 +534,8 @@
                 CollectiblesCategorySkuId: function() {
                     return u
                 }
-            }), r("222007"), (s = u || (u = {})).FANTASY = "1144003461608906824", s.ANIME = "1144302037593497701", s.BREAKFAST = "1144054000099012659", s.DISXCORE = "1144058340327047249", s.HALLOWEEN = "1157410718711304313", s.FALL = "1157406994873991284", s.WINTER = "1174459301239197856", s.MONSTERS = "1179493515038818325", s.CYBERPUNK = "1197342727608746044"
+            }), r("222007"), (s = u || (u = {})).FANTASY = "1144003461608906824", s.ANIME = "1144302037593497701", s.BREAKFAST = "1144054000099012659", s.DISXCORE = "1144058340327047249", s.HALLOWEEN = "1157410718711304313", s.FALL = "1157406994873991284", s.WINTER = "1174459301239197856", s.MONSTERS = "1179493515038818325", s.CYBERPUNK = "1197342727608746044", s.LUNAR_NEW_YEAR = "1202069709281828935"
         }
     }
 ]);
-//# sourceMappingURL=78193.772653a63109bfb61db9.js.map
+//# sourceMappingURL=78193.59c58329071f325c3275.js.map
