@@ -10751,6 +10751,7 @@
                 mediumCol: "mediumCol_a1c627",
                 mediumSmallCol: "mediumSmallCol__1cfae",
                 memberAvatar: "memberAvatar__0cf3a",
+                memberGlobalName: "memberGlobalName__089d4",
                 memberName: "memberName__747da",
                 memberNameContainer: "memberNameContainer__43e33",
                 memberNameText: "memberNameText__731e2",

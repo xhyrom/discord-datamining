@@ -95441,12 +95441,6 @@ html .invoiceCancelRow_a8669b {
     font-size: .75rem
 }
 
-@keyframes shimmer__21c79 {
-    to {
-        background-position-x: 0%
-    }
-}
-
 .flagContainer__5347a,
 .roleContainer__7cd51 {
     display: flex;
@@ -95474,20 +95468,35 @@ html .invoiceCancelRow_a8669b {
     color: var(--text-muted)
 }
 
+@keyframes shimmer__21c79 {
+    to {
+        transform: skewx(-20deg)translatex(100%)
+    }
+}
+
 .memberRowContainer_f0d0e5 {
     cursor: pointer;
-    transition: box-shadow.6s ease-in-out, filter.6s ease-in-out;
+    transition: filter.6s ease-in-out;
     filter: blur(0);
     animation: none
 }
 
 .memberRowContainer_f0d0e5.loading_b476df {
-    filter: blur(4px);
+    position: relative;
+    filter: blur(3px);
+    transition: filter 64ms ease-in-out
+}
+
+.memberRowContainer_f0d0e5.loading_b476df:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background: linear-gradient(315deg, transparent, rgba(255, 255, 255, 5%), transparent);
-    animation: shimmer__21c79.5s infinite linear;
-    transition: filter.1s ease-out;
-    background-size: 300%;
-    background-position-x: 100%
+    transform: skewx(340deg)translatex(-100%);
+    animation: shimmer__21c79.5s infinite ease-in-out
 }
 
 .memberRowContainer_f0d0e5:hover td {
@@ -95602,9 +95611,10 @@ html .invoiceCancelRow_a8669b {
     cursor: pointer
 }
 
-.memberNameText__731e2 {
+.memberNameText__731e2,
+.memberGlobalName__089d4 {
     display: block;
-    max-width: 600px;
+    max-width: 400px;
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -96512,6 +96522,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .table_a843c4 {
+    width: 100%;
     position: relative;
     border: 0;
     border-spacing: 0;
@@ -127376,4 +127387,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3f375bd4525f5a28e0d6.css.map*/
+/*# sourceMappingURL=app.a34ea8fa3f58b6f305be.css.map*/
