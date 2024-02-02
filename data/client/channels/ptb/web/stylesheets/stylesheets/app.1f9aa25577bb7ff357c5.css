@@ -26966,8 +26966,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -105709,115 +105709,6 @@ html .invoiceCancelRow_a8669b {
     margin-top: 16px
 }
 
-.container__7220a {
-    position: relative;
-    height: 42px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 8px;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start
-}
-
-.pill_b241e1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 8px 2px 6px;
-    box-sizing: border-box;
-    position: absolute;
-    height: 18px;
-    right: 8px;
-    top: 12px;
-    background: var(--background-primary);
-    border-radius: 9px
-}
-
-.icon__56171 {
-    margin-right: 3px;
-    color: var(--interactive-normal)
-}
-
-.pillText__8fd7e {
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 700
-}
-
-.sparkles_bf2b69 {
-    top: 2px;
-    left: 2px;
-    width: 42px;
-    height: 42px
-}
-
-.container_f645e4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    flex: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    box-shadow: var(--elevation-low)
-}
-
-.textContainer_a65c21 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    padding: 20px
-}
-
-.header__2b02a {
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 8px;
-    text-align: center
-}
-
-.description__1a059 {
-    margin-bottom: 20px;
-    text-align: center
-}
-
-.imageContainer__38705 {
-    width: 100%;
-    height: 144px;
-    position: relative;
-    padding: 0;
-    margin: 0
-}
-
-.image_b37391 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    max-height: 100%;
-    overflow: hidden;
-    height: auto;
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px
-}
-
-.button_a9ff72 {
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0;
-    padding: 0
-}
-
 .container__9499f {
     padding: 8px
 }
@@ -105910,11 +105801,6 @@ html .invoiceCancelRow_a8669b {
     padding-left: 16px;
     padding-right: 16px;
     z-index: 1
-}
-
-.option_d505ed {
-    padding: 0 8px 0 0;
-    height: 42px
 }
 
 .switch__1945c {
@@ -127583,4 +127469,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.936ae72980954bbdf974.css.map*/
+/*# sourceMappingURL=app.1f9aa25577bb7ff357c5.css.map*/
