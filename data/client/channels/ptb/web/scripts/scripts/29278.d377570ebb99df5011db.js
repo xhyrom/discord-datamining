@@ -74422,6 +74422,7 @@
                     id: "2023-08_secure_frames_encryption",
                     label: "Allowing testing secure frames for voice/video",
                     defaultConfig: {
+                        protocolVersionFloor: 0,
                         canSupportSecureFrames: !1,
                         canSupportMls: !1
                     },
@@ -74429,6 +74430,7 @@
                         id: 1,
                         label: "Can support secure frames for voice/video",
                         config: {
+                            protocolVersionFloor: 7,
                             canSupportSecureFrames: !0,
                             canSupportMls: !1
                         }
@@ -74436,6 +74438,23 @@
                         id: 2,
                         label: "Can support secure frames for voice/video w/ MLS negotiation",
                         config: {
+                            protocolVersionFloor: 7,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
+                        }
+                    }, {
+                        id: 3,
+                        label: "Can support secure frames above protocol version 8",
+                        config: {
+                            protocolVersionFloor: 8,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 4,
+                        label: "Can support secure frames above protocol version 108 (MLS)",
+                        config: {
+                            protocolVersionFloor: 8,
                             canSupportSecureFrames: !0,
                             canSupportMls: !0
                         }
@@ -74446,6 +74465,7 @@
                     id: "2023-11_secure_frames_encryption_guilds",
                     label: "Allowing testing secure frames for voice/video (Guilds)",
                     defaultConfig: {
+                        protocolVersionFloor: 0,
                         canSupportSecureFrames: !1,
                         canSupportMls: !1
                     },
@@ -74453,6 +74473,7 @@
                         id: 1,
                         label: "Can support secure frames for voice/video",
                         config: {
+                            protocolVersionFloor: 7,
                             canSupportSecureFrames: !0,
                             canSupportMls: !1
                         }
@@ -74460,6 +74481,23 @@
                         id: 2,
                         label: "Can support secure frames for voice/video w/ MLS negotiation",
                         config: {
+                            protocolVersionFloor: 107,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
+                        }
+                    }, {
+                        id: 3,
+                        label: "Can support secure frames above protocol version 8",
+                        config: {
+                            protocolVersionFloor: 8,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 4,
+                        label: "Can support secure frames above protocol version 108 (MLS)",
+                        config: {
+                            protocolVersionFloor: 8,
                             canSupportSecureFrames: !0,
                             canSupportMls: !0
                         }
@@ -97539,17 +97577,19 @@
                     }), t
                 }
                 getSupportedSecureFramesProtocolVersion(e) {
-                    let t = eC.getSupportedSecureFramesProtocolVersion(),
-                        n = B.SecureFramesUserExperiment.getCurrentConfig({
+                    var t;
+                    let n = eC.getSupportedSecureFramesProtocolVersion(),
+                        i = B.SecureFramesUserExperiment.getCurrentConfig({
                             location: "MediaEngineStore"
                         }),
-                        i = null != e ? B.SecureFramesGuildExperiment.getCurrentConfig({
+                        s = null != e ? B.SecureFramesGuildExperiment.getCurrentConfig({
                             guildId: e,
                             location: "MediaEngineStore"
                         }) : null,
-                        s = n.canSupportSecureFrames || (null == i ? void 0 : i.canSupportSecureFrames),
-                        r = !(0, ee.isIOS)() && !(0, ee.isAndroid)() && (n.canSupportMls || (null == i ? void 0 : i.canSupportMls));
-                    return s ? r ? t : t % 100 : 0
+                        r = i.canSupportSecureFrames || (null == s ? void 0 : s.canSupportSecureFrames),
+                        a = !(0, ee.isIOS)() && !(0, ee.isAndroid)() && (i.canSupportMls || (null == s ? void 0 : s.canSupportMls)),
+                        o = Math.max(i.protocolVersionFloor, null !== (t = null == s ? void 0 : s.protocolVersionFloor) && void 0 !== t ? t : 0);
+                    return r && n % 100 >= o ? a ? n : n % 100 : 0
                 }
                 hasClipsSource() {
                     return null != a
@@ -116391,7 +116431,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263371"
+                                build_number: "263401"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -132557,4 +132597,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.ff2759540048bc980de5.js.map
+//# sourceMappingURL=29278.d377570ebb99df5011db.js.map
