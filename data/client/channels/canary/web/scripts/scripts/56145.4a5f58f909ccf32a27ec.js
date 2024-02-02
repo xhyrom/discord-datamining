@@ -786,6 +786,82 @@
                 return [t, n]
             }
         },
+        428958: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return E
+                }
+            });
+            var l = n("884691"),
+                a = n("714617"),
+                s = n.n(a),
+                i = n("995008"),
+                r = n.n(i),
+                o = n("759843"),
+                u = n("913144"),
+                d = n("42203"),
+                c = n("18494"),
+                f = n("162771"),
+                m = n("599110"),
+                h = n("716241"),
+                p = n("939011");
+            let g = (0, o.trackMaker)({
+                analyticEventConfigs: m.AnalyticEventConfigs,
+                dispatcher: u.default,
+                TRACK_ACTION_NAME: "TRACK"
+            });
+
+            function E(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+                        disableTrack: !1,
+                        trackOnInitialLoad: !1
+                    },
+                    n = arguments.length > 2 ? arguments[2] : void 0,
+                    a = l.useRef(),
+                    i = l.useRef();
+                l.useEffect(() => {
+                    let l = !s(a.current, e);
+                    l && (a.current = e);
+                    let u = !s(i.current, n);
+                    if (u && (i.current = n), !l && !u) return;
+                    let E = {
+                        ...e,
+                        sequenceId: r("impression_")
+                    };
+                    return ! function(e) {
+                        var t, n;
+                        let l = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                            {
+                                name: a,
+                                type: s,
+                                properties: i
+                            } = e;
+                        if (e.type === o.ImpressionTypes.MODAL && null == e.name && (0, p.getImpressionStack)().some(e => {
+                                var t;
+                                return null === (t = e._stackContext) || void 0 === t ? void 0 : t.isSlide
+                            })) return;
+                        (0, p.setCurrentImpression)(e);
+                        let r = null !== (t = null == i ? void 0 : i.guild_id) && void 0 !== t ? t : f.default.getGuildId(),
+                            u = null !== (n = null == i ? void 0 : i.channel_id) && void 0 !== n ? n : c.default.getChannelId(r),
+                            E = (0, m.expandEventProperties)({
+                                impression_type: s,
+                                location: (0, p.getLocation)(),
+                                ...(0, h.collectGuildAnalyticsMetadata)(r),
+                                ...(0, h.collectChannelAnalyticsMetadata)(d.default.getChannel(u)),
+                                ...i
+                            });
+                        if (l) {
+                            (0, p.setDebugTrackedData)(null, null);
+                            return
+                        }
+                        null != a && null != s && ((0, m.debugLogEvent)(a, E), g(a, E)), (0, p.setDebugTrackedData)(a, E)
+                    }(E, t.disableTrack), () => {
+                        null != E && (0, p.cleanupImpression)(E)
+                    }
+                }, t.trackOnInitialLoad ? [] : void 0)
+            }
+        },
         406291: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -10652,4 +10728,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56145.8ff842e236afdf20ec13.js.map
+//# sourceMappingURL=56145.4a5f58f909ccf32a27ec.js.map
