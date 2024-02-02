@@ -15398,12 +15398,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -67751,7 +67751,7 @@ input::-webkit-inner-spin-button {
 }
 
 .keyCombo_e65a82 {
-    display: "inline-block"
+    display: inline-block
 }
 
 .optionItem_f32ffe {
@@ -127483,4 +127483,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d13d4f46fb127118cd3f.css.map*/
+/*# sourceMappingURL=app.ba80cdb613b4e6752123.css.map*/
