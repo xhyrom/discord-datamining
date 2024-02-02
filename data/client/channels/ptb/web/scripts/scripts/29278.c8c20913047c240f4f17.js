@@ -55097,132 +55097,159 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClipsLengthSettings: function() {
-                    return r
+                    return o
                 },
                 ClipsViewerConnectivitySettings: function() {
-                    return a
+                    return l
                 },
-                DEFAULT_KEYBIND: function() {
+                ClipSaveTypes: function() {
                     return u
                 },
-                CLIPS_TOAST_DURATION: function() {
+                ClipsUserEducationType: function() {
                     return d
                 },
-                ClipsLogger: function() {
-                    return c
-                },
-                CLIPS_EXPORT_FILENAME: function() {
-                    return f
-                },
-                CURRENT_CLIP_METADATA_VERSION: function() {
+                DEFAULT_KEYBIND: function() {
                     return _
                 },
-                CLIPS_HARDWARE_CLASSIFICATION_VERSION: function() {
+                CLIPS_TOAST_DURATION: function() {
                     return h
                 },
-                WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: function() {
+                ClipsLogger: function() {
                     return g
                 },
-                WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: function() {
+                CLIPS_EXPORT_FILENAME: function() {
                     return m
                 },
-                OSX_HARDWARE_AUTO_ENABLE_GPU_REGEX: function() {
+                CURRENT_CLIP_METADATA_VERSION: function() {
                     return E
                 },
-                MIN_CLIP_DURATION_SECONDS: function() {
+                CLIPS_HARDWARE_CLASSIFICATION_VERSION: function() {
                     return p
                 },
-                CLIP_PLAYING_DEBOUNCE_MS: function() {
+                WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: function() {
                     return v
                 },
-                CLIP_NAME_MIN_CHAR_LENGTH: function() {
+                WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: function() {
                     return S
                 },
-                CLIP_NAME_MAX_CHAR_LENGTH: function() {
+                OSX_HARDWARE_AUTO_ENABLE_GPU_REGEX: function() {
                     return T
                 },
-                CLIPS_EDIT_MODAL_KEY: function() {
+                MIN_CLIP_DURATION_SECONDS: function() {
                     return I
                 },
-                CLIPS_GALLERY_MODAL_KEY: function() {
+                CLIP_PLAYING_DEBOUNCE_MS: function() {
                     return C
                 },
-                CLIPS_THUMBNAIL_MAX_WIDTH: function() {
+                CLIP_NAME_MIN_CHAR_LENGTH: function() {
                     return A
                 },
-                CLIPS_THUMBNAIL_MAX_HEIGHT: function() {
+                CLIP_NAME_MAX_CHAR_LENGTH: function() {
                     return y
                 },
-                CLIPS_MAX_PARTICIPANTS: function() {
+                CLIPS_EDIT_MODAL_KEY: function() {
                     return N
                 },
-                CLIP_NAME_TEMPLATE: function() {
+                CLIPS_GALLERY_MODAL_KEY: function() {
                     return R
                 },
-                MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: function() {
+                CLIPS_THUMBNAIL_MAX_WIDTH: function() {
                     return O
                 },
-                CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY: function() {
+                CLIPS_THUMBNAIL_MAX_HEIGHT: function() {
                     return D
                 },
-                SEEK_DENOMINATOR: function() {
+                CLIPS_MAX_PARTICIPANTS: function() {
                     return P
                 },
-                SEEK_SHIFT_MODIFIER: function() {
+                CLIP_NAME_TEMPLATE: function() {
                     return b
+                },
+                MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: function() {
+                    return L
+                },
+                CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY: function() {
+                    return M
+                },
+                SEEK_DENOMINATOR: function() {
+                    return U
+                },
+                SEEK_SHIFT_MODIFIER: function() {
+                    return k
+                },
+                CLIPS_EDUCATION_COOLDOWN: function() {
+                    return w
+                },
+                CLIPS_EDUCATION_GAME_LAUNCH_THRESHOLD: function() {
+                    return V
+                },
+                CLIPS_EDUCATION_MAX_DISMISSALS_ENABLED: function() {
+                    return G
+                },
+                CLIPS_EDUCATION_MAX_DISMISSALS_DISABLED: function() {
+                    return F
                 }
             });
-            var i, s, r, a, o = n("605250"),
-                l = n("718517");
-            (i = r || (r = {}))[i.SECONDS_30 = 30 * l.default.Millis.SECOND] = "SECONDS_30", i[i.MINUTES_1 = l.default.Millis.MINUTE] = "MINUTES_1", i[i.MINUTES_2 = 2 * l.default.Millis.MINUTE] = "MINUTES_2", (s = a || (a = {}))[s.ALL = 0] = "ALL", s[s.FRIENDS = 1] = "FRIENDS";
-            let u = "alt+c",
-                d = 6 * l.default.Millis.SECOND,
-                c = new o.default("Clips"),
-                f = e => "Discord_Clip_".concat(e, ".mp4"),
-                _ = 3,
-                h = 1,
-                g = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
-                m = /(NVIDIA GeForce (RTX (20|30|40).*))|(.*Radeon RX (57|58|59|6|7).*)/,
-                E = /(Apple M[12].*)/,
-                p = .1,
-                v = 25,
-                S = 0,
-                T = 200,
-                I = "clips-edit",
-                C = "clips-gallery",
-                A = 640,
-                y = 360,
-                N = 100,
-                R = e => "Clip - ".concat(new Date(e).toLocaleString()),
-                O = 15,
-                D = 3e4,
-                P = 30,
-                b = 10
+            var i, s, r, a, o, l, u, d, c = n("605250"),
+                f = n("718517");
+            (i = o || (o = {}))[i.SECONDS_30 = 30 * f.default.Millis.SECOND] = "SECONDS_30", i[i.MINUTES_1 = f.default.Millis.MINUTE] = "MINUTES_1", i[i.MINUTES_2 = 2 * f.default.Millis.MINUTE] = "MINUTES_2", (s = l || (l = {}))[s.ALL = 0] = "ALL", s[s.FRIENDS = 1] = "FRIENDS", (r = u || (u = {})).DECOUPLED = "decoupled", r.VIEWER = "viewer", r.STREAMER = "streamer", (a = d || (d = {}))[a.Error = 0] = "Error", a[a.Disabled = 1] = "Disabled", a[a.Enabled = 2] = "Enabled";
+            let _ = "alt+c",
+                h = 6 * f.default.Millis.SECOND,
+                g = new c.default("Clips"),
+                m = e => "Discord_Clip_".concat(e, ".mp4"),
+                E = 3,
+                p = 1,
+                v = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
+                S = /(NVIDIA GeForce (RTX (20|30|40).*))|(.*Radeon RX (57|58|59|6|7).*)/,
+                T = /(Apple M[12].*)/,
+                I = .1,
+                C = 25,
+                A = 0,
+                y = 200,
+                N = "clips-edit",
+                R = "clips-gallery",
+                O = 640,
+                D = 360,
+                P = 100,
+                b = e => "Clip - ".concat(new Date(e).toLocaleString()),
+                L = 15,
+                M = 3e4,
+                U = 30,
+                k = 10,
+                w = 14 * f.default.Millis.DAY,
+                V = 5,
+                G = 5,
+                F = 1
         },
         56947: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 ClipsExperiment: function() {
-                    return o
-                },
-                areClipsEnabled: function() {
                     return u
                 },
-                useEnableClips: function() {
-                    return d
-                },
-                useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock: function() {
+                areClipsEnabled: function() {
                     return c
                 },
-                useShouldSeeClipsPremiumEarlyAccessAnnouncementCoachmark: function() {
+                useEnableClips: function() {
                     return f
+                },
+                useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock: function() {
+                    return _
+                },
+                useShouldSeeClipsPremiumEarlyAccessAnnouncementCoachmark: function() {
+                    return h
+                },
+                isUserPremiumTypeForClipsEarlyAccess: function() {
+                    return g
                 }
             });
             var i = n("862205"),
                 s = n("584687"),
                 r = n("42887"),
-                a = n("18346");
-            let o = (0, i.createExperiment)({
+                a = n("719923"),
+                o = n("18346"),
+                l = n("646718");
+            let u = (0, i.createExperiment)({
                     kind: "user",
                     id: "2022-11_clips_experiment",
                     label: "Clips Experiment",
@@ -55257,7 +55284,7 @@
                         }
                     }]
                 }),
-                l = (0, i.createExperiment)({
+                d = (0, i.createExperiment)({
                     kind: "user",
                     id: "2023-09_clips_nitro_early_access",
                     label: "Clips (Nitro EA)",
@@ -55285,17 +55312,17 @@
                     }]
                 });
 
-            function u() {
-                if (!(0, a.default)(r.default)) return !1;
+            function c() {
+                if (!(0, o.default)(r.default)) return !1;
                 let {
                     enableClips: e
-                } = l.getCurrentConfig({
+                } = d.getCurrentConfig({
                     location: "areClipsEnabled"
                 }, {
                     autoTrackExposure: !1
                 }), {
                     enableClips: t
-                } = o.getCurrentConfig({
+                } = u.getCurrentConfig({
                     location: "areClipsEnabled"
                 }, {
                     autoTrackExposure: !1
@@ -55309,18 +55336,18 @@
                 return e || t || n
             }
 
-            function d() {
-                let e = (0, a.default)(r.default),
+            function f() {
+                let e = (0, o.default)(r.default),
                     {
                         enableClips: t
-                    } = l.useExperiment({
+                    } = d.useExperiment({
                         location: "useEnableClips"
                     }, {
                         autoTrackExposure: !1
                     }),
                     {
                         enableClips: n
-                    } = o.useExperiment({
+                    } = u.useExperiment({
                         location: "useEnableClips"
                     }, {
                         autoTrackExposure: !1
@@ -55334,36 +55361,40 @@
                     });
                 return (n || t || i) && e
             }
-            let c = e => {
+            let _ = e => {
                     let {
                         autoTrackExposure: t
-                    } = e, n = (0, a.default)(r.default), {
+                    } = e, n = (0, o.default)(r.default), {
                         enablePremiumEarlyAccessGoLiveRoadblock: i
-                    } = l.useExperiment({
+                    } = d.useExperiment({
                         location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"
                     }, {
                         autoTrackExposure: t && n
                     });
                     return !!n && i
                 },
-                f = e => {
+                h = e => {
                     let {
                         autoTrackExposure: t
-                    } = e, n = (0, a.default)(r.default), {
+                    } = e, n = (0, o.default)(r.default), {
                         enablePremiumEarlyAccessAnnouncementCoachmark: i
-                    } = l.useExperiment({
+                    } = d.useExperiment({
                         location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"
                     }, {
                         autoTrackExposure: t && n
                     });
                     return !!n && i
-                }
+                };
+
+            function g(e) {
+                return a.default.isPremiumAtLeast(e.premiumType, l.PremiumTypes.TIER_2)
+            }
         },
         386045: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return R
+                    return O
                 }
             }), n("222007"), n("702976");
             var i = n("446674"),
@@ -55385,7 +55416,8 @@
                 v = null,
                 S = null,
                 T = {},
-                I = {
+                I = null,
+                C = {
                     clipsEnabled: !1,
                     storageLocation: g,
                     clipsQuality: {
@@ -55398,22 +55430,28 @@
                     viewerClipsEnabled: !0,
                     viewerConnectivity: f.ClipsViewerConnectivitySettings.ALL
                 },
-                C = {
-                    clipsSettings: I,
+                A = {
+                    clipsSettings: C,
                     hardwareClassification: null,
                     hardwareClassificationForDecoupled: null,
                     hardwareClassificationVersion: 0,
                     newClipIds: [],
-                    hasClips: !1
+                    hasClips: !1,
+                    hasTakenDecoupledClip: !1,
+                    clipsEducationState: {
+                        dismissedAt: null,
+                        numberOfGamesLaunchedSinceDismissal: 0,
+                        numberOfTimesDismissed: 0
+                    }
                 };
-            async function A() {
-                if (C.clipsSettings.storageLocation !== g || null == r.default || null == r.default.remoteApp) return;
+            async function y() {
+                if (A.clipsSettings.storageLocation !== g || null == r.default || null == r.default.remoteApp) return;
                 let e = await r.default.remoteApp.getPath("documents");
-                C.clipsSettings.storageLocation = e, N.emitChange()
+                A.clipsSettings.storageLocation = e, R.emitChange()
             }
-            class y extends i.default.DeviceSettingsStore {
+            class N extends i.default.DeviceSettingsStore {
                 initialize(e) {
-                    null != e && (C = e), A(), this.waitFor(u.default)
+                    null != e && (A = e), y(), this.waitFor(u.default)
                 }
                 getClips() {
                     return m
@@ -55422,10 +55460,10 @@
                     return E
                 }
                 getUserAgnosticState() {
-                    return C
+                    return A
                 }
                 getSettings() {
-                    return C.clipsSettings
+                    return A.clipsSettings
                 }
                 getLastClipsSession() {
                     return S
@@ -55434,16 +55472,19 @@
                     return v === e
                 }
                 getHardwareClassification() {
-                    return C.hardwareClassification
+                    return A.hardwareClassification
                 }
                 getHardwareClassificationForDecoupled() {
-                    return C.hardwareClassificationForDecoupled
+                    return A.hardwareClassificationForDecoupled
                 }
                 getHardwareClassificationVersion() {
-                    return C.hardwareClassificationVersion
+                    return A.hardwareClassificationVersion
                 }
                 getIsAtMaxSaveClipOperations() {
                     return p >= f.MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS
+                }
+                getLastClipsError() {
+                    return I
                 }
                 isClipsEnabledForUser(e) {
                     var t, n;
@@ -55458,18 +55499,21 @@
                     return null !== (n = null === (t = T[e]) || void 0 === t ? void 0 : t.allowAnyViewerClips) && void 0 !== n && n
                 }
                 hasClips() {
-                    return C.hasClips
+                    return A.hasClips
+                }
+                hasTakenDecoupledClip() {
+                    return A.hasTakenDecoupledClip
                 }
                 getNewClipIds() {
-                    return C.newClipIds
+                    return A.newClipIds
                 }
             }
-            y.displayName = "ClipsStore", y.persistKey = "ClipsStore", y.migrations = [e => ({
-                clipsSettings: null != e ? e : I,
+            N.displayName = "ClipsStore", N.persistKey = "ClipsStore", N.migrations = [e => ({
+                clipsSettings: null != e ? e : C,
                 newClipsCount: 0
             }), e => {
                 let t = {
-                    ...I,
+                    ...C,
                     ...e.clipsSettings
                 };
                 return {
@@ -55499,7 +55543,7 @@
                 ...e,
                 clipsSettings: {
                     ...e.clipsSettings,
-                    decoupledClipsEnabled: I.decoupledClipsEnabled
+                    decoupledClipsEnabled: C.decoupledClipsEnabled
                 }
             }), e => {
                 var t;
@@ -55528,7 +55572,7 @@
                 ...e,
                 clipsSettings: {
                     ...e.clipsSettings,
-                    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? I.clipsQuality : e.clipsSettings.clipsQuality
+                    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? C.clipsQuality : e.clipsSettings.clipsQuality
                 }
             }), e => {
                 var t;
@@ -55536,19 +55580,27 @@
                     ...e,
                     clipsSettings: {
                         ...e.clipsSettings,
-                        remindersEnabled: null !== (t = e.clipsSettings.remindersEnabled) && void 0 !== t ? t : I.remindersEnabled
+                        remindersEnabled: null !== (t = e.clipsSettings.remindersEnabled) && void 0 !== t ? t : C.remindersEnabled
                     }
                 }
-            }];
-            let N = new y(s.default, {
+            }, e => ({
+                ...e,
+                hasTakenDecoupledClip: !1,
+                clipsEducationState: {
+                    dismissedAt: null,
+                    numberOfGamesLaunchedSinceDismissal: 0,
+                    numberOfTimesDismissed: 0
+                }
+            })];
+            let R = new N(s.default, {
                 CLIPS_SETTINGS_UPDATE: function(e) {
                     let {
                         settings: t
                     } = e;
-                    C = {
-                        ...C,
+                    A = {
+                        ...A,
                         clipsSettings: {
-                            ...C.clipsSettings,
+                            ...A.clipsSettings,
                             ...t
                         }
                     }
@@ -55563,15 +55615,15 @@
                         ended: !1,
                         ...S,
                         newClipIds: [...null !== (t = null == S ? void 0 : S.newClipIds) && void 0 !== t ? t : [], i.id]
-                    }, C = {
-                        ...C,
-                        newClipIds: [...null !== (n = C.newClipIds) && void 0 !== n ? n : [], i.id]
+                    }, A = {
+                        ...A,
+                        newClipIds: [...null !== (n = A.newClipIds) && void 0 !== n ? n : [], i.id]
                     }, E = E.filter(e => {
                         let {
                             id: t
                         } = e;
                         return t !== i.id
-                    }), m = [i, ...m], C.hasClips = !0
+                    }), m = [i, ...m], A.hasClips = !0
                 },
                 CLIPS_SAVE_CLIP_PLACEHOLDER: function(e) {
                     let {
@@ -55590,8 +55642,11 @@
                         return n !== t
                     })
                 },
-                CLIPS_SAVE_CLIP_START: function() {
-                    p += 1
+                CLIPS_SAVE_CLIP_START: function(e) {
+                    let {
+                        clipType: t
+                    } = e;
+                    p += 1, A.hasTakenDecoupledClip = A.hasTakenDecoupledClip || t === f.ClipSaveTypes.DECOUPLED
                 },
                 CLIPS_SAVE_CLIP_ERROR: function() {
                     p = Math.max(p - 1, 0)
@@ -55601,7 +55656,7 @@
                         sourceName: t,
                         pid: n
                     } = e;
-                    if (!C.clipsSettings.clipsEnabled) return !1;
+                    if (!A.clipsSettings.clipsEnabled) return !1;
                     let i = t;
                     if (null != n) {
                         var s;
@@ -55630,10 +55685,10 @@
                     S = null
                 },
                 CLIPS_CLEAR_NEW_CLIP_IDS: function() {
-                    C.newClipIds = []
+                    A.newClipIds = []
                 },
                 CLIPS_LOAD_DIRECTORY_SUCCESS: function(e) {
-                    C.hasClips = e.clips.length > 0, m = e.clips
+                    A.hasClips = e.clips.length > 0, m = e.clips
                 },
                 CLIPS_DELETE_CLIP: function(e) {
                     0 === (m = m.filter(t => {
@@ -55641,7 +55696,7 @@
                             filepath: n
                         } = t;
                         return n !== e.filepath
-                    })).length && (C.hasClips = !1)
+                    })).length && (A.hasClips = !1)
                 },
                 CLIPS_UPDATE_METADATA: function(e) {
                     let {
@@ -55675,24 +55730,49 @@
                 CLIPS_CLASSIFY_HARDWARE: function(e) {
                     let {
                         classification: t
-                    } = e, n = C.hardwareClassification;
-                    C.hardwareClassificationVersion = f.CLIPS_HARDWARE_CLASSIFICATION_VERSION, C.hardwareClassification = t, C.hardwareClassification === c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && n !== c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && (C.clipsSettings.clipsEnabled = !0);
-                    let i = C.hardwareClassificationForDecoupled;
-                    C.hardwareClassificationForDecoupled = t, C.hardwareClassificationForDecoupled === c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && i !== c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && C.clipsSettings.clipsEnabled && (C.clipsSettings.decoupledClipsEnabled = !0)
+                    } = e, n = A.hardwareClassification;
+                    A.hardwareClassificationVersion = f.CLIPS_HARDWARE_CLASSIFICATION_VERSION, A.hardwareClassification = t, A.hardwareClassification === c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && n !== c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && (A.clipsSettings.clipsEnabled = !0);
+                    let i = A.hardwareClassificationForDecoupled;
+                    A.hardwareClassificationForDecoupled = t, A.hardwareClassificationForDecoupled === c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && i !== c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && A.clipsSettings.clipsEnabled && (A.clipsSettings.decoupledClipsEnabled = !0)
                 },
                 CLIPS_INIT: function(e) {
                     let {
                         applicationName: t
                     } = e;
-                    if (!C.clipsSettings.clipsEnabled) return !1;
+                    if (I = null, !A.clipsSettings.clipsEnabled) return !1;
                     S = {
                         applicationName: t,
                         newClipIds: [],
                         ended: !1
                     }
+                },
+                CLIPS_INIT_FAILURE: function(e) {
+                    let {
+                        errMsg: t
+                    } = e;
+                    I = t
+                },
+                CLIPS_DISMISS_EDUCATION: function(e) {
+                    let {
+                        educationType: t
+                    } = e;
+                    switch (t) {
+                        case f.ClipsUserEducationType.Error:
+                            I = null;
+                            break;
+                        case f.ClipsUserEducationType.Disabled:
+                        case f.ClipsUserEducationType.Enabled:
+                            A.clipsEducationState.dismissedAt = Date.now(), A.clipsEducationState.numberOfGamesLaunchedSinceDismissal = 0, A.clipsEducationState.numberOfTimesDismissed += 1
+                    }
+                },
+                RUNNING_GAMES_CHANGE: function(e) {
+                    let {
+                        added: t
+                    } = e;
+                    t.length > 0 && (A.clipsEducationState.numberOfGamesLaunchedSinceDismissal += 1)
                 }
             });
-            var R = N
+            var O = R
         },
         30591: function(e, t, n) {
             "use strict";
@@ -116388,7 +116468,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263636"
+                                build_number: "263647"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -132554,4 +132634,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.61bd5b2d6d4e46b45a60.js.map
+//# sourceMappingURL=29278.c8c20913047c240f4f17.js.map
