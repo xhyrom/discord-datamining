@@ -410,7 +410,7 @@
                         d = n.useRef(a);
                     return n.useEffect(() => {
                         u(e), o(i.default.getProfileEffectById(e))
-                    }, [e]), {
+                    }, [e, t]), {
                         increment: () => {
                             let e = (d.current + 1) % t.length;
                             d.current = e, s(e), u(t[e].id), o(t[e])
@@ -694,4 +694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=22198.18946cfba71a0683afcd.js.map
+//# sourceMappingURL=22198.555a8f2b024a4d55fbe4.js.map
