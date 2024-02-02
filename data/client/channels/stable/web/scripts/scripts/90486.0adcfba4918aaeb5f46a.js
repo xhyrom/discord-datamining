@@ -903,8 +903,8 @@
                 EMBEDDED_ACTIVITIES_INTERACTION_EMBED_ENDED: "Activity has ended.",
                 EMBEDDED_ACTIVITIES_INTERACTION_EMBED_NO_PRESENCE: "Activity has started.",
                 EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE: "You cannot launch this activity in a server with more than 25 members",
-                EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED: "Activity has ended",
-                EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity has started",
+                EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED: "Activity ended. Start a new one?",
+                EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity started",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION: "You do not have permissions to join this Voice Channel.",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_INVALID_CHANNEL: "You cannot join Activities in this channel.",
                 APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED: "$[](userHook) started an activity",
@@ -1181,9 +1181,6 @@
                 COMMUNITY_POLICY_HELP: "By setting your server as a Community Server, you agree that your server complies with our [Community Server Guidelines]({helpdeskArticle}). Remember, all activity on Discord must abide by our [Community Guidelines](https://discord.com/guidelines).",
                 ENABLE_COMMUNITY_BUTTON_TEXT: "Finish Setup",
                 TOOLTIP_COMMUNITY_FEATURE_DISABLED: "This option is not available for Community Servers.",
-                GROWING_FRIEND_GUILD_PERMANENT_INVITE_LINKS_UPSELL_HEADER: "Unlock permanent invite links!",
-                GROWING_FRIEND_GUILD_PERMANENT_INVITE_LINKS_UPSELL_DESCRIPTION: "Convert to a Community Server to unlock permanent invite links and other powerful tools to help you grow.",
-                GROWING_FRIEND_GUILD_PERMANENT_INVITE_LINKS_ALT_TEXT: "Three friends on a floating island in the sky greet each other.",
                 GUILD_SETTINGS_LABEL_AUDIT_LOG: "Audit Log",
                 GUILD_SETTINGS_AUDIT_LOG_LOAD_MORE: "Load More",
                 GUILD_SETTINGS_LABEL_AUDIT_LOG_EMPTY_TITLE: "No Logs Yet",
@@ -16386,6 +16383,7 @@
                 SENDER_BLOCKED_MEDIA_BOT_DMS_MESSAGE: "Your message could not be sent. It may contain sensitive media, which has been blocked by someone in this conversation.",
                 SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_HEADER: "Unable to Mark as Not Sensitive",
                 SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_BODY: "We don't store blocked media permanently. Since this media was uploaded a while ago, the option to mark it as not sensitive has expired.",
+                SAFETY_WARNING_BANNER_CLOSE_A11Y: "Close",
                 STRANGER_DANGER_BANNER_HEADER: "Unwanted message?",
                 STRANGER_DANGER_BANNER_DESCRIPTION: "If you don't want to chat with this person, you can block or mute them.",
                 STRANGER_DANGER_BANNER_MORE_TIPS: "More tips",
@@ -16410,6 +16408,25 @@
                 STRANGER_DANGER_THUMBS_DOWN_A11Y: "Vote no (thumbs down)",
                 STRANGER_DANGER_FEEDBACK_CONFIRM: "Thanks for your feedback!",
                 STRANGER_DANGER_CONTEXT_MENU_CLEAR: "Reset Safety Warnings (Experimental)",
+                INAPPROPRIATE_CONVERSATION_TAKEOVER_HEADER: "This conversation may not be safe",
+                INAPPROPRIATE_CONVERSATION_TAKEOVER_DESCRIPTION: "It looks like {username} is saying things that could put your safety at risk. Take action to protect yourself.",
+                INAPPROPRIATE_CONVERSATION_TAKE_ACTION: "Take action",
+                INAPPROPRIATE_CONVERSATION_READ_SAFETY_TIPS: "Read safety tips",
+                INAPPROPRIATE_CONVERSATION_TAKE_ACTION_HEADER: "Take action",
+                INAPPROPRIATE_CONVERSATION_TAKE_ACTION_DESCRIPTION: "We got you. Here's what you can do.",
+                INAPPROPRIATE_CONVERSATION_SAFETY_TIPS_HEADER: "Safety tips",
+                INAPPROPRIATE_CONVERSATION_TIPS_DESCRIPTION: "Remember, you're always in control",
+                INAPPROPRIATE_CONVERSATION_TIPS_1: "Trust your gut. If something feels off, you can always take a break.",
+                INAPPROPRIATE_CONVERSATION_TIPS_2: "Be careful with private details like your full name, school, or how to find you off Discord.",
+                INAPPROPRIATE_CONVERSATION_TIPS_3: "You're not alone. If you need help, talk to a trusted adult. You can also report messages to us anytime.",
+                INAPPROPRIATE_CONVERSATION_WUMPUS_EXCLAMATION_ALT: "Wumpus looking worried at a computer screen with an exclamation warning symbol above.",
+                INAPPROPRIATE_CONVERSATION_WUMPUS_LIGHTBULB_ALT: "Wumpus looking delighted at a computer screen with a light bulb above.",
+                INAPPROPRIATE_CONVERSATION_SAFETY_TIPS_ALT: "An open book with a warning icon and color blocks.",
+                INAPPROPRIATE_CONVERSATION_BANNER_HEADER: "It looks like this conversation may not be safe",
+                INAPPROPRIATE_CONVERSATION_BANNER_DESCRIPTION: "Take action to protect yourself.",
+                INAPPROPRIATE_CONVERSATION_BANNER_OPEN_SAFETY_TOOLS_BUTTON: "Open safety tools",
+                INAPPROPRIATE_CONVERSATION_BANNER_BLOCK_BUTTON: "Block",
+                INAPPROPRIATE_CONVERSATION_BLOCK_CONFIRM: "User Blocked",
                 URF_LANDING_PAGE_TITLE: "Report Illegal Content",
                 URF_LANDING_PAGE_SUBTITLE: "Use these forms to report illegal content under the Digital Services Act (DSA). For reports of copyright or trademark infringement please [go here]({supportURL}).",
                 URF_LANDING_PAGE_REPORT_USER_PROFILE_BUTTON: "Report a User Profile",
@@ -16613,19 +16630,24 @@
                 QUESTS_REWARD_CODE_DONE: "Done",
                 QUESTS_REWARD_CODE_GET_CODE: "Get code",
                 QUESTS_REWARD_CODE_TRY_AGAIN: "Try again",
+                QUESTS_REWARD_CODE_UNCLAIMED_REWARD_TILE_SUBHEADER: "Claim this",
+                QUESTS_REWARD_CODE_CLAIMED_REWARD_TILE_SUBHEADER: "You claimed this",
                 QUESTS_REWARD_CODE_PLATFORM_XBOX: "Xbox",
                 QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION: "PlayStation",
                 QUESTS_REWARD_CODE_PLATFORM_SWITCH: "Switch",
                 QUESTS_REWARD_CODE_PLATFORM_PC: "PC",
                 QUESTS_SPONSORED: "Sponsored",
+                QUESTS_LEARN_MORE_V2: "Learn more",
                 QUESTS_LEARN_MORE_STACKED: "Learn\n\nmore",
                 QUESTS_ACCEPT_QUEST: "Accept Quest",
                 QUESTS_INSTRUCTIONS_TO_WIN_REWARD: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
+                QUESTS_TRACK_YOUR_PROGRESS: "Track your progress",
+                QUESTS_ACCEPTED_INSTRUCTIONS_TO_WIN_REWARD: "**Quest accepted!** Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
+                QUESTS_TITLE: "{questName} Quest",
                 QUESTS_BAR_PROGRESS_EXPANDED_HEADING_INCOMPLETE: "Ready when you are...",
                 QUESTS_BAR_PROGRESS_EXPANDED_HEADING_COMPLETE: "You did it!",
                 QUESTS_BAR_PROGRESS_EXPANDED_SUBHEADING_INCOMPLETE: "Available until {expirationDate}.",
                 QUESTS_BAR_PROGRESS_EXPANDED_SUBHEADING_COMPLETE: "Claim by {expirationDate}.",
-                QUESTS_TITLE: "{questName} Quest",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -16641,6 +16663,9 @@
                 STOREFRONT_APP_SUBSCRIPTIONS_BODY: "Purchase subscriptions from {appName}",
                 STOREFRONT_APP_PRODUCTS: "App Products",
                 STOREFRONT_APP_PRODUCTS_BODY: "Purchase products from {appName}",
+                STOREFRONT_SUBSCRIPTION: "Subscription",
+                STOREFRONT_SUBSCRIBE: "Subscribe",
+                STOREFRONT_SUBSCRIPTION_BENEFITS: "Subscription Benefits",
                 QUIET_MODE_DISABLED: "Focus Mode Disabled",
                 QUIET_MODE_ENABLED: "Focus Mode Enabled",
                 QUIET_MODE_DND: "Focus Mode (DND) Enabled",
@@ -18173,7 +18198,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263172", ", Version Hash: ").concat("f95e9919314a608a11efcf47380f815a8ef0ee90")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263582", ", Version Hash: ").concat("53bdc3964ebcc5e956ed20bd109eee0af6a8b2a4")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20417,8 +20442,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "263172", "263172"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263172")), _ = 0), _
+                let _ = parseInt((e = "263582", "263582"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263582")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21025,13 +21050,12 @@
                         E = s.default.getSettings(),
                         t = (E.clipsEnabled || E.decoupledClipsEnabled) && _,
                         o = r.default.getMediaEngine();
-                    if (o.setClipBufferLength(t ? E.clipsLength / 1e3 : 0), null == e ? void 0 : e.settings.decoupledClipsEnabled) this.fireClipsInitEvent();
-                    else if ((null == e ? void 0 : e.settings.clipsQuality) != null) {
+                    if (o.setClipBufferLength(t ? E.clipsLength / 1e3 : 0), (null == e ? void 0 : e.settings.decoupledClipsEnabled) === !0 && this.fireClipsInitEvent(), null == e || (null == e ? void 0 : e.settings.clipsQuality) != null) {
                         let {
-                            frameRate: e,
-                            resolution: _
+                            frameRate: _,
+                            resolution: t
                         } = E.clipsQuality;
-                        !o.setClipsQualitySettings(_ <= 480 ? _ / 3 * 4 : _ / 9 * 16, _, e) && this.fireClipsInitEvent()
+                        !o.setClipsQualitySettings(t <= 480 ? t / 3 * 4 : t / 9 * 16, t, _) && null != e && this.fireClipsInitEvent()
                     }
                 }
                 handleClipsInitOnToggleDetection(e) {
@@ -25907,36 +25931,78 @@
                 }
             }
         },
+        166604: function(e, _, E) {
+            "use strict";
+            var t, o;
+            E.r(_), E.d(_, {
+                QuestsExperimentLocations: function() {
+                    return t
+                }
+            }), (o = t || (t = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", o.QUESTS_MANAGER = "quests_manager", o.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory"
+        },
         374023: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
-                default: function() {
-                    return n
+                getIsEligibleForQuests: function() {
+                    return r
+                },
+                useIsEligibleForQuests: function() {
+                    return a
                 }
             });
-            var t = E("862205");
-            let o = (0, t.createExperiment)({
-                id: "2023-12_quests",
-                kind: "user",
-                label: "Quests",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 0,
-                    label: "Control",
-                    config: {
+            var t = E("619935"),
+                o = E("862205");
+            let n = (0, o.createExperiment)({
+                    id: "2023-12_quests",
+                    kind: "user",
+                    label: "Quests",
+                    defaultConfig: {
                         enabled: !1
-                    }
-                }, {
-                    id: 1,
-                    label: "Quests enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-            var n = o
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "Quests enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = e => {
+                    let {
+                        location: _,
+                        autoTrackExposure: E
+                    } = e, o = n.getCurrentConfig({
+                        location: _
+                    }, {
+                        autoTrackExposure: E
+                    }), r = t.default.getCurrentConfig({
+                        location: _
+                    }, {
+                        autoTrackExposure: E
+                    });
+                    return o.enabled && !r.paymentsBlocked
+                },
+                a = e => {
+                    let {
+                        location: _,
+                        autoTrackExposure: E
+                    } = e, o = n.useExperiment({
+                        location: _
+                    }, {
+                        autoTrackExposure: E
+                    }), r = t.default.useExperiment({
+                        location: _
+                    }, {
+                        autoTrackExposure: E
+                    });
+                    return o.enabled && !r.paymentsBlocked
+                }
         },
         2973: function(e, _, E) {
             "use strict";
@@ -26109,65 +26175,61 @@
             "use strict";
             E.r(_), E.d(_, {
                 getQuestByApplicationId: function() {
-                    return a
-                },
-                isQuestExpired: function() {
-                    return i
+                    return r
                 },
                 questUserStatusFromServer: function() {
-                    return I
+                    return i
                 },
                 questWithUserStatusFromServer: function() {
-                    return s
+                    return I
                 },
                 questsRewardCodeFromServer: function() {
-                    return T
+                    return s
                 },
                 getRewardAssetUrl: function() {
-                    return S
+                    return T
                 },
                 getHeroAssetUrl: function() {
-                    return N
+                    return S
                 },
                 getQuestBarHeroAssetUrl: function() {
-                    return O
+                    return N
                 },
                 getGameTileAssetUrl: function() {
-                    return A
+                    return O
                 },
                 getGameLogotypeAssetUrl: function() {
-                    return R
+                    return A
                 },
                 getQuestForTargetedContent: function() {
-                    return l
+                    return R
                 },
                 getPlatformString: function() {
-                    return L
+                    return l
                 },
                 calculatePercentComplete: function() {
-                    return u
+                    return L
                 }
             }), E("222007");
-            var t = E("2973"),
-                o = E("588025"),
-                n = E("782340");
-            let r = "https://cdn.discordapp.com/assets/quests/";
+            var t = E("588025"),
+                o = E("782340");
+            let n = "https://cdn.discordapp.com/assets/quests/";
 
-            function a(e) {
-                let _;
-                for (let [E, o] of t.default.quests)
-                    if (o.config.applicationId === e) {
-                        _ = o;
+            function r(e, _) {
+                let E;
+                for (let [t, o] of e)
+                    if (o.config.applicationId === _ && !a(o)) {
+                        E = o;
                         break
-                    } return _
+                    } return E
             }
 
-            function i(e) {
+            function a(e) {
                 let _ = new Date(e.config.expiresAt);
                 return _.valueOf() <= Date.now()
             }
 
-            function I(e) {
+            function i(e) {
                 return {
                     userId: e.user_id,
                     questId: e.quest_id,
@@ -26180,12 +26242,12 @@
                 }
             }
 
-            function s(e) {
+            function I(e) {
                 return {
                     id: e.id,
                     config: function(e) {
                         var _, E;
-                        let t = new Set(Object.values(o.QuestRewardCodePlatforms));
+                        let o = new Set(Object.values(t.QuestRewardCodePlatforms));
                         return {
                             expiresAt: e.expires_at,
                             streamDurationRequirementMinutes: e.stream_duration_requirement_minutes,
@@ -26203,15 +26265,15 @@
                                 primary: (E = e.colors).primary,
                                 secondary: E.secondary
                             },
-                            rewardCodePlatforms: e.reward_code_platforms.filter(e => t.has(e))
+                            rewardCodePlatforms: e.reward_code_platforms.filter(e => o.has(e))
                         }
                     }(e.config),
-                    userStatus: null == e.user_status ? null : I(e.user_status),
+                    userStatus: null == e.user_status ? null : i(e.user_status),
                     targetedContent: e.targeted_content
                 }
             }
 
-            function T(e) {
+            function s(e) {
                 return {
                     userId: e.user_id,
                     questId: e.quest_id,
@@ -26220,33 +26282,33 @@
                     claimedAt: e.claimed_at
                 }
             }
-            let S = e => "".concat(r).concat(e).concat("/reward.png"),
-                N = e => "".concat(r).concat(e).concat("/hero.png"),
-                O = e => "".concat(r).concat(e).concat("/quest_bar_hero.gif"),
-                A = e => "".concat(r).concat(e).concat("/game_tile.png"),
-                R = (e, _) => "".concat(r).concat(e, "/").concat(_).concat("/game_logotype.png");
+            let T = e => "".concat(n).concat(e).concat("/reward.png"),
+                S = e => "".concat(n).concat(e).concat("/hero.png"),
+                N = e => "".concat(n).concat(e).concat("/quest_bar_hero.gif"),
+                O = e => "".concat(n).concat(e).concat("/game_tile.png"),
+                A = (e, _) => "".concat(n).concat(e, "/").concat(_).concat("/game_logotype.png");
 
-            function l(e, _) {
+            function R(e, _) {
                 for (let [E, t] of e)
-                    if (!i(t) && t.targetedContent.includes(_)) return t;
+                    if (!a(t) && t.targetedContent.includes(_)) return t;
                 return null
             }
-            let L = e => {
+            let l = e => {
                 switch (e) {
-                    case o.QuestRewardCodePlatforms.XBOX:
-                        return n.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
-                    case o.QuestRewardCodePlatforms.PLAYSTATION:
-                        return n.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
-                    case o.QuestRewardCodePlatforms.SWITCH:
-                        return n.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
-                    case o.QuestRewardCodePlatforms.PC:
-                        return n.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
+                    case t.QuestRewardCodePlatforms.XBOX:
+                        return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
+                    case t.QuestRewardCodePlatforms.PLAYSTATION:
+                        return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
+                    case t.QuestRewardCodePlatforms.SWITCH:
+                        return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
+                    case t.QuestRewardCodePlatforms.PC:
+                        return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
                     default:
                         return ""
                 }
             };
 
-            function u(e) {
+            function L(e) {
                 if (null == e.userStatus) return 0;
                 let {
                     streamProgressSeconds: _,
@@ -26263,7 +26325,7 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return l
+                    return L
                 }
             }), E("222007");
             var t = E("689988"),
@@ -26275,17 +26337,17 @@
                 I = E("448881"),
                 s = E("374023"),
                 T = E("2973"),
-                S = E("227231");
-            let N = 5 * i.default.Millis.SECOND,
-                O = 12 * i.default.Millis.HOUR,
-                A = 1 * i.default.Millis.MINUTE;
-            class R extends t.default {
+                S = E("227231"),
+                N = E("166604");
+            let O = 5 * i.default.Millis.SECOND,
+                A = 12 * i.default.Millis.HOUR,
+                R = 1 * i.default.Millis.MINUTE;
+            class l extends t.default {
                 maybeFetchCurrentQuests() {
-                    s.default.getCurrentConfig({
-                        location: "maybeFetchCurrentQuests"
-                    }, {
+                    (0, s.getIsEligibleForQuests)({
+                        location: N.QuestsExperimentLocations.QUESTS_MANAGER,
                         autoTrackExposure: !1
-                    }).enabled && !T.default.isFetchingCurrentQuests && (0, I.fetchCurrentQuests)()
+                    }) && !T.default.isFetchingCurrentQuests && (0, I.fetchCurrentQuests)()
                 }
                 constructor(...e) {
                     super(...e), this.instantiatedAt = Date.now(), this.sendHeartbeatIntervalIds = new Map, this.initiateHeartbeat = e => {
@@ -26302,7 +26364,7 @@
                                 applicationId: t
                             })
                         }
-                        window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, A))
+                        window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, R))
                     }, this.terminateHeartbeat = e => {
                         window.clearInterval(this.sendHeartbeatIntervalIds.get(e)), this.sendHeartbeatIntervalIds.delete(e)
                     }, this.handleEnrollmentSuccess = e => {
@@ -26314,7 +26376,7 @@
                         if (null == E || null == E.pid) return;
                         let t = a.default.getGameForPID(E.pid);
                         if (null == t || null == t.id) return;
-                        let r = (0, S.getQuestByApplicationId)(t.id);
+                        let r = (0, S.getQuestByApplicationId)(T.default.quests, t.id);
                         if (null == r || r.id !== _) return;
                         let i = n.default.getCurrentUserActiveStream();
                         null != i && this.initiateHeartbeat({
@@ -26323,7 +26385,7 @@
                             questId: r.id
                         })
                     }, this.handlePostConnectionOpen = () => {
-                        window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * N))
+                        window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * O))
                     }, this.handleSendHeartbeatSuccess = e => {
                         let {
                             streamKey: _,
@@ -26331,7 +26393,7 @@
                         } = e;
                         null != E.completedAt && this.terminateHeartbeat(_)
                     }, this.handleRunningGamesChange = () => {
-                        !(this.instantiatedAt + O > Date.now() || T.default.lastFetchedCurrentQuests + O > Date.now()) && this.maybeFetchCurrentQuests()
+                        !(this.instantiatedAt + A > Date.now() || T.default.lastFetchedCurrentQuests + A > Date.now()) && this.maybeFetchCurrentQuests()
                     }, this.handleStreamStart = e => {
                         var _, E;
                         let {
@@ -26341,16 +26403,16 @@
                             pid: I
                         } = e, s = null != I ? a.default.getGameForPID(I) : null;
                         if (null == s) return;
-                        let T = null != s.id ? (0, S.getQuestByApplicationId)(s.id) : null;
-                        if ((null == T ? void 0 : null === (_ = T.userStatus) || void 0 === _ ? void 0 : _.enrolledAt) != null && (null == T ? void 0 : null === (E = T.userStatus) || void 0 === E ? void 0 : E.completedAt) == null) !(0, S.isQuestExpired)(T) && this.initiateHeartbeat({
+                        let N = null != s.id ? (0, S.getQuestByApplicationId)(T.default.quests, s.id) : null;
+                        (null == N ? void 0 : null === (_ = N.userStatus) || void 0 === _ ? void 0 : _.enrolledAt) != null && (null == N ? void 0 : null === (E = N.userStatus) || void 0 === E ? void 0 : E.completedAt) == null && this.initiateHeartbeat({
                             streamKey: (0, o.encodeStreamKey)({
                                 streamType: t,
                                 guildId: n,
                                 channelId: i,
                                 ownerId: r.default.getId()
                             }),
-                            applicationId: T.config.applicationId,
-                            questId: T.id
+                            applicationId: N.config.applicationId,
+                            questId: N.id
                         })
                     }, this.handleStreamClose = e => {
                         let {
@@ -26367,7 +26429,7 @@
                     }
                 }
             }
-            var l = new R
+            var L = new l
         },
         50733: function(e, _, E) {
             "use strict";
@@ -26485,53 +26547,64 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return s
+                    return S
                 }
             }), E("222007");
             var t = E("689988"),
-                o = E("18494"),
-                n = E("821240"),
-                r = E("761771");
+                o = E("42203"),
+                n = E("18494"),
+                r = E("821240"),
+                a = E("761771"),
+                i = E("537597");
 
-            function a(e) {
+            function I(e) {
                 let {
                     channelId: _
                 } = e;
-                return !!(null != _ && (0, r.isEligibleForInappropriateConversationWarning)({
-                    location: "channel_select"
-                })) && (!!(0, n.shouldShowInappropriateConversationTakeoverForChannel)(_) || !1)
+                if (null == _ || !(0, a.isEligibleForInappropriateConversationWarning)({
+                        location: "channel_select"
+                    })) return !1;
+                let E = o.default.getChannel(_);
+                if (null == E || !E.isDM()) return !1;
+                let t = (0, r.getInappropriateConversationTakeoverForChannel)(_);
+                return null != t && ((0, i.showTakeoverModal)({
+                    warningId: t.id,
+                    senderId: E.getRecipientId()
+                }), !0)
             }
 
-            function i(e) {
+            function s(e) {
                 let {
                     channels: _
                 } = e;
-                if (!(0, r.isEligibleForInappropriateConversationWarning)({
+                if (!(0, a.isEligibleForInappropriateConversationWarning)({
                         location: "channel_updates"
                     })) return !1;
-                let E = o.default.getCurrentlySelectedChannelId();
+                let E = n.default.getCurrentlySelectedChannelId();
                 if (null == E) return !1;
                 let t = _.find(e => e.id === E);
-                return null != t && (!!(0, n.shouldShowInappropriateConversationTakeoverForChannelRecord)(t) || !1)
+                if (null == t) return !1;
+                let o = (0, r.getInappropriateConversationTakeoverForChannel)(t.id);
+                return !!(null != o && t.isDM()) && ((0, i.showTakeoverModal)({
+                    warningId: o.id,
+                    senderId: t.getRecipientId()
+                }), !0)
             }
-            class I extends t.default {
+            class T extends t.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        CHANNEL_SELECT: a,
-                        CHANNEL_UPDATES: i
+                        CHANNEL_SELECT: I,
+                        CHANNEL_UPDATES: s
                     }
                 }
             }
-            var s = new I
+            var S = new T
         },
         821240: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
-                shouldShowInappropriateConversationTakeoverForChannel: function() {
+                getInappropriateConversationTakeoverForChannel: function() {
                     return o
-                },
-                shouldShowInappropriateConversationTakeoverForChannelRecord: function() {
-                    return n
                 }
             });
             var t = E("764828");
@@ -26541,14 +26614,10 @@
                         let _ = t.default.getChannelSafetyWarnings(e);
                         return _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2)
                     }(e),
-                    E = _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
-                return E.length > 0 && E.every(e => null == e.dismiss_timestamp)
-            }
-
-            function n(e) {
-                if (null == e.safetyWarnings) return !1;
-                let _ = e.safetyWarnings.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
-                return _.length > 0 && _.every(e => null == e.dismiss_timestamp)
+                    E = _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 && null != e.dismiss_timestamp);
+                if (E.length > 0) return null;
+                let o = _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 && null == e.dismiss_timestamp);
+                return 1 === o.length ? o[0] : null
             }
         },
         761771: function(e, _, E) {
@@ -26587,6 +26656,22 @@
                     autoTrackExposure: E
                 });
                 return t
+            }
+        },
+        537597: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                showTakeoverModal: function() {
+                    return o
+                }
+            });
+            var t = E("761771");
+
+            function o(e) {
+                let {} = e;
+                if (!(0, t.isEligibleForInappropriateConversationWarning)({
+                        location: "takeover-modal"
+                    })) return
             }
         },
         303167: function(e, _, E) {
@@ -27048,9 +27133,8 @@
                 i = E("713349"),
                 I = E("151426"),
                 s = E("801340"),
-                T = E("913144");
-            E("968027");
-            var S = E("275877"),
+                T = E("913144"),
+                S = E("275877"),
                 N = E("116949"),
                 O = E("397336");
             let A = {
@@ -28320,15 +28404,6 @@
                 })
             }
         },
-        968027: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                isStable: function() {
-                    return t
-                }
-            });
-            let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL
-        },
         286235: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -29200,7 +29275,7 @@
                     return new Promise((_, E) => {
                         this._waitQueue.push(() => {
                             try {
-                                this._dispatchWithDevtools(e), _()
+                                null == this.functionCache[e.type] && (this.functionCache[e.type] = e => this._dispatchWithDevtools(e), R(this.functionCache[e.type], "dispatch_" + e.type)), this.functionCache[e.type](e), _()
                             } catch (e) {
                                 E(e)
                             }
@@ -29290,7 +29365,7 @@
                     this._actionHandlers.addDependencies(e, _)
                 }
                 constructor(e = 0, _, E) {
-                    this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._sentryUtils = void 0, this._defaultBand = e, this._sentryUtils = E, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
+                    this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._sentryUtils = void 0, this.functionCache = {}, this._defaultBand = e, this._sentryUtils = E, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
                         r.default.isTracing && E >= 10 && r.default.mark("\uD83E\uDDA5", _, E)
                     })
                 }
@@ -29302,10 +29377,17 @@
                 }
                 register(e, _, E, t) {
                     let o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : this.createToken();
-                    return n(t >= 0 && Number.isInteger(t), "band must be a non-negative integer."), this._dependencyGraph.addNode(o, {
+                    n(t >= 0 && Number.isInteger(t), "band must be a non-negative integer.");
+                    let r = {};
+                    for (let E in _) {
+                        let t = _[E],
+                            o = e => t(e);
+                        R(o, "".concat(e, "_").concat(E)), r[E] = o
+                    }
+                    return this._dependencyGraph.addNode(o, {
                         name: e,
                         band: t,
-                        actionHandler: _,
+                        actionHandler: r,
                         storeDidChange: E
                     }), this._addToBand(o, t), this._invalidateCaches(), o
                 }
@@ -29365,6 +29447,12 @@
                 constructor() {
                     this._orderedActionHandlers = {}, this._orderedCallbackTokens = null, this._lastID = 1, this._dependencyGraph = new t.DepGraph
                 }
+            }
+
+            function R(e, _) {
+                Object.defineProperty(e, "name", {
+                    value: _
+                })
             }
         },
         805833: function(e, _, E) {
@@ -31913,7 +32001,7 @@
                 h = E("750028"),
                 P = E("801340"),
                 m = E("959714");
-            (O = t || (t = {}))[O.UNSPECIFIED = 0] = "UNSPECIFIED", O[O.MENTIONS = 1] = "MENTIONS", O[O.UNREADS = 2] = "UNREADS", O[O.TODOS = 3] = "TODOS", O[O.FOR_YOU = 4] = "FOR_YOU", O[O.GAME_INVITES = 5] = "GAME_INVITES", (A = o || (o = {}))[A.NO_PROGRESS = 0] = "NO_PROGRESS", A[A.JOIN_GUILD = 1] = "JOIN_GUILD", A[A.INVITE_USER = 2] = "INVITE_USER", A[A.CONTACT_SYNC = 4] = "CONTACT_SYNC", (R = n || (n = {}))[R.NO_GUILD_ONBOARDING = 0] = "NO_GUILD_ONBOARDING", R[R.GUILD_NOTICE_SHOWN = 1] = "GUILD_NOTICE_SHOWN", R[R.GUILD_NOTICE_CLEARED = 2] = "GUILD_NOTICE_CLEARED", (l = r || (r = {}))[l.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", l[l.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", l[l.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", l[l.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", (L = a || (a = {}))[L.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", L[L.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", L[L.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", L[L.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", L[L.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", L[L.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", L[L.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", L[L.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", L[L.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", L[L.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", L[L.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", L[L.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", L[L.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", L[L.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", L[L.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", L[L.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", L[L.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", L[L.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", L[L.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", L[L.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", L[L.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", L[L.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", L[L.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", L[L.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", L[L.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", L[L.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", L[L.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", L[L.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", L[L.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", L[L.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", L[L.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", L[L.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", L[L.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", L[L.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", L[L.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", L[L.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", L[L.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", L[L.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", L[L.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", L[L.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", L[L.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", L[L.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", L[L.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", L[L.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", L[L.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", L[L.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", L[L.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", L[L.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", L[L.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", L[L.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", L[L.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", L[L.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", L[L.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", L[L.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", L[L.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", L[L.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", L[L.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", L[L.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", L[L.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", L[L.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", L[L.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", L[L.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", L[L.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", L[L.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", L[L.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", L[L.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", L[L.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", L[L.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", L[L.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", L[L.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", L[L.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", L[L.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", L[L.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", L[L.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", L[L.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", L[L.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", L[L.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", L[L.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", L[L.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", L[L.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", L[L.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", L[L.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", L[L.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", L[L.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", L[L.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", L[L.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", L[L.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", L[L.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", L[L.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", L[L.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", L[L.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", L[L.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", L[L.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", L[L.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", L[L.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", L[L.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", L[L.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", L[L.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", L[L.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", L[L.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", L[L.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", L[L.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", L[L.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", L[L.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", L[L.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", L[L.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", L[L.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", L[L.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", L[L.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", L[L.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", L[L.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", L[L.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", L[L.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", L[L.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", L[L.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", L[L.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", L[L.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", L[L.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", L[L.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", L[L.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", L[L.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", L[L.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", L[L.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", L[L.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", L[L.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", L[L.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", L[L.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", L[L.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", L[L.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", L[L.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", L[L.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", L[L.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", L[L.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", L[L.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", L[L.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", L[L.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", L[L.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", L[L.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", L[L.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", L[L.ACTIVITY_COACH_MARK_GARTIC_PHONE = 192] = "ACTIVITY_COACH_MARK_GARTIC_PHONE", L[L.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", L[L.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", L[L.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", L[L.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", L[L.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", L[L.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", L[L.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", L[L.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", L[L.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", L[L.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", L[L.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", L[L.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", L[L.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", L[L.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", L[L.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", L[L.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", L[L.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", L[L.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", L[L.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", L[L.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", L[L.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", L[L.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", L[L.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", L[L.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", L[L.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", L[L.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", L[L.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", L[L.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", L[L.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", L[L.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", L[L.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", L[L.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", L[L.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", L[L.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", L[L.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", L[L.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", L[L.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", L[L.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", L[L.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", L[L.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", L[L.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", L[L.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", L[L.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", L[L.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", L[L.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", L[L.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", L[L.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", L[L.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", L[L.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", L[L.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", L[L.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", L[L.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", L[L.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", L[L.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", L[L.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", L[L.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", L[L.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", L[L.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", L[L.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", L[L.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", L[L.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", L[L.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", L[L.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", L[L.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", L[L.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", L[L.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", L[L.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", L[L.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", L[L.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", L[L.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", L[L.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", L[L.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", L[L.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", L[L.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", L[L.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", L[L.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", L[L.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", L[L.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", L[L.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", L[L.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", L[L.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", L[L.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", L[L.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", L[L.CLIPS_GUILD_PANEL_PREMIUM_EARLY_ACCESS_COACHMARK = 311] = "CLIPS_GUILD_PANEL_PREMIUM_EARLY_ACCESS_COACHMARK", L[L.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", L[L.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", L[L.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", L[L.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", L[L.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", L[L.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", L[L.RECURRING_EVENT_COACHMARK = 327] = "RECURRING_EVENT_COACHMARK", L[L.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", L[L.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", L[L.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", L[L.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", L[L.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", L[L.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", L[L.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", L[L.KRUNKER_STRIKE_COACHMARK = 339] = "KRUNKER_STRIKE_COACHMARK", L[L.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", L[L.COLLECTIBLES_SHOP_CYBERPUNK_NEW_BADGE = 341] = "COLLECTIBLES_SHOP_CYBERPUNK_NEW_BADGE", L[L.COLLECTIBLES_SHOP_CYBERPUNK_COACHMARK = 342] = "COLLECTIBLES_SHOP_CYBERPUNK_COACHMARK", L[L.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", L[L.COLLECTIBLES_SHOP_LUNARNEWYEAR_NEW_BADGE = 344] = "COLLECTIBLES_SHOP_LUNARNEWYEAR_NEW_BADGE", (u = i || (i = {}))[u.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", u[u.SHOW = 1] = "SHOW", u[u.BLUR = 2] = "BLUR", u[u.BLOCK = 3] = "BLOCK", (C = I || (I = {}))[C.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", C[C.DISABLED = 1] = "DISABLED", C[C.NON_FRIENDS = 2] = "NON_FRIENDS", C[C.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", (D = s || (s = {}))[D.OFF = 0] = "OFF", D[D.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", (c = T || (T = {}))[c.UNSET = 0] = "UNSET", c[c.DARK = 1] = "DARK", c[c.LIGHT = 2] = "LIGHT", (d = S || (S = {}))[d.MINT_APPLE = 0] = "MINT_APPLE", d[d.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", d[d.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", d[d.HANAMI = 3] = "HANAMI", d[d.SUNRISE = 4] = "SUNRISE", d[d.COTTON_CANDY = 5] = "COTTON_CANDY", d[d.LOFI_VIBES = 6] = "LOFI_VIBES", d[d.DESERT_KHAKI = 7] = "DESERT_KHAKI", d[d.SUNSET = 8] = "SUNSET", d[d.CHROMA_GLOW = 9] = "CHROMA_GLOW", d[d.FOREST = 10] = "FOREST", d[d.CRIMSON_MOON = 11] = "CRIMSON_MOON", d[d.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", d[d.MARS = 13] = "MARS", d[d.DUSK = 14] = "DUSK", d[d.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", d[d.EASTER_EGG = 16] = "EASTER_EGG", d[d.RETRO_STORM = 17] = "RETRO_STORM", d[d.NEON_NIGHTS = 18] = "NEON_NIGHTS", d[d.SEPIA = 19] = "SEPIA", d[d.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", d[d.AURORA = 21] = "AURORA", (U = N || (N = {}))[U.UNSET_FAVORITE_CHANNEL_TYPE = 0] = "UNSET_FAVORITE_CHANNEL_TYPE", U[U.REFERENCE_ORIGINAL = 1] = "REFERENCE_ORIGINAL", U[U.CATEGORY = 2] = "CATEGORY";
+            (O = t || (t = {}))[O.UNSPECIFIED = 0] = "UNSPECIFIED", O[O.MENTIONS = 1] = "MENTIONS", O[O.UNREADS = 2] = "UNREADS", O[O.TODOS = 3] = "TODOS", O[O.FOR_YOU = 4] = "FOR_YOU", O[O.GAME_INVITES = 5] = "GAME_INVITES", (A = o || (o = {}))[A.NO_PROGRESS = 0] = "NO_PROGRESS", A[A.JOIN_GUILD = 1] = "JOIN_GUILD", A[A.INVITE_USER = 2] = "INVITE_USER", A[A.CONTACT_SYNC = 4] = "CONTACT_SYNC", (R = n || (n = {}))[R.NO_GUILD_ONBOARDING = 0] = "NO_GUILD_ONBOARDING", R[R.GUILD_NOTICE_SHOWN = 1] = "GUILD_NOTICE_SHOWN", R[R.GUILD_NOTICE_CLEARED = 2] = "GUILD_NOTICE_CLEARED", (l = r || (r = {}))[l.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", l[l.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", l[l.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", l[l.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", (L = a || (a = {}))[L.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", L[L.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", L[L.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", L[L.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", L[L.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", L[L.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", L[L.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", L[L.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", L[L.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", L[L.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", L[L.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", L[L.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", L[L.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", L[L.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", L[L.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", L[L.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", L[L.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", L[L.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", L[L.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", L[L.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", L[L.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", L[L.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", L[L.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", L[L.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", L[L.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", L[L.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", L[L.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", L[L.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", L[L.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", L[L.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", L[L.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", L[L.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", L[L.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", L[L.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", L[L.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", L[L.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", L[L.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", L[L.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", L[L.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", L[L.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", L[L.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", L[L.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", L[L.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", L[L.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", L[L.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", L[L.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", L[L.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", L[L.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", L[L.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", L[L.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", L[L.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", L[L.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", L[L.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", L[L.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", L[L.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", L[L.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", L[L.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", L[L.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", L[L.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", L[L.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", L[L.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", L[L.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", L[L.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", L[L.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", L[L.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", L[L.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", L[L.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", L[L.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", L[L.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", L[L.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", L[L.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", L[L.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", L[L.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", L[L.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", L[L.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", L[L.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", L[L.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", L[L.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", L[L.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", L[L.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", L[L.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", L[L.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", L[L.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", L[L.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", L[L.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", L[L.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", L[L.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", L[L.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", L[L.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", L[L.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", L[L.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", L[L.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", L[L.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", L[L.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", L[L.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", L[L.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", L[L.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", L[L.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", L[L.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", L[L.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", L[L.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", L[L.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", L[L.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", L[L.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", L[L.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", L[L.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", L[L.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", L[L.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", L[L.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", L[L.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", L[L.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", L[L.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", L[L.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", L[L.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", L[L.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", L[L.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", L[L.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", L[L.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", L[L.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", L[L.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", L[L.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", L[L.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", L[L.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", L[L.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", L[L.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", L[L.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", L[L.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", L[L.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", L[L.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", L[L.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", L[L.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", L[L.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", L[L.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", L[L.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", L[L.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", L[L.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", L[L.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", L[L.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", L[L.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", L[L.ACTIVITY_COACH_MARK_GARTIC_PHONE = 192] = "ACTIVITY_COACH_MARK_GARTIC_PHONE", L[L.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", L[L.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", L[L.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", L[L.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", L[L.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", L[L.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", L[L.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", L[L.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", L[L.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", L[L.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", L[L.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", L[L.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", L[L.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", L[L.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", L[L.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", L[L.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", L[L.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", L[L.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", L[L.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", L[L.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", L[L.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", L[L.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", L[L.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", L[L.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", L[L.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", L[L.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", L[L.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", L[L.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", L[L.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", L[L.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", L[L.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", L[L.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", L[L.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", L[L.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", L[L.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", L[L.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", L[L.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", L[L.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", L[L.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", L[L.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", L[L.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", L[L.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", L[L.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", L[L.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", L[L.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", L[L.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", L[L.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", L[L.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", L[L.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", L[L.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", L[L.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", L[L.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", L[L.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", L[L.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", L[L.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", L[L.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", L[L.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", L[L.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", L[L.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", L[L.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", L[L.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", L[L.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", L[L.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", L[L.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", L[L.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", L[L.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", L[L.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", L[L.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", L[L.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", L[L.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", L[L.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", L[L.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", L[L.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", L[L.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", L[L.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", L[L.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", L[L.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", L[L.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", L[L.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", L[L.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", L[L.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", L[L.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", L[L.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", L[L.CLIPS_GUILD_PANEL_PREMIUM_EARLY_ACCESS_COACHMARK = 311] = "CLIPS_GUILD_PANEL_PREMIUM_EARLY_ACCESS_COACHMARK", L[L.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", L[L.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", L[L.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", L[L.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", L[L.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", L[L.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", L[L.RECURRING_EVENT_COACHMARK = 327] = "RECURRING_EVENT_COACHMARK", L[L.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", L[L.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", L[L.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", L[L.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", L[L.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", L[L.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", L[L.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", L[L.KRUNKER_STRIKE_COACHMARK = 339] = "KRUNKER_STRIKE_COACHMARK", L[L.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", L[L.COLLECTIBLES_SHOP_CYBERPUNK_NEW_BADGE = 341] = "COLLECTIBLES_SHOP_CYBERPUNK_NEW_BADGE", L[L.COLLECTIBLES_SHOP_CYBERPUNK_COACHMARK = 342] = "COLLECTIBLES_SHOP_CYBERPUNK_COACHMARK", L[L.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", L[L.COLLECTIBLES_SHOP_LUNARNEWYEAR_NEW_BADGE = 344] = "COLLECTIBLES_SHOP_LUNARNEWYEAR_NEW_BADGE", L[L.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", L[L.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", (u = i || (i = {}))[u.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", u[u.SHOW = 1] = "SHOW", u[u.BLUR = 2] = "BLUR", u[u.BLOCK = 3] = "BLOCK", (C = I || (I = {}))[C.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", C[C.DISABLED = 1] = "DISABLED", C[C.NON_FRIENDS = 2] = "NON_FRIENDS", C[C.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", (D = s || (s = {}))[D.OFF = 0] = "OFF", D[D.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", (c = T || (T = {}))[c.UNSET = 0] = "UNSET", c[c.DARK = 1] = "DARK", c[c.LIGHT = 2] = "LIGHT", (d = S || (S = {}))[d.MINT_APPLE = 0] = "MINT_APPLE", d[d.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", d[d.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", d[d.HANAMI = 3] = "HANAMI", d[d.SUNRISE = 4] = "SUNRISE", d[d.COTTON_CANDY = 5] = "COTTON_CANDY", d[d.LOFI_VIBES = 6] = "LOFI_VIBES", d[d.DESERT_KHAKI = 7] = "DESERT_KHAKI", d[d.SUNSET = 8] = "SUNSET", d[d.CHROMA_GLOW = 9] = "CHROMA_GLOW", d[d.FOREST = 10] = "FOREST", d[d.CRIMSON_MOON = 11] = "CRIMSON_MOON", d[d.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", d[d.MARS = 13] = "MARS", d[d.DUSK = 14] = "DUSK", d[d.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", d[d.EASTER_EGG = 16] = "EASTER_EGG", d[d.RETRO_STORM = 17] = "RETRO_STORM", d[d.NEON_NIGHTS = 18] = "NEON_NIGHTS", d[d.SEPIA = 19] = "SEPIA", d[d.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", d[d.AURORA = 21] = "AURORA", (U = N || (N = {}))[U.UNSET_FAVORITE_CHANNEL_TYPE = 0] = "UNSET_FAVORITE_CHANNEL_TYPE", U[U.REFERENCE_ORIGINAL = 1] = "REFERENCE_ORIGINAL", U[U.CATEGORY = 2] = "CATEGORY";
             class G extends M.MessageType {
                 create(e) {
                     let _ = {};
@@ -35716,4 +35804,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.a52132cf24852b658f76.js.map
+//# sourceMappingURL=90486.0adcfba4918aaeb5f46a.js.map
