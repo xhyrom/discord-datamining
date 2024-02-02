@@ -2813,6 +2813,7 @@
                 SENSITIVE_CONTENT: "Content warning: images or videos may contain nudity, violence, or other sensitive content",
                 IMAGE_ALT: "Alt",
                 SUPPRESS_ALL_EMBEDS: "Remove all embeds",
+                APP_TAG: "APP",
                 BOT_TAG_BOT: "BOT",
                 BOT_TAG_SERVER: "SERVER",
                 REPORT_MESSAGE_MENU_OPTION: "Report Message",
@@ -18200,7 +18201,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263653", ", Version Hash: ").concat("f1a004e90d1f840d307c9714d19d8a48fb00daa4")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263661", ", Version Hash: ").concat("9aa46d9c019218340f6eda4767aae17a855d8c73")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20444,8 +20445,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "263653", "263653"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263653")), _ = 0), _
+                let _ = parseInt((e = "263661", "263661"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263661")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35806,4 +35807,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.655f8d54d12774740d0a.js.map
+//# sourceMappingURL=90486.e323ef9bc2a67e0dba93.js.map
