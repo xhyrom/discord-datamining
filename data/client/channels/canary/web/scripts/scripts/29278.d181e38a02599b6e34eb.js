@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -51590,6 +51590,75 @@
                     return s
                 }
             })
+        },
+        996554: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                AppLauncherDesktopExperiment: function() {
+                    return s
+                },
+                AppLauncherOnboardingExperiment: function() {
+                    return r
+                }
+            });
+            var i = n("862205");
+            (0, i.createExperiment)({
+                kind: "user",
+                id: "2023-06_app_launcher_mobile",
+                label: "App Launcher - Mobile",
+                defaultConfig: {
+                    entrypointEnabled: !1,
+                    appLauncherEnabled: !1,
+                    entrypointToSlashUIEnabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable the app launcher feature on mobile",
+                    config: {
+                        entrypointEnabled: !0,
+                        appLauncherEnabled: !0,
+                        entrypointToSlashUIEnabled: !1
+                    }
+                }, {
+                    id: 2,
+                    label: 'Enable "Apps" button opening existing slash command UI',
+                    config: {
+                        entrypointEnabled: !0,
+                        appLauncherEnabled: !1,
+                        entrypointToSlashUIEnabled: !0
+                    }
+                }]
+            });
+            let s = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2023-11_app_launcher_desktop",
+                    label: "App Launcher - Desktop",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable the app launcher feature on desktop",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2024-01_app_launcher_onboarding",
+                    label: "App Launcher - Onboarding",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable onboarding within App Launcher",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                })
         },
         926274: function(e, t, n) {
             "use strict";
@@ -108699,7 +108768,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return _
                 }
             });
             var i = n("37983");
@@ -108707,88 +108776,96 @@
             var s = n("414456"),
                 r = n.n(s),
                 a = n("414055"),
-                o = n("486952"),
-                l = n("988268"),
-                u = n("782340"),
-                d = n("647431");
-            let c = e => {
+                o = n("996554"),
+                l = n("486952"),
+                u = n("988268"),
+                d = n("782340"),
+                c = n("647431");
+            let f = e => {
                 let t, {
                         invertColor: n = !1,
-                        type: s = l.BotTagTypes.BOT,
-                        className: c,
-                        verified: f,
-                        hideIcon: _ = !1,
-                        useRemSizes: h = !1,
-                        children: g = []
+                        type: s = u.BotTagTypes.BOT,
+                        className: f,
+                        verified: _,
+                        hideIcon: h = !1,
+                        useRemSizes: g = !1,
+                        children: m = []
                     } = e,
-                    m = null,
-                    E = u.default.Messages.VERIFIED_BOT_TOOLTIP;
+                    E = null,
+                    p = d.default.Messages.VERIFIED_BOT_TOOLTIP,
+                    {
+                        enabled: v
+                    } = o.AppLauncherOnboardingExperiment.useExperiment({
+                        location: "Bot Tag"
+                    }, {
+                        autoTrackExposure: !1
+                    });
                 switch (s) {
-                    case l.BotTagTypes.SYSTEM_DM:
-                    case l.BotTagTypes.OFFICIAL:
-                        f = !0, E = u.default.Messages.DISCORD_SYSTEM_MESSAGE_BOT_TAG_TOOLTIP, m = u.default.Messages.SYSTEM_DM_TAG_SYSTEM;
+                    case u.BotTagTypes.SYSTEM_DM:
+                    case u.BotTagTypes.OFFICIAL:
+                        _ = !0, p = d.default.Messages.DISCORD_SYSTEM_MESSAGE_BOT_TAG_TOOLTIP, E = d.default.Messages.SYSTEM_DM_TAG_SYSTEM;
                         break;
-                    case l.BotTagTypes.SERVER:
-                        m = u.default.Messages.BOT_TAG_SERVER;
+                    case u.BotTagTypes.SERVER:
+                        E = d.default.Messages.BOT_TAG_SERVER;
                         break;
-                    case l.BotTagTypes.ORIGINAL_POSTER:
-                        m = u.default.Messages.BOT_TAG_FORUM_ORIGINAL_POSTER;
+                    case u.BotTagTypes.ORIGINAL_POSTER:
+                        E = d.default.Messages.BOT_TAG_FORUM_ORIGINAL_POSTER;
                         break;
-                    case l.BotTagTypes.STAFF_ONLY_DM:
-                        m = u.default.Messages.STAFF_BADGE_TOOLTIP;
+                    case u.BotTagTypes.STAFF_ONLY_DM:
+                        E = d.default.Messages.STAFF_BADGE_TOOLTIP;
                         break;
-                    case l.BotTagTypes.AI:
-                        f = !0, E = u.default.Messages.AI_GENERATED_TOOLTIP, m = u.default.Messages.AI_TAG;
+                    case u.BotTagTypes.AI:
+                        _ = !0, p = d.default.Messages.AI_GENERATED_TOOLTIP, E = d.default.Messages.AI_TAG;
                         break;
-                    case l.BotTagTypes.REMIX:
-                        f = !1, m = u.default.Messages.REMIXING_TAG;
+                    case u.BotTagTypes.REMIX:
+                        _ = !1, E = d.default.Messages.REMIXING_TAG;
                         break;
-                    case l.BotTagTypes.BOT:
+                    case u.BotTagTypes.BOT:
                     default:
-                        m = u.default.Messages.BOT_TAG_BOT
+                        E = v ? d.default.Messages.APP_TAG : d.default.Messages.BOT_TAG_BOT
                 }
-                let p = s === l.BotTagTypes.ORIGINAL_POSTER,
-                    v = s === l.BotTagTypes.REMIX,
-                    S = null;
-                f && (S = (0, i.jsx)(a.Tooltip, {
-                    text: E,
+                let S = s === u.BotTagTypes.ORIGINAL_POSTER,
+                    T = s === u.BotTagTypes.REMIX,
+                    I = null;
+                _ && (I = (0, i.jsx)(a.Tooltip, {
+                    text: p,
                     align: "center",
                     position: "top",
-                    children: e => (0, i.jsx)(o.default, {
+                    children: e => (0, i.jsx)(l.default, {
                         ...e,
-                        className: d.botTagVerified
+                        className: c.botTagVerified
                     })
-                })), t = s === l.BotTagTypes.AI ? d.botTagAI : n ? d.botTagInvert : d.botTagRegular;
-                let T = e => (0, i.jsxs)("span", {
+                })), t = s === u.BotTagTypes.AI ? c.botTagAI : n ? c.botTagInvert : c.botTagRegular;
+                let C = e => (0, i.jsxs)("span", {
                     ...e,
-                    className: r(c, t, h ? d.rem : d.px, {
-                        [d.botTagOP]: p,
-                        [d.botTagRemix]: v
+                    className: r(f, t, g ? c.rem : c.px, {
+                        [c.botTagOP]: S,
+                        [c.botTagRemix]: T
                     }),
-                    children: [_ ? null : S, g, (0, i.jsx)("span", {
-                        className: d.botText,
-                        children: m
+                    children: [h ? null : I, m, (0, i.jsx)("span", {
+                        className: c.botText,
+                        children: E
                     })]
                 });
                 switch (s) {
-                    case l.BotTagTypes.REMIX:
+                    case u.BotTagTypes.REMIX:
                         return (0, i.jsx)(a.Tooltip, {
-                            text: u.default.Messages.REMIXING_DOWNLOAD_APP,
+                            text: d.default.Messages.REMIXING_DOWNLOAD_APP,
                             position: "top",
-                            children: e => T(e)
+                            children: e => C(e)
                         });
-                    case l.BotTagTypes.ORIGINAL_POSTER:
+                    case u.BotTagTypes.ORIGINAL_POSTER:
                         return (0, i.jsx)(a.Tooltip, {
-                            text: u.default.Messages.BOT_TAG_FORUM_ORIGINAL_POSTER_TOOLTIP,
+                            text: d.default.Messages.BOT_TAG_FORUM_ORIGINAL_POSTER_TOOLTIP,
                             position: "top",
-                            children: e => T(e)
+                            children: e => C(e)
                         });
                     default:
-                        return T()
+                        return C()
                 }
             };
-            c.Types = l.BotTagTypes;
-            var f = c
+            f.Types = u.BotTagTypes;
+            var _ = f
         },
         201959: function(e, t, n) {
             "use strict";
@@ -116468,7 +116545,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263653"
+                                build_number: "263661"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -132634,4 +132711,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.68cff1cb816b48c2de95.js.map
+//# sourceMappingURL=29278.d181e38a02599b6e34eb.js.map
