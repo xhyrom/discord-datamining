@@ -26962,8 +26962,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -86565,7 +86565,7 @@ html .tabBadge__002b3 {
 }
 
 .shopCard_f7822b {
-    border-radius: 30px;
+    border-radius: 16px;
     border: 2px solid transparent;
     grid-column: auto;
     width: 100%;
@@ -86777,8 +86777,7 @@ html .tabBadge__002b3 {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
-    border-radius: 30px
+    overflow: hidden
 }
 
 .productName_ece1e1 {
@@ -127580,4 +127579,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ac76b8f6da16350be9fb.css.map*/
+/*# sourceMappingURL=app.b128c20b0e47f1140286.css.map*/
