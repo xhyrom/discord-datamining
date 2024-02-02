@@ -35,7 +35,7 @@
 <h2 id="h_01HGXKDMWGZ5DPKJPAPX7ZHZK3">Ask to Join</h2>
 <p>If your friend is currently battling their way through a game, instead of being able to join directly, you can instead tap on <strong>Ask to Join</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19583827121559" width="241" height="135"></p>
-<p>Once your friend has completed their battle, they can then accept your invite and you can join them!</p>
+<p>You will receive an invite when your friend accepts it, or an invite will be automatically sent.</p>
 <p>If someone requests to join your game, you'll get a message in-game (displayed through the <a href="https://support.discord.com/hc/en-us/articles/217659737">Discord overlay</a>) and all you have to do is follow the on screen prompt to approve.</p>
 <p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19583827129879" width="431" height="54"></span></p>
 <h1 id="h_01HGXKDMWGS7JXRP7SEHNWYCQT">Spectating a friend in Game</h1>
