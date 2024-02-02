@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29278"], {
+    ["42266"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -60856,7 +60856,7 @@
                 } = function(e) {
                     let t = e.filter(e => k(e) && (0, v.shouldRedactExplicitContent)(e)),
                         n = e.map(e => {
-                            if (null != e && "referenced_message" in e && null != e.referenced_message && k(e.referenced_message)) return e.referenced_message
+                            if (null != e && "referenced_message" in e && null != e.referenced_message && k(e.referenced_message) && (0, v.shouldRedactExplicitContent)(e)) return e.referenced_message
                         }).filter(function(e) {
                             return null != e
                         });
@@ -61003,7 +61003,7 @@
                             n = e.map(e => {
                                 if (T.MessageTypesWithLazyLoadedReferences.has(e.type) && null != e.messageReference) {
                                     let t = d.default.getMessageByReference(e.messageReference);
-                                    if (t.state === d.ReferencedMessageState.LOADED && null != t.message && k(t.message)) return t.message
+                                    if (t.state === d.ReferencedMessageState.LOADED && null != t.message && k(t.message) && (0, v.shouldRedactExplicitContent)(e)) return t.message
                                 }
                             }).filter(function(e) {
                                 return null != e
@@ -116545,7 +116545,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263695"
+                                build_number: "263711"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -132711,4 +132711,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.6e51927dbb63f4baf0b1.js.map
+//# sourceMappingURL=42266.0a0ae4d9715e9de5c0ed.js.map
