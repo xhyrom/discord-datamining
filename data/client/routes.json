@@ -4740,7 +4740,7 @@
     ]
   },
   "POLL_ANSWERS": {
-    "url": "/channels/:param/polls/:param/answers",
+    "url": "/channels/:param/polls/:param/answers/@me",
     "allowed_methods": [
       "OPTIONS",
       "PUT"
