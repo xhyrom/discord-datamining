@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_expanded_gift_entry_points_profile_panel",
+    "label": "Expanded Gift Entry Points - Profile Panel",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show Gift Entry Point in Profile Panel",
+      "Treatment 2: Show Gift Entry Point in Profile Panel and Hide Channel Gift Button"
+    ],
+    "hash": 869298046,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "hideChannelGiftButton"
+    ]
+  }
+}

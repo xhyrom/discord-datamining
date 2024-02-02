@@ -7,14 +7,18 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Can support secure frames for voice/video",
-      "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation"
+      "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation",
+      "Treatment 3: Can support secure frames above protocol version 8",
+      "Treatment 4: Can support secure frames above protocol version 108 (MLS)"
     ],
     "hash": 2916044329,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3,
+      4
     ],
     "holdout": {
       "name": null,
@@ -22,6 +26,7 @@
     },
     "aa_mode": false,
     "config_keys": [
+      "protocolVersionFloor",
       "canSupportSecureFrames",
       "canSupportMls"
     ]
@@ -30,11 +35,19 @@
     "populations": [
       {
         "buckets": {
+          "3": {
+            "rollout": [
+              {
+                "start": 9000,
+                "end": 10000
+              }
+            ]
+          },
           "none": {
             "rollout": [
               {
                 "start": 0,
-                "end": 10000
+                "end": 9000
               }
             ]
           }
@@ -49,7 +62,7 @@
         "175987125626339328",
         "125309031647674368"
       ],
-      "2": [
+      "4": [
         "822219052402606132",
         "546126472792768512",
         "564926287152545803"
