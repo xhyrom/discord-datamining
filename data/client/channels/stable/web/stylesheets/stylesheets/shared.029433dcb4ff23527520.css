@@ -19824,33 +19824,38 @@ html.disable-forced-colors * {
     height: 100%
 }
 
-.easterEggAnimation__716bb {
+.easterEggAnimationClickTarget__54ca8 {
     position: absolute;
-    width: var(--custom-user-premium-guild-subscription-easter-egg-size);
-    height: var(--custom-user-premium-guild-subscription-easter-egg-size)
+    cursor: pointer;
+    pointer-events: all
 }
 
-.easterEggAnimationTopLeft__84c80 {
+.easterEggAnimationClickTargetTopLeft__80769 {
     top: 0;
     left: 0;
     transform: scale(-1)
 }
 
-.easterEggAnimationTopRight__0dc9b {
+.easterEggAnimationClickTargetTopRight__3deea {
     top: 0;
     right: 0;
     transform: scaley(-1)
 }
 
-.easterEggAnimationBottomLeft_df26ca {
+.easterEggAnimationClickTargetBottomLeft__88550 {
     bottom: 0;
     left: 0;
     transform: scalex(-1)
 }
 
-.easterEggAnimationBottomRight_be11c9 {
+.easterEggAnimationClickTargetBottomRight_b471ae {
     bottom: 0;
     right: 0
+}
+
+.easterEggAnimation__716bb {
+    width: var(--custom-user-premium-guild-subscription-easter-egg-size);
+    height: var(--custom-user-premium-guild-subscription-easter-egg-size)
 }
 
 .easterEggAnimationHideLeaf_d46990 .userPremiumGuildSubscriptionLeaf,
@@ -27460,4 +27465,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.b26c3e34f71899dcfce5.css.map*/
+/*# sourceMappingURL=shared.029433dcb4ff23527520.css.map*/
