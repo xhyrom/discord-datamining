@@ -2337,16 +2337,6 @@
                 textInputError: "textInputError__0ac51"
             }
         },
-        131279: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                actionBarContainer: "actionBarContainer__8649e",
-                applicationIcon: "applicationIcon__1f077",
-                textContainer: "textContainer__33b66",
-                textSubtitle: "textSubtitle_eacff6",
-                userSummaryContainer: "userSummaryContainer__5f310"
-            }
-        },
         355255: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -4402,15 +4392,6 @@
                 floating: "floating_f021e2",
                 notFloating: "notFloating__80043",
                 resizeHandle: "resizeHandle_f1a098"
-            }
-        },
-        703648: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                activityActionBarContainer: "activityActionBarContainer_cd73d4",
-                chatContainer: "chatContainer__23434",
-                container: "container__93316",
-                overlayContainer: "overlayContainer_b3bf6b"
             }
         },
         881235: function(e, t, n) {
