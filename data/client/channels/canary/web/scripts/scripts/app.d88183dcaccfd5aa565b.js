@@ -20234,6 +20234,7 @@
                 details: "details__695f1",
                 detailsContainer: "detailsContainer_d19ecf",
                 discordWordmark: "discordWordmark__376d8",
+                discountPill: "discountPill_dde3e3",
                 externalButton: "externalButton__64cae",
                 failedPayment: "failedPayment__2e662",
                 image: "image__88ebc",
@@ -20243,7 +20244,8 @@
                 tier1: "tier1__83f39",
                 tier2: "tier2__611e8",
                 toolsButton: "toolsButton_cea0b4",
-                toolsButtons: "toolsButtons__93f4e"
+                toolsButtons: "toolsButtons__93f4e",
+                wordMark: "wordMark__4f8f8"
             }
         },
         539735: function(e, t, n) {
