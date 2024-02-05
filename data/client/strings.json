@@ -3615,6 +3615,7 @@
   "CHAT_GESTURES": "\"Chat Gestures\"",
   "SWIPE_TO_REPLY": "\"Swipe to Reply\"",
   "SWIPE_TO_REPLY_HINT": "\"Currently, swiping right-to-left opens Member List. Toggle to enable swiping to reply to a message.\"",
+  "SWIPE_TO_REPLY_COACHMARK": "\"If you prefer to swipe to reply to a message, you can change the default behavior in [Settings](onClick).\"",
   "CONNECTED_ACCOUNTS": "\"Connected Accounts\"",
   "CONNECTED_ACCOUNTS_NONE_TITLE": "\"No Connections\"",
   "CONNECTED_ACCOUNTS_NONE": "\"Connect your accounts to unlock special Discord integrations\"",
