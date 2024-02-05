@@ -48326,83 +48326,6 @@ html .progress__4ef76 {
     padding: 0
 }
 
-.actionBarContainer__8649e {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--background-floating);
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 24px;
-    margin-right: 8px;
-    margin-left: 8px;
-    min-width: 232px;
-    width: 388px;
-    align-items: center;
-    box-shadow: var(--elevation-stroke), var(--elevation-high)
-}
-
-.actionBarContainer__8649e:hover {
-    cursor: pointer
-}
-
-.applicationIcon__1f077 {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    border-width: 1px;
-    margin-right: 8px;
-    background-size: 100%
-}
-
-.textContainer__33b66 {
-    display: flex;
-    flex-direction: column
-}
-
-.textSubtitle_eacff6 {
-    overflow: hidden;
-    white-space: nowrap
-}
-
-.userSummaryContainer__5f310 {
-    margin-left: auto
-}
-
-.container__93316 {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%
-}
-
-.chatContainer__23434 {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: absolute
-}
-
-.overlayContainer_b3bf6b {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    pointer-events: none
-}
-
-.activityActionBarContainer_cd73d4 {
-    display: flex;
-    width: 100%;
-    margin-top: 16px;
-    pointer-events: all;
-    justify-content: center
-}
-
 .container__42884 {
     position: relative;
     padding: var(--custom-channel-notice-padding);
@@ -127483,4 +127406,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a75a2181b27a406c36b9.css.map*/
+/*# sourceMappingURL=app.ee0a59b3beeee9bbb34a.css.map*/
