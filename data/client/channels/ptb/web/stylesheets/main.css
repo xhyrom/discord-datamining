@@ -26684,6 +26684,17 @@ html .progress__4ef76 {
     align-items: center
 }
 
+.discountPill_dde3e3 {
+    position: relative;
+    top: 5px;
+    margin-left: 8px
+}
+
+.wordMark__4f8f8 {
+    display: flex;
+    flex-direction: row
+}
+
 .premiumSubscriptionAccountCredit__6bab4 {
     border-radius: 5px;
     padding: 8px 0;
@@ -26966,8 +26977,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -127406,4 +127417,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ee0a59b3beeee9bbb34a.css.map*/
+/*# sourceMappingURL=app.3bb7afba140409a69a70.css.map*/
