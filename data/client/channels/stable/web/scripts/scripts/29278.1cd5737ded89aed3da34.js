@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -49466,9 +49466,6 @@
                 },
                 useActivitiesInTextButtonVisibility: function() {
                     return _
-                },
-                useIsActivitiesInTextActionBarEnabled: function() {
-                    return h
                 }
             });
             var i = n("298386"),
@@ -49480,24 +49477,13 @@
                     id: "2023-08_activities_in_text",
                     label: "Activities in Text User",
                     defaultConfig: {
-                        enabled: !1,
-                        actionBarEnabled: !1
+                        enabled: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "enable Activities in text channels",
                         config: {
                             enabled: !0,
-                            actionBarEnabled: !1,
-                            showInOmniButtonMenu: !0,
-                            showChatInputButton: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "enable Activities in text channels with action bar",
-                        config: {
-                            enabled: !0,
-                            actionBarEnabled: !0,
                             showInOmniButtonMenu: !0,
                             showChatInputButton: !1
                         }
@@ -49506,7 +49492,6 @@
                         label: "enable Activities in text with the rocket button in chat input",
                         config: {
                             enabled: !0,
-                            actionBarEnabled: !1,
                             showInOmniButtonMenu: !1,
                             showChatInputButton: !0
                         }
@@ -49517,26 +49502,23 @@
                     id: "2023-11_activities_in_text_guild",
                     label: "Activities in Text Guild",
                     defaultConfig: {
-                        enabled: !1,
-                        actionBarEnabled: !1
+                        enabled: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "enable Activities in text channels",
                         config: {
                             enabled: !0,
-                            actionBarEnabled: !1,
                             showInOmniButtonMenu: !0,
                             showChatInputButton: !1
                         }
                     }, {
-                        id: 2,
-                        label: "enable Activities in text channels with action bar",
+                        id: 3,
+                        label: "enable Activities in text with the rocket button in chat input",
                         config: {
                             enabled: !0,
-                            actionBarEnabled: !0,
-                            showInOmniButtonMenu: !0,
-                            showChatInputButton: !1
+                            showInOmniButtonMenu: !1,
+                            showChatInputButton: !0
                         }
                     }]
                 });
@@ -49589,18 +49571,6 @@
                     showInOmniButtonMenu: r.showInOmniButtonMenu,
                     showChatInputButton: r.showChatInputButton
                 } : null
-            }
-
-            function h(e, t) {
-                let n = (0, s.useStateFromStores)([a.default], () => a.default.getChannel(e)),
-                    i = (null == n ? void 0 : n.guild_id) != null ? l : o,
-                    r = i.useExperiment({
-                        guildId: null == n ? void 0 : n.guild_id,
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    });
-                return r.actionBarEnabled
             }
         },
         810793: function(e, t, n) {
@@ -50418,7 +50388,7 @@
                 LANDSCAPE_ACTIVITY_ASPECT_RATIO: function() {
                     return o
                 }
-            }), (r = i || (i = {})).ACTION_BAR = "action_bar", r.DISCONNECTED = "disconnected", r.LAUNCHING_WITH_ORIENTATION_CHANGE = "launching_with_orientation_change", r.PANEL = "panel", r.PIP = "pip", (a = s || (s = {}))[a.NO_CHAT = 0] = "NO_CHAT", a[a.RESIZABLE = 1] = "RESIZABLE";
+            }), (r = i || (i = {})).DISCONNECTED = "disconnected", r.LAUNCHING_WITH_ORIENTATION_CHANGE = "launching_with_orientation_change", r.PANEL = "panel", r.PIP = "pip", (a = s || (s = {}))[a.NO_CHAT = 0] = "NO_CHAT", a[a.RESIZABLE = 1] = "RESIZABLE";
             let o = 16 / 9
         },
         644223: function(e, t, n) {
@@ -116580,7 +116550,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263796"
+                                build_number: "263826"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -132746,4 +132716,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.ff8d29739f86c99a41bf.js.map
+//# sourceMappingURL=29278.1cd5737ded89aed3da34.js.map
