@@ -5104,6 +5104,8 @@
   "INVITE_GUILD_CONTACT_MESSAGE_PLACEHOLDER": "\"Join this server on Discord !!{link}!!\"",
   "INVITE_TAP_TO_INVITE": "\"Tap to Invite\"",
   "INVITE_YOUR_CONTACTS": "\"Your Contacts\"",
+  "INVITE_YOUR_CONTACTS_HEADER": "\"Invite Your Contacts\"",
+  "SHOW_ALL_WITH_COUNT": "\"Show all ({count})\"",
   "INVITE_CONTACTS_HEADER": "\"Contacts You Should Invite — {count}\"",
   "INVITE_CONTACTS_EMPTY_TITLE": "\"Find your friends\"",
   "INVITE_CONTACTS_EMPTY_BODY": "\"By syncing your contacts, Discord can find your friends and help them find you.\"",
