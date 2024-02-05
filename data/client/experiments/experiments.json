@@ -5844,7 +5844,6 @@
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: enable Activities in text channels",
-        "Treatment 2: enable Activities in text channels with action bar",
         "Treatment 3: enable Activities in text with the rocket button in chat input"
       ],
       "hash": 1295440499,
@@ -5852,7 +5851,6 @@
         -1,
         0,
         1,
-        2,
         3
       ],
       "holdout": {},
@@ -10203,14 +10201,14 @@
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: enable Activities in text channels",
-        "Treatment 2: enable Activities in text channels with action bar"
+        "Treatment 3: enable Activities in text with the rocket button in chat input"
       ],
       "hash": 1689901851,
       "buckets": [
         -1,
         0,
         1,
-        2
+        3
       ],
       "holdout": {
         "name": null,
