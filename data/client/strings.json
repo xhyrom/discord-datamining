@@ -16368,6 +16368,7 @@
   "SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_HEADER": "\"Unable to Mark as Not Sensitive\"",
   "SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_BODY": "\"We don't store blocked media permanently. Since this media was uploaded a while ago, the option to mark it as not sensitive has expired.\"",
   "SAFETY_WARNING_BANNER_CLOSE_A11Y": "\"Close\"",
+  "SAFETY_TOOLS_BUTTON_LABEL": "\"Open Safety Tools\"",
   "STRANGER_DANGER_BANNER_HEADER": "\"Unwanted message?\"",
   "STRANGER_DANGER_BANNER_DESCRIPTION": "\"If you don't want to chat with this person, you can block or mute them.\"",
   "STRANGER_DANGER_BANNER_MORE_TIPS": "\"More tips\"",
