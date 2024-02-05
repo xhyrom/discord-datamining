@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["98346"], {
+    ["807"], {
         203472: function(e, t, n) {
             "use strict";
             e.exports = n.p + "72eaa596042042be6259.svg"
@@ -1272,9 +1272,9 @@
                 _ = n("99795"),
                 T = n("49111"),
                 v = n("782340"),
-                A = n("2081");
+                I = n("2081");
 
-            function I(e, t) {
+            function A(e, t) {
                 switch (e) {
                     case _.ParticipantTypes.ACTIVITY:
                         return v.default.Messages.EMBEDDED_ACTIVITIES_NUM_PARTICIPANTS.format({
@@ -1297,23 +1297,23 @@
                     participantType: s,
                     channelId: l,
                     handleUserContextMenu: u
-                } = e, o = I(s, t.length);
+                } = e, o = A(s, t.length);
                 return (0, a.jsx)(c.Dialog, {
                     "aria-label": o,
-                    className: A.popoutWrapper,
+                    className: I.popoutWrapper,
                     children: (0, a.jsxs)(c.Scroller, {
-                        className: A.scroller,
+                        className: I.scroller,
                         children: [(0, a.jsx)(c.Heading, {
                             variant: "heading-deprecated-12/semibold",
-                            className: A.memberListHeader,
+                            className: I.memberListHeader,
                             children: o
                         }), (0, a.jsx)("div", {
                             children: t.map(e => (0, a.jsx)(C.default, {
                                 guildId: null != r ? r : void 0,
-                                className: i(A.memberListItem, {
-                                    [A.popoutDisabled]: n
+                                className: i(I.memberListItem, {
+                                    [I.popoutDisabled]: n
                                 }),
-                                textClassName: A.memberListItemText,
+                                textClassName: I.memberListItemText,
                                 user: e,
                                 disablePopout: n,
                                 nick: g.default.getNickname(r, l, e),
@@ -1332,17 +1332,17 @@
                     maxVisibleUsers: s = 3,
                     className: l,
                     participantType: u
-                } = e, o = I(u, t.length), d = t.length < s ? t.map(e => (0, a.jsx)("div", {
-                    className: A.viewersTooltipItem,
+                } = e, o = A(u, t.length), d = t.length < s ? t.map(e => (0, a.jsx)("div", {
+                    className: I.viewersTooltipItem,
                     children: g.default.getName(n, r, e)
                 }, e.id)) : o;
                 return (0, a.jsx)(c.TooltipContainer, {
                     text: d,
                     "aria-label": o,
                     children: (0, a.jsxs)("div", {
-                        className: i(A.viewers, l),
+                        className: i(I.viewers, l),
                         children: [(0, a.jsx)(m.default, {
-                            className: A.viewersIcon
+                            className: I.viewersIcon
                         }), (0, a.jsx)("span", {
                             "aria-hidden": "true",
                             children: t.length
@@ -1361,7 +1361,7 @@
                     compact: m = !1,
                     disableInteraction: g = !1,
                     maxVisibleUsers: v = 3
-                } = e, [I, N] = r.useState(!1), L = r.useRef(new d.DelayedCall(150, () => N(!1))), O = (0, o.useStateFromStoresArray)([p.default, E.default], () => {
+                } = e, [A, N] = r.useState(!1), L = r.useRef(new d.DelayedCall(150, () => N(!1))), O = (0, o.useStateFromStoresArray)([p.default, E.default], () => {
                     if (l.type === _.ParticipantTypes.STREAM) {
                         let e = p.default.getViewerIds(l.id);
                         return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(S.isNotNullish) : R
@@ -1371,7 +1371,7 @@
                     L.current.cancel(), N(!0)
                 }, []), P = r.useCallback(() => {
                     L.current.delay()
-                }, []), D = r.useCallback((e, t) => {
+                }, []), b = r.useCallback((e, t) => {
                     y(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
@@ -1393,14 +1393,14 @@
                     className: C,
                     participantType: l.type
                 });
-                let b = u(O).take(v).map(e => (0, a.jsx)(c.Avatar, {
+                let D = u(O).take(v).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
-                    className: A.viewer
+                    className: I.viewer
                 }, e.id)).value();
-                return O.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
-                    className: A.overflow,
+                return O.length > v && (D[D.length - 1] = (0, a.jsxs)("div", {
+                    className: I.overflow,
                     children: ["+", O.length - v + 1]
                 }, "overflow")), (0, a.jsx)(h.default, {
                     section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
@@ -1410,17 +1410,17 @@
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
                                 participantType: l.type,
-                                handleUserContextMenu: D,
+                                handleUserContextMenu: b,
                                 guildId: s,
                                 channelId: t,
                                 users: O,
                                 disableInteraction: g
                             }),
-                            shouldShow: I,
+                            shouldShow: A,
                             position: "top",
                             children: () => (0, a.jsx)("div", {
-                                className: i(A.viewers, C),
-                                children: b
+                                className: i(I.viewers, C),
+                                children: D
                             })
                         })
                     })
@@ -1506,11 +1506,11 @@
                     preset: S,
                     resolution: g,
                     fps: _
-                } = (0, s.useStateFromStoresObject)([d.default], () => d.default.getState()), T = (0, s.useStateFromStores)([f.default], () => f.default.getGoLiveSource()), v = (0, s.useStateFromStores)([h.default], () => h.default.getCurrentUser()), A = (0, s.useStateFromStores)([c.default], () => {
+                } = (0, s.useStateFromStoresObject)([d.default], () => d.default.getState()), T = (0, s.useStateFromStores)([f.default], () => f.default.getGoLiveSource()), v = (0, s.useStateFromStores)([h.default], () => h.default.getCurrentUser()), I = (0, s.useStateFromStores)([c.default], () => {
                     var t;
                     return null === (t = c.default.getGuild(null == e ? void 0 : e.guildId)) || void 0 === t ? void 0 : t.premiumTier
                 }), {
-                    location: I
+                    location: A
                 } = (0, u.useAnalyticsContext)(), M = r.useCallback((e, r, s, u) => {
                     if (e) {
                         if (null != T) {
@@ -1533,7 +1533,7 @@
                     } else {
                         var o, d;
                         o = t, d = {
-                            ...I,
+                            ...A,
                             object: p.AnalyticsObjects.RADIO_ITEM,
                             objectType: u
                         }, (0, i.openModalLazy)(async () => {
@@ -1548,14 +1548,14 @@
                             contextKey: o === p.AppContext.POPOUT ? i.POPOUT_MODAL_CONTEXT : i.DEFAULT_MODAL_CONTEXT
                         })
                     }
-                }, [t, I, T]);
+                }, [t, A, T]);
                 if (null == e) return null;
                 let x = S === E.ApplicationStreamPresets.PRESET_DOCUMENTS ? E.ApplicationStreamFPS.FPS_30 : _,
                     R = E.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
-                        } = e, r = (0, o.default)(E.ApplicationStreamPresets.PRESET_CUSTOM, g, t, v, A);
+                        } = e, r = (0, o.default)(E.ApplicationStreamPresets.PRESET_CUSTOM, g, t, v, I);
                         return (0, a.jsx)(i.MenuRadioItem, {
                             group: "stream-settings-fps",
                             id: "stream-settings-fps-".concat(t),
@@ -1568,7 +1568,7 @@
                         let {
                             value: t,
                             label: n
-                        } = e, r = (0, o.default)(E.ApplicationStreamPresets.PRESET_CUSTOM, t, x, v, A);
+                        } = e, r = (0, o.default)(E.ApplicationStreamPresets.PRESET_CUSTOM, t, x, v, I);
                         return (0, a.jsx)(i.MenuRadioItem, {
                             group: "stream-settings-resolution",
                             id: "stream-settings-resolution-".concat(t),
@@ -1660,8 +1660,8 @@
                 _ = n("286235"),
                 T = n("50885"),
                 v = n("49111"),
-                A = n("782340"),
-                I = n("143941");
+                I = n("782340"),
+                A = n("143941");
 
             function M() {
                 let [e, t] = r.useState(!1), n = (0, d.useStateFromStores)([h.default], () => {
@@ -1680,8 +1680,8 @@
                     size: c.ButtonSizes.LARGE,
                     onClick: s,
                     submitting: e,
-                    className: I.clearOverrideButton,
-                    children: A.default.Messages.CLEAR_BUILD_OVERRIDE
+                    className: A.clearOverrideButton,
+                    children: I.default.Messages.CLEAR_BUILD_OVERRIDE
                 })
             }
             let x = i.throttle(() => {
@@ -1735,24 +1735,24 @@
                     if (null !== this.state.error) {
                         let e = (0, a.jsxs)("div", {
                                 children: [(0, a.jsx)("p", {
-                                    children: A.default.Messages.ERRORS_UNEXPECTED_CRASH
+                                    children: I.default.Messages.ERRORS_UNEXPECTED_CRASH
                                 }), (0, a.jsx)("p", {
-                                    children: A.default.Messages.ERRORS_ACTION_TO_TAKE
+                                    children: I.default.Messages.ERRORS_ACTION_TO_TAKE
                                 })]
                             }),
                             n = (0, a.jsxs)("div", {
-                                className: I.buttons,
+                                className: A.buttons,
                                 children: [(0, a.jsx)(c.Button, {
                                     size: c.ButtonSizes.LARGE,
                                     onClick: this._handleSubmitReport,
-                                    children: A.default.Messages.ERRORS_RELOAD
+                                    children: I.default.Messages.ERRORS_RELOAD
                                 }), (0, a.jsx)(M, {})]
                             });
                         return (0, a.jsx)(S.default, {
-                            title: A.default.Messages.UNSUPPORTED_BROWSER_TITLE,
+                            title: I.default.Messages.UNSUPPORTED_BROWSER_TITLE,
                             note: null != t ? t() : e,
                             action: n,
-                            className: I.errorPage
+                            className: A.errorPage
                         })
                     }
                     return e
@@ -1794,8 +1794,8 @@
                 _ = n("439932"),
                 T = n("50885"),
                 v = n("782340"),
-                A = n("793804");
-            let I = e => T.default.close(e),
+                I = n("793804");
+            let A = e => T.default.close(e),
                 M = e => T.default.minimize(e),
                 x = (e, t) => {
                     (0, g.isMac)() && !t.altKey ? T.default.fullscreen(e) : T.default.maximize(e)
@@ -1807,26 +1807,26 @@
                         hasOpenLayer: r
                     } = e;
                     return (0, a.jsxs)("div", {
-                        className: s(A.typeWindows, (0, _.getThemeClass)(n), {
-                            [A.withBackgroundOverride]: !r
+                        className: s(I.typeWindows, (0, _.getThemeClass)(n), {
+                            [I.withBackgroundOverride]: !r
                         }),
                         children: [(0, a.jsx)("div", {
-                            className: A.wordmarkWindows,
+                            className: I.wordmarkWindows,
                             children: (0, a.jsx)(f.default, {})
                         }), (0, a.jsx)(l.Clickable, {
-                            className: A.winButtonClose,
-                            onClick: () => I(t),
+                            className: I.winButtonClose,
+                            onClick: () => A(t),
                             "aria-label": v.default.Messages.TITLE_BAR_CLOSE_WINDOW,
                             tabIndex: -1,
                             children: (0, a.jsx)(h.default, {})
                         }), (0, a.jsx)(l.Clickable, {
-                            className: A.winButtonMinMax,
+                            className: I.winButtonMinMax,
                             onClick: e => x(t, e),
                             "aria-label": v.default.Messages.TITLE_BAR_MAXIMIZE_WINDOW,
                             tabIndex: -1,
                             children: (0, a.jsx)(E.default, {})
                         }), (0, a.jsx)(l.Clickable, {
-                            className: A.winButtonMinMax,
+                            className: I.winButtonMinMax,
                             onClick: () => M(t),
                             "aria-label": v.default.Messages.TITLE_BAR_MINIMIZE_WINDOW,
                             tabIndex: -1,
@@ -1843,25 +1843,25 @@
                         hasOpenLayer: u
                     } = e;
                     return (0, a.jsxs)(l.Clickable, {
-                        className: s(r ? A.typeMacOSWithFrame : A.typeMacOS, t ? A.focused : A.unfocused, (0, _.getThemeClass)(i), {
-                            [A.withBackgroundOverride]: !u
+                        className: s(r ? I.typeMacOSWithFrame : I.typeMacOS, t ? I.focused : I.unfocused, (0, _.getThemeClass)(i), {
+                            [I.withBackgroundOverride]: !u
                         }),
                         onDoubleClick: () => T.default.maximize(n),
                         tabIndex: -1,
                         children: [o.default.window.USE_OSX_NATIVE_TRAFFIC_LIGHTS ? (0, a.jsx)("div", {
-                            className: A.macDragRegion
+                            className: I.macDragRegion
                         }) : (0, a.jsxs)("div", {
-                            className: A.macButtons,
+                            className: I.macButtons,
                             children: [(0, a.jsx)(l.Clickable, {
-                                className: A.macButtonClose,
-                                onClick: () => I(n),
+                                className: I.macButtonClose,
+                                onClick: () => A(n),
                                 "aria-label": v.default.Messages.TITLE_BAR_CLOSE_WINDOW,
                                 tabIndex: -1,
                                 children: (0, a.jsx)(p.default, {
                                     color: "#4c0000"
                                 })
                             }), (0, a.jsx)(l.Clickable, {
-                                className: A.macButtonMinimize,
+                                className: I.macButtonMinimize,
                                 onClick: () => M(n),
                                 "aria-label": v.default.Messages.TITLE_BAR_MINIMIZE_WINDOW,
                                 tabIndex: -1,
@@ -1869,7 +1869,7 @@
                                     color: "#975500"
                                 })
                             }), (0, a.jsx)(l.Clickable, {
-                                className: A.macButtonMaximize,
+                                className: I.macButtonMaximize,
                                 onClick: e => x(n, e),
                                 "aria-label": v.default.Messages.TITLE_BAR_FULLSCREEN_WINDOW,
                                 tabIndex: -1,
@@ -1878,7 +1878,7 @@
                                 })
                             })]
                         }), r ? (0, a.jsx)("div", {
-                            className: A.wordmarkMacOS,
+                            className: I.wordmarkMacOS,
                             children: (0, a.jsx)(f.default, {
                                 color: "#ffffff"
                             })
@@ -2042,7 +2042,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-a60936f821d82002dbbc389946c8f74f6f5697f4",
+                    release: "discord_web-0531f77fff67a4b27b38addd5568eda67b21e6d6",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2060,7 +2060,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "263882", "263882")), a.setTag("builtAt", String("1707160038545"));
+                }), a.setTag("buildNumber", (e = "263883", "263883")), a.setTag("builtAt", String("1707160483414"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2453,6 +2453,61 @@
                     let a = s.default.getGuild(n.getGuildId());
                     return null != a && a.id === e
                 })
+        },
+        761771: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEligibleForInappropriateConversationWarning: function() {
+                    return s
+                },
+                useIsEligibleForInappropriateConversationWarning: function() {
+                    return i
+                }
+            });
+            var a = n("862205");
+            let r = (0, a.createExperiment)({
+                kind: "user",
+                id: "2024-01_inappropriate_conversation_warning",
+                label: "Inappropriate Conversation Warning",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable Inappropriate Conversation Warning",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function s(e) {
+                let {
+                    location: t,
+                    autoTrackExposure: n = !1
+                } = e, {
+                    enabled: a
+                } = r.getCurrentConfig({
+                    location: t
+                }, {
+                    autoTrackExposure: n
+                });
+                return a
+            }
+
+            function i(e) {
+                let {
+                    location: t,
+                    autoTrackExposure: n = !1
+                } = e, {
+                    enabled: a
+                } = r.useExperiment({
+                    location: t
+                }, {
+                    autoTrackExposure: n
+                });
+                return a
+            }
         },
         567469: function(e, t, n) {
             "use strict";
@@ -2938,7 +2993,7 @@
                     return v
                 },
                 default: function() {
-                    return A
+                    return I
                 }
             });
             var a = n("37983");
@@ -2975,7 +3030,7 @@
                 return i
             }
 
-            function A(e) {
+            function I(e) {
                 var t;
                 let {
                     channel: n,
@@ -2984,8 +3039,8 @@
                     hideSelfOptions: c = !1,
                     showReportOption: h = !1,
                     handleGoLive: m,
-                    onClose: A,
-                    onSelect: I,
+                    onClose: I,
+                    onSelect: A,
                     appContext: M = g.AppContext.APP
                 } = e, x = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), R = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, N = v(n, r, l), L = (0, o.default)(R, M), O = (0, u.default)(R, M, g.NOOP_NULL), y = null == R ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
@@ -3012,9 +3067,9 @@
                 return (0, a.jsx)(i.default, {
                     section: g.AnalyticsSections.CONTEXT_MENU,
                     children: (0, a.jsxs)(s.Menu, {
-                        onSelect: I,
+                        onSelect: A,
                         navId: "manage-streams",
-                        onClose: A,
+                        onClose: I,
                         "aria-label": null != R ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
                         children: [(0, a.jsx)(s.MenuGroup, {
                             children: N.map(e => {
@@ -4159,7 +4214,7 @@
                         pulseSpeakingIndicator: C = !1,
                         speaking: m = !1,
                         ...S
-                    } = e, g = null != p ? p : n, _ = (0, l.default)(g, s.default.unsafe_rawColors.PRIMARY_800.css), T = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, v = (0, c.default)(null != E ? E : ""), A = null == v ? void 0 : v.getBannerURL({
+                    } = e, g = null != p ? p : n, _ = (0, l.default)(g, s.default.unsafe_rawColors.PRIMARY_800.css), T = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, v = (0, c.default)(null != E ? E : ""), I = null == v ? void 0 : v.getBannerURL({
                         size: 1024,
                         canAnimate: f.GifAutoPlay.getSetting()
                     });
@@ -4168,7 +4223,7 @@
                                 dispatchWait: !0
                             })
                         }, [T, E]), null == n) return null;
-                    let I = (0, a.jsx)(i.Avatar, {
+                    let A = (0, a.jsx)(i.Avatar, {
                             className: h.avatarWrapper,
                             src: n,
                             ...S
@@ -4177,13 +4232,13 @@
                             ...t,
                             backgroundColor: _
                         };
-                    return null != A && m && T && (M.backgroundImage = "url(".concat(A, ")"), M.backgroundSize = "cover"), (0, a.jsx)("div", {
+                    return null != I && m && T && (M.backgroundImage = "url(".concat(I, ")"), M.backgroundSize = "cover"), (0, a.jsx)("div", {
                         style: M,
                         className: h.background,
                         children: C ? (0, a.jsx)(o.default, {
                             shouldAnimate: m,
-                            children: I
-                        }) : I
+                            children: A
+                        }) : A
                     })
                 }
         },
@@ -4663,4 +4718,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98346.ec67bb6b9bf5b31fffc6.js.map
+//# sourceMappingURL=807.df11d733f838e9f508d7.js.map
