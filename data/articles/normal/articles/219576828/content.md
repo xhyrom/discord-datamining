@@ -2,45 +2,44 @@
 <p id="docs-internal-guid-d9166d1b-7fff-15b1-173b-cfcbd562f19a"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li>
-        <a href="#docs-internal-guid-daf505a7-7fff-2117-1758-6d58aefebc6a">Types of Multi-Factor Authentication </a>
+        <a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-daf505a7-7fff-2117-1758-6d58aefebc6a">Types of Multi-Factor Authentication </a>
         <ul>
-            <li><a href="#docs-internal-guid-c08017e4-7fff-6508-8580-d9b7737f7440">Security Keys </a></li>
-            <li><a href="#docs-internal-guid-85b84278-7fff-8feb-2dee-666f27b383af">Authenticator App</a></li>
-            <li><a href="#docs-internal-guid-b4892e97-7fff-b602-382f-a97b6433dcd1">SMS/Texts</a></li>
-            <li><a href="#h_01HE39XGDJGMD2QB66BM428DRN">Backup Codes</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-c08017e4-7fff-6508-8580-d9b7737f7440">Security Keys </a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-85b84278-7fff-8feb-2dee-666f27b383af">Authenticator App</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-b4892e97-7fff-b602-382f-a97b6433dcd1">SMS/Texts</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#h_01HE39XGDJGMD2QB66BM428DRN">Backup Codes</a></li>
         </ul>
     </li>
     <li>
-        <a href="#docs-internal-guid-03c8da49-7fff-62e9-3532-96a827822ef0">The Setup Process on Desktop</a>
+        <a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-03c8da49-7fff-62e9-3532-96a827822ef0">The Setup Process on Desktop</a>
         <ul>
-            <li><a href="#docs-internal-guid-28110f37-7fff-29c7-ca44-06219bea7492">Registering A Security Key on Desktop</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-28110f37-7fff-29c7-ca44-06219bea7492">Registering A Security Key on Desktop</a></li>
         </ul>
     </li>
     <li>
-        <a href="#docs-internal-guid-462edc81-7fff-f79e-59f8-53572ff86018">Setting up your Authentication App</a>
+        <a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-462edc81-7fff-f79e-59f8-53572ff86018">Setting up your Authentication App</a>
         <ul>
-            <li><a href="#docs-internal-guid-fcb90c67-7fff-111c-157c-24acbed2410f">Authenticating with Google</a></li>
-            <li><a href="#docs-internal-guid-b717eebd-7fff-3ed9-e2e7-85445511304f">Authenticating with Authy</a></li>
-            <li><a href="#docs-internal-guid-669f14ea-7fff-2b47-4801-0ab6a156c493">Authenticating with MFA</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-fcb90c67-7fff-111c-157c-24acbed2410f">Authenticating with Google</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-b717eebd-7fff-3ed9-e2e7-85445511304f">Authenticating with Authy</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-669f14ea-7fff-2b47-4801-0ab6a156c493">Authenticating with MFA</a></li>
         </ul>
     </li>
     <li>
-        <a href="#docs-internal-guid-0b94b292-7fff-a940-9ba3-59d7477d0f1e">The Setup Process on Mobile</a>
+        <a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-0b94b292-7fff-a940-9ba3-59d7477d0f1e">The Setup Process on Mobile</a>
         <ul>
-            <li><a href="#docs-internal-guid-4c3659ae-7fff-9e5b-99cd-25a7e3fe6ff2">Registering a Security Key on Mobile</a></li>
-            <li><a href="#docs-internal-guid-0c0c90ac-7fff-acf8-12dc-9abd89ea663f">Authenticating on the Go</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-4c3659ae-7fff-9e5b-99cd-25a7e3fe6ff2">Registering a Security Key on Mobile</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-0c0c90ac-7fff-acf8-12dc-9abd89ea663f">Authenticating on the Go</a></li>
         </ul>
     </li>
-    <li><a href="#h_01HE3B8FC09F7ZQ8YMAJNWTN6M">I forgot to download my codes! </a></li>
-    <li><a href="#docs-internal-guid-bf2b4b60-7fff-6ed3-1f26-b4feac49d642">I forgot to add my phone as backup! </a></li>
-    <li><a href="#h_01HE39Q7S19ECFQAV6G202A01G">Server-wide 2FA</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/219576828#h_01HE3B8FC09F7ZQ8YMAJNWTN6M">I forgot to download my codes! </a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-bf2b4b60-7fff-6ed3-1f26-b4feac49d642">I forgot to add my phone as backup! </a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/219576828#h_01HE39Q7S19ECFQAV6G202A01G">Server-wide 2FA</a></li>
 </ul>
 <h1 id="docs-internal-guid-daf505a7-7fff-2117-1758-6d58aefebc6a"><strong><span style="color: #2e3338;">Types of Multi-Factor Authentication </span></strong></h1>
 <p><span style="color: #2e3338;">There are three options to add MFA to your account: Security Keys, an Authenticator App, and SMS. You can choose any one of these options or any combo, but there are positives and negatives to each. We’ll talk through each option and give you some info on the security of each one.</span></p>
 <h2 id="docs-internal-guid-c08017e4-7fff-6508-8580-d9b7737f7440"><strong>Security Keys</strong></h2>
 <p><span style="color: #2e3338;">This is the latest in personal security, and also the most secure! With Security Keys, you’ll be able to use a passkey (ex. FaceId, TouchId, Windows Hello) to gain access to your account. The way this works is when you register a passkey for Discord, you’ll protect it using your biometric (fingerprint or face) and the key itself lives on your device and in your provider’s cloud (e.g. Apple/Microsoft). Whenever you want to use the passkey, you authenticate using your biometric so that your device sends the passkey data to Discord. And to be clear, we’re never given any biometrics data from your device.</span></p>
 <p><span style="color: #2e3338;">This method is the best way to protect your account because it is simple to use, on your own devices, backed up in the cloud, and, most importantly, phishing resistant.</span></p>
-<h3 id="h_01HE39WXXWC7GRCKQ3SFCHK4DX">For all you Discord Developers out there, we’re working on adding Security Keys to the Developers space, but in the meantime, if you want to use Security Keys for your account, you should keep your Authenticator App enabled to get access to your Apps!</h3>
 <h2 id="docs-internal-guid-85b84278-7fff-8feb-2dee-666f27b383af"><strong>Authenticator App</strong></h2>
 <p>The Authenticator App is an excellent choice that mixes flexibility with security. Plus the name makes us think we’re in a spy novel. With an Authenticator App, you’ll register a QR code or manually enter a key with an app on your phone or a password manager and then generate a new code for you to use every 30 seconds. </p>
 <p>As long as you have your phone or access to your password manager, you can make new codes and hackers will have a hard time getting access to your app. But these codes are still phishable, so if you lose your phone, this could lead to a predicament.</p>
@@ -107,7 +106,7 @@
 <h2 id="docs-internal-guid-0c0c90ac-7fff-acf8-12dc-9abd89ea663f"><strong>Authenticating on the Go</strong></h2>
 <p>Tap the <strong>Enable Two-Factor Auth</strong> button to get started. To begin the MFA process, you'll either need to download Google Authenticator or Authy on your mobile device.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18702883695255" alt="image1.png" width="346" height="718"></p>
-<p id="docs-internal-guid-fb742fe8-7fff-4c2f-8487-9dff850b72fc">Once you have either Google Authenticator or Authy installed, you will be prompted to connect your account to the authentication app. (<a href="#docs-internal-guid-fcb90c67-7fff-111c-157c-24acbed2410f">Press here for instructions</a>.)</p>
+<p id="docs-internal-guid-fb742fe8-7fff-4c2f-8487-9dff850b72fc">Once you have either Google Authenticator or Authy installed, you will be prompted to connect your account to the authentication app. (<a href="https://support.discord.com/hc/en-us/articles/219576828#docs-internal-guid-fcb90c67-7fff-111c-157c-24acbed2410f">Press here for instructions</a>.)</p>
 <p>Once you connected, you've enabled 2FA successfully! 🎉</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18702867729431" alt="image7.png" width="316" height="655">   <img src="https://support.discord.com/hc/article_attachments/18702883716503" alt="image2.png" width="314" height="655"></p>
 <p id="docs-internal-guid-ca7e1e59-7fff-289e-b179-1cf264ed850e">You can now link your phone number to your account to help act as a backup method for obtaining MFA codes (remember that SMS codes aren’t super secure). This should help you be less worried about losing access to your authenticator app.</p>
