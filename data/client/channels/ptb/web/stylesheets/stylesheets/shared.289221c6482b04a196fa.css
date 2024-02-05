@@ -18804,6 +18804,10 @@ html.disable-forced-colors * {
     align-items: center
 }
 
+.flexLineBreak__29302 {
+    flex-basis: 100%
+}
+
 .embedCard__05d17 {
     display: flex;
     flex-direction: column;
@@ -18811,7 +18815,12 @@ html.disable-forced-colors * {
     background-color: var(--background-secondary);
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    margin-left: 0
+}
+
+.embedCard__05d17.compact__0b450 {
+    margin-left: 3.3rem
 }
 
 .cardContent_fc7261 {
@@ -27465,4 +27474,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.029433dcb4ff23527520.css.map*/
+/*# sourceMappingURL=shared.289221c6482b04a196fa.css.map*/

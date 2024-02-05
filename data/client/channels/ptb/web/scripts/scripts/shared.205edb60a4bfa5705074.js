@@ -3505,6 +3505,7 @@
                 dotMargin: "dotMargin__5f8ce",
                 dotSeparatedRow: "dotSeparatedRow__2d230",
                 embedCard: "embedCard__05d17",
+                flexLineBreak: "flexLineBreak__29302",
                 footerAction: "footerAction__4eea9",
                 footerIcon: "footerIcon_df5c2b",
                 iconContainer: "iconContainer_c66c93",
