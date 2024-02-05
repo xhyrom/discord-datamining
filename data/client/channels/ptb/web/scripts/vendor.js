@@ -63922,8 +63922,17 @@
                     })
                 }
                 updateGuildSubscriptions(e) {
-                    this.send(37, {
-                        subscriptions: e
+                    let t = {},
+                        n = 0;
+                    for (let i in e) {
+                        let s = e[i],
+                            r = JSON.stringify([i, s]).length;
+                        n + r > 15360 && (this.send(37, {
+                            subscriptions: t
+                        }), t = {}, n = 0), t[i] = s, n += r
+                    }
+                    n > 0 && this.send(37, {
+                        subscriptions: t
                     })
                 }
                 callConnect(e) {
@@ -116584,7 +116593,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "263864"
+                                build_number: "263882"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -132757,4 +132766,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.967a3a8d4ccfca0c67cb.js.map
+//# sourceMappingURL=29278.02928195b21a1138aa79.js.map
