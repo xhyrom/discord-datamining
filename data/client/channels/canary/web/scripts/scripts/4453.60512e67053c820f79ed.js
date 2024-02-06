@@ -1165,261 +1165,45 @@
         },
         850062: function(e, t, l) {
             "use strict";
-            l.r(t), l.d(t, {
-                EyePlusIcon: function() {
-                    return i
-                }
-            });
-            var n = l("37983");
-            l("884691");
-            var a = l("669491"),
-                s = l("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: l = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: r = "",
-                    ...o
-                } = e;
-                return (0, n.jsxs)("svg", {
-                    ...(0, s.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: l,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M22.52 13.17c-.2.41-.87.35-1.15 0a3.02 3.02 0 0 0-.45-.48.47.47 0 0 1-.13-.54c.04-.1.04-.2-.01-.31-.4-.9-1.18-2.4-2.4-3.76C16.89 6.38 14.82 5 12 5 9.2 5 7.13 6.38 5.61 8.08a15.05 15.05 0 0 0-2.37 3.72.48.48 0 0 0 0 .4c.4.9 1.18 2.37 2.37 3.72a8.46 8.46 0 0 0 5.89 3.07c.28.01.5.24.54.5.05.31.15.6.29.87.13.27-.03.64-.33.64-7.11 0-10.27-7.11-10.89-8.7a.83.83 0 0 1 0-.6C1.73 10.1 4.9 3 12 3c7.11 0 10.27 7.11 10.89 8.7.07.2.07.4 0 .6-.08.21-.2.5-.37.87Z",
-                        className: r
-                    }), (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M15.56 11.77c.2-.1.44.02.44.23a4 4 0 1 1-4-4c.21 0 .33.25.23.44a2.5 2.5 0 0 0 3.32 3.32ZM19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z",
-                        className: r
-                    })]
-                })
-            }
+            l.r(t);
+            var n = l("383780");
+            l.es(n, t)
         },
         202804: function(e, t, l) {
             "use strict";
-            l.r(t), l.d(t, {
-                FlagIcon: function() {
-                    return i
-                }
-            });
-            var n = l("37983");
-            l("884691");
-            var a = l("669491"),
-                s = l("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: l = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: r = "",
-                    ...o
-                } = e;
-                return (0, n.jsx)("svg", {
-                    ...(0, s.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: l,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M3 1a1 1 0 0 1 1 1v.82l8.67-1.45A2 2 0 0 1 15 3.35v1.47l5.67-.95A2 2 0 0 1 23 5.85v7.3a2 2 0 0 1-1.67 1.98l-9 1.5a2 2 0 0 1-1.78-.6c-.2-.21-.08-.54.18-.68a5.01 5.01 0 0 0 1.94-1.94c.18-.32-.1-.66-.46-.6L4 14.18V21a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1Z",
-                        className: r
-                    })
-                })
-            }
+            l.r(t);
+            var n = l("792444");
+            l.es(n, t)
         },
         971918: function(e, t, l) {
             "use strict";
-            l.r(t), l.d(t, {
-                SendMessageIcon: function() {
-                    return i
-                }
-            });
-            var n = l("37983");
-            l("884691");
-            var a = l("669491"),
-                s = l("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: l = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: r = "",
-                    ...o
-                } = e;
-                return (0, n.jsx)("svg", {
-                    ...(0, s.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: l,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M6.6 10.02 14 11.4a.6.6 0 0 1 0 1.18L6.6 14l-2.94 5.87a1.48 1.48 0 0 0 1.99 1.98l17.03-8.52a1.48 1.48 0 0 0 0-2.64L5.65 2.16a1.48 1.48 0 0 0-1.99 1.98l2.94 5.88Z",
-                        className: r
-                    })
-                })
-            }
+            l.r(t);
+            var n = l("204569");
+            l.es(n, t)
         },
         472861: function(e, t, l) {
             "use strict";
-            l.r(t), l.d(t, {
-                ShopSparkleIcon: function() {
-                    return i
-                }
-            });
-            var n = l("37983");
-            l("884691");
-            var a = l("669491"),
-                s = l("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: l = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: r = "",
-                    ...o
-                } = e;
-                return (0, n.jsxs)("svg", {
-                    ...(0, s.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: l,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, n.jsx)("path", {
-                        d: "M20.14.8a1.21 1.21 0 0 0-2.28 0l-.5 1.37a2 2 0 0 1-1.19 1.18l-1.38.51a1.21 1.21 0 0 0 0 2.28l1.38.5a2 2 0 0 1 1.18 1.19l.51 1.38a1.2 1.2 0 0 0 1.15.79l.17-.01c.4-.06.79-.32.96-.78l.5-1.38a2 2 0 0 1 1.19-1.18l1.38-.51a1.21 1.21 0 0 0 0-2.28l-1.38-.5a2 2 0 0 1-1.18-1.19L20.14.79ZM20.98 11.84c0-.2-.24-.33-.42-.22-1.79 1.01-3.6-.17-4.87-1.55a.28.28 0 0 0-.4 0 4.49 4.49 0 0 1-6.58 0 .28.28 0 0 0-.4 0 4.45 4.45 0 0 1-4.94 1.11c-.17-.07-.37.06-.37.24V19a3 3 0 0 0 3 3h2.75c.14 0 .25-.11.25-.25V16c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v5.75c0 .14.11.25.25.25H18a3 3 0 0 0 3-3l-.02-7.16Z",
-                        fill: "string" == typeof i ? i : i.css,
-                        className: r
-                    }), (0, n.jsx)("path", {
-                        d: "M12.98 2c.22 0 .32.4.15.54a3.22 3.22 0 0 0 .97 5.47l.12.05c.28.1.4.42.24.65A3 3 0 0 1 9 7V3a1 1 0 0 1 1-1h2.98ZM2.63 4.19A3 3 0 0 1 5.53 2H7a1 1 0 0 1 1 1v4.03A2.95 2.95 0 0 1 5.03 10h-.05c-2 0-3.44-1.9-2.9-3.83l.55-1.98Z",
-                        fill: "string" == typeof i ? i : i.css,
-                        className: r
-                    })]
-                })
-            }
+            l.r(t);
+            var n = l("544939");
+            l.es(n, t)
         },
         841248: function(e, t, l) {
             "use strict";
-            l.r(t), l.d(t, {
-                UnknownGameIcon: function() {
-                    return i
-                }
-            });
-            var n = l("37983");
-            l("884691");
-            var a = l("669491"),
-                s = l("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: l = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: r = "",
-                    ...o
-                } = e;
-                return (0, n.jsx)("svg", {
-                    ...(0, s.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: l,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
-                        d: "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm6.81 7c-.54 0-1 .26-1.23.61A1 1 0 0 1 8.92 8.5 3.49 3.49 0 0 1 11.82 7c1.81 0 3.43 1.38 3.43 3.25 0 1.45-.98 2.61-2.27 3.06a1 1 0 0 1-1.96.37l-.19-1a1 1 0 0 1 .98-1.18c.87 0 1.44-.63 1.44-1.25S12.68 9 11.81 9ZM13 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM18.5 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7 18.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z",
-                        clipRule: "evenodd",
-                        className: r
-                    })
-                })
-            }
+            l.r(t);
+            var n = l("9330");
+            l.es(n, t)
         },
         816607: function(e, t, l) {
             "use strict";
-            l.r(t), l.d(t, {
-                UserPlayIcon: function() {
-                    return i
-                }
-            });
-            var n = l("37983");
-            l("884691");
-            var a = l("669491"),
-                s = l("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: l = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: r = "",
-                    ...o
-                } = e;
-                return (0, n.jsxs)("svg", {
-                    ...(0, s.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: l,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM11.53 11A9.53 9.53 0 0 0 2 20.53c0 .81.66 1.47 1.47 1.47h.22c.24 0 .44-.17.5-.4.29-1.12.84-2.17 1.32-2.91.14-.21.43-.1.4.15l-.26 2.61c-.02.3.2.55.5.55h5.73c.37 0 .61-.38.5-.73a7 7 0 0 1 3.65-8.61c.4-.2.46-.78.05-.95a9.5 9.5 0 0 0-3.61-.71h-.94Z",
-                        className: r
-                    }), (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
-                        d: "M24 19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Zm-2.77-.2-3.33-2.5a.25.25 0 0 0-.4.2v5c0 .2.24.32.4.2l3.33-2.5c.14-.1.14-.3 0-.4Z",
-                        clipRule: "evenodd",
-                        className: r
-                    })]
-                })
-            }
+            l.r(t);
+            var n = l("280040");
+            l.es(n, t)
         },
         249978: function(e, t, l) {
             "use strict";
-            l.r(t), l.d(t, {
-                WindowLaunchIcon: function() {
-                    return i
-                }
-            });
-            var n = l("37983");
-            l("884691");
-            var a = l("669491"),
-                s = l("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: l = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: r = "",
-                    ...o
-                } = e;
-                return (0, n.jsxs)("svg", {
-                    ...(0, s.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: l,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M15 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V4.41l-4.3 4.3a1 1 0 1 1-1.4-1.42L19.58 3H16a1 1 0 0 1-1-1Z",
-                        className: r
-                    }), (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-6a1 1 0 1 0-2 0v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 1 0 0-2H5Z",
-                        className: r
-                    })]
-                })
-            }
+            l.r(t);
+            var n = l("613511");
+            l.es(n, t)
         },
         126808: function(e, t, l) {
             "use strict";
@@ -6744,7 +6528,265 @@
                     resolve: e
                 }))
             }
+        },
+        383780: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                EyePlusIcon: function() {
+                    return i
+                }
+            });
+            var n = l("37983");
+            l("884691");
+            var a = l("669491"),
+                s = l("82169");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: l = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...o
+                } = e;
+                return (0, n.jsxs)("svg", {
+                    ...(0, s.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: l,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M22.52 13.17c-.2.41-.87.35-1.15 0a3.02 3.02 0 0 0-.45-.48.47.47 0 0 1-.13-.54c.04-.1.04-.2-.01-.31-.4-.9-1.18-2.4-2.4-3.76C16.89 6.38 14.82 5 12 5 9.2 5 7.13 6.38 5.61 8.08a15.05 15.05 0 0 0-2.37 3.72.48.48 0 0 0 0 .4c.4.9 1.18 2.37 2.37 3.72a8.46 8.46 0 0 0 5.89 3.07c.28.01.5.24.54.5.05.31.15.6.29.87.13.27-.03.64-.33.64-7.11 0-10.27-7.11-10.89-8.7a.83.83 0 0 1 0-.6C1.73 10.1 4.9 3 12 3c7.11 0 10.27 7.11 10.89 8.7.07.2.07.4 0 .6-.08.21-.2.5-.37.87Z",
+                        className: r
+                    }), (0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M15.56 11.77c.2-.1.44.02.44.23a4 4 0 1 1-4-4c.21 0 .33.25.23.44a2.5 2.5 0 0 0 3.32 3.32ZM19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z",
+                        className: r
+                    })]
+                })
+            }
+        },
+        792444: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                FlagIcon: function() {
+                    return i
+                }
+            });
+            var n = l("37983");
+            l("884691");
+            var a = l("669491"),
+                s = l("82169");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: l = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...o
+                } = e;
+                return (0, n.jsx)("svg", {
+                    ...(0, s.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: l,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M3 1a1 1 0 0 1 1 1v.82l8.67-1.45A2 2 0 0 1 15 3.35v1.47l5.67-.95A2 2 0 0 1 23 5.85v7.3a2 2 0 0 1-1.67 1.98l-9 1.5a2 2 0 0 1-1.78-.6c-.2-.21-.08-.54.18-.68a5.01 5.01 0 0 0 1.94-1.94c.18-.32-.1-.66-.46-.6L4 14.18V21a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1Z",
+                        className: r
+                    })
+                })
+            }
+        },
+        204569: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                SendMessageIcon: function() {
+                    return i
+                }
+            });
+            var n = l("37983");
+            l("884691");
+            var a = l("669491"),
+                s = l("82169");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: l = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...o
+                } = e;
+                return (0, n.jsx)("svg", {
+                    ...(0, s.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: l,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M6.6 10.02 14 11.4a.6.6 0 0 1 0 1.18L6.6 14l-2.94 5.87a1.48 1.48 0 0 0 1.99 1.98l17.03-8.52a1.48 1.48 0 0 0 0-2.64L5.65 2.16a1.48 1.48 0 0 0-1.99 1.98l2.94 5.88Z",
+                        className: r
+                    })
+                })
+            }
+        },
+        544939: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                ShopSparkleIcon: function() {
+                    return i
+                }
+            });
+            var n = l("37983");
+            l("884691");
+            var a = l("669491"),
+                s = l("82169");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: l = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...o
+                } = e;
+                return (0, n.jsxs)("svg", {
+                    ...(0, s.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: l,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, n.jsx)("path", {
+                        d: "M20.14.8a1.21 1.21 0 0 0-2.28 0l-.5 1.37a2 2 0 0 1-1.19 1.18l-1.38.51a1.21 1.21 0 0 0 0 2.28l1.38.5a2 2 0 0 1 1.18 1.19l.51 1.38a1.2 1.2 0 0 0 1.15.79l.17-.01c.4-.06.79-.32.96-.78l.5-1.38a2 2 0 0 1 1.19-1.18l1.38-.51a1.21 1.21 0 0 0 0-2.28l-1.38-.5a2 2 0 0 1-1.18-1.19L20.14.79ZM20.98 11.84c0-.2-.24-.33-.42-.22-1.79 1.01-3.6-.17-4.87-1.55a.28.28 0 0 0-.4 0 4.49 4.49 0 0 1-6.58 0 .28.28 0 0 0-.4 0 4.45 4.45 0 0 1-4.94 1.11c-.17-.07-.37.06-.37.24V19a3 3 0 0 0 3 3h2.75c.14 0 .25-.11.25-.25V16c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v5.75c0 .14.11.25.25.25H18a3 3 0 0 0 3-3l-.02-7.16Z",
+                        fill: "string" == typeof i ? i : i.css,
+                        className: r
+                    }), (0, n.jsx)("path", {
+                        d: "M12.98 2c.22 0 .32.4.15.54a3.22 3.22 0 0 0 .97 5.47l.12.05c.28.1.4.42.24.65A3 3 0 0 1 9 7V3a1 1 0 0 1 1-1h2.98ZM2.63 4.19A3 3 0 0 1 5.53 2H7a1 1 0 0 1 1 1v4.03A2.95 2.95 0 0 1 5.03 10h-.05c-2 0-3.44-1.9-2.9-3.83l.55-1.98Z",
+                        fill: "string" == typeof i ? i : i.css,
+                        className: r
+                    })]
+                })
+            }
+        },
+        9330: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                UnknownGameIcon: function() {
+                    return i
+                }
+            });
+            var n = l("37983");
+            l("884691");
+            var a = l("669491"),
+                s = l("82169");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: l = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...o
+                } = e;
+                return (0, n.jsx)("svg", {
+                    ...(0, s.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: l,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        fillRule: "evenodd",
+                        d: "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm6.81 7c-.54 0-1 .26-1.23.61A1 1 0 0 1 8.92 8.5 3.49 3.49 0 0 1 11.82 7c1.81 0 3.43 1.38 3.43 3.25 0 1.45-.98 2.61-2.27 3.06a1 1 0 0 1-1.96.37l-.19-1a1 1 0 0 1 .98-1.18c.87 0 1.44-.63 1.44-1.25S12.68 9 11.81 9ZM13 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM18.5 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7 18.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z",
+                        clipRule: "evenodd",
+                        className: r
+                    })
+                })
+            }
+        },
+        280040: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                UserPlayIcon: function() {
+                    return i
+                }
+            });
+            var n = l("37983");
+            l("884691");
+            var a = l("669491"),
+                s = l("82169");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: l = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...o
+                } = e;
+                return (0, n.jsxs)("svg", {
+                    ...(0, s.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: l,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM11.53 11A9.53 9.53 0 0 0 2 20.53c0 .81.66 1.47 1.47 1.47h.22c.24 0 .44-.17.5-.4.29-1.12.84-2.17 1.32-2.91.14-.21.43-.1.4.15l-.26 2.61c-.02.3.2.55.5.55h5.73c.37 0 .61-.38.5-.73a7 7 0 0 1 3.65-8.61c.4-.2.46-.78.05-.95a9.5 9.5 0 0 0-3.61-.71h-.94Z",
+                        className: r
+                    }), (0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        fillRule: "evenodd",
+                        d: "M24 19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Zm-2.77-.2-3.33-2.5a.25.25 0 0 0-.4.2v5c0 .2.24.32.4.2l3.33-2.5c.14-.1.14-.3 0-.4Z",
+                        clipRule: "evenodd",
+                        className: r
+                    })]
+                })
+            }
+        },
+        613511: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                WindowLaunchIcon: function() {
+                    return i
+                }
+            });
+            var n = l("37983");
+            l("884691");
+            var a = l("669491"),
+                s = l("82169");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: l = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...o
+                } = e;
+                return (0, n.jsxs)("svg", {
+                    ...(0, s.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: l,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M15 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V4.41l-4.3 4.3a1 1 0 1 1-1.4-1.42L19.58 3H16a1 1 0 0 1-1-1Z",
+                        className: r
+                    }), (0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-6a1 1 0 1 0-2 0v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 1 0 0-2H5Z",
+                        className: r
+                    })]
+                })
+            }
         }
     }
 ]);
-//# sourceMappingURL=4453.dca020b41417f9b01ee6.js.map
+//# sourceMappingURL=4453.60512e67053c820f79ed.js.map

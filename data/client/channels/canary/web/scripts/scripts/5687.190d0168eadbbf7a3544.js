@@ -26264,37 +26264,9 @@
         },
         891722: function(i, t, x) {
             "use strict";
-            x.r(t), x.d(t, {
-                ArrowSmallLeftIcon: function() {
-                    return y
-                }
-            });
-            var s = x("37983");
-            x("884691");
-            var a = x("669491"),
-                o = x("75196");
-            let y = i => {
-                let {
-                    width: t = 24,
-                    height: x = 24,
-                    color: y = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: d = "",
-                    ...k
-                } = i;
-                return (0, s.jsx)("svg", {
-                    ...(0, o.default)(k),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: x,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, s.jsx)("path", {
-                        fill: "string" == typeof y ? y : y.css,
-                        d: "M3.3 11.3a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4-1.4L6.42 13H20a1 1 0 1 0 0-2H6.41l3.3-3.3a1 1 0 0 0-1.42-1.4l-5 5Z",
-                        className: d
-                    })
-                })
-            }
+            x.r(t);
+            var s = x("42641");
+            x.es(s, t)
         },
         721698: function(i, t, x) {
             "use strict";
@@ -27412,7 +27384,41 @@
                 }, o.ArrowSmallLeftIcon, void 0, {
                     size: 24
                 })
+        },
+        42641: function(i, t, x) {
+            "use strict";
+            x.r(t), x.d(t, {
+                ArrowSmallLeftIcon: function() {
+                    return y
+                }
+            });
+            var s = x("37983");
+            x("884691");
+            var a = x("669491"),
+                o = x("82169");
+            let y = i => {
+                let {
+                    width: t = 24,
+                    height: x = 24,
+                    color: y = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: d = "",
+                    ...k
+                } = i;
+                return (0, s.jsx)("svg", {
+                    ...(0, o.default)(k),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: x,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, s.jsx)("path", {
+                        fill: "string" == typeof y ? y : y.css,
+                        d: "M3.3 11.3a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4-1.4L6.42 13H20a1 1 0 1 0 0-2H6.41l3.3-3.3a1 1 0 0 0-1.42-1.4l-5 5Z",
+                        className: d
+                    })
+                })
+            }
         }
     }
 ]);
-//# sourceMappingURL=5687.a724fe30cb6ff469c19a.js.map
+//# sourceMappingURL=5687.190d0168eadbbf7a3544.js.map
