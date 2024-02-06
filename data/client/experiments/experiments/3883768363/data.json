@@ -1,33 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-06_inventory_guild_setting",
-    "label": "Inventory Guild Settings Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show settings toggle, but collection is not allowed.",
-      "Treatment 2: Show settings toggle, and collection is allowed sometime in August.",
-      "Treatment 3: Show settings toggle, and collection is allowed in late August.",
-      "Treatment 4: Show settings toggle, allow collection for guild setting, and show rollback admin coachmark"
-    ],
     "hash": 3883768363,
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "enabled"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [
