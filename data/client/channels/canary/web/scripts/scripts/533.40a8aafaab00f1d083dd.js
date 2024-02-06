@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["90856"], {
+    ["533"], {
         53708: function(e, t, n) {
             "use strict";
             e.exports = n.p + "f6c7b8245d3a54cf98b2.png"
@@ -2103,7 +2103,7 @@
                     giftRecipient: D,
                     returnRef: b,
                     subscription: O
-                } = null != e ? e : {}, w = !1, M = (0, l.v4)(), G = a.default.getCurrentUser(), x = (0, f.isPremiumExactly)(G, _.PremiumTypes.TIER_2);
+                } = null != e ? e : {}, w = !1, M = (0, l.v4)(), x = a.default.getCurrentUser(), G = (0, f.isPremiumExactly)(x, _.PremiumTypes.TIER_2);
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
@@ -2124,7 +2124,7 @@
                             initialPlanId: t,
                             followupSKUInfo: I,
                             onClose: (e, t) => {
-                                l(), null == p || p(e), e && (null == C || C(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !x && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
+                                l(), null == p || p(e), e && (null == C || C(), !g && null != t && t === _.PremiumSubscriptionSKUs.TIER_2 && !G && d.ComponentDispatch.dispatch(E.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
                                 w = !0, null == S || S(), !g && (0, s.setCanPlayWowMoment)(!0)
@@ -3748,6 +3748,158 @@
                 }))
             }
         },
+        956089: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                BadgeShapes: function() {
+                    return s
+                },
+                getBadgeWidthForValue: function() {
+                    return a
+                },
+                getBadgeCountString: function() {
+                    return c
+                },
+                NumberBadge: function() {
+                    return d
+                },
+                TextBadge: function() {
+                    return f
+                },
+                PremiumBadge: function() {
+                    return E
+                },
+                IconBadge: function() {
+                    return _
+                },
+                CircleBadge: function() {
+                    return I
+                }
+            });
+            var i = n("37983");
+            n("884691");
+            var l = n("414456"),
+                r = n.n(l);
+            n("77078");
+            var o = n("20606");
+            n("782340");
+            var u = n("444036");
+            let s = {
+                ROUND: u.baseShapeRound,
+                ROUND_LEFT: u.baseShapeRoundLeft,
+                ROUND_RIGHT: u.baseShapeRoundRight,
+                SQUARE: ""
+            };
+
+            function a(e) {
+                return e < 10 ? 16 : e < 100 ? 22 : 30
+            }
+
+            function c(e) {
+                return e < 1e3 ? "".concat(e) : "".concat(Math.min(Math.floor(e / 1e3), 9), "k+")
+            }
+            let d = e => {
+                    let {
+                        count: t,
+                        color: n = o.default.STATUS_DANGER,
+                        disableColor: l = !1,
+                        shape: d = s.ROUND,
+                        className: f,
+                        style: E,
+                        ..._
+                    } = e;
+                    return (0, i.jsx)("div", {
+                        className: r(f, u.numberBadge, d),
+                        style: {
+                            backgroundColor: l ? void 0 : n,
+                            width: a(t),
+                            paddingRight: function(e) {
+                                switch (e) {
+                                    case 1:
+                                    case 4:
+                                    case 6:
+                                        return 1;
+                                    default:
+                                        return
+                                }
+                            }(t),
+                            ...E
+                        },
+                        ..._,
+                        children: c(t)
+                    })
+                },
+                f = e => {
+                    let {
+                        text: t,
+                        className: n,
+                        color: l = o.default.STATUS_DANGER,
+                        shape: a = s.ROUND,
+                        disableColor: c = !1,
+                        style: d,
+                        ...f
+                    } = e;
+                    return (0, i.jsx)("div", {
+                        className: r(n, u.textBadge, a),
+                        style: {
+                            backgroundColor: c ? void 0 : l,
+                            ...d
+                        },
+                        ...f,
+                        children: t
+                    })
+                },
+                E = e => {
+                    let {
+                        text: t,
+                        className: n,
+                        ...l
+                    } = e;
+                    return (0, i.jsx)(f, {
+                        className: r(u.premiumBadge, n),
+                        text: t,
+                        ...l
+                    })
+                },
+                _ = e => {
+                    let {
+                        icon: t,
+                        className: n,
+                        color: l = o.default.STATUS_DANGER,
+                        shape: a = s.ROUND,
+                        disableColor: c = !1,
+                        style: d
+                    } = e;
+                    return (0, i.jsx)("div", {
+                        className: r(n, u.iconBadge, a),
+                        style: {
+                            backgroundColor: c ? void 0 : l,
+                            ...d
+                        },
+                        children: (0, i.jsx)(t, {
+                            className: u.icon
+                        })
+                    })
+                },
+                I = e => {
+                    let {
+                        className: t,
+                        color: n = o.default.INTERACTIVE_ACTIVE,
+                        shape: l = s.ROUND,
+                        disableColor: a = !1,
+                        style: c,
+                        ...d
+                    } = e;
+                    return (0, i.jsx)("div", {
+                        className: r(t, u.circleBadge, l),
+                        style: {
+                            backgroundColor: a ? void 0 : n,
+                            ...c
+                        },
+                        ...d
+                    })
+                }
+        },
         866190: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -3903,4 +4055,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90856.923d21fae4e3dfbfbc4e.js.map
+//# sourceMappingURL=533.40a8aafaab00f1d083dd.js.map

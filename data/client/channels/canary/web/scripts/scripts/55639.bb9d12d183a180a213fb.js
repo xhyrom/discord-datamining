@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["28413"], {
+    ["55639"], {
         354087: function(e, t, r) {
             "use strict";
             r.r(t), r.d(t, {
@@ -112,76 +112,73 @@
                     return i
                 },
                 GuildMemberSafetyMembers: function() {
-                    return g
+                    return E
                 }
             }), r("424973"), r("222007");
             var i, n, s = r("969176"),
                 u = r.n(s),
                 a = r("407846"),
                 l = r("654017"),
-                d = r("26989"),
-                h = r("697218"),
-                o = r("64905"),
-                m = r("490931"),
-                _ = r("178406"),
-                c = r("159132"),
-                M = r("165958");
-            let S = Date.now();
+                d = r("697218"),
+                h = r("64905"),
+                o = r("490931"),
+                m = r("159132"),
+                _ = r("165958");
+            let c = Date.now();
 
-            function I(e) {
+            function M(e) {
                 let t = !e.isCurrentGuildMemberByTimestamp,
                     r = [t ? "NEW_GUILD_MEMBER" : "CURRENT_GUILD_MEMBER"];
                 return e.isIncludedInSearchResults && r.push("INCLUDED_IN_SEARCH_RESULTS"), r
             }
 
-            function f(e) {
+            function S(e) {
                 return e.sort
             }
 
-            function E() {
-                return new a.default(I, f)
+            function I() {
+                return new a.default(M, S)
             }(n = i || (i = {})).NEW_GUILD_MEMBER = "NEW_GUILD_MEMBER", n.CURRENT_GUILD_MEMBER = "CURRENT_GUILD_MEMBER", n.INCLUDED_IN_SEARCH_RESULTS = "INCLUDED_IN_SEARCH_RESULTS";
-            class g {
+            class E {
                 reset() {
-                    this._membersMap.clear(), this._membersMap = E(), this.resetNewMemberTimestamp()
+                    this._membersMap.clear(), this._membersMap = I(), this.resetNewMemberTimestamp()
                 }
                 resetNewMemberTimestamp() {
                     this.newMemberTimestamp = Date.now()
                 }
-                enhanceNewMember(e) {
-                    var t;
-                    let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                        i = (0, o.getJoinedAtTimestamp)(e.joinedAt),
+                enhanceNewMember(e, t) {
+                    var r;
+                    let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+                        n = (0, h.getJoinedAtTimestamp)(e.joinedAt),
                         {
-                            hasUnusualDmActivity: n,
-                            hasUnusualAccountActivity: s,
-                            sourceInviteCode: u,
-                            joinSourceType: a,
-                            inviterId: l,
-                            integrationType: d
+                            hasUnusualDmActivity: s,
+                            hasUnusualAccountActivity: u,
+                            sourceInviteCode: a,
+                            joinSourceType: l,
+                            inviterId: m,
+                            integrationType: c
                         } = this._computeMemberSupplementals(e.userId, e.unusualDMActivityUntil),
-                        c = h.default.getUser(e.userId),
-                        S = _.default.getSearchStateByGuildId(this.guildId),
-                        I = {
-                            hasUnusualDmActivity: n,
-                            hasUnusualAccountActivity: s,
-                            sourceInviteCode: u,
-                            joinSourceType: a,
-                            inviterId: l,
-                            integrationType: d,
+                        M = d.default.getUser(e.userId),
+                        S = {
+                            hasUnusualDmActivity: s,
+                            hasUnusualAccountActivity: u,
+                            sourceInviteCode: a,
+                            joinSourceType: l,
+                            inviterId: m,
+                            integrationType: c,
                             ...e,
-                            isCurrentGuildMemberByTimestamp: i <= this.newMemberTimestamp,
+                            isCurrentGuildMemberByTimestamp: n <= this.newMemberTimestamp,
                             isIncludedInSearchResults: !1,
-                            user: c,
-                            sort: (0, M.getSortValueForMember)(e, null !== (t = S.selectedSort) && void 0 !== t ? t : m.OrderBy.ORDER_BY_UNSPECIFIED),
-                            joinedAtTimestamp: i,
-                            ...r
+                            user: M,
+                            sort: (0, _.getSortValueForMember)(e, null !== (r = t.selectedSort) && void 0 !== r ? r : o.OrderBy.ORDER_BY_UNSPECIFIED),
+                            joinedAtTimestamp: n,
+                            ...i
                         };
-                    return I
+                    return S
                 }
                 _computeMemberSupplementals(e, t) {
                     var r;
-                    let i = (0, c.getMemberSupplementalByGuildId)(this.guildId),
+                    let i = (0, m.getMemberSupplementalByGuildId)(this.guildId),
                         {
                             sourceInviteCode: n,
                             joinSourceType: s,
@@ -196,7 +193,7 @@
                         hasUnusualDmActivity: function(e) {
                             if (null == e) return !1;
                             let t = new Date(e).getTime();
-                            return t >= S - m.UNUSUAL_DM_COMPARISON_DELTA
+                            return t >= c - o.UNUSUAL_DM_COMPARISON_DELTA
                         }(t),
                         hasUnusualAccountActivity: (0, l.isSpammer)(e)
                     }
@@ -229,21 +226,8 @@
                     }
                     return this._membersMap.set(i.userId, i) || s
                 }
-                upsertMember(e, t) {
-                    let r = this.getMemberByUserId(e);
-                    if (null == r) {
-                        let t = d.default.getTrueMember(this.guildId, e);
-                        if (null == t) return !1;
-                        r = this.enhanceNewMember(t)
-                    }
-                    return this.updateMember(r, t)
-                }
                 removeMember(e) {
                     return this._membersMap.delete(e)
-                }
-                syncFromGuildMemberStore(e, t) {
-                    let r = d.default.getTrueMember(e, t);
-                    return null == r ? this.removeMember(t) : this.upsertMember(t, r)
                 }
                 getMemberByUserId(e) {
                     return this._membersMap.get(e)
@@ -258,7 +242,7 @@
                     return this._membersMap.version
                 }
                 constructor(e) {
-                    this.newMemberTimestamp = Date.now(), this.guildId = e, this._membersMap = E()
+                    this.newMemberTimestamp = Date.now(), this.guildId = e, this._membersMap = I()
                 }
             }
         },
@@ -349,7 +333,7 @@
                         r = !0;
                         let s = n.default.getTrueMember(this.guildId, e);
                         if (null == s) return [!1, !1];
-                        i = this._members.enhanceNewMember(s, t)
+                        i = this._members.enhanceNewMember(s, this.getSearchState(), t)
                     }
                     if (null == t.isIncludedInSearchResults) {
                         let [e, n] = this._getIsIncludedInSearch(i, t);
@@ -369,7 +353,7 @@
                     if (null == r) {
                         let t = n.default.getTrueMember(this.guildId, e);
                         if (null == t) return !1;
-                        r = this._members.enhanceNewMember(t)
+                        r = this._members.enhanceNewMember(t, this.getSearchState())
                     } else if (r.isIncludedInSearchResults) return !0;
                     let i = this._search.isMemberIncludedInSearchResults(r);
                     return i
@@ -865,13 +849,13 @@
                 return !1
             }
 
-            function f(e) {
+            function E(e) {
                 let t = !1,
                     r = M(e.guildId);
                 return "GUILD_ROLE_DELETE" === e.type && (t = r.removeRoleFromSearchState(e.roleId)), r.rebuildAllMembers() || t
             }
 
-            function E(e) {
+            function f(e) {
                 let {
                     guildId: t,
                     userId: r
@@ -1039,8 +1023,8 @@
                     } = e, i = M(t);
                     return i.removeMember(r.id)
                 },
-                GUILD_ROLE_UPDATE: f,
-                GUILD_ROLE_DELETE: f,
+                GUILD_ROLE_UPDATE: E,
+                GUILD_ROLE_DELETE: E,
                 GUILD_MEMBER_PROFILE_UPDATE: function(e) {
                     let {
                         guildId: t,
@@ -1048,8 +1032,8 @@
                     } = e, i = M(t);
                     return i.updateMembersByMemberIds([r.user.id])
                 },
-                GUILD_ROLE_MEMBER_REMOVE: E,
-                GUILD_ROLE_MEMBER_ADD: E,
+                GUILD_ROLE_MEMBER_REMOVE: f,
+                GUILD_ROLE_MEMBER_ADD: f,
                 THREAD_MEMBER_LIST_UPDATE: function(e) {
                     let {
                         guildId: t,
@@ -1161,7 +1145,7 @@
                         total_result_count: c
                     } = e, S = M(d), {
                         memberIds: I,
-                        memberSupplementals: f
+                        memberSupplementals: E
                     } = _.reduce((e, t) => {
                         let {
                             member: r,
@@ -1178,7 +1162,7 @@
                     }, {
                         memberIds: [],
                         memberSupplementals: []
-                    }), E = (0, o.syncMemberSupplemental)(d, f);
+                    }), f = (0, o.syncMemberSupplemental)(d, E);
                     (0, m.registerFetchedSupplementals)(d, I);
                     let g = S.updateSearchedMembersByMemberIds(I);
                     _.length > 0 && (a = _[0], l = _[_.length - 1]);
@@ -1195,7 +1179,7 @@
                             })
                         }
                     }, !1);
-                    return E || g || b
+                    return f || g || b
                 },
                 MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH: function(e) {
                     let {
@@ -1282,4 +1266,4 @@
         }
     }
 ]);
-//# sourceMappingURL=28413.4812d79703c86a531f70.js.map
+//# sourceMappingURL=55639.bb9d12d183a180a213fb.js.map
