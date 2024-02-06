@@ -80663,10 +80663,7 @@
                     let {
                         soundId: t,
                         guildId: n
-                    } = e;
-                    E.delete(t);
-                    let i = E.get(n),
-                        s = null == i ? void 0 : i.findIndex(e => e.soundId === t);
+                    } = e, i = E.get(n), s = null == i ? void 0 : i.findIndex(e => e.soundId === t);
                     null != i && null != s && !(s < 0) && (i.splice(s, 1), E.set(n, [...i]))
                 },
                 GUILD_SOUNDBOARD_SOUND_PLAY_START: function(e) {
@@ -115913,7 +115910,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "264292"
+                                build_number: "264295"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -132756,4 +132753,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29278.26ef83fecaef343ed22b.js.map
+//# sourceMappingURL=29278.4549b9f92b579d85ec80.js.map
