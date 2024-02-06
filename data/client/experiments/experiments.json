@@ -8469,7 +8469,8 @@
         "Treatment 1: Can support secure frames for voice/video",
         "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation",
         "Treatment 3: Can support secure frames above protocol version 8",
-        "Treatment 4: Can support secure frames above protocol version 108 (MLS)"
+        "Treatment 4: Can support secure frames above protocol version 108 (MLS)",
+        "Treatment 5: Can support secure frames above protocol version 109 (MLS)"
       ],
       "hash": 3013881204,
       "buckets": [
@@ -8478,7 +8479,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "holdout": {},
       "aa_mode": false,
@@ -10816,7 +10818,8 @@
         "Treatment 1: Can support secure frames for voice/video",
         "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation",
         "Treatment 3: Can support secure frames above protocol version 8",
-        "Treatment 4: Can support secure frames above protocol version 108 (MLS)"
+        "Treatment 4: Can support secure frames above protocol version 108 (MLS)",
+        "Treatment 5: Can support secure frames above protocol version 109 (MLS)"
       ],
       "hash": 2916044329,
       "buckets": [
@@ -10825,7 +10828,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "holdout": {
         "name": null,
@@ -11606,7 +11610,7 @@
       "label": "Guild Gaming Voice Activity",
       "description": [
         "Not Eligible",
-        "Control Bucket",
+        "Treatment 0: Control",
         "Treatment 1: Badge the server icon & show gamers in the tooltip if gamers are in VC"
       ],
       "hash": 1280907668,
@@ -11618,6 +11622,7 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
+        "shouldSubscribeToGuildMemberUpdates",
         "showGamingVoiceActivity"
       ]
     }
