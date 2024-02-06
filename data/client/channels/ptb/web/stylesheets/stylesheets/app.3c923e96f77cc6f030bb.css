@@ -25549,9 +25549,14 @@ html .progress__4ef76 {
     padding-right: 48px !important
 }
 
-.message__80c10.selected_fd9051,
-.mouse-mode.full-motion .message__80c10:hover {
-    background: var(--bg-overlay-3, var(--background-message-hover))
+.theme-dark .message__80c10.selected_fd9051,
+.theme-dark.mouse-mode.full-motion .message__80c10:hover {
+    background: var(--bg-overlay-1, var(--background-message-hover))
+}
+
+.theme-light .message__80c10.selected_fd9051,
+.theme-light.mouse-mode.full-motion .message__80c10:hover {
+    background: var(--bg-overlay-2, var(--background-message-hover))
 }
 
 .message__80c10.mentioned__58017.selected_fd9051,
@@ -26968,8 +26973,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -127165,4 +127170,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ec9d8921db3e36d300f0.css.map*/
+/*# sourceMappingURL=app.3c923e96f77cc6f030bb.css.map*/
