@@ -124768,6 +124768,8 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
     --divider-strong: hsl(var(--white-500-hsl) / 0.16);
     --divider-subtle: hsl(var(--white-500-hsl) / 0.08);
+    --embed-background: var(--primary-630);
+    --embed-background-alternate: var(--primary-600);
     --embed-title: var(--primary-130);
     --expression-picker-bg: var(--primary-630);
     --focus-primary: var(--blue-345);
@@ -125079,6 +125081,8 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--white-200-hsl) / 0.5);
     --divider-strong: hsl(var(--black-500-hsl) / 0.16);
     --divider-subtle: hsl(var(--black-500-hsl) / 0.08);
+    --embed-background: var(--primary-130);
+    --embed-background-alternate: var(--primary-200);
     --embed-title: var(--primary-860);
     --expression-picker-bg: var(--primary-130);
     --focus-primary: var(--blue-345);
@@ -125390,6 +125394,8 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --divider-strong: hsl(var(--plum-11-hsl) / 0.24);
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
+    --embed-background: var(--plum-23);
+    --embed-background-alternate: var(--primary-600);
     --embed-title: var(--plum-2);
     --expression-picker-bg: var(--black-500);
     --focus-primary: var(--blue-345);
@@ -125701,6 +125707,8 @@ div.nagbar_c731ff {
     --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --divider-strong: hsl(var(--plum-11-hsl) / 0.22);
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
+    --embed-background: var(--plum-18);
+    --embed-background-alternate: var(--primary-600);
     --embed-title: var(--plum-4);
     --expression-picker-bg: var(--plum-20);
     --focus-primary: var(--blue-345);
@@ -127170,4 +127178,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3c923e96f77cc6f030bb.css.map*/
+/*# sourceMappingURL=app.e4525f2d7e2ca34a256c.css.map*/
