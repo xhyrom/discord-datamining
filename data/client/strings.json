@@ -16,6 +16,7 @@
   "NOTIFICATION_FRIEND_SUGGESTION_CONTACT_TITLE": "\"Your contact !!{contact}!! just joined Discord!\"",
   "NOTIFICATION_FRIEND_SUGGESTION_TITLE": "\"!!{contact}!! just joined Discord!\"",
   "NOTIFICATION_FRIEND_SUGGESTION_BODY": "\"Send them a friend request\"",
+  "NOTIFICATION_MESSAGE_ACTIVITY_INSTANCE": "\"!!{user}!! started an activity\"",
   "IOS_NOTIFICATION_SEE_FULL": "\"Tap to see full message.\"",
   "ERRORS_UNEXPECTED_CRASH": "\"Looks like Discord has crashed unexpectedly....\"",
   "ERRORS_ACTION_TO_TAKE": "\"We've tracked the error and will get right on it.\"",
