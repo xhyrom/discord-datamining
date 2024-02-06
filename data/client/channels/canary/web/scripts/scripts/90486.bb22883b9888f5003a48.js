@@ -16505,6 +16505,11 @@
                 LAUNCH_PAD_TAB_A11Y_LABEL: "Open LaunchPad",
                 REPORT_SECOND_LOOK_SUCCESS_TITLE: "We have received your request.",
                 REPORT_SECOND_LOOK_FAILURE_TITLE: "You have already submitted a review request for this report.",
+                REPORT_SECOND_LOOK_NOT_FOUND_ERROR: "Report not found.",
+                REPORT_SECOND_LOOK_ALREADY_REQUESTED_ERROR: "Report Review already requested.",
+                REPORT_SECOND_LOOK_LIMITED_TIME_ERROR: "Report Review is only available for a limited time.",
+                REPORT_SECOND_LOOK_INELIGIBLE_ERROR: "Report is ineligible for Review request.",
+                REPORT_SECOND_LOOK_UNKNOWN_ERROR: "Something went wrong. Try again.",
                 APPEAL_INGESTION_AGE_VERIFICATION_LINK_TITLE: "Submit age verification",
                 APPEAL_INGESTION_LEARN_MORE_LINK_TITLE: "Learn more about this policy",
                 APPEAL_INGESTION_BREADCRUMBS_HEADER: "REASON",
@@ -18209,7 +18214,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264076", ", Version Hash: ").concat("971b1b879e1319a16b3a8e272da729ff8bebc162")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264109", ", Version Hash: ").concat("2fa377325656e6d251ffe2617e17c7995accab69")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19737,7 +19742,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 VoiceChannelGameActivityManager: {
-                    actions: ["PRESENCE_UPDATES", "POST_CONNECTION_OPEN", "VOICE_STATE_UPDATES", "RUNNING_GAMES_CHANGE", "VOICE_CHANNEL_SELECT"],
+                    actions: ["PRESENCE_UPDATES", "VOICE_STATE_UPDATES", "RUNNING_GAMES_CHANGE", "VOICE_CHANNEL_SELECT"],
                     inlineRequire: () => E("282655").default,
                     neverLoadBeforeConnectionOpen: !0
                 }
@@ -20453,8 +20458,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "264076", "264076"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264076")), _ = 0), _
+                let _ = parseInt((e = "264109", "264109"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264109")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21488,8 +21493,8 @@
                 j = E("773336"),
                 X = E("719923"),
                 Q = E("269936"),
-                J = E("302537"),
-                q = E("967889"),
+                q = E("302537"),
+                J = E("967889"),
                 z = E("102999"),
                 $ = E("160139"),
                 Z = E("49111"),
@@ -21552,10 +21557,10 @@
                 return (0, t.jsx)(H.default, {
                     children: (0, t.jsx)(c.default, {
                         children: (0, t.jsxs)(O.RedesignIconContextProvider, {
-                            children: [(0, t.jsx)(J.default, {
+                            children: [(0, t.jsx)(q.default, {
                                 skipsSettingDefaultPageTitle: E
                             }), (0, t.jsx)(z.default, {
-                                children: (0, t.jsx)(q.default, {
+                                children: (0, t.jsx)(J.default, {
                                     children: (0, t.jsxs)(O.FocusRingScope, {
                                         containerRef: eA,
                                         children: [(0, t.jsx)(x.MaskLibrary, {}), (0, t.jsx)(Y.default, {}), (0, t.jsx)(a.FocusGuard, {}), null != N ? (0, t.jsx)(et, {
@@ -24430,52 +24435,45 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return c
+                    return u
                 }
             }), E("222007");
-            var t = E("823411"),
-                o = E("689988"),
-                n = E("716241"),
-                r = E("651057"),
-                a = E("299285"),
-                i = E("271938"),
-                I = E("42203"),
-                s = E("546463"),
-                T = E("824563"),
-                S = E("18494"),
-                N = E("162771"),
-                O = E("101125"),
-                A = E("800762"),
-                R = E("774539"),
-                l = E("49111");
+            var t = E("689988"),
+                o = E("716241"),
+                n = E("651057"),
+                r = E("299285"),
+                a = E("271938"),
+                i = E("42203"),
+                I = E("824563"),
+                s = E("18494"),
+                T = E("101125"),
+                S = E("800762"),
+                N = E("774539"),
+                O = E("49111");
 
-            function L(e) {
-                return e.filter(e => e.type === l.ActivityTypes.PLAYING && null != e.application_id && null != s.default.getDetectableGame(e.application_id)).map(e => e.application_id)
+            function A(e) {
+                return e.filter(e => e.type === O.ActivityTypes.PLAYING && e.application_id).map(e => e.application_id)
             }
-            async function u(e) {
-                await r.default.fetchApplications(e, !1)
+            async function R(e) {
+                await n.default.fetchApplications(e, !1)
             }
-            async function C(e) {
+            async function l(e) {
                 if (null == e) return;
-                let _ = I.default.getChannel(e);
-                if (null == _ || !(0, R.isVoiceUserGameActivityEnabled)("running_games_change", !1)) return;
-                let E = O.default.getActivities();
+                let _ = i.default.getChannel(e);
+                if (null == _ || !(0, N.isVoiceUserGameActivityEnabled)("running_games_change", !1)) return;
+                let E = T.default.getActivities();
                 if (0 === E.length) return;
-                let t = L([...E]);
-                await u([...t]);
-                let o = a.default.getApplication(t[0]);
-                null != o && n.default.trackWithMetadata(l.AnalyticEvents.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
+                let t = A([...E]);
+                await R([...t]);
+                let n = r.default.getApplication(t[0]);
+                null != n && o.default.trackWithMetadata(O.AnalyticEvents.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
                     channel_id: e,
                     guild_id: _.guild_id,
-                    game_name: o.name,
-                    user_id: i.default.getId()
+                    game_name: n.name,
+                    user_id: a.default.getId()
                 })
             }
-            class D extends o.default {
-                handleConnectionOpen() {
-                    let e = N.default.getGuildId();
-                    null != e && t.default.getDetectableGames()
-                }
+            class L extends t.default {
                 handlePresenceUpdates(e) {
                     let {
                         updates: _
@@ -24484,11 +24482,11 @@
                         let {
                             user: _,
                             activities: t
-                        } = e, o = A.default.getVoiceStateForUser(_.id);
-                        if (null == o || !(0, R.isVoiceUserGameActivityEnabled)("presence_update", !1)) return;
-                        let n = L([...t]);
+                        } = e, o = S.default.getVoiceStateForUser(_.id);
+                        if (null == o || !(0, N.isVoiceUserGameActivityEnabled)("presence_update", !1)) return;
+                        let n = A([...t]);
                         E = new Set([...E, ...n])
-                    }), u([...E])
+                    }), R([...E])
                 }
                 handleVoiceStateUpdates(e) {
                     let {
@@ -24499,25 +24497,24 @@
                             userId: _,
                             guildId: t
                         } = e;
-                        if (!(0, R.isVoiceUserGameActivityEnabled)("voice_state_update", !1)) return;
-                        let o = T.default.getActivities(_, t),
-                            n = L([...o]);
+                        if (!(0, N.isVoiceUserGameActivityEnabled)("voice_state_update", !1)) return;
+                        let o = I.default.getActivities(_, t),
+                            n = A([...o]);
                         E = new Set([...E, ...n])
-                    }), u([...E])
+                    }), R([...E])
                 }
                 handleRunningGamesChange() {
-                    let e = S.default.getVoiceChannelId();
-                    C(e)
+                    let e = s.default.getVoiceChannelId();
+                    l(e)
                 }
                 handleVoiceChannelSelect(e) {
                     let {
                         channelId: _
                     } = e;
-                    C(_)
+                    l(_)
                 }
                 constructor(...e) {
                     super(...e), this.actions = {
-                        POST_CONNECTION_OPEN: this.handleConnectionOpen,
                         PRESENCE_UPDATES: this.handlePresenceUpdates,
                         VOICE_STATE_UPDATES: this.handleVoiceStateUpdates,
                         RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
@@ -24525,7 +24522,7 @@
                     }
                 }
             }
-            var c = new D
+            var u = new L
         },
         589636: function(e, _, E) {
             "use strict";
@@ -32832,7 +32829,7 @@
                 }
             }
             let Q = new X;
-            class J extends M.MessageType {
+            class q extends M.MessageType {
                 create(e) {
                     let _ = {
                         explicitContentGuilds: 0,
@@ -32892,7 +32889,7 @@
                     }])
                 }
             }
-            let q = new J;
+            let J = new q;
             class z extends M.MessageType {
                 create(e) {
                     let _ = {
@@ -32994,7 +32991,7 @@
                                 o.includeStickersInAutocomplete = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.includeStickersInAutocomplete);
                                 break;
                             case 29:
-                                o.explicitContentSettings = q.internalBinaryRead(e, e.uint32(), E, o.explicitContentSettings);
+                                o.explicitContentSettings = J.internalBinaryRead(e, e.uint32(), E, o.explicitContentSettings);
                                 break;
                             default:
                                 let n = E.readUnknownField;
@@ -33011,7 +33008,7 @@
                     for (let E = 0; E < e.stickerPickerCollapsedSections.length; E++) _.tag(6, M.WireType.LengthDelimited).string(e.stickerPickerCollapsedSections[E]);
                     e.viewImageDescriptions && h.BoolValue.internalBinaryWrite(e.viewImageDescriptions, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.showCommandSuggestions && h.BoolValue.internalBinaryWrite(e.showCommandSuggestions, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.inlineAttachmentMedia && h.BoolValue.internalBinaryWrite(e.inlineAttachmentMedia, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.inlineEmbedMedia && h.BoolValue.internalBinaryWrite(e.inlineEmbedMedia, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.gifAutoPlay && h.BoolValue.internalBinaryWrite(e.gifAutoPlay, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.renderEmbeds && h.BoolValue.internalBinaryWrite(e.renderEmbeds, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.renderReactions && h.BoolValue.internalBinaryWrite(e.renderReactions, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.animateEmoji && h.BoolValue.internalBinaryWrite(e.animateEmoji, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.animateStickers && h.UInt32Value.internalBinaryWrite(e.animateStickers, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.enableTtsCommand && h.BoolValue.internalBinaryWrite(e.enableTtsCommand, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.messageDisplayCompact && h.BoolValue.internalBinaryWrite(e.messageDisplayCompact, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentFilter && h.UInt32Value.internalBinaryWrite(e.explicitContentFilter, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.viewNsfwGuilds && h.BoolValue.internalBinaryWrite(e.viewNsfwGuilds, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.convertEmoticons && h.BoolValue.internalBinaryWrite(e.convertEmoticons, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.expressionSuggestionsEnabled && h.BoolValue.internalBinaryWrite(e.expressionSuggestionsEnabled, _.tag(22, M.WireType.LengthDelimited).fork(), E).join(), e.viewNsfwCommands && h.BoolValue.internalBinaryWrite(e.viewNsfwCommands, _.tag(23, M.WireType.LengthDelimited).fork(), E).join(), e.useLegacyChatInput && h.BoolValue.internalBinaryWrite(e.useLegacyChatInput, _.tag(24, M.WireType.LengthDelimited).fork(), E).join();
                     for (let E = 0; E < e.soundboardPickerCollapsedSections.length; E++) _.tag(25, M.WireType.LengthDelimited).string(e.soundboardPickerCollapsedSections[E]);
-                    e.dmSpamFilter && h.UInt32Value.internalBinaryWrite(e.dmSpamFilter, _.tag(26, M.WireType.LengthDelimited).fork(), E).join(), 0 !== e.dmSpamFilterV2 && _.tag(27, M.WireType.Varint).int32(e.dmSpamFilterV2), e.includeStickersInAutocomplete && h.BoolValue.internalBinaryWrite(e.includeStickersInAutocomplete, _.tag(28, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentSettings && q.internalBinaryWrite(e.explicitContentSettings, _.tag(29, M.WireType.LengthDelimited).fork(), E).join();
+                    e.dmSpamFilter && h.UInt32Value.internalBinaryWrite(e.dmSpamFilter, _.tag(26, M.WireType.LengthDelimited).fork(), E).join(), 0 !== e.dmSpamFilterV2 && _.tag(27, M.WireType.Varint).int32(e.dmSpamFilterV2), e.includeStickersInAutocomplete && h.BoolValue.internalBinaryWrite(e.includeStickersInAutocomplete, _.tag(28, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentSettings && J.internalBinaryWrite(e.explicitContentSettings, _.tag(29, M.WireType.LengthDelimited).fork(), E).join();
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
@@ -33158,7 +33155,7 @@
                         no: 29,
                         name: "explicit_content_settings",
                         kind: "message",
-                        T: () => q
+                        T: () => J
                     }])
                 }
             }
@@ -35810,4 +35807,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.d26cbba6990d476e7926.js.map
+//# sourceMappingURL=90486.bb22883b9888f5003a48.js.map
