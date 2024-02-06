@@ -8,9 +8,9 @@
                 }
             }), n("222007"), n("70102"), n("843762"), n("424973");
             var r = n("37983"),
-                a = n("884691"),
-                s = n("414456"),
-                i = n.n(s),
+                s = n("884691"),
+                a = n("414456"),
+                i = n.n(a),
                 o = n("817736"),
                 l = n.n(o),
                 u = n("118810"),
@@ -23,7 +23,7 @@
                 S = n("402671"),
                 E = n("866190"),
                 v = n("115279");
-            class T extends a.PureComponent {
+            class T extends s.PureComponent {
                 componentWillUnmount() {
                     var e;
                     null === (e = this.cancelLoadImage) || void 0 === e || e.call(this)
@@ -34,8 +34,8 @@
                             src: t,
                             emojiId: n,
                             emojiName: r,
-                            animated: a,
-                            shouldAnimate: s,
+                            animated: s,
+                            shouldAnimate: a,
                             isFocused: i,
                             isInteracting: o,
                             size: l = "default"
@@ -48,7 +48,7 @@
                         let e = v.EMOJI_SIZE_MAP[l];
                         return p.default.getEmojiURL({
                             id: n,
-                            animated: i && !0 === a && (!0 === s || u || !0 === o),
+                            animated: i && !0 === s && (!0 === a || u || !0 === o),
                             size: e
                         })
                     }
@@ -59,7 +59,7 @@
                     let t;
                     let {
                         emojiName: n,
-                        animated: s,
+                        animated: a,
                         className: o,
                         size: l = "default",
                         alt: u,
@@ -73,10 +73,10 @@
                     return null == S || "" === S ? (0, r.jsx)("span", {
                         className: i("emoji", "emoji-text"),
                         children: n
-                    }) : (s && (t = {
+                    }) : (a && (t = {
                         onMouseEnter: this.onMouseEnter,
                         onMouseLeave: this.onMouseLeave
-                    }), (0, a.createElement)("img", {
+                    }), (0, s.createElement)("img", {
                         ...p,
                         key: this.key,
                         src: S,
@@ -134,21 +134,21 @@
                 };
                 let t = [],
                     n = [],
-                    s = new window.IntersectionObserver(e => {
+                    a = new window.IntersectionObserver(e => {
                         e.forEach(e => {
                             let r = n.find(t => {
                                 let [n] = t;
                                 return n === e.target
                             });
                             if (null == r) return;
-                            let a = r[1];
+                            let s = r[1];
                             if (e.intersectionRatio >= .7) {
-                                var s, i;
-                                if (-1 !== t.indexOf(a)) return;
-                                let n = Math.abs(e.intersectionRect.bottom - Number(null === (s = e.rootBounds) || void 0 === s ? void 0 : s.bottom)) < Math.abs(e.intersectionRect.top - Number(null === (i = e.rootBounds) || void 0 === i ? void 0 : i.top));
-                                n ? t.unshift(a) : t.push(a), a.forceUpdate(), n && t.length > 100 && t[100].forceUpdate()
+                                var a, i;
+                                if (-1 !== t.indexOf(s)) return;
+                                let n = Math.abs(e.intersectionRect.bottom - Number(null === (a = e.rootBounds) || void 0 === a ? void 0 : a.bottom)) < Math.abs(e.intersectionRect.top - Number(null === (i = e.rootBounds) || void 0 === i ? void 0 : i.top));
+                                n ? t.unshift(s) : t.push(s), s.forceUpdate(), n && t.length > 100 && t[100].forceUpdate()
                             } else {
-                                let e = t.indexOf(a); - 1 !== e && (t.splice(e, 1), a.forceUpdate(), e < 100 && t.length >= 100 && t[99].forceUpdate())
+                                let e = t.indexOf(s); - 1 !== e && (t.splice(e, 1), s.forceUpdate(), e < 100 && t.length >= 100 && t[99].forceUpdate())
                             }
                         })
                     }, {
@@ -157,18 +157,18 @@
 
                 function i(e) {
                     let t = l.findDOMNode(e);
-                    (0, u.isElement)(t) && (n.push([t, e]), s.observe(t))
+                    (0, u.isElement)(t) && (n.push([t, e]), a.observe(t))
                 }
 
                 function o(e) {
                     let r = l.findDOMNode(e);
-                    s.unobserve(r);
-                    let a = n.findIndex(t => {
+                    a.unobserve(r);
+                    let s = n.findIndex(t => {
                         let [n, r] = t;
                         return r === e
-                    }); - 1 !== a && (n.splice(a, 1), -1 !== (a = t.indexOf(e)) && (t.splice(a, 1), a < 100 && t.length >= 100 && t[99].forceUpdate()))
+                    }); - 1 !== s && (n.splice(s, 1), -1 !== (s = t.indexOf(e)) && (t.splice(s, 1), s < 100 && t.length >= 100 && t[99].forceUpdate()))
                 }
-                return class extends a.Component {
+                return class extends s.Component {
                     shouldAutoplay(e) {
                         return e.animated && e.autoplay
                     }
@@ -186,15 +186,15 @@
                     render() {
                         let n = t.indexOf(this),
                             {
-                                autoplay: a,
-                                allowAnimatedEmoji: s,
+                                autoplay: s,
+                                allowAnimatedEmoji: a,
                                 ...i
                             } = this.props;
                         return (0, r.jsx)(m.MessagesInteractionContext.Consumer, {
                             children: t => (0, r.jsx)(e, {
                                 ...i,
-                                autoplay: a || !1,
-                                shouldAnimate: -1 !== n && n < 100 && !t.disableAnimations && s
+                                autoplay: s || !1,
+                                shouldAnimate: -1 !== n && n < 100 && !t.disableAnimations && a
                             })
                         })
                     }
@@ -207,11 +207,11 @@
                         autoplay: null == e.autoplay ? t : e.autoplay,
                         allowAnimatedEmoji: t
                     },
-                    a = __OVERLAY__ ? (0, d.useStateFromStores)([h.default], () => h.default.isInstanceFocused()) : (0, E.useIsWindowFocused)();
+                    s = __OVERLAY__ ? (0, d.useStateFromStores)([h.default], () => h.default.isInstanceFocused()) : (0, E.useIsWindowFocused)();
                 return (0, r.jsx)(g, {
                     ...e,
                     ...n,
-                    isFocused: a
+                    isFocused: s
                 })
             }
         },
@@ -224,8 +224,8 @@
             });
             var r = n("37983");
             n("884691");
-            var a = n("414456"),
-                s = n.n(a),
+            var s = n("414456"),
+                a = n.n(s),
                 i = n("446674"),
                 o = n("77078"),
                 l = n("102985"),
@@ -245,7 +245,7 @@
                 let {
                     primary: t,
                     secondary: n,
-                    botType: a,
+                    botType: s,
                     botVerified: i,
                     discriminatorClass: l,
                     className: d,
@@ -255,25 +255,25 @@
                     showStreamerModeTooltip: S
                 } = e;
                 return (0, r.jsxs)("div", {
-                    className: s(h.info, d),
+                    className: a(h.info, d),
                     children: [(0, r.jsx)(o.Tooltip, {
                         text: f.default.Messages.STREAMER_MODE_ENABLED,
                         shouldShow: S,
                         "aria-label": !!S && void 0,
                         children: e => (0, r.jsx)("span", {
                             ...e,
-                            className: s(h.username, c),
+                            className: a(h.username, c),
                             style: null != m ? {
                                 color: m
                             } : void 0,
                             children: t
                         })
                     }), null != n ? (0, r.jsx)("span", {
-                        className: s(h.infoSpacing, l),
+                        className: a(h.infoSpacing, l),
                         children: n
-                    }) : void 0, null != a && (0, r.jsx)(u.default, {
-                        type: a,
-                        className: s(h.infoSpacing, p),
+                    }) : void 0, null != s && (0, r.jsx)(u.default, {
+                        type: s,
+                        className: a(h.infoSpacing, p),
                         verified: i
                     })]
                 })
@@ -282,15 +282,15 @@
                 let {
                     hideDiscriminator: t = !1,
                     user: n,
-                    nick: a,
-                    forceUsername: s,
+                    nick: s,
+                    forceUsername: a,
                     showAccountIdentifier: o,
                     overrideDiscriminator: u,
                     forcePomelo: f,
                     ...h
-                } = e, S = (0, i.useStateFromStores)([l.default], () => l.default.hidePersonalInformation), E = S || t || n.isNonUserBot(), v = n.toString(), T = c.default.getName(n), g = s ? v : null != a ? a : T, A = n.isPomelo() || f;
+                } = e, S = (0, i.useStateFromStores)([l.default], () => l.default.hidePersonalInformation), E = S || t || n.isNonUserBot(), v = n.toString(), T = c.default.getName(n), g = a ? v : null != s ? s : T, A = n.isPomelo() || f;
                 if (A || g !== v) {
-                    let e = g === v && A && s ? c.default.getUserTag(n, {
+                    let e = g === v && A && a ? c.default.getUserTag(n, {
                             forcePomelo: f
                         }) : g,
                         t = o && e !== "@".concat(v) ? c.default.getUserTag(n) : void 0;
@@ -314,58 +314,22 @@
         },
         163725: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                EyeSlashIcon: function() {
-                    return i
-                }
-            });
-            var r = n("37983");
-            n("884691");
-            var a = n("669491"),
-                s = n("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: o = "",
-                    ...l
-                } = e;
-                return (0, r.jsxs)("svg", {
-                    ...(0, s.default)(l),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, r.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1 1 0 0 0-1.4-1.4l-20 20ZM3.16 16.05c.18.24.53.26.74.05l.72-.72c.18-.18.2-.45.05-.66a15.7 15.7 0 0 1-1.43-2.52.48.48 0 0 1 0-.4c.4-.9 1.18-2.37 2.37-3.72C7.13 6.38 9.2 5 12 5c.82 0 1.58.12 2.28.33.18.05.38 0 .52-.13l.8-.8c.25-.25.18-.67-.15-.79A9.79 9.79 0 0 0 12 3C4.89 3 1.73 10.11 1.11 11.7a.83.83 0 0 0 0 .6c.25.64.9 2.15 2.05 3.75Z",
-                        className: o
-                    }), (0, r.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M8.18 10.81c-.13.43.36.65.67.34l2.3-2.3c.31-.31.09-.8-.34-.67a4 4 0 0 0-2.63 2.63ZM12.85 15.15c-.31.31-.09.8.34.67a4.01 4.01 0 0 0 2.63-2.63c.13-.43-.36-.65-.67-.34l-2.3 2.3Z",
-                        className: o
-                    }), (0, r.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        d: "M9.72 18.67a.52.52 0 0 0-.52.13l-.8.8c-.25.25-.18.67.15.79 1.03.38 2.18.61 3.45.61 7.11 0 10.27-7.11 10.89-8.7a.83.83 0 0 0 0-.6c-.25-.64-.9-2.15-2.05-3.75a.49.49 0 0 0-.74-.05l-.72.72a.51.51 0 0 0-.05.66 15.7 15.7 0 0 1 1.43 2.52c.06.13.06.27 0 .4-.4.9-1.18 2.37-2.37 3.72C16.87 17.62 14.8 19 12 19c-.82 0-1.58-.12-2.28-.33Z",
-                        className: o
-                    })]
-                })
-            }
+            n.r(t);
+            var r = n("962821");
+            n.es(r, t)
         },
         889014: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return s
+                    return a
                 }
             });
             var r = n("446674"),
-                a = n("76393");
+                s = n("76393");
 
-            function s() {
-                return (0, r.useStateFromStores)([a.default], () => null != a.default.getRemoteSessionId() || null != a.default.getAwaitingRemoteSessionInfo())
+            function a() {
+                return (0, r.useStateFromStores)([s.default], () => null != s.default.getRemoteSessionId() || null != s.default.getAwaitingRemoteSessionInfo())
             }
         },
         300322: function(e, t, n) {
@@ -421,8 +385,8 @@
                 }
             });
             var r = n("917351"),
-                a = n.n(r),
-                s = n("316693"),
+                s = n.n(r),
+                a = n("316693"),
                 i = n("446674"),
                 o = n("296892"),
                 l = n("889014"),
@@ -451,20 +415,20 @@
 
             function E(e, t) {
                 let n = (0, i.useStateFromStores)([h.default], () => {
-                    let t = e.isForumLikeChannel() ? p.Permissions.SEND_MESSAGES : s.default.combine(p.Permissions.CREATE_PUBLIC_THREADS, p.Permissions.READ_MESSAGE_HISTORY);
+                    let t = e.isForumLikeChannel() ? p.Permissions.SEND_MESSAGES : a.default.combine(p.Permissions.CREATE_PUBLIC_THREADS, p.Permissions.READ_MESSAGE_HISTORY);
                     return h.default.can(t, e)
                 }, [e]);
                 return A(n, e, t)
             }
 
             function v(e, t) {
-                let n = e.isForumLikeChannel() ? p.Permissions.SEND_MESSAGES : s.default.combine(p.Permissions.CREATE_PUBLIC_THREADS, p.Permissions.READ_MESSAGE_HISTORY),
+                let n = e.isForumLikeChannel() ? p.Permissions.SEND_MESSAGES : a.default.combine(p.Permissions.CREATE_PUBLIC_THREADS, p.Permissions.READ_MESSAGE_HISTORY),
                     r = h.default.can(n, e);
                 return A(r, e, t)
             }
 
             function T(e) {
-                let t = (0, i.useStateFromStores)([h.default], () => h.default.can(s.default.combine(p.Permissions.CREATE_PRIVATE_THREADS), e), [e]);
+                let t = (0, i.useStateFromStores)([h.default], () => h.default.can(a.default.combine(p.Permissions.CREATE_PRIVATE_THREADS), e), [e]);
                 return e.type === p.ChannelTypes.GUILD_TEXT && A(t, e)
             }
 
@@ -491,11 +455,11 @@
                     let t = m.default.getActiveJoinedThreadsForParent(e.guild_id, e.id),
                         n = m.default.getActiveJoinedRelevantThreadsForParent(e.guild_id, e.id),
                         r = m.default.getActiveUnjoinedThreadsForParent(e.guild_id, e.id),
-                        s = a(n).some(e => h.default.can(p.Permissions.VIEW_CHANNEL, e.channel)),
-                        i = a(t).some(e => !(e.channel.id in n) && h.default.can(p.Permissions.VIEW_CHANNEL, e.channel)),
-                        o = a(r).some(e => h.default.can(p.Permissions.VIEW_CHANNEL, e));
+                        a = s(n).some(e => h.default.can(p.Permissions.VIEW_CHANNEL, e.channel)),
+                        i = s(t).some(e => !(e.channel.id in n) && h.default.can(p.Permissions.VIEW_CHANNEL, e.channel)),
+                        o = s(r).some(e => h.default.can(p.Permissions.VIEW_CHANNEL, e));
                     return {
-                        hasActiveThreads: s || i || o,
+                        hasActiveThreads: a || i || o,
                         hasMoreActiveThreads: o || i
                     }
                 })
@@ -559,13 +523,13 @@
                 let t = (0, l.default)(),
                     n = (0, i.useStateFromStores)([h.default], () => h.default.can(p.Permissions.CONNECT, e)),
                     r = x(e),
-                    a = S.useExperiment({
+                    s = S.useExperiment({
                         guildId: e.guild_id,
                         location: "e791ea_1"
                     }, {
                         autoTrackExposure: !1
                     }).enabled;
-                return !t && e.isVocalThread() && a && n && r
+                return !t && e.isVocalThread() && s && n && r
             }
 
             function w(e) {
@@ -585,8 +549,8 @@
             });
             var r = n("37983");
             n("884691");
-            var a = n("414456"),
-                s = n.n(a),
+            var s = n("414456"),
+                a = n.n(s),
                 i = n("79798"),
                 o = n("988268"),
                 l = n("888770"),
@@ -594,7 +558,7 @@
                     let {
                         name: t,
                         discriminator: n,
-                        invertBotTagColor: a,
+                        invertBotTagColor: s,
                         nameColor: o,
                         className: u,
                         botType: d,
@@ -607,10 +571,10 @@
                         usernameIcon: E
                     } = e;
                     return (0, r.jsxs)("div", {
-                        className: s(u, l.nameTag),
+                        className: a(u, l.nameTag),
                         style: p,
                         children: [(0, r.jsxs)("span", {
-                            className: s(l.username, c),
+                            className: a(l.username, c),
                             style: null != o ? {
                                 color: o
                             } : void 0,
@@ -620,8 +584,8 @@
                             children: ["#", n]
                         }) : null, null != d ? (0, r.jsx)(i.default, {
                             type: d,
-                            invertColor: a,
-                            className: s(h, l.bot),
+                            invertColor: s,
+                            className: a(h, l.bot),
                             verified: m,
                             useRemSizes: S
                         }) : null]
@@ -632,11 +596,11 @@
             "use strict";
             n.r(t), n.d(t, {
                 MessagesInteractionContext: function() {
-                    return a
+                    return s
                 }
             });
             var r = n("884691");
-            let a = r.createContext({
+            let s = r.createContext({
                 disableInteractions: !1,
                 disableAnimations: !1
             })
@@ -650,16 +614,16 @@
             });
             var r = n("37983");
             n("884691");
-            var a = n("669491"),
-                s = n("469563"),
+            var s = n("669491"),
+                a = n("469563"),
                 i = n("163725"),
                 o = n("75196"),
-                l = (0, s.replaceIcon)(function(e) {
+                l = (0, a.replaceIcon)(function(e) {
                     let {
                         width: t = 24,
                         height: n = 24,
-                        color: s = "currentColor",
-                        foregroundColor: i = a.default.unsafe_rawColors.RED_400.css,
+                        color: a = "currentColor",
+                        foregroundColor: i = s.default.unsafe_rawColors.RED_400.css,
                         foreground: l,
                         background: u,
                         ...d
@@ -678,7 +642,7 @@
                             height: "2",
                             transform: "rotate(-45 2 21.2154)"
                         }), (0, r.jsx)("path", {
-                            fill: s,
+                            fill: a,
                             className: u,
                             fillRule: "evenodd",
                             clipRule: "evenodd",
@@ -700,10 +664,10 @@
                 }
             }), n("70102");
             var r = n("281071"),
-                a = n("773336"),
-                s = n("50885");
+                s = n("773336"),
+                a = n("50885");
             let i = (() => {
-                if (a.isPlatformEmbedded) return null != s.default.copy;
+                if (s.isPlatformEmbedded) return null != a.default.copy;
                 try {
                     return document.queryCommandEnabled("copy") || document.queryCommandSupported("copy")
                 } catch (e) {
@@ -712,7 +676,49 @@
             })();
 
             function o(e) {
-                return !!i && (a.isPlatformEmbedded ? (s.default.copy(e), !0) : r.copy(e))
+                return !!i && (s.isPlatformEmbedded ? (a.default.copy(e), !0) : r.copy(e))
+            }
+        },
+        962821: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                EyeSlashIcon: function() {
+                    return i
+                }
+            });
+            var r = n("37983");
+            n("884691");
+            var s = n("669491"),
+                a = n("82169");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: i = s.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, r.jsxs)("svg", {
+                    ...(0, a.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, r.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1 1 0 0 0-1.4-1.4l-20 20ZM3.16 16.05c.18.24.53.26.74.05l.72-.72c.18-.18.2-.45.05-.66a15.7 15.7 0 0 1-1.43-2.52.48.48 0 0 1 0-.4c.4-.9 1.18-2.37 2.37-3.72C7.13 6.38 9.2 5 12 5c.82 0 1.58.12 2.28.33.18.05.38 0 .52-.13l.8-.8c.25-.25.18-.67-.15-.79A9.79 9.79 0 0 0 12 3C4.89 3 1.73 10.11 1.11 11.7a.83.83 0 0 0 0 .6c.25.64.9 2.15 2.05 3.75Z",
+                        className: o
+                    }), (0, r.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M8.18 10.81c-.13.43.36.65.67.34l2.3-2.3c.31-.31.09-.8-.34-.67a4 4 0 0 0-2.63 2.63ZM12.85 15.15c-.31.31-.09.8.34.67a4.01 4.01 0 0 0 2.63-2.63c.13-.43-.36-.65-.67-.34l-2.3 2.3Z",
+                        className: o
+                    }), (0, r.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M9.72 18.67a.52.52 0 0 0-.52.13l-.8.8c-.25.25-.18.67.15.79 1.03.38 2.18.61 3.45.61 7.11 0 10.27-7.11 10.89-8.7a.83.83 0 0 0 0-.6c-.25-.64-.9-2.15-2.05-3.75a.49.49 0 0 0-.74-.05l-.72.72a.51.51 0 0 0-.05.66 15.7 15.7 0 0 1 1.43 2.52c.06.13.06.27 0 .4-.4.9-1.18 2.37-2.37 3.72C16.87 17.62 14.8 19 12 19c-.82 0-1.58-.12-2.28-.33Z",
+                        className: o
+                    })]
+                })
             }
         },
         281071: function(e, t, n) {
@@ -723,10 +729,10 @@
                 if (null == t) throw Error("[Utils] ClipboardUtils.copy(): assert failed: document.body != null");
                 let n = document.createRange(),
                     r = window.getSelection(),
-                    a = document.createElement("textarea");
-                a.value = e, a.contentEditable = "true", a.style.visibility = "none", t.appendChild(a), n.selectNodeContents(a), null == r || r.removeAllRanges(), null == r || r.addRange(n), a.focus(), a.setSelectionRange(0, e.length);
-                let s = document.execCommand("copy");
-                return t.removeChild(a), s
+                    s = document.createElement("textarea");
+                s.value = e, s.contentEditable = "true", s.style.visibility = "none", t.appendChild(s), n.selectNodeContents(s), null == r || r.removeAllRanges(), null == r || r.addRange(n), s.focus(), s.setSelectionRange(0, e.length);
+                let a = document.execCommand("copy");
+                return t.removeChild(s), a
             }
             n.r(t), n.d(t, {
                 copy: function() {
@@ -736,4 +742,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66888.79756ea63981ab2a6341.js.map
+//# sourceMappingURL=66888.d8e6a7dc40b50c2deb70.js.map
