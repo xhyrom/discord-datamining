@@ -15366,12 +15366,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -112842,6 +112842,10 @@ html .invoiceCancelRow_a8669b {
     background: var(--background-secondary-alt)
 }
 
+.checkbox__0fb8e {
+    align-self: center
+}
+
 .postButton_bf09d5 {
     min-height: var(--custom-button-button-lg-height);
     background-color: var(--redesign-button-primary-background)
@@ -127178,4 +127182,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e4525f2d7e2ca34a256c.css.map*/
+/*# sourceMappingURL=app.7647ea53b0ebec44d80c.css.map*/
