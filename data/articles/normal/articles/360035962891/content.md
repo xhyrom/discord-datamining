@@ -1,4 +1,5 @@
-<p><span style="font-weight: 400;"> Have you ever wondered how to get one of those little icons you see on your friend’s profile? </span></p>
+<h3 id="h_01HNZPMZ8RCVCE2WJGNXHVYSR9"><span style="font-weight: 400;"><span style="color: #434343;" data-darkreader-inline-color="">Profile badges are non-transferable and can not be moved to another account.</span> </span></h3>
+<p><span style="font-weight: 400;">Have you ever wondered how to get one of those little icons you see on your friend’s profile? </span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/10928082393495" alt="intro_refinalized.png"></p>
 <p><span style="font-weight: 400;">Those little icons are also known as </span><strong>profile badges</strong><span style="font-weight: 400;">! Below you’ll find the lowdown on every profile badge you’ll see. Some are easily obtainable, while some have a few more requirements.</span></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
@@ -19,12 +20,6 @@
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01GM67KWN08NHHYYE0YD7AAJ4R" target="_self"><span style="font-weight: 400;">Legendary Badges</span></a>
-        <ul>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GM67M6Q4EPHPPP4E17EY1V7D" target="_self"><span style="font-weight: 400;">Partnered Server Owner Badge</span></a></li>
-        </ul>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
         <a href="#h_01GM67MDR37JXG1VQWPGH60N59" target="_self"><span style="font-weight: 400;">Mythic Badge</span></a>
         <ul>
             <li style="font-weight: 400;" aria-level="2"><a href="#h_01GM67MNYEVR6445C38JC4V3DS" target="_self"><span style="font-weight: 400;">Discord Staff Badge</span></a></li>
@@ -36,6 +31,7 @@
             <li style="font-weight: 400;" aria-level="2"><a href="https://support.discord.com/hc/en-us/articles/360035962891#h_01GM67K5EJ16ZHYZQ5MPRW3JT3"><span style="font-weight: 400;">Hypesquad Events Badge</span></a></li>
             <li style="font-weight: 400;" aria-level="2"><a href="#h_01GM67N1ZDEHN3M496072Z1QZD" target="_self"><span style="font-weight: 400;">Moderator Program Alumni Badge</span></a></li>
             <li style="font-weight: 400;" aria-level="2"><a href="#h_01GM67N878RGKPHPB525K0GF4C" target="_self"><span style="font-weight: 400;">Early Supporter Badge</span></a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="https://support.discord.com/hc/en-us/articles/360035962891#h_01HNZPM3VGJHJHG24F6KG7TVGV"><span style="font-weight: 400;">Partnered Server Owner Badge</span></a></li>
         </ul>
     </li>
 </ul>
@@ -100,3 +96,7 @@
 <p class="wysiwyg-text-align-center"><strong><span style="color: #ae6607;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19813392811031" width="624" height="193"></span></strong></p>
 <p><span style="font-weight: 400;">Before there were two styles of Discord Nitro, there was simply a $5 version of Nitro. After the $10 tier of Nitro was introduced, we granted the <strong>Early Supporter badge</strong> to anyone who supported us in the early years of Discord as a thank you gift!</span></p>
 <p><span style="font-weight: 400;">Anyone who purchased Nitro at any point before Wednesday, October 10th, 2018 received this badge. </span><strong>This badge can no longer be obtained!</strong><span style="font-weight: 400;"> More details about this legacy profile badge can be seen at the </span><a href="https://support.discord.com/hc/en-us/articles/360017949691" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Legacy Nitro Classic FAQ</span></a><span style="font-weight: 400;">.</span></p>
+<h2 id="h_01HNZPM3VGJHJHG24F6KG7TVGV"><strong><span style="color: #ae6607;" data-darkreader-inline-color="">Partnered Server Owner Badge</span></strong></h2>
+<h1 id="h_01HNZPKQT5EE5ZY2SH7FM9Y51M" class="wysiwyg-text-align-center"><strong><span style="color: #ae6607;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/21162389575575" width="624" height="193"></span></strong></h1>
+<p>Designed for active and engaged communities, the Partner Program distinguished the best servers out there. This Partner Server Owner badge was given to owners of thriving communities and creators that showed an authentic enthusiasm for Discord.</p>
+<p>This badge is no longer obtainable.</p>
