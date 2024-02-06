@@ -512,6 +512,8 @@
                 APP_LAUNCHER_COMMAND_NOT_FOUND_BODY: "This command is not available",
                 APP_LAUNCHER_NO_PERMISSIONS_STATE_BODY: "You don't have permission to use any apps in this channel",
                 APP_LAUNCHER_PREVIOUSLY_EXECUTED_COMMAND_OPEN: "Open Command",
+                APP_LAUNCHER_COMMAND_NO_PERMISSIONS_TITLE: "No permissions",
+                APP_LAUNCHER_COMMAND_NO_PERMISSIONS_BODY: "You do not have permissions to run this command",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -18177,7 +18179,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264204", ", Version Hash: ").concat("3a69123933fb580d8e6f4fd891a23d40f41cf306")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264213", ", Version Hash: ").concat("18c67f3274ff439189577a846b493ae45e243567")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20417,8 +20419,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "264204", "264204"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264204")), _ = 0), _
+                let _ = parseInt((e = "264213", "264213"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264213")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35741,4 +35743,4 @@
         }
     }
 ]);
-//# sourceMappingURL=90486.accf503c4b6a52e036c3.js.map
+//# sourceMappingURL=90486.774dab438f93a70325d3.js.map
