@@ -26684,6 +26684,17 @@ html .progress__4ef76 {
     align-items: center
 }
 
+.discountPill_dde3e3 {
+    position: relative;
+    top: 5px;
+    margin-left: 8px
+}
+
+.wordMark__4f8f8 {
+    display: flex;
+    flex-direction: row
+}
+
 .premiumSubscriptionAccountCredit__6bab4 {
     border-radius: 5px;
     padding: 8px 0;
@@ -26966,8 +26977,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -76905,10 +76916,10 @@ html .tabBadge__002b3 {
 
 .newBadgeTooltip_e29756 {
     max-width: 100%;
-    width: 100%
+    margin-left: 10px
 }
 
-.newBadgeTooltipContent__9929b {
+.marketingBadgeTooltipContent__720d9 {
     display: flex;
     flex-direction: row;
     gap: 4px;
@@ -85247,7 +85258,7 @@ html .tabBadge__002b3 {
 .categoryLogo__1444c {
     z-index: 1;
     max-height: 96px;
-    max-width: 80%
+    max-width: 55%
 }
 
 .discordLogo_efcf47 {
@@ -116732,6 +116743,16 @@ html .invoiceCancelRow_c1bfe7 {
     margin-right: 2px
 }
 
+.platformSelectionOptionLabelContainer__251bb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.platformSelectionOptionIcon__6a873 {
+    margin-right: 8px
+}
+
 .modalContent_d4e781 {
     padding-top: var(--spacing-16)
 }
@@ -127406,4 +127427,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ee0a59b3beeee9bbb34a.css.map*/
+/*# sourceMappingURL=app.2dc8c29f0e0510077c60.css.map*/
