@@ -3027,7 +3027,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -3058,8 +3058,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -26621,8 +26621,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -49090,8 +49090,8 @@ html .progress__4ef76 {
 }
 
 .memberCount_d3ce07 {
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     display: flex;
     align-items: center
 }
@@ -127142,4 +127142,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d6d10fe7f8e9c2b9dc93.css.map*/
+/*# sourceMappingURL=app.db0dc28cebd7356fee10.css.map*/
