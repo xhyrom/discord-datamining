@@ -4565,35 +4565,6 @@
     "url": "/user-offer-ids",
     "allowed_methods": null
   },
-  "INVENTORY_ADD_PACK": {
-    "url": "/users/@me/inventory/packs/add",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
-    ]
-  },
-  "INVENTORY_REMOVE_PACK": {
-    "url": "/users/@me/inventory/packs/remove",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
-    ]
-  },
-  "INVENTORY_UPDATE_SETTINGS": {
-    "url": "/guilds/:param/inventory/settings",
-    "allowed_methods": [
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
-  "INVENTORY_PACK_METADATA": {
-    "url": "/inventory/packs/:param/metadata",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY": {
     "url": "/guilds/:param/members/unusual-dm-activity",
     "allowed_methods": [
@@ -4603,14 +4574,6 @@
       "OPTIONS",
       "PATCH",
       "PUT"
-    ]
-  },
-  "INVENTORY_GET": {
-    "url": "/users/@me/inventory",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
     ]
   },
   "EMOJI_CAPTIONS_GET": {
