@@ -509,6 +509,8 @@
   "APP_LAUNCHER_COMMAND_NOT_FOUND_BODY": "\"This command is not available\"",
   "APP_LAUNCHER_NO_PERMISSIONS_STATE_BODY": "\"You don't have permission to use any apps in this channel\"",
   "APP_LAUNCHER_PREVIOUSLY_EXECUTED_COMMAND_OPEN": "\"Open Command\"",
+  "APP_LAUNCHER_COMMAND_NO_PERMISSIONS_TITLE": "\"No permissions\"",
+  "APP_LAUNCHER_COMMAND_NO_PERMISSIONS_BODY": "\"You do not have permissions to run this command\"",
   "READY": "\"Ready\"",
   "CONNECTING": "\"Connecting…\"",
   "CONNECTING_PROBLEMS_CTA": "\"Connection problems? Let us know!\"",
