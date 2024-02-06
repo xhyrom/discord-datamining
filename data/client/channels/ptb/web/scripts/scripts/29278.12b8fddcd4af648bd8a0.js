@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["42266"], {
+    ["29278"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -35231,13 +35231,14 @@
                 return (0, i.jsxs)(u.default, {
                     component: s.Fragment,
                     children: [v.map((e, n) => {
-                        let s = l.findLast(t, t => t.Layer === e || null == t.Layer && e === f.default);
+                        var s;
+                        let r = l.findLast(t, t => t.Layer === e || null == t.Layer && e === f.default);
                         return (0, i.jsx)(c.default, {
                             isVisible: d[n],
-                            backdropStyle: c.BackdropStyles.DARK,
+                            backdropStyle: null !== (s = null == r ? void 0 : r.backdropStyle) && void 0 !== s ? s : c.BackdropStyles.DARK,
                             onClose: a,
                             LayerComponent: e,
-                            backdropInstant: null == s ? void 0 : s.instant
+                            backdropInstant: null == r ? void 0 : r.instant
                         }, "layer-".concat(n))
                     }), t.map((e, n) => {
                         let {
@@ -115903,7 +115904,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "264397"
+                                build_number: "264406"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -132746,4 +132747,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42266.06cd3a70bdebbeffdd5c.js.map
+//# sourceMappingURL=29278.12b8fddcd4af648bd8a0.js.map
