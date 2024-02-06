@@ -717,6 +717,7 @@
                 NAVIGATION_OPEN: "Ouvrir",
                 NAVIGATION_PRODUCT: "Produit",
                 NAVIGATION_RESOURCES: "Ressources",
+                NAVIGATION_APPLICATIONS: "Applications",
                 NAVIGATION_TERMS: "Conditions",
                 NAVIGATION_PRIVACY: "Confidentialit\xe9",
                 NAVIGATION_ABOUT: "\xc0 propos",
@@ -2379,4 +2380,4 @@
         }
     }
 ]);
-//# sourceMappingURL=10716.bcccef800d16c68ae0c0.js.map
+//# sourceMappingURL=10716.f58179232fdc2c371407.js.map
