@@ -16731,6 +16731,36 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     background-color: hsl(var(--black-500-hsl)/.8)
 }
 
+.hangStatusContainer_ccd703 {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(var(--black-500-hsl)/.55);
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12px
+}
+
+.hangStatusIcon__8597e {
+    width: 32px;
+    height: 32px
+}
+
+.hangStatusSmall__9c23e.hangStatusContainer_ccd703 {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin-top: 0
+}
+
+.hangStatusSmall__9c23e .hangStatusIcon__8597e {
+    width: 24px;
+    height: 24px
+}
+
 .videoDisabledTitle_cbc3e2 {
     padding: 0 12px 0 0
 }
@@ -127169,4 +127199,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1f04258040c2a3019194.css.map*/
+/*# sourceMappingURL=app.069092873f3571fc714e.css.map*/
