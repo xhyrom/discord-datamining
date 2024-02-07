@@ -11877,29 +11877,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-01_uu_forced_migration",
-      "label": "Unique Username Forced Migration UI",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Forced Migration UI"
-      ],
-      "hash": 3867848536,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-01_voice_user_game_activity",
       "label": "Voice User Game Activity",
       "description": [
@@ -12913,6 +12890,29 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_uu_forced_migration",
+      "label": "Unique Username Forced Migration UI",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Forced Migration UI"
+      ],
+      "hash": 3867848536,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {
