@@ -16638,6 +16638,7 @@
   "QUIET_MODE_SETTINGS_DESCRIPTION": "\"Discord will not show in-app, desktop notifications or play message sounds.\"",
   "QUIET_MODE_DISABLED_BY": "\"This is disabled by Focus Mode\"",
   "QUIET_MODE_HABITUAL_DND_NOTICE": "\"You've been on Do Not Disturb for a while. Would you like to enable Focus Mode instead?\"",
+  "QUICK_REPLY_CLOSE_ARIA_LABEL": "\"Close reply popout\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
   "DISAPPROVAL": "\"ಠ_ಠ\"",
