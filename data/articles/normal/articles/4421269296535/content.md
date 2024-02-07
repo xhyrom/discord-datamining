@@ -3,8 +3,6 @@
 <p><span class="wysiwyg-font-size-large"><strong>What does this article cover?</strong></span></p>
 <ul>
     <li><a href="#h_01GV3GPHP4ES8CJ4MRXWHNDDDD" target="_self">What is AutoMod?</a></li>
-    <li><a href="#h_01GV3GPTD3NTNMY5TCQCFX4X6Z" target="_self">What is AutoMod AI?</a></li>
-    <li><a href="#h_01GV3GPY5FWFD66V889QXYAVSE" target="_self">How to Set Up Server Rules</a></li>
     <li>
         <a href="#h_01GV3GQ8B6WR17JJA5KX92GDHT" target="_self">What are Keyword Filters?</a>
         <ul>
@@ -26,33 +24,6 @@
 <p>AutoMod prevents unwanted messages from being posted in your Community across all of your #text-channels, along with other messaging surfaces like threads and text chat in voice channels. This way, you can feel more comfortable providing your Community with more ways to talk and interact with each other without worrying about adding more moderation work onto your plate. </p>
 <p class="wysiwyg-text-align-center"><br><img src="https://support.discord.com/hc/article_attachments/12974178178327" alt="automod_systemmessage.png"></p>
 <p class="wysiwyg-text-align-left">You can also choose to have AutoMod send you alerts containing who-what-where information about blocked messages to a dedicated, private channel of your choice to help you identify and act on potential bad actors and unwanted behavior within your Community.</p>
-<h1 id="h_01GV3GPTD3NTNMY5TCQCFX4X6Z">WHAT IS AUTOMOD AI?</h1>
-<h3>
-    <span style="color: #434343;" data-darkreader-inline-color="">This feature is in alpha for a small % of servers. You can check to see if you have it available by going to your AutoMod settings page, </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Server Settings &gt; AutoMod</span></strong><span style="color: #434343;" data-darkreader-inline-color=""> and look for the </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Enforce Server Rules</span></strong><span style="color: #434343;" data-darkreader-inline-color=""> option.</span>
-</h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12978222390935" alt="automod_ai.png"></p>
-<p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Our team at Discord is always working to do more. Sometimes it isn’t the words themselves that are the problem, but the underlying intent or context in which they are used. For example, a genuine user asking about  the “leading cause of </span><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">death to hamsters</span></strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">” is not the same as another ill-willed user declaring “</span><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">death to hamsters</span></strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">.”</span></p>
-<p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">To address this, </span><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">we're experimenting with OpenAI technology to</span> <span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">power AutoMod’s ability to detect message context and flag it if it violates a community’s rule - </span><em><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">even if an admin or moderator had not defined it in the AutoMod settings page.</span></em></p>
-<p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">To enable it go into </span><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Server Settings &gt; AutoMod &gt; </span></strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">(toggle one) </span><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Enforce Server Rules.</span></strong></p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">You must set up server rules in either your Rules channel or in your Rules Screening page. AutoMod AI uses these rules to interpret if a message is in violation. Don’t know how to set up server rules? Check out <a href="https://support.discord.com/hc/en-us/articles/1500000466882" target="_blank" rel="noopener noreferrer">How to Set Up Server Rules</a>.</span></h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974220577431" alt="image16.png"></p>
-<p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">From there, AutoMod will be able to interpret your Community Rules page, the server name &amp; channels, and intelligently auto-flag any unwanted messages across your server for you and your moderators in a single channel that you’ve selected.</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974222002839" alt="image2.png"></p>
-<p><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Caption: </span></strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">AutoMod AI will enforce the rules that all members are able to see in the Rules channel or Rules Screening page.</span></p>
-<h2 id="h_01GV3GPY5FWFD66V889QXYAVSE">HOW TO SET UP SERVER RULES</h2>
-<p>There are two ways to set up Rules for your server.</p>
-<p><strong>Option 1</strong></p>
-<p><em>Rules Screening <img src="https://support.discord.com/hc/article_attachments/12974274187927" alt="image12.png"></em></p>
-<p>1. Navigate to <strong>Server Settings &gt; Rules Screening</strong></p>
-<p>2. Under <strong>‘Set up server rules!</strong>’ select <strong>Get Started</strong></p>
-<p>3. Add your community’s rules here</p>
-<p><strong>Option 2</strong></p>
-<p><em>Rules or Guidelines Channel</em></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974277810327" alt="image6.png"></p>
-<p>1. Navigate to <strong>Server Settings &gt; Safety Setup </strong></p>
-<p>2. Once you are in Safety Setup, select <strong>Edit</strong> within <strong>DM and Spam Protection</strong></p>
-<p>3. <strong>Then, enable Members must accept rules before they can talk or DM to set up rules for your community </strong></p>
-<p>You can check out our Rules Screening <a href="https://support.discord.com/hc/en-us/articles/1500000466882" target="_blank" rel="noopener noreferrer">article</a> to learn more.</p>
 <h1 id="h_01GV3GQ8B6WR17JJA5KX92GDHT">WHAT ARE KEYWORD FILTERS?</h1>
 <p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">AutoMod’s Keyword Filters let you set up the following rules to determine what AutoMod should look out for and how to respond when it flags a message containing certain words or phrases: </span></p>
 <p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">1. Commonly Flagged Words Rule - Use ready-made word lists to filter commonly flagged words</span></p>
@@ -124,7 +95,7 @@
 <ol start="2">
     <li>Block Mention Spam Rule - Set a limit on the number of mentions a message may contain. Once configured, AutoMod can detect and block messages containing excessive user or role mentions and help prevent your members from receiving unnecessary notifications and pings.</li>
 </ol>
-<h2>HOW TO SET UP SPAM FILTERS FOR AUTOMOD</h2>
+<h2 id="h_01HP26SCCM6V5R8RY460DQAQMF">HOW TO SET UP SPAM FILTERS FOR AUTOMOD</h2>
 <p>To start setting up your own rules for Block Spam Content or Block Mention Spam, go to <strong>Server Settings</strong> &gt; <strong>AutoMod</strong> to see the different spam filter options:</p>
 <p><strong>How to Set Up the Block Spam Content Filter</strong></p>
 <ol>
@@ -205,5 +176,3 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974788285207" alt="reportmessage.png"></p>
 <p><strong>Q: How will Discord use my feedback on the Block Spam Content filter?</strong></p>
 <p>A: We will be working to improve the spam filter over time by continuously reviewing user reports. As a reminder, when you report a message, you are sending the content of the flagged message to Discord.</p>
-<p><strong><span id="docs-internal-guid-478c11e4-7fff-cc33-e6ce-7619340ec94e">Q: What does OpenAI know about me?</span></strong></p>
-<p>A: AutoMod is a Discord service so any data it uses is governed by our <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. When you use AutoMod, it will access certain information such as messages flag content. OpenAI is our vendor, meaning they may only use this information at our direction; they may not use it to train their general AI models.</p>
