@@ -17,7 +17,7 @@
 <h3>You can learn more about Server Boosting perks <a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer">here</a>.</h3>
 <h1 id="h_01FPV58AGKSHK21GZHAGPXC1QQ">What is a Server Invite Background?</h1>
 <p><span style="font-weight: 400;">A perk for servers that reach <span class="wysiwyg-underline">Boosting Level 1</span>, a Server Invite Background is the image that appears behind the invite pop-up in the app and web browsers. It's a fun way to personalize your server's invites and showcase your server's theme, purpose, and community!<br></span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4415841894935/Invite_Background_Splash_Example.png" alt="Invite_Background_Splash_Example.png" width="610" height="499"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4415841894935" alt="Invite_Background_Splash_Example.png" width="610" height="499"></p>
 <h1 id="h_01FPV58H6YBDSBQ82RZH1QZVAY"><span style="font-weight: 400;">What are the Server Invite Background guidelines?</span></h1>
 <p><span style="font-weight: 400;">In order to upload an image for a Server Invite Background, you should keep in mind the following:</span></p>
 <ul>
@@ -36,7 +36,7 @@
 </ul>
 <h1 id="h_01FPV58T3NS8PAA39ZA0SBMFKE"><span style="font-weight: 400;">How do I upload an image for a Server Invite Background?</span></h1>
 <p><span style="font-weight: 400;"><span class="wysiwyg-font-size-large"><strong>On desktop/browser:</strong></span><br>1. Press on the downward arrow next to the Server Name and choose <strong>Server Settings</strong> <br>2. Select the <strong>Overview</strong> tab<br>3. Scroll down to <strong>Server Invite Background</strong><br>4. Press on the <strong>Upload Background </strong>button</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/5328923421719/server_inv_bg.png" alt="server_inv_bg.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/5328923421719" alt="server_inv_bg.png"></p>
 <h1 id="h_01FPV5T8ZC74SG4PNTEPAEABRS"><span style="font-weight: 400;">Frequently Asked Questions</span></h1>
 <p><strong>Q: Can I access the Server Invite Background perk for my server at Boosting Level 2/3?</strong></p>
 <p>A: Yes! If your server goes beyond Boosting Level 1 and reaches Boosting Level 2/3, your server will still have access to this perk.</p>
