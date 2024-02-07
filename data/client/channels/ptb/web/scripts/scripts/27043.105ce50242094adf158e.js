@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["87140"], {
+    ["27043"], {
         525217: function(D, u, E) {
             "use strict";
             D.exports = {
@@ -6316,17 +6316,6 @@
                 "⿕": "龠"
             }
         },
-        655518: function(D, u, E) {
-            "use strict";
-            E.r(u), E.d(u, {
-                default: function() {
-                    return C
-                }
-            }), E("781738");
-            var C = {
-                escape: D => D.replace(/[-[\]/{}()*+?.\\^$|]/g, "\\$&")
-            }
-        },
         159885: function(D, u, E) {
             "use strict";
             E.r(u), E.d(u, {
@@ -6410,4 +6399,4 @@
         }
     }
 ]);
-//# sourceMappingURL=87140.141917e3b4392f49a9f0.js.map
+//# sourceMappingURL=27043.105ce50242094adf158e.js.map
