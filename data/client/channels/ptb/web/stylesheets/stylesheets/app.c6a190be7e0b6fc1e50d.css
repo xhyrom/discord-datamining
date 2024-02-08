@@ -124913,6 +124913,7 @@ div.nagbar_c731ff {
     --typing-indicator-bg: var(--primary-630);
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
+    --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --white: var(--white-500)
 }
@@ -125226,6 +125227,7 @@ div.nagbar_c731ff {
     --typing-indicator-bg: var(--primary-130);
     --user-profile-header-overflow-background: hsl(var(--white-200-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
+    --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --white: var(--white-500)
 }
@@ -125539,6 +125541,7 @@ div.nagbar_c731ff {
     --typing-indicator-bg: var(--black-500);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--plum-20-hsl) / 0.5);
+    --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --white: var(--white-500)
 }
@@ -125852,6 +125855,7 @@ div.nagbar_c731ff {
     --typing-indicator-bg: var(--plum-20);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-tile-blur-fallback: hsl(var(--plum-20-hsl) / 0.5);
+    --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --white: var(--white-500)
 }
@@ -127148,4 +127152,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c2e4348d9e7aa7e952ef.css.map*/
+/*# sourceMappingURL=app.c6a190be7e0b6fc1e50d.css.map*/
