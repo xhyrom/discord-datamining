@@ -17246,6 +17246,11 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     opacity: 1
 }
 
+.closeIcon_bfdebf {
+    color: var(--interactive-normal);
+    cursor: pointer
+}
+
 .actionsStreamPreview__244ff {
     margin-top: 10px
 }
@@ -44517,8 +44522,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -127143,4 +127148,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.645ae9a2561cd7df4674.css.map*/
+/*# sourceMappingURL=app.609ff7b08a56c5106345.css.map*/
