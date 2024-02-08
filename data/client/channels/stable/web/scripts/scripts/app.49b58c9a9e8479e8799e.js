@@ -4367,9 +4367,6 @@
             "use strict";
             e.exports = {
                 avatar: "avatar__7c789",
-                channelEmoji: "channelEmoji__234a9",
-                channelEmojiLeftOfIcon: "channelEmojiLeftOfIcon__9c4b0",
-                channelEmojiRightOfIcon: "channelEmojiRightOfIcon__8827e",
                 channelName: "channelName__6d16d",
                 channelTextArea: "channelTextArea__2e60f",
                 chat: "chat__52833",
@@ -4390,7 +4387,6 @@
                 threadSidebarOpen: "threadSidebarOpen_fa231d",
                 title: "title_b7d661",
                 titleWrapper: "titleWrapper_aa6737",
-                twemoji: "twemoji__38f4e",
                 typing: "typing_db6134",
                 uploadArea: "uploadArea__4f70b"
             }
@@ -14606,12 +14602,8 @@
             "use strict";
             e.exports = {
                 acronym: "acronym_fbdc79",
-                channelEmoji: "channelEmoji_eda5df",
-                channelEmojiLeftOfIcon: "channelEmojiLeftOfIcon__1d593",
-                channelEmojiRightOfIcon: "channelEmojiRightOfIcon__1e272",
                 channelGuildIcon: "channelGuildIcon_c8b7d4",
                 children: "children_a486f8",
-                emojiColorFill: "emojiColorFill__3e432",
                 favoritesSuggestion: "favoritesSuggestion__4f872",
                 icon: "icon_eff5d4",
                 iconContainer: "iconContainer__3f9b0",
@@ -14620,7 +14612,6 @@
                 link: "link__95dc0",
                 linkBottom: "linkBottom_bac113",
                 linkTop: "linkTop_eaa673",
-                linkWithChannelEmoji: "linkWithChannelEmoji__24c45",
                 modeConnected: "modeConnected__1c02e",
                 modeLocked: "modeLocked_fcc71a",
                 modeMuted: "modeMuted__0aeea",
@@ -14631,10 +14622,8 @@
                 newBadge: "newBadge__6ec22",
                 notInteractive: "notInteractive_a7d9fb",
                 numberBadge: "numberBadge_af710e",
-                ripple: "ripple_abaa9c",
                 subtitle: "subtitle_bba2b7",
                 topContent: "topContent__5a246",
-                twemoji: "twemoji_dd3f76",
                 typeDefault: "typeDefault__05b19",
                 typeThread: "typeThread__2f91c",
                 typeVoice: "typeVoice_f4ba92",
@@ -17316,15 +17305,6 @@
                 actions: "actions_dff0e0",
                 chooseAccountAuthBox: "chooseAccountAuthBox__0783c",
                 chooseAccountHelpText: "chooseAccountHelpText_b37d2d"
-            }
-        },
-        491701: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                childWrapper: "childWrapper__13f3d",
-                clickTarget: "clickTarget__440f0",
-                copiableWrapper: "copiableWrapper__3726c",
-                copyIcon: "copyIcon__7f30b"
             }
         },
         698995: function(e, t, n) {

@@ -1582,6 +1582,15 @@
                 pegiTwelve: "pegiTwelve__378bd pegi_edecb0"
             }
         },
+        72797: function(e, t, a) {
+            "use strict";
+            e.exports = {
+                childWrapper: "childWrapper_d40a85",
+                clickTarget: "clickTarget_eab467",
+                copiableWrapper: "copiableWrapper__9fc8c",
+                copyIcon: "copyIcon_e27399"
+            }
+        },
         863448: function(e, t, a) {
             "use strict";
             e.exports = {

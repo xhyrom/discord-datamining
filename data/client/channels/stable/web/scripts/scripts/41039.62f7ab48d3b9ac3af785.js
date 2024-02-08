@@ -22543,7 +22543,6 @@
                     happening_main_tab: "Enable Happening tab containing summaries",
                     navigate_to_last_channel: "Navigate to last channel when selecting a guild.",
                     new_theme_settings: "Enable the new theme settings, with Darker and Lights Out themes",
-                    user_channel_emoji_overrides: "Enable user channel emoji overrides",
                     enable_recently_active_summaries: "Enable summaries in recently active view",
                     channel_list_layout_animations: "Enable experimental channel list layout animations",
                     message_preview_animations: "Enable message preview animations",
@@ -22556,7 +22555,6 @@
                     disable_theme_key: "Disable reloading the entire app when the theme changes",
                     theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
                     cozy_header: "Cozy header",
-                    enable_channel_emojis: "Enables channel emoji UI components",
                     mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls",
                     enable_new_search_filters: "Enables new search filters behavior",
                     force_channel_list_v2: "Force channel list V2",
@@ -28097,17 +28095,14 @@
                 isOnNewPanels: function() {
                     return a
                 },
-                useOnNewPanels: function() {
+                isSplitMessagesTab: function() {
                     return o
                 },
-                isSplitMessagesTab: function() {
+                isSplitMessagesTabAndOnMessagesTab: function() {
                     return l
                 },
-                isSplitMessagesTabAndOnMessagesTab: function() {
-                    return u
-                },
                 shouldHandleNewPanelsRoute: function() {
-                    return c
+                    return u
                 }
             });
             var i = n("21121"),
@@ -28119,20 +28114,16 @@
             }
 
             function o() {
-                return (0, i.useInMainTabsExperiment)()
-            }
-
-            function l() {
                 return (0, i.isInMainTabsExperiment)()
             }
 
-            function u() {
-                if (!l()) return !1;
+            function l() {
+                if (!o()) return !1;
                 let e = (0, r.default)();
                 return (null == e ? void 0 : e.name) === "messages"
             }
 
-            function c(e) {
+            function u(e) {
                 return !!a() && null != e && e !== s.ME
             }
         },
@@ -49971,7 +49962,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "264754"
+                                build_number: "264913"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -50211,6 +50202,9 @@
                 },
                 parseInteger: function() {
                     return s
+                },
+                formatPercent: function() {
+                    return a
                 }
             });
             var i = n("782340");
@@ -50230,6 +50224,15 @@
                 if (null == e) return t;
                 let n = parseInt(e);
                 return Number.isNaN(n) ? t : n
+            }
+
+            function a(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+                return Intl.NumberFormat(e, {
+                    style: "percent",
+                    minimumFractionDigits: 0,
+                    ...n
+                }).format(t)
             }
         },
         991170: function(e, t, n) {
@@ -51970,9 +51973,6 @@
                 },
                 formatRate: function() {
                     return l
-                },
-                formatPercent: function() {
-                    return u
                 }
             }), n("70102");
             var i = n("988025"),
@@ -51998,13 +51998,6 @@
                     intervalCount: n
                 });
                 throw Error("Unsupported interval type: ".concat(t, ", and interval count: ").concat(n))
-            }
-
-            function u(e, t) {
-                return Intl.NumberFormat(e, {
-                    style: "percent",
-                    minimumFractionDigits: 0
-                }).format(t)
             }
         },
         197881: function(e, t, n) {
@@ -63858,4 +63851,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.a940fd7dbce3fd49af0d.js.map
+//# sourceMappingURL=41039.62f7ab48d3b9ac3af785.js.map

@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["48278"], {
+    ["92747"], {
         110126: function(e, t, n) {
             var l = {
                 "./spritesheet--32.png": "588202",
@@ -1616,10 +1616,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserActivityTypes: function() {
-                    return R
+                    return M
                 },
                 default: function() {
-                    return M
+                    return L
                 }
             });
             var l = n("37983"),
@@ -1641,14 +1641,15 @@
                 C = n("42203"),
                 T = n("305961"),
                 v = n("957255"),
-                I = n("800762"),
-                _ = n("313873"),
-                y = n("599110"),
-                A = n("474293"),
-                N = n("49111"),
-                x = n("804354");
+                I = n("697218"),
+                _ = n("800762"),
+                y = n("313873"),
+                A = n("599110"),
+                N = n("474293"),
+                x = n("49111"),
+                O = n("804354");
 
-            function O(e) {
+            function R(e) {
                 let {
                     type: t,
                     source: n,
@@ -1662,7 +1663,7 @@
                     actionColor: m
                 } = e;
                 return (0, l.jsx)(c.default, {
-                    className: (0, A.getClass)(x, "actions", t),
+                    className: (0, N.getClass)(O, "actions", t),
                     type: t,
                     source: n,
                     activity: i,
@@ -1676,8 +1677,8 @@
                     isEmbedded: p
                 })
             }
-            let R = _.default.Types;
-            var M = function(e) {
+            let M = y.default.Types;
+            var L = function(e) {
                 let {
                     activity: t,
                     user: n,
@@ -1685,44 +1686,45 @@
                     showActions: o = !0,
                     hideHeader: d = !1,
                     ...c
-                } = e, A = (0, r.useStateFromStores)([I.default, C.default], () => {
+                } = e, N = (0, r.useStateFromStores)([_.default, C.default], () => {
                     var e;
-                    return C.default.getChannel(null === (e = I.default.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
+                    return C.default.getChannel(null === (e = _.default.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
                 }), {
-                    enableHangStatus: R
+                    enableHangStatus: M
                 } = E.HangStatusExperiment.useExperiment({
-                    guildId: null == A ? void 0 : A.guild_id,
+                    guildId: null == N ? void 0 : N.guild_id,
                     location: "UserActivityContainer"
-                }), M = (0, r.useStateFromStores)([S.default], () => a ? S.default.getAnyStreamForUser(n.id) : null), L = R && v.default.can(N.Permissions.CONNECT, A), P = (null == t ? void 0 : t.type) === N.ActivityTypes.HANG_STATUS && L ? A : null, b = (0, r.useStateFromStores)([T.default, I.default, C.default], () => {
+                }), L = (0, r.useStateFromStores)([S.default], () => a ? S.default.getAnyStreamForUser(n.id) : null), P = M && v.default.can(x.Permissions.CONNECT, N), b = (null == t ? void 0 : t.type) === x.ActivityTypes.HANG_STATUS && P ? N : null, j = (0, r.useStateFromStores)([T.default, _.default, C.default], () => {
                     var e, l;
-                    return (0, u.default)(t, N.ActivityFlags.EMBEDDED) ? T.default.getGuild(null === (e = C.default.getChannel(null === (l = I.default.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === l ? void 0 : l.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != P ? T.default.getGuild(P.getGuildId()) : null
-                }), j = (0, r.useStateFromStores)([T.default], () => null != M ? T.default.getGuild(M.guildId) : null), U = (0, r.useStateFromStores)([f.default], () => {
+                    return (0, u.default)(t, x.ActivityFlags.EMBEDDED) ? T.default.getGuild(null === (e = C.default.getChannel(null === (l = _.default.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === l ? void 0 : l.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != b ? T.default.getGuild(b.getGuildId()) : null
+                }), U = (0, r.useStateFromStores)([T.default], () => null != L ? T.default.getGuild(L.guildId) : null), D = (0, r.useStateFromStores)([f.default], () => {
                     if (null != t) return null != t.application_id ? f.default.getApplication(t.application_id) : f.default.getApplicationByName(t.name);
                     return null
-                }), D = (0, p.default)(), k = D && null != t;
+                }), k = (0, r.useStateFromStores)([I.default], () => I.default.getCurrentUser()), w = (0, p.default)(), F = w && null != t;
                 return (i.useEffect(() => {
-                    (null == t ? void 0 : t.type) === N.ActivityTypes.HANG_STATUS && L && y.default.track(N.AnalyticEvents.VIEW_HANG_STATUS, {
+                    (null == t ? void 0 : t.type) === x.ActivityTypes.HANG_STATUS && P && A.default.track(x.AnalyticEvents.VIEW_HANG_STATUS, {
                         source: "UserProfilePopout",
-                        guild_id: null == P ? void 0 : P.guild_id,
-                        channel_id: null == P ? void 0 : P.id
+                        guild_id: null == b ? void 0 : b.guild_id,
+                        channel_id: null == b ? void 0 : b.id
                     })
-                }, [null == t ? void 0 : t.type, L, P]), (null == t ? void 0 : t.type) !== N.ActivityTypes.HANG_STATUS || L) ? (0, l.jsx)(_.default, {
+                }, [null == t ? void 0 : t.type, P, b]), (null == t ? void 0 : t.type) !== x.ActivityTypes.HANG_STATUS || P) ? (0, l.jsx)(y.default, {
                     ...c,
                     activity: t,
                     user: n,
-                    application: U,
+                    application: D,
                     hideHeader: d,
-                    activityGuild: null != b ? b : j,
+                    activityGuild: null != j ? j : U,
                     renderActions: o ? () => (0, l.jsxs)("div", {
-                        className: s(k && x.actionsWrapper),
-                        children: [(0, l.jsx)(O, {
+                        className: s(F && O.actionsWrapper),
+                        children: [(0, l.jsx)(R, {
                             ...c,
-                            applicationStream: M,
+                            applicationStream: L,
                             activity: t,
                             user: n
-                        }), k && (0, l.jsx)(m.default, {
+                        }), F && (0, l.jsx)(m.default, {
                             activity: t,
                             user: n,
+                            filename: "".concat(null == k ? void 0 : k.globalName, "-reacting-to-").concat(t.name, ".png").toLowerCase(),
                             showReact: !0,
                             showReply: !0,
                             reactor: h.default
@@ -5652,9 +5654,9 @@
                 u = n("681060"),
                 d = n("219013"),
                 c = n("233069"),
-                f = n("42203"),
-                p = n("882641"),
-                m = n("945330"),
+                f = n("882641"),
+                p = n("945330"),
+                m = n("964261"),
                 h = n("526409"),
                 E = n("314848"),
                 g = n("49111"),
@@ -5669,7 +5671,7 @@
                         user: n,
                         hide: a,
                         onEnter: d
-                    } = e, [c, f] = i.useState(""), [p, h] = i.useState((0, o.toRichValue)(""));
+                    } = e, [c, f] = i.useState(""), [h, E] = i.useState((0, o.toRichValue)(""));
                     return (0, l.jsxs)("div", {
                         className: C.reply,
                         ref: t,
@@ -5681,65 +5683,71 @@
                             }), (0, l.jsx)(s.Clickable, {
                                 "aria-label": S.default.Messages.QUICK_REPLY_CLOSE_ARIA_LABEL,
                                 onClick: a,
-                                children: (0, l.jsx)(m.default, {})
+                                children: (0, l.jsx)(p.default, {})
                             })]
                         }), (0, l.jsx)(u.default, {
                             className: C.replyInput,
                             focused: !0,
                             showRemainingCharsAfterCount: -1,
                             allowNewLines: !1,
-                            maxCharacterCount: 200,
+                            maxCharacterCount: m.MAX_CHAR_COUNT,
                             channel: T,
                             onChange: (e, t, n) => {
-                                f(t), h(n)
+                                f(t), E(n)
                             },
                             type: r.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT,
                             textValue: c,
-                            richValue: p,
-                            onSubmit: () => new Promise(e => {
-                                d(c), e({
+                            richValue: h,
+                            onSubmit: e => {
+                                let {
+                                    value: t
+                                } = e;
+                                return t.length > m.MAX_CHAR_COUNT ? Promise.resolve({
+                                    shouldClear: !1,
+                                    shouldRefocus: !0
+                                }) : (d(t), Promise.resolve({
                                     shouldClear: !1,
                                     shouldRefocus: !1
-                                }), a()
-                            }),
+                                }))
+                            },
                             disableThemedBackground: !0,
                             emojiPickerCloseOnModalOuterClick: !0
                         })]
                     })
                 });
             var I = e => {
-                var t;
                 let {
-                    activity: n,
-                    user: s,
-                    showReact: r = !0,
-                    showReply: o = !0,
-                    requireConfirmation: u = !1,
+                    activity: t,
+                    user: n,
+                    showReact: s = !0,
+                    showReply: r = !0,
+                    requireConfirmation: o = !1,
+                    filename: u,
                     reactor: c
-                } = e, [m, g] = i.useState(!1), [S, T] = i.useState(!1), [I, _] = i.useState(!1), [y, A] = i.useState(), [N, x] = i.useState(""), O = i.useRef(null), R = i.useRef(null), M = (0, E.default)(s), L = f.default.getDMFromUserId(null !== (t = null == s ? void 0 : s.id) && void 0 !== t ? t : ""), P = f.default.getChannel(L);
+                } = e, [p, m] = i.useState(!1), [g, S] = i.useState(!1), [I, _] = i.useState(!1), [y, A] = i.useState(), [N, x] = i.useState(""), O = i.useRef(null), R = i.useRef(null), M = (0, E.default)(n);
 
-                function b(e) {
+                function L(e) {
                     var t, n;
-                    null != e.target && (!(null == O ? void 0 : null === (t = O.current) || void 0 === t ? void 0 : t.contains(null == e ? void 0 : e.target)) && T(!1), !(null == R ? void 0 : null === (n = R.current) || void 0 === n ? void 0 : n.contains(null == e ? void 0 : e.target)) && _(!1))
+                    null != e.target && (!(null == O ? void 0 : null === (t = O.current) || void 0 === t ? void 0 : t.contains(null == e ? void 0 : e.target)) && S(!1), !(null == R ? void 0 : null === (n = R.current) || void 0 === n ? void 0 : n.contains(null == e ? void 0 : e.target)) && _(!1))
                 }
                 return (i.useEffect(() => {
                     let e = e => {
-                        "Escape" === e.key && (_(!1), T(!1))
+                        "Escape" === e.key && (_(!1), S(!1))
                     };
-                    return document.addEventListener("keydown", e), document.addEventListener("mousedown", b), () => {
-                        document.removeEventListener("keydown", e), document.removeEventListener("mousedown", b)
+                    return document.addEventListener("keydown", e), document.addEventListener("mousedown", L), () => {
+                        document.removeEventListener("keydown", e), document.removeEventListener("mousedown", L)
                     }
                 }, []), M) ? (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsxs)("div", {
                         className: C.reactions,
-                        children: [r && (0, l.jsx)(p.default, {
+                        children: [s && (0, l.jsx)(f.default, {
                             active: !1,
                             tabIndex: 0,
                             className: C.reaction,
                             onClick: () => {
-                                T(!0), _(!1)
+                                S(!0), _(!1)
                             }
-                        }), o && (0, l.jsx)("button", {
+                        }), r && (0, l.jsx)("button", {
                             style: {
                                 backgroundColor: "transparent",
                                 marginTop: 4,
@@ -5751,34 +5759,45 @@
                             },
                             children: (0, l.jsx)(a.ArrowAngleLeftUpIcon, {})
                         })]
-                    }), S && null != P && (0, l.jsx)("div", {
+                    }), g && (0, l.jsx)("div", {
                         className: C.picker,
                         ref: O,
                         children: (0, l.jsx)(d.ReactionPicker, {
                             messageId: "",
-                            channel: P,
-                            closePopout: () => T(!1),
+                            channel: T,
+                            closePopout: () => {
+                                S(!1)
+                            },
                             onSelectEmoji: e => {
-                                null != e && (A(e), T(!1), g(!0))
+                                null != e && (A(e), S(!1), m(!0))
                             }
                         })
                     }), I && (0, l.jsx)(v, {
                         ref: R,
-                        user: s,
-                        activity: n,
+                        user: n,
+                        activity: t,
                         hide: () => _(!1),
                         onEnter: e => {
-                            x(e), g(!0)
+                            x(e), m(!0)
                         }
-                    }), m && (0, l.jsx)(c, {
-                        activity: n,
-                        user: s,
+                    }), p && (0, l.jsx)(c, {
+                        activity: t,
+                        user: n,
                         onComplete: e => {
-                            null != y ? ((0, h.sendReaction)(e, y, s, u), A(void 0)) : null != N && ((0, h.sendReply)(e, N, s, u), x("")), g(!1)
+                            null != y ? ((0, h.sendReaction)(e, y, n, o, u), A(void 0)) : null != N && ((0, h.sendReply)(e, N, n, o, u), x("")), m(!1)
                         }
                     })]
                 }) : null
             }
+        },
+        964261: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                MAX_CHAR_COUNT: function() {
+                    return l
+                }
+            });
+            let l = 200
         },
         285749: function(e, t, n) {
             "use strict";
@@ -6231,9 +6250,9 @@
                 p = n("42203"),
                 m = n("474643"),
                 h = n("462495");
-            let E = async e => {
-                let t = await e.export(o.DiscordCanvasExporterOutputFormats.File, "png", 1);
-                return t
+            let E = async (e, t) => {
+                let n = await e.export(o.DiscordCanvasExporterOutputFormats.File, "png", 1, t);
+                return n
             }, g = e => {
                 let t = h.default.getFiles(e),
                     n = t[0],
@@ -6274,22 +6293,24 @@
                 }
             }, C = async function(e, t, n) {
                 let l = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-                    a = await i.default.openPrivateChannel(n.id, !1, !1),
-                    s = await E(e);
-                S(s, a, l);
-                let r = await g(a);
-                if (null != r) {
+                    a = arguments.length > 4 ? arguments[4] : void 0,
+                    s = await i.default.openPrivateChannel(n.id, !1, !1),
+                    r = await E(e, a);
+                S(r, s, l);
+                let o = await g(s);
+                if (null != o) {
                     let e = (0, c.toReactionEmoji)(t);
-                    (0, d.addReaction)(a, r.id, e)
+                    (0, d.addReaction)(s, o.id, e)
                 }
             }, T = async function(e, t, n) {
                 let l = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-                    s = await i.default.openPrivateChannel(n.id, !1, !1),
-                    r = await E(e);
-                S(r, s, l), await g(s);
-                let o = p.default.getChannel(s),
-                    d = u.default.parse(o, t);
-                a.default.sendMessage(s, d)
+                    s = arguments.length > 4 ? arguments[4] : void 0,
+                    r = await i.default.openPrivateChannel(n.id, !1, !1),
+                    o = await E(e, s);
+                S(o, r, l), await g(r);
+                let d = p.default.getChannel(r),
+                    c = u.default.parse(d, t);
+                a.default.sendMessage(r, c)
             }
         },
         314848: function(e, t, n) {
@@ -6430,10 +6451,11 @@
                 }
                 export (e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "png",
-                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
+                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
+                        l = arguments.length > 3 ? arguments[3] : void 0;
                     a(null != this.exporter, "DiscordCanvas: Exporting the canvas requires a valid DiscordCanvasExporter to be initialized.");
-                    let l = this.canvas.getCanvasForExport();
-                    return a(null != l, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(l, e, t, n)
+                    let i = this.canvas.getCanvasForExport();
+                    return a(null != i, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(i, e, t, n, l)
                 }
                 constructor(e, t) {
                     this.canvas = e, this.exporter = t
@@ -6457,7 +6479,8 @@
                     }
                     async exportCanvas(e, t) {
                         let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "png",
-                            a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1;
+                            a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
+                            s = arguments.length > 4 ? arguments[4] : void 0;
                         if (t === i.DiscordCanvasExporterOutputFormats.Base64) return this.toDataUrl(e, n, a);
                         if (t === i.DiscordCanvasExporterOutputFormats.Blob) {
                             let t = this.toDataUrl(e, n, a);
@@ -6465,7 +6488,7 @@
                         }
                         if (t === i.DiscordCanvasExporterOutputFormats.File) {
                             let t = this.toDataUrl(e, n, a);
-                            return await (0, l.dataUrlToFile)(t, "activityreaction.png", "image/png")
+                            return await (0, l.dataUrlToFile)(t, s, "image/png")
                         }
                         throw Error("DiscordCanvas: ".concat(t, " is not a valid export format."))
                     }
@@ -37906,4 +37929,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48278.c13921883a4922dbd01e.js.map
+//# sourceMappingURL=92747.22cbe91f61ffc09e19fe.js.map
