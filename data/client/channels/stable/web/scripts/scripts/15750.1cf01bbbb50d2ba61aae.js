@@ -1,6 +1,6 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["5687"], {
-        440540: function(i, t, x) {
+    ["15750"], {
+        440540: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -309,7 +309,7 @@
                 markers: []
             }
         },
-        811217: function(i, t, x) {
+        811217: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -2058,7 +2058,7 @@
                 markers: []
             }
         },
-        504936: function(i, t, x) {
+        504936: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -3807,7 +3807,7 @@
                 markers: []
             }
         },
-        988078: function(i, t, x) {
+        988078: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -6115,7 +6115,7 @@
                 markers: []
             }
         },
-        939118: function(i, t, x) {
+        939118: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -7864,7 +7864,7 @@
                 markers: []
             }
         },
-        101559: function(i, t, x) {
+        101559: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -9613,7 +9613,7 @@
                 markers: []
             }
         },
-        326209: function(i, t, x) {
+        326209: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -10259,7 +10259,7 @@
                 markers: []
             }
         },
-        610237: function(i, t, x) {
+        610237: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -10905,7 +10905,7 @@
                 markers: []
             }
         },
-        733261: function(i, t, x) {
+        733261: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -11551,7 +11551,7 @@
                 markers: []
             }
         },
-        596926: function(i, t, x) {
+        596926: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -12197,7 +12197,7 @@
                 markers: []
             }
         },
-        761999: function(i, t, x) {
+        761999: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -12843,7 +12843,7 @@
                 markers: []
             }
         },
-        189580: function(i, t, x) {
+        189580: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -14763,7 +14763,7 @@
                 markers: []
             }
         },
-        679126: function(i, t, x) {
+        679126: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -16683,7 +16683,7 @@
                 markers: []
             }
         },
-        101593: function(i, t, x) {
+        101593: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -18603,7 +18603,7 @@
                 markers: []
             }
         },
-        414668: function(i, t, x) {
+        414668: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -20523,7 +20523,7 @@
                 markers: []
             }
         },
-        97656: function(i, t, x) {
+        97656: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -22443,7 +22443,7 @@
                 markers: []
             }
         },
-        812007: function(i, t, x) {
+        812007: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -24363,7 +24363,7 @@
                 markers: []
             }
         },
-        721336: function(i, t, x) {
+        721336: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -24720,7 +24720,7 @@
                 markers: []
             }
         },
-        954877: function(i, t, x) {
+        954877: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -25077,7 +25077,7 @@
                 markers: []
             }
         },
-        662151: function(i, t, x) {
+        662151: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -25434,7 +25434,7 @@
                 markers: []
             }
         },
-        155232: function(i, t, x) {
+        155232: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -25791,7 +25791,7 @@
                 markers: []
             }
         },
-        843093: function(i, t, x) {
+        843093: function(i, x, t) {
             "use strict";
             i.exports = {
                 v: "4.8.0",
@@ -26262,840 +26262,413 @@
                 markers: []
             }
         },
-        891722: function(i, t, x) {
+        145079: function(i, x, t) {
             "use strict";
-            x.r(t);
-            var s = x("42641");
-            x.es(s, t)
-        },
-        721698: function(i, t, x) {
-            "use strict";
-            x.r(t), x.d(t, {
-                getEmbedApplication: function() {
-                    return l
-                },
-                getApplication: function() {
-                    return _
-                },
-                getCategories: function() {
+            t.r(x), t.d(x, {
+                default: function() {
                     return f
-                },
-                getSimilarApplications: function() {
-                    return I
-                },
-                search: function() {
-                    return u
-                },
-                getCollections: function() {
-                    return h
-                },
-                fetchIntegrationApplicationIdsForMyGuilds: function() {
-                    return w
-                }
-            }), x("222007");
-            var s = x("981980"),
-                a = x("872717"),
-                o = x("913144"),
-                y = x("915639"),
-                d = x("349503"),
-                k = x("831109"),
-                p = x("810047"),
-                e = x("856894"),
-                r = x("388647"),
-                n = x("506061"),
-                m = x("49111");
-            let c = new Map;
-            async function l(i) {
-                var t;
-                let x = Date.now(),
-                    y = null !== (t = c.get(i)) && void 0 !== t ? t : 0;
-                if (d.default.getApplicationFetchState(i) === d.FetchState.FETCHING || d.default.isInvalidApplication(i) || x < y + 6e5) return;
-                c.set(i, x), o.default.dispatch({
-                    type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
-                    applicationId: i
-                });
-                let k = new s.default(1e3, 5e3),
-                    p = (i, t) => 429 === i.status && !!(k.fails < 10) && (k.fail(() => {
-                        t(void 0, p)
-                    }), !0);
-                try {
-                    let t = await a.default.get({
-                            url: m.Endpoints.APPLICATION_DIRECTORY_EMBED_APPLICATION(i),
-                            backoff: k,
-                            retries: 10,
-                            interceptResponse: p
-                        }),
-                        x = t.body;
-                    o.default.dispatch({
-                        type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS",
-                        application: x
-                    })
-                } catch (t) {
-                    o.default.dispatch({
-                        type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE",
-                        applicationId: i,
-                        isInvalidApplication: !0
-                    })
-                }
-            }
-            async function _(i) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                    x = Date.now(),
-                    s = d.default.getApplicationFetchState(i),
-                    k = d.default.getApplicationLastFetchTime(i),
-                    {
-                        dontRefetchMs: p
-                    } = t;
-                if (s !== d.FetchState.FETCHING) {
-                    if (!(null != k && k + (null != p ? p : 6e5) > x)) {
-                        o.default.dispatch({
-                            type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
-                            applicationId: i
-                        });
-                        try {
-                            let t = await a.default.get({
-                                url: m.Endpoints.APPLICATION_DIRECTORY_APPLICATION(i),
-                                query: {
-                                    locale: y.default.locale
-                                }
-                            });
-                            o.default.dispatch({
-                                type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS",
-                                application: t.body
-                            })
-                        } catch (t) {
-                            o.default.dispatch({
-                                type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE",
-                                applicationId: i,
-                                isInvalidApplication: !0
-                            })
-                        }
-                    }
-                }
-            }
-            async function f() {
-                let i = Date.now(),
-                    t = k.default.getLastFetchTimeMs();
-                if (null != t && t + 6e5 > i) return;
-                let x = await a.default.get({
-                    url: m.Endpoints.APPLICATION_DIRECTORY_CATEGORIES,
-                    query: {
-                        locale: y.default.locale
-                    }
-                });
-                o.default.dispatch({
-                    type: "APPLICATION_DIRECTORY_FETCH_CATEGORIES_SUCCESS",
-                    categories: x.body
-                })
-            }
-            async function I(i) {
-                var t;
-                let {
-                    applicationId: x,
-                    guildId: s,
-                    options: d
-                } = i, {
-                    page: k
-                } = null != d ? d : {}, p = Date.now(), e = r.default.getFetchState({
-                    applicationId: x,
-                    guildId: s
-                }), {
-                    lastFetchTimeMs: n
-                } = null !== (t = r.default.getSimilarApplications({
-                    applicationId: x,
-                    guildId: s
-                })) && void 0 !== t ? t : {};
-                if (e !== r.FetchState.FETCHING) {
-                    if (null == n || !(n + 6e5 > p)) {
-                        o.default.dispatch({
-                            type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS",
-                            applicationId: x,
-                            guildId: s,
-                            page: k
-                        });
-                        try {
-                            let i = await a.default.get({
-                                url: m.Endpoints.APPLICATION_DIRECTORY_SIMILAR(x),
-                                query: {
-                                    guild_id: s,
-                                    page: k,
-                                    locale: y.default.locale
-                                }
-                            });
-                            o.default.dispatch({
-                                type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS",
-                                applicationId: x,
-                                guildId: s,
-                                similarApplications: i.body.applications,
-                                loadId: i.body.load_id,
-                                page: k,
-                                totalPages: i.body.num_pages
-                            })
-                        } catch (i) {
-                            o.default.dispatch({
-                                type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE",
-                                applicationId: x,
-                                guildId: s,
-                                page: k
-                            })
-                        }
-                    }
-                }
-            }
-            async function u(i) {
-                var t;
-                let {
-                    query: x,
-                    guildId: s,
-                    options: d,
-                    onSuccessCallback: k
-                } = i, {
-                    page: p,
-                    categoryId: r
-                } = null != d ? d : {}, n = Date.now(), c = e.default.getFetchState({
-                    query: x,
-                    guildId: s,
-                    page: p,
-                    categoryId: r
-                }), {
-                    lastFetchTimeMs: l
-                } = null !== (t = e.default.getSearchResults({
-                    query: x,
-                    guildId: s,
-                    page: p,
-                    categoryId: r
-                })) && void 0 !== t ? t : {};
-                if (c !== e.FetchState.FETCHING) {
-                    if (null == l || !(l + 6e5 > n)) {
-                        o.default.dispatch({
-                            type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
-                            query: x,
-                            guildId: s,
-                            page: p,
-                            categoryId: r
-                        });
-                        try {
-                            let i = await a.default.get({
-                                url: m.Endpoints.APPLICATION_DIRECTORY_SEARCH,
-                                query: {
-                                    query: x,
-                                    guild_id: s,
-                                    page: p,
-                                    category_id: r,
-                                    locale: y.default.locale
-                                }
-                            });
-                            o.default.dispatch({
-                                type: "APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS",
-                                query: x,
-                                guildId: s,
-                                page: p,
-                                categoryId: r,
-                                result: {
-                                    results: i.body.results,
-                                    countsByCategory: i.body.counts_by_category,
-                                    totalCount: i.body.result_count,
-                                    totalPages: i.body.num_pages,
-                                    type: i.body.type,
-                                    loadId: i.body.load_id
-                                }
-                            }), null == k || k(i.body.result_count)
-                        } catch (i) {
-                            o.default.dispatch({
-                                type: "APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE",
-                                query: x,
-                                guildId: s,
-                                page: p,
-                                categoryId: r
-                            })
-                        }
-                    }
-                }
-            }
-            async function h() {
-                let {
-                    includesInactive: i = !1
-                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = Date.now(), x = p.default.getFetchState({
-                    includesInactive: i
-                }), s = p.default.getLastFetchTimeMs({
-                    includesInactive: i
-                });
-                if (x !== p.FetchState.FETCHING) {
-                    if (null == s || !(s + 6e5 > t)) {
-                        o.default.dispatch({
-                            type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS",
-                            includesInactive: i
-                        });
-                        try {
-                            let t = await a.default.get({
-                                url: m.Endpoints.APPLICATION_DIRECTORY_COLLECTIONS,
-                                query: {
-                                    includes_inactive: i,
-                                    locale: y.default.locale
-                                }
-                            });
-                            o.default.dispatch({
-                                type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS",
-                                collections: t.body,
-                                includesInactive: i
-                            })
-                        } catch (t) {
-                            o.default.dispatch({
-                                type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE",
-                                includesInactive: i
-                            })
-                        }
-                    }
-                }
-            }
-            async function w() {
-                let i = Date.now(),
-                    t = n.default.getFetchState(),
-                    x = n.default.getLastFetchTimeMs(),
-                    s = n.default.getNextFetchRetryTimeMs();
-                if (t !== n.FetchState.FETCHING && (null == x || !(x + 864e5 > i))) {
-                    if (null == s || !(i < s)) {
-                        o.default.dispatch({
-                            type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS"
-                        });
-                        try {
-                            let i = await a.default.get({
-                                url: m.Endpoints.INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS
-                            });
-                            o.default.dispatch({
-                                type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_SUCCESS",
-                                guildIdToApplicationIds: i.body
-                            })
-                        } catch (t) {
-                            var y;
-                            let i = (null == t ? void 0 : t.status) === 429;
-                            o.default.dispatch({
-                                type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_FAILURE",
-                                retryAfterSeconds: i ? null == t ? void 0 : null === (y = t.body) || void 0 === y ? void 0 : y.retry_after : void 0
-                            })
-                        }
-                    }
-                }
-            }
-        },
-        831109: function(i, t, x) {
-            "use strict";
-            x.r(t), x.d(t, {
-                default: function() {
-                    return k
                 }
             });
-            var s = x("446674"),
-                a = x("913144");
-            let o = [],
-                y = null;
-            class d extends s.default.Store {
-                getLastFetchTimeMs() {
-                    return y
-                }
-                getCategories() {
-                    return o
-                }
-            }
-            d.displayName = "ApplicationDirectoryCategoriesStore";
-            var k = new d(a.default, {
-                APPLICATION_DIRECTORY_FETCH_CATEGORIES_SUCCESS: function(i) {
-                    let {
-                        categories: t
-                    } = i;
-                    o = t, y = Date.now()
-                }
-            })
-        },
-        810047: function(i, t, x) {
-            "use strict";
-            x.r(t), x.d(t, {
-                FetchState: function() {
-                    return a
-                },
-                default: function() {
-                    return c
-                }
-            });
-            var s, a, o = x("917351"),
-                y = x.n(o),
-                d = x("446674"),
-                k = x("913144");
-            (s = a || (a = {}))[s.FETCHING = 0] = "FETCHING", s[s.FETCHED = 1] = "FETCHED", s[s.ERROR = 2] = "ERROR";
-            let p = {},
-                e = {},
-                r = {};
+            var s = t("37983");
+            t("884691");
+            var a = t("414456"),
+                o = t.n(a),
+                y = t("446674"),
+                k = t("77078"),
+                d = t("102985"),
+                r = t("79798"),
+                p = t("754474"),
+                e = t("158998"),
+                n = t("782340"),
+                m = t("892802");
 
-            function n(i) {
+            function c(i) {
+                if (i.isSystemUser()) return p.BotTypes.SYSTEM_DM;
+                if (i.isClyde()) return p.BotTypes.AI;
+                if (i.bot) return p.BotTypes.BOT;
+                return null
+            }
+            let l = i => {
                 let {
-                    includesInactive: t
+                    primary: x,
+                    secondary: t,
+                    botType: a,
+                    botVerified: y,
+                    discriminatorClass: d,
+                    className: p,
+                    usernameClass: e,
+                    color: c,
+                    botClass: l,
+                    showStreamerModeTooltip: f
                 } = i;
-                return "includes_inactive:".concat(t)
-            }
-            class m extends d.default.Store {
-                getLastFetchTimeMs(i) {
-                    let {
-                        includesInactive: t
-                    } = i;
-                    return r[n({
-                        includesInactive: t
-                    })]
-                }
-                getFetchState(i) {
-                    let {
-                        includesInactive: t
-                    } = i;
-                    return e[n({
-                        includesInactive: t
-                    })]
-                }
-                getCollections(i) {
-                    let {
-                        includesInactive: t
-                    } = i;
-                    return p[n({
-                        includesInactive: t
-                    })]
-                }
-            }
-            var c = new m(k.default, {
-                APPLICATION_DIRECTORY_FETCH_COLLECTIONS: function(i) {
-                    let {
-                        includesInactive: t
-                    } = i;
-                    e = {
-                        ...e,
-                        [n({
-                            includesInactive: t
-                        })]: 0
-                    }
-                },
-                APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS: function(i) {
-                    var t;
-                    let {
-                        collections: x,
-                        includesInactive: s
-                    } = i, a = n({
-                        includesInactive: s
-                    });
-                    let o = (t = x.map(i => {
-                        var t;
-                        return i.application_directory_collection_items = (t = i.application_directory_collection_items, y.sortBy(t, ["position", "id"])), i
-                    }), y.sortBy(t, ["position", "id"]));
-                    p = {
-                        ...p,
-                        [a]: o
-                    }, e = {
-                        ...e,
-                        [a]: 1
-                    };
-                    let d = Date.now();
-                    r = {
-                        ...r,
-                        [a]: d
-                    }
-                },
-                APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE: function(i) {
-                    let {
-                        includesInactive: t
-                    } = i;
-                    e = {
-                        ...e,
-                        [n({
-                            includesInactive: t
-                        })]: 2
-                    }
-                }
-            })
-        },
-        856894: function(i, t, x) {
-            "use strict";
-            x.r(t), x.d(t, {
-                FetchState: function() {
-                    return a
-                },
-                default: function() {
-                    return m
-                }
-            });
-            var s, a, o = x("693566"),
-                y = x.n(o),
-                d = x("446674"),
-                k = x("913144");
-
-            function p(i) {
-                let {
-                    query: t,
-                    guildId: x,
-                    page: s,
-                    categoryId: a
-                } = i;
-                return "query:'".concat(t, "' guildId:").concat(x, " page:").concat(s, " categoryId:").concat(a)
-            }(s = a || (a = {}))[s.FETCHING = 0] = "FETCHING", s[s.FETCHED = 1] = "FETCHED", s[s.ERROR = 2] = "ERROR";
-            let e = new y({
-                    max: 20
-                }),
-                r = {};
-            class n extends d.default.Store {
-                getSearchResults(i) {
-                    let {
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    } = i, o = p({
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    });
-                    return e.get(o)
-                }
-                getFetchState(i) {
-                    let {
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    } = i, o = p({
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    });
-                    return r[o]
-                }
-            }
-            n.displayName = "ApplicationDirectorySearchStore";
-            var m = new n(k.default, {
-                APPLICATION_DIRECTORY_FETCH_SEARCH: function(i) {
-                    let {
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    } = i, o = p({
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    });
-                    r = {
-                        ...r,
-                        [o]: 0
-                    }
-                },
-                APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS: function(i) {
-                    let {
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a,
-                        result: o
-                    } = i, y = p({
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    });
-                    e.set(y, {
-                        lastFetchTimeMs: Date.now(),
-                        ...o
-                    }), r = {
-                        ...r,
-                        [y]: 1
-                    }
-                },
-                APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE: function(i) {
-                    let {
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    } = i, o = p({
-                        query: t,
-                        guildId: x,
-                        page: s,
-                        categoryId: a
-                    });
-                    r = {
-                        ...r,
-                        [o]: 2
-                    }
-                }
-            })
-        },
-        388647: function(i, t, x) {
-            "use strict";
-            x.r(t), x.d(t, {
-                FetchState: function() {
-                    return a
-                },
-                default: function() {
-                    return m
-                }
-            });
-            var s, a, o = x("693566"),
-                y = x.n(o),
-                d = x("446674"),
-                k = x("913144");
-
-            function p(i) {
-                let {
-                    applicationId: t,
-                    guildId: x,
-                    page: s
-                } = i;
-                return "applicationId:".concat(t, " guildId:").concat(x, " page:").concat(s)
-            }(s = a || (a = {}))[s.NOT_FETCHED = 0] = "NOT_FETCHED", s[s.FETCHING = 1] = "FETCHING", s[s.FETCHED = 2] = "FETCHED", s[s.ERROR = 3] = "ERROR";
-            let e = new y({
-                    max: 20
-                }),
-                r = {};
-            class n extends d.default.Store {
-                getSimilarApplications(i) {
-                    let {
-                        applicationId: t,
-                        guildId: x,
-                        page: s
-                    } = i;
-                    if (null == t) return;
-                    let a = p({
-                        applicationId: t,
-                        guildId: x,
-                        page: s
-                    });
-                    return e.get(a)
-                }
-                getFetchState(i) {
-                    let {
-                        applicationId: t,
-                        guildId: x,
-                        page: s
-                    } = i;
-                    if (null == t) return;
-                    let a = p({
-                        applicationId: t,
-                        guildId: x,
-                        page: s
-                    });
-                    return r[a]
-                }
-            }
-            n.displayName = "ApplicationDirectorySimilarApplicationsStore";
-            var m = new n(k.default, {
-                APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: function(i) {
-                    let {
-                        applicationId: t,
-                        guildId: x,
-                        page: s
-                    } = i, a = p({
-                        applicationId: t,
-                        guildId: x,
-                        page: s
-                    });
-                    r = {
-                        ...r,
-                        [a]: 1
-                    }
-                },
-                APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: function(i) {
-                    let {
-                        applicationId: t,
-                        guildId: x,
-                        similarApplications: s,
-                        loadId: a,
-                        page: o,
-                        totalPages: y
-                    } = i, d = p({
-                        applicationId: t,
-                        guildId: x,
-                        page: o
-                    });
-                    e.set(d, {
-                        lastFetchTimeMs: Date.now(),
-                        applications: s,
-                        loadId: a,
-                        page: o,
-                        totalPages: y
-                    }), r = {
-                        ...r,
-                        [d]: 2
-                    }
-                },
-                APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: function(i) {
-                    let {
-                        applicationId: t,
-                        guildId: x,
-                        page: s
-                    } = i, a = p({
-                        applicationId: t,
-                        guildId: x,
-                        page: s
-                    });
-                    r = {
-                        ...r,
-                        [a]: 3
-                    }
-                }
-            })
-        },
-        506061: function(i, t, x) {
-            "use strict";
-            x.r(t), x.d(t, {
-                FetchState: function() {
-                    return s
-                },
-                default: function() {
-                    return r
-                }
-            }), x("222007");
-            var s, a, o = x("446674"),
-                y = x("913144"),
-                d = x("718517");
-            (a = s || (s = {}))[a.NOT_FETCHED = 0] = "NOT_FETCHED", a[a.FETCHING = 1] = "FETCHING", a[a.FETCHED = 2] = "FETCHED", a[a.ERROR = 3] = "ERROR";
-            let k = {
-                applicationIdToGuildIds: {},
-                lastFetchTimeMs: null,
-                nextFetchRetryTimeMs: null,
-                fetchState: 0
-            };
-
-            function p(i) {
-                let {
-                    applicationId: t,
-                    guildId: x
-                } = i;
-                null == k.applicationIdToGuildIds[t] && (k.applicationIdToGuildIds[t] = new Set), k.applicationIdToGuildIds[t].add(x), k.applicationIdToGuildIds[t] = new Set(k.applicationIdToGuildIds[t])
-            }
-            class e extends o.default.PersistedStore {
-                initialize(i) {
-                    if (null != i)
-                        for (let t in k.lastFetchTimeMs = i.lastFetchTimeMs, k.nextFetchRetryTimeMs = i.nextFetchRetryTimeMs, k.fetchState = i.fetchState, i.applicationIdToGuildIds) k.applicationIdToGuildIds[t] = new Set(i.applicationIdToGuildIds[t])
-                }
-                getState() {
-                    return k
-                }
-                getGuildIdsForApplication(i) {
-                    if (null != i) return k.applicationIdToGuildIds[i]
-                }
-                getLastFetchTimeMs() {
-                    return k.lastFetchTimeMs
-                }
-                getNextFetchRetryTimeMs() {
-                    return k.nextFetchRetryTimeMs
-                }
-                getFetchState() {
-                    return k.fetchState
-                }
-            }
-            e.displayName = "MyGuildApplicationsStore", e.persistKey = "MyGuildApplicationsStore";
-            var r = new e(y.default, {
-                LOGOUT: function() {
-                    k.applicationIdToGuildIds = {}, k.lastFetchTimeMs = null, k.nextFetchRetryTimeMs = null, k.fetchState = 0
-                },
-                FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS: function() {
-                    k.fetchState = 1
-                },
-                FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_SUCCESS: function(i) {
-                    let {
-                        guildIdToApplicationIds: t
-                    } = i;
-                    for (let i in k.fetchState = 2, k.lastFetchTimeMs = Date.now(), k.applicationIdToGuildIds = {}, k.nextFetchRetryTimeMs = null, t)
-                        for (let x of t[i]) p({
-                            applicationId: x,
-                            guildId: i
+                return (0, s.jsxs)("div", {
+                    className: o(m.info, p),
+                    children: [(0, s.jsx)(k.Tooltip, {
+                        text: n.default.Messages.STREAMER_MODE_ENABLED,
+                        shouldShow: f,
+                        "aria-label": !!f && void 0,
+                        children: i => (0, s.jsx)("span", {
+                            ...i,
+                            className: o(m.username, e),
+                            style: null != c ? {
+                                color: c
+                            } : void 0,
+                            children: x
                         })
-                },
-                FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_FAILURE: function(i) {
-                    let {
-                        retryAfterSeconds: t
-                    } = i;
-                    if (k.fetchState = 3, null != t) {
-                        let i = t * d.default.Millis.SECOND;
-                        k.nextFetchRetryTimeMs = Date.now() + i
-                    }
-                },
-                INTEGRATION_CREATE: function(i) {
-                    let {
-                        application: t,
-                        guildId: x
-                    } = i;
-                    null != t && p({
-                        applicationId: t.id,
-                        guildId: x
-                    })
-                },
-                INTEGRATION_DELETE: function(i) {
-                    let {
-                        applicationId: t,
-                        guildId: x
-                    } = i;
-                    null != t && ! function(i) {
-                        let {
-                            applicationId: t,
-                            guildId: x
-                        } = i;
-                        null != k.applicationIdToGuildIds[t] && (k.applicationIdToGuildIds[t].delete(x), k.applicationIdToGuildIds[t] = new Set(k.applicationIdToGuildIds[t]))
-                    }({
-                        applicationId: t,
-                        guildId: x
+                    }), null != t ? (0, s.jsx)("span", {
+                        className: o(m.infoSpacing, d),
+                        children: t
+                    }) : void 0, null != a && (0, s.jsx)(r.default, {
+                        type: a,
+                        className: o(m.infoSpacing, l),
+                        verified: y
+                    })]
+                })
+            };
+            var f = i => {
+                let {
+                    hideDiscriminator: x = !1,
+                    user: t,
+                    nick: a,
+                    forceUsername: o,
+                    showAccountIdentifier: k,
+                    overrideDiscriminator: r,
+                    forcePomelo: n,
+                    ...m
+                } = i, f = (0, y.useStateFromStores)([d.default], () => d.default.hidePersonalInformation), _ = f || x || t.isNonUserBot(), h = t.toString(), u = e.default.getName(t), I = o ? h : null != a ? a : u, b = t.isPomelo() || n;
+                if (b || I !== h) {
+                    let i = I === h && b && o ? e.default.getUserTag(t, {
+                            forcePomelo: n
+                        }) : I,
+                        x = k && i !== "@".concat(h) ? e.default.getUserTag(t) : void 0;
+                    return (0, s.jsx)(l, {
+                        primary: i,
+                        secondary: x,
+                        botVerified: t.isVerifiedBot(),
+                        botType: c(t),
+                        showStreamerModeTooltip: f && i !== u,
+                        ...m
                     })
                 }
-            })
+                return (0, s.jsx)(p.default, {
+                    name: I,
+                    botType: c(t),
+                    botVerified: t.isVerifiedBot(),
+                    discriminator: _ || I !== h ? null : null != r ? r : t.discriminator,
+                    ...m
+                })
+            }
         },
-        529805: function(i, t, x) {
+        390236: function(i, x, t) {
             "use strict";
-            x.r(t), x.d(t, {
-                createPendingReply: function() {
-                    return a
-                },
-                setPendingReplyShouldMention: function() {
+            t.r(x), t.d(x, {
+                default: function() {
                     return o
-                },
-                deletePendingReply: function() {
-                    return y
                 }
             });
-            var s = x("913144");
+            var s = t("884691");
+            let a = s.createContext(void 0);
+            var o = a
+        },
+        166257: function(i, x, t) {
+            "use strict";
+            t.r(x), t.d(x, {
+                ReactionLocations: function() {
+                    return a
+                },
+                getReactors: function() {
+                    return w
+                },
+                addReaction: function() {
+                    return E
+                },
+                playBurstReaction: function() {
+                    return g
+                },
+                removeAllReactions: function() {
+                    return A
+                },
+                removeEmojiReactions: function() {
+                    return R
+                },
+                removeReaction: function() {
+                    return O
+                },
+                removeReactionWithConfirmation: function() {
+                    return N
+                }
+            });
+            var s, a, o = t("872717"),
+                y = t("819855"),
+                k = t("913144"),
+                d = t("404118"),
+                r = t("875978"),
+                p = t("263024"),
+                e = t("271938"),
+                n = t("377253"),
+                m = t("659500"),
+                c = t("718517"),
+                l = t("402671"),
+                f = t("61069"),
+                _ = t("49111"),
+                h = t("782340");
 
-            function a(i) {
+            function u(i, x, t) {
                 let {
-                    message: t,
-                    channel: x,
-                    shouldMention: a,
-                    showMentionToggle: o,
-                    source: y
+                    status: s,
+                    body: a
                 } = i;
-                s.default.dispatch({
-                    type: "CREATE_PENDING_REPLY",
-                    message: t,
-                    channel: x,
-                    shouldMention: a,
-                    showMentionToggle: o,
-                    source: y
+                if (429 === s) return setTimeout(x, i.body.retry_after * c.default.Millis.SECOND), !1;
+                if (403 === s) switch (a && a.code) {
+                    case _.AbortCodes.TOO_MANY_REACTIONS:
+                        d.default.show({
+                            title: h.default.Messages.TOO_MANY_REACTIONS_ALERT_HEADER,
+                            body: h.default.Messages.TOO_MANY_REACTIONS_ALERT_BODY,
+                            confirmText: h.default.Messages.OKAY
+                        });
+                        break;
+                    case _.AbortCodes.REACTION_BLOCKED:
+                        m.ComponentDispatch.dispatch(_.ComponentActions.SHAKE_APP, {
+                            duration: 200,
+                            intensity: 2
+                        })
+                } else if (!t.isRetry) return x(), !1;
+                return !0
+            }
+
+            function I(i, x, t, s, a) {
+                var o, y;
+                k.default.dispatch({
+                    type: i,
+                    channelId: x,
+                    messageId: t,
+                    userId: null !== (o = null == a ? void 0 : a.userId) && void 0 !== o ? o : e.default.getId(),
+                    emoji: s,
+                    optimistic: !0,
+                    colors: null !== (y = null == a ? void 0 : a.colors) && void 0 !== y ? y : [],
+                    reactionType: (null == a ? void 0 : a.burst) ? r.ReactionTypes.BURST : r.ReactionTypes.NORMAL
                 })
             }
 
-            function o(i, t) {
-                s.default.dispatch({
-                    type: "SET_PENDING_REPLY_SHOULD_MENTION",
-                    channelId: i,
-                    shouldMention: t
+            function b(i) {
+                let {
+                    channelId: x,
+                    messageId: t,
+                    emoji: s,
+                    userId: a,
+                    useTypeEndpoint: o = !1,
+                    type: y = r.ReactionTypes.NORMAL
+                } = i, k = null != s.id ? "".concat(s.name, ":").concat(s.id) : s.name;
+                return null == a ? _.Endpoints.REACTIONS(x, t, k) : o ? _.Endpoints.REACTION_WITH_TYPE(x, t, k, a, y) : _.Endpoints.REACTION(x, t, k, a)
+            }
+            async function w(i) {
+                let {
+                    channelId: x,
+                    messageId: t,
+                    emoji: s,
+                    limit: a,
+                    after: y,
+                    type: d
+                } = i, r = await o.default.get({
+                    url: b({
+                        channelId: x,
+                        messageId: t,
+                        emoji: s
+                    }),
+                    query: {
+                        limit: a,
+                        after: y,
+                        type: d
+                    },
+                    oldFormErrors: !0
+                });
+                return k.default.dispatch({
+                    type: "MESSAGE_REACTION_ADD_USERS",
+                    channelId: x,
+                    messageId: t,
+                    users: r.body,
+                    emoji: s,
+                    reactionType: d
+                }), r.body
+            }
+            async function E(i, x, t) {
+                let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "Message",
+                    a = arguments.length > 4 ? arguments[4] : void 0,
+                    k = null != a && !!a.burst,
+                    e = null != a && !!a.isRetry;
+                if (!e && function(i, x, t, s) {
+                        let a = n.default.getMessage(i, x);
+                        return null != a && a.userHasReactedWithEmoji(t, s)
+                    }(i, x, t, k)) {
+                    d.default.show({
+                        title: h.default.Messages.EMOJI_PICKER_DOUBLE_REACTION_SUPER_ERROR_TITLE,
+                        body: h.default.Messages.EMOJI_PICKER_DOUBLE_REACTION_SUPER_ERROR_BODY,
+                        confirmText: h.default.Messages.GOT_IT
+                    });
+                    return
+                }
+                let m = await T(t, k);
+                I("MESSAGE_REACTION_ADD", i, x, t, {
+                    burst: k,
+                    colors: m
+                }), await p.default.unarchiveThreadIfNecessary(i), o.default.put({
+                    url: b({
+                        channelId: i,
+                        messageId: x,
+                        emoji: t,
+                        userId: "@me"
+                    }),
+                    query: {
+                        location: s,
+                        type: k ? r.ReactionTypes.BURST : r.ReactionTypes.NORMAL
+                    },
+                    oldFormErrors: !0
+                }).then(() => {
+                    k ? (y.AccessibilityAnnouncer.announce(h.default.Messages.BURST_REACTION_ADD_UNLIMITED_SUCCESS_A11Y.format({
+                        name: t.name
+                    })), f.default.triggerFullscreenAnimation({
+                        channelId: i,
+                        messageId: x,
+                        emoji: {
+                            ...t,
+                            animated: !1
+                        }
+                    })) : y.AccessibilityAnnouncer.announce(h.default.Messages.REACTION_ADD_SUCCESS_A11Y.format({
+                        name: t.name
+                    }))
+                }).catch(a => {
+                    u(a, () => E(i, x, t, s, {
+                        burst: k,
+                        isRetry: !0
+                    }), {
+                        isRetry: e
+                    }) && (I("MESSAGE_REACTION_REMOVE", i, x, t, {
+                        burst: k
+                    }), k ? y.AccessibilityAnnouncer.announce(h.default.Messages.BURST_REACTION_ADD_UNLIMITED_ERROR_A11Y.format({
+                        name: t.name
+                    })) : y.AccessibilityAnnouncer.announce(h.default.Messages.REACTION_ADD_ERROR_A11Y.format({
+                        name: t.name
+                    })))
                 })
             }
 
-            function y(i) {
-                s.default.dispatch({
-                    type: "DELETE_PENDING_REPLY",
-                    channelId: i
+            function g(i) {
+                let {
+                    channelId: x,
+                    messageId: t,
+                    emoji: s,
+                    key: a
+                } = i;
+                k.default.dispatch({
+                    type: "BURST_REACTION_EFFECT_PLAY",
+                    channelId: x,
+                    messageId: t,
+                    emoji: s,
+                    key: a
+                })
+            }
+            async function A(i, x, t) {
+                let s = null != t && !!t.isRetry;
+                await p.default.unarchiveThreadIfNecessary(i), o.default.delete({
+                    url: _.Endpoints.REMOVE_REACTIONS(i, x),
+                    oldFormErrors: !0
+                }).catch(t => {
+                    u(t, () => A(i, x, {
+                        isRetry: !0
+                    }), {
+                        isRetry: s
+                    })
+                })
+            }
+            async function R(i, x, t, s) {
+                let a = null != s && !!s.isRetry;
+                await p.default.unarchiveThreadIfNecessary(i);
+                let y = null === t.id ? t.name : "".concat(t.name, ":").concat(t.id);
+                o.default.delete({
+                    url: _.Endpoints.REMOVE_EMOJI_REACTIONS(i, x, y),
+                    oldFormErrors: !0
+                }).catch(s => {
+                    u(s, () => R(i, x, t, {
+                        isRetry: !0
+                    }), {
+                        isRetry: a
+                    })
+                })
+            }
+            async function O(i, x, t, s) {
+                let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "Message",
+                    k = arguments.length > 5 ? arguments[5] : void 0,
+                    d = null != k && !!k.burst,
+                    e = null != k && !!k.isRetry;
+                I("MESSAGE_REACTION_REMOVE", i, x, t, {
+                    userId: s,
+                    burst: d
+                }), await p.default.unarchiveThreadIfNecessary(i), o.default.delete({
+                    url: b({
+                        channelId: i,
+                        messageId: x,
+                        emoji: t,
+                        userId: null != s ? s : "@me",
+                        type: d ? r.ReactionTypes.BURST : r.ReactionTypes.NORMAL,
+                        useTypeEndpoint: !0
+                    }),
+                    query: {
+                        location: a,
+                        burst: d
+                    },
+                    oldFormErrors: !0
+                }).then(() => {
+                    (null == k ? void 0 : k.burst) ? y.AccessibilityAnnouncer.announce(h.default.Messages.BURST_REACTION_REMOVE_SUCCESS_A11Y.format({
+                        name: t.name
+                    })): y.AccessibilityAnnouncer.announce(h.default.Messages.REACTION_REMOVE_SUCCESS_A11Y.format({
+                        name: t.name
+                    }))
+                }).catch(async o => {
+                    if (u(o, () => O(i, x, t, s, a, {
+                            burst: d,
+                            isRetry: !0
+                        }), {
+                            isRetry: e
+                        })) {
+                        let a = await T(t, d);
+                        I("MESSAGE_REACTION_ADD", i, x, t, {
+                            userId: s,
+                            burst: d,
+                            colors: a
+                        }), (null == k ? void 0 : k.burst) ? y.AccessibilityAnnouncer.announce(h.default.Messages.BURST_REACTION_REMOVE_ERROR_A11Y.format({
+                            name: t.name
+                        })) : y.AccessibilityAnnouncer.announce(h.default.Messages.REACTION_REMOVE_ERROR_A11Y.format({
+                            name: t.name
+                        }))
+                    }
+                })
+            }
+            async function T(i, x) {
+                let t = [];
+                if (x) try {
+                    t = await (0, l.getEmojiColors)(i)
+                } catch {}
+                return t
+            }(s = a || (a = {})).MESSAGE = "Message", s.FORUM_TOOLBAR = "Forum Toolbar", s.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer";
+
+            function N(i) {
+                let {
+                    channelId: x,
+                    messageId: t,
+                    emoji: s,
+                    reactionType: a,
+                    userId: o,
+                    location: y
+                } = i, k = a === r.ReactionTypes.BURST;
+                O(x, t, s, o, y, {
+                    burst: k
                 })
             }
         },
-        626334: function(i, t, x) {
+        626334: function(i, x, t) {
             "use strict";
             var s, a;
-            x.r(t), x.d(t, {
+            t.r(x), t.d(x, {
                 VoiceChannelEffectAnimationType: function() {
                     return s
                 },
@@ -27105,320 +26678,193 @@
             }), (a = s || (s = {}))[a.PREMIUM = 0] = "PREMIUM", a[a.BASIC = 1] = "BASIC";
             let o = 32
         },
-        397485: function(i, t, x) {
+        397485: function(i, x, t) {
             "use strict";
-            x.r(t), x.d(t, {
+            t.r(x), t.d(x, {
                 CUSTOM_CALL_SOUND_ANIMATION_RANGE: function() {
-                    return P
+                    return F
                 },
                 AnimationTypeToAnimations: function() {
-                    return D
-                },
-                getResizedEmojiData: function() {
-                    return M
-                },
-                sampleAnimationId: function() {
-                    return H
-                },
-                getEffectUrl: function() {
                     return U
                 },
+                getResizedEmojiData: function() {
+                    return B
+                },
+                sampleAnimationId: function() {
+                    return D
+                },
+                getEffectUrl: function() {
+                    return V
+                },
                 getEffectAnnouncement: function() {
-                    return Y
+                    return j
                 }
             });
-            var s = x("917351"),
-                a = x.n(s),
-                o = x("440540"),
-                y = x("811217"),
-                d = x("504936"),
-                k = x("988078"),
-                p = x("939118"),
-                e = x("101559"),
-                r = x("326209"),
-                n = x("610237"),
-                m = x("733261"),
-                c = x("596926"),
-                l = x("761999"),
-                _ = x("189580"),
-                f = x("679126"),
-                I = x("101593"),
-                u = x("414668"),
-                h = x("97656"),
-                w = x("812007"),
-                b = x("721336"),
-                E = x("954877"),
-                T = x("662151"),
-                C = x("155232"),
-                A = x("843093"),
-                g = x("867805"),
-                O = x("407063"),
-                F = x("697218"),
-                R = x("315102"),
-                S = x("402671"),
-                L = x("626334"),
-                N = x("782340");
-            let P = {
+            var s = t("917351"),
+                a = t.n(s),
+                o = t("440540"),
+                y = t("811217"),
+                k = t("504936"),
+                d = t("988078"),
+                r = t("939118"),
+                p = t("101559"),
+                e = t("326209"),
+                n = t("610237"),
+                m = t("733261"),
+                c = t("596926"),
+                l = t("761999"),
+                f = t("189580"),
+                _ = t("679126"),
+                h = t("101593"),
+                u = t("414668"),
+                I = t("97656"),
+                b = t("812007"),
+                w = t("721336"),
+                E = t("954877"),
+                g = t("662151"),
+                A = t("155232"),
+                R = t("843093"),
+                O = t("867805"),
+                T = t("407063"),
+                N = t("697218"),
+                v = t("315102"),
+                M = t("402671"),
+                S = t("626334"),
+                C = t("782340");
+            let F = {
                     start: 10,
                     end: 15
                 },
-                v = {
+                L = {
                     BASIC: [o],
-                    PREMIUM: [y, d, k, p, e, r, n, m, c, l, _, f, I, u, h, w, b, E, T, C, A]
+                    PREMIUM: [y, k, d, r, p, e, n, m, c, l, f, _, h, u, I, b, w, E, g, A, R]
                 },
-                D = {
-                    [L.VoiceChannelEffectAnimationType.BASIC]: v.BASIC,
-                    [L.VoiceChannelEffectAnimationType.PREMIUM]: v.PREMIUM
+                U = {
+                    [S.VoiceChannelEffectAnimationType.BASIC]: L.BASIC,
+                    [S.VoiceChannelEffectAnimationType.PREMIUM]: L.PREMIUM
                 },
-                M = a.memoize(i => new Promise(t => {
-                    let x = new Image;
-                    x.src = i, x.crossOrigin = "Anonymous", x.onload = () => {
-                        let s = L.EMOJI_SIZE * (0, O.getDevicePixelRatio)();
-                        if (x.width === s && x.height === s) t(i);
+                B = a.memoize(i => new Promise(x => {
+                    let t = new Image;
+                    t.src = i, t.crossOrigin = "Anonymous", t.onload = () => {
+                        let s = S.EMOJI_SIZE * (0, T.getDevicePixelRatio)();
+                        if (t.width === s && t.height === s) x(i);
                         else {
                             var a;
                             let i = document.createElement("canvas");
-                            i.width = s, i.height = s, null === (a = i.getContext("2d")) || void 0 === a || a.drawImage(x, 0, 0), t(i.toDataURL("image/png"))
+                            i.width = s, i.height = s, null === (a = i.getContext("2d")) || void 0 === a || a.drawImage(t, 0, 0), x(i.toDataURL("image/png"))
                         }
                     }
                 })),
-                H = (i, t) => {
-                    let x = D[i];
-                    if (null != t && i === L.VoiceChannelEffectAnimationType.PREMIUM) {
-                        let i = t.end + 1;
-                        return Math.floor(Math.random() * (t.start - i) + i)
+                D = (i, x) => {
+                    let t = U[i];
+                    if (null != x && i === S.VoiceChannelEffectAnimationType.PREMIUM) {
+                        let i = x.end + 1;
+                        return Math.floor(Math.random() * (x.start - i) + i)
                     }
-                    return Math.floor(Math.random() * x.length)
+                    return Math.floor(Math.random() * t.length)
                 };
 
-            function U(i) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : L.EMOJI_SIZE;
+            function V(i) {
+                let x = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : S.EMOJI_SIZE;
                 if (null != i.id) {
-                    var x;
-                    return R.default.getEmojiURL({
+                    var t;
+                    return v.default.getEmojiURL({
                         id: i.id,
-                        animated: null !== (x = i.animated) && void 0 !== x && x,
-                        size: t
+                        animated: null !== (t = i.animated) && void 0 !== t && t,
+                        size: x
                     })
                 }
-                let s = g.default.convertSurrogateToName(i.name, !1),
-                    a = g.default.getByName(s);
-                return null != a ? S.default.getURL(a.surrogates) : ""
+                let s = O.default.convertSurrogateToName(i.name, !1),
+                    a = O.default.getByName(s);
+                return null != a ? M.default.getURL(a.surrogates) : ""
             }
 
-            function G(i, t) {
+            function Y(i, x) {
                 return a(i).map(i => {
-                    var x;
-                    return null !== (x = i[t]) && void 0 !== x ? x : null
+                    var t;
+                    return null !== (t = i[x]) && void 0 !== t ? t : null
                 }).filter(i => null != i).uniq().value()
             }
 
-            function Y(i) {
-                var t, x, s, a, o, y;
+            function j(i) {
+                var x, t, s, a, o, y;
                 if (i.length < 1) return "";
-                let d = G(i, "userId"),
-                    k = G(i, "emojiName"),
-                    p = k.length < 2 ? null !== (t = null == k ? void 0 : k[0]) && void 0 !== t ? t : "" : k.join(", ");
-                if (d.length < 1) return "";
-                if (1 === d.length) return N.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_SINGLE.format({
-                    firstUsername: null === (x = F.default.getUser(d[0])) || void 0 === x ? void 0 : x.username,
-                    emojiNames: p
+                let k = Y(i, "userId"),
+                    d = Y(i, "emojiName"),
+                    r = d.length < 2 ? null !== (x = null == d ? void 0 : d[0]) && void 0 !== x ? x : "" : d.join(", ");
+                if (k.length < 1) return "";
+                if (1 === k.length) return C.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_SINGLE.format({
+                    firstUsername: null === (t = N.default.getUser(k[0])) || void 0 === t ? void 0 : t.username,
+                    emojiNames: r
                 });
-                if (2 === d.length) return N.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_DOUBLE.format({
-                    firstUsername: null === (s = F.default.getUser(d[0])) || void 0 === s ? void 0 : s.username,
-                    secondUsername: null === (a = F.default.getUser(d[1])) || void 0 === a ? void 0 : a.username,
-                    emojiNames: p
+                if (2 === k.length) return C.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_DOUBLE.format({
+                    firstUsername: null === (s = N.default.getUser(k[0])) || void 0 === s ? void 0 : s.username,
+                    secondUsername: null === (a = N.default.getUser(k[1])) || void 0 === a ? void 0 : a.username,
+                    emojiNames: r
                 });
-                else return N.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_MULTIPLE.format({
-                    firstUsername: null === (o = F.default.getUser(d[0])) || void 0 === o ? void 0 : o.username,
-                    secondUsername: null === (y = F.default.getUser(d[1])) || void 0 === y ? void 0 : y.username,
-                    count: d.length - 2,
-                    emojiNames: p
+                else return C.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_MULTIPLE.format({
+                    firstUsername: null === (o = N.default.getUser(k[0])) || void 0 === o ? void 0 : o.username,
+                    secondUsername: null === (y = N.default.getUser(k[1])) || void 0 === y ? void 0 : y.username,
+                    count: k.length - 2,
+                    emojiNames: r
                 })
             }
         },
-        427302: function(i, t, x) {
+        754474: function(i, x, t) {
             "use strict";
-            x.r(t), x.d(t, {
+            t.r(x), t.d(x, {
+                BotTypes: function() {
+                    return k.BotTagTypes
+                },
                 default: function() {
-                    return _
-                }
-            }), x("222007");
-            var s = x("37983"),
-                a = x("884691"),
-                o = x("414456"),
-                y = x.n(o),
-                d = x("77078"),
-                k = x("145079"),
-                p = x("86621"),
-                e = x("506885"),
-                r = x("981601"),
-                n = x("145131"),
-                m = x("49111"),
-                c = x("123106");
-            class l extends a.Component {
-                render() {
-                    let {
-                        popoutOpen: i
-                    } = this.state, {
-                        user: t,
-                        analyticsContext: x,
-                        disablePopout: a,
-                        guildId: o
-                    } = this.props, y = {
-                        location: {
-                            ...x.location,
-                            object: m.AnalyticsObjects.LIST_ITEM
-                        }
-                    };
-                    return (0, s.jsx)(d.Popout, {
-                        preload: () => (0, e.default)(t.id, t.getAvatarURL(o, 80), {
-                            guildId: o
-                        }),
-                        renderPopout: i => (0, s.jsx)(r.default, {
-                            ...i,
-                            guildId: o,
-                            userId: t.id,
-                            analyticsParams: y
-                        }),
-                        position: "left",
-                        onRequestClose: this.handleUserPopoutClose,
-                        shouldShow: !a && i,
-                        children: i => this.renderUserPopout(i)
-                    })
-                }
-                constructor(...i) {
-                    super(...i), this.state = {
-                        popoutOpen: !1
-                    }, this.handleClickUser = () => {
-                        let {
-                            onPopoutOpen: i
-                        } = this.props;
-                        this.setState({
-                            popoutOpen: !this.state.popoutOpen
-                        }), null == i || i()
-                    }, this.handleUserPopoutClose = () => {
-                        let {
-                            onPopoutClose: i
-                        } = this.props;
-                        this.setState({
-                            popoutOpen: !1
-                        }), null == i || i()
-                    }, this.renderUserPopout = i => {
-                        let {
-                            className: t,
-                            disablePopout: x,
-                            onContextMenu: a,
-                            user: o,
-                            status: p,
-                            textClassName: e,
-                            nick: r,
-                            guildId: m
-                        } = this.props;
-                        return (0, s.jsxs)(n.default, {
-                            align: n.default.Align.CENTER,
-                            className: y(c.memberListItem, t, {
-                                [c.popoutDisabled]: x
-                            }),
-                            onContextMenu: a,
-                            onMouseDown: i.onMouseDown,
-                            onKeyDown: i.onKeyDown,
-                            onClick: this.handleClickUser,
-                            children: [(0, s.jsx)(d.Avatar, {
-                                src: o.getAvatarURL(m, 24),
-                                className: c.avatar,
-                                "aria-label": o.username,
-                                size: d.AvatarSizes.SIZE_24,
-                                status: p
-                            }), (0, s.jsx)(d.Text, {
-                                className: y(c.memberListItemTag, e),
-                                variant: "text-sm/normal",
-                                children: (0, s.jsx)(k.default, {
-                                    user: o,
-                                    nick: r,
-                                    usernameClass: c.username,
-                                    hideDiscriminator: !0
-                                })
-                            })]
-                        })
-                    }
-                }
-            }
-            l.defaultProps = {
-                disablePopout: !1
-            };
-            var _ = (0, p.default)(l)
-        },
-        531470: function(i, t, x) {
-            "use strict";
-            x.r(t), x.d(t, {
-                default: function() {
-                    return d
+                    return r
                 }
             });
-            var s = x("37983");
-            x("884691");
-            var a = x("469563"),
-                o = x("891722"),
-                y = x("75196"),
-                d = (0, a.replaceIcon)(function(i) {
+            var s = t("37983");
+            t("884691");
+            var a = t("414456"),
+                o = t.n(a),
+                y = t("79798"),
+                k = t("988268"),
+                d = t("888770"),
+                r = i => {
                     let {
-                        width: t = 24,
-                        height: x = 24,
-                        color: a = "currentColor",
-                        foreground: o,
-                        ...d
+                        name: x,
+                        discriminator: t,
+                        invertBotTagColor: a,
+                        nameColor: k,
+                        className: r,
+                        botType: p,
+                        usernameClass: e,
+                        discriminatorClass: n,
+                        botClass: m,
+                        botVerified: c = !1,
+                        style: l,
+                        useRemSizes: f = !1,
+                        usernameIcon: _
                     } = i;
-                    return (0, s.jsx)("svg", {
-                        ...(0, y.default)(d),
-                        width: t,
-                        height: x,
-                        viewBox: "0 0 24 24",
-                        fill: "none",
-                        children: (0, s.jsx)("path", {
-                            className: o,
-                            fill: a,
-                            d: "M20 10.9378H14.2199H8.06628L10.502 8.50202L9 7L4 12L9 17L10.502 15.498L8.06628 13.0622H20V10.9378Z"
-                        })
+                    return (0, s.jsxs)("div", {
+                        className: o(r, d.nameTag),
+                        style: l,
+                        children: [(0, s.jsxs)("span", {
+                            className: o(d.username, e),
+                            style: null != k ? {
+                                color: k
+                            } : void 0,
+                            children: [_, x]
+                        }), null != t ? (0, s.jsxs)("span", {
+                            className: null != n ? n : void 0,
+                            children: ["#", t]
+                        }) : null, null != p ? (0, s.jsx)(y.default, {
+                            type: p,
+                            invertColor: a,
+                            className: o(m, d.bot),
+                            verified: c,
+                            useRemSizes: f
+                        }) : null]
                     })
-                }, o.ArrowSmallLeftIcon, void 0, {
-                    size: 24
-                })
-        },
-        42641: function(i, t, x) {
-            "use strict";
-            x.r(t), x.d(t, {
-                ArrowSmallLeftIcon: function() {
-                    return y
                 }
-            });
-            var s = x("37983");
-            x("884691");
-            var a = x("669491"),
-                o = x("82169");
-            let y = i => {
-                let {
-                    width: t = 24,
-                    height: x = 24,
-                    color: y = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: d = "",
-                    ...k
-                } = i;
-                return (0, s.jsx)("svg", {
-                    ...(0, o.default)(k),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: x,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, s.jsx)("path", {
-                        fill: "string" == typeof y ? y : y.css,
-                        d: "M3.3 11.3a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4-1.4L6.42 13H20a1 1 0 1 0 0-2H6.41l3.3-3.3a1 1 0 0 0-1.42-1.4l-5 5Z",
-                        className: d
-                    })
-                })
-            }
         }
     }
 ]);
-//# sourceMappingURL=5687.190d0168eadbbf7a3544.js.map
+//# sourceMappingURL=15750.1cf01bbbb50d2ba61aae.js.map

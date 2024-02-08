@@ -1144,6 +1144,7 @@
                 actionsUserPopout: "actionsUserPopout__000f8",
                 actionsUserPopoutV2: "actionsUserPopoutV2__025d9",
                 actionsVoiceChannel: "actionsVoiceChannel__1097b",
+                actionsWrapper: "actionsWrapper__753d7",
                 cannotLaunchImage: "cannotLaunchImage_a09448 errorImage__02a3f",
                 errorImage: "errorImage__02a3f"
             }
@@ -3858,6 +3859,17 @@
                 divider: "divider__77916",
                 heading: "heading__89d0b",
                 row: "row_a79d14"
+            }
+        },
+        619187: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                picker: "picker__35201",
+                reaction: "reaction__98ec4",
+                reactions: "reactions__7b6b2",
+                reply: "reply_e44af6",
+                replyHeader: "replyHeader__46dc1",
+                replyInput: "replyInput__0bc23"
             }
         },
         662617: function(e, t, n) {
@@ -16751,10 +16763,7 @@
                 headerContainer: "headerContainer__16d7d",
                 img: "img__4deec",
                 imgBroken: "imgBroken__954ba",
-                imgWrapper: "imgWrapper_b60dfd",
-                mediumLayout: "mediumLayout_e2c0a5",
-                outerContainer: "outerContainer_ee638d",
-                smallLayout: "smallLayout__37dca"
+                imgWrapper: "imgWrapper_b60dfd"
             }
         },
         50435: function(e, t, n) {
@@ -24986,6 +24995,9 @@
                 border: "border_d9a17b",
                 content: "content__1748b",
                 darkCircle: "darkCircle__2f713",
+                hangStatusContainer: "hangStatusContainer_ccd703",
+                hangStatusIcon: "hangStatusIcon__8597e",
+                hangStatusSmall: "hangStatusSmall__9c23e",
                 hidden: "hidden_d7f753",
                 idle: "idle__90385",
                 indicators: "indicators_a77a0b",
@@ -25161,7 +25173,6 @@
                 root: "root_a48873",
                 tileWrapper: "tileWrapper__57dc7",
                 videoFrame: "videoFrame_b3cb57",
-                videoSizer: "videoSizer_f7ce64",
                 videoWrapper: "videoWrapper__73cb7",
                 viewAllButton: "viewAllButton__49567",
                 viewAllButtonInner: "viewAllButtonInner_a10057"

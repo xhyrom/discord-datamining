@@ -1,37 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["54127"], {
-        606863: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "321a07cbc6f5919dbce9.svg"
-        },
-        839491: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "a826e445dff97cf15335.svg"
-        },
-        164654: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "1f3e315f020ed5635dc1.svg"
-        },
-        540346: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "1af9bdf041e000508e41.svg"
-        },
-        526094: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "7442b576347c1d02886f.svg"
-        },
-        367469: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "3205da2e8f78633583d0.svg"
-        },
-        23933: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "8f581f91e7e650ac87a2.svg"
-        },
-        283397: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "44d5e1639bc492dc8d62.svg"
-        },
+    ["94933"], {
         568131: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -47,12 +15,12 @@
             });
             var i = n("872717"),
                 s = n("913144"),
-                a = n("370999"),
-                l = n("271560"),
+                l = n("370999"),
+                a = n("271560"),
                 r = n("49111");
             async function o() {
                 try {
-                    let e = await (0, l.httpGetWithCountryCodeQuery)({
+                    let e = await (0, a.httpGetWithCountryCodeQuery)({
                         url: r.Endpoints.LIBRARY,
                         oldFormErrors: !0
                     }, !1);
@@ -74,14 +42,14 @@
                         url: r.Endpoints.APPLICATION_BRANCH_LIST(e.id),
                         oldFormErrors: !0
                     }).then(e => e.body),
-                    l = n.map(n => a.default.createForTestMode({
+                    a = n.map(n => l.default.createForTestMode({
                         id: e.id,
                         skuId: t,
                         branch: n
                     }));
                 s.default.dispatch({
                     type: "LIBRARY_APPLICATIONS_TEST_MODE_ENABLED",
-                    libraryApplications: l
+                    libraryApplications: a
                 })
             }
 
@@ -118,8 +86,8 @@
             });
             var i = n("872717"),
                 s = n("295426"),
-                a = n("819689"),
-                l = n("529805"),
+                l = n("819689"),
+                a = n("529805"),
                 r = n("42203"),
                 o = n("474643"),
                 u = n("377253"),
@@ -154,7 +122,7 @@
                             message_id: n
                         }
                     }
-                }), p(t)
+                }), _(t)
             }
             async function h(e) {
                 let t = await i.default.patch({
@@ -162,83 +130,25 @@
                 });
                 if (null != t.text && "" !== t.text) {
                     let n = r.default.getChannel(e.channel_id);
-                    null != n && ((0, l.createPendingReply)({
+                    null != n && ((0, a.createPendingReply)({
                         channel: n,
                         message: e,
                         shouldMention: !1,
                         showMentionToggle: !1
-                    }), p(n.id)), s.default.saveDraft(e.channel_id, t.text, o.DraftType.ChannelMessage)
+                    }), _(n.id)), s.default.saveDraft(e.channel_id, t.text, o.DraftType.ChannelMessage)
                 }
             }
 
-            function p(e) {
+            function _(e) {
                 let t = u.default.getMessages(e);
-                t.hasMoreAfter ? a.default.jumpToPresent(e, c.MAX_MESSAGES_PER_CHANNEL) : d.ComponentDispatch.dispatch(c.ComponentActions.SCROLLTO_PRESENT)
+                t.hasMoreAfter ? l.default.jumpToPresent(e, c.MAX_MESSAGES_PER_CHANNEL) : d.ComponentDispatch.dispatch(c.ComponentActions.SCROLLTO_PRESENT)
             }
-        },
-        172858: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                DUCK_CONFETTI_SPRITE: function() {
-                    return a
-                },
-                COMMON_CONFETTI_COLORS: function() {
-                    return l
-                },
-                COMMON_CONFETTI_SPRITES: function() {
-                    return r
-                },
-                COMMON_CONFETTI_MAX_SPRITE_SIZE: function() {
-                    return o
-                },
-                COMMON_CONFETTI_BASE_CONFIG: function() {
-                    return u
-                },
-                COMMON_CONFETTI_ENVIRONMENT: function() {
-                    return d
-                }
-            });
-            var i = n("516555"),
-                s = n("839491");
-            let a = s,
-                l = ["#FF73FA", "#FFC0FF", "#FFD836", "#FF9A15", "#A5F7DE", "#51BC9D", "#AEC7FF", "#3E70DD"],
-                r = [n("606863"), a, n("164654"), n("540346"), n("526094"), n("367469"), n("23933"), {
-                    src: n("283397"),
-                    colorize: !1
-                }],
-                o = 28,
-                u = {
-                    velocity: {
-                        type: "static-random",
-                        minValue: {
-                            x: 30,
-                            y: -80
-                        },
-                        maxValue: {
-                            x: -30,
-                            y: -180
-                        }
-                    },
-                    rotation: {
-                        type: "linear-random",
-                        minValue: 0,
-                        maxValue: 360,
-                        minAddValue: -25,
-                        maxAddValue: 25
-                    },
-                    size: {
-                        type: "static-random",
-                        minValue: 14,
-                        maxValue: o
-                    }
-                },
-                d = new i.Environment
         },
         696326: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return a
+                    return l
                 }
             });
             var i = n("862205");
@@ -257,13 +167,13 @@
                     }
                 }]
             });
-            var a = s
+            var l = s
         },
         179803: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 shouldShowGuildOnboardingUpsell: function() {
-                    return _
+                    return p
                 },
                 dismissedGuildOnboardingUpsell: function() {
                     return g
@@ -271,8 +181,8 @@
             }), n("222007");
             var i = n("866227"),
                 s = n.n(i),
-                a = n("151426"),
-                l = n("801340"),
+                l = n("151426"),
+                a = n("801340"),
                 r = n("10641"),
                 o = n("872173"),
                 u = n("374363"),
@@ -281,23 +191,23 @@
                 f = n("380710"),
                 E = n("49111"),
                 T = n("994428");
-            let h = [a.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL_V2, a.DismissibleContent.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE, a.DismissibleContent.GUILD_ONBOARDING_UPSELL_NAGBAR],
-                p = [0, 1, 7];
+            let h = [l.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL_V2, l.DismissibleContent.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE, l.DismissibleContent.GUILD_ONBOARDING_UPSELL_NAGBAR],
+                _ = [0, 1, 7];
 
-            function _(e, t) {
+            function p(e, t) {
                 var n;
                 let i = d.default.getGuilds(),
-                    a = Object.entries(i).some(e => {
+                    l = Object.entries(i).some(e => {
                         let [t, n] = e, i = (0, f.isGuildOnboardingSettingsAvailable)(t), s = n.hasFeature(E.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED);
                         return i && s
                     });
-                if (a || !(0, f.isGuildOnboardingSettingsAvailable)(e)) return !1;
+                if (l || !(0, f.isGuildOnboardingSettingsAvailable)(e)) return !1;
                 let o = null === (n = u.default.settings.userContent) || void 0 === n ? void 0 : n.guildOnboardingUpsellDismissedAt,
-                    T = null != o ? l.Timestamp.toDate(o) : void 0,
-                    _ = null != T ? s().diff(T, "days") : null,
+                    T = null != o ? a.Timestamp.toDate(o) : void 0,
+                    p = null != T ? s().diff(T, "days") : null,
                     g = h.indexOf(t);
                 if (-1 === g) return !1;
-                let S = null == _ || _ > p[g];
+                let S = null == p || p > _[g];
                 if (!S) return !1;
                 let I = h.find(e => !(0, r.isDismissibleContentDismissed)(e)) === t;
                 if (!I) return !1;
@@ -307,14 +217,14 @@
                     guildId: e,
                     location: "7f5b67_1"
                 }, {
-                    disable: a || !(0, f.isGuildOnboardingSettingsAvailable)(e),
+                    disable: l || !(0, f.isGuildOnboardingSettingsAvailable)(e),
                     autoTrackExposure: !0
                 });
                 return A
             }
 
             function g(e, t) {
-                let n = l.Timestamp.now();
+                let n = a.Timestamp.now();
                 o.PreloadedUserSettingsActionCreators.updateAsync("userContent", e => {
                     e.guildOnboardingUpsellDismissedAt = n
                 }, o.UserSettingsDelay.INFREQUENT_USER_ACTION), null != t && (0, r.markDismissibleContentAsDismissed)(t, {
@@ -333,13 +243,13 @@
             }), n("222007");
             var i = n("689988"),
                 s = n("21121"),
-                a = n("162771"),
-                l = n("398604"),
+                l = n("162771"),
+                a = n("398604"),
                 r = n("322224");
             let o = {},
                 u = new Set,
                 d = async e => {
-                    let t = l.default.getGuildScheduledEventsForGuild(e);
+                    let t = a.default.getGuildScheduledEventsForGuild(e);
                     if (0 !== t.length) {
                         if (!u.has(e)) try {
                             await r.default.getGuildEventsForCurrentUser(e), u.add(e)
@@ -365,9 +275,9 @@
                 handleConnectionOpen() {
                     u.clear(), o = {};
                     let e = (0, s.isInMainTabsExperiment)(),
-                        t = a.default.getLastSelectedGuildId();
+                        t = l.default.getLastSelectedGuildId();
                     if (e && null != t) {
-                        let e = l.default.getGuildScheduledEventsForGuild(t);
+                        let e = a.default.getGuildScheduledEventsForGuild(t);
                         e.forEach(e => this.getGuildEventUserCounts(t, e.id, []))
                     }
                 }
@@ -395,7 +305,7 @@
                         guildId: t
                     } = e;
                     if (null == t) return;
-                    let n = l.default.getGuildScheduledEventsForGuild(t);
+                    let n = a.default.getGuildScheduledEventsForGuild(t);
                     n.forEach(e => this.getGuildEventUserCounts(t, e.id, []))
                 }
                 constructor(...e) {
@@ -419,10 +329,10 @@
             }), n("222007"), n("424973");
             var i = n("693566"),
                 s = n.n(i),
-                a = n("689988"),
-                l = n("599110"),
+                l = n("689988"),
+                a = n("599110"),
                 r = n("49111");
-            class o extends a.default {
+            class o extends l.default {
                 handleMessageBecameVisible(e) {
                     let {
                         messageId: t
@@ -449,7 +359,7 @@
                     this.currentlyVisibleMessageTimers = {}, this.viewsInCurrentChannel.clear(), this.drainBuffer()
                 }
                 drainBuffer() {
-                    for (let e of this.batchBuffer) l.default.track(r.AnalyticEvents.ANNOUNCEMENT_MESSAGE_VIEWED, {
+                    for (let e of this.batchBuffer) a.default.track(r.AnalyticEvents.ANNOUNCEMENT_MESSAGE_VIEWED, {
                         message_id: e.messageId,
                         channel_id: e.channelId,
                         guild_id: e.guildId,
@@ -474,7 +384,7 @@
         },
         935583: function(e, t, n) {
             "use strict";
-            var i, s, a, l;
+            var i, s, l, a;
             n.r(t), n.d(t, {
                 dirtyChars: function() {
                     return r
@@ -503,7 +413,7 @@
             });
             let r = /([^A-Za-z0-9_.]+)/g,
                 o = /\.+/g;
-            (a = i || (i = {})).NONE = "none", a.EDIT_DISPLAY_NAME = "display-name", a.EDIT_USERNAME = "username", a.PREVIEW = "preview", a.SUGGESTION = "suggestion", (l = s || (s = {})).APP_START = "app start", l.NOTICE = "notice", l.USER_SETTINGS = "user settings", l.USER_SETTINGS_EDIT = "user settings edit", l.YOU_TAB = "you tab";
+            (l = i || (i = {})).NONE = "none", l.EDIT_DISPLAY_NAME = "display-name", l.EDIT_USERNAME = "username", l.PREVIEW = "preview", l.SUGGESTION = "suggestion", (a = s || (s = {})).APP_START = "app start", a.NOTICE = "notice", a.USER_SETTINGS = "user settings", a.USER_SETTINGS_EDIT = "user settings edit", a.YOU_TAB = "you tab";
             let u = 32,
                 d = "pomelo",
                 c = [1564, 917505, 12644, 65279, 173, 6068, 10240, 4447, 847, 4448, 65440],
@@ -516,10 +426,10 @@
                     return s
                 },
                 usePomeloEligibility: function() {
-                    return a
+                    return l
                 },
                 getPomeloEligibility: function() {
-                    return l
+                    return a
                 }
             });
             var i = n("862205");
@@ -538,7 +448,7 @@
                         }
                     }]
                 }),
-                a = () => {
+                l = () => {
                     let {
                         enabled: e
                     } = s.useExperiment({
@@ -548,7 +458,7 @@
                     });
                     return e
                 },
-                l = () => {
+                a = () => {
                     let {
                         enabled: e
                     } = s.getCurrentConfig({
@@ -563,10 +473,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 useForceMigration: function() {
-                    return a
+                    return l
                 },
                 getForceMigration: function() {
-                    return l
+                    return a
                 }
             });
             var i = n("862205");
@@ -585,7 +495,7 @@
                         }
                     }]
                 }),
-                a = () => {
+                l = () => {
                     let {
                         enabled: e
                     } = s.useExperiment({
@@ -595,7 +505,7 @@
                     });
                     return e
                 },
-                l = () => {
+                a = () => {
                     let {
                         enabled: e
                     } = s.getCurrentConfig({
@@ -610,13 +520,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return a
+                    return l
                 }
             });
             var i = n("37983");
             n("884691");
             var s = n("77078");
-            async function a(e) {
+            async function l(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 await (0, s.openModalLazy)(async () => {
                     let {
@@ -639,11 +549,11 @@
             });
             var i = n("446674"),
                 s = n("913144"),
-                a = n("599110"),
-                l = n("773336"),
+                l = n("599110"),
+                a = n("773336"),
                 r = n("49111");
             let o = {
-                    desktopType: l.isPlatformEmbedded ? r.DesktopNotificationTypes.ALL : r.DesktopNotificationTypes.NEVER,
+                    desktopType: a.isPlatformEmbedded ? r.DesktopNotificationTypes.ALL : r.DesktopNotificationTypes.NEVER,
                     disableAllSounds: !1,
                     disabledSounds: [],
                     ttsType: r.TTSNotificationTypes.NEVER,
@@ -654,7 +564,7 @@
                 u = o;
 
             function d(e, t) {
-                !__OVERLAY__ && a.default.track(e, t)
+                !__OVERLAY__ && l.default.track(e, t)
             }
 
             function c(e) {
@@ -704,7 +614,7 @@
                 let t = {
                     ...e
                 };
-                return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || !1, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || r.TTSNotificationTypes.NEVER, null == t.desktopType && (t.desktopType = l.isPlatformEmbedded ? r.DesktopNotificationTypes.ALL : r.DesktopNotificationTypes.NEVER), t
+                return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || !1, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || r.TTSNotificationTypes.NEVER, null == t.desktopType && (t.desktopType = a.isPlatformEmbedded ? r.DesktopNotificationTypes.ALL : r.DesktopNotificationTypes.NEVER), t
             }];
             var E = new f(s.default, {
                 NOTIFICATIONS_SET_DESKTOP_TYPE: c,
@@ -767,30 +677,30 @@
             var i = n("37983");
             n("884691");
             var s = n("469563"),
-                a = n("671306"),
-                l = n("75196"),
+                l = n("671306"),
+                a = n("75196"),
                 r = (0, s.replaceIcon)(function(e) {
                     let {
                         width: t = 24,
                         height: n = 24,
                         color: s = "currentColor",
-                        foreground: a,
+                        foreground: l,
                         ...r
                     } = e;
                     return (0, i.jsx)("svg", {
-                        ...(0, l.default)(r),
+                        ...(0, a.default)(r),
                         width: t,
                         height: n,
                         viewBox: "0 0 24 24",
                         children: (0, i.jsx)("path", {
-                            className: a,
+                            className: l,
                             fillRule: "evenodd",
                             clipRule: "evenodd",
                             d: "M4 2.5C2.897 2.5 2 3.397 2 4.5V15.5C2 16.604 2.897 17.5 4 17.5H11V19.5H7V21.5H17V19.5H13V17.5H20C21.103 17.5 22 16.604 22 15.5V4.5C22 3.397 21.103 2.5 20 2.5H4ZM14.5483 6L16 7.45174L13.4466 9.99485L16 12.5483L14.5483 14L12.0051 11.4466L9.45174 14L8 12.5483L10.5534 9.99485L8 7.45174L9.45174 6L12.0051 8.55341L14.5483 6Z",
                             fill: s
                         })
                     })
-                }, a.ScreenXIcon, void 0, {
+                }, l.ScreenXIcon, void 0, {
                     size: 24
                 })
         },
@@ -798,36 +708,36 @@
             "use strict";
             n.r(t), n.d(t, {
                 ScreenXIcon: function() {
-                    return l
+                    return a
                 }
             });
             var i = n("37983");
             n("884691");
             var s = n("669491"),
-                a = n("82169");
-            let l = e => {
+                l = n("82169");
+            let a = e => {
                 let {
                     width: t = 24,
                     height: n = 24,
-                    color: l = s.default.colors.INTERACTIVE_NORMAL,
+                    color: a = s.default.colors.INTERACTIVE_NORMAL,
                     colorClass: r = "",
                     ...o
                 } = e;
                 return (0, i.jsxs)("svg", {
-                    ...(0, a.default)(o),
+                    ...(0, l.default)(o),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
                     fill: "none",
                     viewBox: "0 0 24 24",
                     children: [(0, i.jsx)("path", {
-                        fill: "string" == typeof l ? l : l.css,
+                        fill: "string" == typeof a ? a : a.css,
                         fillRule: "evenodd",
                         d: "M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm6.3.3a1 1 0 0 1 1.4 0L12 7.58l2.3-2.3a1 1 0 1 1 1.4 1.42L13.42 9l2.3 2.3a1 1 0 0 1-1.42 1.4L12 10.42l-2.3 2.3a1 1 0 0 1-1.4-1.42L10.58 9l-2.3-2.3a1 1 0 0 1 0-1.4Z",
                         clipRule: "evenodd",
                         className: r
                     }), (0, i.jsx)("path", {
-                        fill: "string" == typeof l ? l : l.css,
+                        fill: "string" == typeof a ? a : a.css,
                         d: "M13 19.5c0 .28.22.5.5.5H15a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1.5a.5.5 0 0 0 .5-.5v-2c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v2Z",
                         className: r
                     })]
@@ -836,4 +746,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54127.33e668b1df3530a2ac1e.js.map
+//# sourceMappingURL=94933.c4cb5bc191b1fc217bc3.js.map
