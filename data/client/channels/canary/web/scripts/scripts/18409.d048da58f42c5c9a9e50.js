@@ -186,7 +186,7 @@
                 try {
                     let e = c.stringify(),
                         n = "",
-                        a = await (0, u.getPushNotificationLogs)().then(t => (0, u.serializePushNotificationLogs)(t)),
+                        a = await (0, u.getPushNotificationLogs)().then(t => (0, u.serializePushNotificationLogs)(t, !0)),
                         l = e.length + n.length + a.length;
                     if (l > 9437184) {
                         let t = 1 - 9437184 / l;
@@ -224,15 +224,16 @@
                 a = n("271938"),
                 l = n("49111");
 
-            function r(t) {
+            function r(t, e) {
                 if (0 === t.length) return "No logs";
-                let e = o.default.get(l.DEVICE_TOKEN),
-                    n = o.default.get(l.DEVICE_VOIP_TOKEN),
-                    a = t.map(t => {
-                        let e = "Displayed";
-                        return t.silent && (e = "Silent"), "".concat(new Date(t.receivedTimestamp).toISOString(), " [").concat(t.type, "] ").concat(e, " - ").concat(t.title, " - ").concat(t.content, " ")
+                let n = o.default.get(l.DEVICE_TOKEN),
+                    a = o.default.get(l.DEVICE_VOIP_TOKEN),
+                    r = t.map(t => {
+                        let n = t.silent ? "Silent" : "Displayed",
+                            o = e ? "".concat(t.channelId, " - ").concat(t.messageId) : "".concat(t.title, " - ").concat(t.content);
+                        return "".concat(new Date(t.receivedTimestamp).toISOString(), " [").concat(t.type, "] ").concat(n, " - ").concat(o)
                     }).join("\n");
-                return "".concat(null != e ? "Device Token: ".concat(e) : "", "\n").concat(null != n ? "Device Voip Token: ".concat(n) : "", "\n\n").concat(a)
+                return "".concat(null != n ? "Device Token: ".concat(n) : "", "\n").concat(null != a ? "Device Voip Token: ".concat(a) : "", "\n\n").concat(r)
             }
             async function i() {
                 let t = a.default.getId(),
@@ -247,8 +248,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "264754",
-                    versionHash: "0060c0baac7f4e19f20b182d327e4f357dd42c29"
+                    buildNumber: "264771",
+                    versionHash: "687c055e8b54bda911a9daedc6a0e4275d1aa0f2"
                 }
             }
             n.r(e), n.d(e, {
@@ -360,4 +361,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18409.601805b3128af1fcb806.js.map
+//# sourceMappingURL=18409.d048da58f42c5c9a9e50.js.map

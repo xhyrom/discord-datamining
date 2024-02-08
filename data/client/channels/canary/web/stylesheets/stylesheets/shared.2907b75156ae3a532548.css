@@ -14644,6 +14644,40 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     cursor: pointer
 }
 
+.copiableWrapper__9fc8c {
+    display: flex;
+    cursor: pointer
+}
+
+.childWrapper_d40a85 {
+    flex: 1
+}
+
+.copyIcon_e27399 {
+    padding-top: 4px;
+    padding-left: 4px;
+    color: var(--header-secondary)
+}
+
+@media(hover:none) {
+    .copiableWrapper__9fc8c .copyIcon_e27399 {
+        display: block;
+        visibility: visible
+    }
+}
+
+@media(hover:hover) {
+    .copiableWrapper__9fc8c .copyIcon_e27399 {
+        visibility: hidden
+    }
+
+    .clickTarget_eab467:hover .copyIcon_e27399,
+    .keyboard-mode .clickTarget_eab467:focus .copyIcon_e27399 {
+        color: var(--header-secondary);
+        visibility: visible
+    }
+}
+
 .container_de798d {
     box-sizing: border-box;
     text-overflow: ellipsis;
@@ -27476,4 +27510,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.1e08e1ba77d5e2967f29.css.map*/
+/*# sourceMappingURL=shared.2907b75156ae3a532548.css.map*/
