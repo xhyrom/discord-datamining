@@ -58704,48 +58704,6 @@ html .progress__4ef76 {
     width: 300px
 }
 
-.buttonWhite__30853 {
-    color: #fff !important;
-    border-color: #fff !important
-}
-
-@supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
-    .buttonWhite__30853 {
-        color: hsl(0 calc(0%*var(--saturation-factor, 1))100%) !important;
-        border-color: hsl(0 calc(0%*var(--saturation-factor, 1))100%) !important
-    }
-}
-
-.buttonBrand__91dcf {
-    color: #5865f2 !important;
-    border-color: #5865f2 !important
-}
-
-@supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
-    .buttonBrand__91dcf {
-        color: hsl(235 calc(85.6%*var(--saturation-factor, 1))64.7%) !important;
-        border-color: hsl(235 calc(85.6%*var(--saturation-factor, 1))64.7%) !important
-    }
-}
-
-.buttonBrand__91dcf:hover {
-    color: #fff !important
-}
-
-@supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
-    .buttonBrand__91dcf:hover {
-        color: hsl(0 calc(0%*var(--saturation-factor, 1))100%) !important
-    }
-}
-
-.brandShine_d8adbc {
-    color: hsl(var(--brand-500-hsl)/.1) !important
-}
-
-.freeTrialText__058ad {
-    text-transform: capitalize
-}
-
 .root_e292f6 {
     display: flex;
     flex-direction: column
@@ -58930,6 +58888,48 @@ html .progress__4ef76 {
 
 .brandShineDark_fe60c2 {
     color: hsl(var(--white-500-hsl)/.1)
+}
+
+.buttonWhite__30853 {
+    color: #fff !important;
+    border-color: #fff !important
+}
+
+@supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
+    .buttonWhite__30853 {
+        color: hsl(0 calc(0%*var(--saturation-factor, 1))100%) !important;
+        border-color: hsl(0 calc(0%*var(--saturation-factor, 1))100%) !important
+    }
+}
+
+.buttonBrand__91dcf {
+    color: #5865f2 !important;
+    border-color: #5865f2 !important
+}
+
+@supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
+    .buttonBrand__91dcf {
+        color: hsl(235 calc(85.6%*var(--saturation-factor, 1))64.7%) !important;
+        border-color: hsl(235 calc(85.6%*var(--saturation-factor, 1))64.7%) !important
+    }
+}
+
+.buttonBrand__91dcf:hover {
+    color: #fff !important
+}
+
+@supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
+    .buttonBrand__91dcf:hover {
+        color: hsl(0 calc(0%*var(--saturation-factor, 1))100%) !important
+    }
+}
+
+.brandShine_d8adbc {
+    color: hsl(var(--brand-500-hsl)/.1) !important
+}
+
+.freeTrialText__058ad {
+    text-transform: capitalize
 }
 
 .divider__16fdc {
@@ -127152,4 +127152,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c6a190be7e0b6fc1e50d.css.map*/
+/*# sourceMappingURL=app.5bc7e2b80c623309c846.css.map*/
