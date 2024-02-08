@@ -1018,13 +1018,6 @@
       "PUT"
     ]
   },
-  "POPULATE_CHANNEL_EMOJIS": {
-    "url": "/guilds/:param/populate-channel-emojis",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "GUILD_FEED_MESSAGE_REMOVE": {
     "url": "/channels/:param/messages/:param/hide-guild-feed",
     "allowed_methods": [
