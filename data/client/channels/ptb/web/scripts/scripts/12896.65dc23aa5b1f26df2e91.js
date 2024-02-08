@@ -221,8 +221,8 @@
                 }
             }), n("222007"), n("424973");
             var a = n("773364"),
-                i = n("750028"),
-                l = n("784063"),
+                i = n("784063"),
+                l = n("750028"),
                 d = n("913144"),
                 r = n("49671"),
                 s = n("44642"),
@@ -254,7 +254,7 @@
                     allowVoiceRecording: t
                 } = e;
                 f.PreloadedUserSettingsActionCreators.updateAsync("clips", e => {
-                    e.allowVoiceRecording = i.BoolValue.create({
+                    e.allowVoiceRecording = l.BoolValue.create({
                         value: t
                     })
                 }, f.UserSettingsDelay.INFREQUENT_USER_ACTION), v.default.track(b.AnalyticEvents.CLIPS_SETTINGS_UPDATED, {
@@ -458,7 +458,7 @@
                 }, {
                     autoTrackExposure: !1
                 }), {
-                    enableViewerClipping: i
+                    enableViewerClipping: l
                 } = c.default.getCurrentConfig({
                     location: "SaveClip"
                 }, {
@@ -467,7 +467,7 @@
                 if (C.default.getIsAtMaxSaveClipOperations()) return;
                 let r = C.default.getSettings().clipsEnabled && null != p.default.getCurrentUserActiveStream(),
                     s = n && C.default.getSettings().decoupledClipsEnabled && (null === (t = E.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && m.default.hasClipsSource(),
-                    f = null != e && null != p.default.getActiveStreamForStreamKey(e) && i;
+                    f = null != e && null != p.default.getActiveStreamForStreamKey(e) && l;
                 if (!r && !s && !f) return;
                 let g = p.default.getCurrentUserActiveStream(),
                     h = null != g ? (0, u.encodeStreamKey)(g) : void 0,
@@ -483,7 +483,7 @@
                             guildId: t
                         } = (0, u.decodeStreamKey)(v), n = S.default.getStreamId(e, t, a.MediaEngineContextTypes.STREAM);
                         if (null != n) try {
-                            let e = (0, l.getVoiceEngine)(),
+                            let e = (0, i.getVoiceEngine)(),
                                 t = await e.getNextVideoOutputFrame(n);
                             return (0, M.createImageFromImageData)(t)
                         } catch (e) {
@@ -1478,4 +1478,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12896.9bf47bfe11ac977afb40.js.map
+//# sourceMappingURL=12896.65dc23aa5b1f26df2e91.js.map
