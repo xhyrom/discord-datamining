@@ -50022,7 +50022,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "265048"
+                                build_number: "265060"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -50678,6 +50678,9 @@
                 },
                 getPremiumPlanItem: function() {
                     return w
+                },
+                getDefaultPrice: function() {
+                    return k
                 },
                 getPrice: function() {
                     return x
@@ -52033,6 +52036,9 @@
                 },
                 formatRate: function() {
                     return l
+                },
+                formatPercent: function() {
+                    return u
                 }
             }), n("70102");
             var i = n("988025"),
@@ -52058,6 +52064,13 @@
                     intervalCount: n
                 });
                 throw Error("Unsupported interval type: ".concat(t, ", and interval count: ").concat(n))
+            }
+
+            function u(e, t) {
+                return Intl.NumberFormat(e, {
+                    style: "percent",
+                    minimumFractionDigits: 0
+                }).format(t)
             }
         },
         197881: function(e, t, n) {
@@ -63917,4 +63930,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.23b9bb0dd45c9f977ce2.js.map
+//# sourceMappingURL=41039.d3f5d0b98ac067f3b70b.js.map
