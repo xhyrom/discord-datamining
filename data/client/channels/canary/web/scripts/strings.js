@@ -18175,7 +18175,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265009", ", Version Hash: ").concat("2f4db922340000f250dafa17b52e81df8a9fff84")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265018", ", Version Hash: ").concat("cfedd366ba3c4a34e75fa1b51b9a6e0f29c76dfe")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20454,8 +20454,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "265009", "265009"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265009")), _ = 0), _
+                let _ = parseInt((e = "265018", "265018"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265018")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22019,60 +22019,6 @@
             }
             var a = new r
         },
-        236266: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                getEmojiCaptionsExperimentConfig: function() {
-                    return n
-                }
-            });
-            var t = E("862205");
-            let o = (0, t.createExperiment)({
-                kind: "user",
-                id: "2023-10_emoji_captions",
-                label: "Emoji Captions Experiment",
-                defaultConfig: {
-                    isEnabledOnDesktop: !1,
-                    isAutosuggestEnabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        isEnabledOnDesktop: !0,
-                        isAutosuggestEnabled: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "Enabled with more captions from post-processing",
-                    config: {
-                        isEnabledOnDesktop: !0,
-                        isAutosuggestEnabled: !1
-                    }
-                }, {
-                    id: 3,
-                    label: "Enabled with mobile autosuggest",
-                    config: {
-                        isEnabledOnDesktop: !0,
-                        isAutosuggestEnabled: !0
-                    }
-                }]
-            });
-
-            function n(e) {
-                let {
-                    location: _,
-                    trackExposureOptions: E = {},
-                    autoTrackExposure: t = !0
-                } = e, n = o.getCurrentConfig({
-                    location: _
-                }, {
-                    autoTrackExposure: t,
-                    trackExposureOptions: E
-                });
-                return n
-            }
-        },
         765969: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -22082,23 +22028,59 @@
             });
             var t = E("697218"),
                 o = E("558986"),
-                n = E("236266"),
-                r = E("802461");
+                n = E("802461"),
+                r = E("269579");
             async function a() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown",
                     _ = t.default.getCurrentUser();
                 if (null == _) return;
-                let E = (0, n.getEmojiCaptionsExperimentConfig)({
+                let {
+                    isEmojiCaptionsEnabled: E
+                } = r.default.getCurrentConfig({
                     location: e
                 });
-                if (!E.isEnabledOnDesktop) {
-                    r.default.hasPersistedState() && r.default.clear();
+                if (!E) {
+                    n.default.hasPersistedState() && n.default.clear();
                     return
                 }
-                if (r.default.getIsFetching()) return;
-                let a = r.default.getEmojiCaptionsTTL();
+                if (n.default.getIsFetching()) return;
+                let a = n.default.getEmojiCaptionsTTL();
                 !(null != a && Date.now() < a) && await (0, o.getEmojiCaptionsForUser)()
             }
+        },
+        269579: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return n
+                }
+            });
+            var t = E("862205");
+            let o = (0, t.createExperiment)({
+                kind: "user",
+                id: "2024-02_emoji_suggestions",
+                label: "Emoji Suggestions Experiment",
+                defaultConfig: {
+                    isEmojiSuggestionsEnabled: !1,
+                    isEmojiCaptionsEnabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enables Emoji Suggestions without Captions",
+                    config: {
+                        isEmojiSuggestionsEnabled: !0,
+                        isEmojiCaptionsEnabled: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "Enables Emoji Suggestions with Captions",
+                    config: {
+                        isEmojiSuggestionsEnabled: !0,
+                        isEmojiCaptionsEnabled: !0
+                    }
+                }]
+            });
+            var n = o
         },
         120273: function(e, _, E) {
             "use strict";
@@ -36378,4 +36360,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73222.94c2f2cc3f3f0fbae0b8.js.map
+//# sourceMappingURL=73222.6ebf616eec10cb42baea.js.map
