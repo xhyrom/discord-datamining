@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23356"], {
+    ["23303"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -26935,14 +26935,16 @@
             function c(e, t) {
                 let n = (0, i.useStateFromStores)([a.default], () => a.default.getChannel(e)),
                     s = l(n),
-                    r = o.useExperiment({
+                    r = (null == n ? void 0 : n.guild_id) != null ? d : o,
+                    u = r.useExperiment({
+                        guildId: null == n ? void 0 : n.guild_id,
                         location: t
                     }, {
                         autoTrackExposure: !1
                     });
-                return r.enabled && s ? {
-                    showInOmniButtonMenu: r.showInOmniButtonMenu,
-                    showChatInputButton: r.showChatInputButton
+                return u.enabled && s ? {
+                    showInOmniButtonMenu: u.showInOmniButtonMenu,
+                    showChatInputButton: u.showChatInputButton
                 } : null
             }
         },
@@ -61793,4 +61795,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.58e53b83bf5aff1bca6f.js.map
+//# sourceMappingURL=23303.22afea3c912167b4b50a.js.map
