@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_nitro_custom_emoji_perk_roadblock",
+    "label": "Nitro Custom Emoji Perk Roadblock",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Nitro custom emoji perk roadblock"
+    ],
+    "hash": 4041111924,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

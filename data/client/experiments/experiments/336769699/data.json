@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-01_h265_desktop_decode",
-    "label": "H.265 Desktop Decode",
+    "id": "2024-02_all_marketing_page_optimization_phase_1",
+    "label": "Marketing Page Optimizations - Phase 1",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Desktop H.265 Decode"
+      "Treatment 1: Enabled"
     ],
-    "hash": 124383374,
+    "hash": 336769699,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "signalH265DesktopDecode"
+      "enabled"
     ]
   }
 }
