@@ -22,14 +22,14 @@
 <h3>
     <strong>Note:</strong> Badges <em><strong>cannot</strong></em> be swapped from one account to another! No switcheroos!
 </h3>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;"><img src="https://support.discord.com/hc/article_attachments/360013214251/badge_.jpg" alt="badge_.jpg" width="493" height="350"></span></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;"><img src="https://support.discord.com/hc/article_attachments/360013214251" alt="badge_.jpg" width="493" height="350"></span></span></p>
 <p>What's extra extra nifty is that this badge <strong>stays forever</strong> even after your subscription is canceled or runs out as a sign of our eternal gratitude for supporting us before we were cool!</p>
 <h1><strong>What happens if you try to cancel your special legacy subscription?</strong></h1>
 <div class="messageCozy-2JPAPA message-1PNnaP">
     <div class="contentCozy-3XX413 content-3dzVd8">
         <p>If you're ever feeling meh about the perks and want to end your legacy subscription, you'll be able to do so through your <strong>Subscriptions</strong> tab in the <strong>User Settings</strong>!</p>
         <p>An error message will appear when you want to cancel your legacy subscription, and once you confirm and your subscription is canceled, <strong>your discount to the legacy timeframe on Nitro Classic will be lost</strong> as well!</p>
-        <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360013223032/Nitro_Settings_-_Grandfathered_Cancellation.png" alt="Nitro_Settings_-_Grandfathered_Cancellation.png" width="493" height="371"></p>
+        <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360013223032" alt="Nitro_Settings_-_Grandfathered_Cancellation.png" width="493" height="371"></p>
         <p><span class="wysiwyg-color-red110"><strong>This cancelation policy also applies to:</strong></span><span class="wysiwyg-color-blue70 wysiwyg-color-red110"><strong>  </strong></span></p>
     </div>
 </div>
@@ -59,7 +59,7 @@
 <p><span style="font-weight: 400;">If you'd like to keep your current Nitro features, you can upgrade your subscription to the $99.99/year or $9.99/month tier of Nitro! </span></p>
 <p><span style="font-weight: 400;">To directly upgrade to Nitro Yearly, you can directly click on the <strong>Upgrade Now</strong> button in the top notification bar to upgrade your subscription in the upcoming new year! </span></p>
 <p><span style="font-weight: 400;">You will then be charged the <a href="https://support.discord.com/hc/en-us/articles/360017693772" target="_blank" rel="noopener"><strong>prorated difference</strong></a> for the upgrade from $49.99 to $99.99! </span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/1500000778261/Screen_Shot_2020-12-22_at_12.27.14_PM.png" alt="Screen_Shot_2020-12-22_at_12.27.14_PM.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/1500000778261" alt="Screen_Shot_2020-12-22_at_12.27.14_PM.png"></span></p>
 <h3 class="wysiwyg-text-align-center">
     <span class="wysiwyg-font-size-large"><span style="font-weight: 400;"><strong>Important Note:</strong><br><strong><span class="wysiwyg-underline">This will be a one-time charge on Jan 1, 2021</span></strong>. <br></span></span><span style="font-weight: 400;">You will not be charged until Jan 1, and your billing date will not be changed.  <br></span><span style="font-weight: 400;">After Jan 1, 2021, your subscription will continue to be charged yearly until you cancel the subscription. </span>
 </h3>
