@@ -22574,7 +22574,7 @@
                     mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls",
                     enable_new_search_filters: "Enables new search filters behavior",
                     force_channel_list_v2: "Force channel list V2",
-                    render_native_message_previews_pins: "Render native message previews in pins (Android only)"
+                    render_native_message_previews: "Render native message previews in search"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -50021,7 +50021,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "265254"
+                                build_number: "265257"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63929,4 +63929,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.a6afb7a6ec4e2f863b2f.js.map
+//# sourceMappingURL=41039.df9b7d0a81237014dc14.js.map
