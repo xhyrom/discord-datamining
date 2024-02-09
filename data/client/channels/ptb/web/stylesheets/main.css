@@ -44566,8 +44566,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -60046,8 +60046,8 @@ html .progress__4ef76 {
 
 @media screen and (max-width:1330px) {
     .card_e97590:hover .carouselCardImage__4e898 {
-        scale: 119%;
-        margin-left: -2px;
+        scale: 122%;
+        margin-left: 0;
         margin-bottom: -9px
     }
 }
@@ -60105,7 +60105,7 @@ html .progress__4ef76 {
 
 @media screen and (max-width:1330px) {
     .carouselCardImage__4e898 {
-        width: 210px;
+        width: 200px;
         height: 120px
     }
 }
@@ -127270,4 +127270,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5d3b555dc28cccc339ca.css.map*/
+/*# sourceMappingURL=app.a80c0a1cf9deb9603039.css.map*/
