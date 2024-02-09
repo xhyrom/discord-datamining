@@ -3,75 +3,78 @@
         788506: function(e, t, i) {
             "use strict";
             i.r(t), i.d(t, {
-                useEmojiCategories: function() {
-                    return y
+                useCategoryNitroLockedStates: function() {
+                    return S
                 },
-                trackPremiumSettingsPaneOpened: function() {
+                useEmojiCategories: function() {
                     return j
                 },
-                trackEmojiSearchStart: function() {
+                trackPremiumSettingsPaneOpened: function() {
                     return h
                 },
-                trackEmojiSearchResultsViewed: function() {
+                trackEmojiSearchStart: function() {
                     return A
                 },
-                trackEmojiSearchSelect: function() {
+                trackEmojiSearchResultsViewed: function() {
                     return M
                 },
-                trackEmojiSearchEmpty: function() {
+                trackEmojiSearchSelect: function() {
                     return R
                 },
-                trackEmojiFocus: function() {
+                trackEmojiSearchEmpty: function() {
                     return N
                 },
-                trackEmojiSelect: function() {
+                trackEmojiFocus: function() {
                     return v
                 },
-                trackEmojiFavorited: function() {
+                trackEmojiSelect: function() {
                     return F
                 },
-                getAriaIdForEmojiCategory: function() {
+                trackEmojiFavorited: function() {
                     return P
                 },
-                getStringForEmojiCategory: function() {
+                getAriaIdForEmojiCategory: function() {
                     return D
+                },
+                getStringForEmojiCategory: function() {
+                    return L
                 },
                 allowUnicodeEmojiForIntention: function() {
                     return U
                 },
                 useEmojiSearchResults: function() {
-                    return L
-                },
-                useFrequentlyUsedEmojis: function() {
                     return G
                 },
-                useFavoriteEmojis: function() {
+                useFrequentlyUsedEmojis: function() {
                     return J
+                },
+                useFavoriteEmojis: function() {
+                    return k
                 },
                 useIsFavoriteEmoji: function() {
                     return x
                 },
                 useEmojiInPriorityOrder: function() {
-                    return k
-                },
-                useTrackEmojiPickerOpened: function() {
                     return b
                 },
-                getEmojiSubCategory: function() {
+                useTrackEmojiPickerOpened: function() {
                     return w
                 },
-                dedupeUnicodeEmojis: function() {
+                getEmojiSubCategory: function() {
                     return Y
                 },
-                getSearchPlaceholder: function() {
+                dedupeUnicodeEmojis: function() {
                     return W
+                },
+                getSearchPlaceholder: function() {
+                    return q
                 }
             }), i("843762"), i("424973"), i("222007"), i("808653"), i("794252"), i("781738");
             var n = i("884691");
             i("375128");
             var r = i("506838"),
-                a = i("446674"),
-                o = i("716241"),
+                o = i("446674"),
+                a = i("716241"),
                 u = i("385976"),
                 s = i("630400"),
                 l = i("872173"),
@@ -81,42 +84,59 @@
                 m = i("402671"),
                 _ = i("577426"),
                 f = i("255214"),
-                I = i("352046"),
-                g = i("115279"),
+                g = i("352046"),
+                I = i("115279"),
                 O = i("49111"),
                 C = i("958706"),
-                T = i("13030"),
-                p = i("646718"),
-                S = i("782340");
-            let y = function(e, t) {
+                p = i("13030"),
+                y = i("646718"),
+                T = i("782340");
+            let S = function(e, t, i) {
+                    let n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null == t ? void 0 : t.getGuildId(),
+                        r = (0, o.useStateFromStores)([u.default], () => u.default.getDisambiguatedEmojiContext(n), [n]),
+                        a = r.getGroupedCustomEmoji();
+                    return i.map(i => {
+                        if (i.type === I.EmojiCategoryTypes.GUILD) {
+                            let n = null == a ? void 0 : a[i.guild.id];
+                            return null != n && 0 !== n.length && m.default.isEmojiCategoryNitroLocked({
+                                categoryEmojis: n,
+                                channel: t,
+                                intention: e
+                            })
+                        }
+                        if (i.type === I.EmojiCategoryTypes.PREMIUM_UPSELL) return !0;
+                        return !1
+                    })
+                },
+                j = function(e, t) {
                     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null == t ? void 0 : t.getGuildId();
                     (0, s.maybeFetchTopEmojisByGuild)(i);
                     let r = (0, C.isExternalEmojiAllowedForIntention)(e),
-                        o = G(i),
-                        l = J(i),
+                        a = J(i),
+                        l = k(i),
                         {
                             topEmojis: c,
                             newlyAddedEmojis: _
-                        } = (0, I.default)(i, e),
+                        } = (0, g.default)(i, e),
                         {
                             allEmojis: O
                         } = (0, f.default)({
                             topEmojis: c,
                             newlyAddedEmojis: _
                         }),
-                        T = (0, a.useStateFromStores)([u.default], () => u.default.getDisambiguatedEmojiContext(i), [i]),
-                        p = (0, a.useStateFromStores)([E.default], () => {
+                        p = (0, o.useStateFromStores)([u.default], () => u.default.getDisambiguatedEmojiContext(i), [i]),
+                        y = (0, o.useStateFromStores)([E.default], () => {
                             var e;
                             return null === (e = E.default.getGuild(i)) || void 0 === e ? void 0 : e.name
                         }),
-                        y = n.useMemo(() => {
-                            let n = T.getGroupedCustomEmoji(),
-                                a = d.default.getFlattenedGuildIds(),
+                        S = n.useMemo(() => {
+                            let n = p.getGroupedCustomEmoji(),
+                                o = d.default.getFlattenedGuildIds(),
                                 s = [];
-                            return ((r, a) => {
-                                for (let o of r) {
+                            return ((r, o) => {
+                                for (let a of r) {
                                     let r;
-                                    if (a === g.EmojiCategoryTypes.GUILD && (r = E.default.getGuild(o)), null == r) continue;
+                                    if (o === I.EmojiCategoryTypes.GUILD && (r = E.default.getGuild(a)), null == r) continue;
                                     let u = null == n ? void 0 : n[r.id];
                                     if (null == u || 0 === u.length || null != t && u.every(i => m.default.isEmojiFiltered({
                                             emoji: i,
@@ -124,63 +144,63 @@
                                             intention: e
                                         }))) continue;
                                     let l = null;
-                                    a === g.EmojiCategoryTypes.GUILD && (l = {
-                                        type: g.EmojiCategoryTypes.GUILD,
+                                    o === I.EmojiCategoryTypes.GUILD && (l = {
+                                        type: I.EmojiCategoryTypes.GUILD,
                                         guild: r
                                     }), null != l && (r.id === i ? s.unshift(l) : s.push(l))
                                 }
-                            })(a, g.EmojiCategoryTypes.GUILD), u.default.categories.reduce((t, n) => {
-                                if (n === g.EmojiCategories.TOP_GUILD_EMOJI) {
+                            })(o, I.EmojiCategoryTypes.GUILD), u.default.categories.reduce((t, n) => {
+                                if (n === I.EmojiCategories.TOP_GUILD_EMOJI) {
                                     if (0 === O.length) return t;
                                     t.push({
-                                        type: g.EmojiCategoryTypes.TOP_GUILD_EMOJI,
+                                        type: I.EmojiCategoryTypes.TOP_GUILD_EMOJI,
                                         id: n,
-                                        name: S.default.Messages.EMOJI_CATEGORY_TOP_GUILD_EMOJI.format({
-                                            guildName: p
+                                        name: T.default.Messages.EMOJI_CATEGORY_TOP_GUILD_EMOJI.format({
+                                            guildName: y
                                         })
                                     })
-                                } else if (n === g.EmojiCategories.RECENT) {
-                                    if (0 === o.length) return t;
+                                } else if (n === I.EmojiCategories.RECENT) {
+                                    if (0 === a.length) return t;
                                     t.push({
-                                        type: g.EmojiCategoryTypes.RECENT,
+                                        type: I.EmojiCategoryTypes.RECENT,
                                         id: n,
-                                        name: S.default.Messages.EMOJI_CATEGORY_RECENT
+                                        name: T.default.Messages.EMOJI_CATEGORY_RECENT
                                     })
-                                } else if (n === g.EmojiCategories.FAVORITES) {
+                                } else if (n === I.EmojiCategories.FAVORITES) {
                                     if (0 === l.length) return t;
                                     t.push({
-                                        type: g.EmojiCategoryTypes.FAVORITES,
+                                        type: I.EmojiCategoryTypes.FAVORITES,
                                         id: n,
-                                        name: S.default.Messages.CATEGORY_FAVORITE
+                                        name: T.default.Messages.CATEGORY_FAVORITE
                                     })
-                                } else if (n === g.EmojiCategories.CUSTOM) {
+                                } else if (n === I.EmojiCategories.CUSTOM) {
                                     let e = s;
-                                    !r && (e = s.filter(e => e.type === g.EmojiCategoryTypes.GUILD && e.guild.id === i)), t.push(...e)
+                                    !r && (e = s.filter(e => e.type === I.EmojiCategoryTypes.GUILD && e.guild.id === i)), t.push(...e)
                                 } else if (U(e)) t.push({
-                                    type: g.EmojiCategoryTypes.UNICODE,
+                                    type: I.EmojiCategoryTypes.UNICODE,
                                     id: n,
                                     name: n
                                 });
                                 return t
                             }, [])
-                        }, [T, t, i, e, O.length, p, o.length, l.length, r]);
-                    return y
+                        }, [p, t, i, e, O.length, y, a.length, l.length, r]);
+                    return S
                 },
-                j = e => {
+                h = e => {
                     let t = (null == e ? void 0 : e.getGuildId()) != null;
                     c.default.track(O.AnalyticEvents.PREMIUM_PROMOTION_OPENED, {
                         location_page: t ? O.AnalyticsPages.GUILD_CHANNEL : O.AnalyticsPages.DM_CHANNEL,
                         location_section: null != e ? O.AnalyticsSections.EMOJI_PICKER_POPOUT : O.AnalyticsSections.CUSTOM_STATUS_MODAL
                     })
                 },
-                h = (e, t) => {
-                    o.default.trackWithMetadata(O.AnalyticEvents.SEARCH_STARTED, {
+                A = (e, t) => {
+                    a.default.trackWithMetadata(O.AnalyticEvents.SEARCH_STARTED, {
                         search_type: null != t && t === C.EmojiIntention.REACTION ? O.SearchTypes.EMOJI_REACTION : O.SearchTypes.EMOJI,
                         location: e
                     })
                 },
-                A = (e, t, i, n, r) => {
-                    o.default.trackWithMetadata(O.AnalyticEvents.SEARCH_RESULT_VIEWED, {
+                M = (e, t, i, n, r) => {
+                    a.default.trackWithMetadata(O.AnalyticEvents.SEARCH_RESULT_VIEWED, {
                         search_type: null != r && r === C.EmojiIntention.REACTION ? O.SearchTypes.EMOJI_REACTION : O.SearchTypes.EMOJI,
                         total_results: e,
                         num_results_locked: t,
@@ -188,11 +208,11 @@
                         location: i
                     })
                 },
-                M = (e, t, i, n, a) => {
+                R = (e, t, i, n, o) => {
                     var u;
                     let s = null !== (u = e.uniqueName) && void 0 !== u ? u : e.name,
                         l = (0, r.match)(n).with(C.EmojiIntention.REACTION, () => O.SearchTypes.EMOJI_REACTION).with(C.EmojiIntention.AUTO_SUGGESTION, () => O.SearchTypes.EMOJI_AUTO_SUGGESTION).otherwise(() => O.SearchTypes.EMOJI);
-                    o.default.trackWithMetadata(O.AnalyticEvents.SEARCH_RESULT_SELECTED, {
+                    a.default.trackWithMetadata(O.AnalyticEvents.SEARCH_RESULT_SELECTED, {
                         search_type: l,
                         location: t,
                         expression_guild_id: e.guildId,
@@ -201,24 +221,24 @@
                         is_custom: null != e.id,
                         is_animated: e.animated,
                         query: i,
-                        index_num: a
+                        index_num: o
                     })
                 },
-                R = (e, t) => {
-                    o.default.trackWithMetadata(O.AnalyticEvents.SEARCH_RESULT_EMPTY, {
+                N = (e, t) => {
+                    a.default.trackWithMetadata(O.AnalyticEvents.SEARCH_RESULT_EMPTY, {
                         search_type: O.SearchTypes.EMOJI,
                         query: t,
                         location: e
                     })
                 },
-                N = e => {
+                v = e => {
                     let {
                         emoji: t,
                         subCategory: i,
                         position: n,
                         newlyAddedHighlight: r
                     } = e;
-                    o.default.trackWithMetadata(O.AnalyticEvents.EXPRESSION_PICKER_EXPRESSION_FOCUS, {
+                    a.default.trackWithMetadata(O.AnalyticEvents.EXPRESSION_PICKER_EXPRESSION_FOCUS, {
                         expression_section: null == i ? void 0 : i.toString(),
                         newly_added_highlight: r,
                         emoji_id: t.id,
@@ -227,30 +247,30 @@
                         emoji_position: n
                     })
                 },
-                v = e => {
+                F = e => {
                     var t;
                     let i, {
                         emoji: n,
                         location: r,
-                        pickerIntention: a,
+                        pickerIntention: o,
                         category: u,
-                        subCategory: s = g.EmojiSubCategory.NONE,
+                        subCategory: s = I.EmojiSubCategory.NONE,
                         position: l,
                         newlyAddedHighlight: E,
                         isBurstReaction: d
                     } = e;
-                    switch (a) {
+                    switch (o) {
                         case C.EmojiIntention.REACTION:
-                            i = d ? p.PremiumUpsellTypes.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED : p.PremiumUpsellTypes.EMOJI_PICKER_REACTION_EMOJI_CLICKED;
+                            i = d ? y.PremiumUpsellTypes.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED : y.PremiumUpsellTypes.EMOJI_PICKER_REACTION_EMOJI_CLICKED;
                             break;
                         case C.EmojiIntention.STATUS:
-                            i = p.PremiumUpsellTypes.EMOJI_PICKER_STATUS_EMOJI_CLICKED;
+                            i = y.PremiumUpsellTypes.EMOJI_PICKER_STATUS_EMOJI_CLICKED;
                             break;
                         default:
-                            i = p.PremiumUpsellTypes.EMOJI_PICKER_EMOJI_CLICKED
+                            i = y.PremiumUpsellTypes.EMOJI_PICKER_EMOJI_CLICKED
                     }
                     let c = null !== (t = n.uniqueName) && void 0 !== t ? t : n.name;
-                    o.default.trackWithMetadata(O.AnalyticEvents.EXPRESSION_PICKER_EXPRESSION_SELECTED, {
+                    a.default.trackWithMetadata(O.AnalyticEvents.EXPRESSION_PICKER_EXPRESSION_SELECTED, {
                         type: i,
                         location: r,
                         expression_id: n.id,
@@ -265,15 +285,15 @@
                         is_burst: d
                     })
                 },
-                F = e => {
+                P = e => {
                     var t;
                     let {
                         emoji: i,
                         location: n
                     } = e, r = null !== (t = i.uniqueName) && void 0 !== t ? t : i.name;
-                    o.default.trackWithMetadata(O.AnalyticEvents.EXPRESSION_FAVORITED, {
+                    a.default.trackWithMetadata(O.AnalyticEvents.EXPRESSION_FAVORITED, {
                         location: n,
-                        expression_type: T.ExpressionPickerViewType.EMOJI,
+                        expression_type: p.ExpressionPickerViewType.EMOJI,
                         expression_id: i.id,
                         expression_name: r,
                         expression_guild_id: i.guildId,
@@ -281,50 +301,50 @@
                         is_animated: i.animated
                     })
                 },
-                P = (e, t) => {
-                    if (e.type === g.EmojiCategoryTypes.GUILD) return null != t ? t.toString() : "";
+                D = (e, t) => {
+                    if (e.type === I.EmojiCategoryTypes.GUILD) return null != t ? t.toString() : "";
                     return e.id
                 },
-                D = (e, t) => {
+                L = (e, t) => {
                     switch (e) {
-                        case g.EmojiCategories.TOP_GUILD_EMOJI:
-                            return S.default.Messages.EMOJI_CATEGORY_TOP_GUILD_EMOJI.format({
+                        case I.EmojiCategories.TOP_GUILD_EMOJI:
+                            return T.default.Messages.EMOJI_CATEGORY_TOP_GUILD_EMOJI.format({
                                 guildName: t
                             });
-                        case g.EmojiCategories.RECENT:
-                            return S.default.Messages.EMOJI_CATEGORY_RECENT;
-                        case g.EmojiCategories.FAVORITES:
-                            return S.default.Messages.CATEGORY_FAVORITE;
-                        case g.EmojiCategories.ACTIVITY:
-                            return S.default.Messages.EMOJI_CATEGORY_ACTIVITY;
-                        case g.EmojiCategories.FLAGS:
-                            return S.default.Messages.EMOJI_CATEGORY_FLAGS;
-                        case g.EmojiCategories.FOOD:
-                            return S.default.Messages.EMOJI_CATEGORY_FOOD;
-                        case g.EmojiCategories.NATURE:
-                            return S.default.Messages.EMOJI_CATEGORY_NATURE;
-                        case g.EmojiCategories.OBJECTS:
-                            return S.default.Messages.EMOJI_CATEGORY_OBJECTS;
-                        case g.EmojiCategories.PEOPLE:
-                            return S.default.Messages.EMOJI_CATEGORY_PEOPLE;
-                        case g.EmojiCategories.SYMBOLS:
-                            return S.default.Messages.EMOJI_CATEGORY_SYMBOLS;
-                        case g.EmojiCategories.TRAVEL:
-                            return S.default.Messages.EMOJI_CATEGORY_TRAVEL;
-                        case g.EmojiCategories.PREMIUM_UPSELL:
-                            return S.default.Messages.EMOJI_CATEGORY_PREMIUM_UPSELL;
+                        case I.EmojiCategories.RECENT:
+                            return T.default.Messages.EMOJI_CATEGORY_RECENT;
+                        case I.EmojiCategories.FAVORITES:
+                            return T.default.Messages.CATEGORY_FAVORITE;
+                        case I.EmojiCategories.ACTIVITY:
+                            return T.default.Messages.EMOJI_CATEGORY_ACTIVITY;
+                        case I.EmojiCategories.FLAGS:
+                            return T.default.Messages.EMOJI_CATEGORY_FLAGS;
+                        case I.EmojiCategories.FOOD:
+                            return T.default.Messages.EMOJI_CATEGORY_FOOD;
+                        case I.EmojiCategories.NATURE:
+                            return T.default.Messages.EMOJI_CATEGORY_NATURE;
+                        case I.EmojiCategories.OBJECTS:
+                            return T.default.Messages.EMOJI_CATEGORY_OBJECTS;
+                        case I.EmojiCategories.PEOPLE:
+                            return T.default.Messages.EMOJI_CATEGORY_PEOPLE;
+                        case I.EmojiCategories.SYMBOLS:
+                            return T.default.Messages.EMOJI_CATEGORY_SYMBOLS;
+                        case I.EmojiCategories.TRAVEL:
+                            return T.default.Messages.EMOJI_CATEGORY_TRAVEL;
+                        case I.EmojiCategories.PREMIUM_UPSELL:
+                            return T.default.Messages.EMOJI_CATEGORY_PREMIUM_UPSELL;
                         default:
                             return null != t ? t : e
                     }
                 },
                 U = e => e !== C.EmojiIntention.COMMUNITY_CONTENT_ONLY;
 
-            function L(e, t, i) {
+            function G(e, t, i) {
                 n.useEffect(() => {
                     l.FrecencyUserSettingsActionCreators.loadIfNecessary()
                 }, []);
                 let r = (0, C.isExternalEmojiAllowedForIntention)(i);
-                return (0, a.useStateFromStores)([u.default], () => {
+                return (0, o.useStateFromStores)([u.default], () => {
                     let n = e.replace(/^:/, "").replace(/:$/, "");
                     return "" === n ? null : u.default.searchWithoutFetchingLatest({
                         channel: t,
@@ -333,34 +353,34 @@
                         intention: i,
                         includeExternalGuilds: r
                     })
-                }, [t, i, e, r], a.statesWillNeverBeEqual)
-            }
-
-            function G(e) {
-                return n.useEffect(() => {
-                    l.FrecencyUserSettingsActionCreators.loadIfNecessary()
-                }, []), (0, a.useStateFromStoresArray)([u.default], () => u.default.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
+                }, [t, i, e, r], o.statesWillNeverBeEqual)
             }
 
             function J(e) {
                 return n.useEffect(() => {
                     l.FrecencyUserSettingsActionCreators.loadIfNecessary()
-                }, []), (0, a.useStateFromStoresArray)([u.default], () => u.default.getDisambiguatedEmojiContext(e).favoriteEmojisWithoutFetchingLatest)
-            }
-
-            function x(e, t) {
-                return n.useEffect(() => {
-                    l.FrecencyUserSettingsActionCreators.loadIfNecessary()
-                }, []), (0, a.useStateFromStores)([u.default], () => null != t && u.default.getDisambiguatedEmojiContext(e).isFavoriteEmojiWithoutFetchingLatest(t))
+                }, []), (0, o.useStateFromStoresArray)([u.default], () => u.default.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
             }
 
             function k(e) {
                 return n.useEffect(() => {
                     l.FrecencyUserSettingsActionCreators.loadIfNecessary()
-                }, []), (0, a.useStateFromStoresArray)([u.default], () => u.default.getDisambiguatedEmojiContext(e).getEmojiInPriorityOrderWithoutFetchingLatest())
+                }, []), (0, o.useStateFromStoresArray)([u.default], () => u.default.getDisambiguatedEmojiContext(e).favoriteEmojisWithoutFetchingLatest)
+            }
+
+            function x(e, t) {
+                return n.useEffect(() => {
+                    l.FrecencyUserSettingsActionCreators.loadIfNecessary()
+                }, []), (0, o.useStateFromStores)([u.default], () => null != t && u.default.getDisambiguatedEmojiContext(e).isFavoriteEmojiWithoutFetchingLatest(t))
             }
 
             function b(e) {
+                return n.useEffect(() => {
+                    l.FrecencyUserSettingsActionCreators.loadIfNecessary()
+                }, []), (0, o.useStateFromStoresArray)([u.default], () => u.default.getDisambiguatedEmojiContext(e).getEmojiInPriorityOrderWithoutFetchingLatest())
+            }
+
+            function w(e) {
                 let t = n.useCallback(() => {
                     (0, _.default)(e)
                 }, [e]);
@@ -371,24 +391,24 @@
                 }
             }
 
-            function w(e, t, i) {
-                if (null == i) return g.EmojiSubCategory.NONE;
+            function Y(e, t, i) {
+                if (null == i) return I.EmojiSubCategory.NONE;
                 let n = e.map(e => {
                         var t, i;
                         return null !== (i = null !== (t = e.id) && void 0 !== t ? t : e.uniqueName) && void 0 !== i ? i : e.name
                     }),
                     r = t.map(e => e.id);
-                return n.includes(i) ? g.EmojiSubCategory.TOP_GUILD_EMOJI : r.includes(i) ? g.EmojiSubCategory.NEWLY_ADDED_EMOJI : g.EmojiSubCategory.NONE
+                return n.includes(i) ? I.EmojiSubCategory.TOP_GUILD_EMOJI : r.includes(i) ? I.EmojiSubCategory.NEWLY_ADDED_EMOJI : I.EmojiSubCategory.NONE
             }
 
-            function Y(e) {
+            function W(e) {
                 let t = new Set,
                     i = e.filter(e => null == e.uniqueName || (t.has(e.optionallyDiverseSequence) ? void 0 : (t.add(e.optionallyDiverseSequence), !0)));
                 return i
             }
 
-            function W(e, t) {
-                return e === C.EmojiIntention.REACTION ? t ? S.default.Messages.SEARCH_FOR_SUPER_REACTION : S.default.Messages.SEARCH_FOR_REACTION : S.default.Messages.SEARCH_FOR_EMOJI
+            function q(e, t) {
+                return e === C.EmojiIntention.REACTION ? t ? T.default.Messages.SEARCH_FOR_SUPER_REACTION : T.default.Messages.SEARCH_FOR_REACTION : T.default.Messages.SEARCH_FOR_EMOJI
             }
         },
         577426: function(e, t, i) {
@@ -400,8 +420,8 @@
             }), i("808653");
             var n = i("716241"),
                 r = i("385976"),
-                a = i("42203"),
-                o = i("18494"),
+                o = i("42203"),
+                a = i("18494"),
                 u = i("402671"),
                 s = i("255214"),
                 l = i("352046"),
@@ -416,12 +436,12 @@
                     containerWidth: m,
                     rowSize: _,
                     isBurstReaction: f,
-                    analyticsObject: I
-                } = e, g = a.default.getChannel(o.default.getChannelId()), O = null == g ? void 0 : g.getGuildId(), C = r.default.emojiFrecencyWithoutFetchingLatest.frequently.slice(), T = null != g ? r.default.getDisambiguatedEmojiContext(g.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], p = C.slice(0, r.default.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems), S = null != O ? r.default.getGuildEmoji(O) : [], y = null !== (t = r.default.getDisambiguatedEmojiContext(null == g ? void 0 : g.getGuildId()).groupedCustomEmojis) && void 0 !== t ? t : {}, j = Object.values(y).reduce((e, t) => e += t.length, 0), {
+                    analyticsObject: g
+                } = e, I = o.default.getChannel(a.default.getChannelId()), O = null == I ? void 0 : I.getGuildId(), C = r.default.emojiFrecencyWithoutFetchingLatest.frequently.slice(), p = null != I ? r.default.getDisambiguatedEmojiContext(I.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], y = C.slice(0, r.default.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems), T = null != O ? r.default.getGuildEmoji(O) : [], S = null !== (t = r.default.getDisambiguatedEmojiContext(null == I ? void 0 : I.getGuildId()).groupedCustomEmojis) && void 0 !== t ? t : {}, j = Object.values(S).reduce((e, t) => e += t.length, 0), {
                     topEmojis: h,
                     newlyAddedEmojis: A
                 } = (0, l.getTopAndNewlyAddedEmojis)({
-                    guildId: null == g ? void 0 : g.getGuildId(),
+                    guildId: null == I ? void 0 : I.getGuildId(),
                     pickerIntention: i
                 }), {
                     visibleTopEmojis: M,
@@ -435,15 +455,15 @@
                     width: m,
                     tab: c.ExpressionPickerViewType.EMOJI,
                     badged: !1,
-                    num_expressions_favorites: T.length,
-                    num_animated_expressions_favorites: T.filter(e => null == e ? void 0 : e.animated).length,
-                    num_custom_expressions_favorites: T.filter(u.default.isCustomEmoji).length,
-                    num_standard_expressions_favorites: T.filter(e => null == e.id).length,
-                    num_expressions_frecent: p.length,
-                    num_animated_expressions_frecent: p.filter(e => null == e ? void 0 : e.animated).length,
-                    num_custom_expressions_frecent: p.filter(u.default.isCustomEmoji).length,
-                    num_standard_expressions_frecent: p.filter(e => null == e.id).length,
-                    num_current_guild_expressions: S.length,
+                    num_expressions_favorites: p.length,
+                    num_animated_expressions_favorites: p.filter(e => null == e ? void 0 : e.animated).length,
+                    num_custom_expressions_favorites: p.filter(u.default.isCustomEmoji).length,
+                    num_standard_expressions_favorites: p.filter(e => null == e.id).length,
+                    num_expressions_frecent: y.length,
+                    num_animated_expressions_frecent: y.filter(e => null == e ? void 0 : e.animated).length,
+                    num_custom_expressions_frecent: y.filter(u.default.isCustomEmoji).length,
+                    num_standard_expressions_frecent: y.filter(e => null == e.id).length,
+                    num_current_guild_expressions: T.length,
                     num_custom_expressions_total: j,
                     num_expressions_top_server: M.length,
                     num_animated_expressions_top_server: M.filter(e => e.animated).length,
@@ -452,8 +472,8 @@
                     ...i === d.EmojiIntention.REACTION && {
                         is_burst: f
                     },
-                    ...null != I && {
-                        location_object: I
+                    ...null != g && {
+                        location_object: g
                     }
                 })
             }
@@ -462,30 +482,30 @@
             "use strict";
             i.r(t), i.d(t, {
                 getEmojiHotrail: function() {
-                    return a
+                    return o
                 },
                 default: function() {
-                    return o
+                    return a
                 }
             });
             var n = i("884691"),
                 r = i("115279");
 
-            function a(e) {
+            function o(e) {
                 let {
                     topEmojis: t,
                     newlyAddedEmojis: i,
                     rowSize: n = r.EMOJI_ROW_SIZE
-                } = e, a = t.slice(0, n - i.length);
+                } = e, o = t.slice(0, n - i.length);
                 return {
-                    visibleTopEmojis: a,
+                    visibleTopEmojis: o,
                     visibleNewlyAddedEmojis: i,
-                    allEmojis: a.concat(i)
+                    allEmojis: o.concat(i)
                 }
             }
 
-            function o(e) {
-                return n.useMemo(() => a(e), [e])
+            function a(e) {
+                return n.useMemo(() => o(e), [e])
             }
         },
         352046: function(e, t, i) {
@@ -500,8 +520,8 @@
             });
             var n = i("65597"),
                 r = i("385976"),
-                a = i("958706");
-            let o = [];
+                o = i("958706");
+            let a = [];
 
             function u(e) {
                 let {
@@ -510,8 +530,8 @@
                     pickerIntention: n
                 } = e;
                 return {
-                    topEmojis: n !== a.EmojiIntention.REACTION ? t.getTopEmoji(i) : o,
-                    newlyAddedEmojis: n !== a.EmojiIntention.REACTION ? t.getNewlyAddedEmoji(i) : o
+                    topEmojis: n !== o.EmojiIntention.REACTION ? t.getTopEmoji(i) : a,
+                    newlyAddedEmojis: n !== o.EmojiIntention.REACTION ? t.getNewlyAddedEmoji(i) : a
                 }
             }
 
@@ -527,7 +547,7 @@
             "use strict";
             i.r(t), i.d(t, {
                 fetchTopEmojis: function() {
-                    return o
+                    return a
                 },
                 updateNewlyAddedLastSeen: function() {
                     return u
@@ -538,14 +558,14 @@
             });
             var n = i("872717"),
                 r = i("913144"),
-                a = i("49111");
+                o = i("49111");
 
-            function o(e) {
+            function a(e) {
                 r.default.dispatch({
                     type: "TOP_EMOJIS_FETCH",
                     guildId: e
                 }), n.default.get({
-                    url: a.Endpoints.TOP_EMOJIS_FOR_GUILD(e),
+                    url: o.Endpoints.TOP_EMOJIS_FOR_GUILD(e),
                     oldFormErrors: !0
                 }).then(t => r.default.dispatch({
                     type: "TOP_EMOJIS_FETCH_SUCCESS",
@@ -587,8 +607,8 @@
             });
             var n = i("697218"),
                 r = i("385976"),
-                a = i("26430"),
-                o = i("305781");
+                o = i("26430"),
+                a = i("305781");
 
             function u(e) {
                 if (null == e) return;
@@ -600,9 +620,9 @@
                         topEmojisTTL: e
                     } = i;
                     if (null == e || Date.now() < e) return
-                }!a.default.getIsFetching(e) && (0, o.fetchTopEmojis)(e)
+                }!o.default.getIsFetching(e) && (0, a.fetchTopEmojis)(e)
             }
         }
     }
 ]);
-//# sourceMappingURL=34426.57fd2282777b204f456d.js.map
+//# sourceMappingURL=34426.c3f6c65b3fe7f154764e.js.map

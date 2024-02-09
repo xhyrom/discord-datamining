@@ -58049,7 +58049,7 @@
                 getEmojiUrl: function() {
                     return I
                 }
-            }), n("222007"), n("781738");
+            }), n("222007"), n("781738"), n("808653"), n("424973");
             var s = n("736271"),
                 i = n("858619"),
                 r = n("153043"),
@@ -58157,6 +58157,21 @@
                         intention: s
                     });
                     return m.has(r)
+                },
+                isEmojiCategoryNitroLocked(e) {
+                    let {
+                        categoryEmojis: t,
+                        channel: n,
+                        intention: s
+                    } = e, i = t.reduce((e, t) => {
+                        let i = y({
+                            emoji: t,
+                            channel: n,
+                            intention: s
+                        });
+                        return (i === g.EmojiDisabledReasons.PREMIUM_LOCKED || i === g.EmojiDisabledReasons.GUILD_SUBSCRIPTION_UNAVAILABLE) && e.push(i), e
+                    }, []), r = i.some(e => e === g.EmojiDisabledReasons.PREMIUM_LOCKED);
+                    return r && i.length === t.length
                 },
                 isEmojiFilteredOrLocked(e) {
                     let {
@@ -61719,4 +61734,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.f1f612f4eb7865436f0a.js.map
+//# sourceMappingURL=23303.a83bc1d73447101901d6.js.map
