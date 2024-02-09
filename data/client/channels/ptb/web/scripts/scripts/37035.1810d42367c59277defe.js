@@ -5884,33 +5884,36 @@
                         h: o.canvasHeight,
                         w: o.canvasWidth
                     }, 8, !0), (null === (l = t.assets) || void 0 === l ? void 0 : l.large_image) != null ? a.drawRoundedImage(o.AssetTypes.AssetImage, {
-                        x: 0,
-                        y: 8
+                        x: o.padding,
+                        y: o.padding
                     }, {
                         w: o.activitySize,
                         h: o.activitySize
                     }, 8) : (null === (i = a.assetMap) || void 0 === i ? void 0 : i.has(o.AssetTypes.ApplicationImage)) ? a.drawRoundedImage("ApplicationImage", {
-                        x: 0,
-                        y: 8
+                        x: o.padding,
+                        y: o.padding
                     }, {
                         w: o.activitySize,
                         h: o.activitySize
                     }, 8) : (a.setColor("white"), a.drawPath(o.ACTIVITY_IMAGE_FALLBACK_PATH, {
-                        x: 0,
-                        y: 8
-                    }, !0, 2)), a.setColor("dark" === r ? "white" : "rgb(6, 6, 7)"), a.setFont({
+                        x: o.padding,
+                        y: o.padding
+                    }, !0, 2 + 2 / 3));
+                    let d = o.activitySize + o.padding + o.imagePadding;
+                    a.setColor("dark" === r ? "white" : "rgb(6, 6, 7)"), a.setFont({
                         size: 16,
-                        family: "sans-serif"
-                    }), a.drawText("".concat(n.username, " is playing"), {
-                        x: o.activitySize + o.padding,
-                        y: o.fontPadding
-                    }, !0), a.drawText("".concat(t.name), {
-                        x: o.activitySize + o.padding,
+                        family: '"gg sans", sans-serif',
+                        weight: 700
+                    }), a.drawText("".concat(t.name), {
+                        x: d,
                         y: o.fontPadding + 1 * o.lineHeight
-                    }, !0), null != t.timestamps && a.drawText("for ".concat((0, u.howLong)(t.timestamps)), {
-                        x: o.activitySize + o.padding,
+                    }, !0), null != t.timestamps && (a.setFont({
+                        size: 14,
+                        weight: 500
+                    }), a.drawText("for ".concat((0, u.howLong)(t.timestamps)), {
+                        x: d,
                         y: o.fontPadding + 2 * o.lineHeight
-                    }, !0)
+                    }, !0))
                 },
                 f = (e, t, n) => {
                     var l;
@@ -38049,4 +38052,4 @@
         }
     }
 ]);
-//# sourceMappingURL=37035.87c5b2f1f6c8782ee4cf.js.map
+//# sourceMappingURL=37035.1810d42367c59277defe.js.map
