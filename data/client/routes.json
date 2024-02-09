@@ -4698,6 +4698,8 @@
   "POLL_ANSWERS": {
     "url": "/channels/:param/polls/:param/answers/@me",
     "allowed_methods": [
+      "GET",
+      "HEAD",
       "OPTIONS",
       "PUT"
     ]
