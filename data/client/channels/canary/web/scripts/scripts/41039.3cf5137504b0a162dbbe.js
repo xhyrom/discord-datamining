@@ -28805,6 +28805,22 @@
                             canSupportSecureFrames: !0,
                             canSupportMls: !0
                         }
+                    }, {
+                        id: 6,
+                        label: "Can support secure frames above protocol version 10",
+                        config: {
+                            protocolVersionFloor: 10,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 7,
+                        label: "Can support secure frames above protocol version 110 (MLS)",
+                        config: {
+                            protocolVersionFloor: 10,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
+                        }
                     }]
                 }),
                 s = (0, i.createExperiment)({
@@ -28853,6 +28869,22 @@
                         label: "Can support secure frames above protocol version 109 (MLS)",
                         config: {
                             protocolVersionFloor: 9,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
+                        }
+                    }, {
+                        id: 6,
+                        label: "Can support secure frames above protocol version 10",
+                        config: {
+                            protocolVersionFloor: 10,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 7,
+                        label: "Can support secure frames above protocol version 110 (MLS)",
+                        config: {
+                            protocolVersionFloor: 10,
                             canSupportSecureFrames: !0,
                             canSupportMls: !0
                         }
@@ -49991,7 +50023,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "265087"
+                                build_number: "265117"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63899,4 +63931,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.304094d5f2efc832777b.js.map
+//# sourceMappingURL=41039.3cf5137504b0a162dbbe.js.map
