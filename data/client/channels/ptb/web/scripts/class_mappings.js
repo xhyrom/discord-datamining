@@ -18130,6 +18130,7 @@
                 actions: "actions__9256d",
                 activityName: "activityName__7b1c1",
                 body: "body__709f6",
+                channel: "channel_fa3b45",
                 clickableGameWrapper: "clickableGameWrapper_a7dbaa",
                 dropsBadge: "dropsBadge__2d851",
                 dropsBadgeWrapper: "dropsBadgeWrapper__9c681",

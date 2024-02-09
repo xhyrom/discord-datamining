@@ -27142,7 +27142,7 @@
                     type: "EMBEDDED_ACTIVITY_INSTANCE_CHANGE",
                     channelId: i,
                     instanceId: l
-                })), null != A && !f.some(e => e === I) && Array.from(A.userIds).some(e => e === I) && (S.get(i) === a ? S.delete(i) : y.delete(a));
+                })), null != A && i === A.channelId && !f.some(e => e === I) && Array.from(A.userIds).some(e => e === I) && (S.get(i) === a ? S.delete(i) : y.delete(a));
                 let D = null !== (t = C.get(i)) && void 0 !== t ? t : [],
                     N = D.filter(e => e.applicationId !== a),
                     O = M(s),
@@ -61795,4 +61795,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.11fd142a04f3af3f58b9.js.map
+//# sourceMappingURL=23356.ce4fb05891051d5853af.js.map
