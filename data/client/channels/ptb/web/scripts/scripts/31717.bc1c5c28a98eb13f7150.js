@@ -50,8 +50,8 @@
                 H = n("42203");
             n("836417");
             var K = n("337543"),
-                Y = n("377253"),
-                W = n("957255"),
+                W = n("377253"),
+                Y = n("957255"),
                 j = n("824563"),
                 J = n("660478"),
                 z = n("18494"),
@@ -258,7 +258,7 @@
                         let n = {
                             present: !0
                         };
-                        Y.default.hasPresent(e) ? r.default.dispatch({
+                        W.default.hasPresent(e) ? r.default.dispatch({
                             type: "LOAD_MESSAGES_SUCCESS_CACHED",
                             jump: n,
                             channelId: e,
@@ -463,7 +463,7 @@
                             jump: s,
                             focus: i,
                             truncate: d
-                        } = e, u = Y.default.getMessages(t);
+                        } = e, u = W.default.getMessages(t);
                         if (u.cached || !u.ready) return !1;
                         if ((null == s ? void 0 : s.messageId) != null || (null == i ? void 0 : i.messageId) != null) {
                             if ((null == s ? void 0 : s.messageId) != null && u.has(s.messageId, !1)) return r.default.dispatch({
@@ -525,8 +525,8 @@
                         return (l = {
                             ...l,
                             nonce: d
-                        }, L.default.recordMessageSendAttempt(e, d), Y.default.isReady(e)) ? r() : a && e !== er.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID ? (ec.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
-                            Y.default.whenReady(e, () => {
+                        }, L.default.recordMessageSendAttempt(e, d), W.default.isReady(e)) ? r() : a && e !== er.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID ? (ec.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+                            W.default.whenReady(e, () => {
                                 ec.info("Channel ".concat(e, " is ready for sending now.")), r().then(t, n)
                             })
                         })) : r()
@@ -558,15 +558,6 @@
                         suggestedInvite: null != a ? a : void 0
                     }),
                     sendActivityBookmark: (e, t, n, a) => eh._sendMessage(e, {
-                        content: t,
-                        tts: !1,
-                        validNonShortcutEmojis: [],
-                        invalidEmojis: []
-                    }, {
-                        location: n,
-                        suggestedInvite: null != a ? a : void 0
-                    }),
-                    sendClydeProfileOverride: (e, t, n, a) => eh._sendMessage(e, {
                         content: t,
                         tts: !1,
                         validNonShortcutEmojis: [],
@@ -670,7 +661,7 @@
                             let t, n;
                             eE = !0;
                             let a = Q.default.getCurrentUser();
-                            c.some(e => e.animated) && !ea.default.canUseAnimatedEmojis(a) ? (t = eu.default.Messages.INVALID_ANIMATED_EMOJI_BODY_UPGRADE, n = "INVALID_ANIMATED_EMOJI_BODY") : W.default.canWithPartialContext(ei.Permissions.USE_EXTERNAL_EMOJIS, {
+                            c.some(e => e.animated) && !ea.default.canUseAnimatedEmojis(a) ? (t = eu.default.Messages.INVALID_ANIMATED_EMOJI_BODY_UPGRADE, n = "INVALID_ANIMATED_EMOJI_BODY") : Y.default.canWithPartialContext(ei.Permissions.USE_EXTERNAL_EMOJIS, {
                                 channelId: e
                             }) ? (t = eu.default.Messages.INVALID_EXTERNAL_EMOJI_BODY_UPGRADE, n = "INVALID_EXTERNAL_EMOJI_BODY_UPGRADE") : (t = eu.default.Messages.INVALID_EXTERNAL_EMOJI_BODY, n = "INVALID_EXTERNAL_EMOJI_BODY"), eh.sendBotMessage(e, t, n)
                         }
@@ -766,7 +757,6 @@
                                         else if (t === _.CodedLinkType.EMBEDDED_ACTIVITY_INVITE);
                                         else if (t === _.CodedLinkType.GUILD_PRODUCT);
                                         else if (t === _.CodedLinkType.SERVER_SHOP);
-                                        else if (t === _.CodedLinkType.CLYDE_PROFILE);
                                         else throw Error("Unknown coded link type: ".concat(t))
                                     })
                                 }({
@@ -817,10 +807,6 @@
                                             }
                                         }) : u.body.code === ei.AbortCodes.POGGERMODE_TEMPORARILY_DISABLED ? r.default.dispatch({
                                             type: "POGGERMODE_TEMPORARILY_DISABLED"
-                                        }) : u.body.code === ei.AbortCodes.CLYDE_CONSENT_REQUIRED ? r.default.dispatch({
-                                            type: "MESSAGE_FAILED_CLYDE_CONSENT",
-                                            messageId: F,
-                                            channelId: e
                                         }) : null != C || eh.sendClydeError(e, u.body.code)
                                     }
                                     t ? eh.deleteMessage(e, F, !0) : (r.default.dispatch({
@@ -865,7 +851,7 @@
                         } = n;
                         await B.default.unarchiveThreadIfNecessary(e);
                         let l = function(e, t) {
-                                let n = Y.default.getMessage(e, t);
+                                let n = W.default.getMessage(e, t);
                                 if (null == n || n.type !== ei.MessageTypes.REPLY) return;
                                 let a = P.default.getMessageByReference(n.messageReference);
                                 if (a.state === P.ReferencedMessageState.LOADED) {
@@ -941,7 +927,7 @@
                         }).then(() => {
                             a()
                         }));
-                        let l = Y.default.getMessage(e, t);
+                        let l = W.default.getMessage(e, t);
                         (null == l ? void 0 : l.type) === ei.MessageTypes.GUILD_INVITE_REMINDER && (0, N.trackGuildInviteNotificationDismissed)()
                     },
                     dismissAutomatedMessage(e) {
@@ -3279,4 +3265,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.0a0e31f5be65b10ca0d9.js.map
+//# sourceMappingURL=31717.bc1c5c28a98eb13f7150.js.map

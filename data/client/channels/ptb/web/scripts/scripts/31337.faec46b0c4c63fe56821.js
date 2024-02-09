@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["59536"], {
+    ["31337"], {
         926001: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -482,63 +482,63 @@
                 v = n("305961"),
                 A = n("585722"),
                 E = n("697218"),
-                y = n("254490"),
-                I = n("449008"),
-                T = n("980134"),
+                I = n("254490"),
+                T = n("449008"),
+                y = n("980134"),
                 M = n("507217"),
                 O = n("246598"),
                 N = n("118200"),
-                x = n("240249"),
-                S = n("524768"),
+                S = n("240249"),
+                x = n("524768"),
                 L = n("389153"),
-                b = n("317041"),
-                U = n("49111"),
+                U = n("317041"),
+                b = n("49111"),
                 P = n("894488"),
                 R = n("782340");
-            let D = (e, t) => {
+            let w = (e, t) => {
                     var n;
                     return null == e ? void 0 : null === (n = e.find(e => e.displayName === t)) || void 0 === n ? void 0 : n.value
                 },
-                w = function(e, t, n) {
+                D = function(e, t, n) {
                     var l, i;
                     let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : e => e,
                         a = e.name === (null === (l = n.autocomplete) || void 0 === l ? void 0 : l.name);
                     if (a) return n.autocomplete.query;
                     if ("" === t) return null;
                     let r = O.default.getAutocompleteLastChoices(n.channel.id, e.name);
-                    return null != r ? null !== (i = D(r, t)) && void 0 !== i ? i : o(t) : o(t)
+                    return null != r ? null !== (i = w(r, t)) && void 0 !== i ? i : o(t) : o(t)
                 },
                 k = e => {
-                    let t = e.toLowerCase() === b.TRUE_OPTION_NAME.toLowerCase(),
-                        n = e.toLowerCase() === b.FALSE_OPTION_NAME.toLowerCase();
+                    let t = e.toLowerCase() === U.TRUE_OPTION_NAME.toLowerCase(),
+                        n = e.toLowerCase() === U.FALSE_OPTION_NAME.toLowerCase();
                     return t || n ? t : null
                 };
             async function F(e) {
-                var t, n, l, a, u, c, m, f, h, g, v, E, y, I, T;
+                var t, n, l, a, u, c, m, f, h, g, v, E, I, T, y;
                 let {
                     command: O,
-                    optionValues: x,
-                    context: b,
+                    optionValues: S,
+                    context: U,
                     commandTargetId: P,
                     maxSizeCallback: R,
-                    commandOrigin: F = S.CommandOrigin.CHAT
+                    commandOrigin: F = x.CommandOrigin.CHAT
                 } = e;
-                null == b.autocomplete && o.default.dispatch({
+                null == U.autocomplete && o.default.dispatch({
                     type: "APPLICATION_COMMAND_USED",
-                    context: b,
+                    context: U,
                     command: O
-                }), await _.default.unarchiveThreadIfNecessary(b.channel.id);
+                }), await _.default.unarchiveThreadIfNecessary(U.channel.id);
                 let z = [],
-                    G = [],
-                    H = (0, L.getCommandAttachmentDraftType)(F);
+                    H = [],
+                    G = (0, L.getCommandAttachmentDraftType)(F);
                 if (null != O.options)
                     for (let e of O.options) {
-                        if (e.type === s.ApplicationCommandOptionType.SUB_COMMAND || e.type === s.ApplicationCommandOptionType.SUB_COMMAND_GROUP || !(e.name in x)) continue;
-                        let t = (null === (l = b.autocomplete) || void 0 === l ? void 0 : l.name) === e.name || void 0,
+                        if (e.type === s.ApplicationCommandOptionType.SUB_COMMAND || e.type === s.ApplicationCommandOptionType.SUB_COMMAND_GROUP || !(e.name in S)) continue;
+                        let t = (null === (l = U.autocomplete) || void 0 === l ? void 0 : l.name) === e.name || void 0,
                             n = null;
                         if (e.type === s.ApplicationCommandOptionType.STRING) {
-                            let l = null !== (u = null === (a = N.getOptionalString(x, e.name)) || void 0 === a ? void 0 : a.trim()) && void 0 !== u ? u : "";
-                            n = null != e.choices ? D(e.choices, l) : e.autocomplete ? w(e, l, b) : l, i(null != b.autocomplete || null != n, 'Option "'.concat(e.name, '" expects a value')), null != n && z.push({
+                            let l = null !== (u = null === (a = N.getOptionalString(S, e.name)) || void 0 === a ? void 0 : a.trim()) && void 0 !== u ? u : "";
+                            n = null != e.choices ? w(e.choices, l) : e.autocomplete ? D(e, l, U) : l, i(null != U.autocomplete || null != n, 'Option "'.concat(e.name, '" expects a value')), null != n && z.push({
                                 type: e.type,
                                 name: e.name,
                                 value: n,
@@ -547,11 +547,11 @@
                             continue
                         }
                         if (e.type === s.ApplicationCommandOptionType.ATTACHMENT) {
-                            if (null != b.autocomplete) continue;
-                            let l = A.default.getUpload(b.channel.id, e.name, H);
+                            if (null != U.autocomplete) continue;
+                            let l = A.default.getUpload(U.channel.id, e.name, G);
                             if (null == l) continue;
-                            let i = A.default.getUploads(b.channel.id, H).findIndex(e => l.id === e.id);
-                            G.push(l), n = i, z.push({
+                            let i = A.default.getUploads(U.channel.id, G).findIndex(e => l.id === e.id);
+                            H.push(l), n = i, z.push({
                                 type: e.type,
                                 name: e.name,
                                 value: n,
@@ -559,8 +559,8 @@
                             });
                             continue
                         }
-                        let o = N.filterEmpty(x[e.name]);
-                        if (i(null != b.autocomplete || 1 === o.length, 'Option "'.concat(e.name, '" expects a single option type')), null == o[0] && !t) continue;
+                        let o = N.filterEmpty(S[e.name]);
+                        if (i(null != U.autocomplete || 1 === o.length, 'Option "'.concat(e.name, '" expects a single option type')), null == o[0] && !t) continue;
                         let r = null !== (c = o[0]) && void 0 !== c ? c : {
                             type: "text",
                             text: ""
@@ -571,7 +571,7 @@
                                 else if ("text" === r.type) {
                                     if ((0, L.isSnowflake)(r.text)) n = r.text.trim();
                                     else {
-                                        let e = (0, p.resolveApplicationCommandOption)(r.text, null === (m = b.guild) || void 0 === m ? void 0 : m.id, b.channel.id);
+                                        let e = (0, p.resolveApplicationCommandOption)(r.text, null === (m = U.guild) || void 0 === m ? void 0 : m.id, U.channel.id);
                                         i((null == e ? void 0 : e.type) === "channelMention", "Failed to resolve ".concat(r.text)), n = e.channelId
                                     }
                                 }
@@ -581,19 +581,19 @@
                                 else if ("text" === r.type) {
                                     if ((0, L.isSnowflake)(r.text)) n = r.text.trim();
                                     else {
-                                        let e = (0, p.resolveApplicationCommandOption)(r.text, null === (f = b.guild) || void 0 === f ? void 0 : f.id, b.channel.id, {
+                                        let e = (0, p.resolveApplicationCommandOption)(r.text, null === (f = U.guild) || void 0 === f ? void 0 : f.id, U.channel.id, {
                                             allowUsers: !1
                                         });
                                         i((null == e ? void 0 : e.type) === "roleMention", "Failed to resolve ".concat(r.text)), n = e.roleId
                                     }
-                                } else "textMention" === r.type && "@everyone" === r.text && (n = null === (h = b.guild) || void 0 === h ? void 0 : h.id);
+                                } else "textMention" === r.type && "@everyone" === r.text && (n = null === (h = U.guild) || void 0 === h ? void 0 : h.id);
                                 break;
                             case s.ApplicationCommandOptionType.USER:
                                 if ("userMention" === r.type) n = r.userId;
                                 else if ("text" === r.type) {
                                     if ((0, L.isSnowflake)(r.text)) n = r.text.trim();
                                     else {
-                                        let e = (0, p.resolveApplicationCommandOption)(r.text, null === (g = b.guild) || void 0 === g ? void 0 : g.id, b.channel.id, {
+                                        let e = (0, p.resolveApplicationCommandOption)(r.text, null === (g = U.guild) || void 0 === g ? void 0 : g.id, U.channel.id, {
                                             allowRoles: !1
                                         });
                                         i((null == e ? void 0 : e.type) === "userMention", "Failed to resolve ".concat(r.text)), n = e.userId
@@ -603,12 +603,12 @@
                             case s.ApplicationCommandOptionType.MENTIONABLE:
                                 if ("userMention" === r.type) n = r.userId;
                                 else if ("roleMention" === r.type) n = r.roleId;
-                                else if ("textMention" === r.type && "@everyone" === r.text) n = null === (v = b.guild) || void 0 === v ? void 0 : v.id;
+                                else if ("textMention" === r.type && "@everyone" === r.text) n = null === (v = U.guild) || void 0 === v ? void 0 : v.id;
                                 else if ("text" === r.type) {
                                     if ((0, L.isSnowflake)(r.text)) n = r.text.trim();
                                     else {
-                                        let e = (0, p.resolveApplicationCommandOption)(r.text, null === (E = b.guild) || void 0 === E ? void 0 : E.id, b.channel.id);
-                                        (null == e ? void 0 : e.type) === "userMention" ? n = e.userId: (null == e ? void 0 : e.type) === "roleMention" ? n = e.roleId : (null == e ? void 0 : e.type) === "textMention" && "@everyone" === e.text ? n = null === (y = b.guild) || void 0 === y ? void 0 : y.id : i(!1, "Failed to resolve ".concat(r.text))
+                                        let e = (0, p.resolveApplicationCommandOption)(r.text, null === (E = U.guild) || void 0 === E ? void 0 : E.id, U.channel.id);
+                                        (null == e ? void 0 : e.type) === "userMention" ? n = e.userId: (null == e ? void 0 : e.type) === "roleMention" ? n = e.roleId : (null == e ? void 0 : e.type) === "textMention" && "@everyone" === e.text ? n = null === (I = U.guild) || void 0 === I ? void 0 : I.id : i(!1, "Failed to resolve ".concat(r.text))
                                     }
                                 }
                                 break;
@@ -618,20 +618,20 @@
                             case s.ApplicationCommandOptionType.INTEGER:
                                 if ("text" === r.type) {
                                     let t = r.text.trim();
-                                    n = null != e.choices ? Number(D(e.choices, t)) : e.autocomplete ? w(e, t, b, Number) : Number(N.normalizeNumericString(C.default.locale, t))
+                                    n = null != e.choices ? Number(w(e.choices, t)) : e.autocomplete ? D(e, t, U, Number) : Number(N.normalizeNumericString(C.default.locale, t))
                                 }
                                 break;
                             case s.ApplicationCommandOptionType.NUMBER:
                                 if ("text" === r.type) {
                                     let t = r.text.trim();
-                                    n = null != e.choices ? Number(D(e.choices, t)) : e.autocomplete ? w(e, t, b, Number) : Number(N.normalizeNumericString(C.default.locale, t))
+                                    n = null != e.choices ? Number(w(e.choices, t)) : e.autocomplete ? D(e, t, U, Number) : Number(N.normalizeNumericString(C.default.locale, t))
                                 }
                                 break;
                             default:
                                 i(!1, "Unsupported option type: ".concat(e.type));
                                 continue
                         }
-                        i(null != b.autocomplete || null != n, 'Unexpected value for option "'.concat(e.name, '"')), null != n && z.push({
+                        i(null != U.autocomplete || null != n, 'Unexpected value for option "'.concat(e.name, '"')), null != n && z.push({
                             type: e.type,
                             name: e.name,
                             value: n,
@@ -650,39 +650,39 @@
                             options: z
                         }]
                     }
-                if (null != O.execute) return d.default.trackWithMetadata(U.AnalyticEvents.APPLICATION_COMMAND_USED, {
+                if (null != O.execute) return d.default.trackWithMetadata(b.AnalyticEvents.APPLICATION_COMMAND_USED, {
                     command_id: O.id,
                     application_id: O.applicationId,
                     command_type: O.type,
-                    location: F === S.CommandOrigin.APPLICATION_LAUNCHER ? S.ApplicationCommandTriggerLocations.APP_LAUNCHER : S.ApplicationCommandTriggerLocations.SLASH_UI
-                }), O.execute(z, b);
-                if (O.inputType === S.ApplicationCommandInputType.BUILT_IN || O.inputType === S.ApplicationCommandInputType.BUILT_IN_TEXT || O.inputType === S.ApplicationCommandInputType.BUILT_IN_INTEGRATION) return;
+                    location: F === x.CommandOrigin.APPLICATION_LAUNCHER ? x.ApplicationCommandTriggerLocations.APP_LAUNCHER : x.ApplicationCommandTriggerLocations.SLASH_UI
+                }), O.execute(z, U);
+                if (O.inputType === x.ApplicationCommandInputType.BUILT_IN || O.inputType === x.ApplicationCommandInputType.BUILT_IN_TEXT || O.inputType === x.ApplicationCommandInputType.BUILT_IN_INTEGRATION) return;
                 let V = {
                     version: O.version,
-                    id: null !== (I = null === (t = O.rootCommand) || void 0 === t ? void 0 : t.id) && void 0 !== I ? I : O.id,
+                    id: null !== (T = null === (t = O.rootCommand) || void 0 === t ? void 0 : t.id) && void 0 !== T ? T : O.id,
                     guild_id: O.guildId,
-                    name: null !== (T = null === (n = O.rootCommand) || void 0 === n ? void 0 : n.name) && void 0 !== T ? T : O.name,
+                    name: null !== (y = null === (n = O.rootCommand) || void 0 === n ? void 0 : n.name) && void 0 !== y ? y : O.name,
                     type: O.type,
                     options: z,
                     application_command: O.rootCommand
                 };
-                null != P && (V.target_id = P), null != b.autocomplete ? (0, M.performAutocomplete)(O, b, V) : (r.default.clearAll(b.channel.id, H), B({
+                null != P && (V.target_id = P), null != U.autocomplete ? (0, M.performAutocomplete)(O, U, V) : (r.default.clearAll(U.channel.id, G), B({
                     applicationId: O.applicationId,
                     data: V,
-                    context: b,
-                    attachments: G,
+                    context: U,
+                    attachments: H,
                     maxSizeCallback: R,
                     onMessageSuccess: () => {
-                        j(x)
+                        j(S)
                     },
                     commandDisplayName: O.displayName,
-                    analytics_location: F === S.CommandOrigin.APPLICATION_LAUNCHER ? S.ApplicationCommandTriggerLocations.APP_LAUNCHER : S.ApplicationCommandTriggerLocations.SLASH_UI
+                    analytics_location: F === x.CommandOrigin.APPLICATION_LAUNCHER ? x.ApplicationCommandTriggerLocations.APP_LAUNCHER : x.ApplicationCommandTriggerLocations.SLASH_UI
                 }))
             }
             let j = e => {
                     let t = Object.values(e).flatMap(e => e.map(e => "emoji" === e.type ? {
                         name: e.name.replaceAll(":", "")
-                    } : "customEmoji" === e.type ? m.default.getCustomEmojiById(e.emojiId) : null).filter(I.isNotNullish));
+                    } : "customEmoji" === e.type ? m.default.getCustomEmojiById(e.emojiId) : null).filter(T.isNotNullish));
                     t.length > 0 && o.default.dispatch({
                         type: "EMOJI_TRACK_USAGE",
                         emojiUsed: t
@@ -715,7 +715,7 @@
                         channel: p,
                         guild: m
                     } = l, h = p.id, _ = null == m ? void 0 : m.id, [C, v] = function(e, t, n) {
-                        let l = x.getCachedApplicationSection(e.channel, n, t);
+                        let l = S.getCachedApplicationSection(e.channel, n, t);
                         if (null != l) {
                             var i, a, r;
                             let e = null !== (a = null === (i = l.application) || void 0 === i ? void 0 : i.bot) && void 0 !== a ? a : {
@@ -731,7 +731,7 @@
                             }), [e, null !== (r = l.application) && void 0 !== r ? r : null]
                         }
                         return [null, null]
-                    }(l, t, n.type), A = n.type === s.ApplicationCommandType.CHAT ? U.MessageTypes.CHAT_INPUT_COMMAND : U.MessageTypes.CONTEXT_MENU_COMMAND, y = (0, g.default)({
+                    }(l, t, n.type), A = n.type === s.ApplicationCommandType.CHAT ? b.MessageTypes.CHAT_INPUT_COMMAND : b.MessageTypes.CONTEXT_MENU_COMMAND, I = (0, g.default)({
                         channelId: h,
                         content: "",
                         tts: !1,
@@ -740,49 +740,49 @@
                         allowedMentions: void 0,
                         author: null != C ? C : void 0
                     });
-                    y.application = null != v ? v : void 0, y.interaction = {
+                    I.application = null != v ? v : void 0, I.interaction = {
                         id: n.id,
                         name: n.name,
                         name_localized: c,
                         type: s.InteractionTypes.APPLICATION_COMMAND,
                         user: (0, g.userRecordToServer)(E.default.getCurrentUser())
-                    }, y.interaction_data = n;
-                    let I = {
+                    }, I.interaction_data = n;
+                    let T = {
                             applicationId: t,
                             channelId: h,
                             guildId: _,
                             data: n,
-                            nonce: y.id,
+                            nonce: I.id,
                             attachments: i,
                             maxSizeCallback: r,
                             analytics_location: d
                         },
-                        T = (e, t) => {
+                        y = (e, t) => {
                             null == t && null != e && a.default.sendClydeError(h, e), o.default.dispatch({
                                 type: "MESSAGE_SEND_FAILED",
-                                messageId: y.id,
+                                messageId: I.id,
                                 channelId: h,
                                 reason: t
                             })
                         };
-                    a.default.receiveMessage(h, y, !0, {
+                    a.default.receiveMessage(h, I, !0, {
                         applicationId: t
-                    }), f.addQueued(I.nonce, {
-                        messageId: y.id,
+                    }), f.addQueued(T.nonce, {
+                        messageId: I.id,
                         onCreate: e => {
-                            null != y.interaction && (y.interaction.id = e)
+                            null != I.interaction && (I.interaction.id = e)
                         },
-                        onFailure: (e, t) => T(e, t),
+                        onFailure: (e, t) => y(e, t),
                         data: {
                             interactionType: s.InteractionTypes.APPLICATION_COMMAND,
                             channelId: h
                         }
-                    }), null != i ? V(i, I.nonce, _, r).then(e => {
-                        e && G(I, u)
-                    }) : G(I, u)
+                    }), null != i ? V(i, T.nonce, _, r).then(e => {
+                        e && H(T, u)
+                    }) : H(T, u)
                 };
 
-            function G(e, t) {
+            function H(e, t) {
                 u.default.enqueue({
                     type: u.MessageDataType.COMMAND,
                     message: e
@@ -791,7 +791,7 @@
                     (0, h.handleInteractionResponse)(e.nonce, e.channelId, null !== (l = e.guildId) && void 0 !== l ? l : null, n), n.ok && null != t && t()
                 })
             }
-            async function H(e, t) {
+            async function G(e, t) {
                 let n = 0,
                     l = 0;
                 for (let o of e) {
@@ -805,17 +805,17 @@
                 }
             }
             async function V(e, t, n, l) {
-                let i = (0, y.maxFileSize)(n),
+                let i = (0, I.maxFileSize)(n),
                     o = e => {
-                        null == l || l(i, e), f.setFailed(t, U.AbortCodes.ENTITY_TOO_LARGE, R.default.Messages.UPLOAD_AREA_TOO_LARGE_HELP.format({
-                            maxSize: (0, y.sizeString)(i)
+                        null == l || l(i, e), f.setFailed(t, b.AbortCodes.ENTITY_TOO_LARGE, R.default.Messages.UPLOAD_AREA_TOO_LARGE_HELP.format({
+                            maxSize: (0, I.sizeString)(i)
                         }))
                     },
                     {
                         totalSize: a,
                         largestUploadedFileSize: r
-                    } = await H(e, !1);
-                if (r > Math.max(i, P.DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE) || a > T.MAX_TOTAL_ATTACHMENT_SIZE) return o(r), !1;
+                    } = await G(e, !1);
+                if (r > Math.max(i, P.DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE) || a > y.MAX_TOTAL_ATTACHMENT_SIZE) return o(r), !1;
                 try {
                     await (0, c.stageAttachmentFiles)(e)
                 } catch {
@@ -825,9 +825,9 @@
                 }({
                     totalSize: a,
                     largestUploadedFileSize: r
-                } = await H(e, !0));
-                let s = e.some(e => e.error === U.AbortCodes.ENTITY_TOO_LARGE);
-                return !s && !(a > T.MAX_TOTAL_ATTACHMENT_SIZE) || (o(r), !1)
+                } = await G(e, !0));
+                let s = e.some(e => e.error === b.AbortCodes.ENTITY_TOO_LARGE);
+                return !s && !(a > y.MAX_TOTAL_ATTACHMENT_SIZE) || (o(r), !1)
             }
         },
         991630: function(e, t, n) {
@@ -860,11 +860,11 @@
                     onMouseOver: _,
                     onMouseLeave: C,
                     ...v
-                } = e, [A, E] = i.useState(!1), y = i.useCallback(() => {
+                } = e, [A, E] = i.useState(!1), I = i.useCallback(() => {
                     E(!0), null == h || h()
-                }, [h]), I = i.useCallback(() => {
+                }, [h]), T = i.useCallback(() => {
                     E(!1), null == g || g()
-                }, [g]), T = i.useCallback(() => {
+                }, [g]), y = i.useCallback(() => {
                     E(!0), null == _ || _()
                 }, [_]), M = i.useCallback(() => {
                     E(!1), null == C || C()
@@ -887,9 +887,9 @@
                         [c.selectable]: f,
                         [c.selected]: f && n
                     }),
-                    onFocus: y,
-                    onBlur: I,
-                    onMouseOver: T,
+                    onFocus: I,
+                    onBlur: T,
+                    onMouseOver: y,
                     onMouseLeave: M,
                     children: (0, l.jsx)(r.default, {
                         className: c.mask,
@@ -1166,44 +1166,6 @@
                 return null != l && (n === h.CLYDE_AI_USER_ID && "clyde" === e.toLowerCase() || l.username === e && l.discriminator === (null != t ? t : "0"))
             }
         },
-        888355: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useIsDMsToClydeEnabled: function() {
-                    return s
-                }
-            });
-            var l = n("446674"),
-                i = n("862205"),
-                o = n("305961"),
-                a = n("980215");
-            let r = (0, i.createExperiment)({
-                kind: "user",
-                id: "2023-05_clyde_ai_dm",
-                label: "DMs to Clyde",
-                defaultConfig: {
-                    isDMsToClydeEnabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "enable dms to clyde",
-                    config: {
-                        isDMsToClydeEnabled: !0
-                    }
-                }]
-            });
-
-            function s() {
-                let {
-                    isDMsToClydeEnabled: e
-                } = r.useExperiment({
-                    location: "dbd3ac_1"
-                }, {
-                    autoTrackExposure: !1
-                }), t = (0, l.useStateFromStoresArray)([o.default], () => o.default.getGuildIds()), n = t.some(e => (0, a.getClydeExperimentEnabled)(o.default.getGuild(e)));
-                return e && n
-            }
-        },
         83910: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1318,4 +1280,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59536.9ed4bc82057583e6065d.js.map
+//# sourceMappingURL=31337.faec46b0c4c63fe56821.js.map

@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["50572"], {
+    ["15046"], {
         53708: function(e, t, n) {
             "use strict";
             e.exports = n.p + "f6c7b8245d3a54cf98b2.png"
@@ -598,12 +598,12 @@
                     subscriptionTier: N,
                     trialId: T,
                     postSuccessGuild: L,
-                    openInvoiceId: R,
-                    applicationId: w,
+                    openInvoiceId: w,
+                    applicationId: R,
                     referralTrialOfferId: x,
-                    giftRecipient: P,
-                    returnRef: b,
-                    subscription: M
+                    giftRecipient: M,
+                    returnRef: P,
+                    subscription: b
                 } = null != e ? e : {}, O = !1, U = (0, r.v4)(), F = u.default.getCurrentUser(), H = (0, f.isPremiumExactly)(F, C.PremiumTypes.TIER_2);
                 (0, l.openModalLazy)(async () => {
                     let {
@@ -621,7 +621,7 @@
                             skuId: N,
                             isGift: y,
                             giftMessage: A,
-                            giftRecipient: P,
+                            giftRecipient: M,
                             initialPlanId: t,
                             followupSKUInfo: p,
                             onClose: (e, t) => {
@@ -638,11 +638,11 @@
                             trialId: T,
                             postSuccessGuild: L,
                             planGroup: C.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
-                            openInvoiceId: R,
-                            applicationId: w,
+                            openInvoiceId: w,
+                            applicationId: R,
                             referralTrialOfferId: x,
-                            returnRef: b,
-                            subscription: M
+                            returnRef: P,
+                            subscription: b
                         })
                     }
                 }, {
@@ -656,7 +656,7 @@
                             subscription_type: h.SubscriptionTypes.PREMIUM,
                             is_gift: y,
                             eligible_for_trial: null != T,
-                            application_id: w,
+                            application_id: R,
                             location_stack: S
                         }), (0, s.clearError)(), (0, a.clearPurchaseTokenAuthState)(), null == v || v(O), O && (null == I || I())
                     }
@@ -757,7 +757,7 @@
                     return L
                 },
                 favoriteSticker: function() {
-                    return w
+                    return R
                 },
                 unfavoriteSticker: function() {
                     return x
@@ -879,12 +879,12 @@
                 })
             }
 
-            function R(e) {
+            function w(e) {
                 return f.default.totalUnavailableGuilds > 0 || !o.default.isConnected() ? e : e.filter(e => null != p.default.getStickerById(e))
             }
 
-            function w(e) {
-                c.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => (t.stickerIds = R(t.stickerIds), r.size(t.stickerIds) >= E.MAX_FAVORITES) ? (a.default.show({
+            function R(e) {
+                c.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => (t.stickerIds = w(t.stickerIds), r.size(t.stickerIds) >= E.MAX_FAVORITES) ? (a.default.show({
                     title: I.default.Messages.FAVORITES_LIMIT_REACHED_TITLE,
                     body: I.default.Messages.FAVORITES_LIMIT_REACHED_BODY.format({
                         count: E.MAX_FAVORITES
@@ -894,7 +894,7 @@
 
             function x(e) {
                 c.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => {
-                    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = R(t.stickerIds)
+                    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = w(t.stickerIds)
                 }, E.UserSettingsDelay.INFREQUENT_USER_ACTION)
             }
         },
@@ -1023,44 +1023,6 @@
                     })]
                 })
             }
-        },
-        37785: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return o
-                }
-            });
-            var i = n("37983"),
-                r = n("884691"),
-                l = n("77078"),
-                s = n("393414"),
-                a = n("49111"),
-                o = r.forwardRef(function(e, t) {
-                    let {
-                        href: n,
-                        children: o,
-                        onClick: u,
-                        onKeyPress: c,
-                        focusProps: d,
-                        ...f
-                    } = e, h = r.useCallback(e => {
-                        !e.repeat && ((e.charCode === a.KeyboardKeys.SPACE || e.charCode === a.KeyboardKeys.ENTER) && (e.preventDefault(), null != n && (0, s.transitionTo)(n), null == u || u()), null == c || c(e))
-                    }, [n, c, u]), C = r.useCallback(e => {
-                        !e.metaKey && !e.shiftKey && 0 === e.button && (e.preventDefault(), e.stopPropagation(), null != n && (0, s.transitionTo)(n), null == u || u())
-                    }, [n, u]), p = (0, i.jsx)("a", {
-                        ref: t,
-                        href: n,
-                        onClick: C,
-                        onKeyPress: h,
-                        ...f,
-                        children: o
-                    });
-                    return (0, i.jsx)(l.FocusRing, {
-                        ...d,
-                        children: p
-                    })
-                })
         },
         181114: function(e, t, n) {
             "use strict";
@@ -2168,4 +2130,4 @@
         }
     }
 ]);
-//# sourceMappingURL=50572.33ec4e2d893338f331d5.js.map
+//# sourceMappingURL=15046.e3cf09e46be7af978605.js.map
