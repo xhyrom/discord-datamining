@@ -1354,6 +1354,7 @@
                     STAGE_INSTANCES_EXTRA: "/stage-instances/extra",
                     STAGE_INSTANCE: _ => "/stage-instances/".concat(_),
                     USER_SURVEY: "/users/@me/survey",
+                    USER_SURVEY_SEEN: _ => "/users/@me/survey/".concat(_, "/seen"),
                     GUILD_EVENTS: "/guild-events",
                     GUILD_EVENT: (_, E) => "/guilds/".concat(_, "/scheduled-events/").concat(E),
                     GUILD_EVENT_IMAGE: (_, E, I) => "/guild-events/".concat(_, "/images/").concat(E, ".").concat(I),
@@ -13732,4 +13733,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.4911754bdac63930073c.js.map
+//# sourceMappingURL=7273.a021413b7f3474662d42.js.map
