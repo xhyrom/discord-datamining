@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["35170"], {
+    ["96412"], {
         110126: function(e, t, n) {
             var l = {
                 "./spritesheet--32.png": "588202",
@@ -5897,7 +5897,7 @@
                     }, !0, 2 + 2 / 3));
                     let c = o.activitySize + o.padding + o.imagePadding;
                     s.setColor("dark" === d ? "white" : "rgb(6, 6, 7)"), s.setFont({
-                        size: 16,
+                        size: 14,
                         family: '"gg sans", sans-serif',
                         weight: 700
                     }), s.drawText("".concat(t.name), {
@@ -5905,7 +5905,7 @@
                         y: o.fontPadding + 1 * o.lineHeight
                     }, !0, (null === (a = s.assetMap) || void 0 === a ? void 0 : a.has(o.AssetTypes.Platform)) ? o.titleMaxWidthPlatform : o.titleMaxWidthNoPlatform), null != t.timestamps && (s.setFont({
                         size: 14,
-                        weight: 500
+                        weight: 400
                     }), s.drawText("for ".concat((0, u.howLong)(t.timestamps)), {
                         x: c,
                         y: o.fontPadding + 2 * o.lineHeight
@@ -5943,7 +5943,7 @@
                     }, 8);
                     let d = o.activitySize + o.padding + o.imagePadding;
                     a.setColor("dark" === r ? "white" : "rgb(6, 6, 7)"), a.setFont({
-                        size: 16,
+                        size: 14,
                         family: '"gg sans", sans-serif',
                         weight: 700
                     }), a.drawText("".concat(t.details), {
@@ -5951,7 +5951,7 @@
                         y: o.fontPadding + 1 * o.lineHeight
                     }, !0, (null === (i = a.assetMap) || void 0 === i ? void 0 : i.has(o.AssetTypes.Platform)) ? o.titleMaxWidthPlatform : o.titleMaxWidthNoPlatform), a.setFont({
                         size: 14,
-                        weight: 500
+                        weight: 400
                     }), a.drawText("by ".concat(t.state), {
                         x: d,
                         y: o.fontPadding + 2 * o.lineHeight
@@ -5992,7 +5992,7 @@
                     }, 8);
                     let p = o.activitySize + o.padding + o.imagePadding;
                     i.setColor("dark" === f ? "white" : "rgb(6, 6, 7)"), i.setFont({
-                        size: 16,
+                        size: 14,
                         family: '"gg sans", sans-serif',
                         weight: 700
                     }), i.drawText("".concat(t.details), {
@@ -6000,7 +6000,7 @@
                         y: o.fontPadding + 1 * o.lineHeight
                     }, !0, (null === (l = i.assetMap) || void 0 === l ? void 0 : l.has(o.AssetTypes.Platform)) ? o.titleMaxWidthPlatform : o.titleMaxWidthNoPlatform), i.setFont({
                         size: 14,
-                        weight: 500
+                        weight: 400
                     }), i.drawText("".concat(t.state), {
                         x: p,
                         y: o.fontPadding + 2 * o.lineHeight
@@ -6105,10 +6105,10 @@
                 padding: function() {
                     return r
                 },
-                fontPadding: function() {
+                imagePadding: function() {
                     return o
                 },
-                imagePadding: function() {
+                fontPadding: function() {
                     return u
                 },
                 lineHeight: function() {
@@ -6130,17 +6130,17 @@
                     return h
                 }
             });
-            let a = 308,
+            let a = 348,
                 s = 88;
             (i = l || (l = {})).AssetImage = "AssetImage", i.ApplicationImage = "ApplicationImage", i.Platform = "Platform", i.StreamPreview = "StreamPreview";
             let r = 12,
-                o = r + 8,
-                u = 16,
-                d = 18,
+                o = 12,
+                u = r + o,
+                d = 16,
                 c = 24,
                 f = 64,
-                p = 295,
-                m = 270,
+                p = 335,
+                m = 310,
                 h = "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm6.81 7c-.54 0-1 .26-1.23.61A1 1 0 0 1 8.92 8.5 3.49 3.49 0 0 1 11.82 7c1.81 0 3.43 1.38 3.43 3.25 0 1.45-.98 2.61-2.27 3.06a1 1 0 0 1-1.96.37l-.19-1a1 1 0 0 1 .98-1.18c.87 0 1.44-.63 1.44-1.25S12.68 9 11.81 9ZM13 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM18.5 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7 18.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
         },
         658567: function(e, t, n) {
@@ -38134,4 +38134,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35170.e899925122e769b3f28c.js.map
+//# sourceMappingURL=96412.ca4d661a6f9f0ca9a04f.js.map
