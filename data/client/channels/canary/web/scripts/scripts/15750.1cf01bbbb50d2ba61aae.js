@@ -26460,7 +26460,7 @@
                     type: y = r.ReactionTypes.NORMAL
                 } = i, k = null != s.id ? "".concat(s.name, ":").concat(s.id) : s.name;
                 return null == a ? _.Endpoints.REACTIONS(x, t, k) : o ? _.Endpoints.REACTION_WITH_TYPE(x, t, k, a, y) : _.Endpoints.REACTION(x, t, k, a)
-            }(s = a || (a = {})).MESSAGE = "Message", s.FORUM_TOOLBAR = "Forum Toolbar", s.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer";
+            }
             async function w(i) {
                 let {
                     channelId: x,
@@ -26469,31 +26469,27 @@
                     limit: a,
                     after: y,
                     type: d
-                } = i, p = d === r.ReactionTypes.VOTE ? function(i, x, t) {
-                    var s;
-                    let a = null !== (s = t.id) && void 0 !== s ? s : t.name;
-                    return _.Endpoints.POLL_ANSWER_VOTERS(i, x, a)
-                }(x, t, s) : b({
-                    channelId: x,
-                    messageId: t,
-                    emoji: s
-                }), e = await o.default.get({
-                    url: p,
+                } = i, r = await o.default.get({
+                    url: b({
+                        channelId: x,
+                        messageId: t,
+                        emoji: s
+                    }),
                     query: {
                         limit: a,
                         after: y,
                         type: d
                     },
                     oldFormErrors: !0
-                }), n = d === r.ReactionTypes.VOTE ? e.body.users : e.body;
+                });
                 return k.default.dispatch({
                     type: "MESSAGE_REACTION_ADD_USERS",
                     channelId: x,
                     messageId: t,
-                    users: n,
+                    users: r.body,
                     emoji: s,
                     reactionType: d
-                }), n
+                }), r.body
             }
             async function E(i, x, t) {
                 let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "Message",
@@ -26653,7 +26649,7 @@
                     t = await (0, l.getEmojiColors)(i)
                 } catch {}
                 return t
-            }
+            }(s = a || (a = {})).MESSAGE = "Message", s.FORUM_TOOLBAR = "Forum Toolbar", s.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer";
 
             function N(i) {
                 let {
@@ -26686,7 +26682,7 @@
             "use strict";
             t.r(x), t.d(x, {
                 CUSTOM_CALL_SOUND_ANIMATION_RANGE: function() {
-                    return L
+                    return F
                 },
                 AnimationTypeToAnimations: function() {
                     return U
@@ -26701,7 +26697,7 @@
                     return V
                 },
                 getEffectAnnouncement: function() {
-                    return Y
+                    return j
                 }
             });
             var s = t("917351"),
@@ -26735,17 +26731,17 @@
                 M = t("402671"),
                 S = t("626334"),
                 C = t("782340");
-            let L = {
+            let F = {
                     start: 10,
                     end: 15
                 },
-                F = {
+                L = {
                     BASIC: [o],
                     PREMIUM: [y, k, d, r, p, e, n, m, c, l, f, _, h, u, I, b, w, E, g, A, R]
                 },
                 U = {
-                    [S.VoiceChannelEffectAnimationType.BASIC]: F.BASIC,
-                    [S.VoiceChannelEffectAnimationType.PREMIUM]: F.PREMIUM
+                    [S.VoiceChannelEffectAnimationType.BASIC]: L.BASIC,
+                    [S.VoiceChannelEffectAnimationType.PREMIUM]: L.PREMIUM
                 },
                 B = a.memoize(i => new Promise(x => {
                     let t = new Image;
@@ -26783,18 +26779,18 @@
                 return null != a ? M.default.getURL(a.surrogates) : ""
             }
 
-            function P(i, x) {
+            function Y(i, x) {
                 return a(i).map(i => {
                     var t;
                     return null !== (t = i[x]) && void 0 !== t ? t : null
                 }).filter(i => null != i).uniq().value()
             }
 
-            function Y(i) {
+            function j(i) {
                 var x, t, s, a, o, y;
                 if (i.length < 1) return "";
-                let k = P(i, "userId"),
-                    d = P(i, "emojiName"),
+                let k = Y(i, "userId"),
+                    d = Y(i, "emojiName"),
                     r = d.length < 2 ? null !== (x = null == d ? void 0 : d[0]) && void 0 !== x ? x : "" : d.join(", ");
                 if (k.length < 1) return "";
                 if (1 === k.length) return C.default.Messages.A11Y_ANNOUNCEMENT_VOICE_CHANNEL_EFFECTS_SINGLE.format({
@@ -26871,4 +26867,4 @@
         }
     }
 ]);
-//# sourceMappingURL=15750.7a2933406d0e3b8b1aa6.js.map
+//# sourceMappingURL=15750.1cf01bbbb50d2ba61aae.js.map
