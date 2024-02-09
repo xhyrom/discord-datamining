@@ -3360,6 +3360,10 @@
       "OPTIONS"
     ]
   },
+  "USER_SURVEY_SEEN": {
+    "url": "/users/@me/survey/:param/seen",
+    "allowed_methods": null
+  },
   "GUILD_EVENTS": {
     "url": "/guild-events",
     "allowed_methods": null
