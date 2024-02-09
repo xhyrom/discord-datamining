@@ -572,7 +572,7 @@
                     channelId: t,
                     applicationId: i.applicationId,
                     showFeedback: !1
-                }) : null != d && F(t, e), l.default.dispatch({
+                }) : null != d && F(t, e, !0), l.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_OPEN",
                     channelId: t,
                     applicationId: e,
@@ -658,10 +658,12 @@
             }
 
             function F(t, e) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 l.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_DISCONNECT",
                     channelId: t,
-                    applicationId: e
+                    applicationId: e,
+                    isRejoiningFromCurrentSession: n
                 })
             }
             async function M() {
@@ -1311,4 +1313,4 @@
         }
     }
 ]);
-//# sourceMappingURL=37580.68f1d3f24f163bdbcbbb.js.map
+//# sourceMappingURL=37580.270f065816fb045bc8cd.js.map
