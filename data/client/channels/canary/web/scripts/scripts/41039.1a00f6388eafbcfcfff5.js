@@ -23353,7 +23353,7 @@
 
             function S(e) {
                 return !_.has(e)
-            }(c = a || (a = {})).EmojiButtonMouseEntered = "EMOJI_BUTTON_MOUSE_ENTERED", c.EmojiButtonFocused = "EMOJI_BUTTON_FOCUSED", c.ChatInputExpressionPressed = "CHAT_INPUT_EXPRESSION_PRESSED", c.SearchEmojiKeybindPressed = "SEARCH_EMOJI_KEYBIND_PRESSED", c.AutocompleteTyped = "AUTOCOMPLETE_TYPED", c.AutocompleteWrapperShown = "AUTOCOMPLETE_WRAPPER_SHOWN", c.GuildLeaveModalShown = "GUILD_LEAVE_MODAL_SHOWN", c.AddReactionPopoutMouseEntered = "ADD_REACTION_POPOUT_MOUSE_ENTERED", c.AddReactionPopoutFocused = "ADD_REACTION_POPOUT_FOCUSED", c.MessageContextMenuMouseEntered = "MESSAGE_CONTEXT_MENU_MOUSE_ENTERED", c.EmojiPickerActionSheetOpened = "EMOJI_PICKER_ACTION_SHEET_OPENED", c.TrackOpenPopoutUsed = "TRACK_OPEN_POPOUT_USED", c.CustomEmojiTooltipShown = "CUSTOM_EMOJI_TOOLTIP_SHOWN"
+            }(c = a || (a = {})).EmojiButtonMouseEntered = "EMOJI_BUTTON_MOUSE_ENTERED", c.EmojiButtonFocused = "EMOJI_BUTTON_FOCUSED", c.ChatInputExpressionPressed = "CHAT_INPUT_EXPRESSION_PRESSED", c.ChatInputSuggestionsShown = "CHAT_INPUT_SUGGESTIONS_SHOWN", c.SearchEmojiKeybindPressed = "SEARCH_EMOJI_KEYBIND_PRESSED", c.AutocompleteTyped = "AUTOCOMPLETE_TYPED", c.AutocompleteWrapperShown = "AUTOCOMPLETE_WRAPPER_SHOWN", c.GuildLeaveModalShown = "GUILD_LEAVE_MODAL_SHOWN", c.AddReactionPopoutMouseEntered = "ADD_REACTION_POPOUT_MOUSE_ENTERED", c.AddReactionPopoutFocused = "ADD_REACTION_POPOUT_FOCUSED", c.MessageContextMenuMouseEntered = "MESSAGE_CONTEXT_MENU_MOUSE_ENTERED", c.EmojiPickerActionSheetOpened = "EMOJI_PICKER_ACTION_SHEET_OPENED", c.TrackOpenPopoutUsed = "TRACK_OPEN_POPOUT_USED", c.CustomEmojiTooltipShown = "CUSTOM_EMOJI_TOOLTIP_SHOWN"
         },
         316217: function(e, t, n) {
             "use strict";
@@ -50021,7 +50021,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "265287"
+                                build_number: "265292"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63929,4 +63929,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.a2a1fa2cc8235d91eee6.js.map
+//# sourceMappingURL=41039.1a00f6388eafbcfcfff5.js.map

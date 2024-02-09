@@ -7231,10 +7231,10 @@
                     return p
                 }
             }), n("222007"), n("70102");
-            var l = n("913144"),
-                i = n("798609"),
-                a = n("389153"),
-                s = n("149022"),
+            var l = n("798609"),
+                i = n("389153"),
+                a = n("149022"),
+                s = n("558986"),
                 r = n("237700"),
                 o = n("851745"),
                 u = n("958706");
@@ -7243,7 +7243,7 @@
                 var t;
                 let {
                     activeCommandOption: n,
-                    canMentionUsers: l = !0,
+                    canMentionUsers: s = !0,
                     canMentionRoles: r = !0,
                     canMentionChannels: u = !0,
                     canMentionEveryone: d,
@@ -7269,7 +7269,7 @@
                     },
                     commands: o.CommandMode.DISABLED,
                     allowStickers: !0 === m,
-                    forNonStringCommandOption: null != n && n.type !== i.ApplicationCommandOptionType.STRING,
+                    forNonStringCommandOption: null != n && n.type !== l.ApplicationCommandOptionType.STRING,
                     hideMentionDescription: !0 === h,
                     hidePersonalInformation: !0 === E,
                     chatInputType: S,
@@ -7281,7 +7281,7 @@
                         null === (n = C.current) || void 0 === n || n.insertAutocomplete(e, null != t ? t : e)
                     },
                     replaceText: (e, t) => {
-                        I(e, null != t ? t : (0, s.toRichValue)(e))
+                        I(e, null != t ? t : (0, a.toRichValue)(e))
                     },
                     getCommandOptionValues: () => {
                         var e;
@@ -7289,9 +7289,9 @@
                     }
                 };
                 if (null != n) {
-                    let e = (0, a.getApplicationCommandOptionQueryOptions)(n);
+                    let e = (0, i.getApplicationCommandOptionQueryOptions)(n);
                     e.canMentionChannels && (_.mentions.channel = o.ChannelMentionMode.ALLOW_SELECTABLE), e.canMentionEveryone && (_.mentions.global = e.canMentionHere ? o.GlobalMentionMode.ALLOW_EVERYONE_OR_HERE : o.GlobalMentionMode.ALLOW_EVERYONE), e.canMentionRoles && (_.mentions.role = e.canMentionNonMentionableRoles ? o.RoleMentionMode.ALLOW_ALL : o.RoleMentionMode.ALLOW_MENTIONABLE), e.canMentionUsers && (_.mentions.user = e.canMentionAnyGuildUser ? o.UserMentionMode.ALLOW_GUILD : o.UserMentionMode.ALLOW_CHANNEL), _.hideMentionDescription = !0
-                } else u && (_.mentions.channel = o.ChannelMentionMode.ALLOW_SELECTABLE), r && (_.mentions.role = o.RoleMentionMode.ALLOW_MENTIONABLE), l && (_.mentions.user = o.UserMentionMode.ALLOW_CHANNEL), d && (_.mentions.global = o.GlobalMentionMode.ALLOW_EVERYONE_OR_HERE), c && (_.mentions.clyde = o.ClydeMentionMode.ALLOW);
+                } else u && (_.mentions.channel = o.ChannelMentionMode.ALLOW_SELECTABLE), r && (_.mentions.role = o.RoleMentionMode.ALLOW_MENTIONABLE), s && (_.mentions.user = o.UserMentionMode.ALLOW_CHANNEL), d && (_.mentions.global = o.GlobalMentionMode.ALLOW_EVERYONE_OR_HERE), c && (_.mentions.clyde = o.ClydeMentionMode.ALLOW);
                 return (null === (t = S.commands) || void 0 === t ? void 0 : t.enabled) && (f ? _.commands = p ? o.CommandMode.NEW_TEXT_ONLY : o.CommandMode.NEW : _.commands = o.CommandMode.OLD_BUILT_INS), null != n && null != n.channelTypes && (_.allowedChannelTypes = n.channelTypes), _
             }
 
@@ -7315,9 +7315,9 @@
                 let {
                     channel: t,
                     guild: n,
-                    options: i,
-                    currentWord: a,
-                    currentWordIsAtStart: s,
+                    options: l,
+                    currentWord: i,
+                    currentWordIsAtStart: a,
                     textValue: d,
                     optionText: f
                 } = e, p = null;
@@ -7325,14 +7325,14 @@
                     var m, h, E, S, g, C;
                     let T = r.AUTOCOMPLETE_OPTIONS[e];
                     if (e === o.AutocompleteOptionTypes.GIFS || e === o.AutocompleteOptionTypes.CHOICES) {
-                        if (i.commands === o.CommandMode.OLD_BUILT_INS) {
+                        if (l.commands === o.CommandMode.OLD_BUILT_INS) {
                             if (c({
                                     type: e,
                                     channel: t,
                                     guild: n,
                                     query: d,
                                     isAtStart: !1,
-                                    options: i
+                                    options: l
                                 })) {
                                 p = {
                                     type: e,
@@ -7347,20 +7347,20 @@
                                 guild: n,
                                 query: f,
                                 isAtStart: !1,
-                                options: i
+                                options: l
                             })) return {
                             type: e,
                             typeInfo: T,
                             query: f
                         }
-                    } else if (e === o.AutocompleteOptionTypes.COMMANDS && i.commands !== o.CommandMode.OLD_BUILT_INS) {
+                    } else if (e === o.AutocompleteOptionTypes.COMMANDS && l.commands !== o.CommandMode.OLD_BUILT_INS) {
                         if (c({
                                 type: e,
                                 channel: t,
                                 guild: n,
                                 query: d,
                                 isAtStart: !0,
-                                options: i
+                                options: l
                             })) {
                             p = {
                                 type: e,
@@ -7375,8 +7375,8 @@
                                 channel: t,
                                 guild: n,
                                 query: d,
-                                isAtStart: s,
-                                options: i
+                                isAtStart: a,
+                                options: l
                             })) {
                             p = {
                                 type: e,
@@ -7386,36 +7386,33 @@
                             break
                         }
                     } else if (e === o.AutocompleteOptionTypes.EMOJIS_AND_STICKERS) {
-                        if (null != a && a.length > 0 && l.default.dispatch({
-                                type: "EMOJI_INTERACTION_INITIATED",
-                                interaction: u.EmojiInteractionPoint.AutocompleteTyped
-                            }), null != a && c({
+                        if (null != i && i.length > 0 && (0, s.initiateEmojiInteraction)(u.EmojiInteractionPoint.AutocompleteTyped), null != i && c({
                                 type: e,
                                 channel: t,
                                 guild: n,
-                                query: a,
-                                isAtStart: s,
-                                options: i
+                                query: i,
+                                isAtStart: a,
+                                options: l
                             })) {
                             p = {
                                 type: e,
                                 typeInfo: T,
-                                query: a.substring(null !== (S = null === (E = T.sentinel) || void 0 === E ? void 0 : E.length) && void 0 !== S ? S : 0)
+                                query: i.substring(null !== (S = null === (E = T.sentinel) || void 0 === E ? void 0 : E.length) && void 0 !== S ? S : 0)
                             };
                             break
                         }
-                    } else if (null != a && c({
+                    } else if (null != i && c({
                             type: e,
                             channel: t,
                             guild: n,
-                            query: a,
-                            isAtStart: s,
-                            options: i
+                            query: i,
+                            isAtStart: a,
+                            options: l
                         })) {
                         p = {
                             type: e,
                             typeInfo: T,
-                            query: a.substring(null !== (C = null === (g = T.sentinel) || void 0 === g ? void 0 : g.length) && void 0 !== C ? C : 0)
+                            query: i.substring(null !== (C = null === (g = T.sentinel) || void 0 === g ? void 0 : g.length) && void 0 !== C ? C : 0)
                         };
                         break
                     }
@@ -7428,24 +7425,24 @@
                 if (null == t || null == e) return null;
                 if (null != e.choices || e.autocomplete) n = o.AutocompleteOptionTypes.CHOICES;
                 else switch (e.type) {
-                    case i.ApplicationCommandOptionType.BOOLEAN:
+                    case l.ApplicationCommandOptionType.BOOLEAN:
                         n = o.AutocompleteOptionTypes.CHOICES;
                         break;
-                    case i.ApplicationCommandOptionType.CHANNEL:
+                    case l.ApplicationCommandOptionType.CHANNEL:
                         n = o.AutocompleteOptionTypes.CHANNELS;
                         break;
-                    case i.ApplicationCommandOptionType.ROLE:
-                    case i.ApplicationCommandOptionType.USER:
-                    case i.ApplicationCommandOptionType.MENTIONABLE:
+                    case l.ApplicationCommandOptionType.ROLE:
+                    case l.ApplicationCommandOptionType.USER:
+                    case l.ApplicationCommandOptionType.MENTIONABLE:
                         n = o.AutocompleteOptionTypes.MENTIONS;
                         break;
                     default:
                         return null
                 }
-                let l = r.AUTOCOMPLETE_OPTIONS[n];
+                let i = r.AUTOCOMPLETE_OPTIONS[n];
                 return {
                     type: n,
-                    typeInfo: l,
+                    typeInfo: i,
                     query: t
                 }
             }
@@ -33679,7 +33676,7 @@
                 s = n.n(a),
                 r = n("907002"),
                 o = n("77078"),
-                u = n("913144"),
+                u = n("558986"),
                 d = n("474293"),
                 c = n("958706"),
                 f = n("782340"),
@@ -33705,20 +33702,12 @@
                         "--custom-emoji-sprite-col": t % 20
                     }),
                     x = i.useCallback(() => {
-                        if (!y) v(!0), _(Math.floor(77 * Math.random())), u.default.dispatch({
-                            type: "EMOJI_INTERACTION_INITIATED",
-                            interaction: c.EmojiInteractionPoint.EmojiButtonMouseEntered
-                        })
+                        if (!y) v(!0), _(Math.floor(77 * Math.random())), (0, u.initiateEmojiInteraction)(c.EmojiInteractionPoint.EmojiButtonMouseEntered)
                     }, [y, v, _]),
                     O = i.useCallback(() => {
                         v(!1)
                     }, [v]),
-                    R = i.useCallback(() => {
-                        u.default.dispatch({
-                            type: "EMOJI_INTERACTION_INITIATED",
-                            interaction: c.EmojiInteractionPoint.EmojiButtonFocused
-                        })
-                    }, []);
+                    R = i.useCallback(() => (0, u.initiateEmojiInteraction)(c.EmojiInteractionPoint.EmojiButtonFocused), []);
                 return (0, l.jsx)(o.Button, {
                     look: o.Button.Looks.BLANK,
                     size: o.Button.Sizes.NONE,
@@ -38237,4 +38226,4 @@
         }
     }
 ]);
-//# sourceMappingURL=827.d6cd7974a88b4f94e995.js.map
+//# sourceMappingURL=827.cdae33b1e62bfdcf6354.js.map
