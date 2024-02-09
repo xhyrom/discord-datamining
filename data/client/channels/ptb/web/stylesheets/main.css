@@ -21609,7 +21609,9 @@ input[type=checked]:focus-visible+.label__8e2ef {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -12px
+    margin-top: -12px;
+    overflow: hidden;
+    pointer-events: all
 }
 
 .hangStatusIcon__8597e {
@@ -44879,8 +44881,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -126792,4 +126794,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.36181b9ae285f2c98e63.css.map*/
+/*# sourceMappingURL=app.f9c7ddd7fb0b2ace25d7.css.map*/
