@@ -4709,6 +4709,10 @@
       "POST"
     ]
   },
+  "POLL_ANSWER_VOTERS": {
+    "url": "/channels/:param/polls/:param/answers/:param",
+    "allowed_methods": null
+  },
   "PREMIUM_MARKETING": {
     "url": "/premium-marketing",
     "allowed_methods": [
