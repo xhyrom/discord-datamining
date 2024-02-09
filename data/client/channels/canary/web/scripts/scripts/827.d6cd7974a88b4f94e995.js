@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["6104"], {
+    ["827"], {
         110126: function(e, t, n) {
             var l = {
                 "./spritesheet--32.png": "588202",
@@ -5857,6 +5857,61 @@
                 u = n("78512"),
                 d = n("49111");
             let c = (e, t, n) => {
+                    var l, i, a;
+                    let {
+                        canvas: s
+                    } = e;
+                    s.setSize({
+                        w: o.canvasWidth,
+                        h: o.canvasHeight
+                    });
+                    let {
+                        color: r,
+                        theme: d
+                    } = (0, u.getProfileInfo)(n, "black");
+                    s.setColor(r), s.drawRoundedRect({
+                        x: 0,
+                        y: 0,
+                        h: o.canvasHeight,
+                        w: o.canvasWidth
+                    }, 8, !0), s.setColor("dark" === d ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), s.drawRoundedRect({
+                        x: 0,
+                        y: 0,
+                        h: o.canvasHeight,
+                        w: o.canvasWidth
+                    }, 8, !0), (null === (l = t.assets) || void 0 === l ? void 0 : l.large_image) != null ? s.drawRoundedImage(o.AssetTypes.AssetImage, {
+                        x: o.padding,
+                        y: o.padding
+                    }, {
+                        w: o.activitySize,
+                        h: o.activitySize
+                    }, 8) : (null === (i = s.assetMap) || void 0 === i ? void 0 : i.has(o.AssetTypes.ApplicationImage)) ? s.drawRoundedImage("ApplicationImage", {
+                        x: o.padding,
+                        y: o.padding
+                    }, {
+                        w: o.activitySize,
+                        h: o.activitySize
+                    }, 8) : (s.setColor("white"), s.drawPath(o.ACTIVITY_IMAGE_FALLBACK_PATH, {
+                        x: o.padding,
+                        y: o.padding
+                    }, !0, 2 + 2 / 3));
+                    let c = o.activitySize + o.padding + o.imagePadding;
+                    s.setColor("dark" === d ? "white" : "rgb(6, 6, 7)"), s.setFont({
+                        size: 16,
+                        family: '"gg sans", sans-serif',
+                        weight: 700
+                    }), s.drawText("".concat(t.name), {
+                        x: c,
+                        y: o.fontPadding + 1 * o.lineHeight
+                    }, !0, (null === (a = s.assetMap) || void 0 === a ? void 0 : a.has(o.AssetTypes.Platform)) ? o.titleMaxWidthPlatform : o.titleMaxWidthNoPlatform), null != t.timestamps && (s.setFont({
+                        size: 14,
+                        weight: 500
+                    }), s.drawText("for ".concat((0, u.howLong)(t.timestamps)), {
+                        x: c,
+                        y: o.fontPadding + 2 * o.lineHeight
+                    }, !0))
+                },
+                f = (e, t, n) => {
                     var l, i;
                     let {
                         canvas: a
@@ -5879,129 +5934,75 @@
                         y: 0,
                         h: o.canvasHeight,
                         w: o.canvasWidth
-                    }, 8, !0), (null === (l = t.assets) || void 0 === l ? void 0 : l.large_image) != null ? a.drawRoundedImage(o.AssetTypes.AssetImage, {
+                    }, 8, !0), (null === (l = a.assetMap) || void 0 === l ? void 0 : l.has(o.AssetTypes.AssetImage)) && a.drawRoundedImage(o.AssetTypes.AssetImage, {
                         x: o.padding,
                         y: o.padding
                     }, {
                         w: o.activitySize,
                         h: o.activitySize
-                    }, 8) : (null === (i = a.assetMap) || void 0 === i ? void 0 : i.has(o.AssetTypes.ApplicationImage)) ? a.drawRoundedImage("ApplicationImage", {
-                        x: o.padding,
-                        y: o.padding
-                    }, {
-                        w: o.activitySize,
-                        h: o.activitySize
-                    }, 8) : (a.setColor("white"), a.drawPath(o.ACTIVITY_IMAGE_FALLBACK_PATH, {
-                        x: o.padding,
-                        y: o.padding
-                    }, !0, 2 + 2 / 3));
+                    }, 8);
                     let d = o.activitySize + o.padding + o.imagePadding;
                     a.setColor("dark" === r ? "white" : "rgb(6, 6, 7)"), a.setFont({
                         size: 16,
                         family: '"gg sans", sans-serif',
                         weight: 700
-                    }), a.drawText("".concat(t.name), {
+                    }), a.drawText("".concat(t.details), {
                         x: d,
                         y: o.fontPadding + 1 * o.lineHeight
-                    }, !0), null != t.timestamps && (a.setFont({
+                    }, !0, (null === (i = a.assetMap) || void 0 === i ? void 0 : i.has(o.AssetTypes.Platform)) ? o.titleMaxWidthPlatform : o.titleMaxWidthNoPlatform), a.setFont({
                         size: 14,
                         weight: 500
-                    }), a.drawText("for ".concat((0, u.howLong)(t.timestamps)), {
+                    }), a.drawText("by ".concat(t.state), {
                         x: d,
                         y: o.fontPadding + 2 * o.lineHeight
-                    }, !0))
+                    }, !0)
                 },
-                f = (e, t, n) => {
+                p = (e, t, n) => {
                     var l;
                     let {
                         canvas: i
                     } = e;
                     i.setSize({
-                        w: o.canvasWidth,
-                        h: o.canvasHeight
-                    });
-                    let {
-                        color: a,
-                        theme: s
-                    } = (0, u.getProfileInfo)(n, "black");
-                    i.setColor(a), i.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: o.canvasHeight,
-                        w: o.canvasWidth
-                    }, 8, !0), i.setColor("dark" === s ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), i.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: o.canvasHeight,
-                        w: o.canvasWidth
-                    }, 8, !0), (null === (l = i.assetMap) || void 0 === l ? void 0 : l.has(o.AssetTypes.AssetImage)) && i.drawRoundedImage(o.AssetTypes.AssetImage, {
-                        x: o.padding,
-                        y: o.padding
-                    }, {
-                        w: o.activitySize,
-                        h: o.activitySize
-                    }, 8);
-                    let r = o.activitySize + o.padding + o.imagePadding;
-                    i.setColor("dark" === s ? "white" : "rgb(6, 6, 7)"), i.setFont({
-                        size: 16,
-                        family: '"gg sans", sans-serif',
-                        weight: 700
-                    }), i.drawText("".concat(t.details), {
-                        x: r,
-                        y: o.fontPadding + 1 * o.lineHeight
-                    }, !0), i.setFont({
-                        size: 14,
-                        weight: 500
-                    }), i.drawText("by ".concat(t.state), {
-                        x: r,
-                        y: o.fontPadding + 2 * o.lineHeight
-                    }, !0)
-                },
-                p = (e, t, n) => {
-                    let {
-                        canvas: l
-                    } = e;
-                    l.setSize({
                         w: 320,
                         h: o.canvasHeight
                     });
                     let {
-                        assets: i,
-                        application_id: a
-                    } = t, s = (0, r.getAssetImage)(a, null == i ? void 0 : i.large_image, o.activitySize), {
-                        color: d,
-                        theme: c
+                        assets: a,
+                        application_id: s
+                    } = t, d = (0, r.getAssetImage)(s, null == a ? void 0 : a.large_image, o.activitySize), {
+                        color: c,
+                        theme: f
                     } = (0, u.getProfileInfo)(n, "black");
-                    l.setColor(d), l.drawRoundedRect({
+                    i.setColor(c), i.drawRoundedRect({
                         x: 0,
                         y: 0,
                         h: o.canvasHeight,
                         w: o.canvasWidth
-                    }, 8, !0), l.setColor("dark" === c ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), l.drawRoundedRect({
+                    }, 8, !0), i.setColor("dark" === f ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), i.drawRoundedRect({
                         x: 0,
                         y: 0,
                         h: o.canvasHeight,
                         w: o.canvasWidth
-                    }, 8, !0), null != s && l.drawRoundedImage(o.AssetTypes.AssetImage, {
+                    }, 8, !0), null != d && i.drawRoundedImage(o.AssetTypes.AssetImage, {
                         x: o.padding,
                         y: o.padding
                     }, {
                         w: o.activitySize,
                         h: o.activitySize
                     }, 8);
-                    let f = o.activitySize + o.padding + o.imagePadding;
-                    l.setColor("dark" === c ? "white" : "rgb(6, 6, 7)"), l.setFont({
+                    let p = o.activitySize + o.padding + o.imagePadding;
+                    i.setColor("dark" === f ? "white" : "rgb(6, 6, 7)"), i.setFont({
                         size: 16,
                         family: '"gg sans", sans-serif',
                         weight: 700
-                    }), l.drawText("".concat(t.details), {
-                        x: f,
+                    }), i.drawText("".concat(t.details), {
+                        x: p,
                         y: o.fontPadding + 1 * o.lineHeight
-                    }, !0), l.setFont({
+                    }, !0, (null === (l = i.assetMap) || void 0 === l ? void 0 : l.has(o.AssetTypes.Platform)) ? o.titleMaxWidthPlatform : o.titleMaxWidthNoPlatform), i.setFont({
                         size: 14,
                         weight: 500
-                    }), l.drawText("".concat(t.state), {
-                        x: f,
+                    }), i.drawText("".concat(t.state), {
+                        x: p,
                         y: o.fontPadding + 2 * o.lineHeight
                     }, !0)
                 },
@@ -6103,8 +6104,14 @@
                 activitySize: function() {
                     return f
                 },
-                ACTIVITY_IMAGE_FALLBACK_PATH: function() {
+                titleMaxWidthNoPlatform: function() {
                     return p
+                },
+                titleMaxWidthPlatform: function() {
+                    return m
+                },
+                ACTIVITY_IMAGE_FALLBACK_PATH: function() {
+                    return h
                 }
             });
             let a = 308,
@@ -6116,7 +6123,9 @@
                 d = 18,
                 c = 24,
                 f = 64,
-                p = "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm6.81 7c-.54 0-1 .26-1.23.61A1 1 0 0 1 8.92 8.5 3.49 3.49 0 0 1 11.82 7c1.81 0 3.43 1.38 3.43 3.25 0 1.45-.98 2.61-2.27 3.06a1 1 0 0 1-1.96.37l-.19-1a1 1 0 0 1 .98-1.18c.87 0 1.44-.63 1.44-1.25S12.68 9 11.81 9ZM13 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM18.5 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7 18.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                p = 295,
+                m = 270,
+                h = "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm6.81 7c-.54 0-1 .26-1.23.61A1 1 0 0 1 8.92 8.5 3.49 3.49 0 0 1 11.82 7c1.81 0 3.43 1.38 3.43 3.25 0 1.45-.98 2.61-2.27 3.06a1 1 0 0 1-1.96.37l-.19-1a1 1 0 0 1 .98-1.18c.87 0 1.44-.63 1.44-1.25S12.68 9 11.81 9ZM13 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM18.5 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7 18.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
         },
         658567: function(e, t, n) {
             "use strict";
@@ -6570,15 +6579,15 @@
                     } = e;
                     this.setContextProperties(), this.context.beginPath(), this.context.roundRect(l, i, a, s, t), n ? this.context.fill() : this.context.stroke()
                 }
-                drawText(e, t, n) {
+                drawText(e, t, n, l) {
                     if (null == this.context) return;
                     this.setContextProperties();
-                    let l = this.canvas.width,
-                        i = this.context.measureText(e),
-                        s = !1;
+                    let i = null != l ? l : this.canvas.width,
+                        s = this.context.measureText(e),
+                        r = !1;
                     if (this.font.truncate) {
-                        for (; i.width + t.x + a.TEXT_TRUNCATION_PADDING_PX > l;) e = e.slice(0, -4), i = this.context.measureText(e), s = !0;
-                        s && (e += "...")
+                        for (; s.width + t.x + a.TEXT_TRUNCATION_PADDING_PX > i;) e = e.slice(0, -4), s = this.context.measureText(e), r = !0;
+                        r && (e += "...")
                     }
                     n ? this.context.fillText(e, t.x, t.y) : this.context.strokeText(e, t.x, t.y)
                 }
@@ -38228,4 +38237,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6104.1f19881afd8ed0839945.js.map
+//# sourceMappingURL=827.d6cd7974a88b4f94e995.js.map
