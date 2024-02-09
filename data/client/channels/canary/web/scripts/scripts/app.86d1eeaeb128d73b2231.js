@@ -3864,6 +3864,7 @@
         619187: function(e, t, n) {
             "use strict";
             e.exports = {
+                closeIcon: "closeIcon_bfdebf",
                 picker: "picker__35201",
                 reaction: "reaction__98ec4",
                 reactions: "reactions__7b6b2",
@@ -19978,6 +19979,7 @@
         205988: function(e, t, n) {
             "use strict";
             e.exports = {
+                body: "body__5d70d",
                 buttonSparkleStar1: "buttonSparkleStar1__76d53",
                 buttonSparkleStar2: "buttonSparkleStar2_fc8a1a",
                 buttonSparkleStar3: "buttonSparkleStar3__72228",
@@ -20003,6 +20005,7 @@
                 newCircleIcon: "newCircleIcon_ba71bd",
                 newTagItem: "newTagItem_a90a00",
                 premiumCards: "premiumCards__1b3a9",
+                premiumCardsStackedVariant: "premiumCardsStackedVariant__6efa8",
                 price: "price__12d41",
                 rimGlowTier0: "rimGlowTier0_d915da",
                 rimGlowTier2: "rimGlowTier2_b78a6c",
@@ -20014,11 +20017,13 @@
                 sparkleStar3: "sparkleStar3__7be75",
                 sparkleStar4: "sparkleStar4__47342",
                 sparkleStar5: "sparkleStar5_dade39",
+                subscriptionPlanInfo: "subscriptionPlanInfo__2cfbe",
                 tier0: "tier0__2e127",
-                tier0LogoContainer: "tier0LogoContainer__90583",
                 tier0Title: "tier0Title__36a19",
                 tier2: "tier2__1364f",
                 tier2Title: "tier2Title_eac987",
+                tierCardFocused: "tierCardFocused_cf0a83",
+                tierCardHidden: "tierCardHidden__9b38e",
                 title: "title__223b8",
                 topRimPill: "topRimPill__67711",
                 trialHeader: "trialHeader__3c1fe",
@@ -20578,6 +20583,18 @@
                 settingsSparkleStar4: "settingsSparkleStar4_d0e15b sparkleStar_dbaf1b",
                 settingsTextContainer: "settingsTextContainer__65ea6",
                 sparkleStar: "sparkleStar_dbaf1b"
+            }
+        },
+        103975: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                slider: "slider__3ff89",
+                sliderBasic: "sliderBasic_a2153e",
+                sliderStandard: "sliderStandard__0bf41",
+                toggleOption: "toggleOption_db3f77",
+                toggleSwitch: "toggleSwitch__7657a",
+                toggleSwitchBasic: "toggleSwitchBasic__7560f",
+                toggleSwitchStandard: "toggleSwitchStandard__00183"
             }
         },
         305224: function(e, t, n) {

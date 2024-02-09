@@ -310,15 +310,15 @@
                     onMouseEnter: P,
                     onMouseLeave: M,
                     onKeyDown: U,
-                    children: w,
-                    rel: b,
+                    children: b,
+                    rel: w,
                     buttonRef: G,
                     focusProps: F,
                     "aria-label": k,
                     submittingStartedLabel: B,
                     submittingFinishedLabel: x,
-                    ...H
-                } = e, V = I || T, W = V && (null != P || null != M), Y = function(e, t) {
+                    ...V
+                } = e, H = I || T, W = H && (null != P || null != M), Y = function(e, t) {
                     var n, i, r, o;
                     let s = null == e ? void 0 : e.offset;
                     if (t === f.LINK || t === f.BLANK) return s;
@@ -338,12 +338,12 @@
                     ...F,
                     offset: Y,
                     children: (0, i.jsxs)("button", {
-                        ...V ? null : H,
+                        ...H ? null : V,
                         "aria-label": k,
                         "aria-busy": !!T || void 0,
                         ref: G,
-                        onClick: V ? e => e.preventDefault() : O,
-                        onDoubleClick: V ? e => e.preventDefault() : L,
+                        onClick: H ? e => e.preventDefault() : O,
+                        onDoubleClick: H ? e => e.preventDefault() : L,
                         onMouseUp: I ? void 0 : y,
                         onMouseDown: I ? void 0 : D,
                         onMouseEnter: P,
@@ -352,7 +352,7 @@
                         type: v,
                         disabled: I,
                         style: A,
-                        rel: b,
+                        rel: w,
                         className: s(C, m({
                             look: t,
                             color: n,
@@ -370,7 +370,7 @@
                             itemClassName: _.spinnerItem
                         }) : null, (0, i.jsx)("div", {
                             className: s(_.contents, R),
-                            children: w
+                            children: b
                         })]
                     })
                 });
@@ -707,15 +707,15 @@
                         wrapSection: P,
                         getAnchorId: M,
                         paddingTop: U,
-                        paddingBottom: w,
-                        fade: b = !1,
+                        paddingBottom: b,
+                        fade: w = !1,
                         customTheme: G = !1,
                         chunkSize: F,
                         style: k,
                         innerId: B,
                         innerRole: x,
-                        innerAriaLabel: H,
-                        innerAriaMultiselectable: V,
+                        innerAriaLabel: V,
+                        innerAriaMultiselectable: H,
                         innerAriaOrientation: W,
                         innerClassName: Y,
                         innerTag: z = "div",
@@ -748,7 +748,7 @@
                         sidebarHeight: N,
                         listHeaderHeight: C,
                         paddingTop: U,
-                        paddingBottom: w,
+                        paddingBottom: b,
                         chunkSize: F,
                         getScrollerState: $,
                         getAnchorId: M
@@ -828,7 +828,7 @@
                         onScroll: eE,
                         className: s(S, {
                             [e]: !0,
-                            [t]: b,
+                            [t]: w,
                             [n]: G,
                             [d.scrolling]: X
                         }),
@@ -837,8 +837,8 @@
                         children: [r.useMemo(() => (0, i.jsx)(z, {
                             id: B,
                             role: x,
-                            "aria-label": H,
-                            "aria-multiselectable": V,
+                            "aria-label": V,
+                            "aria-multiselectable": H,
                             "aria-orientation": W,
                             style: {
                                 height: et
@@ -892,7 +892,7 @@
                                     spacerTop: ee
                                 })
                             })
-                        }), [B, x, H, V, W, Y, z, et, en, R, O, L, y, P, ee]), r.useMemo(() => (function(e) {
+                        }), [B, x, V, H, W, Y, z, et, en, R, O, L, y, P, ee]), r.useMemo(() => (function(e) {
                             let {
                                 renderSidebar: t,
                                 sidebarHeight: n,
@@ -3059,7 +3059,8 @@
                     alwaysShowLinkDecorations: !1,
                     roleStyle: "username",
                     submitButtonEnabled: !1,
-                    syncProfileThemeWithUserTheme: !1
+                    syncProfileThemeWithUserTheme: !1,
+                    disableVoiceBackgrounds: !1
                 },
                 f = _,
                 E = {
@@ -3182,6 +3183,9 @@
                 get roleStyle() {
                     return f.roleStyle
                 }
+                get disableVoiceBackgrounds() {
+                    return f.disableVoiceBackgrounds
+                }
                 getUserAgnosticState() {
                     return f
                 }
@@ -3242,6 +3246,9 @@
             }), e => ({
                 ...e,
                 alwaysShowLinkDecorations: e.saturation <= o.LOW_SATURATION_THRESHOLD
+            }), e => ({
+                ...e,
+                disableVoiceBackgrounds: !1
             })];
             let g = new S(s.default, {
                 ACCESSIBILITY_SET_FONT_SIZE: function(e) {
@@ -3381,6 +3388,11 @@
                         ...f,
                         contrast: t
                     }
+                },
+                ACCESSIBILITY_TOGGLE_DISABLE_VOICE_BACKGROUNDS: function() {
+                    (f = {
+                        ...f
+                    }).disableVoiceBackgrounds = !f.disableVoiceBackgrounds
                 }
             });
             var h = g
@@ -3772,10 +3784,10 @@
                     return M
                 },
                 MessageRequestRestrictedGuildIds: function() {
-                    return w
+                    return b
                 },
                 MessageRequestRestrictedDefault: function() {
-                    return b
+                    return w
                 },
                 NonSpamRetrainingOptIn: function() {
                     return G
@@ -3793,10 +3805,10 @@
                     return x
                 },
                 ConvertEmoticons: function() {
-                    return H
+                    return V
                 },
                 MessageDisplayCompact: function() {
-                    return V
+                    return H
                 },
                 SoundboardSettings: function() {
                     return W
@@ -4022,8 +4034,8 @@
                     value: e
                 })),
                 U = [],
-                w = (0, l.defineProtoSetting)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : U, e => e),
-                b = (0, l.defineProtoSetting)("privacy", "defaultMessageRequestRestricted", e => {
+                b = (0, l.defineProtoSetting)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : U, e => e),
+                w = (0, l.defineProtoSetting)("privacy", "defaultMessageRequestRestricted", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => o.BoolValue.create({
@@ -4058,13 +4070,13 @@
                 }, e => o.BoolValue.create({
                     value: e
                 })),
-                H = (0, l.defineProtoSetting)("textAndImages", "convertEmoticons", e => {
+                V = (0, l.defineProtoSetting)("textAndImages", "convertEmoticons", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => o.BoolValue.create({
                     value: e
                 })),
-                V = (0, l.defineProtoSetting)("textAndImages", "messageDisplayCompact", e => {
+                H = (0, l.defineProtoSetting)("textAndImages", "messageDisplayCompact", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => o.BoolValue.create({
@@ -5326,7 +5338,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "264922", "264922"), 10);
+                let o = parseInt((n = "265145", "265145"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5583,4 +5595,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.1f053beb88f93cee5ae9.js.map
+//# sourceMappingURL=48059.36e487bc423fdda17b49.js.map

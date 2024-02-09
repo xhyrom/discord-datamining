@@ -912,7 +912,8 @@
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_INVALID_CHANNEL: "You cannot join Activities in this channel.",
                 APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_CANNOT_LAUNCH: "$[](userHook) started an activity",
                 APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED: "$[](userHook) started an **$[activity](activityHook)**",
-                APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE: "[!!{username}!!](usernameOnClick) started an activity",
+                APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE_CANNOT_LAUNCH: "[!!{username}!!](usernameOnClick) started an activity",
+                APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE: "[!!{username}!!](usernameOnClick) started an [activity](activityTextOnClick)",
                 APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_NOTIFICATION: "{username} started an activity",
                 KRUNKER_STRIKE_COACHMARK_TITLE: "Updated! Krunker Strike FRVR",
                 KRUNKER_STRIKE_COACHMARK_DESCRIPTION: "Squad up with friends or other players around the world and battle your way to victory in this first person shooter game.",
@@ -3708,6 +3709,9 @@
                 FORM_LABEL_OUTPUT: "Output",
                 FORM_LABEL_VIDEO_DEVICE: "Camera",
                 FORM_LABEL_VIDEO_PREVIEW: "Preview",
+                FORM_SECTION_VOICE_BACKGROUNDS: "Voice Backgrounds",
+                FORM_LABEL_DISABLE_CALL_BACKGROUNDS: "Disable Call Backgrounds",
+                FORM_LABEL_DISABLE_CALL_BACKGROUNDS_SUB_LABEL: "You will automatically see the neutral background in all voice channels.",
                 TEST_VIDEO: "Test Video",
                 FORM_WARNING_VIDEO_PREVIEW: "\nYou must grant Discord [access to your camera](onEnableClick) in order to be able to preview.\n  ",
                 ECHO_CANCELLATION: "Echo Cancellation",
@@ -10196,6 +10200,7 @@
                 VOICE_PANEL_CHANGE_BACKGROUND_TITLE: "Change Background",
                 VOICE_PANEL_CHANGE_BACKGROUND_SUBTITLE: "Set background for everyone",
                 VOICE_PANEL_CHANGE_BACKGROUND_FOOTER: "This background will be shown to everyone after saving.",
+                VOICE_PANEL_CHANGE_BACKGROUND_SUBTITLE_DISABLED: "Voice backgrounds are currently disabled in your settings.",
                 VOICE_PANEL_LOAD_MORE: "Load more",
                 VOICE_PANEL_NO_JOIN_PERMISSIONS_ALERT_TITLE: "You don’t have permission to join this Voice Channel.",
                 VOICE_PANEL_NO_JOIN_PERMISSIONS_ALERT_SUBTITLE: "This channel is only for selected members and roles.",
@@ -16616,6 +16621,8 @@
                 QUESTS_ACCEPT_TOOLTIP: "Accept the quest and complete the task to unlock the reward",
                 QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
                 QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
+                QUEST_REWARD_VERIFICATION_TITLE: "Verify your account to claim the reward",
+                QUEST_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a new verification email: {message}",
                 QUEST_REWARD: "Win {reward}",
                 QUESTS_REWARD_CODE_HEADER: "Your reward code",
                 QUESTS_REWARD_CODE_CONGRATS: "Congrats!",
@@ -18175,7 +18182,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264922", ", Version Hash: ").concat("e22c0a598d7d7e6fd2d4d1f703e5aae295a73607")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265145", ", Version Hash: ").concat("5b9ea2918c6789226f13b7beab37bab3180a538a")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20454,8 +20461,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "264922", "264922"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264922")), _ = 0), _
+                let _ = parseInt((e = "265145", "265145"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265145")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22019,60 +22026,6 @@
             }
             var a = new r
         },
-        236266: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                getEmojiCaptionsExperimentConfig: function() {
-                    return n
-                }
-            });
-            var t = E("862205");
-            let o = (0, t.createExperiment)({
-                kind: "user",
-                id: "2023-10_emoji_captions",
-                label: "Emoji Captions Experiment",
-                defaultConfig: {
-                    isEnabledOnDesktop: !1,
-                    isAutosuggestEnabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        isEnabledOnDesktop: !0,
-                        isAutosuggestEnabled: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "Enabled with more captions from post-processing",
-                    config: {
-                        isEnabledOnDesktop: !0,
-                        isAutosuggestEnabled: !1
-                    }
-                }, {
-                    id: 3,
-                    label: "Enabled with mobile autosuggest",
-                    config: {
-                        isEnabledOnDesktop: !0,
-                        isAutosuggestEnabled: !0
-                    }
-                }]
-            });
-
-            function n(e) {
-                let {
-                    location: _,
-                    trackExposureOptions: E = {},
-                    autoTrackExposure: t = !0
-                } = e, n = o.getCurrentConfig({
-                    location: _
-                }, {
-                    autoTrackExposure: t,
-                    trackExposureOptions: E
-                });
-                return n
-            }
-        },
         765969: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -22082,23 +22035,59 @@
             });
             var t = E("697218"),
                 o = E("558986"),
-                n = E("236266"),
-                r = E("802461");
+                n = E("802461"),
+                r = E("269579");
             async function a() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown",
                     _ = t.default.getCurrentUser();
                 if (null == _) return;
-                let E = (0, n.getEmojiCaptionsExperimentConfig)({
+                let {
+                    isEmojiCaptionsEnabled: E
+                } = r.default.getCurrentConfig({
                     location: e
                 });
-                if (!E.isEnabledOnDesktop) {
-                    r.default.hasPersistedState() && r.default.clear();
+                if (!E) {
+                    n.default.hasPersistedState() && n.default.clear();
                     return
                 }
-                if (r.default.getIsFetching()) return;
-                let a = r.default.getEmojiCaptionsTTL();
+                if (n.default.getIsFetching()) return;
+                let a = n.default.getEmojiCaptionsTTL();
                 !(null != a && Date.now() < a) && await (0, o.getEmojiCaptionsForUser)()
             }
+        },
+        269579: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return n
+                }
+            });
+            var t = E("862205");
+            let o = (0, t.createExperiment)({
+                kind: "user",
+                id: "2024-02_emoji_suggestions",
+                label: "Emoji Suggestions Experiment",
+                defaultConfig: {
+                    isEmojiSuggestionsEnabled: !1,
+                    isEmojiCaptionsEnabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enables Emoji Suggestions without Captions",
+                    config: {
+                        isEmojiSuggestionsEnabled: !0,
+                        isEmojiCaptionsEnabled: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "Enables Emoji Suggestions with Captions",
+                    config: {
+                        isEmojiSuggestionsEnabled: !0,
+                        isEmojiCaptionsEnabled: !0
+                    }
+                }]
+            });
+            var n = o
         },
         120273: function(e, _, E) {
             "use strict";
@@ -36378,4 +36367,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73222.71c1994ff3299e802abb.js.map
+//# sourceMappingURL=73222.c0644206cfe3ba32218e.js.map
