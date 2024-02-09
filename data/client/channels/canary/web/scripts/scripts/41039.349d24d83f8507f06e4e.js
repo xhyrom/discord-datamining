@@ -19348,7 +19348,8 @@
                         [R.EmbeddedActivitySupportedPlatforms.IOS]: ei,
                         [R.EmbeddedActivitySupportedPlatforms.ANDROID]: ei
                     },
-                    has_csp_exception: !1
+                    has_csp_exception: !1,
+                    displays_advertisements: !1
                 },
                 es = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
         },
@@ -50028,7 +50029,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "265187"
+                                build_number: "265195"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63936,4 +63937,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.5b48f456f8d4f3b203d0.js.map
+//# sourceMappingURL=41039.349d24d83f8507f06e4e.js.map
