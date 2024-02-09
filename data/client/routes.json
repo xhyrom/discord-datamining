@@ -103,15 +103,6 @@
       "OPTIONS"
     ]
   },
-  "USER_CLYDE_CONSENT": {
-    "url": "/users/@me/clyde-consent",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PUT"
-    ]
-  },
   "APPLICATION_ACTIVITY_STATISTICS": {
     "url": "/activities/statistics/applications/:param",
     "allowed_methods": [
@@ -246,10 +237,6 @@
   },
   "GUILD_MEMBER_AVATAR": {
     "url": "/guilds/:param/users/:param/avatars/:param.:param",
-    "allowed_methods": null
-  },
-  "CLYDE_PROFILES_AVATAR": {
-    "url": "/clyde-profiles/:param/avatars/:param.:param",
     "allowed_methods": null
   },
   "SET_GUILD_MEMBER": {
@@ -918,10 +905,6 @@
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
-    "allowed_methods": null
-  },
-  "CLYDE_PROFILES_BANNER": {
-    "url": "/clyde-profiles/:param/banners/:param.:param",
     "allowed_methods": null
   },
   "MESSAGES": {
@@ -3811,26 +3794,6 @@
       "OPTIONS"
     ]
   },
-  "GUILD_CLYDE_SETTINGS": {
-    "url": "/guilds/:param/clyde-settings",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
-  "GUILD_CLYDE_ADD_MEMBER": {
-    "url": "/guilds/:param/members/clyde",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH",
-      "PUT"
-    ]
-  },
   "CREATOR_MONETIZATION_ENABLE_REQUESTS": {
     "url": "/guilds/:param/creator-monetization/enable-requests",
     "allowed_methods": [
@@ -4669,30 +4632,6 @@
     "allowed_methods": [
       "OPTIONS",
       "PATCH"
-    ]
-  },
-  "CLYDE_PROFILES": {
-    "url": "/clyde-profiles/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "CLYDE_PROFILES_CREATE": {
-    "url": "/guilds/:param/clyde-profiles",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "CLYDE_PROFILES_GENERATE_PERSONALITY": {
-    "url": "/clyde-profiles/generate-personality",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
     ]
   },
   "POLL_ANSWERS": {
