@@ -6,13 +6,8 @@
 </ul>
 <h1 id="h_01HN17EC60ZAPSDSERYW4197SW">Desktop</h1>
 <p>1. Tap on the cogwheel [<img src="https://support.discord.com/hc/article_attachments/20869073408407" width="20" height="20">] in the bottom left corner of the desktop app to open up your <strong>User Settings</strong>.</p>
-<p>2. Scroll all the way down and you’ll see your client info on the bottom left.</p>
-<p>3. The following information needs to be provided:</p>
-<ul>
-    <li>Version number</li>
-    <li>Operating System</li>
-</ul>
-<h3 id="h_01HN17EC60DDV0JNAT2ZS1HAK0"><span style="color: #434343;" data-darkreader-inline-color="">The number in the parentheses behind the version number and the Host are required.</span></h3>
+<p>2. Scroll all the way down and you’ll see your client info on the bottom left. </p>
+<p>3. Click the version info to copy it to your clipboard, then paste it in your report for us.</p>
 <p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/20869058757271" width="624" height="351"></span></p>
 <h1 id="h_01HN17EC60CB74E00WYQYHFX5C">Mobile</h1>
 <p>1. Tap on your avatar in the bottom right corner to pull up your <strong>User Settings</strong>.</p>
