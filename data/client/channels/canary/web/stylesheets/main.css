@@ -70590,6 +70590,11 @@ input::-webkit-inner-spin-button {
     background: var(--bg-overlay-3, var(--background-secondary-alt))
 }
 
+.channel_fa3b45:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
 .userList_a7e652 {
     position: relative;
     border: 1px solid;
@@ -126794,4 +126799,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f9c7ddd7fb0b2ace25d7.css.map*/
+/*# sourceMappingURL=app.adcc9f308a4bc716ffc4.css.map*/
