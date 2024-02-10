@@ -38398,17 +38398,17 @@
                         {
                             (0, ee.isWindows)() && e.setExperimentFlag(eS.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT, !0);
                             let {
-                                signalH265SupportMacOS: t
-                            } = M.default.getCurrentConfig({
-                                location: "f627ab_8"
+                                signalH265SupportNvenc: t
+                            } = U.default.getCurrentConfig({
+                                location: "f627ab_9"
                             }, {
                                 autoTrackExposure: !0
                             });
                             t && e.setExperimentFlag(eS.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
                             let {
-                                signalH265SupportNvenc: n
-                            } = U.default.getCurrentConfig({
-                                location: "f627ab_9"
+                                signalH265SupportMacOS: n
+                            } = M.default.getCurrentConfig({
+                                location: "f627ab_8"
                             }, {
                                 autoTrackExposure: !0
                             });
@@ -49980,7 +49980,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "265390"
+                                build_number: "265411"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -59828,7 +59828,7 @@
 
             function a(e, t) {
                 let n = [];
-                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? n.unshift({
+                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? t === i.MediaEngineContextTypes.STREAM && n.unshift({
                     name: "H265",
                     encode: !0,
                     decode: !0
@@ -63888,4 +63888,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.c39e203af5c1a567cf27.js.map
+//# sourceMappingURL=41039.da955913dee91cab9cea.js.map
