@@ -94,8 +94,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -124,8 +124,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -256,7 +256,8 @@
         }
       },
       "shelf_rank": 2147483647,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     }
   },
   {
@@ -289,7 +290,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
@@ -299,14 +300,15 @@
           "label_until": null,
           "release_phase": "activities_team"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
         }
       },
       "shelf_rank": 28,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Video Player",
@@ -342,12 +344,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -359,7 +361,8 @@
         }
       },
       "shelf_rank": 2147483647,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Video Player",
@@ -396,12 +399,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
@@ -413,7 +416,8 @@
         }
       },
       "shelf_rank": 9,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Collaborate",
@@ -450,12 +454,12 @@
       "free_period_starts_at": "2023-05-15T16:30:00+00:00",
       "free_period_ends_at": "2023-06-16T07:00:00+00:00",
       "client_platform_config": {
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -467,7 +471,8 @@
         }
       },
       "shelf_rank": 3,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Drawing",
@@ -521,7 +526,8 @@
         }
       },
       "shelf_rank": 15,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Chill",
@@ -556,7 +562,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -566,14 +572,15 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
       "shelf_rank": 16,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Solo",
@@ -610,12 +617,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -627,7 +634,8 @@
         }
       },
       "shelf_rank": 12,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Arcade",
@@ -665,11 +673,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "ios": {
           "label_type": 0,
           "label_until": null,
@@ -679,10 +682,16 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 2,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Video Player",
@@ -736,7 +745,8 @@
         }
       },
       "shelf_rank": 11,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "GIFs",
@@ -774,11 +784,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
@@ -788,10 +793,16 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 13,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Sports",
@@ -829,11 +840,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "web": {
           "label_type": 0,
           "label_until": null,
@@ -843,10 +849,16 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 18,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Board Game",
@@ -883,12 +895,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -900,7 +912,8 @@
         }
       },
       "shelf_rank": 5,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Board Game",
@@ -937,6 +950,11 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "android": {
           "label_type": 0,
           "label_until": null,
@@ -946,15 +964,11 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
-        },
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 10,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Card Game",
@@ -996,11 +1010,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "web": {
           "label_type": 0,
           "label_until": null,
@@ -1010,10 +1019,16 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 7,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Card Game",
@@ -1056,19 +1071,20 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
       "shelf_rank": 17,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Classic",
@@ -1122,7 +1138,8 @@
         }
       },
       "shelf_rank": 14,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Creative",
@@ -1159,6 +1176,11 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        },
         "android": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
@@ -1168,15 +1190,11 @@
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 4,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Competitive",
@@ -1187,7 +1205,7 @@
     "id": "945737671223947305",
     "name": "Putt Party",
     "icon": "12ee915c2f75d7f2c7d551819534f158",
-    "description": "Perfect your putts in this pumped-up production of Putt Party, a putting golf game with power-ups. Putt Party Paradise now has more courses, extra power-ups, and a new tournament mode!",
+    "description": "Perfect your putts in this pumped-up production of Putt Party, a putting golf game with power-ups. Putt Party Paradise now has more courses, extra power-ups, and a tournament mode!",
     "summary": "",
     "type": null,
     "cover_image": "95c64853134eb048670d9cfbbe92853b",
@@ -1213,12 +1231,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1230,7 +1248,8 @@
         }
       },
       "shelf_rank": 8,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Arcade",
@@ -1267,11 +1286,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 2,
-          "label_until": "2024-01-03T08:00:00+00:00",
-          "release_phase": "global_launch"
-        },
         "ios": {
           "label_type": 2,
           "label_until": "2024-01-03T08:00:00+00:00",
@@ -1281,10 +1295,16 @@
           "label_type": 2,
           "label_until": "2024-01-03T08:00:00+00:00",
           "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 2,
+          "label_until": "2024-01-03T08:00:00+00:00",
+          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 1,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Arcade",
@@ -1322,6 +1342,11 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2023-12-14T08:00:00+00:00",
+          "release_phase": "global_launch"
+        },
         "android": {
           "label_type": 0,
           "label_until": null,
@@ -1331,15 +1356,11 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
-        },
-        "web": {
-          "label_type": 1,
-          "label_until": "2023-12-14T08:00:00+00:00",
-          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 6,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     },
     "tags": [
       "Board Game",
@@ -1397,7 +1418,8 @@
         }
       },
       "shelf_rank": 2147483647,
-      "has_csp_exception": false
+      "has_csp_exception": false,
+      "displays_advertisements": false
     }
   },
   {
@@ -1449,9 +1471,19 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
       },
       {
         "os": "win32",
@@ -1461,16 +1493,6 @@
       {
         "os": "win32",
         "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
