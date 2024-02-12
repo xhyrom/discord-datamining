@@ -1711,6 +1711,7 @@
                     application: k,
                     hideHeader: d,
                     activityGuild: null != U ? U : D,
+                    showReactions: G,
                     renderActions: o ? () => (0, l.jsxs)("div", {
                         className: s(G && O.actionsWrapper),
                         children: [(0, l.jsx)(R, {
@@ -34303,32 +34304,33 @@
                         type: t,
                         renderActions: n,
                         className: l,
-                        application: i
-                    } = this.props, s = this.activity;
-                    if (null == s || s.type === k.ActivityTypes.CUSTOM_STATUS) return null;
-                    let r = "UserPopout" === t || "UserPopoutV2" === t,
-                        u = "Profile" === t || "ProfileV2" === t,
-                        d = "ActivityFeed" === t,
-                        c = "StreamPreview" === t,
-                        f = !1;
-                    (0, T.default)(s) ? (e = this.renderXboxImage(), f = !0) : null == (e = this.renderImage(s)) && (f = null != (e = this.renderGameImage(s)));
-                    let p = this.renderName(s),
-                        m = this.renderDetails(s),
-                        h = this.renderState(s, i),
-                        E = this.renderTimePlayed(s),
-                        g = null != n ? n() : null,
-                        S = this.renderTimeBar(s),
-                        C = ![e, p, m, h, E, S, g].some(e => null != e);
+                        application: i,
+                        showReactions: s
+                    } = this.props, r = this.activity;
+                    if (null == r || r.type === k.ActivityTypes.CUSTOM_STATUS) return null;
+                    let u = "UserPopout" === t || "UserPopoutV2" === t,
+                        d = "Profile" === t || "ProfileV2" === t,
+                        c = "ActivityFeed" === t,
+                        f = "StreamPreview" === t,
+                        p = !1;
+                    (0, T.default)(r) ? (e = this.renderXboxImage(), p = !0) : null == (e = this.renderImage(r)) && (p = null != (e = this.renderGameImage(r)));
+                    let m = this.renderName(r),
+                        h = this.renderDetails(r),
+                        E = this.renderState(r, i),
+                        g = this.renderTimePlayed(r),
+                        S = null != n ? n() : null,
+                        C = this.renderTimeBar(r),
+                        v = ![e, m, h, E, g, C, S].some(e => null != e);
                     return (0, a.jsxs)("div", {
                         className: o(this.getTypeClass("activity"), l),
-                        children: [this.renderHeader(C), (0, a.jsxs)("div", {
-                            className: f ? G.bodyAlignCenter : G.bodyNormal,
+                        children: [this.renderHeader(v), (0, a.jsxs)("div", {
+                            className: o(p ? G.bodyAlignCenter : G.bodyNormal, s && G.wrap),
                             children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, a.jsxs)(L.default.Child, {
-                                className: o((0, R.getClass)(G, "content", f ? "GameImage" : null != e ? "Images" : "NoImages", t)),
-                                children: [p, m, h, E, r || c ? null : S, d ? g : null]
-                            }), u ? g : null]
-                        }), r ? S : null, r || c ? g : null, (0, a.jsx)(K, {
-                            activity: s
+                                className: o((0, R.getClass)(G, "content", p ? "GameImage" : null != e ? "Images" : "NoImages", t)),
+                                children: [m, h, E, g, u || f ? null : C, c ? S : null]
+                            }), d ? S : null]
+                        }), u ? C : null, u || f ? S : null, (0, a.jsx)(K, {
+                            activity: r
                         })]
                     })
                 }
@@ -38165,4 +38167,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35170.ee8e95fdde821b68df22.js.map
+//# sourceMappingURL=35170.c5ecbfec48c645ac9554.js.map

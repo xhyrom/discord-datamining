@@ -2810,7 +2810,8 @@
                 timestamp: "timestamp__1ce6c ellipsis__427eb textRow__4750e",
                 twitchBackgroundImage: "twitchBackgroundImage__5dd9c",
                 twitchImageContainer: "twitchImageContainer__0f1f8",
-                twitchImageOverlay: "twitchImageOverlay__28086"
+                twitchImageOverlay: "twitchImageOverlay__28086",
+                wrap: "wrap_d2851e"
             }
         },
         123106: function(e, t, a) {

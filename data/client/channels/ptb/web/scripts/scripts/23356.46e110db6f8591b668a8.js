@@ -29352,7 +29352,6 @@
                 return {
                     nonce: "",
                     useGuildVersions: !1,
-                    userGuildSettingsVersion: -1,
                     version: r,
                     cacheCreationDate: null,
                     apiCodeVersion: 0,
@@ -29365,7 +29364,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return A
+                    return S
                 }
             }), n("222007");
             var s, i = n("446674"),
@@ -29381,37 +29380,35 @@
             let g = new d.default("ClientStateStore"),
                 m = f.initialState.nonce,
                 h = f.initialState.useGuildVersions,
-                v = f.initialState.userGuildSettingsVersion,
-                E = f.initialState.cacheCreationDate,
-                p = f.initialState.apiCodeVersion,
-                y = new Set(null !== (s = f.initialState.guildIdsRequiringDeletedIdsSync) && void 0 !== s ? s : []),
-                T = f.initialState.lastSelectedGuildId,
-                C = !1;
+                v = f.initialState.cacheCreationDate,
+                E = f.initialState.apiCodeVersion,
+                p = new Set(null !== (s = f.initialState.guildIdsRequiringDeletedIdsSync) && void 0 !== s ? s : []),
+                y = f.initialState.lastSelectedGuildId,
+                T = !1;
 
-            function I() {
-                v = -1, f.clear(), p = 0, y.clear()
+            function C() {
+                f.clear(), E = 0, p.clear()
             }
-            class S extends i.default.Store {
+            class I extends i.default.Store {
                 initialize() {
                     this.waitFor(u.default), this.syncWith([l.default], () => {
-                        if (!C) return !1;
-                        T = l.default.getGuildId()
+                        if (!T) return !1;
+                        y = l.default.getGuildId()
                     })
                 }
                 persist(e) {
-                    g.verbose("writing ClientStateStore (nonce: ".concat(e, ")")), null == E && (E = Date.now()), m = e, f.persist(u.default.getId(), {
+                    g.verbose("writing ClientStateStore (nonce: ".concat(e, ")")), null == v && (v = Date.now()), m = e, f.persist(u.default.getId(), {
                         nonce: e,
                         version: c.CACHE_VERSION,
                         useGuildVersions: h,
-                        userGuildSettingsVersion: v,
-                        cacheCreationDate: E,
-                        apiCodeVersion: p,
-                        guildIdsRequiringDeletedIdsSync: Array.from(y),
-                        lastSelectedGuildId: T
+                        cacheCreationDate: v,
+                        apiCodeVersion: E,
+                        guildIdsRequiringDeletedIdsSync: Array.from(p),
+                        lastSelectedGuildId: y
                     })
                 }
                 clear() {
-                    I()
+                    C()
                 }
                 async getClientState() {
                     let [e, t] = await Promise.all([h && (0, _.isCacheEnabled)() ? a.default.getCommittedVersions() : Promise.resolve({}), h && (0, _.isCacheEnabled)() ? o.default.getCommittedVersions() : Promise.resolve({})]);
@@ -29419,53 +29416,46 @@
                         knownGuildVersions: e,
                         highestLastMessageId: t.highest_last_message_id,
                         readStateVersion: t.read_state_version,
-                        userGuildSettingsVersion: v,
+                        userGuildSettingsVersion: t.user_guild_settings_version,
                         privateChannelsVersion: t.private_channels_version,
-                        apiCodeVersion: p,
-                        lastSelectedGuildId: T,
+                        apiCodeVersion: E,
+                        lastSelectedGuildId: y,
                         userSettingsVersion: t.user_settings_version
                     }
                 }
                 getGuildIdsRequiringDeletedIdsSync() {
-                    return y
+                    return p
                 }
                 getSavedNonce() {
                     return m
                 }
             }
-            S.displayName = "ClientStateStore";
-            var A = new S(r.default, {
+            I.displayName = "ClientStateStore";
+            var S = new I(r.default, {
                 BACKGROUND_SYNC: function(e) {
-                    for (let t of e.guilds) "partial" === t.data_mode && t.unableToSyncDeletes && y.add(t.id);
-                    null != e.apiCodeVersion && (p = e.apiCodeVersion)
+                    for (let t of e.guilds) "partial" === t.data_mode && t.unableToSyncDeletes && p.add(t.id);
+                    null != e.apiCodeVersion && (E = e.apiCodeVersion)
                 },
                 CONNECTION_OPEN: function(e) {
                     let {
                         guilds: t,
-                        userGuildSettings: n,
-                        apiCodeVersion: s
+                        apiCodeVersion: n
                     } = e;
-                    for (let e of (v = n.version, p = s, C = !0, h = !0, t)) e.unableToSyncDeletes && y.add(e.id), e.unableToSyncDeletes && y.add(e.id)
+                    for (let e of (E = n, T = !0, h = !0, t)) e.unableToSyncDeletes && p.add(e.id), e.unableToSyncDeletes && p.add(e.id)
                 },
                 DELETED_ENTITY_IDS: function(e) {
-                    y.delete(e.guild_id)
+                    p.delete(e.guild_id)
                 },
                 GUILD_CREATE: function(e) {
                     let {
                         guild: t
                     } = e;
-                    !t.unavailable && (t.unableToSyncDeletes && y.add(t.id), t.unableToSyncDeletes && y.add(t.id))
+                    !t.unavailable && (t.unableToSyncDeletes && p.add(t.id), t.unableToSyncDeletes && p.add(t.id))
                 },
-                CLEAR_GUILD_CACHE: I,
-                CLEAR_CACHES: I,
-                LOGOUT: I,
-                LOGIN: I,
-                USER_GUILD_SETTINGS_FULL_UPDATE: function(e) {
-                    let {
-                        userGuildSettings: t
-                    } = e;
-                    for (let e of t) null != e.version && e.version > v && (v = e.version)
-                }
+                CLEAR_GUILD_CACHE: C,
+                CLEAR_CACHES: C,
+                LOGOUT: C,
+                LOGIN: C
             })
         },
         91131: function(e, t, n) {
@@ -61808,4 +61798,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.1395b69583608e5f9f10.js.map
+//# sourceMappingURL=23356.46e110db6f8591b668a8.js.map
