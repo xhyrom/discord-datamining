@@ -1,0 +1,30 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_enhanced_HD_streaming_roadblock",
+    "label": "Enhanced HD Streaming Roadblock",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Variant 1A",
+      "Treatment 2: Variant 1B",
+      "Treatment 3: Variant 2A",
+      "Treatment 4: Variant 2B"
+    ],
+    "hash": 4291495091,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "variant"
+    ]
+  }
+}
