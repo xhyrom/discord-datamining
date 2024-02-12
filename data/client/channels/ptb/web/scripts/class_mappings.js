@@ -18658,14 +18658,6 @@
                 headerContainerGift: "headerContainerGift__108ba"
             }
         },
-        526380: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                container: "container_cf921f",
-                image: "image_f8d345",
-                link: "link_bb6ae8"
-            }
-        },
         322859: function(e, t, n) {
             "use strict";
             e.exports = {
