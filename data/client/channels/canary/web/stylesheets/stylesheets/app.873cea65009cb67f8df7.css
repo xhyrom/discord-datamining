@@ -124528,6 +124528,7 @@ div.nagbar_c731ff {
     --guild-icon-inactive-bg: var(--primary-630);
     --guild-icon-inactive-nested-bg: var(--primary-600);
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
+    --halo-positive: hsl(var(--green-360-hsl) / 0.24);
     --header-muted: var(--primary-360);
     --header-primary: var(--primary-130);
     --header-secondary: var(--primary-330);
@@ -124842,6 +124843,7 @@ div.nagbar_c731ff {
     --guild-icon-inactive-bg: var(--primary-130);
     --guild-icon-inactive-nested-bg: var(--white-500);
     --guild-notifications-bottom-sheet-pill-background: var(--white-500);
+    --halo-positive: hsl(var(--green-360-hsl) / 0.24);
     --header-muted: var(--primary-460);
     --header-primary: var(--primary-860);
     --header-secondary: var(--primary-500);
@@ -125156,6 +125158,7 @@ div.nagbar_c731ff {
     --guild-icon-inactive-bg: var(--black-500);
     --guild-icon-inactive-nested-bg: var(--black-500);
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
+    --halo-positive: hsl(var(--green-360-hsl) / 0.24);
     --header-muted: var(--plum-10);
     --header-primary: var(--plum-2);
     --header-secondary: var(--plum-8);
@@ -125470,6 +125473,7 @@ div.nagbar_c731ff {
     --guild-icon-inactive-bg: var(--plum-20);
     --guild-icon-inactive-nested-bg: var(--plum-20);
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
+    --halo-positive: hsl(var(--green-360-hsl) / 0.24);
     --header-muted: var(--plum-10);
     --header-primary: var(--plum-4);
     --header-secondary: var(--plum-9);
@@ -126932,4 +126936,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.add2a78c20286f9fcc77.css.map*/
+/*# sourceMappingURL=app.873cea65009cb67f8df7.css.map*/
