@@ -1558,9 +1558,9 @@
                         Y = null == H || B,
                         V = null == H || G.length > 1,
                         K = null != A || U.length > 0,
-                        W = j && B,
-                        z = null != F && null != D && Y && V && (K || j) && !W;
-                    Y ? K ? W && null != F && (n = E.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
+                        z = j && B,
+                        W = null != F && null != D && Y && V && (K || j) && !z;
+                    Y ? K ? z && null != F && (n = E.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
                         tierName: F.name
                     })) : n = E.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = E.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, l.useEffect(() => {
                         v && null != y && k && u.default.wait(() => {
@@ -1599,7 +1599,7 @@
                     }, [v, a, L, G, D, A, K, j, M, g, w, N, U, O, R]);
                     return {
                         openModal: q,
-                        canOpenModal: z,
+                        canOpenModal: W,
                         cannotOpenReason: n
                     }
                 }
@@ -1660,7 +1660,7 @@
                     location: "PaymentContextProvider"
                 }, {
                     autoTrackExposure: g && N
-                }), [R, L] = l.useState(g ? O && N ? c.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [P, b] = l.useState(t && u.GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING.has((0, u.getGiftExperience)(_)) ? d.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : s), [v, y] = l.useState(void 0), [F, D] = l.useState(void 0), x = (0, u.useGetGiftCode)(h, t), [G, M] = l.useState(!1), [w, H] = l.useState(!1), [U, k] = l.useState(), j = l.useCallback(e => {
+                }), [R, L] = l.useState(g ? O && N ? c.PremiumGiftStyles.SEASONAL_STANDARD_BOX : f : p), [P, b] = l.useState(t && (0, u.getGiftExperience)(_) === u.GiftExperience.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD ? d.default.Messages.DEFAULT_CUSTOM_GIFT_MESSAGE : s), [v, y] = l.useState(void 0), [F, D] = l.useState(void 0), x = (0, u.useGetGiftCode)(h, t), [G, M] = l.useState(!1), [w, H] = l.useState(!1), [U, k] = l.useState(), j = l.useCallback(e => {
                     let {
                         onSubscriptionConfirmation: t
                     } = e;
@@ -2648,4 +2648,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67690.a6107c09f36eb7209eae.js.map
+//# sourceMappingURL=67690.949a40c153655ea7be23.js.map

@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23356"], {
+    ["23303"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -43953,30 +43953,6 @@
                 })
             }
         },
-        977591: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ExpandedGiftingRevampExperiment: function() {
-                    return i
-                }
-            });
-            var s = n("862205");
-            let i = (0, s.createExperiment)({
-                kind: "user",
-                id: "2023-11_expanded_gifting_revamp_experiment",
-                label: "Expanded Gifting Revamp Experiment",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Show expanded gifting revamp experience",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
-        },
         432173: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -58368,75 +58344,66 @@
         659632: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                isCustomGiftEnabled: function() {
-                    return M
-                },
                 GiftExperience: function() {
                     return s
                 },
-                GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING: function() {
-                    return w
-                },
-                GIFT_EXPERIENCES_WITH_CUSTOM_EMOJI_SOUNDBOARD: function() {
-                    return L
-                },
                 getGiftExperience: function() {
-                    return U
+                    return M
                 },
                 shouldShowCustomGiftExperience: function() {
-                    return G
+                    return w
                 },
                 makeComboId: function() {
-                    return F
+                    return L
                 },
                 parseComboId: function() {
-                    return H
+                    return U
                 },
                 isGiftCodeEmbed: function() {
-                    return x
+                    return F
                 },
                 findGiftCodes: function() {
-                    return Y
+                    return H
                 },
                 getGiftCodeURL: function() {
-                    return j
+                    return B
                 },
                 resolveGiftCode: function() {
-                    return K
+                    return x
                 },
                 trackGiftCodeCopy: function() {
-                    return W
+                    return Y
                 },
                 getStep: function() {
-                    return z
+                    return j
                 },
                 getHeaderText: function() {
-                    return q
+                    return K
                 },
                 getButtonText: function() {
-                    return X
+                    return W
                 },
                 getBodyText: function() {
-                    return Q
+                    return z
                 },
                 getErrorMessage: function() {
-                    return Z
+                    return q
                 },
                 firstLibraryApplicationForGiftCode: function() {
-                    return J
+                    return X
                 },
                 processGiftCodeInput: function() {
-                    return $
+                    return Q
                 },
                 useGetGiftCode: function() {
-                    return ee
+                    return Z
                 }
             }), n("222007"), n("781738"), n("794252");
             var s, i, r = n("506838"),
-                a = n("446674"),
-                o = n("333805"),
-                d = n("791160"),
-                u = n("977591"),
+                a = n("394846"),
+                o = n("446674"),
+                d = n("333805"),
+                u = n("791160"),
                 l = n("353365"),
                 f = n("697218"),
                 _ = n("599110"),
@@ -58460,33 +58427,18 @@
                 b = O(4, 6),
                 V = O(5, 3),
                 R = [P, b, V, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-                k = new RegExp("^(".concat("WUMP-?", ")?(").concat(R, ")$")),
-                M = e => null != e && !0;
-            (i = s || (s = {}))[i.DEFAULT = 0] = "DEFAULT", i[i.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", i[i.CUSTOM_MESSAGE = 2] = "CUSTOM_MESSAGE", i[i.EMOJI_SOUNDBOARD = 3] = "EMOJI_SOUNDBOARD";
-            let w = new Set([2, 3]),
-                L = new Set([3]),
-                U = function(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "getGiftExperience";
-                    return null != e ? 3 : u.ExpandedGiftingRevampExperiment.getCurrentConfig({
-                        location: n
-                    }, {
-                        autoTrackExposure: t
-                    }).enabled ? 1 : 0
-                },
-                G = function(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "shouldShowCustomGiftExperience";
-                    return 0 !== U(e, t, n)
-                };
+                k = new RegExp("^(".concat("WUMP-?", ")?(").concat(R, ")$"));
+            (i = s || (s = {}))[i.DEFAULT = 0] = "DEFAULT", i[i.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", i[i.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD";
+            let M = e => a.isMobile || a.isTablet ? 0 : null != e ? 2 : 1,
+                w = e => 0 !== M(e);
 
-            function F(e) {
+            function L(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
                     n = arguments.length > 2 ? arguments[2] : void 0;
                 return "".concat(e, ":").concat(null != t ? t : "", ":").concat(null != n ? n : "")
             }
 
-            function H(e) {
+            function U(e) {
                 let [t, n, s] = e.split(":");
                 return {
                     skuId: t,
@@ -58495,25 +58447,25 @@
                 }
             }
 
-            function B(e) {
+            function G(e) {
                 return e.replace(/[^A-Za-z0-9]/g, "")
             }
-            let x = e => (null == e ? void 0 : e.type) === E.MessageTypes.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === E.MessageEmbedTypes.GIFT,
-                Y = e => {
+            let F = e => (null == e ? void 0 : e.type) === E.MessageTypes.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === E.MessageEmbedTypes.GIFT,
+                H = e => {
                     let t;
                     if (null == e) return [];
                     let n = new Set;
-                    for (; null != (t = S.exec(e)) && n.size < 3;) n.add(B(t[1]));
-                    for (; null != (t = N.exec(e)) && n.size < 3;) n.add(B(t[1]));
+                    for (; null != (t = S.exec(e)) && n.size < 3;) n.add(G(t[1]));
+                    for (; null != (t = N.exec(e)) && n.size < 3;) n.add(G(t[1]));
                     return Array.from(n)
                 };
 
-            function j() {
+            function B() {
                 let e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
                     n = window.GLOBAL_ENV.GIFT_CODE_HOST;
                 return null == n || (0, g.isAndroid)() ? (n = location.host, e = "/gifts/".concat(t)) : e = "/".concat(t), "".concat(location.protocol, "//").concat(n).concat(e)
             }
-            async function K(e) {
+            async function x(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 try {
@@ -58541,22 +58493,22 @@
                     throw _.default.track(E.AnalyticEvents.GIFT_CODE_RESOLVED, {
                         resolved: !1,
                         gift_code: e
-                    }), new o.default(t)
+                    }), new d.default(t)
                 }
             }
 
-            function W(e, t) {
+            function Y(e, t) {
                 _.default.track(E.AnalyticEvents.GIFT_CODE_COPIED, {
-                    ...(0, d.default)(t, !1, !1),
+                    ...(0, u.default)(t, !1, !1),
                     ...e.analyticsData
                 })
             }
 
-            function z(e, t, n, s, i, r, a) {
+            function j(e, t, n, s, i, r, a) {
                 return null == n && (s || i || null == e) ? !a || r || s || i ? s && (t.isSubscription || null != e) ? E.GiftCodeModalStates.SUCCESS : E.GiftCodeModalStates.CONFIRM : E.GiftCodeModalStates.OPEN : E.GiftCodeModalStates.ERROR
             }
 
-            function q(e, t, n) {
+            function K(e, t, n) {
                 switch (e) {
                     case E.GiftCodeModalStates.ERROR:
                         return y.default.Messages.GIFT_CONFIRMATION_HEADER_FAIL;
@@ -58572,7 +58524,7 @@
                 }
             }
 
-            function X(e, t, n) {
+            function W(e, t, n) {
                 switch (e) {
                     case E.GiftCodeModalStates.ERROR:
                         return y.default.Messages.GIFT_CONFIRMATION_BUTTON_FAIL;
@@ -58590,7 +58542,7 @@
                 }
             }
 
-            function Q(e) {
+            function z(e) {
                 let {
                     step: t,
                     sku: n,
@@ -58603,7 +58555,7 @@
                 } = e;
                 switch (t) {
                     case E.GiftCodeModalStates.ERROR:
-                        return Z(s, i, a, o, d);
+                        return q(s, i, a, o, d);
                     case E.GiftCodeModalStates.SUCCESS:
                         if (null != u) {
                             var l;
@@ -58647,7 +58599,7 @@
                 }
             }
 
-            function Z(e, t, n, s, i) {
+            function q(e, t, n, s, i) {
                 let r = y.default.Messages.GIFT_CONFIRMATION_BODY_OWNED.format({
                     onGoToLibrary: i
                 });
@@ -58682,21 +58634,21 @@
                 }(t, a)
             }
 
-            function J(e, t, n) {
+            function X(e, t, n) {
                 let s = t.applicationId,
                     i = e.length > 0 ? e : [s],
                     r = i.map(e => n.getLibraryApplication(s, e, !0)).filter(c.isNotNullish);
                 return r.length === i.length ? r[0] : null
             }
 
-            function $(e) {
+            function Q(e) {
                 let t = e.trim().split("/").pop(),
                     n = t.match(k);
                 if (null == n) return null;
                 let [s, i, r] = n;
                 return null == r ? null : r.replace(/-/g, "")
             }
-            let ee = (e, t) => (0, a.useStateFromStores)([l.default], () => {
+            let Z = (e, t) => (0, o.useStateFromStores)([l.default], () => {
                 if (null == e || !t) return null;
                 let n = l.default.getGiftCode(e);
                 return null == n || "" === n ? null : n
@@ -61798,4 +61750,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.46e110db6f8591b668a8.js.map
+//# sourceMappingURL=23303.5787b5462d5f4c31e0b1.js.map
