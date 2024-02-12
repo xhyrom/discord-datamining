@@ -1,5 +1,5 @@
 <p>In Discord, there are three ways to communicate with your friends: voice, video, and text. For this article, you'll learn more about where to engage with others through text. If you want to learn more about communicating through voice, please check out the <a href="https://support.discord.com/hc/en-us/articles/19583625604887" target="_blank" rel="noopener noreferrer">Voice Channels FAQs</a> article.</p>
-<p><span class="wysiwyg-font-size-large">What this article covers:</span></p>
+<p><strong><span class="wysiwyg-font-size-large">What this article covers:</span></strong></p>
 <ul>
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/4412085582359#h_01HP046TF46Y6VSBP1V4E18JYC">Text Channels</a>
@@ -25,7 +25,7 @@
 </ul>
 <h1 id="h_01HP046TF46Y6VSBP1V4E18JYC">Text Channels</h1>
 <p><strong>Text channels</strong>, distinguished by the <strong>#</strong> symbol (also known as the pound sign, hashtag, or octothorpe) in the channel list of a server, are where text communications can take place.</p>
-<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/21170418255383" width="624" height="465"></span></p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/21170418255383" width="624" height="465"></span></p>
 <p>When you want to utilize text channels, here are a few things to keep in mind:</p>
 <ul>
     <li>Selecting a channel in the left-hand panel will highlight it and bring the channel's content to the main view of the Discord app.</li>
@@ -66,10 +66,10 @@
 <p>Message previews keep you in the loop of the active message conversation happening in the voice channel without needing to open the chat itself. However, if you want to turn these previews off for whatever reason simply press the three dots icon above and uncheck <strong>Show New Message Previews</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21170474045719" width="321" height="124"></p>
 <p>As for other indicators of new messages while in the voice channel - unread mentions will have a red number indicator, while unread messages will simply be indicated with a gray number indicator. Mentions within a text chat will also appear in your inbox, which can be accessed in the upper right corner of the client.</p>
-<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/21170418346391" width="130" height="60"></span><span style="color: #2e3338;"> </span></p>
-<h4 id="h_01HP046TF4V2T6SEPK7Z98GCSN"><span style="color: #666666;">Left: mention notification, Right: unread notification</span></h4>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/21170418346391" width="130" height="60"></span><span style="color: #2e3338;" data-darkreader-inline-color=""> </span></p>
+<h4 id="h_01HP046TF4V2T6SEPK7Z98GCSN"><span style="color: #666666;" data-darkreader-inline-color="">Left: mention notification, Right: unread notification</span></h4>
 <h2 id="h_01HP046TF42FSSMBTNM0DAFMQ1">Channel permissions for Text Chat in Voice Channels</h2>
-<h3 id="h_01HP046TF4MKRG78JX70Y2J2HX"><span style="color: #434343;">If a user or role does not have the correct permissions for a text chat or if the text chat permissions for a voice channel are disabled, then impacted users will be unable to write or read previous messages in the text chat.</span></h3>
+<h3 id="h_01HP046TF4MKRG78JX70Y2J2HX"><span style="color: #434343;" data-darkreader-inline-color="">If a user or role does not have the correct permissions for a text chat or if the text chat permissions for a voice channel are disabled, then impacted users will be unable to write or read previous messages in the text chat.</span></h3>
 <p>Like many of the features on Discord, there are permissions that can be customized and managed by the server owner or a moderator to dictate how various roles or a particular voice channel can utilize the new embedded chat in voice channel feature.</p>
 <p>Here's where to find the permissions for text chat in voice channels below.</p>
 <p><strong>Desktop/Browser</strong></p>
@@ -83,9 +83,9 @@
 <p>3. Now you can go through each setting and determine what you want to enable or disable. In order for a member of the server to be able to chat in the text chat in a voice channel they at least need the <strong>Send Messages</strong> and <strong>Read Message History</strong> enabled.</p>
 <p>4. You do not need to save your settings, as these will save automatically. You can either swipe out of this menu or tap the back button to leave the permission settings.</p>
 <p class="wysiwyg-text-align-center"><img src="https://lh7-us.googleusercontent.com/egw4h_7JvBiRfwNYzRXyN8vqxG78oX8gdmhbNg8p1RY7ywtswkP7ZGxxOISqvMdu2ul3FDXnJE5_lSK8gKLWS9AwHDmxHVPAjTKlRx2RmSwqzj_qpcz-5Z5efN2Wihw0x6KbmLBI9IJEdwe6nUSAR7c" width="313" height="632"></p>
-<p>There is so much you can do through text communication on Discord! You can learn more about how to use text in the <a href="https://support.discord.com/hc/en-us/sections/115000458672-Text-Chat"><span class="wysiwyg-underline" style="color: #1155cc;">Text Chat section of Help Center</span></a>. Here are some of the articles you'll find there:</p>
+<p>There is so much you can do through text communication on Discord! You can learn more about how to use text in the <a href="https://support.discord.com/hc/en-us/sections/115000458672-Text-Chat"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Text Chat section of Help Center</span></a>. Here are some of the articles you'll find there:</p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/210298617"><span class="wysiwyg-underline" style="color: #1155cc;">Markdown Text 101 (Chat Formatting: Bold, Italic, Underline)</span></a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/212517297"><span class="wysiwyg-underline" style="color: #1155cc;">Text-to-Speech 101</span></a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/360041139231"><span class="wysiwyg-underline" style="color: #1155cc;">Adding Emojis and Reactions</span></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/210298617"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Markdown Text 101 (Chat Formatting: Bold, Italic, Underline)</span></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/212517297"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Text-to-Speech 101</span></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360041139231"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Adding Emojis and Reactions</span></a></li>
 </ul>
