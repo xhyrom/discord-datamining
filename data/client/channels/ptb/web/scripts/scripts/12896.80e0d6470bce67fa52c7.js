@@ -214,10 +214,10 @@
                     return J
                 },
                 exportClip: function() {
-                    return z
+                    return Y
                 },
                 dismissClipsUserEducation: function() {
-                    return Y
+                    return z
                 }
             }), n("222007"), n("424973");
             var a = n("773364"),
@@ -570,13 +570,13 @@
                     filepath: e
                 }))
             }
-            async function z(e, t) {
+            async function Y(e, t) {
                 let n = m.default.getMediaEngine(),
                     a = await n.exportClip(e.filepath, t);
                 return (0, N.default)(a)
             }
 
-            function Y(e) {
+            function z(e) {
                 d.default.dispatch({
                     type: "CLIPS_DISMISS_EDUCATION",
                     educationType: e
@@ -1450,7 +1450,7 @@
                     voiceChannelActivityNotifsEnabled: n
                 } = d.useExperiment({
                     location: "useVoiceActivityNotificationSettingsExperiment",
-                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : ""
+                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : i.EMPTY_STRING_GUILD_ID
                 }, {
                     disable: (null == e ? void 0 : e.type) !== i.ChannelTypes.GUILD_VOICE,
                     autoTrackExposure: !1
@@ -1470,7 +1470,7 @@
                 let {
                     voiceChannelActivityNotifsEnabled: n
                 } = d.getCurrentConfig({
-                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : "",
+                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : i.EMPTY_STRING_GUILD_ID,
                     location: "hasVoiceChannelActivityNotifsEnabled"
                 });
                 return n
@@ -1478,4 +1478,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12896.65dc23aa5b1f26df2e91.js.map
+//# sourceMappingURL=12896.80e0d6470bce67fa52c7.js.map
