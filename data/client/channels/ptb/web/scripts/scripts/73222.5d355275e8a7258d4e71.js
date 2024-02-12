@@ -16601,10 +16601,6 @@
                 QUESTS_BAR_PROGRESS_EXPANDED_SUBHEADING_COMPLETE: "Claim by {expirationDate}.",
                 QUESTS_LANDING_PAGE_ERROR_HEADING: "Whoops!",
                 QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the quest there.",
-                QUESTS_GET_THIS_GAME: "Get this game",
-                QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
-                QUESTS_HIDE_THIS: "Hide this",
-                QUESTS_FIND_QUEST: "You can find this again in User Settings > Gift Inventory",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -18134,7 +18130,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265640", ", Version Hash: ").concat("35df629e894b90b3bb23e4556e74baf599c272be")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265639", ", Version Hash: ").concat("41f63f98ecae237de95598ca6803a2697f211fa4")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20414,8 +20410,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "265640", "265640"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265640")), _ = 0), _
+                let _ = parseInt((e = "265639", "265639"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265639")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36296,4 +36292,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73222.55ea230a373f89f4d5ae.js.map
+//# sourceMappingURL=73222.5d355275e8a7258d4e71.js.map
