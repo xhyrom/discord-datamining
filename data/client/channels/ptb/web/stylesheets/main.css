@@ -44925,8 +44925,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -74484,7 +74484,7 @@ input::-webkit-inner-spin-button {
     padding: 8px 0
 }
 
-.heroAnimationWrapper__58aa7 {
+.heroAssetWrapper_e3abb0 {
     border-radius: 8px 8px 0 0;
     overflow: hidden;
     position: absolute;
@@ -74496,7 +74496,7 @@ input::-webkit-inner-spin-button {
     z-index: 1
 }
 
-.heroAnimationWrapper__58aa7:after {
+.heroAssetWrapper_e3abb0:after {
     background-color: currentColor;
     bottom: 0;
     content: "";
@@ -74509,9 +74509,9 @@ input::-webkit-inner-spin-button {
     z-index: 1
 }
 
-.heroAnimation__05a18 {
-    -o-object-fit: contain;
-    object-fit: contain;
+.heroAsset__1fdf2 {
+    -o-object-fit: cover;
+    object-fit: cover;
     height: 240px;
     position: absolute;
     width: 240px;
@@ -126932,4 +126932,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4da6366734a7539e7dcd.css.map*/
+/*# sourceMappingURL=app.add2a78c20286f9fcc77.css.map*/
