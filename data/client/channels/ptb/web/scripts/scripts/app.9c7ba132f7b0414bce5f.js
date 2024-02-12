@@ -8486,6 +8486,7 @@
             e.exports = {
                 documentModeDescription: "documentModeDescription_b5a4b5",
                 documentModeGroup: "documentModeGroup_c1f054",
+                enhancedSelectorNitroText: "enhancedSelectorNitroText__4f836",
                 logoPrimary: "logoPrimary__3a045",
                 premiumIcon: "premiumIcon_c9b2b7 logoPrimary__3a045",
                 qualitySettingsContainer: "qualitySettingsContainer__5cacd",
@@ -8504,9 +8505,17 @@
         139191: function(e, t, n) {
             "use strict";
             e.exports = {
+                ctaGradientBackground: "ctaGradientBackground__279d5",
+                enhancedBanner: "enhancedBanner__09743",
+                enhancedCTA: "enhancedCTA__35234",
+                enhancedCTAs: "enhancedCTAs__812fa",
+                enhancedUpsellText: "enhancedUpsellText__95a90",
                 gradientBackground: "gradientBackground_aa82b3",
+                gradientGlow: "gradientGlow__48044",
                 iconColor: "iconColor__6cd6f",
                 iconTextContainer: "iconTextContainer__4f1e0",
+                learnMoreCTA: "learnMoreCTA__7d633",
+                premiumIcon: "premiumIcon__3680f",
                 textLink: "textLink__973c8",
                 upsellBanner: "upsellBanner__4c9fb",
                 upsellText: "upsellText_fe6864"
@@ -20786,9 +20795,15 @@
                 art: "art_ee3368",
                 artContainer: "artContainer__56b19",
                 artContainerBoxShadow: "artContainerBoxShadow__63ecb",
+                closeButton: "closeButton_ebe636",
                 content: "content__24381",
                 context: "context__77e70",
+                enhancedFooter: "enhancedFooter__4915c",
+                enhancedHeader: "enhancedHeader__7ec88",
+                enhancedPrimaryActions: "enhancedPrimaryActions_eb1da2",
+                enhancedSecondaryAction: "enhancedSecondaryAction__8ec30",
                 footer: "footer_c793da",
+                getNitroCTA: "getNitroCTA__722ef",
                 header: "header__7b420",
                 learnMoreLink: "learnMoreLink_a686d5",
                 newBadge: "newBadge_c5ecc3",
