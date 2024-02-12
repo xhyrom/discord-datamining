@@ -9465,9 +9465,6 @@
                     drafts: {
                         type: s.DraftType.ChannelMessage
                     },
-                    emojis: {
-                        button: !0
-                    },
                     permissions: {
                         requireSendMessages: !0
                     },
@@ -38157,4 +38154,4 @@
         }
     }
 ]);
-//# sourceMappingURL=827.62c85bccd0fcc634ab43.js.map
+//# sourceMappingURL=827.9898c8fce6b0302f32a5.js.map
