@@ -44660,8 +44660,8 @@ html .progress__4ef76 {
 }
 
 .memberCount_d3ce07 {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     display: flex;
     align-items: center
 }
@@ -127225,4 +127225,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f2fee212e6bda262caad.css.map*/
+/*# sourceMappingURL=app.c5558f4535608476c861.css.map*/
