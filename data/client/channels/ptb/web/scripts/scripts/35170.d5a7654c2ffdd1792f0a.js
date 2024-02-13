@@ -3115,7 +3115,6 @@
                                 isCurrentUser: V.id === i.id,
                                 color: k,
                                 look: w,
-                                channelId: U,
                                 isEmbedded: B
                             }, "join-activity-button"),
                             s = (0, l.jsx)(x.default, {
@@ -3313,33 +3312,32 @@
                     look: B,
                     hover: H,
                     user: V,
-                    channelId: K,
-                    isEmbedded: W = !1
+                    isEmbedded: K = !1
                 } = e, {
-                    analyticsLocations: Y
-                } = (0, c.default)(), [z, J] = i.useState(!1), q = (0, L.default)({
-                    channelId: K,
+                    analyticsLocations: W
+                } = (0, c.default)(), [Y, z] = i.useState(!1), J = (0, a.useStateFromStores)([I.default], () => I.default.getCurrentUser()), q = null == t ? void 0 : t.application_id, Z = (0, a.useStateFromStores)([O.default], () => K ? O.default.getEmbeddedActivityForUserId(V.id, q) : null, [V.id, K, q]), X = (0, L.default)({
+                    channelId: null == Z ? void 0 : Z.channelId,
                     userId: V.id,
                     activity: t
-                }), Z = (0, a.useStateFromStores)([I.default], () => I.default.getCurrentUser()), X = (0, a.useStateFromStores)([S.default, p.default, A.default, h.default], () => W || (null == t ? void 0 : t.application_id) != null && (0, x.isLaunchable)({
+                }), Q = (0, a.useStateFromStores)([S.default, p.default, A.default, h.default], () => K || (null == t ? void 0 : t.application_id) != null && (0, x.isLaunchable)({
                     LibraryApplicationStore: S.default,
                     LaunchableGameStore: p.default,
                     DispatchApplicationStore: A.default,
                     ConnectedAppsStore: h.default,
                     applicationId: t.application_id
-                })), Q = (0, a.useStateFromStores)([O.default], () => Array.from(O.default.getSelfEmbeddedActivities().values()).some(e => {
+                })), $ = (0, a.useStateFromStores)([O.default], () => Array.from(O.default.getSelfEmbeddedActivities().values()).some(e => {
                     let {
                         applicationId: n,
                         channelId: l
                     } = e;
-                    return n === (null == t ? void 0 : t.application_id) && l === q
-                })), $ = (0, a.useStateFromStores)([y.default], () => null != t && null != t.application_id && y.default.getState(t.application_id, k.ActivityActionTypes.JOIN) === k.ActivityActionStates.LOADING), [ee] = (0, f.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), et = (0, a.useStateFromStores)([m.default, g.default, E.default, T.default, v.default, _.default, C.default], () => (0, M.default)({
+                    return n === (null == t ? void 0 : t.application_id) && l === X
+                })), ee = (0, a.useStateFromStores)([y.default], () => null != t && null != t.application_id && y.default.getState(t.application_id, k.ActivityActionTypes.JOIN) === k.ActivityActionStates.LOADING), [et] = (0, f.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), en = (0, a.useStateFromStores)([m.default, g.default, E.default, T.default, v.default, _.default, C.default], () => (0, M.default)({
                     user: V,
                     activity: t,
-                    application: ee,
-                    channelId: q,
-                    currentUser: Z,
-                    isEmbedded: W,
+                    application: et,
+                    channelId: X,
+                    currentUser: J,
+                    isEmbedded: K,
                     ChannelStore: m.default,
                     GuildStore: g.default,
                     GuildMemberCountStore: E.default,
@@ -3347,14 +3345,14 @@
                     SelectedChannelStore: v.default,
                     VoiceStateStore: _.default,
                     PermissionStore: C.default
-                })), en = (0, d.useAnalyticsContext)(), el = !N.isPlatformEmbedded, ei = (0, P.default)(t, k.ActivityFlags.JOIN) || W;
-                if (null == t || !ei || null == t.application_id) return null;
-                let ea = !F && (el || X) && !z && !Q && (!W || et),
-                    es = null;
-                F ? es = w.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF : !el && !X && (es = w.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
+                })), el = (0, d.useAnalyticsContext)(), ei = !N.isPlatformEmbedded, ea = (0, P.default)(t, k.ActivityFlags.JOIN) || K;
+                if (null == t || !ea || null == t.application_id) return null;
+                let es = !F && (ei || Q) && !Y && !$ && (!K || en),
+                    er = null;
+                F ? er = w.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF : !ei && !Q && (er = w.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
                     name: t.name
                 }));
-                let er = async (e, t) => {
+                let eo = async (e, t) => {
                     var n;
                     null != t.session_id && null != t.application_id && (await o.default.join({
                         userId: e.id,
@@ -3369,24 +3367,24 @@
                         userId: e.id,
                         applicationId: t.application_id,
                         partyId: null === (n = t.party) || void 0 === n ? void 0 : n.id,
-                        locationObject: en.location,
-                        analyticsLocations: Y
+                        locationObject: el.location,
+                        analyticsLocations: W
                     }))
-                }, eo = async () => {
+                }, eu = async () => {
                     let e = !1;
-                    if (W) {
-                        if (!et || null == q || null == t.application_id) return;
+                    if (K) {
+                        if (!en || null == X || null == t.application_id) return;
                         e = await (0, R.default)({
                             applicationId: t.application_id,
                             currentEmbeddedApplication: n,
-                            activityChannelId: q,
-                            locationObject: en.location,
+                            activityChannelId: X,
+                            locationObject: el.location,
                             embeddedActivitiesManager: j.default,
-                            analyticsLocations: Y
+                            analyticsLocations: W
                         })
                     }
                     if (!e) {
-                        et && er(V, t), J(!0);
+                        en && eo(V, t), z(!0);
                         let e = await r.default.sendActivityInviteUser({
                             type: k.ActivityActionTypes.JOIN_REQUEST,
                             userId: V.id,
@@ -3395,25 +3393,25 @@
                         });
                         null != e && u.default.selectPrivateChannel(e.id)
                     }
-                }, eu = et ? w.default.Messages.JOIN : w.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
-                return W && (eu = w.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), (0, l.jsx)(s.Tooltip, {
-                    text: es,
+                }, ed = en ? w.default.Messages.JOIN : w.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
+                return K && (ed = w.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), (0, l.jsx)(s.Tooltip, {
+                    text: er,
                     children: e => {
                         let {
                             onMouseEnter: t,
                             onMouseLeave: n
                         } = e;
                         return (0, l.jsx)(U.default, {
-                            onClick: eo,
+                            onClick: eu,
                             onMouseEnter: t,
                             onMouseLeave: n,
                             color: G,
                             look: B,
                             hover: H,
-                            disabled: !ea,
-                            submitting: $,
+                            disabled: !es,
+                            submitting: ee,
                             fullWidth: !0,
-                            children: eu
+                            children: ed
                         })
                     }
                 }, "join")
@@ -38303,4 +38301,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35170.ae4bb38815054da7887c.js.map
+//# sourceMappingURL=35170.d5a7654c2ffdd1792f0a.js.map
