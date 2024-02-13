@@ -13210,6 +13210,37 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     pointer-events: none
 }
 
+.emojiLockIconContainer_edde9a {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: hsl(var(--black-500-hsl)/.6);
+    border-radius: 2px
+}
+
+.emojiLockIcon__37643 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: var(--icon-primary)
+}
+
+.lockedEmoji__79818 {
+    border-radius: 2px
+}
+
+.theme-light .emojiLockIconContainer_edde9a {
+    background: hsl(var(--primary-200-hsl)/.6)
+}
+
 @keyframes ripple__0832e {
     0% {
         transform: scale(.8);
@@ -13435,17 +13466,30 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .categorySection_f44c2f {
-    margin-bottom: var(--custom-emoji-picker-constants-emoji-section-margin-bottom)
+    padding-bottom: var(--custom-emoji-picker-constants-emoji-section-margin-bottom)
 }
 
 .categorySectionLast__3bfde,
-.categorySectionCollapsed__46c33 {
-    margin-bottom: 0
+.categorySectionCollapsed__46c33,
+.categorySectionNitroDivider_dc0d8b {
+    padding-bottom: 0
+}
+
+.categorySectionNitroLocked_cf3b81 {
+    background-color: hsl(var(--premium-tier-2-purple-hsl)/.2)
 }
 
 .header_c3c744 {
     position: sticky;
     top: 0
+}
+
+.inactiveNitroHeader__552d2 {
+    background-color: transparent
+}
+
+.activeNitroHeader__262a9 {
+    background-color: var(--background-secondary)
 }
 
 .premiumUpsell_e1bfd9 {
@@ -13463,6 +13507,58 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .premiumUpsellTopOfList_ce5874 {
     margin-top: 0;
     height: 50px
+}
+
+.nitroTopDividerContainer__3d13a {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--custom-emoji-picker-constants-emoji-premium-upsell-margin-top)
+}
+
+.nitroTopDividerUpper_a3c956 {
+    height: 12px
+}
+
+.nitroTopDividerLockContainer__4adce {
+    display: flex;
+    align-items: center
+}
+
+.nitroTopDividerLockBorder__9b084 {
+    height: 1px;
+    width: 100%;
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+}
+
+.nitroTopDividerLockCircle__19774 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+}
+
+.nitroTopDividerLockBorderReversed__24b14 {
+    height: 1px;
+    width: 100%;
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color-reverse)
+}
+
+.nitroTopDividerLower__6ca09 {
+    height: 12px;
+    background-color: hsl(var(--premium-tier-2-purple-hsl)/.2)
+}
+
+.nitroBottomDivider_d06fca {
+    height: 1px;
+    width: 100%;
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    margin: var(--custom-emoji-picker-constants-emoji-premium-upsell-margin-top)0 var(--custom-emoji-picker-constants-emoji-premium-upsell-margin-top)
 }
 
 .premiumRetentionNotice__7e7c4 {
@@ -44925,8 +45021,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -126343,6 +126439,10 @@ code {
             var(--premium-tier-2-purple-for-gradients),
             var(--premium-tier-2-purple-for-gradients-2),
             var(--premium-tier-2-pink-for-gradients));
+    --custom-premium-colors-premium-gradient-tier-2-tri-color-reverse: linear-gradient(to left,
+            var(--premium-tier-2-purple-for-gradients),
+            var(--premium-tier-2-purple-for-gradients-2),
+            var(--premium-tier-2-pink-for-gradients));
     --custom-premium-colors-premium-gradient-tier-2-old: linear-gradient(to right,
             var(--premium-tier-2-purple),
             var(--premium-tier-2-pink))
@@ -126936,4 +127036,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.873cea65009cb67f8df7.css.map*/
+/*# sourceMappingURL=app.1d18bb8996856e4e6a34.css.map*/
