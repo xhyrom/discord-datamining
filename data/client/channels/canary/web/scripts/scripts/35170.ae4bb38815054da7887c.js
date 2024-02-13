@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["827"], {
+    ["35170"], {
         110126: function(e, t, n) {
             var l = {
                 "./spritesheet--32.png": "588202",
@@ -38303,4 +38303,4 @@
         }
     }
 ]);
-//# sourceMappingURL=827.a013958bca030206106c.js.map
+//# sourceMappingURL=35170.ae4bb38815054da7887c.js.map
