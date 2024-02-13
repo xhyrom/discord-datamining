@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["78412"], {
+    ["50200"], {
         267363: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -13,16 +13,16 @@
                     return h
                 },
                 localAck: function() {
-                    return L
+                    return E
                 },
                 enableAutomaticAck: function() {
-                    return C
-                },
-                disableAutomaticAck: function() {
                     return g
                 },
+                disableAutomaticAck: function() {
+                    return L
+                },
                 ackGuildFeature: function() {
-                    return E
+                    return C
                 },
                 ackUserFeature: function() {
                     return p
@@ -34,8 +34,8 @@
                 a = n("233069"),
                 u = n("42203"),
                 o = n("245997"),
-                c = n("697218"),
-                d = n("49111");
+                d = n("697218"),
+                c = n("49111");
 
             function s(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -48,7 +48,7 @@
                     messageId: l,
                     immediate: t,
                     force: n,
-                    context: d.CURRENT_APP_CONTEXT,
+                    context: c.CURRENT_APP_CONTEXT,
                     location: i
                 })
             }
@@ -61,7 +61,7 @@
                     if (null == l || null == l.guild_id) return;
                     let r = o.default.getCategories(l.guild_id);
                     if (null == r[e]) return;
-                    let c = r[e].filter(e => {
+                    let d = r[e].filter(e => {
                             let {
                                 channel: t
                             } = e;
@@ -72,11 +72,11 @@
                             } = e;
                             return t.id
                         }),
-                        d = [...c];
-                    for (let e of (c.forEach(e => {
+                        c = [...d];
+                    for (let e of (d.forEach(e => {
                             let t = i.default.getActiveJoinedThreadsForParent(l.guild_id, e);
-                            for (let e in t) d.push(e)
-                        }), d)) s(e, t, n)
+                            for (let e in t) c.push(e)
+                        }), c)) s(e, t, n)
                 }(e.id, !0, !0) : e.isForumLikeChannel() ? s(e.id, !0, !0, l.default.fromTimestamp(Date.now())) : s(e.id, !0, !0)
             }
 
@@ -84,19 +84,19 @@
                 r.default.dispatch({
                     type: "BULK_ACK",
                     channels: e,
-                    context: d.CURRENT_APP_CONTEXT,
+                    context: c.CURRENT_APP_CONTEXT,
                     onFinished: t
                 })
             }
 
-            function L(e) {
+            function E(e) {
                 r.default.dispatch({
                     type: "CHANNEL_LOCAL_ACK",
                     channelId: e
                 })
             }
 
-            function C(e, t) {
+            function g(e, t) {
                 r.default.dispatch({
                     type: "ENABLE_AUTOMATIC_ACK",
                     channelId: e,
@@ -104,7 +104,7 @@
                 })
             }
 
-            function g(e, t) {
+            function L(e, t) {
                 r.default.dispatch({
                     type: "DISABLE_AUTOMATIC_ACK",
                     channelId: e,
@@ -112,7 +112,7 @@
                 })
             }
 
-            function E(e, t, n) {
+            function C(e, t, n) {
                 r.default.dispatch({
                     type: "GUILD_FEATURE_ACK",
                     id: e,
@@ -124,7 +124,7 @@
 
             function p(e, t) {
                 var n;
-                let l = null === (n = c.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
+                let l = null === (n = d.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
                 null != l && r.default.dispatch({
                     type: "USER_NON_CHANNEL_ACK",
                     ackType: e,
@@ -137,7 +137,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return C
+                    return g
                 }
             });
             var l, r, i = n("37983");
@@ -145,13 +145,13 @@
             var a = n("414456"),
                 u = n.n(a),
                 o = n("394846"),
-                c = n("77078"),
-                d = n("945330"),
+                d = n("77078"),
+                c = n("945330"),
                 s = n("381546"),
                 f = n("782340"),
                 h = n("955892");
             (l = r || (r = {})).DEFAULT = "", l.BOLD = "Bold", l.SOLID = "Solid";
-            let L = e => {
+            let E = e => {
                 let {
                     closeAction: t,
                     variant: n,
@@ -160,7 +160,7 @@
                 } = e;
                 return (0, i.jsxs)("div", {
                     className: u(h.container, r),
-                    children: [(0, i.jsx)(c.Clickable, {
+                    children: [(0, i.jsx)(d.Clickable, {
                         className: u(h.closeButton, {
                             [h.closeButtonBold]: "Bold" === n,
                             [h.closeButtonSolid]: "Solid" === n
@@ -171,7 +171,7 @@
                             width: 24,
                             height: 24,
                             "aria-hidden": !0
-                        }) : (0, i.jsx)(d.default, {
+                        }) : (0, i.jsx)(c.default, {
                             width: 18,
                             height: 18,
                             "aria-hidden": !0
@@ -183,16 +183,16 @@
                     })]
                 })
             };
-            L.defaultProps = {
+            E.defaultProps = {
                 variant: ""
-            }, L.Variants = r;
-            var C = L
+            }, E.Variants = r;
+            var g = E
         },
         80300: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 backgroundImagePreloader: function() {
-                    return d
+                    return c
                 }
             }), n("424973");
             var l = n("37983"),
@@ -201,13 +201,13 @@
                 a = n.n(i),
                 u = n("407063");
             let o = /url\(['"](.*)['"]\)/,
-                c = e => {
+                d = e => {
                     if (null == e || "" === e || "none" === e) return null;
                     let t = e.match(o);
                     return null != t ? t[1] : e
                 };
 
-            function d(e) {
+            function c(e) {
                 class t extends r.Component {
                     componentDidUpdate(e, t) {
                         if (t === this.state) return;
@@ -216,7 +216,7 @@
                             loaded: l
                         } = this.state, {
                             style: r
-                        } = this.props, i = null != r ? c(r.backgroundImage) : null;
+                        } = this.props, i = null != r ? d(r.backgroundImage) : null;
                         null == i && i !== n ? this.setState({
                             loaded: !0,
                             cached: i
@@ -267,7 +267,7 @@
                         super(e), this.cachedURLs = [], this.canceller = null;
                         let {
                             style: t
-                        } = e, n = null != t ? c(t.backgroundImage) : null;
+                        } = e, n = null != t ? d(t.backgroundImage) : null;
                         this.cachedURLs = [n], this.state = {
                             cached: n,
                             loaded: !0
@@ -281,18 +281,6 @@
             "use strict";
             n.r(t);
             var l = n("341869");
-            n.es(l, t)
-        },
-        504318: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var l = n("58975");
-            n.es(l, t)
-        },
-        197801: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var l = n("469062");
             n.es(l, t)
         },
         320954: function(e, t, n) {
@@ -323,28 +311,28 @@
                 a = n("379881"),
                 u = n("271938"),
                 o = n("42203"),
-                c = n("923959"),
-                d = n("305961"),
+                d = n("923959"),
+                c = n("305961"),
                 s = n("49111");
             let f = null,
                 h = {},
-                L = null;
+                E = null;
 
-            function C() {
+            function g() {
                 return {
                     _categories: [],
                     null: []
                 }
             }
-            let g = C();
+            let L = g();
 
-            function E(e, t) {
+            function C(e, t) {
                 e.index = t
             }
 
             function p(e) {
-                let t = c.default.getChannels(e),
-                    n = C(),
+                let t = d.default.getChannels(e),
+                    n = g(),
                     l = e => {
                         var t;
                         let {
@@ -363,14 +351,14 @@
                         channel: t,
                         index: -1
                     }), n[t.id] = []
-                }), t[0, c.GUILD_SELECTABLE_CHANNELS_KEY].forEach(l), t[0, c.GUILD_VOCAL_CHANNELS_KEY].forEach(l), (0, i.default)(n._categories, n).forEach(E), h[e] = n, n
+                }), t[0, d.GUILD_SELECTABLE_CHANNELS_KEY].forEach(l), t[0, d.GUILD_VOCAL_CHANNELS_KEY].forEach(l), (0, i.default)(n._categories, n).forEach(C), h[e] = n, n
             }
 
-            function v() {
+            function A() {
                 h = {}, null != f && p(f)
             }
 
-            function A(e) {
+            function _(e) {
                 let {
                     guild: {
                         id: t
@@ -379,7 +367,7 @@
                 h[t] = void 0, f === t && p(t)
             }
 
-            function R(e) {
+            function v(e) {
                 let {
                     channel: {
                         guild_id: t
@@ -396,28 +384,28 @@
                 h[t] = void 0, t === f && p(t)
             }
 
-            function I(e, t) {
-                if (L = t, null == e || null == e.getGuildId()) return !1;
+            function R(e, t) {
+                if (E = t, null == e || null == e.getGuildId()) return !1;
                 let n = e.getGuildId();
                 return null != n && (h[n] = void 0, n === f && p(n), !0)
             }
 
-            function _() {
+            function I() {
                 p(s.FAVORITES)
             }
-            class m extends l.default.Store {
+            class S extends l.default.Store {
                 initialize() {
-                    this.waitFor(c.default, d.default, u.default, o.default, a.default), this.syncWith([a.default], _)
+                    this.waitFor(d.default, c.default, u.default, o.default, a.default), this.syncWith([a.default], I)
                 }
                 getCategories(e) {
                     return null != e ? function(e) {
                         let t = h[e];
                         return null != t ? t : p(e)
-                    }(e) : g
+                    }(e) : L
                 }
             }
-            m.displayName = "GuildCategoryStore";
-            var T = new m(r.default, {
+            S.displayName = "GuildCategoryStore";
+            var T = new S(r.default, {
                 CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t
@@ -425,11 +413,11 @@
                     if (f = null != t ? t : null, null == t || null != h[t]) return !1;
                     p(t)
                 },
-                CONNECTION_OPEN: v,
-                OVERLAY_INITIALIZE: v,
-                CACHE_LOADED_LAZY: v,
-                GUILD_CREATE: A,
-                GUILD_UPDATE: A,
+                CONNECTION_OPEN: A,
+                OVERLAY_INITIALIZE: A,
+                CACHE_LOADED_LAZY: A,
+                GUILD_CREATE: _,
+                GUILD_UPDATE: _,
                 GUILD_DELETE: function(e) {
                     let {
                         guild: {
@@ -438,8 +426,8 @@
                     } = e;
                     delete h[t]
                 },
-                CHANNEL_CREATE: R,
-                CHANNEL_DELETE: R,
+                CHANNEL_CREATE: v,
+                CHANNEL_DELETE: v,
                 CHANNEL_UPDATES: function(e) {
                     let {
                         channels: t
@@ -471,7 +459,7 @@
                     let {
                         channelId: t
                     } = e;
-                    return null == t && null != L ? I(o.default.getChannel(L), null) : I(o.default.getChannel(t), t)
+                    return null == t && null != E ? R(o.default.getChannel(E), null) : R(o.default.getChannel(t), t)
                 },
                 VOICE_STATE_UPDATES: function(e) {
                     let {
@@ -482,7 +470,7 @@
                             channelId: n,
                             sessionId: l
                         } = t;
-                        return u.default.getSessionId() !== l ? e : I(o.default.getChannel(n), n) || e
+                        return u.default.getSessionId() !== l ? e : R(o.default.getChannel(n), n) || e
                     }, !1)
                 }
             })
@@ -491,7 +479,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return R
                 }
             });
             var l = n("37983"),
@@ -500,15 +488,15 @@
                 a = n.n(i),
                 u = n("90915"),
                 o = n("446674"),
-                c = n("669491"),
-                d = n("77078"),
+                d = n("669491"),
+                c = n("77078"),
                 s = n("80300"),
                 f = n("471671"),
                 h = n("103603"),
-                L = n("474293"),
-                C = n("580357"),
-                g = n("491088");
-            let E = {
+                E = n("474293"),
+                g = n("580357"),
+                L = n("491088");
+            let C = {
                     SMOL: "Smol",
                     MINI: "Mini",
                     SMALLER: "Smaller",
@@ -519,33 +507,33 @@
                     XLARGE: "XLarge"
                 },
                 p = {
-                    [E.SMOL]: 16,
-                    [E.MINI]: 20,
-                    [E.SMALLER]: 24,
-                    [E.SMALL]: 30,
-                    [E.MEDIUM]: 40,
-                    [E.LARGE]: 50,
-                    [E.LARGER]: 64,
-                    [E.XLARGE]: 100
+                    [C.SMOL]: 16,
+                    [C.MINI]: 20,
+                    [C.SMALLER]: 24,
+                    [C.SMALL]: 30,
+                    [C.MEDIUM]: 40,
+                    [C.LARGE]: 50,
+                    [C.LARGER]: 64,
+                    [C.XLARGE]: 100
                 },
-                v = {
-                    [E.SMOL]: [10, 10, 8, 6, 6, 4],
-                    [E.MINI]: [12, 12, 10, 10, 8, 6, 4],
-                    [E.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
-                    [E.SMALL]: [14, 14, 12, 12, 10, 8, 6],
-                    [E.MEDIUM]: [16, 16, 14, 14, 12, 10, 8],
-                    [E.LARGE]: [18, 18, 16, 16, 14, 12, 10],
-                    [E.LARGER]: [19, 19, 17, 17, 15, 13, 11],
-                    [E.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
+                A = {
+                    [C.SMOL]: [10, 10, 8, 6, 6, 4],
+                    [C.MINI]: [12, 12, 10, 10, 8, 6, 4],
+                    [C.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
+                    [C.SMALL]: [14, 14, 12, 12, 10, 8, 6],
+                    [C.MEDIUM]: [16, 16, 14, 14, 12, 10, 8],
+                    [C.LARGE]: [18, 18, 16, 16, 14, 12, 10],
+                    [C.LARGER]: [19, 19, 17, 17, 15, 13, 11],
+                    [C.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
                 };
-            class A extends r.PureComponent {
+            class _ extends r.PureComponent {
                 renderAcronym() {
                     let {
                         guild: e,
                         iconSrc: t
                     } = this.props;
                     return null != e.icon || null != t ? null : (0, l.jsx)("div", {
-                        className: g.acronym,
+                        className: L.acronym,
                         children: e.acronym
                     })
                 }
@@ -555,8 +543,8 @@
                         guild: t,
                         badgeStrokeColor: n
                     } = this.props;
-                    return e && null != t.hasFeature ? (0, l.jsx)(C.default, {
-                        className: g.guildIconBadge,
+                    return e && null != t.hasFeature ? (0, l.jsx)(g.default, {
+                        className: L.guildIconBadge,
                         guild: t,
                         badgeStrokeColor: n
                     }) : null
@@ -569,33 +557,33 @@
                         showBadge: i,
                         active: u,
                         size: o,
-                        style: c = {},
+                        style: d = {},
                         textScale: s,
                         showTooltip: f,
                         tooltipPosition: h,
-                        onClick: C,
-                        to: E,
+                        onClick: g,
+                        to: C,
                         badgeStrokeColor: p,
-                        animate: A,
-                        tabIndex: R,
+                        animate: _,
+                        tabIndex: v,
                         iconSrc: N,
-                        "aria-hidden": I,
-                        ..._
-                    } = this.props, m = v[o], T = null != C ? d.Clickable : "div";
+                        "aria-hidden": R,
+                        ...I
+                    } = this.props, S = A[o], T = null != g ? c.Clickable : "div";
                     return (0, l.jsxs)(T, {
-                        className: a(g.icon, r, (0, L.getClass)(g, "iconSize", o), {
-                            [null !== (e = (0, L.getClass)(g, "iconActive", o)) && void 0 !== e ? e : ""]: u,
-                            [g.iconInactive]: !u,
-                            [g.noIcon]: null == n.icon
+                        className: a(L.icon, r, (0, E.getClass)(L, "iconSize", o), {
+                            [null !== (e = (0, E.getClass)(L, "iconActive", o)) && void 0 !== e ? e : ""]: u,
+                            [L.iconInactive]: !u,
+                            [L.noIcon]: null == n.icon
                         }),
-                        "aria-hidden": I,
+                        "aria-hidden": R,
                         style: null == n.icon ? {
-                            fontSize: (null !== (t = m[n.acronym.length]) && void 0 !== t ? t : m[m.length - 1]) * s,
-                            ...c
-                        } : c,
-                        onClick: null != E || null == C ? void 0 : C,
-                        tabIndex: R,
-                        ..._,
+                            fontSize: (null !== (t = S[n.acronym.length]) && void 0 !== t ? t : S[S.length - 1]) * s,
+                            ...d
+                        } : d,
+                        onClick: null != C || null == g ? void 0 : g,
+                        tabIndex: v,
+                        ...I,
                         children: [this.renderAcronym(), this.renderBadge()]
                     })
                 }
@@ -605,7 +593,7 @@
                         showTooltip: t,
                         tooltipPosition: n
                     } = this.props;
-                    return t ? (0, l.jsx)(d.Tooltip, {
+                    return t ? (0, l.jsx)(c.Tooltip, {
                         text: e.name,
                         position: n,
                         "aria-label": !1,
@@ -636,7 +624,7 @@
                     }) : this.renderTooltip()
                 }
             }
-            let R = o.default.connectStores([f.default], e => {
+            let v = o.default.connectStores([f.default], e => {
                 let {
                     guild: t,
                     animate: n,
@@ -650,27 +638,27 @@
                         backgroundImage: (0, h.makeCssUrlString)(null != l ? l : t.getIconURL(p[i], n && f.default.isFocused()))
                     }
                 }
-            })((0, s.backgroundImagePreloader)(e => (0, l.jsx)(A, {
+            })((0, s.backgroundImagePreloader)(e => (0, l.jsx)(_, {
                 ...e
             })));
             class N extends r.PureComponent {
                 render() {
-                    return (0, l.jsx)(R, {
+                    return (0, l.jsx)(v, {
                         ...this.props
                     })
                 }
             }
-            N.Sizes = E, N.defaultProps = {
-                size: E.LARGE,
+            N.Sizes = C, N.defaultProps = {
+                size: C.LARGE,
                 textScale: 1,
                 showBadge: !1,
                 showTooltip: !1,
                 active: !1,
                 tooltipPosition: "top",
-                badgeStrokeColor: c.default.unsafe_rawColors.WHITE_500.css,
+                badgeStrokeColor: d.default.unsafe_rawColors.WHITE_500.css,
                 animate: !1
             };
-            var I = N
+            var R = N
         },
         171710: function(e, t, n) {
             "use strict";
@@ -709,92 +697,6 @@
                     size: 24
                 })
         },
-        474571: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return u
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("469563"),
-                i = n("197801"),
-                a = n("75196"),
-                u = (0, r.replaceIcon)(function(e) {
-                    let {
-                        width: t = 24,
-                        height: n = 24,
-                        color: r = "currentColor",
-                        foreground: i,
-                        ...u
-                    } = e;
-                    return 16 === t || 16 === n ? (0, l.jsx)("svg", {
-                        ...(0, a.default)(u),
-                        width: t,
-                        height: n,
-                        viewBox: "0 0 16 16",
-                        children: (0, l.jsx)("path", {
-                            fill: r,
-                            className: i,
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M14 7V9C14 9 12.5867 9 12.5733 9.00667C12.42 9.58667 12.1733 10.1267 11.84 10.6067L12.74 11.5067L11.4933 12.7533L10.5933 11.8533C10.1133 12.1867 9.57334 12.44 8.99334 12.5867V14H6.99334V12.58C6.41334 12.4333 5.87334 12.18 5.39334 11.8467L4.49333 12.7467L3.24667 11.5L4.14667 10.6C3.81333 10.1267 3.56 9.58 3.41333 9H2V7H3.41333C3.56 6.42 3.81333 5.88 4.14667 5.4L3.24667 4.5L4.5 3.24667L5.4 4.14667C5.87334 3.81333 6.42 3.56 7 3.41333V2H9V3.41333C9.58 3.56667 10.12 3.81333 10.6 4.14667L11.5067 3.25333L12.7533 4.5L11.8533 5.4C12.1867 5.87334 12.44 6.42 12.5867 7H14ZM8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
-                        })
-                    }) : (0, l.jsx)("svg", {
-                        ...(0, a.default)(u),
-                        width: t,
-                        height: n,
-                        viewBox: "0 0 24 24",
-                        children: (0, l.jsx)("path", {
-                            fill: r,
-                            className: i,
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                        })
-                    })
-                }, i.SettingsIcon, void 0, {
-                    size: 24
-                })
-        },
-        987772: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return u
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("469563"),
-                i = n("504318"),
-                a = n("75196"),
-                u = (0, r.replaceIcon)(function(e) {
-                    let {
-                        width: t = 16,
-                        height: n = 16,
-                        color: r = "currentColor",
-                        foreground: i,
-                        ...u
-                    } = e;
-                    return (0, l.jsx)("svg", {
-                        ...(0, a.default)(u),
-                        width: t,
-                        height: n,
-                        viewBox: "0 0 24 24",
-                        children: (0, l.jsx)("path", {
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M19.2929 9.8299L19.9409 9.18278C21.353 7.77064 21.353 5.47197 19.9409 4.05892C18.5287 2.64678 16.2292 2.64678 14.817 4.05892L14.1699 4.70694L19.2929 9.8299ZM12.8962 5.97688L5.18469 13.6906L10.3085 18.813L18.0201 11.0992L12.8962 5.97688ZM4.11851 20.9704L8.75906 19.8112L4.18692 15.239L3.02678 19.8796C2.95028 20.1856 3.04028 20.5105 3.26349 20.7337C3.48669 20.9569 3.8116 21.046 4.11851 20.9704Z",
-                            className: i,
-                            fill: r
-                        })
-                    })
-                }, i.PencilIcon, void 0, {
-                    size: 16
-                })
-        },
         956089: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -802,10 +704,10 @@
                     return o
                 },
                 getBadgeWidthForValue: function() {
-                    return c
+                    return d
                 },
                 getBadgeCountString: function() {
-                    return d
+                    return c
                 },
                 NumberBadge: function() {
                     return s
@@ -817,10 +719,10 @@
                     return h
                 },
                 IconBadge: function() {
-                    return L
+                    return E
                 },
                 CircleBadge: function() {
-                    return C
+                    return g
                 }
             });
             var l = n("37983");
@@ -838,11 +740,11 @@
                 SQUARE: ""
             };
 
-            function c(e) {
+            function d(e) {
                 return e < 10 ? 16 : e < 100 ? 22 : 30
             }
 
-            function d(e) {
+            function c(e) {
                 return e < 1e3 ? "".concat(e) : "".concat(Math.min(Math.floor(e / 1e3), 9), "k+")
             }
             let s = e => {
@@ -853,13 +755,13 @@
                         shape: s = o.ROUND,
                         className: f,
                         style: h,
-                        ...L
+                        ...E
                     } = e;
                     return (0, l.jsx)("div", {
                         className: i(f, u.numberBadge, s),
                         style: {
                             backgroundColor: r ? void 0 : n,
-                            width: c(t),
+                            width: d(t),
                             paddingRight: function(e) {
                                 switch (e) {
                                     case 1:
@@ -872,8 +774,8 @@
                             }(t),
                             ...h
                         },
-                        ...L,
-                        children: d(t)
+                        ...E,
+                        children: c(t)
                     })
                 },
                 f = e => {
@@ -881,15 +783,15 @@
                         text: t,
                         className: n,
                         color: r = a.default.STATUS_DANGER,
-                        shape: c = o.ROUND,
-                        disableColor: d = !1,
+                        shape: d = o.ROUND,
+                        disableColor: c = !1,
                         style: s,
                         ...f
                     } = e;
                     return (0, l.jsx)("div", {
-                        className: i(n, u.textBadge, c),
+                        className: i(n, u.textBadge, d),
                         style: {
-                            backgroundColor: d ? void 0 : r,
+                            backgroundColor: c ? void 0 : r,
                             ...s
                         },
                         ...f,
@@ -908,19 +810,19 @@
                         ...r
                     })
                 },
-                L = e => {
+                E = e => {
                     let {
                         icon: t,
                         className: n,
                         color: r = a.default.STATUS_DANGER,
-                        shape: c = o.ROUND,
-                        disableColor: d = !1,
+                        shape: d = o.ROUND,
+                        disableColor: c = !1,
                         style: s
                     } = e;
                     return (0, l.jsx)("div", {
-                        className: i(n, u.iconBadge, c),
+                        className: i(n, u.iconBadge, d),
                         style: {
-                            backgroundColor: d ? void 0 : r,
+                            backgroundColor: c ? void 0 : r,
                             ...s
                         },
                         children: (0, l.jsx)(t, {
@@ -928,20 +830,20 @@
                         })
                     })
                 },
-                C = e => {
+                g = e => {
                     let {
                         className: t,
                         color: n = a.default.INTERACTIVE_ACTIVE,
                         shape: r = o.ROUND,
-                        disableColor: c = !1,
-                        style: d,
+                        disableColor: d = !1,
+                        style: c,
                         ...s
                     } = e;
                     return (0, l.jsx)("div", {
                         className: i(t, u.circleBadge, r),
                         style: {
-                            backgroundColor: c ? void 0 : n,
-                            ...d
+                            backgroundColor: d ? void 0 : n,
+                            ...c
                         },
                         ...s
                     })
@@ -1001,77 +903,7 @@
                     })]
                 })
             }
-        },
-        58975: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                PencilIcon: function() {
-                    return a
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("669491"),
-                i = n("82169");
-            let a = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: a = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: u = "",
-                    ...o
-                } = e;
-                return (0, l.jsx)("svg", {
-                    ...(0, i.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, l.jsx)("path", {
-                        fill: "string" == typeof a ? a : a.css,
-                        d: "m13.96 5.46 4.58 4.58a1 1 0 0 0 1.42 0l1.38-1.38a2 2 0 0 0 0-2.82l-3.18-3.18a2 2 0 0 0-2.82 0l-1.38 1.38a1 1 0 0 0 0 1.42ZM2.11 20.16l.73-4.22a3 3 0 0 1 .83-1.61l7.87-7.87a1 1 0 0 1 1.42 0l4.58 4.58a1 1 0 0 1 0 1.42l-7.87 7.87a3 3 0 0 1-1.6.83l-4.23.73a1.5 1.5 0 0 1-1.73-1.73Z",
-                        className: u
-                    })
-                })
-            }
-        },
-        469062: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                SettingsIcon: function() {
-                    return a
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("669491"),
-                i = n("82169");
-            let a = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: a = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: u = "",
-                    ...o
-                } = e;
-                return (0, l.jsx)("svg", {
-                    ...(0, i.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, l.jsx)("path", {
-                        fill: "string" == typeof a ? a : a.css,
-                        fillRule: "evenodd",
-                        d: "M10.56 1.1c-.46.05-.7.53-.64.98.18 1.16-.19 2.2-.98 2.53-.8.33-1.79-.15-2.49-1.1-.27-.36-.78-.52-1.14-.24-.77.59-1.45 1.27-2.04 2.04-.28.36-.12.87.24 1.14.96.7 1.43 1.7 1.1 2.49-.33.8-1.37 1.16-2.53.98-.45-.07-.93.18-.99.64a11.1 11.1 0 0 0 0 2.88c.06.46.54.7.99.64 1.16-.18 2.2.19 2.53.98.33.8-.14 1.79-1.1 2.49-.36.27-.52.78-.24 1.14.59.77 1.27 1.45 2.04 2.04.36.28.87.12 1.14-.24.7-.95 1.7-1.43 2.49-1.1.8.33 1.16 1.37.98 2.53-.07.45.18.93.64.99a11.1 11.1 0 0 0 2.88 0c.46-.06.7-.54.64-.99-.18-1.16.19-2.2.98-2.53.8-.33 1.79.14 2.49 1.1.27.36.78.52 1.14.24.77-.59 1.45-1.27 2.04-2.04.28-.36.12-.87-.24-1.14-.96-.7-1.43-1.7-1.1-2.49.33-.8 1.37-1.16 2.53-.98.45.07.93-.18.99-.64a11.1 11.1 0 0 0 0-2.88c-.06-.46-.54-.7-.99-.64-1.16.18-2.2-.19-2.53-.98-.33-.8.14-1.79 1.1-2.49.36-.27.52-.78.24-1.14a11.07 11.07 0 0 0-2.04-2.04c-.36-.28-.87-.12-1.14.24-.7.96-1.7 1.43-2.49 1.1-.8-.33-1.16-1.37-.98-2.53.07-.45-.18-.93-.64-.99a11.1 11.1 0 0 0-2.88 0ZM16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z",
-                        clipRule: "evenodd",
-                        className: u
-                    })
-                })
-            }
         }
     }
 ]);
-//# sourceMappingURL=78412.1380a6b55edf781aca1a.js.map
+//# sourceMappingURL=50200.a081640643c8d63333df.js.map
