@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23356"], {
+    ["23303"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -28336,6 +28336,12 @@
                         return r.warn("couldn't load guild versions", e), {}
                     }
                 }
+                handleConnectionOpen(e, t) {
+                    null != e.apiCodeVersion && i.default.nonGuildVersionsTransaction(t).put({
+                        id: "api_code_version",
+                        version: e.apiCodeVersion
+                    })
+                }
                 handleClear(e) {
                     i.default.nonGuildVersionsTransaction(e).delete()
                 }
@@ -28343,7 +28349,9 @@
                 constructor() {
                     this.actions = {
                         CLEAR_CACHES: (e, t) => this.handleClear(t),
-                        CLEAR_GUILD_CACHE: (e, t) => this.handleClear(t)
+                        CLEAR_GUILD_CACHE: (e, t) => this.handleClear(t),
+                        CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
+                        BACKGROUND_SYNC: (e, t) => this.handleConnectionOpen(e, t)
                     }
                 }
             }
@@ -29400,7 +29408,6 @@
                     useGuildVersions: !1,
                     version: r,
                     cacheCreationDate: null,
-                    apiCodeVersion: 0,
                     guildIdsRequiringDeletedIdsSync: [],
                     lastSelectedGuildId: null
                 }
@@ -29410,98 +29417,74 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return T
                 }
             }), n("222007");
-            var s, i = n("446674"),
-                r = n("913144"),
-                a = n("105059"),
-                o = n("11275"),
-                d = n("605250"),
-                u = n("271938"),
-                l = n("162771"),
-                f = n("91131"),
-                _ = n("70754"),
-                c = n("548578");
-            let g = new d.default("ClientStateStore"),
-                m = f.initialState.nonce,
-                h = f.initialState.useGuildVersions,
-                v = f.initialState.cacheCreationDate,
-                E = f.initialState.apiCodeVersion,
-                p = new Set(null !== (s = f.initialState.guildIdsRequiringDeletedIdsSync) && void 0 !== s ? s : []),
-                y = f.initialState.lastSelectedGuildId,
-                T = !1;
+            var s = n("446674"),
+                i = n("913144"),
+                r = n("105059"),
+                a = n("11275"),
+                o = n("605250"),
+                d = n("271938"),
+                u = n("162771"),
+                l = n("91131"),
+                f = n("70754"),
+                _ = n("548578");
+            let c = new o.default("ClientStateStore"),
+                g = l.initialState.nonce,
+                m = l.initialState.useGuildVersions,
+                h = l.initialState.cacheCreationDate,
+                v = l.initialState.lastSelectedGuildId,
+                E = !1;
 
-            function C() {
-                f.clear(), E = 0, p.clear()
+            function p() {
+                l.clear()
             }
-            class I extends i.default.Store {
+            class y extends s.default.Store {
                 initialize() {
-                    this.waitFor(u.default), this.syncWith([l.default], () => {
-                        if (!T) return !1;
-                        y = l.default.getGuildId()
+                    this.waitFor(d.default), this.syncWith([u.default], () => {
+                        if (!E) return !1;
+                        v = u.default.getGuildId()
                     })
                 }
                 persist(e) {
-                    g.verbose("writing ClientStateStore (nonce: ".concat(e, ")")), null == v && (v = Date.now()), m = e, f.persist(u.default.getId(), {
+                    c.verbose("writing ClientStateStore (nonce: ".concat(e, ")")), null == h && (h = Date.now()), g = e, l.persist(d.default.getId(), {
                         nonce: e,
-                        version: c.CACHE_VERSION,
-                        useGuildVersions: h,
-                        cacheCreationDate: v,
-                        apiCodeVersion: E,
-                        guildIdsRequiringDeletedIdsSync: Array.from(p),
-                        lastSelectedGuildId: y
+                        version: _.CACHE_VERSION,
+                        useGuildVersions: m,
+                        cacheCreationDate: h,
+                        lastSelectedGuildId: v
                     })
                 }
                 clear() {
-                    C()
+                    p()
                 }
                 async getClientState() {
-                    let [e, t] = await Promise.all([h && (0, _.isCacheEnabled)() ? a.default.getCommittedVersions() : Promise.resolve({}), h && (0, _.isCacheEnabled)() ? o.default.getCommittedVersions() : Promise.resolve({})]);
+                    let [e, t] = await Promise.all([m && (0, f.isCacheEnabled)() ? r.default.getCommittedVersions() : Promise.resolve({}), m && (0, f.isCacheEnabled)() ? a.default.getCommittedVersions() : Promise.resolve({})]);
                     return {
                         knownGuildVersions: e,
                         highestLastMessageId: t.highest_last_message_id,
                         readStateVersion: t.read_state_version,
                         userGuildSettingsVersion: t.user_guild_settings_version,
                         privateChannelsVersion: t.private_channels_version,
-                        apiCodeVersion: E,
-                        lastSelectedGuildId: y,
+                        apiCodeVersion: t.api_code_version,
+                        lastSelectedGuildId: v,
                         userSettingsVersion: t.user_settings_version
                     }
                 }
-                getGuildIdsRequiringDeletedIdsSync() {
-                    return p
-                }
                 getSavedNonce() {
-                    return m
+                    return g
                 }
             }
-            I.displayName = "ClientStateStore";
-            var S = new I(r.default, {
-                BACKGROUND_SYNC: function(e) {
-                    for (let t of e.guilds) "partial" === t.data_mode && t.unableToSyncDeletes && p.add(t.id);
-                    null != e.apiCodeVersion && (E = e.apiCodeVersion)
+            y.displayName = "ClientStateStore";
+            var T = new y(i.default, {
+                CONNECTION_OPEN: function() {
+                    E = !0, m = !0
                 },
-                CONNECTION_OPEN: function(e) {
-                    let {
-                        guilds: t,
-                        apiCodeVersion: n
-                    } = e;
-                    for (let e of (E = n, T = !0, h = !0, t)) e.unableToSyncDeletes && p.add(e.id), e.unableToSyncDeletes && p.add(e.id)
-                },
-                DELETED_ENTITY_IDS: function(e) {
-                    p.delete(e.guild_id)
-                },
-                GUILD_CREATE: function(e) {
-                    let {
-                        guild: t
-                    } = e;
-                    !t.unavailable && (t.unableToSyncDeletes && p.add(t.id), t.unableToSyncDeletes && p.add(t.id))
-                },
-                CLEAR_GUILD_CACHE: C,
-                CLEAR_CACHES: C,
-                LOGOUT: C,
-                LOGIN: C
+                CLEAR_GUILD_CACHE: p,
+                CLEAR_CACHES: p,
+                LOGOUT: p,
+                LOGIN: p
             })
         },
         91131: function(e, t, n) {
@@ -37733,30 +37716,40 @@
             "use strict";
             n.r(t), n.d(t, {
                 getStreamerActivity: function() {
-                    return r
+                    return d
                 },
                 getStreamerApplication: function() {
-                    return a
+                    return u
+                },
+                useGetStreamApplication: function() {
+                    return l
                 }
             });
-            var s = n("49111");
+            var s = n("446674"),
+                i = n("233736"),
+                r = n("824563"),
+                a = n("49111");
 
-            function i(e) {
-                return e.type === s.ActivityTypes.PLAYING
+            function o(e) {
+                return e.type === a.ActivityTypes.PLAYING
             }
 
-            function r(e, t) {
+            function d(e, t) {
                 var n;
-                return null != e ? (n = e.ownerId, t.findActivity(n, i)) : null
+                return null != e ? (n = e.ownerId, t.findActivity(n, o)) : null
             }
 
-            function a(e, t) {
+            function u(e, t) {
                 if (null == e) return null;
-                let n = r(e, t);
+                let n = d(e, t);
                 return null == n ? null : {
                     id: n.application_id,
                     name: n.name
                 }
+            }
+
+            function l(e) {
+                return (0, s.useStateFromStores)([r.default], () => u(e, r.default), [e], (e, t) => e === t || null != e && null != t && (0, i.default)(e, t))
             }
         },
         196383: function(e, t, n) {
@@ -61786,4 +61779,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.dca9d89eb0c7ccfaf26a.js.map
+//# sourceMappingURL=23303.bb9a5614fc670630af1c.js.map
