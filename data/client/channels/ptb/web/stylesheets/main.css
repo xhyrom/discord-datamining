@@ -45142,8 +45142,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -118358,6 +118358,58 @@ div.nagbar_c731ff {
     background-image: url(/assets/6e910d869a4ddca77fe2.svg)
 }
 
+.button__938fd {
+    margin-top: var(--spacing-16);
+    width: 100%
+}
+
+.body__766bd {
+    padding: var(--spacing-32)
+}
+
+.textContainer__5b062 {
+    text-align: center;
+    margin-bottom: var(--spacing-16)
+}
+
+.footer__386cd {
+    justify-content: space-between
+}
+
+.heroImage__51d03 {
+    margin: -72px auto 0;
+    height: 140px
+}
+
+.body_cc14f3 {
+    padding-top: var(--spacing-16)
+}
+
+.wumpus__4d7ed {
+    margin: -106px auto 0;
+    height: 182px
+}
+
+.mute_b031e0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4)
+}
+
+.buttonContainer__84b5a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16)
+}
+
+.closeButton__01bbf {
+    position: absolute;
+    top: var(--spacing-16);
+    right: var(--spacing-16);
+    cursor: pointer
+}
+
 .feedback__5acd4 {
     display: flex;
     flex-direction: column;
@@ -127173,4 +127225,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.24f490c6249eca614f52.css.map*/
+/*# sourceMappingURL=app.f2fee212e6bda262caad.css.map*/
