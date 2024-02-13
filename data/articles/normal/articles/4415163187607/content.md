@@ -1,5 +1,5 @@
 <p id="docs-internal-guid-aac9af3c-7fff-8d90-59a3-4fefda15eb20">We're excited to announce Server Subscriptions for communities on Discord! </p>
-<h2><strong>What this article covers:</strong></h2>
+<h2 id="h_01HPHW16N6VEJVM72FVPVZHB2M"><strong>What this article covers:</strong></h2>
 <ul>
     <li><a href="#h_01GXS8A8K3KS5H407NZT2A43RX" target="_self">What is Server Subscription?</a></li>
     <li><a href="#h_01GXS8AFVQFQYKC26D6E89516Z" target="_self" rel="undefined">How can I subscribe to a Server Subscription in a server?</a></li>
@@ -43,9 +43,9 @@
 <h2 id="h_01GXS8RFFFKYZ1CGYAC0BZZ6MD">Frequently Asked Questions for iOS</h2>
 <p><strong>Q. Do mobile subscriptions cost the same as desktop subscriptions?</strong></p>
 <p>A: No. Apple takes an additional 30% of revenue from all subscriptions initiated through the Discord iOS application. Subscribers on iOS mobile devices will see a higher price on iOS checkout to account for the additional iOS fee. </p>
-<p>More information on the fee structures is available in the Monetization Terms: <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener">https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</a></p>
+<p>More information on the fee structures is available in the Monetization Terms: <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener noreferrer">https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</a></p>
 <p><strong>Q. Can I change (upgrade or downgrade) my current tier mid-month on iOS?</strong></p>
 <p>A. Currently, we do not support upgrading or downgrading your tier mid-cycle if the subscription was initiated on the Discord iOS app.</p>
 <p>However, you can cancel your subscription, wait for it to end, and then purchase the new tier you want. For example, if you have a subscription to tier A that renews on March 24, but you want to purchase tier B, you will need to cancel tier A, and wait for the subscription to end on March 24 — then you will be able to purchase tier B.</p>
 <p><strong>Q: When will subscriptions be purchasable on Android?</strong></p>
-<p>A: We’re working on it! We don’t have any timing to share at this point but we are actively working to bring Server Subscriptions to Android mobile devices.</p>
+<p>A: Subscriptions will not be available to purchase on Android.</p>
