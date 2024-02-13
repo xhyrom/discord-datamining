@@ -44660,8 +44660,8 @@ html .progress__4ef76 {
 }
 
 .memberCount_d3ce07 {
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     display: flex;
     align-items: center
 }
@@ -118358,6 +118358,35 @@ div.nagbar_c731ff {
     background-image: url(/assets/6e910d869a4ddca77fe2.svg)
 }
 
+.body_a62b51 {
+    padding-top: var(--spacing-16)
+}
+
+.wumpus__3d214 {
+    margin: -106px auto 0;
+    height: 182px
+}
+
+.mute__7525d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4)
+}
+
+.buttonContainer__29174 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16)
+}
+
+.closeButton__76760 {
+    position: absolute;
+    top: var(--spacing-16);
+    right: var(--spacing-16);
+    cursor: pointer
+}
+
 .button__938fd {
     margin-top: var(--spacing-16);
     width: 100%
@@ -118379,35 +118408,6 @@ div.nagbar_c731ff {
 .heroImage__51d03 {
     margin: -72px auto 0;
     height: 140px
-}
-
-.body_cc14f3 {
-    padding-top: var(--spacing-16)
-}
-
-.wumpus__4d7ed {
-    margin: -106px auto 0;
-    height: 182px
-}
-
-.mute_b031e0 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-4)
-}
-
-.buttonContainer__84b5a {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-16)
-}
-
-.closeButton__01bbf {
-    position: absolute;
-    top: var(--spacing-16);
-    right: var(--spacing-16);
-    cursor: pointer
 }
 
 .feedback__5acd4 {
@@ -127225,4 +127225,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c5558f4535608476c861.css.map*/
+/*# sourceMappingURL=app.6b458781eb3895ea236d.css.map*/

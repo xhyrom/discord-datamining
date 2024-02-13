@@ -21984,6 +21984,16 @@
                 stillIndexing: "stillIndexing_cefbbb"
             }
         },
+        660663: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                body: "body_a62b51",
+                buttonContainer: "buttonContainer__29174",
+                closeButton: "closeButton__76760",
+                mute: "mute__7525d",
+                wumpus: "wumpus__3d214"
+            }
+        },
         725803: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -21992,16 +22002,6 @@
                 footer: "footer__386cd",
                 heroImage: "heroImage__51d03",
                 textContainer: "textContainer__5b062"
-            }
-        },
-        813916: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                body: "body_cc14f3",
-                buttonContainer: "buttonContainer__84b5a",
-                closeButton: "closeButton__01bbf",
-                mute: "mute_b031e0",
-                wumpus: "wumpus__4d7ed"
             }
         },
         572266: function(e, t, n) {
