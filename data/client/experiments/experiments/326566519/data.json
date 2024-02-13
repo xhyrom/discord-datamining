@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2024-01_voice_call_backgrounds_mobile",
+    "label": "Custom backgrounds for mobile voice calls",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable custom voice backgrounds"
+    ],
+    "hash": 326566519,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
