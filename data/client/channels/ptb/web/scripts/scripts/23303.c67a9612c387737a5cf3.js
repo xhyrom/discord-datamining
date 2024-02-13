@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23356"], {
+    ["23303"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -23172,8 +23172,8 @@
                         return n = t.type === h.VoiceCallBackgroundTypes.EMPTY ? t : {
                             type: t.type,
                             resource_id: t.resourceId
-                        }, s.default.patch({
-                            url: m.Endpoints.CHANNEL(e),
+                        }, s.default.put({
+                            url: m.Endpoints.UPDATE_VOICE_CHANNEL_BACKGROUND(e),
                             body: {
                                 voice_background_display: n
                             },
@@ -61775,4 +61775,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23356.1d69b1304ddcdbc2dc3f.js.map
+//# sourceMappingURL=23303.c67a9612c387737a5cf3.js.map
