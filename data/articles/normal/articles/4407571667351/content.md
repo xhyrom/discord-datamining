@@ -1,28 +1,30 @@
-<h1 id="h_01HP5KJ0W0GQNAAVATP9ZZG9G8"><span style="font-weight: 400;">HOW TO IDENTIFY USERS: </span></h1>
-<h3 id="h_01HP5KJ0W0D6DB09VPX2DYSAF7"><span style="font-weight: 400;"><span id="docs-internal-guid-35f34a41-7fff-6340-7587-1fc64b3b50a1" style="color: #434343;">Usernames are changing on Discord. New usernames are lowercase, alphanumeric, limited to certain special characters, and </span><strong><span style="color: #434343;">do not have discriminators.</span></strong><span style="color: #434343;"> During the transition from old usernames to new usernames, some users will still have old usernames with discriminators (#0000) while other users will have new usernames. For more information see our Help Center article </span><a href="https://support.discord.com/hc/articles/12620128861463" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">. You can also read the blog post about this change from our co-founder </span><a href="https://discord.com/blog/usernames" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">.</span></span></h3>
+<h3><span style="font-weight: 400;"><span style="color: #434343;"><span id="docs-internal-guid-2e040995-7fff-8ff8-cca6-c992a1370f1a" style="color: #434343;">For extensive guidelines on how Discord works with law enforcement, please refer to our guidelines in our </span><a href="https://discord.com/safety/360044157931-working-with-law-enforcement" target="_blank" rel="noopener noreferrer">Safety Center</a>.</span></span></h3>
+<h3 id="h_01HP5JBAG4WJHXX9530PPNVGE8"><span style="font-weight: 400;"><span id="docs-internal-guid-35f34a41-7fff-6340-7587-1fc64b3b50a1" style="color: #434343;">Usernames are changing on Discord. New usernames are lowercase, alphanumeric, limited to certain special characters, and </span><strong><span style="color: #434343;">do not have discriminators.</span></strong><span style="color: #434343;"> During the transition from old usernames to new usernames, some users will still have old usernames with discriminators (#0000) while other users will have new usernames. For more information see our Help Center article </span><a href="https://support.discord.com/hc/articles/12620128861463" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">. You can also read the blog post about this change from our co-founder </span><a href="https://discord.com/blog/usernames" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">.</span></span></h3>
 <p><span style="font-weight: 400;">To ensure Discord’s prompt compliance with the legal process, the user information provided needs to uniquely identify a Discord account. We can locate users in our system by user identification number, username, and email. The user identification number is the most preferred. </span></p>
 <p><span style="font-weight: 400;">Failure to include requisite information will result in Discord’s inability to comply with the legal process. </span><span style="font-weight: 400;">IP addresses, usernames (without the discriminator), and server nicknames can be helpful to support any of the above, however, they are insufficient to uniquely identify an account as they can be shared by multiple Discord accounts. </span></p>
-<p><strong>HOW TO FIND USER ID:</strong></p>
-<p><span style="font-weight: 400;">Each Discord user is assigned a 17 or 18 digit user identification number (UID). UID’s are unique to each user and cannot be changed. </span></p>
-<p><strong>OBTAINING THE USER ID: DESKTOP APP</strong></p>
-<p><span style="font-weight: 400;">1. Enable Developer Mode</span></p>
-<p><span style="font-weight: 400;">You'll find Developer Mode in User Settings &gt; Advanced.</span></p>
-<p><img src="https://support.discord.com/hc/article_attachments/20507713130263" alt="1.png"></p>
-<p><span style="font-weight: 400;">2. Right-click user and select ‘Copy ID’ </span></p>
-<p><span style="font-weight: 400;">This will copy the 17 or 18 digit UID to your clipboard.<img src="https://support.discord.com/hc/article_attachments/20507747450391" alt="2.png"></span></p>
-<h1 id="h_01HP5KJ0W0RE5NXTYTNRTYW97C"><strong>OBTAINING THE USER ID: MOBILE APP</strong></h1>
-<p><span style="font-weight: 400;">1. Enable Developer Mode </span></p>
-<p><span style="font-weight: 400;">For Android users, go to User Settings &gt; App Settings &gt; Behavior and turn on Developer Mode. For iOS you’ll head to User Settings &gt; Appearance &gt; Advanced and turn on Developer Mode.</span></p>
-<p><img src="https://support.discord.com/hc/article_attachments/20507713136023" alt="Screenshot_106.png"><br><span style="font-weight: 400;">2. Copy ID from user’s profile</span></p>
-<p><span style="font-weight: 400;">For iOS and Android users go to a user's Profile &gt; Select three dots on the top-right &gt; Select ‘'Copy ID' from the drop down menu. </span></p>
-<p><img src="https://support.discord.com/hc/article_attachments/20507713138071" alt="2And_.jpg"><img src="https://support.discord.com/hc/article_attachments/20507713140503" alt="2App_.jpg" width="335" height="365"></p>
-<h1 id="h_01HP5KJ0W09XY0V3E0KW2YGH79"><strong>HOW TO FIND USERNAMES AND DISCRIMINATORS:</strong></h1>
-<p><span style="font-weight: 400;">Each Discord user has a unique case-sensitive username which includes a four-digit discriminator (UserName#1234). Usernames, including discriminators, can be changed by users. Discord also changes usernames once an account is deleted. Provide the username if the UID is unavailable. </span></p>
-<h2 id="h_01HP5KJ0W0T3GQTGPX4TJ56DF8"><span style="font-weight: 400;">OBTAINING THE USERNAME: DESKTOP APP</span></h2>
-<p><span style="font-weight: 400;">1. Right-click and select ‘View Profile’ or ‘Profile’</span></p>
-<p><span style="font-weight: 400;">The profile will show the user’s username, including the discriminator, as depicted below</span></p>
-<p><img src="https://support.discord.com/hc/article_attachments/20507713142807" alt="Screenshot_107.png"></p>
-<p><span style="font-weight: 400;">2. Highlight username and select ‘Copy’</span></p>
-<h3 id="h_01HP5KJ0W04EWDW0MQ2ZTGP2Q9">
-    <em><span style="font-weight: 400;">Server, channel, and message ID numbers should only be provided when prompted or if no user identification can be found. Instructions on how to find such ID numbers can be found </span></em><a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-"><em><span style="font-weight: 400;">here</span></em></a><em><span style="font-weight: 400;">. </span></em>
-</h3>
+<h1 id="docs-internal-guid-7d064abf-7fff-9867-109a-31aa39210459">HOW TO FIND USER ID:</h1>
+<p>Each Discord user is assigned a 17 or 18 digit user identification number (UID). UID’s are unique to each user and cannot be changed. </p>
+<h2 id="h_01HP5JVAKKMGQ9PVK1NVPQTRBA">OBTAINING THE USER ID: DESKTOP APP</h2>
+<p>1. You must enable <strong>Developer Mode</strong> first. You'll find <strong>Developer Mode</strong> by pressing on the cogwheel in the bottom left corner to get to <strong>User Settings, then go to Advanced</strong>.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21232071367063" alt="22787994-bd5b-4708-a5f4-7e8b127cb934"></p>
+<p>2. Navigate to the server or the direct message with the user with the User ID you want to obtain. Right-click on the user’s avatar (profile icon) and select <strong>Copy ID</strong> </p>
+<p>This will copy the 17 or 18 digit UID to your device’s clipboard.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21232071371415" alt="desktop-copy-id-user copy.png"></p>
+<h2 id="h_01HP5JVAKMB22KCAA9HXH279JH">OBTAINING THE USER ID: MOBILE APP</h2>
+<p>1.  You must enable <strong>Developer Mode</strong> first. Tap on your profile icon in the bottom right corner, then tap on the cogwheel in the upper right corner to open <strong>User Settings</strong>. Select <strong>Advanced</strong>.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21232071372951" alt="mobile-profile-card-user-settings copy.png" width="288" height="624">   <img src="https://support.discord.com/hc/article_attachments/21232069668631" alt="mobile-user-settings-advanced copy.png" width="288" height="623"></p>
+<p>2. Navigate to the server or the direct message with the user with the User ID you want to obtain. Long-press on the user’s avatar (profile icon) to reveal the user’s profile, then press on the three dots icon at the upper right corner of the profile. Select <strong>Copy ID</strong>. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21232071382551" alt="mobile-copy-ID-option copy.png" width="347" height="750"></p>
+<h1 id="h_01HP5JVAKMATRKKN6991NEW86C">HOW TO FIND USERNAMES AND DISCRIMINATORS:</h1>
+<p>Each Discord user has a unique username which are lowercase, alphanumeric, and limited to certain special characters. You can learn more about our usernames <a href="https://support.discord.com/hc/articles/12620128861463" target="_blank" rel="noopener noreferrer">here</a>. Usernames can be changed by users and display names for users may differ from their usernames. Discord also changes usernames once an account is deleted. Provide the username if the UID is unavailable. </p>
+<h2 id="h_01HP5JVAKM6JPV2GXA3JPGKD32">OBTAINING THE USERNAME: DESKTOP APP</h2>
+<p>1. Navigate to the server or direct message with the user in question. You can press on the user’s avatar (profile icon) to reveal their Profile or right-click and select ‘<strong>Profile</strong>.</p>
+<p>The profile will show the user’s username underneath their display name.</p>
+<p>2. Hover over the username to reveal the <strong>Click to copy username </strong>option to copy to your device’s clipboard.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21232071385111" alt="desktop-copy-username.png" width="367" height="512"></p>
+<h2 id="h_01HP5JVAKM83EGN1NHMA9DM2AM">OBTAINING THE USERNAME: MOBILE APP</h2>
+<p>1. Navigate to the server or direct message with the user in question. You can long-press the user’s avatar (profile icon) to reveal their Profile. Tap on the three dots icon in the upper right corner of the profile.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21232069674519" alt="mobile-profile-card-three-dots.png" width="301" height="651"></p>
+<p>2. Press <strong>Copy Username </strong>to put on your device’s clipboard.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21232071396631" alt="mobile-copy-username-option.png" width="304" height="658"></p>
+<p><strong><em>Server, channel, and message ID numbers should only be provided when prompted or if no user identification can be found. Instructions on how to find such ID numbers can be found</em></strong><a href="https://support.discord.com/hc/articles/206346498" target="_blank" rel="noopener noreferrer"> here</a><strong><em>.</em></strong></p>
