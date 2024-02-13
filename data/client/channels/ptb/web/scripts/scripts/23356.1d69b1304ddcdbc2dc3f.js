@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["23303"], {
+    ["23356"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -26400,7 +26400,7 @@
                     return s
                 },
                 CloudUpload: function() {
-                    return T
+                    return I
                 }
             }), n("222007"), n("70102");
             var s, i, r = n("917351"),
@@ -26410,36 +26410,38 @@
                 u = n("605250"),
                 l = n("676574"),
                 f = n("668273"),
-                _ = n("994440"),
-                c = n("718517"),
-                g = n("286235"),
-                m = n("980134"),
-                h = n("966724"),
-                v = n("142852"),
-                E = n("49111");
-            let p = new u.default("CloudUpload.tsx"),
-                y = n("123010").default;
+                _ = n("168973"),
+                c = n("599110"),
+                g = n("994440"),
+                m = n("718517"),
+                h = n("286235"),
+                v = n("980134"),
+                E = n("966724"),
+                p = n("142852"),
+                y = n("49111");
+            let T = new u.default("CloudUpload.tsx"),
+                C = n("123010").default;
             (i = s || (s = {})).NOT_STARTED = "NOT_STARTED", i.STARTED = "STARTED", i.UPLOADING = "UPLOADING", i.ERROR = "ERROR", i.COMPLETED = "COMPLETED", i.CANCELED = "CANCELED";
-            class T extends h.default {
+            class I extends E.default {
                 static fromJson(e) {
                     let {
                         item: t,
                         channelId: n,
                         showLargeMessageDialog: s,
                         reactNativeFileIndex: i
-                    } = e, r = new T(t, n, s, i);
+                    } = e, r = new I(t, n, s, i);
                     return "COMPLETED" !== r.status && (r.status = "NOT_STARTED"), Object.entries(e).forEach(e => {
                         let [t, n] = e;
                         !t.startsWith("_") && (r[t] = n)
                     }), r
                 }
                 retryOpts() {
-                    return this.item.platform === h.UploadPlatform.REACT_NATIVE ? {
-                        timeout: 1 * c.default.Millis.HOUR,
-                        backoff: new o.default(.5 * c.default.Millis.SECOND, 30 * c.default.Millis.MINUTE),
+                    return this.item.platform === E.UploadPlatform.REACT_NATIVE ? {
+                        timeout: 1 * m.default.Millis.HOUR,
+                        backoff: new o.default(.5 * m.default.Millis.SECOND, 30 * m.default.Millis.MINUTE),
                         retries: 12
                     } : {
-                        timeout: 1 * c.default.Millis.HOUR,
+                        timeout: 1 * m.default.Millis.HOUR,
                         retries: 12,
                         backoff: new o.default
                     }
@@ -26451,8 +26453,12 @@
                         fileSize: n,
                         bufferedFileData: s
                     } = await this.prepareChunkUploadItem(), i = Math.ceil(n / e);
+                    this.uploadStats = {
+                        numChunks: i,
+                        totalRequestCount: 0
+                    };
                     for (let r = 0; r < i; r++) {
-                        p.info("Uploading chunk ".concat(r + 1, " of ").concat(i, " for file id ").concat(this.id));
+                        T.info("Uploading chunk ".concat(r + 1, " of ").concat(i, " for file id ").concat(this.id));
                         let a = r * e,
                             o = Math.min(a + e, n),
                             d = await this.getChunk(a, o, s);
@@ -26466,19 +26472,19 @@
                                 contentType: t
                             })
                         } catch (e) {
-                            throw p.error("Error uploading chunk ".concat(r + 1, " for file id ").concat(this.id, ": ").concat(e)), e
+                            throw T.error("Error uploading chunk ".concat(r + 1, " for file id ").concat(this.id, ": ").concat(e)), e
                         }
                     }
-                    p.log("Upload complete for file id ".concat(this.id))
+                    T.log("Upload complete for file id ".concat(this.id))
                 }
                 async prepareChunkUploadItem() {
                     let e, t, n;
-                    if (this.item.platform === h.UploadPlatform.REACT_NATIVE) {
+                    if (this.item.platform === E.UploadPlatform.REACT_NATIVE) {
                         let s = this.item;
                         if (e = null != s.mimeType && "" !== s.mimeType ? s.mimeType : "application/octet-stream", null == s.size || 0 === s.size || isNaN(s.size)) try {
-                            t = await (0, m.getFileContentLength)(s.uri)
+                            t = await (0, v.getFileContentLength)(s.uri)
                         } catch (e) {
-                            p.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, m.getFileData)(s.uri)).size
+                            T.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, v.getFileData)(s.uri)).size
                         } else t = s.size
                     } else e = "application/octet-stream", t = this.item.file.size;
                     return {
@@ -26488,7 +26494,7 @@
                     }
                 }
                 async getChunk(e, t, n) {
-                    return this.item.platform !== h.UploadPlatform.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, m.getFileChunk)(this.item.uri, e, t)
+                    return this.item.platform !== E.UploadPlatform.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, v.getFileChunk)(this.item.uri, e, t)
                 }
                 async uploadChunk(e) {
                     let t = {
@@ -26496,7 +26502,7 @@
                         "Content-Range": "bytes ".concat(e.start, "-").concat(e.end - 1, "/").concat(e.totalSize)
                     };
                     for (let n = 1; n <= 3; n++) {
-                        p.log("Attempt ".concat(n, " for file id ").concat(this.id, " : Uploading chunk ").concat(e.start, "-").concat(e.end - 1, " of ").concat(e.totalSize, " bytes"));
+                        null != this.uploadStats && (this.uploadStats.totalRequestCount += 1), T.log("Attempt ".concat(n, " for file id ").concat(this.id, " : Uploading chunk ").concat(e.start, "-").concat(e.end - 1, " of ").concat(e.totalSize, " bytes"));
                         let s = a.throttle(t => {
                             let n = e.start + t.loaded;
                             this.emit("progress", n, e.totalSize, n - this.loaded), this.loaded = n
@@ -26514,7 +26520,7 @@
                         } catch (t) {
                             if (!this.RESUME_INCOMPLETE_CODES.includes(t.status)) throw t;
                             if (this.isUnsuccessfulChunkUpload(t, e.end - 1)) {
-                                p.error("Incomplete chunk upload for file id ".concat(this.id, ": ").concat(t.status));
+                                T.error("Incomplete chunk upload for file id ".concat(this.id, ": ").concat(t.status));
                                 continue
                             }
                             return
@@ -26530,7 +26536,7 @@
                 uploadFileToCloud() {
                     let e, t;
                     if (null == this.responseUrl) throw Error("_uploadFileToCloud - responseUrl is not set");
-                    p.log("Uploading ".concat(this.id)), this.item.platform === h.UploadPlatform.REACT_NATIVE ? t = null != (e = {
+                    T.log("Uploading ".concat(this.id)), this.item.platform === E.UploadPlatform.REACT_NATIVE ? t = null != (e = {
                         type: this.item.mimeType,
                         uri: this.item.uri,
                         name: this.item.filename
@@ -26557,18 +26563,18 @@
                 async upload() {
                     var e, t, n;
                     if ("COMPLETED" === this.status) return;
-                    if (this.setStatus("STARTED"), "CANCELED" === this.status) {
+                    if (this.setStatus("STARTED"), this.startTime = new Date, this.trackUploadStart(), "CANCELED" === this.status) {
                         this.handleComplete(this.id);
                         return
                     }
-                    let s = await y.getUploadPayload(this),
-                        i = (0, v.getUploadTarget)(this.item.target);
+                    let s = await C.getUploadPayload(this),
+                        i = (0, p.getUploadTarget)(this.item.target);
                     if (null == s.filename || "" === s.filename || 0 === this.currentSize) {
-                        p.error("File does not have a filename or size is 0.", JSON.stringify(s)), this.handleError(E.AbortCodes.INVALID_FILE_ASSET);
+                        T.error("File does not have a filename or size is 0.", JSON.stringify(s)), this.handleError(y.AbortCodes.INVALID_FILE_ASSET);
                         return
                     }
                     if ((null !== (e = this.currentSize) && void 0 !== e ? e : 0) > i.getMaxFileSize(this.channelId)) {
-                        this.handleError(E.AbortCodes.ENTITY_TOO_LARGE);
+                        this.handleError(y.AbortCodes.ENTITY_TOO_LARGE);
                         return
                     }
                     if (l.default.get("upload_fail_50") && .5 > Math.random()) {
@@ -26578,7 +26584,7 @@
                         return
                     }
                     try {
-                        p.log("Requesting upload url for ".concat(this.id));
+                        T.log("Requesting upload url for ".concat(this.id));
                         let e = await d.default.post({
                             url: i.getCreateAttachmentURL(this.channelId),
                             body: {
@@ -26589,7 +26595,7 @@
                         this.setResponseUrl(e.body.attachments[0].upload_url), this.setUploadedFilename(e.body.attachments[0].upload_filename)
                     } catch (s) {
                         let e = null !== (n = null == s ? void 0 : null === (t = s.body) || void 0 === t ? void 0 : t.code) && void 0 !== n ? n : s.status;
-                        e !== E.AbortCodes.ENTITY_TOO_LARGE && (p.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(s.body), " for ").concat(this.id)), g.default.captureException(s)), this.handleError(e);
+                        e !== y.AbortCodes.ENTITY_TOO_LARGE && (T.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(s.body), " for ").concat(this.id)), h.default.captureException(s)), this.handleError(e);
                         return
                     }
                     try {
@@ -26599,28 +26605,28 @@
                         }, {
                             autoTrackExposure: !0
                         });
-                        e = t.enabled && t.chunkSize > 0 ? await this.uploadFileToCloudAsChunks(t.chunkSize) : await this.uploadFileToCloud(), this.handleComplete(e)
+                        e = t.enabled && t.chunkSize > 0 ? await this.uploadFileToCloudAsChunks(t.chunkSize) : await this.uploadFileToCloud(), this.trackUploadFinished("COMPLETED"), this.handleComplete(e)
                     } catch (e) {
-                        "CANCELED" === this.status ? this.handleComplete(e) : (p.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
+                        "CANCELED" === this.status ? this.handleComplete(e) : (T.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
                     }
                 }
                 async reactNativeCompressAndExtractData() {
                     var e, t;
-                    if (!(0, v.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) {
-                        p.log("reactNativeCompressAndExtractData() disabled by upload target");
+                    if (!(0, p.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) {
+                        T.log("reactNativeCompressAndExtractData() disabled by upload target");
                         return
                     }
                     if (!0 === this.reactNativeFilePrepped) {
-                        p.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
+                        T.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
                         return
                     }
-                    p.log("Starting compression/conversion for ".concat(this.id));
-                    let n = await (0, _.getAttachmentFile)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0);
+                    T.log("Starting compression/conversion for ".concat(this.id));
+                    let n = await (0, g.getAttachmentFile)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0);
                     if (null == n || null == n.file) return;
                     let s = n.uri,
                         i = n.file.name,
                         r = n.file.type;
-                    if (this.filename = i, null == i || null == s || null == r) throw p.error("Insufficient file data: ".concat({
+                    if (this.filename = i, null == i || null == s || null == r) throw T.error("Insufficient file data: ".concat({
                         filename: i,
                         uri: s,
                         mimeType: r
@@ -26629,9 +26635,9 @@
                         uri: s,
                         mimeType: r
                     }));
-                    let a = null !== (t = n.fileSize) && void 0 !== t ? t : (await (0, m.getFileData)(s)).size;
-                    if (this.postCompressionSize = a, this.currentSize = a, null == a) throw p.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
-                    p.log("Completed compression and conversion. Output size=".concat(a, " bytes; filename=").concat(i, " for ").concat(this.id));
+                    let a = null !== (t = n.fileSize) && void 0 !== t ? t : (await (0, v.getFileData)(s)).size;
+                    if (this.postCompressionSize = a, this.currentSize = a, null == a) throw T.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
+                    T.log("Completed compression and conversion. Output size=".concat(a, " bytes; filename=").concat(i, " for ").concat(this.id));
                     this.item = {
                         ...this.item,
                         uri: s,
@@ -26640,24 +26646,24 @@
                     }, this.reactNativeFilePrepped = !0
                 }
                 handleError(e) {
-                    this.setStatus("ERROR"), this.error = e;
+                    this.setStatus("ERROR"), this.error = e, this.trackUploadFinished("ERROR");
                     try {
                         this.emit("error", e)
                     } catch {}
                     this.removeAllListeners()
                 }
                 handleComplete(e) {
-                    this.setStatus("COMPLETED"), p.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
+                    this.setStatus("COMPLETED"), T.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
                 }
                 cancel() {
-                    p.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
+                    T.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), this.trackUploadFinished("CANCELED"), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
                 }
                 resetState() {
-                    return this.status = "NOT_STARTED", this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this._abortController = new AbortController, super.resetState()
+                    return this.status = "NOT_STARTED", this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this.startTime = void 0, this.uploadStats = void 0, this._abortController = new AbortController, super.resetState()
                 }
                 async delete() {
                     if (null == this.uploadedFilename) return;
-                    let e = (0, v.getUploadTarget)(this.item.target).getDeleteUploadURL(this.uploadedFilename);
+                    let e = (0, p.getUploadTarget)(this.item.target).getDeleteUploadURL(this.uploadedFilename);
                     try {
                         await d.default.delete(e)
                     } catch {}
@@ -26673,6 +26679,35 @@
                 }
                 setUploadedFilename(e) {
                     this.uploadedFilename = e
+                }
+                trackUploadStart() {
+                    var e;
+                    c.default.track(y.AnalyticEvents.ATTACHMENT_UPLOAD_STARTED, {
+                        file_size: this.currentSize,
+                        mime_type: null !== (e = this.mimeType) && void 0 !== e ? e : "unknown",
+                        video_upload_quality: _.default.videoUploadQuality,
+                        data_saving_mode: _.default.dataSavingMode,
+                        low_quality_image_mode: _.default.lowQualityImageMode
+                    })
+                }
+                trackUploadFinished(e) {
+                    var t;
+                    let n = null != this.startTime ? Date.now() - this.startTime.getTime() : -1,
+                        s = null,
+                        i = 1;
+                    null != this.uploadStats && (s = this.uploadStats.numChunks, i = this.uploadStats.totalRequestCount), c.default.track(y.AnalyticEvents.ATTACHMENT_UPLOAD_FINISHED, {
+                        duration_ms: n,
+                        file_size: this.currentSize,
+                        pre_compression_file_size: this.preCompressionSize,
+                        final_state: e,
+                        mime_type: null !== (t = this.mimeType) && void 0 !== t ? t : "unknown",
+                        num_chunks: s,
+                        num_upload_attempts: i,
+                        error_code: this.error,
+                        video_upload_quality: _.default.videoUploadQuality,
+                        data_saving_mode: _.default.dataSavingMode,
+                        low_quality_image_mode: _.default.lowQualityImageMode
+                    })
                 }
                 constructor(e, t, n, s) {
                     var i, r, a, o;
@@ -61740,4 +61775,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23303.8cc92d1083c05e746c6c.js.map
+//# sourceMappingURL=23356.1d69b1304ddcdbc2dc3f.js.map
