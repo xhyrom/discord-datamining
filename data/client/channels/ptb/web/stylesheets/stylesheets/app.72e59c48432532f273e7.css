@@ -17404,9 +17404,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .reply_e44af6 {
-    position: fixed;
-    z-index: 5;
-    transform: translatex(-175px)translatey(-134px);
     background: var(--background-primary);
     border-radius: 8px;
     text-indent: 0;
@@ -17418,15 +17415,15 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     flex-direction: column
 }
 
-.replyHeader__46dc1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
-}
-
 .replyInput__0bc23 {
     background: var(--input-background);
     margin-top: 12px
+}
+
+.emojiButton__423a3 {
+    background-color: transparent;
+    margin-top: 4px;
+    margin-left: 8px
 }
 
 .reaction__98ec4 {
@@ -45021,8 +45018,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -127036,4 +127033,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1d18bb8996856e4e6a34.css.map*/
+/*# sourceMappingURL=app.72e59c48432532f273e7.css.map*/
