@@ -9981,6 +9981,14 @@
                 sidebarContianer: "sidebarContianer_e155a0"
             }
         },
+        800313: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                backButton: "backButton_d8b4ed",
+                keyComboContainer: "keyComboContainer_b857f9",
+                keyComboInner: "keyComboInner__6c0bd"
+            }
+        },
         954333: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -10005,6 +10013,21 @@
                 modInfoItemDescription: "modInfoItemDescription_eab42f",
                 modInfoItemIcon: "modInfoItemIcon__5a831",
                 modInfoItemName: "modInfoItemName_a41d44"
+            }
+        },
+        104687: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                elevatedPermission: "elevatedPermission_af9178",
+                headerContainer: "headerContainer_e95048",
+                noModPerms: "noModPerms__93d74",
+                permissionChiplet: "permissionChiplet__7a040",
+                permissionTooltip: "permissionTooltip_bbf75d",
+                permissionsContainer: "permissionsContainer__90341",
+                roleTooltipContainer: "roleTooltipContainer__23952",
+                roleTooltipContentContainer: "roleTooltipContentContainer__4c749",
+                roleTooltipItem: "roleTooltipItem__5af5f",
+                viewAllPermissions: "viewAllPermissions__64936"
             }
         },
         63893: function(e, t, n) {
@@ -10034,10 +10057,22 @@
         953035: function(e, t, n) {
             "use strict";
             e.exports = {
-                backButton: "backButton__2f3b7",
-                innerContainer: "innerContainer__68aae",
-                keyComboContainer: "keyComboContainer_c48c31",
-                keyComboInner: "keyComboInner_a00a38"
+                innerContainer: "innerContainer__68aae"
+            }
+        },
+        924342: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                editable: "editable_f98c46",
+                elevatedPermission: "elevatedPermission_c4dcb1",
+                permissionItemContainer: "permissionItemContainer__274fd",
+                permissionItemDescription: "permissionItemDescription__284c1",
+                permissionItemHeader: "permissionItemHeader__327be",
+                permissionItemRoleContainer: "permissionItemRoleContainer__8080d",
+                permissionTitle: "permissionTitle_ffc8c2",
+                permissionsGroupContainer: "permissionsGroupContainer__8e7a8",
+                permissionsItemContainer: "permissionsItemContainer__3985c",
+                roleTooltipItem: "roleTooltipItem__23787"
             }
         },
         298028: function(e, t, n) {
