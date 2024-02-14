@@ -16457,20 +16457,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     width: 100px
 }
 
-.picker__35201 {
-    position: fixed;
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
 .reply_e44af6 {
     background: var(--background-primary);
     border-radius: 8px;
     text-indent: 0;
     padding: 16px;
-    width: 450px;
+    width: 300px;
     font-size: 16px;
     box-shadow: var(--elevation-high);
     display: flex;
@@ -16478,8 +16470,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .replyInput__0bc23 {
-    background: var(--input-background);
-    margin-top: 12px
+    background: var(--input-background)
 }
 
 .emojiButton__423a3 {
@@ -16490,7 +16481,9 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .reaction__98ec4 {
     opacity: .8;
-    transition: opacity.2s linear
+    transition: opacity.2s linear;
+    display: flex;
+    align-self: baseline
 }
 
 .reaction__98ec4:hover {
@@ -127248,4 +127241,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.9d13bd582bc866973291.css.map*/
+/*# sourceMappingURL=app.a067e9f344e64cd2af78.css.map*/
