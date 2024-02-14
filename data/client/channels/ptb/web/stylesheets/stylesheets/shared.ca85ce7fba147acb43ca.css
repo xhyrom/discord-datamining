@@ -8240,31 +8240,31 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     margin-top: var(--spacing-16)
 }
 
-.modalContent__94bc3 {
+.modalContent_d434d1 {
     margin-bottom: var(--spacing-16)
 }
 
-.wrapperStyle_c62b4a {
+.wrapperStyle__368ae {
     text-align: center
 }
 
-.settingsButton__0ef61 {
+.settingsButton__33dbb {
     margin-top: var(--spacing-32);
     width: 100%
 }
 
-.actionGroup__8dabc {
+.actionGroup__50213 {
     padding-left: var(--spacing-16);
     padding-right: var(--spacing-16);
     border-radius: var(--radius-sm);
     background-color: var(--background-secondary)
 }
 
-.actionGroup__8dabc+.actionGroup__8dabc {
+.actionGroup__50213+.actionGroup__50213 {
     margin-top: var(--spacing-16)
 }
 
-.actionRow__7b913 {
+.actionRow_be3300 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8273,35 +8273,35 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     padding-bottom: var(--spacing-16)
 }
 
-.actionRow__7b913+.actionRow__7b913 {
+.actionRow_be3300+.actionRow_be3300 {
     border-top: 1px solid var(--background-modifier-accent)
 }
 
-.actionButtonDetails__386ce {
+.actionButtonDetails_d4626a {
     display: flex;
     flex-direction: column;
     margin-right: var(--spacing-32)
 }
 
-.clickableActionRow_dec665:hover {
+.clickableActionRow__97c2b:hover {
     cursor: pointer
 }
 
-.modalHeader__8e957 {
+.modalHeader__8420f {
     justify-content: center;
     margin-top: var(--spacing-16)
 }
 
-.modalFooter__611f1 {
+.modalFooter__4565f {
     justify-content: space-between
 }
 
-.footerLink__4f03d {
+.footerLink_ab56f2 {
     color: var(--interactive-normal);
     height: 32px
 }
 
-.footerLink__4f03d:hover {
+.footerLink_ab56f2:hover {
     -webkit-text-decoration: underline;
     text-decoration: underline
 }
@@ -27631,4 +27631,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.7ffb8e3db10f2513b86a.css.map*/
+/*# sourceMappingURL=shared.ca85ce7fba147acb43ca.css.map*/
