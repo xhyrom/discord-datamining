@@ -10763,25 +10763,35 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 3400,
+                  "end": 6700
+                }
+              ]
+            },
+            "2": {
+              "rollout": [
+                {
+                  "start": 6700,
+                  "end": 10000
+                }
+              ]
+            },
             "none": {
               "rollout": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 100
                 }
               ]
             }
           },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 3,
-              "max_count": 1000
-            }
-          ]
+          "filters": []
         }
       ],
-      "revision": 3,
+      "revision": 4,
       "overrides": {
         "1": [
           "1151305620369199144",
