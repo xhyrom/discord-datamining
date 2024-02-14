@@ -6,10 +6,7 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Can support secure frames for voice/video",
-      "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation",
       "Treatment 3: Can support secure frames above protocol version 8",
-      "Treatment 4: Can support secure frames above protocol version 108 (MLS)",
       "Treatment 5: Can support secure frames above protocol version 109 (MLS)",
       "Treatment 6: Can support secure frames above protocol version 10",
       "Treatment 7: Can support secure frames above protocol version 110 (MLS)"
@@ -18,10 +15,7 @@
     "buckets": [
       -1,
       0,
-      1,
-      2,
       3,
-      4,
       5,
       6,
       7
@@ -41,18 +35,10 @@
     "populations": [
       {
         "buckets": {
-          "3": {
-            "rollout": [
-              {
-                "start": 5000,
-                "end": 7500
-              }
-            ]
-          },
           "6": {
             "rollout": [
               {
-                "start": 7500,
+                "start": 5000,
                 "end": 10000
               }
             ]
@@ -71,15 +57,15 @@
     ],
     "revision": 0,
     "overrides": {
-      "3": [
-        "175987125626339328",
-        "125309031647674368"
-      ],
       "5": [
         "674359793908973569",
         "546126472792768512",
         "564926287152545803",
         "822219052402606132"
+      ],
+      "6": [
+        "175987125626339328",
+        "125309031647674368"
       ]
     },
     "overrides_formatted": []

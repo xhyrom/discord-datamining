@@ -6,10 +6,7 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Can support secure frames for voice/video",
-      "Treatment 2: Can support secure frames for voice/video w/ MLS negotiation",
       "Treatment 3: Can support secure frames above protocol version 8",
-      "Treatment 4: Can support secure frames above protocol version 108 (MLS)",
       "Treatment 5: Can support secure frames above protocol version 109 (MLS)",
       "Treatment 6: Can support secure frames above protocol version 10",
       "Treatment 7: Can support secure frames above protocol version 110 (MLS)"
@@ -18,10 +15,7 @@
     "buckets": [
       -1,
       0,
-      1,
-      2,
       3,
-      4,
       5,
       6,
       7
