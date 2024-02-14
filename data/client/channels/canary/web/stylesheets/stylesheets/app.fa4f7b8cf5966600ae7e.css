@@ -103736,6 +103736,8 @@ html .invoiceCancelRow_a8669b {
     text-align: left
 }
 
+@value responsiveWidthMobile from '../../uikit/auth/WaveSplash.module.css';
+
 .container_b7cc48 {
     display: flex;
     flex-direction: row;
@@ -103746,6 +103748,18 @@ html .invoiceCancelRow_a8669b {
 .buttonColumn__7bc12 {
     margin: 12px;
     width: 40%
+}
+
+@media(max-width:485px) {
+    .container_b7cc48 {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .buttonColumn__7bc12 {
+        width: auto;
+        margin: 12px 0
+    }
 }
 
 .image__7430c {
@@ -107918,6 +107932,8 @@ html .invoiceCancelRow_a8669b {
     flex-direction: column
 }
 
+@value responsiveWidthMobile from '../../../uikit/auth/WaveSplash.module.css';
+
 .header__9ca73 {
     display: flex;
     flex-direction: column;
@@ -107973,6 +107989,16 @@ html .invoiceCancelRow_a8669b {
     margin-top: 24px;
     display: flex;
     flex-direction: column
+}
+
+@media(max-width:485px) {
+    .header__9ca73 {
+        padding-top: 144px
+    }
+
+    .headerImage__05807 {
+        top: 16px
+    }
 }
 
 .mainLoginContainer_e6f422 {
@@ -127388,4 +127414,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.545c86a9e2f06b98bc16.css.map*/
+/*# sourceMappingURL=app.fa4f7b8cf5966600ae7e.css.map*/
