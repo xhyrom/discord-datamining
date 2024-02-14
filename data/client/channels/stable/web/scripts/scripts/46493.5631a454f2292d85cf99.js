@@ -141,6 +141,8 @@
                 } = T.HangStatusExperiment.useExperiment({
                     guildId: null == x ? void 0 : x.guild_id,
                     location: "ActivityStatus"
+                }, {
+                    autoTrackExposure: !1
                 }), R = null, j = L && null != M && v.default.can(N.Permissions.CONNECT, x);
                 j ? R = (0, r.jsx)(m.default, {
                     className: o,
@@ -2167,4 +2169,4 @@
         }
     }
 ]);
-//# sourceMappingURL=46493.947f25e22cfee913e1c9.js.map
+//# sourceMappingURL=46493.5631a454f2292d85cf99.js.map

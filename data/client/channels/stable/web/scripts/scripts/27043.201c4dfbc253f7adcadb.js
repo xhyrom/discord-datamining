@@ -6351,44 +6351,50 @@
             "use strict";
             E.r(u), E.d(u, {
                 upperCaseFirstChar: function() {
-                    return F
-                },
-                truncateText: function() {
                     return B
                 },
-                getAcronym: function() {
+                truncateText: function() {
                     return A
                 },
-                cssValueToNumber: function() {
+                getAcronym: function() {
                     return l
                 },
-                stripDiacritics: function() {
+                cssValueToNumber: function() {
                     return o
                 },
-                normalize: function() {
+                stripDiacritics: function() {
                     return n
+                },
+                normalize: function() {
+                    return r
                 }
-            }), E("781738"), E("222007");
-            let C = /[\u0300-\u036f]/g;
+            }), E("222007"), E("781738");
+            let C = /[\u0300-\u036f]/g,
+                F = /[\uD800-\uDBFF][\uDC00-\uDFFF]/;
 
-            function F(D) {
+            function B(D) {
                 return null == D ? "" : "".concat(D.charAt(0).toUpperCase()).concat(D.slice(1))
             }
-            let B = function(D, u) {
+            let A = function(D, u) {
                 let E = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "…";
-                return null == D || null == u ? "" : D.length > u ? "".concat(D.substring(0, u - E.length).replace(/[\s.]+$/, "")).concat(E) : D
+                if (null == D || null == u) return "";
+                if (D.length > u) {
+                    let C = F.test(D) ? [...D].slice(0, u - E.length).join("") : D.substring(0, u - E.length);
+                    return "".concat(C.replace(/[\s.]+$/, "")).concat(E)
+                }
+                return D
             };
 
-            function A(D) {
+            function l(D) {
                 return null != D ? D.replace(/'s /g, " ").replace(/\w+/g, D => D[0]).replace(/\s/g, "") : ""
             }
 
-            function l(D) {
+            function o(D) {
                 let u = parseInt(D, 10);
                 return isNaN(u) ? 0 : u
             }
-            let o = null == String.prototype.normalize ? D => D : D => D.normalize("NFD").replace(C, "").normalize("NFC"),
-                n = null == String.prototype.normalize ? D => D : function(D) {
+            let n = null == String.prototype.normalize ? D => D : D => D.normalize("NFD").replace(C, "").normalize("NFC"),
+                r = null == String.prototype.normalize ? D => D : function(D) {
                     let u = E("525217"),
                         C = "";
                     return [...D.normalize("NFD")].forEach(D => {
@@ -6399,4 +6405,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27043.105ce50242094adf158e.js.map
+//# sourceMappingURL=27043.201c4dfbc253f7adcadb.js.map

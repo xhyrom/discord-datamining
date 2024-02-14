@@ -3865,11 +3865,11 @@
             "use strict";
             e.exports = {
                 closeIcon: "closeIcon_bfdebf",
+                emojiButton: "emojiButton__423a3",
                 picker: "picker__35201",
                 reaction: "reaction__98ec4",
                 reactions: "reactions__7b6b2",
                 reply: "reply_e44af6",
-                replyHeader: "replyHeader__46dc1",
                 replyInput: "replyInput__0bc23"
             }
         },
@@ -7088,12 +7088,24 @@
         843646: function(e, t, n) {
             "use strict";
             e.exports = {
+                activeNitroHeader: "activeNitroHeader__262a9",
                 categorySection: "categorySection_f44c2f",
                 categorySectionCollapsed: "categorySectionCollapsed__46c33",
                 categorySectionLast: "categorySectionLast__3bfde",
+                categorySectionNitroDivider: "categorySectionNitroDivider_dc0d8b",
+                categorySectionNitroLocked: "categorySectionNitroLocked_cf3b81",
                 header: "header_c3c744",
+                inactiveNitroHeader: "inactiveNitroHeader__552d2",
                 list: "list__30719",
                 listWrapper: "listWrapper__7a5c9",
+                nitroBottomDivider: "nitroBottomDivider_d06fca",
+                nitroTopDividerContainer: "nitroTopDividerContainer__3d13a",
+                nitroTopDividerLockBorder: "nitroTopDividerLockBorder__9b084",
+                nitroTopDividerLockBorderReversed: "nitroTopDividerLockBorderReversed__24b14",
+                nitroTopDividerLockCircle: "nitroTopDividerLockCircle__19774",
+                nitroTopDividerLockContainer: "nitroTopDividerLockContainer__4adce",
+                nitroTopDividerLower: "nitroTopDividerLower__6ca09",
+                nitroTopDividerUpper: "nitroTopDividerUpper_a3c956",
                 noSearchResultsContainer: "noSearchResultsContainer__66d34",
                 premiumUpsell: "premiumUpsell_e1bfd9",
                 premiumUpsellTopOfList: "premiumUpsellTopOfList_ce5874 premiumUpsell_e1bfd9",
@@ -7130,7 +7142,10 @@
         593115: function(e, t, n) {
             "use strict";
             e.exports = {
-                emojiSpriteImage: "emojiSpriteImage__6363e"
+                emojiLockIcon: "emojiLockIcon__37643",
+                emojiLockIconContainer: "emojiLockIconContainer_edde9a",
+                emojiSpriteImage: "emojiSpriteImage__6363e",
+                lockedEmoji: "lockedEmoji__79818"
             }
         },
         764942: function(e, t, n) {
@@ -9966,6 +9981,14 @@
                 sidebarContianer: "sidebarContianer_e155a0"
             }
         },
+        800313: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                backButton: "backButton_d8b4ed",
+                keyComboContainer: "keyComboContainer_b857f9",
+                keyComboInner: "keyComboInner__6c0bd"
+            }
+        },
         954333: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -9990,6 +10013,21 @@
                 modInfoItemDescription: "modInfoItemDescription_eab42f",
                 modInfoItemIcon: "modInfoItemIcon__5a831",
                 modInfoItemName: "modInfoItemName_a41d44"
+            }
+        },
+        104687: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                elevatedPermission: "elevatedPermission_af9178",
+                headerContainer: "headerContainer_e95048",
+                noModPerms: "noModPerms__93d74",
+                permissionChiplet: "permissionChiplet__7a040",
+                permissionTooltip: "permissionTooltip_bbf75d",
+                permissionsContainer: "permissionsContainer__90341",
+                roleTooltipContainer: "roleTooltipContainer__23952",
+                roleTooltipContentContainer: "roleTooltipContentContainer__4c749",
+                roleTooltipItem: "roleTooltipItem__5af5f",
+                viewAllPermissions: "viewAllPermissions__64936"
             }
         },
         63893: function(e, t, n) {
@@ -10019,10 +10057,22 @@
         953035: function(e, t, n) {
             "use strict";
             e.exports = {
-                backButton: "backButton__2f3b7",
-                innerContainer: "innerContainer__68aae",
-                keyComboContainer: "keyComboContainer_c48c31",
-                keyComboInner: "keyComboInner_a00a38"
+                innerContainer: "innerContainer__68aae"
+            }
+        },
+        924342: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                editable: "editable_f98c46",
+                elevatedPermission: "elevatedPermission_c4dcb1",
+                permissionItemContainer: "permissionItemContainer__274fd",
+                permissionItemDescription: "permissionItemDescription__284c1",
+                permissionItemHeader: "permissionItemHeader__327be",
+                permissionItemRoleContainer: "permissionItemRoleContainer__8080d",
+                permissionTitle: "permissionTitle_ffc8c2",
+                permissionsGroupContainer: "permissionsGroupContainer__8e7a8",
+                permissionsItemContainer: "permissionsItemContainer__3985c",
+                roleTooltipItem: "roleTooltipItem__23787"
             }
         },
         298028: function(e, t, n) {
@@ -20714,12 +20764,14 @@
                 bottomIllustration: "bottomIllustration__5d164",
                 bottomOfPageVisibilitySensor: "bottomOfPageVisibilitySensor__201a9",
                 container: "container__74da1",
+                dynamicImage: "dynamicImage__10ecf",
                 existingSubscriberSpacing: "existingSubscriberSpacing__3dfec",
                 footerSpacing: "footerSpacing__9d9e4",
                 footerSpacingFullscreen: "footerSpacingFullscreen__4122e",
                 fullScreenHeroSmallerPadding: "fullScreenHeroSmallerPadding_db1997",
                 fullscreenExistingSubscriberSpacing: "fullscreenExistingSubscriberSpacing_fe1314",
                 fullscreenHero: "fullscreenHero_c52cb4",
+                fullscreenHeroMarketingOptimization: "fullscreenHeroMarketingOptimization__4ad6b",
                 marginTopForButtons: "marginTopForButtons__2d108",
                 noTopPaddingOverride: "noTopPaddingOverride__28e38",
                 pdSparklesBottom: "pdSparklesBottom__58f44",
@@ -20741,6 +20793,7 @@
                 tableRightSideDecoration: "tableRightSideDecoration__7ea51",
                 trialMarketingMargin: "trialMarketingMargin_dd639f",
                 whatsNewSection: "whatsNewSection_e83a8d",
+                whatsNewSectionBackground: "whatsNewSectionBackground__38151",
                 zIndex1: "zIndex1__91aa3"
             }
         },
@@ -21247,8 +21300,8 @@
                 ctaWrapper: "ctaWrapper_e5ae54",
                 description: "description__721a3",
                 details: "details_d32a60",
-                heroAnimation: "heroAnimation__05a18",
-                heroAnimationWrapper: "heroAnimationWrapper__58aa7",
+                heroAsset: "heroAsset__1fdf2",
+                heroAssetWrapper: "heroAssetWrapper_e3abb0",
                 lottieAnimation: "lottieAnimation_ce11a1",
                 lottieAnimationBackground: "lottieAnimationBackground_cd8496",
                 lottieAnimationBackgroundWrapper: "lottieAnimationBackgroundWrapper__463a1",
@@ -21929,6 +21982,36 @@
                 scroller: "scroller_c8d5ad",
                 searchResultsWrap: "searchResultsWrap__9f374",
                 stillIndexing: "stillIndexing_cefbbb"
+            }
+        },
+        215909: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                container: "container__1d01d"
+            }
+        },
+        660663: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                body: "body_a62b51",
+                buttonContainer: "buttonContainer__29174",
+                closeButton: "closeButton__76760",
+                mute: "mute__7525d",
+                wumpus: "wumpus__3d214"
+            }
+        },
+        725803: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                body: "body__766bd",
+                button: "button__938fd",
+                buttonContainer: "buttonContainer__80fd5",
+                buttonIcon: "buttonIcon__0dd53",
+                buttonInner: "buttonInner__49063",
+                description: "description_eb851a",
+                footer: "footer__386cd",
+                heroImage: "heroImage__51d03",
+                textContainer: "textContainer__5b062"
             }
         },
         572266: function(e, t, n) {
