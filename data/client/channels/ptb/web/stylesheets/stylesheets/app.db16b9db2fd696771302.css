@@ -89497,7 +89497,8 @@ html .tabBadge__002b3 {
     position: absolute;
     padding: 24px 16px 20px;
     height: 100%;
-    width: 100%
+    width: 100%;
+    z-index: 1
 }
 
 .iconLogotypeContainer_aa5bd5 {
@@ -89526,12 +89527,23 @@ html .tabBadge__002b3 {
     margin-top: 4px
 }
 
-.theme-light .headerContent__6918d {
-    background: linear-gradient(90deg, var(--white-100).04%, rgba(255, 255, 255, 0))
+.questsCardHeader__4772e:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none
 }
 
-.theme-dark .headerContent__6918d {
-    background: linear-gradient(90deg, var(--black-500).04%, rgba(0, 0, 0, 0))
+.theme-light .questsCardHeader__4772e:after {
+    background: linear-gradient(90deg, #dbe1f3, rgba(255, 255, 255, 0))
+}
+
+.theme-dark .questsCardHeader__4772e:after {
+    background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0))
 }
 
 .questsContainer__44255 {
@@ -127241,4 +127253,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a067e9f344e64cd2af78.css.map*/
+/*# sourceMappingURL=app.db16b9db2fd696771302.css.map*/
