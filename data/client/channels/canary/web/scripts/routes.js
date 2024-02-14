@@ -1556,7 +1556,8 @@
                     QUESTS_REWARD_CODE: _ => "/quests/".concat(_, "/reward-code"),
                     ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls",
                     GAME_INVITE: _ => "/game-invite/@me/".concat(_),
-                    GAME_INVITES: "/game-invite/@me"
+                    GAME_INVITES: "/game-invite/@me",
+                    ADD_SAFETY_WARNING: _ => "/channels/".concat(_, "/add-safety-warning")
                 }),
                 a6 = Object.freeze({
                     INDEX: "/",
@@ -14544,4 +14545,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42061.e333422c8b56df3647f5.js.map
+//# sourceMappingURL=42061.c633878501111a990f62.js.map
