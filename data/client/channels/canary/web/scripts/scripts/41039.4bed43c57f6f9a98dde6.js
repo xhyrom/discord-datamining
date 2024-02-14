@@ -20251,9 +20251,9 @@
             function E(e) {
                 if (T(e)) return Promise.resolve(function(e) {
                     let t = e.match(m);
-                    if (null == t || 3 !== t.length) return null;
-                    let n = t[1],
-                        i = t[2];
+                    if (null == t || 2 !== t.length) return null;
+                    let n = (0, a.getNativePlatform)(),
+                        i = t[1];
                     return {
                         targetBuildOverride: {
                             ["discord_".concat(n)]: {
@@ -20292,7 +20292,7 @@
             function S(e) {
                 return null != e && _.test(e)
             }
-            let m = RegExp("^dev://bo/(ios|android|web)/([\\w-./]+)$", "i");
+            let m = RegExp("^dev://branch/([\\w-./]+)$", "i");
 
             function T(e) {
                 return null != e && m.test(e)
@@ -49998,7 +49998,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "266273"
+                                build_number: "266301"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63921,4 +63921,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.136b123bdd5ea263f93f.js.map
+//# sourceMappingURL=41039.4bed43c57f6f9a98dde6.js.map
