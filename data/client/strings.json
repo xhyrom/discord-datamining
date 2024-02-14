@@ -16496,6 +16496,7 @@
   "POLL_VOTES_COUNT": "\"{count, plural, one {{count} vote} other {{count} votes}}\"",
   "POLL_ALREADY_VOTED": "\"Voted\"",
   "POLL_EDIT_VOTE": "\"Change Vote\"",
+  "POLL_REMOVE_VOTE": "\"Remove Vote\"",
   "POLL_ANSWER_VOTED_ARIA": "\"You voted for this answer\"",
   "POLL_OPTIONS_ARIA": "\"Poll options\"",
   "POLL_EXPIRY_DAYS_REMAINING": "\"{days, plural, one {{days} day} other {{days} days}} left\"",
