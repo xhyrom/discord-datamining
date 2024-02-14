@@ -4723,5 +4723,9 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "ADD_SAFETY_WARNING": {
+    "url": "/channels/:param/add-safety-warning",
+    "allowed_methods": null
   }
 }
