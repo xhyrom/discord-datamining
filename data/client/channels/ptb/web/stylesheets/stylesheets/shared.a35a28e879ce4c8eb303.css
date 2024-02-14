@@ -27538,7 +27538,10 @@ span.button__4f306.disabled_dc5630 {
     background-color: var(--background-secondary);
     border-radius: 8px;
     overflow: hidden;
-    max-width: 375px
+    max-width: 375px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
 }
 
 .cardHeaderImg_f6c932 {
@@ -27631,4 +27634,4 @@ span.button__4f306.disabled_dc5630 {
     color: var(--primary-330)
 }
 
-/*# sourceMappingURL=shared.b74d6e20342a1e311bb5.css.map*/
+/*# sourceMappingURL=shared.a35a28e879ce4c8eb303.css.map*/
