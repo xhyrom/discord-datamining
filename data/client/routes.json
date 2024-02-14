@@ -3116,11 +3116,7 @@
   },
   "PARTNERS_CONNECTIONS": {
     "url": "/partners/connections",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "PARTNERS_APPLY": {
     "url": "/partners/apply",
