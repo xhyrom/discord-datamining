@@ -16469,6 +16469,11 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     flex-direction: column
 }
 
+.replyHeader__46dc1 {
+    margin-bottom: 8px;
+    text-transform: uppercase
+}
+
 .replyInput__0bc23 {
     background: var(--input-background)
 }
@@ -127383,4 +127388,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.327e4237a8c3a6093b4f.css.map*/
+/*# sourceMappingURL=app.545c86a9e2f06b98bc16.css.map*/

@@ -8155,58 +8155,67 @@
                 A = i.forwardRef(function(e, t) {
                     let {
                         user: n,
-                        onEnter: a,
-                        showPopout: r,
-                        children: m,
-                        hide: p
-                    } = e, [h, E] = i.useState(""), [S, C] = i.useState((0, c.toRichValue)("")), T = (0, u.default)();
+                        activity: a,
+                        onEnter: r,
+                        showPopout: m,
+                        children: p,
+                        hide: h
+                    } = e, [E, S] = i.useState(""), [C, T] = i.useState((0, c.toRichValue)("")), v = (0, u.default)();
                     return i.useEffect(() => {
-                        E(""), C((0, c.toRichValue)(""))
-                    }, [r]), (0, l.jsx)(o.Popout, {
+                        S(""), T((0, c.toRichValue)(""))
+                    }, [m]), (0, l.jsx)(o.Popout, {
                         align: "right",
                         position: "bottom",
-                        shouldShow: r,
+                        shouldShow: m,
                         disablePointerEvents: !1,
                         renderPopout: () => (0, l.jsx)("div", {
-                            className: s([_.reply, "theme-".concat(T)]),
+                            className: s([_.reply, "theme-".concat(v)]),
                             ref: t,
                             children: (0, l.jsx)(o.FocusLock, {
                                 containerRef: t,
-                                children: (0, l.jsx)(f.default, {
-                                    placeholder: I.default.Messages.TEXTAREA_PLACEHOLDER.format({
-                                        channel: "@".concat(n.globalName)
-                                    }),
-                                    className: _.replyInput,
-                                    showRemainingCharsAfterCount: -1,
-                                    allowNewLines: !1,
-                                    maxCharacterCount: g.MAX_CHAR_COUNT,
-                                    channel: N,
-                                    onChange: (e, t, n) => {
-                                        E(t), C(n)
-                                    },
-                                    type: d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT,
-                                    textValue: h,
-                                    richValue: S,
-                                    onSubmit: e => {
-                                        let {
-                                            value: t
-                                        } = e;
-                                        return t.length > g.MAX_CHAR_COUNT ? Promise.resolve({
-                                            shouldClear: !1,
-                                            shouldRefocus: !0
-                                        }) : (a(t), p(), Promise.resolve({
-                                            shouldClear: !0,
-                                            shouldRefocus: !1
-                                        }))
-                                    },
-                                    focused: !0,
-                                    disableThemedBackground: !0,
-                                    emojiPickerCloseOnModalOuterClick: !0,
-                                    disabled: !1
+                                children: (0, l.jsxs)("div", {
+                                    children: [(0, l.jsx)(o.Text, {
+                                        variant: "text-xs/bold",
+                                        className: _.replyHeader,
+                                        children: I.default.Messages.ACTIVITY_REACTION_REPLY_TITLE.format({
+                                            activity: a.name
+                                        })
+                                    }), (0, l.jsx)(f.default, {
+                                        placeholder: I.default.Messages.TEXTAREA_PLACEHOLDER.format({
+                                            channel: "@".concat(n.globalName)
+                                        }),
+                                        className: _.replyInput,
+                                        showRemainingCharsAfterCount: -1,
+                                        allowNewLines: !1,
+                                        maxCharacterCount: g.MAX_CHAR_COUNT,
+                                        channel: N,
+                                        onChange: (e, t, n) => {
+                                            S(t), T(n)
+                                        },
+                                        type: d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT,
+                                        textValue: E,
+                                        richValue: C,
+                                        onSubmit: e => {
+                                            let {
+                                                value: t
+                                            } = e;
+                                            return t.length > g.MAX_CHAR_COUNT ? Promise.resolve({
+                                                shouldClear: !1,
+                                                shouldRefocus: !0
+                                            }) : (r(t), h(), Promise.resolve({
+                                                shouldClear: !0,
+                                                shouldRefocus: !1
+                                            }))
+                                        },
+                                        focused: !0,
+                                        disableThemedBackground: !0,
+                                        emojiPickerCloseOnModalOuterClick: !0,
+                                        disabled: !1
+                                    })]
                                 })
                             })
                         }),
-                        children: () => m
+                        children: () => p
                     })
                 });
             var y = e => {
@@ -8281,6 +8290,7 @@
                             hide: () => b(!1),
                             ref: F,
                             user: n,
+                            activity: t,
                             showPopout: P,
                             onEnter: e => {
                                 H(S.ActivityReactorInteractionTypes.ReplySubmit), k(e), O(!0)
@@ -54322,4 +54332,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.11edce6662ac838b33f4.js.map
+//# sourceMappingURL=60053.25c12a0869cc642e84e3.js.map
