@@ -1988,7 +1988,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-2769af028571991ec815972e7c6a9522ff977071",
+                    release: "discord_web-91764576e1fa74d2295d7b541c81148e182c05d4",
                     beforeSend: E,
                     integrations: [new a.Integrations.GlobalHandlers({
                         onerror: !0,
@@ -2003,7 +2003,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "266433", "266433")), a.setTag("builtAt", String("1707947875069"));
+                }), a.setTag("buildNumber", (e = "266450", "266450")), a.setTag("builtAt", String("1707948832487"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2723,7 +2723,7 @@
                 }
             }), n("222007"), (s = a || (a = {}))[s.CROSS_PLATFORM = 0] = "CROSS_PLATFORM", s[s.XBOX = 1] = "XBOX", s[s.PLAYSTATION = 2] = "PLAYSTATION", s[s.SWITCH = 3] = "SWITCH", s[s.PC = 4] = "PC";
             let l = new Set(Object.values(a).filter(e => "number" == typeof e));
-            (i = r || (r = {}))[i.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", i[i.QUEST_BAR = 1] = "QUEST_BAR"
+            (i = r || (r = {}))[i.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", i[i.QUEST_BAR = 1] = "QUEST_BAR", i[i.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD"
         },
         227231: function(e, t, n) {
             "use strict";
@@ -2743,32 +2743,35 @@
                 getRewardAssetUrl: function() {
                     return c
                 },
-                getHeroAssetUrl: function() {
+                getHeroStaticAssetUrl: function() {
                     return f
                 },
-                getQuestBarStaticHeroAssetUrl: function() {
+                getHeroAnimatedAssetUrl: function() {
                     return E
                 },
-                getQuestBarAnimatedHeroAssetUrl: function() {
+                getQuestBarStaticHeroAssetUrl: function() {
                     return S
                 },
-                getGameTileAssetUrl: function() {
+                getQuestBarAnimatedHeroAssetUrl: function() {
                     return h
                 },
-                getGameLogotypeAssetUrl: function() {
+                getGameTileAssetUrl: function() {
                     return C
                 },
-                getQuestForTargetedContent: function() {
+                getGameLogotypeAssetUrl: function() {
                     return _
                 },
-                getPlatformString: function() {
+                getQuestForTargetedContent: function() {
                     return p
                 },
-                calculatePercentComplete: function() {
+                getPlatformString: function() {
                     return m
                 },
-                getContextualEntrypointHeading: function() {
+                calculatePercentComplete: function() {
                     return g
+                },
+                getContextualEntrypointHeading: function() {
+                    return T
                 }
             }), n("222007");
             var a = n("588025"),
@@ -2850,17 +2853,18 @@
             }
             let c = e => "".concat(s).concat(e).concat("/reward.png"),
                 f = e => "".concat(s).concat(e).concat("/hero.png"),
-                E = e => "".concat(s).concat(e).concat("/quests_bar_hero.png"),
-                S = e => "".concat(s).concat(e).concat("/quests_bar_hero.webm"),
-                h = e => "".concat(s).concat(e).concat("/game_tile.png"),
-                C = (e, t) => "".concat(s).concat(e, "/").concat(t).concat("/game_logotype.png");
+                E = e => "".concat(s).concat(e).concat("/hero.webm"),
+                S = e => "".concat(s).concat(e).concat("/quests_bar_hero.png"),
+                h = e => "".concat(s).concat(e).concat("/quests_bar_hero.webm"),
+                C = e => "".concat(s).concat(e).concat("/game_tile.png"),
+                _ = (e, t) => "".concat(s).concat(e, "/").concat(t).concat("/game_logotype.png");
 
-            function _(e, t) {
+            function p(e, t) {
                 for (let [n, a] of e)
                     if (!l(a) && a.targetedContent.includes(t)) return a;
                 return null
             }
-            let p = e => {
+            let m = e => {
                 switch (e) {
                     case a.QuestRewardCodePlatforms.XBOX:
                         return r.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
@@ -2875,7 +2879,7 @@
                 }
             };
 
-            function m(e) {
+            function g(e) {
                 if (null == e.userStatus) return 0;
                 let {
                     streamProgressSeconds: t,
@@ -2888,11 +2892,11 @@
                 return Math.min(t / 60 / a, 1)
             }
 
-            function g(e) {
+            function T(e) {
                 var t, n;
                 if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return r.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
                 if ((null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
-                    let t = m(e);
+                    let t = g(e);
                     return t >= .75 ? r.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : t >= .45 && t <= .55 ? r.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : t > 0 ? r.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : r.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
                 }
                 return r.default.Messages.QUESTS_TITLE.format({
@@ -5225,4 +5229,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21063.f5344fff19934216beac.js.map
+//# sourceMappingURL=21063.5e90dec35e35ea250ec5.js.map

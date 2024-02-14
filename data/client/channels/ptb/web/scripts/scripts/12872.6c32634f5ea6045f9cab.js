@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["7998"], {
+    ["12872"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -85,8 +85,8 @@
                 }
                 let c = a(.5 * r),
                     f = a(l, -c),
-                    E = a(l + r, c);
-                for (f > 0 && (f = Math.max(o(0), f)), f = Math.floor(f / i.MINIMUM_RANGE) * i.MINIMUM_RANGE; f <= E;) f = o(f);
+                    _ = a(l + r, c);
+                for (f > 0 && (f = Math.max(o(0), f)), f = Math.floor(f / i.MINIMUM_RANGE) * i.MINIMUM_RANGE; f <= _;) f = o(f);
                 s(t, n, d)
             }
         },
@@ -100,16 +100,16 @@
                     return f
                 },
                 bulkAck: function() {
-                    return E
-                },
-                localAck: function() {
                     return _
                 },
+                localAck: function() {
+                    return E
+                },
                 enableAutomaticAck: function() {
-                    return h
+                    return A
                 },
                 disableAutomaticAck: function() {
-                    return A
+                    return h
                 },
                 ackGuildFeature: function() {
                     return I
@@ -170,7 +170,7 @@
                 }(e.id, !0, !0) : e.isForumLikeChannel() ? c(e.id, !0, !0, l.default.fromTimestamp(Date.now())) : c(e.id, !0, !0)
             }
 
-            function E(e, t) {
+            function _(e, t) {
                 i.default.dispatch({
                     type: "BULK_ACK",
                     channels: e,
@@ -179,14 +179,14 @@
                 })
             }
 
-            function _(e) {
+            function E(e) {
                 i.default.dispatch({
                     type: "CHANNEL_LOCAL_ACK",
                     channelId: e
                 })
             }
 
-            function h(e, t) {
+            function A(e, t) {
                 i.default.dispatch({
                     type: "ENABLE_AUTOMATIC_ACK",
                     channelId: e,
@@ -194,7 +194,7 @@
                 })
             }
 
-            function A(e, t) {
+            function h(e, t) {
                 i.default.dispatch({
                     type: "DISABLE_AUTOMATIC_ACK",
                     channelId: e,
@@ -486,16 +486,16 @@
                     return f
                 },
                 getEnabledInterventions: function() {
-                    return E
-                },
-                getDisabledInterventions: function() {
                     return _
                 },
+                getDisabledInterventions: function() {
+                    return E
+                },
                 isUnderLockdown: function() {
-                    return h
+                    return A
                 },
                 hasDMsDisabled: function() {
-                    return A
+                    return h
                 },
                 hasInvitesDisabled: function() {
                     return I
@@ -532,21 +532,21 @@
                 return null == e ? void 0 : o(e) ? r.GuildIncidentAlertTypes.JOIN_RAID : r.GuildIncidentAlertTypes.DM_RAID
             }
 
-            function E(e, t) {
+            function _(e, t) {
                 let n = [];
                 return e && n.push(r.GuildIncidentActionTypes.INVITES_DISABLED), t && n.push(r.GuildIncidentActionTypes.DMS_DISABLED), n
             }
 
-            function _(e, t) {
+            function E(e, t) {
                 let n = [];
                 return !e && n.push(r.GuildIncidentActionTypes.INVITES_DISABLED), !t && n.push(r.GuildIncidentActionTypes.DMS_DISABLED), n
             }
 
-            function h(e) {
+            function A(e) {
                 return null != e.dmsDisabledUntil && new Date(e.dmsDisabledUntil) > new Date || null != e.invitesDisabledUntil && new Date(e.invitesDisabledUntil) > new Date
             }
 
-            function A(e) {
+            function h(e) {
                 return (null == e ? void 0 : e.dmsDisabledUntil) != null && new Date(e.dmsDisabledUntil) > new Date
             }
 
@@ -598,21 +598,21 @@
                 o = n("610174"),
                 c = n("311161");
             let f = {},
-                E = {};
+                _ = {};
 
-            function _() {
+            function E() {
                 var e;
                 let t = null !== (e = r.default.getGuildsProto()) && void 0 !== e ? e : {},
                     n = u.default.getGuilds(),
                     l = s.default.keys(n);
-                for (let e of (E = {}, l))(0, o.getGuildAlertModeEnabled)(e).showAlertMode && (E[e] = {
+                for (let e of (_ = {}, l))(0, o.getGuildAlertModeEnabled)(e).showAlertMode && (_[e] = {
                     guildId: e,
                     guildName: n[e].name,
                     ...t[e]
                 })
             }
 
-            function h(e) {
+            function A(e) {
                 return null != e && Object.keys(e).length > 0 ? {
                     raidDetectedAt: e.raid_detected_at,
                     dmSpamDetectedAt: e.dm_spam_detected_at,
@@ -620,9 +620,9 @@
                     invitesDisabledUntil: e.invites_disabled_until
                 } : null
             }
-            class A extends l.default.Store {
+            class h extends l.default.Store {
                 initialize() {
-                    this.waitFor(r.default, u.default, a.default, d.default), this.syncWith([r.default, u.default, a.default, d.default], _)
+                    this.waitFor(r.default, u.default, a.default, d.default), this.syncWith([r.default, u.default, a.default, d.default], E)
                 }
                 getGuildIncident(e) {
                     return f[e]
@@ -631,27 +631,27 @@
                     return f
                 }
                 getGuildAlertSettings() {
-                    return E
+                    return _
                 }
             }
-            A.displayName = "GuildIncidentsStore";
-            var I = new A(i.default, {
+            h.displayName = "GuildIncidentsStore";
+            var I = new h(i.default, {
                 CONNECTION_OPEN: function(e) {
                     for (let t of (f = {}, e.guilds)) {
-                        let e = h(t.properties.incidents_data);
+                        let e = A(t.properties.incidents_data);
                         null != e && ((0, c.hasDetectedActivity)(e) || (0, c.isUnderLockdown)(e)) && (f[t.id] = e)
                     }
                 },
                 GUILD_CREATE: function(e) {
                     let {
                         guild: t
-                    } = e, n = h(t.properties.incidents_data);
+                    } = e, n = A(t.properties.incidents_data);
                     null != n && ((0, c.hasDetectedActivity)(n) || (0, c.isUnderLockdown)(n)) && (f[t.id] = n)
                 },
                 GUILD_UPDATE: function(e) {
                     let {
                         guild: t
-                    } = e, n = h(t.incidents_data);
+                    } = e, n = A(t.incidents_data);
                     null != n && ((0, c.hasDetectedActivity)(n) || (0, c.isUnderLockdown)(n)) ? f[t.id] = n : delete f[t.id]
                 },
                 GUILD_DELETE: function(e) {
@@ -717,7 +717,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return p
                 }
             }), n("424973"), n("222007"), n("808653");
             var l = n("446674"),
@@ -730,16 +730,16 @@
                 o = n("305961"),
                 c = n("49111");
             let f = null,
-                E = {},
-                _ = null;
+                _ = {},
+                E = null;
 
-            function h() {
+            function A() {
                 return {
                     _categories: [],
                     null: []
                 }
             }
-            let A = h();
+            let h = A();
 
             function I(e, t) {
                 e.index = t
@@ -747,7 +747,7 @@
 
             function v(e) {
                 let t = s.default.getChannels(e),
-                    n = h(),
+                    n = A(),
                     l = e => {
                         var t;
                         let {
@@ -766,83 +766,83 @@
                         channel: t,
                         index: -1
                     }), n[t.id] = []
-                }), t[0, s.GUILD_SELECTABLE_CHANNELS_KEY].forEach(l), t[0, s.GUILD_VOCAL_CHANNELS_KEY].forEach(l), (0, r.default)(n._categories, n).forEach(I), E[e] = n, n
+                }), t[0, s.GUILD_SELECTABLE_CHANNELS_KEY].forEach(l), t[0, s.GUILD_VOCAL_CHANNELS_KEY].forEach(l), (0, r.default)(n._categories, n).forEach(I), _[e] = n, n
             }
 
-            function g() {
-                E = {}, null != f && v(f)
+            function D() {
+                _ = {}, null != f && v(f)
             }
 
-            function D(e) {
+            function L(e) {
                 let {
                     guild: {
                         id: t
                     }
                 } = e;
-                E[t] = void 0, f === t && v(t)
+                _[t] = void 0, f === t && v(t)
             }
 
-            function N(e) {
+            function S(e) {
                 let {
                     channel: {
                         guild_id: t
                     }
                 } = e;
                 if (null == t) return !1;
-                E[t] = void 0, f === t && v(t)
+                _[t] = void 0, f === t && v(t)
             }
 
-            function S(e) {
+            function N(e) {
                 let {
                     guildId: t
                 } = e;
-                E[t] = void 0, t === f && v(t)
+                _[t] = void 0, t === f && v(t)
             }
 
-            function L(e, t) {
-                if (_ = t, null == e || null == e.getGuildId()) return !1;
+            function C(e, t) {
+                if (E = t, null == e || null == e.getGuildId()) return !1;
                 let n = e.getGuildId();
-                return null != n && (E[n] = void 0, n === f && v(n), !0)
+                return null != n && (_[n] = void 0, n === f && v(n), !0)
             }
 
-            function R() {
+            function g() {
                 v(c.FAVORITES)
             }
-            class C extends l.default.Store {
+            class M extends l.default.Store {
                 initialize() {
-                    this.waitFor(s.default, o.default, a.default, d.default, u.default), this.syncWith([u.default], R)
+                    this.waitFor(s.default, o.default, a.default, d.default, u.default), this.syncWith([u.default], g)
                 }
                 getCategories(e) {
                     return null != e ? function(e) {
-                        let t = E[e];
+                        let t = _[e];
                         return null != t ? t : v(e)
-                    }(e) : A
+                    }(e) : h
                 }
             }
-            C.displayName = "GuildCategoryStore";
-            var m = new C(i.default, {
+            M.displayName = "GuildCategoryStore";
+            var p = new M(i.default, {
                 CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t
                     } = e;
-                    if (f = null != t ? t : null, null == t || null != E[t]) return !1;
+                    if (f = null != t ? t : null, null == t || null != _[t]) return !1;
                     v(t)
                 },
-                CONNECTION_OPEN: g,
-                OVERLAY_INITIALIZE: g,
-                CACHE_LOADED_LAZY: g,
-                GUILD_CREATE: D,
-                GUILD_UPDATE: D,
+                CONNECTION_OPEN: D,
+                OVERLAY_INITIALIZE: D,
+                CACHE_LOADED_LAZY: D,
+                GUILD_CREATE: L,
+                GUILD_UPDATE: L,
                 GUILD_DELETE: function(e) {
                     let {
                         guild: {
                             id: t
                         }
                     } = e;
-                    delete E[t]
+                    delete _[t]
                 },
-                CHANNEL_CREATE: N,
-                CHANNEL_DELETE: N,
+                CHANNEL_CREATE: S,
+                CHANNEL_DELETE: S,
                 CHANNEL_UPDATES: function(e) {
                     let {
                         channels: t
@@ -850,7 +850,7 @@
                     for (let {
                             guild_id: e
                         }
-                        of t) null != e && (E[e] = void 0, n = !0, f === e && v(e));
+                        of t) null != e && (_[e] = void 0, n = !0, f === e && v(e));
                     return n
                 },
                 GUILD_MEMBER_UPDATE: function(e) {
@@ -859,22 +859,22 @@
                         user: n
                     } = e;
                     if (a.default.getId() !== n.id) return !1;
-                    E[t] = void 0, t === f && v(t)
+                    _[t] = void 0, t === f && v(t)
                 },
                 CURRENT_USER_UPDATE: function() {
                     if (null == f) return !1;
                     v(f)
                 },
-                GUILD_ROLE_CREATE: S,
-                GUILD_ROLE_UPDATE: S,
-                GUILD_ROLE_DELETE: S,
-                IMPERSONATE_UPDATE: S,
-                IMPERSONATE_STOP: S,
+                GUILD_ROLE_CREATE: N,
+                GUILD_ROLE_UPDATE: N,
+                GUILD_ROLE_DELETE: N,
+                IMPERSONATE_UPDATE: N,
+                IMPERSONATE_STOP: N,
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    return null == t && null != _ ? L(d.default.getChannel(_), null) : L(d.default.getChannel(t), t)
+                    return null == t && null != E ? C(d.default.getChannel(E), null) : C(d.default.getChannel(t), t)
                 },
                 VOICE_STATE_UPDATES: function(e) {
                     let {
@@ -885,7 +885,7 @@
                             channelId: n,
                             sessionId: l
                         } = t;
-                        return a.default.getSessionId() !== l ? e : L(d.default.getChannel(n), n) || e
+                        return a.default.getSessionId() !== l ? e : C(d.default.getChannel(n), n) || e
                     }, !1)
                 }
             })
@@ -1081,158 +1081,6 @@
                 }, r.CirclePlusIcon, void 0, {
                     size: 16
                 })
-        },
-        956089: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                BadgeShapes: function() {
-                    return d
-                },
-                getBadgeWidthForValue: function() {
-                    return s
-                },
-                getBadgeCountString: function() {
-                    return o
-                },
-                NumberBadge: function() {
-                    return c
-                },
-                TextBadge: function() {
-                    return f
-                },
-                PremiumBadge: function() {
-                    return E
-                },
-                IconBadge: function() {
-                    return _
-                },
-                CircleBadge: function() {
-                    return h
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var i = n("414456"),
-                r = n.n(i);
-            n("77078");
-            var u = n("20606");
-            n("782340");
-            var a = n("227940");
-            let d = {
-                ROUND: a.baseShapeRound,
-                ROUND_LEFT: a.baseShapeRoundLeft,
-                ROUND_RIGHT: a.baseShapeRoundRight,
-                SQUARE: ""
-            };
-
-            function s(e) {
-                return e < 10 ? 16 : e < 100 ? 22 : 30
-            }
-
-            function o(e) {
-                return e < 1e3 ? "".concat(e) : "".concat(Math.min(Math.floor(e / 1e3), 9), "k+")
-            }
-            let c = e => {
-                    let {
-                        count: t,
-                        color: n = u.default.STATUS_DANGER,
-                        disableColor: i = !1,
-                        shape: c = d.ROUND,
-                        className: f,
-                        style: E,
-                        ..._
-                    } = e;
-                    return (0, l.jsx)("div", {
-                        className: r(f, a.numberBadge, c),
-                        style: {
-                            backgroundColor: i ? void 0 : n,
-                            width: s(t),
-                            paddingRight: function(e) {
-                                switch (e) {
-                                    case 1:
-                                    case 4:
-                                    case 6:
-                                        return 1;
-                                    default:
-                                        return
-                                }
-                            }(t),
-                            ...E
-                        },
-                        ..._,
-                        children: o(t)
-                    })
-                },
-                f = e => {
-                    let {
-                        text: t,
-                        className: n,
-                        color: i = u.default.STATUS_DANGER,
-                        shape: s = d.ROUND,
-                        disableColor: o = !1,
-                        style: c,
-                        ...f
-                    } = e;
-                    return (0, l.jsx)("div", {
-                        className: r(n, a.textBadge, s),
-                        style: {
-                            backgroundColor: o ? void 0 : i,
-                            ...c
-                        },
-                        ...f,
-                        children: t
-                    })
-                },
-                E = e => {
-                    let {
-                        text: t,
-                        className: n,
-                        ...i
-                    } = e;
-                    return (0, l.jsx)(f, {
-                        className: r(a.premiumBadge, n),
-                        text: t,
-                        ...i
-                    })
-                },
-                _ = e => {
-                    let {
-                        icon: t,
-                        className: n,
-                        color: i = u.default.STATUS_DANGER,
-                        shape: s = d.ROUND,
-                        disableColor: o = !1,
-                        style: c
-                    } = e;
-                    return (0, l.jsx)("div", {
-                        className: r(n, a.iconBadge, s),
-                        style: {
-                            backgroundColor: o ? void 0 : i,
-                            ...c
-                        },
-                        children: (0, l.jsx)(t, {
-                            className: a.icon
-                        })
-                    })
-                },
-                h = e => {
-                    let {
-                        className: t,
-                        color: n = u.default.INTERACTIVE_ACTIVE,
-                        shape: i = d.ROUND,
-                        disableColor: s = !1,
-                        style: o,
-                        ...c
-                    } = e;
-                    return (0, l.jsx)("div", {
-                        className: r(t, a.circleBadge, i),
-                        style: {
-                            backgroundColor: s ? void 0 : n,
-                            ...o
-                        },
-                        ...c
-                    })
-                }
         },
         879018: function(e, t, n) {
             "use strict";
@@ -1496,4 +1344,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7998.5bd62bc73da1d50fa923.js.map
+//# sourceMappingURL=12872.6c32634f5ea6045f9cab.js.map
