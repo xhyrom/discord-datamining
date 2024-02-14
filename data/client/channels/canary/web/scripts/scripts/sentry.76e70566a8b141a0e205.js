@@ -136,7 +136,7 @@
                     this.fun = e, this.array = t
                 }
 
-                function m() {}
+                function b() {}
                 u.nextTick = function(e) {
                     var t = Array(arguments.length - 1);
                     if (arguments.length > 1)
@@ -144,7 +144,7 @@
                     l.push(new E(e, t)), 1 === l.length && !d && a(p)
                 }, E.prototype.run = function() {
                     this.fun.apply(null, this.array)
-                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = m, u.addListener = m, u.once = m, u.off = m, u.removeListener = m, u.removeAllListeners = m, u.emit = m, u.prependListener = m, u.prependOnceListener = m, u.listeners = function(e) {
+                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = b, u.addListener = b, u.once = b, u.off = b, u.removeListener = b, u.removeAllListeners = b, u.emit = b, u.prependListener = b, u.prependOnceListener = b, u.listeners = function(e) {
                     return []
                 }, u.binding = function(e) {
                     throw Error("process.binding is not supported")
@@ -244,7 +244,7 @@
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-329c4c527f55e14261fa31b5bd8c46e7d410636a",
+                        release: "discord_web-fe7a3dcd75960bb8d13941bff8f46c3d6999b46a",
                         beforeSend: h,
                         integrations: [new r.Integrations.GlobalHandlers({
                             onerror: !0,
@@ -259,7 +259,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (e = "266185", "266185")), r.setTag("builtAt", String("1707927737179"));
+                    }), r.setTag("buildNumber", (e = "266191", "266191")), r.setTag("builtAt", String("1707929076972"));
                     let t = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != t && "object" == typeof t)
                         for (let e in t) r.setTag(e, t[e]);
@@ -395,4 +395,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.566ae4bbc84fb40f2909.js.map
+//# sourceMappingURL=sentry.76e70566a8b141a0e205.js.map
