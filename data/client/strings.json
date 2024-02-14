@@ -16946,6 +16946,8 @@
   "PROBLEMATIC_GPU_DRIVER_DETECTED": "\"There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).\"",
   "MANAGE_AUTHORIZED_APP": "\"Manage Authorized App\"",
   "MFA_REQUIRED_FOR_STAFF": "\"Multi-factor authentication is required for staff.\"",
+  "INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_1": "\"Add Inappropriate Tier 1 Warning (Experimental)\"",
+  "INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_2": "\"Add Inappropriate Tier 2 Warning (Experimental)\"",
   "INAPPROPRIATE_CONVERSATION_BLOCK_THEM": "\"Block them\"",
   "INAPPROPRIATE_CONVERSATION_UNBLOCK": "\"Unblock\"",
   "INAPPROPRIATE_CONVERSATION_BLOCK_TOAST": "\"Account blocked\"",
