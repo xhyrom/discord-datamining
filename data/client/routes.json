@@ -3124,10 +3124,7 @@
   },
   "PARTNERS_APPLY": {
     "url": "/partners/apply",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "STICKER_PACK": {
     "url": "/sticker-packs/:param",
