@@ -7113,11 +7113,16 @@
                 nitroTopDividerLockCircle: "nitroTopDividerLockCircle__19774",
                 nitroTopDividerLockContainer: "nitroTopDividerLockContainer__4adce",
                 nitroTopDividerLower: "nitroTopDividerLower__6ca09",
+                nitroTopDividerShadow: "nitroTopDividerShadow_ba90d0",
                 nitroTopDividerUpper: "nitroTopDividerUpper_a3c956",
                 noSearchResultsContainer: "noSearchResultsContainer__66d34",
                 premiumUpsell: "premiumUpsell_e1bfd9",
                 premiumUpsellTopOfList: "premiumUpsellTopOfList_ce5874 premiumUpsell_e1bfd9",
-                sectionPremiumUpsellTopOfList: "sectionPremiumUpsellTopOfList_dd7e77"
+                sectionPremiumUpsellTopOfList: "sectionPremiumUpsellTopOfList_dd7e77",
+                upsellButton: "upsellButton__5739a",
+                upsellContainer: "upsellContainer__3c02a",
+                upsellLock: "upsellLock__8cc54",
+                upsellText: "upsellText_afe92a"
             }
         },
         348473: function(e, t, n) {
