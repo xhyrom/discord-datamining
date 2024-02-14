@@ -1315,7 +1315,7 @@
                     y.current.cancel(), R(!0)
                 }, []), P = r.useCallback(() => {
                     y.current.delay()
-                }, []), b = r.useCallback((e, t) => {
+                }, []), D = r.useCallback((e, t) => {
                     O(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
@@ -1337,13 +1337,13 @@
                     className: C,
                     participantType: l.type
                 });
-                let D = u(L).take(T).map(e => (0, a.jsx)(c.Avatar, {
+                let b = u(L).take(T).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: I.viewer
                 }, e.id)).value();
-                return L.length > T && (D[D.length - 1] = (0, a.jsxs)("div", {
+                return L.length > T && (b[b.length - 1] = (0, a.jsxs)("div", {
                     className: I.overflow,
                     children: ["+", L.length - T + 1]
                 }, "overflow")), (0, a.jsx)(h.default, {
@@ -1354,7 +1354,7 @@
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
                                 participantType: l.type,
-                                handleUserContextMenu: b,
+                                handleUserContextMenu: D,
                                 guildId: s,
                                 channelId: t,
                                 users: L,
@@ -1364,7 +1364,7 @@
                             position: "top",
                             children: () => (0, a.jsx)("div", {
                                 className: i(I.viewers, C),
-                                children: D
+                                children: b
                             })
                         })
                     })
@@ -1988,7 +1988,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-64884b907559140de6b145f6f721d2f4088ce15d",
+                    release: "discord_web-75e42c217e84efc4d068818c210f857571c73279",
                     beforeSend: h,
                     integrations: [new a.Integrations.GlobalHandlers({
                         onerror: !0,
@@ -2003,7 +2003,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "266273", "266273")), a.setTag("builtAt", String("1707937148645"));
+                }), a.setTag("buildNumber", (e = "266301", "266301")), a.setTag("builtAt", String("1707939804200"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -4722,4 +4722,4 @@
         }
     }
 ]);
-//# sourceMappingURL=807.9be95ad269dd3846793e.js.map
+//# sourceMappingURL=807.72f4fbb0dfbf2617a77b.js.map
