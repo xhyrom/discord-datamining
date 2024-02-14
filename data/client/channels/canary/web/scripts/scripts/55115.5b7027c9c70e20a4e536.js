@@ -18196,7 +18196,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), r.default.Emitter.injectBatchEmitChanges(a.batchUpdates), r.default.PersistedStore.disableWrites = __OVERLAY__, r.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266245", ", Version Hash: ").concat("d1a65fd9358fef3364253b13dce432dc9bd1fe7f")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266258", ", Version Hash: ").concat("f69bf024d298dcf53d4e508d0d1c6e468bf1111b")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20540,8 +20540,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "266245", "266245"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266245")), _ = 0), _
+                let _ = parseInt((e = "266258", "266258"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266258")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -26220,7 +26220,7 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return L
+                    return u
                 }
             }), E("222007");
             var t = E("689988"),
@@ -26236,8 +26236,9 @@
                 N = E("166604");
             let O = 5 * i.default.Millis.SECOND,
                 A = 12 * i.default.Millis.HOUR,
-                R = 1 * i.default.Millis.MINUTE;
-            class l extends t.default {
+                R = 1 * i.default.Millis.MINUTE,
+                l = 15 * i.default.Millis.SECOND;
+            class L extends t.default {
                 maybeFetchCurrentQuests() {
                     (0, T.getIsEligibleForQuests)({
                         location: N.QuestsExperimentLocations.QUESTS_MANAGER,
@@ -26251,17 +26252,26 @@
                             streamKey: E,
                             applicationId: t
                         } = e;
-
-                        function o() {
-                            null != n.default.getRTCStream(E) && 0 !== n.default.getViewerIds(E).length && (0, I.sendHeartbeat)({
+                        window.clearTimeout(this.sendHeartbeatIntervalIds.get(E));
+                        let o = () => {
+                            (null != n.default.getRTCStream(E) || n.default.getViewerIds(E).length > 0) && (0, I.sendHeartbeat)({
                                 questId: _,
                                 streamKey: E,
                                 applicationId: t
-                            })
-                        }
-                        window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, R))
+                            });
+                            let e = this.calculateHeartbeatDurationMs(t);
+                            this.sendHeartbeatIntervalIds.set(E, window.setTimeout(o, e))
+                        };
+                        o()
+                    }, this.calculateHeartbeatDurationMs = e => {
+                        let _ = s.default.quests.get(e);
+                        if (null == _ || null == _.config || null == _.userStatus) return R;
+                        let {
+                            streamProgressSeconds: E
+                        } = _.userStatus, t = 60 * _.config.streamDurationRequirementMinutes;
+                        return Math.min(Math.max((t - E) * 30, l), R)
                     }, this.terminateHeartbeat = e => {
-                        window.clearInterval(this.sendHeartbeatIntervalIds.get(e)), this.sendHeartbeatIntervalIds.delete(e)
+                        window.clearTimeout(this.sendHeartbeatIntervalIds.get(e)), this.sendHeartbeatIntervalIds.delete(e)
                     }, this.handleEnrollmentSuccess = e => {
                         let {
                             enrolledQuestUserStatus: {
@@ -26324,7 +26334,7 @@
                     }
                 }
             }
-            var L = new l
+            var u = new L
         },
         50733: function(e, _, E) {
             "use strict";
@@ -36031,4 +36041,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55115.e2a8f0c2c671f98815f9.js.map
+//# sourceMappingURL=55115.5b7027c9c70e20a4e536.js.map
