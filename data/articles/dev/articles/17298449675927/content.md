@@ -43,5 +43,5 @@
 <p>The available data can be considered up-to-date data as of 24 hours prior. Any representation of subscription data will reflect that of the previous day, based on system updates. This applies to user and revenue data, alike.</p>
 <h3 id="h_01HCZP2Q537A342VRBQ5932DWS">Accuracy</h3>
 <p>If after reviewing the analytics, it appears the data is inaccurate and the 24 hour period has been taken into account, keep in mind that only subscribers who have <code>Use data to improve Discord</code> enabled will be represented. Users that do not have this setting enabled will not reflect in a Premium App’s subscription analytics. However, this only applies to user data and does not apply to revenue data. Any representation of revenue data will be accurate based on the above mentioned availability period.</p>
-<p> </p>
+<p class="callout">⚠️ If you are not seeing SKU data populate, please ensure you have selected a SKU from the dropdown, toward the top of the Analytics page. </p>
 <p>After reviewing this and other linked articles, if you have any questions about Premium Apps SKU setup, please <a href="https://dis.gd/developer-support/premium-apps">reach out to our Developer Support team</a>!</p>
