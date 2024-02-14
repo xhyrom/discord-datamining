@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_collectibles_shop_elements_marketing",
+    "label": "Collectibles Shop Marketing Experiment - Elements",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables the plain variant of Elements marketing toolip",
+      "Treatment 2: Enables the coachtip variant of Elements marketing toolip"
+    ],
+    "hash": 3290168049,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
