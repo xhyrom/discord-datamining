@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["60053"], {
+    ["59196"], {
         777483: function(e, t, n) {
             var l = {
                 "./icon-file-acrobat.svg": "668973",
@@ -28999,7 +28999,9 @@
                         width: 14
                     }
                 })]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading"),
-                _ = i.omit(r.default.RULES, "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "roleMention", "channelMention");
+                _ = {
+                    text: r.default.RULES.text
+                };
             var N = {
                 combineAndInjectMentionRule: d,
                 createReactRules: s.default,
@@ -54283,4 +54285,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.8f129f7b6d85b65969d4.js.map
+//# sourceMappingURL=59196.eed96eb6505ac6e51e9e.js.map

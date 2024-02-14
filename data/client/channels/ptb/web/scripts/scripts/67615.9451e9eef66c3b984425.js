@@ -27577,6 +27577,9 @@
                         isRejoiningFromCurrentSession: s
                     } = e;
                     s && I.set(t, n)
+                },
+                CONNECTION_INTERRUPTED: function(e) {
+                    e.code === v.RPCCloseCodes.CLOSE_ABNORMAL && (s = void 0, y.clear(), S = !1, R = h.ActivityPanelModes.DISCONNECTED)
                 }
             });
             var B = H
@@ -61789,4 +61792,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.b7c1e7bf01c85899a7b9.js.map
+//# sourceMappingURL=67615.9451e9eef66c3b984425.js.map
