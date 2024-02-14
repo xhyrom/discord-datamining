@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable custom voice backgrounds"
+      "Treatment 1: Enable custom voice backgrounds (full set)",
+      "Treatment 2: Enable custom voice backgrounds (small set)"
     ],
     "hash": 326566519,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
