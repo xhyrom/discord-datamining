@@ -4503,7 +4503,7 @@
                         color: n,
                         look: f,
                         fullWidth: !0,
-                        children: c.default.Messages.JOIN
+                        children: c.default.Messages.PROFILE_JOIN_VOICE_CHANNEL
                     }, "join-hang")
                 })
             }
@@ -40084,7 +40084,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return D
+                    return k
                 }
             }), n("222007");
             var l = n("37983"),
@@ -40095,169 +40095,170 @@
                 o = n("77078"),
                 u = n("373469"),
                 d = n("42203"),
-                c = n("102985"),
-                f = n("387111"),
-                m = n("158998"),
-                p = n("713135"),
-                h = n("765698"),
-                E = n("906889"),
-                g = n("10532"),
-                S = n("648149"),
-                C = n("915712"),
-                T = n("261523"),
-                v = n("369869"),
-                I = n("545590"),
-                _ = n("316095"),
-                N = n("802279"),
-                A = n("577172"),
-                y = n("465215"),
-                x = n("301998"),
-                O = n("379657"),
-                R = n("853780"),
-                M = n("574191"),
-                L = n("491250"),
-                P = n("453649"),
-                b = n("49111"),
-                j = n("838133"),
-                U = n("787678");
+                c = n("824563"),
+                f = n("102985"),
+                m = n("387111"),
+                p = n("158998"),
+                h = n("713135"),
+                E = n("765698"),
+                g = n("906889"),
+                S = n("10532"),
+                C = n("648149"),
+                T = n("915712"),
+                v = n("261523"),
+                I = n("369869"),
+                _ = n("545590"),
+                N = n("316095"),
+                A = n("802279"),
+                y = n("577172"),
+                x = n("465215"),
+                O = n("301998"),
+                R = n("379657"),
+                M = n("853780"),
+                L = n("574191"),
+                P = n("491250"),
+                b = n("453649"),
+                j = n("49111"),
+                U = n("838133"),
+                D = n("787678");
 
-            function D(e) {
+            function k(e) {
                 var t, n, a;
                 let {
-                    activity: D,
-                    customStatusActivity: k,
-                    user: w,
-                    displayProfile: F,
-                    guild: B,
-                    guildMember: G,
-                    channelId: H,
-                    onClose: V,
-                    setNote: K = !1,
-                    canDM: W,
-                    hideNote: Y = !1,
-                    showCopiableUsername: z = !1,
-                    analyticsParams: Z
-                } = e, J = (0, r.useStateFromStores)([c.default], () => c.default.hidePersonalInformation), q = (0, r.useStateFromStores)([p.default], () => {
+                    activity: k,
+                    customStatusActivity: w,
+                    user: F,
+                    displayProfile: B,
+                    guild: G,
+                    guildMember: H,
+                    channelId: V,
+                    onClose: K,
+                    setNote: W = !1,
+                    canDM: Y,
+                    hideNote: z = !1,
+                    showCopiableUsername: Z = !1,
+                    analyticsParams: J
+                } = e, q = (0, r.useStateFromStores)([f.default], () => f.default.hidePersonalInformation), X = (0, r.useStateFromStores)([h.default], () => {
                     var e;
-                    return null === (e = p.default.getUserProfile(w.id)) || void 0 === e ? void 0 : e.application
-                }), X = (0, r.useStateFromStores)([u.default], () => null != u.default.getAnyStreamForUser(w.id)), Q = (0, P.useGetVoiceChannelInfoForVoiceActivitySection)(w.id, null == B ? void 0 : B.id), $ = !X && null != Q, {
-                    showVoiceActivityInProfile: ee
-                } = h.VoiceActivityProfileExperiment.useExperiment({
+                    return null === (e = h.default.getUserProfile(F.id)) || void 0 === e ? void 0 : e.application
+                }), Q = (0, r.useStateFromStores)([u.default], () => null != u.default.getAnyStreamForUser(F.id)), $ = (0, r.useStateFromStores)([c.default], () => c.default.findActivity(F.id, e => e.type === j.ActivityTypes.HANG_STATUS)), ee = (0, b.useGetVoiceChannelInfoForVoiceActivitySection)(F.id, null == G ? void 0 : G.id), et = !Q && null != ee && null == $, {
+                    showVoiceActivityInProfile: en
+                } = E.VoiceActivityProfileExperiment.useExperiment({
                     location: "user popout"
                 }, {
-                    autoTrackExposure: $
-                }), et = (0, r.useStateFromStores)([d.default], () => d.default.getChannel(H)), {
-                    profileTheme: en
-                } = (0, E.default)(w, F), el = i.useRef(null), [ei, ea] = i.useState(!0), es = i.useCallback(() => {
+                    autoTrackExposure: et
+                }), el = (0, r.useStateFromStores)([d.default], () => d.default.getChannel(V)), {
+                    profileTheme: ei
+                } = (0, g.default)(F, B), ea = i.useRef(null), [es, er] = i.useState(!0), eo = i.useCallback(() => {
                     let {
                         current: e
-                    } = el;
-                    null != e && ea(0 === e.getScrollerState().scrollTop)
+                    } = ea;
+                    null != e && er(0 === e.getScrollerState().scrollTop)
                 }, []);
                 if (i.useLayoutEffect(() => {
                         var e;
                         let {
                             current: t
-                        } = el;
+                        } = ea;
                         null != t && (null === (e = t.getScrollerNode()) || void 0 === e || e.scrollTo({
                             top: 0
                         }))
-                    }, []), w.isSystemUser()) return null;
-                if (w.isNonUserBot()) return (0, l.jsx)(L.default, {
-                    user: w,
+                    }, []), F.isSystemUser()) return null;
+                if (F.isNonUserBot()) return (0, l.jsx)(P.default, {
+                    user: F,
                     nickname: null,
                     pronouns: null,
-                    className: j.usernameSection,
+                    className: U.usernameSection,
                     lastSection: !0
                 });
-                let er = null !== (t = f.default.getNickname(null == B ? void 0 : B.id, H, w)) && void 0 !== t ? t : m.default.getName(w),
-                    eo = {
+                let eu = null !== (t = m.default.getNickname(null == G ? void 0 : G.id, V, F)) && void 0 !== t ? t : p.default.getName(F),
+                    ed = {
                         location: {
-                            page: b.AnalyticsPages.USER_POPOUT,
-                            section: b.AnalyticsSections.USER_PROFILE
+                            page: j.AnalyticsPages.USER_POPOUT,
+                            section: j.AnalyticsSections.USER_PROFILE
                         }
                     };
                 return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)(L.default, {
-                        className: j.usernameSection,
-                        user: w,
-                        nickname: er,
-                        pronouns: null == F ? void 0 : F.pronouns,
-                        usernameIcon: w.hasAvatarForGuild(null == B ? void 0 : B.id) && (0, l.jsx)(S.default, {
-                            user: w,
-                            nickname: er
+                    children: [(0, l.jsx)(P.default, {
+                        className: U.usernameSection,
+                        user: F,
+                        nickname: eu,
+                        pronouns: null == B ? void 0 : B.pronouns,
+                        usernameIcon: F.hasAvatarForGuild(null == G ? void 0 : G.id) && (0, l.jsx)(C.default, {
+                            user: F,
+                            nickname: eu
                         }),
-                        shouldCopyOnClick: z
+                        shouldCopyOnClick: Z
                     }), (0, l.jsxs)(o.HeadingLevel, {
-                        children: [(0, l.jsx)(N.default, {
-                            className: j.customStatusSection,
-                            customStatusActivity: k
-                        }), (0, l.jsx)(g.default, {
-                            className: j.divider
+                        children: [(0, l.jsx)(A.default, {
+                            className: U.customStatusSection,
+                            customStatusActivity: w
+                        }), (0, l.jsx)(S.default, {
+                            className: U.divider
                         }), (0, l.jsxs)(o.AdvancedScroller, {
-                            className: s(j.scroller, {
-                                [j.scrollerSeparator]: !ei
+                            className: s(U.scroller, {
+                                [U.scrollerSeparator]: !es
                             }),
-                            onScroll: es,
-                            ref: el,
-                            children: [(0, l.jsx)(I.default, {
-                                user: w,
-                                guildId: null == B ? void 0 : B.id
-                            }), (0, l.jsx)(v.default, {
-                                isUsingGuildBio: null !== (n = null == F ? void 0 : F.isUsingGuildMemberBio()) && void 0 !== n && n,
-                                bio: null == F ? void 0 : F.bio,
-                                guild: B,
-                                hidePersonalInformation: J
-                            }), (0, l.jsx)(y.default, {
-                                userId: w.id,
-                                guild: B,
-                                guildMember: G
-                            }), ee && $ && (0, l.jsx)(P.default, {
-                                voiceChannel: Q.voiceChannel,
-                                voiceGuild: Q.voiceGuild,
-                                onClose: V,
-                                color: U.buttonColor
-                            }), (0, l.jsx)(C.default, {
-                                activity: D,
-                                user: w,
-                                guild: B,
-                                channelId: H,
-                                onClose: V,
-                                analyticsParams: (null == Z ? void 0 : Z.location) != null ? Z : eo
-                            }), (null == q ? void 0 : q.popularApplicationCommandIds) != null && null != et ? (0, l.jsx)(O.default, {
-                                applicationId: q.id,
-                                commandIds: q.popularApplicationCommandIds,
-                                channel: et,
-                                guildId: null == B ? void 0 : B.id,
-                                onClick: V
-                            }) : null, (0, l.jsx)(T.default, {
-                                user: w,
-                                guildId: null == B ? void 0 : B.id
-                            }), (0, l.jsx)(M.default, {
-                                user: w,
-                                guild: B,
-                                guildMember: G,
-                                showBorder: null !== (a = null == F ? void 0 : F.canEditThemes) && void 0 !== a && a
-                            }), (0, l.jsx)(_.default, {
-                                userId: w.id,
-                                channelId: H,
-                                guild: B,
-                                onClose: V,
-                                theme: en
-                            }), null != q && void 0 !== H && (0, l.jsx)(R.default, {
-                                channelId: H,
-                                applicationId: q.id
+                            onScroll: eo,
+                            ref: ea,
+                            children: [(0, l.jsx)(_.default, {
+                                user: F,
+                                guildId: null == G ? void 0 : G.id
+                            }), (0, l.jsx)(I.default, {
+                                isUsingGuildBio: null !== (n = null == B ? void 0 : B.isUsingGuildMemberBio()) && void 0 !== n && n,
+                                bio: null == B ? void 0 : B.bio,
+                                guild: G,
+                                hidePersonalInformation: q
                             }), (0, l.jsx)(x.default, {
-                                user: w,
-                                setNote: K,
-                                autoFocus: !W,
-                                lastSection: !W,
-                                hideNote: J || Y
-                            }), (0, l.jsx)(A.default, {
-                                user: w,
-                                setNote: K,
-                                canDM: W,
-                                onClose: V
+                                userId: F.id,
+                                guild: G,
+                                guildMember: H
+                            }), en && et && (0, l.jsx)(b.default, {
+                                voiceChannel: ee.voiceChannel,
+                                voiceGuild: ee.voiceGuild,
+                                onClose: K,
+                                color: D.buttonColor
+                            }), (0, l.jsx)(T.default, {
+                                activity: k,
+                                user: F,
+                                guild: G,
+                                channelId: V,
+                                onClose: K,
+                                analyticsParams: (null == J ? void 0 : J.location) != null ? J : ed
+                            }), (null == X ? void 0 : X.popularApplicationCommandIds) != null && null != el ? (0, l.jsx)(R.default, {
+                                applicationId: X.id,
+                                commandIds: X.popularApplicationCommandIds,
+                                channel: el,
+                                guildId: null == G ? void 0 : G.id,
+                                onClick: K
+                            }) : null, (0, l.jsx)(v.default, {
+                                user: F,
+                                guildId: null == G ? void 0 : G.id
+                            }), (0, l.jsx)(L.default, {
+                                user: F,
+                                guild: G,
+                                guildMember: H,
+                                showBorder: null !== (a = null == B ? void 0 : B.canEditThemes) && void 0 !== a && a
+                            }), (0, l.jsx)(N.default, {
+                                userId: F.id,
+                                channelId: V,
+                                guild: G,
+                                onClose: K,
+                                theme: ei
+                            }), null != X && void 0 !== V && (0, l.jsx)(M.default, {
+                                channelId: V,
+                                applicationId: X.id
+                            }), (0, l.jsx)(O.default, {
+                                user: F,
+                                setNote: W,
+                                autoFocus: !Y,
+                                lastSection: !Y,
+                                hideNote: q || z
+                            }), (0, l.jsx)(y.default, {
+                                user: F,
+                                setNote: W,
+                                canDM: Y,
+                                onClose: K
                             })]
                         })]
                     })]
@@ -54282,4 +54283,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97808.c4b300336965a2930f1c.js.map
+//# sourceMappingURL=97808.408311ec36a1b732e324.js.map
