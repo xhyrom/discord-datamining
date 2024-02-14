@@ -16311,6 +16311,8 @@
   "SENDER_BLOCKED_MEDIA_BOT_DMS_MESSAGE": "\"Your message could not be sent. It may contain sensitive media, which has been blocked by someone in this conversation.\"",
   "SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_HEADER": "\"Unable to Mark as Not Sensitive\"",
   "SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_BODY": "\"We don't store blocked media permanently. Since this media was uploaded a while ago, the option to mark it as not sensitive has expired.\"",
+  "SAFETY_ALERT_BLOCK_AND_REPORT_DESCRIPTION": "\"They won’t be able to message you. If you feel their actions could harm someone, please submit a report to Discord.\"",
+  "SAFETY_ALERT_BLOCK_AND_REPORT_BUTTON": "\"Block and report\"",
   "SAFETY_WARNING_BANNER_CLOSE_A11Y": "\"Close\"",
   "SAFETY_TOOLS_BUTTON_LABEL": "\"Open Safety Tools\"",
   "SAFETY_TOOLS_ACTION_SHEET_HEADER": "\"Safety tools\"",
