@@ -28724,36 +28724,12 @@
                         canSupportMls: !1
                     },
                     treatments: [{
-                        id: 1,
-                        label: "Can support secure frames for voice/video",
-                        config: {
-                            protocolVersionFloor: 7,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "Can support secure frames for voice/video w/ MLS negotiation",
-                        config: {
-                            protocolVersionFloor: 7,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !0
-                        }
-                    }, {
                         id: 3,
                         label: "Can support secure frames above protocol version 8",
                         config: {
                             protocolVersionFloor: 8,
                             canSupportSecureFrames: !0,
                             canSupportMls: !1
-                        }
-                    }, {
-                        id: 4,
-                        label: "Can support secure frames above protocol version 108 (MLS)",
-                        config: {
-                            protocolVersionFloor: 8,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !0
                         }
                     }, {
                         id: 5,
@@ -28791,36 +28767,12 @@
                         canSupportMls: !1
                     },
                     treatments: [{
-                        id: 1,
-                        label: "Can support secure frames for voice/video",
-                        config: {
-                            protocolVersionFloor: 7,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "Can support secure frames for voice/video w/ MLS negotiation",
-                        config: {
-                            protocolVersionFloor: 107,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !0
-                        }
-                    }, {
                         id: 3,
                         label: "Can support secure frames above protocol version 8",
                         config: {
                             protocolVersionFloor: 8,
                             canSupportSecureFrames: !0,
                             canSupportMls: !1
-                        }
-                    }, {
-                        id: 4,
-                        label: "Can support secure frames above protocol version 108 (MLS)",
-                        config: {
-                            protocolVersionFloor: 8,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !0
                         }
                     }, {
                         id: 5,
@@ -50033,7 +49985,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "266050"
+                                build_number: "266087"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63956,4 +63908,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.6ee5d3bac810393c43e3.js.map
+//# sourceMappingURL=41039.23262cb2a7140fb0750b.js.map
