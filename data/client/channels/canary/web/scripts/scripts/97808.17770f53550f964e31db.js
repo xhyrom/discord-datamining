@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["60053"], {
+    ["97808"], {
         777483: function(e, t, n) {
             var l = {
                 "./icon-file-acrobat.svg": "668973",
@@ -28732,10 +28732,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 parseBioReact: function() {
-                    return m
+                    return f
                 },
                 parseBioReactWithoutScrolling: function() {
-                    return p
+                    return m
                 }
             });
             var l = n("917351"),
@@ -28745,22 +28745,21 @@
             n("404828");
             var r = n("933805"),
                 o = n("52140"),
-                u = n("888198"),
-                d = n("367376"),
-                c = n("788554");
-            let f = (0, c.default)([u.default.PROFILE_BIO_RULES, (0, o.default)({
+                u = n("888198");
+            n("367376");
+            var d = n("788554");
+            let c = (0, d.default)([u.default.PROFILE_BIO_RULES, (0, o.default)({
                 enableBuildOverrides: !1
             })]);
             new s({
                 max: 2e3
             });
-            let m = r.reactParserFor(f);
-            d.default.astParserFor(f);
-            let p = r.reactParserFor((0, c.default)([i.omit(f, ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"]), {
-                emoji: {
-                    react: () => null
-                }
-            }]))
+            let f = r.reactParserFor(c),
+                m = r.reactParserFor((0, d.default)([i.omit(c, ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"]), {
+                    emoji: {
+                        react: () => null
+                    }
+                }]))
         },
         52140: function(e, t, n) {
             "use strict";
@@ -54450,4 +54449,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.b1a73ff9cee3f4d1f576.js.map
+//# sourceMappingURL=97808.17770f53550f964e31db.js.map
