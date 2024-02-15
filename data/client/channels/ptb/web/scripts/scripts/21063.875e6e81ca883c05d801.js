@@ -1988,7 +1988,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-dfa13e404c8f5c88f7de4e3be1455a2a66f4c823",
+                    release: "discord_web-24e3eb62a4247c899691bc671a5387dacb377b46",
                     beforeSend: E,
                     integrations: [new a.Integrations.GlobalHandlers({
                         onerror: !0,
@@ -2003,7 +2003,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "266647", "266647")), a.setTag("builtAt", String("1708011065245"));
+                }), a.setTag("buildNumber", (e = "266658", "266658")), a.setTag("builtAt", String("1708014489680"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -5229,4 +5229,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21063.fd52191423a2722c1a7f.js.map
+//# sourceMappingURL=21063.875e6e81ca883c05d801.js.map
