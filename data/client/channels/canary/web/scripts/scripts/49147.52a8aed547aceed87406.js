@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67615"], {
+    ["49147"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -28386,7 +28386,7 @@
             var s = n("862205");
             (0, s.createExperiment)({
                 kind: "user",
-                id: "2023-06_app_launcher_mobile",
+                id: "2024-02_applaunchermobilenew",
                 label: "App Launcher - Mobile",
                 defaultConfig: {
                     entrypointEnabled: !1,
@@ -61792,4 +61792,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.9451e9eef66c3b984425.js.map
+//# sourceMappingURL=49147.52a8aed547aceed87406.js.map
