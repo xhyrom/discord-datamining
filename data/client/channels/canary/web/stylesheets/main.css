@@ -45383,8 +45383,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -58472,8 +58472,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -125021,6 +125021,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--primary-600);
     --chat-swipe-to-reply-background: var(--primary-660);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -125217,7 +125218,6 @@ div.nagbar_c731ff {
     --toast-bg: var(--primary-800);
     --typing-indicator-bg: var(--primary-630);
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
-    --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --white: var(--white-500)
@@ -125252,7 +125252,7 @@ div.nagbar_c731ff {
     --background-secondary: var(--primary-130);
     --background-secondary-alt: var(--primary-160);
     --background-tertiary: var(--primary-200);
-    --bg-backdrop: hsl(var(--black-500-hsl) / 0.7);
+    --bg-backdrop: hsl(var(--black-500-hsl) / 0.54);
     --bg-backdrop-no-opacity: var(--black-500);
     --bg-base-primary: var(--white-500);
     --bg-base-secondary: var(--primary-130);
@@ -125336,6 +125336,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--white-500);
     --chat-swipe-to-reply-background: var(--primary-160);
     --chat-swipe-to-reply-gradient-background: hsl(var(--white-500-hsl) / 0.4);
+    --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.54);
     --control-brand-foreground: var(--brand-500);
     --control-brand-foreground-new: var(--brand-500);
     --creator-revenue-icon-gradient-end: var(--teal-400);
@@ -125532,7 +125533,6 @@ div.nagbar_c731ff {
     --toast-bg: var(--white-500);
     --typing-indicator-bg: var(--primary-130);
     --user-profile-header-overflow-background: hsl(var(--white-200-hsl) / 0.5);
-    --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --white: var(--white-500)
@@ -125651,6 +125651,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -125847,7 +125848,6 @@ div.nagbar_c731ff {
     --toast-bg: var(--plum-19);
     --typing-indicator-bg: var(--black-500);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
-    --voice-video-tile-blur-fallback: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --white: var(--white-500)
@@ -125966,6 +125966,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -125989,7 +125990,7 @@ div.nagbar_c731ff {
     --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
     --embed-background: var(--plum-18);
     --embed-background-alternate: var(--primary-600);
-    --embed-title: var(--plum-4);
+    --embed-title: var(--plum-3);
     --expression-picker-bg: var(--plum-20);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--plum-19-hsl) / 0.8);
@@ -125999,7 +126000,7 @@ div.nagbar_c731ff {
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
     --halo-positive: hsl(var(--green-360-hsl) / 0.24);
     --header-muted: var(--plum-10);
-    --header-primary: var(--plum-4);
+    --header-primary: var(--plum-3);
     --header-secondary: var(--plum-9);
     --home-background: var(--plum-18);
     --home-card-resting-border: hsl(var(--transparent-hsl) / 0);
@@ -126113,7 +126114,7 @@ div.nagbar_c731ff {
     --redesign-channel-category-name-text: var(--plum-9);
     --redesign-channel-message-preview-text: var(--plum-10);
     --redesign-channel-name-muted-text: var(--plum-10);
-    --redesign-channel-name-text: var(--plum-1);
+    --redesign-channel-name-text: var(--plum-3);
     --redesign-chat-input-background: hsl(var(--plum-11-hsl) / 0.12);
     --redesign-input-control-active-bg: var(--plum-16);
     --redesign-input-control-selected: var(--brand-500);
@@ -126162,7 +126163,6 @@ div.nagbar_c731ff {
     --toast-bg: var(--plum-17);
     --typing-indicator-bg: var(--plum-20);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
-    --voice-video-tile-blur-fallback: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
     --white: var(--white-500)
@@ -127464,4 +127464,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.13d94b0362fec9bb34ff.css.map*/
+/*# sourceMappingURL=app.b1a8633773f462084343.css.map*/

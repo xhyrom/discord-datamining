@@ -101,22 +101,22 @@
                     }
                 }();
                 var l = [],
-                    d = !1,
-                    f = -1;
+                    f = !1,
+                    d = -1;
 
                 function h() {
-                    d && i && (d = !1, i.length ? l = i.concat(l) : f = -1, l.length && p())
+                    f && i && (f = !1, i.length ? l = i.concat(l) : d = -1, l.length && p())
                 }
 
                 function p() {
-                    if (!d) {
+                    if (!f) {
                         var e = a(h);
-                        d = !0;
+                        f = !0;
                         for (var t = l.length; t;) {
-                            for (i = l, l = []; ++f < t;) i && i[f].run();
-                            f = -1, t = l.length
+                            for (i = l, l = []; ++d < t;) i && i[d].run();
+                            d = -1, t = l.length
                         }
-                        i = null, d = !1, ! function(e) {
+                        i = null, f = !1, ! function(e) {
                             if (o === clearTimeout) return clearTimeout(e);
                             if ((o === s || !o) && clearTimeout) return o = clearTimeout, clearTimeout(e);
                             try {
@@ -136,15 +136,15 @@
                     this.fun = e, this.array = t
                 }
 
-                function b() {}
+                function m() {}
                 u.nextTick = function(e) {
                     var t = Array(arguments.length - 1);
                     if (arguments.length > 1)
                         for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-                    l.push(new E(e, t)), 1 === l.length && !d && a(p)
+                    l.push(new E(e, t)), 1 === l.length && !f && a(p)
                 }, E.prototype.run = function() {
                     this.fun.apply(null, this.array)
-                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = b, u.addListener = b, u.once = b, u.off = b, u.removeListener = b, u.removeAllListeners = b, u.emit = b, u.prependListener = b, u.prependOnceListener = b, u.listeners = function(e) {
+                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = m, u.addListener = m, u.once = m, u.off = m, u.removeListener = m, u.removeAllListeners = m, u.emit = m, u.prependListener = m, u.prependOnceListener = m, u.listeners = function(e) {
                     return []
                 }, u.binding = function(e) {
                     throw Error("process.binding is not supported")
@@ -201,7 +201,7 @@
                 "use strict";
                 n.r(t), n.d(t, {
                     usesClientMods: function() {
-                        return d
+                        return f
                     },
                     initSentry: function() {
                         return p
@@ -216,18 +216,18 @@
                 let a = new u.default("Sentry"),
                     l = ["oppobrowser", "realmebrowser", "heytapbrowser"];
 
-                function d() {
+                function f() {
                     let e = window;
                     return null != e.jQuery || null != e.$ || null != e.BetterDiscord || null != e.BdApi || null != e.rambox
                 }
-                let f = (0, s.filterThrottle)({
+                let d = (0, s.filterThrottle)({
                     maxBudgetMinute: 1,
                     maxBudgetHour: 3
                 });
 
                 function h(e, t) {
                     var n, r, u, s;
-                    if (null != (n = e).exception && null != n.exception.values && n.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || l.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0) || d() || "Aborted" === (r = e).message || "cancel captcha" === r.message || !f()) return null;
+                    if (null != (n = e).exception && null != n.exception.values && n.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || l.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0) || f() || "Aborted" === (r = e).message || "cancel captcha" === r.message || !d()) return null;
                     return a.info("Crash", {
                         event: e,
                         hint: t
@@ -244,7 +244,7 @@
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-d43cb591b706b59ff2e4fa1b22f4adb3a141933a",
+                        release: "discord_web-5d256e717e2096ffa18c307077fff96bef16f5f3",
                         beforeSend: h,
                         integrations: [new r.Integrations.GlobalHandlers({
                             onerror: !0,
@@ -259,7 +259,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (e = "266761", "266761")), r.setTag("builtAt", String("1708026433982"));
+                    }), r.setTag("buildNumber", (e = "266782", "266782")), r.setTag("builtAt", String("1708027547787"));
                     let t = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != t && "object" == typeof t)
                         for (let e in t) r.setTag(e, t[e]);
@@ -395,4 +395,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.c9a7f10652ee493cf241.js.map
+//# sourceMappingURL=sentry.0dc24445d5ddf5eb8de8.js.map
