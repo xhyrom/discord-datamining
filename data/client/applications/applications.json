@@ -1,210 +1,5 @@
 [
   {
-    "id": "426537812993638400",
-    "name": "Bloxlink",
-    "icon": "746124a5a40305b92d6dc4e983fd1de2",
-    "description": "Bring over Roblox to your Discord server!\n\nUse /help for help. \n\nDisclaimer: Bloxlink is not affiliated with Roblox.",
-    "summary": "",
-    "type": 1,
-    "primary_sku_id": "1022656689784225922",
-    "hook": true,
-    "slug": "bloxlink",
-    "guild_id": "372036754078826496",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://www.iubenda.com/terms-and-conditions/11935974",
-    "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
-    "custom_install_url": "https://discord.com/oauth2/authorize?scope=bot%20applications.commands&client_id=426537812993638400&permissions=1007021144",
-    "verify_key": "2c91576649e2fa33c00395c1b71dec6b61dc25cc0c8c4b552383cda8bfac5ac7",
-    "flags": 10797056,
-    "tags": [
-      "binds",
-      "moderation",
-      "roblox",
-      "rover",
-      "verification"
-    ]
-  },
-  {
-    "id": "1042836142560645130",
-    "name": "Solana",
-    "icon": "555fde45979c3cb3485d4674d051f16f",
-    "description": "Verify your Solana wallet. \n\nLink your wallet to your Discord profile to provide metadata like:\n\n- Wallet Age (based on date of first transaction)\n- Recently Active Wallet (based on date of most recent transaction)\n- Funded Wallet (does wallet have at least 0.1 Sol?)\n- Bonfida Shortname (if applicable)\n\nServer admins can use this data to create \"verified roles\" and gate channels on those roles.",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "910194960941338677",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://realms.today/terms",
-    "privacy_policy_url": "https://realms.today/privacy-policy",
-    "install_params": {
-      "scopes": [
-        "bot",
-        "applications.commands"
-      ],
-      "permissions": "2147483648"
-    },
-    "verify_key": "44f303108eabcaf6c098da389049d8c52225d0dc3b5c11ce7daa009b31edecac",
-    "flags": 10485760,
-    "tags": [
-      "crypto",
-      "solana",
-      "verified roles"
-    ]
-  },
-  {
-    "id": "296023718839451649",
-    "name": "Charlemagne",
-    "icon": "ef0816821b254e4605f5a75408192ba3",
-    "description": "The Destiny 2 Discord warmind.\n\nSupercharge  your server at https://warmind.io/subscribe/uncommon for unlimited autoroles, clan admin ops, and priority notifications!",
-    "summary": "",
-    "type": null,
-    "primary_sku_id": "1168932216332623912",
-    "hook": true,
-    "slug": "charlemagne",
-    "guild_id": "291026626647425025",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://warmind.io/tos",
-    "privacy_policy_url": "https://warmind.io/privacy",
-    "custom_install_url": "https://warmind.io/add_me",
-    "verify_key": "df9b87f00a126f2ffc458c8dca7ce69f47dfa7ad690e23b0a95150817ce56e34",
-    "flags": 10506240,
-    "tags": [
-      "Destiny",
-      "Destiny 2",
-      "Events",
-      "LFG",
-      "Video Games"
-    ]
-  },
-  {
-    "id": "979802510766268446",
-    "name": "DeviantArt",
-    "icon": "0339b2bf25ba003ad1b406211b146811",
-    "description": "DeviantArt integration",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "745658456052203571",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://www.deviantart.com/about/policy/service/",
-    "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
-    "install_params": {
-      "scopes": [
-        "bot",
-        "applications.commands"
-      ],
-      "permissions": "2415921154"
-    },
-    "verify_key": "fa8c8fe05873f1a1aa68e331b44396d1deadbe430ec38b4c66814db5453b18c1",
-    "flags": 10485760,
-    "tags": [
-      "art",
-      "community",
-      "deviantart",
-      "drawing",
-      "painting"
-    ]
-  },
-  {
-    "id": "1031611223235637258",
-    "name": "JEFIT",
-    "icon": "92dccdc75139cf9f5aaf4d9dafa290d5",
-    "description": "Share your workout routine with friends with Jefit.  With a robust mobile app for workout planning and tracking you can easily track your progress and then share each workout with your friends!  Just sync your Jefit and Discord accounts and type /jefit to show everyone what exercises you're doing, the amount of weight, number of reps, number of sets, and what your full workout looks like.",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "1044369086370562108",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://www.jefit.com/terms-of-use",
-    "privacy_policy_url": "https://www.jefit.com/privacy-policy",
-    "install_params": {
-      "scopes": [
-        "bot",
-        "applications.commands"
-      ],
-      "permissions": "8"
-    },
-    "verify_key": "e52b8d7af9a41c33b81e47b0e438a5bb6fa18105685038280a174b0adf9e75bb",
-    "flags": 10485760,
-    "tags": [
-      "exercise",
-      "fitness",
-      "gym",
-      "tracker",
-      "workout"
-    ]
-  },
-  {
-    "id": "512333785338216465",
-    "name": "Captcha.bot",
-    "icon": "f43bfe6b62b3c38002b3c1cb5100a11a",
-    "description": "Verification for your online communities done right.\n**Only official site:** https://captcha.bot\n\nBy using Captcha.bot you agree to: https://captcha.bot/legal",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "855215899392081971",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://captcha.bot/legal",
-    "privacy_policy_url": "https://captcha.bot/legal",
-    "custom_install_url": "https://captcha.bot/invite",
-    "verify_key": "4ea8d61df50440e5963c355534243a64dd728a034516af5b38d2fc27cf1d4e73",
-    "flags": 10797056,
-    "tags": [
-      "Alt accounts",
-      "Captcha",
-      "Phishing",
-      "Spam",
-      "Verification"
-    ]
-  },
-  {
-    "id": "936929561302675456",
-    "name": "Midjourney Bot",
-    "icon": "f6ce562a6b4979c4b1cbc5b436d3be76",
-    "description": "Generate an image based on a text prompt in under 60 seconds using the </imagine:938956540159881230> command!\n\nhttps://docs.midjourney.com/docs/terms-of-service",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "guild_id": "662267976984297473",
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://docs.midjourney.com/docs/terms-of-service",
-    "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
-    "install_params": {
-      "scopes": [
-        "bot",
-        "applications.commands"
-      ],
-      "permissions": "2147601472"
-    },
-    "verify_key": "9fdcc360b9cf44b7f03d985a97ea196198abe1ec779d8c0761fe46dc0ddb15e2",
-    "flags": 77594624,
-    "tags": [
-      "AI",
-      "fun",
-      "image generation",
-      "imagination",
-      "midjourney"
-    ]
-  },
-  {
-    "id": "834488117758001152",
-    "name": "Stage Channels",
-    "icon": null,
-    "description": "",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "verify_key": "04223c3b4feb0c92673002d9d98b122ac7d05e7e5761273580435461aac3304c",
-    "flags": 0
-  },
-  {
     "id": "438122941302046720",
     "name": "Xbox",
     "icon": null,
@@ -295,12 +90,12 @@
           "label_until": null,
           "release_phase": "activities_team"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
@@ -349,12 +144,12 @@
           "label_until": null,
           "release_phase": "in_development"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -454,17 +249,17 @@
       "free_period_starts_at": "2023-05-15T16:30:00+00:00",
       "free_period_ends_at": "2023-06-16T07:00:00+00:00",
       "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -509,17 +304,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-07-13T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
         "android": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
         "web": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
@@ -562,12 +357,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -617,17 +412,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -673,7 +468,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -683,7 +478,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -784,17 +579,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -840,7 +635,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -850,7 +645,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -895,7 +690,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -905,7 +700,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -950,17 +745,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1121,7 +916,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1131,7 +926,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1176,7 +971,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
@@ -1186,7 +981,7 @@
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
@@ -1286,17 +1081,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
-          "label_type": 2,
-          "label_until": "2024-01-03T08:00:00+00:00",
-          "release_phase": "global_launch"
-        },
         "web": {
           "label_type": 2,
           "label_until": "2024-01-03T08:00:00+00:00",
           "release_phase": "global_launch"
         },
         "ios": {
+          "label_type": 2,
+          "label_until": "2024-01-03T08:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
           "label_type": 2,
           "label_until": "2024-01-03T08:00:00+00:00",
           "release_phase": "global_launch"
@@ -1342,17 +1137,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
         "web": {
           "label_type": 1,
           "label_until": "2023-12-14T08:00:00+00:00",
           "release_phase": "global_launch"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "in_development"
-        },
-        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -1423,6 +1218,62 @@
     }
   },
   {
+    "id": "1010174316991762534",
+    "name": "Krunker Staging [Ad Test]",
+    "icon": "8ed821f8f4836f4cd607c6ac86868a2a",
+    "description": "Pew pew pew",
+    "summary": "",
+    "type": null,
+    "cover_image": "8ed821f8f4836f4cd607c6ac86868a2a",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
+    "privacy_policy_url": "https://frvr.com/legal/krunker#PrivacyPolicy",
+    "verify_key": "9a6368efa54ed75132513810c5bb52a6112cd6fdb3b9f7666d5682eec8a4a32e",
+    "flags": 131080,
+    "max_participants": 50,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": null,
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "in_development"
+        }
+      },
+      "shelf_rank": 45,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Arcade",
+      "FPS",
+      "Shooter"
+    ]
+  },
+  {
     "id": "521842831262875670",
     "name": "Nitro",
     "icon": null,
@@ -1431,6 +1282,17 @@
     "type": null,
     "hook": true,
     "verify_key": "93661a9eefe452d12f51e129e8d9340e7ca53a770158c0ec7970e701534b7420",
+    "flags": 0
+  },
+  {
+    "id": "1096190356233670716",
+    "name": "Collectibles",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
     "flags": 0
   },
   {
@@ -1445,14 +1307,208 @@
     "flags": 0
   },
   {
-    "id": "1096190356233670716",
-    "name": "Collectibles",
+    "id": "426537812993638400",
+    "name": "Bloxlink",
+    "icon": "746124a5a40305b92d6dc4e983fd1de2",
+    "description": "Bring over Roblox to your Discord server!\n\nUse /help for help. \n\nDisclaimer: Bloxlink is not affiliated with Roblox.",
+    "summary": "",
+    "type": 1,
+    "primary_sku_id": "1022656689784225922",
+    "hook": true,
+    "slug": "bloxlink",
+    "guild_id": "372036754078826496",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.iubenda.com/terms-and-conditions/11935974",
+    "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
+    "custom_install_url": "https://discord.com/oauth2/authorize?scope=bot%20applications.commands&client_id=426537812993638400&permissions=1007021144",
+    "verify_key": "2c91576649e2fa33c00395c1b71dec6b61dc25cc0c8c4b552383cda8bfac5ac7",
+    "flags": 10797056,
+    "tags": [
+      "binds",
+      "moderation",
+      "roblox",
+      "rover",
+      "verification"
+    ]
+  },
+  {
+    "id": "1042836142560645130",
+    "name": "Solana",
+    "icon": "555fde45979c3cb3485d4674d051f16f",
+    "description": "Verify your Solana wallet. \n\nLink your wallet to your Discord profile to provide metadata like:\n\n- Wallet Age (based on date of first transaction)\n- Recently Active Wallet (based on date of most recent transaction)\n- Funded Wallet (does wallet have at least 0.1 Sol?)\n- Bonfida Shortname (if applicable)\n\nServer admins can use this data to create \"verified roles\" and gate channels on those roles.",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "910194960941338677",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://realms.today/terms",
+    "privacy_policy_url": "https://realms.today/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "applications.commands",
+        "bot"
+      ],
+      "permissions": "2147483648"
+    },
+    "verify_key": "44f303108eabcaf6c098da389049d8c52225d0dc3b5c11ce7daa009b31edecac",
+    "flags": 10485760,
+    "tags": [
+      "crypto",
+      "solana",
+      "verified roles"
+    ]
+  },
+  {
+    "id": "296023718839451649",
+    "name": "Charlemagne",
+    "icon": "ef0816821b254e4605f5a75408192ba3",
+    "description": "The Destiny 2 Discord warmind.\n\nSupercharge  your server at https://warmind.io/subscribe/uncommon for unlimited autoroles, clan admin ops, and priority notifications!",
+    "summary": "",
+    "type": null,
+    "primary_sku_id": "1168932216332623912",
+    "hook": true,
+    "slug": "charlemagne",
+    "guild_id": "291026626647425025",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://warmind.io/tos",
+    "privacy_policy_url": "https://warmind.io/privacy",
+    "custom_install_url": "https://warmind.io/add_me",
+    "verify_key": "df9b87f00a126f2ffc458c8dca7ce69f47dfa7ad690e23b0a95150817ce56e34",
+    "flags": 10506240,
+    "tags": [
+      "Destiny",
+      "Destiny 2",
+      "Events",
+      "LFG",
+      "Video Games"
+    ]
+  },
+  {
+    "id": "979802510766268446",
+    "name": "DeviantArt",
+    "icon": "0339b2bf25ba003ad1b406211b146811",
+    "description": "DeviantArt integration",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "745658456052203571",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.deviantart.com/about/policy/service/",
+    "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
+    "install_params": {
+      "scopes": [
+        "applications.commands",
+        "bot"
+      ],
+      "permissions": "2415921154"
+    },
+    "verify_key": "fa8c8fe05873f1a1aa68e331b44396d1deadbe430ec38b4c66814db5453b18c1",
+    "flags": 10485760,
+    "tags": [
+      "art",
+      "community",
+      "deviantart",
+      "drawing",
+      "painting"
+    ]
+  },
+  {
+    "id": "1031611223235637258",
+    "name": "JEFIT",
+    "icon": "92dccdc75139cf9f5aaf4d9dafa290d5",
+    "description": "Share your workout routine with friends with Jefit.  With a robust mobile app for workout planning and tracking you can easily track your progress and then share each workout with your friends!  Just sync your Jefit and Discord accounts and type /jefit to show everyone what exercises you're doing, the amount of weight, number of reps, number of sets, and what your full workout looks like.",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "1044369086370562108",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.jefit.com/terms-of-use",
+    "privacy_policy_url": "https://www.jefit.com/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "applications.commands",
+        "bot"
+      ],
+      "permissions": "8"
+    },
+    "verify_key": "e52b8d7af9a41c33b81e47b0e438a5bb6fa18105685038280a174b0adf9e75bb",
+    "flags": 10485760,
+    "tags": [
+      "exercise",
+      "fitness",
+      "gym",
+      "tracker",
+      "workout"
+    ]
+  },
+  {
+    "id": "512333785338216465",
+    "name": "Captcha.bot",
+    "icon": "f43bfe6b62b3c38002b3c1cb5100a11a",
+    "description": "Verification for your online communities done right.\n**Only official site:** https://captcha.bot\n\nBy using Captcha.bot you agree to: https://captcha.bot/legal",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "855215899392081971",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://captcha.bot/legal",
+    "privacy_policy_url": "https://captcha.bot/legal",
+    "custom_install_url": "https://captcha.bot/invite",
+    "verify_key": "4ea8d61df50440e5963c355534243a64dd728a034516af5b38d2fc27cf1d4e73",
+    "flags": 10797056,
+    "tags": [
+      "Alt accounts",
+      "Captcha",
+      "Phishing",
+      "Spam",
+      "Verification"
+    ]
+  },
+  {
+    "id": "936929561302675456",
+    "name": "Midjourney Bot",
+    "icon": "f6ce562a6b4979c4b1cbc5b436d3be76",
+    "description": "Generate an image based on a text prompt in under 60 seconds using the </imagine:938956540159881230> command!\n\nhttps://docs.midjourney.com/docs/terms-of-service",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "guild_id": "662267976984297473",
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://docs.midjourney.com/docs/terms-of-service",
+    "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "applications.commands",
+        "bot"
+      ],
+      "permissions": "2147601472"
+    },
+    "verify_key": "9fdcc360b9cf44b7f03d985a97ea196198abe1ec779d8c0761fe46dc0ddb15e2",
+    "flags": 77594624,
+    "tags": [
+      "AI",
+      "fun",
+      "image generation",
+      "imagination",
+      "midjourney"
+    ]
+  },
+  {
+    "id": "834488117758001152",
+    "name": "Stage Channels",
     "icon": null,
     "description": "",
     "summary": "",
     "type": null,
     "hook": true,
-    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
+    "verify_key": "04223c3b4feb0c92673002d9d98b122ac7d05e7e5761273580435461aac3304c",
     "flags": 0
   },
   {
@@ -1471,8 +1527,13 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -1482,17 +1543,12 @@
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
