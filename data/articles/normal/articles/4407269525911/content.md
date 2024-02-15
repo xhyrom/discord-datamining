@@ -140,20 +140,6 @@
         </tr>
         <tr style="height: 22px;">
             <td style="height: 22px; width: 37.55px;">
-                <p><strong>ARS</strong></p>
-            </td>
-            <td style="height: 22px; width: 52.45px;">
-                <p><strong>peso</strong></p>
-            </td>
-            <td style="height: 22px; width: 67.4px;">
-                <p><span style="font-weight: 400;">584.99</span></p>
-            </td>
-            <td style="height: 22px; width: 76.3px;">
-                <p><span style="font-weight: 400;">5849.99</span></p>
-            </td>
-        </tr>
-        <tr style="height: 22px;">
-            <td style="height: 22px; width: 37.55px;">
                 <p><strong>CLP</strong></p>
             </td>
             <td style="height: 22px; width: 52.45px;">
@@ -281,13 +267,13 @@
     </tbody>
 </table>
 <p> </p>
-<table style="height: 386px; width: 227px;" width="194">
+<table style="height: 386px; width: 228px;" width="194">
     <tbody>
         <tr style="height: 28px;">
-            <td style="height: 28px; width: 175.1px;" colspan="3">
+            <td style="height: 28px; width: 174.933px;" colspan="3">
                 <p><span class="wysiwyg-font-size-large wysiwyg-color-blue90"><strong>Nitro Basic</strong></span></p>
             </td>
-            <td style="width: 76.3px; height: 28px;">
+            <td style="width: 53.4px; height: 28px;">
                 <p><span class="wysiwyg-font-size-large wysiwyg-color-blue90"><strong> </strong></span></p>
             </td>
         </tr>
@@ -301,7 +287,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><strong>Monthly</strong></p>
             </td>
-            <td style="width: 76.3px; height: 22px;"><strong>Yearly</strong></td>
+            <td style="width: 53.4px; height: 22px;"><strong>Yearly</strong></td>
         </tr>
         <tr style="height: 22px;">
             <td style="height: 22px; width: 37.55px;">
@@ -313,7 +299,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">2.99</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">29.99<br></span></p>
             </td>
         </tr>
@@ -327,7 +313,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">8.90</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">89.90<br></span></p>
             </td>
         </tr>
@@ -341,7 +327,7 @@
             <td style="width: 63.1px;">
                 <p><span style="font-weight: 400;">26.99<br></span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 53.4px;">
                 <p><span style="font-weight: 400;">269.99<br></span></p>
             </td>
         </tr>
@@ -355,7 +341,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">13.99</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">139.99<br></span></p>
             </td>
         </tr>
@@ -369,7 +355,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">4.49</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">44.99<br></span></p>
             </td>
         </tr>
@@ -383,7 +369,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">99.00</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">999.00<br></span></p>
             </td>
         </tr>
@@ -397,22 +383,8 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">8.90</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">89.90<br></span></p>
-            </td>
-        </tr>
-        <tr style="height: 22px;">
-            <td style="height: 22px; width: 37.55px;">
-                <p><strong>ARS</strong></p>
-            </td>
-            <td style="height: 22px; width: 52.45px;">
-                <p><strong>peso</strong></p>
-            </td>
-            <td style="height: 22px; width: 63.1px;">
-                <p><span style="font-weight: 400;">499.99</span></p>
-            </td>
-            <td style="width: 76.3px; height: 22px;">
-                <p><span style="font-weight: 400;">2169.99</span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -425,7 +397,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">1900</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">18900<br></span></p>
             </td>
         </tr>
@@ -439,7 +411,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">7500</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">74900<br></span></p>
             </td>
         </tr>
@@ -453,7 +425,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">350</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">3500<br></span></p>
             </td>
         </tr>
@@ -467,7 +439,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">29000</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">289000<br></span></p>
             </td>
         </tr>
@@ -481,7 +453,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">11.90</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">119.90<br></span></p>
             </td>
         </tr>
@@ -495,7 +467,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">79</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">789<br></span></p>
             </td>
         </tr>
@@ -509,7 +481,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">42000</span></p>
             </td>
-            <td style="width: 76.3px; height: 22px;">
+            <td style="width: 53.4px; height: 22px;">
                 <p><span style="font-weight: 400;">419000<br></span></p>
             </td>
         </tr>
@@ -523,7 +495,7 @@
             <td style="height: 18px; width: 63.1px;">
                 <p><span style="font-weight: 400;">49</span></p>
             </td>
-            <td style="width: 76.3px; height: 18px;">
+            <td style="width: 53.4px; height: 18px;">
                 <p><span style="font-weight: 400;">489<br></span></p>
             </td>
         </tr>
@@ -537,7 +509,7 @@
             <td style="height: 10px; width: 63.1px;">
                 <p><span style="font-weight: 400;">3500</span></p>
             </td>
-            <td style="width: 76.3px; height: 10px;">
+            <td style="width: 53.4px; height: 10px;">
                 <p><span style="font-weight: 400;">35000<br></span></p>
             </td>
         </tr>
@@ -661,20 +633,6 @@
             </td>
             <td>
                 <p><span style="font-weight: 400;">119.99</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p><strong>ARS</strong></p>
-            </td>
-            <td>
-                <p><strong>peso</strong></p>
-            </td>
-            <td>
-                <p><span style="font-weight: 400;">291.99</span></p>
-            </td>
-            <td>
-                <p><span style="font-weight: 400;">2919.99</span></p>
             </td>
         </tr>
         <tr>
@@ -927,20 +885,6 @@
         </tr>
         <tr>
             <td>
-                <p><strong>ARS</strong></p>
-            </td>
-            <td>
-                <p><strong>peso</strong></p>
-            </td>
-            <td>
-                <p><span style="font-weight: 400;">567.99</span></p>
-            </td>
-            <td>
-                <p><span style="font-weight: 400;">5680.99</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
                 <p><strong>CLP</strong></p>
             </td>
             <td>
@@ -1145,3 +1089,6 @@
 <p>A: To clarify, on December 14, 2022, we grandfathered our previous Polish prices as we expanded Euro pricing availability to our Polish users.</p>
 <p>If you subscribed to Nitro, Nitro Classic, or Server Boosting before this date, <strong>you will keep your current pricing as long as you don't make any further subscription changes</strong>. Such changes include changing the frequency at which you are billed (yearly or monthly) or the tier of your subscription (for example, going from Nitro to Nitro Classic).</p>
 <p>If you’d like to cancel your subscription, you can do so by going to User Settings &gt; Subscriptions. However, keep in mind that canceling your subscription will also result in a loss of grandfathered prices once your subscription ends.</p>
+<p id="docs-internal-guid-38183b86-7fff-6a02-d75c-6146c3ef19c4"><span class="wysiwyg-font-size-large"><strong>Q: Is localized pricing available for ARS/Argentina?</strong></span></p>
+<p>A: As of February 15, 2024, we began the deprecation of ARS pricing and it is no longer available when purchasing Nitro, Nitro Basic, Nitro Classic, and/or Server Boosting. If you are a Discord user in Argentina and currently have a Nitro, Nitro Basic, Nitro Classic, and/or Server Boosting subscription, you will receive a notification of this change through the email associated with your Discord account about how this change will impact your subscription.</p>
+<p>If you would like to cancel your Discord subscription, you can go to your <strong>User Settings</strong> &gt; <strong>Subscription</strong> to cancel your current subscription(s).</p>
