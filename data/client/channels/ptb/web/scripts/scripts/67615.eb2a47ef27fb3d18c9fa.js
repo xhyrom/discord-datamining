@@ -49400,8 +49400,7 @@
                 if (null == e) return null;
                 if ((0, m.isStaticChannelRoute)(e)) {
                     let t = _.default.getGuildId();
-                    if (null == t) return null;
-                    e = (0, m.buildGuildStaticChannelId)(e, t)
+                    return null == t ? null : (0, m.buildGuildStaticChannelId)(e, t)
                 }
                 return e
             }
@@ -49451,24 +49450,29 @@
                     }
                 }
                 getSection(e, t) {
-                    return T ? g.ChannelSections.SEARCH : null != (e = S(e)) && null != C[e] ? g.ChannelSections.SIDEBAR_CHAT : t && y ? g.ChannelSections.PROFILE : p ? g.ChannelSections.SUMMARIES : E ? g.ChannelSections.MEMBERS : g.ChannelSections.NONE
+                    if (T) return g.ChannelSections.SEARCH;
+                    let n = S(e);
+                    return null != n && null != C[n] ? g.ChannelSections.SIDEBAR_CHAT : t && y ? g.ChannelSections.PROFILE : p ? g.ChannelSections.SUMMARIES : E ? g.ChannelSections.MEMBERS : g.ChannelSections.NONE
                 }
                 getSidebarState(e) {
-                    return null == (e = S(e)) ? void 0 : C[e]
+                    let t = S(e);
+                    return null == t ? void 0 : C[t]
                 }
                 getGuildSidebarState(e) {
                     return null == e ? void 0 : I[e]
                 }
                 getCurrentSidebarChannelId(e) {
-                    if (null == (e = S(e)) || T) return null;
-                    let t = C[e];
-                    return null == t ? null : t.type === a.SidebarType.VIEW_THREAD || t.type === a.SidebarType.VIEW_CHANNEL ? t.channelId : null
+                    let t = S(e);
+                    if (null == t || T) return null;
+                    let n = C[t];
+                    return null == n ? null : n.type === a.SidebarType.VIEW_THREAD || n.type === a.SidebarType.VIEW_CHANNEL ? n.channelId : null
                 }
                 getCurrentSidebarMessageId(e) {
                     var t;
-                    if (null == (e = S(e)) || T) return null;
-                    let n = C[e];
-                    return null == n ? null : n.type === a.SidebarType.VIEW_THREAD || n.type === a.SidebarType.VIEW_CHANNEL ? null === (t = n.details) || void 0 === t ? void 0 : t.initialMessageId : null
+                    let n = S(e);
+                    if (null == n || T) return null;
+                    let s = C[n];
+                    return null == s ? null : s.type === a.SidebarType.VIEW_THREAD || s.type === a.SidebarType.VIEW_CHANNEL ? null === (t = s.details) || void 0 === t ? void 0 : t.initialMessageId : null
                 }
             }
             P.displayName = "ChannelSectionStore", P.persistKey = "ChannelSectionStore2";
@@ -61792,4 +61796,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.30edb5c57650913cc47b.js.map
+//# sourceMappingURL=67615.eb2a47ef27fb3d18c9fa.js.map
