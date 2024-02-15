@@ -31239,93 +31239,6 @@ html .progress__4ef76 {
     color: var(--brand-experiment-560)
 }
 
-.strangerDangerBanner__2bd4d {
-    display: flex;
-    flex: 1 1 auto;
-    align-items: center;
-    margin: var(--spacing-16);
-    border-radius: 6px;
-    padding: var(--spacing-8)var(--spacing-12)var(--spacing-8)var(--spacing-16);
-    background: var(--background-floating);
-    position: sticky;
-    height: -moz-fit-content;
-    height: fit-content;
-    box-shadow: var(--elevation-high);
-    z-index: 2;
-    gap: var(--spacing-16);
-    flex-wrap: nowrap
-}
-
-.safetyShieldIcon__6f07a {
-    width: 27px;
-    height: 32px
-}
-
-.buttons__9c0c4 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 8px
-}
-
-@media(max-width:500px) {
-    .buttons__9c0c4 {
-        flex-grow: 1
-    }
-}
-
-.shieldAndHeading_f6d557 {
-    display: flex;
-    flex: 1 1 auto;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: var(--spacing-16)
-}
-
-.closeButton_e53705 {
-    opacity: .5;
-    transition: opacity.2s;
-    cursor: pointer;
-    -webkit-app-region: no-drag;
-    color: var(--text-normal)
-}
-
-.closeButton_e53705:hover {
-    opacity: 1
-}
-
-@media(max-width:860px) {
-    .strangerDangerBanner__2bd4d {
-        flex-wrap: wrap;
-        padding: var(--spacing-16);
-        flex-basis: min-content
-    }
-
-    .safetyShieldIcon__6f07a {
-        width: 43px;
-        height: 51px
-    }
-
-    .shieldAndHeading_f6d557 {
-        flex-basis: min-content
-    }
-
-    .closeButton_e53705 {
-        margin-left: auto;
-        align-self: flex-start
-    }
-
-    .buttons__9c0c4 {
-        order: 4;
-        width: 100%
-    }
-
-    .buttons__9c0c4 button {
-        width: 50%
-    }
-}
-
 .summaryDivider_d280d3 {
     justify-content: flex-start;
     pointer-events: auto;
@@ -45383,8 +45296,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -118574,6 +118487,18 @@ div.nagbar_c731ff {
     background-image: url(/assets/6e910d869a4ddca77fe2.svg)
 }
 
+.modalContent_f26c9d {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    padding: var(--spacing-24);
+    text-align: center
+}
+
+.modalDescription__99825 {
+    margin-bottom: var(--spacing-16)
+}
+
 .body_a62b51 {
     padding-top: var(--spacing-16)
 }
@@ -127464,4 +127389,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c211b1538c3ec41ba408.css.map*/
+/*# sourceMappingURL=app.4e11c5b1936fe64edea7.css.map*/
