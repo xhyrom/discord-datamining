@@ -244,7 +244,7 @@
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-6967a75d0da77be92fce80ebb928350fcf02a1bc",
+                        release: "discord_web-b3a8ba54c35cab751247b23f14c04a3c78ca0861",
                         beforeSend: h,
                         integrations: [new r.Integrations.GlobalHandlers({
                             onerror: !0,
@@ -259,7 +259,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (e = "266796", "266796")), r.setTag("builtAt", String("1708029335564"));
+                    }), r.setTag("buildNumber", (e = "266811", "266811")), r.setTag("builtAt", String("1708030857341"));
                     let t = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != t && "object" == typeof t)
                         for (let e in t) r.setTag(e, t[e]);
@@ -395,4 +395,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.0e95b5bdd446a25080ce.js.map
+//# sourceMappingURL=sentry.c9d8e0f4ad66e52cc396.js.map

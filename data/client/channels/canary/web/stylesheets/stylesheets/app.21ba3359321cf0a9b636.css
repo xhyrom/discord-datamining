@@ -116741,7 +116741,8 @@ html .invoiceCancelRow_c1bfe7 {
 
 .header__61553 {
     flex-grow: 0;
-    overflow: hidden
+    overflow: hidden;
+    background-color: var(--modal-background)
 }
 
 .closeButton__40b1b {
@@ -116754,8 +116755,7 @@ html .invoiceCancelRow_c1bfe7 {
 .modalContent__7e5de {
     margin-top: -40px;
     margin-bottom: 8px;
-    padding: 0 8px 8px 16px;
-    padding-left: 16px
+    padding: 0 16px 8px
 }
 
 .title__76203 {
@@ -116884,13 +116884,13 @@ html .invoiceCancelRow_c1bfe7 {
 }
 
 .container__3e2aa {
-    width: 440px;
-    max-height: 580px;
+    width: 500px;
+    max-height: 880px;
     display: flex;
     flex-direction: column
 }
 
-@media(max-width:440px) {
+@media(max-width:500px) {
     .container__3e2aa {
         width: 100%
     }
@@ -127464,4 +127464,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4947b016d436a26acdd1.css.map*/
+/*# sourceMappingURL=app.21ba3359321cf0a9b636.css.map*/
