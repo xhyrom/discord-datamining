@@ -16489,7 +16489,9 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     flex-wrap: wrap;
     justify-content: flex-end;
     border-radius: 8px;
-    width: 100px
+    width: 100px;
+    height: 32px;
+    margin-top: 8px
 }
 
 .reply_e44af6 {
@@ -16515,7 +16517,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .emojiButton__423a3 {
     background-color: transparent;
-    margin-top: 4px;
     margin-left: 8px
 }
 
@@ -16523,7 +16524,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     opacity: .8;
     transition: opacity.2s linear;
     display: flex;
-    align-self: baseline
+    align-self: center
 }
 
 .reaction__98ec4:hover {
@@ -127463,4 +127464,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.75c8d2ed5392e3818257.css.map*/
+/*# sourceMappingURL=app.44f3f3fea932814af946.css.map*/
