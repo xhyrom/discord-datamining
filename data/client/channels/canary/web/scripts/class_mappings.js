@@ -5499,12 +5499,6 @@
                 zoomin: "zoomin_fa2e9f"
             }
         },
-        262429: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                art: "art__76661"
-            }
-        },
         24171: function(e, t, n) {
             "use strict";
             e.exports = {

@@ -45382,8 +45382,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -80035,11 +80035,6 @@ input::-webkit-inner-spin-button {
 
 .enable-forced-colors .disabledRemoveIcon_eb50c2 {
     color: GrayText
-}
-
-.art__76661 {
-    margin-top: -100px;
-    height: 165px
 }
 
 .marketingBadgeTooltip__028f7 {
@@ -127468,4 +127463,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7d54d415b36f5dfa4ba3.css.map*/
+/*# sourceMappingURL=app.2173c09ecb0f7c86d49d.css.map*/
