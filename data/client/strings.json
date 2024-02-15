@@ -15091,7 +15091,7 @@
   "COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE": "\"Check out new Element styles\"",
   "COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE_ALT": "\"Element styles are here - which will you unleash?\"",
   "COLLECTIBLES_ELEMENTS_COACHTIP_TITLE": "\"Harness the Elements\"",
-  "COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION": "\"Fire. Water. Earth. Wind. Which will you unleash?\"",
+  "COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION": "\"Fire. Wind. Water. Earth. Which will you unleash?\"",
   "INVENTORY_EMOJI_DETAILS_V2": "\"See emoji details\"",
   "PRIVATE_CHANNEL_INTEGRATION_ADDED": "\"$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.\"",
   "PRIVATE_CHANNEL_INTEGRATION_ADDED_DELETED_APPLICATION": "\"$[!!{username}!!](usernameHook) added a deleted application. See our [help center]({helpCenterLink}) for more info.\"",
