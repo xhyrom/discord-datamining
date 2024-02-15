@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67615"], {
+    ["98239"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -26085,6 +26085,9 @@
         390933: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                SearchTabFetcherImpl: function() {
+                    return l
+                },
                 default: function() {
                     return s
                 }
@@ -26144,6 +26147,34 @@
                         query: i.stringify(this.query),
                         oldFormErrors: !0
                     })
+                }
+            };
+            class l extends u {
+                getEndpoint() {
+                    switch (this.searchType) {
+                        case d.SearchTypes.DMS:
+                            return d.Endpoints.SEARCH_TABS_DMS;
+                        case d.SearchTypes.GUILD_CHANNEL:
+                        case d.SearchTypes.GUILD:
+                            if (null == this.searchId || "" === this.searchId) return;
+                            return d.Endpoints.SEARCH_TABS_GUILD(this.searchId);
+                        case d.SearchTypes.CHANNEL:
+                            if (null == this.searchId || "" === this.searchId) return;
+                            return d.Endpoints.SEARCH_TABS_CHANNEL(this.searchId);
+                        default:
+                            throw Error("[SearchFetcher] Unhandled search type: ".concat(this.searchType))
+                    }
+                }
+                makeRequest() {
+                    let e = this.getEndpoint();
+                    return null == e ? null : r.default.post({
+                        url: e,
+                        body: this.payload,
+                        oldFormErrors: !0
+                    })
+                }
+                constructor(e, t, n, s) {
+                    super(e, t, n), this.payload = s
                 }
             }
         },
@@ -61800,4 +61831,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.45be04e78c075c459abf.js.map
+//# sourceMappingURL=98239.d1ebd1bb493a58337e0f.js.map
