@@ -3515,7 +3515,7 @@
 }
 
 .title__746ed {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources_fdd04d:hover {
@@ -3546,8 +3546,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -42074,8 +42074,8 @@ html .progress__4ef76 {
 .errorState_b806b1 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -42137,7 +42137,7 @@ html .progress__4ef76 {
 
 .confirmChannelName_c49514 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -42145,7 +42145,7 @@ html .progress__4ef76 {
 .lastActiveTimestamp__56cd7 {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -58385,8 +58385,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -63568,8 +63568,8 @@ html .progress__4ef76 {
 }
 
 .name__8d1ec {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -74540,7 +74540,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .viewAllGamesButton__6eb3d {
@@ -74560,7 +74560,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__9b81c,
 .viewAllNitroGames__4193c {
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -74617,7 +74617,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .headerBar_afb1ac {
@@ -115389,6 +115389,74 @@ html .invoiceCancelRow_c1bfe7 {
     padding: 11px 20px
 }
 
+.modalRoot__6defa {
+    max-width: 340px
+}
+
+.modalHeader__2683c {
+    overflow-x: visible
+}
+
+.modalTop__9b1a2 {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". img-frame close-btn";
+    flex-flow: row nowrap;
+    justify-content: space-between
+}
+
+.iconFrame__802b2 {
+    grid-area: img-frame;
+    height: 60px
+}
+
+.icon_f0f094 {
+    position: relative;
+    bottom: 80px
+}
+
+.closeBtn_bf1601 {
+    grid-area: close-btn
+}
+
+.modalContent__205d8 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    padding-bottom: 8px
+}
+
+.upperBodyText__2743b {
+    text-align: center
+}
+
+.targetList__63e05 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    width: 85%;
+    margin: auto
+}
+
+.targetItem__3f679 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.lowerBodyText__5c561 {
+    text-align: center
+}
+
+.footer_b2a0c2 {
+    background-color: transparent
+}
+
 .mobileWebContainer_cc20ff {
     padding: 100px 36px 0;
     display: flex;
@@ -127389,4 +127457,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.07fc3f74f2644e3b0285.css.map*/
+/*# sourceMappingURL=app.1e9425d0cbbfa81bb55b.css.map*/
