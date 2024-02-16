@@ -4727,5 +4727,9 @@
   "ADD_SAFETY_WARNING": {
     "url": "/channels/:param/add-safety-warning",
     "allowed_methods": null
+  },
+  "MY_CONTENT_INVENTORY": {
+    "url": "/content-inventory/users/@me",
+    "allowed_methods": null
   }
 }
