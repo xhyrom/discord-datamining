@@ -10320,6 +10320,35 @@
               "rollout": [
                 {
                   "start": 5000,
+                  "end": 9000
+                }
+              ]
+            },
+            "7": {
+              "rollout": [
+                {
+                  "start": 9000,
+                  "end": 10000
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 5000
+                }
+              ]
+            }
+          },
+          "filters": []
+        },
+        {
+          "buckets": {
+            "6": {
+              "rollout": [
+                {
+                  "start": 5000,
                   "end": 10000
                 }
               ]
