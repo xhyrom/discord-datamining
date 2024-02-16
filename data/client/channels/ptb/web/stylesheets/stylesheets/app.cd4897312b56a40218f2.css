@@ -19308,12 +19308,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -29832,22 +29832,22 @@ html .progress__4ef76 {
 
 .ephemeral_c26b64 {
     position: relative;
-    background-color: var(--brand-experiment-05a)
+    background: var(--brand-experiment-05a)
 }
 
 .automodMessage__410f7 {
-    background-color: var(--background-message-automod)
+    background: var(--background-message-automod)
 }
 
 .mentioned__58017 {
     position: relative;
-    background-color: var(--background-mentioned)
+    background: var(--background-mentioned)
 }
 
 .replying_d7b6ad,
 .highlighted__5f454 {
     position: relative;
-    background-color: var(--background-message-highlight)
+    background: var(--background-message-highlight)
 }
 
 .mentioned__58017:before,
@@ -29866,23 +29866,23 @@ html .progress__4ef76 {
 }
 
 .ephemeral_c26b64:before {
-    background-color: var(--brand-experiment)
+    background: var(--brand-experiment)
 }
 
 .automodMessage__410f7:before {
-    background-color: var(--text-danger)
+    background: var(--text-danger)
 }
 
 .mentioned__58017:before {
-    background-color: var(--info-warning-foreground)
+    background: var(--info-warning-foreground)
 }
 
 .highlighted__5f454:before {
-    background-color: var(--text-brand)
+    background: var(--text-brand)
 }
 
 .replying_d7b6ad:before {
-    background-color: var(--brand-experiment)
+    background: var(--brand-experiment)
 }
 
 .messageListItem__6a4fb {
@@ -29905,28 +29905,28 @@ html .progress__4ef76 {
 }
 
 .message__80c10.mentioned__58017.selected_fd9051,
-.mouse-mode.full-motion .mentioned__58017:hover {
-    background-color: var(--background-mentioned-hover)
+.mouse-mode.full-motion .message__80c10.mentioned__58017:hover {
+    background: var(--background-mentioned-hover)
 }
 
 .message__80c10.highlighted__5f454.selected_fd9051,
-.mouse-mode.full-motion .highlighted__5f454:hover {
-    background-color: var(--background-message-highlight-hover)
+.mouse-mode.full-motion .message__80c10.highlighted__5f454:hover {
+    background: var(--background-message-highlight-hover)
 }
 
 .message__80c10.ephemeral_c26b64.selected_fd9051,
-.mouse-mode.full-motion .ephemeral_c26b64:hover {
-    background-color: var(--brand-experiment-10a)
+.mouse-mode.full-motion .message__80c10.ephemeral_c26b64:hover {
+    background: var(--brand-experiment-10a)
 }
 
 .message__80c10.automodMessage__410f7.selected_fd9051,
-.mouse-mode.full-motion .automodMessage__410f7:hover {
-    background-color: var(--background-message-automod-hover)
+.mouse-mode.full-motion .message__80c10.automodMessage__410f7:hover {
+    background: var(--background-message-automod-hover)
 }
 
 .message__80c10.replying_d7b6ad.selected_fd9051,
-.mouse-mode.full-motion .replying_d7b6ad:hover {
-    background-color: var(--brand-experiment-10a)
+.mouse-mode.full-motion .message__80c10.replying_d7b6ad:hover {
+    background: var(--brand-experiment-10a)
 }
 
 .quotedChatMessage__2b128 {
@@ -45296,8 +45296,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -127457,4 +127457,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6bc2542f63f999a64f14.css.map*/
+/*# sourceMappingURL=app.cd4897312b56a40218f2.css.map*/
