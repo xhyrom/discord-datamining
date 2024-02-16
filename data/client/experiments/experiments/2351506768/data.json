@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_churn_user_discount_offer_experiment",
+    "label": "Churn User Discount Offer",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: users receive no discount offer when churning",
+      "Treatment 1: users receive a 1 month discout offer when churning",
+      "Treatment 2: users receive a 3 month discount offer when churning"
+    ],
+    "hash": 2351506768,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
