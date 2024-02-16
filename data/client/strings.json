@@ -16702,6 +16702,8 @@
   "STOREFRONT_SUBSCRIPTION": "\"Subscription\"",
   "STOREFRONT_SUBSCRIBE": "\"Subscribe\"",
   "STOREFRONT_SUBSCRIPTION_BENEFITS": "\"Subscription Benefits\"",
+  "STOREFRONT_PURCHASE": "\"Purchase\"",
+  "STOREFRONT_ONE_TIME_PURCHASE": "\"One-Time Purchase\"",
   "QUIET_MODE_DISABLED": "\"Focus Mode Disabled\"",
   "QUIET_MODE_ENABLED": "\"Focus Mode Enabled\"",
   "QUIET_MODE_DND": "\"Focus Mode (DND) Enabled\"",
