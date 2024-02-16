@@ -1557,7 +1557,8 @@
                     ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls",
                     GAME_INVITE: _ => "/game-invite/@me/".concat(_),
                     GAME_INVITES: "/game-invite/@me",
-                    ADD_SAFETY_WARNING: _ => "/channels/".concat(_, "/add-safety-warning")
+                    ADD_SAFETY_WARNING: _ => "/channels/".concat(_, "/add-safety-warning"),
+                    MY_CONTENT_INVENTORY: "/content-inventory/users/@me"
                 }),
                 a6 = Object.freeze({
                     INDEX: "/",
@@ -13776,4 +13777,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.55159ac5ca2e2d0b2c4b.js.map
+//# sourceMappingURL=7273.7cc8996b9928a73f8a3c.js.map
