@@ -210,7 +210,7 @@
                 fetchSKU: function() {
                     return I
                 },
-                fetchSKUsForApplication: function() {
+                fetchTestSKUsForApplication: function() {
                     return A
                 },
                 fetchPurchasePreview: function() {
@@ -278,8 +278,7 @@
                     r = u.body;
                 return i.default.dispatch({
                     type: "SKUS_FETCH_SUCCESS",
-                    skus: r,
-                    applicationId: t
+                    skus: r
                 }), r
             }
             async function p(t, e, n, u) {
@@ -2749,4 +2748,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23777.5dc40c4c2b6c28d07d6a.js.map
+//# sourceMappingURL=23777.ad6f118a66fceceeb8a2.js.map
