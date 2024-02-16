@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_v1_content_inventory_feed",
+    "label": "V1 Feed of the content inventory",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show feed"
+    ],
+    "hash": 1747551262,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
