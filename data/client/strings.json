@@ -16689,6 +16689,8 @@
   "QUESTS_DISCLOSURE_LOCATION": "\"Location\"",
   "QUESTS_DISCLOSURE_AGE": "\"Age\"",
   "QUESTS_DISCLOSURE_ACTIVITY": "\"Activity: Relevant gaming\"",
+  "QUESTS_EMBED_INVALID_HEADING": "\"This was a Quest but...\"",
+  "QUESTS_EMBED_INVALID_BODY": "\"Something went wrong here. Check the Gift Inventory for more available Quests!\"",
   "FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE": "\"Prompt members to chat after this channel has been inactive for a while.\"",
   "PROMPT_CAMERA_LOADING_TITLE": "\"What are you looking at?\"",
   "PROMPT_CAMERA_ERROR": "\"There was an issue taking a photo, try again\"",
