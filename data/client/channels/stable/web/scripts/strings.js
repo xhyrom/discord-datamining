@@ -11361,6 +11361,41 @@
                 GUILD_EVENT_UPSELL_ALT_IMG: "Calendar next to three friends in voice chat, with lots of sparkles and excitement",
                 GUILD_EVENT_CREATED_MODAL_HEADER: "All set. Now share your event!",
                 GUILD_EVENT_CREATED_MODAL_BODY: "Copy the event link below to invite people to your event. This also acts as a server invite link.",
+                EVENT_CANCELED: "Canceled",
+                GUILD_EVENT_DELETE_CONFIRM_BODY_IS_RECURRING: "Canceling this event will also **cancel all events** in this series.",
+                DELETE_ALL_EVENTS: "Cancel all Events",
+                DELETE_THIS_EVENT: "Cancel this Event",
+                DELETE_ALL_EVENTS_IN_SERIES: "Cancel all Events in this Series",
+                RESTORE_EVENT: "Restore Event",
+                CREATE_EVENT_RECUR_LABEL: "Event Frequency",
+                CREATE_EVENT_RECUR_NONE: "Does not repeat",
+                CREATE_EVENT_RECUR_WEEKLY: "Weekly on {weekday}",
+                CREATE_EVENT_RECUR_BIWEEKLY: "Every other {weekday}",
+                CREATE_EVENT_RECUR_MONTHLY: "Monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
+                CREATE_EVENT_RECUR_YEARLY: "Annually on {date}",
+                CREATE_EVENT_RECUR_WEEKDAYS: "Every weekday (Monday to Friday)",
+                GUILD_SCHEDULED_EVENT_VIEW_MORE_RECURRENCES: "View future events",
+                GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
+                GUILD_SCHEDULED_EVENT_REPEATS: "Events in series",
+                GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
+                GUILD_SCHEDULED_EVENT_REPEATS_BIWEEKLY: "Repeats every other {weekday}",
+                GUILD_SCHEDULED_EVENT_REPEATS_MONTHLY: "Repeats monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
+                GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
+                GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
+                GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_INTERESTED: "I am interested in...",
+                GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_UNINTERESTED: "I am not interested in...",
+                GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES: "All events in this series",
+                GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE: "This event",
+                GUILD_CREATE_STAFF_ONLY_HINT: "Only Discord employees would be able to join this server.",
+                EDIT_THIS_EVENT: "Edit this Event",
+                EDIT_ALL_EVENTS: "Edit all Events in this Series",
+                GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
+                GUILD_EVENT_EDIT_CONFIRM_BODY_EDIT_ALL_HINT: "Editing this event will also **update all events** in this series.",
+                GUILD_EVENT_RECURRING_COACHMARK_CTA: "Try it",
+                GUILD_EVENT_RECURRING_COACHMARK_TITLE: "NEW! Repeating Events",
+                GUILD_EVENT_RECURRING_COACHMARK_BODY: "You can now easily repeat events.",
+                COPY_RECURRENCE_LINK: "Copy this Event Link",
+                COPY_SERIES_LINK: "Copy Event Series Link",
                 GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_CREATE: "Create Event",
                 GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_UPDATE: "Update Event",
                 GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_DELETE: "Cancel Event",
@@ -15113,7 +15148,7 @@
                 COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE: "Check out new Element styles",
                 COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE_ALT: "Element styles are here - which will you unleash?",
                 COLLECTIBLES_ELEMENTS_COACHTIP_TITLE: "Harness the Elements",
-                COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION: "Fire. Water. Earth. Wind. Which will you unleash?",
+                COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION: "Fire. Wind. Water. Earth. Which will you unleash?",
                 INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
                 PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
                 PRIVATE_CHANNEL_INTEGRATION_ADDED_DELETED_APPLICATION: "$[!!{username}!!](usernameHook) added a deleted application. See our [help center]({helpCenterLink}) for more info.",
@@ -16234,6 +16269,7 @@
                 SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_TITLE_V2: "Your account is $[at risk](hook)",
                 SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_DESCRIPTION: "You broke Discord's rules. You will be permanently suspended if you break them again.",
                 SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_DESCRIPTION_V2: "You can't use some parts of Discord. You may be permanently banned if you break the rules again.",
+                SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_DESCRIPTION_V3: "You can't use some parts of Discord. You may be permanently suspended if you break the rules again.",
                 SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_TITLE: "Your account is $[suspended.](hook)",
                 SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_TITLE_V2: "Your account is $[suspended](hook)",
                 SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_DESCRIPTION: "You broke Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).",
@@ -16261,6 +16297,7 @@
                 SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_SUBTEXT: "Discord's rules apply to everyone",
                 SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT: "Go to account standing",
                 SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT_V2: "Go to account standing",
+                SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT_V3: "See account standing",
                 SAFETY_HUB_CLASSIFICATION_DETAIL_APPEAL_STATUS: "You requested a review of this violation.",
                 SAFETY_HUB_ERROR_MESSAGE: "Something went wrong...",
                 SAFETY_HUB_ERROR_ACTION_BUTTON: "Retry",
@@ -16414,6 +16451,7 @@
                 URF_LANDING_PAGE_REPORT_MESSAGE_BUTTON: "Report a Message",
                 EMAIL_ENTER_MODAL_INPUT_ERROR: "Not a well formed email address.",
                 IN_APP_REPORTING_FREE_TEXT_INPUT_ERROR: "Invalid Input",
+                IN_APP_REPORTING_SUBMIT_VALIDATION_ERROR: "We couldn't locate the content you are trying to report. Please review the details of your submission and re-submit.",
                 LEGACY_CHAT_INPUT_SLASH_COMMAND_MISSING_HELP_MESSAGE: "Why don't I see application commands?",
                 LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_TITLE: "Upgrade your chat",
                 LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_MESSAGE: "Get access to slash commands and other great ways to chat by enabling our latest features.\n\nYou can always go back to legacy chat at any time by heading over to $[User Settings > Accessibility](openSettingsHook).",
@@ -16647,7 +16685,8 @@
                 QUESTS_COMPLETION_PROGRESS_STARTED: "Keep it up!",
                 QUESTS_COMPLETION_PROGRESS_HALFWAY: "You're halfway there!",
                 QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE: "You're so close!",
-                QUESTS_COMPLETION_PROGRESS_COMPLETE: "Quest completed for this game!",
+                QUESTS_COMPLETION_PROGRESS_COMPLETE: "You did it!",
+                QUESTS_COMPLETION_PROGRESS_COMPLETE_ACTIVITY_PANEL: "You completed a Quest!",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -16733,41 +16772,6 @@
                 DELETE_STAGE_EVENT_CONFIRMATION_DESCRIPTION: "Are you sure you want to delete **!!{eventName}!!**? This action cannot be undone.",
                 CREATE_STAGE_INSTANCE_SELECT_GUILD_HEADER: "Where's the party?",
                 GUILD_STAGES_LANDING_MOBILE_SUBTITLE: "Visit this link on your desktop to buy a ticket. Once you have a ticket, you'll be able to attend the event on desktop or mobile.",
-                EVENT_CANCELED: "Canceled",
-                GUILD_EVENT_DELETE_CONFIRM_BODY_IS_RECURRING: "Canceling this event will also **cancel all events** in this series.",
-                DELETE_ALL_EVENTS: "Cancel all Events",
-                DELETE_THIS_EVENT: "Cancel this Event",
-                DELETE_ALL_EVENTS_IN_SERIES: "Cancel all Events in this Series",
-                RESTORE_EVENT: "Restore Event",
-                CREATE_EVENT_RECUR_LABEL: "Event Frequency",
-                CREATE_EVENT_RECUR_NONE: "Does not repeat",
-                CREATE_EVENT_RECUR_WEEKLY: "Weekly on {weekday}",
-                CREATE_EVENT_RECUR_BIWEEKLY: "Every other {weekday}",
-                CREATE_EVENT_RECUR_MONTHLY: "Monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
-                CREATE_EVENT_RECUR_YEARLY: "Annually on {date}",
-                CREATE_EVENT_RECUR_WEEKDAYS: "Every weekday (Monday to Friday)",
-                GUILD_SCHEDULED_EVENT_VIEW_MORE_RECURRENCES: "View future events",
-                GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
-                GUILD_SCHEDULED_EVENT_REPEATS: "Events in series",
-                GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
-                GUILD_SCHEDULED_EVENT_REPEATS_BIWEEKLY: "Repeats every other {weekday}",
-                GUILD_SCHEDULED_EVENT_REPEATS_MONTHLY: "Repeats monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
-                GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
-                GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
-                GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_INTERESTED: "I am interested in...",
-                GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_UNINTERESTED: "I am not interested in...",
-                GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES: "All events in this series",
-                GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE: "This event",
-                GUILD_CREATE_STAFF_ONLY_HINT: "Only Discord employees would be able to join this server.",
-                EDIT_THIS_EVENT: "Edit this Event",
-                EDIT_ALL_EVENTS: "Edit all Events in this Series",
-                GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
-                GUILD_EVENT_EDIT_CONFIRM_BODY_EDIT_ALL_HINT: "Editing this event will also **update all events** in this series.",
-                GUILD_EVENT_RECURRING_COACHMARK_CTA: "Try it",
-                GUILD_EVENT_RECURRING_COACHMARK_TITLE: "NEW! Repeating Events",
-                GUILD_EVENT_RECURRING_COACHMARK_BODY: "You can now easily repeat events.",
-                COPY_RECURRENCE_LINK: "Copy this Event Link",
-                COPY_SERIES_LINK: "Copy Event Series Link",
                 GET_MOBILE_APP_SUBTITLE: "Discord isn't supported on mobile web browsers. Join over 100 million people who use Discord to talk with communities and friends.",
                 MOBILE_APP_DOWNLOAD_CTA: "Get our mobile app",
                 MOBILE_APP_DOWNLOAD_SUBHEADER: "Keep the conversion going on our iOS or Android app.",
@@ -17004,7 +17008,11 @@
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE: "Contact Crisis Text Line",
                 INAPPROPRIATE_CONVERSATION_VISIT_NOFILTR: "Visit NoFiltr",
                 INAPPROPRIATE_CONVERSATION_NOFILTR_DESCRIPTION: "NoFiltr is a community that empowers young people to safely navigate online.",
-                INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later."
+                INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later.",
+                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_DESCRIPTION: "They won't be able to message you. If you feel their actions could harm someone, please submit a report to Discord.",
+                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_BUTTON: "Block",
+                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_AND_REPORT_BUTTON: "Block and report",
+                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_CANCEL_BUTTON: "Cancel"
             })
         },
         657743: function(e, _, E) {
@@ -18202,7 +18210,7 @@
                 L = E("782340");
             (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266852", ", Version Hash: ").concat("85e67c16f5e4b30a3c4c725c71e25102a8a01bfc")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266957", ", Version Hash: ").concat("7f1baf2bb875d96db921cbf72162b40b24adde0c")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20546,8 +20554,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "266852", "266852"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266852")), _ = 0), _
+                let _ = parseInt((e = "266957", "266957"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266957")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35554,4 +35562,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55115.ecfffe61fefa39063f91.js.map
+//# sourceMappingURL=55115.12ea6d3f0e2d22cd189c.js.map

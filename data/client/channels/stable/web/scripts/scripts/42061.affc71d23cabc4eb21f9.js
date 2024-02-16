@@ -2630,7 +2630,11 @@
                         a.default.post({
                             url: R.Endpoints.METRICS,
                             body: {
-                                metrics: _
+                                metrics: _,
+                                client_info: {
+                                    built_at: "1708044910924",
+                                    build_number: "266957"
+                                }
                             },
                             retries: 1
                         }).catch(E => {
@@ -14545,4 +14549,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42061.5322395bc9b270999720.js.map
+//# sourceMappingURL=42061.affc71d23cabc4eb21f9.js.map
