@@ -19576,6 +19576,24 @@
                 userTag: "userTag__096da"
             }
         },
+        515925: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                churnFooterCTAs: "churnFooterCTAs__1099c",
+                churnFooterClaimCTA: "churnFooterClaimCTA__00af9",
+                churnFooterClaimCTAInner: "churnFooterClaimCTAInner__1ea40",
+                churnFooterClaimCopy: "churnFooterClaimCopy__97ca6",
+                churnFooterClaimIcon: "churnFooterClaimIcon__7242b",
+                churnFooterContainer: "churnFooterContainer__301e0",
+                churnFooterContent: "churnFooterContent_a65bc7",
+                churnFooterContentBody: "churnFooterContentBody__7d37e",
+                churnFooterContentBodyInner: "churnFooterContentBodyInner__0d64a",
+                churnFooterCopy: "churnFooterCopy__0d3ed",
+                churnFooterGlow: "churnFooterGlow__21e34",
+                churnFooterIcon: "churnFooterIcon_f30965",
+                churnFooterTopBorder: "churnFooterTopBorder__91fbf"
+            }
+        },
         370710: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -19907,6 +19925,7 @@
                 profilePremiumIcon: "profilePremiumIcon__942bf",
                 profileUserInfo: "profileUserInfo__6cc69",
                 profileUserInfoTier1: "profileUserInfoTier1__3e442",
+                spinner: "spinner__910f0",
                 subtitle: "subtitle__8f159",
                 textSingleLineEllipsis: "textSingleLineEllipsis__1bf9d",
                 title: "title_e68b69",
@@ -21332,28 +21351,40 @@
                 wrapper: "wrapper_d895e9"
             }
         },
-        371384: function(e, t, n) {
+        896451: function(e, t, n) {
             "use strict";
             e.exports = {
-                ctaTooltipCopy: "ctaTooltipCopy_f78f30",
-                innerContainer: "innerContainer__4ef6b",
-                outerContainer: "outerContainer__20d97",
-                questCopyCta: "questCopyCta__310bf",
-                questCta: "questCta__05a3b",
-                questReward: "questReward__2baa9",
-                taskInstructions: "taskInstructions_cb7411"
+                questsCard: "questsCard_a68cbc"
             }
         },
-        908616: function(e, t, n) {
+        199890: function(e, t, n) {
             "use strict";
             e.exports = {
-                headerContent: "headerContent__6918d",
-                iconLogotypeContainer: "iconLogotypeContainer_aa5bd5",
-                questIcon: "questIcon__7ce3e",
-                questInfo: "questInfo__5ab60",
-                questLogotype: "questLogotype__8eeb1",
-                questSplash: "questSplash__4e680",
-                questsCardHeader: "questsCardHeader__4772e"
+                ctaTooltipCopy: "ctaTooltipCopy__0f513",
+                innerContainer: "innerContainer__1ed70",
+                outerContainer: "outerContainer_b1a8db",
+                outerContainerEmbed: "outerContainerEmbed__2b071",
+                outerContainerGiftInventory: "outerContainerGiftInventory_da366b",
+                questCopyCta: "questCopyCta_d76b1f",
+                questCta: "questCta__99de6",
+                questReward: "questReward__47fba",
+                questRewardEmbed: "questRewardEmbed__27812",
+                questRewardGiftInventory: "questRewardGiftInventory__48caa",
+                taskInstructions: "taskInstructions_a218f2"
+            }
+        },
+        444092: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                headerContent: "headerContent__8ec3c",
+                iconLogotypeContainer: "iconLogotypeContainer_e2a170",
+                outerContainer: "outerContainer_d63ffb",
+                outerContainerEmbed: "outerContainerEmbed__41c25",
+                outerContainerGiftInventory: "outerContainerGiftInventory__1d198",
+                questIcon: "questIcon__3a4c1",
+                questInfo: "questInfo__6694d",
+                questLogotype: "questLogotype__50770",
+                questSplash: "questSplash_b92f41"
             }
         },
         140999: function(e, t, n) {
@@ -21375,11 +21406,43 @@
                 wrapperAccepted: "wrapperAccepted_d4d9b6"
             }
         },
+        916183: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                closeBtn: "closeBtn_bf1601",
+                footer: "footer_b2a0c2",
+                icon: "icon_f0f094",
+                iconFrame: "iconFrame__802b2",
+                lowerBodyText: "lowerBodyText__5c561",
+                modalContent: "modalContent__205d8",
+                modalHeader: "modalHeader__2683c",
+                modalRoot: "modalRoot__6defa",
+                modalTop: "modalTop__9b1a2",
+                targetItem: "targetItem__3f679",
+                targetList: "targetList__63e05",
+                upperBodyText: "upperBodyText__2743b"
+            }
+        },
+        567782: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                invalidContainer: "invalidContainer__68fba",
+                invalidLeftSideInnerContainer: "invalidLeftSideInnerContainer__3266c",
+                invalidLeftSideOuterContainer: "invalidLeftSideOuterContainer_cffb56",
+                invalidRightSideOuterContainer: "invalidRightSideOuterContainer__0557c",
+                missingQuestImage: "missingQuestImage_cdfd93"
+            }
+        },
+        571777: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                spinner: "spinner__10140"
+            }
+        },
         38845: function(e, t, n) {
             "use strict";
             e.exports = {
                 divider: "divider__1718b",
-                questsCard: "questsCard__0dbcb",
                 questsContainer: "questsContainer__44255",
                 questsHeading: "questsHeading__9a291",
                 questsIcon: "questsIcon__603a9",

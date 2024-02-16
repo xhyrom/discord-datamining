@@ -3407,7 +3407,7 @@
                 MessagePreviewTypes: function() {
                     return r
                 }
-            }), (o = i || (i = {})).COZY = "cozy", o.COMPACT = "compact", o.MINIMAL = "minimal", (s = r || (r = {})).ALL = "all", s.UNREADS = "unreads", s.NONE = "none"
+            }), (o = i || (i = {})).COZY = "cozy", o.COZY_DRAWER = "cozy-drawer", o.COMPACT = "compact", o.MINIMAL = "minimal", (s = r || (r = {})).ALL = "all", s.UNREADS = "unreads", s.NONE = "none"
         },
         894488: function(e, t, n) {
             "use strict";
@@ -4216,7 +4216,7 @@
                 value: e
             }));
             let eg = new Set([s.MessagePreviewTypes.ALL, s.MessagePreviewTypes.UNREADS, s.MessagePreviewTypes.NONE]);
-            (0, l.defineProtoSetting)("appearance", "messagePreviews", e => null != e && eg.has(e.value) ? e.value : s.MessagePreviewTypes.ALL, e => o.StringValue.create({
+            (0, l.defineProtoSetting)("appearance", "messagePreviews", e => null != e && eg.has(e.value) ? e.value : s.MessagePreviewTypes.UNREADS, e => o.StringValue.create({
                 value: e
             }));
             let eh = (0, l.wrapSettingWithSelectiveSyncing)((0, l.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
@@ -5338,7 +5338,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "266957", "266957"), 10);
+                let o = parseInt((n = "267220", "267220"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5595,4 +5595,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.3c0d39ea0f6fd4d37c93.js.map
+//# sourceMappingURL=48059.674ea83ee2a4cdba360e.js.map
