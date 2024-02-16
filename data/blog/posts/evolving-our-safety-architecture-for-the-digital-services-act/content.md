@@ -1,7 +1,7 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p>The European Union’s Digital Services Act, or “DSA”, is an important regulation that affects how certain companies moderate content in the EU. We’ve been working hard on our approach to the DSA, and as the law comes into force for companies like ours, we want to outline some changes EU users are going to see across Discord.&nbsp;</p>
+            <p>The European Union’s Digital Services Act, or “DSA”, is an important regulation that affects how certain companies moderate content in the EU. We’ve been working hard on our approach to the DSA, and as the law comes into force for companies like ours, we want to outline some changes EU users are going to see across Discord.</p>
             <p>Creating a place for safe connection is a top priority, and we invest heavily in it. Independent of any regulation, more than 15% of our employees are focused on safety, and we work tirelessly to reinforce our <a href="https://discord.com/guidelines">Community Guidelines</a>, removing content and bad actors who violate them. Today we’re giving you some more information about the work we’ve been doing to meet our obligations under the DSA for our users based in the EU. As we updated our products and policies, we focused on what would be best for our users, and we are proud of what we have built. And while we’re starting with the EU, we plan to roll out certain parts of this system that improve safety for all of our users so that our platform continues to be the best place to hang out and have fun with friends.</p>
         </div>
     </div>
@@ -16,7 +16,7 @@
     </div>
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <h2><strong>Reports &amp; Appeals&nbsp;</strong></h2>
+            <h2><strong>Reports &amp; Appeals</strong></h2>
             <p>We’ve always <a href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord">made it easy for users to report</a> violations of our Community Guidelines. With DSA requirements, we have created another streamlined way for EU users to report illegal content to us. Accessible within the app, EU users can open a dedicated report form from the standard in-app reporting menu. From there, users can provide additional information about the content they are reporting. As mentioned above, users will receive an email informing them of the outcome of the report, as well as how to appeal that decision.</p>
         </div>
     </div>
