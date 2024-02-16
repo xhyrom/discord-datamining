@@ -3002,6 +3002,10 @@
       "POST"
     ]
   },
+  "CHURN_USER_OFFER": {
+    "url": "/users/@me/billing/churn-user-offer",
+    "allowed_methods": null
+  },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
     "allowed_methods": [
@@ -4700,6 +4704,10 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "QUESTS_DISMISS_CONTENT": {
+    "url": "/quests/:param/dismissible-content/:param/dismiss",
+    "allowed_methods": null
   },
   "ATTACHMENTS_REFRESH_URLS": {
     "url": "/attachments/refresh-urls",
