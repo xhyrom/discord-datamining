@@ -1554,6 +1554,7 @@
                     QUESTS_ENROLL: _ => "/quests/".concat(_, "/enroll"),
                     QUESTS_HEARTBEAT: _ => "/quests/".concat(_, "/heartbeat"),
                     QUESTS_REWARD_CODE: _ => "/quests/".concat(_, "/reward-code"),
+                    QUESTS_DISMISS_CONTENT: (_, E) => "/quests/".concat(_, "/dismissible-content/").concat(E, "/dismiss"),
                     ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls",
                     GAME_INVITE: _ => "/game-invite/@me/".concat(_),
                     GAME_INVITES: "/game-invite/@me",
@@ -13777,4 +13778,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.bc9a20f8348a0254a209.js.map
+//# sourceMappingURL=7273.25e68f7657edafe5aa6a.js.map
