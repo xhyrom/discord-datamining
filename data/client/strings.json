@@ -14652,7 +14652,7 @@
   "VOICE_CHANNEL_ACTION_SHEET_UPSELL_TITLE": "\"Change voice backgrounds\"",
   "VOICE_CHANNEL_ACTION_SHEET_UPSELL_DESCRIPTION": "\"Choose unique backgrounds to customize voice channels for everyone. During a call, visit the channel details to begin.\"",
   "VOICE_CHANNEL_IN_CALL_COACHMARK_TITLE": "\"Customize this channel\"",
-  "VOICE_CHANNEL_IN_CALL_COACHMARK_DESCRIPTION": "\"Tap on the channel name to set the background for everyone. Control who can change the background with the Customize Voice Call permission.\"",
+  "VOICE_CHANNEL_IN_CALL_COACHMARK_DESCRIPTION": "\"Tap on the channel name to set the background for everyone. Control who can change the background with the Customize Voice Channels permission.\"",
   "INCOMING_CALLS": "\"Incoming calls\"",
   "DIRECT_MESSAGE_NOTIFICATIONS": "\"Direct messages\"",
   "VOICE_CONNECTED": "\"Voice connected\"",
