@@ -4377,6 +4377,7 @@
                 COPY_ID_COMMAND: "Copy Command ID",
                 COPY_ID_EMOJI: "Copy Emoji ID",
                 COPY_ID_EVENT: "Copy Event ID",
+                COPY_ID_EVENT_RECURRENCE: "Copy Recurrence ID",
                 COPY_ID_GUILD: "Copy Server ID",
                 COPY_ID_MESSAGE: "Copy Message ID",
                 COPY_ID_ROLE: "Copy Role ID",
@@ -18248,7 +18249,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267299", ", Version Hash: ").concat("6fcd90352c2e5886f09fd9f59b7194c287d15e86")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267308", ", Version Hash: ").concat("367417f347097a929e8b29bcc0cc2fafc3c395e4")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20597,8 +20598,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "267299", "267299"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267299")), _ = 0), _
+                let _ = parseInt((e = "267308", "267308"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267308")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25305,8 +25306,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708126549485",
-                                    build_number: "267299"
+                                    built_at: "1708127349459",
+                                    build_number: "267308"
                                 }
                             },
                             retries: 1
@@ -36466,4 +36467,4 @@
         }
     }
 ]);
-//# sourceMappingURL=99392.a03418bb656b8ec69c4f.js.map
+//# sourceMappingURL=99392.f2fe737f6fa9164b417d.js.map
