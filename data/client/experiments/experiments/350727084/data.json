@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_emoji_picker_upload_desktop",
+    "label": "Desktop: Consistently show the Emoji Picker Upload button at the start of emoji lists",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: With Top Emojis showing the Upload button",
+      "Treatment 2: Without Top Emojis showing the Upload button"
+    ],
+    "hash": 350727084,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "treatment"
+    ]
+  }
+}
