@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_navi_bar_new_users",
+    "label": "Mobile Redesign - Nav Experiment: You Bar - New Users",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: You Bar (2c)"
+    ],
+    "hash": 2455953431,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
