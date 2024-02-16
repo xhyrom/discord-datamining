@@ -6617,6 +6617,8 @@
   "PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION": "\"Your !!{percent, number}!!% discount will end 3 months after purchase. After that you'll be charged {regularPrice}.\"",
   "PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION": "\"Your first **3 months** are **{discountedPrice}**. After that you'll be charged {regularPrice}.\"",
   "PREMIUM_TIER_CARD_DISCOUNT_APPLIED": "\"discount applied\"",
+  "CHURN_DISCOUNT_DESCRIPTION": "\"Before cancelling, enjoy **{percent, number}% off your Nitro subscription** for {numMonths, plural, one {1 month} other {{numMonths} months}}.\"",
+  "CHURN_DISCOUNT_CLAIM": "\"Claim Discount\"",
   "PREMIUM_TUTORIAL_GOT_IT": "\"Got it!\"",
   "PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW": "\"Try {planName} for {duration} on us. Then !!{price}!!.\"",
   "PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION": "\"Your **free trial ends {remainingTime, plural, =0 {today} one {in # day} other {in # days}}**. After that, you’ll be charged !!{price}!!.\"",
