@@ -11847,8 +11847,10 @@
                 THREAD_BROWSER_ARCHIVED_HEADER: "older threads",
                 THREAD_BROWSER_JOINED_HEADER: "{count} joined threads",
                 THREAD_BROWSER_OTHER_REDESIGN_HEADER: "{count} Other Active Threads",
+                THREAD_BROWSER_ACTIVE_COUNT: "Active Threads - {count}",
                 THREAD_BROWSER_ARCHIVED_REDESIGN_HEADER: "Older Threads",
                 THREAD_BROWSER_JOINED_REDESIGN_HEADER: "{count} Joined Threads",
+                THREAD_BROWSER_JOINED_COUNT: "Joined Threads - {count}",
                 THREAD_BROWSER_TIMESTAMP_SECONDS: "{count}s ago",
                 THREAD_BROWSER_TIMESTAMP_DAYS: "{count}d ago",
                 THREAD_BROWSER_TIMESTAMP_HOURS: "{count}h ago",
@@ -11864,6 +11866,7 @@
                 THREAD_BROWSER_EMPTY_STATE_ACTIVE_HEADER: "There are no active threads.",
                 THREAD_BROWSER_EMPTY_STATE_ARCHIVED_HEADER: "There are no archived threads.",
                 THREAD_BROWSER_EMPTY_STATE_SUBTEXT: "Stay focused on a conversation with a thread, a temporary text channel.",
+                THREAD_BROWSER_EMPTY_STATE_SUBTEXT_REDESIGN: "Stay focused on a conversation with a thread - a temporary text channel.",
                 THREAD_BROWSER_FILTER_SETTINGS_TITLE: "Filter Settings",
                 THREAD_BROWSER_FILTER_SETTINGS_VISIBILITY: "Thread visibility",
                 THREAD_MEMBER_WITHOUT_ACCESS: "Cannot view this thread",
@@ -18240,7 +18243,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267201", ", Version Hash: ").concat("83c5bb14333c1190c9dddd584d1b5c05273a4927")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267211", ", Version Hash: ").concat("b881c43fda29104906d44dee743ab13a13b9b546")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20589,8 +20592,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "267201", "267201"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267201")), _ = 0), _
+                let _ = parseInt((e = "267211", "267211"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267211")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21747,8 +21750,8 @@
                 j = E("773336"),
                 X = E("719923"),
                 Q = E("269936"),
-                q = E("302537"),
-                J = E("967889"),
+                J = E("302537"),
+                q = E("967889"),
                 z = E("102999"),
                 $ = E("160139"),
                 Z = E("49111"),
@@ -21811,10 +21814,10 @@
                 return (0, t.jsx)(H.default, {
                     children: (0, t.jsx)(c.default, {
                         children: (0, t.jsxs)(O.RedesignIconContextProvider, {
-                            children: [(0, t.jsx)(q.default, {
+                            children: [(0, t.jsx)(J.default, {
                                 skipsSettingDefaultPageTitle: E
                             }), (0, t.jsx)(z.default, {
-                                children: (0, t.jsx)(J.default, {
+                                children: (0, t.jsx)(q.default, {
                                     children: (0, t.jsxs)(O.FocusRingScope, {
                                         containerRef: eA,
                                         children: [(0, t.jsx)(x.MaskLibrary, {}), (0, t.jsx)(Y.default, {}), (0, t.jsx)(i.FocusGuard, {}), null != N ? (0, t.jsx)(et, {
@@ -25296,8 +25299,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708117013088",
-                                    build_number: "267201"
+                                    built_at: "1708118238780",
+                                    build_number: "267211"
                                 }
                             },
                             retries: 1
@@ -33498,7 +33501,7 @@
                 }
             }
             let Q = new X;
-            class q extends M.MessageType {
+            class J extends M.MessageType {
                 create(e) {
                     let _ = {
                         explicitContentGuilds: 0,
@@ -33558,7 +33561,7 @@
                     }])
                 }
             }
-            let J = new q;
+            let q = new J;
             class z extends M.MessageType {
                 create(e) {
                     let _ = {
@@ -33660,7 +33663,7 @@
                                 o.includeStickersInAutocomplete = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.includeStickersInAutocomplete);
                                 break;
                             case 29:
-                                o.explicitContentSettings = J.internalBinaryRead(e, e.uint32(), E, o.explicitContentSettings);
+                                o.explicitContentSettings = q.internalBinaryRead(e, e.uint32(), E, o.explicitContentSettings);
                                 break;
                             default:
                                 let n = E.readUnknownField;
@@ -33677,7 +33680,7 @@
                     for (let E = 0; E < e.stickerPickerCollapsedSections.length; E++) _.tag(6, M.WireType.LengthDelimited).string(e.stickerPickerCollapsedSections[E]);
                     e.viewImageDescriptions && h.BoolValue.internalBinaryWrite(e.viewImageDescriptions, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.showCommandSuggestions && h.BoolValue.internalBinaryWrite(e.showCommandSuggestions, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.inlineAttachmentMedia && h.BoolValue.internalBinaryWrite(e.inlineAttachmentMedia, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.inlineEmbedMedia && h.BoolValue.internalBinaryWrite(e.inlineEmbedMedia, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.gifAutoPlay && h.BoolValue.internalBinaryWrite(e.gifAutoPlay, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.renderEmbeds && h.BoolValue.internalBinaryWrite(e.renderEmbeds, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.renderReactions && h.BoolValue.internalBinaryWrite(e.renderReactions, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.animateEmoji && h.BoolValue.internalBinaryWrite(e.animateEmoji, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.animateStickers && h.UInt32Value.internalBinaryWrite(e.animateStickers, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.enableTtsCommand && h.BoolValue.internalBinaryWrite(e.enableTtsCommand, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.messageDisplayCompact && h.BoolValue.internalBinaryWrite(e.messageDisplayCompact, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentFilter && h.UInt32Value.internalBinaryWrite(e.explicitContentFilter, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.viewNsfwGuilds && h.BoolValue.internalBinaryWrite(e.viewNsfwGuilds, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.convertEmoticons && h.BoolValue.internalBinaryWrite(e.convertEmoticons, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.expressionSuggestionsEnabled && h.BoolValue.internalBinaryWrite(e.expressionSuggestionsEnabled, _.tag(22, M.WireType.LengthDelimited).fork(), E).join(), e.viewNsfwCommands && h.BoolValue.internalBinaryWrite(e.viewNsfwCommands, _.tag(23, M.WireType.LengthDelimited).fork(), E).join(), e.useLegacyChatInput && h.BoolValue.internalBinaryWrite(e.useLegacyChatInput, _.tag(24, M.WireType.LengthDelimited).fork(), E).join();
                     for (let E = 0; E < e.soundboardPickerCollapsedSections.length; E++) _.tag(25, M.WireType.LengthDelimited).string(e.soundboardPickerCollapsedSections[E]);
-                    e.dmSpamFilter && h.UInt32Value.internalBinaryWrite(e.dmSpamFilter, _.tag(26, M.WireType.LengthDelimited).fork(), E).join(), 0 !== e.dmSpamFilterV2 && _.tag(27, M.WireType.Varint).int32(e.dmSpamFilterV2), e.includeStickersInAutocomplete && h.BoolValue.internalBinaryWrite(e.includeStickersInAutocomplete, _.tag(28, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentSettings && J.internalBinaryWrite(e.explicitContentSettings, _.tag(29, M.WireType.LengthDelimited).fork(), E).join();
+                    e.dmSpamFilter && h.UInt32Value.internalBinaryWrite(e.dmSpamFilter, _.tag(26, M.WireType.LengthDelimited).fork(), E).join(), 0 !== e.dmSpamFilterV2 && _.tag(27, M.WireType.Varint).int32(e.dmSpamFilterV2), e.includeStickersInAutocomplete && h.BoolValue.internalBinaryWrite(e.includeStickersInAutocomplete, _.tag(28, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentSettings && q.internalBinaryWrite(e.explicitContentSettings, _.tag(29, M.WireType.LengthDelimited).fork(), E).join();
                     let t = E.writeUnknownFields;
                     return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
                 }
@@ -33824,7 +33827,7 @@
                         no: 29,
                         name: "explicit_content_settings",
                         kind: "message",
-                        T: () => J
+                        T: () => q
                     }])
                 }
             }
@@ -36519,4 +36522,4 @@
         }
     }
 ]);
-//# sourceMappingURL=99392.939afc47916baee4643d.js.map
+//# sourceMappingURL=99392.9290223bc21285fa7439.js.map
