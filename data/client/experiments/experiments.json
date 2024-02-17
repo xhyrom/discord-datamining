@@ -10148,19 +10148,19 @@
       "populations": [
         {
           "buckets": {
+            "6": {
+              "rollout": [
+                {
+                  "start": 5000,
+                  "end": 10000
+                }
+              ]
+            },
             "7": {
               "rollout": [
                 {
                   "start": 0,
                   "end": 5000
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 5000,
-                  "end": 10000
                 }
               ]
             }
