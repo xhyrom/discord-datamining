@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["98239"], {
+    ["67615"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -37450,7 +37450,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 StreamRTCAnalyticsContext: function() {
-                    return N
+                    return O
                 },
                 default: function() {
                     return s
@@ -37468,18 +37468,19 @@
                 c = n("845579"),
                 g = n("271938"),
                 m = n("42203"),
-                h = n("985365"),
-                v = n("945956"),
-                E = n("590401"),
-                p = n("278163"),
-                y = n("599110"),
-                T = n("104478"),
-                C = n("374014"),
-                S = n("933034"),
-                I = n("196383"),
-                A = n("49111"),
-                D = n("353927");
-            class N {
+                h = n("42887"),
+                v = n("985365"),
+                E = n("945956"),
+                p = n("590401"),
+                y = n("278163"),
+                T = n("599110"),
+                C = n("104478"),
+                S = n("374014"),
+                I = n("933034"),
+                A = n("196383"),
+                D = n("49111"),
+                N = n("353927");
+            class O {
                 setActionContext(e) {
                     this.actionContext = e
                 }
@@ -37550,13 +37551,13 @@
                                 ...t,
                                 ...n,
                                 streamKey: this._streamKey
-                            })), e === A.RTCConnectionStates.RTC_CONNECTED) {
+                            })), e === D.RTCConnectionStates.RTC_CONNECTED) {
                             var s;
                             null === (s = this._connection) || void 0 === s || s.on(a.BaseConnectionEvent.ScreenshareFinish, (e, t, n, s, i, r, a, o, d, u, l, f, _, c) => {
                                 let g = this.getMediaSessionId(),
                                     m = this.getRTCConnectionId(),
                                     h = this.getGoLiveSource();
-                                (0, p.getSystemAnalyticsInfo)().then(v => {
+                                (0, y.getSystemAnalyticsInfo)().then(v => {
                                     let E = null;
                                     if (null != v) {
                                         let {
@@ -37575,7 +37576,7 @@
                                         }
                                     }
                                     let p = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != s ? s : 0) + (null != i ? i : 0) + (null != r ? r : 0) + (null != o ? o : 0) + (null != c ? c : 0) + (null != _ ? _ : 0);
-                                    y.default.track(A.AnalyticEvents.SCREENSHARE_FINISHED, {
+                                    T.default.track(D.AnalyticEvents.SCREENSHARE_FINISHED, {
                                         screenshare_frames: e,
                                         videohook_frames: t,
                                         hybrid_dxgi_frames: n,
@@ -37590,18 +37591,18 @@
                                         desktop_capturer_type: d,
                                         media_session_id: g,
                                         rtc_connection_id: m,
-                                        context: D.MediaEngineContextTypes.STREAM,
+                                        context: N.MediaEngineContextTypes.STREAM,
                                         screens: u,
                                         windows: l,
                                         activity: f,
                                         ...E,
-                                        ...(0, S.default)(null == h ? void 0 : h.desktopSource)
+                                        ...(0, I.default)(null == h ? void 0 : h.desktopSource)
                                     })
                                 })
                             })
                         }
                     }), this.on(u.RTCConnectionEvent.Video, (t, n, s, i, r) => {
-                        let a = (0, C.decodeStreamKey)(this._streamKey);
+                        let a = (0, S.decodeStreamKey)(this._streamKey);
                         a.guildId === t && a.channelId === n && a.ownerId === s && (null != this.getMediaSessionId() && !e && (this._trackVideoStartStats(), e = !0), this._updateVideoStreamId(i, r))
                     }), this.on(u.RTCConnectionEvent.VideoSourceQualityChanged, (e, t, n, s, i, r) => {
                         o.default.wait(() => o.default.dispatch({
@@ -37625,14 +37626,14 @@
                     } = this.analyticsContext, {
                         ownerId: r,
                         guildId: a
-                    } = this._streamContext, o = E.default.getRegion(v.default.getHostname()), d = c.BroadcastAutoBroadcast.getSetting();
+                    } = this._streamContext, o = p.default.getRegion(E.default.getHostname()), d = c.BroadcastAutoBroadcast.getSetting();
                     return {
                         channel_id: this.channelId,
                         rtc_connection_id: this.getRTCConnectionId(),
                         media_session_id: this.getMediaSessionId(),
                         parent_media_session_id: this.parentMediaSessionId,
                         sender_user_id: r,
-                        context: D.MediaEngineContextTypes.STREAM,
+                        context: N.MediaEngineContextTypes.STREAM,
                         guild_id: a,
                         stream_region: e,
                         stream_source_type: n,
@@ -37648,13 +37649,13 @@
                     }
                 }
                 _trackVideoStartStats() {
-                    let e = this.isOwner ? (0, I.default)() : null;
-                    y.default.track(A.AnalyticEvents.VIDEO_STREAM_STARTED, {
+                    let e = this.isOwner ? (0, A.default)() : null;
+                    T.default.track(D.AnalyticEvents.VIDEO_STREAM_STARTED, {
                         ...this._getStreamAnalyticsProperties(),
                         ...e,
-                        connection_type: h.default.getType(),
-                        effective_connection_speed: h.default.getEffectiveConnectionSpeed(),
-                        service_provider: h.default.getServiceProvider()
+                        connection_type: v.default.getType(),
+                        effective_connection_speed: v.default.getEffectiveConnectionSpeed(),
+                        service_provider: v.default.getServiceProvider()
                     })
                 }
                 _trackVideoEndStats(e) {
@@ -37677,7 +37678,7 @@
                         g = this.isOwner ? {
                             bandwidth_estimation_experiment: this.getBandwidthEstimationExperiment()
                         } : {};
-                    y.default.track(A.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                    T.default.track(D.AnalyticEvents.VIDEO_STREAM_ENDED, {
                         ...i,
                         ...a,
                         ...r,
@@ -37690,12 +37691,13 @@
                         reason: e,
                         max_viewers: this.analyticsContext.maxViewers,
                         hostname: this.hostname,
+                        hardware_enabled: h.default.getHardwareH264(),
                         device_performance_class: this.isOwner ? (0, _.getMediaPerformanceClass)() : null
                     })
                 }
                 _getExtraConnectionOptions() {
                     return {
-                        streamUserId: (0, C.decodeStreamKey)(this._streamKey).ownerId
+                        streamUserId: (0, S.decodeStreamKey)(this._streamKey).ownerId
                     }
                 }
                 constructor({
@@ -37707,7 +37709,7 @@
                     isStreamer: a,
                     parentMediaSessionId: d
                 }) {
-                    let u = (0, C.decodeStreamKey)(t),
+                    let u = (0, S.decodeStreamKey)(t),
                         {
                             guildId: l,
                             channelId: f
@@ -37717,15 +37719,15 @@
                         sessionId: e,
                         guildId: l,
                         channelId: f,
-                        context: D.MediaEngineContextTypes.STREAM,
+                        context: N.MediaEngineContextTypes.STREAM,
                         rtcServerId: n,
                         parentMediaSessionId: d
-                    }), this._streamContext = u, this._streamKey = t, this._isStreamer = a, this._videoStreamStats = new T.default(s, this.isOwner), this.analyticsContext = i, this._updateVideoStreamId = r.debounce((e, t) => {
+                    }), this._streamContext = u, this._streamKey = t, this._isStreamer = a, this._videoStreamStats = new C.default(s, this.isOwner), this.analyticsContext = i, this._updateVideoStreamId = r.debounce((e, t) => {
                         let {
                             guildId: n,
                             channelId: s,
                             ownerId: i
-                        } = (0, C.decodeStreamKey)(this._streamKey);
+                        } = (0, S.decodeStreamKey)(this._streamKey);
                         o.default.wait(() => o.default.dispatch({
                             type: "RTC_CONNECTION_VIDEO",
                             guildId: n,
@@ -37733,7 +37735,7 @@
                             userId: i,
                             streamId: e,
                             rtcServerId: t,
-                            context: D.MediaEngineContextTypes.STREAM
+                            context: N.MediaEngineContextTypes.STREAM
                         }))
                     }, 200), this._videoStreamStats.start(), this._initializeEvents()
                 }
@@ -61900,4 +61902,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98239.81f20f37d3f532eba2fe.js.map
+//# sourceMappingURL=67615.82cb37c634afef3103c8.js.map

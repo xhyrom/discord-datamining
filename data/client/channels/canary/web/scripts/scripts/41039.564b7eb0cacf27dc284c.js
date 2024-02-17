@@ -15834,6 +15834,7 @@
                                         participant_type: "sender",
                                         guild_region: b.default.getRegion(this.hostname),
                                         hostname: this.hostname,
+                                        hardware_enabled: P.default.getHardwareH264(),
                                         ...t,
                                         ...e.getNetworkStats(),
                                         ...e.getCodecUsageStats("sender", this.userId),
@@ -15855,6 +15856,7 @@
                                     participant_type: "receiver",
                                     guild_region: b.default.getRegion(this.hostname),
                                     hostname: this.hostname,
+                                    hardware_enabled: P.default.getHardwareH264(),
                                     ...r,
                                     ...e.getNetworkStats(),
                                     ...e.getCodecUsageStats("receiver", t)
@@ -16247,6 +16249,7 @@
                             participant_type: "receiver",
                             guild_region: b.default.getRegion(this.hostname),
                             hostname: this.hostname,
+                            hardware_enabled: P.default.getHardwareH264(),
                             ...t,
                             ...r.getNetworkStats(),
                             ...r.getCodecUsageStats("receiver", e)
@@ -50035,7 +50038,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267308"
+                                build_number: "267331"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -63958,4 +63961,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.84b24c5d53b57703eec9.js.map
+//# sourceMappingURL=41039.564b7eb0cacf27dc284c.js.map
