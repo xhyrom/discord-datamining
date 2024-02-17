@@ -4737,7 +4737,10 @@
   },
   "ADD_SAFETY_WARNING": {
     "url": "/channels/:param/add-safety-warning",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me",
