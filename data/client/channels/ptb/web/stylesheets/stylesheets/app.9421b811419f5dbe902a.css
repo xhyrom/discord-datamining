@@ -24780,8 +24780,8 @@ html .progress__4ef76 {
 }
 
 .victorStyles_d67b5e {
-    --custom-poll-style-vote-percentage: var(--polls-victor-border);
     --custom-poll-style-vote-background: var(--polls-victor-fill);
+    --custom-poll-style-vote-percentage: var(--status-positive);
     --custom-poll-style-label: var(--polls-victor-label);
     --custom-poll-style-image-background: var(--info-warning-background)
 }
@@ -45018,8 +45018,8 @@ html .progress__4ef76 {
 }
 
 .memberCount_d3ce07 {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     display: flex;
     align-items: center
 }
@@ -125282,11 +125282,12 @@ div.nagbar_c731ff {
     --polls-normal-fill-hover: var(--primary-600);
     --polls-normal-image-background: var(--primary-660);
     --polls-normal-label: var(--white-500);
-    --polls-victor-border: var(--yellow-300);
-    --polls-victor-fill: var(--yellow-200);
+    --polls-result-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --polls-victor-border: var(--green-330);
+    --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-victor-label: var(--primary-600);
-    --polls-voted-border: var(--green-330);
-    --polls-voted-fill: var(--green-160);
+    --polls-voted-border: var(--brand-300);
+    --polls-voted-fill: var(--brand-200);
     --polls-voted-label: var(--primary-600);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
@@ -125597,11 +125598,12 @@ div.nagbar_c731ff {
     --polls-normal-fill-hover: var(--primary-230);
     --polls-normal-image-background: var(--white-500);
     --polls-normal-label: var(--primary-600);
-    --polls-victor-border: var(--yellow-300);
-    --polls-victor-fill: var(--yellow-200);
+    --polls-result-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --polls-victor-border: var(--green-330);
+    --polls-victor-fill: hsl(var(--green-400-hsl) / 0.2);
     --polls-victor-label: var(--primary-600);
-    --polls-voted-border: var(--green-330);
-    --polls-voted-fill: var(--green-160);
+    --polls-voted-border: var(--brand-300);
+    --polls-voted-fill: var(--brand-200);
     --polls-voted-label: var(--primary-600);
     --profile-gradient-card-background: hsl(var(--white-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-430-hsl) / 0.24);
@@ -125912,11 +125914,12 @@ div.nagbar_c731ff {
     --polls-normal-fill-hover: var(--primary-600);
     --polls-normal-image-background: var(--primary-660);
     --polls-normal-label: var(--white-500);
-    --polls-victor-border: var(--yellow-300);
-    --polls-victor-fill: var(--yellow-200);
+    --polls-result-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --polls-victor-border: var(--green-330);
+    --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-victor-label: var(--primary-600);
-    --polls-voted-border: var(--green-330);
-    --polls-voted-fill: var(--green-160);
+    --polls-voted-border: var(--brand-300);
+    --polls-voted-fill: var(--brand-200);
     --polls-voted-label: var(--primary-600);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
@@ -126227,11 +126230,12 @@ div.nagbar_c731ff {
     --polls-normal-fill-hover: var(--primary-600);
     --polls-normal-image-background: var(--primary-660);
     --polls-normal-label: var(--white-500);
-    --polls-victor-border: var(--yellow-300);
-    --polls-victor-fill: var(--yellow-200);
+    --polls-result-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --polls-victor-border: var(--green-330);
+    --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-victor-label: var(--primary-600);
-    --polls-voted-border: var(--green-330);
-    --polls-voted-fill: var(--green-160);
+    --polls-voted-border: var(--brand-300);
+    --polls-voted-fill: var(--brand-200);
     --polls-voted-label: var(--primary-600);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
@@ -127642,4 +127646,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.136e3b88e89080cda6e8.css.map*/
+/*# sourceMappingURL=app.9421b811419f5dbe902a.css.map*/
