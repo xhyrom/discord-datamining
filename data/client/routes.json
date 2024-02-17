@@ -3004,7 +3004,10 @@
   },
   "CHURN_USER_OFFER": {
     "url": "/users/@me/billing/churn-user-offer",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
