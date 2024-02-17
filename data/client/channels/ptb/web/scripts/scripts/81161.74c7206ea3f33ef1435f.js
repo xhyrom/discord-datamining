@@ -543,7 +543,7 @@
                     return _
                 },
                 getRecurrenceOptions: function() {
-                    return h
+                    return p
                 },
                 getInitialEventStartDate: function() {
                     return T
@@ -583,6 +583,9 @@
                 },
                 recurrenceRuleToOption: function() {
                     return V
+                },
+                hasScheduleChanges: function() {
+                    return k
                 }
             }), n("222007"), n("424973");
             var u = n("917351"),
@@ -600,10 +603,10 @@
                 y = [d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday],
                 R = [d.RRule.SU.weekday, d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday],
                 v = [d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday, d.RRule.SA.weekday],
-                p = [d.RRule.SU.weekday, d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday, d.RRule.SA.weekday],
+                h = [d.RRule.SU.weekday, d.RRule.MO.weekday, d.RRule.TU.weekday, d.RRule.WE.weekday, d.RRule.TH.weekday, d.RRule.FR.weekday, d.RRule.SA.weekday],
                 f = new Set([0, 6]);
 
-            function h(e) {
+            function p(e) {
                 let t = e.toDate(),
                     n = Math.ceil(t.getDate() / 7),
                     u = e.format("dddd"),
@@ -667,7 +670,7 @@
             }
 
             function m(e) {
-                return new d.Weekday(p[e])
+                return new d.Weekday(h[e])
             }
 
             function g(e, t) {
@@ -861,7 +864,11 @@
                         return c.RecurrenceOptions.NONE
                 }
             }
+
+            function k(e, t) {
+                return (null == e ? void 0 : e.scheduled_start_time) !== t.scheduledStartTime || e.scheduled_end_time !== t.scheduledEndTime || !(0, u.isEqual)(e.recurrence_rule, t.recurrenceRule)
+            }
         }
     }
 ]);
-//# sourceMappingURL=81161.4cbf8610aaecd98b5550.js.map
+//# sourceMappingURL=81161.74c7206ea3f33ef1435f.js.map
