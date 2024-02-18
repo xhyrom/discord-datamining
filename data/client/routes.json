@@ -4710,7 +4710,10 @@
   },
   "QUESTS_DISMISS_CONTENT": {
     "url": "/quests/:param/dismissible-content/:param/dismiss",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "ATTACHMENTS_REFRESH_URLS": {
     "url": "/attachments/refresh-urls",
