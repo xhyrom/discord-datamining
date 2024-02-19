@@ -838,11 +838,7 @@
   },
   "PARTNER_REQUIREMENTS": {
     "url": "/partners/:param/requirements",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "AVATAR": {
     "url": "/users/:param/avatars/:param.:param",
