@@ -4747,6 +4747,10 @@
   },
   "MY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   }
 }
