@@ -4619,10 +4619,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 resolvePlaintextInlineVoid: function() {
-                    return I
+                    return C
                 },
                 resolveApplicationCommandOption: function() {
-                    return C
+                    return T
                 }
             }), n("222007");
             var i = n("679653"),
@@ -4636,13 +4636,14 @@
                 c = n("305961"),
                 p = n("697218"),
                 f = n("25292"),
-                m = n("149022"),
-                _ = n("680894");
+                m = n("299039"),
+                _ = n("149022"),
+                I = n("680894");
 
-            function I(e, t, n, p) {
+            function C(e, t, n, p) {
                 let {
-                    allowUsers: m = !0,
-                    allowRoles: I = !0
+                    allowUsers: _ = !0,
+                    allowRoles: C = !0
                 } = null != p ? p : {};
                 switch (e[0]) {
                     case "@":
@@ -4663,7 +4664,7 @@
                                 if (null != e) {
                                     if (e.isPrivate()) {
                                         for (let t of e.recipients)
-                                            if (T(o, r, t)) return {
+                                            if (A(o, r, t)) return {
                                                 type: "userMention",
                                                 userId: t,
                                                 children: [{
@@ -4676,16 +4677,16 @@
                                                 userId: t
                                             }
                                             of e)
-                                            if (T(o, r, t)) return {
+                                            if (A(o, r, t)) return {
                                                 type: "userMention",
                                                 userId: t,
                                                 children: [{
                                                     text: ""
                                                 }]
                                             };
-                                        if (p && T(o, r, _.CLYDE_AI_USER_ID)) return {
+                                        if (p && A(o, r, I.CLYDE_AI_USER_ID)) return {
                                             type: "userMention",
-                                            userId: _.CLYDE_AI_USER_ID,
+                                            userId: I.CLYDE_AI_USER_ID,
                                             children: [{
                                                 text: ""
                                             }]
@@ -4694,7 +4695,7 @@
                                 }
                             }
                             return null
-                        }(e, t, n, m, I);
+                        }(e, t, n, _, C);
                     case ":":
                         return function(e, t) {
                             let n = o.default.EMOJI_NAME_RE.exec(e);
@@ -4724,7 +4725,7 @@
                             if (null == t) return null;
                             n = e.length > 3 && '"' === e[1] && '"' === e[e.length - 1] ? (0, i.unescapeChannelName)(e.slice(2, e.length - 1)) : e.slice(1);
                             let l = u.default.getTextChannelNameDisambiguations(t);
-                            for (let e of Object.keys(l))
+                            for (let e of m.default.keys(l))
                                 if (l[e].name === n) return {
                                     type: "channelMention",
                                     channelId: e,
@@ -4748,8 +4749,8 @@
                                     }
                             }
                             let a = r.default.getActiveJoinedThreadsForGuild(t);
-                            for (let e of Object.keys(a))
-                                for (let t of Object.keys(a[e])) {
+                            for (let e of m.default.keys(a))
+                                for (let t of m.default.keys(a[e])) {
                                     let {
                                         channel: i
                                     } = a[e][t];
@@ -4767,14 +4768,14 @@
                 return null
             }
 
-            function C(e, t, n, i) {
-                let l = I(e, t, n, i);
-                return null == l ? null : (0, m.voidToOptionValue)(l)
+            function T(e, t, n, i) {
+                let l = C(e, t, n, i);
+                return null == l ? null : (0, _.voidToOptionValue)(l)
             }
 
-            function T(e, t, n) {
+            function A(e, t, n) {
                 let i = p.default.getUser(n);
-                return null != i && (n === _.CLYDE_AI_USER_ID && "clyde" === e.toLowerCase() || i.username === e && i.discriminator === (null != t ? t : "0"))
+                return null != i && (n === I.CLYDE_AI_USER_ID && "clyde" === e.toLowerCase() || i.username === e && i.discriminator === (null != t ? t : "0"))
             }
         },
         670902: function(e, t, n) {
@@ -5655,4 +5656,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.56e72a18a6902de09342.js.map
+//# sourceMappingURL=31337.062f1acd625b6722b45f.js.map
