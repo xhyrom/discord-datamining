@@ -21830,7 +21830,6 @@
                     enable_swipe_shortcuts: "Gestures shortcuts - swipe from right to left.",
                     disable_alpha_voice_panel: "Disable new Voice Panel UI: Currently the new voice ui is defaulted ON for staff.  It's not feature complete so if there's something you are missing, or you find a problem, you can disable it here.",
                     highlight_experimental_icons: "Highlight experimental icons",
-                    happening_now_summary_card: "Enable Happening Now Card with Summary",
                     enable_last_channel: "Enable launch into last channel",
                     enable_recently_active: "Enable recently active channels",
                     happening_main_tab: "Enable Happening tab containing summaries",
@@ -45445,7 +45444,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267474"
+                                build_number: "267478"
                             },
                             p = l.default.getCurrentUser();
                         null != p && (d.user_id = p.id, d.user_name = p.tag, null != p.email && (d.email = p.email));
@@ -59005,4 +59004,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.06b4773a1f6273121b80.js.map
+//# sourceMappingURL=41039.a02487ec81a8cfbe50f7.js.map
