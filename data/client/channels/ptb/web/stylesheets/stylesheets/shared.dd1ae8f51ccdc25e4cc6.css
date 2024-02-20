@@ -11448,7 +11448,8 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .activityDetails__1c2a0 {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    width: 100%
 }
 
 .arrow_cb03b8 {
@@ -27870,4 +27871,4 @@ span.button__4f306.disabled_dc5630 {
     color: var(--primary-330)
 }
 
-/*# sourceMappingURL=shared.754635965573bc5bcdf5.css.map*/
+/*# sourceMappingURL=shared.dd1ae8f51ccdc25e4cc6.css.map*/
