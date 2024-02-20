@@ -45451,8 +45451,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -118753,6 +118753,12 @@ div.nagbar_c731ff {
     height: 200px
 }
 
+.textContainer_e78d72 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4)
+}
+
 .mute__7525d {
     display: flex;
     align-items: center;
@@ -127638,4 +127644,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.fdc3849112099274d1a3.css.map*/
+/*# sourceMappingURL=app.e63b0b66519c5ebf69ce.css.map*/
