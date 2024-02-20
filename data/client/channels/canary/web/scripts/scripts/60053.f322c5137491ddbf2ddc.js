@@ -2671,7 +2671,7 @@
                     })
                 }
         },
-        150077: function(e, t, n) {
+        373807: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 getSeasonalGiftingBody: function() {
@@ -13194,7 +13194,7 @@
                 o = n("151426"),
                 u = n("819855"),
                 d = n("77078"),
-                c = n("150077"),
+                c = n("373807"),
                 f = n("841098"),
                 m = n("812204"),
                 p = n("685665"),
@@ -33863,9 +33863,9 @@
                     return c
                 }
             });
-            var l = n("161454"),
-                i = n("42203"),
-                a = n("945956"),
+            var l = n("42203"),
+                i = n("945956"),
+                a = n("568307"),
                 s = n("18494"),
                 r = n("599110"),
                 o = n("846325"),
@@ -33874,11 +33874,11 @@
 
             function c(e, t, n, c) {
                 var f, m, p;
-                let h = i.default.getChannel(s.default.getVoiceChannelId()),
+                let h = l.default.getChannel(s.default.getVoiceChannelId()),
                     E = null == h ? void 0 : h.getGuildId(),
-                    g = a.default.getMediaSessionId(),
-                    S = a.default.getRTCConnectionId(),
-                    C = null === (f = l.default.getCurrentGameForAnalytics()) || void 0 === f ? void 0 : f.name,
+                    g = i.default.getMediaSessionId(),
+                    S = i.default.getRTCConnectionId(),
+                    C = null === (f = a.default.getCurrentGameForAnalytics()) || void 0 === f ? void 0 : f.name,
                     T = E !== n.guildId && n.guildId !== o.DEFAULT_SOUND_GUILD_ID;
                 let v = (m = n, p = T, m.guildId === o.DEFAULT_SOUND_GUILD_ID ? "default" : p ? "custom-external" : "custom");
                 r.default.track(u.AnalyticEvents.PREMIUM_FEATURE_USAGE, {
@@ -47910,13 +47910,10 @@
                     return (0, a.jsxs)("div", {
                         className: o(this.getTypeClass("activity"), l),
                         children: [this.renderHeader(v), (0, a.jsxs)("div", {
-                            className: o(m ? G.bodyAlignCenter : G.bodyNormal, s && !u && !f && G.wrap),
-                            children: [(0, a.jsxs)("div", {
-                                className: G.activityDetails,
-                                children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, a.jsxs)(L.default.Child, {
-                                    className: o((0, R.getClass)(G, "content", m ? "GameImage" : null != e ? "Images" : "NoImages", t)),
-                                    children: [p, h, E, g, u || f ? null : C, c ? S : null]
-                                })]
+                            className: o(m ? G.bodyAlignCenter : G.bodyNormal, s && G.wrap),
+                            children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, a.jsxs)(L.default.Child, {
+                                className: o((0, R.getClass)(G, "content", m ? "GameImage" : null != e ? "Images" : "NoImages", t)),
+                                children: [p, h, E, g, u || f ? null : C, c ? S : null]
                             }), d ? S : null]
                         }), u ? C : null, u || f ? S : null, (0, a.jsx)(K, {
                             activity: r
@@ -54389,4 +54386,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.d5281890537a8582be63.js.map
+//# sourceMappingURL=60053.f322c5137491ddbf2ddc.js.map
