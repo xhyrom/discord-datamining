@@ -20653,6 +20653,7 @@
                 flipCardHidden: "flipCardHidden__40cc1",
                 flipped: "flipped_edbf92",
                 forceShadow: "forceShadow__205ef",
+                hideOverflow: "hideOverflow__1aaae",
                 noFlipCardContainer: "noFlipCardContainer_e2d2c1",
                 noFlipCardContainerCarousel: "noFlipCardContainerCarousel__11750",
                 partialFlipCard: "partialFlipCard__89bb1",
