@@ -22471,7 +22471,9 @@
                     highlight_redesigned_icons: "Highlight redesigned icons",
                     alt_clips_1: "Use alt clip icon 1",
                     alt_clips_2: "Use alt clip icon 2",
-                    profile_effect_debug_controls: "Scrolls through profile effects with arrow up / down. Restart with R"
+                    profile_effect_debug_controls: "Scrolls through profile effects with arrow up / down. Restart with R",
+                    shop_disable_cache: "Disable shop cache",
+                    shop_include_unpublished: "Show unpublished items in the shop"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -49921,7 +49923,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267605"
+                                build_number: "267621"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64039,4 +64041,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.91628950b32b9ded8877.js.map
+//# sourceMappingURL=41039.3a8c47b092f2cdbbd512.js.map

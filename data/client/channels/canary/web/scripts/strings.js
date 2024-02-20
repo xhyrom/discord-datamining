@@ -16471,6 +16471,9 @@
                 INAPPROPRIATE_CONVERSATION_ACTION_REPORTED: "Reported",
                 INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_CTL: "Contact Crisis Text Line",
                 INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_NOFILTR: "Contact NoFiltr",
+                SAFETY_ALERTS_SETTINGS_HEADER: "Safety Alerts",
+                SAFETY_ALERTS_SETTING_TITLE: "Show alerts in direct messages",
+                SAFETY_ALERTS_SETTING_DESCRIPTION: "Display an alert when a possible risk to your safety is detected. [Learn more about safety alerts]({learnMoreLink})",
                 URF_LANDING_PAGE_TITLE: "Report Illegal Content",
                 URF_LANDING_PAGE_SUBTITLE: "Use these forms to report illegal content under the Digital Services Act (DSA). For reports of copyright or trademark infringement please [go here]({supportURL}).",
                 URF_LANDING_PAGE_REPORT_USER_PROFILE_BUTTON: "Report a User Profile",
@@ -18253,7 +18256,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267605", ", Version Hash: ").concat("3b03de7d8bfc3119e221d33a578289262fe10ffd")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267621", ", Version Hash: ").concat("50a24ba30ecabdea8a252827e85455a1ab2fa720")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20602,8 +20605,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "267605", "267605"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267605")), _ = 0), _
+                let _ = parseInt((e = "267621", "267621"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267621")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25317,8 +25320,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708468860838",
-                                    build_number: "267605"
+                                    built_at: "1708470258073",
+                                    build_number: "267621"
                                 }
                             },
                             retries: 1
@@ -36478,4 +36481,4 @@
         }
     }
 ]);
-//# sourceMappingURL=99392.2b2c5ebf83e153e9c272.js.map
+//# sourceMappingURL=99392.8efdaef992e2d8bbb2f8.js.map
