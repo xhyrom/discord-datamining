@@ -27957,7 +27957,7 @@
                     return i
                 }
             });
-            var s = n("568307");
+            var s = n("161454");
 
             function i() {
                 let e = s.default.getCurrentGameForAnalytics();
@@ -27999,8 +27999,8 @@
                     return l
                 }
             });
-            var s = n("42887"),
-                i = n("568307"),
+            var s = n("161454"),
+                i = n("42887"),
                 r = n("703370"),
                 a = n("599110"),
                 o = n("716241"),
@@ -28008,11 +28008,11 @@
 
             function u() {
                 let e, t, n, r, a;
-                let o = s.default.getGoLiveSource();
+                let o = i.default.getGoLiveSource();
                 if (null != o && (e = o.quality.resolution, t = o.quality.frameRate, null != o.desktopSource)) {
                     var d, u;
                     n = o.desktopSource.soundshareSession;
-                    let e = null != o.desktopSource.sourcePid ? i.default.getGameForPID(o.desktopSource.sourcePid) : null;
+                    let e = null != o.desktopSource.sourcePid ? s.default.getGameForPID(o.desktopSource.sourcePid) : null;
                     r = null !== (d = null == e ? void 0 : e.name) && void 0 !== d ? d : null, a = null !== (u = null == e ? void 0 : e.id) && void 0 !== u ? u : null
                 }
                 return {
@@ -35742,14 +35742,14 @@
             var s, i = n("201876"),
                 r = n("56947"),
                 a = n("386045"),
-                o = n("584687"),
-                d = n("103979"),
-                u = n("845579"),
-                l = n("373469"),
-                f = n("42203"),
-                _ = n("42887"),
-                c = n("590401"),
-                g = n("568307"),
+                o = n("161454"),
+                d = n("584687"),
+                u = n("103979"),
+                l = n("845579"),
+                f = n("373469"),
+                _ = n("42203"),
+                c = n("42887"),
+                g = n("590401"),
                 m = n("568734"),
                 h = n("49111");
             s = class extends i.default {
@@ -35762,32 +35762,32 @@
                 computeVoiceFlags() {
                     var e, t, n;
                     let s = 0,
-                        i = u.ClipsAllowVoiceRecording.getSetting();
+                        i = l.ClipsAllowVoiceRecording.getSetting();
                     s = (0, m.setFlag)(s, h.VoiceFlags.ALLOW_VOICE_RECORDING, i);
-                    let f = a.default.getSettings().clipsEnabled && (0, r.areClipsEnabled)() && ((null === (e = l.default.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === h.ApplicationStreamStates.ACTIVE || (null === (t = l.default.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === h.ApplicationStreamStates.PAUSED),
+                    let _ = a.default.getSettings().clipsEnabled && (0, r.areClipsEnabled)() && ((null === (e = f.default.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === h.ApplicationStreamStates.ACTIVE || (null === (t = f.default.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === h.ApplicationStreamStates.PAUSED),
                         {
-                            enableDecoupledGameClipping: _
-                        } = o.default.getCurrentConfig({
+                            enableDecoupledGameClipping: c
+                        } = d.default.getCurrentConfig({
                             location: "computeVoiceFlags"
                         }),
                         {
-                            enableViewerClipping: c
-                        } = d.default.getCurrentConfig({
+                            enableViewerClipping: g
+                        } = u.default.getCurrentConfig({
                             location: "computeVoiceFlags"
                         }, {
                             autoTrackExposure: !1
                         });
-                    c && (s = (0, m.setFlag)(s, h.VoiceFlags.ALLOW_ANY_VIEWER_CLIPS, a.default.getSettings().viewerClipsEnabled));
-                    let v = a.default.getSettings().decoupledClipsEnabled && (null === (n = g.default.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && _;
-                    return s = (0, m.setFlag)(s, h.VoiceFlags.CLIPS_ENABLED, f || v)
+                    g && (s = (0, m.setFlag)(s, h.VoiceFlags.ALLOW_ANY_VIEWER_CLIPS, a.default.getSettings().viewerClipsEnabled));
+                    let v = a.default.getSettings().decoupledClipsEnabled && (null === (n = o.default.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && c;
+                    return s = (0, m.setFlag)(s, h.VoiceFlags.CLIPS_ENABLED, _ || v)
                 }
                 getInitialState() {
                     return {
                         guildId: null,
                         channelId: null,
-                        selfMute: _.default.isSelfMute(),
-                        selfDeaf: _.default.isSelfDeaf(),
-                        selfVideo: _.default.isVideoEnabled(),
+                        selfMute: c.default.isSelfMute(),
+                        selfDeaf: c.default.isSelfDeaf(),
+                        selfVideo: c.default.isVideoEnabled(),
                         preferredRegion: null,
                         videoStreamParameters: null,
                         flags: 0
@@ -35801,11 +35801,11 @@
                     return {
                         guildId: t,
                         channelId: n,
-                        selfMute: _.default.isSelfMute(),
-                        selfDeaf: _.default.isSelfDeaf(),
-                        selfVideo: _.default.isVideoEnabled(),
-                        preferredRegion: c.default.getPreferredRegion(),
-                        videoStreamParameters: _.default.getVideoStreamParameters(),
+                        selfMute: c.default.isSelfMute(),
+                        selfDeaf: c.default.isSelfDeaf(),
+                        selfVideo: c.default.isVideoEnabled(),
+                        preferredRegion: g.default.getPreferredRegion(),
+                        videoStreamParameters: c.default.getVideoStreamParameters(),
                         flags: this.computeVoiceFlags()
                     }
                 }
@@ -35824,7 +35824,7 @@
                         videoStreamParameters: d,
                         flags: u = 0
                     } = e;
-                    a && (null === (t = f.default.getChannel(s)) || void 0 === t ? void 0 : t.type) === h.ChannelTypes.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+                    a && (null === (t = _.default.getChannel(s)) || void 0 === t ? void 0 : t.type) === h.ChannelTypes.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
                         guildId: n,
                         channelId: s,
                         selfMute: i,
@@ -45110,11 +45110,11 @@
                 h = n("376556"),
                 v = n("823704"),
                 E = n("605250"),
-                p = n("271938"),
-                y = n("47319"),
-                T = n("603699"),
-                C = n("824563"),
-                S = n("568307"),
+                p = n("161454"),
+                y = n("271938"),
+                T = n("47319"),
+                C = n("603699"),
+                S = n("824563"),
                 I = n("280168"),
                 A = n("800762"),
                 D = n("599110"),
@@ -45179,7 +45179,7 @@
             }
 
             function en(e) {
-                return C.default.findActivity(e, e => null != e.party && null != e.party.id && (0, b.isSpotifyParty)(e.party.id))
+                return S.default.findActivity(e, e => null != e.party && null != e.party.id && (0, b.isSpotifyParty)(e.party.id))
             }
             let es = new Set([WebSocket.CONNECTING, WebSocket.OPEN]);
             class ei {
@@ -45326,7 +45326,7 @@
 
             function el() {
                 let e = Object.keys(X),
-                    t = y.default.getAccounts().filter(e => {
+                    t = T.default.getAccounts().filter(e => {
                         let {
                             type: t
                         } = e;
@@ -45361,7 +45361,7 @@
             }
 
             function e_(e) {
-                if (e === p.default.getId()) {
+                if (e === y.default.getId()) {
                     let t = A.default.isCurrentClientInVoiceChannel(),
                         n = (0, m.getIsSpeaking)({
                             userId: e,
@@ -45440,7 +45440,7 @@
             }
             class em extends f.default.Store {
                 initialize() {
-                    this.waitFor(y.default, I.default), this.syncWith([C.default], () => (function() {
+                    this.waitFor(T.default, I.default), this.syncWith([S.default], () => (function() {
                         if (null == i) return !1;
                         let e = ee();
                         if (null == e) return !1;
@@ -45501,7 +45501,7 @@
                     return Z[e]
                 }
                 shouldShowActivity() {
-                    return null != s && s.account.showActivity && !T.default.isIdle()
+                    return null != s && s.account.showActivity && !C.default.isIdle()
                 }
                 getActivity() {
                     let e, t, n;
@@ -45526,7 +45526,7 @@
                     }).join("; "));
                     let g = {},
                         m = null != a.image ? (0, N.getAssetFromImageURL)(V.PlatformTypes.SPOTIFY, a.image.url) : null;
-                    null != a.image && null != m && (g.large_image = m), "single" !== a.type && (g.large_text = a.name), null != _ && (t = _.uri), n = null != i && null != i.partyId ? i.partyId : "".concat(b.SPOTIFY_PARTY_PREFIX).concat(p.default.getId());
+                    null != a.image && null != m && (g.large_image = m), "single" !== a.type && (g.large_text = a.name), null != _ && (t = _.uri), n = null != i && null != i.partyId ? i.partyId : "".concat(b.SPOTIFY_PARTY_PREFIX).concat(y.default.getId());
                     let h = o.length > 128 ? o.substring(0, 125) + "..." : o,
                         v = {
                             name: R.name,
@@ -45600,7 +45600,7 @@
                         } else Q[t] = [d], f = !0
                     }
                     n ? null == $ || $.start(w, ef) : (a = null, null == $ || $.stop());
-                    let c = y.default.getAccount(t, V.PlatformTypes.SPOTIFY);
+                    let c = T.default.getAccount(t, V.PlatformTypes.SPOTIFY);
                     if (null == c) return f;
                     let g = Z[t],
                         m = null != a ? {
@@ -45618,7 +45618,7 @@
                         h = null != d && null != i && 0 === o && !n;
                     !h && (Z[t] = m);
                     let E = s;
-                    if (s = u.values(Z).find(e => null != e), e_(p.default.getId()), null == a || h ? z.stop() : z.start(a.duration - o + U, () => et(c.id)), null != i && (!n && o > 0 || null == d || null != m && i.trackId !== m.track.id) ? (Y.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(U, "ms")), q.start(U, () => {
+                    if (s = u.values(Z).find(e => null != e), e_(y.default.getId()), null == a || h ? z.stop() : z.start(a.duration - o + U, () => et(c.id)), null != i && (!n && o > 0 || null == d || null != m && i.trackId !== m.track.id) ? (Y.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(U, "ms")), q.start(U, () => {
                             Y.info("Stopping listening along"), (0, v.default)(), et(c.id)
                         })) : q.isStarted() && (Y.info("Listen along stop cancelled as playback of track resumed"), q.stop()), E === s || null == g && null == m || null != g && null != m && g.track.id === m.track.id && g.startTime === m.startTime) return f;
                     null != a && D.default.track(V.AnalyticEvents.ACTIVITY_UPDATED, {
@@ -45701,7 +45701,7 @@
                         let {
                             sourceId: e,
                             sound: n
-                        } = null == t ? void 0 : t.desktopSettings, s = null != e && S.default.getObservedAppNameForWindow(e) === R.name;
+                        } = null == t ? void 0 : t.desktopSettings, s = null != e && p.default.getObservedAppNameForWindow(e) === R.name;
                         s && n ? ($ = new c.Interval).start(w, ef) : $ = null
                     }
                 }
@@ -51937,14 +51937,14 @@
                 u = n("191225"),
                 l = n("299285"),
                 f = n("225772"),
-                _ = n("32346"),
-                c = n("925880"),
-                g = n("662285"),
-                m = n("845579"),
-                h = n("374363"),
-                v = n("373469"),
-                E = n("848872"),
-                p = n("568307"),
+                _ = n("161454"),
+                c = n("32346"),
+                g = n("925880"),
+                m = n("662285"),
+                h = n("845579"),
+                v = n("374363"),
+                E = n("373469"),
+                p = n("848872"),
                 y = n("49111"),
                 T = n("782340");
             let C = [],
@@ -51952,11 +51952,11 @@
 
             function I() {
                 let e = [],
-                    t = m.CustomStatusSetting.getSetting();
+                    t = h.CustomStatusSetting.getSetting();
                 null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, f.default)(t));
-                let n = c.default.getActivities();
+                let n = g.default.getActivities();
                 e.push(...n);
-                let s = E.default.getStream();
+                let s = p.default.getStream();
                 null != s && e.push({
                     type: y.ActivityTypes.STREAMING,
                     ...s
@@ -51979,11 +51979,11 @@
                         flags: y.ActivityFlags.EMBEDDED
                     })
                 });
-                let d = p.default.getVisibleGame(),
-                    h = null != d && null != d.name && r.has(d.name),
+                let d = _.default.getVisibleGame(),
+                    v = null != d && null != d.name && r.has(d.name),
                     I = null != d && d.isLauncher,
-                    A = v.default.getCurrentUserActiveStream();
-                null != d && null != d.name && !(h || I && !(null != A)) && e.push({
+                    A = E.default.getCurrentUserActiveStream();
+                null != d && null != d.name && !(v || I && !(null != A)) && e.push({
                     type: y.ActivityTypes.PLAYING,
                     name: d.name,
                     application_id: d.id,
@@ -51991,14 +51991,14 @@
                         start: d.start
                     }
                 });
-                let D = g.default.getActivity();
+                let D = m.default.getActivity();
                 null != D && e.push({
                     type: y.ActivityTypes.LISTENING,
                     ...D
                 });
-                let N = _.default.getCurrentHangStatus();
+                let N = c.default.getCurrentHangStatus();
                 if (null != N) {
-                    let t = _.default.getCustomHangStatus();
+                    let t = c.default.getCustomHangStatus();
                     e.push({
                         type: y.ActivityTypes.HANG_STATUS,
                         name: "Hang Status",
@@ -52010,7 +52010,7 @@
             }
             class A extends o.default.Store {
                 initialize() {
-                    this.waitFor(p.default, u.default, E.default, v.default, g.default, h.default, _.default), this.syncWith([c.default, _.default], () => I())
+                    this.waitFor(_.default, u.default, p.default, E.default, m.default, v.default, c.default), this.syncWith([g.default, c.default], () => I())
                 }
                 getActivities() {
                     return C
@@ -55008,18 +55008,18 @@
                 u = n("446674"),
                 l = n("773364"),
                 f = n("913144"),
-                _ = n("583702"),
-                c = n("374014"),
-                g = n("582415"),
-                m = n("537429"),
-                h = n("773336"),
-                v = n("373469"),
-                E = n("271938"),
-                p = n("42203"),
-                y = n("42887"),
-                T = n("824563"),
-                C = n("945956"),
-                S = n("568307"),
+                _ = n("161454"),
+                c = n("583702"),
+                g = n("374014"),
+                m = n("582415"),
+                h = n("537429"),
+                v = n("773336"),
+                E = n("373469"),
+                p = n("271938"),
+                y = n("42203"),
+                T = n("42887"),
+                C = n("824563"),
+                S = n("945956"),
                 I = n("49111"),
                 A = n("353927");
             let D = {},
@@ -55058,7 +55058,7 @@
             }
             class L extends u.default.Store {
                 getActiveStreamKey() {
-                    return (0, m.default)(y.default) ? i : null
+                    return (0, h.default)(T.default) ? i : null
                 }
                 getAllActiveStreamKeys() {
                     return Object.keys(V)
@@ -55067,10 +55067,10 @@
                     return V[e]
                 }
                 getStatsHistory(e, t, n) {
-                    if (!(0, m.default)(y.default) || null == t) return null;
+                    if (!(0, h.default)(T.default) || null == t) return null;
                     if (n) {
-                        let n = v.default.getActiveStreamForUser(t, e);
-                        if (null == n || 0 === v.default.getViewerIds(n).length) return null
+                        let n = E.default.getActiveStreamForUser(t, e);
+                        if (null == n || 0 === E.default.getViewerIds(n).length) return null
                     }
                     return R.map(e => n ? function(e) {
                         var t, n, s, i, r;
@@ -55098,7 +55098,7 @@
                     }(e.rtp.inbound[t]))
                 }
                 getQuality() {
-                    if (!(0, m.default)(y.default)) return I.RTCConnectionQuality.UNKNOWN;
+                    if (!(0, h.default)(T.default)) return I.RTCConnectionQuality.UNKNOWN;
                     let e = this.getActiveStreamKey(),
                         t = null != e ? V[e] : null;
                     return null != t ? t.quality : I.RTCConnectionQuality.UNKNOWN
@@ -55138,7 +55138,7 @@
                 }
             }
             L.displayName = "StreamRTCConnectionStore";
-            var U = new L(f.default, !y.default.isSupported() || __OVERLAY__ ? {} : {
+            var U = new L(f.default, !T.default.isSupported() || __OVERLAY__ ? {} : {
                 CONNECTION_OPEN: function(e) {
                     s = e.sessionId, i = null, k()
                 },
@@ -55159,11 +55159,11 @@
                         appContext: i,
                         pid: r,
                         sourceId: a
-                    } = e, o = (0, c.encodeStreamKey)({
+                    } = e, o = (0, g.encodeStreamKey)({
                         streamType: t,
                         guildId: n,
                         channelId: s,
-                        ownerId: E.default.getId()
+                        ownerId: p.default.getId()
                     });
                     if (D[o] = i, d.forEach(V, e => {
                             let {
@@ -55171,7 +55171,7 @@
                             } = e;
                             t.setActionContext(i)
                         }), P[o] = a, O[o] = r, null != r) {
-                        let e = S.default.getGameForPID(r);
+                        let e = _.default.getGameForPID(r);
                         null != e && (N[o] = {
                             name: e.name,
                             id: e.id,
@@ -55201,19 +55201,19 @@
                     i = t;
                     let d = V[t];
                     if (null == d && null != n) {
-                        var u, f, m;
+                        var u, f, _;
                         null == O[t] && (N[t] = null);
-                        let e = (0, c.decodeStreamKey)(t);
-                        null == N[t] && null == P[t] && (N[t] = (0, g.getStreamerApplication)(e, T.default));
-                        let i = p.default.getChannel(e.channelId),
+                        let e = (0, g.decodeStreamKey)(t);
+                        null == N[t] && null == P[t] && (N[t] = (0, m.getStreamerApplication)(e, C.default));
+                        let i = y.default.getChannel(e.channelId),
                             l = null != i && i.isBroadcastChannel(),
-                            v = new _.StreamRTCAnalyticsContext({
+                            h = new c.StreamRTCAnalyticsContext({
                                 streamRegion: r,
                                 streamApplication: N[t],
                                 streamSourceType: function(e) {
                                     var t, n, s;
                                     if (null == e) return "unknown";
-                                    if (h.isPlatformEmbedded || (null === (t = platform) || void 0 === t ? void 0 : t.name) === "Chrome") {
+                                    if (v.isPlatformEmbedded || (null === (t = platform) || void 0 === t ? void 0 : t.name) === "Chrome") {
                                         if (e.startsWith("web-contents-media-stream:")) return "tab";
                                         if (e.startsWith("window:")) return "window";
                                         else if (e.startsWith("screen:")) return "screen"
@@ -55225,17 +55225,17 @@
                                 numViewers: null != o ? o.length : 0,
                                 isBroadcast: l
                             });
-                        u = t, f = n, m = v, a(null != s, "Creating RTCConnection without session."), d = new _.default({
+                        u = t, f = n, _ = h, a(null != s, "Creating RTCConnection without session."), d = new c.default({
                             sessionId: s,
                             streamKey: u,
                             serverId: f,
                             initialLayout: b,
-                            analyticsContext: m,
+                            analyticsContext: _,
                             isStreamer: null != N[u],
-                            parentMediaSessionId: C.default.getMediaSessionId()
+                            parentMediaSessionId: S.default.getMediaSessionId()
                         }), V[t] = d
                     }
-                    R = [], y.default.getMediaEngine().on(l.MediaEngineEvent.ConnectionStats, M)
+                    R = [], T.default.getMediaEngine().on(l.MediaEngineEvent.ConnectionStats, M)
                 },
                 STREAM_SERVER_UPDATE: function(e) {
                     let t = V[e.streamKey];
@@ -55256,7 +55256,7 @@
                         streamKey: t
                     } = e, n = V[t];
                     if (null == n) return !1;
-                    t === i && (i = null, y.default.getMediaEngine().off(l.MediaEngineEvent.ConnectionStats, M)), n.destroy("stream-end"), delete V[t]
+                    t === i && (i = null, T.default.getMediaEngine().off(l.MediaEngineEvent.ConnectionStats, M)), n.destroy("stream-end"), delete V[t]
                 },
                 STREAM_STATS_UPDATE: function(e) {
                     let {
@@ -55886,14 +55886,14 @@
             });
             var i = n("446674"),
                 r = n("913144"),
-                a = n("546463"),
-                o = n("568307");
+                a = n("161454"),
+                o = n("546463");
             class d extends i.default.Store {
                 getGameForPID(e) {
                     var t;
                     if (__OVERLAY__ || null == e) return null;
-                    let n = null === (t = o.default.getGameForPID(e)) || void 0 === t ? void 0 : t.name;
-                    return a.default.getGameByName(n)
+                    let n = null === (t = a.default.getGameForPID(e)) || void 0 === t ? void 0 : t.name;
+                    return o.default.getGameByName(n)
                 }
                 getGame() {
                     return __OVERLAY__ ? s : null
@@ -61898,4 +61898,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98239.e933435eeb08030fb74c.js.map
+//# sourceMappingURL=98239.0c1d3ce23a0739b34692.js.map

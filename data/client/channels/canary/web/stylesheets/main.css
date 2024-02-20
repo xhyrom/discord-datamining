@@ -57304,6 +57304,44 @@ html .progress__4ef76 {
     margin: 16px 0
 }
 
+.body__79fb5 {
+    color: var(--text-normal);
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 16px;
+    background-color: var(--modal-background)
+}
+
+.confirmDiscountContent__042f6 {
+    padding-top: 30px
+}
+
+.confirmDiscountDescription__304a0 {
+    display: flex;
+    align-items: center;
+    padding-top: 28px
+}
+
+.confirmDiscountIcon__8b239 {
+    padding-right: 20px
+}
+
+.confirmDiscountLegalese_ce1641 {
+    padding-top: 28px
+}
+
+.confirmDiscountLegaleseText__96b06 {
+    color: var(--interactive-normal)
+}
+
+.confirmDiscountButtons__47280 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 8px
+}
+
 .noticeRoot_c88e50 {
     align-items: center;
     background-color: var(--background-secondary);
@@ -60865,7 +60903,6 @@ html .progress__4ef76 {
     align-items: flex-start;
     width: 100%;
     padding: 24px;
-    overflow: hidden;
     background-color: var(--background-secondary-alt);
     border-radius: 20px;
     background-size: cover;
@@ -60906,6 +60943,10 @@ html .progress__4ef76 {
 
 .reducedMotion__90450 .card_e97590 {
     transition: none
+}
+
+.hideOverflow__1aaae {
+    overflow: hidden
 }
 
 .clickable__32f63 {
@@ -118712,6 +118753,12 @@ div.nagbar_c731ff {
     height: 200px
 }
 
+.textContainer_e78d72 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4)
+}
+
 .mute__7525d {
     display: flex;
     align-items: center;
@@ -127597,4 +127644,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d5e7ae133493cc571acf.css.map*/
+/*# sourceMappingURL=app.e63b0b66519c5ebf69ce.css.map*/
