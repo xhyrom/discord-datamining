@@ -8822,180 +8822,52 @@
             "use strict";
             n.r(t), n.d(t, {
                 PinToBottomScrollerAuto: function() {
-                    return u
+                    return i.PinToBottomScrollerAuto
                 }
             });
-            var i, r = n("405665"),
-                s = n("414456"),
-                a = n.n(s),
-                o = n("211009"),
-                l = n("38879");
-            let u = (0, o.createManagedReactiveScroller)(a(l.auto, l.disableScrollAnchor), null !== (i = window.ResizeObserver) && void 0 !== i ? i : r.ResizeObserver)
+            var i = n("985110")
         },
         670914: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                ScrollerThin: function() {
-                    return s
-                },
                 ScrollerAuto: function() {
-                    return a
+                    return i.ScrollerAuto
                 },
                 ScrollerNone: function() {
-                    return o
+                    return i.ScrollerNone
+                },
+                ScrollerThin: function() {
+                    return i.ScrollerThin
                 }
             });
-            var i = n("256023"),
-                r = n("38879");
-            let s = (0, i.createScroller)(r.thin, r.fade),
-                a = (0, i.createScroller)(r.auto, r.fade),
-                o = (0, i.createScroller)(r.none, r.fade)
+            var i = n("229913")
+        },
+        858850: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                createAdvancedScroller: function() {
+                    return i.createAdvancedScroller
+                }
+            });
+            var i = n("93186")
         },
         211009: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 createManagedReactiveScroller: function() {
-                    return c
+                    return i.createManagedReactiveScroller
                 }
-            }), n("222007");
-            var i = n("37983"),
-                r = n("884691"),
-                s = n("414456"),
-                a = n.n(s),
-                o = n("718776"),
-                l = n("462977"),
-                u = n("38879");
-
-            function c(e, t) {
-                let n = new Map,
-                    s = new t(e => {
-                        e.forEach(e => {
-                            var t;
-                            let {
-                                target: i
-                            } = e;
-                            null === (t = n.get(i)) || void 0 === t || t(e)
-                        })
-                    });
-                return r.forwardRef(function(t, c) {
-                    let {
-                        children: d,
-                        className: f,
-                        onResize: E,
-                        contentClassName: p,
-                        onScroll: h,
-                        dir: _ = "ltr",
-                        fade: S = !1,
-                        customTheme: m = !1,
-                        style: T,
-                        ...g
-                    } = t, I = r.useRef(null), C = r.useRef(null), [v, A] = r.useState(!1), {
-                        scrollerRef: R,
-                        getScrollerState: N
-                    } = (0, l.useUncachedScrollerState)(), O = (0, l.useScrollSpring)(R);
-                    r.useImperativeHandle(c, () => ({
-                        getScrollerNode: () => R.current,
-                        isScrolling: () => null != I.current,
-                        getScrollerState: N,
-                        ...(0, l.getAnimatedScrollHelpers)(R, N, O)
-                    }), [R, N, O]);
-                    let D = r.useCallback(e => {
-                        null == I.current ? A(!0) : clearTimeout(I.current), I.current = setTimeout(() => {
-                            I.current = null, A(!1)
-                        }, 200), null != h && h(e)
-                    }, [h]);
-                    return r.useEffect(() => () => clearTimeout(I.current), []), (0, l.useResizeObserverSubscription)({
-                        ref: R,
-                        key: "container",
-                        onUpdate: E,
-                        resizeObserver: s,
-                        listenerMap: n
-                    }), (0, l.useResizeObserverSubscription)({
-                        ref: C,
-                        key: "content",
-                        onUpdate: E,
-                        resizeObserver: s,
-                        listenerMap: n
-                    }), (0, i.jsx)("div", {
-                        ref: R,
-                        className: a(f, {
-                            [u.fade]: S,
-                            [u.customTheme]: m,
-                            [e]: !0,
-                            [u.managedReactiveScroller]: !0,
-                            [u.scrolling]: v && S
-                        }),
-                        style: T,
-                        dir: _,
-                        onScroll: D,
-                        ...g,
-                        children: (0, i.jsx)(o.FocusRingScope, {
-                            containerRef: C,
-                            children: (0, i.jsxs)("div", {
-                                ref: C,
-                                className: a(p, u.content),
-                                children: [d, v && (0, i.jsx)("div", {
-                                    className: u.pointerCover
-                                })]
-                            })
-                        })
-                    })
-                })
-            }
+            });
+            var i = n("333102")
         },
         256023: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 createScroller: function() {
-                    return u
+                    return i.createScroller
                 }
-            }), n("70102");
-            var i = n("37983"),
-                r = n("884691"),
-                s = n("414456"),
-                a = n.n(s),
-                o = n("718776"),
-                l = n("462977");
-
-            function u(e, t) {
-                let n = (0, l.getScrollbarSpecs)(e);
-                return r.forwardRef(function(s, u) {
-                    let {
-                        children: c,
-                        className: d,
-                        dir: f = "ltr",
-                        orientation: E = "vertical",
-                        paddingFix: p = !0,
-                        fade: h = !1,
-                        onScroll: _,
-                        style: S,
-                        ...m
-                    } = s, T = r.useRef(null), g = (0, l.usePaddingFixes)({
-                        paddingFix: p,
-                        orientation: E,
-                        dir: f,
-                        className: d,
-                        scrollerRef: T,
-                        specs: n
-                    });
-                    return (0, i.jsx)("div", {
-                        ref: e => {
-                            "function" == typeof u ? u(e) : null != u && (u.current = e), T.current = e
-                        },
-                        className: a(d, {
-                            [e]: !0,
-                            [t]: h
-                        }),
-                        style: (0, l.getMergedOrientationStyles)(S, E),
-                        dir: f,
-                        ...m,
-                        children: (0, i.jsxs)(o.FocusRingScope, {
-                            containerRef: T,
-                            children: [c, g]
-                        })
-                    })
-                })
-            }
+            });
+            var i = n("744065")
         },
         506395: function(e, t, n) {
             "use strict";
@@ -24458,7 +24330,7 @@
                 ExpressionPickerWidths: function() {
                     return r
                 }
-            }), (s = i || (i = {})).EMOJI = "emoji", s.GIF = "gif", s.STICKER = "sticker", s.SOUNDBOARD = "soundboard", s.CUSTOM_UPLOAD = "custom-upload";
+            }), (s = i || (i = {})).EMOJI = "emoji", s.GIF = "gif", s.STICKER = "sticker", s.SOUNDBOARD = "soundboard";
             let o = "expression-picker-chat-input-button",
                 l = 498;
             (a = r || (r = {})).MIN = "min", a.MAX = "max"
@@ -50041,7 +49913,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267442"
+                                build_number: "267451"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -55241,6 +55113,185 @@
         916842: function(e, t, n) {
             "use strict";
             n.r(t), n("37983"), n("884691")
+        },
+        985110: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                PinToBottomScrollerAuto: function() {
+                    return u
+                }
+            });
+            var i, r = n("405665"),
+                s = n("414456"),
+                a = n.n(s),
+                o = n("333102"),
+                l = n("766361");
+            let u = (0, o.createManagedReactiveScroller)(a(l.auto, l.disableScrollAnchor), null !== (i = window.ResizeObserver) && void 0 !== i ? i : r.ResizeObserver)
+        },
+        229913: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ScrollerThin: function() {
+                    return s
+                },
+                ScrollerAuto: function() {
+                    return a
+                },
+                ScrollerNone: function() {
+                    return o
+                }
+            });
+            var i = n("744065"),
+                r = n("766361");
+            let s = (0, i.createScroller)(r.thin, r.fade),
+                a = (0, i.createScroller)(r.auto, r.fade),
+                o = (0, i.createScroller)(r.none, r.fade)
+        },
+        333102: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                createManagedReactiveScroller: function() {
+                    return c
+                }
+            }), n("222007");
+            var i = n("37983"),
+                r = n("884691"),
+                s = n("414456"),
+                a = n.n(s),
+                o = n("718776"),
+                l = n("942005"),
+                u = n("766361");
+
+            function c(e, t) {
+                let n = new Map,
+                    s = new t(e => {
+                        e.forEach(e => {
+                            var t;
+                            let {
+                                target: i
+                            } = e;
+                            null === (t = n.get(i)) || void 0 === t || t(e)
+                        })
+                    });
+                return r.forwardRef(function(t, c) {
+                    let {
+                        children: d,
+                        className: f,
+                        onResize: E,
+                        contentClassName: p,
+                        onScroll: h,
+                        dir: _ = "ltr",
+                        fade: S = !1,
+                        customTheme: m = !1,
+                        style: T,
+                        ...g
+                    } = t, I = r.useRef(null), C = r.useRef(null), [v, A] = r.useState(!1), {
+                        scrollerRef: R,
+                        getScrollerState: N
+                    } = (0, l.useUncachedScrollerState)(), O = (0, l.useScrollSpring)(R);
+                    r.useImperativeHandle(c, () => ({
+                        getScrollerNode: () => R.current,
+                        isScrolling: () => null != I.current,
+                        getScrollerState: N,
+                        ...(0, l.getAnimatedScrollHelpers)(R, N, O)
+                    }), [R, N, O]);
+                    let D = r.useCallback(e => {
+                        null == I.current ? A(!0) : clearTimeout(I.current), I.current = setTimeout(() => {
+                            I.current = null, A(!1)
+                        }, 200), null != h && h(e)
+                    }, [h]);
+                    return r.useEffect(() => () => clearTimeout(I.current), []), (0, l.useResizeObserverSubscription)({
+                        ref: R,
+                        key: "container",
+                        onUpdate: E,
+                        resizeObserver: s,
+                        listenerMap: n
+                    }), (0, l.useResizeObserverSubscription)({
+                        ref: C,
+                        key: "content",
+                        onUpdate: E,
+                        resizeObserver: s,
+                        listenerMap: n
+                    }), (0, i.jsx)("div", {
+                        ref: R,
+                        className: a(f, {
+                            [u.fade]: S,
+                            [u.customTheme]: m,
+                            [e]: !0,
+                            [u.managedReactiveScroller]: !0,
+                            [u.scrolling]: v && S
+                        }),
+                        style: T,
+                        dir: _,
+                        onScroll: D,
+                        ...g,
+                        children: (0, i.jsx)(o.FocusRingScope, {
+                            containerRef: C,
+                            children: (0, i.jsxs)("div", {
+                                ref: C,
+                                className: a(p, u.content),
+                                children: [d, v && (0, i.jsx)("div", {
+                                    className: u.pointerCover
+                                })]
+                            })
+                        })
+                    })
+                })
+            }
+        },
+        744065: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                createScroller: function() {
+                    return u
+                }
+            }), n("70102");
+            var i = n("37983"),
+                r = n("884691"),
+                s = n("414456"),
+                a = n.n(s),
+                o = n("15542"),
+                l = n("942005");
+
+            function u(e, t) {
+                let n = (0, l.getScrollbarSpecs)(e);
+                return r.forwardRef(function(s, u) {
+                    let {
+                        children: c,
+                        className: d,
+                        dir: f = "ltr",
+                        orientation: E = "vertical",
+                        paddingFix: p = !0,
+                        fade: h = !1,
+                        onScroll: _,
+                        style: S,
+                        ...m
+                    } = s, T = r.useRef(null), g = (0, l.usePaddingFixes)({
+                        paddingFix: p,
+                        orientation: E,
+                        dir: f,
+                        className: d,
+                        scrollerRef: T,
+                        specs: n
+                    });
+                    return (0, i.jsx)("div", {
+                        ref: e => {
+                            "function" == typeof u ? u(e) : null != u && (u.current = e), T.current = e
+                        },
+                        className: a(d, {
+                            [e]: !0,
+                            [t]: h
+                        }),
+                        style: (0, l.getMergedOrientationStyles)(S, E),
+                        dir: f,
+                        ...m,
+                        children: (0, i.jsxs)(o.FocusRingScope, {
+                            containerRef: T,
+                            children: [c, g]
+                        })
+                    })
+                })
+            }
         },
         502026: function(e, t, n) {
             "use strict";
@@ -63964,4 +64015,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.c8bfe4ad17d926531a51.js.map
+//# sourceMappingURL=41039.35e2a105fcfca2130e9e.js.map
