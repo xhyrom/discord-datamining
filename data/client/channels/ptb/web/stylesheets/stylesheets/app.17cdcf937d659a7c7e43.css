@@ -13329,55 +13329,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     z-index: 100
 }
 
-.clickContainer__3050a {
-    padding: 20px
-}
-
-.clickable__84aa1 {
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    border: 2px dashed var(--header-secondary);
-    border-radius: 8px
-}
-
-.clickableActive_b9faa6 {
-    border-color: var(--brand-500)
-}
-
-.tag_d12d27 {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    padding: 3px 6px;
-    background-color: var(--background-tertiary);
-    border-radius: 4px;
-    color: var(--text-normal)
-}
-
-.tagActive_f1a7b8 {
-    color: var(--brand-500)
-}
-
-.uploadContainer__50c3a {
-    display: flex;
-    flex-direction: column;
-    align-items: center
-}
-
-.description__5cc07 {
-    text-align: center
-}
-
-.fileInput__00b6c {
-    display: none
-}
-
-.addFileButtonIcon__5ebf4 {
-    background-image: url(/assets/5f5e1a58ecf11d0d8d15.svg)
-}
-
 .wrapper_a5cbb9 {
     display: grid;
     grid-template-rows: 1fr auto;
@@ -127646,4 +127597,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c7660299a661d53898b0.css.map*/
+/*# sourceMappingURL=app.17cdcf937d659a7c7e43.css.map*/

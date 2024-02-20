@@ -1440,7 +1440,7 @@
                 "./1f469-200d-1f9bd.svg": "380015",
                 "./1f469-200d-2695-fe0f.svg": "540758",
                 "./1f469-200d-2696-fe0f.svg": "416366",
-                "./1f469-200d-2708-fe0f.svg": "93186",
+                "./1f469-200d-2708-fe0f.svg": "752397",
                 "./1f469-200d-2764-fe0f-200d-1f468.svg": "428211",
                 "./1f469-200d-2764-fe0f-200d-1f469.svg": "142331",
                 "./1f469-200d-2764-fe0f-200d-1f48b-200d-1f468.svg": "647260",
@@ -31428,17 +31428,11 @@
                 GIF_PICKER_TAB_ID: function() {
                     return y
                 },
-                CUSTOM_UPLOAD_PICKER_TAB_PANEL_ID: function() {
+                EMOJI_SIZE_MAP: function() {
                     return T
                 },
-                CUSTOM_UPLOAD_PICKER_TAB_ID: function() {
-                    return C
-                },
-                EMOJI_SIZE_MAP: function() {
-                    return S
-                },
                 EMOJI_ROW_SIZE: function() {
-                    return I
+                    return C
                 }
             }), (d = s || (s = {})).GUILD = "GUILD", d.UNICODE = "UNICODE", d.RECENT = "RECENT", d.CUSTOM = "CUSTOM", d.SEARCH_RESULTS = "SEARCH_RESULTS", d.FAVORITES = "FAVORITES", d.TOP_GUILD_EMOJI = "TOP_GUILD_EMOJI", d.PREMIUM_UPSELL = "PREMIUM_UPSELL";
             let c = "emoji-picker-grid";
@@ -31451,14 +31445,12 @@
                 E = "soundboard-picker-tab",
                 p = "gif-picker-tab-panel",
                 y = "gif-picker-tab",
-                T = "custom-upload-picker-tab-panel",
-                C = "custom-upload-picker-tab",
-                S = {
+                T = {
                     reaction: 32,
                     default: 44,
                     jumbo: 96
                 },
-                I = 9
+                C = 9
         },
         39616: function(e, t, n) {
             "use strict";
@@ -61906,4 +61898,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.97bb2c42e637a8931188.js.map
+//# sourceMappingURL=67615.428b613d87fbbe5edad6.js.map
