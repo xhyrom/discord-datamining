@@ -20587,8 +20587,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708452485216",
-                                    build_number: "267462"
+                                    built_at: "1708453508568",
+                                    build_number: "267474"
                                 }
                             },
                             retries: 1
@@ -39633,4 +39633,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58676.4fca11d36cfb2c60e4df.js.map
+//# sourceMappingURL=58676.75cf0dc2ea007289c514.js.map
