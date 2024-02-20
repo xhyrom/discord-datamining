@@ -39,14 +39,14 @@
                         }), (0, o.trackGuildNotificationSettingsUpdate)(e, t, l, n, a)
                     },
                     updateGuildAndChannelNotificationSettings(e, t, n, a) {
-                        let l = Object.keys(t.channel_overrides),
+                        let l = u.default.keys(t.channel_overrides),
                             s = (0, o.getCurrentGuildSettings)(e),
                             r = (0, o.getManyCurrentChannelSettings)(e, l);
                         d.default.saveUserGuildSettings(e, t), i.default.dispatch({
                             type: "USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE",
                             guildId: e,
                             settings: t
-                        }), (0, o.trackGuildNotificationSettingsUpdate)(e, t, s, n, a), Object.keys(t.channel_overrides).forEach(l => {
+                        }), (0, o.trackGuildNotificationSettingsUpdate)(e, t, s, n, a), u.default.keys(t.channel_overrides).forEach(l => {
                             let i = r.get(l);
                             (0, o.trackChannelNotificationSettingsUpdate)(e, l, t.channel_overrides[l], i, n, a)
                         })
@@ -77,7 +77,7 @@
                         }), l.AccessibilityAnnouncer.announce(c.default.Messages.A11Y_ANNOUNCEMENT_CHANNEL_SETTINGS_UPDATED), (0, o.trackChannelNotificationSettingsUpdate)(e, t, n, r, a, s)
                     },
                     updateChannelOverrideSettingsBulk(e, t, n, a) {
-                        let l = Object.keys(t),
+                        let l = u.default.keys(t),
                             s = (0, o.getManyCurrentChannelSettings)(e, l);
                         d.default.saveUserGuildSettings(e, {
                             channel_overrides: t
@@ -85,7 +85,7 @@
                             type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK",
                             guildId: e,
                             overrides: t
-                        }), Object.keys(t).forEach(l => (0, o.trackChannelNotificationSettingsUpdate)(e, l, t[l], s.get(l), n, a))
+                        }), u.default.keys(t).forEach(l => (0, o.trackChannelNotificationSettingsUpdate)(e, l, t[l], s.get(l), n, a))
                     },
                     setForumThreadsCreated(e, t) {
                         let n = t ? g.ChannelNotificationSettingsFlags.NEW_FORUM_THREADS_ON : g.ChannelNotificationSettingsFlags.NEW_FORUM_THREADS_OFF,
@@ -169,8 +169,8 @@
                 N = n("599110"),
                 S = n("568734"),
                 h = n("449008"),
-                O = n("286235"),
-                C = n("863636"),
+                C = n("286235"),
+                O = n("863636"),
                 I = n("380710"),
                 A = n("843323"),
                 G = n("49111"),
@@ -180,8 +180,8 @@
             function L(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 if (g.default.isFullServerPreview(e)) return;
-                let n = t ? C.default.getOnboardingPromptsForOnboarding(e) : C.default.getOnboardingPrompts(e),
-                    a = C.default.getOnboardingResponses(e),
+                let n = t ? O.default.getOnboardingPromptsForOnboarding(e) : O.default.getOnboardingPrompts(e),
+                    a = O.default.getOnboardingResponses(e),
                     l = n.map(e => e.options.filter(e => a.includes(e.id))).flat(),
                     i = {},
                     r = {};
@@ -202,7 +202,7 @@
                         prompts_seen: t.body.onboarding_prompts_seen,
                         options_seen: t.body.onboarding_responses_seen
                     })
-                }).catch(e => O.default.captureException(e)) : d.default.put({
+                }).catch(e => C.default.captureException(e)) : d.default.put({
                     url: G.Endpoints.GUILD_ONBOARDING_RESPONSES(e),
                     body: {
                         onboarding_responses: l.map(e => e.id),
@@ -217,11 +217,11 @@
                         prompts_seen: t.body.onboarding_prompts_seen,
                         options_seen: t.body.onboarding_responses_seen
                     })
-                }).catch(e => O.default.captureException(e))
+                }).catch(e => C.default.captureException(e))
             }
             var U = {
                 selectOption(e, t, n, a) {
-                    let i = C.default.getOnboardingPrompt(t);
+                    let i = O.default.getOnboardingPrompt(t);
                     if (null == i) return;
                     let d = i.singleSelect ? l.without(l.map(i.options, "id"), n) : [];
                     s.default.dispatch({
@@ -250,14 +250,14 @@
                 },
                 completeOnboarding(e, t) {
                     let n = t.length > 0 ? t[t.length - 1] : null,
-                        a = C.default.getSelectedOptions(e),
+                        a = O.default.getSelectedOptions(e),
                         l = (0, I.getSelectedRoleIds)(a),
                         d = (0, I.getSelectedChannelIds)(a),
-                        s = C.default.getEnabled(e) ? C.default.getDefaultChannelIds(e) : [],
+                        s = O.default.getEnabled(e) ? O.default.getDefaultChannelIds(e) : [],
                         [u, c] = (0, I.getChannelCoverageForOnboarding)(e, t, s),
-                        O = [...d, ...s],
-                        U = O.map(e => _.default.getChannel(e)).filter(h.isNotNullish),
-                        v = (0, A.getFlattenedChannels)(e, new Set(O), U, !0).length,
+                        C = [...d, ...s],
+                        U = C.map(e => _.default.getChannel(e)).filter(h.isNotNullish),
+                        v = (0, A.getFlattenedChannels)(e, new Set(C), U, !0).length,
                         b = null == n ? [] : n.options.map(e => e.id);
                     if (N.default.track(G.AnalyticEvents.GUILD_ONBOARDING_STEP_COMPLETED, {
                             ...(0, o.collectGuildAnalyticsMetadata)(e),
@@ -272,7 +272,7 @@
                             guild_onboarding_covered_channel_ids: u.map(e => e.id),
                             guild_onboarding_uncovered_channel_ids: c.map(e => e.id)
                         }), (0, r.ackGuildFeature)(e, D.ReadStateTypes.GUILD_ONBOARDING_QUESTION, i.default.fromTimestamp(Date.now())), L(e, !0), g.default.isFullServerPreview(e)) {
-                        (0, f.updateImpersonatedChannels)(e, O, []), (0, f.updateImpersonatedData)(e, {
+                        (0, f.updateImpersonatedChannels)(e, C, []), (0, f.updateImpersonatedData)(e, {
                             optInEnabled: !0
                         }), (0, f.updateImpersonatedRoles)(e, Array.from(l));
                         let t = E.default.getCurrentUser();
@@ -289,7 +289,7 @@
                 },
                 onboardExistingMember(e, t) {
                     let n = new Set(t),
-                        a = C.default.getEnabled(e) ? C.default.getDefaultChannelIds(e) : [];
+                        a = O.default.getEnabled(e) ? O.default.getDefaultChannelIds(e) : [];
                     a.forEach(e => n.add(e)), n.size > 0 && (0, c.bulkOptInChannels)(e, Array.from(n), !0, {
                         page: G.AnalyticsPages.GUILD_ONBOARDING
                     })
@@ -450,7 +450,7 @@
                     return h
                 },
                 updateOptInChannelsImmediate: function() {
-                    return O
+                    return C
                 },
                 updateOptInChannelsBatched: function() {
                     return I
@@ -516,7 +516,7 @@
                 })
             }
 
-            function O(e, t, n, a) {
+            function C(e, t, n, a) {
                 if (null == e) return;
                 if (o.default.isFullServerPreview(e)) {
                     (0, r.updateImpersonatedChannels)(e, n ? [t] : [], n ? [] : [t]), (0, r.updateImpersonatedData)(e, {
@@ -553,7 +553,7 @@
                     location: a
                 })
             }
-            async function C(e, t) {
+            async function O(e, t) {
                 if (!(null == e || o.default.isFullServerPreview(e))) await u.default.saveUserGuildSettingsBulk({
                     [e]: {
                         channel_overrides: t
@@ -564,7 +564,7 @@
                     updates: t
                 })
             }
-            let I = (0, a.debounce)((e, t) => C(e, t), 1e3);
+            let I = (0, a.debounce)((e, t) => O(e, t), 1e3);
 
             function A(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
@@ -828,4 +828,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6086.a4df9b5e4bbf985d13d5.js.map
+//# sourceMappingURL=6086.c01efd224fa0765b11f9.js.map
