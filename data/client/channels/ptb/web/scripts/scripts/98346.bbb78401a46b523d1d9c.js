@@ -606,12 +606,12 @@
             });
             var a = n("872717"),
                 r = n("913144"),
-                s = n("374014"),
-                i = n("766274"),
-                l = n("271938"),
-                u = n("42203"),
-                o = n("546463"),
-                d = n("568307"),
+                s = n("161454"),
+                i = n("374014"),
+                l = n("766274"),
+                u = n("271938"),
+                o = n("42203"),
+                d = n("546463"),
                 c = n("9759"),
                 f = n("194051"),
                 h = n("49111");
@@ -632,29 +632,29 @@
                     autoTrackExposure: !1
                 });
                 if (!n) return;
-                let a = (0, s.decodeStreamKey)(e),
+                let a = (0, i.decodeStreamKey)(e),
                     {
-                        ownerId: i,
+                        ownerId: l,
                         channelId: f
                     } = a;
-                if (null == i || null == f) return;
-                let h = l.default.getId();
-                if (i !== h) return;
-                let E = l.default.getSessionId();
+                if (null == l || null == f) return;
+                let h = u.default.getId();
+                if (l !== h) return;
+                let E = u.default.getSessionId();
                 if (null == E) return;
-                let C = u.default.getChannel(f),
+                let C = o.default.getChannel(f),
                     m = null != C && C.isBroadcastChannel();
-                if (null == C || i !== C.ownerId || !m) return;
+                if (null == C || l !== C.ownerId || !m) return;
                 let S = function(e) {
                     var t;
-                    let n = d.default.getGameForPID(e),
+                    let n = s.default.getGameForPID(e),
                         a = p(n),
-                        r = o.default.getGameByName(a);
+                        r = d.default.getGameByName(a);
                     return null !== (t = null == r ? void 0 : r.id) && void 0 !== t ? t : "0"
                 }(t);
                 null != S && ! function(e) {
-                    let t = l.default.getId(),
-                        n = l.default.getSessionId();
+                    let t = u.default.getId(),
+                        n = u.default.getSessionId();
                     null != t && null != n && r.default.dispatch({
                         type: "BROADCAST_START",
                         broadcast: e
@@ -723,7 +723,7 @@
                             var t;
                             let a = f.default.getBroadcastByChannel(e.id).userId,
                                 r = null !== (t = e.recipients) && void 0 !== t ? t : [];
-                            n[a] = r.map(e => new i.default(e)).filter(e => e.id !== a)
+                            n[a] = r.map(e => new l.default(e)).filter(e => e.id !== a)
                         }), r.default.dispatch({
                             type: "BROADCAST_VIEWERS_UPDATE",
                             viewers: n
@@ -1985,7 +1985,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-14bda2c4d3ef610e8d0a0c57b58cdcbe9c40ea21",
+                    release: "discord_web-2a0fb3ec532d56caab983cd38ec11fe16cf4702f",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2003,7 +2003,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "267525", "267525")), a.setTag("builtAt", String("1708459255348"));
+                }), a.setTag("buildNumber", (e = "267528", "267528")), a.setTag("builtAt", String("1708460041172"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -4676,4 +4676,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98346.7e10629276834f655e95.js.map
+//# sourceMappingURL=98346.bbb78401a46b523d1d9c.js.map
