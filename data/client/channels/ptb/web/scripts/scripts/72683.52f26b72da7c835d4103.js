@@ -502,12 +502,10 @@
                 return null != e || t || null != n || i
             }
             let E = () => {
-                    var e, t;
-                    let n = (0, a.useStateFromStores)([o.default], () => o.default.getPremiumTypeSubscription()),
-                        i = null == n ? void 0 : null === (e = n.metadata) || void 0 === e ? void 0 : e.nitro_likelihood_discount_expires_at,
-                        r = null == n ? void 0 : null === (t = n.metadata) || void 0 === t ? void 0 : t.nitro_reactivation_discount_expires_at,
-                        s = null != i ? i : r;
-                    return null != s && l(Date.now()) <= l(s)
+                    var e;
+                    let t = (0, a.useStateFromStores)([o.default], () => o.default.getPremiumTypeSubscription()),
+                        n = null == t ? void 0 : null === (e = t.metadata) || void 0 === e ? void 0 : e.active_discount_expires_at;
+                    return null != n && l(Date.now()) <= l(n)
                 },
                 T = async () => {
                     let e = null;
@@ -4459,4 +4457,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72683.5c419b895fa6f7a68295.js.map
+//# sourceMappingURL=72683.52f26b72da7c835d4103.js.map
