@@ -619,8 +619,8 @@
             var s = l("446674"),
                 o = l("913144"),
                 u = l("959254"),
-                c = l("686470"),
-                r = l("568307"),
+                c = l("161454"),
+                r = l("686470"),
                 d = l("964889"),
                 p = l("773336"),
                 f = l("149190"),
@@ -686,10 +686,10 @@
                     }, a.delete(i)
                 },
                 RUNNING_GAMES_CHANGE: function() {
-                    let t = r.default.getRunningDiscordApplicationIds(),
+                    let t = c.default.getRunningDiscordApplicationIds(),
                         e = i.filter(e => !t.includes(e));
                     for (let t of e) {
-                        let e = c.default.getActiveLibraryApplication(t);
+                        let e = r.default.getActiveLibraryApplication(t);
                         null != e && o.default.wait(() => {
                             try {
                                 u.sync(e.id, e.branchId)
@@ -881,4 +881,4 @@
         }
     }
 ]);
-//# sourceMappingURL=37102.87a5f4e0b566bb74ce9c.js.map
+//# sourceMappingURL=37102.9ac9229dc4b8176c7dc8.js.map
