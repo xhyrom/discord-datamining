@@ -118750,7 +118750,7 @@ div.nagbar_c731ff {
 
 .wumpus__3d214 {
     margin: -95px auto 0;
-    height: 200px
+    height: 187px
 }
 
 .textContainer_e78d72 {
@@ -118777,6 +118777,14 @@ div.nagbar_c731ff {
     top: var(--spacing-16);
     right: var(--spacing-16);
     cursor: pointer
+}
+
+.ringContainer_c6f3ce {
+    position: absolute;
+    top: -210px;
+    overflow: hidden;
+    width: 440px;
+    height: 210px
 }
 
 .buttonContainer__80fd5 {
@@ -127644,4 +127652,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e63b0b66519c5ebf69ce.css.map*/
+/*# sourceMappingURL=app.bcbb0a7d5b732d757226.css.map*/

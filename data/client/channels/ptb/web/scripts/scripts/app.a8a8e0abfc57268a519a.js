@@ -22101,6 +22101,7 @@
                 buttonContainer: "buttonContainer__29174",
                 closeButton: "closeButton__76760",
                 mute: "mute__7525d",
+                ringContainer: "ringContainer_c6f3ce",
                 textContainer: "textContainer_e78d72",
                 wumpus: "wumpus__3d214"
             }
