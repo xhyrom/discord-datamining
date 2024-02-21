@@ -46,35 +46,35 @@
 <p>As long as you're an <strong>Xbox Game Pass Ultimate</strong> member, you'll be able to receive the Nitro code directly through <a href="#h_01EGMFZNDM1XBM54A5M1BZFMVC" target="_self">your Xbox</a>, the Xbox <a href="#h_01EGMFZV9RY63DHDGG2J308B0F" target="_self">Windows app</a>, or the Xbox <a href="#h_01EGMG01JQPRXP8PA926C12C7A" target="_self">Mobile App</a>!</p>
 <h2 id="h_01EGMFZNDM1XBM54A5M1BZFMVC"><strong>Xbox</strong></h2>
 <ol>
-    <li>Navigate to your <strong>Game Pass menu</strong><br><img src="https://support.discord.com/hc/article_attachments/360086412454/1.png" alt="1.png"><br><br>
+    <li>Navigate to your <strong>Game Pass menu</strong><br><img src="https://support.discord.com/hc/article_attachments/360086412454" alt="1.png"><br><br>
     </li>
-    <li>Once you are in the Game Pass Menu, go to the <strong>Perks tab</strong><br><img src="https://support.discord.com/hc/article_attachments/360086412474/2.png" alt="2.png"><br><br>
+    <li>Once you are in the Game Pass Menu, go to the <strong>Perks tab</strong><br><img src="https://support.discord.com/hc/article_attachments/360086412474" alt="2.png"><br><br>
     </li>
-    <li>In the <strong>Perks tab</strong> you will see the Discord Nitro Promotion<br><img src="https://support.discord.com/hc/article_attachments/360087592813/3.png" alt="3.png"><br><br>
+    <li>In the <strong>Perks tab</strong> you will see the Discord Nitro Promotion<br><img src="https://support.discord.com/hc/article_attachments/360087592813" alt="3.png"><br><br>
     </li>
-    <li>Once you open the promotion, you will be able to claim it<br><img src="https://support.discord.com/hc/article_attachments/360086412494/4.png" alt="4.png"><br><br>
+    <li>Once you open the promotion, you will be able to claim it<br><img src="https://support.discord.com/hc/article_attachments/360086412494" alt="4.png"><br><br>
     </li>
-    <li>When you hit claim a QR code will be generated for you to scan.<br><img src="https://support.discord.com/hc/article_attachments/360086412514/5.png" alt="5.png">
+    <li>When you hit claim a QR code will be generated for you to scan.<br><img src="https://support.discord.com/hc/article_attachments/360086412514" alt="5.png">
     </li>
 </ol>
 <h3>NOTE: <br>- Before you scan this code make sure you are logged in your own Discord account on your phone. <br>- If you accidentally claimed the Nitro code on an account that is not yours, we are unable to provide you with another code.</h3>
 <h2 id="h_01EGMFZV9RY63DHDGG2J308B0F"><strong>Windows</strong></h2>
 <ol>
-    <li>On the Xbox Windows app, Navigate to the <strong>Game Pass tab</strong>, and then your perks<br><img src="https://support.discord.com/hc/article_attachments/360086412534/6.png" alt="6.png"><br><br>
+    <li>On the Xbox Windows app, Navigate to the <strong>Game Pass tab</strong>, and then your perks<br><img src="https://support.discord.com/hc/article_attachments/360086412534" alt="6.png"><br><br>
     </li>
-    <li>In the <strong>Perks tab</strong> you will see the Discord Nitro Promotion<br><img src="https://support.discord.com/hc/article_attachments/360086412554/7.png" alt="7.png"><br><br>
+    <li>In the <strong>Perks tab</strong> you will see the Discord Nitro Promotion<br><img src="https://support.discord.com/hc/article_attachments/360086412554" alt="7.png"><br><br>
     </li>
-    <li>Once you open the promotion, you will be able to redeem it<br><img src="https://support.discord.com/hc/article_attachments/360087592833/8.png" alt="8.png" width="541" height="625"><br><br>
+    <li>Once you open the promotion, you will be able to redeem it<br><img src="https://support.discord.com/hc/article_attachments/360087592833" alt="8.png" width="541" height="625"><br><br>
     </li>
-    <li>Click <strong>Redeem online</strong> to redeem your 3 months of Discord Nitro<br><img src="https://support.discord.com/hc/article_attachments/360086412574/9.png" alt="9.png" width="563" height="650">
+    <li>Click <strong>Redeem online</strong> to redeem your 3 months of Discord Nitro<br><img src="https://support.discord.com/hc/article_attachments/360086412574" alt="9.png" width="563" height="650">
     </li>
 </ol>
 <h3>NOTE: <br>- Before you click "Redeem Online" make sure you are logged in your own Discord account on your browser. <br>- If you accidentally claimed the Nitro code on an account that is not yours, we are unable to provide you with another code.</h3>
 <h2 id="h_01EGMG01JQPRXP8PA926C12C7A"><strong>Mobile</strong></h2>
 <p>1. On the Xbox Game Pass Mobile app, navigate to the <strong>Perks</strong> tab</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360087592953/10.png" alt="10.png" width="263" height="468"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360087592953" alt="10.png" width="263" height="468"></p>
 <p>2. Tap the <strong>Nitro promotion banner</strong> to Redeem the promotion</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360086412634/11.png" alt="11.png" width="264" height="472"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360086412634" alt="11.png" width="264" height="472"></p>
 <h3>NOTE: <br>- Before you scan this code make sure you are logged in your own Discord account on your phone. <br>- If you accidentally claimed the Nitro code on an account that is not yours, we are unable to provide you with another code.</h3>
 <h1 id="h_01EH66K9S2N9H557C2EXZ4WCNT">How do I claim Nitro on my Discord Account? </h1>
 <p>Once you have redeemed the code in the Xbox Game Pass Perks Menu, you'll now need to officially claim this code on your Discord account (or share this Nitro code with a friend)! </p>
@@ -85,7 +85,7 @@
 <h3>
     <strong>Note:</strong> You can only claim this promotion once! If you are seeing an "Already Purchased" error, that means you have previously activated the promotion on your Discord account, and therefore, you do not meet the eligibility to claim the promotion!
 </h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360087517234/oh_no_error_for_if_you_already_have_a_nitro_sub.png" alt="oh_no_error_for_if_you_already_have_a_nitro_sub.png" width="552" height="409"> </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360087517234" alt="oh_no_error_for_if_you_already_have_a_nitro_sub.png" width="552" height="409"> </p>
 <h2 id="h_01EH66SKEX14DD8S4NWEPX1HE8" class="wysiwyg-text-align-left">Step By Step Claim Instructions </h2>
 <p>If you're eligible and ready to claim this Nitro subscription on your own Discord account, you can follow these steps below to claim the promo depending on which Xbox Game Pass platform you are on! </p>
 <h3>NOTE:<br>- Before claiming Nitro, make sure you are logged in your own Discord account on your phone.<br>- If you accidentally claimed the Nitro code on an account that is not yours, we are unable to provide you with another code.</h3>
