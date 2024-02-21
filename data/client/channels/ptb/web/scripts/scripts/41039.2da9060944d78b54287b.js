@@ -30639,11 +30639,14 @@
                 LegacySeasonalGiftStyles: function() {
                     return eM
                 },
-                SeasonalGiftStyles2023: function() {
+                STANDARD_GIFT_OPTIONS: function() {
                     return eU
                 },
-                AllSeasonalGiftStyles: function() {
+                SeasonalGiftStyles2023: function() {
                     return eG
+                },
+                AllSeasonalGiftStyles: function() {
+                    return ew
                 }
             }), n("222007");
             var i, r, s, a, o, l, u, c, d, f, E, p, h, _, S, m, T, g, I, C, v, A, R, N, O, D, y, P, L, b, M, U, G, w, k, x, F = n("49111"),
@@ -31009,8 +31012,9 @@
             (G = S || (S = {})).EXPLORE_ALL_PERKS_CLICKED = "explore_all_perks_clicked", G.HELPER_COLLAPSED = "helper_collapsed", G.HELPER_UNCOLLAPSED = "helper_uncollapsed", G.UNLOCK_EMOJI_CLICKED = "unlock_emoji_clicked", G.CUSTOM_PROFILES_CLICKED = "custom_profiles_clicked", G.SERVER_BOOSTS_CLICKED = "server_boosts_clicked", G.HELPER_DISMISSED = "premium_feature_helper_dismissed", G.HELPER_RENDERED = "premium_feature_helper_rendered", (w = m || (m = {})).EMOJI_TUTORIAL_STARTED = "emoji_tutorial_started", w.EMOJI_INTRO_VIEWED = "emoji_intro_viewed", w.EMOJI_PROMPT_VIEWED = "emoji_prompt_viewed", w.CUSTOM_PROFILE_TUTORIAL_STARTED = "custom_profile_tutorial_started", w.CUSTOM_PROFILE_AVATAR_INTRO_VIEWED = "custom_profile_avatar_intro_viewed", w.CUSTOM_PROFILE_AVATAR_DECORATIONS_VIEWED = "custom_profile_avatar_decorations_viewed", w.CUSTOM_PROFILE_BANNER_INTRO_VIEWED = "custom_profile_banner_intro_viewed", w.CUSTOM_PROFILE_THEME_INTRO_VIEWED = "custom_profile_theme_intro_viewed", w.SERVER_PROFILE_INTRO_VIEWED = "server_profile_intro_viewed", w.SERVER_BOOST_TUTORIAL_STARTED = "server_boost_tutorial_started", w.BOOST_INTRO_VIEWED = "boost_intro_viewed", w.BOOST_PROMPT_VIEWED = "boost_prompt_viewed", (k = T || (T = {})).BOOST = "boost", k.DISMISS = "dismiss", (x = g || (g = {})).BADGE_TOOLTIP_VIEWED = "share_nitro_bagde_tooltip_viewed", x.BADGE_CLICKED = "share_nitro_badge_clicked", x.FLOW_STARTED = "share_nitro_flow_started", x.FLOW_COMPLETED = "share_nitro_flow_completed";
             let eb = new Set(["PL", "TR"]),
                 eM = [1, 2, 3],
-                eU = [8, 9, 11, 10],
-                eG = eU.concat(eM)
+                eU = [4, 5, 7, 6],
+                eG = [8, 9, 11, 10],
+                ew = eG.concat(eM)
         },
         45120: function(e, t, n) {
             "use strict";
@@ -50007,7 +50011,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267946"
+                                build_number: "267954"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64135,4 +64139,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.1651dae9a3016dc12182.js.map
+//# sourceMappingURL=41039.2da9060944d78b54287b.js.map
