@@ -1,17 +1,17 @@
 <p><span class="wysiwyg-font-size-large">What this article covers:</span></p>
 <ul>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HHQ2QR09R9W4XMY49J68454Y">Submitting Requests Regarding Deceased or Incapacitated Users on Discord</a>
+        <a href="https://support.discord.com/hc/en-us/articles/19872987802263#h_01HHQ2QR09R9W4XMY49J68454Y">Submitting Requests Regarding Deceased or Incapacitated Users on Discord</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HHQ2QR096QBF3G6K9H5NY1QV">Requesting Access or Details for the Deceased’s Account</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HHQ2QR09NR2GCGKF2SCFVS1T">Requesting Account Deletion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19872987802263#h_01HHQ2QR096QBF3G6K9H5NY1QV">Requesting Access or Details for the Deceased’s Account</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/19872987802263#h_01HHQ2QR09NR2GCGKF2SCFVS1T">Requesting Account Deletion</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HHQ2QR092B8A6GRFFSRV6R55">Billing or Payment-Related issues</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HHQ2QR09GY34N1Q5063SZWXC">Requests to Memorialize or Transfer an Account</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HHQ2QR099J80CCYJ5RVWAPF9">Inactive Account Deletion</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HHQ2QR09M101ATCJ7QNEZBHJ">Contacting Discord Support</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HHQ2QR092Z29M538VGBYFGR6">Further Information</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19872987802263#h_01HHQ2QR092B8A6GRFFSRV6R55">Billing or Payment-Related issues</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19872987802263#h_01HHQ2QR09GY34N1Q5063SZWXC">Requests to Memorialize or Transfer an Account</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19872987802263#h_01HHQ2QR099J80CCYJ5RVWAPF9">Inactive Account Deletion</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19872987802263#h_01HHQ2QR09M101ATCJ7QNEZBHJ">Contacting Discord Support</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/19872987802263#h_01HHQ2QR092Z29M538VGBYFGR6">Further Information</a></li>
 </ul>
 <h1 id="h_01HHQ2QR09R9W4XMY49J68454Y">Submitting Requests Regarding Deceased or Incapacitated Users on Discord</h1>
 <p>At Discord, we understand that dealing with the accounts of deceased or incapacitated users can be a sensitive and challenging situation. We are here to guide you through the process of submitting requests regarding their Discord account while ensuring privacy and security for all parties involved. </p>
