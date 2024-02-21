@@ -367,7 +367,9 @@
 
 .inner_ea0cea {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 32px;
     height: 32px;
     contain: paint
@@ -27871,4 +27873,4 @@ span.button__4f306.disabled_dc5630 {
     color: var(--primary-330)
 }
 
-/*# sourceMappingURL=shared.50cc2a7d62314cc568bc.css.map*/
+/*# sourceMappingURL=shared.e9bca8849473ba4cb778.css.map*/
