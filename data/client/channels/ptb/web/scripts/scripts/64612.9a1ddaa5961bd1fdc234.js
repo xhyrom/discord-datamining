@@ -10,7 +10,7 @@
                     return i
                 },
                 GuildFeedRenderMode: function() {
-                    return r
+                    return l
                 },
                 COLLAPSED_SIZE_MEDIA_QUERY: function() {
                     return c
@@ -19,14 +19,14 @@
                     return _
                 },
                 GuildHomeLandingSource: function() {
-                    return l
+                    return r
                 }
             }), n("222007");
-            var d, i, r, l, u, s, a, E, o = n("298386");
-            (u = d || (d = {})).MESSAGE_CLICKED = "message_clicked", u.MESSAGE_CHANNEL_CLICKED = "message_channel_clicked", u.REACTION_ADDED = "reaction_added", u.REACTION_REMOVED = "reaction_removed", u.THREAD_EMBED_CLICKED = "thread_embed_clicked", u.LINK_CLICKED = "link_clicked", u.IMAGE_CLICKED = "image_clicked", u.BUTTON_CLICKED = "button_clicked", u.REFERENCED_MESSAGE_CLICKED = "referenced_message_clicked", u.MESSAGED_IN_SIDEBAR = "messaged_in_sidebar", u.REPLIED_IN_SIDEBAR = "replied_in_sidebar", u.REPLIED_TO_MESSAGE = "replied_to_message", u.EXPANDED_ITEM = "expanded_item", u.VIEW_MORE_REPLIES = "view_more_replies", (s = i || (i = {})).UNREAD = "UNREAD", s.READ = "READ", s.HIGHLIGHTED = "HIGHLIGHTED", s.ALL = "ALL", (a = r || (r = {}))[a.SEGMENTED_READ = 0] = "SEGMENTED_READ", a[a.TOP = 1] = "TOP", a[a.NEW = 2] = "NEW";
+            var d, i, l, r, u, s, a, E, o = n("298386");
+            (u = d || (d = {})).MESSAGE_CLICKED = "message_clicked", u.MESSAGE_CHANNEL_CLICKED = "message_channel_clicked", u.REACTION_ADDED = "reaction_added", u.REACTION_REMOVED = "reaction_removed", u.THREAD_EMBED_CLICKED = "thread_embed_clicked", u.LINK_CLICKED = "link_clicked", u.IMAGE_CLICKED = "image_clicked", u.BUTTON_CLICKED = "button_clicked", u.REFERENCED_MESSAGE_CLICKED = "referenced_message_clicked", u.MESSAGED_IN_SIDEBAR = "messaged_in_sidebar", u.REPLIED_IN_SIDEBAR = "replied_in_sidebar", u.REPLIED_TO_MESSAGE = "replied_to_message", u.EXPANDED_ITEM = "expanded_item", u.VIEW_MORE_REPLIES = "view_more_replies", (s = i || (i = {})).UNREAD = "UNREAD", s.READ = "READ", s.HIGHLIGHTED = "HIGHLIGHTED", s.ALL = "ALL", (a = l || (l = {}))[a.SEGMENTED_READ = 0] = "SEGMENTED_READ", a[a.TOP = 1] = "TOP", a[a.NEW = 2] = "NEW";
             let c = "(max-width: 1300px)",
                 _ = new Set([o.ChannelTypes.GUILD_TEXT, o.ChannelTypes.GUILD_ANNOUNCEMENT, o.ChannelTypes.GUILD_FORUM]);
-            (E = l || (l = {})).ORGANIC = "ORGANIC", E.TIMER = "TIMER", E.HIGHLIGHTS = "HIGHLIGHTS"
+            (E = r || (r = {})).ORGANIC = "ORGANIC", E.TIMER = "TIMER", E.HIGHLIGHTS = "HIGHLIGHTS"
         },
         185014: function(e, t, n) {
             "use strict";
@@ -41,8 +41,8 @@
                     return J
                 }
             }), n("424973"), n("222007");
-            var d, i, r = n("446674"),
-                l = n("407846"),
+            var d, i, l = n("446674"),
+                r = n("407846"),
                 u = n("913144"),
                 s = n("692038"),
                 a = n("432173"),
@@ -70,12 +70,12 @@
                 M = {},
                 p = {},
                 v = {},
-                y = {},
-                h = {};
+                h = {},
+                y = {};
 
             function R(e) {
-                let t = h[e];
-                return null == t && (t = new l.default(N, L), h[e] = t), t
+                let t = y[e];
+                return null == t && (t = new r.default(N, L), y[e] = t), t
             }
 
             function L(e) {
@@ -100,7 +100,7 @@
 
             function P(e, t, n) {
                 var d, i;
-                return null === (i = y[e]) || void 0 === i ? void 0 : null === (d = i[t]) || void 0 === d ? void 0 : d[n]
+                return null === (i = h[e]) || void 0 === i ? void 0 : null === (d = i[t]) || void 0 === d ? void 0 : d[n]
             }
 
             function w(e, t) {
@@ -119,8 +119,8 @@
                 if (null == d) return !1;
                 let i = P(d, e, t);
                 if (null == i) return !1;
-                let r = n(i);
-                return y[d][e][t] = r, !0
+                let l = n(i);
+                return h[d][e][t] = l, !0
             }
 
             function k(e, t) {
@@ -129,7 +129,7 @@
 
             function B(e, t) {
                 var n, d;
-                (null === (n = y[e]) || void 0 === n ? void 0 : n[t.channel_id]) == null && (y[e] = null !== (d = y[e]) && void 0 !== d ? d : {}, y[e][t.channel_id] = {}), y[e][t.channel_id][t.id] = t, null == v[t.channel_id] && (v[t.channel_id] = {}), v[t.channel_id][t.id] = e
+                (null === (n = h[e]) || void 0 === n ? void 0 : n[t.channel_id]) == null && (h[e] = null !== (d = h[e]) && void 0 !== d ? d : {}, h[e][t.channel_id] = {}), h[e][t.channel_id][t.id] = t, null == v[t.channel_id] && (v[t.channel_id] = {}), v[t.channel_id][t.id] = e
             }
 
             function Y(e, t) {
@@ -141,15 +141,15 @@
 
             function x(e, t) {
                 var n, d, i;
-                let r = w(e, t);
-                return null != r && (null === (d = y[r]) || void 0 === d || null === (n = d[e]) || void 0 === n || delete n[t], null === (i = v[e]) || void 0 === i || delete i[t], ! function(e, t) {
+                let l = w(e, t);
+                return null != l && (null === (d = h[l]) || void 0 === d || null === (n = d[e]) || void 0 === n || delete n[t], null === (i = v[e]) || void 0 === i || delete i[t], ! function(e, t) {
                     let n = Y(e, t);
                     if (null == n) return;
                     let d = (0, f.default)(n),
                         i = R(e),
-                        r = Array.from((0, _.getAllMessagesFromFeedItem)(n));
-                    !(r.filter(t => P(e, t.channel_id, t.id)).length > 0) && i.delete(d)
-                }(r, t), !0)
+                        l = Array.from((0, _.getAllMessagesFromFeedItem)(n));
+                    !(l.filter(t => P(e, t.channel_id, t.id)).length > 0) && i.delete(d)
+                }(l, t), !0)
             }
 
             function K(e) {
@@ -158,15 +158,15 @@
                     channelId: n,
                     messageId: d,
                     userId: i,
-                    emoji: r
+                    emoji: l
                 } = e;
                 if (!(0, a.shouldApplyReaction)(e)) return !1;
-                let l = E.default.getId() === i;
+                let r = E.default.getId() === i;
                 return V(n, d, n => {
                     let {
                         reactionType: d
                     } = e;
-                    return "MESSAGE_REACTION_ADD" === t ? n.addReaction(r, l, e.colors, d) : n.removeReaction(r, l, d)
+                    return "MESSAGE_REACTION_ADD" === t ? n.addReaction(l, r, e.colors, d) : n.removeReaction(l, r, d)
                 })
             }
 
@@ -181,9 +181,9 @@
                 var t;
                 let n = e.guild_id;
                 if (null == n) return !1;
-                delete v[e.id], null === (t = y[n]) || void 0 === t || delete t[e.id]
+                delete v[e.id], null === (t = h[n]) || void 0 === t || delete t[e.id]
             }
-            class j extends r.default.Store {
+            class j extends l.default.Store {
                 getLastFetchedMillis(e) {
                     return G[e]
                 }
@@ -257,7 +257,7 @@
                     A[t] = {
                         loading: 0,
                         error: null
-                    }, delete h[t], delete p[t], delete D[t], O[t] = new Set, U[t] = new Set, C[t] = new Set, y[t] = {}
+                    }, delete y[t], delete p[t], delete D[t], O[t] = new Set, U[t] = new Set, C[t] = new Set, h[t] = {}
                 },
                 GUILD_FEED_FETCH_PAGE_START: function(e) {
                     let {
@@ -269,31 +269,31 @@
                     }
                 },
                 GUILD_FEED_FETCH_SUCCESS: function(e) {
-                    var t, n, d, i, r;
+                    var t, n, d, i, l;
                     let {
-                        guildId: l,
+                        guildId: r,
                         data: u
                     } = e;
-                    if (G[l] = Date.now(), A[l] = {
+                    if (G[r] = Date.now(), A[r] = {
                             loading: 2,
                             error: null
-                        }, l in p && p[l].load_id !== u.load_id) return;
-                    let s = null !== (i = null === (n = p[l]) || void 0 === n ? void 0 : null === (t = n.results) || void 0 === t ? void 0 : t.items) && void 0 !== i ? i : [];
-                    p[l] = {
+                        }, r in p && p[r].load_id !== u.load_id) return;
+                    let s = null !== (i = null === (n = p[r]) || void 0 === n ? void 0 : null === (t = n.results) || void 0 === t ? void 0 : t.items) && void 0 !== i ? i : [];
+                    p[r] = {
                         load_id: u.load_id,
                         results: {
                             items: s.concat(u.results.items)
                         }
                     };
-                    let a = R(l),
+                    let a = R(r),
                         E = a.values().length,
                         o = E;
                     for (let e of u.results.items) {
                         let t = (0, c.createGuildFeedItemFromServer)(e, o);
-                        if (null != t) o += 1, null == a.get(t.id) && (t.featured && C[l].add(t.id), k(l, t), a.set(t.id, t))
+                        if (null != t) o += 1, null == a.get(t.id) && (t.featured && C[r].add(t.id), k(r, t), a.set(t.id, t))
                     }
-                    let _ = null !== (r = null === (d = D[l]) || void 0 === d ? void 0 : d.offset) && void 0 !== r ? r : 0;
-                    D[l] = {
+                    let _ = null !== (l = null === (d = D[r]) || void 0 === d ? void 0 : d.offset) && void 0 !== l ? l : 0;
+                    D[r] = {
                         offset: _ + S,
                         hasMoreItems: E !== a.values().length
                     }
@@ -356,23 +356,23 @@
                     var t, n, d;
                     let {
                         featureableItem: i,
-                        options: r
+                        options: l
                     } = e, {
-                        guildId: l
+                        guildId: r
                     } = i, u = (0, f.getGuildFeedItemIdFromFeatureableItem)(i);
-                    if (!(l in C) && (C[l] = new Set), C[l].add(u), !r.hoist) return;
-                    let s = R(l),
+                    if (!(r in C) && (C[r] = new Set), C[r].add(u), !l.hoist) return;
+                    let s = R(r),
                         a = null !== (d = s.get(u)) && void 0 !== d ? d : (0, I.createFakeGuildFeedItem)(i);
-                    null != a && (null != a.message && (null === (n = y[l]) || void 0 === n ? void 0 : null === (t = n[a.message.channel_id]) || void 0 === t ? void 0 : t[a.message.id]) == null && B(l, a.message), s.delete(a.id), a.featured = !0, a.seen = !1, s.set(a.id, a))
+                    null != a && (null != a.message && (null === (n = h[r]) || void 0 === n ? void 0 : null === (t = n[a.message.channel_id]) || void 0 === t ? void 0 : t[a.message.id]) == null && B(r, a.message), s.delete(a.id), a.featured = !0, a.seen = !1, s.set(a.id, a))
                 },
                 GUILD_FEED_UNFEATURE_ITEM: function(e) {
                     var t, n, d, i;
                     let {
-                        featureableItem: r
+                        featureableItem: l
                     } = e, {
-                        guildId: l
-                    } = r, u = (0, f.getGuildFeedItemIdFromFeatureableItem)(r);
-                    t = l, n = u, null === (d = C[t]) || void 0 === d || d.delete(n), null === (i = H[t]) || void 0 === i || delete i[n]
+                        guildId: r
+                    } = l, u = (0, f.getGuildFeedItemIdFromFeatureableItem)(l);
+                    t = r, n = u, null === (d = C[t]) || void 0 === d || d.delete(n), null === (i = H[t]) || void 0 === i || delete i[n]
                 },
                 CHANNEL_SELECT: function() {
                     for (let e of o.default.keys(O)) null == U[e] && (U[e] = new Set), U[e] = new Set([...Array.from(U[e]), ...Array.from(O[e])]), delete O[e]
@@ -385,8 +385,8 @@
                         guild: n
                     } = e;
                     if (null == G[n.id]) return !1;
-                    for (let e in delete G[n.id], delete p[n.id], null !== (t = y[n.id]) && void 0 !== t ? t : {}) delete v[e];
-                    delete y[n.id], delete h[n.id]
+                    for (let e in delete G[n.id], delete p[n.id], null !== (t = h[n.id]) && void 0 !== t ? t : {}) delete v[e];
+                    delete h[n.id], delete y[n.id]
                 },
                 CHANNEL_UPDATES: function(e) {
                     let {
@@ -396,7 +396,7 @@
                         if (null == e ? void 0 : e.hasFlag(F.ChannelFlags.GUILD_FEED_REMOVED)) return X(e)
                 },
                 LOGOUT: function() {
-                    G = {}, p = {}, v = {}, y = {}, h = {}, O = {}, U = {}, C = {}, H = {}
+                    G = {}, p = {}, v = {}, h = {}, y = {}, O = {}, U = {}, C = {}, H = {}
                 },
                 MESSAGE_UPDATE: function(e) {
                     let {
@@ -450,50 +450,51 @@
             "use strict";
             n.r(t), n.d(t, {
                 FEATURE_EXPIRES_SECONDS: function() {
-                    return _
+                    return I
                 },
                 isGuildFeedFeaturedItem: function() {
-                    return m
-                },
-                createGuildFeedItemFromServer: function() {
                     return F
                 },
-                isChannelAvailableInGuildFeed: function() {
+                createGuildFeedItemFromServer: function() {
                     return S
                 },
-                isMessageAvailableInGuildFeed: function() {
+                isChannelAvailableInGuildFeed: function() {
                     return T
                 },
-                createFeatureItemsTimeLabel: function() {
+                isMessageAvailableInGuildFeed: function() {
                     return g
                 },
-                getFeatureItemsTimes: function() {
+                createFeatureItemsTimeLabel: function() {
                     return G
                 },
-                getSidebarMessageId: function() {
+                getFeatureItemsTimes: function() {
                     return A
                 },
-                getChannelIdForItem: function() {
+                getSidebarMessageId: function() {
                     return D
+                },
+                getChannelIdForItem: function() {
+                    return M
                 }
             });
             var d = n("917351"),
                 i = n.n(d),
-                r = n("611221"),
-                l = n("637612"),
+                l = n("611221"),
+                r = n("637612"),
                 u = n("692038"),
                 s = n("233069"),
                 a = n("449008"),
-                E = n("2804"),
-                o = n("724210"),
-                c = n("782340");
-            let _ = {
+                E = n("299039"),
+                o = n("2804"),
+                c = n("724210"),
+                _ = n("782340");
+            let I = {
                 ONE_DAY: 86400,
                 THREE_DAYS: 259200,
                 SEVEN_DAYS: 604800
             };
 
-            function I(e) {
+            function f(e) {
                 return {
                     entityId: e.entity_id,
                     entityType: e.entity_type,
@@ -505,63 +506,63 @@
                 }
             }
 
-            function f(e) {
+            function m(e) {
                 return null != e.featured_item || !1
             }
 
-            function m(e) {
+            function F(e) {
                 return null != e.featuredItem || !1
             }
 
-            function F(e, t) {
-                var n, d, l, a, o, c, _;
+            function S(e, t) {
+                var n, d, r, a, E, c, _;
                 switch (e.type) {
-                    case r.GuildFeedItemTypes.FORUM_POST: {
+                    case l.GuildFeedItemTypes.FORUM_POST: {
                         let i = (0, u.createMessageRecord)(e.message),
-                            l = (0, s.createChannelRecordFromServer)(e.thread),
+                            r = (0, s.createChannelRecordFromServer)(e.thread),
                             a = {
-                                type: r.GuildFeedItemTypes.FORUM_POST,
-                                id: (0, E.default)(e),
+                                type: l.GuildFeedItemTypes.FORUM_POST,
+                                id: (0, o.default)(e),
                                 sortIndex: t,
                                 message: i,
-                                thread: l,
+                                thread: r,
                                 featured: null !== (n = e.featured) && void 0 !== n && n,
                                 highlighted: null !== (d = e.highlighted) && void 0 !== d && d,
                                 seen: e.seen,
                                 unreadMention: !1
                             };
-                        return f(e) && (a = {
+                        return m(e) && (a = {
                             ...a,
-                            featuredItem: I(e.featured_item)
+                            featuredItem: f(e.featured_item)
                         }), a
                     }
-                    case r.GuildFeedItemTypes.MESSAGE:
-                        let m = (0, u.createMessageRecord)(e.message),
+                    case l.GuildFeedItemTypes.MESSAGE:
+                        let I = (0, u.createMessageRecord)(e.message),
                             F = i.map(e.reference_messages, e => (0, u.createMessageRecord)(e)),
                             S = {
-                                type: r.GuildFeedItemTypes.MESSAGE,
-                                id: (0, E.default)(e),
+                                type: l.GuildFeedItemTypes.MESSAGE,
+                                id: (0, o.default)(e),
                                 sortIndex: t,
-                                message: m,
+                                message: I,
                                 referenceMessages: F,
-                                featured: null !== (l = e.featured) && void 0 !== l && l,
+                                featured: null !== (r = e.featured) && void 0 !== r && r,
                                 highlighted: null !== (a = e.highlighted) && void 0 !== a && a,
-                                unreadMention: null !== (o = e.unread_mention) && void 0 !== o && o,
+                                unreadMention: null !== (E = e.unread_mention) && void 0 !== E && E,
                                 seen: e.seen
                             };
-                        return f(e) && (S = {
+                        return m(e) && (S = {
                             ...S,
-                            featuredItem: I(e.featured_item)
+                            featuredItem: f(e.featured_item)
                         }), S;
-                    case r.GuildFeedItemTypes.MESSAGE_BUNDLE:
+                    case l.GuildFeedItemTypes.MESSAGE_BUNDLE:
                         let T = e.messages.map(e => ({
                             message: (0, u.createMessageRecord)(e.message),
                             referenceMessages: e.reference_messages.map(e => (0, u.createMessageRecord)(e))
                         }));
                         return {
-                            type: r.GuildFeedItemTypes.MESSAGE_BUNDLE, id: e.id, sortIndex: t, messages: T, featured: !1, highlighted: !1, unreadMention: null !== (c = e.unread_mention) && void 0 !== c && c, seen: e.seen
+                            type: l.GuildFeedItemTypes.MESSAGE_BUNDLE, id: e.id, sortIndex: t, messages: T, featured: !1, highlighted: !1, unreadMention: null !== (c = e.unread_mention) && void 0 !== c && c, seen: e.seen
                         };
-                    case r.GuildFeedItemTypes.CONVERSATION:
+                    case l.GuildFeedItemTypes.CONVERSATION:
                         let g = function e(t) {
                             let n = t.messages.map(e => (0, u.createMessageRecord)(e.message));
                             return {
@@ -572,43 +573,43 @@
                             }
                         }(e.root);
                         return {
-                            type: r.GuildFeedItemTypes.CONVERSATION, id: e.id, sortIndex: t, root: g, featured: !1, highlighted: !1, unreadMention: null !== (_ = e.unread_mention) && void 0 !== _ && _, seen: e.seen
+                            type: l.GuildFeedItemTypes.CONVERSATION, id: e.id, sortIndex: t, root: g, featured: !1, highlighted: !1, unreadMention: null !== (_ = e.unread_mention) && void 0 !== _ && _, seen: e.seen
                         };
                     default:
                         return null
                 }
             }
 
-            function S(e) {
-                return !(e.hasFlag(o.ChannelFlags.GUILD_FEED_REMOVED) || e.isNSFW()) && !0
+            function T(e) {
+                return !(e.hasFlag(c.ChannelFlags.GUILD_FEED_REMOVED) || e.isNSFW()) && !0
             }
 
-            function T(e) {
-                return !!l.MessageTypesSets.AVAILABLE_IN_GUILD_FEED.has(e.type) || !1
+            function g(e) {
+                return !!r.MessageTypesSets.AVAILABLE_IN_GUILD_FEED.has(e.type) || !1
             }
-            let g = e => c.default.Messages.GUILD_FEED_FEATURE_ITEM_MENU_ITEM_TEXT.format({
+            let G = e => _.default.Messages.GUILD_FEED_FEATURE_ITEM_MENU_ITEM_TEXT.format({
                     timePeriod: e
                 }),
-                G = () => [{
-                    value: _.ONE_DAY,
-                    timePeriod: c.default.Messages.GUILD_FEED_FEATURE_ITEM_24_HOURS
+                A = () => [{
+                    value: I.ONE_DAY,
+                    timePeriod: _.default.Messages.GUILD_FEED_FEATURE_ITEM_24_HOURS
                 }, {
-                    value: _.THREE_DAYS,
-                    timePeriod: c.default.Messages.GUILD_FEED_FEATURE_ITEM_THREE_DAYS
+                    value: I.THREE_DAYS,
+                    timePeriod: _.default.Messages.GUILD_FEED_FEATURE_ITEM_THREE_DAYS
                 }, {
-                    value: _.SEVEN_DAYS,
-                    timePeriod: c.default.Messages.GUILD_FEED_FEATURE_ITEM_SEVEN_DAYS
+                    value: I.SEVEN_DAYS,
+                    timePeriod: _.default.Messages.GUILD_FEED_FEATURE_ITEM_SEVEN_DAYS
                 }],
-                A = (e, t) => null != t && t.isThread() ? t.id : null != e && "details" in e && null != e.details && "initialMessageId" in e.details ? e.details.initialMessageId : null;
+                D = (e, t) => null != t && t.isThread() ? E.default.castChannelIdAsMessageId(t.id) : null != e && "details" in e && null != e.details && "initialMessageId" in e.details ? e.details.initialMessageId : null;
 
-            function D(e) {
+            function M(e) {
                 switch (e.type) {
-                    case r.GuildFeedItemTypes.MESSAGE:
-                    case r.GuildFeedItemTypes.FORUM_POST:
+                    case l.GuildFeedItemTypes.MESSAGE:
+                    case l.GuildFeedItemTypes.FORUM_POST:
                         return e.message.channel_id;
-                    case r.GuildFeedItemTypes.MESSAGE_BUNDLE:
+                    case l.GuildFeedItemTypes.MESSAGE_BUNDLE:
                         return e.messages[0].message.channel_id;
-                    case r.GuildFeedItemTypes.CONVERSATION:
+                    case l.GuildFeedItemTypes.CONVERSATION:
                         return e.root.messages[0].channel_id;
                     default:
                         (0, a.assertNever)(e)
@@ -619,10 +620,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return r
+                    return l
                 },
                 getAllMessagesFromFeedItem: function() {
-                    return l
+                    return r
                 },
                 getAllMessageIdsFromFeedItem: function() {
                     return u
@@ -631,7 +632,7 @@
             var d = n("611221"),
                 i = n("449008");
 
-            function r(e) {
+            function l(e) {
                 switch (e.type) {
                     case d.GuildFeedItemTypes.MESSAGE:
                     case d.GuildFeedItemTypes.FORUM_POST:
@@ -645,7 +646,7 @@
                 }
             }
 
-            function l(e) {
+            function r(e) {
                 switch (e.type) {
                     case d.GuildFeedItemTypes.MESSAGE:
                     case d.GuildFeedItemTypes.FORUM_POST:
@@ -663,7 +664,7 @@
             }
 
             function u(e) {
-                return new Set(Array.from(l(e)).map(e => e.id))
+                return new Set(Array.from(r(e)).map(e => e.id))
             }
         },
         145708: function(e, t, n) {
@@ -678,8 +679,8 @@
             });
             var d = n("611221"),
                 i = n("430475"),
-                r = n("449008"),
-                l = n("2804");
+                l = n("449008"),
+                r = n("2804");
 
             function u(e) {
                 switch (e.entityType) {
@@ -696,7 +697,7 @@
                             }, entityType: e.entityType, guildId: e.guildId
                         };
                     default:
-                        (0, r.assertNever)(e)
+                        (0, l.assertNever)(e)
                 }
             }
 
@@ -709,11 +710,11 @@
                             } = i.default.getMessage(t);
                         if (null == n) return null;
                         return {
-                            type: d.GuildFeedItemTypes.FORUM_POST, id: (0, l.getGuildFeedItemIdFromFeatureableItem)(e), sortIndex: 0, message: n, thread: e.entity, featured: !0, seen: !1, highlighted: !1, unreadMention: !1
+                            type: d.GuildFeedItemTypes.FORUM_POST, id: (0, r.getGuildFeedItemIdFromFeatureableItem)(e), sortIndex: 0, message: n, thread: e.entity, featured: !0, seen: !1, highlighted: !1, unreadMention: !1
                         };
                     case d.GuildFeedItemTypes.MESSAGE:
                         return {
-                            type: d.GuildFeedItemTypes.MESSAGE, id: (0, l.getGuildFeedItemIdFromFeatureableItem)(e), sortIndex: 0, message: e.entity, referenceMessages: [], featured: !0, seen: !1, highlighted: !1, unreadMention: !1
+                            type: d.GuildFeedItemTypes.MESSAGE, id: (0, r.getGuildFeedItemIdFromFeatureableItem)(e), sortIndex: 0, message: e.entity, referenceMessages: [], featured: !0, seen: !1, highlighted: !1, unreadMention: !1
                         }
                 }
             }
@@ -722,29 +723,30 @@
             "use strict";
             n.r(t), n.d(t, {
                 GUILD_FEED_MESSAGE_ITEM_ID_TEMPLATE: function() {
-                    return l
-                },
-                default: function() {
                     return u
                 },
-                getGuildFeedItemIdFromFeatureableItem: function() {
+                default: function() {
                     return s
                 },
-                getFeedItemTypeFromId: function() {
+                getGuildFeedItemIdFromFeatureableItem: function() {
                     return a
+                },
+                getFeedItemTypeFromId: function() {
+                    return E
                 }
             });
             var d = n("611221"),
-                i = n("449008");
+                i = n("449008"),
+                l = n("299039");
             let r = e => "".concat(d.GuildFeedItemTypes.FORUM_POST, "/").concat(e),
-                l = e => "".concat(d.GuildFeedItemTypes.MESSAGE, "/").concat(e);
+                u = e => "".concat(d.GuildFeedItemTypes.MESSAGE, "/").concat(e);
 
-            function u(e) {
+            function s(e) {
                 switch (e.type) {
                     case d.GuildFeedItemTypes.FORUM_POST:
-                        return r(e.message.id);
+                        return r(l.default.castMessageIdAsChannelId(e.message.id));
                     case d.GuildFeedItemTypes.MESSAGE:
-                        return l(e.message.id);
+                        return u(e.message.id);
                     case d.GuildFeedItemTypes.MESSAGE_BUNDLE:
                     case d.GuildFeedItemTypes.CONVERSATION:
                         return e.id;
@@ -753,21 +755,21 @@
                 }
             }
 
-            function s(e) {
+            function a(e) {
                 switch (e.entityType) {
                     case d.GuildFeedItemTypes.FORUM_POST:
                         return r(e.entity.id);
                     case d.GuildFeedItemTypes.MESSAGE:
-                        return l(e.entity.id);
+                        return u(e.entity.id);
                     default:
                         (0, i.assertNever)(e)
                 }
             }
 
-            function a(e) {
+            function E(e) {
                 return e.split("/")[0]
             }
         }
     }
 ]);
-//# sourceMappingURL=64612.3464b23f78ef8294a4c6.js.map
+//# sourceMappingURL=64612.9a1ddaa5961bd1fdc234.js.map
