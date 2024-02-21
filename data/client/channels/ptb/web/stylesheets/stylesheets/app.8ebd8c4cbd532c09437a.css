@@ -118893,6 +118893,10 @@ div.nagbar_c731ff {
     height: 140px
 }
 
+.safetyTips_cf2252 {
+    margin-top: var(--spacing-16)
+}
+
 .container__1d01d {
     overflow-x: clip
 }
@@ -127716,4 +127720,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.fea7683e182f067b8695.css.map*/
+/*# sourceMappingURL=app.8ebd8c4cbd532c09437a.css.map*/
