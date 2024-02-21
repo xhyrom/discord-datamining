@@ -19259,12 +19259,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -19946,7 +19946,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .circularButton__88b89 {
     width: 40px;
     height: 40px;
-    background: var(--bg-overlay-1, var(--background-secondary-alt));
+    background: var(--background-secondary-alt);
     border-radius: 20px
 }
 
@@ -45503,8 +45503,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -127764,4 +127764,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e8edf3138c8d174321ac.css.map*/
+/*# sourceMappingURL=app.c7bc2b7b3ab3d0b3f9dc.css.map*/

@@ -28739,6 +28739,118 @@
                     }) : null
                 }
         },
+        597517: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                hideHotspot: function() {
+                    return s
+                },
+                setHotspotOverride: function() {
+                    return r
+                },
+                clearHotspotOverride: function() {
+                    return o
+                }
+            });
+            var l = n("913144"),
+                i = n("599110"),
+                a = n("49111");
+
+            function s(e) {
+                i.default.track(a.AnalyticEvents.HOTSPOT_HIDDEN, {
+                    hotspot_location: e
+                }), l.default.wait(() => {
+                    l.default.dispatch({
+                        type: "HOTSPOT_HIDE",
+                        location: e
+                    })
+                })
+            }
+
+            function r(e, t) {
+                l.default.dispatch({
+                    type: "HOTSPOT_OVERRIDE_SET",
+                    location: e,
+                    enabled: t
+                })
+            }
+
+            function o(e) {
+                l.default.dispatch({
+                    type: "HOTSPOT_OVERRIDE_CLEAR",
+                    location: e
+                })
+            }
+        },
+        269596: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            }), n("222007");
+            var l = n("446674"),
+                i = n("913144"),
+                a = n("197881"),
+                s = n("492397");
+            let r = new Set,
+                o = {};
+            class u extends l.default.PersistedStore {
+                initialize(e) {
+                    null != e && (Array.isArray(e.hiddenHotspots) && (r = new Set(e.hiddenHotspots)), null != e.hotspotOverrides && (o = e.hotspotOverrides))
+                }
+                hasHotspot(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = !t && o[e];
+                    return !(s.CONFERENCE_MODE_ENABLED || a.ProcessArgs.isDisallowPopupsSet()) && (n || !r.has(e))
+                }
+                hasHiddenHotspot(e) {
+                    return r.has(e)
+                }
+                getHotspotOverride(e) {
+                    return o[e]
+                }
+                getState() {
+                    return {
+                        hiddenHotspots: r,
+                        hotspotOverrides: o
+                    }
+                }
+            }
+            u.displayName = "HotspotStore", u.persistKey = "hotspots", u.migrations = [e => ({
+                hiddenHotspots: null != e ? e : [],
+                hotspotOverrides: {}
+            })];
+            var d = new u(i.default, {
+                OVERLAY_INITIALIZE: function(e) {
+                    let {
+                        hiddenHotspots: t
+                    } = e;
+                    r = new Set(t)
+                },
+                HOTSPOT_HIDE: function(e) {
+                    let {
+                        location: t
+                    } = e;
+                    if (r.has(t)) return !1;
+                    r.add(t)
+                },
+                HOTSPOT_OVERRIDE_SET: function(e) {
+                    let {
+                        location: t,
+                        enabled: n
+                    } = e;
+                    o[t] = n
+                },
+                HOTSPOT_OVERRIDE_CLEAR: function(e) {
+                    let {
+                        location: t
+                    } = e;
+                    if (null == o[t]) return !1;
+                    delete o[t]
+                }
+            })
+        },
         139321: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -51978,6 +52090,80 @@
             };
             var v = T
         },
+        58608: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            });
+            var l = n("37983"),
+                i = n("884691"),
+                a = n("118810"),
+                s = n("446674"),
+                r = n("206230"),
+                o = n("719347");
+            let u = e => {
+                let {
+                    externalRef: t,
+                    autoPlay: n,
+                    playOnHover: u,
+                    responsive: d,
+                    mediaLayoutType: c,
+                    ...f
+                } = e, m = (0, s.useStateFromStores)([r.default], () => r.default.useReducedMotion), p = i.useRef(null);
+
+                function h() {
+                    var e;
+                    u && (null == p || null === (e = p.current) || void 0 === e || e.play())
+                }
+
+                function E() {
+                    var e;
+                    u && (null == p || null === (e = p.current) || void 0 === e || e.pause())
+                }
+                return i.useLayoutEffect(() => () => {
+                    let {
+                        current: e
+                    } = p;
+                    null != e && function(e) {
+                        e.removeAttribute("src"), Array.from(e.children).forEach(e => {
+                            (0, a.isElement)(e, HTMLSourceElement) && (e.removeAttribute("src"), e.removeAttribute("type")), (0, a.isElement)(e, HTMLImageElement) && e.removeAttribute("src")
+                        });
+                        try {
+                            e.load()
+                        } catch (e) {}
+                    }(e)
+                }, []), i.useLayoutEffect(() => ("function" == typeof t ? (t(null), t(p.current)) : null != t && (t.current = p.current), () => {
+                    "function" == typeof t ? t(null) : null != t && (t.current = null)
+                }), [t, p]), (0, l.jsx)("video", {
+                    ref: p,
+                    autoPlay: !m && !u && n,
+                    onMouseEnter: h,
+                    onMouseLeave: E,
+                    onFocus: h,
+                    onBlur: E,
+                    style: c === o.MediaLayoutType.MOSAIC ? {
+                        width: "100%",
+                        height: "100%",
+                        maxHeight: "inherit",
+                        objectFit: "cover"
+                    } : d ? function() {
+                        return {
+                            maxWidth: f.width,
+                            maxHeight: f.height,
+                            width: "100%",
+                            height: "100%"
+                        }
+                    }() : {},
+                    ...f
+                })
+            };
+            var d = i.forwardRef((e, t) => (0, l.jsx)(u, {
+                ...e,
+                externalRef: t
+            }))
+        },
         267625: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -54205,4 +54391,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.befe28f7ca1c6a7c3504.js.map
+//# sourceMappingURL=60053.eeebb9a9d43876c05fc5.js.map
