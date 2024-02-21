@@ -50007,7 +50007,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267731"
+                                build_number: "267738"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -52255,9 +52255,13 @@
                 r = {
                     age: i.default.age,
                     extractTimestamp: i.default.extractTimestamp,
-                    fromTimestamp: i.default.fromTimestamp,
-                    atPreviousMillisecond: i.default.atPreviousMillisecond,
                     compare: i.default.compare,
+                    atPreviousMillisecond: function(e) {
+                        return i.default.atPreviousMillisecond(e)
+                    },
+                    fromTimestamp: function(e) {
+                        return i.default.fromTimestamp(e)
+                    },
                     keys: function(e) {
                         return Object.keys(e)
                     },
@@ -52266,6 +52270,12 @@
                     },
                     entries: function(e) {
                         return Object.entries(e)
+                    },
+                    castChannelIdAsMessageId: function(e) {
+                        return e
+                    },
+                    castMessageIdAsChannelId: function(e) {
+                        return e
                     }
                 }
         },
@@ -64125,4 +64135,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.acb46b3340343a911914.js.map
+//# sourceMappingURL=41039.9adf9e868d7ec4c27651.js.map

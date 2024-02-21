@@ -992,7 +992,7 @@
                 },
                 MESSAGE_CREATE: function(e) {
                     if (e.isPushNotification || !c(e.message)) return !1;
-                    e.message.channel_id === e.message.id ? f(e.message.channel_id, null) : f(e.message.channel_id, e.message)
+                    e.message.channel_id === s.default.castMessageIdAsChannelId(e.message.id) ? f(e.message.channel_id, null) : f(e.message.channel_id, e.message)
                 },
                 MESSAGE_UPDATE: function(e) {
                     if (!c(e.message) || e.message.channel_id === e.message.id) return !1;
@@ -1474,4 +1474,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12896.c3cbd67a116048466f67.js.map
+//# sourceMappingURL=12896.53aa859719fe56d857d7.js.map

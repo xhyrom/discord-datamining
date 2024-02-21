@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["98239"], {
+    ["67615"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -41918,8 +41918,8 @@
                     return g
                 }
             });
-            var s = n("249654"),
-                i = n("845579"),
+            var s = n("845579"),
+                i = n("299039"),
                 r = n("913796"),
                 a = n("360191"),
                 o = n("581091"),
@@ -41931,20 +41931,20 @@
                         getFormatter: t ? o.getAbbreviatedFormatter : o.getFullFormatter
                     })
                 },
-                l = (e, t) => e.acked || t !== i.NOTIFICATION_CENTER_ACKED_BEFORE_ID_UNSET && s.default.compare(t, e.id) >= 0;
+                l = (e, t) => e.acked || t !== s.NOTIFICATION_CENTER_ACKED_BEFORE_ID_UNSET && i.default.compare(t, e.id) >= 0;
 
             function f(e, t) {
                 var n;
-                let i = s.default.fromTimestamp(new Date(t).getTime());
+                let s = i.default.fromTimestamp(new Date(t).getTime());
                 return {
                     acked: !1,
                     forceUnacked: !0,
                     other_user: e,
                     kind: "notification-center-item",
-                    local_id: "incoming_friend_requests_".concat(e.id, "_").concat(i),
+                    local_id: "incoming_friend_requests_".concat(e.id, "_").concat(s),
                     deeplink: "https://discord.com/users/".concat(e.id),
                     type: a.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS,
-                    id: i,
+                    id: s,
                     body: d.default.Messages.NOTIFICATION_CENTER_INCOMING_FRIEND_REQUEST.format({
                         username: "**".concat(null !== (n = e.globalName) && void 0 !== n ? n : e.username, "**")
                     })
@@ -41952,7 +41952,7 @@
             }
 
             function _(e) {
-                let t = s.default.fromTimestamp(new Date().getTime());
+                let t = i.default.fromTimestamp(new Date().getTime());
                 return {
                     acked: !1,
                     enableBadge: !0,
@@ -49399,13 +49399,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 MESSAGE_REQUESTS_BASE_CHANNEL_ID: function() {
-                    return v
+                    return E
                 },
                 isViewChannelSidebar: function() {
-                    return A
+                    return D
                 },
                 default: function() {
-                    return b
+                    return V
                 }
             });
             var s = n("394846"),
@@ -49413,112 +49413,113 @@
                 r = n("913144"),
                 a = n("582713"),
                 o = n("659500"),
-                d = n("42203"),
-                u = n("957255"),
-                l = n("744983"),
-                f = n("18494"),
-                _ = n("162771"),
-                c = n("697218"),
-                g = n("49111"),
-                m = n("724210"),
-                h = n("843455");
-            let v = "message_requests",
-                E = !1,
+                d = n("299039"),
+                u = n("42203"),
+                l = n("957255"),
+                f = n("744983"),
+                _ = n("18494"),
+                c = n("162771"),
+                g = n("697218"),
+                m = n("49111"),
+                h = n("724210"),
+                v = n("843455");
+            let E = "message_requests",
                 p = !1,
-                y = !0,
-                T = !1,
-                C = {},
-                I = {};
-
-            function S(e) {
-                if (null == e) return null;
-                if ((0, m.isStaticChannelRoute)(e)) {
-                    let t = _.default.getGuildId();
-                    return null == t ? null : (0, m.buildGuildStaticChannelId)(e, t)
-                }
-                return e
-            }
+                y = !1,
+                T = !0,
+                C = !1,
+                I = {},
+                S = {};
 
             function A(e) {
-                return [a.SidebarType.VIEW_CHANNEL, a.SidebarType.VIEW_THREAD, a.SidebarType.VIEW_MESSAGE_REQUEST].includes(e.type)
+                if (null == e) return null;
+                if ((0, h.isStaticChannelRoute)(e)) {
+                    let t = c.default.getGuildId();
+                    return null == t ? null : (0, h.buildGuildStaticChannelId)(e, t)
+                }
+                return e
             }
 
             function D(e) {
-                let t = !1;
-                T && (T = !1, t = !0);
-                let n = S(f.default.getChannelId());
-                return null != n && n in C && (delete C[n], t = !0), t && e ? e : !e
+                return [a.SidebarType.VIEW_CHANNEL, a.SidebarType.VIEW_THREAD, a.SidebarType.VIEW_MESSAGE_REQUEST].includes(e.type)
             }
 
-            function N() {
+            function N(e) {
+                let t = !1;
+                C && (C = !1, t = !0);
+                let n = A(_.default.getChannelId());
+                return null != n && n in I && (delete I[n], t = !0), t && e ? e : !e
+            }
+
+            function O() {
                 let e = !1;
-                for (let t in C) {
-                    let n = C[t];
+                for (let t in I) {
+                    let n = I[t];
                     if (n.type === a.SidebarType.VIEW_THREAD || n.type === a.SidebarType.VIEW_CHANNEL) {
-                        let s = d.default.getChannel(n.channelId);
-                        (null == s || !u.default.can(h.Permissions.VIEW_CHANNEL, s)) && (delete C[t], e = !0)
+                        let s = u.default.getChannel(n.channelId);
+                        (null == s || !l.default.can(v.Permissions.VIEW_CHANNEL, s)) && (delete I[t], e = !0)
                     }
                 }
                 return e
             }
 
-            function O() {
-                if (T === l.default.isActive()) return !1;
-                T = l.default.isActive()
+            function P() {
+                if (C === f.default.isActive()) return !1;
+                C = f.default.isActive()
             }
-            class P extends i.default.PersistedStore {
+            class b extends i.default.PersistedStore {
                 initialize(e) {
                     if (null != e) {
                         var t, n, s, i, r;
-                        E = null !== (t = e.isMembersOpen) && void 0 !== t && t, p = null !== (n = e.isSummariesOpen) && void 0 !== n && n, y = null === (s = e.isProfileOpen) || void 0 === s || s, C = null !== (i = e.sidebars) && void 0 !== i ? i : {}, I = null !== (r = e.guildSidebars) && void 0 !== r ? r : {}
+                        p = null !== (t = e.isMembersOpen) && void 0 !== t && t, y = null !== (n = e.isSummariesOpen) && void 0 !== n && n, T = null === (s = e.isProfileOpen) || void 0 === s || s, I = null !== (i = e.sidebars) && void 0 !== i ? i : {}, S = null !== (r = e.guildSidebars) && void 0 !== r ? r : {}
                     }
-                    this.syncWith([l.default], O), this.syncWith([u.default], N)
+                    this.syncWith([f.default], P), this.syncWith([l.default], O)
                 }
                 getState() {
                     return {
-                        isMembersOpen: E,
-                        isSummariesOpen: p,
-                        isProfileOpen: y,
-                        sidebars: C,
-                        guildSidebars: I
+                        isMembersOpen: p,
+                        isSummariesOpen: y,
+                        isProfileOpen: T,
+                        sidebars: I,
+                        guildSidebars: S
                     }
                 }
                 getSection(e, t) {
-                    if (T) return g.ChannelSections.SEARCH;
-                    let n = S(e);
-                    return null != n && null != C[n] ? g.ChannelSections.SIDEBAR_CHAT : t && y ? g.ChannelSections.PROFILE : p ? g.ChannelSections.SUMMARIES : E ? g.ChannelSections.MEMBERS : g.ChannelSections.NONE
+                    if (C) return m.ChannelSections.SEARCH;
+                    let n = A(e);
+                    return null != n && null != I[n] ? m.ChannelSections.SIDEBAR_CHAT : t && T ? m.ChannelSections.PROFILE : y ? m.ChannelSections.SUMMARIES : p ? m.ChannelSections.MEMBERS : m.ChannelSections.NONE
                 }
                 getSidebarState(e) {
-                    let t = S(e);
-                    return null == t ? void 0 : C[t]
+                    let t = A(e);
+                    return null == t ? void 0 : I[t]
                 }
                 getGuildSidebarState(e) {
-                    return null == e ? void 0 : I[e]
+                    return null == e ? void 0 : S[e]
                 }
                 getCurrentSidebarChannelId(e) {
-                    let t = S(e);
-                    if (null == t || T) return null;
-                    let n = C[t];
+                    let t = A(e);
+                    if (null == t || C) return null;
+                    let n = I[t];
                     return null == n ? null : n.type === a.SidebarType.VIEW_THREAD || n.type === a.SidebarType.VIEW_CHANNEL ? n.channelId : null
                 }
                 getCurrentSidebarMessageId(e) {
                     var t;
-                    let n = S(e);
-                    if (null == n || T) return null;
-                    let s = C[n];
+                    let n = A(e);
+                    if (null == n || C) return null;
+                    let s = I[n];
                     return null == s ? null : s.type === a.SidebarType.VIEW_THREAD || s.type === a.SidebarType.VIEW_CHANNEL ? null === (t = s.details) || void 0 === t ? void 0 : t.initialMessageId : null
                 }
             }
-            P.displayName = "ChannelSectionStore", P.persistKey = "ChannelSectionStore2";
-            var b = new P(r.default, {
+            b.displayName = "ChannelSectionStore", b.persistKey = "ChannelSectionStore2";
+            var V = new b(r.default, {
                 CHANNEL_TOGGLE_MEMBERS_SECTION: function() {
-                    p && (p = D(p)), E = D(E)
+                    y && (y = N(y)), p = N(p)
                 },
                 PROFILE_PANEL_TOGGLE_SECTION: function() {
-                    !y && o.ComponentDispatch.dispatch(g.ComponentActions.SEARCH_RESULTS_CLOSE), y = D(y)
+                    !T && o.ComponentDispatch.dispatch(m.ComponentActions.SEARCH_RESULTS_CLOSE), T = N(T)
                 },
                 CHANNEL_TOGGLE_SUMMARIES_SECTION: function() {
-                    E && (E = D(E)), p = D(p)
+                    p && (p = N(p)), y = N(y)
                 },
                 SIDEBAR_VIEW_CHANNEL: function(e) {
                     let {
@@ -49527,9 +49528,9 @@
                         channelId: s,
                         details: i
                     } = e;
-                    T = !1;
-                    let r = S(n);
-                    return null != r && (C[r] = {
+                    C = !1;
+                    let r = A(n);
+                    return null != r && (I[r] = {
                         type: t,
                         channelId: s,
                         details: i
@@ -49542,9 +49543,9 @@
                         baseChannelId: s,
                         details: i
                     } = e;
-                    T = !1;
-                    let r = S(s);
-                    return null != r && (I[n] = {
+                    C = !1;
+                    let r = A(s);
+                    return null != r && (S[n] = {
                         type: t,
                         baseChannelId: r,
                         guildId: n,
@@ -49557,9 +49558,9 @@
                         parentMessageId: n,
                         location: s
                     } = e;
-                    T = !1;
-                    let i = S(t);
-                    null != i && (C[i] = {
+                    C = !1;
+                    let i = A(t);
+                    null != i && (I[i] = {
                         type: a.SidebarType.CREATE_THREAD,
                         parentChannelId: t,
                         parentMessageId: n,
@@ -49569,38 +49570,38 @@
                 SIDEBAR_CLOSE: function(e) {
                     let {
                         baseChannelId: t
-                    } = e, n = S(t);
-                    null != n && delete C[n]
+                    } = e, n = A(t);
+                    null != n && delete I[n]
                 },
                 SIDEBAR_CLOSE_GUILD: function(e) {
                     let {
                         guildId: t
                     } = e;
-                    return null != I[t] && (delete I[t], !0)
+                    return null != S[t] && (delete S[t], !0)
                 },
                 CHANNEL_DELETE: function(e) {
                     let {
                         channel: t
                     } = e;
-                    if (t.id in C) return delete C[t.id], !0;
+                    if (t.id in I) return delete I[t.id], !0;
                     let n = !1;
-                    for (let e in C) {
-                        let s = C[e];
-                        null != s && s.type === a.SidebarType.VIEW_CHANNEL && s.channelId === t.id && (delete C[e], n = !0)
+                    for (let e in I) {
+                        let s = I[e];
+                        null != s && s.type === a.SidebarType.VIEW_CHANNEL && s.channelId === t.id && (delete I[e], n = !0)
                     }
                     return n
                 },
                 CHANNEL_SELECT: function() {
-                    s.isMobile && E && (E = !1, p = !1)
+                    s.isMobile && p && (p = !1, y = !1)
                 },
                 THREAD_CREATE: function(e) {
                     var t;
                     let {
                         channel: n
                     } = e;
-                    if (n.ownerId === (null === (t = c.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
-                    let s = C[n.parent_id];
-                    null != s && s.type === a.SidebarType.CREATE_THREAD && s.parentMessageId === n.id && (C[n.parent_id] = {
+                    if (n.ownerId === (null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return !1;
+                    let s = I[n.parent_id];
+                    null != s && s.type === a.SidebarType.CREATE_THREAD && s.parentMessageId === d.default.castChannelIdAsMessageId(n.id) && (I[n.parent_id] = {
                         type: a.SidebarType.VIEW_THREAD,
                         channelId: n.id
                     })
@@ -49608,9 +49609,9 @@
                 THREAD_DELETE: function(e) {
                     let {
                         channel: t
-                    } = e, n = C[t.parent_id];
+                    } = e, n = I[t.parent_id];
                     if (null == n || n.type !== a.SidebarType.VIEW_THREAD || n.channelId !== t.id) return !1;
-                    delete C[t.parent_id]
+                    delete I[t.parent_id]
                 }
             })
         },
@@ -49987,7 +49988,7 @@
                     if (null == i) return !1;
                     let r = i[1];
                     if (null == r) return !1;
-                    if (r.parentMessageId !== t.id) return !1;
+                    if (r.parentMessageId !== l.default.castChannelIdAsMessageId(t.id)) return !1;
                     {
                         var a, o;
                         let e = s[t.parent_id];
@@ -58050,7 +58051,7 @@
                     }), null != s.thumbnail && v(n.video) && function(e, t, n) {
                         if (null != t && f.test(t.name) || _.test(n.url)) return !1;
                         let s = null != n.proxy_url || /^https:/i.test(n.url);
-                        return 1492472454139 > u.default.extractTimestamp(e) && (s = s && null != t && c.test(t.name)), s
+                        return null != e && 1492472454139 > u.default.extractTimestamp(e) && (s = s && null != t && c.test(t.name)), s
                     }(t, n.provider, n.video) && (s.video = E(n.video))), h.has(s.type)) {
                     var r;
                     let e = null !== (r = n.fields) && void 0 !== r ? r : [];
@@ -61836,4 +61837,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98239.7633fe68370c40e8b436.js.map
+//# sourceMappingURL=67615.ba0929ddaec127c6c29f.js.map
