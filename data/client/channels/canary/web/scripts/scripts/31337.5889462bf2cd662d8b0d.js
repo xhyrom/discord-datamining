@@ -3677,7 +3677,7 @@
             }
 
             function E(e, t) {
-                return e instanceof u.ChannelRecordBase && null == e.guild_id ? e.type === _.ChannelTypes.DM && e.getRecipientId() === t ? o.ApplicationCommandContextType.BOT_DM : o.ApplicationCommandContextType.PRIVATE_CHANNEL : o.ApplicationCommandContextType.GUILD
+                return e instanceof u.ChannelRecordBase && null == e.guild_id ? e.type === _.ChannelTypes.DM && e.getRecipientId() === t ? o.InteractionContextType.BOT_DM : o.InteractionContextType.PRIVATE_CHANNEL : o.InteractionContextType.GUILD
             }
 
             function N(e) {
@@ -5657,4 +5657,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.c2d21da351dc7a05a461.js.map
+//# sourceMappingURL=31337.5889462bf2cd662d8b0d.js.map
