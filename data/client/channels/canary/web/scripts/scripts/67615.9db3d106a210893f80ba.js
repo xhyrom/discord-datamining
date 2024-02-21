@@ -52231,6 +52231,10 @@
                 getLastMessage(e) {
                     return i(this.getMessages(e).toArray()).reverse().get(0)
                 }
+                getLastNonCurrentUserMessage(e) {
+                    let t = P.default.getCurrentUser();
+                    return i(this.getMessages(e).toArray()).reverse().find(e => e.author.id !== (null == t ? void 0 : t.id))
+                }
                 jumpedMessageId(e) {
                     let t = o.default.get(e);
                     return null == t ? void 0 : t.jumpTargetId
@@ -61832,4 +61836,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.33596c733cb79c50e694.js.map
+//# sourceMappingURL=67615.9db3d106a210893f80ba.js.map

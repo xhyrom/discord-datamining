@@ -22141,6 +22141,7 @@
                 description: "description_eb851a",
                 footer: "footer__386cd",
                 heroImage: "heroImage__51d03",
+                safetyTips: "safetyTips_cf2252",
                 textContainer: "textContainer__5b062"
             }
         },
