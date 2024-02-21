@@ -21325,41 +21325,53 @@
             "use strict";
             e.exports = {
                 backgroundFallback: "backgroundFallback_f03a68",
-                brandingWrapper: "brandingWrapper_f30229",
                 content: "content__732fc",
-                contentCollapsed: "contentCollapsed__349be",
-                contentCollapsedAccepted: "contentCollapsedAccepted__7d21e",
-                contentExpanded: "contentExpanded__6935b",
                 contentWrapper: "contentWrapper_baf6c7",
                 contentWrapperAccepted: "contentWrapperAccepted__6d410",
                 contentWrapperExpanded: "contentWrapperExpanded__0ed2e",
-                cta: "cta_ea4a54",
-                ctaClaimReward: "ctaClaimReward_cd2cfd",
-                ctaWrapper: "ctaWrapper_e5ae54",
-                description: "description__721a3",
-                details: "details_d32a60",
-                heroAsset: "heroAsset__1fdf2",
-                heroAssetWrapper: "heroAssetWrapper_e3abb0",
                 lottieAnimation: "lottieAnimation_ce11a1",
                 lottieAnimationBackground: "lottieAnimationBackground_cd8496",
                 lottieAnimationBackgroundWrapper: "lottieAnimationBackgroundWrapper__463a1",
                 lottieAnimationForeground: "lottieAnimationForeground__84566",
                 lottieAnimationForegroundHidden: "lottieAnimationForegroundHidden_e989e2",
-                partnerBranding: "partnerBranding__359e5",
-                questAcceptedContent: "questAcceptedContent_c75f2d",
-                questAcceptedContentCopySubheading: "questAcceptedContentCopySubheading__74c9a",
-                questAcceptedContentHeading: "questAcceptedContentHeading__18c70",
-                questName: "questName__25488",
-                questProgressBar: "questProgressBar_d2e6fd",
-                questProgressRewardTile: "questProgressRewardTile__5f0e1",
-                questProgressWrapper: "questProgressWrapper__70743",
-                questPromoContent: "questPromoContent_ae1f67",
-                rewardTile: "rewardTile__52713",
-                submenuIcon: "submenuIcon__621a7",
-                submenuWrapper: "submenuWrapper__99cbf",
-                title: "title_ffe887",
-                utils: "utils__585f9",
-                wrapper: "wrapper_d895e9"
+                wrapper: "wrapper_d895e9",
+                wrapperVisible: "wrapperVisible__3ba8b"
+            }
+        },
+        368347: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                brandingWrapper: "brandingWrapper__2f8d2",
+                contentCollapsed: "contentCollapsed__80f0d",
+                contentCollapsedAccepted: "contentCollapsedAccepted_dd62bd",
+                partnerBranding: "partnerBranding_c1b5c7",
+                questName: "questName_cb6da6",
+                questProgressBar: "questProgressBar__991b3",
+                questProgressRewardTile: "questProgressRewardTile_a5ea1d",
+                questProgressWrapper: "questProgressWrapper__29bcb"
+            }
+        },
+        841274: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                contentExpanded: "contentExpanded_ffeded",
+                cta: "cta_f68ce1",
+                ctaClaimReward: "ctaClaimReward_e4b6be",
+                ctaWrapper: "ctaWrapper__85e96",
+                description: "description__445db",
+                details: "details__5f99d",
+                heroAsset: "heroAsset__75367",
+                heroAssetWrapper: "heroAssetWrapper_c61742",
+                questAcceptedContent: "questAcceptedContent__9c385",
+                questAcceptedContentCopySubheading: "questAcceptedContentCopySubheading__91908",
+                questAcceptedContentHeading: "questAcceptedContentHeading__48b7c",
+                questProgressRewardTile: "questProgressRewardTile__76400",
+                questPromoContent: "questPromoContent__2941f",
+                rewardTile: "rewardTile__4f06b",
+                submenuIcon: "submenuIcon__8f398",
+                submenuWrapper: "submenuWrapper__027da",
+                title: "title__08548",
+                utils: "utils_db260c"
             }
         },
         896451: function(e, t, n) {
