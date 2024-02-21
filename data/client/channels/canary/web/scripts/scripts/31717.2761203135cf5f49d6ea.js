@@ -26,11 +26,11 @@
                 M = n("582415"),
                 p = n("600798"),
                 A = n("569808"),
-                I = n("9294"),
-                T = n("52393"),
+                T = n("9294"),
+                I = n("52393"),
                 C = n("143291"),
-                D = n("379534"),
-                L = n("40566"),
+                L = n("379534"),
+                D = n("40566"),
                 O = n("994918"),
                 v = n("815297"),
                 y = n("168730"),
@@ -54,8 +54,8 @@
                 Y = n("957255"),
                 j = n("824563"),
                 J = n("660478"),
-                z = n("18494"),
-                X = n("162771"),
+                X = n("18494"),
+                z = n("162771"),
                 q = n("401848"),
                 Q = n("697218"),
                 Z = n("599110"),
@@ -90,7 +90,7 @@
                     location: l,
                     suggested: s = null,
                     overrideProperties: i = {}
-                } = e, r = (0, I.parseExtraDataFromInviteKey)(t), d = H.default.getChannel(n);
+                } = e, r = (0, T.parseExtraDataFromInviteKey)(t), d = H.default.getChannel(n);
                 if (null != d) {
                     let e = null;
                     d.isMultiUserDM() ? e = ei.LoggingInviteTypes.GDM_INVITE : !d.isPrivate() && (e = ei.LoggingInviteTypes.SERVER_INVITE);
@@ -520,12 +520,12 @@
                         let i = () => eh._sendMessage(e, t, l),
                             r = C.LocalMessageBackgroundSendingExperiment.getCurrentConfig({
                                 location: "8e1e29_1"
-                            }).enableBackgroundSending ? D.default.backgroundify(i, void 0) : i,
+                            }).enableBackgroundSending ? L.default.backgroundify(i, void 0) : i,
                             d = null !== (n = l.nonce) && void 0 !== n ? n : (0, v.createNonce)();
                         return (l = {
                             ...l,
                             nonce: d
-                        }, L.default.recordMessageSendAttempt(e, d), W.default.isReady(e)) ? r() : a && e !== er.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID ? (ec.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+                        }, D.default.recordMessageSendAttempt(e, d), W.default.isReady(e)) ? r() : a && e !== er.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID ? (ec.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
                             W.default.whenReady(e, () => {
                                 ec.info("Channel ".concat(e, " is ready for sending now.")), r().then(t, n)
                             })
@@ -549,7 +549,7 @@
                         }
                     },
                     sendInvite: (e, t, n, a) => eh._sendMessage(e, {
-                        content: (0, T.default)(t),
+                        content: (0, I.default)(t),
                         tts: !1,
                         validNonShortcutEmojis: [],
                         invalidEmojis: []
@@ -634,14 +634,14 @@
                                 location: m,
                                 suggestedInvite: S,
                                 stickerIds: M,
-                                messageReference: I,
-                                allowedMentions: T,
+                                messageReference: T,
+                                allowedMentions: I,
                                 poll: C
                             } = n,
-                            D = null !== (a = n.flags) && void 0 !== a ? a : 0,
+                            L = null !== (a = n.flags) && void 0 !== a ? a : 0,
                             [N, P] = (0, k.default)(d);
-                        if (N && (d = P, D = (0, ee.addFlag)(D, ei.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === d && null == h && null == M && null == C) return Promise.reject(Error("not sending empty message"));
-                        let B = null != I ? ei.MessageTypes.REPLY : ei.MessageTypes.DEFAULT,
+                        if (N && (d = P, L = (0, ee.addFlag)(L, ei.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === d && null == h && null == M && null == C) return Promise.reject(Error("not sending empty message"));
+                        let B = null != T ? ei.MessageTypes.REPLY : ei.MessageTypes.DEFAULT,
                             F = null !== (s = n.nonce) && void 0 !== s ? s : (0, v.createNonce)();
                         if (!1 !== n.eagerDispatch) {
                             let t = (0, v.default)({
@@ -649,9 +649,9 @@
                                 content: d,
                                 tts: f,
                                 type: B,
-                                messageReference: I,
-                                allowedMentions: T,
-                                flags: 0 !== D ? D : void 0,
+                                messageReference: T,
+                                allowedMentions: I,
+                                flags: 0 !== L ? L : void 0,
                                 nonce: F,
                                 poll: (0, G.createPollServerDataFromCreateRequest)(C)
                             });
@@ -672,9 +672,9 @@
                                 content: d,
                                 nonce: F,
                                 tts: f,
-                                message_reference: I,
-                                allowed_mentions: T,
-                                flags: D
+                                message_reference: T,
+                                allowed_mentions: I,
+                                flags: L
                             }
                         };
                         if (null != h) {
@@ -702,7 +702,7 @@
                                         queueSize: i
                                     },
                                     poll: C
-                                }), L.default.recordMessageSendApiResponse(F), r.default.dispatch({
+                                }), D.default.recordMessageSendApiResponse(F), r.default.dispatch({
                                     type: "SLOWMODE_RESET_COOLDOWN",
                                     slowmodeType: q.SlowmodeType.SendMessage,
                                     channelId: e
@@ -750,8 +750,8 @@
                                         else if (t === _.CodedLinkType.APP_DIRECTORY_PROFILE) Z.default.track(ei.AnalyticEvents.APP_DIRECTORY_PROFILE_EMBED_SENT, {
                                             application_id: d,
                                             device_platform: l.isMobile ? "mobile_web" : "desktop_web",
-                                            guild_id: X.default.getGuildId(),
-                                            channel_id: z.default.getChannelId()
+                                            guild_id: z.default.getGuildId(),
+                                            channel_id: X.default.getChannelId()
                                         });
                                         else if (t === _.CodedLinkType.ACTIVITY_BOOKMARK);
                                         else if (t === _.CodedLinkType.EMBEDDED_ACTIVITY_INVITE);
@@ -1044,7 +1044,7 @@
                 handleGuildDelete(e, t) {
                     !e.guild.unavailable && this.deleteGuild(e.guild.id, t)
                 }
-                handleReset() {}
+                resetInMemoryState() {}
                 insertStale(e, t, n, l) {
                     let i = r.default.messagesTransaction(l),
                         u = s.default.lastTimeConnectedChanged();
@@ -1138,135 +1138,154 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return y
                 }
             }), n("222007");
-            var a = n("446674"),
-                l = n("913144"),
-                s = n("42203"),
-                i = n("525065"),
-                r = n("18494"),
-                d = n("8001"),
-                u = n("625483"),
-                o = n("185496"),
-                c = n("689257"),
-                E = n("753848"),
-                f = n("818697"),
-                _ = n("875081");
-            let g = null,
-                h = new u.ExtendedMemoryLru(750, 500),
-                m = new o.Lru(15),
-                S = !1;
-            class M extends a.default.Store {
-                initialize() {
-                    this.waitFor(s.default), this.waitFor(r.default), this.waitFor(i.default), this.syncWith([d.default], () => !0), this.syncWith([r.default], p)
-                }
+            var a = n("42203"),
+                l = n("525065"),
+                s = n("18494"),
+                i = n("455079"),
+                r = n("8001"),
+                d = n("625483"),
+                u = n("185496"),
+                o = n("689257"),
+                c = n("753848"),
+                E = n("818697"),
+                f = n("875081");
+            let _ = null,
+                g = new d.ExtendedMemoryLru(750, 500),
+                h = new u.Lru(15),
+                m = !1;
+            class S extends i.default {
                 canEvictOrphans() {
-                    return S
+                    return m
                 }
                 saveLimit(e) {
-                    let t = s.default.getBasicChannel(e);
-                    return null != t && (0, E.isPrivateChannel)(t) || null != t && h.has(e) ? 25 : 1
+                    let t = a.default.getBasicChannel(e);
+                    return null != t && (0, c.isPrivateChannel)(t) || null != t && g.has(e) ? 25 : 1
                 }
                 getSaveableChannels() {
-                    let e = s.default.getChannelIds(null),
+                    let e = a.default.getChannelIds(null),
                         t = e.map(e => ({
                             guildId: null,
                             channelId: e
                         }));
-                    return d.default.isLowDisk ? null != g ? [...t, g] : t : [...t, ...h.values()]
+                    return r.default.isLowDisk ? null != _ ? [...t, _] : t : [...t, ...g.values()]
                 }
-                toSnapshot() {
+                takeSnapshot() {
                     return {
-                        v: 1,
-                        channels: [...h.allValues()].filter(e => !e.fallback),
-                        penalized: [...m.keys()],
-                        lastChannel: g
+                        version: S.LATEST_SNAPSHOT_VERSION,
+                        data: {
+                            channels: [...g.allValues()].filter(e => !e.fallback),
+                            penalized: [...h.keys()],
+                            lastChannel: _
+                        }
                     }
                 }
                 static mergeSnapshot(e) {
-                    let t = h,
-                        n = m;
-                    for (let n of (h = new u.ExtendedMemoryLru(h.primaryCapacity, h.extendedCapacity), m = new o.Lru(m.capacity), g = null != g ? g : e.lastChannel, [e.channels, t.values()]))
-                        for (let e of n) !e.fallback && h.put(e.channelId, e);
+                    let t = g,
+                        n = h;
+                    for (let n of (g = new d.ExtendedMemoryLru(g.primaryCapacity, g.extendedCapacity), h = new u.Lru(h.capacity), _ = null != _ ? _ : e.lastChannel, [e.channels, t.values()]))
+                        for (let e of n) !e.fallback && g.put(e.channelId, e);
                     for (let t of [e.penalized, n.keys()])
-                        for (let e of t) m.put(e, null)
+                        for (let e of t) h.put(e, null)
                 }
                 static recordChannel(e) {
-                    let t = s.default.getBasicChannel(e);
-                    if (null != t && (0, f.isReadableChannel)(t)) {
+                    let t = a.default.getBasicChannel(e);
+                    if (null != t && (0, E.isReadableChannel)(t)) {
                         var n;
                         let a = {
                             guildId: null !== (n = t.guild_id) && void 0 !== n ? n : null,
                             channelId: e,
                             channelType: t.type
                         };
-                        if (g = a, h.put(e, a), (0, c.isLimitedChannel)(t)) {
-                            let t = m.put(e, null);
-                            null != t && h.delete(e)
+                        if (_ = a, g.put(e, a), (0, o.isLimitedChannel)(t)) {
+                            let t = h.put(e, null);
+                            null != t && g.delete(e)
                         }
                     }
                 }
                 static deleteChannel(e) {
-                    h.delete(e)
+                    g.delete(e)
                 }
                 static deleteGuild(e) {
-                    for (let t of h.allValues()) t.guildId === e && h.delete(t.channelId)
+                    for (let t of g.allValues()) t.guildId === e && g.delete(t.channelId)
                 }
                 static dropUnreachableChannels() {
-                    for (let e of h.keys()) {
-                        let t = s.default.getBasicChannel(e);
-                        !(0, f.isReadableChannel)(t) && M.deleteChannel(e)
+                    for (let e of g.keys()) {
+                        let t = a.default.getBasicChannel(e);
+                        !(0, E.isReadableChannel)(t) && S.deleteChannel(e)
                     }
                 }
                 static deleteUnreadableGuildChannels(e) {
-                    for (let t of h.values()) e === t.guildId && !(0, f.isReadableChannelId)(t.channelId) && M.deleteChannel(t.channelId)
+                    for (let t of g.values()) e === t.guildId && !(0, E.isReadableChannelId)(t.channelId) && S.deleteChannel(t.channelId)
                 }
                 static replaceLru(e) {
-                    h = e
+                    g = e
+                }
+                constructor() {
+                    super(), this.loadCache = () => {
+                        let e = this.readSnapshot(S.LATEST_SNAPSHOT_VERSION);
+                        null != e && (m = !0, S.mergeSnapshot(e))
+                    }, this.registerActionHandlers({
+                        CACHE_LOADED_LAZY_NO_CACHE: v,
+                        CACHE_LOADED_LAZY: this.loadCache,
+                        CHANNEL_DELETE: I,
+                        CHANNEL_UPDATES: T,
+                        CONNECTION_OPEN_SUPPLEMENTAL: p,
+                        GUILD_DELETE: D,
+                        LOGIN_SUCCESS: O,
+                        THREAD_DELETE: L,
+                        THREAD_UPDATE: C
+                    }), this.waitFor(a.default), this.waitFor(s.default), this.waitFor(l.default), this.syncWith([r.default], () => !0), this.syncWith([s.default], M)
                 }
             }
 
+            function M() {
+                let e = s.default.getChannelId();
+                null != e && S.recordChannel(e)
+            }
+
             function p() {
-                let e = r.default.getChannelId();
-                null != e && M.recordChannel(e)
+                S.dropUnreachableChannels(), S.replaceLru((0, f.withFallbacks)(g, 1250))
             }
 
             function A(e) {
                 let t = e.id,
-                    n = (0, f.isReadableChannel)(e),
-                    a = r.default.getChannelId();
-                n && t === a && M.recordChannel(t), !n && M.deleteChannel(t)
+                    n = (0, E.isReadableChannel)(e),
+                    a = s.default.getChannelId();
+                n && t === a && S.recordChannel(t), !n && S.deleteChannel(t)
             }
-            var I = new M(l.default, {
-                CACHE_LOADED_LAZY_NO_CACHE: function(e) {
-                    S = !0
-                },
-                CACHE_LOADED_LAZY: function(e) {
-                    S = !0, null != e.saveableChannels && M.mergeSnapshot(e.saveableChannels)
-                },
-                CHANNEL_DELETE: function(e) {
-                    M.deleteChannel(e.channel.id)
-                },
-                CHANNEL_UPDATES: function(e) {
-                    for (let t of e.channels) A(t)
-                },
-                CONNECTION_OPEN_SUPPLEMENTAL: function() {
-                    M.dropUnreachableChannels(), M.replaceLru((0, _.withFallbacks)(h, 1250))
-                },
-                GUILD_DELETE: function(e) {
-                    return !e.guild.unavailable && (M.deleteGuild(e.guild.id), !0)
-                },
-                LOGIN_SUCCESS: function(e) {
-                    h.clear(), m.clear(), S = !1
-                },
-                THREAD_DELETE: function(e) {
-                    M.deleteChannel(e.channel.id)
-                },
-                THREAD_UPDATE: function(e) {
-                    A(e.channel)
-                }
-            })
+
+            function T(e) {
+                for (let t of e.channels) A(t)
+            }
+
+            function I(e) {
+                S.deleteChannel(e.channel.id)
+            }
+
+            function C(e) {
+                A(e.channel)
+            }
+
+            function L(e) {
+                S.deleteChannel(e.channel.id)
+            }
+
+            function D(e) {
+                return !e.guild.unavailable && (S.deleteGuild(e.guild.id), !0)
+            }
+
+            function O(e) {
+                g.clear(), h.clear(), m = !1
+            }
+
+            function v(e) {
+                m = !0
+            }
+            S.displayName = "SaveableChannelsStore", S.LATEST_SNAPSHOT_VERSION = 1;
+            var y = new S
         },
         689257: function(e, t, n) {
             "use strict";
@@ -3262,4 +3281,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.fd08b13fd2b78c7ad998.js.map
+//# sourceMappingURL=31717.2761203135cf5f49d6ea.js.map
