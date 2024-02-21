@@ -16685,6 +16685,7 @@
   "QUESTS_LANDING_PAGE_MOBILE_WEB_BODY": "\"Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the quest there.\"",
   "QUESTS_GET_THIS_GAME": "\"Get this game\"",
   "QUESTS_DISCLOSURE_LABEL": "\"Why am I seeing this?\"",
+  "QUESTS_SHARE_LINK": "\"Copy share link\"",
   "QUESTS_HIDE_THIS": "\"Hide this\"",
   "QUESTS_FIND_QUEST": "\"You can find this again in User Settings > Gift Inventory\"",
   "QUESTS_CLAIM_BY": "\"Claim by {expirationDate}.\"",
