@@ -14286,7 +14286,7 @@
                 ApplicationDirectoryEntryCarouselItemType: function() {
                     return a
                 },
-                ApplicationCommandContextType: function() {
+                InteractionContextType: function() {
                     return o
                 },
                 ApplicationCommandOptionType: function() {
@@ -50007,7 +50007,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267821"
+                                build_number: "267834"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64135,4 +64135,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.5e285f1f39029145ce62.js.map
+//# sourceMappingURL=41039.a9a8d3570f22bae9e3f4.js.map
