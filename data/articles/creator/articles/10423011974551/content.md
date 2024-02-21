@@ -1,6 +1,3 @@
-<h3 id="h_01HHG1X7XAGFQDJZFAF2X935GF">
-    <strong><span style="color: #104c32;" data-darkreader-inline-color="">Note: Server monetization tools are currently only available for US-based servers. To stay in the loop on international expansion, </span></strong><a href="https://share.hsforms.com/1lyeXVPncR_CYxaE-61u6yw2bach"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">click here</span></strong></a><strong><span style="color: #104c32;" data-darkreader-inline-color=""> to join the waitlist.</span></strong>
-</h3>
 <p id="docs-internal-guid-9f2baa7c-7fff-6650-6f2c-950c7ecda274"><span style="color: #4f545c;" data-darkreader-inline-color="">Server Monetization is a way for servers to earn money on Discord. Read on to learn what you need to know as a server admin. If you’re not a server admin but have questions related to Server Subscriptions or Server Products you can</span><a href="https://support.discord.com/hc/en-us/articles/4415163187607"><strong><span style="color: #5865f2;" data-darkreader-inline-color=""> visit this help page for more information.</span></strong></a></p>
 <p class="wysiwyg-text-align-center"><span class="wysiwyg-underline"><img src="https://creator-support.discord.com/hc/article_attachments/19675406727191"></span></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
@@ -62,7 +59,7 @@
 <h2 id="h_01HHG1XZR1GGA87443YPDFCR0R">How can I monetize my server?</h2>
 <p>Servers can earn money on Discord by offering Server Subscriptions (a tiered monthly subscription that provides access to exclusive content) and Server Products (currently in beta testing and available to a select group of servers).</p>
 <h2 id="h_01HHG1XZR1KJN764TKHNBG8WTF">Who is eligible to monetize their servers? </h2>
-<ol>
+<ol id="docs-internal-guid-01050d2e-7fff-951b-58ed-ed110bfea5a5">
     <li>You must be a server owner</li>
     <li>Your account must meet the requirements below. Please note that we look at a number of safety and security signals for each account. This is not an exhaustive list, but examples that we offer for transparency and ease of understanding. </li>
 </ol>
@@ -70,15 +67,17 @@
     <li>You must be 18 years or older.</li>
     <li>Your account must be in good standing. Good standing includes but is not limited to:
         <ol>
-            <li>You are not actively violating any of Discord’s<a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"> Terms</a> or<a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer"> Guidelines</a>.</li>
+            <li>You are not actively violating any of Discord’s<a href="https://discord.com/terms"> <span class="wysiwyg-underline" style="color: #1155cc;">Terms</span></a> or<a href="https://discord.com/guidelines"> <span class="wysiwyg-underline" style="color: #1155cc;">Guidelines</span></a>.</li>
             <li>Your account has not received a safety violation in the past 30 days</li>
             <li>Your account has not been flagged for suspicious activity usually reserved for safety, abuse, and fraud cases.</li>
             <li>No outstanding dues or unpaid charges owed to Discord</li>
         </ol>
     </li>
     <li>You must have your email verified.</li>
-    <li>You must have<a href="https://support.discord.com/hc/en-us/articles/219576828" target="_blank" rel="noopener noreferrer"> Two-Factor Authentication</a> enabled. Please note, you cannot remove 2FA when you have published server subscription tiers in your servers.</li>
+    <li>You must have<a href="https://support.discord.com/hc/en-us/articles/219576828"><span class="wysiwyg-underline" style="color: #1155cc;"> Two-Factor Authentication</span></a> enabled. Please note, you cannot remove 2FA when you have published server subscription tiers in your servers.</li>
+    <li>You must be based within the United States and be able to provide a US-based bank account as well as US Identification Document to Stripe</li>
 </ol>
+<p>Your server may not offer anything listed on <a href="https://stripe.com/legal/restricted-businesses"><span class="wysiwyg-underline" style="color: #1155cc;">Stripe's Prohibited and Restricted Businesses List </span></a></p>
 <p>Please read the<a href="https://support.discord.com/hc/en-us/articles/5330075836311"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Monetization Terms</span></a> for more details on the specific eligibility requirements.</p>
 <h2 id="h_01HHG1XZR1AF6GH4MTNPCXPT2B">What types of content am I NOT allowed to monetize on Discord?</h2>
 <p>Please closely review the full list of prohibited content in our <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer">Monetization Policy</a>. This list includes:</p>
@@ -218,13 +217,9 @@
 <p>You would need to give them a role with permissions that denies them the ability to chat, but this is a manual process for each channel, for a specific user, which you'd then have to manually remove later.</p>
 <h2 id="h_01HHG1XZR23FKGH8Y1VE5QGMAB"><strong>Mobile Support</strong></h2>
 <p><strong>Q: When will Server Subscriptions be supported on the Discord mobile app? </strong></p>
-<p>A: We are currently rolling out In-App Purchasing (IAP) for iOS mobile devices to servers with Server Subscriptions enabled.  </p>
+<p>A: In-App purchasing (<strong>IAP</strong>) is only available on iOS. There is no support for IAP on Android.</p>
 <p><strong>Q: Do mobile subscriptions have the same revenue split as desktop subscriptions?</strong></p>
 <p>A: No. Apple takes an additional 30% of revenue from all subscriptions initiated through the Discord iOS application. Subscribers on iOS mobile devices will see a higher price on iOS checkout to account for the additional iOS fee. </p>
 <p>More information on the fee structures is available in the Monetization Terms: https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</p>
-<p><strong>Q: When will subscriptions be purchasable on Android?</strong></p>
-<p>A: We’re working on it! We don’t have any timing to share at this point but we are actively working to bring Server Subscriptions to Android mobile devices.</p>
-<p><strong>Q: Why am I unable to see Server Products when using the mobile app? </strong></p>
-<p>A: Server Products is currently a limited experiment that’s only available on desktop and web within the United States. If you are still unable to see this feature while on desktop and web, please be sure to join our waitlist <a href="https://share.hsforms.com/1lyeXVPncR_CYxaE-61u6yw2bach" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <p id="docs-internal-guid-4bf1aa3b-7fff-17f0-2da8-fb24160557e4"><strong>Q: Do my server members get a grace period for Server Subscription payments?<br></strong>A: Your members with a Server Subscription through the iOS App Store will have a grace period of 28 days to correct the payment issue if their auto-renewal payment fails. If the payment issue is fixed within that 28 day period, the subscription will continue. However, if a successful payment is not made within the 28 days, the subscription and features associated with it will end.</p>
 <p> </p>
