@@ -28556,12 +28556,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 getNavYouBarExperiment: function() {
-                    return a
+                    return o
                 }
             });
             var i = n("868493"),
-                r = n("133337");
-            let s = (0, i.default)({
+                r = n("133337"),
+                s = n("21121");
+            let a = (0, i.default)({
                 kind: "user",
                 id: "2024-02_navi_bar",
                 label: "Mobile Redesign - Nav Experiment: You Bar",
@@ -28583,8 +28584,14 @@
                 }]
             });
 
-            function a(e, t) {
-                return (0, r.getMergedExperimentConfigs)(s.existingUsers, s.newUsers, e, t)
+            function o(e, t) {
+                var n;
+                let i = !(0, s.isInMainTabsExperiment)();
+                return (0, r.getMergedExperimentConfigs)(a.existingUsers, a.newUsers, e, {
+                    ...t,
+                    disable: !!i || (null == t ? void 0 : t.disable),
+                    autoTrackExposure: !i && (null === (n = null == t ? void 0 : t.autoTrackExposure) || void 0 === n || n)
+                })
             }
         },
         693051: function(e, t, n) {
@@ -28697,9 +28704,9 @@
             }
 
             function l() {
-                return !(0, r.getNavYouBarExperiment)({
+                return (0, i.isInMainTabsExperiment)() && !(0, r.getNavYouBarExperiment)({
                     location: "isSplitMessagesTab"
-                }).showYouBar && (0, i.isInMainTabsExperiment)()
+                }).showYouBar
             }
 
             function u() {
@@ -28709,9 +28716,7 @@
             }
 
             function c(e) {
-                return !!o() && ((0, r.getNavYouBarExperiment)({
-                    location: "shouldHandleNewPanelsRoute"
-                }).showYouBar ? null != e : null != e && e !== a.ME)
+                return !!o() && (!l() || null != e && e !== a.ME)
             }
         },
         491246: function(e, t, n) {
@@ -50002,7 +50007,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267659"
+                                build_number: "267673"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64120,4 +64125,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.e8505c32198a81d2e144.js.map
+//# sourceMappingURL=41039.3ebd9c418b439c1c7788.js.map
