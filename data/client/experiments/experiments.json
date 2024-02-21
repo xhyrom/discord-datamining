@@ -10174,14 +10174,14 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 5000
+                  "end": 7500
                 }
               ]
             },
             "none": {
               "rollout": [
                 {
-                  "start": 5000,
+                  "start": 7500,
                   "end": 10000
                 }
               ]
