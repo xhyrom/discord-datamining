@@ -5521,7 +5521,7 @@
                         opacity: 1
                     },
                     [a.LIGHT]: {
-                        raw: "BLUE_345",
+                        raw: "BLUE_360",
                         opacity: 1
                     },
                     [a.MIDNIGHT]: {
@@ -8276,7 +8276,7 @@
                 STATUS_DANGER_BACKGROUND: {
                     category: "generic",
                     [a.DARK]: {
-                        raw: "RED_400",
+                        raw: "RED_430",
                         opacity: 1
                     },
                     [a.LIGHT]: {
@@ -8284,11 +8284,11 @@
                         opacity: 1
                     },
                     [a.MIDNIGHT]: {
-                        raw: "RED_400",
+                        raw: "RED_430",
                         opacity: 1
                     },
                     [a.DARKER]: {
-                        raw: "RED_400",
+                        raw: "RED_430",
                         opacity: 1
                     }
                 },
@@ -12727,7 +12727,7 @@
                 "embed-background-alternate": [o.Color.PRIMARY_600, o.Color.PRIMARY_200, o.Color.PRIMARY_600, o.Color.PRIMARY_600],
                 "embed-title": [o.Color.PRIMARY_130, o.Color.PRIMARY_860, o.Color.PLUM_2, o.Color.PLUM_3],
                 "expression-picker-bg": [o.Color.PRIMARY_630, o.Color.PRIMARY_130, o.Color.BLACK_500, o.Color.PLUM_20],
-                "focus-primary": [o.Color.BLUE_345, o.Color.BLUE_345, o.Color.BLUE_345, o.Color.BLUE_345],
+                "focus-primary": [o.Color.BLUE_345, o.Color.BLUE_360, o.Color.BLUE_345, o.Color.BLUE_345],
                 "forum-post-extra-media-count-container-background": [o.Color.PRIMARY_660, o.Color.PRIMARY_160, o.Color.PLUM_19, o.Color.PLUM_19],
                 "forum-post-tag-background": [o.Color.PRIMARY_660, o.Color.PRIMARY_160, o.Color.PLUM_19, o.Color.PLUM_19],
                 "guild-icon-inactive-bg": [o.Color.PRIMARY_630, o.Color.PRIMARY_130, o.Color.BLACK_500, o.Color.PLUM_20],
@@ -12868,7 +12868,7 @@
                 "spoiler-hidden-background": [o.Color.PRIMARY_700, o.Color.PRIMARY_200, o.Color.PLUM_14, o.Color.PLUM_14],
                 "spoiler-revealed-background": [o.Color.PRIMARY_660, o.Color.PRIMARY_160, o.Color.PLUM_11, o.Color.PLUM_11],
                 "status-danger": [o.Color.RED_400, o.Color.RED_430, o.Color.RED_400, o.Color.RED_400],
-                "status-danger-background": [o.Color.RED_400, o.Color.RED_430, o.Color.RED_400, o.Color.RED_400],
+                "status-danger-background": [o.Color.RED_430, o.Color.RED_430, o.Color.RED_430, o.Color.RED_430],
                 "status-danger-text": [o.Color.WHITE_500, o.Color.WHITE_500, o.Color.WHITE_500, o.Color.WHITE_500],
                 "status-dnd": [o.Color.RED_400, o.Color.RED_430, o.Color.RED_400, o.Color.RED_400],
                 "status-idle": [o.Color.YELLOW_300, o.Color.YELLOW_400, o.Color.YELLOW_300, o.Color.YELLOW_300],
@@ -13819,4 +13819,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.f11fce97cf676cbceac2.js.map
+//# sourceMappingURL=7273.254b706dc67d3f30b598.js.map

@@ -45459,8 +45459,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -57312,7 +57312,7 @@ html .progress__4ef76 {
     margin: 16px 0
 }
 
-.body__79fb5 {
+.body__4adb3 {
     color: var(--text-normal);
     font-size: 16px;
     line-height: 20px;
@@ -57320,34 +57320,66 @@ html .progress__4ef76 {
     background-color: var(--modal-background)
 }
 
-.confirmDiscountContent__042f6 {
+.confirmDiscountContent__069ff {
     padding-top: 30px
 }
 
-.confirmDiscountDescription__304a0 {
+.confirmDiscountDescription_d3ad31 {
     display: flex;
     align-items: center;
     padding-top: 28px
 }
 
-.confirmDiscountIcon__8b239 {
+.confirmDiscountIcon__03a15 {
     padding-right: 20px
 }
 
-.confirmDiscountLegalese_ce1641 {
+.confirmDiscountLegalese_cb90a1 {
     padding-top: 28px
 }
 
-.confirmDiscountLegaleseText__96b06 {
+.confirmDiscountLegaleseText__58adf {
     color: var(--interactive-normal)
 }
 
-.confirmDiscountButtons__47280 {
+.confirmDiscountButtons__5d8f0 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-top: 20px;
     padding-bottom: 8px
+}
+
+.body_a87294 {
+    color: var(--text-normal);
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 16px
+}
+
+.cancellationHeader_a13fea {
+    margin-bottom: -4px
+}
+
+.whatYouLoseButtonContainer_ea03d9 {
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.discountAppliedBody_bc9e7c {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px
+}
+
+.bodyString__2f21a {
+    margin-bottom: 20px
+}
+
+.nitroIcon__04f2d {
+    width: 34px;
+    height: 34px;
+    padding-right: 10px
 }
 
 .noticeRoot_c88e50 {
@@ -113932,6 +113964,12 @@ html .invoiceCancelRow_c1bfe7 {
     flex-direction: row-reverse
 }
 
+.confettiCanvas__3aa34 {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
 .confirmation_dda641 {
     align-items: center;
     display: flex;
@@ -125380,7 +125418,7 @@ div.nagbar_c731ff {
     --spoiler-hidden-background: var(--primary-700);
     --spoiler-revealed-background: var(--primary-660);
     --status-danger: var(--red-400);
-    --status-danger-background: var(--red-400);
+    --status-danger-background: var(--red-430);
     --status-danger-text: var(--white-500);
     --status-dnd: var(--red-400);
     --status-idle: var(--yellow-300);
@@ -125555,7 +125593,7 @@ div.nagbar_c731ff {
     --embed-background-alternate: var(--primary-200);
     --embed-title: var(--primary-860);
     --expression-picker-bg: var(--primary-130);
-    --focus-primary: var(--blue-345);
+    --focus-primary: var(--blue-360);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-160-hsl) / 0.8);
     --forum-post-tag-background: hsl(var(--primary-160-hsl) / 0.9);
     --guild-icon-inactive-bg: var(--primary-130);
@@ -126012,7 +126050,7 @@ div.nagbar_c731ff {
     --spoiler-hidden-background: var(--plum-14);
     --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
     --status-danger: var(--red-400);
-    --status-danger-background: var(--red-400);
+    --status-danger-background: var(--red-430);
     --status-danger-text: var(--white-500);
     --status-dnd: var(--red-400);
     --status-idle: var(--yellow-300);
@@ -126328,7 +126366,7 @@ div.nagbar_c731ff {
     --spoiler-hidden-background: var(--plum-14);
     --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
     --status-danger: var(--red-400);
-    --status-danger-background: var(--red-400);
+    --status-danger-background: var(--red-430);
     --status-danger-text: var(--white-500);
     --status-dnd: var(--red-400);
     --status-idle: var(--yellow-300);
@@ -127660,4 +127698,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5ccb2c7732d6c77ce561.css.map*/
+/*# sourceMappingURL=app.0d53dc577df207406f77.css.map*/
