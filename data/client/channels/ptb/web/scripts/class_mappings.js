@@ -19868,6 +19868,7 @@
                 body: "body_ca65c1",
                 cancelImage: "cancelImage__688be",
                 cancellationHeader: "cancellationHeader_bdb51b",
+                confettiCanvas: "confettiCanvas__3aa34",
                 errorBlock: "errorBlock_e05293",
                 invoiceCancelRow: "invoiceCancelRow_c1bfe7",
                 invoiceTable: "invoiceTable__216bc",
@@ -19877,16 +19878,27 @@
                 whatYouLoseButtonContainer: "whatYouLoseButtonContainer_cf923c"
             }
         },
-        217668: function(e, t, n) {
+        893643: function(e, t, n) {
             "use strict";
             e.exports = {
-                body: "body__79fb5",
-                confirmDiscountButtons: "confirmDiscountButtons__47280",
-                confirmDiscountContent: "confirmDiscountContent__042f6",
-                confirmDiscountDescription: "confirmDiscountDescription__304a0",
-                confirmDiscountIcon: "confirmDiscountIcon__8b239",
-                confirmDiscountLegalese: "confirmDiscountLegalese_ce1641",
-                confirmDiscountLegaleseText: "confirmDiscountLegaleseText__96b06"
+                body: "body__4adb3",
+                confirmDiscountButtons: "confirmDiscountButtons__5d8f0",
+                confirmDiscountContent: "confirmDiscountContent__069ff",
+                confirmDiscountDescription: "confirmDiscountDescription_d3ad31",
+                confirmDiscountIcon: "confirmDiscountIcon__03a15",
+                confirmDiscountLegalese: "confirmDiscountLegalese_cb90a1",
+                confirmDiscountLegaleseText: "confirmDiscountLegaleseText__58adf"
+            }
+        },
+        454555: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                body: "body_a87294",
+                bodyString: "bodyString__2f21a",
+                cancellationHeader: "cancellationHeader_a13fea",
+                discountAppliedBody: "discountAppliedBody_bc9e7c",
+                nitroIcon: "nitroIcon__04f2d",
+                whatYouLoseButtonContainer: "whatYouLoseButtonContainer_ea03d9"
             }
         },
         423525: function(e, t, n) {
