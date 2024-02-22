@@ -8,11 +8,11 @@
                     throw Error("setTimeout has not been defined")
                 }
 
-                function s() {
+                function c() {
                     throw Error("clearTimeout has not been defined")
                 }
 
-                function c(e) {
+                function s(e) {
                     if (r === setTimeout) return setTimeout(e, 0);
                     if ((r === a || !r) && setTimeout) return r = setTimeout, setTimeout(e, 0);
                     try {
@@ -31,9 +31,9 @@
                         r = a
                     }
                     try {
-                        o = "function" == typeof clearTimeout ? clearTimeout : s
+                        o = "function" == typeof clearTimeout ? clearTimeout : c
                     } catch (e) {
-                        o = s
+                        o = c
                     }
                 }();
                 var l = [],
@@ -46,7 +46,7 @@
 
                 function p() {
                     if (!d) {
-                        var e = c(h);
+                        var e = s(h);
                         d = !0;
                         for (var t = l.length; t;) {
                             for (i = l, l = []; ++f < t;) i && i[f].run();
@@ -54,7 +54,7 @@
                         }
                         i = null, d = !1, ! function(e) {
                             if (o === clearTimeout) return clearTimeout(e);
-                            if ((o === s || !o) && clearTimeout) return o = clearTimeout, clearTimeout(e);
+                            if ((o === c || !o) && clearTimeout) return o = clearTimeout, clearTimeout(e);
                             try {
                                 o(e)
                             } catch (t) {
@@ -68,19 +68,19 @@
                     }
                 }
 
-                function b(e, t) {
+                function m(e, t) {
                     this.fun = e, this.array = t
                 }
 
-                function m() {}
+                function b() {}
                 u.nextTick = function(e) {
                     var t = Array(arguments.length - 1);
                     if (arguments.length > 1)
                         for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-                    l.push(new b(e, t)), 1 === l.length && !d && c(p)
-                }, b.prototype.run = function() {
+                    l.push(new m(e, t)), 1 === l.length && !d && s(p)
+                }, m.prototype.run = function() {
                     this.fun.apply(null, this.array)
-                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = m, u.addListener = m, u.once = m, u.off = m, u.removeListener = m, u.removeAllListeners = m, u.emit = m, u.prependListener = m, u.prependOnceListener = m, u.listeners = function(e) {
+                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = b, u.addListener = b, u.once = b, u.off = b, u.removeListener = b, u.removeAllListeners = b, u.emit = b, u.prependListener = b, u.prependOnceListener = b, u.listeners = function(e) {
                     return []
                 }, u.binding = function(e) {
                     throw Error("process.binding is not supported")
@@ -140,7 +140,7 @@
                         return u
                     },
                     initSentry: function() {
-                        return s
+                        return c
                     }
                 }), n("222007");
                 var r = n("245123"),
@@ -156,14 +156,14 @@
                     maxBudgetHour: 3
                 });
 
-                function s() {
+                function c() {
                     var e;
                     r.init({
                         tunnel: "/error-reporting-proxy/web",
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-6a9ad161fdd8df2b321da69b840afe6b62b6251e",
+                        release: "discord_web-6c05833ccaaf97cd442cf2fc493ad5e90b7daf0d",
                         beforeSend: e => {
                             var t, n;
                             return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !u() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && a() ? e : null
@@ -181,7 +181,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (e = "268004", "268004")), r.setTag("builtAt", String("1708561148608"));
+                    }), r.setTag("buildNumber", (e = "268024", "268024")), r.setTag("builtAt", String("1708564507178"));
                     let t = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != t && "object" == typeof t)
                         for (let e in t) r.setTag(e, t[e]);
@@ -220,10 +220,10 @@
             return
         }
         for (var a = 1 / 0, u = 0; u < e.length; u++) {
-            for (var n = e[u][0], o = e[u][1], i = e[u][2], s = !0, c = 0; c < n.length; c++) a >= i && Object.keys(r.O).every(function(e) {
-                return r.O[e](n[c])
-            }) ? n.splice(c--, 1) : (s = !1, i < a && (a = i));
-            if (s) {
+            for (var n = e[u][0], o = e[u][1], i = e[u][2], c = !0, s = 0; s < n.length; s++) a >= i && Object.keys(r.O).every(function(e) {
+                return r.O[e](n[s])
+            }) ? n.splice(s--, 1) : (c = !1, i < a && (a = i));
+            if (c) {
                 e.splice(u--, 1);
                 var l = o();
                 void 0 !== l && (t = l)
@@ -270,14 +270,14 @@
                 var o = n[0],
                     i = n[1],
                     u = n[2],
-                    a, s, c = 0;
+                    a, c, s = 0;
                 if (o.some(function(t) {
                         return 0 !== e[t]
                     })) {
                     for (a in i) r.o(i, a) && (r.m[a] = i[a]);
                     if (u) var l = u(r)
                 }
-                for (t && t(n); c < o.length; c++) s = o[c], r.o(e, s) && e[s] && e[s][0](), e[s] = 0;
+                for (t && t(n); s < o.length; s++) c = o[s], r.o(e, c) && e[c] && e[c][0](), e[c] = 0;
                 return r.O(l)
             },
             n = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
@@ -288,4 +288,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.a91b4a2347b67fc5a41b.js.map
+//# sourceMappingURL=sentry.6482c3981b4e81f984b1.js.map
