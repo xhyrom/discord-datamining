@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["59196"], {
+    ["60053"], {
         777483: function(e, t, n) {
             var l = {
                 "./icon-file-acrobat.svg": "668973",
@@ -2233,10 +2233,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserActivityTypes: function() {
-                    return P
+                    return b
                 },
                 default: function() {
-                    return b
+                    return j
                 }
             });
             var l = n("37983"),
@@ -2251,24 +2251,25 @@
                 f = n("299285"),
                 m = n("267196"),
                 p = n("945701"),
-                h = n("285749"),
-                E = n("78512"),
-                g = n("314848"),
-                S = n("699209"),
-                C = n("769791"),
-                T = n("373469"),
-                v = n("42203"),
-                I = n("305961"),
-                _ = n("957255"),
-                N = n("697218"),
+                h = n("964261"),
+                E = n("235932"),
+                g = n("78512"),
+                S = n("314848"),
+                C = n("699209"),
+                T = n("769791"),
+                v = n("373469"),
+                I = n("42203"),
+                _ = n("305961"),
+                N = n("957255"),
                 A = n("800762"),
                 y = n("313873"),
                 x = n("599110"),
                 O = n("474293"),
                 R = n("49111"),
-                M = n("970574");
+                M = n("782340"),
+                L = n("970574");
 
-            function L(e) {
+            function P(e) {
                 let {
                     type: t,
                     source: n,
@@ -2282,7 +2283,7 @@
                     actionColor: p
                 } = e;
                 return (0, l.jsx)(c.default, {
-                    className: (0, O.getClass)(M, "actions", t),
+                    className: (0, O.getClass)(L, "actions", t),
                     type: t,
                     source: n,
                     activity: i,
@@ -2296,8 +2297,8 @@
                     isEmbedded: m
                 })
             }
-            let P = y.default.Types;
-            var b = function(e) {
+            let b = y.default.Types;
+            var j = function(e) {
                 let {
                     activity: t,
                     user: n,
@@ -2306,58 +2307,84 @@
                     hideHeader: d = !1,
                     analyticsParams: c,
                     ...O
-                } = e, P = (0, r.useStateFromStores)([A.default, v.default], () => {
+                } = e, b = (0, r.useStateFromStores)([A.default, I.default], () => {
                     var e;
-                    return v.default.getChannel(null === (e = A.default.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
+                    return I.default.getChannel(null === (e = A.default.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
                 }), {
-                    enableHangStatus: b
-                } = S.HangStatusExperiment.useExperiment({
-                    guildId: null == P ? void 0 : P.guild_id,
+                    enableHangStatus: j
+                } = C.HangStatusExperiment.useExperiment({
+                    guildId: null == b ? void 0 : b.guild_id,
                     location: "UserActivityContainer"
                 }, {
                     autoTrackExposure: !1
-                }), j = (0, r.useStateFromStores)([T.default], () => a ? T.default.getAnyStreamForUser(n.id) : null), U = b && _.default.can(R.Permissions.CONNECT, P), D = (null == t ? void 0 : t.type) === R.ActivityTypes.HANG_STATUS && U ? P : null, k = (0, r.useStateFromStores)([I.default, A.default, v.default], () => {
+                }), U = (0, r.useStateFromStores)([v.default], () => a ? v.default.getAnyStreamForUser(n.id) : null), D = j && N.default.can(R.Permissions.CONNECT, b), k = (null == t ? void 0 : t.type) === R.ActivityTypes.HANG_STATUS && D ? b : null, w = (0, r.useStateFromStores)([_.default, A.default, I.default], () => {
                     var e, l;
-                    return (0, u.default)(t, R.ActivityFlags.EMBEDDED) ? I.default.getGuild(null === (e = v.default.getChannel(null === (l = A.default.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === l ? void 0 : l.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != D ? I.default.getGuild(D.getGuildId()) : null
-                }), w = (0, r.useStateFromStores)([I.default], () => null != j ? I.default.getGuild(j.guildId) : null), F = (0, r.useStateFromStores)([f.default], () => {
+                    return (0, u.default)(t, R.ActivityFlags.EMBEDDED) ? _.default.getGuild(null === (e = I.default.getChannel(null === (l = A.default.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === l ? void 0 : l.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != k ? _.default.getGuild(k.getGuildId()) : null
+                }), F = (0, r.useStateFromStores)([_.default], () => null != U ? _.default.getGuild(U.guildId) : null), G = (0, r.useStateFromStores)([f.default], () => {
                     if (null != t) return null != t.application_id ? f.default.getApplication(t.application_id) : f.default.getApplicationByName(t.name);
                     return null
-                }), G = (0, r.useStateFromStores)([N.default], () => N.default.getCurrentUser()), B = (0, m.default)(), H = (0, g.default)(n), V = B && null != t && H;
+                }), B = (0, m.default)(), H = (0, S.default)(n), V = B && null != t && H;
                 return (i.useEffect(() => {
-                    (null == t ? void 0 : t.type) === R.ActivityTypes.HANG_STATUS && U && x.default.track(R.AnalyticEvents.VIEW_HANG_STATUS, {
+                    (null == t ? void 0 : t.type) === R.ActivityTypes.HANG_STATUS && D && x.default.track(R.AnalyticEvents.VIEW_HANG_STATUS, {
                         source: "UserProfilePopout",
-                        guild_id: null == D ? void 0 : D.guild_id,
-                        channel_id: null == D ? void 0 : D.id
+                        guild_id: null == k ? void 0 : k.guild_id,
+                        channel_id: null == k ? void 0 : k.id
                     })
-                }, [null == t ? void 0 : t.type, U, D]), (null == t ? void 0 : t.type) !== R.ActivityTypes.HANG_STATUS || U) ? (0, l.jsx)(y.default, {
+                }, [null == t ? void 0 : t.type, D, k]), (null == t ? void 0 : t.type) !== R.ActivityTypes.HANG_STATUS || D) ? (0, l.jsx)(y.default, {
                     ...O,
                     activity: t,
                     user: n,
-                    application: F,
+                    application: G,
                     hideHeader: d,
-                    activityGuild: null != k ? k : w,
+                    activityGuild: null != w ? w : F,
                     showReactions: V,
                     renderActions: o ? () => (0, l.jsxs)("div", {
-                        className: s(V && M.actionsWrapper),
-                        children: [(0, l.jsx)(L, {
+                        className: s(V && L.actionsWrapper),
+                        children: [(0, l.jsx)(P, {
                             ...O,
-                            applicationStream: j,
+                            applicationStream: U,
                             activity: t,
                             user: n
                         }), V && (0, l.jsx)(p.default, {
-                            activity: t,
-                            user: n,
-                            filename: "".concat(null == G ? void 0 : G.globalName, "-reacting-to-").concat(t.name, ".png").toLowerCase(),
-                            altText: (0, E.getActivityAltText)(n, t),
                             showReact: !0,
                             showReply: !0,
-                            reactor: h.default,
-                            analyticsParams: c
+                            replyHeaderText: M.default.Messages.ACTIVITY_REACTION_REPLY_TITLE.format({
+                                activity: t.name
+                            }),
+                            replyPlaceholder: M.default.Messages.TEXTAREA_PLACEHOLDER.format({
+                                channel: "@".concat(n.globalName)
+                            }),
+                            onInteraction: e => {
+                                let {
+                                    interactionType: l,
+                                    emoji: i,
+                                    reply: a
+                                } = e;
+                                x.default.track(R.AnalyticEvents.ACTIVITY_REACTOR_INTERACTED, {
+                                    application_id: t.application_id,
+                                    interaction_type: l,
+                                    ...c
+                                }), l === h.AtomicReactorInteractionTypes.ReactSubmit && null != i && (0, E.sendReactionToActivity)({
+                                    reaction: i,
+                                    user: n,
+                                    activity: t,
+                                    application: G,
+                                    altText: (0, g.getActivityAltText)(n, t),
+                                    stream: U
+                                }), l === h.AtomicReactorInteractionTypes.ReplySubmit && null != a && (0, E.sendReplyToActivity)({
+                                    reply: a,
+                                    user: n,
+                                    activity: t,
+                                    application: G,
+                                    altText: (0, g.getActivityAltText)(n, t),
+                                    stream: U
+                                })
+                            }
                         })]
                     }) : null,
-                    onOpenSpotifyTrack: C.openTrack,
-                    onOpenSpotifyArtist: C.openArtist,
-                    onOpenSpotifyAlbum: C.openAlbum
+                    onOpenSpotifyTrack: T.openTrack,
+                    onOpenSpotifyArtist: T.openArtist,
+                    onOpenSpotifyAlbum: T.openAlbum
                 }) : null
             }
         },
@@ -8124,7 +8151,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return y
+                    return I
                 }
             }), n("222007");
             var l = n("37983"),
@@ -8140,66 +8167,58 @@
                 m = n("219013"),
                 p = n("233069"),
                 h = n("882641"),
-                E = n("599110"),
-                g = n("964261"),
-                S = n("407462"),
-                C = n("526409"),
-                T = n("314848"),
-                v = n("49111"),
-                I = n("782340"),
-                _ = n("789215");
-            let N = (0, p.createChannelRecord)({
-                    id: v.ONE_STRING_CHANNEL_ID,
-                    type: v.ChannelTypes.DM
+                E = n("964261"),
+                g = n("49111"),
+                S = n("782340"),
+                C = n("789215");
+            let T = (0, p.createChannelRecord)({
+                    id: g.ONE_STRING_CHANNEL_ID,
+                    type: g.ChannelTypes.DM
                 }),
-                A = i.forwardRef(function(e, t) {
+                v = i.forwardRef(function(e, t) {
                     let {
-                        user: n,
-                        activity: a,
+                        replyPlaceholder: n,
+                        replyHeaderText: a,
                         onEnter: r,
                         showPopout: m,
                         children: p,
                         hide: h
-                    } = e, [E, S] = i.useState(""), [C, T] = i.useState((0, c.toRichValue)("")), v = (0, u.default)();
+                    } = e, [g, v] = i.useState(""), [I, _] = i.useState((0, c.toRichValue)("")), N = (0, u.default)();
                     return i.useEffect(() => {
-                        S(""), T((0, c.toRichValue)(""))
+                        v(""), _((0, c.toRichValue)(""))
                     }, [m]), (0, l.jsx)(o.Popout, {
                         align: "right",
                         position: "bottom",
                         shouldShow: m,
                         disablePointerEvents: !1,
                         renderPopout: () => (0, l.jsx)("div", {
-                            className: s([_.reply, "theme-".concat(v)]),
+                            className: s([C.reply, "theme-".concat(N)]),
                             ref: t,
                             children: (0, l.jsx)(o.FocusLock, {
                                 containerRef: t,
                                 children: (0, l.jsxs)("div", {
                                     children: [(0, l.jsx)(o.Text, {
                                         variant: "text-xs/bold",
-                                        className: _.replyHeader,
-                                        children: I.default.Messages.ACTIVITY_REACTION_REPLY_TITLE.format({
-                                            activity: a.name
-                                        })
+                                        className: C.replyHeader,
+                                        children: null != a ? a : S.default.Messages.CHAT
                                     }), (0, l.jsx)(f.default, {
-                                        placeholder: I.default.Messages.TEXTAREA_PLACEHOLDER.format({
-                                            channel: "@".concat(n.globalName)
-                                        }),
-                                        className: _.replyInput,
+                                        placeholder: null != n ? n : S.default.Messages.CHAT,
+                                        className: C.replyInput,
                                         showRemainingCharsAfterCount: -1,
                                         allowNewLines: !1,
-                                        maxCharacterCount: g.MAX_CHAR_COUNT,
-                                        channel: N,
+                                        maxCharacterCount: E.MAX_CHAR_COUNT,
+                                        channel: T,
                                         onChange: (e, t, n) => {
-                                            S(t), T(n)
+                                            v(t), _(n)
                                         },
                                         type: d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT,
-                                        textValue: E,
-                                        richValue: C,
+                                        textValue: g,
+                                        richValue: I,
                                         onSubmit: e => {
                                             let {
                                                 value: t
                                             } = e;
-                                            return t.length > g.MAX_CHAR_COUNT ? Promise.resolve({
+                                            return t.length > E.MAX_CHAR_COUNT ? Promise.resolve({
                                                 shouldClear: !1,
                                                 shouldRefocus: !0
                                             }) : (r(t), h(), Promise.resolve({
@@ -8218,619 +8237,516 @@
                         children: () => p
                     })
                 });
-            var y = e => {
+            var I = e => {
                 let {
-                    activity: t,
-                    user: n,
-                    showReact: a = !0,
-                    showReply: d = !0,
-                    requireConfirmation: c = !1,
-                    filename: f,
-                    altText: p,
-                    reactor: g,
-                    analyticsParams: y
-                } = e, [x, O] = i.useState(!1), R = (0, u.default)(), [M, L] = i.useState(!1), [P, b] = i.useState(!1), [j, U] = i.useState(), [D, k] = i.useState(""), w = i.useRef(null), F = i.useRef(null), G = (0, T.default)(n);
+                    onInteraction: t,
+                    replyHeaderText: n,
+                    replyPlaceholder: a,
+                    showReact: d = !0,
+                    showReply: c = !0
+                } = e, f = (0, u.default)(), [p, I] = i.useState(!1), [_, N] = i.useState(!1), A = i.useRef(null), y = i.useRef(null);
 
-                function B(e) {
+                function x(e) {
                     var t, n;
-                    null != e.target && (!(null == w ? void 0 : null === (t = w.current) || void 0 === t ? void 0 : t.contains(null == e ? void 0 : e.target)) && L(!1), !(null == F ? void 0 : null === (n = F.current) || void 0 === n ? void 0 : n.contains(null == e ? void 0 : e.target)) && b(!1))
+                    null != e.target && (!(null == A ? void 0 : null === (t = A.current) || void 0 === t ? void 0 : t.contains(null == e ? void 0 : e.target)) && I(!1), !(null == y ? void 0 : null === (n = y.current) || void 0 === n ? void 0 : n.contains(null == e ? void 0 : e.target)) && N(!1))
                 }
-
-                function H(e) {
-                    E.default.track(v.AnalyticEvents.ACTIVITY_REACTOR_INTERACTED, {
-                        application_id: t.application_id,
-                        interaction_type: e,
-                        ...y
-                    })
-                }
-                return (i.useEffect(() => {
+                return i.useEffect(() => {
                     let e = e => {
-                        "Escape" === e.key && (b(!1), L(!1))
+                        "Escape" === e.key && (N(!1), I(!1))
                     };
-                    return document.addEventListener("keydown", e), document.addEventListener("mousedown", B), () => {
-                        document.removeEventListener("keydown", e), document.removeEventListener("mousedown", B)
+                    return document.addEventListener("keydown", e), document.addEventListener("mousedown", x), () => {
+                        document.removeEventListener("keydown", e), document.removeEventListener("mousedown", x)
                     }
-                }, []), G) ? (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsxs)("div", {
-                        className: _.reactions,
-                        children: [a && (0, l.jsx)(o.Popout, {
+                }, []), (0, l.jsx)(l.Fragment, {
+                    children: (0, l.jsxs)("div", {
+                        className: C.reactions,
+                        children: [d && (0, l.jsx)(o.Popout, {
                             align: "right",
                             position: "top",
-                            shouldShow: M,
+                            shouldShow: p,
                             disablePointerEvents: !1,
                             renderPopout: () => (0, l.jsx)("div", {
-                                className: "theme-".concat(R),
-                                ref: w,
+                                className: "theme-".concat(f),
+                                ref: A,
                                 children: (0, l.jsx)(m.ReactionPicker, {
-                                    messageId: v.EMPTY_STRING_MESSAGE_ID,
-                                    channel: N,
+                                    messageId: g.EMPTY_STRING_MESSAGE_ID,
+                                    channel: T,
                                     closePopout: () => {
-                                        L(!1)
+                                        I(!1)
                                     },
                                     onSelectEmoji: e => {
-                                        null != e && (H(S.ActivityReactorInteractionTypes.ReactSubmit), U(e), L(!1), O(!0))
+                                        null != e && (t({
+                                            interactionType: E.AtomicReactorInteractionTypes.ReactSubmit,
+                                            emoji: e,
+                                            reply: null
+                                        }), I(!1))
                                     }
                                 })
                             }),
                             children: () => (0, l.jsx)(o.Tooltip, {
-                                text: I.default.Messages.ADD_REACTION,
+                                text: S.default.Messages.ADD_REACTION,
                                 children: e => (0, l.jsx)("div", {
                                     ...e,
-                                    className: _.reaction,
+                                    className: C.reaction,
                                     children: (0, l.jsx)(h.default, {
                                         active: !1,
                                         tabIndex: 0,
                                         onClick: () => {
-                                            H(S.ActivityReactorInteractionTypes.ReactBegin), L(!0), b(!1)
+                                            t({
+                                                interactionType: E.AtomicReactorInteractionTypes.ReactBegin,
+                                                emoji: null,
+                                                reply: null
+                                            }), I(!0), N(!1)
                                         }
                                     })
                                 })
                             })
-                        }), d && (0, l.jsx)(A, {
-                            hide: () => b(!1),
-                            ref: F,
-                            user: n,
-                            activity: t,
-                            showPopout: P,
+                        }), c && (0, l.jsx)(v, {
+                            hide: () => N(!1),
+                            ref: y,
+                            replyHeaderText: n,
+                            replyPlaceholder: a,
+                            showPopout: _,
                             onEnter: e => {
-                                H(S.ActivityReactorInteractionTypes.ReplySubmit), k(e), O(!0)
+                                t({
+                                    interactionType: E.AtomicReactorInteractionTypes.ReplySubmit,
+                                    emoji: null,
+                                    reply: e
+                                })
                             },
                             children: (0, l.jsx)(o.Tooltip, {
-                                text: I.default.Messages.MESSAGE_ACTION_REPLY,
+                                text: S.default.Messages.MESSAGE_ACTION_REPLY,
                                 children: e => (0, l.jsx)("button", {
                                     ...e,
-                                    className: s(_.reaction, _.emojiButton),
+                                    className: s(C.reaction, C.emojiButton),
                                     onClick: () => {
-                                        H(S.ActivityReactorInteractionTypes.ReplyBegin), b(!0)
+                                        t({
+                                            interactionType: E.AtomicReactorInteractionTypes.ReplyBegin,
+                                            emoji: null,
+                                            reply: null
+                                        }), N(!0)
                                     },
                                     children: (0, l.jsx)(r.ArrowAngleLeftUpIcon, {})
                                 })
                             })
                         })]
-                    }), x && (0, l.jsx)(g, {
-                        activity: t,
-                        user: n,
-                        onComplete: e => {
-                            null != j ? (H(S.ActivityReactorInteractionTypes.ReactSend), (0, C.sendReaction)({
-                                discordCanvas: e,
-                                reaction: j,
-                                user: n,
-                                requireConfirmation: c,
-                                filename: f,
-                                altText: p
-                            }), U(void 0)) : null != D && (H(S.ActivityReactorInteractionTypes.ReplySend), (0, C.sendReply)({
-                                discordCanvas: e,
-                                reply: D,
-                                user: n,
-                                requireConfirmation: c,
-                                filename: f,
-                                altText: p
-                            }), k("")), O(!1)
-                        }
-                    })]
-                }) : null
+                    })
+                })
             }
         },
         964261: function(e, t, n) {
             "use strict";
+            var l, i;
             n.r(t), n.d(t, {
                 MAX_CHAR_COUNT: function() {
+                    return a
+                },
+                AtomicReactorInteractionTypes: function() {
                     return l
                 }
             });
-            let l = 200
-        },
-        285749: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return o
-                }
-            }), n("222007");
-            var l = n("37983"),
-                i = n("884691"),
-                a = n("480647"),
-                s = n("235932"),
-                r = n("658567"),
-                o = e => {
-                    let {
-                        activity: t,
-                        onComplete: n,
-                        user: o
-                    } = e, [u, d] = i.useState(null), {
-                        assetMap: c,
-                        loaded: f,
-                        stream: m
-                    } = (0, r.default)(t, o), p = i.useCallback(e => {
-                        null != e && f && d(new a.default(e, c))
-                    }, [c, f]);
-                    return i.useEffect(() => {
-                        null != u && f && (0, s.default)({
-                            renderer: u,
-                            activity: t,
-                            user: o,
-                            onComplete: n,
-                            stream: m
-                        })
-                    }, [u, f, t, o, n, m]), (0, l.jsx)("canvas", {
-                        style: {
-                            marginTop: 16,
-                            position: "fixed",
-                            zIndex: 10
-                        },
-                        ref: p
-                    })
-                }
+            let a = 200;
+            (i = l || (l = {})).ReactBegin = "React Begin", i.ReplyBegin = "Reply Begin", i.ReactSubmit = "React Submit", i.ReplySubmit = "Reply Submit", i.ReactSend = "React Send", i.ReplySend = "Reply Send"
         },
         235932: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return C
+                sendReactionToActivity: function() {
+                    return h
+                },
+                sendReplyToActivity: function() {
+                    return E
                 }
             });
             var l = n("376556"),
                 i = n("309570"),
                 a = n("429928"),
-                s = n("404605"),
-                r = n("695412"),
+                s = n("695412"),
+                r = n("999317"),
                 o = n("550368"),
-                u = n("407462"),
-                d = n("78512"),
-                c = n("49111"),
-                f = n("782340");
-            let m = (e, t) => {
-                    e.setColor("dark" === t ? "white" : "black"), e.drawPath(u.ACTIVITY_IMAGE_FALLBACK_PATH, {
-                        x: u.padding,
-                        y: u.padding
-                    }, !0, 2 + 2 / 3)
-                },
-                p = (e, t, n) => {
-                    var l, i, a;
-                    let {
-                        canvas: s
-                    } = e;
-                    s.setSize({
-                        w: u.canvasWidth,
-                        h: u.canvasHeight
-                    });
-                    let {
-                        color: r,
-                        theme: o
-                    } = (0, d.getProfileInfo)(n, "black");
-                    s.setColor(r), s.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: u.canvasHeight,
-                        w: u.canvasWidth
-                    }, 8, !0), s.setColor("dark" === o ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), s.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: u.canvasHeight,
-                        w: u.canvasWidth
-                    }, 8, !0), (null === (l = t.assets) || void 0 === l ? void 0 : l.large_image) != null ? s.drawRoundedImage(u.AssetTypes.AssetImage, {
-                        x: u.padding,
-                        y: u.padding
-                    }, {
-                        w: u.activitySize,
-                        h: u.activitySize
-                    }, 8) : (null === (i = s.assetMap) || void 0 === i ? void 0 : i.has(u.AssetTypes.ApplicationImage)) ? s.drawRoundedImage("ApplicationImage", {
-                        x: u.padding,
-                        y: u.padding
-                    }, {
-                        w: u.activitySize,
-                        h: u.activitySize
-                    }, 8) : m(s, o);
-                    let c = u.activitySize + u.padding + u.imagePadding;
-                    s.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), s.setFont({
-                        size: 16,
-                        family: '"gg sans", sans-serif',
-                        weight: 700
-                    }), s.drawText("".concat(t.name), {
-                        x: c,
-                        y: u.fontPadding + 1 * u.lineHeight
-                    }, !0, (null === (a = s.assetMap) || void 0 === a ? void 0 : a.has(u.AssetTypes.Platform)) ? u.titleMaxWidthPlatform : u.titleMaxWidthNoPlatform), null != t.timestamps && (s.setFont({
-                        size: 14,
-                        weight: 400
-                    }), s.drawText("for ".concat((0, d.howLong)(t.timestamps)), {
-                        x: c,
-                        y: u.fontPadding + 2 * u.lineHeight
-                    }, !0))
-                },
-                h = (e, t, n) => {
-                    var l, i;
-                    let {
-                        canvas: a
-                    } = e;
-                    a.setSize({
-                        w: u.canvasWidth,
-                        h: u.canvasHeight
-                    });
-                    let {
-                        color: s,
-                        theme: r
-                    } = (0, d.getProfileInfo)(n, "black");
-                    a.setColor(s), a.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: u.canvasHeight,
-                        w: u.canvasWidth
-                    }, 8, !0), a.setColor("dark" === r ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), a.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: u.canvasHeight,
-                        w: u.canvasWidth
-                    }, 8, !0), (null === (l = a.assetMap) || void 0 === l ? void 0 : l.has(u.AssetTypes.AssetImage)) && a.drawRoundedImage(u.AssetTypes.AssetImage, {
-                        x: u.padding,
-                        y: u.padding
-                    }, {
-                        w: u.activitySize,
-                        h: u.activitySize
-                    }, 8);
-                    let o = u.activitySize + u.padding + u.imagePadding;
-                    a.setColor("dark" === r ? "white" : "rgb(6, 6, 7)"), a.setFont({
-                        size: 14,
-                        family: '"gg sans", sans-serif',
-                        weight: 700
-                    }), a.drawText("".concat(t.details), {
-                        x: o,
-                        y: u.fontPadding + 1 * u.lineHeight
-                    }, !0, (null === (i = a.assetMap) || void 0 === i ? void 0 : i.has(u.AssetTypes.Platform)) ? u.titleMaxWidthPlatform : u.titleMaxWidthNoPlatform), a.setFont({
-                        size: 14,
-                        weight: 400
-                    }), a.drawText("by ".concat(t.state), {
-                        x: o,
-                        y: u.fontPadding + 2 * u.lineHeight
-                    }, !0)
-                },
-                E = (e, t, l) => {
-                    var i, a;
-                    let {
-                        canvas: s
-                    } = e;
-                    s.setSize({
-                        w: u.canvasWidth,
-                        h: u.canvasHeight
-                    });
-                    let {
-                        color: r,
-                        theme: o
-                    } = (0, d.getProfileInfo)(l, "black");
-                    s.setColor(r), s.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: u.canvasHeight,
-                        w: u.canvasWidth
-                    }, 8, !0), s.setColor("dark" === o ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), s.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: u.canvasHeight,
-                        w: u.canvasWidth
-                    }, 8, !0), (null === (i = s.assetMap) || void 0 === i ? void 0 : i.has(u.AssetTypes.HangStatus)) ? s.drawRoundedImage(u.AssetTypes.HangStatus, {
-                        x: u.padding,
-                        y: u.padding
-                    }, {
-                        w: u.activitySize,
-                        h: u.activitySize
-                    }, 8) : m(s, o);
-                    let c = u.activitySize + u.padding + u.imagePadding;
-                    s.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), s.setFont({
-                        size: 14,
-                        family: '"gg sans", sans-serif',
-                        weight: 700
-                    }), s.drawText(f.default.Messages.STATUS_LEAD_IN_JUST, {
-                        x: c,
-                        y: u.fontPadding + 1 * u.lineHeight
-                    }, !0, (null === (a = s.assetMap) || void 0 === a ? void 0 : a.has(u.AssetTypes.Platform)) ? u.titleMaxWidthPlatform : u.titleMaxWidthNoPlatform), s.setFont({
-                        size: 14,
-                        weight: 400
-                    });
-                    let p = "";
-                    {
-                        let e = n("808742").getHangStatusText;
-                        p = e(t)
-                    }
-                    s.drawText(p, {
-                        x: c,
-                        y: u.fontPadding + 2 * u.lineHeight
-                    }, !0)
-                },
-                g = (e, t, n) => {
-                    var l;
-                    let {
-                        canvas: i
-                    } = e;
-                    i.setSize({
-                        w: u.canvasWidth,
-                        h: u.canvasHeight
-                    });
-                    let {
-                        assets: a,
-                        application_id: s
-                    } = t, c = (0, o.getAssetImage)(s, null == a ? void 0 : a.large_image, u.activitySize), {
-                        color: f,
-                        theme: m
-                    } = (0, d.getProfileInfo)(n, "black");
-                    if (i.setColor(f), i.drawRoundedRect({
-                            x: 0,
-                            y: 0,
-                            h: u.canvasHeight,
-                            w: u.canvasWidth
-                        }, 8, !0), i.setColor("dark" === m ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), i.drawRoundedRect({
-                            x: 0,
-                            y: 0,
-                            h: u.canvasHeight,
-                            w: u.canvasWidth
-                        }, 8, !0), i.setColor("dark" === m ? "white" : "black"), null != c) {
-                        let e = i.drawRoundedImage(u.AssetTypes.AssetImage, {
-                            x: u.padding,
-                            y: u.padding
-                        }, {
-                            w: u.activitySize,
-                            h: u.activitySize
-                        }, 8);
-                        e === r.DrawResultStatus.Failure && i.drawPath(u.ACTIVITY_IMAGE_FALLBACK_PATH, {
-                            x: u.padding,
-                            y: u.padding
-                        }, !0, 2 + 2 / 3)
-                    } else i.drawPath(u.ACTIVITY_IMAGE_FALLBACK_PATH, {
-                        x: u.padding,
-                        y: u.padding
-                    }, !0, 2 + 2 / 3);
-                    let p = u.activitySize + u.padding + u.imagePadding;
-                    i.setColor("dark" === m ? "white" : "rgb(6, 6, 7)"), i.setFont({
-                        size: 14,
-                        family: '"gg sans", sans-serif',
-                        weight: 700
-                    }), i.drawText("".concat(t.details), {
-                        x: p,
-                        y: u.fontPadding + 1 * u.lineHeight
-                    }, !0, (null === (l = i.assetMap) || void 0 === l ? void 0 : l.has(u.AssetTypes.Platform)) ? u.titleMaxWidthPlatform : u.titleMaxWidthNoPlatform), i.setFont({
-                        size: 14,
-                        weight: 400
-                    }), i.drawText("".concat(t.state), {
-                        x: p,
-                        y: u.fontPadding + 2 * u.lineHeight
-                    }, !0)
-                },
-                S = (e, t, n) => {
-                    var l, i, a;
-                    let {
-                        canvas: s
-                    } = e;
-                    s.setSize({
-                        w: u.canvasWidth,
-                        h: u.canvasHeight
-                    });
-                    let {
-                        color: r,
-                        theme: o
-                    } = (0, d.getProfileInfo)(n, "black");
-                    s.setColor(r), s.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: u.canvasHeight,
-                        w: u.canvasWidth
-                    }, 8, !0), s.setColor("dark" === o ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), s.drawRoundedRect({
-                        x: 0,
-                        y: 0,
-                        h: u.canvasHeight,
-                        w: u.canvasWidth
-                    }, 8, !0), (null === (l = t.assets) || void 0 === l ? void 0 : l.large_image) != null ? s.drawRoundedImage(u.AssetTypes.AssetImage, {
-                        x: u.padding,
-                        y: u.padding
-                    }, {
-                        w: u.activitySize,
-                        h: u.activitySize
-                    }, 8) : (null === (i = s.assetMap) || void 0 === i ? void 0 : i.has(u.AssetTypes.ApplicationImage)) ? s.drawRoundedImage("ApplicationImage", {
-                        x: u.padding,
-                        y: u.padding
-                    }, {
-                        w: u.activitySize,
-                        h: u.activitySize
-                    }, 8) : m(s, o);
-                    let c = u.activitySize + u.padding + u.imagePadding;
-                    s.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), s.setFont({
-                        size: 16,
-                        family: '"gg sans", sans-serif',
-                        weight: 700
-                    }), s.drawText("Streaming ".concat(t.name), {
-                        x: c,
-                        y: u.fontPadding + u.lineHeight * (null != t.timestamps ? 1 : 1.5)
-                    }, !0, (null === (a = s.assetMap) || void 0 === a ? void 0 : a.has(u.AssetTypes.Platform)) ? u.titleMaxWidthPlatform : u.titleMaxWidthNoPlatform), null != t.timestamps && (s.setFont({
-                        size: 14,
-                        weight: 500
-                    }), s.drawText("for ".concat((0, d.howLong)(t.timestamps)), {
-                        x: c,
-                        y: u.fontPadding + 2 * u.lineHeight
-                    }, !0))
-                };
-            var C = e => {
+                u = n("402671"),
+                d = n("526409"),
+                c = n("407462"),
+                f = n("78512"),
+                m = n("49111"),
+                p = n("782340");
+            let h = async e => {
+                let {
+                    reaction: t,
+                    altText: n,
+                    ...l
+                } = e, i = await S(l);
+                (0, d.sendReaction)({
+                    file: i,
+                    altText: n,
+                    user: l.user,
+                    reaction: t
+                })
+            }, E = async e => {
+                let {
+                    reply: t,
+                    altText: n,
+                    ...l
+                } = e, i = await S(l);
+                (0, d.sendReply)({
+                    file: i,
+                    altText: n,
+                    user: l.user,
+                    reply: t
+                })
+            }, g = e => {
                 var t;
-                let r, {
-                    renderer: o,
-                    activity: d,
-                    user: f,
-                    onComplete: m,
-                    stream: C
-                } = e;
-                {
-                    let e = n("800044").default;
-                    r = new e
+                let {
+                    activity: l,
+                    application: i,
+                    user: a
+                } = e, {
+                    theme: s
+                } = (0, f.getProfileInfo)(a, "black"), r = "dark" === s, d = (0, f.getActivityPlatform)(l), {
+                    assets: c,
+                    application_id: p
+                } = l, h = (0, o.getAssetImage)(p, null == c ? void 0 : c.large_image, 64), E = null == i ? void 0 : i.getIconURL(64), g = null != d ? r ? d.icon.darkPNG : d.icon.lightPNG : l.type === m.ActivityTypes.PLAYING ? r ? n("944857") : n("248073") : null, S = l.type === m.ActivityTypes.HANG_STATUS && (null === (t = l.emoji) || void 0 === t ? void 0 : t.id) != null ? (0, u.getEmojiUrl)({
+                    id: l.emoji.id,
+                    name: l.emoji.name,
+                    animated: !1
+                }) : null;
+                return {
+                    ...null != g && {
+                        Platform: g
+                    },
+                    ...null != h && {
+                        AssetImage: h.includes("http") ? h : n(h)
+                    },
+                    ...null != E && {
+                        ApplicationImage: E
+                    },
+                    ...null != S && {
+                        HangStatus: S
+                    }
                 }
-                let T = new s.default(o, r),
-                    {
-                        canvas: v
-                    } = T;
-                v.setFont({
-                    truncate: !0
-                }), null != C ? S(T, d, f) : (0, a.default)(d) ? h(T, d, f) : (0, i.default)(d) && d.name === l.default.get(c.PlatformTypes.LEAGUE_OF_LEGENDS).name ? g(T, d, f) : d.type === c.ActivityTypes.HANG_STATUS ? E(T, d, f) : p(T, d, f), (null === (t = v.assetMap) || void 0 === t ? void 0 : t.has(u.AssetTypes.Platform)) && v.drawImage(u.AssetTypes.Platform, {
-                    x: u.canvasWidth - u.padding - u.platformSize,
-                    y: u.padding
+            }, S = async e => {
+                let {
+                    user: t,
+                    activity: n,
+                    application: o,
+                    stream: u
+                } = e, d = g({
+                    activity: n,
+                    application: o,
+                    user: t
+                });
+                return await (0, r.generateImageFromCanvas)({
+                    assetsToLoad: d,
+                    drawImage: e => {
+                        var s;
+                        null != u ? N(e, n, t) : (0, a.default)(n) ? v(e, n, t) : (0, i.default)(n) && n.name === l.default.get(m.PlatformTypes.LEAGUE_OF_LEGENDS).name ? _(e, n, t) : n.type === m.ActivityTypes.HANG_STATUS ? I(e, n, t) : T(e, n, t), (null === (s = e.assetMap) || void 0 === s ? void 0 : s.has("Platform")) && e.drawImage("Platform", {
+                            x: c.canvasWidth - c.padding - c.platformSize,
+                            y: c.padding
+                        }, {
+                            w: c.platformSize,
+                            h: c.platformSize
+                        })
+                    },
+                    exportConfigs: {
+                        format: s.DiscordCanvasExporterOutputFormats.File,
+                        quality: 1,
+                        fileName: "user-reacting-to-".concat(n.name, ".png").toLowerCase(),
+                        fileType: "png"
+                    }
+                })
+            }, C = (e, t) => {
+                e.setColor("dark" === t ? "white" : "black"), e.drawPath(c.ACTIVITY_IMAGE_FALLBACK_PATH, {
+                    x: c.padding,
+                    y: c.padding
+                }, !0, 2 + 2 / 3)
+            }, T = (e, t, n) => {
+                var l, i, a;
+                e.setSize({
+                    w: c.canvasWidth,
+                    h: c.canvasHeight
+                });
+                let {
+                    color: s,
+                    theme: r
+                } = (0, f.getProfileInfo)(n, "black");
+                e.setColor(s), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), e.setColor("dark" === r ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), (null === (l = e.assetMap) || void 0 === l ? void 0 : l.has("AssetImage")) ? e.drawRoundedImage("AssetImage", {
+                    x: c.padding,
+                    y: c.padding
                 }, {
-                    w: u.platformSize,
-                    h: u.platformSize
-                }), m(T)
+                    w: c.activitySize,
+                    h: c.activitySize
+                }, 8) : (null === (i = e.assetMap) || void 0 === i ? void 0 : i.has("ApplicationImage")) ? e.drawRoundedImage("ApplicationImage", {
+                    x: c.padding,
+                    y: c.padding
+                }, {
+                    w: c.activitySize,
+                    h: c.activitySize
+                }, 8) : C(e, r);
+                let o = c.activitySize + c.padding + c.imagePadding;
+                e.setColor("dark" === r ? "white" : "rgb(6, 6, 7)"), e.setFont({
+                    size: 16,
+                    family: '"gg sans", sans-serif',
+                    weight: 700
+                }), e.drawText("".concat(t.name), {
+                    x: o,
+                    y: c.fontPadding + 1 * c.lineHeight
+                }, !0, (null === (a = e.assetMap) || void 0 === a ? void 0 : a.has(c.AssetTypes.Platform)) ? c.titleMaxWidthPlatform : c.titleMaxWidthNoPlatform), null != t.timestamps && (e.setFont({
+                    size: 14,
+                    weight: 400
+                }), e.drawText("for ".concat((0, f.howLong)(t.timestamps)), {
+                    x: o,
+                    y: c.fontPadding + 2 * c.lineHeight
+                }, !0))
+            }, v = (e, t, n) => {
+                var l, i;
+                e.setSize({
+                    w: c.canvasWidth,
+                    h: c.canvasHeight
+                });
+                let {
+                    color: a,
+                    theme: s
+                } = (0, f.getProfileInfo)(n, "black");
+                e.setColor(a), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), e.setColor("dark" === s ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), (null === (l = e.assetMap) || void 0 === l ? void 0 : l.has("AssetImage")) && e.drawRoundedImage("AssetImage", {
+                    x: c.padding,
+                    y: c.padding
+                }, {
+                    w: c.activitySize,
+                    h: c.activitySize
+                }, 8);
+                let r = c.activitySize + c.padding + c.imagePadding;
+                e.setColor("dark" === s ? "white" : "rgb(6, 6, 7)"), e.setFont({
+                    size: 14,
+                    family: '"gg sans", sans-serif',
+                    weight: 700
+                }), e.drawText("".concat(t.details), {
+                    x: r,
+                    y: c.fontPadding + 1 * c.lineHeight
+                }, !0, (null === (i = e.assetMap) || void 0 === i ? void 0 : i.has(c.AssetTypes.Platform)) ? c.titleMaxWidthPlatform : c.titleMaxWidthNoPlatform), e.setFont({
+                    size: 14,
+                    weight: 400
+                }), e.drawText("by ".concat(t.state), {
+                    x: r,
+                    y: c.fontPadding + 2 * c.lineHeight
+                }, !0)
+            }, I = (e, t, l) => {
+                var i, a;
+                e.setSize({
+                    w: c.canvasWidth,
+                    h: c.canvasHeight
+                });
+                let {
+                    color: s,
+                    theme: r
+                } = (0, f.getProfileInfo)(l, "black");
+                e.setColor(s), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), e.setColor("dark" === r ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), (null === (i = e.assetMap) || void 0 === i ? void 0 : i.has("HangStatus")) ? e.drawRoundedImage("HangStatus", {
+                    x: c.padding,
+                    y: c.padding
+                }, {
+                    w: c.activitySize,
+                    h: c.activitySize
+                }, 8) : C(e, r);
+                let o = c.activitySize + c.padding + c.imagePadding;
+                e.setColor("dark" === r ? "white" : "rgb(6, 6, 7)"), e.setFont({
+                    size: 14,
+                    family: '"gg sans", sans-serif',
+                    weight: 700
+                }), e.drawText(p.default.Messages.STATUS_LEAD_IN_JUST, {
+                    x: o,
+                    y: c.fontPadding + 1 * c.lineHeight
+                }, !0, (null === (a = e.assetMap) || void 0 === a ? void 0 : a.has(c.AssetTypes.Platform)) ? c.titleMaxWidthPlatform : c.titleMaxWidthNoPlatform), e.setFont({
+                    size: 14,
+                    weight: 400
+                });
+                let u = "";
+                {
+                    let e = n("808742").getHangStatusText;
+                    u = e(t)
+                }
+                e.drawText(u, {
+                    x: o,
+                    y: c.fontPadding + 2 * c.lineHeight
+                }, !0)
+            }, _ = (e, t, n) => {
+                var l;
+                e.setSize({
+                    w: c.canvasWidth,
+                    h: c.canvasHeight
+                });
+                let {
+                    color: i,
+                    theme: a
+                } = (0, f.getProfileInfo)(n, "black");
+                e.setColor(i), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), e.setColor("dark" === a ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), e.setColor("dark" === a ? "white" : "black");
+                let r = e.drawRoundedImage("AssetImage", {
+                    x: c.padding,
+                    y: c.padding
+                }, {
+                    w: c.activitySize,
+                    h: c.activitySize
+                }, 8);
+                r === s.DrawResultStatus.Failure && e.drawPath(c.ACTIVITY_IMAGE_FALLBACK_PATH, {
+                    x: c.padding,
+                    y: c.padding
+                }, !0, 2 + 2 / 3);
+                let o = c.activitySize + c.padding + c.imagePadding;
+                e.setColor("dark" === a ? "white" : "rgb(6, 6, 7)"), e.setFont({
+                    size: 14,
+                    family: '"gg sans", sans-serif',
+                    weight: 700
+                }), e.drawText("".concat(t.details), {
+                    x: o,
+                    y: c.fontPadding + 1 * c.lineHeight
+                }, !0, (null === (l = e.assetMap) || void 0 === l ? void 0 : l.has("Platform")) ? c.titleMaxWidthPlatform : c.titleMaxWidthNoPlatform), e.setFont({
+                    size: 14,
+                    weight: 400
+                }), e.drawText("".concat(t.state), {
+                    x: o,
+                    y: c.fontPadding + 2 * c.lineHeight
+                }, !0)
+            }, N = (e, t, n) => {
+                var l, i, a;
+                e.setSize({
+                    w: c.canvasWidth,
+                    h: c.canvasHeight
+                });
+                let {
+                    color: s,
+                    theme: r
+                } = (0, f.getProfileInfo)(n, "black");
+                e.setColor(s), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), e.setColor("dark" === r ? "rgba(0, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.7)"), e.drawRoundedRect({
+                    x: 0,
+                    y: 0,
+                    h: c.canvasHeight,
+                    w: c.canvasWidth
+                }, 8, !0), (null === (l = e.assetMap) || void 0 === l ? void 0 : l.has("AssetImage")) ? e.drawRoundedImage("AssetImage", {
+                    x: c.padding,
+                    y: c.padding
+                }, {
+                    w: c.activitySize,
+                    h: c.activitySize
+                }, 8) : (null === (i = e.assetMap) || void 0 === i ? void 0 : i.has("ApplicationImage")) ? e.drawRoundedImage("ApplicationImage", {
+                    x: c.padding,
+                    y: c.padding
+                }, {
+                    w: c.activitySize,
+                    h: c.activitySize
+                }, 8) : C(e, r);
+                let o = c.activitySize + c.padding + c.imagePadding;
+                e.setColor("dark" === r ? "white" : "rgb(6, 6, 7)"), e.setFont({
+                    size: 16,
+                    family: '"gg sans", sans-serif',
+                    weight: 700
+                }), e.drawText("Streaming ".concat(t.name), {
+                    x: o,
+                    y: c.fontPadding + c.lineHeight * (null != t.timestamps ? 1 : 1.5)
+                }, !0, (null === (a = e.assetMap) || void 0 === a ? void 0 : a.has(c.AssetTypes.Platform)) ? c.titleMaxWidthPlatform : c.titleMaxWidthNoPlatform), null != t.timestamps && (e.setFont({
+                    size: 14,
+                    weight: 500
+                }), e.drawText("for ".concat((0, f.howLong)(t.timestamps)), {
+                    x: o,
+                    y: c.fontPadding + 2 * c.lineHeight
+                }, !0))
             }
         },
         407462: function(e, t, n) {
             "use strict";
-            var l, i, a, s;
+            var l, i;
             n.r(t), n.d(t, {
                 canvasWidth: function() {
-                    return r
+                    return a
                 },
                 canvasHeight: function() {
-                    return o
+                    return s
                 },
                 AssetTypes: function() {
                     return l
                 },
                 padding: function() {
-                    return u
+                    return r
                 },
                 imagePadding: function() {
-                    return d
+                    return o
                 },
                 fontPadding: function() {
-                    return c
+                    return u
                 },
                 lineHeight: function() {
-                    return f
+                    return d
                 },
                 platformSize: function() {
-                    return m
+                    return c
                 },
                 activitySize: function() {
-                    return p
+                    return f
                 },
                 titleMaxWidthNoPlatform: function() {
-                    return h
+                    return m
                 },
                 titleMaxWidthPlatform: function() {
-                    return E
+                    return p
                 },
                 ACTIVITY_IMAGE_FALLBACK_PATH: function() {
-                    return g
-                },
-                ActivityReactorInteractionTypes: function() {
-                    return i
+                    return h
                 }
             });
-            let r = 348,
-                o = 88;
-            (a = l || (l = {})).AssetImage = "AssetImage", a.ApplicationImage = "ApplicationImage", a.Platform = "Platform", a.StreamPreview = "StreamPreview", a.HangStatus = "HangStatus";
-            let u = 12,
-                d = 12,
-                c = u + d,
-                f = 16,
-                m = 24,
-                p = 64,
-                h = 335,
-                E = 310,
-                g = "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm6.81 7c-.54 0-1 .26-1.23.61A1 1 0 0 1 8.92 8.5 3.49 3.49 0 0 1 11.82 7c1.81 0 3.43 1.38 3.43 3.25 0 1.45-.98 2.61-2.27 3.06a1 1 0 0 1-1.96.37l-.19-1a1 1 0 0 1 .98-1.18c.87 0 1.44-.63 1.44-1.25S12.68 9 11.81 9ZM13 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM18.5 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7 18.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z";
-            (s = i || (i = {})).ReactBegin = "React Begin", s.ReplyBegin = "Reply Begin", s.ReactSubmit = "React Submit", s.ReplySubmit = "Reply Submit", s.ReactSend = "React Send", s.ReplySend = "Reply Send"
-        },
-        658567: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return m
-                }
-            }), n("222007"), n("424973");
-            var l = n("884691"),
-                i = n("299285"),
-                a = n("304367"),
-                s = n("373469"),
-                r = n("550368"),
-                o = n("402671"),
-                u = n("407462"),
-                d = n("78512"),
-                c = n("49111");
-            let f = e => {
-                let t = l.useMemo(() => new a.AssetMap, []),
-                    [n, i] = l.useState(!1),
-                    s = l.useRef(e.length);
-                return l.useEffect(() => {
-                    e.forEach(async e => {
-                        await t.loadRemoteImage(e), s.current -= 1, s.current < 1 && i(!0)
-                    }), s.current < 1 && i(!0)
-                }, []), {
-                    loaded: n,
-                    assetMap: t
-                }
-            };
-            var m = (e, t) => {
-                var l;
-                let a;
-                let {
-                    theme: m
-                } = (0, d.getProfileInfo)(t, "black"), p = "dark" === m, h = (0, d.getActivityPlatform)(e), {
-                    assets: E,
-                    application_id: g
-                } = e;
-                a = null != e.application_id ? i.default.getApplication(e.application_id) : i.default.getApplicationByName(e.name);
-                let S = s.default.getAnyStreamForUser(t.id),
-                    C = (0, r.getAssetImage)(g, null == E ? void 0 : E.large_image, 64),
-                    T = null == a ? void 0 : a.getIconURL(64),
-                    v = [];
-                if (null != h ? v.push({
-                        name: u.AssetTypes.Platform,
-                        url: p ? h.icon.darkPNG : h.icon.lightPNG
-                    }) : e.type === c.ActivityTypes.PLAYING && v.push({
-                        name: "Platform",
-                        url: p ? n("944857") : n("248073")
-                    }), null != C && (C.includes("http") ? v.push({
-                        name: u.AssetTypes.AssetImage,
-                        url: C
-                    }) : v.push({
-                        name: u.AssetTypes.AssetImage,
-                        url: n(C)
-                    })), e.type === c.ActivityTypes.HANG_STATUS && (null === (l = e.emoji) || void 0 === l ? void 0 : l.id) != null) {
-                    let t = (0, o.getEmojiUrl)({
-                        id: e.emoji.id,
-                        name: e.emoji.name,
-                        animated: !1
-                    });
-                    v.push({
-                        name: u.AssetTypes.HangStatus,
-                        url: t
-                    })
-                }
-                null != T && v.push({
-                    name: u.AssetTypes.ApplicationImage,
-                    url: T
-                });
-                let {
-                    loaded: I,
-                    assetMap: _
-                } = f(v);
-                return {
-                    loaded: I,
-                    assetMap: _,
-                    stream: S
-                }
-            }
+            let a = 348,
+                s = 88;
+            (i = l || (l = {})).AssetImage = "AssetImage", i.ApplicationImage = "ApplicationImage", i.Platform = "Platform", i.StreamPreview = "StreamPreview", i.HangStatus = "HangStatus";
+            let r = 12,
+                o = 12,
+                u = r + o,
+                d = 16,
+                c = 24,
+                f = 64,
+                m = 335,
+                p = 310,
+                h = "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm6.81 7c-.54 0-1 .26-1.23.61A1 1 0 0 1 8.92 8.5 3.49 3.49 0 0 1 11.82 7c1.81 0 3.43 1.38 3.43 3.25 0 1.45-.98 2.61-2.27 3.06a1 1 0 0 1-1.96.37l-.19-1a1 1 0 0 1 .98-1.18c.87 0 1.44-.63 1.44-1.25S12.68 9 11.81 9ZM13 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7-10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM18.5 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM7 18.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
         },
         78512: function(e, t, n) {
             "use strict";
@@ -8915,10 +8831,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 sendReaction: function() {
-                    return T
+                    return S
                 },
                 sendReply: function() {
-                    return v
+                    return C
                 }
             }), n("70102");
             var l = n("913144"),
@@ -8927,90 +8843,86 @@
                 s = n("81594"),
                 r = n("282928"),
                 o = n("966724"),
-                u = n("695412"),
-                d = n("884351"),
-                c = n("166257"),
-                f = n("432173"),
-                m = n("271938"),
-                p = n("42203"),
-                h = n("474643"),
-                E = n("462495");
-            let g = async (e, t) => {
-                let n = await e.export(u.DiscordCanvasExporterOutputFormats.File, "png", 1, t);
-                return n
-            }, S = e => {
-                let t = E.default.getFiles(e),
-                    n = t[0],
-                    i = E.default.getMessageForFile(n.id);
-                return null == i ? Promise.reject() : new Promise((e, t) => {
-                    let i = a => {
-                        a.file.id === n.id && (l.default.unsubscribe("UPLOAD_COMPLETE", i), l.default.unsubscribe("UPLOAD_FAIL", i), "UPLOAD_COMPLETE" === a.type ? e(a.messageRecord) : t(Error("Upload failed")))
-                    };
-                    l.default.subscribe("UPLOAD_COMPLETE", i), l.default.subscribe("UPLOAD_FAIL", i)
-                })
-            }, C = function(e, t) {
-                var l;
-                let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                    a = arguments.length > 3 ? arguments[3] : void 0,
-                    u = p.default.getChannel(t);
-                l = m.default.getToken(), d.default.parse(u, "");
-                let c = o.UploadPlatform.WEB;
-                if (i) s.default.addFile({
-                    file: {
-                        platform: c,
-                        file: e,
-                        uri: "",
-                        originalUri: ""
-                    },
-                    channelId: t,
-                    draftType: h.DraftType.ChannelMessage
-                });
-                else {
-                    let l = p.default.getChannel(t);
-                    if (null == l) throw Error("AtomicReactor sendUtils: Couldn't resolve channel with id ".concat(t));
-                    {
-                        let l = n("783480").default,
-                            i = new r.CloudUpload({
-                                file: e,
-                                platform: o.UploadPlatform.WEB,
-                                isThumbnail: !1
-                            }, t);
-                        i.description = a, l.uploadFiles({
-                            channelId: t,
-                            uploads: [i],
-                            draftType: h.DraftType.ChannelMessage
-                        })
+                u = n("884351"),
+                d = n("166257"),
+                c = n("432173"),
+                f = n("271938"),
+                m = n("42203"),
+                p = n("474643"),
+                h = n("462495");
+            let E = e => {
+                    let t = h.default.getFiles(e),
+                        n = t[0],
+                        i = h.default.getMessageForFile(n.id);
+                    return null == i ? Promise.reject() : new Promise((e, t) => {
+                        let i = a => {
+                            a.file.id === n.id && (l.default.unsubscribe("UPLOAD_COMPLETE", i), l.default.unsubscribe("UPLOAD_FAIL", i), "UPLOAD_COMPLETE" === a.type ? e(a.messageRecord) : t(Error("Upload failed")))
+                        };
+                        l.default.subscribe("UPLOAD_COMPLETE", i), l.default.subscribe("UPLOAD_FAIL", i)
+                    })
+                },
+                g = function(e, t) {
+                    var l;
+                    let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+                        a = arguments.length > 3 ? arguments[3] : void 0,
+                        d = m.default.getChannel(t);
+                    l = f.default.getToken(), u.default.parse(d, "");
+                    let c = o.UploadPlatform.WEB;
+                    if (i) s.default.addFile({
+                        file: {
+                            platform: c,
+                            file: e,
+                            uri: "",
+                            originalUri: ""
+                        },
+                        channelId: t,
+                        draftType: p.DraftType.ChannelMessage
+                    });
+                    else {
+                        let l = m.default.getChannel(t);
+                        if (null == l) throw Error("AtomicReactor sendUtils: Couldn't resolve channel with id ".concat(t));
+                        {
+                            let l = n("783480").default,
+                                i = new r.CloudUpload({
+                                    file: e,
+                                    platform: o.UploadPlatform.WEB,
+                                    isThumbnail: !1
+                                }, t);
+                            i.description = a, l.uploadFiles({
+                                channelId: t,
+                                uploads: [i],
+                                draftType: p.DraftType.ChannelMessage
+                            })
+                        }
                     }
+                },
+                S = async e => {
+                    let {
+                        file: t,
+                        reaction: n,
+                        user: l,
+                        altText: a,
+                        requireConfirmation: s = !1
+                    } = e, r = await i.default.openPrivateChannel(l.id, !1, !1);
+                    g(t, r, s, a);
+                    let o = await E(r);
+                    if (null != o) {
+                        let e = (0, c.toReactionEmoji)(n);
+                        (0, d.addReaction)(r, o.id, e)
+                    }
+                }, C = async e => {
+                    let {
+                        file: t,
+                        reply: n,
+                        user: l,
+                        altText: s,
+                        requireConfirmation: r = !1
+                    } = e, o = await i.default.openPrivateChannel(l.id, !1, !1);
+                    g(t, o, r, s), await E(o);
+                    let d = m.default.getChannel(o),
+                        c = u.default.parse(d, n);
+                    a.default.sendMessage(o, c)
                 }
-            }, T = async e => {
-                let {
-                    discordCanvas: t,
-                    reaction: n,
-                    user: l,
-                    filename: a,
-                    altText: s,
-                    requireConfirmation: r = !1
-                } = e, o = await i.default.openPrivateChannel(l.id, !1, !1), u = await g(t, a);
-                C(u, o, r, s);
-                let d = await S(o);
-                if (null != d) {
-                    let e = (0, f.toReactionEmoji)(n);
-                    (0, c.addReaction)(o, d.id, e)
-                }
-            }, v = async e => {
-                let {
-                    discordCanvas: t,
-                    reply: n,
-                    user: l,
-                    filename: s,
-                    altText: r,
-                    requireConfirmation: o = !1
-                } = e, u = await i.default.openPrivateChannel(l.id, !1, !1), c = await g(t, s);
-                C(c, u, o, r), await S(u);
-                let f = p.default.getChannel(u),
-                    m = d.default.parse(f, n);
-                a.default.sendMessage(u, m)
-            }
         },
         314848: function(e, t, n) {
             "use strict";
@@ -9032,17 +8944,21 @@
         },
         304367: function(e, t, n) {
             "use strict";
+            async function l(e) {
+                let t = new i,
+                    n = [];
+                for (let l of Object.keys(e)) n.push(t.loadRemoteImage(l, e[l]));
+                return await Promise.all(n), t
+            }
             n.r(t), n.d(t, {
-                AssetMap: function() {
+                loadAssetMap: function() {
                     return l
                 }
-            });
-            class l {
-                async loadRemoteImage(e) {
-                    let t = "string" == typeof e ? e : e.name,
-                        n = "string" == typeof e ? e : e.url,
-                        l = new Image;
-                    l.src = n, l.crossOrigin = "anonymous", await l.decode(), this.assets[t] = l
+            }), n("424973"), n("222007");
+            class i {
+                async loadRemoteImage(e, t) {
+                    let n = new Image;
+                    n.src = t, n.crossOrigin = "anonymous", await n.decode(), this.assets[e] = n
                 }
                 get(e) {
                     return this.assets[e]
@@ -9109,12 +9025,9 @@
                     this.exporter = e
                 }
                 export (e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "png",
-                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
-                        l = arguments.length > 3 ? arguments[3] : void 0;
                     a(null != this.exporter, "DiscordCanvas: Exporting the canvas requires a valid DiscordCanvasExporter to be initialized.");
-                    let i = this.canvas.getCanvasForExport();
-                    return a(null != i, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(i, e, t, n, l)
+                    let t = this.canvas.getCanvasForExport();
+                    return a(null != t, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(t, e)
                 }
                 constructor(e, t) {
                     this.canvas = e, this.exporter = t
@@ -9137,19 +9050,22 @@
                         return e.toDataURL(t, n)
                     }
                     async exportCanvas(e, t) {
-                        let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "png",
-                            a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
-                            s = arguments.length > 4 ? arguments[4] : void 0;
-                        if (t === i.DiscordCanvasExporterOutputFormats.Base64) return this.toDataUrl(e, n, a);
-                        if (t === i.DiscordCanvasExporterOutputFormats.Blob) {
-                            let t = this.toDataUrl(e, n, a);
+                        let {
+                            format: n,
+                            fileType: a = "png",
+                            quality: s = 1,
+                            fileName: r
+                        } = t;
+                        if (n === i.DiscordCanvasExporterOutputFormats.Base64) return this.toDataUrl(e, a, s);
+                        if (n === i.DiscordCanvasExporterOutputFormats.Blob) {
+                            let t = this.toDataUrl(e, a, s);
                             return (0, l.dataUrlToBlob)(t)
                         }
-                        if (t === i.DiscordCanvasExporterOutputFormats.File) {
-                            let t = this.toDataUrl(e, n, a);
-                            return await (0, l.dataUrlToFile)(t, s, "image/png")
+                        if (n === i.DiscordCanvasExporterOutputFormats.File) {
+                            let t = this.toDataUrl(e, a, s);
+                            return await (0, l.dataUrlToFile)(t, r, "image/png")
                         }
-                        throw Error("DiscordCanvas: ".concat(t, " is not a valid export format."))
+                        throw Error("DiscordCanvas: ".concat(n, " is not a valid export format."))
                     }
                 }
         },
@@ -9160,10 +9076,12 @@
                     return l
                 }
             });
-            var l, i = n("335609"),
-                a = n("113149"),
-                s = n("695412");
-            l = class extends i.default {
+            var l, i = n("627445"),
+                a = n.n(i),
+                s = n("335609"),
+                r = n("113149"),
+                o = n("695412");
+            l = class extends s.default {
                 getCanvasForExport() {
                     return this.canvas
                 }
@@ -9214,58 +9132,59 @@
                     if (null == this.context) return;
                     this.setContextProperties();
                     let i = null != l ? l : this.canvas.width,
-                        s = this.context.measureText(e),
-                        r = !1;
+                        a = this.context.measureText(e),
+                        s = !1;
                     if (this.font.truncate) {
-                        for (; s.width + t.x + a.TEXT_TRUNCATION_PADDING_PX > i;) e = e.slice(0, -4), s = this.context.measureText(e), r = !0;
-                        r && (e += "...")
+                        for (; a.width + t.x + r.TEXT_TRUNCATION_PADDING_PX > i;) e = e.slice(0, -4), a = this.context.measureText(e), s = !0;
+                        s && (e += "...")
                     }
                     n ? this.context.fillText(e, t.x, t.y) : this.context.strokeText(e, t.x, t.y)
                 }
                 drawImage(e, t, n) {
-                    if (null == this.context) return s.DrawResultStatus.Failure;
-                    let l = this.getLoadedImage(e);
-                    return null == l ? s.DrawResultStatus.ImageNotLoaded : (null != n ? this.context.drawImage(l, t.x, t.y, n.w, n.h) : this.context.drawImage(l, t.x, t.y), s.DrawResultStatus.Success)
+                    if (a(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), null == this.context) return o.DrawResultStatus.Failure;
+                    let l = this.assetMap.get(e);
+                    return null == l ? o.DrawResultStatus.ImageNotLoaded : (null != n ? this.context.drawImage(l, t.x, t.y, n.w, n.h) : this.context.drawImage(l, t.x, t.y), o.DrawResultStatus.Success)
                 }
                 drawRoundedImage(e, t, n, l) {
-                    if (null == this.context) return s.DrawResultStatus.Failure;
+                    if (null == this.context) return o.DrawResultStatus.Failure;
                     let {
                         x: i,
                         y: a
                     } = t, {
-                        w: r,
-                        h: o
+                        w: s,
+                        h: r
                     } = n;
                     this.context.save();
                     let u = new Path2D;
-                    u.roundRect(i, a, r, o, l), this.context.clip(u);
+                    u.roundRect(i, a, s, r, l), this.context.clip(u);
                     let d = this.drawImage(e, t, n);
                     return this.context.restore(), d
                 }
                 drawCroppedImage(e, t, n) {
-                    if (null == this.context) return s.DrawResultStatus.Failure;
-                    let l = this.getLoadedImage(e);
-                    if (null == l) return s.DrawResultStatus.ImageNotLoaded;
+                    var l;
+                    if (null == this.context) return o.DrawResultStatus.Failure;
+                    let i = null === (l = this.assetMap) || void 0 === l ? void 0 : l.get(e);
+                    if (null == i) return o.DrawResultStatus.ImageNotLoaded;
                     let {
-                        x: i,
-                        y: a,
+                        x: a,
+                        y: s,
                         w: r,
-                        h: o
+                        h: u
                     } = t, {
-                        x: u,
-                        y: d,
-                        w: c,
-                        h: f
+                        x: d,
+                        y: c,
+                        w: f,
+                        h: m
                     } = n;
-                    return this.context.drawImage(l, i, a, r, o, u, d, c, f), s.DrawResultStatus.Success
+                    return this.context.drawImage(i, a, s, r, u, d, c, f, m), o.DrawResultStatus.Success
                 }
                 drawPath(e, t) {
                     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                         l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1;
-                    if (null == this.context) return s.DrawResultStatus.Failure;
+                    if (null == this.context) return o.DrawResultStatus.Failure;
                     this.setContextProperties(), this.context.save();
                     let i = new Path2D(e);
-                    return this.context.translate(t.x, t.y), this.context.scale(l, l), n ? this.context.fill(i, "evenodd") : this.context.stroke(i), this.context.restore(), s.DrawResultStatus.Success
+                    return this.context.translate(t.x, t.y), this.context.scale(l, l), n ? this.context.fill(i, "evenodd") : this.context.stroke(i), this.context.restore(), o.DrawResultStatus.Success
                 }
                 constructor(e, t) {
                     super(e, t), this.canvas = e, this.context = this.canvas.getContext("2d")
@@ -9292,6 +9211,26 @@
                     return i
                 }
             }), (a = l || (l = {}))[a.Base64 = 0] = "Base64", a[a.Blob = 1] = "Blob", a[a.File = 2] = "File", (s = i || (i = {}))[s.Success = 0] = "Success", s[s.Failure = 1] = "Failure", s[s.ImageNotLoaded = 2] = "ImageNotLoaded"
+        },
+        999317: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                generateImageFromCanvas: function() {
+                    return a
+                }
+            });
+            var l = n("304367"),
+                i = n("404605");
+            async function a(e) {
+                let {
+                    assetsToLoad: t,
+                    drawImage: a,
+                    exportConfigs: s
+                } = e, r = await (0, l.loadAssetMap)(t), o = n("480647").default, u = n("800044").default, d = document.createElement("canvas"), c = new o(d, r), f = new u, m = new i.default(c, f);
+                a(m.canvas);
+                let p = await m.export(s);
+                return d.remove(), p
+            }
         },
         829290: function(e, t, n) {
             "use strict";
@@ -51590,54 +51529,57 @@
                 o = n("326436");
 
             function u(e) {
-                let {
-                    className: t,
-                    src: n,
-                    unicodeEmoji: i,
-                    name: u,
-                    size: d = 20,
-                    enableTooltip: c = !0,
-                    enableHeight: f = !0,
-                    onClick: m
+                let t, {
+                    className: n,
+                    src: i,
+                    unicodeEmoji: u,
+                    name: d,
+                    size: c = 20,
+                    enableTooltip: f = !0,
+                    enableHeight: m = !0,
+                    onClick: p
                 } = e;
-                if (null == n && null == i) return null;
-                let p = e => {
-                    let c = (0, l.jsx)("img", {
+                if (null == i && null == u) return null;
+                return (0, l.jsx)(s.TooltipContainer, {
+                    text: d,
+                    "aria-label": !1,
+                    shouldShow: f,
+                    element: "span",
+                    children: (t = (0, l.jsx)("img", {
                         alt: "",
                         "aria-label": r.default.Messages.ROLE_ICON_ALT_TEXT.format({
-                            name: u
+                            name: d
                         }),
-                        className: a(o.roleIcon, t, {
-                            [o.clickable]: null != m
+                        className: a(o.roleIcon, n, {
+                            [o.clickable]: null != p
                         }),
-                        height: f ? d : void 0,
-                        src: n,
-                        width: d,
-                        ...e
-                    });
-                    return (null != i && (c = (0, l.jsx)("img", {
+                        height: m ? c : void 0,
+                        src: i,
+                        width: c
+                    }), (null != u && (t = (0, l.jsx)("img", {
                         alt: "",
-                        "aria-label": i.allNamesString,
-                        className: a(o.roleIcon, t, {
-                            [o.clickable]: null != m
+                        "aria-label": u.allNamesString,
+                        className: a(o.roleIcon, n, {
+                            [o.clickable]: null != p
                         }),
-                        height: f ? d : void 0,
-                        src: i.url,
-                        width: d,
-                        ...e
-                    })), null == m) ? (0, l.jsx)(s.FocusRing, {
-                        children: c
+                        height: m ? c : void 0,
+                        src: u.url,
+                        width: c
+                    })), null == p) ? (0, l.jsx)(s.FocusRing, {
+                        offset: {
+                            left: 5
+                        },
+                        children: t
                     }) : (0, l.jsx)(s.Clickable, {
-                        onClick: m,
+                        onClick: p,
                         tag: "span",
-                        children: c
-                    })
-                };
-                return (0, l.jsx)(s.Tooltip, {
-                    text: u,
-                    "aria-label": !1,
-                    shouldShow: c,
-                    children: e => p(e)
+                        focusProps: {
+                            offset: {
+                                left: 5
+                            }
+                        },
+                        children: t
+                    }))
                 })
             }
         },
@@ -54142,4 +54084,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.68bbf3d623eb725f2f99.js.map
+//# sourceMappingURL=60053.68d7fb69f20b7ae7133a.js.map

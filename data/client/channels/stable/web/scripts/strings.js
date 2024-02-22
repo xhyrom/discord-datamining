@@ -11585,10 +11585,12 @@
                 USER_SETTINGS_ADD_ANIMATED_AVATAR: "Add Animated Avatar",
                 USER_SETTINGS_AVATAR_DECORATION: "Avatar Decoration",
                 USER_SETTINGS_REMOVE_AVATAR_DECORATION: "Remove Decoration",
+                USER_SETTINGS_REMOVE_PER_GUILD_AVATAR_DECORATION: "Use Default",
                 USER_SETTINGS_CHANGE_AVATAR_DECORATION: "Change Decoration",
                 USER_SETTINGS_PROFILE_EFFECT: "Profile Effect",
                 USER_SETTINGS_REMOVE_PROFILE_EFFECT: "Remove Effect",
                 USER_SETTINGS_CHANGE_PROFILE_EFFECT: "Change Effect",
+                USER_SETTINGS_USE_DEFAULT_PROFILE_EFFECT: "Use Default",
                 USER_SETTINGS_ABOUT_ME: "About Me",
                 USER_SETTINGS_ABOUT_ME_HINT: "Tap to add an about me",
                 USER_SETTINGS_PRONOUNS_HINT: "Tap to add pronouns",
@@ -18261,7 +18263,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268194", ", Version Hash: ").concat("9266b7f328954b200edaa95a321130d84dcce844")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268255", ", Version Hash: ").concat("e8a583d90c0c9c43b70629fdf7d81bad345dd37f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20600,8 +20602,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "268194", "268194"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268194")), _ = 0), _
+                let _ = parseInt((e = "268255", "268255"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268255")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25315,8 +25317,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708626932702",
-                                    build_number: "268194"
+                                    built_at: "1708633869147",
+                                    build_number: "268255"
                                 }
                             },
                             retries: 1
@@ -26330,7 +26332,7 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return N
+                    return O
                 }
             }), E("222007");
             var t = E("689988"),
@@ -26340,19 +26342,26 @@
                 i = 0,
                 a = null;
 
-            function I() {
-                let e = .2 * (i - r);
+            function I(e) {
                 e > 0 && r >= i || e < 0 && r <= i ? (clearInterval(a), 0 === i && n.stop()) : (r += e, n.volume = r)
             }
 
             function s() {
-                i = 0, a = setInterval(I, 100)
+                i = 0;
+                let e = S();
+                a = setInterval(() => I(e), 100)
             }
 
             function T() {
-                n.loop(), i = .5, a = setInterval(I, 100)
+                n.loop(), i = .5;
+                let e = S();
+                a = setInterval(() => I(e), 100)
             }
-            class S extends t.default {
+
+            function S() {
+                return .2 * (i - r)
+            }
+            class N extends t.default {
                 constructor(...e) {
                     super(...e), this.actions = {
                         VIBING_WUMPUS_PLAY_MUSIC: T,
@@ -26360,7 +26369,7 @@
                     }
                 }
             }
-            var N = new S
+            var O = new N
         },
         537597: function(e, _, E) {
             "use strict";
@@ -36564,4 +36573,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.e5d74f8de23a32986632.js.map
+//# sourceMappingURL=77761.81cd8d5609d70ce631c4.js.map
