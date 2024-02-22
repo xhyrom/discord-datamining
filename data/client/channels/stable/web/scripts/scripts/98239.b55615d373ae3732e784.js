@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67615"], {
+    ["98239"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -39576,34 +39576,34 @@
         },
         32346: function(e, t, n) {
             "use strict";
-            let s, i;
+            let s, i, r;
             n.r(t), n.d(t, {
                 default: function() {
-                    return c
+                    return g
                 }
             }), n("222007");
-            var r = n("917351"),
-                a = n.n(r),
-                o = n("446674"),
-                d = n("913144"),
-                u = n("49111");
-            let l = f();
+            var a = n("917351"),
+                o = n.n(a),
+                d = n("446674"),
+                u = n("913144"),
+                l = n("49111");
+            let f = _();
 
-            function f() {
+            function _() {
                 return {
                     recentCustomStatuses: [],
                     currentDefaultStatus: null
                 }
             }
-            class _ extends o.default.PersistedStore {
+            class c extends d.default.PersistedStore {
                 initialize(e) {
-                    l = {
-                        ...f(),
+                    f = {
+                        ..._(),
                         ...null != e ? e : {}
                     }
                 }
                 getState() {
-                    return l
+                    return f
                 }
                 getCurrentHangStatus() {
                     return s
@@ -39612,63 +39612,67 @@
                     return i
                 }
                 getRecentCustomStatuses() {
-                    return l.recentCustomStatuses
+                    return f.recentCustomStatuses
                 }
                 getCurrentDefaultStatus() {
-                    return l.currentDefaultStatus
+                    return f.currentDefaultStatus
                 }
                 getHangStatusActivity() {
-                    return null == s ? null : {
-                        type: u.ActivityTypes.HANG_STATUS,
-                        name: "Hang Status",
-                        state: s,
-                        details: null == i ? void 0 : i.status,
-                        emoji: null == i ? void 0 : i.emoji
-                    }
+                    return null == s ? null : r
                 }
             }
-            _.displayName = "HangStatusStore", _.persistKey = "HangStatusStore";
-            var c = new _(d.default, {
+            c.displayName = "HangStatusStore", c.persistKey = "HangStatusStore";
+            var g = new c(u.default, {
                 LOGOUT: function() {
-                    l = f()
+                    f = _()
                 },
                 UPDATE_HANG_STATUS: function(e) {
                     let {
                         status: t,
                         saveAsDefault: n
                     } = e;
-                    s = t, i = null, n && (l.currentDefaultStatus = {
+                    s = t, i = null, n && (f.currentDefaultStatus = {
                         status: t,
                         customHangStatus: i,
                         expiresAt: Date.now() + 288e5
-                    })
+                    }), r = {
+                        type: l.ActivityTypes.HANG_STATUS,
+                        name: "Hang Status",
+                        state: s
+                    }
                 },
                 UPDATE_HANG_STATUS_CUSTOM: function(e) {
                     let {
                         status: t,
                         emoji: n,
-                        saveAsDefault: r
+                        saveAsDefault: a
                     } = e;
-                    s = u.HangStatusTypes.CUSTOM, i = {
+                    s = l.HangStatusTypes.CUSTOM, i = {
                         status: t,
                         emoji: n
                     };
-                    let o = [...l.recentCustomStatuses],
-                        d = o.findIndex(e => e.status === t && a.isEqual(e.emoji, n)); - 1 !== d ? o.splice(d, 1) : 7 === o.length && o.splice(6, 1), l.recentCustomStatuses = [i, ...o], r && (l.currentDefaultStatus = {
+                    let d = [...f.recentCustomStatuses],
+                        u = d.findIndex(e => e.status === t && o.isEqual(e.emoji, n)); - 1 !== u ? d.splice(u, 1) : 7 === d.length && d.splice(6, 1), f.recentCustomStatuses = [i, ...d], a && (f.currentDefaultStatus = {
                         status: s,
                         customHangStatus: i,
                         expiresAt: Date.now() + 288e5
-                    })
+                    }), r = {
+                        type: l.ActivityTypes.HANG_STATUS,
+                        name: "Hang Status",
+                        state: s,
+                        details: t,
+                        emoji: n
+                    }
                 },
                 CLEAR_HANG_STATUS: function(e) {
                     let {
                         saveAsDefault: t
                     } = e;
-                    s = null, i = null, t && (l.currentDefaultStatus = {
+                    s = null, i = null, t && (f.currentDefaultStatus = {
                         status: null,
                         customHangStatus: null,
                         expiresAt: Date.now() + 288e5
-                    })
+                    }), r = null
                 }
             })
         },
@@ -40802,6 +40806,13 @@
                 _(t)
             }
             class y extends r.default {
+                initialize() {
+                    this.waitFor(i.default)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(y.LATEST_SNAPSHOT_VERSION);
+                    null != e && (a = new Set(e))
+                }
                 takeSnapshot() {
                     return {
                         version: y.LATEST_SNAPSHOT_VERSION,
@@ -40827,20 +40838,17 @@
                     return d
                 }
                 constructor() {
-                    super(), this.loadCache = () => {
-                        let e = this.readSnapshot(y.LATEST_SNAPSHOT_VERSION);
-                        null != e && (a = new Set(e))
-                    }, this.registerActionHandlers({
+                    super({
                         CONNECTION_OPEN: c,
                         CONNECTION_OPEN_SUPPLEMENTAL: c,
-                        CACHE_LOADED_LAZY: this.loadCache,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
                         OVERLAY_INITIALIZE: E,
                         CHANNEL_CREATE: m,
                         CHANNEL_UPDATES: h,
                         CHANNEL_DELETE: v,
                         SET_LOCATION_METADATA: p,
                         MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: g
-                    }), this.waitFor(i.default)
+                    })
                 }
             }
             y.displayName = "MessageRequestStore", y.LATEST_SNAPSHOT_VERSION = 1;
@@ -40957,6 +40965,13 @@
                 return r.has(t.id) && (r.delete(t.id), n = !0), n
             }
             class m extends i.default {
+                initialize() {
+                    this.waitFor(s.default)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
+                    null != e && (r = new Set(e))
+                }
                 takeSnapshot() {
                     return {
                         version: m.LATEST_SNAPSHOT_VERSION,
@@ -40979,18 +40994,15 @@
                     return o
                 }
                 constructor() {
-                    super(), this.loadCache = () => {
-                        let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
-                        null != e && (r = new Set(e))
-                    }, this.registerActionHandlers({
+                    super({
                         CONNECTION_OPEN: l,
                         CONNECTION_OPEN_SUPPLEMENTAL: l,
-                        CACHE_LOADED_LAZY: this.loadCache,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
                         CHANNEL_CREATE: _,
                         CHANNEL_UPDATES: c,
                         CHANNEL_DELETE: g,
                         MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: f
-                    }), this.waitFor(s.default)
+                    })
                 }
             }
             m.displayName = "SpamMessageRequestStore", m.LATEST_SNAPSHOT_VERSION = 1;
@@ -50664,6 +50676,13 @@
                 return H(t)
             }
             class eg extends v.default {
+                initialize() {
+                    this.waitFor(_.default, h.default, m.default, g.default, f.default, p.default, E.default, a.default, o.default)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(eg.LATEST_SNAPSHOT_VERSION);
+                    null != e && (S = e.guilds, A = new Set(e.unreadGuilds))
+                }
                 takeSnapshot() {
                     return {
                         version: eg.LATEST_SNAPSHOT_VERSION,
@@ -50745,13 +50764,10 @@
                     return O(e).sentinel
                 }
                 constructor() {
-                    super(), this.loadCache = () => {
-                        let e = this.readSnapshot(eg.LATEST_SNAPSHOT_VERSION);
-                        null != e && (S = e.guilds, A = new Set(e.unreadGuilds))
-                    }, this.registerActionHandlers({
+                    super({
                         CONNECTION_OPEN: x,
                         OVERLAY_INITIALIZE: B,
-                        CACHE_LOADED_LAZY: this.loadCache,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
                         GUILD_CREATE: j,
                         GUILD_DELETE: K,
                         MESSAGE_CREATE: Q,
@@ -50795,7 +50811,7 @@
                         RESORT_THREADS: X,
                         NOTIFICATION_CENTER_CLEAR_GUILD_MENTIONS: e_,
                         TRY_ACK: X
-                    }), this.waitFor(_.default, h.default, m.default, g.default, f.default, p.default, E.default, a.default, o.default)
+                    })
                 }
             }
             eg.displayName = "GuildReadStateStore", eg.LATEST_SNAPSHOT_VERSION = 1;
@@ -61839,4 +61855,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.164f9d143ece1e7362d3.js.map
+//# sourceMappingURL=98239.b55615d373ae3732e784.js.map
