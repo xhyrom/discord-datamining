@@ -3340,6 +3340,7 @@
   "USER_SETTINGS_KEYBIND_SWITCH_SERVER_SETTINGS_SECTION": "\"Select the voice channel to join or switch to\"",
   "USER_SETTINGS_KEYBIND_ENABLE_DISABLE": "\"Enable or disable keybind\"",
   "USER_SETTINGS_KEYBIND_VOICE_CHANNEL_RESULTS": "\"Results\"",
+  "USER_SETTINGS_KEYBIND_VIBE_WITH_WUMPUS_DESCRIPTION": "\"Listen to Lofi Beats with Wumpus\"",
   "SHOW_CURRENT_ACTIVITY": "\"Display current activity as a status message.\"",
   "SHOW_CURRENT_ACTIVITY_DESC": "\"Discord will automatically update your status if you're attending a public Stage.\"",
   "SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED": "\"Discord will automatically update your status based on the game you're playing (if detectable), an activity you're doing that supports Rich Presence, or if you're attending a public Stage.\"",
