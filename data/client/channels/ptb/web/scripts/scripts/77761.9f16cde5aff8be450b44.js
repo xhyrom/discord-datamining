@@ -9613,7 +9613,8 @@
                 DEFAULT_CUSTOM_GIFT_MESSAGE: "You’re awesome, just like this gift. Enjoy!",
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_HEADER: "Gift {username} a new Nitro membership",
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_BODY: "Warning: gift may cause uncontrollable happiness!",
-                MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CHOOSE_MONTHLY_OR_YEARLY: "Choose from {monthlyPrice} or {yearlyPrice}",
+                MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CHOOSE_MONTHLY_OR_YEARLY_V2: "Choose from {monthlyPrice}/month or {yearlyPrice}/year",
+                MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CARD_HEADER: "Your recipient will receive:",
                 MOBILE_CUSTOM_GIFT_TITLE: "Gift a Nitro membership",
                 MOBILE_CUSTOM_GIFT_DURATION_LABEL: "Gift duration",
                 MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH: "Gift {count, plural, one {# month} other {# months}} of {nitroTierName}",
@@ -18265,7 +18266,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268268", ", Version Hash: ").concat("28c8fb40e86a6fbdb52768b40f7c8ad780039dc2")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268289", ", Version Hash: ").concat("63e5da0a55f81fcc2287bcae4edf7032cb692d1d")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20604,8 +20605,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "268268", "268268"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268268")), _ = 0), _
+                let _ = parseInt((e = "268289", "268289"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268289")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25319,8 +25320,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708635446211",
-                                    build_number: "268268"
+                                    built_at: "1708636993013",
+                                    build_number: "268289"
                                 }
                             },
                             retries: 1
@@ -36575,4 +36576,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.fa679d3a894b02a7828f.js.map
+//# sourceMappingURL=77761.9f16cde5aff8be450b44.js.map
