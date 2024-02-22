@@ -3751,6 +3751,7 @@
                     eventHandlers: p
                 } = (0, a.default)({
                     user: t,
+                    guildId: null != n ? n : void 0,
                     size: (0, l.getDecorationSizeForAvatarSize)(o),
                     showPending: u,
                     animateOnHover: d,
@@ -4457,4 +4458,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72683.52f26b72da7c835d4103.js.map
+//# sourceMappingURL=72683.c0529b72a0985794fb71.js.map

@@ -35925,26 +35925,28 @@
                     roles: s,
                     nick: r,
                     avatar: a,
-                    flags: o,
-                    premium_since: d,
-                    pending: u,
-                    joined_at: l,
-                    communication_disabled_until: f,
-                    unusual_dm_activity_until: _
-                } = n, c = p.default.getMember(e, t.id);
-                (!(null != c && c.nick === r && c.avatar === a && i.isEqual(c.roles, s)) || c.premiumSince !== d || c.isPending !== u || c.joinedAt !== l || c.communicationDisabledUntil !== f || c.flags !== o || c.unusualDMActivityUntil !== _) && G({
+                    avatar_decoration_data: o,
+                    flags: d,
+                    premium_since: u,
+                    pending: l,
+                    joined_at: f,
+                    communication_disabled_until: _,
+                    unusual_dm_activity_until: c
+                } = n, g = p.default.getMember(e, t.id);
+                (!(null != g && g.nick === r && g.avatar === a && i.isEqual(g.roles, s) && i.isEqual(g.avatarDecoration, o)) || g.premiumSince !== u || g.isPending !== l || g.joinedAt !== f || g.communicationDisabledUntil !== _ || g.flags !== d || g.unusualDMActivityUntil !== c) && G({
                     type: "GUILD_MEMBER_ADD",
                     guildId: e,
                     user: t,
                     roles: s,
                     nick: r,
                     avatar: a,
-                    premiumSince: d,
-                    isPending: u,
-                    joinedAt: l,
-                    communicationDisabledUntil: f,
-                    unusualDMActivityUntil: _,
-                    flags: o
+                    avatarDecoration: o,
+                    premiumSince: u,
+                    isPending: l,
+                    joinedAt: f,
+                    communicationDisabledUntil: _,
+                    unusualDMActivityUntil: c,
+                    flags: d
                 })
             }
 
@@ -36444,6 +36446,7 @@
                     guildId: e.guild_id,
                     user: e.user,
                     avatar: e.avatar,
+                    avatarDecoration: e.avatar_decoration_data,
                     roles: e.roles,
                     nick: e.nick,
                     premiumSince: e.premium_since,
@@ -61836,4 +61839,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.9db3d106a210893f80ba.js.map
+//# sourceMappingURL=67615.164f9d143ece1e7362d3.js.map
