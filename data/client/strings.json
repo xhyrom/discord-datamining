@@ -11259,6 +11259,7 @@
   "SEE_DETAIL": "\"Event Details\"",
   "EVENT_MARK_INTERESTED": "\"Mark as Interested\"",
   "EVENT_MARK_NOT_INTERESTED": "\"Mark as Not Interested\"",
+  "EVENT_DETAILS_A11Y_HINT": "\"Double tap to view event details\"",
   "SCHEDULE_EVENT_DESCRIPTION": "\"Schedule a Stage for a future date.\"",
   "GO_TO_CHANNEL": "\"Go To Channel\"",
   "STARTING_SOON": "\"Starting soon\"",
