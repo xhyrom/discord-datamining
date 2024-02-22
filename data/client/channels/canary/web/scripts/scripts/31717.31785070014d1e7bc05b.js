@@ -54,8 +54,8 @@
                 Y = n("957255"),
                 j = n("824563"),
                 J = n("660478"),
-                X = n("18494"),
-                z = n("162771"),
+                z = n("18494"),
+                X = n("162771"),
                 q = n("401848"),
                 Q = n("697218"),
                 Z = n("599110"),
@@ -750,8 +750,8 @@
                                         else if (t === _.CodedLinkType.APP_DIRECTORY_PROFILE) Z.default.track(ei.AnalyticEvents.APP_DIRECTORY_PROFILE_EMBED_SENT, {
                                             application_id: d,
                                             device_platform: l.isMobile ? "mobile_web" : "desktop_web",
-                                            guild_id: z.default.getGuildId(),
-                                            channel_id: X.default.getChannelId()
+                                            guild_id: X.default.getGuildId(),
+                                            channel_id: z.default.getChannelId()
                                         });
                                         else if (t === _.CodedLinkType.ACTIVITY_BOOKMARK);
                                         else if (t === _.CodedLinkType.EMBEDDED_ACTIVITY_INVITE);
@@ -1157,6 +1157,13 @@
                 h = new u.Lru(15),
                 m = !1;
             class S extends i.default {
+                initialize() {
+                    this.waitFor(a.default), this.waitFor(s.default), this.waitFor(l.default), this.syncWith([r.default], () => !0), this.syncWith([s.default], M)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(S.LATEST_SNAPSHOT_VERSION);
+                    null != e && (m = !0, S.mergeSnapshot(e))
+                }
                 canEvictOrphans() {
                     return m
                 }
@@ -1224,12 +1231,9 @@
                     g = e
                 }
                 constructor() {
-                    super(), this.loadCache = () => {
-                        let e = this.readSnapshot(S.LATEST_SNAPSHOT_VERSION);
-                        null != e && (m = !0, S.mergeSnapshot(e))
-                    }, this.registerActionHandlers({
+                    super({
                         CACHE_LOADED_LAZY_NO_CACHE: v,
-                        CACHE_LOADED_LAZY: this.loadCache,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
                         CHANNEL_DELETE: I,
                         CHANNEL_UPDATES: T,
                         CONNECTION_OPEN_SUPPLEMENTAL: p,
@@ -1237,7 +1241,7 @@
                         LOGIN_SUCCESS: O,
                         THREAD_DELETE: L,
                         THREAD_UPDATE: C
-                    }), this.waitFor(a.default), this.waitFor(s.default), this.waitFor(l.default), this.syncWith([r.default], () => !0), this.syncWith([s.default], M)
+                    })
                 }
             }
 
@@ -3289,4 +3293,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.97725480b667f9178289.js.map
+//# sourceMappingURL=31717.31785070014d1e7bc05b.js.map
