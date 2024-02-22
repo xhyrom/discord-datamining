@@ -22413,7 +22413,6 @@
             var i = n("446674"),
                 r = n("913144");
             let s = {
-                    enable_swipe_shortcuts: "Gestures shortcuts - swipe from right to left.",
                     disable_alpha_voice_panel: "Disable new Voice Panel UI: Currently the new voice ui is defaulted ON for staff.  It's not feature complete so if there's something you are missing, or you find a problem, you can disable it here.",
                     highlight_experimental_icons: "Highlight experimental icons",
                     enable_last_channel: "Enable launch into last channel",
@@ -50114,7 +50113,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "268035"
+                                build_number: "268051"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64166,4 +64165,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.d246c4395f07641cea4d.js.map
+//# sourceMappingURL=21201.a116a25f657048cfcada.js.map
