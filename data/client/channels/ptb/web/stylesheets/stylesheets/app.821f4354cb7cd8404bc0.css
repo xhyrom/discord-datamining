@@ -45784,8 +45784,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -58943,8 +58943,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -112200,14 +112200,6 @@ html .invoiceCancelRow_a8669b {
     height: 100%
 }
 
-.defaultContainer__91554 {
-    display: flex;
-    height: 48px;
-    align-items: center;
-    background-color: var(--input-background);
-    overflow: hidden
-}
-
 .answerRow__9fc86 {
     display: grid;
     grid-template-columns: 1fr 24px;
@@ -112216,9 +112208,18 @@ html .invoiceCancelRow_a8669b {
     align-items: center
 }
 
+.defaultTextInputWrapper__4f24b {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--input-background);
+    border-radius: var(--radius-xs);
+    overflow: hidden
+}
+
 .defaultTextInput__91909 {
     flex: 1;
-    background-color: transparent
+    background-color: transparent;
+    padding-left: 4px
 }
 
 .imageOnlyContainer__04301 {
@@ -112315,8 +112316,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .expressionPickerButtonDefault_eda6e6 {
-    width: 48px;
-    height: 48px
+    width: 38px
 }
 
 .expressionPickerButtonImageOnly__42a53 {
@@ -112326,7 +112326,7 @@ html .invoiceCancelRow_a8669b {
 
 .expressionPickerIconDefault__286f7 {
     color: var(--interactive-normal);
-    margin-left: 4px
+    margin-left: 6px
 }
 
 .expressionPickerIconImageOnly_b5541a {
@@ -112337,7 +112337,9 @@ html .invoiceCancelRow_a8669b {
 }
 
 .emojiDefault_a6c36f {
-    margin-left: 4px
+    width: 22px;
+    height: 22px;
+    margin-left: 6px
 }
 
 .emojiJumbo__389fd {
@@ -112358,7 +112360,6 @@ html .invoiceCancelRow_a8669b {
 
 .gifDefault_a0c5fa {
     width: 48px;
-    height: 48px;
     -o-object-fit: cover;
     object-fit: cover
 }
@@ -112394,138 +112395,8 @@ html .invoiceCancelRow_a8669b {
 .trashIcon_ebf95d {
     width: 24px;
     height: 24px;
-    color: var(--button-danger-background);
+    color: var(--text-muted);
     transition: color var(--custom-button-transition-duration)ease
-}
-
-.container__1b71e {
-    border-radius: var(--radius-sm);
-    background-color: var(--background-secondary)
-}
-
-.header__96d08 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 12px
-}
-
-.headerText__35f81 {
-    flex: 1
-}
-
-.closeIcon_f53e1e {
-    color: var(--interactive-normal);
-    width: 16px;
-    height: 16px;
-    cursor: pointer
-}
-
-.content__808b1 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
-    padding: 4px 16px 12px
-}
-
-.answerInputsContainer__22676 {
-    display: flex;
-    row-gap: 12px
-}
-
-.defaultContainer__28189 {
-    flex-direction: column
-}
-
-.imageOnlyContainer__036ec {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px
-}
-
-.formInput_c28524 {
-    border-radius: var(--radius-xs)
-}
-
-.questionInput_ac682b {
-    padding: 20px;
-    height: 48px
-}
-
-.addAnswerButton__0db97 {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: var(--background-secondary-alt);
-    border-radius: var(--radius-xs);
-    cursor: pointer;
-    transition: background-color var(--custom-button-transition-duration)ease
-}
-
-.addAnswerButton__0db97:hover {
-    background-color: var(--background-floating)
-}
-
-.addAnswerButtonDefault_f6a374 {
-    justify-content: flex-start;
-    gap: 16px;
-    margin-right: 36px;
-    height: 48px;
-    padding: 0 20px 0 12px
-}
-
-.addAnswerButtonImageOnly__73d3e {
-    justify-content: center;
-    height: 175px;
-    padding: 0
-}
-
-.addAnswerIconDefault_a45ed2 {
-    width: 30px;
-    height: 30px;
-    color: var(--text-muted)
-}
-
-.addAnswerIconImageOnly__048af {
-    width: 48px;
-    height: 48px;
-    color: var(--interactive-muted)
-}
-
-.duration__6fc84 {
-    padding-top: 48px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px
-}
-
-.durationSelect__181aa {
-    width: 150px;
-    min-width: 6rem;
-    padding: 4px 2px 4px 10px;
-    gap: 4px;
-    font-weight: 400
-}
-
-.footer__1028f {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    background: var(--background-secondary-alt)
-}
-
-.checkbox__0fb8e {
-    align-self: center
-}
-
-.postButton_bf09d5 {
-    min-height: var(--custom-button-button-lg-height);
-    background-color: var(--redesign-button-primary-background)
-}
-
-.postButtonText__4aa81 {
-    color: inherit
 }
 
 .modal_a71ed1 {
@@ -112634,6 +112505,128 @@ html .invoiceCancelRow_a8669b {
 
 .expressionPickerPositionLayer_f15e20 {
     right: var(--spacing-80)
+}
+
+.container__1b71e {
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary)
+}
+
+.header__96d08 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 12px
+}
+
+.headerText__35f81 {
+    flex: 1
+}
+
+.closeIcon_f53e1e {
+    color: var(--interactive-normal);
+    width: 16px;
+    height: 16px;
+    cursor: pointer
+}
+
+.content__808b1 {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 16px 18px
+}
+
+.answerInputsContainer__22676 {
+    display: flex;
+    row-gap: 12px
+}
+
+.defaultContainer__28189 {
+    flex-direction: column
+}
+
+.imageOnlyContainer__036ec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px
+}
+
+.addAnswerButton__0db97 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-xs);
+    cursor: pointer;
+    transition: background-color var(--custom-button-transition-duration)ease
+}
+
+.addAnswerButton__0db97:hover {
+    background-color: var(--background-floating)
+}
+
+.addAnswerButtonDefault_f6a374 {
+    justify-content: flex-start;
+    gap: 8px;
+    margin-right: 36px;
+    padding: 0 20px 0 9px
+}
+
+.addAnswerButtonImageOnly__73d3e {
+    justify-content: center;
+    height: 175px;
+    padding: 0
+}
+
+.addAnswerIconDefault_a45ed2 {
+    width: 28px;
+    height: 28px;
+    color: var(--text-muted)
+}
+
+.addAnswerButtonLabel_da5029 {
+    padding: 11px 0
+}
+
+.addAnswerIconImageOnly__048af {
+    width: 48px;
+    height: 48px;
+    color: var(--interactive-muted)
+}
+
+.duration__6fc84 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px
+}
+
+.durationSelect__181aa {
+    width: 150px;
+    min-width: 6rem;
+    gap: 4px;
+    font-weight: 400;
+    padding: 11px
+}
+
+.footer__1028f {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background: var(--background-secondary-alt)
+}
+
+.checkbox__0fb8e {
+    align-self: center
+}
+
+.postButton_bf09d5 {
+    min-height: var(--custom-button-button-lg-height);
+    background-color: var(--redesign-button-primary-background)
+}
+
+.postButtonText__4aa81 {
+    color: inherit
 }
 
 .heading-sm-normal__4a449 {
@@ -128165,4 +128158,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2b528ac031738f725bd7.css.map*/
+/*# sourceMappingURL=app.821f4354cb7cd8404bc0.css.map*/
