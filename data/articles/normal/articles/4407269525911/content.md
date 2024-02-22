@@ -76,10 +76,10 @@
                 <p><strong>lira</strong></p>
             </td>
             <td style="height: 22px; width: 67.4px;">
-                <p><span style="font-weight: 400;">74.99</span></p>
+                <p><span style="font-weight: 400;">104.99</span></p>
             </td>
             <td style="height: 22px; width: 76.3px;">
-                <p><span style="font-weight: 400;">749.99</span></p>
+                <p><span style="font-weight: 400;">1049.99</span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -325,10 +325,10 @@
                 <p><strong>lira<br></strong></p>
             </td>
             <td style="width: 63.1px;">
-                <p><span style="font-weight: 400;">26.99<br></span></p>
+                <p><span style="font-weight: 400;">37.99<br></span></p>
             </td>
             <td style="width: 53.4px;">
-                <p><span style="font-weight: 400;">269.99<br></span></p>
+                <p><span style="font-weight: 400;">379.00<br></span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -573,10 +573,10 @@
                 <p><strong>lira</strong></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">36.99</span></p>
+                <p><span style="font-weight: 400;">51.99</span></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">369.99</span></p>
+                <p><span style="font-weight: 400;">519.99</span></p>
             </td>
         </tr>
         <tr>
@@ -1092,3 +1092,7 @@
 <p id="docs-internal-guid-38183b86-7fff-6a02-d75c-6146c3ef19c4"><span class="wysiwyg-font-size-large"><strong>Q: Is localized pricing available for ARS/Argentina?</strong></span></p>
 <p>A: As of February 15, 2024, we began the deprecation of ARS pricing and it is no longer available when purchasing Nitro, Nitro Basic, Nitro Classic, and/or Server Boosting. If you are a Discord user in Argentina and currently have a Nitro, Nitro Basic, Nitro Classic, and/or Server Boosting subscription, you will receive a notification of this change through the email associated with your Discord account about how this change will impact your subscription.</p>
 <p>If you would like to cancel your Discord subscription, you can go to your <strong>User Settings</strong> &gt; <strong>Subscription</strong> to cancel your current subscription(s).</p>
+<p id="docs-internal-guid-592992ef-7fff-43d1-21d0-432540a7e607"><span class="wysiwyg-font-size-large"><strong>Q: Did the TRY/Turkey pricing change for Discord subscriptions?</strong></span></p>
+<p>A: On February 21, 2024, we made a price adjustment to the TRY pricing for our Discord subscriptions, which is in effect for all new purchases of Nitro, Nitro Basic, and Nitro Classic in Turkey. For current subscribers of Nitro, Nitro Basic, and Nitro Classic in Turkey, you should see a notification of this change through the email associated with your Discord account about its impact on your subscription.</p>
+<p>If you would like to cancel your Discord subscription, you can go to your <strong>User Settings</strong> &gt; <strong>Subscriptions</strong> to cancel your current subscription(s).</p>
+<p>If you are currently subscribed to Nitro, Nitro Basic, and Nitro Classic through the Apple App Store or the Google Play Store and you are based in Turkey with the TRY pricing, you will maintain the legacy subscription prices so long as you are still subscribed through the mobile app.</p>
