@@ -440,9 +440,6 @@
             n.r(t), n.d(t, {
                 fetchGuildIntegrationsApplications: function() {
                     return u
-                },
-                fetchGuildIntegrationsCommands: function() {
-                    return a
                 }
             });
             var i = n("872717"),
@@ -465,23 +462,6 @@
                         type: "GUILD_SETTINGS_LOADED_INTEGRATIONS",
                         guildId: e,
                         integrations: n
-                    })
-                }).catch(() => {})
-            }
-
-            function a(e) {
-                i.default.get({
-                    url: s.Endpoints.GUILD_INTEGRATIONS(e),
-                    query: {
-                        has_commands: !0
-                    },
-                    oldFormErrors: !0
-                }).then(t => {
-                    let n = t.body.map(e => e.id);
-                    l.default.dispatch({
-                        type: "GUILD_SETTINGS_LOADED_INTEGRATIONS_WITH_COMMANDS",
-                        guildId: e,
-                        integrationIds: n
                     })
                 }).catch(() => {})
             }
@@ -513,8 +493,8 @@
                 C = n("970700"),
                 h = n("49111"),
                 m = n("447621"),
-                O = n("69741");
-            let y = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled"],
+                y = n("69741");
+            let O = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled"],
                 b = new Set(["icon", "splash", "banner", "discoverySplash", "homeHeader"]),
                 M = !1,
                 v = h.FormStates.CLOSED,
@@ -644,7 +624,7 @@
 
             function en(e) {
                 if (null == s || v !== h.FormStates.OPEN || "GUILD_INTEGRATIONS_UPDATE" === e.type && e.guildId !== s.id) return !1;
-                (0, C.fetchGuildIntegrationsApplications)(s.id), (0, C.fetchGuildIntegrationsCommands)(s.id)
+                (0, C.fetchGuildIntegrationsApplications)(s.id)
             }
             class ei extends c.default.Store {
                 initialize() {
@@ -672,7 +652,7 @@
                     return null != s ? s.id : null
                 }
                 showPublicSuccessModal() {
-                    return !G.default.get(O.PUBLIC_SUCCESS_MODAL_SEEN_KEY)
+                    return !G.default.get(y.PUBLIC_SUCCESS_MODAL_SEEN_KEY)
                 }
                 getGuild() {
                     return s
@@ -730,13 +710,13 @@
                 GUILD_SETTINGS_CLOSE: $,
                 GUILD_SETTINGS_UPDATE: function(e) {
                     if (null == s) return !1;
-                    y.forEach(t => {
+                    O.forEach(t => {
                         null != s && e.hasOwnProperty(t) && (s = s.set(t, e[t]))
                     }), ! function() {
                         if (null == s) return;
                         let e = s.toJS(),
                             t = d.toJS(),
-                            n = y.some(n => e[n] !== t[n]);
+                            n = O.some(n => e[n] !== t[n]);
                         !n && (s = d)
                     }()
                 },
@@ -849,9 +829,9 @@
                         if (null == e) return !1;
                         let t = d = e,
                             n = s.toJS();
-                        y.forEach(e => {
+                        O.forEach(e => {
                             if (!b.has(e)) {
-                                if ("rulesChannelId" !== e && "publicUpdatesChannelId" !== e || n[e] !== O.CREATE_NEW_CHANNEL_VALUE) {
+                                if ("rulesChannelId" !== e && "publicUpdatesChannelId" !== e || n[e] !== y.CREATE_NEW_CHANNEL_VALUE) {
                                     if ("features" === e) {
                                         t.set(e, new Set(n[e]));
                                         return
@@ -1021,4 +1001,4 @@
         }
     }
 ]);
-//# sourceMappingURL=74836.ff680f90512a3312acaa.js.map
+//# sourceMappingURL=74836.d4ce9301052f599814a1.js.map
