@@ -23659,19 +23659,7 @@ html .progress__4ef76 {
     height: 24px
 }
 
-.optionName__81070 {
-    margin-left: 8px
-}
-
-.tipSubtext_d3460f {
-    align-items: center;
-    display: flex
-}
-
-.tipIcon__202f4 {
-    margin: 0 4px
-}
-
+.optionName__81070,
 .badge__78b1d {
     margin-left: 8px
 }
@@ -63838,8 +63826,8 @@ html .progress__4ef76 {
 }
 
 .name__8d1ec {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -122646,7 +122634,7 @@ div.nagbar_c731ff {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: 14px
+    font-size: .875rem
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -127773,4 +127761,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1edbfad3f3044391cf9b.css.map*/
+/*# sourceMappingURL=app.7f0c37e57e959e25a41c.css.map*/
