@@ -125513,8 +125513,7 @@ div.nagbar_c731ff {
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
     --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-    --white: var(--white-500);
-    --you-bar-bg: var(--primary-800)
+    --white: var(--white-500)
 }
 
 .theme-light {
@@ -125830,8 +125829,7 @@ div.nagbar_c731ff {
     --user-profile-header-overflow-background: hsl(var(--white-200-hsl) / 0.5);
     --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-    --white: var(--white-500);
-    --you-bar-bg: var(--white-500)
+    --white: var(--white-500)
 }
 
 .theme-midnight {
@@ -126147,8 +126145,7 @@ div.nagbar_c731ff {
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-    --white: var(--white-500);
-    --you-bar-bg: var(--plum-19)
+    --white: var(--white-500)
 }
 
 .theme-darker {
@@ -126464,8 +126461,7 @@ div.nagbar_c731ff {
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
     --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-    --white: var(--white-500);
-    --you-bar-bg: var(--plum-17)
+    --white: var(--white-500)
 }
 
 .theme-dark {
@@ -127764,4 +127760,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.91f723d4254b3151e2b6.css.map*/
+/*# sourceMappingURL=app.4f954d7abeb85a5a2c43.css.map*/
