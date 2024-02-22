@@ -3345,6 +3345,7 @@
                 USER_SETTINGS_KEYBIND_SWITCH_SERVER_SETTINGS_SECTION: "Select the voice channel to join or switch to",
                 USER_SETTINGS_KEYBIND_ENABLE_DISABLE: "Enable or disable keybind",
                 USER_SETTINGS_KEYBIND_VOICE_CHANNEL_RESULTS: "Results",
+                USER_SETTINGS_KEYBIND_VIBE_WITH_WUMPUS_DESCRIPTION: "Listen to Lofi Beats with Wumpus",
                 SHOW_CURRENT_ACTIVITY: "Display current activity as a status message.",
                 SHOW_CURRENT_ACTIVITY_DESC: "Discord will automatically update your status if you're attending a public Stage.",
                 SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED: "Discord will automatically update your status based on the game you're playing (if detectable), an activity you're doing that supports Rich Presence, or if you're attending a public Stage.",
@@ -11274,6 +11275,7 @@
                 SEE_DETAIL: "Event Details",
                 EVENT_MARK_INTERESTED: "Mark as Interested",
                 EVENT_MARK_NOT_INTERESTED: "Mark as Not Interested",
+                EVENT_DETAILS_A11Y_HINT: "Double tap to view event details",
                 SCHEDULE_EVENT_DESCRIPTION: "Schedule a Stage for a future date.",
                 GO_TO_CHANNEL: "Go To Channel",
                 STARTING_SOON: "Starting soon",
@@ -18263,7 +18265,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268259", ", Version Hash: ").concat("5c1d4fa71e69121913fb8b217f8b4cf124a262c4")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268262", ", Version Hash: ").concat("7b78f3d10cebfdabfaeddb69d4dfd4af0c7060cc")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20602,8 +20604,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "268259", "268259"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268259")), _ = 0), _
+                let _ = parseInt((e = "268262", "268262"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268262")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25317,8 +25319,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708634361974",
-                                    build_number: "268259"
+                                    built_at: "1708634484699",
+                                    build_number: "268262"
                                 }
                             },
                             retries: 1
@@ -36573,4 +36575,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.f806761675f740519d5c.js.map
+//# sourceMappingURL=77761.08319e1af7d4a9757683.js.map
