@@ -51529,54 +51529,57 @@
                 o = n("326436");
 
             function u(e) {
-                let {
-                    className: t,
-                    src: n,
-                    unicodeEmoji: i,
-                    name: u,
-                    size: d = 20,
-                    enableTooltip: c = !0,
-                    enableHeight: f = !0,
-                    onClick: m
+                let t, {
+                    className: n,
+                    src: i,
+                    unicodeEmoji: u,
+                    name: d,
+                    size: c = 20,
+                    enableTooltip: f = !0,
+                    enableHeight: m = !0,
+                    onClick: p
                 } = e;
-                if (null == n && null == i) return null;
-                let p = e => {
-                    let c = (0, l.jsx)("img", {
+                if (null == i && null == u) return null;
+                return (0, l.jsx)(s.TooltipContainer, {
+                    text: d,
+                    "aria-label": !1,
+                    shouldShow: f,
+                    element: "span",
+                    children: (t = (0, l.jsx)("img", {
                         alt: "",
                         "aria-label": r.default.Messages.ROLE_ICON_ALT_TEXT.format({
-                            name: u
+                            name: d
                         }),
-                        className: a(o.roleIcon, t, {
-                            [o.clickable]: null != m
+                        className: a(o.roleIcon, n, {
+                            [o.clickable]: null != p
                         }),
-                        height: f ? d : void 0,
-                        src: n,
-                        width: d,
-                        ...e
-                    });
-                    return (null != i && (c = (0, l.jsx)("img", {
+                        height: m ? c : void 0,
+                        src: i,
+                        width: c
+                    }), (null != u && (t = (0, l.jsx)("img", {
                         alt: "",
-                        "aria-label": i.allNamesString,
-                        className: a(o.roleIcon, t, {
-                            [o.clickable]: null != m
+                        "aria-label": u.allNamesString,
+                        className: a(o.roleIcon, n, {
+                            [o.clickable]: null != p
                         }),
-                        height: f ? d : void 0,
-                        src: i.url,
-                        width: d,
-                        ...e
-                    })), null == m) ? (0, l.jsx)(s.FocusRing, {
-                        children: c
+                        height: m ? c : void 0,
+                        src: u.url,
+                        width: c
+                    })), null == p) ? (0, l.jsx)(s.FocusRing, {
+                        offset: {
+                            left: 5
+                        },
+                        children: t
                     }) : (0, l.jsx)(s.Clickable, {
-                        onClick: m,
+                        onClick: p,
                         tag: "span",
-                        children: c
-                    })
-                };
-                return (0, l.jsx)(s.Tooltip, {
-                    text: u,
-                    "aria-label": !1,
-                    shouldShow: c,
-                    children: e => p(e)
+                        focusProps: {
+                            offset: {
+                                left: 5
+                            }
+                        },
+                        children: t
+                    }))
                 })
             }
         },
@@ -54081,4 +54084,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.82e373cb64de787daceb.js.map
+//# sourceMappingURL=60053.68d7fb69f20b7ae7133a.js.map
