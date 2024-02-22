@@ -23814,6 +23814,10 @@
                         r && et()
                     }()
                 }
+                loadCache() {
+                    let e = this.readSnapshot(eo.LATEST_SNAPSHOT_VERSION);
+                    null != e && ("loadedUserExperiments" in e ? (D = e.loadedUserExperiments, y = Q(e.loadedGuildExperiments)) : q(e.rawUserExperiments, e.rawGuildExperiments))
+                }
                 takeSnapshot() {
                     return {
                         version: eo.LATEST_SNAPSHOT_VERSION,
@@ -23973,22 +23977,19 @@
                     return Y(e, t, n, i)
                 }
                 constructor() {
-                    super(), this.trackExposure = j, this.loadCache = () => {
-                        let e = this.readSnapshot(eo.LATEST_SNAPSHOT_VERSION);
-                        null != e && ("loadedUserExperiments" in e ? (D = e.loadedUserExperiments, y = Q(e.loadedGuildExperiments)) : q(e.rawUserExperiments, e.rawGuildExperiments))
-                    }, this.registerActionHandlers({
+                    super({
                         LOGOUT: $,
                         LOGIN_SUCCESS: ee,
                         CONNECTION_OPEN: z,
                         EXPERIMENTS_FETCH_SUCCESS: z,
                         OVERLAY_INITIALIZE: Z,
-                        CACHE_LOADED: this.loadCache,
+                        CACHE_LOADED: () => this.loadCache(),
                         EXPERIMENTS_FETCH_FAILURE: J,
                         EXPERIMENT_REGISTER_LEGACY: er,
                         EXPERIMENT_OVERRIDE_BUCKET: es,
                         GUILD_CREATE: ea,
                         GUILD_UPDATE: ea
-                    })
+                    }), this.trackExposure = j
                 }
             }
             eo.displayName = "ExperimentStore", eo.LATEST_SNAPSHOT_VERSION = 1;
@@ -41731,13 +41732,6 @@
                 static clearAll() {
                     e.allStores.forEach(e => e.clear())
                 }
-                registerActionHandlers(e) {
-                    return a(!("CLEAR_CACHES" in e), "SnapshotStores cannot use the 'CLEAR_CACHES' action"), a(!("WRITE_CACHES" in e), "SnapshotStores cannot use the 'WRITE_CACHES' action"), super.registerActionHandlers({
-                        ...e,
-                        CLEAR_CACHES: () => this.clear(),
-                        WRITE_CACHES: () => this.save()
-                    })
-                }
                 get persistKey() {
                     return "".concat(this.getClass().displayName, "-snapshot")
                 }
@@ -41754,8 +41748,12 @@
                 getClass() {
                     return this.constructor
                 }
-                constructor() {
-                    super(u.default, null), a(null != this.getClass().displayName, "Snapshot stores need a display name"), e.allStores.push(this)
+                constructor(t) {
+                    super(u.default, {
+                        ...t,
+                        CLEAR_CACHES: () => this.clear(),
+                        WRITE_CACHES: () => this.save()
+                    }), a(null != this.getClass().displayName, "Snapshot stores need a display name"), a(!("CLEAR_CACHES" in t), "SnapshotStores cannot use the 'CLEAR_CACHES' action"), a(!("WRITE_CACHES" in t), "SnapshotStores cannot use the 'WRITE_CACHES' action"), e.allStores.push(this)
                 }
             }).allStores = [], r = i
         },
@@ -41911,6 +41909,9 @@
             let y = (0, d.cachedFunction)((e, t) => e.sortedGuildNodes().map(e => e.id)),
                 P = (0, d.cachedFunction)((e, t) => e.getRoots().map(g));
             class L extends _.default {
+                initialize() {
+                    this.waitFor(h.default, S.default, c.default, E.default, u.default)
+                }
                 getGuildsTree() {
                     return T
                 }
@@ -41935,14 +41936,10 @@
                     }
                 }
                 constructor() {
-                    super(), this.loadCache = () => {
-                        let e = this.readSnapshot(L.LATEST_SNAPSHOT_VERSION),
-                            t = null == e ? void 0 : e.tree;
-                        null != t && (T = new l.GuildsTree).loadSnapshot(t)
-                    }, this.registerActionHandlers({
+                    super({
                         CONNECTION_OPEN: C,
                         OVERLAY_INITIALIZE: C,
-                        CACHE_LOADED_LAZY: this.loadCache,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
                         GUILD_CREATE: C,
                         GUILD_DELETE: C,
                         GUILD_MEMBER_ADD: D,
@@ -41951,7 +41948,11 @@
                         GUILD_FOLDER_CREATE_LOCAL: R,
                         GUILD_FOLDER_EDIT_LOCAL: N,
                         GUILD_FOLDER_DELETE_LOCAL: O
-                    }), this.waitFor(h.default, S.default, c.default, E.default, u.default)
+                    }), this.loadCache = () => {
+                        let e = this.readSnapshot(L.LATEST_SNAPSHOT_VERSION),
+                            t = null == e ? void 0 : e.tree;
+                        null != t && (T = new l.GuildsTree).loadSnapshot(t)
+                    }
                 }
             }
             L.displayName = "SortedGuildStore", L.LATEST_SNAPSHOT_VERSION = 1;
@@ -43239,7 +43240,62 @@
             }
             class eN extends E.default {
                 initialize() {
-                    this.registerActionHandlers({
+                    this.waitFor(f.default)
+                }
+                takeSnapshot() {
+                    let e = this.getCurrentUser();
+                    return {
+                        version: eN.LATEST_SNAPSHOT_VERSION,
+                        data: {
+                            users: [e].filter(d.isNotNullish)
+                        }
+                    }
+                }
+                handleLoadCache(e) {
+                    let t = this.readSnapshot(eN.LATEST_SNAPSHOT_VERSION);
+                    if (null != t)
+                        for (let e of t.users) _[e.id] = new u.default(e);
+                    if (null != e.users)
+                        for (let t of e.users) !(t.id in _ && D(t)) && (_[t.id] = new u.default(t));
+                    for (let t of e.channels) {
+                        var n;
+                        null === (n = t.rawRecipients) || void 0 === n || n.forEach(e => C(e, !1))
+                    }
+                }
+                getUserStoreVersion() {
+                    return S
+                }
+                getUser(e) {
+                    if (null != e) return _[e]
+                }
+                getUsers() {
+                    return _
+                }
+                forEach(e) {
+                    for (let t in _)
+                        if (!1 === e(_[t])) break
+                }
+                findByTag(e, t) {
+                    for (let n in _) {
+                        let i = _[n];
+                        if (null != t && i.username === e && i.discriminator === t) return i;
+                        if (null == t && i.username === e && i.isPomelo()) return i
+                    }
+                }
+                filter(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = [];
+                    for (let t in _) {
+                        let i = _[t];
+                        e(i) && n.push(i)
+                    }
+                    return t && n.sort((e, t) => e.username > t.username ? 1 : e.username < t.username ? -1 : 0), n
+                }
+                getCurrentUser() {
+                    return _[f.default.getId()]
+                }
+                constructor() {
+                    super({
                         CONNECTION_OPEN: N,
                         CONNECTION_OPEN_SUPPLEMENTAL: O,
                         UPDATE_CLIENT_PREMIUM_TYPE: b,
@@ -43305,59 +43361,7 @@
                         FAMILY_CENTER_REQUEST_LINK_SUCCESS: eI,
                         FRIEND_FINDER_PYMK_LOADED: eC,
                         MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eR
-                    }), this.waitFor(f.default)
-                }
-                takeSnapshot() {
-                    let e = this.getCurrentUser();
-                    return {
-                        version: eN.LATEST_SNAPSHOT_VERSION,
-                        data: {
-                            users: [e].filter(d.isNotNullish)
-                        }
-                    }
-                }
-                handleLoadCache(e) {
-                    let t = this.readSnapshot(eN.LATEST_SNAPSHOT_VERSION);
-                    if (null != t)
-                        for (let e of t.users) _[e.id] = new u.default(e);
-                    if (null != e.users)
-                        for (let t of e.users) !(t.id in _ && D(t)) && (_[t.id] = new u.default(t));
-                    for (let t of e.channels) {
-                        var n;
-                        null === (n = t.rawRecipients) || void 0 === n || n.forEach(e => C(e, !1))
-                    }
-                }
-                getUserStoreVersion() {
-                    return S
-                }
-                getUser(e) {
-                    if (null != e) return _[e]
-                }
-                getUsers() {
-                    return _
-                }
-                forEach(e) {
-                    for (let t in _)
-                        if (!1 === e(_[t])) break
-                }
-                findByTag(e, t) {
-                    for (let n in _) {
-                        let i = _[n];
-                        if (null != t && i.username === e && i.discriminator === t) return i;
-                        if (null == t && i.username === e && i.isPomelo()) return i
-                    }
-                }
-                filter(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                        n = [];
-                    for (let t in _) {
-                        let i = _[t];
-                        e(i) && n.push(i)
-                    }
-                    return t && n.sort((e, t) => e.username > t.username ? 1 : e.username < t.username ? -1 : 0), n
-                }
-                getCurrentUser() {
-                    return _[f.default.getId()]
+                    })
                 }
             }
             eN.displayName = "UserStore", eN.LATEST_SNAPSHOT_VERSION = 1;
@@ -50137,7 +50141,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "268267"
+                                build_number: "268268"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64189,4 +64193,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.0b0aaeae606b8cc88c16.js.map
+//# sourceMappingURL=21201.ea4a9fc0d7409144e512.js.map

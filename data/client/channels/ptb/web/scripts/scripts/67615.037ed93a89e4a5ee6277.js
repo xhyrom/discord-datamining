@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["98239"], {
+    ["67615"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -40802,6 +40802,13 @@
                 _(t)
             }
             class y extends r.default {
+                initialize() {
+                    this.waitFor(i.default)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(y.LATEST_SNAPSHOT_VERSION);
+                    null != e && (a = new Set(e))
+                }
                 takeSnapshot() {
                     return {
                         version: y.LATEST_SNAPSHOT_VERSION,
@@ -40827,20 +40834,17 @@
                     return d
                 }
                 constructor() {
-                    super(), this.loadCache = () => {
-                        let e = this.readSnapshot(y.LATEST_SNAPSHOT_VERSION);
-                        null != e && (a = new Set(e))
-                    }, this.registerActionHandlers({
+                    super({
                         CONNECTION_OPEN: c,
                         CONNECTION_OPEN_SUPPLEMENTAL: c,
-                        CACHE_LOADED_LAZY: this.loadCache,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
                         OVERLAY_INITIALIZE: E,
                         CHANNEL_CREATE: m,
                         CHANNEL_UPDATES: h,
                         CHANNEL_DELETE: v,
                         SET_LOCATION_METADATA: p,
                         MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: g
-                    }), this.waitFor(i.default)
+                    })
                 }
             }
             y.displayName = "MessageRequestStore", y.LATEST_SNAPSHOT_VERSION = 1;
@@ -40957,6 +40961,13 @@
                 return r.has(t.id) && (r.delete(t.id), n = !0), n
             }
             class m extends i.default {
+                initialize() {
+                    this.waitFor(s.default)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
+                    null != e && (r = new Set(e))
+                }
                 takeSnapshot() {
                     return {
                         version: m.LATEST_SNAPSHOT_VERSION,
@@ -40979,18 +40990,15 @@
                     return o
                 }
                 constructor() {
-                    super(), this.loadCache = () => {
-                        let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
-                        null != e && (r = new Set(e))
-                    }, this.registerActionHandlers({
+                    super({
                         CONNECTION_OPEN: l,
                         CONNECTION_OPEN_SUPPLEMENTAL: l,
-                        CACHE_LOADED_LAZY: this.loadCache,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
                         CHANNEL_CREATE: _,
                         CHANNEL_UPDATES: c,
                         CHANNEL_DELETE: g,
                         MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: f
-                    }), this.waitFor(s.default)
+                    })
                 }
             }
             m.displayName = "SpamMessageRequestStore", m.LATEST_SNAPSHOT_VERSION = 1;
@@ -50664,6 +50672,13 @@
                 return H(t)
             }
             class eg extends v.default {
+                initialize() {
+                    this.waitFor(_.default, h.default, m.default, g.default, f.default, p.default, E.default, a.default, o.default)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(eg.LATEST_SNAPSHOT_VERSION);
+                    null != e && (S = e.guilds, A = new Set(e.unreadGuilds))
+                }
                 takeSnapshot() {
                     return {
                         version: eg.LATEST_SNAPSHOT_VERSION,
@@ -50745,13 +50760,10 @@
                     return O(e).sentinel
                 }
                 constructor() {
-                    super(), this.loadCache = () => {
-                        let e = this.readSnapshot(eg.LATEST_SNAPSHOT_VERSION);
-                        null != e && (S = e.guilds, A = new Set(e.unreadGuilds))
-                    }, this.registerActionHandlers({
+                    super({
                         CONNECTION_OPEN: x,
                         OVERLAY_INITIALIZE: B,
-                        CACHE_LOADED_LAZY: this.loadCache,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
                         GUILD_CREATE: j,
                         GUILD_DELETE: K,
                         MESSAGE_CREATE: Q,
@@ -50795,7 +50807,7 @@
                         RESORT_THREADS: X,
                         NOTIFICATION_CENTER_CLEAR_GUILD_MENTIONS: e_,
                         TRY_ACK: X
-                    }), this.waitFor(_.default, h.default, m.default, g.default, f.default, p.default, E.default, a.default, o.default)
+                    })
                 }
             }
             eg.displayName = "GuildReadStateStore", eg.LATEST_SNAPSHOT_VERSION = 1;
@@ -61839,4 +61851,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98239.8915e0643ab132e640be.js.map
+//# sourceMappingURL=67615.037ed93a89e4a5ee6277.js.map
