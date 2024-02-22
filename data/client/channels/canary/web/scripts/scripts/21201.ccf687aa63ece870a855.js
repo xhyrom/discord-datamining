@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["41039"], {
+    ["21201"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -659,7 +659,6 @@
             "use strict";
             e.exports = n.p + "1461c09d58fe586734ce.png"
         },
-        246129: function(e, t, n) {},
         404118: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -14773,15 +14772,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return c
+                    return d
                 }
-            }), n("511434"), n("313619"), n("654714"), n("287168"), n("956660"), n("222007");
+            });
             var i = n("917351"),
                 r = n.n(i),
                 s = n("669491"),
-                a = n("49111");
-            let o = [{
-                    type: a.PlatformTypes.TWITCH,
+                a = n("253981"),
+                o = n("49111");
+            let l = [{
+                    type: o.PlatformTypes.TWITCH,
                     name: "Twitch",
                     color: s.default.unsafe_rawColors.TWITCH.css,
                     icon: {
@@ -14801,7 +14801,7 @@
                     },
                     domains: ["twitch.tv", "twitch.com"]
                 }, {
-                    type: a.PlatformTypes.YOUTUBE,
+                    type: o.PlatformTypes.YOUTUBE,
                     name: "YouTube",
                     color: s.default.unsafe_rawColors.YOUTUBE.css,
                     icon: {
@@ -14821,7 +14821,7 @@
                     },
                     domains: ["youtube.com", "youtu.be"]
                 }, {
-                    type: a.PlatformTypes.BATTLENET,
+                    type: o.PlatformTypes.BATTLENET,
                     name: "Battle.net",
                     color: s.default.unsafe_rawColors.BATTLENET.css,
                     icon: {
@@ -14834,7 +14834,7 @@
                     },
                     enabled: !0
                 }, {
-                    type: a.PlatformTypes.SKYPE,
+                    type: o.PlatformTypes.SKYPE,
                     name: "Skype",
                     color: s.default.unsafe_rawColors.SKYPE.css,
                     icon: {
@@ -14853,7 +14853,7 @@
                         return "skype:".concat(encodeURIComponent(t), "?userinfo")
                     }
                 }, {
-                    type: a.PlatformTypes.LEAGUE_OF_LEGENDS,
+                    type: o.PlatformTypes.LEAGUE_OF_LEGENDS,
                     name: "League of Legends",
                     color: s.default.unsafe_rawColors.LOL.css,
                     icon: {
@@ -14866,7 +14866,7 @@
                     },
                     enabled: !0
                 }, {
-                    type: a.PlatformTypes.STEAM,
+                    type: o.PlatformTypes.STEAM,
                     name: "Steam",
                     color: s.default.unsafe_rawColors.STEAM.css,
                     icon: {
@@ -14886,7 +14886,7 @@
                     },
                     hasMetadata: !0
                 }, {
-                    type: a.PlatformTypes.REDDIT,
+                    type: o.PlatformTypes.REDDIT,
                     name: "Reddit",
                     color: s.default.unsafe_rawColors.REDDIT.css,
                     icon: {
@@ -14906,7 +14906,7 @@
                     },
                     hasMetadata: !0
                 }, {
-                    type: a.PlatformTypes.FACEBOOK,
+                    type: o.PlatformTypes.FACEBOOK,
                     name: "Facebook",
                     color: s.default.unsafe_rawColors.FACEBOOK.css,
                     icon: {
@@ -14919,7 +14919,7 @@
                     },
                     enabled: !0
                 }, {
-                    type: a.PlatformTypes.TWITTER_LEGACY,
+                    type: o.PlatformTypes.TWITTER_LEGACY,
                     name: "Twitter",
                     color: s.default.unsafe_rawColors.TWITTER.css,
                     icon: {
@@ -14940,7 +14940,7 @@
                     domains: ["twitter.com"],
                     hasMetadata: !0
                 }, {
-                    type: a.PlatformTypes.TWITTER,
+                    type: o.PlatformTypes.TWITTER,
                     name: "X",
                     color: s.default.unsafe_rawColors.TWITTER.css,
                     icon: {
@@ -14961,7 +14961,7 @@
                     domains: ["x.com"],
                     hasMetadata: !0
                 }, {
-                    type: a.PlatformTypes.SPOTIFY,
+                    type: o.PlatformTypes.SPOTIFY,
                     name: "Spotify",
                     color: s.default.unsafe_rawColors.SPOTIFY.css,
                     icon: {
@@ -14980,7 +14980,7 @@
                         return "https://open.spotify.com/user/".concat(encodeURIComponent(t))
                     }
                 }, {
-                    type: a.PlatformTypes.XBOX,
+                    type: o.PlatformTypes.XBOX,
                     name: "Xbox",
                     color: s.default.unsafe_rawColors.XBOX.css,
                     icon: {
@@ -14994,7 +14994,7 @@
                     },
                     enabled: !0
                 }, {
-                    type: a.PlatformTypes.SAMSUNG,
+                    type: o.PlatformTypes.SAMSUNG,
                     name: "Samsung Galaxy",
                     color: s.default.unsafe_rawColors.SAMSUNG.css,
                     icon: {
@@ -15007,7 +15007,7 @@
                     },
                     enabled: !1
                 }, {
-                    type: a.PlatformTypes.GITHUB,
+                    type: o.PlatformTypes.GITHUB,
                     name: "GitHub",
                     color: s.default.unsafe_rawColors.GITHUB.css,
                     icon: {
@@ -15027,7 +15027,7 @@
                     },
                     domains: ["github.com"]
                 }, {
-                    type: a.PlatformTypes.PLAYSTATION,
+                    type: o.PlatformTypes.PLAYSTATION,
                     name: "PlayStation Network",
                     color: s.default.unsafe_rawColors.PLAYSTATION.css,
                     icon: {
@@ -15040,7 +15040,7 @@
                     },
                     enabled: !0
                 }, {
-                    type: a.PlatformTypes.PLAYSTATION_STAGING,
+                    type: o.PlatformTypes.PLAYSTATION_STAGING,
                     name: "PlayStation Network (Staging)",
                     color: s.default.unsafe_rawColors.PLAYSTATION.css,
                     icon: {
@@ -15053,7 +15053,7 @@
                     },
                     enabled: !1
                 }, {
-                    type: a.PlatformTypes.EPIC_GAMES,
+                    type: o.PlatformTypes.EPIC_GAMES,
                     name: "Epic Games",
                     icon: {
                         lightPNG: n("1308"),
@@ -15065,7 +15065,7 @@
                     },
                     enabled: !0
                 }, {
-                    type: a.PlatformTypes.RIOT_GAMES,
+                    type: o.PlatformTypes.RIOT_GAMES,
                     name: "Riot Games",
                     icon: {
                         lightPNG: n("300525"),
@@ -15077,7 +15077,7 @@
                     },
                     enabled: !0
                 }, {
-                    type: a.PlatformTypes.PAYPAL,
+                    type: o.PlatformTypes.PAYPAL,
                     name: "PayPal",
                     icon: {
                         lightPNG: n("347775"),
@@ -15090,7 +15090,7 @@
                     enabled: !0,
                     hasMetadata: !0
                 }, {
-                    type: a.PlatformTypes.EBAY,
+                    type: o.PlatformTypes.EBAY,
                     name: "eBay",
                     icon: {
                         lightPNG: n("14366"),
@@ -15109,7 +15109,7 @@
                         return "https://www.ebay.com/usr/".concat(encodeURIComponent(t))
                     }
                 }, {
-                    type: a.PlatformTypes.TIKTOK,
+                    type: o.PlatformTypes.TIKTOK,
                     name: "TikTok",
                     icon: {
                         lightPNG: n("482311"),
@@ -15128,7 +15128,7 @@
                         return "https://www.tiktok.com/@".concat(encodeURIComponent(t))
                     }
                 }, {
-                    type: a.PlatformTypes.INSTAGRAM,
+                    type: o.PlatformTypes.INSTAGRAM,
                     name: "Instagram",
                     icon: {
                         lightPNG: n("299059"),
@@ -15146,7 +15146,7 @@
                         return "https://www.instagram.com/".concat(encodeURIComponent(t))
                     }
                 }, {
-                    type: a.PlatformTypes.CRUNCHYROLL,
+                    type: o.PlatformTypes.CRUNCHYROLL,
                     name: "Crunchyroll",
                     color: s.default.unsafe_rawColors.CRUNCHYROLL.css,
                     icon: {
@@ -15159,7 +15159,7 @@
                     },
                     enabled: !0
                 }, {
-                    type: a.PlatformTypes.DOMAIN,
+                    type: o.PlatformTypes.DOMAIN,
                     name: "Domain",
                     icon: {
                         lightPNG: n("145159"),
@@ -15177,29 +15177,30 @@
                     },
                     enabled: !0
                 }],
-                l = r.keyBy(o, "type"),
-                u = {};
-            o.forEach(e => {
+                u = r.keyBy(l, "type"),
+                c = {};
+            l.forEach(e => {
                 var t;
                 null === (t = e.domains) || void 0 === t || t.forEach(t => {
-                    u[t] = e
+                    c[t] = e
                 })
             });
-            var c = {
+            var d = {
                 get(e) {
                     var t;
-                    return null !== (t = l[e]) && void 0 !== t ? t : null
+                    return null !== (t = u[e]) && void 0 !== t ? t : null
                 },
                 getByUrl(e) {
-                    let t = new URL(e),
-                        n = t.hostname,
+                    let t = a.default.toURLSafe(e);
+                    if (null == t) return;
+                    let n = t.hostname,
                         i = n.startsWith("www.") ? n.slice(4) : n;
-                    return u[i]
+                    return c[i]
                 },
-                isSupported: e => Object.prototype.hasOwnProperty.call(l, e),
-                map: e => o.map(e),
+                isSupported: e => Object.prototype.hasOwnProperty.call(u, e),
+                map: e => l.map(e),
                 filter(e) {
-                    let t = o.filter(e);
+                    let t = l.filter(e);
                     return t.sort((e, t) => {
                         let {
                             name: n
@@ -15209,7 +15210,7 @@
                         return n.localeCompare(i)
                     }), t
                 },
-                find: e => o.find(e)
+                find: e => l.find(e)
             }
         },
         70513: function(e, t, n) {
@@ -50011,7 +50012,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "267985"
+                                build_number: "268004"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -52296,82 +52297,6 @@
                 if (null == e) return;
                 let t = i.ThemeExtends.get(e);
                 return null != t ? "theme-".concat(t, " theme-").concat(e) : "theme-".concat(e)
-            }
-        },
-        253981: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return m
-                }
-            }), n("222007");
-            var i = n("943224"),
-                r = n.n(i),
-                s = n("917351"),
-                a = n.n(s),
-                o = n("746379"),
-                l = n("49111");
-            let u = /(?:^|\.)(?:discordapp|discord)\.com$/i,
-                c = r.v4().source,
-                d = "(?:".concat("(?:(?:[a-z]+:)?//)", "|www\\.)").concat("(?:\\S+(?::\\S*)?@)?", "(?:localhost|").concat(c, "|").concat("(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+").concat("(?:(?:[a-z\\u00a1-\\uffff]{2,}))", ")").concat("(?::\\d{2,5})?").concat('(?:[/?#][^\\s"]*)?'),
-                f = RegExp(d, "ig"),
-                E = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]);
-
-            function p(e) {
-                var t;
-                let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                if (null == e) return !1;
-                return u.test(e) || n && (t = e, E.has(t.toLowerCase()))
-            }
-
-            function h(e) {
-                return null != e && "discord:" === e
-            }
-
-            function _(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                return null != e && p(o.parse(e).hostname, t)
-            }
-
-            function S(e) {
-                return null != e && h(o.parse(e).protocol)
-            }
-            var m = {
-                URL_REGEX: f,
-                isDiscordHostname: p,
-                isDiscordLocalhost: function(e, t) {
-                    return null != e && null != t && (window.location.host === e || !1)
-                },
-                isDiscordProtocol: h,
-                isDiscordUrl: _,
-                isDiscordUri: S,
-                isDiscordCdnUrl: function(e) {
-                    return null != e && o.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
-                },
-                isDiscordUrlOrUri: e => _(e) || S(e),
-                isAppRoute: e => {
-                    let t = e.toLowerCase();
-                    return t.startsWith("/channels/") || t.startsWith(l.Routes.APPLICATION_STORE) || t.startsWith(l.Routes.APPLICATION_LIBRARY) || t.startsWith(l.Routes.MESSAGE_REQUESTS) || t.startsWith(l.Routes.ACTIVITIES) || t.startsWith(l.Routes.COLLECTIBLES_SHOP) || t.startsWith(l.Routes.ACTIVITY)
-                },
-                format: e => o.format(e),
-                formatPathWithQuery: (e, t) => o.format({
-                    pathname: e,
-                    query: a.pickBy(t)
-                }),
-                formatSearch: e => o.format({
-                    query: a.pickBy(e)
-                }),
-                safeParseWithQuery(e) {
-                    try {
-                        return o.parse(e, !0)
-                    } catch (e) {
-                        return null
-                    }
-                },
-                makeUrl: function(e) {
-                    let t = __DEV__ ? window.GLOBAL_ENV.INVITE_HOST : location.host;
-                    return "".concat(location.protocol, "//").concat(t).concat(e)
-                }
             }
         },
         980134: function(e, t, n) {
@@ -64139,4 +64064,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41039.7204b05b42d04005c261.js.map
+//# sourceMappingURL=21201.ccf687aa63ece870a855.js.map
