@@ -18263,7 +18263,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268230", ", Version Hash: ").concat("de24add6ea6f60cf14215de0e84539ad36554911")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268242", ", Version Hash: ").concat("f535a486dd859da3dca944cc8547e0187ffb519c")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20602,8 +20602,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "268230", "268230"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268230")), _ = 0), _
+                let _ = parseInt((e = "268242", "268242"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268242")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25317,8 +25317,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708631566635",
-                                    build_number: "268230"
+                                    built_at: "1708632479909",
+                                    build_number: "268242"
                                 }
                             },
                             retries: 1
@@ -26332,7 +26332,7 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return N
+                    return O
                 }
             }), E("222007");
             var t = E("689988"),
@@ -26342,19 +26342,26 @@
                 i = 0,
                 a = null;
 
-            function I() {
-                let e = .2 * (i - r);
+            function I(e) {
                 e > 0 && r >= i || e < 0 && r <= i ? (clearInterval(a), 0 === i && n.stop()) : (r += e, n.volume = r)
             }
 
             function s() {
-                i = 0, a = setInterval(I, 100)
+                i = 0;
+                let e = S();
+                a = setInterval(() => I(e), 100)
             }
 
             function T() {
-                n.loop(), i = .5, a = setInterval(I, 100)
+                n.loop(), i = .5;
+                let e = S();
+                a = setInterval(() => I(e), 100)
             }
-            class S extends t.default {
+
+            function S() {
+                return .2 * (i - r)
+            }
+            class N extends t.default {
                 constructor(...e) {
                     super(...e), this.actions = {
                         VIBING_WUMPUS_PLAY_MUSIC: T,
@@ -26362,7 +26369,7 @@
                     }
                 }
             }
-            var N = new S
+            var O = new N
         },
         537597: function(e, _, E) {
             "use strict";
@@ -36566,4 +36573,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.32cdc279853d9920ef48.js.map
+//# sourceMappingURL=77761.4d5d534c1d593f446160.js.map

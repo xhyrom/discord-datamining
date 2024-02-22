@@ -108579,8 +108579,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .content__9acd0 {
-    min-height: 500px;
-    max-height: 500px;
+    max-height: 520px;
     padding: 0 16px 16px;
     text-align: center;
     width: 960px
@@ -122634,7 +122633,7 @@ div.nagbar_c731ff {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: .875rem
+    font-size: 14px
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -127761,4 +127760,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7f0c37e57e959e25a41c.css.map*/
+/*# sourceMappingURL=app.4f954d7abeb85a5a2c43.css.map*/
