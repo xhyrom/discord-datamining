@@ -43212,62 +43212,7 @@
             }
             class eN extends E.default {
                 initialize() {
-                    this.waitFor(f.default)
-                }
-                takeSnapshot() {
-                    let e = this.getCurrentUser();
-                    return {
-                        version: eN.LATEST_SNAPSHOT_VERSION,
-                        data: {
-                            users: [e].filter(d.isNotNullish)
-                        }
-                    }
-                }
-                handleLoadCache(e) {
-                    let t = this.readSnapshot(eN.LATEST_SNAPSHOT_VERSION);
-                    if (null != t)
-                        for (let e of t.users) _[e.id] = new u.default(e);
-                    if (null != e.users)
-                        for (let t of e.users) !(t.id in _ && D(t)) && (_[t.id] = new u.default(t));
-                    for (let t of e.channels) {
-                        var n;
-                        null === (n = t.rawRecipients) || void 0 === n || n.forEach(e => C(e, !1))
-                    }
-                }
-                getUserStoreVersion() {
-                    return S
-                }
-                getUser(e) {
-                    if (null != e) return _[e]
-                }
-                getUsers() {
-                    return _
-                }
-                forEach(e) {
-                    for (let t in _)
-                        if (!1 === e(_[t])) break
-                }
-                findByTag(e, t) {
-                    for (let n in _) {
-                        let i = _[n];
-                        if (null != t && i.username === e && i.discriminator === t) return i;
-                        if (null == t && i.username === e && i.isPomelo()) return i
-                    }
-                }
-                filter(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                        n = [];
-                    for (let t in _) {
-                        let i = _[t];
-                        e(i) && n.push(i)
-                    }
-                    return t && n.sort((e, t) => e.username > t.username ? 1 : e.username < t.username ? -1 : 0), n
-                }
-                getCurrentUser() {
-                    return _[f.default.getId()]
-                }
-                constructor() {
-                    super(), this.registerActionHandlers({
+                    this.registerActionHandlers({
                         CONNECTION_OPEN: N,
                         CONNECTION_OPEN_SUPPLEMENTAL: O,
                         UPDATE_CLIENT_PREMIUM_TYPE: b,
@@ -43333,7 +43278,59 @@
                         FAMILY_CENTER_REQUEST_LINK_SUCCESS: eI,
                         FRIEND_FINDER_PYMK_LOADED: eC,
                         MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eR
-                    })
+                    }), this.waitFor(f.default)
+                }
+                takeSnapshot() {
+                    let e = this.getCurrentUser();
+                    return {
+                        version: eN.LATEST_SNAPSHOT_VERSION,
+                        data: {
+                            users: [e].filter(d.isNotNullish)
+                        }
+                    }
+                }
+                handleLoadCache(e) {
+                    let t = this.readSnapshot(eN.LATEST_SNAPSHOT_VERSION);
+                    if (null != t)
+                        for (let e of t.users) _[e.id] = new u.default(e);
+                    if (null != e.users)
+                        for (let t of e.users) !(t.id in _ && D(t)) && (_[t.id] = new u.default(t));
+                    for (let t of e.channels) {
+                        var n;
+                        null === (n = t.rawRecipients) || void 0 === n || n.forEach(e => C(e, !1))
+                    }
+                }
+                getUserStoreVersion() {
+                    return S
+                }
+                getUser(e) {
+                    if (null != e) return _[e]
+                }
+                getUsers() {
+                    return _
+                }
+                forEach(e) {
+                    for (let t in _)
+                        if (!1 === e(_[t])) break
+                }
+                findByTag(e, t) {
+                    for (let n in _) {
+                        let i = _[n];
+                        if (null != t && i.username === e && i.discriminator === t) return i;
+                        if (null == t && i.username === e && i.isPomelo()) return i
+                    }
+                }
+                filter(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = [];
+                    for (let t in _) {
+                        let i = _[t];
+                        e(i) && n.push(i)
+                    }
+                    return t && n.sort((e, t) => e.username > t.username ? 1 : e.username < t.username ? -1 : 0), n
+                }
+                getCurrentUser() {
+                    return _[f.default.getId()]
                 }
             }
             eN.displayName = "UserStore", eN.LATEST_SNAPSHOT_VERSION = 1;
@@ -50113,7 +50110,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "268161"
+                                build_number: "268184"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64165,4 +64162,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.7fee6d834eee5aa4c1dc.js.map
+//# sourceMappingURL=21201.a955ef059515a21a566d.js.map
