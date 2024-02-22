@@ -27547,30 +27547,30 @@
             "use strict";
             n.r(t), n.d(t, {
                 getEmbedColor: function() {
-                    return E
+                    return g
                 },
                 ForumPostMediaTypes: function() {
                     return l
                 },
                 useForumPostMediaThumbnail: function() {
-                    return I
-                },
-                useForumPostMediaProperties: function() {
                     return _
                 },
-                useFindFirstMediaProperties: function() {
+                useForumPostMediaProperties: function() {
                     return N
                 },
-                useFirstMediaIsEmbed: function() {
+                useFindFirstMediaProperties: function() {
                     return A
                 },
-                shouldShowAddMediaToOriginalPostModal: function() {
+                useFirstMediaIsEmbed: function() {
                     return y
                 },
-                messageContainsGifOrVideo: function() {
+                shouldShowAddMediaToOriginalPostModal: function() {
                     return x
+                },
+                messageContainsGifOrVideo: function() {
+                    return O
                 }
-            }), n("702976"), n("511434"), n("313619"), n("654714"), n("287168"), n("956660"), n("222007"), n("808653");
+            }), n("702976"), n("222007"), n("808653");
             var l, i, a = n("884691"),
                 s = n("651693"),
                 r = n("610730"),
@@ -27581,9 +27581,10 @@
                 f = n("568734"),
                 m = n("449008"),
                 p = n("299039"),
-                h = n("49111");
+                h = n("253981"),
+                E = n("49111");
 
-            function E(e, t) {
+            function g(e, t) {
                 if (null == e || null == e.embeds[0]) return;
                 let {
                     color: n
@@ -27591,7 +27592,7 @@
                 return null != n && "#ffffff" === n.toLowerCase() || t ? void 0 : n
             }
 
-            function g(e) {
+            function S(e) {
                 if (null == e) return !1;
                 let {
                     filename: t,
@@ -27601,21 +27602,21 @@
                 return (0, s.isImageFile)(t) && null != n && n > 0 && null != l && l > 0
             }
 
-            function S(e) {
+            function C(e) {
                 return null != e && null != e && (0, s.isVideoFile)(e.filename) && null != e.proxy_url
             }
 
-            function C(e) {
-                return g(e) || S(e)
+            function T(e) {
+                return S(e) || C(e)
             }(i = l || (l = {})).EMBED = "embed", i.ATTACHMENT = "attachment";
 
-            function T(e) {
+            function v(e) {
                 let t = o.InlineAttachmentMedia.useSetting();
                 return function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.InlineAttachmentMedia.getSetting();
                     if (!t) return [];
                     let n = null == e ? void 0 : e.attachments;
-                    return null == e || null == n ? [] : n.filter(C).map(e => {
+                    return null == e || null == n ? [] : n.filter(T).map(e => {
                         let {
                             proxy_url: t,
                             url: n,
@@ -27629,10 +27630,11 @@
                         } = e;
                         if (null == r || null == o) return null;
                         let c = (0, s.isVideoFile)(u),
-                            m = null != e.flags && (0, f.hasFlag)(e.flags, h.MessageAttachmentFlags.IS_THUMBNAIL),
+                            m = null != e.flags && (0, f.hasFlag)(e.flags, E.MessageAttachmentFlags.IS_THUMBNAIL),
                             p = null != t ? t : n;
                         if (c) {
-                            let e = new URL(t);
+                            let e = h.default.toURLSafe(t);
+                            if (null == e) return null;
                             e.searchParams.append("format", "jpeg"), p = e.toString()
                         }
                         return {
@@ -27651,7 +27653,7 @@
                 }(e, t)
             }
 
-            function v(e, t) {
+            function I(e, t) {
                 let n = o.InlineEmbedMedia.useSetting(),
                     l = o.RenderEmbeds.useSetting();
                 if (null == e) return [];
@@ -27680,9 +27682,9 @@
                 }).filter(m.isNotNullish) : []
             }
 
-            function I(e, t) {
+            function _(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                    l = _(e, n);
+                    l = N(e, n);
                 return a.useMemo(() => {
                     if (null == t) return [];
                     if (!t.isMediaChannel()) return l;
@@ -27693,34 +27695,34 @@
                 }, [t, l])
             }
 
-            function _(e, t) {
-                let n = T(e),
-                    l = v(e, t);
+            function N(e, t) {
+                let n = v(e),
+                    l = I(e, t);
                 return [...n, ...l]
             }
 
-            function N(e, t) {
+            function A(e, t) {
                 var n, l;
-                let i = T(e),
-                    a = v(e, t);
+                let i = v(e),
+                    a = I(e, t);
                 return null !== (l = null !== (n = i[0]) && void 0 !== n ? n : a[0]) && void 0 !== l ? l : null
             }
 
-            function A(e, t) {
-                let n = T(e),
-                    l = v(e, t);
+            function y(e, t) {
+                let n = v(e),
+                    l = I(e, t);
                 return null == n[0] && null != l[0]
             }
 
-            function y(e, t) {
+            function x(e, t) {
                 var n;
                 let l = u.default.getChannel(t);
                 if (null == l) return !1;
                 let i = d.default.getMessage(l.id, p.default.castChannelIdAsMessageId(l.id));
-                return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && l.isForumPost() && l.ownerId === (null === (n = c.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && 0 === r.default.getCount(l.id) && (0 === i.attachments.length || null == i.attachments.find(e => g(e) || S(e)))
+                return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && l.isForumPost() && l.ownerId === (null === (n = c.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && 0 === r.default.getCount(l.id) && (0 === i.attachments.length || null == i.attachments.find(e => S(e) || C(e)))
             }
 
-            function x(e) {
+            function O(e) {
                 return e.reduce((e, t) => ({
                     containsVideo: e.containsVideo || t.isVideo,
                     containsGif: e.containsGif || (0, s.isAnimatedImageUrl)(t.src)
@@ -41122,7 +41124,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return _
                 }
             }), n("222007");
             var l = n("37983"),
@@ -41130,50 +41132,51 @@
                 a = n("414456"),
                 s = n.n(a),
                 r = n("394846"),
-                o = n("36341"),
-                u = n("158998"),
-                d = n("777003"),
-                c = n("782340"),
-                f = n("888485"),
-                m = n("107680"),
-                p = n("379539"),
-                h = n("714073"),
-                E = n("980923"),
-                g = n("779585"),
-                S = n("900143"),
-                C = n("923337");
-            let T = [C, m, E, h, g, p, S];
+                o = n("77078"),
+                u = n("36341"),
+                d = n("158998"),
+                c = n("777003"),
+                f = n("782340"),
+                m = n("888485"),
+                p = n("107680"),
+                h = n("379539"),
+                E = n("714073"),
+                g = n("980923"),
+                S = n("779585"),
+                C = n("900143"),
+                T = n("923337");
+            let v = [T, p, g, E, S, h, C];
 
-            function v(e) {
+            function I(e) {
                 let {
                     userId: t
                 } = e, [n, a] = i.useState(!1);
                 return i.useLayoutEffect(() => {
                     !n && a(!0)
                 }, [n]), (0, l.jsx)("div", {
-                    className: f.wumpusWrapper,
+                    className: m.wumpusWrapper,
                     children: (0, l.jsxs)("div", {
-                        className: s(f.wumpus, {
-                            [f.wumpusShown]: n
+                        className: s(m.wumpus, {
+                            [m.wumpusShown]: n
                         }),
                         children: [(0, l.jsx)("img", {
-                            className: f.wumpusImage,
-                            alt: c.default.Messages.IMG_ALT_ICON.format({
-                                name: c.default.Messages.WUMPUS
+                            className: m.wumpusImage,
+                            alt: f.default.Messages.IMG_ALT_ICON.format({
+                                name: f.default.Messages.WUMPUS
                             }),
                             src: function() {
                                 let e = parseInt(t.slice(-6), 10);
-                                return T[e % T.length]
+                                return v[e % v.length]
                             }()
-                        }), (0, l.jsx)("span", {
-                            className: f.wumpusTooltip,
-                            children: c.default.Messages.USER_POPOUT_WUMPUS_TOOLTIP
+                        }), (0, l.jsxs)(o.Text, {
+                            variant: "text-sm/normal",
+                            children: [f.default.Messages.USER_POPOUT_WUMPUS_TOOLTIP, "???"]
                         })]
                     })
                 })
             }
 
-            function I(e) {
+            function _(e) {
                 let {
                     user: t,
                     setNote: n,
@@ -41181,15 +41184,15 @@
                     onClose: a
                 } = e;
                 if (t.isNonUserBot() || !i) return null;
-                let s = i && (0, u.isNewUser)(t) && !t.bot;
-                return (0, l.jsxs)(d.default, {
-                    className: f.section,
+                let s = i && (0, d.isNewUser)(t) && !t.bot;
+                return (0, l.jsxs)(c.default, {
+                    className: m.section,
                     lastSection: !0,
-                    children: [s && i ? (0, l.jsx)(v, {
+                    children: [s && i ? (0, l.jsx)(I, {
                         userId: t.id
-                    }) : null, i ? (0, l.jsx)(o.default, {
-                        className: f.messageInputContainer,
-                        inputClassName: f.messageInput,
+                    }) : null, i ? (0, l.jsx)(u.default, {
+                        className: m.messageInputContainer,
+                        inputClassName: m.messageInput,
                         user: t,
                         onClose: () => null == a ? void 0 : a(),
                         autoFocus: !r.isMobile && !n
@@ -54139,4 +54142,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.1fd40a75832dfedb9d1d.js.map
+//# sourceMappingURL=60053.148589f3ea20e1a58e40.js.map
