@@ -32,6 +32,9 @@
                         guildId: e,
                         nick: null !== (n = c.nick) && void 0 !== n ? n : E.username,
                         avatar: null !== (a = c.avatar) && void 0 !== a ? a : void 0,
+                        avatarDecoration: null != c.avatarDecoration ? {
+                            ...c.avatarDecoration
+                        } : void 0,
                         premiumSince: null !== (r = c.premiumSince) && void 0 !== r ? r : void 0,
                         isPending: null !== (s = c.isPending) && void 0 !== s && s,
                         user: {
@@ -143,13 +146,13 @@
                             if (N.default.hasOpenedThread(e)) return !1;
                             if (null == l) {
                                 var t;
-                                l = null !== (t = u.default.get(D, {})) && void 0 !== t ? t : {}
+                                l = null !== (t = u.default.get(O, {})) && void 0 !== t ? t : {}
                             }
                             if (e in l) return !1;
                             l[e] = Date.now();
-                            let n = Date.now() - O;
+                            let n = Date.now() - D;
                             for (let e in l) l[e] < n && delete l[e];
-                            return u.default.set(D, l), !0
+                            return u.default.set(O, l), !0
                         }(n)) R.log("Jumping to start of thread ".concat(g.id)), s.default.fetchMessages({
                         channelId: n,
                         limit: v.MAX_MESSAGES_PER_CHANNEL,
@@ -184,8 +187,8 @@
                     })
                 }
             }
-            let O = 90 * I.default.Millis.DAY,
-                D = "viewedThreadIds";
+            let D = 90 * I.default.Millis.DAY,
+                O = "viewedThreadIds";
 
             function P() {
                 let e = A.default.getChannelId();
@@ -605,4 +608,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1727.aeb9b1a4da8cf7996ae0.js.map
+//# sourceMappingURL=1727.f828429b756c69401c80.js.map
