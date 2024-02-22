@@ -19956,15 +19956,28 @@
                 wrapper: "wrapper__55afe"
             }
         },
+        359235: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                buttonSparkleStar1: "buttonSparkleStar1_b44754",
+                buttonSparkleStar2: "buttonSparkleStar2_ae1904",
+                buttonSparkleStar3: "buttonSparkleStar3__53872",
+                buttonSparkleStar4: "buttonSparkleStar4__2eedc",
+                buttonSparkleStar5: "buttonSparkleStar5_faeee8",
+                ctaFullWidth: "ctaFullWidth__6858f",
+                leftSparkle: "leftSparkle__3f611",
+                rightSparkle: "rightSparkle_b5a3b5",
+                rimGlowVertical: "rimGlowVertical__72164",
+                rimGlowVerticalTier0: "rimGlowVerticalTier0__52876",
+                rimGlowVerticalTier2: "rimGlowVerticalTier2__7d6fb",
+                sparklesAndButton: "sparklesAndButton_d7ef8c"
+            }
+        },
         350872: function(e, t, n) {
             "use strict";
             e.exports = {
                 body: "body__5d70d",
-                buttonSparkleStar1: "buttonSparkleStar1__76d53",
-                buttonSparkleStar2: "buttonSparkleStar2_fc8a1a",
-                buttonSparkleStar3: "buttonSparkleStar3__72228",
-                buttonSparkleStar4: "buttonSparkleStar4_cd0006",
-                buttonSparkleStar5: "buttonSparkleStar5_aae942",
+                bodySmallScreen: "bodySmallScreen_cf9956",
                 card: "card__48184",
                 freeTrialActivatedPillInline: "freeTrialActivatedPillInline__02c47 freeTrialPillInlineBlock__5839a",
                 freeTrialPill: "freeTrialPill_ebb145",
@@ -19980,28 +19993,45 @@
                 freeTrialPillWithSparkles: "freeTrialPillWithSparkles__467c4",
                 icon: "icon_c4178d",
                 item: "item__4b324",
+                lightBackgroundPill: "lightBackgroundPill_f6f09f",
+                listItems: "listItems__61d04",
                 mostPopularPill: "mostPopularPill__8c0b3",
                 mostPopularText: "mostPopularText__13a42",
                 newCircleIcon: "newCircleIcon_ba71bd",
                 newTagItem: "newTagItem_a90a00",
+                perkContainer: "perkContainer__9eeec",
+                perkContainerSmallScreen: "perkContainerSmallScreen_c9a62b",
+                planContainer: "planContainer__7463b",
+                planContainerSmallScreen: "planContainerSmallScreen__911dd",
                 premiumCards: "premiumCards__1b3a9",
                 premiumCardsStackedVariant: "premiumCardsStackedVariant__6efa8",
+                premiumCardsStackedVariantSmallScreen: "premiumCardsStackedVariantSmallScreen__6b348",
                 price: "price__12d41",
+                priceStacked: "priceStacked__4cd95",
+                priceStackedSmallScreen: "priceStackedSmallScreen_ebfd44",
                 rimGlowTier0: "rimGlowTier0_d915da",
                 rimGlowTier2: "rimGlowTier2_b78a6c",
-                rimGlowVertical: "rimGlowVertical_b45e62",
-                rimGlowVerticalTier0: "rimGlowVerticalTier0_ad4b08",
-                rimGlowVerticalTier2: "rimGlowVerticalTier2__0a70b",
+                rimGlowTier2Stacked: "rimGlowTier2Stacked__889bc",
                 sparkleStar1: "sparkleStar1_eafb1f",
                 sparkleStar2: "sparkleStar2__20af8",
                 sparkleStar3: "sparkleStar3__7be75",
                 sparkleStar4: "sparkleStar4__47342",
                 sparkleStar5: "sparkleStar5_dade39",
+                stackedCard: "stackedCard__02716",
+                stackedCardTitle: "stackedCardTitle__95b4d",
+                stackedCardTitleSmallScreen: "stackedCardTitleSmallScreen__4d7a0",
                 subscriptionPlanInfo: "subscriptionPlanInfo__2cfbe",
                 tier0: "tier0__2e127",
+                tier0Stacked: "tier0Stacked__077c3",
                 tier0Title: "tier0Title__36a19",
+                tier0TitleStacked: "tier0TitleStacked_d4db8d",
+                tier0TitleStackedSmallScreen: "tier0TitleStackedSmallScreen__237cf",
                 tier2: "tier2__1364f",
+                tier2Stacked: "tier2Stacked__11383",
                 tier2Title: "tier2Title_eac987",
+                tier2TitleStacked: "tier2TitleStacked__6b1a3",
+                tier2TitleStackedSmallScreen: "tier2TitleStackedSmallScreen_a3c173",
+                tierCardAnimation: "tierCardAnimation__35541",
                 tierCardFocused: "tierCardFocused_cf0a83",
                 tierCardHidden: "tierCardHidden__9b38e",
                 title: "title__223b8",
@@ -20011,6 +20041,7 @@
                 withCardHover: "withCardHover_daa749",
                 withTier0Rim: "withTier0Rim_fb8112",
                 withTier2Rim: "withTier2Rim_c22b42",
+                withTier2RimStacked: "withTier2RimStacked__0956f",
                 wumpusImageContainer: "wumpusImageContainer__5990c"
             }
         },
@@ -20497,6 +20528,12 @@
                 headerArt: "headerArt_b78f22"
             }
         },
+        458177: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                fullScreen: "fullScreen__8b0a7"
+            }
+        },
         559695: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -20546,7 +20583,9 @@
             "use strict";
             e.exports = {
                 affinityDescription: "affinityDescription__4a412",
+                affinityDescriptionNoMargin: "affinityDescriptionNoMargin_b9fdd6",
                 affinityHeight: "affinityHeight__33e1e",
+                backgroundColor: "backgroundColor__64369",
                 button: "button_bbafbd",
                 buttonContainer: "buttonContainer_e04816",
                 container: "container__1e26b",
@@ -20556,6 +20595,7 @@
                 fullscreenSparkleStar3: "fullscreenSparkleStar3__85621 sparkleStar_dbaf1b",
                 fullscreenSparkleStar4: "fullscreenSparkleStar4_edb2d0 sparkleStar_dbaf1b",
                 fullscreenTextContainer: "fullscreenTextContainer__751a0",
+                header: "header_fa6541",
                 settingsContainer: "settingsContainer__7e9ad",
                 settingsSparkleStar1: "settingsSparkleStar1__2b784 sparkleStar_dbaf1b",
                 settingsSparkleStar2: "settingsSparkleStar2__9eccb sparkleStar_dbaf1b",
@@ -20605,6 +20645,7 @@
                 perksCardArt: "perksCardArt__35e0c",
                 perksContainer: "perksContainer_e3fd5b",
                 perksTitle: "perksTitle__110ba",
+                perksTitleStackedCards: "perksTitleStackedCards__69da1",
                 reducedMotion: "reducedMotion__7a424",
                 remixingImage: "remixingImage__065a3",
                 sizeGizmo: "sizeGizmo__67851",
@@ -20623,6 +20664,7 @@
             "use strict";
             e.exports = {
                 cardContainer: "cardContainer__912d9",
+                cardContainerNarrowWidth: "cardContainerNarrowWidth_f10ffd",
                 centerAlignSection: "centerAlignSection_e8acae",
                 centerAlignSubtitle: "centerAlignSubtitle_f111db",
                 container: "container__5980c",
@@ -20715,7 +20757,10 @@
                 table: "table__0e47c",
                 tableWrapper: "tableWrapper__3cc12",
                 tier0ColumnOuter: "tier0ColumnOuter__73cad",
+                tier0ColumnOuterBackground: "tier0ColumnOuterBackground_bc7d32",
                 tier2ColumnOuter: "tier2ColumnOuter__0b5e2",
+                tier2ColumnOuterBackground: "tier2ColumnOuterBackground__96f3a",
+                tier2Pill: "tier2Pill__7976b",
                 titleText: "titleText__55da3",
                 topBorderRadius: "topBorderRadius__4a0b5",
                 trialOfferPill: "trialOfferPill_d9e857",
@@ -20798,6 +20843,7 @@
                 bannerFullScreenNegativeMargin: "bannerFullScreenNegativeMargin__1a304",
                 bottomIllustration: "bottomIllustration__5d164",
                 bottomOfPageVisibilitySensor: "bottomOfPageVisibilitySensor__201a9",
+                buttonShine: "buttonShine__448fd",
                 container: "container__74da1",
                 dynamicImage: "dynamicImage__10ecf",
                 existingSubscriberSpacing: "existingSubscriberSpacing__3dfec",
@@ -20816,14 +20862,17 @@
                 perkCardsContainerSpacingSettings: "perkCardsContainerSpacingSettings__54b8c perkCardsContainer__30878",
                 planComparisonTable: "planComparisonTable_f25c4c",
                 planComparisonTableContainer: "planComparisonTableContainer__5e152",
+                premiumStackedTierCardsContainerFullscreen: "premiumStackedTierCardsContainerFullscreen__36cd5",
                 premiumTierCardsContainer: "premiumTierCardsContainer_e3c13b",
                 premiumTierCardsContainerFullscreen: "premiumTierCardsContainerFullscreen__90547 premiumTierCardsContainer_e3c13b",
                 premiumTierCardsContainerSettings: "premiumTierCardsContainerSettings_f346a8 premiumTierCardsContainer_e3c13b",
+                roundedSubscribeButton: "roundedSubscribeButton__740a8",
                 scroller: "scroller_a1aadd",
                 settingsContainer: "settingsContainer_b14e24",
                 settingsHeroBogoHeight: "settingsHeroBogoHeight__39203",
                 settingsHeroBogoMarginFullscreen: "settingsHeroBogoMarginFullscreen__9f6a6",
                 settingsHeroNoBackground: "settingsHeroNoBackground__0cfbe",
+                stackedHeader: "stackedHeader__40b2a",
                 tableLeftSideDecoration: "tableLeftSideDecoration__8c9e1",
                 tableRightSideDecoration: "tableRightSideDecoration__7ea51",
                 trialMarketingMargin: "trialMarketingMargin_dd639f",
