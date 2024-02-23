@@ -7467,15 +7467,6 @@
             let l = "(max-width: 485px)",
                 i = "(max-height: 450px)"
         },
-        692105: function(e, t, n) {
-            "use strict";
-            var l, i;
-            n.r(t), n.d(t, {
-                IconType: function() {
-                    return l
-                }
-            }), (i = l || (l = {}))[i.STORE_ASSET = 1] = "STORE_ASSET", i[i.EMOJI = 2] = "EMOJI"
-        },
         829805: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -7787,10 +7778,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 SubscriptionListingBenefits: function() {
-                    return c
+                    return d
                 },
                 default: function() {
-                    return f
+                    return c
                 }
             });
             var l = n("37983");
@@ -7799,53 +7790,52 @@
                 a = n.n(i),
                 s = n("77078"),
                 r = n("430568"),
-                o = n("271560"),
-                u = n("692105"),
-                d = n("794280");
+                o = n("377527"),
+                u = n("794280");
 
-            function c(e) {
+            function d(e) {
                 let t, {
                     applicationId: n,
                     storeListingBenefits: i,
                     skuBenefits: s,
                     className: r
                 } = e;
-                return null != i ? t = i.map(e => (0, l.jsx)(m, {
+                return null != i ? t = i.map(e => (0, l.jsx)(f, {
                     applicationId: n,
                     benefit: e,
-                    className: a(d.benefit, r)
-                }, e.id)) : null != s && (t = s.map((e, t) => (0, l.jsx)(f, {
+                    className: a(u.benefit, r)
+                }, e.id)) : null != s && (t = s.map((e, t) => (0, l.jsx)(c, {
                     benefit: e,
-                    className: a(d.benefit, r)
+                    className: a(u.benefit, r)
                 }, t))), (0, l.jsx)(l.Fragment, {
                     children: t
                 })
             }
 
-            function f(e) {
+            function c(e) {
                 let {
                     benefit: t,
                     className: n,
                     emojiContainerClassName: i,
                     showsDescription: o = !0,
-                    nameTextVariant: u = "text-md/medium",
+                    nameTextVariant: d = "text-md/medium",
                     nameTextColor: c = "header-primary"
                 } = e;
                 return (0, l.jsxs)("div", {
-                    className: a(d.container, n),
+                    className: a(u.container, n),
                     children: [null != t.emoji && (0, l.jsx)("div", {
-                        className: a(d.emojiContainer, i),
+                        className: a(u.emojiContainer, i),
                         children: (0, l.jsx)(r.default, {
                             emojiId: t.emoji.id,
                             emojiName: t.emoji.name,
                             animated: t.emoji.animated
                         })
                     }), (0, l.jsxs)("div", {
-                        className: d.infoContainer,
+                        className: u.infoContainer,
                         children: [(0, l.jsx)(s.Text, {
-                            variant: u,
+                            variant: d,
                             color: c,
-                            className: d.name,
+                            className: u.name,
                             children: t.name
                         }), o && (0, l.jsx)(s.Text, {
                             color: "interactive-normal",
@@ -7856,46 +7846,32 @@
                 })
             }
 
-            function m(e) {
-                let t, {
-                    applicationId: n,
-                    benefit: i,
-                    className: c,
-                    emojiContainerClassName: f,
-                    showsDescription: m = !0,
-                    nameTextVariant: p = "text-md/medium",
-                    nameTextColor: h = "header-primary"
+            function f(e) {
+                let {
+                    applicationId: t,
+                    benefit: n,
+                    className: i,
+                    emojiContainerClassName: r,
+                    showsDescription: d = !0,
+                    nameTextVariant: c = "text-md/medium",
+                    nameTextColor: f = "header-primary"
                 } = e;
-                if (null != i.icon) switch (i.icon.type) {
-                    case u.IconType.STORE_ASSET:
-                        let E = (0, o.getAssetURL)(n, i.icon.store_asset_id);
-                        t = (0, l.jsx)("img", {
-                            src: E,
-                            alt: "",
-                            className: "emoji"
-                        });
-                        break;
-                    case u.IconType.EMOJI:
-                        t = (0, l.jsx)(r.default, {
-                            emojiName: i.icon.emoji
-                        })
-                }
                 return (0, l.jsxs)("div", {
-                    className: a(d.container, c),
+                    className: a(u.container, i),
                     children: [(0, l.jsx)("div", {
-                        className: a(d.emojiContainer, f),
-                        children: t
+                        className: a(u.emojiContainer, r),
+                        children: (0, o.getBenefitIcon)(t, n.icon)
                     }), (0, l.jsxs)("div", {
-                        className: d.infoContainer,
+                        className: u.infoContainer,
                         children: [(0, l.jsx)(s.Text, {
-                            variant: p,
-                            color: h,
-                            className: d.name,
-                            children: i.name
-                        }), m && (0, l.jsx)(s.Text, {
+                            variant: c,
+                            color: f,
+                            className: u.name,
+                            children: n.name
+                        }), d && (0, l.jsx)(s.Text, {
                             color: "interactive-normal",
                             variant: "text-sm/normal",
-                            children: i.description
+                            children: n.description
                         })]
                     })]
                 })
@@ -32725,6 +32701,35 @@
                 }) : null
             }
         },
+        377527: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getBenefitIcon: function() {
+                    return r
+                }
+            });
+            var l = n("37983");
+            n("884691");
+            var i = n("336110"),
+                a = n("430568"),
+                s = n("271560");
+
+            function r(e, t) {
+                if (null != t) switch (t.type) {
+                    case i.IconType.STORE_ASSET:
+                        let n = (0, s.getAssetURL)(e, t.store_asset_id);
+                        return (0, l.jsx)("img", {
+                            src: n,
+                            alt: "",
+                            className: "emoji"
+                        });
+                    case i.IconType.EMOJI:
+                        return (0, l.jsx)(a.default, {
+                            emojiName: t.emoji
+                        })
+                }
+            }
+        },
         824794: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -54081,7 +54086,16 @@
                     })]
                 })
             }
+        },
+        336110: function(e, t, n) {
+            "use strict";
+            var l, i;
+            n.r(t), n.d(t, {
+                IconType: function() {
+                    return l
+                }
+            }), (i = l || (l = {}))[i.STORE_ASSET = 1] = "STORE_ASSET", i[i.EMOJI = 2] = "EMOJI"
         }
     }
 ]);
-//# sourceMappingURL=60053.68d7fb69f20b7ae7133a.js.map
+//# sourceMappingURL=60053.0bac6834ca0075b22c50.js.map
