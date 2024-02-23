@@ -18285,7 +18285,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268609", ", Version Hash: ").concat("0997f9eedb61e49ef66074062594f9441a57b78d")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268614", ", Version Hash: ").concat("8aa63b97e42e730ba2b0dc1602ff7b458122c5e2")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20624,8 +20624,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "268609", "268609"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268609")), _ = 0), _
+                let _ = parseInt((e = "268614", "268614"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268614")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25339,8 +25339,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708720689369",
-                                    build_number: "268609"
+                                    built_at: "1708721058831",
+                                    build_number: "268614"
                                 }
                             },
                             retries: 1
@@ -26037,29 +26037,6 @@
             function o(e) {
                 var _;
                 return !e.ok && (null === (_ = e.body) || void 0 === _ ? void 0 : _.code) === t.AbortCodes.BLOCKED_BY_PROXY
-            }
-        },
-        815496: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                trackQuestEvent: function() {
-                    return n
-                }
-            });
-            var t = E("599110"),
-                o = E("2973");
-
-            function n(e, _, E) {
-                let n = o.default.quests.get(e);
-                if (null != n && !n.preview) {
-                    var r;
-                    t.default.track(_, {
-                        quest_id: (r = n).id,
-                        game_id: r.config.applicationId,
-                        game_name: r.config.applicationName,
-                        ...E
-                    })
-                }
             }
         },
         319405: function(e, _, E) {
@@ -36628,4 +36605,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.42e38e5ffd736241b857.js.map
+//# sourceMappingURL=77761.5977bd3303dcdfcbae42.js.map

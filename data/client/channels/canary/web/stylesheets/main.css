@@ -33074,7 +33074,7 @@ html .progress__4ef76 {
     overflow: visible
 }
 
-.avatar_f52a16 {
+.image__229b6 {
     width: 100%;
     height: 100%
 }
@@ -45888,8 +45888,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -128112,4 +128112,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7ecb4dbb0170d28960c6.css.map*/
+/*# sourceMappingURL=app.ca3e34d30a80784ee1ec.css.map*/
