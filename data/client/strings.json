@@ -9364,6 +9364,7 @@
   "GO_LIVE_MODAL_APPLICATION_FORM_TITLE": "\"What you're streaming\"",
   "GO_LIVE_MODAL_SELECT_CHANNEL_FORM_TITLE": "\"Select a voice channel\"",
   "GO_LIVE_MODAL_CURRENT_CHANNEL_FORM_TITLE": "\"Streaming channel\"",
+  "GO_LIVE_MODAL_HARDWARE_WARNING_INFOBOX": "\"Discord relies on the video hardware encoder of your graphics card for optimal system performance and visual quality. [Enable Hardware Acceleration](onClick) in your settings for the best experience.\"",
   "GO_LIVE_MODAL_CTA": "\"Go Live\"",
   "GO_LIVE_MODAL_OVERFLOW_TWO_USERS": "\"!!{nickname0}!! and !!{nickname1}!!\"",
   "GO_LIVE_MODAL_OVERFLOW_THREE_USERS": "\"!!{nickname0}!!, !!{nickname1}!!, and !!{nickname2}!!\"",
