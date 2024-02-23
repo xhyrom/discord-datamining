@@ -1,9 +1,10 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <h3><strong>New to Activities: Colonist</strong></h3>
+            <h3><strong>New to Activities: Colonist &amp;&nbsp;Krunker Strive FRVR</strong></h3>
             <p>Gather supplies and expand your reach in <strong>Colonist</strong>, an online settlement-building board game that’s now playable in Discord! Barter between friends, build the longest roads possible and amass an army worthy of victory. Play with up to seven of your closest frienemies or refine your strats in a solo game against bots that will <em>absolutely</em> see through your terrible bartering offer.&nbsp;</p>
-            <p>Start a round of Colonist by selecting the rocket ship button on either desktop or mobile while in Voice.&nbsp;</p>
+            <p>If you’re more of an action-oriented player, squad up in Voice and play a few rounds of <strong>Krunker Strike FRVR</strong>: a Discord-exclusive version of Krunker made by our friends at FRVR. As Discord’s first-ever FPS Activity, Krunker Strike FRVR lets you play with friends and jump into online matches with players around the world, at any time. While you play, you’ll be able to collect and use new and special equipment to compete in style.&nbsp;&nbsp;</p>
+            <p>Keep reading to see what Activities are all about, how to use ‘em, and which Activities are available today.</p>
             <div class="w-embed">
                 <hr class="hr-style">
             </div>
@@ -42,10 +43,9 @@
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>What Games and Activities are Available?</strong></h2>
-            <figure style="max-width:1080px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6570b9fd64ddd04ae8c66fee_O7icE76ze-YBxSsdBI1KtBzi_rOj6Nh0cDrG8Fp5ej35Y--x2cw_-7XYB_k6wN5wC2IKKGhwPZZnCBgDRFCWzbUXTzrwqieQSCFwLDgiNQ293JqOdrfHjZN4Tj-QBhnWxx8wUbgahcDS22e6G_k33zY.png" alt=""></div>
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1080pxpx">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65d7ed47a88e6b4ea4dcf7e2_Krunker%20Blog%20Update%20Shelf%20(1).png" loading="lazy" alt="Key artwork for all currently available Activities on Discord."></div>
             </figure>
-            <p></p>
             <p>Activities can be launched in either a server’s Voice channels or in a DM Voice call. Check out the entirety of currently-available Activities. <br></p>
             <ul role="list">
                 <li><strong>Watch Together</strong>: Enjoy the same YouTube video at the same time.&nbsp;</li>
@@ -65,9 +65,9 @@
                 <li><strong>Color Together</strong>: The dress was always black and gold, now color it so.</li>
                 <li><strong>Bobble Bash</strong>: Collect the most gems while bashing your buddies away from them.&nbsp;</li>
                 <li><strong>Chef Showdown:</strong> “YOU’RE COOKED!” - You after defeating your friends, probably.</li>
-                <li><strong>[NEW] Colonist</strong>: I’ll trade you two wool for one lumber… oops, just built a huge road, I win.</li>
+                <li><strong>Colonist</strong>: I’ll trade you two wool for one lumber… oops, just built a huge road, I win.</li>
             </ul>
-            <p><strong><em>Note: This list of Activities was last updated on December 6, 2023.</em></strong></p>
+            <p><strong><em>Note: This list of Activities was last updated on February 22, 2024.</em></strong></p>
             <p>For the full low-down on how Activities work, repeat after me: "The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>." (Good job!)<em>‍</em>‍</p>
         </div>
     </div>
@@ -104,6 +104,7 @@
                 <li><a href="https://support.discord.com/hc/en-us/articles/15508886520855-Bobble-Bash-FAQ">Bobble Bash</a></li>
                 <li><a href="https://mojiworks.com/chef-showdown/help">Chef Showdown</a></li>
                 <li><a href="https://blog.colonist.io/play-colonist-on-discord/">Colonist</a></li>
+                <li><a href="https://frvr.com/support/">Krunker Strike FRVR</a></li>
             </ul>
             <p>And of course, you’ll always find us on the usual places: <a href="https://x.com/discord">X</a>, <a href="https://www.instagram.com/discord/">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Try making a good ol’ fashioned montage of your sick Putt Party plays and share it with us!&nbsp;</p>
         </div>
