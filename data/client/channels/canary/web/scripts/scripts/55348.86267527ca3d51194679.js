@@ -60,7 +60,9 @@
                 },
                 Storefront: {
                     BENEFITS_TITLE: "Exclusive to this tier",
+                    PRODUCT_DETAILS: "Product Details",
                     SEE_FULL_BENEFITS: "See full benefits",
+                    SEE_MORE_DETAILS: "See more details",
                     SERVER_SUBSCRIPTION: "Server subscription",
                     USER_SUBSCRIPTION: "Personal subscription"
                 }
@@ -1929,4 +1931,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55348.b3c1f81f4ea197df1798.js.map
+//# sourceMappingURL=55348.86267527ca3d51194679.js.map
