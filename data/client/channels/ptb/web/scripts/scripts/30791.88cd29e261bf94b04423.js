@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["41748"], {
+    ["30791"], {
         606863: function(e, t, r) {
             "use strict";
             e.exports = r.p + "321a07cbc6f5919dbce9.svg"
@@ -32,6 +32,49 @@
             "use strict";
             e.exports = r.p + "44d5e1639bc492dc8d62.svg"
         },
+        606292: function(e, t, r) {
+            "use strict";
+            r.r(t), r.d(t, {
+                getDecorationSizeForAvatarSize: function() {
+                    return a
+                },
+                openAvatarDecorationModal: function() {
+                    return s
+                }
+            });
+            var n = r("37983");
+            r("884691");
+            var u = r("77078"),
+                o = r("393414");
+            r("103603");
+            var l = r("573135"),
+                i = r("49111");
+
+            function a(e) {
+                return "number" != typeof e ? (0, u.getAvatarSize)(e) * l.DECORATION_TO_AVATAR_RATIO : e * l.DECORATION_TO_AVATAR_RATIO
+            }
+            let s = e => {
+                let {
+                    analyticsLocations: t,
+                    initialSelectedDecoration: l,
+                    isTryItOutFlow: a,
+                    guild: s
+                } = e;
+                (0, u.openModalLazy)(async () => {
+                    (0, o.getHistory)().location.pathname === i.Routes.COLLECTIBLES_SHOP_FULLSCREEN && (0, o.transitionTo)(i.Routes.APP);
+                    let {
+                        default: e
+                    } = await r.el("791050").then(r.bind(r, "791050"));
+                    return r => (0, n.jsx)(e, {
+                        ...r,
+                        analyticsLocations: t,
+                        initialSelectedDecoration: l,
+                        isTryItOutFlow: a,
+                        guild: s
+                    })
+                }, {})
+            }
+        },
         172858: function(e, t, r) {
             "use strict";
             r.r(t), r.d(t, {
@@ -45,10 +88,10 @@
                     return i
                 },
                 COMMON_CONFETTI_MAX_SPRITE_SIZE: function() {
-                    return s
+                    return a
                 },
                 COMMON_CONFETTI_BASE_CONFIG: function() {
-                    return a
+                    return s
                 },
                 COMMON_CONFETTI_ENVIRONMENT: function() {
                     return c
@@ -62,8 +105,8 @@
                     src: r("283397"),
                     colorize: !1
                 }],
-                s = 28,
-                a = {
+                a = 28,
+                s = {
                     velocity: {
                         type: "static-random",
                         minValue: {
@@ -85,7 +128,7 @@
                     size: {
                         type: "static-random",
                         minValue: 14,
-                        maxValue: s
+                        maxValue: a
                     }
                 },
                 c = new n.Environment
@@ -102,26 +145,26 @@
                 o = r("446674"),
                 l = r("913144");
             let i = [],
-                s = !1;
-            let a = i,
+                a = !1;
+            let s = i,
                 c = {},
                 f = null,
                 d = e => {
-                    a = (0, u.cloneDeep)(e);
+                    s = (0, u.cloneDeep)(e);
                     let t = {};
-                    a.forEach(e => {
+                    s.forEach(e => {
                         t[e.id] = e
                     }), c = t
                 };
             class E extends o.default.Store {
                 get isFetching() {
-                    return s
+                    return a
                 }
                 get fetchError() {
                     return n
                 }
                 get profileEffects() {
-                    return a
+                    return s
                 }
                 get tryItOutId() {
                     return f
@@ -133,19 +176,19 @@
             E.displayName = "ProfileEffectStore";
             var T = new E(l.default, {
                 USER_PROFILE_EFFECTS_FETCH: () => {
-                    s = !0
+                    a = !0
                 },
                 USER_PROFILE_EFFECTS_FETCH_SUCCESS: e => {
                     let {
                         profileEffects: t
                     } = e;
-                    s = !1, d(0 === t.length ? i : t)
+                    a = !1, d(0 === t.length ? i : t)
                 },
                 USER_PROFILE_EFFECTS_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    s = !1, n = t, d(i)
+                    a = !1, n = t, d(i)
                 },
                 PROFILE_EFFECTS_SET_TRY_IT_OUT: e => {
                     let {
@@ -154,7 +197,7 @@
                     f = t
                 },
                 LOGOUT: e => {
-                    s = !1, d(i), f = null
+                    a = !1, d(i), f = null
                 }
             })
         },
@@ -200,17 +243,17 @@
                     i = n.useCallback(() => {
                         l.current = !1, cancelAnimationFrame(r.current)
                     }, []),
-                    s = n.useCallback(n => {
+                    a = n.useCallback(n => {
                         null == o.current && (o.current = n);
                         let u = n - o.current;
-                        u >= t && (o.current = n, e(u)), l.current && (r.current = requestAnimationFrame(s))
+                        u >= t && (o.current = n, e(u)), l.current && (r.current = requestAnimationFrame(a))
                     }, [e, t]),
-                    a = n.useCallback(() => {
-                        l.current = !0, o.current = void 0, r.current = requestAnimationFrame(s)
-                    }, [s]);
-                return n.useEffect(() => (r.current = requestAnimationFrame(s), () => cancelAnimationFrame(r.current)), []), {
+                    s = n.useCallback(() => {
+                        l.current = !0, o.current = void 0, r.current = requestAnimationFrame(a)
+                    }, [a]);
+                return n.useEffect(() => (r.current = requestAnimationFrame(a), () => cancelAnimationFrame(r.current)), []), {
                     stop: i,
-                    reset: a,
+                    reset: s,
                     ticking: l
                 }
             }
@@ -250,19 +293,19 @@
                     let t = u.default.profileEffects,
                         [r, o] = n.useState(e),
                         [l, i] = n.useState(u.default.getProfileEffectById(e)),
-                        s = t.reduce((t, r, n) => (r.id === e && (t = n), t), 0),
-                        [, a] = n.useState(s),
-                        c = n.useRef(s);
+                        a = t.reduce((t, r, n) => (r.id === e && (t = n), t), 0),
+                        [, s] = n.useState(a),
+                        c = n.useRef(a);
                     return n.useEffect(() => {
                         o(e), i(u.default.getProfileEffectById(e))
                     }, [e, t]), {
                         increment: () => {
                             let e = (c.current + 1) % t.length;
-                            c.current = e, a(e), o(t[e].id), i(t[e])
+                            c.current = e, s(e), o(t[e].id), i(t[e])
                         },
                         decrement: () => {
                             let e = 0 === c.current ? t.length - 1 : c.current - 1;
-                            c.current = e, a(e), o(t[e].id), i(t[e])
+                            c.current = e, s(e), o(t[e].id), i(t[e])
                         },
                         id: r,
                         preset: l
@@ -293,102 +336,102 @@
                 o = r("414456"),
                 l = r.n(o),
                 i = r("446674"),
-                s = r("206230"),
-                a = r("471671"),
+                a = r("206230"),
+                s = r("471671"),
                 c = r("76047"),
                 f = r("859498"),
                 d = r("687682"),
                 E = r("525808"),
                 T = r("465523"),
-                m = r("417675"),
-                p = r("188645"),
-                R = r("484304");
-            let A = e => {
+                A = r("417675"),
+                R = r("188645"),
+                m = r("484304");
+            let p = e => {
                     let {
                         bannerAdjustment: t = 0,
                         maxLoops: r,
                         resetOnHover: o = !1,
                         isHovering: i = !1,
-                        useOpacityOnHover: s = !0,
-                        autoPlay: a = !0,
+                        useOpacityOnHover: a = !0,
+                        autoPlay: s = !0,
                         restartMethod: T,
-                        urlQueryString: p,
-                        profileEffectConfig: A,
+                        urlQueryString: R,
+                        profileEffectConfig: p,
                         noBorderRadius: v = !1,
                         introDelay: I = c.ENTRY_DELAY
-                    } = e, h = u.useRef(null), [_, S] = u.useState([]);
-                    (0, m.default)(A);
-                    let [N, F] = u.useState(0), [C, g] = u.useState(0), {
-                        accessibilityLabel: O
-                    } = A, [y, P] = u.useState(-I), {
-                        stop: L,
+                    } = e, _ = u.useRef(null), [S, h] = u.useState([]);
+                    (0, A.default)(p);
+                    let [O, N] = u.useState(0), [C, y] = u.useState(0), {
+                        accessibilityLabel: F
+                    } = p, [g, L] = u.useState(-I), {
+                        stop: P,
                         reset: D,
                         ticking: x
                     } = (0, d.default)(e => {
-                        P(t => t + e)
+                        L(t => t + e)
                     });
                     u.useEffect(() => {
-                        P(-I), S((0, E.sortEffectLayers)(A.effects))
-                    }, [A]), u.useEffect(() => {
+                        L(-I), h((0, E.sortEffectLayers)(p.effects))
+                    }, [p]), u.useEffect(() => {
                         let e = 0,
                             t = 1 / 0;
-                        _.forEach(r => {
+                        S.forEach(r => {
                             let n = r.start + r.duration;
                             n > e && (e = n), r.loop && r.start < t && (t = r.start)
-                        }), F(t), g(e)
-                    }, [g, _]);
-                    let [M, B] = u.useState(!1);
+                        }), N(t), y(e)
+                    }, [y, S]);
+                    let [M, b] = u.useState(!1);
                     return u.useEffect(() => {
-                        !0 !== a && !i && (L(), P(0)), !i && M && x.current && (L(), P(0)), o && i && !x.current && (D(), A.animationType === f.AnimationTypes.PERSISTENT ? P(T === f.RestartMethod.FromStart ? 0 : N) : P(0))
-                    }, [i, M, N, o, L, D, x, A.animationType, a, T]), (0, n.jsx)("div", {
-                        ref: h,
-                        className: l(R.profileEffects, {
-                            [R.hovered]: i && s
+                        !0 !== s && !i && (P(), L(0)), !i && M && x.current && (P(), L(0)), o && i && !x.current && (D(), p.animationType === f.AnimationTypes.PERSISTENT ? L(T === f.RestartMethod.FromStart ? 0 : O) : L(0))
+                    }, [i, M, O, o, P, D, x, p.animationType, s, T]), (0, n.jsx)("div", {
+                        ref: _,
+                        className: l(m.profileEffects, {
+                            [m.hovered]: i && a
                         }),
                         children: (0, n.jsx)("div", {
-                            className: v ? R.innerNoRadius : R.inner,
-                            children: _.map((e, u) => {
-                                var o, l, i, s, d, E, T, m;
+                            className: v ? m.innerNoRadius : m.inner,
+                            children: S.map((e, u) => {
+                                var o, l, i, a, d, E, T, A;
                                 if (!x.current) {
-                                    if (A.animationType === f.AnimationTypes.PERSISTENT && null != A.staticFrameSrc && 0 === u && !0 === a) {
+                                    if (p.animationType === f.AnimationTypes.PERSISTENT && null != p.staticFrameSrc && 0 === u && !0 === s) {
                                         let {
                                             staticFrameSrc: r
-                                        } = A;
+                                        } = p;
                                         return (0, n.jsx)("img", {
-                                            className: R.effect,
+                                            className: m.effect,
                                             style: {
                                                 top: null !== (d = null === (i = e.position) || void 0 === i ? void 0 : i.y) && void 0 !== d ? d : 0 - t,
-                                                left: null !== (E = null === (s = e.position) || void 0 === s ? void 0 : s.x) && void 0 !== E ? E : 0
+                                                left: null !== (E = null === (a = e.position) || void 0 === a ? void 0 : a.x) && void 0 !== E ? E : 0
                                             },
                                             src: r,
-                                            alt: O
+                                            alt: F
                                         }, e.src + u)
                                     }
                                     return (0, n.jsx)("img", {
                                         src: c.RESET,
-                                        alt: O
+                                        alt: F
                                     }, e.src + u)
                                 }
-                                if (y < e.start || !e.loop && y > e.duration + e.start) return (0, n.jsx)("img", {
+                                if (g < e.start || !e.loop && g > e.duration + e.start) return (0, n.jsx)("img", {
                                     src: c.RESET,
-                                    alt: O
+                                    alt: F
                                 }, e.src + u);
-                                if (A.animationType === f.AnimationTypes.PERSISTENT && !M && null != r && y >= C && B(!0), e.loop && void 0 !== e.loopDelay && e.loopDelay > 0) {
+                                if (p.animationType === f.AnimationTypes.PERSISTENT && !M && null != r && g >= C && b(!0), e.loop && void 0 !== e.loopDelay && e.loopDelay > 0) {
                                     let t = e.duration + e.loopDelay,
-                                        o = Math.floor((y - e.start) / t);
-                                    if (y - e.start - o * t > e.duration) return A.animationType === f.AnimationTypes.INTERMITTENT && !M && null != r && o >= r && B(!0), (0, n.jsx)("img", {
+                                        o = Math.floor((g - e.start) / t);
+                                    if (g - e.start - o * t > e.duration) return p.animationType === f.AnimationTypes.INTERMITTENT && !M && null != r && o >= r && b(!0), (0, n.jsx)("img", {
                                         src: c.RESET,
-                                        alt: O
+                                        alt: F
                                     }, e.src + u)
                                 }
                                 return (0, n.jsx)("img", {
-                                    src: null != p ? "".concat(e.src, "?query=").concat(p) : e.src,
-                                    className: R.effect,
+                                    src: null != R ? "".concat(e.src, "?query=").concat(R) : e.src,
+                                    className: m.effect,
                                     style: {
                                         top: (null !== (T = null === (o = e.position) || void 0 === o ? void 0 : o.y) && void 0 !== T ? T : 0) - t,
-                                        left: null !== (m = null === (l = e.position) || void 0 === l ? void 0 : l.x) && void 0 !== m ? m : 0
+                                        left: null !== (A = null === (l = e.position) || void 0 === l ? void 0 : l.x) && void 0 !== A ? A : 0
                                     },
-                                    alt: O
+                                    alt: F
                                 }, e.src + u)
                             })
                         })
@@ -401,21 +444,21 @@
                         bannerAdjustment: u = 0,
                         noBorderRadius: o,
                         isHovering: i = !1,
-                        useOpacityOnHover: s = !0
+                        useOpacityOnHover: a = !0
                     } = e, {
-                        reducedMotionSrc: a,
+                        reducedMotionSrc: s,
                         thumbnailPreviewSrc: c,
                         accessibilityLabel: f
                     } = t;
                     return (0, n.jsx)("div", {
-                        className: l(R.profileEffects, {
-                            [R.hovered]: i && s
+                        className: l(m.profileEffects, {
+                            [m.hovered]: i && a
                         }),
                         children: (0, n.jsx)("div", {
-                            className: o ? R.innerNoRadius : R.inner,
+                            className: o ? m.innerNoRadius : m.inner,
                             children: (0, n.jsx)("img", {
-                                src: r && !i ? c : a,
-                                className: R.effect,
+                                src: r && !i ? c : s,
+                                className: m.effect,
                                 style: {
                                     top: 0 - u
                                 },
@@ -425,12 +468,12 @@
                     })
                 };
             var I = e => {
-                let t = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()),
-                    r = (0, i.useStateFromStores)([s.default], () => s.default.useReducedMotion),
+                let t = (0, i.useStateFromStores)([s.default], () => s.default.isFocused()),
+                    r = (0, i.useStateFromStores)([a.default], () => a.default.useReducedMotion),
                     [o, l] = u.useState(!1),
                     {
                         preset: c
-                    } = (0, p.default)(e.profileEffectId, () => l(!1));
+                    } = (0, R.default)(e.profileEffectId, () => l(!1));
                 return null != c && (t || e.shopPreview || c.config.animationType !== f.AnimationTypes.INTERMITTENT) ? !t && e.shopPreview || !t && c.config.animationType === f.AnimationTypes.PERSISTENT || r || !1 === e.autoPlay && !1 === e.isHovering ? (0, n.jsx)(v, {
                     useThumbnail: e.useThumbnail,
                     config: c.config,
@@ -438,7 +481,7 @@
                     noBorderRadius: e.noBorderRadius,
                     isHovering: e.isHovering,
                     useOpacityOnHover: e.useOpacityOnHover
-                }) : o ? (0, n.jsx)(A, {
+                }) : o ? (0, n.jsx)(p, {
                     profileEffectConfig: c.config,
                     ...e
                 }) : (0, n.jsx)(T.default, {
@@ -520,13 +563,13 @@
                         {
                             id: l,
                             preset: i,
-                            increment: s,
-                            decrement: a
+                            increment: a,
+                            decrement: s
                         } = (0, o.default)(e);
                     return n.useEffect(() => {
                         if (!r) return;
                         let e = e => {
-                            "ArrowUp" === e.key && (s(), e.preventDefault()), "ArrowDown" === e.key && (a(), e.preventDefault()), "r" === e.key && (null == t || t(), e.preventDefault())
+                            "ArrowUp" === e.key && (a(), e.preventDefault()), "ArrowDown" === e.key && (s(), e.preventDefault()), "r" === e.key && (null == t || t(), e.preventDefault())
                         };
                         return window.addEventListener("keydown", e), () => {
                             window.removeEventListener("keydown", e)
@@ -547,13 +590,13 @@
                     return T
                 },
                 getValueInColorGradientByPercentage: function() {
-                    return m
+                    return A
                 },
                 useAvatarBorderColor: function() {
-                    return R
+                    return m
                 },
                 calculateButtonColor: function() {
-                    return A
+                    return p
                 },
                 useMessageInputBorderColor: function() {
                     return v
@@ -567,14 +610,14 @@
                 o = r("509043"),
                 l = r("65597"),
                 i = r("669491"),
-                s = r("819855"),
-                a = r("206230"),
+                a = r("819855"),
+                s = r("206230"),
                 c = r("449918"),
                 f = r("172182"),
                 d = r("49111");
 
             function E(e) {
-                let t = (0, l.default)([a.default], () => a.default.saturation);
+                let t = (0, l.default)([s.default], () => s.default.saturation);
                 return (0, n.useMemo)(() => null == e ? null : {
                     overlaySyncedWithUserTheme: i.default.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME.resolve({
                         theme: e,
@@ -622,13 +665,13 @@
                 return t > .5 ? d.ThemeTypes.DARK : d.ThemeTypes.LIGHT
             }
 
-            function m(e, t, r) {
+            function A(e, t, r) {
                 let n = r / 100,
                     u = 1 - n;
                 return [Math.round(e[0] * u + t[0] * n), Math.round(e[1] * u + t[1] * n), Math.round(e[2] * u + t[2] * n)]
             }
 
-            function p(e, t) {
+            function R(e, t) {
                 let r = (0, o.int2rgbArray)(e);
                 if (null == t) return 0;
                 let n = f.default.parseString(t);
@@ -636,30 +679,30 @@
                 let u = [n.red, n.green, n.blue],
                     l = [r[0], r[1], r[2]],
                     i = n.alpha,
-                    [s, a, c] = u.map((e, t) => Math.floor(i * e + (1 - i) * l[t]));
-                return (0, o.rgb2int)("rgba(".concat(s, ", ").concat(a, ", ").concat(c, ")"))
+                    [a, s, c] = u.map((e, t) => Math.floor(i * e + (1 - i) * l[t]));
+                return (0, o.rgb2int)("rgba(".concat(a, ", ").concat(s, ", ").concat(c, ")"))
             }
 
-            function R(e, t, r) {
+            function m(e, t, r) {
                 let n = E(e);
-                return null == n || null == t ? null : p(t, r ? n.overlaySyncedWithUserTheme : n.overlay)
+                return null == n || null == t ? null : R(t, r ? n.overlaySyncedWithUserTheme : n.overlay)
             }
-            let A = (0, u.memoize)(e => {
-                let t = (0, s.getContrastingColor)(e, {
+            let p = (0, u.memoize)(e => {
+                let t = (0, a.getContrastingColor)(e, {
                     base: "#ffffff",
-                    contrastRatio: s.WCAGContrastRatios.HighContrastText
+                    contrastRatio: a.WCAGContrastRatios.HighContrastText
                 });
                 return (0, o.hex2int)(t)
             }, e => e);
 
             function v(e, t) {
                 let r = E(e);
-                return null != r && null != t ? p(t, null == r ? void 0 : r.messageInputBorder) : null
+                return null != r && null != t ? R(t, null == r ? void 0 : r.messageInputBorder) : null
             }
 
             function I(e, t) {
                 let r = (0, c.useColorValue)(d.Color.WHITE_500).hex;
-                return (0, s.isThemeDark)(e) ? (0, o.hex2int)(r) : null != t ? A(t) : null
+                return (0, a.isThemeDark)(e) ? (0, o.hex2int)(r) : null != t ? p(t) : null
             }
         },
         635058: function(e, t, r) {
@@ -673,4 +716,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41748.000168996895b71d2d27.js.map
+//# sourceMappingURL=30791.88cd29e261bf94b04423.js.map
