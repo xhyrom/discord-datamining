@@ -5324,7 +5324,7 @@
   "STREAM_PREMIUM_UPSELL_BANNER_PRESET_DOCUMENTS": "\"Level up your streaming.\"",
   "STREAM_PREMIUM_UPSELL_BANNER_CTA": "\"Get Nitro\"",
   "STREAM_PREMIUM_UPSELL_BODY": "\"Stream HD resolutions at 60 frames per second, get access to chat perks, [and more with Discord Nitro!](onPressMore)\"",
-  "STREAM_PREMIUM_UPSELL_BODY_V2": "\"Unlock up to 4k/60fps streaming, custom emojis everywhere, animated avatar, and more with Nitro.\"",
+  "STREAM_PREMIUM_UPSELL_BODY_V2": "\"Unlock up to 4k/60fps streaming, custom emoji everywhere, animated avatar, and more with Nitro.\"",
   "STREAM_PREMIUM_UPSELL_BODY_NO_CTA": "\"Stream HD resolutions at 60 frames per second, get access to chat perks, and more with Discord Nitro!\"",
   "STREAM_PREMIUM_UPSELL_WITH_ACTION": "\"Lift off with Discord Nitro to stream HD resolutions at 60 frames per second. [Learn more](onClick).\"",
   "STREAM_PREMIUM_UPSELL_CTA": "\"Subscribe\"",
