@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67615"], {
+    ["84981"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -37834,17 +37834,14 @@
                 GuildFeedRenderSelectorExperiment: function() {
                     return g
                 },
-                GuildFeedRefreshButtonExperiment: function() {
+                GuildHomeBadgeExperiment: function() {
                     return m
                 },
-                GuildHomeBadgeExperiment: function() {
+                GuildHomeFeedbackExperiment: function() {
                     return h
                 },
-                GuildHomeFeedbackExperiment: function() {
-                    return v
-                },
                 GuildHomeDeprecationExperiment: function() {
-                    return E
+                    return v
                 }
             });
             var s = n("446674"),
@@ -37893,21 +37890,6 @@
                     }]
                 }),
                 m = (0, r.createExperiment)({
-                    kind: "user",
-                    id: "2022-06_home_refresh_button",
-                    label: "Show refresh button",
-                    defaultConfig: {
-                        showRefreshButton: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Yes button",
-                        config: {
-                            showRefreshButton: !0
-                        }
-                    }]
-                }),
-                h = (0, r.createExperiment)({
                     kind: "user",
                     id: "2022-08_home_badge",
                     label: "Show badge on home channel",
@@ -37987,7 +37969,7 @@
                     }
                 }]
             });
-            let v = (0, r.createExperiment)({
+            let h = (0, r.createExperiment)({
                     kind: "user",
                     id: "2022-12_home_feedback_ux",
                     label: "Show post feedback for home",
@@ -38002,7 +37984,7 @@
                         }
                     }]
                 }),
-                E = (0, r.createExperiment)({
+                v = (0, r.createExperiment)({
                     kind: "guild",
                     id: "2023-03_home_deprecation",
                     label: "Home Deprecation",
@@ -61855,4 +61837,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.79e2e8583edb1b57f975.js.map
+//# sourceMappingURL=84981.15e26a4e259b51bddaa2.js.map

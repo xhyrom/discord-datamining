@@ -19591,12 +19591,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -93475,12 +93475,10 @@ html .tabBadge__002b3 {
 }
 
 .theme-dark .learnMoreCTA__7d633 {
-    border: #c269c3 solid;
     color: #c269c3
 }
 
 .theme-light .learnMoreCTA__7d633 {
-    border: #b64ab7 solid;
     color: #b64ab7
 }
 
@@ -128114,4 +128112,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.0634b3f1ee1b11a59f4a.css.map*/
+/*# sourceMappingURL=app.7ecb4dbb0170d28960c6.css.map*/
