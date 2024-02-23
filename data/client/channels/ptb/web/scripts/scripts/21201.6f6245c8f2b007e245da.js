@@ -22410,80 +22410,6 @@
                 return Promise.resolve(e)
             }
         },
-        650033: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return l
-                }
-            }), n("222007");
-            var i = n("446674"),
-                r = n("913144");
-            let s = {
-                    disable_alpha_voice_panel: "Disable new Voice Panel UI: Currently the new voice ui is defaulted ON for staff.  It's not feature complete so if there's something you are missing, or you find a problem, you can disable it here.",
-                    highlight_experimental_icons: "Highlight experimental icons",
-                    enable_last_channel: "Enable launch into last channel",
-                    enable_recently_active: "Enable recently active channels",
-                    happening_main_tab: "Enable Happening tab containing summaries",
-                    navigate_to_last_channel: "Navigate to last channel when selecting a guild.",
-                    new_theme_settings: "Enable the new theme settings, with Darker and Lights Out themes",
-                    enable_recently_active_summaries: "Enable summaries in recently active view",
-                    channel_list_layout_animations: "Enable experimental channel list layout animations",
-                    message_preview_animations: "Enable message preview animations",
-                    recent_channels_throttle: "Throttle recent channels reordering",
-                    enable_server_discovery: "Enable Server Discovery Search on mobile",
-                    messages_badge_num_channels: "Messages tab badge counts # of unread channels instead of # of unread messages",
-                    redesign_individual_feature_you_tab: "Enable You tab in the old UI",
-                    disable_theme_key: "Disable reloading the entire app when the theme changes",
-                    theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
-                    cozy_header: "Cozy header",
-                    mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls",
-                    enable_new_search_filters: "Enables new search filters behavior",
-                    nav_experiment_server_drawer_enabled: "[NavI] Enable expandable server drawer",
-                    nav_experiment_server_drawer_no_activity: "[NavI] Hide activity in server drawer",
-                    nav_experiment_you_bar_grounded: "[NavI] Grounded you bar",
-                    nav_experiment_you_bar_large_buttons: "[NavI] Small buttons in you bar",
-                    force_channel_list_v2: "Force channel list V2",
-                    render_native_message_previews: "Render native message previews in search"
-                },
-                a = {};
-            class o extends i.default.DeviceSettingsStore {
-                getUserAgnosticState() {
-                    return {
-                        toggleStates: a
-                    }
-                }
-                initialize(e) {
-                    for (var t in s) {
-                        var n, i;
-                        let r = null !== (i = null == e ? void 0 : null === (n = e.toggleStates) || void 0 === n ? void 0 : n[t]) && void 0 !== i && i;
-                        a[t] = r
-                    }
-                }
-                get(e) {
-                    var t;
-                    return null !== (t = a[e]) && void 0 !== t && t
-                }
-                set(e, t) {
-                    return a[e] = t, t
-                }
-                all() {
-                    return a
-                }
-                allWithDescriptions() {
-                    return Object.entries(a).map(e => {
-                        let [t, n] = e;
-                        return [t, n, s[t]]
-                    })
-                }
-            }
-            o.displayName = "DevToolsDesignTogglesStore", o.persistKey = "DevToolsDesignTogglesStore";
-            var l = new o(r.default, {
-                DEV_TOOLS_DESIGN_TOGGLE_SET: function(e) {
-                    a[e.toggle] = e.value
-                }
-            })
-        },
         916523: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -31519,37 +31445,36 @@
             "use strict";
             n.r(t), n.d(t, {
                 getChannelIdForGuildTransition: function() {
-                    return p
+                    return E
                 },
                 transitionToGuild: function() {
-                    return h
+                    return p
                 }
             });
-            var i = n("650033"),
-                r = n("471706"),
-                s = n("290886"),
-                a = n("21121"),
-                o = n("934306"),
-                l = n("42203"),
-                u = n("923959"),
-                c = n("18494"),
-                d = n("393414"),
-                f = n("49111"),
-                E = n("724210");
+            var i = n("471706"),
+                r = n("290886"),
+                s = n("21121"),
+                a = n("934306"),
+                o = n("42203"),
+                l = n("923959"),
+                u = n("18494"),
+                c = n("393414"),
+                d = n("49111"),
+                f = n("724210");
 
-            function p(e) {
+            function E(e) {
                 var t;
-                let n = c.default.getChannelId(e),
-                    i = null === (t = u.default.getDefaultChannel(e)) || void 0 === t ? void 0 : t.id;
-                if (n === E.StaticChannelRoute.GUILD_ONBOARDING && !r.default.shouldShowOnboarding(e) || n === E.StaticChannelRoute.GUILD_HOME && !(0, s.canSeeOnboardingHome)(e)) return i;
-                let a = l.default.getChannel(n);
-                return null == a || a.isGuildVocal() ? i : n
+                let n = u.default.getChannelId(e),
+                    s = null === (t = l.default.getDefaultChannel(e)) || void 0 === t ? void 0 : t.id;
+                if (n === f.StaticChannelRoute.GUILD_ONBOARDING && !i.default.shouldShowOnboarding(e) || n === f.StaticChannelRoute.GUILD_HOME && !(0, r.canSeeOnboardingHome)(e)) return s;
+                let a = o.default.getChannel(n);
+                return null == a || a.isGuildVocal() ? s : n
             }
 
-            function h(e, t) {
-                let n = !(0, a.isInMainTabsExperiment)() || (0, o.shouldHandleNewPanelsRoute)(e) || i.default.get("navigate_to_last_channel") ? p(e) : void 0;
-                (0, d.transitionTo)(f.Routes.CHANNEL(e, n), {
-                    navigationReplace: (0, o.shouldHandleNewPanelsRoute)(e) || i.default.get("navigate_to_last_channel"),
+            function p(e, t) {
+                let n = !(0, s.isInMainTabsExperiment)() || (0, a.shouldHandleNewPanelsRoute)(e) ? E(e) : void 0;
+                (0, c.transitionTo)(d.Routes.CHANNEL(e, n), {
+                    navigationReplace: (0, a.shouldHandleNewPanelsRoute)(e),
                     ...t
                 })
             }
@@ -50139,7 +50064,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "268429"
+                                build_number: "268435"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64191,4 +64116,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.dceac42435d4e7764c24.js.map
+//# sourceMappingURL=21201.6f6245c8f2b007e245da.js.map
