@@ -652,24 +652,25 @@
                     }
                 }
             }
-            async function E(e, t) {
-                let n = a.default.isClaimingRewardCode(e);
-                if (!n) {
+            async function E(e, t, n) {
+                let o = a.default.isClaimingRewardCode(e);
+                if (!o) {
                     i.default.dispatch({
                         type: "QUESTS_CLAIM_REWARD_CODE_BEGIN",
                         questId: e
                     });
                     try {
-                        let n = await s.default.post({
+                        let r = await s.default.post({
                             url: u.Endpoints.QUESTS_REWARD_CODE(e),
                             body: {
-                                platform: t
+                                platform: t,
+                                location: n
                             }
                         });
                         i.default.dispatch({
                             type: "QUESTS_CLAIM_REWARD_CODE_SUCCESS",
                             questId: e,
-                            rewardCode: (0, l.questsRewardCodeFromServer)(n.body)
+                            rewardCode: (0, l.questsRewardCodeFromServer)(r.body)
                         })
                     } catch (t) {
                         throw i.default.dispatch({
@@ -1421,4 +1422,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65656.47071d0310cfac717709.js.map
+//# sourceMappingURL=65656.809de4d22a70afd0d874.js.map

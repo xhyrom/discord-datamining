@@ -9373,6 +9373,7 @@
                 GO_LIVE_MODAL_APPLICATION_FORM_TITLE: "What you're streaming",
                 GO_LIVE_MODAL_SELECT_CHANNEL_FORM_TITLE: "Select a voice channel",
                 GO_LIVE_MODAL_CURRENT_CHANNEL_FORM_TITLE: "Streaming channel",
+                GO_LIVE_MODAL_HARDWARE_WARNING_INFOBOX: "Discord relies on the video hardware encoder of your graphics card for optimal system performance and visual quality. [Enable Hardware Acceleration](onClick) in your settings for the best experience.",
                 GO_LIVE_MODAL_CTA: "Go Live",
                 GO_LIVE_MODAL_OVERFLOW_TWO_USERS: "!!{nickname0}!! and !!{nickname1}!!",
                 GO_LIVE_MODAL_OVERFLOW_THREE_USERS: "!!{nickname0}!!, !!{nickname1}!!, and !!{nickname2}!!",
@@ -15119,6 +15120,7 @@
                 COLLECTIBLES_PURCHASE: "Buy for {price}",
                 COLLECTIBLES_BUY_DECORATION: "Buy Decoration",
                 COLLECTIBLES_ADD_TO_YOUR_COLLECTION: "Add to your collection",
+                COLLECTIBLES_CLAIM: "Claim",
                 COLLECTIBLES_COLLECTING: "Collecting",
                 COLLECTIBLES_COLLECTING_FINISHED: "Collecting finished",
                 COLLECTIBLES_NITRO_EXCLUSIVE: "Nitro exclusive",
@@ -16493,6 +16495,7 @@
                 INAPPROPRIATE_CONVERSATION_ACTION_REPORTED: "Reported",
                 INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_CTL: "Contact Crisis Text Line",
                 INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_NOFILTR: "Contact NoFiltr",
+                INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP: "This conversation may not be safe.",
                 SAFETY_ALERTS_SETTINGS_HEADER: "Safety Alerts",
                 SAFETY_ALERTS_SETTING_TITLE: "Show alerts in direct messages",
                 SAFETY_ALERTS_SETTING_DESCRIPTION: "Display an alert when a possible risk to your safety is detected. [Learn more about safety alerts]({learnMoreLink})",
@@ -16636,12 +16639,14 @@
                 CREATE_POLL_LAYOUTS_RADIOGROUP_ARIA_LABEL: "Poll answer style",
                 CREATE_POLL_LAYOUT_DEFAULT: "Text answers with optional media",
                 CREATE_POLL_LAYOUT_IMAGE: "Media only answers",
+                CREATE_POLL_ANSWERS_FIELDSET_LABEL: "Answers",
                 CREATE_POLL_ADD_IMAGE_ARIA: "Add media, answer {answerNumber}",
                 CREATE_POLL_EDIT_IMAGE_ARIA: "Update media, {imageName}, answer {answerNumber}",
                 CREATE_POLL_ANSWER_INPUT_LABEL: "Answer {answerNumber}",
                 CREATE_POLL_ANSWER_PLACEHOLDER: "Type your answer",
                 CREATE_POLL_ADD_ANSWER_BUTTON: "Add another answer",
                 CREATE_POLL_TEXT_PRECEDING_DURATION_SELECTION: "Poll will be live for",
+                CREATE_POLL_DURATION_LABEL: "Duration",
                 CREATE_POLL_DURATION_OPTION_LABEL_1_HOUR: "1 hour",
                 CREATE_POLL_DURATION_OPTION_LABEL_24_HOURS: "24 hours",
                 CREATE_POLL_DURATION_OPTION_LABEL_3_DAYS: "3 days",
@@ -18280,7 +18285,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268356", ", Version Hash: ").concat("fa3dc275609f3539788f84f0bdd83ff27feb48fc")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268520", ", Version Hash: ").concat("c6a98c1a1a885b545a692dfe5a59f932af0d4e0f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20619,8 +20624,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "268356", "268356"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268356")), _ = 0), _
+                let _ = parseInt((e = "268520", "268520"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268520")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25334,8 +25339,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708641291694",
-                                    build_number: "268356"
+                                    built_at: "1708710636028",
+                                    build_number: "268520"
                                 }
                             },
                             retries: 1
@@ -26360,7 +26365,9 @@
                 a = null;
 
             function I(e) {
-                e > 0 && r >= i || e < 0 && r <= i ? (clearInterval(a), 0 === i && n.stop()) : (r += e, n.volume = r)
+                let _ = Math.round(100 * i),
+                    E = Math.round(100 * r);
+                e > 0 && E >= _ || e < 0 && E <= _ ? (clearInterval(a), 0 === _ && n.stop()) : (E += Math.round(100 * e), r = E / 100, n.volume = r)
             }
 
             function s() {
@@ -36590,4 +36597,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.c845d338cd2e550d3198.js.map
+//# sourceMappingURL=77761.0f91793af0e6b3c4f3df.js.map
