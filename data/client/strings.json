@@ -16416,7 +16416,7 @@
   "SAFETY_TOOLS_ACTION_SHEET_BREAK_BUTTON": "\"Relax\"",
   "SAFETY_TOOLS_ACTION_SHEET_SAFETY_TIPS_TITLE": "\"Safety tips\"",
   "SAFETY_TOOLS_ACTION_SHEET_ABOUT_TITLE": "\"About safety alerts\"",
-  "SAFETY_TOOLS_ACTION_SHEET_ABOUT_DESCRIPTION": "\"We take teen safety seriously at Discord. When we detect a possible safety risk in a conversation, we'll let you know. [Learn more about safety alerts]({learnMoreLink})\"",
+  "SAFETY_TOOLS_ACTION_SHEET_ABOUT_DESCRIPTION": "\"We take teen safety seriously at Discord. When we detect a possible safety risk in a conversation, we'll let you know. [Learn more about safety alerts.]({learnMoreLink})\"",
   "SAFETY_TOOLS_ACTION_SHEET_ABOUT_GO_TO_SETTINGS": "\"Go to settings\"",
   "SAFETY_TOOLS_ACTION_SHEET_ABOUT_DISMISS": "\"Dismiss\"",
   "STRANGER_DANGER_BANNER_HEADER": "\"Unwanted message?\"",
