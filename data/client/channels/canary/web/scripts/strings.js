@@ -9623,6 +9623,7 @@
                 BILLING_ADDRESS_ACTION: "Add billing address",
                 DEFAULT_CUSTOM_GIFT_MESSAGE: "You’re awesome, just like this gift. Enjoy!",
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_HEADER: "Gift {username} a new Nitro membership",
+                MOBILE_CUSTOM_GIFT_PLAN_SELECTION_HEADER_NO_USERNAME: "Gift a new Nitro membership",
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_BODY: "Warning: gift may cause uncontrollable happiness!",
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CHOOSE_MONTHLY_OR_YEARLY_V2: "Choose from {monthlyPrice}/month or {yearlyPrice}/year",
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CARD_HEADER: "Your recipient will receive:",
@@ -16752,6 +16753,7 @@
                 QUESTS_DISCLOSURE_ACTIVITY: "Activity: Relevant gaming",
                 QUESTS_EMBED_INVALID_HEADING: "This was a Quest but...",
                 QUESTS_EMBED_INVALID_BODY: "Something went wrong here. Check the Gift Inventory for more available Quests!",
+                QUESTS_PROGRESS_TRACKING_FAILURE_NOTICE: "There's an issue tracking your quest progress.",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -18285,7 +18287,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268626", ", Version Hash: ").concat("8ab40129bbde0bf7446183ccadbf6e609ea51ed7")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268632", ", Version Hash: ").concat("8ff90f95820d1cf78e00837f7469c316a89effb3")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20624,8 +20626,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "268626", "268626"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268626")), _ = 0), _
+                let _ = parseInt((e = "268632", "268632"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268632")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25339,8 +25341,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708721997426",
-                                    build_number: "268626"
+                                    built_at: "1708722496199",
+                                    build_number: "268632"
                                 }
                             },
                             retries: 1
@@ -36605,4 +36607,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.44b858a4c344d4d56609.js.map
+//# sourceMappingURL=77761.22ea7302001a78d5fa91.js.map
