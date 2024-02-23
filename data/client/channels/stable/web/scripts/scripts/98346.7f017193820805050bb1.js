@@ -1985,7 +1985,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-c6a98c1a1a885b545a692dfe5a59f932af0d4e0f",
+                    release: "discord_web-674960b3f82ecce70ccee19e690008c1a586778e",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2003,7 +2003,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "268520", "268520")), a.setTag("builtAt", String("1708710636028"));
+                }), a.setTag("buildNumber", (e = "268600", "268600")), a.setTag("builtAt", String("1708719915618"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -3833,10 +3833,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 PictureInPictureWindow: function() {
-                    return p
+                    return h
                 },
                 default: function() {
-                    return E
+                    return p
                 }
             }), n("222007");
             var a = n("37983"),
@@ -3847,14 +3847,13 @@
                 u = n("773336"),
                 o = n("325753"),
                 d = n("49111"),
-                c = n("578549"),
-                f = n("678016");
-            let h = {
+                c = n("578549");
+            let f = {
                 top: 80,
                 bottom: 132,
                 left: 80
             };
-            class p extends r.PureComponent {
+            class h extends r.PureComponent {
                 componentDidMount() {
                     this.setPosition(this.props.position)
                 }
@@ -4026,49 +4025,47 @@
                     }
                 }
             }
-            p.defaultProps = {
+            h.defaultProps = {
                 hidden: !1,
                 roundCorners: !0
             };
-            var E = r.memo(e => {
+            var p = r.memo(e => {
                 let {
                     selectedPIPWindow: t,
                     pipWindows: n,
                     maxX: r,
                     maxY: s,
-                    onWindowMove: l,
-                    dockedRect: u,
-                    pictureInPictureComponents: o,
-                    appContext: E,
-                    roundCorners: C
+                    onWindowMove: i,
+                    dockedRect: l,
+                    pictureInPictureComponents: u,
+                    appContext: o,
+                    roundCorners: p
                 } = e;
                 return (0, a.jsx)("div", {
                     className: c.pictureInPicture,
                     children: (() => {
                         if (null == t) return null;
                         let e = n.map(e => {
-                                if (e.id !== t.id && e.component !== d.PictureInPictureComponents.EMBED_IFRAME) return null;
-                                let n = "string" == typeof e.component ? o[e.component] : e.component;
-                                return (0, a.jsx)(n, {
-                                    ...e.props
-                                }, "pipWindow-".concat(e.id))
-                            }),
-                            m = e.length > 1 ? c.noBoxShadow : {};
-                        return (0, a.jsx)(p, {
-                            className: i(c.pictureInPictureWindowOverflow, f.elevationHigh, m),
-                            appContext: E,
+                            if (e.id !== t.id && e.component !== d.PictureInPictureComponents.EMBED_IFRAME) return null;
+                            let n = "string" == typeof e.component ? u[e.component] : e.component;
+                            return (0, a.jsx)(n, {
+                                ...e.props
+                            }, "pipWindow-".concat(e.id))
+                        });
+                        return (0, a.jsx)(h, {
+                            appContext: o,
                             position: t.position,
                             id: t.id,
                             hidden: t.hidden,
-                            onMove: l,
+                            onMove: i,
                             maxX: r,
                             maxY: s,
-                            dockedRect: u,
-                            edgeOffsetTop: h.top,
-                            edgeOffsetBottom: h.bottom,
-                            edgeOffsetLeft: h.left,
-                            edgeOffsetRight: h.top,
-                            roundCorners: C,
+                            dockedRect: l,
+                            edgeOffsetTop: f.top,
+                            edgeOffsetBottom: f.bottom,
+                            edgeOffsetLeft: f.left,
+                            edgeOffsetRight: f.top,
+                            roundCorners: p,
                             children: e
                         })
                     })()
@@ -4676,4 +4673,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98346.82c34654f9baf0d6feb0.js.map
+//# sourceMappingURL=98346.7f017193820805050bb1.js.map

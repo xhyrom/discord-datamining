@@ -2365,10 +2365,8 @@
             e.exports = {
                 borderRadius: "borderRadius__3965c",
                 hidden: "hidden__576d2",
-                noBoxShadow: "noBoxShadow_d45938",
                 pictureInPicture: "pictureInPicture__48d51",
-                pictureInPictureWindow: "pictureInPictureWindow_dc49a8",
-                pictureInPictureWindowOverflow: "pictureInPictureWindowOverflow__3abe4"
+                pictureInPictureWindow: "pictureInPictureWindow_dc49a8"
             }
         },
         92796: function(e, t, a) {
@@ -4272,19 +4270,39 @@
         370621: function(e, t, a) {
             "use strict";
             e.exports = {
-                cardBenefit: "cardBenefit_ed801c",
-                cardBenefitDesc: "cardBenefitDesc__61917",
-                cardBenefitIcon: "cardBenefitIcon_ef7acc",
-                cardBenefitName: "cardBenefitName__3fac8",
-                cardBenefitTitle: "cardBenefitTitle__98537",
-                cardBenefitsWrapper: "cardBenefitsWrapper_d04abe",
                 cardHeaderImg: "cardHeaderImg_f6c932",
                 cardPrice: "cardPrice__92dbb",
-                cardPriceLabel: "cardPriceLabel_eb2eee",
-                cardTitleDesc: "cardTitleDesc__59fab",
-                cardTitleName: "cardTitleName__0e039",
-                cardTitleWrapper: "cardTitleWrapper_c73f42",
+                description: "description_f818e8",
+                details: "details_f03d10",
+                footer: "footer__13718",
                 productCard: "productCard_a1742a"
+            }
+        },
+        145852: function(e, t, a) {
+            "use strict";
+            e.exports = {
+                benefit: "benefit__6c606",
+                button: "button__4efed",
+                container: "container__34d9d",
+                details: "details_bebd21",
+                list: "list__42144"
+            }
+        },
+        484687: function(e, t, a) {
+            "use strict";
+            e.exports = {
+                benefits: "benefits_f2b1cc",
+                body: "body__1e5ed",
+                card: "card__3135c",
+                container: "container_a98e7e",
+                description: "description__6afbb",
+                image: "image__2e834"
+            }
+        },
+        627327: function(e, t, a) {
+            "use strict";
+            e.exports = {
+                container: "container_e318fa"
             }
         },
         76050: function(e, t, a) {

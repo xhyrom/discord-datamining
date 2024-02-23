@@ -59,8 +59,10 @@
                     IOS_APP_PREVIEW_DESCRIPTION: "Your place to talk with communities and friends."
                 },
                 Storefront: {
-                    USER_SUBSCRIPTION: "Personal subscription",
-                    SERVER_SUBSCRIPTION: "Server subscription"
+                    BENEFITS_TITLE: "Exclusive to this tier",
+                    SEE_FULL_BENEFITS: "See full benefits",
+                    SERVER_SUBSCRIPTION: "Server subscription",
+                    USER_SUBSCRIPTION: "Personal subscription"
                 }
             }
         },
@@ -1927,4 +1929,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55348.e9a1f20801bc6d28d98e.js.map
+//# sourceMappingURL=55348.b3c1f81f4ea197df1798.js.map

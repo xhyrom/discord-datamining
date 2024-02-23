@@ -37834,17 +37834,14 @@
                 GuildFeedRenderSelectorExperiment: function() {
                     return g
                 },
-                GuildFeedRefreshButtonExperiment: function() {
+                GuildHomeBadgeExperiment: function() {
                     return m
                 },
-                GuildHomeBadgeExperiment: function() {
+                GuildHomeFeedbackExperiment: function() {
                     return h
                 },
-                GuildHomeFeedbackExperiment: function() {
-                    return v
-                },
                 GuildHomeDeprecationExperiment: function() {
-                    return E
+                    return v
                 }
             });
             var s = n("446674"),
@@ -37893,21 +37890,6 @@
                     }]
                 }),
                 m = (0, r.createExperiment)({
-                    kind: "user",
-                    id: "2022-06_home_refresh_button",
-                    label: "Show refresh button",
-                    defaultConfig: {
-                        showRefreshButton: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Yes button",
-                        config: {
-                            showRefreshButton: !0
-                        }
-                    }]
-                }),
-                h = (0, r.createExperiment)({
                     kind: "user",
                     id: "2022-08_home_badge",
                     label: "Show badge on home channel",
@@ -37987,7 +37969,7 @@
                     }
                 }]
             });
-            let v = (0, r.createExperiment)({
+            let h = (0, r.createExperiment)({
                     kind: "user",
                     id: "2022-12_home_feedback_ux",
                     label: "Show post feedback for home",
@@ -38002,7 +37984,7 @@
                         }
                     }]
                 }),
-                E = (0, r.createExperiment)({
+                v = (0, r.createExperiment)({
                     kind: "guild",
                     id: "2023-03_home_deprecation",
                     label: "Home Deprecation",
@@ -61855,4 +61837,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98239.b55615d373ae3732e784.js.map
+//# sourceMappingURL=98239.9cb590d0d5f18a0fd462.js.map
