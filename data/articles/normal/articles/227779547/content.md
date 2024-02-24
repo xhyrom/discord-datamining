@@ -1,7 +1,7 @@
 <p>Sometimes, that homework assignment needs your full attention, or maybe you're just casually hanging out chatting it up with friends. Luckily Discord has 4 separate online statuses that let you pick and choose how you appear to others and keep your focus intact in other places if you need it.</p>
 <h2><span class="wysiwyg-font-size-large">Manual Override</span></h2>
 <p><span class="wysiwyg-font-size-large wysiwyg-font-size-medium">To change your status, it's as simple as left-clicking your user avatar that you'll find in the lower-left corner of the client:</span></p>
-<p><img src="https://support.discord.com/hc/article_attachments/360058261331/Capture28.jpg" alt="Capture28.jpg"></p>
+<p><img src="https://support.discord.com/hc/article_attachments/360058261331" alt="Capture28.jpg"></p>
 <p> </p>
 <p><span class="wysiwyg-font-size-large wysiwyg-font-size-medium">You'll see the status-picker menu pop up. You've got four options:</span></p>
 <p> </p>
