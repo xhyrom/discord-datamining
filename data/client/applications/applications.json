@@ -68,6 +68,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "2dd794372c9fab97dbc2344ac2eaf06a7671a928a9245dc398ce82a1c60aecd3",
     "flags": 1179648,
     "max_participants": -1,
@@ -85,7 +88,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
@@ -95,7 +98,7 @@
           "label_until": null,
           "release_phase": "activities_team"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
@@ -122,6 +125,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "94db6083fb1d715424e3445c755bdf33abf94b2bf793f7393183c16b341d29ec",
     "flags": 1179648,
     "max_participants": -1,
@@ -139,12 +145,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -168,7 +174,7 @@
     "id": "1070087967294631976",
     "name": "Whiteboard",
     "icon": "9a04eab3b9f50302006577b769354520",
-    "description": "You can draw, write, and post GIFs in this collaborative whiteboard. It’s not just what you create, it’s the fun of creating it together!",
+    "description": "Draw, upload images, write, and use GIFs to create virtually anything in this collaborative whiteboard. Boards are saved, so come back any time. It’s not just what you create, it’s the fun of creating it together!",
     "summary": "",
     "type": null,
     "cover_image": "9a04eab3b9f50302006577b769354520",
@@ -177,6 +183,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "6f5e042d9c27b4e9f48db12fafc29886288b81012fbef0aa470d2b6106490ccb",
     "flags": 1179648,
     "max_participants": -1,
@@ -199,12 +208,12 @@
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
@@ -216,6 +225,7 @@
     },
     "tags": [
       "Collaborate",
+      "Productivity",
       "Whiteboard"
     ]
   },
@@ -249,17 +259,17 @@
       "free_period_starts_at": "2023-05-15T16:30:00+00:00",
       "free_period_ends_at": "2023-06-16T07:00:00+00:00",
       "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -304,7 +314,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
@@ -314,7 +324,7 @@
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
@@ -357,12 +367,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -395,6 +405,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "82c2ef51c10e534207dee215fd1cbffc13708f8245a2d5e1e3e233099b30403e",
     "flags": 1179648,
     "max_participants": 16,
@@ -412,7 +425,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -422,7 +435,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -451,6 +464,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "e2aaf50fbe2fd9d025ac669035f5efb89099931690fba9dc28efb7eaade7f96d",
     "flags": 1179648,
     "max_participants": -1,
@@ -468,17 +484,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -506,6 +522,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "864918885639ea54d153abdd48270f659456e02ca7cead6a512fe26e56002eeb",
     "flags": 1179648,
     "max_participants": 9,
@@ -562,6 +581,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "35334d24152b346fa751dafbbc4d3ac14f9b6ff9501c975c75fe3072e2c8226f",
     "flags": 1179648,
     "max_participants": 8,
@@ -584,12 +606,12 @@
           "label_until": "2024-03-01T00:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 2,
           "label_until": "2024-03-01T00:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 2,
           "label_until": "2024-03-01T00:00:00+00:00",
           "release_phase": "global_launch"
@@ -618,6 +640,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "f5b322fcb0baf39974eed3c04b81f590b9e584fbdf8d6189cfe07d19eaeb57f8",
     "flags": 1179648,
     "max_participants": -1,
@@ -635,12 +660,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -657,7 +682,8 @@
     },
     "tags": [
       "Board Game",
-      "Classic"
+      "Classic",
+      "Strategy"
     ]
   },
   {
@@ -673,6 +699,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "bc758e51403b1374ea262c8412b91bcdc53349a337037d10921cbf6c39bc696f",
     "flags": 1179648,
     "max_participants": -1,
@@ -695,12 +724,12 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -712,7 +741,8 @@
     },
     "tags": [
       "Board Game",
-      "Classic"
+      "Classic",
+      "Strategy"
     ]
   },
   {
@@ -728,6 +758,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "138631e02cf2de499ebfcba54a724ddeb99957274ee9a3db967376666cffdc5e",
     "flags": 1179648,
     "max_participants": 8,
@@ -750,12 +783,12 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -767,7 +800,8 @@
     },
     "tags": [
       "Card Game",
-      "Classic"
+      "Classic",
+      "Crazy Eights"
     ]
   },
   {
@@ -788,6 +822,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "850c5aa3928877c6cbcdae524d0fafd4a9b7fe013b1e7fe4eaf350d53853ac42",
     "flags": 1179656,
     "max_participants": 7,
@@ -844,6 +881,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "c282d4b2693092a1f657cc699ddbcc26b83b7d7a1bfd0eae1697583ee04e1bef",
     "flags": 1179648,
     "max_participants": 8,
@@ -861,17 +901,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -899,6 +939,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "31c42a3c9317409819db8c40cd0d6993d11b3f9c11abb2e3276c71efc02a3307",
     "flags": 1179648,
     "max_participants": 8,
@@ -1009,6 +1052,9 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "62c87eb718eb2c06232b2e7b1e14d8a63ca76add1a00c290e8e09669e5aed916",
     "flags": 1179648,
     "max_participants": 8,
@@ -1026,12 +1072,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1142,15 +1188,15 @@
           "label_until": null,
           "release_phase": "in_development"
         },
-        "web": {
-          "label_type": 1,
-          "label_until": "2023-12-14T08:00:00+00:00",
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
+        },
+        "web": {
+          "label_type": 1,
+          "label_until": "2023-12-14T08:00:00+00:00",
+          "release_phase": "global_launch"
         }
       },
       "shelf_rank": 7,
@@ -1175,6 +1221,9 @@
     "rpc_origins": [],
     "terms_of_service_url": "https://discord.com/terms",
     "privacy_policy_url": "https://discord.com/privacy",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "11f490f8f76ecb4e175ad82bce9c573889fbe9bc671e22ca8f8b950bb7f2a7bb",
     "developers": [
       {
@@ -1296,6 +1345,17 @@
     "flags": 0
   },
   {
+    "id": "1096190356233670716",
+    "name": "Collectibles",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "hook": true,
+    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
+    "flags": 0
+  },
+  {
     "id": "426537812993638400",
     "name": "Bloxlink",
     "icon": "746124a5a40305b92d6dc4e983fd1de2",
@@ -1336,8 +1396,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147483648"
     },
@@ -1390,8 +1450,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2415921154"
     },
@@ -1449,6 +1509,9 @@
     "terms_of_service_url": "https://captcha.bot/legal",
     "privacy_policy_url": "https://captcha.bot/legal",
     "custom_install_url": "https://captcha.bot/invite",
+    "integration_types_config": {
+      "0": null
+    },
     "verify_key": "4ea8d61df50440e5963c355534243a64dd728a034516af5b38d2fc27cf1d4e73",
     "flags": 10797056,
     "tags": [
@@ -1501,17 +1564,6 @@
     "flags": 0
   },
   {
-    "id": "1096190356233670716",
-    "name": "Collectibles",
-    "icon": null,
-    "description": "",
-    "summary": "",
-    "type": null,
-    "hook": true,
-    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
-    "flags": 0
-  },
-  {
     "id": "356869127241072640",
     "name": "League of Legends",
     "icon": "5a15a24a3931880801709a32accd0a1d",
@@ -1528,7 +1580,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -1538,17 +1595,12 @@
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       }
     ],
