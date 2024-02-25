@@ -13419,6 +13419,7 @@
   "GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_GRANTED_BY": "\"(Risky) Granted By\"",
   "GUILD_MEMBER_MOD_VIEW_PERMISSION_GRANTED_BY_ARIA_LABEL": "\"Permission Granted By These Roles\"",
   "GUILD_MEMBER_MOD_VIEW_HIGHEST_ROLE": "\"Highest Role\"",
+  "GUILD_MEMBER_MOD_VIEW_TITLE": "\"Mod View\"",
   "GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE": "\"Show Members In Channel List\"",
   "GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION": "\"Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.\"",
   "GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED": "\"The members page has been moved to the server channel list. [Go There](onClick)\"",
