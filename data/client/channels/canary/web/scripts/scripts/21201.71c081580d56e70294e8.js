@@ -19058,79 +19058,79 @@
             "use strict";
             n.r(t), n.d(t, {
                 ACTIVITY_INVITE_COVER_IMAGE_SIZE: function() {
-                    return O
+                    return R
                 },
                 validStreamURL: function() {
-                    return D
+                    return N
                 },
                 XBOX_ACTIVITY_APPLICATION_ID: function() {
-                    return y
+                    return O
                 },
                 END_GAME_APPLICATION_ID: function() {
-                    return P
+                    return D
                 },
                 JAM_SPACE_APPLICATION_ID: function() {
-                    return M
+                    return L
                 },
                 GARTIC_PHONE_APPLICATION_ID: function() {
-                    return U
+                    return b
                 },
                 COLOR_TOGETHER_APPLICATION_ID: function() {
-                    return G
+                    return M
                 },
                 SPELL_CAST_APPLICATION_ID: function() {
-                    return w
+                    return U
                 },
                 LAND_IO_APPLICATION_ID: function() {
-                    return k
+                    return G
                 },
                 WATCH_YOUTUBE_PROD_APP_ID: function() {
-                    return x
+                    return w
                 },
                 KWIM_APPLICATION_ID: function() {
-                    return F
+                    return k
                 },
                 BOBBLE_LEAGUE_APPLICATION_ID: function() {
-                    return V
+                    return x
                 },
                 CHECKERS_IN_THE_PARK_APP_ID: function() {
-                    return B
+                    return F
                 },
                 CHESS_IN_THE_PARK_APP_ID: function() {
-                    return H
+                    return V
                 },
                 BLAZIN_8S_APPLICATION_ID: function() {
-                    return Y
+                    return B
                 },
                 POKER_NIGHT_APPLICATION_ID: function() {
-                    return j
+                    return H
                 },
                 BYS_LETTER_APP_ID: function() {
-                    return W
+                    return Y
                 },
                 BYS_TWOODLE_APP_ID: function() {
-                    return K
+                    return j
                 },
                 CHEF_SHOWDOWN_APPLICATION_ID: function() {
-                    return z
+                    return W
                 },
                 PUTT_PARTY_APPLICATION_ID: function() {
-                    return q
+                    return K
                 },
                 KRUNKER_STRIKE_APPLICATION_ID: function() {
-                    return X
+                    return z
                 },
                 COLONIST_APPLICATION_ID: function() {
-                    return Q
+                    return q
                 },
                 EMBEDDED_ACTIVITY_SURVEY_URL: function() {
-                    return Z
+                    return X
                 },
                 ImageSizes: function() {
-                    return J
+                    return Q
                 },
                 STAFF_RELEASE_PHASES: function() {
-                    return $
+                    return Z
                 },
                 ActivityFeedbackReasons: function() {
                     return i
@@ -19141,100 +19141,97 @@
                 ActivityPlatform: function() {
                     return s
                 },
-                ActivityAccessStatus: function() {
+                EmbeddedActivityUpdateCodes: function() {
                     return o
                 },
-                EmbeddedActivityUpdateCodes: function() {
+                OrientationLockState: function() {
                     return l
                 },
-                OrientationLockState: function() {
+                ActivityShelfSlides: function() {
                     return u
                 },
-                ActivityShelfSlides: function() {
-                    return c
-                },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return ee
+                    return J
                 },
                 APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
-                    return et
+                    return $
                 },
                 APPLICATIONS_WITH_NO_REFFERER: function() {
-                    return en
+                    return ee
                 },
                 WhatsNewSection: function() {
-                    return d
+                    return c
                 },
                 ActivityScreenOrientation: function() {
-                    return f
+                    return d
                 },
                 ActivityLayoutMode: function() {
-                    return E
+                    return f
                 },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return er
+                    return en
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return es
+                    return ei
                 }
             }), n("222007");
-            var i, r, s, a, o, l, u, c, d, f, E, p, h, _, S, m, T, g, I, C, v, A, R = n("798609"),
-                N = n("49111");
-            let O = 160,
-                D = /^https?:\/\/(?:www\.)?(twitch\.tv\/(.+)|youtube.com\/watch\?v=)/,
-                y = "438122941302046720",
-                P = "773336526917861400",
-                L = "880218832743055411",
-                b = "1050941315912835122",
-                M = "1070087967294631976",
-                U = "1007373802981822582",
-                G = "1039835161136746497",
-                w = "852509694341283871",
-                k = "903769130790969345",
-                x = "880218394199220334",
-                F = "1078728822972764312",
-                V = "947957217959759964",
-                B = "832013003968348200",
-                H = "832012774040141894",
-                Y = "832025144389533716",
-                j = "755827207812677713",
-                W = "879863686565621790",
-                K = "902271654783242291",
-                z = "1037680572660727838",
-                q = "945737671223947305",
-                X = "1011683823555199066",
-                Q = "1106787098452832296",
-                Z = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-                J = {
+            var i, r, s, a, o, l, u, c, d, f, E, p, h, _, S, m, T, g, I, C, v = n("798609"),
+                A = n("49111");
+            let R = 160,
+                N = /^https?:\/\/(?:www\.)?(twitch\.tv\/(.+)|youtube.com\/watch\?v=)/,
+                O = "438122941302046720",
+                D = "773336526917861400",
+                y = "880218832743055411",
+                P = "1050941315912835122",
+                L = "1070087967294631976",
+                b = "1007373802981822582",
+                M = "1039835161136746497",
+                U = "852509694341283871",
+                G = "903769130790969345",
+                w = "880218394199220334",
+                k = "1078728822972764312",
+                x = "947957217959759964",
+                F = "832013003968348200",
+                V = "832012774040141894",
+                B = "832025144389533716",
+                H = "755827207812677713",
+                Y = "879863686565621790",
+                j = "902271654783242291",
+                W = "1037680572660727838",
+                K = "945737671223947305",
+                z = "1011683823555199066",
+                q = "1106787098452832296",
+                X = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                Q = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                $ = ["in_development", "activities_team", "employee_release"];
-            (p = i || (i = {})).FAILED_LOAD = "FAILED_LOAD", p.LAGGING = "LAGGING", p.CONFUSING = "CONFUSING", p.NOT_FUN = "NOT_FUN", p.OTHER = "OTHER", (h = r || (r = {}))[h.PLAY = 0] = "PLAY", h[h.SPECTATE = 1] = "SPECTATE", (_ = s || (s = {})).DESKTOP = "desktop", _.MOBILE = "mobile", (S = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", S.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", S.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", S.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (m = o || (o = {}))[m.UNLOCKED = 0] = "UNLOCKED", m[m.NEEDS_NITRO = 1] = "NEEDS_NITRO", (T = l || (l = {}))[T.NO_UPDATE = 0] = "NO_UPDATE", T[T.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", T[T.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", T[T.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", T[T.USER_JOINED = 4] = "USER_JOINED", T[T.USER_LEFT = 5] = "USER_LEFT", T[T.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (g = u || (u = {}))[g.UNLOCKED = 1] = "UNLOCKED", g[g.PORTRAIT = 2] = "PORTRAIT", g[g.LANDSCAPE = 3] = "LANDSCAPE", (I = c || (c = {}))[I.DIRECTORY = 0] = "DIRECTORY", I[I.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", I[I.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let ee = "activity-shelf",
-                et = new Set(["755600276941176913", L, b, x, "1010174316991762534", X]),
-                en = new Set([L, b, x]);
-            (C = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", C.GDM_ACTIVITIES = "GDM_ACTIVITIES", C.PUTT_PARTY = "PUTT_PARTY", C.JAMSPACE_OLD = "JAMSPACE", C.JAMSPACE = "JAMSPACE2", C.POKER = "POKER", C.FREE = "FREE", (v = f || (f = {}))[v.PORTRAIT = 0] = "PORTRAIT", v[v.LANDSCAPE = 1] = "LANDSCAPE", (A = E || (E = {}))[A.FOCUSED = 0] = "FOCUSED", A[A.PIP = 1] = "PIP", A[A.GRID = 2] = "GRID";
-            let ei = {
-                    label_type: R.EmbeddedActivityLabelTypes.NONE,
+                Z = ["in_development", "activities_team", "employee_release"];
+            (E = i || (i = {})).FAILED_LOAD = "FAILED_LOAD", E.LAGGING = "LAGGING", E.CONFUSING = "CONFUSING", E.NOT_FUN = "NOT_FUN", E.OTHER = "OTHER", (p = r || (r = {}))[p.PLAY = 0] = "PLAY", p[p.SPECTATE = 1] = "SPECTATE", (h = s || (s = {})).DESKTOP = "desktop", h.MOBILE = "mobile", (_ = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", _.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", _.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", _.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (S = o || (o = {}))[S.NO_UPDATE = 0] = "NO_UPDATE", S[S.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", S[S.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", S[S.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", S[S.USER_JOINED = 4] = "USER_JOINED", S[S.USER_LEFT = 5] = "USER_LEFT", S[S.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (m = l || (l = {}))[m.UNLOCKED = 1] = "UNLOCKED", m[m.PORTRAIT = 2] = "PORTRAIT", m[m.LANDSCAPE = 3] = "LANDSCAPE", (T = u || (u = {}))[T.DIRECTORY = 0] = "DIRECTORY", T[T.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", T[T.DETAIL_PAGE = 2] = "DETAIL_PAGE";
+            let J = "activity-shelf",
+                $ = new Set(["755600276941176913", y, P, w, "1010174316991762534", z]),
+                ee = new Set([y, P, w]);
+            (g = c || (c = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", g.GDM_ACTIVITIES = "GDM_ACTIVITIES", g.PUTT_PARTY = "PUTT_PARTY", g.JAMSPACE_OLD = "JAMSPACE", g.JAMSPACE = "JAMSPACE2", g.POKER = "POKER", g.FREE = "FREE", (I = d || (d = {}))[I.PORTRAIT = 0] = "PORTRAIT", I[I.LANDSCAPE = 1] = "LANDSCAPE", (C = f || (f = {}))[C.FOCUSED = 0] = "FOCUSED", C[C.PIP = 1] = "PIP", C[C.GRID = 2] = "GRID";
+            let et = {
+                    label_type: v.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                er = {
+                en = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
-                    supported_platforms: [R.EmbeddedActivitySupportedPlatforms.WEB],
+                    supported_platforms: [v.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [R.EmbeddedActivitySupportedPlatforms.WEB]: ei,
-                        [R.EmbeddedActivitySupportedPlatforms.IOS]: ei,
-                        [R.EmbeddedActivitySupportedPlatforms.ANDROID]: ei
+                        [v.EmbeddedActivitySupportedPlatforms.WEB]: et,
+                        [v.EmbeddedActivitySupportedPlatforms.IOS]: et,
+                        [v.EmbeddedActivitySupportedPlatforms.ANDROID]: et
                     },
                     has_csp_exception: !1,
                     displays_advertisements: !1
                 },
-                es = [N.ChannelTypes.GUILD_TEXT, N.ChannelTypes.DM, N.ChannelTypes.GROUP_DM]
+                ei = [A.ChannelTypes.GUILD_TEXT, A.ChannelTypes.DM, A.ChannelTypes.GROUP_DM]
         },
         586391: function(e, t, n) {
             "use strict";
@@ -31099,41 +31096,38 @@
                 FREE_BOOSTS: function() {
                     return R
                 },
-                HOST_PREMIUM_ACTIVITIES: function() {
+                STREAM_MID_QUALITY: function() {
                     return N
                 },
-                STREAM_MID_QUALITY: function() {
+                STREAM_HIGH_QUALITY: function() {
                     return O
                 },
-                STREAM_HIGH_QUALITY: function() {
+                FANCY_VOICE_CHANNEL_REACTIONS: function() {
                     return D
                 },
-                FANCY_VOICE_CHANNEL_REACTIONS: function() {
+                INSTALL_PREMIUM_APPLICATIONS: function() {
                     return y
                 },
-                INSTALL_PREMIUM_APPLICATIONS: function() {
+                REDEEM_PREMIUM_PERKS: function() {
                     return P
                 },
-                REDEEM_PREMIUM_PERKS: function() {
+                VIDEO_FILTER_ASSETS: function() {
                     return L
                 },
-                VIDEO_FILTER_ASSETS: function() {
+                INCREASED_GUILD_LIMIT: function() {
                     return b
                 },
-                INCREASED_GUILD_LIMIT: function() {
+                INCREASED_MESSAGE_LENGTH: function() {
                     return M
                 },
-                INCREASED_MESSAGE_LENGTH: function() {
+                INCREASED_VIDEO_UPLOAD_QUALITY: function() {
                     return U
                 },
-                INCREASED_VIDEO_UPLOAD_QUALITY: function() {
+                UPLOAD_LARGE_FILES: function() {
                     return G
                 },
-                UPLOAD_LARGE_FILES: function() {
-                    return w
-                },
                 canUserUse: function() {
-                    return x
+                    return k
                 }
             });
             var i = n("605250"),
@@ -31154,7 +31148,7 @@
                         try {
                             let n = u[t.premiumType];
                             if (null == n) return l.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-                            let i = k[n];
+                            let i = w[n];
                             if (null == i) return l.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
                             return i.skuFeatures.includes(e)
                         } catch (e) {
@@ -31180,25 +31174,24 @@
                 v = new c("clientThemes"),
                 A = new c("boostDiscount"),
                 R = new c("freeBoosts"),
-                N = new c("hostPremiumActivities"),
-                O = new c("streamMidQuality"),
-                D = new c("streamHighQuality"),
-                y = new c("fancyVoiceChannelReactions"),
-                P = new c("installPremiumApplications"),
-                L = new c("redeemPremiumPerks"),
-                b = new c("videoFilterAssets");
+                N = new c("streamMidQuality"),
+                O = new c("streamHighQuality"),
+                D = new c("fancyVoiceChannelReactions"),
+                y = new c("installPremiumApplications"),
+                P = new c("redeemPremiumPerks"),
+                L = new c("videoFilterAssets");
             new s.default("increasedFileUploadSize", r.getUserMaxFileSize);
-            let M = new c("increasedGuildLimit"),
-                U = new c("increasedMessageLength"),
-                G = new c("increasedVideoUploadQuality"),
-                w = new c("uploadLargeFiles"),
-                k = Object.freeze({
-                    [o.PremiumSubscriptionSKUs.TIER_0]: new a.default(o.PremiumSubscriptionSKUs.TIER_0, [d, f, E, T, b, G, w, C]),
-                    [o.PremiumSubscriptionSKUs.TIER_1]: new a.default(o.PremiumSubscriptionSKUs.TIER_1, [d, f, _, S, T, A, O, y, G, w, C]),
-                    [o.PremiumSubscriptionSKUs.TIER_2]: new a.default(o.PremiumSubscriptionSKUs.TIER_2, [d, f, E, p, h, _, S, m, T, g, v, A, R, N, O, D, y, P, L, b, M, U, G, w, C, I])
+            let b = new c("increasedGuildLimit"),
+                M = new c("increasedMessageLength"),
+                U = new c("increasedVideoUploadQuality"),
+                G = new c("uploadLargeFiles"),
+                w = Object.freeze({
+                    [o.PremiumSubscriptionSKUs.TIER_0]: new a.default(o.PremiumSubscriptionSKUs.TIER_0, [d, f, E, T, L, U, G, C]),
+                    [o.PremiumSubscriptionSKUs.TIER_1]: new a.default(o.PremiumSubscriptionSKUs.TIER_1, [d, f, _, S, T, A, N, D, U, G, C]),
+                    [o.PremiumSubscriptionSKUs.TIER_2]: new a.default(o.PremiumSubscriptionSKUs.TIER_2, [d, f, E, p, h, _, S, m, T, g, v, A, R, N, O, D, y, P, L, b, M, U, G, C, I])
                 });
 
-            function x(e, t) {
+            function k(e, t) {
                 return e.getFeatureValue(t)
             }
         },
@@ -50094,7 +50087,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269051"
+                                build_number: "269052"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -52096,9 +52089,6 @@
                 },
                 hasFreeBoosts: function(e) {
                     return (0, f.canUserUse)(f.FREE_BOOSTS, e)
-                },
-                canUsePremiumActivities: function(e) {
-                    return (0, f.canUserUse)(f.HOST_PREMIUM_ACTIVITIES, e)
                 },
                 canUseCustomStickersEverywhere: function(e) {
                     return (0, f.canUserUse)(f.STICKERS_EVERYWHERE, e)
@@ -64161,4 +64151,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.97dbb353c871d023be17.js.map
+//# sourceMappingURL=21201.71c081580d56e70294e8.js.map
