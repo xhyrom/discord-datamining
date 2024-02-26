@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["98239"], {
+    ["67615"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -28431,7 +28431,7 @@
             });
             var s = n("627445"),
                 i = n.n(s),
-                r = n("249654");
+                r = n("299039");
 
             function a(e) {
                 i(e.length <= 2 || r.default.compare(e[0].id, e[e.length - 1].id) >= 0, "messages must be sorted in descending order.")
@@ -47707,7 +47707,7 @@
                 recordMessageRender(e, t, s, i) {
                     let {
                         default: r
-                    } = n("249654");
+                    } = n("299039");
                     if (!this.renderLatestMessages.hasData()) {
                         if (this.renderMessages.record(), t.length > 0 && this.renderMessagesWithCache.record(), s) {
                             if (this.renderLatestMessages.record(), null == this.cachedChannelId) {
@@ -61839,4 +61839,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98239.5c787bad59ce9705ea62.js.map
+//# sourceMappingURL=67615.55fd7da768e5ba6e20a5.js.map
