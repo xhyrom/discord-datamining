@@ -45888,8 +45888,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -59063,8 +59063,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -128165,4 +128165,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b163861cef635b8c45b0.css.map*/
+/*# sourceMappingURL=app.7ce5adac0a4880b84270.css.map*/
