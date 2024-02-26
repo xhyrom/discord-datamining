@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-08_user_initiated_refunds",
+    "label": "User Initiated Refunds",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Can refund"
+    ],
+    "hash": 2623810566,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -16,11 +16,13 @@ id,hash,label
 2021-07_role_popout,1428438599,Role Popout
 2021-08_guild_role_subscription_users,1567199723,Guild Role Subscription Users
 2021-08_max_sync_delay,578035700,Overrides the default max sync delay for AV streams in WebRTC
+2021-08_user_initiated_refunds,2623810566,User Initiated Refunds
 2021-09_favorites_server,1134868932,Favorites Server
 2021-09_ios_screenshare_resolution_profiles,3656427814,iOS: Screenshare resolution profiles
 2021-09_watch_together_rollout,3607703918,Exposure tracking for Watch Together (do not override)
 2021-10_pause_partner_applications_experiment,4049227286,Pause Partner Applications Experiment
 2021-10_price_determination,3997593347,Price determination experiment
+2021-10_runtime_accessibility_system,3654722494,Runtime Accessibility System
 2021-10_study_group,4030301365,Student hub study group
 2021-11_discovery_tags,1025804489,Discovery Tags
 2021-11_hub_events,1107510295,Hub Events
@@ -33,6 +35,7 @@ id,hash,label
 2022-01_server_recommendations_rollout,2353632184,Rollout experiment for server recommendations.
 2022-02_guild_audit_log_guild,1412337990,Guild Audit Log - Guild Feature Flag
 2022-02_guild_audit_log_user,2802647294,Guild Audit Log - User Feature Flag
+2022-02_guild_folder_mute,3351473888,Guild Folder Mute
 2022-03_block_russian_purchases,3011681066,Block purchases based on country
 2022-03_block_russian_purchases_desktop,1814483290,Block purchases based on country (desktop specific flags)
 2022-03_guild_access_rate_insight_experiment,1899119674,Guild Access Rate Insight Experiment
@@ -80,6 +83,7 @@ id,hash,label
 2022-11_command_query_pagination,2206139940,Command Query Pagination
 2022-11_creator_monetization_onboarding_waitlist,987884927,Creator Monetization Onboarding Waitlist
 2022-11_default_disable_mass_mention,2462216785,Disable mass mentions for communities by default
+2022-11_default_to_server_vanity_v2,2507971540,Default To Server Vanity v2
 2022-11_desktop_notification_center,1323079101,Desktop notification center
 2022-11_mobile_account_switcher_notifications,1333727,Mobile Account Switcher: Notifications
 2022-11_notification_redesign,1792467213,NotificationRedesign
@@ -92,6 +96,7 @@ id,hash,label
 2022-12_get_my_guilds_application_ids_endpoint,3772658100,Get My Guilds' Application IDs Endpoint Experiment
 2022-12_home_feedback_ux,655899426,Show post feedback for home
 2022-12_home_header_redesign,3405402067,Home New Header
+2022-12_localized_pricing_poland_notice,4169494713,Localized Pricing Poland Notice
 2022-12_localized_pricing_promo_manager,4215507151,Localized Pricing Promo Manager
 2022-12_media_mosaic_experiment,1133868976,Media Mosaic
 2022-12_mention_raid_limit,1318029053,Automod Mention Raid Limit
@@ -130,6 +135,7 @@ id,hash,label
 2023-02_stage_boosting,1816004721,Stage Boosting
 2023-02_tabs_v2,1499660140,Tabs V2 - GDM Bucketing
 2023-02_voice_channel_statuses,2809294122,Voice Channel Status Guild Experiment
+2023-03_aa_user_segment_filter,1998088971,AA test to validate segmentation filter
 2023-03_activities_game_night_coach_mark,2171590360,Activities Game Night Experiment
 2023-03_activities_watch_together_promo_sparkles_week_1,1312040082,Activities Watch Together Promo Week 1 Sparkles
 2023-03_activities_watch_together_promo_sparkles_week_2,1736363471,Activities Watch Together Promo Week 2 Sparkles
@@ -196,6 +202,7 @@ id,hash,label
 2023-05_guild_member_safety_experiment,603648674,Guild Member Safety Experiment
 2023-05_inventory_guild_packs,1473329304,Inventory Guild Packs Experiment
 2023-05_land_on_server_guide,3172321247,Land users on server guide
+2023-05_localized_pricing_turkey_notice,2556223249,Localized Pricing Turkey Notice
 2023-05_lock_icon,853908483,Checkout Lock Icon
 2023-05_onboarding_wumpus_tooltip_obliteration,3295981377,Guild Onboarding Wumpus Tooltip
 2023-05_optional_onboarding_home_admin,695300504,[ADMIN] Make server guide optional
@@ -228,6 +235,7 @@ id,hash,label
 2023-07_allow_welcome_message_replies,1487316075,Allow replies to welcome messages
 2023-07_announcement_views,3583259547,Announcement Views
 2023-07_autocomplete_emojis_nitro_upsell,1322503781,Autocomplete Emojis Nitro Upsell
+2023-07_automated_gift_code_message,3647881612,Automatically send gift code message in direct message to gift recipient
 2023-07_bogo_marketing_materials_experiment,1350945791,BOGO Marketing Materials
 2023-07_checkout_prevent_accidental_modal_dismissal,3215170208,Checkout Prevent Accidental Modal Dismissal
 2023-07_clyde_ai_proactive_guilds,3041932109,Proactive Clyde
@@ -294,6 +302,7 @@ id,hash,label
 2023-08_user_apps,825618208,Allow user app commands
 2023-08_video_quality_measurement_v1,2496837643,Video Quality Measurement
 2023-08_whats_new,1745832462,What's New
+2023-08-30_open-in-popout,281174794,Open Channel in Popout
 2023-09_activity_bobble_bash_upsell,3892100904,Activity Bobble Bash Upsell
 2023-09_activity_shelf_order,677690720,Activity Shelf Order
 2023-09_amd_relaxed_rate_control,1124247010,Alternative rate control proposal for AMD encoder
@@ -414,6 +423,7 @@ id,hash,label
 2023-12_mobile_redesign_notif_tab_new_users,2653568078,Mobile Redesign - Notification Tab - New Users
 2023-12_nitro_standard_wow_moment_experiment,418762923,Productionize Nitro Standard Flying Wumpus Wow Moment
 2023-12_nv_relaxed_rate_control,3216770283,Alternative rate control proposal for Nvidia encoder
+2023-12_pause_subscriptions_experiment,1522152287,Pause Subscriptions Experiment
 2023-12_quests,2582794089,Quests
 2023-12_voice_lockscreen_widget,3182686365,Voice live activity (guild)
 2024-01_all_perks,1613323547,All Perks
@@ -453,6 +463,7 @@ id,hash,label
 2024-02_clips_quality_decoupling,2198288410,Clips quality decoupling
 2024-02_collectibles_shop_elements_marketing,3290168049,Collectibles Shop Marketing Experiment - Elements
 2024-02_emoji_picker_upload_desktop,350727084,Desktop: Consistently show the Emoji Picker Upload button at the start of emoji lists
+2024-02_emoji_suggestions,867058171,Emoji Suggestions Experiment
 2024-02_hide_member_list_activities,1585236473,Hide member list activities
 2024-02_navi_bar_existing_users,3520090265,Mobile Redesign - Nav Experiment: You Bar - Existing Users
 2024-02_navi_bar_new_users,2455953431,Mobile Redesign - Nav Experiment: You Bar - New Users
