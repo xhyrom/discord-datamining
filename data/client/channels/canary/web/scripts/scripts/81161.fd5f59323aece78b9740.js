@@ -592,8 +592,8 @@
                 l = n("866227"),
                 r = n.n(l),
                 d = n("614137"),
-                i = n("249654"),
-                a = n("718517"),
+                i = n("718517"),
+                a = n("299039"),
                 c = n("757767");
             n("745049");
             var E = n("782340");
@@ -685,7 +685,7 @@
                 let n = function(e) {
                         return g(e.scheduled_start_time, e.scheduled_end_time)
                     }(t),
-                    u = r(i.default.extractTimestamp(e)),
+                    u = r(a.default.extractTimestamp(e)),
                     l = (null == n ? void 0 : n.endDate) != null ? u.clone().add(n.endDate.diff(n.startDate)) : void 0;
                 return {
                     startDate: u,
@@ -752,13 +752,13 @@
                 var t;
                 if (null == e) return null;
                 let n = null == (t = e).recurrence_rule ? null : new Date(t.scheduled_start_time);
-                return null != n ? i.default.fromTimestamp(Math.floor(n.getTime() / a.default.Millis.SECOND) * a.default.Millis.SECOND) : null
+                return null != n ? a.default.fromTimestamp(Math.floor(n.getTime() / i.default.Millis.SECOND) * i.default.Millis.SECOND) : null
             }
 
             function b(e, t) {
                 if (null == t || null == e) return !1;
                 let n = new Date(e.start),
-                    u = i.default.extractTimestamp(t),
+                    u = a.default.extractTimestamp(t),
                     l = new Date(u);
                 if (n.getUTCHours() !== l.getUTCHours() || n.getUTCMinutes() !== l.getUTCMinutes() || n.getUTCSeconds() !== l.getUTCSeconds()) return !1;
                 switch (e.frequency) {
@@ -871,4 +871,4 @@
         }
     }
 ]);
-//# sourceMappingURL=81161.74c7206ea3f33ef1435f.js.map
+//# sourceMappingURL=81161.fd5f59323aece78b9740.js.map
