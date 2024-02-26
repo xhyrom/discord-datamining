@@ -21944,7 +21944,6 @@
                 classificationActionsTakenRow: "classificationActionsTakenRow_d5ee44",
                 classificationActionsTakenRowIcon: "classificationActionsTakenRowIcon__46ce5",
                 classificationContainer: "classificationContainer_ee7986",
-                classificationEvidenceContainer: "classificationEvidenceContainer__6687d",
                 classificationHeader: "classificationHeader_cb5cbf",
                 classificationLetUsKnowContainer: "classificationLetUsKnowContainer__06acb",
                 classificationPolicyCard: "classificationPolicyCard__0923e",
@@ -21969,9 +21968,24 @@
         386672: function(e, t, n) {
             "use strict";
             e.exports = {
-                classificationEvidenceCard: "classificationEvidenceCard__1b7da",
-                classificationEvidenceContainer: "classificationEvidenceContainer__91a8a",
-                classificationEvidenceMessageAttachment: "classificationEvidenceMessageAttachment_c76fcf"
+                classificationEvidenceContainer: "classificationEvidenceContainer__91a8a"
+            }
+        },
+        177195: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                guildAvatarPlaceholder: "guildAvatarPlaceholder_e3af1e",
+                guildContainer: "guildContainer__34bbd",
+                guildName: "guildName_b38c2b",
+                removalDate: "removalDate_a9c31b",
+                titleContainer: "titleContainer_e115b8"
+            }
+        },
+        543069: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                classificationEvidenceCard: "classificationEvidenceCard_ffa9bd",
+                classificationEvidenceMessageAttachment: "classificationEvidenceMessageAttachment__3fbfa"
             }
         },
         948707: function(e, t, n) {
