@@ -87,8 +87,8 @@
                 h = n("305961"),
                 N = n("660478"),
                 A = n("18494"),
-                m = n("162771"),
-                I = n("718517"),
+                I = n("162771"),
+                m = n("718517"),
                 T = n("519841"),
                 S = n("787336"),
                 v = n("49111"),
@@ -187,7 +187,7 @@
                     })
                 }
             }
-            let D = 90 * I.default.Millis.DAY,
+            let D = 90 * m.default.Millis.DAY,
                 O = "viewedThreadIds";
 
             function P() {
@@ -266,7 +266,7 @@
 
             function U() {
                 let e = A.default.getChannelId(),
-                    t = m.default.getGuildId();
+                    t = I.default.getGuildId();
                 if (null == t || null == e) return;
                 let n = p.default.getSidebarState(e);
                 (null == n ? void 0 : n.type) !== C.SidebarType.VIEW_CHANNEL && k(t, e)
@@ -333,7 +333,7 @@
                 } = e;
                 if (i) return;
                 let u = null !== (t = F[n]) && void 0 !== t ? t : 0;
-                if (Date.now() - u < 10 * I.default.Millis.SECOND) return;
+                if (Date.now() - u < 10 * m.default.Millis.SECOND) return;
                 F[n] = Date.now();
                 let d = A.default.getChannelId(),
                     r = p.default.getCurrentSidebarChannelId(d),
@@ -480,7 +480,7 @@
                         warningIds: n
                     } = e, l = f[t];
                     if (null == l) return;
-                    let a = Date.now().toString();
+                    let a = new Date().toISOString();
                     f[t] = l.map(e => n.includes(e.id) ? {
                         ...e,
                         dismiss_timestamp: a
@@ -608,4 +608,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1727.f828429b756c69401c80.js.map
+//# sourceMappingURL=1727.bc27bbcac43f5957aae9.js.map
