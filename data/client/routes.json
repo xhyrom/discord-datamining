@@ -3011,6 +3011,10 @@
       "POST"
     ]
   },
+  "USER_OFFER_REDEEM": {
+    "url": "/users/@me/billing/user-offer/redeem",
+    "allowed_methods": null
+  },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
     "allowed_methods": [
