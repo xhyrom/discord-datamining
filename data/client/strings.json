@@ -16163,6 +16163,7 @@
   "CLIPS_SETTINGS_LENGTH_HELP": "\"By default, clips are 30 seconds long.\"",
   "CLIPS_SETTINGS_STORAGE_LOCATION": "\"Storage Location\"",
   "CLIPS_SETTINGS_STORAGE_LOCATION_HELP": "\"Choose where to store your clips.\"",
+  "CLIPS_SETTINGS_STORAGE_LOCATION_LABEL": "\"Storage Location, {storageLocation}\"",
   "CLIPS_LENGTH_SECONDS": "\"{count, plural, =1 {# Second} other {# Seconds}}\"",
   "CLIPS_LENGTH_MINUTES": "\"{count, plural, =1 {# Minute} other {# Minutes}}\"",
   "CLIPS_SETTINGS_KEYBIND": "\"Clipping Keybind\"",
