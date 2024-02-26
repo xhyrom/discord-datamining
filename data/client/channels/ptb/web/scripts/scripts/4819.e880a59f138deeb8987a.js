@@ -736,7 +736,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return v
+                    return I
                 }
             }), n("222007");
             var a, r, s = n("917351"),
@@ -745,60 +745,61 @@
                 u = n("913144"),
                 o = n("766274"),
                 d = n("271938"),
-                c = n("9759"),
-                f = n("837374");
+                c = n("299039"),
+                f = n("9759"),
+                h = n("837374");
             (r = a || (a = {}))[r.INVALID = 0] = "INVALID", r[r.VALID_USER_ONLY = 1] = "VALID_USER_ONLY", r[r.VALID = 2] = "VALID";
-            let h = new Set,
-                E = new Set,
+            let E = new Set,
                 C = new Set,
-                p = [],
-                m = {
+                p = new Set,
+                m = [],
+                S = {
                     BROADCASTS_BY_USER_ID: e => "user:".concat(e),
                     BROADCASTS_BY_CHANNEL_ID: e => "channel:".concat(e),
                     BROADCASTS_BY_VALIDITY: e => "validity:".concat(e)
                 },
-                S = new l.default(function(e) {
-                    let t = h.has(e.userId) ? 1 : 0;
-                    return null != e.viewers && (t = 2), [m.BROADCASTS_BY_USER_ID(e.userId), m.BROADCASTS_BY_CHANNEL_ID(e.channelId), m.BROADCASTS_BY_VALIDITY(t)]
+                g = new l.default(function(e) {
+                    let t = E.has(e.userId) ? 1 : 0;
+                    return null != e.viewers && (t = 2), [S.BROADCASTS_BY_USER_ID(e.userId), S.BROADCASTS_BY_CHANNEL_ID(e.channelId), S.BROADCASTS_BY_VALIDITY(t)]
                 }, e => e.channelId);
 
-            function g(e, t, n) {
+            function _(e, t, n) {
                 if (d.default.getId() === e) return !1;
                 if (null == t) {
-                    let t = S.get(e);
-                    return !!(null != t && (0, s.isEqual)(t.source, n)) && (S.delete(e), void 0)
-                }!h.has(e) && !E.has(e) && (C.add(e), p = [...C]);
-                let a = (0, f.broadcastFromServer)(t, e, n);
-                S.set(e, a)
+                    let t = g.get(e);
+                    return !!(null != t && (0, s.isEqual)(t.source, n)) && (g.delete(e), void 0)
+                }!E.has(e) && !C.has(e) && (p.add(e), m = [...p]);
+                let a = (0, h.broadcastFromServer)(t, e, n);
+                g.set(e, a)
             }
 
-            function _(e) {
+            function T(e) {
                 return null != e ? {
-                    type: f.BroadcastSourceType.GUILD,
+                    type: h.BroadcastSourceType.GUILD,
                     guildId: e
                 } : {
-                    type: f.BroadcastSourceType.GLOBAL
+                    type: h.BroadcastSourceType.GLOBAL
                 }
             }
-            class T extends i.default.Store {
+            class v extends i.default.Store {
                 getBroadcasts() {
-                    return S.values(m.BROADCASTS_BY_VALIDITY(2))
+                    return g.values(S.BROADCASTS_BY_VALIDITY(2))
                 }
                 getBroadcastsToValidateChannels() {
-                    return S.values(m.BROADCASTS_BY_VALIDITY(1))
+                    return g.values(S.BROADCASTS_BY_VALIDITY(1))
                 }
                 getBroadcastByChannel(e) {
-                    return S.values(m.BROADCASTS_BY_CHANNEL_ID(e))[0]
+                    return g.values(S.BROADCASTS_BY_CHANNEL_ID(e))[0]
                 }
                 getBroadcastByUser(e) {
-                    return S.get(e)
+                    return g.get(e)
                 }
                 getUserIdsToValidate() {
-                    return p
+                    return m
                 }
             }
-            T.displayName = "BroadcastingStore";
-            var v = new T(u.default, {
+            v.displayName = "BroadcastingStore";
+            var I = new v(u.default, {
                 PRESENCE_UPDATES: function(e) {
                     let {
                         updates: t
@@ -809,7 +810,7 @@
                             broadcast: n,
                             guildId: a
                         } = e;
-                        g(t.id, n, _(a))
+                        _(t.id, n, T(a))
                     })
                 },
                 PRESENCES_REPLACE: function(e) {
@@ -822,7 +823,7 @@
                             broadcast: n,
                             guildId: a
                         } = e;
-                        g(t.id, n, _(a))
+                        _(t.id, n, T(a))
                     })
                 },
                 CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
@@ -836,7 +837,7 @@
                             broadcast: n,
                             guildId: a
                         } = e;
-                        g(t.id, n, _(a))
+                        _(t.id, n, T(a))
                     }), n.forEach(e => {
                         let {
                             presences: t,
@@ -847,7 +848,7 @@
                                 user: t,
                                 broadcast: a
                             } = e;
-                            g(t.id, a, _(n))
+                            _(t.id, a, T(n))
                         })
                     })
                 },
@@ -855,10 +856,10 @@
                     let {
                         data: t
                     } = e;
-                    Object.keys(t).forEach(e => {
-                        c.CAN_VIEW_BROADCASTS_BUCKETS.includes(t[e]) ? h.add(e) : E.add(e), C.clear(), p = [...C];
-                        let n = S.get(e);
-                        null != n && (S.delete(e), S.set(e, n))
+                    c.default.keys(t).forEach(e => {
+                        f.CAN_VIEW_BROADCASTS_BUCKETS.includes(t[e]) ? E.add(e) : C.add(e), p.clear(), m = [...p];
+                        let n = g.get(e);
+                        null != n && (g.delete(e), g.set(e, n))
                     })
                 },
                 BROADCAST_VIEWERS_UPDATE: function(e) {
@@ -866,8 +867,8 @@
                         viewers: t
                     } = e;
                     Object.entries(t).forEach(e => {
-                        let [t, n] = e, a = S.get(t);
-                        null != a && S.set(t, {
+                        let [t, n] = e, a = g.get(t);
+                        null != a && g.set(t, {
                             ...a,
                             viewers: n
                         })
@@ -877,9 +878,9 @@
                     let {
                         channelId: t,
                         user: n
-                    } = e, a = S.values(m.BROADCASTS_BY_CHANNEL_ID(t))[0];
+                    } = e, a = g.values(S.BROADCASTS_BY_CHANNEL_ID(t))[0];
                     if (null == a || null == a.viewers || a.viewers.some(e => e.id === n.id)) return !1;
-                    S.set(a.userId, {
+                    g.set(a.userId, {
                         ...a,
                         viewers: [...a.viewers, new o.default(n)]
                     })
@@ -888,9 +889,9 @@
                     let {
                         channelId: t,
                         user: n
-                    } = e, a = S.values(m.BROADCASTS_BY_CHANNEL_ID(t))[0];
+                    } = e, a = g.values(S.BROADCASTS_BY_CHANNEL_ID(t))[0];
                     if (null == a || null == a.viewers) return !1;
-                    S.set(a.userId, {
+                    g.set(a.userId, {
                         ...a,
                         viewers: a.viewers.filter(e => e.id !== n.id)
                     })
@@ -899,16 +900,16 @@
                     var t;
                     let {
                         channel: n
-                    } = e, a = S.values(m.BROADCASTS_BY_CHANNEL_ID(n.id))[0];
+                    } = e, a = g.values(S.BROADCASTS_BY_CHANNEL_ID(n.id))[0];
                     if (null == a) return !1;
                     let r = null !== (t = n.rawRecipients) && void 0 !== t ? t : [];
-                    S.set(a.userId, {
+                    g.set(a.userId, {
                         ...a,
                         viewers: r.filter(e => e.id !== a.userId).map(e => new o.default(e))
                     })
                 },
                 LOGOUT: function() {
-                    h.clear(), E.clear(), C.clear(), p = [], S.clear()
+                    E.clear(), C.clear(), p.clear(), m = [], g.clear()
                 }
             })
         },
@@ -1305,16 +1306,16 @@
                     compact: m = !1,
                     disableInteraction: g = !1,
                     maxVisibleUsers: v = 3
-                } = e, [A, x] = r.useState(!1), L = r.useRef(new d.DelayedCall(150, () => x(!1))), R = (0, o.useStateFromStoresArray)([E.default, C.default], () => {
+                } = e, [A, x] = r.useState(!1), R = r.useRef(new d.DelayedCall(150, () => x(!1))), L = (0, o.useStateFromStoresArray)([E.default, C.default], () => {
                     if (l.type === _.ParticipantTypes.STREAM) {
                         let e = E.default.getViewerIds(l.id);
                         return e.length > 0 ? e.map(e => C.default.getUser(e)).filter(S.isNotNullish) : O
                     }
                     return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => C.default.getUser(e)).filter(S.isNotNullish) : O : O
                 }, [l]), y = r.useCallback(() => {
-                    L.current.cancel(), x(!0)
+                    R.current.cancel(), x(!0)
                 }, []), P = r.useCallback(() => {
-                    L.current.delay()
+                    R.current.delay()
                 }, []), D = r.useCallback((e, t) => {
                     y(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
@@ -1328,24 +1329,24 @@
                         onClose: P
                     })
                 }, [P, y]);
-                if (0 === R.length) return null;
+                if (0 === L.length) return null;
                 if (m) return (0, a.jsx)(N, {
                     maxVisibleUsers: v,
-                    users: R,
+                    users: L,
                     guildId: s,
                     channelId: t,
                     className: p,
                     participantType: l.type
                 });
-                let b = u(R).take(v).map(e => (0, a.jsx)(c.Avatar, {
+                let b = u(L).take(v).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: I.viewer
                 }, e.id)).value();
-                return R.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
+                return L.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
                     className: I.overflow,
-                    children: ["+", R.length - v + 1]
+                    children: ["+", L.length - v + 1]
                 }, "overflow")), (0, a.jsx)(h.default, {
                     section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
@@ -1357,7 +1358,7 @@
                                 handleUserContextMenu: D,
                                 guildId: s,
                                 channelId: t,
-                                users: R,
+                                users: L,
                                 disableInteraction: g
                             }),
                             shouldShow: A,
@@ -1713,7 +1714,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return L
+                    return R
                 }
             });
             var a = n("37983");
@@ -1829,7 +1830,7 @@
                     })
                 };
 
-            function L(e) {
+            function R(e) {
                 let {
                     focused: t,
                     type: n,
@@ -1985,7 +1986,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-e3f119821045d8a851d07a5389111f006b2c286d",
+                    release: "discord_web-d3d22def98e0b16cd0627e8c4b8bac2565388885",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2003,7 +2004,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "268904", "268904")), a.setTag("builtAt", String("1708917324467"));
+                }), a.setTag("buildNumber", (e = "268912", "268912")), a.setTag("builtAt", String("1708956567909"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2971,7 +2972,7 @@
                     onClose: I,
                     onSelect: A,
                     appContext: M = g.AppContext.APP
-                } = e, N = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), O = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, x = v(n, r, l), L = (0, o.default)(O, M), R = (0, u.default)(O, M, g.NOOP_NULL), y = null == O ? (0, a.jsx)(s.MenuItem, {
+                } = e, N = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), O = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, x = v(n, r, l), R = (0, o.default)(O, M), L = (0, u.default)(O, M, g.NOOP_NULL), y = null == O ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: E.default,
@@ -2980,8 +2981,8 @@
                     children: [S.isPlatformEmbedded ? (0, a.jsx)(s.MenuItem, {
                         id: "stream-settings",
                         label: T.default.Messages.SCREENSHARE_STREAM_QUALITY,
-                        children: L
-                    }) : null, h ? R : null, N ? (0, a.jsx)(s.MenuItem, {
+                        children: R
+                    }) : null, h ? L : null, N ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
                         label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
                         icon: E.default,
@@ -4117,7 +4118,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return C
                 }
             });
             var a = n("37983"),
@@ -4130,41 +4131,42 @@
                 d = n("506885"),
                 c = n("217513"),
                 f = n("845579"),
-                h = n("491595"),
-                E = function(e) {
+                h = n("49111"),
+                E = n("491595"),
+                C = function(e) {
                     let {
                         style: t,
                         src: n,
-                        backgroundSrc: E,
-                        userId: C,
-                        pulseSpeakingIndicator: p = !1,
-                        speaking: m = !1,
-                        ...S
-                    } = e, g = null != E ? E : n, _ = (0, l.default)(g, s.default.unsafe_rawColors.PRIMARY_800.css), T = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, v = (0, c.default)(null != C ? C : ""), I = null == v ? void 0 : v.getBannerURL({
+                        backgroundSrc: C,
+                        userId: p,
+                        pulseSpeakingIndicator: m = !1,
+                        speaking: S = !1,
+                        ...g
+                    } = e, _ = null != C ? C : n, T = (0, l.default)(_, s.default.unsafe_rawColors.PRIMARY_800.css), v = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, I = (0, c.default)(null != p ? p : h.EMPTY_STRING_USER_ID), A = null == I ? void 0 : I.getBannerURL({
                         size: 1024,
                         canAnimate: f.GifAutoPlay.getSetting()
                     });
                     if (r.useEffect(() => {
-                            null != C && T && (0, d.default)(C, void 0, {
+                            null != p && v && (0, d.default)(p, void 0, {
                                 dispatchWait: !0
                             })
-                        }, [T, C]), null == n) return null;
-                    let A = (0, a.jsx)(i.Avatar, {
-                            className: h.avatarWrapper,
+                        }, [v, p]), null == n) return null;
+                    let M = (0, a.jsx)(i.Avatar, {
+                            className: E.avatarWrapper,
                             src: n,
-                            ...S
+                            ...g
                         }),
-                        M = {
+                        N = {
                             ...t,
-                            backgroundColor: _
+                            backgroundColor: T
                         };
-                    return null != I && m && T && (M.backgroundImage = "url(".concat(I, ")"), M.backgroundSize = "cover"), (0, a.jsx)("div", {
-                        style: M,
-                        className: h.background,
-                        children: p ? (0, a.jsx)(o.default, {
-                            shouldAnimate: m,
-                            children: A
-                        }) : A
+                    return null != A && S && v && (N.backgroundImage = "url(".concat(A, ")"), N.backgroundSize = "cover"), (0, a.jsx)("div", {
+                        style: N,
+                        className: E.background,
+                        children: m ? (0, a.jsx)(o.default, {
+                            shouldAnimate: S,
+                            children: M
+                        }) : M
                     })
                 }
         },
@@ -4714,4 +4716,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4819.ffd76106e1845a85de52.js.map
+//# sourceMappingURL=4819.e880a59f138deeb8987a.js.map
