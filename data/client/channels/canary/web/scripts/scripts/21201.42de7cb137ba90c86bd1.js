@@ -15487,6 +15487,10 @@
                 z = n("49111"),
                 q = n("353927");
             let X = /^https/.test((i = "https:", "https:")) ? "wss:" : "ws:";
+
+            function Q(e) {
+                return e
+            }
             r = class extends E.default {
                 get quality() {
                     let e = this.getLastPing();
@@ -15888,10 +15892,10 @@
                             rtxSsrc: r,
                             videoStreamParameters: s
                         }), this.userId === e && (this.sendVideo(null != n ? n : 0, null != i ? i : 0, null != r ? r : 0, s), null == s || s.forEach(t => {
-                            100 === t.quality && this.emit(x.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, e, t.maxResolution, t.maxFrameRate, this.context)
+                            if (100 === t.quality) this.emit(x.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, e, t.maxResolution, t.maxFrameRate, this.context)
                         }))
                     }), u.on(p.BaseConnectionEvent.FirstFrame, (e, t, n) => {
-                        null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.setFirstFrameReceived(t), this.emit(x.RTCConnectionEvent.Video, this.guildId, this.channelId, e, n, this.rtcServerId))
+                        if (null != this._localMediaSinkWantsManager) this._localMediaSinkWantsManager.setFirstFrameReceived(t), this.emit(x.RTCConnectionEvent.Video, this.guildId, this.channelId, e, n, this.rtcServerId)
                     }), u.on(p.BaseConnectionEvent.Silence, e => {
                         this._inputDetected = this._inputDetected || !e
                     }), u.on(p.BaseConnectionEvent.Connected, (i, r) => {
@@ -16843,7 +16847,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 DEFAULT_WANTS_FULL: function() {
-                    return p
+                    return h
                 },
                 RTCMediaSinkWantsManagerEvent: function() {
                     return i
@@ -16859,13 +16863,14 @@
                 c = n("862337"),
                 d = n("560528"),
                 f = n("718517"),
-                E = n("49111");
-            let p = {
+                E = n("299039"),
+                p = n("49111");
+            let h = {
                     any: 100
                 },
-                h = 30 * f.default.Millis.SECOND,
-                _ = 120 * f.default.Millis.SECOND,
-                S = -1 !== (0, d.getFirefoxVersion)();
+                _ = 30 * f.default.Millis.SECOND,
+                S = 120 * f.default.Millis.SECOND,
+                m = -1 !== (0, d.getFirefoxVersion)();
             (s = i || (i = {})).UserSSRCUpdate = "user-ssrc-update", s.Update = "update", r = class extends a.default {
                 getWantsLevel() {
                     let e = this.getVideoParticipantCount();
@@ -16876,7 +16881,7 @@
                 }
                 shouldReceiveFromUser(e) {
                     var t, n;
-                    return !((null === (t = this.connection) || void 0 === t ? void 0 : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null === (n = this.videoHealthManager) || void 0 === n ? void 0 : n.getCurrentVideoToggleState(e)) !== E.VideoToggleState.AUTO_PROBING)
+                    return !((null === (t = this.connection) || void 0 === t ? void 0 : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null === (n = this.videoHealthManager) || void 0 === n ? void 0 : n.getCurrentVideoToggleState(e)) !== p.VideoToggleState.AUTO_PROBING)
                 }
                 getAudioSSRCs() {
                     return this.audioSsrcs
@@ -16921,7 +16926,7 @@
                     return delete this.audioSsrcs[e], delete this.videoSsrcs[e], this.participants.delete(e), delete this.streamIds[e], this.update(Array.from(this.participants))
                 }
                 reset() {
-                    this.setConnection(null, !1), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.latestWants = p
+                    this.setConnection(null, !1), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.latestWants = h
                 }
                 setSelectedParticipant(e) {
                     if (e === this.selectedParticipantId) return this.latestWants;
@@ -16943,7 +16948,7 @@
                 }
                 setAppBackgrounded(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                    for (let [i, r] of Object.entries(this.streamIds))
+                    for (let [i, r] of E.default.entries(this.streamIds))
                         if (this.offscreenDisabledUsers[i] = e, null != r) {
                             var n;
                             let i = !e || t;
@@ -16962,11 +16967,11 @@
                     return e
                 }
                 getOffscreenTimeoutMs() {
-                    return this.isStageChannel ? _ : h
+                    return this.isStageChannel ? S : _
                 }
                 constructor(e, t, n, i = new l.MediaSinkWantsLadder) {
                     var r;
-                    super(), r = this, this.userId = e, this.isStageChannel = t, this.supportsSeamless = n, this.ladder = i, this.connection = null, this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.offscreenUsers = {}, this.offscreenDisabledUsers = {}, this.latestWants = p, this.participants = new Set, this.selectedParticipantId = null, this.pipOpen = !1, this.videoHealthManager = null, this.delayedUpdate = () => {
+                    super(), r = this, this.userId = e, this.isStageChannel = t, this.supportsSeamless = n, this.ladder = i, this.connection = null, this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.offscreenUsers = {}, this.offscreenDisabledUsers = {}, this.latestWants = h, this.participants = new Set, this.selectedParticipantId = null, this.pipOpen = !1, this.videoHealthManager = null, this.delayedUpdate = () => {
                         this.delayedCall.delay()
                     }, this.addLru = (e, t, n) => {
                         if (n.push(e), n.length <= 3) return;
@@ -16983,7 +16988,7 @@
                         if (!(null === (e = this.connection) || void 0 === e ? void 0 : e.getActiveOutputSinkTrackingEnabled())) return;
                         let n = Date.now(),
                             i = [];
-                        for (let [e, r] of Object.entries(this.streamIds))
+                        for (let [e, r] of E.default.entries(this.streamIds))
                             if (null != r) {
                                 if (null === (t = this.connection) || void 0 === t ? void 0 : t.getHasActiveVideoOutputSink(r)) delete this.offscreenUsers[e], delete this.offscreenDisabledUsers[e];
                                 else if (null == this.offscreenUsers[e]) this.offscreenUsers[e] = n, this.addLru(e, n, i);
@@ -17006,7 +17011,7 @@
                             n = {
                                 any: t
                             };
-                        for (let [i, s] of(r.updateOffscreenUsers(), Object.entries(r.videoSsrcs))) {
+                        for (let [i, s] of(r.updateOffscreenUsers(), E.default.entries(r.videoSsrcs))) {
                             let a = [],
                                 o = !1,
                                 l = s[0].ssrc;
@@ -17026,7 +17031,7 @@
                             var i;
                             (null === (i = r.connection) || void 0 === i ? void 0 : i.getLocalMute(e)) && (n[t] = 0)
                         }
-                        return S ? r.latestWants : (null != r.connection && !(0, u.default)(r.latestWants, n) && (r.latestWants = n, r.emit("update", n)), n)
+                        return m ? r.latestWants : (null != r.connection && !(0, u.default)(r.latestWants, n) && (r.latestWants = n, r.emit("update", n)), n)
                     }, this.delayedCall = new c.DelayedCall(100, this.update), this.offscreenTimeout = new c.Timeout
                 }
             }
@@ -17214,7 +17219,7 @@
                     return i
                 },
                 VideoQuality: function() {
-                    return p
+                    return h
                 }
             }), n("222007"), n("424973");
             var i, r = n("917351"),
@@ -17223,14 +17228,15 @@
                 o = n("773364"),
                 l = n("398183"),
                 u = n("773336"),
-                c = n("497407"),
-                d = n("44642");
+                c = n("299039"),
+                d = n("497407"),
+                f = n("44642");
 
-            function f(e) {
+            function E(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
                 return null != e ? Math.round(e) : t
             }
-            class E {
+            class p {
                 set value(e) {
                     e && !this.state && (this.begin = this.timestampProducer.now()), !e && this.state && (this.total += this.timestampProducer.now() - Number(this.begin), this.begin = null), this.state = e
                 }
@@ -17244,7 +17250,7 @@
                     this.timestampProducer = t, this.total = 0, this.state = e, this.begin = e ? t.now() : null
                 }
             }(i || (i = {})).FpsUpdate = "fps-update";
-            class p extends a.default {
+            class h extends a.default {
                 addUserToStatsCollectionPausedSet(e) {
                     this.statCollectionPausedUsers.add(e)
                 }
@@ -17255,18 +17261,18 @@
                     this.streamStart = this.timestampProducer.now(), this.connection.on(o.BaseConnectionEvent.Stats, this.sampleStats)
                 }
                 setOutboundSsrc(e) {
-                    null == this.outboundStats[e] && (this.outboundStats[e] = new d.OutboundStats(this.timestampProducer))
+                    null == this.outboundStats[e] && (this.outboundStats[e] = new f.OutboundStats(this.timestampProducer))
                 }
                 getOrCreateInboundStats(e) {
-                    return null == this.inboundStats[e] && (this.inboundStats[e] = new d.InboundStats(this.timestampProducer)), this.inboundStats[e]
+                    return null == this.inboundStats[e] && (this.inboundStats[e] = new f.InboundStats(this.timestampProducer)), this.inboundStats[e]
                 }
                 setInboundUser(e, t) {
                     let n = this.getOrCreateInboundStats(e);
-                    n.setVideoStopped(0 === t, d.VideoStoppedReasons.SenderStopped)
+                    n.setVideoStopped(0 === t, f.VideoStoppedReasons.SenderStopped)
                 }
                 setUserVideoDisabled(e, t) {
                     let n = this.getOrCreateInboundStats(e);
-                    n.setVideoStopped(t, d.VideoStoppedReasons.ClientSideDisableVideo), !t && n.statsWindow.length > 0 && 0 === n.statsWindow[0].packets && (n.startTime = this.timestampProducer.now())
+                    n.setVideoStopped(t, f.VideoStoppedReasons.ClientSideDisableVideo), !t && n.statsWindow.length > 0 && 0 === n.statsWindow[0].packets && (n.startTime = this.timestampProducer.now())
                 }
                 pause() {
                     !this.paused.value && this.pausedCount++, s.forEach(this.outboundStats, e => {
@@ -17294,7 +17300,7 @@
                         let n = new Map;
                         for (let i of this.outboundStats[t].getCodecsUsed()) {
                             let r = i.toUpperCase();
-                            n.set(r, f(this.outboundStats[t].codecBuckets[r])), e.set(parseInt(t), n)
+                            n.set(r, E(this.outboundStats[t].codecBuckets[r])), e.set(parseInt(t), n)
                         }
                     }
                     return e
@@ -17305,13 +17311,13 @@
                         let n = new Map;
                         for (let i of this.inboundStats[t].getCodecsUsed()) {
                             let r = i.toUpperCase();
-                            n.set(r, f(this.inboundStats[t].codecBuckets[r])), e.set(t, n)
+                            n.set(r, E(this.inboundStats[t].codecBuckets[r])), e.set(t, n)
                         }
                     }
                     return e
                 }
                 getCodecUsageStats(e, t) {
-                    var n, i, r, s, a, o, l, u, c, f;
+                    var n, i, r, s, a, o, l, u, c, d;
                     let E = this.asymmetricCodecUpdates > this.symmetricCodecUpdates,
                         p = new Map;
                     if ("sender" === e || "streamer" === e) {
@@ -17322,21 +17328,21 @@
                         }
                         return {
                             codec_asymmetric_session: E,
-                            codec_h264_encode_duration_sec: null !== (n = p.get(d.CodecTypes.H264)) && void 0 !== n ? n : 0,
-                            codec_h265_encode_duration_sec: null !== (i = p.get(d.CodecTypes.H265)) && void 0 !== i ? i : 0,
-                            codec_vp8_encode_duration_sec: null !== (r = p.get(d.CodecTypes.VP8)) && void 0 !== r ? r : 0,
-                            codec_vp9_encode_duration_sec: null !== (s = p.get(d.CodecTypes.VP9)) && void 0 !== s ? s : 0,
-                            codec_av1_encode_duration_sec: null !== (a = p.get(d.CodecTypes.AV1)) && void 0 !== a ? a : 0
+                            codec_h264_encode_duration_sec: null !== (n = p.get(f.CodecTypes.H264)) && void 0 !== n ? n : 0,
+                            codec_h265_encode_duration_sec: null !== (i = p.get(f.CodecTypes.H265)) && void 0 !== i ? i : 0,
+                            codec_vp8_encode_duration_sec: null !== (r = p.get(f.CodecTypes.VP8)) && void 0 !== r ? r : 0,
+                            codec_vp9_encode_duration_sec: null !== (s = p.get(f.CodecTypes.VP9)) && void 0 !== s ? s : 0,
+                            codec_av1_encode_duration_sec: null !== (a = p.get(f.CodecTypes.AV1)) && void 0 !== a ? a : 0
                         }
                     } {
                         let e = this.getDecoderUsageStats();
                         return e.has(t) && (p = e.get(t)), {
                             codec_asymmetric_session: E,
-                            codec_h264_decode_duration_sec: null !== (o = p.get(d.CodecTypes.H264)) && void 0 !== o ? o : 0,
-                            codec_h265_decode_duration_sec: null !== (l = p.get(d.CodecTypes.H265)) && void 0 !== l ? l : 0,
-                            codec_vp8_decode_duration_sec: null !== (u = p.get(d.CodecTypes.VP8)) && void 0 !== u ? u : 0,
-                            codec_vp9_decode_duration_sec: null !== (c = p.get(d.CodecTypes.VP9)) && void 0 !== c ? c : 0,
-                            codec_av1_decode_duration_sec: null !== (f = p.get(d.CodecTypes.AV1)) && void 0 !== f ? f : 0
+                            codec_h264_decode_duration_sec: null !== (o = p.get(f.CodecTypes.H264)) && void 0 !== o ? o : 0,
+                            codec_h265_decode_duration_sec: null !== (l = p.get(f.CodecTypes.H265)) && void 0 !== l ? l : 0,
+                            codec_vp8_decode_duration_sec: null !== (u = p.get(f.CodecTypes.VP8)) && void 0 !== u ? u : 0,
+                            codec_vp9_decode_duration_sec: null !== (c = p.get(f.CodecTypes.VP9)) && void 0 !== c ? c : 0,
+                            codec_av1_decode_duration_sec: null !== (d = p.get(f.CodecTypes.AV1)) && void 0 !== d ? d : 0
                         }
                     }
                 }
@@ -17354,7 +17360,7 @@
                         });
                         let u = [1, 5, 10, 25, 50, 75],
                             c = t.vmafHistogram.getReport(u),
-                            E = t.psnrHistogram.getReport(u),
+                            d = t.psnrHistogram.getReport(u),
                             p = t.targetBitrateHistogram.getReport([1, 5, 10, 25, 50, 75, 99]),
                             h = t.aggregationDuration / 1e3;
                         e.push({
@@ -17369,16 +17375,16 @@
                             target_bitrate_network_percentile75: p.count > 0 ? p.percentiles[75] : null,
                             target_bitrate_network_percentile99: p.count > 0 ? p.percentiles[99] : null,
                             target_bitrate_max: h > 0 ? Math.round((null !== (a = t.targetBytesMax) && void 0 !== a ? a : 0) * 8 / h) : 0,
-                            duration_encoder_nvidia_cuda: f(t.encoderBuckets[d.Encoders.NVIDIA_CUDA]),
-                            duration_encoder_nvidia_direct3d: f(t.encoderBuckets[d.Encoders.NVIDIA_DIRECT_3D]),
-                            duration_encoder_openh264: f(t.encoderBuckets[d.Encoders.OPENH264]),
-                            duration_encoder_videotoolbox: f(t.encoderBuckets[d.Encoders.VIDEOTOOLBOX]),
-                            duration_encoder_amd_direct3d: f(t.encoderBuckets[d.Encoders.AMD_DIRECT_3D]),
-                            duration_encoder_intel: f(t.encoderBuckets[d.Encoders.INTEL]),
-                            duration_encoder_intel_direct3d: f(t.encoderBuckets[d.Encoders.INTEL_DIRECT_3D]),
-                            duration_encoder_vp8_libvpx: f(t.encoderBuckets[d.Encoders.VP8_LIBVPX]),
-                            duration_encoder_uncategorized: f(t.encoderBuckets[d.Encoders.UNCATEGORIZED]),
-                            duration_encoder_unknown: f(t.encoderBuckets[d.Encoders.UNKNOWN]),
+                            duration_encoder_nvidia_cuda: E(t.encoderBuckets[f.Encoders.NVIDIA_CUDA]),
+                            duration_encoder_nvidia_direct3d: E(t.encoderBuckets[f.Encoders.NVIDIA_DIRECT_3D]),
+                            duration_encoder_openh264: E(t.encoderBuckets[f.Encoders.OPENH264]),
+                            duration_encoder_videotoolbox: E(t.encoderBuckets[f.Encoders.VIDEOTOOLBOX]),
+                            duration_encoder_amd_direct3d: E(t.encoderBuckets[f.Encoders.AMD_DIRECT_3D]),
+                            duration_encoder_intel: E(t.encoderBuckets[f.Encoders.INTEL]),
+                            duration_encoder_intel_direct3d: E(t.encoderBuckets[f.Encoders.INTEL_DIRECT_3D]),
+                            duration_encoder_vp8_libvpx: E(t.encoderBuckets[f.Encoders.VP8_LIBVPX]),
+                            duration_encoder_uncategorized: E(t.encoderBuckets[f.Encoders.UNCATEGORIZED]),
+                            duration_encoder_unknown: E(t.encoderBuckets[f.Encoders.UNKNOWN]),
                             quality: o,
                             average_encode_time_ms: t.averageEncodeTime,
                             average_encoder_vmaf_score: t.vmafScoreNum > 0 ? t.vmafScoreSum / t.vmafScoreNum : null,
@@ -17389,12 +17395,12 @@
                             encoder_vmaf_score_percentile50: c.count > 0 ? c.percentiles[50] : null,
                             encoder_vmaf_score_percentile75: c.count > 0 ? c.percentiles[75] : null,
                             average_encoder_psnr_db: t.psnrDbNum > 0 ? t.psnrDbSum / t.psnrDbNum : null,
-                            encoder_psnr_db_percentile1: E.count > 0 ? E.percentiles[1] : null,
-                            encoder_psnr_db_percentile5: E.count > 0 ? E.percentiles[5] : null,
-                            encoder_psnr_db_percentile10: E.count > 0 ? E.percentiles[10] : null,
-                            encoder_psnr_db_percentile25: E.count > 0 ? E.percentiles[25] : null,
-                            encoder_psnr_db_percentile50: E.count > 0 ? E.percentiles[50] : null,
-                            encoder_psnr_db_percentile75: E.count > 0 ? E.percentiles[75] : null,
+                            encoder_psnr_db_percentile1: d.count > 0 ? d.percentiles[1] : null,
+                            encoder_psnr_db_percentile5: d.count > 0 ? d.percentiles[5] : null,
+                            encoder_psnr_db_percentile10: d.count > 0 ? d.percentiles[10] : null,
+                            encoder_psnr_db_percentile25: d.count > 0 ? d.percentiles[25] : null,
+                            encoder_psnr_db_percentile50: d.count > 0 ? d.percentiles[50] : null,
+                            encoder_psnr_db_percentile75: d.count > 0 ? d.percentiles[75] : null,
                             average_outbound_want: t.outboundSinkWantNum > 0 ? t.outboundSinkWantSum / t.outboundSinkWantNum : null,
                             frames_dropped_rate_limiter: t.framesDroppedRateLimiter,
                             frames_dropped_encoder_queue: t.framesDroppedEncoderQueue,
@@ -17409,7 +17415,7 @@
                     delete this.inboundStats[e]
                 }
                 getInboundParticipants() {
-                    return Object.keys(this.inboundStats)
+                    return c.default.keys(this.inboundStats)
                 }
                 updateSendState(e) {
                     null != e.paused && (this.paused.value = e.paused), null != e.receivers && (this.zeroReceivers.value = 0 === e.receivers);
@@ -17431,42 +17437,42 @@
                         c = e.resolutionHistogram.getReport(s),
                         d = {
                             duration: Math.floor(n / 1e3),
-                            duration_aggregation: f(r),
-                            duration_stopped_receiving: f(e.videoStoppedDuration.asSeconds()),
-                            duration_stream_under_8mbps: f(e.bitrateBuckets[8e6]),
-                            duration_stream_under_7mbps: f(e.bitrateBuckets[7e6]),
-                            duration_stream_under_6mbps: f(e.bitrateBuckets[6e6]),
-                            duration_stream_under_5mbps: f(e.bitrateBuckets[5e6]),
-                            duration_stream_under_4mbps: f(e.bitrateBuckets[4e6]),
-                            duration_stream_under_3mbps: f(e.bitrateBuckets[3e6]),
-                            duration_stream_under_2mbps: f(e.bitrateBuckets[2e6]),
-                            duration_stream_under_1_5mbps: f(e.bitrateBuckets[15e5]),
-                            duration_stream_under_1mbps: f(e.bitrateBuckets[1e6]),
-                            duration_stream_under_0_5mbps: f(e.bitrateBuckets[5e5]),
-                            duration_stream_at_0mbps: f(e.bitrateBuckets[0]),
-                            duration_fps_under_60: f(e.fpsBuckets[60]),
-                            duration_fps_under_55: f(e.fpsBuckets[55]),
-                            duration_fps_under_50: f(e.fpsBuckets[50]),
-                            duration_fps_under_45: f(e.fpsBuckets[45]),
-                            duration_fps_under_40: f(e.fpsBuckets[40]),
-                            duration_fps_under_35: f(e.fpsBuckets[35]),
-                            duration_fps_under_30: f(e.fpsBuckets[30]),
-                            duration_fps_under_25: f(e.fpsBuckets[25]),
-                            duration_fps_under_20: f(e.fpsBuckets[20]),
-                            duration_fps_under_15: f(e.fpsBuckets[15]),
-                            duration_fps_under_10: f(e.fpsBuckets[10]),
-                            duration_fps_under_5: f(e.fpsBuckets[5]),
-                            duration_fps_at_0: f(e.fpsBuckets[0]),
+                            duration_aggregation: E(r),
+                            duration_stopped_receiving: E(e.videoStoppedDuration.asSeconds()),
+                            duration_stream_under_8mbps: E(e.bitrateBuckets[8e6]),
+                            duration_stream_under_7mbps: E(e.bitrateBuckets[7e6]),
+                            duration_stream_under_6mbps: E(e.bitrateBuckets[6e6]),
+                            duration_stream_under_5mbps: E(e.bitrateBuckets[5e6]),
+                            duration_stream_under_4mbps: E(e.bitrateBuckets[4e6]),
+                            duration_stream_under_3mbps: E(e.bitrateBuckets[3e6]),
+                            duration_stream_under_2mbps: E(e.bitrateBuckets[2e6]),
+                            duration_stream_under_1_5mbps: E(e.bitrateBuckets[15e5]),
+                            duration_stream_under_1mbps: E(e.bitrateBuckets[1e6]),
+                            duration_stream_under_0_5mbps: E(e.bitrateBuckets[5e5]),
+                            duration_stream_at_0mbps: E(e.bitrateBuckets[0]),
+                            duration_fps_under_60: E(e.fpsBuckets[60]),
+                            duration_fps_under_55: E(e.fpsBuckets[55]),
+                            duration_fps_under_50: E(e.fpsBuckets[50]),
+                            duration_fps_under_45: E(e.fpsBuckets[45]),
+                            duration_fps_under_40: E(e.fpsBuckets[40]),
+                            duration_fps_under_35: E(e.fpsBuckets[35]),
+                            duration_fps_under_30: E(e.fpsBuckets[30]),
+                            duration_fps_under_25: E(e.fpsBuckets[25]),
+                            duration_fps_under_20: E(e.fpsBuckets[20]),
+                            duration_fps_under_15: E(e.fpsBuckets[15]),
+                            duration_fps_under_10: E(e.fpsBuckets[10]),
+                            duration_fps_under_5: E(e.fpsBuckets[5]),
+                            duration_fps_at_0: E(e.fpsBuckets[0]),
                             avg_resolution: e.intervalTotal > 0 ? Math.round(e.resolutionTotal / e.intervalTotal) : 0,
                             avg_minor_resolution: e.intervalTotal > 0 ? Math.round(e.minorResolutionTotal / e.intervalTotal) : 0,
                             avg_major_resolution: e.intervalTotal > 0 ? Math.round(e.majorResolutionTotal / e.intervalTotal) : 0,
-                            duration_resolution_under_720: f(e.resolutionBuckets[720]),
-                            duration_resolution_under_480: f(e.resolutionBuckets[480]),
-                            duration_resolution_under_360: f(e.resolutionBuckets[360]),
+                            duration_resolution_under_720: E(e.resolutionBuckets[720]),
+                            duration_resolution_under_480: E(e.resolutionBuckets[480]),
+                            duration_resolution_under_360: E(e.resolutionBuckets[360]),
                             num_pauses: this.pausedCount,
-                            duration_paused: f(this.paused.totalDuration() / 1e3),
-                            duration_zero_receivers: f(this.zeroReceivers.totalDuration() / 1e3),
-                            duration_video_stopped: f(this.videoStopped.totalDuration() / 1e3),
+                            duration_paused: E(this.paused.totalDuration() / 1e3),
+                            duration_zero_receivers: E(this.zeroReceivers.totalDuration() / 1e3),
+                            duration_video_stopped: E(this.videoStopped.totalDuration() / 1e3),
                             client_performance_cpu_percentile25: a.percentiles[25],
                             client_performance_cpu_percentile50: a.percentiles[50],
                             client_performance_cpu_percentile75: a.percentiles[75],
@@ -17498,11 +17504,11 @@
                             resolution_percentile25: c.percentiles[25],
                             resolution_percentile50: c.percentiles[50],
                             resolution_percentile75: c.percentiles[75],
-                            duration_video_effect: f(this.videoEffectDuration.totalDuration() / 1e3),
+                            duration_video_effect: E(this.videoEffectDuration.totalDuration() / 1e3),
                             cryptor_max_attempts: e.cryptorMaxAttempts
                         },
                         {
-                            bytes: E,
+                            bytes: f,
                             framesDropped: p,
                             framesCodecError: h,
                             framesCodec: _,
@@ -17526,9 +17532,9 @@
                         } = e.aggregatedProperties;
                     return {
                         ...d,
-                        avg_bitrate: r > 0 ? Math.round((null != E ? E : 0) * 8 / r) : 0,
+                        avg_bitrate: r > 0 ? Math.round((null != f ? f : 0) * 8 / r) : 0,
                         avg_fps: r > 0 ? Math.round((null != _ ? _ : 0) / r) : 0,
-                        num_bytes: E,
+                        num_bytes: f,
                         num_packets_lost: T,
                         num_packets: m,
                         num_frames: S,
@@ -17555,7 +17561,7 @@
                     var i, r, a, o;
                     let l = t.transport,
                         c = (0, u.isWeb)() ? 1 : null !== (r = null === (i = l.receiverReports) || void 0 === i ? void 0 : i.length) && void 0 !== r ? r : 0,
-                        f = new Set,
+                        d = new Set,
                         E = new Set;
                     if (this.updateSendState({
                             receivers: c
@@ -17564,8 +17570,8 @@
                                 var i, r, s, a, o, u, c, E, p;
                                 let h = t.ssrc,
                                     _ = this.outboundStats[h];
-                                if (null == _ && (console.warn("Unknown outbound video stream with SSRC: ".concat(h)), _ = new d.OutboundStats(this.timestampProducer), this.outboundStats[h] = _), null == _.timeToFirstFrame && (t.framesEncoded > 0 || (null !== (i = t.frameRateInput) && void 0 !== i ? i : 0) > 0) && (_.timeToFirstFrame = Math.max(0, e - _.startTime)), !this.videoStopped.value) {
-                                    _.appendAndIncrementStats(d.RawVideoStats.parseOutboundStats(t, e)), _.encoderCodec !== d.CodecTypes.UNKNOWN && f.add(_.encoderCodec);
+                                if (null == _ && (console.warn("Unknown outbound video stream with SSRC: ".concat(h)), _ = new f.OutboundStats(this.timestampProducer), this.outboundStats[h] = _), null == _.timeToFirstFrame && (t.framesEncoded > 0 || (null !== (i = t.frameRateInput) && void 0 !== i ? i : 0) > 0) && (_.timeToFirstFrame = Math.max(0, e - _.startTime)), !this.videoStopped.value) {
+                                    _.appendAndIncrementStats(f.RawVideoStats.parseOutboundStats(t, e)), _.encoderCodec !== f.CodecTypes.UNKNOWN && d.add(_.encoderCodec);
                                     let i = null === (r = n.find(e => e.ssrc === h)) || void 0 === r ? void 0 : r.maxBitrate;
                                     _.appendTargetRates(null === (s = n.find(e => e.ssrc === h)) || void 0 === s ? void 0 : s.maxFrameRate, null !== (o = t.bitrateTarget) && void 0 !== o ? o : Math.min(null !== (a = l.availableOutgoingBitrate) && void 0 !== a ? a : 0, null != i ? i : 0), i), _.averageEncodeTime = null !== (u = t.averageEncodeTime) && void 0 !== u ? u : 0, _.framesDroppedRateLimiter = null !== (c = t.framesDroppedRateLimiter) && void 0 !== c ? c : null, _.framesDroppedEncoderQueue = null !== (E = t.framesDroppedEncoderQueue) && void 0 !== E ? E : null, _.framesDroppedCongestionWindow = null !== (p = t.framesDroppedCongestionWindow) && void 0 !== p ? p : null
                                 }
@@ -17574,13 +17580,13 @@
                             let i = t.find(e => "video" === e.type);
                             if (null != i) {
                                 let t = this.inboundStats[n];
-                                null == t && (console.warn("Unknown inbound video stream for user: ".concat(n)), t = new d.InboundStats(this.timestampProducer), this.inboundStats[n] = t);
-                                let r = d.RawVideoStats.parseInboundStats(i, e);
-                                !this.statCollectionPausedUsers.has(n) && t.appendAndIncrementStats(r), r.packets > 0 && this.emit("fps-update", n, r.framesCodec, r.timestamp), t.decoderCodec !== d.CodecTypes.UNKNOWN && E.add(t.decoderCodec), null == t.timeToFirstFrame && i.framesDecoded > 0 && (t.timeToFirstFrame = e - t.startTime)
+                                null == t && (console.warn("Unknown inbound video stream for user: ".concat(n)), t = new f.InboundStats(this.timestampProducer), this.inboundStats[n] = t);
+                                let r = f.RawVideoStats.parseInboundStats(i, e);
+                                !this.statCollectionPausedUsers.has(n) && t.appendAndIncrementStats(r), r.packets > 0 && this.emit("fps-update", n, r.framesCodec, r.timestamp), t.decoderCodec !== f.CodecTypes.UNKNOWN && E.add(t.decoderCodec), null == t.timeToFirstFrame && i.framesDecoded > 0 && (t.timeToFirstFrame = e - t.startTime)
                             }
-                        }), 0 !== f.size && 0 !== E.size) {
+                        }), 0 !== d.size && 0 !== E.size) {
                         ;
-                        if (a = f, o = E, a.size === o.size && Array.from(a).every(e => o.has(e))) this.symmetricCodecUpdates++;
+                        if (a = d, o = E, a.size === o.size && Array.from(a).every(e => o.has(e))) this.symmetricCodecUpdates++;
                         else this.asymmetricCodecUpdates++
                     }
                 }
@@ -17593,13 +17599,13 @@
                     this.videoEffectDuration.value = (null == t ? void 0 : t.type) === "video" && null != t.filter
                 }
                 constructor(e, t = l.TimeStampProducer) {
-                    super(), this.connection = e, this.timestampProducer = t, this.networkQuality = new c.default, this.pausedCount = 0, this.outboundStats = {}, this.inboundStats = {}, this.symmetricCodecUpdates = 0, this.asymmetricCodecUpdates = 0, this.statCollectionPausedUsers = new Set, this.sampleStats = e => {
+                    super(), this.connection = e, this.timestampProducer = t, this.networkQuality = new d.default, this.pausedCount = 0, this.outboundStats = {}, this.inboundStats = {}, this.symmetricCodecUpdates = 0, this.asymmetricCodecUpdates = 0, this.statCollectionPausedUsers = new Set, this.sampleStats = e => {
                         if (null == e) return;
                         let t = this.timestampProducer.now();
                         if (this.networkQuality.incrementNetworkStats(t), this.updateSystemResourceStats(), this.updateVideoEffectStats(e), null == e) return;
                         let n = this.connection.getStreamParameters();
                         this.receivedStats(t, e, n)
-                    }, this.paused = new E(!1, t), this.zeroReceivers = new E(!1, t), this.videoStopped = new E(!1, t), this.videoEffectDuration = new E(!1, t)
+                    }, this.paused = new p(!1, t), this.zeroReceivers = new p(!1, t), this.videoStopped = new p(!1, t), this.videoEffectDuration = new p(!1, t)
                 }
             }
         },
@@ -35841,7 +35847,7 @@
                     if (null != e) return P[e]
                 }
                 getDMUserIds() {
-                    return Object.keys(P)
+                    return m.default.keys(P)
                 }
                 getPrivateChannelsVersion() {
                     return L
@@ -37280,13 +37286,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 getUserIdFromCommunicationDisabledUserKey: function() {
-                    return G
-                },
-                getGuildIdFromCommunicationDisabledUserKey: function() {
                     return w
                 },
+                getGuildIdFromCommunicationDisabledUserKey: function() {
+                    return k
+                },
                 default: function() {
-                    return Q
+                    return Z
                 }
             }), n("222007"), n("702976"), n("424973");
             var i, r, s = n("917351"),
@@ -37300,64 +37306,65 @@
                 E = n("38654"),
                 p = n("568734"),
                 h = n("449008"),
-                _ = n("271938"),
-                S = n("42203"),
-                m = n("305961"),
-                T = n("657944");
-            let g = new c.default("GuildMemberStore"),
-                I = {},
+                _ = n("299039"),
+                S = n("271938"),
+                m = n("42203"),
+                T = n("305961"),
+                g = n("657944");
+            let I = new c.default("GuildMemberStore"),
                 C = {},
                 v = {},
-                A = !1,
-                R = 0,
+                A = {},
+                R = !1,
                 N = 0,
-                O = {},
+                O = 0,
                 D = {},
-                y = {
+                y = {},
+                P = {
                     added: [],
                     removed: []
                 };
 
-            function P(e, t) {
-                if (null == t.communicationDisabledUntil || !(0, d.isMemberCommunicationDisabled)(t)) return L(e, t.userId);
-                let n = U(e, t.userId),
-                    i = v[n];
-                i !== t.communicationDisabledUntil && (0, d.isMemberCommunicationDisabled)(t) && (v[n] = t.communicationDisabledUntil, b(n))
+            function L(e, t) {
+                if (null == t.communicationDisabledUntil || !(0, d.isMemberCommunicationDisabled)(t)) return b(e, t.userId);
+                let n = G(e, t.userId),
+                    i = A[n];
+                i !== t.communicationDisabledUntil && (0, d.isMemberCommunicationDisabled)(t) && (A[n] = t.communicationDisabledUntil, M(n))
             }
 
-            function L(e, t) {
+            function b(e, t) {
                 if (null != t) {
-                    let n = U(e, t);
-                    null != v[n] && b(n), M(U(e, t))
+                    let n = G(e, t);
+                    null != A[n] && M(n), U(G(e, t))
                 } else
-                    for (let t in v) {
-                        let n = w(t);
-                        n === e && (b(t), M(t))
+                    for (let t in A) {
+                        let n = k(t);
+                        n === e && (M(t), U(t))
                     }
             }
 
-            function b(e) {
-                R += 1, O[e] = R
-            }
-
             function M(e) {
-                G(e) === _.default.getId() && (0, f.clearCommunicationDisabledNotice)(w(e)), delete v[e]
+                N += 1, D[e] = N
             }
 
-            function U(e, t) {
+            function U(e) {
+                w(e) === S.default.getId() && (0, f.clearCommunicationDisabledNotice)(k(e)), delete A[e]
+            }
+
+            function G(e, t) {
                 let n = [];
                 return n[0] = e, n[1] = t, n.join("-")
             }
 
-            function G(e) {
+            function w(e) {
                 return e.split("-")[1]
             }
 
-            function w(e) {
+            function k(e) {
                 return e.split("-")[0]
             }
 
-            function k(e, t) {
+            function x(e, t) {
                 let n, i, r, s, a;
                 if (0 === t.length) return {
                     colorString: void 0,
@@ -37386,7 +37393,7 @@
                 }
             }
 
-            function x(e) {
+            function F(e) {
                 let {
                     userId: t,
                     nick: n,
@@ -37403,23 +37410,23 @@
                     fullProfileLoadedTimestamp: p,
                     flags: h
                 } = e, {
-                    colorString: S,
+                    colorString: _,
                     colorRoleId: m,
                     iconRoleId: T,
                     hoistRoleId: g,
-                    highestRoleId: v
-                } = k(a, o), A = {
+                    highestRoleId: I
+                } = x(a, o), A = {
                     userId: t,
                     nick: n,
                     guildId: i,
                     avatar: r,
                     avatarDecoration: s,
                     roles: o,
-                    colorString: S,
+                    colorString: _,
                     colorRoleId: m,
                     iconRoleId: T,
                     hoistRoleId: g,
-                    highestRoleId: v,
+                    highestRoleId: I,
                     premiumSince: l,
                     isPending: u,
                     joinedAt: c,
@@ -37427,28 +37434,28 @@
                     unusualDMActivityUntil: f,
                     fullProfileLoadedTimestamp: p,
                     flags: h
-                }, R = I[i];
+                }, R = C[i];
                 if (null == R) return A;
-                if (t === _.default.getId()) {
+                if (t === S.default.getId()) {
                     if (E.default.isViewingRoles(i) || E.default.isFullServerPreview(i)) {
                         let e = E.default.getViewingRoles(i);
-                        C[i] = {
+                        v[i] = {
                             ...A,
                             ...E.default.getMemberOptions(i),
                             roles: null != e ? Object.keys(e) : []
                         }
-                    } else null != C[i] && delete C[i]
+                    } else null != v[i] && delete v[i]
                 }
                 return A
             }(r = i || (i = {}))[r.GUILD = 0] = "GUILD", r[r.USER = 1] = "USER";
 
-            function F(e) {
+            function V(e) {
                 e.guilds.forEach(e => {
-                    Y(e)
+                    j(e)
                 })
             }
 
-            function V(e) {
+            function B(e) {
                 var t;
                 let {
                     guildId: n,
@@ -37463,11 +37470,11 @@
                     communicationDisabledUntil: d,
                     unusualDMActivityUntil: f,
                     flags: E
-                } = e, p = I[n];
+                } = e, p = C[n];
                 if (null == p) return !1;
-                let h = m.default.getGuild(n);
-                if (null == h) return g.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
-                p[i.id] = x({
+                let h = T.default.getGuild(n);
+                if (null == h) return I.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
+                p[i.id] = F({
                     userId: i.id,
                     nick: r,
                     guildId: n,
@@ -37485,22 +37492,22 @@
                     unusualDMActivityUntil: f,
                     fullProfileLoadedTimestamp: null === (t = p[i.id]) || void 0 === t ? void 0 : t.fullProfileLoadedTimestamp,
                     flags: E
-                }), P(n, p[i.id])
+                }), L(n, p[i.id])
             }
 
-            function B(e, t) {
-                let n = I[e];
+            function H(e, t) {
+                let n = C[e];
                 if (null == n) return !1;
-                let i = m.default.getGuild(e);
-                return null == i ? (g.warn("Guild ".concat(e, " not found during GUILD_MEMBERS_CHUNK.")), !1) : (t.forEach(t => {
+                let i = T.default.getGuild(e);
+                return null == i ? (I.warn("Guild ".concat(e, " not found during GUILD_MEMBERS_CHUNK.")), !1) : (t.forEach(t => {
                     var r;
                     let s = n[t.user.id];
-                    n[t.user.id] = x({
+                    n[t.user.id] = F({
                         userId: t.user.id,
                         nick: t.nick,
                         guildId: e,
                         avatar: t.avatar,
-                        avatarDecoration: H(t),
+                        avatarDecoration: Y(t),
                         guildRoles: i.roles,
                         roles: t.roles,
                         premiumSince: t.premium_since,
@@ -37510,33 +37517,33 @@
                         flags: t.flags,
                         fullProfileLoadedTimestamp: null == s ? void 0 : s.fullProfileLoadedTimestamp,
                         unusualDMActivityUntil: null !== (r = t.unusual_dm_activity_until) && void 0 !== r ? r : null == s ? void 0 : s.unusualDMActivityUntil
-                    }), P(e, n[t.user.id])
-                }), N++, !0)
+                    }), L(e, n[t.user.id])
+                }), O++, !0)
             }
 
-            function H(e) {
+            function Y(e) {
                 return null != e.avatar_decoration_data ? {
                     asset: e.avatar_decoration_data.asset,
                     skuId: e.avatar_decoration_data.sku_id
                 } : void 0
             }
 
-            function Y(e) {
+            function j(e) {
                 let t = e.id;
-                !(t in I) && (I[e.id] = {});
-                let n = m.default.getGuild(t);
+                !(t in C) && (C[e.id] = {});
+                let n = T.default.getGuild(t);
                 if (null == n) return !1;
-                let i = I[t];
+                let i = C[t];
                 for (let s of e.members) {
                     var r;
                     let a = s.user.id,
                         o = i[a],
-                        l = x({
+                        l = F({
                             userId: a,
                             nick: s.nick,
                             guildId: e.id,
                             avatar: s.avatar,
-                            avatarDecoration: H(s),
+                            avatarDecoration: Y(s),
                             guildRoles: n.roles,
                             roles: s.roles,
                             premiumSince: s.premium_since,
@@ -37547,19 +37554,19 @@
                             flags: s.flags,
                             unusualDMActivityUntil: null !== (r = s.unusual_dm_activity_until) && void 0 !== r ? r : null == o ? void 0 : o.unusualDMActivityUntil
                         });
-                    i[a] = l, P(t, l)
+                    i[a] = l, L(t, l)
                 }
                 return !0
             }
 
-            function j(e) {
-                let t = I[e.guildId];
+            function W(e) {
+                let t = C[e.guildId];
                 if (null == t) return !1;
-                let n = m.default.getGuild(e.guildId);
-                if (null == n) return g.warn("Guild ".concat(e.guildId, " not found during ").concat(e.type, ".")), !1;
-                for (let i of Object.keys(t)) {
+                let n = T.default.getGuild(e.guildId);
+                if (null == n) return I.warn("Guild ".concat(e.guildId, " not found during ").concat(e.type, ".")), !1;
+                for (let i of _.default.keys(t)) {
                     let r = t[i];
-                    (null != r.roles && r.roles.length > 0 || null != r.colorString || null != r.hoistRoleId) && (t[i] = x({
+                    (null != r.roles && r.roles.length > 0 || null != r.colorString || null != r.hoistRoleId) && (t[i] = F({
                         userId: i,
                         nick: r.nick,
                         guildId: e.guildId,
@@ -37572,20 +37579,20 @@
                         joinedAt: r.joinedAt,
                         flags: r.flags,
                         fullProfileLoadedTimestamp: null == r ? void 0 : r.fullProfileLoadedTimestamp
-                    }), P(e.guildId, t[i]))
+                    }), L(e.guildId, t[i]))
                 }
             }
 
-            function W(e) {
+            function K(e) {
                 let {
                     guildId: t
-                } = e, n = I[t];
+                } = e, n = C[t];
                 if (null == n) return !1;
-                let i = m.default.getGuild(t);
-                if (null == i) return g.warn("Guild ".concat(t, " not found during IMPERSONATE_UPDATE.")), !1;
-                let r = _.default.getId(),
+                let i = T.default.getGuild(t);
+                if (null == i) return I.warn("Guild ".concat(t, " not found during IMPERSONATE_UPDATE.")), !1;
+                let r = S.default.getId(),
                     s = n[r];
-                n[r] = x({
+                n[r] = F({
                     userId: r,
                     nick: s.nick,
                     guildId: t,
@@ -37602,13 +37609,13 @@
                 })
             }
 
-            function K(e) {
+            function z(e) {
                 var t;
                 let {
                     message: n,
                     guildId: i
                 } = e;
-                (null === (t = n.resolved) || void 0 === t ? void 0 : t.members) != null && null != i && Y({
+                (null === (t = n.resolved) || void 0 === t ? void 0 : t.members) != null && null != i && j({
                     id: i,
                     members: Object.entries(n.resolved.members).map(e => {
                         var t, i;
@@ -37621,15 +37628,15 @@
                 })
             }
 
-            function z(e) {
+            function q(e) {
                 let {
                     messages: t
                 } = e;
                 t.forEach(e => (function(e) {
                     var t;
                     if ((null === (t = e.resolved) || void 0 === t ? void 0 : t.members) == null) return;
-                    let n = S.default.getChannel(e.channel_id);
-                    !(null == n || n.isPrivate()) && Y({
+                    let n = m.default.getChannel(e.channel_id);
+                    !(null == n || n.isPrivate()) && j({
                         id: n.guild_id,
                         members: Object.entries(e.resolved.members).map(t => {
                             var n, i;
@@ -37643,23 +37650,23 @@
                 })(e))
             }
 
-            function q(e) {
+            function X(e) {
                 let {
                     messages: t
                 } = e;
-                t.forEach(e => z({
+                t.forEach(e => q({
                     messages: e
                 }))
             }
-            class X extends l.default.Store {
+            class Q extends l.default.Store {
                 initialize() {
-                    this.waitFor(m.default, _.default, E.default)
+                    this.waitFor(T.default, S.default, E.default)
                 }
                 getMutableAllGuildsAndMembers() {
-                    return I
+                    return C
                 }
                 memberOf(e) {
-                    return a(I).toPairs().filter(t => {
+                    return a(C).toPairs().filter(t => {
                         let [n, i] = t;
                         return null != i[e]
                     }).map(e => {
@@ -37669,9 +37676,9 @@
                 }
                 getNicknameGuildsMapping(e) {
                     let t = {};
-                    for (let i in I) {
+                    for (let i in C) {
                         var n;
-                        let r = I[i],
+                        let r = C[i],
                             s = null === (n = r[e]) || void 0 === n ? void 0 : n.nick;
                         null != s && (!Object.prototype.hasOwnProperty.call(t, s) && (t[s] = []), t[s].push(i))
                     }
@@ -37682,47 +37689,47 @@
                 }
                 isMember(e, t) {
                     if (null == e || null == t) return !1;
-                    let n = I[e];
+                    let n = C[e];
                     return null != n && null != n[t]
                 }
                 isGuestOrLurker(e, t) {
                     var n;
                     if (null == e || null == t) return !1;
-                    let i = I[e];
+                    let i = C[e];
                     return null != i && (null === (n = i[t]) || void 0 === n ? void 0 : n.joinedAt) == null
                 }
                 isCurrentUserGuest(e) {
                     if (null == e) return !1;
-                    let t = _.default.getId(),
-                        n = I[e];
+                    let t = S.default.getId(),
+                        n = C[e];
                     if (null == n || null == n[t]) return !1;
                     let i = n[t].flags;
-                    return null != i && (0, p.hasFlag)(i, T.GuildMemberFlags.IS_GUEST)
+                    return null != i && (0, p.hasFlag)(i, g.GuildMemberFlags.IS_GUEST)
                 }
                 getMemberIds(e) {
                     if (null == e) return [];
-                    let t = I[e];
-                    return null == t ? [] : Object.keys(t)
+                    let t = C[e];
+                    return null == t ? [] : _.default.keys(t)
                 }
                 getMembers(e) {
                     if (null == e) return [];
-                    let t = I[e];
+                    let t = C[e];
                     return null == t ? [] : Object.values(t)
                 }
                 getTrueMember(e, t) {
-                    let n = I[e];
+                    let n = C[e];
                     return null != n ? n[t] : null
                 }
                 getMember(e, t) {
                     let n = this.getTrueMember(e, t);
-                    if (null != n && t === _.default.getId() && (E.default.isViewingRoles(e) || E.default.isFullServerPreview(e))) {
+                    if (null != n && t === S.default.getId() && (E.default.isViewingRoles(e) || E.default.isFullServerPreview(e))) {
                         var i;
-                        return null !== (i = C[e]) && void 0 !== i ? i : n
+                        return null !== (i = v[e]) && void 0 !== i ? i : n
                     }
                     return n
                 }
                 getSelfMember(e) {
-                    return this.getMember(e, _.default.getId())
+                    return this.getMember(e, S.default.getId())
                 }
                 getNick(e, t) {
                     if (null == e || null == t) return null;
@@ -37730,38 +37737,38 @@
                     return null != n ? n.nick : null
                 }
                 getCommunicationDisabledUserMap() {
-                    return v
+                    return A
                 }
                 getCommunicationDisabledVersion() {
-                    return R
+                    return N
                 }
                 getPendingRoleUpdates(e) {
                     var t;
-                    return null !== (t = D[e]) && void 0 !== t ? t : y
+                    return null !== (t = y[e]) && void 0 !== t ? t : P
                 }
                 getMemberRoleWithPendingUpdates(e, t) {
                     var n, i;
                     let r = null !== (i = null === (n = this.getMember(e, t)) || void 0 === n ? void 0 : n.roles) && void 0 !== i ? i : [],
-                        s = D[e];
+                        s = y[e];
                     return null == s ? r : a.difference(a.union(r, s.added), s.removed)
                 }
                 getMemberVersion() {
-                    return N
+                    return O
                 }
             }
-            X.displayName = "GuildMemberStore";
-            var Q = new X(u.default, {
+            Q.displayName = "GuildMemberStore";
+            var Z = new Q(u.default, {
                 CONNECTION_OPEN: function(e) {
-                    A ? A = !1 : I = {}, v = {}, F(e)
+                    R ? R = !1 : C = {}, A = {}, V(e)
                 },
                 CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
-                    F(e)
+                    V(e)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         guildMembers: t
                     } = e;
-                    I = {
+                    C = {
                         ...t
                     }
                 },
@@ -37769,7 +37776,7 @@
                     let {
                         guildMembers: t
                     } = e;
-                    A = !0, I = {
+                    R = !0, C = {
                         ...t
                     }
                 },
@@ -37777,16 +37784,16 @@
                     let {
                         guild: t
                     } = e;
-                    return Y(t)
+                    return j(t)
                 },
                 GUILD_DELETE: function(e) {
                     let {
                         guild: t
                     } = e;
-                    delete I[t.id], L(t.id)
+                    delete C[t.id], b(t.id)
                 },
-                GUILD_MEMBER_ADD: V,
-                GUILD_MEMBER_UPDATE: V,
+                GUILD_MEMBER_ADD: B,
+                GUILD_MEMBER_UPDATE: B,
                 GUILD_MEMBER_UPDATE_LOCAL: function(e) {
                     var t, n, i;
                     let {
@@ -37795,15 +37802,15 @@
                         addedRoleIds: o,
                         removedRoleIds: l,
                         flags: u
-                    } = e, c = _.default.getId(), d = I[r], f = null != d ? d[c] : null;
+                    } = e, c = S.default.getId(), d = C[r], f = null != d ? d[c] : null;
                     if (null == f) return !1;
-                    let E = m.default.getGuild(r);
+                    let E = T.default.getGuild(r);
                     if (null == E) return !1;
-                    let p = null !== (t = D[r]) && void 0 !== t ? t : {};
-                    D[r] = {
+                    let p = null !== (t = y[r]) && void 0 !== t ? t : {};
+                    y[r] = {
                         added: a.difference(a.union(null !== (n = p.added) && void 0 !== n ? n : [], o), null != l ? l : []),
                         removed: a.difference(a.union(null !== (i = p.removed) && void 0 !== i ? i : [], l), null != o ? o : [])
-                    }, d[c] = x({
+                    }, d[c] = F({
                         userId: c,
                         guildId: r,
                         nick: f.nick,
@@ -37819,59 +37826,59 @@
                     })
                 },
                 GUILD_MEMBERS_CHUNK: function(e) {
-                    return B(e.guildId, e.members)
+                    return H(e.guildId, e.members)
                 },
                 GUILD_MEMBER_REMOVE: function(e) {
                     let {
                         guildId: t,
                         user: n
-                    } = e, i = I[t];
+                    } = e, i = C[t];
                     if (null == i || null == i[n.id]) return !1;
-                    delete i[n.id], L(t, n.id), N++
+                    delete i[n.id], b(t, n.id), O++
                 },
                 THREAD_MEMBER_LIST_UPDATE: function(e) {
                     let {
                         guildId: t,
                         members: n
                     } = e;
-                    return B(t, n.map(e => e.member).filter(h.isNotNullish))
+                    return H(t, n.map(e => e.member).filter(h.isNotNullish))
                 },
                 THREAD_MEMBERS_UPDATE: function(e) {
                     let {
                         guildId: t,
                         addedMembers: n
                     } = e;
-                    return null != n && B(t, n.map(e => e.member).filter(h.isNotNullish))
+                    return null != n && H(t, n.map(e => e.member).filter(h.isNotNullish))
                 },
                 LOAD_ARCHIVED_THREADS_SUCCESS: function(e) {
                     let {
                         guildId: t,
                         owners: n
                     } = e;
-                    return B(t, n)
+                    return H(t, n)
                 },
                 LOAD_FORUM_POSTS: function(e) {
                     let {
                         guildId: t,
                         threads: n
                     } = e;
-                    return B(t, Object.values(n).map(e => e.owner).filter(h.isNotNullish))
+                    return H(t, Object.values(n).map(e => e.owner).filter(h.isNotNullish))
                 },
-                GUILD_ROLE_UPDATE: j,
-                GUILD_ROLE_DELETE: j,
+                GUILD_ROLE_UPDATE: W,
+                GUILD_ROLE_DELETE: W,
                 GUILD_ROLE_MEMBER_REMOVE: function(e) {
                     let {
                         guildId: t,
                         userId: n,
                         roleId: i
-                    } = e, r = I[t];
+                    } = e, r = C[t];
                     if (null == r) return !1;
-                    let s = m.default.getGuild(t);
-                    if (null == s) return g.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), !1;
+                    let s = T.default.getGuild(t);
+                    if (null == s) return I.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), !1;
                     let a = r[n];
                     if (null == a || !a.roles.includes(i)) return !1;
                     a.roles = a.roles.filter(e => e !== i);
-                    let o = k(s.roles, a.roles);
+                    let o = x(s.roles, a.roles);
                     return r[n] = {
                         ...a,
                         ...o
@@ -37882,14 +37889,14 @@
                         guildId: t,
                         userId: n,
                         roleId: i
-                    } = e, r = I[t];
+                    } = e, r = C[t];
                     if (null == r) return !1;
-                    let s = m.default.getGuild(t);
-                    if (null == s) return g.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), !1;
+                    let s = T.default.getGuild(t);
+                    if (null == s) return I.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), !1;
                     let a = r[n];
                     if (null == a || a.roles.includes(i)) return !1;
                     a.roles.push(i);
-                    let o = k(s.roles, a.roles);
+                    let o = x(s.roles, a.roles);
                     return r[n] = {
                         ...a,
                         ...o
@@ -37899,16 +37906,16 @@
                     let {
                         guildMember: t,
                         guildId: n
-                    } = e, i = I[n];
+                    } = e, i = C[n];
                     if (null == i) return !1;
-                    let r = m.default.getGuild(n);
-                    if (null == r) return g.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
-                    i[t.user.id] = x({
+                    let r = T.default.getGuild(n);
+                    if (null == r) return I.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
+                    i[t.user.id] = F({
                         userId: t.user.id,
                         nick: t.nick,
                         guildId: n,
                         avatar: t.avatar,
-                        avatarDecoration: H(t),
+                        avatarDecoration: Y(t),
                         guildRoles: r.roles,
                         roles: t.roles,
                         premiumSince: t.premium_since,
@@ -37918,36 +37925,36 @@
                         unusualDMActivityUntil: t.unusual_dm_activity_until,
                         flags: t.flags,
                         fullProfileLoadedTimestamp: Date.now()
-                    }), P(n, i[t.user.id])
+                    }), L(n, i[t.user.id])
                 },
-                IMPERSONATE_UPDATE: W,
-                IMPERSONATE_STOP: W,
+                IMPERSONATE_UPDATE: K,
+                IMPERSONATE_STOP: K,
                 PASSIVE_UPDATE_V1: function(e) {
-                    return null != e.members && B(e.guildId, e.members)
+                    return null != e.members && H(e.guildId, e.members)
                 },
                 CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES: function(e) {
                     let {
                         guildId: t
                     } = e;
                     if (null == t) return !1;
-                    delete D[t]
+                    delete y[t]
                 },
                 LOCAL_MESSAGES_LOADED: function(e) {
                     var t, n;
-                    if (null == e.guildId || null == m.default.getGuild(e.guildId)) return !1;
-                    A = !0, I[e.guildId] = null !== (t = I[e.guildId]) && void 0 !== t ? t : {};
+                    if (null == e.guildId || null == T.default.getGuild(e.guildId)) return !1;
+                    R = !0, C[e.guildId] = null !== (t = C[e.guildId]) && void 0 !== t ? t : {};
                     let i = !1;
-                    for (let t of (A = !0, I[e.guildId] = null !== (n = I[e.guildId]) && void 0 !== n ? n : {}, e.members)) null == I[e.guildId][t.userId] && (i = !0, I[e.guildId][t.userId] = t);
+                    for (let t of (R = !0, C[e.guildId] = null !== (n = C[e.guildId]) && void 0 !== n ? n : {}, e.members)) null == C[e.guildId][t.userId] && (i = !0, C[e.guildId][t.userId] = t);
                     return i
                 },
-                MESSAGE_CREATE: K,
-                MESSAGE_UPDATE: K,
-                LOAD_MESSAGES_SUCCESS: z,
-                LOAD_MESSAGES_AROUND_SUCCESS: z,
-                LOAD_PINNED_MESSAGES_SUCCESS: z,
-                LOAD_RECENT_MENTIONS_SUCCESS: z,
-                SEARCH_FINISH: q,
-                MOD_VIEW_SEARCH_FINISH: q,
+                MESSAGE_CREATE: z,
+                MESSAGE_UPDATE: z,
+                LOAD_MESSAGES_SUCCESS: q,
+                LOAD_MESSAGES_AROUND_SUCCESS: q,
+                LOAD_PINNED_MESSAGES_SUCCESS: q,
+                LOAD_RECENT_MENTIONS_SUCCESS: q,
+                SEARCH_FINISH: X,
+                MOD_VIEW_SEARCH_FINISH: X,
                 MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: function(e) {
                     let {
                         guildId: t,
@@ -37958,7 +37965,7 @@
                         } = e;
                         return t
                     });
-                    return B(t, i)
+                    return H(t, i)
                 }
             })
         },
@@ -41139,120 +41146,121 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return T
                 }
-            });
+            }), n("222007");
             var i = n("917351"),
                 r = n.n(i),
                 s = n("446674"),
                 a = n("913144"),
-                o = n("697218"),
-                l = n("49111");
-            let u = {},
-                c = {},
+                o = n("299039"),
+                l = n("697218"),
+                u = n("49111");
+            let c = {},
                 d = {},
-                f = 0,
+                f = {},
                 E = 0,
                 p = 0,
-                h = 0;
+                h = 0,
+                _ = 0;
 
-            function _() {
-                let e = Object.values(u);
-                h = e.length;
+            function S() {
+                let e = Object.values(c);
+                _ = e.length;
                 let {
-                    [l.RelationshipTypes.PENDING_INCOMING]: t = 0, [l.RelationshipTypes.PENDING_OUTGOING]: n = 0, [l.RelationshipTypes.FRIEND]: i = 0
-                } = r.countBy(Object.values(u), e => e);
-                f = t, E = n, p = i
+                    [u.RelationshipTypes.PENDING_INCOMING]: t = 0, [u.RelationshipTypes.PENDING_OUTGOING]: n = 0, [u.RelationshipTypes.FRIEND]: i = 0
+                } = r.countBy(Object.values(c), e => e);
+                E = t, p = n, h = i
             }
-            class S extends s.default.Store {
+            class m extends s.default.Store {
                 initialize() {
-                    this.waitFor(o.default)
+                    this.waitFor(l.default)
                 }
                 isFriend(e) {
-                    return u[e] === l.RelationshipTypes.FRIEND
+                    return c[e] === u.RelationshipTypes.FRIEND
                 }
                 isBlocked(e) {
-                    return u[e] === l.RelationshipTypes.BLOCKED
+                    return c[e] === u.RelationshipTypes.BLOCKED
                 }
                 getPendingCount() {
-                    return f
-                }
-                getOutgoingCount() {
                     return E
                 }
-                getFriendCount() {
+                getOutgoingCount() {
                     return p
                 }
-                getRelationshipCount() {
+                getFriendCount() {
                     return h
                 }
+                getRelationshipCount() {
+                    return _
+                }
                 getRelationships() {
-                    return u
+                    return c
                 }
                 getRelationshipType(e) {
-                    let t = u[e];
-                    return null != t ? t : l.RelationshipTypes.NONE
+                    let t = c[e];
+                    return null != t ? t : u.RelationshipTypes.NONE
                 }
                 getNickname(e) {
-                    let t = c[e];
+                    let t = d[e];
                     return t
                 }
                 getSince(e) {
-                    return d[e]
+                    return f[e]
                 }
                 getSinces() {
-                    return d
+                    return f
                 }
                 getFriendIDs() {
-                    return Object.keys(u).filter(e => u[e] === l.RelationshipTypes.FRIEND)
+                    return o.default.keys(c).filter(e => c[e] === u.RelationshipTypes.FRIEND)
                 }
             }
-            S.displayName = "RelationshipStore";
-            var m = new S(a.default, {
+            m.displayName = "RelationshipStore";
+            var T = new m(a.default, {
                 CONNECTION_OPEN: function(e) {
-                    u = {}, c = {}, d = {}, e.relationships.forEach(e => {
-                        u[e.id] = e.type, null != e.nickname && (c[e.id] = e.nickname), null != e.since && (d[e.id] = e.since)
-                    }), _()
+                    c = {}, d = {}, f = {}, e.relationships.forEach(e => {
+                        c[e.id] = e.type, null != e.nickname && (d[e.id] = e.nickname), null != e.since && (f[e.id] = e.since)
+                    }), S()
                 },
                 OVERLAY_INITIALIZE: function(e) {
-                    u = {
+                    c = {
                         ...e.relationships
-                    }, _()
+                    }, S()
                 },
                 RELATIONSHIP_ADD: function(e) {
-                    let t = u[e.relationship.id];
-                    u = {
-                        ...u,
-                        [e.relationship.id]: e.relationship.type
-                    }, null != e.relationship.nickname && (c = {
+                    let t = c[e.relationship.id];
+                    c = {
                         ...c,
-                        [e.relationship.id]: e.relationship.nickname
-                    }), null != e.relationship.since && (d = {
+                        [e.relationship.id]: e.relationship.type
+                    }, null != e.relationship.nickname && (d = {
                         ...d,
+                        [e.relationship.id]: e.relationship.nickname
+                    }), null != e.relationship.since && (f = {
+                        ...f,
                         [e.relationship.id]: e.relationship.since
-                    }), _(), e.relationship.type === l.RelationshipTypes.FRIEND && t === l.RelationshipTypes.PENDING_OUTGOING && a.default.dispatch({
+                    }), S(), e.relationship.type === u.RelationshipTypes.FRIEND && t === u.RelationshipTypes.PENDING_OUTGOING && a.default.dispatch({
                         type: "FRIEND_REQUEST_ACCEPTED",
                         user: e.relationship.user
                     })
                 },
                 RELATIONSHIP_REMOVE: function(e) {
-                    u = {
-                        ...u
-                    }, delete u[e.relationship.id], null != c[e.relationship.id] && (c = {
+                    c = {
                         ...c
-                    }, delete c[e.relationship.id]), null != d[e.relationship.id] && (d = {
+                    }, delete c[e.relationship.id], null != d[e.relationship.id] && (d = {
                         ...d
-                    }, delete d[e.relationship.id]), _()
+                    }, delete d[e.relationship.id]), null != f[e.relationship.id] && (f = {
+                        ...f
+                    }, delete f[e.relationship.id]), S()
                 },
                 RELATIONSHIP_UPDATE: function(e) {
-                    null == e.relationship.since ? delete d[e.relationship.id] : d[e.relationship.id] = e.relationship.since, null == e.relationship.nickname ? delete c[e.relationship.id] : c[e.relationship.id] = e.relationship.nickname
+                    null == e.relationship.since ? delete f[e.relationship.id] : f[e.relationship.id] = e.relationship.since, null == e.relationship.nickname ? delete d[e.relationship.id] : d[e.relationship.id] = e.relationship.nickname
                 },
                 RELATIONSHIP_PENDING_INCOMING_REMOVED: function(e) {
-                    Object.keys(u = {
-                        ...u
-                    }).forEach(e => {
-                        u[e] === l.RelationshipTypes.PENDING_INCOMING && delete u[e]
-                    }), _()
+                    c = {
+                        ...c
+                    }, o.default.keys(c).forEach(e => {
+                        c[e] === u.RelationshipTypes.PENDING_INCOMING && delete c[e]
+                    }), S()
                 }
             })
         },
@@ -43335,7 +43343,7 @@
             let i, r;
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return O
                 }
             }), n("808653"), n("222007");
             var s = n("917351"),
@@ -43343,43 +43351,44 @@
                 o = n("446674"),
                 l = n("913144"),
                 u = n("628454"),
-                c = n("49111"),
-                d = n("99795");
-            let f = 0,
-                E = 0,
-                p = {},
+                c = n("299039"),
+                d = n("49111"),
+                f = n("99795");
+            let E = 0,
+                p = 0,
                 h = {},
                 _ = {},
                 S = {},
-                m = {};
+                m = {},
+                T = {};
 
-            function T(e, t) {
+            function g(e, t) {
                 return "".concat(e, ":").concat(t)
             }
 
-            function g(e, t) {
+            function I(e, t) {
                 let n = e[t];
                 return null == n && (n = {}, e[t] = n), n
             }
 
-            function I(e) {
+            function C(e) {
                 var t;
-                let n = null !== (t = p[c.ME]) && void 0 !== t ? t : {},
+                let n = null !== (t = h[d.ME]) && void 0 !== t ? t : {},
                     i = {};
                 a.each(n, (t, n) => {
                     t.channelId !== e && (i[n] = t)
-                }), p[c.ME] = i
+                }), h[d.ME] = i
             }
 
-            function C(e, t, n) {
-                let i = g(p, null != e ? e : c.ME),
+            function v(e, t, n) {
+                let i = I(h, null != e ? e : d.ME),
                     r = i[t],
                     s = n(r);
-                return r === s ? [!1, s, r] : (null != r && (delete i[t], null != r.channelId && (delete g(h, r.channelId)[t], delete g(_, r.channelId)[t]), null != r.sessionId && delete g(S, t)[r.sessionId]), null != s && (i[t] = s, null != s.channelId && (g(h, s.channelId)[t] = s, s.selfVideo && (g(_, s.channelId)[t] = s)), null != s.sessionId && (g(S, t)[s.sessionId] = s)), [!0, s, r])
+                return r === s ? [!1, s, r] : (null != r && (delete i[t], null != r.channelId && (delete I(_, r.channelId)[t], delete I(S, r.channelId)[t]), null != r.sessionId && delete I(m, t)[r.sessionId]), null != s && (i[t] = s, null != s.channelId && (I(_, s.channelId)[t] = s, s.selfVideo && (I(S, s.channelId)[t] = s)), null != s.sessionId && (I(m, t)[s.sessionId] = s)), [!0, s, r])
             }
 
-            function v(e, t) {
-                return C(e, t.userId, e => {
+            function A(e, t) {
+                return v(e, t.userId, e => {
                     if (null == t.channelId) return null;
                     {
                         let n = {
@@ -43400,29 +43409,29 @@
                 })
             }
 
-            function A(e) {
+            function R(e) {
                 let {
                     guild: t
                 } = e;
-                a.forEach(p[t.id], e => {
-                    C(t.id, e.userId, () => null)
-                }), delete p[t.id]
+                a.forEach(h[t.id], e => {
+                    v(t.id, e.userId, () => null)
+                }), delete h[t.id]
             }
-            class R extends o.default.Store {
+            class N extends o.default.Store {
                 getAllVoiceStates() {
-                    return p
+                    return h
                 }
                 getVoiceStateVersion() {
-                    return E
+                    return p
                 }
                 getVoiceStates(e) {
-                    return g(p, null != e ? e : c.ME)
+                    return I(h, null != e ? e : d.ME)
                 }
                 getVoiceStatesForChannel(e) {
-                    return g(h, e)
+                    return I(_, e)
                 }
                 getVideoVoiceStatesForChannel(e) {
-                    return g(_, e)
+                    return I(S, e)
                 }
                 getVoiceState(e, t) {
                     return this.getVoiceStates(e)[t]
@@ -43430,14 +43439,14 @@
                 getVoiceStateForChannel(e) {
                     var t;
                     let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i;
-                    return null === (t = g(h, e)) || void 0 === t ? void 0 : t[n]
+                    return null === (t = I(_, e)) || void 0 === t ? void 0 : t[n]
                 }
                 getVoiceStateForUser(e) {
-                    return Object.values(g(S, e))[0]
+                    return Object.values(I(m, e))[0]
                 }
                 getVoiceStateForSession(e, t) {
                     var n;
-                    return null != t ? null === (n = g(S, e)) || void 0 === n ? void 0 : n[t] : null
+                    return null != t ? null === (n = I(m, e)) || void 0 === n ? void 0 : n[t] : null
                 }
                 getUserVoiceChannelId(e, t) {
                     var n;
@@ -43449,7 +43458,7 @@
                 }
                 isCurrentClientInVoiceChannel() {
                     var e;
-                    return null != r && (null === (e = S[i]) || void 0 === e ? void 0 : e[r]) != null
+                    return null != r && (null === (e = m[i]) || void 0 === e ? void 0 : e[r]) != null
                 }
                 isInChannel(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i;
@@ -43458,25 +43467,25 @@
                     return null != n && (t !== i || null != r && n.sessionId === r)
                 }
                 hasVideo(e) {
-                    return Object.values(g(_, e)).length > 0
+                    return Object.values(I(S, e)).length > 0
                 }
                 getVoicePlatformForChannel(e, t) {
                     var n, s;
-                    let a = null != r && (null === (s = S[i]) || void 0 === s ? void 0 : null === (n = s[r]) || void 0 === n ? void 0 : n.channelId);
-                    return t === i && e === a ? d.VoicePlatforms.DESKTOP : m[T(t, e)]
+                    let a = null != r && (null === (s = m[i]) || void 0 === s ? void 0 : null === (n = s[r]) || void 0 === n ? void 0 : n.channelId);
+                    return t === i && e === a ? f.VoicePlatforms.DESKTOP : T[g(t, e)]
                 }
                 get userHasBeenMovedVersion() {
-                    return f
+                    return E
                 }
             }
-            R.displayName = "VoiceStateStore";
-            var N = new R(l.default, {
+            N.displayName = "VoiceStateStore";
+            var O = new N(l.default, {
                 CONNECTION_OPEN: function(e) {
                     let {
                         user: t,
                         sessionId: n
                     } = e;
-                    p = {}, h = {}, S = {}, _ = {}, i = t.id, r = n
+                    h = {}, _ = {}, m = {}, S = {}, i = t.id, r = n
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     let {
@@ -43484,15 +43493,15 @@
                         user: n,
                         sessionId: s
                     } = e;
-                    for (let [e, n] of(p = {}, h = {}, S = {}, _ = {}, Object.entries(t)))
-                        for (let [t, i] of Object.entries(n)) C(e, t, () => new u.default(i));
+                    for (let [e, n] of(h = {}, _ = {}, m = {}, S = {}, Object.entries(t)))
+                        for (let [t, i] of Object.entries(n)) v(e, t, () => new u.default(i));
                     i = n.id, r = s
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t,
                         channelId: n
-                    } = e, [r] = C(t, i, e => null == e ? void 0 : e.set("channelId", n));
+                    } = e, [r] = v(t, i, e => null == e ? void 0 : e.set("channelId", n));
                     return r
                 },
                 VOICE_STATE_UPDATES: function(e) {
@@ -43500,35 +43509,35 @@
                         voiceStates: t
                     } = e;
                     return t.reduce((e, t) => {
-                        let [n, i, s] = v(t.guildId, t);
-                        return n ? (t.sessionId === r && null != i && null != s && s.channelId !== i.channelId && (f += 1), E++, !0) : e
+                        let [n, i, s] = A(t.guildId, t);
+                        return n ? (t.sessionId === r && null != i && null != s && s.channelId !== i.channelId && (E += 1), p++, !0) : e
                     }, !1)
                 },
-                GUILD_DELETE: A,
-                GUILD_CREATE: A,
+                GUILD_DELETE: R,
+                GUILD_CREATE: R,
                 CHANNEL_DELETE: function(e) {
                     let {
                         channel: t
                     } = e;
-                    I(t.id)
+                    C(t.id)
                 },
                 CALL_DELETE: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    I(t)
+                    C(t)
                 },
                 PASSIVE_UPDATE_V1: function(e) {
                     var t, n;
                     let i = !1,
-                        r = Object.keys(null !== (t = p[e.guildId]) && void 0 !== t ? t : {}),
+                        r = c.default.keys(null !== (t = h[e.guildId]) && void 0 !== t ? t : {}),
                         s = new Set(r);
                     for (let t of null !== (n = e.voiceStates) && void 0 !== n ? n : []) {
-                        let [n] = v(e.guildId, t);
+                        let [n] = A(e.guildId, t);
                         i = i || n, s.delete(t.userId)
                     }
-                    for (let t of s) C(e.guildId, t, () => null), i = !0;
-                    return i && E++, i
+                    for (let t of s) v(e.guildId, t, () => null), i = !0;
+                    return i && p++, i
                 },
                 RTC_CONNECTION_PLATFORM: function(e) {
                     let {
@@ -43536,7 +43545,7 @@
                         channelId: n,
                         platform: i
                     } = e;
-                    m[T(t, n)] = i
+                    T[g(t, n)] = i
                 }
             })
         },
@@ -50082,7 +50091,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "268904"
+                                build_number: "268912"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -50567,7 +50576,7 @@
                     } else s = null != s ? s : {}, n = r;
                     if (null == n) return T;
                     let d = {
-                        userId: "",
+                        userId: m.EMPTY_STRING_USER_ID,
                         nick: "",
                         guildId: n.id,
                         guildMemberAvatar: null,
@@ -50580,7 +50589,7 @@
                         communicationDisabledUntil: null
                     };
                     return y({
-                        userId: "",
+                        userId: m.EMPTY_STRING_USER_ID,
                         member: d,
                         guild: n,
                         overwrites: s,
@@ -52320,25 +52329,30 @@
             "use strict";
             n.r(t), n.d(t, {
                 DISCORD_EPOCH: function() {
-                    return i.DISCORD_EPOCH
+                    return s.DISCORD_EPOCH
                 },
                 default: function() {
-                    return r
+                    return a
                 }
             });
-            var i = n("249654"),
-                r = {
-                    age: i.default.age,
-                    extractTimestamp: i.default.extractTimestamp,
-                    compare: i.default.compare,
+            var i = n("917351"),
+                r = n.n(i),
+                s = n("249654"),
+                a = {
+                    age: s.default.age,
+                    extractTimestamp: s.default.extractTimestamp,
+                    compare: s.default.compare,
                     atPreviousMillisecond: function(e) {
-                        return i.default.atPreviousMillisecond(e)
+                        return s.default.atPreviousMillisecond(e)
                     },
                     fromTimestamp: function(e) {
-                        return i.default.fromTimestamp(e)
+                        return s.default.fromTimestamp(e)
                     },
                     keys: function(e) {
                         return Object.keys(e)
+                    },
+                    forEach: function(e, t) {
+                        r.forEach(e, (e, n) => t(e, n))
                     },
                     forEachKey: function(e, t) {
                         for (let n in e) t(n)
@@ -64134,4 +64148,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.067b99cacea59f06e9d5.js.map
+//# sourceMappingURL=21201.42de7cb137ba90c86bd1.js.map
