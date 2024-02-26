@@ -1,25 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2021-09_watch_together_rollout",
-    "label": "Exposure tracking for Watch Together (do not override)",
-    "description": [
-      "Not Eligible",
-      "Control Bucket"
-    ],
     "hash": 3607703918,
-    "buckets": [
-      -1,
-      0
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "enabled"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [

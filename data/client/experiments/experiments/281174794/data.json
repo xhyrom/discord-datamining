@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2022-12_activities_auto_suggest",
-    "label": "Activities Auto Suggest",
+    "id": "2023-08-30_open-in-popout",
+    "label": "Open Channel in Popout",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable VC Activities Mini Shelf"
+      "Treatment 1: Enabled"
     ],
-    "hash": 2732395257,
+    "hash": 281174794,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enableCenterControlTrayMiniShelf"
+      "enabled"
     ]
   }
 }
