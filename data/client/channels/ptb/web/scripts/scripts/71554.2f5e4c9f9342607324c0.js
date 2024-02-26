@@ -136,10 +136,10 @@
                     return eN
                 },
                 popupBridgeCallback: function() {
-                    return eR
+                    return eA
                 },
                 fetchIpCountryCode: function() {
-                    return eA
+                    return eR
                 },
                 fetchLocalizedPromo: function() {
                     return eC
@@ -171,8 +171,8 @@
                 f = n("520713"),
                 p = n("49111"),
                 N = n("422487"),
-                R = n("843455"),
-                A = n("782340");
+                A = n("843455"),
+                R = n("782340");
             async function C(e) {
                 a.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_REMOVE_START"
@@ -292,7 +292,7 @@
             function D(e) {
                 var t;
                 return p.VAULTABLE_PAYMENT_SOURCES.has(e.type) ? null : JSON.stringify({
-                    type: null !== (t = R.ADYEN_PAYMENT_SOURCES.get(e.type)) && void 0 !== t ? t : null
+                    type: null !== (t = A.ADYEN_PAYMENT_SOURCES.get(e.type)) && void 0 !== t ? t : null
                 })
             }
             async function m(e, t, n, r) {
@@ -343,7 +343,7 @@
             function y(e) {
                 var t, n;
                 let r, i, l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                    u = A.default.Messages.PAYMENT_METHOD_CONFIRMATION_ERROR;
+                    u = R.default.Messages.PAYMENT_METHOD_CONFIRMATION_ERROR;
                 if (t = e, N.StripeErrorTypes.includes(t.type)) {
                     ;
                     let t = null != e.message ? "".concat(u, ": ").concat(e.message) : u,
@@ -644,7 +644,7 @@
                         postalCode: _,
                         country: E
                     } = t,
-                    c = R.STRIPE_PAYMENT_SOURCES.get(n);
+                    c = A.STRIPE_PAYMENT_SOURCES.get(n);
                 l(null != c, "unsupported payment method type");
                 let {
                     paymentMethod: I,
@@ -673,7 +673,7 @@
             async function x(e, t, n) {
                 let r = await g(e),
                     i = {
-                        type: R.ADYEN_PAYMENT_SOURCES.get(t)
+                        type: A.ADYEN_PAYMENT_SOURCES.get(t)
                     };
                 return m(p.PaymentGateways.ADYEN, JSON.stringify(i), e, {
                     billingAddressToken: r,
@@ -684,7 +684,7 @@
                 var i;
                 let l = await g(e),
                     d = {
-                        type: R.ADYEN_PAYMENT_SOURCES.get(t),
+                        type: A.ADYEN_PAYMENT_SOURCES.get(t),
                         ...null !== (i = null == r ? void 0 : r.paymentMethod) && void 0 !== i ? i : {}
                     },
                     _ = await eN(t),
@@ -738,30 +738,30 @@
                     }
                 };
                 switch (e.type) {
-                    case R.PaymentSourceTypes.GIROPAY:
+                    case A.PaymentSourceTypes.GIROPAY:
                         E.type = "giropay";
                         break;
-                    case R.PaymentSourceTypes.SOFORT:
+                    case A.PaymentSourceTypes.SOFORT:
                         E.type = "sofort", E.sofort = {
                             country: null != _ ? _ : ""
                         }, E.billing_details.email = n;
                         break;
-                    case R.PaymentSourceTypes.BANCONTACT:
+                    case A.PaymentSourceTypes.BANCONTACT:
                         E.type = "bancontact";
                         break;
-                    case R.PaymentSourceTypes.IDEAL:
+                    case A.PaymentSourceTypes.IDEAL:
                         if (null == e.bank) throw new o.BillingError("iDEAL missing bank information", o.BillingError.ErrorCodes.UNKNOWN_PAYMENT_SOURCE);
                         E.type = "ideal", E.ideal = {
                             bank: e.bank
                         };
                         break;
-                    case R.PaymentSourceTypes.PRZELEWY24:
+                    case A.PaymentSourceTypes.PRZELEWY24:
                         if (null == e.bank) throw new o.BillingError("p24 missing bank information", o.BillingError.ErrorCodes.UNKNOWN_PAYMENT_SOURCE);
                         E.type = "p24", E.p24 = {
                             bank: e.bank
                         }, E.billing_details.email = e.email;
                         break;
-                    case R.PaymentSourceTypes.EPS:
+                    case A.PaymentSourceTypes.EPS:
                         if (null == e.bank) throw new o.BillingError("EPS missing bank information", o.BillingError.ErrorCodes.UNKNOWN_PAYMENT_SOURCE);
                         E.type = "eps", E.eps = {
                             bank: e.bank
@@ -777,7 +777,7 @@
             }
 
             function Y(e) {
-                return p.VAULTABLE_PAYMENT_SOURCES.has(e.type) ? null : R.ADYEN_PAYMENT_SOURCES.has(e.type) ? D(e) : k(e)
+                return p.VAULTABLE_PAYMENT_SOURCES.has(e.type) ? null : A.ADYEN_PAYMENT_SOURCES.has(e.type) ? D(e) : k(e)
             }
             async function K() {
                 try {
@@ -900,7 +900,7 @@
                             include_inactive: !0,
                             limit: 2,
                             exclude_unpaid_statuses: !0,
-                            subscription_type: R.SubscriptionTypes.PREMIUM
+                            subscription_type: A.SubscriptionTypes.PREMIUM
                         },
                         oldFormErrors: !0
                     });
@@ -934,7 +934,7 @@
                     type: "BILLING_SUBSCRIPTION_UPDATE_START"
                 }), t = (0, S.coerceExistingItemsToNewItemInterval)(t);
                 let c = null;
-                if (null != n && R.ADYEN_PAYMENT_SOURCES.has(n.type)) {
+                if (null != n && A.ADYEN_PAYMENT_SOURCES.has(n.type)) {
                     let e = await eN(n.type);
                     c = u.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(n.type, null != e ? e : "", "success")
                 }
@@ -957,7 +957,7 @@
                             trial_id: r,
                             return_url: c,
                             code: i,
-                            currency: null != n ? l : R.CurrencyCodes.USD,
+                            currency: null != n ? l : A.CurrencyCodes.USD,
                             metadata: d,
                             gateway_checkout_context: await (0, I.createGatewayCheckoutContext)(n),
                             purchase_token: (0, T.getPurchaseToken)(),
@@ -985,7 +985,7 @@
             }
             async function j(e, t, n, r) {
                 let i = null;
-                if (null != n && R.PREPAID_PAYMENT_SOURCES.has(n.type)) {
+                if (null != n && A.PREPAID_PAYMENT_SOURCES.has(n.type)) {
                     let e = await eN(n.type);
                     i = u.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(n.type, null != e ? e : "", "success")
                 }
@@ -1019,7 +1019,7 @@
             }
 
             function $(e, t) {
-                return null != t && R.ADYEN_PAYMENT_SOURCES.has(t.type) ? ee(e.adyen_redirect_url, t) : et(e.payment_id, t)
+                return null != t && A.ADYEN_PAYMENT_SOURCES.has(t.type) ? ee(e.adyen_redirect_url, t) : et(e.payment_id, t)
             }
             async function ee(e, t) {
                 if (null == e) throw y("redirect url cannot be null on a redirect for adyen.");
@@ -1066,7 +1066,7 @@
                 if ((null == n ? void 0 : n.body) == null) throw y("could not fetch payment");
                 let r = d.default.createFromServer(n.body.payment_source);
                 if (!p.REDIRECTED_PAYMENT_SOURCES.has(r.type)) throw y("unsupported redirect payment source");
-                if ((null == n ? void 0 : null === (t = n.body) || void 0 === t ? void 0 : t.status) === R.PaymentStatusTypes.FAILED) throw y("payment failed");
+                if ((null == n ? void 0 : null === (t = n.body) || void 0 === t ? void 0 : t.status) === A.PaymentStatusTypes.FAILED) throw y("payment failed");
                 return r.paymentGateway !== p.PaymentGateways.STRIPE || er(e)
             }
             async function er(e) {
@@ -1095,7 +1095,7 @@
                         clientSecret: l
                     } = e,
                     u = {};
-                if (r.type === R.PaymentSourceTypes.SEPA_DEBIT) {
+                if (r.type === A.PaymentSourceTypes.SEPA_DEBIT) {
                     if (null == i) throw y("On a sepa payment payment method id cannot be null");
                     u.payment_method = i, t = n.confirmSepaDebitPayment
                 } else throw y("Unsupported redirected payment source type.");
@@ -1116,14 +1116,14 @@
                     } = e,
                     s = {};
                 switch (l.type) {
-                    case R.PaymentSourceTypes.GIROPAY:
+                    case A.PaymentSourceTypes.GIROPAY:
                         s = {
                             billing_details: {
                                 name: l.billingAddress.name
                             }
                         }, r = i.confirmGiropayPayment;
                         break;
-                    case R.PaymentSourceTypes.BANCONTACT:
+                    case A.PaymentSourceTypes.BANCONTACT:
                         s = {
                             billing_details: {
                                 name: l.billingAddress.name,
@@ -1131,7 +1131,7 @@
                             }
                         }, r = i.confirmBancontactPayment;
                         break;
-                    case R.PaymentSourceTypes.SOFORT:
+                    case A.PaymentSourceTypes.SOFORT:
                         s = {
                             sofort: {
                                 country: l.billingAddress.country
@@ -1142,7 +1142,7 @@
                             }
                         }, r = i.confirmSofortPayment;
                         break;
-                    case R.PaymentSourceTypes.PRZELEWY24:
+                    case A.PaymentSourceTypes.PRZELEWY24:
                         if (null == l.bank) throw y("PaymentSource (".concat(l.id, ") missing bank info for p24."));
                         s = {
                             p24: {
@@ -1154,7 +1154,7 @@
                             }
                         }, r = i.confirmP24Payment;
                         break;
-                    case R.PaymentSourceTypes.EPS:
+                    case A.PaymentSourceTypes.EPS:
                         if (null == l.bank) throw y("PaymentSource (".concat(l.id, ") missing bank info for EPS."));
                         s = {
                             eps: {
@@ -1165,7 +1165,7 @@
                             }
                         }, r = i.confirmEpsPayment;
                         break;
-                    case R.PaymentSourceTypes.IDEAL:
+                    case A.PaymentSourceTypes.IDEAL:
                         if (null == l.bank) throw y("PaymentSource (".concat(l.id, ") missing bank info for iDEAL."));
                         s = {
                             ideal: {
@@ -1238,7 +1238,7 @@
                         gateway_checkout_context: await (0, I.createGatewayCheckoutContext)(t.paymentSource),
                         load_id: i
                     };
-                    if (null != t.paymentSource && R.ADYEN_PAYMENT_SOURCES.has(t.paymentSource.type)) {
+                    if (null != t.paymentSource && A.ADYEN_PAYMENT_SOURCES.has(t.paymentSource.type)) {
                         let e = await eN(t.paymentSource.type);
                         o.return_url = u.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t.paymentSource.type, null != e ? e : "", "success")
                     }
@@ -1355,7 +1355,7 @@
                 }), t
             }
 
-            function eR(e) {
+            function eA(e) {
                 let {
                     paymentSourceType: t,
                     state: n,
@@ -1380,7 +1380,7 @@
                     paymentSourceType: t
                 }), e))
             }
-            async function eA() {
+            async function eR() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                 if (!e && null != E.default.ipCountryCodeRequest) return E.default.ipCountryCodeRequest;
                 try {
@@ -1576,7 +1576,7 @@
                     return r
                 },
                 parseV8BillingAddressSkemaErrorToBillingError: function() {
-                    return A
+                    return R
                 },
                 default: function() {
                     return L
@@ -1608,9 +1608,9 @@
             (d = u || (u = {})).CARD = "card", d.ADDRESS = "address";
             let p = new Set(["cardNumber", "cvc", "expirationDate", "name"]),
                 N = new Set(["cardNumber", "cvc", "expirationDate", "name", "postalCode", "country", "line1", "city", "state"]),
-                R = new Set(["name", "line1", "line2", "city", "state", "postalCode", "country"]);
+                A = new Set(["name", "line1", "line2", "city", "state", "postalCode", "country"]);
 
-            function A(e) {
+            function R(e) {
                 var t, n, r, i, l;
                 if ("string" != typeof e && (null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.code) === _.INVALID_FORM_BODY_ERROR_CODE) {
                     if (!Array.isArray(null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.errors) && (null == e ? void 0 : null === (i = e.body) || void 0 === i ? void 0 : null === (r = i.errors) || void 0 === r ? void 0 : r.billing_address) != null) {
@@ -1632,7 +1632,7 @@
                     return 2 === (0, c.reducedPaymentInfoExperiment)().bucket ? this._isInFieldSet(N) : this._isInFieldSet(p)
                 }
                 hasAddressError() {
-                    return this._isInFieldSet(R)
+                    return this._isInFieldSet(A)
                 }
                 constructor(e, t) {
                     for (let n in super(e, t), this.paymentId = null, 100027 === this.code ? this.message = S.default.Messages.BILLING_ERROR_NEGATIVE_INVOICE_AMOUNT : 50048 === this.code ? this.message = S.default.Messages.BILLING_PAYMENT_SOURCE_INVALID : 100002 === this.code ? this.message = S.default.Messages.BILLING_ERROR_UNKNOWN_PAYMENT_SOURCE : 100042 === this.code ? this.message = S.default.Messages.BILLING_ERROR_PENDING_PAYMENT : 100078 === this.code ? this.message = S.default.Messages.BILLING_TRIAL_REDEMPTION_DISABLED : 429 === this.status ? this.message = S.default.Messages.BILLING_ERROR_RATE_LIMIT : 0 === this.code ? this.message = S.default.Messages.BILLING_ERROR_GENERIC : 400 === this.status && null != this.fields.captcha_key && (this.message = S.default.Messages.BILLING_ERROR_INVALID_CAPTCHA_RESPONSE), this.fields) {
@@ -1645,7 +1645,7 @@
                     null != e.body && "string" == typeof e.body.payment_id && (this.paymentId = e.body.payment_id)
                 }
             }
-            C.ErrorCodes = r, C.Fields = i, C.Sections = u, C.CARD_ERRORS = p, C.ADDRESS_ERRORS = R;
+            C.ErrorCodes = r, C.Fields = i, C.Sections = u, C.CARD_ERRORS = p, C.ADDRESS_ERRORS = A;
             var L = C
         },
         852766: function(e, t, n) {
@@ -1849,8 +1849,8 @@
                 f = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
                 p = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?$/,
                 N = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
-                R = /^\/application-directory\/([0-9-]+)\/?$/,
-                A = /^\/activities\/([0-9-]+)\/?$/,
+                A = /^\/application-directory\/([0-9-]+)\/?$/,
+                R = /^\/activities\/([0-9-]+)\/?$/,
                 C = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
                 L = /^\/channels\/([0-9]+)\/shop$/,
                 O = /^\/clyde-profiles\/([0-9-]+)\/?$/,
@@ -1963,7 +1963,7 @@
                         } : null
                     }(r.pathname);
                     null != s && a(I.CodedLinkType.EVENT, "".concat(s.guildId, "-").concat(s.guildEventId) + (null != s.recurrenceId ? "-".concat(s.recurrenceId) : ""));
-                    let E = null == u ? void 0 : u.match(R);
+                    let E = null == u ? void 0 : u.match(A);
                     if (null != E) {
                         let e = E[1];
                         a(I.CodedLinkType.APP_DIRECTORY_PROFILE, e)
@@ -1973,7 +1973,7 @@
                         let e = c[1];
                         a(I.CodedLinkType.CLYDE_PROFILE, e)
                     }
-                    let S = null == u ? void 0 : u.match(A);
+                    let S = null == u ? void 0 : u.match(R);
                     if (null != S) {
                         let e = S[1];
                         a(I.CodedLinkType.ACTIVITY_BOOKMARK, e)
@@ -2023,7 +2023,7 @@
                     return N
                 },
                 getStreamEligibleChannels: function() {
-                    return R
+                    return A
                 }
             }), n("424973"), n("222007");
             var r, i, l = n("446674"),
@@ -2076,7 +2076,7 @@
                 return (0, l.useStateFromStoresArray)([_.default, s.default, d.default, u.default], () => p(e, _.default, s.default, d.default, u.default))
             }
 
-            function R(e, t, n) {
+            function A(e, t, n) {
                 let r = [];
                 for (let {
                         channel: i
@@ -2162,11 +2162,11 @@
                 p = {},
                 N = {};
 
-            function R(e) {
+            function A(e) {
                 I.set(e.id, e), S += 1
             }
 
-            function A(e) {
+            function R(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 I.delete(e), delete p[e], t && delete N[e], S += 1
             }
@@ -2211,14 +2211,14 @@
             }
 
             function P(e, t) {
-                I.values(E.GUILD_EVENT(e)).forEach(e => A(e.id, t))
+                I.values(E.GUILD_EVENT(e)).forEach(e => R(e.id, t))
             }
 
             function g(e) {
                 let {
                     guildScheduledEvent: t
                 } = e;
-                return R(t), !0
+                return A(t), !0
             }
 
             function D(e) {
@@ -2228,7 +2228,7 @@
                 if (null == n) return !1;
                 let r = n.guild_scheduled_event_exceptions.findIndex(e => e.event_exception_id === t.event_exception_id),
                     i = [...n.guild_scheduled_event_exceptions];
-                return r < 0 ? i.push(t) : i[r] = t, R({
+                return r < 0 ? i.push(t) : i[r] = t, A({
                     ...n,
                     guild_scheduled_event_exceptions: i
                 }), !0
@@ -2312,13 +2312,13 @@
                     let {
                         guilds: t
                     } = e;
-                    return I.clear(), S = 0, p = {}, N = {}, T.forEach(R), t.forEach(e => e.guild_scheduled_events.forEach(e => R(e))), !0
+                    return I.clear(), S = 0, p = {}, N = {}, T.forEach(A), t.forEach(e => e.guild_scheduled_events.forEach(e => A(e))), !0
                 },
                 GUILD_CREATE: function(e) {
                     let {
                         guild: t
                     } = e;
-                    return P(t.id, !1), t.guild_scheduled_events.forEach(e => R(e)), !0
+                    return P(t.id, !1), t.guild_scheduled_events.forEach(e => A(e)), !0
                 },
                 GUILD_DELETE: function(e) {
                     let {
@@ -2330,7 +2330,7 @@
                     let {
                         guildScheduledEvent: t
                     } = e;
-                    R(t)
+                    A(t)
                 },
                 FETCH_GUILD_EVENTS_FOR_GUILD: function(e) {
                     let {
@@ -2338,8 +2338,8 @@
                         guildScheduledEvents: n
                     } = e, r = I.values(E.GUILD_EVENT(t), !0).map(e => e.id), l = n.map(e => e.id);
                     for (let e of (i.difference(r, l).forEach(e => {
-                            A(e)
-                        }), n)) R(e);
+                            R(e)
+                        }), n)) A(e);
                     return !0
                 },
                 GUILD_SCHEDULED_EVENT_CREATE: g,
@@ -2348,7 +2348,7 @@
                     let {
                         guildScheduledEvent: t
                     } = e;
-                    return A(t.id), !0
+                    return R(t.id), !0
                 },
                 GUILD_SCHEDULED_EVENT_USER_ADD: function(e) {
                     var t, n;
@@ -2410,7 +2410,7 @@
                     let {
                         invite: t
                     } = e, n = t.guild_scheduled_event;
-                    return null != n && (R(n), !0)
+                    return null != n && (A(n), !0)
                 },
                 GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: D,
                 GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: D,
@@ -2420,7 +2420,7 @@
                     } = e, n = I.get(t.event_id);
                     if (null == n) return !1;
                     let r = n.guild_scheduled_event_exceptions.filter(e => e.event_exception_id !== t.event_exception_id);
-                    return R({
+                    return A({
                         ...n,
                         guild_scheduled_event_exceptions: r
                     }), !0
@@ -2429,7 +2429,7 @@
                     let {
                         eventId: t
                     } = e, n = I.get(t);
-                    return null != n && (R({
+                    return null != n && (A({
                         ...n,
                         guild_scheduled_event_exceptions: []
                     }), !0)
@@ -2608,7 +2608,7 @@
                     return N
                 },
                 isAccessibleChannelPath: function() {
-                    return R
+                    return A
                 }
             });
             var r = n("42203"),
@@ -2669,7 +2669,7 @@
                 return !!e.isPrivate() || l.default.can(a.Permissions.VIEW_CHANNEL, e)
             }
 
-            function R(e) {
+            function A(e) {
                 let {
                     guildId: t,
                     channelId: n
@@ -2717,8 +2717,8 @@
                 if (null == s) return null;
                 let p = (0, o.getThumbnailImage)(s.thumbnail),
                     N = !f && s.has_media_attachment,
-                    R = f ? _.default.Messages.MEDIA_POST_EMBED_SUBSCRIBED_CTA : _.default.Messages.MEDIA_POST_EMBED_SUBSCRIBE_CTA,
-                    A = null != S ? a.default.getName(s.guild_id, s.channel_id, S) : void 0,
+                    A = f ? _.default.Messages.MEDIA_POST_EMBED_SUBSCRIBED_CTA : _.default.Messages.MEDIA_POST_EMBED_SUBSCRIBE_CTA,
+                    R = null != S ? a.default.getName(s.guild_id, s.channel_id, S) : void 0,
                     C = null == S ? void 0 : S.getAvatarURL(null == E ? void 0 : E.id, 40);
                 (null == C || T !== s.guild_id) && (C = u.default.getGuildIconURL({
                     id: s.guild_id,
@@ -2738,7 +2738,7 @@
                 return {
                     title: null !== (i = s.title) && void 0 !== i ? i : "",
                     subtitle: s.description,
-                    ctaText: R,
+                    ctaText: A,
                     coverImage: p,
                     coverImageOverlayText: N ? _.default.Messages.MEDIA_POST_EMBED_BLURRED_THUMBNAIL_TEXT : void 0,
                     parentChannelId: s.parent_channel_id,
@@ -2749,7 +2749,7 @@
                     guildId: s.guild_id,
                     guildName: null !== (l = null == E ? void 0 : E.name) && void 0 !== l ? l : s.guild_name,
                     authorId: null == s ? void 0 : s.author_id,
-                    authorName: A,
+                    authorName: R,
                     channelName: null == c ? void 0 : c.name,
                     avatarUrl: C,
                     shouldShowBlurredThumbnailImage: N,
@@ -2886,8 +2886,8 @@
                 f = n("280168"),
                 p = n("697218"),
                 N = n("800762"),
-                R = n("316133"),
-                A = n("998716"),
+                A = n("316133"),
+                R = n("998716"),
                 C = n("325861"),
                 L = n("834052"),
                 O = n("49111");
@@ -2922,11 +2922,11 @@
 
             function v(e) {
                 let t = g[e];
-                return null == t && (t = new A.default(e), g[e] = t, t.rebuild()), t
+                return null == t && (t = new R.default(e), g[e] = t, t.rebuild()), t
             }
 
             function U(e) {
-                return null != e && e.isGuildStageVoice() && R.default.countVoiceStatesForChannel(e.id) > 0
+                return null != e && e.isGuildStageVoice() && A.default.countVoiceStatesForChannel(e.id) > 0
             }
 
             function M(e) {
@@ -2998,7 +2998,7 @@
             let k = [];
             class Y extends a.default.Store {
                 initialize() {
-                    this.waitFor(E.default, p.default, c.default, f.default, N.default, S.default, R.default, I.default, C.default, T.default, L.default, _.default)
+                    this.waitFor(E.default, p.default, c.default, f.default, N.default, S.default, A.default, I.default, C.default, T.default, L.default, _.default)
                 }
                 getParticipantsVersion(e) {
                     var t, n;
@@ -3125,8 +3125,8 @@
                 f = n("800762"),
                 p = n("387111"),
                 N = n("325861"),
-                R = n("834052"),
-                A = n("808422"),
+                A = n("834052"),
+                R = n("808422"),
                 C = n("922673"),
                 L = n("49111");
 
@@ -3153,7 +3153,7 @@
             }
 
             function P(e) {
-                return e === A.RequestToSpeakStates.REQUESTED_TO_SPEAK || e === A.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+                return e === R.RequestToSpeakStates.REQUESTED_TO_SPEAK || e === R.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
             }
 
             function g(e) {
@@ -3164,7 +3164,7 @@
                     blocked: i,
                     isFriend: l
                 } = e, u = [];
-                return P(r) && u.push("ALL_REQUESTED_TO_SPEAK"), r === A.RequestToSpeakStates.REQUESTED_TO_SPEAK && u.push("REQUESTED_TO_SPEAK_ONLY"), t ? u.push("SPEAKER") : (null != n ? u.push(n.id) : u.push("NO_ROLE"), u.push("AUDIENCE")), i && u.push("BLOCKED"), l && u.push("FRIEND"), u
+                return P(r) && u.push("ALL_REQUESTED_TO_SPEAK"), r === R.RequestToSpeakStates.REQUESTED_TO_SPEAK && u.push("REQUESTED_TO_SPEAK_ONLY"), t ? u.push("SPEAKER") : (null != n ? u.push(n.id) : u.push("NO_ROLE"), u.push("AUDIENCE")), i && u.push("BLOCKED"), l && u.push("FRIEND"), u
             }(u = r || (r = {})).SPEAKER = "SPEAKER", u.AUDIENCE = "AUDIENCE", u.NO_ROLE = "NO_ROLE", u.ALL_REQUESTED_TO_SPEAK = "ALL_REQUESTED_TO_SPEAK", u.REQUESTED_TO_SPEAK_ONLY = "REQUESTED_TO_SPEAK_ONLY", u.BLOCKED = "BLOCKED", u.FRIEND = "FRIEND", u.SELECTED = "SELECTED", u.MEDIA = "MEDIA", (a = i || (i = {})).VOICE = "VOICE", a.STREAM = "STREAM", l = class {
                 _getParticipantsForUser(e, t) {
                     var n, r;
@@ -3173,7 +3173,7 @@
                         u = f.default.getVoiceStateForChannel(this.channelId, e);
                     if (null == u) return l;
                     let a = T.default.getUser(e);
-                    if (null == a) return null != this.guildId && R.default.isPublic(this.channelId) && c.default.requestMember(this.guildId, e), l;
+                    if (null == a) return null != this.guildId && A.default.isPublic(this.channelId) && c.default.requestMember(this.guildId, e), l;
                     let o = null != t ? t[0] : null,
                         s = {
                             user: a,
@@ -3190,7 +3190,7 @@
                             ...s,
                             type: "VOICE",
                             id: a.id,
-                            rtsState: (0, A.getAudienceRequestToSpeakState)(u)
+                            rtsState: (0, R.getAudienceRequestToSpeakState)(u)
                         };
                     l.push(E);
                     let O = null !== (r = _.default.getStreamForUser(e, this.guildId)) && void 0 !== r ? r : _.default.getActiveStreamForUser(e, this.guildId);
@@ -3200,7 +3200,7 @@
                             ...s,
                             id: e,
                             type: "STREAM",
-                            rtsState: A.RequestToSpeakStates.NONE
+                            rtsState: R.RequestToSpeakStates.NONE
                         }, l.push(i)
                     }
                     return l
@@ -3272,7 +3272,7 @@
                     moderator: !1
                 };
 
-            function R(e, t) {
+            function A(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 null == p[t] && (p[t] = {});
                 let r = function(e, t) {
@@ -3299,7 +3299,7 @@
                 return p[t][e] = r, r
             }
 
-            function A(e, t) {
+            function R(e, t) {
                 var n;
                 if (null == t) return !1;
                 let r = s.default.getChannel(t);
@@ -3363,8 +3363,8 @@
                     let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     if (null == e || null == t) return N;
                     let i = null === (n = p[t]) || void 0 === n ? void 0 : n[e];
-                    if (null != i) return r && null == i.moderator ? R(e, t, !0) : i;
-                    return R(e, t, r)
+                    if (null != i) return r && null == i.moderator ? A(e, t, !0) : i;
+                    return A(e, t, r)
                 }
             }
             h.displayName = "StageChannelRoleStore";
@@ -3389,7 +3389,7 @@
                 PASSIVE_UPDATE_V1: function(e) {
                     var t;
                     let n = C(e.guildId);
-                    for (let r of null !== (t = e.voiceStates) && void 0 !== t ? t : []) n = A(r.userId, r.channelId) || n;
+                    for (let r of null !== (t = e.voiceStates) && void 0 !== t ? t : []) n = R(r.userId, r.channelId) || n;
                     return n
                 },
                 VOICE_STATE_UPDATES: function(e) {
@@ -3401,7 +3401,7 @@
                             userId: n,
                             channelId: r
                         } = t;
-                        return A(n, r) || e
+                        return R(n, r) || e
                     }, !1)
                 },
                 GUILD_CREATE: O,
@@ -3514,8 +3514,8 @@
                 f = n("42887"),
                 p = n("957255"),
                 N = n("945956"),
-                R = n("18494"),
-                A = n("800762"),
+                A = n("18494"),
+                R = n("800762"),
                 C = n("49111"),
                 L = n("706530");
             let O = null,
@@ -3565,7 +3565,7 @@
             function U(e) {
                 if (v(e.streamType, e.channelId)) return !0;
                 let t = S.default.getBasicChannel(e.channelId);
-                return null != t && (0, E.canWatchStream)(t, A.default, T.default, p.default, s.default)[0]
+                return null != t && (0, E.canWatchStream)(t, R.default, T.default, p.default, s.default)[0]
             }
             class M extends a.default.Store {
                 initialize() {
@@ -3596,7 +3596,7 @@
                     return null !== (t = this.getActiveStreamForStreamKey(n)) && void 0 !== t ? t : null
                 }
                 getCurrentUserActiveStream() {
-                    let e = R.default.getVoiceChannelId(),
+                    let e = A.default.getVoiceChannelId(),
                         t = S.default.getChannel(e);
                     return null == t ? null : this.getActiveStreamForUser(I.default.getId(), t.getGuildId())
                 }
@@ -3607,11 +3607,15 @@
                 }
                 getStreamerActiveStreamMetadata() {
                     var e;
-                    let t = R.default.getVoiceChannelId(),
+                    let t = A.default.getVoiceChannelId(),
                         n = S.default.getChannel(t);
                     if (null == n) return null;
                     let r = this.getActiveStreamForUser(I.default.getId(), n.getGuildId());
                     return null == r ? null : null !== (e = u[(0, _.encodeStreamKey)(r)]) && void 0 !== e ? e : null
+                }
+                getStreamerActiveStreamMetadataForStream(e) {
+                    var t;
+                    return null !== (t = u[e]) && void 0 !== t ? t : null
                 }
                 getAnyStreamForUser(e) {
                     var t;
@@ -4063,7 +4067,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return A
+                    return R
                 }
             }), n("222007"), n("702976"), n("808653");
             var r = n("446674"),
@@ -4111,7 +4115,7 @@
                 } = e;
                 c = t.id, I = n, S = null
             }
-            class R extends r.default.Store {
+            class A extends r.default.Store {
                 initialize() {
                     this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(o.default)
                 }
@@ -4155,8 +4159,8 @@
                     return null != c && this.isPrioritySpeaker(c, e) && this.isSpeaking(c, e)
                 }
             }
-            R.displayName = "SpeakingStore";
-            var A = new R(i.default, {
+            A.displayName = "SpeakingStore";
+            var R = new A(i.default, {
                 CONNECTION_OPEN: N,
                 OVERLAY_INITIALIZE: N,
                 SPEAKING: function(e) {
@@ -4315,18 +4319,18 @@
                 p = n("646718"),
                 N = n("782340");
             let {
-                GUILD_VOICE: R,
-                GUILD_CATEGORY: A,
+                GUILD_VOICE: A,
+                GUILD_CATEGORY: R,
                 GUILD_STAGE_VOICE: C
             } = f.ChannelTypes;
 
             function L(e, t) {
-                return e === t || e === A
+                return e === t || e === R
             }
 
             function O(e, t, n) {
                 let i = S.default.NONE;
-                return ((0, s.isGuildSelectableChannelType)(t) || t === A) && (i = r.default.add(i, f.Permissions.VIEW_CHANNEL)), (L(t, R) || L(t, C)) && (i = r.default.add(i, f.Permissions.VIEW_CHANNEL), i = r.default.add(i, f.Permissions.CONNECT)), {
+                return ((0, s.isGuildSelectableChannelType)(t) || t === R) && (i = r.default.add(i, f.Permissions.VIEW_CHANNEL)), (L(t, A) || L(t, C)) && (i = r.default.add(i, f.Permissions.VIEW_CHANNEL), i = r.default.add(i, f.Permissions.CONNECT)), {
                     id: e,
                     type: n,
                     deny: S.default.NONE,
@@ -4340,7 +4344,7 @@
                 if (n.length > 0 || l) {
                     var a, o, d;
                     let n;
-                    u.push((a = e, o = t, d = i.PermissionOverwriteType.ROLE, n = S.default.NONE, ((0, s.isGuildSelectableChannelType)(o) || o === A) && (n = r.default.add(n, f.Permissions.VIEW_CHANNEL)), L(o, R) && (n = r.default.add(n, f.Permissions.VIEW_CHANNEL), n = r.default.add(n, f.Permissions.CONNECT)), {
+                    u.push((a = e, o = t, d = i.PermissionOverwriteType.ROLE, n = S.default.NONE, ((0, s.isGuildSelectableChannelType)(o) || o === R) && (n = r.default.add(n, f.Permissions.VIEW_CHANNEL)), L(o, A) && (n = r.default.add(n, f.Permissions.VIEW_CHANNEL), n = r.default.add(n, f.Permissions.CONNECT)), {
                         id: a,
                         type: d,
                         allow: S.default.NONE,
@@ -4740,4 +4744,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71554.5fad821a9d8ab8f0c9e3.js.map
+//# sourceMappingURL=71554.2f5e4c9f9342607324c0.js.map
