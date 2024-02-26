@@ -45860,8 +45860,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -119297,19 +119297,45 @@ div.nagbar_c731ff {
     gap: var(--spacing-16)
 }
 
-.closeButton__76760 {
-    position: absolute;
-    top: var(--spacing-16);
-    right: var(--spacing-16);
-    cursor: pointer
-}
-
 .ringContainer_c6f3ce {
     position: absolute;
     top: -210px;
     overflow: hidden;
     width: 440px;
     height: 210px
+}
+
+.full-motion .iconButton__761b6 {
+    transition: background-color.2s ease
+}
+
+.full-motion .icon__9d229 {
+    transition: color.2s ease
+}
+
+.iconButton__761b6 {
+    position: absolute;
+    top: var(--spacing-16);
+    right: var(--spacing-16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-tertiary);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-round)
+}
+
+.iconButton__761b6:hover {
+    cursor: pointer;
+    background-color: var(--background-modifier-hover)
+}
+
+.iconButton__761b6:hover .icon__9d229 {
+    color: var(--interactive-active)
+}
+
+.icon__9d229 {
+    color: var(--interactive-normal)
 }
 
 .buttonContainer__80fd5 {
@@ -128137,4 +128163,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1f4d06e643650db7d9b3.css.map*/
+/*# sourceMappingURL=app.ab964290a4932a390f30.css.map*/
