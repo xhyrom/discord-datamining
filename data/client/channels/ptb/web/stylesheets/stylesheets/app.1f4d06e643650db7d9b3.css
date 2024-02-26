@@ -20818,34 +20818,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     background-color: var(--status-danger)
 }
 
-.gameNightButton__71f00 {
-    height: 56px;
-    border-radius: 28px;
-    background-color: var(--background-secondary);
-    transition: background-color.17s, color.17s
-}
-
-.gameNightButton__71f00:hover {
-    background-color: var(--brand-experiment);
-    color: var(--white-500)
-}
-
-.gameNightActivityIsActive__66108 {
-    background-color: var(--brand-experiment);
-    color: var(--white-500)
-}
-
-.gameNightButtonInner_a72ec4 {
-    display: flex;
-    align-items: center;
-    min-width: -moz-max-content;
-    min-width: max-content
-}
-
-.gameNightRocket_f91b21 {
-    margin-right: 8px
-}
-
 .container__2891c {
     display: flex;
     flex-direction: column;
@@ -59063,8 +59035,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -128165,4 +128137,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7ce5adac0a4880b84270.css.map*/
+/*# sourceMappingURL=app.1f4d06e643650db7d9b3.css.map*/
