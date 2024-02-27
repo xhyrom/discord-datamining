@@ -18302,7 +18302,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269324", ", Version Hash: ").concat("eccbaab334422ba2d46f0bc5ad02e75231e84ffa")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269330", ", Version Hash: ").concat("20efa8ee23d6c5b75ec3360cb7bfcaaa59fdaaaa")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20641,8 +20641,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "269324", "269324"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269324")), _ = 0), _
+                let _ = parseInt((e = "269330", "269330"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269330")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25356,8 +25356,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709062044254",
-                                    build_number: "269324"
+                                    built_at: "1709062751148",
+                                    build_number: "269330"
                                 }
                             },
                             retries: 1
@@ -36654,4 +36654,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.905f2d5a2ba9855a0a0c.js.map
+//# sourceMappingURL=77761.b7b99d898e9ee425ee24.js.map
