@@ -19221,6 +19221,7 @@
                 defaultTextInputWrapper: "defaultTextInputWrapper__4f24b",
                 emojiDefault: "emojiDefault_a6c36f",
                 emojiJumbo: "emojiJumbo__389fd",
+                emojiPicker: "emojiPicker_e34284",
                 expressionPickerButton: "expressionPickerButton_b81316",
                 expressionPickerButtonDefault: "expressionPickerButtonDefault_eda6e6 expressionPickerButton_b81316",
                 expressionPickerButtonImageOnly: "expressionPickerButtonImageOnly__42a53 expressionPickerButton_b81316",
@@ -19302,12 +19303,6 @@
                 dangerIcon: "dangerIcon__836bc",
                 header: "header_cf90da",
                 warningIcon: "warningIcon__17017"
-            }
-        },
-        161625: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                expressionPickerPositionLayer: "expressionPickerPositionLayer_f15e20"
             }
         },
         193169: function(e, t, n) {

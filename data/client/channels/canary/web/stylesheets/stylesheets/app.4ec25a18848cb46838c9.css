@@ -45891,8 +45891,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -112372,6 +112372,10 @@ html .invoiceCancelRow_a8669b {
     cursor: pointer
 }
 
+.emojiPicker_e34284 {
+    box-shadow: var(--elevation-stroke), var(--elevation-high)
+}
+
 .emojiDefault_a6c36f {
     width: 22px;
     height: 22px;
@@ -112521,28 +112525,6 @@ html .invoiceCancelRow_a8669b {
     color: var(--interactive-normal)
 }
 
-.content__33f77 {
-    padding: 16px;
-    max-width: 760px
-}
-
-.header_cf90da {
-    display: flex;
-    align-items: center
-}
-
-.warningIcon__17017 {
-    color: var(--status-warning)
-}
-
-.dangerIcon__836bc {
-    color: var(--status-danger)
-}
-
-.expressionPickerPositionLayer_f15e20 {
-    right: var(--spacing-80)
-}
-
 .container__1b71e {
     border-radius: var(--radius-sm);
     background-color: var(--background-secondary)
@@ -112663,6 +112645,24 @@ html .invoiceCancelRow_a8669b {
 
 .postButtonText__4aa81 {
     color: inherit
+}
+
+.content__33f77 {
+    padding: 16px;
+    max-width: 760px
+}
+
+.header_cf90da {
+    display: flex;
+    align-items: center
+}
+
+.warningIcon__17017 {
+    color: var(--status-warning)
+}
+
+.dangerIcon__836bc {
+    color: var(--status-danger)
 }
 
 .heading-sm-normal__4a449 {
@@ -128194,4 +128194,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.21154a22e3ac273cfcf0.css.map*/
+/*# sourceMappingURL=app.4ec25a18848cb46838c9.css.map*/
