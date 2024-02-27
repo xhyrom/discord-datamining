@@ -1,8 +1,29 @@
 <div class="w-layout-grid grid-branding">
     <div id="w-node-_682ba5bf-e04f-2536-35cb-8e92dc53082e-d9fcf1f6" class="title-wrapper">
         <div class="safetie-author-wrapper">
-            <div class="safetie-author-photo-wrapper"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af2f03d63855d32c69dfdf_6439dcd332308112d6b8d587_headshot_square(1).png" loading="lazy" alt="" class="safetie-author-image">
-                <div class="safetie-author-title">Clint Smith</div>
+            <div class="safetie-author-photo-wrapper">
+                <div class="dropdown-wr-s">
+                    <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af2f03d63855d32c69dfdf_6439dcd332308112d6b8d587_headshot_square(1).png" loading="lazy" alt="" class="safetie-author-image">
+                        <div class="safetie-author-title">Clint Smith</div>
+                    </div>
+                    <div class="dropdown-wrapper-safety w-condition-invisible">
+                        <div class="weight-semibold">Version</div>
+                        <div data-hover="false" data-delay="0" class="dropdown_years w-dropdown">
+                            <div class="dropdown-transparency safety w-dropdown-toggle"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/65ddf38056b6e7c68ee8ca24_chevron%20down.svg" loading="lazy" alt="" class="icon-dropdown-s">
+                                <div class="w-dyn-bind-empty"></div>
+                            </div>
+                            <nav class="dropdown_list safety w-dropdown-list">
+                                <div class="dropdown_list-wr">
+                                    <div class="w-dyn-list">
+                                        <div class="w-dyn-empty">
+                                            <div>No items found.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
                 <div>April 14, 2023</div>
                 <div class="padding-32px"></div>
             </div>
