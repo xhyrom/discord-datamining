@@ -16175,6 +16175,7 @@
   "CLIPS_SETTINGS_KEYBIND": "\"Clipping Keybind\"",
   "CLIPS_SETTINGS_KEYBIND_HELP": "\"Set up your keybind to capture clips. The default is ALT + C.\"",
   "CLIPS_SAVE": "\"Save Clip\"",
+  "CLIPS_VIEWERSIDE_BUTTON_ENABLE_CLIPS_TOOLTIP": "\"Enable clips to capture this stream.\"",
   "CLIPS_VIEWERSIDE_BUTTON_FOCUS_TOOLTIP": "\"Focus on a stream to capture clips.\"",
   "CLIPS_VIEWERSIDE_BUTTON_DISABLED_TOOLTIP": "\"Clips are disabled for this stream.\"",
   "CLIPS_SETTINGS_ALLOW_VIEWER_CLIPS": "\"Allow viewers to capture clips\"",
