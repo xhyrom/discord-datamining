@@ -42073,8 +42073,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -126198,7 +126198,7 @@ div.nagbar_c731ff {
     --panel-bg: var(--white-500);
     --polls-normal-fill-hover: var(--primary-230);
     --polls-normal-image-background: var(--white-500);
-    --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
+    --polls-victor-fill: hsl(var(--green-400-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
     --profile-gradient-card-background: hsl(var(--white-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-430-hsl) / 0.24);
@@ -128220,4 +128220,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.06e84b281a285c085f2a.css.map*/
+/*# sourceMappingURL=app.8d69274ef5b535b4a069.css.map*/
