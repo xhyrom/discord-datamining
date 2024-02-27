@@ -27785,6 +27785,12 @@ span.button__4f306.disabled_dc5630 {
     width: 100%
 }
 
+.cardHeaderImg_f6c932 img {
+    border-radius: 100%;
+    box-shadow: 0 0 4px 0 var(--brand-500);
+    overflow: hidden
+}
+
 .details_f03d10 {
     align-items: flex-start;
     align-self: stretch;
@@ -27819,6 +27825,81 @@ span.button__4f306.disabled_dc5630 {
     padding: 16px
 }
 
+.button_bb1081 {
+    background: inherit;
+    padding: 0
+}
+
+.cta__19506 {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 4px
+}
+
+.container_f1e37c {
+    border-radius: 12px;
+    background: var(--background-primary)
+}
+
+.header_cd79e3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    max-height: 260px;
+    min-height: 200px;
+    position: relative
+}
+
+.background_c10072 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+.blur_a2ff57 {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-color: rgba(28, 27, 37, .9);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+.image_ecb6cf {
+    max-height: 50%;
+    max-width: 50%;
+    z-index: 1
+}
+
+.content_cc40de {
+    padding: 0 16px
+}
+
+.details_ceefbd {
+    align-items: flex-start;
+    border-top-color: var(--background-modifier-selected);
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+    padding-top: 16px
+}
+
 .container__34d9d {
     align-items: flex-start;
     align-self: stretch;
@@ -27832,6 +27913,7 @@ span.button__4f306.disabled_dc5630 {
     align-self: stretch;
     display: flex;
     flex-direction: column;
+    height: 118px;
     gap: 12px
 }
 
@@ -27865,10 +27947,11 @@ span.button__4f306.disabled_dc5630 {
 
 .container_a98e7e {
     border-radius: 8px;
+    max-width: 375px;
+    overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none;
-    overflow: hidden
+    user-select: none
 }
 
 .image__2e834 {
@@ -27918,4 +28001,88 @@ span.button__4f306.disabled_dc5630 {
     padding: 16px
 }
 
-/*# sourceMappingURL=shared.c3620c890075d3247c90.css.map*/
+.container__8f6ed {
+    border-radius: 12px;
+    background: var(--background-primary)
+}
+
+.header__45be0 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    max-height: 260px;
+    min-height: 200px;
+    position: relative
+}
+
+.background__73e2a {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+.blur__76477 {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-color: var(--primary-730);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+.tag_ebbf87 {
+    left: 16px;
+    position: absolute;
+    top: 21px
+}
+
+.image__3fdd5 {
+    max-height: 50%;
+    max-width: 50%;
+    z-index: 1
+}
+
+.scroll_f3acf8 {
+    max-height: 300px;
+    padding: 16px;
+    padding-bottom: 32px
+}
+
+.scrollContainer_a442c2 {
+    position: relative
+}
+
+.scrollContainer_a442c2:after {
+    background: linear-gradient(0deg, var(--primary-660)-3.62%, rgba(0, 0, 0, 0)96.84%);
+    bottom: 0;
+    content: "";
+    height: 52px;
+    pointer-events: none;
+    position: absolute;
+    width: 100%
+}
+
+.details__0fe6e {
+    align-items: flex-start;
+    border-top-color: var(--background-modifier-selected);
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 16px
+}
+
+/*# sourceMappingURL=shared.b1bf4ec54da1e08b2001.css.map*/

@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["31337"], {
+    ["69171"], {
         223468: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -4811,16 +4811,16 @@
             var l = n("917351"),
                 a = n.n(l),
                 o = n("335710"),
-                r = n("249654"),
-                s = n("446674"),
-                u = n("913144"),
-                d = n("689275"),
-                c = n("610730"),
-                p = n("271938"),
-                f = n("42203"),
-                m = n("660478"),
-                _ = n("18494"),
-                I = n("449008"),
+                r = n("446674"),
+                s = n("913144"),
+                u = n("689275"),
+                d = n("610730"),
+                c = n("271938"),
+                p = n("42203"),
+                f = n("660478"),
+                m = n("18494"),
+                _ = n("449008"),
+                I = n("299039"),
                 C = n("786742");
             let T = [],
                 A = null,
@@ -4838,15 +4838,15 @@
 
             function L(e) {
                 var t;
-                return null !== (t = m.default.lastMessageId(e)) && void 0 !== t ? t : e
+                return null !== (t = f.default.lastMessageId(e)) && void 0 !== t ? t : e
             }
 
             function P(e) {
                 return function(t, n) {
                     if ((0, C.isForumPostPinned)(t)) return -1;
                     if ((0, C.isForumPostPinned)(n)) return 1;
-                    if (e === o.ThreadSortOrder.LATEST_ACTIVITY) return r.default.compare(L(n), L(t));
-                    else return r.default.compare(n, t)
+                    if (e === o.ThreadSortOrder.LATEST_ACTIVITY) return I.default.compare(L(n), L(t));
+                    else return I.default.compare(n, t)
                 }
             }
 
@@ -4856,16 +4856,16 @@
 
             function F() {
                 var e;
-                let t = _.default.getChannelId();
-                if (null == t || !(null === (e = f.default.getChannel(t)) || void 0 === e ? void 0 : e.isForumLikeChannel())) return U(), !1;
+                let t = m.default.getChannelId();
+                if (null == t || !(null === (e = p.default.getChannel(t)) || void 0 === e ? void 0 : e.isForumLikeChannel())) return U(), !1;
                 H({
                     refreshThreadIds: !0
                 })
             }
 
             function b(e) {
-                let t = f.default.getChannel(e);
-                return null == t ? [] : Object.values(d.default.getThreadsForParent(t.guild_id, t.id)).map(e => {
+                let t = p.default.getChannel(e);
+                return null == t ? [] : Object.values(u.default.getThreadsForParent(t.guild_id, t.id)).map(e => {
                     let {
                         id: t
                     } = e;
@@ -4875,9 +4875,9 @@
 
             function H(e) {
                 var t;
-                let n = f.default.getChannel(E);
+                let n = p.default.getChannel(E);
                 if (null == n) return;
-                (null == e ? void 0 : e.refreshThreadIds) && (M = Object.values(d.default.getThreadsForParent(n.guild_id, n.id)).map(e => {
+                (null == e ? void 0 : e.refreshThreadIds) && (M = Object.values(u.default.getThreadsForParent(n.guild_id, n.id)).map(e => {
                     let {
                         id: t
                     } = e;
@@ -4887,18 +4887,18 @@
                     r = l.value();
                 S = 0 === N.size ? r : r.filter((t = N, function(e) {
                     var n;
-                    let i = null === (n = f.default.getChannel(e)) || void 0 === n ? void 0 : n.appliedTags;
+                    let i = null === (n = p.default.getChannel(e)) || void 0 === n ? void 0 : n.appliedTags;
                     return null != i && 0 !== i.length && i.some(e => t.has(e))
                 }));
                 let s = S.find(e => (function(e) {
-                    let t = c.default.getCount(e);
+                    let t = d.default.getCount(e);
                     return null === t || 0 === t
                 })(e));
                 i = null == s ? null : s
             }
-            class x extends s.default.Store {
+            class x extends r.default.Store {
                 initialize() {
-                    this.waitFor(f.default, d.default, _.default, m.default)
+                    this.waitFor(p.default, u.default, m.default, f.default)
                 }
                 getNewThreadCount() {
                     return h
@@ -4908,7 +4908,7 @@
                 }
                 getThreadIds(e, t, n) {
                     let i = e !== E,
-                        l = !(0, I.areSetsEqual)(n, N),
+                        l = !(0, _.areSetsEqual)(n, N),
                         a = t !== g;
                     return E = e, N = n, g = t, i ? H({
                         refreshThreadIds: !0
@@ -4928,7 +4928,7 @@
                 }
             }
             x.displayName = "ForumActivePostStore";
-            var B = new x(u.default, {
+            var B = new x(s.default, {
                 CONNECTION_OPEN: F,
                 OVERLAY_INITIALIZE: F,
                 GUILD_CREATE: F,
@@ -4945,7 +4945,7 @@
                     let {
                         guildId: n
                     } = e;
-                    if (null == E || n !== (null === (t = f.default.getChannel(E)) || void 0 === t ? void 0 : t.guild_id)) return !1;
+                    if (null == E || n !== (null === (t = p.default.getChannel(E)) || void 0 === t ? void 0 : t.guild_id)) return !1;
                     H({
                         refreshThreadIds: !0
                     })
@@ -4956,7 +4956,7 @@
                         isNewlyCreated: n
                     } = e;
                     if (null == t.parent_id || t.parent_id !== E || !n) return !1;
-                    t.ownerId !== p.default.getId() ? h++ : A = t.id
+                    t.ownerId !== c.default.getId() ? h++ : A = t.id
                 },
                 THREAD_UPDATE: function(e) {
                     let {
@@ -5032,6 +5032,113 @@
 
             function d(e, t) {
                 return (0, i.useStateFromStores)([o.default, l.default, a.default], () => u(e, t, [o.default, l.default, a.default]), [e, t])
+            }
+        },
+        519841: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                AttachmentLinkRefreshExperiment: function() {
+                    return l
+                }
+            });
+            var i = n("862205");
+            let l = (0, i.createExperiment)({
+                kind: "user",
+                id: "2023-12_attachment_link_refresh",
+                label: "Attachment Link Refresh User Experiment",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Refresh expired attachment links",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            })
+        },
+        787336: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isAttachmentUrl: function() {
+                    return p
+                },
+                removeSignedUrlParameters: function() {
+                    return f
+                },
+                messageHasExpiredAttachmentUrl: function() {
+                    return T
+                },
+                maybeRefreshAttachmentUrl: function() {
+                    return E
+                }
+            }), n("222007");
+            var i, l = n("872717"),
+                a = n("718517"),
+                o = n("253981"),
+                r = n("519841"),
+                s = n("49111");
+            let u = new Set([window.GLOBAL_ENV.CDN_HOST, null === (i = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) || void 0 === i ? void 0 : i.substring(2)]),
+                d = new Set(["/attachments/", "/ephemeral-attachments/"]),
+                c = 1 * a.default.Millis.HOUR;
+
+            function p(e) {
+                return u.has(e.hostname) && Array.from(d).some(t => e.pathname.startsWith(t))
+            }
+
+            function f(e) {
+                let t = o.default.toURLSafe(e);
+                if (null == t) return e;
+                for (let e of ["ex", "is", "hm"]) t.searchParams.delete(e);
+                return t
+            }
+
+            function m(e) {
+                let t = function(e) {
+                    let t = e.searchParams.get("ex"),
+                        n = parseInt(null != t ? t : "", 16);
+                    return isNaN(n) ? void 0 : n * a.default.Millis.SECOND
+                }(e);
+                return null == t || t <= Date.now() + c
+            }
+
+            function _(e) {
+                let t = o.default.toURLSafe(e.url);
+                return null != t && m(t)
+            }
+
+            function I(e) {
+                if (null == e) return !1;
+                let t = o.default.toURLSafe(e.url);
+                return !!(null != t && p(t)) && m(t)
+            }
+
+            function C(e) {
+                var t;
+                return I(e.image) || (null === (t = e.images) || void 0 === t ? void 0 : t.some(I)) || I(e.video)
+            }
+
+            function T(e) {
+                return e.attachments.some(_) || e.embeds.some(C)
+            }
+            async function A(e) {
+                let t = await l.default.post({
+                    url: s.Endpoints.ATTACHMENTS_REFRESH_URLS,
+                    body: {
+                        attachment_urls: [e]
+                    }
+                });
+                return t.ok ? t.body.refreshed_urls[0].refreshed : void 0
+            }
+            async function E(e) {
+                if (!r.AttachmentLinkRefreshExperiment.getCurrentConfig({
+                        location: "link_clicked"
+                    }).enabled) return e;
+                let t = o.default.toURLSafe(e);
+                if (null == t || !m(t)) return e;
+                let n = await A(e);
+                return null != n ? n : e
             }
         },
         970755: function(e, t, n) {
@@ -5676,4 +5783,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.15b00870fc5304994f7d.js.map
+//# sourceMappingURL=69171.86764cda81163729f901.js.map

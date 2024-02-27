@@ -86,8 +86,8 @@
                 _ = n("42203"),
                 h = n("305961"),
                 N = n("660478"),
-                A = n("18494"),
-                m = n("162771"),
+                m = n("18494"),
+                A = n("162771"),
                 I = n("718517"),
                 T = n("519841"),
                 S = n("787336"),
@@ -130,8 +130,8 @@
                 }), c.default.commit(p)), null != p.focusTargetId && null == a && (p = p.mutate({
                     focusTargetId: null
                 }), c.default.commit(p));
-                let A = i;
-                if (!d || E.default.isConnected() || p.loadingMore ? p.loadingMore || p.ready && !p.cached ? null != a ? A = !0 : C && R.log("Skipping fetch because no other conditions matched") : null == t || null != h.default.getGuild(t) ? A = !0 : C && R.log("Skipping fetch we are connected and have loaded messages") : A = !0, A) {
+                let m = i;
+                if (!d || E.default.isConnected() || p.loadingMore ? p.loadingMore || p.ready && !p.cached ? null != a ? m = !0 : C && R.log("Skipping fetch because no other conditions matched") : null == t || null != h.default.getGuild(t) ? m = !0 : C && R.log("Skipping fetch we are connected and have loaded messages") : m = !0, m) {
                     if (c.default.commit(p.mutate({
                             loadingMore: !0
                         })), null != a) s.default.jumpToMessage({
@@ -191,7 +191,7 @@
                 O = "viewedThreadIds";
 
             function P() {
-                let e = A.default.getChannelId();
+                let e = m.default.getChannelId();
                 if (null != e) {
                     let n = _.default.getChannel(e);
                     if (null != n) {
@@ -214,7 +214,7 @@
                     isPreload: e,
                     skipLocalFetch: t,
                     logFailures: n
-                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, l = A.default.getChannelId();
+                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, l = m.default.getChannelId();
                 if (null != l) {
                     let a = _.default.getChannel(l);
                     null != a ? ((0, g.isTextChannel)(a.type) ? b({
@@ -264,15 +264,15 @@
                 })
             }
 
-            function U() {
-                let e = A.default.getChannelId(),
-                    t = m.default.getGuildId();
+            function w() {
+                let e = m.default.getChannelId(),
+                    t = A.default.getGuildId();
                 if (null == t || null == e) return;
                 let n = p.default.getSidebarState(e);
                 (null == n ? void 0 : n.type) !== C.SidebarType.VIEW_CHANNEL && k(t, e)
             }
 
-            function w(e) {
+            function U(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -289,7 +289,7 @@
                     channel: t,
                     messageId: n
                 } = e, l = t.guild_id;
-                null != l && A.default.getChannelId(l) === t.id && b({
+                null != l && m.default.getChannelId(l) === t.id && b({
                     guildId: l,
                     channelId: t.id,
                     messageId: n
@@ -335,7 +335,7 @@
                 let u = null !== (t = F[n]) && void 0 !== t ? t : 0;
                 if (Date.now() - u < 10 * I.default.Millis.SECOND) return;
                 F[n] = Date.now();
-                let d = A.default.getChannelId(),
+                let d = m.default.getChannelId(),
                     r = p.default.getCurrentSidebarChannelId(d),
                     o = n === d || n === r;
                 a && E.default.isConnected() && o && s.default.fetchMessages({
@@ -362,7 +362,7 @@
                     state: t
                 } = e;
                 if ("active" !== t) return !1;
-                let n = A.default.getChannelId();
+                let n = m.default.getChannelId();
                 if (null == n) return !1;
                 s.default.fetchNewLocalMessages(n, v.MAX_MESSAGES_PER_CHANNEL)
             }
@@ -374,7 +374,7 @@
                     d.default.unsubscribe("CONNECTION_OPEN", P)
                 }
                 constructor(...e) {
-                    super(...e), this.fetchMessages = b, this.loadSelectedChannelIfNecessary = y, this.stores = new Map().set(p.default, U), this.actions = {
+                    super(...e), this.fetchMessages = b, this.loadSelectedChannelIfNecessary = y, this.stores = new Map().set(p.default, w), this.actions = {
                         APP_STATE_UPDATE: Y,
                         OVERLAY_INITIALIZE: P,
                         CHANNEL_SELECT: G,
@@ -382,7 +382,7 @@
                         THREAD_CREATE: V,
                         THREAD_LIST_SYNC: () => y(),
                         CHANNEL_CREATE: V,
-                        CHANNEL_PRELOAD: w,
+                        CHANNEL_PRELOAD: U,
                         THREAD_CREATE_LOCAL: W,
                         GUILD_CREATE: () => y(),
                         MESSAGE_END_EDIT: x,
@@ -399,35 +399,40 @@
             "use strict";
             n.r(t), n.d(t, {
                 SafetyWarningTypes: function() {
-                    return i
+                    return l
                 },
                 SafetyWarningFeedbackTypes: function() {
-                    return u
+                    return a
                 },
                 default: function() {
-                    return g
+                    return _
                 }
-            });
+            }), n("222007");
             var l, a, i, u, d = n("446674"),
                 r = n("913144"),
                 s = n("42203");
-            (l = i || (i = {}))[l.STRANGER_DANGER = 1] = "STRANGER_DANGER", l[l.INAPPROPRIATE_CONVERSATION_TIER_1 = 2] = "INAPPROPRIATE_CONVERSATION_TIER_1", l[l.INAPPROPRIATE_CONVERSATION_TIER_2 = 3] = "INAPPROPRIATE_CONVERSATION_TIER_2", (a = u || (u = {}))[a.UPVOTE = 0] = "UPVOTE", a[a.DOWNVOTE = 1] = "DOWNVOTE";
+            (i = l || (l = {}))[i.STRANGER_DANGER = 1] = "STRANGER_DANGER", i[i.INAPPROPRIATE_CONVERSATION_TIER_1 = 2] = "INAPPROPRIATE_CONVERSATION_TIER_1", i[i.INAPPROPRIATE_CONVERSATION_TIER_2 = 3] = "INAPPROPRIATE_CONVERSATION_TIER_2", (u = a || (a = {}))[u.UPVOTE = 0] = "UPVOTE", u[u.DOWNVOTE = 1] = "DOWNVOTE";
             let o = [],
-                f = {};
+                f = {},
+                c = new Set;
 
-            function c(e) {
+            function E(e) {
+                return 2 === e.type || 3 === e.type
+            }
+
+            function C(e) {
                 let {
                     safetyWarnings: t
                 } = e;
-                null != t && (f[e.id] = t), null == t && null != f[e.id] && delete f[e.id]
+                null != t && (f[e.id] = t, t.some(e => E(e) && null != e.dismiss_timestamp) && c.add(e.id)), null == t && (null != f[e.id] && delete f[e.id], c.delete(e.id))
             }
 
-            function E() {
+            function g() {
                 f = {}, Object.values(s.default.getMutablePrivateChannels()).forEach(e => {
-                    c(e)
+                    C(e)
                 })
             }
-            class C extends d.default.Store {
+            class p extends d.default.Store {
                 initialize() {
                     this.waitFor(s.default)
                 }
@@ -439,21 +444,27 @@
                     var t;
                     return null !== (t = f[e]) && void 0 !== t ? t : o
                 }
+                hasShownInitialTooltipForChannel(e) {
+                    return c.has(e)
+                }
             }
-            var g = new C(r.default, {
+            var _ = new p(r.default, {
                 CHANNEL_CREATE: function(e) {
-                    c(e.channel)
+                    C(e.channel)
                 },
                 CHANNEL_DELETE: function(e) {
-                    null != f[e.channel.id] && delete f[e.channel.id]
+                    let {
+                        channel: t
+                    } = e;
+                    null != f[t.id] && delete f[t.id], c.delete(t.id)
                 },
                 CHANNEL_UPDATES: function(e) {
                     e.channels.forEach(e => {
-                        c(e)
+                        C(e)
                     })
                 },
-                CONNECTION_OPEN: E,
-                CONNECTION_OPEN_SUPPLEMENTAL: E,
+                CONNECTION_OPEN: g,
+                CONNECTION_OPEN_SUPPLEMENTAL: g,
                 CHANNEL_SAFETY_WARNING_FEEDBACK: function(e) {
                     let {
                         channelId: t,
@@ -480,10 +491,12 @@
                         warningIds: n
                     } = e, l = f[t];
                     if (null == l) return;
-                    let a = Date.now().toString();
+                    let a = l.find(e => n.includes(e.id) && E(e));
+                    null != a && c.add(t);
+                    let i = new Date().toISOString();
                     f[t] = l.map(e => n.includes(e.id) ? {
                         ...e,
-                        dismiss_timestamp: a
+                        dismiss_timestamp: i
                     } : e)
                 }
             })
@@ -608,4 +621,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1727.f828429b756c69401c80.js.map
+//# sourceMappingURL=1727.3003214551f72a41c641.js.map
