@@ -23907,7 +23907,7 @@ html .progress__4ef76 {
     text-align: center;
     border-radius: 3px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: .875rem;
     padding: 12px 0;
     margin-top: 16px;
     color: var(--white-500);
@@ -43078,6 +43078,15 @@ html .progress__4ef76 {
         left: 0;
         bottom: 0
     }
+}
+
+.tooltip__8fae1 {
+    max-width: 250px
+}
+
+.tooltipContent__27a8f {
+    padding: var(--spacing-4)var(--spacing-8);
+    font-size: 12px
 }
 
 .searchHeader__19d87 {
@@ -128211,4 +128220,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4e08dd852fbc7691ece5.css.map*/
+/*# sourceMappingURL=app.3cc8b6d20b39a4d76b82.css.map*/
