@@ -3502,7 +3502,7 @@
 }
 
 .title__746ed {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources_fdd04d:hover {
@@ -3533,8 +3533,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -41625,7 +41625,7 @@ html .progress__4ef76 {
 
 .grandfatheredMessage_b731ea {
     border-radius: 3px;
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.25;
     padding: 8px 16px 8px 8px;
     display: flex;
@@ -41688,8 +41688,8 @@ html .progress__4ef76 {
     color: var(--white-500);
     display: flex;
     align-items: flex-start;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     padding: 16px;
     position: relative
 }
@@ -41737,7 +41737,7 @@ html .progress__4ef76 {
 
 .sectionDescription__93f73 {
     color: var(--text-normal);
-    line-height: 1.25rem;
+    line-height: 20px;
     margin-bottom: 16px;
     margin-top: 0
 }
@@ -41828,8 +41828,8 @@ html .progress__4ef76 {
 
 .billingInformation_ed226c {
     color: var(--text-normal);
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .finePrint_a624a3 {
@@ -41843,9 +41843,9 @@ html .progress__4ef76 {
 }
 
 .noItemsCard__4a2f1 {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.25rem;
+    line-height: 20px;
     margin-top: 16px;
     padding: 16px 19px;
     border: none;
@@ -42061,8 +42061,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -63581,8 +63581,8 @@ html .progress__4ef76 {
 }
 
 .planInfo_cd8cba {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -128199,4 +128199,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.24a2a792ef91e9e09332.css.map*/
+/*# sourceMappingURL=app.1a25b3abf4ddbb5507cd.css.map*/
