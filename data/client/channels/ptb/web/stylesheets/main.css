@@ -27695,16 +27695,19 @@ html .progress__4ef76 {
 .header__6145e {
     box-sizing: border-box;
     position: absolute;
-    padding: 24px 16px 20px;
+    padding: 20px 16px;
     height: 100%;
     width: 100%;
     z-index: 1;
     display: flex;
-    flex-wrap: nowrap
+    justify-content: space-between
 }
 
 .headerContent__8ec3c {
-    flex: 1
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start
 }
 
 .iconLogotypeContainer_e2a170 {
@@ -128191,4 +128194,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.27f363963c1236584e15.css.map*/
+/*# sourceMappingURL=app.21154a22e3ac273cfcf0.css.map*/
