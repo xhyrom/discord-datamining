@@ -30,6 +30,7 @@ import {
 import { setTimeout as sleep } from "node:timers/promises";
 import { Client } from "../index.ts";
 import { readdir } from "node:fs/promises";
+import deepEqual from "fast-deep-equal";
 
 interface FetchSnowflakeResponse {
   type: "invalid" | "valid" | "unknown";
@@ -69,6 +70,14 @@ export class Applications implements Module {
     }
 
     await git.pull();
+
+    const oldApplications = await readFile(
+      join(this.baseDir, "applications.json")
+    );
+    if (deepEqual(applications, JSON.parse(oldApplications ?? "[]"))) {
+      return; // No changes
+    }
+
     await writeFile(
       join(this.baseDir, "applications.json"),
       JSON.stringify(applications, null, 2)
