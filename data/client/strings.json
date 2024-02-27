@@ -757,7 +757,7 @@
   "EMBEDDED_ACTIVITIES_VOICE_CONTROLS_BUTTON_A11Y_LABEL": "\"Show Voice Controls\"",
   "EMBEDDED_ACTIVITIES_OPEN_ACTIVITY_SHELF": "\"Open Activity Shelf\"",
   "EMBEDDED_ACTIVITIES_LEAVE_ACTIVITY_A11Y_LABEL": "\"Leave Activity\"",
-  "EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS": "\"Activities are not available on this OS at this time\"",
+  "EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS": "\"This feature is not available on this OS at this time\"",
   "EMBEDDED_ACTIVITIES_APPLICATION_UNSUPPORTED_OS": "\"This Activity is not currently available on this OS\"",
   "EMBEDDED_ACTIVITIES_THIS_ACTIVITY": "\"this Activity\"",
   "EMBEDDED_ACTIVITIES_SUBSCRIBE_CTA": "\"SUBSCRIBE AND PLAY MORE\"",
