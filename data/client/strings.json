@@ -16485,6 +16485,7 @@
   "INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_CTL": "\"Contact Crisis Text Line\"",
   "INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_NOFILTR": "\"Contact NoFiltr\"",
   "INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP": "\"This conversation may not be safe.\"",
+  "INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP_ANNOUNCEMENT": "\"This conversation may not be safe. Open safety tools to take action.\"",
   "SAFETY_ALERTS_SETTINGS_HEADER": "\"Safety Alerts\"",
   "SAFETY_ALERTS_SETTING_TITLE": "\"Show alerts in direct messages\"",
   "SAFETY_ALERTS_SETTING_DESCRIPTION": "\"Display an alert when a possible risk to your safety is detected. [Learn more about safety alerts]({learnMoreLink})\"",
