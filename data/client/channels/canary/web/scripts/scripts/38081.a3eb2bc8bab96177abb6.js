@@ -694,11 +694,6 @@
                         type: "MEDIA_ENGINE_INTERACTION_REQUIRED",
                         required: !1
                     })
-                },
-                enableSoundshare() {
-                    !g() && s.default.dispatch({
-                        type: "MEDIA_ENGINE_ENABLE_SOUNDSHARE"
-                    })
                 }
             }
         },
@@ -1124,4 +1119,4 @@
         }
     }
 ]);
-//# sourceMappingURL=38081.e6ab96156e8f0c28c65f.js.map
+//# sourceMappingURL=38081.a3eb2bc8bab96177abb6.js.map
