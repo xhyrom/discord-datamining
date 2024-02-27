@@ -3013,7 +3013,10 @@
   },
   "USER_OFFER_REDEEM": {
     "url": "/users/@me/billing/user-offer/redeem",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
