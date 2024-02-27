@@ -4721,6 +4721,18 @@
       "POST"
     ]
   },
+  "QUESTS_PREVIEW_STATUS": {
+    "url": "/quests/:param/preview/status",
+    "allowed_methods": null
+  },
+  "QUESTS_PREVIEW_DISMISSIBILITY": {
+    "url": "/quests/:param/preview/dismissibility",
+    "allowed_methods": null
+  },
+  "QUESTS_PREVIEW_COMPLETE": {
+    "url": "/quests/:param/preview/complete",
+    "allowed_methods": null
+  },
   "ATTACHMENTS_REFRESH_URLS": {
     "url": "/attachments/refresh-urls",
     "allowed_methods": [
