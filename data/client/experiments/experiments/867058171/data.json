@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_emoji_suggestions",
+    "label": "Emoji Suggestions Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Emoji Suggestions without Captions",
+      "Treatment 2: Enables Emoji Suggestions with Captions"
+    ],
+    "hash": 867058171,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "isEmojiSuggestionsEnabled",
+      "isEmojiCaptionsEnabled"
+    ]
+  }
+}
