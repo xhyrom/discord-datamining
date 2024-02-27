@@ -16,6 +16,7 @@ id,hash,label
 2021-07_role_popout,1428438599,Role Popout
 2021-08_guild_role_subscription_users,1567199723,Guild Role Subscription Users
 2021-08_max_sync_delay,578035700,Overrides the default max sync delay for AV streams in WebRTC
+2021-08_regional_payment_methods,3091068323,Regional Payment Methods
 2021-08_user_initiated_refunds,2623810566,User Initiated Refunds
 2021-09_favorites_server,1134868932,Favorites Server
 2021-09_ios_screenshare_resolution_profiles,3656427814,iOS: Screenshare resolution profiles
@@ -42,6 +43,7 @@ id,hash,label
 2022-04_account_profile_popout,4156073260,Account Profile Popout
 2022-04_creator_monetization_country_allowlist,2532700533,Creator Monetization Available in Country
 2022-04_registration_copy_updates,1115221338,Registration Copy Updates
+2022-06_auth_sessions_user_settings,1095779154,Auth Sessions User Settings
 2022-06_community_admin_server,3282315774,Show the button to join the admin server in community overview server settings page
 2022-06_free_sticker_slots_design_updates,258580919,Free Sticker Slots Design Updates
 2022-06_home_refresh_button,853790804,Show refresh button
@@ -168,6 +170,7 @@ id,hash,label
 2023-03_pomelo_debounce_delay,373531156,Pomelo Debounce Delay
 2023-03_server_subscriptions_tier_templates,808859253,Server Subscriptions Tier Templates
 2023-03_store_latest_message_data,1617749743,Store latest message data
+2023-03_text_playground_settings_pane,3074921198,Text Playground
 2023-03_trial_redemption_default_to_monthly_plan,1656308555,Trial Redemption Default To Monthly Plan
 2023-04_activity_launcher_embed,3699020455,Activity Launcher Embed
 2023-04_birthday_activities_jamspace_tile,3742269191,Birthday Activities Whats New Jamspace Tile
@@ -210,6 +213,7 @@ id,hash,label
 2023-05_popular_slash_commands_mobile,1146223059,Popular Slash Commands Mobile
 2023-05_referral_trials_birthday_moment,3364594544,Referral Trials Birthday Moment
 2023-05_safety_user_sentiment,1344378364,Safety User Sentiment Feedback Eligible
+2023-05_speed_test,2982944466,Speed Test User Setting
 2023-06_activity_shelf_banner_color_together,1426851414,Activity Shelf Banner Color Together
 2023-06_activity_shelf_to_detail_page,2451628514,Activity Shelf to Detail Page
 2023-06_app_launcher_mobile,2212455371,App Launcher - Mobile
@@ -247,12 +251,15 @@ id,hash,label
 2023-07_h265_for_windows_with_nvidia,4193500328,Test how h265 works on Windows with Nvidia nvenc codec
 2023-07_iframe_modal,135503004,iFrame Modal
 2023-07_member_safety_non_community,581929451,Members Safety Non Community Experiment
+2023-07_mfa_email_verification,3832649687,Safety Experience Mfa Email Verification
 2023-07_p13n_guild_dock_summaries,727554173,Guild Dock Summaries on Mobile Experiment
 2023-07_p13n_summarization_model_swap,3819099123,User channel summarization model swapping
 2023-07_p13n_summarization_model_swap_guild,2803184680,Guild channel summarization model swapping
+2023-07_safetyhub,2804631054,Safety Hub
 2023-07_server_guide_post_onboarding_new_member_action,4076788897,Add onboarding new member action to server guide
 2023-07_server_guide_trigger,2104400771,server guide guild experiment for triggering purposes
 2023-07_suggested_contacts_on_messages_tab,3350915613,Suggested Contacts Rows on Messages Tab
+2023-08_aa_imbalance_remediation,3307441810,AA test to validate fallback trigger and location frequency change
 2023-08_activities_in_text,1295440499,Activities in Text User
 2023-08_clips_public_test,3779532009,Clips (Public Test)
 2023-08_collectiblesnitroavatardecoiap,2588597280,Collectible Nitro Avatar Decorations IAP
@@ -435,6 +442,7 @@ id,hash,label
 2024-01_developers_get_developer_shelf,1459591700,Developers Get Developer Shelf
 2024-01_enhanced_hd_streaming_roadblock,430533047,Enhanced HD Streaming Roadblock
 2024-01_enhanced_HD_streaming_roadblock,4291495091,Enhanced HD Streaming Roadblock
+2024-01_expanded_gift_entry_points_gift_inventory,819931368,Expanded Gift Entry Points - Gift Inventory
 2024-01_expanded_gift_entry_points_profile_panel,869298046,Expanded Gift Entry Points - Profile Panel
 2024-01_expiring_status,2976448192,Expiring status Experiment 
 2024-01_explicit_media_sender_false_positive,3730176707,Explicit Media Sender False Positive
@@ -443,11 +451,14 @@ id,hash,label
 2024-01_h265_desktop_decode,124383374,H.265 Desktop Decode
 2024-01_inappropriate_conversation_warning,1265607294,Inappropriate Conversation Warning
 2024-01_inappropriate_conversation_warning_staff_bypass,1562571052,Inappropriate Conversation Warning Staff Bypass
+2024-01_mention_on_all_messages,3038837490,Mention on all messages
 2024-01_nvencadaptivekeyframe,3032307853,nvenc adaptive key frame interval
 2024-01_omnibutton_file_upload_subtext,1193116937,Omnibutton File Upload Subtext
+2024-01_per_guild_pfx,2261244652,Per-guild Profile Effects / Avatar Decoration Experiment
 2024-01_quiet_mode,711383732,Quiet Mode (dnd-equivalent) Experiment 
 2024-01_reactivation_user_discount_offer_experiment,4279678064,Reactivation User Discount Offer
 2024-01_rpc_analytics_killswitch,305964783,RPC Server Analytics Killswitch
+2024-01_safety_hub_display_guild_violations,1136043234,Safety Hub Display Guild Violations
 2024-01_shop_lunar_new_year_drop_upsell,2703753090,Shop Lunar New Year In App Marketing Experiment
 2024-01_unreads,2883062585,Unreads Experiment (grey-dot mode)
 2024-01_uu_forced_migration,3867848536,Unique Username Forced Migration UI
@@ -469,4 +480,5 @@ id,hash,label
 2024-02_navi_bar_new_users,2455953431,Mobile Redesign - Nav Experiment: You Bar - New Users
 2024-02_nitro_custom_emoji_perk_roadblock,4041111924,Nitro Custom Emoji Perk Roadblock
 2024-02_nvenc_new_presets,1871481173,nvenc new presets
+2024-02_safety_hub_guild_violation_in_app_appeals,668094544,Safety Hub Guild Violation In App Appeals
 2024-02_v1_content_inventory_feed,1747551262,V1 Feed of the content inventory

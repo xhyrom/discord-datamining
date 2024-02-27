@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-07_automated_gift_code_message",
-    "label": "Automatically send gift code message in direct message to gift recipient",
+    "id": "2024-02_safety_hub_guild_violation_in_app_appeals",
+    "label": "Safety Hub Guild Violation In App Appeals",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show the automated gift code message"
+      "Treatment 1: Allow guild violations to be applied using the new appeals ingestion flow"
     ],
-    "hash": 3647881612,
+    "hash": 668094544,
     "buckets": [
       -1,
       0,

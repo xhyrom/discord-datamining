@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2022-02_guild_folder_mute",
-    "label": "Guild Folder Mute",
+    "id": "2023-07_safetyhub",
+    "label": "Safety Hub",
     "description": [
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enabled"
     ],
-    "hash": 3351473888,
+    "hash": 2804631054,
     "buckets": [
       -1,
       0,

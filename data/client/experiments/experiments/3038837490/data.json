@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_mention_on_all_messages",
+    "label": "Mention on all messages",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Increment mention count when receiving a message in a channel set to all messages"
+    ],
+    "hash": 3038837490,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

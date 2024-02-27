@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-05_speed_test",
+    "label": "Speed Test User Setting",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show speed test"
+    ],
+    "hash": 2982944466,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "showSettings"
+    ]
+  }
+}

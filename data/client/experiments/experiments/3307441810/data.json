@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-05_localized_pricing_turkey_notice",
-    "label": "Localized Pricing Turkey Notice",
+    "id": "2023-08_aa_imbalance_remediation",
+    "label": "AA test to validate fallback trigger and location frequency change",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Turkey Notice"
+      "Treatment 1: AA test enabled. Noop on UI effect."
     ],
-    "hash": 2556223249,
+    "hash": 3307441810,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "isEnabled"
     ]
   }
 }

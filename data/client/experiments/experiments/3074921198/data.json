@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2022-12_localized_pricing_poland_notice",
-    "label": "Localized Pricing Poland Notice",
+    "id": "2023-03_text_playground_settings_pane",
+    "label": "Text Playground",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Poland Notice"
+      "Treatment 1: Enable settings pane"
     ],
-    "hash": 4169494713,
+    "hash": 3074921198,
     "buckets": [
       -1,
       0,

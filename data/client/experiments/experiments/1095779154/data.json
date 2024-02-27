@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-06_auth_sessions_user_settings",
+    "label": "Auth Sessions User Settings",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show settings"
+    ],
+    "hash": 1095779154,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "showSettings"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-08_regional_payment_methods",
+    "label": "Regional Payment Methods",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Regional Payment Method for Germany",
+      "Treatment 2: Regional Payment Method for US",
+      "Treatment 3: Regional Payment Method for Brazil",
+      "Treatment 4: Regional Payment Method for Turkey",
+      "Treatment 5: Regional Payment Method for Poland",
+      "Treatment 6: Enable paysafecard",
+      "Treatment 7: Regional Payment Method for Philippines",
+      "Treatment 8: Regional Payment Method for Malaysia",
+      "Treatment 9: Regional Payment Method for Vietnam",
+      "Treatment 10: Regional Payment Method for Indonesia",
+      "Treatment 11: Regional Payment Method for South Korea",
+      "Treatment 12: Regional Payment Method for Belgium",
+      "Treatment 13: Regional Payment Method for Austria",
+      "Treatment 14: Regional Payment Method for Netherlands",
+      "Treatment 15: Launch Paysafecard and Sofort",
+      "Treatment 16: Launch Cash App"
+    ],
+    "hash": 3091068323,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabledPaymentTypes",
+      "forceCountryCode",
+      "validCountryCodes"
+    ]
+  }
+}

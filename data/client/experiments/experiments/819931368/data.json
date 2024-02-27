@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_expanded_gift_entry_points_gift_inventory",
+    "label": "Expanded Gift Entry Points - Gift Inventory",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show Gift Entry Point in Gift Inventory"
+    ],
+    "hash": 819931368,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
