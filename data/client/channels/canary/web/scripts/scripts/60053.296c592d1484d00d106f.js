@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["59196"], {
+    ["60053"], {
         777483: function(e, t, n) {
             var l = {
                 "./icon-file-acrobat.svg": "668973",
@@ -4313,7 +4313,7 @@
                 async function d(e, t, n) {
                     try {
                         let l = await (0, i.getMetadata)(e, t);
-                        if (null == l || !Array.isArray(l.button_urls)) return;
+                        if (l.button_urls.length <= n) return;
                         let r = l.button_urls[n];
                         if ("string" != typeof r) return;
                         let o = s.default.safeParseWithQuery(r);
@@ -35063,23 +35063,25 @@
 
             function u(e) {
                 let {
-                    sync_id: t
+                    sync_id: t,
+                    metadata: n
                 } = e;
                 if (null == t) return;
-                let n = s.SpotifyResourceTypes.TRACK,
-                    l = a.default.isProtocolRegistered() ? s.SpotifyEndpoints.PLAYER_OPEN(n, t) : s.SpotifyEndpoints.WEB_OPEN(n, t);
-                window.open(l)
+                let l = (0, s.getSpotifyResourceType)(null == n ? void 0 : n.type);
+                if (null == l) return;
+                let i = a.default.isProtocolRegistered() ? s.SpotifyEndpoints.PLAYER_OPEN(l, t) : s.SpotifyEndpoints.WEB_OPEN(l, t);
+                window.open(i)
             }
 
             function d(e, t) {
-                r(e, t, e => {
+                r(e, t, t => {
+                    var n;
                     let {
-                        album_id: t
-                    } = e;
-                    if (null == t) throw Error("no album id in metadata");
+                        album_id: l
+                    } = t, i = (0, s.getSpotifyResourceType)(null === (n = e.metadata) || void 0 === n ? void 0 : n.type) === s.SpotifyResourceTypes.EPISODE;
                     return {
-                        resourceType: s.SpotifyResourceTypes.ALBUM,
-                        resourceId: t
+                        resourceType: i ? s.SpotifyResourceTypes.SHOW : s.SpotifyResourceTypes.ALBUM,
+                        resourceId: l
                     }
                 })
             }
@@ -54099,4 +54101,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.753bbde0bb0238047eb1.js.map
+//# sourceMappingURL=60053.296c592d1484d00d106f.js.map
