@@ -45891,8 +45891,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -83334,8 +83334,8 @@ html .tabBadge__002b3 {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -83382,8 +83382,8 @@ html .tabBadge__002b3 {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -128194,4 +128194,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4ec25a18848cb46838c9.css.map*/
+/*# sourceMappingURL=app.90a84fb64a62f6df5b0c.css.map*/
