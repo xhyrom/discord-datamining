@@ -15050,6 +15050,23 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     color: var(--text-link)
 }
 
+.executedCommand_e8859a .appsIcon__76213 {
+    margin-right: 3px
+}
+
+.executedCommand_e8859a .appLauncherOnboardingCommandName_ec3d61 {
+    font-weight: 500;
+    color: var(--text-link);
+    background-color: var(--mention-background);
+    border-radius: 3px;
+    padding: 0 2px
+}
+
+.executedCommand_e8859a .appLauncherOnboardingCommandName_ec3d61:hover {
+    color: var(--white-500);
+    background-color: var(--brand-experiment)
+}
+
 .executedCommand_e8859a .applicationName__359c6 {
     font-weight: 500;
     color: var(--header-primary)
@@ -28085,4 +28102,4 @@ span.button__4f306.disabled_dc5630 {
     padding-top: 16px
 }
 
-/*# sourceMappingURL=shared.b1bf4ec54da1e08b2001.css.map*/
+/*# sourceMappingURL=shared.d20f0ec7804b3c3fae41.css.map*/
