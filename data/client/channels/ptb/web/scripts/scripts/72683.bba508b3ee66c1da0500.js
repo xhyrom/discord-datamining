@@ -1525,7 +1525,8 @@
                         renewal: !0,
                         preventFetch: !(null != n),
                         paymentSourceId: _,
-                        currency: T.currency
+                        currency: T.currency,
+                        userDiscountOfferId: null == n ? void 0 : n.id
                     }), p = null == C ? void 0 : null === (m = C.invoiceItems) || void 0 === m ? void 0 : null === (f = m.find(e => e.subscriptionPlanId === t)) || void 0 === f ? void 0 : null === (d = f.discounts) || void 0 === d ? void 0 : null === (u = d.find(e => e.type === r.InvoiceDiscountTypes.SUBSCRIPTION_PLAN)) || void 0 === u ? void 0 : u.amount, S = (0, a.getPrice)(t, !1, !1, T);
                     return (0, s.formatPrice)(S.amount - (null != p ? p : 0), S.currency)
                 }
@@ -4725,4 +4726,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72683.38c1641f7f338dade618.js.map
+//# sourceMappingURL=72683.bba508b3ee66c1da0500.js.map
