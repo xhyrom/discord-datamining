@@ -6530,7 +6530,7 @@
                         opacity: .2
                     },
                     [a.LIGHT]: {
-                        raw: "GREEN_360",
+                        raw: "GREEN_400",
                         opacity: .2
                     },
                     [a.MIDNIGHT]: {
@@ -12607,7 +12607,7 @@
                 "panel-bg": [o.Color.PRIMARY_600, o.Color.WHITE_500, o.Color.PLUM_24, o.Color.PLUM_20],
                 "polls-normal-fill-hover": [o.Color.PRIMARY_600, o.Color.PRIMARY_230, o.Color.PRIMARY_600, o.Color.PRIMARY_600],
                 "polls-normal-image-background": [o.Color.PRIMARY_660, o.Color.WHITE_500, o.Color.PRIMARY_660, o.Color.PRIMARY_660],
-                "polls-victor-fill": [o.Color.GREEN_360, o.Color.GREEN_360, o.Color.GREEN_360, o.Color.GREEN_360],
+                "polls-victor-fill": [o.Color.GREEN_360, o.Color.GREEN_400, o.Color.GREEN_360, o.Color.GREEN_360],
                 "polls-voted-fill": [o.Color.BRAND_500, o.Color.BRAND_500, o.Color.BRAND_500, o.Color.BRAND_500],
                 "profile-gradient-card-background": [o.Color.BLACK_500, o.Color.WHITE_500, o.Color.BLACK_500, o.Color.BLACK_500],
                 "profile-gradient-message-input-border": [o.Color.PRIMARY_500, o.Color.PRIMARY_430, o.Color.PRIMARY_500, o.Color.PRIMARY_500],
@@ -13638,4 +13638,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.8bc5fb4511ca7038a531.js.map
+//# sourceMappingURL=7273.2c3064ce1b564b2cd227.js.map
