@@ -20466,6 +20466,7 @@
                 clientThemesCard: "clientThemesCard__1ddb6",
                 clientThemesImage: "clientThemesImage_c6b1e3",
                 cover: "cover__590cf",
+                customAppIconImage: "customAppIconImage__6b3eb",
                 customButton: "customButton_c0cc97",
                 emojiImage: "emojiImage__3eed5",
                 hidden: "hidden__5dd29",
