@@ -14016,62 +14016,47 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     font-size: 12px
 }
 
-.wrapper__18aa1 {
-    margin: 0
+.wrapper_de5239 {
+    width: 100%;
+    height: 100%;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto
 }
 
-.base__7ba63 {
+.image__98a59 {
+    background-size: 100%100%
+}
+
+.title__627cf {
+    font-size: 17px;
+    line-height: 22px;
     font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-muted)
+}
+
+.text__1c14c {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--text-muted)
+}
+
+.container_de798d {
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .02em;
     font-family: var(--font-display);
-    color: var(--header-primary)
-}
-
-.selectable__49dfb {
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    user-select: text
-}
-
-.base__7ba63.muted__3d103 {
-    color: var(--header-secondary)
-}
-
-.uppercase_e6572d {
-    text-transform: uppercase
-}
-
-.logo__7f9c8 {
-    color: var(--header-primary)
-}
-
-.title__808ee {
-    font-size: 17px
-}
-
-.header__32541 {
-    display: flex;
-    align-items: center;
-    gap: 8px
-}
-
-.left__6c5c8 {
-    transform: rotate(270deg)
-}
-
-.right__309a5 {
-    transform: rotate(90deg)
-}
-
-.down__0b7f6 {
-    transform: rotate(180deg)
-}
-
-.downRight__403de {
-    transform: rotate(135deg)
-}
-
-.upLeft__51554 {
-    transform: rotate(315deg)
+    font-weight: 600;
+    flex: 1 1 auto;
+    color: var(--channels-default)
 }
 
 .nameTag__693ff {
@@ -14094,21 +14079,6 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     flex: 0 0 auto;
     margin-left: 1ch;
     display: block
-}
-
-.container_de798d {
-    box-sizing: border-box;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: .02em;
-    font-family: var(--font-display);
-    font-weight: 600;
-    flex: 1 1 auto;
-    color: var(--channels-default)
 }
 
 .avatar_fb704f {
@@ -14204,6 +14174,26 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .sliderBodyLarge__0d1ea {
     width: 804px
+}
+
+.left__6c5c8 {
+    transform: rotate(270deg)
+}
+
+.right__309a5 {
+    transform: rotate(90deg)
+}
+
+.down__0b7f6 {
+    transform: rotate(180deg)
+}
+
+.downRight__403de {
+    transform: rotate(135deg)
+}
+
+.upLeft__51554 {
+    transform: rotate(315deg)
 }
 
 .roleIcon__59ca1 {
@@ -14463,62 +14453,6 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     }
 }
 
-.wrapper__246a1 {
-    overflow: hidden;
-    min-height: 100vh;
-    background-size: cover;
-    color: var(--text-normal);
-    background-color: var(--background-secondary);
-    background-position: 50%0
-}
-
-.flexWrapper__7155f {
-    height: 100vh
-}
-
-.image_dabcb8 {
-    width: 254px;
-    height: 154px;
-    margin-bottom: 40px;
-    background-size: 100%100%
-}
-
-.text__9b110 {
-    width: 440px;
-    margin-bottom: 20px
-}
-
-.note__35490 {
-    font-size: 16px;
-    text-align: center;
-    color: var(--text-muted)
-}
-
-.title__73f9a {
-    font-size: 24px;
-    line-height: 8px;
-    margin-bottom: 24px;
-    font-weight: 600;
-    text-align: center;
-    color: var(--header-primary)
-}
-
-.theme-light .wrapper__246a1 {
-    background-image: url(/assets/14223d22c9628be36fc0.svg)
-}
-
-.theme-light .image_dabcb8 {
-    background-image: url(/assets/1c04c4fae98fbfc21d22.svg)
-}
-
-.theme-dark .wrapper__246a1 {
-    background-image: url(/assets/14223d22c9628be36fc0.svg)
-}
-
-.theme-dark .image_dabcb8 {
-    background-image: url(/assets/72eaa596042042be6259.svg)
-}
-
 .container_de00a3 {
     display: flex;
     border-radius: 4px;
@@ -14643,32 +14577,98 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     height: var(--custom-icon-button-icon-xs-size)
 }
 
-.wrapper_de5239 {
-    width: 100%;
-    height: 100%;
-    max-width: 440px;
-    margin-left: auto;
-    margin-right: auto
+.wrapper__18aa1 {
+    margin: 0
 }
 
-.image__98a59 {
+.base__7ba63 {
+    font-weight: 600;
+    font-family: var(--font-display);
+    color: var(--header-primary)
+}
+
+.selectable__49dfb {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text
+}
+
+.base__7ba63.muted__3d103 {
+    color: var(--header-secondary)
+}
+
+.uppercase_e6572d {
+    text-transform: uppercase
+}
+
+.logo__7f9c8 {
+    color: var(--header-primary)
+}
+
+.title__808ee {
+    font-size: 17px
+}
+
+.header__32541 {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.wrapper__246a1 {
+    overflow: hidden;
+    min-height: 100vh;
+    background-size: cover;
+    color: var(--text-normal);
+    background-color: var(--background-secondary);
+    background-position: 50%0
+}
+
+.flexWrapper__7155f {
+    height: 100vh
+}
+
+.image_dabcb8 {
+    width: 254px;
+    height: 154px;
+    margin-bottom: 40px;
     background-size: 100%100%
 }
 
-.title__627cf {
-    font-size: 17px;
-    line-height: 22px;
-    font-weight: 600;
-    text-transform: uppercase;
+.text__9b110 {
+    width: 440px;
+    margin-bottom: 20px
+}
+
+.note__35490 {
+    font-size: 16px;
     text-align: center;
     color: var(--text-muted)
 }
 
-.text__1c14c {
-    font-size: 16px;
-    line-height: 20px;
+.title__73f9a {
+    font-size: 24px;
+    line-height: 8px;
+    margin-bottom: 24px;
+    font-weight: 600;
     text-align: center;
-    color: var(--text-muted)
+    color: var(--header-primary)
+}
+
+.theme-light .wrapper__246a1 {
+    background-image: url(/assets/14223d22c9628be36fc0.svg)
+}
+
+.theme-light .image_dabcb8 {
+    background-image: url(/assets/1c04c4fae98fbfc21d22.svg)
+}
+
+.theme-dark .wrapper__246a1 {
+    background-image: url(/assets/14223d22c9628be36fc0.svg)
+}
+
+.theme-dark .image_dabcb8 {
+    background-image: url(/assets/72eaa596042042be6259.svg)
 }
 
 .right__49ff3 {
@@ -28102,4 +28102,4 @@ span.button__4f306.disabled_dc5630 {
     padding-top: 16px
 }
 
-/*# sourceMappingURL=shared.d20f0ec7804b3c3fae41.css.map*/
+/*# sourceMappingURL=shared.e22e69f1e279492b42d3.css.map*/
