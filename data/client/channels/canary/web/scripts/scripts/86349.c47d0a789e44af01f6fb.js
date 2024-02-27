@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["98346"], {
+    ["86349"], {
         203472: function(e, t, n) {
             "use strict";
             e.exports = n.p + "72eaa596042042be6259.svg"
@@ -210,8 +210,8 @@
                 c = n("428958"),
                 f = n("161778"),
                 h = n("144747"),
-                p = n("983782"),
-                E = n("659500"),
+                E = n("983782"),
+                p = n("659500"),
                 C = n("452453"),
                 m = n("49111");
             let S = e => {
@@ -222,7 +222,7 @@
                     rect: o,
                     position: f,
                     align: h,
-                    impressionName: E,
+                    impressionName: p,
                     impressionProperties: C
                 } = e, S = r.useRef(null);
                 r.useEffect(() => {
@@ -248,7 +248,7 @@
                     null === (e = S.current) || void 0 === e || e.updatePosition()
                 }), (0, c.default)({
                     type: i.ImpressionTypes.MENU,
-                    name: E,
+                    name: p,
                     properties: C
                 });
                 let _ = (0, d.useWindowDispatch)(),
@@ -258,7 +258,7 @@
                     v = r.useCallback(() => {
                         _.dispatch(m.ComponentActions.POPOUT_HIDE)
                     }, [_]);
-                return (0, a.jsx)(p.AppReferencePositionLayer, {
+                return (0, a.jsx)(E.AppReferencePositionLayer, {
                     onMount: T,
                     onUnmount: v,
                     reference: () => o,
@@ -276,7 +276,7 @@
                         renderLazy: e,
                         renderWindow: t
                     } = this.props;
-                    if (t.addEventListener("resize", this.closeResize, !0), E.ComponentDispatch.subscribe(m.ComponentActions.CONTEXT_MENU_CLOSE, this.props.closeContextMenu), null != e) {
+                    if (t.addEventListener("resize", this.closeResize, !0), p.ComponentDispatch.subscribe(m.ComponentActions.CONTEXT_MENU_CLOSE, this.props.closeContextMenu), null != e) {
                         let t = setTimeout(() => {
                             this.setState({
                                 render: () => (0, a.jsx)(u.MenuSpinner, {})
@@ -302,7 +302,7 @@
                     let {
                         renderWindow: e
                     } = this.props;
-                    e.removeEventListener("resize", this.closeResize, !0), E.ComponentDispatch.unsubscribe(m.ComponentActions.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
+                    e.removeEventListener("resize", this.closeResize, !0), p.ComponentDispatch.unsubscribe(m.ComponentActions.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
                 }
                 render() {
                     var e;
@@ -437,8 +437,8 @@
                 c = n("49111");
             let f = window.matchMedia("(prefers-reduced-motion: reduce)"),
                 h = window.matchMedia("(prefers-contrast: more)"),
-                p = window.matchMedia("(prefers-contrast: less)"),
-                E = window.matchMedia("(prefers-color-scheme: dark)"),
+                E = window.matchMedia("(prefers-contrast: less)"),
+                p = window.matchMedia("(prefers-color-scheme: dark)"),
                 C = window.matchMedia("(prefers-color-scheme: light)"),
                 m = window.matchMedia("(forced-colors: active)"),
                 S = 5;
@@ -448,7 +448,7 @@
             }
             var _ = {
                 initBasic() {
-                    f.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(f), E.addListener(this.handleSystemColorPreferencesChanged), C.addListener(this.handleSystemColorPreferencesChanged), m.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), h.addListener(this.handleSystemPrefersContrastChanged), p.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
+                    f.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(f), p.addListener(this.handleSystemColorPreferencesChanged), C.addListener(this.handleSystemColorPreferencesChanged), m.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), h.addListener(this.handleSystemPrefersContrastChanged), E.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
                 },
                 init() {
                     this.initBasic(), s.default.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
@@ -481,7 +481,7 @@
                 },
                 handleSystemColorPreferencesChanged() {
                     let e;
-                    E.matches ? e = c.ThemeTypes.DARK : C.matches && (e = c.ThemeTypes.LIGHT);
+                    p.matches ? e = c.ThemeTypes.DARK : C.matches && (e = c.ThemeTypes.LIGHT);
                     let t = !u.isPlatformEmbedded || g(),
                         n = t && m.matches ? "active" : "none";
                     s.default.wait(() => {
@@ -490,7 +490,7 @@
                 },
                 handleSystemPrefersContrastChanged() {
                     let e = "no-preference";
-                    h.matches ? e = "more" : p.matches && (e = "less"), s.default.wait(() => {
+                    h.matches ? e = "more" : E.matches && (e = "less"), s.default.wait(() => {
                         o.systemPrefersContrastChanged(e)
                     })
                 }
@@ -500,7 +500,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return E
                 }
             });
             var a = n("37983"),
@@ -528,7 +528,7 @@
                 })
             }
 
-            function p(e) {
+            function E(e) {
                 let {
                     children: t
                 } = e, n = (0, i.useStateFromStoresObject)([d.default], () => ({
@@ -589,10 +589,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 getGameName: function() {
-                    return p
+                    return E
                 },
                 startBroadcastForStream: function() {
-                    return E
+                    return p
                 },
                 stopBroadcast: function() {
                     return C
@@ -616,13 +616,13 @@
                 f = n("194051"),
                 h = n("49111");
 
-            function p(e) {
+            function E(e) {
                 var t;
                 let n = null !== (t = null == e ? void 0 : e.gameName) && void 0 !== t ? t : null == e ? void 0 : e.name;
                 return null != n ? n.trim() : null
             }
 
-            function E(e, t) {
+            function p(e, t) {
                 if (null == t) return;
                 let {
                     canBroadcast: n
@@ -640,15 +640,15 @@
                 if (null == l || null == f) return;
                 let h = u.default.getId();
                 if (l !== h) return;
-                let E = u.default.getSessionId();
-                if (null == E) return;
+                let p = u.default.getSessionId();
+                if (null == p) return;
                 let C = o.default.getChannel(f),
                     m = null != C && C.isBroadcastChannel();
                 if (null == C || l !== C.ownerId || !m) return;
                 let S = function(e) {
                     var t;
                     let n = s.default.getGameForPID(e),
-                        a = p(n),
+                        a = E(n),
                         r = d.default.getGameByName(a);
                     return null !== (t = null == r ? void 0 : r.id) && void 0 !== t ? t : "0"
                 }(t);
@@ -660,7 +660,7 @@
                         broadcast: e
                     })
                 }({
-                    sessionId: E,
+                    sessionId: p,
                     userId: h,
                     applicationId: S,
                     channelId: C.id,
@@ -749,8 +749,8 @@
                 f = n("9759"),
                 h = n("837374");
             (r = a || (a = {}))[r.INVALID = 0] = "INVALID", r[r.VALID_USER_ONLY = 1] = "VALID_USER_ONLY", r[r.VALID = 2] = "VALID";
-            let p = new Set,
-                E = new Set,
+            let E = new Set,
+                p = new Set,
                 C = new Set,
                 m = [],
                 S = {
@@ -759,7 +759,7 @@
                     BROADCASTS_BY_VALIDITY: e => "validity:".concat(e)
                 },
                 g = new l.default(function(e) {
-                    let t = p.has(e.userId) ? 1 : 0;
+                    let t = E.has(e.userId) ? 1 : 0;
                     return null != e.viewers && (t = 2), [S.BROADCASTS_BY_USER_ID(e.userId), S.BROADCASTS_BY_CHANNEL_ID(e.channelId), S.BROADCASTS_BY_VALIDITY(t)]
                 }, e => e.channelId);
 
@@ -768,7 +768,7 @@
                 if (null == t) {
                     let t = g.get(e);
                     return !!(null != t && (0, s.isEqual)(t.source, n)) && (g.delete(e), void 0)
-                }!p.has(e) && !E.has(e) && (C.add(e), m = [...C]);
+                }!E.has(e) && !p.has(e) && (C.add(e), m = [...C]);
                 let a = (0, h.broadcastFromServer)(t, e, n);
                 g.set(e, a)
             }
@@ -857,7 +857,7 @@
                         data: t
                     } = e;
                     c.default.keys(t).forEach(e => {
-                        f.CAN_VIEW_BROADCASTS_BUCKETS.includes(t[e]) ? p.add(e) : E.add(e), C.clear(), m = [...C];
+                        f.CAN_VIEW_BROADCASTS_BUCKETS.includes(t[e]) ? E.add(e) : p.add(e), C.clear(), m = [...C];
                         let n = g.get(e);
                         null != n && (g.delete(e), g.set(e, n))
                     })
@@ -909,7 +909,7 @@
                     })
                 },
                 LOGOUT: function() {
-                    p.clear(), E.clear(), C.clear(), m = [], g.clear()
+                    E.clear(), p.clear(), C.clear(), m = [], g.clear()
                 }
             })
         },
@@ -1028,7 +1028,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return E
                 }
             });
             var a = n("37983");
@@ -1044,19 +1044,19 @@
                 f = n("49111"),
                 h = n("782340");
 
-            function p(e) {
+            function E(e) {
                 let {
                     onClose: t
-                } = e, n = (0, i.useAppContext)(), p = (0, r.useStateFromStores)([u.default], () => u.default.getCurrentUserActiveStream()), E = (0, l.default)(p, n);
+                } = e, n = (0, i.useAppContext)(), E = (0, r.useStateFromStores)([u.default], () => u.default.getCurrentUserActiveStream()), p = (0, l.default)(E, n);
                 return (0, a.jsxs)(s.Menu, {
                     onSelect: f.NOOP_NULL,
                     navId: "manage-broadcast",
                     onClose: t,
                     "aria-label": h.default.Messages.SETTINGS,
-                    children: [d.isPlatformEmbedded && null != p ? (0, a.jsx)(s.MenuItem, {
+                    children: [d.isPlatformEmbedded && null != E ? (0, a.jsx)(s.MenuItem, {
                         id: "stream-settings",
                         label: h.default.Messages.SCREENSHARE_STREAM_QUALITY,
-                        children: E
+                        children: p
                     }) : null, (0, a.jsx)(s.MenuItem, {
                         id: "broadcast-settings",
                         label: h.default.Messages.BROADCAST_SETTINGS,
@@ -1194,7 +1194,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return R
                 }
             }), n("70102"), n("222007");
             var a = n("37983"),
@@ -1208,8 +1208,8 @@
                 c = n("77078"),
                 f = n("272030"),
                 h = n("901582"),
-                p = n("373469"),
-                E = n("697218"),
+                E = n("373469"),
+                p = n("697218"),
                 C = n("427302"),
                 m = n("462579"),
                 S = n("449008"),
@@ -1295,9 +1295,9 @@
                     })
                 })
             }
-            let R = [];
+            let N = [];
 
-            function N(e) {
+            function R(e) {
                 let {
                     channelId: t,
                     guildId: s,
@@ -1306,14 +1306,14 @@
                     compact: m = !1,
                     disableInteraction: g = !1,
                     maxVisibleUsers: v = 3
-                } = e, [A, N] = r.useState(!1), L = r.useRef(new d.DelayedCall(150, () => N(!1))), O = (0, o.useStateFromStoresArray)([p.default, E.default], () => {
+                } = e, [A, R] = r.useState(!1), L = r.useRef(new d.DelayedCall(150, () => R(!1))), O = (0, o.useStateFromStoresArray)([E.default, p.default], () => {
                     if (l.type === _.ParticipantTypes.STREAM) {
-                        let e = p.default.getViewerIds(l.id);
-                        return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(S.isNotNullish) : R
+                        let e = E.default.getViewerIds(l.id);
+                        return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(S.isNotNullish) : N
                     }
-                    return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => E.default.getUser(e)).filter(S.isNotNullish) : R : R
+                    return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(S.isNotNullish) : N : N
                 }, [l]), y = r.useCallback(() => {
-                    L.current.cancel(), N(!0)
+                    L.current.cancel(), R(!0)
                 }, []), P = r.useCallback(() => {
                     L.current.delay()
                 }, []), D = r.useCallback((e, t) => {
@@ -1392,14 +1392,14 @@
             function c(e, t, c) {
                 var f;
                 let h = (0, l.useGetStreamApplication)(e),
-                    p = (0, r.useStateFromStores)([u.default], () => u.default.getId()),
-                    E = null != e ? (0, i.encodeStreamKey)(e) : o.default.getActiveStreamKey(),
-                    C = null !== (f = o.default.getVideoStats(E)) && void 0 !== f ? f : {},
+                    E = (0, r.useStateFromStores)([u.default], () => u.default.getId()),
+                    p = null != e ? (0, i.encodeStreamKey)(e) : o.default.getActiveStreamKey(),
+                    C = null !== (f = o.default.getVideoStats(p)) && void 0 !== f ? f : {},
                     m = {
-                        media_session_id: o.default.getMediaSessionId(E),
-                        rtc_connection_id: o.default.getRtcConnectionId(E),
-                        stream_region: o.default.getRegion(E),
-                        max_viewers: o.default.getMaxViewers(E),
+                        media_session_id: o.default.getMediaSessionId(p),
+                        rtc_connection_id: o.default.getRtcConnectionId(p),
+                        stream_region: o.default.getRegion(p),
+                        max_viewers: o.default.getMaxViewers(p),
                         ...C
                     };
                 return null == e ? null : (0, a.jsx)(s.MenuItem, {
@@ -1413,7 +1413,7 @@
                             return n => (0, a.jsx)(t, {
                                 stream: e,
                                 streamApplication: h,
-                                isStreamer: p === (null == e ? void 0 : e.ownerId),
+                                isStreamer: E === (null == e ? void 0 : e.ownerId),
                                 analyticsData: m,
                                 ...n
                             })
@@ -1440,8 +1440,8 @@
                 c = n("305961"),
                 f = n("42887"),
                 h = n("697218"),
-                p = n("49111"),
-                E = n("686298"),
+                E = n("49111"),
+                p = n("686298"),
                 C = n("353927"),
                 m = n("782340");
 
@@ -1460,7 +1460,7 @@
                         if (null != T) {
                             let e = {
                                 qualityOptions: {
-                                    preset: E.ApplicationStreamPresets.PRESET_CUSTOM,
+                                    preset: p.ApplicationStreamPresets.PRESET_CUSTOM,
                                     resolution: r,
                                     frameRate: s
                                 },
@@ -1478,7 +1478,7 @@
                         var o, d;
                         o = t, d = {
                             ...A,
-                            object: p.AnalyticsObjects.RADIO_ITEM,
+                            object: E.AnalyticsObjects.RADIO_ITEM,
                             objectType: u
                         }, (0, i.openModalLazy)(async () => {
                             let {
@@ -1489,45 +1489,45 @@
                                 analyticsSource: d
                             })
                         }, {
-                            contextKey: o === p.AppContext.POPOUT ? i.POPOUT_MODAL_CONTEXT : i.DEFAULT_MODAL_CONTEXT
+                            contextKey: o === E.AppContext.POPOUT ? i.POPOUT_MODAL_CONTEXT : i.DEFAULT_MODAL_CONTEXT
                         })
                     }
                 }, [t, A, T]);
                 if (null == e) return null;
-                let x = S === E.ApplicationStreamPresets.PRESET_DOCUMENTS ? E.ApplicationStreamFPS.FPS_30 : _,
-                    R = E.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
+                let x = S === p.ApplicationStreamPresets.PRESET_DOCUMENTS ? p.ApplicationStreamFPS.FPS_30 : _,
+                    N = p.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
-                        } = e, r = (0, o.default)(E.ApplicationStreamPresets.PRESET_CUSTOM, g, t, v, I);
+                        } = e, r = (0, o.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, g, t, v, I);
                         return (0, a.jsx)(i.MenuRadioItem, {
                             group: "stream-settings-fps",
                             id: "stream-settings-fps-".concat(t),
                             label: n,
                             checked: t === _,
-                            action: () => M(r, g, t, p.AnalyticsObjectTypes.RESOLUTION)
+                            action: () => M(r, g, t, E.AnalyticsObjectTypes.RESOLUTION)
                         }, "stream-settings-fps-".concat(t))
                     }),
-                    N = E.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
+                    R = p.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
-                        } = e, r = (0, o.default)(E.ApplicationStreamPresets.PRESET_CUSTOM, t, x, v, I);
+                        } = e, r = (0, o.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, t, x, v, I);
                         return (0, a.jsx)(i.MenuRadioItem, {
                             group: "stream-settings-resolution",
                             id: "stream-settings-resolution-".concat(t),
                             label: n,
                             checked: t === g,
-                            action: () => M(r, t, x, p.AnalyticsObjectTypes.RESOLUTION)
+                            action: () => M(r, t, x, E.AnalyticsObjectTypes.RESOLUTION)
                         }, "stream-settings-resolution-".concat(t))
                     });
                 return (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(i.MenuGroup, {
                         label: m.default.Messages.SCREENSHARE_FRAME_RATE,
-                        children: R
+                        children: N
                     }), (0, a.jsx)(i.MenuGroup, {
                         label: m.default.Messages.STREAM_RESOLUTION,
-                        children: N
+                        children: R
                     })]
                 })
             }
@@ -1563,6 +1563,44 @@
                 }
             }
         },
+        709377: function(e, t, n) {
+            "use strict";
+            var a;
+            n.r(t), n.d(t, {
+                ContentInventoryFeedKey: function() {
+                    return a
+                }
+            }), (a || (a = {})).GLOBAL_FEED = "global feed"
+        },
+        265596: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return l
+                }
+            }), n("222007");
+            var a = n("446674"),
+                r = n("913144");
+            let s = new Map;
+            class i extends a.default.Store {
+                getFeed(e) {
+                    return s.get(e)
+                }
+            }
+            i.displayName = "ContentInventoryStore";
+            var l = new i(r.default, {
+                CONNECTION_OPEN: function() {
+                    s.clear()
+                },
+                CONTENT_INVENTORY_SET_FEED: function(e) {
+                    let {
+                        feedId: t,
+                        feed: n
+                    } = e;
+                    s.set(t, n)
+                }
+            })
+        },
         779601: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1581,7 +1619,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return R
                 }
             }), n("222007");
             var a = n("37983"),
@@ -1595,8 +1633,8 @@
                 c = n("77078"),
                 f = n("960460"),
                 h = n("489740"),
-                p = n("355025"),
-                E = n("51545"),
+                E = n("355025"),
+                p = n("51545"),
                 C = n("155084"),
                 m = n("393414"),
                 S = n("90404"),
@@ -1610,7 +1648,7 @@
             function M() {
                 let [e, t] = r.useState(!1), n = (0, d.useStateFromStores)([h.default], () => {
                     var e;
-                    return (0, p.probablyHasBuildOverride)() ? null === (e = h.default.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web : null
+                    return (0, E.probablyHasBuildOverride)() ? null === (e = h.default.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web : null
                 });
                 if (null == n) return null;
                 let s = async () => {
@@ -1636,7 +1674,7 @@
             }, 100, {
                 trailing: !1
             });
-            class R extends r.PureComponent {
+            class N extends r.PureComponent {
                 componentDidCatch(e, t) {
                     this.triggerSoftCrash(e, t)
                 }
@@ -1655,7 +1693,7 @@
                         error_message: e.message,
                         error_stack: e.stack,
                         sentry_issue_id: a,
-                        uses_client_mods: (0, E.usesClientMods)()
+                        uses_client_mods: (0, p.usesClientMods)()
                     }), x(), T.default.cleanupDisplaySleep()
                 }
                 _handleSubmitReport() {
@@ -1708,7 +1746,7 @@
                     }, this.discordErrorsSet = !1
                 }
             }
-            var N = R
+            var R = N
         },
         160139: function(e, t, n) {
             "use strict";
@@ -1729,8 +1767,8 @@
                 c = n("191145"),
                 f = n("270227"),
                 h = n("940277"),
-                p = n("386811"),
-                E = n("964264"),
+                E = n("386811"),
+                p = n("964264"),
                 C = n("655804"),
                 m = n("58463"),
                 S = n("238500"),
@@ -1744,7 +1782,7 @@
                 x = (e, t) => {
                     (0, g.isMac)() && !t.altKey ? T.default.fullscreen(e) : T.default.maximize(e)
                 },
-                R = e => {
+                N = e => {
                     let {
                         windowKey: t,
                         themeOverride: n,
@@ -1768,7 +1806,7 @@
                             onClick: e => x(t, e),
                             "aria-label": v.default.Messages.TITLE_BAR_MAXIMIZE_WINDOW,
                             tabIndex: -1,
-                            children: (0, a.jsx)(E.default, {})
+                            children: (0, a.jsx)(p.default, {})
                         }), (0, a.jsx)(l.Clickable, {
                             className: I.winButtonMinMax,
                             onClick: () => M(t),
@@ -1778,7 +1816,7 @@
                         })]
                     })
                 },
-                N = e => {
+                R = e => {
                     let {
                         focused: t,
                         windowKey: n,
@@ -1801,7 +1839,7 @@
                                 onClick: () => A(n),
                                 "aria-label": v.default.Messages.TITLE_BAR_CLOSE_WINDOW,
                                 tabIndex: -1,
-                                children: (0, a.jsx)(p.default, {
+                                children: (0, a.jsx)(E.default, {
                                     color: "#4c0000"
                                 })
                             }), (0, a.jsx)(l.Clickable, {
@@ -1841,13 +1879,13 @@
                 if (f) return null;
                 switch (n) {
                     case g.PlatformTypes.WINDOWS:
-                        return (0, a.jsx)(R, {
+                        return (0, a.jsx)(N, {
                             windowKey: r,
                             themeOverride: l,
                             hasOpenLayer: h
                         });
                     case g.PlatformTypes.OSX:
-                        return (0, a.jsx)(N, {
+                        return (0, a.jsx)(R, {
                             focused: t,
                             windowKey: r,
                             frame: s,
@@ -1877,12 +1915,12 @@
                 c = n("227602"),
                 f = n("791776"),
                 h = n("13798"),
-                p = n("49111"),
-                E = n("894282");
+                E = n("49111"),
+                p = n("894282");
 
             function C(e) {
                 let t = e.ctrlKey || e.altKey || e.metaKey;
-                e.key === E.KeyboardEventKey.Tab && !t && !__OVERLAY__ && !(0, s.hasAnyModalOpen)() && d.default.maybeShowKeyboardNavigationExplainerModal()
+                e.key === p.KeyboardEventKey.Tab && !t && !__OVERLAY__ && !(0, s.hasAnyModalOpen)() && d.default.maybeShowKeyboardNavigationExplainerModal()
             }
 
             function m() {
@@ -1895,21 +1933,21 @@
                     ! function(e, t) {
                         var n, a;
                         let r = (0, f.isInputLikeElement)(null === (n = (0, f.eventOwnerDocument)(e)) || void 0 === n ? void 0 : n.activeElement);
-                        if (r && e.key !== E.KeyboardEventKey.Tab) return;
-                        let s = e.ctrlKey || e.altKey || e.metaKey || e.key !== E.KeyboardEventKey.Tab && e.shiftKey;
+                        if (r && e.key !== p.KeyboardEventKey.Tab) return;
+                        let s = e.ctrlKey || e.altKey || e.metaKey || e.key !== p.KeyboardEventKey.Tab && e.shiftKey;
                         if (s) return;
                         let i = function(e) {
                             let t = h.keyToCode("shift"),
                                 n = h.keyToCode("tab");
-                            if (e.key === E.KeyboardEventKey.Tab && e.shiftKey && null != t && null != n) return [
-                                [p.KeyboardDeviceTypes.KEYBOARD_KEY, t],
-                                [p.KeyboardDeviceTypes.KEYBOARD_KEY, n]
+                            if (e.key === p.KeyboardEventKey.Tab && e.shiftKey && null != t && null != n) return [
+                                [E.KeyboardDeviceTypes.KEYBOARD_KEY, t],
+                                [E.KeyboardDeviceTypes.KEYBOARD_KEY, n]
                             ];
-                            let a = E.NavigationKeyShortcutMap.get(e.key);
+                            let a = p.NavigationKeyShortcutMap.get(e.key);
                             if (null != a) {
                                 let e = h.keyToCode(a);
                                 if (null != e) return [
-                                    [p.KeyboardDeviceTypes.KEYBOARD_KEY, e]
+                                    [E.KeyboardDeviceTypes.KEYBOARD_KEY, e]
                                 ]
                             }
                             return null
@@ -1986,7 +2024,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-2905b05995ed68bd71949c11e918d037003d9e16",
+                    release: "discord_web-53fda424b38aa06b249bb8a65b74f2e73b029187",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2004,7 +2042,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "269351", "269351")), a.setTag("builtAt", String("1709064441080"));
+                }), a.setTag("buildNumber", (e = "269354", "269354")), a.setTag("builtAt", String("1709064601052"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2468,10 +2506,10 @@
                 c = n("567469"),
                 f = n("998716"),
                 h = n("834052"),
-                p = n("274438");
-            let E = e => e / 400,
+                E = n("274438");
+            let p = e => e / 400,
                 C = !1,
-                m = (0, o.createSound)("stage_waiting", "stage_waiting", E(i.default.getOutputVolume()));
+                m = (0, o.createSound)("stage_waiting", "stage_waiting", p(i.default.getOutputVolume()));
 
             function S() {
                 let e = l.default.getVoiceChannelId();
@@ -2489,9 +2527,9 @@
                     m.stop(), C = !1;
                     return
                 }
-                let a = p.default.shouldPlay();
+                let a = E.default.shouldPlay();
                 if (a) {
-                    m.volume = E(i.default.getOutputVolume()), m.loop(), C = !0;
+                    m.volume = p(i.default.getOutputVolume()), m.loop(), C = !0;
                     return
                 }
                 let r = h.default.isLive(e);
@@ -2499,13 +2537,13 @@
                     m.stop(), C = !1;
                     return
                 }
-                let o = p.default.isMuted();
+                let o = E.default.isMuted();
                 if (o) {
                     m.pause(), C = !1;
                     return
                 }
                 let d = null != Object.values(u.default.getVoiceStatesForChannel(e)).find(e => !e.suppress && !e.isVoiceMuted());
-                d || C ? d && (m.pause(), C = !1) : (m.volume = E(i.default.getOutputVolume()), m.loop(), C = !0)
+                d || C ? d && (m.pause(), C = !1) : (m.volume = p(i.default.getOutputVolume()), m.loop(), C = !0)
             }
 
             function g(e) {
@@ -2555,7 +2593,7 @@
                     let {
                         volume: t
                     } = e;
-                    m.volume = E(t)
+                    m.volume = p(t)
                 }
                 handleToggleSelfDeaf() {
                     S()
@@ -2664,16 +2702,16 @@
                     children: t
                 } = e, n = (0, r.useStateFromStores)([o.default], () => o.default.theme), c = (0, u.useInMainTabsExperiment)(), f = (0, r.useStateFromStores)([l.default], () => l.default.gradientPreset), {
                     saturation: h,
-                    contrast: p
+                    contrast: E
                 } = (0, r.useStateFromStoresObject)([i.default], () => ({
                     saturation: i.default.saturation,
                     contrast: i.default.contrast
-                })), E = 0;
-                return c && (E = (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED)), null != f && c && (E = f.theme === d.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== h && (E = (0, s.setThemeFlag)(E, s.ThemeContextFlags.REDUCE_SATURATION_ENABLED)), (0, a.jsx)(s.RootThemeContextProvider, {
+                })), p = 0;
+                return c && (p = (0, s.setThemeFlag)(p, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED)), null != f && c && (p = f.theme === d.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(p, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(p, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== h && (p = (0, s.setThemeFlag)(p, s.ThemeContextFlags.REDUCE_SATURATION_ENABLED)), (0, a.jsx)(s.RootThemeContextProvider, {
                     theme: n,
-                    flags: E,
+                    flags: p,
                     saturation: h,
-                    contrast: p,
+                    contrast: E,
                     children: t
                 })
             }
@@ -2836,7 +2874,7 @@
                     className: c,
                     artURL: f,
                     noArt: h = !1,
-                    selected: p = !1
+                    selected: E = !1
                 } = e;
                 return (0, a.jsxs)(l.default, {
                     className: c,
@@ -2861,7 +2899,7 @@
                         className: u.description,
                         variant: "text-sm/medium",
                         children: o
-                    }) : null, p || null == n ? null : (0, a.jsx)(i.Button, {
+                    }) : null, E || null == n ? null : (0, a.jsx)(i.Button, {
                         className: u.outerButton,
                         size: i.Button.Sizes.NONE,
                         color: i.Button.Colors.WHITE,
@@ -2897,8 +2935,8 @@
                 c = n("373469"),
                 f = n("42887"),
                 h = n("697218"),
-                p = n("394832"),
-                E = n("985622"),
+                E = n("394832"),
+                p = n("985622"),
                 C = n("356553"),
                 m = n("387111"),
                 S = n("773336"),
@@ -2931,10 +2969,10 @@
                     onClose: I,
                     onSelect: A,
                     appContext: M = g.AppContext.APP
-                } = e, x = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), R = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, N = v(n, r, l), L = (0, o.default)(R, M), O = (0, u.default)(R, M, g.NOOP_NULL), y = null == R ? (0, a.jsx)(s.MenuItem, {
+                } = e, x = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, R = v(n, r, l), L = (0, o.default)(N, M), O = (0, u.default)(N, M, g.NOOP_NULL), y = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
-                    icon: p.default,
+                    icon: E.default,
                     action: m
                 }) : (0, a.jsxs)(a.Fragment, {
                     children: [S.isPlatformEmbedded ? (0, a.jsx)(s.MenuItem, {
@@ -2944,13 +2982,13 @@
                     }) : null, h ? O : null, x ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
                         label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
-                        icon: p.default,
+                        icon: E.default,
                         action: m
                     }) : null, (0, a.jsx)(s.MenuItem, {
                         id: "stop-streaming",
                         label: T.default.Messages.STOP_STREAMING,
-                        icon: E.default,
-                        action: () => (0, d.default)(R)
+                        icon: p.default,
+                        action: () => (0, d.default)(N)
                     })]
                 });
                 return (0, a.jsx)(i.default, {
@@ -2959,9 +2997,9 @@
                         onSelect: A,
                         navId: "manage-streams",
                         onClose: I,
-                        "aria-label": null != R ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
+                        "aria-label": null != N ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
                         children: [(0, a.jsx)(s.MenuGroup, {
-                            children: N.map(e => {
+                            children: R.map(e => {
                                 let {
                                     stream: t,
                                     username: n
@@ -3003,9 +3041,9 @@
                     width: n,
                     noArt: f = !1,
                     selected: h = !1
-                } = e, p = (0, s.useStateFromStores)([u.default], () => u.default.getChannel(t.channelId));
+                } = e, E = (0, s.useStateFromStores)([u.default], () => u.default.getChannel(t.channelId));
                 return r.useEffect(() => {
-                    (null == p ? void 0 : p.isGuildStageVoice()) && (0, i.closeStream)((0, l.encodeStreamKey)(t), !1)
+                    (null == E ? void 0 : E.isGuildStageVoice()) && (0, i.closeStream)((0, l.encodeStreamKey)(t), !1)
                 }, []), (0, a.jsx)(o.default, {
                     artURL: c,
                     noArt: f,
@@ -3074,8 +3112,8 @@
                 c = n("30672"),
                 f = n("100844"),
                 h = n("607391"),
-                p = n("782340"),
-                E = n("100469");
+                E = n("782340"),
+                p = n("100469");
             let C = n("588281");
 
             function m(e) {
@@ -3091,30 +3129,30 @@
                     return t !== d.default.getId()
                 }));
                 return (0, a.jsx)("div", {
-                    className: s(E.content, E.streamHidden, {
-                        [E.small]: S
+                    className: s(p.content, p.streamHidden, {
+                        [p.small]: S
                     }),
                     children: (0, a.jsx)(h.default, {
-                        className: E.streamHiddenEmptyState,
+                        className: p.streamHiddenEmptyState,
                         artURL: C,
                         noArt: r,
                         selected: m,
                         size: (0, h.getSizeForWidth)(n),
-                        header: S ? null : p.default.Messages.STREAM_HIDDEN,
+                        header: S ? null : E.default.Messages.STREAM_HIDDEN,
                         description: m ? null : (0, a.jsxs)("div", {
-                            className: s(E.streamHiddenCTA, {
-                                [E.largePaddingTop]: !S
+                            className: s(p.streamHiddenCTA, {
+                                [p.largePaddingTop]: !S
                             }),
                             children: [(0, a.jsx)(f.CallTileCTA, {
                                 isSmall: S,
                                 children: (0, a.jsx)(l.Text, {
                                     variant: S ? "text-sm/semibold" : "text-md/semibold",
                                     color: "none",
-                                    children: n < 175 ? p.default.Messages.WATCH : p.default.Messages.WATCH_STREAM
+                                    children: n < 175 ? E.default.Messages.WATCH : E.default.Messages.WATCH_STREAM
                                 })
                             }), g ? (0, a.jsx)(f.CallTileCTA, {
-                                className: E.addCTA,
-                                tooltip: p.default.Messages.STREAM_WATCH_MULTIPLE_TOOLTIP,
+                                className: p.addCTA,
+                                tooltip: E.default.Messages.STREAM_WATCH_MULTIPLE_TOOLTIP,
                                 onClick: e => {
                                     e.stopPropagation(), (0, u.watchStream)(t.stream, {
                                         forceMultiple: !0
@@ -3122,7 +3160,7 @@
                                 },
                                 isSmall: S,
                                 children: (0, a.jsx)(c.default, {
-                                    className: E.addStreamIcon
+                                    className: p.addStreamIcon
                                 })
                             }) : null]
                         })
@@ -3221,7 +3259,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return p
                 }
             });
             var a = n("37983");
@@ -3236,9 +3274,9 @@
                 c = n("697218"),
                 f = n("773336"),
                 h = n("49111"),
-                p = n("686298");
+                E = n("686298");
 
-            function E(e, t, E) {
+            function p(e, t, p) {
                 let C = u.default.getWindowOpen(h.PopoutWindowKeys.CHANNEL_CALL_POPOUT) ? h.PopoutWindowKeys.CHANNEL_CALL_POPOUT : null;
                 if ((0, l.default)(C), f.isPlatformEmbedded)(0, r.openModalLazy)(async () => {
                     let {
@@ -3247,12 +3285,12 @@
                     return n => (0, a.jsx)(t, {
                         ...n,
                         guildId: e,
-                        analyticsLocation: E
+                        analyticsLocation: p
                     })
                 });
                 else {
                     var m;
-                    let n = (0, i.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, p.ApplicationStreamResolutions.RESOLUTION_1080, p.ApplicationStreamFPS.FPS_30, c.default.getCurrentUser(), null === (m = o.default.getGuild(e)) || void 0 === m ? void 0 : m.premiumTier) ? {
+                    let n = (0, i.default)(E.ApplicationStreamPresets.PRESET_CUSTOM, E.ApplicationStreamResolutions.RESOLUTION_1080, E.ApplicationStreamFPS.FPS_30, c.default.getCurrentUser(), null === (m = o.default.getGuild(e)) || void 0 === m ? void 0 : m.premiumTier) ? {
                         width: 1920,
                         height: 1080
                     } : {
@@ -3358,14 +3396,14 @@
                     channel: n,
                     onClick: d,
                     ...c
-                } = e, f = t ? u.CenterControlButton : u.default, h = n.isBroadcastChannel(), p = (0, i.useIsBroadcastingInChannel)(n.id);
+                } = e, f = t ? u.CenterControlButton : u.default, h = n.isBroadcastChannel(), E = (0, i.useIsBroadcastingInChannel)(n.id);
                 return (0, a.jsx)(f, {
                     ...c,
                     onClick: () => {
-                        p && (0, s.stopBroadcast)(), r.default.disconnect(), null == d || d()
+                        E && (0, s.stopBroadcast)(), r.default.disconnect(), null == d || d()
                     },
                     iconComponent: l.default,
-                    label: p ? o.default.Messages.STOP_BROADCASTING : h ? o.default.Messages.LEAVE_BROADCAST : o.default.Messages.DISCONNECT_SELF
+                    label: E ? o.default.Messages.STOP_BROADCASTING : h ? o.default.Messages.LEAVE_BROADCAST : o.default.Messages.DISCONNECT_SELF
                 })
             }
         },
@@ -3435,7 +3473,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return p
                 }
             });
             var a = n("37983"),
@@ -3464,7 +3502,7 @@
                 })
             }
 
-            function p(e) {
+            function E(e) {
                 let {
                     className: t,
                     isVertical: n
@@ -3479,18 +3517,18 @@
                 })
             }
 
-            function E(e) {
+            function p(e) {
                 let {
                     channelId: t,
                     className: n,
                     isParticipantsOpen: s,
                     isVertical: u = !1,
                     hideTooltip: o = !1
-                } = e, E = r.useCallback(e => {
+                } = e, p = r.useCallback(e => {
                     let {
                         className: t
                     } = e;
-                    return s ? (0, a.jsx)(p, {
+                    return s ? (0, a.jsx)(E, {
                         className: t,
                         isVertical: u
                     }) : (0, a.jsx)(h, {
@@ -3504,7 +3542,7 @@
                     onClick: function() {
                         l.default.toggleParticipants(t, !s)
                     },
-                    iconComponent: E,
+                    iconComponent: p,
                     shouldShowTooltip: !o
                 })
             }
@@ -3540,16 +3578,16 @@
                         hasPermission: c,
                         children: f,
                         channelLimitReached: h = !1,
-                        join: p
+                        join: E
                     } = e,
-                    E = (0, i.useAppContext)(),
-                    C = r ? () => d() : () => s(!e.enabled, E);
+                    p = (0, i.useAppContext)(),
+                    C = r ? () => d() : () => s(!e.enabled, p);
                 return (0, a.jsx)(a.Fragment, {
                     children: f({
                         onClick: C,
                         active: n,
                         disabled: !n && (!c || h),
-                        iconComponent: p || n ? u.default : o.default,
+                        iconComponent: E || n ? u.default : o.default,
                         label: t,
                         unavailable: r
                     })
@@ -3566,8 +3604,8 @@
                     cameraUnavailable: u,
                     hasPermission: o,
                     className: h,
-                    channelLimitReached: p,
-                    channelLimit: E,
+                    channelLimitReached: E,
+                    channelLimit: p,
                     centerButton: C = !1,
                     onPopoutClick: m,
                     ...S
@@ -3580,8 +3618,8 @@
                     onCameraUnavailable: l,
                     cameraUnavailable: u,
                     hasPermission: o,
-                    channelLimitReached: p,
-                    channelLimit: E,
+                    channelLimitReached: E,
+                    channelLimit: p,
                     children: e => {
                         let {
                             unavailable: n,
@@ -3837,7 +3875,7 @@
                     return h
                 },
                 default: function() {
-                    return p
+                    return E
                 }
             }), n("222007");
             var a = n("37983"),
@@ -3879,7 +3917,7 @@
                         maxX: i,
                         maxY: o,
                         dockedRect: c
-                    } = this.props, f = Math.round(n), h = Math.round(o - r - this._height), p = Math.round(a), E = Math.round(i - s - this._width), C = (0, u.getPlatform)(), m = C !== u.PlatformTypes.WEB && this.inPopout ? 22 : 0;
+                    } = this.props, f = Math.round(n), h = Math.round(o - r - this._height), E = Math.round(a), p = Math.round(i - s - this._width), C = (0, u.getPlatform)(), m = C !== u.PlatformTypes.WEB && this.inPopout ? 22 : 0;
                     if (null != c) {
                         var S, g;
                         return {
@@ -3890,19 +3928,19 @@
                     switch (e) {
                         case d.PictureInPicturePositions.TOP_LEFT:
                             return {
-                                y: f, x: p
+                                y: f, x: E
                             };
                         case d.PictureInPicturePositions.BOTTOM_LEFT:
                             return {
-                                y: h, x: p
+                                y: h, x: E
                             };
                         case d.PictureInPicturePositions.TOP_RIGHT:
                             return {
-                                y: f, x: E
+                                y: f, x: p
                             };
                         default:
                             return {
-                                y: h, x: E
+                                y: h, x: p
                             }
                     }
                 }
@@ -4030,7 +4068,7 @@
                 hidden: !1,
                 roundCorners: !0
             };
-            var p = r.memo(e => {
+            var E = r.memo(e => {
                 let {
                     selectedPIPWindow: t,
                     pipWindows: n,
@@ -4040,7 +4078,7 @@
                     dockedRect: l,
                     pictureInPictureComponents: u,
                     appContext: o,
-                    roundCorners: p
+                    roundCorners: E
                 } = e;
                 return (0, a.jsx)("div", {
                     className: c.pictureInPicture,
@@ -4066,7 +4104,7 @@
                             edgeOffsetBottom: f.bottom,
                             edgeOffsetLeft: f.left,
                             edgeOffsetRight: f.top,
-                            roundCorners: p,
+                            roundCorners: E,
                             children: e
                         })
                     })()
@@ -4077,7 +4115,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return p
                 }
             });
             var a = n("37983"),
@@ -4091,17 +4129,17 @@
                 c = n("217513"),
                 f = n("845579"),
                 h = n("49111"),
-                p = n("491595"),
-                E = function(e) {
+                E = n("491595"),
+                p = function(e) {
                     let {
                         style: t,
                         src: n,
-                        backgroundSrc: E,
+                        backgroundSrc: p,
                         userId: C,
                         pulseSpeakingIndicator: m = !1,
                         speaking: S = !1,
                         ...g
-                    } = e, _ = null != E ? E : n, T = (0, l.default)(_, s.default.unsafe_rawColors.PRIMARY_800.css), v = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, I = (0, c.default)(null != C ? C : h.EMPTY_STRING_USER_ID), A = null == I ? void 0 : I.getBannerURL({
+                    } = e, _ = null != p ? p : n, T = (0, l.default)(_, s.default.unsafe_rawColors.PRIMARY_800.css), v = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, I = (0, c.default)(null != C ? C : h.EMPTY_STRING_USER_ID), A = null == I ? void 0 : I.getBannerURL({
                         size: 1024,
                         canAnimate: f.GifAutoPlay.getSetting()
                     });
@@ -4111,7 +4149,7 @@
                             })
                         }, [v, C]), null == n) return null;
                     let M = (0, a.jsx)(i.Avatar, {
-                            className: p.avatarWrapper,
+                            className: E.avatarWrapper,
                             src: n,
                             ...g
                         }),
@@ -4121,7 +4159,7 @@
                         };
                     return null != A && S && v && (x.backgroundImage = "url(".concat(A, ")"), x.backgroundSize = "cover"), (0, a.jsx)("div", {
                         style: x,
-                        className: p.background,
+                        className: E.background,
                         children: m ? (0, a.jsx)(o.default, {
                             shouldAnimate: S,
                             children: M
@@ -4675,4 +4713,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98346.8cba6bf6ebf292c9f1ba.js.map
+//# sourceMappingURL=86349.c47d0a789e44af01f6fb.js.map
