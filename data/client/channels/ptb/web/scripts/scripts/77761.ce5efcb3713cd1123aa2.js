@@ -7709,11 +7709,6 @@
                 USER_SETTINGS_VOICE_HARDWARE_H264: "Hardware Acceleration",
                 USER_SETTINGS_VOICE_AV1: "AV1 video codec",
                 USER_SETTINGS_VOICE_EXPERIMENTAL_SOUNDSHARE_LABEL: "Use an experimental method to capture audio from applications",
-                USER_SETTINGS_VOICE_SOUNDSHARE_NOT_ENABLED_LABEL: "Capturing audio on your device requires the installation or updating of additional software. After clicking the install button below, you'll be prompted for authorization. [Learn More]({helpdeskArticle})",
-                USER_SETTINGS_VOICE_SOUNDSHARE_ENABLING_LABEL: "The audio capture extension requires authorization. Check your Security & Privacy system preferences. [Learn More]({helpdeskArticle})",
-                USER_SETTINGS_VOICE_SOUNDSHARE_ENABLED_LABEL: "You're all set to capture audio from applications. [Learn More]({helpdeskArticle})",
-                USER_SETTINGS_VOICE_SOUNDSHARE_FAILED_TO_ENABLE_LABEL: "Something went wrong setting up the audio capture extension. Please visit our [help page]({helpdeskArticle}) to troubleshoot",
-                USER_SETTINGS_VOICE_INSTALL_LABEL: "Install",
                 FORM_HELP_OPEN_H264: "Disabling OpenH264 also disables hardware accelerated video encoding, if available.",
                 FORM_HELP_HARDWARE_H264: "Hardware acceleration uses your GPU for efficient video encoding and decoding, if available.",
                 FORM_HELP_HARDWARE_AV1: "Disabled if hardware acceleration is disabled.",
@@ -9390,7 +9385,6 @@
                 GO_LIVE_SCREENSHARE_NO_SOUND: "Sound may not be available when sharing a screen on your device.",
                 GO_LIVE_SCREENSHARE_UPDATE_WINDOWS_FOR_SOUNDSHARE: "Audio sharing may not work on your Windows version. Please upgrade to the latest Windows 10.",
                 GO_LIVE_SCREENSHARE_UPDATE_MACOS_FOR_SOUNDSHARE: "Audio sharing may not work on your device. Please upgrade to at least macOS 10.15.",
-                GO_LIVE_SCREENSHARE_ENABLE_FOR_SOUNDSHARE: "To enable audio for screen share, head over to [Voice & Video Settings > Screen Share](onVoiceSettingsClick) and follow the setup instructions.",
                 GO_LIVE_TILE_SCREEN: "!!{username}!!’s Screen",
                 GO_LIVE_USER_PLAYING: "!!{username}!! Playing {applicationName}",
                 GO_LIVE_SHARE_SCREEN: "Screen",
@@ -18304,7 +18298,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269403", ", Version Hash: ").concat("bb14d59c913d09c82a414fb74d3d15675dcb8b4f")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269409", ", Version Hash: ").concat("26b7416b78014aa49d339966ec4b07676990ce81")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20643,8 +20637,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "269403", "269403"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269403")), _ = 0), _
+                let _ = parseInt((e = "269409", "269409"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269409")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25322,8 +25316,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709068858389",
-                                    build_number: "269403"
+                                    built_at: "1709069184039",
+                                    build_number: "269409"
                                 }
                             },
                             retries: 1
@@ -36620,4 +36614,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.9bf32317bebb88deb2b5.js.map
+//# sourceMappingURL=77761.ce5efcb3713cd1123aa2.js.map
