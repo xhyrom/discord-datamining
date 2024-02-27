@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67615"], {
+    ["98239"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -58568,7 +58568,7 @@
                 R = [P, b, V, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
                 k = new RegExp("^(".concat("WUMP-?", ")?(").concat(R, ")$"));
             (i = s || (s = {}))[i.DEFAULT = 0] = "DEFAULT", i[i.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", i[i.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD";
-            let M = e => a.isMobile || a.isTablet ? 0 : null != e ? 2 : 1,
+            let M = (e, t) => a.isMobile || a.isTablet ? 0 : null != e || t ? 2 : 1,
                 w = e => 0 !== M(e);
 
             function L(e) {
@@ -61890,4 +61890,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.8cdc978240faf9364f54.js.map
+//# sourceMappingURL=98239.e48f3db840c84d0b0df7.js.map
