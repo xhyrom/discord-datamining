@@ -11407,7 +11407,7 @@
   "GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_INTERESTED": "\"I am interested in...\"",
   "GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_UNINTERESTED": "\"I am not interested in...\"",
   "GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES": "\"All events in this series\"",
-  "GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE": "\"This event\"",
+  "GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE": "\"Only this event\"",
   "GUILD_CREATE_STAFF_ONLY_HINT": "\"Only Discord employees would be able to join this server.\"",
   "EDIT_THIS_EVENT": "\"Edit this Event\"",
   "EDIT_ALL_EVENTS": "\"Edit all Events in this Series\"",
