@@ -3348,7 +3348,9 @@
             "use strict";
             e.exports = {
                 alt: "alt__6c563",
+                appLauncherOnboardingCommandName: "appLauncherOnboardingCommandName_ec3d61",
                 applicationName: "applicationName__359c6",
+                appsIcon: "appsIcon__76213",
                 asianCompactTimeStamp: "asianCompactTimeStamp__6c0be",
                 avatar: "avatar__08316",
                 avatarDecoration: "avatarDecoration__14b3c",

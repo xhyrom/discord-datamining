@@ -61,13 +61,6 @@
                 staging: "staging__3b2b0"
             }
         },
-        145193: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                gamepadButtonContainer: "gamepadButtonContainer_a682a6",
-                gamepadButtonText: "gamepadButtonText__77d59"
-            }
-        },
         556248: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -25794,6 +25787,13 @@
                 leftPanel: "leftPanel_e31826",
                 sectionSubtitle: "sectionSubtitle__84686",
                 sectionTitle: "sectionTitle__42603"
+            }
+        },
+        363314: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                gamepadButtonContainer: "gamepadButtonContainer__24210",
+                gamepadButtonText: "gamepadButtonText__4ce0f"
             }
         },
         89220: function(e, t, n) {

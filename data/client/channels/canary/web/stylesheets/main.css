@@ -1711,19 +1711,6 @@
     text-align: center
 }
 
-.gamepadButtonText__77d59 {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--white-500);
-    margin-right: 30px
-}
-
-.gamepadButtonContainer_a682a6 {
-    display: flex;
-    flex-direction: row;
-    align-items: center
-}
-
 .applicationDetails__6d654 {
     padding: 24px 0
 }
@@ -45891,8 +45878,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -124577,6 +124564,19 @@ div.nagbar_c731ff {
     vertical-align: middle
 }
 
+.gamepadButtonText__4ce0f {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white-500);
+    margin-right: 30px
+}
+
+.gamepadButtonContainer__24210 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
 .leftPanel_e31826 {
     box-sizing: border-box;
     padding-left: 100px;
@@ -128194,4 +128194,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4ec25a18848cb46838c9.css.map*/
+/*# sourceMappingURL=app.01739af6cd7cf4f24ddf.css.map*/
