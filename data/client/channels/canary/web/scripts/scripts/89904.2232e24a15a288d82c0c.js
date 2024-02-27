@@ -75,10 +75,11 @@
                     currency: a,
                     applyEntitlements: E = !1,
                     analyticsLocations: _,
-                    analyticsLocation: c
+                    analyticsLocation: c,
+                    userDiscountOfferId: d
                 } = e;
                 null != r && (r = (0, f.coerceExistingItemsToNewItemInterval)(r));
-                let d = {
+                let R = {
                     items: null == r ? void 0 : r.map(e => {
                         let {
                             planId: t,
@@ -92,7 +93,8 @@
                     payment_source_id: n,
                     renewal: i,
                     apply_entitlements: E,
-                    currency: a
+                    currency: a,
+                    userDiscountOfferId: d
                 };
                 try {
                     let e = await l.default.patch({
@@ -101,7 +103,7 @@
                             location: c,
                             location_stack: _
                         },
-                        body: d,
+                        body: R,
                         oldFormErrors: !0
                     });
                     return s.default.createInvoiceFromServer(e.body)
@@ -601,4 +603,4 @@
         }
     }
 ]);
-//# sourceMappingURL=89904.ed6533746b3eaae34452.js.map
+//# sourceMappingURL=89904.2232e24a15a288d82c0c.js.map
