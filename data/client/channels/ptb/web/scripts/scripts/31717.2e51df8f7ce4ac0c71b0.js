@@ -2867,8 +2867,11 @@
                 },
                 createPollServerDataFromCreateRequest: function() {
                     return h
+                },
+                getTotalVotes: function() {
+                    return m
                 }
-            }), n("781738"), n("222007");
+            }), n("781738"), n("222007"), n("808653");
             var a = n("748820"),
                 l = n("418009"),
                 s = n("957255"),
@@ -2955,6 +2958,13 @@
                     expiry: l,
                     answers: a
                 }
+            }
+
+            function m(e) {
+                return e.reduce((e, t) => {
+                    var n, a;
+                    return e + (null !== (a = null === (n = t.count_details) || void 0 === n ? void 0 : n.vote) && void 0 !== a ? a : 0)
+                }, 0)
             }
         },
         793277: function(e, t, n) {
@@ -3300,4 +3310,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.b2ff6588568eabfebf09.js.map
+//# sourceMappingURL=31717.2e51df8f7ce4ac0c71b0.js.map
