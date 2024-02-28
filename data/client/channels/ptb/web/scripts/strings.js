@@ -17140,7 +17140,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 QUESTS_CLAIM_YOUR_REWARD: "Claim your reward",
                 QUESTS_ACCEPT: "Accept Quest",
                 QUESTS_COMPLETE_TOOLTIP: "Hit claim to get your reward code!",
-                QUESTS_ACCEPT_TOOLTIP: "Accept the quest and complete the task to unlock the reward",
+                QUESTS_ACCEPT_TOOLTIP: "Accept the Quest and complete the task to unlock the reward",
                 QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
                 QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
                 QUEST_REWARD_VERIFICATION_TITLE: "Verify your account to claim the reward",
@@ -17172,9 +17172,9 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 QUESTS_TRACK_YOUR_PROGRESS: "Track your progress",
                 QUESTS_TITLE: "{questName} Quest",
                 QUESTS_LANDING_PAGE_ERROR_HEADING: "Whoops!",
-                QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the quest there.",
+                QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the Quest there.",
                 QUESTS_MOBILE_EMBED_TITLE: "Quests aren’t available on mobile...yet.",
-                QUESTS_MOBILE_EMBED_BODY: "From your desktop Discord app or browser you can go to \nUser Settings > Gift Inventory and accept the quest there.",
+                QUESTS_MOBILE_EMBED_BODY: "From your desktop Discord app or browser you can go to \nUser Settings > Gift Inventory and accept the Quest there.",
                 QUESTS_GET_THIS_GAME: "Get this game",
                 QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
                 QUESTS_SHARE_LINK: "Copy share link",
@@ -17196,7 +17196,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 QUESTS_DISCLOSURE_ACTIVITY: "Activity: Relevant gaming",
                 QUESTS_EMBED_INVALID_HEADING: "This was a Quest but...",
                 QUESTS_EMBED_INVALID_BODY: "Something went wrong here. Check the Gift Inventory for more available Quests!",
-                QUESTS_PROGRESS_TRACKING_FAILURE_NOTICE: "There's an issue tracking your quest progress.",
+                QUESTS_PROGRESS_TRACKING_FAILURE_NOTICE: "There's an issue tracking your Quest progress.",
                 QUESTS_SHARE_QUEST: "Share Quest",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
@@ -34641,7 +34641,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 N = n("30175");
             (0, _.setUpdateRules)(l.default), (0, o.default)(N.default, r.default, u.default), s.default.Emitter.injectBatchEmitChanges(a.batchUpdates), s.default.PersistedStore.disableWrites = __OVERLAY__, s.default.initialize();
             let O = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269697, Version Hash: e9e628d2f9e37b9bf4d030098a8e971b3d0437d9`), i.default.setTags({
+            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269703, Version Hash: fd0027040f7153ead861e809b39f8c6de9c6e3a7`), i.default.setTags({
                 appContext: A.CURRENT_APP_CONTEXT
             }), I.default.initBasic(), T.default.init(), E.FocusRingManager.init(), c.init(), (0, S.cleanupTempFiles)()
         },
@@ -44452,8 +44452,8 @@ ${_.join(" +\n")}
             var i = n("281925");
 
             function r() {
-                let e = parseInt("269697");
-                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269697"), e = 0), e
+                let e = parseInt("269703");
+                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269703"), e = 0), e
             }
         },
         322825: function(e, t, n) {
@@ -85130,7 +85130,7 @@ ${s.join("\n\n")}`
                     }) : Promise.reject(Error("not desktop client"))).then(e => {
                         let i = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269697"
+                                build_number: "269703"
                             },
                             u = _.default.getCurrentUser();
                         null != u && (i.user_id = u.id, i.user_name = u.tag, null != u.email && (i.email = u.email));
@@ -89606,7 +89606,7 @@ ${s.join("\n\n")}`
                 let e = {},
                     t = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 t && (e.release_channel = t.split("-")[0]);
-                let n = parseInt("269697", 10);
+                let n = parseInt("269703", 10);
                 !isNaN(n) && (e.client_build_number = n);
                 let i = L?.remoteApp.getBuildNumber?.();
                 return !isNaN(i) && (e.native_build_number = i), e.client_event_source = function() {
@@ -108701,4 +108701,4 @@ void main() {
         }
     }
 ]);
-//# sourceMappingURL=48975.6f5c6e98b259ddb753a2.js.map
+//# sourceMappingURL=48975.6f626bca7cf0045b816d.js.map
