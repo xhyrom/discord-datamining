@@ -26097,7 +26097,7 @@ ${n}${t[i]}: ${t[i+1].micros/1e3}` + e(t[i + 1].calls, n + "|  ");
                     content: b,
                     referralTrialOfferId: P,
                     call: C(e.call, y),
-                    reactions: N(n ?? e.reactions),
+                    reactions: N(n ?? e.reactions, e.poll),
                     interaction: O,
                     interactionData: s ?? e.interaction_data,
                     interactionMetadata: e.interaction_metadata,
@@ -26154,8 +26154,24 @@ ${n}${t[i]}: ${t[i+1].micros/1e3}` + e(t[i + 1].calls, n + "|  ");
                 return (0, g.mergeEmbedsOnURL)(t)
             }
 
-            function N(e) {
-                return null == e ? [] : e.map(e => {
+            function N(e, t) {
+                if (null == e && t?.results == null) return [];
+                let n = t?.results?.answer_counts.map(e => ({
+                    count_details: {
+                        vote: e.count
+                    },
+                    me_vote: e.me_voted,
+                    emoji: {
+                        id: e.id.toString(),
+                        name: "",
+                        animated: !1
+                    },
+                    me: !1,
+                    me_burst: !1,
+                    count: e.count,
+                    burst_count: 0
+                }));
+                return [...e = e?.filter(e => e?.me_vote == null) ?? [], ...n ?? []].map(e => {
                     let t = {
                         ...e
                     };
@@ -26538,8 +26554,8 @@ ${n}${t[i]}: ${t[i+1].micros/1e3}` + e(t[i + 1].calls, n + "|  ");
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709147845055",
-                                    build_number: "269674"
+                                    built_at: "1709151577047",
+                                    build_number: "269692"
                                 }
                             },
                             retries: 1
@@ -49024,4 +49040,4 @@ ${n}${t[i]}: ${t[i+1].micros/1e3}` + e(t[i + 1].calls, n + "|  ");
         }
     }
 ]);
-//# sourceMappingURL=84883.cb7602ddb20e53dbbaa0.js.map
+//# sourceMappingURL=84883.d0a471eebccb7c32a20a.js.map
