@@ -6190,6 +6190,14 @@
                 violationList: "violationList__54f25"
             }
         },
+        661535: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                affinityCell: "affinityCell_bf5f64",
+                row: "row__34a00",
+                userCell: "userCell__475a4"
+            }
+        },
         731343: function(e, t, n) {
             "use strict";
             e.exports = {
