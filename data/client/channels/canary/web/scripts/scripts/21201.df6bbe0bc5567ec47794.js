@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["57891"], {
+    ["21201"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -30517,8 +30517,14 @@
                 PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: function() {
                     return eT
                 },
-                SubscriptionTrials: function() {
+                PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: function() {
                     return eg
+                },
+                PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: function() {
+                    return eI
+                },
+                SubscriptionTrials: function() {
+                    return eC
                 },
                 PremiumUpsellTypes: function() {
                     return l
@@ -30527,25 +30533,25 @@
                     return u
                 },
                 SKU_ID_PURCHASED_FLAGS: function() {
-                    return eI
-                },
-                MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
-                    return eC
-                },
-                IncrementalStickerCountsByTier: function() {
                     return ev
                 },
-                TotalStickerCountsByTier: function() {
+                MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
                     return eA
                 },
-                TotalSoundboardSoundCountsByTier: function() {
+                IncrementalStickerCountsByTier: function() {
                     return eR
                 },
-                BoostedGuildFeatures: function() {
+                TotalStickerCountsByTier: function() {
                     return eN
                 },
-                ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
+                TotalSoundboardSoundCountsByTier: function() {
                     return eO
+                },
+                BoostedGuildFeatures: function() {
+                    return eD
+                },
+                ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
+                    return ey
                 },
                 AnalyticsPremiumFeatureNames: function() {
                     return c
@@ -30554,13 +30560,13 @@
                     return d
                 },
                 DISCOUNTS: function() {
-                    return eD
+                    return eP
                 },
                 StreamQualities: function() {
                     return f
                 },
                 StreamQualitiesToPremiumType: function() {
-                    return ey
+                    return eL
                 },
                 PremiumMarketingEntrypoints: function() {
                     return E
@@ -30575,10 +30581,10 @@
                     return _
                 },
                 PromotionFlags: function() {
-                    return eP
+                    return eb
                 },
                 PremiumUserLimits: function() {
-                    return eL
+                    return eM
                 },
                 BoostingUpsellAction: function() {
                     return T
@@ -30587,22 +30593,25 @@
                     return g
                 },
                 LegacyPricingCountries: function() {
-                    return eb
-                },
-                LegacySeasonalGiftStyles: function() {
-                    return eM
-                },
-                STANDARD_GIFT_OPTIONS: function() {
                     return eU
                 },
-                SeasonalGiftStyles2023: function() {
+                LegacySeasonalGiftStyles: function() {
                     return eG
                 },
-                AllSeasonalGiftStyles: function() {
+                STANDARD_GIFT_OPTIONS: function() {
                     return ew
                 },
-                CUSTOM_GIFT_MESSAGE_MAX_LENGTH: function() {
+                SeasonalGiftStyles2023: function() {
                     return ek
+                },
+                AllSeasonalGiftStyles: function() {
+                    return ex
+                },
+                CUSTOM_GIFT_MESSAGE_MAX_LENGTH: function() {
+                    return eF
+                },
+                DISCOUNT_DURATION_FALLBACK: function() {
+                    return eV
                 }
             }), n("222007");
             var i, r, s, a, o, l, u, c, d, f, E, p, h, _, S, m, T, g, I, C, v, A, R, N, O, D, y, P, L, b, M, U, G, w, k, x, F = n("49111"),
@@ -30816,7 +30825,9 @@
                 eS = "1070132870233980928",
                 em = "1150904354090532864",
                 eT = "1199128659810582528",
-                eg = Object.freeze({
+                eg = "1204865493622587392",
+                eI = "1204867673024888832",
+                eC = Object.freeze({
                     [ec]: {
                         id: ec,
                         skus: ["521847234246082599"]
@@ -30851,32 +30862,32 @@
                     }
                 });
             (N = l || (l = {})).ANIMATED_GUILD_BANNER_TOOLTIP = "animated_guild_banner_tooltip", N.EMOJI_PICKER_SEARCH = "emoji_picker_search", N.EMOJI_PICKER_EMOJI_CLICKED = "emoji_picker_emoji_clicked", N.EMOJI_PICKER_STICKER_CLICKED = "emoji_picker_sticker_clicked", N.EMOJI_PICKER_REACTION_EMOJI_CLICKED = "emoji_picker_reaction_emoji_clicked", N.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED = "emoji_picker_super_reaction_emoji_clicked", N.EMOJI_PICKER_STATUS_EMOJI_CLICKED = "emoji_picker_status_emoji_clicked", N.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED = "emoji_picker_top_server_emoji_clicked", N.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED = "emoji_picker_newly_added_emoji_clicked", N.EMOJI_AUTOSUGGEST_CLICKED = "emoji_autosuggest_clicked", N.EMOJI_AUTOCOMPLETE_INLINE = "emoji_autocomplete_inline", N.EMOJI_AUTOCOMPLETE_MODAL = "emoji_autocomplete_modal", N.EMOJI_IN_MESSAGE_HOVER = "emoji_in_message_hover", N.EMOJI_IN_REACTION_HOVER = "emoji_in_reaction_hover", N.EMOJI_IN_BURST_REACTION_HOVER = "emoji_in_burst_reaction_hover", N.EMOJI_IN_BURST_REACTION_HOVER_UPSELL = "emoji_in_burst_reaction_hover_upsell", N.EMOJI_PICKER_FLOATING_UPSELL = "emoji_picker_floating_upsell", N.STICKER_IN_MESSAGE_HOVER = "sticker_in_message_hover", N.EMPTY_STICKER_PICKER_UPSELL = "empty_sticker_picker_upsell", N.STREAM_QUALITY_INDICATOR = "stream_quality_indicator", N.GIFT_STREAM_QUALITY_INDICATOR = "gift_stream_quality_indicator", N.STREAM_QUALITY_UPSELL = "stream_quality_upsell", N.MESSAGE_LENGTH_UPSELL = "message_length_upsell", N.MESSAGE_LENGTH_IN_EDITOR_UPSELL = "message_length_in_editor_upsell", N.CUSTOM_PROFILE_UPSELL = "custom profiles upsell modal", N.CUSTOM_PROFILE_TRY_OUT_UPSELL = "try out custom profile in settings upsell", N.VIDEO_BACKGROUNDS_MODAL = "video backgrounds modal", N.VIDEO_BACKGROUNDS_INLINE = "video backgrounds inline", N.GUILD_CAP_INLINE_SERVER_LIST = "guild_cap_inline_server_list", N.GUILD_PREMIUM_UPSELL_MODAL = "premium guild premium upsell modal", N.GUILD_CAP_INLINE_INVITE_MODAL = "guild_cap_inline_invite_modal", N.GUILD_CAP_MODAL_UPSELL = "guild_cap_modal_upsell", N.PREMIUM_GUILD_IDENTITY_MODAL = "premium guild identity upsell alert", N.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON = "custom profiles settings banner upsell", N.CUSTOM_PROFILES_PROFILE_BANNER_SOCIAL_UPSELL = "custom profiles profile banner social upsell", N.STICKER_PICKER_UPSELL = "sticker_picker_upsell", N.ANIMATED_AVATAR_PREVIEW_GIF_MODAL = "animated avatar preview gif modal", N.PREMIUM_PROGRESS_BAR = "premium_progress_bar_tooltip", N.INVITE_SPLASH_UPSELL = "premium_invite_splash_upsell", N.ANIMATED_USER_AVATAR_MODAL = "animated user avatar upsell modal", N.UPLOAD_ERROR_UPSELL = "upload error upsell", N.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE = "premium guild member profile upsell inline", N.CONCURRENT_ACTIVITIES = "Concurrent Activities", N.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED = "premium_uncancel_winback_modal_viewed", N.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET = "animated_video_background_new_preset", N.LOW_PRICE_EXPERIMENT_TOOLTIP = "low_price_experiment_tooltip", N.PREMIUM_PROFILE_BADGE_UPSELL = "premium_profile_badge_upsell", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "emoji", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "profile customization", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "hd streaming", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "larger file uploads", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "bogo", N.VOICE_CHANNEL_EFFECTS_UPSELL = "voice_channel_effects_upsell", N.VOICE_CHANNEL_EFFECTS_BAR_EMOJI_UPSELL = "Voice Channel Effect Bar Emoji Upsell", N.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED = "voice_channel_effects_toggle_clicked", N.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED = "voice_channel_effects_toggle_clicked_expanded", N.PROFILE_THEME_UPSELL_MODAL = "profile_theme_upsell_modal", N.PROFILE_EFFECTS_INLINE_SETTINGS = "profile_effects_inline_settings", N.PROFILE_EFFECTS_INLINE_SETTINGS_MOBILE = "profile_effects_inline_settings_mobile", N.HIGH_VIDEO_QUALITY_UPSELL = "high_video_quality_upsell", N.PREMIUM_PROFILE_TRY_IT_OUT = "premium_profile_try_it_out", N.BURST_REACTION_RAIL_UPSELL = "burst_reaction_rail_upsell", N.BURST_REACTION_UPSELL = "burst_reaction_upsell", N.BURST_REACTION_QUICK_ACTION_UPSELL = "burst_reaction_quick_action_upsell", N.BURST_REACTION_CONTEXT_MENU_UPSELL = "burst_reaction_context_menu_upsell", N.PREMIUM_CLIENT_THEME_TRY_IT_OUT = "premium_client_theme_try_it_out", N.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL = "premium_client_theme_settings_upsell", N.VIDEO_STAGE_LIMIT = "video_stage_limit", N.SOUND_PICKER_SOUND_CLICKED = "sound_picker_sound_clicked", N.APP_ICON_UPSELL = "app_icon_upsell", N.COLLECTIBLES_SHOP = "collectibles_shop", N.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles_profile_settings_upsell", N.COLLECTIBLES_PREMIUM_MARKETING_PAGE_UPSELL = "collectibles_premium_marketing_page_upsell", N.CLIPS_GUILD_SIDEBAR_COACHMARK_PREMIUM_EARLY_ACCESS_UPSELL = "clips_guild_sidebar_coachmark_premium_early_access_upsell", N.CLIPS_GO_LIVE_PREMIUM_EARLY_ACCESS_ROADBLOCK_UPSELL = "clips_go_live_premium_early_access_roadblock_upsell", (O = u || (u = {}))[O.PREMIUM_TIER_1 = 1] = "PREMIUM_TIER_1", O[O.PREMIUM_TIER_2 = 2] = "PREMIUM_TIER_2", O[O.GUILD_BOOST = 4] = "GUILD_BOOST", O[O.PREMIUM_TIER_0 = 8] = "PREMIUM_TIER_0";
-            let eI = Object.freeze({
+            let ev = Object.freeze({
                     "978380684370378762": 8,
                     "521846918637420545": 1,
                     "521847234246082599": 2,
                     "590663762298667008": 4
                 }),
-                eC = 52428800,
-                ev = {
+                eA = 52428800,
+                eR = {
                     [F.BoostedGuildTiers.NONE]: 5,
                     [F.BoostedGuildTiers.TIER_1]: 10,
                     [F.BoostedGuildTiers.TIER_2]: 15,
                     [F.BoostedGuildTiers.TIER_3]: 30
                 },
-                eA = {
-                    [F.BoostedGuildTiers.NONE]: ev[F.BoostedGuildTiers.NONE],
-                    [F.BoostedGuildTiers.TIER_1]: ev[F.BoostedGuildTiers.NONE] + ev[F.BoostedGuildTiers.TIER_1],
-                    [F.BoostedGuildTiers.TIER_2]: ev[F.BoostedGuildTiers.NONE] + ev[F.BoostedGuildTiers.TIER_1] + ev[F.BoostedGuildTiers.TIER_2],
-                    [F.BoostedGuildTiers.TIER_3]: ev[F.BoostedGuildTiers.NONE] + ev[F.BoostedGuildTiers.TIER_1] + ev[F.BoostedGuildTiers.TIER_2] + ev[F.BoostedGuildTiers.TIER_3]
+                eN = {
+                    [F.BoostedGuildTiers.NONE]: eR[F.BoostedGuildTiers.NONE],
+                    [F.BoostedGuildTiers.TIER_1]: eR[F.BoostedGuildTiers.NONE] + eR[F.BoostedGuildTiers.TIER_1],
+                    [F.BoostedGuildTiers.TIER_2]: eR[F.BoostedGuildTiers.NONE] + eR[F.BoostedGuildTiers.TIER_1] + eR[F.BoostedGuildTiers.TIER_2],
+                    [F.BoostedGuildTiers.TIER_3]: eR[F.BoostedGuildTiers.NONE] + eR[F.BoostedGuildTiers.TIER_1] + eR[F.BoostedGuildTiers.TIER_2] + eR[F.BoostedGuildTiers.TIER_3]
                 },
-                eR = {
+                eO = {
                     [F.BoostedGuildTiers.NONE]: 8,
                     [F.BoostedGuildTiers.TIER_1]: 24,
                     [F.BoostedGuildTiers.TIER_2]: 36,
                     [F.BoostedGuildTiers.TIER_3]: 48
                 },
-                eN = Object.freeze({
+                eD = Object.freeze({
                     [F.BoostedGuildTiers.NONE]: {
                         features: [],
                         limits: {
@@ -30885,9 +30896,9 @@
                             fileSize: F.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 30,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: eR[F.BoostedGuildTiers.NONE],
+                            soundboardSounds: eO[F.BoostedGuildTiers.NONE],
                             maxConcurrentActivities: 2,
-                            stickers: eA[F.BoostedGuildTiers.NONE],
+                            stickers: eN[F.BoostedGuildTiers.NONE],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -30899,9 +30910,9 @@
                             fileSize: F.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: eR[F.BoostedGuildTiers.TIER_1],
+                            soundboardSounds: eO[F.BoostedGuildTiers.TIER_1],
                             maxConcurrentActivities: 3,
-                            stickers: eA[F.BoostedGuildTiers.TIER_1],
+                            stickers: eN[F.BoostedGuildTiers.TIER_1],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -30913,9 +30924,9 @@
                             fileSize: 52428800,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: eR[F.BoostedGuildTiers.TIER_2],
+                            soundboardSounds: eO[F.BoostedGuildTiers.TIER_2],
                             maxConcurrentActivities: 5,
-                            stickers: eA[F.BoostedGuildTiers.TIER_2],
+                            stickers: eN[F.BoostedGuildTiers.TIER_2],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER2
                         }
                     },
@@ -30927,16 +30938,16 @@
                             fileSize: 104857600,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: eR[F.BoostedGuildTiers.TIER_3],
+                            soundboardSounds: eO[F.BoostedGuildTiers.TIER_3],
                             maxConcurrentActivities: Number.MAX_SAFE_INTEGER,
-                            stickers: eA[F.BoostedGuildTiers.TIER_3],
+                            stickers: eN[F.BoostedGuildTiers.TIER_3],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER3
                         }
                     }
                 }),
-                eO = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+                ey = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
             (D = c || (c = {})).SOUNDBOARD_PLAY = "soundboard play", D.PROFILE_THEME_COLOR = "profile_theme_color", D.PROFILE_BANNER = "profile_banner", D.ANIMATED_AVATAR = "animated_avatar", D.AVATAR_DECORATION = "avatar_decoration", D.CLIENT_THEME = "client_theme", D.SHARED_CANVAS = "shared_canvas", D.PROFILE_EFFECT = "profile_effect", (y = d || (d = {})).FREE = "free", y.PREMIUM_STANDARD = "premium-standard";
-            let eD = {
+            let eP = {
                 "1024422698568122368": 16,
                 "511651876987469824": 16,
                 "511651885459963904": 16,
@@ -30944,19 +30955,19 @@
                 "642251038925127690": 5
             };
             (P = f || (f = {})).HIGH_STREAMING_QUALITY = "high_streaming_quality", P.MID_STREAMING_QUALITY = "mid_streaming_quality";
-            let ey = Object.freeze({
+            let eL = Object.freeze({
                 high_streaming_quality: 2,
                 mid_streaming_quality: 1
             });
             (L = E || (E = {}))[L.UserSettings = 0] = "UserSettings", L[L.ApplicationStoreHome = 1] = "ApplicationStoreHome", (b = p || (p = {}))[b.DEFAULT = 0] = "DEFAULT", b[b.WINTER = 1] = "WINTER", (M = h || (h = {}))[M.SNOWGLOBE = 1] = "SNOWGLOBE", M[M.BOX = 2] = "BOX", M[M.CUP = 3] = "CUP", M[M.STANDARD_BOX = 4] = "STANDARD_BOX", M[M.CAKE = 5] = "CAKE", M[M.CHEST = 6] = "CHEST", M[M.COFFEE = 7] = "COFFEE", M[M.SEASONAL_STANDARD_BOX = 8] = "SEASONAL_STANDARD_BOX", M[M.SEASONAL_CAKE = 9] = "SEASONAL_CAKE", M[M.SEASONAL_CHEST = 10] = "SEASONAL_CHEST", M[M.SEASONAL_COFFEE = 11] = "SEASONAL_COFFEE", (U = _ || (_ = {})).USER_NOT_VERIFIED = "user_not_verified", U.NO_CODE_BODY = "no_code_body", U.NO_PROMOTION = "no_promotion", U.CODE_CLAIMED = "code_claimed", U.EXISTING_SUBSCRIBER = "existing_subscriber", U.PREVIOUS_SUBSCRIBER = "previous_subscriber", U.BLOCKED_PAYMENT = "blocked_payment";
-            let eP = Object.freeze({
+            let eb = Object.freeze({
                     IS_BLOCKED_IOS: 32,
                     IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS: 64,
                     SUPPRESS_NOTIFICATION: 128
                 }),
-                eL = Object.freeze({
+                eM = Object.freeze({
                     3: {
-                        fileSize: eC
+                        fileSize: eA
                     },
                     1: {
                         fileSize: 52428800
@@ -30966,12 +30977,13 @@
                     }
                 });
             (G = S || (S = {})).EXPLORE_ALL_PERKS_CLICKED = "explore_all_perks_clicked", G.HELPER_COLLAPSED = "helper_collapsed", G.HELPER_UNCOLLAPSED = "helper_uncollapsed", G.UNLOCK_EMOJI_CLICKED = "unlock_emoji_clicked", G.CUSTOM_PROFILES_CLICKED = "custom_profiles_clicked", G.SERVER_BOOSTS_CLICKED = "server_boosts_clicked", G.HELPER_DISMISSED = "premium_feature_helper_dismissed", G.HELPER_RENDERED = "premium_feature_helper_rendered", (w = m || (m = {})).EMOJI_TUTORIAL_STARTED = "emoji_tutorial_started", w.EMOJI_INTRO_VIEWED = "emoji_intro_viewed", w.EMOJI_PROMPT_VIEWED = "emoji_prompt_viewed", w.CUSTOM_PROFILE_TUTORIAL_STARTED = "custom_profile_tutorial_started", w.CUSTOM_PROFILE_AVATAR_INTRO_VIEWED = "custom_profile_avatar_intro_viewed", w.CUSTOM_PROFILE_AVATAR_DECORATIONS_VIEWED = "custom_profile_avatar_decorations_viewed", w.CUSTOM_PROFILE_BANNER_INTRO_VIEWED = "custom_profile_banner_intro_viewed", w.CUSTOM_PROFILE_THEME_INTRO_VIEWED = "custom_profile_theme_intro_viewed", w.SERVER_PROFILE_INTRO_VIEWED = "server_profile_intro_viewed", w.SERVER_BOOST_TUTORIAL_STARTED = "server_boost_tutorial_started", w.BOOST_INTRO_VIEWED = "boost_intro_viewed", w.BOOST_PROMPT_VIEWED = "boost_prompt_viewed", (k = T || (T = {})).BOOST = "boost", k.DISMISS = "dismiss", (x = g || (g = {})).BADGE_TOOLTIP_VIEWED = "share_nitro_bagde_tooltip_viewed", x.BADGE_CLICKED = "share_nitro_badge_clicked", x.FLOW_STARTED = "share_nitro_flow_started", x.FLOW_COMPLETED = "share_nitro_flow_completed";
-            let eb = new Set(["PL", "TR"]),
-                eM = [1, 2, 3],
-                eU = [4, 5, 7, 6],
-                eG = [8, 9, 11, 10],
-                ew = eG.concat(eM),
-                ek = 190
+            let eU = new Set(["PL", "TR"]),
+                eG = [1, 2, 3],
+                ew = [4, 5, 7, 6],
+                ek = [8, 9, 11, 10],
+                ex = ek.concat(eG),
+                eF = 190,
+                eV = 3
         },
         45120: function(e, t, n) {
             "use strict";
@@ -50063,7 +50075,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269612"
+                                build_number: "269617"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -51217,42 +51229,43 @@
                     planId: r,
                     price: s,
                     includePremiumGuilds: a,
-                    hasDiscountApplied: o
-                } = e, l = R.default.formatPriceString(R.default.getDefaultPrice(y.SubscriptionPlans.PREMIUM_MONTH_TIER_2), y.SubscriptionIntervalTypes.MONTH), u = ef(i) || null == i.paymentSourceId && !i.isPurchasedExternally && !(null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), c = null != s, d = i.status === O.SubscriptionStatusTypes.UNPAID && null !== i.latestInvoice && (null === (n = i.latestInvoice) || void 0 === n ? void 0 : n.status) === O.InvoiceStatusTypes.OPEN, f = u ? O.SubscriptionStatusTypes.CANCELED : d ? O.SubscriptionStatusTypes.UNPAID : i.status, E = y.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM + (a ? et(i.additionalPlans) : 0);
+                    hasDiscountApplied: o,
+                    activeDiscountDuration: l
+                } = e, u = R.default.formatPriceString(R.default.getDefaultPrice(y.SubscriptionPlans.PREMIUM_MONTH_TIER_2), y.SubscriptionIntervalTypes.MONTH), c = ef(i) || null == i.paymentSourceId && !i.isPurchasedExternally && !(null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), d = null != s, f = i.status === O.SubscriptionStatusTypes.UNPAID && null !== i.latestInvoice && (null === (n = i.latestInvoice) || void 0 === n ? void 0 : n.status) === O.InvoiceStatusTypes.OPEN, E = c ? O.SubscriptionStatusTypes.CANCELED : f ? O.SubscriptionStatusTypes.UNPAID : i.status, p = y.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM + (a ? et(i.additionalPlans) : 0);
                 switch (r) {
                     case y.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
                     case y.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        switch (f) {
+                        switch (E) {
                             case O.SubscriptionStatusTypes.CANCELED:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION.format({
+                                return d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION.format({
                                     price: s
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_NO_PRICE;
                             case O.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD.format({
+                                return d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD.format({
                                     price: s
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE.format();
                             case O.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT.format();
                             default:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
+                                return d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
                                     price: s
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_NO_PRICE
                         }
                     case y.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
                     case y.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        switch (f) {
+                        switch (E) {
                             case O.SubscriptionStatusTypes.CANCELED:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION.format({
+                                return d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION.format({
                                     price: s
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE;
                             case O.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD.format({
+                                return d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD.format({
                                     price: s
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
                             case O.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
                             default:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
+                                return d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
                                     price: s
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_NO_PRICE
                         }
@@ -51260,34 +51273,35 @@
                     case y.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
                     case y.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
                     case y.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                        switch (f) {
+                        switch (E) {
                             case O.SubscriptionStatusTypes.CANCELED:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION.format({
+                                return d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION.format({
                                     price: s,
-                                    num: E
+                                    num: p
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE.format({
-                                    num: E
+                                    num: p
                                 });
                             case O.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD.format({
+                                return d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD.format({
                                     price: s,
-                                    num: E
+                                    num: p
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE.format({
-                                    num: E
+                                    num: p
                                 });
                             case O.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT.format({
-                                    num: E
+                                    num: p
                                 });
                             default:
-                                return o ? L.default.Messages.PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION.format({
-                                    discountedPrice: s,
-                                    regularPrice: l
-                                }) : c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2.format({
+                                return o ? L.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
+                                    percent: 30,
+                                    regularPrice: u,
+                                    numMonths: null != l ? l : y.DISCOUNT_DURATION_FALLBACK
+                                }) : d ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2.format({
                                     price: s,
-                                    num: E
+                                    num: p
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_NO_PRICE.format({
-                                    num: E
+                                    num: p
                                 })
                         }
                     default:
@@ -51301,11 +51315,12 @@
                     subscription: n,
                     planId: i,
                     includePremiumGuilds: r = !1,
-                    hasDiscountApplied: s = !1
-                } = e, a = m.default.get(i);
-                return l(null != a, "Missing plan"), X({
+                    hasDiscountApplied: s = !1,
+                    activeDiscountDuration: a
+                } = e, o = m.default.get(i);
+                return l(null != o, "Missing plan"), X({
                     subscription: n,
-                    planId: a.id,
+                    planId: o.id,
                     price: function(e, t, n) {
                         let i = e.invoiceItems.find(e => {
                                 let {
@@ -51318,9 +51333,10 @@
                                 currency: t.currency
                             }).amount : i.amount;
                         return (0, N.formatRate)((0, N.formatPrice)(r, e.currency), n.interval, n.intervalCount)
-                    }(t, n, a),
+                    }(t, n, o),
                     includePremiumGuilds: r,
-                    hasDiscountApplied: s
+                    hasDiscountApplied: s,
+                    activeDiscountDuration: a
                 })
             }
 
@@ -64105,4 +64121,4 @@
         }
     }
 ]);
-//# sourceMappingURL=57891.6ad5b31bd3162174e74c.js.map
+//# sourceMappingURL=21201.df6bbe0bc5567ec47794.js.map
