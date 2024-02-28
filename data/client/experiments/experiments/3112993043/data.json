@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_nitro_badge_on_emoji_hover",
+    "label": "Nitro Badge on Emoji Hover",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users see Nitro badge when hovering the cursor on a custom emoji and clicking a custom emoji"
+    ],
+    "hash": 3112993043,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
