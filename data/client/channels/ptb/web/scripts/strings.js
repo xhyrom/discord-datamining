@@ -34639,7 +34639,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 N = n("30175");
             (0, _.setUpdateRules)(l.default), (0, o.default)(N.default, r.default, u.default), s.default.Emitter.injectBatchEmitChanges(a.batchUpdates), s.default.PersistedStore.disableWrites = __OVERLAY__, s.default.initialize();
             let O = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269673, Version Hash: e7d5866b1309b60c9a7247b12f06aac430d99b35`), i.default.setTags({
+            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269674, Version Hash: e0fd22e3d596c2ba3d2826bcc7d31f910873166b`), i.default.setTags({
                 appContext: A.CURRENT_APP_CONTEXT
             }), I.default.initBasic(), T.default.init(), E.FocusRingManager.init(), c.init(), (0, S.cleanupTempFiles)()
         },
@@ -44450,8 +44450,8 @@ ${_.join(" +\n")}
             var i = n("281925");
 
             function r() {
-                let e = parseInt("269673");
-                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269673"), e = 0), e
+                let e = parseInt("269674");
+                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269674"), e = 0), e
             }
         },
         322825: function(e, t, n) {
@@ -85128,7 +85128,7 @@ ${s.join("\n\n")}`
                     }) : Promise.reject(Error("not desktop client"))).then(e => {
                         let i = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269673"
+                                build_number: "269674"
                             },
                             u = _.default.getCurrentUser();
                         null != u && (i.user_id = u.id, i.user_name = u.tag, null != u.email && (i.email = u.email));
@@ -89604,7 +89604,7 @@ ${s.join("\n\n")}`
                 let e = {},
                     t = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 t && (e.release_channel = t.split("-")[0]);
-                let n = parseInt("269673", 10);
+                let n = parseInt("269674", 10);
                 !isNaN(n) && (e.client_build_number = n);
                 let i = L?.remoteApp.getBuildNumber?.();
                 return !isNaN(i) && (e.native_build_number = i), e.client_event_source = function() {
@@ -108699,4 +108699,4 @@ void main() {
         }
     }
 ]);
-//# sourceMappingURL=48975.a7f2d2ea32f5d082717e.js.map
+//# sourceMappingURL=48975.9d93c0fd1b560e881e7b.js.map
