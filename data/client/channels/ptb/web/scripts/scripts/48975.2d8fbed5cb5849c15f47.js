@@ -17062,8 +17062,8 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 POLL_EXPIRED: "Poll closed",
                 POLL_SELECT_ONE_ANSWER: "Select one answer",
                 POLL_SELECT_MULTIPLE_ANSWERS: "Select one or more answers",
-                POLL_SHOW_VOTES: "Show votes",
-                POLL_HIDE_VOTES: "Hide votes",
+                POLL_SHOW_VOTES: "Show results",
+                POLL_HIDE_VOTES: "Go back to vote",
                 POLL_VOTES_NO_RESULTS_TITLE: "Nothing to see here",
                 POLL_VOTES_NO_RESULTS_SUBTITLE: "There are no votes for this answer",
                 POLL_NOT_INTERACTIVE: "View original message to interact",
@@ -34641,7 +34641,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 N = n("30175");
             (0, _.setUpdateRules)(l.default), (0, o.default)(N.default, r.default, u.default), s.default.Emitter.injectBatchEmitChanges(a.batchUpdates), s.default.PersistedStore.disableWrites = __OVERLAY__, s.default.initialize();
             let O = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269728, Version Hash: 3c9e5a90f657d9dcc901832a6c1ffa78cbfa48eb`), i.default.setTags({
+            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269734, Version Hash: b3edf3acbfb77e2b8418bb6f0dcbcdfb6b879fe0`), i.default.setTags({
                 appContext: A.CURRENT_APP_CONTEXT
             }), I.default.initBasic(), T.default.init(), E.FocusRingManager.init(), c.init(), (0, S.cleanupTempFiles)()
         },
@@ -44452,8 +44452,8 @@ ${_.join(" +\n")}
             var i = n("281925");
 
             function r() {
-                let e = parseInt("269728");
-                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269728"), e = 0), e
+                let e = parseInt("269734");
+                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269734"), e = 0), e
             }
         },
         322825: function(e, t, n) {
@@ -85131,7 +85131,7 @@ ${s.join("\n\n")}`
                     }) : Promise.reject(Error("not desktop client"))).then(e => {
                         let i = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269728"
+                                build_number: "269734"
                             },
                             u = _.default.getCurrentUser();
                         null != u && (i.user_id = u.id, i.user_name = u.tag, null != u.email && (i.email = u.email));
@@ -89607,7 +89607,7 @@ ${s.join("\n\n")}`
                 let e = {},
                     t = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 t && (e.release_channel = t.split("-")[0]);
-                let n = parseInt("269728", 10);
+                let n = parseInt("269734", 10);
                 !isNaN(n) && (e.client_build_number = n);
                 let i = L?.remoteApp.getBuildNumber?.();
                 return !isNaN(i) && (e.native_build_number = i), e.client_event_source = function() {
@@ -108702,4 +108702,4 @@ void main() {
         }
     }
 ]);
-//# sourceMappingURL=48975.25999e4666f1e4e6ad63.js.map
+//# sourceMappingURL=48975.2d8fbed5cb5849c15f47.js.map
