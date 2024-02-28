@@ -4726,7 +4726,10 @@
   },
   "QUESTS_PREVIEW_STATUS": {
     "url": "/quests/:param/preview/status",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "QUESTS_PREVIEW_DISMISSIBILITY": {
     "url": "/quests/:param/preview/dismissibility",
