@@ -1365,12 +1365,12 @@
                         return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(m.isNotNullish) : M
                     }
                     return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => g.default.getUser(e)).filter(m.isNotNullish) : M : M
-                }, [l]), b = r.useCallback(() => {
+                }, [l]), x = r.useCallback(() => {
                     R.current.cancel(), y(!0)
-                }, []), x = r.useCallback(() => {
+                }, []), b = r.useCallback(() => {
                     R.current.delay()
                 }, []), D = r.useCallback((e, t) => {
-                    b(), (0, f.openContextMenuLazy)(e, async () => {
+                    x(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await n.el("450603@5519:5586").then(n.bind(n, "84406"));
@@ -1379,9 +1379,9 @@
                             user: t
                         })
                     }, {
-                        onClose: x
+                        onClose: b
                     })
-                }, [x, b]);
+                }, [b, x]);
                 if (0 === O.length) return null;
                 if (C) return (0, a.jsx)(L, {
                     maxVisibleUsers: I,
@@ -1403,8 +1403,8 @@
                 }, "overflow")), (0, a.jsx)(h.default, {
                     section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
-                        onMouseEnter: b,
-                        onMouseLeave: x,
+                        onMouseEnter: x,
+                        onMouseLeave: b,
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(N, {
                                 participantType: l.type,
@@ -2224,8 +2224,8 @@ ${u}`
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "269734",
-                    versionHash: "b3edf3acbfb77e2b8418bb6f0dcbcdfb6b879fe0"
+                    buildNumber: "269740",
+                    versionHash: "e521d7a38eeccb8b427dc171eb9d9a201495e5f4"
                 }
             }
             n.r(t), n.d(t, {
@@ -2363,7 +2363,7 @@ ${h}`;
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-b3edf3acbfb77e2b8418bb6f0dcbcdfb6b879fe0",
+                    release: "discord_web-e521d7a38eeccb8b427dc171eb9d9a201495e5f4",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !s() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2381,7 +2381,7 @@ ${h}`;
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", "269734"), a.setTag("builtAt", String("1709155043576"));
+                }), a.setTag("buildNumber", "269740"), a.setTag("builtAt", String("1709155747148"));
                 let e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (let t in e) a.setTag(t, e[t]);
@@ -2910,11 +2910,11 @@ ${h}`;
                     });
                     else if (g?.isThread() && function(e) {
                             if (S.default.hasOpenedThread(e)) return !1;
-                            if (null == a && (a = s.default.get(b, {}) ?? {}), e in a) return !1;
+                            if (null == a && (a = s.default.get(x, {}) ?? {}), e in a) return !1;
                             a[e] = Date.now();
                             let t = Date.now() - O;
                             for (let e in a) a[e] < t && delete a[e];
-                            return s.default.set(b, a), !0
+                            return s.default.set(x, a), !0
                         }(n)) y.log(`Jumping to start of thread ${g.id}`), o.default.fetchMessages({
                         channelId: n,
                         limit: N.MAX_MESSAGES_PER_CHANNEL,
@@ -2950,9 +2950,9 @@ ${h}`;
                 }
             }
             let O = 90 * I.default.Millis.DAY,
-                b = "viewedThreadIds";
+                x = "viewedThreadIds";
 
-            function x() {
+            function b() {
                 let e = _.default.getChannelId();
                 if (null != e) {
                     let t = C.default.getChannel(e);
@@ -3126,15 +3126,15 @@ ${h}`;
             }
             class K extends c.default {
                 _initialize() {
-                    l.default.subscribe("CONNECTION_OPEN", x)
+                    l.default.subscribe("CONNECTION_OPEN", b)
                 }
                 _terminate() {
-                    l.default.unsubscribe("CONNECTION_OPEN", x)
+                    l.default.unsubscribe("CONNECTION_OPEN", b)
                 }
                 constructor(...e) {
                     super(...e), this.fetchMessages = R, this.loadSelectedChannelIfNecessary = D, this.stores = new Map().set(E.default, U), this.actions = {
                         APP_STATE_UPDATE: Y,
-                        OVERLAY_INITIALIZE: x,
+                        OVERLAY_INITIALIZE: b,
                         CHANNEL_SELECT: P,
                         VOICE_CHANNEL_SELECT: w,
                         THREAD_CREATE: V,
@@ -5624,4 +5624,4 @@ ${h}`;
         }
     }
 ]);
-//# sourceMappingURL=91938.de099673a776a0b7c3bf.js.map
+//# sourceMappingURL=91938.f89d71aa89ce135724d2.js.map

@@ -34641,7 +34641,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 N = n("30175");
             (0, _.setUpdateRules)(l.default), (0, o.default)(N.default, r.default, u.default), s.default.Emitter.injectBatchEmitChanges(a.batchUpdates), s.default.PersistedStore.disableWrites = __OVERLAY__, s.default.initialize();
             let O = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269734, Version Hash: b3edf3acbfb77e2b8418bb6f0dcbcdfb6b879fe0`), i.default.setTags({
+            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269740, Version Hash: e521d7a38eeccb8b427dc171eb9d9a201495e5f4`), i.default.setTags({
                 appContext: A.CURRENT_APP_CONTEXT
             }), I.default.initBasic(), T.default.init(), E.FocusRingManager.init(), c.init(), (0, S.cleanupTempFiles)()
         },
@@ -43107,7 +43107,7 @@ ${_.join(" +\n")}
                     neverLoadBeforeConnectionOpen: !0
                 },
                 InappropriateConversationsManager: {
-                    actions: ["VIBING_WUMPUS_PLAY_MUSIC", "VIBING_WUMPUS_STOP_MUSIC"],
+                    actions: ["VIBING_WUMPUS_PLAY_MUSIC", "VIBING_WUMPUS_STOP_MUSIC", "VIBING_WUMPUS_PAUSE_MUSIC"],
                     inlineRequire: () => n("725600").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -44452,8 +44452,8 @@ ${_.join(" +\n")}
             var i = n("281925");
 
             function r() {
-                let e = parseInt("269734");
-                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269734"), e = 0), e
+                let e = parseInt("269740");
+                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269740"), e = 0), e
             }
         },
         322825: function(e, t, n) {
@@ -63108,46 +63108,60 @@ ${s.join("\n\n")}`
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return c
+                    return N
                 }
             });
-            var i = n("963694"),
-                r = n("552091");
-            let o = (0, r.createSound)("vibing_wumpus", "vibing_wumpus", 0),
-                a = 0,
-                s = 0,
-                _ = null;
+            var i = n("729357"),
+                r = n.n(i),
+                o = n("963694"),
+                a = n("552091");
+            let s = (0, a.createSound)("vibing_wumpus", "vibing_wumpus", 0),
+                _ = 0,
+                E = 0,
+                l = null;
 
-            function E(e) {
-                let t = Math.round(100 * s),
-                    n = Math.round(100 * a);
-                e > 0 && n >= t || e < 0 && n <= t ? (clearInterval(_), 0 === t && o.stop()) : (n += Math.round(100 * e), a = n / 100, o.volume = a)
+            function u(e, t) {
+                let n = Math.round(100 * e),
+                    i = Math.round(100 * E),
+                    o = Math.round(100 * _);
+                n > 0 && o >= i || n < 0 && o <= i ? (clearInterval(l), 0 === i && null != t && t()) : (o += n, _ = o / 100, s.volume = r()(_, 0, .5))
             }
 
-            function l() {
-                s = 0;
-                let e = I();
-                _ = setInterval(() => E(e), 100)
+            function I(e) {
+                null != l && clearInterval(l), E = 0;
+                let t = S();
+                l = setInterval(() => {
+                    u(t, e)
+                }, 100)
             }
 
-            function u() {
-                o.loop(), s = .5;
-                let e = I();
-                _ = setInterval(() => E(e), 100)
+            function T() {
+                null != l && clearInterval(l), s.loop(), E = .5;
+                let e = S();
+                l = setInterval(() => u(e), 100)
             }
 
-            function I() {
-                return .2 * (s - a)
+            function c() {
+                I(s.pause.bind(s))
             }
-            class T extends i.default {
+
+            function d() {
+                I(s.stop.bind(s))
+            }
+
+            function S() {
+                return .2 * (E - _)
+            }
+            class A extends o.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        VIBING_WUMPUS_PLAY_MUSIC: u,
-                        VIBING_WUMPUS_STOP_MUSIC: l
+                        VIBING_WUMPUS_PLAY_MUSIC: T,
+                        VIBING_WUMPUS_STOP_MUSIC: d,
+                        VIBING_WUMPUS_PAUSE_MUSIC: c
                     }
                 }
             }
-            var c = new T
+            var N = new A
         },
         724802: function(e, t, n) {
             "use strict";
@@ -85131,7 +85145,7 @@ ${s.join("\n\n")}`
                     }) : Promise.reject(Error("not desktop client"))).then(e => {
                         let i = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269734"
+                                build_number: "269740"
                             },
                             u = _.default.getCurrentUser();
                         null != u && (i.user_id = u.id, i.user_name = u.tag, null != u.email && (i.email = u.email));
@@ -89607,7 +89621,7 @@ ${s.join("\n\n")}`
                 let e = {},
                     t = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 t && (e.release_channel = t.split("-")[0]);
-                let n = parseInt("269734", 10);
+                let n = parseInt("269740", 10);
                 !isNaN(n) && (e.client_build_number = n);
                 let i = L?.remoteApp.getBuildNumber?.();
                 return !isNaN(i) && (e.native_build_number = i), e.client_event_source = function() {
@@ -108702,4 +108716,4 @@ void main() {
         }
     }
 ]);
-//# sourceMappingURL=48975.2d8fbed5cb5849c15f47.js.map
+//# sourceMappingURL=48975.178716072c64471318b0.js.map
