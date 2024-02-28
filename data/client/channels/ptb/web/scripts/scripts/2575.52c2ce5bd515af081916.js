@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["18832"], {
+    ["2575"], {
         787333: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "621680",
@@ -56869,7 +56869,7 @@
                     } = e;
                     V = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b3edf3acbfb77e2b8418bb6f0dcbcdfb6b879fe0"), n.append("rpc", String(t)), n.append("rpc_auth_token", V), i = `${location.protocol}//${location.host}/overlay?${n.toString()}`
+                    n.append("build_id", "e521d7a38eeccb8b427dc171eb9d9a201495e5f4"), n.append("rpc", String(t)), n.append("rpc_auth_token", V), i = `${location.protocol}//${location.host}/overlay?${n.toString()}`
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -68390,4 +68390,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18832.61ff8f45c0ab86009aaa.js.map
+//# sourceMappingURL=2575.52c2ce5bd515af081916.js.map
