@@ -1,27 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2022-11_default_to_server_vanity_v2",
-    "label": "Default To Server Vanity v2",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
     "hash": 2507971540,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "enabled"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [
