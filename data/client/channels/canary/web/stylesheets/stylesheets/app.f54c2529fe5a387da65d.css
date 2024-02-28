@@ -61203,6 +61203,19 @@ html .progress__4ef76 {
     padding: 8px
 }
 
+.row__34a00 {
+    display: flex
+}
+
+.userCell__475a4 {
+    flex: 2
+}
+
+.affinityCell_bf5f64 {
+    flex: 1;
+    text-align: right
+}
+
 .panel__40f99 {
     display: flex;
     flex-direction: column
@@ -128241,4 +128254,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6282214a2ab749919f1e.css.map*/
+/*# sourceMappingURL=app.f54c2529fe5a387da65d.css.map*/
