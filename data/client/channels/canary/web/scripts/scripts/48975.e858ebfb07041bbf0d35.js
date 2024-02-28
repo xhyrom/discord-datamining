@@ -34641,7 +34641,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 N = n("30175");
             (0, _.setUpdateRules)(l.default), (0, o.default)(N.default, r.default, u.default), s.default.Emitter.injectBatchEmitChanges(a.batchUpdates), s.default.PersistedStore.disableWrites = __OVERLAY__, s.default.initialize();
             let O = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269704, Version Hash: 080902290edcdfac49d2534677832a9901d15b33`), i.default.setTags({
+            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269722, Version Hash: a400159af9441b68d65d66a0b9a70f156332b4d9`), i.default.setTags({
                 appContext: A.CURRENT_APP_CONTEXT
             }), I.default.initBasic(), T.default.init(), E.FocusRingManager.init(), c.init(), (0, S.cleanupTempFiles)()
         },
@@ -44452,8 +44452,8 @@ ${_.join(" +\n")}
             var i = n("281925");
 
             function r() {
-                let e = parseInt("269704");
-                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269704"), e = 0), e
+                let e = parseInt("269722");
+                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269722"), e = 0), e
             }
         },
         322825: function(e, t, n) {
@@ -62186,15 +62186,15 @@ ${s.join("\n\n")}`
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return L
+                    return D
                 }
             });
             var i = n("963694"),
-                r = n("224022"),
-                o = n("188304"),
-                a = n("311545"),
-                s = n("262047"),
-                _ = n("731865"),
+                r = n("188304"),
+                o = n("311545"),
+                a = n("262047"),
+                s = n("731865"),
+                _ = n("919866"),
                 E = n("407807"),
                 l = n("152551"),
                 u = n("375844"),
@@ -62208,7 +62208,16 @@ ${s.join("\n\n")}`
                 O = 12 * l.default.Millis.HOUR,
                 R = 1 * l.default.Millis.MINUTE,
                 C = 30 * l.default.Millis.SECOND;
-            class h extends i.default {
+
+            function h() {
+                let e = o.default.getStreamerActiveStreamMetadata();
+                if (e?.id == null) return null;
+                let t = _.default.getGameById(e.id);
+                if (t?.id == null) return null;
+                let n = (0, d.getQuestByApplicationId)(c.default.quests, t.id);
+                return n?.userStatus?.enrolledAt == null || n?.userStatus?.completedAt != null ? null : n
+            }
+            class L extends i.default {
                 maybeFetchCurrentQuests() {
                     (0, T.getIsEligibleForQuests)({
                         location: S.QuestsExperimentLocations.QUESTS_MANAGER,
@@ -62224,7 +62233,7 @@ ${s.join("\n\n")}`
                         } = e;
                         window.clearTimeout(this.sendHeartbeatTimeoutIds.get(n));
                         let r = () => {
-                            (null != a.default.getRTCStream(n) || a.default.getViewerIds(n).length > 0) && (0, I.sendHeartbeat)({
+                            (null != o.default.getRTCStream(n) || o.default.getViewerIds(n).length > 0) && (0, I.sendHeartbeat)({
                                 questId: t,
                                 streamKey: n,
                                 applicationId: i
@@ -62247,17 +62256,13 @@ ${s.join("\n\n")}`
                             enrolledQuestUserStatus: {
                                 questId: t
                             }
-                        } = e, n = a.default.getStreamerActiveStreamMetadata();
-                        if (null == n || null == n.pid) return;
-                        let i = r.default.getGameForPID(n.pid);
-                        if (null == i || null == i.id) return;
-                        let s = (0, d.getQuestByApplicationId)(c.default.quests, i.id);
-                        if (null == s || s.id !== t) return;
-                        let _ = a.default.getCurrentUserActiveStream();
-                        null != _ && this.initiateHeartbeat({
-                            streamKey: (0, o.encodeStreamKey)(_),
-                            applicationId: s.config.applicationId,
-                            questId: s.id
+                        } = e, n = h();
+                        if (null == n || n.id !== t) return;
+                        let i = o.default.getCurrentUserActiveStream();
+                        null != i && this.initiateHeartbeat({
+                            streamKey: (0, r.encodeStreamKey)(i),
+                            applicationId: n.config.applicationId,
+                            questId: n.id
                         })
                     }, this.handlePostConnectionOpen = () => {
                         if (0 === c.default.lastFetchedCurrentQuests) window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * N))
@@ -62273,51 +62278,44 @@ ${s.join("\n\n")}`
                         let {
                             streamKey: t,
                             viewerIds: n
-                        } = e, i = a.default.getStreamerActiveStreamMetadataForStream(t);
-                        if (null == i || null == i.pid) return;
-                        let o = r.default.getGameForPID(i.pid);
-                        if (null == o || null == o.id) return;
-                        let s = (0, d.getQuestByApplicationId)(c.default.quests, o.id);
-                        if (s?.userStatus?.enrolledAt != null && s?.userStatus?.completedAt == null) {
+                        } = e, i = h();
+                        if (null != i) {
                             if (0 === n.length) {
                                 this.sendHeartbeatTimeoutIds.has(t) && ((0, I.sendHeartbeat)({
-                                    questId: s.id,
+                                    questId: i.id,
                                     streamKey: t,
-                                    applicationId: o.id
+                                    applicationId: i.config.applicationId
                                 }), this.terminateHeartbeat(t));
                                 return
                             }
                             this.initiateHeartbeat({
                                 streamKey: t,
-                                applicationId: s.config.applicationId,
-                                questId: s.id
+                                applicationId: i.config.applicationId,
+                                questId: i.id
                             })
                         }
                     }, this.handleStreamStart = e => {
                         let {
                             streamType: t,
                             guildId: n,
-                            channelId: i,
-                            pid: l
-                        } = e, I = null != l ? r.default.getGameForPID(l) : null;
-                        if (null == I) return;
-                        let T = null != I.id ? (0, d.getQuestByApplicationId)(c.default.quests, I.id) : null;
-                        if (T?.userStatus?.enrolledAt == null || T?.userStatus?.completedAt != null) return;
-                        (0, u.trackQuestEvent)(T.id, A.AnalyticEvents.QUEST_STREAMING_STARTED, {
+                            channelId: i
+                        } = e, _ = h();
+                        if (null == _) return;
+                        (0, u.trackQuestEvent)(_.id, A.AnalyticEvents.QUEST_STREAMING_STARTED, {
                             media_session_id: E.default.getMediaSessionId(),
-                            channel_type: _.default.getChannel(i)?.type,
+                            channel_type: s.default.getChannel(i)?.type,
                             guild_id: n
                         });
-                        let S = (0, o.encodeStreamKey)({
+                        let l = (0, r.encodeStreamKey)({
                             streamType: t,
                             guildId: n,
                             channelId: i,
-                            ownerId: s.default.getId()
+                            ownerId: a.default.getId()
                         });
-                        0 !== a.default.getViewerIds(S).length && this.initiateHeartbeat({
-                            streamKey: S,
-                            applicationId: T.config.applicationId,
-                            questId: T.id
+                        0 !== o.default.getViewerIds(l).length && this.initiateHeartbeat({
+                            streamKey: l,
+                            applicationId: _.config.applicationId,
+                            questId: _.id
                         })
                     }, this.handleStreamClose = e => {
                         let {
@@ -62335,7 +62333,7 @@ ${s.join("\n\n")}`
                     }
                 }
             }
-            var L = new h
+            var D = new L
         },
         587361: function(e, t, n) {
             "use strict";
@@ -70693,6 +70691,9 @@ ${s.join("\n\n")}`
                         } else if (null != t) return null
                     }
                     return this.getGameByExecutable(n) ?? this.getGameByExecutable(i) ?? t
+                }
+                getGameById(e) {
+                    return u[e]
                 }
                 shouldReport(e) {
                     let t = null != this.getGameByName(e),
@@ -85130,7 +85131,7 @@ ${s.join("\n\n")}`
                     }) : Promise.reject(Error("not desktop client"))).then(e => {
                         let i = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269704"
+                                build_number: "269722"
                             },
                             u = _.default.getCurrentUser();
                         null != u && (i.user_id = u.id, i.user_name = u.tag, null != u.email && (i.email = u.email));
@@ -89606,7 +89607,7 @@ ${s.join("\n\n")}`
                 let e = {},
                     t = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 t && (e.release_channel = t.split("-")[0]);
-                let n = parseInt("269704", 10);
+                let n = parseInt("269722", 10);
                 !isNaN(n) && (e.client_build_number = n);
                 let i = L?.remoteApp.getBuildNumber?.();
                 return !isNaN(i) && (e.native_build_number = i), e.client_event_source = function() {
@@ -108701,4 +108702,4 @@ void main() {
         }
     }
 ]);
-//# sourceMappingURL=48975.eb852ed36298fed51882.js.map
+//# sourceMappingURL=48975.e858ebfb07041bbf0d35.js.map
