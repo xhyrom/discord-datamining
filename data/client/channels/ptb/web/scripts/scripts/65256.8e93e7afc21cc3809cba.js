@@ -212,6 +212,9 @@
         648456: function(e, t, i) {
             "use strict";
             i.r(t), i.d(t, {
+                getActiveAnalyticsSessionIDs: function() {
+                    return J
+                },
                 default: function() {
                     return n
                 }
@@ -401,6 +404,10 @@
                         }), delete Y[n]
                     }
                 }
+            }
+
+            function J(e) {
+                return F[e]
             }
             n = class extends s.default {
                 _initialize() {
@@ -2141,4 +2148,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65256.43e62f4be43856cb1174.js.map
+//# sourceMappingURL=65256.8e93e7afc21cc3809cba.js.map
