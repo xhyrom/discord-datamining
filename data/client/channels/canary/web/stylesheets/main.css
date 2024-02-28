@@ -6172,6 +6172,14 @@
     text-align: center
 }
 
+.tooltipPremiumContent__21ff1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -moz-column-gap: 2px;
+    column-gap: 2px
+}
+
 .imageContent__24964 {
     display: flex;
     flex-flow: column nowrap;
@@ -7429,6 +7437,19 @@
 
 .nitroWheel__489eb {
     margin-right: 8px
+}
+
+.nitroTextAndBadge_ea4d26 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -moz-column-gap: 2px;
+    column-gap: 2px;
+    margin-top: 4px
+}
+
+.nitroText__7da2f {
+    color: var(--premium-tier-2-pink-for-gradients)
 }
 
 .emojiContainer__4a804 {
@@ -123124,7 +123145,7 @@ div.nagbar_c731ff {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: 14px
+    font-size: .875rem
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -128220,4 +128241,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8d69274ef5b535b4a069.css.map*/
+/*# sourceMappingURL=app.c25f8d86dfb3d017ca95.css.map*/
