@@ -874,7 +874,7 @@
                     return U
                 },
                 getChunkNumbers: function() {
-                    return P
+                    return L
                 },
                 useIsMakingRequest: function() {
                     return v
@@ -961,7 +961,7 @@
                 return Math.floor(Math.max(e - 1, 0) / t)
             }
 
-            function P(e) {
+            function L(e) {
                 let t = (0, S.getSearchChunkLimit)(e),
                     r = e.pageSize * (e.currentPage - 1),
                     n = e.pageSize * e.currentPage,
@@ -972,7 +972,7 @@
                     nextPageChunkNumber: U(i, t)
                 }
             }(i = u || (u = {}))[i.FIRST_PAGE_CHUNK = 0] = "FIRST_PAGE_CHUNK", i[i.CURRENT_SEARCH_CHUNK = 1] = "CURRENT_SEARCH_CHUNK", i[i.NEXT_SEARCH_CHUNK = 2] = "NEXT_SEARCH_CHUNK", i[i.PREVIOUS_SEARCH_CHUNK = 3] = "PREVIOUS_SEARCH_CHUNK";
-            async function L(e) {
+            async function P(e) {
                 var t, r, n;
                 let i = g.default.getSearchStateByGuildId(e),
                     a = g.default.getPaginationStateByGuildId(e),
@@ -984,7 +984,7 @@
                                     currentPageChunkNumber: r,
                                     previousPageChunkNumber: n,
                                     nextPageChunkNumber: i
-                                } = P(t), {
+                                } = L(t), {
                                     previousPagination: a
                                 } = D(b(e)), u = t.currentPage, s = a?.currentPage ?? 0, l = g.default.getElasticSearchPaginationByGuildId(e);
                                 switch (!0) {
@@ -1166,7 +1166,7 @@
                     let {
                         guildId: t
                     } = e;
-                    return N(t), L(t)
+                    return N(t), P(t)
                 }
                 handleGuildDelete(e) {
                     let {
@@ -1178,13 +1178,13 @@
                     let {
                         guildId: t
                     } = e;
-                    return L(t)
+                    return P(t)
                 }
                 handlePaginationUpdate(e) {
                     let {
                         guildId: t
                     } = e;
-                    return L(t)
+                    return P(t)
                 }
                 handleGuildMemberSearchSuccess(e) {
                     let {
@@ -1206,7 +1206,7 @@
                     let {
                         guildId: t
                     } = e;
-                    return L(t)
+                    return P(t)
                 }
                 constructor(...e) {
                     super(...e), this.actions = {
@@ -1557,11 +1557,11 @@
                         elasticSearchCursor: {
                             before: (0, c.createMemberSearchCursor)({
                                 joinedAt: t?.member?.joined_at,
-                                userId: t?.member?.user.id ?? m.EMPTY_STRING_USER_ID
+                                userId: t?.member?.user.id ?? m.EMPTY_STRING_SNOWFLAKE_ID
                             }),
                             after: (0, c.createMemberSearchCursor)({
                                 joinedAt: r?.member?.joined_at,
-                                userId: r?.member?.user.id ?? m.EMPTY_STRING_USER_ID
+                                userId: r?.member?.user.id ?? m.EMPTY_STRING_SNOWFLAKE_ID
                             })
                         }
                     }, !1);
@@ -2190,4 +2190,4 @@
         }
     }
 ]);
-//# sourceMappingURL=16294.ecb39363579d8fea251c.js.map
+//# sourceMappingURL=16294.e6cf3d36c3c918054015.js.map

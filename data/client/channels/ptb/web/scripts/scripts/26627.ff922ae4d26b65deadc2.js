@@ -661,8 +661,8 @@
                     breadcrumbs: D = [],
                     skuIDs: B,
                     isGift: H = !1,
-                    children: b,
-                    defaultPlanId: K,
+                    children: K,
+                    defaultPlanId: b,
                     purchaseType: w = y.PurchaseTypes.SUBSCRIPTION,
                     applicationId: v,
                     referralCode: Y
@@ -714,7 +714,7 @@
                     selectedPlan: tA,
                     setSelectedSkuId: tp,
                     setSelectedPlanId: tC
-                } = (0, p.default)(), [tP, tN] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tR, tU] = (0, o.useStateFromStoresArray)([m.default], () => [m.default.browserCheckoutState, m.default.loadId]), [tL, tM] = u.useState(null), [tO, tF] = u.useState(null), [th, tm] = u.useState(null), [ty, tg] = u.useState(null), [tG, tD] = u.useState(null), [tB, tH] = u.useState(void 0), [tb, tK] = u.useState([]), tw = u.useMemo(() => null == tA || (0, I.isPremiumSubscriptionPlan)(tA.id), [tA]), tv = u.useRef(null != n ? n.planId : null);
+                } = (0, p.default)(), [tP, tN] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tR, tU] = (0, o.useStateFromStoresArray)([m.default], () => [m.default.browserCheckoutState, m.default.loadId]), [tL, tM] = u.useState(null), [tO, tF] = u.useState(null), [th, tm] = u.useState(null), [ty, tg] = u.useState(null), [tG, tD] = u.useState(null), [tB, tH] = u.useState(void 0), [tK, tb] = u.useState([]), tw = u.useMemo(() => null == tA || (0, I.isPremiumSubscriptionPlan)(tA.id), [tA]), tv = u.useRef(null != n ? n.planId : null);
                 u.useEffect(() => {
                     null == tv.current && null != n && (tv.current = n.planId)
                 }, [n]);
@@ -789,7 +789,7 @@
                         setSelectedPlanId: tC,
                         readySlideId: tB,
                         setReadySlideId: tH,
-                        defaultPlanId: K,
+                        defaultPlanId: b,
                         isPremium: tw,
                         productLine: tX?.productLine,
                         startedPaymentFlowWithPaymentSourcesRef: $,
@@ -802,14 +802,14 @@
                         purchaseType: w,
                         isEmbeddedIAP: tx,
                         activitySessionId: tQ,
-                        entitlementsGranted: tb,
-                        setEntitlementsGranted: tK,
+                        entitlementsGranted: tK,
+                        setEntitlementsGranted: tb,
                         referralCode: Y
                     },
                     children: (0, i.jsx)(r.Elements, {
                         options: y.StripeElementsOptions,
                         stripe: W,
-                        children: b
+                        children: K
                     })
                 })
             }
@@ -1541,7 +1541,7 @@
             }
 
             function h(t) {
-                let e = t?.id ?? P.EMPTY_STRING_GUILD_ID,
+                let e = t?.id ?? P.EMPTY_STRING_SNOWFLAKE_ID,
                     {
                         entitlementsLoaded: n
                     } = R({
@@ -2706,4 +2706,4 @@
         }
     }
 ]);
-//# sourceMappingURL=26627.d9b535b0548cded8977c.js.map
+//# sourceMappingURL=26627.ff922ae4d26b65deadc2.js.map
