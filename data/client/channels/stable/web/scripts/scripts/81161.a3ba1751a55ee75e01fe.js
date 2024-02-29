@@ -718,7 +718,7 @@
             function Y(e) {
                 var t;
                 let n = null != e.byWeekday ? [...e.byWeekday] : null,
-                    u = null === (t = e.byNWeekday) || void 0 === t ? void 0 : t.map(e => new(0, d.Weekday)(e.day).nth(e.n)),
+                    u = null === (t = e.byNWeekday) || void 0 === t ? void 0 : t.map(e => new d.Weekday(e.day, e.n)),
                     l = new Date(e.start);
                 return l.setMilliseconds(0), new d.RRule({
                     dtstart: l,
@@ -780,8 +780,8 @@
             function M(e, t) {
                 let n = function(e, t) {
                     let n = A(t),
-                        u = m(t.toDate().getDay()),
-                        l = Math.ceil(t.toDate().getDate() / 7),
+                        u = m(t.toDate().getUTCDay()),
+                        l = Math.ceil(t.toDate().getUTCDate() / 7),
                         r = t.toDate();
                     switch (r.setMilliseconds(0), e) {
                         case c.RecurrenceOptions.NONE:
@@ -871,4 +871,4 @@
         }
     }
 ]);
-//# sourceMappingURL=81161.fd5f59323aece78b9740.js.map
+//# sourceMappingURL=81161.a3ba1751a55ee75e01fe.js.map

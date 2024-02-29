@@ -760,7 +760,7 @@
                 EMBEDDED_ACTIVITIES_VOICE_CONTROLS_BUTTON_A11Y_LABEL: "Show Voice Controls",
                 EMBEDDED_ACTIVITIES_OPEN_ACTIVITY_SHELF: "Open Activity Shelf",
                 EMBEDDED_ACTIVITIES_LEAVE_ACTIVITY_A11Y_LABEL: "Leave Activity",
-                EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS: "Activities are not available on this OS at this time",
+                EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS: "This feature is not available on this OS at this time",
                 EMBEDDED_ACTIVITIES_APPLICATION_UNSUPPORTED_OS: "This Activity is not currently available on this OS",
                 EMBEDDED_ACTIVITIES_THIS_ACTIVITY: "this Activity",
                 EMBEDDED_ACTIVITIES_SUBSCRIBE_CTA: "SUBSCRIBE AND PLAY MORE",
@@ -6626,6 +6626,7 @@
                 PREMIUM_DISCOUNT_CTA_WITHOUT_PERCENT: "Save on Nitro",
                 PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION: "Pay just **{discountedPrice}** a month for **3 months!** Then pay {regularPrice}.",
                 PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION: "Your !!{percent, number}!!% discount will end 3 months after purchase. After that you'll be charged {regularPrice}.",
+                PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC: "Your !!{percent, number}!!% discount will end {numMonths, plural, one {1 month} other {{numMonths} months}} after purchase. After that you'll be charged {regularPrice}.",
                 PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION: "Your first **3 months** are **{discountedPrice}**. After that you'll be charged {regularPrice}.",
                 PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION_WITH_ACTIVE_SUB: "Your next **{numMonths, plural, one {1 month} other {{numMonths} months}}** {numMonths, plural, one {is} other {are}} **{discountedPrice}**. After that you'll be charged {regularPrice}.",
                 PREMIUM_TIER_CARD_DISCOUNT_APPLIED: "discount applied",
@@ -7709,11 +7710,6 @@
                 USER_SETTINGS_VOICE_HARDWARE_H264: "Hardware Acceleration",
                 USER_SETTINGS_VOICE_AV1: "AV1 video codec",
                 USER_SETTINGS_VOICE_EXPERIMENTAL_SOUNDSHARE_LABEL: "Use an experimental method to capture audio from applications",
-                USER_SETTINGS_VOICE_SOUNDSHARE_NOT_ENABLED_LABEL: "Capturing audio on your device requires the installation or updating of additional software. After clicking the install button below, you'll be prompted for authorization. [Learn More]({helpdeskArticle})",
-                USER_SETTINGS_VOICE_SOUNDSHARE_ENABLING_LABEL: "The audio capture extension requires authorization. Check your Security & Privacy system preferences. [Learn More]({helpdeskArticle})",
-                USER_SETTINGS_VOICE_SOUNDSHARE_ENABLED_LABEL: "You're all set to capture audio from applications. [Learn More]({helpdeskArticle})",
-                USER_SETTINGS_VOICE_SOUNDSHARE_FAILED_TO_ENABLE_LABEL: "Something went wrong setting up the audio capture extension. Please visit our [help page]({helpdeskArticle}) to troubleshoot",
-                USER_SETTINGS_VOICE_INSTALL_LABEL: "Install",
                 FORM_HELP_OPEN_H264: "Disabling OpenH264 also disables hardware accelerated video encoding, if available.",
                 FORM_HELP_HARDWARE_H264: "Hardware acceleration uses your GPU for efficient video encoding and decoding, if available.",
                 FORM_HELP_HARDWARE_AV1: "Disabled if hardware acceleration is disabled.",
@@ -8232,6 +8228,7 @@
                 PREMIUM_CTA_TIER_0: "Get Basic",
                 PREMIUM_MOBILE_TRIAL_MARKETING_PAGE_BADGE: "Free Trial ({days, plural, =1 {# day left} other {# days left}})",
                 PREMIUM_MOBILE_TRIAL_FREE_TRIAL_BADGE: "Free Trial",
+                POWERED_BY_NITRO: "Powered by Nitro",
                 USER_ACTIVITY_HEADER_PLAYING: "Playing a game",
                 USER_ACTIVITY_HEADER_LIVE_ON_PLATFORM: "Live on !!{platform}!!",
                 USER_ACTIVITY_HEADER_PLAYING_ON_PLATFORM: "Playing on !!{platform}!!",
@@ -9389,7 +9386,6 @@
                 GO_LIVE_SCREENSHARE_NO_SOUND: "Sound may not be available when sharing a screen on your device.",
                 GO_LIVE_SCREENSHARE_UPDATE_WINDOWS_FOR_SOUNDSHARE: "Audio sharing may not work on your Windows version. Please upgrade to the latest Windows 10.",
                 GO_LIVE_SCREENSHARE_UPDATE_MACOS_FOR_SOUNDSHARE: "Audio sharing may not work on your device. Please upgrade to at least macOS 10.15.",
-                GO_LIVE_SCREENSHARE_ENABLE_FOR_SOUNDSHARE: "To enable audio for screen share, head over to [Voice & Video Settings > Screen Share](onVoiceSettingsClick) and follow the setup instructions.",
                 GO_LIVE_TILE_SCREEN: "!!{username}!!’s Screen",
                 GO_LIVE_USER_PLAYING: "!!{username}!! Playing {applicationName}",
                 GO_LIVE_SHARE_SCREEN: "Screen",
@@ -10048,7 +10044,9 @@
                 EMOJI_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION: "Get this emoji from",
                 EMOJI_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION: "This emoji is from",
                 EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION: "This emoji is from this server. You can use it everywhere.",
+                EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION_V2: "This emoji is from this server. Use it anywhere with Nitro.",
                 EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION: "This emoji is from one of your servers. Type its name in the chat bar to use it.",
+                EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION_V2: "This emoji is from one of your servers. You can use it anywhere with Nitro.",
                 EMOJI_POPOUT_PREMIUM_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION: "Want to use this emoji everywhere? Join the server.",
                 EMOJI_POPOUT_PREMIUM_UNJOINED_PRIVATE_GUILD_DESCRIPTION: "This emoji is from a server that is either invite-only or unavailable.",
                 EMOJI_POPOUT_CURRENT_GUILD_DESCRIPTION: "This emoji is from this server. Get Nitro to use it everywhere.",
@@ -10056,6 +10054,7 @@
                 EMOJI_POPOUT_ADDED_PACK_DESCRIPTION: "This emoji is from one of your packs. Type its name in the chat bar to use it.",
                 EMOJI_POPOUT_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION: "Want to use this emoji everywhere? Get Nitro and join the server.",
                 EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION: "This emoji is from a server that is either invite-only or unavailable. [Learn more](openPremiumSettings) about using custom emoji.",
+                EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION_V2: "This custom emoji is from a server that is invite-only. Use custom emojis from any joined servers with Nitro.",
                 STICKER_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION: "Get this sticker from",
                 STICKER_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION: "This sticker is from",
                 STICKER_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION: "This sticker is from this server. You can use it everywhere.",
@@ -16194,6 +16193,7 @@
                 CLIPS_SETTINGS_KEYBIND: "Clipping Keybind",
                 CLIPS_SETTINGS_KEYBIND_HELP: "Set up your keybind to capture clips. The default is ALT + C.",
                 CLIPS_SAVE: "Save Clip",
+                CLIPS_VIEWERSIDE_BUTTON_ENABLE_CLIPS_TOOLTIP: "Enable clips to capture this stream.",
                 CLIPS_VIEWERSIDE_BUTTON_FOCUS_TOOLTIP: "Focus on a stream to capture clips.",
                 CLIPS_VIEWERSIDE_BUTTON_DISABLED_TOOLTIP: "Clips are disabled for this stream.",
                 CLIPS_SETTINGS_ALLOW_VIEWER_CLIPS: "Allow viewers to capture clips",
@@ -16493,7 +16493,6 @@
                 INAPPROPRIATE_CONVERSATION_BANNER_DESCRIPTION: "Take action to protect yourself.",
                 INAPPROPRIATE_CONVERSATION_BANNER_OPEN_SAFETY_TOOLS_BUTTON: "Open safety tools",
                 INAPPROPRIATE_CONVERSATION_BANNER_BLOCK_BUTTON: "Block",
-                INAPPROPRIATE_CONVERSATION_BLOCK_CONFIRM: "User Blocked",
                 INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_HEADER: "Chats can be a lot",
                 INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_DESCRIPTION: "Relax with Wumpus for as long as you need.",
                 INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_RETURN: "Back to conversation",
@@ -16501,8 +16500,18 @@
                 INAPPROPRIATE_CONVERSATION_ACTION_REPORT: "Report them",
                 INAPPROPRIATE_CONVERSATION_ACTION_REPORTED: "Reported",
                 INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_CTL: "Contact Crisis Text Line",
-                INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_NOFILTR: "Contact NoFiltr",
                 INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP: "This conversation may not be safe.",
+                INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP_ANNOUNCEMENT: "This conversation may not be safe. Open safety tools to take action.",
+                INAPPROPRIATE_CONVERSATION_BLOCK_THEM: "Block them",
+                INAPPROPRIATE_CONVERSATION_UNBLOCK: "Unblock",
+                INAPPROPRIATE_CONVERSATION_BLOCK_TOAST: "Account blocked",
+                INAPPROPRIATE_CONVERSATION_UNBLOCK_TOAST: "Account unblocked",
+                INAPPROPRIATE_CONVERSATION_REPORT_TOAST: "Account reported",
+                INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later.",
+                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_DESCRIPTION: "They won't be able to message you. If you feel their actions could harm someone, please submit a report to Discord.",
+                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_BUTTON: "Block",
+                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_AND_REPORT_BUTTON: "Block and report",
+                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_CANCEL_BUTTON: "Cancel",
                 SAFETY_ALERTS_SETTINGS_HEADER: "Safety Alerts",
                 SAFETY_ALERTS_SETTING_TITLE: "Show alerts in direct messages",
                 SAFETY_ALERTS_SETTING_DESCRIPTION: "Display an alert when a possible risk to your safety is detected. [Learn more about safety alerts]({learnMoreLink})",
@@ -16632,6 +16641,8 @@
                 POLL_SELECT_MULTIPLE_ANSWERS: "Select one or more answers",
                 POLL_SHOW_VOTES: "Show votes",
                 POLL_HIDE_VOTES: "Hide votes",
+                POLL_VOTES_NO_RESULTS_TITLE: "Nothing to see here",
+                POLL_VOTES_NO_RESULTS_SUBTITLE: "There are no votes for this answer",
                 POLL_NOT_INTERACTIVE: "View original message to interact",
                 POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
                 POLL_NO_VOTES_FOR_ANSWER_BODY: "There are no votes for this answer.",
@@ -16763,6 +16774,7 @@
                 QUESTS_EMBED_INVALID_HEADING: "This was a Quest but...",
                 QUESTS_EMBED_INVALID_BODY: "Something went wrong here. Check the Gift Inventory for more available Quests!",
                 QUESTS_PROGRESS_TRACKING_FAILURE_NOTICE: "There's an issue tracking your quest progress.",
+                QUESTS_SHARE_QUEST: "Share Quest",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -17076,28 +17088,14 @@
                 MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff.",
                 INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_1: "Add Inappropriate Tier 1 Warning (Experimental)",
                 INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_2: "Add Inappropriate Tier 2 Warning (Experimental)",
-                INAPPROPRIATE_CONVERSATION_BLOCK_THEM: "Block them",
-                INAPPROPRIATE_CONVERSATION_UNBLOCK: "Unblock",
-                INAPPROPRIATE_CONVERSATION_BLOCK_TOAST: "Account blocked",
-                INAPPROPRIATE_CONVERSATION_UNBLOCK_TOAST: "Account unblocked",
-                INAPPROPRIATE_CONVERSATION_REPORT_TOAST: "Account reported",
-                INAPPROPRIATE_CONVERSATION_REPORT_THEM: "Report them",
-                INAPPROPRIATE_CONVERSATION_REPORTED: "Reported",
-                INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE: "Contact Crisis Text Line",
-                INAPPROPRIATE_CONVERSATION_VISIT_NOFILTR: "Visit NoFiltr",
-                INAPPROPRIATE_CONVERSATION_NOFILTR_DESCRIPTION: "NoFiltr is a community that empowers young people to safely navigate online.",
-                INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later.",
-                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_DESCRIPTION: "They won't be able to message you. If you feel their actions could harm someone, please submit a report to Discord.",
-                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_BUTTON: "Block",
-                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_AND_REPORT_BUTTON: "Block and report",
-                INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_CANCEL_BUTTON: "Cancel",
                 SERVER_DRAWER_ACTIVITY_VOICE: "in **!!{channelName}!!**",
                 SERVER_DRAWER_ACTIVITY_VOICE_STATUS: "$[](statusHook) in **!!{channelName}!!**",
                 SERVER_DRAWER_ACTIVITY_EVENT_IN_UPCOMING: "in !!{relativeTime}!!",
                 SERVER_DRAWER_ACTIVITY_TOPIC: "talking **!!{topic}!!**",
                 SERVER_DRAWER_ACTIVITY_PLAYING: "playing **!!{activity}!!**",
                 SERVER_DRAWER_ACTIVITY_STREAMING: "streaming **!!{activity}!!**",
-                SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen"
+                SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen",
+                CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
             })
         },
         657743: function(e, _, E) {
@@ -18296,7 +18294,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269166", ", Version Hash: ").concat("d0230a233392fc8b32b443371a5f2525e0aa2f23")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269656", ", Version Hash: ").concat("1fac3ee766133fa5fd3d498da68eafa76c8bea99")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20635,8 +20633,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "269166", "269166"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269166")), _ = 0), _
+                let _ = parseInt((e = "269656", "269656"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269656")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21454,15 +21452,6 @@
                 })
             }
         },
-        709377: function(e, _, E) {
-            "use strict";
-            var t;
-            E.r(_), E.d(_, {
-                ContentInventoryFeedKey: function() {
-                    return t
-                }
-            }), (t || (t = {})).GLOBAL_FEED = "global feed"
-        },
         1405: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -21582,35 +21571,6 @@
                 }
             }
             var L = new u
-        },
-        265596: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                default: function() {
-                    return i
-                }
-            }), E("222007");
-            var t = E("446674"),
-                o = E("913144");
-            let n = new Map;
-            class r extends t.default.Store {
-                getFeed(e) {
-                    return n.get(e)
-                }
-            }
-            r.displayName = "ContentInventoryStore";
-            var i = new r(o.default, {
-                CONNECTION_OPEN: function() {
-                    n.clear()
-                },
-                CONTENT_INVENTORY_SET_FEED: function(e) {
-                    let {
-                        feedId: _,
-                        feed: E
-                    } = e;
-                    n.set(_, E)
-                }
-            })
         },
         302537: function(e, _, E) {
             "use strict";
@@ -25350,8 +25310,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1708996872730",
-                                    build_number: "269166"
+                                    built_at: "1709146001935",
+                                    build_number: "269656"
                                 }
                             },
                             retries: 1
@@ -36648,4 +36608,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77761.54f97999258e29ed1372.js.map
+//# sourceMappingURL=77761.1b38c219677330e48b90.js.map

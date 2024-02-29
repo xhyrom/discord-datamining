@@ -3280,7 +3280,7 @@
                         return d.default.has(i, M.Permissions.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : d.default.has(a, M.Permissions.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
                     }, []).sort().join(",")).toString()
                 }(t) : t.memberListId
-            }(a = i || (i = {})).GROUP = "GROUP", a.MEMBER = "MEMBER";
+            }(a = i || (i = {})).GROUP = "GROUP", a.MEMBER = "MEMBER", a.CONTENT_INVENTORY = "CONTENT_INVENTORY", a.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP";
             class b {
                 updateOwnerId() {
                     let e = A.default.getGuild(this.guildId);
@@ -3921,4 +3921,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8240.7373c368a956311c3ee0.js.map
+//# sourceMappingURL=8240.ad3a59838d4dfabe2f1c.js.map
