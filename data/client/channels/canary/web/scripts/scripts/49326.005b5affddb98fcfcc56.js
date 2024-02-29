@@ -1582,7 +1582,7 @@
                     for (let t of n) {
                         if (null == t) continue;
                         let n = l.default.getUser(t),
-                            u = a.default.getTrueMember(e ?? i.EMPTY_STRING_GUILD_ID, t);
+                            u = a.default.getTrueMember(e ?? i.EMPTY_STRING_SNOWFLAKE_ID, t);
                         null != n && s.push(n), null != u && r.push(u)
                     }
                     return [r, s]
@@ -3061,7 +3061,7 @@
             function u(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "1e9ccc_1",
-                    a = e?.id ?? r.EMPTY_STRING_GUILD_ID;
+                    a = e?.id ?? r.EMPTY_STRING_SNOWFLAKE_ID;
                 return i.default.useExperiment({
                     guildId: a,
                     location: n
@@ -3091,7 +3091,7 @@
 
             function f(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                    a = e?.id ?? r.EMPTY_STRING_GUILD_ID;
+                    a = e?.id ?? r.EMPTY_STRING_SNOWFLAKE_ID;
                 return c(i.default.getCurrentConfig({
                     guildId: a,
                     location: "1e9ccc_2"
@@ -3147,7 +3147,7 @@
 
             function r(e) {
                 let t = l.default.getCurrentConfig({
-                        guildId: e ?? i.EMPTY_STRING_GUILD_ID,
+                        guildId: e ?? i.EMPTY_STRING_SNOWFLAKE_ID,
                         location: "3fde52_1"
                     }),
                     n = a.default.getCurrentConfig({
@@ -4236,7 +4236,7 @@
 
             function s(e) {
                 let t = l.default.useExperiment({
-                        guildId: e ?? i.EMPTY_STRING_GUILD_ID,
+                        guildId: e ?? i.EMPTY_STRING_SNOWFLAKE_ID,
                         location: "9a247a_1"
                     }),
                     n = a.default.useExperiment({
@@ -7995,7 +7995,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 createPollServerDataFromCreateRequest: function() {
-                    return g
+                    return S
                 },
                 filterOutUUID: function() {
                     return d
@@ -8004,16 +8004,19 @@
                     return o
                 },
                 getTotalVotes: function() {
-                    return S
+                    return m
                 },
                 hasNonVoteReactions: function() {
                     return c
                 },
                 isAnswerFilled: function() {
-                    return _
+                    return h
                 },
                 isIncompleteAnswer: function() {
-                    return h
+                    return g
+                },
+                isPollCreationEmpty: function() {
+                    return _
                 },
                 useCanPostImagePolls: function() {
                     return E
@@ -8075,15 +8078,19 @@
                 return !1
             }
 
-            function _(e, t) {
-                return t === l.PollLayoutTypes.IMAGE_ONLY_ANSWERS ? null != e.image : null != e.text && e.text.length > 0
+            function _(e, t, n) {
+                return 0 === e.length && null == t.find(e => h(e, n))
             }
 
             function h(e, t) {
+                return t === l.PollLayoutTypes.IMAGE_ONLY_ANSWERS ? null != e.image : null != e.text && e.text.length > 0
+            }
+
+            function g(e, t) {
                 return t === l.PollLayoutTypes.DEFAULT && null != e.image && (null == e.text || 0 === e.text.length)
             }
 
-            function g(e) {
+            function S(e) {
                 var t;
                 if (null == e) return;
                 let n = e?.answers?.map((e, t) => {
@@ -8109,7 +8116,7 @@
                 }
             }
 
-            function S(e) {
+            function m(e) {
                 return e.reduce((e, t) => e + (t.count_details?.vote ?? 0), 0)
             }
         },
@@ -10818,17 +10825,22 @@
                 let {
                     exactQuery: n,
                     containQuery: a,
-                    queryLower: l
-                } = t, r = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+                    queryLower: l,
+                    isFullMatch: r
+                } = t, s = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                 try {
-                    var s, u;
+                    var u, o;
                     if (n.test(e)) {
                         if (e.toLocaleLowerCase() === l) return 10;
+                        if (!1 === r) {
+                            let t = l.length / e.length;
+                            return Math.max(1, 7 * t)
+                        }
                         return 7
                     }
                     if (a.test(e)) return 5;
-                    if (s = l, u = e, s.split(/(?:,| )+/).every(e => RegExp(x.default.escape(e), "i").test(u))) return 3;
-                    if (r && i()(l, e)) return 1
+                    if (u = l, o = e, u.split(/(?:,| )+/).every(e => RegExp(x.default.escape(e), "i").test(o))) return 3;
+                    if (s && i()(l, e)) return 1
                 } catch (e) {
                     $.error(e)
                 }
@@ -11077,7 +11089,7 @@
                                     let e = er(n, t, !1);
                                     0 !== e && (u += .5 * e)
                                 }
-                                u = Math.min(9, u)
+                                u = Math.min(6, u)
                             }
                             if (0 !== u && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s)) {
                                 ;
@@ -11603,4 +11615,4 @@
         }
     }
 ]);
-//# sourceMappingURL=49326.20af5530715069fd17a1.js.map
+//# sourceMappingURL=49326.005b5affddb98fcfcc56.js.map

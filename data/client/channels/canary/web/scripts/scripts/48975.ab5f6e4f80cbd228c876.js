@@ -6938,7 +6938,7 @@ This Boost is scheduled to be canceled on: **{endDate, date, medium}**.
                 PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION: "Your !!{percent, number}!!% discount will end 3 months after purchase. After that you'll be charged {regularPrice}.",
                 PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC: "Your !!{percent, number}!!% discount will end {numMonths, plural, one {1 month} other {{numMonths} months}} after purchase. After that you'll be charged {regularPrice}.",
                 PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION: "Your first **3 months** are **{discountedPrice}**. After that you'll be charged {regularPrice}.",
-                PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION_WITH_ACTIVE_SUB: "Your next **{numMonths, plural, one {1 month} other {{numMonths} months}}** {numMonths, plural, one {is} other {are}} **{discountedPrice}**. After that you'll be charged {regularPrice}.",
+                PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION_WITH_ACTIVE_SUB: "Your next **{numMonths, plural, one {month} other {{numMonths} months}}** {numMonths, plural, one {is} other {are}} **{discountedPrice}**. After that you'll be charged {regularPrice}/month.",
                 PREMIUM_TIER_CARD_DISCOUNT_APPLIED: "discount applied",
                 CHURN_DISCOUNT_DESCRIPTION: "Before canceling, enjoy **{percent, number}% off your Nitro subscription** for {numMonths, plural, one {1 month} other {{numMonths} months}}.",
                 CHURN_DISCOUNT_CLAIM: "Claim Discount",
@@ -11801,8 +11801,8 @@ Scheduled Events`,
                 GUILD_EVENT_RECURRING_COACHMARK_CTA: "Try it",
                 GUILD_EVENT_RECURRING_COACHMARK_TITLE: "NEW! Repeating Events",
                 GUILD_EVENT_RECURRING_COACHMARK_BODY: "You can now easily repeat events.",
-                COPY_RECURRENCE_LINK: "Copy this Event Link",
-                COPY_SERIES_LINK: "Copy Event Series Link",
+                COPY_RECURRENCE_LINK: "Copy Link for Only this Event",
+                COPY_SERIES_LINK: "Copy Link for all Events",
                 GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_CREATE: "Create Event",
                 GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_UPDATE: "Update Event",
                 GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_DELETE: "Cancel Event",
@@ -16924,6 +16924,8 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 INAPPROPRIATE_CONVERSATION_ACTION_REPORTED: "Reported",
                 INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_CTL: "Contact Crisis Text Line",
                 INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP: "This conversation may not be safe.",
+                INAPPROPRIATE_CONVERSATION_INITIAL_TOOLTIP: "Take action to protect yourself.",
+                INAPPROPRIATE_CONVERSATION_INITIAL_TOOLTIP_ANNOUNCEMENT: "Take action to protect yourself by opening safety tools.",
                 INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP_ANNOUNCEMENT: "This conversation may not be safe. Open safety tools to take action.",
                 INAPPROPRIATE_CONVERSATION_BLOCK_THEM: "Block them",
                 INAPPROPRIATE_CONVERSATION_UNBLOCK: "Unblock",
@@ -17051,6 +17053,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 POLL_CHOOSE_SINGLE_ANSWER_PROMPT: "Choose an Answer",
                 POLL_SUBMIT_VOTE: "Vote",
                 POLL_VOTES_COUNT: "{count, plural, one {{count} vote} other {{count} votes}}",
+                POLL_VOTES_COUNT_CAPTIAL: "{count, plural, one {{count} Vote} other {{count} Votes}}",
                 POLL_ALREADY_VOTED: "Voted",
                 POLL_EDIT_VOTE: "Change Vote",
                 POLL_REMOVE_VOTE: "Remove Vote",
@@ -34641,7 +34644,7 @@ Head over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](hi
                 N = n("30175");
             (0, _.setUpdateRules)(l.default), (0, o.default)(N.default, r.default, u.default), s.default.Emitter.injectBatchEmitChanges(a.batchUpdates), s.default.PersistedStore.disableWrites = __OVERLAY__, s.default.initialize();
             let O = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 269740, Version Hash: e521d7a38eeccb8b427dc171eb9d9a201495e5f4`), i.default.setTags({
+            new d.default().log(`[BUILD INFO] Release Channel: ${O}, Build Number: 271114, Version Hash: 66242f0893a62b8d3f0dee636339a8de674006c6`), i.default.setTags({
                 appContext: A.CURRENT_APP_CONTEXT
             }), I.default.initBasic(), T.default.init(), E.FocusRingManager.init(), c.init(), (0, S.cleanupTempFiles)()
         },
@@ -44452,8 +44455,8 @@ ${_.join(" +\n")}
             var i = n("281925");
 
             function r() {
-                let e = parseInt("269740");
-                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 269740"), e = 0), e
+                let e = parseInt("271114");
+                return Number.isNaN(e) && (i.default.captureMessage("Trying to open a changelog for an invalid build number 271114"), e = 0), e
             }
         },
         322825: function(e, t, n) {
@@ -47983,7 +47986,7 @@ ${_.join(" +\n")}
                         let {
                             enableFastMonetizationOnboardingForGuild: t
                         } = i.CreatorMonetizationRavenOnboardingGuildExperiment.useExperiment({
-                            guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                            guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                             location: "e3bb71_3"
                         }, {
                             autoTrackExposure: !0
@@ -48014,7 +48017,7 @@ ${_.join(" +\n")}
                     let {
                         enableFastMonetizationOnboardingForGuild: t
                     } = i.CreatorMonetizationRavenOnboardingGuildExperiment.getCurrentConfig({
-                        guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                        guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                         location: "e3bb71_5"
                     }), {
                         enableFastMonetizationOnboardingForUser: n
@@ -48036,7 +48039,7 @@ ${_.join(" +\n")}
                 let {
                     enableWaitlist: t
                 } = i.CreatorMonetizationOnboardingWaitlistExperiment.useExperiment({
-                    guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "e3bb71_9"
                 }, {
                     autoTrackExposure: !1
@@ -48048,7 +48051,7 @@ ${_.join(" +\n")}
                 let {
                     enableWaitlist: t
                 } = i.CreatorMonetizationOnboardingWaitlistExperiment.getCurrentConfig({
-                    guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "e3bb71_10"
                 });
                 return t
@@ -49994,7 +49997,7 @@ color: purple;
                     return P[`${t}`]
                 }
                 getGuildExperimentDescriptor(e, t) {
-                    let n = t ?? A.EMPTY_STRING_GUILD_ID,
+                    let n = t ?? A.EMPTY_STRING_SNOWFLAKE_ID,
                         i = G[e];
                     if (y && null != i) return i;
                     let r = `${n}:${e}`;
@@ -55923,7 +55926,7 @@ color: purple;
                 let {
                     enableRoleSubscriptionsForGuild: t
                 } = i.GuildRoleSubscriptionsExperiment.useExperiment({
-                    guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_1"
                 }, {
                     autoTrackExposure: !0
@@ -55941,7 +55944,7 @@ color: purple;
                 let {
                     enableRoleSubscriptionsForGuild: t
                 } = i.GuildRoleSubscriptionsExperiment.getCurrentConfig({
-                    guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_3"
                 }), {
                     enableRoleSubscriptionsForUser: n
@@ -55955,7 +55958,7 @@ color: purple;
 
             function s(e) {
                 return i.GuildRoleSubscriptionMaxTiersExperiment.useExperiment({
-                    guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_7"
                 })
             }
@@ -55966,7 +55969,7 @@ color: purple;
                 let {
                     enabled: t
                 } = i.GuildRoleSubscriptionsTierTemplatesExperiment.getCurrentConfig({
-                    guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_9"
                 }, {
                     autoTrackExposure: !1
@@ -55978,7 +55981,7 @@ color: purple;
                 let {
                     enabled: t
                 } = i.GuildRoleSubscriptionsTierTemplatesExperiment.useExperiment({
-                    guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_10"
                 }, {
                     autoTrackExposure: !1
@@ -55990,7 +55993,7 @@ color: purple;
                 let {
                     showCreatorPortalLink: t
                 } = i.GuildRoleSubscriptionsTierTemplatesExperiment.useExperiment({
-                    guildId: e ?? r.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_11"
                 }, {
                     autoTrackExposure: !1
@@ -56715,7 +56718,7 @@ color: purple;
                             enableHangStatus: i,
                             setDefaultStatus: r
                         } = E.HangStatusExperiment.getCurrentConfig({
-                            guildId: n ?? u.EMPTY_STRING_GUILD_ID,
+                            guildId: n ?? u.EMPTY_STRING_SNOWFLAKE_ID,
                             location: "HangStatusManager"
                         }, {
                             autoTrackExposure: !0
@@ -68183,7 +68186,7 @@ ${s.join("\n\n")}`
                     return this.hasFeature(_.GuildFeatures.COMMUNITY)
                 }
                 hasVerificationGate() {
-                    return this.hasFeature(_.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && this.hasFeature(_.GuildFeatures.COMMUNITY)
+                    return this.hasFeature(_.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && (this.hasFeature(_.GuildFeatures.COMMUNITY) || this.hasFeature(_.GuildFeatures.CLAN))
                 }
                 hasCommunityInfoSubheader() {
                     return this.hasFeature(_.GuildFeatures.COMMUNITY) && this.hasFeature(_.GuildFeatures.DISCOVERABLE)
@@ -70164,6 +70167,9 @@ ${s.join("\n\n")}`
                 }
                 getDMFromUserId(e) {
                     if (null != e) return U[e]
+                }
+                getMutableDMsByUserIds() {
+                    return U
                 }
                 getDMUserIds() {
                     return N.default.keys(U)
@@ -85145,7 +85151,7 @@ ${s.join("\n\n")}`
                     }) : Promise.reject(Error("not desktop client"))).then(e => {
                         let i = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269740"
+                                build_number: "271114"
                             },
                             u = _.default.getCurrentUser();
                         null != u && (i.user_id = u.id, i.user_name = u.tag, null != u.email && (i.email = u.email));
@@ -85615,7 +85621,7 @@ ${s.join("\n\n")}`
                     } else o = o ?? {}, n = r;
                     if (null == n) return R;
                     let l = {
-                        userId: O.EMPTY_STRING_USER_ID,
+                        userId: O.EMPTY_STRING_SNOWFLAKE_ID,
                         nick: "",
                         guildId: n.id,
                         guildMemberAvatar: null,
@@ -85628,7 +85634,7 @@ ${s.join("\n\n")}`
                         communicationDisabledUntil: null
                     };
                     return U({
-                        userId: O.EMPTY_STRING_USER_ID,
+                        userId: O.EMPTY_STRING_SNOWFLAKE_ID,
                         member: l,
                         guild: n,
                         overwrites: o,
@@ -87656,6 +87662,9 @@ ${s.join("\n\n")}`
                 },
                 castUserIdAsReadStateChannelId: function(e) {
                     return e
+                },
+                castSnowflakeAsUserId: function(e) {
+                    return e
                 }
             }
         },
@@ -89621,7 +89630,7 @@ ${s.join("\n\n")}`
                 let e = {},
                     t = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 t && (e.release_channel = t.split("-")[0]);
-                let n = parseInt("269740", 10);
+                let n = parseInt("271114", 10);
                 !isNaN(n) && (e.client_build_number = n);
                 let i = L?.remoteApp.getBuildNumber?.();
                 return !isNaN(i) && (e.native_build_number = i), e.client_event_source = function() {
@@ -108716,4 +108725,4 @@ void main() {
         }
     }
 ]);
-//# sourceMappingURL=48975.178716072c64471318b0.js.map
+//# sourceMappingURL=48975.ab5f6e4f80cbd228c876.js.map

@@ -2224,8 +2224,8 @@ ${u}`
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "269740",
-                    versionHash: "e521d7a38eeccb8b427dc171eb9d9a201495e5f4"
+                    buildNumber: "271114",
+                    versionHash: "66242f0893a62b8d3f0dee636339a8de674006c6"
                 }
             }
             n.r(t), n.d(t, {
@@ -2363,7 +2363,7 @@ ${h}`;
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-e521d7a38eeccb8b427dc171eb9d9a201495e5f4",
+                    release: "discord_web-66242f0893a62b8d3f0dee636339a8de674006c6",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !s() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2381,7 +2381,7 @@ ${h}`;
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", "269740"), a.setTag("builtAt", String("1709155747148"));
+                }), a.setTag("buildNumber", "271114"), a.setTag("builtAt", String("1709238474917"));
                 let e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (let t in e) a.setTag(t, e[t]);
@@ -3115,7 +3115,7 @@ ${h}`;
                 })
             }
 
-            function Y(e) {
+            function K(e) {
                 let {
                     state: t
                 } = e;
@@ -3124,7 +3124,7 @@ ${h}`;
                 if (null == n) return !1;
                 o.default.fetchNewLocalMessages(n, N.MAX_MESSAGES_PER_CHANNEL)
             }
-            class K extends c.default {
+            class Y extends c.default {
                 _initialize() {
                     l.default.subscribe("CONNECTION_OPEN", b)
                 }
@@ -3133,7 +3133,7 @@ ${h}`;
                 }
                 constructor(...e) {
                     super(...e), this.fetchMessages = R, this.loadSelectedChannelIfNecessary = D, this.stores = new Map().set(E.default, U), this.actions = {
-                        APP_STATE_UPDATE: Y,
+                        APP_STATE_UPDATE: K,
                         OVERLAY_INITIALIZE: b,
                         CHANNEL_SELECT: P,
                         VOICE_CHANNEL_SELECT: w,
@@ -3151,7 +3151,7 @@ ${h}`;
                     }
                 }
             }
-            var $ = new K
+            var $ = new Y
         },
         189950: function(e, t, n) {
             "use strict";
@@ -3169,24 +3169,26 @@ ${h}`;
             var a, r, i, s, l = n("661223"),
                 u = n("312916"),
                 o = n("731865");
+            let d = 5 * n("152551").default.Millis.SECOND;
             (a = i || (i = {}))[a.STRANGER_DANGER = 1] = "STRANGER_DANGER", a[a.INAPPROPRIATE_CONVERSATION_TIER_1 = 2] = "INAPPROPRIATE_CONVERSATION_TIER_1", a[a.INAPPROPRIATE_CONVERSATION_TIER_2 = 3] = "INAPPROPRIATE_CONVERSATION_TIER_2", (r = s || (s = {}))[r.UPVOTE = 0] = "UPVOTE", r[r.DOWNVOTE = 1] = "DOWNVOTE";
-            let d = [],
-                c = {},
-                f = new Set;
-
-            function h(e) {
-                return 2 === e.type || 3 === e.type
-            }
+            let c = [],
+                f = {},
+                h = new Set;
 
             function p(e) {
                 let {
                     safetyWarnings: t
                 } = e;
-                null != t && (c[e.id] = t, t.some(e => h(e) && null != e.dismiss_timestamp) && f.add(e.id)), null == t && (null != c[e.id] && delete c[e.id], f.delete(e.id))
+                null != t && (f[e.id] = t, t.some(e => {
+                    var t;
+                    return (2 === (t = e).type || 3 === t.type) && null != e.dismiss_timestamp && ! function(e) {
+                        return new Date(e).getTime() > Date.now() - d
+                    }(e.dismiss_timestamp)
+                }) ? h.add(e.id) : h.delete(e.id)), null == t && (null != f[e.id] && delete f[e.id], h.delete(e.id))
             }
 
             function g() {
-                c = {}, Object.values(o.default.getMutablePrivateChannels()).forEach(e => {
+                f = {}, Object.values(o.default.getMutablePrivateChannels()).forEach(e => {
                     p(e)
                 })
             }
@@ -3195,13 +3197,13 @@ ${h}`;
                     this.waitFor(o.default)
                 }
                 getChannelSafetyWarning(e, t) {
-                    return c[e]?.find(e => e.id === t)
+                    return f[e]?.find(e => e.id === t)
                 }
                 getChannelSafetyWarnings(e) {
-                    return c[e] ?? d
+                    return f[e] ?? c
                 }
                 hasShownInitialTooltipForChannel(e) {
-                    return f.has(e)
+                    return h.has(e)
                 }
             }
             var C = new E(u.default, {
@@ -3212,7 +3214,7 @@ ${h}`;
                     let {
                         channel: t
                     } = e;
-                    null != c[t.id] && delete c[t.id], f.delete(t.id)
+                    null != f[t.id] && delete f[t.id], h.delete(t.id)
                 },
                 CHANNEL_UPDATES: function(e) {
                     e.channels.forEach(e => {
@@ -3226,8 +3228,8 @@ ${h}`;
                         channelId: t,
                         warningId: n,
                         feedbackType: a
-                    } = e, r = c[t];
-                    null != r && (c[t] = r.map(e => e.id === n ? {
+                    } = e, r = f[t];
+                    null != r && (f[t] = r.map(e => e.id === n ? {
                         ...e,
                         feedback_type: a
                     } : e))
@@ -3235,8 +3237,8 @@ ${h}`;
                 CLEAR_CHANNEL_SAFETY_WARNINGS: function(e) {
                     let {
                         channelId: t
-                    } = e, n = c[t];
-                    null != n && (c[t] = n.map(e => ({
+                    } = e, n = f[t];
+                    h.delete(t), null != n && (f[t] = n.map(e => ({
                         ...e,
                         dismiss_timestamp: void 0
                     })))
@@ -3245,11 +3247,10 @@ ${h}`;
                     let {
                         channelId: t,
                         warningIds: n
-                    } = e, a = c[t];
+                    } = e, a = f[t];
                     if (null == a) return;
-                    null != a.find(e => n.includes(e.id) && h(e)) && f.add(t);
                     let r = new Date().toISOString();
-                    c[t] = a.map(e => n.includes(e.id) ? {
+                    f[t] = a.map(e => n.includes(e.id) ? {
                         ...e,
                         dismiss_timestamp: r
                     } : e)
@@ -3258,7 +3259,7 @@ ${h}`;
                     let {
                         channelId: t
                     } = e;
-                    f.add(t)
+                    h.add(t)
                 }
             })
         },
@@ -5014,7 +5015,7 @@ ${h}`;
                         pulseSpeakingIndicator: C = !1,
                         speaking: m = !1,
                         ...S
-                    } = e, _ = g ?? n, T = (0, l.default)(_, i.default.unsafe_rawColors.PRIMARY_800.css), I = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, A = (0, c.default)(E ?? h.EMPTY_STRING_USER_ID), v = A?.getBannerURL({
+                    } = e, _ = g ?? n, T = (0, l.default)(_, i.default.unsafe_rawColors.PRIMARY_800.css), I = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, A = (0, c.default)(E ?? h.EMPTY_STRING_SNOWFLAKE_ID), v = A?.getBannerURL({
                         size: 1024,
                         canAnimate: f.GifAutoPlay.getSetting()
                     });
@@ -5624,4 +5625,4 @@ ${h}`;
         }
     }
 ]);
-//# sourceMappingURL=91938.f89d71aa89ce135724d2.js.map
+//# sourceMappingURL=91938.9851aa0315471f5dad29.js.map

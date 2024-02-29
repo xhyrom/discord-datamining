@@ -156,7 +156,7 @@
                     return z
                 },
                 getRandomDateShortcut: function() {
-                    return P
+                    return W
                 },
                 refreshSearchTokens: function() {
                     return Z
@@ -272,11 +272,11 @@
                 return [...Array.from(F()), ...Array.from(g()), ...Array.from(N()), ...Object.keys(L())]
             }
 
-            function P() {
+            function W() {
                 return i().sample(x())
             }
 
-            function W(e, t, n) {
+            function P(e, t, n) {
                 return Y(e, t, x()).map(e => ({
                     ...e,
                     group: n,
@@ -427,21 +427,21 @@
                             componentType: "FILTER",
                             key: D(m.default.Messages.SEARCH_FILTER_BEFORE),
                             plainText: m.default.Messages.SEARCH_FILTER_BEFORE,
-                            getAutocompletions: (e, t, n) => W(e, n, A.SearchTokenTypes.FILTER_BEFORE)
+                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_BEFORE)
                         },
                         [A.SearchTokenTypes.FILTER_ON]: {
                             regex: H(`(${m.default.Messages.SEARCH_FILTER_ON}|${m.default.Messages.SEARCH_FILTER_DURING})`),
                             componentType: "FILTER",
                             key: D(m.default.Messages.SEARCH_FILTER_DURING),
                             plainText: m.default.Messages.SEARCH_FILTER_DURING,
-                            getAutocompletions: (e, t, n) => W(e, n, A.SearchTokenTypes.FILTER_ON)
+                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_ON)
                         },
                         [A.SearchTokenTypes.FILTER_AFTER]: {
                             regex: H(m.default.Messages.SEARCH_FILTER_AFTER),
                             componentType: "FILTER",
                             key: D(m.default.Messages.SEARCH_FILTER_AFTER),
                             plainText: m.default.Messages.SEARCH_FILTER_AFTER,
-                            getAutocompletions: (e, t, n) => W(e, n, A.SearchTokenTypes.FILTER_AFTER)
+                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_AFTER)
                         },
                         [A.SearchTokenTypes.ANSWER_BEFORE]: {
                             regex: O,
@@ -802,7 +802,8 @@
                 })(e, t, 3))
             }(u = a || (a = {}))[u.UNSPECIFIED = 0] = "UNSPECIFIED", u[u.BOT = 1] = "BOT", u[u.INTEGRATION = 2] = "INTEGRATION", u[u.DISCOVERY = 3] = "DISCOVERY", u[u.HUB = 4] = "HUB", u[u.INVITE = 5] = "INVITE", u[u.VANITY_URL = 6] = "VANITY_URL";
             let m = function(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0;
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
+                    n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 switch (e) {
                     case 1:
                         return h.default.Messages.MEMBER_SAFETY_JOIN_TYPE_BOT;
@@ -815,7 +816,7 @@
                     case 5:
                         return h.default.Messages.MEMBER_SAFETY_JOIN_TYPE_INVITE;
                     case 6:
-                        if (null != t) return h.default.Messages.MEMBER_SAFETY_JOIN_TYPE_VANITY_URL_LABEL_NAME.format({
+                        if (null != t && !n) return h.default.Messages.MEMBER_SAFETY_JOIN_TYPE_VANITY_URL_LABEL_NAME.format({
                             vanityUrl: t
                         });
                         return h.default.Messages.MEMBER_SAFETY_JOIN_TYPE_VANITY_URL;
@@ -938,7 +939,7 @@
 
             function l(e) {
                 return r.getCurrentConfig({
-                    guildId: e ?? a.EMPTY_STRING_GUILD_ID,
+                    guildId: e ?? a.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "2d360b_1"
                 }, {
                     autoTrackExposure: !0
@@ -1707,4 +1708,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58504.a3a402885f01521e0025.js.map
+//# sourceMappingURL=58504.44409c0e908bfc428987.js.map
