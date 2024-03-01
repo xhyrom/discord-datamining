@@ -17721,14 +17721,14 @@
                 permissionsList: "permissionsList__65475"
             }
         },
-        483395: function(e, t, n) {
+        590732: function(e, t, n) {
             "use strict";
             e.exports = {
-                label: "label_f12e69",
-                sectionLabel: "sectionLabel__00cf6",
-                select: "select__79321",
-                selectorGroup: "selectorGroup__6407f",
-                wrapper: "wrapper_cd9735"
+                label: "label_cd1f7a",
+                sectionLabel: "sectionLabel__3f9f4",
+                select: "select__96623",
+                selectorGroup: "selectorGroup__6e036",
+                wrapper: "wrapper__33f0a"
             }
         },
         768416: function(e, t, n) {
@@ -21665,6 +21665,16 @@
                 instructions: "instructions__6409a",
                 rewardTile: "rewardTile_c9ce2b",
                 wrapper: "wrapper_cfda70"
+            }
+        },
+        790578: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                content: "content__8b3af",
+                copy: "copy_cafa62",
+                gameTile: "gameTile__365a9",
+                subheading: "subheading_e683ed",
+                wrapper: "wrapper_f0faad"
             }
         },
         649474: function(e, t, n) {
