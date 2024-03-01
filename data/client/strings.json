@@ -16634,6 +16634,8 @@
   "POLL_HIDE_VOTES": "\"Go back to vote\"",
   "POLL_VOTES_NO_RESULTS_TITLE": "\"Nothing to see here\"",
   "POLL_VOTES_NO_RESULTS_SUBTITLE": "\"There are no votes for this answer\"",
+  "POLL_COACHMARK_TITLE": "\"NEW! Polls are here.\"",
+  "POLL_COACHMARK_SUBTITLE": "\"Plan events, gather opinions, or drop a silly question in the chat.\"",
   "POLL_NOT_INTERACTIVE": "\"View original message to interact\"",
   "POLL_NO_VOTES_FOR_ANSWER_TITLE": "\"Nothing to see here\"",
   "POLL_NO_VOTES_FOR_ANSWER_BODY": "\"There are no votes for this answer.\"",
