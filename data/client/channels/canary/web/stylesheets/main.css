@@ -20524,10 +20524,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-top: 8px
 }
 
-.slash_c0ba36 {
-    color: var(--red-400)
-}
-
 .fauxDisabled_e7913a {
     opacity: .5
 }
@@ -46001,8 +45997,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -128565,4 +128561,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.dad8d34535b155ff2d7d.css.map*/
+/*# sourceMappingURL=app.3a156331a8f58ea7b306.css.map*/

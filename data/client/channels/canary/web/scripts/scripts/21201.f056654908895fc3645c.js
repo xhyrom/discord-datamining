@@ -22452,7 +22452,8 @@
                     alt_clips_2: "Use alt clip icon 2",
                     profile_effect_debug_controls: "Scrolls through profile effects with arrow up / down. Restart with R",
                     shop_disable_cache: "Disable shop cache",
-                    shop_include_unpublished: "Show unpublished items in the shop"
+                    shop_include_unpublished: "Show unpublished items in the shop",
+                    lottie_hover_multiple_loop: "Lotties - continue playing the hover animation after mouse enter"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -47601,7 +47602,7 @@
                         width: n,
                         height: i,
                         overflow: "visible",
-                        mask: "url(#".concat(t, ")"),
+                        mask: null != t ? "url(#".concat(t, ")") : void 0,
                         children: o
                     })
                 })
@@ -50166,7 +50167,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "271616"
+                                build_number: "271632"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64215,4 +64216,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.bdd7a6c2edb053fb7850.js.map
+//# sourceMappingURL=21201.f056654908895fc3645c.js.map

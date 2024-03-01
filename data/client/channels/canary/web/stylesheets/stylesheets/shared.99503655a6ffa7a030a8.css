@@ -13506,6 +13506,18 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     opacity: 1
 }
 
+.lottieIcon__9d8ab :not(defs *)[fill][fill-opacity] {
+    fill: var(--__lottieIconColor, var(--interactive-normal))
+}
+
+.lottieIcon__9d8ab :not(defs *)[stroke][stroke-opacity] {
+    stroke: var(--__lottieIconColor, var(--interactive-normal))
+}
+
+.lottieIcon__9d8ab svg {
+    transform: none !important
+}
+
 @keyframes pulseIcon__716e4 {
 
     0%,
@@ -28099,4 +28111,4 @@ span.button__4f306.disabled_dc5630 {
     padding-top: 16px
 }
 
-/*# sourceMappingURL=shared.3471540ea7b5a3a1488d.css.map*/
+/*# sourceMappingURL=shared.99503655a6ffa7a030a8.css.map*/
