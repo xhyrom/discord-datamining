@@ -45985,8 +45985,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -85211,6 +85211,14 @@ html .tabBadge__002b3 {
 
 .productName_ece1e1 {
     position: relative
+}
+
+.newBadge_b2f114 {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: var(--white-500);
+    color: var(--black-500)
 }
 
 .snowflake__3643b {
@@ -128535,4 +128543,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.eaf2de6ffc71d4b86d12.css.map*/
+/*# sourceMappingURL=app.93ba8e71805546141b13.css.map*/

@@ -5605,6 +5605,7 @@
                 innerMask: "innerMask__720e6",
                 lightCardBackground: "lightCardBackground_da94ab",
                 limitedTimeBadge: "limitedTimeBadge__19a7e",
+                newBadge: "newBadge_b2f114",
                 premiumWheel: "premiumWheel__02495",
                 premiumWheelBadge: "premiumWheelBadge__2c9f2",
                 premiumWheelTooltipContent: "premiumWheelTooltipContent__189f4",
