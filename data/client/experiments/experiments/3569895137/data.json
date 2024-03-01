@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_family_center_vc_join",
+    "label": "Family Center VC Join",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable VC Join in Family Center"
+    ],
+    "hash": 3569895137,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

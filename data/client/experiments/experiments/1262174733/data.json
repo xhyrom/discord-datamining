@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_h265_for_windows_with_amd",
+    "label": "Test H.265 on Windows with the AMD hardware encoder",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Use H.265 for AMD on Windows"
+    ],
+    "hash": 1262174733,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "signalH265SupportAMD"
+    ]
+  }
+}

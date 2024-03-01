@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Treatment 0: Control",
-      "Treatment 1: You Bar (2c)"
+      "Treatment 1: You Bar (2c)",
+      "Treatment 2: You Bar (2c) with messages button"
     ],
     "hash": 3520090265,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,

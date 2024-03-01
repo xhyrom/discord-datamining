@@ -1,30 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-03_improved_message_markdown_guild",
-    "label": "Improved Message Markdown Guild Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show improved message markdown",
-      "Treatment 2: Show improved message markdown WITHOUT masked links"
-    ],
     "hash": 1489979462,
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "showListsAndHeaders",
-      "showMaskedLinks"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [
