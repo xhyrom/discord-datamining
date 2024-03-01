@@ -25185,6 +25185,12 @@
             };
             var f = l
         },
+        31745: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var s = n("383465");
+            n.es(s, t)
+        },
         503420: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -25213,6 +25219,12 @@
             "use strict";
             n.r(t);
             var s = n("372286");
+            n.es(s, t)
+        },
+        542238: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var s = n("980763");
             n.es(s, t)
         },
         877585: function(e, t, n) {
@@ -29294,6 +29306,124 @@
                 }
             }), (i = s || (s = {})).GENERAL = "GENERAL", i.IMAGES = "IMAGES", i.PREMIUM = "PREMIUM", i.PRIVACY = "PRIVACY"
         },
+        651057: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            }), n("702976"), n("313619"), n("654714"), n("287168"), n("956660"), n("222007");
+            var s = n("872717"),
+                i = n("913144"),
+                r = n("568734"),
+                a = n("299285"),
+                o = n("49111"),
+                d = {
+                    async createApplication(e) {
+                        let {
+                            name: t,
+                            guildId: n,
+                            type: r,
+                            teamId: a
+                        } = e, d = await s.default.post({
+                            url: o.Endpoints.APPLICATIONS,
+                            body: {
+                                name: t,
+                                type: r,
+                                guild_id: n,
+                                team_id: a
+                            }
+                        }), u = d.body;
+                        return null != n && null != r && i.default.dispatch({
+                            type: "APPLICATION_FETCH_SUCCESS",
+                            application: u
+                        }), u
+                    },
+                    async getApplicationsForGuild(e) {
+                        let {
+                            includeTeam: t,
+                            ...n
+                        } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, r = await s.default.get({
+                            url: o.Endpoints.GUILD_APPLICATIONS(e),
+                            query: {
+                                ...n,
+                                include_team: t
+                            }
+                        }), a = r.body;
+                        return i.default.dispatch({
+                            type: "APPLICATIONS_FETCH_SUCCESS",
+                            applications: a
+                        }), a
+                    },
+                    async transferApplication(e) {
+                        let {
+                            applicationId: t,
+                            teamId: n
+                        } = e, r = await s.default.post({
+                            url: o.Endpoints.APPLICATION_OWNER_TRANSFER(t),
+                            body: {
+                                team_id: n
+                            }
+                        }), a = r.body;
+                        return i.default.dispatch({
+                            type: "APPLICATION_FETCH_SUCCESS",
+                            application: a
+                        }), a
+                    },
+                    async fetchApplications(e) {
+                        let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+                            n = e;
+                        if (!t && (n = e.filter(e => {
+                                var t, n;
+                                let s = a.default.getApplication(e),
+                                    i = (0, r.hasFlag)(null !== (n = null == s ? void 0 : s.flags) && void 0 !== n ? n : 0, o.ApplicationFlags.EMBEDDED),
+                                    d = i && (null == s ? void 0 : null === (t = s.embeddedActivityConfig) || void 0 === t ? void 0 : t.supported_platforms) == null;
+                                return !(null != s && !d) && !a.default.isFetchingApplication(e) && !a.default.didFetchingApplicationFail(e) && e.length > 0
+                            })), n.length > 0) {
+                            let e;
+                            i.default.dispatch({
+                                type: "APPLICATIONS_FETCH",
+                                applicationIds: n
+                            });
+                            try {
+                                e = await s.default.get({
+                                    url: o.Endpoints.APPLICATIONS_PUBLIC,
+                                    query: new URLSearchParams(n.map(e => ["application_ids", e])).toString(),
+                                    oldFormErrors: !0
+                                })
+                            } catch (e) {
+                                throw i.default.dispatch({
+                                    type: "APPLICATIONS_FETCH_FAIL",
+                                    applicationIds: n
+                                }), e
+                            }
+                            i.default.dispatch({
+                                type: "APPLICATIONS_FETCH_SUCCESS",
+                                applications: e.body
+                            })
+                        }
+                    },
+                    fetchApplication(e) {
+                        let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                        return i.default.dispatch({
+                            type: "APPLICATION_FETCH",
+                            applicationId: e
+                        }), s.default.get({
+                            url: o.Endpoints.APPLICATION_PUBLIC(e),
+                            query: {
+                                with_guild: t
+                            },
+                            oldFormErrors: !0
+                        }).then(e => (i.default.dispatch({
+                            type: "APPLICATION_FETCH_SUCCESS",
+                            application: e.body
+                        }), e.body)).catch(t => (i.default.dispatch({
+                            type: "APPLICATION_FETCH_FAIL",
+                            applicationId: e
+                        }), Promise.reject(t)))
+                    }
+                }
+        },
         493259: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -29388,6 +29518,33 @@
                     return i
                 }
             }), (r = s || (s = {}))[r.GAME = 1] = "GAME", r[r.TICKETED_EVENTS = 3] = "TICKETED_EVENTS", r[r.GUILD_ROLE_SUBSCRIPTIONS = 4] = "GUILD_ROLE_SUBSCRIPTIONS", (a = i || (i = {}))[a.BOT = 0] = "BOT", a[a.SERVER = 1] = "SERVER", a[a.SYSTEM_DM = 2] = "SYSTEM_DM", a[a.OFFICIAL = 3] = "OFFICIAL", a[a.STAFF_ONLY_DM = 4] = "STAFF_ONLY_DM", a[a.ORIGINAL_POSTER = 5] = "ORIGINAL_POSTER", a[a.AI = 6] = "AI", a[a.REMIX = 7] = "REMIX"
+        },
+        442939: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                },
+                useGetOrFetchApplication: function() {
+                    return u
+                }
+            });
+            var s = n("884691"),
+                i = n("446674"),
+                r = n("233736"),
+                a = n("651057"),
+                o = n("299285");
+
+            function d(e) {
+                let t = s.useRef([]);
+                return s.useEffect(() => {
+                    !(0, r.areArraysShallowEqual)(e, t.current) && (a.default.fetchApplications(e, !1), t.current = e)
+                }, [e]), (0, i.useStateFromStoresArray)([o.default], () => e.map(e => o.default.getApplication(e)))
+            }
+
+            function u(e) {
+                return d(null != e ? [e] : [])[0]
+            }
         },
         195052: function(e, t, n) {
             "use strict";
@@ -42111,51 +42268,50 @@
             "use strict";
             n.r(t), n.d(t, {
                 filterScopes: function() {
-                    return f
+                    return l
                 },
                 parseOAuth2AuthorizeProps: function() {
-                    return _
+                    return f
                 }
             }), n("424973");
             var s = n("730290"),
-                i = n("891189"),
-                r = n("316693"),
-                a = n("42203"),
-                o = n("162771"),
-                d = n("991170"),
-                u = n("29479"),
-                l = n("843455");
+                i = n("316693"),
+                r = n("42203"),
+                a = n("162771"),
+                o = n("991170"),
+                d = n("29479"),
+                u = n("843455");
 
-            function f(e) {
-                let t = e.filter(e => !u.RemovedScopes.includes(e));
-                return t.includes(l.OAuth2Scopes.BOT) && !t.includes(l.OAuth2Scopes.APPLICATIONS_COMMANDS) && t.push(l.OAuth2Scopes.APPLICATIONS_COMMANDS), t
+            function l(e) {
+                let t = e.filter(e => !d.RemovedScopes.includes(e));
+                return t.includes(u.OAuth2Scopes.BOT) && !t.includes(u.OAuth2Scopes.APPLICATIONS_COMMANDS) && t.push(u.OAuth2Scopes.APPLICATIONS_COMMANDS), t
             }
 
-            function _(e) {
-                var t, n, u, l, f, _;
-                let c = (0, s.parse)(e, {
+            function f(e) {
+                var t, n, d, u, l, f;
+                let _ = (0, s.parse)(e, {
                         arrayFormat: "bracket"
                     }),
-                    g = d.default.NONE;
+                    c = o.default.NONE;
                 try {
-                    g = r.default.deserialize(null != c.permissions && "" !== c.permissions ? c.permissions : "0")
+                    c = i.default.deserialize(null != _.permissions && "" !== _.permissions ? _.permissions : "0")
                 } catch (e) {}
-                let m = c.channel_id,
-                    h = null !== (l = null !== (u = null !== (n = c.guild_id) && void 0 !== n ? n : null === (t = a.default.getChannel(m)) || void 0 === t ? void 0 : t.guild_id) && void 0 !== u ? u : o.default.getGuildId()) && void 0 !== l ? l : void 0;
+                let g = _.channel_id,
+                    m = null !== (u = null !== (d = null !== (n = _.guild_id) && void 0 !== n ? n : null === (t = r.default.getChannel(g)) || void 0 === t ? void 0 : t.guild_id) && void 0 !== d ? d : a.default.getGuildId()) && void 0 !== u ? u : void 0;
                 return {
-                    clientId: null !== (f = c.client_id) && void 0 !== f ? f : "",
-                    scopes: (null !== (_ = c.scope) && void 0 !== _ ? _ : "").split(" ").filter(e => e.length > 0),
-                    responseType: c.response_type,
-                    redirectUri: c.redirect_uri,
-                    codeChallenge: c.code_challenge,
-                    codeChallengeMethod: c.code_challenge_method,
-                    state: c.state,
-                    permissions: g,
-                    channelId: m,
-                    guildId: h,
-                    prompt: c.prompt,
-                    disableGuildSelect: "true" === c.disable_guild_select,
-                    userInstall: c.integration_type === i.ApplicationIntegrationType.USER_INSTALL.toString()
+                    clientId: null !== (l = _.client_id) && void 0 !== l ? l : "",
+                    scopes: (null !== (f = _.scope) && void 0 !== f ? f : "").split(" ").filter(e => e.length > 0),
+                    responseType: _.response_type,
+                    redirectUri: _.redirect_uri,
+                    codeChallenge: _.code_challenge,
+                    codeChallengeMethod: _.code_challenge_method,
+                    state: _.state,
+                    permissions: c,
+                    channelId: g,
+                    guildId: m,
+                    prompt: _.prompt,
+                    disableGuildSelect: "true" === _.disable_guild_select,
+                    integrationType: null == _.integration_type ? void 0 : Number(_.integration_type)
                 }
             }
         },
@@ -42234,38 +42390,38 @@
                 let {
                     authorize: t,
                     clientId: n,
-                    scopes: i,
-                    responseType: a,
-                    redirectUri: d,
-                    codeChallenge: u,
-                    codeChallengeMethod: l,
-                    state: f,
-                    permissions: _,
-                    guildId: c,
-                    channelId: g,
-                    userInstall: m
-                } = e, h = await r.default.post({
+                    scopes: s,
+                    responseType: i,
+                    redirectUri: a,
+                    codeChallenge: d,
+                    codeChallengeMethod: u,
+                    state: l,
+                    permissions: f,
+                    guildId: _,
+                    channelId: c,
+                    integrationType: g
+                } = e, m = await r.default.post({
                     url: o.Endpoints.OAUTH2_AUTHORIZE,
                     query: {
                         client_id: n,
-                        response_type: a,
-                        redirect_uri: d,
-                        code_challenge: u,
-                        code_challenge_method: l,
-                        scope: i.join(" "),
-                        state: f
+                        response_type: i,
+                        redirect_uri: a,
+                        code_challenge: d,
+                        code_challenge_method: u,
+                        scope: s.join(" "),
+                        state: l
                     },
                     body: {
-                        guild_id: c,
-                        webhook_channel_id: null != c && null != g ? g : void 0,
-                        channel_id: null == c && null != g ? g : void 0,
-                        permissions: _,
+                        guild_id: _,
+                        webhook_channel_id: null != _ && null != c ? c : void 0,
+                        channel_id: null == _ && null != c ? c : void 0,
+                        permissions: f,
                         authorize: t,
-                        integration_type: m ? s.ApplicationIntegrationType.USER_INSTALL : s.ApplicationIntegrationType.GUILD_INSTALL
+                        integration_type: g
                     },
                     oldFormErrors: !0
                 });
-                return h.body
+                return m.body
             }
             async function l(e) {
                 let {
@@ -42653,250 +42809,299 @@
             "use strict";
             n.r(t), n.d(t, {
                 OAuth2AuthorizePage: function() {
-                    return X
-                },
-                OAuth2AuthorizeModal: function() {
-                    return Q
-                },
-                OAuth2Authorize: function() {
-                    return Z
-                },
-                useOAuth2AuthorizeForm: function() {
-                    return J
-                },
-                openOAuth2ModalWithCreateGuildModal: function() {
                     return ee
                 },
-                openOAuth2Modal: function() {
+                OAuth2AuthorizeModal: function() {
                     return et
                 },
-                getOAuth2AuthorizeProps: function() {
+                OAuth2Authorize: function() {
                     return en
+                },
+                useOAuth2AuthorizeForm: function() {
+                    return es
+                },
+                openOAuth2ModalWithCreateGuildModal: function() {
+                    return er
+                },
+                openOAuth2Modal: function() {
+                    return ea
+                },
+                getOAuth2AuthorizeProps: function() {
+                    return eo
                 }
             }), n("222007"), n("70102");
-            var s, i, r, a, o = n("37983"),
-                d = n("884691"),
+            var s, i, r = n("37983"),
+                a = n("884691"),
+                o = n("414456"),
+                d = n.n(o),
                 u = n("90915"),
                 l = n("746379"),
                 f = n.n(l),
-                _ = n("316693"),
-                c = n("446674"),
-                g = n("271841"),
-                m = n("551042"),
-                h = n("670914"),
-                v = n("242670"),
-                E = n("84460"),
-                p = n("191225"),
-                y = n("716241"),
-                T = n("148217"),
-                C = n("970254"),
-                I = n("616265"),
-                S = n("894887"),
-                A = n("393414"),
-                D = n("766274"),
-                N = n("271938"),
-                O = n("991170"),
-                P = n("253981"),
-                b = n("872825"),
-                V = n("8222"),
-                R = n("164386"),
-                k = n("978970"),
-                M = n("29479"),
-                w = n("357974"),
-                L = n("580363"),
-                U = n("613070"),
-                G = n("530487"),
-                F = n("351205"),
-                H = n("223934"),
-                B = n("267570"),
-                x = n("941281"),
-                Y = n("891254"),
-                j = n("49111"),
-                K = n("954016"),
-                W = n("782340"),
-                z = n("169294");
-            let q = "oauth2-authorize-header-id";
+                _ = n("891189"),
+                c = n("316693"),
+                g = n("446674"),
+                m = n("271841"),
+                h = n("551042"),
+                v = n("670914"),
+                E = n("242670"),
+                p = n("437822"),
+                y = n("84460"),
+                T = n("191225"),
+                C = n("716241"),
+                I = n("148217"),
+                S = n("970254"),
+                A = n("442939"),
+                D = n("616265"),
+                N = n("894887"),
+                O = n("393414"),
+                P = n("766274"),
+                b = n("271938"),
+                V = n("760190"),
+                R = n("991170"),
+                k = n("253981"),
+                M = n("872825"),
+                w = n("8222"),
+                L = n("164386"),
+                U = n("978970"),
+                G = n("29479"),
+                F = n("357974"),
+                H = n("580363"),
+                B = n("613070"),
+                x = n("530487"),
+                Y = n("351205"),
+                j = n("223934"),
+                K = n("315417"),
+                W = n("267570"),
+                z = n("941281"),
+                q = n("891254"),
+                X = n("49111"),
+                Q = n("954016"),
+                Z = n("782340"),
+                J = n("169294");
+            let $ = "oauth2-authorize-header-id";
 
-            function X() {
+            function ee() {
                 let e = (0, u.useLocation)(),
-                    t = d.useMemo(() => (0, b.parseOAuth2AuthorizeProps)(e.search), [e.search]);
-                return (0, T.default)(), (0, o.jsx)(B.OAuth2Page, {
-                    children: (0, o.jsx)(Z, {
+                    t = a.useMemo(() => (0, M.parseOAuth2AuthorizeProps)(e.search), [e.search]);
+                return (0, I.default)(), a.useEffect(() => {
+                    b.default.isAuthenticated() && p.default.getExperiments()
+                }, []), (0, r.jsx)(W.OAuth2Page, {
+                    children: (0, r.jsx)(en, {
                         ...t,
                         showLogout: !0
                     })
                 })
             }
 
-            function Q(e) {
+            function et(e) {
                 let {
                     transitionState: t,
                     ...n
                 } = e;
-                return (0, o.jsx)(B.OAuth2Modal, {
+                return (0, r.jsx)(W.OAuth2Modal, {
                     transitionState: t,
-                    "aria-labelledby": q,
-                    children: (0, o.jsx)(Z, {
+                    "aria-labelledby": $,
+                    children: (0, r.jsx)(en, {
                         ...n,
+                        inApp: !0,
                         scrollable: !0
                     })
                 })
             }
 
-            function Z(e) {
+            function en(e) {
                 let {
                     scrollable: t,
                     ...n
                 } = e, {
                     header: s,
                     body: i,
-                    footer: r,
-                    nextStep: a,
-                    appDetails: d
-                } = J(n), u = (0, o.jsxs)(o.Fragment, {
-                    children: [(0, o.jsxs)("div", {
-                        className: z.content,
-                        children: [s, i, null == a ? d : null]
-                    }), r]
+                    footer: a,
+                    nextStep: o,
+                    appDetails: u
+                } = es(n), l = (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsxs)("div", {
+                        className: J.content,
+                        children: [s, i, null == o ? u : null]
+                    }), a]
                 });
-                return t ? (0, o.jsx)("div", {
-                    className: z.authorize,
-                    children: (0, o.jsx)(h.ScrollerThin, {
+                return t ? (0, r.jsx)("div", {
+                    className: d(J.authorize, {
+                        [J.inApp]: n.inApp
+                    }),
+                    children: (0, r.jsx)(v.ScrollerThin, {
                         orientation: "auto",
-                        children: u
+                        children: l
                     })
-                }) : (0, o.jsx)("div", {
-                    className: z.authorize,
-                    children: (0, o.jsx)("div", {
-                        children: u
+                }) : (0, r.jsx)("div", {
+                    className: d(J.authorize, {
+                        [J.inApp]: n.inApp
+                    }),
+                    children: (0, r.jsx)("div", {
+                        children: l
                     })
                 })
             }
 
-            function J(e) {
-                var t, n, s, i, r;
-                let a, l, m, {
-                        clientId: h,
-                        responseType: T,
-                        redirectUri: I,
-                        codeChallenge: S,
-                        codeChallengeMethod: B,
-                        state: X,
-                        prompt: Q,
-                        authorization: Z,
-                        scopes: J,
-                        permissions: $,
-                        guildId: ee,
-                        channelId: et,
-                        disableGuildSelect: en = !1,
-                        showLogout: es = !1,
-                        cancelCompletesFlow: ei = !0,
-                        isTrustedName: er = !1,
-                        isEmbeddedFlow: ea = !1,
-                        userInstall: eo = !1,
-                        callback: ed,
-                        callbackWithoutPost: eu,
-                        onClose: el
+            function es(e) {
+                var t, n, s, i, o;
+                let d, l, h, v, p, I, {
+                        clientId: D,
+                        responseType: N,
+                        redirectUri: W,
+                        codeChallenge: ee,
+                        codeChallengeMethod: et,
+                        state: en,
+                        prompt: es,
+                        authorization: ei,
+                        scopes: er,
+                        permissions: ea,
+                        guildId: eo,
+                        channelId: ed,
+                        integrationType: eu,
+                        disableGuildSelect: el = !1,
+                        showLogout: ef = !1,
+                        cancelCompletesFlow: e_ = !0,
+                        isTrustedName: ec = !1,
+                        isEmbeddedFlow: eg = !1,
+                        inApp: em = !1,
+                        callback: eh,
+                        callbackWithoutPost: ev,
+                        onClose: eE
                     } = e,
-                    ef = (0, u.useLocation)(),
-                    e_ = C.default.useExperiment({
+                    ep = (0, u.useLocation)(),
+                    ey = S.default.useExperiment({
                         location: "auth web"
                     }),
-                    ec = e_.userAppsTreatment === C.UserAppsTreatment.ALLOWED;
-                !ec && (eo = !1);
-                let {
-                    requestedScopes: eg,
-                    accountScopes: em
-                } = d.useMemo(() => {
-                    let e = (0, b.filterScopes)(J),
-                        t = M.OrderedAccountScopes.filter(t => e.includes(t));
-                    return {
-                        requestedScopes: e,
-                        accountScopes: t
-                    }
-                }, [J]), [eh, ev] = d.useState(null), [eE, ep] = d.useState(1), [ey, eT] = d.useState(null), [eC, eI] = d.useState(0), [eS, eA] = d.useState(!1), eD = null == eh ? void 0 : eh.guilds, [eN, eO] = d.useState(null != ee ? ee : null), [eP, eb] = d.useState(null != et ? et : null), [eV, eR] = d.useState(O.default.NONE), ek = d.useMemo(() => (null == eh ? void 0 : eh.user) != null ? new D.default(eh.user) : null, [null == eh ? void 0 : eh.user]), eM = d.useMemo(() => null == eD ? void 0 : eD.find(e => e.id === eN), [eD, eN]), ew = (0, c.useStateFromStores)([p.default], () => p.default.getCurrentEmbeddedActivity()), eL = (0, c.useStateFromStoresObject)([E.default, p.default], () => {
-                    let e;
-                    let t = E.default.getIsEnabled();
-                    if (null != ew) {
-                        if (e = p.default.getShelfActivities(ew.guildId).find(e => e.application_id === ew.applicationId), t && void 0 === e) {
-                            var n;
-                            e = null === (n = E.default.getDeveloperShelfItems().find(e => e.id === ew.applicationId)) || void 0 === n ? void 0 : n.embeddedActivityConfig
+                    eT = ey.userAppsTreatment === S.UserAppsTreatment.ALLOWED,
+                    [eC, eI] = a.useState(null),
+                    [eS, eA] = a.useState(null),
+                    [eD, eN] = a.useState(null),
+                    [eO, eP] = a.useState(!1),
+                    eb = null == eC ? void 0 : eC.guilds,
+                    [eV, eR] = a.useState(null != eo ? eo : null),
+                    [ek, eM] = a.useState(null != ed ? ed : null),
+                    [ew, eL] = a.useState(R.default.NONE),
+                    eU = a.useMemo(() => (null == eC ? void 0 : eC.user) != null ? new P.default(eC.user) : null, [null == eC ? void 0 : eC.user]),
+                    eG = a.useMemo(() => null == eb ? void 0 : eb.find(e => e.id === eV), [eb, eV]),
+                    [eF, eH] = a.useState(null),
+                    eB = a.useMemo(() => {
+                        var e;
+                        return eT && null == ei && null == eu && (null !== (e = null == er ? void 0 : er.length) && void 0 !== e ? e : 0) === 0 && null == W
+                    }, [ei, eT, null == er ? void 0 : er.length, W, eu]),
+                    ex = (0, A.useGetOrFetchApplication)(eB ? D : null),
+                    eY = a.useMemo(() => {
+                        var e, t;
+                        return null == eF ? null : null == ex ? void 0 : null === (t = ex.integrationTypesConfig) || void 0 === t ? void 0 : null === (e = t[eF]) || void 0 === e ? void 0 : e.oauth2InstallParams
+                    }, [null == ex ? void 0 : ex.integrationTypesConfig, eF]),
+                    {
+                        requestedScopes: ej,
+                        accountScopes: eK
+                    } = a.useMemo(() => {
+                        let e = eB ? null == eY ? void 0 : eY.scopes : er,
+                            t = (0, M.filterScopes)(null != e ? e : []),
+                            n = G.OrderedAccountScopes.filter(e => t.includes(e));
+                        return {
+                            requestedScopes: t,
+                            accountScopes: n
                         }
-                        if (null != e) return {
-                            ...K.DEFAULT_EMBEDDED_ACTIVITY_CONFIG,
-                            ...e
+                    }, [null == eY ? void 0 : eY.scopes, er, eB]),
+                    eW = a.useMemo(() => {
+                        var e;
+                        let t = eB ? c.default.deserialize(null !== (e = null == eY ? void 0 : eY.permissions) && void 0 !== e ? e : 0) : ea;
+                        return null != t ? t : R.default.NONE
+                    }, [null == eY ? void 0 : eY.permissions, ea, eB]),
+                    ez = (0, g.useStateFromStores)([T.default], () => T.default.getCurrentEmbeddedActivity()),
+                    eq = (0, g.useStateFromStoresObject)([y.default, T.default], () => {
+                        let e;
+                        let t = y.default.getIsEnabled();
+                        if (null != ez) {
+                            if (e = T.default.getShelfActivities(ez.guildId).find(e => e.application_id === ez.applicationId), t && void 0 === e) {
+                                var n;
+                                e = null === (n = y.default.getDeveloperShelfItems().find(e => e.id === ez.applicationId)) || void 0 === n ? void 0 : n.embeddedActivityConfig
+                            }
+                            if (null != e) return {
+                                ...Q.DEFAULT_EMBEDDED_ACTIVITY_CONFIG,
+                                ...e
+                            }
                         }
-                    }
-                    return {}
-                }, [ew]), eU = Object.keys(eL).length > 0 ? eL : null, eG = d.useCallback(async e => {
-                    if (null != eu) {
-                        eu(e);
-                        return
-                    }
-                    if (!e && !ei) {
-                        null != ed && (ed({
-                            application: null == eh ? void 0 : eh.application,
-                            guild: eM
-                        }), null == el || el());
-                        return
-                    }
-                    try {
-                        eA(!0);
-                        let t = await (0, V.authorize)({
-                            authorize: e,
-                            clientId: h,
-                            scopes: eg,
-                            responseType: T,
-                            redirectUri: I,
-                            codeChallenge: S,
-                            codeChallengeMethod: B,
-                            state: X,
-                            permissions: _.default.remove(null != $ ? $ : O.default.NONE, eV),
-                            guildId: null == eN || eo ? void 0 : eN,
-                            channelId: null != eP ? eP : void 0,
-                            userInstall: eo
-                        });
-                        if (null != ed) ed({
-                            application: null == eh ? void 0 : eh.application,
-                            location: t.location,
-                            guild: eM
-                        }), null == el || el();
-                        else if (null != t.location) {
-                            let {
-                                host: e,
-                                path: n
-                            } = f.parse(t.location);
-                            P.default.isDiscordHostname(e) && n === j.Routes.OAUTH2_AUTHORIZED ? (0, A.transitionTo)(j.Routes.OAUTH2_AUTHORIZED, {
-                                state: {
-                                    application: null == eh ? void 0 : eh.application,
-                                    guild: eM
-                                }
-                            }) : window.location = t.location
-                        } else eA(!1)
-                    } catch (t) {
-                        let e = t.body;
-                        (null == e ? void 0 : e.message) != null && "" !== e.message ? eT(Error(e.message)) : eT(e), ep(1), eI(2), eA(!1)
-                    }
-                }, [eu, ei, ed, null == eh ? void 0 : eh.application, eM, el, h, eg, T, I, S, B, X, $, eV, eN, eo, eP]), eF = d.useRef(!1), eH = d.useCallback(async () => {
-                    if (0 === eC) {
-                        if (eI(1), !N.default.isAuthenticated()) {
-                            (0, V.logoutWithRedirect)(ef);
+                        return {}
+                    }, [ez]),
+                    eX = Object.keys(eq).length > 0 ? eq : null,
+                    eQ = a.useCallback(async e => {
+                        if (null != ev) {
+                            ev(e);
                             return
                         }
-                        if (!eF.current) {
-                            eF.current = !0;
+                        if (!e && !e_) {
+                            null != eh && (eh({
+                                application: null == eC ? void 0 : eC.application,
+                                guild: eG
+                            }), null == eE || eE());
+                            return
+                        }
+                        if (null == eF) {
+                            eN(Error("No integration type was selected."));
+                            return
+                        }
+                        try {
+                            eP(!0);
+                            let t = await (0, w.authorize)({
+                                authorize: e,
+                                clientId: D,
+                                scopes: ej,
+                                responseType: N,
+                                redirectUri: W,
+                                codeChallenge: ee,
+                                codeChallengeMethod: et,
+                                state: en,
+                                integrationType: eF,
+                                permissions: c.default.remove(eW, ew),
+                                guildId: eF === _.ApplicationIntegrationType.GUILD_INSTALL && null != eV ? eV : void 0,
+                                channelId: eF === _.ApplicationIntegrationType.GUILD_INSTALL && null != ek ? ek : void 0
+                            });
+                            if (null != eh) eh({
+                                application: null == eC ? void 0 : eC.application,
+                                location: t.location,
+                                guild: eG
+                            }), null == eE || eE();
+                            else if (null != t.location) {
+                                let {
+                                    host: e,
+                                    path: n
+                                } = f.parse(t.location);
+                                k.default.isDiscordHostname(e) && n === X.Routes.OAUTH2_AUTHORIZED ? (0, O.transitionTo)(X.Routes.OAUTH2_AUTHORIZED, {
+                                    state: {
+                                        application: null == eC ? void 0 : eC.application,
+                                        guild: eG
+                                    }
+                                }) : window.location = t.location
+                            } else eP(!1)
+                        } catch (t) {
+                            let e = t.body;
+                            (null == e ? void 0 : e.message) != null && "" !== e.message ? eN(Error(e.message)) : eN(e), eA(1), eP(!1)
+                        }
+                    }, [ev, e_, eh, null == eC ? void 0 : eC.application, eG, eE, D, ej, N, W, ee, et, en, eW, ew, eV, eF, ek]),
+                    eZ = a.useRef(!1),
+                    eJ = a.useCallback(async () => {
+                        if (!b.default.isAuthenticated()) {
+                            (0, w.logoutWithRedirect)(ep);
+                            return
+                        }
+                        if (!eZ.current) {
+                            eZ.current = !0;
                             try {
-                                let e = null != Z ? Z : await (0, V.fetchAuthorization)({
-                                    clientId: h,
-                                    scopes: eg,
-                                    responseType: T,
-                                    redirectUri: I,
-                                    codeChallenge: S,
-                                    codeChallengeMethod: B,
-                                    state: X,
-                                    userInstall: ec && eo
+                                let e = null != ei ? ei : await (0, w.fetchAuthorization)({
+                                    clientId: D,
+                                    scopes: ej,
+                                    responseType: N,
+                                    redirectUri: W,
+                                    codeChallenge: ee,
+                                    codeChallengeMethod: et,
+                                    state: en,
+                                    userInstall: eF === _.ApplicationIntegrationType.USER_INSTALL
                                 });
-                                ev((0, R.convertOAuth2Authorization)(e)), Q === w.OAuth2Prompts.NONE && e.authorized ? eG(!0) : eI(2), (0, y.trackWithMetadata)(j.AnalyticEvents.OAUTH2_AUTHORIZE_VIEWED, {
+                                eI((0, L.convertOAuth2Authorization)(e)), es === F.OAuth2Prompts.NONE && e.authorized && eQ(!0), (0, C.trackWithMetadata)(X.AnalyticEvents.OAUTH2_AUTHORIZE_VIEWED, {
                                     application_id: e.application.id
                                 })
                             } catch (n) {
@@ -42905,183 +43110,225 @@
                                     body: t
                                 } = n;
                                 if (401 === e) {
-                                    (0, V.logoutWithRedirect)(ef);
+                                    (0, w.logoutWithRedirect)(ep);
                                     return
                                 }
-                                eT(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0]))), eI(2)
+                                eN(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
                             } finally {
-                                eF.current = !1
+                                eZ.current = !1
                             }
                         }
-                    }
-                }, [Z, h, S, B, eC, ef, Q, I, T, eg, eG, X, eo, ec]), eB = d.useCallback((e, t) => {
-                    eR(n => e ? _.default.remove(n, t) : _.default.add(n, t))
-                }, []);
-                if (d.useEffect(() => {
-                        let e = eg.filter(e => !M.ValidScopes.includes(e));
-                        0 === eg.length ? (eT(Error("No scopes were provided.")), eI(2)) : e.length > 0 ? (eT(Error("Invalid scope: ".concat(e[0]))), eI(2)) : (0, k.containsDisallowedPermission)(null != $ ? $ : O.default.NONE) ? (eT(Error("Invalid permission(s) provided.")), eI(2)) : eH()
-                    }, [eH, eg, $]), ey instanceof Error) return {
-                    body: (0, o.jsx)(x.OAuth2Error, {
-                        message: ey.message
+                    }, [ep, ei, D, ej, N, W, ee, et, en, eF, es, eQ]),
+                    e$ = a.useMemo(() => {
+                        var e;
+                        if (null == ex || !eB) return [];
+                        let t = Object.entries(null !== (e = ex.integrationTypesConfig) && void 0 !== e ? e : {}).filter(e => {
+                            let [t, n] = e;
+                            return null != n.oauth2InstallParams
+                        }).map(e => {
+                            let [t, n] = e;
+                            return Number(t)
+                        });
+                        return t
+                    }, [ex, eB]);
+                if (a.useEffect(() => {
+                        if (null == eS && (!eB || null != ex) && V.default.hasLoadedExperiments) {
+                            if (null != ei) {
+                                var e;
+                                eH(null !== (e = ei.integration_type) && void 0 !== e ? e : _.ApplicationIntegrationType.GUILD_INSTALL), eA(1)
+                            } else e$.length > 1 ? eA(0) : (1 === e$.length ? eH(e$[0]) : eT && null != eu ? eH(eu) : eH(_.ApplicationIntegrationType.GUILD_INSTALL), eA(1))
+                        }
+                    }, [ei, e$, ex, eT, eB, eu, eS]), a.useEffect(() => {
+                        if (null == eF || null != eC || null != eD) return;
+                        eF === _.ApplicationIntegrationType.USER_INSTALL && (eR(null), eM(null));
+                        let e = ej.filter(e => !G.ValidScopes.includes(e));
+                        0 === ej.length ? eN(Error("No scopes were provided.")) : e.length > 0 ? eN(Error("Invalid scope: ".concat(e[0]))) : (0, U.containsDisallowedPermission)(null != eW ? eW : R.default.NONE) ? eN(Error("Invalid permission(s) provided.")) : eJ()
+                    }, [eJ, ej, eW, eF, eC, eD]), eD instanceof Error) return {
+                    body: (0, r.jsx)(z.OAuth2Error, {
+                        message: eD.message
                     })
                 };
-                if (2 !== eC || null == eh || null == ek) return {
-                    body: (0, o.jsx)(v.Spinner, {})
-                };
-                let ex = !1;
-                switch (eE) {
+                let e1 = !1,
+                    e0 = !0,
+                    e3 = !0,
+                    e2 = !0;
+                switch (eS) {
+                    case null:
+                        return {
+                            body: (0, r.jsx)(E.Spinner, {})
+                        };
+                    case 0:
+                        if (null == ex) return {
+                            body: (0, r.jsx)(E.Spinner, {})
+                        };
+                        d = (0, r.jsx)(K.default, {
+                            inApp: em,
+                            application: ex,
+                            onSelect: e => {
+                                eH(e), eI(null), eA(1)
+                            }
+                        }), e0 = !1, e3 = !1, e2 = em;
+                        break;
                     case 1:
-                        let eY = null == ey || ey instanceof Error ? {} : ey,
-                            ej = null == eD ? void 0 : eD.sort((e, t) => e.name.toLowerCase().localeCompare(t.name.toLowerCase())),
-                            eK = !eo && eg.includes(j.OAuth2Scopes.WEBHOOK_INCOMING),
-                            eW = eK || !eo && (eg.includes(j.OAuth2Scopes.BOT) || eg.includes(j.OAuth2Scopes.APPLICATIONS_COMMANDS));
-                        a = (0, o.jsxs)(o.Fragment, {
-                            children: [(0, o.jsx)(U.default, {
-                                application: eh.application,
-                                accountScopes: em,
-                                errors: eY,
-                                isTrustedName: er
-                            }), eW ? (0, o.jsx)(F.default, {
-                                error: (null !== (s = null !== (n = eY[j.OAuth2Scopes.BOT]) && void 0 !== n ? n : eY[j.OAuth2Scopes.APPLICATIONS_COMMANDS]) && void 0 !== s ? s : [])[0],
-                                selectedGuildId: eN,
-                                onGuildChange: eO,
-                                guilds: null != ej ? ej : [],
-                                disabled: "" !== eN && !0 === en
-                            }) : null, eK ? (0, o.jsx)(Y.default, {
-                                error: (null !== (i = eY[j.OAuth2Scopes.WEBHOOK_INCOMING]) && void 0 !== i ? i : [])[0],
-                                selectedChannelId: eP,
-                                selectedGuildId: eN,
-                                onChannelChange: eb
+                        if (null == eC || null == eU) return {
+                            body: (0, r.jsx)(E.Spinner, {})
+                        };
+                        let e4 = null == eD || eD instanceof Error ? {} : eD,
+                            e6 = null == eb ? void 0 : eb.sort((e, t) => e.name.toLowerCase().localeCompare(t.name.toLowerCase())),
+                            e9 = eF === _.ApplicationIntegrationType.GUILD_INSTALL && ej.includes(X.OAuth2Scopes.WEBHOOK_INCOMING),
+                            e8 = e9 || eF === _.ApplicationIntegrationType.GUILD_INSTALL && (ej.includes(X.OAuth2Scopes.BOT) || ej.includes(X.OAuth2Scopes.APPLICATIONS_COMMANDS));
+                        d = (0, r.jsxs)(r.Fragment, {
+                            children: [(0, r.jsx)(B.default, {
+                                application: eC.application,
+                                accountScopes: eK,
+                                errors: e4,
+                                isTrustedName: ec
+                            }), e8 ? (0, r.jsx)(Y.default, {
+                                error: (null !== (n = null !== (t = e4[X.OAuth2Scopes.BOT]) && void 0 !== t ? t : e4[X.OAuth2Scopes.APPLICATIONS_COMMANDS]) && void 0 !== n ? n : [])[0],
+                                selectedGuildId: eV,
+                                onGuildChange: eR,
+                                guilds: null != e6 ? e6 : [],
+                                disabled: "" !== eV && null != eV && !0 === el
+                            }) : null, e9 ? (0, r.jsx)(q.default, {
+                                error: (null !== (s = e4[X.OAuth2Scopes.WEBHOOK_INCOMING]) && void 0 !== s ? s : [])[0],
+                                selectedChannelId: ek,
+                                selectedGuildId: eV,
+                                onChannelChange: eM
                             }) : null]
-                        }), eg.includes(j.OAuth2Scopes.BOT) && !_.default.equals($, O.default.NONE) && (m = 2), ex = eW && null == eM || eK && null == eP;
+                        }), ej.includes(X.OAuth2Scopes.BOT) && !c.default.equals(eW, R.default.NONE) && (h = 2), e$.length > 1 && (l = 0), e1 = e8 && null == eG || e9 && null == ek;
                         break;
                     case 2:
-                        a = (0, o.jsx)(G.default, {
-                            application: eh.application,
-                            permissions: null != $ ? $ : O.default.NONE,
-                            deniedPermissions: eV,
-                            onPermissionsChange: eB,
-                            guild: eM
+                        if (null == eC || null == eU) return {
+                            body: (0, r.jsx)(E.Spinner, {})
+                        };
+                        d = (0, r.jsx)(x.default, {
+                            application: eC.application,
+                            permissions: null != eW ? eW : R.default.NONE,
+                            deniedPermissions: ew,
+                            onPermissionsChange: (e, t) => {
+                                eL(n => e ? c.default.remove(n, t) : c.default.add(n, t))
+                            },
+                            guild: eG
                         }), l = 1
                 }
-                let ez = null === (t = eh.bot) || void 0 === t ? void 0 : t.approximate_guild_count,
-                    eq = (0, o.jsx)(L.default, {
-                        embeddedActivityConfig: eU,
-                        application: eh.application,
-                        scopes: eg,
-                        redirectUri: null !== (r = eh.redirect_uri) && void 0 !== r ? r : null,
-                        approximateGuildCount: void 0 !== ez ? ez : null,
-                        isEmbeddedFlow: ea
-                    }),
-                    eX = (0, o.jsx)(H.default, {
-                        id: q,
-                        user: ek,
-                        application: eh.application,
-                        bot: eh.bot,
-                        accountScopes: em,
-                        showLogout: es || !1,
-                        location: ef,
-                        isTrustedName: er
-                    }),
-                    eQ = (0, o.jsxs)("div", {
-                        className: z.footer,
-                        children: [null != l ? (0, o.jsx)(g.Button, {
-                            look: g.Button.Looks.LINK,
-                            color: g.Button.Colors.PRIMARY,
-                            onClick: () => ep(l),
-                            children: W.default.Messages.BACK
-                        }) : (0, o.jsx)(g.Button, {
-                            look: g.Button.Looks.LINK,
-                            color: g.Button.Colors.PRIMARY,
-                            onClick: () => eG(!1),
-                            children: W.default.Messages.CANCEL
-                        }), null != m ? (0, o.jsx)(g.Button, {
-                            onClick: () => ep(m),
-                            disabled: ex,
-                            children: W.default.Messages.CONTINUE
-                        }) : (0, o.jsx)(g.Button, {
-                            onClick: () => eG(!0),
-                            disabled: ex,
-                            submitting: eS,
-                            children: W.default.Messages.AUTHORIZE
-                        })]
-                    });
-                return {
-                    header: eX,
-                    body: a,
-                    footer: eQ,
-                    nextStep: m,
-                    appDetails: eq,
-                    sendAuthorize: eG
+                if (e0 && null != eC) {
+                    let e = null === (i = eC.bot) || void 0 === i ? void 0 : i.approximate_guild_count;
+                    v = (0, r.jsx)(H.default, {
+                        embeddedActivityConfig: eX,
+                        application: eC.application,
+                        scopes: ej,
+                        redirectUri: null !== (o = eC.redirect_uri) && void 0 !== o ? o : null,
+                        approximateGuildCount: void 0 !== e ? e : null,
+                        isEmbeddedFlow: eg
+                    })
+                }
+                return e3 && null != eC && null != eU && (p = (0, r.jsx)(j.default, {
+                    id: $,
+                    user: eU,
+                    application: eC.application,
+                    bot: eC.bot,
+                    accountScopes: eK,
+                    showLogout: ef || !1,
+                    location: ep,
+                    isTrustedName: ec
+                })), e2 && (I = (0, r.jsxs)("div", {
+                    className: J.footer,
+                    children: [null != l ? (0, r.jsx)(m.Button, {
+                        look: m.Button.Looks.LINK,
+                        color: m.Button.Colors.PRIMARY,
+                        onClick: () => eA(l),
+                        children: Z.default.Messages.BACK
+                    }) : (0, r.jsx)(m.Button, {
+                        look: m.Button.Looks.LINK,
+                        color: m.Button.Colors.PRIMARY,
+                        onClick: () => eQ(!1),
+                        children: Z.default.Messages.CANCEL
+                    }), null != h && 0 !== eS ? (0, r.jsx)(m.Button, {
+                        onClick: () => eA(h),
+                        disabled: e1,
+                        children: Z.default.Messages.CONTINUE
+                    }) : 0 !== eS ? (0, r.jsx)(m.Button, {
+                        onClick: () => eQ(!0),
+                        disabled: e1,
+                        submitting: eO,
+                        children: Z.default.Messages.AUTHORIZE
+                    }) : null]
+                })), {
+                    header: p,
+                    body: d,
+                    footer: I,
+                    nextStep: h,
+                    appDetails: v,
+                    sendAuthorize: eQ
                 }
             }
 
-            function $(e, t) {
+            function ei(e, t) {
                 if (null == t.location || null != e && e(t)) return;
                 let {
                     host: n,
                     path: s,
                     query: i
-                } = f.parse(t.location, !0), r = P.default.isDiscordHostname(n) || window.location.host === n;
-                if (r && s === j.Routes.OAUTH2_AUTHORIZED)(0, m.openModal)(e => (0, o.jsx)(B.OAuth2Modal, {
+                } = f.parse(t.location, !0), a = k.default.isDiscordHostname(n) || window.location.host === n;
+                if (a && s === X.Routes.OAUTH2_AUTHORIZED)(0, h.openModal)(e => (0, r.jsx)(W.OAuth2Modal, {
                     ...e,
-                    "aria-labelledby": q,
-                    children: (0, o.jsx)(x.OAuth2AuthorizedSuccess, {
+                    "aria-labelledby": $,
+                    children: (0, r.jsx)(z.OAuth2AuthorizedSuccess, {
                         guild: t.guild,
                         application: t.application,
                         onClose: e.onClose
                     })
                 }));
-                else if (r && (null == s ? void 0 : s.startsWith(j.Routes.OAUTH2_ERROR)))(0, m.openModal)(e => {
-                    let t = i.error_description || i.error || W.default.Messages.OAUTH2_UNKNOWN_ERROR;
-                    return Array.isArray(t) && (t = t[0]), (0, o.jsxs)(B.OAuth2Modal, {
+                else if (a && (null == s ? void 0 : s.startsWith(X.Routes.OAUTH2_ERROR)))(0, h.openModal)(e => {
+                    let t = i.error_description || i.error || Z.default.Messages.OAUTH2_UNKNOWN_ERROR;
+                    return Array.isArray(t) && (t = t[0]), (0, r.jsxs)(W.OAuth2Modal, {
                         ...e,
-                        "aria-labelledby": q,
-                        children: [(0, o.jsx)(x.OAuth2Error, {
+                        "aria-labelledby": $,
+                        children: [(0, r.jsx)(z.OAuth2Error, {
                             message: t,
                             onClose: e.onClose
                         }), ";"]
                     })
                 });
                 else {
-                    var a;
-                    null === (a = window.open(t.location, "_blank")) || void 0 === a || a.focus()
+                    var o;
+                    null === (o = window.open(t.location, "_blank")) || void 0 === o || o.focus()
                 }
             }
 
-            function ee(e, t) {
-                if ((0, S.isMidjourneyOnboardingFlow)("create-guild-and-oauth2-modal")) {
-                    I.default.openCreateGuildModal({
-                        onSuccess: n => et({
+            function er(e, t) {
+                if ((0, N.isMidjourneyOnboardingFlow)("create-guild-and-oauth2-modal")) {
+                    D.default.openCreateGuildModal({
+                        onSuccess: n => ea({
                             ...e,
                             guildId: n
                         }, t)
                     });
                     return
                 }
-                et(e, t)
+                ea(e, t)
             }
 
-            function et(e, t) {
-                (0, m.openModal)(t => (0, o.jsx)(Q, {
+            function ea(e, t) {
+                (0, h.openModal)(t => (0, r.jsx)(et, {
                     ...t,
                     ...e,
                     cancelCompletesFlow: !1,
-                    callback: $.bind(null, e.callback)
+                    callback: ei.bind(null, e.callback)
                 }), {
                     onCloseCallback: t
                 })
             }
 
-            function en(e) {
+            function eo(e) {
                 let {
                     hostname: t = "",
                     host: n,
                     path: s,
                     query: i
                 } = f.parse(e);
-                return null != s && null != i && (P.default.isDiscordHostname(t) || n === window.location.host) && (s.startsWith("/api".concat(j.Endpoints.OAUTH2_AUTHORIZE)) || s.startsWith(j.Routes.OAUTH2_AUTHORIZE)) ? (0, b.parseOAuth2AuthorizeProps)(i) : null
-            }(r = s || (s = {}))[r.NOT_LOADED = 0] = "NOT_LOADED", r[r.LOADING = 1] = "LOADING", r[r.LOADED = 2] = "LOADED", (a = i || (i = {}))[a.INSTALL_TYPE = 0] = "INSTALL_TYPE", a[a.AUTHORIZE_SCOPES = 1] = "AUTHORIZE_SCOPES", a[a.AUTHORIZE_BOT_PERMISSIONS = 2] = "AUTHORIZE_BOT_PERMISSIONS"
+                return null != s && null != i && (k.default.isDiscordHostname(t) || n === window.location.host) && (s.startsWith("/api".concat(X.Endpoints.OAUTH2_AUTHORIZE)) || s.startsWith(X.Routes.OAUTH2_AUTHORIZE)) ? (0, M.parseOAuth2AuthorizeProps)(i) : null
+            }(i = s || (s = {}))[i.SELECT_INSTALL_TYPE = 0] = "SELECT_INSTALL_TYPE", i[i.AUTHORIZE_SCOPES = 1] = "AUTHORIZE_SCOPES", i[i.AUTHORIZE_BOT_PERMISSIONS = 2] = "AUTHORIZE_BOT_PERMISSIONS"
         },
         613070: function(e, t, n) {
             "use strict";
@@ -43257,56 +43504,56 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return _
                 }
             });
-            var s = n("37983");
-            n("884691");
-            var i = n("316693"),
-                r = n("605451"),
-                a = n("774811"),
-                o = n("577776"),
-                d = n("49111"),
-                u = n("782340"),
-                l = n("590732");
+            var s = n("37983"),
+                i = n("884691"),
+                r = n("316693"),
+                a = n("605451"),
+                o = n("774811"),
+                d = n("577776"),
+                u = n("49111"),
+                l = n("782340"),
+                f = n("590732");
 
-            function f(e) {
+            function _(e) {
                 let {
                     error: t,
                     selectedGuildId: n,
-                    onGuildChange: f,
-                    guilds: _,
-                    disabled: c = !1
-                } = e, g = _.filter(e => i.default.has(e.permissions, d.Permissions.MANAGE_GUILD)).map(e => ({
+                    onGuildChange: _,
+                    guilds: c,
+                    disabled: g = !1
+                } = e, m = i.useCallback(e => {
+                    _(e)
+                }, [_]), h = i.useMemo(() => c.filter(e => r.default.has(e.permissions, u.Permissions.MANAGE_GUILD)).map(e => ({
                     value: e.id,
                     label: e.name
-                }));
+                })), [c]);
                 return (0, s.jsxs)("div", {
-                    className: l.selectorGroup,
-                    children: [(0, s.jsx)(r.Heading, {
+                    className: f.selectorGroup,
+                    children: [(0, s.jsx)(a.Heading, {
                         variant: "heading-deprecated-12/semibold",
-                        className: l.sectionLabel,
-                        children: u.default.Messages.OAUTH2_ADD_TO_GUILD
-                    }), null != t && "" !== t ? (0, s.jsx)(o.Text, {
+                        className: f.sectionLabel,
+                        children: l.default.Messages.OAUTH2_ADD_TO_GUILD
+                    }), null != t && "" !== t ? (0, s.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "text-danger",
                         children: t
-                    }) : null, (0, s.jsx)(a.SearchableSelect, {
-                        wrapperClassName: l.wrapper,
-                        className: l.select,
+                    }) : null, (0, s.jsx)(o.SearchableSelect, {
+                        wrapperClassName: f.wrapper,
+                        className: f.select,
                         maxVisibleItems: 5,
                         value: n,
-                        placeholder: u.default.Messages.OAUTH2_ADD_TO_GUILD_PLACEHOLDER,
-                        options: g,
-                        onChange: e => {
-                            f(e)
-                        },
-                        isDisabled: c
-                    }), (0, s.jsx)(o.Text, {
+                        placeholder: l.default.Messages.OAUTH2_ADD_TO_GUILD_PLACEHOLDER,
+                        options: h,
+                        onChange: m,
+                        isDisabled: g
+                    }), (0, s.jsx)(d.Text, {
                         variant: "text-xs/medium",
                         color: "header-secondary",
-                        className: l.label,
-                        children: u.default.Messages.OAUTH2_ADD_TO_GUILD_DESCRIPTION.format()
+                        className: f.label,
+                        children: l.default.Messages.OAUTH2_ADD_TO_GUILD_DESCRIPTION.format()
                     })]
                 })
             }
@@ -43414,6 +43661,98 @@
                             })]
                         })
                     }) : null]
+                })
+            }
+        },
+        315417: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return v
+                }
+            });
+            var s = n("37983"),
+                i = n("884691"),
+                r = n("414456"),
+                a = n.n(r),
+                o = n("891189"),
+                d = n("913365"),
+                u = n("31745"),
+                l = n("542238"),
+                f = n("77078"),
+                _ = n("772280"),
+                c = n("315102"),
+                g = n("52904"),
+                m = n("782340"),
+                h = n("146482");
+
+            function v(e) {
+                let {
+                    inApp: t,
+                    application: n,
+                    onSelect: r
+                } = e, v = i.useMemo(() => c.default.getApplicationIconURL({
+                    id: n.id,
+                    icon: n.icon
+                }), [n.icon, n.id]), E = i.useMemo(() => [{
+                    type: o.ApplicationIntegrationType.USER_INSTALL,
+                    icon: (0, u.CirclePlusIcon),
+                    title: m.default.Messages.ADD_TO_USER,
+                    subtitle: m.default.Messages.ADD_TO_USER_SUBTITLE
+                }, {
+                    type: o.ApplicationIntegrationType.GUILD_INSTALL,
+                    icon: (0, l.ServerIcon),
+                    title: m.default.Messages.ADD_TO_GUILD,
+                    subtitle: m.default.Messages.ADD_TO_GUILD_SUBTITLE
+                }].filter(e => {
+                    var t, s;
+                    return (null === (s = n.integrationTypesConfig) || void 0 === s ? void 0 : null === (t = s[e.type]) || void 0 === t ? void 0 : t.oauth2InstallParams) != null
+                }), [n.integrationTypesConfig]);
+                return (0, s.jsxs)("div", {
+                    className: h.container,
+                    children: [(0, s.jsxs)("div", {
+                        className: h.header,
+                        children: [(0, s.jsx)(d.Avatar, {
+                            src: v,
+                            size: g.AvatarSizes.SIZE_80,
+                            "aria-label": n.name
+                        }), (0, s.jsx)(f.Heading, {
+                            variant: "heading-xl/bold",
+                            color: "header-primary",
+                            children: n.name
+                        })]
+                    }), (0, s.jsx)("div", {
+                        children: E.map(e => (0, s.jsxs)(f.Clickable, {
+                            className: a(h.row, {
+                                [h.inApp]: t
+                            }),
+                            onClick: () => r(e.type),
+                            children: [(0, s.jsx)(e.icon, {
+                                className: h.leftIcon
+                            }), (0, s.jsxs)("div", {
+                                children: [(0, s.jsx)(f.Text, {
+                                    variant: "text-md/medium",
+                                    color: "interactive-active",
+                                    children: e.title
+                                }), (0, s.jsx)(f.Text, {
+                                    variant: "text-xs/medium",
+                                    color: "text-muted",
+                                    children: e.subtitle
+                                })]
+                            }), (0, s.jsx)(_.default, {
+                                width: 12,
+                                height: 12,
+                                className: h.rightIcon
+                            })]
+                        }, e.type))
+                    }), (0, s.jsx)(f.Text, {
+                        variant: "text-xs/semibold",
+                        color: "text-muted",
+                        className: h.learnMore,
+                        children: m.default.Messages.USER_APPS_LEARN_MORE.format({
+                            helpUrl: "https://support.discord.com/hc/en-us/articles/360045093012-Server-Integrations-Page"
+                        })
+                    })]
                 })
             }
         },
@@ -43685,53 +44024,51 @@
                 l = n("590732");
 
             function f(e) {
-                var t;
                 let {
-                    selectedGuildId: n,
-                    selectedChannelId: f,
-                    onChannelChange: _,
-                    error: c
-                } = e, [g, m] = i.useState(null), h = i.useRef(!1);
-                return (i.useEffect(() => {
+                    selectedGuildId: t,
+                    selectedChannelId: n,
+                    onChannelChange: f,
+                    error: _
+                } = e, [c, g] = i.useState(null), m = i.useRef(!1);
+                i.useEffect(() => {
                     async function e(e) {
-                        let t = await (0, d.fetchChannels)(e);
-                        n === e && (m({
+                        let n = await (0, d.fetchChannels)(e);
+                        t === e && (g({
                             guildId: e,
-                            channels: t
-                        }), h.current = !0)
+                            channels: n
+                        }), m.current = !0)
                     }
-                    m(null), null == n ? _(null) : e(n)
-                }, [_, n]), i.useEffect(() => {
-                    if (!!h.current) {
-                        if (null == g) null != f && _(null);
-                        else if (!g.channels.some(e => e.id === f)) {
-                            var e, t;
-                            _(null !== (t = null === (e = g.channels[0]) || void 0 === e ? void 0 : e.id) && void 0 !== t ? t : null)
-                        }
-                    }
-                }, [g, _, f, n]), null == n) ? null : (0, s.jsxs)("div", {
+                    g(null), null == t ? f(null) : e(t)
+                }, [f, t]), i.useEffect(() => {
+                    if (!!m.current) null == c ? null != n && f(null) : !c.channels.some(e => e.id === n) && f(null)
+                }, [c, f, n, t]);
+                let h = i.useMemo(() => {
+                    var e;
+                    return (null !== (e = null == c ? void 0 : c.channels) && void 0 !== e ? e : []).map(e => ({
+                        value: e.id,
+                        label: e.name
+                    }))
+                }, [null == c ? void 0 : c.channels]);
+                return null == t ? null : (0, s.jsxs)("div", {
                     className: l.selectorGroup,
                     children: [(0, s.jsx)(r.Heading, {
                         variant: "heading-deprecated-12/semibold",
                         className: l.sectionLabel,
                         children: u.default.Messages.OAUTH2_ADD_WEBHOOK_INCOMING
-                    }), null != c && "" !== c ? (0, s.jsx)(o.Text, {
+                    }), null != _ && "" !== _ ? (0, s.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-danger",
-                        children: c
+                        children: _
                     }) : null, (0, s.jsx)(a.SearchableSelect, {
                         wrapperClassName: l.wrapper,
                         className: l.select,
                         maxVisibleItems: 5,
-                        onChange: _,
+                        onChange: f,
                         placeholder: u.default.Messages.SCOPE_WEBHOOK_INCOMING_CHANNEL_PLACEHOLDER,
-                        value: (null == g ? void 0 : g.guildId) === n ? f : null,
-                        options: (null !== (t = null == g ? void 0 : g.channels) && void 0 !== t ? t : []).map(e => ({
-                            value: e.id,
-                            label: e.name
-                        })),
-                        isDisabled: null == g
-                    }, null == g ? void 0 : g.guildId), (0, s.jsx)(o.Text, {
+                        value: (null == c ? void 0 : c.guildId) === t ? n : null,
+                        options: h,
+                        isDisabled: null == c
+                    }, null == c ? void 0 : c.guildId), (0, s.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "header-secondary",
                         className: l.label,
@@ -60214,6 +60551,50 @@
                 }()
             }
         },
+        383465: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                CirclePlusIcon: function() {
+                    return a
+                }
+            });
+            var s = n("37983");
+            n("884691");
+            var i = n("669491"),
+                r = n("82169");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    secondaryColor: a = "transparent",
+                    secondaryColorClass: o = "",
+                    color: d = i.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: u = "",
+                    ...l
+                } = e;
+                return (0, s.jsxs)("svg", {
+                    ...(0, r.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, s.jsx)("circle", {
+                        cx: "12",
+                        cy: "12",
+                        r: "10",
+                        fill: "string" == typeof a ? a : a.css,
+                        className: o
+                    }), (0, s.jsx)("path", {
+                        fill: "string" == typeof d ? d : d.css,
+                        fillRule: "evenodd",
+                        d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z",
+                        clipRule: "evenodd",
+                        className: u
+                    })]
+                })
+            }
+        },
         435703: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -60397,6 +60778,44 @@
                         fillRule: "evenodd",
                         d: "M12 21c5.52 0 10-1.86 10-6 0-5.59-2.8-10.07-4.26-11.67a1 1 0 1 0-1.48 1.34 14.8 14.8 0 0 1 2.35 3.86A10.23 10.23 0 0 0 12 6C9.47 6 7.15 7.02 5.4 8.53a14.8 14.8 0 0 1 2.34-3.86 1 1 0 0 0-1.48-1.34A18.65 18.65 0 0 0 2 15c0 4.14 4.48 6 10 6Zm0-12c3.87 0 7 2 7 4.2S15.87 17 12 17s-7-1.6-7-3.8C5 11 8.13 9 12 9Z",
                         clipRule: "evenodd",
+                        className: o
+                    })]
+                })
+            }
+        },
+        980763: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ServerIcon: function() {
+                    return a
+                }
+            });
+            var s = n("37983");
+            n("884691");
+            var i = n("669491"),
+                r = n("82169");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = i.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...d
+                } = e;
+                return (0, s.jsxs)("svg", {
+                    ...(0, r.default)(d),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, s.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M10.55 4.4c.13-.24.1-.54-.12-.71L8.6 2.24a1 1 0 0 0-1.24 0l-4 3.15a1 1 0 0 0-.38.79v4.03c0 .43.5.66.82.39l2.28-1.9a3 3 0 0 1 3.84 0c.03.02.08 0 .08-.04V6.42a4 4 0 0 1 .55-2.02ZM7.36 10.23a1 1 0 0 1 1.28 0l1.18.99 2.98 2.48 1.84 1.53a1 1 0 0 1-.67 1.77.1.1 0 0 0-.1.09l-.23 3.06a2 2 0 0 1-2 1.85H4.36a2 2 0 0 1-2-1.85l-.24-3.16a1 1 0 0 1-.76-1.76l6-5Z",
+                        className: o
+                    }), (0, s.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M12 10.2c0 .14.07.28.18.38l3.74 3.12a3 3 0 0 1 .03 4.58.55.55 0 0 0-.2.37l-.12 1.65a4 4 0 0 1-.17.9c-.12.38.13.8.52.8H20a2 2 0 0 0 2-2V3.61a1.5 1.5 0 0 0-2-1.41l-6.66 2.33A2 2 0 0 0 12 6.42",
                         className: o
                     })]
                 })
@@ -61904,4 +62323,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67615.eca979e2e25d4dec8ef7.js.map
+//# sourceMappingURL=67615.a687ce35847038aab225.js.map
