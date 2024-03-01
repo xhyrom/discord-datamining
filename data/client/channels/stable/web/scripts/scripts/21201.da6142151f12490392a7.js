@@ -12050,7 +12050,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 TextArea: function() {
-                    return T
+                    return g
                 }
             }), n("424973");
             var i = n("37983"),
@@ -12061,15 +12061,16 @@
                 l = n("718776"),
                 u = n("516826"),
                 c = n("741662"),
-                d = n("324584"),
-                f = n("782340"),
-                E = n("430594"),
-                p = n("182893"),
-                h = n("356410");
-            let _ = (0, o.v4)(),
-                S = (0, o.v4)(),
-                m = (0, o.v4)();
-            class T extends r.Component {
+                d = n("577776"),
+                f = n("324584"),
+                E = n("782340"),
+                p = n("430594"),
+                h = n("182893"),
+                _ = n("356410");
+            let S = (0, o.v4)(),
+                m = (0, o.v4)(),
+                T = (0, o.v4)();
+            class g extends r.Component {
                 getPaddingRight() {
                     let {
                         maxLength: e
@@ -12106,8 +12107,8 @@
                             maxLength: n
                         } = this.props;
                         return (0, i.jsxs)("div", {
-                            className: a(E.maxLength, {
-                                [E.errorOverflow]: this.hasError()
+                            className: a(p.maxLength, {
+                                [p.errorOverflow]: this.hasError()
                             }),
                             "aria-hidden": "true",
                             children: [null !== (e = null == t ? void 0 : t.length) && void 0 !== e ? e : 0, " ", null != n && "/ ".concat(n)]
@@ -12119,8 +12120,8 @@
                     if (this.props.showCharacterCount || !1 === this.props.showRemainingCharacterCount) return null;
                     let e = this.getCharsLeftLength();
                     return null == e ? null : (0, i.jsx)("div", {
-                        className: a(E.maxLength, {
-                            [E.errorOverflow]: e < 0
+                        className: a(p.maxLength, {
+                            [p.errorOverflow]: e < 0
                         }),
                         "aria-hidden": "true",
                         children: e
@@ -12134,18 +12135,20 @@
                         error: e,
                         maxLength: t,
                         minLength: n
-                    } = this.props, i = this.getIsOverflowing() ? f.default.Messages.MAXIMUM_LENGTH_ERROR.format({
+                    } = this.props, i = this.getIsOverflowing() ? E.default.Messages.MAXIMUM_LENGTH_ERROR.format({
                         maxLength: t
-                    }) : null, r = this.getIsUnderflowing() ? f.default.Messages.MINIMUM_LENGTH_ERROR.format({
+                    }) : null, r = this.getIsUnderflowing() ? E.default.Messages.MINIMUM_LENGTH_ERROR.format({
                         minLength: n
                     }) : null;
                     return null != e && e.length < 1 || null === e ? null : void 0 !== e ? e : !1 === this.state.dirty ? null : null != i ? i : r
                 }
                 renderErrorMessage() {
                     let e = this.getErrorMessage();
-                    return null == e ? null : (0, i.jsx)("div", {
-                        id: _,
-                        className: E.errorMessage,
+                    return null == e ? null : (0, i.jsx)(d.Text, {
+                        id: S,
+                        variant: "text-xs/normal",
+                        color: "text-danger",
+                        className: p.errorMessage,
                         children: e
                     })
                 }
@@ -12157,8 +12160,8 @@
                         placeholder: s,
                         autoFocus: o,
                         minLength: u,
-                        maxLength: _,
-                        allowOverflow: T,
+                        maxLength: d,
+                        allowOverflow: S,
                         spellCheck: g,
                         resizeable: I,
                         className: C,
@@ -12169,22 +12172,22 @@
                         required: O,
                         onInvalid: D,
                         inputRef: y
-                    } = this.props, P = N ? d.TextAreaAutosize : "textarea", L = this.hasError(), b = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, M = this.getAriaDescribedBy();
+                    } = this.props, P = N ? f.TextAreaAutosize : "textarea", L = this.hasError(), b = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, M = this.getAriaDescribedBy();
                     return (0, i.jsxs)("div", {
-                        className: a(p.inputWrapper, {
-                            [E.flex]: R
+                        className: a(h.inputWrapper, {
+                            [p.flex]: R
                         }),
                         children: [(0, i.jsxs)("div", {
-                            className: a(E.inputMaxLength, {
-                                [E.flex]: R
+                            className: a(p.inputMaxLength, {
+                                [p.flex]: R
                             }),
                             children: [(0, i.jsx)(l.FocusRing, {
                                 children: (0, i.jsx)(P, {
                                     type: "text",
-                                    className: a(p.inputDefault, E.textArea, h.scrollbarDefault, C, {
-                                        [p.error]: L,
-                                        [p.disabled]: n,
-                                        [E.resizeable]: I
+                                    className: a(h.inputDefault, p.textArea, _.scrollbarDefault, C, {
+                                        [h.error]: L,
+                                        [h.disabled]: n,
+                                        [p.resizeable]: I
                                     }),
                                     "aria-labelledby": b,
                                     "aria-describedby": M,
@@ -12198,7 +12201,7 @@
                                     value: r,
                                     autoFocus: o,
                                     minLength: u,
-                                    maxLength: T ? void 0 : _,
+                                    maxLength: S ? void 0 : d,
                                     spellCheck: g,
                                     required: O,
                                     onChange: this.onChange,
@@ -12210,14 +12213,14 @@
                                     ref: y
                                 })
                             }), null != u && (0, i.jsx)(c.HiddenVisually, {
-                                id: S,
-                                children: f.default.Messages.MINIMUM_LENGTH.format({
+                                id: m,
+                                children: E.default.Messages.MINIMUM_LENGTH.format({
                                     minLength: u
                                 })
-                            }), null != _ && (0, i.jsx)(c.HiddenVisually, {
-                                id: m,
-                                children: f.default.Messages.MAXIMUM_LENGTH.format({
-                                    maxLength: _
+                            }), null != d && (0, i.jsx)(c.HiddenVisually, {
+                                id: T,
+                                children: E.default.Messages.MAXIMUM_LENGTH.format({
+                                    maxLength: d
                                 })
                             }), this.renderCharacterCount(), this.renderMaxLength()]
                         }), this.renderErrorMessage()]
@@ -12232,7 +12235,7 @@
                             minLength: n,
                             error: i
                         } = this.props, r = [], s = null === (e = this.context) || void 0 === e ? void 0 : e.errorId;
-                        return null != s && r.push(s), null != i ? r.push(i) : (null != t && r.push(m), null != n && r.push(S)), r.length > 0 ? r.join(" ") : void 0
+                        return null != s && r.push(s), null != i ? r.push(S) : (null != t && r.push(T), null != n && r.push(m)), r.length > 0 ? r.join(" ") : void 0
                     }, this.onChange = e => {
                         let {
                             onChange: t,
@@ -12263,7 +12266,7 @@
                     }
                 }
             }
-            T.contextType = u.FormContext, T.defaultProps = {
+            g.contextType = u.FormContext, g.defaultProps = {
                 name: "",
                 disabled: !1,
                 placeholder: "",
@@ -22121,7 +22124,7 @@
                         let {
                             enableFastMonetizationOnboardingForGuild: t
                         } = i.CreatorMonetizationRavenOnboardingGuildExperiment.useExperiment({
-                            guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                            guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                             location: "e3bb71_3"
                         }, {
                             autoTrackExposure: !0
@@ -22152,7 +22155,7 @@
                     let {
                         enableFastMonetizationOnboardingForGuild: t
                     } = i.CreatorMonetizationRavenOnboardingGuildExperiment.getCurrentConfig({
-                        guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                        guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                         location: "e3bb71_5"
                     }), {
                         enableFastMonetizationOnboardingForUser: n
@@ -22174,7 +22177,7 @@
                 let {
                     enableWaitlist: t
                 } = i.CreatorMonetizationOnboardingWaitlistExperiment.useExperiment({
-                    guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                    guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "e3bb71_9"
                 }, {
                     autoTrackExposure: !1
@@ -22186,7 +22189,7 @@
                 let {
                     enableWaitlist: t
                 } = i.CreatorMonetizationOnboardingWaitlistExperiment.getCurrentConfig({
-                    guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                    guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "e3bb71_10"
                 });
                 return t
@@ -23783,7 +23786,7 @@
                     return D["".concat(t)]
                 }
                 getGuildExperimentDescriptor(e, t) {
-                    let n = null != t ? t : S.EMPTY_STRING_GUILD_ID,
+                    let n = null != t ? t : S.EMPTY_STRING_SNOWFLAKE_ID,
                         i = b[e];
                     if (M && null != i) return i;
                     let r = "".concat(n, ":").concat(e);
@@ -27054,7 +27057,7 @@
                 let {
                     enableRoleSubscriptionsForGuild: t
                 } = i.GuildRoleSubscriptionsExperiment.useExperiment({
-                    guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                    guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_1"
                 }, {
                     autoTrackExposure: !0
@@ -27072,7 +27075,7 @@
                 let {
                     enableRoleSubscriptionsForGuild: t
                 } = i.GuildRoleSubscriptionsExperiment.getCurrentConfig({
-                    guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                    guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_3"
                 }), {
                     enableRoleSubscriptionsForUser: n
@@ -27086,7 +27089,7 @@
 
             function o(e) {
                 return i.GuildRoleSubscriptionMaxTiersExperiment.useExperiment({
-                    guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                    guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_7"
                 })
             }
@@ -27097,7 +27100,7 @@
                 let {
                     enabled: t
                 } = i.GuildRoleSubscriptionsTierTemplatesExperiment.getCurrentConfig({
-                    guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                    guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_9"
                 }, {
                     autoTrackExposure: !1
@@ -27109,7 +27112,7 @@
                 let {
                     enabled: t
                 } = i.GuildRoleSubscriptionsTierTemplatesExperiment.useExperiment({
-                    guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                    guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_10"
                 }, {
                     autoTrackExposure: !1
@@ -27121,7 +27124,7 @@
                 let {
                     showCreatorPortalLink: t
                 } = i.GuildRoleSubscriptionsTierTemplatesExperiment.useExperiment({
-                    guildId: null != e ? e : r.EMPTY_STRING_GUILD_ID,
+                    guildId: null != e ? e : r.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "504714_11"
                 }, {
                     autoTrackExposure: !1
@@ -28520,19 +28523,29 @@
                 id: "2024-02_navi_bar",
                 label: "Mobile Redesign - Nav Experiment: You Bar",
                 defaultConfig: {
-                    showYouBar: !1
+                    showYouBar: !1,
+                    showMessagesButton: !1
                 },
                 treatments: [{
                     id: 0,
                     label: "Control",
                     config: {
-                        showYouBar: !1
+                        showYouBar: !1,
+                        showMessagesButton: !1
                     }
                 }, {
                     id: 1,
                     label: "You Bar (2c)",
                     config: {
-                        showYouBar: !0
+                        showYouBar: !0,
+                        showMessagesButton: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "You Bar (2c) with messages button",
+                    config: {
+                        showYouBar: !0,
+                        showMessagesButton: !0
                     }
                 }]
             });
@@ -33880,7 +33893,7 @@
                     return this.hasFeature(u.GuildFeatures.COMMUNITY)
                 }
                 hasVerificationGate() {
-                    return this.hasFeature(u.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && this.hasFeature(u.GuildFeatures.COMMUNITY)
+                    return this.hasFeature(u.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && (this.hasFeature(u.GuildFeatures.COMMUNITY) || this.hasFeature(u.GuildFeatures.CLAN))
                 }
                 hasCommunityInfoSubheader() {
                     return this.hasFeature(u.GuildFeatures.COMMUNITY) && this.hasFeature(u.GuildFeatures.DISCOVERABLE)
@@ -35877,6 +35890,9 @@
                 getDMFromUserId(e) {
                     if (null != e) return P[e]
                 }
+                getMutableDMsByUserIds() {
+                    return P
+                }
                 getDMUserIds() {
                     return m.default.keys(P)
                 }
@@ -36415,6 +36431,9 @@
                         } else if (null != i) return null
                     }
                     return null !== (n = null !== (t = this.getGameByExecutable(r)) && void 0 !== t ? t : this.getGameByExecutable(s)) && void 0 !== n ? n : i
+                }
+                getGameById(e) {
+                    return f[e]
                 }
                 shouldReport(e) {
                     let t = null != this.getGameByName(e),
@@ -50076,7 +50095,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "269656"
+                                build_number: "271216"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -50562,7 +50581,7 @@
                     } else s = null != s ? s : {}, n = r;
                     if (null == n) return g;
                     let d = {
-                        userId: T.EMPTY_STRING_USER_ID,
+                        userId: T.EMPTY_STRING_SNOWFLAKE_ID,
                         nick: "",
                         guildId: n.id,
                         guildMemberAvatar: null,
@@ -50575,7 +50594,7 @@
                         communicationDisabledUntil: null
                     };
                     return P({
-                        userId: T.EMPTY_STRING_USER_ID,
+                        userId: T.EMPTY_STRING_SNOWFLAKE_ID,
                         member: d,
                         guild: n,
                         overwrites: s,
@@ -52370,6 +52389,9 @@
                     return e
                 },
                 castUserIdAsReadStateChannelId: function(e) {
+                    return e
+                },
+                castSnowflakeAsUserId: function(e) {
                     return e
                 }
             }
@@ -64122,4 +64144,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.a6bc22386185fc3b0915.js.map
+//# sourceMappingURL=21201.da6142151f12490392a7.js.map

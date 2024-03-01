@@ -210,13 +210,13 @@
                     async updateRsvp(e, t, n, u, l) {
                         let r = (0, o.getExistingRsvp)(e, t);
                         if (null != r) try {
-                            await this.deleteRsvpForGuildEvent(e, t, n), null != r && null != t && (null == l || l())
+                            await this.deleteRsvpForGuildEvent(e, t, n), null == l || l()
                         } catch (e) {
-                            null != r && null != t && (null == l || l(e))
+                            null == l || l(e)
                         } else try {
-                            await this.createRsvpForGuildEvent(e, t, n, u), u === _.GuildScheduledEventUserResponses.INTERESTED && (null == l || l())
+                            await this.createRsvpForGuildEvent(e, t, n, u), null == l || l()
                         } catch (e) {
-                            u === _.GuildScheduledEventUserResponses.INTERESTED && (null == l || l(e))
+                            null == l || l(e)
                         }
                     },
                     async fetchUsersForGuildEvent(e, t, n) {
@@ -526,8 +526,9 @@
                 } = e, o = d.default.getGuildScheduledEvent(t);
                 if (null == o) return;
                 let _ = s ? null != n ? n : (0, i.getNextRecurrenceIdInEvent)(o) : null,
-                    y = E(o.id, _);
-                null == _ ? (l(t, null, u, a.GuildScheduledEventUserResponses.INTERESTED), null == c || c()) : null != y ? (l(t, _, u, a.GuildScheduledEventUserResponses.UNINTERESTED), null == c || c()) : r(o, _)
+                    y = E(o.id),
+                    R = E(o.id, _);
+                null == _ ? (l(t, null, u, null != y ? a.GuildScheduledEventUserResponses.UNINTERESTED : a.GuildScheduledEventUserResponses.INTERESTED), null == c || c()) : null != R ? (l(t, _, u, null != y ? a.GuildScheduledEventUserResponses.INTERESTED : a.GuildScheduledEventUserResponses.UNINTERESTED), null == c || c()) : r(o, _)
             }(u = l || (l = {}))[u.SERIES = 0] = "SERIES", u[u.RECURRENCE = 1] = "RECURRENCE"
         },
         822516: function(e, t, n) {
@@ -555,10 +556,10 @@
                     return L
                 },
                 getScheduleForRecurrenceWithException: function() {
-                    return I
+                    return U
                 },
                 getScheduleFromEventData: function() {
-                    return U
+                    return I
                 },
                 areDatesIdentical: function() {
                     return C
@@ -693,7 +694,7 @@
                 }
             }
 
-            function I(e, t) {
+            function U(e, t) {
                 var n;
                 if (null == t) return e;
                 let u = null !== (n = t.scheduled_end_time) && void 0 !== n ? n : e.endDate;
@@ -703,7 +704,7 @@
                 }
             }
 
-            function U(e) {
+            function I(e) {
                 return g(e.scheduledStartTime, e.scheduledEndTime)
             }
 
@@ -871,4 +872,4 @@
         }
     }
 ]);
-//# sourceMappingURL=81161.a3ba1751a55ee75e01fe.js.map
+//# sourceMappingURL=81161.3f1fbfe502c7a08389e8.js.map

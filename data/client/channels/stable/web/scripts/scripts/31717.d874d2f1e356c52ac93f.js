@@ -1133,7 +1133,7 @@
                     for (let t of d) {
                         if (null == t) continue;
                         let n = l.default.getUser(t),
-                            i = a.default.getTrueMember(null != e ? e : s.EMPTY_STRING_GUILD_ID, t);
+                            i = a.default.getTrueMember(null != e ? e : s.EMPTY_STRING_SNOWFLAKE_ID, t);
                         null != n && c.push(n), null != i && o.push(i)
                     }
                     return [o, c]
@@ -2865,17 +2865,20 @@
                 useCanPostImagePolls: function() {
                     return _
                 },
-                isAnswerFilled: function() {
+                isPollCreationEmpty: function() {
                     return f
                 },
-                isIncompleteAnswer: function() {
+                isAnswerFilled: function() {
                     return g
                 },
-                createPollServerDataFromCreateRequest: function() {
+                isIncompleteAnswer: function() {
                     return S
                 },
-                getTotalVotes: function() {
+                createPollServerDataFromCreateRequest: function() {
                     return h
+                },
+                getTotalVotes: function() {
+                    return m
                 }
             }), n("781738"), n("222007"), n("808653");
             var a = n("748820"),
@@ -2931,15 +2934,19 @@
                 return !1
             }
 
-            function f(e, t) {
-                return t === l.PollLayoutTypes.IMAGE_ONLY_ANSWERS ? null != e.image : null != e.text && e.text.length > 0
+            function f(e, t, n) {
+                return 0 === e.length && null == t.find(e => g(e, n))
             }
 
             function g(e, t) {
+                return t === l.PollLayoutTypes.IMAGE_ONLY_ANSWERS ? null != e.image : null != e.text && e.text.length > 0
+            }
+
+            function S(e, t) {
                 return t === l.PollLayoutTypes.DEFAULT && null != e.image && (null == e.text || 0 === e.text.length)
             }
 
-            function S(e) {
+            function h(e) {
                 var t, n;
                 if (null == e) return;
                 let a = null == e ? void 0 : null === (t = e.answers) || void 0 === t ? void 0 : t.map((e, t) => {
@@ -2966,7 +2973,7 @@
                 }
             }
 
-            function h(e) {
+            function m(e) {
                 return e.reduce((e, t) => {
                     var n, a;
                     return e + (null !== (a = null === (n = t.count_details) || void 0 === n ? void 0 : n.vote) && void 0 !== a ? a : 0)
@@ -3598,4 +3605,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.77693610ec6c1549aeb2.js.map
+//# sourceMappingURL=31717.d874d2f1e356c52ac93f.js.map

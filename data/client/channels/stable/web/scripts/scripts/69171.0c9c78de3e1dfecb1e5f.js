@@ -1790,7 +1790,10 @@
                             let n = a.sections[t];
                             r(null != n, "Bot has no matching index section"), r(null != n.descriptor.application, "Bot's index section has no application info");
                             let i = n.descriptor.application;
-                            i.bot = e.user, n.descriptor = (0, v.getApplicationCommandSection)(i), o = !0
+                            i.bot = e.user, n.descriptor = {
+                                ...n.descriptor,
+                                ...(0, v.getApplicationCommandSection)(i)
+                            }, o = !0
                         }
                     }), o
                 },
@@ -5783,4 +5786,4 @@
         }
     }
 ]);
-//# sourceMappingURL=69171.86764cda81163729f901.js.map
+//# sourceMappingURL=69171.0c9c78de3e1dfecb1e5f.js.map

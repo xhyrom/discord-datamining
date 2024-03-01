@@ -202,10 +202,10 @@
                     return W
                 },
                 clearClipsSession: function() {
-                    return B
+                    return K
                 },
                 clearNewClipIds: function() {
-                    return K
+                    return B
                 },
                 loadClipsDirectory: function() {
                     return J
@@ -541,13 +541,13 @@
                 }))
             }
 
-            function B() {
+            function K() {
                 d.default.dispatch({
                     type: "CLIPS_CLEAR_CLIPS_SESSION"
                 })
             }
 
-            function K() {
+            function B() {
                 d.default.dispatch({
                     type: "CLIPS_CLEAR_NEW_CLIP_IDS"
                 })
@@ -1453,7 +1453,7 @@
                     voiceChannelActivityNotifsEnabled: n
                 } = d.useExperiment({
                     location: "useVoiceActivityNotificationSettingsExperiment",
-                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : i.EMPTY_STRING_GUILD_ID
+                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : i.EMPTY_STRING_SNOWFLAKE_ID
                 }, {
                     disable: (null == e ? void 0 : e.type) !== i.ChannelTypes.GUILD_VOICE,
                     autoTrackExposure: !1
@@ -1473,7 +1473,7 @@
                 let {
                     voiceChannelActivityNotifsEnabled: n
                 } = d.getCurrentConfig({
-                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : i.EMPTY_STRING_GUILD_ID,
+                    guildId: null !== (t = null == e ? void 0 : e.getGuildId()) && void 0 !== t ? t : i.EMPTY_STRING_SNOWFLAKE_ID,
                     location: "hasVoiceChannelActivityNotifsEnabled"
                 });
                 return n
@@ -1481,4 +1481,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12896.82da9068aba38f378961.js.map
+//# sourceMappingURL=12896.e14674fd49155de3feba.js.map

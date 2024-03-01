@@ -13,13 +13,13 @@
                     return g
                 },
                 createAdyenPaymentSourceToken: function() {
-                    return D
-                },
-                createPaymentSource: function() {
                     return m
                 },
-                dispatchConfirmationError: function() {
+                createPaymentSource: function() {
                     return y
+                },
+                dispatchConfirmationError: function() {
+                    return D
                 },
                 createCardToken: function() {
                     return v
@@ -109,10 +109,10 @@
                     return ed
                 },
                 upgradeSubscription: function() {
-                    return e_
+                    return eE
                 },
                 changeSubscriptionCurrency: function() {
-                    return eE
+                    return e_
                 },
                 changePaymentSource: function() {
                     return ec
@@ -162,8 +162,8 @@
                 o = n("448993"),
                 s = n("736978"),
                 d = n("865146"),
-                _ = n("766274"),
-                E = n("160299"),
+                E = n("766274"),
+                _ = n("160299"),
                 c = n("599110"),
                 I = n("745279"),
                 S = n("719923"),
@@ -289,13 +289,13 @@
                 }
             }
 
-            function D(e) {
+            function m(e) {
                 var t;
                 return p.VAULTABLE_PAYMENT_SOURCES.has(e.type) ? null : JSON.stringify({
                     type: null !== (t = A.ADYEN_PAYMENT_SOURCES.get(e.type)) && void 0 !== t ? t : null
                 })
             }
-            async function m(e, t, n, r) {
+            async function y(e, t, n, r) {
                 a.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
                 });
@@ -340,7 +340,7 @@
                 }
             }
 
-            function y(e) {
+            function D(e) {
                 var t, n;
                 let r, i, l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                     u = R.default.Messages.PAYMENT_METHOD_CONFIRMATION_ERROR;
@@ -373,20 +373,20 @@
                 }), s
             }
             async function v(e, t) {
-                if (null == e || null == t) throw y("Stripe or elements not loaded");
+                if (null == e || null == t) throw D("Stripe or elements not loaded");
                 let n = t.getElement(r.CardNumberElement);
-                if (null == n) throw y("Unable to load card elements from Stripe");
+                if (null == n) throw D("Unable to load card elements from Stripe");
                 let {
                     token: i,
                     error: l
                 } = await e.createToken(n);
-                if (null != l) throw y(l);
-                if (null == i) throw y("token not available with successful stripe call");
+                if (null != l) throw D(l);
+                if (null == i) throw D("token not available with successful stripe call");
                 return i.id
             }
             async function U(e, t, n, r) {
-                if (null == e) throw y("Stripe not loaded");
-                if (null == t) throw y("Bank required for EPS");
+                if (null == e) throw D("Stripe not loaded");
+                if (null == t) throw D("Bank required for EPS");
                 let {
                     email: i,
                     name: l,
@@ -394,10 +394,10 @@
                     line2: o,
                     city: s,
                     state: d,
-                    postalCode: _,
-                    country: E
+                    postalCode: E,
+                    country: _
                 } = n;
-                if (null == l) throw y("Name required for EPS");
+                if (null == l) throw D("Name required for EPS");
                 a.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
                 });
@@ -416,24 +416,24 @@
                                 line2: o,
                                 city: s,
                                 state: d,
-                                postal_code: _,
-                                country: E
+                                postal_code: E,
+                                country: _
                             },
                             name: l,
                             email: i
                         }
                     });
-                if (null != S) throw y(S);
-                if (null == I) throw y("paymentMethod not available with successful stripe call");
-                return m(p.PaymentGateways.STRIPE, I.id, n, {
+                if (null != S) throw D(S);
+                if (null == I) throw D("paymentMethod not available with successful stripe call");
+                return y(p.PaymentGateways.STRIPE, I.id, n, {
                     billingAddressToken: c,
                     analyticsLocation: r,
                     bank: t
                 })
             }
             async function M(e, t, n, r) {
-                if (null == e) throw y("Stripe not loaded");
-                if (null == t) throw y("Bank required for iDEAL");
+                if (null == e) throw D("Stripe not loaded");
+                if (null == t) throw D("Bank required for iDEAL");
                 let {
                     email: i,
                     name: l,
@@ -441,10 +441,10 @@
                     line2: o,
                     city: s,
                     state: d,
-                    postalCode: _,
-                    country: E
+                    postalCode: E,
+                    country: _
                 } = n;
-                if (null == l) throw y("Name required for iDEAL");
+                if (null == l) throw D("Name required for iDEAL");
                 a.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
                 });
@@ -463,23 +463,23 @@
                                 line2: o,
                                 city: s,
                                 state: d,
-                                postal_code: _,
-                                country: E
+                                postal_code: E,
+                                country: _
                             },
                             name: l,
                             email: i
                         }
                     });
-                if (null != S) throw y(S);
-                if (null == I) throw y("paymentMethod not available with successful stripe call");
-                return m(p.PaymentGateways.STRIPE, I.id, n, {
+                if (null != S) throw D(S);
+                if (null == I) throw D("paymentMethod not available with successful stripe call");
+                return y(p.PaymentGateways.STRIPE, I.id, n, {
                     billingAddressToken: c,
                     analyticsLocation: r,
                     bank: t
                 })
             }
             async function G(e, t, n, r) {
-                if (null == e) throw y("Stripe not loaded");
+                if (null == e) throw D("Stripe not loaded");
                 let {
                     email: i,
                     name: l,
@@ -487,10 +487,10 @@
                     line2: o,
                     city: s,
                     state: d,
-                    postalCode: _,
-                    country: E
+                    postalCode: E,
+                    country: _
                 } = n;
-                if (null == i) throw y("Email required for Przelewy24");
+                if (null == i) throw D("Email required for Przelewy24");
                 a.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
                 });
@@ -510,23 +510,23 @@
                                 line2: o,
                                 city: s,
                                 state: d,
-                                postal_code: _,
-                                country: E
+                                postal_code: E,
+                                country: _
                             },
                             name: l,
                             email: i
                         }
                     });
-                if (null != T) throw y(T);
-                if (null == S) throw y("paymentMethod not available with successful stripe call");
-                return m(p.PaymentGateways.STRIPE, S.id, n, {
+                if (null != T) throw D(T);
+                if (null == S) throw D("paymentMethod not available with successful stripe call");
+                return y(p.PaymentGateways.STRIPE, S.id, n, {
                     billingAddressToken: c,
                     analyticsLocation: r,
                     bank: I
                 })
             }
             async function B(e, t, n) {
-                if (null == e) throw y("Stripe not loaded");
+                if (null == e) throw D("Stripe not loaded");
                 a.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
                 });
@@ -538,8 +538,8 @@
                         line2: o,
                         city: s,
                         state: d,
-                        postalCode: _,
-                        country: E
+                        postalCode: E,
+                        country: _
                     } = t,
                     {
                         paymentMethod: c,
@@ -547,7 +547,7 @@
                     } = await e.createPaymentMethod({
                         type: "sofort",
                         sofort: {
-                            country: E
+                            country: _
                         },
                         billing_details: {
                             address: {
@@ -555,22 +555,22 @@
                                 line2: o,
                                 city: s,
                                 state: d,
-                                postal_code: _,
-                                country: E
+                                postal_code: E,
+                                country: _
                             },
                             name: l,
                             email: i
                         }
                     });
-                if (null != I) throw y(I);
-                if (null == c) throw y("paymentMethod not available with successful stripe call");
-                return m(p.PaymentGateways.STRIPE, c.id, t, {
+                if (null != I) throw D(I);
+                if (null == c) throw D("paymentMethod not available with successful stripe call");
+                return y(p.PaymentGateways.STRIPE, c.id, t, {
                     billingAddressToken: r,
                     analyticsLocation: n
                 })
             }
             async function w(e, t, n, r) {
-                if (null == e || null == t) throw y("Stripe or token not loaded");
+                if (null == e || null == t) throw D("Stripe or token not loaded");
                 a.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
                 });
@@ -578,15 +578,15 @@
                 try {
                     i = await P()
                 } catch (e) {
-                    throw y(e)
+                    throw D(e)
                 }
                 let {
                     name: u,
                     line1: o,
                     line2: s,
                     city: d,
-                    state: _,
-                    postalCode: E,
+                    state: E,
+                    postalCode: _,
                     country: c
                 } = n, I = await g(n), {
                     setupIntent: S,
@@ -601,17 +601,17 @@
                                 line1: o,
                                 line2: s,
                                 city: d,
-                                state: _,
-                                postal_code: E,
+                                state: E,
+                                postal_code: _,
                                 country: c
                             },
                             name: u
                         }
                     }
                 });
-                if (null != T) throw y(T);
-                if ((null == S ? void 0 : S.payment_method) == null) throw y("setupIntent.payment_method not available with successful stripe call");
-                return l("string" == typeof S.payment_method, "setupIntent.payment_method expanded not supported"), m(p.PaymentGateways.STRIPE, S.payment_method, n, {
+                if (null != T) throw D(T);
+                if ((null == S ? void 0 : S.payment_method) == null) throw D("setupIntent.payment_method not available with successful stripe call");
+                return l("string" == typeof S.payment_method, "setupIntent.payment_method expanded not supported"), y(p.PaymentGateways.STRIPE, S.payment_method, n, {
                     billingAddressToken: I,
                     analyticsLocation: r
                 })
@@ -622,18 +622,18 @@
                     token: r,
                     billingAddressInfo: i
                 } = f.parseStripePaymentMethod(e);
-                return m(p.PaymentGateways.STRIPE, r, null != t ? t : i, {
+                return y(p.PaymentGateways.STRIPE, r, null != t ? t : i, {
                     analyticsLocation: n
                 })
             }
 
             function F(e, t, n) {
-                return m(p.PaymentGateways.BRAINTREE, e, t, {
+                return y(p.PaymentGateways.BRAINTREE, e, t, {
                     analyticsLocation: n
                 })
             }
             async function V(e, t, n, r) {
-                if (null == e) throw y("Stripe not loaded");
+                if (null == e) throw D("Stripe not loaded");
                 let i = await g(t),
                     {
                         name: u,
@@ -641,8 +641,8 @@
                         line2: o,
                         city: s,
                         state: d,
-                        postalCode: _,
-                        country: E
+                        postalCode: E,
+                        country: _
                     } = t,
                     c = A.STRIPE_PAYMENT_SOURCES.get(n);
                 l(null != c, "unsupported payment method type");
@@ -657,15 +657,15 @@
                             line2: o,
                             city: s,
                             state: d,
-                            postal_code: _,
-                            country: E
+                            postal_code: E,
+                            country: _
                         },
                         name: u
                     }
                 });
-                if (null != S) throw y(S);
-                if (null == I) throw y("stripePaymentMethod not available with successful stripe call");
-                return m(p.PaymentGateways.STRIPE, I.id, t, {
+                if (null != S) throw D(S);
+                if (null == I) throw D("stripePaymentMethod not available with successful stripe call");
+                return y(p.PaymentGateways.STRIPE, I.id, t, {
                     billingAddressToken: i,
                     analyticsLocation: r
                 })
@@ -675,7 +675,7 @@
                     i = {
                         type: A.ADYEN_PAYMENT_SOURCES.get(t)
                     };
-                return m(p.PaymentGateways.ADYEN, JSON.stringify(i), e, {
+                return y(p.PaymentGateways.ADYEN, JSON.stringify(i), e, {
                     billingAddressToken: r,
                     analyticsLocation: n
                 })
@@ -687,13 +687,13 @@
                         type: A.ADYEN_PAYMENT_SOURCES.get(t),
                         ...null !== (i = null == r ? void 0 : r.paymentMethod) && void 0 !== i ? i : {}
                     },
-                    _ = await eN(t),
-                    E = u.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t, null != _ ? _ : "", "success");
+                    E = await eN(t),
+                    _ = u.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t, null != E ? E : "", "success");
                 try {
-                    let t = await m(p.PaymentGateways.ADYEN, JSON.stringify(d), e, {
+                    let t = await y(p.PaymentGateways.ADYEN, JSON.stringify(d), e, {
                         billingAddressToken: l,
                         analyticsLocation: n,
-                        returnUrl: E
+                        returnUrl: _
                     });
                     return {
                         paymentSource: t,
@@ -705,7 +705,7 @@
                         error: new o.BillingError("Unable to create payment source token: code: ".concat(null == t ? void 0 : t.code, " message: ").concat(null == t ? void 0 : t.message), o.BillingError.ErrorCodes.UNKNOWN)
                     }), t;
                     let e = t.fields.adyen_redirect_url;
-                    if (null == e) throw y("redirect url cannot be null on a redirect for adyen.");
+                    if (null == e) throw D("redirect url cannot be null on a redirect for adyen.");
                     return ei(e), {
                         redirectConfirmation: !0
                     }
@@ -723,8 +723,8 @@
                     city: a,
                     state: s,
                     postalCode: d,
-                    country: _
-                } = e.billingAddress, E = {
+                    country: E
+                } = e.billingAddress, _ = {
                     billing_details: {
                         address: {
                             line1: i,
@@ -732,52 +732,52 @@
                             city: a,
                             state: s,
                             postal_code: d,
-                            country: _
+                            country: E
                         },
                         name: r
                     }
                 };
                 switch (e.type) {
                     case A.PaymentSourceTypes.GIROPAY:
-                        E.type = "giropay";
+                        _.type = "giropay";
                         break;
                     case A.PaymentSourceTypes.SOFORT:
-                        E.type = "sofort", E.sofort = {
-                            country: null != _ ? _ : ""
-                        }, E.billing_details.email = n;
+                        _.type = "sofort", _.sofort = {
+                            country: null != E ? E : ""
+                        }, _.billing_details.email = n;
                         break;
                     case A.PaymentSourceTypes.BANCONTACT:
-                        E.type = "bancontact";
+                        _.type = "bancontact";
                         break;
                     case A.PaymentSourceTypes.IDEAL:
                         if (null == e.bank) throw new o.BillingError("iDEAL missing bank information", o.BillingError.ErrorCodes.UNKNOWN_PAYMENT_SOURCE);
-                        E.type = "ideal", E.ideal = {
+                        _.type = "ideal", _.ideal = {
                             bank: e.bank
                         };
                         break;
                     case A.PaymentSourceTypes.PRZELEWY24:
                         if (null == e.bank) throw new o.BillingError("p24 missing bank information", o.BillingError.ErrorCodes.UNKNOWN_PAYMENT_SOURCE);
-                        E.type = "p24", E.p24 = {
+                        _.type = "p24", _.p24 = {
                             bank: e.bank
-                        }, E.billing_details.email = e.email;
+                        }, _.billing_details.email = e.email;
                         break;
                     case A.PaymentSourceTypes.EPS:
                         if (null == e.bank) throw new o.BillingError("EPS missing bank information", o.BillingError.ErrorCodes.UNKNOWN_PAYMENT_SOURCE);
-                        E.type = "eps", E.eps = {
+                        _.type = "eps", _.eps = {
                             bank: e.bank
                         }
                 }
-                l(null != E.type, "unsupported payment method type");
+                l(null != _.type, "unsupported payment method type");
                 let {
                     paymentMethod: c,
                     error: I
-                } = await t.createPaymentMethod(E);
+                } = await t.createPaymentMethod(_);
                 if (null != I || null == c) throw new o.BillingError("Unable to create payment source token: code: ".concat(null == I ? void 0 : I.code, " message: ").concat(null == I ? void 0 : I.message), o.BillingError.ErrorCodes.UNKNOWN);
                 return c.id
             }
 
             function Y(e) {
-                return p.VAULTABLE_PAYMENT_SOURCES.has(e.type) ? null : A.ADYEN_PAYMENT_SOURCES.has(e.type) ? D(e) : k(e)
+                return p.VAULTABLE_PAYMENT_SOURCES.has(e.type) ? null : A.ADYEN_PAYMENT_SOURCES.has(e.type) ? m(e) : k(e)
             }
             async function K() {
                 try {
@@ -879,7 +879,7 @@
                     let e = await u.default.get(p.Endpoints.BILLING_NITRO_AFFINITY);
                     a.default.dispatch({
                         type: "BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED",
-                        res: e.body.map(e => new _.default(e))
+                        res: e.body.map(e => new E.default(e))
                     })
                 } finally {
                     a.default.dispatch({
@@ -927,8 +927,8 @@
                     code: i,
                     currency: l,
                     metadata: d,
-                    referralCode: _,
-                    loadId: E
+                    referralCode: E,
+                    loadId: _
                 } = e;
                 a.default.dispatch({
                     type: "BILLING_SUBSCRIPTION_UPDATE_START"
@@ -961,8 +961,8 @@
                             metadata: d,
                             gateway_checkout_context: await (0, I.createGatewayCheckoutContext)(n),
                             purchase_token: (0, T.getPurchaseToken)(),
-                            referral_code: _,
-                            load_id: E
+                            referral_code: E,
+                            load_id: _
                         },
                         oldFormErrors: !0
                     });
@@ -979,7 +979,7 @@
                         type: "BILLING_SUBSCRIPTION_UPDATE_FAIL",
                         error: e
                     }), e;
-                    if (!t.body.payment_id) throw y("payment id cannot be null on redirected confirmations.");
+                    if (!t.body.payment_id) throw D("payment id cannot be null on redirected confirmations.");
                     return $(t.body, n)
                 }
             }
@@ -1013,7 +1013,7 @@
                         type: "BILLING_SUBSCRIPTION_UPDATE_FAIL",
                         error: e
                     }), e;
-                    if (!t.body.payment_id) throw y("payment id cannot be null on redirected confirmations.");
+                    if (!t.body.payment_id) throw D("payment id cannot be null on redirected confirmations.");
                     return $(t.body, n)
                 }
             }
@@ -1022,8 +1022,8 @@
                 return null != t && A.ADYEN_PAYMENT_SOURCES.has(t.type) ? ee(e.adyen_redirect_url, t) : et(e.payment_id, t)
             }
             async function ee(e, t) {
-                if (null == e) throw y("redirect url cannot be null on a redirect for adyen.");
-                if (null == t) throw y("Payment source cannot be null on a redirect.");
+                if (null == e) throw D("redirect url cannot be null on a redirect for adyen.");
+                if (null == t) throw D("Payment source cannot be null on a redirect.");
                 return p.REDIRECTED_PAYMENT_SOURCES.has(t.type) ? (ei(e), {
                     redirectConfirmation: !0,
                     redirectURL: e
@@ -1034,12 +1034,12 @@
             }
             async function et(e, t) {
                 let n = await f.getStripe();
-                if (null == t) throw y("Payment source cannot be null on a redirect.");
+                if (null == t) throw D("Payment source cannot be null on a redirect.");
                 let {
                     clientSecret: r,
                     paymentMethodId: i
                 } = await h(e);
-                if (null == n) throw y("Stripe cannot be null on a redirect.");
+                if (null == n) throw D("Stripe cannot be null on a redirect.");
                 if (p.REDIRECTED_PAYMENT_SOURCES.has(t.type)) {
                     let e = await eN(t.type);
                     return ei(await eu({
@@ -1063,24 +1063,24 @@
             async function en(e) {
                 var t;
                 let n = await W(e);
-                if ((null == n ? void 0 : n.body) == null) throw y("could not fetch payment");
+                if ((null == n ? void 0 : n.body) == null) throw D("could not fetch payment");
                 let r = d.default.createFromServer(n.body.payment_source);
-                if (!p.REDIRECTED_PAYMENT_SOURCES.has(r.type)) throw y("unsupported redirect payment source");
-                if ((null == n ? void 0 : null === (t = n.body) || void 0 === t ? void 0 : t.status) === A.PaymentStatusTypes.FAILED) throw y("payment failed");
+                if (!p.REDIRECTED_PAYMENT_SOURCES.has(r.type)) throw D("unsupported redirect payment source");
+                if ((null == n ? void 0 : null === (t = n.body) || void 0 === t ? void 0 : t.status) === A.PaymentStatusTypes.FAILED) throw D("payment failed");
                 return r.paymentGateway !== p.PaymentGateways.STRIPE || er(e)
             }
             async function er(e) {
                 let t = await f.getStripe();
-                if (null == t) throw y("Stripe has not loaded.");
-                if (null == e) throw y("payment intent id cannot be null.");
+                if (null == t) throw D("Stripe has not loaded.");
+                if (null == e) throw D("payment intent id cannot be null.");
                 let n = await O(e),
                     {
                         paymentIntent: r,
                         error: i
                     } = await t.retrievePaymentIntent(n);
-                if (null != i) throw y(i);
-                if (null == r) throw y("paymentIntent not available with successful stripe call");
-                if (null != r.last_payment_error) throw y("unable to retrieve payment intent ".concat(r.last_payment_error));
+                if (null != i) throw D(i);
+                if (null == r) throw D("paymentIntent not available with successful stripe call");
+                if (null != r.last_payment_error) throw D("unable to retrieve payment intent ".concat(r.last_payment_error));
                 return !0
             }
 
@@ -1096,15 +1096,15 @@
                     } = e,
                     u = {};
                 if (r.type === A.PaymentSourceTypes.SEPA_DEBIT) {
-                    if (null == i) throw y("On a sepa payment payment method id cannot be null");
+                    if (null == i) throw D("On a sepa payment payment method id cannot be null");
                     u.payment_method = i, t = n.confirmSepaDebitPayment
-                } else throw y("Unsupported redirected payment source type.");
+                } else throw D("Unsupported redirected payment source type.");
                 let {
                     paymentIntent: a,
                     error: o
                 } = await t(l, u);
-                if (null != o) throw y(o);
-                if (null == a) throw y("paymentIntent not available with successful stripe call")
+                if (null != o) throw D(o);
+                if (null == a) throw D("paymentIntent not available with successful stripe call")
             }
             async function eu(e) {
                 var t, n;
@@ -1143,7 +1143,7 @@
                         }, r = i.confirmSofortPayment;
                         break;
                     case A.PaymentSourceTypes.PRZELEWY24:
-                        if (null == l.bank) throw y("PaymentSource (".concat(l.id, ") missing bank info for p24."));
+                        if (null == l.bank) throw D("PaymentSource (".concat(l.id, ") missing bank info for p24."));
                         s = {
                             p24: {
                                 bank: l.bank
@@ -1155,7 +1155,7 @@
                         }, r = i.confirmP24Payment;
                         break;
                     case A.PaymentSourceTypes.EPS:
-                        if (null == l.bank) throw y("PaymentSource (".concat(l.id, ") missing bank info for EPS."));
+                        if (null == l.bank) throw D("PaymentSource (".concat(l.id, ") missing bank info for EPS."));
                         s = {
                             eps: {
                                 bank: l.bank
@@ -1166,7 +1166,7 @@
                         }, r = i.confirmEpsPayment;
                         break;
                     case A.PaymentSourceTypes.IDEAL:
-                        if (null == l.bank) throw y("PaymentSource (".concat(l.id, ") missing bank info for iDEAL."));
+                        if (null == l.bank) throw D("PaymentSource (".concat(l.id, ") missing bank info for iDEAL."));
                         s = {
                             ideal: {
                                 bank: l.bank
@@ -1177,20 +1177,20 @@
                         }, r = i.confirmIdealPayment;
                         break;
                     default:
-                        throw y("Unsupported redirected payment source type.")
+                        throw D("Unsupported redirected payment source type.")
                 }
                 let {
                     paymentIntent: d,
-                    error: _
+                    error: E
                 } = await r(a, {
                     payment_method: s,
                     return_url: u.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(l.type, null != o ? o : "", "success")
                 }, {
                     handleActions: !1
                 });
-                if (null != _) throw y(_);
-                if (null == d) throw y("paymentIntent not available with successful api call");
-                if ((null === (n = d.next_action) || void 0 === n ? void 0 : null === (t = n.redirect_to_url) || void 0 === t ? void 0 : t.url) == null) throw y("confirm payment did not return a redirect url");
+                if (null != E) throw D(E);
+                if (null == d) throw D("paymentIntent not available with successful api call");
+                if ((null === (n = d.next_action) || void 0 === n ? void 0 : null === (t = n.redirect_to_url) || void 0 === t ? void 0 : t.url) == null) throw D("confirm payment did not return a redirect url");
                 return d.next_action.redirect_to_url.url
             }
             async function ea(e, t, n) {
@@ -1274,7 +1274,7 @@
                         type: "BILLING_SUBSCRIPTION_UPDATE_FAIL",
                         error: e
                     }), e;
-                    if (!n.body.payment_id) throw y("payment id cannot be null on redirected confirmations.");
+                    if (!n.body.payment_id) throw D("payment id cannot be null on redirected confirmations.");
                     return $(n.body, t.paymentSource)
                 }
             }
@@ -1287,7 +1287,7 @@
                 }, t, i)
             }
 
-            function e_(e, t, n, r) {
+            function eE(e, t, n, r) {
                 let i = (0, S.getItemsWithUpsertedPremiumPlanId)(e, t);
                 return es(e, {
                     status: p.SubscriptionStatusTypes.ACTIVE,
@@ -1295,7 +1295,7 @@
                 }, n, r)
             }
 
-            function eE(e, t, n, r) {
+            function e_(e, t, n, r) {
                 return es(e, {
                     currency: t
                 }, n, r)
@@ -1382,7 +1382,7 @@
             }
             async function eR() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-                if (!e && null != E.default.ipCountryCodeRequest) return E.default.ipCountryCodeRequest;
+                if (!e && null != _.default.ipCountryCodeRequest) return _.default.ipCountryCodeRequest;
                 try {
                     let e = u.default.get({
                         url: p.Endpoints.BILLING_COUNTRY_CODE
@@ -1446,10 +1446,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 fetchSubscriptionPlansForSKU: function() {
-                    return _
+                    return E
                 },
                 fetchSubscriptionPlansBySKUs: function() {
-                    return E
+                    return _
                 },
                 fetchPremiumSubscriptionPlans: function() {
                     return c
@@ -1466,7 +1466,7 @@
                 o = n("850068"),
                 s = n("49111"),
                 d = n("646718");
-            async function _(e, t, n, d, _) {
+            async function E(e, t, n, d, E) {
                 i.default.dispatch({
                     type: "SUBSCRIPTION_PLANS_FETCH",
                     skuId: e
@@ -1477,12 +1477,12 @@
                             oldFormErrors: !0
                         },
                         a = {};
-                    null != t && (a.country_code = t), null != n && (a.payment_source_id = n), null != d && (a.include_unpublished = d), null != _ && (a.revenue_surface = _), l.query = a, !u.default.ipCountryCodeLoaded && await (0, o.fetchIpCountryCode)();
-                    let E = await r.default.get(l);
+                    null != t && (a.country_code = t), null != n && (a.payment_source_id = n), null != d && (a.include_unpublished = d), null != E && (a.revenue_surface = E), l.query = a, !u.default.ipCountryCodeLoaded && await (0, o.fetchIpCountryCode)();
+                    let _ = await r.default.get(l);
                     i.default.dispatch({
                         type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS",
                         skuId: e,
-                        subscriptionPlans: E.body
+                        subscriptionPlans: _.body
                     })
                 } catch (t) {
                     throw i.default.dispatch({
@@ -1492,12 +1492,12 @@
                 }
             }
 
-            function E(e, t) {
-                return Promise.all(e.filter(e => e !== d.PremiumSubscriptionSKUs.NONE).map(e => _(e, t)))
+            function _(e, t) {
+                return Promise.all(e.filter(e => e !== d.PremiumSubscriptionSKUs.NONE).map(e => E(e, t)))
             }
 
             function c(e, t, n) {
-                return Promise.all(d.ACTIVE_PREMIUM_SKUS.filter(e => e !== d.PremiumSubscriptionSKUs.NONE).map(r => _(r, e, t, void 0, n)))
+                return Promise.all(d.ACTIVE_PREMIUM_SKUS.filter(e => e !== d.PremiumSubscriptionSKUs.NONE).map(r => E(r, e, t, void 0, n)))
             }
 
             function I() {
@@ -1582,8 +1582,8 @@
                     return L
                 }
             }), n("222007");
-            var r, i, l, u, a, o, s, d, _ = n("486196"),
-                E = n("614247"),
+            var r, i, l, u, a, o, s, d, E = n("486196"),
+                _ = n("614247"),
                 c = n("821879"),
                 I = n("333805"),
                 S = n("782340");
@@ -1612,14 +1612,14 @@
 
             function R(e) {
                 var t, n, r, i, l;
-                if ("string" != typeof e && (null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.code) === _.INVALID_FORM_BODY_ERROR_CODE) {
+                if ("string" != typeof e && (null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.code) === E.INVALID_FORM_BODY_ERROR_CODE) {
                     if (!Array.isArray(null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.errors) && (null == e ? void 0 : null === (i = e.body) || void 0 === i ? void 0 : null === (r = i.errors) || void 0 === r ? void 0 : r.billing_address) != null) {
                         for (let t in e.body.errors.billing_address) {
                             let n = e.body.errors.billing_address[t];
                             delete e.body.errors.billing_address[t], e.body.errors[t] = n
                         }
                         delete e.body.errors.billing_address
-                    }(null === (l = e.body) || void 0 === l ? void 0 : l.errors) != null && (e.body = (0, E.default)(e.body.errors))
+                    }(null === (l = e.body) || void 0 === l ? void 0 : l.errors) != null && (e.body = (0, _.default)(e.body.errors))
                 }
                 return new C(e)
             }
@@ -1840,8 +1840,8 @@
             n("355025");
             var d = n("9294");
             n("42793");
-            var _ = n("337543"),
-                E = n("655518"),
+            var E = n("337543"),
+                _ = n("655518"),
                 c = n("253981"),
                 I = n("139514"),
                 S = n("49111");
@@ -1857,13 +1857,13 @@
                 h = /^\/quests\/([0-9-]+)\/?$/,
                 P = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
                 g = w(window.GLOBAL_ENV.INVITE_HOST),
-                D = w(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-                m = w(null !== (r = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== r ? r : "//canary.".concat(S.PRIMARY_DOMAIN)),
-                y = w("//canary.".concat(S.PRIMARY_DOMAIN)),
+                m = w(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+                y = w(null !== (r = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== r ? r : "//canary.".concat(S.PRIMARY_DOMAIN)),
+                D = w("//canary.".concat(S.PRIMARY_DOMAIN)),
                 v = w("//ptb.".concat(S.PRIMARY_DOMAIN)),
                 U = w("discordapp.com"),
                 M = w("discord.com"),
-                G = [E.default.escape(null !== (i = g.host) && void 0 !== i ? i : ""), E.default.escape(null !== (l = D.host) && void 0 !== l ? l : ""), E.default.escape(null !== (u = m.host) && void 0 !== u ? u : ""), E.default.escape(null !== (a = U.host) && void 0 !== a ? a : ""), E.default.escape(null !== (o = M.host) && void 0 !== o ? o : "")].filter(Boolean),
+                G = [_.default.escape(null !== (i = g.host) && void 0 !== i ? i : ""), _.default.escape(null !== (l = m.host) && void 0 !== l ? l : ""), _.default.escape(null !== (u = y.host) && void 0 !== u ? u : ""), _.default.escape(null !== (a = U.host) && void 0 !== a ? a : ""), _.default.escape(null !== (o = M.host) && void 0 !== o ? o : "")].filter(Boolean),
                 B = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(G.join("|"), ")"), "g");
 
             function w(e) {
@@ -1896,7 +1896,7 @@
 
             function F(e) {
                 var t, n, r, i;
-                return null !== (i = null !== (r = null !== (n = null !== (t = b(m, e)) && void 0 !== t ? t : b(y, e)) && void 0 !== n ? n : b(v, e)) && void 0 !== r ? r : b(U, e)) && void 0 !== i ? i : b(M, e)
+                return null !== (i = null !== (r = null !== (n = null !== (t = b(y, e)) && void 0 !== t ? t : b(D, e)) && void 0 !== n ? n : b(v, e)) && void 0 !== r ? r : b(U, e)) && void 0 !== i ? i : b(M, e)
             }
 
             function V(e) {
@@ -1909,8 +1909,8 @@
                     primaryHostRemainingPath: null
                 };
                 let u = b(g, l),
-                    a = b(D, l),
-                    o = null !== (i = null !== (r = null !== (n = null !== (t = b(m, l)) && void 0 !== t ? t : b(y, l)) && void 0 !== n ? n : b(v, l)) && void 0 !== r ? r : b(U, l)) && void 0 !== i ? i : b(M, l);
+                    a = b(m, l),
+                    o = null !== (i = null !== (r = null !== (n = null !== (t = b(y, l)) && void 0 !== t ? t : b(D, l)) && void 0 !== n ? n : b(v, l)) && void 0 !== r ? r : b(U, l)) && void 0 !== i ? i : b(M, l);
                 return {
                     url: l,
                     inviteHostRemainingPath: u,
@@ -1943,7 +1943,7 @@
                     };
                     if ((null == i ? void 0 : i.match(T)) != null) {
                         let e = (0, d.generateInviteKeyFromUrlParams)(i.substring(1), r.search);
-                        _.default.getInvite(e), a(I.CodedLinkType.INVITE, e)
+                        E.default.getInvite(e), a(I.CodedLinkType.INVITE, e)
                     }(null == l ? void 0 : l.match(T)) != null && a(I.CodedLinkType.TEMPLATE, l.substring(1));
                     let o = null == u ? void 0 : u.match(p);
                     if (null != o) {
@@ -1963,9 +1963,9 @@
                         } : null
                     }(r.pathname);
                     null != s && a(I.CodedLinkType.EVENT, "".concat(s.guildId, "-").concat(s.guildEventId) + (null != s.recurrenceId ? "-".concat(s.recurrenceId) : ""));
-                    let E = null == u ? void 0 : u.match(A);
-                    if (null != E) {
-                        let e = E[1];
+                    let _ = null == u ? void 0 : u.match(A);
+                    if (null != _) {
+                        let e = _[1];
                         a(I.CodedLinkType.APP_DIRECTORY_PROFILE, e)
                     }
                     let c = null == u ? void 0 : u.match(O);
@@ -2032,8 +2032,8 @@
                 o = n("923959"),
                 s = n("305961"),
                 d = n("957255"),
-                _ = n("800762"),
-                E = n("404008"),
+                E = n("800762"),
+                _ = n("404008"),
                 c = n("49111"),
                 I = n("782340");
             let S = (e, t) => (0, a.isPrivate)(e.type) || t.canBasicChannel(c.BasicPermissions.CONNECT | c.BasicPermissions.VIEW_CHANNEL, e);
@@ -2064,16 +2064,16 @@
                 let l;
                 if (null == e) return [!1, 2];
                 let u = t.isInChannel(e.id),
-                    o = e instanceof a.ChannelRecordBase && (0, E.isChannelFull)(e, t, n),
+                    o = e instanceof a.ChannelRecordBase && (0, _.isChannelFull)(e, t, n),
                     s = S(e, r),
                     d = null != i.getAwaitingRemoteSessionInfo() || null != i.getRemoteSessionId();
                 d ? l = 0 : s || u ? o && !u && (l = 1) : l = 2;
-                let _ = !__OVERLAY__ && !d && (u || s && !o);
-                return [_, l]
+                let E = !__OVERLAY__ && !d && (u || s && !o);
+                return [E, l]
             }
 
             function N(e) {
-                return (0, l.useStateFromStoresArray)([_.default, s.default, d.default, u.default], () => p(e, _.default, s.default, d.default, u.default))
+                return (0, l.useStateFromStoresArray)([E.default, s.default, d.default, u.default], () => p(e, E.default, s.default, d.default, u.default))
             }
 
             function A(e, t, n) {
@@ -2102,16 +2102,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 StaticGuildEventIndexes: function() {
-                    return E
+                    return _
                 },
                 scheduledEventSort: function() {
                     return c
                 },
                 isGuildScheduledEventActive: function() {
-                    return m
+                    return y
                 },
                 isEventUpcoming: function() {
-                    return y
+                    return D
                 },
                 isGuildEventEnded: function() {
                     return v
@@ -2128,24 +2128,24 @@
                 o = n("271938"),
                 s = n("26989"),
                 d = n("299039"),
-                _ = n("745049");
-            let E = {
+                E = n("745049");
+            let _ = {
                 EVENT: "event",
                 EVENT_ACTIVE: "active",
                 EVENT_UPCOMING: "event-upcoming",
-                GUILD_EVENT: e => "".concat(e, "-").concat(E.EVENT),
-                GUILD_EVENT_ACTIVE: e => "".concat(e, "-").concat(E.EVENT_ACTIVE),
-                GUILD_EVENT_UPCOMING: e => "".concat(e, "-").concat(E.EVENT_UPCOMING),
-                CHANNEL_EVENT: e => "".concat(e, "-").concat(E.EVENT),
-                CHANNEL_EVENT_ACTIVE: e => "".concat(e, "-").concat(E.EVENT_ACTIVE),
-                CHANNEL_EVENT_UPCOMING: e => "".concat(e, "-").concat(E.EVENT_UPCOMING)
+                GUILD_EVENT: e => "".concat(e, "-").concat(_.EVENT),
+                GUILD_EVENT_ACTIVE: e => "".concat(e, "-").concat(_.EVENT_ACTIVE),
+                GUILD_EVENT_UPCOMING: e => "".concat(e, "-").concat(_.EVENT_UPCOMING),
+                CHANNEL_EVENT: e => "".concat(e, "-").concat(_.EVENT),
+                CHANNEL_EVENT_ACTIVE: e => "".concat(e, "-").concat(_.EVENT_ACTIVE),
+                CHANNEL_EVENT_UPCOMING: e => "".concat(e, "-").concat(_.EVENT_UPCOMING)
             };
 
             function c(e) {
                 let {
                     id: t,
                     scheduled_start_time: n
-                } = e, r = m(e) ? "\x00" : "\x01";
+                } = e, r = y(e) ? "\x00" : "\x01";
                 return "".concat(r, "-").concat(new Date(n).getTime(), "-").concat(t)
             }
             let I = new u.default(e => {
@@ -2154,7 +2154,7 @@
                         entity_id: n,
                         channel_id: r
                     } = e, i = [t];
-                    return null != n && i.push(n), i.push(E.GUILD_EVENT(t)), null != r && i.push(E.CHANNEL_EVENT(r)), m(e) && (i.push(E.EVENT_ACTIVE), i.push(E.GUILD_EVENT_ACTIVE(t)), null != r && i.push(E.CHANNEL_EVENT_ACTIVE(r))), y(e) && (i.push(E.EVENT_UPCOMING), i.push(E.GUILD_EVENT_UPCOMING(t)), null != r && i.push(E.CHANNEL_EVENT_UPCOMING(r))), i
+                    return null != n && i.push(n), i.push(_.GUILD_EVENT(t)), null != r && i.push(_.CHANNEL_EVENT(r)), y(e) && (i.push(_.EVENT_ACTIVE), i.push(_.GUILD_EVENT_ACTIVE(t)), null != r && i.push(_.CHANNEL_EVENT_ACTIVE(r))), D(e) && (i.push(_.EVENT_UPCOMING), i.push(_.GUILD_EVENT_UPCOMING(t)), null != r && i.push(_.CHANNEL_EVENT_UPCOMING(r))), i
                 }, c),
                 S = 0,
                 T = [],
@@ -2185,7 +2185,7 @@
                     var t, n;
                     let r = C(e.guild_scheduled_event_exception_id),
                         i = null !== (n = null === (t = N[e.guild_scheduled_event_id]) || void 0 === t ? void 0 : t[r]) && void 0 !== n ? n : 0,
-                        l = null != e.guild_scheduled_event_exception_id && e.response === _.GuildScheduledEventUserResponses.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === _.GuildScheduledEventUserResponses.INTERESTED ? 1 : -1;
+                        l = null != e.guild_scheduled_event_exception_id && e.response === E.GuildScheduledEventUserResponses.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === E.GuildScheduledEventUserResponses.INTERESTED ? 1 : -1;
                     h(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i + l)
                 }(e), n && (S += 1)
             }
@@ -2200,7 +2200,7 @@
                     var t, n;
                     let r = C(e.guild_scheduled_event_exception_id),
                         i = null !== (n = null === (t = N[e.guild_scheduled_event_id]) || void 0 === t ? void 0 : t[r]) && void 0 !== n ? n : 0,
-                        l = null != e.guild_scheduled_event_exception_id && e.response === _.GuildScheduledEventUserResponses.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === _.GuildScheduledEventUserResponses.INTERESTED ? -1 : 1;
+                        l = null != e.guild_scheduled_event_exception_id && e.response === E.GuildScheduledEventUserResponses.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === E.GuildScheduledEventUserResponses.INTERESTED ? -1 : 1;
                     h(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i + l)
                 }(e), l && (S += 1))
             }
@@ -2211,7 +2211,7 @@
             }
 
             function P(e, t) {
-                I.values(E.GUILD_EVENT(e)).forEach(e => R(e.id, t))
+                I.values(_.GUILD_EVENT(e)).forEach(e => R(e.id, t))
             }
 
             function g(e) {
@@ -2221,7 +2221,7 @@
                 return A(t), !0
             }
 
-            function D(e) {
+            function m(e) {
                 let {
                     eventException: t
                 } = e, n = I.get(t.event_id);
@@ -2234,17 +2234,17 @@
                 }), !0
             }
 
-            function m(e) {
+            function y(e) {
                 var t;
-                return null != e && (t = (null == e ? void 0 : e.status) === _.GuildScheduledEventStatus.ACTIVE, t)
+                return null != e && (t = (null == e ? void 0 : e.status) === E.GuildScheduledEventStatus.ACTIVE, t)
             }
 
-            function y(e) {
-                return !_.GuildScheduledEventStatusDone.has(e.status)
+            function D(e) {
+                return !E.GuildScheduledEventStatusDone.has(e.status)
             }
 
             function v(e) {
-                return null != e && _.GuildScheduledEventStatusDone.has(e.status)
+                return null != e && E.GuildScheduledEventStatusDone.has(e.status)
             }
             class U extends l.default.Store {
                 getGuildScheduledEvent(e) {
@@ -2273,9 +2273,9 @@
                     let n = o.default.getId(),
                         r = this.getRsvp(e, null, n),
                         i = this.getRsvp(e, t, n),
-                        l = (null == r ? void 0 : r.response) === _.GuildScheduledEventUserResponses.INTERESTED,
-                        u = (null == i ? void 0 : i.response) === _.GuildScheduledEventUserResponses.INTERESTED,
-                        a = (null == i ? void 0 : i.response) === _.GuildScheduledEventUserResponses.UNINTERESTED;
+                        l = (null == r ? void 0 : r.response) === E.GuildScheduledEventUserResponses.INTERESTED,
+                        u = (null == i ? void 0 : i.response) === E.GuildScheduledEventUserResponses.INTERESTED,
+                        a = (null == i ? void 0 : i.response) === E.GuildScheduledEventUserResponses.UNINTERESTED;
                     return l && !a || u
                 }
                 getUserCount(e, t) {
@@ -2292,11 +2292,11 @@
                     return (null === (n = N[e]) || void 0 === n ? void 0 : n[r]) != null
                 }
                 isActive(e) {
-                    return null != e && m(I.get(e))
+                    return null != e && y(I.get(e))
                 }
                 getActiveEventByChannel(e) {
                     if (null == e) return;
-                    let t = this.getGuildScheduledEventsByIndex(E.CHANNEL_EVENT_ACTIVE(e));
+                    let t = this.getGuildScheduledEventsByIndex(_.CHANNEL_EVENT_ACTIVE(e));
                     return t[0]
                 }
                 getUsersForGuildEvent(e, t) {
@@ -2336,7 +2336,7 @@
                     let {
                         guildId: t,
                         guildScheduledEvents: n
-                    } = e, r = I.values(E.GUILD_EVENT(t), !0).map(e => e.id), l = n.map(e => e.id);
+                    } = e, r = I.values(_.GUILD_EVENT(t), !0).map(e => e.id), l = n.map(e => e.id);
                     for (let e of (i.difference(r, l).forEach(e => {
                             R(e)
                         }), n)) A(e);
@@ -2360,11 +2360,11 @@
                         response: a
                     } = e, o = C(u), d = null === (n = p[i]) || void 0 === n ? void 0 : null === (t = n[o]) || void 0 === t ? void 0 : t[r];
                     null != d && O(d, !1);
-                    let _ = s.default.getMember(l, r);
+                    let E = s.default.getMember(l, r);
                     return L({
                         user_id: r,
                         guild_scheduled_event_id: i,
-                        member: null != _ ? _ : {
+                        member: null != E ? E : {
                             guildId: l
                         },
                         guild_scheduled_event_exception_id: u,
@@ -2412,8 +2412,8 @@
                     } = e, n = t.guild_scheduled_event;
                     return null != n && (A(n), !0)
                 },
-                GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: D,
-                GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: D,
+                GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: m,
+                GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: m,
                 GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: function(e) {
                     let {
                         eventException: t
@@ -2554,7 +2554,7 @@
                     return d
                 },
                 getInviteType: function() {
-                    return _
+                    return E
                 }
             });
             var r = n("398604"),
@@ -2582,7 +2582,7 @@
                 return e.target_type === l.InviteTargetTypes.EMBEDDED_APPLICATION
             }
 
-            function _(e) {
+            function E(e) {
                 var t, n;
                 if ("number" == typeof e.type) return e.type;
                 if ((t = e).type === l.InviteTypes.GROUP_DM || null != t.channel && (0, i.isMultiUserDM)(t.channel.type)) return l.InviteTypes.GROUP_DM;
@@ -2619,8 +2619,8 @@
                 o = n("724210");
             let s = Array.from(o.StaticChannelRoutes).map(e => u.default.escape(e)).join("|"),
                 d = new RegExp("^/channels/(\\d+|".concat(a.ME, ")(?:/)?(\\d+|").concat(s, ")?")),
-                _ = new RegExp("^/channels/(\\d+|".concat(a.ME, ")(?:/)(\\d+|").concat(s, ")(?:/)(\\d+)")),
-                E = RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)"),
+                E = new RegExp("^/channels/(\\d+|".concat(a.ME, ")(?:/)(\\d+|").concat(s, ")(?:/)(\\d+)")),
+                _ = RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)"),
                 c = RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?"),
                 I = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
                 S = new RegExp("^https://(?:canary\\.|ptb\\.)?discord.com/channels/(\\d+|".concat(a.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
@@ -2628,13 +2628,13 @@
 
             function f(e) {
                 if (null == e) return null;
-                let t = e.match(_);
+                let t = e.match(E);
                 if (null != t && t.length > 3) return {
                     guildId: t[1],
                     channelId: t[2],
                     messageId: t[3]
                 };
-                let n = e.match(E);
+                let n = e.match(_);
                 if (null != n && n.length > 4) return {
                     guildId: n[1],
                     channelId: n[2],
@@ -2684,7 +2684,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 getMediaPostEmbedCommonData: function() {
-                    return E
+                    return _
                 },
                 getMediaPostEmbedChannelPath: function() {
                     return c
@@ -2701,13 +2701,13 @@
                 o = n("856220"),
                 s = n("49111"),
                 d = n("894488"),
-                _ = n("782340");
+                E = n("782340");
 
-            function E(e) {
+            function _(e) {
                 var t, n, r, i, l;
                 let {
                     mediaPostEmbedData: s,
-                    guild: E,
+                    guild: _,
                     parentChannel: c,
                     postThread: I,
                     user: S,
@@ -2717,9 +2717,9 @@
                 if (null == s) return null;
                 let p = (0, o.getThumbnailImage)(s.thumbnail),
                     N = !f && s.has_media_attachment,
-                    A = f ? _.default.Messages.MEDIA_POST_EMBED_SUBSCRIBED_CTA : _.default.Messages.MEDIA_POST_EMBED_SUBSCRIBE_CTA,
+                    A = f ? E.default.Messages.MEDIA_POST_EMBED_SUBSCRIBED_CTA : E.default.Messages.MEDIA_POST_EMBED_SUBSCRIBE_CTA,
                     R = null != S ? a.default.getName(s.guild_id, s.channel_id, S) : void 0,
-                    C = null == S ? void 0 : S.getAvatarURL(null == E ? void 0 : E.id, 40);
+                    C = null == S ? void 0 : S.getAvatarURL(null == _ ? void 0 : _.id, 40);
                 (null == C || T !== s.guild_id) && (C = u.default.getGuildIconURL({
                     id: s.guild_id,
                     icon: s.guild_icon,
@@ -2740,14 +2740,14 @@
                     subtitle: s.description,
                     ctaText: A,
                     coverImage: p,
-                    coverImageOverlayText: N ? _.default.Messages.MEDIA_POST_EMBED_BLURRED_THUMBNAIL_TEXT : void 0,
+                    coverImageOverlayText: N ? E.default.Messages.MEDIA_POST_EMBED_BLURRED_THUMBNAIL_TEXT : void 0,
                     parentChannelId: s.parent_channel_id,
                     threadId: s.channel_id,
                     postThread: I,
                     messageId: s.message_id,
                     canAccess: f,
                     guildId: s.guild_id,
-                    guildName: null !== (l = null == E ? void 0 : E.name) && void 0 !== l ? l : s.guild_name,
+                    guildName: null !== (l = null == _ ? void 0 : _.name) && void 0 !== l ? l : s.guild_name,
                     authorId: null == s ? void 0 : s.author_id,
                     authorName: R,
                     channelName: null == c ? void 0 : c.name,
@@ -2877,8 +2877,8 @@
                 o = n("407846"),
                 s = n("913144"),
                 d = n("374014"),
-                _ = n("373469"),
-                E = n("271938"),
+                E = n("373469"),
+                _ = n("271938"),
                 c = n("42203"),
                 I = n("305961"),
                 S = n("957255"),
@@ -2889,16 +2889,16 @@
                 A = n("316133"),
                 R = n("998716"),
                 C = n("325861"),
-                L = n("834052"),
-                O = n("49111");
-            let h = new o.default(e => [function(e) {
+                L = n("834052");
+            let O = "NO_GUILD",
+                h = new o.default(e => [function(e) {
                     var t;
-                    return null !== (t = e.getGuildId()) && void 0 !== t ? t : O.NO_GUILD_STRING_GUILD_ID
+                    return null !== (t = e.getGuildId()) && void 0 !== t ? t : O
                 }(e)], e => e.id),
                 P = new Set,
                 g = {};
 
-            function D(e) {
+            function m(e) {
                 return h.values(null != e ? e : void 0, !0).map(e => {
                     let {
                         id: t
@@ -2907,17 +2907,17 @@
                 })
             }
 
-            function m(e) {
+            function y(e) {
                 !P.has(e) && (P.add(e), u(c.default.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
                     U(e) && h.set(e.id, e)
                 }))
             }
 
-            function y(e) {
+            function D(e) {
                 let t = g[e];
                 if (null != t) return t;
                 let n = c.default.getChannel(e);
-                return null != n && n.isGuildStageVoice() ? (m(n.guild_id), U(n)) ? v(e) : null : null
+                return null != n && n.isGuildStageVoice() ? (y(n.guild_id), U(n)) ? v(e) : null : null
             }
 
             function v(e) {
@@ -2930,7 +2930,7 @@
             }
 
             function M(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D();
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : m();
                 return t.reduce((t, n) => {
                     let r = v(n),
                         i = e(r);
@@ -2942,7 +2942,7 @@
             }
 
             function G(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D();
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : m();
                 return M(t => t.updateParticipant(e), t)
             }
 
@@ -2998,37 +2998,37 @@
             let k = [];
             class Y extends a.default.Store {
                 initialize() {
-                    this.waitFor(E.default, p.default, c.default, f.default, N.default, S.default, A.default, I.default, C.default, T.default, L.default, _.default)
+                    this.waitFor(_.default, p.default, c.default, f.default, N.default, S.default, A.default, I.default, C.default, T.default, L.default, E.default)
                 }
                 getParticipantsVersion(e) {
                     var t, n;
-                    return null == e ? -1 : null !== (n = null === (t = y(e)) || void 0 === t ? void 0 : t.version) && void 0 !== n ? n : -1
+                    return null == e ? -1 : null !== (n = null === (t = D(e)) || void 0 === t ? void 0 : t.version) && void 0 !== n ? n : -1
                 }
                 getMutableParticipants(e, t) {
                     var n, r;
-                    return null == e ? k : null !== (r = null === (n = y(e)) || void 0 === n ? void 0 : n.toArray(t)) && void 0 !== r ? r : k
+                    return null == e ? k : null !== (r = null === (n = D(e)) || void 0 === n ? void 0 : n.toArray(t)) && void 0 !== r ? r : k
                 }
                 getMutableRequestToSpeakParticipants(e) {
                     var t, n;
-                    return null !== (n = null === (t = y(e)) || void 0 === t ? void 0 : t.getRequestToSpeakParticipants()) && void 0 !== n ? n : k
+                    return null !== (n = null === (t = D(e)) || void 0 === t ? void 0 : t.getRequestToSpeakParticipants()) && void 0 !== n ? n : k
                 }
                 getRequestToSpeakParticipantsVersion(e) {
                     var t, n;
-                    return null !== (n = null === (t = y(e)) || void 0 === t ? void 0 : t.requestToSpeakVersion) && void 0 !== n ? n : -1
+                    return null !== (n = null === (t = D(e)) || void 0 === t ? void 0 : t.requestToSpeakVersion) && void 0 !== n ? n : -1
                 }
                 getParticipantCount(e, t) {
                     var n, r;
-                    return null !== (r = null === (n = y(e)) || void 0 === n ? void 0 : n.size(t)) && void 0 !== r ? r : 0
+                    return null !== (r = null === (n = D(e)) || void 0 === n ? void 0 : n.size(t)) && void 0 !== r ? r : 0
                 }
                 getChannels(e) {
-                    return m(null != e ? e : O.NO_GUILD_STRING_GUILD_ID), h.values(null != e ? e : O.NO_GUILD_STRING_GUILD_ID)
+                    return y(null != e ? e : O), h.values(null != e ? e : O)
                 }
                 getChannelsVersion() {
                     return h.version
                 }
                 getParticipant(e, t) {
                     var n, r;
-                    return null !== (r = null === (n = y(e)) || void 0 === n ? void 0 : n.getParticipant(t)) && void 0 !== r ? r : null
+                    return null !== (r = null === (n = D(e)) || void 0 === n ? void 0 : n.getParticipant(t)) && void 0 !== r ? r : null
                 }
             }
             Y.displayName = "StageChannelParticipantStore";
@@ -3077,7 +3077,7 @@
                     let {
                         guildId: t
                     } = e;
-                    if (P.has(t)) return M(e => e.rebuild(), D(t))
+                    if (P.has(t)) return M(e => e.rebuild(), m(t))
                 },
                 RTC_CONNECTION_VIDEO: function(e) {
                     let {
@@ -3095,7 +3095,7 @@
                 GUILD_DELETE: x,
                 PASSIVE_UPDATE_V1: function(e) {
                     let t = !1;
-                    for (let n of D(e.guildId)) t = v(n).rebuild() || t;
+                    for (let n of m(e.guildId)) t = v(n).rebuild() || t;
                     return t
                 }
             })
@@ -3116,8 +3116,8 @@
             var r, i, l, u, a, o = n("407846"),
                 s = n("246846"),
                 d = n("374014"),
-                _ = n("373469"),
-                E = n("42203"),
+                E = n("373469"),
+                _ = n("42203"),
                 c = n("124948"),
                 I = n("26989"),
                 S = n("27618"),
@@ -3140,8 +3140,8 @@
                     connectedOn: u,
                     voiceState: a,
                     type: o
-                } = e, d = a.selfMute ? "\x01" : "\x00", _ = a.selfVideo ? "\x00" : "\x01", E = "".concat(null !== (t = null == r ? void 0 : r.position) && void 0 !== t ? t : 999).padStart(3, "0");
-                return "".concat(n ? "\x00" : "\x01").concat("STREAM" === o ? "\x00" : "\x01").concat(d).concat(_).concat(E).concat(u).concat((0, s.default)(l, i))
+                } = e, d = a.selfMute ? "\x01" : "\x00", E = a.selfVideo ? "\x00" : "\x01", _ = "".concat(null !== (t = null == r ? void 0 : r.position) && void 0 !== t ? t : 999).padStart(3, "0");
+                return "".concat(n ? "\x00" : "\x01").concat("STREAM" === o ? "\x00" : "\x01").concat(d).concat(E).concat(_).concat(u).concat((0, s.default)(l, i))
             }
 
             function h(e) {
@@ -3186,14 +3186,14 @@
                             isFriend: S.default.isFriend(a.id),
                             connectedOn: null !== (n = null == o ? void 0 : o.connectedOn) && void 0 !== n ? n : Date.now()
                         },
-                        E = {
+                        _ = {
                             ...s,
                             type: "VOICE",
                             id: a.id,
                             rtsState: (0, R.getAudienceRequestToSpeakState)(u)
                         };
-                    l.push(E);
-                    let O = null !== (r = _.default.getStreamForUser(e, this.guildId)) && void 0 !== r ? r : _.default.getActiveStreamForUser(e, this.guildId);
+                    l.push(_);
+                    let O = null !== (r = E.default.getStreamForUser(e, this.guildId)) && void 0 !== r ? r : E.default.getActiveStreamForUser(e, this.guildId);
                     if (null != O && O.channelId === this.channelId) {
                         let e = (0, d.encodeStreamKey)(O);
                         i = {
@@ -3215,7 +3215,7 @@
                     }), this.participants[e] = n, !0)
                 }
                 rebuild() {
-                    let e = E.default.getChannel(this.channelId);
+                    let e = _.default.getChannel(this.channelId);
                     if (null == e || !e.isGuildStageVoice()) return !1;
                     let t = new Set(Object.keys(f.default.getVoiceStatesForChannel(e.id)));
                     return this._participantsIndex.clear(), this._requestToSpeakIndex.clear(), this.participants = {}, t.forEach(e => this.updateParticipant(e)), !0
@@ -3241,7 +3241,7 @@
                 }
                 constructor(e) {
                     var t;
-                    this.participants = {}, this._participantsIndex = new o.default(g, O), this._requestToSpeakIndex = new o.default(() => [], h), this.channelId = e, this.guildId = null === (t = E.default.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
+                    this.participants = {}, this._participantsIndex = new o.default(g, O), this._requestToSpeakIndex = new o.default(() => [], h), this.channelId = e, this.guildId = null === (t = _.default.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
                 }
             }
         },
@@ -3258,8 +3258,8 @@
                 o = n("913144"),
                 s = n("42203"),
                 d = n("923959"),
-                _ = n("26989"),
-                E = n("305961"),
+                E = n("26989"),
+                _ = n("305961"),
                 c = n("697218"),
                 I = n("800762"),
                 S = n("991170"),
@@ -3280,7 +3280,7 @@
                     let l = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                         u = s.default.getChannel(t),
                         a = null == u ? void 0 : u.getGuildId(),
-                        o = E.default.getGuild(a);
+                        o = _.default.getGuild(a);
                     if (null == o || null == u || !u.isGuildStageVoice()) return N;
                     return {
                         speaker: function(e, t) {
@@ -3345,7 +3345,7 @@
             }
             class h extends a.default.Store {
                 initialize() {
-                    this.waitFor(_.default, s.default, E.default, c.default, I.default)
+                    this.waitFor(E.default, s.default, _.default, c.default, I.default)
                 }
                 isSpeaker(e, t) {
                     return this.getPermissionsForUser(e, t).speaker
@@ -3498,40 +3498,41 @@
             let r, i, l, u;
             n.r(t), n.d(t, {
                 default: function() {
-                    return G
+                    return B
                 }
             }), n("222007"), n("424973"), n("808653");
             var a = n("446674"),
                 o = n("913144"),
                 s = n("76393"),
                 d = n("161454"),
-                _ = n("374014"),
-                E = n("223913"),
+                E = n("374014"),
+                _ = n("223913"),
                 c = n("537429"),
-                I = n("271938"),
-                S = n("42203"),
-                T = n("305961"),
-                f = n("42887"),
-                p = n("957255"),
-                N = n("945956"),
-                A = n("18494"),
-                R = n("800762"),
-                C = n("49111"),
-                L = n("706530");
-            let O = null,
-                h = {},
-                P = null;
+                I = n("756898"),
+                S = n("271938"),
+                T = n("42203"),
+                f = n("305961"),
+                p = n("42887"),
+                N = n("957255"),
+                A = n("945956"),
+                R = n("18494"),
+                C = n("800762"),
+                L = n("49111"),
+                O = n("706530");
+            let h = null,
+                P = {},
+                g = null;
 
-            function g() {
-                r = new Map, i = {}, l = {}, u = {}, h = {}
+            function m() {
+                r = new Map, i = {}, l = {}, u = {}, P = {}
             }
-            g();
+            m();
 
-            function D(e) {
+            function y(e) {
                 r.delete(e)
             }
 
-            function m() {
+            function D() {
                 let e = [];
                 for (let t in i) {
                     let n = i[t];
@@ -3540,7 +3541,7 @@
                 return e
             }
 
-            function y(e) {
+            function v(e) {
                 let {
                     streamKey: t,
                     region: n,
@@ -3548,8 +3549,8 @@
                     paused: u
                 } = e;
                 r.set(t, {
-                    ...(0, _.decodeStreamKey)(t),
-                    state: u ? C.ApplicationStreamStates.PAUSED : C.ApplicationStreamStates.ACTIVE
+                    ...(0, E.decodeStreamKey)(t),
+                    state: u ? L.ApplicationStreamStates.PAUSED : L.ApplicationStreamStates.ACTIVE
                 }), l[t] = {
                     streamKey: t,
                     region: n,
@@ -3557,48 +3558,48 @@
                 }
             }
 
-            function v(e, t) {
-                let n = S.default.getBasicChannel(t);
-                return e === L.StreamTypes.CALL || null != n && p.default.canBasicChannel(C.BasicPermissions.VIEW_CHANNEL, n)
+            function U(e, t) {
+                let n = T.default.getBasicChannel(t);
+                return e === O.StreamTypes.CALL || null != n && N.default.canBasicChannel(L.BasicPermissions.VIEW_CHANNEL, n)
             }
 
-            function U(e) {
-                if (v(e.streamType, e.channelId)) return !0;
-                let t = S.default.getBasicChannel(e.channelId);
-                return null != t && (0, E.canWatchStream)(t, R.default, T.default, p.default, s.default)[0]
+            function M(e) {
+                if (U(e.streamType, e.channelId)) return !0;
+                let t = T.default.getBasicChannel(e.channelId);
+                return null != t && (0, _.canWatchStream)(t, C.default, f.default, N.default, s.default)[0]
             }
-            class M extends a.default.Store {
+            class G extends a.default.Store {
                 initialize() {
-                    this.syncWith([p.default], () => !0), this.waitFor(d.default, p.default)
+                    this.syncWith([N.default], () => !0), this.waitFor(d.default, N.default)
                 }
                 isSelfStreamHidden(e) {
                     var t;
-                    return null !== (t = h[e]) && void 0 !== t && t
+                    return null !== (t = P[e]) && void 0 !== t && t
                 }
                 getLastActiveStream() {
                     var e;
-                    return (0, c.default)(f.default) ? null !== (e = Array.from(r.values()).pop()) && void 0 !== e ? e : null : null
+                    return (0, c.default)(p.default) ? null !== (e = Array.from(r.values()).pop()) && void 0 !== e ? e : null : null
                 }
                 getAllActiveStreams() {
-                    return (0, c.default)(f.default) ? Array.from(r.values()) : []
+                    return (0, c.default)(p.default) ? Array.from(r.values()) : []
                 }
                 getAllActiveStreamsForChannel(e) {
-                    return (0, c.default)(f.default) ? Array.from(r.values()).filter(t => t.channelId === e) : []
+                    return (0, c.default)(p.default) ? Array.from(r.values()).filter(t => t.channelId === e) : []
                 }
                 getActiveStreamForStreamKey(e) {
                     var t;
-                    return (0, c.default)(f.default) ? null !== (t = r.get(e)) && void 0 !== t ? t : null : null
+                    return (0, c.default)(p.default) ? null !== (t = r.get(e)) && void 0 !== t ? t : null : null
                 }
                 getActiveStreamForApplicationStream(e) {
                     var t;
-                    if (!(0, c.default)(f.default) || null == e) return null;
-                    let n = (0, _.encodeStreamKey)(e);
+                    if (!(0, c.default)(p.default) || null == e) return null;
+                    let n = (0, E.encodeStreamKey)(e);
                     return null !== (t = this.getActiveStreamForStreamKey(n)) && void 0 !== t ? t : null
                 }
                 getCurrentUserActiveStream() {
-                    let e = A.default.getVoiceChannelId(),
-                        t = S.default.getChannel(e);
-                    return null == t ? null : this.getActiveStreamForUser(I.default.getId(), t.getGuildId())
+                    let e = R.default.getVoiceChannelId(),
+                        t = T.default.getChannel(e);
+                    return null == t ? null : this.getActiveStreamForUser(S.default.getId(), t.getGuildId())
                 }
                 getActiveStreamForUser(e, t) {
                     var n;
@@ -3607,11 +3608,11 @@
                 }
                 getStreamerActiveStreamMetadata() {
                     var e;
-                    let t = A.default.getVoiceChannelId(),
-                        n = S.default.getChannel(t);
+                    let t = R.default.getVoiceChannelId(),
+                        n = T.default.getChannel(t);
                     if (null == n) return null;
-                    let r = this.getActiveStreamForUser(I.default.getId(), n.getGuildId());
-                    return null == r ? null : null !== (e = u[(0, _.encodeStreamKey)(r)]) && void 0 !== e ? e : null
+                    let r = this.getActiveStreamForUser(S.default.getId(), n.getGuildId());
+                    return null == r ? null : null !== (e = u[(0, E.encodeStreamKey)(r)]) && void 0 !== e ? e : null
                 }
                 getStreamerActiveStreamMetadataForStream(e) {
                     var t;
@@ -3619,38 +3620,38 @@
                 }
                 getAnyStreamForUser(e) {
                     var t;
-                    if (!(0, c.default)(f.default)) return null;
+                    if (!(0, c.default)(p.default)) return null;
                     let n = i[e];
-                    return null == n ? null : null !== (t = Object.values(n).find(e => U(e))) && void 0 !== t ? t : null
+                    return null == n ? null : null !== (t = Object.values(n).find(e => M(e))) && void 0 !== t ? t : null
                 }
                 getStreamForUser(e, t) {
                     var n;
-                    if (!(0, c.default)(f.default)) return null;
-                    let r = null === (n = i[e]) || void 0 === n ? void 0 : n[null != t ? t : C.NULL_STRING_GUILD_ID];
-                    return null != r && U(r) ? r : null
+                    if (!(0, c.default)(p.default)) return null;
+                    let r = null === (n = i[e]) || void 0 === n ? void 0 : n[null != t ? t : L.NULL_STRING_GUILD_ID];
+                    return null != r && M(r) ? r : null
                 }
                 getRTCStream(e) {
                     var t;
-                    return (0, c.default)(f.default) ? null !== (t = l[e]) && void 0 !== t ? t : null : null
+                    return (0, c.default)(p.default) ? null !== (t = l[e]) && void 0 !== t ? t : null : null
                 }
                 getAllApplicationStreams() {
-                    return (0, c.default)(f.default) ? m().filter(e => null != e && v(e.streamType, e.channelId)) : []
+                    return (0, c.default)(p.default) ? D().filter(e => null != e && U(e.streamType, e.channelId)) : []
                 }
                 getAllApplicationStreamsForChannel(e) {
-                    return (0, c.default)(f.default) ? m().filter(t => null != t && t.channelId === e && v(t.streamType, t.channelId)) : []
+                    return (0, c.default)(p.default) ? D().filter(t => null != t && t.channelId === e && U(t.streamType, t.channelId)) : []
                 }
                 getViewerIds(e) {
-                    if (!(0, c.default)(f.default)) return [];
+                    if (!(0, c.default)(p.default)) return [];
                     let t = null;
-                    t = "string" == typeof e ? e : (0, _.encodeStreamKey)(e);
+                    t = "string" == typeof e ? e : (0, E.encodeStreamKey)(e);
                     let n = null != t ? l[t] : null;
                     return null != n ? n.viewerIds : []
                 }
                 getCurrentAppIntent() {
-                    return P
+                    return g
                 }
                 getState() {
-                    return (0, c.default)(f.default) ? {
+                    return (0, c.default)(p.default) ? {
                         activeStreams: Array.from(r.entries()),
                         streamsByUserAndGuild: i,
                         rtcStreams: l,
@@ -3663,8 +3664,8 @@
                     }
                 }
             }
-            M.displayName = "ApplicationStreamingStore";
-            var G = new M(o.default, {
+            G.displayName = "ApplicationStreamingStore";
+            var B = new G(o.default, {
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         applicationStreamState: t
@@ -3686,16 +3687,16 @@
                         if (a && null != l) {
                             var o, s;
                             return null == i[(o = {
-                                streamType: null != r ? L.StreamTypes.GUILD : L.StreamTypes.CALL,
+                                streamType: null != r ? O.StreamTypes.GUILD : O.StreamTypes.CALL,
                                 ownerId: n,
                                 guildId: r,
                                 channelId: l
-                            }).ownerId] && (i[o.ownerId] = {}), i[o.ownerId][null !== (s = o.guildId) && void 0 !== s ? s : C.NULL_STRING_GUILD_ID] = o, !0
+                            }).ownerId] && (i[o.ownerId] = {}), i[o.ownerId][null !== (s = o.guildId) && void 0 !== s ? s : L.NULL_STRING_GUILD_ID] = o, !0
                         } {
-                            let t = I.default.getSessionId();
-                            return n === I.default.getId() && u !== t && null != N.default.getChannelId() ? e : function(e, t) {
+                            let t = S.default.getSessionId();
+                            return n === S.default.getId() && u !== t && null != A.default.getChannelId() ? e : function(e, t) {
                                 var n;
-                                let r = null != t ? t : C.NULL_STRING_GUILD_ID;
+                                let r = null != t ? t : L.NULL_STRING_GUILD_ID;
                                 return (null === (n = i[e]) || void 0 === n ? void 0 : n[r]) != null && (delete i[e][r], !0)
                             }(n, r) || e
                         }
@@ -3704,35 +3705,37 @@
                 STREAM_WATCH: function(e) {
                     let {
                         streamKey: t
-                    } = e, n = (0, _.decodeStreamKey)(t);
+                    } = e, n = (0, E.decodeStreamKey)(t);
                     r.delete(t), r.set(t, {
                         ...n,
-                        state: C.ApplicationStreamStates.CONNECTING
-                    }), n.ownerId === I.default.getId() && (h[n.channelId] = !1)
+                        state: L.ApplicationStreamStates.CONNECTING
+                    }), n.ownerId === S.default.getId() && (P[n.channelId] = !1)
                 },
                 STREAM_START: function(e) {
+                    var t;
                     let {
-                        streamType: t,
-                        guildId: n,
-                        channelId: i,
-                        pid: l,
-                        sourceName: a
-                    } = e, o = (0, _.encodeStreamKey)({
-                        streamType: t,
-                        guildId: n,
-                        channelId: i,
-                        ownerId: I.default.getId()
-                    }), s = null != l ? d.default.getGameForPID(l) : null;
-                    u[o] = {
-                        id: null == s ? void 0 : s.id,
-                        pid: l,
-                        sourceName: a
-                    }, r.delete(o), r.set(o, {
-                        streamType: t,
-                        guildId: n,
-                        channelId: i,
-                        ownerId: I.default.getId(),
-                        state: C.ApplicationStreamStates.CONNECTING
+                        streamType: n,
+                        guildId: i,
+                        channelId: l,
+                        pid: a,
+                        sourceName: o,
+                        sourceId: s
+                    } = e, _ = (0, E.encodeStreamKey)({
+                        streamType: n,
+                        guildId: i,
+                        channelId: l,
+                        ownerId: S.default.getId()
+                    }), c = null !== (t = null != a ? d.default.getGameForPID(a) : null != s ? d.default.getRunningGames().find(e => (0, I.default)(s, e.windowHandle)) : null) && void 0 !== t ? t : null;
+                    u[_] = {
+                        id: null == c ? void 0 : c.id,
+                        pid: a,
+                        sourceName: o
+                    }, r.delete(_), r.set(_, {
+                        streamType: n,
+                        guildId: i,
+                        channelId: l,
+                        ownerId: S.default.getId(),
+                        state: L.ApplicationStreamStates.CONNECTING
                     })
                 },
                 STREAM_STOP: function(e) {
@@ -3741,8 +3744,8 @@
                     } = e;
                     u[t] = null
                 },
-                STREAM_CREATE: y,
-                STREAM_UPDATE: y,
+                STREAM_CREATE: v,
+                STREAM_UPDATE: v,
                 STREAM_TIMED_OUT: function(e) {
                     let {
                         streamKey: t
@@ -3750,7 +3753,7 @@
                     if (null == n) return !1;
                     r.set(t, {
                         ...n,
-                        state: C.ApplicationStreamStates.FAILED
+                        state: L.ApplicationStreamStates.FAILED
                     })
                 },
                 STREAM_DELETE: function(e) {
@@ -3762,43 +3765,43 @@
                     delete l[t];
                     let a = r.get(t);
                     if (null == a) return !1;
-                    let o = C.ApplicationStreamStates.ENDED;
-                    if (i) o = C.ApplicationStreamStates.RECONNECTING;
-                    else if (u === C.ApplicationStreamDeleteReasons.UNAUTHORIZED) o = C.ApplicationStreamStates.FAILED;
-                    else if (u === C.ApplicationStreamDeleteReasons.SAFETY_GUILD_RATE_LIMITED) {
+                    let o = L.ApplicationStreamStates.ENDED;
+                    if (i) o = L.ApplicationStreamStates.RECONNECTING;
+                    else if (u === L.ApplicationStreamDeleteReasons.UNAUTHORIZED) o = L.ApplicationStreamStates.FAILED;
+                    else if (u === L.ApplicationStreamDeleteReasons.SAFETY_GUILD_RATE_LIMITED) {
                         let {
                             guildId: e
-                        } = (0, _.decodeStreamKey)(t);
+                        } = (0, E.decodeStreamKey)(t);
                         n.el("772545").then(n.bind(n, "772545")).then(t => {
                             let {
                                 default: n
                             } = t;
                             n(e)
-                        }), o = C.ApplicationStreamStates.ENDED
+                        }), o = L.ApplicationStreamStates.ENDED
                     }
                     r.set(t, {
                         ...a,
                         state: o
-                    }), o === C.ApplicationStreamStates.ENDED && O !== t && D(t)
+                    }), o === L.ApplicationStreamStates.ENDED && h !== t && y(t)
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    y(t)
                 },
                 STREAM_UPDATE_SELF_HIDDEN: function(e) {
                     let {
                         channelId: t,
                         selfStreamHidden: n
-                    } = e, r = (0, _.isStreamKey)(O);
-                    r && (null == O ? void 0 : O.includes(I.default.getId())) && !1 === h[t] && !0 === n && (O = null), h[t] = n
+                    } = e, r = (0, E.isStreamKey)(h);
+                    r && (null == h ? void 0 : h.includes(S.default.getId())) && !1 === P[t] && !0 === n && (h = null), P[t] = n
                 },
                 SET_STREAM_APP_INTENT: function(e) {
                     let {
                         intent: t
                     } = e;
-                    P = t
+                    g = t
                 },
                 RTC_CONNECTION_STATE: function(e) {
                     let {
@@ -3807,14 +3810,14 @@
                     } = e;
                     if (null == t) return !1;
                     let i = r.get(t);
-                    if (null == i || i.state === C.ApplicationStreamStates.ENDED) return !1;
+                    if (null == i || i.state === L.ApplicationStreamStates.ENDED) return !1;
                     let l = i.state;
                     switch (n) {
-                        case C.RTCConnectionStates.DISCONNECTED:
-                            l = C.ApplicationStreamStates.RECONNECTING;
+                        case L.RTCConnectionStates.DISCONNECTED:
+                            l = L.ApplicationStreamStates.RECONNECTING;
                             break;
-                        case C.RTCConnectionStates.RTC_CONNECTED:
-                            l = C.ApplicationStreamStates.ACTIVE
+                        case L.RTCConnectionStates.RTC_CONNECTED:
+                            l = L.ApplicationStreamStates.ACTIVE
                     }
                     if (l === i.state) return !1;
                     r.set(t, {
@@ -3827,15 +3830,15 @@
                         id: t,
                         channelId: n
                     } = e;
-                    if (O = t, Array.from(r.values()).forEach(e => {
-                            (0, _.encodeStreamKey)(e) !== O && e.state === C.ApplicationStreamStates.ENDED && D((0, _.encodeStreamKey)(e))
+                    if (h = t, Array.from(r.values()).forEach(e => {
+                            (0, E.encodeStreamKey)(e) !== h && e.state === L.ApplicationStreamStates.ENDED && y((0, E.encodeStreamKey)(e))
                         }), null == t) return;
-                    let i = (0, _.isStreamKey)(t);
-                    i && t.includes(I.default.getId()) && (h[n] = !1)
+                    let i = (0, E.isStreamKey)(t);
+                    i && t.includes(S.default.getId()) && (P[n] = !1)
                 },
-                CONNECTION_OPEN: g,
-                CONNECTION_CLOSED: g,
-                LOGOUT: g
+                CONNECTION_OPEN: m,
+                CONNECTION_CLOSED: m,
+                LOGOUT: m
             })
         },
         124948: function(e, t, n) {
@@ -3853,7 +3856,7 @@
                 o = n("560208"),
                 s = n("42203"),
                 d = n("26989");
-            let _ = new a.default(d.default.isMember, (e, t) => {
+            let E = new a.default(d.default.isMember, (e, t) => {
                 u.default.dispatch({
                     type: "GUILD_MEMBERS_REQUEST",
                     guildIds: [e],
@@ -3861,12 +3864,12 @@
                 })
             });
 
-            function E() {
-                _.reset()
+            function _() {
+                E.reset()
             }
 
             function c(e, t) {
-                return _.request(e, t), !1
+                return E.request(e, t), !1
             }
 
             function I(e, t) {
@@ -3904,10 +3907,10 @@
             }
             f.displayName = "GuildMemberRequesterStore";
             var p = new f(u.default, {
-                CONNECTION_CLOSED: E,
-                CONNECTION_OPEN: E,
+                CONNECTION_CLOSED: _,
+                CONNECTION_OPEN: _,
                 CONNECTION_RESUMED: function() {
-                    return _.requestUnacknowledged(), !1
+                    return E.requestUnacknowledged(), !1
                 },
                 GUILD_MEMBERS_CHUNK: function(e) {
                     let {
@@ -3916,8 +3919,8 @@
                         notFound: r
                     } = e;
                     return n.forEach(e => {
-                        _.acknowledge(t, e.user.id)
-                    }), null != r && r.forEach(e => _.acknowledge(t, e)), !1
+                        E.acknowledge(t, e.user.id)
+                    }), null != r && r.forEach(e => E.acknowledge(t, e)), !1
                 },
                 SEARCH_FINISH: T,
                 MOD_VIEW_SEARCH_FINISH: T,
@@ -3971,12 +3974,12 @@
                 })
             }
 
-            function _(e) {
+            function E(e) {
                 return d(e.code, t => {
                     t.state = "banned" in e && e.banned ? u.InviteStates.BANNED : u.InviteStates.EXPIRED
                 })
             }
-            class E extends r.default.Store {
+            class _ extends r.default.Store {
                 getInvite(e) {
                     return a[e]
                 }
@@ -3990,8 +3993,8 @@
                     return s[e]
                 }
             }
-            E.displayName = "InviteStore";
-            var c = new E(i.default, {
+            _.displayName = "InviteStore";
+            var c = new _(i.default, {
                 INVITE_RESOLVE: function(e) {
                     let {
                         code: t
@@ -4010,8 +4013,8 @@
                         t.state = u.InviteStates.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null !== (n = e.invite.approximate_member_count) && void 0 !== n ? n : null, t.approximate_presence_count = null !== (r = e.invite.approximate_presence_count) && void 0 !== r ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.expires_at = e.invite.expires_at, t.stage_instance = e.invite.stage_instance, t.friends_count = e.invite.friends_count, t.is_contact = e.invite.is_contact, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.flags = e.invite.flags
                     })
                 },
-                INVITE_RESOLVE_FAILURE: _,
-                INSTANT_INVITE_REVOKE_SUCCESS: _,
+                INVITE_RESOLVE_FAILURE: E,
+                INSTANT_INVITE_REVOKE_SUCCESS: E,
                 FRIEND_INVITE_CREATE_SUCCESS: function(e) {
                     return d(e.invite.code, t => {
                         t.state = u.InviteStates.RESOLVED, t.inviter = e.invite.inviter
@@ -4078,28 +4081,28 @@
                 o = n("945956"),
                 s = n("18494"),
                 d = n("49111"),
-                _ = n("353927");
-            let E = new Map,
+                E = n("353927");
+            let _ = new Map,
                 c = null,
                 I = null,
                 S = null;
 
             function T(e, t) {
-                let n = E.get(e);
+                let n = _.get(e);
                 if (null == n) return !1;
                 let r = n.delete(t);
-                return 0 === n.size && E.delete(e), r
+                return 0 === n.size && _.delete(e), r
             }
 
             function f(e, t, n) {
                 var r, i, l;
-                let u = null !== (l = null === (i = E.get(e)) || void 0 === i ? void 0 : null === (r = i.get(t)) || void 0 === r ? void 0 : r.flags) && void 0 !== l ? l : _.SpeakingFlags.NONE;
+                let u = null !== (l = null === (i = _.get(e)) || void 0 === i ? void 0 : null === (r = i.get(t)) || void 0 === r ? void 0 : r.flags) && void 0 !== l ? l : E.SpeakingFlags.NONE;
                 return (u & n) === n
             }
 
             function p(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                    r = E.get(e);
+                    r = _.get(e);
                 if (null == r) return !1;
                 for (let [e, {
                         flags: i
@@ -4121,41 +4124,41 @@
                 }
                 getSpeakingDuration(e, t) {
                     var n, r;
-                    let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : _.MediaEngineContextTypes.DEFAULT,
-                        l = null === (r = E.get(i)) || void 0 === r ? void 0 : null === (n = r.get(e)) || void 0 === n ? void 0 : n.since;
+                    let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.MediaEngineContextTypes.DEFAULT,
+                        l = null === (r = _.get(i)) || void 0 === r ? void 0 : null === (n = r.get(e)) || void 0 === n ? void 0 : n.since;
                     return null != l ? t - l : 0
                 }
                 getSpeakers() {
                     var e, t;
-                    let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _.MediaEngineContextTypes.DEFAULT;
-                    return Array.from(null !== (t = null === (e = E.get(n)) || void 0 === e ? void 0 : e.keys()) && void 0 !== t ? t : []).filter(e => f(n, e, _.SpeakingFlags.VOICE))
+                    let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E.MediaEngineContextTypes.DEFAULT;
+                    return Array.from(null !== (t = null === (e = _.get(n)) || void 0 === e ? void 0 : e.keys()) && void 0 !== t ? t : []).filter(e => f(n, e, E.SpeakingFlags.VOICE))
                 }
                 isSpeaking(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _.MediaEngineContextTypes.DEFAULT;
-                    return f(t, e, _.SpeakingFlags.VOICE)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E.MediaEngineContextTypes.DEFAULT;
+                    return f(t, e, E.SpeakingFlags.VOICE)
                 }
                 isPrioritySpeaker(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _.MediaEngineContextTypes.DEFAULT;
-                    return f(t, e, _.SpeakingFlags.PRIORITY)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E.MediaEngineContextTypes.DEFAULT;
+                    return f(t, e, E.SpeakingFlags.PRIORITY)
                 }
                 isSoundSharing(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _.MediaEngineContextTypes.DEFAULT;
-                    return f(t, e, _.SpeakingFlags.SOUNDSHARE)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E.MediaEngineContextTypes.DEFAULT;
+                    return f(t, e, E.SpeakingFlags.SOUNDSHARE)
                 }
                 isAnyoneElseSpeaking() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _.MediaEngineContextTypes.DEFAULT;
-                    return p(e, _.SpeakingFlags.VOICE, !0)
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E.MediaEngineContextTypes.DEFAULT;
+                    return p(e, E.SpeakingFlags.VOICE, !0)
                 }
                 isCurrentUserSpeaking() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _.MediaEngineContextTypes.DEFAULT;
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E.MediaEngineContextTypes.DEFAULT;
                     return null != c && this.isSpeaking(c, e)
                 }
                 isAnyonePrioritySpeaking() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _.MediaEngineContextTypes.DEFAULT;
-                    return p(e, _.SpeakingFlags.VOICE | _.SpeakingFlags.PRIORITY)
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E.MediaEngineContextTypes.DEFAULT;
+                    return p(e, E.SpeakingFlags.VOICE | E.SpeakingFlags.PRIORITY)
                 }
                 isCurrentUserPrioritySpeaking() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _.MediaEngineContextTypes.DEFAULT;
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E.MediaEngineContextTypes.DEFAULT;
                     return null != c && this.isPrioritySpeaker(c, e) && this.isSpeaking(c, e)
                 }
             }
@@ -4169,29 +4172,29 @@
                         userId: n,
                         speakingFlags: r
                     } = e;
-                    if ((r & _.SpeakingFlags.PRIORITY) === _.SpeakingFlags.PRIORITY) {
+                    if ((r & E.SpeakingFlags.PRIORITY) === E.SpeakingFlags.PRIORITY) {
                         let e = u.default.getChannel(s.default.getVoiceChannelId());
                         null != e && l.default.can({
                             permission: d.Permissions.PRIORITY_SPEAKER,
                             user: n,
                             context: e
-                        }) ? a.default.setCanHavePriority(n, !0) : (a.default.setCanHavePriority(n, !1), r &= ~_.SpeakingFlags.PRIORITY)
+                        }) ? a.default.setCanHavePriority(n, !0) : (a.default.setCanHavePriority(n, !1), r &= ~E.SpeakingFlags.PRIORITY)
                     }
                     return function(e, t, n) {
                         var r, i;
                         let l = function() {
-                                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _.MediaEngineContextTypes.DEFAULT,
-                                    t = E.get(e);
-                                return null == t && (t = new Map, E.set(e, t)), t
+                                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E.MediaEngineContextTypes.DEFAULT,
+                                    t = _.get(e);
+                                return null == t && (t = new Map, _.set(e, t)), t
                             }(e),
                             u = l.get(t),
                             a = null !== (r = null == u ? void 0 : u.flags) && void 0 !== r ? r : 0;
                         if (0 === a && 0 === n) return !1;
-                        if (0 === n) l.delete(t), 0 === l.size && E.delete(e);
+                        if (0 === n) l.delete(t), 0 === l.size && _.delete(e);
                         else {
                             let e = null !== (i = null == u ? void 0 : u.since) && void 0 !== i ? i : null,
-                                r = (a & _.SpeakingFlags.VOICE) === _.SpeakingFlags.VOICE,
-                                o = (n & _.SpeakingFlags.VOICE) === _.SpeakingFlags.VOICE;
+                                r = (a & E.SpeakingFlags.VOICE) === E.SpeakingFlags.VOICE,
+                                o = (n & E.SpeakingFlags.VOICE) === E.SpeakingFlags.VOICE;
                             r !== o && (e = o ? Date.now() : null), l.set(t, {
                                 flags: n,
                                 since: e
@@ -4210,7 +4213,7 @@
                             channelId: r,
                             sessionId: i
                         } = t, l = !1, u = S;
-                        return n === c && i === I && (S = null != r ? r : null), u !== S && (l = E.delete(_.MediaEngineContextTypes.DEFAULT) || l), null == r ? l = n === c && i === I ? E.delete(_.MediaEngineContextTypes.DEFAULT) || l : T(_.MediaEngineContextTypes.DEFAULT, n) || l : n === c && i !== I ? l = E.delete(_.MediaEngineContextTypes.DEFAULT) || l : n !== c && r !== o.default.getChannelId() && (l = T(_.MediaEngineContextTypes.DEFAULT, n) || l), l || e
+                        return n === c && i === I && (S = null != r ? r : null), u !== S && (l = _.delete(E.MediaEngineContextTypes.DEFAULT) || l), null == r ? l = n === c && i === I ? _.delete(E.MediaEngineContextTypes.DEFAULT) || l : T(E.MediaEngineContextTypes.DEFAULT, n) || l : n === c && i !== I ? l = _.delete(E.MediaEngineContextTypes.DEFAULT) || l : n !== c && r !== o.default.getChannelId() && (l = T(E.MediaEngineContextTypes.DEFAULT, n) || l), l || e
                     }, !1)
                 },
                 LOBBY_VOICE_STATE_UPDATE: function(e) {}
@@ -4271,16 +4274,16 @@
                     return g
                 },
                 permissionOverwritesForAnnouncement: function() {
-                    return D
+                    return m
                 },
                 isChannelFull: function() {
-                    return m
+                    return y
                 },
                 sanitizeGuildTextChannelName: function() {
                     return l.default
                 },
                 getBitrateLimit: function() {
-                    return y
+                    return D
                 },
                 computeSummarizedVoiceUsers: function() {
                     return v
@@ -4309,8 +4312,8 @@
                 o = n("808422"),
                 s = n("233069"),
                 d = n("42203"),
-                _ = n("923959"),
-                E = n("957255"),
+                E = n("923959"),
+                _ = n("957255"),
                 c = n("18494"),
                 I = n("316133"),
                 S = n("991170"),
@@ -4364,7 +4367,7 @@
                 return O(e, t, i.PermissionOverwriteType.ROLE)
             }
 
-            function D(e) {
+            function m(e) {
                 return [{
                     id: e,
                     type: i.PermissionOverwriteType.ROLE,
@@ -4373,22 +4376,22 @@
                 }]
             }
 
-            function m(e, t, n) {
+            function y(e, t, n) {
                 var r, i;
                 let l = e.getGuildId(),
                     a = n.getGuild(l),
                     o = null !== (r = null == a ? void 0 : a.maxVideoChannelUsers) && void 0 !== r ? r : -1,
                     s = null !== (i = null == a ? void 0 : a.maxStageVideoChannelUsers) && void 0 !== i ? i : -1,
                     d = I.default.countVoiceStatesForChannel(e.id),
-                    _ = I.default.getVoiceStatesForChannel(e),
-                    c = E.default.can(f.Permissions.MOVE_MEMBERS, e) && E.default.can(f.Permissions.CONNECT, e),
+                    E = I.default.getVoiceStatesForChannel(e),
+                    c = _.default.can(f.Permissions.MOVE_MEMBERS, e) && _.default.can(f.Permissions.CONNECT, e),
                     S = !1;
-                S = e.type === C ? null != l && (t.hasVideo(e.id) || (0, u.hasStream)(_)) && s > 0 && d >= s : null != l && t.hasVideo(e.id) && o > 0 && d >= o + (c ? 1 : 0);
+                S = e.type === C ? null != l && (t.hasVideo(e.id) || (0, u.hasStream)(E)) && s > 0 && d >= s : null != l && t.hasVideo(e.id) && o > 0 && d >= o + (c ? 1 : 0);
                 let T = e.userLimit > 0 && d >= e.userLimit;
                 return S || T && !c
             }
 
-            function y(e, t) {
+            function D(e, t) {
                 return t.isGuildStageVoice() ? f.BITRATE_DEFAULT : null == e ? f.BITRATE_MAX : Math.max(e.hasFeature(f.GuildFeatures.VIP_REGIONS) ? p.BoostedGuildFeatures[f.BoostedGuildTiers.TIER_3].limits.bitrate : f.BITRATE_MAX, p.BoostedGuildFeatures[e.premiumTier].limits.bitrate)
             }
 
@@ -4454,8 +4457,8 @@
             function M(e) {
                 if (null == e) return "text";
                 let t = e.isMediaChannel();
-                if (e.type === f.ChannelTypes.GUILD_VOICE) return E.default.can(f.Permissions.CONNECT, e) ? "voice" : "voice-locked";
-                if (e.type === f.ChannelTypes.GUILD_STAGE_VOICE) return E.default.can(f.Permissions.CONNECT, e) ? "stage" : "stage-locked";
+                if (e.type === f.ChannelTypes.GUILD_VOICE) return _.default.can(f.Permissions.CONNECT, e) ? "voice" : "voice-locked";
+                if (e.type === f.ChannelTypes.GUILD_STAGE_VOICE) return _.default.can(f.Permissions.CONNECT, e) ? "stage" : "stage-locked";
                 if (s.THREAD_CHANNEL_TYPES.has(e.type)) return e.isForumPost() ? "post" : "thread";
                 else if (e.type === f.ChannelTypes.GUILD_FORUM) return t ? "media" : "forum";
                 else if (e.type === f.ChannelTypes.GUILD_MEDIA) return "media";
@@ -4467,7 +4470,7 @@
                 let n = d.default.getChannel(c.default.getLastSelectedChannelId());
                 if (null != n && n.getGuildId() === e && n.type === f.ChannelTypes.GUILD_TEXT) t = n.id;
                 else {
-                    let n = _.default.getDefaultChannel(e);
+                    let n = E.default.getDefaultChannel(e);
                     t = null != n ? n.id : null
                 }
                 return f.Routes.CHANNEL(e, t)
@@ -4482,8 +4485,8 @@
                 let l = e.getGuildId(),
                     u = (0, a.canUseMediaPostEmbed)(l, t);
                 if (null != t && u) {
-                    var o, s, d, _;
-                    o = l, s = t.id, d = e.id, _ = T.default.castChannelIdAsMessageId(e.id), i = null == o || null == s || null == d ? B(o, s, _) : "".concat(location.protocol, "//").concat(location.host).concat(f.Routes.CHANNEL_THREAD_VIEW(o, s, d, _))
+                    var o, s, d, E;
+                    o = l, s = t.id, d = e.id, E = T.default.castChannelIdAsMessageId(e.id), i = null == o || null == s || null == d ? B(o, s, E) : "".concat(location.protocol, "//").concat(location.host).concat(f.Routes.CHANNEL_THREAD_VIEW(o, s, d, E))
                 } else i = null != r ? r : B(l, e.id, n);
                 return i
             }
@@ -4495,10 +4498,10 @@
                     return s
                 },
                 useName: function() {
-                    return _
+                    return E
                 },
                 default: function() {
-                    return E
+                    return _
                 }
             });
             var r = n("446674"),
@@ -4523,13 +4526,13 @@
                 return null == n ? o.default.Messages.UNKNOWN_USER : null !== (r = s(e, t, n)) && void 0 !== r ? r : a.default.getName(n)
             }
 
-            function _(e, t, n) {
+            function E(e, t, n) {
                 return (0, r.useStateFromStores)([l.default, i.default, u.default], () => d(e, t, n))
             }
-            var E = {
+            var _ = {
                 getNickname: s,
                 getName: d,
-                useName: _
+                useName: E
             }
         },
         224400: function(e, t, n) {
@@ -4596,10 +4599,10 @@
                     return d
                 },
                 getStripe: function() {
-                    return _
+                    return E
                 },
                 parseStripePaymentMethod: function() {
-                    return E
+                    return _
                 },
                 authenticatePaymentIntentForPaymentId: function() {
                     return c
@@ -4632,15 +4635,15 @@
                     return r.setMonth(r.getMonth() - 1), r.setMonth(r.getMonth() + 1, 1), r > i
                 };
 
-            function _() {
+            function E() {
                 return null != r ? Promise.resolve(r) : (0, u.loadStripe)(o.PaymentSettings.STRIPE.KEY).then(e => (r = e, e))
             }
 
-            function E(e) {
+            function _(e) {
                 var t, n, r, i, l, u, a, o;
                 let {
                     billing_details: s
-                } = e, d = null !== (t = s.address) && void 0 !== t ? t : {}, _ = {
+                } = e, d = null !== (t = s.address) && void 0 !== t ? t : {}, E = {
                     name: null !== (n = s.name) && void 0 !== n ? n : "",
                     line1: null !== (r = d.line1) && void 0 !== r ? r : "",
                     line2: null !== (i = d.line2) && void 0 !== i ? i : "",
@@ -4651,7 +4654,7 @@
                 };
                 return {
                     token: e.id,
-                    billingAddressInfo: _
+                    billingAddressInfo: E
                 }
             }
             async function c(e) {
@@ -4663,7 +4666,7 @@
                         {
                             stripe_payment_intent_client_secret: n
                         } = t.body,
-                        r = await _();
+                        r = await E();
                     if (null == r) return {
                         error: "unable to load stripe"
                     };
@@ -4744,4 +4747,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71554.2f5e4c9f9342607324c0.js.map
+//# sourceMappingURL=71554.b98f9ed5339d3b6997ae.js.map
