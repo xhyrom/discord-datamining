@@ -12319,6 +12319,7 @@
   "PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_SUBTITLE_TIER_1": "\"If you don’t keep Nitro Classic, **you will lose:**\"",
   "PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_FOOTER_MONTHLY_TIER_1": "\"If you reinstate Nitro Classic, we’ll resume charging your payment method **{price}** and continue to charge you **monthly** until you cancel the subscription. You can cancel any time from your Settings page.\"",
   "PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_FOOTER_YEARLY_TIER_1": "\"If you reinstate Nitro Classic, we’ll resume charging your payment method **{price}** and continue to charge you **yearly** until you cancel the subscription. You can cancel any time from your Settings page.\"",
+  "PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_DISCOUNT_PRICE_FOOTER": "\"If you reinstate Nitro, we’ll resume charging your payment method **{discountPrice}** a month until your discounted rate ends, then charge ***{defaultPrice}*** a month until you cancel your subscription. You can cancel any time from your Settings page.\"",
   "PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_FOOTER_BUTTON_KEEP_NITRO": "\"Keep Nitro\"",
   "PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_FOOTER_BUTTON_CANCEL": "\"Dismiss\"",
   "PREMIUM_SUBSCRIPTION_ENDING_MISSING_PAYMENT_NOTICE_TEXT": "\"Your Nitro subscription ends {daysLeft, plural, =0 {today} =1 {in # day} other {in # days}}. Add a payment method to keep using profile customization and more.\"",
