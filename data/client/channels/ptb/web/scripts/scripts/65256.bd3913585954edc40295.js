@@ -232,8 +232,8 @@
                 M = i("803353"),
                 b = i("420444"),
                 U = i("954016"),
-                R = i("49111"),
-                V = i("782340");
+                V = i("49111"),
+                R = i("782340");
             let F = {},
                 Y = {};
 
@@ -265,7 +265,7 @@
                     I = await (0, _.default)();
                 Y[i] = e => {
                     var t, a, r;
-                    F[i] = e, S.default.track(R.AnalyticEvents.ACTIVITY_SESSION_JOINED, {
+                    F[i] = e, S.default.track(V.AnalyticEvents.ACTIVITY_SESSION_JOINED, {
                         channel_id: l.id,
                         guild_id: l.getGuildId(),
                         media_session_id: e.mediaSessionIds[0],
@@ -282,7 +282,7 @@
                         shelf_sorted_rank: c > 0 ? c : null,
                         activity_user_session_id: e.activityUserSessionId,
                         channel_type: l.type
-                    }), S.default.track(R.AnalyticEvents.ACTIVITY_IFRAME_MOUNT, {
+                    }), S.default.track(V.AnalyticEvents.ACTIVITY_IFRAME_MOUNT, {
                         location_stack: n,
                         channel_id: l.id,
                         channel_type: l.type,
@@ -314,7 +314,7 @@
                         releasePhase: f
                     } = w(c),
                     E = await (0, _.default)();
-                S.default.track(R.AnalyticEvents.ACTIVITY_SESSION_LEFT, {
+                S.default.track(V.AnalyticEvents.ACTIVITY_SESSION_LEFT, {
                     channel_id: u.id,
                     guild_id: u.getGuildId(),
                     media_session_id: a.mediaSessionIds[0],
@@ -329,7 +329,7 @@
                     activity_user_session_id: a.activityUserSessionId,
                     channel_type: u.type,
                     media_session_ids: a.mediaSessionIds
-                }), S.default.track(R.AnalyticEvents.ACTIVITY_IFRAME_UNMOUNT, {
+                }), S.default.track(V.AnalyticEvents.ACTIVITY_IFRAME_UNMOUNT, {
                     channel_id: u.id,
                     guild_id: u.getGuildId(),
                     application_id: l,
@@ -426,28 +426,28 @@
                             guildId: i
                         } = e;
                         if (null == i) return;
-                        let n = V.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GENERIC;
+                        let n = R.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GENERIC;
                         switch (t.code) {
-                            case R.AbortCodes.INVALID_ACTIVITY_LAUNCH_NO_ACCESS:
-                                n = V.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_ACCESS;
+                            case V.AbortCodes.INVALID_ACTIVITY_LAUNCH_NO_ACCESS:
+                                n = R.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_ACCESS;
                                 break;
-                            case R.AbortCodes.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER:
-                                n = V.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_PREMIUM;
+                            case V.AbortCodes.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER:
+                                n = R.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_PREMIUM;
                                 break;
-                            case R.AbortCodes.INVALID_ACTIVITY_LAUNCH_CONCURRENT_ACTIVITIES:
-                                n = V.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_CONCURRENT;
+                            case V.AbortCodes.INVALID_ACTIVITY_LAUNCH_CONCURRENT_ACTIVITIES:
+                                n = R.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_CONCURRENT;
                                 break;
-                            case R.AbortCodes.INVALID_PERMISSIONS:
-                                n = V.default.Messages.EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS;
+                            case V.AbortCodes.INVALID_PERMISSIONS:
+                                n = R.default.Messages.EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS;
                                 break;
-                            case R.AbortCodes.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL:
-                                n = V.default.Messages.EMBEDDED_ACTIVITIES_INVALID_CHANNEL;
+                            case V.AbortCodes.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL:
+                                n = R.default.Messages.EMBEDDED_ACTIVITIES_INVALID_CHANNEL;
                                 break;
-                            case R.AbortCodes.INVALID_ACTIVITY_LAUNCH_AGE_GATED:
-                                n = V.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_AGE_GATE;
+                            case V.AbortCodes.INVALID_ACTIVITY_LAUNCH_AGE_GATED:
+                                n = R.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_AGE_GATE;
                                 break;
-                            case R.AbortCodes.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE:
-                                n = V.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE
+                            case V.AbortCodes.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE:
+                                n = R.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE
                         }
                         this.showLaunchErrorModal(n)
                     }, this.superHandleRPCDisconnect = e => {
@@ -464,7 +464,7 @@
                                 channelId: t,
                                 applicationId: n
                             });
-                            t.code !== R.RPCCloseCodes.CLOSE_NORMAL && this.showErrorModal(t, n)
+                            t.code !== V.RPCCloseCodes.CLOSE_NORMAL && this.showErrorModal(t, n)
                         }
                     }, this.handleDeferredOpen = async e => {
                         var t, i, n;
@@ -480,11 +480,11 @@
                         let f = await o.default.fetchApplication(u),
                             _ = (0, g.getIsActivitiesEnabledForCurrentPlatform)(d);
                         if (!_) {
-                            this.showLaunchErrorModal(V.default.Messages.EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS);
+                            this.showLaunchErrorModal(R.default.Messages.EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS);
                             return
                         }
                         if (!(0, M.default)(null == f ? void 0 : null === (t = f.embedded_activity_config) || void 0 === t ? void 0 : t.supported_platforms)) {
-                            this.showLaunchErrorModal(V.default.Messages.EMBEDDED_ACTIVITIES_APPLICATION_UNSUPPORTED_OS);
+                            this.showLaunchErrorModal(R.default.Messages.EMBEDDED_ACTIVITIES_APPLICATION_UNSUPPORTED_OS);
                             return
                         }
                         let I = null == s ? void 0 : s.applicationId;
@@ -878,14 +878,14 @@
                 });
                 if (!b) return !1;
                 let U = (0, I.default)(y),
-                    R = S.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(P.type);
+                    V = S.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(P.type);
                 if (U) {
                     let e = await (0, A.default)({
                         channelId: y,
                         bypassChangeModal: null != i
                     });
                     if (!e) return !1
-                } else if (!(0, o.isActivitiesInTextEnabled)(P, "handleStartEmbeddedActivity") || !R) return !1;
+                } else if (!(0, o.isActivitiesInTextEnabled)(P, "handleStartEmbeddedActivity") || !V) return !1;
                 return f.startEmbeddedActivity(y, t.application.id, L), (0, C.default)(D, y), (0, T.default)({
                     type: N.AnalyticsGameOpenTypes.LAUNCH,
                     userId: m.id,
@@ -1502,33 +1502,6 @@
                 }
             }
             var c = new o
-        },
-        442939: function(e, t, i) {
-            "use strict";
-            i.r(t), i.d(t, {
-                default: function() {
-                    return d
-                },
-                useGetOrFetchApplication: function() {
-                    return s
-                }
-            });
-            var n = i("884691"),
-                l = i("446674"),
-                a = i("233736"),
-                u = i("651057"),
-                r = i("299285");
-
-            function d(e) {
-                let t = n.useRef([]);
-                return n.useEffect(() => {
-                    !(0, a.areArraysShallowEqual)(e, t.current) && (u.default.fetchApplications(e, !1), t.current = e)
-                }, [e]), (0, l.useStateFromStoresArray)([r.default], () => e.map(e => r.default.getApplication(e)))
-            }
-
-            function s(e) {
-                return d(null != e ? [e] : [])[0]
-            }
         },
         242740: function(e, t, i) {
             "use strict";
@@ -2181,4 +2154,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65256.6549e485c32382c9883e.js.map
+//# sourceMappingURL=65256.bd3913585954edc40295.js.map

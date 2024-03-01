@@ -25,7 +25,7 @@
                     return v
                 },
                 ackUserFeature: function() {
-                    return I
+                    return L
                 }
             }), n("222007"), n("424973");
             var l = n("913144"),
@@ -34,8 +34,8 @@
                 u = n("42203"),
                 a = n("245997"),
                 d = n("697218"),
-                s = n("299039"),
-                o = n("49111");
+                o = n("299039"),
+                s = n("49111");
 
             function c(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -48,7 +48,7 @@
                     messageId: i,
                     immediate: t,
                     force: n,
-                    context: o.CURRENT_APP_CONTEXT,
+                    context: s.CURRENT_APP_CONTEXT,
                     location: r
                 })
             }
@@ -61,7 +61,7 @@
                     if (null == l || null == l.guild_id) return;
                     let d = a.default.getCategories(l.guild_id);
                     if (null == d[e]) return;
-                    let s = d[e].filter(e => {
+                    let o = d[e].filter(e => {
                             let {
                                 channel: t
                             } = e;
@@ -72,19 +72,19 @@
                             } = e;
                             return t.id
                         }),
-                        o = [...s];
-                    for (let e of (s.forEach(e => {
+                        s = [...o];
+                    for (let e of (o.forEach(e => {
                             let t = i.default.getActiveJoinedThreadsForParent(l.guild_id, e);
-                            for (let e in t) o.push(e)
-                        }), o)) c(e, t, n)
-                }(e.id, !0, !0) : e.isForumLikeChannel() ? c(e.id, !0, !0, s.default.fromTimestamp(Date.now())) : c(e.id, !0, !0)
+                            for (let e in t) s.push(e)
+                        }), s)) c(e, t, n)
+                }(e.id, !0, !0) : e.isForumLikeChannel() ? c(e.id, !0, !0, o.default.fromTimestamp(Date.now())) : c(e.id, !0, !0)
             }
 
             function _(e, t) {
                 l.default.dispatch({
                     type: "BULK_ACK",
                     channels: e,
-                    context: o.CURRENT_APP_CONTEXT,
+                    context: s.CURRENT_APP_CONTEXT,
                     onFinished: t
                 })
             }
@@ -122,7 +122,7 @@
                 })
             }
 
-            function I(e, t) {
+            function L(e, t) {
                 var n;
                 let i = null === (n = d.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
                 null != i && l.default.dispatch({
@@ -143,12 +143,6 @@
             "use strict";
             n.r(t);
             var l = n("341869");
-            n.es(l, t)
-        },
-        31745: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var l = n("383465");
             n.es(l, t)
         },
         823527: function(e, t, n) {
@@ -206,7 +200,7 @@
                 u = n("305961"),
                 a = n("957255"),
                 d = n("421127");
-            let s = (0, r.createExperiment)({
+            let o = (0, r.createExperiment)({
                     kind: "guild",
                     id: "2023-04_guild_alert_mode",
                     label: "Guild Alert Mode",
@@ -230,7 +224,7 @@
                         }
                     }]
                 }),
-                o = (0, r.createExperiment)({
+                s = (0, r.createExperiment)({
                     kind: "guild",
                     id: "2023-08_guild_alert_mode_friend_server",
                     label: "Guild Alert Mode (friend servers only)",
@@ -258,14 +252,14 @@
             function c(e) {
                 let t = (0, i.useStateFromStores)([u.default], () => u.default.getGuild(e)),
                     n = (0, i.useStateFromStores)([a.default], () => null != t && l.default.hasAny(a.default.computePermissions(t), d.IncidentAlertModeratorPermissions)),
-                    r = s.useExperiment({
+                    r = o.useExperiment({
                         guildId: e,
                         location: "c3fae3_1"
                     }, {
                         disable: !n,
                         autoTrackExposure: !0
                     }),
-                    c = o.useExperiment({
+                    c = s.useExperiment({
                         guildId: e,
                         location: "c3fae3_2"
                     }, {
@@ -281,14 +275,14 @@
             function f(e) {
                 let t = u.default.getGuild(e),
                     n = null != t && l.default.hasAny(a.default.computePermissions(t), d.IncidentAlertModeratorPermissions),
-                    i = s.getCurrentConfig({
+                    i = o.getCurrentConfig({
                         guildId: e,
                         location: "c3fae3_3"
                     }, {
                         disable: !n,
                         autoTrackExposure: !0
                     }),
-                    r = o.getCurrentConfig({
+                    r = s.getCurrentConfig({
                         guildId: e,
                         location: "c3fae3_4"
                     }, {
@@ -314,7 +308,7 @@
                     return d
                 },
                 IncidentAlertModeratorPermissions: function() {
-                    return s
+                    return o
                 }
             });
             var l = n("316693"),
@@ -341,7 +335,7 @@
                     value: 24,
                     label: r.default.Messages.GUILD_SERVER_LOCKDOWN_DURATION_24_HOURS
                 }],
-                s = l.default.combine(i.Permissions.ADMINISTRATOR, i.Permissions.MANAGE_GUILD, i.Permissions.BAN_MEMBERS, i.Permissions.KICK_MEMBERS, i.Permissions.MODERATE_MEMBERS)
+                o = l.default.combine(i.Permissions.ADMINISTRATOR, i.Permissions.MANAGE_GUILD, i.Permissions.BAN_MEMBERS, i.Permissions.KICK_MEMBERS, i.Permissions.MODERATE_MEMBERS)
         },
         712125: function(e, t, n) {
             "use strict";
@@ -365,10 +359,10 @@
                     return d
                 },
                 hasDetectedActivity: function() {
-                    return s
+                    return o
                 },
                 hasDetectedRaid: function() {
-                    return o
+                    return s
                 },
                 hasDetectedDMRaid: function() {
                     return c
@@ -392,7 +386,7 @@
                     return v
                 },
                 getSecurityActionDetailsString: function() {
-                    return I
+                    return L
                 }
             }), n("424973");
             var l = n("866227"),
@@ -407,11 +401,11 @@
                 minute: "2-digit"
             };
 
-            function s(e) {
+            function o(e) {
                 return null != e.dmSpamDetectedAt && i(e.dmSpamDetectedAt).add(u.NAGBAR_DISPLAY_MAX_HOURS, "hours") > i() || null != e.raidDetectedAt && i(e.raidDetectedAt).add(u.NAGBAR_DISPLAY_MAX_HOURS, "hours") > i()
             }
 
-            function o(e) {
+            function s(e) {
                 return null != e.raidDetectedAt && i(e.raidDetectedAt).add(u.NAGBAR_DISPLAY_MAX_HOURS, "hours") > i()
             }
 
@@ -420,7 +414,7 @@
             }
 
             function f(e) {
-                return null == e ? void 0 : o(e) ? r.GuildIncidentAlertTypes.JOIN_RAID : r.GuildIncidentAlertTypes.DM_RAID
+                return null == e ? void 0 : s(e) ? r.GuildIncidentAlertTypes.JOIN_RAID : r.GuildIncidentAlertTypes.DM_RAID
             }
 
             function _(e, t) {
@@ -445,7 +439,7 @@
                 return (null == e ? void 0 : e.invitesDisabledUntil) != null && new Date(e.invitesDisabledUntil) > new Date
             }
 
-            function I(e, t) {
+            function L(e, t) {
                 var n;
                 let l = null !== (n = e.dmsDisabledUntil) && void 0 !== n ? n : e.invitesDisabledUntil;
                 if (null == l) return "";
@@ -485,8 +479,8 @@
                 u = n("305961"),
                 a = n("957255"),
                 d = n("607620"),
-                s = n("299039"),
-                o = n("610174"),
+                o = n("299039"),
+                s = n("610174"),
                 c = n("311161");
             let f = {},
                 _ = {};
@@ -495,8 +489,8 @@
                 var e;
                 let t = null !== (e = r.default.getGuildsProto()) && void 0 !== e ? e : {},
                     n = u.default.getGuilds(),
-                    l = s.default.keys(n);
-                for (let e of (_ = {}, l))(0, o.getGuildAlertModeEnabled)(e).showAlertMode && (_[e] = {
+                    l = o.default.keys(n);
+                for (let e of (_ = {}, l))(0, s.getGuildAlertModeEnabled)(e).showAlertMode && (_[e] = {
                     guildId: e,
                     guildName: n[e].name,
                     ...t[e]
@@ -617,8 +611,8 @@
                 u = n("379881"),
                 a = n("271938"),
                 d = n("42203"),
-                s = n("923959"),
-                o = n("305961"),
+                o = n("923959"),
+                s = n("305961"),
                 c = n("49111");
             let f = null,
                 _ = {},
@@ -636,8 +630,8 @@
                 e.index = t
             }
 
-            function I(e) {
-                let t = s.default.getChannels(e),
+            function L(e) {
+                let t = o.default.getChannels(e),
                     n = A(),
                     l = e => {
                         var t;
@@ -657,11 +651,11 @@
                         channel: t,
                         index: -1
                     }), n[t.id] = []
-                }), t[0, s.GUILD_SELECTABLE_CHANNELS_KEY].forEach(l), t[0, s.GUILD_VOCAL_CHANNELS_KEY].forEach(l), (0, r.default)(n._categories, n).forEach(v), _[e] = n, n
+                }), t[0, o.GUILD_SELECTABLE_CHANNELS_KEY].forEach(l), t[0, o.GUILD_VOCAL_CHANNELS_KEY].forEach(l), (0, r.default)(n._categories, n).forEach(v), _[e] = n, n
             }
 
-            function L() {
-                _ = {}, null != f && I(f)
+            function I() {
+                _ = {}, null != f && L(f)
             }
 
             function D(e) {
@@ -670,7 +664,7 @@
                         id: t
                     }
                 } = e;
-                _[t] = void 0, f === t && I(t)
+                _[t] = void 0, f === t && L(t)
             }
 
             function g(e) {
@@ -680,33 +674,33 @@
                     }
                 } = e;
                 if (null == t) return !1;
-                _[t] = void 0, f === t && I(t)
+                _[t] = void 0, f === t && L(t)
             }
 
             function C(e) {
                 let {
                     guildId: t
                 } = e;
-                _[t] = void 0, t === f && I(t)
+                _[t] = void 0, t === f && L(t)
             }
 
-            function N(e, t) {
+            function S(e, t) {
                 if (E = t, null == e || null == e.getGuildId()) return !1;
                 let n = e.getGuildId();
-                return null != n && (_[n] = void 0, n === f && I(n), !0)
+                return null != n && (_[n] = void 0, n === f && L(n), !0)
             }
 
-            function S() {
-                I(c.FAVORITES)
+            function N() {
+                L(c.FAVORITES)
             }
             class m extends l.default.Store {
                 initialize() {
-                    this.waitFor(s.default, o.default, a.default, d.default, u.default), this.syncWith([u.default], S)
+                    this.waitFor(o.default, s.default, a.default, d.default, u.default), this.syncWith([u.default], N)
                 }
                 getCategories(e) {
                     return null != e ? function(e) {
                         let t = _[e];
-                        return null != t ? t : I(e)
+                        return null != t ? t : L(e)
                     }(e) : h
                 }
             }
@@ -717,11 +711,11 @@
                         guildId: t
                     } = e;
                     if (f = null != t ? t : null, null == t || null != _[t]) return !1;
-                    I(t)
+                    L(t)
                 },
-                CONNECTION_OPEN: L,
-                OVERLAY_INITIALIZE: L,
-                CACHE_LOADED_LAZY: L,
+                CONNECTION_OPEN: I,
+                OVERLAY_INITIALIZE: I,
+                CACHE_LOADED_LAZY: I,
                 GUILD_CREATE: D,
                 GUILD_UPDATE: D,
                 GUILD_DELETE: function(e) {
@@ -741,7 +735,7 @@
                     for (let {
                             guild_id: e
                         }
-                        of t) null != e && (_[e] = void 0, n = !0, f === e && I(e));
+                        of t) null != e && (_[e] = void 0, n = !0, f === e && L(e));
                     return n
                 },
                 GUILD_MEMBER_UPDATE: function(e) {
@@ -750,11 +744,11 @@
                         user: n
                     } = e;
                     if (a.default.getId() !== n.id) return !1;
-                    _[t] = void 0, t === f && I(t)
+                    _[t] = void 0, t === f && L(t)
                 },
                 CURRENT_USER_UPDATE: function() {
                     if (null == f) return !1;
-                    I(f)
+                    L(f)
                 },
                 GUILD_ROLE_CREATE: C,
                 GUILD_ROLE_UPDATE: C,
@@ -765,7 +759,7 @@
                     let {
                         channelId: t
                     } = e;
-                    return null == t && null != E ? N(d.default.getChannel(E), null) : N(d.default.getChannel(t), t)
+                    return null == t && null != E ? S(d.default.getChannel(E), null) : S(d.default.getChannel(t), t)
                 },
                 VOICE_STATE_UPDATES: function(e) {
                     let {
@@ -776,7 +770,7 @@
                             channelId: n,
                             sessionId: l
                         } = t;
-                        return a.default.getSessionId() !== l ? e : N(d.default.getChannel(n), n) || e
+                        return a.default.getSessionId() !== l ? e : S(d.default.getChannel(n), n) || e
                     }, !1)
                 }
             })
@@ -1047,50 +1041,6 @@
                 })
             }
         },
-        383465: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                CirclePlusIcon: function() {
-                    return u
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var i = n("669491"),
-                r = n("82169");
-            let u = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    secondaryColor: u = "transparent",
-                    secondaryColorClass: a = "",
-                    color: d = i.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
-                    ...o
-                } = e;
-                return (0, l.jsxs)("svg", {
-                    ...(0, r.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, l.jsx)("circle", {
-                        cx: "12",
-                        cy: "12",
-                        r: "10",
-                        fill: "string" == typeof u ? u : u.css,
-                        className: a
-                    }), (0, l.jsx)("path", {
-                        fill: "string" == typeof d ? d : d.css,
-                        fillRule: "evenodd",
-                        d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z",
-                        clipRule: "evenodd",
-                        className: s
-                    })]
-                })
-            }
-        },
         116788: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1235,4 +1185,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12108.e238f3689ff5c75db314.js.map
+//# sourceMappingURL=12108.249b8e2b33667451ea0e.js.map

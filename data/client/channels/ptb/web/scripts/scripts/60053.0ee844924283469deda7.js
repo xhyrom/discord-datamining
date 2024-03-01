@@ -39491,7 +39491,11 @@
                 } = (0, d.usePrivateChannelIntegrationState)({
                     channelId: null !== (t = null == I ? void 0 : I.id) && void 0 !== t ? t : S.EMPTY_STRING_SNOWFLAKE_ID
                 });
-                if (null == n || !(0, C.canInstallApplication)(n.id, n.customInstallUrl, n.installParams)) return null;
+                if (null == n || !(0, C.canInstallApplication)({
+                        customInstallUrl: n.customInstallUrl,
+                        installParams: n.installParams,
+                        integrationTypesConfig: n.integrationTypesConfig
+                    })) return null;
                 let A = _ && null != N.find(e => e.id === (null == n ? void 0 : n.id));
                 return (0, l.jsx)(s.Button, {
                     color: s.Button.Colors.PRIMARY,
@@ -39528,7 +39532,8 @@
                         }) : (0, C.installApplication)({
                             applicationId: n.id,
                             customInstallUrl: n.customInstallUrl,
-                            installParams: n.installParams
+                            installParams: n.installParams,
+                            integrationTypesConfig: n.integrationTypesConfig
                         })
                     },
                     className: a(v.applicationInstallButton, i),
@@ -41195,7 +41200,11 @@
                 } = e, a = (0, i.useStateFromStores)([p.default], () => {
                     var e;
                     return null === (e = p.default.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
-                }), s = null != a && (0, m.canInstallApplication)(a.id, a.customInstallUrl, a.installParams), {
+                }), s = null != a && (0, m.canInstallApplication)({
+                    customInstallUrl: a.customInstallUrl,
+                    installParams: a.installParams,
+                    integrationTypesConfig: a.integrationTypesConfig
+                }), {
                     botUpgradeable: o,
                     subscriptionGroupListing: u
                 } = (0, h.default)({
@@ -52939,55 +52948,84 @@
             "use strict";
             n.r(t), n.d(t, {
                 canInstallApplication: function() {
-                    return u
+                    return d
                 },
                 installApplication: function() {
-                    return d
+                    return c
                 }
             });
             var l = n("394846"),
                 i = n("316693"),
-                a = n("33942"),
-                s = n("599110"),
-                r = n("128259"),
-                o = n("49111");
-
-            function u(e, t, n) {
-                return null != t || null != n
-            }
+                a = n("389153"),
+                s = n("33942"),
+                r = n("599110"),
+                o = n("128259"),
+                u = n("49111");
 
             function d(e) {
                 let {
+                    customInstallUrl: t,
+                    installParams: n,
+                    integrationTypesConfig: l
+                } = e;
+                return null != t || null != n || null != l && Object.values(l).some(e => null != e && null != e.oauth2_install_params) && (0, a.isInUserAppExperiment)(null, {
+                    location: "canInstallApplication"
+                })
+            }
+
+            function c(e) {
+                let {
                     applicationId: t,
                     customInstallUrl: n,
-                    installParams: u,
-                    guildId: d,
-                    channelId: c,
-                    disableGuildSelect: f,
-                    source: m
+                    installParams: d,
+                    integrationTypesConfig: c,
+                    guildId: f,
+                    channelId: m,
+                    disableGuildSelect: p,
+                    source: h
                 } = e;
-                if (null != n) return s.default.track(o.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                if (null != n) {
+                    r.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                        application_id: t,
+                        guild_id: f,
+                        auth_type: "custom_url",
+                        source: h,
+                        device_platform: l.isMobile ? "mobile_web" : "desktop_web"
+                    }), (0, o.handleClick)({
+                        href: n
+                    });
+                    return
+                }
+                if (null != c && Object.values(c).some(e => null != e && null != e.oauth2_install_params) && (0, a.isInUserAppExperiment)(null, {
+                        location: "installApplication"
+                    })) {
+                    r.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
+                        application_id: t,
+                        guild_id: f,
+                        auth_type: "in_app",
+                        source: h,
+                        device_platform: l.isMobile ? "mobile_web" : "desktop_web"
+                    }), (0, s.openOAuth2Modal)({
+                        clientId: t,
+                        guildId: f,
+                        channelId: m,
+                        disableGuildSelect: p
+                    });
+                    return
+                }
+                null != d && (r.default.track(u.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
                     application_id: t,
-                    guild_id: d,
-                    auth_type: "custom_url",
-                    source: m,
-                    device_platform: l.isMobile ? "mobile_web" : "desktop_web"
-                }), (0, r.handleClick)({
-                    href: n
-                });
-                null != u && (s.default.track(o.AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, {
-                    application_id: t,
-                    guild_id: d,
+                    guild_id: f,
                     auth_type: "in_app",
-                    source: m,
+                    source: h,
                     device_platform: l.isMobile ? "mobile_web" : "desktop_web"
-                }), (0, a.openOAuth2Modal)({
-                    guildId: d,
+                }), (0, s.openOAuth2Modal)({
                     clientId: t,
-                    scopes: u.scopes,
-                    channelId: c,
-                    disableGuildSelect: f,
-                    permissions: null != u.permissions ? i.default.deserialize(u.permissions) : void 0
+                    guildId: f,
+                    channelId: m,
+                    disableGuildSelect: p,
+                    scopes: d.scopes,
+                    permissions: null != d.permissions ? i.default.deserialize(d.permissions) : void 0
                 }))
             }
         },
@@ -54565,4 +54603,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.48d5add9cd56943f80d3.js.map
+//# sourceMappingURL=60053.0ee844924283469deda7.js.map
