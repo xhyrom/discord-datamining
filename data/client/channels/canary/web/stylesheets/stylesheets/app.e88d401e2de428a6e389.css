@@ -63760,9 +63760,15 @@ html .progress__4ef76 {
     margin-left: 8px
 }
 
-.wordMark__4f8f8 {
+.headerLabel_aa0e2b {
     display: flex;
     flex-direction: row
+}
+
+.wordMark__4f8f8 {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column
 }
 
 .premiumSubscriptionAccountCredit__6bab4 {
@@ -128543,4 +128549,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.93ba8e71805546141b13.css.map*/
+/*# sourceMappingURL=app.e88d401e2de428a6e389.css.map*/
