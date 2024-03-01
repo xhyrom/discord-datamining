@@ -27615,7 +27615,23 @@ html .progress__4ef76 {
 .votesData__4d275 {
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center;
+    gap: 5px
+}
+
+.voteCount__9e7ee {
+    padding: 2px 4px
+}
+
+.voteCountButton__81a71 {
+    border-radius: 2px;
+    background-color: transparent;
+    transition: background-color var(--custom-button-transition-duration)ease;
+    cursor: pointer
+}
+
+.voteCountButton__81a71:hover {
+    background-color: var(--background-accent)
 }
 
 .container__3ca24 {
@@ -128549,4 +128565,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e88d401e2de428a6e389.css.map*/
+/*# sourceMappingURL=app.dad8d34535b155ff2d7d.css.map*/
