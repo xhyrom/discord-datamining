@@ -16770,6 +16770,8 @@
   "QUESTS_EMBED_INVALID_BODY": "\"Something went wrong here. Check the Gift Inventory for more available Quests!\"",
   "QUESTS_PROGRESS_TRACKING_FAILURE_NOTICE": "\"There's an issue tracking your Quest progress.\"",
   "QUESTS_SHARE_QUEST": "\"Share Quest\"",
+  "QUESTS_STREAM_SOURCE_SELECT_NOTICE_HEADING": "\"Select {gameTitle} to make progress on your Quest!\"",
+  "QUESTS_STREAM_SOURCE_SELECT_NOTICE_SUBHEADING": "\"You must select the application, not the whole screen.\"",
   "FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE": "\"Prompt members to chat after this channel has been inactive for a while.\"",
   "PROMPT_CAMERA_LOADING_TITLE": "\"What are you looking at?\"",
   "PROMPT_CAMERA_ERROR": "\"There was an issue taking a photo, try again\"",
