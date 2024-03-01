@@ -21324,7 +21324,7 @@ html.disable-forced-colors * {
     top: 50%;
     pointer-events: all;
     transform: translatey(-50%);
-    color: var(--interactive-normal);
+    color: var(--white-500);
     width: 50px;
     height: 50px;
     box-sizing: border-box;
@@ -28099,4 +28099,4 @@ span.button__4f306.disabled_dc5630 {
     padding-top: 16px
 }
 
-/*# sourceMappingURL=shared.a3ec931e713d6dbc74ca.css.map*/
+/*# sourceMappingURL=shared.3471540ea7b5a3a1488d.css.map*/
