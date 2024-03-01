@@ -21421,19 +21421,19 @@
                 wrapper: "wrapper_a9c598"
             }
         },
+        513367: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                promotedTag: "promotedTag__28b7f",
+                promotedTagBackground: "promotedTagBackground__9ff07"
+            }
+        },
         297261: function(e, t, n) {
             "use strict";
             e.exports = {
                 questRewardTile: "questRewardTile__6041a",
                 questRewardTileAsset: "questRewardTileAsset_d342cd",
                 questRewardTileDetailsLearnMore: "questRewardTileDetailsLearnMore_d0aa75"
-            }
-        },
-        741162: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                sponsoredTag: "sponsoredTag_faf66e",
-                sponsoredTagBackground: "sponsoredTagBackground_ede118"
             }
         },
         647439: function(e, t, n) {
@@ -21562,10 +21562,10 @@
                 gameTile: "gameTile_cda176",
                 heading: "heading__7decb",
                 headingWithSubmenu: "headingWithSubmenu__92275",
+                promotedTag: "promotedTag__63ad2",
                 questTitle: "questTitle__8a5cd",
                 rewardTile: "rewardTile__53e16",
                 rewardTileWrapper: "rewardTileWrapper__5ce2b",
-                sponsoredTag: "sponsoredTag__0b9e7",
                 submenuIcon: "submenuIcon__6db12",
                 submenuWrapper: "submenuWrapper_f90a75",
                 wrapper: "wrapper__19d00",
