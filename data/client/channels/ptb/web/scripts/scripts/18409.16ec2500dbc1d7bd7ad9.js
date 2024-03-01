@@ -88,7 +88,7 @@
                     return m
                 },
                 getBlindIds: function() {
-                    return b
+                    return E
                 },
                 uploadCallscopeLogs: function() {
                     return L
@@ -113,7 +113,7 @@
             async function m(t, e) {
                 await y(t), await (0, r.uploadRtcLogFiles)(3670016, e)
             }
-            class E {
+            class b {
                 static getTrimmedFilename(t) {
                     let e = /^channel\.\d+\.(.+)$/.exec(t);
                     return null == e || e.length < 2 || null == e[1] ? "unknown" : e[1]
@@ -123,7 +123,7 @@
                     return null == e || e.length < 2 || null == e[1] ? "unknown" : e[1]
                 }
             }
-            async function b(t, e, n) {
+            async function E(t, e, n) {
                 let o = new a.BlindID(n),
                     l = await o.blind(t),
                     r = await o.blind(e);
@@ -147,7 +147,7 @@
                         let {
                             blindChannelId: a,
                             blindUserId: r
-                        } = await b(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
+                        } = await E(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
                         h.info("uploadCallscopeLogs: Uploading callscope logs for context: ".concat(o, ", ").concat(i));
                         let c = await l.default.fileManager.getCallscopeLogFiles(a);
                         await w(r, c)
@@ -164,10 +164,10 @@
                     }
                     for (let n of e.map(t => c.transformNativeFile(t, "application/octet-stream"))) {
                         h.log("uploadCallscopeLogFiles: Uploading ".concat(n.name));
-                        let e = E.getChannelId(n.name);
+                        let e = b.getChannelId(n.name);
                         try {
                             let a = await o.default.post({
-                                    url: f.Endpoints.CALLSCOPE_LOGS(e, t, E.getTrimmedFilename(n.name)),
+                                    url: f.Endpoints.CALLSCOPE_LOGS(e, t, b.getTrimmedFilename(n.name)),
                                     headers: {
                                         "Content-Type": "application/octet-stream"
                                     },
@@ -249,8 +249,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "271558",
-                    versionHash: "1a12bdc02169e16a1a8bce2047bf6d99d74f7181"
+                    buildNumber: "271571",
+                    versionHash: "14e37d8a41d2ebb3fb137843fb682693b7dc87c4"
                 }
             }
             n.r(e), n.d(e, {
@@ -362,4 +362,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18409.47f84c014625ba886aef.js.map
+//# sourceMappingURL=18409.16ec2500dbc1d7bd7ad9.js.map
