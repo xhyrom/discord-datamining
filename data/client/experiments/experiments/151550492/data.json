@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_desktop_animated_icons",
+    "label": "Desktop animated icons",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Animated icons enabled"
+    ],
+    "hash": 151550492,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
