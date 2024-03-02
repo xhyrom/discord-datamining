@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["59196"], {
+    ["60053"], {
         777483: function(e, t, n) {
             var l = {
                 "./icon-file-acrobat.svg": "668973",
@@ -54635,4 +54635,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.cb2e414592f94492d94b.js.map
+//# sourceMappingURL=60053.2008f3e89c2a969c5fd6.js.map
