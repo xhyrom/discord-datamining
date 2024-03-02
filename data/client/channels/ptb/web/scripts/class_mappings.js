@@ -17742,8 +17742,7 @@
                 label: "label_cd1f7a",
                 sectionLabel: "sectionLabel__3f9f4",
                 select: "select__96623",
-                selectorGroup: "selectorGroup__6e036",
-                wrapper: "wrapper__33f0a"
+                selectorGroup: "selectorGroup__6e036"
             }
         },
         768416: function(e, t, o) {
