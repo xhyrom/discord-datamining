@@ -39877,6 +39877,64 @@ html .progress__4ef76 {
     height: 16px
 }
 
+.popout__97332 {
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0 8px 8px hsl(var(--black-500-hsl)/.32))
+}
+
+.hero_f37d0a {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 32px 32px 16px;
+    border-top-left-radius: var(--radius-md);
+    border-top-right-radius: var(--radius-md)
+}
+
+.heroDetails_b002cf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.popoutDescription__875c7 {
+    margin-top: 4px
+}
+
+.heroImage_e3e7d9 {
+    min-width: 96px;
+    min-height: 96px;
+    max-width: 96px;
+    max-height: 96px;
+    border-radius: var(--radius-md)
+}
+
+.reactions_d488fa {
+    padding: 16px;
+    background-color: var(--background-primary);
+    border-bottom-left-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md)
+}
+
+.emojiHotrail_a7034f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 0 12px
+}
+
+.emojiSuggestionButton_d25ed5:hover {
+    cursor: pointer
+}
+
+.emoji_db6bae {
+    width: 24px;
+    height: 24px
+}
+
 .container__35f96 {
     display: flex;
     margin: 8px;
@@ -39930,12 +39988,6 @@ html .progress__4ef76 {
     width: 56px;
     height: 56px;
     border-radius: var(--radius-md)
-}
-
-.popout__58ff0 {
-    width: 100px;
-    height: 100px;
-    background-color: #639
 }
 
 .container_d412fb {
@@ -128629,4 +128681,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c48221c68eea53386c33.css.map*/
+/*# sourceMappingURL=app.d3c31caa3171ff99899d.css.map*/
