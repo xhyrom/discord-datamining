@@ -361,7 +361,7 @@
                         introDelay: I = c.ENTRY_DELAY
                     } = e, _ = u.useRef(null), [S, h] = u.useState([]);
                     (0, A.default)(p);
-                    let [O, N] = u.useState(0), [C, y] = u.useState(0), {
+                    let [N, O] = u.useState(0), [C, y] = u.useState(0), {
                         accessibilityLabel: F
                     } = p, [g, L] = u.useState(-I), {
                         stop: P,
@@ -378,12 +378,12 @@
                         S.forEach(r => {
                             let n = r.start + r.duration;
                             n > e && (e = n), r.loop && r.start < t && (t = r.start)
-                        }), N(t), y(e)
+                        }), O(t), y(e)
                     }, [y, S]);
                     let [M, b] = u.useState(!1);
                     return u.useEffect(() => {
-                        !0 !== s && !i && (P(), L(0)), !i && M && x.current && (P(), L(0)), o && i && !x.current && (D(), p.animationType === f.AnimationTypes.PERSISTENT ? L(T === f.RestartMethod.FromStart ? 0 : O) : L(0))
-                    }, [i, M, O, o, P, D, x, p.animationType, s, T]), (0, n.jsx)("div", {
+                        !0 !== s && !i && (P(), L(0)), !i && M && x.current && (P(), L(0)), o && i && !x.current && (D(), p.animationType === f.AnimationTypes.PERSISTENT ? L(T === f.RestartMethod.FromStart ? 0 : N) : L(0))
+                    }, [i, M, N, o, P, D, x, p.animationType, s, T]), (0, n.jsx)("div", {
                         ref: _,
                         className: l(m.profileEffects, {
                             [m.hovered]: i && a
@@ -712,8 +712,8 @@
                 CollectiblesCategorySkuId: function() {
                     return n
                 }
-            }), r("222007"), (u = n || (n = {})).FANTASY = "1144003461608906824", u.ANIME = "1144302037593497701", u.BREAKFAST = "1144054000099012659", u.DISXCORE = "1144058340327047249", u.HALLOWEEN = "1157410718711304313", u.FALL = "1157406994873991284", u.WINTER = "1174459301239197856", u.MONSTERS = "1179493515038818325", u.CYBERPUNK = "1197342727608746044", u.LUNAR_NEW_YEAR = "1202069709281828935", u.ELEMENTS = "1207046915880124426"
+            }), r("222007"), (u = n || (n = {})).FANTASY = "1144003461608906824", u.ANIME = "1144302037593497701", u.BREAKFAST = "1144054000099012659", u.DISXCORE = "1144058340327047249", u.HALLOWEEN = "1157410718711304313", u.FALL = "1157406994873991284", u.WINTER = "1174459301239197856", u.MONSTERS = "1179493515038818325", u.CYBERPUNK = "1197342727608746044", u.LUNAR_NEW_YEAR = "1202069709281828935", u.ELEMENTS = "1207046915880124426", u.ANIME_V2 = "1212565175790473246"
         }
     }
 ]);
-//# sourceMappingURL=30791.88cd29e261bf94b04423.js.map
+//# sourceMappingURL=30791.71fd9c1881ea468e2a8d.js.map
