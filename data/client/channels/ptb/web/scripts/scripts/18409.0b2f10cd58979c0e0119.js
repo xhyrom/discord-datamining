@@ -88,10 +88,10 @@
                     return m
                 },
                 getBlindIds: function() {
-                    return E
+                    return L
                 },
                 uploadCallscopeLogs: function() {
-                    return L
+                    return b
                 },
                 uploadCallscopeLogFiles: function() {
                     return w
@@ -113,7 +113,7 @@
             async function m(t, e) {
                 await y(t), await (0, r.uploadRtcLogFiles)(3670016, e)
             }
-            class b {
+            class E {
                 static getTrimmedFilename(t) {
                     let e = /^channel\.\d+\.(.+)$/.exec(t);
                     return null == e || e.length < 2 || null == e[1] ? "unknown" : e[1]
@@ -123,7 +123,7 @@
                     return null == e || e.length < 2 || null == e[1] ? "unknown" : e[1]
                 }
             }
-            async function E(t, e, n) {
+            async function L(t, e, n) {
                 let o = new a.BlindID(n),
                     l = await o.blind(t),
                     r = await o.blind(e);
@@ -132,7 +132,7 @@
                     blindUserId: r
                 }
             }
-            async function L(t, e, n, o) {
+            async function b(t, e, n, o) {
                 var a;
                 if (!__OVERLAY__) {
                     if ((null === l.default || void 0 === l.default ? void 0 : null === (a = l.default.fileManager) || void 0 === a ? void 0 : a.getCallscopeLogFiles) == null) {
@@ -147,7 +147,7 @@
                         let {
                             blindChannelId: a,
                             blindUserId: r
-                        } = await E(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
+                        } = await L(t, e, n), i = "channel blind(".concat(t, "): ").concat(a, ", user blind(").concat(e, "): ").concat(r);
                         h.info("uploadCallscopeLogs: Uploading callscope logs for context: ".concat(o, ", ").concat(i));
                         let c = await l.default.fileManager.getCallscopeLogFiles(a);
                         await w(r, c)
@@ -164,10 +164,10 @@
                     }
                     for (let n of e.map(t => c.transformNativeFile(t, "application/octet-stream"))) {
                         h.log("uploadCallscopeLogFiles: Uploading ".concat(n.name));
-                        let e = b.getChannelId(n.name);
+                        let e = E.getChannelId(n.name);
                         try {
                             let a = await o.default.post({
-                                    url: f.Endpoints.CALLSCOPE_LOGS(e, t, b.getTrimmedFilename(n.name)),
+                                    url: f.Endpoints.CALLSCOPE_LOGS(e, t, E.getTrimmedFilename(n.name)),
                                     headers: {
                                         "Content-Type": "application/octet-stream"
                                     },
@@ -249,8 +249,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "271799",
-                    versionHash: "bf43be49768eb75e61b44656baad0b04e86c50a6"
+                    buildNumber: "271800",
+                    versionHash: "4968b7e1880f2edcb53d38a38e10311c1c0611d2"
                 }
             }
             n.r(e), n.d(e, {
@@ -362,4 +362,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18409.2ea9bffbea4fe77dd0d0.js.map
+//# sourceMappingURL=18409.0b2f10cd58979c0e0119.js.map
