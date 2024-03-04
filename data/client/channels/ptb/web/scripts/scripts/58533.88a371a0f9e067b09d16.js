@@ -274,26 +274,32 @@
             }
 
             function O(e) {
-                h.FrecencyUserSettingsActionCreators.updateAsync("favoriteGifs", t => {
-                    var s;
-                    let r = null !== (s = n.max(Object.values(t.gifs).map(e => e.order))) && void 0 !== s ? s : 0;
-                    t.gifs[w(e.url)] = {
+                let t = 0;
+                h.FrecencyUserSettingsActionCreators.updateAsync("favoriteGifs", s => {
+                    var r;
+                    let l = null !== (r = n.max(Object.values(s.gifs).map(e => e.order))) && void 0 !== r ? r : 0;
+                    s.gifs[w(e.url)] = {
                         ...e,
-                        order: r + 1
+                        order: l + 1
                     };
-                    let l = a.FavoriteGIFs.toBinary(t).length;
-                    if (l > E.MAX_FAVORITE_GIFS_SIZE) return g.default.show({
+                    let i = a.FavoriteGIFs.toBinary(s).length;
+                    if (i > E.MAX_FAVORITE_GIFS_SIZE) return g.default.show({
                         title: R.default.Messages.FAVORITES_LIMIT_REACHED_TITLE,
                         body: R.default.Messages.FAVORITE_GIFS_LIMIT_REACHED_BODY
                     }), !1;
-                    n.size(t.gifs) > 2 && (t.hideTooltip = !0)
-                }, E.UserSettingsDelay.INFREQUENT_USER_ACTION), p.default.track(_.AnalyticEvents.GIF_FAVORITED)
+                    (t = n.size(s.gifs)) > 2 && (s.hideTooltip = !0)
+                }, E.UserSettingsDelay.INFREQUENT_USER_ACTION), p.default.track(_.AnalyticEvents.GIF_FAVORITED, {
+                    total_num_favorited: t
+                })
             }
 
             function D(e) {
-                h.FrecencyUserSettingsActionCreators.updateAsync("favoriteGifs", t => {
-                    e in t.gifs ? delete t.gifs[e] : delete t.gifs[w(e)]
-                }, E.UserSettingsDelay.INFREQUENT_USER_ACTION), p.default.track(_.AnalyticEvents.GIF_UNFAVORITED)
+                let t = 0;
+                h.FrecencyUserSettingsActionCreators.updateAsync("favoriteGifs", s => {
+                    e in s.gifs ? delete s.gifs[e] : delete s.gifs[w(e)], t = n.size(s.gifs)
+                }, E.UserSettingsDelay.INFREQUENT_USER_ACTION), p.default.track(_.AnalyticEvents.GIF_UNFAVORITED, {
+                    total_num_favorited: t
+                })
             }
         },
         718302: function(e, t, s) {
@@ -2139,4 +2145,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58533.f4ff4fad22a5efef0d4e.js.map
+//# sourceMappingURL=58533.88a371a0f9e067b09d16.js.map
