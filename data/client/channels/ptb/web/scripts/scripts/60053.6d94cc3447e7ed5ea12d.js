@@ -1437,7 +1437,7 @@
                     children: [b, (0, l.jsx)(x, {
                         text: k,
                         className: s
-                    }), null != n && n.some(d.default) ? (0, l.jsx)(v.default, {
+                    }), null != n && n.some(e => (0, d.default)(e, j)) ? (0, l.jsx)(v.default, {
                         width: 16,
                         height: 16,
                         className: N.icon
@@ -54635,4 +54635,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.2008f3e89c2a969c5fd6.js.map
+//# sourceMappingURL=60053.6d94cc3447e7ed5ea12d.js.map
