@@ -16746,6 +16746,7 @@
   "QUESTS_PROMOTED": "\"Promoted\"",
   "QUESTS_LEARN_MORE_V2": "\"Learn more\"",
   "QUESTS_LEARN_MORE_STACKED": "\"Learn\\n\\nmore\"",
+  "QUESTS_LEARN_MORE_LINK": "\"[Learn more]({questsLearnMoreLink})\"",
   "QUESTS_ACCEPT_QUEST": "\"Accept Quest\"",
   "QUESTS_INSTRUCTIONS_TO_WIN_REWARD": "\"Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.\"",
   "QUESTS_ACCEPTED_INSTRUCTIONS_TO_WIN_REWARD": "\"**Quest accepted!** Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.\"",
