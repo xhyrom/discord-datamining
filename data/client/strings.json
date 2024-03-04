@@ -910,7 +910,7 @@
   "EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_ANNOUNCEMENT_BIRD_A11Y_LABEL": "\"A bird with a megaphone for a head\"",
   "EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_HEADS_UP": "\"Heads Up!\"",
   "EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_TITLE": "\"You're about to test {activityName} for the first time.\"",
-  "EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_SUBTITLE": "\"This app is not made by Discord, and has not been reviewed. Only test apps from developers you trust.\"",
+  "EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_SUBTITLE": "\"This app is not made by Discord. Only test apps from developers you trust.\"",
   "EMBEDDED_ACTIVITIES_EXTERNAL_APP_LEARN_MORE": "\"Learn more about private apps.\"",
   "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_CANNOT_LAUNCH": "\"$[](userHook) started an activity\"",
   "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED": "\"$[](userHook) started an **$[activity](activityHook)**\"",
