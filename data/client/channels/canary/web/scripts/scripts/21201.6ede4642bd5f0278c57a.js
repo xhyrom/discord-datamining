@@ -31696,7 +31696,8 @@
                         }).enabled && l.default.track(h.AnalyticEvents.RPC_COMMAND_SENT, {
                             command: i,
                             scope: "object" == typeof r.scope ? JSON.stringify(r.scope) : r.scope,
-                            application_id: e.application.id
+                            application_id: e.application.id,
+                            socket_scope: e.authorization.scopes.toString()
                         }), n(r)
                     }).then(e => new Promise(async (n, i) => {
                         if (null != e.validation) {
@@ -50178,7 +50179,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "271917"
+                                build_number: "271924"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -64227,4 +64228,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21201.dac923c983fe910902e7.js.map
+//# sourceMappingURL=21201.6ede4642bd5f0278c57a.js.map
