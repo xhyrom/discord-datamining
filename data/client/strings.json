@@ -16765,7 +16765,7 @@
   "QUESTS_COMPLETION_PROGRESS_COMPLETE_ACTIVITY_PANEL": "\"You completed a Quest!\"",
   "QUESTS_DISCLOSURE_PUBLISHER_PROMOTING": "\"{gamePublisher} is promoting {gameTitle} on Discord by partnering with us to offer this Quest. This Quest is available in the gift inventory of all users.\"",
   "QUESTS_DISCLOSURE_PUBLISHER_TARGETING": "\"{gamePublisher} is trying to reach certain kinds of Discord users. Based on what you’ve told us or other information we’ve collected, we think you fit some of these groups:\"",
-  "QUESTS_DISCLOSURE_LEARN_MORE": "\"Learn more about Quests on Discord and how to manage your Privacy Settings [here]({privacySettingsUrl}).\"",
+  "QUESTS_DISCLOSURE_LEARN_MORE": "\"[Learn more]({privacySettingsUrl}) about Quests on Discord and how to manage your Privacy Settings.\"",
   "QUESTS_DISCLOSURE_LOCATION": "\"Location\"",
   "QUESTS_DISCLOSURE_AGE": "\"Age\"",
   "QUESTS_DISCLOSURE_ACTIVITY": "\"Activity: Relevant gaming\"",
