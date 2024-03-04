@@ -38,8 +38,8 @@
                 y = n("28007"),
                 U = n("880731"),
                 b = n("562228"),
-                G = n("793277"),
-                P = n("815496");
+                P = n("793277"),
+                G = n("815496");
             n("685841");
             var w = n("256572"),
                 k = n("364685"),
@@ -516,7 +516,7 @@
                         let a = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                             l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
                         if (t.reaction) return Promise.resolve();
-                        let s = await (0, G.default)(e);
+                        let s = await (0, P.default)(e);
                         if (null != s) return eh.sendMessage(s, t, a, l);
                         let i = () => eh._sendMessage(e, t, l),
                             r = C.LocalMessageBackgroundSendingExperiment.getCurrentConfig({
@@ -620,7 +620,7 @@
                     },
                     _sendMessage(e, t, n) {
                         var a, s;
-                        let i = (0, G.default)(e);
+                        let i = (0, P.default)(e);
                         if (null != i) return eE.info("Converting channel to a private channel"), i.then(e => {
                             eE.info("Finished converting channel to a private channel"), eh._sendMessage(e, t, n)
                         });
@@ -760,7 +760,7 @@
                                         else if (t === f.CodedLinkType.SERVER_SHOP);
                                         else if (t === f.CodedLinkType.QUESTS_EMBED) {
                                             var d;
-                                            (0, P.trackQuestEvent)(u, er.AnalyticEvents.QUEST_LINK_SHARED, {
+                                            (0, G.trackQuestEvent)(u, er.AnalyticEvents.QUEST_LINK_SHARED, {
                                                 guild_id: J.default.getGuildId(),
                                                 channel_type: null === (d = W.default.getChannel(q.default.getChannelId())) || void 0 === d ? void 0 : d.type
                                             })
@@ -3007,40 +3007,70 @@
         815496: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                getQuestStatus: function() {
+                    return c
+                },
+                getContentProperties: function() {
+                    return _
+                },
                 trackQuestEvent: function() {
-                    return o
+                    return f
                 },
                 QuestContentCTA: function() {
                     return l
                 },
                 trackQuestContentClicked: function() {
-                    return c
+                    return g
                 }
             });
-            var a, l, s = n("599110"),
-                i = n("2973"),
-                r = n("588025"),
-                u = n("49111");
-            let d = Object.keys(r.QuestContent);
+            var a, l, s = n("313915"),
+                i = n("599110"),
+                r = n("2973"),
+                u = n("588025"),
+                d = n("49111");
+            let o = Object.keys(u.QuestContent);
 
-            function o(e, t, n) {
-                let a = i.default.quests.get(e);
-                if (null != a && !a.preview) {
-                    var l;
-                    s.default.track(t, {
-                        quest_id: (l = a).id,
-                        game_id: l.config.applicationId,
-                        game_name: l.config.applicationName,
+            function c(e) {
+                var t, n, a;
+                return null == e ? null : (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null === (n = e.userStatus) || void 0 === n ? void 0 : n.completedAt) != null ? "COMPLETED" : (null === (a = e.userStatus) || void 0 === a ? void 0 : a.enrolledAt) != null ? "ENROLLED" : "NONE"
+            }
+
+            function E(e) {
+                return {
+                    quest_id: e.id,
+                    game_id: e.config.applicationId,
+                    game_name: e.config.applicationName
+                }
+            }
+
+            function _(e) {
+                var t;
+                return {
+                    content_id: e,
+                    content_name: null !== (t = o.find(t => u.QuestContent[t] === e)) && void 0 !== t ? t : ""
+                }
+            }
+
+            function f(e, t, n) {
+                let a = r.default.quests.get(e);
+                if (null != a) {
+                    if (a.preview) {
+                        s.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", t, {
+                            ...E(a),
+                            ...n
+                        });
+                        return
+                    }
+                    i.default.track(t, {
+                        ...E(a),
                         ...n
                     })
                 }
             }
 
-            function c(e, t, n) {
-                var a, l;
-                o(e, u.AnalyticEvents.QUEST_CONTENT_CLICKED, {
-                    content_id: a = t,
-                    content_name: null !== (l = d.find(e => r.QuestContent[e] === a)) && void 0 !== l ? l : "",
+            function g(e, t, n) {
+                f(e, d.AnalyticEvents.QUEST_CONTENT_CLICKED, {
+                    ..._(t),
                     cta_name: n
                 })
             }(a = l || (l = {})).LEARN_MORE = "LEARN_MORE", a.SHOW_REWARD = "SHOW_REWARD", a.CLAIM_REWARD = "CLAIM_REWARD", a.ACCEPT_QUEST = "ACCEPT_QUEST", a.COPY_QUEST_URL = "COPY_QUEST_URL", a.TRACK_PROGRESS = "TRACK_PROGRESS", a.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", a.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", a.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", a.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", a.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", a.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE"
@@ -3612,4 +3642,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31717.f4ab9612ab9052b2e477.js.map
+//# sourceMappingURL=31717.cfed20a12b4a4d8f7264.js.map
