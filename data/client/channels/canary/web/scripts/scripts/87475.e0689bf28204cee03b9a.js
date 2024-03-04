@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["48059"], {
+    ["87475"], {
         458960: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -2185,6 +2185,28 @@
             (o = i || (i = {})).ERROR_SOURCE_UNKNOWN = "ERROR_SOURCE_UNKNOWN", o.PRECOMPRESSION_SUM_TOO_LARGE = "PRECOMPRESSION_SUM_TOO_LARGE", o.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.POSTCOMPRESSION_SUM_TOO_LARGE = "POSTCOMPRESSION_SUM_TOO_LARGE", o.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR = "UPLOAD_MESSAGE_ATTACHMENT_MAX_SIZE_ERROR", (s = r || (r = {})).SYSTEM_DM_TAG_SYSTEM_TYPE = "a", s.BOT_TAG_SERVER_TYPE = "b", s.AI_TAG_TYPE = "c", s.BOT_TAG_BOT_TYPE = "d", s.REMIXING_TYPE = "e", s.POLL_TYPE = "g";
             let h = 209715200
         },
+        258158: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return o
+                }
+            });
+            var i = n("37983");
+            n("884691");
+            var r = n("551042");
+
+            function o() {
+                (0, r.openModalLazy)(async () => {
+                    let {
+                        default: e
+                    } = await n.el("826269").then(n.bind(n, "826269"));
+                    return t => (0, i.jsx)(e, {
+                        ...t
+                    })
+                })
+            }
+        },
         560241: function(e, t, n) {
             "use strict";
             var i, r;
@@ -4048,7 +4070,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "271966", "271966"), 10);
+                let o = parseInt((n = "271970", "271970"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5664,4 +5686,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48059.05b9ed508966327c58fc.js.map
+//# sourceMappingURL=87475.e0689bf28204cee03b9a.js.map

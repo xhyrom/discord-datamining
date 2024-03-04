@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["55348"], {
+    ["10716"], {
         876779: function(I, N, A) {
             I.exports = {
                 Common: {
@@ -1707,39 +1707,116 @@
                 DYNAMICLINKS_IOS_APP_PREVIEW_DESCRIPTION: "您與社群和好友聊天的地方。"
             }
         },
+        272030: function(I, N, A) {
+            "use strict";
+            A.r(N), A.d(N, {
+                closeContextMenu: function() {
+                    return t
+                },
+                openContextMenu: function() {
+                    return i
+                },
+                openContextMenuLazy: function() {
+                    return n
+                }
+            }), A("506083");
+            var O = A("913144"),
+                T = A("244201"),
+                _ = A("773336"),
+                e = A("749866"),
+                E = A("49111");
+
+            function V(I) {
+                O.default.dispatch({
+                    type: "CONTEXT_MENU_OPEN",
+                    contextMenu: I
+                })
+            }
+
+            function t(I) {
+                {
+                    let {
+                        flushSync: N
+                    } = A("817736");
+                    N(() => {
+                        O.default.wait(() => {
+                            O.default.dispatch({
+                                type: "CONTEXT_MENU_CLOSE"
+                            }).finally(I)
+                        })
+                    })
+                }
+            }
+
+            function i(I, N, A, O) {
+                var t, i, n;
+                if (I.stopPropagation(), null != I.currentTarget.contains && !I.currentTarget.contains(I.target)) return;
+                let R = 0,
+                    G = 0;
+                if ("pageX" in I && (R = I.pageX, G = I.pageY), 0 === R && 0 === G) {
+                    let N = null === (t = I.target) || void 0 === t ? void 0 : t.getBoundingClientRect(),
+                        {
+                            left: A = 0,
+                            top: O = 0,
+                            width: T = 0,
+                            height: _ = 0
+                        } = null != N ? N : {};
+                    R = A + T / 2, G = O + _ / 2
+                }
+                let r = {
+                    render: N,
+                    renderLazy: O,
+                    target: null !== (i = I.target) && void 0 !== i ? i : I.currentTarget,
+                    rect: new DOMRect(R, G, 0, 0),
+                    config: {
+                        context: __OVERLAY__ ? E.AppContext.OVERLAY : null !== (n = (0, T.getCurrentlyInteractingAppContext)()) && void 0 !== n ? n : E.AppContext.APP,
+                        ...A
+                    }
+                };
+                if ((null == A ? void 0 : A.enableSpellCheck) && (0, _.isDesktop)()) {
+                    let I = (0, e.addResultListener)(() => {
+                        I(), V(r)
+                    })
+                } else I.preventDefault(), V(r)
+            }
+
+            function n(I, N, A) {
+                i(I, void 0, A, N)
+            }
+        },
         318696: function(I, N, A) {
             "use strict";
             let O, T;
             A.r(N), A.d(N, {
                 setLocale: function() {
-                    return G
+                    return t
                 },
                 updateLocaleLoadingStatus: function() {
-                    return R
+                    return i
                 }
             }), A("424973"), A("222007"), A("860677");
             var _ = A("913144"),
-                E = A("787910"),
-                e = A("782340");
+                e = A("787910"),
+                E = A("782340");
             O = A("792788").default;
             let V = !1;
 
-            function G(I) {
-                T = e.default.loadPromise, O && O.setLocale(I), e.default.setLocale(I), R(I)
+            function t(I) {
+                T = E.default.loadPromise, O && O.setLocale(I), E.default.setLocale(I), i(I)
             }
 
-            function R(I) {
+            function i(I) {
                 let N = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                if (V && e.default.loadPromise === T) return;
-                V = !0, N ? (0, E.setLocaleHack)(I) : _.default.dispatch({
+                if (V && E.default.loadPromise === T) return;
+                V = !0, N ? (0, e.setLocaleHack)(I) : _.default.dispatch({
                     type: "I18N_LOAD_START",
                     locale: I
                 });
-                let A = [e.default.loadPromise];
+                let A = [E.default.loadPromise];
                 O && A.push(O.loadPromise);
-                let G = Promise.all(A);
+                let t = Promise.all(A);
                 setImmediate(() => {
-                    G.then(() => {
+                    t.then(() => {
                         _.default.dispatch({
                             type: "I18N_LOAD_SUCCESS",
                             locale: I
@@ -1764,40 +1841,346 @@
             let O = window.DiscordNative;
             var T = O
         },
+        851234: function(I, N, A) {
+            "use strict";
+            A.r(N), A.d(N, {
+                default: function() {
+                    return O
+                }
+            }), A("70102");
+            var O, T = A("50885");
+            O = class {
+                get language() {
+                    return this._language
+                }
+                set language(I) {
+                    this._language !== I && (this._language = I, this._onChange(I))
+                }
+                set languageHint(I) {
+                    this._languageHint = I
+                }
+                process(I) {
+                    !this._processing && (this._processing = !0, requestIdleCallback(N => {
+                        var A, O;
+                        let _ = N.timeRemaining();
+                        if (_ <= this._minimumTimeRemaining) {
+                            this._processEnd();
+                            return
+                        }
+                        I.length > 256 && (I = I.slice(0, 256)), (A = I, O = this._languageHint, T.default.ensureModule("discord_spellcheck").then(() => {
+                            let {
+                                cld: I
+                            } = T.default.requireModule("discord_spellcheck");
+                            return new Promise((N, T) => {
+                                I.detect(A, {
+                                    httpHint: O,
+                                    encodingHint: "UTF8"
+                                }, (I, A) => {
+                                    null != I ? T(Error(I.message)) : !A.reliable || A.languages[0].percent < 90 || A.languages[0].score < 500 ? T(Error("Not enough reliable text.")) : N(A.languages[0].code)
+                                })
+                            })
+                        })).then(I => {
+                            this.language = I, this._processEnd(N.didTimeout)
+                        }, () => {
+                            this._processEnd(N.didTimeout)
+                        })
+                    }))
+                }
+                _processEnd() {
+                    let I = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                    this._processing = !1, I && this._minimumTimeRemaining++
+                }
+                constructor(I, N) {
+                    this._shouldProcess = !1, this._processing = !1, this._minimumTimeRemaining = 5, this._language = I, this._languageHint = I, this._onChange = N, N(I)
+                }
+            }
+        },
+        852046: function(I, N, A) {
+            "use strict";
+            A.r(N), A.d(N, {
+                install: function() {
+                    return s
+                }
+            }), A("781738"), A("222007");
+            var O = A("78349"),
+                T = A("917351"),
+                _ = A.n(T),
+                e = A("118810"),
+                E = A("49671"),
+                V = A("605250"),
+                t = A("915639"),
+                i = A("449008"),
+                n = A("851234"),
+                R = A("648610");
+            let G = new V.default("Spellchecker"),
+                r = null === E.default || void 0 === E.default ? void 0 : E.default.spellCheck;
+
+            function a(I) {
+                var N;
+                I = null !== (N = R.default[I]) && void 0 !== N ? N : I;
+                let A = (0, O.parse)(I.replace(/[_-]/g, "-"));
+                if (null == A || null == A.langtag.language || null == A.langtag.region) {
+                    G.error("".concat(I, " is not a valid locale."));
+                    return
+                }
+                let {
+                    language: T,
+                    region: _
+                } = A.langtag;
+                return "".concat(T.language.toLowerCase(), "-").concat(_.toUpperCase())
+            }
+            class S {
+                get enabled() {
+                    return this._enabled
+                }
+                set enabled(I) {
+                    this._enabled = I
+                }
+                setLearnedWords(I) {
+                    r.setLearnedWords(I)
+                }
+                setLocale(I) {
+                    var N;
+                    null === (N = r.setLocale(I)) || void 0 === N || N.then(N => {
+                        G.info("Switching to ".concat(I), N ? "(available)" : "(unavailable)")
+                    })
+                }
+                setAppLocale(I) {
+                    this.regionPreference = I.split("-")[1]
+                }
+                detectLanguage(I) {
+                    this.enabled && this.languageDetector.process(I)
+                }
+                getAvailableLanguages(I) {
+                    let N = {};
+                    return I.forEach(I => {
+                        var A;
+                        let [O] = I.split("-");
+                        N[O] = null !== (A = N[O]) && void 0 !== A ? A : I
+                    }), N
+                }
+                isMisspelled(I, N) {
+                    return "" !== this.misspelledWord && I === this.misspelledWord
+                }
+                getCorrectionsForMisspelling(I, N) {
+                    return this.isMisspelled(I, N) ? this.corrections : []
+                }
+                replaceMisspelling(I) {
+                    r.replaceMisspelling(I)
+                }
+                constructor(I) {
+                    this._enabled = !0, this.misspelledWord = "", this.corrections = [];
+                    let [N, A] = t.default.locale.split("-");
+                    this.regionPreference = A;
+                    let O = this.getAvailableLanguages(I);
+                    this.languageDetector = new n.default(N, A => {
+                        let T = "".concat(A, "-").concat(this.regionPreference);
+                        if (-1 !== I.indexOf(T)) this.setLocale(T);
+                        else {
+                            var _;
+                            let I = null !== (_ = O[A]) && void 0 !== _ ? _ : R.default[N];
+                            null != I && this.setLocale(I)
+                        }
+                    }), r.on("spellcheck-result", (I, N) => {
+                        this.misspelledWord = null != I ? I : "", this.corrections = null != N ? N : []
+                    })
+                }
+            }
+            let o = _.debounce((I, N) => {
+                let A = function(I) {
+                    return null == I ? null : (0, e.isElement)(I, HTMLInputElement) || (0, e.isElement)(I, HTMLTextAreaElement) ? I.value : (0, e.isElement)(I) && I.hasAttribute("contenteditable") ? I.textContent : void 0
+                }(N);
+                null != A && I.detectLanguage(A)
+            }, 250);
+            async function s() {
+                var I, N;
+                let A = null !== (I = await r.getAvailableDictionaries()) && void 0 !== I ? I : [],
+                    O = A.map(a).filter(i.isNotNullish),
+                    T = new S(O);
+                return N = T, null != document.body && document.body.addEventListener("beforeinput", I => o(N, I.target), !0), T
+            }
+        },
+        648610: function(I, N, A) {
+            "use strict";
+            A.r(N), A.d(N, {
+                default: function() {
+                    return O
+                }
+            });
+            var O = {
+                aa: "aa-ET",
+                af: "af-ZA",
+                ak: "ak-GH",
+                am: "am-ET",
+                an: "an-ES",
+                ar: "ar-MA",
+                as: "as-IN",
+                ay: "ay-PE",
+                az: "az-AZ",
+                be: "be-BY",
+                bg: "bg-BG",
+                bi: "bi-TV",
+                bn: "bn-BD",
+                bo: "bo-CN",
+                br: "br-FR",
+                bs: "bs-BA",
+                ca: "ca-ES",
+                ce: "ce-RU",
+                cs: "cs-CZ",
+                cv: "cv-RU",
+                cy: "cy-GB",
+                da: "da-DK",
+                de: "de-DE",
+                dv: "dv-MV",
+                dz: "dz-BT",
+                el: "el-GR",
+                en: "en-US",
+                es: "es-ES",
+                et: "et-EE",
+                eu: "eu-ES",
+                fa: "fa-IR",
+                ff: "ff-SN",
+                fi: "fi-FI",
+                fo: "fo-FO",
+                fr: "fr-FR",
+                fy: "fy-DE",
+                ga: "ga-IE",
+                gd: "gd-GB",
+                gl: "gl-ES",
+                gu: "gu-IN",
+                gv: "gv-GB",
+                ha: "ha-NG",
+                he: "he-IL",
+                hi: "hi-IN",
+                hr: "hr-HR",
+                ht: "ht-HT",
+                hu: "hu-HU",
+                hy: "hy-AM",
+                ia: "ia-FR",
+                id: "id-ID",
+                ig: "ig-NG",
+                ik: "ik-CA",
+                is: "is-IS",
+                it: "it-IT",
+                iu: "iu-CA",
+                ja: "ja-JP",
+                ka: "ka-GE",
+                kk: "kk-KZ",
+                kl: "kl-GL",
+                km: "km-KH",
+                kn: "kn-IN",
+                ko: "ko-KR",
+                ks: "ks-IN",
+                ku: "ku-TR",
+                kw: "kw-GB",
+                ky: "ky-KG",
+                lb: "lb-LU",
+                lg: "lg-UG",
+                li: "li-BE",
+                ln: "ln-CD",
+                lo: "lo-LA",
+                lt: "lt-LT",
+                lv: "lv-LV",
+                mg: "mg-MG",
+                mh: "mh-MH",
+                mi: "mi-NZ",
+                mk: "mk-MK",
+                ml: "ml-IN",
+                mn: "mn-MN",
+                mr: "mr-IN",
+                ms: "ms-MY",
+                mt: "mt-MT",
+                my: "my-MM",
+                nb: "nb-NO",
+                ne: "ne-NP",
+                nl: "nl-NL",
+                nn: "nn-NO",
+                nr: "nr-ZA",
+                oc: "oc-FR",
+                om: "om-KE",
+                or: "or-IN",
+                os: "os-RU",
+                pa: "pa-PK",
+                pl: "pl-PL",
+                ps: "ps-AF",
+                pt: "pt-PT",
+                ro: "ro-RO",
+                ru: "ru-RU",
+                rw: "rw-RW",
+                sa: "sa-IN",
+                sc: "sc-IT",
+                sd: "sd-IN",
+                se: "se-NO",
+                si: "si-LK",
+                sk: "sk-SK",
+                sl: "sl-SI",
+                so: "so-SO",
+                sq: "sq-AL",
+                sr: "sr-RS",
+                ss: "ss-ZA",
+                st: "st-ZA",
+                sv: "sv-SE",
+                sw: "sw-KE",
+                ta: "ta-IN",
+                te: "te-IN",
+                tg: "tg-TJ",
+                th: "th-TH",
+                ti: "ti-ER",
+                tk: "tk-TM",
+                tl: "tl-PH",
+                tn: "tn-ZA",
+                tr: "tr-TR",
+                ts: "ts-ZA",
+                tt: "tt-RU",
+                ug: "ug-CN",
+                uk: "uk-UA",
+                ur: "ur-PK",
+                uz: "uz-UZ",
+                ve: "ve-ZA",
+                vi: "vi-VN",
+                wa: "wa-BE",
+                wo: "wo-SN",
+                xh: "xh-ZA",
+                yi: "yi-US",
+                yo: "yo-NG",
+                zh: "zh-CN",
+                zu: "zu-ZA"
+            }
+        },
         915639: function(I, N, A) {
             "use strict";
             A.r(N), A.d(N, {
                 default: function() {
-                    return R
+                    return i
                 }
             });
             var O = A("446674"),
                 T = A("913144"),
                 _ = A("318696"),
-                E = A("374363");
-            let e = A("782340").default.getDefaultLocale();
+                e = A("374363");
+            let E = A("782340").default.getDefaultLocale();
 
             function V() {
                 var I, N;
-                let A = null === (N = E.default.settings.localization) || void 0 === N ? void 0 : null === (I = N.locale) || void 0 === I ? void 0 : I.value;
-                return null != A && "" !== A && A !== e && (e = A, _.setLocale(e), !0)
+                let A = null === (N = e.default.settings.localization) || void 0 === N ? void 0 : null === (I = N.locale) || void 0 === I ? void 0 : I.value;
+                return null != A && "" !== A && A !== E && (E = A, _.setLocale(E), !0)
             }
-            class G extends O.default.Store {
+            class t extends O.default.Store {
                 initialize() {
-                    this.waitFor(E.default), V(), _.setLocale(e)
+                    this.waitFor(e.default), V(), _.setLocale(E)
                 }
                 get locale() {
-                    return e
+                    return E
                 }
             }
-            G.displayName = "LocaleStore";
-            var R = new G(T.default, {
+            t.displayName = "LocaleStore";
+            var i = new t(T.default, {
                 OVERLAY_INITIALIZE: V,
                 CACHE_LOADED: V,
                 CONNECTION_OPEN: V,
                 USER_SETTINGS_PROTO_UPDATE: V,
                 USER_SETTINGS_LOCALE_OVERRIDE: function(I) {
-                    e = I.locale, _.setLocale(e)
+                    E = I.locale, _.setLocale(E)
                 }
             })
         },
@@ -1808,50 +2191,50 @@
                     return V
                 },
                 default: function() {
-                    return S
+                    return n
                 }
             });
             var O = A("446674"),
                 T = A("913144");
             let _ = !1,
-                E = null,
-                e = null;
+                e = null,
+                E = null;
 
             function V(I) {
-                G({
+                t({
                     locale: I
                 })
             }
 
-            function G(I) {
+            function t(I) {
                 let {
                     locale: N
                 } = I;
-                _ = !0, E = N
+                _ = !0, e = N
             }
-            class R extends O.default.Store {
+            class i extends O.default.Store {
                 isLoading() {
                     return _
                 }
                 getError() {
-                    return e
+                    return E
                 }
             }
-            R.displayName = "I18nLoaderStore";
-            var S = new R(T.default, {
-                I18N_LOAD_START: G,
+            i.displayName = "I18nLoaderStore";
+            var n = new i(T.default, {
+                I18N_LOAD_START: t,
                 I18N_LOAD_SUCCESS: function(I) {
                     let {
                         locale: N
                     } = I;
-                    N === E && (_ = !1, e = null, E = null)
+                    N === e && (_ = !1, E = null, e = null)
                 },
                 I18N_LOAD_ERROR: function(I) {
                     let {
                         error: N,
                         locale: A
                     } = I;
-                    A === E && (_ = !1, e = null != N ? N : null, E = null)
+                    A === e && (_ = !1, E = null != N ? N : null, e = null)
                 }
             })
         },
@@ -1859,10 +2242,10 @@
             "use strict";
             A.r(N), A.d(N, {
                 uid: function() {
-                    return E
+                    return e
                 },
                 useUID: function() {
-                    return e
+                    return E
                 },
                 UID: function() {
                     return V
@@ -1871,16 +2254,16 @@
             var O = A("995008"),
                 T = A.n(O),
                 _ = A("775560");
-            let E = function() {
+            let e = function() {
                     let I = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
                     return T(I)
                 },
-                e = () => (0, _.useLazyValue)(() => E()),
+                E = () => (0, _.useLazyValue)(() => e()),
                 V = I => {
                     let {
                         children: N
                     } = I;
-                    return N(e())
+                    return N(E())
                 }
         },
         449008: function(I, N, A) {
@@ -1909,11 +2292,85 @@
                 }
             }), A("70102")
         },
+        749866: function(I, N, A) {
+            "use strict";
+            A.r(N), A.d(N, {
+                isSupported: function() {
+                    return E
+                },
+                setEnabled: function() {
+                    return t
+                },
+                setLearnedWords: function() {
+                    return i
+                },
+                isMisspelled: function() {
+                    return n
+                },
+                getCorrections: function() {
+                    return R
+                },
+                replaceWithCorrection: function() {
+                    return G
+                },
+                setAppLocale: function() {
+                    return r
+                },
+                addResultListener: function() {
+                    return a
+                }
+            });
+            var O = A("49671"),
+                T = A("852046"),
+                _ = A("773336");
+
+            function e() {
+                return (null === O.default || void 0 === O.default ? void 0 : O.default.spellCheck) != null
+            }
+
+            function E() {
+                return (0, _.isDesktop)() && e()
+            }
+            let V = E() ? (0, T.install)() : null;
+            async function t(I) {
+                let N = await V;
+                null != N && (N.enabled = I)
+            }
+            async function i(I) {
+                let N = await V;
+                null != N && N.setLearnedWords(I)
+            }
+            async function n(I) {
+                let N = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    A = await V;
+                return null != A && A.isMisspelled(I, N)
+            }
+            async function R(I) {
+                let N = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    A = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 5,
+                    O = await V;
+                return null == O ? [] : O.getCorrectionsForMisspelling(I, N).slice(0, A)
+            }
+            async function G(I) {
+                let N = await V;
+                null != N && N.replaceMisspelling(I)
+            }
+            async function r(I) {
+                let N = await V;
+                null != N && N.setAppLocale(I)
+            }
+
+            function a(I) {
+                if (!e()) return () => {};
+                let N = O.default.spellCheck.on("spellcheck-result", I);
+                return null != N ? N : () => {}
+            }
+        },
         792788: function(I, N, A) {
             "use strict";
             A.r(N), A.d(N, {
                 default: function() {
-                    return E
+                    return e
                 }
             });
             var O = A("160679"),
@@ -1927,8 +2384,8 @@
             _.addListener("locale", I => {
                 document.cookie = "locale=".concat(I, ";path=/")
             });
-            var E = _
+            var e = _
         }
     }
 ]);
-//# sourceMappingURL=55348.86267527ca3d51194679.js.map
+//# sourceMappingURL=10716.c681704d6ab1d7df1771.js.map
