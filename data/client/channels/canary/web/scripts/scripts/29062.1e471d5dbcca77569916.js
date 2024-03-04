@@ -35720,12 +35720,6 @@
             var i = n("185429");
             n.es(i, t)
         },
-        31745: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("383465");
-            n.es(i, t)
-        },
         797439: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -35790,6 +35784,12 @@
             "use strict";
             n.r(t);
             var i = n("797405");
+            n.es(i, t)
+        },
+        715072: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("925964");
             n.es(i, t)
         },
         224763: function(e, t, n) {
@@ -87217,8 +87217,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709593243675",
-                                    build_number: "272082"
+                                    built_at: "1709594766436",
+                                    build_number: "272098"
                                 }
                             },
                             retries: 1
@@ -89145,7 +89145,7 @@
                         }), e2 = !1, e3 = !1, e4 = eE;
                         break;
                     case 1:
-                        if (null == eC || null == eG) return {
+                        if (null == eC || null == eG || null == ex) return {
                             body: (0, r.jsx)(p.Spinner, {})
                         };
                         let e6 = null == eR || eR instanceof Error ? {} : eR,
@@ -89156,6 +89156,8 @@
                             children: [(0, r.jsx)(B.default, {
                                 application: eC.application,
                                 accountScopes: eK,
+                                requestedScopes: eW,
+                                integrationType: ex,
                                 errors: e6,
                                 isTrustedName: e_
                             }), e7 ? (0, r.jsx)(Y.default, {
@@ -89309,79 +89311,87 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return m
                 }
-            }), n("222007");
+            });
             var i = n("37983");
             n("884691");
-            var s = n("775560"),
-                r = n("605451"),
-                a = n("577776"),
-                o = n("36694"),
-                l = n("945330"),
-                u = n("29479"),
-                d = n("782340"),
-                c = n("963355");
+            var s = n("414456"),
+                r = n.n(s),
+                a = n("775560"),
+                o = n("891189"),
+                l = n("605451"),
+                u = n("577776"),
+                d = n("36694"),
+                c = n("945330"),
+                f = n("29479"),
+                _ = n("843455"),
+                h = n("782340"),
+                E = n("963355");
 
-            function f(e) {
+            function g(e) {
+                let {
+                    text: t,
+                    error: n,
+                    isFake: s
+                } = e;
+                return (0, i.jsxs)("div", {
+                    className: E.scope,
+                    children: [(0, i.jsx)("div", {
+                        className: r(E.iconWrapper, s ? E.fakeScopeIcon : E.scopeIcon),
+                        children: s ? (0, i.jsx)(c.default, {
+                            className: E.icon
+                        }) : (0, i.jsx)(d.default, {
+                            className: E.icon
+                        })
+                    }), (0, i.jsxs)("div", {
+                        className: E.scopeInner,
+                        children: [(0, i.jsx)(u.Text, {
+                            variant: "text-md/medium",
+                            children: t
+                        }), null != n ? (0, i.jsx)(u.Text, {
+                            variant: "text-xs/normal",
+                            color: "text-danger",
+                            children: n
+                        }) : null]
+                    })]
+                })
+            }
+
+            function m(e) {
                 var t;
                 let {
                     application: n,
-                    accountScopes: f,
-                    errors: _,
-                    isTrustedName: h = !1
-                } = e, E = (0, s.useLazyValue)(() => u.FAKE_SCOPES[Math.floor(Math.random() * u.FAKE_SCOPES.length)]);
-                if (0 === f.length) return null;
-                let g = f.map(e => {
-                        var t;
-                        let n = (0, u.getScopeName)(e, f),
-                            [s] = null !== (t = null == _ ? void 0 : _[e]) && void 0 !== t ? t : [];
-                        return (0, i.jsxs)("div", {
-                            className: c.scope,
-                            children: [(0, i.jsx)("div", {
-                                className: c.scopeCheck,
-                                children: (0, i.jsx)(o.default, {
-                                    className: c.icon
-                                })
-                            }), (0, i.jsxs)("div", {
-                                className: c.scopeInner,
-                                children: [(0, i.jsx)(a.Text, {
-                                    variant: "text-md/medium",
-                                    children: n
-                                }), null != s ? (0, i.jsx)(a.Text, {
-                                    variant: "text-xs/normal",
-                                    color: "text-danger",
-                                    children: s
-                                }) : null]
-                            })]
-                        }, e)
-                    }),
-                    m = (0, i.jsxs)("div", {
-                        className: c.scope,
-                        children: [(0, i.jsx)("div", {
-                            className: c.scopeTimes,
-                            children: (0, i.jsx)(l.default, {
-                                className: c.icon
-                            })
-                        }), (0, i.jsx)("div", {
-                            className: c.scopeInner,
-                            children: (0, i.jsx)(a.Text, {
-                                variant: "text-md/normal",
-                                className: c.scopeName,
-                                children: E()
-                            })
-                        })]
-                    }),
-                    p = h ? d.default.Messages.OAUTH2_SCOPES_LABEL_TRUSTED_NAME : d.default.Messages.OAUTH2_SCOPES_LABEL;
+                    accountScopes: s,
+                    requestedScopes: r,
+                    integrationType: u,
+                    errors: d,
+                    isTrustedName: c = !1
+                } = e, m = (0, a.useLazyValue)(() => f.FAKE_SCOPES[Math.floor(Math.random() * f.FAKE_SCOPES.length)]);
+                if (0 === s.length) return null;
+                let p = m(),
+                    S = c ? h.default.Messages.OAUTH2_SCOPES_LABEL_TRUSTED_NAME : h.default.Messages.OAUTH2_SCOPES_LABEL,
+                    v = u === o.ApplicationIntegrationType.USER_INSTALL && r.includes(_.OAuth2Scopes.APPLICATIONS_COMMANDS);
                 return (0, i.jsxs)("div", {
-                    className: c.scopes,
-                    children: [(0, i.jsx)(r.Heading, {
+                    className: E.scopes,
+                    children: [(0, i.jsx)(l.Heading, {
                         variant: "heading-deprecated-12/semibold",
-                        className: c.sectionLabel,
-                        children: p.format({
+                        className: E.sectionLabel,
+                        children: S.format({
                             application: null !== (t = null == n ? void 0 : n.name) && void 0 !== t ? t : ""
                         })
-                    }), g, m]
+                    }), s.map(e => {
+                        var t;
+                        return (0, i.jsx)(g, {
+                            text: (0, f.getScopeName)(e, s),
+                            error: null == d ? void 0 : null === (t = d[e]) || void 0 === t ? void 0 : t[0]
+                        }, e)
+                    }), v && (0, i.jsx)(g, {
+                        text: h.default.Messages.SCOPE_DM_SELF
+                    }), (0, i.jsx)(g, {
+                        text: p,
+                        isFake: !0
+                    })]
                 })
             }
         },
@@ -89650,8 +89660,8 @@
                 a = n.n(r),
                 o = n("891189"),
                 l = n("913365"),
-                u = n("31745"),
-                d = n("542238"),
+                u = n("542238"),
+                d = n("715072"),
                 c = n("77078"),
                 f = n("772280"),
                 _ = n("315102"),
@@ -89669,12 +89679,12 @@
                     icon: n.icon
                 }), [n.icon, n.id]), p = s.useMemo(() => [{
                     type: o.ApplicationIntegrationType.USER_INSTALL,
-                    icon: (0, u.CirclePlusIcon),
+                    icon: (0, d.UserPlusIcon),
                     title: E.default.Messages.ADD_TO_USER,
                     subtitle: E.default.Messages.ADD_TO_USER_SUBTITLE
                 }, {
                     type: o.ApplicationIntegrationType.GUILD_INSTALL,
-                    icon: (0, d.ServerIcon),
+                    icon: (0, u.ServerIcon),
                     title: E.default.Messages.ADD_TO_GUILD,
                     subtitle: E.default.Messages.ADD_TO_GUILD_SUBTITLE
                 }].filter(e => {
@@ -124040,7 +124050,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "9e6db081b3b4daa89e73b0e04ae478d1434880b0"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "81f2806771b9ca22d3c0be64e630a60f3fb802a7"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133350,7 +133360,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272082"
+                                build_number: "272098"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -140041,50 +140051,6 @@
                 })
             }
         },
-        383465: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                CirclePlusIcon: function() {
-                    return a
-                }
-            });
-            var i = n("37983");
-            n("884691");
-            var s = n("669491"),
-                r = n("82169");
-            let a = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    secondaryColor: a = "transparent",
-                    secondaryColorClass: o = "",
-                    color: l = s.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: u = "",
-                    ...d
-                } = e;
-                return (0, i.jsxs)("svg", {
-                    ...(0, r.default)(d),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, i.jsx)("circle", {
-                        cx: "12",
-                        cy: "12",
-                        r: "10",
-                        fill: "string" == typeof a ? a : a.css,
-                        className: o
-                    }), (0, i.jsx)("path", {
-                        fill: "string" == typeof l ? l : l.css,
-                        fillRule: "evenodd",
-                        d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z",
-                        clipRule: "evenodd",
-                        className: u
-                    })]
-                })
-            }
-        },
         166432: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -140492,6 +140458,44 @@
                         clipRule: "evenodd",
                         className: o
                     })
+                })
+            }
+        },
+        925964: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                UserPlusIcon: function() {
+                    return a
+                }
+            });
+            var i = n("37983");
+            n("884691");
+            var s = n("669491"),
+                r = n("82169");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = s.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, r.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, i.jsx)("path", {
+                        d: "M19 14a1 1 0 0 1 1 1v3h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z",
+                        fill: "string" == typeof a ? a : a.css,
+                        className: o
+                    }), (0, i.jsx)("path", {
+                        d: "M16.83 12.93c.26-.27.26-.75-.08-.92A9.5 9.5 0 0 0 12.47 11h-.94A9.53 9.53 0 0 0 2 20.53c0 .81.66 1.47 1.47 1.47h.22c.24 0 .44-.17.5-.4.29-1.12.84-2.17 1.32-2.91.14-.21.43-.1.4.15l-.26 2.61c-.02.3.2.55.5.55h7.64c.12 0 .17-.31.06-.36C12.82 21.14 12 20.22 12 19a3 3 0 0 1 3-3h.5a.5.5 0 0 0 .5-.5V15c0-.8.31-1.53.83-2.07ZM12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z",
+                        fill: "string" == typeof a ? a : a.css,
+                        className: o
+                    })]
                 })
             }
         },
@@ -150901,4 +150905,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.a4b5f092b034a6316e31.js.map
+//# sourceMappingURL=29062.1e471d5dbcca77569916.js.map
