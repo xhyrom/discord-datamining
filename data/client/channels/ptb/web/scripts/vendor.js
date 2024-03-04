@@ -87217,8 +87217,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709591263026",
-                                    build_number: "272062"
+                                    built_at: "1709592736554",
+                                    build_number: "272077"
                                 }
                             },
                             retries: 1
@@ -94566,38 +94566,38 @@
                 }), t))
             }
 
-            function m(e, t, n) {
-                let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
-                    s = d.SpotifyEndpoints.PLAYER_OPEN(d.SpotifyResourceTypes.TRACK, n, !1),
+            function m(e, t, n, i) {
+                let s = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
+                    a = d.SpotifyEndpoints.PLAYER_OPEN(i, n, !1),
                     {
-                        deviceId: a,
-                        position: o,
-                        contextUri: l,
-                        repeat: u
-                    } = i;
+                        deviceId: o,
+                        position: l,
+                        contextUri: u,
+                        repeat: c
+                    } = s;
                 return _.put(e, t, {
                     url: d.SpotifyEndpoints.PLAYER_PLAY,
                     query: {
-                        device_id: a
+                        device_id: o
                     },
                     body: {
-                        context_uri: null != l ? l : void 0,
-                        uris: null == l ? [s] : void 0,
-                        offset: null != l ? {
-                            uri: s
+                        context_uri: null != u ? u : void 0,
+                        uris: null == u ? [a] : void 0,
+                        offset: null != u ? {
+                            uri: a
                         } : void 0,
-                        position_ms: null != o ? o : 0
+                        position_ms: null != l ? l : 0
                     }
-                }).then(n => null == u ? n : _.put(e, t, {
+                }).then(n => null == c ? n : _.put(e, t, {
                     url: d.SpotifyEndpoints.PLAYER_REPEAT,
                     query: {
-                        device_id: a,
-                        state: u ? "context" : "off"
+                        device_id: o,
+                        state: c ? "context" : "off"
                     }
                 })).then(e => (r.default.dispatch({
                     type: "SPOTIFY_PLAYER_PLAY",
                     id: n,
-                    position: null != o ? o : 0
+                    position: null != l ? l : 0
                 }), e))
             }
 
@@ -94652,6 +94652,9 @@
                 },
                 SpotifyEndpoints: function() {
                     return m
+                },
+                getSpotifyResourceType: function() {
+                    return p
                 }
             });
             var i, s, r, a, o = n("376556"),
@@ -94663,7 +94666,7 @@
 
             function _(e) {
                 return null != e && e.startsWith(c)
-            }(i = r || (r = {})).TRACK = "track", i.ARTIST = "artist", i.ALBUM = "album", i.PLAYLIST = "playlist", (s = a || (a = {})).USER_ACTIVITY_PLAY = "user_activity_play", s.USER_ACTIVITY_SYNC = "user_activity_sync", s.EMBED_SYNC = "embed_sync";
+            }(i = r || (r = {})).TRACK = "track", i.ARTIST = "artist", i.ALBUM = "album", i.PLAYLIST = "playlist", i.EPISODE = "episode", i.SHOW = "show", (s = a || (a = {})).USER_ACTIVITY_PLAY = "user_activity_play", s.USER_ACTIVITY_SYNC = "user_activity_sync", s.EMBED_SYNC = "embed_sync";
             let h = ["open.spotify.com", "www.spotify.com"],
                 E = "https://api.spotify.com/v1",
                 g = e => "?utm_source=discord&utm_medium=".concat(e),
@@ -94692,7 +94695,27 @@
                     INSTALL_ATTRIBUTION: e => "https://app.adjust.com/bdyga9?campaign=".concat(e),
                     APP_STORE: (0, l.isAndroid)() ? "https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_US&gl=US" : "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8",
                     IOS_APP_STORE: "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8"
-                })
+                });
+
+            function p(e) {
+                if ("string" != typeof e) return null;
+                switch (e) {
+                    case "track":
+                        return "track";
+                    case "artist":
+                        return "artist";
+                    case "album":
+                        return "album";
+                    case "playlist":
+                        return "playlist";
+                    case "episode":
+                        return "episode";
+                    case "show":
+                        return "show";
+                    default:
+                        return null
+                }
+            }
         },
         155815: function(e, t, n) {
             "use strict";
@@ -94905,36 +94928,40 @@
             }
 
             function el(e, t, n) {
-                let i = ee();
-                if (null == i) return !1;
+                var i, r;
+                let a = ee();
+                if (null == a) return !1;
                 let {
-                    socket: r,
-                    device: a
-                } = i, {
-                    sync_id: o,
-                    party: l,
-                    timestamps: u
+                    socket: o,
+                    device: l
+                } = a, {
+                    sync_id: u,
+                    party: d,
+                    timestamps: c
                 } = t;
-                if (null == o || null == l || null == l.id || !(0, P.isSpotifyParty)(l.id)) return !1;
-                let d = null != u && null != u.start ? u.start : Date.now(),
-                    c = Math.max(0, Date.now() - d),
-                    f = !1,
-                    _ = Z[r.accountId];
-                null != _ && !1 === _.repeat && (f = null), (0, D.play)(r.accountId, r.accessToken, o, {
-                    position: +c,
-                    deviceId: a.id,
-                    repeat: f
+                if (null == u || null == d || null == d.id || !(0, P.isSpotifyParty)(d.id)) return !1;
+                let f = null != c && null != c.start ? c.start : Date.now(),
+                    _ = Math.max(0, Date.now() - f),
+                    h = !1,
+                    E = Z[o.accountId];
+                null != E && !1 === E.repeat && (h = null);
+                let g = (0, P.getSpotifyResourceType)(null !== (r = null === (i = t.metadata) || void 0 === i ? void 0 : i.type) && void 0 !== r ? r : P.SpotifyResourceTypes.TRACK);
+                if (null == g) return;
+                (0, D.play)(o.accountId, o.accessToken, u, g, {
+                    position: +_,
+                    deviceId: l.id,
+                    repeat: h
                 }), s = {
                     userId: e,
-                    partyId: l.id,
-                    trackId: o,
-                    startTime: d
+                    partyId: d.id,
+                    trackId: u,
+                    startTime: f
                 };
-                let h = "presence change";
-                n && (h = "started", N.default.track(L.AnalyticEvents.SPOTIFY_LISTEN_ALONG_STARTED, {
-                    party_id: l.id,
+                let m = "presence change";
+                n && (m = "started", N.default.track(L.AnalyticEvents.SPOTIFY_LISTEN_ALONG_STARTED, {
+                    party_id: d.id,
                     other_user_id: e
-                })), Y.info("Listen along ".concat(h, ": ").concat(r.accountId, " to ").concat(e, " playing ").concat(o, " on ").concat(a.name))
+                })), Y.info("Listen along ".concat(m, ": ").concat(o.accountId, " to ").concat(e, " playing ").concat(u, " on ").concat(l.name))
             }
 
             function eu() {
@@ -95002,36 +95029,53 @@
             }
 
             function e_(e, t, n) {
-                let i, s, {
-                    device: r,
-                    progress_ms: a,
-                    is_playing: o,
-                    repeat_state: l,
-                    item: u,
-                    context: d
+                var i, s, r, a, o, l, u, d, c, f, _;
+                let E, g, {
+                    device: m,
+                    progress_ms: p,
+                    is_playing: S,
+                    repeat_state: v,
+                    item: T,
+                    context: I
                 } = n;
-                if (null != u && u.type === P.SpotifyResourceTypes.TRACK) {
-                    let e = u.id;
-                    null != u.linked_from && null != u.linked_from.id && (e = u.linked_from.id), i = {
+                if (null != T && T.type === P.SpotifyResourceTypes.TRACK) {
+                    let e = T.id;
+                    null != T.linked_from && null != T.linked_from.id && (e = T.linked_from.id), E = {
                         id: e,
-                        name: u.name,
-                        duration: u.duration_ms,
+                        name: T.name,
+                        duration: T.duration_ms,
+                        type: P.SpotifyResourceTypes.TRACK,
                         album: {
-                            id: u.album.id,
-                            name: u.album.name,
-                            image: u.album.images[0]
+                            id: null !== (a = null === (i = T.album) || void 0 === i ? void 0 : i.id) && void 0 !== a ? a : "",
+                            name: null !== (o = null === (s = T.album) || void 0 === s ? void 0 : s.name) && void 0 !== o ? o : "",
+                            image: null === (r = T.album) || void 0 === r ? void 0 : r.images[0]
                         },
-                        artists: u.artists,
-                        isLocal: u.is_local || !1
+                        artists: null !== (l = T.artists) && void 0 !== l ? l : [],
+                        isLocal: T.is_local || !1
+                    }
+                } else if (null != T && T.type === P.SpotifyResourceTypes.EPISODE) {
+                    let e = T.id;
+                    E = {
+                        id: e,
+                        name: T.name,
+                        duration: T.duration_ms,
+                        type: P.SpotifyResourceTypes.EPISODE,
+                        album: {
+                            id: null !== (f = null === (u = T.show) || void 0 === u ? void 0 : u.id) && void 0 !== f ? f : "",
+                            name: null !== (_ = null === (d = T.show) || void 0 === d ? void 0 : d.name) && void 0 !== _ ? _ : "",
+                            image: null === (c = T.show) || void 0 === c ? void 0 : c.images[0]
+                        },
+                        artists: [],
+                        isLocal: !1
                     }
                 }
-                if (null != r && !0 !== r.is_active && (r = {
-                        ...r,
+                if (null != m && !0 !== m.is_active && (m = {
+                        ...m,
                         is_active: !0
-                    }), null != d && [P.SpotifyResourceTypes.PLAYLIST, P.SpotifyResourceTypes.ALBUM].includes(d.type)) {
+                    }), null != I && [P.SpotifyResourceTypes.PLAYLIST, P.SpotifyResourceTypes.ALBUM].includes(I.type)) {
                     let n = eg.getPlayerState(e);
-                    s = null != n && null != n.context && n.context.uri === d.uri ? Promise.resolve(n.context) : d.type === P.SpotifyResourceTypes.ALBUM ? Promise.resolve(d) : D.SpotifyAPI.get(e, t, {
-                        url: d.href
+                    g = null != n && null != n.context && n.context.uri === I.uri ? Promise.resolve(n.context) : I.type === P.SpotifyResourceTypes.ALBUM ? Promise.resolve(I) : D.SpotifyAPI.get(e, t, {
+                        url: I.href
                     }).then(e => {
                         let {
                             body: t
@@ -95041,18 +95085,18 @@
                         if (e && 404 === e.status) return null;
                         throw e
                     })
-                } else s = Promise.resolve(void 0);
-                return s.then(t => {
+                } else g = Promise.resolve(void 0);
+                return g.then(t => {
                     null != t && t.type === P.SpotifyResourceTypes.PLAYLIST && !t.public && (t = null), h.default.dispatch({
                         type: "SPOTIFY_PLAYER_STATE",
                         accountId: e,
-                        track: i,
-                        volumePercent: null != r ? r.volume_percent : 0,
-                        isPlaying: o,
-                        repeat: "off" !== l,
-                        position: a,
+                        track: E,
+                        volumePercent: null != m ? m.volume_percent : 0,
+                        isPlaying: S,
+                        repeat: "off" !== v,
+                        position: p,
                         context: t,
-                        device: r
+                        device: m
                     })
                 })
             }
@@ -95060,6 +95104,9 @@
             function eh(e, t) {
                 return D.SpotifyAPI.get(e, t, {
                     url: P.SpotifyEndpoints.PLAYER,
+                    query: {
+                        additional_types: "".concat(P.SpotifyResourceTypes.TRACK, ",").concat(P.SpotifyResourceTypes.EPISODE)
+                    },
                     onlyRetryOnAuthorizationErrors: !0
                 }).then(n => {
                     let i = n.body;
@@ -95141,44 +95188,46 @@
                             name: o,
                             id: l,
                             duration: u,
-                            isLocal: d
+                            isLocal: d,
+                            type: c
                         },
-                        startTime: c,
-                        context: f
-                    } = i, _ = r.slice(0, 5);
-                    r.length > 0 && (e = _.map(e => {
+                        startTime: f,
+                        context: _
+                    } = i, h = r.slice(0, 5);
+                    r.length > 0 && (e = h.map(e => {
                         let {
                             name: t
                         } = e;
                         return t.replace(/;/g, "")
                     }).join("; "));
-                    let h = {},
-                        E = null != a.image ? (0, R.getAssetFromImageURL)(L.PlatformTypes.SPOTIFY, a.image.url) : null;
-                    null != a.image && null != E && (h.large_image = E), "single" !== a.type && (h.large_text = a.name), null != f && (t = f.uri), n = null != s && null != s.partyId ? s.partyId : "".concat(P.SPOTIFY_PARTY_PREFIX).concat(v.default.getId());
-                    let g = o.length > 128 ? o.substring(0, 125) + "..." : o,
-                        m = {
+                    let E = {},
+                        g = null != a.image ? (0, R.getAssetFromImageURL)(L.PlatformTypes.SPOTIFY, a.image.url) : null;
+                    null != a.image && null != g && (E.large_image = g), "single" !== a.type && (E.large_text = a.name), null != _ && (t = _.uri), n = null != s && null != s.partyId ? s.partyId : "".concat(P.SPOTIFY_PARTY_PREFIX).concat(v.default.getId());
+                    let m = o.length > 128 ? o.substring(0, 125) + "..." : o,
+                        p = {
                             name: M.name,
-                            assets: h,
-                            details: g,
+                            assets: E,
+                            details: m,
                             state: e,
                             timestamps: {
-                                start: c,
-                                end: c + u
+                                start: f,
+                                end: f + u
                             },
                             party: {
                                 id: n
                             }
                         };
-                    return !d && (m.sync_id = l, m.flags = L.ActivityFlags.PLAY | L.ActivityFlags.SYNC, m.metadata = {
+                    return !d && (p.sync_id = l, p.flags = L.ActivityFlags.PLAY | L.ActivityFlags.SYNC, p.metadata = {
                         context_uri: t,
                         album_id: a.id,
-                        artist_ids: _.map(e => {
+                        artist_ids: h.map(e => {
                             let {
                                 id: t
                             } = e;
                             return t
-                        })
-                    }), m
+                        }),
+                        type: c
+                    }), p
                 }
             }
             eE.displayName = "SpotifyStore";
@@ -95262,24 +95311,24 @@
                     r = t
                 },
                 ACTIVITY_PLAY: function(e) {
-                    let t, {
-                            activity: n,
-                            metadata: i
+                    var t;
+                    let n, {
+                            activity: i,
+                            metadata: r
                         } = e,
-                        r = ee();
-                    if (null == r) return !1;
+                        a = ee();
+                    if (null == a) return !1;
                     let {
-                        socket: a,
-                        device: o
-                    } = r, {
-                        sync_id: l,
-                        party: u
-                    } = n;
-                    if (null == l || null == u || null == u.id || !(0, P.isSpotifyParty)(u.id)) return !1;
-                    null != i && (t = i.context_uri), null != s && eu(), (0, D.play)(a.accountId, a.accessToken, l, {
-                        contextUri: t,
-                        deviceId: o.id
-                    }), Y.info("Play started: ".concat(a.accountId, " playing ").concat(l, " on ").concat(o.name))
+                        socket: o,
+                        device: l
+                    } = a, {
+                        sync_id: u,
+                        party: d
+                    } = i;
+                    return !!(null != u && null != d && null != d.id && (0, P.isSpotifyParty)(d.id)) && (null != r && (n = r.context_uri), null != s && eu(), null != r && void((0, D.play)(o.accountId, o.accessToken, u, null !== (t = r.type) && void 0 !== t ? t : P.SpotifyResourceTypes.TRACK, {
+                        contextUri: n,
+                        deviceId: l.id
+                    }), Y.info("Play started: ".concat(o.accountId, " playing ").concat(u, " on ").concat(l.name))))
                 },
                 ACTIVITY_SYNC: function(e) {
                     let {
@@ -123991,7 +124040,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "1c248ce73cb81653baff30112c1f557d47868849"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "0020603cab8bbe1006b34c4bb6407916ae43106d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133301,7 +133350,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272062"
+                                build_number: "272077"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -150852,4 +150901,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.5504e5553de5cfdd50c5.js.map
+//# sourceMappingURL=29062.de9d736ae85da772b75a.js.map
