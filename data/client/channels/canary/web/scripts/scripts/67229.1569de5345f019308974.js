@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -53529,8 +53529,8 @@
             });
             var i = n("49111");
 
-            function s(e) {
-                return null != e && e.type !== i.ActivityTypes.CUSTOM_STATUS && (null != e.details || null != e.assets && (null != e.assets.large_image || null != e.assets.small_text) || null != e.party || null != e.secrets || null != e.state)
+            function s(e, t) {
+                return ((null == e ? void 0 : e.type) !== i.ActivityTypes.HANG_STATUS || !!t) && null != e && e.type !== i.ActivityTypes.CUSTOM_STATUS && (null != e.details || null != e.assets && (null != e.assets.large_image || null != e.assets.small_text) || null != e.party || null != e.secrets || null != e.state)
             }
         },
         429928: function(e, t, n) {
@@ -87217,8 +87217,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709589420169",
-                                    build_number: "272036"
+                                    built_at: "1709590253275",
+                                    build_number: "272049"
                                 }
                             },
                             retries: 1
@@ -123991,7 +123991,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "b78c834a506d56f30b58b2ae629d75e3d5df7c86"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "f5d84cee51a74da49640f74f0de6b161397fdad5"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133301,7 +133301,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272036"
+                                build_number: "272049"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -150852,4 +150852,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.d921a16f49a844d6ce3d.js.map
+//# sourceMappingURL=67229.1569de5345f019308974.js.map
