@@ -20409,6 +20409,19 @@
                 textWithAD: "textWithAD__170eb"
             }
         },
+        627887: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                activeProgressCircle: "activeProgressCircle__29798",
+                gemBackgroundFill: "gemBackgroundFill__8886e",
+                gemGlow: "gemGlow__6989d",
+                gemProgressCircle: "gemProgressCircle__1a3f7",
+                glow: "glow_c871dc",
+                nitroGem: "nitroGem__17235",
+                nitroGemContainer: "nitroGemContainer__60a1a",
+                pulse: "pulse_c5fe4d"
+            }
+        },
         666026: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -20452,6 +20465,15 @@
                 tier1UploadPerk: "tier1UploadPerk__01029",
                 tier2Buttons: "tier2Buttons_ab7f54",
                 tier2Plan: "tier2Plan__66988"
+            }
+        },
+        43837: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                baseProgressCircle: "baseProgressCircle_b5f373",
+                childrenContainer: "childrenContainer__135ae",
+                circleContainer: "circleContainer__04082",
+                circleSVG: "circleSVG__53ba4"
             }
         },
         871610: function(e, t, o) {
@@ -20630,6 +20652,8 @@
                 card: "card_e97590",
                 cardDescription: "cardDescription__46c9d",
                 cardHeading: "cardHeading__2b53d",
+                cardIllustration: "cardIllustration_f54865",
+                cardIllustrationNoHover: "cardIllustrationNoHover_e49efc",
                 cardImage: "cardImage__9da5b",
                 cardSubtitle: "cardSubtitle__4a267",
                 carouselCardImage: "carouselCardImage__4e898",
