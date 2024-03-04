@@ -17146,6 +17146,7 @@
                 ADD_TO_GUILD: "Add to server",
                 ADD_TO_GUILD_SUBTITLE: "Customize your server by adding this app",
                 USER_APPS_LEARN_MORE: "To learn more about apps on Discord, visit our [Help Center]({helpUrl}).",
+                SCOPE_DM_SELF: "Send you direct messages",
                 MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff.",
                 INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_1: "Add Inappropriate Tier 1 Warning (Experimental)",
                 INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_2: "Add Inappropriate Tier 2 Warning (Experimental)",
@@ -18349,7 +18350,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272082", ", Version Hash: ").concat("9e6db081b3b4daa89e73b0e04ae478d1434880b0")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272098", ", Version Hash: ").concat("81f2806771b9ca22d3c0be64e630a60f3fb802a7")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20644,8 +20645,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "272082", "272082"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272082")), _ = 0), _
+                let _ = parseInt((e = "272098", "272098"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272098")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36187,4 +36188,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.4ddd65b185b9bd2b9e1d.js.map
+//# sourceMappingURL=76039.4c30543daeca8f60280e.js.map

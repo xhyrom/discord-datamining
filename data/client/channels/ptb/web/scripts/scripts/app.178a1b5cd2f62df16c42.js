@@ -17715,11 +17715,12 @@
         963355: function(e, t, o) {
             "use strict";
             e.exports = {
+                fakeScopeIcon: "fakeScopeIcon__9116c",
                 icon: "icon__33514",
+                iconWrapper: "iconWrapper__54839",
                 scope: "scope__51160",
-                scopeCheck: "scopeCheck_c4c2dd",
+                scopeIcon: "scopeIcon__4abe7",
                 scopeInner: "scopeInner__29638",
-                scopeTimes: "scopeTimes__83c10",
                 scopes: "scopes__1f403",
                 sectionLabel: "sectionLabel_ba4f0b"
             }
