@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_activityiframemountfromgatewayupdate",
+    "label": "mount activity iframe in response to gateway update",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enabled"
+    ],
+    "hash": 1678972737,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

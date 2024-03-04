@@ -467,6 +467,7 @@ id,hash,label
 2024-01_voice_user_game_activity,1400973357,Voice User Game Activity
 2024-01_windows_key_frame_interval,2961250399,Windows key frame interval
 2024-02_activity_react_reply,1210736186,Activity React Reply
+2024-02_activityiframemountfromgatewayupdate,1678972737,mount activity iframe in response to gateway update
 2024-02_all_marketing_page_optimization_phase_1,336769699,Marketing Page Optimizations - Phase 1
 2024-02_app_storefront,3943467861,App Storefront
 2024-02_applaunchermobilenew,2165998604,App Launcher - Mobile
