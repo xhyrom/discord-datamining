@@ -4371,6 +4371,10 @@
             "use strict";
             e.exports = {
                 emojiStickersDivider: "emojiStickersDivider_b9c985",
+                premiumHeader: "premiumHeader_f78f97",
+                premiumIcon: "premiumIcon__9d56f",
+                premiumSectionDivider: "premiumSectionDivider__8b7d8",
+                premiumText: "premiumText_a5e1e9",
                 stickersHeaderWithEmojiResults: "stickersHeaderWithEmojiResults__2a7da"
             }
         },
@@ -6977,14 +6981,6 @@
                 list: "list__30719",
                 listWrapper: "listWrapper__7a5c9",
                 nitroBottomDivider: "nitroBottomDivider_d06fca",
-                nitroTopDividerContainer: "nitroTopDividerContainer__3d13a",
-                nitroTopDividerLockBorder: "nitroTopDividerLockBorder__9b084",
-                nitroTopDividerLockBorderReversed: "nitroTopDividerLockBorderReversed__24b14",
-                nitroTopDividerLockCircle: "nitroTopDividerLockCircle__19774",
-                nitroTopDividerLockContainer: "nitroTopDividerLockContainer__4adce",
-                nitroTopDividerLower: "nitroTopDividerLower__6ca09",
-                nitroTopDividerShadow: "nitroTopDividerShadow_ba90d0",
-                nitroTopDividerUpper: "nitroTopDividerUpper_a3c956",
                 noSearchResultsContainer: "noSearchResultsContainer__66d34",
                 premiumUpsell: "premiumUpsell_e1bfd9",
                 premiumUpsellTopOfList: "premiumUpsellTopOfList_ce5874 premiumUpsell_e1bfd9",
@@ -19759,6 +19755,19 @@
                 learnMore: "learnMore__85b56",
                 learnMoreResendUnderlinedText: "learnMoreResendUnderlinedText__6baf1",
                 shareNitroResendCopySuffix: "shareNitroResendCopySuffix_ccfe5a"
+            }
+        },
+        335673: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                nitroTopDividerContainer: "nitroTopDividerContainer__4c8fd",
+                nitroTopDividerLockBorder: "nitroTopDividerLockBorder_f7e0dd",
+                nitroTopDividerLockBorderReversed: "nitroTopDividerLockBorderReversed__4297f",
+                nitroTopDividerLockCircle: "nitroTopDividerLockCircle__66ef7",
+                nitroTopDividerLockContainer: "nitroTopDividerLockContainer_e2d4a9",
+                nitroTopDividerLower: "nitroTopDividerLower__4dc3d",
+                nitroTopDividerShadow: "nitroTopDividerShadow__3eefc",
+                nitroTopDividerUpper: "nitroTopDividerUpper__40e3c"
             }
         },
         466645: function(e, t, o) {

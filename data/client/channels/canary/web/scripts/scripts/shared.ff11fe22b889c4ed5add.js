@@ -1396,6 +1396,7 @@
                 emojiRaw: "emojiRaw__27f19 emojiImage__152dd",
                 icon: "icon__95d3a",
                 iconForeground: "iconForeground__0dfea",
+                premiumEmoji: "premiumEmoji__2dbd7",
                 roleDot: "roleDot__0e331"
             }
         },
