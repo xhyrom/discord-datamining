@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["45109"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -63092,8 +63092,7 @@
                     alt_clips_2: "Use alt clip icon 2",
                     profile_effect_debug_controls: "Scrolls through profile effects with arrow up / down. Restart with R",
                     shop_disable_cache: "Disable shop cache",
-                    shop_include_unpublished: "Show unpublished items in the shop",
-                    lottie_hover_multiple_loop: "Lotties - continue playing the hover animation after mouse enter"
+                    shop_include_unpublished: "Show unpublished items in the shop"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -87219,8 +87218,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709660243226",
-                                    build_number: "272273"
+                                    built_at: "1709660537496",
+                                    build_number: "272277"
                                 }
                             },
                             retries: 1
@@ -124057,7 +124056,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "93345db6a8a07fb723c1e70fe2044284cd373cf7"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "9f3508164213cc74eb9ef1acddad5e088e0da1e9"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -127613,7 +127612,7 @@
                         width: n,
                         height: i,
                         overflow: "visible",
-                        mask: null != t ? "url(#".concat(t, ")") : void 0,
+                        mask: "url(#".concat(t, ")"),
                         children: o
                     })
                 })
@@ -133367,7 +133366,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272273"
+                                build_number: "272277"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -150904,4 +150903,4 @@
         }
     }
 ]);
-//# sourceMappingURL=45109.79d62876d3356a5fd5f3.js.map
+//# sourceMappingURL=29062.f1553f10fe737362bef7.js.map

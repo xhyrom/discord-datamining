@@ -100,18 +100,6 @@
             "use strict";
             e.exports = "data:image/svg+xml;utf8,%3Csvg%20width%3D%22256%22%20height%3D%2278%22%20viewBox%3D%2232%2024%20256%2078%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M36%2024C33.7909%2024%2032%2025.7909%2032%2028V78C32%2080.2091%2033.7909%2082%2036%2082H86C88.2091%2082%2090%2080.2091%2090%2078V28C90%2025.7909%2088.2091%2024%2086%2024H36ZM110%2024C107.791%2024%20106%2025.7909%20106%2028V38C106%2040.2091%20107.791%2042%20110%2042H179C181.209%2042%20183%2040.2091%20183%2038V28C183%2025.7909%20181.209%2024%20179%2024H110ZM106%2058C106%2055.7909%20107.791%2054%20110%2054H284C286.209%2054%20288%2055.7909%20288%2058V68C288%2070.2091%20286.209%2072%20284%2072H110C107.791%2072%20106%2070.2091%20106%2068V58ZM110%2084C107.791%2084%20106%2085.7909%20106%2088V98C106%20100.209%20107.791%20102%20110%20102H223C225.209%20102%20227%20100.209%20227%2098V88C227%2085.7909%20225.209%2084%20223%2084H110Z%22%20fill%3D%22%23000000%22%20%2F%3E%3C%2Fsvg%3E"
         },
-        453269: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "431a65ab344868e3ccb9.lottie"
-        },
-        879955: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "c8c614632cd492b0aad7.lottie"
-        },
-        287736: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "31508c0dcb7f74ac19f2.lottie"
-        },
         142226: function(e, t, n) {
             "use strict";
             e.exports = n.p + "b92378012a6b664c01b6.png"
@@ -3227,40 +3215,6 @@
                 return n.displayName = "withAnalyticsContext(".concat(null !== (t = e.displayName) && void 0 !== t ? t : e.name, ")"), n
             }
         },
-        185370: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ICON_SIZE: function() {
-                    return l
-                }
-            });
-            let l = {
-                xxs: 12,
-                xs: 16,
-                sm: 18,
-                md: 24,
-                lg: 32,
-                custom: void 0
-            }
-        },
-        228470: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getIconSize: function() {
-                    return i
-                }
-            });
-            var l = n("185370");
-
-            function i(e) {
-                if ("custom" === e) return null;
-                let t = l.ICON_SIZE[e];
-                return {
-                    width: t,
-                    height: t
-                }
-            }
-        },
         975411: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -3483,225 +3437,6 @@
             var l = n("613511");
             n.es(l, t)
         },
-        526441: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return l
-                }
-            });
-            var l = (0, n("862205").createExperiment)({
-                kind: "user",
-                id: "2024-02_desktop_animated_icons",
-                label: "Desktop animated icons",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Animated icons enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
-        },
-        414235: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                LottieIcon: function() {
-                    return p
-                }
-            });
-            var l = n("37983"),
-                i = n("884691"),
-                a = n("946147"),
-                s = n("414456"),
-                r = n.n(s),
-                o = n("413197"),
-                u = n("228470"),
-                d = n("526441"),
-                c = n("890503"),
-                f = n("103487");
-
-            function m(e, t) {
-                let n = e.getAnimationInstance();
-                if (null == n) return;
-                let l = n.markers,
-                    i = l.find(e => e.payload.name === t);
-                if (null != i) return i
-            }
-            let p = i.forwardRef(function(e, t) {
-                let {
-                    color: n,
-                    src: s,
-                    size: p = "md",
-                    width: h,
-                    height: E,
-                    className: g,
-                    initialAnimation: C
-                } = e, S = i.useRef(null), T = i.useRef(null), v = i.useId(), I = i.useContext(o.AccessibilityPreferencesContext).reducedMotion.enabled, _ = i.useRef(C), {
-                    enabled: N
-                } = d.default.useExperiment({
-                    location: "LottieIcon web entry point"
-                }), A = I || !N, x = i.useCallback(e => {
-                    if (null != S.current && e === a.PlayerEvents.Ready) {
-                        let e = 0;
-                        if (null != T.current) {
-                            let t = m(S.current, T.current);
-                            e = null != t ? t.time + t.duration : 0
-                        } else if (null != _.current) {
-                            var t, n;
-                            e = null !== (n = null === (t = m(S.current, _.current)) || void 0 === t ? void 0 : t.time) && void 0 !== n ? n : 0
-                        }
-                        S.current.seek(e)
-                    }
-                }, []), y = !(0, c.default)("lottie_hover_multiple_loop");
-                i.useImperativeHandle(t, () => ({
-                    play: e => {
-                        if (null != S.current) {
-                            if (T.current = e, S.current.setLoop(!y && e.includes("hover")), S.current.stop(), A) {
-                                let t = m(S.current, e);
-                                null != t && S.current.seek(t.time + t.duration)
-                            } else S.current.goToAndPlay(e, !0)
-                        }
-                    },
-                    stop: () => {
-                        null != S.current && !A && (S.current.stop(), S.current.setLoop(!1))
-                    },
-                    stopIfPlaying: e => {
-                        null != S.current && !A && T.current === e && (S.current.stop(), S.current.setLoop(!1))
-                    }
-                }), [y, A]);
-                let O = "custom" === p ? {
-                    width: h,
-                    height: E
-                } : (0, u.getIconSize)(p);
-                return (0, l.jsx)(a.DotLottiePlayer, {
-                    id: v,
-                    className: r(f.lottieIcon, g),
-                    style: {
-                        "--__lottieIconColor": null != n && "string" == typeof n ? n : null == n ? void 0 : n.css,
-                        display: "flex",
-                        ...O
-                    },
-                    src: s,
-                    ref: S,
-                    autoplay: !1,
-                    loop: !1,
-                    keepLastFrame: !0,
-                    onEvent: x
-                }, A ? "".concat(v, "-disabled") : "".concat(v, "-enabled"))
-            })
-        },
-        876543: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useGifLottie: function() {
-                    return s
-                }
-            });
-            var l = n("37983"),
-                i = n("884691"),
-                a = n("414235");
-            let s = () => {
-                let e = i.useRef(null),
-                    t = i.useCallback(() => {
-                        null != e.current && e.current.play("onclick")
-                    }, []),
-                    s = i.useCallback(() => {
-                        null != e.current && e.current.play("hover")
-                    }, []),
-                    r = i.useCallback(() => {
-                        null != e.current && e.current.stopIfPlaying("hover")
-                    }, []),
-                    o = i.useCallback(t => (0, l.jsx)(a.LottieIcon, {
-                        ...t,
-                        src: n("453269"),
-                        ref: e
-                    }), []);
-                return {
-                    events: {
-                        onMouseEnter: s,
-                        onMouseLeave: r
-                    },
-                    play: t,
-                    Component: o
-                }
-            }
-        },
-        855643: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useGiftLottie: function() {
-                    return s
-                }
-            });
-            var l = n("37983"),
-                i = n("884691"),
-                a = n("414235");
-            let s = () => {
-                let e = i.useRef(null),
-                    t = i.useCallback(() => {
-                        null != e.current && e.current.play("all")
-                    }, []),
-                    s = i.useCallback(() => {
-                        null != e.current && e.current.play("hover")
-                    }, []),
-                    r = i.useCallback(() => {
-                        null != e.current && e.current.stopIfPlaying("hover")
-                    }, []),
-                    o = i.useCallback(t => (0, l.jsx)(a.LottieIcon, {
-                        ...t,
-                        src: n("879955"),
-                        ref: e
-                    }), []);
-                return {
-                    events: {
-                        onMouseEnter: s,
-                        onMouseLeave: r
-                    },
-                    play: t,
-                    Component: o
-                }
-            }
-        },
-        497555: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useStickerLottie: function() {
-                    return s
-                }
-            });
-            var l = n("37983"),
-                i = n("884691"),
-                a = n("414235");
-            let s = () => {
-                let e = i.useRef(null),
-                    t = i.useCallback(() => {
-                        null != e.current && e.current.play("onclick")
-                    }, []),
-                    s = i.useCallback(() => {
-                        null != e.current && e.current.play("hover")
-                    }, []),
-                    r = i.useCallback(() => {
-                        null != e.current && e.current.stopIfPlaying("hover")
-                    }, []),
-                    o = i.useCallback(t => (0, l.jsx)(a.LottieIcon, {
-                        ...t,
-                        src: n("287736"),
-                        ref: e
-                    }), []);
-                return {
-                    events: {
-                        onMouseEnter: s,
-                        onMouseLeave: r
-                    },
-                    play: t,
-                    Component: o
-                }
-            }
-        },
         734575: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -3818,23 +3553,20 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return a
+                    return i
                 }
             }), n("222007");
-            var l = n("884691"),
-                i = n("244201");
+            var l = n("884691");
 
-            function a(e) {
-                let {
-                    renderWindow: t
-                } = (0, l.useContext)(i.default), [n, a] = (0, l.useState)(() => t.matchMedia(e).matches);
+            function i(e) {
+                let [t, n] = (0, l.useState)(() => window.matchMedia(e).matches);
                 return (0, l.useEffect)(() => {
-                    let n = t.matchMedia(e),
+                    let t = window.matchMedia(e),
                         l = e => {
-                            a(null == e ? void 0 : e.matches)
+                            n(null == e ? void 0 : e.matches)
                         };
-                    return l(n), n.addListener(l), () => n.removeListener(l)
-                }, [e, t]), n
+                    return l(t), t.addListener(l), () => t.removeListener(l)
+                }, [e]), t
             }
         },
         206625: function(e, t, n) {
@@ -12511,11 +12243,11 @@
                 s = n.n(a),
                 r = n("16470"),
                 o = n("446674"),
-                u = n("876543"),
-                d = n("77078"),
-                c = n("538282"),
-                f = n("374363"),
-                m = n("551305"),
+                u = n("77078"),
+                d = n("538282"),
+                c = n("374363"),
+                f = n("551305"),
+                m = n("110006"),
                 p = n("378765"),
                 h = n("49111"),
                 E = n("13030"),
@@ -12525,10 +12257,10 @@
                     let {
                         disabled: n,
                         type: a
-                    } = e, [S, T] = i.useState(!1), v = (0, o.useStateFromStores)([f.default], () => {
+                    } = e, [S, T] = i.useState(!1), v = (0, o.useStateFromStores)([c.default], () => {
                         var e, t;
-                        return S && Object.values(null !== (t = null === (e = f.default.frecencyWithoutFetchingLatest.favoriteGifs) || void 0 === e ? void 0 : e.gifs) && void 0 !== t ? t : {}).length <= 2
-                    }), [I, _, N] = (0, c.useExpressionPickerStore)(e => [e.activeView, e.activeViewType, e.pickerId], r.default), A = i.useRef(0), x = i.useCallback(() => {
+                        return S && Object.values(null !== (t = null === (e = c.default.frecencyWithoutFetchingLatest.favoriteGifs) || void 0 === e ? void 0 : e.gifs) && void 0 !== t ? t : {}).length <= 2
+                    }), [I, _, N] = (0, d.useExpressionPickerStore)(e => [e.activeView, e.activeViewType, e.pickerId], r.default), A = i.useRef(0), x = i.useCallback(() => {
                         T(!0), clearTimeout(A.current), A.current = setTimeout(() => {
                             T(!1)
                         }, 1500)
@@ -12540,35 +12272,27 @@
                         handler: x
                     });
                     let y = i.useCallback(() => {
-                            (0, c.toggleExpressionPicker)(E.ExpressionPickerViewType.GIF, a)
-                        }, [a]),
-                        {
-                            Component: O,
-                            events: R
-                        } = (0, u.useGifLottie)();
+                        (0, d.toggleExpressionPicker)(E.ExpressionPickerViewType.GIF, a)
+                    }, [a]);
                     if (n) return null;
-                    let M = I === E.ExpressionPickerViewType.GIF && _ === a;
-                    return (0, l.jsx)(d.Tooltip, {
+                    let O = I === E.ExpressionPickerViewType.GIF && _ === a;
+                    return (0, l.jsx)(u.Tooltip, {
                         text: v ? g.default.Messages.GIF_TOOLTIP_FAVORITED_PICKER_BUTTON : null,
                         forceOpen: !0,
                         children: e => (0, l.jsx)("div", {
                             ref: t,
                             className: s(E.CHAT_INPUT_BUTTON_CLASSNAME, C.buttonContainer),
                             ...e,
-                            children: (0, l.jsx)(m.default, {
+                            children: (0, l.jsx)(f.default, {
                                 innerClassName: C.button,
-                                onMouseEnter: R.onMouseEnter,
-                                onMouseLeave: R.onMouseLeave,
+                                icon: m.default,
                                 onClick: y,
-                                isActive: M,
+                                isActive: O,
                                 pulse: S,
                                 "aria-label": g.default.Messages.GIF_BUTTON_LABEL,
-                                "aria-expanded": M,
+                                "aria-expanded": O,
                                 "aria-haspopup": "dialog",
-                                "aria-controls": N,
-                                children: (0, l.jsx)(O, {
-                                    color: "currentColor"
-                                })
+                                "aria-controls": N
                             })
                         })
                     })
@@ -12583,12 +12307,12 @@
             });
             var l = n("37983"),
                 i = n("884691"),
-                a = n("855643"),
-                s = n("77078"),
-                r = n("812204"),
-                o = n("685665"),
-                u = n("649844"),
-                d = n("551305"),
+                a = n("77078"),
+                s = n("812204"),
+                r = n("685665"),
+                o = n("649844"),
+                u = n("551305"),
+                d = n("978679"),
                 c = n("158998"),
                 f = n("49111"),
                 m = n("646718"),
@@ -12600,12 +12324,9 @@
                         channel: n
                     } = e, {
                         analyticsLocations: i
-                    } = (0, o.default)(r.default.GIFT_BUTTON), E = (0, c.useDirectMessageRecipient)(n), {
-                        Component: g,
-                        events: C
-                    } = (0, a.useGiftLottie)();
+                    } = (0, r.default)(s.default.GIFT_BUTTON), E = (0, c.useDirectMessageRecipient)(n);
                     if (t) return null;
-                    let S = () => (0, u.default)({
+                    let g = () => (0, o.default)({
                         isGift: !0,
                         giftRecipient: null === E ? void 0 : E,
                         initialPlanId: null,
@@ -12618,19 +12339,16 @@
                             objectType: f.AnalyticsObjectTypes.GIFT
                         }
                     });
-                    return (0, l.jsx)(s.Tooltip, {
+                    return (0, l.jsx)(a.Tooltip, {
                         text: p.default.Messages.PREMIUM_GIFT_BUTTON_TOOLTIP,
-                        children: e => (0, l.jsx)(d.default, {
+                        children: e => (0, l.jsx)(u.default, {
                             ...e,
                             innerClassName: h.button,
                             isActive: !1,
                             "aria-label": p.default.Messages.PREMIUM_GIFT_BUTTON_LABEL,
                             "aria-haspopup": "dialog",
-                            onClick: S,
-                            ...C,
-                            children: (0, l.jsx)(g, {
-                                color: "currentColor"
-                            })
+                            onClick: g,
+                            children: (0, l.jsx)(d.default, {})
                         })
                     })
                 })
@@ -13152,7 +12870,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return h
+                    return g
                 }
             }), n("222007");
             var l = n("37983"),
@@ -13160,60 +12878,66 @@
                 a = n("414456"),
                 s = n.n(a),
                 r = n("16470"),
-                o = n("497555"),
+                o = n("77078"),
                 u = n("200197"),
                 d = n("538282"),
                 c = n("551305"),
-                f = n("13030"),
-                m = n("782340"),
-                p = n("350583"),
-                h = i.memo(i.forwardRef(function(e, t) {
-                    let {
-                        disabled: n,
-                        type: a
-                    } = e, [h, E] = (0, d.useExpressionPickerStore)(e => [e.activeView, e.pickerId], r.default), g = i.useContext(u.default), [C, S] = i.useState(!1), T = h === f.ExpressionPickerViewType.STICKER, v = i.useCallback(() => {
-                        (0, d.toggleExpressionPicker)(f.ExpressionPickerViewType.STICKER, a)
-                    }, [a]);
+                f = n("595086"),
+                m = n("88497"),
+                p = n("13030"),
+                h = n("782340"),
+                E = n("350583"),
+                g = i.memo(i.forwardRef(function(e, t) {
+                    let n, {
+                            disabled: a,
+                            type: m
+                        } = e,
+                        [g, C] = (0, d.useExpressionPickerStore)(e => [e.activeView, e.pickerId], r.default),
+                        S = i.useContext(u.default),
+                        [T, v] = i.useState(!1),
+                        I = g === p.ExpressionPickerViewType.STICKER,
+                        _ = i.useCallback(() => {
+                            (0, d.toggleExpressionPicker)(p.ExpressionPickerViewType.STICKER, m)
+                        }, [m]);
                     i.useEffect(() => {
                         let e = () => {
                                 requestAnimationFrame(() => {
-                                    S(!0)
+                                    v(!0)
                                 })
                             },
                             t = () => {
                                 requestAnimationFrame(() => {
-                                    S(!1)
+                                    v(!1)
                                 })
                             };
-                        return g.addListener("sticker-suggestions-shown", e), g.addListener("sticker-suggestions-hidden", t), () => {
-                            g.removeListener("sticker-suggestions-shown", e), g.removeListener("sticker-suggestions-hidden", t)
+                        return S.addListener("sticker-suggestions-shown", e), S.addListener("sticker-suggestions-hidden", t), () => {
+                            S.removeListener("sticker-suggestions-shown", e), S.removeListener("sticker-suggestions-hidden", t)
                         }
-                    }, [g]);
-                    let {
-                        Component: I,
-                        events: _
-                    } = (0, o.useStickerLottie)();
-                    return n ? null : (0, l.jsx)("div", {
-                        className: s(f.CHAT_INPUT_BUTTON_CLASSNAME, p.buttonContainer),
+                    }, [S]);
+                    let N = (0, o.useRedesignIconContext)().enabled;
+                    return a ? null : (n = (0, l.jsx)(f.default, {
+                        className: N ? "" : E.stickerIcon,
+                        winking: T,
+                        color: "currentColor"
+                    }), (0, l.jsx)("div", {
+                        className: s(p.CHAT_INPUT_BUTTON_CLASSNAME, E.buttonContainer),
                         ref: t,
                         children: (0, l.jsx)(c.default, {
-                            innerClassName: s(p.button, p.stickerButton, {
-                                [p.stickerButtonTilted]: C && !T
+                            innerClassName: s(E.button, E.stickerButton, {
+                                [E.stickerButtonWithNotification]: !1,
+                                [E.stickerButtonTilted]: T && !I
                             }),
-                            ..._,
-                            onClick: v,
-                            isActive: T,
-                            "aria-label": m.default.Messages.STICKER_BUTTON_LABEL,
-                            "aria-expanded": T,
+                            onClick: _,
+                            isActive: I,
+                            "aria-label": h.default.Messages.STICKER_BUTTON_LABEL,
+                            "aria-expanded": I,
                             "aria-haspopup": "dialog",
-                            "aria-controls": E,
+                            "aria-controls": C,
                             sparkle: !1,
                             notification: null,
-                            children: (0, l.jsx)(I, {
-                                color: "currentColor"
-                            })
+                            children: n
                         })
-                    })
+                    }))
                 }))
         },
         231868: function(e, t, n) {
@@ -42367,10 +42091,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return m
                 },
                 CenterControlButton: function() {
-                    return E
+                    return h
                 }
             });
             var l = n("37983");
@@ -42378,24 +42102,23 @@
             var i = n("414456"),
                 a = n.n(i),
                 s = n("77078"),
-                r = n("834897"),
-                o = n("461380"),
-                u = n("587974"),
-                d = n("550410"),
-                c = n("641568"),
-                f = n("782340"),
-                m = n("4536");
+                r = n("461380"),
+                o = n("587974"),
+                u = n("550410"),
+                d = n("641568"),
+                c = n("782340"),
+                f = n("4536");
 
-            function p(e) {
+            function m(e) {
                 let {
                     label: t,
                     onClick: n,
                     onKeyDown: i,
                     onMouseEnter: r,
                     onMouseLeave: o,
-                    onContextMenu: u,
+                    onContextMenu: d,
                     className: c,
-                    wrapperClassName: f,
+                    wrapperClassName: m,
                     iconClassName: p,
                     iconComponent: h,
                     themeable: E = !1,
@@ -42408,7 +42131,7 @@
                     grow: _,
                     "aria-label": N
                 } = e;
-                return (0, l.jsx)(d.default, {
+                return (0, l.jsx)(u.default, {
                     children: (0, l.jsx)(s.Tooltip, {
                         position: S,
                         text: t,
@@ -42418,7 +42141,7 @@
                         children: e => {
                             let {
                                 onClick: t,
-                                onContextMenu: d,
+                                onContextMenu: u,
                                 onMouseEnter: S,
                                 onMouseLeave: T,
                                 ...v
@@ -42439,7 +42162,7 @@
                                     null == T || T(), null == o || o(e)
                                 },
                                 onContextMenu: e => {
-                                    null == d || d(), null == u || u(e)
+                                    null == u || u(), null == d || d(e)
                                 },
                                 onFocus: e => {
                                     null == S || S(), null == r || r(e)
@@ -42448,75 +42171,81 @@
                                     null == T || T(), null == o || o(e)
                                 },
                                 disabled: g,
-                                innerClassName: m.lineHeightReset,
+                                innerClassName: f.lineHeightReset,
                                 className: a({
-                                    [m.active]: C
+                                    [f.active]: C
                                 }, c),
-                                wrapperClassName: f,
+                                wrapperClassName: m,
                                 buttonRef: I,
                                 grow: _,
                                 "aria-label": N,
                                 ...v,
                                 children: (0, l.jsx)(h, {
-                                    className: a(m.controlIcon, p, {
-                                        [m.themeable]: E,
-                                        [m.active]: C
-                                    }),
-                                    color: "currentColor"
+                                    className: a(f.controlIcon, p, {
+                                        [f.themeable]: E,
+                                        [f.active]: C
+                                    })
                                 })
                             })
                         }
                     })
                 })
             }
-            let h = {
-                red: m.red,
-                white: m.white,
-                green: m.green,
-                yellow: m.yellow,
-                primaryDark: m.primaryDark,
-                primaryLight: m.primaryLight,
-                activeLight: m.activeLight
+            let p = {
+                red: f.red,
+                white: f.white,
+                green: f.green,
+                yellow: f.yellow,
+                primaryDark: f.primaryDark,
+                primaryLight: f.primaryLight,
+                activeLight: f.activeLight
             };
 
-            function E(e) {
+            function h(e) {
                 let {
                     color: t,
                     isActive: n = !1,
                     className: i,
-                    iconClassName: E,
-                    onPopoutClick: g,
-                    popoutOpen: C = !1,
-                    ...S
-                } = e, T = (0, c.default)(t, n), v = (0, r.default)("(max-width: 456px)"), I = (0, l.jsx)(p, {
-                    ...S,
+                    iconClassName: h,
+                    onPopoutClick: E,
+                    popoutOpen: g = !1,
+                    ...C
+                } = e, S = (0, d.default)(t, n), T = (0, l.jsx)(m, {
+                    ...C,
                     grow: !1,
-                    onContextMenu: g,
-                    iconClassName: a(E, m.centerIcon),
-                    className: a(v ? i : null, m.staticButton, m.centerButton, h[T])
-                });
-                return v ? I : (0, l.jsxs)("div", {
-                    className: a(i, m.contextMenuContainer),
-                    children: [(0, l.jsx)(u.default, {
-                        mask: null == g ? null : u.MaskIDs.CHANNEL_CALL_CONTROL_BUTTON,
+                    onContextMenu: E,
+                    iconClassName: a(h, f.centerIcon),
+                    className: a(null == E ? i : f.staticButton, f.centerButton, p[S])
+                }), v = null;
+                return null != E && (v = (0, l.jsxs)("div", {
+                    className: a(i, f.contextMenuContainer),
+                    children: [(0, l.jsx)(o.default, {
+                        mask: o.MaskIDs.CHANNEL_CALL_CONTROL_BUTTON,
                         width: 56,
                         height: 56,
-                        children: I
-                    }), null != g ? (0, l.jsx)(d.default, {
+                        children: T
+                    }), (0, l.jsx)(u.default, {
                         children: (0, l.jsx)(s.Clickable, {
-                            "aria-label": f.default.Messages.MORE_OPTIONS,
-                            onClick: g,
-                            onContextMenu: g,
-                            className: a(m.contextMenuNub, h[T], {
-                                [m.active]: C
+                            "aria-label": c.default.Messages.MORE_OPTIONS,
+                            onClick: E,
+                            onContextMenu: E,
+                            className: a(f.contextMenuNub, p[S], {
+                                [f.active]: g
                             }),
-                            children: (0, l.jsx)(o.default, {
-                                className: a(m.contextMenuCaret, {
-                                    [m.open]: C
+                            children: (0, l.jsx)(r.default, {
+                                className: a(f.contextMenuCaret, {
+                                    [f.open]: g
                                 })
                             })
                         })
-                    }) : null]
+                    })]
+                })), (0, l.jsxs)(l.Fragment, {
+                    children: [v, (0, l.jsx)("div", {
+                        className: a({
+                            [f.unmasked]: null != E
+                        }, null != E ? i : null),
+                        children: T
+                    })]
                 })
             }
         },
@@ -50953,6 +50682,43 @@
                     size: 24
                 })
         },
+        88497: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return r
+                }
+            });
+            var l = n("37983");
+            n("884691");
+            var i = n("469563"),
+                a = n("65969"),
+                s = n("75196"),
+                r = (0, i.replaceIcon)(function(e) {
+                    let {
+                        width: t = 24,
+                        height: n = 24,
+                        color: i = "currentColor",
+                        foreground: a,
+                        ...r
+                    } = e;
+                    return (0, l.jsx)("svg", {
+                        width: t,
+                        height: n,
+                        ...(0, s.default)(r),
+                        viewBox: "0 0 20 20",
+                        children: (0, l.jsx)("path", {
+                            fill: i,
+                            className: a,
+                            fillRule: "evenodd",
+                            clipRule: "evenodd",
+                            d: "M10,5.42V.06H2a2,2,0,0,0-2,2V18a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V10H14.58A4.61,4.61,0,0,1,10,5.42Zm-6.64,9a1.11,1.11,0,1,1,1.12-1.11A1.11,1.11,0,0,1,3.33,14.44ZM10,15.55a3.33,3.33,0,0,1-3.33-3.33H8a2,2,0,0,0,4,0h1.33A3.33,3.33,0,0,1,10,15.55ZM12,5.4V.66A.65.65,0,0,1,13.12.2l6.69,6.68A.66.66,0,0,1,19.34,8H14.6A2.59,2.59,0,0,1,12,5.4Z"
+                        })
+                    })
+                }, a.StickerIcon, void 0, {
+                    size: 24
+                })
+        },
         140567: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -54754,4 +54520,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.5f4d0992ec7245e35eab.js.map
+//# sourceMappingURL=60053.66172881a93d37217c78.js.map
