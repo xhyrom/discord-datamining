@@ -17119,6 +17119,7 @@
   "SERVER_DRAWER_ACTIVITY_STREAMING": "\"streaming **!!{activity}!!**\"",
   "SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN": "\"sharing screen\"",
   "PACKAGES": "\"Packages\"",
+  "USER_SETTINGS_PACKAGES_HEADER_CTA": "\"Open your Mailbox\"",
   "CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE": "\"Activity\"",
   "CHANGE_LANGUAGE_MODAL_TITLE_SPANISH": "\"\\xbfCambiar idioma?\"",
   "CHANGE_LANGUAGE_MODAL_SUBTITLE_SPANISH": "\"\\xbfTe gustar\\xeda configurar Discord en Espa\\xf1ol?\"",
