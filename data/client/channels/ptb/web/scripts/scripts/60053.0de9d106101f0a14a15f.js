@@ -24344,7 +24344,7 @@
                                         t.stopPropagation(), !y.current && !O.current && (a(e, {
                                             isFinalSelection: !0,
                                             toggleFavorite: !1
-                                        }), f.default.open(e.guildId, T.GuildSettingsSections.EMOJI))
+                                        }), f.default.open(e.guildId, T.GuildSettingsSections.EMOJI, T.AnalyticsSections.EMOJI_PICKER_POPOUT))
                                     }, c = () => {
                                         !y.current && !O.current && _(e)
                                     };
@@ -54727,4 +54727,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.4559192b628045e78467.js.map
+//# sourceMappingURL=60053.0de9d106101f0a14a15f.js.map
