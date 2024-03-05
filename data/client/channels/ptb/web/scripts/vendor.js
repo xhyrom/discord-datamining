@@ -87219,8 +87219,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709614214854",
-                                    build_number: "272201"
+                                    built_at: "1709654528772",
+                                    build_number: "272231"
                                 }
                             },
                             retries: 1
@@ -115791,7 +115791,7 @@
                                 return null != K.default.getGuild(e.channelId);
                             case er.ReadStateTypes.NOTIFICATION_CENTER:
                                 var t;
-                                return F.default.castUserIdAsReadStateChannelId(null === (t = $.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.channelId;
+                                return F.default.cast(null === (t = $.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.channelId;
                             default:
                                 return !0
                         }
@@ -116138,7 +116138,7 @@
                                 break;
                             case er.ReadStateTypes.NOTIFICATION_CENTER:
                                 var s;
-                                let r = F.default.castUserIdAsReadStateChannelId(null === (s = $.default.getCurrentUser()) || void 0 === s ? void 0 : s.id);
+                                let r = F.default.cast(null === (s = $.default.getCurrentUser()) || void 0 === s ? void 0 : s.id);
                                 r === n.channelId && t.push(n.serialize(e));
                                 break;
                             default:
@@ -124052,7 +124052,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "34ea7754e13793f22af84dbca28f266fa4b26f05"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "04f2f9ce3982d602f067a74ff456a5335c1d74c1"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133362,7 +133362,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272201"
+                                build_number: "272231"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -136326,15 +136326,7 @@
                 castGuildIdAsEveryoneGuildRoleId: function(e) {
                     return e
                 },
-                castGuildIdAsReadStateChannelId: function(e) {
-                    return e
-                },
-                castUserIdAsReadStateChannelId: function(e) {
-                    return e
-                },
-                castSnowflakeAsUserId: function(e) {
-                    return e
-                }
+                cast: a
             }
         },
         35013: function(e, t, n) {
@@ -150907,4 +150899,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.da47d07f54bb18454912.js.map
+//# sourceMappingURL=29062.3663ba3e806e66d27644.js.map
