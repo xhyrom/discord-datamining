@@ -239,8 +239,8 @@
                 h = n("555035"),
                 v = n("599110"),
                 I = n("773336"),
-                C = n("709681"),
-                y = n("386045"),
+                y = n("709681"),
+                C = n("386045"),
                 A = n("13136"),
                 T = n("881095"),
                 D = n("997942"),
@@ -382,7 +382,7 @@
                     frames_encoded_during_clip: t.framesEncodedDuringClip,
                     frames_dropped: t.framesDropped,
                     frames_dropped_during_clip: t.framesDroppedDuringClip,
-                    clip_duration_setting: y.default.getSettings().clipsLength,
+                    clip_duration_setting: C.default.getSettings().clipsLength,
                     clip_duration: t.clipDuration,
                     clip_resolution_width: t.clipResolutionWidth,
                     clip_resolution_height: t.clipResolutionHeight,
@@ -395,7 +395,7 @@
                 }
             }
             async function k(e) {
-                let t = y.default.getSettings(),
+                let t = C.default.getSettings(),
                     n = t.storageLocation,
                     a = (0, T.default)(e),
                     i = "".concat((0, A.default)(a.applicationName.substring(0, 20)), "_").concat(a.id, ".mp4"),
@@ -469,9 +469,9 @@
                 }, {
                     autoTrackExposure: !1
                 });
-                if (y.default.getIsAtMaxSaveClipOperations()) return;
-                let r = y.default.getSettings().clipsEnabled && null != _.default.getCurrentUserActiveStream(),
-                    s = n && y.default.getSettings().decoupledClipsEnabled && (null === (t = u.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && E.default.hasClipsSource(),
+                if (C.default.getIsAtMaxSaveClipOperations()) return;
+                let r = C.default.getSettings().clipsEnabled && null != _.default.getCurrentUserActiveStream(),
+                    s = n && C.default.getSettings().decoupledClipsEnabled && (null === (t = u.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && E.default.hasClipsSource(),
                     g = null != e && null != _.default.getActiveStreamForStreamKey(e) && l;
                 if (!r && !s && !g) return;
                 let p = _.default.getCurrentUserActiveStream(),
@@ -501,7 +501,7 @@
                     streamKey: v,
                     thumbnail: A
                 });
-                let T = (0, C.playSound)("clip_save", .5),
+                let T = (0, y.playSound)("clip_save", .5),
                     D = performance.now();
                 try {
                     let e = await k(v);
@@ -510,11 +510,11 @@
                         clip: e
                     })
                 } catch (e) {
-                    R.ClipsLogger.error("Clip Failed to Save", e), null == T || T.stop(), (0, C.playSound)("clip_error", .5), d.default.dispatch({
+                    R.ClipsLogger.error("Clip Failed to Save", e), null == T || T.stop(), (0, y.playSound)("clip_error", .5), d.default.dispatch({
                         type: "CLIPS_SAVE_CLIP_ERROR"
                     })
                 }
-                R.ClipsLogger.info("".concat(y.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - D), "ms"))
+                R.ClipsLogger.info("".concat(C.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - D), "ms"))
             }
 
             function H(e, t) {
@@ -525,7 +525,7 @@
                 })
             }
             async function W(e, t) {
-                let n = y.default.getClips().find(t => t.id === e);
+                let n = C.default.getClips().find(t => t.id === e);
                 if (null == n) return;
                 let a = {
                         ...n,
@@ -751,7 +751,7 @@
                     return I
                 },
                 preloadForumThreads: function() {
-                    return y
+                    return C
                 }
             }), n("222007");
             var a = n("917351"),
@@ -855,7 +855,7 @@
                 }
             }
 
-            function C(e, t) {
+            function y(e, t) {
                 let n = !1;
                 t.forEach(t => {
                     var a, i;
@@ -867,8 +867,8 @@
                 }), n && null == E && (E = setTimeout(T, 0))
             }
 
-            function y(e) {
-                C(e, (0, o.computeThreadIdsSnapshot)(e.id).slice(0, 10))
+            function C(e) {
+                y(e, (0, o.computeThreadIdsSnapshot)(e.id).slice(0, 10))
             }
 
             function A(e, t) {
@@ -876,7 +876,7 @@
                 let n = (0, o.computeThreadIdsSnapshot)(e.id),
                     a = n.findIndex(e => e === t),
                     i = n.slice(a, a + 5).filter(t => !m.hasRequested(e.id, t));
-                C(e, i)
+                y(e, i)
             }
             async function T() {
                 try {
@@ -1049,11 +1049,11 @@
                 }));
                 return e.forEach(e => {
                     a.push({
-                        channelId: c.default.castGuildIdAsReadStateChannelId(e),
+                        channelId: c.default.cast(e),
                         readStateType: g.ReadStateTypes.GUILD_EVENT,
                         messageId: u.default.lastMessageId(e, g.ReadStateTypes.GUILD_EVENT)
                     }), a.push({
-                        channelId: c.default.castGuildIdAsReadStateChannelId(e),
+                        channelId: c.default.cast(e),
                         readStateType: g.ReadStateTypes.GUILD_ONBOARDING_QUESTION,
                         messageId: d.default.ackIdForGuild(e)
                     })
@@ -1463,4 +1463,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12896.152aab8ffbbe3f3e0e9b.js.map
+//# sourceMappingURL=12896.4027a215c98852bd19ca.js.map
