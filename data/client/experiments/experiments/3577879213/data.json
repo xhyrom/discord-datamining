@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_premium_offer_generic_endpoint",
+    "label": "Premium Offer Generic Endpoint",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Uses Generic Premium Offer Endpoint for all offers."
+    ],
+    "hash": 3577879213,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
