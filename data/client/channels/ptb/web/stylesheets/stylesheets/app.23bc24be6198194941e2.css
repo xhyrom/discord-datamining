@@ -46123,8 +46123,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -75149,11 +75149,11 @@ input::-webkit-inner-spin-button {
     border-radius: 16px;
     cursor: pointer;
     flex: 0 0 auto;
-    height: 32px;
+    height: 20px;
     opacity: .9;
     position: relative;
     transition: background-color.125s, opacity.125s;
-    width: 32px
+    width: 20px
 }
 
 .submenuWrapper__027da:focus,
@@ -75180,11 +75180,11 @@ input::-webkit-inner-spin-button {
 
 .submenuIcon__8f398 {
     color: var(--white-500);
-    height: 24px;
-    left: 4px;
+    height: 16px;
+    left: 2px;
     position: absolute;
-    top: 4px;
-    width: 24px
+    top: 2px;
+    width: 16px
 }
 
 .questAcceptedContent__9c385 .submenuIcon__8f398 {
@@ -128885,4 +128885,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c859f5d8d4ff6d043399.css.map*/
+/*# sourceMappingURL=app.23bc24be6198194941e2.css.map*/
