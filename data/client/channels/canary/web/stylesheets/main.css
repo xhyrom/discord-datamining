@@ -46122,8 +46122,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -55797,6 +55797,19 @@ html .progress__4ef76 {
     width: 236px;
     height: 61px;
     align-self: center
+}
+
+.coachmarkArt__3085c {
+    background-image: url(/assets/e279224b03a3fcfe70b8.png);
+    align-self: center;
+    width: 240px;
+    height: 147px;
+    top: -76px;
+    left: calc(50% - 120px)
+}
+
+.coachmarkHeader_d9cce2 {
+    margin-top: 56px
 }
 
 .coachmark__59aa4 {
@@ -128831,4 +128844,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b812eb67bd72ce200330.css.map*/
+/*# sourceMappingURL=app.68c1790381dcc9a9b4b4.css.map*/
