@@ -24248,7 +24248,8 @@ span.button__4f306.disabled_dc5630 {
 .actionButtonDetails_d4626a {
     display: flex;
     flex-direction: column;
-    margin-right: var(--spacing-32)
+    margin-right: var(--spacing-32);
+    gap: 2px
 }
 
 .clickableActionRow__97c2b:hover {
@@ -28103,4 +28104,4 @@ span.button__4f306.disabled_dc5630 {
     padding-top: 16px
 }
 
-/*# sourceMappingURL=shared.f39c6a219d0c9629a522.css.map*/
+/*# sourceMappingURL=shared.9fe8a1e1537f04761648.css.map*/
