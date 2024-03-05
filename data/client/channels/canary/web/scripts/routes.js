@@ -1565,7 +1565,9 @@
                     GAME_INVITE: _ => "/game-invite/@me/".concat(_),
                     GAME_INVITES: "/game-invite/@me",
                     ADD_SAFETY_WARNING: _ => "/channels/".concat(_, "/add-safety-warning"),
-                    MY_CONTENT_INVENTORY: "/content-inventory/users/@me"
+                    MY_CONTENT_INVENTORY: "/content-inventory/users/@me",
+                    USER_LOOTBOX_DATA: "/users/@me/lootboxes",
+                    USER_LOOTBOX_OPEN_ITEM: "/users/@me/lootboxes/open"
                 }),
                 a5 = Object.freeze({
                     INDEX: "/",
@@ -13614,4 +13616,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.4dc4a10be2b62ca2ff25.js.map
+//# sourceMappingURL=7273.1433a505dfe14ac19c83.js.map
