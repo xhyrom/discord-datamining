@@ -118878,6 +118878,46 @@ html .invoiceCancelRow_c1bfe7 {
     user-select: none
 }
 
+.headerContainer__122e4 {
+    background: url(/assets/b6d0036df41400587d8f.svg), linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients))no-repeat;
+    padding: 54px 40px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    justify-content: space-between
+}
+
+.header_d2e037 {
+    text-transform: uppercase;
+    filter: drop-shadow(0 4px 10px hsl(var(--black-500-hsl)/.2))
+}
+
+.headerCTA__9fce3 {
+    transition: color var(--custom-button-transition-duration)ease, background-color var(--custom-button-transition-duration)ease, border-color var(--custom-button-transition-duration)ease;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--white-500);
+    border-radius: var(--radius-sm);
+    padding: 2px
+}
+
+.headerButton_fe8970 {
+    color: var(--white-500);
+    background-color: var(--background-tertiary)
+}
+
+.headerButton_fe8970:hover {
+    background-color: var(--black-500)
+}
+
+.headerButton_fe8970:active {
+    background-color: var(--black-500)
+}
+
+.headerButton_fe8970:disabled,
+.headerButton_fe8970[aria-disabled=true] {
+    background-color: var(--background-tertiary)
+}
+
 .marketingUnsubscribeButton__72576 {
     align-self: flex-start;
     padding: 0
@@ -128845,4 +128885,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f44c4fee1436ce26e403.css.map*/
+/*# sourceMappingURL=app.badaabfaab5e1cd6e21d.css.map*/

@@ -226,7 +226,6 @@
                     PRIMARY: _.colorPrimary,
                     LINK: _.colorLink,
                     WHITE: _.colorWhite,
-                    BLACK: _.colorBlack,
                     TRANSPARENT: _.colorTransparent,
                     BRAND_NEW: _.colorBrandNew,
                     CUSTOM: ""
@@ -4070,7 +4069,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "272358", "272358"), 10);
+                let o = parseInt((n = "272381", "272381"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5686,4 +5685,4 @@
         }
     }
 ]);
-//# sourceMappingURL=87475.245b78c64049c32631bc.js.map
+//# sourceMappingURL=87475.3bb64bf37a0f8afa133f.js.map
