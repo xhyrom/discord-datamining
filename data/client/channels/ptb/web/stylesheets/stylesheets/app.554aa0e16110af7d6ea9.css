@@ -28008,6 +28008,7 @@ html .progress__4ef76 {
 
 .questCopyCta_d76b1f {
     display: flex;
+    gap: 16px;
     justify-content: space-between;
     align-items: center;
     height: 100%
@@ -28017,8 +28018,8 @@ html .progress__4ef76 {
     margin-bottom: 4px
 }
 
-.questCta__99de6 {
-    margin-left: 16px
+.ctaButtonWrapper_d00132 {
+    flex: 0 0 auto
 }
 
 .ctaTooltipCopy__0f513 {
@@ -128844,4 +128845,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.68c1790381dcc9a9b4b4.css.map*/
+/*# sourceMappingURL=app.554aa0e16110af7d6ea9.css.map*/
