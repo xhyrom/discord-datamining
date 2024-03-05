@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_nitro_emoji_autocomplete_upsell",
+    "label": "Emoji Autocomplete Upsells",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show upsells in Emoji Autocomplete"
+    ],
+    "hash": 1090687199,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
