@@ -16771,7 +16771,7 @@
   "QUESTS_TITLE": "\"{questName} Quest\"",
   "QUESTS_LANDING_PAGE_ERROR_HEADING": "\"Whoops!\"",
   "QUESTS_LANDING_PAGE_MOBILE_WEB_BODY": "\"Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the Quest there.\"",
-  "QUESTS_MOBILE_EMBED_TITLE": "\"Quests aren’t available on mobile...yet.\"",
+  "QUESTS_MOBILE_EMBED_TITLE": "\"Quests aren’t available on mobile\"",
   "QUESTS_MOBILE_EMBED_BODY": "\"From your desktop Discord app or browser you can go to \\nUser Settings > Gift Inventory and accept the Quest there.\"",
   "QUESTS_GET_THIS_GAME": "\"Get this game\"",
   "QUESTS_DISCLOSURE_LABEL": "\"Why am I seeing this?\"",
