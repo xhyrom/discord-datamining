@@ -417,12 +417,6 @@
                 layerHidden: "layerHidden__9c8ad"
             }
         },
-        103487: function(e, t, a) {
-            "use strict";
-            e.exports = {
-                lottieIcon: "lottieIcon__9d8ab"
-            }
-        },
         639826: function(e, t, a) {
             "use strict";
             e.exports = {

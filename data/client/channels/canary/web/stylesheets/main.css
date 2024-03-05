@@ -20606,6 +20606,10 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-top: 8px
 }
 
+.slash_c0ba36 {
+    color: var(--red-400)
+}
+
 .fauxDisabled_e7913a {
     opacity: .5
 }
@@ -128816,4 +128820,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c2aaf95835948bf8f7e9.css.map*/
+/*# sourceMappingURL=app.a6f50e5ca17973b88dc6.css.map*/
