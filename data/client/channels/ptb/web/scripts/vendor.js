@@ -87218,8 +87218,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709666010492",
-                                    build_number: "272308"
+                                    built_at: "1709666068276",
+                                    build_number: "272310"
                                 }
                             },
                             retries: 1
@@ -124056,7 +124056,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "c44001b03e27fa544ca5bfd97f48ffbee7907ae8"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "aa08ae53697d90a910af40ada3e9d4e4649e8783"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133366,7 +133366,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272308"
+                                build_number: "272310"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -150470,7 +150470,7 @@
                 MetricEvents: function() {
                     return i
                 }
-            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout"
+            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", s.IMAGE_LOAD_ERROR = "image_load_error"
         },
         561467: function(e, t, n) {
             "use strict";
@@ -150903,4 +150903,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.62c48ce02a326962eac3.js.map
+//# sourceMappingURL=29062.2bb5cfe0a765ef570e78.js.map
