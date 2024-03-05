@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["59196"], {
+    ["60053"], {
         777483: function(e, t, n) {
             var l = {
                 "./icon-file-acrobat.svg": "668973",
@@ -8537,12 +8537,12 @@
                 setContextProperties() {
                     null != this.context && (this.context.fillStyle = this.color, this.context.strokeStyle = this.color, this.context.font = "".concat(this.font.style, " ").concat(this.font.weight, " ").concat(this.font.size, "px ").concat(this.font.family))
                 }
-                setSize(e) {
+                setSize(e, t) {
                     let {
-                        w: t,
-                        h: n
+                        w: n,
+                        h: l
                     } = e;
-                    this.canvas.width = t, this.canvas.height = n
+                    null != this.context && null != t ? (this.canvas.width = n * t, this.canvas.height = l * t, this.context.scale(t, t)) : (this.canvas.width = n, this.canvas.height = l)
                 }
                 clearRect(e) {
                     if (null == this.context) return;
@@ -8654,7 +8654,7 @@
                     return null == this.context ? o.DrawResultStatus.Failure : (this.setGradientFillStyle(e, t, n), this.drawRoundedRect(l, i, !0, !1), o.DrawResultStatus.Success)
                 }
                 constructor(e, t) {
-                    super(e, t), this.canvas = e, this.context = this.canvas.getContext("2d")
+                    super(e, t), this.canvas = e, this.context = this.canvas.getContext("2d"), null != this.context && (this.context.imageSmoothingQuality = "high")
                 }
             }
         },
@@ -54524,4 +54524,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.34c5c7e7ab97ac2f204b.js.map
+//# sourceMappingURL=60053.bb86016603e296ab75a5.js.map
