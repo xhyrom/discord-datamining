@@ -4782,5 +4782,17 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "USER_LOOTBOX_DATA": {
+    "url": "/users/@me/lootboxes",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "USER_LOOTBOX_OPEN_ITEM": {
+    "url": "/users/@me/lootboxes/open",
+    "allowed_methods": null
   }
 }
