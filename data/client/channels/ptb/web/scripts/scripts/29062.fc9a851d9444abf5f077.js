@@ -87219,8 +87219,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709656099675",
-                                    build_number: "272241"
+                                    built_at: "1709656139872",
+                                    build_number: "272242"
                                 }
                             },
                             retries: 1
@@ -98830,7 +98830,12 @@
                                 most_recent_messages: c
                             }
                         } = i;
-                        r.default.dispatch({
+                        null == s ? r.default.dispatch({
+                            type: "LOAD_ARCHIVED_THREADS_FAIL",
+                            channelId: t,
+                            sortOrder: n,
+                            tagFilter: a
+                        }) : r.default.dispatch({
                             type: "LOAD_ARCHIVED_THREADS_SUCCESS",
                             guildId: e,
                             channelId: t,
@@ -124052,7 +124057,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "745376c7c4da174af7d0d1418dd8d3ee27f2245e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "3bb474a2a04e3603a73d533d7c84ca0c67fd02a0"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133362,7 +133367,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272241"
+                                build_number: "272242"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -150899,4 +150904,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.fc222f40829158ab0aa5.js.map
+//# sourceMappingURL=29062.fc9a851d9444abf5f077.js.map
