@@ -57581,7 +57581,8 @@
                     discord_marketing: "Discord Marketing",
                     discord_web: "Discord Web",
                     discord_ios: "Discord iOS",
-                    discord_android: "Discord Android"
+                    discord_android: "Discord Android",
+                    discord_developers: "Discord Developers"
                 },
                 s = [{
                     value: 3600,
@@ -87217,8 +87218,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709595911352",
-                                    build_number: "272115"
+                                    built_at: "1709598027078",
+                                    build_number: "272138"
                                 }
                             },
                             retries: 1
@@ -124050,7 +124051,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "799893b8f50cd5842a6347ec5fab0ba267a9c806"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "a6a38bd742785e5e9ca8f40d3171d192930be25f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133360,7 +133361,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272115"
+                                build_number: "272138"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -150905,4 +150906,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.f1db4e0c9d8f07115877.js.map
+//# sourceMappingURL=29062.84b29d595422c39d9249.js.map

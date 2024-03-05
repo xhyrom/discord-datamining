@@ -53056,9 +53056,8 @@ html .progress__4ef76 {
 }
 
 .name_c08dbc {
-    flex: 1;
     z-index: 1;
-    display: flex;
+    display: inline-block;
     align-items: center
 }
 
@@ -128785,4 +128784,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ff75dc05bd589841c27d.css.map*/
+/*# sourceMappingURL=app.75c23036efba2c2b2160.css.map*/

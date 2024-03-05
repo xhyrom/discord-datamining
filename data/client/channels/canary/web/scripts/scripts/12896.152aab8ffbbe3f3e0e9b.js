@@ -47,8 +47,8 @@
                 l = n("373469"),
                 d = n("271938"),
                 r = n("824563"),
-                u = n("945956"),
-                s = n("800762"),
+                s = n("945956"),
+                u = n("800762"),
                 o = n("299039"),
                 c = n("80028"),
                 f = n("49111"),
@@ -72,15 +72,15 @@
                             }
                         }
                     }
-                    let u = l.default.getStreamerActiveStreamMetadata(),
-                        s = null == u ? void 0 : u.pid,
-                        o = null != u ? null != s ? a.default.getGameForPID(s) : null : a.default.getVisibleGame();
+                    let s = l.default.getStreamerActiveStreamMetadata(),
+                        u = null == s ? void 0 : s.pid,
+                        o = null != s ? null != u ? a.default.getGameForPID(u) : null : a.default.getVisibleGame();
                     return {
-                        sourceName: null !== (t = null == u ? void 0 : u.sourceName) && void 0 !== t ? t : null == o ? void 0 : o.name,
-                        sourceApplicationId: null !== (n = null == u ? void 0 : u.id) && void 0 !== n ? n : null == o ? void 0 : o.id
+                        sourceName: null !== (t = null == s ? void 0 : s.sourceName) && void 0 !== t ? t : null == o ? void 0 : o.name,
+                        sourceApplicationId: null !== (n = null == s ? void 0 : s.id) && void 0 !== n ? n : null == o ? void 0 : o.id
                     }
-                }(e), p = u.default.getChannelId(), _ = [d.default.getId()];
-                return null != p && (_ = Object.keys(s.default.getVoiceStatesForChannel(p))), {
+                }(e), p = s.default.getChannelId(), _ = [d.default.getId()];
+                return null != p && (_ = Object.keys(u.default.getVoiceStatesForChannel(p))), {
                     id: o.default.fromTimestamp(Date.now()),
                     version: c.CURRENT_CLIP_METADATA_VERSION,
                     applicationName: null != t ? t : g.default.Messages.CLIPS_UNKNOWN_SOURCE,
@@ -172,10 +172,10 @@
                     return b
                 },
                 updateClipsEnabled: function() {
-                    return w
+                    return O
                 },
                 updateDecoupledClipsEnabled: function() {
-                    return O
+                    return w
                 },
                 updateRemindersEnabled: function() {
                     return P
@@ -225,8 +225,8 @@
                 l = n("750028"),
                 d = n("913144"),
                 r = n("49671"),
-                u = n("44642"),
-                s = n("161454"),
+                s = n("44642"),
+                u = n("161454"),
                 o = n("374014"),
                 c = n("584687"),
                 f = n("103979"),
@@ -235,12 +235,12 @@
                 _ = n("373469"),
                 m = n("271938"),
                 E = n("42887"),
-                h = n("205817"),
-                S = n("555035"),
+                S = n("205817"),
+                h = n("555035"),
                 v = n("599110"),
                 I = n("773336"),
-                y = n("709681"),
-                C = n("386045"),
+                C = n("709681"),
+                y = n("386045"),
                 A = n("13136"),
                 T = n("881095"),
                 D = n("997942"),
@@ -261,7 +261,7 @@
                     allow_voice_recording: t
                 })
             }
-            async function w(e) {
+            async function O(e) {
                 let {
                     clipsEnabled: t,
                     guildId: n,
@@ -284,7 +284,7 @@
                 })
             }
 
-            function O(e) {
+            function w(e) {
                 let {
                     enabled: t,
                     trackAnalytics: n = !1
@@ -357,32 +357,32 @@
             }
 
             function x(e, t) {
-                var n, a, i, l, d, r, s, o, c, f;
+                var n, a, i, l, d, r, u, o, c, f;
                 let g = new Map;
                 for (let e in t.framesEncodedByEncoder) {
                     let a = t.framesEncodedByEncoder[e],
-                        i = (0, u.parseEncoder)(e),
+                        i = (0, s.parseEncoder)(e),
                         l = null !== (n = g.get(i)) && void 0 !== n ? n : 0;
                     g.set(i, l + a)
                 }
                 return {
                     ...e,
-                    frames_encoded_nvidia_cuda: null !== (a = g.get(u.Encoders.NVIDIA_CUDA)) && void 0 !== a ? a : 0,
-                    frames_encoded_nvidia_direct3d: null !== (i = g.get(u.Encoders.NVIDIA_DIRECT_3D)) && void 0 !== i ? i : 0,
-                    frames_encoded_openh264: null !== (l = g.get(u.Encoders.OPENH264)) && void 0 !== l ? l : 0,
-                    frames_encoded_videotoolbox: null !== (d = g.get(u.Encoders.VIDEOTOOLBOX)) && void 0 !== d ? d : 0,
-                    frames_encoded_amd_direct3d: null !== (r = g.get(u.Encoders.AMD_DIRECT_3D)) && void 0 !== r ? r : 0,
-                    frames_encoded_intel: null !== (s = g.get(u.Encoders.INTEL)) && void 0 !== s ? s : 0,
-                    frames_encoded_intel_direct3d: null !== (o = g.get(u.Encoders.INTEL_DIRECT_3D)) && void 0 !== o ? o : 0,
-                    frames_encoded_uncategorized: null !== (c = g.get(u.Encoders.UNCATEGORIZED)) && void 0 !== c ? c : 0,
-                    frames_encoded_unknown: null !== (f = g.get(u.Encoders.UNKNOWN)) && void 0 !== f ? f : 0,
+                    frames_encoded_nvidia_cuda: null !== (a = g.get(s.Encoders.NVIDIA_CUDA)) && void 0 !== a ? a : 0,
+                    frames_encoded_nvidia_direct3d: null !== (i = g.get(s.Encoders.NVIDIA_DIRECT_3D)) && void 0 !== i ? i : 0,
+                    frames_encoded_openh264: null !== (l = g.get(s.Encoders.OPENH264)) && void 0 !== l ? l : 0,
+                    frames_encoded_videotoolbox: null !== (d = g.get(s.Encoders.VIDEOTOOLBOX)) && void 0 !== d ? d : 0,
+                    frames_encoded_amd_direct3d: null !== (r = g.get(s.Encoders.AMD_DIRECT_3D)) && void 0 !== r ? r : 0,
+                    frames_encoded_intel: null !== (u = g.get(s.Encoders.INTEL)) && void 0 !== u ? u : 0,
+                    frames_encoded_intel_direct3d: null !== (o = g.get(s.Encoders.INTEL_DIRECT_3D)) && void 0 !== o ? o : 0,
+                    frames_encoded_uncategorized: null !== (c = g.get(s.Encoders.UNCATEGORIZED)) && void 0 !== c ? c : 0,
+                    frames_encoded_unknown: null !== (f = g.get(s.Encoders.UNKNOWN)) && void 0 !== f ? f : 0,
                     frames_submitted: t.framesSubmitted,
                     frames_submitted_during_clip: t.framesSubmittedDuringClip,
                     frames_encoded: t.framesEncoded,
                     frames_encoded_during_clip: t.framesEncodedDuringClip,
                     frames_dropped: t.framesDropped,
                     frames_dropped_during_clip: t.framesDroppedDuringClip,
-                    clip_duration_setting: C.default.getSettings().clipsLength,
+                    clip_duration_setting: y.default.getSettings().clipsLength,
                     clip_duration: t.clipDuration,
                     clip_resolution_width: t.clipResolutionWidth,
                     clip_resolution_height: t.clipResolutionHeight,
@@ -395,25 +395,25 @@
                 }
             }
             async function k(e) {
-                let t = C.default.getSettings(),
+                let t = y.default.getSettings(),
                     n = t.storageLocation,
                     a = (0, T.default)(e),
                     i = "".concat((0, A.default)(a.applicationName.substring(0, 20)), "_").concat(a.id, ".mp4"),
                     l = r.default.fileManager.join(n, i),
-                    u = E.default.getMediaEngine(),
-                    s = JSON.stringify(a),
+                    s = E.default.getMediaEngine(),
+                    u = JSON.stringify(a),
                     c = null != e ? (0, o.decodeStreamKey)(e).ownerId : void 0,
                     f = function(e) {
                         var t;
                         let n, a, i;
                         if (null != e) {
-                            n = null != e ? h.default.getRTCConnection(e) : null;
+                            n = null != e ? S.default.getRTCConnection(e) : null;
                             let t = (0, o.decodeStreamKey)(e);
                             a = t.guildId, i = t.channelId
                         } else {
                             let e = m.default.getId(),
                                 t = _.default.getActiveStreamForUser(e, null);
-                            n = null != t ? h.default.getRTCConnection((0, o.encodeStreamKey)(t)) : null, a = null == t ? void 0 : t.guildId, i = null == t ? void 0 : t.channelId
+                            n = null != t ? S.default.getRTCConnection((0, o.encodeStreamKey)(t)) : null, a = null == t ? void 0 : t.guildId, i = null == t ? void 0 : t.channelId
                         }
                         let l = null == n ? void 0 : null === (t = n.analyticsContext) || void 0 === t ? void 0 : t.streamApplication;
                         return {
@@ -437,12 +437,11 @@
                     var g;
                     let {
                         duration: e,
-                        thumbnail: t,
-                        clipStats: n
-                    } = await (null != c ? u.saveClipForUser(c, l, s) : u.saveClip(l, s)), i = x(f, n);
-                    i.clip_save_time_ms = n.clipSaveTimeMs, i.clip_size_bytes = n.clipSizeBytes, null != n.viewerDecodeFps && (i.decode_fps_during_clip = n.viewerDecodeFps, i.encode_fps_during_clip = n.viewerEncodeFps, i.target_fps = null), v.default.track(L.AnalyticEvents.CLIP_SAVED, i);
-                    let d = await (null != r.default.clips.getClipProtocolURLFromPath ? (0, M.createThumbnailFromVideo)(r.default.clips.getClipProtocolURLFromPath(l), 0) : (0, M.createImageFromUint8Array)(t));
-                    return a.thumbnail = d, a.length = e, R.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (g = null == d ? void 0 : d.length) && void 0 !== g ? g : 0, " bytes thumbnail.")), await u.updateClipMetadata(l, JSON.stringify(a)), {
+                        clipStats: t
+                    } = await (null != c ? s.saveClipForUser(c, l, u) : s.saveClip(l, u)), n = x(f, t);
+                    n.clip_save_time_ms = t.clipSaveTimeMs, n.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (n.decode_fps_during_clip = t.viewerDecodeFps, n.encode_fps_during_clip = t.viewerEncodeFps, n.target_fps = null), v.default.track(L.AnalyticEvents.CLIP_SAVED, n);
+                    let i = await (0, M.createThumbnailFromVideo)(r.default.clips.getClipProtocolURLFromPath(l), 0);
+                    return a.thumbnail = i, a.length = e, R.ClipsLogger.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null !== (g = null == i ? void 0 : i.length) && void 0 !== g ? g : 0, " bytes thumbnail.")), await s.updateClipMetadata(l, JSON.stringify(a)), {
                         ...a,
                         filepath: l
                     }
@@ -470,14 +469,14 @@
                 }, {
                     autoTrackExposure: !1
                 });
-                if (C.default.getIsAtMaxSaveClipOperations()) return;
-                let r = C.default.getSettings().clipsEnabled && null != _.default.getCurrentUserActiveStream(),
-                    u = n && C.default.getSettings().decoupledClipsEnabled && (null === (t = s.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && E.default.hasClipsSource(),
+                if (y.default.getIsAtMaxSaveClipOperations()) return;
+                let r = y.default.getSettings().clipsEnabled && null != _.default.getCurrentUserActiveStream(),
+                    s = n && y.default.getSettings().decoupledClipsEnabled && (null === (t = u.default.getVisibleGame()) || void 0 === t ? void 0 : t.windowHandle) != null && E.default.hasClipsSource(),
                     g = null != e && null != _.default.getActiveStreamForStreamKey(e) && l;
-                if (!r && !u && !g) return;
+                if (!r && !s && !g) return;
                 let p = _.default.getCurrentUserActiveStream(),
-                    h = null != p ? (0, o.encodeStreamKey)(p) : void 0,
-                    v = null != e ? e : h,
+                    S = null != p ? (0, o.encodeStreamKey)(p) : void 0,
+                    v = null != e ? e : S,
                     I = (() => {
                         let e = null != v ? (0, o.decodeStreamKey)(v).ownerId : void 0;
                         return e === m.default.getId() ? R.ClipSaveTypes.STREAMER : null != e ? R.ClipSaveTypes.VIEWER : R.ClipSaveTypes.DECOUPLED
@@ -487,7 +486,7 @@
                         let {
                             ownerId: e,
                             guildId: t
-                        } = (0, o.decodeStreamKey)(v), n = S.default.getStreamId(e, t, a.MediaEngineContextTypes.STREAM);
+                        } = (0, o.decodeStreamKey)(v), n = h.default.getStreamId(e, t, a.MediaEngineContextTypes.STREAM);
                         if (null != n) try {
                             let e = (0, i.getVoiceEngine)(),
                                 t = await e.getNextVideoOutputFrame(n);
@@ -502,7 +501,7 @@
                     streamKey: v,
                     thumbnail: A
                 });
-                let T = (0, y.playSound)("clip_save", .5),
+                let T = (0, C.playSound)("clip_save", .5),
                     D = performance.now();
                 try {
                     let e = await k(v);
@@ -511,11 +510,11 @@
                         clip: e
                     })
                 } catch (e) {
-                    R.ClipsLogger.error("Clip Failed to Save", e), null == T || T.stop(), (0, y.playSound)("clip_error", .5), d.default.dispatch({
+                    R.ClipsLogger.error("Clip Failed to Save", e), null == T || T.stop(), (0, C.playSound)("clip_error", .5), d.default.dispatch({
                         type: "CLIPS_SAVE_CLIP_ERROR"
                     })
                 }
-                R.ClipsLogger.info("".concat(C.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - D), "ms"))
+                R.ClipsLogger.info("".concat(y.default.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - D), "ms"))
             }
 
             function H(e, t) {
@@ -526,7 +525,7 @@
                 })
             }
             async function W(e, t) {
-                let n = C.default.getClips().find(t => t.id === e);
+                let n = y.default.getClips().find(t => t.id === e);
                 if (null == n) return;
                 let a = {
                         ...n,
@@ -609,8 +608,8 @@
                     l = await e.arrayBuffer();
                 for (let e of (l.fileStart = 0, n.appendBuffer(l), n.flush(), await a, i(null != n.boxes, "mp4boxInputFile.boxes should not be null after parsing"), n.boxes)) "uuid" === e.type && (t = e.start);
                 let r = e.slice(0, t, e.type),
-                    u = e.slice(t + 4, t + 8 + 16, e.type);
-                return new Blob([r, new Uint8Array([0, 0, 0, 24]), u], {
+                    s = e.slice(t + 4, t + 8 + 16, e.type);
+                return new Blob([r, new Uint8Array([0, 0, 0, 24]), s], {
                     type: e.type
                 })
             }
@@ -618,52 +617,35 @@
         430481: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                createImageFromUint8Array: function() {
+                createImageFromImageData: function() {
                     return i
                 },
-                createImageFromImageData: function() {
-                    return l
-                },
                 createThumbnailFromVideo: function() {
-                    return d
+                    return l
                 }
             }), n("70102");
             var a = n("80028");
-            async function i(e) {
-                if (null == e) return "";
-                let t = new Blob([e], {
-                        type: "image/jpeg"
-                    }),
-                    n = await new Promise(e => {
-                        let n = new FileReader;
-                        n.onloadend = () => {
-                            e(n.result)
-                        }, n.readAsDataURL(t)
-                    });
-                if ("string" != typeof n) throw Error("Image creation failed");
-                return n
-            }
 
-            function l(e) {
+            function i(e) {
                 let t = document.createElement("canvas");
                 t.width = e.width, t.height = e.height;
                 let n = t.getContext("2d");
                 if (null == n) throw Error("Could not create canvas context");
                 return n.putImageData(new ImageData(e.data, e.width, e.height), 0, 0), t.toDataURL("image/jpeg", .9)
             }
-            async function d(e, t) {
+            async function l(e, t) {
                 let n = document.createElement("video");
                 n.muted = !0, n.src = e, n.currentTime = t, await n.play(), n.pause();
                 let i = a.CLIPS_THUMBNAIL_MAX_WIDTH / n.videoWidth,
                     l = a.CLIPS_THUMBNAIL_MAX_HEIGHT / n.videoHeight,
                     d = Math.min(i, l),
                     r = n.videoWidth * d,
-                    u = n.videoHeight * d,
-                    s = document.createElement("canvas");
-                s.width = r, s.height = u;
-                let o = s.getContext("2d");
+                    s = n.videoHeight * d,
+                    u = document.createElement("canvas");
+                u.width = r, u.height = s;
+                let o = u.getContext("2d");
                 if (null == o) throw Error("Could not create canvas context");
-                return o.drawImage(n, 0, 0, n.videoWidth, n.videoHeight, 0, 0, r, u), s.toDataURL("image/jpeg", .9)
+                return o.drawImage(n, 0, 0, n.videoWidth, n.videoHeight, 0, 0, r, s), u.toDataURL("image/jpeg", .9)
             }
         },
         370492: function(e, t, n) {
@@ -708,7 +690,7 @@
                     return d
                 },
                 default: function() {
-                    return s
+                    return u
                 }
             });
             var a = n("446674"),
@@ -725,7 +707,7 @@
                         y: 0
                     }
                 };
-            class u extends a.default.DeviceSettingsStore {
+            class s extends a.default.DeviceSettingsStore {
                 initialize(e) {
                     r = null != e ? e : r, i.default.actionLogger.persist = l.default.isDeveloper
                 }
@@ -749,8 +731,8 @@
                     return r.devWidgetPosition
                 }
             }
-            u.displayName = "DevToolsSettingsStore", u.persistKey = "DevToolsSettingsStore";
-            var s = new u(i.default, {
+            s.displayName = "DevToolsSettingsStore", s.persistKey = "DevToolsSettingsStore";
+            var u = new s(i.default, {
                 DEV_TOOLS_SETTINGS_UPDATE: function(e) {
                     l.default.isDeveloper && (r = {
                         ...r,
@@ -769,7 +751,7 @@
                     return I
                 },
                 preloadForumThreads: function() {
-                    return C
+                    return y
                 }
             }), n("222007");
             var a = n("917351"),
@@ -777,8 +759,8 @@
                 l = n("446674"),
                 d = n("872717"),
                 r = n("913144"),
-                u = n("42203"),
-                s = n("299039"),
+                s = n("42203"),
+                u = n("299039"),
                 o = n("670902"),
                 c = n("349778"),
                 f = n("430475"),
@@ -795,7 +777,7 @@
                     return !i.isEmpty(this._set)
                 }
                 next() {
-                    return s.default.keys(this._set)[0]
+                    return u.default.keys(this._set)[0]
                 }
                 constructor(e) {
                     this._set = {}, this._defaultValueFunc = e
@@ -833,7 +815,7 @@
                 },
                 E = null;
 
-            function h(e, t) {
+            function S(e, t) {
                 let n = (0, c.isForumActivityExperimentEnabled)(e);
                 if (n) {
                     let {
@@ -845,7 +827,7 @@
                 return !1
             }
 
-            function S(e, t) {
+            function h(e, t) {
                 return !e && null == t
             }
 
@@ -854,7 +836,7 @@
                 let {
                     loaded: a,
                     firstMessage: i
-                } = (0, l.useStateFromStoresObject)([f.default], () => f.default.getMessage(e.id)), d = (0, l.useStateFromStores)([u.default], () => u.default.getChannel(e.parent_id));
+                } = (0, l.useStateFromStoresObject)([f.default], () => f.default.getMessage(e.id)), d = (0, l.useStateFromStores)([s.default], () => s.default.getChannel(e.parent_id));
                 if (null != d && (t = a, n = i, !t && null == n)) A(d, e.id);
                 return {
                     loaded: a,
@@ -867,13 +849,13 @@
                     loaded: n,
                     message: a
                 } = (0, l.useStateFromStoresObject)([g.default], () => g.default.getMessageState(t.id));
-                return null != e && h(t.guild_id, t.id) && A(e, t.id), {
+                return null != e && S(t.guild_id, t.id) && A(e, t.id), {
                     loaded: n,
                     mostRecentMessage: a
                 }
             }
 
-            function y(e, t) {
+            function C(e, t) {
                 let n = !1;
                 t.forEach(t => {
                     var a, i;
@@ -881,12 +863,12 @@
                         loaded: l,
                         firstMessage: d
                     } = f.default.getMessage(t);
-                    if (a = l, i = d, !a && null == i || h(e.guild_id, t)) m.request(e.id, t), n = !0
+                    if (a = l, i = d, !a && null == i || S(e.guild_id, t)) m.request(e.id, t), n = !0
                 }), n && null == E && (E = setTimeout(T, 0))
             }
 
-            function C(e) {
-                y(e, (0, o.computeThreadIdsSnapshot)(e.id).slice(0, 10))
+            function y(e) {
+                C(e, (0, o.computeThreadIdsSnapshot)(e.id).slice(0, 10))
             }
 
             function A(e, t) {
@@ -894,7 +876,7 @@
                 let n = (0, o.computeThreadIdsSnapshot)(e.id),
                     a = n.findIndex(e => e === t),
                     i = n.slice(a, a + 5).filter(t => !m.hasRequested(e.id, t));
-                y(e, i)
+                C(e, i)
             }
             async function T() {
                 try {
@@ -908,7 +890,7 @@
                 try {
                     var n;
                     if (0 === t.length) return;
-                    let a = null === (n = u.default.getChannel(e)) || void 0 === n ? void 0 : n.guild_id;
+                    let a = null === (n = s.default.getChannel(e)) || void 0 === n ? void 0 : n.guild_id;
                     if (null == a) return;
                     let {
                         body: {
@@ -942,8 +924,8 @@
                 l = n("692038"),
                 d = n("42203"),
                 r = n("697218"),
-                u = n("449008"),
-                s = n("299039");
+                s = n("449008"),
+                u = n("299039");
             let o = {};
 
             function c(e) {
@@ -951,7 +933,7 @@
                 let n = d.default.getChannel(null == e ? void 0 : e.channel_id);
                 if (null == n || !n.isForumPost()) return !1;
                 let a = o[n.id];
-                return s.default.compare(null == e ? void 0 : e.id, null == a ? void 0 : null === (t = a.message) || void 0 === t ? void 0 : t.id) > -1
+                return u.default.compare(null == e ? void 0 : e.id, null == a ? void 0 : null === (t = a.message) || void 0 === t ? void 0 : t.id) > -1
             }
 
             function f(e, t) {
@@ -976,7 +958,7 @@
                     threads: t,
                     mostRecentMessages: n
                 } = e;
-                t.forEach(e => f(e.id, null)), null == n || n.filter(u.isNotNullish).forEach(e => {
+                t.forEach(e => f(e.id, null)), null == n || n.filter(s.isNotNullish).forEach(e => {
                     f(e.channel_id, e)
                 })
             }
@@ -998,7 +980,7 @@
                 },
                 MESSAGE_CREATE: function(e) {
                     if (e.isPushNotification || !c(e.message)) return !1;
-                    e.message.channel_id === s.default.castMessageIdAsChannelId(e.message.id) ? f(e.message.channel_id, null) : f(e.message.channel_id, e.message)
+                    e.message.channel_id === u.default.castMessageIdAsChannelId(e.message.id) ? f(e.message.channel_id, null) : f(e.message.channel_id, e.message)
                 },
                 MESSAGE_UPDATE: function(e) {
                     if (!c(e.message) || e.message.channel_id === e.message.id) return !1;
@@ -1041,8 +1023,8 @@
                 l = n("267363"),
                 d = n("863636"),
                 r = n("401690"),
-                u = n("923959"),
-                s = n("660478"),
+                s = n("923959"),
+                u = n("660478"),
                 o = n("599110"),
                 c = n("299039"),
                 f = n("49111"),
@@ -1050,8 +1032,8 @@
 
             function p(e, t, n) {
                 let a = i.flatMap(e, e => {
-                    let t = u.default.getSelectableChannelIds(e),
-                        n = u.default.getVocalChannelIds(e),
+                    let t = s.default.getSelectableChannelIds(e),
+                        n = s.default.getVocalChannelIds(e),
                         a = [...t, ...n],
                         i = r.default.getActiveJoinedThreadsForGuild(e);
                     for (let e of t) {
@@ -1063,13 +1045,13 @@
                 }).map(e => ({
                     channelId: e,
                     readStateType: g.ReadStateTypes.CHANNEL,
-                    messageId: s.default.lastMessageId(e)
+                    messageId: u.default.lastMessageId(e)
                 }));
                 return e.forEach(e => {
                     a.push({
                         channelId: c.default.castGuildIdAsReadStateChannelId(e),
                         readStateType: g.ReadStateTypes.GUILD_EVENT,
-                        messageId: s.default.lastMessageId(e, g.ReadStateTypes.GUILD_EVENT)
+                        messageId: u.default.lastMessageId(e, g.ReadStateTypes.GUILD_EVENT)
                     }), a.push({
                         channelId: c.default.castGuildIdAsReadStateChannelId(e),
                         readStateType: g.ReadStateTypes.GUILD_ONBOARDING_QUESTION,
@@ -1097,7 +1079,7 @@
                     return E
                 },
                 cleanupMessageReminders: function() {
-                    return h
+                    return S
                 },
                 fetchAndUpdateSavedMessages: function() {
                     return I
@@ -1108,8 +1090,8 @@
                 l = n("679653"),
                 d = n("42203"),
                 r = n("305961"),
-                u = n("27618"),
-                s = n("697218"),
+                s = n("27618"),
+                u = n("697218"),
                 o = n("599110"),
                 c = n("520899"),
                 f = n("988864"),
@@ -1130,12 +1112,12 @@
                         if (null == t) return null;
                         let n = r.default.getGuild(t.guild_id),
                             a = "",
-                            i = (0, l.computeChannelName)(t, s.default, u.default, !0);
+                            i = (0, l.computeChannelName)(t, u.default, s.default, !0);
                         if (t.isPrivate()) a = i;
                         else if (t.isThread()) {
                             let e = d.default.getChannel(t.parent_id);
                             if (null == e) return null;
-                            let n = (0, l.computeChannelName)(e, s.default, u.default, !0);
+                            let n = (0, l.computeChannelName)(e, u.default, s.default, !0);
                             a = "".concat(n, " > ").concat(i)
                         } else a = i;
                         let o = "".concat(e.content.length > 0 ? e.content : "".concat(e.attachments.length, " attachments"));
@@ -1187,7 +1169,7 @@
                 v([], t.filter(t => t.messageId === e))
             }
 
-            function h() {
+            function S() {
                 o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "clearing",
@@ -1197,7 +1179,7 @@
                 e.some(e => e.complete) && v([], e.filter(e => e.complete))
             }
 
-            function S(e) {
+            function h(e) {
                 o.default.track(g.AnalyticEvents.GUILD_JOIN_FEEDBACK, {
                     skipped: !1,
                     reason: "updated_from_server",
@@ -1216,7 +1198,7 @@
                         removed: t.map(f.savedMessageToServer)
                     }
                 }).then(e => {
-                    S(e.body.saved_messages.map(f.savedMessageToClient))
+                    h(e.body.saved_messages.map(f.savedMessageToClient))
                 })
             }
 
@@ -1226,7 +1208,7 @@
                 }).then(e => {
                     let t = e.body.saved_messages,
                         n = t.map(f.savedMessageToClient);
-                    S(n)
+                    h(n)
                 })
             }
         },
@@ -1267,8 +1249,8 @@
                 l = n("718517");
             let d = [],
                 r = new Set,
-                u = 0;
-            class s extends a.default.Store {
+                s = 0;
+            class u extends a.default.Store {
                 initialize() {
                     setInterval(() => {
                         this.emitChange()
@@ -1285,7 +1267,7 @@
                     return d.filter(e => null == e.dueAt || new Date > e.dueAt).length
                 }
                 recentlyFetched() {
-                    return new Date().getTime() - u < 1 * l.default.Millis.MINUTE
+                    return new Date().getTime() - s < 1 * l.default.Millis.MINUTE
                 }
                 hasSentNotification(e) {
                     return r.has(e)
@@ -1296,13 +1278,13 @@
                     }
                 }
             }
-            s.displayName = "MessageRemindersStore";
-            var o = new s(i.default, {
+            u.displayName = "MessageRemindersStore";
+            var o = new u(i.default, {
                 SAVED_MESSAGES_UPDATE: function(e) {
                     let {
                         messages: t
                     } = e;
-                    u = new Date().getTime(), d = t.map(e => ({
+                    s = new Date().getTime(), d = t.map(e => ({
                         ...e,
                         complete: !1
                     })), t.forEach(e => {
@@ -1341,7 +1323,7 @@
                     return r
                 },
                 MESSAGE_REMINDER_DURATION_ITEMS: function() {
-                    return u
+                    return s
                 }
             });
             var a = n("718517"),
@@ -1381,7 +1363,7 @@
             function r(e) {
                 return null != e.authorSummary && e.authorSummary.length > 0 && null != e.channelSummary && e.channelSummary.length > 0 && null != e.messageSummary && e.messageSummary.length > 0 && null != e.authorId && e.authorId.length > 0
             }
-            let u = [{
+            let s = [{
                 duration: a.default.Millis.HOUR,
                 getLabel: () => i.default.Messages.MESSAGE_REMINDERS_IN_ONE_HOUR
             }, {
@@ -1405,7 +1387,7 @@
                     return r
                 },
                 hasVoiceChannelActivityNotifsEnabled: function() {
-                    return u
+                    return s
                 }
             });
             var a = n("862205"),
@@ -1468,7 +1450,7 @@
                 return (null == e ? void 0 : e.type) === i.ChannelTypes.GUILD_VOICE && n && a
             }
 
-            function u(e) {
+            function s(e) {
                 var t;
                 let {
                     voiceChannelActivityNotifsEnabled: n
@@ -1481,4 +1463,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12896.e14674fd49155de3feba.js.map
+//# sourceMappingURL=12896.152aab8ffbbe3f3e0e9b.js.map
