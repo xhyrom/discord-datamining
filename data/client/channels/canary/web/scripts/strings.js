@@ -11912,10 +11912,8 @@
                 THREAD_BROWSER_OTHER_HEADER: "{count} other active threads",
                 THREAD_BROWSER_ARCHIVED_HEADER: "older threads",
                 THREAD_BROWSER_JOINED_HEADER: "{count} joined threads",
-                THREAD_BROWSER_OTHER_REDESIGN_HEADER: "{count} Other Active Threads",
                 THREAD_BROWSER_ACTIVE_COUNT: "Active Threads - {count}",
                 THREAD_BROWSER_ARCHIVED_REDESIGN_HEADER: "Older Threads",
-                THREAD_BROWSER_JOINED_REDESIGN_HEADER: "{count} Joined Threads",
                 THREAD_BROWSER_JOINED_COUNT: "Joined Threads - {count}",
                 THREAD_BROWSER_TIMESTAMP_SECONDS: "{count}s ago",
                 THREAD_BROWSER_TIMESTAMP_DAYS: "{count}d ago",
@@ -11931,7 +11929,6 @@
                 THREAD_BROWSER_EMPTY_STATE_HEADER: "There are no threads.",
                 THREAD_BROWSER_EMPTY_STATE_ACTIVE_HEADER: "There are no active threads.",
                 THREAD_BROWSER_EMPTY_STATE_ARCHIVED_HEADER: "There are no archived threads.",
-                THREAD_BROWSER_EMPTY_STATE_SUBTEXT: "Stay focused on a conversation with a thread, a temporary text channel.",
                 THREAD_BROWSER_EMPTY_STATE_SUBTEXT_REDESIGN: "Stay focused on a conversation with a thread - a temporary text channel.",
                 THREAD_BROWSER_FILTER_SETTINGS_TITLE: "Filter Settings",
                 THREAD_BROWSER_FILTER_SETTINGS_VISIBILITY: "Thread visibility",
@@ -18396,7 +18393,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272713", ", Version Hash: ").concat("9d20b0ac2b6d069ae73ad42e71f8d5ef452b462d")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272715", ", Version Hash: ").concat("49fc048ff3329081255e688d5c98c961a123f6f5")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20691,8 +20688,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "272713", "272713"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272713")), _ = 0), _
+                let _ = parseInt((e = "272715", "272715"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272715")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36249,4 +36246,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.a61f74ed0483b174d3dc.js.map
+//# sourceMappingURL=76039.d5918812131840b4d66f.js.map
