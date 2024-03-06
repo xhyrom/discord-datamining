@@ -111,7 +111,7 @@
                 f = n("49111");
             let h = new u.default("DebugUploadManager");
             async function m(t, e) {
-                await y(t), await (0, r.uploadRtcLogFiles)(3670016, e)
+                await y(t), await (0, r.uploadRtcLogFiles)(14680064, e)
             }
             class b {
                 static getTrimmedFilename(t) {
@@ -249,8 +249,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "272640",
-                    versionHash: "ba5edf7e8312fb8270ebbd6383b9940d6313980d"
+                    buildNumber: "272642",
+                    versionHash: "bb58b66c4f7142de03abde7ab2953b9c11ecc25c"
                 }
             }
             n.r(e), n.d(e, {
@@ -362,4 +362,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18409.e0711969b3fdae6fb162.js.map
+//# sourceMappingURL=18409.4ff1e8ecdca70b78387b.js.map
