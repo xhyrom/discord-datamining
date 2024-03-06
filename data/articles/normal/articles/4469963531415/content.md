@@ -1,5 +1,3 @@
-<p></p>
-<p> <strong></strong></p>
 <p>Ah, the Terms of Service: everyone’s favorite thing to read. Below you’ll find a summary of the key updates, but please do read the full <a href="https://discord.com/terms">Terms of Service</a>, as they are what actually govern your use of Discord. The new terms go into effect on <strong>March 27, 2023</strong>.</p>
 <p>Here’s what’s been updated:</p>
 <ul>
