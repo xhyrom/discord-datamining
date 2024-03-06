@@ -18397,7 +18397,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272537", ", Version Hash: ").concat("7294faf2bf7dfbbcae562299d2885bf9af67fe84")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272555", ", Version Hash: ").concat("0de51664b5e082c5f989fc31003b0a2b01aa069c")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20692,8 +20692,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "272537", "272537"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272537")), _ = 0), _
+                let _ = parseInt((e = "272555", "272555"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272555")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21528,7 +21528,19 @@
                 },
                 treatments: [{
                     id: 1,
-                    label: "Show feed",
+                    label: "Staff Test",
+                    config: {
+                        enabled: !0
+                    }
+                }, {
+                    id: 2,
+                    label: "Show feed by affinity",
+                    config: {
+                        enabled: !0
+                    }
+                }, {
+                    id: 3,
+                    label: "Show feed by heuristics",
                     config: {
                         enabled: !0
                     }
@@ -36235,4 +36247,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.4f7491a81949ac27b463.js.map
+//# sourceMappingURL=76039.5823a8313e8c62a7fa90.js.map
