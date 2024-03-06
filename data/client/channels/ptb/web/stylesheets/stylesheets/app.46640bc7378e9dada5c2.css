@@ -3562,7 +3562,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -3593,8 +3593,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -39903,7 +39903,7 @@ html .progress__4ef76 {
 
 .hero_f37d0a {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 8px;
     padding: 32px 32px 16px;
     border-top-left-radius: var(--radius-md);
@@ -39912,8 +39912,8 @@ html .progress__4ef76 {
 
 .heroDetails_b002cf {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    gap: 8px;
     min-width: 0
 }
 
@@ -39949,6 +39949,10 @@ html .progress__4ef76 {
     height: 24px
 }
 
+.contentImage_ee0279 {
+    border-radius: var(--radius-sm)
+}
+
 .container__35f96 {
     display: flex;
     margin: 8px 8px 0;
@@ -39965,12 +39969,24 @@ html .progress__4ef76 {
     cursor: pointer
 }
 
+.container__35f96:hover .contentDescription__181da {
+    color: var(--interactive-hover)
+}
+
+.contentDescription__181da {
+    color: var(--text-secondary)
+}
+
 .selected__540f0 {
     background-color: var(--background-modifier-selected)
 }
 
 .selected__540f0:hover {
     background-color: var(--background-modifier-selected)
+}
+
+.selected__540f0 .contentDescription__181da {
+    color: var(--interactive-hover)
 }
 
 .textSection__69223 {
@@ -39999,7 +40015,7 @@ html .progress__4ef76 {
 }
 
 .contentImage_d1bd0e {
-    border-radius: var(--radius-md)
+    border-radius: var(--radius-xs)
 }
 
 .container_d412fb {
@@ -46128,8 +46144,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -129060,4 +129076,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.87476c1ed35f49195d55.css.map*/
+/*# sourceMappingURL=app.46640bc7378e9dada5c2.css.map*/
