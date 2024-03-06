@@ -52328,17 +52328,14 @@
                 KRUNKER_STRIKE_APPLICATION_ID: function() {
                     return z
                 },
-                COLONIST_APPLICATION_ID: function() {
+                EMBEDDED_ACTIVITY_SURVEY_URL: function() {
                     return q
                 },
-                EMBEDDED_ACTIVITY_SURVEY_URL: function() {
+                ImageSizes: function() {
                     return X
                 },
-                ImageSizes: function() {
-                    return Q
-                },
                 STAFF_RELEASE_PHASES: function() {
-                    return Z
+                    return Q
                 },
                 ActivityFeedbackReasons: function() {
                     return i
@@ -52359,13 +52356,13 @@
                     return u
                 },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return J
+                    return Z
                 },
                 APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
-                    return $
+                    return J
                 },
                 APPLICATIONS_WITH_NO_REFFERER: function() {
-                    return ee
+                    return $
                 },
                 WhatsNewSection: function() {
                     return d
@@ -52377,13 +52374,13 @@
                     return f
                 },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return en
+                    return et
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return ei
+                    return en
                 },
                 PRIVATE_APPS_HELP_ARTICLE: function() {
-                    return es
+                    return ei
                 }
             }), n("222007");
             var i, s, r, a, o, l, u, d, c, f, _, h, E, g, m, p, S, v, T, I, C = n("798609"),
@@ -52411,39 +52408,38 @@
                 W = "1037680572660727838",
                 K = "945737671223947305",
                 z = "1011683823555199066",
-                q = "1106787098452832296",
-                X = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-                Q = {
+                q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                X = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                Z = ["in_development", "activities_team", "employee_release"];
+                Q = ["in_development", "activities_team", "employee_release"];
             (_ = i || (i = {})).FAILED_LOAD = "FAILED_LOAD", _.LAGGING = "LAGGING", _.CONFUSING = "CONFUSING", _.NOT_FUN = "NOT_FUN", _.OTHER = "OTHER", (h = s || (s = {}))[h.PLAY = 0] = "PLAY", h[h.SPECTATE = 1] = "SPECTATE", (E = r || (r = {})).DESKTOP = "desktop", E.MOBILE = "mobile", (g = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", g.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", g.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", g.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (m = o || (o = {}))[m.NO_UPDATE = 0] = "NO_UPDATE", m[m.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", m[m.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", m[m.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", m[m.USER_JOINED = 4] = "USER_JOINED", m[m.USER_LEFT = 5] = "USER_LEFT", m[m.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (p = l || (l = {}))[p.UNLOCKED = 1] = "UNLOCKED", p[p.PORTRAIT = 2] = "PORTRAIT", p[p.LANDSCAPE = 3] = "LANDSCAPE", (S = u || (u = {}))[S.DIRECTORY = 0] = "DIRECTORY", S[S.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", S[S.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let J = "activity-shelf",
-                $ = new Set(["755600276941176913", D, P, k, "1010174316991762534", z]),
-                ee = new Set([D, P, k]);
+            let Z = "activity-shelf",
+                J = new Set(["755600276941176913", D, P, k, "1010174316991762534", z]),
+                $ = new Set([D, P, k]);
             (v = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", v.GDM_ACTIVITIES = "GDM_ACTIVITIES", v.PUTT_PARTY = "PUTT_PARTY", v.JAMSPACE_OLD = "JAMSPACE", v.JAMSPACE = "JAMSPACE2", v.POKER = "POKER", v.FREE = "FREE", (T = c || (c = {}))[T.PORTRAIT = 0] = "PORTRAIT", T[T.LANDSCAPE = 1] = "LANDSCAPE", (I = f || (f = {}))[I.FOCUSED = 0] = "FOCUSED", I[I.PIP = 1] = "PIP", I[I.GRID = 2] = "GRID";
-            let et = {
+            let ee = {
                     label_type: C.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                en = {
+                et = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
                     supported_platforms: [C.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [C.EmbeddedActivitySupportedPlatforms.WEB]: et,
-                        [C.EmbeddedActivitySupportedPlatforms.IOS]: et,
-                        [C.EmbeddedActivitySupportedPlatforms.ANDROID]: et
+                        [C.EmbeddedActivitySupportedPlatforms.WEB]: ee,
+                        [C.EmbeddedActivitySupportedPlatforms.IOS]: ee,
+                        [C.EmbeddedActivitySupportedPlatforms.ANDROID]: ee
                     },
                     has_csp_exception: !1,
                     displays_advertisements: !1
                 },
-                ei = [A.ChannelTypes.GUILD_TEXT, A.ChannelTypes.DM, A.ChannelTypes.GROUP_DM],
-                es = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
+                en = [A.ChannelTypes.GUILD_TEXT, A.ChannelTypes.DM, A.ChannelTypes.GROUP_DM],
+                ei = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
         },
         84460: function(e, t, n) {
             "use strict";
@@ -87228,8 +87224,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709748333571",
-                                    build_number: "272660"
+                                    built_at: "1709750766765",
+                                    build_number: "272678"
                                 }
                             },
                             retries: 1
@@ -124535,7 +124531,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "4f3870189060cc8ff053790bd52483a9502217bd"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "4ece5396b88efbe1f10e4287bc74709fd22dd34f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133845,7 +133841,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272660"
+                                build_number: "272678"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151424,4 +151420,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.602720daaf93c5633b69.js.map
+//# sourceMappingURL=29062.8eae6e0e964cb0ed9346.js.map
