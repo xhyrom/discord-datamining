@@ -5786,6 +5786,7 @@
         375005: function(e, t, o) {
             "use strict";
             e.exports = {
+                contentImage: "contentImage_ee0279",
                 emoji: "emoji_db6bae",
                 emojiHotrail: "emojiHotrail_a7034f",
                 emojiSuggestionButton: "emojiSuggestionButton_d25ed5",
@@ -5803,6 +5804,7 @@
                 badgeContainer: "badgeContainer__626aa",
                 badgesContainer: "badgesContainer__9dcef",
                 container: "container__35f96",
+                contentDescription: "contentDescription__181da",
                 contentImage: "contentImage_d1bd0e",
                 selected: "selected__540f0",
                 textSection: "textSection__69223",

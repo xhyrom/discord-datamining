@@ -574,6 +574,9 @@
                 },
                 resetQuestDismissibilityStatus: function() {
                     return g
+                },
+                optimisticallyUpdateQuestProgress: function() {
+                    return h
                 }
             });
             var s = n("872717"),
@@ -807,6 +810,13 @@
                     })
                 }
             }
+
+            function h(e) {
+                i.default.dispatch({
+                    type: "QUESTS_OPTIMISTIC_PROGRESS_UPDATE",
+                    userStatus: e
+                })
+            }
         },
         166604: function(e, t, n) {
             "use strict";
@@ -945,10 +955,10 @@
                     return y
                 },
                 calculatePercentComplete: function() {
-                    return R
+                    return U
                 },
                 getContextualEntrypointHeading: function() {
-                    return U
+                    return R
                 },
                 isDismissible: function() {
                     return N
@@ -957,10 +967,10 @@
                     return b
                 },
                 includesTarget: function() {
-                    return L
+                    return O
                 },
                 captureQuestsException: function() {
-                    return O
+                    return L
                 }
             }), n("222007");
             var s = n("313989"),
@@ -1076,7 +1086,7 @@
                 }
             };
 
-            function R(e) {
+            function U(e) {
                 if (null == e.userStatus) return 0;
                 let {
                     streamProgressSeconds: t,
@@ -1089,11 +1099,11 @@
                 return Math.min(t / 60 / s, 1)
             }
 
-            function U(e) {
+            function R(e) {
                 var t, n;
                 if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return l.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
                 if ((null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
-                    let t = R(e);
+                    let t = U(e);
                     return t >= .75 ? l.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : t >= .45 && t <= .55 ? l.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : t > 0 ? l.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : l.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
                 }
                 return l.default.Messages.QUESTS_TITLE.format({
@@ -1109,11 +1119,11 @@
                 return (0, i.hasFlag)(e.dismissedQuestContent, u.DismissibleQuestContentFlags[t])
             }
 
-            function L(e, t) {
+            function O(e, t) {
                 return e.targetedContent.includes(t)
             }
 
-            function O(e, t) {
+            function L(e, t) {
                 r.default.captureException(e, {
                     ...t,
                     tags: {
@@ -1329,4 +1339,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65656.66c8b8a169d8f459133f.js.map
+//# sourceMappingURL=65656.2f9293299a281fdfa244.js.map
