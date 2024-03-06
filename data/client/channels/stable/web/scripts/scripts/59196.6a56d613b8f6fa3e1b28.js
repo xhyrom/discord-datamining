@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["60053"], {
+    ["59196"], {
         777483: function(e, t, n) {
             var l = {
                 "./icon-file-acrobat.svg": "668973",
@@ -29505,22 +29505,23 @@
                     var t;
                     let {
                         node: n,
-                        tooltipPosition: i = h.EXPRESSION_TOOLTIP_PROPS.position,
-                        enableClick: a = !0
-                    } = e, r = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], d = null != r ? r : n.name, c = e => (0, l.jsx)(u.default, {
+                        tooltipPosition: a = h.EXPRESSION_TOOLTIP_PROPS.position,
+                        enableClick: r = !0
+                    } = e, d = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], c = null != d ? d : n.name, [f, m] = i.useState(!1), E = e => (0, l.jsx)(u.default, {
                         ...e,
                         emojiName: n.name,
                         size: n.jumboable ? "jumbo" : "default",
                         src: n.src,
-                        alt: r,
+                        alt: d,
                         animated: !1
-                    }), f = e => (0, l.jsx)(o.Tooltip, {
-                        text: (0, h.renderClickableTooltipNode)(n.name, a),
-                        "aria-label": d,
+                    }), g = e => (0, l.jsx)(o.Tooltip, {
+                        text: (0, h.renderClickableTooltipNode)(n.name, r),
+                        "aria-label": c,
                         ...h.EXPRESSION_TOOLTIP_PROPS,
-                        position: i,
+                        position: a,
+                        shouldShow: !f,
                         onTooltipShow: () => {
-                            a && I({
+                            r && I({
                                 emojiNode: n,
                                 isCustomEmoji: !1
                             })
@@ -29528,24 +29529,31 @@
                         children: t => (0, l.jsx)(o.Clickable, {
                             ...e,
                             tag: "span",
+                            onClick: t => {
+                                var n;
+                                m(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
+                            },
                             className: s(S.emojiContainer, {
-                                [S.emojiContainerClickable]: a
+                                [S.emojiContainerClickable]: r
                             }),
-                            children: c(t)
+                            children: E(t)
                         })
                     });
-                    return a ? (0, l.jsx)(o.Popout, {
+                    return r ? (0, l.jsx)(o.Popout, {
                         animation: o.Popout.Animation.TRANSLATE,
                         align: "center",
                         autoInvert: !0,
                         nudgeAlignIntoViewport: !0,
                         position: "right",
+                        onRequestClose: () => {
+                            m(!1)
+                        },
                         renderPopout: e => (0, l.jsx)(p.MessageStandardEmojiPopout, {
                             ...e,
                             node: n
                         }),
-                        children: f
-                    }) : f()
+                        children: g
+                    }) : g()
                 },
                 v = e => {
                     let {
@@ -29553,11 +29561,11 @@
                         isInteracting: n,
                         tooltipPosition: a = h.EXPRESSION_TOOLTIP_PROPS.position,
                         enableClick: d = !0
-                    } = e, [C, T] = i.useState(String(Date.now())), [v, _] = i.useState(!1), {
-                        enabled: N
+                    } = e, [C, T] = i.useState(String(Date.now())), [v, _] = i.useState(!1), [N, A] = i.useState(!1), {
+                        enabled: x
                     } = f.NitroBadgeOnEmojiHoverExperiment.useExperiment({
                         location: "MessageCustomEmoji"
-                    }), A = function() {
+                    }), y = function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                         return (0, l.jsx)(u.default, {
                             ...e,
@@ -29567,16 +29575,17 @@
                             animated: t.animated,
                             isInteracting: n
                         })
-                    }, x = (0, r.v4)(), y = e => (0, l.jsx)(o.Tooltip, {
-                        text: (0, h.renderClickableTooltipNode)(t.name, d, N),
+                    }, O = (0, r.v4)(), R = e => (0, l.jsx)(o.Tooltip, {
+                        text: (0, h.renderClickableTooltipNode)(t.name, d, x),
                         "aria-label": t.name,
                         ...h.EXPRESSION_TOOLTIP_PROPS,
                         position: a,
+                        shouldShow: !N,
                         onTooltipShow: () => {
                             _(!0), d && (I({
                                 emojiNode: t,
                                 isCustomEmoji: !0,
-                                nonce: x
+                                nonce: O
                             }), (0, c.initiateEmojiInteraction)(g.EmojiInteractionPoint.CustomEmojiTooltipShown))
                         },
                         children: t => (0, l.jsx)(o.Clickable, {
@@ -29587,18 +29596,18 @@
                             },
                             onClick: t => {
                                 var n;
-                                _(!1), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
+                                _(!1), A(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
                             },
                             onMouseLeave: () => {
                                 v && (m.default.track(E.AnalyticEvents.CLOSE_POPOUT, {
-                                    nonce: x
+                                    nonce: O
                                 }), _(!1))
                             },
                             tag: "span",
                             className: s(S.emojiContainer, {
                                 [S.emojiContainerClickable]: d
                             }),
-                            children: A(t)
+                            children: y(t)
                         })
                     });
                     return d ? (0, l.jsx)(o.Popout, {
@@ -29606,8 +29615,8 @@
                         align: "center",
                         onRequestClose: () => {
                             m.default.track(E.AnalyticEvents.CLOSE_POPOUT, {
-                                nonce: x
-                            }), _(!1)
+                                nonce: O
+                            }), _(!1), A(!1)
                         },
                         autoInvert: !0,
                         nudgeAlignIntoViewport: !0,
@@ -29616,11 +29625,11 @@
                             ...e,
                             node: t,
                             refreshPositionKey: () => T(String(Date.now())),
-                            nonce: x
+                            nonce: O
                         }),
                         positionKey: C,
-                        children: y
-                    }) : y()
+                        children: R
+                    }) : R()
                 },
                 I = e => {
                     let {
@@ -54524,4 +54533,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.bb86016603e296ab75a5.js.map
+//# sourceMappingURL=59196.6a56d613b8f6fa3e1b28.js.map

@@ -25156,41 +25156,44 @@
                 changePaymentSource: function() {
                     return e_
                 },
-                clearUpdatePaymentSourceError: function() {
+                pausePendingSubscription: function() {
                     return eh
                 },
-                clearRemovePaymentSourceError: function() {
+                clearUpdatePaymentSourceError: function() {
                     return eE
                 },
-                clearPaymentAuthenticationError: function() {
+                clearRemovePaymentSourceError: function() {
                     return eg
                 },
-                voidPendingPayment: function() {
+                clearPaymentAuthenticationError: function() {
                     return em
                 },
-                refundPayment: function() {
+                voidPendingPayment: function() {
                     return ep
                 },
-                popupBridgeState: function() {
+                refundPayment: function() {
                     return eS
                 },
-                popupBridgeCallback: function() {
+                popupBridgeState: function() {
                     return ev
                 },
-                fetchIpCountryCode: function() {
+                popupBridgeCallback: function() {
                     return eT
                 },
-                fetchLocalizedPromo: function() {
+                fetchIpCountryCode: function() {
                     return eI
                 },
-                resetPaymentIntentId: function() {
+                fetchLocalizedPromo: function() {
                     return eC
                 },
-                resetSubscriptionStore: function() {
+                resetPaymentIntentId: function() {
                     return eA
                 },
-                startBrowserCheckout: function() {
+                resetSubscriptionStore: function() {
                     return ey
+                },
+                startBrowserCheckout: function() {
+                    return eN
                 }
             }), n("70102");
             var i = n("41092"),
@@ -25726,7 +25729,7 @@
                         type: v.ADYEN_PAYMENT_SOURCES.get(t),
                         ...null !== (s = null == i ? void 0 : i.paymentMethod) && void 0 !== s ? s : {}
                     },
-                    c = await eS(t),
+                    c = await ev(t),
                     f = a.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t, null != c ? c : "", "success");
                 try {
                     let t = await D(p.PaymentGateways.ADYEN, JSON.stringify(d), e, {
@@ -25974,7 +25977,7 @@
                 }), t = (0, E.coerceExistingItemsToNewItemInterval)(t);
                 let _ = null;
                 if (null != n && v.ADYEN_PAYMENT_SOURCES.has(n.type)) {
-                    let e = await eS(n.type);
+                    let e = await ev(n.type);
                     _ = a.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(n.type, null != e ? e : "", "success")
                 }
                 try {
@@ -26025,7 +26028,7 @@
             async function J(e, t, n, i) {
                 let s = null;
                 if (null != n && v.PREPAID_PAYMENT_SOURCES.has(n.type)) {
-                    let e = await eS(n.type);
+                    let e = await ev(n.type);
                     s = a.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(n.type, null != e ? e : "", "success")
                 }
                 try {
@@ -26080,7 +26083,7 @@
                 } = await y(e);
                 if (null == n) throw P("Stripe cannot be null on a redirect.");
                 if (p.REDIRECTED_PAYMENT_SOURCES.has(t.type)) {
-                    let e = await eS(t.type);
+                    let e = await ev(t.type);
                     return es(await ea({
                         stripe: n,
                         paymentSource: t,
@@ -26275,10 +26278,11 @@
                         payment_source_token: null != t.paymentSource ? await Y(t.paymentSource) : null,
                         currency: t.currency,
                         gateway_checkout_context: await (0, h.createGatewayCheckoutContext)(t.paymentSource),
-                        load_id: s
+                        load_id: s,
+                        pause_duration: t.pauseDuration
                     };
                     if (null != t.paymentSource && v.ADYEN_PAYMENT_SOURCES.has(t.paymentSource.type)) {
-                        let e = await eS(t.paymentSource.type);
+                        let e = await ev(t.paymentSource.type);
                         l.return_url = a.default.getAPIBaseURL() + p.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(t.paymentSource.type, null != e ? e : "", "success")
                     }
                     null != t.items && (l.items = (0, E.coerceExistingItemsToNewItemInterval)(t.items).map(e => {
@@ -26347,30 +26351,36 @@
                 }, i, s)
             }
 
-            function eh() {
+            function eh(e, t, n, i) {
+                return eu(e, {
+                    pauseDuration: t
+                }, n, i)
+            }
+
+            function eE() {
                 o.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_UPDATE_CLEAR_ERROR"
                 })
             }
 
-            function eE() {
+            function eg() {
                 o.default.dispatch({
                     type: "BILLING_PAYMENT_SOURCE_REMOVE_CLEAR_ERROR"
                 })
             }
 
-            function eg() {
+            function em() {
                 o.default.dispatch({
                     type: "PAYMENT_AUTHENTICATION_CLEAR_ERROR"
                 })
             }
-            async function em(e) {
+            async function ep(e) {
                 await a.default.post({
                     url: p.Endpoints.BILLING_PAYMENTS_VOID(e),
                     oldFormErrors: !0
                 })
             }
-            async function ep(e, t) {
+            async function eS(e, t) {
                 await a.default.post({
                     url: p.Endpoints.BILLING_PAYMENTS_REFUND(e),
                     body: {
@@ -26378,7 +26388,7 @@
                     }
                 })
             }
-            async function eS(e) {
+            async function ev(e) {
                 let {
                     body: {
                         state: t
@@ -26394,7 +26404,7 @@
                 }), t
             }
 
-            function ev(e) {
+            function eT(e) {
                 let {
                     paymentSourceType: t,
                     state: n,
@@ -26419,7 +26429,7 @@
                     paymentSourceType: t
                 }), e))
             }
-            async function eT() {
+            async function eI() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                 if (!e && null != f.default.ipCountryCodeRequest) return f.default.ipCountryCodeRequest;
                 try {
@@ -26442,7 +26452,7 @@
                     }), e
                 }
             }
-            async function eI() {
+            async function eC() {
                 try {
                     let e = await a.default.get({
                         url: p.Endpoints.BILLING_LOCALIZED_PROMO
@@ -26462,19 +26472,19 @@
                 }
             }
 
-            function eC() {
+            function eA() {
                 o.default.dispatch({
                     type: "RESET_PAYMENT_ID"
                 })
             }
 
-            function eA() {
+            function ey() {
                 o.default.dispatch({
                     type: "BILLING_SUBSCRIPTION_RESET"
                 })
             }
 
-            function ey(e) {
+            function eN(e) {
                 o.default.dispatch({
                     type: "USER_PAYMENT_BROWSER_CHECKOUT_STARTED",
                     loadId: e
@@ -87218,8 +87228,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709669101255",
-                                    build_number: "272351"
+                                    built_at: "1709690282373",
+                                    build_number: "272535"
                                 }
                             },
                             retries: 1
@@ -103581,6 +103591,7 @@
                         } : null,
                         streakStartedAt: null != e.streak_started_at ? new Date(e.streak_started_at) : null,
                         currency: e.currency,
+                        pauseEndsAt: null != e.pause_ends_at ? new Date(e.pause_ends_at) : null,
                         metadata: e.metadata,
                         useStorekitResubscribe: e.use_storekit_resubscribe,
                         price: e.price,
@@ -103623,7 +103634,7 @@
                     return null != this.items.find(e => e.planId === d.SubscriptionPlans.PREMIUM_MONTH_TIER_2)
                 }
                 constructor(e) {
-                    super(), this.id = e.id, this.type = e.type, this.items = e.items, this.createdAt = e.createdAt, this.canceledAt = e.canceledAt, this.currentPeriodStart = e.currentPeriodStart, this.currentPeriodEnd = e.currentPeriodEnd, this.status = e.status, this.paymentSourceId = e.paymentSourceId, this.paymentGateway = e.paymentGateway, this.paymentGatewayPlanId = e.paymentGatewayPlanId, this.paymentGatewaySubscriptionId = e.paymentGatewaySubscriptionId, this.trialId = e.trialId, this.trialEndsAt = e.trialEndsAt, this.renewalMutations = e.renewalMutations, this.currency = e.currency, this.metadata = e.metadata, this.latestInvoice = e.latestInvoice, this.useStorekitResubscribe = e.useStorekitResubscribe, this.price = e.price, this.userId = e.userId;
+                    super(), this.id = e.id, this.type = e.type, this.items = e.items, this.createdAt = e.createdAt, this.canceledAt = e.canceledAt, this.currentPeriodStart = e.currentPeriodStart, this.currentPeriodEnd = e.currentPeriodEnd, this.status = e.status, this.paymentSourceId = e.paymentSourceId, this.paymentGateway = e.paymentGateway, this.paymentGatewayPlanId = e.paymentGatewayPlanId, this.paymentGatewaySubscriptionId = e.paymentGatewaySubscriptionId, this.trialId = e.trialId, this.trialEndsAt = e.trialEndsAt, this.renewalMutations = e.renewalMutations, this.currency = e.currency, this.pauseEndsAt = e.pauseEndsAt, this.metadata = e.metadata, this.latestInvoice = e.latestInvoice, this.useStorekitResubscribe = e.useStorekitResubscribe, this.price = e.price, this.userId = e.userId;
                     let t = this.renewalMutations,
                         n = e.items[0].planId,
                         i = null;
@@ -124051,7 +124062,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "d6a6dfe03fe183fef6c961107c976f1452e8b3c1"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "e437335b11ad3fcb02ce91943feb6182b27ade2f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133361,7 +133372,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272351"
+                                build_number: "272535"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134806,6 +134817,13 @@
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE.format();
                             case R.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT.format();
+                            case R.SubscriptionStatusTypes.PAUSE_PENDING:
+                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE.format({
+                                    price: r,
+                                    pauseDate: i.currentPeriodEnd
+                                }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE_NO_PRICE.format({
+                                    pauseDate: i.currentPeriodEnd
+                                });
                             default:
                                 return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
                                     price: r
@@ -134824,6 +134842,13 @@
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
                             case R.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
+                            case R.SubscriptionStatusTypes.CANCELED:
+                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE.format({
+                                    price: r,
+                                    pauseDate: i.currentPeriodEnd
+                                }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE.format({
+                                    pauseDate: i.currentPeriodEnd
+                                });
                             default:
                                 return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
                                     price: r
@@ -134851,6 +134876,15 @@
                             case R.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT.format({
                                     num: h
+                                });
+                            case R.SubscriptionStatusTypes.PAUSE_PENDING:
+                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE.format({
+                                    price: r,
+                                    num: h,
+                                    pauseDate: i.currentPeriodEnd
+                                }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE_NO_PRICE.format({
+                                    num: h,
+                                    pauseDate: i.currentPeriodEnd
                                 });
                             default:
                                 return o ? L.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
@@ -135469,7 +135503,21 @@
                     if (e.status === R.SubscriptionStatusTypes.CANCELED) return L.default.Messages.PREMIUM_SETTINGS_CANCELLED_INFO.format({
                         endDate: t.subscriptionPeriodStart
                     });
-                    if (e.status === R.SubscriptionStatusTypes.PAST_DUE) {
+                    if (e.status === R.SubscriptionStatusTypes.PAUSE_PENDING) return L.default.Messages.PREMIUM_SETTINGS_PAUSE_PENDING_INFO.format({
+                        pauseDate: e.currentPeriodEnd,
+                        resumeDate: e.pauseEndsAt
+                    });
+                    if (e.status === R.SubscriptionStatusTypes.PAUSED) return null == e.pauseEndsAt ? n ? L.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO_WITH_PLAN.format({
+                        planName: L.default.Messages.PREMIUM,
+                        price: i
+                    }) : L.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO : n ? L.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN.format({
+                        planName: L.default.Messages.PREMIUM,
+                        resumeDate: e.pauseEndsAt,
+                        price: i
+                    }) : L.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO.format({
+                        resumeDate: e.pauseEndsAt
+                    });
+                    else if (e.status === R.SubscriptionStatusTypes.PAST_DUE) {
                         var s, r;
                         let t = ea(e),
                             n = d(e.currentPeriodStart).add(t, "days");
@@ -135481,8 +135529,7 @@
                             endDate: d(e.currentPeriodStart).add(t, "days"),
                             price: i
                         })
-                    }
-                    return e.status === R.SubscriptionStatusTypes.ACCOUNT_HOLD ? e.isPurchasedViaGoogle && !(0, I.isAndroid)() ? L.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_EXTERNAL.format({
+                    } else return e.status === R.SubscriptionStatusTypes.ACCOUNT_HOLD ? e.isPurchasedViaGoogle && !(0, I.isAndroid)() ? L.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_EXTERNAL.format({
                         endDate: d(e.currentPeriodStart).add(D.MAX_ACCOUNT_HOLD_DAYS, "days"),
                         paymentGatewayName: P.PaymentGatewayToFriendlyName[e.paymentGateway],
                         paymentSourceLink: ev(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
@@ -135513,7 +135560,7 @@
                     let {
                         planId: n
                     } = e;
-                    if (e.status === R.SubscriptionStatusTypes.CANCELED) return n;
+                    if (e.status === R.SubscriptionStatusTypes.CANCELED || e.status === R.SubscriptionStatusTypes.PAUSE_PENDING) return n;
                     l(null != t, "Expected invoicePreview");
                     let i = t.invoiceItems.find(e => {
                         let {
@@ -135527,7 +135574,7 @@
                     let {
                         status: n
                     } = e;
-                    if (e.status === R.SubscriptionStatusTypes.CANCELED) return n;
+                    if (e.status === R.SubscriptionStatusTypes.CANCELED || e.status === R.SubscriptionStatusTypes.PAUSE_PENDING) return n;
                     l(null != t, "Expected invoicePreview");
                     let i = t.invoiceItems.find(e => {
                         let {
@@ -144385,7 +144432,6 @@
                             let s = JSON.parse(n);
                             return i({
                                 duration: e,
-                                thumbnail: t,
                                 clipStats: s
                             })
                         }, e => {
@@ -144401,7 +144447,6 @@
                             let i = JSON.parse(n);
                             return s({
                                 duration: e,
-                                thumbnail: t,
                                 clipStats: i
                             })
                         }, e => {
@@ -150898,4 +150943,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.dfd94eb6c844115eb523.js.map
+//# sourceMappingURL=29062.7eda77f18baa1be8df17.js.map

@@ -6508,6 +6508,8 @@
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_NO_PRICE: "You have custom emoji, bigger uploads, and more",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION: "You have custom emoji, bigger uploads, and more for **!!{price}!!** (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_NO_PRICE: "You have custom emoji, bigger uploads, and more (Pending Cancellation)",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE: "You have custom emoji, bigger uploads, and more for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE_NO_PRICE: "You have custom emoji, bigger uploads, and more (pausing on **{pauseDate, date, medium}**)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD: "Your subscription to Nitro Basic, which gives you custom emoji, bigger uploads, and other perks for **!!{price}!!** is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE: "Your subscription to Nitro Basic, which gives you custom emoji, bigger uploads, and other perks is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT: "You will have custom emoji, bigger uploads, and more **as soon as your payment processes.** We will send you an email as soon as it does",
@@ -6515,6 +6517,8 @@
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_NO_PRICE: "You have chat perks and a Boost discount",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION: "You have chat perks and a Boost discount for **!!{price}!!** (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE: "You have chat perks and a Boost discount (Pending Cancellation)",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE: "You have chat perks and a Boost discount for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE: "You have chat perks and a Boost discount (pausing on **{pauseDate, date, medium}**)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD: "Your chat perks and a Boost discount for **!!{price}!!** subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE: "Your chat perks and a Boost discount subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT: "You will have chat perks and a Boost discount **as soon as your payment processes.** We will send you an email as soon as it does",
@@ -6522,6 +6526,8 @@
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (Pending Cancellation)",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (pausing on **{pauseDate, date, medium}**)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription for **!!{price}!!** is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT: "You will have premium chat, **{num, number}** Boosts, and a Boost discount **as soon as your payment processes.** We will send you an email as soon as it does",
@@ -7004,6 +7010,10 @@
                 PREMIUM_CANCEL_CONFIRM_BODY_TIER_2_PAYMENT_BLOCKED_RUSSIA: "Cancellation will take effect at the end of your current billing period. On **{date, date, medium}**, you will lose access to Nitro, and your included Server Boosts will be removed.\n\n  At this time we are temporarily unable to renew subscriptions for those located in Russia or who use a Russian payment method. [Learn More]({helpdeskArticle})",
                 PREMIUM_CANCEL_PAST_DUE_CONFIRM_BODY: "Cancellation will take effect immediately for any Nitro and Server Boost subscriptions.",
                 PREMIUM_CANCEL_CONFIRM_NEW: "Yup, Cancel !!{planPremiumType}!!",
+                PREMIUM_PAUSE_CONFIRM_TITLE: "Pause !!{planPremiumType}!!?",
+                PREMIUM_PAUSE_CONFIRM_BODY: "You will continue to have access to Nitro until **{pauseDate, date, medium}**, and then your subscription will be paused for {pauseDuration} days. We’ll start billing you again on **{resumeDate, date, medium}**. You can resume your subscription anytime.",
+                PREMIUM_PAUSE_PAST_DUE_CONFIRM_BODY: "Your Nitro subscription will be paused **now** for {pauseDuration} days. We’ll start billing you again on **{resumeDate, date, medium}**. You can resume your subscription anytime.",
+                PREMIUM_PAUSE_CONFIRM_NEW: "Yup, Pause !!{planPremiumType}!!",
                 PREMIUM_UPGRADE_DONE_BUTTON: "Sweet!",
                 PREMIUM_DOWNGRADE_DONE_BUTTON: "Got It",
                 PREMIUM_UPLOAD_PROMO: "Upgrade to Discord Nitro for {maxUploadPremium} file limit",
@@ -7030,6 +7040,11 @@
                 PREMIUM_SETTINGS_RENEWAL_INFO: "Your subscriptions will automatically renew on **{renewalDate, date, medium}** and you'll be charged **!!{price}!!**.",
                 PREMIUM_SETTINGS_RENEWAL_INFO_EXTERNAL: "Your subscriptions will automatically renew on **{renewalDate, date, medium}**. Please [visit your !!{paymentGatewayName}!! Subscription settings]({subscriptionManagementLink}) for more details.",
                 PREMIUM_SETTINGS_CANCELLED_INFO: "Your subscription will end on **{endDate, date, medium}**.",
+                PREMIUM_SETTINGS_PAUSE_PENDING_INFO: "Your subscription will pause on **{pauseDate, date, medium}**. Your subscription will automatically resume on **{resumeDate, date, medium}**.",
+                PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO: "Your subscription will automatically resume on **{resumeDate, date, medium}**.",
+                PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN: "Your **{planName}** subscription will automatically resume on **{resumeDate, date, short}** and you'll be charged **!!{price}!!**.",
+                PREMIUM_SETTINGS_PAUSED_INFO: "Your subscription will resume pending payment.",
+                PREMIUM_SETTINGS_PAUSED_INFO_WITH_PLAN: "Your **{planName}** subscription will resume pending payment and you'll be charged **!!{price}!!**.",
                 PREMIUM_SETTINGS_PAST_DUE_INFO: "Your **!!{price}!!** subscription is past due. Please update your payment info or your subscription will end on **{endDate, date, medium}**.",
                 PREMIUM_SETTINGS_PAST_DUE_INFO_EXTERNAL: "Your subscription is past due. Please [update your payment info for !!{paymentGatewayName}!!]({paymentSourceLink}) or your subscription will end on **{endDate, date, medium}**.",
                 PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO: "Your subscription is **on hold**. Please update your payment info or your subscription will end on {endDate, date, medium}.",
@@ -7058,7 +7073,8 @@
                 PREMIUM_CANCEL_CONFIRM_BUTTON: "Cancel Subscription",
                 PREMIUM_NO_PLANS_HEADER: "Sorry!",
                 PREMIUM_NO_PLANS_BODY: "We don't current offer a plan through Google Play Billing with more boosts. [Learn more.]({helpdeskArticle})",
-                PREMIUM_PAUSE_OR_CANCEL: "Pause or Cancel",
+                PREMIUM_PAUSE_OR_CANCEL_SUBSCRIPTION: "Pause or Cancel Subscription",
+                PREMIUM_CANCEL_OR_EXTEND_PAUSE_SUBSCRIPTION: "Cancel or Pause Subscription",
                 PREMIUM_SETTINGS_STARTING_AT_PER_MONTH: "Subscribe - Starting at !!{price}!! / Month",
                 PREMIUM_SUBSCRIPTION_UPDATES: "Subscription Updates",
                 PREMIUM_SUBSCRIPTION_PLAN_ADJUSTMENT: "{planName} Adjustment",
@@ -7607,6 +7623,8 @@
                 REVERSED: "Reversed",
                 REFUND: "Refund",
                 RESUBSCRIBE: "Re-subscribe",
+                RESUME: "Resume Subscription",
+                WITHDRAW_PAUSE: "Withdraw Pause",
                 CREDIT_CARD_ERROR_REQUIRED: "Card number required.",
                 CREDIT_CARD_ERROR_NUMBER: "Something is wrong with your credit card number",
                 CREDIT_CARD_ERROR_EXPIRATION: "Something is wrong with your expiration date",
@@ -12254,6 +12272,15 @@
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE: "If you cancel, **you will lose these perks:**",
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK: "Nevermind, keep Nitro",
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK_CTA: "Never mind, keep Nitro",
+                PREMIUM_PAUSE_INSTEAD: "Pause Instead",
+                PREMIUM_PAUSE_SELECT_TITLE: "Pause or cancel subscription",
+                PREMIUM_PAUSE_SELECT_SUBTITLE: "If you want to take a break from paid subscriptions, you have the option to pause it for a few months",
+                PREMIUM_PAUSE_SELECT_PLACEHOLDER: "Select a pause duration",
+                PREMIUM_PAUSE_INSTEAD_TITLE: "Would you like to **Pause Instead**?",
+                PREMIUM_PAUSE_INSTEAD_SUBTITLE: "Pause your subscription for up to 90 days instead of canceling.",
+                PREMIUM_PAUSE_DURATION_MONTHS_CAPITALIZE: "Pause for {months, plural, =1 {1 Month} other {{months} Months}}",
+                PREMIUM_PAUSE_DURATION_CANCEL: "Cancel subscription",
+                PREMIUM_PAUSE_YOUR_SUBSCRIPTION_WILL_BE_PAUSED: "Your subscription will be paused",
                 PREMIUM_CANCEL_DOWNGRADE_TO_TIER_0_HEADER: "Keep some perks for less",
                 PREMIUM_CANCEL_DOWNGRADE_TO_TIER_0_BODY: "With Nitro Basic, you still get custom emoji, bigger uploads, and [more perks]({helpCenterLink}) for just {monthlyPrice}/month.",
                 PREMIUM_CANCEL_DOWNGRADE_TO_TIER_0_CUSTOM_EMOJI_AND_STICKERS: "**Custom emoji & stickers** everywhere",
@@ -17159,6 +17186,18 @@
                 SERVER_DRAWER_ACTIVITY_STREAMING: "streaming **!!{activity}!!**",
                 SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen",
                 PACKAGES: "Packages",
+                USER_SETTINGS_PACKAGES_HEADER_CTA: "Open your Mailbox",
+                USER_SETTINGS_PACKAGES_MAILBOX_HEADER: "Mailbox",
+                USER_SETTINGS_PACKAGE_COUNT: "x{count, number}",
+                PACKAGE_ITEM_1_NAME: "Newspaper",
+                PACKAGE_ITEM_2_NAME: "Bills",
+                PACKAGE_ITEM_3_NAME: "Grocery Savings",
+                PACKAGE_ITEM_4_NAME: "Lost ID",
+                PACKAGE_ITEM_5_NAME: "Postcard",
+                PACKAGE_ITEM_6_NAME: "New Socks",
+                PACKAGE_ITEM_7_NAME: "Glitterbomb",
+                PACKAGE_ITEM_8_NAME: "Empty Envelope",
+                PACKAGE_ITEM_9_NAME: "Birthday Card",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
             })
         },
@@ -18352,7 +18391,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272351", ", Version Hash: ").concat("d6a6dfe03fe183fef6c961107c976f1452e8b3c1")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272535", ", Version Hash: ").concat("e437335b11ad3fcb02ce91943feb6182b27ade2f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20647,8 +20686,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "272351", "272351"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272351")), _ = 0), _
+                let _ = parseInt((e = "272535", "272535"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272535")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36190,4 +36229,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.d20a0358d486568a461e.js.map
+//# sourceMappingURL=76039.d72afdb0ffc5279456d2.js.map
