@@ -27716,6 +27716,11 @@ html .progress__4ef76 {
     background-color: var(--background-accent)
 }
 
+.voterTooltip__04695 {
+    color: var(--text-muted);
+    font-weight: 400
+}
+
 .container__3ca24 {
     display: flex;
     flex-direction: column;
@@ -46123,8 +46128,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -129032,4 +129037,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.392b3237bc3d7cf8e1cf.css.map*/
+/*# sourceMappingURL=app.a08f7f81c9583dc39a42.css.map*/
