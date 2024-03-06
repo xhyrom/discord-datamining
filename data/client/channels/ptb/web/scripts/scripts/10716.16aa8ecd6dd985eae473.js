@@ -61,10 +61,10 @@
                 Storefront: {
                     BENEFITS_TITLE: "Exclusive to this tier",
                     PRODUCT_DETAILS: "Product Details",
-                    SEE_FULL_BENEFITS: "See full benefits",
                     SEE_MORE_DETAILS: "See more details",
                     SERVER_SUBSCRIPTION: "Server subscription",
-                    USER_SUBSCRIPTION: "Personal subscription"
+                    USER_SUBSCRIPTION: "Personal subscription",
+                    MORE_BENEFITS: "+ {count, plural, one {# more benefit} other {# more benefits}}"
                 }
             }
         },
@@ -1714,10 +1714,10 @@
                     return t
                 },
                 openContextMenu: function() {
-                    return i
+                    return n
                 },
                 openContextMenuLazy: function() {
-                    return n
+                    return i
                 }
             }), A("506083");
             var O = A("913144"),
@@ -1748,8 +1748,8 @@
                 }
             }
 
-            function i(I, N, A, O) {
-                var t, i, n;
+            function n(I, N, A, O) {
+                var t, n, i;
                 if (I.stopPropagation(), null != I.currentTarget.contains && !I.currentTarget.contains(I.target)) return;
                 let R = 0,
                     G = 0;
@@ -1766,10 +1766,10 @@
                 let r = {
                     render: N,
                     renderLazy: O,
-                    target: null !== (i = I.target) && void 0 !== i ? i : I.currentTarget,
+                    target: null !== (n = I.target) && void 0 !== n ? n : I.currentTarget,
                     rect: new DOMRect(R, G, 0, 0),
                     config: {
-                        context: __OVERLAY__ ? E.AppContext.OVERLAY : null !== (n = (0, T.getCurrentlyInteractingAppContext)()) && void 0 !== n ? n : E.AppContext.APP,
+                        context: __OVERLAY__ ? E.AppContext.OVERLAY : null !== (i = (0, T.getCurrentlyInteractingAppContext)()) && void 0 !== i ? i : E.AppContext.APP,
                         ...A
                     }
                 };
@@ -1780,8 +1780,8 @@
                 } else I.preventDefault(), V(r)
             }
 
-            function n(I, N, A) {
-                i(I, void 0, A, N)
+            function i(I, N, A) {
+                n(I, void 0, A, N)
             }
         },
         318696: function(I, N, A) {
@@ -1792,7 +1792,7 @@
                     return t
                 },
                 updateLocaleLoadingStatus: function() {
-                    return i
+                    return n
                 }
             }), A("424973"), A("222007"), A("860677");
             var _ = A("913144"),
@@ -1802,10 +1802,10 @@
             let V = !1;
 
             function t(I) {
-                T = E.default.loadPromise, O && O.setLocale(I), E.default.setLocale(I), i(I)
+                T = E.default.loadPromise, O && O.setLocale(I), E.default.setLocale(I), n(I)
             }
 
-            function i(I) {
+            function n(I) {
                 let N = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 if (V && E.default.loadPromise === T) return;
                 V = !0, N ? (0, e.setLocaleHack)(I) : _.default.dispatch({
@@ -1909,8 +1909,8 @@
                 E = A("49671"),
                 V = A("605250"),
                 t = A("915639"),
-                i = A("449008"),
-                n = A("851234"),
+                n = A("449008"),
+                i = A("851234"),
                 R = A("648610");
             let G = new V.default("Spellchecker"),
                 r = null === E.default || void 0 === E.default ? void 0 : E.default.spellCheck;
@@ -1973,7 +1973,7 @@
                     let [N, A] = t.default.locale.split("-");
                     this.regionPreference = A;
                     let O = this.getAvailableLanguages(I);
-                    this.languageDetector = new n.default(N, A => {
+                    this.languageDetector = new i.default(N, A => {
                         let T = "".concat(A, "-").concat(this.regionPreference);
                         if (-1 !== I.indexOf(T)) this.setLocale(T);
                         else {
@@ -1995,7 +1995,7 @@
             async function s() {
                 var I, N;
                 let A = null !== (I = await r.getAvailableDictionaries()) && void 0 !== I ? I : [],
-                    O = A.map(a).filter(i.isNotNullish),
+                    O = A.map(a).filter(n.isNotNullish),
                     T = new S(O);
                 return N = T, null != document.body && document.body.addEventListener("beforeinput", I => o(N, I.target), !0), T
             }
@@ -2151,7 +2151,7 @@
             "use strict";
             A.r(N), A.d(N, {
                 default: function() {
-                    return i
+                    return n
                 }
             });
             var O = A("446674"),
@@ -2174,7 +2174,7 @@
                 }
             }
             t.displayName = "LocaleStore";
-            var i = new t(T.default, {
+            var n = new t(T.default, {
                 OVERLAY_INITIALIZE: V,
                 CACHE_LOADED: V,
                 CONNECTION_OPEN: V,
@@ -2191,7 +2191,7 @@
                     return V
                 },
                 default: function() {
-                    return n
+                    return i
                 }
             });
             var O = A("446674"),
@@ -2212,7 +2212,7 @@
                 } = I;
                 _ = !0, e = N
             }
-            class i extends O.default.Store {
+            class n extends O.default.Store {
                 isLoading() {
                     return _
                 }
@@ -2220,8 +2220,8 @@
                     return E
                 }
             }
-            i.displayName = "I18nLoaderStore";
-            var n = new i(T.default, {
+            n.displayName = "I18nLoaderStore";
+            var i = new n(T.default, {
                 I18N_LOAD_START: t,
                 I18N_LOAD_SUCCESS: function(I) {
                     let {
@@ -2302,10 +2302,10 @@
                     return t
                 },
                 setLearnedWords: function() {
-                    return i
+                    return n
                 },
                 isMisspelled: function() {
-                    return n
+                    return i
                 },
                 getCorrections: function() {
                     return R
@@ -2336,11 +2336,11 @@
                 let N = await V;
                 null != N && (N.enabled = I)
             }
-            async function i(I) {
+            async function n(I) {
                 let N = await V;
                 null != N && N.setLearnedWords(I)
             }
-            async function n(I) {
+            async function i(I) {
                 let N = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     A = await V;
                 return null != A && A.isMisspelled(I, N)
@@ -2388,4 +2388,4 @@
         }
     }
 ]);
-//# sourceMappingURL=10716.c681704d6ab1d7df1771.js.map
+//# sourceMappingURL=10716.16aa8ecd6dd985eae473.js.map
