@@ -16612,6 +16612,7 @@
   "HANG_STATUS_VC_ROW_ADD": "\"Add a status\"",
   "HANG_STATUS_HELP": "\"Show your friends what you're up to by setting an activity status.\"",
   "HANG_STATUS_SET_CUSTOM_STATUS_PLACEHOLDER": "\"Set a custom status\"",
+  "HANG_STATUS_MOBILE_SET_ROW": "\"Set Voice Activity\"",
   "LAUNCH_PAD_HISTORY": "\"Recent Channels\"",
   "LAUNCH_PAD_STUFF_TO_CATCH_UP_ON": "\"Stuff To Catch Up On\"",
   "LAUNCH_PAD_RECENT_SERVERS": "\"Recent Servers\"",
