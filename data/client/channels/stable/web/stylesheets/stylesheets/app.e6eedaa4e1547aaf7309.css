@@ -85548,11 +85548,8 @@ html .tabBadge__002b3 {
 .titleImage__09f75 {
     padding-right: 6px;
     padding-top: 4px;
-    max-height: 18px
-}
-
-.winterTitleImage__1732f {
-    max-height: 25px
+    max-height: 25px;
+    max-width: 120px
 }
 
 .collectionText__817ba {
@@ -85806,7 +85803,7 @@ html .tabBadge__002b3 {
 .description__92b55 {
     margin-top: 4px;
     word-wrap: break-word;
-    flex: 1
+    flex: 2
 }
 
 .priceTag__76b4b {
@@ -129063,4 +129060,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.29266e95da3b4c18705c.css.map*/
+/*# sourceMappingURL=app.e6eedaa4e1547aaf7309.css.map*/
