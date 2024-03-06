@@ -7489,22 +7489,39 @@
             "use strict";
             n.r(t), n.d(t, {
                 getApplicationInstallURL: function() {
-                    return a
+                    return s
                 }
             }), n("222007");
             var l = n("872717"),
-                i = n("49111");
+                i = n("389153"),
+                a = n("49111");
 
-            function a(e) {
-                var t, n;
-                if (null != e.custom_install_url) return e.custom_install_url;
-                let a = {};
-                a.client_id = e.id, (null === (t = e.install_params) || void 0 === t ? void 0 : t.permissions) != null && (a.permissions = e.install_params.permissions), (null === (n = e.install_params) || void 0 === n ? void 0 : n.scopes) != null && (a.scope = e.install_params.scopes.join(" "));
-                let s = Object.entries(a).map(e => {
+            function s(e) {
+                let {
+                    id: t,
+                    customInstallUrl: n,
+                    installParams: s,
+                    integrationTypesConfig: r
+                } = e;
+                if (null != n) return n;
+                let o = {};
+                o.client_id = t;
+                let u = (0, i.isInUserAppExperiment)(null, {
+                        location: "getApplicationInstallURL"
+                    }),
+                    d = u && null != r && Object.values(r).some(e => (null == e ? void 0 : e.oauth2_install_params) != null);
+                if (null != s && !d) {
+                    let {
+                        permissions: e,
+                        scopes: t
+                    } = s;
+                    null != e && (o.permissions = e), null != t && (o.scope = t.join(" "))
+                }
+                let c = Object.entries(o).map(e => {
                     let [t, n] = e;
                     return "".concat(t, "=").concat(encodeURIComponent(n))
                 }).join("&");
-                return "".concat(l.default.getAPIBaseURL(!1)).concat(i.Endpoints.OAUTH2_AUTHORIZE, "?").concat(s)
+                return "".concat(l.default.getAPIBaseURL(!1)).concat(a.Endpoints.OAUTH2_AUTHORIZE, "?").concat(c)
             }
         },
         227422: function(e, t, n) {
@@ -39377,23 +39394,17 @@
                     look: s.Button.Looks.FILLED,
                     size: s.Button.Sizes.SMALL,
                     onContextMenu: E.SUPPORTS_COPY ? e => {
-                        var t, i;
-                        let a = (0, o.getApplicationInstallURL)({
-                            id: n.id,
-                            custom_install_url: null !== (t = n.customInstallUrl) && void 0 !== t ? t : void 0,
-                            install_params: null !== (i = n.installParams) && void 0 !== i ? i : void 0
-                        });
                         (0, r.openContextMenu)(e, e => (0, l.jsx)(s.Menu, {
                             navId: "component-button",
                             onClose: r.closeContextMenu,
-                            "aria-label": T.default.Messages.APPLICATION_ADD_TO_SERVER_ACTIONS,
+                            "aria-label": T.default.Messages.APPLICATION_ADD_BUTTON_ACTIONS,
                             onSelect: void 0,
                             ...e,
                             children: (0, l.jsx)(s.MenuGroup, {
                                 children: (0, l.jsx)(s.MenuItem, {
                                     id: "copy",
-                                    label: T.default.Messages.APPLICATION_ADD_TO_SERVER_ACTIONS_COPY,
-                                    action: () => (0, E.copy)(a)
+                                    label: T.default.Messages.APPLICATION_ADD_BUTTON_ACTIONS_COPY,
+                                    action: () => (0, E.copy)((0, o.getApplicationInstallURL)(n))
                                 })
                             })
                         }))
@@ -54533,4 +54544,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.927eefb8ed516f08fa5b.js.map
+//# sourceMappingURL=60053.0995e52a8b3f1e062fd5.js.map
