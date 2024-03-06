@@ -87228,8 +87228,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709690282373",
-                                    build_number: "272535"
+                                    built_at: "1709744046847",
+                                    build_number: "272625"
                                 }
                             },
                             retries: 1
@@ -91014,6 +91014,40 @@
             }, 5e3);
             var f = c
         },
+        491096: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                POLL_CREATION_MODAL_KEY: function() {
+                    return a
+                },
+                MIN_NUMBER_OF_ANSWERS_PER_POLL: function() {
+                    return o
+                },
+                MAX_NUMBER_OF_ANSWERS_PER_POLL: function() {
+                    return l
+                },
+                MAX_POLL_QUESTION_LENGTH: function() {
+                    return u
+                },
+                MAX_POLL_ANSWER_LENGTH: function() {
+                    return d
+                },
+                VOTES_TOOLTIP_MAX_USERS: function() {
+                    return c
+                },
+                PollDurations: function() {
+                    return i
+                }
+            }), n("222007");
+            var i, s, r = n("13030");
+            let a = "POLL_CREATION_MODAL_KEY",
+                o = 1,
+                l = 10,
+                u = 300,
+                d = 55,
+                c = 3;
+            (s = i || (i = {}))[s.ONE_HOUR = 1] = "ONE_HOUR", s[s.ONE_DAY = 24] = "ONE_DAY", s[s.THREE_DAYS = 72] = "THREE_DAYS", s[s.SEVEN_DAYS = 168] = "SEVEN_DAYS", r.ExpressionPickerViewType.GIF, r.ExpressionPickerViewType.EMOJI
+        },
         83995: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -91078,77 +91112,90 @@
             "use strict";
             n.r(t), n.d(t, {
                 generateEmptyPollAnswer: function() {
-                    return u
+                    return S
                 },
                 filterOutUUID: function() {
-                    return d
+                    return v
                 },
                 hasNonVoteReactions: function() {
-                    return c
+                    return T
                 },
                 useCanPostPollsInChannel: function() {
-                    return f
+                    return I
                 },
                 useCanPostImagePolls: function() {
-                    return _
+                    return C
                 },
                 isPollCreationEmpty: function() {
-                    return h
+                    return A
                 },
                 isAnswerFilled: function() {
-                    return E
+                    return y
                 },
                 isIncompleteAnswer: function() {
-                    return g
+                    return N
                 },
                 createPollServerDataFromCreateRequest: function() {
-                    return m
+                    return R
                 },
                 getTotalVotes: function() {
-                    return p
+                    return O
+                },
+                getPollAnswerVotesTooltipText: function() {
+                    return D
                 }
             }), n("781738"), n("222007"), n("808653");
-            var i = n("748820"),
-                s = n("418009"),
-                r = n("957255"),
-                a = n("718517"),
-                o = n("83995"),
-                l = n("49111");
+            var i = n("917351"),
+                s = n.n(i),
+                r = n("748820"),
+                a = n("418009"),
+                o = n("875978"),
+                l = n("42203"),
+                u = n("486996"),
+                d = n("377253"),
+                c = n("957255"),
+                f = n("27618"),
+                _ = n("718517"),
+                h = n("387111"),
+                E = n("83995"),
+                g = n("491096"),
+                m = n("49111"),
+                p = n("782340");
 
-            function u() {
+            function S() {
                 return {
                     text: void 0,
                     image: void 0,
                     localCreationAnswerId: function() {
-                        return (0, i.v4)()
+                        return (0, r.v4)()
                     }()
                 }
             }
 
-            function d(e) {
+            function v(e) {
                 return e.replace(/\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i, "")
             }
 
-            function c(e) {
+            function T(e) {
                 for (let t of e.reactions)
                     if (null == t.me_vote) return !0;
                 return !1
             }
 
-            function f(e) {
-                let t = l.ChannelTypesSets.POLLS.has(e.type),
+            function I(e) {
+                let t = m.ChannelTypesSets.POLLS.has(e.type),
                     {
                         enabled: n
-                    } = o.CreateGuildPollsExperiment.useExperiment({
+                    } = E.CreateGuildPollsExperiment.useExperiment({
                         guildId: e.guild_id,
                         location: "useCanPostPollsInChannel"
                     }, {
                         autoTrackExposure: !0,
-                        disable: !t || e.isPrivate() || !r.default.can(l.Permissions.SEND_MESSAGES, e)
+                        disable: !t || e.isPrivate() || !c.default.can(m.Permissions.SEND_MESSAGES, e)
                     }),
                     {
                         enabled: i
-                    } = o.CreateGDMPollsExperiment.useExperiment({
+                    } = E.CreateGDMPollsExperiment.useExperiment({
                         location: "useCanPostPollsInChannel"
                     }, {
                         autoTrackExposure: !0,
@@ -91157,16 +91204,16 @@
                 return n || i
             }
 
-            function _() {
+            function C() {
                 return !1
             }
 
-            function h(e, t, n) {
-                return 0 === e.length && null == t.find(e => E(e, n))
+            function A(e, t, n) {
+                return 0 === e.length && null == t.find(e => y(e, n))
             }
 
-            function E(e, t) {
-                if (t === s.PollLayoutTypes.IMAGE_ONLY_ANSWERS) return null != e.image;
+            function y(e, t) {
+                if (t === a.PollLayoutTypes.IMAGE_ONLY_ANSWERS) return null != e.image;
                 {
                     var n;
                     let t = null === (n = e.text) || void 0 === n ? void 0 : n.trim();
@@ -91174,13 +91221,13 @@
                 }
             }
 
-            function g(e, t) {
+            function N(e, t) {
                 var n;
                 let i = null === (n = e.text) || void 0 === n ? void 0 : n.trim();
-                return t === s.PollLayoutTypes.DEFAULT && null != e.image && (null == i || 0 === i.length)
+                return t === a.PollLayoutTypes.DEFAULT && null != e.image && (null == i || 0 === i.length)
             }
 
-            function m(e) {
+            function R(e) {
                 var t, n;
                 if (null == e) return;
                 let i = null == e ? void 0 : null === (t = e.answers) || void 0 === t ? void 0 : t.map((e, t) => {
@@ -91199,7 +91246,7 @@
                         poll_media: r
                     }
                 });
-                let s = (null == e ? void 0 : e.duration) != null ? (n = e.duration, new Date(Date.now() + n * a.default.Millis.HOUR).toISOString()) : "0";
+                let s = (null == e ? void 0 : e.duration) != null ? (n = e.duration, new Date(Date.now() + n * _.default.Millis.HOUR).toISOString()) : "0";
                 return {
                     ...e,
                     expiry: s,
@@ -91207,11 +91254,62 @@
                 }
             }
 
-            function p(e) {
+            function O(e) {
                 return e.reduce((e, t) => {
                     var n, i;
                     return e + (null !== (i = null === (n = t.count_details) || void 0 === n ? void 0 : n.vote) && void 0 !== i ? i : 0)
                 }, 0)
+            }
+
+            function D(e, t, n) {
+                var i, r;
+                let a = d.default.getMessage(t, e);
+                if (null == a) return "";
+                let c = a.getReaction({
+                        id: n,
+                        name: "",
+                        animated: !1
+                    }),
+                    _ = null !== (r = null == c ? void 0 : null === (i = c.count_details) || void 0 === i ? void 0 : i.vote) && void 0 !== r ? r : 0,
+                    E = function(e, t) {
+                        let n = e.getChannelId(),
+                            i = u.default.getReactions(n, e.id, {
+                                id: t,
+                                name: "",
+                                animated: !1
+                            }, g.VOTES_TOOLTIP_MAX_USERS, o.ReactionTypes.VOTE),
+                            r = l.default.getChannel(n),
+                            a = null == r || r.isPrivate() ? null : r.getGuildId();
+                        return s(i).reject(e => f.default.isBlocked(e.id)).take(g.VOTES_TOOLTIP_MAX_USERS).map(e => h.default.getName(a, null == r ? void 0 : r.id, e)).value()
+                    }(a, n);
+                return 0 === E.length ? "" : function(e, t) {
+                    let n = Math.max(0, t - e.length);
+                    if (1 === e.length) return n > 0 ? p.default.Messages.POLL_VOTES_TOOLTIP_1_N.format({
+                        a: e[0],
+                        n: n
+                    }) : e[0];
+                    if (2 === e.length) return n > 0 ? p.default.Messages.POLL_VOTES_TOOLTIP_2_N.format({
+                        a: e[0],
+                        b: e[1],
+                        n: n
+                    }) : p.default.Messages.POLL_VOTES_TOOLTIP_2.format({
+                        a: e[0],
+                        b: e[1]
+                    });
+                    if (3 !== e.length) return p.default.Messages.POLL_VOTES_TOOLTIP_N.format({
+                        n: n
+                    });
+                    else return n > 0 ? p.default.Messages.POLL_VOTES_TOOLTIP_3_N.format({
+                        a: e[0],
+                        b: e[1],
+                        c: e[2],
+                        n: n
+                    }) : p.default.Messages.POLL_VOTES_TOOLTIP_3.format({
+                        a: e[0],
+                        b: e[1],
+                        c: e[2]
+                    })
+                }(E, _)
             }
         },
         552310: function(e, t, n) {
@@ -92824,6 +92922,305 @@
             }), n("222007"), (r = i || (i = {}))[r.CROSS_PLATFORM = 0] = "CROSS_PLATFORM", r[r.XBOX = 1] = "XBOX", r[r.PLAYSTATION = 2] = "PLAYSTATION", r[r.SWITCH = 3] = "SWITCH", r[r.PC = 4] = "PC";
             let o = new Set(Object.values(i).filter(e => "number" == typeof e));
             (a = s || (s = {}))[a.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", a[a.QUEST_BAR = 1] = "QUEST_BAR", a[a.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", a[a.QUESTS_EMBED = 3] = "QUESTS_EMBED", a[a.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", a[a.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM"
+        },
+        166257: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ReactionLocations: function() {
+                    return s
+                },
+                getReactors: function() {
+                    return I
+                },
+                addReaction: function() {
+                    return C
+                },
+                playBurstReaction: function() {
+                    return A
+                },
+                removeAllReactions: function() {
+                    return y
+                },
+                removeEmojiReactions: function() {
+                    return N
+                },
+                removeReaction: function() {
+                    return R
+                },
+                removeReactionWithConfirmation: function() {
+                    return D
+                }
+            });
+            var i, s, r = n("872717"),
+                a = n("819855"),
+                o = n("913144"),
+                l = n("404118"),
+                u = n("875978"),
+                d = n("263024"),
+                c = n("271938"),
+                f = n("377253"),
+                _ = n("659500"),
+                h = n("718517"),
+                E = n("402671"),
+                g = n("61069"),
+                m = n("49111"),
+                p = n("782340");
+
+            function S(e, t, n) {
+                let {
+                    status: i,
+                    body: s
+                } = e;
+                if (429 === i) return setTimeout(t, e.body.retry_after * h.default.Millis.SECOND), !1;
+                if (403 === i) switch (s && s.code) {
+                    case m.AbortCodes.TOO_MANY_REACTIONS:
+                        l.default.show({
+                            title: p.default.Messages.TOO_MANY_REACTIONS_ALERT_HEADER,
+                            body: p.default.Messages.TOO_MANY_REACTIONS_ALERT_BODY,
+                            confirmText: p.default.Messages.OKAY
+                        });
+                        break;
+                    case m.AbortCodes.REACTION_BLOCKED:
+                        _.ComponentDispatch.dispatch(m.ComponentActions.SHAKE_APP, {
+                            duration: 200,
+                            intensity: 2
+                        })
+                } else if (!n.isRetry) return t(), !1;
+                return !0
+            }
+
+            function v(e, t, n, i, s) {
+                var r, a;
+                o.default.dispatch({
+                    type: e,
+                    channelId: t,
+                    messageId: n,
+                    userId: null !== (r = null == s ? void 0 : s.userId) && void 0 !== r ? r : c.default.getId(),
+                    emoji: i,
+                    optimistic: !0,
+                    colors: null !== (a = null == s ? void 0 : s.colors) && void 0 !== a ? a : [],
+                    reactionType: (null == s ? void 0 : s.burst) ? u.ReactionTypes.BURST : u.ReactionTypes.NORMAL
+                })
+            }
+
+            function T(e) {
+                let {
+                    channelId: t,
+                    messageId: n,
+                    emoji: i,
+                    userId: s,
+                    useTypeEndpoint: r = !1,
+                    type: a = u.ReactionTypes.NORMAL
+                } = e, o = null != i.id ? "".concat(i.name, ":").concat(i.id) : i.name;
+                return null == s ? m.Endpoints.REACTIONS(t, n, o) : r ? m.Endpoints.REACTION_WITH_TYPE(t, n, o, s, a) : m.Endpoints.REACTION(t, n, o, s)
+            }(i = s || (s = {})).MESSAGE = "Message", i.FORUM_TOOLBAR = "Forum Toolbar", i.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer";
+            async function I(e) {
+                let {
+                    channelId: t,
+                    messageId: n,
+                    emoji: i,
+                    limit: s,
+                    after: a,
+                    type: l
+                } = e, d = l === u.ReactionTypes.VOTE ? function(e, t, n) {
+                    var i;
+                    let s = null !== (i = n.id) && void 0 !== i ? i : n.name;
+                    return m.Endpoints.POLL_ANSWER_VOTERS(e, t, s)
+                }(t, n, i) : T({
+                    channelId: t,
+                    messageId: n,
+                    emoji: i
+                }), c = await r.default.get({
+                    url: d,
+                    query: {
+                        limit: s,
+                        after: a,
+                        type: l
+                    },
+                    oldFormErrors: !0
+                }), f = l === u.ReactionTypes.VOTE ? c.body.users : c.body;
+                return o.default.dispatch({
+                    type: "MESSAGE_REACTION_ADD_USERS",
+                    channelId: t,
+                    messageId: n,
+                    users: f,
+                    emoji: i,
+                    reactionType: l
+                }), f
+            }
+            async function C(e, t, n) {
+                let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "Message",
+                    s = arguments.length > 4 ? arguments[4] : void 0,
+                    o = null != s && !!s.burst,
+                    c = null != s && !!s.isRetry;
+                if (!c && function(e, t, n, i) {
+                        let s = f.default.getMessage(e, t);
+                        return null != s && s.userHasReactedWithEmoji(n, i)
+                    }(e, t, n, o)) {
+                    l.default.show({
+                        title: p.default.Messages.EMOJI_PICKER_DOUBLE_REACTION_SUPER_ERROR_TITLE,
+                        body: p.default.Messages.EMOJI_PICKER_DOUBLE_REACTION_SUPER_ERROR_BODY,
+                        confirmText: p.default.Messages.GOT_IT
+                    });
+                    return
+                }
+                let _ = await O(n, o);
+                v("MESSAGE_REACTION_ADD", e, t, n, {
+                    burst: o,
+                    colors: _
+                }), await d.default.unarchiveThreadIfNecessary(e), r.default.put({
+                    url: T({
+                        channelId: e,
+                        messageId: t,
+                        emoji: n,
+                        userId: "@me"
+                    }),
+                    query: {
+                        location: i,
+                        type: o ? u.ReactionTypes.BURST : u.ReactionTypes.NORMAL
+                    },
+                    oldFormErrors: !0
+                }).then(() => {
+                    o ? (a.AccessibilityAnnouncer.announce(p.default.Messages.BURST_REACTION_ADD_UNLIMITED_SUCCESS_A11Y.format({
+                        name: n.name
+                    })), g.default.triggerFullscreenAnimation({
+                        channelId: e,
+                        messageId: t,
+                        emoji: {
+                            ...n,
+                            animated: !1
+                        }
+                    })) : a.AccessibilityAnnouncer.announce(p.default.Messages.REACTION_ADD_SUCCESS_A11Y.format({
+                        name: n.name
+                    }))
+                }).catch(s => {
+                    S(s, () => C(e, t, n, i, {
+                        burst: o,
+                        isRetry: !0
+                    }), {
+                        isRetry: c
+                    }) && (v("MESSAGE_REACTION_REMOVE", e, t, n, {
+                        burst: o
+                    }), o ? a.AccessibilityAnnouncer.announce(p.default.Messages.BURST_REACTION_ADD_UNLIMITED_ERROR_A11Y.format({
+                        name: n.name
+                    })) : a.AccessibilityAnnouncer.announce(p.default.Messages.REACTION_ADD_ERROR_A11Y.format({
+                        name: n.name
+                    })))
+                })
+            }
+
+            function A(e) {
+                let {
+                    channelId: t,
+                    messageId: n,
+                    emoji: i,
+                    key: s
+                } = e;
+                o.default.dispatch({
+                    type: "BURST_REACTION_EFFECT_PLAY",
+                    channelId: t,
+                    messageId: n,
+                    emoji: i,
+                    key: s
+                })
+            }
+            async function y(e, t, n) {
+                let i = null != n && !!n.isRetry;
+                await d.default.unarchiveThreadIfNecessary(e), r.default.delete({
+                    url: m.Endpoints.REMOVE_REACTIONS(e, t),
+                    oldFormErrors: !0
+                }).catch(n => {
+                    S(n, () => y(e, t, {
+                        isRetry: !0
+                    }), {
+                        isRetry: i
+                    })
+                })
+            }
+            async function N(e, t, n, i) {
+                let s = null != i && !!i.isRetry;
+                await d.default.unarchiveThreadIfNecessary(e);
+                let a = null === n.id ? n.name : "".concat(n.name, ":").concat(n.id);
+                r.default.delete({
+                    url: m.Endpoints.REMOVE_EMOJI_REACTIONS(e, t, a),
+                    oldFormErrors: !0
+                }).catch(i => {
+                    S(i, () => N(e, t, n, {
+                        isRetry: !0
+                    }), {
+                        isRetry: s
+                    })
+                })
+            }
+            async function R(e, t, n, i) {
+                let s = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "Message",
+                    o = arguments.length > 5 ? arguments[5] : void 0,
+                    l = null != o && !!o.burst,
+                    c = null != o && !!o.isRetry;
+                v("MESSAGE_REACTION_REMOVE", e, t, n, {
+                    userId: i,
+                    burst: l
+                }), await d.default.unarchiveThreadIfNecessary(e), r.default.delete({
+                    url: T({
+                        channelId: e,
+                        messageId: t,
+                        emoji: n,
+                        userId: null != i ? i : "@me",
+                        type: l ? u.ReactionTypes.BURST : u.ReactionTypes.NORMAL,
+                        useTypeEndpoint: !0
+                    }),
+                    query: {
+                        location: s,
+                        burst: l
+                    },
+                    oldFormErrors: !0
+                }).then(() => {
+                    (null == o ? void 0 : o.burst) ? a.AccessibilityAnnouncer.announce(p.default.Messages.BURST_REACTION_REMOVE_SUCCESS_A11Y.format({
+                        name: n.name
+                    })): a.AccessibilityAnnouncer.announce(p.default.Messages.REACTION_REMOVE_SUCCESS_A11Y.format({
+                        name: n.name
+                    }))
+                }).catch(async r => {
+                    if (S(r, () => R(e, t, n, i, s, {
+                            burst: l,
+                            isRetry: !0
+                        }), {
+                            isRetry: c
+                        })) {
+                        let s = await O(n, l);
+                        v("MESSAGE_REACTION_ADD", e, t, n, {
+                            userId: i,
+                            burst: l,
+                            colors: s
+                        }), (null == o ? void 0 : o.burst) ? a.AccessibilityAnnouncer.announce(p.default.Messages.BURST_REACTION_REMOVE_ERROR_A11Y.format({
+                            name: n.name
+                        })) : a.AccessibilityAnnouncer.announce(p.default.Messages.REACTION_REMOVE_ERROR_A11Y.format({
+                            name: n.name
+                        }))
+                    }
+                })
+            }
+            async function O(e, t) {
+                let n = [];
+                if (t) try {
+                    n = await (0, E.getEmojiColors)(e)
+                } catch {}
+                return n
+            }
+
+            function D(e) {
+                let {
+                    channelId: t,
+                    messageId: n,
+                    emoji: i,
+                    reactionType: s,
+                    userId: r,
+                    location: a
+                } = e, o = s === u.ReactionTypes.BURST;
+                R(t, n, i, r, a, {
+                    burst: o
+                })
+            }
         },
         432173: function(e, t, n) {
             "use strict";
@@ -113399,6 +113796,81 @@
                 }
             })
         },
+        486996: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return h
+                }
+            });
+            var i = n("446674"),
+                s = n("913144"),
+                r = n("267567"),
+                a = n("166257"),
+                o = n("766274"),
+                l = n("42203"),
+                u = n("697218");
+            let d = {};
+            class c {
+                static ensure(e, t, n) {
+                    var i, s;
+                    let r = "".concat(e, ":").concat(t.name, ":").concat(null !== (i = t.id) && void 0 !== i ? i : "", ":").concat(n);
+                    return d[r] = null !== (s = d[r]) && void 0 !== s ? s : new c
+                }
+                constructor() {
+                    this.fetched = !1, this.users = {}
+                }
+            }
+
+            function f(e) {
+                let {
+                    type: t,
+                    messageId: n,
+                    userId: i,
+                    emoji: s,
+                    reactionType: r
+                } = e, a = c.ensure(n, s, r);
+                if ("MESSAGE_REACTION_ADD" === t) {
+                    let e = u.default.getUser(i);
+                    null != e && (a.users[i] = e)
+                } else delete a.users[i]
+            }
+            class _ extends i.default.Store {
+                getReactions(e, t, n, i, s) {
+                    let o = c.ensure(t, n, s);
+                    if (!o.fetched) {
+                        let u = l.default.getChannel(e),
+                            d = null != u ? u.getGuildId() : null;
+                        if (null != d && r.default.isLurking(d)) return;
+                        a.getReactors({
+                            channelId: e,
+                            messageId: t,
+                            emoji: n,
+                            limit: i,
+                            type: s
+                        }), o.fetched = !0
+                    }
+                    return o.users
+                }
+            }
+            _.displayName = "MessageReactionsStore";
+            var h = new _(s.default, {
+                CONNECTION_OPEN: function() {
+                    d = {}
+                },
+                MESSAGE_REACTION_ADD: f,
+                MESSAGE_REACTION_REMOVE: f,
+                MESSAGE_REACTION_ADD_USERS: function(e) {
+                    let {
+                        messageId: t,
+                        users: n,
+                        emoji: i,
+                        reactionType: s
+                    } = e, r = c.ensure(t, i, s);
+                    n.forEach(e => r.users[e.id] = new o.default(e))
+                }
+            })
+        },
         377253: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -120961,160 +121433,161 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return I
                 }
             }), n("222007"), n("424973");
             var i = n("446674"),
                 s = n("913144"),
                 r = n("797647"),
                 a = n("117362"),
-                o = n("49111"),
-                l = n("646718");
-            let u = {},
-                d = {},
-                c = new Set,
+                o = n("299039"),
+                l = n("49111"),
+                u = n("646718");
+            let d = {},
+                c = {},
                 f = new Set,
-                _ = {},
-                h = {};
+                _ = new Set,
+                h = {},
+                E = {};
 
-            function E(e) {
+            function g(e) {
                 let t = e.skuId;
-                u[e.id] = e;
-                let n = e.prices[o.PriceSetAssignmentPurchaseTypes.DEFAULT];
+                d[e.id] = e;
+                let n = e.prices[l.PriceSetAssignmentPurchaseTypes.DEFAULT];
                 if (null != n) {
                     var i;
                     let t = new Set(Object.keys(n.paymentSourcePrices));
-                    _[e.id] = t;
-                    let s = Array.from(null !== (i = h[e.skuId]) && void 0 !== i ? i : new Set);
-                    h[e.skuId] = new Set([...s, ...Array.from(t)])
+                    h[e.id] = t;
+                    let s = Array.from(null !== (i = E[e.skuId]) && void 0 !== i ? i : new Set);
+                    E[e.skuId] = new Set([...s, ...Array.from(t)])
                 }
-                let s = d[t];
-                null != s ? s.add(e.id) : d[t] = new Set([e.id])
+                let s = c[t];
+                null != s ? s.add(e.id) : c[t] = new Set([e.id])
             }
 
-            function g() {
-                [(0, l.SubscriptionPlanInfo)[l.SubscriptionPlans.NONE_MONTH], (0, l.SubscriptionPlanInfo)[l.SubscriptionPlans.NONE_YEAR], (0, l.SubscriptionPlanInfo)[l.SubscriptionPlans.NONE_3_MONTH], (0, l.SubscriptionPlanInfo)[l.SubscriptionPlans.NONE_6_MONTH]].forEach(e => E(r.default.createFromServer({
+            function m() {
+                [(0, u.SubscriptionPlanInfo)[u.SubscriptionPlans.NONE_MONTH], (0, u.SubscriptionPlanInfo)[u.SubscriptionPlans.NONE_YEAR], (0, u.SubscriptionPlanInfo)[u.SubscriptionPlans.NONE_3_MONTH], (0, u.SubscriptionPlanInfo)[u.SubscriptionPlans.NONE_6_MONTH]].forEach(e => g(r.default.createFromServer({
                     id: e.id,
                     name: e.name,
                     interval: e.interval,
                     interval_count: e.intervalCount,
                     tax_inclusive: !0,
                     sku_id: e.skuId,
-                    currency: o.CurrencyCodes.USD,
+                    currency: l.CurrencyCodes.USD,
                     price: 0,
                     price_tier: 0,
                     discount_price: null
                 })))
             }
 
-            function m(e) {
-                E(r.default.createFromServer(e))
+            function p(e) {
+                g(r.default.createFromServer(e))
             }
-            g();
+            m();
 
-            function p() {
-                (0, a.clearObject)(u), (0, a.clearObject)(d), c.clear(), f.clear(), (0, a.clearObject)(_), (0, a.clearObject)(h), g()
+            function S() {
+                (0, a.clearObject)(d), (0, a.clearObject)(c), f.clear(), _.clear(), (0, a.clearObject)(h), (0, a.clearObject)(E), m()
             }
-            let S = [l.SubscriptionIntervalTypes.DAY, l.SubscriptionIntervalTypes.MONTH, l.SubscriptionIntervalTypes.YEAR];
-            class v extends i.default.Store {
+            let v = [u.SubscriptionIntervalTypes.DAY, u.SubscriptionIntervalTypes.MONTH, u.SubscriptionIntervalTypes.YEAR];
+            class T extends i.default.Store {
                 getPlanIdsForSkus(e) {
                     let t = [];
                     for (let i of e) {
                         var n;
-                        let e = Array.from(null !== (n = d[i]) && void 0 !== n ? n : new Set);
+                        let e = Array.from(null !== (n = c[i]) && void 0 !== n ? n : new Set);
                         e.sort((e, t) => {
-                            let n = u[e],
-                                i = u[t];
-                            return S.indexOf(n.interval) - S.indexOf(i.interval) || n.intervalCount - i.intervalCount
+                            let n = d[e],
+                                i = d[t];
+                            return v.indexOf(n.interval) - v.indexOf(i.interval) || n.intervalCount - i.intervalCount
                         }), t.push(...e)
                     }
                     return t
                 }
                 getFetchedSKUIDs() {
-                    return Object.keys(d)
+                    return o.default.keys(c)
                 }
                 getForSKU(e) {
                     var t;
-                    return Array.from(null !== (t = d[e]) && void 0 !== t ? t : []).map(e => u[e])
+                    return Array.from(null !== (t = c[e]) && void 0 !== t ? t : []).map(e => d[e])
                 }
                 getForSkuAndInterval(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
                     return this.getForSKU(e).find(e => e.interval === t && e.intervalCount === n)
                 }
                 get(e) {
-                    return u[e]
+                    return d[e]
                 }
                 isFetchingForSKU(e) {
-                    return c.has(e)
+                    return f.has(e)
                 }
                 isFetchingForSKUs(e) {
                     return e.some(e => this.isFetchingForSKU(e))
                 }
                 isLoadedForSKU(e) {
-                    return !!f.has(e) || !c.has(e) && null != d[e]
+                    return !!_.has(e) || !f.has(e) && null != c[e]
                 }
                 isLoadedForSKUs(e) {
                     return e.every(e => this.isLoadedForSKU(e))
                 }
                 isFetchingForPremiumSKUs() {
-                    return l.ACTIVE_PREMIUM_SKUS.map(e => this.isFetchingForSKU(e)).includes(!0)
+                    return u.ACTIVE_PREMIUM_SKUS.map(e => this.isFetchingForSKU(e)).includes(!0)
                 }
                 isLoadedForPremiumSKUs() {
-                    return l.ACTIVE_PREMIUM_SKUS.every(e => this.isLoadedForSKU(e))
+                    return u.ACTIVE_PREMIUM_SKUS.every(e => this.isLoadedForSKU(e))
                 }
                 ignoreSKUFetch(e) {
-                    f.add(e)
+                    _.add(e)
                 }
                 getPaymentSourcesForPlanId(e) {
-                    return _.hasOwnProperty(e) ? _[e] : null
+                    return h.hasOwnProperty(e) ? h[e] : null
                 }
                 getPaymentSourceIds() {
                     let e = new Set;
-                    return Object.values(_).forEach(t => t.forEach(t => e.add(t))), e
+                    return Object.values(h).forEach(t => t.forEach(t => e.add(t))), e
                 }
                 hasPaymentSourceForSKUId(e, t) {
-                    return l.PremiumSubscriptionSKUs.NONE === t || null != h[t] && h[t].has(e)
+                    return u.PremiumSubscriptionSKUs.NONE === t || null != E[t] && E[t].has(e)
                 }
                 hasPaymentSourceForSKUIds(e, t) {
                     let n = t.every(t => this.hasPaymentSourceForSKUId(e, t));
                     return n
                 }
             }
-            v.displayName = "SubscriptionPlanStore";
-            var T = new v(s.default, {
+            T.displayName = "SubscriptionPlanStore";
+            var I = new T(s.default, {
                 SUBSCRIPTION_PLANS_FETCH: function(e) {
                     let {
                         skuId: t
                     } = e;
-                    c.add(t)
+                    f.add(t)
                 },
                 SUBSCRIPTION_PLANS_FETCH_SUCCESS: function(e) {
                     let {
                         skuId: t,
                         subscriptionPlans: n
                     } = e;
-                    d[t] = new Set, h[t] = new Set, n.forEach(m), c.delete(t), f.delete(t)
+                    c[t] = new Set, E[t] = new Set, n.forEach(p), f.delete(t), _.delete(t)
                 },
                 SUBSCRIPTION_PLANS_FETCH_FAILURE: function(e) {
                     let {
                         skuId: t
                     } = e;
-                    c.delete(t), f.delete(t)
+                    f.delete(t), _.delete(t)
                 },
-                SUBSCRIPTION_PLANS_RESET: p,
+                SUBSCRIPTION_PLANS_RESET: S,
                 GIFT_CODE_RESOLVE_SUCCESS: function(e) {
                     let {
                         giftCode: t
                     } = e;
-                    null != t.subscription_plan && m(t.subscription_plan)
+                    null != t.subscription_plan && p(t.subscription_plan)
                 },
                 ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: function(e) {
                     let {
                         entitlements: t
                     } = e;
-                    for (let e of t) null != e.subscription_plan && m(e.subscription_plan)
+                    for (let e of t) null != e.subscription_plan && p(e.subscription_plan)
                 },
-                LOGOUT: p
+                LOGOUT: S
             })
         },
         521012: function(e, t, n) {
@@ -124062,7 +124535,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "e437335b11ad3fcb02ce91943feb6182b27ade2f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "c3f0b04ab150499182753d633ef246beed7c9368"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133372,7 +133845,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272535"
+                                build_number: "272625"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -134427,8 +134900,11 @@
                 getPremiumSkuIdForSubscription: function() {
                     return eP
                 },
-                default: function() {
+                castPremiumSubscriptionAsSkuId: function() {
                     return eL
+                },
+                default: function() {
+                    return eM
                 }
             }), n("70102"), n("222007"), n("843762"), n("808653"), n("424973");
             var i, s, r, a, o = n("627445"),
@@ -135022,7 +135498,7 @@
             }
 
             function et(e) {
-                let t = p.default.getPlanIdsForSkus([D.PremiumSubscriptionSKUs.GUILD]);
+                let t = p.default.getPlanIdsForSkus([eL(D.PremiumSubscriptionSKUs.GUILD)]);
                 l(null != t, "Missing guildSubscriptionPlanIds");
                 let n = e.find(e => {
                     let {
@@ -135160,7 +135636,7 @@
                         }
                     }), t
                 }
-                let a = p.default.getForSkuAndInterval(D.PremiumSubscriptionSKUs.GUILD, r.interval, r.intervalCount);
+                let a = p.default.getForSkuAndInterval(eL(D.PremiumSubscriptionSKUs.GUILD), r.interval, r.intervalCount);
                 if (null == a) {
                     let t = Error("Unsupported plan");
                     throw (0, v.captureBillingException)(t, {
@@ -135431,7 +135907,11 @@
                     n = null != t ? $(t.planId) : null;
                 return n
             }
-            var eL = Object.freeze({
+
+            function eL(e) {
+                return e
+            }
+            var eM = Object.freeze({
                 isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < 2592e6,
                 isPremiumAtLeast: A.isPremiumAtLeast,
                 isPremium: A.isPremium,
@@ -135626,6 +136106,7 @@
                             return O.Gradients.PREMIUM_TIER_2
                     }
                 },
+                castPremiumSubscriptionAsSkuId: eL,
                 canUseAnimatedEmojis: function(e) {
                     return (0, f.canUserUse)(f.ANIMATED_EMOJIS, e)
                 },
@@ -150943,4 +151424,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.7eda77f18baa1be8df17.js.map
+//# sourceMappingURL=29062.3ada71f66541d868cf72.js.map

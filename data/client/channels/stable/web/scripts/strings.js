@@ -35,6 +35,12 @@
                 TRY_AGAIN: "Try Again",
                 EMAIL_VERIFICATION_INSTRUCTIONS_HEADER: "Instructions Sent",
                 EMAIL_VERIFICATION_INSTRUCTIONS_BODY: "\nWe sent instructions to change your password to **!!{email}!!**, please check both your inbox and spam folder.\n  ",
+                STAGE_VOICE_CHANNEL_TYPE: "Stage",
+                STORE_CHANNEL_TYPE: "Store",
+                NEWS_CHANNEL_TYPE: "Announcement",
+                VOICE_CHANNEL_TYPE: "Voice",
+                FORUM_CHANNEL_TYPE: "Forum",
+                TEXT_CHANNEL_TYPE: "Text",
                 HELP: "Help",
                 GOT_IT: "Got It",
                 ALL_DONE: "All done",
@@ -10266,10 +10272,9 @@
                 MJ_CHATBAR_BODY: "Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.",
                 APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
                 INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
-                APPLICATION_ADD_TO_SERVER: "Add to Server",
                 APPLICATION_ADD_BUTTON: "Add App",
-                APPLICATION_ADD_TO_SERVER_ACTIONS: "Add to Server Actions",
-                APPLICATION_ADD_TO_SERVER_ACTIONS_COPY: "Copy Add to Server URL",
+                APPLICATION_ADD_BUTTON_ACTIONS: "Add App Actions",
+                APPLICATION_ADD_BUTTON_ACTIONS_COPY: "Copy Add App URL",
                 COMMANDS_SCOPE_MIGRATION_OVERVIEW_TOOLTIP: "Members can't use this bot until you turn on permissions.",
                 COMMANDS_SCOPE_MIGRATION_TOGGLE_TOOLTIP: "Flip this switch to enable {botName}'s commands for everyone! Read more about command permissions [here.]({link})",
                 COMMANDS_SCOPE_MIGRATION_ADMIN_NOTICE: "Commands have been enabled for apps in your server. Customize permissions in **Server Settings > Integrations**.",
@@ -16713,6 +16718,12 @@
                 POLL_ANSWER_VOTES_MODAL_TITLE: "Votes",
                 POLL_TAP_FOR_VOTERS_A11Y_ANDROID: "Reveal voters",
                 POLL_TAP_FOR_VOTERS_A11Y_IOS: "Reveals voters",
+                POLL_VOTES_TOOLTIP_1_N: "!!{a}!! and {n, plural, one {1 other} other {{n} others}}",
+                POLL_VOTES_TOOLTIP_2: "!!{a}!! and !!{b}!!",
+                POLL_VOTES_TOOLTIP_2_N: "!!{a}!!, !!{b}!!, and {n, plural, one {1 other} other {{n} others}}",
+                POLL_VOTES_TOOLTIP_3: "!!{a}!!, !!{b}!!, and !!{c}!!",
+                POLL_VOTES_TOOLTIP_3_N: "!!{a}!!, !!{b}!!, !!{c}!!, and {n, plural, one {1 other} other {{n} others}}",
+                POLL_VOTES_TOOLTIP_N: "{n, plural, one {1 person} other {{n} people}}",
                 CREATE_POLL: "Create Poll",
                 CREATE_POLL_HEADING: "Create a Poll",
                 CREATE_POLL_EXPIRATION: "Poll will be live for 24 hours",
@@ -16744,8 +16755,11 @@
                 CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_CTA_EXIT: "Exit",
                 CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_BACK_TO_EDITING: "Back to editing",
                 CREATE_POLL_REMOVE_ANSWER: "Remove Answer",
+                CREATE_POLL_REMOVE_EMOJI: "Remove Emoji",
                 CREATE_POLL_ADD_IMAGE: "Add Media",
+                CREATE_POLL_ADD_EMOJI: "Add Emoji",
                 CREATE_POLL_REPLACE_IMAGE: "Replace Media",
+                CREATE_POLL_REPLACE_EMOJI: "Replace Emoji",
                 CREATE_POLL_POLL_ANSWER: "Poll Answer",
                 CREATE_POLL_EDIT_ALT_TEXT: "Edit Image Description (Alt Text)",
                 CREATE_POLL_EDIT_IMAGE_DESCRIPTION: "Edit Image Description",
@@ -17033,12 +17047,6 @@
                 USER_SETTINGS_OTHER_QUICK_ACTIONS: "Other Actions",
                 USER_SETTINGS_QUICK_ACTION_FORCE_NEW_USER_ONBOARDING: "Force new user onboarding flow",
                 BETA: "Beta",
-                STAGE_VOICE_CHANNEL_TYPE: "Stage",
-                STORE_CHANNEL_TYPE: "Store",
-                NEWS_CHANNEL_TYPE: "Announcement",
-                VOICE_CHANNEL_TYPE: "Voice",
-                FORUM_CHANNEL_TYPE: "Forum",
-                TEXT_CHANNEL_TYPE: "Text",
                 BAN_MULTIPLE_CONFIRM_TITLE: "Would you like to ban {count, plural, one {1 member} other {{count} members}}?",
                 BAN_MULTIPLE_SUCCESS_TOAST: "Mass ban succesful",
                 BAN_MULTIPLE_FAILED_TOAST: "Mass ban failed",
@@ -17198,6 +17206,10 @@
                 PACKAGE_ITEM_7_NAME: "Glitterbomb",
                 PACKAGE_ITEM_8_NAME: "Empty Envelope",
                 PACKAGE_ITEM_9_NAME: "Birthday Card",
+                PACKAGES_PACKAGES_OPENED: "Your Packages Opened",
+                PACKAGES_UNIQUE_PACKAGES_OPENED: "Packages Received",
+                PACKAGES_GLOBAL_PACKAGES_OPENED: "Total Packages Opened",
+                PACKAGES_OPENED_OUT_OF: "{count, number} / {total, number}",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
             })
         },
@@ -18391,7 +18403,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272535", ", Version Hash: ").concat("e437335b11ad3fcb02ce91943feb6182b27ade2f")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272625", ", Version Hash: ").concat("c3f0b04ab150499182753d633ef246beed7c9368")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20686,8 +20698,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "272535", "272535"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272535")), _ = 0), _
+                let _ = parseInt((e = "272625", "272625"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272625")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21522,7 +21534,19 @@
                 },
                 treatments: [{
                     id: 1,
-                    label: "Show feed",
+                    label: "Staff Test",
+                    config: {
+                        enabled: !0
+                    }
+                }, {
+                    id: 2,
+                    label: "Show feed by affinity",
+                    config: {
+                        enabled: !0
+                    }
+                }, {
+                    id: 3,
+                    label: "Show feed by heuristics",
                     config: {
                         enabled: !0
                     }
@@ -36229,4 +36253,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.d72afdb0ffc5279456d2.js.map
+//# sourceMappingURL=76039.23b1d777e382e4eacfeb.js.map

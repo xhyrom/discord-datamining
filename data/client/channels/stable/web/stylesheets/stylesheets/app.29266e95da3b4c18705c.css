@@ -27716,6 +27716,11 @@ html .progress__4ef76 {
     background-color: var(--background-accent)
 }
 
+.voterTooltip__04695 {
+    color: var(--text-muted);
+    font-weight: 400
+}
+
 .container__3ca24 {
     display: flex;
     flex-direction: column;
@@ -46123,8 +46128,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -80612,6 +80617,10 @@ input::-webkit-inner-spin-button {
     grid-gap: 16px;
     gap: 16px;
     padding: 16px 0
+}
+
+.productCard_eabca8 {
+    margin: 0 auto
 }
 
 .footer_c689c6 {
@@ -119065,6 +119074,28 @@ html .invoiceCancelRow_a8669b {
     transform: translate(-50%, -50%)
 }
 
+.stats__57223 {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
+    gap: 20px
+}
+
+.stat_b3e061 {
+    background-color: var(--background-tertiary);
+    box-shadow: var(--shadow-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px
+}
+
+.statText__18098 {
+    margin: 12px 0
+}
+
 .marketingUnsubscribeButton__72576 {
     align-self: flex-start;
     padding: 0
@@ -119909,7 +119940,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .itemDetail__846d8 {
-    background-color: var(--card-secondary-bg);
+    background-color: var(--bg-mod-strong);
     border-radius: var(--radius-md);
     cursor: pointer;
     height: -moz-max-content;
@@ -129032,4 +129063,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.392b3237bc3d7cf8e1cf.css.map*/
+/*# sourceMappingURL=app.29266e95da3b4c18705c.css.map*/

@@ -49,13 +49,13 @@
             "use strict";
             i.r(t), i.d(t, {
                 default: function() {
-                    return h
-                },
-                PaymentPortalBody: function() {
                     return m
                 },
+                PaymentPortalBody: function() {
+                    return h
+                },
                 PaymentPortalFooter: function() {
-                    return E
+                    return p
                 }
             });
             var r = i("37983"),
@@ -70,12 +70,12 @@
                 f = i("642906"),
                 S = i("304006");
 
-            function h(e) {
+            function m(e) {
                 var t, i, s, a, c, d;
                 let {
-                    header: h,
-                    isLargeModal: m,
-                    stepProps: E
+                    header: m,
+                    isLargeModal: h,
+                    stepProps: p
                 } = function(e) {
                     let {
                         header: t,
@@ -88,25 +88,25 @@
                         stepProps: r
                     }
                 }(e), {
-                    step: p,
+                    step: E,
                     stepConfigs: I,
                     setBodyNode: k,
                     setFooterNode: C,
                     setModalOverlayNode: v,
                     setReadySlideId: g
-                } = (0, f.usePaymentContext)(), y = I.find(e => e.key === p);
+                } = (0, f.usePaymentContext)(), y = I.find(e => e.key === E);
                 n.useEffect(() => {
                     v(null)
-                }, [p, v]), u(null != y, "Unknown step for current payment flow.");
+                }, [E, v]), u(null != y, "Unknown step for current payment flow.");
                 let _ = null !== (c = null == y ? void 0 : null === (t = y.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== c && c,
                     R = null == y ? void 0 : null === (i = y.options) || void 0 === i ? void 0 : i.bodyClassName,
-                    T = void 0 !== m && m ? S.sliderBodyLarge : null == y ? void 0 : null === (s = y.options) || void 0 === s ? void 0 : s.sliderBodyClassName;
+                    T = void 0 !== h && h ? S.sliderBodyLarge : null == y ? void 0 : null === (s = y.options) || void 0 === s ? void 0 : s.sliderBodyClassName;
                 return (0, r.jsxs)(r.Fragment, {
-                    children: [null === (d = null == y ? void 0 : null === (a = y.options) || void 0 === a ? void 0 : a.renderHeader) || void 0 === d || d ? h : null, y.renderStep(E), null == p || _ ? null : (0, r.jsxs)(r.Fragment, {
+                    children: [null === (d = null == y ? void 0 : null === (a = y.options) || void 0 === a ? void 0 : a.renderHeader) || void 0 === d || d ? m : null, y.renderStep(p), null == E || _ ? null : (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)(o.ModalContent, {
                             className: l(S.body, R),
                             children: (0, r.jsx)(o.Slides, {
-                                activeSlide: p,
+                                activeSlide: E,
                                 centered: !1,
                                 onSlideReady: e => g(e),
                                 children: I.filter(e => null != e.key).map(e => (0, r.jsx)(o.Slide, {
@@ -127,7 +127,7 @@
                 })
             }
 
-            function m(e) {
+            function h(e) {
                 let {
                     children: t
                 } = e, {
@@ -136,7 +136,7 @@
                 return null == i ? null : d.createPortal(t, i)
             }
 
-            function E(e) {
+            function p(e) {
                 let {
                     children: t
                 } = e, {
@@ -155,7 +155,7 @@
                     return E
                 },
                 useMaybeFetchPremiumLikelihood: function() {
-                    return p
+                    return I
                 }
             });
             var r = i("884691"),
@@ -166,11 +166,12 @@
                 u = i("697218"),
                 c = i("10514"),
                 d = i("764364"),
-                o = i("676572"),
-                f = i("646718"),
-                S = i("49111");
+                o = i("719923"),
+                f = i("676572"),
+                S = i("646718"),
+                m = i("49111");
             let h = "nonSubscriber";
-            async function m() {
+            async function p() {
                 try {
                     l.default.dispatch({
                         type: "BILLING_USER_PREMIUM_LIKELIHOOD_FETCH"
@@ -178,15 +179,15 @@
                     let {
                         body: e
                     } = await s.default.get({
-                        url: S.Endpoints.USER_PREMIUM_LIKELIHOOD
+                        url: m.Endpoints.USER_PREMIUM_LIKELIHOOD
                     });
                     l.default.dispatch({
                         type: "BILLING_USER_PREMIUM_LIKELIHOOD_FETCH_SUCCESS",
                         premiumLikelihood: function(e) {
                             return {
                                 [h]: e.non_subscriber,
-                                [f.PremiumSubscriptionSKUs.TIER_0]: e[f.PremiumSubscriptionSKUs.TIER_0],
-                                [f.PremiumSubscriptionSKUs.TIER_2]: e[f.PremiumSubscriptionSKUs.TIER_2]
+                                [S.PremiumSubscriptionSKUs.TIER_0]: e[S.PremiumSubscriptionSKUs.TIER_0],
+                                [S.PremiumSubscriptionSKUs.TIER_2]: e[S.PremiumSubscriptionSKUs.TIER_2]
                             }
                         }(e)
                     })
@@ -207,11 +208,11 @@
                     location: "443cca_1"
                 }, {
                     autoTrackExposure: !1
-                }), r = o.default.shouldFetchPremiumLikelihood(), n = u.default.getCurrentUser();
-                I(n, r, t, i)
+                }), r = f.default.shouldFetchPremiumLikelihood(), n = u.default.getCurrentUser();
+                k(n, r, t, i)
             }
 
-            function p(e) {
+            function I(e) {
                 let {
                     enabled: t,
                     useExpectedValue: i
@@ -219,14 +220,14 @@
                     location: "443cca_2"
                 }, {
                     autoTrackExposure: !1
-                }), s = (0, n.default)([o.default], () => o.default.shouldFetchPremiumLikelihood()), l = (0, n.default)([u.default], () => u.default.getCurrentUser());
+                }), s = (0, n.default)([f.default], () => f.default.shouldFetchPremiumLikelihood()), l = (0, n.default)([u.default], () => u.default.getCurrentUser());
                 r.useEffect(() => {
-                    I(l, s, t, i)
+                    k(l, s, t, i)
                 }, [l, s, t, i])
             }
 
-            function I(e, t, i, r) {
-                null != e && !(0, d.isPremium)(e) && i && (t && m(), r && (!c.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_0) && !c.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_0) && (0, a.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_0), !c.default.isLoadedForSKU(f.PremiumSubscriptionSKUs.TIER_2) && !c.default.isFetchingForSKU(f.PremiumSubscriptionSKUs.TIER_2) && (0, a.fetchSubscriptionPlansForSKU)(f.PremiumSubscriptionSKUs.TIER_2)))
+            function k(e, t, i, r) {
+                null != e && !(0, d.isPremium)(e) && i && (t && p(), r && (!c.default.isLoadedForSKU((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)) && !c.default.isFetchingForSKU((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)) && (0, a.fetchSubscriptionPlansForSKU)((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)), !c.default.isLoadedForSKU((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2)) && !c.default.isFetchingForSKU((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2)) && (0, a.fetchSubscriptionPlansForSKU)((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2))))
             }
         },
         676572: function(e, t, i) {
@@ -357,15 +358,15 @@
                 o = i("766274"),
                 f = i("341542"),
                 S = i("697218"),
-                h = i("271560"),
-                m = i("364685"),
-                E = i("49111"),
-                p = i("397336"),
+                m = i("271560"),
+                h = i("364685"),
+                p = i("49111"),
+                E = i("397336"),
                 I = i("782340");
             let k = async (e, t) => {
                 let {
                     body: i
-                } = await (0, h.httpGetWithCountryCodeQuery)(E.Endpoints.STICKER_PACK(e));
+                } = await (0, m.httpGetWithCountryCodeQuery)(p.Endpoints.STICKER_PACK(e));
                 return l.default.dispatch({
                     type: "STICKER_PACK_FETCH_SUCCESS",
                     packId: e,
@@ -376,7 +377,7 @@
                 let {
                     locale: e = c.default.locale
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                if (m.default.isFetchingStickerPacks || m.default.hasLoadedStickerPacks) return;
+                if (h.default.isFetchingStickerPacks || h.default.hasLoadedStickerPacks) return;
                 l.default.wait(() => {
                     l.default.dispatch({
                         type: "STICKER_PACKS_FETCH_START"
@@ -387,7 +388,7 @@
                         sticker_packs: t
                     }
                 } = await s.default.get({
-                    url: E.Endpoints.STICKER_PACKS,
+                    url: p.Endpoints.STICKER_PACKS,
                     query: {
                         locale: e
                     }
@@ -400,7 +401,7 @@
                 let {
                     body: t
                 } = await s.default.get({
-                    url: E.Endpoints.STICKER(e)
+                    url: p.Endpoints.STICKER(e)
                 });
                 l.default.dispatch({
                     type: "STICKER_FETCH_SUCCESS",
@@ -410,7 +411,7 @@
                 let {
                     body: t
                 } = await s.default.get({
-                    url: E.Endpoints.GUILD_STICKER_PACKS(e)
+                    url: p.Endpoints.GUILD_STICKER_PACKS(e)
                 });
                 l.default.dispatch({
                     type: "GUILD_STICKERS_FETCH_SUCCESS",
@@ -422,11 +423,11 @@
                 })
             }, y = async e => {
                 await s.default.delete({
-                    url: E.Endpoints.GUILD_STICKER(e.guild_id, e.id)
+                    url: p.Endpoints.GUILD_STICKER(e.guild_id, e.id)
                 })
             }, _ = async (e, t) => {
                 let i = await s.default.post({
-                    url: E.Endpoints.GUILD_STICKER_PACKS(e),
+                    url: p.Endpoints.GUILD_STICKER_PACKS(e),
                     body: t
                 });
                 return l.default.dispatch({
@@ -439,7 +440,7 @@
                 }), i.body
             }, R = async (e, t, i) => {
                 let r = await s.default.patch({
-                    url: E.Endpoints.GUILD_STICKER(e, t),
+                    url: p.Endpoints.GUILD_STICKER(e, t),
                     body: i
                 });
                 return r.body
@@ -463,22 +464,22 @@
             }
 
             function x(e) {
-                return f.default.totalUnavailableGuilds > 0 || !u.default.isConnected() ? e : e.filter(e => null != m.default.getStickerById(e))
+                return f.default.totalUnavailableGuilds > 0 || !u.default.isConnected() ? e : e.filter(e => null != h.default.getStickerById(e))
             }
 
             function A(e) {
-                d.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => (t.stickerIds = x(t.stickerIds), n.size(t.stickerIds) >= p.MAX_FAVORITES) ? (a.default.show({
+                d.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => (t.stickerIds = x(t.stickerIds), n.size(t.stickerIds) >= E.MAX_FAVORITES) ? (a.default.show({
                     title: I.default.Messages.FAVORITES_LIMIT_REACHED_TITLE,
                     body: I.default.Messages.FAVORITES_LIMIT_REACHED_BODY.format({
-                        count: p.MAX_FAVORITES
+                        count: E.MAX_FAVORITES
                     })
-                }), !1) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), p.UserSettingsDelay.INFREQUENT_USER_ACTION)
+                }), !1) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), E.UserSettingsDelay.INFREQUENT_USER_ACTION)
             }
 
             function P(e) {
                 d.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => {
                     t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = x(t.stickerIds)
-                }, p.UserSettingsDelay.INFREQUENT_USER_ACTION)
+                }, E.UserSettingsDelay.INFREQUENT_USER_ACTION)
             }
         },
         256860: function(e, t, i) {
@@ -526,19 +527,19 @@
                 o = i("697218"),
                 f = i("427459"),
                 S = i("991170"),
-                h = i("866353"),
-                m = i("467094"),
-                E = i("865372"),
-                p = i("364685"),
+                m = i("866353"),
+                h = i("467094"),
+                p = i("865372"),
+                E = i("364685"),
                 I = i("161585"),
                 k = i("24373"),
                 C = i("49111"),
                 v = i("782340");
             let g = e => {
                     T();
-                    let t = (0, n.useStateFromStores)([p.default], () => p.default.hasLoadedStickerPacks);
+                    let t = (0, n.useStateFromStores)([E.default], () => E.default.hasLoadedStickerPacks);
                     r.useEffect(() => {
-                        t && null == p.default.getStickerPack(e) && (0, m.fetchStickerPack)(e)
+                        t && null == E.default.getStickerPack(e) && (0, h.fetchStickerPack)(e)
                     }, [e, t])
                 },
                 y = e => {
@@ -559,10 +560,10 @@
                         let e = Math.floor((l - n + a) / (d + a)),
                             r = Math.floor(Math.max(a, (l - n - d * e) / (e - 1))),
                             S = [],
-                            h = [],
                             m = [],
-                            E = 0,
+                            h = [],
                             p = 0,
+                            E = 0,
                             C = 0;
                         if (0 !== l) {
                             let r = function(t, i) {
@@ -577,7 +578,7 @@
                                     y = t.length;
                                 null != n && a === n.id && l && t.length < (0, f.getTotalStickerCountForTier)(n.premiumTier) && y++;
                                 let _ = Math.ceil(y / e);
-                                h[p] = r ? 0 : _;
+                                m[E] = r ? 0 : _;
                                 for (let s = 0; s < _; s++) {
                                     let l = s * e,
                                         a = l + e,
@@ -585,32 +586,32 @@
                                             type: I.StickerGridItemTypes.STICKER,
                                             sticker: e,
                                             packId: (0, k.isStandardSticker)(e) ? e.pack_id : "TODO - fix",
-                                            gridSectionIndex: p,
-                                            rowIndex: E,
+                                            gridSectionIndex: E,
+                                            rowIndex: p,
                                             columnIndex: t,
                                             visibleRowIndex: C,
                                             category: i
                                         }));
-                                    p > g && p > d && null != n && y > t.length && u.push({
+                                    E > g && E > d && null != n && y > t.length && u.push({
                                         type: I.StickerGridItemTypes.CREATE_STICKER,
                                         guild_id: n.id,
                                         name: v.default.Messages.STICKER_PICKER_CREATE_STICKER_TITLE,
-                                        gridSectionIndex: p,
-                                        rowIndex: E,
+                                        gridSectionIndex: E,
+                                        rowIndex: p,
                                         columnIndex: u.length,
                                         visibleRowIndex: C
-                                    }), !r && (C++, m.push(u), S.push(u.length)), E++
+                                    }), !r && (C++, h.push(u), S.push(u.length)), p++
                                 }
-                                p++
+                                E++
                             };
                             if (null == i)
-                                for (let e of o) e.stickers.length > 0 ? (E++, r(e.stickers, e.type, (null == t ? void 0 : t.has(e.id)) === !0)) : e.type === I.StickerCategoryTypes.EMPTY_GUILD_UPSELL && (h[p] = 0, p++);
+                                for (let e of o) e.stickers.length > 0 ? (p++, r(e.stickers, e.type, (null == t ? void 0 : t.has(e.id)) === !0)) : e.type === I.StickerCategoryTypes.EMPTY_GUILD_UPSELL && (m[E] = 0, E++);
                             else i.sendable.length > 0 && r(i.sendable, I.StickerCategoryTypes.SEARCH_RESULTS), i.sendableWithPremium.length > 0 && r(i.sendableWithPremium, I.StickerCategoryTypes.SEARCH_RESULTS)
                         }
                         return {
-                            rowCount: E,
-                            rowCountBySection: h,
-                            stickersGrid: m,
+                            rowCount: p,
+                            rowCountBySection: m,
+                            stickersGrid: h,
                             gutterWidth: r,
                             columnCounts: S
                         }
@@ -618,20 +619,20 @@
                 },
                 R = e => {
                     let t = (0, n.useStateFromStores)([o.default], () => o.default.getCurrentUser());
-                    return (0, n.useStateFromStores)([p.default], () => {
-                        let i = p.default.getAllStickersIterator();
+                    return (0, n.useStateFromStores)([E.default], () => {
+                        let i = E.default.getAllStickersIterator();
                         for (let r of i)
-                            if ((0, h.isSendableSticker)(r, t, e)) return !0;
+                            if ((0, m.isSendableSticker)(r, t, e)) return !0;
                         return !1
                     }, [t, e])
                 },
                 T = () => {
                     r.useEffect(() => {
-                        (0, m.fetchStickerPacks)()
+                        (0, h.fetchStickerPacks)()
                     }, [])
                 },
                 L = e => {
-                    let t = (0, n.useStateFromStores)([p.default], () => p.default.getAllGuildStickers()),
+                    let t = (0, n.useStateFromStores)([E.default], () => E.default.getAllGuildStickers()),
                         i = (0, n.useStateFromStoresArray)([d.default, u.default], () => {
                             let e = d.default.getFlattenedGuildIds(),
                                 t = [];
@@ -686,7 +687,7 @@
 
             function P() {
                 let e = A(),
-                    t = (0, n.useStateFromStoresArray)([p.default], () => e.map(e => p.default.getStickerById(e)).filter(e => void 0 !== e), [e]);
+                    t = (0, n.useStateFromStoresArray)([E.default], () => e.map(e => E.default.getStickerById(e)).filter(e => void 0 !== e), [e]);
                 return t
             }
 
@@ -697,7 +698,7 @@
                             r = x;
                         return (null == i ? void 0 : null === (e = i.stickerFrecency) || void 0 === e ? void 0 : e.stickers) != null && (r = Object.keys(null == i ? void 0 : null === (t = i.stickerFrecency) || void 0 === t ? void 0 : t.stickers)), r
                     }(),
-                    t = (0, n.useStateFromStoresArray)([p.default], () => e.map(e => p.default.getStickerById(e)).filter(e => void 0 !== e), [e]);
+                    t = (0, n.useStateFromStoresArray)([E.default], () => e.map(e => E.default.getStickerById(e)).filter(e => void 0 !== e), [e]);
                 return t
             }
             let U = e => {
@@ -705,9 +706,9 @@
                         {
                             packs: i,
                             frequentlyUsedStickers: s
-                        } = (0, n.useStateFromStoresObject)([p.default, E.default], () => ({
-                            packs: p.default.getPremiumPacks(),
-                            frequentlyUsedStickers: E.default.stickerFrecencyWithoutFetchingLatest.frequently
+                        } = (0, n.useStateFromStoresObject)([E.default, p.default], () => ({
+                            packs: E.default.getPremiumPacks(),
+                            frequentlyUsedStickers: p.default.stickerFrecencyWithoutFetchingLatest.frequently
                         }), []),
                         l = (0, n.useStateFromStores)([o.default], () => o.default.getCurrentUser()),
                         a = L(e);
@@ -727,7 +728,7 @@
                                 stickers: null !== (r = null == s ? void 0 : s.filter(t => {
                                     if ((0, k.isGuildSticker)(t)) {
                                         var r, n;
-                                        return null !== (n = null === (r = p.default.getStickersByGuildId(t.guild_id)) || void 0 === r ? void 0 : r.some(e => e.id === t.id)) && void 0 !== n && n && (0, h.getStickerSendability)(t, l, e) !== h.StickerSendability.NONSENDABLE
+                                        return null !== (n = null === (r = E.default.getStickersByGuildId(t.guild_id)) || void 0 === r ? void 0 : r.some(e => e.id === t.id)) && void 0 !== n && n && (0, m.getStickerSendability)(t, l, e) !== m.StickerSendability.NONSENDABLE
                                     }
                                     if ((0, k.isStandardSticker)(t)) return i.some(e => e.id === t.pack_id)
                                 })) && void 0 !== r ? r : []
@@ -737,7 +738,7 @@
                 },
                 M = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                        i = (0, n.useStateFromStores)([p.default], () => p.default.getStickerById(e.id)),
+                        i = (0, n.useStateFromStores)([E.default], () => E.default.getStickerById(e.id)),
                         [s, l] = r.useState(!0),
                         [a, u] = r.useState(!1),
                         c = (0, k.isGuildSticker)(e) || (0, k.isStandardSticker)(e);
@@ -746,7 +747,7 @@
                             if (t && !c && null == i && s && !a) {
                                 l(!1);
                                 try {
-                                    await (0, m.fetchSticker)(e.id)
+                                    await (0, h.fetchSticker)(e.id)
                                 } catch {}
                                 u(!0)
                             }
@@ -780,10 +781,10 @@
                 o = i("290381"),
                 f = i("77078"),
                 S = i("206230"),
-                h = i("407063"),
-                m = i("54560"),
-                E = i("983782"),
-                p = i("866190"),
+                m = i("407063"),
+                h = i("54560"),
+                p = i("983782"),
+                E = i("866190"),
                 I = i("256860"),
                 k = i("161585"),
                 C = i("24373"),
@@ -831,7 +832,7 @@
                         },
                         children: [i ? (0, r.jsxs)("div", {
                             className: g.error,
-                            children: [(0, r.jsx)(m.default, {
+                            children: [(0, r.jsx)(h.default, {
                                 className: g.errorIcon
                             }), c && (0, r.jsx)(f.Text, {
                                 className: g.errorText,
@@ -855,22 +856,22 @@
                         className: o,
                         maskAsset: f,
                         positionRef: S,
-                        withLoadingIndicator: m,
-                        onError: E
-                    } = e, p = n.useRef(null), I = n.useRef(null), [k, y] = n.useState(!0), [_, R] = n.useState(!1), A = n.useRef(!1);
+                        withLoadingIndicator: h,
+                        onError: p
+                    } = e, E = n.useRef(null), I = n.useRef(null), [k, y] = n.useState(!0), [_, R] = n.useState(!1), A = n.useRef(!1);
                     A.current = t && d;
                     let P = null == a ? (0, C.getStickerAssetUrl)(l) : a;
                     return (u(null != P, "Unable to determine sticker asset URL. Sticker ID: ".concat(l.id)), n.useEffect(() => {
-                        if (null == p.current || null == P) return;
-                        let e = Math.min(2, (0, h.getDevicePixelRatio)());
-                        p.current.width = s * e, p.current.height = s * e;
+                        if (null == E.current || null == P) return;
+                        let e = Math.min(2, (0, m.getDevicePixelRatio)());
+                        E.current.width = s * e, E.current.height = s * e;
                         let t = !1,
                             r = async () => {
                                 let {
                                     default: e
                                 } = await i.el("619596").then(i.bind(i, "619596"));
-                                null != p.current && (I.current = new e({
-                                    canvas: p.current,
+                                null != E.current && (I.current = new e({
+                                    canvas: E.current,
                                     animationId: l.id,
                                     assetUrl: P,
                                     assetData: c,
@@ -878,7 +879,7 @@
                                         !t && y(!1)
                                     },
                                     onError: () => {
-                                        !t && (y(!1), R(!0), null == E || E())
+                                        !t && (y(!1), R(!0), null == p || p())
                                     }
                                 }), A.current && I.current.setState(!0))
                             };
@@ -886,7 +887,7 @@
                             var e;
                             null === (e = I.current) || void 0 === e || e.drop(), I.current = null, t = !0
                         }
-                    }, [P, s, l.id, c, E]), n.useEffect(() => {
+                    }, [P, s, l.id, c, p]), n.useEffect(() => {
                         var e;
                         let i;
                         !t && (i = 0), null === (e = I.current) || void 0 === e || e.setState(t && d, i)
@@ -900,10 +901,10 @@
                             isLoading: k,
                             maskAsset: f,
                             size: s,
-                            withLoadingIndicator: m,
+                            withLoadingIndicator: h,
                             children: T((0, r.jsx)("canvas", {
                                 className: g.lottieCanvas,
-                                ref: p
+                                ref: E
                             }), l.id)
                         })
                     })
@@ -919,11 +920,11 @@
                         positionRef: d,
                         withLoadingIndicator: f,
                         fileUri: S
-                    } = e, [h, m] = n.useState(!1), [E, p] = n.useState(!0), [I, k] = n.useState(!1), v = n.useRef(null), _ = n.useRef(null), R = null != S ? S : (0, C.getStickerAssetUrl)(i, {
-                        isPreview: !t || !h || !s,
+                    } = e, [m, h] = n.useState(!1), [p, E] = n.useState(!0), [I, k] = n.useState(!1), v = n.useRef(null), _ = n.useRef(null), R = null != S ? S : (0, C.getStickerAssetUrl)(i, {
+                        isPreview: !t || !m || !s,
                         size: a
                     }), A = n.useCallback(() => {
-                        p(!1)
+                        E(!1)
                     }, []), P = n.useCallback(() => {
                         k(!0)
                     }, []);
@@ -932,21 +933,21 @@
                             let {
                                 isVisible: e
                             } = v.current;
-                            m(e)
+                            h(e)
                         }
                     }, []), n.useLayoutEffect(() => {
                         var e;
-                        (null === (e = _.current) || void 0 === e ? void 0 : e.complete) === !0 && p(!1)
+                        (null === (e = _.current) || void 0 === e ? void 0 : e.complete) === !0 && E(!1)
                     }, []), null == R) ? null : (0, r.jsx)(o.VisibilitySensor, {
                         ref: v,
-                        onChange: m,
+                        onChange: h,
                         threshold: .7,
                         children: (0, r.jsx)("div", {
                             className: l(u, g.pngImageWrapper),
                             ref: d,
                             children: (0, r.jsx)(x, {
                                 hasError: I,
-                                isLoading: E,
+                                isLoading: p,
                                 maskAsset: c,
                                 size: a,
                                 withLoadingIndicator: f,
@@ -973,25 +974,25 @@
                         positionRef: a,
                         size: u,
                         sticker: o
-                    } = e, h = (0, d.useStateFromStores)([S.default], () => S.default.useReducedMotion), m = n.useRef(null), p = {
-                        transform: "scale(".concat(h ? 1 : 1 / i, ")"),
+                    } = e, m = (0, d.useStateFromStores)([S.default], () => S.default.useReducedMotion), h = n.useRef(null), E = {
+                        transform: "scale(".concat(m ? 1 : 1 / i, ")"),
                         opacity: 0
                     }, I = (0, c.useTransition)(l, {
-                        ref: m,
-                        from: p,
+                        ref: h,
+                        from: E,
                         enter: {
                             transform: "scale(1)",
                             opacity: 1
                         },
-                        leave: p,
+                        leave: E,
                         config: _
                     }), k = n.useRef(null), C = (0, c.useSpring)({
                         ref: k,
-                        transform: l || h ? "translateY(0)" : "translateY(-25px)",
+                        transform: l || m ? "translateY(0)" : "translateY(-25px)",
                         opacity: l ? 1 : 0,
                         config: R
                     });
-                    return (0, c.useChain)(l ? [m, k] : [k, m], l ? [0, .0625] : [0, 0]), I((e, n) => n && (0, r.jsx)(E.AppReferencePositionLayer, {
+                    return (0, c.useChain)(l ? [h, k] : [k, h], l ? [0, .0625] : [0, 0]), I((e, n) => n && (0, r.jsx)(p.AppReferencePositionLayer, {
                         className: g.positionedLayer,
                         fixed: !0,
                         align: "center",
@@ -1037,15 +1038,15 @@
                         className: o,
                         withLoadingIndicator: f,
                         assetData: S,
-                        fileUri: h,
-                        onError: m
-                    } = e, E = (0, p.useIsWindowFocused)(), C = (0, I.useShouldAnimateSticker)(t) && !i, v = n.useRef(null);
+                        fileUri: m,
+                        onError: h
+                    } = e, p = (0, E.useIsWindowFocused)(), C = (0, I.useShouldAnimateSticker)(t) && !i, v = n.useRef(null);
                     if (null == d) return null;
                     let g = d.format_type === k.StickerFormat.LOTTIE ? A : P;
                     return (0, r.jsxs)(n.Fragment, {
                         children: [(0, r.jsx)(g, {
                             shouldAnimate: C,
-                            isFocused: E,
+                            isFocused: p,
                             size: c,
                             sticker: d,
                             className: o,
@@ -1053,8 +1054,8 @@
                             positionRef: v,
                             withLoadingIndicator: f,
                             assetData: S,
-                            fileUri: h,
-                            onError: m
+                            fileUri: m,
+                            onError: h
                         }), s && (0, r.jsx)(N, {
                             disableAnimation: i,
                             enlargeScaleFactor: a,
@@ -1115,10 +1116,10 @@
                 o = i("997289"),
                 f = i("246511"),
                 S = i("151185"),
-                h = i("599110"),
-                m = i("866353"),
-                E = i("161585"),
-                p = i("24373"),
+                m = i("599110"),
+                h = i("866353"),
+                p = i("161585"),
+                E = i("24373"),
                 I = i("41170"),
                 k = i("591522"),
                 C = i("49111"),
@@ -1167,7 +1168,7 @@
                         children: F.map(e => {
                             var o;
                             let y = e.visibleRowIndex === (null == L ? void 0 : L.rowIndex) && e.columnIndex === (null == L ? void 0 : L.columnIndex),
-                                _ = e.type === E.StickerGridItemTypes.STICKER && j && y,
+                                _ = e.type === p.StickerGridItemTypes.STICKER && j && y,
                                 R = (0, a.throttle)(() => {
                                     (null == x ? void 0 : x.current) !== !0 && (null == A ? void 0 : A.current) !== !0 && !y && (null == P || P(e))
                                 }, 250),
@@ -1178,7 +1179,7 @@
                                     ...V
                                 } = null !== (o = null == u ? void 0 : u(e.columnIndex, U)) && void 0 !== o ? o : {};
                             switch (e.type) {
-                                case E.StickerGridItemTypes.CREATE_STICKER:
+                                case p.StickerGridItemTypes.CREATE_STICKER:
                                     return (0, r.jsx)("div", {
                                         ...V,
                                         children: (0, r.jsxs)(c.Clickable, {
@@ -1191,7 +1192,7 @@
                                             onFocus: null != b ? b : R,
                                             onMouseMove: R,
                                             onClick: () => {
-                                                e.type === E.StickerGridItemTypes.CREATE_STICKER && (h.default.track(C.AnalyticEvents.OPEN_MODAL, {
+                                                e.type === p.StickerGridItemTypes.CREATE_STICKER && (m.default.track(C.AnalyticEvents.OPEN_MODAL, {
                                                     type: C.AnalyticsSections.CREATE_STICKER_MODAL,
                                                     location: H
                                                 }), (0, c.openModalLazy)(async () => {
@@ -1219,8 +1220,8 @@
                                             })]
                                         })
                                     }, e.guild_id);
-                                case E.StickerGridItemTypes.STICKER: {
-                                    let a = t && null != K && (0, p.isStandardSticker)(e.sticker) && !K.has(e.sticker.pack_id);
+                                case p.StickerGridItemTypes.STICKER: {
+                                    let a = t && null != K && (0, E.isStandardSticker)(e.sticker) && !K.has(e.sticker.pack_id);
                                     return (0, n.createElement)("div", {
                                         ...V,
                                         key: e.sticker.id
@@ -1258,7 +1259,7 @@
                                                 className: l(g.stickerNode, {
                                                     [g.stickerNodeDimmed]: j && !y && null != L && -1 !== L.rowIndex && -1 !== L.columnIndex,
                                                     [g.stickerNodeHidden]: _,
-                                                    [g.stickerUnsendable]: D && !(0, m.isSendableSticker)(e.sticker, G, O)
+                                                    [g.stickerUnsendable]: D && !(0, h.isSendableSticker)(e.sticker, G, O)
                                                 }),
                                                 disableAnimation: !y && !s,
                                                 enlargeOnInteraction: j,
@@ -1550,4 +1551,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60568.5d0c85f039bd8ffda60e.js.map
+//# sourceMappingURL=60568.0e09297979951bd241f5.js.map

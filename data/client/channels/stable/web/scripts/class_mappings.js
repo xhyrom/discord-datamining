@@ -3673,6 +3673,7 @@
             e.exports = {
                 backButton: "backButton_aeaa52",
                 footer: "footer_c689c6",
+                productCard: "productCard_eabca8",
                 productList: "productList_bce430",
                 tabs: "tabs__88df8",
                 wrapper: "wrapper__2f460"
@@ -19268,6 +19269,7 @@
                 voteCount: "voteCount__9e7ee",
                 voteCountButton: "voteCountButton__81a71",
                 votePercentageBar: "votePercentageBar__4c440",
+                voterTooltip: "voterTooltip__04695",
                 votesData: "votesData__4d275"
             }
         },
@@ -24766,7 +24768,10 @@
                 itemCount: "itemCount_f8376e",
                 itemImage: "itemImage__045ef",
                 itemImageContainer: "itemImageContainer__3ef41",
-                itemName: "itemName__3d5e7"
+                itemName: "itemName__3d5e7",
+                stat: "stat_b3e061",
+                statText: "statText__18098",
+                stats: "stats__57223"
             }
         },
         535831: function(e, t, o) {
