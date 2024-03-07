@@ -4260,6 +4260,22 @@
                 wrapper: "wrapper__3d173"
             }
         },
+        769274: function(e, t, a) {
+            "use strict";
+            e.exports = {
+                benefits: "benefits_b0706a",
+                closeBtn: "closeBtn__54435",
+                container: "container__67e06",
+                containerScrollGradient: "containerScrollGradient__57f79",
+                details: "details__4f5e8",
+                header: "header__4f441",
+                headerBackground: "headerBackground__34c05",
+                headerImage: "headerImage__1d535",
+                headerTop: "headerTop__0f291",
+                scroll: "scroll__03d69",
+                scrollContent: "scrollContent__3068a"
+            }
+        },
         134560: function(e, t, a) {
             "use strict";
             e.exports = {
@@ -4313,21 +4329,6 @@
                 description: "description__6afbb",
                 image: "image__2e834",
                 purchaseBtn: "purchaseBtn_e85930"
-            }
-        },
-        376554: function(e, t, a) {
-            "use strict";
-            e.exports = {
-                background: "background__73e2a",
-                benefits: "benefits__95d44",
-                blur: "blur__76477",
-                container: "container__8f6ed",
-                details: "details__0fe6e",
-                header: "header__45be0",
-                image: "image__3fdd5",
-                scroll: "scroll_f3acf8",
-                scrollContainer: "scrollContainer_a442c2",
-                tag: "tag_ebbf87"
             }
         },
         627327: function(e, t, a) {

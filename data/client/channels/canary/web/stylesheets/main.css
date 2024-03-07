@@ -80687,6 +80687,11 @@ input::-webkit-inner-spin-button {
     margin: 0 auto
 }
 
+.subDetailsModal__7eb23 {
+    border-radius: 12px;
+    overflow: hidden
+}
+
 .footer_c689c6 {
     align-items: center;
     background: var(--background-secondary-alt);
@@ -129209,4 +129214,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3ad972bb81bd3dde0252.css.map*/
+/*# sourceMappingURL=app.8c3c9b9cf152944b9b20.css.map*/
