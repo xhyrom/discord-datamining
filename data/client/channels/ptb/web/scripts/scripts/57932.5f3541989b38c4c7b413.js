@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["39724"], {
+    ["57932"], {
         895547: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -26515,6 +26515,79 @@
                 }
                 return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), Object.defineProperties(t, i(e)), t
             }
+        },
+        748820: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                v4: function() {
+                    return r.default
+                }
+            });
+            var r = n("267084")
+        },
+        292155: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return i
+                }
+            });
+            let r = "undefined" != typeof crypto && crypto.randomUUID && crypto.randomUUID.bind(crypto);
+            var i = {
+                randomUUID: r
+            }
+        },
+        379384: function(e, t, n) {
+            "use strict";
+            let r;
+            n.r(t), n.d(t, {
+                default: function() {
+                    return o
+                }
+            }), n("311790"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341"), n("70102");
+            let i = new Uint8Array(16);
+
+            function o() {
+                if (!r && !(r = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto))) throw Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
+                return r(i)
+            }
+        },
+        765909: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                unsafeStringify: function() {
+                    return i
+                }
+            }), n("424973"), n("70102");
+            let r = [];
+            for (let e = 0; e < 256; ++e) r.push((e + 256).toString(16).slice(1));
+
+            function i(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
+                return r[e[t + 0]] + r[e[t + 1]] + r[e[t + 2]] + r[e[t + 3]] + "-" + r[e[t + 4]] + r[e[t + 5]] + "-" + r[e[t + 6]] + r[e[t + 7]] + "-" + r[e[t + 8]] + r[e[t + 9]] + "-" + r[e[t + 10]] + r[e[t + 11]] + r[e[t + 12]] + r[e[t + 13]] + r[e[t + 14]] + r[e[t + 15]]
+            }
+        },
+        267084: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var r = n("292155"),
+                i = n("379384"),
+                o = n("765909"),
+                s = function(e, t, n) {
+                    if (r.default.randomUUID && !t && !e) return r.default.randomUUID();
+                    e = e || {};
+                    let s = e.random || (e.rng || (0, i.default))();
+                    if (s[6] = 15 & s[6] | 64, s[8] = 63 & s[8] | 128, t) {
+                        n = n || 0;
+                        for (let e = 0; e < 16; ++e) t[n + e] = s[e];
+                        return t
+                    }
+                    return (0, o.unsafeStringify)(s)
+                }
         },
         231638: function(e, t, n) {
             n("70102"), n("222007"), n("424973"), n("101997"), n("781738"), n("274635"), n("506083"), n("808653"), ! function e(t, n, r) {
@@ -76795,4 +76868,4 @@
         }
     }
 ]);
-//# sourceMappingURL=39724.ab87e1488d779fb0d0db.js.map
+//# sourceMappingURL=57932.5f3541989b38c4c7b413.js.map
