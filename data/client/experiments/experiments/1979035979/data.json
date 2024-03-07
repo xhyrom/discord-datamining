@@ -1,12 +1,33 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2024-03_ait_guild_entry_point",
+    "label": "Activities in Text Guild Experiment w/ new Entry Point",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable new entry point in Chat Input and App Launcher",
+      "Treatment 2: Enable new entry point in Chat Input, App Launcher, and Activities In Text",
+      "Treatment 3: Enable new entry point in Chat Input, App Launcher, Activities in Text, and Desktop Throbber"
+    ],
     "hash": 1979035979,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "entryPointEnabled",
+      "activitiesInTextEnabled",
+      "desktopThrobberEnabled"
+    ]
   },
   "rollout": {
     "populations": [
@@ -56,7 +77,8 @@
               "847184799365857331",
               "872892246494691338",
               "880605501623238726",
-              "943265993613008967"
+              "943265993613008967",
+              "996858789930209320"
             ]
           }
         ]

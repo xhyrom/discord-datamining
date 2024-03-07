@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_profile_mutuals",
+    "label": "Profile Mutuals",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show Profile Mutuals (Friends/Guilds) - Compact",
+      "Treatment 2: Show Profile Mutuals (Friends/Guilds) - Full Lines"
+    ],
+    "hash": 3478646609,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

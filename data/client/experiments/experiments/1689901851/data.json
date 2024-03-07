@@ -1,29 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-11_activities_in_text_guild",
-    "label": "Activities in Text Guild",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable Activities in text channels",
-      "Treatment 3: enable Activities in text with the rocket button in chat input"
-    ],
     "hash": 1689901851,
-    "buckets": [
-      -1,
-      0,
-      1,
-      3
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "enabled"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [
@@ -92,7 +75,8 @@
               "847184799365857331",
               "872892246494691338",
               "880605501623238726",
-              "943265993613008967"
+              "943265993613008967",
+              "996858789930209320"
             ]
           }
         ]
