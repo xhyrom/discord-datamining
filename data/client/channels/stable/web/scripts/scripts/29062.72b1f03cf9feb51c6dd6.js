@@ -44941,7 +44941,7 @@
                 _ = n("821879"),
                 h = n("333805"),
                 E = n("782340");
-            (o = i || (i = {}))[o.UNKNOWN = 0] = "UNKNOWN", o[o.UNKNOWN_BILLING_PROFILE = 100001] = "UNKNOWN_BILLING_PROFILE", o[o.UNKNOWN_PAYMENT_SOURCE = 100002] = "UNKNOWN_PAYMENT_SOURCE", o[o.UNKNOWN_SUBSCRIPTION = 100003] = "UNKNOWN_SUBSCRIPTION", o[o.ALREADY_SUBSCRIBED = 100004] = "ALREADY_SUBSCRIBED", o[o.INVALID_PLAN = 100005] = "INVALID_PLAN", o[o.PAYMENT_SOURCE_REQUIRED = 100006] = "PAYMENT_SOURCE_REQUIRED", o[o.ALREADY_CANCELED = 100007] = "ALREADY_CANCELED", o[o.INVALID_PAYMENT = 100008] = "INVALID_PAYMENT", o[o.ALREADY_REFUNDED = 100009] = "ALREADY_REFUNDED", o[o.INVALID_BILLING_ADDRESS = 100010] = "INVALID_BILLING_ADDRESS", o[o.ALREADY_PURCHASED = 100011] = "ALREADY_PURCHASED", o[o.BILLING_PURCHASE_REQUEST_INVALID = 100017] = "BILLING_PURCHASE_REQUEST_INVALID", o[o.NEGATIVE_INVOICE_AMOUNT = 100027] = "NEGATIVE_INVOICE_AMOUNT", o[o.AUTHENTICATION_REQUIRED = 100029] = "AUTHENTICATION_REQUIRED", o[o.SUBSCRIPTION_RENEWAL_IN_PROGRESS = 100042] = "SUBSCRIPTION_RENEWAL_IN_PROGRESS", o[o.CONFIRMATION_REQUIRED = 100047] = "CONFIRMATION_REQUIRED", o[o.CARD_DECLINED = 100054] = "CARD_DECLINED", o[o.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED = 50097] = "INVALID_GIFT_REDEMPTION_FRAUD_REJECTED", o[o.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED = 100056] = "PURCHASE_TOKEN_AUTHORIZATION_REQUIRED", o[o.INVALID_PAYMENT_SOURCE = 50048] = "INVALID_PAYMENT_SOURCE", o[o.INVALID_CURRENCY_FOR_PAYMENT_SOURCE = 100051] = "INVALID_CURRENCY_FOR_PAYMENT_SOURCE", o[o.BILLING_APPLE_SERVER_API_ERROR = 100070] = "BILLING_APPLE_SERVER_API_ERROR", o[o.BILLING_TRIAL_REDEMPTION_DISABLED = 100078] = "BILLING_TRIAL_REDEMPTION_DISABLED", o[o.BILLING_PAUSE_DISABLED = 100079] = "BILLING_PAUSE_DISABLED", o[o.BILLING_PAUSE_PENDING_ALREADY_SET = 100080] = "BILLING_PAUSE_PENDING_ALREADY_SET", o[o.BILLING_PAUSE_NOT_ELIGIBLE = 100081] = "BILLING_PAUSE_NOT_ELIGIBLE", o[o.BILLING_PAUSE_INVALID_INTERVAL = 100082] = "BILLING_PAUSE_INVALID_INTERVAL", o[o.BILLING_ALREADY_PAUSED = 100083] = "BILLING_ALREADY_PAUSED", o[o.BILLING_CANNOT_CHARGE_ZERO_AMOUNT = 100084] = "BILLING_CANNOT_CHARGE_ZERO_AMOUNT", (l = s || (s = {})).CARD_NUMBER = "cardNumber", l.CARD_CVC = "cvc", l.CARD_EXPIRATION_DATE = "expirationDate", l.CARD_NAME = "name", l.ADDRESS_NAME = "name", l.ADDRESS_LINE_1 = "line1", l.ADDRESS_LINE_2 = "line2", l.ADDRESS_CITY = "city", l.ADDRESS_STATE = "state", l.ADDRESS_POSTAL_CODE = "postalCode", l.ADDRESS_COUNTRY = "country", (u = r || (r = {})).ADDRESS_LINE_1 = "address_line1", u.ADDRESS_LINE_2 = "address_line2", u.ADDRESS_CITY = "address_city", u.ADDRESS_STATE = "address_state", u.ADDRESS_ZIP = "address_zip", u.ADDRESS_COUNTRY = "address_country", u.CARD_NUMBER = "number", u.CARD_EXPIRATION_DATE = "exp", u.CARD_EXPIRATION_MONTH = "exp_month", u.CARD_EXPIRATION_YEAR = "exp_year";
+            (o = i || (i = {}))[o.UNKNOWN = 0] = "UNKNOWN", o[o.UNKNOWN_BILLING_PROFILE = 100001] = "UNKNOWN_BILLING_PROFILE", o[o.UNKNOWN_PAYMENT_SOURCE = 100002] = "UNKNOWN_PAYMENT_SOURCE", o[o.UNKNOWN_SUBSCRIPTION = 100003] = "UNKNOWN_SUBSCRIPTION", o[o.ALREADY_SUBSCRIBED = 100004] = "ALREADY_SUBSCRIBED", o[o.INVALID_PLAN = 100005] = "INVALID_PLAN", o[o.PAYMENT_SOURCE_REQUIRED = 100006] = "PAYMENT_SOURCE_REQUIRED", o[o.ALREADY_CANCELED = 100007] = "ALREADY_CANCELED", o[o.INVALID_PAYMENT = 100008] = "INVALID_PAYMENT", o[o.ALREADY_REFUNDED = 100009] = "ALREADY_REFUNDED", o[o.INVALID_BILLING_ADDRESS = 100010] = "INVALID_BILLING_ADDRESS", o[o.ALREADY_PURCHASED = 100011] = "ALREADY_PURCHASED", o[o.DUPLICATE_PURCHASE_ATTEMPT = 100012] = "DUPLICATE_PURCHASE_ATTEMPT", o[o.BILLING_PURCHASE_REQUEST_INVALID = 100017] = "BILLING_PURCHASE_REQUEST_INVALID", o[o.NEGATIVE_INVOICE_AMOUNT = 100027] = "NEGATIVE_INVOICE_AMOUNT", o[o.AUTHENTICATION_REQUIRED = 100029] = "AUTHENTICATION_REQUIRED", o[o.SUBSCRIPTION_RENEWAL_IN_PROGRESS = 100042] = "SUBSCRIPTION_RENEWAL_IN_PROGRESS", o[o.CONFIRMATION_REQUIRED = 100047] = "CONFIRMATION_REQUIRED", o[o.CARD_DECLINED = 100054] = "CARD_DECLINED", o[o.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED = 50097] = "INVALID_GIFT_REDEMPTION_FRAUD_REJECTED", o[o.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED = 100056] = "PURCHASE_TOKEN_AUTHORIZATION_REQUIRED", o[o.INVALID_PAYMENT_SOURCE = 50048] = "INVALID_PAYMENT_SOURCE", o[o.INVALID_CURRENCY_FOR_PAYMENT_SOURCE = 100051] = "INVALID_CURRENCY_FOR_PAYMENT_SOURCE", o[o.BILLING_APPLE_SERVER_API_ERROR = 100070] = "BILLING_APPLE_SERVER_API_ERROR", o[o.BILLING_TRIAL_REDEMPTION_DISABLED = 100078] = "BILLING_TRIAL_REDEMPTION_DISABLED", o[o.BILLING_PAUSE_DISABLED = 100079] = "BILLING_PAUSE_DISABLED", o[o.BILLING_PAUSE_PENDING_ALREADY_SET = 100080] = "BILLING_PAUSE_PENDING_ALREADY_SET", o[o.BILLING_PAUSE_NOT_ELIGIBLE = 100081] = "BILLING_PAUSE_NOT_ELIGIBLE", o[o.BILLING_PAUSE_INVALID_INTERVAL = 100082] = "BILLING_PAUSE_INVALID_INTERVAL", o[o.BILLING_ALREADY_PAUSED = 100083] = "BILLING_ALREADY_PAUSED", o[o.BILLING_CANNOT_CHARGE_ZERO_AMOUNT = 100084] = "BILLING_CANNOT_CHARGE_ZERO_AMOUNT", (l = s || (s = {})).CARD_NUMBER = "cardNumber", l.CARD_CVC = "cvc", l.CARD_EXPIRATION_DATE = "expirationDate", l.CARD_NAME = "name", l.ADDRESS_NAME = "name", l.ADDRESS_LINE_1 = "line1", l.ADDRESS_LINE_2 = "line2", l.ADDRESS_CITY = "city", l.ADDRESS_STATE = "state", l.ADDRESS_POSTAL_CODE = "postalCode", l.ADDRESS_COUNTRY = "country", (u = r || (r = {})).ADDRESS_LINE_1 = "address_line1", u.ADDRESS_LINE_2 = "address_line2", u.ADDRESS_CITY = "address_city", u.ADDRESS_STATE = "address_state", u.ADDRESS_ZIP = "address_zip", u.ADDRESS_COUNTRY = "address_country", u.CARD_NUMBER = "number", u.CARD_EXPIRATION_DATE = "exp", u.CARD_EXPIRATION_MONTH = "exp_month", u.CARD_EXPIRATION_YEAR = "exp_year";
             let g = Object.freeze({
                     address_line1: "line1",
                     address_line2: "line2",
@@ -87224,8 +87224,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709756822085",
-                                    build_number: "272742"
+                                    built_at: "1709835456111",
+                                    build_number: "273091"
                                 }
                             },
                             retries: 1
@@ -91835,6 +91835,9 @@
                 },
                 DISCOUNT_DURATION_FALLBACK: function() {
                     return ex
+                },
+                DISCOUNT_PERCENTAGE_FALLBACK: function() {
+                    return eB
                 }
             }), n("222007");
             var i, s, r, a, o, l, u, d, c, f, _, h, E, g, m, p, S, v, T, I, C, A, y, N, R, O, D, P, L, M, b, U, w, k, V, G, F = n("49111"),
@@ -92206,7 +92209,8 @@
                 eV = [8, 9, 11, 10],
                 eG = eV.concat(ew),
                 eF = 190,
-                ex = 3
+                ex = 3,
+                eB = 30
         },
         45120: function(e, t, n) {
             "use strict";
@@ -92899,6 +92903,14 @@
                     h(t.questId, {
                         userStatus: t
                     }), null == t.claimedAt && (f = new Map(f)).delete(t.questId)
+                },
+                QUESTS_OPTIMISTIC_PROGRESS_UPDATE: function(e) {
+                    let {
+                        userStatus: t
+                    } = e;
+                    h(t.questId, {
+                        userStatus: t
+                    })
                 }
             })
         },
@@ -93957,7 +93969,7 @@
                     r = null === (t = l.default.getDefaultChannel(e)) || void 0 === t ? void 0 : t.id;
                 if (n === f.StaticChannelRoute.GUILD_ONBOARDING && !i.default.shouldShowOnboarding(e) || n === f.StaticChannelRoute.GUILD_HOME && !(0, s.canSeeOnboardingHome)(e)) return r;
                 let a = o.default.getChannel(n);
-                return null == a || a.isGuildVocal() ? r : n
+                return null == a ? r : n
             }
 
             function h(e, t) {
@@ -101844,7 +101856,7 @@
                 }
                 constructor(e) {
                     var t, n, i, r;
-                    super(), this.id = e.id, this.name = e.name, this.icon = e.icon || null, this.splash = e.splash || null, this.overlay = e.overlay || !1, this.overlayWarn = e.overlayWarn || !1, this.overlayCompatibilityHook = e.overlayCompatibilityHook || !1, this.overlayMethods = null !== (t = e.overlayMethods) && void 0 !== t ? t : s.ApplicationOverlayMethodFlags.DEFAULT, this.hook = null === (n = e.hook) || void 0 === n || n, this.aliases = e.aliases || [], this.publishers = e.publishers || [], this.developers = e.developers || [], this.primarySkuId = e.primarySkuId, this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId || null, this.guild = e.guild || null, this.thirdPartySkus = e.thirdPartySkus || [], this.executables = (e.executables || []).map(c), this.hashes = e.hashes || [], this.description = e.description || null, this.eulaId = e.eulaId || null, this.slug = e.slug || null, this.bot = e.bot || null, this.coverImage = e.coverImage || null, this.flags = null !== (i = e.flags) && void 0 !== i ? i : 0, this.tags = null !== (r = e.tags) && void 0 !== r ? r : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = e.embedded_activity_config, this.type = e.type, this.team = e.team, this.roleConnectionsVerificationUrl = e.roleConnectionsVerificationUrl, this.integrationTypesConfig = e.integrationTypesConfig
+                    super(), this.id = e.id, this.name = e.name, this.icon = e.icon || null, this.splash = e.splash || null, this.overlay = e.overlay || !1, this.overlayWarn = e.overlayWarn || !1, this.overlayCompatibilityHook = e.overlayCompatibilityHook || !1, this.overlayMethods = null !== (t = e.overlayMethods) && void 0 !== t ? t : s.ApplicationOverlayMethodFlags.DEFAULT, this.hook = null === (n = e.hook) || void 0 === n || n, this.aliases = e.aliases || [], this.publishers = e.publishers || [], this.developers = e.developers || [], this.primarySkuId = e.primarySkuId, this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId || null, this.guild = e.guild || null, this.thirdPartySkus = e.thirdPartySkus || [], this.executables = (e.executables || []).map(c), this.hashes = e.hashes || [], this.description = e.description || null, this.eulaId = e.eulaId || null, this.slug = e.slug || null, this.bot = e.bot || null, this.coverImage = e.coverImage || null, this.flags = null !== (i = e.flags) && void 0 !== i ? i : 0, this.tags = null !== (r = e.tags) && void 0 !== r ? r : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = e.embedded_activity_config, this.type = e.type, this.team = e.team, this.roleConnectionsVerificationUrl = e.roleConnectionsVerificationUrl, this.integrationTypesConfig = e.integrationTypesConfig, this.isMonetized = e.is_monetized
                 }
             }
         },
@@ -124528,7 +124540,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "20e05d7a918bf99d6c2ba81d955618d64817dd6f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "93b375307c55b5a75c315e312af82a966a0116f3"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133838,7 +133850,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "272742"
+                                build_number: "273091"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -135263,112 +135275,112 @@
             }
 
             function X(e) {
-                var t, n;
+                var t, n, i, s;
                 let {
-                    subscription: i,
-                    planId: s,
-                    price: r,
-                    includePremiumGuilds: a,
-                    hasDiscountApplied: o,
-                    activeDiscountDuration: l
-                } = e, u = y.default.formatPriceString(y.default.getDefaultPrice(D.SubscriptionPlans.PREMIUM_MONTH_TIER_2), D.SubscriptionIntervalTypes.MONTH), d = ef(i) || null == i.paymentSourceId && !i.isPurchasedExternally && !(null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), c = null != r, f = i.status === R.SubscriptionStatusTypes.UNPAID && null !== i.latestInvoice && (null === (n = i.latestInvoice) || void 0 === n ? void 0 : n.status) === R.InvoiceStatusTypes.OPEN, _ = d ? R.SubscriptionStatusTypes.CANCELED : f ? R.SubscriptionStatusTypes.UNPAID : i.status, h = D.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM + (a ? et(i.additionalPlans) : 0);
-                switch (s) {
+                    subscription: r,
+                    planId: a,
+                    price: o,
+                    includePremiumGuilds: l,
+                    hasDiscountApplied: u,
+                    activeDiscountInfo: d
+                } = e, c = y.default.formatPriceString(y.default.getDefaultPrice(D.SubscriptionPlans.PREMIUM_MONTH_TIER_2), D.SubscriptionIntervalTypes.MONTH), f = ef(r) || null == r.paymentSourceId && !r.isPurchasedExternally && !(null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), _ = null != o, h = r.status === R.SubscriptionStatusTypes.UNPAID && null !== r.latestInvoice && (null === (n = r.latestInvoice) || void 0 === n ? void 0 : n.status) === R.InvoiceStatusTypes.OPEN, g = f ? R.SubscriptionStatusTypes.CANCELED : h ? R.SubscriptionStatusTypes.UNPAID : r.status, m = D.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM + (l ? et(r.additionalPlans) : 0);
+                switch (a) {
                     case D.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
                     case D.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        switch (_) {
+                        switch (g) {
                             case R.SubscriptionStatusTypes.CANCELED:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION.format({
-                                    price: r
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION.format({
+                                    price: o
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_NO_PRICE;
                             case R.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD.format({
-                                    price: r
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD.format({
+                                    price: o
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE.format();
                             case R.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT.format();
                             case R.SubscriptionStatusTypes.PAUSE_PENDING:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE.format({
-                                    price: r,
-                                    pauseDate: i.currentPeriodEnd
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE.format({
+                                    price: o,
+                                    pauseDate: r.currentPeriodEnd
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE_NO_PRICE.format({
-                                    pauseDate: i.currentPeriodEnd
+                                    pauseDate: r.currentPeriodEnd
                                 });
                             default:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
-                                    price: r
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
+                                    price: o
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_NO_PRICE
                         }
                     case D.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
                     case D.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        switch (_) {
+                        switch (g) {
                             case R.SubscriptionStatusTypes.CANCELED:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION.format({
-                                    price: r
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION.format({
+                                    price: o
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE;
                             case R.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD.format({
-                                    price: r
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD.format({
+                                    price: o
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
                             case R.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
                             case R.SubscriptionStatusTypes.CANCELED:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE.format({
-                                    price: r,
-                                    pauseDate: i.currentPeriodEnd
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE.format({
+                                    price: o,
+                                    pauseDate: r.currentPeriodEnd
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE.format({
-                                    pauseDate: i.currentPeriodEnd
+                                    pauseDate: r.currentPeriodEnd
                                 });
                             default:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
-                                    price: r
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
+                                    price: o
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_NO_PRICE
                         }
                     case D.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
                     case D.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
                     case D.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
                     case D.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                        switch (_) {
+                        switch (g) {
                             case R.SubscriptionStatusTypes.CANCELED:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION.format({
-                                    price: r,
-                                    num: h
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION.format({
+                                    price: o,
+                                    num: m
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE.format({
-                                    num: h
+                                    num: m
                                 });
                             case R.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD.format({
-                                    price: r,
-                                    num: h
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD.format({
+                                    price: o,
+                                    num: m
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE.format({
-                                    num: h
+                                    num: m
                                 });
                             case R.SubscriptionStatusTypes.UNPAID:
                                 return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT.format({
-                                    num: h
+                                    num: m
                                 });
                             case R.SubscriptionStatusTypes.PAUSE_PENDING:
-                                return c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE.format({
-                                    price: r,
-                                    num: h,
-                                    pauseDate: i.currentPeriodEnd
+                                return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE.format({
+                                    price: o,
+                                    num: m,
+                                    pauseDate: r.currentPeriodEnd
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE_NO_PRICE.format({
-                                    num: h,
-                                    pauseDate: i.currentPeriodEnd
+                                    num: m,
+                                    pauseDate: r.currentPeriodEnd
                                 });
                             default:
-                                return o ? L.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
-                                    percent: 30,
-                                    regularPrice: u,
-                                    numMonths: null != l ? l : D.DISCOUNT_DURATION_FALLBACK
-                                }) : c ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2.format({
-                                    price: r,
-                                    num: h
+                                return u ? L.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
+                                    percent: null !== (i = null == d ? void 0 : d.percentage) && void 0 !== i ? i : D.DISCOUNT_PERCENTAGE_FALLBACK,
+                                    regularPrice: c,
+                                    numMonths: null !== (s = null == d ? void 0 : d.duration) && void 0 !== s ? s : D.DISCOUNT_DURATION_FALLBACK
+                                }) : _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2.format({
+                                    price: o,
+                                    num: m
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_NO_PRICE.format({
-                                    num: h
+                                    num: m
                                 })
                         }
                     default:
-                        throw Error("Invalid planId ".concat(s))
+                        throw Error("Invalid planId ".concat(a))
                 }
             }
 
@@ -135379,7 +135391,7 @@
                     planId: i,
                     includePremiumGuilds: s = !1,
                     hasDiscountApplied: r = !1,
-                    activeDiscountDuration: a
+                    activeDiscountInfo: a
                 } = e, o = p.default.get(i);
                 return l(null != o, "Missing plan"), X({
                     subscription: n,
@@ -135399,7 +135411,7 @@
                     }(t, n, o),
                     includePremiumGuilds: s,
                     hasDiscountApplied: r,
-                    activeDiscountDuration: a
+                    activeDiscountInfo: a
                 })
             }
 
@@ -151426,4 +151438,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.abee67017617c81c534c.js.map
+//# sourceMappingURL=29062.72b1f03cf9feb51c6dd6.js.map

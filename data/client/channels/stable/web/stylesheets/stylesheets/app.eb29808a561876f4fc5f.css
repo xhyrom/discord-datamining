@@ -8030,7 +8030,7 @@
 }
 
 .premiumCardsStackedVariantSmallScreen__6b348 {
-    width: 660px;
+    width: 700px;
     height: 360px
 }
 
@@ -8050,8 +8050,15 @@
 
 .stackedCardTitle__95b4d,
 .stackedCardTitleSmallScreen__4d7a0 {
-    margin-bottom: 14px;
     color: var(--white)
+}
+
+.stackedCardTitle__95b4d {
+    margin-bottom: 14px
+}
+
+.stackedCardTitleSmallScreen__4d7a0 {
+    margin-bottom: 12px
 }
 
 .stackedCardTitle__95b4d {
@@ -8103,11 +8110,11 @@
     transition: transform.5s, opacity.25s, top.5s
 }
 
-.listItems__61d04 {
+.listItems__61d04,
+.listItemsBasic_c01252 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 85%
+    justify-content: space-between
 }
 
 .tierCardFocused_cf0a83 {
@@ -8286,6 +8293,10 @@
     justify-content: space-between
 }
 
+.listItemsBasic_c01252 {
+    min-height: 92%
+}
+
 .perkContainer__9eeec {
     min-width: 370px;
     min-height: 260px;
@@ -8294,7 +8305,7 @@
 
 .perkContainerSmallScreen_c9a62b {
     width: 300px;
-    height: 280px
+    height: 325px
 }
 
 .freeTrialPillInlineBlock__5839a {
@@ -27706,14 +27717,16 @@ html .progress__4ef76 {
 }
 
 .voteCountButton__81a71 {
-    border-radius: 2px;
-    background-color: transparent;
-    transition: background-color var(--custom-button-transition-duration)ease;
-    cursor: pointer
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+    color: var(--interactive-active)
 }
 
-.voteCountButton__81a71:hover {
-    background-color: var(--background-accent)
+.voteCountButton__81a71 :hover {
+    color: var(--interactive-active);
+    -webkit-text-decoration: underline;
+    text-decoration: underline
 }
 
 .voterTooltip__04695 {
@@ -33289,6 +33302,11 @@ html .progress__4ef76 {
 
 .forumPostTitle__43108 {
     margin-left: 8px
+}
+
+.subtitleContainer_f754d4 {
+    display: flex;
+    flex-direction: column
 }
 
 .container_def45c {
@@ -39903,8 +39921,8 @@ html .progress__4ef76 {
 
 .hero_f37d0a {
     display: flex;
-    justify-content: space-between;
-    gap: 8px;
+    flex-direction: column;
+    gap: 16px;
     padding: 32px 32px 16px;
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md)
@@ -39912,13 +39930,13 @@ html .progress__4ef76 {
 
 .heroDetails_b002cf {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    gap: 8px;
     min-width: 0
 }
 
 .popoutDescription__875c7 {
-    margin-top: 4px
+    margin-top: 6px
 }
 
 .heroImage_e3e7d9 {
@@ -39949,9 +39967,20 @@ html .progress__4ef76 {
     height: 24px
 }
 
+.contentImage_ee0279 {
+    border-radius: var(--radius-sm)
+}
+
+.badgeContainer__7ffff {
+    padding: 2px
+}
+
 .container__35f96 {
     display: flex;
-    margin: 8px 8px 0;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-top: 8px;
+    max-width: 224px;
     padding: 8px;
     background-color: var(--bg-overlay-chat, var(--background-primary));
     border-radius: var(--radius-md);
@@ -39965,12 +39994,29 @@ html .progress__4ef76 {
     cursor: pointer
 }
 
+.container__35f96:hover .contentDescription__181da {
+    color: var(--interactive-hover)
+}
+
+.container__35f96 .badgeContainer__626aa {
+    margin-top: 2px;
+    margin-bottom: -2px
+}
+
+.contentDescription__181da {
+    color: var(--text-secondary)
+}
+
 .selected__540f0 {
     background-color: var(--background-modifier-selected)
 }
 
 .selected__540f0:hover {
     background-color: var(--background-modifier-selected)
+}
+
+.selected__540f0 .contentDescription__181da {
+    color: var(--interactive-hover)
 }
 
 .textSection__69223 {
@@ -39987,7 +40033,6 @@ html .progress__4ef76 {
 }
 
 .badgesContainer__9dcef {
-    margin-top: 2px;
     display: flex;
     gap: 8px
 }
@@ -39999,7 +40044,7 @@ html .progress__4ef76 {
 }
 
 .contentImage_d1bd0e {
-    border-radius: var(--radius-md)
+    border-radius: var(--radius-xs)
 }
 
 .container_d412fb {
@@ -66286,12 +66331,12 @@ html .invoiceCancelRow_c1bfe7 {
     display: flex;
     border-radius: 20px;
     padding: 5px;
-    width: 140px;
-    justify-content: center;
+    width: auto;
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
-    margin-top: 45px
+    margin-top: 45px;
+    justify-content: space-between
 }
 
 .toggleSwitchStandard__00183,
@@ -66326,12 +66371,13 @@ html .invoiceCancelRow_c1bfe7 {
     z-index: 1;
     border: none;
     background-color: transparent;
-    padding: 4px 14px;
+    padding: 4px 18px;
     border-radius: 24px;
     cursor: pointer;
     text-align: center;
     color: var(--text-primary);
-    width: 50%
+    width: 50%;
+    flex-grow: 1
 }
 
 .slider__3ff89 {
@@ -66342,7 +66388,7 @@ html .invoiceCancelRow_c1bfe7 {
     top: 5px;
     bottom: 5px;
     left: 5px;
-    width: calc(50% - 10px);
+    width: calc(43% + 2px);
     transition: transform.3s ease-in-out;
     z-index: 0
 }
@@ -67661,7 +67707,8 @@ html .invoiceCancelRow_c1bfe7 {
     width: 100%
 }
 
-.premiumTierCardsContainerSettings_f346a8 {
+.premiumTierCardsContainerSettings_f346a8,
+.premiumStackedTierCardsContainerSettings__03d64 {
     margin-bottom: 60px
 }
 
@@ -119013,14 +119060,17 @@ html .invoiceCancelRow_a8669b {
 }
 
 .inventoryContainer_f4883b {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-    gap: 20px;
     background-color: var(--background-tertiary);
     padding: 20px;
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-medium)
+}
+
+.inventoryItems__62cfb {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
+    gap: 20px
 }
 
 .inventoryItem__3f262 {
@@ -119091,6 +119141,36 @@ html .invoiceCancelRow_a8669b {
 
 .statText__18098 {
     margin: 12px 0
+}
+
+.banner__1b5aa {
+    background: linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients))no-repeat;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-low);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 20px
+}
+
+.banner__1b5aa .headerButton_fe8970 {
+    font-size: small;
+    padding: 2px 8px
+}
+
+.innerButton__2a740 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px
+}
+
+.inline__3a4e8 {
+    display: flex;
+    align-items: center;
+    gap: 8px
 }
 
 .marketingUnsubscribeButton__72576 {
@@ -129060,4 +129140,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e6eedaa4e1547aaf7309.css.map*/
+/*# sourceMappingURL=app.eb29808a561876f4fc5f.css.map*/

@@ -6634,6 +6634,7 @@
                 PREMIUM_DISCOUNT_CTA: "Save !!{percent, number}!!% on Nitro",
                 PREMIUM_DISCOUNT_CTA_WITHOUT_PERCENT: "Save on Nitro",
                 PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION: "Pay just **{discountedPrice}** a month for **3 months!** Then pay {regularPrice}.",
+                PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION_GENERIC: "Pay just **{discountedPrice}** for **{numMonths, plural, one {a month!} other {{numMonths} months!}}** Then pay {regularPrice}.",
                 PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION: "Your !!{percent, number}!!% discount will end 3 months after purchase. After that you'll be charged {regularPrice}.",
                 PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC: "Your !!{percent, number}!!% discount will end {numMonths, plural, one {1 month} other {{numMonths} months}} after purchase. After that you'll be charged {regularPrice}.",
                 PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION: "Your first **3 months** are **{discountedPrice}**. After that you'll be charged {regularPrice}.",
@@ -7581,7 +7582,9 @@
                 BILLING_TRIAL_CHOOSE_PAYMENT: "Choose a payment method",
                 BILLING_TRIAL_FREE_TRIAL_TEXT: "free trial",
                 BILLING_DISCOUNT_PAYMENT_MODAL_INFO: "Pay just **{discountedPrice}** a month for your first **3 months** of Nitro. Pay {regularPrice} a month after the 3-month discount end.",
+                BILLING_DISCOUNT_PAYMENT_MODAL_INFO_GENERIC: "Pay just **{discountedPrice}** a month for your first **{numMonths, plural, one {month} other {{numMonths} months}}** of Nitro. Pay {regularPrice} a month after the discount ends.",
                 BILLING_DISCOUNT_MONTHLY_PRICE: "{discountedPrice}/month for 3 months\n\n{regularPrice}/month after 3 months",
+                BILLING_DISCOUNT_MONTHLY_PRICE_GENERIC: "{discountedPrice}/month for  **{numMonths, plural, one {one month} other {{numMonths} months}}**\n\n{regularPrice}/month after {numMonths, plural, one {one month} other {{numMonths} months}}",
                 BILLING_YEARLY_PLAN_SAVINGS: "Save !!{percent, number}!!% with annual subscription",
                 BILLING_SUBTOTAL: "Subtotal",
                 BILLING_TRIAL_LEGAL_COPY: 'By selecting "{buttonText}", you’re agreeing to Discord’s [Paid Service Terms]({paidServiceTermsArticle}). Nitro is a recurring subscription. Your payment method will be charged after your trial ends and continue to be charged every month unless you [cancel your subscription]({cancelSubscriptionArticle}). We’ll send a reminder email 7 days before your trial ends. Total doesn’t include any additional fees charged by your financial institution.',
@@ -16898,6 +16901,9 @@
                 MEMBER_LIST_CONTENT_FEED_TIMESTAMP_HOURS_AGO: "{count}h ago",
                 MEMBER_LIST_CONTENT_FEED_TIMESTAMP_MINUTES_AGO: "{count}m ago",
                 MEMBER_LIST_CONTENT_FEED_TIMESTAMP_SECONDS_AGO: "{count}s ago",
+                MEMBER_LIST_CONTENT_FEED_TIMESTAMP_FOR_DAYS: "for {days}d",
+                MEMBER_LIST_CONTENT_FEED_TIMESTAMP_FOR_HOURS: "for {hours}h",
+                MEMBER_LIST_CONTENT_FEED_TIMESTAMP_ACTIVE: "{minutes, plural, =-1 {} other {{minutes}:}}{seconds, plural, =-1 {} other {{seconds}}}",
                 MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time"
             })
         },
@@ -17187,6 +17193,9 @@
                 USER_SETTINGS_PACKAGES_HEADER_CTA: "Open your Mailbox",
                 USER_SETTINGS_PACKAGES_MAILBOX_HEADER: "Mailbox",
                 USER_SETTINGS_PACKAGE_COUNT: "x{count, number}",
+                USER_SETTINGS_PACKAGE_BANNER_DEFAULT: "Wow you have a lot of mail.",
+                USER_SETTINGS_PACKAGE_BANNER_PITY: "How about you thank your mail delivery person?",
+                USER_SETTINGS_PACKAGE_BANNER_CTA: "Give Thanks",
                 PACKAGE_ITEM_1_NAME: "Newspaper",
                 PACKAGE_ITEM_2_NAME: "Bills",
                 PACKAGE_ITEM_3_NAME: "Grocery Savings",
@@ -18387,15 +18396,15 @@
                 N = E("424948");
             E("762017");
             var O = E("787006"),
-                A = E("605250"),
-                R = E("648387"),
-                l = E("49111"),
-                u = E("782340");
-            (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
-            let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272742", ", Version Hash: ").concat("20e05d7a918bf99d6c2ba81d955618d64817dd6f")), t.default.setTags({
-                appContext: l.CURRENT_APP_CONTEXT
-            }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
+                A = E("605250");
+            E("147746");
+            var R = E("49111"),
+                l = E("782340");
+            (0, i.setUpdateRules)(T.default), (0, n.default)(l.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
+            let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273091", ", Version Hash: ").concat("93b375307c55b5a75c315e312af82a966a0116f3")), t.default.setTags({
+                appContext: R.CURRENT_APP_CONTEXT
+            }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
         115718: function(e, _, E) {
             "use strict";
@@ -18975,6 +18984,65 @@
                         error: new n.default(_)
                     }), _
                 }
+            }
+        },
+        371160: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                setSessionExtendingEnabled: function() {
+                    return T
+                },
+                getSession: function() {
+                    return s
+                },
+                timestampOrZero: function() {
+                    return N
+                }
+            });
+            var t = E("748820"),
+                o = E("95410");
+            let n = "LATEST_SESSION_TIMESTAMP",
+                r = "LATEST_SESSION_UUID",
+                a = "LATEST_SESSION_INITIALIZED_TIMESTAMP",
+                i = Promise.resolve(),
+                I = !1;
+
+            function T(e) {
+                I = e
+            }
+
+            function s() {
+                let e = i.then(async () => {
+                    let e = await S();
+                    if (null == e || function(e) {
+                            let _ = 18e5 + e.lastUsed - Date.now();
+                            return _ <= 0
+                        }(e)) {
+                        if (!I) return null;
+                        let _ = {
+                            uuid: (0, t.v4)(),
+                            initialized: Date.now(),
+                            lastUsed: Date.now()
+                        };
+                        o.default.set(r, _.uuid), o.default.set(a, _.initialized.toString()), o.default.set(n, Date.now().toString()), e = _
+                    } else I && o.default.set(n, Date.now().toString());
+                    return e
+                });
+                return i = e
+            }
+            async function S() {
+                let e = await o.default.getAfterRefresh(r),
+                    _ = await o.default.getAfterRefresh(a).then(N),
+                    E = await o.default.getAfterRefresh(n).then(N);
+                return null != e && null != _ ? {
+                    uuid: e,
+                    initialized: _,
+                    lastUsed: E
+                } : null
+            }
+
+            function N(e) {
+                return null != e ? Number(e) : 0
             }
         },
         588788: function(e, _, E) {
@@ -19957,7 +20025,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 QuestsManager: {
-                    actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_START", "STREAM_CLOSE", "PASSIVE_UPDATE_V1", "VOICE_STATE_UPDATES"],
+                    actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_CREATE", "STREAM_CLOSE", "PASSIVE_UPDATE_V1", "VOICE_STATE_UPDATES"],
                     inlineRequire: () => E("319405").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -20688,8 +20756,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "272742", "272742"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272742")), _ = 0), _
+                let _ = parseInt((e = "273091", "273091"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273091")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22144,37 +22212,6 @@
                 }, E, ...a), "file-only" !== _ && console[_]("%c[".concat(e, "]"), "\nfont-weight: bold;\ncolor: purple;\n", E, ...a)
             });
             var a = t.default
-        },
-        648387: function(e, _, E) {
-            "use strict";
-            E.r(_), E.d(_, {
-                cleanupTempFiles: function() {
-                    return a
-                }
-            });
-            var t = E("811022"),
-                o = E("49671"),
-                n = E("697218"),
-                r = E("147746");
-
-            function a() {
-                var e;
-                (null === o.default || void 0 === o.default ? void 0 : null === (e = o.default.fileManager) || void 0 === e ? void 0 : e.cleanupTempFiles) != null && setTimeout(() => void I(), 1e4)
-            }
-            let i = new t.default("tempFiles");
-            async function I() {
-                var e;
-                if ((null === o.default || void 0 === o.default ? void 0 : null === (e = o.default.fileManager) || void 0 === e ? void 0 : e.cleanupTempFiles) != null) try {
-                    let e = await o.default.fileManager.cleanupTempFiles();
-                    if ((null == e ? void 0 : e.callscopeLogFiles) != null && e.callscopeLogFiles.length > 0) {
-                        let _ = Math.floor(1e3 * Math.random()).toString(),
-                            E = n.default.getCurrentUser();
-                        (null == E ? void 0 : E.isStaff()) && (_ = E.id), i.log("Uploading ".concat(e.callscopeLogFiles.length, " callscope logs as user ").concat(_)), await (0, r.uploadCallscopeLogFiles)(_, e.callscopeLogFiles)
-                    }
-                } catch (e) {
-                    i.error("Exception ".concat(null == e ? void 0 : e.message), e)
-                }
-            }
         },
         352690: function(e, _, E) {
             "use strict";
@@ -25992,76 +26029,112 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return M
+                    return h
                 }
             }), E("222007");
             var t = E("689988"),
                 o = E("374014"),
                 n = E("373469"),
-                r = E("271938"),
-                a = E("42203"),
-                i = E("546463"),
-                I = E("945956"),
-                T = E("316133"),
-                s = E("718517"),
-                S = E("815496"),
-                N = E("448881"),
-                O = E("374023"),
-                A = E("2973"),
-                R = E("227231"),
-                l = E("166604"),
-                u = E("49111");
-            let L = 5 * s.default.Millis.SECOND,
-                C = 12 * s.default.Millis.HOUR,
-                D = 1 * s.default.Millis.MINUTE,
-                c = 30 * s.default.Millis.SECOND;
+                r = E("42203"),
+                a = E("546463"),
+                i = E("945956"),
+                I = E("316133"),
+                T = E("718517"),
+                s = E("815496"),
+                S = E("448881"),
+                N = E("374023"),
+                O = E("2973"),
+                A = E("227231"),
+                R = E("166604"),
+                l = E("49111");
+            let u = 5 * T.default.Millis.SECOND,
+                L = 12 * T.default.Millis.HOUR,
+                C = 1 * T.default.Millis.MINUTE,
+                D = 30 * T.default.Millis.SECOND,
+                c = 1 * T.default.Millis.SECOND;
 
             function d() {
                 var e, _;
                 let E = n.default.getStreamerActiveStreamMetadata();
                 if ((null == E ? void 0 : E.id) == null) return null;
-                let t = i.default.getGameById(E.id);
+                let t = a.default.getGameById(E.id);
                 if ((null == t ? void 0 : t.id) == null) return null;
-                let o = (0, R.getQuestByApplicationId)(A.default.quests, t.id);
+                let o = (0, A.getQuestByApplicationId)(O.default.quests, t.id);
                 return (null == o ? void 0 : null === (e = o.userStatus) || void 0 === e ? void 0 : e.enrolledAt) == null || (null == o ? void 0 : null === (_ = o.userStatus) || void 0 === _ ? void 0 : _.completedAt) != null ? null : o
             }
-            class U extends t.default {
+
+            function U(e, _) {
+                var E;
+                let {
+                    channelId: t
+                } = (0, o.decodeStreamKey)(e);
+                return null != n.default.getRTCStream(e) && I.default.countVoiceStatesForChannel(t) >= 2 && (null === (E = d()) || void 0 === E ? void 0 : E.config.applicationId) === _
+            }
+            class M extends t.default {
                 maybeFetchCurrentQuests() {
-                    (0, O.getIsEligibleForQuests)({
-                        location: l.QuestsExperimentLocations.QUESTS_MANAGER,
+                    (0, N.getIsEligibleForQuests)({
+                        location: R.QuestsExperimentLocations.QUESTS_MANAGER,
                         autoTrackExposure: !1
-                    }) && !A.default.isFetchingCurrentQuests && (0, N.fetchCurrentQuests)()
+                    }) && !O.default.isFetchingCurrentQuests && (0, S.fetchCurrentQuests)()
                 }
                 constructor(...e) {
-                    super(...e), this.instantiatedAt = Date.now(), this.sendHeartbeatTimeoutIds = new Map, this.initiateHeartbeat = e => {
+                    super(...e), this.instantiatedAt = Date.now(), this.sendHeartbeatTimeoutIds = new Map, this.optimisticProgressUpdateIntervalIds = new Map, this.lastOptimisticallyUpdatedProgressMap = new Map, this.initiateHeartbeat = e => {
                         let {
                             questId: _,
                             streamKey: E,
                             applicationId: t
                         } = e;
                         this.terminateHeartbeat(E);
-                        let {
-                            channelId: r
-                        } = (0, o.decodeStreamKey)(E), a = () => {
-                            var e;
-                            null != n.default.getRTCStream(E) && T.default.countVoiceStatesForChannel(r) >= 2 && (null === (e = d()) || void 0 === e ? void 0 : e.config.applicationId) === t && (0, N.sendHeartbeat)({
+                        let o = () => {
+                            U(E, t) ? (0, S.sendHeartbeat)({
                                 questId: _,
                                 streamKey: E,
                                 applicationId: t
-                            });
-                            let o = this.calculateHeartbeatDurationMs(_);
-                            this.sendHeartbeatTimeoutIds.set(E, window.setTimeout(a, o))
+                            }) : this.terminateHeartbeat(E);
+                            let e = this.calculateHeartbeatDurationMs(_);
+                            this.sendHeartbeatTimeoutIds.set(E, window.setTimeout(o, e))
                         };
-                        a()
+                        o()
                     }, this.calculateHeartbeatDurationMs = e => {
-                        let _ = A.default.quests.get(e);
-                        if (null == _ || null == _.config || null == _.userStatus) return D;
+                        let _ = O.default.quests.get(e);
+                        if (null == _ || null == _.config || null == _.userStatus) return C;
                         let {
                             streamProgressSeconds: E
                         } = _.userStatus, t = 60 * _.config.streamDurationRequirementMinutes;
-                        return t - E <= .1 * t ? c : D
+                        return t - E <= .1 * t ? D : C
                     }, this.terminateHeartbeat = e => {
-                        window.clearTimeout(this.sendHeartbeatTimeoutIds.get(e)), this.sendHeartbeatTimeoutIds.delete(e)
+                        window.clearTimeout(this.sendHeartbeatTimeoutIds.get(e)), this.sendHeartbeatTimeoutIds.delete(e), this.terminateOptimisticProgressUpdateInterval(e)
+                    }, this.initiateOptimisticProgressUpdateInterval = e => {
+                        this.terminateOptimisticProgressUpdateInterval(e), this.optimisticProgressUpdateIntervalIds.set(e, window.setInterval(() => {
+                            let _ = d();
+                            if (null == _) {
+                                this.terminateOptimisticProgressUpdateInterval(e);
+                                return
+                            }
+                            let E = _.userStatus,
+                                t = _.config.streamDurationRequirementMinutes * T.default.Seconds.MINUTE,
+                                o = this.lastOptimisticallyUpdatedProgressMap.get(e);
+                            if (!U(e, _.config.applicationId)) {
+                                this.terminateOptimisticProgressUpdateInterval(e);
+                                return
+                            }
+                            if (null == o) this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now());
+                            else if (null != E) {
+                                let _ = Date.now() - o,
+                                    n = _ / T.default.Millis.SECOND,
+                                    r = E.streamProgressSeconds,
+                                    a = r + n;
+                                if (a <= t) {
+                                    let _ = {
+                                        ...E,
+                                        streamProgressSeconds: a
+                                    };
+                                    (0, S.optimisticallyUpdateQuestProgress)(_), this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now())
+                                }
+                            }
+                        }, c))
+                    }, this.terminateOptimisticProgressUpdateInterval = e => {
+                        window.clearInterval(this.optimisticProgressUpdateIntervalIds.get(e)), this.optimisticProgressUpdateIntervalIds.delete(e), this.lastOptimisticallyUpdatedProgressMap.delete(e)
                     }, this.handleEnrollmentSuccess = e => {
                         let {
                             enrolledQuestUserStatus: {
@@ -26076,15 +26149,20 @@
                             questId: E.id
                         })
                     }, this.handlePostConnectionOpen = () => {
-                        if (0 === A.default.lastFetchedCurrentQuests) window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * L))
+                        if (0 === O.default.lastFetchedCurrentQuests) window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * u))
                     }, this.handleSendHeartbeatSuccess = e => {
                         let {
                             streamKey: _,
                             userStatus: E
                         } = e;
-                        null != E.completedAt && this.terminateHeartbeat(_)
+                        this.terminateOptimisticProgressUpdateInterval(_), null != E.completedAt ? (this.terminateHeartbeat(_), this.terminateOptimisticProgressUpdateInterval(_)) : this.initiateOptimisticProgressUpdateInterval(_)
+                    }, this.handleSendHeartbeatFailure = e => {
+                        let {
+                            streamKey: _
+                        } = e;
+                        this.terminateOptimisticProgressUpdateInterval(_)
                     }, this.handleRunningGamesChange = () => {
-                        !(this.instantiatedAt + C > Date.now() || A.default.lastFetchedCurrentQuests + C > Date.now()) && this.maybeFetchCurrentQuests()
+                        !(this.instantiatedAt + L > Date.now() || O.default.lastFetchedCurrentQuests + L > Date.now()) && this.maybeFetchCurrentQuests()
                     }, this.handleVoiceStateChange = () => {
                         let e = n.default.getCurrentUserActiveStream();
                         if (null == e) return;
@@ -26094,8 +26172,8 @@
                             this.terminateHeartbeat(_);
                             return
                         }
-                        if (2 > T.default.countVoiceStatesForChannel(e.channelId)) {
-                            this.sendHeartbeatTimeoutIds.has(_) && ((0, N.sendHeartbeat)({
+                        if (2 > I.default.countVoiceStatesForChannel(e.channelId)) {
+                            this.sendHeartbeatTimeoutIds.has(_) && ((0, S.sendHeartbeat)({
                                 questId: E.id,
                                 streamKey: _,
                                 applicationId: E.config.applicationId
@@ -26106,29 +26184,25 @@
                             applicationId: E.config.applicationId,
                             questId: E.id
                         })
-                    }, this.handleStreamStart = e => {
+                    }, this.handleStreamCreate = e => {
                         var _;
                         let {
-                            streamType: E,
-                            guildId: t,
-                            channelId: n
-                        } = e, i = (0, o.encodeStreamKey)({
-                            streamType: E,
-                            guildId: t,
-                            channelId: n,
-                            ownerId: r.default.getId()
-                        }), s = d();
-                        if (null == s) {
-                            this.terminateHeartbeat(i);
+                            streamKey: E
+                        } = e, {
+                            channelId: t,
+                            guildId: n
+                        } = (0, o.decodeStreamKey)(E), a = d();
+                        if (null == a) {
+                            this.terminateHeartbeat(E);
                             return
-                        }(0, S.trackQuestEvent)(s.id, u.AnalyticEvents.QUEST_STREAMING_STARTED, {
-                            media_session_id: I.default.getMediaSessionId(),
-                            channel_type: null === (_ = a.default.getChannel(n)) || void 0 === _ ? void 0 : _.type,
-                            guild_id: t
-                        }), !(2 > T.default.countVoiceStatesForChannel(n)) && this.initiateHeartbeat({
-                            streamKey: i,
-                            applicationId: s.config.applicationId,
-                            questId: s.id
+                        }(0, s.trackQuestEvent)(a.id, l.AnalyticEvents.QUEST_STREAMING_STARTED, {
+                            media_session_id: i.default.getMediaSessionId(),
+                            channel_type: null === (_ = r.default.getChannel(t)) || void 0 === _ ? void 0 : _.type,
+                            guild_id: n
+                        }), !(2 > I.default.countVoiceStatesForChannel(t)) && this.initiateHeartbeat({
+                            streamKey: E,
+                            applicationId: a.config.applicationId,
+                            questId: a.id
                         })
                     }, this.handleStreamClose = e => {
                         let {
@@ -26138,16 +26212,17 @@
                     }, this.actions = {
                         QUESTS_ENROLL_SUCCESS: this.handleEnrollmentSuccess,
                         QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,
+                        QUESTS_SEND_HEARTBEAT_FAILURE: this.handleSendHeartbeatFailure,
                         POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
                         RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
-                        STREAM_START: this.handleStreamStart,
+                        STREAM_CREATE: this.handleStreamCreate,
                         STREAM_CLOSE: this.handleStreamClose,
                         PASSIVE_UPDATE_V1: this.handleVoiceStateChange,
                         VOICE_STATE_UPDATES: this.handleVoiceStateChange
                     }
                 }
             }
-            var M = new U
+            var h = new M
         },
         50733: function(e, _, E) {
             "use strict";
@@ -27824,8 +27899,9 @@
             E.r(_);
             var t = E("759843"),
                 o = E("913144"),
-                n = E("271938"),
-                r = E("49111");
+                n = E("371160"),
+                r = E("271938"),
+                a = E("49111");
             (0, t.analyticsTrackingStoreMaker)({
                 dispatcher: o.default,
                 actionHandler: {
@@ -27836,9 +27912,12 @@
                     FINGERPRINT: () => t.AnalyticsActionHandlers.handleFingerprint(),
                     TRACK: e => t.AnalyticsActionHandlers.handleTrack(e)
                 },
-                TRACKING_URL: r.Endpoints.TRACK,
-                waitFor: [n.default],
-                getFingerprint: n.default.getFingerprint
+                TRACKING_URL: a.Endpoints.TRACK,
+                waitFor: [r.default],
+                getFingerprint: r.default.getFingerprint,
+                getSessionId: () => (0, n.getSession)().then(e => ({
+                    sessionId: null == e ? void 0 : e.uuid
+                }))
             })
         },
         130473: function(e, _, E) {
@@ -36246,4 +36325,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.958c2c161323db179337.js.map
+//# sourceMappingURL=76039.c5f12725dac07e787632.js.map

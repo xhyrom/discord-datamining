@@ -273,6 +273,9 @@
                         i.default.dispatch({
                             type: "SKU_FETCH_SUCCESS",
                             sku: n ? u.body : u.body.sku
+                        }), !n && i.default.dispatch({
+                            type: "STORE_LISTING_FETCH_SUCCESS",
+                            storeListing: u.body
                         })
                     } catch (t) {
                         throw i.default.dispatch({
@@ -2755,4 +2758,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23777.90702581369752e2265d.js.map
+//# sourceMappingURL=23777.02824c33c8e6fc9f483f.js.map
