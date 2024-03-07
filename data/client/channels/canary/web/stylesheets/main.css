@@ -39982,7 +39982,7 @@ html .progress__4ef76 {
     margin-top: 8px;
     max-width: 224px;
     padding: 8px;
-    background-color: var(--bg-overlay-chat, var(--background-primary));
+    background: var(--bg-overlay-3, var(--background-primary));
     border-radius: var(--radius-md);
     gap: 8px;
     align-items: center;
@@ -39990,7 +39990,7 @@ html .progress__4ef76 {
 }
 
 .container__35f96:hover {
-    background-color: var(--background-modifier-hover);
+    background: var(--bg-overlay-5, var(--background-modifier-hover));
     cursor: pointer
 }
 
@@ -129157,4 +129157,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.2f74aa2b5562e6109c6c.css.map*/
+/*# sourceMappingURL=app.bf012a0f1dda299e7e54.css.map*/
