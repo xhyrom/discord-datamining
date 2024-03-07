@@ -27706,14 +27706,16 @@ html .progress__4ef76 {
 }
 
 .voteCountButton__81a71 {
-    border-radius: 2px;
-    background-color: transparent;
-    transition: background-color var(--custom-button-transition-duration)ease;
-    cursor: pointer
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+    color: var(--interactive-active)
 }
 
-.voteCountButton__81a71:hover {
-    background-color: var(--background-accent)
+.voteCountButton__81a71 :hover {
+    color: var(--interactive-active);
+    -webkit-text-decoration: underline;
+    text-decoration: underline
 }
 
 .voterTooltip__04695 {
@@ -129125,4 +129127,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7afe3e5010c46ba66ec2.css.map*/
+/*# sourceMappingURL=app.9445347ac6dbaac6af2d.css.map*/
