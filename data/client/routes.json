@@ -4794,5 +4794,9 @@
   "USER_LOOTBOX_OPEN_ITEM": {
     "url": "/users/@me/lootboxes/open",
     "allowed_methods": null
+  },
+  "USER_LOOTBOX_REDEEM_PRIZE": {
+    "url": "/users/@me/lootboxes/redeem-prize",
+    "allowed_methods": null
   }
 }
