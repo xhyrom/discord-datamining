@@ -1,4 +1,4 @@
-<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><strong><span id="docs-internal-guid-ce49ad96-7fff-2cd2-d261-bde8236a7705"><img src="https://support.discord.com/hc/article_attachments/21869977523095" width="721" height="409"></span></strong></span></p>
+<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><strong><span id="docs-internal-guid-ce49ad96-7fff-2cd2-d261-bde8236a7705"><img src="https://support.discord.com/hc/article_attachments/21869977523095" width="841" height="477"></span></strong></span></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul id="docs-internal-guid-3da5f8ac-7fff-8a3f-f18f-002b8d4d7a09">
     <li><a href="https://support.discord.com/hc/en-us/articles/4409235005207#h_01FB7GSDX29HY45M5SCMK2YBYK">What is Sketch Heads?</a></li>

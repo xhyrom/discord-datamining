@@ -31,7 +31,7 @@
 </h3>
 <p>2. Once you have chosen which type of game you would like to play, select<strong> Private Game</strong> or <strong>Play Now</strong> to get started. </p>
 <p id="docs-internal-guid-9e38599c-7fff-3994-4d0e-7eee0c27bba7">For this example, we will be playing a <strong>Private Game</strong>. </p>
-<h3 id="h_01HPSB0T4PABD09RAKAT9SVY7Y" class="wysiwyg-text-align-center"><span id="docs-internal-guid-9f0d9184-7fff-62aa-a8f6-cbc99da404b8"><img src="https://support.discord.com/hc/article_attachments/21887676617623" width="624" height="348"></span></h3>
+<p id="h_01HPSB0T4PABD09RAKAT9SVY7Y" class="wysiwyg-text-align-center"><span id="docs-internal-guid-9f0d9184-7fff-62aa-a8f6-cbc99da404b8"><img src="https://support.discord.com/hc/article_attachments/21887676617623" width="619" height="346"></span></p>
 <p id="docs-internal-guid-0c38b3a4-7fff-bd8e-ca0c-8a5856f8cf40">3. After hopping into the game, press a <strong>plus sign</strong> [<strong>+</strong>] button to join a team. </p>
 <p>4. Use the <strong>left</strong> <strong>and right arrows</strong> located above the team mascot to select a team name. </p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-7b5baa41-7fff-df9c-c721-a960674e2c10"><img src="https://support.discord.com/hc/article_attachments/21887676633367" width="619" height="347"></span></p>
