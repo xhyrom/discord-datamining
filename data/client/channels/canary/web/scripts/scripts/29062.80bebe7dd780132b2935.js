@@ -71192,21 +71192,22 @@
                         selfDeaf: s = !1,
                         selfVideo: r = !1,
                         preferredRegion: a = null,
-                        videoStreamParameters: l = null,
-                        flags: u = 0
-                    } = e, d = {
+                        preferredRegions: l = null,
+                        videoStreamParameters: u = null,
+                        flags: d = 0
+                    } = e, c = {
                         guild_id: t,
                         channel_id: n,
                         self_mute: i,
                         self_deaf: s,
                         self_video: r,
-                        flags: u
+                        flags: d
                     };
-                    null != n && o.default.shouldIncludePreferredRegion() && (d.preferred_region = a), null != l && (d.tracks = null == l ? void 0 : l.map(e => ({
+                    null != n && o.default.shouldIncludePreferredRegion() && (c.preferred_region = a, c.preferred_regions = l), null != u && (c.tracks = null == u ? void 0 : u.map(e => ({
                         type: e.type,
                         rid: e.rid,
                         quality: e.quality
-                    }))), this.send(4, d)
+                    }))), this.send(4, c)
                 }
                 voiceServerPing() {
                     this.send(5, null)
@@ -71573,6 +71574,7 @@
                         selfDeaf: h.default.isSelfDeaf(),
                         selfVideo: h.default.isVideoEnabled(),
                         preferredRegion: null,
+                        preferredRegions: null,
                         videoStreamParameters: null,
                         flags: 0
                     }
@@ -71589,6 +71591,7 @@
                         selfDeaf: h.default.isSelfDeaf(),
                         selfVideo: h.default.isVideoEnabled(),
                         preferredRegion: E.default.getPreferredRegion(),
+                        preferredRegions: E.default.getPreferredRegions(),
                         videoStreamParameters: h.default.getVideoStreamParameters(),
                         flags: this.computeVoiceFlags()
                     }
@@ -71605,8 +71608,9 @@
                         selfDeaf: r,
                         selfVideo: a,
                         preferredRegion: o,
-                        videoStreamParameters: l,
-                        flags: u = 0
+                        preferredRegions: l,
+                        videoStreamParameters: u,
+                        flags: d = 0
                     } = e;
                     a && (null === (t = _.default.getChannel(i)) || void 0 === t ? void 0 : t.type) === m.ChannelTypes.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
                         guildId: n,
@@ -71615,8 +71619,9 @@
                         selfDeaf: r,
                         selfVideo: a,
                         preferredRegion: o,
-                        videoStreamParameters: l,
-                        flags: u
+                        preferredRegions: l,
+                        videoStreamParameters: u,
+                        flags: d
                     }) : this.socket.voiceStateUpdate({
                         guildId: n,
                         channelId: i,
@@ -71624,7 +71629,8 @@
                         selfDeaf: r,
                         selfVideo: a,
                         preferredRegion: o,
-                        flags: u
+                        preferredRegions: l,
+                        flags: d
                     })
                 }
                 constructor(e) {
@@ -87226,8 +87232,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709838383486",
-                                    build_number: "273125"
+                                    built_at: "1709838764040",
+                                    build_number: "273128"
                                 }
                             },
                             retries: 1
@@ -115653,7 +115659,7 @@
                 a = n("913144"),
                 o = n("718517");
             let l = {
-                    preferredRegion: null,
+                    preferredRegions: null,
                     lastTestTimestamp: null,
                     lastGeoRankedOrder: null
                 },
@@ -115664,10 +115670,14 @@
                     u = null != e ? e : l
                 }
                 shouldIncludePreferredRegion() {
-                    return null != u.preferredRegion
+                    return null != u.preferredRegions
                 }
                 getPreferredRegion() {
-                    return u.preferredRegion
+                    var e, t;
+                    return null !== (t = null === (e = u.preferredRegions) || void 0 === e ? void 0 : e[0]) && void 0 !== t ? t : null
+                }
+                getPreferredRegions() {
+                    return u.preferredRegions
                 }
                 getRegion(e) {
                     if (null != e) return e.substr(0, e.search(/\d/))
@@ -115677,13 +115687,13 @@
                 }
                 shouldPerformLatencyTest(e) {
                     var t, n;
-                    return null === u.preferredRegion || !s.isEqual(e, null !== (t = u.lastGeoRankedOrder) && void 0 !== t ? t : []) || Date.now() - (null !== (n = u.lastTestTimestamp) && void 0 !== n ? n : 0) >= d
+                    return null === u.preferredRegions || !s.isEqual(e, null !== (t = u.lastGeoRankedOrder) && void 0 !== t ? t : []) || Date.now() - (null !== (n = u.lastTestTimestamp) && void 0 !== n ? n : 0) >= d
                 }
             }
-            c.displayName = "RTCRegionStore", c.persistKey = "RTCRegionStore";
+            c.displayName = "RTCRegionStore", c.persistKey = "RTCRegionStore", c.migrations = [e => (e.preferredRegion ? e.preferredRegions = [e.preferredRegion] : e.preferredRegions = null, delete e.preferredRegion, e)];
             var f = new c(a.default, {
                 RTC_LATENCY_TEST_COMPLETE: function(e) {
-                    e.latencyRankedRegions.length > 0 && (u.lastGeoRankedOrder = e.geoRankedRegions, u.preferredRegion = e.latencyRankedRegions[0]), u.lastTestTimestamp = Date.now()
+                    e.latencyRankedRegions.length > 0 && (u.lastGeoRankedOrder = e.geoRankedRegions, u.preferredRegions = e.latencyRankedRegions), u.lastTestTimestamp = Date.now()
                 }
             })
         },
@@ -124542,7 +124552,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "36d9476e347511bd318322955cf282e9e81af39f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "910a76b093420ca8a9210aae82db138bf134b7bf"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133852,7 +133862,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273125"
+                                build_number: "273128"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151432,4 +151442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.787f47407fa8ca65299d.js.map
+//# sourceMappingURL=29062.80bebe7dd780132b2935.js.map
