@@ -4,38 +4,44 @@
             "use strict";
             r.r(t), r.d(t, {
                 updateSubscriptionInvoicePreview: function() {
-                    return E
-                },
-                useSubscriptionInvoicePreview: function() {
                     return R
                 },
+                useOneTimePurchaseInvoicePreview: function() {
+                    return O
+                },
+                useSubscriptionInvoicePreview: function() {
+                    return T
+                },
                 useGetSubscriptionInvoice: function() {
-                    return I
+                    return p
                 },
                 getItemUnitPriceWithDiscount: function() {
-                    return L
+                    return A
                 }
             }), r("222007");
             var n = r("884691"),
-                i = r("446674"),
-                l = r("872717"),
-                u = r("448993"),
-                s = r("195358"),
-                a = r("521012"),
-                f = r("719923"),
-                o = r("49111");
-            async function _(e) {
+                i = r("627445"),
+                l = r.n(i),
+                u = r("446674"),
+                s = r("872717"),
+                a = r("448993"),
+                f = r("195358"),
+                o = r("521012"),
+                c = r("719923"),
+                _ = r("271560"),
+                E = r("49111");
+            async function d(e) {
                 let {
                     items: t,
                     paymentSourceId: r,
                     trialId: n,
                     code: i,
-                    applyEntitlements: a = !1,
-                    currency: _,
-                    renewal: E,
-                    metadata: c
+                    applyEntitlements: l = !1,
+                    currency: u,
+                    renewal: o,
+                    metadata: _
                 } = e;
-                t = (0, f.coerceExistingItemsToNewItemInterval)(t);
+                t = (0, c.coerceExistingItemsToNewItemInterval)(t);
                 let d = {
                     items: t.map(e => {
                         let {
@@ -50,35 +56,35 @@
                     payment_source_id: r,
                     trial_id: n,
                     code: i,
-                    apply_entitlements: a,
-                    currency: _,
-                    renewal: E,
-                    metadata: c
+                    apply_entitlements: l,
+                    currency: u,
+                    renewal: o,
+                    metadata: _
                 };
                 try {
-                    let e = await l.default.post({
-                        url: o.Endpoints.BILLING_SUBSCRIPTIONS_PREVIEW,
+                    let e = await s.default.post({
+                        url: E.Endpoints.BILLING_SUBSCRIPTIONS_PREVIEW,
                         body: d,
                         oldFormErrors: !0
                     });
-                    return s.default.createInvoiceFromServer(e.body)
+                    return f.default.createInvoiceFromServer(e.body)
                 } catch (e) {
-                    throw new u.BillingError(e)
+                    throw new a.BillingError(e)
                 }
             }
-            async function E(e) {
+            async function R(e) {
                 let {
                     subscriptionId: t,
                     items: r,
                     paymentSourceId: n,
                     renewal: i,
-                    currency: a,
-                    applyEntitlements: _ = !1,
-                    analyticsLocations: E,
-                    analyticsLocation: c,
+                    currency: l,
+                    applyEntitlements: u = !1,
+                    analyticsLocations: o,
+                    analyticsLocation: _,
                     userDiscountOfferId: d
                 } = e;
-                null != r && (r = (0, f.coerceExistingItemsToNewItemInterval)(r));
+                null != r && (r = (0, c.coerceExistingItemsToNewItemInterval)(r));
                 let R = {
                     items: null == r ? void 0 : r.map(e => {
                         let {
@@ -92,60 +98,87 @@
                     }),
                     payment_source_id: n,
                     renewal: i,
-                    apply_entitlements: _,
-                    currency: a,
+                    apply_entitlements: u,
+                    currency: l,
                     user_discount_offer_id: d
                 };
                 try {
-                    let e = await l.default.patch({
-                        url: o.Endpoints.BILLING_SUBSCRIPTION_PREVIEW(t),
+                    let e = await s.default.patch({
+                        url: E.Endpoints.BILLING_SUBSCRIPTION_PREVIEW(t),
                         query: {
-                            location: c,
-                            location_stack: E
+                            location: _,
+                            location_stack: o
                         },
                         body: R,
                         oldFormErrors: !0
                     });
-                    return s.default.createInvoiceFromServer(e.body)
+                    return f.default.createInvoiceFromServer(e.body)
                 } catch (e) {
-                    throw new u.BillingError(e)
+                    throw new a.BillingError(e)
                 }
             }
-            async function c(e) {
+            async function I(e) {
+                let {
+                    paymentSourceId: t,
+                    skuId: r,
+                    subscriptionPlanId: n
+                } = e;
+                l(r, "SKU ID is missing for one time purchase gift invoice preview");
+                try {
+                    let e = await (0, _.httpGetWithCountryCodeQuery)({
+                        url: E.Endpoints.STORE_SKU_PURCHASE(r),
+                        query: {
+                            gift: !0,
+                            payment_source_id: t,
+                            sku_subscription_plan_id: n
+                        },
+                        oldFormErrors: !0
+                    });
+                    return e.body
+                } catch (e) {
+                    throw new a.BillingError(e)
+                }
+            }
+            async function L(e) {
                 let {
                     subscriptionId: t,
                     preventFetch: r
                 } = e;
                 if (r) return null;
-                let n = await l.default.get({
-                    url: o.Endpoints.BILLING_SUBSCRIPTION_INVOICE(t),
+                let n = await s.default.get({
+                    url: E.Endpoints.BILLING_SUBSCRIPTION_INVOICE(t),
                     oldFormErrors: !0
                 });
-                return s.default.createInvoiceFromServer(n.body)
+                return f.default.createInvoiceFromServer(n.body)
             }
 
-            function d(e, t) {
+            function S(e, t) {
                 let {
                     preventFetch: r = !1
-                } = e, [l, u] = (0, n.useState)(null), [s, f] = (0, n.useState)(null), o = (0, i.useStateFromStores)([a.default], () => a.default.getSubscriptions());
+                } = e, [i, l] = (0, n.useState)(null), [s, a] = (0, n.useState)(null), f = (0, u.useStateFromStores)([o.default], () => o.default.getSubscriptions());
                 return (0, n.useEffect)(() => {
                     let e = !1;
                     async function n() {
                         try {
-                            f(null), u(null);
+                            a(null), l(null);
                             let r = await t();
-                            !e && u(r)
+                            !e && l(r)
                         } catch (t) {
-                            !e && f(t)
+                            !e && a(t)
                         }
                     }
                     return !r && n(), () => {
                         e = !0
                     }
-                }, [r, t, o]), [l, s]
+                }, [r, t, f]), [i, s]
             }
 
-            function R(e) {
+            function O(e) {
+                let t = (0, n.useCallback)(() => I(e), [JSON.stringify(e)]);
+                return S(e, t)
+            }
+
+            function T(e) {
                 if ("subscriptionId" in e && null == e.subscriptionId) {
                     let {
                         subscriptionId: t,
@@ -153,16 +186,16 @@
                     } = e;
                     e = r
                 }
-                let t = (0, n.useCallback)(() => "subscriptionId" in e ? E(e) : "items" in e ? _(e) : null, [JSON.stringify(e)]);
-                return d(e, t)
+                let t = (0, n.useCallback)(() => "subscriptionId" in e ? R(e) : "items" in e ? d(e) : null, [JSON.stringify(e)]);
+                return S(e, t)
             }
 
-            function I(e) {
-                let t = (0, n.useCallback)(() => c(e), [JSON.stringify(e)]);
-                return d(e, t)
+            function p(e) {
+                let t = (0, n.useCallback)(() => L(e), [JSON.stringify(e)]);
+                return S(e, t)
             }
 
-            function L(e) {
+            function A(e) {
                 let t = e.subscriptionPlanPrice;
                 return e.discounts.forEach(r => {
                     let n = r.amount / e.quantity;
@@ -183,7 +216,7 @@
                     return o
                 },
                 resolveReferralTrialOffer: function() {
-                    return _
+                    return c
                 }
             });
             var n = r("872717"),
@@ -248,7 +281,7 @@
                     }
                 }
             }
-            async function _(e) {
+            async function c(e) {
                 try {
                     var t;
                     let r = await n.default.get({
@@ -285,9 +318,9 @@
                 a = r("49111");
             let f = null,
                 o = {},
-                _ = [],
-                E = new Set,
-                c = !1,
+                c = [],
+                _ = new Set,
+                E = !1,
                 d = new Set,
                 R = new Set,
                 I = {},
@@ -299,14 +332,14 @@
                 d.add(e)
             }
 
-            function A(e) {
+            function p(e) {
                 let {
                     messages: t
                 } = e;
-                t.forEach(e => p(e))
+                t.forEach(e => A(e))
             }
 
-            function p(e) {
+            function A(e) {
                 let t = e.type === n.MessageTypes.PREMIUM_REFERRAL ? e.content : null;
                 if (null == t) return !1;
                 if (!R.has(t) && !d.has(t)) {
@@ -319,22 +352,22 @@
                     this.waitFor(u.default), this.syncWith([u.default], O)
                 }
                 checkAndFetchReferralsRemaining() {
-                    null == f && !c && L < 5 && (null == S || S < Date.now()) && (0, s.fetchReferralsRemaining)()
+                    null == f && !E && L < 5 && (null == S || S < Date.now()) && (0, s.fetchReferralsRemaining)()
                 }
                 getReferralsRemaining() {
                     return this.checkAndFetchReferralsRemaining(), f
                 }
                 getSentUserIds() {
-                    return this.checkAndFetchReferralsRemaining(), null == _ ? [] : _
+                    return this.checkAndFetchReferralsRemaining(), null == c ? [] : c
                 }
                 isFetchingReferralsRemaining() {
-                    return c
+                    return E
                 }
                 isFetchingRecipientEligibility(e) {
-                    return E.has(e)
+                    return _.has(e)
                 }
                 getRecipientEligibility(e) {
-                    return void 0 === o[e] && !E.has(e) && (0, s.checkRecipientEligibility)(e), o[e]
+                    return void 0 === o[e] && !_.has(e) && (0, s.checkRecipientEligibility)(e), o[e]
                 }
                 getRelevantUserTrialOffer(e) {
                     return I[e]
@@ -350,50 +383,50 @@
                         userTrialOfferId: t,
                         recipientId: r
                     } = e;
-                    if (!c && (0, s.fetchReferralsRemaining)(), !E.has(r) && (0, s.checkRecipientEligibility)(r), !d.has(t)) {
+                    if (!E && (0, s.fetchReferralsRemaining)(), !_.has(r) && (0, s.checkRecipientEligibility)(r), !d.has(t)) {
                         var n;
                         n = t, d.add(n), l.default.wait(() => (0, s.resolveReferralTrialOffer)(t).catch(a.NOOP_NULL))
                     }
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_START: function(e) {
                     let {} = e;
-                    c = !0
+                    E = !0
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: function(e) {
                     let {
                         referrals_remaining: t,
                         sent_user_ids: r
                     } = e;
-                    c = !1, f = t, _ = r
+                    E = !1, f = t, c = r
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_FAIL: function(e) {
                     let {} = e;
-                    c = !1, L += 1, S = Date.now() + 1e3 * Math.pow(2, L)
+                    E = !1, L += 1, S = Date.now() + 1e3 * Math.pow(2, L)
                 },
                 BILLING_CREATE_REFERRAL_PREVIEW_START: function(e) {
                     let {
                         recipientId: t
                     } = e;
-                    E.add(t)
+                    _.add(t)
                 },
                 BILLING_CREATE_REFERRAL_PREVIEW_SUCCESS: function(e) {
                     let {
                         recipientId: t,
                         is_eligible: r
                     } = e;
-                    o[t] = r, E.delete(t)
+                    o[t] = r, _.delete(t)
                 },
                 BILLING_CREATE_REFERRAL_PREVIEW_FAIL: function(e) {
                     let {
                         recipientId: t
                     } = e;
-                    o[t] = !1, E.delete(t)
+                    o[t] = !1, _.delete(t)
                 },
                 BILLING_CREATE_REFERRAL_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t
                     } = e;
-                    (0, s.fetchReferralsRemaining)(), I[t.id] = t, _ = [..._, t.user_id]
+                    (0, s.fetchReferralsRemaining)(), I[t.id] = t, c = [...c, t.user_id]
                 },
                 BILLING_REFERRAL_RESOLVE_SUCCESS: function(e) {
                     let {
@@ -407,16 +440,16 @@
                     } = e;
                     d.delete(t), R.add(t)
                 },
-                LOAD_MESSAGES_SUCCESS: A,
+                LOAD_MESSAGES_SUCCESS: p,
                 MESSAGE_CREATE: function(e) {
                     let {
                         message: t
                     } = e;
-                    p(t)
+                    A(t)
                 },
-                LOAD_MESSAGES_AROUND_SUCCESS: A,
+                LOAD_MESSAGES_AROUND_SUCCESS: p,
                 LOGOUT: function() {
-                    f = null, o = {}, _ = [], E = new Set, c = !1, d = new Set, R = new Set, I = {}, L = 0, S = null
+                    f = null, o = {}, c = [], _ = new Set, E = !1, d = new Set, R = new Set, I = {}, L = 0, S = null
                 }
             })
         },
@@ -437,10 +470,10 @@
                 var t, r, a;
                 let f = (0, u.useTrialOffer)(s.PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID),
                     o = (0, u.useTrialOffer)(s.PREMIUM_TIER_2_REACTIVATION_TRIAL_ID),
-                    _ = (0, u.useTrialOffer)(i.default.getAnyOfUserTrialOfferId([s.PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID, s.PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, s.PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID, s.PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID])),
-                    E = (0, u.useTrialOffer)(s.PREMIUM_TIER_2_AUTH3_TRIAL_ID),
-                    c = (0, n.default)([l.default], () => void 0 === e ? null : l.default.getRelevantUserTrialOffer(e));
-                return null !== (a = null !== (r = null !== (t = null != c ? c : f) && void 0 !== t ? t : o) && void 0 !== r ? r : _) && void 0 !== a ? a : E
+                    c = (0, u.useTrialOffer)(i.default.getAnyOfUserTrialOfferId([s.PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID, s.PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, s.PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID, s.PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID])),
+                    _ = (0, u.useTrialOffer)(s.PREMIUM_TIER_2_AUTH3_TRIAL_ID),
+                    E = (0, n.default)([l.default], () => void 0 === e ? null : l.default.getRelevantUserTrialOffer(e));
+                return null !== (a = null !== (r = null !== (t = null != E ? E : f) && void 0 !== t ? t : o) && void 0 !== r ? r : c) && void 0 !== a ? a : _
             }
         },
         833516: function(e, t, r) {
@@ -467,7 +500,7 @@
             function o(e) {
                 let t = (0, i.useStateFromStores)([s.default], () => s.default.getUserTrialOffer(e)),
                     [r, o] = n.useState(f(t)),
-                    _ = (0, i.useStateFromStores)([u.default], () => (0, a.isPremium)(u.default.getCurrentUser()));
+                    c = (0, i.useStateFromStores)([u.default], () => (0, a.isPremium)(u.default.getCurrentUser()));
                 return n.useEffect(() => {
                     if (null != t && null != t.expires_at) {
                         let e = new l.Timeout,
@@ -479,7 +512,7 @@
                             };
                         return n(), () => e.stop()
                     }
-                }, [r, t]), r || _ ? null : t
+                }, [r, t]), r || c ? null : t
             }
         },
         340412: function(e, t, r) {
@@ -503,18 +536,18 @@
                 },
                 o = f;
 
-            function _() {
+            function c() {
                 o.userTrialOffers = {}, o.userDiscountOffers = {}, o.userOffersLastFetchedAtDate = void 0
             }
-            let E = () => !0;
+            let _ = () => !0;
 
-            function c() {
+            function E() {
                 let e = s.default.getPremiumTypeSubscription();
                 return null != e && (o.userTrialOffers = {}, o.userDiscountOffers = {}, !0)
             }
             class d extends n.default.PersistedStore {
                 initialize(e) {
-                    o = null != e ? e : f, this.waitFor(l.default), this.syncWith([l.default], E), this.syncWith([s.default], c)
+                    o = null != e ? e : f, this.waitFor(l.default), this.syncWith([l.default], _), this.syncWith([s.default], E)
                 }
                 getUserTrialOffer(e) {
                     if (null !== e) return o.userTrialOffers[e]
@@ -559,7 +592,7 @@
                     return o
                 }
                 forceReset() {
-                    _()
+                    c()
                 }
             }
             d.displayName = "UserOfferStore", d.persistKey = "UserOfferStore", d.migrations = [e => {
@@ -574,7 +607,7 @@
                     let {
                         userTrialOffer: t
                     } = e;
-                    null != t ? o.userTrialOffers[t.trial_id] = t : _(), o.userOffersLastFetchedAtDate = Date.now()
+                    null != t ? o.userTrialOffers[t.trial_id] = t : c(), o.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: function(e) {
                     let {
@@ -588,7 +621,7 @@
                         userDiscount: r,
                         userDiscountOffer: n
                     } = e;
-                    null == t && null == r && null == n && _(), null != t ? (o.userTrialOffers[t.trial_id] = t, o.userDiscountOffers = {}) : null != r ? (o.userDiscountOffers[r.discount_id] = r, o.userTrialOffers = {}) : null != n && (o.userDiscountOffers[n.discount_id] = n, o.userTrialOffers = {}), o.userOffersLastFetchedAtDate = Date.now()
+                    null == t && null == r && null == n && c(), null != t ? (o.userTrialOffers[t.trial_id] = t, o.userDiscountOffers = {}) : null != r ? (o.userDiscountOffers[r.discount_id] = r, o.userTrialOffers = {}) : null != n && (o.userDiscountOffers[n.discount_id] = n, o.userTrialOffers = {}), o.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: function(e) {
                     let {
@@ -598,9 +631,9 @@
                     } = e;
                     null != t ? o.userTrialOffers[t.trial_id] = t : o.userTrialOffers = {}, null != r ? o.userDiscountOffers[r.discount_id] = r : null != n ? o.userDiscountOffers[n.discount_id] = n : o.userDiscountOffers = {}, o.userOffersLastFetchedAtDate = Date.now()
                 },
-                LOGOUT: _
+                LOGOUT: c
             })
         }
     }
 ]);
-//# sourceMappingURL=89904.9f9ef8324d9c17859563.js.map
+//# sourceMappingURL=89904.a8efed4a1a4dd8bea112.js.map
