@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["95185"], {
+    ["83257"], {
         337575: function(e, t, s) {
             "use strict";
             s.r(t), s.d(t, {
@@ -7,8 +7,8 @@
                     return l
                 }
             }), s("808653"), s("222007"), s("781738"), s("506083"), s("511434"), s("313619"), s("654714"), s("287168"), s("956660"), s("424973");
-            var l, u = s("917351"),
-                i = s.n(u),
+            var l, i = s("917351"),
+                u = s.n(i),
                 n = s("404828"),
                 r = s.n(n),
                 a = s("872173"),
@@ -25,15 +25,15 @@
                 C = s("253981"),
                 g = s("447909"),
                 T = s("195547"),
-                m = s("375822"),
-                A = s("49111");
+                A = s("375822"),
+                m = s("49111");
             let U = Object.freeze({});
 
-            function I(e, t) {
+            function S(e, t) {
                 var s, l;
                 if (!t.frecencyBoosters) return {};
-                let u = p.default.getFrequentlyWithoutFetchingLatest(),
-                    i = u.reduce((e, t) => {
+                let i = p.default.getFrequentlyWithoutFetchingLatest(),
+                    u = i.reduce((e, t) => {
                         let {
                             id: s
                         } = t, l = p.default.getScoreWithoutFetchingLatest(s);
@@ -41,33 +41,33 @@
                     }, 0),
                     n = [];
                 switch (e) {
-                    case m.AutocompleterResultTypes.GUILD:
-                        n = u.filter(e => e instanceof h.default);
+                    case A.AutocompleterResultTypes.GUILD:
+                        n = i.filter(e => e instanceof h.default);
                         break;
-                    case m.AutocompleterResultTypes.USER:
-                        n = u.filter(e => e instanceof o.ChannelRecordBase && e.type === A.ChannelTypes.DM);
+                    case A.AutocompleterResultTypes.USER:
+                        n = i.filter(e => e instanceof o.ChannelRecordBase && e.type === m.ChannelTypes.DM);
                         break;
-                    case m.AutocompleterResultTypes.GROUP_DM:
-                        n = u.filter(e => e instanceof o.ChannelRecordBase && e.isMultiUserDM());
+                    case A.AutocompleterResultTypes.GROUP_DM:
+                        n = i.filter(e => e instanceof o.ChannelRecordBase && e.isMultiUserDM());
                         break;
-                    case m.AutocompleterResultTypes.TEXT_CHANNEL:
-                        n = u.filter(e => e instanceof o.ChannelRecordBase && (0, o.isGuildSelectableChannelType)(e.type));
+                    case A.AutocompleterResultTypes.TEXT_CHANNEL:
+                        n = i.filter(e => e instanceof o.ChannelRecordBase && (0, o.isGuildSelectableChannelType)(e.type));
                         break;
-                    case m.AutocompleterResultTypes.VOICE_CHANNEL:
-                        n = u.filter(e => e instanceof o.ChannelRecordBase && e.isGuildVocal())
+                    case A.AutocompleterResultTypes.VOICE_CHANNEL:
+                        n = i.filter(e => e instanceof o.ChannelRecordBase && e.isGuildVocal())
                 }
                 let r = {};
                 for (let t of n) {
                     let {
                         id: s
                     } = t, l = p.default.getScoreWithoutFetchingLatest(s);
-                    if (e === m.AutocompleterResultTypes.USER && t instanceof o.PrivateChannelRecord) {
-                        if (t.type === A.ChannelTypes.DM) r[s = t.getRecipientId()] = 1 + l / i;
-                        else if (t.type === A.ChannelTypes.GROUP_DM) {
+                    if (e === A.AutocompleterResultTypes.USER && t instanceof o.PrivateChannelRecord) {
+                        if (t.type === m.ChannelTypes.DM) r[s = t.getRecipientId()] = 1 + l / u;
+                        else if (t.type === m.ChannelTypes.GROUP_DM) {
                             let e = t.recipients.length;
-                            for (let s of t.recipients) r[s] = 1 + l / i * (1 / e)
+                            for (let s of t.recipients) r[s] = 1 + l / u * (1 / e)
                         }
-                    } else r[s] = 1 + l / i
+                    } else r[s] = 1 + l / u
                 }
                 let a = f.default.getFriendIDs();
                 for (let e of a) r[e] = (null !== (s = r[e]) && void 0 !== s ? s : 1) + .2;
@@ -86,13 +86,13 @@
                     this._limit = e, null != t && t.setLimit(e), this._userResults.length > this._limit && (this._userResults.length = this._limit), this._groupDMResults.length > this._limit && (this._groupDMResults.length = this._limit), this._textChannelResults.length > this._limit && (this._textChannelResults.length = this._limit), this._voiceChannelResults.length > this._limit && (this._voiceChannelResults.length = this._limit), this._guildResults.length > this._limit && (this._guildResults.length = this._limit), this._applicationResults.length > this._limit && (this._applicationResults.length = this._limit), this._linkResults.length > this._limit && (this._linkResults.length = this._limit)
                 }
                 setResultTypes(e) {
-                    this.resultTypes = null != e ? new Set(e) : null, this._userResults = this._include(m.AutocompleterResultTypes.USER) ? this._userResults : [], this._groupDMResults = this._include(m.AutocompleterResultTypes.GROUP_DM) ? this._groupDMResults : [], this._textChannelResults = this._include(m.AutocompleterResultTypes.TEXT_CHANNEL) ? this._textChannelResults : [], this._voiceChannelResults = this._include(m.AutocompleterResultTypes.VOICE_CHANNEL) ? this._voiceChannelResults : [], this._guildResults = this._include(m.AutocompleterResultTypes.GUILD) ? this._guildResults : [], this._applicationResults = this._include(m.AutocompleterResultTypes.APPLICATION) ? this._applicationResults : [], this._linkResults = this._include(m.AutocompleterResultTypes.LINK) ? this._linkResults : []
+                    this.resultTypes = null != e ? new Set(e) : null, this._userResults = this._include(A.AutocompleterResultTypes.USER) ? this._userResults : [], this._groupDMResults = this._include(A.AutocompleterResultTypes.GROUP_DM) ? this._groupDMResults : [], this._textChannelResults = this._include(A.AutocompleterResultTypes.TEXT_CHANNEL) ? this._textChannelResults : [], this._voiceChannelResults = this._include(A.AutocompleterResultTypes.VOICE_CHANNEL) ? this._voiceChannelResults : [], this._guildResults = this._include(A.AutocompleterResultTypes.GUILD) ? this._guildResults : [], this._applicationResults = this._include(A.AutocompleterResultTypes.APPLICATION) ? this._applicationResults : [], this._linkResults = this._include(A.AutocompleterResultTypes.LINK) ? this._linkResults : []
                 }
                 _include(e) {
                     return null == this.resultTypes || this.resultTypes.has(e)
                 }
                 _isAsyncSearch() {
-                    return this._include(m.AutocompleterResultTypes.USER)
+                    return this._include(A.AutocompleterResultTypes.USER)
                 }
                 setOptions(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -135,8 +135,8 @@
                     null != e && (e.destroy(), this.userSearchContext = null)
                 }
                 queryTextChannels(e, t) {
-                    if (!this._include(m.AutocompleterResultTypes.TEXT_CHANNEL)) return [];
-                    let s = I(m.AutocompleterResultTypes.TEXT_CHANNEL, this.options),
+                    if (!this._include(A.AutocompleterResultTypes.TEXT_CHANNEL)) return [];
+                    let s = S(A.AutocompleterResultTypes.TEXT_CHANNEL, this.options),
                         {
                             blacklist: l
                         } = this.options;
@@ -150,10 +150,10 @@
                     })
                 }
                 queryVoiceChannels(e, t) {
-                    if (!this._include(m.AutocompleterResultTypes.VOICE_CHANNEL)) return [];
+                    if (!this._include(A.AutocompleterResultTypes.VOICE_CHANNEL)) return [];
                     let {
                         voiceChannelGuildFilter: s
-                    } = this.options, l = I(m.AutocompleterResultTypes.VOICE_CHANNEL, this.options);
+                    } = this.options, l = S(A.AutocompleterResultTypes.VOICE_CHANNEL, this.options);
                     return y.default.queryChannels({
                         query: e,
                         guildId: s,
@@ -164,8 +164,8 @@
                     })
                 }
                 queryGuilds(e, t) {
-                    if (!this._include(m.AutocompleterResultTypes.GUILD)) return [];
-                    let s = I(m.AutocompleterResultTypes.GUILD, this.options),
+                    if (!this._include(A.AutocompleterResultTypes.GUILD)) return [];
+                    let s = S(A.AutocompleterResultTypes.GUILD, this.options),
                         {
                             blacklist: l
                         } = this.options;
@@ -181,17 +181,17 @@
                     let {
                         userSearchContext: l
                     } = this;
-                    if (null == l || !this._include(m.AutocompleterResultTypes.USER)) return;
+                    if (null == l || !this._include(A.AutocompleterResultTypes.USER)) return;
                     let {
-                        userFilters: u
+                        userFilters: i
                     } = this.options;
-                    void 0 !== t && E.default.requestMembers(t, e, 100), l.setLimit(s), l.setQuery(e, u, this._userBlacklist, I(m.AutocompleterResultTypes.USER, this.options))
+                    void 0 !== t && E.default.requestMembers(t, e, 100), l.setLimit(s), l.setQuery(e, i, this._userBlacklist, S(A.AutocompleterResultTypes.USER, this.options))
                 }
                 queryGroupDMs(e, t) {
-                    if (!this._include(m.AutocompleterResultTypes.GROUP_DM)) return [];
+                    if (!this._include(A.AutocompleterResultTypes.GROUP_DM)) return [];
                     let {
                         blacklist: s
-                    } = this.options, l = I(m.AutocompleterResultTypes.GROUP_DM, this.options);
+                    } = this.options, l = S(A.AutocompleterResultTypes.GROUP_DM, this.options);
                     return y.default.queryGroupDMs({
                         query: e,
                         limit: t,
@@ -201,7 +201,7 @@
                     })
                 }
                 queryApplications(e, t) {
-                    return this._include(m.AutocompleterResultTypes.APPLICATION) ? y.default.queryApplications({
+                    return this._include(A.AutocompleterResultTypes.APPLICATION) ? y.default.queryApplications({
                         query: e,
                         limit: t,
                         fuzzy: !0
@@ -209,7 +209,7 @@
                 }
                 queryLink(e, t) {
                     let s;
-                    if (!this._include(m.AutocompleterResultTypes.LINK)) return [];
+                    if (!this._include(A.AutocompleterResultTypes.LINK)) return [];
                     let l = r.sanitizeUrl(e);
                     try {
                         s = new URL(l)
@@ -217,13 +217,13 @@
                         return []
                     }
                     let {
-                        pathname: u,
-                        hostname: i = "",
+                        pathname: i,
+                        hostname: u = "",
                         host: n
-                    } = s, a = C.default.isDiscordHostname(i) || window.location.host === n;
-                    return null !== u && a && C.default.isAppRoute(u) ? [{
-                        type: m.AutocompleterResultTypes.LINK,
-                        record: d.default.fromPath(u),
+                    } = s, a = C.default.isDiscordHostname(u) || window.location.host === n;
+                    return null !== i && a && C.default.isAppRoute(i) ? [{
+                        type: A.AutocompleterResultTypes.LINK,
+                        record: d.default.fromPath(i),
                         score: 1
                     }] : []
                 }
@@ -232,7 +232,7 @@
                         let {
                             results: t
                         } = e;
-                        if (this._include(m.AutocompleterResultTypes.USER)) {
+                        if (this._include(A.AutocompleterResultTypes.USER)) {
                             for (let {
                                     id: e,
                                     score: s,
@@ -241,7 +241,7 @@
                                 of(this._userResults = [], t)) {
                                 let t = R.default.getUser(e);
                                 null != t && this._userResults.push({
-                                    type: m.AutocompleterResultTypes.USER,
+                                    type: A.AutocompleterResultTypes.USER,
                                     record: t,
                                     score: function() {
                                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
@@ -254,7 +254,7 @@
                             this._userResults.length > this._limit && (this._userResults.length = this._limit), this.updateAllResults()
                         }
                     }, this.updateAllResults = () => {
-                        clearTimeout(this._asyncTimeout), this.results = i([...this._userResults, ...this._groupDMResults, ...this._textChannelResults, ...this._voiceChannelResults, ...this._guildResults, ...this._linkResults]).uniqBy(e => "".concat(e.type, "-").concat(e.record.id)).sort(T.default).value(), this.onResultsChange(this.results, this.query)
+                        clearTimeout(this._asyncTimeout), this.results = u([...this._userResults, ...this._groupDMResults, ...this._textChannelResults, ...this._voiceChannelResults, ...this._guildResults, ...this._linkResults]).uniqBy(e => "".concat(e.type, "-").concat(e.record.id)).sort(T.default).value(), this.onResultsChange(this.results, this.query)
                     }, this.onResultsChange = e, this.setOptions(l, !0), this._limit = s, this.createSearchContext(), this.setResultTypes(t)
                 }
             }
@@ -266,11 +266,11 @@
                     return T
                 },
                 default: function() {
-                    return A
+                    return m
                 }
             }), s("424973"), s("511434"), s("313619"), s("654714"), s("287168"), s("956660"), s("222007"), s("70102"), s("854508"), s("881410");
-            var l, u, i = s("917351"),
-                n = s.n(i),
+            var l, i, u = s("917351"),
+                n = s.n(u),
                 r = s("748820"),
                 a = s("689988"),
                 o = s("233069"),
@@ -313,7 +313,7 @@
                     let l = y(e.user);
                     null != l && (E(l, t, e.nick), s.push(l))
                 }), s
-            }(u = l || (l = {})).UPDATE_USERS = "UPDATE_USERS", u.USER_RESULTS = "USER_RESULTS", u.QUERY_SET = "QUERY_SET", u.QUERY_CLEAR = "QUERY_CLEAR";
+            }(i = l || (l = {})).UPDATE_USERS = "UPDATE_USERS", i.USER_RESULTS = "USER_RESULTS", i.QUERY_SET = "QUERY_SET", i.QUERY_CLEAR = "QUERY_CLEAR";
             class T {
                 setLimit(e) {
                     this._limit = e, null != this._nextQuery && (this._nextQuery.limit = e)
@@ -356,7 +356,7 @@
                     }, this._worker = e, this._uuid = (0, r.v4)(), this._callback = t, this._limit = s, this._currentQuery = null, this._nextQuery = null, this._subscribed = !1, this.subscribe()
                 }
             }
-            class m extends a.default {
+            class A extends a.default {
                 _initialize() {
                     this.rebootWebworker()
                 }
@@ -418,9 +418,9 @@
                             let l = d.default.getMutableAllGuildsAndMembers();
                             for (let e in l)
                                 for (let t in l[e]) {
-                                    var u, i;
+                                    var i, u;
                                     let n = s[t],
-                                        r = null !== (i = null === (u = l[e][t]) || void 0 === u ? void 0 : u.nick) && void 0 !== i ? i : R.default.getGlobalName(n);
+                                        r = null !== (u = null === (i = l[e][t]) || void 0 === i ? void 0 : i.nick) && void 0 !== u ? u : R.default.getGlobalName(n);
                                     null != n && (n[e] = null != r && "" !== r ? r : null)
                                 }
                             this.updateUsers(Object.values(s))
@@ -439,15 +439,15 @@
                             guildMembers: s
                         } = e, l = new Map;
                         for (let e of t) l.set(e.id, y(e));
-                        let u = f.default.keys(s);
-                        for (let e of u) {
+                        let i = f.default.keys(s);
+                        for (let e of i) {
                             let t = s[e];
                             if (null == t) continue;
-                            let u = f.default.keys(t);
-                            for (let s of u) {
-                                let u = l.get(s),
-                                    i = t[s];
-                                null != u && null != i && null != i.nick && (E(u, e, i.nick), l.set(s, u))
+                            let i = f.default.keys(t);
+                            for (let s of i) {
+                                let i = l.get(s),
+                                    u = t[s];
+                                null != i && null != u && null != u.nick && (E(i, e, u.nick), l.set(s, i))
                             }
                         }
                         this.updateUsers(Array.from(l.values())), l.clear()
@@ -474,8 +474,8 @@
                             guildId: t,
                             user: s,
                             nick: l
-                        } = e, u = y(s);
-                        null != u && (E(u, t, l), this.updateUsers([u]))
+                        } = e, i = y(s);
+                        null != i && (E(i, t, l), this.updateUsers([i]))
                     }, this._handlePassiveUpdateV1 = e => {
                         null != e.members && this.updateUsers(g(e.members, e.guildId))
                     }, this._handleRelationshipAdd = e => {
@@ -513,23 +513,23 @@
                             isMember: l
                         } = e;
                         if (!l) return;
-                        let u = y(s);
-                        E(u, t), this.updateUsers([u])
+                        let i = y(s);
+                        E(i, t), this.updateUsers([i])
                     }
                 }
             }
-            var A = new m
+            var m = new A
         },
         108964: function(e, t, s) {
             "use strict";
             s.r(t), s.d(t, {
                 createHeaderResult: function() {
-                    return u
+                    return i
                 }
             });
             var l = s("375822");
 
-            function u(e) {
+            function i(e) {
                 return {
                     type: l.AutocompleterResultTypes.HEADER,
                     record: new l.HeaderRecord(e),
@@ -545,16 +545,16 @@
                 }
             });
             var l = s("679653"),
-                u = s("42203"),
-                i = s("27618"),
+                i = s("42203"),
+                u = s("27618"),
                 n = s("697218"),
                 r = s("375822"),
                 a = s("49111");
 
             function o(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : u.default,
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.default,
                     s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.default,
-                    o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : i.default,
+                    o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : u.default,
                     h = t.getChannel(e);
                 if (null == h) return null;
                 let d = (0, l.computeChannelName)(h, s, o);
@@ -589,16 +589,16 @@
             "use strict";
             s.r(t), s.d(t, {
                 default: function() {
-                    return function e(t, s, u, i) {
+                    return function e(t, s, i, u) {
                         let {
                             length: n
-                        } = u, r = i, a = s;
+                        } = i, r = u, a = s;
                         if (0 === n) return 0;
                         if (null == r) r = a;
                         else if (r === a) return a;
-                        if ((a += t === l.FindResultDirections.UP ? -1 : 1) < 0 || a >= n) return e(t, a < 0 ? n : -1, u, r);
-                        let o = u[a];
-                        return o.type === l.AutocompleterResultTypes.HEADER ? e(t, a, u, r) : a
+                        if ((a += t === l.FindResultDirections.UP ? -1 : 1) < 0 || a >= n) return e(t, a < 0 ? n : -1, i, r);
+                        let o = i[a];
+                        return o.type === l.AutocompleterResultTypes.HEADER ? e(t, a, i, r) : a
                     }
                 }
             });
@@ -608,7 +608,7 @@
             "use strict";
             s.r(t), s.d(t, {
                 createHeaderResult: function() {
-                    return i.createHeaderResult
+                    return u.createHeaderResult
                 },
                 findNextSelectedResult: function() {
                     return n.default
@@ -618,9 +618,9 @@
                 }
             });
             var l = s("337575"),
-                u = s("375822");
-            s.es(u, t);
-            var i = s("108964"),
+                i = s("375822");
+            s.es(i, t);
+            var u = s("108964"),
                 n = s("940782");
             s("195547");
             var r = l.default
@@ -633,8 +633,8 @@
                     return Y
                 }
             }), s("424973"), s("222007"), s("843762"), s("808653");
-            var u = s("917351"),
-                i = s.n(u),
+            var i = s("917351"),
+                u = s.n(i),
                 n = s("446674"),
                 r = s("95410"),
                 a = s("913144"),
@@ -651,11 +651,11 @@
                 C = s("26989"),
                 g = s("305961"),
                 T = s("957255"),
-                m = s("660478"),
-                A = s("18494"),
+                A = s("660478"),
+                m = s("18494"),
                 U = s("162771"),
-                I = s("282109"),
-                S = s("25292"),
+                S = s("282109"),
+                I = s("25292"),
                 N = s("449008"),
                 L = s("49111"),
                 v = s("782340");
@@ -666,30 +666,30 @@
                 b = !1,
                 k = null,
                 G = [],
-                P = null,
-                Q = 0,
-                w = [],
-                q = [];
+                w = null,
+                P = 0,
+                Q = [],
+                F = [];
 
-            function x() {
-                b = g.default.getGuildCount() >= 3 || i.size(R.default.getMutablePrivateChannels()) >= 20, w = []
+            function q() {
+                b = g.default.getGuildCount() >= 3 || u.size(R.default.getMutablePrivateChannels()) >= 20, Q = []
             }
 
-            function W(e) {
+            function x(e) {
                 let t = (0, h.default)(e);
                 return null == t || null != k && k !== t.type ? null : t
             }
 
-            function F(e) {
+            function W(e) {
                 var t;
                 let {
                     query: s,
-                    queryMode: u
-                } = e, i = (0, d.isSplitMessagesTabAndOnMessagesTab)() ? void 0 : null !== (t = U.default.getGuildId()) && void 0 !== t ? t : void 0, n = new Set(["user:".concat(f.default.getId())]);
-                null != i && n.add("guild:".concat(i)), l = null != l ? l : new o.default(z, M, null != u ? 100 : 5, {
+                    queryMode: i
+                } = e, u = (0, d.isSplitMessagesTabAndOnMessagesTab)() ? void 0 : null !== (t = U.default.getGuildId()) && void 0 !== t ? t : void 0, n = new Set(["user:".concat(f.default.getId())]);
+                null != u && n.add("guild:".concat(u)), l = null != l ? l : new o.default(z, M, null != i ? 100 : 5, {
                     frecencyBoosters: !0,
                     blacklist: n
-                }), P = null, Q = s.length, k = u, l.search(s)
+                }), w = null, P = s.length, k = i, l.search(s)
             }
 
             function z(e, t) {
@@ -697,18 +697,18 @@
                     if (e.length !== t.length) return !1;
                     for (let s = 0; s < e.length; s++) {
                         let l = e[s],
-                            u = t[s];
-                        if (l.record.id !== u.record.id) return !1
+                            i = t[s];
+                        if (l.record.id !== i.record.id) return !1
                     }
                     return !0
                 }(e = "" === (t = t.trim()).trim() ? function() {
                     var e, t;
                     let s = null !== (e = U.default.getGuildId()) && void 0 !== e ? e : void 0,
-                        l = null !== (t = A.default.getChannelId()) && void 0 !== t ? t : void 0;
+                        l = null !== (t = m.default.getChannelId()) && void 0 !== t ? t : void 0;
                     switch (k) {
                         case o.AutocompleterResultTypes.USER: {
                             let e = f.default.getId();
-                            return S.default.getRecentlyTalked(l, 100).filter(t => {
+                            return I.default.getRecentlyTalked(l, 100).filter(t => {
                                 let {
                                     record: s
                                 } = t;
@@ -716,26 +716,26 @@
                             })
                         }
                         case o.AutocompleterResultTypes.APPLICATION:
-                            return S.default.queryApplications({
+                            return I.default.queryApplications({
                                 query: "",
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.GUILD:
-                            return S.default.queryGuilds({
+                            return I.default.queryGuilds({
                                 query: "",
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.TEXT_CHANNEL:
-                            return S.default.queryChannels({
+                            return I.default.queryChannels({
                                 query: "",
                                 guildId: U.default.getGuildId(),
                                 limit: 100,
                                 fuzzy: !0
                             });
                         case o.AutocompleterResultTypes.VOICE_CHANNEL:
-                            return S.default.queryChannels({
+                            return I.default.queryChannels({
                                 query: "",
                                 guildId: U.default.getGuildId(),
                                 limit: 100,
@@ -744,13 +744,13 @@
                                 type: E.GUILD_VOCAL_CHANNELS_KEY
                             })
                     }
-                    let u = [],
+                    let i = [],
                         n = [];
-                    for (let e = 1; e < q.length; e += 1) {
-                        let t = W(q[e]);
+                    for (let e = 1; e < F.length; e += 1) {
+                        let t = x(F[e]);
                         if (null != t)(t.type !== o.AutocompleterResultTypes.TEXT_CHANNEL && t.type !== o.AutocompleterResultTypes.VOICE_CHANNEL || T.default.can(L.Permissions.VIEW_CHANNEL, t.record)) && n.push(t)
                     }
-                    n.length > 0 && u.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_LAST_CHANNEL), ...n);
+                    n.length > 0 && i.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_LAST_CHANNEL), ...n);
                     let r = function(e) {
                         let t = [];
                         return y.default.getRecentlyEditedDrafts(y.DraftType.ChannelMessage).forEach(s => {
@@ -758,26 +758,26 @@
                                 channelId: l
                             } = s;
                             if (e(l)) return;
-                            let u = W(l);
-                            null != u && t.push(u)
+                            let i = x(l);
+                            null != i && t.push(i)
                         }), t
-                    }(e => e === l || q.includes(e));
-                    r.length > 0 && u.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_DRAFTS), ...r);
-                    let a = m.default.getMentionChannelIds().filter(e => e !== l && !q.includes(e)).map(e => W(e)).filter(N.isNotNullish).reverse();
-                    if (a.length > 0 && (u.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_MENTIONS)), u = u.concat(a)), null != s) {
+                    }(e => e === l || F.includes(e));
+                    r.length > 0 && i.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_DRAFTS), ...r);
+                    let a = A.default.getMentionChannelIds().filter(e => e !== l && !F.includes(e)).map(e => x(e)).filter(N.isNotNullish).reverse();
+                    if (a.length > 0 && (i.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_MENTIONS)), i = i.concat(a)), null != s) {
                         let e = E.default.getSelectableChannelIds(s).filter(e => {
                             let t = R.default.getChannel(e);
-                            return !(null == t || e === l || q.includes(e) || I.default.isChannelMuted(t.guild_id, e) || null != t.parent_id && I.default.isChannelMuted(t.guild_id, t.parent_id)) && (0, c.getHasImportantUnread)(t)
-                        }).map(e => W(e)).filter(e => e);
+                            return !(null == t || e === l || F.includes(e) || S.default.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.default.isChannelMuted(t.guild_id, t.parent_id)) && (0, c.getHasImportantUnread)(t)
+                        }).map(e => x(e)).filter(e => e);
                         Object.values(p.default.getActiveJoinedUnreadThreadsForGuild(s)).forEach(t => {
                             for (let s in t) {
-                                let t = W(s);
+                                let t = x(s);
                                 null != t && e.push(t)
                             }
-                        }), e.length > 0 && (u.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_UNREAD_CHANNELS)), u = u.concat(e))
+                        }), e.length > 0 && (i.push((0, o.createHeaderResult)(v.default.Messages.QUICKSWITCHER_UNREAD_CHANNELS)), i = i.concat(e))
                     }
-                    return i(u).uniqBy(e => e.record.id).value()
-                }() : e, w) && (w = e, ! function(e, t) {
+                    return u(i).uniqBy(e => e.record.id).value()
+                }() : e, Q) && (Q = e, ! function(e, t) {
                     switch (k) {
                         case o.AutocompleterResultTypes.USER: {
                             let t = g.default.getGuild(U.default.getGuildId());
@@ -801,7 +801,7 @@
                         default:
                             G = e
                     }
-                    if (t !== P) P = t, Q = Math.max(t.length, Q), O = (0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, -1, G);
+                    if (t !== w) w = t, P = Math.max(t.length, P), O = (0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, -1, G);
                     else {
                         let e = G[O];
                         null != e && e.type === o.AutocompleterResultTypes.HEADER && (O = (0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, O, G))
@@ -811,16 +811,16 @@
             }
 
             function K() {
-                P = null, Q = 0, w = [], null != l && (l.destroy(), l = null)
+                w = null, P = 0, Q = [], null != l && (l.destroy(), l = null)
             }
             class V extends n.default.PersistedStore {
                 initialize(e) {
                     var t;
-                    this.waitFor(C.default, g.default, R.default), this.syncWith([_.default], () => !0), H = r.default.get(D) || !1, q = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
+                    this.waitFor(C.default, g.default, R.default), this.syncWith([_.default], () => !0), H = r.default.get(D) || !1, F = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
                 }
                 getState() {
                     return {
-                        channelHistory: q
+                        channelHistory: F
                     }
                 }
                 isOpen() {
@@ -840,7 +840,7 @@
                     return null != l ? l.queryGuilds("", 100).length : 0
                 }
                 getChannelHistory() {
-                    return q
+                    return F
                 }
                 getProps() {
                     return {
@@ -850,43 +850,43 @@
                         results: G,
                         selectedIndex: O,
                         seenTutorial: H,
-                        maxQueryLength: Q
+                        maxQueryLength: P
                     }
                 }
             }
             V.displayName = "QuickSwitcherStore", V.persistKey = "QuickSwitcherStore";
             let B = new V(a.default, {
-                CONNECTION_OPEN: x,
-                CONNECTION_OPEN_SUPPLEMENTAL: x,
-                QUICKSWITCHER_SHOW: F,
-                SHOW_ACTION_SHEET_QUICK_SWITCHER: F,
+                CONNECTION_OPEN: q,
+                CONNECTION_OPEN_SUPPLEMENTAL: q,
+                QUICKSWITCHER_SHOW: W,
+                SHOW_ACTION_SHEET_QUICK_SWITCHER: W,
                 QUICKSWITCHER_HIDE: K,
                 OVERLAY_SET_INPUT_LOCKED: K,
                 HIDE_ACTION_SHEET_QUICK_SWITCHER: K,
                 QUICKSWITCHER_SEARCH: function(e) {
                     var t, s;
                     let {
-                        query: u,
-                        queryMode: i
+                        query: i,
+                        queryMode: u
                     } = e;
                     if (null == l) return !1;
                     let n = null !== (t = U.default.getGuildId()) && void 0 !== t ? t : null;
-                    if (k !== i) {
-                        l.setResultTypes(null != i ? [i] : M), l.setLimit(null != i ? 100 : 5);
+                    if (k !== u) {
+                        l.setResultTypes(null != u ? [u] : M), l.setLimit(null != u ? 100 : 5);
                         let e = null !== (s = U.default.getGuildId()) && void 0 !== s ? s : void 0;
-                        i === o.AutocompleterResultTypes.USER && null != e ? l.setOptions({
+                        u === o.AutocompleterResultTypes.USER && null != e ? l.setOptions({
                             userFilters: {
                                 guild: e,
                                 friends: !0
                             }
-                        }, !0) : i === o.AutocompleterResultTypes.VOICE_CHANNEL ? l.setOptions({
+                        }, !0) : u === o.AutocompleterResultTypes.VOICE_CHANNEL ? l.setOptions({
                             voiceChannelGuildFilter: null
                         }, !0) : l.setOptions({
                             userFilters: null,
                             voiceChannelGuildFilter: void 0
                         }, !0)
                     }
-                    k = i, l.search(u, k === o.AutocompleterResultTypes.USER ? n : void 0)
+                    k = u, l.search(i, k === o.AutocompleterResultTypes.USER ? n : void 0)
                 },
                 QUICKSWITCHER_SELECT: function(e) {
                     O = e.selectedIndex
@@ -900,7 +900,7 @@
                         channelId: t
                     } = e;
                     if (null == t) return !1;
-                    (q = q.filter(e => e !== t)).unshift(t), q.length > 4 && (q.length = 4)
+                    (F = F.filter(e => e !== t)).unshift(t), F.length > 4 && (F.length = 4)
                 }
             });
             var Y = B
@@ -913,24 +913,24 @@
                 }
             }), s("446674");
             var l = s("660478"),
-                u = s("282109"),
-                i = s("133335");
+                i = s("282109"),
+                u = s("133335");
 
             function n(e) {
-                return l.default.hasUnread(e.id) && u.default.resolveUnreadSetting(e) === i.UnreadSetting.ALL_MESSAGES
+                return l.default.hasUnread(e.id) && i.default.resolveUnreadSetting(e) === u.UnreadSetting.ALL_MESSAGES
             }
         },
         741347: function(e, t, s) {
             "use strict";
             s.r(t), s.d(t, {
                 default: function() {
-                    return i
+                    return u
                 }
             });
             var l = s("666038");
-            class u extends l.default {
+            class i extends l.default {
                 static fromPath(e) {
-                    return new u({
+                    return new i({
                         id: e,
                         path: e
                     })
@@ -939,7 +939,7 @@
                     super(), this.id = e.id, this.path = e.path
                 }
             }
-            var i = u
+            var u = i
         },
         319781: function(e, t, s) {
             "use strict";
@@ -948,12 +948,12 @@
                     return f
                 },
                 default: function() {
-                    return A
+                    return m
                 }
             }), s("424973");
             var l = s("917351"),
-                u = s.n(l),
-                i = s("446674"),
+                i = s.n(l),
+                u = s("446674"),
                 n = s("913144"),
                 r = s("80507"),
                 a = s("374363"),
@@ -999,7 +999,7 @@
                 var e;
                 let t = null === (e = a.default.frecencyWithoutFetchingLatest.guildAndChannelFrecency) || void 0 === e ? void 0 : e.guildAndChannels;
                 if (null == t) return !1;
-                R.overwriteHistory(u.mapValues(t, e => ({
+                R.overwriteHistory(i.mapValues(t, e => ({
                     ...e,
                     recentUses: e.recentUses.map(Number).filter(e => e > 0)
                 })), T.pendingUsages)
@@ -1007,7 +1007,7 @@
             let T = {
                 pendingUsages: []
             };
-            class m extends i.default.PersistedStore {
+            class A extends u.default.PersistedStore {
                 initialize(e) {
                     this.waitFor(c.default, d.default), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.ID_REGEX.test(e.key)), T = e), this.syncWith([a.default], g)
                 }
@@ -1038,8 +1038,8 @@
                     return 100
                 }
             }
-            m.displayName = "FrecencyStore", m.persistKey = "FrecencyStore";
-            var A = new m(n.default, {
+            A.displayName = "FrecencyStore", A.persistKey = "FrecencyStore";
+            var m = new A(n.default, {
                 CHANNEL_SELECT: C,
                 VOICE_CHANNEL_SELECT: C,
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
@@ -1052,7 +1052,94 @@
                     return t === _.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS && !!s && (T.pendingUsages = [], !0)
                 }
             })
+        },
+        843823: function(e, t, s) {
+            "use strict";
+            s.r(t), s.d(t, {
+                default: function() {
+                    return p
+                }
+            }), s("222007");
+            var l = s("446674"),
+                i = s("913144"),
+                u = s("27618");
+            let n = !1,
+                r = Object.freeze({
+                    userAffinities: [],
+                    affinityUserIds: new Set,
+                    lastFetched: 0
+                }),
+                a = Object.freeze({
+                    userAffinitiesMap: new Map,
+                    affinityUserIds: new Set
+                }),
+                o = {
+                    ...r
+                },
+                h = {
+                    ...a
+                };
+
+            function d() {
+                let e = new Map(o.userAffinities.filter(e => {
+                        let {
+                            user_id: t
+                        } = e;
+                        return !u.default.isBlocked(t)
+                    }).map(e => [e.user_id, e])),
+                    t = new Set(e.keys());
+                h = {
+                    userAffinitiesMap: e,
+                    affinityUserIds: t
+                }
+            }
+            class c extends l.default.PersistedStore {
+                initialize(e) {
+                    this.waitFor(u.default), null != e && (o.userAffinities = e.userAffinities, o.lastFetched = e.lastFetched, d()), this.syncWith([u.default], d)
+                }
+                needsRefresh() {
+                    return Date.now() - o.lastFetched > 864e5
+                }
+                getFetching() {
+                    return n
+                }
+                getState() {
+                    return o
+                }
+                getUserAffinities() {
+                    return o.userAffinities
+                }
+                getUserAffinity(e) {
+                    return h.userAffinitiesMap.get(e)
+                }
+                getUserAffinitiesUserIds() {
+                    return h.affinityUserIds
+                }
+            }
+            c.displayName = "UserAffinitiesStore", c.persistKey = "UserAffinitiesStore", c.migrations = [e => null];
+            var p = new c(i.default, {
+                LOAD_USER_AFFINITIES_SUCCESS: function(e) {
+                    var t;
+                    let {
+                        affinities: s
+                    } = e;
+                    o.userAffinities = null !== (t = s.user_affinities) && void 0 !== t ? t : [], o.lastFetched = Date.now(), d(), n = !1
+                },
+                LOAD_USER_AFFINITIES: function() {
+                    n = !0
+                },
+                LOAD_USER_AFFINITIES_FAILURE: function() {
+                    n = !1
+                },
+                LOGOUT: function() {
+                    o = {
+                        ...r
+                    }, h = {
+                        ...a
+                    }
+                }
+            })
         }
     }
 ]);
-//# sourceMappingURL=95185.833dba80ea987837d1c3.js.map
+//# sourceMappingURL=83257.49b66b6b236e1a8153f9.js.map
