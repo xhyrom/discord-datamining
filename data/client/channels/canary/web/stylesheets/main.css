@@ -8030,7 +8030,7 @@
 }
 
 .premiumCardsStackedVariantSmallScreen__6b348 {
-    width: 660px;
+    width: 700px;
     height: 360px
 }
 
@@ -8050,8 +8050,15 @@
 
 .stackedCardTitle__95b4d,
 .stackedCardTitleSmallScreen__4d7a0 {
-    margin-bottom: 14px;
     color: var(--white)
+}
+
+.stackedCardTitle__95b4d {
+    margin-bottom: 14px
+}
+
+.stackedCardTitleSmallScreen__4d7a0 {
+    margin-bottom: 12px
 }
 
 .stackedCardTitle__95b4d {
@@ -8103,11 +8110,11 @@
     transition: transform.5s, opacity.25s, top.5s
 }
 
-.listItems__61d04 {
+.listItems__61d04,
+.listItemsBasic_c01252 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 85%
+    justify-content: space-between
 }
 
 .tierCardFocused_cf0a83 {
@@ -8286,6 +8293,10 @@
     justify-content: space-between
 }
 
+.listItemsBasic_c01252 {
+    min-height: 92%
+}
+
 .perkContainer__9eeec {
     min-width: 370px;
     min-height: 260px;
@@ -8294,7 +8305,7 @@
 
 .perkContainerSmallScreen_c9a62b {
     width: 300px;
-    height: 280px
+    height: 325px
 }
 
 .freeTrialPillInlineBlock__5839a {
@@ -66320,12 +66331,12 @@ html .invoiceCancelRow_c1bfe7 {
     display: flex;
     border-radius: 20px;
     padding: 5px;
-    width: 140px;
-    justify-content: center;
+    width: auto;
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
-    margin-top: 45px
+    margin-top: 45px;
+    justify-content: space-between
 }
 
 .toggleSwitchStandard__00183,
@@ -66360,12 +66371,13 @@ html .invoiceCancelRow_c1bfe7 {
     z-index: 1;
     border: none;
     background-color: transparent;
-    padding: 4px 14px;
+    padding: 4px 18px;
     border-radius: 24px;
     cursor: pointer;
     text-align: center;
     color: var(--text-primary);
-    width: 50%
+    width: 50%;
+    flex-grow: 1
 }
 
 .slider__3ff89 {
@@ -66376,7 +66388,7 @@ html .invoiceCancelRow_c1bfe7 {
     top: 5px;
     bottom: 5px;
     left: 5px;
-    width: calc(50% - 10px);
+    width: calc(43% + 2px);
     transition: transform.3s ease-in-out;
     z-index: 0
 }
@@ -67695,7 +67707,8 @@ html .invoiceCancelRow_c1bfe7 {
     width: 100%
 }
 
-.premiumTierCardsContainerSettings_f346a8 {
+.premiumTierCardsContainerSettings_f346a8,
+.premiumStackedTierCardsContainerSettings__03d64 {
     margin-bottom: 60px
 }
 
@@ -129127,4 +129140,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.9445347ac6dbaac6af2d.css.map*/
+/*# sourceMappingURL=app.eb29808a561876f4fc5f.css.map*/
