@@ -3724,52 +3724,54 @@
             let i, r, o;
             n.r(t), n.d(t, {
                 AnalyticsActionHandlers: function() {
-                    return S
+                    return E
                 },
                 analyticsTrackingStoreMaker: function() {
-                    return h
+                    return g
                 }
             }), n("860677"), n("843762"), n("222007"), n("424973"), n("704744");
             var s, l = n("391679"),
                 a = n("446674"),
                 u = n("872717"),
-                c = n("166745"),
-                d = n("976255");
-            let _ = 1500,
-                f = null !== (s = window.requestIdleCallback) && void 0 !== s ? s : e => setImmediate(() => e()),
-                E = new c.default,
-                S = {
+                c = n("166745");
+            let d = 1500,
+                _ = null !== (s = window.requestIdleCallback) && void 0 !== s ? s : e => setImmediate(() => e()),
+                f = new c.default,
+                E = {
                     handleConnectionOpen: () => {},
                     handleConnectionClosed: () => {},
                     handleFingerprint: () => {},
                     handleTrack: () => {}
                 },
-                g = [],
-                h = e => {
+                S = [],
+                g = e => {
                     let {
                         dispatcher: t,
                         actionHandler: n,
                         getFingerprint: s,
-                        TRACKING_URL: c,
+                        getSessionId: c = () => new Promise(() => ({
+                            sessionId: void 0
+                        })),
+                        TRACKING_URL: g,
                         drainTimeoutOverride: h,
                         waitFor: m
                     } = e;
-                    _ = null != h ? h : 1500;
+                    d = null != h ? h : 1500;
 
                     function p() {
-                        return 0 !== g.length && (null != r ? null != i : null != s())
+                        return 0 !== S.length && (null != r ? null != i : null != s())
                     }
 
                     function I() {
-                        null == o && p() && (o = f(T, {
-                            timeout: _
+                        null == o && p() && (o = _(T, {
+                            timeout: d
                         }))
                     }
 
                     function T() {
                         if (o = null, !p()) return;
-                        let e = g.slice();
-                        g = [];
+                        let e = S.slice();
+                        S = [];
                         let t = v(e);
                         t.then(() => {
                             e.forEach(e => {
@@ -3777,7 +3779,7 @@
                                 null === (t = e.resolve) || void 0 === t || t.call(e)
                             })
                         }, t => {
-                            g.unshift(...e);
+                            S.unshift(...e);
                             let {
                                 message: n
                             } = t.body || t;
@@ -3795,7 +3797,7 @@
                                 }
                             }));
                         return u.default.post({
-                            url: c,
+                            url: g,
                             body: {
                                 token: i,
                                 events: n
@@ -3803,17 +3805,17 @@
                             retries: 3
                         })
                     }
-                    S.handleConnectionOpen = function(e) {
+                    E.handleConnectionOpen = function(e) {
                         let {
                             analyticsToken: t,
                             user: n
                         } = e;
                         return null != t && (i = t), null != n.id && (r = n.id), I(), !1
-                    }, S.handleConnectionClosed = function() {
+                    }, E.handleConnectionClosed = function() {
                         return T(), i = null, r = null, !1
-                    }, S.handleFingerprint = function() {
+                    }, E.handleFingerprint = function() {
                         return T(), !1
-                    }, S.handleTrack = function(e) {
+                    }, E.handleTrack = function(e) {
                         let {
                             event: t,
                             properties: n,
@@ -3821,23 +3823,24 @@
                             fingerprint: o,
                             resolve: a
                         } = e;
-                        return (0, d.getSession)().then(e => {
-                            let u = {
-                                    type: t,
-                                    fingerprint: o,
-                                    properties: {
-                                        client_track_timestamp: Date.now(),
-                                        client_heartbeat_session_id: null == e ? void 0 : e.uuid,
-                                        ...n
-                                    },
-                                    resolve: a
+                        return c().then(e => {
+                            let {
+                                sessionId: u
+                            } = e, c = {
+                                type: t,
+                                fingerprint: o,
+                                properties: {
+                                    client_track_timestamp: Date.now(),
+                                    client_heartbeat_session_id: u,
+                                    ...n
                                 },
-                                c = function(e) {
-                                    if (null != r) return r;
-                                    let t = e.fingerprint || s();
-                                    return null != t ? (0, l.extractId)(t) : null
-                                }(u);
-                            null != c && (u.properties.client_uuid = E.generate(c)), g.push(u), g.length > 1e4 && (g = g.slice(-1e4)), i ? T() : I()
+                                resolve: a
+                            }, d = function(e) {
+                                if (null != r) return r;
+                                let t = e.fingerprint || s();
+                                return null != t ? (0, l.extractId)(t) : null
+                            }(c);
+                            null != d && (c.properties.client_uuid = f.generate(d)), S.push(c), S.length > 1e4 && (S = S.slice(-1e4)), i ? T() : I()
                         }), !1
                     };
                     class A extends a.default.Store {
@@ -4069,7 +4072,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "272993", "272993"), 10);
+                let o = parseInt((n = "273026", "273026"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5567,65 +5570,6 @@
                 }
             }
         },
-        976255: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                setSessionExtendingEnabled: function() {
-                    return c
-                },
-                getSession: function() {
-                    return d
-                },
-                timestampOrZero: function() {
-                    return f
-                }
-            });
-            var i = n("748820"),
-                r = n("95410");
-            let o = "LATEST_SESSION_TIMESTAMP",
-                s = "LATEST_SESSION_UUID",
-                l = "LATEST_SESSION_INITIALIZED_TIMESTAMP",
-                a = Promise.resolve(),
-                u = !1;
-
-            function c(e) {
-                u = e
-            }
-
-            function d() {
-                let e = a.then(async () => {
-                    let e = await _();
-                    if (null == e || function(e) {
-                            let t = 18e5 + e.lastUsed - Date.now();
-                            return t <= 0
-                        }(e)) {
-                        if (!u) return null;
-                        let t = {
-                            uuid: (0, i.v4)(),
-                            initialized: Date.now(),
-                            lastUsed: Date.now()
-                        };
-                        r.default.set(s, t.uuid), r.default.set(l, t.initialized.toString()), r.default.set(o, Date.now().toString()), e = t
-                    } else u && r.default.set(o, Date.now().toString());
-                    return e
-                });
-                return a = e
-            }
-            async function _() {
-                let e = await r.default.getAfterRefresh(s),
-                    t = await r.default.getAfterRefresh(l).then(f),
-                    n = await r.default.getAfterRefresh(o).then(f);
-                return null != e && null != t ? {
-                    uuid: e,
-                    initialized: t,
-                    lastUsed: n
-                } : null
-            }
-
-            function f(e) {
-                return null != e ? Number(e) : 0
-            }
-        },
         444095: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -5685,4 +5629,4 @@
         }
     }
 ]);
-//# sourceMappingURL=87475.6855e30b720308feb864.js.map
+//# sourceMappingURL=87475.d36384b6a3ffa3dd7f11.js.map
