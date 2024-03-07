@@ -87232,8 +87232,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709838764040",
-                                    build_number: "273128"
+                                    built_at: "1709839678690",
+                                    build_number: "273143"
                                 }
                             },
                             retries: 1
@@ -92925,16 +92925,19 @@
         588025: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                QUEST_REWARD_CODE_PLATFORMS_SET: function() {
-                    return a
+                QuestRewardCodePlatforms: function() {
+                    return i.QuestRewardCodePlatforms
                 },
                 QuestContent: function() {
-                    return i
+                    return s.QuestContent
+                },
+                QUEST_REWARD_CODE_PLATFORMS_SET: function() {
+                    return r
                 }
             }), n("222007");
-            var i, s, r = n("313989");
-            let a = new Set(Object.values(r.QuestRewardCodePlatforms).filter(e => "number" == typeof e));
-            (s = i || (i = {}))[s.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", s[s.QUEST_BAR = 1] = "QUEST_BAR", s[s.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", s[s.QUESTS_EMBED = 3] = "QUESTS_EMBED", s[s.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", s[s.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM"
+            var i = n("313989"),
+                s = n("934076");
+            let r = new Set(Object.values(i.QuestRewardCodePlatforms).filter(e => "number" == typeof e))
         },
         166257: function(e, t, n) {
             "use strict";
@@ -124552,7 +124555,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "910a76b093420ca8a9210aae82db138bf134b7bf"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "4dc4f08da27de309a49b4ef05ba7f4d986494e3c"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133862,7 +133865,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273128"
+                                build_number: "273143"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151020,6 +151023,15 @@
                 }
             }), (s = i || (i = {}))[s.UNKNOWN = 0] = "UNKNOWN", s[s.DEFAULT = 1] = "DEFAULT", s[s.IMAGE_ONLY_ANSWERS = 2] = "IMAGE_ONLY_ANSWERS"
         },
+        934076: function(e, t, n) {
+            "use strict";
+            var i, s;
+            n.r(t), n.d(t, {
+                QuestContent: function() {
+                    return i
+                }
+            }), (s = i || (i = {}))[s.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", s[s.QUEST_BAR = 1] = "QUEST_BAR", s[s.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", s[s.QUESTS_EMBED = 3] = "QUESTS_EMBED", s[s.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", s[s.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM"
+        },
         313989: function(e, t, n) {
             "use strict";
             var i, s;
@@ -151442,4 +151454,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.80bebe7dd780132b2935.js.map
+//# sourceMappingURL=29062.b4c82cf9decbed9693de.js.map
