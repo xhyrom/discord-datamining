@@ -3562,7 +3562,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -3593,8 +3593,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -129214,4 +129214,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.cc6f72f2cde4ac7837e2.css.map*/
+/*# sourceMappingURL=app.285abfd5a14a8068493f.css.map*/
