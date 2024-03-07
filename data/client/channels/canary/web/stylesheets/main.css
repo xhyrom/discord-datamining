@@ -3562,7 +3562,7 @@
 }
 
 .title__746ed {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources_fdd04d:hover {
@@ -3593,8 +3593,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -33291,6 +33291,11 @@ html .progress__4ef76 {
     margin-left: 8px
 }
 
+.subtitleContainer_f754d4 {
+    display: flex;
+    flex-direction: column
+}
+
 .container_def45c {
     display: flex;
     flex-direction: column;
@@ -39904,7 +39909,7 @@ html .progress__4ef76 {
 .hero_f37d0a {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     padding: 32px 32px 16px;
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md)
@@ -39918,7 +39923,7 @@ html .progress__4ef76 {
 }
 
 .popoutDescription__875c7 {
-    margin-top: 4px
+    margin-top: 6px
 }
 
 .heroImage_e3e7d9 {
@@ -39953,9 +39958,16 @@ html .progress__4ef76 {
     border-radius: var(--radius-sm)
 }
 
+.badgeContainer__7ffff {
+    padding: 2px
+}
+
 .container__35f96 {
     display: flex;
-    margin: 8px 8px 0;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-top: 8px;
+    max-width: 224px;
     padding: 8px;
     background-color: var(--bg-overlay-chat, var(--background-primary));
     border-radius: var(--radius-md);
@@ -39971,6 +39983,11 @@ html .progress__4ef76 {
 
 .container__35f96:hover .contentDescription__181da {
     color: var(--interactive-hover)
+}
+
+.container__35f96 .badgeContainer__626aa {
+    margin-top: 2px;
+    margin-bottom: -2px
 }
 
 .contentDescription__181da {
@@ -40003,7 +40020,6 @@ html .progress__4ef76 {
 }
 
 .badgesContainer__9dcef {
-    margin-top: 2px;
     display: flex;
     gap: 8px
 }
@@ -119029,14 +119045,17 @@ html .invoiceCancelRow_a8669b {
 }
 
 .inventoryContainer_f4883b {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-    gap: 20px;
     background-color: var(--background-tertiary);
     padding: 20px;
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-medium)
+}
+
+.inventoryItems__62cfb {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
+    gap: 20px
 }
 
 .inventoryItem__3f262 {
@@ -119107,6 +119126,36 @@ html .invoiceCancelRow_a8669b {
 
 .statText__18098 {
     margin: 12px 0
+}
+
+.banner__1b5aa {
+    background: linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients))no-repeat;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-low);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 20px
+}
+
+.banner__1b5aa .headerButton_fe8970 {
+    font-size: small;
+    padding: 2px 8px
+}
+
+.innerButton__2a740 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px
+}
+
+.inline__3a4e8 {
+    display: flex;
+    align-items: center;
+    gap: 8px
 }
 
 .marketingUnsubscribeButton__72576 {
@@ -129076,4 +129125,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.46640bc7378e9dada5c2.css.map*/
+/*# sourceMappingURL=app.7afe3e5010c46ba66ec2.css.map*/
