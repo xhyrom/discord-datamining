@@ -52218,6 +52218,7 @@
                     i = d(n),
                     a = (null == n ? void 0 : n.guild_id) != null ? r.default : l,
                     u = a.useExperiment({
+                        guildId: null == n ? void 0 : n.guild_id,
                         location: t
                     }, {
                         autoTrackExposure: !0
@@ -87252,8 +87253,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709853463669",
-                                    build_number: "273285"
+                                    built_at: "1709854526240",
+                                    build_number: "273299"
                                 }
                             },
                             retries: 1
@@ -124574,7 +124575,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "6ad64a7cc01a7e40fc5d9cff53e6f87ed029428f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "990ced5ae3a32bdcc8f4c17c618d71054e5d8584"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133884,7 +133885,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273285"
+                                build_number: "273299"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151473,4 +151474,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.da2e43502a871c715c46.js.map
+//# sourceMappingURL=29062.a04be12e42992f6c78a8.js.map
