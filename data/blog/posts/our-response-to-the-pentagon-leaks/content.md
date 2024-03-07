@@ -1,10 +1,12 @@
 <div class="w-layout-grid grid-branding">
     <div id="w-node-_682ba5bf-e04f-2536-35cb-8e92dc53082e-d9fcf1f6" class="title-wrapper">
         <div class="safetie-author-wrapper">
-            <div class="safetie-author-photo-wrapper">
-                <div class="dropdown-wr-s">
-                    <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af2f03d63855d32c69dfdf_6439dcd332308112d6b8d587_headshot_square(1).png" loading="lazy" alt="" class="safetie-author-image">
-                        <div class="safetie-author-title">Clint Smith</div>
+            <div>
+                <div class="safetie-author-photo-wrapper">
+                    <div class="dropdown-wr-s">
+                        <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af2f03d63855d32c69dfdf_6439dcd332308112d6b8d587_headshot_square(1).png" loading="lazy" alt="" class="safetie-author-image">
+                            <div class="safetie-author-title">Clint Smith</div>
+                        </div>
                     </div>
                     <div class="dropdown-wrapper-safety w-condition-invisible">
                         <div class="weight-semibold">Version</div>
@@ -23,9 +25,9 @@
                             </nav>
                         </div>
                     </div>
+                    <div>April 14, 2023</div>
+                    <div class="padding-32px"></div>
                 </div>
-                <div>April 14, 2023</div>
-                <div class="padding-32px"></div>
             </div>
             <div>
                 <div class="link-blue-16px safetie w-dyn-bind-empty"></div>

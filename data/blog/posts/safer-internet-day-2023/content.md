@@ -1,10 +1,12 @@
 <div class="w-layout-grid grid-branding">
     <div id="w-node-_682ba5bf-e04f-2536-35cb-8e92dc53082e-d9fcf1f6" class="title-wrapper">
         <div class="safetie-author-wrapper">
-            <div class="safetie-author-photo-wrapper">
-                <div class="dropdown-wr-s">
-                    <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black.png" loading="lazy" alt="" sizes="(max-width: 479px) 60px, (max-width: 991px) 70px, 90px" srcset="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black-p-500.png 500w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black-p-800.png 800w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black.png 900w" class="safetie-author-image">
-                        <div class="safetie-author-title">Discord</div>
+            <div>
+                <div class="safetie-author-photo-wrapper">
+                    <div class="dropdown-wr-s">
+                        <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black.png" loading="lazy" alt="" sizes="(max-width: 479px) 60px, (max-width: 991px) 70px, 90px" srcset="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black-p-500.png 500w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black-p-800.png 800w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/648c1a09c6a80c200fa95349_628c05f2e63f068e62b96336_Discord%20Author%20Black.png 900w" class="safetie-author-image">
+                            <div class="safetie-author-title">Discord</div>
+                        </div>
                     </div>
                     <div class="dropdown-wrapper-safety w-condition-invisible">
                         <div class="weight-semibold">Version</div>
@@ -23,9 +25,9 @@
                             </nav>
                         </div>
                     </div>
+                    <div>February 7, 2023</div>
+                    <div class="padding-32px"></div>
                 </div>
-                <div>February 7, 2023</div>
-                <div class="padding-32px"></div>
             </div>
             <div>
                 <div class="link-blue-16px safetie">Parents &amp; Educators</div>
