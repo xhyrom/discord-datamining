@@ -52159,58 +52159,36 @@
             });
             var i = n("298386"),
                 s = n("446674"),
-                r = n("862205"),
-                a = n("42203");
-            let o = (0, r.createExperiment)({
-                    kind: "user",
-                    id: "2023-08_activities_in_text",
-                    label: "Activities in Text User",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "enable Activities in text channels",
-                        config: {
-                            enabled: !0,
-                            showInOmniButtonMenu: !0,
-                            showChatInputButton: !1
-                        }
-                    }, {
-                        id: 3,
-                        label: "enable Activities in text with the rocket button in chat input",
-                        config: {
-                            enabled: !0,
-                            showInOmniButtonMenu: !1,
-                            showChatInputButton: !0
-                        }
-                    }]
-                }),
-                l = (0, r.createExperiment)({
-                    kind: "guild",
-                    id: "2023-11_activities_in_text_guild",
-                    label: "Activities in Text Guild",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "enable Activities in text channels",
-                        config: {
-                            enabled: !0,
-                            showInOmniButtonMenu: !0,
-                            showChatInputButton: !1
-                        }
-                    }, {
-                        id: 3,
-                        label: "enable Activities in text with the rocket button in chat input",
-                        config: {
-                            enabled: !0,
-                            showInOmniButtonMenu: !1,
-                            showChatInputButton: !0
-                        }
-                    }]
-                });
+                r = n("75789"),
+                a = n("862205"),
+                o = n("42203");
+            let l = (0, a.createExperiment)({
+                kind: "user",
+                id: "2023-08_activities_in_text",
+                label: "Activities in Text User",
+                defaultConfig: {
+                    activitiesInTextEnabled: !1,
+                    showInOmniButtonMenu: !1,
+                    showChatInputButton: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "enable Activities in text channels",
+                    config: {
+                        activitiesInTextEnabled: !0,
+                        showInOmniButtonMenu: !0,
+                        showChatInputButton: !1
+                    }
+                }, {
+                    id: 3,
+                    label: "enable Activities in text with the rocket button in chat input",
+                    config: {
+                        activitiesInTextEnabled: !0,
+                        showInOmniButtonMenu: !1,
+                        showChatInputButton: !0
+                    }
+                }]
+            });
 
             function u(e) {
                 return [i.ChannelTypes.GUILD_TEXT, i.ChannelTypes.GROUP_DM, i.ChannelTypes.DM].includes(e)
@@ -52223,44 +52201,43 @@
             function c(e, t) {
                 if (null == e) return !1;
                 let n = u(e.type);
-                return (null == e ? void 0 : e.guild_id) != null ? l.getCurrentConfig({
+                return (null == e ? void 0 : e.guild_id) != null ? r.default.getCurrentConfig({
                     guildId: e.guild_id,
                     location: t
                 }, {
                     autoTrackExposure: !0
-                }).enabled && n : o.getCurrentConfig({
+                }).activitiesInTextEnabled && n : l.getCurrentConfig({
                     location: t
                 }, {
                     autoTrackExposure: !0
-                }).enabled && n
+                }).activitiesInTextEnabled && n
             }
 
             function f(e, t) {
-                let n = (0, s.useStateFromStores)([a.default], () => a.default.getChannel(e)),
+                let n = (0, s.useStateFromStores)([o.default], () => o.default.getChannel(e)),
                     i = d(n),
-                    r = (null == n ? void 0 : n.guild_id) != null ? l : o,
-                    u = r.useExperiment({
-                        guildId: null == n ? void 0 : n.guild_id,
+                    a = (null == n ? void 0 : n.guild_id) != null ? r.default : l,
+                    u = a.useExperiment({
                         location: t
                     }, {
                         autoTrackExposure: !0
                     });
-                return u.enabled && i
+                return u.activitiesInTextEnabled && i
             }
 
             function _(e, t) {
-                let n = (0, s.useStateFromStores)([a.default], () => a.default.getChannel(e)),
+                let n = (0, s.useStateFromStores)([o.default], () => o.default.getChannel(e)),
                     i = d(n),
-                    r = (null == n ? void 0 : n.guild_id) != null ? l : o,
-                    u = r.useExperiment({
+                    a = (null == n ? void 0 : n.guild_id) != null ? r.default : l,
+                    u = a.useExperiment({
                         guildId: null == n ? void 0 : n.guild_id,
                         location: t
                     }, {
                         autoTrackExposure: !0
                     });
-                return u.enabled && i ? {
-                    showInOmniButtonMenu: u.showInOmniButtonMenu,
-                    showChatInputButton: u.showChatInputButton
+                return u.activitiesInTextEnabled && i ? {
+                    showInOmniButtonMenu: "showInOmniButtonMenu" in u && u.showInOmniButtonMenu,
+                    showChatInputButton: "showChatInputButton" in u && u.showChatInputButton
                 } : null
             }
         },
@@ -56710,6 +56687,49 @@
                     return i
                 }
             }), (s = i || (i = {})).GENERAL = "GENERAL", s.IMAGES = "IMAGES", s.PREMIUM = "PREMIUM", s.PRIVACY = "PRIVACY"
+        },
+        75789: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return i
+                }
+            });
+            var i = (0, n("862205").createExperiment)({
+                kind: "guild",
+                id: "2024-03_ait_guild_entry_point",
+                label: "Activities in Text Guild Experiment w/ new Entry Point",
+                defaultConfig: {
+                    entryPointEnabled: !1,
+                    activitiesInTextEnabled: !1,
+                    desktopThrobberEnabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable new entry point in Chat Input and App Launcher",
+                    config: {
+                        entryPointEnabled: !0,
+                        activitiesInTextEnabled: !1,
+                        desktopThrobberEnabled: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "Enable new entry point in Chat Input, App Launcher, and Activities In Text",
+                    config: {
+                        entryPointEnabled: !0,
+                        activitiesInTextEnabled: !0,
+                        desktopThrobberEnabled: !1
+                    }
+                }, {
+                    id: 3,
+                    label: "Enable new entry point in Chat Input, App Launcher, Activities in Text, and Desktop Throbber",
+                    config: {
+                        entryPointEnabled: !0,
+                        activitiesInTextEnabled: !0,
+                        desktopThrobberEnabled: !0
+                    }
+                }]
+            })
         },
         651057: function(e, t, n) {
             "use strict";
@@ -87232,8 +87252,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709849115755",
-                                    build_number: "273242"
+                                    built_at: "1709849894409",
+                                    build_number: "273253"
                                 }
                             },
                             retries: 1
@@ -124554,7 +124574,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "68c7212225f696a663adfa3cd45f46e0728eb581"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "7d514ea8e95cac429d0fba25b479de95e0ad6dba"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133864,7 +133884,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273242"
+                                build_number: "273253"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151453,4 +151473,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.522ce37f9ba43d7dba90.js.map
+//# sourceMappingURL=29062.750f5513eae7b2972d47.js.map
