@@ -55,7 +55,7 @@
 <p id="docs-internal-guid-bc90ff8c-7fff-1812-f7c5-77306a2c511d"><strong><span class="wysiwyg-underline">Through Server Profile:</span></strong> </p>
 <p>1. Tap on the ellipses located next to the server’s name and select <strong>Edit Server Profile</strong> to navigate to your <strong>Server Profiles</strong> settings. </p>
 <p>2. Then, select your current server avatar and tap <strong>Change Avatar </strong>to select a new image you would like to use.</p>
-<p>4. Once the changes have been made, tap <strong>Save</strong> in the top right corner to confirm. </p>
+<p>3. Once the changes have been made, tap <strong>Save</strong> in the top right corner to confirm. </p>
 <h1 id="h_01GG6C7WG2GAF74SBZ02GC20VQ">How do I change my profile theme?</h1>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><strong><span id="docs-internal-guid-39e98b80-7fff-7451-a11e-a899c242c5cb"><img src="https://support.discord.com/hc/article_attachments/21750745850007" width="253" height="339"></span></strong></span></p>
 <p id="docs-internal-guid-9ea847a7-7fff-f708-2f57-59c0125e441c"><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> members can customize each of their server profiles’ themes! This will specifically change the colors of your mini profile card. You can choose a <strong>Primary</strong> color and an <strong>Accent </strong>color.</p>
