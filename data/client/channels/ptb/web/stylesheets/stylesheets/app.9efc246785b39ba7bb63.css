@@ -24057,6 +24057,41 @@ input[type=checked]:focus-visible+.label__8e2ef {
     margin-left: 8px
 }
 
+.animation__1b6f2 {
+    width: 40px;
+    height: 44px
+}
+
+.glow__5f536 {
+    position: absolute;
+    z-index: 1;
+    top: -6px;
+    left: -16px
+}
+
+.circleLayer__5e11d {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--bg-overlay-3, var(--channeltextarea-background));
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    z-index: 2
+}
+
+.omniButton__8a1e2 {
+    position: absolute;
+    z-index: 3
+}
+
+.trinkets_f3bd81 {
+    position: absolute;
+    z-index: 4;
+    pointer-events: none;
+    left: -10px
+}
+
 .applicationBuyButton__008f3 {
     display: flex;
     align-items: center
@@ -46270,8 +46305,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -129573,4 +129608,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.906f2aebc151db57bb22.css.map*/
+/*# sourceMappingURL=app.9efc246785b39ba7bb63.css.map*/
