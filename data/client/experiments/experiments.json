@@ -10969,7 +10969,9 @@
       "config_keys": [
         "entryPointEnabled",
         "activitiesInTextEnabled",
-        "desktopThrobberEnabled"
+        "desktopThrobberEnabled",
+        "showInOmniButtonMenu",
+        "showChatInputButton"
       ]
     },
     "rollout": {
