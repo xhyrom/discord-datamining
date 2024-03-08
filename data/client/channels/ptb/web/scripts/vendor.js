@@ -4399,27 +4399,27 @@
         },
         36180: function(e, t, n) {
             "use strict";
-            e.exports = n.p + "f5ce76c65c5aa9f8aa8b.png"
+            e.exports = n.p + "bfb7587fe145b7980277.png"
         },
         353652: function(e, t, n) {
             "use strict";
-            e.exports = n.p + "19a89379576bf4474ea4.svg"
+            e.exports = n.p + "591039f70552d6e93bc1.svg"
         },
         879477: function(e, t, n) {
             "use strict";
-            e.exports = n.p + "ce5e01863b1ab11abc38.png"
+            e.exports = n.p + "c75c20505968c1a75182.png"
         },
         790262: function(e, t, n) {
             "use strict";
-            e.exports = n.p + "7a89d942cb27656f1b97.svg"
+            e.exports = n.p + "94aa7543f56b75fb36a0.svg"
         },
         191120: function(e, t, n) {
             "use strict";
-            e.exports = n.p + "8c35be9cd5956fa4cbc4.png"
+            e.exports = n.p + "bfb7587fe145b7980277.png"
         },
         946613: function(e, t, n) {
             "use strict";
-            e.exports = n.p + "91a33f34c1c27c615fd2.svg"
+            e.exports = n.p + "591039f70552d6e93bc1.svg"
         },
         523403: function(e, t, n) {
             "use strict";
@@ -46780,7 +46780,7 @@
                         darkSVG: n("353652"),
                         whiteSVG: n("946613")
                     },
-                    enabled: !1
+                    enabled: !0
                 }, {
                     type: o.PlatformTypes.SKYPE,
                     name: "Skype",
@@ -87375,8 +87375,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709924985178",
-                                    build_number: "273550"
+                                    built_at: "1709925337013",
+                                    build_number: "273552"
                                 }
                             },
                             retries: 1
@@ -124709,7 +124709,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "74b980a2b778c4b12560163f027e3e0535829507"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "0ea883d02e283b5d1dabc0d9112a015989c0f532"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134019,7 +134019,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273550"
+                                build_number: "273552"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151620,4 +151620,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.9545d9bc8c42df5c32b8.js.map
+//# sourceMappingURL=29062.fbb879e1874cf42456af.js.map
