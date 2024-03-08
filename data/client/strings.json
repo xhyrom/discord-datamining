@@ -15264,6 +15264,8 @@
   "COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION": "\"Fire. Wind. Water. Earth. Which will you unleash?\"",
   "COLLECTIBLES_ANIME_V2_COACHTIP_TITLE": "\"Anime: New styles\"",
   "COLLECTIBLES_ANIME_V2_COACHTIP_DISCRIPTION": "\"Senpai will definitely notice you now.\"",
+  "COLLECTIBLES_SPRINGTOONS_COACHTIP_TITLE": "\"NEW: Springtoons\"",
+  "COLLECTIBLES_SPRINGTOONS_COACHTIP_DESCRIPTION": "\"In the hush of night, a curious magic enchants the air and...\"",
   "COLLECTIBLES_NEW_BADGE": "\"NEW\"",
   "INVENTORY_EMOJI_DETAILS_V2": "\"See emoji details\"",
   "PRIVATE_CHANNEL_INTEGRATION_ADDED": "\"$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.\"",
