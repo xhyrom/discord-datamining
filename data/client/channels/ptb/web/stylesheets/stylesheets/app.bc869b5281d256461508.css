@@ -127286,10 +127286,6 @@ div.nagbar_c731ff {
     --redesign-button-primary-overlay-text: var(--primary-860);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-pressed-text: var(--primary-330);
-    --redesign-button-secondary-alt-text: var(--primary-230);
     --redesign-button-secondary-background: var(--primary-460);
     --redesign-button-secondary-border: hsl(var(--white-500-hsl) / 0.08);
     --redesign-button-secondary-overlay-background: hsl(var(--black-500-hsl) / 0.54);
@@ -127604,10 +127600,6 @@ div.nagbar_c731ff {
     --redesign-button-primary-overlay-text: var(--primary-860);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: hsl(var(--black-500-hsl) / 0.08);
-    --redesign-button-secondary-alt-pressed-background: hsl(var(--black-500-hsl) / 0.16);
-    --redesign-button-secondary-alt-pressed-text: var(--primary-500);
-    --redesign-button-secondary-alt-text: var(--primary-600);
     --redesign-button-secondary-background: var(--white-500);
     --redesign-button-secondary-border: hsl(var(--black-500-hsl) / 0.08);
     --redesign-button-secondary-overlay-background: hsl(var(--black-500-hsl) / 0.54);
@@ -127922,10 +127914,6 @@ div.nagbar_c731ff {
     --redesign-button-primary-overlay-text: var(--plum-25);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-pressed-text: var(--plum-8);
-    --redesign-button-secondary-alt-text: var(--plum-4);
     --redesign-button-secondary-background: var(--plum-17);
     --redesign-button-secondary-border: hsl(var(--plum-11-hsl) / 0.12);
     --redesign-button-secondary-overlay-background: hsl(var(--black-500-hsl) / 0.54);
@@ -128240,10 +128228,6 @@ div.nagbar_c731ff {
     --redesign-button-primary-overlay-text: var(--plum-25);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-pressed-text: var(--plum-9);
-    --redesign-button-secondary-alt-text: var(--plum-6);
     --redesign-button-secondary-background: var(--plum-15);
     --redesign-button-secondary-border: hsl(var(--plum-11-hsl) / 0.12);
     --redesign-button-secondary-overlay-background: hsl(var(--black-500-hsl) / 0.54);
@@ -129614,4 +129598,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ece821b838f471880b40.css.map*/
+/*# sourceMappingURL=app.bc869b5281d256461508.css.map*/
