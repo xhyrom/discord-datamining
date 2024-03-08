@@ -82693,25 +82693,29 @@
             "use strict";
             n.r(t), n.d(t, {
                 getNavYouBarExperiment: function() {
-                    return f
+                    return _
+                },
+                daysSinceYouBarFirstSeen: function() {
+                    return h
                 }
             }), n("884691"), n("233736");
             var i = n("95410"),
                 s = n("868493"),
                 r = n("133337"),
                 a = n("760190"),
-                o = n("21121");
-            let l = {
+                o = n("718517"),
+                l = n("21121");
+            let u = {
                     showYouBar: !1,
                     showMessagesButton: !1
                 },
-                u = !1,
-                d = l,
-                c = (0, s.default)({
+                d = !1,
+                c = u,
+                f = (0, s.default)({
                     kind: "user",
                     id: "2024-02_navi_bar",
                     label: "Mobile Redesign - Nav Experiment: You Bar",
-                    defaultConfig: l,
+                    defaultConfig: u,
                     treatments: [{
                         id: 0,
                         label: "Control",
@@ -82736,15 +82740,20 @@
                     }]
                 });
 
-            function f(e, t) {
+            function _(e, t) {
                 var n, s;
-                let f = !(0, o.isInMainTabsExperiment)(),
-                    _ = !!f || (null == t ? void 0 : t.disable);
-                return a.default.hasLoadedExperiments || _ ? (0, r.getMergedExperimentConfigs)(c.existingUsers, c.newUsers, e, {
+                let o = !(0, l.isInMainTabsExperiment)(),
+                    _ = !!o || (null == t ? void 0 : t.disable);
+                return a.default.hasLoadedExperiments || _ ? (0, r.getMergedExperimentConfigs)(f.existingUsers, f.newUsers, e, {
                     ...t,
                     disable: _,
-                    autoTrackExposure: !f && (null === (s = null == t ? void 0 : t.autoTrackExposure) || void 0 === s || s)
-                }) : (!u && (d = null !== (n = i.default.get("--you-bar-experiment-cached-config")) && void 0 !== n ? n : l, u = !0), d)
+                    autoTrackExposure: !o && (null === (s = null == t ? void 0 : t.autoTrackExposure) || void 0 === s || s)
+                }) : (!d && (c = null !== (n = i.default.get("--you-bar-experiment-cached-config")) && void 0 !== n ? n : u, d = !0), c)
+            }
+
+            function h() {
+                let e = i.default.get("--you-bar-experiment-first-seen");
+                return null == e ? -1 : Math.floor((Date.now() - e) / o.default.Millis.DAY)
             }
         },
         693051: function(e, t, n) {
@@ -87292,8 +87301,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709864830053",
-                                    build_number: "273426"
+                                    built_at: "1709866130874",
+                                    build_number: "273430"
                                 }
                             },
                             retries: 1
@@ -124616,7 +124625,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "699a6c8a65da67566aba40807277d241fb82e6a4"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "6ae5e79cc6d7280b129a56735db894f128b66c4c"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133926,7 +133935,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273426"
+                                build_number: "273430"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151527,4 +151536,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.159a042b2b504a8ee17d.js.map
+//# sourceMappingURL=29062.20db34aebf5fbf1c8570.js.map
