@@ -18438,7 +18438,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273388", ", Version Hash: ").concat("23c3abaf6736b36471ff33b5e1c64e42cd8f8784")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273507", ", Version Hash: ").concat("17db3f872231ed98421d75e53d5f91ff1b8d90a3")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20021,6 +20021,10 @@
                     actions: ["MEDIA_ENGINE_NOISE_CANCELLATION_ERROR"],
                     inlineRequire: () => E("104545").default
                 },
+                GPUWorkaroundManager: {
+                    actions: ["POST_CONNECTION_OPEN"],
+                    inlineRequire: () => E("41377").default
+                },
                 HighFiveManager: {
                     actions: ["VOICE_CHANNEL_EFFECT_SEND", "HIGH_FIVE_COMPLETE"],
                     inlineRequire: () => E("536813").default
@@ -20797,8 +20801,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "273388", "273388"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273388")), _ = 0), _
+                let _ = parseInt((e = "273507", "273507"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273507")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25331,6 +25335,95 @@
                 }
             }
         },
+        41377: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return A
+                }
+            }), E("424973"), E("222007");
+            var t = E("689988"),
+                o = E("49671"),
+                n = E("862205"),
+                r = E("50885");
+            let a = [0, 0];
+
+            function i(e) {
+                let _ = e.toString(16);
+                for (; _.length < 4;) _ = "0" + _;
+                return _
+            }
+
+            function I(e) {
+                return [4098, e]
+            }
+            let s = [function(e, _, E, t) {
+                let o = [],
+                    r = E.map(e => e.map(i).join(":")).join(", ");
+                for (let e = 0; e < t.length; e++) {
+                    let _ = {};
+                    _[t[e]] = "1", o.push({
+                        id: e + 1,
+                        label: t[e],
+                        config: _
+                    })
+                }
+                let a = (0, n.createExperiment)({
+                    kind: "user",
+                    id: e,
+                    label: "GPU Workarounds: ".concat(_, " (").concat(r, ")"),
+                    defaultConfig: {},
+                    treatments: o
+                });
+                return {
+                    gpus: E,
+                    experiment: a
+                }
+            }("2024-03_amd_vdec_tests_1", "AMD video decode tests 1", [
+                [4098, 5686],
+                [4098, 5688]
+            ], ["disable_media_foundation_clear_playback", "disable_d3d11_video_decoder"])];
+
+            function T(e) {
+                for (let _ of e)
+                    if (_[0] === a[0] && _[1] === a[1]) return !0;
+                return !1
+            }
+            let S = !1;
+
+            function N() {
+                let e = {};
+                for (let _ of s)
+                    if (T(_.gpus)) {
+                        let E = _.experiment.getCurrentConfig({
+                            location: "updateFlags"
+                        });
+                        e = {
+                            ...e,
+                            ...E
+                        }
+                    } r.default.setChromiumSwitches(e)
+            }
+            class O extends t.default {
+                constructor(...e) {
+                    super(...e), this.actions = {
+                        POST_CONNECTION_OPEN: async () => {
+                            try {
+                                var e, _, E, t;
+                                if (S || (null === (_ = window.DiscordNative) || void 0 === _ ? void 0 : null === (e = _.gpuSettings) || void 0 === e ? void 0 : e.setChromiumSwitches) == null) return;
+                                let n = await o.default.processUtils.getSystemInfo();
+                                for (let e of null !== (t = null === (E = n.electronGPUInfo) || void 0 === E ? void 0 : E.gpuDevice) && void 0 !== t ? t : []) !0 === e.active && (a = [e.vendorId, e.deviceId]);
+                                for (let e of (S = !0, s)) T(e.gpus) && e.experiment.subscribe({
+                                    location: "GPU experiment subscription"
+                                }, N);
+                                N()
+                            } catch (e) {}
+                        }
+                    }
+                }
+            }
+            var A = new O
+        },
         104545: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -29376,6 +29469,9 @@
                 setEnableHardwareAcceleration(e) {
                     D.gpuSettings.setEnableHardwareAcceleration(e)
                 },
+                setChromiumSwitches(e) {
+                    D.gpuSettings.setChromiumSwitches(e)
+                },
                 getGPUDriverVersions() {
                     return (0, l.isWindows)() && null != this.getDiscordUtils().getGPUDriverVersions ? this.getDiscordUtils().getGPUDriverVersions() : Promise.resolve(Object.freeze({}))
                 },
@@ -29913,7 +30009,7 @@
             "use strict";
             E.r(_), E.d(_, {
                 Dispatcher: function() {
-                    return O
+                    return A
                 }
             }), E("222007"), E("424973"), E("70102");
             var t = E("487445"),
@@ -29926,9 +30022,10 @@
                 I = E("805833"),
                 s = E("377678"),
                 T = E("120082");
-            let S = new Set(["APP_STATE_UPDATE", "CLEAR_CACHES", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_SOCKET", "SESSION_START", "UPLOAD_FAIL", "WRITE_CACHES"]),
-                N = new a.default("Flux");
-            class O {
+            let S = void 0,
+                N = new Set(["APP_STATE_UPDATE", "CLEAR_CACHES", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_SOCKET", "SESSION_START", "UPLOAD_FAIL", "WRITE_CACHES"]),
+                O = new a.default("Flux");
+            class A {
                 isDispatching() {
                     return null != this._currentDispatchActionType
                 }
@@ -29936,7 +30033,7 @@
                     return new Promise((_, E) => {
                         this._waitQueue.push(() => {
                             try {
-                                null == this.functionCache[e.type] && (this.functionCache[e.type] = e => this._dispatchWithDevtools(e), R(this.functionCache[e.type], "dispatch_" + e.type)), this.functionCache[e.type](e), _()
+                                null == this.functionCache[e.type] && (this.functionCache[e.type] = e => this._dispatchWithDevtools(e), l(this.functionCache[e.type], "dispatch_" + e.type)), this.functionCache[e.type](e), _()
                             } catch (e) {
                                 E(e)
                             }
@@ -29951,7 +30048,7 @@
                             if (++_ > 100) {
                                 var e;
                                 let _ = s.serialize();
-                                throw N.error("LastFewActions", _), null === (e = this._sentryUtils) || void 0 === e || e.addBreadcrumb({
+                                throw O.error("LastFewActions", _), null === (e = this._sentryUtils) || void 0 === e || e.addBreadcrumb({
                                     message: "Dispatcher: Dispatch loop detected",
                                     data: {
                                         lastFewActions: _
@@ -29965,14 +30062,14 @@
                             I.default.emit()
                         }
                     } finally {
-                        this._processingWaitQueue = !1, I.default.isDispatching = !1
+                        this._processingWaitQueue = !1, I.default.isDispatching = !1, null == S || S()
                     }
                 }
                 _dispatchWithDevtools(e) {
                     this._dispatchWithLogging(e)
                 }
                 _dispatchWithLogging(e) {
-                    n(null == this._currentDispatchActionType, "Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch. Action: ".concat(e.type, " Already dispatching: ").concat(this._currentDispatchActionType)), n(e.type, "Dispatch.dispatch(...) called without an action type"), S.has(e.type) && N.log("Dispatching ".concat(e.type)), (0, i.mark)(e.type), s.add(e.type);
+                    n(null == this._currentDispatchActionType, "Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch. Action: ".concat(e.type, " Already dispatching: ").concat(this._currentDispatchActionType)), n(e.type, "Dispatch.dispatch(...) called without an action type"), N.has(e.type) && O.log("Dispatching ".concat(e.type)), (0, i.mark)(e.type), s.add(e.type);
                     let _ = this.actionLogger.log(e, _ => {
                         try {
                             this._currentDispatchActionType = e.type, this._dispatch(e, _)
@@ -29980,7 +30077,7 @@
                             this._currentDispatchActionType = null
                         }
                     });
-                    _.totalTime > 100 && N.verbose("Slow dispatch on ".concat(e.type, ": ").concat(_.totalTime, "ms"));
+                    _.totalTime > 100 && O.verbose("Slow dispatch on ".concat(e.type, ": ").concat(_.totalTime, "ms"));
                     try {
                         (0, i.measure)("DISPATCH[".concat(e.type, "]"), e.type)
                     } catch (e) {}
@@ -30026,12 +30123,12 @@
                     this._actionHandlers.addDependencies(e, _)
                 }
                 constructor(e = 0, _, E) {
-                    this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._sentryUtils = void 0, this.functionCache = {}, this._defaultBand = e, this._sentryUtils = E, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
+                    this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new R, this._sentryUtils = void 0, this.functionCache = {}, this._defaultBand = e, this._sentryUtils = E, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
                         r.default.isTracing && E >= 10 && r.default.mark("\uD83E\uDDA5", _, E)
                     })
                 }
             }
-            class A {
+            class R {
                 getOrderedActionHandlers(e) {
                     var _;
                     return null !== (_ = this._orderedActionHandlers[e.type]) && void 0 !== _ ? _ : this._computeOrderedActionHandlers(e.type)
@@ -30043,7 +30140,7 @@
                     for (let E in _) {
                         let t = _[E],
                             o = e => t(e);
-                        R(o, "".concat(e, "_").concat(E)), r[E] = o
+                        l(o, "".concat(e, "_").concat(E)), r[E] = o
                     }
                     return this._dependencyGraph.addNode(o, {
                         name: e,
@@ -30110,7 +30207,7 @@
                 }
             }
 
-            function R(e, _) {
+            function l(e, _) {
                 Object.defineProperty(e, "name", {
                     value: _
                 })
@@ -35937,6 +36034,7 @@
 
             function t(e, _, E, t) {
                 if (e === _) return !0;
+                if (void 0 === e || void 0 === _) return e === _;
                 let o = Object.keys(e),
                     n = Object.keys(_);
                 if (o.length !== n.length) return null != t && t("shallowEqual: unequal key lengths ".concat(o.length, " !=== ").concat(n.length)), !1;
@@ -36518,4 +36616,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.95fbbd685f9ebbe5be4f.js.map
+//# sourceMappingURL=76039.1a538b1fc86177716e9e.js.map

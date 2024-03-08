@@ -8381,7 +8381,7 @@
                     let o = await E(r);
                     if (null != o) {
                         let e = (0, c.toReactionEmoji)(n);
-                        (0, d.addReaction)(r, o.id, e)
+                        await (0, d.addReaction)(r, o.id, e)
                     }
                 }, C = async e => {
                     let {
@@ -8394,7 +8394,7 @@
                     g(t, o, r, s), await E(o);
                     let d = m.default.getChannel(o),
                         c = u.default.parse(d, n);
-                    a.default.sendMessage(o, c)
+                    await a.default.sendMessage(o, c)
                 }
         },
         314848: function(e, t, n) {
@@ -55259,4 +55259,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.774708572f10105b1507.js.map
+//# sourceMappingURL=60053.228002af2ddacde20235.js.map

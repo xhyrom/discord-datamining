@@ -1269,7 +1269,7 @@
                 })
             }
 
-            function N(e) {
+            function R(e) {
                 let {
                     users: t,
                     guildId: n,
@@ -1295,7 +1295,7 @@
                     })
                 })
             }
-            let R = [];
+            let N = [];
 
             function x(e) {
                 let {
@@ -1306,16 +1306,16 @@
                     compact: m = !1,
                     disableInteraction: g = !1,
                     maxVisibleUsers: v = 3
-                } = e, [A, x] = r.useState(!1), y = r.useRef(new d.DelayedCall(150, () => x(!1))), O = (0, o.useStateFromStoresArray)([E.default, p.default], () => {
+                } = e, [A, x] = r.useState(!1), O = r.useRef(new d.DelayedCall(150, () => x(!1))), y = (0, o.useStateFromStoresArray)([E.default, p.default], () => {
                     if (l.type === _.ParticipantTypes.STREAM) {
                         let e = E.default.getViewerIds(l.id);
-                        return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(S.isNotNullish) : R
+                        return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(S.isNotNullish) : N
                     }
-                    return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(S.isNotNullish) : R : R
+                    return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(S.isNotNullish) : N : N
                 }, [l]), L = r.useCallback(() => {
-                    y.current.cancel(), x(!0)
+                    O.current.cancel(), x(!0)
                 }, []), P = r.useCallback(() => {
-                    y.current.delay()
+                    O.current.delay()
                 }, []), D = r.useCallback((e, t) => {
                     L(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
@@ -1329,24 +1329,24 @@
                         onClose: P
                     })
                 }, [P, L]);
-                if (0 === O.length) return null;
-                if (m) return (0, a.jsx)(N, {
+                if (0 === y.length) return null;
+                if (m) return (0, a.jsx)(R, {
                     maxVisibleUsers: v,
-                    users: O,
+                    users: y,
                     guildId: s,
                     channelId: t,
                     className: C,
                     participantType: l.type
                 });
-                let b = u(O).take(v).map(e => (0, a.jsx)(c.Avatar, {
+                let b = u(y).take(v).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: I.viewer
                 }, e.id)).value();
-                return O.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
+                return y.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
                     className: I.overflow,
-                    children: ["+", O.length - v + 1]
+                    children: ["+", y.length - v + 1]
                 }, "overflow")), (0, a.jsx)(h.default, {
                     section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
@@ -1358,7 +1358,7 @@
                                 handleUserContextMenu: D,
                                 guildId: s,
                                 channelId: t,
-                                users: O,
+                                users: y,
                                 disableInteraction: g
                             }),
                             shouldShow: A,
@@ -1494,8 +1494,8 @@
                     }
                 }, [t, A, T]);
                 if (null == e) return null;
-                let N = S === p.ApplicationStreamPresets.PRESET_DOCUMENTS ? p.ApplicationStreamFPS.FPS_30 : _,
-                    R = p.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
+                let R = S === p.ApplicationStreamPresets.PRESET_DOCUMENTS ? p.ApplicationStreamFPS.FPS_30 : _,
+                    N = p.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
@@ -1512,19 +1512,19 @@
                         let {
                             value: t,
                             label: n
-                        } = e, r = (0, o.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, t, N, v, I);
+                        } = e, r = (0, o.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, t, R, v, I);
                         return (0, a.jsx)(i.MenuRadioItem, {
                             group: "stream-settings-resolution",
                             id: "stream-settings-resolution-".concat(t),
                             label: n,
                             checked: t === g,
-                            action: () => M(r, t, N, E.AnalyticsObjectTypes.RESOLUTION)
+                            action: () => M(r, t, R, E.AnalyticsObjectTypes.RESOLUTION)
                         }, "stream-settings-resolution-".concat(t))
                     });
                 return (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(i.MenuGroup, {
                         label: m.default.Messages.SCREENSHARE_FRAME_RATE,
-                        children: R
+                        children: N
                     }), (0, a.jsx)(i.MenuGroup, {
                         label: m.default.Messages.STREAM_RESOLUTION,
                         children: x
@@ -1565,15 +1565,18 @@
         },
         709377: function(e, t, n) {
             "use strict";
-            var a, r, s;
+            var a, r, s, i, l;
             n.r(t), n.d(t, {
                 ContentInventoryFeedKey: function() {
                     return a
                 },
                 ContentInventorySurfaceTypes: function() {
                     return r
+                },
+                ContentInventoryInteractionTypes: function() {
+                    return s
                 }
-            }), (a || (a = {})).GLOBAL_FEED = "global feed", (s = r || (r = {}))[s.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST"
+            }), (a || (a = {})).GLOBAL_FEED = "global feed", (i = r || (r = {}))[i.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST", (l = s || (s = {}))[l.CARD_HOVER = 1] = "CARD_HOVER", l[l.CARD_CLICK = 2] = "CARD_CLICK", l[l.REACTION_EMOJI_REACT_SENT = 3] = "REACTION_EMOJI_REACT_SENT", l[l.REACTION_MESSAGE_SENT = 4] = "REACTION_MESSAGE_SENT"
         },
         265596: function(e, t, n) {
             "use strict";
@@ -1673,7 +1676,7 @@
                     children: I.default.Messages.CLEAR_BUILD_OVERRIDE
                 })
             }
-            let N = i.throttle(() => {
+            let R = i.throttle(() => {
                 C.default.increment({
                     name: o.MetricEvents.APP_CRASHED,
                     tags: ["reason:".concat(l.AppCrashedReasons.UNHANDLED_JS_ERROR), "level:".concat(u.ErrorLevels.FATAL)]
@@ -1681,7 +1684,7 @@
             }, 100, {
                 trailing: !1
             });
-            class R extends r.PureComponent {
+            class N extends r.PureComponent {
                 componentDidCatch(e, t) {
                     this.triggerSoftCrash(e, t)
                 }
@@ -1701,7 +1704,7 @@
                         error_stack: e.stack,
                         sentry_issue_id: a,
                         uses_client_mods: (0, p.usesClientMods)()
-                    }), N(), T.default.cleanupDisplaySleep()
+                    }), R(), T.default.cleanupDisplaySleep()
                 }
                 _handleSubmitReport() {
                     location.reload(!0)
@@ -1753,13 +1756,13 @@
                     }, this.discordErrorsSet = !1
                 }
             }
-            var x = R
+            var x = N
         },
         160139: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return y
+                    return O
                 }
             });
             var a = n("37983");
@@ -1786,10 +1789,10 @@
                 I = n("804392");
             let A = e => T.default.close(e),
                 M = e => T.default.minimize(e),
-                N = (e, t) => {
+                R = (e, t) => {
                     (0, g.isMac)() && !t.altKey ? T.default.fullscreen(e) : T.default.maximize(e)
                 },
-                R = e => {
+                N = e => {
                     let {
                         windowKey: t,
                         themeOverride: n,
@@ -1810,7 +1813,7 @@
                             children: (0, a.jsx)(h.default, {})
                         }), (0, a.jsx)(l.Clickable, {
                             className: I.winButtonMinMax,
-                            onClick: e => N(t, e),
+                            onClick: e => R(t, e),
                             "aria-label": v.default.Messages.TITLE_BAR_MAXIMIZE_WINDOW,
                             tabIndex: -1,
                             children: (0, a.jsx)(p.default, {})
@@ -1859,7 +1862,7 @@
                                 })
                             }), (0, a.jsx)(l.Clickable, {
                                 className: I.macButtonMaximize,
-                                onClick: e => N(n, e),
+                                onClick: e => R(n, e),
                                 "aria-label": v.default.Messages.TITLE_BAR_FULLSCREEN_WINDOW,
                                 tabIndex: -1,
                                 children: (0, a.jsx)(C.default, {
@@ -1875,7 +1878,7 @@
                     })
                 };
 
-            function y(e) {
+            function O(e) {
                 let {
                     focused: t,
                     type: n,
@@ -1886,7 +1889,7 @@
                 if (f) return null;
                 switch (n) {
                     case g.PlatformTypes.WINDOWS:
-                        return (0, a.jsx)(R, {
+                        return (0, a.jsx)(N, {
                             windowKey: r,
                             themeOverride: l,
                             hasOpenLayer: h
@@ -2031,7 +2034,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-23c3abaf6736b36471ff33b5e1c64e42cd8f8784",
+                    release: "discord_web-17db3f872231ed98421d75e53d5f91ff1b8d90a3",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2049,7 +2052,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "273388", "273388")), a.setTag("builtAt", String("1709860784993"));
+                }), a.setTag("buildNumber", (e = "273507", "273507")), a.setTag("builtAt", String("1709919968555"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -3004,7 +3007,7 @@
                     onClose: I,
                     onSelect: A,
                     appContext: M = g.AppContext.APP
-                } = e, N = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), R = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, x = v(n, r, l), y = (0, o.default)(R, M), O = (0, u.default)(R, M, g.NOOP_NULL), L = null == R ? (0, a.jsx)(s.MenuItem, {
+                } = e, R = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, x = v(n, r, l), O = (0, o.default)(N, M), y = (0, u.default)(N, M, g.NOOP_NULL), L = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: E.default,
@@ -3013,8 +3016,8 @@
                     children: [S.isPlatformEmbedded ? (0, a.jsx)(s.MenuItem, {
                         id: "stream-settings",
                         label: T.default.Messages.SCREENSHARE_STREAM_QUALITY,
-                        children: y
-                    }) : null, h ? O : null, N ? (0, a.jsx)(s.MenuItem, {
+                        children: O
+                    }) : null, h ? y : null, R ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
                         label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
                         icon: E.default,
@@ -3023,7 +3026,7 @@
                         id: "stop-streaming",
                         label: T.default.Messages.STOP_STREAMING,
                         icon: p.default,
-                        action: () => (0, d.default)(R)
+                        action: () => (0, d.default)(N)
                     })]
                 });
                 return (0, a.jsx)(i.default, {
@@ -3032,7 +3035,7 @@
                         onSelect: A,
                         navId: "manage-streams",
                         onClose: I,
-                        "aria-label": null != R ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
+                        "aria-label": null != N ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
                         children: [(0, a.jsx)(s.MenuGroup, {
                             children: x.map(e => {
                                 let {
@@ -4188,12 +4191,12 @@
                             src: n,
                             ...g
                         }),
-                        N = {
+                        R = {
                             ...t,
                             backgroundColor: T
                         };
-                    return null != A && S && v && (N.backgroundImage = "url(".concat(A, ")"), N.backgroundSize = "cover"), (0, a.jsx)("div", {
-                        style: N,
+                    return null != A && S && v && (R.backgroundImage = "url(".concat(A, ")"), R.backgroundSize = "cover"), (0, a.jsx)("div", {
+                        style: R,
                         className: E.background,
                         children: m ? (0, a.jsx)(o.default, {
                             shouldAnimate: S,
@@ -4748,4 +4751,4 @@
         }
     }
 ]);
-//# sourceMappingURL=46072.3066901990875e8b955f.js.map
+//# sourceMappingURL=46072.16490d27c108b70f9f27.js.map

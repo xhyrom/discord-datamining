@@ -52204,6 +52204,8 @@
                 id: "2023-08_activities_in_text",
                 label: "Activities in Text User",
                 defaultConfig: {
+                    entryPointEnabled: !1,
+                    desktopThrobberEnabled: !1,
                     activitiesInTextEnabled: !1,
                     showInOmniButtonMenu: !1,
                     showChatInputButton: !1
@@ -52212,7 +52214,9 @@
                     id: 1,
                     label: "enable Activities in text channels",
                     config: {
+                        entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
+                        desktopThrobberEnabled: !1,
                         showInOmniButtonMenu: !0,
                         showChatInputButton: !1
                     }
@@ -52220,7 +52224,9 @@
                     id: 3,
                     label: "enable Activities in text with the rocket button in chat input",
                     config: {
+                        entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
+                        desktopThrobberEnabled: !1,
                         showInOmniButtonMenu: !1,
                         showChatInputButton: !0
                     }
@@ -56742,7 +56748,9 @@
                 defaultConfig: {
                     entryPointEnabled: !1,
                     activitiesInTextEnabled: !1,
-                    desktopThrobberEnabled: !1
+                    desktopThrobberEnabled: !1,
+                    showInOmniButtonMenu: !1,
+                    showChatInputButton: !1
                 },
                 treatments: [{
                     id: 1,
@@ -56750,7 +56758,9 @@
                     config: {
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !1,
-                        desktopThrobberEnabled: !1
+                        desktopThrobberEnabled: !1,
+                        showInOmniButtonMenu: !1,
+                        showChatInputButton: !1
                     }
                 }, {
                     id: 2,
@@ -56758,7 +56768,9 @@
                     config: {
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
-                        desktopThrobberEnabled: !1
+                        desktopThrobberEnabled: !1,
+                        showInOmniButtonMenu: !0,
+                        showChatInputButton: !1
                     }
                 }, {
                     id: 3,
@@ -56766,7 +56778,9 @@
                     config: {
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
-                        desktopThrobberEnabled: !0
+                        desktopThrobberEnabled: !0,
+                        showInOmniButtonMenu: !0,
+                        showChatInputButton: !1
                     }
                 }]
             })
@@ -62958,41 +62972,59 @@
         225772: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return a
+                getActivityFromCustomStatus: function() {
+                    return d
+                },
+                useCustomStatusActivity: function() {
+                    return c
                 }
             });
-            var i = n("385976"),
-                s = n("867805"),
-                r = n("49111");
+            var i = n("884691"),
+                s = n("446674"),
+                r = n("385976"),
+                a = n("867805"),
+                o = n("845579"),
+                l = n("49111");
 
-            function a(e) {
-                let t = null;
-                if (null != e.emojiId && "0" !== e.emojiId) {
-                    let n = i.default.getUsableCustomEmojiById(e.emojiId);
-                    t = null != n ? {
-                        id: n.id,
-                        name: n.name,
-                        animated: n.animated
-                    } : null
-                } else if (null != e.emojiName && "" !== e.emojiName) {
-                    let n = s.default.getByName(s.default.convertSurrogateToName(e.emojiName, !1));
-                    t = null != n ? {
+            function u(e, t) {
+                let n = null;
+                if (null != t) n = {
+                    id: t.id,
+                    name: t.name,
+                    animated: t.animated
+                };
+                else if (null != e.emojiName && "" !== e.emojiName) {
+                    let t = a.default.getByName(a.default.convertSurrogateToName(e.emojiName, !1));
+                    n = null != t ? {
                         id: null,
-                        name: n.surrogates,
+                        name: t.surrogates,
                         animated: !1
                     } : null
                 }
-                let n = Number(e.expiresAtMs);
+                let i = Number(e.expiresAtMs);
                 return {
                     name: "Custom Status",
-                    type: r.ActivityTypes.CUSTOM_STATUS,
+                    type: l.ActivityTypes.CUSTOM_STATUS,
                     state: e.text.length > 0 ? e.text : void 0,
-                    timestamps: n > 0 ? {
-                        end: n
+                    timestamps: i > 0 ? {
+                        end: i
                     } : void 0,
-                    emoji: t
+                    emoji: n
                 }
+            }
+
+            function d(e) {
+                let {
+                    emojiId: t
+                } = e, n = null != t && "0" !== t ? r.default.getUsableCustomEmojiById(t) : null;
+                return u(e, n)
+            }
+
+            function c() {
+                let e = o.CustomStatusSetting.useSetting(),
+                    t = null == e ? void 0 : e.emojiId,
+                    n = (0, s.useStateFromStores)([r.default], () => null != t && "0" !== t ? r.default.getUsableCustomEmojiById(t) : null, [t]);
+                return (0, i.useMemo)(() => null != e ? u(e, n) : null, [e, n])
             }
         },
         808122: function(e, t, n) {
@@ -82693,25 +82725,29 @@
             "use strict";
             n.r(t), n.d(t, {
                 getNavYouBarExperiment: function() {
-                    return f
+                    return _
+                },
+                daysSinceYouBarFirstSeen: function() {
+                    return h
                 }
             }), n("884691"), n("233736");
             var i = n("95410"),
                 s = n("868493"),
                 r = n("133337"),
                 a = n("760190"),
-                o = n("21121");
-            let l = {
+                o = n("718517"),
+                l = n("21121");
+            let u = {
                     showYouBar: !1,
                     showMessagesButton: !1
                 },
-                u = !1,
-                d = l,
-                c = (0, s.default)({
+                d = !1,
+                c = u,
+                f = (0, s.default)({
                     kind: "user",
                     id: "2024-02_navi_bar",
                     label: "Mobile Redesign - Nav Experiment: You Bar",
-                    defaultConfig: l,
+                    defaultConfig: u,
                     treatments: [{
                         id: 0,
                         label: "Control",
@@ -82736,15 +82772,20 @@
                     }]
                 });
 
-            function f(e, t) {
+            function _(e, t) {
                 var n, s;
-                let f = !(0, o.isInMainTabsExperiment)(),
-                    _ = !!f || (null == t ? void 0 : t.disable);
-                return a.default.hasLoadedExperiments || _ ? (0, r.getMergedExperimentConfigs)(c.existingUsers, c.newUsers, e, {
+                let o = !(0, l.isInMainTabsExperiment)(),
+                    _ = !!o || (null == t ? void 0 : t.disable);
+                return a.default.hasLoadedExperiments || _ ? (0, r.getMergedExperimentConfigs)(f.existingUsers, f.newUsers, e, {
                     ...t,
                     disable: _,
-                    autoTrackExposure: !f && (null === (s = null == t ? void 0 : t.autoTrackExposure) || void 0 === s || s)
-                }) : (!u && (d = null !== (n = i.default.get("--you-bar-experiment-cached-config")) && void 0 !== n ? n : l, u = !0), d)
+                    autoTrackExposure: !o && (null === (s = null == t ? void 0 : t.autoTrackExposure) || void 0 === s || s)
+                }) : (!d && (c = null !== (n = i.default.get("--you-bar-experiment-cached-config")) && void 0 !== n ? n : u, d = !0), c)
+            }
+
+            function h() {
+                let e = i.default.get("--you-bar-experiment-first-seen");
+                return null == e ? -1 : Math.floor((Date.now() - e) / o.default.Millis.DAY)
             }
         },
         693051: function(e, t, n) {
@@ -87292,8 +87333,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709860784993",
-                                    build_number: "273388"
+                                    built_at: "1709919968555",
+                                    build_number: "273507"
                                 }
                             },
                             retries: 1
@@ -93142,7 +93183,7 @@
                     return
                 }
                 let _ = await O(n, o);
-                v("MESSAGE_REACTION_ADD", e, t, n, {
+                return v("MESSAGE_REACTION_ADD", e, t, n, {
                     burst: o,
                     colors: _
                 }), await d.default.unarchiveThreadIfNecessary(e), r.default.put({
@@ -111893,7 +111934,7 @@
             function A() {
                 let e = [],
                     t = g.CustomStatusSetting.getSetting();
-                null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, c.default)(t));
+                null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, c.getActivityFromCustomStatus)(t));
                 let n = h.default.getActivities();
                 e.push(...n);
                 let i = S.default.getStream();
@@ -124616,7 +124657,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "23c3abaf6736b36471ff33b5e1c64e42cd8f8784"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "17db3f872231ed98421d75e53d5f91ff1b8d90a3"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133926,7 +133967,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273388"
+                                build_number: "273507"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151527,4 +151568,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.377e2e160032d2d41230.js.map
+//# sourceMappingURL=29062.f60090d00ec95328f0ff.js.map
