@@ -16713,6 +16713,7 @@
   "POLL_NO_VOTES_FOR_ANSWER_TITLE": "\"Nothing to see here\"",
   "POLL_NO_VOTES_FOR_ANSWER_BODY": "\"There are no votes for this answer.\"",
   "POLL_ANSWER_VOTES_MODAL_TITLE": "\"Votes\"",
+  "POLL_ANSWER_VOTES_MODAL_VOTE_TAB": "\"{numVotes, plural, =0 {0 votes} =1 {{numVotes} vote} other {{numVotes} votes}} for {option}\"",
   "POLL_TAP_FOR_VOTERS_A11Y_ANDROID": "\"Reveal voters\"",
   "POLL_TAP_FOR_VOTERS_A11Y_IOS": "\"Reveals voters\"",
   "POLL_VOTES_TOOLTIP_1_N": "\"!!{a}!! and {n, plural, one {1 other} other {{n} others}}\"",
