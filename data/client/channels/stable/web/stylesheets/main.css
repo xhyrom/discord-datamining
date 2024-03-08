@@ -1929,6 +1929,7 @@
 }
 
 .wrapper__83ca8 {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9344,6 +9345,158 @@
     background-color: Canvas
 }
 
+.info__40462 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    align-items: center;
+    white-space: nowrap
+}
+
+.infoSpacing_d7e11c {
+    margin-left: 5px
+}
+
+.popoutWrapper__6e5c7 {
+    position: relative;
+    left: -30px;
+    width: 200px;
+    display: flex;
+    max-height: 40vh
+}
+
+.scroller__61bf9 {
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: var(--background-floating)
+}
+
+.avatars__71a3e {
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    position: relative
+}
+
+.avatar__611fe {
+    margin-left: -2px;
+    -webkit-mask: url(/assets/c3859ebb6176ea76913f.svg);
+    mask: url(/assets/c3859ebb6176ea76913f.svg);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    mask-type: alpha
+}
+
+.avatar__611fe:first-child {
+    margin-left: 0
+}
+
+.avatar__611fe:last-child {
+    -webkit-mask: none;
+    mask: none
+}
+
+.overflow__5f7bc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 12px;
+    line-height: 16px;
+    width: auto;
+    height: 24px;
+    border-radius: 16px;
+    background-color: var(--background-tertiary);
+    color: var(--interactive-normal)
+}
+
+.mainContainer_ec6e51 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px
+}
+
+.animatedContainer_f47edf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0
+}
+
+.itemContainer__47bc5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow: hidden;
+    max-width: 100%
+}
+
+.avatarAndTextContainer__394c8 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer
+}
+
+.serverContainer__0bbd1 {
+    flex: 1
+}
+
+.itemizedListText_b91012 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.itemizedListText_b91012 strong {
+    color: var(--interactive-active)
+}
+
+.dotSpacer_c6c9f0 {
+    background-color: var(--background-accent);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%
+}
+
+@keyframes placeholderPulse__144c1 {
+    0% {
+        opacity: .3
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .3
+    }
+}
+
+.skeleton_bfde27 {
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: placeholderPulse__144c1 1.3s ease-in-out infinite;
+    background-color: var(--background-secondary-alt);
+    display: flex;
+    flex-direction: column;
+    height: 18px;
+    width: 100%;
+    border-radius: 8px
+}
+
 .divider__2bbbc {
     margin-top: 12px;
     height: 1px;
@@ -16373,72 +16526,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     align-items: center
 }
 
-.info__40462 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow: hidden;
-    align-items: center;
-    white-space: nowrap
-}
-
-.infoSpacing_d7e11c {
-    margin-left: 5px
-}
-
-.popoutWrapper__6e5c7 {
-    position: relative;
-    left: -30px;
-    width: 200px;
-    display: flex;
-    max-height: 40vh
-}
-
-.scroller__61bf9 {
-    border-radius: 4px;
-    padding: 8px 16px;
-    background-color: var(--background-floating)
-}
-
-.avatars__71a3e {
-    display: flex;
-    flex-grow: 0;
-    align-items: center;
-    position: relative
-}
-
-.avatar__611fe {
-    margin-left: -2px;
-    -webkit-mask: url(/assets/c3859ebb6176ea76913f.svg);
-    mask: url(/assets/c3859ebb6176ea76913f.svg);
-    -webkit-mask-size: 100%;
-    mask-size: 100%;
-    mask-type: alpha
-}
-
-.avatar__611fe:first-child {
-    margin-left: 0
-}
-
-.avatar__611fe:last-child {
-    -webkit-mask: none;
-    mask: none
-}
-
-.overflow__5f7bc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 8px;
-    font-size: 12px;
-    line-height: 16px;
-    width: auto;
-    height: 24px;
-    border-radius: 16px;
-    background-color: var(--background-tertiary);
-    color: var(--interactive-normal)
-}
-
 .container_e7feee {
     background: var(--background-secondary);
     display: flex;
@@ -17866,6 +17953,13 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     padding-top: 12px;
     padding-right: 12px;
     padding-left: 12px
+}
+
+.profileMutuals__5a6ff {
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    flex: 1
 }
 
 .lastEditedByContainer__2d0f6 {
@@ -19698,12 +19792,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -39963,8 +40057,7 @@ html .progress__4ef76 {
 }
 
 .emoji_db6bae {
-    width: 24px;
-    height: 24px
+    width: 24px
 }
 
 .contentImage_ee0279 {
@@ -39982,7 +40075,7 @@ html .progress__4ef76 {
     margin-top: 8px;
     max-width: 224px;
     padding: 8px;
-    background-color: var(--bg-overlay-chat, var(--background-primary));
+    background: var(--bg-overlay-3, var(--background-primary));
     border-radius: var(--radius-md);
     gap: 8px;
     align-items: center;
@@ -39990,7 +40083,7 @@ html .progress__4ef76 {
 }
 
 .container__35f96:hover {
-    background-color: var(--background-modifier-hover);
+    background: var(--bg-overlay-5, var(--background-modifier-hover));
     cursor: pointer
 }
 
@@ -44635,6 +44728,10 @@ html .progress__4ef76 {
     padding: 0
 }
 
+.profileMutuals_dd092a {
+    margin-top: 12px
+}
+
 .mutualGuildsList__6e961,
 .mutualFriendsList__632b5 {
     width: 100%
@@ -46173,8 +46270,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -55575,6 +55672,10 @@ html .progress__4ef76 {
     color: var(--interactive-hover)
 }
 
+.subMenuIcon_b0da00 {
+    margin-top: 1px
+}
+
 .statusPickerModalMenu__13fe1 {
     width: 300px;
     overflow: hidden;
@@ -55643,9 +55744,22 @@ html .progress__4ef76 {
     flex-direction: row-reverse
 }
 
-.quietModeIcon__3b61a {
-    width: 18px;
-    height: 18px
+.focusModeItem__7cff0 {
+    padding-left: 2px
+}
+
+.focusModeIcon__2bad9 {
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+    margin-left: 8px
+}
+
+.focusModeTitle_e1a011 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px
 }
 
 .content__73f32 {
@@ -64255,6 +64369,17 @@ html .invoiceCancelRow_c1bfe7 {
     }
 }
 
+.repositioned__384fe .image__88ebc {
+    height: 30px;
+    width: 40px
+}
+
+.repositioned__384fe .buttons_c518ae {
+    position: relative;
+    top: 0;
+    right: 0
+}
+
 .image__88ebc,
 .details__695f1 {
     position: relative
@@ -64390,6 +64515,11 @@ html .invoiceCancelRow_c1bfe7 {
 .toolsButton_cea0b4 {
     position: relative;
     margin-left: 16px
+}
+
+.linkButton__91a92 {
+    position: relative;
+    padding: 0 2px
 }
 
 .externalButton__64cae {
@@ -66326,6 +66456,29 @@ html .invoiceCancelRow_c1bfe7 {
     background: linear-gradient(279deg, hsl(var(--black-500-hsl)/0)0%, hsl(var(--black-500-hsl)/.1)50.8%, hsl(var(--black-500-hsl)/0)100%)
 }
 
+.cardDescriptionTenureReward_bca63f {
+    background-image: none;
+    justify-content: flex-end
+}
+
+.descriptionCTATenureReward__55e19 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+
+.descriptionCTATenureReward__55e19>img {
+    margin-right: 4px
+}
+
+.cardDescription_d7433f {
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%)
+}
+
+.theme-light .cardDescription_d7433f {
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
+}
+
 .toggleSwitch__7657a {
     position: relative;
     display: flex;
@@ -66649,7 +66802,11 @@ html .invoiceCancelRow_c1bfe7 {
 
 .baseProgressCircle_b5f373 {
     fill: transparent;
-    stroke: #404043
+    stroke: var(--background-primary)
+}
+
+.theme-light .baseProgressCircle_b5f373 {
+    stroke: var(--white-500)
 }
 
 .circleSVG__53ba4 {
@@ -66665,14 +66822,19 @@ html .invoiceCancelRow_c1bfe7 {
 }
 
 .gemBackgroundFill__8886e {
-    fill: #404043
+    fill: var(--background-primary)
+}
+
+.theme-light .gemBackgroundFill__8886e {
+    fill: var(--white-500)
 }
 
 .gemProgressCircle__1a3f7 {
     width: 80%;
     min-width: 180px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-bottom: 10px
 }
 
 @keyframes gemGlow__6989d {
@@ -66680,20 +66842,20 @@ html .invoiceCancelRow_c1bfe7 {
     0%,
     50%,
     to {
-        filter: drop-shadow(0 0 0 var(--premium-tier-2-pink-for-gradients))grayscale(0%)
+        filter: drop-shadow(0 0 0 var(--premium-tier-2-pink-for-gradients-2))grayscale(0%)
     }
 
     25%,
     75% {
-        filter: drop-shadow(0 0 20px var(--premium-tier-2-pink-for-gradients))grayscale(0%)
+        filter: drop-shadow(0 0 20px var(--premium-tier-2-pink-for-gradients-2))grayscale(0%)
     }
 
     36% {
-        filter: drop-shadow(0 0 4px var(--premium-tier-2-pink-for-gradients))grayscale(0%)
+        filter: drop-shadow(0 0 4px var(--premium-tier-2-pink-for-gradients-2))grayscale(0%)
     }
 
     40% {
-        filter: drop-shadow(0 0 2px var(--premium-tier-2-pink-for-gradients))grayscale(30%)
+        filter: drop-shadow(0 0 2px var(--premium-tier-2-pink-for-gradients-2))grayscale(30%)
     }
 }
 
@@ -66715,7 +66877,7 @@ html .invoiceCancelRow_c1bfe7 {
     }
 
     75% {
-        filter: drop-shadow(0 0 20px var(--premium-tier-2-pink-for-gradients))
+        filter: drop-shadow(0 0 20px var(--premium-tier-2-pink-for-gradients-2))
     }
 }
 
@@ -66869,6 +67031,10 @@ html .invoiceCancelRow_c1bfe7 {
     z-index: 40
 }
 
+.cardComponent_d27424 {
+    transition: scale.15s ease-in-out
+}
+
 .card_e97590 {
     position: relative;
     display: flex;
@@ -66905,6 +67071,35 @@ html .invoiceCancelRow_c1bfe7 {
     scale: 116.5%;
     margin-left: 0;
     margin-bottom: -9px
+}
+
+.card_e97590:hover .cardComponent_d27424 {
+    scale: 65%;
+    transform-origin: bottom
+}
+
+@media(max-width:959px) {
+    .card_e97590:hover .cardComponent_d27424 {
+        scale: 85%
+    }
+}
+
+@media(max-width:820px) {
+    .card_e97590:hover .cardComponent_d27424 {
+        scale: 75%
+    }
+}
+
+@media(max-width:700px) {
+    .card_e97590:hover .cardComponent_d27424 {
+        scale: 65%
+    }
+}
+
+@media(max-width:650px) {
+    .card_e97590:hover .cardComponent_d27424 {
+        scale: 55%
+    }
 }
 
 @media screen and (max-width:1330px) {
@@ -66984,13 +67179,12 @@ html .invoiceCancelRow_c1bfe7 {
     transition: all.1s ease-in-out
 }
 
-.cardImage__9da5b,
-.cardIllustration_f54865 {
+.cardImage__9da5b {
     pointer-events: none
 }
 
 .cardIllustrationNoHover_e49efc {
-    justify-content: space-between;
+    justify-content: flex-end;
     display: flex;
     flex-direction: column;
     height: 100%
@@ -67011,7 +67205,6 @@ html .invoiceCancelRow_c1bfe7 {
     pointer-events: none;
     transition: all.1s ease-in-out;
     border-radius: 20px;
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%);
     z-index: 20
 }
 
@@ -67035,10 +67228,6 @@ html .invoiceCancelRow_c1bfe7 {
 
 .reducedMotion__90450 .cardDescription__46c9d {
     transition: none
-}
-
-.theme-light .cardDescription__46c9d {
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
 }
 
 .cover__60fa6 {
@@ -80668,6 +80857,11 @@ input::-webkit-inner-spin-button {
 
 .productCard_eabca8 {
     margin: 0 auto
+}
+
+.subDetailsModal__7eb23 {
+    border-radius: 12px;
+    overflow: hidden
 }
 
 .footer_c689c6 {
@@ -124075,6 +124269,10 @@ div.nagbar_c731ff {
     gap: 12px
 }
 
+.agreementDescription__093a9 {
+    margin-bottom: 18px
+}
+
 .list__1b9fb {
     list-style-type: disc;
     margin-left: 30px
@@ -126021,6 +126219,8 @@ div.nagbar_c731ff {
     --brand-860-hsl: 235 calc(var(--saturation-factor, 1) * 46.9%) 9.6%;
     --brand-900: hsl(var(--brand-900-hsl) / 1);
     --brand-900-hsl: 233 calc(var(--saturation-factor, 1) * 50%) 3.1%;
+    --bungie: hsl(var(--bungie-hsl) / 1);
+    --bungie-hsl: 197 calc(var(--saturation-factor, 1) * 100%) 44.5%;
     --crunchyroll: hsl(var(--crunchyroll-hsl) / 1);
     --crunchyroll-hsl: 29 calc(var(--saturation-factor, 1) * 93%) 55.5%;
     --discord-8th-bday-blue: hsl(var(--discord-8th-bday-blue-hsl) / 1);
@@ -126828,9 +127028,15 @@ div.nagbar_c731ff {
     --redesign-activity-card-badge-icon: var(--primary-360);
     --redesign-activity-card-border: hsl(var(--white-500-hsl) / 0.02);
     --redesign-activity-card-overflow-background: var(--primary-630);
+    --redesign-button-active-background: var(--green-430);
+    --redesign-button-active-pressed-background: var(--green-460);
+    --redesign-button-active-text: var(--white-500);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
+    --redesign-button-destructive-background: var(--red-430);
+    --redesign-button-destructive-pressed-background: var(--red-460);
+    --redesign-button-destructive-text: var(--white-500);
     --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl) / 0.54);
     --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl) / 0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
@@ -126852,24 +127058,31 @@ div.nagbar_c731ff {
     --redesign-button-primary-alt-pressed-text: var(--brand-360);
     --redesign-button-primary-alt-text: var(--brand-360);
     --redesign-button-primary-background: var(--brand-500);
-    --redesign-button-primary-on-blurple-background: var(--white-500);
-    --redesign-button-primary-on-blurple-pressed-background: var(--brand-200);
     --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
-    --redesign-button-primary-on-blurple-text: var(--brand-500);
+    --redesign-button-primary-overlay-background: var(--white-500);
+    --redesign-button-primary-overlay-pressed-background: var(--primary-230);
+    --redesign-button-primary-overlay-text: var(--primary-860);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: var(--primary-660);
+    --redesign-button-secondary-alt-background: var(--primary-530);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
     --redesign-button-secondary-alt-pressed-text: var(--primary-330);
     --redesign-button-secondary-alt-text: var(--primary-230);
     --redesign-button-secondary-background: var(--primary-460);
     --redesign-button-secondary-border: hsl(var(--white-500-hsl) / 0.08);
+    --redesign-button-secondary-overlay-background: hsl(var(--black-500-hsl) / 0.54);
+    --redesign-button-secondary-overlay-pressed-background: hsl(var(--black-500-hsl) / 0.64);
+    --redesign-button-secondary-overlay-text: var(--white-500);
     --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-pressed-border: hsl(var(--transparent-hsl) / 0);
     --redesign-button-secondary-text: var(--primary-230);
     --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
     --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.28);
     --redesign-button-selected-text: var(--brand-500);
+    --redesign-button-tertiary-background: var(--primary-660);
+    --redesign-button-tertiary-pressed-background: var(--primary-560);
+    --redesign-button-tertiary-pressed-text: var(--primary-330);
+    --redesign-button-tertiary-text: var(--primary-230);
     --redesign-channel-category-name-text: var(--primary-330);
     --redesign-channel-message-preview-text: var(--primary-360);
     --redesign-channel-name-muted-text: var(--primary-360);
@@ -127133,9 +127346,15 @@ div.nagbar_c731ff {
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--primary-400-hsl) / 0.24);
     --redesign-activity-card-overflow-background: var(--primary-230);
+    --redesign-button-active-background: var(--green-430);
+    --redesign-button-active-pressed-background: var(--green-460);
+    --redesign-button-active-text: var(--white-500);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
+    --redesign-button-destructive-background: var(--red-430);
+    --redesign-button-destructive-pressed-background: var(--red-460);
+    --redesign-button-destructive-text: var(--white-500);
     --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl) / 0.54);
     --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl) / 0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
@@ -127157,10 +127376,10 @@ div.nagbar_c731ff {
     --redesign-button-primary-alt-pressed-text: var(--brand-560);
     --redesign-button-primary-alt-text: var(--brand-500);
     --redesign-button-primary-background: var(--brand-500);
-    --redesign-button-primary-on-blurple-background: var(--white-500);
-    --redesign-button-primary-on-blurple-pressed-background: var(--brand-200);
     --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
-    --redesign-button-primary-on-blurple-text: var(--brand-500);
+    --redesign-button-primary-overlay-background: var(--white-500);
+    --redesign-button-primary-overlay-pressed-background: var(--primary-230);
+    --redesign-button-primary-overlay-text: var(--primary-860);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: hsl(var(--black-500-hsl) / 0.08);
@@ -127169,12 +127388,19 @@ div.nagbar_c731ff {
     --redesign-button-secondary-alt-text: var(--primary-600);
     --redesign-button-secondary-background: var(--white-500);
     --redesign-button-secondary-border: hsl(var(--black-500-hsl) / 0.08);
+    --redesign-button-secondary-overlay-background: hsl(var(--black-500-hsl) / 0.54);
+    --redesign-button-secondary-overlay-pressed-background: hsl(var(--black-500-hsl) / 0.64);
+    --redesign-button-secondary-overlay-text: var(--white-500);
     --redesign-button-secondary-pressed-background: var(--primary-130);
     --redesign-button-secondary-pressed-border: hsl(var(--black-500-hsl) / 0.04);
     --redesign-button-secondary-text: var(--primary-600);
     --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.16);
     --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.24);
     --redesign-button-selected-text: var(--brand-500);
+    --redesign-button-tertiary-background: hsl(var(--black-500-hsl) / 0.08);
+    --redesign-button-tertiary-pressed-background: hsl(var(--black-500-hsl) / 0.16);
+    --redesign-button-tertiary-pressed-text: var(--primary-500);
+    --redesign-button-tertiary-text: var(--primary-600);
     --redesign-channel-category-name-text: var(--primary-500);
     --redesign-channel-message-preview-text: var(--primary-460);
     --redesign-channel-name-muted-text: var(--primary-460);
@@ -127438,15 +127664,21 @@ div.nagbar_c731ff {
     --redesign-activity-card-badge-icon: var(--plum-11);
     --redesign-activity-card-border: hsl(var(--plum-11-hsl) / 0.12);
     --redesign-activity-card-overflow-background: var(--primary-630);
+    --redesign-button-active-background: var(--green-430);
+    --redesign-button-active-pressed-background: var(--green-460);
+    --redesign-button-active-text: var(--white-500);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
+    --redesign-button-destructive-background: var(--red-430);
+    --redesign-button-destructive-pressed-background: var(--red-460);
+    --redesign-button-destructive-text: var(--white-500);
     --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl) / 0.54);
     --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl) / 0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
-    --redesign-button-overlay-pressed-background: var(--plum-4);
-    --redesign-button-overlay-text: var(--plum-25);
+    --redesign-button-overlay-pressed-background: var(--primary-230);
+    --redesign-button-overlay-text: var(--primary-860);
     --redesign-button-positive-background: var(--green-430);
     --redesign-button-positive-pressed-background: var(--green-460);
     --redesign-button-positive-text: var(--white-500);
@@ -127462,24 +127694,31 @@ div.nagbar_c731ff {
     --redesign-button-primary-alt-pressed-text: var(--brand-360);
     --redesign-button-primary-alt-text: var(--brand-400);
     --redesign-button-primary-background: var(--brand-500);
-    --redesign-button-primary-on-blurple-background: var(--white-500);
-    --redesign-button-primary-on-blurple-pressed-background: var(--brand-200);
     --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
-    --redesign-button-primary-on-blurple-text: var(--brand-500);
+    --redesign-button-primary-overlay-background: var(--white-500);
+    --redesign-button-primary-overlay-pressed-background: var(--plum-4);
+    --redesign-button-primary-overlay-text: var(--plum-25);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: hsl(var(--plum-23-alpha-hsl) / 0.09);
-    --redesign-button-secondary-alt-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
+    --redesign-button-secondary-alt-background: var(--primary-530);
+    --redesign-button-secondary-alt-pressed-background: var(--primary-560);
     --redesign-button-secondary-alt-pressed-text: var(--plum-8);
     --redesign-button-secondary-alt-text: var(--plum-4);
     --redesign-button-secondary-background: var(--plum-17);
     --redesign-button-secondary-border: hsl(var(--plum-11-hsl) / 0.12);
+    --redesign-button-secondary-overlay-background: hsl(var(--black-500-hsl) / 0.54);
+    --redesign-button-secondary-overlay-pressed-background: hsl(var(--black-500-hsl) / 0.64);
+    --redesign-button-secondary-overlay-text: var(--white-500);
     --redesign-button-secondary-pressed-background: var(--plum-15);
     --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.06);
     --redesign-button-secondary-text: var(--plum-4);
     --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
     --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.28);
     --redesign-button-selected-text: var(--brand-500);
+    --redesign-button-tertiary-background: hsl(var(--plum-23-alpha-hsl) / 0.09);
+    --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
+    --redesign-button-tertiary-pressed-text: var(--plum-6);
+    --redesign-button-tertiary-text: var(--plum-4);
     --redesign-channel-category-name-text: var(--plum-8);
     --redesign-channel-message-preview-text: var(--plum-10);
     --redesign-channel-name-muted-text: var(--plum-10);
@@ -127743,15 +127982,21 @@ div.nagbar_c731ff {
     --redesign-activity-card-badge-icon: var(--plum-10);
     --redesign-activity-card-border: hsl(var(--plum-11-hsl) / 0.06);
     --redesign-activity-card-overflow-background: var(--plum-17);
+    --redesign-button-active-background: var(--green-430);
+    --redesign-button-active-pressed-background: var(--green-460);
+    --redesign-button-active-text: var(--white-500);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
+    --redesign-button-destructive-background: var(--red-430);
+    --redesign-button-destructive-pressed-background: var(--red-460);
+    --redesign-button-destructive-text: var(--white-500);
     --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl) / 0.54);
     --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl) / 0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
-    --redesign-button-overlay-pressed-background: var(--plum-4);
-    --redesign-button-overlay-text: var(--plum-25);
+    --redesign-button-overlay-pressed-background: var(--primary-230);
+    --redesign-button-overlay-text: var(--primary-860);
     --redesign-button-positive-background: var(--green-430);
     --redesign-button-positive-pressed-background: var(--green-460);
     --redesign-button-positive-text: var(--white-500);
@@ -127767,24 +128012,31 @@ div.nagbar_c731ff {
     --redesign-button-primary-alt-pressed-text: var(--brand-360);
     --redesign-button-primary-alt-text: var(--brand-360);
     --redesign-button-primary-background: var(--brand-500);
-    --redesign-button-primary-on-blurple-background: var(--white-500);
-    --redesign-button-primary-on-blurple-pressed-background: var(--brand-200);
     --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
-    --redesign-button-primary-on-blurple-text: var(--brand-500);
+    --redesign-button-primary-overlay-background: var(--white-500);
+    --redesign-button-primary-overlay-pressed-background: var(--plum-4);
+    --redesign-button-primary-overlay-text: var(--plum-25);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: hsl(var(--plum-11-hsl) / 0.12);
-    --redesign-button-secondary-alt-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
+    --redesign-button-secondary-alt-background: var(--primary-530);
+    --redesign-button-secondary-alt-pressed-background: var(--primary-560);
     --redesign-button-secondary-alt-pressed-text: var(--plum-9);
     --redesign-button-secondary-alt-text: var(--plum-6);
     --redesign-button-secondary-background: var(--plum-15);
     --redesign-button-secondary-border: hsl(var(--plum-11-hsl) / 0.12);
+    --redesign-button-secondary-overlay-background: hsl(var(--black-500-hsl) / 0.54);
+    --redesign-button-secondary-overlay-pressed-background: hsl(var(--black-500-hsl) / 0.64);
+    --redesign-button-secondary-overlay-text: var(--white-500);
     --redesign-button-secondary-pressed-background: var(--plum-13);
     --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.06);
     --redesign-button-secondary-text: var(--plum-6);
     --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
     --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.28);
     --redesign-button-selected-text: var(--brand-500);
+    --redesign-button-tertiary-background: hsl(var(--plum-11-hsl) / 0.12);
+    --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
+    --redesign-button-tertiary-pressed-text: var(--plum-5);
+    --redesign-button-tertiary-text: var(--plum-6);
     --redesign-channel-category-name-text: var(--plum-9);
     --redesign-channel-message-preview-text: var(--plum-10);
     --redesign-channel-name-muted-text: var(--plum-10);
@@ -129140,4 +129392,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.eb29808a561876f4fc5f.css.map*/
+/*# sourceMappingURL=app.3d1319d2262653dd0ac4.css.map*/
