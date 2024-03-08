@@ -29797,6 +29797,12 @@
                                 }), o.default.dispatch({
                                     type: "STICKER_TRACK_USAGE",
                                     stickerIds: S
+                                }), o.default.dispatch({
+                                    type: "LOCAL_MESSAGE_CREATE",
+                                    message: {
+                                        channel_id: e,
+                                        author: J.default.getCurrentUser()
+                                    }
                                 }), ! function(e) {
                                     let {
                                         content: t,
@@ -87333,8 +87339,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709920941881",
-                                    build_number: "273515"
+                                    built_at: "1709921710576",
+                                    build_number: "273517"
                                 }
                             },
                             retries: 1
@@ -113993,7 +113999,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return x
+                    return B
                 }
             }), n("222007"), n("702976"), n("424973"), n("860677");
             var i = n("917351"),
@@ -114026,9 +114032,10 @@
                 D = n("697218"),
                 P = n("49111");
             let L = new Set,
-                M = new u.default("MessageStore");
+                M = new u.default("MessageStore"),
+                b = !1;
 
-            function b() {
+            function U() {
                 o.default.forEach(e => {
                     o.default.commit(e.mutate({
                         ready: !1,
@@ -114037,7 +114044,7 @@
                 }), L.clear()
             }
 
-            function U() {
+            function w() {
                 o.default.forEach(e => {
                     let {
                         channelId: t
@@ -114046,15 +114053,15 @@
                 })
             }
 
-            function w() {
+            function k() {
                 o.default.forEach(e => {
                     o.default.commit(e.reset(e.map(e => e.set("blocked", N.default.isBlocked(e.author.id)))))
                 })
             }
 
-            function k(e) {}
+            function V(e) {}
 
-            function V(e) {
+            function G(e) {
                 let {
                     type: t,
                     channelId: n,
@@ -114068,7 +114075,7 @@
                 l = l.update(i, n => "MESSAGE_REACTION_ADD" === t ? n.addReaction(r, u, e.colors, a) : n.removeReaction(r, u, a)), o.default.commit(l)
             }
 
-            function G(e) {
+            function F(e) {
                 let {
                     type: t,
                     messageData: n
@@ -114081,7 +114088,7 @@
                     return (null === (n = e.embeds) || void 0 === n ? void 0 : n.filter(c.isNotAutomodEmbed).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, m.addFlag)(e.flags, P.MessageFlags.EPHEMERAL))), e
                 }), o.default.commit(a)
             }
-            class F extends r.default.Store {
+            class x extends r.default.Store {
                 initialize() {
                     this.waitFor(D.default, v.default, T.default, C.default, g.default, R.default, O.default, A.default, N.default, I.default), this.syncWith([f.default], () => {})
                 }
@@ -114139,9 +114146,12 @@
                     let t = D.default.getCurrentUser();
                     return null != this.getMessages(e).findNewest(e => e.author.id === (null == t ? void 0 : t.id))
                 }
+                hasCurrentUserSentMessageSinceAppStart() {
+                    return b
+                }
             }
-            F.displayName = "MessageStore";
-            var x = new F(a.default, {
+            x.displayName = "MessageStore";
+            var B = new x(a.default, {
                 BACKGROUND_SYNC_CHANNEL_MESSAGES: function(e) {
                     let {
                         changesByChannelId: t
@@ -114157,8 +114167,8 @@
                         n.mergeDelta(t[e].new_messages, t[e].modified_messages, t[e].deleted_message_ids)
                     }
                 },
-                CONNECTION_OPEN: b,
-                OVERLAY_INITIALIZE: b,
+                CONNECTION_OPEN: U,
+                OVERLAY_INITIALIZE: U,
                 CACHE_LOADED: function(e) {
                     for (let [t, n] of p.default.entries(e.messages)) {
                         let e = o.default.getOrCreate(t).addCachedMessages(n, !0);
@@ -114262,8 +114272,8 @@
                     let r = s.get(n, !0);
                     s = (null == r ? void 0 : r.isPoll()) === !0 ? s.remove(n) : s.update(n, e => ((e = e.set("state", P.MessageStates.SEND_FAILED)).isCommandType() && (e = (e = e.set("interactionError", null != i ? i : "")).set("flags", (0, m.addFlag)(e.flags, P.MessageFlags.EPHEMERAL))), e)), o.default.commit(s)
                 },
-                MESSAGE_SEND_FAILED_AUTOMOD: G,
-                MESSAGE_EDIT_FAILED_AUTOMOD: G,
+                MESSAGE_SEND_FAILED_AUTOMOD: F,
+                MESSAGE_EDIT_FAILED_AUTOMOD: F,
                 MESSAGE_UPDATE: function(e) {
                     let t = e.message.id,
                         n = e.message.channel_id,
@@ -114334,14 +114344,14 @@
                         hasMoreBefore: !1
                     }), o.default.commit(n)
                 },
-                CHANNEL_DELETE: U,
-                THREAD_DELETE: U,
-                GUILD_DELETE: U,
-                RELATIONSHIP_ADD: w,
-                RELATIONSHIP_REMOVE: w,
-                GUILD_MEMBERS_CHUNK: k,
-                THREAD_MEMBER_LIST_UPDATE: k,
-                MESSAGE_REACTION_ADD: V,
+                CHANNEL_DELETE: w,
+                THREAD_DELETE: w,
+                GUILD_DELETE: w,
+                RELATIONSHIP_ADD: k,
+                RELATIONSHIP_REMOVE: k,
+                GUILD_MEMBERS_CHUNK: V,
+                THREAD_MEMBER_LIST_UPDATE: V,
+                MESSAGE_REACTION_ADD: G,
                 MESSAGE_REACTION_ADD_MANY: function(e) {
                     let {
                         channelId: t,
@@ -114354,7 +114364,7 @@
                         return e.addReactionBatch(i, null === (t = D.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)
                     }), o.default.commit(s)
                 },
-                MESSAGE_REACTION_REMOVE: V,
+                MESSAGE_REACTION_REMOVE: G,
                 MESSAGE_REACTION_REMOVE_ALL: function(e) {
                     let {
                         channelId: t,
@@ -114394,6 +114404,12 @@
                         if (null == n) return;
                         e = (e = e.remove(i)).merge([n]), L.delete(i), o.default.commit(e)
                     }
+                },
+                LOCAL_MESSAGE_CREATE: function(e) {
+                    let {
+                        message: t
+                    } = e, n = D.default.getCurrentUser();
+                    null != t && null != t.author && null != n && t.author.id === n.id && (b = !0)
                 }
             })
         },
@@ -124657,7 +124673,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "34a723c07161557439a58c86702f929cd000b73f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "84a3c938eb39d421935baa88c6ade0878250a168"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133967,7 +133983,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273515"
+                                build_number: "273517"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151568,4 +151584,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.2eae4d41d5677286efa6.js.map
+//# sourceMappingURL=29062.50c63e592d3a476907f9.js.map
