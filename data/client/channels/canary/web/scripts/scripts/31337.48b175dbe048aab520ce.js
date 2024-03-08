@@ -4681,7 +4681,7 @@
                         return function(e, t, n, i, a) {
                             let [o, r] = e.slice(1).split("#", 2), u = null != t ? c.default.getGuild(t) : null, p = (0, l.getClydeExperimentEnabled)(u);
                             if (a && null == r && null != u) {
-                                for (let e of Object.values(u.roles))
+                                for (let e of Object.values(c.default.getRoles(u.id)))
                                     if (o === e.name) return {
                                         type: "roleMention",
                                         roleId: e.id,
@@ -5688,4 +5688,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.f2f4921b6abdc0e593b1.js.map
+//# sourceMappingURL=31337.48b175dbe048aab520ce.js.map
