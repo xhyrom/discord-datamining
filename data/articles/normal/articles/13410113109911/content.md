@@ -13,40 +13,43 @@
 </ul>
 <h1 id="h_01GWJJPDWA7210GPEJB5Z4R5WC">What are avatar decorations?</h1>
 <p id="docs-internal-guid-7e1ad2f6-7fff-9866-e11f-e7ad74a22924"><span style="color: #444746; background-color: #ffffff;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">Avatar decorations let you customize and style your avatar on Discord! You can buy and collect all kinds of decorations from the <a href="https://support.discord.com/hc/articles/17162747936663" target="_blank" rel="noopener noreferrer">Shop</a>. Collected decorations are yours to keep so you can add all kinds of pizazz to your avatar and profile aesthetic whenever you want.</span></p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-f14e8659-7fff-d070-3d9f-1df3a3900235"><img src="https://support.discord.com/hc/article_attachments/19432529783319" alt="image10.gif"></span></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-f14e8659-7fff-d070-3d9f-1df3a3900235"><span id="docs-internal-guid-2006e496-7fff-4a2a-2cc9-59634efb9e22"><img src="https://support.discord.com/hc/article_attachments/21750908776855" width="472" height="429"></span></span></p>
 <h1 id="docs-internal-guid-3376417a-7fff-e38e-b0eb-3fc85a230fdb">How can I collect an avatar decoration? </h1>
 <p>Avatar decorations can be found and purchased in the Shop. </p>
 <p id="docs-internal-guid-0079e285-7fff-f5d0-c3ec-04a1a55c7011"><strong>Option 1</strong></p>
 <p>1. Navigate to your <strong>Direct Messages list </strong>by selecting the Discord app icon in the upper left corner. </p>
 <p>2. Then, press the <strong>Shop</strong> tab to enter the Shop!</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432546443031" alt="image5.gif"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-5b53106b-7fff-7f9a-297d-a814fdc650c5"><img src="https://support.discord.com/hc/article_attachments/21750908779543" width="568" height="403"></span></p>
 <p id="docs-internal-guid-0bda5abc-7fff-90ed-74a7-036a72d91ec0"><strong>Option 2</strong></p>
 <p>1. Navigate into your <strong>User Settings &gt; Profiles</strong>. </p>
 <p>2. While there, you will see the banner to the Shop where you can select <strong>Check it out</strong>. You can also select <strong>Change Decoration</strong> and select the <strong>Shop</strong> icon.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432529801623" alt="image3.png" width="406" height="252">   <img src="https://support.discord.com/hc/article_attachments/19432529809047" alt="image8.png" width="280" height="252"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-a784a5bb-7fff-cfc5-e242-19a24d09484b"><img src="https://support.discord.com/hc/article_attachments/21750877286167" width="402" height="261">   </span><img src="https://support.discord.com/hc/article_attachments/21750908790935" width="285" height="261"></p>
 <h3 id="h_01HB742VRKH0K9N1X2A85E2RY5">The Shop is only available on the desktop app or your browser.</h3>
 <p id="docs-internal-guid-3e542f33-7fff-1af5-0df0-3783196af3dd">3. Once directed to the Shop, you can preview and buy avatar decorations to add to your collection and wear whenever you’d like. <span id="docs-internal-guid-e8990bb0-7fff-a6f2-9d87-19267439ca31"></span></p>
 <h3 id="h_01HB7451TQD6GE1AR8YC9S6HWH" class="wysiwyg-text-align-left">Purchased avatar decorations are yours to keep and can be used at any time! Selections available for purchase in the Shop will change periodically.</h3>
 <h1 id="docs-internal-guid-e73a0c54-7fff-dbc0-6e07-40581ee1ea3f">How to apply an avatar decoration to my profile</h1>
 <h2 id="h_01GWJJPTV8YQ3C3BDW7Q93ARGX">Desktop</h2>
 <p>1. On the desktop app or web app, head into your <strong>User Settings </strong>by selecting the cogwheel [<img src="https://support.discord.com/hc/article_attachments/13409843259799" alt="Cog.png">]. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17808425666711" alt="image13.png"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-881e4ef8-7fff-c1d4-d434-caa3ff83b4b3"><img src="https://support.discord.com/hc/article_attachments/21750877293207" width="241" height="56"></span></p>
 <p id="docs-internal-guid-a2e6dec7-7fff-d5a7-3676-fe552d93b2a0">2. Once redirected to your User Settings, select the <strong>Profiles </strong>tab to view your profile settings. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432529811223" alt="image7.png"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-6500b556-7fff-d2a7-35eb-b9a4920946bc"><img src="https://support.discord.com/hc/article_attachments/21750908798103" width="624" height="377"></span></p>
 <p>3. Then, press the <strong>Change Decorations </strong>button to open the <strong>Edit Avatar Decoration</strong> selection menu.  </p>
 <p>4. Once you have chosen the avatar decoration you would like, select <strong>Apply</strong> to add the decoration to your avatar. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432546465815" alt="image4.png" width="377" height="276">   <img src="https://support.discord.com/hc/article_attachments/17808413196951" alt="image7.png" width="310" height="277"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-0b1306d0-7fff-f37f-d7e3-31fefd07dd8d"><img src="https://support.discord.com/hc/article_attachments/21750877302295" width="391" height="268"></span>   <span id="docs-internal-guid-32745e1d-7fff-0740-4e3b-0dc12578925b"><img src="https://support.discord.com/hc/article_attachments/21750877306519" width="295" height="268"></span></p>
 <p>5. After you apply an avatar decoration, you will need to confirm your changes by selecting <strong>Save Changes</strong>. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13409714730135"></p>
+<h3 id="docs-internal-guid-0a37fefa-7fff-79a2-54de-c6aa4f3fa1e7">
+    <span style="color: #434343;">Avatar decorations can also be applied to your Server Profiles! You can find out more </span><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">.</span>
+</h3>
 <h2 id="h_01GWJJPZTY0EKDJJSAHPBA6VWN">Mobile</h2>
 <h3 id="h_01HB74DC08MM4MXCENMF4R076P">Avatar decorations are only available for purchase through desktop and browser. However, you will be able to apply and change your avatar decoration across all platforms, including mobile.</h3>
 <p>1. On your mobile device, head into your User Settings by tapping your avatar. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17808425698839" alt="image11.jpg" width="320" height="43"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-1ec1635f-7fff-d240-a946-1c61f46bb5c2" style="color: #4f545c;"><img src="https://support.discord.com/hc/article_attachments/21750908808087" width="238" height="490"></span></p>
 <p id="docs-internal-guid-065ff01d-7fff-30db-e3a0-e6265ffd465f">2. From here, select <strong>Profiles</strong>. This will navigate you to the <strong>Profiles</strong> page where you can tap your avatar to open the <strong>Avatar</strong> menu.  </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17808425702679" alt="image12.jpg" width="251" height="506"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-592deb7a-7fff-ff06-a34a-049a89c580a5" style="color: #4f545c;"><img src="https://support.discord.com/hc/article_attachments/21750908809495" width="227" height="472"></span></p>
 <p id="docs-internal-guid-8dd1b8ef-7fff-ac9b-fb8d-e5bdcd643314">3. In the Avatar menu, tap <strong>Change Decoration</strong> and select the desired avatar decoration you would like to apply. </p>
 <p>4. Once you’ve found an avatar decoration you want to use, tap <strong>Save</strong> to confirm your changes.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17808425706391" alt="image3.gif" width="253" height="516"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-c387e0e9-7fff-177e-d785-929c16c8abce"><img src="https://lh7-us.googleusercontent.com/Bt19hSIzAEMxke0isokSsiBWkBxmtDkdZ0ik-Ff59p9xz20bsw_GeyW3vBDhQlnxg-zCGr3r-04tX4DKsxW8mc-E7XeyjQOt7p5BxmeNYwmA6X_XF-2Qj5AqxaWQVMxCTyuYIQ_ehll2pFoWbk5ZDd0" width="250" height="514"></span></p>
 <h1 id="h_01GWJJX4GZDK1QJAXZBB7N4RNG">Frequently Asked Questions</h1>
 <p id="docs-internal-guid-43737dc2-7fff-6d6f-dff3-b8e118678317"><strong>Q: Who can currently access the Shop and buy and use avatar decorations?</strong></p>
 <p>A: The Shop is available to all Discord users. If you are also a Nitro member, you will have special member pricing on all purchases within the Shop!</p>
