@@ -492,6 +492,7 @@ id,hash,label
 2024-02_safety_hub_guild_violation_in_app_appeals,668094544,Safety Hub Guild Violation In App Appeals
 2024-02_v1_content_inventory_feed,1747551262,V1 Feed of the content inventory
 2024-03_ait_guild_entry_point,1979035979,Activities in Text Guild Experiment w/ new Entry Point
+2024-03_amd_vdec_tests_1,1872798231,"GPU Workarounds: AMD video decode tests 1 (1002:1636, 1002:1638)"
 2024-03_media_play_metrics,465715532,Media play metrics User Experiment
 2024-03_packages,845634770,Packages
 2024-03_premium_offer_generic_endpoint,3577879213,Premium Offer Generic Endpoint

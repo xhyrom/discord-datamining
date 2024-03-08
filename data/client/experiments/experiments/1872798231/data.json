@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_amd_vdec_tests_1",
+    "label": "GPU Workarounds: AMD video decode tests 1 (1002:1636, 1002:1638)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: disable_media_foundation_clear_playback",
+      "Treatment 2: disable_d3d11_video_decoder"
+    ],
+    "hash": 1872798231,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
