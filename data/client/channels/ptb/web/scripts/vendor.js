@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67229"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87319,8 +87319,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709866434202",
-                                    build_number: "273433"
+                                    built_at: "1709869646989",
+                                    build_number: "273445"
                                 }
                             },
                             retries: 1
@@ -93169,7 +93169,7 @@
                     return
                 }
                 let _ = await O(n, o);
-                v("MESSAGE_REACTION_ADD", e, t, n, {
+                return v("MESSAGE_REACTION_ADD", e, t, n, {
                     burst: o,
                     colors: _
                 }), await d.default.unarchiveThreadIfNecessary(e), r.default.put({
@@ -124643,7 +124643,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "cef91a472c411fd35e2597452eac9080d1f4f368"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "9cc77f859ec738bc8eadff624cab502d58f8525a"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133953,7 +133953,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273433"
+                                build_number: "273445"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151554,4 +151554,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.1b831814ba5536aff5d9.js.map
+//# sourceMappingURL=29062.aef433838831595cf9d1.js.map
