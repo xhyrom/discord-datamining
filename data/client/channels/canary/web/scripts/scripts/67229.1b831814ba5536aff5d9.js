@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -62958,41 +62958,59 @@
         225772: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return a
+                getActivityFromCustomStatus: function() {
+                    return d
+                },
+                useCustomStatusActivity: function() {
+                    return c
                 }
             });
-            var i = n("385976"),
-                s = n("867805"),
-                r = n("49111");
+            var i = n("884691"),
+                s = n("446674"),
+                r = n("385976"),
+                a = n("867805"),
+                o = n("845579"),
+                l = n("49111");
 
-            function a(e) {
-                let t = null;
-                if (null != e.emojiId && "0" !== e.emojiId) {
-                    let n = i.default.getUsableCustomEmojiById(e.emojiId);
-                    t = null != n ? {
-                        id: n.id,
-                        name: n.name,
-                        animated: n.animated
-                    } : null
-                } else if (null != e.emojiName && "" !== e.emojiName) {
-                    let n = s.default.getByName(s.default.convertSurrogateToName(e.emojiName, !1));
-                    t = null != n ? {
+            function u(e, t) {
+                let n = null;
+                if (null != t) n = {
+                    id: t.id,
+                    name: t.name,
+                    animated: t.animated
+                };
+                else if (null != e.emojiName && "" !== e.emojiName) {
+                    let t = a.default.getByName(a.default.convertSurrogateToName(e.emojiName, !1));
+                    n = null != t ? {
                         id: null,
-                        name: n.surrogates,
+                        name: t.surrogates,
                         animated: !1
                     } : null
                 }
-                let n = Number(e.expiresAtMs);
+                let i = Number(e.expiresAtMs);
                 return {
                     name: "Custom Status",
-                    type: r.ActivityTypes.CUSTOM_STATUS,
+                    type: l.ActivityTypes.CUSTOM_STATUS,
                     state: e.text.length > 0 ? e.text : void 0,
-                    timestamps: n > 0 ? {
-                        end: n
+                    timestamps: i > 0 ? {
+                        end: i
                     } : void 0,
-                    emoji: t
+                    emoji: n
                 }
+            }
+
+            function d(e) {
+                let {
+                    emojiId: t
+                } = e, n = null != t && "0" !== t ? r.default.getUsableCustomEmojiById(t) : null;
+                return u(e, n)
+            }
+
+            function c() {
+                let e = o.CustomStatusSetting.useSetting(),
+                    t = null == e ? void 0 : e.emojiId,
+                    n = (0, s.useStateFromStores)([r.default], () => null != t && "0" !== t ? r.default.getUsableCustomEmojiById(t) : null, [t]);
+                return (0, i.useMemo)(() => null != e ? u(e, n) : null, [e, n])
             }
         },
         808122: function(e, t, n) {
@@ -87301,8 +87319,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709866159995",
-                                    build_number: "273431"
+                                    built_at: "1709866434202",
+                                    build_number: "273433"
                                 }
                             },
                             retries: 1
@@ -111902,7 +111920,7 @@
             function A() {
                 let e = [],
                     t = g.CustomStatusSetting.getSetting();
-                null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, c.default)(t));
+                null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, c.getActivityFromCustomStatus)(t));
                 let n = h.default.getActivities();
                 e.push(...n);
                 let i = S.default.getStream();
@@ -124625,7 +124643,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "c4d98b4b4d3f47357419510caae847162794f0b8"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "cef91a472c411fd35e2597452eac9080d1f4f368"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133935,7 +133953,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273431"
+                                build_number: "273433"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151536,4 +151554,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.370514a44fad3d449543.js.map
+//# sourceMappingURL=67229.1b831814ba5536aff5d9.js.map
