@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67229"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -56055,22 +56055,24 @@
                         preferredCommandId: n,
                         command: i,
                         section: s,
-                        changedOptionStates: r
-                    } = e, a = c({
+                        location: r,
+                        changedOptionStates: a
+                    } = e, o = c({
                         type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND",
                         channelId: t,
                         command: i,
-                        section: s
-                    }), o = f({
+                        section: s,
+                        location: r
+                    }), l = f({
                         type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND",
                         channelId: t,
                         commandId: n
-                    }), l = _({
+                    }), u = _({
                         type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
                         channelId: t,
-                        changedOptionStates: r
+                        changedOptionStates: a
                     });
-                    return a || o || l
+                    return o || l || u
                 }
             });
             var g = E
@@ -87290,8 +87292,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709859030185",
-                                    build_number: "273367"
+                                    built_at: "1709860784993",
+                                    build_number: "273388"
                                 }
                             },
                             retries: 1
@@ -89331,13 +89333,13 @@
                 }));
                 else if (a && (null == i ? void 0 : i.startsWith(X.Routes.OAUTH2_ERROR)))(0, g.openModal)(e => {
                     let t = s.error_description || s.error || Z.default.Messages.OAUTH2_UNKNOWN_ERROR;
-                    return Array.isArray(t) && (t = t[0]), (0, r.jsxs)(K.OAuth2Modal, {
+                    return Array.isArray(t) && (t = t[0]), (0, r.jsx)(K.OAuth2Modal, {
                         ...e,
                         "aria-labelledby": $,
-                        children: [(0, r.jsx)(z.OAuth2Error, {
+                        children: (0, r.jsx)(z.OAuth2Error, {
                             message: t,
                             onClose: e.onClose
-                        }), ";"]
+                        })
                     })
                 });
                 else {
@@ -89530,18 +89532,20 @@
                     });
                 return (0, i.jsxs)("div", {
                     className: c.botPermissions,
-                    children: [m.length > 0 ? (0, i.jsx)(o.Text, {
-                        variant: "text-sm/medium",
-                        color: "header-secondary",
-                        className: c.permissionsLabel,
-                        children: d.default.Messages.OAUTH2_CONFIRM_BOT_PERMISSIONS.format({
-                            applicationName: t.name,
-                            guildName: h.name
-                        })
-                    }) : null, (0, i.jsx)("ul", {
-                        className: c.permissionsList,
-                        children: m
-                    }), p.length > 0 ? (0, i.jsxs)(i.Fragment, {
+                    children: [m.length > 0 ? (0, i.jsxs)(i.Fragment, {
+                        children: [(0, i.jsx)(o.Text, {
+                            variant: "text-sm/medium",
+                            color: "header-secondary",
+                            className: c.permissionsLabel,
+                            children: d.default.Messages.OAUTH2_CONFIRM_BOT_PERMISSIONS.format({
+                                applicationName: t.name,
+                                guildName: h.name
+                            })
+                        }), (0, i.jsx)("ul", {
+                            className: c.permissionsList,
+                            children: m
+                        })]
+                    }) : null, p.length > 0 ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(o.Text, {
                             variant: "text-sm/medium",
                             color: "header-secondary",
@@ -124612,7 +124616,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "85edb6200bc64b083c3f0c3a297965ac5852ebef"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "23c3abaf6736b36471ff33b5e1c64e42cd8f8784"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133922,7 +133926,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273367"
+                                build_number: "273388"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151523,4 +151527,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.a186f0e006b15f2cc4ea.js.map
+//# sourceMappingURL=29062.377e2e160032d2d41230.js.map
