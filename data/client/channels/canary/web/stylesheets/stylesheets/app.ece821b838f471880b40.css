@@ -28165,6 +28165,12 @@ html .progress__4ef76 {
     margin-bottom: 4px
 }
 
+.ctaButtonContainer_cc98bf {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px
+}
+
 .ctaButtonWrapper_d00132 {
     flex: 0 0 auto
 }
@@ -129608,4 +129614,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ad00cc50932a7e744946.css.map*/
+/*# sourceMappingURL=app.ece821b838f471880b40.css.map*/
