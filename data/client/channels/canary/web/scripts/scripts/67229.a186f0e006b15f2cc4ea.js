@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -4396,6 +4396,30 @@
         223406: function(e, t, n) {
             "use strict";
             e.exports = n.p + "5db6f2b6add954cbf0ea.svg"
+        },
+        36180: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "f5ce76c65c5aa9f8aa8b.png"
+        },
+        353652: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "19a89379576bf4474ea4.svg"
+        },
+        879477: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "ce5e01863b1ab11abc38.png"
+        },
+        790262: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "7a89d942cb27656f1b97.svg"
+        },
+        191120: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "8c35be9cd5956fa4cbc4.png"
+        },
+        946613: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "91a33f34c1c27c615fd2.svg"
         },
         523403: function(e, t, n) {
             "use strict";
@@ -46715,6 +46739,19 @@
                     },
                     enabled: !0
                 }, {
+                    type: o.PlatformTypes.BUNGIE,
+                    name: "Bungie.net",
+                    color: r.default.unsafe_rawColors.BUNGIE.css,
+                    icon: {
+                        lightPNG: n("879477"),
+                        darkPNG: n("36180"),
+                        whitePNG: n("191120"),
+                        lightSVG: n("790262"),
+                        darkSVG: n("353652"),
+                        whiteSVG: n("946613")
+                    },
+                    enabled: !1
+                }, {
                     type: o.PlatformTypes.SKYPE,
                     name: "Skype",
                     color: r.default.unsafe_rawColors.SKYPE.css,
@@ -87253,8 +87290,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709854526240",
-                                    build_number: "273299"
+                                    built_at: "1709859030185",
+                                    build_number: "273367"
                                 }
                             },
                             retries: 1
@@ -113828,7 +113865,7 @@
                     let {
                         settings: t
                     } = e;
-                    !1 === t.decoupledClipsEnabled && (a = null, eT.setClipsSource(null))
+                    !1 === t.decoupledClipsEnabled && (a = null, eT.setClipsSource(null)), !1 === t.decoupledClipsEnabled && (a = null, eT.setClipsSource(null))
                 }
             })
         },
@@ -124575,7 +124612,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "990ced5ae3a32bdcc8f4c17c618d71054e5d8584"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "85edb6200bc64b083c3f0c3a297965ac5852ebef"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133885,7 +133922,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273299"
+                                build_number: "273367"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -135332,6 +135369,10 @@
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE_NO_PRICE.format({
                                     pauseDate: r.currentPeriodEnd
                                 });
+                            case R.SubscriptionStatusTypes.PAUSED:
+                                return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                                    resumeDate: r.pauseEndsAt
+                                });
                             default:
                                 return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
                                     price: o
@@ -135356,6 +135397,10 @@
                                     pauseDate: r.currentPeriodEnd
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE.format({
                                     pauseDate: r.currentPeriodEnd
+                                });
+                            case R.SubscriptionStatusTypes.PAUSED:
+                                return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                                    resumeDate: r.pauseEndsAt
                                 });
                             default:
                                 return _ ? L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
@@ -135393,6 +135438,10 @@
                                 }) : L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE_NO_PRICE.format({
                                     num: m,
                                     pauseDate: r.currentPeriodEnd
+                                });
+                            case R.SubscriptionStatusTypes.PAUSED:
+                                return L.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                                    resumeDate: r.pauseEndsAt
                                 });
                             default:
                                 return u ? L.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
@@ -151474,4 +151523,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.a04be12e42992f6c78a8.js.map
+//# sourceMappingURL=67229.a186f0e006b15f2cc4ea.js.map

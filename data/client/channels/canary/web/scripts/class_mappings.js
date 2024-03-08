@@ -20141,10 +20141,12 @@
                 failedPayment: "failedPayment__2e662",
                 headerLabel: "headerLabel_aa0e2b",
                 image: "image__88ebc",
+                linkButton: "linkButton__91a92",
                 pausePending: "pausePending__2995a",
                 paused: "paused__209f3",
                 planInfo: "planInfo_cd8cba",
                 planName: "planName__72790",
+                repositioned: "repositioned__384fe",
                 tier0: "tier0_a391a7",
                 tier1: "tier1__83f39",
                 tier2: "tier2__611e8",
@@ -20690,9 +20692,9 @@
                 below: "below__8557b",
                 blueGradient: "blueGradient__21092",
                 card: "card_e97590",
+                cardComponent: "cardComponent_d27424",
                 cardDescription: "cardDescription__46c9d",
                 cardHeading: "cardHeading__2b53d",
-                cardIllustration: "cardIllustration_f54865",
                 cardIllustrationNoHover: "cardIllustrationNoHover_e49efc",
                 cardImage: "cardImage__9da5b",
                 cardSubtitle: "cardSubtitle__4a267",
@@ -20906,6 +20908,14 @@
                 seeAllPerksButton: "seeAllPerksButton_c90d04",
                 seeAllPerksButtonContent: "seeAllPerksButtonContent_f387e5",
                 whatsNew: "whatsNew__2b2f9"
+            }
+        },
+        617487: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                cardDescription: "cardDescription_d7433f",
+                cardDescriptionTenureReward: "cardDescriptionTenureReward_bca63f",
+                descriptionCTATenureReward: "descriptionCTATenureReward__55e19"
             }
         },
         618080: function(e, t, n) {
