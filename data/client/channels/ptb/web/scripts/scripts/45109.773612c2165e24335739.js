@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -4436,6 +4436,30 @@
         994912: function(e, t, n) {
             "use strict";
             e.exports = n.p + "0cbfee20a3f2cd0dd313.svg"
+        },
+        665042: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "70c80a6f42395d4a4fad.png"
+        },
+        531010: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "d7346a4089f821cb379a.svg"
+        },
+        740311: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "f1bba7a246c1833aa4dd.png"
+        },
+        331944: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "219b234c2a36ef45b2b5.svg"
+        },
+        640513: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "70c80a6f42395d4a4fad.png"
+        },
+        213876: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "d7346a4089f821cb379a.svg"
         },
         348044: function(e, t, n) {
             "use strict";
@@ -47001,6 +47025,18 @@
                     },
                     enabled: !0
                 }, {
+                    type: o.PlatformTypes.ROBLOX,
+                    name: "Roblox",
+                    icon: {
+                        lightPNG: n("740311"),
+                        darkPNG: n("665042"),
+                        whitePNG: n("640513"),
+                        lightSVG: n("331944"),
+                        darkSVG: n("531010"),
+                        whiteSVG: n("213876")
+                    },
+                    enabled: !1
+                }, {
                     type: o.PlatformTypes.PAYPAL,
                     name: "PayPal",
                     icon: {
@@ -87339,8 +87375,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709922890098",
-                                    build_number: "273529"
+                                    built_at: "1709924592566",
+                                    build_number: "273545"
                                 }
                             },
                             retries: 1
@@ -124673,7 +124709,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "20762bf432aafaa0c155a7ea60b147fa9cff711a"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "2b5738210ec921bfe3611dcc4e92b11b35ff3695"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -133983,7 +134019,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273529"
+                                build_number: "273545"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151584,4 +151620,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.0e9f60d07877137de20e.js.map
+//# sourceMappingURL=45109.773612c2165e24335739.js.map
