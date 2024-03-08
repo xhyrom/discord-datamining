@@ -119432,11 +119432,25 @@ html .invoiceCancelRow_a8669b {
 }
 
 .headerContainer__122e4 {
-    background: url(/assets/b6d0036df41400587d8f.svg), linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients))no-repeat;
+    position: relative;
+    background: linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients));
     padding: 54px 40px;
     border-radius: var(--radius-sm);
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    overflow: hidden
+}
+
+.headerBackground__8a4ac {
+    position: absolute;
+    top: -100vh;
+    bottom: -100vh;
+    left: -100vw;
+    right: -100vw;
+    background-image: url(/assets/7f10d688807618fef460.svg);
+    background-size: 710px 200px;
+    background-repeat: repeat;
+    opacity: .5
 }
 
 .header_d2e037 {
@@ -129598,4 +129612,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.bc869b5281d256461508.css.map*/
+/*# sourceMappingURL=app.20f2acb61a06c45dc1bb.css.map*/
