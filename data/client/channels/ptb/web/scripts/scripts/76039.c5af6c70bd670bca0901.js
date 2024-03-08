@@ -6398,6 +6398,7 @@
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_HEADING_INCLUDED_WITH_SUBSCRIPTION: "Your free {numUnappliedGuildBoostSlots, plural, =1 {Boost} other {Boosts}} {numUnappliedGuildBoostSlots, plural, =1 {is} other {are}} waiting",
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING: "Just waiting here until you choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to!",
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING_WITH_PREMIUM_SUBSCRIPTION: "Just waiting here until you choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to! Learn more about your Nitro Perks $[here](learnMoreHook).",
+                GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING_WITH_PREMIUM_SUBSCRIPTION_V2: "Just waiting here until you **choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to!** Learn more about your Nitro Perks $[here](learnMoreHook).",
                 GUILD_BOOSTING_USER_SETTINGS_CANCEL_BOOST: "Cancel Boost",
                 GUILD_BOOSTING_USER_SETTINGS_UNCANCEL_BOOST: "Uncancel Boost",
                 GUILD_BOOSTING_USER_SETTINGS_BOOST_ANY_SERVER: "Boost any server",
@@ -6530,6 +6531,7 @@
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (pausing on **{pauseDate, date, medium}**)",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED: "You have paused your Nitro subscription until **{resumeDate, date, medium}**. Once your subscription resumes you will regain access to Nitro",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription for **!!{price}!!** is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT: "You will have premium chat, **{num, number}** Boosts, and a Boost discount **as soon as your payment processes.** We will send you an email as soon as it does",
@@ -7020,6 +7022,7 @@
                 PREMIUM_PAUSE_CONFIRM_TITLE: "Pause !!{planPremiumType}!!?",
                 PREMIUM_PAUSE_CONFIRM_BODY: "You will continue to have access to Nitro until **{pauseDate, date, medium}**, and then your subscription will be paused for {pauseDuration} days. We’ll start billing you again on **{resumeDate, date, medium}**. You can resume your subscription anytime.",
                 PREMIUM_PAUSE_PAST_DUE_CONFIRM_BODY: "Your Nitro subscription will be paused **now** for {pauseDuration} days. We’ll start billing you again on **{resumeDate, date, medium}**. You can resume your subscription anytime.",
+                PREMIUM_PAUSE_EXTEND_CONFIRM_BODY: "You will extend your nitro until **{resumeDate, date, medium}**. You can resume your subscription anytime.",
                 PREMIUM_PAUSE_CONFIRM_NEW: "Yup, Pause !!{planPremiumType}!!",
                 PREMIUM_UPGRADE_DONE_BUTTON: "Sweet!",
                 PREMIUM_DOWNGRADE_DONE_BUTTON: "Got It",
@@ -7047,9 +7050,9 @@
                 PREMIUM_SETTINGS_RENEWAL_INFO: "Your subscriptions will automatically renew on **{renewalDate, date, medium}** and you'll be charged **!!{price}!!**.",
                 PREMIUM_SETTINGS_RENEWAL_INFO_EXTERNAL: "Your subscriptions will automatically renew on **{renewalDate, date, medium}**. Please [visit your !!{paymentGatewayName}!! Subscription settings]({subscriptionManagementLink}) for more details.",
                 PREMIUM_SETTINGS_CANCELLED_INFO: "Your subscription will end on **{endDate, date, medium}**.",
-                PREMIUM_SETTINGS_PAUSE_PENDING_INFO: "Your subscription will pause on **{pauseDate, date, medium}**. Your subscription will automatically resume on **{resumeDate, date, medium}**.",
-                PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO: "Your subscription will automatically resume on **{resumeDate, date, medium}**.",
-                PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN: "Your **{planName}** subscription will automatically resume on **{resumeDate, date, short}** and you'll be charged **!!{price}!!**.",
+                PREMIUM_SETTINGS_PAUSE_PENDING_INFO: "Your subscription will pause on **{pauseDate, date, medium}** and automatically resume on **{resumeDate, date, medium}**.",
+                PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO: "Your subscription is currently on pause and will automatically resume on **{resumeDate, date, medium}**.",
+                PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN: "Your **{planName}** subscription is currently on pause and will automatically resume on **{resumeDate, date, short}** and you'll be charged **!!{price}!!**.",
                 PREMIUM_SETTINGS_PAUSED_INFO: "Your subscription will resume pending payment.",
                 PREMIUM_SETTINGS_PAUSED_INFO_WITH_PLAN: "Your **{planName}** subscription will resume pending payment and you'll be charged **!!{price}!!**.",
                 PREMIUM_SETTINGS_PAST_DUE_INFO: "Your **!!{price}!!** subscription is past due. Please update your payment info or your subscription will end on **{endDate, date, medium}**.",
@@ -8201,6 +8204,15 @@
                 NITRO_HOME_GET_THIS_SUBSCRIBER_BADGE: "Get this cool badge for being a Nitro subscriber.",
                 NITRO_HOME_SUBSCRIBER_BADGE_FOR_THE_COLLECTORS: "For the collectors. Grab this exclusive Nitro-only badge.",
                 NITRO_HOME_REWARDING_TENURE_FREE_BOOST: "{numFreeBoosts} Free {numFreeBoosts, plural, =1 {Boost} other {numFreeBoosts}}",
+                NITRO_HOME_REWARDING_TENURE_CONGRATULATIONS: "Congratulations on your first month of Nitro.",
+                NITRO_HOME_REWARDING_TENURE_REWARD: "Nitro Reward",
+                NITRO_HOME_REWARDING_TENURE_DISCLAIMER: "Your extra Boost is yours to use as long as your current Nitro subscription remains active.",
+                NITRO_HOME_REWARDING_TENURE_REDEEM_YOUR_REWARD: "Redeem Your Reward!",
+                NITRO_HOME_REWARDING_TENURE_REDEEM_ACTION: "Redeem",
+                NITRO_HOME_REWARDING_TENURE_REDEEMED_REWARD: "Redeemed",
+                NITRO_HOME_REWARDING_TENURE_REDEEMED_REWARD_GRATITUDE: "Thanks for being a Nitro member.",
+                NITRO_HOME_REWARDING_TENURE_REDEEMED_REWARD_DISLAIMER: "Keep your Boost with an active Nitro subscription. Canceling resets progress and removes the Boost.",
+                NITRO_HOME_REWARDING_TENURE_DESCRIPTION: "Earn a Boost when you hit your first month of Nitro.",
                 NITRO_HOME_REWARDING_TENURE_BOOST_AVAILABLE_DATE: "Redeem in {days} {days, plural, =1 {day} other {days}}",
                 NITRO_HOME_REWARDING_TENURE_REDEEM_BOOST: "Redeem in {numDays} {numDays, plural, =1 {day} other {days}}",
                 NITRO_HOME_REWARDING_LOCKED_STATE_TITLE: "Nitro Reward",
@@ -9678,7 +9690,7 @@
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_BODY: "Warning: gift may cause uncontrollable happiness!",
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CHOOSE_MONTHLY_OR_YEARLY_V2: "Choose from {monthlyPrice}/month or {yearlyPrice}/year",
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CARD_HEADER: "Your recipient will receive:",
-                MOBILE_CUSTOM_GIFT_TITLE: "Gift a Nitro membership",
+                MOBILE_CUSTOM_GIFT_TITLE_WITH_PLAN: "Gift a {nitroTierName} membership",
                 MOBILE_CUSTOM_GIFT_DURATION_LABEL: "Gift duration",
                 MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH: "Gift {count, plural, one {# month} other {# months}} of {nitroTierName}",
                 MOBILE_CUSTOM_GIFT_DURATION_SELECTION_YEAR: "Gift {count, plural, one {# year} other {# years}} of {nitroTierName}",
@@ -12286,10 +12298,12 @@
                 PREMIUM_PAUSE_INSTEAD: "Pause Instead",
                 PREMIUM_PAUSE_SELECT_TITLE: "Pause or cancel subscription",
                 PREMIUM_PAUSE_SELECT_SUBTITLE: "If you want to take a break from paid subscriptions, you have the option to pause it for a few months",
+                PREMIUM_PAUSE_SELECT_EXTEND_DURATION_SUBTITLE: "You have the option to continue pausing for additional months",
                 PREMIUM_PAUSE_SELECT_PLACEHOLDER: "Select a pause duration",
                 PREMIUM_PAUSE_INSTEAD_TITLE: "Would you like to **Pause Instead**?",
                 PREMIUM_PAUSE_INSTEAD_SUBTITLE: "Pause your subscription for up to 90 days instead of canceling.",
-                PREMIUM_PAUSE_DURATION_MONTHS_CAPITALIZE: "Pause for {months, plural, =1 {1 Month} other {{months} Months}}",
+                PREMIUM_PAUSE_DURATION_MONTHS_CAPITALIZE: "Pause for {days} days",
+                PREMIUM_PAUSE_EXTEND_DURATION_MONTHS_CAPITALIZE: "Pause for another {days} days",
                 PREMIUM_PAUSE_DURATION_CANCEL: "Cancel subscription",
                 PREMIUM_PAUSE_YOUR_SUBSCRIPTION_WILL_BE_PAUSED: "Your subscription will be paused",
                 PREMIUM_CANCEL_DOWNGRADE_TO_TIER_0_HEADER: "Keep some perks for less",
@@ -18424,7 +18438,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273299", ", Version Hash: ").concat("990ced5ae3a32bdcc8f4c17c618d71054e5d8584")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273367", ", Version Hash: ").concat("85edb6200bc64b083c3f0c3a297965ac5852ebef")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20783,8 +20797,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "273299", "273299"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273299")), _ = 0), _
+                let _ = parseInt((e = "273367", "273367"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273367")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22151,79 +22165,101 @@
             "use strict";
             E.r(_), E.d(_, {
                 init: function() {
-                    return I
+                    return S
                 }
             });
             var t = E("771281"),
                 o = E("95410"),
-                n = E("599110"),
-                r = E("49111");
-            let a = window.DiscordNative,
-                i = "".concat(r.AnalyticEvents.APP_NATIVE_CRASH, "Storage");
-            async function I() {
+                n = E("42887"),
+                r = E("697218"),
+                a = E("599110"),
+                i = E("147746"),
+                I = E("49111");
+            let s = window.DiscordNative,
+                T = "".concat(I.AnalyticEvents.APP_NATIVE_CRASH, "Storage");
+            async function S() {
                 var e;
                 if (__OVERLAY__) return;
-                let _ = null == a ? void 0 : null === (e = a.processUtils) || void 0 === e ? void 0 : e.getLastCrash;
+                let _ = null == s ? void 0 : null === (e = s.processUtils) || void 0 === e ? void 0 : e.getLastCrash;
                 if (null == _) {
                     console.log("AppCrashedFatalReport: getLastCrash not supported.");
                     return
                 }
                 let E = await _(),
-                    I = o.default.get(i, {}),
-                    s = function(e, _) {
-                        var E, o, n, r, a, i, I, s, T, S, N, O, A, R, l, u, L, C, D;
-                        let c = (null == e ? void 0 : e.lastId) !== (null == _ ? void 0 : _.id) && (null == _ ? void 0 : _.id) != null;
+                    n = o.default.get(T, {}),
+                    {
+                        didCrashReporterSeeCrash: r,
+                        didCrashOrUncleanExit: i
+                    } = function(e, _) {
+                        var E;
+                        let t = (null == e ? void 0 : e.lastId) !== (null == _ ? void 0 : _.id) && (null == _ ? void 0 : _.id) != null,
+                            o = null !== (E = null == _ ? void 0 : _.rendererCrashExitCode) && void 0 !== E ? E : null;
+                        return {
+                            didCrashReporterSeeCrash: t,
+                            didCrashOrUncleanExit: t || null != o && 0 !== o
+                        }
+                    }(n, E),
+                    S = function(e, _, E) {
+                        var o, n, r, a, i, I, s, T, S, N, O, A, R, l, u, L, C, D, c;
 
                         function d(e) {
-                            return (null == _ ? void 0 : _.storedInformation) != null && 1 === _.storedInformation[e]
+                            return (null == E ? void 0 : E.storedInformation) != null && 1 === E.storedInformation[e]
                         }
 
                         function U(e) {
-                            return (null == _ ? void 0 : _.storedInformation) == null || null == _.storedInformation[e] ? null : _.storedInformation[e]
+                            return (null == E ? void 0 : E.storedInformation) == null || null == E.storedInformation[e] ? null : E.storedInformation[e]
                         }
-                        let M = null !== (I = null == _ ? void 0 : _.rendererCrashExitCode) && void 0 !== I ? I : null,
-                            h = {
-                                did_crash: c || null != M && 0 !== M,
-                                renderer_crash_reason: null !== (s = null == _ ? void 0 : _.rendererCrashReason) && void 0 !== s ? s : null,
-                                renderer_crash_exit_code: M,
-                                had_rtc_connection: d(t.StoredCrashInformation.HasRTCConnection),
-                                was_sending_video: d(t.StoredCrashInformation.IsSendingVideo),
-                                was_sending_stream: d(t.StoredCrashInformation.IsSendingStream),
-                                was_receiving_video: d(t.StoredCrashInformation.IsReceivingVideo),
-                                was_receiving_stream: d(t.StoredCrashInformation.IsReceivingStream),
-                                video_media_session_id: U(t.StoredCrashInformation.VideoMediaSessionId),
-                                stream_media_session_id: U(t.StoredCrashInformation.StreamMediaSessionId),
-                                last_memory_usage_kb: null !== (T = null == _ ? void 0 : null === (E = _.lastMemoryInformation) || void 0 === E ? void 0 : E.memoryUsageKB) && void 0 !== T ? T : null,
-                                last_used_js_heap_size_kb: null !== (S = null == _ ? void 0 : null === (o = _.lastMemoryInformation) || void 0 === o ? void 0 : o.usedJSHeapSizeKB) && void 0 !== S ? S : null,
-                                last_memory_usage_uptime: null !== (N = null == _ ? void 0 : null === (n = _.lastMemoryInformation) || void 0 === n ? void 0 : n.uptimeSeconds) && void 0 !== N ? N : null,
-                                highest_memory_usage_kb: null !== (O = null == _ ? void 0 : null === (r = _.highestMemoryInformation) || void 0 === r ? void 0 : r.memoryUsageKB) && void 0 !== O ? O : null,
-                                highest_used_js_heap_size_kb: null !== (A = null == _ ? void 0 : null === (a = _.highestMemoryInformation) || void 0 === a ? void 0 : a.usedJSHeapSizeKB) && void 0 !== A ? A : null,
-                                highest_memory_usage_uptime: null !== (R = null == _ ? void 0 : null === (i = _.highestMemoryInformation) || void 0 === i ? void 0 : i.uptimeSeconds) && void 0 !== R ? R : null
-                            };
-                        if (!c || null == _) return {
+                        let M = {
+                            did_crash: _,
+                            renderer_crash_reason: null !== (s = null == E ? void 0 : E.rendererCrashReason) && void 0 !== s ? s : null,
+                            renderer_crash_exit_code: null !== (T = null == E ? void 0 : E.rendererCrashExitCode) && void 0 !== T ? T : null,
+                            had_rtc_connection: d(t.StoredCrashInformation.HasRTCConnection),
+                            was_sending_video: d(t.StoredCrashInformation.IsSendingVideo),
+                            was_sending_stream: d(t.StoredCrashInformation.IsSendingStream),
+                            was_receiving_video: d(t.StoredCrashInformation.IsReceivingVideo),
+                            was_receiving_stream: d(t.StoredCrashInformation.IsReceivingStream),
+                            video_media_session_id: U(t.StoredCrashInformation.VideoMediaSessionId),
+                            stream_media_session_id: U(t.StoredCrashInformation.StreamMediaSessionId),
+                            last_memory_usage_kb: null !== (S = null == E ? void 0 : null === (o = E.lastMemoryInformation) || void 0 === o ? void 0 : o.memoryUsageKB) && void 0 !== S ? S : null,
+                            last_used_js_heap_size_kb: null !== (N = null == E ? void 0 : null === (n = E.lastMemoryInformation) || void 0 === n ? void 0 : n.usedJSHeapSizeKB) && void 0 !== N ? N : null,
+                            last_memory_usage_uptime: null !== (O = null == E ? void 0 : null === (r = E.lastMemoryInformation) || void 0 === r ? void 0 : r.uptimeSeconds) && void 0 !== O ? O : null,
+                            highest_memory_usage_kb: null !== (A = null == E ? void 0 : null === (a = E.highestMemoryInformation) || void 0 === a ? void 0 : a.memoryUsageKB) && void 0 !== A ? A : null,
+                            highest_used_js_heap_size_kb: null !== (R = null == E ? void 0 : null === (i = E.highestMemoryInformation) || void 0 === i ? void 0 : i.usedJSHeapSizeKB) && void 0 !== R ? R : null,
+                            highest_memory_usage_uptime: null !== (l = null == E ? void 0 : null === (I = E.highestMemoryInformation) || void 0 === I ? void 0 : I.uptimeSeconds) && void 0 !== l ? l : null
+                        };
+                        if (!e || null == E) return {
                             electron_crash_reporter_did_crash: !1,
                             minidump_exception_type: null,
                             minidump_exception_module_name: null,
                             minidump_relative_crash_address: null,
                             minidump_exception_module_version: null,
                             minidump_exception_module_code_id: null,
-                            ...h
+                            ...M
                         };
-                        console.log("AppCrashedFatalReport lastCrash:", _, c);
-                        let P = null == _ ? void 0 : _.minidumpInformation;
+                        console.log("AppCrashedFatalReport lastCrash:", E, e);
+                        let h = null == E ? void 0 : E.minidumpInformation;
                         return {
-                            electron_crash_reporter_did_crash: c,
-                            minidump_exception_type: null !== (l = null == P ? void 0 : P.exceptionString) && void 0 !== l ? l : null,
-                            minidump_exception_module_name: null !== (u = null == P ? void 0 : P.exceptionModuleName) && void 0 !== u ? u : null,
-                            minidump_relative_crash_address: null !== (L = null == P ? void 0 : P.relativeCrashAddress) && void 0 !== L ? L : null,
-                            minidump_exception_module_version: null !== (C = null == P ? void 0 : P.exceptionModuleVersion) && void 0 !== C ? C : null,
-                            minidump_exception_module_code_id: null !== (D = null == P ? void 0 : P.exceptionModuleCodeId) && void 0 !== D ? D : null,
-                            ...h
+                            electron_crash_reporter_did_crash: e,
+                            minidump_exception_type: null !== (u = null == h ? void 0 : h.exceptionString) && void 0 !== u ? u : null,
+                            minidump_exception_module_name: null !== (L = null == h ? void 0 : h.exceptionModuleName) && void 0 !== L ? L : null,
+                            minidump_relative_crash_address: null !== (C = null == h ? void 0 : h.relativeCrashAddress) && void 0 !== C ? C : null,
+                            minidump_exception_module_version: null !== (D = null == h ? void 0 : h.exceptionModuleVersion) && void 0 !== D ? D : null,
+                            minidump_exception_module_code_id: null !== (c = null == h ? void 0 : h.exceptionModuleCodeId) && void 0 !== c ? c : null,
+                            ...M
                         }
-                    }(I, E);
-                n.default.track(r.AnalyticEvents.APP_NATIVE_CRASH, s), o.default.set(i, {
+                    }(r, i, E);
+                a.default.track(I.AnalyticEvents.APP_NATIVE_CRASH, S), o.default.set(T, {
                     lastId: null == E ? void 0 : E.id
-                })
+                }), i && setTimeout(async () => await N(), 1e4)
+            }
+            async function N() {
+                var e, _;
+                let E = null !== (_ = null === (e = r.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== _ && _;
+                if (E) try {
+                    await n.default.getMediaEngine().writeAudioDebugState(), await (0, i.uploadDebugLogFiles)(I.DebugLogCategory.RTC), console.log("Successfully uploaded debug files")
+                } catch (e) {
+                    console.log("Failed to upload debug files")
+                }
             }
         },
         821316: function(e, _, E) {
@@ -36482,4 +36518,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.8e50caa7f155b771bc09.js.map
+//# sourceMappingURL=76039.c5af6c70bd670bca0901.js.map

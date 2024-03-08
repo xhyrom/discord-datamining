@@ -46269,8 +46269,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -64368,6 +64368,17 @@ html .invoiceCancelRow_c1bfe7 {
     }
 }
 
+.repositioned__384fe .image__88ebc {
+    height: 30px;
+    width: 40px
+}
+
+.repositioned__384fe .buttons_c518ae {
+    position: relative;
+    top: 0;
+    right: 0
+}
+
 .image__88ebc,
 .details__695f1 {
     position: relative
@@ -64503,6 +64514,11 @@ html .invoiceCancelRow_c1bfe7 {
 .toolsButton_cea0b4 {
     position: relative;
     margin-left: 16px
+}
+
+.linkButton__91a92 {
+    position: relative;
+    padding: 0 2px
 }
 
 .externalButton__64cae {
@@ -66439,6 +66455,29 @@ html .invoiceCancelRow_c1bfe7 {
     background: linear-gradient(279deg, hsl(var(--black-500-hsl)/0)0%, hsl(var(--black-500-hsl)/.1)50.8%, hsl(var(--black-500-hsl)/0)100%)
 }
 
+.cardDescriptionTenureReward_bca63f {
+    background-image: none;
+    justify-content: flex-end
+}
+
+.descriptionCTATenureReward__55e19 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+
+.descriptionCTATenureReward__55e19>img {
+    margin-right: 4px
+}
+
+.cardDescription_d7433f {
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%)
+}
+
+.theme-light .cardDescription_d7433f {
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
+}
+
 .toggleSwitch__7657a {
     position: relative;
     display: flex;
@@ -66762,7 +66801,11 @@ html .invoiceCancelRow_c1bfe7 {
 
 .baseProgressCircle_b5f373 {
     fill: transparent;
-    stroke: #404043
+    stroke: var(--background-primary)
+}
+
+.theme-light .baseProgressCircle_b5f373 {
+    stroke: var(--white-500)
 }
 
 .circleSVG__53ba4 {
@@ -66778,14 +66821,19 @@ html .invoiceCancelRow_c1bfe7 {
 }
 
 .gemBackgroundFill__8886e {
-    fill: #404043
+    fill: var(--background-primary)
+}
+
+.theme-light .gemBackgroundFill__8886e {
+    fill: var(--white-500)
 }
 
 .gemProgressCircle__1a3f7 {
     width: 80%;
     min-width: 180px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-bottom: 10px
 }
 
 @keyframes gemGlow__6989d {
@@ -66793,20 +66841,20 @@ html .invoiceCancelRow_c1bfe7 {
     0%,
     50%,
     to {
-        filter: drop-shadow(0 0 0 var(--premium-tier-2-pink-for-gradients))grayscale(0%)
+        filter: drop-shadow(0 0 0 var(--premium-tier-2-pink-for-gradients-2))grayscale(0%)
     }
 
     25%,
     75% {
-        filter: drop-shadow(0 0 20px var(--premium-tier-2-pink-for-gradients))grayscale(0%)
+        filter: drop-shadow(0 0 20px var(--premium-tier-2-pink-for-gradients-2))grayscale(0%)
     }
 
     36% {
-        filter: drop-shadow(0 0 4px var(--premium-tier-2-pink-for-gradients))grayscale(0%)
+        filter: drop-shadow(0 0 4px var(--premium-tier-2-pink-for-gradients-2))grayscale(0%)
     }
 
     40% {
-        filter: drop-shadow(0 0 2px var(--premium-tier-2-pink-for-gradients))grayscale(30%)
+        filter: drop-shadow(0 0 2px var(--premium-tier-2-pink-for-gradients-2))grayscale(30%)
     }
 }
 
@@ -66828,7 +66876,7 @@ html .invoiceCancelRow_c1bfe7 {
     }
 
     75% {
-        filter: drop-shadow(0 0 20px var(--premium-tier-2-pink-for-gradients))
+        filter: drop-shadow(0 0 20px var(--premium-tier-2-pink-for-gradients-2))
     }
 }
 
@@ -66982,6 +67030,10 @@ html .invoiceCancelRow_c1bfe7 {
     z-index: 40
 }
 
+.cardComponent_d27424 {
+    transition: scale.15s ease-in-out
+}
+
 .card_e97590 {
     position: relative;
     display: flex;
@@ -67018,6 +67070,35 @@ html .invoiceCancelRow_c1bfe7 {
     scale: 116.5%;
     margin-left: 0;
     margin-bottom: -9px
+}
+
+.card_e97590:hover .cardComponent_d27424 {
+    scale: 65%;
+    transform-origin: bottom
+}
+
+@media(max-width:959px) {
+    .card_e97590:hover .cardComponent_d27424 {
+        scale: 85%
+    }
+}
+
+@media(max-width:820px) {
+    .card_e97590:hover .cardComponent_d27424 {
+        scale: 75%
+    }
+}
+
+@media(max-width:700px) {
+    .card_e97590:hover .cardComponent_d27424 {
+        scale: 65%
+    }
+}
+
+@media(max-width:650px) {
+    .card_e97590:hover .cardComponent_d27424 {
+        scale: 55%
+    }
 }
 
 @media screen and (max-width:1330px) {
@@ -67097,13 +67178,12 @@ html .invoiceCancelRow_c1bfe7 {
     transition: all.1s ease-in-out
 }
 
-.cardImage__9da5b,
-.cardIllustration_f54865 {
+.cardImage__9da5b {
     pointer-events: none
 }
 
 .cardIllustrationNoHover_e49efc {
-    justify-content: space-between;
+    justify-content: flex-end;
     display: flex;
     flex-direction: column;
     height: 100%
@@ -67124,7 +67204,6 @@ html .invoiceCancelRow_c1bfe7 {
     pointer-events: none;
     transition: all.1s ease-in-out;
     border-radius: 20px;
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%);
     z-index: 20
 }
 
@@ -67148,10 +67227,6 @@ html .invoiceCancelRow_c1bfe7 {
 
 .reducedMotion__90450 .cardDescription__46c9d {
     transition: none
-}
-
-.theme-light .cardDescription__46c9d {
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
 }
 
 .cover__60fa6 {
@@ -126143,6 +126218,8 @@ div.nagbar_c731ff {
     --brand-860-hsl: 235 calc(var(--saturation-factor, 1) * 46.9%) 9.6%;
     --brand-900: hsl(var(--brand-900-hsl) / 1);
     --brand-900-hsl: 233 calc(var(--saturation-factor, 1) * 50%) 3.1%;
+    --bungie: hsl(var(--bungie-hsl) / 1);
+    --bungie-hsl: 197 calc(var(--saturation-factor, 1) * 100%) 44.5%;
     --crunchyroll: hsl(var(--crunchyroll-hsl) / 1);
     --crunchyroll-hsl: 29 calc(var(--saturation-factor, 1) * 93%) 55.5%;
     --discord-8th-bday-blue: hsl(var(--discord-8th-bday-blue-hsl) / 1);
@@ -129314,4 +129391,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8a3dcafd29288e68fcff.css.map*/
+/*# sourceMappingURL=app.3abd36bbfebeb83a6344.css.map*/

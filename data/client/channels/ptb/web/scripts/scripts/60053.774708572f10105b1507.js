@@ -38776,39 +38776,44 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return u
                 }
             });
             var l = n("446674"),
                 i = n("991254"),
-                a = n("129408"),
-                s = n("713135"),
-                r = n("49111");
+                a = n("785473"),
+                s = n("129408"),
+                r = n("713135"),
+                o = n("49111");
 
-            function o(e) {
+            function u(e) {
                 var t;
                 let {
                     user: n,
-                    guildId: o
-                } = e, u = (0, l.useStateFromStores)([s.default], () => {
+                    guildId: u
+                } = e, d = (0, l.useStateFromStores)([r.default], () => {
                     var e;
-                    return null === (e = s.default.getUserProfile(n.id)) || void 0 === e ? void 0 : e.application
+                    return null === (e = r.default.getUserProfile(n.id)) || void 0 === e ? void 0 : e.application
                 }, [n]), {
-                    applicationSubscriptionListingsShown: d
+                    applicationSubscriptionListingsShown: c
                 } = (0, i.default)({
-                    applicationId: null == u ? void 0 : u.id,
-                    groupListingId: null == u ? void 0 : u.primarySkuId,
-                    guildId: o
+                    applicationId: null == d ? void 0 : d.id,
+                    groupListingId: null == d ? void 0 : d.primarySkuId,
+                    guildId: u
                 }), {
-                    activeSubscriptionListing: c,
-                    activeEntitlement: f,
-                    subscriptionGroupListing: m
-                } = (0, i.useActiveSubscriptionListingForApplication)(null == u ? void 0 : u.id, o), p = null !== (t = null == m ? void 0 : m.sku_flags) && void 0 !== t ? t : 0, h = (0, a.isApplicationUserSubscription)(p) || null != o && o !== r.ME && (0, a.isApplicationGuildSubscription)(p), E = null != f;
-                return d ? {
-                    botUpgraded: E,
-                    botUpgradeable: !E && d && h,
-                    activeSubscriptionListing: c,
-                    subscriptionGroupListing: m
+                    activeSubscriptionListing: f,
+                    activeEntitlement: m,
+                    subscriptionGroupListing: p
+                } = (0, i.useActiveSubscriptionListingForApplication)(null == d ? void 0 : d.id, u), {
+                    enabled: h
+                } = a.otpSkusExperiment.useExperiment({
+                    location: "useBotApplicationSubscription"
+                }), E = null !== (t = null == p ? void 0 : p.sku_flags) && void 0 !== t ? t : 0, g = (0, s.isApplicationUserSubscription)(E) || null != u && u !== o.ME && (0, s.isApplicationGuildSubscription)(E) || h, S = null != m;
+                return c ? {
+                    botUpgraded: S,
+                    botUpgradeable: !S && c && g,
+                    activeSubscriptionListing: f,
+                    subscriptionGroupListing: p
                 } : {
                     botUpgraded: !1,
                     botUpgradeable: !1,
@@ -41636,7 +41641,7 @@
                             className: T.button
                         }), o && (d ? (0, l.jsx)(_, {
                             app: a,
-                            listing: u,
+                            listing: null != u ? u : void 0,
                             guildId: n
                         }) : (0, l.jsx)(I, {
                             guildId: n,
@@ -41681,7 +41686,7 @@
                     listing: i,
                     guildId: r
                 } = e;
-                return null == t || null == i || null == r ? null : (0, l.jsx)(u.default, {
+                return null == t || null == r ? null : (0, l.jsx)(u.default, {
                     onClick: () => (function(e, t, i) {
                         (0, s.openModalLazy)(async () => {
                             let {
@@ -55254,4 +55259,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.44937555273fe6fbff40.js.map
+//# sourceMappingURL=60053.774708572f10105b1507.js.map
