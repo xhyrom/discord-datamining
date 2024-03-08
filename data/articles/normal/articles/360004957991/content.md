@@ -94,7 +94,7 @@
     <li>A JSON file containing the server ID and name.</li>
 </ul>
 <h2 id="h_01HRDJ0P8B8NW5NHT6V4KTJSZH">Programs</h2>
-<p>If you previously applied to the Partners Program, HypeSquad Program, or Verified Server Program, any information you provided in your applications will be in the JSON folder. If you never applied for any of these programs, then your Programs folder will be empty.</p>
+<p>If you previously applied to the Partner Program, HypeSquad Program, or Verified Server Program, any information you provided in your applications will be in the JSON folder. If you never applied for any of these programs, then your Programs folder will be empty.</p>
 <p>An example for a HypeSquad application will contain the information you provided as follows:</p>
 <ul>
     <li>HypeSquad referrer and referral code.</li>
