@@ -113410,6 +113410,7 @@ html .invoiceCancelRow_a8669b {
 }
 
 .expressionPickerButton_b81316 {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113422,6 +113423,28 @@ html .invoiceCancelRow_a8669b {
 
 .expressionPickerButton_b81316:hover .media__6967e {
     opacity: .6
+}
+
+.expressionPickerButton_b81316 .editIcon_fce65e {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translatey(-50%);
+    color: var(--interactive-normal);
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.expressionPickerButton_b81316.canEditMedia__3e346:hover .media__6967e,
+.expressionPickerButton_b81316.canEditMedia__3e346:focus .media__6967e {
+    opacity: .15
+}
+
+.expressionPickerButton_b81316.canEditMedia__3e346:hover .editIcon_fce65e,
+.expressionPickerButton_b81316.canEditMedia__3e346:focus .editIcon_fce65e {
+    opacity: 1
 }
 
 .expressionPickerButtonDefault_eda6e6 {
@@ -113494,6 +113517,10 @@ html .invoiceCancelRow_a8669b {
 .spinnerWrapperImageOnly_bfdbd6 {
     width: 100%;
     height: 100%
+}
+
+.menuContainer__8e6b6 {
+    margin: -16px 0 0 6px
 }
 
 .removeAnswerButtonDefault_f2d25e {
@@ -129629,4 +129656,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a0bf06937868490646e0.css.map*/
+/*# sourceMappingURL=app.7582306698076d12647f.css.map*/
