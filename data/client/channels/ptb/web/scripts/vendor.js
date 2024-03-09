@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["45109"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87401,8 +87401,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1709943432707",
-                                    build_number: "273706"
+                                    built_at: "1709944215344",
+                                    build_number: "273710"
                                 }
                             },
                             retries: 1
@@ -106577,7 +106577,7 @@
                 },
                 CONNECTION_OPEN: function(e) {
                     let t = N;
-                    for (let n of (P = {}, y = {}, N = {}, D = {}, M = {}, V = {}, w = {}, k = Date.now(), O = e.initialPrivateChannels, e.initialPrivateChannels.forEach(z), e.guilds)) "partial" === n.dataMode && (C.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eo(n.id))), s.forEach(t[n.id], X)), Q(n);
+                    for (let n of (P = {}, y = {}, N = {}, D = {}, M = {}, V = {}, w = {}, k = Date.now(), O = e.initialPrivateChannels, e.initialPrivateChannels.forEach(z), e.guilds)) "partial" === n.dataMode && (s.forEach(t[n.id], X), C.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eo(n.id)))), Q(n);
                     er()
                 },
                 GUILD_CREATE: function(e) {
@@ -124749,7 +124749,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "8b6a273d72f9c93920bd342480373a796f63b8f8"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "f002c818fadb9d2404605b99376f5777073ff8d7"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -131472,13 +131472,13 @@
                     return h
                 },
                 accessibilityLabelCalendarFormat: function() {
-                    return E
-                },
-                diffAsUnits: function() {
                     return m
                 },
+                diffAsUnits: function() {
+                    return S
+                },
                 unitsAsStrings: function() {
-                    return p
+                    return v
                 }
             });
             var i = n("866227"),
@@ -131507,21 +131507,29 @@
             }
 
             function _(e, t) {
-                let n = e instanceof Date ? s(e).locale() : e.locale(),
+                let n = E(e).locale(),
                     i = "".concat(n, ":").concat(t),
-                    a = l[i];
-                return null == a && (a = l[i] = (0, r.default)(t)), a(e instanceof Date ? e : e.toDate())
+                    s = l[i];
+                return null == s && (s = l[i] = (0, r.default)(t)), s(g(e))
             }
 
             function h(e) {
                 let t;
                 let n = s.localeData(),
                     i = s(),
-                    r = d(e instanceof Date ? e : e.toDate(), i.toDate());
-                return r < -1 ? _(e, "L LT") : (t = r < 0 ? "lastDay" : r < 1 ? "sameDay" : r < 2 ? "nextDay" : "sameElse", _(e, n.calendar(t, e instanceof Date ? s(e) : e, i)))
+                    r = d(g(e), i.toDate());
+                return r < -1 ? _(e, "L LT") : (t = r < 0 ? "lastDay" : r < 1 ? "sameDay" : r < 2 ? "nextDay" : "sameElse", _(e, n.calendar(t, E(e), i)))
             }
 
             function E(e) {
+                return s.isMoment(e) ? e : s(e)
+            }
+
+            function g(e) {
+                return s.isMoment(e) ? e.toDate() : e
+            }
+
+            function m(e) {
                 let t;
                 let n = s.localeData(),
                     i = new Date,
@@ -131531,7 +131539,7 @@
             a.default.addChangeListener(() => {
                 l = Object.create(null)
             });
-            let g = [{
+            let p = [{
                 key: "days",
                 millisecondsInUnit: 864e5
             }, {
@@ -131545,7 +131553,7 @@
                 millisecondsInUnit: 1e3
             }];
 
-            function m(e, t) {
+            function S(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     i = {
                         days: 0,
@@ -131555,7 +131563,7 @@
                     };
                 if (e > t || n && Number(e) + 1200 > Number(t)) return i;
                 let s = Number(t) - Number(e);
-                return g.forEach(e => {
+                return p.forEach(e => {
                     let {
                         key: t,
                         millisecondsInUnit: n
@@ -131564,7 +131572,7 @@
                 }), i
             }
 
-            function p(e, t) {
+            function v(e, t) {
                 return e.days > 0 ? t.days.format({
                     days: e.days,
                     hours: e.hours
@@ -134066,7 +134074,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273706"
+                                build_number: "273710"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151668,4 +151676,4 @@
         }
     }
 ]);
-//# sourceMappingURL=45109.d7edb5876af4a44c31a2.js.map
+//# sourceMappingURL=29062.a8a50ddb4d0fb4717e64.js.map
