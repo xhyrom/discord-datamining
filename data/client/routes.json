@@ -4808,6 +4808,9 @@
   },
   "TENURE_REWARD_SYNC": {
     "url": "/users/@me/tenure-reward/sync",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
