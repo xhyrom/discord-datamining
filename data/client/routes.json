@@ -4798,6 +4798,14 @@
       "POST"
     ]
   },
+  "LOOTBOX_COUNT": {
+    "url": "/lootboxes/count",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "TENURE_REWARD_SYNC": {
     "url": "/users/@me/tenure-reward/sync",
     "allowed_methods": null
