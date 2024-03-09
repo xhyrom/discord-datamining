@@ -4797,5 +4797,9 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "TENURE_REWARD_SYNC": {
+    "url": "/users/@me/tenure-reward/sync",
+    "allowed_methods": null
   }
 }
