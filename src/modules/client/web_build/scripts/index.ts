@@ -63,8 +63,8 @@ export class Scripts implements Module {
       const versionHash = await resolver.versionHash();
       const builtAt = await resolver.builtAt();
 
-      if (buildNumber && build.buildNumber != "???") build.buildNumber = buildNumber;
-      if (versionHash && build.versionHash != "???") build.versionHash = versionHash;
+      if (buildNumber) build.buildNumber = buildNumber;
+      if (versionHash) build.versionHash = versionHash;
       if (builtAt) build.builtAt = builtAt;
     }
 
