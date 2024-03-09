@@ -49,7 +49,7 @@ export class BuildResolver {
 
     const content = await this.data();
     const versionHash = Array.from(
-      content.matchAll(/versionHash:\s*"(?<hash>(.*?))"/g)
+      content.matchAll(/versionHash:\s*"(?<hash>[a-fA-F0-9]{40})"/g)
     )[0]?.groups?.hash;
 
     this.#versionHash = versionHash;
