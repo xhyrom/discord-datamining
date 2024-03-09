@@ -4789,7 +4789,10 @@
   },
   "USER_LOOTBOX_OPEN_ITEM": {
     "url": "/users/@me/lootboxes/open",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_LOOTBOX_REDEEM_PRIZE": {
     "url": "/users/@me/lootboxes/redeem-prize",
