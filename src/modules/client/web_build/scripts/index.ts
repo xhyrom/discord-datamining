@@ -65,7 +65,7 @@ export class Scripts implements Module {
 
       if (buildNumber && build.buildNumber != "???") build.buildNumber = buildNumber;
       if (versionHash && build.versionHash != "???") build.versionHash = versionHash;
-      if (builtAt && build.builtAt != "???") build.builtAt = builtAt;
+      if (builtAt) build.builtAt = builtAt;
     }
 
     this.#build = build;
