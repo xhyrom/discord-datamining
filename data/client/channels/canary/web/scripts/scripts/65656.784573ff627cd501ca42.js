@@ -616,20 +616,19 @@
                 let {
                     questId: t,
                     streamKey: n,
-                    applicationId: a
+                    terminal: a = !1
                 } = e;
                 try {
                     let e = await s.default.post({
                         url: o.Endpoints.QUESTS_HEARTBEAT(t),
                         body: {
                             stream_key: n,
-                            application_id: a
+                            terminal: a
                         }
                     });
                     i.default.dispatch({
                         type: "QUESTS_SEND_HEARTBEAT_SUCCESS",
                         userStatus: (0, l.questUserStatusFromServer)(e.body),
-                        applicationId: a,
                         questId: t,
                         streamKey: n
                     })
@@ -1338,4 +1337,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65656.4bb49b3ac4f11c0d4300.js.map
+//# sourceMappingURL=65656.784573ff627cd501ca42.js.map
