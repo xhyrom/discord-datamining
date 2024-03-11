@@ -32,9 +32,9 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16342890661527" alt="BB-Victory.gif"></p>
 <p>6. In the Bobble Bash homepage or while in a game, players can view their stats by selecting <strong>My Stats</strong> in the upper right-hand corner. Anyone’s stats are accessible by selecting a player’s avatar.</p>
 <p id="docs-internal-guid-df1bc45a-7fff-f320-fe38-ebad079532b3">Participating players see their stats at the end of a series, and spectators will see the <strong>Grand Champion’s</strong> stats.</p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-ca2e0a52-7fff-268e-1f7c-6c40f84cb985"><img src="https://support.discord.com/hc/article_attachments/21985264991511" width="775" height="435"></span></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-ca2e0a52-7fff-268e-1f7c-6c40f84cb985"><img src="https://support.discord.com/hc/article_attachments/21985264991511" width="712" height="400"></span></p>
 <p id="docs-internal-guid-3a81f65b-7fff-dc5b-cb51-c01ff4b6a4ec">7. Need a refresher of how to play the game? Select the <strong>cogwheel </strong>in the top right corner and then press on <strong>How To</strong> for instructions.</p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-f536347f-7fff-fe01-97cf-64febac59c01"><img src="https://support.discord.com/hc/article_attachments/21985265027735" width="747" height="414"></span></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-f536347f-7fff-fe01-97cf-64febac59c01"><img src="https://support.discord.com/hc/article_attachments/21985265027735" width="731" height="405"></span></p>
 <h1 id="h_01H69PH1MXM7CCCEZ9MNSPG1QS">BOBBLE BASH FAQ</h1>
 <p><strong>Q: Why is there a motion and photosensitivity warning?</strong></p>
 <p>A: A percentage of people may experience epileptic seizures or blackouts when exposed to certain kinds of flashing lights or patterns that may appear in video games. Even people who have no history of seizures or epilepsy may experience symptoms or seizures while playing video games.<br>Bobble Bash contains a lot of motion and effects. We felt it was important to warn potential players of the risks and include options to disable camera shake to make the gameplay experience more accessible to everyone.</p>
