@@ -3,55 +3,55 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
     <li>
-        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#docs-internal-guid-4bf1aa3b-7fff-17f0-2da8-fb24160557e4">Introduction to monetizing your server</a>
+        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1ST1SRV8ZJG1T4RKJ">Introduction to monetizing your server</a>
         <ul>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQWJN4RGMK94WBK6ARC">How can I monetize my server?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQWVNMVQ86AGXB0BF4S">Who is eligible to monetize their servers?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQWP79AJ13WA9CQ92N4">What types of content am I NOT allowed to monetize on Discord? </a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQW0QJK9C2V1NH629SX">How do I get started?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQW0EG57QSCGMW3CZ6J">How do payments work?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1GGA87443YPDFCR0R">How can I monetize my server?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1KJN764TKHNBG8WTF">Who is eligible to monetize their servers?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1AF6GH4MTNPCXPT2B">What types of content am I NOT allowed to monetize on Discord? </a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1HZ4DE9XVM69NAFQ3">How do I get started?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1VAZKHGGZ7D4RXNMW">How do payments work?</a></li>
         </ul>
     </li>
     <li>
-        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01GXS8VG6BW3WPJKZQ5X2D7Y56">Server Subscriptions </a>
+        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1331MJBNBPR30KSVK">Server Subscriptions </a>
         <ul>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01GXS8VN8BWVMRMZE3NHXM9GPE">What are Server Subscriptions?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#docs-internal-guid-7ea45ef6-7fff-4d23-d71c-deb388bc250b">How do I create Server Subscriptions?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#docs-internal-guid-e50d7a9e-7fff-500d-e443-70641ca92ff0">How do I disable Server Subscriptions? </a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DVJP1AH6MADFMB1Y483WR">How can a subscriber request a refund of a Server Subscription?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1KP5DX848N5K60E1J">What are Server Subscriptions?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR18WXN305RK8Y870JZ">How do I create Server Subscriptions?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR121GMPN8CGF9T5MQR">How do I disable Server Subscriptions? </a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR164X12W4MVD9FXVQ7">How can a subscriber request a refund of a Server Subscription?</a></li>
         </ul>
     </li>
     <li>
-        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DVJP1H6EN2S61NK3T7ETQ">Server Subscriptions Free Trials  </a>
+        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1AK4K5B29Y5NDGJSK">Server Subscriptions Free Trials  </a>
         <ul>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#docs-internal-guid-6c3f1cf3-7fff-99dc-4074-581a98241dab">How do I enable Free Trials? </a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GNKBKN7YRTV6NWGA3M1HS">How do I set the duration of the Free Trial? </a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GNKBKNAGE1R206BBZQHS1">Can I gift a free month of my Server Subscription to someone? </a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GNKBKA3M38QP3ACP47BWH">Can I limit the quantity of Free Trials? </a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GNKBMQCYPC1Y1STMQNDBX">Once a Free Trial period is over will they be immediately charged? </a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1XJRXH14MSNEK8K81">How do I enable Free Trials? </a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1JT5KKVZMZEFRJG3A">How do I set the duration of the Free Trial? </a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR19C5E14G5J1KJPA5N">Can I gift a free month of my Server Subscription to someone? </a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1KGKG0W03120HB68Z">Can I limit the quantity of Free Trials? </a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1ZNEGWV5J56VM8JBJ">Once a Free Trial period is over will they be immediately charged? </a></li>
         </ul>
     </li>
     <li>
-        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GNKBMZWA050ZFXXAW885S">Premium Emoji for Server Subscriptions</a>
+        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR11S7QFE0HK12FY97Q">Premium Emoji for Server Subscriptions</a>
         <ul>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GNKBMP1B71GFA4HNZCQM1">What are Premium Emoji?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1XQTFPMYQMVHZTDMF">What are Premium Emoji?</a></li>
         </ul>
     </li>
     <li>
-        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1">Server Products</a>
+        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1KW7H6FV9BTBXE7QT">Server Products</a>
         <ul>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GP5Y39JQNPDNJZJ0XDSCN">What are Server Products?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#docs-internal-guid-cee13780-7fff-0b73-e6eb-5811529ea15f">Who can create Server Products?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GRJ0V79JQD8754R890KKM">How do I create a Server Product?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GVN3WHWT2XYWMRYJXDVEB">How do I delete a Server Product?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GYY4M5VC0FWG9QKYNVJKW">How can a customer request a refund of a Server Product?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR116TN6X8XH4DAT24Z">What are Server Products?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1CTKCCMSNMWS3V8GE">Who can create Server Products?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1CMBM47VRQJYVDBYC">How do I create a Server Product?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1RNSBHVZ71DAXXHQ7">How do I delete a Server Product?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1RPMGV696TTFPB9XA">How can a customer request a refund of a Server Product?</a></li>
         </ul>
     </li>
     <li>
-        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GYY4MNB9J7ZE8JBB3HJG7">Other Frequently Asked Questions</a>
+        <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1Z3F3Q1JJ9N7NVRD6">Other Frequently Asked Questions</a>
         <ul>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GYY4MWMA5WZM4PDY2PKJ7">Roles, Permissions, &amp; Admins </a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GYY4MHFA0CR6701MRFKF7">Mobile Support</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR13CA03PD67K3JQWMP">Roles, Permissions, &amp; Admins </a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR23FKGH8Y1VE5QGMAB">Mobile Support</a></li>
         </ul>
     </li>
 </ul>
