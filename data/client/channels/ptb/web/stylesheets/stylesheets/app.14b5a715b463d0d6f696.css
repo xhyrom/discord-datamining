@@ -83054,149 +83054,6 @@ html .tabBadge__002b3 {
     margin-bottom: 16px
 }
 
-.root__5ebb6 {
-    background: var(--background-tertiary);
-    border-radius: var(--radius-sm);
-    color: var(--interactive-active)
-}
-
-.nameSection_f64107 {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    gap: 12px;
-    flex-wrap: nowrap;
-    border-bottom: 1px solid var(--background-modifier-accent)
-}
-
-.name_e421a8 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    min-width: 0
-}
-
-.timeContainer__1259e {
-    display: flex
-}
-
-.timeContainer__1259e .timeTitle__950f7 {
-    margin-bottom: 4px
-}
-
-.timeContainer__1259e>* {
-    padding: 12px 24px;
-    width: 50%;
-    box-sizing: border-box
-}
-
-.timeContainer__1259e>:first-child {
-    border-right: 1px solid var(--background-modifier-accent)
-}
-
-.root__57e78 {
-    background-color: var(--background-tertiary);
-    padding: 12px;
-    border-radius: var(--radius-sm);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden
-}
-
-.userItem__0172c {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: var(--spacing-4);
-    gap: var(--spacing-12)
-}
-
-.title_d0f258 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-8)
-}
-
-.userCountPill__3715b {
-    border-radius: var(--radius-md);
-    padding: var(--spacing-4)var(--spacing-8);
-    display: flex;
-    align-items: center;
-    background-color: var(--background-secondary)
-}
-
-.userCountIcon_f406ca {
-    margin-left: var(--spacing-4);
-    width: 16px;
-    height: 16px;
-    color: var(--interactive-normal)
-}
-
-.clipForm_ada1a3 {
-    flex: 1 0 auto;
-    margin-left: var(--spacing-16);
-    background: var(--background-secondary-alt);
-    border-radius: var(--spacing-8);
-    display: flex;
-    flex-direction: column;
-    max-width: 330px
-}
-
-.clipFormSection__8ca40 {
-    padding: var(--spacing-16);
-    padding-bottom: 0;
-    overflow: hidden
-}
-
-.clipFormSection__8ca40:not(:first-child) {
-    border-top: 1px solid var(--background-modifier-accent)
-}
-
-.editSection_f8658a {
-    flex-shrink: 0
-}
-
-.metadataSection__6951d {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-    min-height: 0;
-    padding-bottom: var(--spacing-16)
-}
-
-.clipFormFooter_f14f7f {
-    margin-top: auto;
-    display: grid;
-    padding: var(--spacing-16);
-    border-top: 1px solid var(--background-modifier-accent);
-    grid-template-columns: 3fr 3fr 1fr;
-    grid-gap: var(--spacing-16);
-    gap: var(--spacing-16)
-}
-
-.clipFormFooterButton_aff5b9 {
-    grid-column: span 1
-}
-
-.submittingWrapperFix__8bf21 {
-    padding: 0
-}
-
-.clipFormItem_ed85a8 {
-    margin-bottom: var(--spacing-8)
-}
-
-.clipFormSwitches__432a1 {
-    margin-top: var(--spacing-16)
-}
-
-.userList_a88cf0 {
-    margin-top: var(--spacing-8);
-    flex-shrink: 1;
-    min-height: 0
-}
-
 .modalContent__5fb42 {
     display: flex;
     padding-top: 16px;
@@ -83404,6 +83261,149 @@ html .tabBadge__002b3 {
 
 .slashCharacter_f8501f {
     width: 12px
+}
+
+.root__5ebb6 {
+    background: var(--background-tertiary);
+    border-radius: var(--radius-sm);
+    color: var(--interactive-active)
+}
+
+.nameSection_f64107 {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 12px;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.name_e421a8 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0
+}
+
+.timeContainer__1259e {
+    display: flex
+}
+
+.timeContainer__1259e .timeTitle__950f7 {
+    margin-bottom: 4px
+}
+
+.timeContainer__1259e>* {
+    padding: 12px 24px;
+    width: 50%;
+    box-sizing: border-box
+}
+
+.timeContainer__1259e>:first-child {
+    border-right: 1px solid var(--background-modifier-accent)
+}
+
+.root__57e78 {
+    background-color: var(--background-tertiary);
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.userItem__0172c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--spacing-4);
+    gap: var(--spacing-12)
+}
+
+.title_d0f258 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-8)
+}
+
+.userCountPill__3715b {
+    border-radius: var(--radius-md);
+    padding: var(--spacing-4)var(--spacing-8);
+    display: flex;
+    align-items: center;
+    background-color: var(--background-secondary)
+}
+
+.userCountIcon_f406ca {
+    margin-left: var(--spacing-4);
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal)
+}
+
+.clipForm_ada1a3 {
+    flex: 1 0 auto;
+    margin-left: var(--spacing-16);
+    background: var(--background-secondary-alt);
+    border-radius: var(--spacing-8);
+    display: flex;
+    flex-direction: column;
+    max-width: 330px
+}
+
+.clipFormSection__8ca40 {
+    padding: var(--spacing-16);
+    padding-bottom: 0;
+    overflow: hidden
+}
+
+.clipFormSection__8ca40:not(:first-child) {
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
+.editSection_f8658a {
+    flex-shrink: 0
+}
+
+.metadataSection__6951d {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    min-height: 0;
+    padding-bottom: var(--spacing-16)
+}
+
+.clipFormFooter_f14f7f {
+    margin-top: auto;
+    display: grid;
+    padding: var(--spacing-16);
+    border-top: 1px solid var(--background-modifier-accent);
+    grid-template-columns: 3fr 3fr 1fr;
+    grid-gap: var(--spacing-16);
+    gap: var(--spacing-16)
+}
+
+.clipFormFooterButton_aff5b9 {
+    grid-column: span 1
+}
+
+.submittingWrapperFix__8bf21 {
+    padding: 0
+}
+
+.clipFormItem_ed85a8 {
+    margin-bottom: var(--spacing-8)
+}
+
+.clipFormSwitches__432a1 {
+    margin-top: var(--spacing-16)
+}
+
+.userList_a88cf0 {
+    margin-top: var(--spacing-8);
+    flex-shrink: 1;
+    min-height: 0
 }
 
 .clipItem__03b69 {
@@ -129653,4 +129653,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.422a5519793fab428bfe.css.map*/
+/*# sourceMappingURL=app.14b5a715b463d0d6f696.css.map*/
