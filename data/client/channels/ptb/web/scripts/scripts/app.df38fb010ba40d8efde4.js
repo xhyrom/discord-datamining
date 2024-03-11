@@ -24874,6 +24874,10 @@
                 itemImage: "itemImage__045ef",
                 itemImageContainer: "itemImageContainer__3ef41",
                 itemName: "itemName__3d5e7",
+                noTextToSpeech: "noTextToSpeech__377ed",
+                noTextToSpeechButton: "noTextToSpeechButton__999af",
+                noTextToSpeechButtonFirst: "noTextToSpeechButtonFirst__4f752",
+                noTextToSpeechSpinner: "noTextToSpeechSpinner_c1705b",
                 stat: "stat_b3e061",
                 statText: "statText__18098",
                 stats: "stats__57223"

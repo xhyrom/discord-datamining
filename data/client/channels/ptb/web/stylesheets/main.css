@@ -46306,8 +46306,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -119754,6 +119754,47 @@ html .invoiceCancelRow_a8669b {
     gap: 8px
 }
 
+.noTextToSpeech__377ed {
+    margin-top: 20px;
+    background-color: var(--background-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: var(--elevation-low)
+}
+
+.noTextToSpeechSpinner_c1705b {
+    height: 26px
+}
+
+.noTextToSpeechButton__999af {
+    background-color: var(--background-floating);
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-left: 12px;
+    padding: 4px 16px;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+.noTextToSpeechButton__999af.noTextToSpeechButtonFirst__4f752 {
+    margin-left: 32px
+}
+
+.noTextToSpeechButton__999af:hover {
+    background-color: var(--brand-500);
+    color: var(--white)
+}
+
+.noTextToSpeechButton__999af:active {
+    transform: translate3d(0, 1px, 0)
+}
+
 .marketingUnsubscribeButton__72576 {
     align-self: flex-start;
     padding: 0
@@ -129763,4 +129804,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8d6c9572f47cdd6312d6.css.map*/
+/*# sourceMappingURL=app.a393866a539f4b0ee0d6.css.map*/
