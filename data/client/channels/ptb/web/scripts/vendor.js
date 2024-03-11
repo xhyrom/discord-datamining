@@ -53690,100 +53690,101 @@
             "use strict";
             n.r(t), n.d(t, {
                 collectGuildAnalyticsMetadata: function() {
-                    return P
-                },
-                collectChannelAnalyticsMetadataFromId: function() {
                     return L
                 },
-                collectChannelAnalyticsMetadata: function() {
+                collectChannelAnalyticsMetadataFromId: function() {
                     return M
                 },
-                collectVoiceAnalyticsMetadata: function() {
+                collectChannelAnalyticsMetadata: function() {
                     return b
                 },
-                trackWithMetadata: function() {
+                collectVoiceAnalyticsMetadata: function() {
                     return U
                 },
-                getChannelOpenedMetadata: function() {
+                trackWithMetadata: function() {
                     return w
                 },
-                getVoiceStateMetadata: function() {
+                getChannelOpenedMetadata: function() {
                     return k
                 },
-                getCustomStatusMetadata: function() {
+                getVoiceStateMetadata: function() {
                     return V
                 },
-                default: function() {
+                getCustomStatusMetadata: function() {
                     return G
+                },
+                default: function() {
+                    return F
                 }
             });
             var i = n("917351"),
                 s = n.n(i),
                 r = n("316693"),
-                a = n("507313"),
-                o = n("233069"),
-                l = n("271938"),
-                u = n("42203"),
-                d = n("923959"),
-                c = n("525065"),
-                f = n("26989"),
-                _ = n("305961"),
-                h = n("42887"),
-                E = n("957255"),
-                g = n("824563"),
-                m = n("945956"),
-                p = n("660478"),
-                S = n("18494"),
-                v = n("162771"),
-                T = n("282109"),
-                I = n("800762"),
-                C = n("599110"),
-                A = n("718517"),
-                y = n("991170"),
-                N = n("761932"),
-                R = n("49111"),
-                O = n("724210");
+                a = n("759971"),
+                o = n("507313"),
+                l = n("233069"),
+                u = n("271938"),
+                d = n("42203"),
+                c = n("923959"),
+                f = n("525065"),
+                _ = n("26989"),
+                h = n("305961"),
+                E = n("42887"),
+                g = n("957255"),
+                m = n("824563"),
+                p = n("945956"),
+                S = n("660478"),
+                v = n("18494"),
+                T = n("162771"),
+                I = n("282109"),
+                C = n("800762"),
+                A = n("599110"),
+                y = n("718517"),
+                N = n("991170"),
+                R = n("761932"),
+                O = n("49111"),
+                D = n("724210");
 
-            function D(e) {
+            function P(e) {
                 let t = 0;
                 for (let n in e) t += 1;
                 return t
             }
 
-            function P(e) {
+            function L(e) {
                 var t;
                 if (null == e) return null;
-                let n = _.default.getGuild(e);
+                let n = h.default.getGuild(e);
                 if (null == n) return null;
-                let i = _.default.getRoles(n.id),
-                    s = l.default.getId(),
-                    r = f.default.getMember(e, s),
-                    a = d.default.getChannels(e),
-                    o = a[d.GUILD_SELECTABLE_CHANNELS_KEY].length,
-                    u = a[d.GUILD_VOCAL_CHANNELS_KEY].length,
-                    h = I.default.getVoiceStates(e);
+                let i = h.default.getRoles(n.id),
+                    s = u.default.getId(),
+                    r = _.default.getMember(e, s),
+                    a = c.default.getChannels(e),
+                    o = a[c.GUILD_SELECTABLE_CHANNELS_KEY].length,
+                    l = a[c.GUILD_VOCAL_CHANNELS_KEY].length,
+                    d = C.default.getVoiceStates(e);
                 return {
                     guild_id: n.id,
-                    guild_size_total: c.default.getMemberCount(e),
-                    guild_num_channels: o + u,
+                    guild_size_total: f.default.getMemberCount(e),
+                    guild_num_channels: o + l,
                     guild_num_text_channels: o,
-                    guild_num_voice_channels: u,
-                    guild_num_roles: D(i),
+                    guild_num_voice_channels: l,
+                    guild_num_roles: P(i),
                     guild_member_num_roles: null != r ? r.roles.length : 0,
-                    guild_member_perms: String(null !== (t = E.default.getGuildPermissions(n)) && void 0 !== t ? t : y.default.NONE),
-                    guild_is_vip: n.hasFeature(R.GuildFeatures.VIP_REGIONS),
+                    guild_member_perms: String(null !== (t = g.default.getGuildPermissions(n)) && void 0 !== t ? t : N.default.NONE),
+                    guild_is_vip: n.hasFeature(O.GuildFeatures.VIP_REGIONS),
                     is_member: null != r,
-                    num_voice_channels_active: D(h)
+                    num_voice_channels_active: P(d)
                 }
             }
 
-            function L(e) {
+            function M(e) {
                 if (null == e) return null;
-                let t = u.default.getChannel(e);
-                return null == t ? null : M(t)
+                let t = d.default.getChannel(e);
+                return null == t ? null : b(t)
             }
 
-            function M(e) {
+            function b(e) {
                 var t;
                 if (null == e) return null;
                 let n = !1,
@@ -53792,100 +53793,101 @@
                     let t = e => {
                         if (null == e) return !1;
                         let t = e.permissionOverwrites[i];
-                        return null != t && r.default.has(t.deny, R.Permissions.VIEW_CHANNEL)
+                        return null != t && r.default.has(t.deny, O.Permissions.VIEW_CHANNEL)
                     };
-                    n = o.THREAD_CHANNEL_TYPES.has(e.type) && null != e.parent_id ? t(u.default.getChannel(e.parent_id)) : t(e)
+                    n = l.THREAD_CHANNEL_TYPES.has(e.type) && null != e.parent_id ? t(d.default.getChannel(e.parent_id)) : t(e)
                 }
                 return {
                     channel_id: e.id,
                     channel_type: e.type,
                     channel_size_total: e.isPrivate() ? e.recipients.length : 0,
-                    channel_member_perms: String(null != i && null !== (t = E.default.getChannelPermissions(e)) && void 0 !== t ? t : y.default.NONE),
+                    channel_member_perms: String(null != i && null !== (t = g.default.getChannelPermissions(e)) && void 0 !== t ? t : N.default.NONE),
                     channel_hidden: n
                 }
             }
 
-            function b(e) {
+            function U(e) {
                 if (null == e) return null;
-                let t = u.default.getChannel(e);
+                let t = d.default.getChannel(e);
                 if (null == t) return null;
-                let n = h.default.isVideoEnabled(),
-                    i = m.default.getMediaSessionId();
+                let n = E.default.isVideoEnabled(),
+                    i = p.default.getMediaSessionId();
                 return {
                     channel_id: t.id,
                     channel_type: t.type,
                     guild_id: t.getGuildId(),
                     media_session_id: i,
-                    ...k(t.getGuildId(), t.id, n),
-                    ...(0, N.getVoiceAnalyticsMetadataAdditional)()
+                    ...V(t.getGuildId(), t.id, n),
+                    ...(0, R.getVoiceAnalyticsMetadataAdditional)()
                 }
             }
 
-            function U(e) {
+            function w(e) {
                 var t, n, i, s, r;
                 let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                     o = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                if (C.default.isThrottled(e)) return;
-                let l = !("location" in a) || a.location !== R.AnalyticsLocations.GUILD_CREATE_INVITE_SUGGESTION,
-                    d = "guild_id" in a ? a.guild_id : l ? v.default.getGuildId() : null,
-                    c = "channel_id" in a ? a.channel_id : l ? S.default.getChannelId(d) : null,
-                    f = u.default.getChannel(c);
-                let _ = (t = f, n = d, null == t ? null != n ? n : null : t.isPrivate() ? null : null !== (s = null !== (i = t.getGuildId()) && void 0 !== i ? i : n) && void 0 !== s ? s : null);
+                if (A.default.isThrottled(e)) return;
+                let l = !("location" in a) || a.location !== O.AnalyticsLocations.GUILD_CREATE_INVITE_SUGGESTION,
+                    u = "guild_id" in a ? a.guild_id : l ? T.default.getGuildId() : null,
+                    c = "channel_id" in a ? a.channel_id : l ? v.default.getChannelId(u) : null,
+                    f = d.default.getChannel(c);
+                let _ = (t = f, n = u, null == t ? null != n ? n : null : t.isPrivate() ? null : null !== (s = null !== (i = t.getGuildId()) && void 0 !== i ? i : n) && void 0 !== s ? s : null);
                 let h = {
                     ...a,
-                    ...P(_),
-                    ...null != d && null != c && (0, O.isStaticChannelRoute)(c) ? (r = 0, {
+                    ...L(_),
+                    ...null != u && null != c && (0, D.isStaticChannelRoute)(c) ? (r = 0, {
                         channel_static_route: c,
                         channel_hidden: !1
-                    }) : M(f)
+                    }) : b(f)
                 };
-                C.default.track(e, h, {
+                A.default.track(e, h, {
                     flush: o
                 })
             }
 
-            function w(e) {
-                let t = u.default.getChannel(e);
+            function k(e) {
+                let t = d.default.getChannel(e);
                 if (null == t || null == t.guild_id) return {};
-                let n = _.default.getGuild(t.guild_id);
+                let n = h.default.getGuild(t.guild_id);
                 if (null == n) return {};
-                let i = p.default.getSnapshot(e, 10 * A.default.Millis.SECOND);
+                let i = S.default.getSnapshot(e, 10 * y.default.Millis.SECOND);
                 return {
                     channel_was_unread: i.unread,
                     channel_mention_count: i.mentionCount,
-                    channel_is_muted: T.default.isChannelMuted(t.guild_id, t.id),
-                    channel_resolved_unread_setting: T.default.resolveUnreadSetting(t),
-                    channel_preset: (0, a.presetFromSettings)(T.default.resolveUnreadSetting(t), T.default.resolvedMessageNotifications(t)),
+                    channel_is_muted: I.default.isChannelMuted(t.guild_id, t.id),
+                    channel_resolved_unread_setting: I.default.resolveUnreadSetting(t),
+                    channel_preset: (0, o.presetFromSettings)(I.default.resolveUnreadSetting(t), I.default.resolvedMessageNotifications(t)),
                     guild_was_unread: i.guildUnread,
                     guild_mention_count: i.guildMentionCount,
-                    guild_is_muted: T.default.isMuted(t.guild_id),
-                    guild_resolved_unread_setting: T.default.resolveGuildUnreadSetting(n),
-                    guild_preset: (0, a.presetFromSettings)(T.default.resolveGuildUnreadSetting(n), T.default.getMessageNotifications(t.guild_id))
+                    guild_is_muted: I.default.isMuted(t.guild_id),
+                    guild_resolved_unread_setting: I.default.resolveGuildUnreadSetting(n),
+                    guild_preset: (0, o.presetFromSettings)(I.default.resolveGuildUnreadSetting(n), I.default.getMessageNotifications(t.guild_id)),
+                    has_pending_member_action: (0, a.hasPendingMemberAction)(t.guild_id, e)
                 }
             }
 
-            function k(e, t, n) {
+            function V(e, t, n) {
                 let i = {
                     voice_state_count: 0,
                     video_stream_count: 0,
                     video_enabled: n
                 };
-                return s(I.default.getVoiceStates(e)).filter(e => e.channelId === t).filter(e => e.userId !== l.default.getId()).forEach(e => {
+                return s(C.default.getVoiceStates(e)).filter(e => e.channelId === t).filter(e => e.userId !== u.default.getId()).forEach(e => {
                     i.voice_state_count++, (e.selfVideo || e.selfStream) && i.video_stream_count++
                 }), i
             }
 
-            function V(e, t) {
+            function G(e, t) {
                 let n = {
                     custom_status_count: 0
                 };
-                return s(I.default.getVoiceStates(e)).forEach(e => {
-                    e.channelId === t && null != g.default.findActivity(e.userId, e => e.type === R.ActivityTypes.CUSTOM_STATUS) && n.custom_status_count++
+                return s(C.default.getVoiceStates(e)).forEach(e => {
+                    e.channelId === t && null != m.default.findActivity(e.userId, e => e.type === O.ActivityTypes.CUSTOM_STATUS) && n.custom_status_count++
                 }), n
             }
-            var G = {
-                trackWithMetadata: U,
-                getVoiceStateMetadata: k
+            var F = {
+                trackWithMetadata: w,
+                getVoiceStateMetadata: V
             }
         },
         761932: function(e, t, n) {
@@ -76660,6 +76662,87 @@
                 }
             })
         },
+        675305: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            }), n("222007");
+            var i = n("446674"),
+                s = n("913144");
+            let r = {},
+                a = {},
+                o = new Set;
+            class l extends i.default.Store {
+                getCompletedActions(e) {
+                    return null == e ? null : a[e]
+                }
+                hasCompletedActionForChannel(e, t) {
+                    let n = this.getCompletedActions(e);
+                    return null != n && null != n[t]
+                }
+                getState(e) {
+                    return null == e ? {} : {
+                        completedActions: a[e],
+                        loading: o.has(e)
+                    }
+                }
+            }
+            l.displayName = "GuildOnboardingMemberActionStore";
+            var u = new l(s.default, {
+                GUILD_NEW_MEMBER_ACTIONS_FETCH_START: function(e) {
+                    let {
+                        guildId: t
+                    } = e;
+                    o.add(t)
+                },
+                GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS: function(e) {
+                    let {
+                        memberActions: t,
+                        guildId: n
+                    } = e;
+                    if (null == t) {
+                        a[n] = r;
+                        return
+                    }
+                    a[n] = t, o.delete(n)
+                },
+                GUILD_NEW_MEMBER_ACTIONS_FETCH_FAIL: function(e) {
+                    let {
+                        guildId: t
+                    } = e;
+                    o.delete(t)
+                },
+                GUILD_NEW_MEMBER_ACTIONS_DELETE_SUCCESS: function(e) {
+                    let {
+                        guildId: t
+                    } = e;
+                    if (null == a[t]) return !1;
+                    delete a[t]
+                },
+                COMPLETE_NEW_MEMBER_ACTION: function(e) {
+                    let {
+                        guildId: t,
+                        channelId: n
+                    } = e;
+                    a = {
+                        ...a,
+                        [t]: {
+                            ...a[t],
+                            [n]: !0
+                        }
+                    }
+                },
+                GUILD_DELETE: function(e) {
+                    let {
+                        guild: t
+                    } = e;
+                    if (null == a[t.id]) return !1;
+                    delete a[t.id]
+                }
+            })
+        },
         233706: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -76744,72 +76827,14 @@
             }
             var d = s
         },
-        6263: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useOnboardingHomeExperiment: function() {
-                    return o
-                },
-                default: function() {
-                    return l
-                }
-            });
-            var i = n("862205"),
-                s = n("49111");
-            let r = new Date(168264e7),
-                a = (0, i.createExperiment)({
-                    kind: "user",
-                    id: "2023-02_onboarding_home",
-                    label: "Home as a community onboarding surface",
-                    defaultConfig: {
-                        showOnboardingHome: !1,
-                        enableDevItems: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Show the Onboarding Version of Home",
-                        config: {
-                            showOnboardingHome: !0,
-                            enableDevItems: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "Onboarding Home DEV",
-                        config: {
-                            showOnboardingHome: !0,
-                            enableDevItems: !0
-                        }
-                    }, {
-                        id: 3,
-                        label: "Show the Onboarding Version of Home",
-                        config: {
-                            showOnboardingHome: !0,
-                            enableDevItems: !1
-                        }
-                    }]
-                });
-
-            function o(e, t) {
-                var n;
-                let i = __OVERLAY__ || null == e || e.id === s.ME || e.id === s.FAVORITES || !e.hasFeature(s.GuildFeatures.COMMUNITY) || !e.hasFeature(s.GuildFeatures.GUILD_SERVER_GUIDE) || !e.hasFeature(s.GuildFeatures.GUILD_ONBOARDING),
-                    o = new Date(null !== (n = null == t ? void 0 : t.joinedAt) && void 0 !== n ? n : 0);
-                return a.useExperiment({
-                    location: "d98574_1"
-                }, {
-                    disable: i,
-                    autoTrackExposure: null != t && o >= r
-                })
-            }
-            var l = a
-        },
         290886: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 useCanSeeOnboardingHome: function() {
-                    return p
+                    return m
                 },
                 canSeeOnboardingHome: function() {
-                    return S
+                    return p
                 }
             }), n("222007");
             var i = n("917351"),
@@ -76818,75 +76843,102 @@
                 a = n("380710"),
                 o = n("38654"),
                 l = n("42203"),
-                u = n("26989"),
-                d = n("305961"),
-                c = n("698882"),
-                f = n("233706"),
-                _ = n("6263"),
-                h = n("363176"),
-                E = n("49111"),
-                g = n("724210");
+                u = n("305961"),
+                d = n("698882"),
+                c = n("233706"),
+                f = n("284683"),
+                _ = n("363176"),
+                h = n("49111"),
+                E = n("724210");
 
-            function m(e) {
+            function g(e) {
                 var t;
                 let n = e.id,
                     {
                         homeSettingsEnabled: i
-                    } = f.default.getCurrentConfig({
+                    } = c.default.getCurrentConfig({
                         guildId: n,
                         location: "61eef9_1"
                     }, {
                         autoTrackExposure: !1
                     }),
-                    s = (null !== (t = c.default.getNewMemberActions(n)) && void 0 !== t ? t : []).length > 0,
-                    r = c.default.getEnabled(n);
-                return i && s && e.hasFeature(E.GuildFeatures.COMMUNITY) && !(e.hasFeature(E.GuildFeatures.GUILD_ONBOARDING) && !r)
+                    s = (null !== (t = d.default.getNewMemberActions(n)) && void 0 !== t ? t : []).length > 0,
+                    r = d.default.getEnabled(n);
+                return i && s && e.hasFeature(h.GuildFeatures.COMMUNITY) && !(e.hasFeature(h.GuildFeatures.GUILD_ONBOARDING) && !r)
             }
 
-            function p(e) {
-                let t = (0, r.default)([d.default], () => d.default.getGuild(e)),
-                    n = (0, r.default)([u.default], () => u.default.getSelfMember(e)),
+            function m(e) {
+                let t = (0, r.default)([u.default], () => u.default.getGuild(e)),
+                    n = (0, f.default)(t),
                     {
-                        showOnboardingHome: i
-                    } = (0, _.useOnboardingHomeExperiment)(t, n),
-                    {
-                        homeSettingsEnabled: c
-                    } = f.default.useExperiment({
+                        homeSettingsEnabled: i
+                    } = c.default.useExperiment({
                         guildId: e,
                         location: "61eef9_2"
                     }, {
                         autoTrackExposure: !1
                     }),
-                    p = (0, r.default)([o.default], () => o.default.isFullServerPreview(e)),
-                    S = (0, h.default)(e),
-                    v = (0, r.default)([l.default], () => l.default.getMutableGuildChannelsForGuild(e));
-                if (null == t || __OVERLAY__ || e === E.ME || e === E.FAVORITES) return !1;
-                if (p) return m(t);
-                let T = c && (0, a.isGuildOnboardingSettingsAvailable)(e) && t.hasFeature(E.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(E.GuildFeatures.GUILD_SERVER_GUIDE),
-                    I = s.some(s.values(v), e => e.hasFlag(g.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL));
-                return !(!S && !I) && (i && t.hasFeature(E.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(E.GuildFeatures.GUILD_SERVER_GUIDE) || T) && t.hasFeature(E.GuildFeatures.COMMUNITY)
+                    d = (0, r.default)([o.default], () => o.default.isFullServerPreview(e)),
+                    m = (0, _.default)(e),
+                    p = (0, r.default)([l.default], () => l.default.getMutableGuildChannelsForGuild(e));
+                if (null == t || __OVERLAY__ || e === h.ME || e === h.FAVORITES) return !1;
+                if (d) return g(t);
+                let S = i && (0, a.isGuildOnboardingSettingsAvailable)(e) && t.hasFeature(h.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(h.GuildFeatures.GUILD_SERVER_GUIDE),
+                    v = s.some(s.values(p), e => e.hasFlag(E.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL));
+                return !(!m && !v) && (n && t.hasFeature(h.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(h.GuildFeatures.GUILD_SERVER_GUIDE) || S) && t.hasFeature(h.GuildFeatures.COMMUNITY)
             }
 
-            function S(e) {
-                let t = d.default.getGuild(e),
+            function p(e) {
+                let t = u.default.getGuild(e),
                     {
-                        showOnboardingHome: n
-                    } = _.default.getCurrentConfig({
-                        location: "61eef9_3"
-                    }, {
-                        autoTrackExposure: !1
-                    }),
-                    {
-                        homeSettingsEnabled: i
-                    } = f.default.getCurrentConfig({
+                        homeSettingsEnabled: n
+                    } = c.default.getCurrentConfig({
                         guildId: e,
                         location: "61eef9_4"
                     }),
-                    s = o.default.isFullServerPreview(e);
-                if (null == t || __OVERLAY__ || e === E.ME || e === E.FAVORITES) return !1;
-                if (s) return m(t);
-                let r = i && (0, a.isGuildOnboardingSettingsAvailable)(e) && t.hasFeature(E.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(E.GuildFeatures.GUILD_SERVER_GUIDE);
-                return (n && t.hasFeature(E.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(E.GuildFeatures.GUILD_SERVER_GUIDE) || r) && t.hasFeature(E.GuildFeatures.COMMUNITY)
+                    i = o.default.isFullServerPreview(e);
+                if (null == t || __OVERLAY__ || e === h.ME || e === h.FAVORITES) return !1;
+                if (i) return g(t);
+                let s = n && (0, a.isGuildOnboardingSettingsAvailable)(e) && t.hasFeature(h.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(h.GuildFeatures.GUILD_SERVER_GUIDE);
+                return (t.hasFeature(h.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(h.GuildFeatures.GUILD_SERVER_GUIDE) || s) && t.hasFeature(h.GuildFeatures.COMMUNITY)
+            }
+        },
+        284683: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var i = n("49111");
+
+            function s(e) {
+                let t = __OVERLAY__ || null == e || e.id === i.ME || e.id === i.FAVORITES || !e.hasFeature(i.GuildFeatures.COMMUNITY) || !e.hasFeature(i.GuildFeatures.GUILD_SERVER_GUIDE) || !e.hasFeature(i.GuildFeatures.GUILD_ONBOARDING);
+                return !t
+            }
+        },
+        759971: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                hasPendingMemberAction: function() {
+                    return f
+                }
+            }), n("702976");
+            var i = n("42203"),
+                s = n("26989"),
+                r = n("305961"),
+                a = n("568734"),
+                o = n("698882"),
+                l = n("675305"),
+                u = n("284683"),
+                d = n("49111"),
+                c = n("657944");
+
+            function f(e, t) {
+                var n, f;
+                let _ = r.default.getGuild(e),
+                    h = i.default.getChannel(t);
+                return null != _ && null != h && (0, u.default)(_) && _.hasFeature(d.GuildFeatures.GUILD_SERVER_GUIDE) && !a.hasFlag(null !== (f = null === (n = s.default.getSelfMember(_.id)) || void 0 === n ? void 0 : n.flags) && void 0 !== f ? f : 0, c.GuildMemberFlags.COMPLETED_HOME_ACTIONS) && o.default.hasMemberAction(_.id, h.id) && !l.default.hasCompletedActionForChannel(_.id, h.id)
             }
         },
         363176: function(e, t, n) {
@@ -87410,8 +87462,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710199940308",
-                                    build_number: "274121"
+                                    built_at: "1710200931376",
+                                    build_number: "274133"
                                 }
                             },
                             retries: 1
@@ -124786,7 +124838,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "e1c49106b25e1672b47caedcd0cac53b855d81f1"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "53abd5f318ea07cd449fc09a827e74dc2ce683a0"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134111,7 +134163,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274121"
+                                build_number: "274133"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151713,4 +151765,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.848eef7ea1ca64ef5449.js.map
+//# sourceMappingURL=29062.d8c8d7f4c92458a2a84a.js.map
