@@ -4771,6 +4771,13 @@
       "POST"
     ]
   },
+  "DELETE_SAFETY_WARNINGS": {
+    "url": "/channels/:param/safety-warnings",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
+  },
   "MY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me",
     "allowed_methods": [
