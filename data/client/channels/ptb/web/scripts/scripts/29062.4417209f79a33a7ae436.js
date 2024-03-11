@@ -30515,6 +30515,12 @@
                         type: "OVERLAY_NOTIFY_READY_TO_SHOW",
                         pid: e
                     })
+                },
+                successfullyShown(e) {
+                    s.default.dispatch({
+                        type: "OVERLAY_SUCCESSFULLY_SHOWN",
+                        pid: e
+                    })
                 }
             };
             var h = _
@@ -87404,8 +87410,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710183686256",
-                                    build_number: "273948"
+                                    built_at: "1710184656820",
+                                    build_number: "273957"
                                 }
                             },
                             retries: 1
@@ -124240,7 +124246,7 @@
                     return es
                 },
                 default: function() {
-                    return eN
+                    return eR
                 }
             }), n("222007"), n("70102"), n("311790"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341"), n("101997"), n("313619"), n("654714"), n("287168"), n("956660"), n("860677");
             var r, a, o = n("992830"),
@@ -124342,11 +124348,11 @@
                     if (w.size > 0) {
                         X = "reconcile.getOverlayURL";
                         let t = await es();
-                        X = "reconcile.createHostProcess", e.createHostProcess(t, e_, ef)
+                        X = "reconcile.createHostProcess", e.createHostProcess(t, eh, ef)
                     } else X = "reconcile.destroyHostProcess", e.destroyHostProcess()
                 } else if (F) {
                     let t = await es();
-                    e.createHostProcess(t, e_, ef)
+                    e.createHostProcess(t, eh, ef)
                 } else e.destroyHostProcess()
             }
             async function ee(e) {
@@ -124433,7 +124439,7 @@
 
             function es() {
                 return new Promise(e => {
-                    ey.addConditionalChangeListener(() => {
+                    eN.addConditionalChangeListener(() => {
                         if (null != i) return e(i), !1
                     })
                 })
@@ -124483,7 +124489,7 @@
                         let {
                             OutOfProcess: t
                         } = await er();
-                        return null == t || null === (e = t.init) || void 0 === e || e.call(t), t.setClickZoneCallback(ep), t.setHostWindowCallbacks(ea, eo, el), t.setFocusCallback(ef), t
+                        return null == t || null === (e = t.init) || void 0 === e || e.call(t), t.setClickZoneCallback(eS), t.setHostWindowCallbacks(ea, eo, el), t.setFocusCallback(ef), t.setSuccessfullyShownCallback(e_), t
                     } catch (e) {
                         throw q.error("failed loading out of process overlay", e), e
                     }
@@ -124501,7 +124507,7 @@
                 if (!b.OVERLAY_SUPPORTED || F === e) return;
                 F = e, v.OverlayStoredSettings.update({
                     enabled: e
-                }), ey.emitChange();
+                }), eN.emitChange();
                 let t = await er(),
                     {
                         OutOfProcess: n
@@ -124518,7 +124524,11 @@
                 _.default.setFocusedPID(0 === e ? null : e)
             }
 
-            function e_(e, t, n) {
+            function e_(e) {
+                _.default.successfullyShown(e)
+            }
+
+            function eh(e, t, n) {
                 var i;
                 let s = null === (i = S.default.getGameForPID(e)) || void 0 === i ? void 0 : i.name,
                     r = A.default.getGameByName(s),
@@ -124534,7 +124544,7 @@
                 }), R.default.track(M.AnalyticEvents.OVERLAY_HOOK_RESULT, a), q.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), a), t ? J(e, "CONNECTED", "CONNECTING") : J(e, "CONNECT_FAILED", "CONNECTING")
             }
 
-            function eh() {
+            function eE() {
                 let e = C.default.getToken(),
                     t = C.default.getId();
                 null != e && m.send({
@@ -124548,7 +124558,7 @@
                     }]
                 })
             }
-            async function eE(e) {
+            async function eg(e) {
                 let t = await er();
                 if (null != B && B !== L.DEV_PID && t.sendCommand(B, {
                         message: "intercept_input",
@@ -124559,19 +124569,19 @@
                 }
             }
 
-            function eg(e) {
+            function em(e) {
                 if (e) {
                     let t = S.default.getVisibleGame(),
                         n = null == t ? null : S.default.getGameOverlayStatus(t);
-                    (null == n ? void 0 : n.overlayMethod) === b.OverlayMethod.OutOfProcess ? eE(e) : setTimeout(() => eE(e), 200)
-                } else eE(e)
+                    (null == n ? void 0 : n.overlayMethod) === b.OverlayMethod.OutOfProcess ? eg(e) : setTimeout(() => eg(e), 200)
+                } else eg(e)
             }
-            let em = null;
+            let ep = null;
 
-            function ep(e, t, n) {
+            function eS(e, t, n) {
                 _.default.relayClickZoneClicked(e, t, n)
             }
-            async function eS(e) {
+            async function ev(e) {
                 if (!(0, L.supportsOutOfProcess)()) return;
                 let t = await eu();
                 t.setClickZones(e.map(e => {
@@ -124586,17 +124596,17 @@
                 }))
             }
 
-            function ev(e) {
+            function eT(e) {
                 return !(W || !k || K.has(e.type)) && ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = {
                     ...e,
                     settings: {
                         type: e.settings.type,
                         proto: (0, I.protoToB64WithType)(e.settings.type, e.settings.proto)
                     }
-                }), V.add(e), null == s && (s = setTimeout(eT, 1)), !1)
+                }), V.add(e), null == s && (s = setTimeout(eI, 1)), !1)
             }
 
-            function eT() {
+            function eI() {
                 if (null != s && (clearTimeout(s), s = null), !k) {
                     V.clear();
                     return
@@ -124609,11 +124619,11 @@
                 }), V.clear())
             }
 
-            function eI(e) {
+            function eC(e) {
                 return null != e && (0, O.constantTimeCompare)(e, Y)
             }
 
-            function eC(e) {
+            function eA(e) {
                 switch (0, e.type) {
                     case M.OverlayEventTypes.CONNECT:
                         let t = C.default.getToken();
@@ -124646,9 +124656,9 @@
                         q.info("[overlay data received]", e.payload)
                 }
             }
-            class eA extends l.default.Store {
+            class ey extends l.default.Store {
                 initialize() {
-                    !(!b.OVERLAY_SUPPORTED || __OVERLAY__) && (G.add(b.OverlayMethod.Hook), this.waitFor(S.default, C.default), m.setReceiveCommandHandler(eC, eI), C.default.addChangeListener(eh), ec(v.OverlayStoredSettings.enabled), u.default.addInterceptor(ev))
+                    !(!b.OVERLAY_SUPPORTED || __OVERLAY__) && (G.add(b.OverlayMethod.Hook), this.waitFor(S.default, C.default), m.setReceiveCommandHandler(eA, eC), C.default.addChangeListener(eE), ec(v.OverlayStoredSettings.enabled), u.default.addInterceptor(eT))
                 }
                 isInputLocked(e) {
                     return !j.has(e)
@@ -124672,8 +124682,8 @@
                     return "CRASHED" === w.get(e)
                 }
             }
-            eA.displayName = "OverlayBridgeStore";
-            let ey = new eA(u.default, __OVERLAY__ ? {
+            ey.displayName = "OverlayBridgeStore";
+            let eN = new ey(u.default, __OVERLAY__ ? {
                 OVERLAY_RELAY_CLICK_ZONE_CLICKED: function(e) {
                     let {
                         normalizedMouseX: t,
@@ -124731,9 +124741,9 @@
                         pid: n
                     } = e, i = w.get(n);
                     if (t || "READY" === i || "CRASHED" === i) {
-                        if (t ? j.delete(n) : j.add(n), z.clear(), null != em && (clearTimeout(em), em = null, t)) return;
-                        t ? eg(t) : em = setTimeout(() => {
-                            eg(t), em = null
+                        if (t ? j.delete(n) : j.add(n), z.clear(), null != ep && (clearTimeout(ep), ep = null, t)) return;
+                        t ? em(t) : ep = setTimeout(() => {
+                            em(t), ep = null
                         }, 100)
                     }
                 },
@@ -124741,10 +124751,10 @@
                     let {
                         region: t
                     } = e;
-                    z.add(t), eg(!1)
+                    z.add(t), em(!1)
                 },
                 OVERLAY_DEACTIVATE_ALL_REGIONS: function() {
-                    z.clear(), eg(!0)
+                    z.clear(), em(!0)
                 },
                 RPC_SERVER_READY: function(e) {
                     let {
@@ -124752,7 +124762,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "780d8e1568b8c2c983cc74dbe34bc86e5db36e13"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "d00865632dfd9b11e468b82564abe6cf9a276cf2"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -124802,7 +124812,7 @@
                     let {
                         zones: t
                     } = e;
-                    eS(t)
+                    ev(t)
                 },
                 OVERLAY_SET_ASSOCIATED_GAME: function(e) {
                     var t, n;
@@ -124817,7 +124827,7 @@
                     })
                 }
             });
-            var eN = ey
+            var eR = eN
         },
         901165: function(e, t, n) {
             "use strict";
@@ -134077,7 +134087,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "273948"
+                                build_number: "273957"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151679,4 +151689,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.7bdefe823125d8a14688.js.map
+//# sourceMappingURL=29062.4417209f79a33a7ae436.js.map
