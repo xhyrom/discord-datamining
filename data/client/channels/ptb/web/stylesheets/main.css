@@ -33441,7 +33441,8 @@ html .progress__4ef76 {
 
 .subtitleContainer_f754d4 {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    position: relative
 }
 
 .container_def45c {
@@ -36395,9 +36396,11 @@ html .progress__4ef76 {
     box-sizing: border-box;
     display: flex;
     gap: 8px;
+    left: 0;
     margin-left: 16px;
     padding: 8px;
-    position: relative;
+    position: absolute;
+    top: 100%;
     width: 385px
 }
 
@@ -37284,7 +37287,8 @@ html .progress__4ef76 {
 
 .subtitleContainer_e43d15 {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    position: relative
 }
 
 .pencilIcon__14750 {
@@ -46311,8 +46315,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -129656,4 +129660,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7582306698076d12647f.css.map*/
+/*# sourceMappingURL=app.5c31fe6e76a7264b50c0.css.map*/
