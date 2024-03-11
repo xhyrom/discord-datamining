@@ -21,7 +21,7 @@
 <p>1. Tap on <strong>User Settings</strong> to the right of your avatar in the bottom left of the Discord app.</p>
 <p>2. Next, under <strong>User Settings</strong> head to<strong> Privacy &amp; Safety</strong>.</p>
 <p>3. Scroll down until you see <strong>Request all of my Data </strong>and tap <strong>Request Data</strong></p>
-<p>4. You will then see a pop-up confirming that you want to request your data. If you want to continue with the request, tap on <strong>Request Data</strong>.</p>
+<p>4. You will then see a pop-up confirming that you want to request your data. If you want to continue with the request, tap on <strong>Request My Data</strong>.</p>
 <p>5. Finally you’ll receive a confirmation stating you should receive your data package in 30 days. Tap on <strong>Okay</strong> to confirm and have the pop-up close.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21899217737623" width="552" height="310"></p>
 <h3 id="h_01HRDJ0P8ATKPGDJ27TT535P0J"><span style="color: #434343;" data-darkreader-inline-color="">If you disable or delete your account before you receive your download link, it will cancel your request.</span></h3>
