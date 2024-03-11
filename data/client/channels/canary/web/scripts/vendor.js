@@ -87410,8 +87410,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710190702353",
-                                    build_number: "274030"
+                                    built_at: "1710193593531",
+                                    build_number: "274061"
                                 }
                             },
                             retries: 1
@@ -91229,7 +91229,7 @@
                 u = 300,
                 d = 55,
                 c = 3;
-            (s = i || (i = {}))[s.ONE_HOUR = 1] = "ONE_HOUR", s[s.ONE_DAY = 24] = "ONE_DAY", s[s.THREE_DAYS = 72] = "THREE_DAYS", s[s.SEVEN_DAYS = 168] = "SEVEN_DAYS", r.ExpressionPickerViewType.GIF, r.ExpressionPickerViewType.EMOJI
+            (s = i || (i = {}))[s.ONE_HOUR = 1] = "ONE_HOUR", s[s.FOUR_HOURS = 4] = "FOUR_HOURS", s[s.EIGHT_HOURS = 8] = "EIGHT_HOURS", s[s.ONE_DAY = 24] = "ONE_DAY", s[s.THREE_DAYS = 72] = "THREE_DAYS", s[s.SEVEN_DAYS = 168] = "SEVEN_DAYS", r.ExpressionPickerViewType.GIF, r.ExpressionPickerViewType.EMOJI
         },
         83995: function(e, t, n) {
             "use strict";
@@ -124778,7 +124778,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "1ae788f546e79b924263e7f3ff6e43fd24dff870"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "024b3d66e10f77383e4d936c1896fdc6c7dd3aae"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134103,7 +134103,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274030"
+                                build_number: "274061"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151705,4 +151705,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.e219fee3a59e2aeda3c1.js.map
+//# sourceMappingURL=29062.043f0c0c85752607b780.js.map

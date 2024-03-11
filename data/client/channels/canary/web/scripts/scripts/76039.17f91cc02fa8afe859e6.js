@@ -16763,8 +16763,7 @@
                 CREATE_POLL_ADD_ANSWER_BUTTON: "Add another answer",
                 CREATE_POLL_TEXT_PRECEDING_DURATION_SELECTION: "Poll will be live for",
                 CREATE_POLL_DURATION_LABEL: "Duration",
-                CREATE_POLL_DURATION_OPTION_LABEL_1_HOUR: "1 hour",
-                CREATE_POLL_DURATION_OPTION_LABEL_24_HOURS: "24 hours",
+                CREATE_POLL_DURATION_OPTION_LABEL_N_HOURS: "{num, plural, one {1 hour} other {{num} hours}}",
                 CREATE_POLL_DURATION_OPTION_LABEL_3_DAYS: "3 days",
                 CREATE_POLL_DURATION_OPTION_LABEL_7_DAYS: "1 week",
                 CREATE_POLL_DURATION_SELECTION_ARIA_LABEL: "Poll will be live for {duration}",
@@ -18445,7 +18444,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274030", ", Version Hash: ").concat("1ae788f546e79b924263e7f3ff6e43fd24dff870")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274061", ", Version Hash: ").concat("024b3d66e10f77383e4d936c1896fdc6c7dd3aae")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20808,8 +20807,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "274030", "274030"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274030")), _ = 0), _
+                let _ = parseInt((e = "274061", "274061"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274061")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36944,4 +36943,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.cb23aa49a46997c61442.js.map
+//# sourceMappingURL=76039.17f91cc02fa8afe859e6.js.map
