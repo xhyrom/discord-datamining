@@ -46306,8 +46306,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -63729,6 +63729,122 @@ html .invoiceCancelRow__75e19 {
     left: 0;
     z-index: 10000;
     pointer-events: none
+}
+
+.background_abacb9 {
+    position: absolute;
+    top: -100vh;
+    bottom: -100vh;
+    left: -100vw;
+    right: -100vw;
+    background-repeat: repeat;
+    pointer-events: none
+}
+
+.wrapper_e8ee0c {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column
+}
+
+.wrapper_e8ee0c:hover .entrypoint__8c831 {
+    box-shadow: var(--elevation-high), 0 0 7px 2px hsl(var(--white-500-hsl)/.8)inset
+}
+
+.wrapper_e8ee0c:hover .closeButton__4396e,
+.wrapper_e8ee0c:hover .iconButton_cefe5e {
+    opacity: 1;
+    transform: translatez(0)
+}
+
+.entrypoint__8c831 {
+    position: relative;
+    background: linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients));
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    transition: box-shadow.2s ease;
+    cursor: pointer
+}
+
+.backgroundWrapper_b33782 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden
+}
+
+.backgroundImage_a126f1 {
+    background-image: url(/assets/7f10d688807618fef460.svg);
+    background-size: 400px 140px;
+    opacity: .5
+}
+
+.image__4fd61 {
+    position: absolute;
+    top: -20px;
+    left: 16px
+}
+
+.body__5e040 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 86px
+}
+
+.buttonWrapper__12958 {
+    margin-left: 20px
+}
+
+.button_b9f489 {
+    color: var(--white-500);
+    background-color: var(--primary-700);
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity.2s ease, transform.2s ease
+}
+
+.button_b9f489:hover {
+    background-color: var(--black-500)
+}
+
+.iconButton_cefe5e {
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    transform: translate3d(10px, 0, 0)
+}
+
+.buttonIcon_e37f26 {
+    width: 20px;
+    height: 20px
+}
+
+.closeButton__4396e {
+    cursor: pointer;
+    margin-bottom: 8px;
+    align-self: flex-end;
+    transform: translate3d(0, 10px, 0);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px
+}
+
+.closeIcon_ec06a5 {
+    width: 16px;
+    height: 16px
+}
+
+.reduce-motion .button_b9f489 {
+    transform: translatez(0)
 }
 
 .container__01db1 {
@@ -119466,14 +119582,8 @@ html .invoiceCancelRow_a8669b {
 }
 
 .headerBackground__8a4ac {
-    position: absolute;
-    top: -100vh;
-    bottom: -100vh;
-    left: -100vw;
-    right: -100vw;
     background-image: url(/assets/7f10d688807618fef460.svg);
     background-size: 710px 200px;
-    background-repeat: repeat;
     opacity: .5
 }
 
@@ -129653,4 +129763,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.14b5a715b463d0d6f696.css.map*/
+/*# sourceMappingURL=app.8d6c9572f47cdd6312d6.css.map*/
