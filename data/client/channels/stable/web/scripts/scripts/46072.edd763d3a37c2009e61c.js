@@ -1194,7 +1194,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return x
+                    return O
                 }
             }), n("70102"), n("222007");
             var a = n("37983"),
@@ -1297,7 +1297,7 @@
             }
             let N = [];
 
-            function x(e) {
+            function O(e) {
                 let {
                     channelId: t,
                     guildId: s,
@@ -1306,16 +1306,16 @@
                     compact: m = !1,
                     disableInteraction: g = !1,
                     maxVisibleUsers: v = 3
-                } = e, [A, x] = r.useState(!1), O = r.useRef(new d.DelayedCall(150, () => x(!1))), y = (0, o.useStateFromStoresArray)([E.default, p.default], () => {
+                } = e, [A, O] = r.useState(!1), x = r.useRef(new d.DelayedCall(150, () => O(!1))), y = (0, o.useStateFromStoresArray)([E.default, p.default], () => {
                     if (l.type === _.ParticipantTypes.STREAM) {
                         let e = E.default.getViewerIds(l.id);
                         return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(S.isNotNullish) : N
                     }
                     return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(S.isNotNullish) : N : N
                 }, [l]), L = r.useCallback(() => {
-                    O.current.cancel(), x(!0)
+                    x.current.cancel(), O(!0)
                 }, []), P = r.useCallback(() => {
-                    O.current.delay()
+                    x.current.delay()
                 }, []), D = r.useCallback((e, t) => {
                     L(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
@@ -1508,7 +1508,7 @@
                             action: () => M(r, g, t, E.AnalyticsObjectTypes.RESOLUTION)
                         }, "stream-settings-fps-".concat(t))
                     }),
-                    x = p.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
+                    O = p.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
@@ -1527,7 +1527,7 @@
                         children: N
                     }), (0, a.jsx)(i.MenuGroup, {
                         label: m.default.Messages.STREAM_RESOLUTION,
-                        children: x
+                        children: O
                     })]
                 })
             }
@@ -1629,7 +1629,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return x
+                    return O
                 }
             }), n("222007");
             var a = n("37983"),
@@ -1756,13 +1756,13 @@
                     }, this.discordErrorsSet = !1
                 }
             }
-            var x = N
+            var O = N
         },
         160139: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return x
                 }
             });
             var a = n("37983");
@@ -1826,7 +1826,7 @@
                         })]
                     })
                 },
-                x = e => {
+                O = e => {
                     let {
                         focused: t,
                         windowKey: n,
@@ -1878,7 +1878,7 @@
                     })
                 };
 
-            function O(e) {
+            function x(e) {
                 let {
                     focused: t,
                     type: n,
@@ -1895,7 +1895,7 @@
                             hasOpenLayer: h
                         });
                     case g.PlatformTypes.OSX:
-                        return (0, a.jsx)(x, {
+                        return (0, a.jsx)(O, {
                             focused: t,
                             windowKey: r,
                             frame: s,
@@ -2034,7 +2034,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-17db3f872231ed98421d75e53d5f91ff1b8d90a3",
+                    release: "discord_web-477ea0836667f606fdb7a6be4515f24a6f4a9691",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2052,7 +2052,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "273507", "273507")), a.setTag("builtAt", String("1709919968555"));
+                }), a.setTag("buildNumber", (e = "273850", "273850")), a.setTag("builtAt", String("1710174134595"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2449,28 +2449,40 @@
         821240: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                getSafetyAlertsSettingOrDefault: function() {
+                    return i
+                },
                 getInappropriateConversationTakeoverForChannel: function() {
-                    return r
+                    return l
                 },
                 shouldShowTakeoverForWarnings: function() {
-                    return s
+                    return u
                 }
             });
-            var a = n("764828");
+            var a = n("374363"),
+                r = n("764828"),
+                s = n("217736");
 
-            function r(e) {
+            function i() {
+                var e, t, n;
+                let r = null === (n = null === (t = a.default.settings.privacy) || void 0 === t ? void 0 : null === (e = t.inappropriateConversationWarnings) || void 0 === e ? void 0 : e.value) || void 0 === n || n,
+                    i = (0, s.getUserIsTeen)("safety_warnings_setting");
+                return i && r
+            }
+
+            function l(e) {
                 let t = function(e) {
-                        let t = a.default.getChannelSafetyWarnings(e);
-                        return t.filter(e => e.type === a.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1)
+                        let t = r.default.getChannelSafetyWarnings(e);
+                        return t.filter(e => e.type === r.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1)
                     }(e),
                     n = t.filter(e => null != e.dismiss_timestamp);
                 if (n.length > 0) return null;
-                let r = t.filter(e => null == e.dismiss_timestamp);
-                return 1 === r.length ? r[0] : null
+                let a = t.filter(e => null == e.dismiss_timestamp);
+                return 1 === a.length ? a[0] : null
             }
 
-            function s(e) {
-                let t = e.filter(e => e.type === a.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
+            function u(e) {
+                let t = e.filter(e => e.type === r.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
                 return t.length > 0 && t.every(e => null == e.dismiss_timestamp)
             }
         },
@@ -3007,7 +3019,7 @@
                     onClose: I,
                     onSelect: A,
                     appContext: M = g.AppContext.APP
-                } = e, R = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, x = v(n, r, l), O = (0, o.default)(N, M), y = (0, u.default)(N, M, g.NOOP_NULL), L = null == N ? (0, a.jsx)(s.MenuItem, {
+                } = e, R = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, O = v(n, r, l), x = (0, o.default)(N, M), y = (0, u.default)(N, M, g.NOOP_NULL), L = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: E.default,
@@ -3016,7 +3028,7 @@
                     children: [S.isPlatformEmbedded ? (0, a.jsx)(s.MenuItem, {
                         id: "stream-settings",
                         label: T.default.Messages.SCREENSHARE_STREAM_QUALITY,
-                        children: O
+                        children: x
                     }) : null, h ? y : null, R ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
                         label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
@@ -3037,7 +3049,7 @@
                         onClose: I,
                         "aria-label": null != N ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
                         children: [(0, a.jsx)(s.MenuGroup, {
-                            children: x.map(e => {
+                            children: O.map(e => {
                                 let {
                                     stream: t,
                                     username: n
@@ -4751,4 +4763,4 @@
         }
     }
 ]);
-//# sourceMappingURL=46072.16490d27c108b70f9f27.js.map
+//# sourceMappingURL=46072.edd763d3a37c2009e61c.js.map
