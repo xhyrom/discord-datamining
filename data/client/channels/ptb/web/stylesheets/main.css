@@ -44864,15 +44864,6 @@ html .progress__4ef76 {
     position: relative
 }
 
-.coachmark__51b85 {
-    width: 280px
-}
-
-.image_bdd7c1 {
-    width: 220px;
-    margin: 0 16px 16px
-}
-
 .container__24643 {
     position: absolute
 }
@@ -46315,8 +46306,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -129660,4 +129651,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5c31fe6e76a7264b50c0.css.map*/
+/*# sourceMappingURL=app.304e7d264c49bbd593a7.css.map*/

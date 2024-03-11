@@ -12579,13 +12579,6 @@
                 tooltips: "tooltips__27512"
             }
         },
-        9092: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                coachmark: "coachmark__51b85",
-                image: "image_bdd7c1"
-            }
-        },
         872994: function(e, t, n) {
             "use strict";
             e.exports = {
