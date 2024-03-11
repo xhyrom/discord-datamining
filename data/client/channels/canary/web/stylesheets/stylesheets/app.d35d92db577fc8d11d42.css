@@ -46306,8 +46306,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -53193,6 +53193,7 @@ html .progress__4ef76 {
 }
 
 .primaryInfo_b44f9d {
+    justify-content: space-between;
     height: 24px
 }
 
@@ -53269,7 +53270,8 @@ html .progress__4ef76 {
 .name_c08dbc {
     z-index: 1;
     display: inline-block;
-    align-items: center
+    align-items: center;
+    margin-right: auto
 }
 
 .favoritesIcon__95de7 {
@@ -129651,4 +129653,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.304e7d264c49bbd593a7.css.map*/
+/*# sourceMappingURL=app.d35d92db577fc8d11d42.css.map*/
