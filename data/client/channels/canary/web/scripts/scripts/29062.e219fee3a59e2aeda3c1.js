@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67229"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87410,8 +87410,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710189434073",
-                                    build_number: "274014"
+                                    built_at: "1710190702353",
+                                    build_number: "274030"
                                 }
                             },
                             retries: 1
@@ -92889,12 +92889,24 @@
                 _ = new Map;
 
             function h(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
+                    updateProgress: !1
+                };
                 a = new Map(a);
-                let n = a.get(e);
-                null != n && a.set(e, {
-                    ...n,
-                    ...t
-                })
+                let i = a.get(e);
+                if (null != i) {
+                    var s;
+                    let r = null === (s = i.userStatus) || void 0 === s ? void 0 : s.streamProgressSeconds,
+                        o = {
+                            ...i,
+                            ...t
+                        },
+                        l = n.updateProgress || null == o.userStatus || null == r || null != o.userStatus.completedAt || null == o.userStatus.enrolledAt;
+                    !l && null != o.userStatus && (o.userStatus = {
+                        ...o.userStatus,
+                        streamProgressSeconds: r
+                    }), a.set(e, o)
+                }
             }
 
             function E(e, t) {
@@ -92980,6 +92992,8 @@
                     } = e;
                     h(t, {
                         userStatus: i
+                    }, {
+                        updateProgress: !0
                     }), g(n)
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
@@ -93097,6 +93111,8 @@
                     } = e;
                     h(t.questId, {
                         userStatus: t
+                    }, {
+                        updateProgress: !0
                     })
                 }
             })
@@ -124762,7 +124778,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "ea51fbd38cab396d909a50dd5786b68353bdeb04"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "1ae788f546e79b924263e7f3ff6e43fd24dff870"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134087,7 +134103,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274014"
+                                build_number: "274030"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151689,4 +151705,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.be3e12f53256e570947c.js.map
+//# sourceMappingURL=29062.e219fee3a59e2aeda3c1.js.map
