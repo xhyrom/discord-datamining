@@ -87463,8 +87463,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710259809773",
-                                    build_number: "274311"
+                                    built_at: "1710264062278",
+                                    build_number: "274346"
                                 }
                             },
                             retries: 1
@@ -92862,20 +92862,23 @@
         815496: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                getQuestStatus: function() {
+                getQuestContentName: function() {
                     return c
                 },
+                getQuestStatus: function() {
+                    return f
+                },
                 getContentProperties: function() {
-                    return _
+                    return h
                 },
                 trackQuestEvent: function() {
-                    return h
+                    return E
                 },
                 QuestContentCTA: function() {
                     return s
                 },
                 trackQuestContentClicked: function() {
-                    return E
+                    return g
                 }
             });
             var i, s, r = n("313915"),
@@ -92886,11 +92889,16 @@
             let d = Object.keys(l.QuestContent);
 
             function c(e) {
+                var t;
+                return null !== (t = d.find(t => l.QuestContent[t] === e)) && void 0 !== t ? t : ""
+            }
+
+            function f(e) {
                 var t, n, i;
                 return null == e ? null : (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null === (n = e.userStatus) || void 0 === n ? void 0 : n.completedAt) != null ? "COMPLETED" : (null === (i = e.userStatus) || void 0 === i ? void 0 : i.enrolledAt) != null ? "ENROLLED" : "NONE"
             }
 
-            function f(e) {
+            function _(e) {
                 return {
                     quest_id: e.id,
                     game_id: e.config.applicationId,
@@ -92898,34 +92906,33 @@
                 }
             }
 
-            function _(e) {
-                var t;
+            function h(e) {
                 return {
                     content_id: e,
-                    content_name: null !== (t = d.find(t => l.QuestContent[t] === e)) && void 0 !== t ? t : ""
+                    content_name: c(e)
                 }
             }
 
-            function h(e, t, n) {
+            function E(e, t, n) {
                 let i = o.default.quests.get(e);
                 if (null != i) {
                     if (i.preview) {
                         r.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", t, {
-                            ...f(i),
+                            ..._(i),
                             ...n
                         });
                         return
                     }
                     a.default.track(t, {
-                        ...f(i),
+                        ..._(i),
                         ...n
                     })
                 }
             }
 
-            function E(e, t, n) {
-                h(e, u.AnalyticEvents.QUEST_CONTENT_CLICKED, {
-                    ..._(t),
+            function g(e, t, n) {
+                E(e, u.AnalyticEvents.QUEST_CONTENT_CLICKED, {
+                    ...h(t),
                     cta_name: n
                 })
             }(i = s || (s = {})).LEARN_MORE = "LEARN_MORE", i.SHOW_REWARD = "SHOW_REWARD", i.CLAIM_REWARD = "CLAIM_REWARD", i.ACCEPT_QUEST = "ACCEPT_QUEST", i.COPY_QUEST_URL = "COPY_QUEST_URL", i.TRACK_PROGRESS = "TRACK_PROGRESS", i.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", i.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", i.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", i.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", i.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", i.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE"
@@ -124839,7 +124846,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "4878bc6a7b470d4a9a15a762305b744fd3c45df1"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "02a2a44a331a5bb1be955f26dad781a008836478"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134164,7 +134171,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274311"
+                                build_number: "274346"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151315,7 +151322,7 @@
                 MetricEvents: function() {
                     return i
                 }
-            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", s.IMAGE_LOAD_ERROR = "image_load_error"
+            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", s.QUEST_CONTENT_IMPRESSION = "quest_content_impression", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", s.IMAGE_LOAD_ERROR = "image_load_error"
         },
         561467: function(e, t, n) {
             "use strict";
@@ -151766,4 +151773,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.1033f30ee2ff9bf87138.js.map
+//# sourceMappingURL=29062.b23c39dc974a039e5c92.js.map
