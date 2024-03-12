@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_quests_client_monitoring",
+    "label": "Quests client monitoring experiment",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: disabled",
+      "Treatment 1: enabled"
+    ],
+    "hash": 2848826960,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
