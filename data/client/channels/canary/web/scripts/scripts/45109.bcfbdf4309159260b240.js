@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -47851,7 +47851,7 @@
                     }
                     u.setVideoEncoderExperiments(d.join(",")), u.on(h.BaseConnectionEvent.Speaking, (e, t, n) => {
                         this.userId === e && this.sendSpeaking(t, n), this.emit(F.RTCConnectionEvent.Speaking, e, t)
-                    }), u.on(h.BaseConnectionEvent.MuteFromNative, e => {
+                    }), u.on(h.BaseConnectionEvent.NativeMuteChanged, e => {
                         m.default.setSelfMute(X.MediaEngineContextTypes.DEFAULT, e)
                     }), u.on(h.BaseConnectionEvent.Video, (e, t, n, i, s, r) => {
                         this._handleVideoStreamId({
@@ -87355,8 +87355,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710269968793",
-                                    build_number: "274388"
+                                    built_at: "1710273188097",
+                                    build_number: "274434"
                                 }
                             },
                             retries: 1
@@ -112425,7 +112425,7 @@
             function e4(e) {
                 let t = e1(e.context),
                     n = !eA || t.mute || t.deaf;
-                e.context === eE.MediaEngineContextTypes.DEFAULT && (n = n || eP || eL || eM || !K.default.didHavePermission(e_.NativePermissionTypes.AUDIO)), e.setSelfMute(n), e.setSelfDeaf(t.deaf)
+                e.context === eE.MediaEngineContextTypes.DEFAULT && (n = n || eP || eL || eM || !K.default.didHavePermission(e_.NativePermissionTypes.AUDIO)), e.setSelfMute(n), e.setSelfDeaf(t.deaf), e.context === eE.MediaEngineContextTypes.DEFAULT && e.setNativeMute(n)
             }
 
             function e6() {
@@ -124738,7 +124738,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "865dbf6e1bdc5c76b0ce660bce20328996d3a20e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "92063547d2883400baf8047a3e3946dd9fa4ee78"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134063,7 +134063,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274388"
+                                build_number: "274434"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -142982,7 +142982,7 @@
                 BaseConnectionEvent: function() {
                     return i
                 }
-            }), (s = i || (i = {})).Destroy = "destroy", s.LocalVideoDisabled = "local-video-disabled", s.ActiveSinksChange = "active-sinks-change", s.ExperimentFlag = "experiment-flag", s.ConnectionStateChange = "connectionstatechange", s.Error = "error", s.Connected = "connected", s.VideoHookStart = "videohook-start", s.VideoHookStop = "videohook-stop", s.VideoHookInitialize = "videohook-initialize", s.ScreenshareFinish = "screenshare-finish", s.VideoState = "video-state", s.SoundshareTrace = "soundsharetrace", s.SoundshareSpeaking = "soundsharespeaking", s.SoundshareAttached = "soundshareattached", s.SoundshareFailed = "soundsharefailed", s.Speaking = "speaking", s.SpeakingWhileMuted = "speakingwhilemuted", s.Mute = "mute", s.MuteFromNative = "mute-from-native", s.LocalMute = "local-mute", s.NoiseLevel = "noiselevel", s.Video = "video", s.Ping = "ping", s.PingTimeout = "pingtimeout", s.Silence = "silence", s.DesktopSourceEnd = "desktopsourceend", s.OutboundLossRate = "outboundlossrate", s.NoiseCancellationError = "noisecancellererror", s.VoiceActivityDetectorError = "voiceactivitydetectorerror", s.InteractionRequired = "interactionrequired", s.AudioPermission = "audio-permission", s.VideoPermission = "video-permission", s.Stats = "stats", s.FirstFrame = "first-frame", s.VideoEncoderFallback = "video-encoder-fallback", s.RemoteStreamsReady = "remote-streams-ready"
+            }), (s = i || (i = {})).Destroy = "destroy", s.LocalVideoDisabled = "local-video-disabled", s.ActiveSinksChange = "active-sinks-change", s.ExperimentFlag = "experiment-flag", s.ConnectionStateChange = "connectionstatechange", s.Error = "error", s.Connected = "connected", s.VideoHookStart = "videohook-start", s.VideoHookStop = "videohook-stop", s.VideoHookInitialize = "videohook-initialize", s.ScreenshareFinish = "screenshare-finish", s.VideoState = "video-state", s.SoundshareTrace = "soundsharetrace", s.SoundshareSpeaking = "soundsharespeaking", s.SoundshareAttached = "soundshareattached", s.SoundshareFailed = "soundsharefailed", s.Speaking = "speaking", s.SpeakingWhileMuted = "speakingwhilemuted", s.Mute = "mute", s.NativeMuteChanged = "native-mute-changed", s.LocalMute = "local-mute", s.NoiseLevel = "noiselevel", s.Video = "video", s.Ping = "ping", s.PingTimeout = "pingtimeout", s.Silence = "silence", s.DesktopSourceEnd = "desktopsourceend", s.OutboundLossRate = "outboundlossrate", s.NoiseCancellationError = "noisecancellererror", s.VoiceActivityDetectorError = "voiceactivitydetectorerror", s.InteractionRequired = "interactionrequired", s.AudioPermission = "audio-permission", s.VideoPermission = "video-permission", s.Stats = "stats", s.FirstFrame = "first-frame", s.VideoEncoderFallback = "video-encoder-fallback", s.RemoteStreamsReady = "remote-streams-ready"
         },
         571877: function(e, t, n) {
             "use strict";
@@ -143785,7 +143785,7 @@
                                 }
                             })], this.logger.info("Video codecs: ".concat(this.codecs.map(e => e.name))), t.getEncryptionModes(i => {
                                 var s, r, u, d, f, _, h, E, g, m;
-                                this.logger.info("Encryption modes: ".concat(i)), t.setTransportOptions(this.getConnectionTransportOptions()), t.setSelfMute(this.selfMute || this.context === p.MediaEngineContextTypes.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null === (s = t.setOnSetSelfMuteCallback) || void 0 === s || s.call(t, this.handleSelfMuteNative), null === (r = t.setOnSpeakingWhileMutedCallback) || void 0 === r || r.call(t, this.handleSpeakingWhileMuted), null === (u = t.setPingInterval) || void 0 === u || u.call(t, p.PING_INTERVAL), t.setPingCallback(this.handlePing), null === (d = t.setPingTimeoutCallback) || void 0 === d || d.call(t, this.handlePingTimeout), null === (f = t.setOnVideoEncoderFallbackCallback) || void 0 === f || f.call(t, this.handleVideoEncoderFallback), n.setTransportOptions({
+                                this.logger.info("Encryption modes: ".concat(i)), t.setTransportOptions(this.getConnectionTransportOptions()), t.setSelfMute(this.selfMute || this.context === p.MediaEngineContextTypes.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null === (s = t.setOnNativeMuteChangedCallback) || void 0 === s || s.call(t, this.handleNativeMuteChanged), null === (r = t.setOnSpeakingWhileMutedCallback) || void 0 === r || r.call(t, this.handleSpeakingWhileMuted), null === (u = t.setPingInterval) || void 0 === u || u.call(t, p.PING_INTERVAL), t.setPingCallback(this.handlePing), null === (d = t.setPingTimeoutCallback) || void 0 === d || d.call(t, this.handlePingTimeout), null === (f = t.setOnVideoEncoderFallbackCallback) || void 0 === f || f.call(t, this.handleVideoEncoderFallback), n.setTransportOptions({
                                     builtInEchoCancellation: !0,
                                     echoCancellation: this.echoCancellation,
                                     noiseSuppression: this.noiseSuppression,
@@ -143871,6 +143871,12 @@
                 }
                 setSelfDeaf(e) {
                     this.selfDeaf = e, this.conn.setSelfDeafen(e)
+                }
+                setNativeMute(e) {
+                    if (this.context === p.MediaEngineContextTypes.DEFAULT) {
+                        var t, n;
+                        null === (t = (n = (0, h.getVoiceEngine)()).setNativeMuteState) || void 0 === t || t.call(n, e)
+                    }
                 }
                 setSoundshareSource(e, t) {
                     if (this.soundshareId === e && this.soundshareSentSpeakingEvent || this.context !== p.MediaEngineContextTypes.STREAM) return;
@@ -144423,8 +144429,8 @@
                     super(e, t), this.mediaEngineConnectionId = "Native-".concat(S++), this.selfMute = !1, this.selfVideo = !1, this.forceAudioNormal = !1, this.forceAudioPriority = !1, this.codecs = [], this.videoEncoderFallbackPending = !1, this.desktopDegradationPreference = (0, h.getVoiceEngine)().DegradationPreference.MAINTAIN_FRAMERATE, this.sourceDesktopDegradationPreference = (0, h.getVoiceEngine)().DegradationPreference.DISABLED, this.videoDegradationPreference = (0, h.getVoiceEngine)().DegradationPreference.BALANCED, this.localPans = {}, this.remoteAudioSSRCs = {}, this.remoteVideoSSRCs = {}, this.inputMode = p.InputModes.VOICE_ACTIVITY, this.vadThreshold = -40, this.vadAutoThreshold = !0, this.vadUseKrisp = !0, this.vadLeading = 5, this.vadTrailing = 25, this.pttReleaseDelay = 20, this.soundshareActive = !1, this.soundshareId = null, this.soundshareSentSpeakingEvent = !1, this.echoCancellation = !0, this.noiseSuppression = !0, this.automaticGainControl = !0, this.noiseCancellation = !1, this.experimentalEncoders = !1, this.hardwareH264 = !0, this.attenuationFactor = .5, this.attenuateWhileSpeakingSelf = !1, this.attenuateWhileSpeakingOthers = !0, this.qos = !0, this.minimumJitterBufferLevel = 0, this.postponeDecodeLevel = 100, this.reconnectInterval = 6e4, this.keyframeInterval = 0, this.clipsKeyFrameInterval = 0, this.videoQualityMeasurement = "", this.videoEncoderExperiments = "", this.numFastUdpReconnects = 0, this.handleSpeakingNative = (e, t) => {
                         let n = p.SpeakingFlags.NONE;
                         n = "boolean" == typeof t ? t ? p.SpeakingFlags.VOICE : p.SpeakingFlags.NONE : t, this.handleSpeakingFlags(e, n)
-                    }, this.handleSelfMuteNative = e => {
-                        this.emit(c.BaseConnectionEvent.MuteFromNative, e)
+                    }, this.handleNativeMuteChanged = e => {
+                        this.emit(c.BaseConnectionEvent.NativeMuteChanged, e)
                     }, this.handleSpeakingFlags = (e, t) => {
                         this.localSpeakingFlags[e] = t;
                         let n = e === this.ids.userId ? this.audioSSRC : this.remoteAudioSSRCs[e];
@@ -146489,6 +146495,7 @@
                 setSelfDeaf(e) {
                     for (let t of (this.selfDeaf = e, Object.keys(this.outputs))) this.outputs[t].mute = e || this.localMutes[t]
                 }
+                setNativeMute(e) {}
                 setLocalMute(e, t) {
                     this.localMutes[e] = t, null != this.outputs[e] && (this.outputs[e].mute = this.selfDeaf || t), this.emit(u.BaseConnectionEvent.LocalMute, e, t)
                 }
@@ -151665,4 +151672,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.154a610f3e4594284d8d.js.map
+//# sourceMappingURL=45109.bcfbdf4309159260b240.js.map
