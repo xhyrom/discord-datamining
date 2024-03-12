@@ -344,9 +344,9 @@
               "max_count": null
             },
             {
-              "type": "guild_age_range_days",
-              "min_age": 386483746,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 386483746,
+              "target": 10000
             }
           ]
         },
@@ -406,9 +406,9 @@
               ]
             },
             {
-              "type": "guild_age_range_days",
-              "min_age": 386483746,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 386483746,
+              "target": 10000
             }
           ]
         },
@@ -457,9 +457,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 386483746,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 386483746,
+              "target": 10000
             }
           ]
         },
@@ -663,9 +663,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 1405831955,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1405831955,
+              "target": 10000
             }
           ]
         },
@@ -1434,9 +1434,9 @@
               ]
             },
             {
-              "type": "guild_age_range_days",
-              "min_age": 848173753,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 848173753,
+              "target": 10000
             }
           ]
         },
@@ -1780,9 +1780,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 770139301,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 770139301,
+              "target": 10000
             }
           ]
         },
@@ -2176,9 +2176,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 1055563741,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1055563741,
+              "target": 10000
             }
           ]
         },
@@ -3547,9 +3547,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 987884927,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 987884927,
+              "target": 10000
             }
           ]
         },
@@ -3778,9 +3778,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 2507971540,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2507971540,
+              "target": 10000
             }
           ]
         },
@@ -4541,9 +4541,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 748249793,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 748249793,
+              "target": 10000
             }
           ]
         },
@@ -5014,9 +5014,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 280214844,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 280214844,
+              "target": 10000
             }
           ]
         },
@@ -6066,9 +6066,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 695300504,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 695300504,
+              "target": 10000
             }
           ]
         },
@@ -6393,9 +6393,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 1487316075,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1487316075,
+              "target": 10000
             }
           ]
         },
@@ -6888,9 +6888,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 2225390567,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2225390567,
+              "target": 10000
             }
           ]
         },
@@ -9984,9 +9984,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 3032307853,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3032307853,
+              "target": 10000
             }
           ]
         },
@@ -10656,9 +10656,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 1489979462,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1489979462,
+              "target": 10000
             }
           ]
         },
@@ -11355,9 +11355,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 1689901851,
-              "max_age": 1000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1689901851,
+              "target": 1000
             }
           ]
         },
@@ -11636,9 +11636,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 1979035979,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1979035979,
+              "target": 10000
             }
           ]
         },
@@ -11863,9 +11863,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 2104400771,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2104400771,
+              "target": 10000
             }
           ]
         },
@@ -12056,9 +12056,9 @@
               ]
             },
             {
-              "type": "guild_age_range_days",
-              "min_age": 2544556038,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2544556038,
+              "target": 10000
             }
           ]
         },
@@ -12095,9 +12095,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 2544556038,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2544556038,
+              "target": 10000
             }
           ]
         },
@@ -12179,9 +12179,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 2701598838,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 2701598838,
+              "target": 10000
             }
           ]
         },
@@ -12423,9 +12423,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 3041932109,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3041932109,
+              "target": 10000
             }
           ]
         },
@@ -12620,9 +12620,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 3143066071,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3143066071,
+              "target": 10000
             }
           ]
         },
@@ -12942,9 +12942,9 @@
               ]
             },
             {
-              "type": "guild_age_range_days",
-              "min_age": 3579083301,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3579083301,
+              "target": 10000
             }
           ]
         },
@@ -13189,9 +13189,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 3738976194,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3738976194,
+              "target": 10000
             }
           ]
         },
@@ -13308,9 +13308,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 3884904940,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3884904940,
+              "target": 10000
             }
           ]
         },
@@ -13523,9 +13523,9 @@
           },
           "filters": [
             {
-              "type": "guild_age_range_days",
-              "min_age": 4195647747,
-              "max_age": 10000
+              "type": "guild_in_range_by_hash",
+              "hash_key": 4195647747,
+              "target": 10000
             }
           ]
         },

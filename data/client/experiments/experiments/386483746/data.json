@@ -46,9 +46,9 @@
             "max_count": null
           },
           {
-            "type": "guild_age_range_days",
-            "min_age": 386483746,
-            "max_age": 10000
+            "type": "guild_in_range_by_hash",
+            "hash_key": 386483746,
+            "target": 10000
           }
         ]
       },
@@ -108,9 +108,9 @@
             ]
           },
           {
-            "type": "guild_age_range_days",
-            "min_age": 386483746,
-            "max_age": 10000
+            "type": "guild_in_range_by_hash",
+            "hash_key": 386483746,
+            "target": 10000
           }
         ]
       },
@@ -159,9 +159,9 @@
         },
         "filters": [
           {
-            "type": "guild_age_range_days",
-            "min_age": 386483746,
-            "max_age": 10000
+            "type": "guild_in_range_by_hash",
+            "hash_key": 386483746,
+            "target": 10000
           }
         ]
       },
