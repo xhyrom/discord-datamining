@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87403,8 +87403,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710281086163",
-                                    build_number: "274532"
+                                    built_at: "1710281783124",
+                                    build_number: "274537"
                                 }
                             },
                             retries: 1
@@ -97608,7 +97608,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return U
+                    return b
                 }
             }), n("222007"), n("424973");
             var i = n("102053"),
@@ -97619,210 +97619,210 @@
                 l = n("212084"),
                 u = n("867805"),
                 d = n("267567"),
-                c = n("813006"),
-                f = n("778689"),
-                _ = n("305961"),
-                h = n("718517"),
-                E = n("161585"),
-                g = n("24373");
-            let m = 2,
+                c = n("778689"),
+                f = n("305961"),
+                _ = n("718517"),
+                h = n("161585"),
+                E = n("24373");
+            let g = 2,
+                m = new Map,
                 p = new Map,
-                S = new Map,
-                v = null,
-                T = [],
-                I = null,
-                C = !1,
-                A = new Map,
-                y = (e, t) => {
-                    A = new Map(A.set(e, t))
+                S = null,
+                v = [],
+                T = null,
+                I = !1,
+                C = new Map,
+                A = (e, t) => {
+                    C = new Map(C.set(e, t))
                 },
-                N = h.default.Millis.HOUR,
-                R = async () => {
-                    if (0 !== m) return;
+                y = _.default.Millis.HOUR,
+                N = async () => {
+                    if (0 !== g) return;
                     let e = a.default.database();
                     if (null == e) return;
-                    m = 2;
+                    g = 2;
                     let t = await (0, o.tryLoadOrResetCacheGatewayAsync)("StickerStore.loadSavedGuildStickers", () => i.default.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => l.default.getAsync(e)));
                     null != t && r.default.dispatch({
                         type: "CACHED_STICKERS_LOADED",
                         stickers: t
                     })
-                }, O = function(e) {
+                }, R = function(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
-                    S.set(e.id, e), t && D(e, n)
-                }, D = function(e) {
+                    p.set(e.id, e), t && O(e, n)
+                }, O = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-                    if (null == v) return;
+                    if (null == S) return;
                     let {
                         tags: n
                     } = e, i = {
-                        type: E.StickerMetadataTypes.STICKER_NAME,
+                        type: h.StickerMetadataTypes.STICKER_NAME,
                         value: e.name.trim().toLocaleLowerCase()
                     };
-                    if ((0, g.isStandardSticker)(e)) {
-                        let t = T.find(t => t.id === e.pack_id),
+                    if ((0, E.isStandardSticker)(e)) {
+                        let t = v.find(t => t.id === e.pack_id),
                             s = [i, ...(null != n ? n : "").split(",").map(e => ({
-                                type: E.StickerMetadataTypes.TAG,
+                                type: h.StickerMetadataTypes.TAG,
                                 value: e.trim().toLocaleLowerCase()
                             }))];
                         null != t && s.push({
-                            type: E.StickerMetadataTypes.PACK_NAME,
+                            type: h.StickerMetadataTypes.PACK_NAME,
                             value: t.name
-                        }), v.set(e.id, s)
-                    } else if ((0, g.isGuildSticker)(e) && null != n) {
+                        }), S.set(e.id, s)
+                    } else if ((0, E.isGuildSticker)(e) && null != n) {
                         let s = u.default.getByName(n),
                             r = {
-                                type: E.StickerMetadataTypes.TAG,
+                                type: h.StickerMetadataTypes.TAG,
                                 value: n.trim().toLocaleLowerCase()
                             },
                             a = [i, r];
                         if (null != t) {
-                            let e = (t instanceof(0, c.default) ? t.name : t.properties.name).trim().toLocaleLowerCase();
+                            let e = t.name.trim().toLocaleLowerCase();
                             null != e && "" !== e && a.push({
-                                type: E.StickerMetadataTypes.GUILD_NAME,
+                                type: h.StickerMetadataTypes.GUILD_NAME,
                                 value: e
                             })
                         }
                         if (null == s) {
-                            v.set(e.id, a);
+                            S.set(e.id, a);
                             return
                         }
                         a.push({
-                            type: E.StickerMetadataTypes.CORRELATED_EMOJI,
+                            type: h.StickerMetadataTypes.CORRELATED_EMOJI,
                             value: s.surrogates
                         }), s.forEachDiversity(e => a.push({
-                            type: E.StickerMetadataTypes.CORRELATED_EMOJI,
+                            type: h.StickerMetadataTypes.CORRELATED_EMOJI,
                             value: e.surrogates
-                        })), v.set(e.id, a)
+                        })), S.set(e.id, a)
                     }
-                }, P = (e, t, n) => {
-                    p.set(e.id, e);
-                    let i = [...T];
+                }, D = (e, t, n) => {
+                    m.set(e.id, e);
+                    let i = [...v];
                     if (t) {
-                        let t = i.findIndex(t => t.id === e.id); - 1 !== t ? i[t] = e : i.push(e), T = i
-                    }(t || n) && e.stickers.forEach(e => O(e))
-                }, L = () => {
-                    A.forEach((e, t) => {
-                        let n = _.default.getGuild(t);
-                        null != n && e.forEach(e => D(e, n))
-                    }), T.forEach(e => {
-                        e.stickers.forEach(e => D(e))
+                        let t = i.findIndex(t => t.id === e.id); - 1 !== t ? i[t] = e : i.push(e), v = i
+                    }(t || n) && e.stickers.forEach(e => R(e))
+                }, P = () => {
+                    C.forEach((e, t) => {
+                        let n = f.default.getGuild(t);
+                        null != n && e.forEach(e => O(e, n))
+                    }), v.forEach(e => {
+                        e.stickers.forEach(e => O(e))
                     })
                 };
 
-            function M(e) {
-                null != e.stickers && (e.stickers.forEach(t => O(t, !0, e)), y(e.id, e.stickers))
+            function L(e) {
+                let t = f.default.getGuild(e.id);
+                null != t && null != e.stickers && (e.stickers.forEach(e => R(e, !0, t)), A(t.id, e.stickers))
             }
-            class b extends s.default.Store {
+            class M extends s.default.Store {
                 initialize() {
-                    this.waitFor(a.default, f.default, _.default)
+                    this.waitFor(a.default, c.default, f.default)
                 }
                 get isLoaded() {
-                    return 0 !== m
+                    return 0 !== g
                 }
                 get loadState() {
-                    return m
+                    return g
                 }
                 get stickerMetadata() {
-                    return R(), null == v && (v = new Map, L()), v
+                    return N(), null == S && (S = new Map, P()), S
                 }
                 get hasLoadedStickerPacks() {
-                    return null != I && I + N > Date.now()
+                    return null != T && T + y > Date.now()
                 }
                 get isFetchingStickerPacks() {
-                    return C
+                    return I
                 }
                 getStickerById(e) {
-                    return !S.has(e) && R(), S.get(e)
+                    return !p.has(e) && N(), p.get(e)
                 }
                 getStickerPack(e) {
-                    return p.get(e)
+                    return m.get(e)
                 }
                 getPremiumPacks() {
-                    return T
+                    return v
                 }
                 isPremiumPack(e) {
-                    return T.some(t => t.id === e)
+                    return v.some(t => t.id === e)
                 }
                 getRawStickersByGuild() {
-                    return A
+                    return C
                 }
                 getAllStickersIterator() {
-                    return R(), S.values()
+                    return N(), p.values()
                 }
                 getAllGuildStickers() {
-                    return R(), A
+                    return N(), C
                 }
                 getStickersByGuildId(e) {
-                    return R(), A.get(e)
+                    return N(), C.get(e)
                 }
             }
-            b.displayName = "StickersStore";
-            var U = new b(r.default, {
+            M.displayName = "StickersStore";
+            var b = new M(r.default, {
                 BACKGROUND_SYNC: () => {
-                    v = null, S = new Map, A = new Map, m = 0
+                    S = null, p = new Map, C = new Map, g = 0
                 },
                 CONNECTION_OPEN: e => {
                     let {
                         guilds: t
                     } = e;
-                    v = null, S = new Map, A = new Map, t.forEach(M), m = t.every(e => null != e.stickers) ? 1 : 0
+                    S = null, p = new Map, C = new Map, t.forEach(L), g = t.every(e => null != e.stickers) ? 1 : 0
                 },
                 GUILD_CREATE: function(e) {
                     let {
                         guild: t
                     } = e;
-                    !d.default.isLurking(t.id) && (M(t), 1 === m && null == t.stickers && null != t.stickerUpdates && (m = 0))
+                    !d.default.isLurking(t.id) && (L(t), 1 === g && null == t.stickers && null != t.stickerUpdates && (g = 0))
                 },
                 GUILD_DELETE: function(e) {
                     var t;
                     let {
                         guild: n
-                    } = e, i = null !== (t = A.get(n.id)) && void 0 !== t ? t : [];
+                    } = e, i = null !== (t = C.get(n.id)) && void 0 !== t ? t : [];
                     i.forEach(e => {
-                        null != v && v.delete(e.id), S.delete(e.id)
-                    }), A.delete(n.id), A = new Map(A)
+                        null != S && S.delete(e.id), p.delete(e.id)
+                    }), C.delete(n.id), C = new Map(C)
                 },
                 LOGOUT: () => {
-                    m = 0, T = [], S.clear(), p.clear(), v = null, A.clear(), A = new Map(A), C = !1, I = null
+                    g = 0, v = [], p.clear(), m.clear(), S = null, C.clear(), C = new Map(C), I = !1, T = null
                 },
                 STICKER_PACKS_FETCH_START: () => {
-                    C = !0
+                    I = !0
                 },
                 STICKER_PACKS_FETCH_SUCCESS: e => {
                     let {
                         packs: t
                     } = e;
-                    t.forEach(e => P(e, !0)), I = Date.now(), C = !1
+                    t.forEach(e => D(e, !0)), T = Date.now(), I = !1
                 },
                 STICKER_PACK_FETCH_SUCCESS: e => {
                     let {
                         pack: t,
                         ingestStickers: n
                     } = e;
-                    P(t, !1, n)
+                    D(t, !1, n)
                 },
                 GUILD_STICKERS_FETCH_SUCCESS: e => {
                     let {
                         guildId: t,
                         stickers: n
                     } = e;
-                    n.forEach(e => O(e)), y(t, n)
+                    n.forEach(e => R(e)), A(t, n)
                 },
                 GUILD_STICKERS_CREATE_SUCCESS: e => {
                     var t, n;
                     let {
                         guildId: i,
                         sticker: s
-                    } = e, r = null !== (t = A.get(i)) && void 0 !== t ? t : [];
-                    y(i, [...null !== (n = r.filter(e => e.id !== s.id)) && void 0 !== n ? n : [], s]), O(s)
+                    } = e, r = null !== (t = C.get(i)) && void 0 !== t ? t : [];
+                    A(i, [...null !== (n = r.filter(e => e.id !== s.id)) && void 0 !== n ? n : [], s]), R(s)
                 },
                 STICKER_FETCH_SUCCESS: e => {
                     let {
                         sticker: t
                     } = e;
-                    O(t, !1)
+                    R(t, !1)
                 },
                 GUILD_STICKERS_UPDATE: e => {
                     var t;
@@ -97831,27 +97831,27 @@
                         stickers: i
                     } = e, s = e => {
                         let t;
-                        let n = S.get(e.id);
-                        return null != n && (0, g.isGuildSticker)(n) && (t = null != n.user ? n.user : void 0), {
+                        let n = p.get(e.id);
+                        return null != n && (0, E.isGuildSticker)(n) && (t = null != n.user ? n.user : void 0), {
                             ...e,
                             user: t
                         }
-                    }, r = null !== (t = A.get(n)) && void 0 !== t ? t : [], a = r.filter(e => null == i.find(t => t.id === e.id));
+                    }, r = null !== (t = C.get(n)) && void 0 !== t ? t : [], a = r.filter(e => null == i.find(t => t.id === e.id));
                     a.forEach(e => {
-                        S.delete(e.id), null != v && v.delete(e.id)
+                        p.delete(e.id), null != S && S.delete(e.id)
                     });
                     let o = i.map(e => s(e));
-                    o.forEach(e => O(e)), y(n, o)
+                    o.forEach(e => R(e)), A(n, o)
                 },
                 CACHED_STICKERS_LOADED: function(e) {
                     let {
                         stickers: t
                     } = e;
                     for (let [e, n] of t)
-                        if (f.default.isMember(e) && !A.has(e)) {
-                            let t = _.default.getGuild(e);
-                            for (let e of n) O(e, !0, t);
-                            y(e, n)
+                        if (c.default.isMember(e) && !C.has(e)) {
+                            let t = f.default.getGuild(e);
+                            for (let e of n) R(e, !0, t);
+                            A(e, n)
                         }
                 }
             })
@@ -110259,17 +110259,19 @@
                     i = Object.keys(m).length
                 },
                 CONNECTION_OPEN: function(e) {
-                    p = !0, m = {}, g = {}, i = 0, e.guilds.forEach(e => {
-                        i++, m[e.id] = d.fromServer(e), g[e.id] = e.roles instanceof Array ? c.sortServerRoles(e.id, e.roles) : e.roles
+                    p = !0;
+                    let t = m;
+                    m = {}, g = {}, i = 0, e.guilds.forEach(e => {
+                        i++, m[e.id] = d.fromServer(e, t[e.id]), g[e.id] = e.roles instanceof Array ? c.sortServerRoles(e.id, e.roles) : e.roles
                     });
-                    let t = !1;
-                    if (S.length !== e.geoRestrictedGuilds.length) t = !0;
+                    let n = !1;
+                    if (S.length !== e.geoRestrictedGuilds.length) n = !0;
                     else
-                        for (let n = 0; n < e.geoRestrictedGuilds.length; n++)
-                            if (!(0, o.default)(S[n], e.geoRestrictedGuilds[n])) {
-                                t = !0;
+                        for (let t = 0; t < e.geoRestrictedGuilds.length; t++)
+                            if (!(0, o.default)(S[t], e.geoRestrictedGuilds[t])) {
+                                n = !0;
                                 break
-                            } t && (S = e.geoRestrictedGuilds)
+                            } n && (S = e.geoRestrictedGuilds)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     var t;
@@ -116641,10 +116643,12 @@
                     t.lastMessageId = F.default.fromTimestamp(u(Date.now()).subtract(24, "h").valueOf())
                 }(e),
                 function(e) {
-                    let t = e.properties.latest_onboarding_question_id;
+                    let t = K.default.getGuild(e.id);
                     if (null == t) return;
-                    let n = eO.get(e.id, er.ReadStateTypes.GUILD_ONBOARDING_QUESTION);
-                    n._guildId = e.id, n.lastMessageId = t
+                    let n = null == t ? void 0 : t.latestOnboardingQuestionId;
+                    if (null == n) return;
+                    let i = eO.get(t.id, er.ReadStateTypes.GUILD_ONBOARDING_QUESTION);
+                    i._guildId = t.id, i.lastMessageId = n
                 }(e)
             }
             eO._guildReadStateSentinels = {}, eO._readStates = {}, eO._mentionChannels = new Set;
@@ -124802,7 +124806,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "b00a2f085a5c28fcd0a84642baa2ff51e142d0b6"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "e7596fb66908d8bd099db9943b9587ea2fca3bb5"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -132878,86 +132882,99 @@
             "use strict";
             n.r(t), n.d(t, {
                 fromServer: function() {
-                    return o
-                },
-                attachRoles: function() {
-                    return l
-                },
-                fromBackgroundSync: function() {
                     return u
                 },
-                fromServerUpdate: function() {
+                attachRoles: function() {
                     return d
                 },
-                fromInviteGuild: function() {
+                fromBackgroundSync: function() {
                     return c
                 },
-                toServer: function() {
+                fromServerUpdate: function() {
                     return f
                 },
-                fromSerializedGuildRecord: function() {
+                fromInviteGuild: function() {
                     return _
                 },
-                filterRoleDeletes: function() {
+                toServer: function() {
                     return h
+                },
+                fromSerializedGuildRecord: function() {
+                    return E
+                },
+                filterRoleDeletes: function() {
+                    return g
                 }
             }), n("222007");
-            var i = n("627929"),
-                s = n("813006"),
-                r = n("605136"),
-                a = n("49111");
+            var i = n("627445"),
+                s = n.n(i),
+                r = n("627929"),
+                a = n("813006"),
+                o = n("605136"),
+                l = n("49111");
 
-            function o(e, t) {
-                var n, r, o, l, u, d, c, f, _, h, E, g, m;
-                let p = {
+            function u(e, t) {
+                var n, i, o, u, d, c, f, _, h, E, g, m, p;
+                let S = null != e.joined_at ? new Date(e.joined_at) : null == t ? void 0 : t.joinedAt,
+                    v = null !== (n = e.premium_subscription_count) && void 0 !== n ? n : 0;
+                if (null == e.properties) {
+                    s(null != t, "If guild.properties is null, existingGuild must be passed in");
+                    let e = t.joinedAt instanceof Date ? t.joinedAt.getTime() : t.joinedAt,
+                        n = S instanceof Date ? S.getTime() : S;
+                    return v === t.premiumSubscriberCount && e === n ? t : t.merge({
+                        joinedAt: S,
+                        premiumSubscriberCount: v
+                    })
+                }
+                let T = {
                     id: e.id,
-                    name: null !== (n = e.properties.name) && void 0 !== n ? n : "",
+                    joinedAt: S,
+                    premiumSubscriberCount: v,
+                    name: null !== (i = e.properties.name) && void 0 !== i ? i : "",
                     description: e.properties.description,
                     icon: e.properties.icon,
                     splash: e.properties.splash,
                     banner: e.properties.banner,
                     homeHeader: e.properties.home_header,
-                    features: new Set(null !== (r = e.properties.features) && void 0 !== r ? r : []),
-                    preferredLocale: null !== (o = e.properties.preferred_locale) && void 0 !== o ? o : "en-us",
+                    features: new Set(null !== (o = e.properties.features) && void 0 !== o ? o : []),
+                    preferredLocale: null !== (u = e.properties.preferred_locale) && void 0 !== u ? u : "en-us",
                     ownerId: e.properties.owner_id,
                     application_id: e.properties.application_id,
                     afkChannelId: e.properties.afk_channel_id,
                     afkTimeout: e.properties.afk_timeout,
                     systemChannelId: e.properties.system_channel_id,
-                    joinedAt: null != e.joined_at ? new Date(e.joined_at) : null == t ? void 0 : t.joinedAt,
-                    verificationLevel: null !== (l = e.properties.verification_level) && void 0 !== l ? l : a.VerificationLevels.NONE,
-                    explicitContentFilter: null !== (u = e.properties.explicit_content_filter) && void 0 !== u ? u : a.GuildExplicitContentFilterTypes.DISABLED,
-                    defaultMessageNotifications: null !== (d = e.properties.default_message_notifications) && void 0 !== d ? d : a.UserNotificationSettings.ALL_MESSAGES,
-                    mfaLevel: null !== (c = e.properties.mfa_level) && void 0 !== c ? c : a.MFALevels.NONE,
+                    verificationLevel: null !== (d = e.properties.verification_level) && void 0 !== d ? d : l.VerificationLevels.NONE,
+                    explicitContentFilter: null !== (c = e.properties.explicit_content_filter) && void 0 !== c ? c : l.GuildExplicitContentFilterTypes.DISABLED,
+                    defaultMessageNotifications: null !== (f = e.properties.default_message_notifications) && void 0 !== f ? f : l.UserNotificationSettings.ALL_MESSAGES,
+                    mfaLevel: null !== (_ = e.properties.mfa_level) && void 0 !== _ ? _ : l.MFALevels.NONE,
                     vanityURLCode: e.properties.vanity_url_code,
-                    premiumTier: null !== (f = e.properties.premium_tier) && void 0 !== f ? f : a.BoostedGuildTiers.NONE,
-                    premiumSubscriberCount: null !== (_ = e.premium_subscription_count) && void 0 !== _ ? _ : 0,
+                    premiumTier: null !== (h = e.properties.premium_tier) && void 0 !== h ? h : l.BoostedGuildTiers.NONE,
                     premiumProgressBarEnabled: e.properties.premium_progress_bar_enabled || !1,
                     systemChannelFlags: e.properties.system_channel_flags,
                     discoverySplash: e.properties.discovery_splash,
                     rulesChannelId: e.properties.rules_channel_id,
                     safetyAlertsChannelId: e.properties.safety_alerts_channel_id,
                     publicUpdatesChannelId: e.properties.public_updates_channel_id,
-                    maxStageVideoChannelUsers: null !== (h = e.properties.max_stage_video_channel_users) && void 0 !== h ? h : -1,
-                    maxVideoChannelUsers: null !== (E = e.properties.max_video_channel_users) && void 0 !== E ? E : -1,
-                    maxMembers: null !== (g = e.properties.max_members) && void 0 !== g ? g : -1,
-                    nsfwLevel: null !== (m = e.properties.nsfw_level) && void 0 !== m ? m : a.GuildNSFWContentLevel.DEFAULT,
+                    maxStageVideoChannelUsers: null !== (E = e.properties.max_stage_video_channel_users) && void 0 !== E ? E : -1,
+                    maxVideoChannelUsers: null !== (g = e.properties.max_video_channel_users) && void 0 !== g ? g : -1,
+                    maxMembers: null !== (m = e.properties.max_members) && void 0 !== m ? m : -1,
+                    nsfwLevel: null !== (p = e.properties.nsfw_level) && void 0 !== p ? p : l.GuildNSFWContentLevel.DEFAULT,
                     hubType: e.properties.hub_type,
                     latestOnboardingQuestionId: e.properties.latest_onboarding_question_id
                 };
-                return null == t ? (0, i.dangerouslyCast)(p, s.default) : t.merge(p)
+                return null == t ? (0, r.dangerouslyCast)(T, a.default) : t.merge(T)
             }
 
-            function l(e, t) {
-                return new s.GuildRecordWithRoles({
+            function d(e, t) {
+                return new a.GuildRecordWithRoles({
                     ...e,
                     roles: t
                 })
             }
 
-            function u(e, t) {
-                var n, i, s, r, o, l, u, d, c, _, h, E, g;
-                let m = null !== (n = e.properties) && void 0 !== n ? n : f(t),
+            function c(e, t) {
+                var n, i, s, r, a, o, u, d, c, f, _, E, g;
+                let m = null !== (n = e.properties) && void 0 !== n ? n : h(t),
                     p = {
                         id: e.id,
                         name: null !== (i = m.name) && void 0 !== i ? i : "",
@@ -132973,29 +132990,29 @@
                         afkChannelId: m.afk_channel_id,
                         afkTimeout: m.afk_timeout,
                         systemChannelId: m.system_channel_id,
-                        verificationLevel: null !== (o = m.verification_level) && void 0 !== o ? o : a.VerificationLevels.NONE,
-                        explicitContentFilter: null !== (l = m.explicit_content_filter) && void 0 !== l ? l : a.GuildExplicitContentFilterTypes.DISABLED,
-                        defaultMessageNotifications: null !== (u = m.default_message_notifications) && void 0 !== u ? u : a.UserNotificationSettings.ALL_MESSAGES,
-                        mfaLevel: null !== (d = m.mfa_level) && void 0 !== d ? d : a.MFALevels.NONE,
+                        verificationLevel: null !== (a = m.verification_level) && void 0 !== a ? a : l.VerificationLevels.NONE,
+                        explicitContentFilter: null !== (o = m.explicit_content_filter) && void 0 !== o ? o : l.GuildExplicitContentFilterTypes.DISABLED,
+                        defaultMessageNotifications: null !== (u = m.default_message_notifications) && void 0 !== u ? u : l.UserNotificationSettings.ALL_MESSAGES,
+                        mfaLevel: null !== (d = m.mfa_level) && void 0 !== d ? d : l.MFALevels.NONE,
                         vanityURLCode: m.vanity_url_code,
-                        premiumTier: null !== (c = m.premium_tier) && void 0 !== c ? c : a.BoostedGuildTiers.NONE,
+                        premiumTier: null !== (c = m.premium_tier) && void 0 !== c ? c : l.BoostedGuildTiers.NONE,
                         premiumProgressBarEnabled: m.premium_progress_bar_enabled || !1,
                         systemChannelFlags: m.system_channel_flags,
                         discoverySplash: m.discovery_splash,
                         rulesChannelId: m.rules_channel_id,
                         safetyAlertsChannelId: m.safety_alerts_channel_id,
                         publicUpdatesChannelId: m.public_updates_channel_id,
-                        maxStageVideoChannelUsers: null !== (_ = m.max_stage_video_channel_users) && void 0 !== _ ? _ : -1,
-                        maxVideoChannelUsers: null !== (h = m.max_video_channel_users) && void 0 !== h ? h : -1,
+                        maxStageVideoChannelUsers: null !== (f = m.max_stage_video_channel_users) && void 0 !== f ? f : -1,
+                        maxVideoChannelUsers: null !== (_ = m.max_video_channel_users) && void 0 !== _ ? _ : -1,
                         maxMembers: null !== (E = m.max_members) && void 0 !== E ? E : -1,
-                        nsfwLevel: null !== (g = m.nsfw_level) && void 0 !== g ? g : a.GuildNSFWContentLevel.DEFAULT,
+                        nsfwLevel: null !== (g = m.nsfw_level) && void 0 !== g ? g : l.GuildNSFWContentLevel.DEFAULT,
                         hubType: m.hub_type,
                         latestOnboardingQuestionId: m.latest_onboarding_question_id
                     };
                 return t.merge(p)
             }
 
-            function d(e, t) {
+            function f(e, t) {
                 let n = {
                     id: e.id,
                     name: e.name,
@@ -133008,7 +133025,7 @@
                     preferredLocale: e.preferred_locale,
                     ownerId: e.owner_id,
                     application_id: e.application_id,
-                    roles: (0, r.sortServerRoles)(e.id, e.roles),
+                    roles: (0, o.sortServerRoles)(e.id, e.roles),
                     afkChannelId: e.afk_channel_id,
                     afkTimeout: e.afk_timeout,
                     systemChannelId: e.system_channel_id,
@@ -133033,10 +133050,10 @@
                     hubType: e.hub_type,
                     latestOnboardingQuestionId: e.latest_onboarding_question_id
                 };
-                return null == t ? new s.default(n) : t.merge(n)
+                return null == t ? new a.default(n) : t.merge(n)
             }
 
-            function c(e) {
+            function _(e) {
                 let t = {
                     id: e.id,
                     name: e.name,
@@ -133051,10 +133068,10 @@
                     nsfwLevel: e.nsfw_level,
                     memberCount: e.approximate_member_count
                 };
-                return new s.default(t)
+                return new a.default(t)
             }
 
-            function f(e) {
+            function h(e) {
                 return {
                     id: e.id,
                     name: e.name,
@@ -133092,21 +133109,21 @@
                 }
             }
 
-            function _(e) {
+            function E(e) {
                 var t;
-                for (let n in null != e.joinedAt && (e.joinedAt = new Date(e.joinedAt)), e.features = new Set(null !== (t = e.features) && void 0 !== t ? t : []), e.roles)(0, r.fromSerializedGuildRole)(e.roles[n]);
-                return (0, i.dangerouslyCast)(e, s.default)
+                for (let n in null != e.joinedAt && (e.joinedAt = new Date(e.joinedAt)), e.features = new Set(null !== (t = e.features) && void 0 !== t ? t : []), e.roles)(0, o.fromSerializedGuildRole)(e.roles[n]);
+                return (0, r.dangerouslyCast)(e, a.default)
             }
 
-            function h(e, t, n, i) {
+            function g(e, t, n, i) {
                 let s = !1;
                 if (null != i)
                     for (let e of i) delete t[e], s = !0;
                 if (null != n && n.length > 0) {
-                    for (let e of n) t[e.id] = (0, r.fromServerRole)(e);
+                    for (let e of n) t[e.id] = (0, o.fromServerRole)(e);
                     s = !0
                 }
-                return s ? (0, r.sortClientRoles)(e, Object.values(t)) : t
+                return s ? (0, o.sortClientRoles)(e, Object.values(t)) : t
             }
         },
         605136: function(e, t, n) {
@@ -134127,7 +134144,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274532"
+                                build_number: "274537"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -136953,7 +136970,7 @@
                     member_count: e.member_count,
                     members: e.members,
                     premium_subscription_count: e.premium_subscription_count,
-                    properties: null !== (u = e.properties) && void 0 !== u ? u : _.properties,
+                    properties: null !== (u = e.properties) && void 0 !== u ? u : null,
                     roles: S.filterRoleDeletes(e.id, _.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
                     stage_instances: e.stage_instances,
                     stickers: null == _.stickers ? null : U(_.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
@@ -151736,4 +151753,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.f205ad4ccbb65c137f9e.js.map
+//# sourceMappingURL=45109.39c39c404b3d27dd4d2f.js.map
