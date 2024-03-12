@@ -37,30 +37,30 @@
             "use strict";
             t.r(n), t.d(n, {
                 fetchGuildHomeSettings: function() {
-                    return C
-                },
-                fetchNewMemberActions: function() {
                     return p
                 },
-                selectHomeResourceChannel: function() {
-                    return T
-                },
-                selectNewMemberActionChannel: function() {
-                    return N
-                },
-                completeNewMemberAction: function() {
+                fetchNewMemberActions: function() {
                     return g
                 },
-                getBlockForChannelDeletion: function() {
+                selectHomeResourceChannel: function() {
+                    return C
+                },
+                selectNewMemberActionChannel: function() {
+                    return T
+                },
+                completeNewMemberAction: function() {
                     return v
+                },
+                getBlockForChannelDeletion: function() {
+                    return N
                 }
             }), t("222007"), t("808653");
             var l = t("872717"),
                 i = t("913144"),
                 r = t("819689"),
                 o = t("115718"),
-                u = t("38654"),
-                a = t("144491"),
+                a = t("38654"),
+                u = t("144491"),
                 d = t("42203"),
                 c = t("599110"),
                 s = t("299039"),
@@ -69,7 +69,7 @@
                 f = t("675305"),
                 h = t("290886"),
                 m = t("49111");
-            let C = async e => {
+            let p = async e => {
                 i.default.dispatch({
                     type: "GUILD_HOME_SETTINGS_FETCH_START",
                     guildId: e
@@ -91,8 +91,8 @@
                         guildId: e
                     })
                 }
-            }, p = async e => {
-                if (!u.default.isFullServerPreview(e)) {
+            }, g = async e => {
+                if (!a.default.isFullServerPreview(e)) {
                     i.default.dispatch({
                         type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",
                         guildId: e
@@ -115,7 +115,7 @@
                         })
                     }
                 }
-            }, T = function(e, n) {
+            }, C = function(e, n) {
                 let t = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                 if (i.default.dispatch({
                         type: "SELECT_HOME_RESOURCE_CHANNEL",
@@ -124,18 +124,18 @@
                     }), null == n) return;
                 let l = d.default.getChannel(n),
                     _ = E.default.getResourceForChannel(e, n);
-                null != e && !u.default.isFullServerPreview(e) && null != l && null != _ && c.default.track(m.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
+                null != e && !a.default.isFullServerPreview(e) && null != l && null != _ && c.default.track(m.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
                     guild_id: e,
                     channel_id: l.id,
                     server_guide_channel_type: "resource",
                     channel_action_type: -1
-                }), t && (0, a.transitionToChannel)(n), r.default.jumpToMessage({
+                }), t && (0, u.transitionToChannel)(n), r.default.jumpToMessage({
                     channelId: n,
                     messageId: s.default.castChannelIdAsMessageId(n),
                     flash: !1,
                     jumpType: o.JumpTypes.INSTANT
                 })
-            }, N = (e, n) => {
+            }, T = (e, n) => {
                 i.default.dispatch({
                     type: "SELECT_NEW_MEMBER_ACTION_CHANNEL",
                     guildId: e,
@@ -143,24 +143,24 @@
                 });
                 let t = d.default.getChannel(n),
                     l = E.default.getActionForChannel(e, n);
-                null != e && !u.default.isFullServerPreview(e) && null != t && null != l && c.default.track(m.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
+                null != e && !a.default.isFullServerPreview(e) && null != t && null != l && c.default.track(m.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
                     guild_id: e,
                     channel_id: t.id,
                     server_guide_channel_type: "member action",
                     channel_action_type: l.actionType
-                }), (0, a.transitionToChannel)(n)
-            }, g = (e, n) => {
+                }), (0, u.transitionToChannel)(n)
+            }, v = (e, n) => {
                 if (i.default.dispatch({
                         type: "COMPLETE_NEW_MEMBER_ACTION",
                         guildId: e,
                         channelId: n
-                    }), u.default.isFullServerPreview(e)) return;
+                    }), a.default.isFullServerPreview(e)) return;
                 let t = d.default.getChannel(n),
                     r = E.default.getActionForChannel(e, n);
                 if (null != t && null != r) {
-                    var o, a;
+                    var o, u;
                     let n = s.default.keys(null !== (o = f.default.getCompletedActions(e)) && void 0 !== o ? o : {}),
-                        l = null !== (a = E.default.getNewMemberActions(e)) && void 0 !== a ? a : [];
+                        l = null !== (u = E.default.getNewMemberActions(e)) && void 0 !== u ? u : [];
                     c.default.track(m.AnalyticEvents.SERVER_GUIDE_ACTION_COMPLETED, {
                         guild_id: t.guild_id,
                         channel_id: t.id,
@@ -172,12 +172,12 @@
                     url: m.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, n)
                 })
             };
-            async function v(e, n) {
+            async function N(e, n) {
                 if (null == e) return !1;
                 let t = (0, h.canSeeOnboardingHome)(e);
                 if (!t) return !1;
                 let l = E.default.getSettings(e);
-                return l === E.NO_SETTINGS && (await C(e), l = E.default.getSettings(e)), l !== E.NO_SETTINGS && null != l && (null != l.newMemberActions && null != l.newMemberActions.find(e => e.channelId === n) ? "todo" : null != l.resourceChannels && null != l.resourceChannels.find(e => e.channelId === n) && "resource")
+                return l === E.NO_SETTINGS && (await p(e), l = E.default.getSettings(e)), l !== E.NO_SETTINGS && null != l && (null != l.newMemberActions && null != l.newMemberActions.find(e => e.channelId === n) ? "todo" : null != l.resourceChannels && null != l.resourceChannels.find(e => e.channelId === n) && "resource")
             }
         },
         129092: function(e, n, t) {
@@ -208,25 +208,25 @@
                     return m
                 },
                 RESOURCE_CHANNEL_MAX: function() {
-                    return C
+                    return p
                 },
                 NewMemberActionTypes: function() {
                     return i
                 },
                 newMemberActionFromServer: function() {
-                    return p
-                },
-                resourceChannelFromServer: function() {
-                    return T
-                },
-                settingsFromServer: function() {
-                    return N
-                },
-                settingsToServer: function() {
                     return g
                 },
-                actionsFromServer: function() {
+                resourceChannelFromServer: function() {
+                    return C
+                },
+                settingsFromServer: function() {
+                    return T
+                },
+                settingsToServer: function() {
                     return v
+                },
+                actionsFromServer: function() {
+                    return N
                 },
                 isWelcomeMessageEmpty: function() {
                     return I
@@ -241,13 +241,13 @@
                     return M
                 },
                 isChannelValidForNewMemberAction: function() {
-                    return L
+                    return y
                 }
             });
             var l, i, r = t("42203"),
                 o = t("449008"),
-                u = t("991170"),
-                a = t("49111");
+                a = t("991170"),
+                u = t("49111");
             let d = 7,
                 c = 300,
                 s = 7,
@@ -256,9 +256,9 @@
                 f = 1,
                 h = 30,
                 m = 200,
-                C = 7;
+                p = 7;
 
-            function p(e) {
+            function g(e) {
                 var n;
                 return {
                     channelId: e.channel_id,
@@ -274,7 +274,7 @@
                 }
             }
 
-            function T(e) {
+            function C(e) {
                 var n, t;
                 return {
                     channelId: e.channel_id,
@@ -289,38 +289,38 @@
                 }
             }
 
-            function N(e) {
+            function T(e) {
                 if (null == e) return null;
                 let {
                     welcome_message: n,
                     new_member_actions: t,
                     resource_channels: l,
                     enabled: i
-                } = e, u = {
+                } = e, a = {
                     authorIds: n.author_ids,
                     message: n.message
-                }, a = t.filter(e => (0, o.isNotNullish)(r.default.getChannel(e.channel_id))).map(p), d = l.filter(e => (0, o.isNotNullish)(r.default.getChannel(e.channel_id))).map(T);
+                }, u = t.filter(e => (0, o.isNotNullish)(r.default.getChannel(e.channel_id))).map(g), d = l.filter(e => (0, o.isNotNullish)(r.default.getChannel(e.channel_id))).map(C);
                 return {
-                    welcomeMessage: u,
-                    newMemberActions: a,
+                    welcomeMessage: a,
+                    newMemberActions: u,
                     resourceChannels: d,
                     enabled: i
                 }
             }
 
-            function g(e, n) {
+            function v(e, n) {
                 var t, l;
                 if (null == n) return null;
                 let {
                     welcomeMessage: i,
-                    newMemberActions: u,
-                    resourceChannels: a,
+                    newMemberActions: a,
+                    resourceChannels: u,
                     enabled: d
                 } = n, c = {
                     author_ids: null !== (t = null == i ? void 0 : i.authorIds) && void 0 !== t ? t : [],
                     message: null !== (l = null == i ? void 0 : i.message) && void 0 !== l ? l : ""
-                }, s = (null != u ? u : []).filter(e => (0, o.isNotNullish)(r.default.getChannel(e.channelId))).map(e => {
-                    var n, t, l, i, r, o, u;
+                }, s = (null != a ? a : []).filter(e => (0, o.isNotNullish)(r.default.getChannel(e.channelId))).map(e => {
+                    var n, t, l, i, r, o, a;
                     return {
                         channel_id: e.channelId,
                         action_type: e.actionType,
@@ -331,10 +331,10 @@
                             name: null !== (r = null === (t = e.emoji) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : void 0,
                             animated: null !== (o = null === (l = e.emoji) || void 0 === l ? void 0 : l.animated) && void 0 !== o ? o : void 0
                         },
-                        icon: null !== (u = e.icon) && void 0 !== u ? u : void 0
+                        icon: null !== (a = e.icon) && void 0 !== a ? a : void 0
                     }
-                }), E = (null != a ? a : []).filter(e => (0, o.isNotNullish)(r.default.getChannel(e.channelId))).map(e => {
-                    var n, t, l, i, r, o, u;
+                }), E = (null != u ? u : []).filter(e => (0, o.isNotNullish)(r.default.getChannel(e.channelId))).map(e => {
+                    var n, t, l, i, r, o, a;
                     return {
                         channel_id: e.channelId,
                         title: e.title,
@@ -344,7 +344,7 @@
                             name: null !== (r = null === (t = e.emoji) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : void 0,
                             animated: null !== (o = null === (l = e.emoji) || void 0 === l ? void 0 : l.animated) && void 0 !== o ? o : void 0
                         },
-                        icon: null !== (u = e.icon) && void 0 !== u ? u : void 0
+                        icon: null !== (a = e.icon) && void 0 !== a ? a : void 0
                     }
                 });
                 return {
@@ -355,7 +355,7 @@
                     enabled: d
                 }
             }(l = i || (i = {}))[l.VIEW = 0] = "VIEW", l[l.CHAT = 1] = "CHAT";
-            let v = e => {
+            let N = e => {
                 if (null == e) return null;
                 let n = {};
                 for (let t in e.channel_actions) n[t] = e.channel_actions[t].completed;
@@ -376,107 +376,26 @@
             }
 
             function M(e) {
-                return e.type === a.ChannelTypes.GUILD_TEXT && !u.default.canEveryoneRole(a.Permissions.SEND_MESSAGES, e) && u.default.canEveryoneRole(a.Permissions.VIEW_CHANNEL, e)
+                return e.type === u.ChannelTypes.GUILD_TEXT && !a.default.canEveryoneRole(u.Permissions.SEND_MESSAGES, e) && a.default.canEveryoneRole(u.Permissions.VIEW_CHANNEL, e)
             }
 
-            function L(e) {
+            function y(e) {
                 switch (e.type) {
-                    case a.ChannelTypes.GUILD_TEXT:
-                    case a.ChannelTypes.GUILD_ANNOUNCEMENT:
-                    case a.ChannelTypes.GUILD_FORUM:
-                    case a.ChannelTypes.GUILD_MEDIA:
-                        return u.default.canEveryoneRole(a.Permissions.VIEW_CHANNEL, e);
+                    case u.ChannelTypes.GUILD_TEXT:
+                    case u.ChannelTypes.GUILD_ANNOUNCEMENT:
+                    case u.ChannelTypes.GUILD_FORUM:
+                    case u.ChannelTypes.GUILD_MEDIA:
+                        return a.default.canEveryoneRole(u.Permissions.VIEW_CHANNEL, e);
                     default:
                         return !1
                 }
             }
         },
-        675305: function(e, n, t) {
-            "use strict";
-            t.r(n), t.d(n, {
-                default: function() {
-                    return d
-                }
-            }), t("222007");
-            var l = t("446674"),
-                i = t("913144");
-            let r = {},
-                o = {},
-                u = new Set;
-            class a extends l.default.Store {
-                getCompletedActions(e) {
-                    return null == e ? null : o[e]
-                }
-                hasCompletedActionForChannel(e, n) {
-                    let t = this.getCompletedActions(e);
-                    return null != t && null != t[n]
-                }
-                getState(e) {
-                    return null == e ? {} : {
-                        completedActions: o[e],
-                        loading: u.has(e)
-                    }
-                }
-            }
-            a.displayName = "GuildOnboardingMemberActionStore";
-            var d = new a(i.default, {
-                GUILD_NEW_MEMBER_ACTIONS_FETCH_START: function(e) {
-                    let {
-                        guildId: n
-                    } = e;
-                    u.add(n)
-                },
-                GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS: function(e) {
-                    let {
-                        memberActions: n,
-                        guildId: t
-                    } = e;
-                    if (null == n) {
-                        o[t] = r;
-                        return
-                    }
-                    o[t] = n, u.delete(t)
-                },
-                GUILD_NEW_MEMBER_ACTIONS_FETCH_FAIL: function(e) {
-                    let {
-                        guildId: n
-                    } = e;
-                    u.delete(n)
-                },
-                GUILD_NEW_MEMBER_ACTIONS_DELETE_SUCCESS: function(e) {
-                    let {
-                        guildId: n
-                    } = e;
-                    if (null == o[n]) return !1;
-                    delete o[n]
-                },
-                COMPLETE_NEW_MEMBER_ACTION: function(e) {
-                    let {
-                        guildId: n,
-                        channelId: t
-                    } = e;
-                    o = {
-                        ...o,
-                        [n]: {
-                            ...o[n],
-                            [t]: !0
-                        }
-                    }
-                },
-                GUILD_DELETE: function(e) {
-                    let {
-                        guild: n
-                    } = e;
-                    if (null == o[n.id]) return !1;
-                    delete o[n.id]
-                }
-            })
-        },
         746574: function(e, n, t) {
             "use strict";
             t.r(n), t.d(n, {
                 moveItemFromTo: function() {
-                    return a
+                    return u
                 },
                 default: function() {
                     return d
@@ -487,41 +406,41 @@
                 r = t("605250");
             let o = new r.default("DragAndDropUtils");
 
-            function u(e) {
+            function a(e) {
                 let {
                     oldOrdering: n,
                     newOrdering: t,
                     idGetter: l,
                     existingPositionGetter: i,
                     ascending: r = !0
-                } = e, u = t.length;
-                if (n.length !== u) return o.warn("Arrays are not of the same length!", n, t), [];
-                let a = n.map(l).sort().join(":"),
+                } = e, a = t.length;
+                if (n.length !== a) return o.warn("Arrays are not of the same length!", n, t), [];
+                let u = n.map(l).sort().join(":"),
                     d = t.map(l).sort().join(":");
-                if (a !== d) return o.warn("Object IDs in the old ordering and the new ordering are not the same.", a, d), [];
+                if (u !== d) return o.warn("Object IDs in the old ordering and the new ordering are not the same.", u, d), [];
                 let c = {};
-                for (let e = 0; e < u; e++) c[l(n[e])] = i(n[e]);
+                for (let e = 0; e < a; e++) c[l(n[e])] = i(n[e]);
                 let s = [];
-                for (let e = 0; e < u; e++) {
+                for (let e = 0; e < a; e++) {
                     let n = l(t[e]),
                         o = c[n],
-                        a = r ? e : u - 1 - e;
-                    (o !== a || i(t[e]) !== a) && s.push({
+                        u = r ? e : a - 1 - e;
+                    (o !== u || i(t[e]) !== u) && s.push({
                         id: n,
-                        position: a
+                        position: u
                     })
                 }
                 return !r && s.reverse(), s
             }
 
-            function a(e, n, t) {
+            function u(e, n, t) {
                 let l = e[n],
                     i = [...e];
                 return i.splice(n, 1), i.splice(t, 0, l), i
             }
             var d = {
-                moveItemFromTo: a,
-                calculatePositionDeltas: u,
+                moveItemFromTo: u,
+                calculatePositionDeltas: a,
                 getPositionUpdates: function(e) {
                     let {
                         objectArray: n,
@@ -532,8 +451,8 @@
                         ascending: d = !0
                     } = e;
                     !Array.isArray(n) && (n = i.values(n));
-                    let c = a(n, t, l);
-                    return u({
+                    let c = u(n, t, l);
+                    return a({
                         oldOrdering: n,
                         newOrdering: c,
                         idGetter: r,
@@ -545,4 +464,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23360.8d943b1704a9e3ccf72e.js.map
+//# sourceMappingURL=23360.8499c79d3e9fd31d6f89.js.map
