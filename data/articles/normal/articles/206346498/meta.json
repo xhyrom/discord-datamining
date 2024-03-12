@@ -2,7 +2,7 @@
   "id": 206346498,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/206346498.json",
   "html_url": "https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID",
-  "author_id": 1199351638,
+  "author_id": 2921470028,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -20,6 +20,11 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot"
+    "answer-bot",
+    "developer mode",
+    "server ID",
+    "message link",
+    "message ID",
+    "user ID"
   ]
 }

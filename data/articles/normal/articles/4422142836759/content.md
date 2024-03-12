@@ -10,7 +10,7 @@
             <li>
                 <a href="#h_01GSX69W2WZT0BK92VH98H8R5D" target="_self">On Mobile</a>
                 <ul>
-                    <li><a href="#docs-internal-guid-a870a266-7fff-31f3-e3dd-0d66737259ce" target="_self">My mobile device gets really warm while playing Activities. How do I fix it?</a></li>
+                    <li><a href="https://support.discord.com/hc/en-us/articles/4422142836759#h_01HRSVGETCZQYBD75WWQMP4Q0E">My mobile device gets really warm while playing Activities. How do I fix it?</a></li>
                 </ul>
             </li>
             <li><a href="#h_01GSX5T6WVXS25BCSSDW3TAGYM" target="_self">Can I invite others to Join My Activity?</a></li>
@@ -46,9 +46,9 @@
     <li><a href="https://discord.gg/dhgEgZkeJx" target="_blank" rel="noopener noreferrer">Chef Showdown</a></li>
 </ol>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
-<h3><span style="color: #434343;">Activities are available in some server text channels as an experiment that is currently only available to a limited number of servers. Users in eligible servers can start in-text activities from the mobile app using the button shown below:<br></span></h3>
-<h3 id="h_01HRSV6DAB8T6Q1KGJQ4A9GZQK" class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/22015519434007" width="81" height="80"></strong></h3>
-<h3 id="h_01HRSV6DABT4N7XKMAC3PC57RT" class="wysiwyg-text-align-center"><strong><span style="color: #666666;">Activity Launcher icon as shown in mobile app.</span></strong></h3>
+<h3 id="h_01HRSVG98A0VTBC080VB83EWTE" class="wysiwyg-text-align-center">
+    <span style="color: #434343;">Activities are available in some server text channels as an experiment that is currently only available to a limited number of servers. Users in eligible servers can start in-text activities from the mobile app using the button shown below:<br></span><strong><img src="https://support.discord.com/hc/article_attachments/22015519434007" width="81" height="80"><br></strong><strong><span style="color: #666666;">Activity Launcher icon as shown in mobile app.</span></strong>
+</h3>
 <h2 id="docs-internal-guid-67d1f612-7fff-856e-6a7d-09e2618d9a7f">On Desktop/Browser</h2>
 <p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group direct message (GDM).</p>
 <p>2. To start an Activity, all you need to do is press on the Activity Launcher rocket ship icon.</p>
@@ -72,7 +72,7 @@
 <p>3. Select the Activity you want to play from the Activity Shelf menu. You will need to provide authorization if you’ve never played your chosen Activity before.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024057879" width="335" height="725"></p>
 <p>4. (Optional) Have your friends join the Activity. To play, they need to be in the same Voice Channel as you and join the Activity you started. Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</p>
-<h2 id="docs-internal-guid-a870a266-7fff-31f3-e3dd-0d66737259ce"><span class="wysiwyg-font-size-large"><strong>My mobile device gets really warm while playing Activities. How do I fix it?</strong></span></h2>
+<h2 id="h_01HRSVGETCZQYBD75WWQMP4Q0E"><strong><span class="wysiwyg-font-size-large">My mobile device gets really warm while playing Activities. How do I fix it?</span></strong></h2>
 <p>If your mobile device becomes warm to the touch while you’re playing an Activity, we recommend that you try the following:</p>
 <ul>
     <li>If you have our picture-in-picture feature engaged while playing an Activity, please minimize/close the picture-in-picture feature and keep the Activity in focus.</li>
