@@ -76146,6 +76146,14 @@ input::-webkit-inner-spin-button {
     z-index: 0
 }
 
+.theme-dark .wrapper_d895e9 {
+    background: var(--bg-overlay-3, var(--background-secondary))
+}
+
+.theme-light .wrapper_d895e9 {
+    background: var(--bg-overlay-2, var(--background-secondary))
+}
+
 .wrapperVisible__3ba8b {
     z-index: 1
 }
@@ -129804,4 +129812,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a393866a539f4b0ee0d6.css.map*/
+/*# sourceMappingURL=app.997da101792bbae2463f.css.map*/
