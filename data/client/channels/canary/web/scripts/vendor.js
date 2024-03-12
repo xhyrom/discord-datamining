@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -55518,23 +55518,8 @@
                 updateApplicationGuildCommandPermissions: function() {
                     return m
                 },
-                querySearchManager: function() {
-                    return p
-                },
                 performAutocomplete: function() {
-                    return S
-                },
-                fetchCommand: function() {
-                    return v
-                },
-                fetchCommands: function() {
-                    return T
-                },
-                fetchCommandsForApplication: function() {
-                    return I
-                },
-                updateRegistry: function() {
-                    return C
+                    return p
                 }
             }), n("222007");
             var i = n("627445"),
@@ -55604,18 +55589,8 @@
                     url: f.Endpoints.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(e, t, n)
                 })
             }
-            let p = (e, t, n, i, s) => {
-                a.default.dispatch({
-                    type: "APPLICATION_COMMAND_SEARCH_STORE_QUERY",
-                    context: e,
-                    query: t,
-                    limit: n,
-                    commandType: i,
-                    applicationId: s
-                })
-            };
 
-            function S(e, t, n) {
+            function p(e, t, n) {
                 var i;
                 s(null != t.autocomplete, "Missing autocomplete context");
                 let {
@@ -55645,47 +55620,6 @@
                         type: "INTERACTION_FAILURE",
                         nonce: h
                     })
-                })
-            }
-
-            function v(e, t, n) {
-                a.default.dispatch({
-                    type: "APPLICATION_COMMAND_FETCH",
-                    channelId: t,
-                    commandId: n,
-                    guildId: e
-                })
-            }
-
-            function T(e, t, n) {
-                a.default.dispatch({
-                    type: "APPLICATION_COMMANDS_FETCH",
-                    channelId: t,
-                    commandIds: n,
-                    guildId: e
-                })
-            }
-
-            function I(e) {
-                let {
-                    guildId: t,
-                    channelId: n,
-                    applicationId: i
-                } = e;
-                a.default.dispatch({
-                    type: "APPLICATION_COMMANDS_FETCH_FOR_APPLICATION",
-                    channelId: n,
-                    guildId: t,
-                    applicationId: i
-                })
-            }
-
-            function C(e, t, n) {
-                a.default.dispatch({
-                    type: "APPLICATION_COMMAND_REGISTRY_UPDATE",
-                    applications: t,
-                    commands: e,
-                    channelId: n
                 })
             }
         },
@@ -55841,26 +55775,23 @@
                 DISCOVERY_COMMANDS_FRECENCY_LIMIT: function() {
                     return c
                 },
-                DISCOVERY_COMMAND_FRECENCY_GATEWAY_LIMIT: function() {
+                SUB_COMMAND_KEY_SEPARATOR: function() {
                     return f
                 },
-                SUB_COMMAND_KEY_SEPARATOR: function() {
+                APPLICATION_COMMAND_PERMISSIONS_LIMIT: function() {
                     return _
                 },
-                APPLICATION_COMMAND_PERMISSIONS_LIMIT: function() {
+                MAX_SUBCOMMAND_LEVEL: function() {
                     return h
                 },
-                MAX_SUBCOMMAND_LEVEL: function() {
+                CONTEXT_MENU_COMMANDS_QUERY_LIMIT: function() {
                     return E
                 },
-                CONTEXT_MENU_COMMANDS_QUERY_LIMIT: function() {
+                AUTOCOMPLETE_OPTION_DEBOUNCE_TIME: function() {
                     return g
                 },
-                AUTOCOMPLETE_OPTION_DEBOUNCE_TIME: function() {
-                    return m
-                },
                 getValidationErrorText: function() {
-                    return p
+                    return m
                 }
             });
             var i, s, r = n("798609"),
@@ -55879,14 +55810,13 @@
             (i = s || (s = {})).BUILT_IN = "-1", i.FRECENCY = "-2";
             let d = 10,
                 c = 5,
-                f = 25,
-                _ = "\x00",
-                h = 100,
-                E = 3,
-                g = 10,
-                m = 500;
+                f = "\x00",
+                _ = 100,
+                h = 3,
+                E = 10,
+                g = 500;
 
-            function p(e) {
+            function m(e) {
                 if (null != e.choices) return a.default.Messages.COMMAND_VALIDATION_CHOICE_ERROR;
                 switch (e.type) {
                     case r.ApplicationCommandOptionType.BOOLEAN:
@@ -55908,43 +55838,6 @@
                 }
             }
             Object.freeze([]), Object.freeze([])
-        },
-        14090: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                UserAppsTreatment: function() {
-                    return s
-                },
-                default: function() {
-                    return a
-                }
-            });
-            var i, s, r = n("862205");
-            (i = s || (s = {})).ALLOWED = "allowed", i.DEFAULT = "default";
-            var a = (0, r.createExperiment)({
-                kind: "user",
-                id: "2023-08_new_app_command_serving",
-                label: "New Application Command Serving",
-                defaultConfig: {
-                    enabled: !1,
-                    newScoreLogic: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        enabled: !0,
-                        newScoreLogic: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "Enabled + New Logic",
-                    config: {
-                        enabled: !0,
-                        newScoreLogic: !0
-                    }
-                }]
-            })
         },
         383018: function(e, t, n) {
             "use strict";
@@ -56218,52 +56111,52 @@
             "use strict";
             n.r(t), n.d(t, {
                 buildCommand: function() {
-                    return I
+                    return T
                 },
                 buildApplicationCommands: function() {
-                    return C
+                    return I
                 },
                 isSnowflake: function() {
-                    return A
+                    return C
                 },
                 getMatchingGroupCommands: function() {
-                    return y
+                    return A
                 },
                 getApplicationCommandOptionQueryOptions: function() {
-                    return N
+                    return y
                 },
                 allChannelsSentinel: function() {
-                    return R
+                    return N
                 },
                 canUseApplicationCommands: function() {
-                    return O
+                    return R
                 },
                 DISABLED_BY_DEFAULT_PERMISSION_FLAG: function() {
-                    return D
+                    return O
                 },
                 hasAccess: function() {
-                    return P
+                    return D
                 },
                 getCommandAttachmentDraftType: function() {
-                    return M
+                    return L
                 },
                 getCommandTriggerSection: function() {
-                    return b
+                    return M
                 },
                 getApplicationCommandSection: function() {
-                    return U
+                    return b
                 },
                 extractInteractionDataProps: function() {
-                    return w
+                    return U
                 },
                 useIsInUserAppExperiment: function() {
-                    return k
+                    return w
                 },
                 isInUserAppExperiment: function() {
-                    return V
+                    return k
                 },
                 trackCommandSelected: function() {
-                    return G
+                    return V
                 }
             }), n("222007"), n("424973"), n("881410"), n("808653");
             var i = n("552442"),
@@ -56278,15 +56171,14 @@
                 f = n("892692"),
                 _ = n("233069"),
                 h = n("474643"),
-                E = n("14090"),
-                g = n("524768"),
-                m = n("970254"),
-                p = n("696415"),
-                S = n("317041"),
-                v = n("49111"),
-                T = n("843455");
+                E = n("524768"),
+                g = n("970254"),
+                m = n("696415"),
+                p = n("317041"),
+                S = n("49111"),
+                v = n("843455");
 
-            function I(e) {
+            function T(e) {
                 var t, n, i;
                 let s, {
                     rootCommand: r,
@@ -56303,12 +56195,12 @@
                 return {
                     version: r.version,
                     guildId: r.guild_id,
-                    id: [r.id, ..._].join(S.SUB_COMMAND_KEY_SEPARATOR),
+                    id: [r.id, ..._].join(p.SUB_COMMAND_KEY_SEPARATOR),
                     name: [r.name, ..._].join(" "),
                     serverLocalizedName: a.name_localized,
                     applicationId: o,
                     type: null !== (t = r.type) && void 0 !== t ? t : d.ApplicationCommandType.CHAT,
-                    inputType: g.ApplicationCommandInputType.BOT,
+                    inputType: E.ApplicationCommandInputType.BOT,
                     description: a.description,
                     options: function e(t) {
                         return null == t ? void 0 : t.map(t => {
@@ -56360,7 +56252,7 @@
                 }
             }
 
-            function C(e, t) {
+            function I(e, t) {
                 return l.flatMap(e, e => (a(null != e.id, "Missing command id"), function e(t) {
                     var n, i;
                     let {
@@ -56371,14 +56263,14 @@
                         useKeyedPermissions: l
                     } = t;
                     if (r.hasOwnProperty("id")) {
-                        if (null == r.options || 0 === r.options.length) return [I({
+                        if (null == r.options || 0 === r.options.length) return [T({
                             rootCommand: s,
                             command: r,
                             applicationId: a,
                             subCommandPath: o,
                             useKeyedPermissions: l
                         })]
-                    } else if (r.type !== d.ApplicationCommandOptionType.SUB_COMMAND && r.type !== d.ApplicationCommandOptionType.SUB_COMMAND_GROUP && (null == r.options || 0 === r.options.length)) return [I({
+                    } else if (r.type !== d.ApplicationCommandOptionType.SUB_COMMAND && r.type !== d.ApplicationCommandOptionType.SUB_COMMAND_GROUP && (null == r.options || 0 === r.options.length)) return [T({
                         rootCommand: s,
                         command: r,
                         applicationId: a,
@@ -56400,7 +56292,7 @@
                         useKeyedPermissions: l
                     }));
                     let f = r.options.filter(e => e.type === d.ApplicationCommandOptionType.SUB_COMMAND);
-                    for (let e = 0; e < f.length; e++) u.push(I({
+                    for (let e = 0; e < f.length; e++) u.push(T({
                         rootCommand: s,
                         command: f[e],
                         applicationId: a,
@@ -56411,7 +56303,7 @@
                         }]),
                         useKeyedPermissions: l
                     }));
-                    return 0 === c.length && 0 === f.length && u.push(I({
+                    return 0 === c.length && 0 === f.length && u.push(T({
                         rootCommand: s,
                         command: r,
                         applicationId: a,
@@ -56427,18 +56319,18 @@
                 })))
             }
 
-            function A(e) {
-                return v.ID_REGEX.test(e.trim())
+            function C(e) {
+                return S.ID_REGEX.test(e.trim())
             }
 
-            function y(e, t, n, i) {
+            function A(e, t, n, i) {
                 let s = [];
                 return l(e).forEach(e => {
                     t.test(e.displayName) && (null == e.predicate || e.predicate(n)) && s.push(e)
                 }), s.slice(0, i)
             }
 
-            function N(e) {
+            function y(e) {
                 let t = e.type === d.ApplicationCommandOptionType.STRING,
                     n = e.type === d.ApplicationCommandOptionType.CHANNEL,
                     i = e.type === d.ApplicationCommandOptionType.USER || e.type === d.ApplicationCommandOptionType.MENTIONABLE,
@@ -56454,27 +56346,27 @@
                 }
             }
 
-            function R(e) {
+            function N(e) {
                 return s(e).subtract(1).toString()
             }
 
-            function O(e, t, n, i) {
+            function R(e, t, n, i) {
                 if (n) return !1;
-                if (i.isMultiUserDM()) return V(i.guild_id, {
+                if (i.isMultiUserDM()) return k(i.guild_id, {
                     location: "canUseApplicationCommands"
                 }, {
                     autoTrackExposure: !1
                 }) || t.getIntegrations(i.id).length > 0;
-                if (i.isDM()) return !i.isSystemDM() && (null != i.rawRecipients.find(e => e.bot) || V(i.guild_id, {
+                if (i.isDM()) return !i.isSystemDM() && (null != i.rawRecipients.find(e => e.bot) || k(i.guild_id, {
                     location: "canUseApplicationCommands"
                 }, {
                     autoTrackExposure: !1
                 }) || t.getIntegrations(i.id).length > 0);
-                return i.isArchivedLockedThread() ? e.can(u.default.combine(T.Permissions.USE_APPLICATION_COMMANDS, T.Permissions.MANAGE_THREADS), i) : !!(0, _.isReadableType)(i.type) && e.can(u.default.combine(T.Permissions.USE_APPLICATION_COMMANDS, T.Permissions.SEND_MESSAGES), i)
+                return i.isArchivedLockedThread() ? e.can(u.default.combine(v.Permissions.USE_APPLICATION_COMMANDS, v.Permissions.MANAGE_THREADS), i) : !!(0, _.isReadableType)(i.type) && e.can(u.default.combine(v.Permissions.USE_APPLICATION_COMMANDS, v.Permissions.SEND_MESSAGES), i)
             }
-            let D = u.default.deserialize(0);
+            let O = u.default.deserialize(0);
 
-            function P(e) {
+            function D(e) {
                 let {
                     PermissionStore: t,
                     guild: n,
@@ -56483,50 +56375,50 @@
                     commandLevelPermissions: r,
                     defaultMemberPermissions: a
                 } = e;
-                if (n.ownerId === i.userId || t.can(T.Permissions.ADMINISTRATOR, n)) return !0;
+                if (n.ownerId === i.userId || t.can(v.Permissions.ADMINISTRATOR, n)) return !0;
                 let o = n.id;
                 if (null != r) {
-                    let e = L(i, o, r);
+                    let e = P(i, o, r);
                     if ("boolean" == typeof e) return e
                 }
-                let l = L(i, o, s);
-                return ("boolean" != typeof l || !!l) && (null == a || !u.default.equals(a, D) && t.can(a, n))
+                let l = P(i, o, s);
+                return ("boolean" != typeof l || !!l) && (null == a || !u.default.equals(a, O) && t.can(a, n))
             }
 
-            function L(e, t, n) {
-                let i = n[(0, f.toPermissionKey)(e.userId, g.ApplicationCommandPermissionType.USER)];
+            function P(e, t, n) {
+                let i = n[(0, f.toPermissionKey)(e.userId, E.ApplicationCommandPermissionType.USER)];
                 if (null != i) return i.permission;
                 let s = !1;
                 for (let t of e.roles) {
-                    let e = n[(0, f.toPermissionKey)(t, g.ApplicationCommandPermissionType.ROLE)];
+                    let e = n[(0, f.toPermissionKey)(t, E.ApplicationCommandPermissionType.ROLE)];
                     if (null != e && (s = !0, e.permission)) return !0
                 }
                 if (s) return !1;
-                let r = n[(0, f.toPermissionKey)(t, g.ApplicationCommandPermissionType.ROLE)];
+                let r = n[(0, f.toPermissionKey)(t, E.ApplicationCommandPermissionType.ROLE)];
                 return null != r ? r.permission : null
             }
 
-            function M(e) {
+            function L(e) {
                 switch (e) {
-                    case g.CommandOrigin.CHAT:
+                    case E.CommandOrigin.CHAT:
                         return h.DraftType.SlashCommand;
-                    case g.CommandOrigin.APPLICATION_LAUNCHER:
+                    case E.CommandOrigin.APPLICATION_LAUNCHER:
                         return h.DraftType.ApplicationLauncherCommand
                 }
             }
 
-            function b(e) {
+            function M(e) {
                 if (null != e) {
-                    if (e.id === S.BuiltInSectionId.BUILT_IN) return g.ApplicationCommandTriggerSections.BUILT_IN;
-                    else if (e.id === S.BuiltInSectionId.FRECENCY) return g.ApplicationCommandTriggerSections.FRECENCY;
-                    else return g.ApplicationCommandTriggerSections.APP
+                    if (e.id === p.BuiltInSectionId.BUILT_IN) return E.ApplicationCommandTriggerSections.BUILT_IN;
+                    else if (e.id === p.BuiltInSectionId.FRECENCY) return E.ApplicationCommandTriggerSections.FRECENCY;
+                    else return E.ApplicationCommandTriggerSections.APP
                 }
             }
 
-            function U(e) {
+            function b(e) {
                 var t, n;
                 return {
-                    type: g.ApplicationCommandSectionType.APPLICATION,
+                    type: E.ApplicationCommandSectionType.APPLICATION,
                     id: e.id,
                     name: null !== (n = null == e ? void 0 : null === (t = e.bot) || void 0 === t ? void 0 : t.username) && void 0 !== n ? n : e.name,
                     icon: e.icon,
@@ -56534,37 +56426,37 @@
                 }
             }
 
-            function w(e) {
+            function U(e) {
                 let t = e.id,
                     n = e.options,
                     i = null == n ? void 0 : n.find(e => e.type === d.ApplicationCommandOptionType.SUB_COMMAND_GROUP);
-                null != i && (t += "".concat(S.SUB_COMMAND_KEY_SEPARATOR).concat(i.name), n = i.options);
+                null != i && (t += "".concat(p.SUB_COMMAND_KEY_SEPARATOR).concat(i.name), n = i.options);
                 let s = null == n ? void 0 : n.find(e => e.type === d.ApplicationCommandOptionType.SUB_COMMAND);
-                return null != s && (t += "".concat(S.SUB_COMMAND_KEY_SEPARATOR).concat(s.name), n = s.options), {
+                return null != s && (t += "".concat(p.SUB_COMMAND_KEY_SEPARATOR).concat(s.name), n = s.options), {
                     commandKey: t,
                     interactionOptions: n
                 }
             }
 
-            function k(e, t, n) {
-                let i = m.default.useExperiment(t, n).userAppsTreatment === E.UserAppsTreatment.ALLOWED,
-                    s = p.default.useExperiment({
-                        guildId: null != e ? e : v.EMPTY_STRING_SNOWFLAKE_ID,
+            function w(e, t, n) {
+                let i = g.default.useExperiment(t, n).userAppsTreatment === g.UserAppsTreatment.ALLOWED,
+                    s = m.default.useExperiment({
+                        guildId: null != e ? e : S.EMPTY_STRING_SNOWFLAKE_ID,
                         ...t
-                    }, n).userAppsTreatment === E.UserAppsTreatment.ALLOWED;
+                    }, n).userAppsTreatment === g.UserAppsTreatment.ALLOWED;
                 return i && (null == e || s)
             }
 
-            function V(e, t, n) {
-                let i = m.default.getCurrentConfig(t, n).userAppsTreatment === E.UserAppsTreatment.ALLOWED,
-                    s = p.default.getCurrentConfig({
-                        guildId: null != e ? e : v.EMPTY_STRING_SNOWFLAKE_ID,
+            function k(e, t, n) {
+                let i = g.default.getCurrentConfig(t, n).userAppsTreatment === g.UserAppsTreatment.ALLOWED,
+                    s = m.default.getCurrentConfig({
+                        guildId: null != e ? e : S.EMPTY_STRING_SNOWFLAKE_ID,
                         ...t
-                    }, n).userAppsTreatment === E.UserAppsTreatment.ALLOWED;
+                    }, n).userAppsTreatment === g.UserAppsTreatment.ALLOWED;
                 return i && (s || null == e)
             }
 
-            function G(e) {
+            function V(e) {
                 var t, n;
                 let {
                     command: i,
@@ -56572,7 +56464,7 @@
                     triggerSection: r,
                     queryLength: a
                 } = e;
-                (0, c.trackWithMetadata)(v.AnalyticEvents.APPLICATION_COMMAND_SELECTED, {
+                (0, c.trackWithMetadata)(S.AnalyticEvents.APPLICATION_COMMAND_SELECTED, {
                     command_id: null !== (n = null === (t = i.rootCommand) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : i.id,
                     application_id: i.applicationId,
                     location: s,
@@ -87463,8 +87355,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710267960341",
-                                    build_number: "274372"
+                                    built_at: "1710269612527",
+                                    build_number: "274385"
                                 }
                             },
                             retries: 1
@@ -124373,7 +124265,7 @@
                 Y = "",
                 j = new Set,
                 W = !1,
-                K = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_MFA_FAILURE", "LOGIN_MFA_SMS", "LOGIN_MFA_SMS_REQUEST_SUCCESS", "LOGIN_MFA_SMS_FAILURE", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "REGISTER_FAILURE", "VERIFY_FAILURE", "VERIFY_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "CHANNEL_SETTINGS_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "MENTION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "SEARCH_MODAL_OPEN", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "MENTION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "SEARCH_MODAL_CLOSE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_OPEN", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_START", "SEARCH_FINISH", "MOD_VIEW_SEARCH_FINISH", "SEARCH_INDEXING", "SEARCH_CLEAR", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_CLEAR_HISTORY", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "EXPERIMENT_REGISTER_LEGACY", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "GUILD_FEED_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_SEARCH_STORE_QUERY", "APPLICATION_COMMAND_SEARCH_STORE_UPDATE", "APPLICATION_COMMAND_SEARCH_STORE_UI_UPDATE", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED"]),
+                K = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_MFA_FAILURE", "LOGIN_MFA_SMS", "LOGIN_MFA_SMS_REQUEST_SUCCESS", "LOGIN_MFA_SMS_FAILURE", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "REGISTER_FAILURE", "VERIFY_FAILURE", "VERIFY_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "CHANNEL_SETTINGS_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "MENTION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "SEARCH_MODAL_OPEN", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "MENTION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "SEARCH_MODAL_CLOSE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_OPEN", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_START", "SEARCH_FINISH", "MOD_VIEW_SEARCH_FINISH", "SEARCH_INDEXING", "SEARCH_CLEAR", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_CLEAR_HISTORY", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "EXPERIMENT_REGISTER_LEGACY", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "GUILD_FEED_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED"]),
                 z = new Set,
                 q = new p.default("OverlayBridgeStore"),
                 X = "none",
@@ -124846,7 +124738,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "84bb7284241ad396f395a11b576bb2afac06289e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "59fcd8e6514aed122709689466ff249f880cffbd"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134171,7 +134063,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274372"
+                                build_number: "274385"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151773,4 +151665,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.5328838df44812f6ebd4.js.map
+//# sourceMappingURL=67229.48f690a030e293d90f92.js.map
