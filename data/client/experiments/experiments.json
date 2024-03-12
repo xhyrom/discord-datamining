@@ -4499,34 +4499,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2023-02_onboarding_home",
-      "label": "Home as a community onboarding surface",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show the Onboarding Version of Home",
-        "Treatment 2: Onboarding Home DEV",
-        "Treatment 3: Show the Onboarding Version of Home"
-      ],
-      "hash": 454680912,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "showOnboardingHome",
-        "enableDevItems"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2023-02_onboarding_home_admin",
       "label": "[ADMIN] Home as a community onboarding surface",
@@ -6442,37 +6414,6 @@
         }
       ],
       "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3363020987,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 1,
       "overrides": {},
       "overrides_formatted": []
     }
@@ -12769,6 +12710,37 @@
           "1042521715630166056"
         ]
       },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3363020987,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 1,
+      "overrides": {},
       "overrides_formatted": []
     }
   },
