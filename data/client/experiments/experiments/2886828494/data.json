@@ -1,0 +1,37 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_audio_short_circuit",
+    "label": "Audio processing short circuiting",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Mute before processing",
+      "Treatment 2: PTT before processing",
+      "Treatment 3: Mute + PTT before processing",
+      "Treatment 4: Skip encode",
+      "Treatment 5: Mute before processing, skip encode",
+      "Treatment 6: PTT before processing, skip encode",
+      "Treatment 7: Mute + PTT before processing, skip encode"
+    ],
+    "hash": 2886828494,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "muteBeforeProcessing",
+      "pttBeforeProcessing",
+      "skipEncode"
+    ]
+  }
+}

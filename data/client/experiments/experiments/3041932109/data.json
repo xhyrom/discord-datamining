@@ -31,9 +31,9 @@
         },
         "filters": [
           {
-            "type": "guild_in_range_by_hash",
-            "hash_key": 3041932109,
-            "target": 10000
+            "type": "guild_age_range_days",
+            "min_age": 3041932109,
+            "max_age": 10000
           }
         ]
       },

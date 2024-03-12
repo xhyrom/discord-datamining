@@ -29,9 +29,9 @@
             ]
           },
           {
-            "type": "guild_in_range_by_hash",
-            "hash_key": 848173753,
-            "target": 10000
+            "type": "guild_age_range_days",
+            "min_age": 848173753,
+            "max_age": 10000
           }
         ]
       },
