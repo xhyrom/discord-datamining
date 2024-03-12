@@ -4,17 +4,17 @@
                 n("70102"), n("424973");
                 var r, o, i, u = e.exports = {};
 
-                function c() {
+                function a() {
                     throw Error("setTimeout has not been defined")
                 }
 
-                function a() {
+                function c() {
                     throw Error("clearTimeout has not been defined")
                 }
 
                 function s(e) {
                     if (r === setTimeout) return setTimeout(e, 0);
-                    if ((r === c || !r) && setTimeout) return r = setTimeout, setTimeout(e, 0);
+                    if ((r === a || !r) && setTimeout) return r = setTimeout, setTimeout(e, 0);
                     try {
                         return r(e, 0)
                     } catch (t) {
@@ -26,14 +26,14 @@
                     }
                 }! function() {
                     try {
-                        r = "function" == typeof setTimeout ? setTimeout : c
+                        r = "function" == typeof setTimeout ? setTimeout : a
                     } catch (e) {
-                        r = c
+                        r = a
                     }
                     try {
-                        o = "function" == typeof clearTimeout ? clearTimeout : a
+                        o = "function" == typeof clearTimeout ? clearTimeout : c
                     } catch (e) {
-                        o = a
+                        o = c
                     }
                 }();
                 var l = [],
@@ -54,7 +54,7 @@
                         }
                         i = null, d = !1, ! function(e) {
                             if (o === clearTimeout) return clearTimeout(e);
-                            if ((o === a || !o) && clearTimeout) return o = clearTimeout, clearTimeout(e);
+                            if ((o === c || !o) && clearTimeout) return o = clearTimeout, clearTimeout(e);
                             try {
                                 o(e)
                             } catch (t) {
@@ -140,7 +140,7 @@
                         return u
                     },
                     initSentry: function() {
-                        return a
+                        return c
                     }
                 }), n("222007");
                 var r = n("245123"),
@@ -151,22 +151,22 @@
                     let e = window;
                     return null != e.jQuery || null != e.$ || null != e.BetterDiscord || null != e.BdApi || null != e.rambox
                 }
-                let c = (0, o.filterThrottle)({
+                let a = (0, o.filterThrottle)({
                     maxBudgetMinute: 1,
                     maxBudgetHour: 3
                 });
 
-                function a() {
+                function c() {
                     var e;
                     r.init({
                         tunnel: "/error-reporting-proxy/web",
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-9386245f6c79c03c4c93812c722f531477f1d405",
+                        release: "discord_web-9a61662a6fba76d65e7ef8498c698dd1450483f9",
                         beforeSend: e => {
                             var t, n;
-                            return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !u() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && c() ? e : null
+                            return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !u() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && a() ? e : null
                         },
                         integrations: [new r.Integrations.GlobalHandlers({
                             onerror: !0,
@@ -181,7 +181,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (e = "274297", "274297")), r.setTag("builtAt", String("1710257559015"));
+                    }), r.setTag("buildNumber", (e = "274306", "274306")), r.setTag("builtAt", String("1710259294859"));
                     let t = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != t && "object" == typeof t)
                         for (let e in t) r.setTag(e, t[e]);
@@ -219,11 +219,11 @@
             e[u] = [n, o, i];
             return
         }
-        for (var c = 1 / 0, u = 0; u < e.length; u++) {
-            for (var n = e[u][0], o = e[u][1], i = e[u][2], a = !0, s = 0; s < n.length; s++) c >= i && Object.keys(r.O).every(function(e) {
+        for (var a = 1 / 0, u = 0; u < e.length; u++) {
+            for (var n = e[u][0], o = e[u][1], i = e[u][2], c = !0, s = 0; s < n.length; s++) a >= i && Object.keys(r.O).every(function(e) {
                 return r.O[e](n[s])
-            }) ? n.splice(s--, 1) : (a = !1, i < c && (c = i));
-            if (a) {
+            }) ? n.splice(s--, 1) : (c = !1, i < a && (a = i));
+            if (c) {
                 e.splice(u--, 1);
                 var l = o();
                 void 0 !== l && (t = l)
@@ -270,14 +270,14 @@
                 var o = n[0],
                     i = n[1],
                     u = n[2],
-                    c, a, s = 0;
+                    a, c, s = 0;
                 if (o.some(function(t) {
                         return 0 !== e[t]
                     })) {
-                    for (c in i) r.o(i, c) && (r.m[c] = i[c]);
+                    for (a in i) r.o(i, a) && (r.m[a] = i[a]);
                     if (u) var l = u(r)
                 }
-                for (t && t(n); s < o.length; s++) a = o[s], r.o(e, a) && e[a] && e[a][0](), e[a] = 0;
+                for (t && t(n); s < o.length; s++) c = o[s], r.o(e, c) && e[c] && e[c][0](), e[c] = 0;
                 return r.O(l)
             },
             n = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
@@ -288,4 +288,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.4ec872f5898a39d12cae.js.map
+//# sourceMappingURL=sentry.8347c2b54a25d1f44340.js.map
