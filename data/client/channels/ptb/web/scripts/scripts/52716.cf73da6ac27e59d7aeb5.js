@@ -458,8 +458,8 @@
                 y = n("168973"),
                 C = n("491605"),
                 O = n("476765"),
-                b = n("599110"),
-                A = n("32531"),
+                A = n("599110"),
+                b = n("32531"),
                 M = n("714657"),
                 w = n("164546"),
                 P = n("941719"),
@@ -482,7 +482,7 @@
                         themeName: n,
                         analyticsLocations: i
                     } = e;
-                    b.default.track(R.AnalyticEvents.CLIENT_THEME_UPDATED, {
+                    A.default.track(R.AnalyticEvents.CLIENT_THEME_UPDATED, {
                         feature_name: D.AnalyticsPremiumFeatureNames.CLIENT_THEME,
                         theme_name: n,
                         is_persisted: t,
@@ -578,7 +578,7 @@
                 } = s.useContext(F), {
                     analyticsLocations: i
                 } = (0, p.default)(_.default.CLIENT_THEMES_THEME_SELECTOR), [a, o, u] = (0, d.useStateFromStoresArray)([I.default, y.default, M.default], () => [I.default.theme, null == M.default.gradientPreset, y.default.useSystemTheme === x.SystemThemeState.ON]), c = e => {
-                    (0, A.resetBackgroundGradientPreset)(), H({
+                    (0, b.resetBackgroundGradientPreset)(), H({
                         isPersisted: !0,
                         analyticsLocations: i,
                         themeName: "default ".concat(e)
@@ -616,12 +616,12 @@
                 } = (0, p.default)(_.default.CLIENT_THEMES_THEME_SELECTOR), [T, I, y] = (0, d.useStateFromStoresArray)([M.default], () => {
                     var e;
                     return [M.default.isPreview, M.default.isCoachmark, null === (e = M.default.gradientPreset) || void 0 === e ? void 0 : e.id]
-                }), [O, b] = s.useState(!1), [R, L] = s.useState(-1), G = (0, d.useStateFromStores)([h.default], () => h.default.useReducedMotion), k = (null === (i = (0, E.usePremiumTrialOffer)()) || void 0 === i ? void 0 : null === (t = i.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === D.PremiumSubscriptionSKUs.TIER_2;
+                }), [O, A] = s.useState(!1), [R, L] = s.useState(-1), G = (0, d.useStateFromStores)([h.default], () => h.default.useReducedMotion), k = (null === (i = (0, E.usePremiumTrialOffer)()) || void 0 === i ? void 0 : null === (t = i.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === D.PremiumSubscriptionSKUs.TIER_2;
                 s.useEffect(() => {
-                    (R === P.BACKGROUND_GRADIENT_PRESETS.length - 2 && "EDITOR" === u || y === c.BackgroundGradientPresetId.EASTER_EGG) && b(!0)
+                    (R === P.BACKGROUND_GRADIENT_PRESETS.length - 2 && "EDITOR" === u || y === c.BackgroundGradientPresetId.EASTER_EGG) && A(!0)
                 }, [R, u, y]);
                 let K = (e, t) => {
-                    if ((0, A.updateBackgroundGradientPreset)(e.id), H({
+                    if ((0, b.updateBackgroundGradientPreset)(e.id), H({
                             isPersisted: !T,
                             analyticsLocations: g,
                             themeName: c.BackgroundGradientPresetId[e.id]
@@ -633,7 +633,7 @@
                             backgroundGradientPresetId: e.id,
                             theme: e.theme
                         }, f), null != t) {
-                        if (O && b(!1), t <= R || 0 === t) {
+                        if (O && A(!1), t <= R || 0 === t) {
                             L(0);
                             return
                         }
@@ -789,8 +789,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "274508",
-                    versionHash: "fd9d6d9be0ce893e7e3bc253b732e0b51e3711bb"
+                    buildNumber: "274532",
+                    versionHash: "b00a2f085a5c28fcd0a84642baa2ff51e142d0b6"
                 }
             }
             n.r(t), n.d(t, {
@@ -1173,8 +1173,8 @@
                 y = n("299039"),
                 C = n("649649"),
                 O = n("845868"),
-                b = n("287223"),
-                A = n("76618"),
+                A = n("287223"),
+                b = n("76618"),
                 M = n("380353"),
                 w = n("49111"),
                 P = n("133335"),
@@ -1189,7 +1189,7 @@
                         let i = {};
                         for (let a of u) i[a.id] = function(e, t, n, i, a) {
                             var l;
-                            let [s, o, r] = m.default.hasConsented(w.Consents.PERSONALIZATION) ? (0, b.guessGuildModeWithRemoteData)(e, t, n, i, !0) : (0, b.guessGuildModeWithLocalData)(e, n), u = null !== (l = n.filter(t => t.guild_id === e.id)[0]) && void 0 !== l ? l : {}, d = (0, O.default)(e, null != a ? a : s, u, i, t);
+                            let [s, o, r] = m.default.hasConsented(w.Consents.PERSONALIZATION) ? (0, A.guessGuildModeWithRemoteData)(e, t, n, i, !0) : (0, A.guessGuildModeWithLocalData)(e, n), u = null !== (l = n.filter(t => t.guild_id === e.id)[0]) && void 0 !== l ? l : {}, d = (0, O.default)(e, null != a ? a : s, u, i, t);
                             return {
                                 guildId: e.id,
                                 mode: s,
@@ -1253,7 +1253,7 @@
 
             function L(e, t) {
                 return Object.values(p.default.getGuilds()).some(n => {
-                    let [i] = m.default.hasConsented(w.Consents.PERSONALIZATION) ? (0, b.guessGuildModeWithRemoteData)(n, M.defaultThresholds, e, t, !1) : (0, b.guessGuildModeWithLocalData)(n, e);
+                    let [i] = m.default.hasConsented(w.Consents.PERSONALIZATION) ? (0, A.guessGuildModeWithRemoteData)(n, M.defaultThresholds, e, t, !1) : (0, A.guessGuildModeWithLocalData)(n, e);
                     return i === M.Mode.UseGreyDot
                 })
             }
@@ -1360,7 +1360,7 @@
                 }
             }
             async function k(e) {
-                await F(() => H()), await F(() => d.default.setAccountFlag(A.AccountNotificationFlags.USE_NEW_NOTIFICATIONS, !0));
+                await F(() => H()), await F(() => d.default.setAccountFlag(b.AccountNotificationFlags.USE_NEW_NOTIFICATIONS, !0));
                 let t = await F(() => f.default.saveUserGuildSettingsBulk(e));
                 r.default.dispatch({
                     type: "USER_GUILD_SETTINGS_FULL_UPDATE",
@@ -1410,8 +1410,8 @@
                         onConfirm: t,
                         cancelText: "Cancel",
                         onCancel: () => {}
-                    })), await (0, C.restoreSnapshot)(e.id), await d.default.setAccountFlag(A.AccountNotificationFlags.USE_NEW_NOTIFICATIONS, !1)
-                } else await d.default.setAccountFlag(A.AccountNotificationFlags.USE_NEW_NOTIFICATIONS, !1)
+                    })), await (0, C.restoreSnapshot)(e.id), await d.default.setAccountFlag(b.AccountNotificationFlags.USE_NEW_NOTIFICATIONS, !1)
+                } else await d.default.setAccountFlag(b.AccountNotificationFlags.USE_NEW_NOTIFICATIONS, !1)
             }
 
             function V(e) {
@@ -1896,4 +1896,4 @@
         }
     }
 ]);
-//# sourceMappingURL=52716.3ccc8610dfdccc72c4fa.js.map
+//# sourceMappingURL=52716.cf73da6ac27e59d7aeb5.js.map
