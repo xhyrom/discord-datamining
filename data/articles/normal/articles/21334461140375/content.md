@@ -49,6 +49,7 @@
 <p>1. If you meet the permission requirements, head over to the <strong>App Directory</strong> and select an app you would like to add. While in the app’s page, you can read the <strong>Overview</strong> to learn more about the app and its functionality. </p>
 <p>2. Then, press<strong> Add App </strong>and follow the prompts to confirm you would like to add the app. Some apps may ask if you want to add the app to your account or server, you can choose where to add the app here.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22010330491927" width="297" height="279"></p>
+<h3 id="docs-internal-guid-08e69e00-7fff-585e-5d03-53fc55b6295e"><span style="color: #434343;">Adding user apps from the App Directory is currently an experiment and slowly rolling out to users. </span></h3>
 <p>4. Then, you can follow the prompts which will show you what permissions and access the app will require.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22010330507159" width="600" height="361"></p>
 <p>5. Once you select <strong>Authorize </strong>and complete the prompts, you will receive a confirmation. </p>
