@@ -26637,45 +26637,21 @@ html .progress__4ef76 {
 
 .outerContainer_b1a8db {
     padding: 16px;
-    display: grid;
-    grid-template: "cta-img text cta-buttons" auto"cta-img progress-bar progress-bar" auto/min-content 1fr min-content;
-    grid-column-gap: 16px
+    display: flex
 }
 
-.outerContainerSm__7a2b1 {
-    max-height: none;
-    grid-template: "cta-img text" auto"progress-bar progress-bar" auto"cta-buttons cta-buttons" auto/min-content 1fr;
-    grid-row-gap: 6px;
-    grid-column-gap: 12px
+.outerContainerGiftInventory_da366b {
+    height: 130px
 }
 
-.outerContainerXs_ae4233 {
-    max-height: none;
-    position: relative;
-    grid-template: "cta-img" auto"text" auto"progress-bar" auto"cta-buttons" auto/1fr;
-    grid-row-gap: 6px;
-    grid-column-gap: 12px
-}
-
-.gridImg__75048 {
-    grid-area: cta-img
-}
-
-.gridText__51c95 {
-    grid-area: text
-}
-
-.gridCtaButtons__1d06d {
-    grid-area: cta-buttons
-}
-
-.gridProgressBar__7d761 {
-    grid-area: progress-bar
+.outerContainerEmbed__2b071 {
+    height: 80px
 }
 
 .questReward__47fba {
     border-radius: 8px;
-    pointer-events: none
+    pointer-events: none;
+    margin-right: 16px
 }
 
 .questRewardGiftInventory__48caa {
@@ -26686,18 +26662,6 @@ html .progress__4ef76 {
 .questRewardEmbed__27812 {
     height: 80px;
     width: 80px
-}
-
-.questRewardEmbedSm_e9be23 {
-    height: 70px;
-    width: 70px
-}
-
-.questRewardEmbedXs__1a9e5 {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    bottom: 0
 }
 
 .innerContainer__1ed70 {
@@ -26721,22 +26685,12 @@ html .progress__4ef76 {
 
 .ctaButtonContainer_cc98bf {
     display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
     gap: 8px
 }
 
-.outerContainerSm__7a2b1 .ctaButtonContainer_cc98bf {
-    flex-direction: row
-}
-
 .ctaButtonWrapper_d00132 {
     flex: 0 0 auto
-}
-
-.outerContainerSm__7a2b1 .ctaButtonWrapper_d00132,
-.outerContainerXs_ae4233 .ctaButtonWrapper_d00132 {
-    flex-grow: 1
 }
 
 .ctaTooltipCopy__0f513 {
@@ -26818,14 +26772,10 @@ html .progress__4ef76 {
     align-items: center
 }
 
-.img__4f1c2 {
-    width: 100%
-}
-
 .questIcon__3a4c1 {
     margin-right: 8px;
-    height: 100%;
-    max-width: 34px;
+    height: 34px;
+    width: 34px;
     border-radius: 4px;
     pointer-events: none
 }
@@ -26904,8 +26854,7 @@ html .progress__4ef76 {
 }
 
 .questsCard_a68cbc {
-    width: 100%;
-    max-width: 660px;
+    width: 660px;
     margin-bottom: 16px;
     border-radius: 8px;
     overflow: hidden
@@ -129863,4 +129812,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c7311a1142591477ef03.css.map*/
+/*# sourceMappingURL=app.360c88427b162ff0c87c.css.map*/
