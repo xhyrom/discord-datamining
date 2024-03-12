@@ -6664,6 +6664,7 @@
                 PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW: "Try {planName} for {duration} on us. Then !!{price}!!.",
                 PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION: "Your **free trial ends {remainingTime, plural, =0 {today} one {in # day} other {in # days}}**. After that, you’ll be charged !!{price}!!.",
                 PREMIUM_TIER_CARD_TRIAL_ACTIVATED: "free trial activated",
+                PREMIUM_TIER_CARD_TRIAL_REVAMP_HEADER_PILL: "Enjoy {duration} on us",
                 INCLUDED: "Included",
                 NOT_INCLUDED: "Not included",
                 MARKETING_REFRESH_PREMIUM_FEATURES_GO_LIVE_INFO: "Up to 4K source resolution and up to 60fps screen share.",
@@ -13504,12 +13505,16 @@
                 GUILD_MEMBER_MOD_VIEW_RECENT_AUDIT_LOG: "Moderator Action Log",
                 GUILD_MEMBER_MOD_VIEW_AUDIT_LOG_SOURCE_USER: "Member who initiated this action.",
                 GUILD_MEMBER_MOD_VIEW_MOD_PERMSSISONS_TITLE: "Mod Permissions",
+                GUILD_MEMBER_MOD_VIEW_PERMISSIONS_SEARCH_PLACEHOLDER: "Search permission names, category, or description...",
                 GUILD_MEMBER_MOD_VIEW_VIEW_ALL_PERMISSIONS: "All ({count})",
                 GUILD_MEMBER_MOD_VIEW_ROLE_COUNT: "{roleCount, plural, =1 {# Role} other {# Roles}}",
                 GUILD_MEMBER_MOD_VIEW_MOD_PERMSSISONS_PANEL_TITLE: "All Granted Permissions",
                 GUILD_MEMBER_MOD_VIEW_MOD_NO_MOD_PERMS_FOUND: "No Mod Permissions",
                 GUILD_MEMBER_MOD_VIEW_PERMISSION_GRANTED_BY: "Granted By",
-                GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_GRANTED_BY: "(Risky) Granted By",
+                GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_GRANTED_BY: "(Elevated) Granted By",
+                GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION: "Elevated",
+                GUILD_MEMBER_MOD_VIEW_MOD_PERMISSION: "Moderator",
+                GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_TOOLTIP: "Elevated permissions grant higher levels of access to server settings, and should only be granted to highly trusted mods.",
                 GUILD_MEMBER_MOD_VIEW_PERMISSION_GRANTED_BY_ARIA_LABEL: "Permission Granted By These Roles",
                 GUILD_MEMBER_MOD_VIEW_HIGHEST_ROLE: "Highest Role",
                 GUILD_MEMBER_MOD_VIEW_TITLE: "Mod View",
@@ -18464,7 +18469,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274488", ", Version Hash: ").concat("eca95532c56e68b1fe106246f969fe4e800e114d")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274501", ", Version Hash: ").concat("178e1c01458119176546e78dd71924c5051cf121")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20827,8 +20832,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "274488", "274488"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274488")), _ = 0), _
+                let _ = parseInt((e = "274501", "274501"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274501")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37010,4 +37015,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.cb3233b3a2419867b1ce.js.map
+//# sourceMappingURL=76039.311281b2b2df74d07713.js.map
