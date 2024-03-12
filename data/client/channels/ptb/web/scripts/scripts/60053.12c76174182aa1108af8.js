@@ -63949,28 +63949,28 @@
             "use strict";
             n.r(t), n.d(t, {
                 setHighlightedSummary: function() {
-                    return _
+                    return T
                 },
                 toggleTopicsBar: function() {
-                    return v
+                    return _
                 },
                 setSelectedSummary: function() {
-                    return N
+                    return v
                 },
                 updateVisibleMessages: function() {
-                    return A
+                    return N
                 },
                 useSummaryPolling: function() {
-                    return M
+                    return O
                 },
                 setSummaryFeedback: function() {
-                    return k
+                    return M
                 },
                 deleteSummary: function() {
-                    return b
+                    return L
                 },
                 default: function() {
-                    return j
+                    return P
                 }
             }), n("222007");
             var i = n("884691"),
@@ -63982,19 +63982,18 @@
                 u = n("913144"),
                 d = n("448993"),
                 c = n("734575"),
-                f = n("104589"),
-                p = n("116460"),
-                m = n("42203"),
-                h = n("718517"),
-                x = n("347738"),
-                E = n("995307"),
-                y = n("49111");
-            let g = 30 * h.default.Millis.SECOND,
-                S = {},
-                C = {};
-            async function I(e, t) {
+                f = n("619443"),
+                p = n("42203"),
+                m = n("718517"),
+                h = n("347738"),
+                x = n("995307"),
+                E = n("49111");
+            let y = 30 * m.default.Millis.SECOND,
+                g = {},
+                S = {};
+            async function C(e, t) {
                 let n, i;
-                if (!x.default.shouldFetch(e, t)) return;
+                if (!h.default.shouldFetch(e, t)) return;
                 let l = Date.now();
                 u.default.dispatch({
                     type: "REQUEST_CHANNEL_SUMMARY",
@@ -64003,7 +64002,7 @@
                     requestedAt: l
                 });
                 try {
-                    let n = await o.default.get(y.Routes.CHANNEL_SUMMARY(e, t));
+                    let n = await o.default.get(E.Routes.CHANNEL_SUMMARY(e, t));
                     i = null == n ? void 0 : n.body
                 } catch (e) {
                     n = new d.APIError(e)
@@ -64017,10 +64016,10 @@
                     receivedAt: Date.now()
                 })
             }
-            async function T(e) {
+            async function I(e) {
                 var t, n;
                 let i, l;
-                if (!x.default.shouldFetch(e)) return;
+                if (!h.default.shouldFetch(e)) return;
                 let s = Date.now();
                 u.default.dispatch({
                     type: "REQUEST_CHANNEL_SUMMARIES",
@@ -64028,7 +64027,7 @@
                     requestedAt: s
                 });
                 try {
-                    l = await o.default.get(y.Routes.CHANNEL_SUMMARIES(e))
+                    l = await o.default.get(E.Routes.CHANNEL_SUMMARIES(e))
                 } catch (e) {
                     i = new d.APIError(e)
                 }
@@ -64043,7 +64042,7 @@
                 })
             }
 
-            function _(e, t) {
+            function T(e, t) {
                 u.default.dispatch({
                     type: "SET_HIGHLIGHTED_SUMMARY",
                     channelId: e,
@@ -64051,21 +64050,21 @@
                 })
             }
 
-            function v() {
+            function _() {
                 u.default.dispatch({
                     type: "TOGGLE_TOPICS_BAR"
                 })
             }
 
-            function N(e, t) {
-                null != e && null != t && I(e, t), u.default.dispatch({
+            function v(e, t) {
+                null != e && null != t && C(e, t), u.default.dispatch({
                     type: "SET_SELECTED_SUMMARY",
                     channelId: e,
                     summaryId: null != t ? t : null
                 })
             }
 
-            function A(e, t) {
+            function N(e, t) {
                 u.default.dispatch({
                     type: "UPDATE_VISIBLE_MESSAGES",
                     topVisibleMessage: null != e ? e : null,
@@ -64073,13 +64072,13 @@
                 })
             }
 
-            function O(e, t) {
-                return null == S[e] && (S[e] = 0), null === t ? S[e] = 0 : S[e] += t, S[e]
+            function A(e, t) {
+                return null == g[e] && (g[e] = 0), null === t ? g[e] = 0 : g[e] += t, g[e]
             }
 
-            function M(e) {
+            function O(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                    n = (0, r.default)([m.default], () => m.default.getChannel(e), [e]),
+                    n = (0, r.default)([p.default], () => p.default.getChannel(e), [e]),
                     [l, a] = i.useState(null),
                     o = (0, c.useChannelSummariesExperiment)(n) && !s.isMobile;
                 i.useEffect(() => {
@@ -64087,23 +64086,23 @@
                         a(null)
                     }
                 }, [e, o]), i.useEffect(() => {
-                    if (l !== e && null != l && P.stopPolling(e), o && null != l) return (t || null != e && l !== e) && P.fetchSummaries(e), P.startPolling(e), () => {
-                        null != l && P.stopPolling(e)
+                    if (l !== e && null != l && b.stopPolling(e), o && null != l) return (t || null != e && l !== e) && b.fetchSummaries(e), b.startPolling(e), () => {
+                        null != l && b.stopPolling(e)
                     }
                 }, [e, t, l, o])
             }
 
-            function k(e, t) {
+            function M(e, t) {
                 u.default.dispatch({
                     type: "SET_SUMMARY_FEEDBACK",
                     summary: e,
                     rating: t
                 })
             }
-            async function R() {
+            async function k() {
                 var e;
                 let t, n;
-                if (!x.default.shouldFetchChannelAffinities()) return Promise.resolve(null);
+                if (!h.default.shouldFetchChannelAffinities()) return Promise.resolve(null);
                 let i = Date.now();
                 u.default.dispatch({
                     type: "REQUEST_CHANNEL_AFFINITIES",
@@ -64123,25 +64122,25 @@
                     receivedAt: Date.now()
                 })
             }
-            async function L(e) {
+            async function R(e) {
                 let t, n, {
                     useQuickSwitcher: i = !0,
                     useChannelAffinities: l = !0
                 } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 e = null != e ? e : [];
                 let a = Date.now();
-                if (0 === (e = e.concat(x.default.defaultChannelIds({
+                if (0 === (e = e.concat(h.default.defaultChannelIds({
                         withQuickSwitcher: i,
                         withChannelAffinities: l
                     })).filter(e => {
-                        let t = m.default.getChannel(e);
+                        let t = p.default.getChannel(e);
                         return (0, c.canSeeChannelSummaries)(t, !1, !0)
                     }).filter(e => {
                         let t = Date.now(),
-                            n = x.default.status(e);
+                            n = h.default.status(e);
                         if (null == n ? void 0 : n.fetching) return !1;
                         let i = null == n ? void 0 : n.lastReceivedAt;
-                        return null == i || t - i > g
+                        return null == i || t - i > y
                     }).slice(0, 50)).length) return Promise.resolve(null);
                 u.default.dispatch({
                     type: "REQUEST_CHANNEL_SUMMARIES_BULK",
@@ -64150,7 +64149,7 @@
                 });
                 try {
                     n = await o.default.post({
-                        url: y.Routes.USER_SUMMARIES,
+                        url: E.Routes.USER_SUMMARIES,
                         body: {
                             channel_ids: e
                         }
@@ -64170,9 +64169,9 @@
                     error: t
                 })
             }
-            async function b(e) {
+            async function L(e) {
                 try {
-                    await o.default.delete(y.Routes.CHANNEL_SUMMARY(e.channelId, e.id)), u.default.dispatch({
+                    await o.default.delete(E.Routes.CHANNEL_SUMMARY(e.channelId, e.id)), u.default.dispatch({
                         type: "DELETE_SUMMARY",
                         summary: e
                     })
@@ -64180,48 +64179,46 @@
                     throw new d.APIError(e)
                 }
             }
-            let P = {
+            let b = {
                 startPolling: function(e) {
-                    let t = O(e, 1);
-                    t - 1 == 0 && (C[e] = setInterval(async () => {
-                        await P.fetchSummaries(e)
-                    }, E.SUMMARY_POLL_INTERVAL))
+                    let t = A(e, 1);
+                    t - 1 == 0 && (S[e] = setInterval(async () => {
+                        await b.fetchSummaries(e)
+                    }, x.SUMMARY_POLL_INTERVAL))
                 },
                 stopPolling: function(e) {
-                    let t = O(e, -1);
-                    t <= 0 && (O(e, 0), clearInterval(C[e]))
+                    let t = A(e, -1);
+                    t <= 0 && (A(e, 0), clearInterval(S[e]))
                 },
-                setSummaryFeedback: k,
-                useSummaryPolling: M,
-                updateVisibleMessages: A,
-                setSelectedSummary: N,
-                setHighlightedSummary: _,
-                fetchSummaries: T,
-                fetchSummariesBulk: L,
+                setSummaryFeedback: M,
+                useSummaryPolling: O,
+                updateVisibleMessages: N,
+                setSelectedSummary: v,
+                setHighlightedSummary: T,
+                fetchSummaries: I,
+                fetchSummariesBulk: R,
                 useChannelSummaries: function(e) {
                     let {
                         channelIds: t = []
                     } = e;
                     return ! function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-                            t = i.useMemo(() => e.join(","), [e]);
+                            t = (0, r.default)([f.default], () => f.default.isConnected()),
+                            n = i.useMemo(() => e.join(","), [e]);
                         i.useEffect(() => {
-                            (async function e() {
+                            t && e();
+                            async function e() {
                                 try {
-                                    await R()
+                                    await k()
                                 } catch (e) {}
-                                try {
-                                    var e, n;
-                                    (null === (e = p.default.getProps().results) || void 0 === e ? void 0 : e.length) === 0 && (0, f.search)(null !== (n = p.default.getProps().query) && void 0 !== n ? n : "")
-                                } catch (e) {}
-                                await L(t.split(","))
-                            })()
-                        }, [t])
-                    }(t), (0, r.useStateFromStoresArray)([x.default], () => x.default.topSummaries(), [])
+                                await R(n.split(","))
+                            }
+                        }, [n, t])
+                    }(t), (0, r.useStateFromStoresArray)([h.default], () => h.default.topSummaries(), [])
                 },
-                deleteSummary: b
+                deleteSummary: L
             };
-            var j = P
+            var P = b
         },
         995307: function(e, t, n) {
             "use strict";
@@ -81903,4 +81900,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.eea9ee9bbf92aa2e4ba9.js.map
+//# sourceMappingURL=60053.12c76174182aa1108af8.js.map
