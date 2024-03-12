@@ -46,6 +46,9 @@
     <li><a href="https://discord.gg/dhgEgZkeJx" target="_blank" rel="noopener noreferrer">Chef Showdown</a></li>
 </ol>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
+<h3><span style="color: #434343;">Activities are available in some server text channels as an experiment that is currently only available to a limited number of servers. Users in eligible servers can start in-text activities from the mobile app using the button shown below:<br></span></h3>
+<h3 id="h_01HRSV6DAB8T6Q1KGJQ4A9GZQK" class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/22015519434007" width="81" height="80"></strong></h3>
+<h3 id="h_01HRSV6DABT4N7XKMAC3PC57RT" class="wysiwyg-text-align-center"><strong><span style="color: #666666;">Activity Launcher icon as shown in mobile app.</span></strong></h3>
 <h2 id="docs-internal-guid-67d1f612-7fff-856e-6a7d-09e2618d9a7f">On Desktop/Browser</h2>
 <p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group direct message (GDM).</p>
 <p>2. To start an Activity, all you need to do is press on the Activity Launcher rocket ship icon.</p>
