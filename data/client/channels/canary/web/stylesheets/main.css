@@ -47288,8 +47288,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -66525,8 +66525,8 @@ html .invoiceCancelRow_c1bfe7 {
 }
 
 .planInfo_cd8cba {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -129989,4 +129989,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.9945f525d3985d448566.css.map*/
+/*# sourceMappingURL=app.71c3754c2d41145561a9.css.map*/
