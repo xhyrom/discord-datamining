@@ -29749,7 +29749,7 @@
                             } = n,
                             y = null !== (i = n.flags) && void 0 !== i ? i : 0,
                             [P, k] = (0, G.default)(l);
-                        if (P && (l = k, y = (0, et.addFlag)(y, eo.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === l && null == g && null == S && null == A) return Promise.reject(Error("not sending empty message"));
+                        if (P && (l = k, y = (0, et.addFlag)(y, eo.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === l && null == g && null == S && null == A) return Promise.resolve();
                         let F = null != I ? eo.MessageTypes.REPLY : eo.MessageTypes.DEFAULT,
                             x = null !== (r = n.nonce) && void 0 !== r ? r : (0, O.createNonce)();
                         if (!1 !== n.eagerDispatch) {
@@ -87454,8 +87454,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710349579376",
-                                    build_number: "274754"
+                                    built_at: "1710350150099",
+                                    build_number: "274756"
                                 }
                             },
                             retries: 1
@@ -124863,7 +124863,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "e45e2e20583488b3670a9dc40e679fc143e220f3"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "5bee3cd7979a933f75906e151b3668688647abd9"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134202,7 +134202,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274754"
+                                build_number: "274756"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151811,4 +151811,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.66f2638266f35921ce5a.js.map
+//# sourceMappingURL=29062.2bb468e49a2eee40cded.js.map
