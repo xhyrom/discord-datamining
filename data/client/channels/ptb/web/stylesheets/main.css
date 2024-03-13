@@ -47279,8 +47279,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -64726,7 +64726,7 @@ html .progress__4ef76 {
     pointer-events: none
 }
 
-.background_abacb9 {
+.background__8832b {
     position: absolute;
     top: -100vh;
     bottom: -100vh;
@@ -64736,7 +64736,7 @@ html .progress__4ef76 {
     pointer-events: none
 }
 
-.wrapper_e8ee0c {
+.wrapper__7a5c1 {
     position: absolute;
     bottom: 40px;
     right: 40px;
@@ -64744,17 +64744,17 @@ html .progress__4ef76 {
     flex-direction: column
 }
 
-.wrapper_e8ee0c:hover .entrypoint__8c831 {
+.wrapper__7a5c1:hover .entrypoint__10e94 {
     box-shadow: var(--elevation-high), 0 0 7px 2px hsl(var(--white-500-hsl)/.8)inset
 }
 
-.wrapper_e8ee0c:hover .closeButton__4396e,
-.wrapper_e8ee0c:hover .iconButton_cefe5e {
+.wrapper__7a5c1:hover .closeButton_c603ea,
+.wrapper__7a5c1:hover .iconButton_eb2bbf {
     opacity: 1;
     transform: translatez(0)
 }
 
-.entrypoint__8c831 {
+.entrypoint__10e94 {
     position: relative;
     background: linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients));
     display: flex;
@@ -64766,7 +64766,7 @@ html .progress__4ef76 {
     cursor: pointer
 }
 
-.backgroundWrapper_b33782 {
+.backgroundWrapper_d7758f {
     position: absolute;
     top: 0;
     left: 0;
@@ -64775,29 +64775,29 @@ html .progress__4ef76 {
     overflow: hidden
 }
 
-.backgroundImage_a126f1 {
+.backgroundImage__7315e {
     background-image: url(/assets/7f10d688807618fef460.svg);
     background-size: 400px 140px;
     opacity: .5
 }
 
-.image__4fd61 {
+.image_ff8cda {
     position: absolute;
     top: -20px;
     left: 16px
 }
 
-.body__5e040 {
+.body_df9987 {
     display: flex;
     flex-direction: column;
     margin-left: 86px
 }
 
-.buttonWrapper__12958 {
+.buttonWrapper__1702a {
     margin-left: 20px
 }
 
-.button_b9f489 {
+.button__5619c {
     color: var(--white-500);
     background-color: var(--primary-700);
     border-radius: 4px;
@@ -64805,23 +64805,23 @@ html .progress__4ef76 {
     transition: opacity.2s ease, transform.2s ease
 }
 
-.button_b9f489:hover {
+.button__5619c:hover {
     background-color: var(--black-500)
 }
 
-.iconButton_cefe5e {
+.iconButton_eb2bbf {
     width: 20px;
     height: 20px;
     padding: 4px;
     transform: translate3d(10px, 0, 0)
 }
 
-.buttonIcon_e37f26 {
+.buttonIcon__029b7 {
     width: 20px;
     height: 20px
 }
 
-.closeButton__4396e {
+.closeButton_c603ea {
     cursor: pointer;
     margin-bottom: 8px;
     align-self: flex-end;
@@ -64833,12 +64833,12 @@ html .progress__4ef76 {
     padding: 2px 8px
 }
 
-.closeIcon_ec06a5 {
+.closeIcon_e4622b {
     width: 16px;
     height: 16px
 }
 
-.reduce-motion .button_b9f489 {
+.reduce-motion .button__5619c {
     transform: translatez(0)
 }
 
@@ -76816,8 +76816,13 @@ input::-webkit-inner-spin-button {
     height: 100%;
     left: 0;
     padding: 8px;
+    pointer-events: none;
     position: absolute;
     width: 100%
+}
+
+.contentInteractable__902a8 {
+    pointer-events: all
 }
 
 .questPromoContent__2941f {
@@ -76937,8 +76942,7 @@ input::-webkit-inner-spin-button {
 }
 
 .cta_f68ce1 {
-    background-color: rgba(255, 255, 255, .3);
-    border: 1px solid transparent;
+    background-color: hsl(var(--black-500-hsl)/.2);
     color: var(--white-500);
     padding-bottom: 4px;
     padding-top: 4px;
@@ -76947,13 +76951,11 @@ input::-webkit-inner-spin-button {
 
 .cta_f68ce1:hover,
 .cta_f68ce1:focus {
-    background-color: rgba(255, 255, 255, .4);
-    border-color: var(--white-500)
+    background-color: hsl(var(--black-500-hsl)/.25)
 }
 
 .cta_f68ce1:active {
-    background-color: rgba(255, 255, 255, .15);
-    border-color: transparent
+    background-color: hsl(var(--black-500-hsl)/.35)
 }
 
 .ctaClaimReward_e4b6be {
@@ -107786,6 +107788,24 @@ html .invoiceCancelRow_a8669b {
     width: 100%
 }
 
+.content_c858dd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 16px
+}
+
+.image__8d807 {
+    margin-bottom: 24px;
+    width: 94px;
+    height: 94px
+}
+
+.title__5d436 {
+    margin-bottom: 8px
+}
+
 .title__7e4ac {
     text-align: center;
     font-weight: 700;
@@ -129960,4 +129980,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.60f76d8f4ff3c5f3ca0b.css.map*/
+/*# sourceMappingURL=app.40faf15a70ba3a2b00e4.css.map*/
