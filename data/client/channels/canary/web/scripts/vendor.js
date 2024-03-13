@@ -28149,9 +28149,9 @@
                     url: P.Endpoints.BULK_GUILD_BAN(e),
                     body: {
                         user_ids: t,
-                        delete_message_seconds: n,
-                        reason: i
+                        delete_message_seconds: n
                     },
+                    reason: i,
                     oldFormErrors: !0
                 }),
                 async createRole(e, t, n) {
@@ -87392,8 +87392,8 @@
                     }();
                     null != u && o.tags.push("platform:".concat(u));
                     let d = function() {
-                        let e = "{{cf_shim}}RELEASE_CHANNEL{{/cf_shim}}";
-                        return i.ReleaseChannelsSets.ALL.has(e) ? e : null
+                        let e = window.GLOBAL_ENV.RELEASE_CHANNEL;
+                        return null != e && i.ReleaseChannelsSets.ALL.has(e) ? e : null
                     }();
                     null != d && o.tags.push("release_channel:".concat(d)), this._metrics.push(o), (t || this._metrics.length >= 100) && this._flush()
                 }
@@ -87405,8 +87405,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710341374677",
-                                    build_number: "274711"
+                                    built_at: "1710347968366",
+                                    build_number: "274737"
                                 }
                             },
                             retries: 1
@@ -124814,7 +124814,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "7e203dccd42a3cf5d77f8e39ebad7f2bd11f6283"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "4b829224c1acf4837bc2aa3c4dd3b9aa1eccac5c"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134153,7 +134153,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274711"
+                                build_number: "274737"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151762,4 +151762,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.f977cd653f4d193edd11.js.map
+//# sourceMappingURL=29062.0732df3e7cf7dcd122ac.js.map
