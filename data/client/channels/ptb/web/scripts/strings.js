@@ -3352,9 +3352,9 @@
                 USER_SETTINGS_KEYBIND_SWITCH_SERVER_SETTINGS_SECTION: "Select the voice channel to join or switch to",
                 USER_SETTINGS_KEYBIND_ENABLE_DISABLE: "Enable or disable keybind",
                 USER_SETTINGS_KEYBIND_VOICE_CHANNEL_RESULTS: "Results",
-                SHOW_CURRENT_ACTIVITY: "Display current activity as a status message.",
+                SHOW_CURRENT_ACTIVITY: "Share your activity with others.",
                 SHOW_CURRENT_ACTIVITY_DESC: "Discord will automatically update your status if you're attending a public Stage.",
-                SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED: "Discord will automatically update your status based on the game you're playing (if detectable), an activity you're doing that supports Rich Presence, or if you're attending a public Stage.",
+                SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED: "When you engage in a detectable activity (such as playing a game or listening to music), Discord can display information about those activities, including when and how you've engaged.",
                 GAME_DETECTION_SERVICE: "Game Detection Service",
                 USER_SETTINGS_GAMES_INSTALL_LOCATIONS: "Install locations",
                 USER_SETTINGS_GAMES_INSTALL_LOCATION_ADD: "Add Install Location",
@@ -18477,7 +18477,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274972", ", Version Hash: ").concat("cf469d7bc9f4b2c9da41c685b55f77cd922237df")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274979", ", Version Hash: ").concat("566845e21fb9217ac54073ec82b72c7d163bc8ea")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20127,6 +20127,11 @@
                     actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED"],
                     inlineRequire: () => E("389295").default,
                     neverLoadBeforeConnectionOpen: !0
+                },
+                RunningGameHeartbeatManager: {
+                    actions: ["RUNNING_GAMES_CHANGE", "LOGOUT", "CONNECTION_CLOSED", "POST_CONNECTION_OPEN"],
+                    inlineRequire: () => E("34226").default,
+                    neverLoadBeforeConnectionOpen: !0
                 }
             };
             (0, t.initialize)(o)
@@ -20840,8 +20845,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "274972", "274972"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274972")), _ = 0), _
+                let _ = parseInt((e = "274979", "274979"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274979")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -23209,6 +23214,92 @@
             function n() {
                 return (0, t.useStateFromStores)([o.default], () => null != o.default.getRemoteSessionId() || null != o.default.getAwaitingRemoteSessionInfo())
             }
+        },
+        963990: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                removeExecutablePathPrefix: function() {
+                    return t
+                }
+            });
+
+            function t(e) {
+                var _;
+                let E = ((_ = (_ = e).toLowerCase()).endsWith("/") && (_ = _.slice(0, -1)), _);
+                return E.split("/").slice(-2).join("/")
+            }
+        },
+        34226: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return A
+                }
+            }), E("222007");
+            var t = E("862337"),
+                o = E("689988"),
+                n = E("546463"),
+                r = E("945956"),
+                a = E("599110"),
+                i = E("718517"),
+                I = E("963990"),
+                s = E("161454"),
+                T = E("161454"),
+                S = E("49111");
+            let N = 15 * i.default.Millis.MINUTE;
+            class O extends o.default {
+                _terminate() {
+                    this.stopHeartbeat()
+                }
+                maybeStartHeartbeat() {
+                    !this.heartbeatInterval.isStarted() && (this.logRunningGameHeartbeats(), this.heartbeatInterval.start(N, this.logRunningGameHeartbeats))
+                }
+                stopHeartbeat() {
+                    this.heartbeatInterval.stop(), this.runningGameKeys.clear()
+                }
+                handlePostConnectionOpen() {
+                    s.default.getVisibleRunningGames().length > 0 && this.maybeStartHeartbeat()
+                }
+                constructor(...e) {
+                    super(...e), this.heartbeatInterval = new t.Interval, this.runningGameKeys = new Set, this.actions = {
+                        RUNNING_GAMES_CHANGE: e => this.handleRunningGamesChanged(e),
+                        LOGOUT: () => this.stopHeartbeat(),
+                        CONNECTION_CLOSED: () => this.stopHeartbeat(),
+                        POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
+                    }, this.handleRunningGamesChanged = e => {
+                        let {
+                            games: _
+                        } = e;
+                        if (0 === _.length) {
+                            this.stopHeartbeat();
+                            return
+                        }
+                        this.maybeStartHeartbeat()
+                    }, this.logRunningGameHeartbeats = () => {
+                        let e = s.default.getVisibleRunningGames(),
+                            _ = {
+                                rtc_connection_id: r.default.getRTCConnectionId(),
+                                media_session_id: r.default.getMediaSessionId()
+                            },
+                            E = new Set;
+                        e.forEach(e => {
+                            var t, o;
+                            let r = (0, T.gameKey)(e),
+                                i = !this.runningGameKeys.has(r),
+                                s = null !== (o = e.id) && void 0 !== o ? o : null === (t = n.default.getGameByName(e.name)) || void 0 === t ? void 0 : t.id;
+                            a.default.track(S.AnalyticEvents.RUNNING_GAME_HEARTBEAT, {
+                                game_id: s,
+                                game_name: e.name,
+                                game_distributor: e.distributor,
+                                game_executable: (0, I.removeExecutablePathPrefix)(e.exePath),
+                                initial_heartbeat: i,
+                                ..._
+                            }), E.add((0, T.gameKey)(e))
+                        }), this.runningGameKeys = E
+                    }
+                }
+            }
+            var A = new O
         },
         597090: function(e, _, E) {
             "use strict";
@@ -37023,4 +37114,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.d5381766fd2642220a76.js.map
+//# sourceMappingURL=76039.7c7d803ab9f0df9a1213.js.map
