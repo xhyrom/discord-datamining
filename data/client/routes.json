@@ -4059,7 +4059,7 @@
   },
   "APPLICATION_COMMAND_INDEX_CHANNEL": {
     "url": "/channels/:param/application-command-index",
-    "allowed_methods": null
+    "allowed_methods": []
   },
   "APPLICATION_COMMAND_INDEX_GUILD": {
     "url": "/guilds/:param/application-command-index",
