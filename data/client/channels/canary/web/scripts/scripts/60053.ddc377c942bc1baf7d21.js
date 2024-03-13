@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["59196"], {
+    ["60053"], {
         777483: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "668973",
@@ -71901,7 +71901,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return m
                 }
             });
             var i = n("37983");
@@ -71912,26 +71912,26 @@
                 r = n("476263"),
                 o = n("547620"),
                 u = n("646718"),
-                d = n("877670");
-            let c = {
-                    XXSMALL: d.xxsmall,
-                    XSMALL: d.xsmall,
-                    SMALL: d.small,
-                    MEDIUM: d.medium,
-                    LARGE: d.large
+                d = n("782340"),
+                c = n("877670");
+            let f = {
+                    XXSMALL: c.xxsmall,
+                    XSMALL: c.xsmall,
+                    SMALL: c.small,
+                    MEDIUM: c.medium,
+                    LARGE: c.large
                 },
-                f = e => {
+                p = e => {
                     let t, {
                         game: l,
-                        guild: f,
-                        skuId: p,
-                        pid: m,
-                        className: h,
-                        guildClassName: x,
-                        size: E = c.MEDIUM,
-                        ...y
+                        guild: p,
+                        skuId: m,
+                        pid: h,
+                        className: x,
+                        guildClassName: E,
+                        size: y = f.MEDIUM
                     } = e;
-                    if (null != p && (t = function(e) {
+                    if (null != m && (t = function(e) {
                             if (null == e) return null;
                             switch (e) {
                                 case u.PremiumSubscriptionSKUs.GUILD:
@@ -71946,53 +71946,56 @@
                                 default:
                                     return null
                             }
-                        }(p)), null != l && null == t && (t = l.getIconURL(function(e) {
+                        }(m)), null != l && null == t && (t = l.getIconURL(function(e) {
                             switch (e) {
-                                case c.XXSMALL:
+                                case f.XXSMALL:
                                     return 16;
-                                case c.XSMALL:
+                                case f.XSMALL:
                                     return 24;
-                                case c.SMALL:
+                                case f.SMALL:
                                     return 30;
-                                case c.MEDIUM:
+                                case f.MEDIUM:
                                     return 40;
-                                case c.LARGE:
+                                case f.LARGE:
                                     return 60;
                                 default:
                                     return 80
                             }
-                        }(E))), null == (t = (0, s.default)(m, t)) && null != f) {
+                        }(y))), null == (t = (0, s.default)(h, t)) && null != p) {
                         let e = function(e) {
                             switch (e) {
-                                case c.XSMALL:
+                                case f.XSMALL:
                                     return r.default.Sizes.SMALLER;
-                                case c.SMALL:
+                                case f.SMALL:
                                     return r.default.Sizes.SMALL;
-                                case c.LARGE:
+                                case f.LARGE:
                                     return r.default.Sizes.LARGE;
                                 default:
-                                case c.MEDIUM:
+                                case f.MEDIUM:
                                     return r.default.Sizes.MEDIUM
                             }
-                        }(E);
+                        }(y);
                         return (0, i.jsx)(r.default, {
-                            className: a(d.gameIcon, x, h),
-                            guild: f,
+                            className: a(c.gameIcon, E, x),
+                            guild: p,
                             size: e
                         })
                     }
-                    return null == t ? (0, i.jsx)(o.default, {
-                        className: a(d.gameIcon, E, h)
-                    }) : (0, i.jsx)("div", {
-                        ...y,
-                        className: a(d.gameIcon, E, h),
-                        style: {
-                            backgroundImage: "url('".concat(t, "')")
-                        }
+                    if (null == t) return (0, i.jsx)(o.default, {
+                        className: a(c.gameIcon, y, x)
+                    });
+                    let g = null == l ? void 0 : l.name,
+                        S = null != g && "" !== g ? d.default.Messages.APPLICATION_ICON_A11Y_LABEL.format({
+                            applicationName: g
+                        }) : d.default.Messages.APPLICATION_ICON_NO_NAME_A11Y_LABEL;
+                    return (0, i.jsx)("img", {
+                        alt: S,
+                        src: t,
+                        className: a(c.gameIcon, y, x)
                     })
                 };
-            f.Sizes = c;
-            var p = f
+            p.Sizes = f;
+            var m = p
         },
         663175: function(e, t, n) {
             "use strict";
@@ -81887,4 +81890,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.99f354d26f0ff4d8e612.js.map
+//# sourceMappingURL=60053.ddc377c942bc1baf7d21.js.map
