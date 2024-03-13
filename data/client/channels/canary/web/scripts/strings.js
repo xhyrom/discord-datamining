@@ -16538,6 +16538,8 @@
                 SAFETY_TOOLS_ACTION_SHEET_ABOUT_DESCRIPTION: "We take teen safety seriously at Discord. When we detect a possible safety risk in a conversation, we'll let you know. [Learn more about safety alerts.]({learnMoreLink})",
                 SAFETY_TOOLS_ACTION_SHEET_ABOUT_GO_TO_SETTINGS: "Go to settings",
                 SAFETY_TOOLS_ACTION_SHEET_ABOUT_DISMISS: "Dismiss",
+                SAFETY_TOOLS_REPORT_FALSE_POSITIVE: "Did we make a mistake? $[Let us know](reportFalsePositiveHook)",
+                SAFETY_TOOLS_REPORT_FALSE_POSITIVE_SUCCESS: "Thanks for your feedback!",
                 STRANGER_DANGER_BANNER_HEADER: "Unwanted message?",
                 STRANGER_DANGER_BANNER_DESCRIPTION: "If you don't want to chat with this person, you can block or mute them.",
                 STRANGER_DANGER_BANNER_MORE_TIPS: "More tips",
@@ -18469,7 +18471,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274831", ", Version Hash: ").concat("c72ff7d4a3714c6961152b3bc63c64c400d0c196")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274847", ", Version Hash: ").concat("9ebc8ccd68c5d93891edb01982a69b7785202785")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20832,8 +20834,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "274831", "274831"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274831")), _ = 0), _
+                let _ = parseInt((e = "274847", "274847"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274847")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37015,4 +37017,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.2c5b8ee32f3e828450c9.js.map
+//# sourceMappingURL=76039.491414341d5306098dcc.js.map
