@@ -4782,6 +4782,10 @@
       "OPTIONS"
     ]
   },
+  "SAFETY_WARNING_FALSE_POSITIVE": {
+    "url": "/channels/:param/safety-warning/report-false-positive",
+    "allowed_methods": null
+  },
   "MY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me",
     "allowed_methods": [
