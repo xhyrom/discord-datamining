@@ -76965,6 +76965,11 @@ input::-webkit-inner-spin-button {
     z-index: 1
 }
 
+.wrapperAssetsLoading__4c5ba {
+    opacity: 0;
+    pointer-events: none
+}
+
 .lottieAnimation_ce11a1 {
     position: absolute;
     pointer-events: none
@@ -129899,4 +129904,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e4546dda8e38ef0ad527.css.map*/
+/*# sourceMappingURL=app.475c0de0de0ddd57cd3d.css.map*/
