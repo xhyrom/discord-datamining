@@ -87356,57 +87356,106 @@
                 })
             }
         },
+        82087: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isMetricsEndpointV2Enabled: function() {
+                    return r
+                }
+            });
+            var i = n("862205");
+            let s = (0, i.createExperiment)({
+                kind: "user",
+                id: "2024-03_metrics_endpoint_v2",
+                label: "Metrics V2 Endpoint Rollout",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enables sending metrics to the v2 endpoint which accepts a new data format",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function r(e) {
+                let {
+                    enabled: t
+                } = s.getCurrentConfig({
+                    location: e
+                }, {
+                    autoTrackExposure: !0
+                });
+                return t
+            }
+        },
         155084: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return f
                 }
             }), n("222007"), n("424973");
-            var i = n("615361"),
-                s = n("872717"),
-                r = n("773336"),
-                a = n("827032"),
-                o = n("49111");
-            let l = new Set(["darwin", "linux", "win32", "ios", "android"]);
-            var u = new class e {
-                increment(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                        {
-                            name: n,
-                            tags: s
-                        } = e,
-                        o = {
-                            name: n,
-                            tags: (0, a.getGlobalTagsArray)()
-                        };
-                    null != s && s.forEach(e => {
-                        o.tags.push(e)
+            var i, s, r = n("615361"),
+                a = n("872717"),
+                o = n("773336"),
+                l = n("82087"),
+                u = n("827032"),
+                d = n("49111");
+            let c = new Set(["darwin", "linux", "win32", "ios", "android"]);
+            (s = i || (i = {})).COUNT = "count", s.DISTRIBUTION = "distribution";
+            var f = new class e {
+                _getMetricWithDefaults(e, t) {
+                    let {
+                        name: n,
+                        tags: i
+                    } = e, s = {
+                        name: n,
+                        type: t,
+                        tags: (0, u.getGlobalTagsArray)()
+                    };
+                    null != i && i.forEach(e => {
+                        s.tags.push(e)
                     });
-                    let u = function() {
-                        if ((0, r.isWeb)()) return "web";
+                    let a = function() {
+                        if ((0, o.isWeb)()) return "web";
                         {
-                            let e = (0, r.getPlatformName)();
-                            return l.has(e) ? e : null
+                            let e = (0, o.getPlatformName)();
+                            return c.has(e) ? e : null
                         }
                     }();
-                    null != u && o.tags.push("platform:".concat(u));
-                    let d = function() {
+                    null != a && s.tags.push("platform:".concat(a));
+                    let l = function() {
                         let e = window.GLOBAL_ENV.RELEASE_CHANNEL;
-                        return null != e && i.ReleaseChannelsSets.ALL.has(e) ? e : null
+                        return null != e && r.ReleaseChannelsSets.ALL.has(e) ? e : null
                     }();
-                    null != d && o.tags.push("release_channel:".concat(d)), this._metrics.push(o), (t || this._metrics.length >= 100) && this._flush()
+                    return null != l && s.tags.push("release_channel:".concat(l)), s
+                }
+                increment(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = this._getMetricWithDefaults(e, "count");
+                    this._metrics.push(n), (t || this._metrics.length >= 100) && this._flush()
+                }
+                distribution(e, t) {
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+                        i = {
+                            ...this._getMetricWithDefaults(e, "distribution"),
+                            value: t
+                        };
+                    this._metrics.push(i), (n || this._metrics.length >= 100) && this._flush()
                 }
                 _flush() {
                     if (this._metrics.length > 0) {
                         let e = [...this._metrics];
-                        s.default.post({
-                            url: o.Endpoints.METRICS,
+                        a.default.post({
+                            url: (0, l.isMetricsEndpointV2Enabled)("monitoring-agent") ? d.Endpoints.METRICS_V2 : d.Endpoints.METRICS,
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710347968366",
-                                    build_number: "274737"
+                                    built_at: "1710348881482",
+                                    build_number: "274747"
                                 }
                             },
                             retries: 1
@@ -124814,7 +124863,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "4b829224c1acf4837bc2aa3c4dd3b9aa1eccac5c"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "5e9c03443ce94e53f8ff7f0f67bb1dbf6d4695a5"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134153,7 +134202,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274737"
+                                build_number: "274747"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151762,4 +151811,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.0732df3e7cf7dcd122ac.js.map
+//# sourceMappingURL=29062.f1b877551f128e8f35d5.js.map
