@@ -38490,7 +38490,7 @@ html .progress__4ef76 {
     margin-top: 16px;
     font-weight: 600;
     color: var(--interactive-active);
-    font-size: 24px
+    font-size: 1.5rem
 }
 
 .tierPeriod__90c6f {
@@ -38772,8 +38772,8 @@ html .progress__4ef76 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase
 }
 
@@ -129899,4 +129899,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e4546dda8e38ef0ad527.css.map*/
+/*# sourceMappingURL=app.cb85ef40df561a0f1711.css.map*/
