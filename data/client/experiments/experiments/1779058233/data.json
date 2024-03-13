@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_metrics_endpoint_v2",
+    "label": "Metrics V2 Endpoint Rollout",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables sending metrics to the v2 endpoint which accepts a new data format"
+    ],
+    "hash": 1779058233,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
