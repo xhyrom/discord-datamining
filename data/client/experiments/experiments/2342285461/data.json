@@ -30,11 +30,7 @@
           "1": {
             "rollout": [
               {
-                "start": 1000,
-                "end": 2000
-              },
-              {
-                "start": 6000,
+                "start": 0,
                 "end": 10000
               }
             ]
@@ -43,7 +39,7 @@
         "filters": []
       }
     ],
-    "revision": 2,
+    "revision": 3,
     "overrides": {
       "1": [
         "763838479293349899",
