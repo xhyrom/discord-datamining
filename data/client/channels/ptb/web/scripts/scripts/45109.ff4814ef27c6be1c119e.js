@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -63110,9 +63110,10 @@
                     highlight_redesigned_icons: "Highlight redesigned icons",
                     alt_clips_1: "Use alt clip icon 1",
                     alt_clips_2: "Use alt clip icon 2",
-                    profile_effect_debug_controls: "Scrolls through profile effects with arrow up / down. Restart with R",
-                    shop_disable_cache: "Disable shop cache",
-                    shop_include_unpublished: "Show unpublished items in the shop"
+                    profile_effect_debug_controls: "Shop: Scrolls through profile effects with arrow up / down. Restart with R",
+                    shop_disable_cache: "Shop: Disable shop cache",
+                    shop_include_unpublished: "Shop: Show unpublished items in the shop",
+                    enable_avatar_decoration_uploads: "Shop: Enable avatar decoration uploads"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -87404,8 +87405,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710301045447",
-                                    build_number: "274650"
+                                    built_at: "1710303261241",
+                                    build_number: "274661"
                                 }
                             },
                             retries: 1
@@ -124813,7 +124814,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "007c372f7c500b0e42f55898758476b0c290ffad"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "0d84ec0c23015e9fd3497f50b3001ce4a125a46e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -130315,6 +130316,7 @@
                     canAnimate: i = !1
                 } = e;
                 if (null == t) return;
+                if (/^data:/.test(t.asset)) return t.asset;
                 let {
                     CDN_HOST: s,
                     API_ENDPOINT: r
@@ -134151,7 +134153,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274650"
+                                build_number: "274661"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151760,4 +151762,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.17bf1d1dea3bb4a68224.js.map
+//# sourceMappingURL=45109.ff4814ef27c6be1c119e.js.map

@@ -47249,8 +47249,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -67109,6 +67109,13 @@ html .invoiceCancelRow_c1bfe7 {
 
 .buttonHighlighted__73136 {
     background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients)0%, var(--premium-tier-2-purple-for-gradients-2)49.96%, var(--premium-tier-2-pink-for-gradients)95.93%)
+}
+
+.overrideButtonsContainer__54d80 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 8px
 }
 
 .buttonsContainer_d0950f {
@@ -129874,4 +129881,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b3a146783485064b3272.css.map*/
+/*# sourceMappingURL=app.6ff6aea7dc6ffbc46251.css.map*/
