@@ -47279,8 +47279,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -69381,6 +69381,24 @@ html .invoiceCancelRow_c1bfe7 {
 
 .theme-light .cardDescription_d7433f {
     background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
+}
+
+@keyframes glowEffect_a3ec8f {
+    0% {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0)
+    }
+
+    50% {
+        box-shadow: 0 0 10px 10px hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.5)
+    }
+
+    to {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0)
+    }
+}
+
+.glowingCardContainer__7d35d {
+    animation: glowEffect_a3ec8f 3s ease-out 2s 1 forwards
 }
 
 .toggleSwitch__7657a {
@@ -129917,4 +129935,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8a1fd320b705bee67cf1.css.map*/
+/*# sourceMappingURL=app.74ecad1c0404e87bbba7.css.map*/
