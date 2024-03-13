@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87473,8 +87473,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710364403301",
-                                    build_number: "274917"
+                                    built_at: "1710369078192",
+                                    build_number: "274972"
                                 }
                             },
                             retries: 1
@@ -124882,7 +124882,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "0730afca8b01558533dc73ea6ff28d693b0d6ea4"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "cf469d7bc9f4b2c9da41c685b55f77cd922237df"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134221,7 +134221,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274917"
+                                build_number: "274972"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151833,4 +151833,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.31a0d0d82c2e4cfaaf8e.js.map
+//# sourceMappingURL=45109.69d8d9f8a0a522e4b346.js.map
