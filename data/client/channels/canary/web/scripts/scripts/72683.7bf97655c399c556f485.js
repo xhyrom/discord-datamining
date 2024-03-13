@@ -3090,8 +3090,8 @@
                     D = !o && L,
                     y = (0, z.getBOGOPillCopy)(),
                     j = (0, C.isThemeLight)((0, S.default)()),
-                    F = j && A ? 5 : 2;
-                return D && !A ? n = et.rimGlowTier2 : D && A && !j && (n = et.rimGlowTier2Stacked), (0, d.jsxs)("div", {
+                    F = j ? 5 : 2;
+                return !D || A || j ? D && A && !j && (n = et.rimGlowTier2Stacked) : n = et.rimGlowTier2, (0, d.jsxs)("div", {
                     className: m(et.card, s, {
                         [et.withTier2Rim]: D && !A,
                         [et.withTier2RimStacked]: D && A,
@@ -4781,4 +4781,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72683.5470259b22720bca7f36.js.map
+//# sourceMappingURL=72683.7bf97655c399c556f485.js.map
