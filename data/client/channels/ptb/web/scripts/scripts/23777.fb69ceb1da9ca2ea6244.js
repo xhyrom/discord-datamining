@@ -102,10 +102,10 @@
                     return S
                 },
                 changeSubscriptionCurrency: function() {
-                    return E
+                    return d
                 },
                 changePaymentSource: function() {
-                    return d
+                    return E
                 },
                 clearError: function() {
                     return f
@@ -160,11 +160,11 @@
                 try {
                     let S = (0, l.getPremiumPlanItem)(t);
                     u(S, "Expected existing premium plan");
-                    let E = (0, l.getItemsWithUpsertedPremiumPlanId)(t, S.planId);
+                    let d = (0, l.getItemsWithUpsertedPremiumPlanId)(t, S.planId);
                     await a.updateSubscription(t, {
                         status: o.SubscriptionStatusTypes.ACTIVE,
                         paymentSource: i,
-                        items: E,
+                        items: d,
                         currency: n
                     }, e, s, c), r.default.dispatch({
                         type: "PREMIUM_PAYMENT_UPDATE_SUCCESS"
@@ -185,7 +185,7 @@
                     throw t
                 }
             }
-            async function E(t, e, n, i) {
+            async function d(t, e, n, i) {
                 try {
                     await a.changeSubscriptionCurrency(t, e, n, i), r.default.dispatch({
                         type: "PREMIUM_PAYMENT_UPDATE_SUCCESS"
@@ -197,7 +197,7 @@
                     }), t
                 }
             }
-            async function d(t, e, n, i, u) {
+            async function E(t, e, n, i, u) {
                 try {
                     await a.changePaymentSource(t, e, n, i, u), r.default.dispatch({
                         type: "PREMIUM_PAYMENT_UPDATE_SUCCESS"
@@ -256,8 +256,8 @@
                 s = n("552712"),
                 c = n("167726"),
                 S = n("745279"),
-                E = n("449008"),
-                d = n("224400"),
+                d = n("449008"),
+                E = n("224400"),
                 f = n("271560"),
                 _ = n("850068"),
                 T = n("49111");
@@ -392,7 +392,7 @@
                             let e = await (0, _.popupBridgeState)(a.type);
                             t.return_url = i.default.getAPIBaseURL() + T.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(a.type, null != e ? e : "", "success")
                         }
-                        null != s && (t.expected_amount = s), null != f && (t.expected_currency = f), t.gift_info_options = p, null != R && (t.country_code = R), t.purchase_token = (0, d.getPurchaseToken)()
+                        null != s && (t.expected_amount = s), null != f && (t.expected_currency = f), t.gift_info_options = p, null != R && (t.country_code = R), t.purchase_token = (0, E.getPurchaseToken)()
                     }
                     let n = await i.default.post({
                         url: T.Endpoints.STORE_SKU_PURCHASE(e),
@@ -405,7 +405,7 @@
                     return u.default.dispatch({
                         type: "SKU_PURCHASE_SUCCESS",
                         skuId: e,
-                        libraryApplications: null != n.body.library_applications ? n.body.library_applications.filter(E.isNotNullish) : [],
+                        libraryApplications: null != n.body.library_applications ? n.body.library_applications.filter(d.isNotNullish) : [],
                         entitlements: n.body.entitlements,
                         giftCode: n.body.gift_code
                     }), {
@@ -431,7 +431,7 @@
             async function R() {
                 try {
                     let t = {
-                            purchase_token: (0, d.getPurchaseToken)()
+                            purchase_token: (0, E.getPurchaseToken)()
                         },
                         e = await i.default.post({
                             url: T.Endpoints.STORE_EMAIL_RESEND_PAYMENT_VERIFICATION,
@@ -588,13 +588,13 @@
                     [n, i, u] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [r.default, l.default, a.default],
                     c = n.paymentSourceIds,
                     S = n.defaultPaymentSourceId,
-                    E = i.isLoadedForSKUs(e),
-                    d = null === (t = u.getPremiumTypeSubscription()) || void 0 === t ? void 0 : t.paymentSourceId;
-                if (null != d && !i.hasPaymentSourceForSKUIds(d, e)) return s("subscription payment source ".concat(d, " not loaded for ").concat(e)), !1;
+                    d = i.isLoadedForSKUs(e),
+                    E = null === (t = u.getPremiumTypeSubscription()) || void 0 === t ? void 0 : t.paymentSourceId;
+                if (null != E && !i.hasPaymentSourceForSKUIds(E, e)) return s("subscription payment source ".concat(E, " not loaded for ").concat(e)), !1;
                 if (null != S && !i.hasPaymentSourceForSKUIds(S, e)) return s("default payment source ".concat(S, " not loaded for ").concat(e)), !1;
                 for (let t of c)
                     if (!i.hasPaymentSourceForSKUIds(t, e)) return s("payment source ".concat(t, " not loaded for ").concat(e)), !1;
-                return s("isLoadedForSKUs ".concat(E)), E
+                return s("isLoadedForSKUs ".concat(d)), d
             }
         },
         621746: function(t, e, n) {
@@ -643,8 +643,8 @@
                 s = n("191225"),
                 c = n("837707"),
                 S = n("619935"),
-                E = n("991254"),
-                d = n("467292"),
+                d = n("991254"),
+                E = n("467292"),
                 f = n("622839"),
                 _ = n("105097"),
                 T = n("568734"),
@@ -679,8 +679,8 @@
                     defaultPlanId: w,
                     purchaseType: Y = y.PurchaseTypes.SUBSCRIPTION,
                     applicationId: W,
-                    referralCode: V
-                } = t, k = (0, h.default)(), Z = (0, S.useBlockedPaymentsConfig)(), x = (0, P.default)(), {
+                    referralCode: k
+                } = t, V = (0, h.default)(), Z = (0, S.useBlockedPaymentsConfig)(), x = (0, P.default)(), {
                     paymentSources: J,
                     hasPaymentSources: Q,
                     paymentSourceId: X,
@@ -708,8 +708,8 @@
                 } = (0, F.default)({
                     stepConfigs: B,
                     breadcrumbs: H
-                }), [tS, tE] = (0, L.default)(ta), {
-                    paymentError: td,
+                }), [tS, td] = (0, L.default)(ta), {
+                    paymentError: tE,
                     paymentAuthenticationState: tf
                 } = (0, R.default)(), {
                     purchaseError: t_,
@@ -728,13 +728,13 @@
                     selectedPlan: tC,
                     setSelectedSkuId: tP,
                     setSelectedPlanId: tN
-                } = (0, p.default)(), [tR, tU] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tL, tM] = (0, o.useStateFromStoresArray)([m.default], () => [m.default.browserCheckoutState, m.default.loadId]), [tO, tF] = u.useState(null), [th, tm] = u.useState(null), [ty, tg] = u.useState(null), [tG, tD] = u.useState(null), [tB, tH] = u.useState(null), [tb, tK] = u.useState(void 0), [tv, tw] = u.useState([]), tY = u.useMemo(() => null == tC || (0, I.isPremiumSubscriptionPlan)(tC.id), [tC]), tW = u.useRef(null != D ? D.planId : null);
+                } = (0, p.default)(), [tR, tU] = (0, o.useStateFromStoresArray)([E.default], () => [E.default.purchaseTokenAuthState, E.default.purchaseTokenHash]), [tL, tM] = (0, o.useStateFromStoresArray)([m.default], () => [m.default.browserCheckoutState, m.default.loadId]), [tO, tF] = u.useState(null), [th, tm] = u.useState(null), [ty, tg] = u.useState(null), [tG, tD] = u.useState(null), [tB, tH] = u.useState(null), [tb, tK] = u.useState(void 0), [tv, tw] = u.useState([]), tY = u.useMemo(() => null == tC || (0, I.isPremiumSubscriptionPlan)(tC.id), [tC]), tW = u.useRef(null != D ? D.planId : null);
                 u.useEffect(() => {
                     null == tW.current && null != D && (tW.current = D.planId)
                 }, [D]);
                 let {
-                    skusById: tV,
-                    hasFetchedSkus: tk,
+                    skusById: tk,
+                    hasFetchedSkus: tV,
                     skuPricePreviewsById: tZ
                 } = (0, O.default)({
                     applicationId: null != W ? W : g.PREMIUM_SUBSCRIPTION_APPLICATION,
@@ -747,15 +747,15 @@
                     if (null == t) return null;
                     let e = null != X ? X : f.NO_PAYMENT_SOURCE;
                     return t[e]
-                }, [tp, tZ, X]), tJ = (0, E.useApplication)(W), tQ = (0, T.hasFlag)(null !== (e = null == tJ ? void 0 : tJ.flags) && void 0 !== e ? e : 0, y.ApplicationFlags.EMBEDDED) && (0, T.hasFlag)(null !== (n = null == tJ ? void 0 : tJ.flags) && void 0 !== n ? n : 0, y.ApplicationFlags.EMBEDDED_IAP), tX = (0, o.useStateFromStores)([s.default], () => Array.from(s.default.getSelfEmbeddedActivities().values()).find(t => {
+                }, [tp, tZ, X]), tJ = (0, d.useApplication)(W), tQ = (0, T.hasFlag)(null !== (e = null == tJ ? void 0 : tJ.flags) && void 0 !== e ? e : 0, y.ApplicationFlags.EMBEDDED) && (0, T.hasFlag)(null !== (n = null == tJ ? void 0 : tJ.flags) && void 0 !== n ? n : 0, y.ApplicationFlags.EMBEDDED_IAP), tX = (0, o.useStateFromStores)([s.default], () => Array.from(s.default.getSelfEmbeddedActivities().values()).find(t => {
                     let {
                         applicationId: e
                     } = t;
                     return e === W
-                })), tj = (0, c.default)(tX), tz = tV[null != tp ? tp : ""];
+                })), tj = (0, c.default)(tX), tz = tk[null != tp ? tp : ""];
                 return (0, i.jsx)(G.Provider, {
                     value: {
-                        stripe: k,
+                        stripe: V,
                         contextMetadata: tA,
                         blockedPayments: Z,
                         activeSubscription: D,
@@ -783,9 +783,9 @@
                         stepConfigs: B,
                         breadcrumbs: tc,
                         purchaseState: tS,
-                        setPurchaseState: tE,
+                        setPurchaseState: td,
                         paymentAuthenticationState: tf,
-                        paymentError: td,
+                        paymentError: tE,
                         purchaseError: t_,
                         setPurchaseError: tI,
                         purchaseErrorBlockRef: tT,
@@ -810,8 +810,8 @@
                         productLine: null == tz ? void 0 : tz.productLine,
                         startedPaymentFlowWithPaymentSourcesRef: q,
                         startingPremiumSubscriptionPlanIdRef: tW,
-                        hasFetchedSkus: tk,
-                        skusById: tV,
+                        hasFetchedSkus: tV,
+                        skusById: tk,
                         skuPricePreviewsById: tZ,
                         selectedSkuPricePreview: tx,
                         application: tJ,
@@ -820,11 +820,11 @@
                         activitySessionId: tj,
                         entitlementsGranted: tv,
                         setEntitlementsGranted: tw,
-                        referralCode: V
+                        referralCode: k
                     },
                     children: (0, i.jsx)(r.Elements, {
                         options: y.StripeElementsOptions,
-                        stripe: k,
+                        stripe: V,
                         children: v
                     })
                 })
@@ -837,10 +837,10 @@
                     return i
                 },
                 COLLAPSED_PAYMENT_BREADCRUMB_STEPS: function() {
-                    return E
+                    return d
                 },
                 getLabelForStep: function() {
-                    return d
+                    return E
                 },
                 errorToStep: function() {
                     return f
@@ -857,9 +857,9 @@
                 c = n("782340");
             let S = new a.default("PaymentSteps");
             (u = i || (i = {})).PAYMENT_TYPE = "payment_type", u.CREDIT_CARD_INFORMATION = "credit_card_information", u.PAYPAL_INFORMATION = "paypal_information", u.VENMO_INFORMATION = "venmo_information", u.SOFORT_INFORMATION = "sofort_information", u.PRZELEWY24_INFORMATION = "przelewy24_information", u.EPS_INFORMATION = "eps_information", u.IDEAL_INFORMATION = "ideal_information", u.CASH_APP_INFORMATION = "cash_app_information", u.PAYMENT_REQUEST_INFORMATION = "payment_request_information", u.ADDRESS = "address", u.AWAITING_AUTHENTICATION = "awaiting_authentication", u.SKU_SELECT = "sku_select", u.PLAN_SELECT = "plan_select", u.PREMIUM_UPSELL = "premium_upsell", u.PREMIUM_GUILD_UPSELL = "premium_guild_upsell", u.REVIEW = "review", u.CONFIRM = "confirm", u.CLAIM_FREE_SKU = "claim_free_sku", u.SKU_PREVIEW = "sku_preview", u.LOADING_PAYMENT_SOURCES = "loading_payment_sources", u.SHOP = "shop", u.PROMOTION_INFO = "promotion_info", u.AWAITING_PURCHASE_TOKEN_AUTH = "awaiting_purchase_token_auth", u.BENEFITS = "benefits", u.WHAT_YOU_LOSE = "what_you_lose", u.ADD_PAYMENT_STEPS = "add_payment_steps", u.AWAITING_BROWSER_CHECKOUT = "awaiting_browser_checkout", u.GIFT_CUSTOMIZATION = "gift_customization";
-            let E = new Set(["credit_card_information", "payment_request_information", "paypal_information", "venmo_information", "cash_app_information", "address", "claim_free_sku", "sku_preview", "premium_upsell", "sofort_information", "przelewy24_information"]);
+            let d = new Set(["credit_card_information", "payment_request_information", "paypal_information", "venmo_information", "cash_app_information", "address", "claim_free_sku", "sku_preview", "premium_upsell", "sofort_information", "przelewy24_information"]);
 
-            function d(t) {
+            function E(t) {
                 switch (t) {
                     case "plan_select":
                         return c.default.Messages.BILLING_STEP_SELECT_PLAN;
@@ -939,15 +939,15 @@
                     isGift: S
                 } = t;
                 s = s.filter(t => t !== l.PremiumSubscriptionSKUs.NONE);
-                let E = (0, i.useStateFromStores)([u.default], () => {
+                let d = (0, i.useStateFromStores)([u.default], () => {
                         let t = u.default.getPlanIdsForSkus(s).filter(t => !S || l.PREMIUM_PLANS.has(t));
                         return t.length > 0 ? u.default.get(t[0]) : null
                     }),
-                    d = null == E ? [] : (0, r.getCurrencies)(E.id, c, S),
-                    f = null !== (n = null !== (e = d.find(t => t === (null == o ? void 0 : o.currency))) && void 0 !== e ? e : d[0]) && void 0 !== n ? n : a.CurrencyCodes.USD;
+                    E = null == d ? [] : (0, r.getCurrencies)(d.id, c, S),
+                    f = null !== (n = null !== (e = E.find(t => t === (null == o ? void 0 : o.currency))) && void 0 !== e ? e : E[0]) && void 0 !== n ? n : a.CurrencyCodes.USD;
                 return {
-                    ...(0, r.useCurrencyWithPaymentSourceChange)(f, null == E ? void 0 : E.id, c, S, s),
-                    currencies: d
+                    ...(0, r.useCurrencyWithPaymentSourceChange)(f, null == d ? void 0 : d.id, c, S, s),
+                    currencies: E
                 }
             }
         },
@@ -994,14 +994,14 @@
                     defaultPaymentSourceId: l.default.defaultPaymentSourceId,
                     paymentSources: l.default.paymentSources,
                     hasFetchedPaymentSources: l.default.hasFetchedPaymentSources
-                })), c = (t, e, n) => t || (null == e ? void 0 : e.paymentSourceId) == null ? n : e.paymentSourceId, [S, E] = i.useState(() => c(e, n, a));
+                })), c = (t, e, n) => t || (null == e ? void 0 : e.paymentSourceId) == null ? n : e.paymentSourceId, [S, d] = i.useState(() => c(e, n, a));
                 return i.useEffect(() => {
-                    s ? E(c(e, n, a)) : (0, r.fetchPaymentSources)()
+                    s ? d(c(e, n, a)) : (0, r.fetchPaymentSources)()
                 }, [s, e, n, a]), {
                     paymentSources: o,
                     hasPaymentSources: Object.keys(o).length > 0,
                     paymentSourceId: S,
-                    setPaymentSourceId: E,
+                    setPaymentSourceId: d,
                     hasFetchedPaymentSources: s
                 }
             }
@@ -1110,7 +1110,7 @@
                     skuIDs: n,
                     currentPaymentSourceId: s,
                     isGift: c
-                } = t, S = i.useMemo(() => n.filter(t => !o.ACTIVE_PREMIUM_SKUS.includes(t)), [JSON.stringify(n)]), E = (0, u.default)([a.default], () => S.every(t => !a.default.isFetching(t) && null != a.default.get(t))), d = (0, u.useStateFromStoresObject)([a.default], () => {
+                } = t, S = i.useMemo(() => n.filter(t => !o.ACTIVE_PREMIUM_SKUS.includes(t)), [JSON.stringify(n)]), d = (0, u.default)([a.default], () => S.every(t => !a.default.isFetching(t) && null != a.default.get(t))), E = (0, u.useStateFromStoresObject)([a.default], () => {
                     let t = {};
                     for (let n of S) {
                         var e;
@@ -1134,8 +1134,8 @@
                         isGift: c
                     })
                 }, [e, S, s, c]), {
-                    hasFetchedSkus: E,
-                    skusById: d,
+                    hasFetchedSkus: d,
+                    skusById: E,
                     skuPricePreviewsById: f
                 }
             }
@@ -1260,10 +1260,10 @@
                     return u
                 },
                 usePaymentStepForAuthentication: function() {
-                    return E
+                    return d
                 },
                 usePaymentAuthenticationPoller: function() {
-                    return d
+                    return E
                 }
             });
             var i, u, r = n("884691"),
@@ -1274,7 +1274,7 @@
                 c = n("85336"),
                 S = n("758764");
 
-            function E(t, e, n) {
+            function d(t, e, n) {
                 let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
                     u = arguments.length > 4 ? arguments[4] : void 0;
                 r.useEffect(() => {
@@ -1282,7 +1282,7 @@
                 }, [t, e, n, i, u])
             }(i = u || (u = {}))[i.PENDING = 1] = "PENDING", i[i.ERROR = 2] = "ERROR", i[i.NONE = 3] = "NONE";
 
-            function d(t) {
+            function E(t) {
                 let e = (0, l.useStateFromStores)([S.default], () => S.default.awaitingPaymentId),
                     n = (0, l.useStateFromStores)([s.default], () => s.default.isConnected()),
                     i = r.useRef(new a.Interval);
@@ -1330,33 +1330,81 @@
             "use strict";
             n.r(e), n.d(e, {
                 fetchAllSubscriptionListingsDataForApplication: function() {
-                    return l
+                    return c
                 },
                 fetchEntitlementsForGuild: function() {
-                    return a
+                    return S
                 },
                 dismissApplicationSubscriptionExpirationNotice: function() {
-                    return o
+                    return d
                 },
                 fetchSubscriptionListingForPlan: function() {
-                    return s
+                    return E
                 }
             }), n("222007");
             var i = n("913144"),
                 u = n("775433"),
-                r = n("739295");
-            async function l(t, e) {
+                r = n("739295"),
+                l = n("49111");
+
+            function a(t) {
+                return {
+                    id: t.id,
+                    type: l.SKUTypes.SUBSCRIPTION,
+                    application_id: t.application_id,
+                    product_line: l.SKUProductLines.APPLICATION,
+                    name: t.name,
+                    summary: "",
+                    description: t.description,
+                    flags: t.sku_flags,
+                    manifests: [],
+                    available_regions: [],
+                    legal_notice: "",
+                    deleted: t.soft_deleted,
+                    price_tier: 0,
+                    show_age_gate: !1,
+                    restricted: !1
+                }
+            }
+
+            function o(t) {
+                var e;
+                return {
+                    id: t.id,
+                    sku: a(t),
+                    summary: t.description,
+                    description: t.description,
+                    benefits: null !== (e = t.store_listing_benefits) && void 0 !== e ? e : [],
+                    thumbnail: t.image_asset
+                }
+            }
+
+            function s(t) {
+                for (let e of (i.default.dispatch({
+                        type: "SKUS_FETCH_SUCCESS",
+                        skus: t.map(a)
+                    }), i.default.dispatch({
+                        type: "STORE_LISTINGS_FETCH_SUCCESS",
+                        storeListings: t.map(o)
+                    }), t)) i.default.dispatch({
+                    type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS",
+                    skuId: e.id,
+                    subscriptionPlans: e.subscription_plans
+                })
+            }
+            async function c(t, e) {
                 i.default.dispatch({
                     type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS",
                     applicationId: t
                 });
                 try {
-                    let n = await r.getApplicationSubscriptionGroupListingsForApplication(t, e);
+                    var n;
+                    let u = await r.getApplicationSubscriptionGroupListingsForApplication(t, e);
                     return i.default.dispatch({
                         type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS",
                         applicationId: t,
-                        groupListing: n
-                    }), n
+                        groupListing: u
+                    }), s(null !== (n = u.subscription_listings) && void 0 !== n ? n : []), u
                 } catch (e) {
                     i.default.dispatch({
                         type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE",
@@ -1364,7 +1412,7 @@
                     })
                 }
             }
-            async function a(t) {
+            async function S(t) {
                 i.default.dispatch({
                     type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS",
                     guildId: t
@@ -1384,13 +1432,13 @@
                 }
             }
 
-            function o(t) {
+            function d(t) {
                 i.default.dispatch({
                     type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED",
                     guildId: t
                 })
             }
-            async function s(t) {
+            async function E(t) {
                 i.default.dispatch({
                     type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN",
                     planId: t
@@ -1403,7 +1451,8 @@
                         groupListing: n
                     });
                     let l = null !== (e = n.subscription_listings) && void 0 !== e ? e : [];
-                    for (let e of l) e.subscription_plans[0].id === t && await u.fetchSubscriptionPlansForSKU(e.id, void 0, void 0, !0)
+                    for (let e of l) e.subscription_plans[0].id === t && await u.fetchSubscriptionPlansForSKU(e.id, void 0, void 0, !0);
+                    s(l)
                 } catch (t) {}
             }
         },
@@ -1451,8 +1500,8 @@
                 s = n("299285"),
                 c = n("305961"),
                 S = n("957255"),
-                E = n("10514"),
-                d = n("521012"),
+                d = n("10514"),
+                E = n("521012"),
                 f = n("437712"),
                 _ = n("552712"),
                 T = n("602960"),
@@ -1528,7 +1577,7 @@
                 F = [];
 
             function h(t, e) {
-                let n = (0, l.useStateFromStores)([d.default], () => d.default.getSubscriptions()),
+                let n = (0, l.useStateFromStores)([E.default], () => E.default.getSubscriptions()),
                     {
                         subscriptionGroupListing: i,
                         guildEntitlements: u,
@@ -1560,7 +1609,7 @@
                             activeEntitlement: null
                         }
                     }, [o, s, e]),
-                    E = r.useMemo(() => {
+                    d = r.useMemo(() => {
                         if (null == n) return null;
                         let t = null == c ? void 0 : c.subscription_plans[0].id;
                         for (let e of Object.values(n))
@@ -1570,7 +1619,7 @@
                             } return null
                     }, [c, n]);
                 return {
-                    activeSubscription: E,
+                    activeSubscription: d,
                     activeSubscriptionListing: c,
                     activeEntitlement: S,
                     subscriptionGroupListing: i
@@ -1602,7 +1651,7 @@
                 return u ? c.filter(t => null != t.endsAt && t.endsAt.getTime() > Math.max(null != a ? a : 0, Date.now() - 2592e6)) : []
             }
             let y = t => {
-                    let [e, n] = r.useState(!1), i = r.useMemo(() => t.map(P.getApplicationSubscriptionPlanId), [t]), u = (0, l.useStateFromStoresArray)([E.default], () => i.filter(t => null == E.default.get(t)), [i]);
+                    let [e, n] = r.useState(!1), i = r.useMemo(() => t.map(P.getApplicationSubscriptionPlanId), [t]), u = (0, l.useStateFromStoresArray)([d.default], () => i.filter(t => null == d.default.get(t)), [i]);
                     return r.useEffect(() => {
                         u.length > 0 && (n(!0), Promise.all(u.map(t => (0, I.fetchSubscriptionListingForPlan)(t))).catch(() => {}).then(() => {
                             n(!1)
@@ -1658,9 +1707,9 @@
                     location: "useApplicationSubscriptionListingsShown"
                 }), {
                     subscriptionGroupListing: S
-                } = h(e, i), E = c ? (null == s ? void 0 : s.isMonetized) === !0 : null != S && (0, P.hasPayableSubscriptionPlan)(S);
+                } = h(e, i), d = c ? (null == s ? void 0 : s.isMonetized) === !0 : null != S && (0, P.hasPayableSubscriptionPlan)(S);
                 return {
-                    applicationSubscriptionListingsShown: null != e && null != n && (null == i || l) && (!u || a) && r && E
+                    applicationSubscriptionListingsShown: null != e && null != n && (null == i || l) && (!u || a) && r && d
                 }
             }
 
@@ -1763,11 +1812,11 @@
                 c = n("984273"),
                 S = n("552712");
 
-            function E(t) {
+            function d(t) {
                 return "subscription_listing:".concat(t)
             }
 
-            function d(t) {
+            function E(t) {
                 return "application:".concat(t)
             }
 
@@ -1782,14 +1831,14 @@
             function T(t, e) {
                 return "entitlement:".concat(e, ":").concat(t)
             }(u = i || (i = {}))[u.NOT_FETCHED = 0] = "NOT_FETCHED", u[u.FETCHING = 1] = "FETCHING", u[u.FETCHED = 2] = "FETCHED";
-            let I = new o.default(t => [d(t.application_id), ...t.subscription_listings_ids.map(E)], t => t.id),
-                A = new o.default(t => [d(t.application_id), f(t.subscription_plans[0].id)], t => t.id),
+            let I = new o.default(t => [E(t.application_id), ...t.subscription_listings_ids.map(d)], t => t.id),
+                A = new o.default(t => [E(t.application_id), f(t.subscription_plans[0].id)], t => t.id),
                 p = new o.default(t => [_(t.applicationId, t.isValid(null, S.default), t.guildId), T(t.isValid(null, S.default), t.guildId)], t => t.id),
                 C = {},
                 P = {};
 
             function N(t) {
-                let e = I.values(d(t));
+                let e = I.values(E(t));
                 return l(e.length <= 1, "Found multiple group listings for application"), e[0]
             }
 
@@ -1811,14 +1860,14 @@
                     return N(t)
                 }
                 getSubscriptionGroupListingForSubscriptionListing(t) {
-                    let e = I.values(E(t));
+                    let e = I.values(d(t));
                     return l(e.length <= 1, "Found multiple group listings for listing"), e[0]
                 }
                 getSubscriptionListing(t) {
                     return A.get(t)
                 }
                 getSubscriptionListingsForApplication(t) {
-                    return A.values(d(t))
+                    return A.values(E(t))
                 }
                 getEntitlementsForGuildFetchState(t) {
                     var e;
@@ -1937,7 +1986,7 @@
                     return S
                 },
                 isListingActiveInGuild: function() {
-                    return E
+                    return d
                 }
             });
             var i = n("627445"),
@@ -1967,7 +2016,7 @@
                 return (0, r.hasFlag)(t, l.SKUFlags.APPLICATION_USER_SUBSCRIPTION)
             }
 
-            function E(t, e, n) {
+            function d(t, e, n) {
                 return t.subscription_plans[0].sku_id === e.skuId && (c(t.sku_flags) ? null != n && e.guildId === n && n !== l.ME : !!S(t.sku_flags) && null == e.guildId)
             }
         },
@@ -1987,8 +2036,8 @@
                 s = null,
                 c = !1,
                 S = null,
-                E = "",
                 d = "",
+                E = "",
                 f = "",
                 _ = "",
                 T = "",
@@ -2002,11 +2051,11 @@
                 U = null;
 
             function L() {
-                s = null, l = "", a = null, o = "", c = !1, S = null, E = "US", d = "", f = "", _ = "", T = "", I = "", A = "", p = "", C = !1, P = null, N = null, R = null, U = null
+                s = null, l = "", a = null, o = "", c = !1, S = null, d = "US", E = "", f = "", _ = "", T = "", I = "", A = "", p = "", C = !1, P = null, N = null, R = null, U = null
             }
 
             function M(t) {
-                d = t.name, E = t.country, _ = t.line1, T = t.line2, I = t.city, A = t.postalCode, p = t.state, f = t.email
+                E = t.name, d = t.country, _ = t.line1, T = t.line2, I = t.city, A = t.postalCode, p = t.state, f = t.email
             }
 
             function O() {
@@ -2046,7 +2095,7 @@
                 }
                 getCreditCardInfo() {
                     return {
-                        name: d
+                        name: E
                     }
                 }
                 get isCardInfoValid() {
@@ -2054,9 +2103,9 @@
                 }
                 getBillingAddressInfo() {
                     return {
-                        name: d,
+                        name: E,
                         email: f,
-                        country: E,
+                        country: d,
                         line1: _,
                         line2: T,
                         city: I,
@@ -2092,14 +2141,14 @@
                         info: e,
                         isValid: n
                     } = t;
-                    d = e.name, c = n
+                    E = e.name, c = n
                 },
                 NEW_PAYMENT_SOURCE_ADDRESS_INFO_UPDATE: function(t) {
                     let {
                         info: e,
                         isValid: n
                     } = t;
-                    null != e.name && "" !== e.name && (d = e.name), E = e.country, d = e.name, _ = e.line1, T = e.line2, I = e.city, A = e.postalCode, p = e.state, f = e.email, C = n
+                    null != e.name && "" !== e.name && (E = e.name), d = e.country, E = e.name, _ = e.line1, T = e.line2, I = e.city, A = e.postalCode, p = e.state, f = e.email, C = n
                 },
                 BRAINTREE_TOKENIZE_PAYPAL_START: function() {
                     l = "", a = null
@@ -2110,7 +2159,7 @@
                         nonce: n,
                         billingAddress: i
                     } = t;
-                    l = e, a = n, M(i), C = E.length > 0
+                    l = e, a = n, M(i), C = d.length > 0
                 },
                 BRAINTREE_TOKENIZE_VENMO_START: function() {
                     o = "", a = null
@@ -2162,12 +2211,12 @@
                 s = n("520713"),
                 c = n("49111"),
                 S = n("782340");
-            let E = !1,
-                d = null,
+            let d = !1,
+                E = null,
                 f = null;
 
             function _() {
-                E = !1, f = null
+                d = !1, f = null
             }
 
             function T(t) {
@@ -2177,8 +2226,8 @@
                     code: n,
                     paymentId: i
                 } = e;
-                if (n !== a.default.ErrorCodes.AUTHENTICATION_REQUIRED) return E = !1, !1;
-                !E && (E = !0, d = i, I(i))
+                if (n !== a.default.ErrorCodes.AUTHENTICATION_REQUIRED) return d = !1, !1;
+                !d && (d = !0, E = i, I(i))
             }
             async function I(t) {
                 if (null == t) return;
@@ -2203,18 +2252,18 @@
                 let {
                     payment: e
                 } = t;
-                if (!E || e.id !== d || ![c.PaymentStatusTypes.COMPLETED, c.PaymentStatusTypes.CANCELED].includes(e.status)) return !1;
-                E = !1, f = null, d = null, u.default.wait(r.clearError), u.default.wait(l.clearPurchaseError)
+                if (!d || e.id !== E || ![c.PaymentStatusTypes.COMPLETED, c.PaymentStatusTypes.CANCELED].includes(e.status)) return !1;
+                d = !1, f = null, E = null, u.default.wait(r.clearError), u.default.wait(l.clearPurchaseError)
             }
             class p extends i.default.Store {
                 get isAwaitingAuthentication() {
-                    return E
+                    return d
                 }
                 get error() {
                     return f
                 }
                 get awaitingPaymentId() {
-                    return d
+                    return E
                 }
             }
             p.displayName = "PaymentAuthenticationStore";
@@ -2240,7 +2289,7 @@
                     let {
                         error: e
                     } = t;
-                    f = e, E = !1
+                    f = e, d = !1
                 },
                 PAYMENT_UPDATE: A,
                 BILLING_PAYMENT_FETCH_SUCCESS: A
@@ -2265,14 +2314,14 @@
                 c = null,
                 S = null;
 
-            function E(t) {
+            function d(t) {
                 let {
                     error: e
                 } = t, n = e instanceof a.default ? e : new a.default(e);
                 o.default.isConnected() && n.code === a.default.ErrorCodes.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED && (s = 1)
             }
 
-            function d() {
+            function E() {
                 s = 0, c = null, S = null
             }
             class f extends r.default.Store {
@@ -2288,24 +2337,24 @@
             }
             f.displayName = "PurchaseTokenAuthStore";
             var _ = new f(l.default, {
-                SKU_PURCHASE_FAIL: E,
-                PREMIUM_PAYMENT_SUBSCRIBE_FAIL: E,
+                SKU_PURCHASE_FAIL: d,
+                PREMIUM_PAYMENT_SUBSCRIBE_FAIL: d,
                 USER_PAYMENT_CLIENT_ADD: function(t) {
                     s = 2, c = t.purchaseTokenHash, S = t.expiresAt
                 },
-                BILLING_PURCHASE_TOKEN_AUTH_CLEAR_STATE: d,
-                BILLING_SUBSCRIPTION_UPDATE_START: d,
-                PAYMENT_AUTHENTICATION_CLEAR_ERROR: d,
-                PREMIUM_PAYMENT_ERROR_CLEAR: d,
-                PREMIUM_PAYMENT_MODAL_CLOSE: d,
-                PREMIUM_PAYMENT_MODAL_OPEN: d,
-                PREMIUM_PAYMENT_SUBSCRIBE_START: d,
-                PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: d,
-                PREMIUM_PAYMENT_UPDATE_SUCCESS: d,
-                SKU_PURCHASE_MODAL_CLOSE: d,
-                SKU_PURCHASE_MODAL_OPEN: d,
-                SKU_PURCHASE_START: d,
-                SKU_PURCHASE_SUCCESS: d
+                BILLING_PURCHASE_TOKEN_AUTH_CLEAR_STATE: E,
+                BILLING_SUBSCRIPTION_UPDATE_START: E,
+                PAYMENT_AUTHENTICATION_CLEAR_ERROR: E,
+                PREMIUM_PAYMENT_ERROR_CLEAR: E,
+                PREMIUM_PAYMENT_MODAL_CLOSE: E,
+                PREMIUM_PAYMENT_MODAL_OPEN: E,
+                PREMIUM_PAYMENT_SUBSCRIBE_START: E,
+                PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: E,
+                PREMIUM_PAYMENT_UPDATE_SUCCESS: E,
+                SKU_PURCHASE_MODAL_CLOSE: E,
+                SKU_PURCHASE_MODAL_OPEN: E,
+                SKU_PURCHASE_START: E,
+                SKU_PURCHASE_SUCCESS: E
             })
         },
         437712: function(t, e, n) {
@@ -2324,8 +2373,8 @@
                 s = n("964889"),
                 c = n("552712");
             let S = {},
-                E = {},
                 d = {},
+                E = {},
                 f = {},
                 _ = !1,
                 T = !1,
@@ -2334,11 +2383,11 @@
                 p = {};
 
             function C(t) {
-                S[t.id] = a.default.createFromServer(t), null == d[t.sku_id] && (d[t.sku_id] = new Set), null == f[t.application_id] && (f[t.application_id] = new Set), null != t.subscription_id && (null == p[t.subscription_id] && (p[t.subscription_id] = new Set), p[t.subscription_id].add(t.id)), f[t.application_id].add(t.id), d[t.sku_id].add(t.id)
+                S[t.id] = a.default.createFromServer(t), null == E[t.sku_id] && (E[t.sku_id] = new Set), null == f[t.application_id] && (f[t.application_id] = new Set), null != t.subscription_id && (null == p[t.subscription_id] && (p[t.subscription_id] = new Set), p[t.subscription_id].add(t.id)), f[t.application_id].add(t.id), E[t.sku_id].add(t.id)
             }
 
             function P(t) {
-                E[t.id] = a.default.createFromServer(t)
+                d[t.id] = a.default.createFromServer(t)
             }
 
             function N(t) {
@@ -2352,7 +2401,7 @@
                     return S[t]
                 }
                 getGiftable() {
-                    return u.values(E)
+                    return u.values(d)
                 }
                 getForApplication(t) {
                     let e = f[t];
@@ -2362,7 +2411,7 @@
                     return n
                 }
                 getForSku(t) {
-                    let e = d[t];
+                    let e = E[t];
                     if (null == e) return null;
                     let n = new Set;
                     for (let t of e) n.add(S[t]);
@@ -2395,7 +2444,7 @@
                 }
                 isEntitledToSku(t, e, n) {
                     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
-                        u = d[e];
+                        u = E[e];
                     if (null != u)
                         for (let e of u) {
                             let n = S[e];
@@ -2429,7 +2478,7 @@
                     let {
                         entitlements: e
                     } = t;
-                    E = {}, e.forEach(P)
+                    d = {}, e.forEach(P)
                 },
                 SKU_PURCHASE_SUCCESS: function(t) {
                     let {
@@ -2452,7 +2501,7 @@
                         delete S[t.id];
                         let e = f[t.application_id];
                         null != e && e.delete(t.id);
-                        let n = d[t.sku_id];
+                        let n = E[t.sku_id];
                         if (null != n && n.delete(t.id), null != t.subscription_id) {
                             let e = p[t.subscription_id];
                             null != e && e.delete(t.id)
@@ -2460,7 +2509,7 @@
                     }(t.entitlement)
                 },
                 LOGOUT: function() {
-                    S = {}, d = {}, f = {}, _ = !1, T = !1, I = new Set, A = new Set
+                    S = {}, E = {}, f = {}, _ = !1, T = !1, I = new Set, A = new Set
                 },
                 ENTITLEMENTS_FETCH_FOR_USER_START: function() {
                     _ = !0
@@ -2494,8 +2543,8 @@
                 s = null,
                 c = null,
                 S = null,
-                E = null,
                 d = null,
+                E = null,
                 f = {},
                 _ = null,
                 T = !1,
@@ -2534,10 +2583,10 @@
                     return S
                 }
                 get analyticsLocation() {
-                    return E
+                    return d
                 }
                 get promotionId() {
-                    return d
+                    return E
                 }
                 get isIAP() {
                     return p
@@ -2555,7 +2604,7 @@
             L.displayName = "SKUPaymentModalStore";
             var M = new L(l.default, {
                 SKU_PURCHASE_MODAL_OPEN: function(t) {
-                    U(), s = t.skuId, S = t.applicationId, p = t.isIAP, E = t.analyticsLocation, N = t.context, P = t.isGift, C = !0, A = !1, i = t.resolve, u = t.reject, I = null, _ = null, d = t.promotionId
+                    U(), s = t.skuId, S = t.applicationId, p = t.isIAP, d = t.analyticsLocation, N = t.context, P = t.isGift, C = !0, A = !1, i = t.resolve, u = t.reject, I = null, _ = null, E = t.promotionId
                 },
                 SKU_PURCHASE_MODAL_CLOSE: function(t) {
                     let {
@@ -2666,7 +2715,7 @@
             "use strict";
             n.r(e), n.d(e, {
                 fetchSubscriptionPlansOnNewPaymentSource: function() {
-                    return d
+                    return E
                 },
                 getCurrencies: function() {
                     return f
@@ -2687,10 +2736,10 @@
                 s = n("10514"),
                 c = n("719923"),
                 S = n("49111"),
-                E = n("646718");
+                d = n("646718");
 
-            function d(t) {
-                let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [...E.ACTIVE_PREMIUM_SKUS];
+            function E(t) {
+                let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [...d.ACTIVE_PREMIUM_SKUS];
                 return null == t || s.default.hasPaymentSourceForSKUIds(t, e) ? Promise.resolve() : new Promise(t => {
                     l.default.wait(async () => {
                         await (0, a.fetchSubscriptionPlansBySKUs)(e), t()
@@ -2728,7 +2777,7 @@
                 }), c = (0, o.useSubscriptionPlansLoaded)(r);
                 i.useEffect(() => {
                     let t = async () => {
-                        await d(n, r);
+                        await E(n, r);
                         let t = [];
                         null != e && null != s.default.get(e) && (t = f(e, n, u)), t.length > 0 ? a({
                             paymentSourceId: n,
@@ -2787,4 +2836,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23777.29fb3c54f0b138f59214.js.map
+//# sourceMappingURL=23777.fb69ceb1da9ca2ea6244.js.map
