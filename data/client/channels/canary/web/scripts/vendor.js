@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -67101,6 +67101,7 @@
                 }
                 setEnabled(e) {}
                 setSelectedStream(e) {}
+                setFocusedStream(e) {}
                 setMirrored(e) {}
                 setPipAspectRatio(e, t) {}
                 updateSourceTrackingView() {}
@@ -87403,8 +87404,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710295694684",
-                                    build_number: "274631"
+                                    built_at: "1710297897319",
+                                    build_number: "274638"
                                 }
                             },
                             retries: 1
@@ -118273,7 +118274,13 @@
 
             function V() {
                 var e;
-                D = null !== (e = v.default.getIdleSince()) && void 0 !== e ? e : 0, L = v.default.isAFK(), M ? (R = O, G()) : R = N ? y.StatusTypes.INVISIBLE : h.StatusSetting.getSetting(), R === y.StatusTypes.ONLINE && D > 0 && (R = y.StatusTypes.IDLE);
+                if (D = null !== (e = v.default.getIdleSince()) && void 0 !== e ? e : 0, L = v.default.isAFK(), M) R = O, G();
+                else if (N) R = y.StatusTypes.INVISIBLE;
+                else {
+                    let e = h.StatusSetting.getSetting();
+                    R = e !== y.StatusTypes.UNKNOWN ? e : y.StatusTypes.ONLINE
+                }
+                R === y.StatusTypes.ONLINE && D > 0 && (R = y.StatusTypes.IDLE);
                 let t = !1,
                     n = M || R === y.StatusTypes.INVISIBLE ? [] : I.default.getActivities().filter(k);
                 !a(P, n) && (P = n, t = !0);
@@ -124806,7 +124813,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "e1cbf858186f2ebeb05d7414c5a7608f941d708e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "d7a2e3012f84df71695d4a18e7b965630d97d555"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134144,7 +134151,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "274631"
+                                build_number: "274638"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -151753,4 +151760,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.606c7b5961088ae0e63a.js.map
+//# sourceMappingURL=67229.0b16f4c8abe0db458f4f.js.map
