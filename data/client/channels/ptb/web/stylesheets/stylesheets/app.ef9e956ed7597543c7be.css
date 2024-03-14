@@ -36821,6 +36821,7 @@ html .progress__4ef76 {
 }
 
 .userName__1291b {
+    color: var(--channels-default);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -129988,4 +129989,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b18e9a5c079bd47877ea.css.map*/
+/*# sourceMappingURL=app.ef9e956ed7597543c7be.css.map*/
