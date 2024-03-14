@@ -641,7 +641,7 @@
             "use strict";
             n.r(e), n.d(e, {
                 PaymentContextProvider: function() {
-                    return v
+                    return b
                 },
                 PaymentContext: function() {
                     return D
@@ -650,7 +650,7 @@
                     return B
                 },
                 useForwardedPaymentContext: function() {
-                    return b
+                    return v
                 }
             }), n("222007"), n("702976");
             var i = n("37983"),
@@ -684,15 +684,15 @@
                 g = n("523591"),
                 y = n("49111"),
                 G = n("646718");
-            let [D, B, b] = (0, T.default)();
+            let [D, B, v] = (0, T.default)();
 
-            function v(t) {
+            function b(t) {
                 var e, n;
                 let {
                     loadId: T,
                     activeSubscription: B,
-                    stepConfigs: b,
-                    breadcrumbs: v = [],
+                    stepConfigs: v,
+                    breadcrumbs: b = [],
                     skuIDs: H,
                     isGift: K = !1,
                     children: w,
@@ -726,8 +726,8 @@
                     steps: tc,
                     breadcrumbsData: td
                 } = (0, F.default)({
-                    stepConfigs: b,
-                    breadcrumbs: v
+                    stepConfigs: v,
+                    breadcrumbs: b
                 }), [tS, tE] = (0, L.default)(to), {
                     paymentError: tf,
                     paymentAuthenticationState: t_
@@ -748,7 +748,7 @@
                     selectedPlan: tP,
                     setSelectedSkuId: tN,
                     setSelectedPlanId: tR
-                } = (0, C.default)(), [th, tU] = (0, o.useStateFromStoresArray)([E.default], () => [E.default.purchaseTokenAuthState, E.default.purchaseTokenHash]), [tL, tm] = (0, o.useStateFromStoresArray)([g.default], () => [g.default.browserCheckoutState, g.default.loadId]), [tM, tF] = r.useState(null), [tO, tg] = r.useState(null), [ty, tG] = r.useState(null), [tD, tB] = r.useState(null), [tb, tv] = r.useState(null), [tH, tK] = r.useState(void 0), [tw, tY] = r.useState([]), tk = r.useMemo(() => null == tP || (0, A.isPremiumSubscriptionPlan)(tP.id), [tP]), tW = r.useRef(null != B ? B.planId : null);
+                } = (0, C.default)(), [th, tU] = (0, o.useStateFromStoresArray)([E.default], () => [E.default.purchaseTokenAuthState, E.default.purchaseTokenHash]), [tL, tm] = (0, o.useStateFromStoresArray)([g.default], () => [g.default.browserCheckoutState, g.default.loadId]), [tM, tF] = r.useState(null), [tO, tg] = r.useState(null), [ty, tG] = r.useState(null), [tD, tB] = r.useState(null), [tv, tb] = r.useState(null), [tH, tK] = r.useState(void 0), [tw, tY] = r.useState([]), tk = r.useMemo(() => null == tP || (0, A.isPremiumSubscriptionPlan)(tP.id), [tP]), tW = r.useRef(null != B ? B.planId : null);
                 r.useEffect(() => {
                     null == tW.current && null != B && (tW.current = B.planId)
                 }, [B]);
@@ -783,8 +783,8 @@
                         hasFetchedSubscriptionPlans: tt,
                         updatedSubscription: tD,
                         setUpdatedSubscription: tB,
-                        subscriptionMetadataRequest: tb,
-                        setSubscriptionMetadataRequest: tv,
+                        subscriptionMetadataRequest: tv,
+                        setSubscriptionMetadataRequest: tb,
                         hasFetchedPaymentSources: q,
                         paymentSources: Q,
                         hasPaymentSources: X,
@@ -800,7 +800,7 @@
                         step: to,
                         setStep: ts,
                         steps: tc,
-                        stepConfigs: b,
+                        stepConfigs: v,
                         breadcrumbs: td,
                         purchaseState: tS,
                         setPurchaseState: tE,
@@ -1351,81 +1351,33 @@
             "use strict";
             n.r(e), n.d(e, {
                 fetchAllSubscriptionListingsDataForApplication: function() {
-                    return c
+                    return l
                 },
                 fetchEntitlementsForGuild: function() {
-                    return d
+                    return a
                 },
                 dismissApplicationSubscriptionExpirationNotice: function() {
-                    return S
+                    return o
                 },
                 fetchSubscriptionListingForPlan: function() {
-                    return E
+                    return s
                 }
             }), n("222007");
             var i = n("913144"),
                 r = n("775433"),
-                u = n("739295"),
-                l = n("49111");
-
-            function a(t) {
-                return {
-                    id: t.id,
-                    type: l.SKUTypes.SUBSCRIPTION,
-                    application_id: t.application_id,
-                    product_line: l.SKUProductLines.APPLICATION,
-                    name: t.name,
-                    summary: "",
-                    description: t.description,
-                    flags: t.sku_flags,
-                    manifests: [],
-                    available_regions: [],
-                    legal_notice: "",
-                    deleted: t.soft_deleted,
-                    price_tier: 0,
-                    show_age_gate: !1,
-                    restricted: !1
-                }
-            }
-
-            function o(t) {
-                var e;
-                return {
-                    id: t.id,
-                    sku: a(t),
-                    summary: t.description,
-                    description: t.description,
-                    benefits: null !== (e = t.store_listing_benefits) && void 0 !== e ? e : [],
-                    thumbnail: t.image_asset
-                }
-            }
-
-            function s(t) {
-                for (let e of (i.default.dispatch({
-                        type: "SKUS_FETCH_SUCCESS",
-                        skus: t.map(a)
-                    }), i.default.dispatch({
-                        type: "STORE_LISTINGS_FETCH_SUCCESS",
-                        storeListings: t.map(o)
-                    }), t)) i.default.dispatch({
-                    type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS",
-                    skuId: e.id,
-                    subscriptionPlans: e.subscription_plans
-                })
-            }
-            async function c(t, e) {
+                u = n("739295");
+            async function l(t, e) {
                 i.default.dispatch({
                     type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS",
                     applicationId: t
                 });
                 try {
-                    var n;
-                    let r = await u.getApplicationSubscriptionGroupListingsForApplication(t, e);
+                    let n = await u.getApplicationSubscriptionGroupListingsForApplication(t, e);
                     return i.default.dispatch({
                         type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS",
                         applicationId: t,
-                        groupListing: r
-                    }), s(null !== (n = r.subscription_listings) && void 0 !== n ? n : []), r
+                        groupListing: n
+                    }), n
                 } catch (e) {
                     i.default.dispatch({
                         type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE",
@@ -1433,7 +1385,7 @@
                     })
                 }
             }
-            async function d(t) {
+            async function a(t) {
                 i.default.dispatch({
                     type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS",
                     guildId: t
@@ -1453,13 +1405,13 @@
                 }
             }
 
-            function S(t) {
+            function o(t) {
                 i.default.dispatch({
                     type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED",
                     guildId: t
                 })
             }
-            async function E(t) {
+            async function s(t) {
                 i.default.dispatch({
                     type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN",
                     planId: t
@@ -1472,8 +1424,7 @@
                         groupListing: n
                     });
                     let l = null !== (e = n.subscription_listings) && void 0 !== e ? e : [];
-                    for (let e of l) e.subscription_plans[0].id === t && await r.fetchSubscriptionPlansForSKU(e.id, void 0, void 0, !0);
-                    s(l)
+                    for (let e of l) e.subscription_plans[0].id === t && await r.fetchSubscriptionPlansForSKU(e.id, void 0, void 0, !0)
                 } catch (t) {}
             }
         },
@@ -3022,4 +2973,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23777.cfe7c6c819dbbdc592cc.js.map
+//# sourceMappingURL=23777.7052f9ee0ba5f8b9859c.js.map
