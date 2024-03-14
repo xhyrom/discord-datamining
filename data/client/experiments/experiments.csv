@@ -494,6 +494,7 @@ id,hash,label
 2024-02_v1_content_inventory_feed,1747551262,V1 Feed of the content inventory
 2024-03_ait_guild_entry_point,1979035979,Activities in Text Guild Experiment w/ new Entry Point
 2024-03_amd_vdec_tests_1,1872798231,"GPU Workarounds: AMD video decode tests 1 (1002:1636, 1002:1638)"
+2024-03_clickstream_analytics,937474337,Clickstream Analytics
 2024-03_media_play_metrics,465715532,Media play metrics User Experiment
 2024-03_metrics_endpoint_v2,1779058233,Metrics V2 Endpoint Rollout
 2024-03_packages,845634770,Packages
