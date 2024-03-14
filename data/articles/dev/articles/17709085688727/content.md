@@ -3,13 +3,13 @@
 <p>Upgrading an app to premium consists of 3 main phases:</p>
 <ul>
     <li>
-        <a href="#h_01HB8WP0GADB3NZ78DM0CVE9N4">Onboarding</a> - A series of automated checks in the <a href="https://discordapp.com/developers/" target="_blank" rel="noopener noreferrer">Developer Portal</a>
+        <a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727#h_01HB8WP0GADB3NZ78DM0CVE9N4">Onboarding</a> - A series of automated checks in the <a href="https://discordapp.com/developers/" target="_blank" rel="noopener noreferrer">Developer Portal</a>
     </li>
     <li>
-        <a href="#h_01HB8WP0GBE0P7X6P16ZVVRHBW">Integration</a> - Developers add a premium SKU to which a user can subscribe
+        <a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727#h_01HB8WP0GBE0P7X6P16ZVVRHBW">Integration</a> - Developers add a premium SKU to which a user can subscribe
     </li>
     <li>
-        <a href="#h_01HB8WP0GB6ZFV8TQ18SZ77K11">Payout</a> - After an app makes its first $100 and subsequent $25 increments on a monthly basis
+        <a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727#h_01HB8WP0GB6ZFV8TQ18SZ77K11">Payout</a> - After an app makes its first $100 and subsequent $25 increments on a monthly basis
     </li>
 </ul>
 <p>In order to complete these phases, app owners, teams, and apps will all need to meet many requirements and complete a series of steps.</p>
@@ -33,7 +33,7 @@
     <li>Be over 18 years old</li>
     <li>Have a verified email and 2FA set up</li>
     <li>Must be located in the US, UK, or EU</li>
-    <li>Agree to the <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener noreferrer">Monetization Terms</a> and <a href="https://support-dev.discord.com/hc/en-us/articles/17442400631959" target="_blank" rel="noopener noreferrer">Premium Apps Policy</a>
+    <li>Agree to the <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener noreferrer">Monetization Terms</a> and <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Monetization-Policy" target="_blank" rel="noopener noreferrer">Monetization Policy</a>
     </li>
 </ul>
 <h3 id="h_01HB8WP0GBMT4E142096S9HYYS">Developer Team Member Requirements</h3>
