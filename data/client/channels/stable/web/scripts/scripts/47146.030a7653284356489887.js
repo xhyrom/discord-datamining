@@ -1389,17 +1389,22 @@
             "use strict";
             i.r(t), i.d(t, {
                 default: function() {
-                    return r
+                    return o
                 }
             });
-            var n = i("292687"),
-                l = i("974889"),
-                a = i("393414"),
-                u = i("49111");
+            var n = i("255397"),
+                l = i("292687"),
+                a = i("974889"),
+                u = i("393414"),
+                r = i("191225"),
+                d = i("420444"),
+                s = i("49111");
 
-            function r(e, t) {
-                let i = n.default.getWindowOpen(u.PopoutWindowKeys.CHANNEL_CALL_POPOUT);
-                i ? (0, l.default)(u.PopoutWindowKeys.CHANNEL_CALL_POPOUT) : (0, a.transitionTo)(u.Routes.CHANNEL(e, t))
+            function o(e, t) {
+                let i = l.default.getWindowOpen(s.PopoutWindowKeys.CHANNEL_CALL_POPOUT);
+                i ? (0, a.default)(s.PopoutWindowKeys.CHANNEL_CALL_POPOUT) : (0, u.transitionTo)(s.Routes.CHANNEL(e, t));
+                let o = r.default.getSelfEmbeddedActivityForChannel(t);
+                null != o && (0, d.default)(t) && n.default.selectParticipant(t, o.applicationId)
             }
         },
         577261: function(e, t, i) {
@@ -1520,6 +1525,33 @@
                 }
             }
             var c = new o
+        },
+        442939: function(e, t, i) {
+            "use strict";
+            i.r(t), i.d(t, {
+                default: function() {
+                    return d
+                },
+                useGetOrFetchApplication: function() {
+                    return s
+                }
+            });
+            var n = i("884691"),
+                l = i("446674"),
+                a = i("233736"),
+                u = i("651057"),
+                r = i("299285");
+
+            function d(e) {
+                let t = n.useRef([]);
+                return n.useEffect(() => {
+                    !(0, a.areArraysShallowEqual)(e, t.current) && (u.default.fetchApplications(e, !1), t.current = e)
+                }, [e]), (0, l.useStateFromStoresArray)([r.default], () => e.map(e => r.default.getApplication(e)))
+            }
+
+            function s(e) {
+                return d(null != e ? [e] : [])[0]
+            }
         },
         242740: function(e, t, i) {
             "use strict";
@@ -2151,4 +2183,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47146.1dcbda965edde99087c3.js.map
+//# sourceMappingURL=47146.030a7653284356489887.js.map

@@ -5791,6 +5791,8 @@
         611800: function(e, t, n) {
             "use strict";
             e.exports = {
+                header: "header_dc6f49",
+                headerContainer: "headerContainer__74e18",
                 toggleExpandButton: "toggleExpandButton__22eac",
                 toggleExpandIcon: "toggleExpandIcon_ab767d"
             }
@@ -5803,8 +5805,10 @@
                 container: "container__31412",
                 contentDescription: "contentDescription__06a2c",
                 contentImage: "contentImage__64b0b",
+                fontScaling: "fontScaling__97f56",
                 selected: "selected_d0256a",
                 textSection: "textSection_d5f384",
+                userName: "userName__1291b",
                 userSection: "userSection__58e31"
             }
         },
@@ -7229,7 +7233,6 @@
                 media: "media__7cd19",
                 mediaContainer: "mediaContainer__668dd",
                 subheader: "subheader__3f4ed",
-                toast: "toast__49c25",
                 video: "video__288e9"
             }
         },
@@ -9978,14 +9981,18 @@
             e.exports = {
                 editable: "editable_f98c46",
                 elevatedPermission: "elevatedPermission_c4dcb1",
+                elevatedPermissionContainer: "elevatedPermissionContainer_b0e607",
                 permissionItemContainer: "permissionItemContainer__274fd",
                 permissionItemDescription: "permissionItemDescription__284c1",
                 permissionItemHeader: "permissionItemHeader__327be",
                 permissionItemRoleContainer: "permissionItemRoleContainer__8080d",
+                permissionItemSubheader: "permissionItemSubheader__05325",
                 permissionTitle: "permissionTitle_ffc8c2",
                 permissionsGroupContainer: "permissionsGroupContainer__8e7a8",
                 permissionsItemContainer: "permissionsItemContainer__3985c",
-                roleTooltipItem: "roleTooltipItem__23787"
+                roleChiplet: "roleChiplet_b47a73",
+                roleTooltipItem: "roleTooltipItem__23787",
+                searchBar: "searchBar__38bbb"
             }
         },
         105871: function(e, t, n) {
@@ -12245,7 +12252,7 @@
                 tierImageContainer: "tierImageContainer_a5f82e"
             }
         },
-        436335: function(e, t, n) {
+        348091: function(e, t, n) {
             "use strict";
             e.exports = {
                 caret: "caret_a8ea2b",
@@ -16329,27 +16336,35 @@
                 title: "title__53028"
             }
         },
-        543178: function(e, t, n) {
+        528085: function(e, t, n) {
             "use strict";
             e.exports = {
-                backgroundImage: "backgroundImage_a126f1",
-                backgroundWrapper: "backgroundWrapper_b33782",
-                body: "body__5e040",
-                button: "button_b9f489",
-                buttonIcon: "buttonIcon_e37f26",
-                buttonWrapper: "buttonWrapper__12958",
-                closeButton: "closeButton__4396e button_b9f489",
-                closeIcon: "closeIcon_ec06a5",
-                entrypoint: "entrypoint__8c831",
-                iconButton: "iconButton_cefe5e button_b9f489",
-                image: "image__4fd61",
-                wrapper: "wrapper_e8ee0c"
+                content: "content_c858dd",
+                image: "image__8d807",
+                title: "title__5d436"
             }
         },
-        150496: function(e, t, n) {
+        61701: function(e, t, n) {
             "use strict";
             e.exports = {
-                background: "background_abacb9"
+                backgroundImage: "backgroundImage__7315e",
+                backgroundWrapper: "backgroundWrapper_d7758f",
+                body: "body_df9987",
+                button: "button__5619c",
+                buttonIcon: "buttonIcon__029b7",
+                buttonWrapper: "buttonWrapper__1702a",
+                closeButton: "closeButton_c603ea button__5619c",
+                closeIcon: "closeIcon_e4622b",
+                entrypoint: "entrypoint__10e94",
+                iconButton: "iconButton_eb2bbf button__5619c",
+                image: "image_ff8cda",
+                wrapper: "wrapper__7a5c1"
+            }
+        },
+        197936: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                background: "background__8832b"
             }
         },
         254539: function(e, t, n) {
@@ -19215,6 +19230,7 @@
                 addAnswerIconDefault: "addAnswerIconDefault_a45ed2",
                 addAnswerIconImageOnly: "addAnswerIconImageOnly__048af",
                 answerInputsContainer: "answerInputsContainer__22676",
+                apiErrorBlock: "apiErrorBlock__80d44",
                 canRemoveMoreAnswers: "canRemoveMoreAnswers__252d8",
                 checkbox: "checkbox__0fb8e",
                 closeIcon: "closeIcon_f53e1e",
@@ -19315,9 +19331,11 @@
             e.exports = {
                 bottomBar: "bottomBar_ef16d0",
                 container: "container__3ca24",
+                detailsText: "detailsText__5f51b",
+                detailsTextButton: "detailsTextButton_d4f894",
                 prompt: "prompt__75afd",
                 secondaryAction: "secondaryAction__6fd41",
-                textButton: "textButton__33241"
+                tertiaryAction: "tertiaryAction__09766"
             }
         },
         997559: function(e, t, n) {
@@ -20976,7 +20994,9 @@
             e.exports = {
                 cardDescription: "cardDescription_d7433f",
                 cardDescriptionTenureReward: "cardDescriptionTenureReward_bca63f",
-                descriptionCTATenureReward: "descriptionCTATenureReward__55e19"
+                descriptionCTATenureReward: "descriptionCTATenureReward__55e19",
+                glowEffect: "glowEffect_a3ec8f",
+                glowingCardContainer: "glowingCardContainer__7d35d"
             }
         },
         618080: function(e, t, n) {
@@ -21335,6 +21355,7 @@
             e.exports = {
                 buttonHighlighted: "buttonHighlighted__73136",
                 buttonsContainer: "buttonsContainer__90115",
+                overrideButtonsContainer: "overrideButtonsContainer__54d80",
                 removeButton: "removeButton__64c13"
             }
         },
@@ -21644,6 +21665,7 @@
                 partnerBranding: "partnerBranding_c1b5c7",
                 questName: "questName_cb6da6",
                 questProgressBar: "questProgressBar__991b3",
+                questProgressHint: "questProgressHint__16d7e",
                 questProgressRewardTile: "questProgressRewardTile_a5ea1d",
                 questProgressWrapper: "questProgressWrapper__29bcb",
                 shine: "shine_ddcd6f"
@@ -21653,6 +21675,7 @@
             "use strict";
             e.exports = {
                 contentExpanded: "contentExpanded_ffeded",
+                contentInteractable: "contentInteractable__902a8",
                 cta: "cta_f68ce1",
                 ctaClaimReward: "ctaClaimReward_e4b6be",
                 ctaWrapper: "ctaWrapper__85e96",
