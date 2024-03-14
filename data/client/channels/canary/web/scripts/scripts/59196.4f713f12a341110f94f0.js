@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["60053"], {
+    ["59196"], {
         777483: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "668973",
@@ -65772,13 +65772,13 @@
                     channelId: null !== (n = null == ec ? void 0 : ec.id) && void 0 !== n ? n : G.EMPTY_STRING_SNOWFLAKE_ID
                 }), em = null == ed ? void 0 : ed.application, eh = ef && null != ep.find(e => e.id === (null == em ? void 0 : em.id));
                 (0, s.useEffect)(() => {
-                    if (eu && Q && 0 === W) {
+                    if (eu && 0 === W) {
                         Y(1);
                         let e = new Image;
                         e.src = eo, e.onload = () => Y(2)
                     }
-                }, [l, eu, Q, eo, W]), s.useEffect(() => {
-                    if (en || !Q) return;
+                }, [l, eu, eo, W]), s.useEffect(() => {
+                    if (en || !eu) return;
                     let e = null != p ? p : null == r ? void 0 : r.getBannerURL({
                         size: er,
                         canAnimate: !0
@@ -65786,7 +65786,7 @@
                     if (null == e) return;
                     let t = new Image;
                     t.src = e
-                }, [en, Q, p, r, er]);
+                }, [en, eu, p, r, er]);
                 let ex = (0, g.default)({
                     analyticsLocation: {
                         page: G.AnalyticsPages.USER_POPOUT,
@@ -65813,7 +65813,7 @@
                         onMouseMove: () => ee(!0),
                         onMouseLeave: () => ee(!1),
                         style: {
-                            backgroundImage: eu && Q ? "url(".concat(eo, ")") : void 0,
+                            backgroundImage: eu ? "url(".concat(eo, ")") : void 0,
                             backgroundColor: 2 !== W ? c.default.unsafe_rawColors.PRIMARY_800.css : es
                         },
                         children: [X ? null == J ? (0, a.jsx)(Z, {
@@ -66046,7 +66046,7 @@
                 s = n("590456"),
                 r = n("320399");
             let o = e => t => {
-                    if (t.hasBanner && t.isPremium || t.hasProfileEffect) return e.premiumUserWithBanner;
+                    if (t.hasBanner || t.hasProfileEffect) return e.premiumUserWithBanner;
                     if (t.isPremium) {
                         var n;
                         return null !== (n = e.premiumUserWithoutBanner) && void 0 !== n ? n : e.default
@@ -67908,7 +67908,7 @@
                         default: L.avatarPositionNormal
                     });
                     return e({
-                        isPremium: w && !D,
+                        isPremium: w,
                         hasBanner: o,
                         hasProfileEffect: T
                     })
@@ -81898,4 +81898,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.2f8906e52835a154a607.js.map
+//# sourceMappingURL=59196.4f713f12a341110f94f0.js.map
