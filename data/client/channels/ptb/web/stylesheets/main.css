@@ -119721,6 +119721,16 @@ html .invoiceCancelRow_a8669b {
     user-select: none
 }
 
+.clickable__69e24 {
+    cursor: pointer
+}
+
+.icon__07bff {
+    display: flex;
+    width: 16px;
+    height: 16px
+}
+
 .containerOwned_d3f1c1 {
     cursor: pointer
 }
@@ -119857,7 +119867,13 @@ html .invoiceCancelRow_a8669b {
 }
 
 .inventoryHeader_de1495 {
-    margin: 20px 0 8px 12px
+    margin: 20px 0 8px 12px;
+    display: flex;
+    align-items: center
+}
+
+.inventoryHelpIcon_d2b3ca {
+    margin-left: 4px
 }
 
 .inventoryContainer_f4883b {
@@ -130012,4 +130028,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5c418859a8d0934e51c8.css.map*/
+/*# sourceMappingURL=app.9eb7a60df06c26480ab7.css.map*/
