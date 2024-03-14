@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["64270"], {
+    ["94504"], {
         53708: function(e, t, n) {
             "use strict";
             e.exports = n.p + "f6c7b8245d3a54cf98b2.png"
@@ -152,26 +152,26 @@
                     overrideDiscriminator: u,
                     forcePomelo: f,
                     ...h
-                } = e, C = (0, l.useStateFromStores)([o.default], () => o.default.hidePersonalInformation), p = C || t || n.isNonUserBot(), _ = n.toString(), m = d.default.getName(n), I = r ? _ : null != s ? s : m, N = n.isPomelo() || f;
-                if (N || I !== _) {
-                    let e = I === _ && N && r ? d.default.getUserTag(n, {
+                } = e, C = (0, l.useStateFromStores)([o.default], () => o.default.hidePersonalInformation), p = C || t || n.isNonUserBot(), m = n.toString(), _ = d.default.getName(n), S = r ? m : null != s ? s : _, I = n.isPomelo() || f;
+                if (I || S !== m) {
+                    let e = S === m && I && r ? d.default.getUserTag(n, {
                             forcePomelo: f
-                        }) : I,
-                        t = a && e !== "@".concat(_) ? d.default.getUserTag(n) : void 0;
+                        }) : S,
+                        t = a && e !== "@".concat(m) ? d.default.getUserTag(n) : void 0;
                     return (0, i.jsx)(E, {
                         primary: e,
                         secondary: t,
                         botVerified: n.isVerifiedBot(),
                         botType: v(n),
-                        showStreamerModeTooltip: C && e !== m,
+                        showStreamerModeTooltip: C && e !== _,
                         ...h
                     })
                 }
                 return (0, i.jsx)(c.default, {
-                    name: I,
+                    name: S,
                     botType: v(n),
                     botVerified: n.isVerifiedBot(),
-                    discriminator: p || I !== _ ? null : null != u ? u : n.discriminator,
+                    discriminator: p || S !== m ? null : null != u ? u : n.discriminator,
                     ...h
                 })
             }
@@ -401,23 +401,23 @@
                     followupSKUInfo: E,
                     onClose: C,
                     onComplete: p,
-                    onSubscriptionConfirmation: _,
-                    analyticsLocations: m,
-                    analyticsObject: I,
-                    analyticsLocation: N,
-                    analyticsSourceLocation: S,
+                    onSubscriptionConfirmation: m,
+                    analyticsLocations: _,
+                    analyticsObject: S,
+                    analyticsLocation: I,
+                    analyticsSourceLocation: N,
                     isGift: g = !1,
                     giftMessage: T,
-                    subscriptionTier: A,
-                    trialId: R,
+                    subscriptionTier: R,
+                    trialId: A,
                     postSuccessGuild: x,
                     openInvoiceId: L,
                     applicationId: M,
-                    referralTrialOfferId: O,
-                    giftRecipient: w,
-                    returnRef: y,
-                    subscription: b
-                } = null != e ? e : {}, P = !1, V = (0, s.v4)(), j = u.default.getCurrentUser(), U = (0, f.isPremiumExactly)(j, v.PremiumTypes.TIER_2);
+                    referralTrialOfferId: w,
+                    giftRecipient: y,
+                    returnRef: b,
+                    subscription: P
+                } = null != e ? e : {}, V = !1, O = (0, s.v4)(), j = u.default.getCurrentUser(), U = (0, f.isPremiumExactly)(j, v.PremiumTypes.TIER_2);
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
@@ -429,49 +429,49 @@
                         } = n;
                         return (0, i.jsx)(e, {
                             ...r,
-                            loadId: V,
-                            subscriptionTier: A,
-                            skuId: (0, f.castPremiumSubscriptionAsSkuId)(A),
+                            loadId: O,
+                            subscriptionTier: R,
+                            skuId: (0, f.castPremiumSubscriptionAsSkuId)(R),
                             isGift: g,
                             giftMessage: T,
-                            giftRecipient: w,
+                            giftRecipient: y,
                             initialPlanId: t,
                             followupSKUInfo: E,
                             onClose: (e, t) => {
-                                s(), null == C || C(e), e && (null == _ || _(), !g && null != t && t === v.PremiumSubscriptionSKUs.TIER_2 && !U && d.ComponentDispatch.dispatch(h.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
+                                s(), null == C || C(e), e && (null == m || m(), !g && null != t && t === v.PremiumSubscriptionSKUs.TIER_2 && !U && d.ComponentDispatch.dispatch(h.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
-                                P = !0, null == p || p(), !g && (0, o.setCanPlayWowMoment)(!0)
+                                V = !0, null == p || p(), !g && (0, o.setCanPlayWowMoment)(!0)
                             },
-                            onSubscriptionConfirmation: _,
-                            analyticsLocations: m,
-                            analyticsObject: I,
-                            analyticsLocation: N,
-                            analyticsSourceLocation: S,
-                            trialId: R,
+                            onSubscriptionConfirmation: m,
+                            analyticsLocations: _,
+                            analyticsObject: S,
+                            analyticsLocation: I,
+                            analyticsSourceLocation: N,
+                            trialId: A,
                             postSuccessGuild: x,
                             planGroup: v.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
                             openInvoiceId: L,
                             applicationId: M,
-                            referralTrialOfferId: O,
-                            returnRef: y,
-                            subscription: b
+                            referralTrialOfferId: w,
+                            returnRef: b,
+                            subscription: P
                         })
                     }
                 }, {
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
-                        !P && c.default.track(h.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
-                            load_id: V,
+                        !V && c.default.track(h.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
+                            load_id: O,
                             payment_type: h.PurchaseTypeToAnalyticsPaymentType[h.PurchaseTypes.SUBSCRIPTION],
-                            location: null != N ? N : I,
-                            source: S,
+                            location: null != I ? I : S,
+                            source: N,
                             subscription_type: h.SubscriptionTypes.PREMIUM,
                             is_gift: g,
-                            eligible_for_trial: null != R,
+                            eligible_for_trial: null != A,
                             application_id: M,
-                            location_stack: m
-                        }), (0, l.clearError)(), (0, a.clearPurchaseTokenAuthState)(), null == C || C(P), P && (null == _ || _())
+                            location_stack: _
+                        }), (0, l.clearError)(), (0, a.clearPurchaseTokenAuthState)(), null == C || C(V), V && (null == m || m())
                     }
                 })
             }
@@ -521,14 +521,14 @@
                     return e.isGuildStageVoice() ? t = u.CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS : e.isGuildVoice() && (t = u.CREATE_GUILD_EVENT_VOICE_CHANNEL_PERMISSIONS), [s.default.combine(t, c.Permissions.CREATE_EVENTS), s.default.combine(t, c.Permissions.MANAGE_EVENTS)]
                 },
                 v = e => {
-                    let [t, n] = e instanceof l.default ? [c.Permissions.CREATE_EVENTS, c.Permissions.MANAGE_EVENTS] : h(e), [s, u, v, E] = (0, r.useStateFromStoresArray)([a.default], () => [a.default.can(c.Permissions.CREATE_GUILD_EXPRESSIONS, e), a.default.can(c.Permissions.MANAGE_GUILD_EXPRESSIONS, e), a.default.can(t, e), a.default.can(n, e)]), C = (0, r.useStateFromStores)([o.default], () => o.default.getCurrentUser()), p = i.useCallback(e => f(e, C, u, s), [s, u, C]), _ = i.useCallback(e => f(e, C, E, v), [E, v, C]);
+                    let [t, n] = e instanceof l.default ? [c.Permissions.CREATE_EVENTS, c.Permissions.MANAGE_EVENTS] : h(e), [s, u, v, E] = (0, r.useStateFromStoresArray)([a.default], () => [a.default.can(c.Permissions.CREATE_GUILD_EXPRESSIONS, e), a.default.can(c.Permissions.MANAGE_GUILD_EXPRESSIONS, e), a.default.can(t, e), a.default.can(n, e)]), C = (0, r.useStateFromStores)([o.default], () => o.default.getCurrentUser()), p = i.useCallback(e => f(e, C, u, s), [s, u, C]), m = i.useCallback(e => f(e, C, E, v), [E, v, C]);
                     return null == e ? d : {
                         canCreateExpressions: s,
                         canCreateGuildEvent: v,
                         canManageAllExpressions: u,
                         canManageAllEvents: E,
                         canManageGuildExpression: p,
-                        canManageGuildEvent: _
+                        canManageGuildEvent: m
                     }
                 },
                 E = function(e) {
@@ -706,7 +706,7 @@
                     return C
                 },
                 default: function() {
-                    return _
+                    return m
                 }
             });
             var i, s, r = n("37983"),
@@ -766,14 +766,14 @@
                     buttonShineClassName: v,
                     onlyShineOnHover: E,
                     ...p
-                } = e, _ = l.createRef(), m = (0, d.default)(_), I = !i && !s && !0 !== a && (!E || m);
+                } = e, m = l.createRef(), _ = (0, d.default)(m), S = !i && !s && !0 !== a && (!E || _);
                 return (0, r.jsxs)(c.Button, {
-                    buttonRef: _,
+                    buttonRef: m,
                     ...p,
                     className: o(h.shinyButton, n),
                     disabled: i,
                     submitting: s,
-                    children: [t, I ? (0, r.jsx)(C, {
+                    children: [t, S ? (0, r.jsx)(C, {
                         shinePaused: f,
                         className: o(h.buttonShine, E ? h.onlyShineOnHover : void 0, v),
                         shineSize: u
@@ -781,7 +781,7 @@
                 })
             };
             p.ShineSizes = s;
-            var _ = p
+            var m = p
         },
         191814: function(e, t, n) {
             "use strict";
@@ -842,20 +842,20 @@
                         transition: E = f.transition,
                         className: C,
                         foreground: p,
-                        expanded: _,
-                        ...m
+                        expanded: m,
+                        ..._
                     } = e, {
-                        enabled: I
-                    } = (0, c.useRedesignIconContext)(), N = t;
-                    if (!0 === _ ? N = h.DOWN : !1 === _ && (N = h.RIGHT), I) {
+                        enabled: S
+                    } = (0, c.useRedesignIconContext)(), I = t;
+                    if (!0 === m ? I = h.DOWN : !1 === m && (I = h.RIGHT), S) {
                         let e = {
                             [h.UP]: u.ChevronSmallUpIcon,
                             [h.DOWN]: l.ChevronSmallDownIcon,
                             [h.LEFT]: a.ChevronSmallLeftIcon,
                             [h.RIGHT]: o.ChevronSmallRightIcon
-                        } [N];
+                        } [I];
                         return (0, i.jsx)(e, {
-                            ...m,
+                            ..._,
                             className: C,
                             width: n,
                             height: s,
@@ -864,11 +864,11 @@
                         })
                     }
                     return (0, i.jsx)("svg", {
-                        className: r(C, E, N),
+                        className: r(C, E, I),
                         width: n,
                         height: s,
                         viewBox: "0 0 24 24",
-                        ...(0, d.default)(m),
+                        ...(0, d.default)(_),
                         children: (0, i.jsx)("path", {
                             className: p,
                             fill: "none",
@@ -1545,16 +1545,7 @@
             }), n("6268");
             var i = n("157590"),
                 s = n("235855")
-        },
-        265586: function(e, t, n) {
-            "use strict";
-            var i, s;
-            n.r(t), n.d(t, {
-                CollectiblesItemType: function() {
-                    return i
-                }
-            }), (s = i || (i = {}))[s.NONE = 100] = "NONE", s[s.AVATAR_DECORATION = 0] = "AVATAR_DECORATION", s[s.PROFILE_EFFECT = 1] = "PROFILE_EFFECT"
         }
     }
 ]);
-//# sourceMappingURL=64270.18c3c4e4583b29c22665.js.map
+//# sourceMappingURL=94504.255083514b91956f5696.js.map
