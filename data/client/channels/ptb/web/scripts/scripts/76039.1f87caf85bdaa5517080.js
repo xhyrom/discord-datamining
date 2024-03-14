@@ -18477,7 +18477,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275208", ", Version Hash: ").concat("91d45873bc7bd573879973cd130bc221e7511d2d")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275207", ", Version Hash: ").concat("dc4de68ecb42808ebb2ecc67924b4518cc56d3c7")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20845,8 +20845,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "275208", "275208"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275208")), _ = 0), _
+                let _ = parseInt((e = "275207", "275207"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275207")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21736,7 +21736,7 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return C
+                    return L
                 }
             }), E("222007");
             var t = E("913144"),
@@ -21751,29 +21751,25 @@
                 S = 0;
 
             function N() {
-                l()
-            }
-
-            function O() {
                 R()
             }
 
-            function A(e) {
-                e.idle ? R() : l()
+            function O() {
+                A()
             }
 
-            function R() {
+            function A() {
                 clearTimeout(s), s = null
             }
 
-            function l() {
-                if (R(), !(0, n.isEligibleForContentInventoryV1)("ContentInventoryManager") || T) return;
+            function R() {
+                if (A(), !(0, n.isEligibleForContentInventoryV1)("ContentInventoryManager") || T) return;
                 let e = a.default.getFeed(I),
                     _ = null == e ? void 0 : e.expired_at,
                     E = null == _ ? 0 : new Date(_).getTime() - Date.now();
-                s = setTimeout(() => u(), E)
+                s = setTimeout(() => l(), E)
             }
-            async function u() {
+            async function l() {
                 if (!T) try {
                     T = !0;
                     let e = await (0, r.getMyContentInventory)();
@@ -21781,25 +21777,24 @@
                         type: "CONTENT_INVENTORY_SET_FEED",
                         feedId: I,
                         feed: e
-                    }), S = 0, T = !1, l()
+                    }), S = 0, T = !1, R()
                 } catch (e) {
                     if (S < 3) {
                         let e = 1e3 * Math.pow(5, S);
-                        s = setTimeout(() => u(), e), S += 1
+                        s = setTimeout(() => l(), e), S += 1
                     }
                     T = !1
                 }
             }
-            class L extends o.default {
+            class u extends o.default {
                 constructor(...e) {
                     super(...e), this.actions = {
                         POST_CONNECTION_OPEN: N,
-                        CONNECTION_CLOSED: O,
-                        IDLE: A
+                        CONNECTION_CLOSED: O
                     }
                 }
             }
-            var C = new L
+            var L = new u
         },
         302537: function(e, _, E) {
             "use strict";
@@ -37119,4 +37114,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.a415989270d5e3928d40.js.map
+//# sourceMappingURL=76039.1f87caf85bdaa5517080.js.map
