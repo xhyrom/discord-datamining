@@ -43907,11 +43907,8 @@
                 }
                 toggleShow(e) {
                     if (this.state.shouldShowTooltip !== e) {
-                        if (e) {
-                            var t, n;
-                            null === (t = (n = this.props).onTooltipShow) || void 0 === t || t.call(n)
-                        }
-                        d.flushSync(() => {
+                        var t, n, i, s;
+                        e ? null === (t = (n = this.props).onTooltipShow) || void 0 === t || t.call(n) : null === (i = (s = this.props).onTooltipHide) || void 0 === i || i.call(s), d.flushSync(() => {
                             this.setState({
                                 shouldShowTooltip: e
                             })
@@ -87686,8 +87683,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710444582430",
-                                    build_number: "275237"
+                                    built_at: "1710446814742",
+                                    build_number: "275262"
                                 }
                             },
                             retries: 1
@@ -91646,15 +91643,15 @@
             }
 
             function I(e) {
-                let t = m.ChannelTypesSets.POLLS.has(e.type),
+                let t = m.ChannelTypesSets.POLLS.has(null == e ? void 0 : e.type),
                     {
                         enabled: n
                     } = E.CreateGuildPollsExperiment.useExperiment({
-                        guildId: e.guild_id,
+                        guildId: null == e ? void 0 : e.guild_id,
                         location: "useCanPostPollsInChannel"
                     }, {
                         autoTrackExposure: !0,
-                        disable: !t || e.isPrivate() || !c.default.can(m.Permissions.SEND_MESSAGES, e)
+                        disable: !t || (null == e ? void 0 : e.isPrivate()) || !c.default.can(m.Permissions.SEND_MESSAGES, e)
                     }),
                     {
                         enabled: i
@@ -91662,7 +91659,7 @@
                         location: "useCanPostPollsInChannel"
                     }, {
                         autoTrackExposure: !0,
-                        disable: !t || !e.isPrivate()
+                        disable: !t || !(null == e ? void 0 : e.isPrivate())
                     });
                 return n || i
             }
@@ -125095,7 +125092,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "35e730aee071825e55a52410c69022d6df505120"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "8b2590a3587bf53c7eae3b28e3ab2d1210fce857"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134434,7 +134431,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275237"
+                                build_number: "275262"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152049,4 +152046,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.731fe89fe981c0345307.js.map
+//# sourceMappingURL=29062.cc700fde70c37818e413.js.map
