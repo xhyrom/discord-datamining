@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["60053"], {
+    ["59196"], {
         777483: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "668973",
@@ -30903,14 +30903,14 @@
                     SelectedChannelStore: C.default,
                     VoiceStateStore: T.default,
                     PermissionStore: g.default
-                })), ei = (0, d.useAnalyticsContext)(), el = !N.isPlatformEmbedded, ea = (0, L.default)(t, D.ActivityFlags.JOIN) || K;
-                if (null == t || !ea || null == t.application_id) return null;
-                let es = !F && (el || Q) && !Y && !$ && (!K || en),
-                    er = null;
-                F ? er = w.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF : !el && !Q && (er = w.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
+                })), ei = (0, a.useStateFromStores)([O.default], () => Array.from(O.default.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == q ? void 0 : q.applicationId) && e.channelId === (null == q ? void 0 : q.channelId))), el = (0, d.useAnalyticsContext)(), ea = !N.isPlatformEmbedded, es = (0, L.default)(t, D.ActivityFlags.JOIN) || K;
+                if (null == t || !es || null == t.application_id) return null;
+                let er = !F && (ea || Q) && !Y && !$ && (!K || en),
+                    eo = null;
+                F ? eo = w.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF : !ea && !Q && (eo = w.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
                     name: t.name
                 }));
-                let eo = async (e, t) => {
+                let eu = async (e, t) => {
                     var n;
                     null != t.session_id && null != t.application_id && (await o.default.join({
                         userId: e.id,
@@ -30925,10 +30925,10 @@
                         userId: e.id,
                         applicationId: t.application_id,
                         partyId: null === (n = t.party) || void 0 === n ? void 0 : n.id,
-                        locationObject: ei.location,
+                        locationObject: el.location,
                         analyticsLocations: W
                     }))
-                }, eu = async () => {
+                }, ed = async () => {
                     let e = !1;
                     if (K) {
                         if (!en || null == X || null == t.application_id) return;
@@ -30936,13 +30936,13 @@
                             applicationId: t.application_id,
                             currentEmbeddedApplication: n,
                             activityChannelId: X,
-                            locationObject: ei.location,
+                            locationObject: el.location,
                             embeddedActivitiesManager: P.default,
                             analyticsLocations: W
                         })
                     }
                     if (!e) {
-                        en && eo(V, t), z(!0);
+                        en && eu(V, t), z(!0);
                         let e = await r.default.sendActivityInviteUser({
                             type: D.ActivityActionTypes.JOIN_REQUEST,
                             userId: V.id,
@@ -30951,25 +30951,25 @@
                         });
                         null != e && u.default.selectPrivateChannel(e.id)
                     }
-                }, ed = en ? w.default.Messages.JOIN : w.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
-                return K && (ed = w.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), (0, i.jsx)(s.Tooltip, {
-                    text: er,
+                }, ec = en ? w.default.Messages.JOIN : w.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
+                return K && (ec = w.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), ei && (ec = w.default.Messages.EMBEDDED_ACTIVITIES_JOINED), (0, i.jsx)(s.Tooltip, {
+                    text: eo,
                     children: e => {
                         let {
                             onMouseEnter: t,
                             onMouseLeave: n
                         } = e;
                         return (0, i.jsx)(j.default, {
-                            onClick: eu,
+                            onClick: ed,
                             onMouseEnter: t,
                             onMouseLeave: n,
                             color: B,
                             look: G,
                             hover: H,
-                            disabled: !es,
+                            disabled: !er,
                             submitting: ee,
                             fullWidth: !0,
-                            children: ed
+                            children: ec
                         })
                     }
                 }, "join")
@@ -81712,4 +81712,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.faeb2c828d58f6665fd6.js.map
+//# sourceMappingURL=59196.6b50058ee2e39816a2a6.js.map
