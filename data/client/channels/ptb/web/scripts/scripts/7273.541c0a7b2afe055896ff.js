@@ -13431,7 +13431,7 @@
                 ROLE_SUBSCRIPTIONS: new Set([0, 2, 5, 13, 15, 16]),
                 ICON_EMOJIS: new Set([0, 2, 5, 13, 15]),
                 SUMMARIZEABLE: new Set([0]),
-                POLLS: new Set([0, 2, 3, 11, 12, 13]),
+                POLLS: new Set([0, 1, 2, 3, 11, 12, 13]),
                 ALL: new Set([0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16])
             }
         },
@@ -13814,4 +13814,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.6de581dc7131796da7ca.js.map
+//# sourceMappingURL=7273.541c0a7b2afe055896ff.js.map
