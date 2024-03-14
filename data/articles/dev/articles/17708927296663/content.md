@@ -23,7 +23,7 @@
             <li>From the Developer Portal the Team → Payout Settings page can help you get started</li>
         </ul>
     </li>
-    <li>Agreement to the <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener noreferrer">Monetization Terms</a> and <a href="https://support-dev.discord.com/hc/en-us/articles/17442400631959" target="_blank" rel="noopener noreferrer">Premium Apps Policy</a>.<br><img src="https://support-dev.discord.com/hc/article_attachments/17822813035415" alt="Untitled (6).png">
+    <li>Agreement to the <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener noreferrer">Monetization Terms</a> and <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Monetization-Policy" target="_blank" rel="noopener noreferrer">Monetization Policy</a>.<br><img src="https://support-dev.discord.com/hc/article_attachments/17822813035415" alt="Untitled (6).png">
     </li>
 </ul>
 <p>As you complete these inputs, you will see your checklist in the Eligibility Requirements reflect what has been done and what has not yet been added. Once all the requirements are fulfilled, your app will be ready to begin monetizing!</p>
