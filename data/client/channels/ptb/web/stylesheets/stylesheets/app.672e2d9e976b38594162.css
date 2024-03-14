@@ -46327,12 +46327,12 @@ html .progress__4ef76 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -47290,8 +47290,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -130012,4 +130012,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5c418859a8d0934e51c8.css.map*/
+/*# sourceMappingURL=app.672e2d9e976b38594162.css.map*/
