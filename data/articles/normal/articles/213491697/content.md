@@ -24,7 +24,7 @@
             </tr>
             <tr style="height: 22px;">
                 <td style="height: 22px;">Windows</td>
-                <td style="height: 22px;">Windows 7+</td>
+                <td style="height: 22px;">Windows 10+</td>
                 <td style="height: 22px;">Windows 10+</td>
             </tr>
             <tr style="height: 22px;">
