@@ -9,7 +9,7 @@
         <ul>
             <li><a href="https://support.discord.com/hc/en-us/articles/22045487931799#h_01HRZ59A41FYWYQ04F9M5G6A1T">Viewing Activity Cards</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22045487931799#h_01HRZ59A41S2JJDPJXRQKRAPMA">Engaging with Activity Cards</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/22045487931799#h_01HRZ59A41YF3GVZRBNZWXQVZK">Type of Activity Content</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22045487931799#h_01HRZ59A41YF3GVZRBNZWXQVZK">Types of Activity Content</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22045487931799#h_01HRZ59A41W46PH064PDY7PWEZ">Activity Privacy</a></li>
         </ul>
     </li>
