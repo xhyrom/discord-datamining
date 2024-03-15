@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -55984,7 +55984,7 @@
                 h = 10,
                 g = 500;
             Object.freeze([]), Object.freeze([]);
-            let m = 200;
+            let m = 10;
 
             function p(e) {
                 if (null != e.choices) return a.default.Messages.COMMAND_VALIDATION_CHOICE_ERROR;
@@ -82321,7 +82321,7 @@
                     }(0, f.setFailed)(e)
                 }
             };
-            (s = i || (i = {}))[s.SENDING = 0] = "SENDING", s[s.CREATED = 1] = "CREATED", s[s.FAILED = 2] = "FAILED", s[s.TIMED_OUT = 3] = "TIMED_OUT";
+            (s = i || (i = {}))[s.SENDING = 0] = "SENDING", s[s.CREATED = 1] = "CREATED", s[s.FAILED = 2] = "FAILED", s[s.TIMED_OUT = 3] = "TIMED_OUT", s[s.EPHEMERAL_SUCCESS = 4] = "EPHEMERAL_SUCCESS";
             let I = (e, t) => {
                 var n;
                 let i = null == t ? void 0 : t.state,
@@ -82333,7 +82333,8 @@
                 if (a && i === E.InteractionState.CREATED || e.hasFlag(g.MessageFlags.LOADING) && !s) return 1;
                 if (null != e.interaction && e.hasFlag(g.MessageFlags.LOADING) && s) return 3;
                 else if (null != e.interaction && !e.hasFlag(g.MessageFlags.LOADING) && r) return 3;
-                else if (o && e.state === g.MessageStates.SEND_FAILED) return 2
+                else if (o && e.state === g.MessageStates.SEND_FAILED) return 2;
+                else if (null != e.interaction && e.hasFlag(g.MessageFlags.EPHEMERAL)) return 4
             };
 
             function A(e) {
@@ -87840,8 +87841,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710535022551",
-                                    build_number: "275753"
+                                    built_at: "1710535508318",
+                                    build_number: "275759"
                                 }
                             },
                             retries: 1
@@ -125269,7 +125270,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "3a52aeabcc1e18a73d356d3889ab9d4c870c8466"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "f1ee121262f6e36798522b194a8a6310a597c324"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134767,7 +134768,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275753"
+                                build_number: "275759"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152405,4 +152406,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.2cbab6be532b1d15955e.js.map
+//# sourceMappingURL=67229.33b8c052a9fa74d59ac5.js.map

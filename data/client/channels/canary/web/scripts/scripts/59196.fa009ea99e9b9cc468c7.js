@@ -33430,13 +33430,14 @@
                 return null == h ? null : (0, i.jsxs)("div", {
                     className: s(a, m.bar),
                     onContextMenu: x,
-                    children: [(0, i.jsx)(u.default, {}), (0, i.jsx)(r.Text, {
+                    children: [(0, i.jsx)(u.default, {}), (0, i.jsxs)(r.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: p.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EDUCATION.format({
-                            betaUserLimit: c.APPLICATION_USER_INSTALL_BETA_USER_LIMIT,
+                        children: [p.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EDUCATION.format({
+                            betaUserLimit: c.APPLICATION_USER_INSTALL_BETA_USER_LIMIT
+                        }), p.default.Messages.APPLICATION_COMMAND_USER_INSTALL_LEARN_MORE.format({
                             learnMoreUrl: d.default.getArticleURL(f.HelpdeskArticles.USING_APPS_FAQ)
-                        })
+                        })]
                     })]
                 })
             }
@@ -82392,4 +82393,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.ee0c021f2edab372530b.js.map
+//# sourceMappingURL=59196.fa009ea99e9b9cc468c7.js.map
