@@ -1,0 +1,26 @@
+{
+  "id": 21865322754327,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/21865322754327.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/21865322754327-Data-Used-to-Personalize-Discord",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000344951,
+  "created_at": "2024-03-06T19:53:27Z",
+  "name": "Data Used to Personalize Discord",
+  "title": "Data Used to Personalize Discord",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-03-15T17:03:42Z",
+  "user_segment_id": null,
+  "permission_group_id": 6449276657303,
+  "content_tag_ids": [],
+  "label_names": [
+    "data",
+    "privacy"
+  ]
+}
