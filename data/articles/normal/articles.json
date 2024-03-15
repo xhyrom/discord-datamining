@@ -52,7 +52,7 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2024-03-15T17:03:42Z",
+    "edited_at": "2024-03-15T21:12:32Z",
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [],
@@ -60,7 +60,7 @@
       "data",
       "privacy"
     ],
-    "body": "<h1 id=\"h_01HRAN5R73BEHZ0D2VTQQT67NB\">Personalization </h1>\n<p>We use certain information to <span style=\"color: #23272a;\" data-darkreader-inline-color=\"\">personalize our services. This includes features like customizing your experience on our discovery surfaces, highlighting activity on Discord that may interest you, and surfacing Discord features and promotions from us and our partners that may be of interest to you. </span>For example, we may use information about who you interact with to rank a Friend who you interact with often higher in the “Active Now” section of your Friends List.</p>\n<p>The information used to power personalized features for you include: </p>\n<ul>\n<li>The games you play</li>\n<li>Who you interact with</li>\n<li>Connections made between your Discord account and another service (e.g., Xbox or Steam)</li>\n<li>The servers you join </li>\n</ul>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/21865322750231\"></p>\n<p class=\"wysiwyg-text-align-left\">Turning <strong>the Use Data to Personalize my Discord setting</strong> off means we will no longer use information specific to your account to power features that recommend content or promotions to you. </p>\n<p>Your ability to access conversations, voice channels, or other spaces on Discord will not be impacted by this setting.</p>"
+    "body": "<h1 id=\"h_01HRAN5R73BEHZ0D2VTQQT67NB\">Personalization </h1>\n<p>We use certain information to <span style=\"color: #23272a;\" data-darkreader-inline-color=\"\">personalize our services. This includes features like customizing your experience on our discovery surfaces, highlighting activity on Discord that may interest you, and surfacing Discord features and promotions from us and our partners that may be of interest to you. </span>For example, we may use information about who you interact with to rank a Friend who you interact with often higher in the “Active Now” section of your Friends List.</p>\n<p>The information used to power personalized features for you include: </p>\n<ul>\n<li>The games you play</li>\n<li>Who you interact with</li>\n<li>The way you use Discord</li>\n<li>Connections made between your Discord account and another service (e.g., Xbox or Steam)</li>\n<li>The servers you join </li>\n</ul>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/21865322750231\"></p>\n<p class=\"wysiwyg-text-align-left\">Turning <strong>the Use Data to Personalize my Discord setting</strong> off means we will no longer use information specific to your account to power features that recommend content or promotions to you. </p>\n<p>Your ability to access conversations, voice channels, or other spaces on Discord will not be impacted by this setting.</p>"
   },
   {
     "id": 21864805694999,
@@ -89,34 +89,6 @@
       "privacy"
     ],
     "body": "<p>We use certain information to help us understand and improve Discord so it is better for you to use. <span style=\"color: #23272a; background-color: #ffffff;\" data-darkreader-inline-color=\"\" data-darkreader-inline-bgcolor=\"\">This includes information about how you use our services, the games you play, and how servers are structured. </span></p>\n<p>Turning <strong>the Use Data to Improve Discord Setting</strong> off means we will no longer collect new information about how you use and/or navigate Discord in order to understand and improve our products. We may continue to use the information we collected when the setting was enabled. More detail can be found in our <a href=\"https://discord.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Privacy Policy</a>. </p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://lh7-us.googleusercontent.com/VjsehpGfUE_3DkzkFSMUlj5evI88LNTPKOehN4QxwRtkC2Zrn2tZp3yHriAREcGAAxdqZG1eK3H-zQEmLdUg6lrJnisP2EoDKkaOpvbBIBZtHiUHgqp8muN7XrVwqFeWEvQlrzO8S3oWP80zvnfKx6A\" width=\"624\" height=\"433\"></p>\n<p>By disabling this setting, your information will not be included in server-level experiments such as <a href=\"https://support.discord.com/hc/en-us/articles/360032807371-Server-Insights-FAQ\" target=\"_blank\" rel=\"noopener noreferrer\">Server Insights</a>. It will also prevent us from automatically improving the quality of voice or video communications on Discord based on your usage.</p>\n<p>If you’d like to further assert your right to object to our processing of your data, email <a href=\"mailto:privacy@discord.com\" target=\"_blank\" rel=\"noopener noreferrer\">privacy@discord.com</a>.</p>\n<h3 id=\"h_01HRAM4TD1KF89XZS62FPPTGVS\"><span style=\"color: #434343;\" data-darkreader-inline-color=\"\">When you turn the setting off, the events continue to be sent, but we do not use the information for the purposes described above. This is an account-based setting and applies to your use of Discord regardless of the device used to access your account. This allows us to keep your account experience consistent across devices and access points of Discord.</span></h3>"
-  },
-  {
-    "id": 21864004415511,
-    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/21864004415511.json",
-    "html_url": "https://support.discord.com/hc/en-us/articles/21864004415511-Data-Used-to-Personalize-Discord",
-    "author_id": 2921470028,
-    "comments_disabled": true,
-    "draft": false,
-    "promoted": false,
-    "position": 0,
-    "section_id": 115000344951,
-    "created_at": "2024-03-06T19:11:40Z",
-    "name": "Data Used to Personalize Discord",
-    "title": "Data Used to Personalize Discord",
-    "source_locale": "en-us",
-    "locale": "en-us",
-    "outdated": false,
-    "outdated_locales": [],
-    "edited_at": "2024-03-15T18:58:01Z",
-    "user_segment_id": null,
-    "permission_group_id": 1720972,
-    "content_tag_ids": [],
-    "label_names": [
-      "answer-bot",
-      "privacy policy",
-      "data"
-    ],
-    "body": "<p>We use certain information to help us understand and improve Discord so it is better for you to use. <span style=\"color: #23272a; background-color: #ffffff;\" data-darkreader-inline-color=\"\" data-darkreader-inline-bgcolor=\"\">This includes information about how you use our services, the games you play, and how servers are structured. </span></p>\n<p>Turning <strong>the Use Data to Improve Discord Setting</strong> off means we will no longer collect new information about how you use and/or navigate Discord in order to understand and improve our products. We may continue to use the information we collected when the setting was enabled. More detail can be found in our <a href=\"https://discord.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Privacy Policy</a>. </p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/21864042811543\" width=\"431\" height=\"259\"></p>\n<p>By disabling this setting, your information will not be included in server-level experiments such as <a href=\"https://support.discord.com/hc/en-us/articles/360032807371-Server-Insights-FAQ\" target=\"_blank\" rel=\"noopener noreferrer\">Server Insights</a>. It will also prevent us from automatically improving the quality of voice or video communications on Discord based on your usage.</p>\n<p>If you’d like to further assert your right to object to our processing of your data, email <a href=\"mailto:privacy@discord.com\" target=\"_blank\" rel=\"noopener noreferrer\">privacy@discord.com</a>.</p>\n<h3 id=\"h_01HRAJSTD20DV3AJSAVKE96Y07\"><span style=\"color: #434343; --darkreader-inline-color: #beb8b0;\" data-darkreader-inline-color=\"\">When you turn the setting off, the events continue to be sent, but we do not use the information for the purposes described above. This is an account-based setting and applies to your use of Discord regardless of the device used to access your account. This allows us to keep your account experience consistent across devices and access points of Discord.</span></h3>"
   },
   {
     "id": 21412497781399,

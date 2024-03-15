@@ -4,6 +4,7 @@
 <ul>
     <li>The games you play</li>
     <li>Who you interact with</li>
+    <li>The way you use Discord</li>
     <li>Connections made between your Discord account and another service (e.g., Xbox or Steam)</li>
     <li>The servers you join </li>
 </ul>
