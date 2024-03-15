@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67229"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -31409,20 +31409,21 @@
                     }), t
                 }
             }
-            async function S(e) {
+            async function S(e, t) {
                 l.default.dispatch({
                     type: "MUTUAL_FRIENDS_FETCH_START",
                     userId: e
                 });
                 try {
-                    let t = await o.default.get({
+                    let n = await o.default.get({
                         url: f.Endpoints.USER_RELATIONSHIPS(e),
-                        oldFormErrors: !0
+                        oldFormErrors: !0,
+                        signal: t
                     });
                     l.default.dispatch({
                         type: "MUTUAL_FRIENDS_FETCH_SUCCESS",
                         userId: e,
-                        mutualFriends: t.body
+                        mutualFriends: n.body
                     })
                 } catch (t) {
                     throw (null == t ? void 0 : t.body) != null && _.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
@@ -87778,8 +87779,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710483089751",
-                                    build_number: "275519"
+                                    built_at: "1710485989895",
+                                    build_number: "275539"
                                 }
                             },
                             retries: 1
@@ -125187,7 +125188,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "ceb81a4d3022b03e188537192083cf80f9636c49"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "058fadece066984d93e982a22dc0c9aaadc321b4"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134530,7 +134531,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275519"
+                                build_number: "275539"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152158,4 +152159,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.6f43ab4900298a5ded13.js.map
+//# sourceMappingURL=45109.d561145dccf8380e3921.js.map
