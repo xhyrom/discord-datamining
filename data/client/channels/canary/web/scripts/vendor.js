@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67229"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -33459,7 +33459,7 @@
                                 height: 48,
                                 children: e
                             }, "foreign-object")]
-                        }, "svg"), (0, s.jsxs)(E.default, {
+                        }, "svg"), (0, s.jsxs)(E.TransitionGroup, {
                             component: r.Fragment,
                             children: [null != i ? (0, s.jsx)(C, {
                                 className: g.lowerBadge,
@@ -38129,7 +38129,7 @@
                         (0, E.closeModal)(t, e)
                     }, [e]),
                     d = S.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.default));
-                return (0, i.jsxs)(u.default, {
+                return (0, i.jsxs)(u.TransitionGroup, {
                     component: s.Fragment,
                     children: [S.map((e, n) => {
                         var s;
@@ -41243,7 +41243,7 @@
                         children: u,
                         fillParent: c
                     } = this.props;
-                    return (0, r.jsx)(d.default, {
+                    return (0, r.jsx)(d.TransitionGroup, {
                         component: "div",
                         className: l(f.transitionGroup, t),
                         children: (0, r.jsx)(_, {
@@ -87782,8 +87782,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710524418054",
-                                    build_number: "275618"
+                                    built_at: "1710525049126",
+                                    build_number: "275627"
                                 }
                             },
                             retries: 1
@@ -96324,7 +96324,12 @@
                     null != a && N.default.track(L.AnalyticEvents.ACTIVITY_UPDATED, {
                         party_platform: L.PlatformTypes.SPOTIFY,
                         track_id: a.id,
-                        has_images: !0
+                        has_images: !0,
+                        details: a.album.name,
+                        state: a.name,
+                        album_id: a.album.id,
+                        author_ids: a.artists.map(e => e.id),
+                        author_names: a.artists.map(e => e.name)
                     })
                 },
                 SPOTIFY_PLAYER_PLAY: function(e) {
@@ -125193,7 +125198,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "d4d618024d7c5e08152fbb46b2da20238e27ad0f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "46b011c29afd2952048932f04120f30253a427c3"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134539,7 +134544,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275618"
+                                build_number: "275627"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -149967,20 +149972,20 @@
         266491: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return s
+                TransitionGroup: function() {
+                    return r
                 }
             }), n("424973"), n("222007");
-            var i, s, r = n("884691"),
-                a = n("665317");
-            (i = class e extends r.Component {
+            var i = n("884691"),
+                s = n("665317");
+            class r extends i.Component {
                 static getDerivedStateFromProps(e, t) {
                     let {
                         children: n,
                         firstRender: i
-                    } = t, s = (0, a.getChildMapping)(e.children);
+                    } = t, r = (0, s.getChildMapping)(e.children);
                     return {
-                        children: i ? s : (0, a.mergeChildMappings)(n, s),
+                        children: i ? r : (0, s.mergeChildMappings)(n, r),
                         firstRender: !1
                     }
                 }
@@ -149997,13 +150002,13 @@
                 }
                 componentDidUpdate(e, t) {
                     if (e !== this.props) {
-                        let e = (0, a.getChildMapping)(this.props.children),
+                        let e = (0, s.getChildMapping)(this.props.children),
                             n = t.children;
                         if (this.props.transitionEnter ? this._enqueueTransitions(e, n, this._keysToEnter) : this._keysToEnter.length && (this._keysToEnter = []), this.props.transitionLeave) this._enqueueTransitions(n, e, this._keysToLeave);
                         else {
                             let t = [];
                             this._enqueueTransitions(n, e, t);
-                            let i = (0, a.mergeChildMappings)(n, e);
+                            let i = (0, s.mergeChildMappings)(n, e);
                             for (let e = 0, n = t.length; e < n; e++) delete i[t[e]];
                             this._isMounted && this.setState({
                                 children: i
@@ -150036,8 +150041,8 @@
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                         i = this._keyChildMapping[e];
                     null != i && null != i[t] && i[t](), this._currentlyTransitioningKeys.delete(e);
-                    let s = (0, a.getChildMapping)(this.props.children);
-                    n ? null != s && s.hasOwnProperty(e) ? this.performEnter(e) : this.setState(t => {
+                    let r = (0, s.getChildMapping)(this.props.children);
+                    n ? null != r && r.hasOwnProperty(e) ? this.performEnter(e) : this.setState(t => {
                         let {
                             children: n
                         } = t, {
@@ -150047,7 +150052,7 @@
                         return {
                             children: s
                         }
-                    }) : (null == s || !s.hasOwnProperty(e)) && this.performLeave(e)
+                    }) : (null == r || !r.hasOwnProperty(e)) && this.performLeave(e)
                 }
                 performAppear(e) {
                     this._perform(e, "componentWillAppear", "componentDidAppear")
@@ -150060,38 +150065,39 @@
                 }
                 render() {
                     let {
-                        childFactory: t,
-                        component: n
+                        childFactory: e,
+                        component: t
                     } = this.props, {
-                        children: i
+                        children: n
                     } = this.state, s = [];
-                    for (let e in i) {
-                        let n = i[e];
-                        null != n && r.isValidElement(n) && s.push(r.cloneElement(null == t ? n : t(n), {
-                            ref: t => this.addChildRef(e, t),
-                            key: e
+                    for (let t in n) {
+                        let r = n[t];
+                        null != r && i.isValidElement(r) && s.push(i.cloneElement(null == e ? r : e(r), {
+                            ref: e => this.addChildRef(t, e),
+                            key: t
                         }))
                     }
                     let a = {
                         ...this.props
                     };
-                    return Object.keys(e.defaultProps).forEach(e => delete a[e]), r.createElement(n, a, s)
+                    return Object.keys(r.defaultProps).forEach(e => delete a[e]), i.createElement(t, a, s)
                 }
                 constructor(e) {
                     super(e), this._keyChildMapping = {}, this.addChildRef = (e, t) => {
                         this._keyChildMapping[e] = t
                     }, this.state = {
-                        children: (0, a.getChildMapping)(e.children),
+                        children: (0, s.getChildMapping)(e.children),
                         firstRender: !0
                     }, this._currentlyTransitioningKeys = new Set, this._keysToEnter = [], this._keysToLeave = [], this._isMounted = !1
                 }
-            }).defaultProps = {
+            }
+            r.defaultProps = {
                 component: "span",
                 transitionAppear: !0,
                 transitionLeave: !0,
                 transitionEnter: !0,
                 childFactory: null
-            }, s = i
+            }
         },
         627929: function(e, t, n) {
             "use strict";
@@ -152167,4 +152173,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.1f8fc667da052382014b.js.map
+//# sourceMappingURL=45109.76279dac0a5fb4a998ee.js.map

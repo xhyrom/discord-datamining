@@ -1409,7 +1409,7 @@
                         [P.idle]: n
                     }, I),
                     onDoubleClick: l,
-                    children: [(0, a.jsx)(s.default, {
+                    children: [(0, a.jsx)(s.TransitionGroup, {
                         children: (0, a.jsx)(p.BackgroundTransition, {
                             className: S,
                             children: t
@@ -1797,7 +1797,7 @@
                         backgroundKey: t,
                         layout: n
                     } = this.props, l = "".concat(n, "-").concat(null != t ? t : "");
-                    return (0, a.jsx)(d.default, {
+                    return (0, a.jsx)(d.TransitionGroup, {
                         className: p.videoBackground,
                         component: "div",
                         children: (0, a.jsx)(m, {
@@ -1916,4 +1916,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65800.e5783df1b5c507083376.js.map
+//# sourceMappingURL=65800.f42e0968157a89bc0f13.js.map
