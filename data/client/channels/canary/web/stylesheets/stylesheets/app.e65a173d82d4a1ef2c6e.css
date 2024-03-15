@@ -1859,7 +1859,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin: 16px 0
+    margin: 32px 0 16px
 }
 
 .container__7bb59 {
@@ -1867,13 +1867,18 @@
     flex-direction: column
 }
 
+.rows__4923b {
+    display: grid;
+    grid-auto-rows: 1fr
+}
+
 .row_eb598a {
     display: flex;
     cursor: pointer;
     align-items: center;
-    padding: 8px;
-    gap: 8px;
-    background: var(--background-tertiary)
+    background: var(--background-tertiary);
+    padding-left: 16px;
+    gap: 12px
 }
 
 .row_eb598a.inApp__731d4 {
@@ -1894,12 +1899,27 @@
     border-bottom-right-radius: 8px
 }
 
-.row_eb598a:not(:last-child) {
+.row_eb598a:not(:last-child) .rowInner__465aa {
     border-bottom: 1px solid var(--background-modifier-hover)
 }
 
+.rowInner__465aa {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+    padding: 8px 16px 8px 0
+}
+
+.rowDetails__4f215 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2px
+}
+
 .leftIcon_f180e1 {
-    padding: 8px;
+    padding: 4px;
     color: var(--interactive-normal)
 }
 
@@ -1908,11 +1928,13 @@
 }
 
 .learnMore__02804 {
-    margin: 16px 0
+    margin: 16px 0;
+    text-align: center
 }
 
 .oauth2Wrapper_ff9227 {
     min-width: 280px;
+    width: 100%;
     max-width: var(--custom-o-auth-2-page-oauth-2-max-width);
     min-height: var(--custom-o-auth-2-page-oauth-2-min-height);
     display: flex;
@@ -14932,7 +14954,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    padding: 8px 16px
+    padding: 8px 16px;
+    gap: 8px
 }
 
 .name__6775a {
@@ -14946,16 +14969,22 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--interactive-normal);
-    margin-left: 8px
+    color: var(--interactive-normal)
 }
 
 .error__62764 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--red-400);
-    margin-left: 8px
+    color: var(--red-400)
+}
+
+.bar_c374f6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 12px
 }
 
 .clipContainer__99c30 {
@@ -130105,4 +130134,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b392744ac6638fbab5e2.css.map*/
+/*# sourceMappingURL=app.e65a173d82d4a1ef2c6e.css.map*/
