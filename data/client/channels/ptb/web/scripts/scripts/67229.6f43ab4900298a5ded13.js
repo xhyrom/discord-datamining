@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["45109"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -51505,7 +51505,7 @@
                     return i
                 },
                 CloudUpload: function() {
-                    return C
+                    return y
                 }
             }), n("222007"), n("70102");
             var i, s, r = n("917351"),
@@ -51516,37 +51516,43 @@
                 d = n("676574"),
                 c = n("668273"),
                 f = n("168973"),
-                _ = n("599110"),
-                h = n("994440"),
-                E = n("718517"),
-                g = n("286235"),
-                m = n("980134"),
-                p = n("966724"),
-                S = n("142852"),
-                v = n("49111");
-            let T = new u.default("CloudUpload.tsx"),
-                I = n("123010").default;
+                _ = n("985365"),
+                h = n("599110"),
+                E = n("994440"),
+                g = n("718517"),
+                m = n("286235"),
+                p = n("980134"),
+                S = n("966724"),
+                v = n("142852"),
+                T = n("49111");
+            let I = new u.default("CloudUpload.tsx"),
+                C = n("123010").default;
             (s = i || (i = {})).NOT_STARTED = "NOT_STARTED", s.STARTED = "STARTED", s.UPLOADING = "UPLOADING", s.ERROR = "ERROR", s.COMPLETED = "COMPLETED", s.CANCELED = "CANCELED";
-            class C extends p.default {
+            class A {
+                constructor() {
+                    this.timing = {}
+                }
+            }
+            class y extends S.default {
                 static fromJson(e) {
                     let {
                         item: t,
                         channelId: n,
                         showLargeMessageDialog: i,
                         reactNativeFileIndex: s
-                    } = e, r = new C(t, n, i, s);
+                    } = e, r = new y(t, n, i, s);
                     return "COMPLETED" !== r.status && (r.status = "NOT_STARTED"), Object.entries(e).forEach(e => {
                         let [t, n] = e;
                         !t.startsWith("_") && (r[t] = n)
                     }), r
                 }
                 retryOpts() {
-                    return this.item.platform === p.UploadPlatform.REACT_NATIVE ? {
-                        timeout: 1 * E.default.Millis.HOUR,
-                        backoff: new o.default(.5 * E.default.Millis.SECOND, 30 * E.default.Millis.MINUTE),
+                    return this.item.platform === S.UploadPlatform.REACT_NATIVE ? {
+                        timeout: 1 * g.default.Millis.HOUR,
+                        backoff: new o.default(.5 * g.default.Millis.SECOND, 30 * g.default.Millis.MINUTE),
                         retries: 12
                     } : {
-                        timeout: 1 * E.default.Millis.HOUR,
+                        timeout: 1 * g.default.Millis.HOUR,
                         retries: 12,
                         backoff: new o.default
                     }
@@ -51558,12 +51564,9 @@
                         fileSize: n,
                         bufferedFileData: i
                     } = await this.prepareChunkUploadItem(), s = Math.ceil(n / e);
-                    this.uploadStats = {
-                        numChunks: s,
-                        totalRequestCount: 0
-                    };
+                    this.uploadAnalytics.numChunks = s, this.uploadAnalytics.totalRequestCount = 0;
                     for (let r = 0; r < s; r++) {
-                        T.info("Uploading chunk ".concat(r + 1, " of ").concat(s, " for file id ").concat(this.id));
+                        I.info("Uploading chunk ".concat(r + 1, " of ").concat(s, " for file id ").concat(this.id));
                         let a = r * e,
                             o = Math.min(a + e, n),
                             l = await this.getChunk(a, o, i);
@@ -51577,19 +51580,19 @@
                                 contentType: t
                             })
                         } catch (e) {
-                            throw T.error("Error uploading chunk ".concat(r + 1, " for file id ").concat(this.id, ": ").concat(e)), e
+                            throw I.error("Error uploading chunk ".concat(r + 1, " for file id ").concat(this.id, ": ").concat(e)), e
                         }
                     }
-                    T.log("Upload complete for file id ".concat(this.id))
+                    I.log("Upload complete for file id ".concat(this.id))
                 }
                 async prepareChunkUploadItem() {
                     let e, t, n;
-                    if (this.item.platform === p.UploadPlatform.REACT_NATIVE) {
+                    if (this.item.platform === S.UploadPlatform.REACT_NATIVE) {
                         let i = this.item;
                         if (e = null != i.mimeType && "" !== i.mimeType ? i.mimeType : "application/octet-stream", null == i.size || 0 === i.size || isNaN(i.size)) try {
-                            t = await (0, m.getFileContentLength)(i.uri)
+                            t = await (0, p.getFileContentLength)(i.uri)
                         } catch (e) {
-                            T.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, m.getFileData)(i.uri)).size
+                            I.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, p.getFileData)(i.uri)).size
                         } else t = i.size
                     } else e = "application/octet-stream", t = this.item.file.size;
                     return {
@@ -51599,16 +51602,17 @@
                     }
                 }
                 async getChunk(e, t, n) {
-                    return this.item.platform !== p.UploadPlatform.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, m.getFileChunk)(this.item.uri, e, t)
+                    return this.item.platform !== S.UploadPlatform.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, p.getFileChunk)(this.item.uri, e, t)
                 }
                 async uploadChunk(e) {
                     let t = {
                         "Content-Type": e.contentType,
                         "Content-Range": "bytes ".concat(e.start, "-").concat(e.end - 1, "/").concat(e.totalSize)
                     };
-                    for (let n = 1; n <= 3; n++) {
-                        null != this.uploadStats && (this.uploadStats.totalRequestCount += 1), T.log("Attempt ".concat(n, " for file id ").concat(this.id, " : Uploading chunk ").concat(e.start, "-").concat(e.end - 1, " of ").concat(e.totalSize, " bytes"));
-                        let i = a.throttle(t => {
+                    for (let i = 1; i <= 3; i++) {
+                        var n;
+                        this.uploadAnalytics.totalRequestCount = (null !== (n = this.uploadAnalytics.totalRequestCount) && void 0 !== n ? n : 0) + 1, I.log("Attempt ".concat(i, " for file id ").concat(this.id, " : Uploading chunk ").concat(e.start, "-").concat(e.end - 1, " of ").concat(e.totalSize, " bytes"));
+                        let s = a.throttle(t => {
                             let n = e.start + t.loaded;
                             this.emit("progress", n, e.totalSize, n - this.loaded), this.loaded = n
                         }, 50);
@@ -51618,14 +51622,14 @@
                                 body: e.chunk,
                                 headers: t,
                                 signal: this._abortController.signal,
-                                onRequestProgress: i,
+                                onRequestProgress: s,
                                 ...this.retryOpts()
                             });
                             if (n.ok) return
                         } catch (t) {
                             if (!this.RESUME_INCOMPLETE_CODES.includes(t.status)) throw t;
                             if (this.isUnsuccessfulChunkUpload(t, e.end - 1)) {
-                                T.error("Incomplete chunk upload for file id ".concat(this.id, ": ").concat(t.status));
+                                I.error("Incomplete chunk upload for file id ".concat(this.id, ": ").concat(t.status));
                                 continue
                             }
                             return
@@ -51641,7 +51645,7 @@
                 uploadFileToCloud() {
                     let e, t;
                     if (null == this.responseUrl) throw Error("_uploadFileToCloud - responseUrl is not set");
-                    T.log("Uploading ".concat(this.id)), this.item.platform === p.UploadPlatform.REACT_NATIVE ? t = null != (e = {
+                    I.log("Uploading ".concat(this.id)), this.item.platform === S.UploadPlatform.REACT_NATIVE ? t = null != (e = {
                         type: this.item.mimeType,
                         uri: this.item.uri,
                         name: this.item.filename
@@ -51665,21 +51669,29 @@
                     var e;
                     return null !== (e = this.currentSize) && void 0 !== e ? e : 0
                 }
+                async trackTime(e, t) {
+                    let n = performance.now();
+                    try {
+                        return await t()
+                    } finally {
+                        this.uploadAnalytics.timing[e] = performance.now() - n
+                    }
+                }
                 async upload() {
                     var e, t, n;
                     if ("COMPLETED" === this.status) return;
-                    if (this.setStatus("STARTED"), this.startTime = new Date, this.trackUploadStart(), "CANCELED" === this.status) {
+                    if (this.setStatus("STARTED"), this.startTime = performance.now(), this.trackUploadStart(), "CANCELED" === this.status) {
                         this.handleComplete(this.id);
                         return
                     }
-                    let i = await I.getUploadPayload(this),
-                        s = (0, S.getUploadTarget)(this.item.target);
+                    let i = await C.getUploadPayload(this),
+                        s = (0, v.getUploadTarget)(this.item.target);
                     if (null == i.filename || "" === i.filename || 0 === this.currentSize) {
-                        T.error("File does not have a filename or size is 0.", JSON.stringify(i)), this.handleError(v.AbortCodes.INVALID_FILE_ASSET);
+                        I.error("File does not have a filename or size is 0.", JSON.stringify(i)), this.handleError(T.AbortCodes.INVALID_FILE_ASSET);
                         return
                     }
                     if ((null !== (e = this.currentSize) && void 0 !== e ? e : 0) > s.getMaxFileSize(this.channelId)) {
-                        this.handleError(v.AbortCodes.ENTITY_TOO_LARGE);
+                        this.handleError(T.AbortCodes.ENTITY_TOO_LARGE);
                         return
                     }
                     if (d.default.get("upload_fail_50") && .5 > Math.random()) {
@@ -51689,18 +51701,18 @@
                         return
                     }
                     try {
-                        T.log("Requesting upload url for ".concat(this.id));
-                        let e = await l.default.post({
+                        I.log("Requesting upload url for ".concat(this.id));
+                        let e = await this.trackTime("getUploadUrlTimeMs", async () => await l.default.post({
                             url: s.getCreateAttachmentURL(this.channelId),
                             body: {
                                 files: [i]
                             },
                             ...this.retryOpts()
-                        });
+                        }));
                         this.setResponseUrl(e.body.attachments[0].upload_url), this.setUploadedFilename(e.body.attachments[0].upload_filename)
                     } catch (i) {
                         let e = null !== (n = null == i ? void 0 : null === (t = i.body) || void 0 === t ? void 0 : t.code) && void 0 !== n ? n : i.status;
-                        e !== v.AbortCodes.ENTITY_TOO_LARGE && (T.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(i.body), " for ").concat(this.id)), g.default.captureException(i)), this.handleError(e);
+                        e !== T.AbortCodes.ENTITY_TOO_LARGE && (I.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(i.body), " for ").concat(this.id)), m.default.captureException(i)), this.handleError(e);
                         return
                     }
                     try {
@@ -51710,44 +51722,47 @@
                         }, {
                             autoTrackExposure: !0
                         });
-                        e = t.enabled && t.chunkSize > 0 ? await this.uploadFileToCloudAsChunks(t.chunkSize) : await this.uploadFileToCloud(), this.trackUploadFinished("COMPLETED"), this.handleComplete(e)
+                        e = t.enabled && t.chunkSize > 0 ? await this.trackTime("uploadTimeMs", async () => await this.uploadFileToCloudAsChunks(t.chunkSize)) : await this.trackTime("uploadTimeMs", async () => await this.uploadFileToCloud()), this.trackUploadFinished("COMPLETED"), this.handleComplete(e)
                     } catch (e) {
-                        "CANCELED" === this.status ? this.handleComplete(e) : (T.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
+                        "CANCELED" === this.status ? this.handleComplete(e) : (I.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
                     }
                 }
                 async reactNativeCompressAndExtractData() {
-                    var e, t;
-                    if (!(0, S.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) {
-                        T.log("reactNativeCompressAndExtractData() disabled by upload target");
+                    var e;
+                    if (!(0, v.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) {
+                        this.uploadAnalytics.compressAndExtractDisabled = !0, I.log("reactNativeCompressAndExtractData() disabled by upload target");
                         return
                     }
                     if (!0 === this.reactNativeFilePrepped) {
-                        T.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
+                        this.uploadAnalytics.fileAlreadyPrepped = !0, I.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
                         return
                     }
-                    T.log("Starting compression/conversion for ".concat(this.id));
-                    let n = await (0, h.getAttachmentFile)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0);
-                    if (null == n || null == n.file) return;
-                    let i = n.uri,
-                        s = n.file.name,
-                        r = n.file.type;
-                    if (this.filename = s, null == s || null == i || null == r) throw T.error("Insufficient file data: ".concat({
-                        filename: s,
-                        uri: i,
-                        mimeType: r
+                    I.log("Starting compression/conversion for ".concat(this.id));
+                    let t = await this.trackTime("compressTimeMs", async () => {
+                        var e;
+                        return await (0, E.getAttachmentFile)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0)
+                    });
+                    if (null == t || null == t.file) return;
+                    let n = t.uri,
+                        i = t.file.name,
+                        s = t.file.type;
+                    if (this.filename = i, null == i || null == n || null == s) throw I.error("Insufficient file data: ".concat({
+                        filename: i,
+                        uri: n,
+                        mimeType: s
                     }, " for ").concat(this.id)), Error("Insufficient file data: ".concat({
-                        filename: s,
-                        uri: i,
-                        mimeType: r
+                        filename: i,
+                        uri: n,
+                        mimeType: s
                     }));
-                    let a = null !== (t = n.fileSize) && void 0 !== t ? t : (await (0, m.getFileData)(i)).size;
-                    if (this.postCompressionSize = a, this.currentSize = a, null == a) throw T.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
-                    T.log("Completed compression and conversion. Output size=".concat(a, " bytes; filename=").concat(s, " for ").concat(this.id));
+                    let r = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, p.getFileData)(n)).size;
+                    if (this.postCompressionSize = r, this.currentSize = r, null == r) throw I.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
+                    I.log("Completed compression and conversion. Output size=".concat(r, " bytes; filename=").concat(i, " for ").concat(this.id));
                     this.item = {
                         ...this.item,
-                        uri: i,
-                        filename: s,
-                        mimeType: r
+                        uri: n,
+                        filename: i,
+                        mimeType: s
                     }, this.reactNativeFilePrepped = !0
                 }
                 handleError(e) {
@@ -51758,17 +51773,17 @@
                     this.removeAllListeners()
                 }
                 handleComplete(e) {
-                    this.setStatus("COMPLETED"), T.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
+                    this.setStatus("COMPLETED"), I.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
                 }
                 cancel() {
-                    T.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), this.trackUploadFinished("CANCELED"), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
+                    I.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), this.trackUploadFinished("CANCELED"), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
                 }
                 resetState() {
-                    return this.status = "NOT_STARTED", this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this.startTime = void 0, this.uploadStats = void 0, this._abortController = new AbortController, super.resetState()
+                    return this.status = "NOT_STARTED", this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this.startTime = void 0, this.uploadAnalytics = new A, this._abortController = new AbortController, super.resetState()
                 }
                 async delete() {
                     if (null == this.uploadedFilename) return;
-                    let e = (0, S.getUploadTarget)(this.item.target).getDeleteUploadURL(this.uploadedFilename);
+                    let e = (0, v.getUploadTarget)(this.item.target).getDeleteUploadURL(this.uploadedFilename);
                     try {
                         await l.default.delete(e)
                     } catch {}
@@ -51787,36 +51802,43 @@
                 }
                 trackUploadStart() {
                     var e;
-                    _.default.track(v.AnalyticEvents.ATTACHMENT_UPLOAD_STARTED, {
+                    h.default.track(T.AnalyticEvents.ATTACHMENT_UPLOAD_STARTED, {
                         file_size: this.currentSize,
                         mime_type: null !== (e = this.mimeType) && void 0 !== e ? e : "unknown",
                         video_upload_quality: f.default.videoUploadQuality,
                         data_saving_mode: f.default.dataSavingMode,
-                        low_quality_image_mode: f.default.lowQualityImageMode
+                        low_quality_image_mode: f.default.lowQualityImageMode,
+                        connection_type: _.default.getType(),
+                        effective_connection_speed: _.default.getEffectiveConnectionSpeed(),
+                        service_provider: _.default.getServiceProvider()
                     })
                 }
                 trackUploadFinished(e) {
-                    var t;
-                    let n = null != this.startTime ? Date.now() - this.startTime.getTime() : -1,
-                        i = null,
-                        s = 1;
-                    null != this.uploadStats && (i = this.uploadStats.numChunks, s = this.uploadStats.totalRequestCount), _.default.track(v.AnalyticEvents.ATTACHMENT_UPLOAD_FINISHED, {
-                        duration_ms: n,
+                    var t, n;
+                    let i = null != this.startTime ? performance.now() - this.startTime : -1;
+                    h.default.track(T.AnalyticEvents.ATTACHMENT_UPLOAD_FINISHED, {
+                        duration_ms: i,
                         file_size: this.currentSize,
                         pre_compression_file_size: this.preCompressionSize,
                         final_state: e,
                         mime_type: null !== (t = this.mimeType) && void 0 !== t ? t : "unknown",
-                        num_chunks: i,
-                        num_upload_attempts: s,
+                        num_chunks: this.uploadAnalytics.numChunks,
+                        num_upload_attempts: null !== (n = this.uploadAnalytics.totalRequestCount) && void 0 !== n ? n : 1,
                         error_code: this.error,
                         video_upload_quality: f.default.videoUploadQuality,
                         data_saving_mode: f.default.dataSavingMode,
-                        low_quality_image_mode: f.default.lowQualityImageMode
+                        low_quality_image_mode: f.default.lowQualityImageMode,
+                        compress_time_ms: this.uploadAnalytics.timing.compressTimeMs,
+                        get_upload_url_time_ms: this.uploadAnalytics.timing.getUploadUrlTimeMs,
+                        upload_time_ms: this.uploadAnalytics.timing.uploadTimeMs,
+                        connection_type: _.default.getType(),
+                        effective_connection_speed: _.default.getEffectiveConnectionSpeed(),
+                        service_provider: _.default.getServiceProvider()
                     })
                 }
                 constructor(e, t, n, i) {
                     var s, r, a, o;
-                    super(e, n), this.RESUME_INCOMPLETE_CODES = [308], this.status = "NOT_STARTED", this.loaded = 0, this.reactNativeFilePrepped = !1, this._aborted = !1, this.channelId = t, this.preCompressionSize = null !== (a = null === (s = e.file) || void 0 === s ? void 0 : s.size) && void 0 !== a ? a : 0, this.currentSize = null !== (o = null === (r = e.file) || void 0 === r ? void 0 : r.size) && void 0 !== o ? o : 0, this.reactNativeFileIndex = i, this._abortController = new AbortController
+                    super(e, n), this.RESUME_INCOMPLETE_CODES = [308], this.status = "NOT_STARTED", this.loaded = 0, this.reactNativeFilePrepped = !1, this.uploadAnalytics = new A, this._aborted = !1, this.channelId = t, this.preCompressionSize = null !== (a = null === (s = e.file) || void 0 === s ? void 0 : s.size) && void 0 !== a ? a : 0, this.currentSize = null !== (o = null === (r = e.file) || void 0 === r ? void 0 : r.size) && void 0 !== o ? o : 0, this.reactNativeFileIndex = i, this._abortController = new AbortController
                 }
             }
         },
@@ -87756,8 +87778,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710478696519",
-                                    build_number: "275507"
+                                    built_at: "1710483089751",
+                                    build_number: "275519"
                                 }
                             },
                             retries: 1
@@ -125165,7 +125187,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "799cc0c512bc381db701426a2b99e7f4c2f5d162"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "ceb81a4d3022b03e188537192083cf80f9636c49"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134508,7 +134530,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275507"
+                                build_number: "275519"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152136,4 +152158,4 @@
         }
     }
 ]);
-//# sourceMappingURL=45109.0ce9352216c7c41e7387.js.map
+//# sourceMappingURL=67229.6f43ab4900298a5ded13.js.map
