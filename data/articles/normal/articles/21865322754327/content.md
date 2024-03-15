@@ -8,6 +8,6 @@
     <li>Connections made between your Discord account and another service (e.g., Xbox or Steam)</li>
     <li>The servers you join </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21865322750231"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22110463275415" alt="mceclip0.png"></p>
 <p class="wysiwyg-text-align-left">Turning <strong>the Use Data to Personalize my Discord setting</strong> off means we will no longer use information specific to your account to power features that recommend content or promotions to you. </p>
 <p>Your ability to access conversations, voice channels, or other spaces on Discord will not be impacted by this setting.</p>
