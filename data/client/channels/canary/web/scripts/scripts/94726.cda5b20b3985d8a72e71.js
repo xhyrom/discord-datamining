@@ -395,19 +395,21 @@
                     let {
                         products: r,
                         logo: u,
-                        ...i
+                        mobile_bg: i,
+                        ...s
                     } = t;
                     return new e({
-                        ...super.fromServer(i),
+                        ...super.fromServer(s),
                         products: r.reduce((e, t) => {
                             let r = n.default.fromServer(t);
                             return 0 === r.items.length ? e : (e.push(r), e)
                         }, []),
-                        logo: u
+                        logo: u,
+                        mobile_bg: i
                     })
                 }
                 constructor(e) {
-                    super(e), this.products = e.products, this.logo = e.logo
+                    super(e), this.products = e.products, this.logo = e.logo, this.mobile_bg = e.mobile_bg
                 }
             }
         },
@@ -681,4 +683,4 @@
         }
     }
 ]);
-//# sourceMappingURL=94726.b92e0fb0a16a886d5116.js.map
+//# sourceMappingURL=94726.cda5b20b3985d8a72e71.js.map
