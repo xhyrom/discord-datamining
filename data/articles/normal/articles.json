@@ -84,6 +84,7 @@
     "permission_group_id": 1720972,
     "content_tag_ids": [],
     "label_names": [
+      "answer-bot",
       "data",
       "privacy"
     ],
@@ -7182,7 +7183,10 @@
     "permission_group_id": 1720972,
     "content_tag_ids": [],
     "label_names": [
-      "answer-bot"
+      "answer-bot",
+      "data",
+      "privacy",
+      "controls"
     ],
     "body": "<p>These settings can be found under <strong>User Settings</strong> &gt; <strong>Privacy &amp; Safety </strong>&gt; <strong>How We Use Your Data</strong>. </p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/21864826179351\" width=\"624\" height=\"375\"></p>\n<p>Learn more about each specific setting here: </p>\n<ul>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/21864805694999\" target=\"_blank\" rel=\"noopener noreferrer\">Data Used to Improve Discord</a></li>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/21864004415511\" target=\"_blank\" rel=\"noopener noreferrer\">Data Used to Personalize Discord</a></li>\n</ul>"
   },
