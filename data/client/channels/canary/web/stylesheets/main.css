@@ -69886,6 +69886,15 @@ html .invoiceCancelRow_c1bfe7 {
     }
 }
 
+.confettiCanvas__5f200 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none
+}
+
 .flipCardContainer__314ea {
     perspective: 1e3px
 }
@@ -70262,6 +70271,15 @@ html .invoiceCancelRow_c1bfe7 {
 .sectionHeaderSeeAll_d4277d {
     text-align: center;
     flex-grow: 1
+}
+
+.confettiCanvas_e46a8e {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none
 }
 
 .container__5980c {
@@ -130042,4 +130060,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a91238a6ee77da043883.css.map*/
+/*# sourceMappingURL=app.1b37dfe6090c7da7c599.css.map*/
