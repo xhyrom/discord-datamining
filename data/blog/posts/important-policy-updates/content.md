@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="rich-safeties-discription w-richtext">
-            <p>Hi folks! It’s Important Announcement Day<sup>TM</sup> again: we’re updating our <a href="https://discord.com/terms">Terms of Service</a>, <a href="https://support.discord.com/hc/en-us/articles/4410339366295">Paid Services Terms</a>, <a href="https://discord.com/privacy">Privacy Policy</a>, and <a href="https://discord.com/guidelines">Community Guidelines</a>! These changes go into effect on <strong>April 15, 2024</strong>.</p>
+            <p>Hi folks! It’s Important Announcement Day<sup>TM</sup> again: we’re updating our <a href="https://discord.com/terms">Terms of Service</a>, <a href="https://discord.com/terms/paid-services-terms">Paid Services Terms</a>, <a href="https://discord.com/privacy">Privacy Policy</a>, and <a href="https://discord.com/guidelines">Community Guidelines</a>! These changes go into effect on <strong>April 15, 2024</strong>.</p>
             <p>We regularly review our policies to ensure we're surfacing important information to our users in a clear and easy-to-understand way. As we continually work to improve our services, respond to new laws, and protect your privacy, we periodically update these policies to reflect those priorities and our commitments to each other.</p>
             <p>Here are some highlights of what we’ve updated:</p>
             <ul role="list">
