@@ -18,25 +18,22 @@
         </colgroup>
         <tbody>
             <tr style="height: 22px;">
-                <td style="height: 22px;"><strong>OS</strong></td>
-                <td style="height: 22px;"><strong>Minimum</strong></td>
-                <td style="height: 22px;"><strong>Recommended</strong></td>
+                <td style="height: 22px; width: 24.7143%;"><strong>OS</strong></td>
+                <td style="height: 22px; width: 75.1429%;"><strong>Minimum</strong></td>
             </tr>
             <tr style="height: 22px;">
-                <td style="height: 22px;">Windows</td>
-                <td style="height: 22px;">Windows 10+</td>
-                <td style="height: 22px;">Windows 10+</td>
+                <td style="height: 22px; width: 24.7143%;">Windows</td>
+                <td style="height: 22px; width: 75.1429%;">Windows 10+</td>
             </tr>
             <tr style="height: 22px;">
-                <td style="height: 22px;">Mac</td>
-                <td style="height: 22px;">
-                    <p>MacOS 10.13 (High Sierra)+</p>
+                <td style="height: 22px; width: 24.7143%;">Mac</td>
+                <td style="height: 22px; width: 75.1429%;">
+                    <p><span id="docs-internal-guid-72018f9d-7fff-b7ea-ae64-0c3b5d2caca6">MacOS 10.15+ (Catalina)+</span></p>
                 </td>
-                <td style="height: 22px;">MacOS 10.15 (Catalina)+</td>
             </tr>
             <tr style="height: 22px;">
-                <td style="height: 22px;">Linux</td>
-                <td style="height: 22px;" colspan="2">Ubuntu 18.04+, Debian 10+, openSUSE 15.2+ and Fedora Linux 32+</td>
+                <td style="height: 22px; width: 24.7143%;">Linux</td>
+                <td style="height: 22px; width: 75.1429%;"><span id="docs-internal-guid-cda60023-7fff-d4da-6d95-ad21b5ae44e0">Ubuntu 18.04+, Debian 10+, openSUSE 16.2+ and Fedora Linux 32+</span></td>
             </tr>
         </tbody>
     </table>
@@ -82,6 +79,39 @@
 <p id="docs-internal-guid-d73153cf-7fff-d004-57fc-5c487ddc9887">Beta operating systems are <strong>not supported</strong>. While Discord may install and run on a beta version of an operating system, <span id="docs-internal-guid-0f046720-7fff-33c6-8d14-f0ffc02eaeff">some features of the app may not function correctly</span>.</p>
 <h3 id="docs-internal-guid-f7ea8e91-7fff-df8a-3071-ef5c394e05a0"><span style="color: #434343;">Discord has discontinued support for Android 6 with the release of version 202. If you are running a device with Android 6, you will no longer receive updates with the latest features and bug fixes. Versions released before 202 may stop working after an unspecified amount of time.</span></h3>
 <h1 id="h_01H30Q0T863H0VTGBN9BY653ZD"><strong>Browser</strong></h1>
-<p>Google Chrome, Firefox 80+, Opera, Microsoft Edge 17+ (including Chromium Edge 79+ on Windows and macOS), Safari 11+ (available on macOS 10.13 High Sierra and up)</p>
+<div id="docs-internal-guid-c7cde2e9-7fff-56f9-a1d2-a694c6bfeec7">
+    <table style="width: 100%;">
+        <colgroup>
+            <col>
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <td style="width: 27.8571%;"><strong>Browser</strong></td>
+                <td style="width: 72%;"><strong>Minimum</strong></td>
+            </tr>
+            <tr>
+                <td style="width: 27.8571%;">Google Chrome</td>
+                <td style="width: 72%;">N/A</td>
+            </tr>
+            <tr>
+                <td style="width: 27.8571%;">Mozilla Firefox</td>
+                <td style="width: 72%;">Firefox 80+</td>
+            </tr>
+            <tr>
+                <td style="width: 27.8571%;">Opera</td>
+                <td style="width: 72%;">N/A</td>
+            </tr>
+            <tr>
+                <td style="width: 27.8571%;">Microsoft Edge</td>
+                <td style="width: 72%;">Microsoft Edge 17+ (including Chromium Edge 79+ on Windows and macOS)</td>
+            </tr>
+            <tr>
+                <td style="width: 27.8571%;">Safari</td>
+                <td style="width: 72%;">Safari 11+ (available on macOS 10.13 High Sierra and up)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <h3 id="01H7XMWB5H11V9R0437YRZBTTS"><span style="color: #434343;" data-darkreader-inline-color="">Note: Older browsers may lack functionality with newer features, and voice chat for Firefox is only supported by versions 80 and up!</span></h3>
 <p>Running Discord in a mobile browser is <strong>not supported</strong>.</p>
