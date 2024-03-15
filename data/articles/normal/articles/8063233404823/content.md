@@ -1,5 +1,5 @@
-<h3><span style="font-weight: 400;">This feature is gradually rolling out!</span></h3>
-<h3><span style="font-weight: 400;">Note: If you’re an admin looking to learn more about how to use this feature, check out the <a href="https://support.discord.com/hc/en-us/articles/10388356626711" target="_blank" rel="noopener noreferrer">Connections &amp; Linked Roles: Admins</a> article.</span></h3>
+<h3 id="h_01HS1N3BD2N66S110CSKVA0HR4"><span style="font-weight: 400;">This feature is gradually rolling out!</span></h3>
+<h3 id="h_01HS1N3BD2HS6QWV2Y52RTBKMK"><span style="font-weight: 400;">Note: If you’re an admin looking to learn more about how to use this feature, check out the <a href="https://support.discord.com/hc/en-us/articles/10388356626711" target="_blank" rel="noopener noreferrer">Connections &amp; Linked Roles: Admins</a> article.</span></h3>
 <p><span style="font-weight: 400;">Looking to learn more about how to connect external accounts and verify these accounts for certain roles? Look no further! We boosted Connections for Discord users and developers: Show off even more details from your connected accounts, and gain new Linked Roles that can grant access to special channels within a server. We built <strong>Connections</strong> and <strong>Linked Roles</strong> to make users and communities safer on Discord.</span></p>
 <p><span class="wysiwyg-font-size-large"><strong>What does this article cover?</strong></span></p>
 <ul>
@@ -23,36 +23,36 @@
 <p><span style="font-weight: 400;">You can also add a new Connection with </span><strong>Connection details </strong><span style="font-weight: 400;">by going through the same “Add accounts to your profile” flow.</span></p>
 <p><span style="font-weight: 400;">If you want these </span><strong>Connection details </strong><span style="font-weight: 400;">to display publicly on your profile, you can toggle “Display details on profile”.</span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/10898955133079" alt="Connections_UserSettings.png"></p>
-<h4 class="wysiwyg-text-align-center">
+<h4 id="h_01HS1N3BD2DWTE6H7JZRH4GY65" class="wysiwyg-text-align-center">
     <span style="font-weight: 400;">The </span><strong>Connections</strong><span style="font-weight: 400;"> page in your </span><strong>User Settings</strong>
 </h4>
 <h1 id="h_01GK286CMJ9P5KHT2KSEWYQH9K"><span style="font-weight: 400;">Connection Details on Profile</span></h1>
 <p><span style="font-weight: 400;">Once you have verified your accounts, you will be able to view your </span><strong>Connection details</strong><span style="font-weight: 400;"> on your profile. </span></p>
 <p><span style="font-weight: 400;">You can also view </span><strong>Connection details </strong><span style="font-weight: 400;">on other users’ profiles if they’ve set them up.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10898977269399" alt="Server_Profile_-_Mobile_Connections.png" width="275" height="731"></span></p>
-<h4 class="wysiwyg-text-align-center">
+<h4 id="h_01HS1N3BD2MW33TBR21MW29C4B" class="wysiwyg-text-align-center">
     <span style="font-weight: 400;">How </span><strong>Connections</strong><span style="font-weight: 400;"> look in your </span><strong>profile</strong>
 </h4>
 <p><span style="font-weight: 400;">You will be able to view a shortened list of <strong>Connection details </strong>on users’ profile popouts (profile popout can be reached by clicking a user’s name or icon from chat). If this is a channel with a <strong>Linked Role, </strong>you will see the connections that are relevant to the role. For example, if the Steam Gamer linked role requires the Steam connection to access, it will be shown in the Linked Roles modal. Once you’ve connected to your Steam account, and been granted the Steam Gamer linked role, you will be notified of the channels/spaces you now have access to within the server. </span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10898977269399" alt="Server_Profile_-_Mobile_Connections.png" width="299" height="795"></span></p>
-<h4 class="wysiwyg-text-align-center"><span style="font-weight: 400;">A Reddit Mod <strong>Linked Role</strong> and <strong>Connection details </strong>for Reddit displayed in user profile</span></h4>
+<h4 id="h_01HS1N3BD28CGK61WWYN8SCETV" class="wysiwyg-text-align-center"><span style="font-weight: 400;">A Reddit Mod <strong>Linked Role</strong> and <strong>Connection details </strong>for Reddit displayed in user profile</span></h4>
 <h1 id="h_01GK286J648XF4HPGKZYW9AMQF"><span style="font-weight: 400;">Linked Roles in Servers</span></h1>
 <p><span style="font-weight: 400;">Some servers may have channels gated with a Linked Role. Admins may require certain </span><strong>Connection details </strong><span style="font-weight: 400;">in order to get that role - for example, a Twitter account older than 10 days. </span></p>
 <p><span style="font-weight: 400;">In order to gain the role and therefore access to the channel, you will need to verify your </span><strong>Connection details. </strong><span style="font-weight: 400;">To do so, you can go to the </span><strong>Server menu dropdown &gt; Linked Roles.</strong></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/10898977175319" alt="Server_Dropdown_-_Linked_Roles.png"></p>
-<h4 class="wysiwyg-text-align-center">
+<h4 id="h_01HS1N3BD2D1SN3JMRKAHB41VN" class="wysiwyg-text-align-center">
     <strong>Linked Roles </strong><span style="font-weight: 400;">in </span><strong>Server Settings dropdown.</strong>
 </h4>
 <p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/10898955244567" alt="Modal_-_Select_Linked_Role.png"></strong></p>
-<h4 class="wysiwyg-text-align-center"><strong><span style="font-weight: 400;">A list of available <strong>Linked</strong></span> Roles<span style="font-weight: 400;"> in a server with icons to </span>Connections<span style="font-weight: 400;"> that must be made to get access</span></strong></h4>
+<h4 id="h_01HS1N3BD2JG1FCF9ZN45PBTGW" class="wysiwyg-text-align-center"><strong><span style="font-weight: 400;">A list of available <strong>Linked</strong></span> Roles<span style="font-weight: 400;"> in a server with icons to </span>Connections<span style="font-weight: 400;"> that must be made to get access</span></strong></h4>
 <p class="wysiwyg-text-align-center"><strong><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10898955151511" alt="Modal_-_Connect_Accounts.png"></span></strong></p>
-<h4 class="wysiwyg-text-align-center">
+<h4 id="h_01HS1N3BD2CT8NJ0FBPYRGNQHN" class="wysiwyg-text-align-center">
     <span style="font-weight: 400;">The necessary </span><strong>Connections</strong><span style="font-weight: 400;"> to have in order to receive this <strong>Linked</strong></span><strong> Role</strong>
 </h4>
 <p><span style="font-weight: 400;">When you are in a Linked Roles’-gated channel, you will see a tag next to your username that  lets other members know that you have the role. This is called the Linked Role Tag.</span></p>
 <p class="wysiwyg-text-align-left"><strong><span style="font-weight: 400;">You can click on the tag to view what checks the admins require on users’ </span>Connection details<span style="font-weight: 400;"> in order to enter the Connections-gated channel.</span></strong></p>
 <p class="wysiwyg-text-align-center"><strong><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10898955280791" alt="Role_Tag_-_Official.png"></span></strong></p>
-<h4 class="wysiwyg-text-align-center">
+<h4 id="h_01HS1N3BD2AK60YDJ9K23WC67E" class="wysiwyg-text-align-center">
     <span style="font-weight: 400;">Example of what </span><strong>Connections </strong><span style="font-weight: 400;">are required for this <strong>Linked</strong></span><strong> Role</strong>
 </h4>
 <p><span style="font-weight: 400;">Finally, we’ve extended connection capabilities to apps (beyond the ones you see in </span><strong>User Settings &gt; Connections</strong><span style="font-weight: 400;">). Admins can add apps to their server with these capabilities and may decide that you need to connect with them to be granted a particular linked role in the server. Developers can add connection capabilities for their own apps. See more in the API documentation </span><a href="https://discord.com/developers/docs/resources/application-role-connection-metadata" target="_blank" rel="noopener noreferrer">here</a><span style="font-weight: 400;">.</span></p>
@@ -97,6 +97,8 @@
 <p><span style="font-weight: 400;">A: If you have an eligible Connection which passes the requirements for the role, you’ll need to opt-in to the role by going to the gated channel in the server and clicking to join. </span></p>
 <p><strong>Q: How do I set up my Connections if I’m on mobile?</strong></p>
 <p><span style="font-weight: 400;">A:  Currently as a user you can view your Connections and add Connections on mobile. However, you will need to be on desktop in order to opt-in for the role by going to the gated channel. You will only need to go through the desktop connection flow once to be granted the role, and then you can view the gated channel moving forward on mobile.</span></p>
+<p><strong>Q: Is the Instagram connection still supported for Linked Roles?</strong></p>
+<p><span style="font-weight: 400;">A: Unfortunately, we had to remove the Instagram connection and linked account data due to lack of API support. Instagram connections and data can no longer be used to power Linked Roles.</span></p>
 <h2 id="h_01GK2KFYQ2JSMHCS6ZM4C3YVQ1"><strong><span class="wysiwyg-font-size-large">Data transparency</span></strong></h2>
 <p><strong>Q: What does Discord do with the personal account details that I add to Connections?</strong></p>
 <p><span style="font-weight: 400;">A: We are storing this information to display on your profile and verify yourself for roles in servers. This information is stored securely within our databases, and will never be shared externally with third-parties without your explicit permission.</span></p>
