@@ -6,17 +6,13 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Staff Test",
-      "Treatment 2: Show feed by affinity",
-      "Treatment 3: Show feed by heuristics"
+      "Treatment 1: Show feed"
     ],
     "hash": 1747551262,
     "buckets": [
       -1,
       0,
-      1,
-      2,
-      3
+      1
     ],
     "holdout": {},
     "aa_mode": false,

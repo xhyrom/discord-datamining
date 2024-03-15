@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-01_mobile_shop",
+    "label": "Mobile Shop Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables mobile shop",
+      "Treatment 601: Show payment success view instead of PDP",
+      "Treatment 602: Animate decorations in home/index page",
+      "Treatment 603: Simulate Success Flow Locally"
+    ],
+    "hash": 3754515692,
+    "buckets": [
+      -1,
+      0,
+      1,
+      601,
+      602,
+      603
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
