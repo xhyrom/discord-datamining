@@ -1,5 +1,21 @@
 [
   {
+    "id": 22113084771863,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/22113084771863.json",
+    "html_url": "https://support.discord.com/hc/en-us/sections/22113084771863-Promotions",
+    "category_id": 360001025912,
+    "position": 0,
+    "sorting": "creation_desc",
+    "created_at": "2024-03-15T23:31:55Z",
+    "name": "Promotions",
+    "description": "",
+    "locale": "en-us",
+    "source_locale": "en-us",
+    "outdated": false,
+    "parent_section_id": null,
+    "theme_template": "section_page"
+  },
+  {
     "id": 20782794581527,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/20782794581527.json",
     "html_url": "https://support.discord.com/hc/en-us/sections/20782794581527-Activities",
