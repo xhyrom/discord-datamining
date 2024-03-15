@@ -1736,7 +1736,10 @@
   },
   "METRICS_V2": {
     "url": "/metrics/v2",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SSO": {
     "url": "/sso",
