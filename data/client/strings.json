@@ -7093,7 +7093,7 @@
   "PREMIUM_SUBSCRIPTION_CURRENT_LABEL": "\"Current Subscription\"",
   "PREMIUM_SUBSCRIPTION_NEW_TOTAL": "\"New Subscription Total\"",
   "PREMIUM_SUBSCRIPTION_CANCELLED": "\"{planName} Canceled\"",
-  "PREMIUM_SUBSCRIPTION_ADJUSTMENT_TOOLTIP": "\"This adjustment includes prorations, discounts, and refunds.\"",
+  "PREMIUM_SUBSCRIPTION_ADJUSTMENT_TOOLTIP": "\"This adjustment includes prorations, discounts, applicable taxes, and refunds.\"",
   "PREMIUM_SUBSCRIPTION_GUILD_SUBSCRIPTION_ADJUSTMENT_TOOLTIP": "\"**Why am I seeing this?**\\n\\nYou are purchasing a plan change. Your Server Boosts are being updated accordingly.\"",
   "PREMIUM_SUBSCRIPTION_GUILD_SUBSCRIPTION_ADJUSTMENT_TEXT": "\"You are purchasing a plan change. Your Server Boosts are being updated accordingly.\"",
   "PREMIUM_SUBSCRIPTION_PERIOD_RESET_NOTICE": "\"Your next renewal date will be **{renewalDate, date, medium}**.\"",
