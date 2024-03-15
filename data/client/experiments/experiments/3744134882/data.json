@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-10_friend_finder_virginia",
-    "label": "Friend Finder User Experiment for Virginia",
+    "id": "2024-03_friend_finder_selected_states",
+    "label": "Friend Finder State Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Friend Finder in Virginia"
+      "Treatment 1: Enable Friend Finder on select states configurable in exp config"
     ],
-    "hash": 2536084621,
+    "hash": 3744134882,
     "buckets": [
       -1,
       0,
