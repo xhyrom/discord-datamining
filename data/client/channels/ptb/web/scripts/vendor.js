@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87779,8 +87779,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710521309597",
-                                    build_number: "275583"
+                                    built_at: "1710524012690",
+                                    build_number: "275613"
                                 }
                             },
                             retries: 1
@@ -125188,7 +125188,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "96ca5d3ecd2573794dd5a8c458e690af568f3807"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "4ccdcabfc673f1a697d3047ce6135c8d2822f0f6"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134357,14 +134357,14 @@
                 let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
                     {
                         trusted: I,
-                        onClick: R,
-                        onConfirm: O,
-                        shouldConfirm: D,
-                        messageId: P,
-                        channelId: L
+                        onClick: C,
+                        onConfirm: R,
+                        shouldConfirm: O,
+                        messageId: D,
+                        channelId: P
                     } = e,
-                    M = s.sanitizeUrl(e.href);
-                if (null == M) {
+                    L = s.sanitizeUrl(e.href);
+                if (null == L) {
                     null != t && t.preventDefault(), r.default.show({
                         title: N.default.Messages.HOLD_UP,
                         body: N.default.Messages.MALFORMED_LINK_BODY.format({
@@ -134374,91 +134374,94 @@
                     });
                     return
                 }
-                let b = null,
-                    U = !1,
+                let M = null,
+                    b = !1,
+                    U = D,
                     w = P,
-                    k = L,
-                    V = null;
-                if (null != P && null != L) {
-                    var G, F, x;
-                    let e = T.default.getMessage(L, P),
-                        t = m.default.getBasicChannel(L);
-                    b = null !== (x = null == t ? void 0 : t.guild_id) && void 0 !== x ? x : null;
-                    let n = p.default.getGuild(b),
-                        i = (null == e ? void 0 : null === (G = e.messageReference) || void 0 === G ? void 0 : G.guild_id) != null && (null == e ? void 0 : e.webhookId) != null && (null == e ? void 0 : e.hasFlag(y.MessageFlags.IS_CROSSPOST)) && null != b;
-                    i && (null == e ? void 0 : null === (F = e.messageReference) || void 0 === F ? void 0 : F.guild_id) != null ? (w = e.messageReference.message_id, k = e.messageReference.channel_id, V = e.messageReference.guild_id) : V = b;
+                    k = null;
+                if (null != D && null != P) {
+                    var V, G, F;
+                    let e = T.default.getMessage(P, D),
+                        t = m.default.getBasicChannel(P);
+                    M = null !== (F = null == t ? void 0 : t.guild_id) && void 0 !== F ? F : null;
+                    let n = p.default.getGuild(M),
+                        i = (null == e ? void 0 : null === (V = e.messageReference) || void 0 === V ? void 0 : V.guild_id) != null && (null == e ? void 0 : e.webhookId) != null && (null == e ? void 0 : e.hasFlag(y.MessageFlags.IS_CROSSPOST)) && null != M;
+                    i && (null == e ? void 0 : null === (G = e.messageReference) || void 0 === G ? void 0 : G.guild_id) != null ? (U = e.messageReference.message_id, w = e.messageReference.channel_id, k = e.messageReference.guild_id) : k = M;
                     let s = (null == t ? void 0 : t.type) === y.ChannelTypes.GUILD_ANNOUNCEMENT && (null == n ? void 0 : n.hasFeature(y.GuildFeatures.COMMUNITY)) === !0,
                         r = (null == e ? void 0 : e.hasFlag(y.MessageFlags.EPHEMERAL)) === !0;
-                    U = null != e && !r && (i || s)
+                    b = null != e && !r && (i || s)
                 }
-                let B = m.default.getChannel(C.default.getChannelId()),
-                    H = p.default.getGuild(null == B ? void 0 : B.getGuildId());
-                if (null != B && null != H && H.hasFeature(y.GuildFeatures.DISCOVERABLE) && A.default.track(y.AnalyticEvents.URL_CLICKED, {
-                        url_domain: (0, v.getHostname)(M),
-                        guild_id: H.id,
-                        channel_id: B.id
-                    }), f.default.trackLinkClicked(M), null != R) {
-                    if (R(t)) return
+                if (null != P) {
+                    let e = m.default.getChannel(P),
+                        t = p.default.getGuild(null == e ? void 0 : e.getGuildId());
+                    null != e && null != t && t.hasFeature(y.GuildFeatures.DISCOVERABLE) && A.default.track(y.AnalyticEvents.URL_CLICKED, {
+                        url_domain: (0, v.getHostname)(L),
+                        guild_id: t.id,
+                        channel_id: e.id
+                    })
+                }
+                if (f.default.trackLinkClicked(L), null != C) {
+                    if (C(t)) return
                 } else {
                     let {
                         default: e
-                    } = n("572544"), s = e(M, {
+                    } = n("572544"), s = e(L, {
                         skipExtensionCheck: void 0,
                         analyticsLocations: i
                     });
                     if (null != s && s(t)) return
                 }
-                let Y = () => {
-                        if (U && f.default.trackAnnouncementMessageLinkClicked({
-                                messageId: w,
-                                channelId: L,
-                                guildId: b,
-                                sourceChannelId: k,
-                                sourceGuildId: V
-                            }), null != O) {
-                            O();
+                let x = () => {
+                        if (b && f.default.trackAnnouncementMessageLinkClicked({
+                                messageId: U,
+                                channelId: P,
+                                guildId: M,
+                                sourceChannelId: w,
+                                sourceGuildId: k
+                            }), null != R) {
+                            R();
                             return
-                        }(0, o.default)(M)
+                        }(0, o.default)(L)
                     },
-                    j = u.default.isBlockedDomain(M);
-                if (null !== j) {
-                    null == t || t.preventDefault(), l.default.show(M);
+                    B = u.default.isBlockedDomain(L);
+                if (null !== B) {
+                    null == t || t.preventDefault(), l.default.show(L);
                     return
                 }
-                if (null != (0, g.isSuspiciousDownload)(M)) {
-                    null == t || t.preventDefault(), E.default.show(M);
+                if (null != (0, g.isSuspiciousDownload)(L)) {
+                    null == t || t.preventDefault(), E.default.show(L);
                     return
                 }
-                if ((0, c.shouldShowLinkNotDiscordWarning)(M)) {
-                    null == t || t.preventDefault(), d.default.show(M);
+                if ((0, c.shouldShowLinkNotDiscordWarning)(L)) {
+                    null == t || t.preventDefault(), d.default.show(L);
                     return
                 }
-                let W = "function" == typeof I ? I() : I,
-                    K = (0, v.getProtocol)(M),
-                    z = !("http:" === K || "https:" === K);
-                if (!z && (W || S.default.isTrustedDomain(M)) || z && S.default.isTrustedProtocol(M)) {
-                    null == t || null != D && D ? Y() : U && f.default.trackAnnouncementMessageLinkClicked({
-                        messageId: w,
-                        channelId: L,
-                        guildId: b,
-                        sourceChannelId: k,
-                        sourceGuildId: V
+                let H = "function" == typeof I ? I() : I,
+                    Y = (0, v.getProtocol)(L),
+                    j = !("http:" === Y || "https:" === Y);
+                if (!j && (H || S.default.isTrustedDomain(L)) || j && S.default.isTrustedProtocol(L)) {
+                    null == t || null != O && O ? x() : b && f.default.trackAnnouncementMessageLinkClicked({
+                        messageId: U,
+                        channelId: P,
+                        guildId: M,
+                        sourceChannelId: w,
+                        sourceGuildId: k
                     });
                     return
                 }
-                if (null != t && t.preventDefault(), z) h.default.show({
-                    url: M,
+                if (null != t && t.preventDefault(), j) h.default.show({
+                    url: L,
                     trustUrl: a.trustProtocol,
-                    onConfirm: Y,
+                    onConfirm: x,
                     isProtocol: !0
                 });
                 else {
-                    let e = (0, _.punycodeLink)(M),
-                        t = null != e ? e.displayTarget : M;
+                    let e = (0, _.punycodeLink)(L),
+                        t = null != e ? e.displayTarget : L;
                     h.default.show({
                         url: t,
                         trustUrl: a.trustDomain,
-                        onConfirm: Y,
+                        onConfirm: x,
                         isProtocol: !1
                     })
                 }
@@ -134531,7 +134534,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275583"
+                                build_number: "275613"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152159,4 +152162,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.2ea26717b1633f176d40.js.map
+//# sourceMappingURL=45109.39b07f67b2b26bcba84b.js.map
