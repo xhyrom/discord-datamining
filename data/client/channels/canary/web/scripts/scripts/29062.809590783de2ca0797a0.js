@@ -55984,7 +55984,7 @@
                 h = 10,
                 g = 500;
             Object.freeze([]), Object.freeze([]);
-            let m = 10;
+            let m = 25;
 
             function p(e) {
                 if (null != e.choices) return a.default.Messages.COMMAND_VALIDATION_CHOICE_ERROR;
@@ -87841,8 +87841,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710545291297",
-                                    build_number: "275854"
+                                    built_at: "1710545658134",
+                                    build_number: "275856"
                                 }
                             },
                             retries: 1
@@ -125270,7 +125270,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "e77c9b3cbbf0c157f6218a319de6da7002ca82bc"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "789dfabb4b7be82db9da06940c0fc46dcd566133"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134768,7 +134768,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275854"
+                                build_number: "275856"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152406,4 +152406,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.ba7fff41d281769c0b74.js.map
+//# sourceMappingURL=29062.809590783de2ca0797a0.js.map
