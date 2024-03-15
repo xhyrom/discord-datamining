@@ -3,5 +3,5 @@
 <p>Learn more about each specific setting here: </p>
 <ul>
     <li><a href="https://support.discord.com/hc/en-us/articles/21864805694999" target="_blank" rel="noopener noreferrer">Data Used to Improve Discord</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/21864004415511" target="_blank" rel="noopener noreferrer">Data Used to Personalize Discord</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21865322754327-Data-Used-to-Personalize-Discord" target="_blank" rel="noopener noreferrer">Data Used to Personalize Discord</a></li>
 </ul>
