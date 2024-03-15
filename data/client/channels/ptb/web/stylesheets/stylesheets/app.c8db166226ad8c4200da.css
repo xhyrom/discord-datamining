@@ -22589,6 +22589,44 @@ input[type=checked]:focus-visible+.label__8e2ef {
     margin-left: 8px
 }
 
+.tooltip__2b28e {
+    position: relative;
+    left: 12px
+}
+
+.button__986b9 {
+    min-height: 50px;
+    justify-content: flex-start;
+    gap: 0 10px;
+    padding: 6px;
+    background-color: var(--white);
+    border-radius: var(--radius-xs);
+    color: var(--primary-600)
+}
+
+.button__986b9:hover {
+    background-color: var(--green-160)
+}
+
+.button__986b9:before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px
+}
+
+.button__986b9>:last-child {
+    margin: 0
+}
+
+.pollsCtaButton__8ab5b:before {
+    background: url(/assets/0123e98c60ee16cd0566.svg)no-repeat center center
+}
+
+.dismissButton_dfc09e:before {
+    background: url(/assets/065d239534e01b38b18b.svg)no-repeat center center
+}
+
 .animation__1b6f2 {
     width: 40px;
     height: 44px
@@ -47304,8 +47342,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -130060,4 +130098,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f521fe81d7d065fe501e.css.map*/
+/*# sourceMappingURL=app.c8db166226ad8c4200da.css.map*/

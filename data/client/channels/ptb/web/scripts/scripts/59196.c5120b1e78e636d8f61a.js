@@ -65377,19 +65377,27 @@
                     secondaryButtonCTA: u,
                     onClick: m,
                     onSecondaryClick: h,
-                    onComponentMount: x,
-                    asset: E,
-                    markAsDismissed: y,
-                    caretPosition: g = "caretTopCenter",
-                    buttonLayout: S = 0
+                    buttonProps: x = {
+                        color: c.Button.Colors.BRAND,
+                        look: c.Button.Looks.FILLED
+                    },
+                    secondaryButtonProps: E = {
+                        color: c.Button.Colors.BRAND,
+                        look: c.Button.Looks.INVERTED
+                    },
+                    onComponentMount: y,
+                    asset: g,
+                    markAsDismissed: S,
+                    caretPosition: C = "caretTopCenter",
+                    buttonLayout: I = 0
                 } = e;
                 o.useEffect(() => {
-                    null == x || x()
+                    null == y || y()
                 }, []);
-                let C = null != u;
+                let T = null != u;
                 return (0, r.jsxs)("div", {
-                    className: d(t, p.upsellTooltipWrapper, p[g]),
-                    children: [E, null == n ? null : (0, r.jsx)(c.Heading, {
+                    className: d(t, p.upsellTooltipWrapper, p[C]),
+                    children: [g, null == n ? null : (0, r.jsx)(c.Heading, {
                         className: d(i, p.upsellTooltipHeader),
                         variant: "heading-md/semibold",
                         children: n
@@ -65398,25 +65406,25 @@
                         className: d(a, p.content),
                         variant: "text-sm/normal",
                         children: l
-                    }), null != s || C ? (0, r.jsxs)("div", {
+                    }), null != s || T ? (0, r.jsxs)("div", {
                         className: d(p.upsellButtonsContainer, {
-                            [p.upsellButtonsAdjacent]: 0 === S,
-                            [p.upsellButtonsStacked]: 1 === S
+                            [p.upsellButtonsAdjacent]: 0 === I,
+                            [p.upsellButtonsStacked]: 1 === I
                         }),
-                        children: [C ? (0, r.jsx)(c.Button, {
-                            color: c.Button.Colors.BRAND,
+                        children: [T ? (0, r.jsx)(c.Button, {
+                            ...E,
                             onClick: () => {
-                                null == h || h(), null == y || y(f.ContentDismissActionType.SECONDARY)
+                                null == h || h(), null == S || S(f.ContentDismissActionType.SECONDARY)
                             },
                             children: u
                         }) : null, null == s ? null : (0, r.jsx)(c.Button, {
                             className: d({
-                                [p.fullWidth]: !C
-                            }),
-                            color: c.Button.Colors.BRAND,
-                            look: c.Button.Looks.INVERTED,
+                                [p.fullWidth]: !T
+                            }, x.className),
+                            color: x.color,
+                            look: x.look,
                             onClick: e => {
-                                m(e), null == y || y(f.ContentDismissActionType.PRIMARY)
+                                m(e), null == S || S(f.ContentDismissActionType.PRIMARY)
                             },
                             children: s
                         })]
@@ -82058,4 +82066,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.e1127eef12e6e975d643.js.map
+//# sourceMappingURL=59196.c5120b1e78e636d8f61a.js.map
