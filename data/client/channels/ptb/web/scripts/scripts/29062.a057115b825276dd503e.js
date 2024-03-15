@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["45109"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87841,8 +87841,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710537028333",
-                                    build_number: "275779"
+                                    built_at: "1710537349432",
+                                    build_number: "275785"
                                 }
                             },
                             retries: 1
@@ -124993,11 +124993,11 @@
                 async function t() {
                     if (!b.OVERLAY_SUPPORTED || !(0, L.supportsOutOfProcess)()) throw q.error("Attempted to load out of process overlay on an unsupported platform."), Error("Out of Process Overlay is not supported on this platform.");
                     try {
-                        var e;
+                        var e, t;
                         let {
-                            OutOfProcess: t
+                            OutOfProcess: n
                         } = await er();
-                        return null == t || null === (e = t.init) || void 0 === e || e.call(t), t.setClickZoneCallback(eS), t.setHostWindowCallbacks(ea, eo, el), t.setFocusCallback(ef), t.setSuccessfullyShownCallback(e_), t
+                        return null == n || null === (e = n.init) || void 0 === e || e.call(n), n.setClickZoneCallback(eS), n.setHostWindowCallbacks(ea, eo, el), n.setFocusCallback(ef), null === (t = n.setSuccessfullyShownCallback) || void 0 === t || t.call(n, e_), n
                     } catch (e) {
                         throw q.error("failed loading out of process overlay", e), e
                     }
@@ -125270,7 +125270,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "43e0e1acfe09e19a915c83b886c5a3d7212fcb34"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "f83d8ab159e790824f5e6462485eecdcfc2fd303"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134768,7 +134768,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275779"
+                                build_number: "275785"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152406,4 +152406,4 @@
         }
     }
 ]);
-//# sourceMappingURL=45109.8c04ce0a676bc7ed4e2a.js.map
+//# sourceMappingURL=29062.a057115b825276dd503e.js.map
