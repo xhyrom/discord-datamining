@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -31409,20 +31409,21 @@
                     }), t
                 }
             }
-            async function S(e) {
+            async function S(e, t) {
                 l.default.dispatch({
                     type: "MUTUAL_FRIENDS_FETCH_START",
                     userId: e
                 });
                 try {
-                    let t = await o.default.get({
+                    let n = await o.default.get({
                         url: f.Endpoints.USER_RELATIONSHIPS(e),
-                        oldFormErrors: !0
+                        oldFormErrors: !0,
+                        signal: t
                     });
                     l.default.dispatch({
                         type: "MUTUAL_FRIENDS_FETCH_SUCCESS",
                         userId: e,
-                        mutualFriends: t.body
+                        mutualFriends: n.body
                     })
                 } catch (t) {
                     throw (null == t ? void 0 : t.body) != null && _.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
@@ -43907,11 +43908,8 @@
                 }
                 toggleShow(e) {
                     if (this.state.shouldShowTooltip !== e) {
-                        if (e) {
-                            var t, n;
-                            null === (t = (n = this.props).onTooltipShow) || void 0 === t || t.call(n)
-                        }
-                        d.flushSync(() => {
+                        var t, n, i, s;
+                        e ? null === (t = (n = this.props).onTooltipShow) || void 0 === t || t.call(n) : null === (i = (s = this.props).onTooltipHide) || void 0 === i || i.call(s), d.flushSync(() => {
                             this.setState({
                                 shouldShowTooltip: e
                             })
@@ -46423,7 +46421,7 @@
             let y = e => 0 === e.type,
                 N = e => 1 === e.type,
                 R = e => y(e) ? e.message.nonce : N(e) ? e.message.messageId : e.message.data.id,
-                O = [1 * p.default.Millis.SECOND, 5 * p.default.Millis.MINUTE];
+                O = [1 * p.default.Millis.MINUTE, 5 * p.default.Millis.MINUTE];
             class D extends v.default {
                 isFull() {
                     return this.queue.length >= this.maxSize
@@ -47438,36 +47436,37 @@
             var D = n("901946"),
                 P = n("42203"),
                 L = n("42887"),
-                M = n("661919"),
-                b = n("590401"),
-                U = n("599110"),
-                w = n("35468"),
-                k = n("773336"),
-                V = n("49671"),
-                G = n("199948"),
-                F = n("422791"),
-                x = n("642099"),
-                B = n("417040"),
-                H = n("716380"),
-                Y = n("157547"),
-                j = n("88313"),
-                W = n("531748"),
-                K = n("760406"),
-                z = n("478696"),
-                q = n("49111"),
-                X = n("353927");
-            let Q = /^https/.test((i = "https:", "https:")) ? "wss:" : "ws:";
+                M = n("945956"),
+                b = n("661919"),
+                U = n("590401"),
+                w = n("599110"),
+                k = n("35468"),
+                V = n("773336"),
+                G = n("49671"),
+                F = n("199948"),
+                x = n("422791"),
+                B = n("642099"),
+                H = n("417040"),
+                Y = n("716380"),
+                j = n("157547"),
+                W = n("88313"),
+                K = n("531748"),
+                z = n("760406"),
+                q = n("478696"),
+                X = n("49111"),
+                Q = n("353927");
+            let Z = /^https/.test((i = "https:", "https:")) ? "wss:" : "ws:";
 
-            function Z(e) {
+            function J(e) {
                 return e
             }
             s = class extends _.default {
                 get quality() {
                     let e = this.getLastPing();
-                    if (this.state !== q.RTCConnectionStates.RTC_CONNECTED || void 0 === e) return q.RTCConnectionQuality.UNKNOWN;
-                    if (e > 500 || null != this._outboundLossRate && this._outboundLossRate > 10) return q.RTCConnectionQuality.BAD;
-                    if (e > 250 || null != this._outboundLossRate && this._outboundLossRate > 5) return q.RTCConnectionQuality.AVERAGE;
-                    else return q.RTCConnectionQuality.FINE
+                    if (this.state !== X.RTCConnectionStates.RTC_CONNECTED || void 0 === e) return X.RTCConnectionQuality.UNKNOWN;
+                    if (e > 500 || null != this._outboundLossRate && this._outboundLossRate > 10) return X.RTCConnectionQuality.BAD;
+                    if (e > 250 || null != this._outboundLossRate && this._outboundLossRate > 5) return X.RTCConnectionQuality.AVERAGE;
+                    else return X.RTCConnectionQuality.FINE
                 }
                 get endpoint() {
                     return this._endpoint
@@ -47475,12 +47474,12 @@
                 set endpoint(e) {
                     if (null == e) this._endpoint = null, this.hostname = null;
                     else {
-                        e = "".concat(Q, "//").concat(e);
+                        e = "".concat(Z, "//").concat(e);
                         let {
                             hostname: t,
                             port: n
                         } = d.parse(e), i = null != n ? parseInt(n) : NaN;
-                        null != t && (80 === i || 443 === i) && (e = "".concat(Q, "//").concat(t)), this._endpoint = e + "/", this.hostname = t
+                        null != t && (80 === i || 443 === i) && (e = "".concat(Z, "//").concat(t)), this._endpoint = e + "/", this.hostname = t
                     }
                 }
                 connect(e, t) {
@@ -47494,15 +47493,15 @@
                             type: "RTC_CONNECTION_UPDATE_ID",
                             connection: this
                         }))), null == this.endpoint) {
-                        this.setState(q.RTCConnectionStates.AWAITING_ENDPOINT);
+                        this.setState(X.RTCConnectionStates.AWAITING_ENDPOINT);
                         return
                     }
                     let s = this._socket;
-                    null != s && this._cleanupSocket(), (s = this._socket = new B.default(this.endpoint)).on(B.SocketEvent.Connecting, this._handleConnecting.bind(this, s)), s.on(B.SocketEvent.Connect, this._handleConnect.bind(this, s)), s.on(B.SocketEvent.Disconnect, this._handleDisconnect.bind(this, s)), s.on(B.SocketEvent.Resuming, this._handleResuming.bind(this, s)), s.on(B.SocketEvent.Ready, this._handleReady.bind(this, s)), s.on(B.SocketEvent.Speaking, this._handleSpeaking.bind(this, s)), s.on(B.SocketEvent.Video, this._handleVideo.bind(this, s)), s.on(B.SocketEvent.Ping, this._handleControlPing.bind(this)), s.on(B.SocketEvent.ClientDisconnect, this._handleClientDisconnect.bind(this)), s.on(B.SocketEvent.Codecs, this._handleCodecs.bind(this)), s.on(B.SocketEvent.MediaSessionId, this._handleMediaSessionId.bind(this)), s.on(B.SocketEvent.MediaSinkWants, this._handleMediaSinkWants.bind(this)), s.on(B.SocketEvent.VoiceBackendVersion, this._handleCodeVersion.bind(this)), s.on(B.SocketEvent.KeyframeInterval, this._handleKeyframeInterval.bind(this)), s.on(B.SocketEvent.ChannelOptionsUpdateRtcLog, this._handleUpdateRtcLog.bind(this)), s.on(B.SocketEvent.Flags, this.handleFlags.bind(this)), s.on(B.SocketEvent.Platform, this.handlePlatform.bind(this)), s.on(B.SocketEvent.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), s.on(B.SocketEvent.SecureFramesInit, this._handleSecureFramesInit.bind(this)), s.on(B.SocketEvent.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), s.on(B.SocketEvent.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), s.on(B.SocketEvent.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), s.on(B.SocketEvent.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), s.on(B.SocketEvent.MLSProposals, this._handleMLSProposals.bind(this, s)), s.on(B.SocketEvent.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), s.on(B.SocketEvent.MLSWelcome, this._handleMLSWelcome.bind(this)), this._connectStartTime = (0, E.now)(), this._connectCount++, this._connecting = !0, null != s && this._socket === s && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = !1, s.connect())
+                    null != s && this._cleanupSocket(), (s = this._socket = new H.default(this.endpoint)).on(H.SocketEvent.Connecting, this._handleConnecting.bind(this, s)), s.on(H.SocketEvent.Connect, this._handleConnect.bind(this, s)), s.on(H.SocketEvent.Disconnect, this._handleDisconnect.bind(this, s)), s.on(H.SocketEvent.Resuming, this._handleResuming.bind(this, s)), s.on(H.SocketEvent.Ready, this._handleReady.bind(this, s)), s.on(H.SocketEvent.Speaking, this._handleSpeaking.bind(this, s)), s.on(H.SocketEvent.Video, this._handleVideo.bind(this, s)), s.on(H.SocketEvent.Ping, this._handleControlPing.bind(this)), s.on(H.SocketEvent.ClientDisconnect, this._handleClientDisconnect.bind(this)), s.on(H.SocketEvent.Codecs, this._handleCodecs.bind(this)), s.on(H.SocketEvent.MediaSessionId, this._handleMediaSessionId.bind(this)), s.on(H.SocketEvent.MediaSinkWants, this._handleMediaSinkWants.bind(this)), s.on(H.SocketEvent.VoiceBackendVersion, this._handleCodeVersion.bind(this)), s.on(H.SocketEvent.KeyframeInterval, this._handleKeyframeInterval.bind(this)), s.on(H.SocketEvent.ChannelOptionsUpdateRtcLog, this._handleUpdateRtcLog.bind(this)), s.on(H.SocketEvent.Flags, this.handleFlags.bind(this)), s.on(H.SocketEvent.Platform, this.handlePlatform.bind(this)), s.on(H.SocketEvent.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), s.on(H.SocketEvent.SecureFramesInit, this._handleSecureFramesInit.bind(this)), s.on(H.SocketEvent.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), s.on(H.SocketEvent.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), s.on(H.SocketEvent.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), s.on(H.SocketEvent.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), s.on(H.SocketEvent.MLSProposals, this._handleMLSProposals.bind(this, s)), s.on(H.SocketEvent.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), s.on(H.SocketEvent.MLSWelcome, this._handleMLSWelcome.bind(this)), this._connectStartTime = (0, E.now)(), this._connectCount++, this._connecting = !0, null != s && this._socket === s && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = !1, s.connect())
                 }
                 destroy() {
                     var e, t, n, i, s;
-                    if (this.logger.info("Destroy RTCConnection"), w.default.removeOnlineCallback(this._handleNetworkOnline), w.default.removeOfflineCallback(this._handleNetworkOffline), (0, k.isDesktop)() && (null === (s = this.powerMonitorListener) || void 0 === s || s.call(this)), this._backoff.cancel(), this._cleanupSocket(), null === (e = this._voiceQuality) || void 0 === e || e.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, null === (t = this._voiceDuration) || void 0 === t || t.stop(), this._voiceDuration = null, null === (n = this._videoQuality) || void 0 === n || n.stop(), this._videoQuality = null, this._videoHealthManager = null, null === (i = this._localMediaSinkWantsManager) || void 0 === i || i.reset(), null != this._connection) {
+                    if (this.logger.info("Destroy RTCConnection"), k.default.removeOnlineCallback(this._handleNetworkOnline), k.default.removeOfflineCallback(this._handleNetworkOffline), (0, V.isDesktop)() && (null === (s = this.powerMonitorListener) || void 0 === s || s.call(this)), this._backoff.cancel(), this._cleanupSocket(), null === (e = this._voiceQuality) || void 0 === e || e.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, null === (t = this._voiceDuration) || void 0 === t || t.stop(), this._voiceDuration = null, null === (n = this._videoQuality) || void 0 === n || n.stop(), this._videoQuality = null, this._videoHealthManager = null, null === (i = this._localMediaSinkWantsManager) || void 0 === i || i.reset(), null != this._connection) {
                         let e = this._connection;
                         this._connection = null, e.destroy()
                     }
@@ -47572,7 +47571,7 @@
                 }
                 setState(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                    this.logger.info("RTC connection state: ".concat(this.state, " => ").concat(e)), this.state = e, this.stateHistory.update(this.state), this.emit(F.RTCConnectionEvent.State, e, {
+                    this.logger.info("RTC connection state: ".concat(this.state, " => ").concat(e)), this.state = e, this.stateHistory.update(this.state), this.emit(x.RTCConnectionEvent.State, e, {
                         hostname: this.hostname,
                         channelId: this.trueChannelId,
                         context: this.context,
@@ -47625,7 +47624,7 @@
                 }
                 _chooseExperiments(e) {
                     let t = [];
-                    if (this._recordingEnabled && t.push("connection_log"), L.default.supports(X.Features.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
+                    if (this._recordingEnabled && t.push("connection_log"), L.default.supports(Q.Features.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
                         let {
                             enabled: e,
                             fullname: n
@@ -47635,7 +47634,7 @@
                     this._selectedExperiments = t
                 }
                 _handleConnecting(e) {
-                    null != this.endpoint && this.logger.info("Connecting to RTC server ".concat(this.endpoint, ", rtc-connection-id: ").concat(this.getRTCConnectionId())), this.setState(q.RTCConnectionStates.CONNECTING)
+                    null != this.endpoint && this.logger.info("Connecting to RTC server ".concat(this.endpoint, ", rtc-connection-id: ").concat(this.getRTCConnectionId())), this.setState(X.RTCConnectionStates.CONNECTING)
                 }
                 _handleConnect(e) {
                     var t, n;
@@ -47647,39 +47646,41 @@
                         sessionId: this.sessionId,
                         token: i,
                         maxSecureFramesVersion: L.default.getSupportedSecureFramesProtocolVersion(this.guildId),
-                        video: L.default.supports(X.Features.VIDEO),
+                        video: L.default.supports(Q.Features.VIDEO),
                         streamParameters: L.default.getVideoStreamParameters(this.context)
-                    }), this.setState(q.RTCConnectionStates.AUTHENTICATING)
+                    }), this.setState(X.RTCConnectionStates.AUTHENTICATING)
                 }
                 _handleDisconnect(e, t, n, i) {
-                    var s, r, a, o, l;
-                    this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(i, ", state: ").concat(this.state)), !t && this._connecting && !this._encountered_socket_failure && (U.default.track(q.AnalyticEvents.VOICE_CONNECTION_SOCKET_FAILURE, {
+                    var s, r, a, o, l, u;
+                    this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(i, ", state: ").concat(this.state)), !t && this._connecting && !this._encountered_socket_failure && (w.default.track(X.AnalyticEvents.VOICE_CONNECTION_SOCKET_FAILURE, {
                         ...this._getAnalyticsProperties(),
                         hostname: this.hostname,
                         connect_count: this._connectCount,
                         code: n,
                         reason: i
                     }), this._encountered_socket_failure = !0);
-                    let u = "Force Close" !== i;
-                    if (u) {
+                    let d = M.default.getRemoteDisconnectVoiceChannelId();
+                    d === this.channelId && (null === (l = this._connection) || void 0 === l || l.wasRemoteDisconnected());
+                    let c = "Force Close" !== i;
+                    if (c) {
                         let e = this._backoff.fail(this.reconnect);
                         this.logger.warn("Disconnect was not clean! reason=".concat(i, ". Reconnecting in ").concat((e / 1e3).toFixed(2), " seconds."))
                     }
-                    if (this.state !== q.RTCConnectionStates.DISCONNECTED) {
+                    if (this.state !== X.RTCConnectionStates.DISCONNECTED) {
                         let e = this._videoQuality;
-                        if (null != e && this.context === X.MediaEngineContextTypes.DEFAULT) {
+                        if (null != e && this.context === Q.MediaEngineContextTypes.DEFAULT) {
                             if (e.stop(), this._sentVideo) {
                                 let t = e.getOutboundStats();
                                 t.forEach(t => {
                                     var n;
                                     let s = null !== (n = t.num_frames) && void 0 !== n ? n : 0;
-                                    s > 0 && U.default.track(q.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                                    s > 0 && w.default.track(X.AnalyticEvents.VIDEO_STREAM_ENDED, {
                                         ...this._getAnalyticsProperties(),
                                         media_session_id: this.getMediaSessionId(),
                                         sender_user_id: this.userId,
                                         reason: i,
                                         participant_type: "sender",
-                                        guild_region: b.default.getRegion(this.hostname),
+                                        guild_region: U.default.getRegion(this.hostname),
                                         hostname: this.hostname,
                                         hardware_enabled: L.default.getHardwareH264(),
                                         ...t,
@@ -47695,13 +47696,13 @@
                                 var n;
                                 let s = e.getInboundStats(t),
                                     r = null !== (n = null == s ? void 0 : s.num_frames) && void 0 !== n ? n : 0;
-                                r > 0 && U.default.track(q.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                                r > 0 && w.default.track(X.AnalyticEvents.VIDEO_STREAM_ENDED, {
                                     ...this._getAnalyticsProperties(),
                                     media_session_id: this.getMediaSessionId(),
                                     sender_user_id: t,
                                     reason: i,
                                     participant_type: "receiver",
-                                    guild_region: b.default.getRegion(this.hostname),
+                                    guild_region: U.default.getRegion(this.hostname),
                                     hostname: this.hostname,
                                     hardware_enabled: L.default.getHardwareH264(),
                                     ...s,
@@ -47710,15 +47711,15 @@
                                 })
                             })
                         }
-                        let t = b.default.shouldIncludePreferredRegion() ? b.default.getPreferredRegion() : null,
+                        let t = U.default.shouldIncludePreferredRegion() ? U.default.getPreferredRegion() : null,
                             n = L.default.getSettings(),
                             s = P.default.getChannel(this.channelId);
-                        U.default.track(q.AnalyticEvents.VOICE_DISCONNECT, {
+                        w.default.track(X.AnalyticEvents.VOICE_DISCONNECT, {
                             ...this._getAnalyticsProperties(),
                             hostname: this.hostname,
                             port: this.port,
                             protocol: this.protocol,
-                            reconnect: u,
+                            reconnect: c,
                             reason: i,
                             duration: this.getDuration(),
                             ...null != this._voiceQuality ? this._voiceQuality.getMosStats() : null,
@@ -47754,14 +47755,14 @@
                             input_device: this.getInputDeviceName(),
                             output_device: this.getOutputDeviceName(),
                             device_performance_class: (0, v.getMediaPerformanceClass)(),
-                            num_fast_udp_reconnects: null != this._connection ? null === (l = this._connection) || void 0 === l ? void 0 : l.getNumFastUdpReconnects() : null,
+                            num_fast_udp_reconnects: null != this._connection ? null === (u = this._connection) || void 0 === u ? void 0 : u.getNumFastUdpReconnects() : null,
                             parent_media_session_id: this.parentMediaSessionId
                         });
                         let r = this.getMediaSessionId();
                         L.default.getMediaEngine().getCodecSurvey().then(e => {
                             let t = JSON.parse(e);
                             if (null == t || null == t.available_video_encoders || null == t.available_video_decoders) throw Error("codec survey is not available");
-                            U.default.track(q.AnalyticEvents.VOICE_CODEC_DETECTED, {
+                            w.default.track(X.AnalyticEvents.VOICE_CODEC_DETECTED, {
                                 ...t,
                                 rtc_connection_id: this.getRTCConnectionId(),
                                 media_session_id: r
@@ -47774,8 +47775,8 @@
                         let e = this._connection;
                         this._connection = null, e.destroy()
                     }
-                    this.setState(q.RTCConnectionStates.DISCONNECTED, {
-                        willReconnect: u
+                    this.setState(X.RTCConnectionStates.DISCONNECTED, {
+                        willReconnect: c
                     })
                 }
                 _handleResuming(e) {
@@ -47784,8 +47785,8 @@
                 }
                 _handleReady(e, t, n, i, s, r, a) {
                     var o;
-                    this.setState(q.RTCConnectionStates.RTC_CONNECTING), this.port = n, null != a && this._chooseExperiments(a), 0 === r.length && r.push({
-                        type: X.MediaTypes.VIDEO,
+                    this.setState(X.RTCConnectionStates.RTC_CONNECTING), this.port = n, null != a && this._chooseExperiments(a), 0 === r.length && r.push({
+                        type: Q.MediaTypes.VIDEO,
                         rid: "100",
                         ssrc: s + 1,
                         rtxSsrc: s + 2,
@@ -47807,7 +47808,7 @@
                             qosEnabled: L.default.getQoS(),
                             ...this._getExtraConnectionOptions()
                         });
-                    if (u.setUseElectronVideo(l.supports(X.Features.ELECTRON_VIDEO)), L.default.supports(X.Features.IMAGE_QUALITY_MEASUREMENT)) {
+                    if (u.setUseElectronVideo(l.supports(Q.Features.ELECTRON_VIDEO)), L.default.supports(Q.Features.IMAGE_QUALITY_MEASUREMENT)) {
                         let {
                             enabled: e,
                             measurement: t
@@ -47821,7 +47822,7 @@
                         e && u.setVideoQualityMeasurement(t + n)
                     }
                     let d = ["unk"];
-                    if (L.default.supports(X.Features.AMD_EXPERIMENTAL_RATE_CONTROL) && d.push("amdRelaxRc"), this.context === X.MediaEngineContextTypes.STREAM) {
+                    if (L.default.supports(Q.Features.AMD_EXPERIMENTAL_RATE_CONTROL) && d.push("amdRelaxRc"), this.context === Q.MediaEngineContextTypes.STREAM) {
                         let {
                             nvMediumVbvSizeMs: e
                         } = y.default.getCurrentConfig({
@@ -47853,9 +47854,9 @@
                         }
                     }
                     u.setVideoEncoderExperiments(d.join(",")), u.on(h.BaseConnectionEvent.Speaking, (e, t, n) => {
-                        this.userId === e && this.sendSpeaking(t, n), this.emit(F.RTCConnectionEvent.Speaking, e, t)
+                        this.userId === e && this.sendSpeaking(t, n), this.emit(x.RTCConnectionEvent.Speaking, e, t)
                     }), u.on(h.BaseConnectionEvent.NativeMuteChanged, e => {
-                        m.default.setSelfMute(X.MediaEngineContextTypes.DEFAULT, e)
+                        m.default.setSelfMute(Q.MediaEngineContextTypes.DEFAULT, e)
                     }), u.on(h.BaseConnectionEvent.Video, (e, t, n, i, s, r) => {
                         this._handleVideoStreamId({
                             userId: e,
@@ -47865,10 +47866,10 @@
                             rtxSsrc: s,
                             videoStreamParameters: r
                         }), this.userId === e && (this.sendVideo(null != n ? n : 0, null != i ? i : 0, null != s ? s : 0, r), null == r || r.forEach(t => {
-                            if (100 === t.quality) this.emit(F.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, e, t.maxResolution, t.maxFrameRate, this.context)
+                            if (100 === t.quality) this.emit(x.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, e, t.maxResolution, t.maxFrameRate, this.context)
                         }))
                     }), u.on(h.BaseConnectionEvent.FirstFrame, (e, t, n) => {
-                        if (null != this._localMediaSinkWantsManager) this._localMediaSinkWantsManager.setFirstFrameReceived(t), this.emit(F.RTCConnectionEvent.Video, this.guildId, this.channelId, e, n, this.rtcServerId)
+                        if (null != this._localMediaSinkWantsManager) this._localMediaSinkWantsManager.setFirstFrameReceived(t), this.emit(x.RTCConnectionEvent.Video, this.guildId, this.channelId, e, n, this.rtcServerId)
                     }), u.on(h.BaseConnectionEvent.Silence, e => {
                         this._inputDetected = this._inputDetected || !e
                     }), u.on(h.BaseConnectionEvent.Connected, (i, s) => {
@@ -47876,14 +47877,14 @@
                             this.logger.warn("Socket mismatch, disconnecting");
                             return
                         }
-                        switch (this._voiceQuality = new z.default(u), this._voiceQuality.start(), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._noiseCancellationError = 0, this._voiceDuration = new K.default(this.userId, u), this._voiceDuration.start(), this.protocol = i, i) {
+                        switch (this._voiceQuality = new q.default(u), this._voiceQuality.start(), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._noiseCancellationError = 0, this._voiceDuration = new z.default(this.userId, u), this._voiceDuration.start(), this.protocol = i, i) {
                             case "udp":
-                                this.logger.info("Sending UDP info to RTC server.", s, this._selectedExperiments), e.once(B.SocketEvent.Encryption, (e, t) => {
+                                this.logger.info("Sending UDP info to RTC server.", s, this._selectedExperiments), e.once(H.SocketEvent.Encryption, (e, t) => {
                                     u === this._connection && (u.setEncryption(e, t), this._encryptionMode = e)
                                 }), e.selectProtocol(i, this.getRTCConnectionId(), s, this._selectedExperiments);
                                 break;
                             case "webrtc":
-                                this.logger.info("Sending local SDP to RTC server."), e.once(B.SocketEvent.SDP, this._handleSDP.bind(this)), e.selectProtocol(i, this.getRTCConnectionId(), s);
+                                this.logger.info("Sending local SDP to RTC server."), e.once(H.SocketEvent.SDP, this._handleSDP.bind(this)), e.selectProtocol(i, this.getRTCConnectionId(), s);
                                 break;
                             default:
                                 this.logger.error("Unable to determine protocol.");
@@ -47897,8 +47898,8 @@
                         })
                     }), u.on(h.BaseConnectionEvent.Error, t => {
                         if (e !== this._socket) return;
-                        let n = b.default.shouldIncludePreferredRegion() ? b.default.getPreferredRegion() : null;
-                        this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), U.default.track(q.AnalyticEvents.VOICE_CONNECTION_FAILURE, {
+                        let n = U.default.shouldIncludePreferredRegion() ? U.default.getPreferredRegion() : null;
+                        this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), w.default.track(X.AnalyticEvents.VOICE_CONNECTION_FAILURE, {
                             ...this._getAnalyticsProperties(),
                             hostname: this.hostname,
                             port: this.port,
@@ -47911,28 +47912,28 @@
                         if (this.logger.info("RTC media connection state change: ".concat(this.state, " => ").concat(t)), e !== this._socket) return;
                         let n = this.state;
                         switch (t) {
-                            case X.ConnectionStates.DISCONNECTED:
-                                this.setState(q.RTCConnectionStates.RTC_DISCONNECTED);
+                            case Q.ConnectionStates.DISCONNECTED:
+                                this.setState(X.RTCConnectionStates.RTC_DISCONNECTED);
                                 break;
-                            case X.ConnectionStates.CONNECTING:
-                                this.setState(q.RTCConnectionStates.RTC_CONNECTING);
+                            case Q.ConnectionStates.CONNECTING:
+                                this.setState(X.RTCConnectionStates.RTC_CONNECTING);
                                 break;
-                            case X.ConnectionStates.CONNECTED:
-                                this.setState(q.RTCConnectionStates.RTC_CONNECTED);
+                            case Q.ConnectionStates.CONNECTED:
+                                this.setState(X.RTCConnectionStates.RTC_CONNECTED);
                                 break;
-                            case X.ConnectionStates.NO_ROUTE:
-                                this.setState(q.RTCConnectionStates.NO_ROUTE);
+                            case Q.ConnectionStates.NO_ROUTE:
+                                this.setState(X.RTCConnectionStates.NO_ROUTE);
                                 break;
-                            case X.ConnectionStates.ICE_CHECKING:
-                                this.setState(q.RTCConnectionStates.ICE_CHECKING);
+                            case Q.ConnectionStates.ICE_CHECKING:
+                                this.setState(X.RTCConnectionStates.ICE_CHECKING);
                                 break;
-                            case X.ConnectionStates.DTLS_CONNECTING:
-                                this.setState(q.RTCConnectionStates.DTLS_CONNECTING)
+                            case Q.ConnectionStates.DTLS_CONNECTING:
+                                this.setState(X.RTCConnectionStates.DTLS_CONNECTING)
                         }
-                        if (n === q.RTCConnectionStates.RTC_CONNECTING && this.state === q.RTCConnectionStates.RTC_DISCONNECTED ? this.reconnect() : this.state === q.RTCConnectionStates.NO_ROUTE && this._backoff.fail(this.reconnect), this.state === q.RTCConnectionStates.RTC_CONNECTED) {
+                        if (n === X.RTCConnectionStates.RTC_CONNECTING && this.state === X.RTCConnectionStates.RTC_DISCONNECTED ? this.reconnect() : this.state === X.RTCConnectionStates.NO_ROUTE && this._backoff.fail(this.reconnect), this.state === X.RTCConnectionStates.RTC_CONNECTED) {
                             var i;
-                            let e = b.default.shouldIncludePreferredRegion() ? b.default.getPreferredRegion() : null;
-                            this._connecting && U.default.track(q.AnalyticEvents.VOICE_CONNECTION_SUCCESS, {
+                            let e = U.default.shouldIncludePreferredRegion() ? U.default.getPreferredRegion() : null;
+                            this._connecting && w.default.track(X.AnalyticEvents.VOICE_CONNECTION_SUCCESS, {
                                 ...this._getAnalyticsProperties(),
                                 hostname: this.hostname,
                                 port: this.port,
@@ -47945,8 +47946,8 @@
                                 media_session_id: this.getMediaSessionId(),
                                 ...this.stateHistory.getVoiceConnectionSuccessStats()
                             }), null === (i = this._localMediaSinkWantsManager) || void 0 === i || i.setConnection(u), this._connectCompletedTime = (0, E.now)(), this._connected = !0, this._connecting = !1, this._encountered_socket_failure = !1
-                        } else n === q.RTCConnectionStates.RTC_CONNECTED && this.stateHistory.reset(this.state)
-                    }), u.on(h.BaseConnectionEvent.Ping, this._handlePing.bind(this)), u.on(h.BaseConnectionEvent.PingTimeout, this._handlePingTimeout.bind(this)), u.on(h.BaseConnectionEvent.OutboundLossRate, this._handleOutboundLossRate.bind(this)), u.on(h.BaseConnectionEvent.SoundshareTrace, this._handleSoundshareTrace.bind(this)), u.on(h.BaseConnectionEvent.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), u.on(h.BaseConnectionEvent.Stats, G.default.create()), u.on(h.BaseConnectionEvent.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), u.on(h.BaseConnectionEvent.NoiseCancellationError, e => {
+                        } else n === X.RTCConnectionStates.RTC_CONNECTED && this.stateHistory.reset(this.state)
+                    }), u.on(h.BaseConnectionEvent.Ping, this._handlePing.bind(this)), u.on(h.BaseConnectionEvent.PingTimeout, this._handlePingTimeout.bind(this)), u.on(h.BaseConnectionEvent.OutboundLossRate, this._handleOutboundLossRate.bind(this)), u.on(h.BaseConnectionEvent.SoundshareTrace, this._handleSoundshareTrace.bind(this)), u.on(h.BaseConnectionEvent.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), u.on(h.BaseConnectionEvent.Stats, F.default.create()), u.on(h.BaseConnectionEvent.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), u.on(h.BaseConnectionEvent.NoiseCancellationError, e => {
                         this._noiseCancellationError = e
                     }), u.setRemoteVideoSinkWants(this._remoteVideoSinkWants), this._connection = u
                 }
@@ -47954,7 +47955,7 @@
                     let s = this._connection;
                     if (null != s && this.userId !== t) {
                         var r;
-                        i !== X.SpeakingFlags.NONE && (s.createUser(t, n), g.default.dispatch({
+                        i !== Q.SpeakingFlags.NONE && (s.createUser(t, n), g.default.dispatch({
                             type: "RTC_CONNECTION_USER_CREATE",
                             userId: t,
                             context: this.context
@@ -47962,14 +47963,14 @@
                     }
                 }
                 handleFlags(e, t) {
-                    this.emit(F.RTCConnectionEvent.Flags, e, t)
+                    this.emit(x.RTCConnectionEvent.Flags, e, t)
                 }
                 handlePlatform(e, t) {
-                    this.emit(F.RTCConnectionEvent.Platform, e, t, this.channelId)
+                    this.emit(x.RTCConnectionEvent.Platform, e, t, this.channelId)
                 }
                 getOrCreateVideoQuality() {
                     if (null != this._connection && null == this._videoQuality) {
-                        this._videoQuality = new W.VideoQuality(this._connection), this._videoQuality.start();
+                        this._videoQuality = new K.VideoQuality(this._connection), this._videoQuality.start();
                         let {
                             featureEnabled: e,
                             windowLength: t,
@@ -47978,8 +47979,8 @@
                             backoffTimeSec: s
                         } = N.default.getConfig(!0);
                         if (e) {
-                            this._videoHealthManager = new j.VideoHealthManager(t, n, i, s), null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.videoHealthManager = this._videoHealthManager);
-                            this._videoQuality.on(W.VideoQualityEvent.FpsUpdate, (e, t, n) => {
+                            this._videoHealthManager = new W.VideoHealthManager(t, n, i, s), null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.videoHealthManager = this._videoHealthManager);
+                            this._videoQuality.on(K.VideoQualityEvent.FpsUpdate, (e, t, n) => {
                                 var i, s;
                                 (null === (i = this._localMediaSinkWantsManager) || void 0 === i ? void 0 : i.shouldReceiveFromUser(e)) && (null === (s = this._videoHealthManager) || void 0 === s || s.updateFps(e, t, n))
                             })
@@ -47995,7 +47996,7 @@
                         videoSsrc: o,
                         videoStreamParameters: l
                     } = e;
-                    if (this.emit(F.RTCConnectionEvent.Video, this.guildId, this.channelId, r, a, this.rtcServerId), null != a && null == this.getOrCreateVideoQuality() && this.logger.error("_handleVideoStreamId: Unable to create videoQuality."), null != this._videoQuality && this.userId === r && l.forEach(e => {
+                    if (this.emit(x.RTCConnectionEvent.Video, this.guildId, this.channelId, r, a, this.rtcServerId), null != a && null == this.getOrCreateVideoQuality() && this.logger.error("_handleVideoStreamId: Unable to create videoQuality."), null != this._videoQuality && this.userId === r && l.forEach(e => {
                             var t, n;
                             let i = null !== (t = e.ssrc) && void 0 !== t ? t : 0;
                             i > 0 && !0 === e.active && (null === (n = this._videoQuality) || void 0 === n || n.setOutboundSsrc(i))
@@ -48018,7 +48019,7 @@
                 }
                 _handleRemoteStreamsReady(e) {
                     let t = (0, E.now)() - this._connectStartTime;
-                    U.default.track(q.AnalyticEvents.VOICE_CONNECTION_REMOTE_STREAMS_CREATED, {
+                    w.default.track(X.AnalyticEvents.VOICE_CONNECTION_REMOTE_STREAMS_CREATED, {
                         ...this._getAnalyticsProperties(),
                         number_of_users: e,
                         duration_ms: t
@@ -48030,7 +48031,7 @@
                         if (null != this._localMediaSinkWantsManager) {
                             this._localMediaSinkWantsManager.setAudioSSRC(t, n);
                             let e = s.map(e => ({
-                                type: X.MediaTypes.VIDEO,
+                                type: Q.MediaTypes.VIDEO,
                                 rid: e.rid,
                                 ssrc: e.ssrc,
                                 rtxSsrc: e.rtxSsrc,
@@ -48038,7 +48039,7 @@
                                 active: i > 0
                             }));
                             0 === e.length && e.push({
-                                type: X.MediaTypes.VIDEO,
+                                type: Q.MediaTypes.VIDEO,
                                 rid: "100",
                                 ssrc: i,
                                 rtxSsrc: i + 1,
@@ -48047,12 +48048,12 @@
                             }), this._localMediaSinkWantsManager.setVideoSSRCs(t, e)
                         } else r.createUser(t, n, [i]);
                         null == s || s.forEach(e => {
-                            100 === e.quality && this.emit(F.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, t, e.maxResolution, e.maxFrameRate, this.context)
+                            100 === e.quality && this.emit(x.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, t, e.maxResolution, e.maxFrameRate, this.context)
                         })
                     }
                 }
                 _handleControlPing(e) {
-                    !L.default.supports(X.Features.NATIVE_PING) && this._handlePing(e)
+                    !L.default.supports(Q.Features.NATIVE_PING) && this._handlePing(e)
                 }
                 _handlePing(e) {
                     if (void 0 !== e) {
@@ -48060,7 +48061,7 @@
                                 time: Date.now(),
                                 value: e
                             }); this._pings.length >= 200;) this._pings.shift();
-                        e > 500 && this._pingBadCount++, this.emit(F.RTCConnectionEvent.Ping, this._pings, this.quality)
+                        e > 500 && this._pingBadCount++, this.emit(x.RTCConnectionEvent.Ping, this._pings, this.quality)
                     }
                 }
                 _handlePingTimeout(e, t) {
@@ -48069,7 +48070,7 @@
                     n >= 3 && this._pingTimeouts[n - 1] === this._pingTimeouts[n - 2] + 1 && this._pingTimeouts[n - 2] === this._pingTimeouts[n - 3] + 1 && this._handlePing(t)
                 }
                 _handleOutboundLossRate(e) {
-                    this._outboundLossRate = e, this.emit(F.RTCConnectionEvent.OutboundLossRate, e)
+                    this._outboundLossRate = e, this.emit(x.RTCConnectionEvent.OutboundLossRate, e)
                 }
                 _handleSoundshareTrace(e) {
                     this._soundshareStats.traceEvent(void 0, e)
@@ -48090,16 +48091,16 @@
                 _handleClientDisconnect(e) {
                     var t, n, i;
                     let s = this._videoQuality;
-                    if (null != s && this.context === X.MediaEngineContextTypes.DEFAULT) {
+                    if (null != s && this.context === Q.MediaEngineContextTypes.DEFAULT) {
                         let t = s.getInboundStats(e),
                             r = null !== (n = null == t ? void 0 : t.num_frames) && void 0 !== n ? n : 0;
-                        null != t && r > 0 && (U.default.track(q.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                        null != t && r > 0 && (w.default.track(X.AnalyticEvents.VIDEO_STREAM_ENDED, {
                             ...this._getAnalyticsProperties(),
                             media_session_id: this.getMediaSessionId(),
                             sender_user_id: e,
                             reason: "User disconnected",
                             participant_type: "receiver",
-                            guild_region: b.default.getRegion(this.hostname),
+                            guild_region: U.default.getRegion(this.hostname),
                             hostname: this.hostname,
                             hardware_enabled: L.default.getHardwareH264(),
                             ...t,
@@ -48112,7 +48113,7 @@
                 }
                 _handleCodecs(e, t) {
                     let n = this._connection;
-                    null != n && null != this.protocol ? n.setCodecs(null != e && "" !== e ? e : X.Codecs.OPUS, null != t && "" !== t ? t : X.Codecs.H264, this.context) : this.logger.warn("Cannot set codecs on connection with protocol:", this.protocol)
+                    null != n && null != this.protocol ? n.setCodecs(null != e && "" !== e ? e : Q.Codecs.OPUS, null != t && "" !== t ? t : Q.Codecs.H264, this.context) : this.logger.warn("Cannot set codecs on connection with protocol:", this.protocol)
                 }
                 _handleSDP(e) {
                     let t = this._connection;
@@ -48121,7 +48122,7 @@
                 async _handleMediaSessionId(e) {
                     this._mediaSessionId = e, this.logger.info("Setting media-session-id: ".concat(e, " for rtc-connection-id: ").concat(this.getRTCConnectionId()));
                     let t = await (0, T.default)();
-                    U.default.track(q.AnalyticEvents.MEDIA_SESSION_JOINED, {
+                    w.default.track(X.AnalyticEvents.MEDIA_SESSION_JOINED, {
                         ...this._getAnalyticsProperties(),
                         media_session_id: this.getMediaSessionId(),
                         parent_media_session_id: this.parentMediaSessionId,
@@ -48156,7 +48157,7 @@
                     }
                 }
                 _trackSecureFrameTransition(e, t) {
-                    U.default.track(q.AnalyticEvents.SECURE_FRAMES_TRANSITION, {
+                    w.default.track(X.AnalyticEvents.SECURE_FRAMES_TRANSITION, {
                         ...this._getAnalyticsProperties(),
                         media_session_id: this.getMediaSessionId(),
                         parent_media_session_id: this.parentMediaSessionId,
@@ -48262,7 +48263,7 @@
                     sessionId: t,
                     guildId: n,
                     channelId: i,
-                    context: s = X.MediaEngineContextTypes.DEFAULT,
+                    context: s = Q.MediaEngineContextTypes.DEFAULT,
                     rtcServerId: r,
                     parentMediaSessionId: a
                 }) {
@@ -48280,7 +48281,7 @@
                             if (null != this._voiceQuality) {
                                 let e = this._voiceQuality.getPeriodicStats();
                                 if (this.shouldReportPeriodicStats(e))
-                                    for (let t of e) U.default.track(q.AnalyticEvents.VOICE_QUALITY_PERIODIC_STATS, {
+                                    for (let t of e) w.default.track(X.AnalyticEvents.VOICE_QUALITY_PERIODIC_STATS, {
                                         ...this._getAnalyticsProperties(),
                                         media_session_id: this.getMediaSessionId(),
                                         sender_user_id: t.userId,
@@ -48309,7 +48310,7 @@
                         }, this._trackVoiceConnectionConnecting = () => {
                             let e = P.default.getChannel(this.channelId),
                                 t = null != e ? e.type : null;
-                            U.default.track(q.AnalyticEvents.VOICE_CONNECTION_CONNECTING, {
+                            w.default.track(X.AnalyticEvents.VOICE_CONNECTION_CONNECTING, {
                                 guild_id: this.guildId,
                                 channel_id: this.channelId,
                                 rtc_connection_id: this.getRTCConnectionId(),
@@ -48318,20 +48319,20 @@
                                 context: this.context,
                                 channel_type: t
                             })
-                        }, this.context = s, this.logger = new S.default("RTCConnection(".concat(null !== (o = null != r ? r : n) && void 0 !== o ? o : i, ", ").concat(this.context, ")")), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = i, this.channelIds = new Set([i]), this.rtcServerId = r, this.parentMediaSessionId = a, this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = q.RTCConnectionStates.AWAITING_ENDPOINT, this.stateHistory = new x.StateHistory(this.state), this._socket = null, this._backoff = new f.default(1e3, 1e4), this._destroyed = !1, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = !1, this._outboundLossRate = null, this._createdTime = (0, E.now)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, c.v4)(), this._connectCount = 0, this._connected = !1, this._connecting = !1, this._encountered_socket_failure = !1, this._inputDetected = !1, this._selectedExperiments = [], s === X.MediaEngineContextTypes.DEFAULT) {
-                        let t = L.default.supports(X.Features.FIRST_FRAME_CALLBACK) && L.default.supports(X.Features.REMOTE_USER_MULTI_STREAM),
-                            n = (null === (l = P.default.getChannel(this.channelId)) || void 0 === l ? void 0 : l.type) === q.ChannelTypes.GUILD_STAGE_VOICE;
-                        this._localMediaSinkWantsManager = new H.default(e, n, t), this._localMediaSinkWantsManager.on(H.RTCMediaSinkWantsManagerEvent.Update, e => {
-                            if (this.state === q.RTCConnectionStates.RTC_CONNECTED && null != this._socket) {
+                        }, this.context = s, this.logger = new S.default("RTCConnection(".concat(null !== (o = null != r ? r : n) && void 0 !== o ? o : i, ", ").concat(this.context, ")")), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = i, this.channelIds = new Set([i]), this.rtcServerId = r, this.parentMediaSessionId = a, this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = X.RTCConnectionStates.AWAITING_ENDPOINT, this.stateHistory = new B.StateHistory(this.state), this._socket = null, this._backoff = new f.default(1e3, 1e4), this._destroyed = !1, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = !1, this._outboundLossRate = null, this._createdTime = (0, E.now)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, c.v4)(), this._connectCount = 0, this._connected = !1, this._connecting = !1, this._encountered_socket_failure = !1, this._inputDetected = !1, this._selectedExperiments = [], s === Q.MediaEngineContextTypes.DEFAULT) {
+                        let t = L.default.supports(Q.Features.FIRST_FRAME_CALLBACK) && L.default.supports(Q.Features.REMOTE_USER_MULTI_STREAM),
+                            n = (null === (l = P.default.getChannel(this.channelId)) || void 0 === l ? void 0 : l.type) === X.ChannelTypes.GUILD_STAGE_VOICE;
+                        this._localMediaSinkWantsManager = new Y.default(e, n, t), this._localMediaSinkWantsManager.on(Y.RTCMediaSinkWantsManagerEvent.Update, e => {
+                            if (this.state === X.RTCConnectionStates.RTC_CONNECTED && null != this._socket) {
                                 var t;
                                 this.logger.info("Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null === (t = this._connection) || void 0 === t || t.setLocalVideoSinkWants(e)
                             }
-                        }), this._localMediaSinkWantsManager.on(H.RTCMediaSinkWantsManagerEvent.UserSSRCUpdate, (e, t, n) => {
+                        }), this._localMediaSinkWantsManager.on(Y.RTCMediaSinkWantsManagerEvent.UserSSRCUpdate, (e, t, n) => {
                             var i;
                             null === (i = this._connection) || void 0 === i || i.createUser(e, t, n)
                         })
                     }
-                    this._remoteVideoSinkWants = H.DEFAULT_WANTS_FULL, M.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, p.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new Y.default, w.default.addOnlineCallback(this._handleNetworkOnline), w.default.addOfflineCallback(this._handleNetworkOffline), (0, k.isDesktop)() && (this.powerMonitorListener = V.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, L.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+                    this._remoteVideoSinkWants = Y.DEFAULT_WANTS_FULL, b.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, p.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new j.default, k.default.addOnlineCallback(this._handleNetworkOnline), k.default.addOfflineCallback(this._handleNetworkOffline), (0, V.isDesktop)() && (this.powerMonitorListener = G.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, L.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
                         this._supportedBandwidthEstimationExperiments = e
                     })
                 }
@@ -51505,7 +51506,7 @@
                     return i
                 },
                 CloudUpload: function() {
-                    return C
+                    return y
                 }
             }), n("222007"), n("70102");
             var i, s, r = n("917351"),
@@ -51516,37 +51517,43 @@
                 d = n("676574"),
                 c = n("668273"),
                 f = n("168973"),
-                _ = n("599110"),
-                h = n("994440"),
-                E = n("718517"),
-                g = n("286235"),
-                m = n("980134"),
-                p = n("966724"),
-                S = n("142852"),
-                v = n("49111");
-            let T = new u.default("CloudUpload.tsx"),
-                I = n("123010").default;
+                _ = n("985365"),
+                h = n("599110"),
+                E = n("994440"),
+                g = n("718517"),
+                m = n("286235"),
+                p = n("980134"),
+                S = n("966724"),
+                v = n("142852"),
+                T = n("49111");
+            let I = new u.default("CloudUpload.tsx"),
+                C = n("123010").default;
             (s = i || (i = {})).NOT_STARTED = "NOT_STARTED", s.STARTED = "STARTED", s.UPLOADING = "UPLOADING", s.ERROR = "ERROR", s.COMPLETED = "COMPLETED", s.CANCELED = "CANCELED";
-            class C extends p.default {
+            class A {
+                constructor() {
+                    this.timing = {}
+                }
+            }
+            class y extends S.default {
                 static fromJson(e) {
                     let {
                         item: t,
                         channelId: n,
                         showLargeMessageDialog: i,
                         reactNativeFileIndex: s
-                    } = e, r = new C(t, n, i, s);
+                    } = e, r = new y(t, n, i, s);
                     return "COMPLETED" !== r.status && (r.status = "NOT_STARTED"), Object.entries(e).forEach(e => {
                         let [t, n] = e;
                         !t.startsWith("_") && (r[t] = n)
                     }), r
                 }
                 retryOpts() {
-                    return this.item.platform === p.UploadPlatform.REACT_NATIVE ? {
-                        timeout: 1 * E.default.Millis.HOUR,
-                        backoff: new o.default(.5 * E.default.Millis.SECOND, 30 * E.default.Millis.MINUTE),
+                    return this.item.platform === S.UploadPlatform.REACT_NATIVE ? {
+                        timeout: 1 * g.default.Millis.HOUR,
+                        backoff: new o.default(.5 * g.default.Millis.SECOND, 30 * g.default.Millis.MINUTE),
                         retries: 12
                     } : {
-                        timeout: 1 * E.default.Millis.HOUR,
+                        timeout: 1 * g.default.Millis.HOUR,
                         retries: 12,
                         backoff: new o.default
                     }
@@ -51558,12 +51565,9 @@
                         fileSize: n,
                         bufferedFileData: i
                     } = await this.prepareChunkUploadItem(), s = Math.ceil(n / e);
-                    this.uploadStats = {
-                        numChunks: s,
-                        totalRequestCount: 0
-                    };
+                    this.uploadAnalytics.numChunks = s, this.uploadAnalytics.totalRequestCount = 0;
                     for (let r = 0; r < s; r++) {
-                        T.info("Uploading chunk ".concat(r + 1, " of ").concat(s, " for file id ").concat(this.id));
+                        I.info("Uploading chunk ".concat(r + 1, " of ").concat(s, " for file id ").concat(this.id));
                         let a = r * e,
                             o = Math.min(a + e, n),
                             l = await this.getChunk(a, o, i);
@@ -51577,19 +51581,19 @@
                                 contentType: t
                             })
                         } catch (e) {
-                            throw T.error("Error uploading chunk ".concat(r + 1, " for file id ").concat(this.id, ": ").concat(e)), e
+                            throw I.error("Error uploading chunk ".concat(r + 1, " for file id ").concat(this.id, ": ").concat(e)), e
                         }
                     }
-                    T.log("Upload complete for file id ".concat(this.id))
+                    I.log("Upload complete for file id ".concat(this.id))
                 }
                 async prepareChunkUploadItem() {
                     let e, t, n;
-                    if (this.item.platform === p.UploadPlatform.REACT_NATIVE) {
+                    if (this.item.platform === S.UploadPlatform.REACT_NATIVE) {
                         let i = this.item;
                         if (e = null != i.mimeType && "" !== i.mimeType ? i.mimeType : "application/octet-stream", null == i.size || 0 === i.size || isNaN(i.size)) try {
-                            t = await (0, m.getFileContentLength)(i.uri)
+                            t = await (0, p.getFileContentLength)(i.uri)
                         } catch (e) {
-                            T.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, m.getFileData)(i.uri)).size
+                            I.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, p.getFileData)(i.uri)).size
                         } else t = i.size
                     } else e = "application/octet-stream", t = this.item.file.size;
                     return {
@@ -51599,16 +51603,17 @@
                     }
                 }
                 async getChunk(e, t, n) {
-                    return this.item.platform !== p.UploadPlatform.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, m.getFileChunk)(this.item.uri, e, t)
+                    return this.item.platform !== S.UploadPlatform.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, p.getFileChunk)(this.item.uri, e, t)
                 }
                 async uploadChunk(e) {
                     let t = {
                         "Content-Type": e.contentType,
                         "Content-Range": "bytes ".concat(e.start, "-").concat(e.end - 1, "/").concat(e.totalSize)
                     };
-                    for (let n = 1; n <= 3; n++) {
-                        null != this.uploadStats && (this.uploadStats.totalRequestCount += 1), T.log("Attempt ".concat(n, " for file id ").concat(this.id, " : Uploading chunk ").concat(e.start, "-").concat(e.end - 1, " of ").concat(e.totalSize, " bytes"));
-                        let i = a.throttle(t => {
+                    for (let i = 1; i <= 3; i++) {
+                        var n;
+                        this.uploadAnalytics.totalRequestCount = (null !== (n = this.uploadAnalytics.totalRequestCount) && void 0 !== n ? n : 0) + 1, I.log("Attempt ".concat(i, " for file id ").concat(this.id, " : Uploading chunk ").concat(e.start, "-").concat(e.end - 1, " of ").concat(e.totalSize, " bytes"));
+                        let s = a.throttle(t => {
                             let n = e.start + t.loaded;
                             this.emit("progress", n, e.totalSize, n - this.loaded), this.loaded = n
                         }, 50);
@@ -51618,14 +51623,14 @@
                                 body: e.chunk,
                                 headers: t,
                                 signal: this._abortController.signal,
-                                onRequestProgress: i,
+                                onRequestProgress: s,
                                 ...this.retryOpts()
                             });
                             if (n.ok) return
                         } catch (t) {
                             if (!this.RESUME_INCOMPLETE_CODES.includes(t.status)) throw t;
                             if (this.isUnsuccessfulChunkUpload(t, e.end - 1)) {
-                                T.error("Incomplete chunk upload for file id ".concat(this.id, ": ").concat(t.status));
+                                I.error("Incomplete chunk upload for file id ".concat(this.id, ": ").concat(t.status));
                                 continue
                             }
                             return
@@ -51641,7 +51646,7 @@
                 uploadFileToCloud() {
                     let e, t;
                     if (null == this.responseUrl) throw Error("_uploadFileToCloud - responseUrl is not set");
-                    T.log("Uploading ".concat(this.id)), this.item.platform === p.UploadPlatform.REACT_NATIVE ? t = null != (e = {
+                    I.log("Uploading ".concat(this.id)), this.item.platform === S.UploadPlatform.REACT_NATIVE ? t = null != (e = {
                         type: this.item.mimeType,
                         uri: this.item.uri,
                         name: this.item.filename
@@ -51665,21 +51670,29 @@
                     var e;
                     return null !== (e = this.currentSize) && void 0 !== e ? e : 0
                 }
+                async trackTime(e, t) {
+                    let n = performance.now();
+                    try {
+                        return await t()
+                    } finally {
+                        this.uploadAnalytics.timing[e] = performance.now() - n
+                    }
+                }
                 async upload() {
                     var e, t, n;
                     if ("COMPLETED" === this.status) return;
-                    if (this.setStatus("STARTED"), this.startTime = new Date, this.trackUploadStart(), "CANCELED" === this.status) {
+                    if (this.setStatus("STARTED"), this.startTime = performance.now(), this.trackUploadStart(), "CANCELED" === this.status) {
                         this.handleComplete(this.id);
                         return
                     }
-                    let i = await I.getUploadPayload(this),
-                        s = (0, S.getUploadTarget)(this.item.target);
+                    let i = await C.getUploadPayload(this),
+                        s = (0, v.getUploadTarget)(this.item.target);
                     if (null == i.filename || "" === i.filename || 0 === this.currentSize) {
-                        T.error("File does not have a filename or size is 0.", JSON.stringify(i)), this.handleError(v.AbortCodes.INVALID_FILE_ASSET);
+                        I.error("File does not have a filename or size is 0.", JSON.stringify(i)), this.handleError(T.AbortCodes.INVALID_FILE_ASSET);
                         return
                     }
                     if ((null !== (e = this.currentSize) && void 0 !== e ? e : 0) > s.getMaxFileSize(this.channelId)) {
-                        this.handleError(v.AbortCodes.ENTITY_TOO_LARGE);
+                        this.handleError(T.AbortCodes.ENTITY_TOO_LARGE);
                         return
                     }
                     if (d.default.get("upload_fail_50") && .5 > Math.random()) {
@@ -51689,18 +51702,18 @@
                         return
                     }
                     try {
-                        T.log("Requesting upload url for ".concat(this.id));
-                        let e = await l.default.post({
+                        I.log("Requesting upload url for ".concat(this.id));
+                        let e = await this.trackTime("getUploadUrlTimeMs", async () => await l.default.post({
                             url: s.getCreateAttachmentURL(this.channelId),
                             body: {
                                 files: [i]
                             },
                             ...this.retryOpts()
-                        });
+                        }));
                         this.setResponseUrl(e.body.attachments[0].upload_url), this.setUploadedFilename(e.body.attachments[0].upload_filename)
                     } catch (i) {
                         let e = null !== (n = null == i ? void 0 : null === (t = i.body) || void 0 === t ? void 0 : t.code) && void 0 !== n ? n : i.status;
-                        e !== v.AbortCodes.ENTITY_TOO_LARGE && (T.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(i.body), " for ").concat(this.id)), g.default.captureException(i)), this.handleError(e);
+                        e !== T.AbortCodes.ENTITY_TOO_LARGE && (I.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(i.body), " for ").concat(this.id)), m.default.captureException(i)), this.handleError(e);
                         return
                     }
                     try {
@@ -51710,44 +51723,47 @@
                         }, {
                             autoTrackExposure: !0
                         });
-                        e = t.enabled && t.chunkSize > 0 ? await this.uploadFileToCloudAsChunks(t.chunkSize) : await this.uploadFileToCloud(), this.trackUploadFinished("COMPLETED"), this.handleComplete(e)
+                        e = t.enabled && t.chunkSize > 0 ? await this.trackTime("uploadTimeMs", async () => await this.uploadFileToCloudAsChunks(t.chunkSize)) : await this.trackTime("uploadTimeMs", async () => await this.uploadFileToCloud()), this.trackUploadFinished("COMPLETED"), this.handleComplete(e)
                     } catch (e) {
-                        "CANCELED" === this.status ? this.handleComplete(e) : (T.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
+                        "CANCELED" === this.status ? this.handleComplete(e) : (I.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
                     }
                 }
                 async reactNativeCompressAndExtractData() {
-                    var e, t;
-                    if (!(0, S.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) {
-                        T.log("reactNativeCompressAndExtractData() disabled by upload target");
+                    var e;
+                    if (!(0, v.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) {
+                        this.uploadAnalytics.compressAndExtractDisabled = !0, I.log("reactNativeCompressAndExtractData() disabled by upload target");
                         return
                     }
                     if (!0 === this.reactNativeFilePrepped) {
-                        T.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
+                        this.uploadAnalytics.fileAlreadyPrepped = !0, I.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
                         return
                     }
-                    T.log("Starting compression/conversion for ".concat(this.id));
-                    let n = await (0, h.getAttachmentFile)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0);
-                    if (null == n || null == n.file) return;
-                    let i = n.uri,
-                        s = n.file.name,
-                        r = n.file.type;
-                    if (this.filename = s, null == s || null == i || null == r) throw T.error("Insufficient file data: ".concat({
-                        filename: s,
-                        uri: i,
-                        mimeType: r
+                    I.log("Starting compression/conversion for ".concat(this.id));
+                    let t = await this.trackTime("compressTimeMs", async () => {
+                        var e;
+                        return await (0, E.getAttachmentFile)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0)
+                    });
+                    if (null == t || null == t.file) return;
+                    let n = t.uri,
+                        i = t.file.name,
+                        s = t.file.type;
+                    if (this.filename = i, null == i || null == n || null == s) throw I.error("Insufficient file data: ".concat({
+                        filename: i,
+                        uri: n,
+                        mimeType: s
                     }, " for ").concat(this.id)), Error("Insufficient file data: ".concat({
-                        filename: s,
-                        uri: i,
-                        mimeType: r
+                        filename: i,
+                        uri: n,
+                        mimeType: s
                     }));
-                    let a = null !== (t = n.fileSize) && void 0 !== t ? t : (await (0, m.getFileData)(i)).size;
-                    if (this.postCompressionSize = a, this.currentSize = a, null == a) throw T.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
-                    T.log("Completed compression and conversion. Output size=".concat(a, " bytes; filename=").concat(s, " for ").concat(this.id));
+                    let r = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, p.getFileData)(n)).size;
+                    if (this.postCompressionSize = r, this.currentSize = r, null == r) throw I.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
+                    I.log("Completed compression and conversion. Output size=".concat(r, " bytes; filename=").concat(i, " for ").concat(this.id));
                     this.item = {
                         ...this.item,
-                        uri: i,
-                        filename: s,
-                        mimeType: r
+                        uri: n,
+                        filename: i,
+                        mimeType: s
                     }, this.reactNativeFilePrepped = !0
                 }
                 handleError(e) {
@@ -51758,17 +51774,17 @@
                     this.removeAllListeners()
                 }
                 handleComplete(e) {
-                    this.setStatus("COMPLETED"), T.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
+                    this.setStatus("COMPLETED"), I.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
                 }
                 cancel() {
-                    T.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), this.trackUploadFinished("CANCELED"), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
+                    I.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), this.trackUploadFinished("CANCELED"), "COMPLETED" === this.status && this.delete(), this.setStatus("CANCELED"), this.emit("complete"), this.removeAllListeners()
                 }
                 resetState() {
-                    return this.status = "NOT_STARTED", this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this.startTime = void 0, this.uploadStats = void 0, this._abortController = new AbortController, super.resetState()
+                    return this.status = "NOT_STARTED", this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this.startTime = void 0, this.uploadAnalytics = new A, this._abortController = new AbortController, super.resetState()
                 }
                 async delete() {
                     if (null == this.uploadedFilename) return;
-                    let e = (0, S.getUploadTarget)(this.item.target).getDeleteUploadURL(this.uploadedFilename);
+                    let e = (0, v.getUploadTarget)(this.item.target).getDeleteUploadURL(this.uploadedFilename);
                     try {
                         await l.default.delete(e)
                     } catch {}
@@ -51787,36 +51803,43 @@
                 }
                 trackUploadStart() {
                     var e;
-                    _.default.track(v.AnalyticEvents.ATTACHMENT_UPLOAD_STARTED, {
+                    h.default.track(T.AnalyticEvents.ATTACHMENT_UPLOAD_STARTED, {
                         file_size: this.currentSize,
                         mime_type: null !== (e = this.mimeType) && void 0 !== e ? e : "unknown",
                         video_upload_quality: f.default.videoUploadQuality,
                         data_saving_mode: f.default.dataSavingMode,
-                        low_quality_image_mode: f.default.lowQualityImageMode
+                        low_quality_image_mode: f.default.lowQualityImageMode,
+                        connection_type: _.default.getType(),
+                        effective_connection_speed: _.default.getEffectiveConnectionSpeed(),
+                        service_provider: _.default.getServiceProvider()
                     })
                 }
                 trackUploadFinished(e) {
-                    var t;
-                    let n = null != this.startTime ? Date.now() - this.startTime.getTime() : -1,
-                        i = null,
-                        s = 1;
-                    null != this.uploadStats && (i = this.uploadStats.numChunks, s = this.uploadStats.totalRequestCount), _.default.track(v.AnalyticEvents.ATTACHMENT_UPLOAD_FINISHED, {
-                        duration_ms: n,
+                    var t, n;
+                    let i = null != this.startTime ? performance.now() - this.startTime : -1;
+                    h.default.track(T.AnalyticEvents.ATTACHMENT_UPLOAD_FINISHED, {
+                        duration_ms: i,
                         file_size: this.currentSize,
                         pre_compression_file_size: this.preCompressionSize,
                         final_state: e,
                         mime_type: null !== (t = this.mimeType) && void 0 !== t ? t : "unknown",
-                        num_chunks: i,
-                        num_upload_attempts: s,
+                        num_chunks: this.uploadAnalytics.numChunks,
+                        num_upload_attempts: null !== (n = this.uploadAnalytics.totalRequestCount) && void 0 !== n ? n : 1,
                         error_code: this.error,
                         video_upload_quality: f.default.videoUploadQuality,
                         data_saving_mode: f.default.dataSavingMode,
-                        low_quality_image_mode: f.default.lowQualityImageMode
+                        low_quality_image_mode: f.default.lowQualityImageMode,
+                        compress_time_ms: this.uploadAnalytics.timing.compressTimeMs,
+                        get_upload_url_time_ms: this.uploadAnalytics.timing.getUploadUrlTimeMs,
+                        upload_time_ms: this.uploadAnalytics.timing.uploadTimeMs,
+                        connection_type: _.default.getType(),
+                        effective_connection_speed: _.default.getEffectiveConnectionSpeed(),
+                        service_provider: _.default.getServiceProvider()
                     })
                 }
                 constructor(e, t, n, i) {
                     var s, r, a, o;
-                    super(e, n), this.RESUME_INCOMPLETE_CODES = [308], this.status = "NOT_STARTED", this.loaded = 0, this.reactNativeFilePrepped = !1, this._aborted = !1, this.channelId = t, this.preCompressionSize = null !== (a = null === (s = e.file) || void 0 === s ? void 0 : s.size) && void 0 !== a ? a : 0, this.currentSize = null !== (o = null === (r = e.file) || void 0 === r ? void 0 : r.size) && void 0 !== o ? o : 0, this.reactNativeFileIndex = i, this._abortController = new AbortController
+                    super(e, n), this.RESUME_INCOMPLETE_CODES = [308], this.status = "NOT_STARTED", this.loaded = 0, this.reactNativeFilePrepped = !1, this.uploadAnalytics = new A, this._aborted = !1, this.channelId = t, this.preCompressionSize = null !== (a = null === (s = e.file) || void 0 === s ? void 0 : s.size) && void 0 !== a ? a : 0, this.currentSize = null !== (o = null === (r = e.file) || void 0 === r ? void 0 : r.size) && void 0 !== o ? o : 0, this.reactNativeFileIndex = i, this._abortController = new AbortController
                 }
             }
         },
@@ -66263,13 +66286,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 MESSAGE_SCAN_TIMEOUT: function() {
-                    return A
-                },
-                MAX_TIMEOUT_FOR_JITTER: function() {
                     return y
                 },
+                MAX_TIMEOUT_FOR_JITTER: function() {
+                    return N
+                },
                 default: function() {
-                    return Q
+                    return K
                 }
             }), n("222007"), n("808653");
             var i = n("345570"),
@@ -66287,93 +66310,95 @@
                 E = n("18494"),
                 g = n("162771"),
                 m = n("299039"),
-                p = n("695681"),
-                S = n("457971"),
-                v = n("447435"),
-                T = n("574933"),
-                I = n("49111"),
-                C = n("397336");
-            let A = 3e3,
-                y = 800,
-                N = {};
+                p = n("660464"),
+                S = n("695681"),
+                v = n("457971"),
+                T = n("447435"),
+                I = n("574933"),
+                C = n("49111"),
+                A = n("397336");
+            let y = 3e3,
+                N = 800,
+                R = {};
 
-            function R(e) {
+            function O(e) {
                 return "".concat(e.channel_id, ":").concat(e.id)
             }
 
-            function O() {
-                Object.values(N).forEach(e => {
+            function D() {
+                Object.values(R).forEach(e => {
                     let {
                         timeout: t
                     } = e;
                     clearTimeout(t)
-                }), N = {}
+                }), R = {}
             }
 
-            function D(e, t) {
-                if (null == e.id || null == e.channel_id) return;
-                let n = R(e);
-                if (null != N[n]) {
+            function P(e, t) {
+                if (null == e.id || null == e.channel_id) return !1;
+                let n = O(e);
+                if (null != R[n]) {
                     let {
                         timeout: i
-                    } = N[n];
-                    return function(e, t) {
-                        let n = R(e),
-                            {
-                                setAt: i
-                            } = N[n];
-                        if (t === v.TimeoutCancelSource.UPDATE) {
-                            var s, r;
-                            let t = null !== (s = e.attachments) && void 0 !== s ? s : [],
-                                n = null !== (r = e.embeds) && void 0 !== r ? r : [],
-                                i = t.filter(e => (0, v.isMediaObscured)({
-                                    type: v.ObscuredMediaTypes.Attachment,
-                                    media: e
-                                }, !0)),
-                                a = n.filter(e => (0, v.isMediaObscured)({
-                                    type: v.ObscuredMediaTypes.Embed,
-                                    media: e
-                                }, !0));
-                            (0, v.trackExplicitMediaScanComplete)({
-                                messageId: e.id,
-                                channelId: e.channel_id,
-                                numOfAttachments: t.length,
-                                numOfEmbeds: n.length,
-                                numOfExplicitAttachments: i.length,
-                                numOfExplicitEmbeds: a.length
-                            })
-                        }(0, v.trackScanTiming)(i, t)
-                    }(e, t), clearTimeout(i), delete N[n], !0
+                    } = R[n];
+                    return clearTimeout(i),
+                        function(e, t) {
+                            let n = O(e),
+                                {
+                                    setAt: i
+                                } = R[n];
+                            if (t === T.TimeoutCancelSource.UPDATE) {
+                                var s, r;
+                                let t = null !== (s = e.attachments) && void 0 !== s ? s : [],
+                                    n = null !== (r = e.embeds) && void 0 !== r ? r : [],
+                                    i = t.filter(e => (0, T.isMediaObscured)({
+                                        type: T.ObscuredMediaTypes.Attachment,
+                                        media: e
+                                    }, !0)),
+                                    a = n.filter(e => (0, T.isMediaObscured)({
+                                        type: T.ObscuredMediaTypes.Embed,
+                                        media: e
+                                    }, !0));
+                                (0, T.trackExplicitMediaScanComplete)({
+                                    messageId: e.id,
+                                    channelId: e.channel_id,
+                                    numOfAttachments: t.length,
+                                    numOfEmbeds: n.length,
+                                    numOfExplicitAttachments: i.length,
+                                    numOfExplicitEmbeds: a.length
+                                })
+                            }(0, T.trackScanTiming)(i, t)
+                        }(e, t), delete R[n], !0
                 }
                 return !1
             }
-            let P = (e, t) => {
+            let L = (e, t) => {
                 if (0 !== e.length) {
                     if (t) {
-                        (0, p.sendMultiChannelMessagesForScanning)(e);
+                        (0, S.sendMultiChannelMessagesForScanning)(e);
                         return
-                    }(0, p.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
+                    }(0, S.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
                 }
             };
 
-            function L(e, t) {
+            function M(e, t) {
                 let {
                     forceBatchScan: n = !1,
                     jitter: i = !1
-                } = null != t ? t : {};
-                e.forEach(e => {
-                    let t = R(e);
-                    null == N[t] && (N[t] = {
+                } = null != t ? t : {}, s = (null == t ? void 0 : t.isMessageUpdate) ? e.filter(p.hasUnscannedAttachmentsOrEmbedsForTimeout) : e;
+                s.forEach(e => {
+                    let t = O(e);
+                    null == R[t] && (R[t] = {
                         setAt: Date.now(),
                         timeout: setTimeout(() => {
                             ! function(e) {
-                                if (D(e, v.TimeoutCancelSource.TIMEOUT)) {
+                                if (P(e, T.TimeoutCancelSource.TIMEOUT)) {
                                     let t = h.default.getMessage(e.channel_id, e.id),
                                         {
                                             attachmentIds: n,
                                             embedIds: i
-                                        } = V(t);
-                                    (0, v.trackScanningTimedOut)({
+                                        } = (0, p.getUnscannedAttachmentsAndEmbedIdsForTimeout)(t);
+                                    (0, T.trackScanningTimedOut)({
                                         channelId: e.channel_id,
                                         messageId: e.id,
                                         attachmentIds: n,
@@ -66385,31 +66410,17 @@
                                     })
                                 }
                             }(e)
-                        }, A)
+                        }, y)
                     })
                 });
-                let s = n || new Set(e.map(e => e.channel_id)).size > 1;
+                let r = n || new Set(s.map(e => e.channel_id)).size > 1;
                 i ? setTimeout(() => {
-                    let t = e.filter(e => null != N[R(e)]);
-                    P(t, s)
-                }, Math.random() * y) : P(e, s)
-            }
-            let M = e => null == e.content_scan_version || e.content_scan_version < 1,
-                b = e => {
-                    var t, n, i, s, r, a, o, l;
-                    let u = null != (l = e).content_scan_version ? l.content_scan_version : null != l.contentScanVersion ? l.contentScanVersion : null;
-                    return !((null === (t = e.video) || void 0 === t ? void 0 : t.width) === 0 && (null === (n = e.video) || void 0 === n ? void 0 : n.height) === 0 || (null === (i = e.thumbnail) || void 0 === i ? void 0 : i.width) === 0 && (null === (s = e.thumbnail) || void 0 === s ? void 0 : s.height) === 0 || (null === (r = e.image) || void 0 === r ? void 0 : r.width) === 0 && (null === (a = e.image) || void 0 === a ? void 0 : a.height) === 0 || "images" in e && (null === (o = e.images) || void 0 === o ? void 0 : o.some(e => 0 === e.width && 0 === e.height))) && (null == u || u < 1)
-                };
-
-            function U(e) {
-                let {
-                    attachmentIds: t,
-                    embedIds: n
-                } = V(e);
-                return t.length > 0 || n.length > 0
+                    let e = s.filter(e => null != R[O(e)]);
+                    L(e, r)
+                }, Math.random() * N) : L(s, r)
             }
 
-            function w(e) {
+            function b(e) {
                 let t = e.reduce((e, t) => {
                     var n, i, s, r, a, o, l, u;
                     null == e[t.channel_id] && (e[t.channel_id] = {
@@ -66419,7 +66430,7 @@
                         numOfEmbedsPendingScan: 0
                     });
                     let d = e[t.channel_id];
-                    return d.numOfAttachments += null !== (a = null === (n = t.attachments) || void 0 === n ? void 0 : n.length) && void 0 !== a ? a : 0, d.numOfEmbeds += null !== (o = null === (i = t.embeds) || void 0 === i ? void 0 : i.length) && void 0 !== o ? o : 0, d.numOfAttachmentsPendingScan += null !== (l = null === (s = t.attachments) || void 0 === s ? void 0 : s.filter(M).length) && void 0 !== l ? l : 0, d.numOfEmbedsPendingScan += null !== (u = null == t ? void 0 : null === (r = t.embeds) || void 0 === r ? void 0 : r.filter(b).length) && void 0 !== u ? u : 0, {
+                    return d.numOfAttachments += null !== (a = null === (n = t.attachments) || void 0 === n ? void 0 : n.length) && void 0 !== a ? a : 0, d.numOfEmbeds += null !== (o = null === (i = t.embeds) || void 0 === i ? void 0 : i.length) && void 0 !== o ? o : 0, d.numOfAttachmentsPendingScan += null !== (l = null === (s = t.attachments) || void 0 === s ? void 0 : s.filter(p.shouldScanAttachment).length) && void 0 !== l ? l : 0, d.numOfEmbedsPendingScan += null !== (u = null == t ? void 0 : null === (r = t.embeds) || void 0 === r ? void 0 : r.filter(p.shouldScanEmbed).length) && void 0 !== u ? u : 0, {
                         ...e,
                         [t.channel_id]: d
                     }
@@ -66427,76 +66438,58 @@
                 return t
             }
 
-            function k(e) {
-                return null != e && (null != e.attachments && e.attachments.length > 0 || null != e.embeds && e.embeds.length > 0)
-            }
-
-            function V(e) {
-                var t, n, i, s, r, a, o, l;
-                let u = null !== (r = null == e ? void 0 : null === (t = e.attachments) || void 0 === t ? void 0 : t.length) && void 0 !== r ? r : 0,
-                    d = null !== (a = null == e ? void 0 : null === (n = e.embeds) || void 0 === n ? void 0 : n.length) && void 0 !== a ? a : 0;
-                if (0 === u && 0 === d) return {
-                    attachmentIds: [],
-                    embedIds: []
-                };
-                let c = null !== (o = null == e ? void 0 : null === (i = e.attachments) || void 0 === i ? void 0 : i.filter(M)) && void 0 !== o ? o : [],
-                    f = null !== (l = null == e ? void 0 : null === (s = e.embeds) || void 0 === s ? void 0 : s.filter(b)) && void 0 !== l ? l : [];
-                return {
-                    attachmentIds: c.map(e => e.id).filter(Boolean),
-                    embedIds: f.map((e, t) => "embed_".concat(t)).filter(Boolean)
-                }
-            }
-
-            function G(e, t) {
+            function U(e, t) {
                 let {
                     messagesPendingScan: n,
                     attributesByChannelId: i
                 } = function(e) {
-                    let t = e.filter(e => k(e) && (0, v.shouldRedactExplicitContent)(e)),
+                    let t = e.filter(e => (0, p.hasAttachmentsOrEmbeds)(e) && (0, T.shouldRedactExplicitContent)(e)),
                         n = e.map(e => {
-                            if (null != e && "referenced_message" in e && null != e.referenced_message && k(e.referenced_message) && (0, v.shouldRedactExplicitContent)(e.referenced_message)) return e.referenced_message
+                            if (null != e && "referenced_message" in e && null != e.referenced_message && (0, p.hasAttachmentsOrEmbeds)(e.referenced_message) && (0, T.shouldRedactExplicitContent)(e.referenced_message)) return e.referenced_message
                         }).filter(function(e) {
                             return null != e
                         });
                     n.length > 0 && (t = [...t, ...n]);
                     let i = a(t, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
-                        s = i.filter(e => U(e));
+                        s = i.filter(e => (0, p.hasAttachmentsOrEmbedsRequiringScan)(e));
                     return {
                         messagesPendingScan: s,
-                        attributesByChannelId: w(i)
+                        attributesByChannelId: b(i)
                     }
                 }(e);
                 return m.default.entries(i).forEach(e => {
                     let [t, n] = e;
-                    (0, v.trackExplicitMediaRedactableMessagedLoaded)({
+                    (0, T.trackExplicitMediaRedactableMessagedLoaded)({
                         channelId: t,
                         numOfAttachments: n.numOfAttachments,
                         numOfAttachmentsPendingScan: n.numOfAttachmentsPendingScan,
                         numOfEmbeds: n.numOfEmbeds,
                         numOfEmbedsPendingScan: n.numOfEmbedsPendingScan
                     })
-                }), !!(n.length > 0) && (L(n, t), !0)
+                }), !!(n.length > 0) && (M(n, t), !0)
             }
 
-            function F(e) {
-                var t, n, i, s;
+            function w(e) {
+                var t, n, i, s, r, a;
                 let {
-                    message: r
+                    message: o
                 } = e;
-                if (!(0, S.isEligibleForExplicitMediaRedaction)() || null == r.channel_id || null == r.id || (null === (t = r.author) || void 0 === t ? void 0 : t.id) === c.default.getId() || null == r.embeds && null == r.attachments) return !1;
-                if (!U(r)) {
-                    let e = null !== (s = null !== (i = h.default.getMessage(r.channel_id, r.id)) && void 0 !== i ? i : T.default.getMessage(r.id, r.channel_id)) && void 0 !== s ? s : null === (n = d.default.getMessage(r.channel_id, r.id)) || void 0 === n ? void 0 : n.message;
-                    null != e && !U((0, u.updateMessageRecord)(e, r)) && D(e, v.TimeoutCancelSource.UPDATE)
+                if (!(0, v.isEligibleForExplicitMediaRedaction)() || null == o.channel_id || null == o.id || (null === (t = o.author) || void 0 === t ? void 0 : t.id) === c.default.getId() || null == o.embeds && null == o.attachments || (null === (n = o.embeds) || void 0 === n ? void 0 : n.length) === 0 && (null === (i = o.attachments) || void 0 === i ? void 0 : i.length) === 0) return !1;
+                if (!(0, p.hasUnscannedAttachmentsOrEmbedsForTimeout)(o)) {
+                    let e = null !== (a = null !== (r = h.default.getMessage(o.channel_id, o.id)) && void 0 !== r ? r : I.default.getMessage(o.id, o.channel_id)) && void 0 !== a ? a : null === (s = d.default.getMessage(o.channel_id, o.id)) || void 0 === s ? void 0 : s.message;
+                    null != e && !(0, p.hasUnscannedAttachmentsOrEmbedsForTimeout)((0, u.updateMessageRecord)(e, o)) && P(e, T.TimeoutCancelSource.UPDATE)
                 }
-                let a = E.default.getChannelId(),
-                    o = f.default.getCurrentSidebarChannelId(a),
-                    l = r.channel_id === a || r.channel_id === o;
-                if (!l) return !1;
-                let _ = h.default.getMessage(r.channel_id, r.id);
-                return null != _ && G([_])
+                let l = E.default.getChannelId(),
+                    _ = f.default.getCurrentSidebarChannelId(l),
+                    g = o.channel_id === l || o.channel_id === _;
+                if (!g) return !1;
+                let m = h.default.getMessage(o.channel_id, o.id);
+                return null != m && U([m], {
+                    isMessageUpdate: !0
+                })
             }
 
-            function x(e) {
+            function k(e) {
                 var t, n;
                 let {
                     channelId: i,
@@ -66504,7 +66497,7 @@
                     optimistic: r,
                     isPushNotification: a
                 } = e;
-                if (!(0, S.isEligibleForExplicitMediaRedaction)() || r || a || null == i || (null === (t = s.author) || void 0 === t ? void 0 : t.id) === c.default.getId()) return !1;
+                if (!(0, v.isEligibleForExplicitMediaRedaction)() || r || a || null == i || (null === (t = s.author) || void 0 === t ? void 0 : t.id) === c.default.getId()) return !1;
                 let o = E.default.getChannelId(),
                     l = f.default.getCurrentSidebarChannelId(o),
                     u = i === o || i === l,
@@ -66512,140 +66505,237 @@
                 if (!u) return !1;
                 let h = null === (n = null == d ? void 0 : d.isPrivate()) || void 0 === n || n,
                     g = (null == d ? void 0 : d.memberCount) == null || (null == d ? void 0 : d.memberCount) > 100;
-                return G([s], {
+                return U([s], {
                     jitter: h && g
+                })
+            }
+
+            function V(e) {
+                let {
+                    channelId: t,
+                    messages: n
+                } = e;
+                if (!(0, v.isEligibleForExplicitMediaRedaction)() || null == t || null == n) return !1;
+                let i = E.default.getChannelId(),
+                    s = f.default.getCurrentSidebarChannelId(i),
+                    r = t === i || t === s;
+                return !!r && U(n)
+            }
+
+            function G(e) {
+                let {
+                    messages: t
+                } = e;
+                if (!(0, v.isEligibleForExplicitMediaRedaction)() || null == t) return !1;
+                let n = s(t),
+                    i = a(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id);
+                return U(i)
+            }
+
+            function F(e) {
+                let {
+                    guildId: t,
+                    threads: n
+                } = e;
+                if (null == n || !(0, v.isEligibleForExplicitMediaRedaction)()) return !1;
+                let i = g.default.getGuildId() === t;
+                if (!i) return !1;
+                let s = m.default.keys(n).map(e => n[e].first_message);
+                return U(s)
+            }
+
+            function x(e) {
+                let {
+                    guildId: t,
+                    firstMessages: n
+                } = e;
+                if (null == n || !(0, v.isEligibleForExplicitMediaRedaction)()) return !1;
+                let i = g.default.getGuildId() === t;
+                return !!i && U(n, {
+                    forceBatchScan: !0
                 })
             }
 
             function B(e) {
                 let {
-                    channelId: t,
-                    messages: n
+                    channelId: t
                 } = e;
-                if (!(0, S.isEligibleForExplicitMediaRedaction)() || null == t || null == n) return !1;
-                let i = E.default.getChannelId(),
-                    s = f.default.getCurrentSidebarChannelId(i),
-                    r = t === i || t === s;
-                return !!r && G(n)
+                if (null == t || !(0, v.isEligibleForExplicitMediaRedaction)()) return !1;
+                let n = t === E.default.getChannelId();
+                return !!n && j(t)
             }
 
             function H(e) {
                 let {
-                    messages: t
+                    settings: t,
+                    local: n
                 } = e;
-                if (!(0, S.isEligibleForExplicitMediaRedaction)() || null == t) return !1;
-                let n = s(t),
-                    i = a(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id);
-                return G(i)
+                if (!(0, v.isEligibleForExplicitMediaRedaction)() || !n || t.type !== A.UserSettingsTypes.PRELOADED_USER_SETTINGS) return !1;
+                let i = E.default.getChannelId();
+                return null != i && j(i)
             }
 
             function Y(e) {
                 let {
-                    guildId: t,
-                    threads: n
-                } = e;
-                if (null == n || !(0, S.isEligibleForExplicitMediaRedaction)()) return !1;
-                let i = g.default.getGuildId() === t;
-                if (!i) return !1;
-                let s = m.default.keys(n).map(e => n[e].first_message);
-                return G(s)
-            }
-
-            function j(e) {
-                let {
-                    guildId: t,
-                    firstMessages: n
-                } = e;
-                if (null == n || !(0, S.isEligibleForExplicitMediaRedaction)()) return !1;
-                let i = g.default.getGuildId() === t;
-                return !!i && G(n, {
-                    forceBatchScan: !0
-                })
-            }
-
-            function W(e) {
-                let {
-                    channelId: t
-                } = e;
-                if (null == t || !(0, S.isEligibleForExplicitMediaRedaction)()) return !1;
-                let n = t === E.default.getChannelId();
-                return !!n && q(t)
-            }
-
-            function K(e) {
-                let {
-                    settings: t,
-                    local: n
-                } = e;
-                if (!(0, S.isEligibleForExplicitMediaRedaction)() || !n || t.type !== C.UserSettingsTypes.PRELOADED_USER_SETTINGS) return !1;
-                let i = E.default.getChannelId();
-                return null != i && q(i)
-            }
-
-            function z(e) {
-                let {
                     channelId: t,
                     chatOpen: n
                 } = e;
-                return !!(0, S.isEligibleForExplicitMediaRedaction)() && !!n && q(t)
+                return !!(0, v.isEligibleForExplicitMediaRedaction)() && !!n && j(t)
             }
 
-            function q(e) {
+            function j(e) {
                 let t = h.default.getMessages(e);
                 return 0 !== t.length && function(e) {
                     let {
                         messagesPendingScan: t,
                         attributesByChannelId: n
                     } = function(e) {
-                        let t = e.filter(e => k(e) && (0, v.shouldRedactExplicitContent)(e)),
+                        let t = e.filter(e => (0, p.hasAttachmentsOrEmbeds)(e) && (0, T.shouldRedactExplicitContent)(e)),
                             n = e.map(e => {
-                                if (I.MessageTypesWithLazyLoadedReferences.has(e.type) && null != e.messageReference) {
+                                if (C.MessageTypesWithLazyLoadedReferences.has(e.type) && null != e.messageReference) {
                                     let t = d.default.getMessageByReference(e.messageReference);
-                                    if (t.state === d.ReferencedMessageState.LOADED && null != t.message && k(t.message) && (0, v.shouldRedactExplicitContent)(t.message)) return t.message
+                                    if (t.state === d.ReferencedMessageState.LOADED && null != t.message && (0, p.hasAttachmentsOrEmbeds)(t.message) && (0, T.shouldRedactExplicitContent)(t.message)) return t.message
                                 }
                             }).filter(function(e) {
                                 return null != e
                             });
                         n.length > 0 && (t = [...t, ...n]);
                         let i = a(t, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
-                            s = i.filter(e => U(e));
+                            s = i.filter(e => (0, p.hasAttachmentsOrEmbedsRequiringScan)(e));
                         return {
                             messagesPendingScan: s,
-                            attributesByChannelId: w(i)
+                            attributesByChannelId: b(i)
                         }
                     }(e);
                     return m.default.entries(n).forEach(e => {
                         let [t, n] = e;
-                        (0, v.trackExplicitMediaRedactableMessagedLoaded)({
+                        (0, T.trackExplicitMediaRedactableMessagedLoaded)({
                             channelId: t,
                             numOfAttachments: n.numOfAttachments,
                             numOfAttachmentsPendingScan: n.numOfAttachmentsPendingScan,
                             numOfEmbeds: n.numOfEmbeds,
                             numOfEmbedsPendingScan: n.numOfEmbedsPendingScan
                         })
-                    }), !!(t.length > 0) && (L(t), !0)
+                    }), !!(t.length > 0) && (M(t), !0)
                 }(t)
             }
-            class X extends l.default {
+            class W extends l.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        LOAD_MESSAGES_SUCCESS: B,
-                        LOAD_FORUM_POSTS: Y,
-                        LOAD_THREADS_SUCCESS: j,
-                        LOAD_ARCHIVED_THREADS_SUCCESS: j,
-                        MESSAGE_CREATE: x,
-                        MESSAGE_UPDATE: F,
-                        LOGOUT: O,
-                        SEARCH_FINISH: H,
-                        MOD_VIEW_SEARCH_FINISH: H,
-                        CHANNEL_SELECT: W,
-                        LOAD_PINNED_MESSAGES_SUCCESS: H,
-                        USER_SETTINGS_PROTO_UPDATE: K,
-                        CHANNEL_RTC_UPDATE_CHAT_OPEN: z
+                        LOAD_MESSAGES_SUCCESS: V,
+                        LOAD_FORUM_POSTS: F,
+                        LOAD_THREADS_SUCCESS: x,
+                        LOAD_ARCHIVED_THREADS_SUCCESS: x,
+                        MESSAGE_CREATE: k,
+                        MESSAGE_UPDATE: w,
+                        LOGOUT: D,
+                        SEARCH_FINISH: G,
+                        MOD_VIEW_SEARCH_FINISH: G,
+                        CHANNEL_SELECT: B,
+                        LOAD_PINNED_MESSAGES_SUCCESS: G,
+                        USER_SETTINGS_PROTO_UPDATE: H,
+                        CHANNEL_RTC_UPDATE_CHAT_OPEN: Y
                     }
                 }
             }
-            var Q = new X
+            var K = new W
+        },
+        660464: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                hasAttachmentsOrEmbeds: function() {
+                    return i
+                },
+                shouldScanAttachment: function() {
+                    return r
+                },
+                shouldScanEmbed: function() {
+                    return a
+                },
+                hasAttachmentsOrEmbedsRequiringScan: function() {
+                    return o
+                },
+                getUnscannedAttachmentsAndEmbedIdsForTimeout: function() {
+                    return d
+                },
+                hasUnscannedAttachmentsOrEmbedsForTimeout: function() {
+                    return c
+                }
+            });
+
+            function i(e) {
+                return null != e && (null != e.attachments && e.attachments.length > 0 || null != e.embeds && e.embeds.length > 0)
+            }
+
+            function s(e) {
+                return null != e.content_scan_version ? e.content_scan_version : null != e.contentScanVersion ? e.contentScanVersion : null
+            }
+
+            function r(e) {
+                return null == e.content_scan_version || e.content_scan_version < 1
+            }
+
+            function a(e) {
+                var t, n, i, r, a, o, l;
+                let u = s(e);
+                return !((null === (t = e.video) || void 0 === t ? void 0 : t.width) === 0 && (null === (n = e.video) || void 0 === n ? void 0 : n.height) === 0 || (null === (i = e.thumbnail) || void 0 === i ? void 0 : i.width) === 0 && (null === (r = e.thumbnail) || void 0 === r ? void 0 : r.height) === 0 || (null === (a = e.image) || void 0 === a ? void 0 : a.width) === 0 && (null === (o = e.image) || void 0 === o ? void 0 : o.height) === 0 || "images" in e && (null === (l = e.images) || void 0 === l ? void 0 : l.some(e => 0 === e.width && 0 === e.height))) && (null == u || u < 1)
+            }
+
+            function o(e) {
+                let {
+                    attachmentIds: t,
+                    embedIds: n
+                } = function(e) {
+                    var t, n, i, s, o, l, u, d;
+                    let c = null !== (o = null == e ? void 0 : null === (t = e.attachments) || void 0 === t ? void 0 : t.length) && void 0 !== o ? o : 0,
+                        f = null !== (l = null == e ? void 0 : null === (n = e.embeds) || void 0 === n ? void 0 : n.length) && void 0 !== l ? l : 0;
+                    if (0 === c && 0 === f) return {
+                        attachmentIds: [],
+                        embedIds: []
+                    };
+                    let _ = null !== (u = null == e ? void 0 : null === (i = e.attachments) || void 0 === i ? void 0 : i.filter(r)) && void 0 !== u ? u : [],
+                        h = null !== (d = null == e ? void 0 : null === (s = e.embeds) || void 0 === s ? void 0 : s.filter(a)) && void 0 !== d ? d : [];
+                    return {
+                        attachmentIds: _.map(e => e.id).filter(Boolean),
+                        embedIds: h.map((e, t) => "embed_".concat(t)).filter(Boolean)
+                    }
+                }(e);
+                return t.length > 0 || n.length > 0
+            }
+
+            function l(e) {
+                return null == e.content_scan_version
+            }
+
+            function u(e) {
+                var t, n, i, r, a, o, l;
+                let u = s(e);
+                return !((null === (t = e.video) || void 0 === t ? void 0 : t.width) === 0 && (null === (n = e.video) || void 0 === n ? void 0 : n.height) === 0 || (null === (i = e.thumbnail) || void 0 === i ? void 0 : i.width) === 0 && (null === (r = e.thumbnail) || void 0 === r ? void 0 : r.height) === 0 || (null === (a = e.image) || void 0 === a ? void 0 : a.width) === 0 && (null === (o = e.image) || void 0 === o ? void 0 : o.height) === 0 || "images" in e && (null === (l = e.images) || void 0 === l ? void 0 : l.some(e => 0 === e.width && 0 === e.height))) && null == u
+            }
+
+            function d(e) {
+                var t, n, i, s, r, a, o, d;
+                let c = null !== (r = null == e ? void 0 : null === (t = e.attachments) || void 0 === t ? void 0 : t.length) && void 0 !== r ? r : 0,
+                    f = null !== (a = null == e ? void 0 : null === (n = e.embeds) || void 0 === n ? void 0 : n.length) && void 0 !== a ? a : 0;
+                if (0 === c && 0 === f) return {
+                    attachmentIds: [],
+                    embedIds: []
+                };
+                let _ = null !== (o = null == e ? void 0 : null === (i = e.attachments) || void 0 === i ? void 0 : i.filter(l)) && void 0 !== o ? o : [],
+                    h = null !== (d = null == e ? void 0 : null === (s = e.embeds) || void 0 === s ? void 0 : s.filter(u)) && void 0 !== d ? d : [];
+                return {
+                    attachmentIds: _.map(e => e.id).filter(Boolean),
+                    embedIds: h.map((e, t) => "embed_".concat(t)).filter(Boolean)
+                }
+            }
+
+            function c(e) {
+                let {
+                    attachmentIds: t,
+                    embedIds: n
+                } = d(e);
+                return t.length > 0 || n.length > 0
+            }
         },
         695681: function(e, t, n) {
             "use strict";
@@ -67084,29 +67174,31 @@
                 let n = Date.now() - e;
                 h.default.increment({
                     name: c.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING,
-                    tags: ["timingBucket:".concat(Math.min(Math.floor(n / 1e3), 3)), "source:".concat(t)]
+                    tags: ["timingBucket:".concat(Math.min(Math.floor(n / 1e3), 3)), "source:".concat(t), "metricVersion:".concat(1)]
                 })
             }
 
             function K(e) {
+                var t, n;
                 let {
-                    channelId: t,
-                    messageId: n,
-                    attachmentIds: i,
-                    embedIds: s
+                    channelId: i,
+                    messageId: s,
+                    attachmentIds: r,
+                    embedIds: a
                 } = e;
-                if (null == t || null == n) return;
-                let r = m.default.getChannel(t);
+                if (null == i || null == s || (null !== (t = null == r ? void 0 : r.length) && void 0 !== t ? t : 0) === 0 && (null !== (n = null == a ? void 0 : a.length) && void 0 !== n ? n : 0) === 0) return;
+                let o = m.default.getChannel(i);
                 v.default.track(N.AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
-                    channel_id: t,
-                    guild_id: null == r ? void 0 : r.guild_id,
-                    message_id: n,
-                    embed_ids: s,
+                    channel_id: i,
+                    guild_id: null == o ? void 0 : o.guild_id,
+                    message_id: s,
+                    embed_ids: a,
                     user_is_underage: (0, E.isCurrentUserTeen)(),
                     scan_timeout_duration: I.MESSAGE_SCAN_TIMEOUT,
-                    attachment_ids_v2: i
+                    attachment_ids_v2: r
                 }), h.default.increment({
-                    name: c.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT
+                    name: c.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT,
+                    tags: ["metricVersion:".concat(1)]
                 })
             }
 
@@ -87627,18 +87719,19 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return _
                 }
             }), n("222007"), n("424973");
             var i, s, r = n("615361"),
                 a = n("872717"),
                 o = n("773336"),
-                l = n("82087"),
-                u = n("827032"),
-                d = n("49111");
-            let c = new Set(["darwin", "linux", "win32", "ios", "android"]);
+                l = n("968027"),
+                u = n("82087"),
+                d = n("827032"),
+                c = n("49111");
+            let f = new Set(["darwin", "linux", "win32", "ios", "android"]);
             (s = i || (i = {})).COUNT = "count", s.DISTRIBUTION = "distribution";
-            var f = new class e {
+            var _ = new class e {
                 _getMetricWithDefaults(e, t) {
                     let {
                         name: n,
@@ -87646,7 +87739,7 @@
                     } = e, s = {
                         name: n,
                         type: t,
-                        tags: (0, u.getGlobalTagsArray)()
+                        tags: (0, d.getGlobalTagsArray)()
                     };
                     null != i && i.forEach(e => {
                         s.tags.push(e)
@@ -87655,15 +87748,15 @@
                         if ((0, o.isWeb)()) return "web";
                         {
                             let e = (0, o.getPlatformName)();
-                            return c.has(e) ? e : null
+                            return f.has(e) ? e : null
                         }
                     }();
                     null != a && s.tags.push("platform:".concat(a));
-                    let l = function() {
-                        let e = window.GLOBAL_ENV.RELEASE_CHANNEL;
+                    let u = function() {
+                        let e = l.CurrentReleaseChannel;
                         return null != e && r.ReleaseChannelsSets.ALL.has(e) ? e : null
                     }();
-                    return null != l && s.tags.push("release_channel:".concat(l)), s
+                    return null != u && s.tags.push("release_channel:".concat(u)), s
                 }
                 increment(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -87682,12 +87775,12 @@
                     if (this._metrics.length > 0) {
                         let e = [...this._metrics];
                         a.default.post({
-                            url: (0, l.isMetricsEndpointV2Enabled)("monitoring-agent") ? d.Endpoints.METRICS_V2 : d.Endpoints.METRICS,
+                            url: (0, u.isMetricsEndpointV2Enabled)("monitoring-agent") ? c.Endpoints.METRICS_V2 : c.Endpoints.METRICS,
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710441936826",
-                                    build_number: "275208"
+                                    built_at: "1710517266265",
+                                    build_number: "275565"
                                 }
                             },
                             retries: 1
@@ -91646,15 +91739,15 @@
             }
 
             function I(e) {
-                let t = m.ChannelTypesSets.POLLS.has(e.type),
+                let t = m.ChannelTypesSets.POLLS.has(null == e ? void 0 : e.type),
                     {
                         enabled: n
                     } = E.CreateGuildPollsExperiment.useExperiment({
-                        guildId: e.guild_id,
+                        guildId: null == e ? void 0 : e.guild_id,
                         location: "useCanPostPollsInChannel"
                     }, {
                         autoTrackExposure: !0,
-                        disable: !t || e.isPrivate() || !c.default.can(m.Permissions.SEND_MESSAGES, e)
+                        disable: !t || (null == e ? void 0 : e.isPrivate()) || !c.default.can(m.Permissions.SEND_MESSAGES, e)
                     }),
                     {
                         enabled: i
@@ -91662,7 +91755,7 @@
                         location: "useCanPostPollsInChannel"
                     }, {
                         autoTrackExposure: !0,
-                        disable: !t || !e.isPrivate()
+                        disable: !t || !(null == e ? void 0 : e.isPrivate())
                     });
                 return n || i
             }
@@ -125095,7 +125188,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "91d45873bc7bd573879973cd130bc221e7511d2d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "ede2af38790d4d06db86eca0df1233338e14842e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -125578,7 +125671,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return _
                 }
             }), n("222007");
             var i = n("627445"),
@@ -125586,10 +125679,11 @@
                 r = n("446674"),
                 a = n("913144"),
                 o = n("816454");
-            let l = new Map;
+            let l = null,
+                u = new Map;
 
-            function u(e) {
-                let t = l.get(e);
+            function d(e) {
+                let t = u.get(e);
                 return null == t ? (console.warn("Window state not initialized", e), {
                     isElementFullscreen: !1,
                     focused: !1,
@@ -125600,34 +125694,37 @@
                     visible: !1
                 }) : t
             }
-            class d extends r.default.Store {
+            class c extends r.default.Store {
                 isFocused() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.getMainWindowId)();
-                    return u(e).focused
+                    return d(e).focused
                 }
                 isVisible() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.getMainWindowId)();
-                    return u(e).visible
+                    return d(e).visible
                 }
                 getFocusedWindowId() {
                     let e = null;
-                    return l.forEach((t, n) => {
+                    return u.forEach((t, n) => {
                         t.focused && (e = n)
                     }), e
                 }
+                getLastFocusedWindowId() {
+                    return l
+                }
                 isElementFullScreen() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.getMainWindowId)();
-                    return u(e).isElementFullscreen
+                    return d(e).isElementFullscreen
                 }
                 windowSize() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.getMainWindowId)();
-                    return u(e).windowSize
+                    return d(e).windowSize
                 }
             }
-            d.displayName = "WindowStore";
-            let c = new d(a.default, {
+            c.displayName = "WindowStore";
+            let f = new c(a.default, {
                 WINDOW_INIT: function(e) {
-                    s(!l.has(e.windowId), "Window initialized multiple times");
+                    s(!u.has(e.windowId), "Window initialized multiple times");
                     let {
                         width: t,
                         height: n,
@@ -125635,7 +125732,7 @@
                         focused: r,
                         visible: a
                     } = e;
-                    return l.set(e.windowId, {
+                    return u.set(e.windowId, {
                         windowSize: {
                             width: t,
                             height: n
@@ -125643,25 +125740,25 @@
                         isElementFullscreen: i,
                         focused: r,
                         visible: a
-                    }), !0
+                    }), r && (l = e.windowId), !0
                 },
                 WINDOW_FULLSCREEN_CHANGE: function(e) {
-                    let t = u(e.windowId);
-                    return t.isElementFullscreen !== e.isElementFullscreen && (l.set(e.windowId, {
+                    let t = d(e.windowId);
+                    return t.isElementFullscreen !== e.isElementFullscreen && (u.set(e.windowId, {
                         ...t,
                         isElementFullscreen: e.isElementFullscreen
                     }), !0)
                 },
                 WINDOW_FOCUS: function(e) {
-                    let t = u(e.windowId);
-                    return t.focused !== e.focused && (l.set(e.windowId, {
+                    let t = d(e.windowId);
+                    return t.focused !== e.focused && (e.focused && (l = e.windowId), u.set(e.windowId, {
                         ...t,
                         focused: e.focused
                     }), !0)
                 },
                 WINDOW_RESIZED: function(e) {
-                    let t = u(e.windowId);
-                    return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (l.set(e.windowId, {
+                    let t = d(e.windowId);
+                    return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (u.set(e.windowId, {
                         ...t,
                         windowSize: {
                             width: e.width,
@@ -125670,11 +125767,11 @@
                     }), !0)
                 },
                 WINDOW_UNLOAD: function(e) {
-                    return l.delete(e.windowId), !0
+                    return u.delete(e.windowId), l === e.windowId && (l = null), !0
                 },
                 WINDOW_VISIBILITY_CHANGE: function(e) {
-                    let t = u(e.windowId);
-                    return t.visible !== e.visible && (l.set(e.windowId, {
+                    let t = d(e.windowId);
+                    return t.visible !== e.visible && (u.set(e.windowId, {
                         ...t,
                         visible: e.visible
                     }), !0)
@@ -125685,10 +125782,10 @@
                     addExtraAnalyticsDecorator: t
                 } = e;
                 t(e => {
-                    e.client_app_state = c.isFocused() ? "focused" : "unfocused"
+                    e.client_app_state = f.isFocused() ? "focused" : "unfocused"
                 })
             });
-            var f = c
+            var _ = f
         },
         892974: function(e, t, n) {
             "use strict";
@@ -134434,7 +134531,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275208"
+                                build_number: "275565"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -137363,6 +137460,15 @@
                     return i
                 }
             })
+        },
+        968027: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                CurrentReleaseChannel: function() {
+                    return i
+                }
+            }), window.GLOBAL_ENV.RELEASE_CHANNEL;
+            let i = window.GLOBAL_ENV.RELEASE_CHANNEL
         },
         828777: function(e, t, n) {
             "use strict";
@@ -144274,6 +144380,9 @@
                 getNumFastUdpReconnects() {
                     return null != this.conn.fastUdpReconnect ? this.numFastUdpReconnects : null
                 }
+                wasRemoteDisconnected() {
+                    this.conn.wasRemoteDisconnected()
+                }
                 setLocalVideoDisabled(e, t) {
                     this.disabledLocalVideos[e] = t, this.emit(m.BaseConnectionEvent.LocalVideoDisabled, e, t)
                 }
@@ -146882,6 +146991,7 @@
                 getNumFastUdpReconnects() {
                     return null
                 }
+                wasRemoteDisconnected() {}
                 setRemoteVideoSinkWants(e) {
                     this.remoteVideoSinkWants = e, this.updateVideoQuality(g.MEDIA_SINK_WANTS_PROPERTIES)
                 }
@@ -152049,4 +152159,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.757770529dd4e854e461.js.map
+//# sourceMappingURL=45109.0eaaf97b8a8eceb5d421.js.map
