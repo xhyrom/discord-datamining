@@ -24918,6 +24918,7 @@
                 headerButton: "headerButton_fe8970",
                 headerCTA: "headerCTA__9fce3",
                 headerContainer: "headerContainer__122e4",
+                headerEasterEgg: "headerEasterEgg_d26151",
                 inline: "inline__3a4e8",
                 innerButton: "innerButton__2a740",
                 inventoryContainer: "inventoryContainer_f4883b",
