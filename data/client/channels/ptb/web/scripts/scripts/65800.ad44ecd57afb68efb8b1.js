@@ -381,13 +381,13 @@
                 _ = n("99795"),
                 L = n("327772"),
                 w = n("735276"),
-                b = n("678016");
+                O = n("678016");
 
-            function O(e) {
+            function b(e) {
                 let {
                     channel: t,
                     isLoading: n
-                } = e, [i, x] = l.useState(!1), O = (0, r.useStateFromStores)([y.default], () => y.default.getSelfEmbeddedActivityForChannel(t.id)), D = (0, r.useStateFromStores)([y.default], () => y.default.getActivityPanelMode()), R = null == O ? void 0 : O.instanceId, F = (0, r.useStateFromStores)([C.default], () => C.default.getChannelId() === t.id), {
+                } = e, [i, x] = l.useState(!1), b = (0, r.useStateFromStores)([y.default], () => y.default.getSelfEmbeddedActivityForChannel(t.id)), D = (0, r.useStateFromStores)([y.default], () => y.default.getActivityPanelMode()), R = null == b ? void 0 : b.instanceId, F = (0, r.useStateFromStores)([C.default], () => C.default.getChannelId() === t.id), {
                     dockedRect: W,
                     isHidden: U
                 } = (0, r.useStateFromStoresObject)([P.default], () => {
@@ -401,14 +401,14 @@
                     selectedParticipant: B,
                     participantsOpen: H
                 } = (0, r.useStateFromStoresObject)([f.default], () => ({
-                    activityParticipant: null != O ? f.default.getParticipant(t.id, O.applicationId) : null,
+                    activityParticipant: null != b ? f.default.getParticipant(t.id, b.applicationId) : null,
                     selectedParticipant: f.default.getSelectedParticipant(t.id),
                     participantsOpen: f.default.getParticipantsOpen(t.id)
                 })), G = F || null != k, Y = (0, E.default)(t.id), J = Y && (null == B ? void 0 : B.type) !== _.ParticipantTypes.ACTIVITY, z = !Y && D === M.ActivityPanelModes.PIP, K = (!G || G && (J || z) && null == W) && !U, X = K && null != P.default.pipVideoWindow && null != P.default.pipActivityWindow;
 
                 function Z() {
                     var e;
-                    if (null != O && u.default.selectParticipant(t.id, O.applicationId), null != k) return;
+                    if (null != b && u.default.selectParticipant(t.id, b.applicationId), null != k) return;
                     (0, p.popAllLayers)();
                     let n = null !== (e = t.getGuildId()) && void 0 !== e ? e : j.ME;
                     c.default.channelListScrollTo(n, t.id), (0, h.transitionToGuild)(n, t.id)
@@ -418,17 +418,17 @@
                     x(!i)
                 }
                 l.useEffect(() => {
-                    if ((null == O ? void 0 : O.applicationId) != null) {
+                    if ((null == b ? void 0 : b.applicationId) != null) {
                         let e = K ? N.ActivityLayoutMode.PIP : N.ActivityLayoutMode.FOCUSED;
                         d.default.dispatch({
                             type: "ACTIVITY_LAYOUT_MODE_UPDATE",
                             layoutMode: e,
-                            applicationId: O.applicationId
+                            applicationId: b.applicationId
                         })
                     }
-                }, [null == O ? void 0 : O.applicationId, K]);
-                if (null == O || null == R || null == V && (0, E.default)(t.id)) return null;
-                let Q = Array.from(O.userIds).map(e => S.default.getUser(e)).filter(e => null != e),
+                }, [null == b ? void 0 : b.applicationId, K]);
+                if (null == b || null == R || null == V && (0, E.default)(t.id)) return null;
+                let Q = Array.from(b.userIds).map(e => S.default.getUser(e)).filter(e => null != e),
                     $ = {
                         instance_id: R,
                         channel_id: t.id
@@ -445,17 +445,17 @@
                         return (0, a.jsxs)(v.default, {
                             className: o(L.root, {
                                 [L.pipMode]: K,
-                                [b.elevationHigh]: K,
-                                [w.idle]: h && !(null === (l = O.config) || void 0 === l ? void 0 : l.useInteractivePIP),
+                                [O.elevationHigh]: K,
+                                [w.idle]: h && !(null === (l = b.config) || void 0 === l ? void 0 : l.useInteractivePIP),
                                 [L.pipModeShort]: K && !i,
                                 [L.pipModeTall]: K && i,
                                 [L.hidden]: U,
                                 [L.multiPIPMode]: X
                             }),
                             noBorder: !K,
-                            children: [(d = I, u = P, c = h, p = z, f = Q, K && null != O && ((null == V ? void 0 : V.type) === _.ParticipantTypes.ACTIVITY || p) ? (null === (m = O.config) || void 0 === m ? void 0 : m.useInteractivePIP) ? (0, a.jsx)(A.InteractivePIPHeader, {
+                            children: [(d = I, u = P, c = h, p = z, f = Q, K && null != b && ((null == V ? void 0 : V.type) === _.ParticipantTypes.ACTIVITY || p) ? (null === (m = b.config) || void 0 === m ? void 0 : m.useInteractivePIP) ? (0, a.jsx)(A.InteractivePIPHeader, {
                                 onJumpToChannel: Z,
-                                applicationId: O.applicationId,
+                                applicationId: b.applicationId,
                                 channel: t,
                                 showControls: !c,
                                 onMouseDown: d,
@@ -474,7 +474,7 @@
                                         Z(), (0, g.updateActivityPanelMode)(M.ActivityPanelModes.PANEL)
                                     },
                                     channel: t,
-                                    applicationId: O.applicationId,
+                                    applicationId: b.applicationId,
                                     users: f
                                 })
                             }) : null == V ? null : (0, a.jsxs)(a.Fragment, {
@@ -491,7 +491,7 @@
                                     onMouseLeave: u,
                                     onJumpToChannel: Z,
                                     channel: t,
-                                    applicationId: O.applicationId,
+                                    applicationId: b.applicationId,
                                     selectedParticipant: V
                                 })]
                             }) : null), n ? (0, a.jsx)(s.Spinner, {
@@ -500,14 +500,14 @@
                                     [L.pipModeTall]: K && i
                                 })
                             }) : (0, a.jsx)(T.EmbedIFrameWithLoadingBackground, {
-                                allowPopups: N.APPLICATIONS_WITH_ALLOWED_POPUPS.has(O.applicationId),
-                                referrerPolicy: N.APPLICATIONS_WITH_NO_REFFERER.has(O.applicationId) ? "no-referrer" : "origin",
-                                url: O.url,
+                                allowPopups: N.APPLICATIONS_WITH_ALLOWED_POPUPS.has(b.applicationId),
+                                referrerPolicy: N.APPLICATIONS_WITH_NO_REFFERER.has(b.applicationId) ? "no-referrer" : "origin",
+                                url: b.url,
                                 queryParams: $,
                                 className: o(L.iframe, {
                                     [L.pipModeShort]: K && !i,
                                     [L.pipModeTall]: K && i,
-                                    [L.pipNonInteractive]: K && !(null === (r = O.config) || void 0 === r ? void 0 : r.useInteractivePIP)
+                                    [L.pipNonInteractive]: K && !(null === (r = b.config) || void 0 === r ? void 0 : r.useInteractivePIP)
                                 }),
                                 shouldRefocus: !K && F
                             }), !K && (0, a.jsx)(A.TileOverlay, {
@@ -526,7 +526,7 @@
                 } = e, {
                     isLoading: l
                 } = (0, x.useEmbeddedActivityLifecycle)(t);
-                return (0, a.jsx)(O, {
+                return (0, a.jsx)(b, {
                     channel: t,
                     isLoading: l,
                     ...n
@@ -537,7 +537,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 PIPOverlay: function() {
-                    return O
+                    return b
                 },
                 TextActivityPIPOverlay: function() {
                     return D
@@ -581,7 +581,7 @@
                 L = n("278121"),
                 w = n("735276");
 
-            function b(e) {
+            function O(e) {
                 let {
                     onClick: t,
                     isExpanded: n
@@ -596,7 +596,7 @@
                 })
             }
 
-            function O(e) {
+            function b(e) {
                 var t, n;
                 let {
                     channel: l,
@@ -607,7 +607,7 @@
                     onJumpToChannel: T,
                     idle: A,
                     selectedParticipant: x
-                } = e, _ = (0, d.useAppContext)(), b = _ === M.AppContext.POPOUT, O = (0, o.useStateFromStores)([y.default], () => y.default.isVideoEnabled()), D = (0, o.useStateFromStores)([y.default], () => Object.values(y.default.getVideoDevices())[0]), R = null === (t = null == D ? void 0 : D.disabled) || void 0 === t || t, F = !1 === R, W = (0, u.default)([i])[0], U = (0, f.default)(l), k = e => {
+                } = e, _ = (0, d.useAppContext)(), O = _ === M.AppContext.POPOUT, b = (0, o.useStateFromStores)([y.default], () => y.default.isVideoEnabled()), D = (0, o.useStateFromStores)([y.default], () => Object.values(y.default.getVideoDevices())[0]), R = null === (t = null == D ? void 0 : D.disabled) || void 0 === t || t, F = !1 === R, W = (0, u.default)([i])[0], U = (0, f.default)(l), k = e => {
                     s.default.setVideoEnabled(e)
                 };
                 return (0, a.jsxs)("div", {
@@ -632,7 +632,7 @@
                             align: E.default.Align.CENTER,
                             children: [(0, a.jsx)(g.default, {
                                 className: L.leftPipIcon,
-                                enabled: O,
+                                enabled: b,
                                 cameraUnavailable: !F,
                                 hasPermission: U,
                                 onChange: k,
@@ -654,7 +654,7 @@
                             justify: E.default.Justify.END,
                             basis: "50%",
                             align: E.default.Align.CENTER,
-                            children: [b ? null : (0, a.jsx)(C.default, {
+                            children: [O ? null : (0, a.jsx)(C.default, {
                                 className: L.rightPipIcon,
                                 popoutOpen: !1,
                                 onOpenPopout: () => {
@@ -763,7 +763,7 @@
                                 preventIdleComponent: h.default
                             }), (0, a.jsxs)("div", {
                                 className: L.pipHeaderButtonsRight,
-                                children: [m ? null : (0, a.jsx)(b, {
+                                children: [m ? null : (0, a.jsx)(O, {
                                     isExpanded: f,
                                     onClick: p
                                 }), (0, a.jsx)(P.default, {
@@ -1032,8 +1032,8 @@
                 _ = n("550410"),
                 L = n("598873"),
                 w = n("54727"),
-                b = n("336971"),
-                O = n("954519"),
+                O = n("336971"),
+                b = n("954519"),
                 D = n("857398"),
                 R = n("373469"),
                 F = n("271938"),
@@ -1269,7 +1269,7 @@
                         let {
                             isSelf: e
                         } = this.viewProperties;
-                        return (0, a.jsx)(O.default, {
+                        return (0, a.jsx)(b.default, {
                             isSelfStream: e,
                             className: el.rightTrayIcon,
                             onClick: this.handleStopStream
@@ -1288,7 +1288,7 @@
                                 compact: !0
                             })
                         })
-                    }, this.renderPopoutIcon = () => (0, a.jsx)(b.default, {
+                    }, this.renderPopoutIcon = () => (0, a.jsx)(O.default, {
                         className: el.rightTrayIcon,
                         popoutOpen: !1,
                         onOpenPopout: this.handleOpenPopout,
@@ -1559,6 +1559,44 @@
                             color: i.default.unsafe_rawColors.WHITE_500.css
                         })
                     })
+                })
+            }
+        },
+        954519: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return r
+                }
+            });
+            var a = n("37983");
+            n("884691");
+            var l = n("607837"),
+                i = n("981913"),
+                o = n("782340");
+
+            function r(e) {
+                let {
+                    isSelfStream: t,
+                    centerButton: n = !1,
+                    onMouseEnter: r,
+                    onMouseLeave: s,
+                    ...d
+                } = e, u = n ? i.CenterControlButton : i.default, {
+                    Component: c,
+                    events: p
+                } = (0, l.useScreenshareLottie)("off");
+                return (0, a.jsx)(u, {
+                    label: t ? o.default.Messages.STOP_STREAMING : o.default.Messages.STOP_WATCHING,
+                    iconComponent: c,
+                    isActive: !0,
+                    onMouseEnter: e => {
+                        null == r || r(e), p.onMouseEnter()
+                    },
+                    onMouseLeave: e => {
+                        null == s || s(e), p.onMouseLeave()
+                    },
+                    ...d
                 })
             }
         },
@@ -1916,4 +1954,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65800.f42e0968157a89bc0f13.js.map
+//# sourceMappingURL=65800.ad44ecd57afb68efb8b1.js.map

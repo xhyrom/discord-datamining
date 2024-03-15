@@ -63306,7 +63306,8 @@
                     profile_effect_debug_controls: "Shop: Scrolls through profile effects with arrow up / down. Restart with R",
                     shop_disable_cache: "Shop: Disable shop cache",
                     shop_include_unpublished: "Shop: Show unpublished items in the shop",
-                    enable_avatar_decoration_uploads: "Shop: Enable avatar decoration uploads"
+                    enable_avatar_decoration_uploads: "Shop: Enable avatar decoration uploads",
+                    lottie_hover_multiple_loop: "Lotties - continue playing the hover animation after mouse enter"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -87839,8 +87840,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710534380818",
-                                    build_number: "275741"
+                                    built_at: "1710535022551",
+                                    build_number: "275753"
                                 }
                             },
                             retries: 1
@@ -125268,7 +125269,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "b5fc89cf1b1308f2f8a3365926c995bf611c905d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "3a52aeabcc1e18a73d356d3889ab9d4c870c8466"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -126192,7 +126193,7 @@
             var i, s, r = n("37983"),
                 a = n("884691"),
                 o = n("862337");
-            (s = i || (i = {})).SVG = "svg", s.CANVAS = "canvas", s.HYBRID = "hybrid";
+            (s = i || (i = {})).SVG = "svg", s.CANVAS = "canvas";
             class l extends a.Component {
                 componentDidMount() {
                     (null == this.props.versionKey || !(this.props.versionKey < 0)) && this.loadAnimation()
@@ -128980,7 +128981,7 @@
                         width: n,
                         height: i,
                         overflow: "visible",
-                        mask: "url(#".concat(t, ")"),
+                        mask: null != t ? "url(#".concat(t, ")") : void 0,
                         children: o
                     })
                 })
@@ -134766,7 +134767,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275741"
+                                build_number: "275753"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152404,4 +152405,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.38a7efe05184d678aef5.js.map
+//# sourceMappingURL=29062.2cbab6be532b1d15955e.js.map
