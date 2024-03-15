@@ -87756,8 +87756,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710470009104",
-                                    build_number: "275484"
+                                    built_at: "1710472013644",
+                                    build_number: "275491"
                                 }
                             },
                             retries: 1
@@ -125165,7 +125165,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "d11a1273b0898bc39cd9ee3fbc1723e24e9146a5"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "db217fd5f874d6ed1ca8e05f9e04d1d14b46290c"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -125648,7 +125648,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return _
                 }
             }), n("222007");
             var i = n("627445"),
@@ -125656,10 +125656,11 @@
                 r = n("446674"),
                 a = n("913144"),
                 o = n("816454");
-            let l = new Map;
+            let l = null,
+                u = new Map;
 
-            function u(e) {
-                let t = l.get(e);
+            function d(e) {
+                let t = u.get(e);
                 return null == t ? (console.warn("Window state not initialized", e), {
                     isElementFullscreen: !1,
                     focused: !1,
@@ -125670,34 +125671,37 @@
                     visible: !1
                 }) : t
             }
-            class d extends r.default.Store {
+            class c extends r.default.Store {
                 isFocused() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.getMainWindowId)();
-                    return u(e).focused
+                    return d(e).focused
                 }
                 isVisible() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.getMainWindowId)();
-                    return u(e).visible
+                    return d(e).visible
                 }
                 getFocusedWindowId() {
                     let e = null;
-                    return l.forEach((t, n) => {
+                    return u.forEach((t, n) => {
                         t.focused && (e = n)
                     }), e
                 }
+                getLastFocusedWindowId() {
+                    return l
+                }
                 isElementFullScreen() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.getMainWindowId)();
-                    return u(e).isElementFullscreen
+                    return d(e).isElementFullscreen
                 }
                 windowSize() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, o.getMainWindowId)();
-                    return u(e).windowSize
+                    return d(e).windowSize
                 }
             }
-            d.displayName = "WindowStore";
-            let c = new d(a.default, {
+            c.displayName = "WindowStore";
+            let f = new c(a.default, {
                 WINDOW_INIT: function(e) {
-                    s(!l.has(e.windowId), "Window initialized multiple times");
+                    s(!u.has(e.windowId), "Window initialized multiple times");
                     let {
                         width: t,
                         height: n,
@@ -125705,7 +125709,7 @@
                         focused: r,
                         visible: a
                     } = e;
-                    return l.set(e.windowId, {
+                    return u.set(e.windowId, {
                         windowSize: {
                             width: t,
                             height: n
@@ -125713,25 +125717,25 @@
                         isElementFullscreen: i,
                         focused: r,
                         visible: a
-                    }), !0
+                    }), r && (l = e.windowId), !0
                 },
                 WINDOW_FULLSCREEN_CHANGE: function(e) {
-                    let t = u(e.windowId);
-                    return t.isElementFullscreen !== e.isElementFullscreen && (l.set(e.windowId, {
+                    let t = d(e.windowId);
+                    return t.isElementFullscreen !== e.isElementFullscreen && (u.set(e.windowId, {
                         ...t,
                         isElementFullscreen: e.isElementFullscreen
                     }), !0)
                 },
                 WINDOW_FOCUS: function(e) {
-                    let t = u(e.windowId);
-                    return t.focused !== e.focused && (l.set(e.windowId, {
+                    let t = d(e.windowId);
+                    return t.focused !== e.focused && (e.focused && (l = e.windowId), u.set(e.windowId, {
                         ...t,
                         focused: e.focused
                     }), !0)
                 },
                 WINDOW_RESIZED: function(e) {
-                    let t = u(e.windowId);
-                    return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (l.set(e.windowId, {
+                    let t = d(e.windowId);
+                    return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (u.set(e.windowId, {
                         ...t,
                         windowSize: {
                             width: e.width,
@@ -125740,11 +125744,11 @@
                     }), !0)
                 },
                 WINDOW_UNLOAD: function(e) {
-                    return l.delete(e.windowId), !0
+                    return u.delete(e.windowId), l === e.windowId && (l = null), !0
                 },
                 WINDOW_VISIBILITY_CHANGE: function(e) {
-                    let t = u(e.windowId);
-                    return t.visible !== e.visible && (l.set(e.windowId, {
+                    let t = d(e.windowId);
+                    return t.visible !== e.visible && (u.set(e.windowId, {
                         ...t,
                         visible: e.visible
                     }), !0)
@@ -125755,10 +125759,10 @@
                     addExtraAnalyticsDecorator: t
                 } = e;
                 t(e => {
-                    e.client_app_state = c.isFocused() ? "focused" : "unfocused"
+                    e.client_app_state = f.isFocused() ? "focused" : "unfocused"
                 })
             });
-            var f = c
+            var _ = f
         },
         892974: function(e, t, n) {
             "use strict";
@@ -134504,7 +134508,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275484"
+                                build_number: "275491"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152132,4 +152136,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.a66aa12eb79238ba3921.js.map
+//# sourceMappingURL=67229.cd2c32ae4d07706e4943.js.map
