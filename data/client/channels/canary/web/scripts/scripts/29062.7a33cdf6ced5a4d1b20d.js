@@ -87870,8 +87870,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710555903066",
-                                    build_number: "275919"
+                                    built_at: "1710559808788",
+                                    build_number: "275925"
                                 }
                             },
                             retries: 1
@@ -100816,7 +100816,7 @@
             }
             class c {
                 constructor() {
-                    this.loadIndex = new l("❗", "Load index.tsx"), this.loadFastConnectNativeModule = new l("\uD83D\uDCBE", "Load fast_connect native module"), this.beginFastConnect = new l("\uD83C\uDF10", "Fast Connect IDENTIFY"), this.loadImports = new l("\uD83C\uDFC3", "Load Imports"), this.init = new l("\uD83C\uDFC3", "Initial Initialization"), this.loadStorage = new l("\uD83D\uDCBE", "Load Storage"), this.parseStorage = new l("\uD83D\uDCBE", "Parse Storage"), this.loadMiniCache = new l("\uD83D\uDCBE", "Load Mini Cache"), this.fetchInitialGuildCache = new l("\uD83D\uDCBE", "Fetch Initial Guild Cache"), this.loadCachedMessages = new l("\uD83D\uDCBE", "Load Cached Messages"), this.renderApp = new u("\uD83C\uDFA8", "First React Render"), this.renderAppEffect = new u("\uD83C\uDFA8", "First React Render useEffect"), this.renderMessages = new u("\uD83C\uDFA8", "React Render Messages", !0), this.renderMessagesWithCache = new u("\uD83C\uDFA8", "React Render Cached Messages", !0), this.firstRowGenerator = new l("\uD83C\uDFA8", "RowGenerator.generate()"), this.renderLatestMessages = new u("\uD83C\uDFA8", "React Render Latest Messages"), this.initialGuild = new l("\uD83C\uDF10", "Initial Guild"), this.loadLazyCache = new l("\uD83D\uDCBE", "Load Lazy Cache"), this.fetchLazyCache = new l("\uD83D\uDCBE", "Fetch Lazy Cache"), this.parseLazyCache = new l("\uD83D\uDCBE", "Parse Lazy Cache"), this.fetchStaleChannels = new l("\uD83D\uDCBE", "Fetch Stale Channels"), this.deserializeCache = new l("\uD83D\uDCBE", "Deserialize Cache"), this.dispatchLazyCache = new l("\uD83D\uDCBE", "Dispatch Lazy Cache"), this.parseReady = new l("\uD83C\uDF10", "Parse READY"), this.ready = new l("\uD83C\uDF10", "READY"), this.hydrateReady = new l("\uD83C\uDF10", "Hydrate READY"), this.dispatchReady = new l("\uD83C\uDF10", "Dispatch READY"), this.parseReadySupplemental = new l("\uD83C\uDF10", "Parse READY Supplemental"), this.readySupplemental = new l("\uD83C\uDF10", "READY Supplemental"), this.hydrateReadySupplemental = new l("\uD83C\uDF10", "Hydrate READY Supplemental"), this.dispatchReadySupplemental = new l("\uD83C\uDF10", "Dispatch READY Supplemental"), this.fetchMessages = new l("\uD83C\uDF10", "Fetch messages"), this.dispatchMessages = new l("\uD83C\uDF10", "Dispatch messages"), this.imports = {
+                    this.loadIndex = new l("❗", "Load index.tsx"), this.loadFastConnectNativeModule = new l("\uD83D\uDCBE", "Load fast_connect native module"), this.beginFastConnect = new l("\uD83C\uDF10", "Fast Connect IDENTIFY"), this.loadImports = new l("\uD83C\uDFC3", "Load Imports"), this.init = new l("\uD83C\uDFC3", "Initial Initialization"), this.loadStorage = new l("\uD83D\uDCBE", "Load Storage"), this.parseStorage = new l("\uD83D\uDCBE", "Parse Storage"), this.loadMiniCache = new l("\uD83D\uDCBE", "Load Mini Cache"), this.fetchGuildCache = new l("\uD83D\uDCBE", "Fetch Guild Cache"), this.fetchGuildChannelsCache = new l("\uD83D\uDCBE", "Fetch Initial Guild Channels Cache"), this.loadCachedMessages = new l("\uD83D\uDCBE", "Load Cached Messages"), this.renderApp = new u("\uD83C\uDFA8", "First React Render"), this.renderAppEffect = new u("\uD83C\uDFA8", "First React Render useEffect"), this.renderMessages = new u("\uD83C\uDFA8", "React Render Messages", !0), this.renderMessagesWithCache = new u("\uD83C\uDFA8", "React Render Cached Messages", !0), this.firstRowGenerator = new l("\uD83C\uDFA8", "RowGenerator.generate()"), this.renderLatestMessages = new u("\uD83C\uDFA8", "React Render Latest Messages"), this.initialGuild = new l("\uD83C\uDF10", "Initial Guild"), this.loadLazyCache = new l("\uD83D\uDCBE", "Load Lazy Cache"), this.fetchLazyCache = new l("\uD83D\uDCBE", "Fetch Lazy Cache"), this.parseLazyCache = new l("\uD83D\uDCBE", "Parse Lazy Cache"), this.fetchStaleChannels = new l("\uD83D\uDCBE", "Fetch Stale Channels"), this.deserializeCache = new l("\uD83D\uDCBE", "Deserialize Cache"), this.dispatchLazyCache = new l("\uD83D\uDCBE", "Dispatch Lazy Cache"), this.parseReady = new l("\uD83C\uDF10", "Parse READY"), this.ready = new l("\uD83C\uDF10", "READY"), this.hydrateReady = new l("\uD83C\uDF10", "Hydrate READY"), this.dispatchReady = new l("\uD83C\uDF10", "Dispatch READY"), this.parseReadySupplemental = new l("\uD83C\uDF10", "Parse READY Supplemental"), this.readySupplemental = new l("\uD83C\uDF10", "READY Supplemental"), this.hydrateReadySupplemental = new l("\uD83C\uDF10", "Hydrate READY Supplemental"), this.dispatchReadySupplemental = new l("\uD83C\uDF10", "Dispatch READY Supplemental"), this.fetchMessages = new l("\uD83C\uDF10", "Fetch messages"), this.dispatchMessages = new l("\uD83C\uDF10", "Dispatch messages"), this.imports = {
                         polyfillsEnd: new d,
                         sentryEnd: new d,
                         appStateChangeStart: new d,
@@ -100968,8 +100968,8 @@
                         time_parse_storage_end: this.parseStorage.serializeEnd(u),
                         time_load_mini_cache_start: this.loadMiniCache.serializeStart(u),
                         time_load_mini_cache_end: this.loadMiniCache.serializeEnd(u),
-                        time_fetch_initial_guild_start: this.fetchInitialGuildCache.serializeStart(u),
-                        time_fetch_initial_guild_end: this.fetchInitialGuildCache.serializeEnd(u),
+                        time_fetch_initial_guild_start: this.fetchGuildCache.serializeStart(u),
+                        time_fetch_initial_guild_end: this.fetchGuildCache.serializeEnd(u),
                         time_load_cached_messages_start: this.loadCachedMessages.serializeStart(u),
                         time_load_cached_messages_end: this.loadCachedMessages.serializeEnd(u),
                         time_render_app_start: this.renderApp.serialize(u),
@@ -106717,7 +106717,7 @@
                     return x
                 },
                 default: function() {
-                    return el
+                    return eo
                 }
             }), n("222007"), n("581081"), n("70102");
             var i = n("917351"),
@@ -106880,7 +106880,7 @@
                     for (let t of (A.fileOnly("GuildCreate contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), Y(e.id), U.add(e.id), c.default.restored(e.id), e.channels)) X(t);
                 if (null != e.channelUpdates) {
                     let t = e.channelUpdates;
-                    for (let n of ((t.writes.length > 0 || t.deletes.length > 0) && c.default.invalidate(e.id), t.deletes)) ee(y[n]);
+                    for (let n of ((t.writes.length > 0 || t.deletes.length > 0) && c.default.invalidate(e.id), t.deletes)) $(y[n]);
                     for (let e of t.writes) X(e)
                 }
                 if (null != e.threads)
@@ -106888,13 +106888,6 @@
             }
 
             function Z(e) {
-                for (let t of e.channels) W((0, f.deserializeChannel)((0, g.castChannelRecord)(t)));
-                e.guilds.forEach(e => {
-                    A.fileOnly("Early cache contained full guild channels for ".concat(e.id)), U.add(e.id)
-                })
-            }
-
-            function J(e) {
                 if (!g.ALL_CHANNEL_TYPES.has(e.channel.type)) return !1;
                 let t = j(e.channel.id);
                 if (null == t) t = e.channel;
@@ -106908,7 +106901,7 @@
                 W(t)
             }
 
-            function $(e) {
+            function J(e) {
                 let {
                     threads: t
                 } = e;
@@ -106917,7 +106910,7 @@
                 })
             }
 
-            function ee(e) {
+            function $(e) {
                 if (null == e) return;
                 let t = e.guild_id;
                 e.id in R && delete R[e.id], e.id in y && delete y[e.id], e.id in D && delete D[e.id], null != t && null != N[t] && e.id in N[t] && delete N[t][e.id], ! function(e) {
@@ -106929,13 +106922,13 @@
                 }(e)
             }
 
-            function et(e) {
+            function ee(e) {
                 var t, n;
                 let {
                     channel: i
                 } = e, s = null !== (n = null !== (t = y[i.id]) && void 0 !== t ? t : R[i.id]) && void 0 !== n ? n : D[i.id];
                 if (null == s) return !1;
-                ee(s), ! function(e) {
+                $(s), ! function(e) {
                     if ("basicPermissions" in e || e.type !== I.ChannelTypes.DM) return;
                     let t = e.getRecipientId(),
                         n = P[t];
@@ -106943,22 +106936,22 @@
                 }(s)
             }
 
-            function en(e) {
+            function et(e) {
                 let {
                     messages: t
                 } = e;
                 for (let e of t) null != e.thread && !(e.thread.id in D) && g.ALL_CHANNEL_TYPES.has(e.thread.type) && q((0, g.createChannelRecordFromServer)(e.thread))
             }
 
-            function ei(e) {
+            function en(e) {
                 let {
                     messages: t,
                     threads: n,
                     channels: i
                 } = e;
                 for (let e of t)
-                    for (let t of e) es(t.thread);
-                n.forEach(es), null == i || i.forEach(e => {
+                    for (let t of e) ei(t.thread);
+                n.forEach(ei), null == i || i.forEach(e => {
                     let t = (0, g.createChannelRecordFromServer)(e),
                         n = null != j(e.id),
                         i = null != V[e.id];
@@ -106966,19 +106959,19 @@
                 })
             }
 
-            function es(e) {
+            function ei(e) {
                 null != e && !(e.id in D) && g.ALL_CHANNEL_TYPES.has(e.type) && q((0, g.createChannelRecordFromServer)(e))
             }
 
-            function er() {
+            function es() {
                 for (let e in b = {}, E.default.getFavoriteChannels()) {
                     let t = E.default.getCategoryRecord(e);
                     null != t && (b[e] = t)
                 }
             }
-            class ea extends a.default.Store {
+            class er extends a.default.Store {
                 initialize() {
-                    this.waitFor(c.default, T.default, v.default, E.default), this.syncWith([E.default], er)
+                    this.waitFor(c.default, T.default, v.default, E.default), this.syncWith([E.default], es)
                 }
                 hasChannel(e) {
                     return null != K(e)
@@ -107044,39 +107037,50 @@
                     return {
                         loadedGuildIds: Array.from(U).sort(p.default.compare),
                         pendingGuildLoads: Object.keys(w).sort(p.default.compare),
-                        guildSizes: Object.keys(N).sort(p.default.compare).map(e => "".concat(e, ": ").concat(eo(e)))
+                        guildSizes: Object.keys(N).sort(p.default.compare).map(e => "".concat(e, ": ").concat(ea(e)))
                     }
                 }
             }
 
-            function eo(e) {
+            function ea(e) {
                 return null == N[e] ? null : Object.keys(N[e]).length
             }
-            ea.displayName = "ChannelStore";
-            var el = new ea(o.default, {
+            er.displayName = "ChannelStore";
+            var eo = new er(o.default, {
                 BACKGROUND_SYNC: function(e) {
                     let {
                         guilds: t
                     } = e, n = N;
                     y = {}, N = {}, M = {}, t.forEach(e => {
-                        if ("unavailable" === e.data_mode) A.fileOnly("Restoring guild channels b/c unavailable in bg sync, for ".concat(e.id, " #:").concat(eo(e.id))), s.forEach(n[e.id], X);
+                        if ("unavailable" === e.data_mode) A.fileOnly("Restoring guild channels b/c unavailable in bg sync, for ".concat(e.id, " #:").concat(ea(e.id))), s.forEach(n[e.id], X);
                         else if ("partial" === e.data_mode) {
                             var t, i;
-                            A.fileOnly("Restoring guild channels b/c partial in bg sync, for ".concat(e.id, " #:").concat(eo(e.id))), s.forEach(n[e.id], X);
+                            A.fileOnly("Restoring guild channels b/c partial in bg sync, for ".concat(e.id, " #:").concat(ea(e.id))), s.forEach(n[e.id], X);
                             let r = null !== (i = e.partial_updates.deleted_channel_ids) && void 0 !== i ? i : [];
-                            r.length > 0 && (B(e.id, 1, "handleBackgroundSync"), r.forEach(e => ee(y[e]))), null === (t = e.partial_updates.channels) || void 0 === t || t.forEach(t => X((0, g.createChannelRecordFromServer)(t, e.id)))
+                            r.length > 0 && (B(e.id, 1, "handleBackgroundSync"), r.forEach(e => $(y[e]))), null === (t = e.partial_updates.channels) || void 0 === t || t.forEach(t => X((0, g.createChannelRecordFromServer)(t, e.id)))
                         } else A.fileOnly("BG sync contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), Y(e.id), U.add(e.id), c.default.restored(e.id), e.channels.forEach(t => X((0, g.createChannelRecordFromServer)(t, e.id)))
                     })
                 },
                 CACHE_LOADED_LAZY: function(e) {
-                    for (let [t, n] of(e.guilds.length, e.guildChannels))
+                    for (let [t, n] of e.guildChannels)
                         for (let e of (A.fileOnly("Lazy cache contained full guild channels for ".concat(t, " #:").concat(n.length)), U.add(t), n)) W((0, g.castChannelRecord)(e))
                 },
-                CACHE_LOADED: Z,
+                CACHE_LOADED: function(e) {
+                    var t;
+                    e.guilds.length;
+                    let {
+                        privateChannels: n,
+                        initialGuildChannels: i
+                    } = e;
+                    for (let e of [n, i])
+                        for (let t of e) W((0, f.deserializeChannel)((0, g.castChannelRecord)(t)));
+                    let s = null === (t = i[0]) || void 0 === t ? void 0 : t.guild_id;
+                    null != s && (A.fileOnly("Early cache contained full guild channels for ".concat(s)), U.add(s))
+                },
                 CHANNEL_CREATE: function(e) {
                     W(e.channel)
                 },
-                CHANNEL_DELETE: et,
+                CHANNEL_DELETE: ee,
                 CHANNEL_RECIPIENT_ADD: function(e) {
                     let t = j(e.channelId),
                         n = S.default.getId();
@@ -107102,8 +107106,8 @@
                 },
                 CONNECTION_OPEN: function(e) {
                     let t = N;
-                    for (let n of (P = {}, y = {}, N = {}, D = {}, M = {}, V = {}, w = {}, k = Date.now(), O = e.initialPrivateChannels, e.initialPrivateChannels.forEach(z), e.guilds)) "partial" === n.dataMode && (s.forEach(t[n.id], X), A.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eo(n.id)))), Q(n);
-                    er()
+                    for (let n of (P = {}, y = {}, N = {}, D = {}, M = {}, V = {}, w = {}, k = Date.now(), O = e.initialPrivateChannels, e.initialPrivateChannels.forEach(z), e.guilds)) "partial" === n.dataMode && (s.forEach(t[n.id], X), A.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(ea(n.id)))), Q(n);
+                    es()
                 },
                 GUILD_CREATE: function(e) {
                     Q(e.guild)
@@ -107118,7 +107122,7 @@
                     for (let e of i) !(e.id in D) && g.ALL_CHANNEL_TYPES.has(e.type) && (q((0, g.createChannelRecordFromServer)(e)), n = !0);
                     return n
                 },
-                LOAD_ARCHIVED_THREADS_SUCCESS: $,
+                LOAD_ARCHIVED_THREADS_SUCCESS: J,
                 LOAD_CHANNELS: function(e) {
                     for (let {
                             guildId: t,
@@ -107128,17 +107132,19 @@
                         for (let e of (A.fileOnly("Lazy loaded guild channels for ".concat(t)), (0, f.default)(n), U.add(t), c.default.restored(t), n)) !Object.hasOwn(y, e.id) && X((0, g.castChannelRecord)(e));
                     return !1
                 },
-                LOAD_MESSAGES_AROUND_SUCCESS: en,
-                LOAD_MESSAGES_SUCCESS: en,
-                LOAD_THREADS_SUCCESS: $,
+                LOAD_MESSAGES_AROUND_SUCCESS: et,
+                LOAD_MESSAGES_SUCCESS: et,
+                LOAD_THREADS_SUCCESS: J,
                 LOGOUT: function() {
                     A.fileOnly("initializeClear()"), P = {}, y = {}, N = {}, M = {}, R = {}, V = {}, D = {}, U = new Set, w = {}, k = Date.now()
                 },
-                OVERLAY_INITIALIZE: Z,
-                SEARCH_FINISH: ei,
-                MOD_VIEW_SEARCH_FINISH: ei,
-                THREAD_CREATE: J,
-                THREAD_DELETE: et,
+                OVERLAY_INITIALIZE: function(e) {
+                    for (let t of (e.guilds.length, e.channels)) W((0, f.deserializeChannel)((0, g.castChannelRecord)(t)))
+                },
+                SEARCH_FINISH: en,
+                MOD_VIEW_SEARCH_FINISH: en,
+                THREAD_CREATE: Z,
+                THREAD_DELETE: ee,
                 THREAD_LIST_SYNC: function(e) {
                     let {
                         threads: t
@@ -107147,7 +107153,7 @@
                         g.ALL_CHANNEL_TYPES.has(e.type) && W(e)
                     })
                 },
-                THREAD_UPDATE: J,
+                THREAD_UPDATE: Z,
                 VOICE_BACKGROUND_UPDATE: function(e) {
                     let t = j(e.channelId);
                     null != t && (t.voiceBackgroundDisplay = e.background, W(t))
@@ -110058,6 +110064,9 @@
                 handleCacheLoaded(e) {
                     this.guildIds = new Set(e.guilds.map(e => e.id))
                 }
+                handleCacheLoadedLazy(e) {
+                    for (let t of e.guilds) this.guildIds.add(t.id)
+                }
                 handleGuildCreate(e) {
                     this.guildIds.add(e.guild.id)
                 }
@@ -110066,8 +110075,8 @@
                 }
                 constructor() {
                     super(s.default, {
-                        CACHE_LOADED_LAZY: e => this.handleCacheLoaded(e),
                         CACHE_LOADED: e => this.handleCacheLoaded(e),
+                        CACHE_LOADED_LAZY: e => this.handleCacheLoadedLazy(e),
                         CONNECTION_OPEN: e => this.handleConnectionOpen(e),
                         GUILD_CREATE: e => this.handleGuildCreate(e),
                         GUILD_DELETE: e => this.handleGuildDelete(e)
@@ -110665,159 +110674,160 @@
             let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return C
+                    return I
                 }
             }), n("222007");
-            var s = n("917351"),
-                r = n.n(s),
-                a = n("446674"),
-                o = n("233736"),
-                l = n("913144"),
-                u = n("813006"),
-                d = n("665618"),
-                c = n("605136"),
-                f = n("299039"),
-                _ = n("271938"),
-                E = n("49111"),
-                h = n("695838");
-            let g = {},
-                m = {},
-                p = !1,
-                S = [];
+            var s = n("446674"),
+                r = n("233736"),
+                a = n("913144"),
+                o = n("813006"),
+                l = n("665618"),
+                u = n("605136"),
+                d = n("299039"),
+                c = n("271938"),
+                f = n("49111"),
+                _ = n("695838");
+            let E = {},
+                h = {},
+                g = !1,
+                m = [];
 
-            function v(e) {
-                m = {}, g = {}, i = 0, null != e.guilds && r.forEach(e.guilds, e => {
-                    i++, m[e.id] = d.fromSerializedGuildRecord(e), g[e.id] = e.roles
-                })
+            function p(e) {
+                for (let t of (h = {}, E = {}, i = 0, e)) i++, h[t.id] = l.fromSerializedGuildRecord(t), E[t.id] = t.roles
             }
 
-            function T(e) {
+            function S(e) {
                 let {
                     guildId: t,
                     role: n
-                } = e, i = g[t], s = c.fromServerRole(n), r = null == i ? void 0 : i[s.id];
-                if (null != r && (0, o.default)(s, r)) return !1;
+                } = e, i = E[t], s = u.fromServerRole(n), a = null == i ? void 0 : i[s.id];
+                if (null != a && (0, r.default)(s, a)) return !1;
                 i = {
                     ...i,
-                    [n.id]: c.fromServerRole(n)
-                }, g[t] = i
+                    [n.id]: u.fromServerRole(n)
+                }, E[t] = i
             }
-            let I = Object.freeze({});
-            class A extends a.default.Store {
+            let v = Object.freeze({});
+            class T extends s.default.Store {
                 getGuild(e) {
-                    if (null != e) return e === E.FAVORITES ? h.FAVORITES_GUILD_RECORD : m[e]
+                    if (null != e) return e === f.FAVORITES ? _.FAVORITES_GUILD_RECORD : h[e]
                 }
                 getGuilds() {
-                    return m
+                    return h
                 }
                 getGuildIds() {
-                    return f.default.keys(m)
+                    return d.default.keys(h)
                 }
                 getGuildCount() {
                     return i
                 }
                 isLoaded() {
-                    return p
+                    return g
                 }
                 getGeoRestrictedGuilds() {
-                    return S
+                    return m
                 }
                 getAllGuildsRoles() {
-                    return g
+                    return E
                 }
                 getRoles(e) {
                     var t;
-                    return null !== (t = g[e]) && void 0 !== t ? t : I
+                    return null !== (t = E[e]) && void 0 !== t ? t : v
                 }
                 getRole(e, t) {
                     var n;
-                    return null === (n = g[e]) || void 0 === n ? void 0 : n[t]
+                    return null === (n = E[e]) || void 0 === n ? void 0 : n[t]
                 }
             }
-            A.displayName = "GuildStore";
-            var C = new A(l.default, {
+            T.displayName = "GuildStore";
+            var I = new T(a.default, {
                 BACKGROUND_SYNC: function(e) {
                     for (let n of e.guilds) {
                         var t;
-                        let e = m[n.id];
+                        let e = h[n.id];
                         if (null == e || "unavailable" === n.data_mode) return;
-                        m[n.id] = d.fromBackgroundSync(n, e), g[n.id] = "partial" === n.data_mode ? d.filterRoleDeletes(n.id, null !== (t = g[n.id]) && void 0 !== t ? t : I, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : c.sortServerRoles(n.id, n.roles)
+                        h[n.id] = l.fromBackgroundSync(n, e), E[n.id] = "partial" === n.data_mode ? l.filterRoleDeletes(n.id, null !== (t = E[n.id]) && void 0 !== t ? t : v, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : u.sortServerRoles(n.id, n.roles)
                     }
-                    i = Object.keys(m).length
+                    i = Object.keys(h).length
                 },
                 CONNECTION_OPEN: function(e) {
-                    p = !0;
-                    let t = m;
-                    m = {}, g = {}, i = 0, e.guilds.forEach(e => {
-                        i++, m[e.id] = d.fromServer(e, t[e.id]), g[e.id] = e.roles instanceof Array ? c.sortServerRoles(e.id, e.roles) : e.roles
+                    g = !0;
+                    let t = h;
+                    h = {}, E = {}, i = 0, e.guilds.forEach(e => {
+                        i++, h[e.id] = l.fromServer(e, t[e.id]), E[e.id] = e.roles instanceof Array ? u.sortServerRoles(e.id, e.roles) : e.roles
                     });
                     let n = !1;
-                    if (S.length !== e.geoRestrictedGuilds.length) n = !0;
+                    if (m.length !== e.geoRestrictedGuilds.length) n = !0;
                     else
                         for (let t = 0; t < e.geoRestrictedGuilds.length; t++)
-                            if (!(0, o.default)(S[t], e.geoRestrictedGuilds[t])) {
+                            if (!(0, r.default)(m[t], e.geoRestrictedGuilds[t])) {
                                 n = !0;
                                 break
-                            } n && (S = e.geoRestrictedGuilds)
+                            } n && (m = e.geoRestrictedGuilds)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     var t;
-                    m = {}, g = {}, i = 0, null === (t = e.guilds) || void 0 === t || t.forEach(e => {
-                        i++, m[e.id] = new u.default(e)
-                    }), g = e.allGuildsRoles
+                    h = {}, E = {}, i = 0, null === (t = e.guilds) || void 0 === t || t.forEach(e => {
+                        i++, h[e.id] = new o.default(e)
+                    }), E = e.allGuildsRoles
                 },
-                CACHE_LOADED: v,
-                CACHE_LOADED_LAZY: v,
+                CACHE_LOADED: function(e) {
+                    p(e.guilds)
+                },
+                CACHE_LOADED_LAZY: function(e) {
+                    if (0 === e.guilds.length) return !1;
+                    p(e.guilds)
+                },
                 GUILD_CREATE: function(e) {
-                    let t = d.fromServer(e.guild, m[e.guild.id]);
-                    null == m[t.id] && i++, m = {
-                        ...m,
+                    let t = l.fromServer(e.guild, h[e.guild.id]);
+                    null == h[t.id] && i++, h = {
+                        ...h,
                         [t.id]: t
-                    }, g[t.id] = e.guild.roles instanceof Array ? c.sortServerRoles(t.id, e.guild.roles) : e.guild.roles
+                    }, E[t.id] = e.guild.roles instanceof Array ? u.sortServerRoles(t.id, e.guild.roles) : e.guild.roles
                 },
                 GUILD_UPDATE: function(e) {
-                    let t = d.fromServerUpdate(e.guild, m[e.guild.id]);
-                    null == m[t.id] && i++, m = {
-                        ...m,
+                    let t = l.fromServerUpdate(e.guild, h[e.guild.id]);
+                    null == h[t.id] && i++, h = {
+                        ...h,
                         [t.id]: t
-                    }, g[t.id] = c.sortServerRoles(t.id, e.guild.roles)
+                    }, E[t.id] = u.sortServerRoles(t.id, e.guild.roles)
                 },
                 GUILD_DELETE: function(e) {
                     let {
                         guild: t
-                    } = e, n = S.findIndex(e => e.id === t.id);
+                    } = e, n = m.findIndex(e => e.id === t.id);
                     if (-1 !== n) {
-                        S.splice(n, 1), S = [...S];
+                        m.splice(n, 1), m = [...m];
                         return
                     }
-                    if (null == m[t.id] || t.unavailable) return !1;
-                    m = {
-                        ...m
-                    }, delete m[t.id], g[t.id] = void 0, i--
+                    if (null == h[t.id] || t.unavailable) return !1;
+                    h = {
+                        ...h
+                    }, delete h[t.id], E[t.id] = void 0, i--
                 },
-                GUILD_ROLE_CREATE: T,
-                GUILD_ROLE_UPDATE: T,
+                GUILD_ROLE_CREATE: S,
+                GUILD_ROLE_UPDATE: S,
                 GUILD_ROLE_DELETE: function(e) {
                     let {
                         guildId: t,
                         roleId: n
-                    } = e, i = g[t];
+                    } = e, i = E[t];
                     if (null == i) return !1;
                     i = {
                         ...i
-                    }, delete i[n], g[t] = i
+                    }, delete i[n], E[t] = i
                 },
                 GUILD_MEMBER_ADD: function(e) {
                     let {
                         guildId: t,
                         joinedAt: n,
                         user: i
-                    } = e, s = _.default.getId(), r = m[t];
+                    } = e, s = c.default.getId(), r = h[t];
                     if (s !== i.id || null == r) return !1;
                     let a = "string" == typeof n ? new Date(n) : n;
                     if (a === r.joinedAt || null == a) return !1;
-                    m = {
-                        ...m,
+                    h = {
+                        ...h,
                         [t]: r.updateJoinedAt(a)
                     }
                 },
@@ -110825,7 +110835,7 @@
                     return !0
                 },
                 GUILD_GEO_RESTRICTED: function(e) {
-                    S = [...S, {
+                    m = [...m, {
                         id: e.guildId,
                         name: e.name,
                         icon: e.icon,
@@ -121402,10 +121412,11 @@
                         for (let e of t.users) g[e.id] = new u.default(e);
                     if (null != e.users)
                         for (let t of e.users) !(t.id in g && O(t)) && (g[t.id] = new u.default(t));
-                    for (let t of e.channels) {
-                        var n;
-                        null === (n = t.rawRecipients) || void 0 === n || n.forEach(e => I(e, !1))
-                    }
+                    for (let t of [e.privateChannels, e.initialGuildChannels])
+                        for (let e of t) {
+                            var n;
+                            null === (n = e.rawRecipients) || void 0 === n || n.forEach(e => I(e, !1))
+                        }
                 }
                 getUserStoreVersion() {
                     return m
@@ -125299,7 +125310,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "f6fcd1c04080529f82b94212cd6443f2e59d7399"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "edd439140dbdc4decffff52590e1bd7788756c0c"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134797,7 +134808,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "275919"
+                                build_number: "275925"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152435,4 +152446,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.f62d0a600c0c8e37b9fa.js.map
+//# sourceMappingURL=29062.7a33cdf6ced5a4d1b20d.js.map
