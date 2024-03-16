@@ -127697,6 +127697,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--primary-600);
     --chat-swipe-to-reply-background: var(--primary-660);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --coachmark-bg: var(--primary-800);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -128011,6 +128012,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--white-500);
     --chat-swipe-to-reply-background: var(--primary-160);
     --chat-swipe-to-reply-gradient-background: hsl(var(--white-500-hsl) / 0.4);
+    --coachmark-bg: var(--white-500);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.54);
     --control-brand-foreground: var(--brand-500);
     --control-brand-foreground-new: var(--brand-500);
@@ -128325,6 +128327,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --coachmark-bg: var(--plum-19);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -128639,6 +128642,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --coachmark-bg: var(--plum-17);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -130137,4 +130141,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e5bd9f09a9775437e6f2.css.map*/
+/*# sourceMappingURL=app.6ce0cf0805d208dc8583.css.map*/
