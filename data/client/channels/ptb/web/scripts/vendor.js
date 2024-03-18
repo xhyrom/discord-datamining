@@ -87925,8 +87925,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710799631424",
-                                    build_number: "276262"
+                                    built_at: "1710800306555",
+                                    build_number: "276279"
                                 }
                             },
                             retries: 1
@@ -125366,7 +125366,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "5f0b7382b8f750d5d9c8e31d1ce1a66d2c3ec394"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "0a61b6415892e43f7f7e5d1a33399cd2e005340d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134864,7 +134864,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "276262"
+                                build_number: "276279"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152181,9 +152181,9 @@
                 ReleaseChannelsSets: function() {
                     return r
                 }
-            }), n("222007"), (s = i || (i = {})).STABLE = "stable", s.BETA = "beta", s.ALPHA = "alpha", s.PTB = "ptb", s.CANARY = "canary", s.STAGING = "staging", s.DEVELOPMENT = "development";
+            }), n("222007"), (s = i || (i = {})).STABLE = "stable", s.PTB = "ptb", s.CANARY = "canary", s.BETA = "betaRelease", s.ALPHA = "alphaRelease", s.STAGING = "staging", s.DEVELOPMENT = "development";
             let r = {
-                ALL: new Set(["alpha", "beta", "canary", "development", "ptb", "stable", "staging"])
+                ALL: new Set(["alphaRelease", "betaRelease", "canary", "development", "ptb", "stable", "staging"])
             }
         },
         843117: function(e, t, n) {
@@ -152587,4 +152587,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.9a1c3d0ecd06313d95c8.js.map
+//# sourceMappingURL=29062.6d190a97afb177b60258.js.map
