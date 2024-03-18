@@ -87925,8 +87925,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710798527294",
-                                    build_number: "276242"
+                                    built_at: "1710799631424",
+                                    build_number: "276262"
                                 }
                             },
                             retries: 1
@@ -125366,7 +125366,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "02ae4d1ebfd438fdca90e2dece8d2659e1cf9a10"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "5f0b7382b8f750d5d9c8e31d1ce1a66d2c3ec394"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134864,7 +134864,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "276242"
+                                build_number: "276262"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -144798,7 +144798,8 @@
                     return null != this.conn.fastUdpReconnect ? this.numFastUdpReconnects : null
                 }
                 wasRemoteDisconnected() {
-                    this.conn.wasRemoteDisconnected()
+                    var e, t;
+                    null === (e = (t = this.conn).wasRemoteDisconnected) || void 0 === e || e.call(t)
                 }
                 setLocalVideoDisabled(e, t) {
                     this.disabledLocalVideos[e] = t, this.emit(m.BaseConnectionEvent.LocalVideoDisabled, e, t)
@@ -152586,4 +152587,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.4b28c1c7a9491d242ae3.js.map
+//# sourceMappingURL=29062.9a1c3d0ecd06313d95c8.js.map
