@@ -1,0 +1,26 @@
+{
+  "id": 21204493235991,
+  "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/21204493235991.json",
+  "html_url": "https://support-dev.discord.com/hc/en-us/articles/21204493235991-How-Can-My-Friends-Play-My-Activity",
+  "author_id": 5630494357399,
+  "comments_disabled": false,
+  "draft": false,
+  "promoted": false,
+  "position": 1,
+  "section_id": 11628542724887,
+  "created_at": "2024-02-08T00:54:44Z",
+  "name": "How Can My Friends Play My Activity?",
+  "title": "How Can My Friends Play My Activity?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-03-07T17:30:28Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": [
+    "Apps",
+    "embedded apps"
+  ]
+}

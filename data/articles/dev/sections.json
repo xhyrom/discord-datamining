@@ -112,6 +112,22 @@
     "theme_template": "section_page"
   },
   {
+    "id": 11628542724887,
+    "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/sections/11628542724887.json",
+    "html_url": "https://support-dev.discord.com/hc/en-us/sections/11628542724887-Activities-Embedded-App-SDK",
+    "category_id": 360000656511,
+    "position": 3,
+    "sorting": "manual",
+    "created_at": "2023-01-12T19:24:34Z",
+    "name": "Activities (Embedded App SDK)",
+    "description": "",
+    "locale": "en-us",
+    "source_locale": "en-us",
+    "outdated": false,
+    "parent_section_id": null,
+    "theme_template": "section_page"
+  },
+  {
     "id": 17294380054935,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/sections/17294380054935.json",
     "html_url": "https://support-dev.discord.com/hc/en-us/sections/17294380054935-Premium-Apps",
