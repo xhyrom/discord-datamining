@@ -1480,7 +1480,7 @@
                     O.current.cancel(), N(!0)
                 }, []), P = r.useCallback(() => {
                     O.current.delay()
-                }, []), D = r.useCallback((e, t) => {
+                }, []), b = r.useCallback((e, t) => {
                     x(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
@@ -1502,13 +1502,13 @@
                     className: m,
                     participantType: l.type
                 });
-                let b = u(L).take(T).map(e => (0, a.jsx)(c.Avatar, {
+                let D = u(L).take(T).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: I.viewer
                 }, e.id)).value();
-                return L.length > T && (b[b.length - 1] = (0, a.jsxs)("div", {
+                return L.length > T && (D[D.length - 1] = (0, a.jsxs)("div", {
                     className: I.overflow,
                     children: ["+", L.length - T + 1]
                 }, "overflow")), (0, a.jsx)(h.default, {
@@ -1519,7 +1519,7 @@
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
                                 participantType: l.type,
-                                handleUserContextMenu: D,
+                                handleUserContextMenu: b,
                                 guildId: s,
                                 channelId: t,
                                 users: L,
@@ -1529,7 +1529,7 @@
                             position: "top",
                             children: () => (0, a.jsx)("div", {
                                 className: i(I.viewers, m),
-                                children: b
+                                children: D
                             })
                         })
                     })
@@ -2198,7 +2198,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-e6807d4bd593870e56ae12f44f1e29373ea4f62f",
+                    release: "discord_web-b09fa01d033b6687d447d16785aebfbe3d125e8b",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2216,7 +2216,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "276093", "276093")), a.setTag("builtAt", String("1710785667068"));
+                }), a.setTag("buildNumber", (e = "276103", "276103")), a.setTag("builtAt", String("1710786491325"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -4778,4 +4778,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25949.04ea097bc72efa53241a.js.map
+//# sourceMappingURL=25949.509ceb9ef36c60d61471.js.map
