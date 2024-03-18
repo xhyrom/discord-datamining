@@ -83843,7 +83843,7 @@
             function T(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
                 for (let i of (!Array.isArray(e) && (e = [e]), e)) {
-                    if (!t.includes(i.type)) return null;
+                    if (void 0 === i || !t.includes(i.type)) return null;
                     if (i.type === c.AST_KEY.INLINE_CODE) {
                         let e = [...t, ...n];
                         if (null == T(i.validationChildContent, e)) return null
@@ -87930,8 +87930,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710801995389",
-                                    build_number: "276307"
+                                    built_at: "1710803102715",
+                                    build_number: "276316"
                                 }
                             },
                             retries: 1
@@ -125371,7 +125371,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "4772a7f51af3b02d2272f4cbd0c95d4e043257ce"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "aaa078e8664d6c14aa133499c8ad615280216298"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134869,7 +134869,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "276307"
+                                build_number: "276316"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152592,4 +152592,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.8113c4cd9a874fb248f2.js.map
+//# sourceMappingURL=29062.049d0001d45203e08e94.js.map
