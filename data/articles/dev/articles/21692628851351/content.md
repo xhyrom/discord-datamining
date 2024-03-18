@@ -1,10 +1,10 @@
 <h2 id="h_01HRAJX0AT05CTFVYV6K8SC49E">Table of Contents</h2>
-<p><a href="#h_01HRAJS76QWG648YHNFVDWEN17">What are Private Activities?</a></p>
-<p><a href="#h_01HRAJS76Q4ZA6EJ7RMCCE5HY4">Are private Activities safe to use?</a></p>
-<p><a href="#h_01HRAJS76Q9GWPHWCB7QXJ51F0">What information can a private Activity access?</a></p>
-<p><a href="#h_01HRAJS76QN4328CKA7ES19MTY">I don’t want to use the app anymore. How can I turn it off?</a></p>
-<p><a href="#h_01HRAJS76QNKD2X2YNW38XAH9F">How do I report an app?</a></p>
-<p><a href="#h_01HRAJS76Q41243BRNCC6JCGNS">Additional Resources</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21692628851351#h_01HRAJS76QWG648YHNFVDWEN17">What are Private Activities?</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21692628851351#h_01HRAJS76Q4ZA6EJ7RMCCE5HY4">Are private Activities safe to use?</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21692628851351#h_01HRAJS76Q9GWPHWCB7QXJ51F0">What information can a private Activity access?</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21692628851351#h_01HRAJS76QN4328CKA7ES19MTY">I don’t want to use the app anymore. How can I turn it off?</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21692628851351#h_01HRAJS76QNKD2X2YNW38XAH9F">How do I report an app?</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21692628851351#h_01HRAJS76Q41243BRNCC6JCGNS">Additional Resources</a></p>
 <h2 id="h_01HRAK07HDK488A5ETZN13TNV1">Introduction</h2>
 <p>If you’re reading this, you were likely invited to test a private Activity from a developer.</p>
 <p><img src="https://support-dev.discord.com/hc/article_attachments/21864141171607"></p>
@@ -37,7 +37,7 @@
     <li><a href="https://support-dev.discord.com/hc/en-us/articles/21204423970071-Introducing-the-Embedded-App-SDK">Introducing the Embedded App SDK!</a></li>
     <li><a href="https://support-dev.discord.com/hc/en-us/articles/21204493235991-How-Can-My-Friends-Play-My-Activity">How can my friends play my Activity?</a></li>
     <li><a href="https://discord.com/developers/docs/activities/overview">Embedded App SDK - Getting Started Guide</a></li>
-    <li>Join the <a href="https://discord.gg/discord-developers">Discord Developers Server</a> <code>#activities-preview</code> channel!</li>
+    <li>Join the <a href="https://discord.gg/discord-developers">Discord Developers Server</a> <code>#activities-dev-help</code> channel!</li>
     <li>Reach out to our <a href="https://dis.gd/developer-activities">Developer Support</a> team if you have any questions about the SDK!</li>
 </ul>
 <p><!-- notionvc: 85580d85-40d1-4ee8-881f-47ea3c9b3610 --></p>

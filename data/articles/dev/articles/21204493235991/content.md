@@ -33,7 +33,7 @@
     <li><a href="https://support-dev.discord.com/hc/en-us/articles/21204423970071-Introducing-the-Embedded-App-SDK">Introducing the Embedded App SDK!</a></li>
     <li><a href="https://discord.com/developers/docs/activities/overview">Embedded App SDK - Getting Started Guide</a></li>
     <li><a href="https://discord.com/developers/docs/topics/teams#transfering-an-app">Transferring Your App to a Team</a></li>
-    <li>Join the <a href="https://discord.gg/discord-developers">Discord Developers Server</a> <code>#activities-preview</code> channel!</li>
+    <li>Join the <a href="https://discord.gg/discord-developers">Discord Developers Server</a> <code>#activities-dev-help</code> channel!</li>
     <li>Reach out to our <a href="https://dis.gd/developer-activities">Developer Support</a> team if you have any questions about the SDK!</li>
 </ul>
 <p><!-- notionvc: 7ef1ce19-8a22-4fde-b9c5-fa5c221b3ff4 --></p>
