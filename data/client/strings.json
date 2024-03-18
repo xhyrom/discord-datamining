@@ -12304,6 +12304,7 @@
   "PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE": "\"If you cancel, **you will lose these perks:**\"",
   "PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK": "\"Nevermind, keep Nitro\"",
   "PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK_CTA": "\"Never mind, keep Nitro\"",
+  "PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE_TENURE_REWARD": "\"If you cancel, you will lose your reward progress and all of these rewards:\"",
   "PREMIUM_PAUSE_INSTEAD": "\"Pause Instead\"",
   "PREMIUM_PAUSE_SELECT_TITLE": "\"Pause or cancel subscription\"",
   "PREMIUM_PAUSE_SELECT_SUBTITLE": "\"If you want to take a break from paid subscriptions, you have the option to pause it for a few months\"",
