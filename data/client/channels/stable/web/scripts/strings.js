@@ -139,7 +139,9 @@
                 PAGINATION_PAGE_LABEL: "Page {pageNumber}",
                 PAGINATION_SLIDE_LABEL: "Slide {pageNumber}",
                 MUTE: "Mute",
+                MUTE_ALT: "Turn Off Microphone",
                 UNMUTE: "Unmute",
+                UNMUTE_ALT: "Turn On Microphone",
                 DEAFEN: "Deafen",
                 UNDEAFEN: "Undeafen",
                 SEARCH: "Search",
@@ -3562,6 +3564,7 @@
                 SUB_ENABLED_SERVERS: "Sub Enabled Servers",
                 AUTHORIZATION: "Authorization",
                 AUTHORIZED_APPS: "Authorized Apps",
+                MANAGE_AUTHORIZED_APP: "Manage Authorized App",
                 DEAUTHORIZE: "Deauthorize",
                 DEAUTHORIZE_APP: "Deauthorize Application",
                 ABOUT_THIS_APP: "About this App",
@@ -4584,6 +4587,11 @@
                 OAUTH2_ADD_TO_GUILD: "Add to server:",
                 OAUTH2_ADD_TO_GUILD_PLACEHOLDER: "Select a server",
                 OAUTH2_ADD_TO_GUILD_DESCRIPTION: "This requires you to have **Manage Server** permission in the server.",
+                OAUTH2_INTEGRATION_SELECT_USER: "Try it Now",
+                OAUTH2_INTEGRATION_SELECT_USER_SUBTITLE: "Use this app everywhere!",
+                OAUTH2_INTEGRATION_SELECT_GUILD: "Add to Server",
+                OAUTH2_INTEGRATION_SELECT_GUILD_SUBTITLE: "Customize your server by adding this app",
+                OAUTH2_INTEGRATION_SELECT_DETAILS: "This app can be used anywhere on Discord. During beta, responses are visible only to you in servers with over {betaUserLimit} people. [Learn more]({learnMoreUrl}).",
                 OAUTH2_REQUEST_MISSING_PARAM: "Invalid request. Missing param **{param}**",
                 OAUTH2_REQUEST_INVALID_SCOPE: "Invalid scope **{scope}**",
                 OAUTH2_CONFIRM_BOT_PERMISSIONS: "Confirm that you want to grant **!!{applicationName}!!** the following permissions on **!!{guildName}!!**:",
@@ -4617,6 +4625,7 @@
                 SCOPE_RPC_ACTIVITIES_WRITE: "Set your current activity",
                 SCOPE_VOICE: "Connect to voice on your behalf and see others who are in any voice channel or call",
                 SCOPE_DM_CHANNELS_READ: "See information about the DMs and GDMs you are in",
+                SCOPE_DM_YOU: "Send you direct messages",
                 SCOPE_ROLE_CONNECTIONS_WRITE: "Update your connection and metadata for this application",
                 SCOPE_WEBHOOK_INCOMING: "Adds a webhook to a channel",
                 SCOPE_WEBHOOK_INCOMING_DESCRIPTION: "This allows the app to send messages to a channel on Discord.",
@@ -4939,9 +4948,9 @@
                 SETTINGS_DATA_PRIVACY_CONTROLS: "How We Use Your Data",
                 DATA_PRIVACY_CONTROLS: "How we use your data",
                 DATA_PRIVACY_CONTROLS_USAGE_STATISTICS_TITLE: "Use data to improve Discord",
-                DATA_PRIVACY_CONTROLS_USAGE_STATISTICS_NOTE: "This setting allows us to use and process information about how you navigate and use Discord for analytical purposes. For example, it allows us to include you in new feature experiments we test. [Learn more about it here.]({helpdeskArticle})",
-                DATA_PRIVACY_CONTROLS_PERSONALIZATION_TITLE: "Use data to customize my Discord experience",
-                DATA_PRIVACY_CONTROLS_PERSONALIZATION_NOTE_LEARN_MORE: "This setting allows us to use information, such as who you talk to and what games you play, to customize Discord for you. [Learn more about it here.]({helpdeskArticle})",
+                DATA_PRIVACY_CONTROLS_USAGE_STATISTICS_NOTE: "This setting allows us to use and process your information to understand and improve our services. [Learn more about it here.]({helpdeskArticle})",
+                DATA_PRIVACY_CONTROLS_PERSONALIZATION_TITLE: "Use data to personalize my Discord experience",
+                DATA_PRIVACY_CONTROLS_PERSONALIZATION_NOTE_LEARN_MORE: "This setting allows us to use information, such as who you talk to and what games you play, to personalize Discord for you. [Learn more about it here.]({helpdeskArticle})",
                 DATA_PRIVACY_CONTROLS_BASIC_SERVICE_TITLE: "Use data to make Discord work",
                 DATA_PRIVACY_CONTROLS_PERSONAL_DATA_TITLE: "Request all of my Data",
                 DATA_PRIVACY_CONTROLS_BASIC_SERVICE_NOTE: "We need to store and process some data in order to provide you the basic Discord service, such as your messages, what servers you’re in and your Direct Messages. By using Discord, you allow us to provide this basic service. You can stop this by [Disabling or Deleting your account](onClick).",
@@ -4963,12 +4972,12 @@
                 USER_DM_SETTINGS_QUESTION: "Do you want to also apply this change to all your existing servers?",
                 NEW_GUILDS_DM_ALLOWED: "Allow direct messages from server members",
                 USER_DROPS_SETTINGS: "Promo Settings",
-                USER_DROPS_SETTINGS_DROPS_OPTED_OUT: "In-game rewards (aka Drops)",
-                USER_DROPS_SETTINGS_DROPS_OPTED_OUT_NOTE: "Use the information about what games you play to tell you about Drops opportunities and to complete Drops Quests.",
+                USER_DROPS_SETTINGS_DROPS_OPTED_OUT: "In-game rewards (aka Quests)",
+                USER_DROPS_SETTINGS_DROPS_OPTED_OUT_FORMATTED: "Use information about how you use Discord such as what games you play to tell you about Quests or other in-game reward opportunities. [Learn more about it here.]({helpdeskArticle})",
                 USER_DM_SETTINGS_TITLE: "Server Privacy",
                 USER_DM_SETTINGS_DESCRIPTION: "Do you want to also apply this change to all your existing servers? You can also disable direct messages on individual servers by visiting that server's settings page.",
-                DROPS_REQUEST_FEEDBACK_OPT_OUT: "Drops is currently in beta - we'd like to learn more about why you turned it off. [Feedback Survey]({feedbackURL})",
-                DROPS_REQUEST_FEEDBACK_SUCCESS: "Drops is currently in beta - thanks for participating, now we'd like to hear from you! [Feedback Survey]({feedbackURL})",
+                DROPS_REQUEST_FEEDBACK_OPT_OUT: "Quests is currently in beta - we'd like to learn more about why you turned it off. [Feedback Survey]({feedbackURL})",
+                DROPS_REQUEST_FEEDBACK_SUCCESS: "Quests is currently in beta - thanks for participating, now we'd like to hear from you! [Feedback Survey]({feedbackURL})",
                 DROPS_READ_BLOG_TO_ENABLE: 'You must be looking for Discord Quests! If you\'re seeing this message, we need to tweak some settings. To enable it, you\'ll need to go to Settings -> Privacy & Safety and enable both "Use data to customize my Discord experience" and "In-game rewards (aka Quests)" settings.\n\n[Read more in our FAQs]({blogURL})',
                 DROPS_ELIGIBILITY_ENROLLMENT_PRIMARY_CTA: "Enroll Now",
                 DROPS_AVAILABLE: "Quests Available",
@@ -7102,7 +7111,7 @@
                 PREMIUM_SUBSCRIPTION_CURRENT_LABEL: "Current Subscription",
                 PREMIUM_SUBSCRIPTION_NEW_TOTAL: "New Subscription Total",
                 PREMIUM_SUBSCRIPTION_CANCELLED: "{planName} Canceled",
-                PREMIUM_SUBSCRIPTION_ADJUSTMENT_TOOLTIP: "This adjustment includes prorations, discounts, and refunds.",
+                PREMIUM_SUBSCRIPTION_ADJUSTMENT_TOOLTIP: "This adjustment includes prorations, discounts, applicable taxes, and refunds.",
                 PREMIUM_SUBSCRIPTION_GUILD_SUBSCRIPTION_ADJUSTMENT_TOOLTIP: "**Why am I seeing this?**\n\nYou are purchasing a plan change. Your Server Boosts are being updated accordingly.",
                 PREMIUM_SUBSCRIPTION_GUILD_SUBSCRIPTION_ADJUSTMENT_TEXT: "You are purchasing a plan change. Your Server Boosts are being updated accordingly.",
                 PREMIUM_SUBSCRIPTION_PERIOD_RESET_NOTICE: "Your next renewal date will be **{renewalDate, date, medium}**.",
@@ -9321,11 +9330,11 @@
                 NUF_ASK_FRIEND_SERVER_INVITE: "Ask your friends to invite you to their servers, which are places for hanging out and talking.",
                 NUF_CREATE_GUILD_CTA_DESCRIPTION: "You can also [start your own server](onClick)",
                 DATA_PRIVACY_RATE_LIMIT_TITLE: "Sorry about that",
-                USAGE_STATISTICS_DISABLE_MODAL_TITLE: "Turn off some usage statistics?",
-                USAGE_STATISTICS_DISABLE_MODAL_BODY: "If you turn this off, we’ll stop processing new data for analytics. You will lose access to new experimental features and usage-based improvements to features like voice chat. Your old data will no longer be directly tied to you. If you'd like to further assert your right to object to our processing of your data, email privacy@discord.com.",
+                USAGE_STATISTICS_DISABLE_MODAL_TITLE: "Turn off use data to improve Discord?",
+                USAGE_STATISTICS_DISABLE_MODAL_BODY: "If you turn this off, we’ll stop processing new data for analytics. You will lose access to new experimental features and usage-based improvements to features like voice chat. If you'd like to further assert your right to object to our processing of your data, email privacy@discord.com.",
                 USAGE_STATISTICS_DISABLE_MODAL_CONFIRM: "Yes, I'm sure",
                 USAGE_STATISTICS_DISABLE_MODAL_CANCEL: "No, take me back!",
-                PERSONALIZATION_DISABLE_MODAL_TITLE: "Turn off customization?",
+                PERSONALIZATION_DISABLE_MODAL_TITLE: "Turn off personalization?",
                 PERSONALIZATION_DISABLE_MODAL_BODY: "By turning this off you lose access to things like personalized recommendations and suggestions. You won’t be able to recover them in the future!",
                 PERSONALIZATION_DISABLE_MODAL_CONFIRM: "Yes, I'm sure",
                 PERSONALIZATION_DISABLE_MODAL_CANCEL: "No, take me back!",
@@ -9591,6 +9600,8 @@
                 USER_PROFILE_MUTUAL_GUILDS_COUNT: "member of {count, plural, =0 {0 servers} one {1 server} other {{count} servers}}",
                 USER_PROFILE_MUTUAL_FRIENDS_PLACEHOLDER: "Mutual Friends",
                 USER_PROFILE_MUTUAL_GUILDS_PLACEHOLDER: "Mutual Servers",
+                USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP: "Click to see all mutual friends",
+                USER_PROFILE_MUTUAL_GUILDS_TOOLTIP: "Click to see all mutual servers",
                 USER_PROFILE_MUTUALS_TITLE: "Mutuals",
                 PROFILE_JOIN_VOICE_CHANNEL: "Join Voice Channel",
                 PROFILE_IN_VOICE_CALL: "In a voice call",
@@ -9701,6 +9712,7 @@
                 MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CARD_HEADER: "Your recipient will receive:",
                 MOBILE_CUSTOM_GIFT_TITLE_WITH_PLAN: "Gift a {nitroTierName} membership",
                 MOBILE_CUSTOM_GIFT_DURATION_LABEL: "Gift duration",
+                MOBILE_CUSTOM_GIFT_DURATION_AVATAR_LABEL: "Gift {username}:",
                 MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH: "Gift {count, plural, one {# month} other {# months}} of {nitroTierName}",
                 MOBILE_CUSTOM_GIFT_DURATION_SELECTION_YEAR: "Gift {count, plural, one {# year} other {# years}} of {nitroTierName}",
                 MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH_WITH_USERNAME: "Gift {username} {count, plural, one {# month} other {# months}} of {nitroTierName}",
@@ -10301,6 +10313,12 @@
                 APPLICATION_COMMAND_FILE_ATTACHMENT: "Please attach a file",
                 APPLICATION_COMMAND_MENTION_CONFIRM_HEADER: "Clear message?",
                 APPLICATION_COMMAND_MENTION_CONFIRM_BODY: "Looks like you've already written something. Do you want to clear it and use a command?",
+                APPLICATION_COMMAND_USER_INSTALL_EDUCATION: "You can use this app anywhere on Discord. Responses are visible only to you in servers with over {betaUserLimit} people.",
+                APPLICATION_COMMAND_USER_INSTALL_EDUCATION_MOBILE: "App will respond to you privately",
+                APPLICATION_COMMAND_USER_INSTALL_BETA_EPHEMERAL: "Only you can see this message during beta.\n\n[Why am I seeing this?]({learnMoreUrl}) • [Dismiss](handleDelete)",
+                APPLICATION_COMMAND_USER_INSTALL_BETA_EPHEMERAL_MOBILE: "Only you can see this message during beta • [Dismiss](handleDelete)",
+                APPLICATION_COMMAND_USER_INSTALL_VIEW_HELP_ARTICLE: "View Help Article",
+                APPLICATION_COMMAND_USER_INSTALL_LEARN_MORE: "[Learn More]({learnMoreUrl})",
                 MJ_CHATBAR_BODY: "Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.",
                 APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
                 INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
@@ -16748,6 +16766,8 @@
                 POLL_VOTES_NO_RESULTS_SUBTITLE: "There are no votes for this answer",
                 POLL_COACHMARK_TITLE: "NEW! Polls are here.",
                 POLL_COACHMARK_SUBTITLE: "Plan events, gather opinions, or drop a silly question in the chat.",
+                POLL_COACHMARK_CTA: "Start a poll now!",
+                POLL_COACHMARK_DISMISS: "Maybe later.",
                 POLL_NOT_INTERACTIVE: "View original message to interact",
                 POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
                 POLL_NO_VOTES_FOR_ANSWER_BODY: "There are no votes for this answer.",
@@ -17228,13 +17248,6 @@
                 FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
                 KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
                 PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
-                MANAGE_AUTHORIZED_APP: "Manage Authorized App",
-                ADD_TO_USER: "Add to my apps",
-                ADD_TO_USER_SUBTITLE: "Add app to your account to use anywhere",
-                ADD_TO_GUILD: "Add to server",
-                ADD_TO_GUILD_SUBTITLE: "Customize your server by adding this app",
-                USER_APPS_LEARN_MORE: "To learn more about apps on Discord, visit our [Help Center]({helpUrl}).",
-                SCOPE_DM_SELF: "Send you direct messages",
                 MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff.",
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_HEADER: "Contact Crisis Text Line",
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_DESCRIPTION: "Get 24-hour, live support from a counselor. To start, text DISCORD to 741-741.",
@@ -18492,7 +18505,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275565", ", Version Hash: ").concat("ede2af38790d4d06db86eca0df1233338e14842e")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276026", ", Version Hash: ").concat("416792115fba36046cf1d082fe784f5e37b3a426")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -18673,7 +18686,7 @@
                     return t
                 }
             }), E("222007");
-            var t, o = E("907002");
+            var t, o = E("146606");
 
             function n(e, _) {
                 let E = e.findIndex(_);
@@ -18738,7 +18751,7 @@
                     return n
                 }
             });
-            var t = E("907002"),
+            var t = E("146606"),
                 o = E("102535");
             let n = new o.default;
             t.Globals.assign({
@@ -20860,8 +20873,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "275565", "275565"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275565")), _ = 0), _
+                let _ = parseInt((e = "276026", "276026"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276026")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37122,4 +37135,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.29b5105bd09bfeabb7a0.js.map
+//# sourceMappingURL=76039.5890070e58f25f127f87.js.map

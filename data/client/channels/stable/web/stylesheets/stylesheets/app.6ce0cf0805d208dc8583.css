@@ -1859,7 +1859,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin: 16px 0
+    margin: 32px 0 16px
 }
 
 .container__7bb59 {
@@ -1867,13 +1867,18 @@
     flex-direction: column
 }
 
+.rows__4923b {
+    display: grid;
+    grid-auto-rows: 1fr
+}
+
 .row_eb598a {
     display: flex;
     cursor: pointer;
     align-items: center;
-    padding: 8px;
-    gap: 8px;
-    background: var(--background-tertiary)
+    background: var(--background-tertiary);
+    padding-left: 16px;
+    gap: 12px
 }
 
 .row_eb598a.inApp__731d4 {
@@ -1894,12 +1899,27 @@
     border-bottom-right-radius: 8px
 }
 
-.row_eb598a:not(:last-child) {
+.row_eb598a:not(:last-child) .rowInner__465aa {
     border-bottom: 1px solid var(--background-modifier-hover)
 }
 
+.rowInner__465aa {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+    padding: 8px 16px 8px 0
+}
+
+.rowDetails__4f215 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2px
+}
+
 .leftIcon_f180e1 {
-    padding: 8px;
+    padding: 4px;
     color: var(--interactive-normal)
 }
 
@@ -1908,11 +1928,13 @@
 }
 
 .learnMore__02804 {
-    margin: 16px 0
+    margin: 16px 0;
+    text-align: center
 }
 
 .oauth2Wrapper_ff9227 {
     min-width: 280px;
+    width: 100%;
     max-width: var(--custom-o-auth-2-page-oauth-2-max-width);
     min-height: var(--custom-o-auth-2-page-oauth-2-min-height);
     display: flex;
@@ -14932,7 +14954,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    padding: 8px 16px
+    padding: 8px 16px;
+    gap: 8px
 }
 
 .name__6775a {
@@ -14946,16 +14969,22 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--interactive-normal);
-    margin-left: 8px
+    color: var(--interactive-normal)
 }
 
 .error__62764 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--red-400);
-    margin-left: 8px
+    color: var(--red-400)
+}
+
+.bar_c374f6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 12px
 }
 
 .clipContainer__99c30 {
@@ -18993,10 +19022,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     margin-top: 8px
 }
 
-.slash_c0ba36 {
-    color: var(--red-400)
-}
-
 .fauxDisabled_e7913a {
     opacity: .5
 }
@@ -22587,6 +22612,44 @@ input[type=checked]:focus-visible+.label__8e2ef {
 
 .buttonsContainer_ce5947 :nth-child(2) {
     margin-left: 8px
+}
+
+.tooltip__2b28e {
+    position: relative;
+    left: 12px
+}
+
+.button__986b9 {
+    min-height: 50px;
+    justify-content: flex-start;
+    gap: 0 10px;
+    padding: 6px;
+    background-color: var(--white);
+    border-radius: var(--radius-xs);
+    color: var(--primary-600)
+}
+
+.button__986b9:hover {
+    background-color: var(--green-160)
+}
+
+.button__986b9:before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px
+}
+
+.button__986b9>:last-child {
+    margin: 0
+}
+
+.pollsCtaButton__8ab5b:before {
+    background: url(/assets/0123e98c60ee16cd0566.svg)no-repeat center center
+}
+
+.dismissButton_dfc09e:before {
+    background: url(/assets/065d239534e01b38b18b.svg)no-repeat center center
 }
 
 .animation__1b6f2 {
@@ -26873,11 +26936,18 @@ html .progress__4ef76 {
     flex-direction: row;
     margin-top: 10px;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
+    width: 100%
 }
 
 .questControlsTitle_f61d46 {
     margin-right: 10px
+}
+
+@media(max-width:960px) {
+    .questControls__9f18c {
+        display: none
+    }
 }
 
 .questsCard_a68cbc {
@@ -69886,6 +69956,15 @@ html .invoiceCancelRow_c1bfe7 {
     }
 }
 
+.confettiCanvas__5f200 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none
+}
+
 .flipCardContainer__314ea {
     perspective: 1e3px
 }
@@ -70262,6 +70341,15 @@ html .invoiceCancelRow_c1bfe7 {
 .sectionHeaderSeeAll_d4277d {
     text-align: center;
     flex-grow: 1
+}
+
+.confettiCanvas_e46a8e {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none
 }
 
 .container__5980c {
@@ -119863,6 +119951,13 @@ html .invoiceCancelRow_a8669b {
     background-color: var(--primary-700)
 }
 
+.headerEasterEgg_d26151 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    --custom-user-premium-guild-subscription-easter-egg-size: 120px
+}
+
 .buttonIcon__3ae1d {
     width: 18px;
     height: 18px;
@@ -127602,6 +127697,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--primary-600);
     --chat-swipe-to-reply-background: var(--primary-660);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --coachmark-bg: var(--primary-800);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -127916,6 +128012,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--white-500);
     --chat-swipe-to-reply-background: var(--primary-160);
     --chat-swipe-to-reply-gradient-background: hsl(var(--white-500-hsl) / 0.4);
+    --coachmark-bg: var(--white-500);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.54);
     --control-brand-foreground: var(--brand-500);
     --control-brand-foreground-new: var(--brand-500);
@@ -128230,6 +128327,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --coachmark-bg: var(--plum-19);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -128544,6 +128642,7 @@ div.nagbar_c731ff {
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
+    --coachmark-bg: var(--plum-17);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -130042,4 +130141,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ddcefae7709a5727f0f1.css.map*/
+/*# sourceMappingURL=app.6ce0cf0805d208dc8583.css.map*/
