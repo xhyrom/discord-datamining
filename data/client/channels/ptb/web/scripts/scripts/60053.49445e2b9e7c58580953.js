@@ -35667,7 +35667,7 @@
                 drawGradientRect(e, t, n, i) {
                     return null == this.context ? o.DrawResultStatus.Failure : (this.setGradientFillStyle(e, t, n), this.drawRect(i, !0, !1), o.DrawResultStatus.Success)
                 }
-                drawGradientRoundedRect(e, t, n, i, l) {
+                drawRoundedGradientRect(e, t, n, i, l) {
                     return null == this.context ? o.DrawResultStatus.Failure : (this.setGradientFillStyle(e, t, n), this.drawRoundedRect(i, l, !0, !1), o.DrawResultStatus.Success)
                 }
                 constructor(e, t) {
@@ -82379,4 +82379,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.4d20b33c74b123e491e0.js.map
+//# sourceMappingURL=60053.49445e2b9e7c58580953.js.map

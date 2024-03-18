@@ -69455,73 +69455,6 @@ html .invoiceCancelRow_c1bfe7 {
     background: linear-gradient(279deg, hsl(var(--black-500-hsl)/0)0%, hsl(var(--black-500-hsl)/.1)50.8%, hsl(var(--black-500-hsl)/0)100%)
 }
 
-.cardDescriptionTenureReward_bca63f {
-    justify-content: flex-end;
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)20%, hsl(var(--primary-660-hsl)/.3)80%, hsl(var(--primary-660-hsl)/0)95%)
-}
-
-.descriptionCTATenureReward__55e19 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center
-}
-
-.descriptionCTATenureReward__55e19>img {
-    margin-right: 4px
-}
-
-.cardDescription_d7433f {
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%)
-}
-
-.theme-light .cardDescription_d7433f {
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
-}
-
-@keyframes glowEffect_a3ec8f {
-    0% {
-        box-shadow: var(--elevation-medium)
-    }
-
-    50% {
-        box-shadow: 0 0 10px 10px hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.5)
-    }
-
-    to {
-        box-shadow: var(--elevation-medium)
-    }
-}
-
-.glowingCardContainer__7d35d {
-    animation: glowEffect_a3ec8f 3s ease-out 2s 1 forwards;
-    border-radius: 4px
-}
-
-.glowingCardContainer__7d35d:hover:after,
-.glowingCardContainer__7d35d:hover:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: inherit;
-    box-sizing: border-box;
-    content: "";
-    pointer-events: none
-}
-
-.glowingCardContainer__7d35d:hover:after {
-    z-index: 29;
-    border: 1px solid var(--premium-tier-2-purple-for-gradients);
-    -webkit-mask: linear-gradient(20deg, #000, rgba(0, 0, 0, 0));
-    mask: linear-gradient(20deg, #000, rgba(0, 0, 0, 0))
-}
-
-.glowingCardContainer__7d35d:hover:before {
-    z-index: 29;
-    border: 1px solid var(--premium-tier-2-purple-for-gradients-2)
-}
-
 .toggleSwitch__7657a {
     position: relative;
     display: flex;
@@ -69822,6 +69755,73 @@ html .invoiceCancelRow_c1bfe7 {
 
 .theme-light .cover__590cf {
     background-image: linear-gradient(to bottom, hsl(var(--white-500-hsl)/.71)0%, var(--background-primary)85%)
+}
+
+.cardDescriptionTenureReward_bca63f {
+    justify-content: flex-end;
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)20%, hsl(var(--primary-660-hsl)/.3)80%, hsl(var(--primary-660-hsl)/0)95%)
+}
+
+.descriptionCTATenureReward__55e19 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+
+.descriptionCTATenureReward__55e19>img {
+    margin-right: 4px
+}
+
+.cardDescription_d7433f {
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%)
+}
+
+.theme-light .cardDescription_d7433f {
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
+}
+
+@keyframes glowEffect_a3ec8f {
+    0% {
+        box-shadow: var(--elevation-medium)
+    }
+
+    50% {
+        box-shadow: 0 0 10px 10px hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.5)
+    }
+
+    to {
+        box-shadow: var(--elevation-medium)
+    }
+}
+
+.glowingCardContainer__7d35d {
+    animation: glowEffect_a3ec8f 3s ease-out 2s 1 forwards;
+    border-radius: 4px
+}
+
+.glowingCardContainer__7d35d:hover:after,
+.glowingCardContainer__7d35d:hover:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none
+}
+
+.glowingCardContainer__7d35d:hover:after {
+    z-index: 29;
+    border: 1px solid var(--premium-tier-2-purple-for-gradients);
+    -webkit-mask: linear-gradient(20deg, #000, rgba(0, 0, 0, 0));
+    mask: linear-gradient(20deg, #000, rgba(0, 0, 0, 0))
+}
+
+.glowingCardContainer__7d35d:hover:before {
+    z-index: 29;
+    border: 1px solid var(--premium-tier-2-purple-for-gradients-2)
 }
 
 .circleContainer__04082 {
@@ -130167,4 +130167,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c38446922c8234ce1bf7.css.map*/
+/*# sourceMappingURL=app.624a9de78160b53f64c5.css.map*/
