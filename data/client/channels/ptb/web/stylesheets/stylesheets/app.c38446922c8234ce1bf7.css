@@ -85756,6 +85756,16 @@ html .tabBadge__002b3 {
     border: .5px solid var(--white-500)
 }
 
+.darkText__72f6c {
+    color: var(--black-500);
+    border-color: var(--black-500)
+}
+
+.lightText__41dfc {
+    color: var(--white-500);
+    border-color: var(--white-500)
+}
+
 .badge__38d19 {
     background-color: var(--white-500);
     color: var(--black-500)
@@ -85967,6 +85977,14 @@ html .tabBadge__002b3 {
     width: 160px;
     top: 20px;
     margin: 0 auto
+}
+
+.lightText__22096 {
+    color: var(--white-500)
+}
+
+.darkText_da38d9 {
+    color: var(--black-500)
 }
 
 .avatarDecoration__9affd {
@@ -86968,6 +86986,14 @@ html .tabBadge__002b3 {
 
 .unlockDiscountButton__10cd2:hover {
     background-color: hsl(var(--white-500-hsl)/.1)
+}
+
+.lightText__31272 {
+    color: var(--white-500)
+}
+
+.darkText__6f3ee {
+    color: var(--black-500)
 }
 
 @keyframes placeholderPulse__86815 {
@@ -130141,4 +130167,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6ce0cf0805d208dc8583.css.map*/
+/*# sourceMappingURL=app.c38446922c8234ce1bf7.css.map*/

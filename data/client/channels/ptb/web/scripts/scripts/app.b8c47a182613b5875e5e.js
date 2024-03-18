@@ -5344,8 +5344,10 @@
                 collectedInfoContainer: "collectedInfoContainer_d8324a",
                 collectedTextContainer: "collectedTextContainer__3e39d",
                 confettiCanvas: "confettiCanvas__125ed",
+                darkText: "darkText_da38d9",
                 decorationBanner: "decorationBanner_d5fe2e",
                 default: "default__48f1b",
+                lightText: "lightText__22096",
                 modalCloseButton: "modalCloseButton_a426a9",
                 modalContent: "modalContent__613a4",
                 modalInner: "modalInner__0113c",
@@ -5388,7 +5390,9 @@
         483665: function(e, t, n) {
             "use strict";
             e.exports = {
-                container: "container__85909"
+                container: "container__85909",
+                darkText: "darkText__72f6c",
+                lightText: "lightText__41dfc"
             }
         },
         53248: function(e, t, n) {
@@ -5566,9 +5570,11 @@
                 collectiblePreviewsContainerNoChat: "collectiblePreviewsContainerNoChat__8a50e collectiblePreviewsContainer_b11cca",
                 collectiblePreviewsContainerWithChat: "collectiblePreviewsContainerWithChat_f587a9 collectiblePreviewsContainer_b11cca",
                 collectionText: "collectionText__817ba",
+                darkText: "darkText__6f3ee",
                 description: "description__86be1",
                 disclaimer: "disclaimer_ede4bd",
                 headingWithItemTypePill: "headingWithItemTypePill_a30a34",
+                lightText: "lightText__31272",
                 mockInput: "mockInput_fd89c6",
                 mockInputButton: "mockInputButton_f0a25d",
                 mockMessage: "mockMessage_ffed46",
