@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_nitro_tenure_reward_card",
+    "label": "Nitro Tenure Reward Card",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables the nitro tenure reward card for users"
+    ],
+    "hash": 2962984975,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enableNitroTenureRewardCard"
+    ]
+  }
+}
