@@ -17258,6 +17258,7 @@
   "PACKAGES_HELP_5": "\"Oh that's right, it's {percent, number}%.\"",
   "PACKAGES_HELP_6": "\"Now please go thank your mail delivery person.\"",
   "PACKAGES_HELP_7": "\"They'll appreciate it.\"",
+  "PACKAGES_FOOTER_NOTE": "\"Missed your mail delivery person? [They'll try again tomorrow.]({url})\"",
   "PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_YES": "\"Yes\"",
   "PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_NO": "\"No\"",
   "PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_1": "\"Is this a joke?\"",
