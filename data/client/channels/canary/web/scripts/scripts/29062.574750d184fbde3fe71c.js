@@ -67242,27 +67242,29 @@
             }
 
             function W(e) {
-                var t, n;
+                var t, n, i, s;
                 let {
-                    channelId: i,
-                    messageId: s,
-                    attachmentIds: r,
-                    embedIds: a
+                    channelId: r,
+                    messageId: a,
+                    attachmentIds: o,
+                    embedIds: l
                 } = e;
-                if (null == i || null == s || (null !== (t = null == r ? void 0 : r.length) && void 0 !== t ? t : 0) === 0 && (null !== (n = null == a ? void 0 : a.length) && void 0 !== n ? n : 0) === 0) return;
-                let o = m.default.getChannel(i);
+                if (null == r || null == a || (null !== (t = null == o ? void 0 : o.length) && void 0 !== t ? t : 0) === 0 && (null !== (n = null == l ? void 0 : l.length) && void 0 !== n ? n : 0) === 0) return;
+                let u = m.default.getChannel(r);
                 v.default.track(N.AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
-                    channel_id: i,
-                    guild_id: null == o ? void 0 : o.guild_id,
-                    message_id: s,
-                    embed_ids: a,
+                    channel_id: r,
+                    guild_id: null == u ? void 0 : u.guild_id,
+                    message_id: a,
+                    embed_ids: l,
                     user_is_underage: (0, h.isCurrentUserTeen)(),
                     scan_timeout_duration: I.MESSAGE_SCAN_TIMEOUT,
-                    attachment_ids_v2: r
+                    attachment_ids_v2: o
                 }), E.default.increment({
                     name: c.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT,
                     tags: ["metricVersion:".concat(1)]
-                })
+                }), E.default.distribution({
+                    name: c.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION
+                }, (null !== (i = null == o ? void 0 : o.length) && void 0 !== i ? i : 0) + (null !== (s = null == l ? void 0 : l.length) && void 0 !== s ? s : 0))
             }
 
             function z(e) {
@@ -67282,7 +67284,9 @@
                     num_of_attachments_pending_scan: i,
                     num_of_embeds: s,
                     num_of_embeds_pending_scan: r
-                })
+                }), E.default.distribution({
+                    name: c.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED
+                }, i + r)
             }
 
             function q(e) {
@@ -87910,11 +87914,12 @@
                     this._metrics.push(n), (t || this._metrics.length >= 100) && this._flush()
                 }
                 distribution(e, t) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                        i = {
-                            ...this._getMetricWithDefaults(e, "distribution"),
-                            value: t
-                        };
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+                    if (!(0, u.isMetricsEndpointV2Enabled)("distribution-metric")) return;
+                    let i = {
+                        ...this._getMetricWithDefaults(e, "distribution"),
+                        value: t
+                    };
                     this._metrics.push(i), (n || this._metrics.length >= 100) && this._flush()
                 }
                 _flush() {
@@ -87925,8 +87930,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710800967378",
-                                    build_number: "276288"
+                                    built_at: "1710801743729",
+                                    build_number: "276303"
                                 }
                             },
                             retries: 1
@@ -125366,7 +125371,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "09aa2b29d4dd6a44f50e94511da84610c843e53e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "da7ff2bd202fd82a93d97456c39e098b4f5736db"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134864,7 +134869,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "276288"
+                                build_number: "276303"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152136,7 +152141,7 @@
                 MetricEvents: function() {
                     return i
                 }
-            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", s.QUEST_CONTENT_IMPRESSION = "quest_content_impression", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", s.IMAGE_LOAD_ERROR = "image_load_error"
+            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", s.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED = "explicit_media_pending_message_loaded", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION = "explicit_media_scan_client_timed_out_distribution", s.QUEST_CONTENT_IMPRESSION = "quest_content_impression", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", s.IMAGE_LOAD_ERROR = "image_load_error"
         },
         561467: function(e, t, n) {
             "use strict";
@@ -152587,4 +152592,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.710be21aa1ea1220d2fb.js.map
+//# sourceMappingURL=29062.574750d184fbde3fe71c.js.map
