@@ -16955,6 +16955,8 @@
   "MEMBER_LIST_CONTENT_FEED_TIMESTAMP_FOR_HOURS": "\"for {hours}h\"",
   "MEMBER_LIST_CONTENT_FEED_TIMESTAMP_ACTIVE": "\"{minutes, plural, =-1 {} other {{minutes}:}}{seconds, plural, =-1 {} other {{seconds}}}\"",
   "MEMBER_LIST_CONTENT_FEED_FIRST_TIME": "\"First time\"",
+  "MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA": "\"Watched **{mediaTitle}**\"",
+  "MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA": "\"{userName} watched **{mediaTitle}**\"",
   "CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE": "\"Activity\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
