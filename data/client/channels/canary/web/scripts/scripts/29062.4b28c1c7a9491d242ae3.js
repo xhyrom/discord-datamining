@@ -84758,6 +84758,56 @@
                     }
                 }
         },
+        817720: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEligibleForWebAudioAPI: function() {
+                    return r
+                }
+            });
+            var i = n("862205");
+            let s = (0, i.createExperiment)({
+                kind: "user",
+                id: "2024-03_web_audio_api_rollout",
+                label: "Web Audio API Rollout",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable Web Audio API usage",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function r(e) {
+                let {
+                    location: t
+                } = e, {
+                    enabled: n
+                } = s.getCurrentConfig({
+                    location: t
+                }, {
+                    autoTrackExposure: !1
+                });
+                return n
+            }
+        },
+        804998: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getOrCreateAudioContext: function() {
+                    return s
+                }
+            });
+            let i = null;
+
+            function s() {
+                return null == i && (i = new AudioContext), i
+            }
+        },
         711326: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87875,8 +87925,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710798362985",
-                                    build_number: "276240"
+                                    built_at: "1710798527294",
+                                    build_number: "276242"
                                 }
                             },
                             retries: 1
@@ -125316,7 +125366,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "0f0e4cab3870d6cfb8d294ccf02f79fb081cd363"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "02ae4d1ebfd438fdca90e2dece8d2659e1cf9a10"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134814,7 +134864,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "276240"
+                                build_number: "276242"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -137865,43 +137915,50 @@
             let i;
             n.r(t), n.d(t, {
                 createSoundForPack: function() {
-                    return o
-                },
-                createSound: function() {
                     return l
                 },
-                playSound: function() {
+                createSound: function() {
                     return u
+                },
+                playSound: function() {
+                    return d
                 }
             });
-            var s = n("870696"),
-                r = n("319291"),
-                a = n("102985");
-
-            function o(e, t) {
-                var n;
-                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
-                    s = (0, r.default)(t);
-                return l(null !== (n = s[e]) && void 0 !== n ? n : e, e, i)
+            var s = n("817720"),
+                r = n("870696"),
+                a = n("319291"),
+                o = n("102985");
+            {
+                let e = (0, s.isEligibleForWebAudioAPI)({
+                        location: "SoundUtils"
+                    }),
+                    t = n("895737");
+                i = e ? t.WebAudioAPISound : t.WebAudioSound
             }
 
             function l(e, t) {
+                var n;
+                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
+                    s = (0, a.default)(t);
+                return u(null !== (n = s[e]) && void 0 !== n ? n : e, e, i)
+            }
+
+            function u(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
                 return new i(e, t, n)
             }
 
-            function u(e) {
+            function d(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
                     i = arguments.length > 2 ? arguments[2] : void 0;
-                if (a.default.disableSounds) return;
-                let o = (0, r.default)(s.default.getSoundpack()),
-                    u = l(null !== (t = o[e]) && void 0 !== t ? t : e, e, n);
-                return null != i ? u.playWithListener().then(e => {
+                if (o.default.disableSounds) return;
+                let s = (0, a.default)(r.default.getSoundpack()),
+                    l = u(null !== (t = s[e]) && void 0 !== t ? t : e, e, n);
+                return null != i ? l.playWithListener().then(e => {
                     e && i()
-                }) : u.play(), u
+                }) : l.play(), l
             }
-            i = n("895737").WebAudioSound
         },
         271560: function(e, t, n) {
             "use strict";
@@ -139431,40 +139488,54 @@
             "use strict";
             n.r(t), n.d(t, {
                 playGiftSound: function() {
-                    return c
+                    return m
                 },
                 WebAudioSound: function() {
-                    return _
+                    return S
+                },
+                WebAudioAPISound: function() {
+                    return v
                 }
-            }), n("70102");
-            var i = n("917351"),
-                s = n.n(i),
-                r = n("520497"),
-                a = n("812809"),
-                o = n("42887"),
-                l = n("773336");
-            let u = "default",
-                d = u;
-
-            function c(e, t) {
-                let n = new Audio((0, r.default)(e));
-                n.volume = (0, a.default)(t), n.play()
+            }), n("222007"), n("70102");
+            var i, s, r = n("917351"),
+                a = n.n(r),
+                o = n("804998"),
+                l = n("520497"),
+                u = n("812809"),
+                d = n("42887"),
+                c = n("773336");
+            let f = "default",
+                _ = f;
+            (s = i || (i = {})).Stopped = "stopped", s.Playing = "playing", s.Looping = "looping", s.Paused = "paused";
+            let E = new Map;
+            async function h(e) {
+                let t = await fetch(n("89400")("../../sounds/".concat(e, ".mp3").replace("../../sounds/", "./"))).then(e => e.arrayBuffer());
+                return (0, o.getOrCreateAudioContext)().decodeAudioData(t)
+            }
+            async function g(e) {
+                let t = E.get(e);
+                return null == t && (t = h(e), E.set(e, t)), await t
             }
 
-            function f() {
+            function m(e, t) {
+                let n = new Audio((0, l.default)(e));
+                n.volume = (0, u.default)(t), n.play()
+            }
+
+            function p() {
                 null != window.navigator.mediaDevices && window.navigator.mediaDevices.enumerateDevices().then(e => {
-                    let t = o.default.getOutputDevices(),
-                        n = s(t).sortBy(e => e.index).findIndex(e => e.id === o.default.getOutputDeviceId()),
-                        i = t[o.default.getOutputDeviceId()],
-                        r = e.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
-                        a = r[n];
-                    null != i && (null == a || a.label !== i.name) && (a = r.find(e => e.label === i.name)), d = null != a ? a.deviceId : u
+                    let t = d.default.getOutputDevices(),
+                        n = a(t).sortBy(e => e.index).findIndex(e => e.id === d.default.getOutputDeviceId()),
+                        i = t[d.default.getOutputDeviceId()],
+                        s = e.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
+                        r = s[n];
+                    null != i && (null == r || r.label !== i.name) && (r = s.find(e => e.label === i.name)), _ = null != r ? r.deviceId : f
                 }).catch(() => {
-                    d = u
+                    _ = f
                 })
             }
-            l.isPlatformEmbedded && (o.default.addChangeListener(f), f());
-            class _ {
+            c.isPlatformEmbedded && (d.default.addChangeListener(p), p());
+            class S {
                 get volume() {
                     return this._volume
                 }
@@ -139506,12 +139577,75 @@
                     return this._audio = null !== (e = this._audio) && void 0 !== e ? e : new Promise((e, t) => {
                         let i = new Audio;
                         i.src = n("89400")("../../sounds/".concat(this.name, ".mp3").replace("../../sounds/", "./")), i.onloadeddata = () => {
-                            i.volume = Math.min(o.default.getOutputVolume() / 100 * this._volume, 1), l.isPlatformEmbedded && i.setSinkId(d), e(i)
+                            i.volume = Math.min(d.default.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && i.setSinkId(_), e(i)
                         }, i.onerror = () => t(Error("could not play audio")), i.onended = () => this._destroyAudio(), i.load()
                     }), this._audio
                 }
                 constructor(e, t, n) {
                     this.name = e, this._volume = n
+                }
+            }
+            class v {
+                get volume() {
+                    return this._volume
+                }
+                set volume(e) {
+                    this._ensureAudio().then(t => {
+                        let {
+                            gainNode: n,
+                            context: i
+                        } = t;
+                        this._volume = e, n.gain.setValueAtTime(e, i.currentTime)
+                    })
+                }
+                loop() {
+                    "looping" !== this._state && (this._state = "looping", this._ensureAudio().then(e => {
+                        let {
+                            source: t
+                        } = e;
+                        "looping" === this._state && (t.loop = !0, t.start())
+                    }))
+                }
+                play() {
+                    "playing" !== this._state && (this._state = "playing", this._ensureAudio().then(e => {
+                        let {
+                            source: t
+                        } = e;
+                        "playing" === this._state && (t.loop = !1, t.start())
+                    }))
+                }
+                pause() {
+                    "paused" !== this._state && (this._state = "paused", this._ensureAudio().then(e => {
+                        let {
+                            source: t
+                        } = e;
+                        "paused" === this._state && (t.stop(), this._state = "paused")
+                    }))
+                }
+                stop() {
+                    this._destroyAudio()
+                }
+                _destroyAudio() {
+                    "stopped" !== this._state && (this._state = "stopped", this._ensureAudio().then(e => {
+                        let {
+                            source: t
+                        } = e;
+                        "stopped" === this._state && (t.disconnect(), t.stop(), this._source = null, this._buffer = null, this._state = "stopped", this._ensureAudioPromise = null)
+                    }))
+                }
+                async _ensureAudio() {
+                    if (null == this._ensureAudioPromise) {
+                        let e = Math.min(d.default.getOutputVolume() / 100 * this._volume, 1);
+                        this._ensureAudioPromise = g(this.name).then(t => null == t ? Promise.reject(Error("Failed to load audio: ".concat(this.name))) : (this._audioContext = (0, o.getOrCreateAudioContext)(), this._gain = new GainNode(this._audioContext), this._gain.gain.value = e, c.isPlatformEmbedded && this._audioContext.setSinkId(_), this._buffer = t, this._source = this._audioContext.createBufferSource(), this._source.buffer = t, this._source.connect(this._gain).connect(this._audioContext.destination), this._source.loop = !1, this._source.onended = () => this._destroyAudio(), Promise.resolve({
+                            context: this._audioContext,
+                            gainNode: this._gain,
+                            source: this._source
+                        }))).catch(() => Promise.reject(Error("Failed to load audio: ".concat(this.name))))
+                    }
+                    return await this._ensureAudioPromise
+                }
+                constructor(e, t, n) {
+                    this.name = e, this._volume = n, this._audioContext = null, this._buffer = null, this._source = null, this._state = "stopped", this._ensureAudioPromise = null
                 }
             }
         },
@@ -152452,4 +152586,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.9a18cc2243ab76982e2d.js.map
+//# sourceMappingURL=29062.4b28c1c7a9491d242ae3.js.map
