@@ -19943,11 +19943,15 @@
                 cancellationHeader: "cancellationHeader_bdb51b",
                 confettiCanvas: "confettiCanvas__3aa34",
                 errorBlock: "errorBlock_e05293",
+                iconClassName: "iconClassName__3e811",
+                innerCircle: "innerCircle__1c5dd",
                 invoiceCancelRow: "invoiceCancelRow_c1bfe7",
                 invoiceTable: "invoiceTable__216bc",
                 loading: "loading__33274",
                 previewStep: "previewStep__64000",
                 renewalInvoiceDate: "renewalInvoiceDate__300e7",
+                subtitleIcon: "subtitleIcon_c82aa0",
+                subtitleSection: "subtitleSection_bb7690",
                 whatYouLoseButtonContainer: "whatYouLoseButtonContainer_cf923c"
             }
         },
@@ -20579,11 +20583,12 @@
             "use strict";
             e.exports = {
                 activeProgressCircle: "activeProgressCircle__29798",
+                activeProgressCircleAnimation: "activeProgressCircleAnimation_d45645",
                 gemBackgroundFill: "gemBackgroundFill__8886e",
                 gemGlow: "gemGlow__6989d",
                 gemProgressCircle: "gemProgressCircle__1a3f7",
                 glow: "glow_c871dc",
-                nitroGem: "nitroGem__17235",
+                nitroGemAnimation: "nitroGemAnimation__30445",
                 nitroGemContainer: "nitroGemContainer__60a1a",
                 pulse: "pulse_c5fe4d"
             }
