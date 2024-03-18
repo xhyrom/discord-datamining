@@ -9600,8 +9600,8 @@
                 USER_PROFILE_MUTUAL_GUILDS_COUNT: "member of {count, plural, =0 {0 servers} one {1 server} other {{count} servers}}",
                 USER_PROFILE_MUTUAL_FRIENDS_PLACEHOLDER: "Mutual Friends",
                 USER_PROFILE_MUTUAL_GUILDS_PLACEHOLDER: "Mutual Servers",
-                USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP: "Click to see all mutual friends",
-                USER_PROFILE_MUTUAL_GUILDS_TOOLTIP: "Click to see all mutual servers",
+                USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP: "See all mutual friends",
+                USER_PROFILE_MUTUAL_GUILDS_TOOLTIP: "See all mutual servers",
                 USER_PROFILE_MUTUALS_TITLE: "Mutuals",
                 PROFILE_JOIN_VOICE_CHANNEL: "Join Voice Channel",
                 PROFILE_IN_VOICE_CALL: "In a voice call",
@@ -18507,7 +18507,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276326", ", Version Hash: ").concat("1a85e744057283b21a21daace2e1cbd3d7fc44e3")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276338", ", Version Hash: ").concat("62b08bd1f76e44d2315082c9e4169fd74a977562")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20875,8 +20875,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "276326", "276326"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276326")), _ = 0), _
+                let _ = parseInt((e = "276338", "276338"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276338")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37168,4 +37168,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.859ebc40abd8d72456c1.js.map
+//# sourceMappingURL=76039.cd62239919240cb93bf8.js.map
