@@ -16370,7 +16370,10 @@
                 entrypoint: "entrypoint__10e94",
                 iconButton: "iconButton_eb2bbf button__5619c",
                 image: "image_ff8cda",
-                wrapper: "wrapper__7a5c1"
+                video: "video__99543",
+                videoWrapper: "videoWrapper__114b0",
+                wrapper: "wrapper__7a5c1",
+                wrapperHovered: "wrapperHovered__0f56d"
             }
         },
         904620: function(e, t, n) {
@@ -24928,6 +24931,7 @@
                 buttonIcon: "buttonIcon__3ae1d",
                 buttonIconLarge: "buttonIconLarge__6c2fd buttonIcon__3ae1d",
                 buttonIconSmall: "buttonIconSmall__72e00 buttonIcon__3ae1d",
+                footer: "footer__86d8f",
                 header: "header_d2e037",
                 headerBackground: "headerBackground__8a4ac",
                 headerButton: "headerButton_fe8970",
