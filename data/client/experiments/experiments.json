@@ -8891,7 +8891,8 @@
         "Control Bucket",
         "Treatment 1: Winter 2023",
         "Treatment 2: Jan 2024",
-        "Treatment 4: Springtoons 2024"
+        "Treatment 4: Springtoons 2024",
+        "Treatment 5: Shy 2024"
       ],
       "hash": 488433301,
       "buckets": [
@@ -8899,7 +8900,8 @@
         0,
         1,
         2,
-        4
+        4,
+        5
       ],
       "holdout": {},
       "aa_mode": false,
