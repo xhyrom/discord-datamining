@@ -120012,7 +120012,9 @@ html .invoiceCancelRow_a8669b {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    width: 92px;
+    height: 92px
 }
 
 .headerContainer__122e4 {
@@ -130261,4 +130263,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.fad107dfb4d9887badf3.css.map*/
+/*# sourceMappingURL=app.dd40ceea8770fba6910e.css.map*/
