@@ -83150,6 +83150,14 @@ html .tabBadge__002b3 {
     padding: 16px 0
 }
 
+.banner__36618 {
+    padding-bottom: 24px
+}
+
+.tabsText__3412a {
+    padding-bottom: 8px
+}
+
 .tabs__88df8 {
     display: flex;
     flex-direction: row;
@@ -83158,10 +83166,9 @@ html .tabBadge__002b3 {
 
 .productList_bce430 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     gap: 16px;
-    padding: 16px 0
+    padding: 48px 0 16px
 }
 
 .productCard_eabca8 {
@@ -83188,8 +83195,29 @@ html .tabBadge__002b3 {
     padding: 0
 }
 
-.modalCloseButton_b4dfd7 {
-    margin-left: auto
+.modal_af101e {
+    border-radius: 12px;
+    overflow: hidden;
+    height: calc(90vh - 60px)
+}
+
+.modalHeader__616c1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--interactive-active);
+    padding: 12px 16px;
+    background-color: var(--primary-830)
+}
+
+.modalTitle_ffda3a {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.modalContent_f377b6 {
+    background-color: var(--background-floating)
 }
 
 .modalContent__7f555 {
@@ -130263,4 +130291,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.dd40ceea8770fba6910e.css.map*/
+/*# sourceMappingURL=app.be80c52dcb0dcbeb06ea.css.map*/

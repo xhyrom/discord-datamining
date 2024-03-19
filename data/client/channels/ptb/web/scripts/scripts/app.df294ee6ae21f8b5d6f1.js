@@ -3676,18 +3676,23 @@
             "use strict";
             e.exports = {
                 backButton: "backButton_aeaa52",
+                banner: "banner__36618",
                 footer: "footer_c689c6",
                 productCard: "productCard_eabca8",
                 productList: "productList_bce430",
                 subDetailsModal: "subDetailsModal__7eb23",
                 tabs: "tabs__88df8",
+                tabsText: "tabsText__3412a",
                 wrapper: "wrapper__2f460"
             }
         },
         454436: function(e, t, n) {
             "use strict";
             e.exports = {
-                modalCloseButton: "modalCloseButton_b4dfd7"
+                modal: "modal_af101e",
+                modalContent: "modalContent_f377b6",
+                modalHeader: "modalHeader__616c1",
+                modalTitle: "modalTitle_ffda3a"
             }
         },
         105608: function(e, t, n) {
