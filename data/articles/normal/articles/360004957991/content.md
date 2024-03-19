@@ -57,7 +57,7 @@
         </ul>
     </li>
     <li><span style="color: #2e3338;" data-darkreader-inline-color="">Reporting - This folder contains a JSON file with data we use in order to operate our business. (Information such as messages sent, or your Nitro subscription, as an example.)</span></li>
-    <li><span style="color: #2e3338;" data-darkreader-inline-color="">Trust &amp; Safety - This folder contains data we use in order to protect our service from bad actors. This data is deleted after 180 days.</span></li>
+    <li>Trust &amp; Safety - This folder contains data we use in order to protect our service from bad actors. This data is retained for up to 2 years.</li>
 </ul>
 <h2 id="h_01HRDJ0P8BEBVM497SDJ67CEC8">Activities</h2>
 <p>The activities folder contains two folders, each with a JSON file that has information about 1st-party activities you have participated in on Discord.</p>
@@ -67,7 +67,7 @@
 </ul>
 <h2 id="h_01HRDJ0P8B417MH9JMVB6DPEAW">Messages</h2>
 <p>The messages folder contains all the messages that you have sent on Discord. These are broken down separately into folders based on Direct Messages, Group Messages, and channels that you have chatted in. The number for each folder is the Channel ID for where the messages were sent. There is a JSON file which also contains a full mapping of Channel ID to Channel name forlist of the folders included.</p>
-<p>When you select a folder, you'll notice it contains a couple items. The first is a JSON file which will include information about where the messages in that folder were sent. If the folder contains messages from a server, this information will include the associated Guild ID, Channel ID, and Channel Name. If the folder contains messages from a DM or Group DM, this information will include the associated</p>
+<p>When you select a folder, you'll notice it contains a couple items. The first is a JSON file which will include information about where the messages in that folder were sent. If the folder contains messages from a server, this information will include the associated Guild ID, Channel ID, and Channel Name. If the folder contains messages from a DM or Group DM, this information will include the associated Channel ID and User IDs.</p>
 <p>The second is a JSON file which contains the transcript of your messages. For each message, it will contain the following information:</p>
 <ul>
     <li>ID - The message ID</li>
@@ -88,7 +88,7 @@
     <li>A JSON file containing the settings for your server (guild).</li>
     <li>A JSON file containing information for any webhook you have implemented.</li>
 </ul>
-<p>The folder for a server that you are a member of will contain the following.</p>
+<p>The folder for a server that you are a member of will contain the following:</p>
 <ul>
     <li>A JSON file containing actions from the last 90 days that pertain to your account from the Audit Log.</li>
     <li>A JSON file containing the server ID and name.</li>

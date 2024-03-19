@@ -22,7 +22,7 @@
             <li>
                 <a href="https://support.discord.com/hc/en-us/articles/21326535490711#h_01HSBQ5D480S8FV92H4JEMS8CS">Step by Step Redeem Instructions</a>
                 <ul>
-                    <li><a href="https://support.discord.com/hc/en-us/articles/21326535490711#h_01HSBQ5D48KG9K2AJ960MMGFMD">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </a></li>
+                    <li><a href="https://support.discord.com/hc/en-us/articles/21326535490711#h_01HSBQ5D48KG9K2AJ960MMGFMD">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Member? </a></li>
                 </ul>
             </li>
         </ul>
@@ -103,7 +103,7 @@
     </table>
 </div>
 <p><strong>Step 3 - Redeeming your promotion gift</strong></p>
-<p>Once you have logged into your Discord account, you'll see a new message asking you to confirm that you are accepting the Nitro subscription on the correct Discord account. Review the details of the promotion then press on <strong>Next</strong>. </p>
+<p>Once you have logged into your Discord account, you'll see a new message asking you to confirm that you are accepting the Nitro membership on the correct Discord account. Review the details of the promotion then press on <strong>Next</strong>. </p>
 <h3 id="h_01HSBQ5D48ESSN3PJ3H3AW7MY5"><strong>Note: If you're logged into the incorrect Discord account, press the "Wrong account" button to login to the other account!</strong></h3>
 <p> </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22187052249111" width="284" height="503"></p>
@@ -117,7 +117,7 @@
 <h3 id="h_01HSBQ5D487PQQAC6BAV18X2P5"><strong>HOWEVER, please note: By choosing to activate this 1 month trial, you will lose any features associated with your current memberships, and **you will not receive a refund for any remaining value on your current membership**.</strong></h3>
 <p>At the end of the promotion period, you'll be converted to a paying Nitro membership per month unless you cancel your membership.</p>
 <h1 id="h_01HSBQ5D487SS0MPBT7X27JZ8Q">How do I share my Code with a Friend?</h1>
-<p>If you've had a Nitro subscription previously on your Discord account in the past 12 months and you're unable to redeem the Nitro promotion link, you can share this link with a friend to use instead.</p>
+<p>If you've had a Nitro membership previously on your Discord account in the past 12 months and you're unable to redeem the Nitro promotion link, you can share this link with a friend to use instead.</p>
 <p>After you locate the promotion email, you can copy the promotion link and send it to a friend. <strong>We recommend sending the link in a private direct message.</strong></p>
 <h1 id="h_01HSBQ5D48KJJQYJKGWKM5PHW2">Frequently Asked Questions</h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
